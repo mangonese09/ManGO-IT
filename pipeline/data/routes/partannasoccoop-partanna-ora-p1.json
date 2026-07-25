@@ -1,0 +1,245 @@
+{
+ "operator": "Partannasoccoop",
+ "route_id": "partannasoccoop-partanna-ora-p1",
+ "name": "SANTA NINFA - PARTANNA - SCIACCA 15/09 - 15/06",
+ "source": "PARTANNASOCCOOP__PARTANNA_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio 2 c.c. feriali in periodo scolastico sulla relazione Santa ninfa - Sciacca DAL 15 SETTEMBRE AL 15 GIUGNO"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Capolinea di Partenza Capolinea di Arrivo",
+    "Fermata intermedia Fermata intermedia",
+    "Fermata intermedia Fermata intermedia",
+    "Fermata intermedia Fermata intermedia",
+    "Fermata intermedia Fermata intermedia",
+    "Fermata intermedia Fermata intermedia",
+    "capolinea di arrivo capoplinea di partenza",
+    "SABATO, SOLO LA DOMENICA, ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico6,456,557,057,06"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 3,
+       "arr": "7.06",
+       "dep": "7.06"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 4,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 5,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "capolinea di arrivo capoplinea di partenza",
+       "idx": 6,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico12,3012,4012,4512,46"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 3,
+       "arr": "12.46",
+       "dep": "12.46"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 4,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 5,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "capolinea di arrivo capoplinea di partenza",
+       "idx": 6,
+       "arr": "13.40",
+       "dep": "13.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico11,5511,4511,400,00"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "capolinea di arrivo capoplinea di partenza",
+       "idx": 6,
+       "arr": "10.45",
+       "dep": "10.45"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 5,
+       "arr": "10.50",
+       "dep": "10.50"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 4,
+       "arr": "10.45",
+       "dep": "10.45"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 3,
+       "arr": "0.00",
+       "dep": "0.00"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "11.40",
+       "dep": "11.40"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "11.55",
+       "dep": "11.55"
+      }
+     ],
+     "valid": false
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIAiLnEperiodoscolastico15,1515,0515,0014,58"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "capolinea di arrivo capoplinea di partenza",
+       "idx": 6,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 5,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 4,
+       "arr": "14.54",
+       "dep": "14.54"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 3,
+       "arr": "14.58",
+       "dep": "14.58"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

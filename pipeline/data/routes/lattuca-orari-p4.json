@@ -1,0 +1,119 @@
+{
+ "operator": "Lattuca",
+ "route_id": "lattuca-orari-p4",
+ "name": "P.ROSSELLI AGRIGENTO P.ROSSELLI - I.P.I.A E.FERMI ARAGONA I.P.I.A. E. FERMI",
+ "source": "LATTUCA_ORARI/p004.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio CARICO ESCLUSIVO DI PASSEGGERI DA AGRIGENTO PER L'ISTITUTO \" E. FERMI\" SITO IN TERRITORIO DI ARAGONA (VIA MINIERA TACCIA CAPI PIRANDELLO ) E VICEVERSA."
+ ],
+ "directions": [
+  {
+   "stops": [
+    "P.ROSSELLI AGRIGENTO P.ROSSELLI",
+    "I.P.I.A E.FERMI ARAGONA I.P.I.A. E. FERMI"
+   ],
+   "trips": [
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEinperiodo7,55"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "P.ROSSELLI AGRIGENTO P.ROSSELLI",
+       "idx": 0,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "I.P.I.A E.FERMI ARAGONA I.P.I.A. E. FERMI",
+       "idx": 1,
+       "arr": "8.10",
+       "dep": "8.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinscolastico8,15"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "P.ROSSELLI AGRIGENTO P.ROSSELLI",
+       "idx": 0,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "I.P.I.A E.FERMI ARAGONA I.P.I.A. E. FERMI",
+       "idx": 1,
+       "arr": "8.30",
+       "dep": "8.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEinperiodo13,25"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "I.P.I.A E.FERMI ARAGONA I.P.I.A. E. FERMI",
+       "idx": 1,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "P.ROSSELLI AGRIGENTO P.ROSSELLI",
+       "idx": 0,
+       "arr": "13.25",
+       "dep": "13.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEinperiodo14,15"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "I.P.I.A E.FERMI ARAGONA I.P.I.A. E. FERMI",
+       "idx": 1,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "P.ROSSELLI AGRIGENTO P.ROSSELLI",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

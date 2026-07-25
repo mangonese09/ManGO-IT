@@ -1,0 +1,346 @@
+{
+ "operator": "Zuccala",
+ "route_id": "zuccala-orari-p8",
+ "name": "PIETRAPERZIA PIETRAPERZIA - SABATO, SOLO LA DOMENICA, ETC….",
+ "source": "ZUCCALA_ORARI/p008.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Divieto di servizio locale sul tratto bivio Baiatiche-Riesi. Estremi compresi e per le relazioni Riesi - Barraf. e Riesi-Pietra. divieto di servizio locale,",
+  "Prescrizioni d'Esercizio 1 c. c. feriali sulla relazione Pietraperzia - Licata con diramazione per Riesi - Lido Falconara - Lido Bellia"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "PIETRAPERZIA PIETRAPERZIA",
+    "BIVIO LUOGO BIVIO LUOGO",
+    "BIVIO RASTELLO BIVIO RASTELLO",
+    "BARRAFRANCA BARRAFRANCA",
+    "MAZZARINO MAZZARINO",
+    "RIESI RIESI",
+    "BIVIO GELA BIVIO GELA",
+    "BIVIO FALCONARA BIVIO FALCONARA",
+    "LIDO FALCONARA LIDO FALCONARA",
+    "LIDO BELLIA LIDO BELLIA",
+    "LICATA LICATA",
+    "SABATO, SOLO LA DOMENICA, ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE6,306,356,406,50"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PIETRAPERZIA PIETRAPERZIA",
+       "idx": 0,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "BIVIO LUOGO BIVIO LUOGO",
+       "idx": 1,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "BIVIO RASTELLO BIVIO RASTELLO",
+       "idx": 2,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "BARRAFRANCA BARRAFRANCA",
+       "idx": 3,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "MAZZARINO MAZZARINO",
+       "idx": 4,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "RIESI RIESI",
+       "idx": 5,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "BIVIO GELA BIVIO GELA",
+       "idx": 6,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "BIVIO FALCONARA BIVIO FALCONARA",
+       "idx": 7,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "LIDO FALCONARA LIDO FALCONARA",
+       "idx": 8,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "LIDO BELLIA LIDO BELLIA",
+       "idx": 9,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "LICATA LICATA",
+       "idx": 10,
+       "arr": "8.55",
+       "dep": "8.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "ferialedallunedìalvenerdì14,0014,0514,1014,20"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PIETRAPERZIA PIETRAPERZIA",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "BIVIO LUOGO BIVIO LUOGO",
+       "idx": 1,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "BIVIO RASTELLO BIVIO RASTELLO",
+       "idx": 2,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "BARRAFRANCA BARRAFRANCA",
+       "idx": 3,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "MAZZARINO MAZZARINO",
+       "idx": 4,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "RIESI RIESI",
+       "idx": 5,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "BIVIO GELA BIVIO GELA",
+       "idx": 6,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "BIVIO FALCONARA BIVIO FALCONARA",
+       "idx": 7,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "LIDO FALCONARA LIDO FALCONARA",
+       "idx": 8,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "LIDO BELLIA LIDO BELLIA",
+       "idx": 9,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "LICATA LICATA",
+       "idx": 10,
+       "arr": "16.25",
+       "dep": "16.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE11,0511,0010,5510,50"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "LICATA LICATA",
+       "idx": 10,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "LIDO BELLIA LIDO BELLIA",
+       "idx": 9,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "LIDO FALCONARA LIDO FALCONARA",
+       "idx": 8,
+       "arr": "9.35",
+       "dep": "9.35"
+      },
+      {
+       "stop": "BIVIO FALCONARA BIVIO FALCONARA",
+       "idx": 7,
+       "arr": "9.40",
+       "dep": "9.40"
+      },
+      {
+       "stop": "BIVIO GELA BIVIO GELA",
+       "idx": 6,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "RIESI RIESI",
+       "idx": 5,
+       "arr": "10.05",
+       "dep": "10.05"
+      },
+      {
+       "stop": "MAZZARINO MAZZARINO",
+       "idx": 4,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "BARRAFRANCA BARRAFRANCA",
+       "idx": 3,
+       "arr": "10.50",
+       "dep": "10.50"
+      },
+      {
+       "stop": "BIVIO RASTELLO BIVIO RASTELLO",
+       "idx": 2,
+       "arr": "10.55",
+       "dep": "10.55"
+      },
+      {
+       "stop": "BIVIO LUOGO BIVIO LUOGO",
+       "idx": 1,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "PIETRAPERZIA PIETRAPERZIA",
+       "idx": 0,
+       "arr": "11.05",
+       "dep": "11.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "ferialedallunedìalvenerdì19,2519,2019,1519,05"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "LICATA LICATA",
+       "idx": 10,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "LIDO BELLIA LIDO BELLIA",
+       "idx": 9,
+       "arr": "17.40",
+       "dep": "17.40"
+      },
+      {
+       "stop": "LIDO FALCONARA LIDO FALCONARA",
+       "idx": 8,
+       "arr": "17.55",
+       "dep": "17.55"
+      },
+      {
+       "stop": "BIVIO FALCONARA BIVIO FALCONARA",
+       "idx": 7,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "BIVIO GELA BIVIO GELA",
+       "idx": 6,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "RIESI RIESI",
+       "idx": 5,
+       "arr": "18.25",
+       "dep": "18.25"
+      },
+      {
+       "stop": "MAZZARINO MAZZARINO",
+       "idx": 4,
+       "arr": "18.50",
+       "dep": "18.50"
+      },
+      {
+       "stop": "BARRAFRANCA BARRAFRANCA",
+       "idx": 3,
+       "arr": "19.05",
+       "dep": "19.05"
+      },
+      {
+       "stop": "BIVIO RASTELLO BIVIO RASTELLO",
+       "idx": 2,
+       "arr": "19.15",
+       "dep": "19.15"
+      },
+      {
+       "stop": "BIVIO LUOGO BIVIO LUOGO",
+       "idx": 1,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "PIETRAPERZIA PIETRAPERZIA",
+       "idx": 0,
+       "arr": "19.25",
+       "dep": "19.25"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

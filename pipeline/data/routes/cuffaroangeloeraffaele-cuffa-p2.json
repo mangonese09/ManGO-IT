@@ -1,0 +1,269 @@
+{
+ "operator": "Cuffaro Angelo e Raffaele",
+ "route_id": "cuffaroangeloeraffaele-cuffa-p2",
+ "name": "P.za Umberto 1° S'ANGELO MUXARO P.za Umberto 1° - QUIS. RIFORNIMENTO I P SANTO STEFANO QUIS. RIFORNIMENTO I",
+ "source": "CUFFAROANGELOeRAFFAELE__CUFFARO_Angelo_e_Raff/p002.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio DIVIETO DI SERVIZIO LOCALE TRA ALESSANDRIA DELLA ROCCA - BIVONA ESTREMI COMPRESI"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "P.za Umberto 1° S'ANGELO MUXARO P.za Umberto 1°",
+    "ex Chiesa Evangelica S. BIAGIO PLATANI ex Chiesa Evangelica",
+    "ROCCA Chisea Matrice ALESSANDRIA DELLA ROCCA Chisea Matrice",
+    "MARCONI BIVONA PIAZZA MARCONI",
+    "QUISQUINA OSPEDALE S.STEFANO QUISQUINA",
+    "QUIS. RIFORNIMENTO I P SANTO STEFANO QUIS. RIFORNIMENTO I"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE7,007,107,458,008,10"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "P.za Umberto 1° S'ANGELO MUXARO P.za Umberto 1°",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "ex Chiesa Evangelica S. BIAGIO PLATANI ex Chiesa Evangelica",
+       "idx": 1,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "ROCCA Chisea Matrice ALESSANDRIA DELLA ROCCA Chisea Matrice",
+       "idx": 2,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "MARCONI BIVONA PIAZZA MARCONI",
+       "idx": 3,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "QUISQUINA OSPEDALE S.STEFANO QUISQUINA",
+       "idx": 4,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "QUIS. RIFORNIMENTO I P SANTO STEFANO QUIS. RIFORNIMENTO I",
+       "idx": 5,
+       "arr": "8.13",
+       "dep": "8.13"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoScolastico:::7,107,458,00:::"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ex Chiesa Evangelica S. BIAGIO PLATANI ex Chiesa Evangelica",
+       "idx": 1,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "ROCCA Chisea Matrice ALESSANDRIA DELLA ROCCA Chisea Matrice",
+       "idx": 2,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "MARCONI BIVONA PIAZZA MARCONI",
+       "idx": 3,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE:::13,0013,3014,4513,55"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ex Chiesa Evangelica S. BIAGIO PLATANI ex Chiesa Evangelica",
+       "idx": 1,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "ROCCA Chisea Matrice ALESSANDRIA DELLA ROCCA Chisea Matrice",
+       "idx": 2,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "MARCONI BIVONA PIAZZA MARCONI",
+       "idx": 3,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "QUISQUINA OSPEDALE S.STEFANO QUISQUINA",
+       "idx": 4,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "QUIS. RIFORNIMENTO I P SANTO STEFANO QUIS. RIFORNIMENTO I",
+       "idx": 5,
+       "arr": "13.58",
+       "dep": "13.58"
+      }
+     ],
+     "valid": false
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale:::9,158,458,258,18"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "QUIS. RIFORNIMENTO I P SANTO STEFANO QUIS. RIFORNIMENTO I",
+       "idx": 5,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "QUISQUINA OSPEDALE S.STEFANO QUISQUINA",
+       "idx": 4,
+       "arr": "8.18",
+       "dep": "8.18"
+      },
+      {
+       "stop": "MARCONI BIVONA PIAZZA MARCONI",
+       "idx": 3,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "ROCCA Chisea Matrice ALESSANDRIA DELLA ROCCA Chisea Matrice",
+       "idx": 2,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "ex Chiesa Evangelica S. BIAGIO PLATANI ex Chiesa Evangelica",
+       "idx": 1,
+       "arr": "9.15",
+       "dep": "9.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE15,1515,0014,3014,1514,05"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "QUIS. RIFORNIMENTO I P SANTO STEFANO QUIS. RIFORNIMENTO I",
+       "idx": 5,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "QUISQUINA OSPEDALE S.STEFANO QUISQUINA",
+       "idx": 4,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "MARCONI BIVONA PIAZZA MARCONI",
+       "idx": 3,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "ROCCA Chisea Matrice ALESSANDRIA DELLA ROCCA Chisea Matrice",
+       "idx": 2,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "ex Chiesa Evangelica S. BIAGIO PLATANI ex Chiesa Evangelica",
+       "idx": 1,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "P.za Umberto 1° S'ANGELO MUXARO P.za Umberto 1°",
+       "idx": 0,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "inperiodoscolastico:::15,0014,3014,15:::"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MARCONI BIVONA PIAZZA MARCONI",
+       "idx": 3,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "ROCCA Chisea Matrice ALESSANDRIA DELLA ROCCA Chisea Matrice",
+       "idx": 2,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "ex Chiesa Evangelica S. BIAGIO PLATANI ex Chiesa Evangelica",
+       "idx": 1,
+       "arr": "15.00",
+       "dep": "15.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,271 @@
+{
+ "operator": "Cita",
+ "route_id": "cita-orari-cita-p1",
+ "name": "// DITTAINO OUTLET - ASSORO",
+ "source": "CITA__ORARI_CITA/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Nessuna"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "// DITTAINO OUTLET",
+    "AGIRA",
+    "NISSORIA",
+    "S.GIORGIO",
+    "Q.BANNO'",
+    "S.GIORGIO",
+    "MURRA",
+    "ASSORO"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeesclusomesidiLuglioeAgosto//7,107,15"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AGIRA",
+       "idx": 1,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "NISSORIA",
+       "idx": 2,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "S.GIORGIO",
+       "idx": 3,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "Q.BANNO'",
+       "idx": 4,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "S.GIORGIO",
+       "idx": 5,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "MURRA",
+       "idx": 6,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "ASSORO",
+       "idx": 7,
+       "arr": "8.10",
+       "dep": "8.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeesclusomesidiLuglioeAgosto12,0012,30//"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "// DITTAINO OUTLET",
+       "idx": 0,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "AGIRA",
+       "idx": 1,
+       "arr": "12.30",
+       "dep": "12.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeesclusomesidiLuglioeAgosto//12,3012,35"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AGIRA",
+       "idx": 1,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "NISSORIA",
+       "idx": 2,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "S.GIORGIO",
+       "idx": 3,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "MURRA",
+       "idx": 6,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "ASSORO",
+       "idx": 7,
+       "arr": "13.30",
+       "dep": "13.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeesclusomesidiLuglioeAgosto//14,3014,25"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "ASSORO",
+       "idx": 7,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "MURRA",
+       "idx": 6,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "S.GIORGIO",
+       "idx": 5,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "Q.BANNO'",
+       "idx": 4,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "S.GIORGIO",
+       "idx": 3,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "NISSORIA",
+       "idx": 2,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "AGIRA",
+       "idx": 1,
+       "arr": "14.30",
+       "dep": "14.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeesclusomesidiLuglioeAgosto9,359,05//"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "AGIRA",
+       "idx": 1,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "// DITTAINO OUTLET",
+       "idx": 0,
+       "arr": "9.35",
+       "dep": "9.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeesclusomesidiLuglioeAgosto//9,309,25"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "ASSORO",
+       "idx": 7,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "MURRA",
+       "idx": 6,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "S.GIORGIO",
+       "idx": 3,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "NISSORIA",
+       "idx": 2,
+       "arr": "9.25",
+       "dep": "9.25"
+      },
+      {
+       "stop": "AGIRA",
+       "idx": 1,
+       "arr": "9.30",
+       "dep": "9.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

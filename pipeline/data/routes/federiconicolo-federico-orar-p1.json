@@ -1,0 +1,144 @@
+{
+ "operator": "Federico Nicolò",
+ "route_id": "federiconicolo-federico-orar-p1",
+ "name": "Caltagirone - Punta Braccetto",
+ "source": "FedericoNicolo__FEDERICO_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni Ammissioni di viaggiatori dei centri attraversati per Punta Braccetto e viceversa e con esclusione di ogni altro traffico."
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Caltagirone",
+    "Ponte Gallo",
+    "Punta Braccetto"
+   ],
+   "trips": [
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "al31/087,307,45"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Caltagirone",
+       "idx": 0,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Ponte Gallo",
+       "idx": 1,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "Punta Braccetto",
+       "idx": 2,
+       "arr": "8.50",
+       "dep": "8.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "al31/0816,4517,00"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Caltagirone",
+       "idx": 0,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "Ponte Gallo",
+       "idx": 1,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "Punta Braccetto",
+       "idx": 2,
+       "arr": "18.05",
+       "dep": "18.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "al31/0810,3510,20"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Punta Braccetto",
+       "idx": 2,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "Ponte Gallo",
+       "idx": 1,
+       "arr": "10.20",
+       "dep": "10.20"
+      },
+      {
+       "stop": "Caltagirone",
+       "idx": 0,
+       "arr": "10.35",
+       "dep": "10.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "al31/0819,2019,05////"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Punta Braccetto",
+       "idx": 2,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "Ponte Gallo",
+       "idx": 1,
+       "arr": "19.05",
+       "dep": "19.05"
+      },
+      {
+       "stop": "Caltagirone",
+       "idx": 0,
+       "arr": "19.20",
+       "dep": "19.20"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

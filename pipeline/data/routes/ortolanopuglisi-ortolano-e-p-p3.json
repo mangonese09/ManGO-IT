@@ -1,0 +1,139 @@
+{
+ "operator": "Ortolano e Puglisi",
+ "route_id": "ortolanopuglisi-ortolano-e-p-p3",
+ "name": "ALIA ALIA - SOLO LA DOMENICA, ETC….",
+ "source": "OrtolanoPuglisi__ORTOLANO_e_Puglisi_ORARI/p003.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "ALIA ALIA ( P.zza Sanata Rosalia ) ( P.zza Sanata Rosalia )",
+    "ROCCAPALUMBA",
+    "REGALGIOFFOLI",
+    "FONDO CROCI",
+    "SAMBUCHI",
+    "CACCAMO ROCCAPALUMBA",
+    "REGALGIOFFOLI",
+    "FONDO CROCI",
+    "SAMBUCHI",
+    "CACCAMO",
+    "TERMINI IMERESE TERMINI IMERESE",
+    "SOLO LA DOMENICA, ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "inperiodo6,407,007,05"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ALIA ALIA ( P.zza Sanata Rosalia ) ( P.zza Sanata Rosalia )",
+       "idx": 0,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "ROCCAPALUMBA",
+       "idx": 1,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "REGALGIOFFOLI",
+       "idx": 2,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "FONDO CROCI",
+       "idx": 3,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "SAMBUCHI",
+       "idx": 4,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "CACCAMO ROCCAPALUMBA",
+       "idx": 5,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "TERMINI IMERESE TERMINI IMERESE",
+       "idx": 10,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "IALEinperiodo15,30"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "TERMINI IMERESE TERMINI IMERESE",
+       "idx": 10,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "CACCAMO",
+       "idx": 9,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "SAMBUCHI",
+       "idx": 8,
+       "arr": "14.52",
+       "dep": "14.52"
+      },
+      {
+       "stop": "FONDO CROCI",
+       "idx": 7,
+       "arr": "14.57",
+       "dep": "14.57"
+      },
+      {
+       "stop": "REGALGIOFFOLI",
+       "idx": 6,
+       "arr": "15.02",
+       "dep": "15.02"
+      },
+      {
+       "stop": "CACCAMO ROCCAPALUMBA",
+       "idx": 5,
+       "arr": "15.07",
+       "dep": "15.07"
+      },
+      {
+       "stop": "ALIA ALIA ( P.zza Sanata Rosalia ) ( P.zza Sanata Rosalia )",
+       "idx": 0,
+       "arr": "15.30",
+       "dep": "15.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,415 @@
+{
+ "operator": "Scadi",
+ "route_id": "scadi-orari-p1",
+ "name": "NOTO - Z.I. PRIOLO GARGALLO",
+ "source": "SCADI_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio L'autolinea è riservata all'esclusivo servizio per il trasporto degli operai della Cooperativa \"S.C.A.D.I.\""
+ ],
+ "directions": [
+  {
+   "stops": [
+    "NOTO",
+    "AVOLA",
+    "CASSIBILE",
+    "S. TERESA LONGARINI",
+    "SIRACUSA",
+    "Z.I. PRIOLO GARGALLO"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "Ferialedallunedìalvenerdì4,204,354,45"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "NOTO",
+       "idx": 0,
+       "arr": "4.20",
+       "dep": "4.20"
+      },
+      {
+       "stop": "AVOLA",
+       "idx": 1,
+       "arr": "4.35",
+       "dep": "4.35"
+      },
+      {
+       "stop": "CASSIBILE",
+       "idx": 2,
+       "arr": "4.45",
+       "dep": "4.45"
+      },
+      {
+       "stop": "S. TERESA LONGARINI",
+       "idx": 3,
+       "arr": "4.50",
+       "dep": "4.50"
+      },
+      {
+       "stop": "SIRACUSA",
+       "idx": 4,
+       "arr": "5.00",
+       "dep": "5.00"
+      },
+      {
+       "stop": "Z.I. PRIOLO GARGALLO",
+       "idx": 5,
+       "arr": "5.25",
+       "dep": "5.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "Ferialedallunedìalvenerdì12,2012,3512,45"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "NOTO",
+       "idx": 0,
+       "arr": "12.20",
+       "dep": "12.20"
+      },
+      {
+       "stop": "AVOLA",
+       "idx": 1,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "CASSIBILE",
+       "idx": 2,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "S. TERESA LONGARINI",
+       "idx": 3,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "SIRACUSA",
+       "idx": 4,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "Z.I. PRIOLO GARGALLO",
+       "idx": 5,
+       "arr": "13.25",
+       "dep": "13.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera20,2020,3520,45"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "NOTO",
+       "idx": 0,
+       "arr": "20.20",
+       "dep": "20.20"
+      },
+      {
+       "stop": "AVOLA",
+       "idx": 1,
+       "arr": "20.35",
+       "dep": "20.35"
+      },
+      {
+       "stop": "CASSIBILE",
+       "idx": 2,
+       "arr": "20.45",
+       "dep": "20.45"
+      },
+      {
+       "stop": "S. TERESA LONGARINI",
+       "idx": 3,
+       "arr": "20.50",
+       "dep": "20.50"
+      },
+      {
+       "stop": "SIRACUSA",
+       "idx": 4,
+       "arr": "21.00",
+       "dep": "21.00"
+      },
+      {
+       "stop": "Z.I. PRIOLO GARGALLO",
+       "idx": 5,
+       "arr": "21.25",
+       "dep": "21.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "Ferialedallunedìalvenerdì6,206,356,45"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "NOTO",
+       "idx": 0,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "AVOLA",
+       "idx": 1,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "CASSIBILE",
+       "idx": 2,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "S. TERESA LONGARINI",
+       "idx": 3,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "SIRACUSA",
+       "idx": 4,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Z.I. PRIOLO GARGALLO",
+       "idx": 5,
+       "arr": "7.25",
+       "dep": "7.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "Ferialedallunedìalvenerdì7,307,157,05"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Z.I. PRIOLO GARGALLO",
+       "idx": 5,
+       "arr": "6.25",
+       "dep": "6.25"
+      },
+      {
+       "stop": "SIRACUSA",
+       "idx": 4,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "S. TERESA LONGARINI",
+       "idx": 3,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "CASSIBILE",
+       "idx": 2,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "AVOLA",
+       "idx": 1,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "NOTO",
+       "idx": 0,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "Ferialedallunedìalvenerdì15,3015,1515,05"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Z.I. PRIOLO GARGALLO",
+       "idx": 5,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "SIRACUSA",
+       "idx": 4,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "S. TERESA LONGARINI",
+       "idx": 3,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "CASSIBILE",
+       "idx": 2,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "AVOLA",
+       "idx": 1,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "NOTO",
+       "idx": 0,
+       "arr": "15.30",
+       "dep": "15.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera23,3023,1523,05"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Z.I. PRIOLO GARGALLO",
+       "idx": 5,
+       "arr": "22.25",
+       "dep": "22.25"
+      },
+      {
+       "stop": "SIRACUSA",
+       "idx": 4,
+       "arr": "22.50",
+       "dep": "22.50"
+      },
+      {
+       "stop": "S. TERESA LONGARINI",
+       "idx": 3,
+       "arr": "22.55",
+       "dep": "22.55"
+      },
+      {
+       "stop": "CASSIBILE",
+       "idx": 2,
+       "arr": "23.05",
+       "dep": "23.05"
+      },
+      {
+       "stop": "AVOLA",
+       "idx": 1,
+       "arr": "23.15",
+       "dep": "23.15"
+      },
+      {
+       "stop": "NOTO",
+       "idx": 0,
+       "arr": "23.30",
+       "dep": "23.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "Ferialedallunedìalvenerdì18,3018,1518,05"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Z.I. PRIOLO GARGALLO",
+       "idx": 5,
+       "arr": "17.25",
+       "dep": "17.25"
+      },
+      {
+       "stop": "SIRACUSA",
+       "idx": 4,
+       "arr": "17.50",
+       "dep": "17.50"
+      },
+      {
+       "stop": "S. TERESA LONGARINI",
+       "idx": 3,
+       "arr": "17.55",
+       "dep": "17.55"
+      },
+      {
+       "stop": "CASSIBILE",
+       "idx": 2,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "AVOLA",
+       "idx": 1,
+       "arr": "18.15",
+       "dep": "18.15"
+      },
+      {
+       "stop": "NOTO",
+       "idx": 0,
+       "arr": "18.30",
+       "dep": "18.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

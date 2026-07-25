@@ -1,0 +1,515 @@
+{
+ "operator": "Isea",
+ "route_id": "isea-orari-p1",
+ "name": "SAN TEODORO - CATANIA",
+ "source": "ISEA_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Divieto di servizio locale, estremi compresi, sui tratti Bronte-Catania"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "SAN TEODORO (Piazza Roma)",
+    "CESARO' (Villa Comunale)",
+    "BRONTE (Corso Umberto, 188)",
+    "ADRANO (Svincolo S.S. 284)",
+    "BIANCAVILLA (Svincolo S.S. 284)",
+    "S.M.LICODIA (Svincolo S.S. 284)",
+    "PATERNO' (Svincolo ss121)",
+    "CATANIA (Piazza della Repubblica)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE6,006,056,407,05"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SAN TEODORO (Piazza Roma)",
+       "idx": 0,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "CESARO' (Villa Comunale)",
+       "idx": 1,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "BRONTE (Corso Umberto, 188)",
+       "idx": 2,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "ADRANO (Svincolo S.S. 284)",
+       "idx": 3,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "BIANCAVILLA (Svincolo S.S. 284)",
+       "idx": 4,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "S.M.LICODIA (Svincolo S.S. 284)",
+       "idx": 5,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "PATERNO' (Svincolo ss121)",
+       "idx": 6,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "CATANIA (Piazza della Repubblica)",
+       "idx": 7,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE14,4514,5015,2515,50"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SAN TEODORO (Piazza Roma)",
+       "idx": 0,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "CESARO' (Villa Comunale)",
+       "idx": 1,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "BRONTE (Corso Umberto, 188)",
+       "idx": 2,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "ADRANO (Svincolo S.S. 284)",
+       "idx": 3,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "BIANCAVILLA (Svincolo S.S. 284)",
+       "idx": 4,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "S.M.LICODIA (Svincolo S.S. 284)",
+       "idx": 5,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "PATERNO' (Svincolo ss121)",
+       "idx": 6,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "CATANIA (Piazza della Repubblica)",
+       "idx": 7,
+       "arr": "16.45",
+       "dep": "16.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVO14,4514,5015,2515,50"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SAN TEODORO (Piazza Roma)",
+       "idx": 0,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "CESARO' (Villa Comunale)",
+       "idx": 1,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "BRONTE (Corso Umberto, 188)",
+       "idx": 2,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "ADRANO (Svincolo S.S. 284)",
+       "idx": 3,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "BIANCAVILLA (Svincolo S.S. 284)",
+       "idx": 4,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "S.M.LICODIA (Svincolo S.S. 284)",
+       "idx": 5,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "PATERNO' (Svincolo ss121)",
+       "idx": 6,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "CATANIA (Piazza della Repubblica)",
+       "idx": 7,
+       "arr": "16.45",
+       "dep": "16.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALE(periodoscolastico)7,107,157,50"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SAN TEODORO (Piazza Roma)",
+       "idx": 0,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "CESARO' (Villa Comunale)",
+       "idx": 1,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "BRONTE (Corso Umberto, 188)",
+       "idx": 2,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE7,107,157,50"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SAN TEODORO (Piazza Roma)",
+       "idx": 0,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "CESARO' (Villa Comunale)",
+       "idx": 1,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "BRONTE (Corso Umberto, 188)",
+       "idx": 2,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE16,0015,5515,2014,55"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Piazza della Repubblica)",
+       "idx": 7,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "PATERNO' (Svincolo ss121)",
+       "idx": 6,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "S.M.LICODIA (Svincolo S.S. 284)",
+       "idx": 5,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "BIANCAVILLA (Svincolo S.S. 284)",
+       "idx": 4,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "ADRANO (Svincolo S.S. 284)",
+       "idx": 3,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "BRONTE (Corso Umberto, 188)",
+       "idx": 2,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "CESARO' (Villa Comunale)",
+       "idx": 1,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "SAN TEODORO (Piazza Roma)",
+       "idx": 0,
+       "arr": "16.00",
+       "dep": "16.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE7,307,256,506,25"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Piazza della Repubblica)",
+       "idx": 7,
+       "arr": "5.30",
+       "dep": "5.30"
+      },
+      {
+       "stop": "PATERNO' (Svincolo ss121)",
+       "idx": 6,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "S.M.LICODIA (Svincolo S.S. 284)",
+       "idx": 5,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "BIANCAVILLA (Svincolo S.S. 284)",
+       "idx": 4,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "ADRANO (Svincolo S.S. 284)",
+       "idx": 3,
+       "arr": "6.25",
+       "dep": "6.25"
+      },
+      {
+       "stop": "BRONTE (Corso Umberto, 188)",
+       "idx": 2,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "CESARO' (Villa Comunale)",
+       "idx": 1,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "SAN TEODORO (Piazza Roma)",
+       "idx": 0,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALE(periodoscolastico)14,4014,3514,00"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "BRONTE (Corso Umberto, 188)",
+       "idx": 2,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "CESARO' (Villa Comunale)",
+       "idx": 1,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "SAN TEODORO (Piazza Roma)",
+       "idx": 0,
+       "arr": "14.40",
+       "dep": "14.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE14,4014,3514,00"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "BRONTE (Corso Umberto, 188)",
+       "idx": 2,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "CESARO' (Villa Comunale)",
+       "idx": 1,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "SAN TEODORO (Piazza Roma)",
+       "idx": 0,
+       "arr": "14.40",
+       "dep": "14.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVO19,0018,5518,2017,55"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Piazza della Repubblica)",
+       "idx": 7,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "PATERNO' (Svincolo ss121)",
+       "idx": 6,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "S.M.LICODIA (Svincolo S.S. 284)",
+       "idx": 5,
+       "arr": "17.40",
+       "dep": "17.40"
+      },
+      {
+       "stop": "BIANCAVILLA (Svincolo S.S. 284)",
+       "idx": 4,
+       "arr": "17.50",
+       "dep": "17.50"
+      },
+      {
+       "stop": "ADRANO (Svincolo S.S. 284)",
+       "idx": 3,
+       "arr": "17.55",
+       "dep": "17.55"
+      },
+      {
+       "stop": "BRONTE (Corso Umberto, 188)",
+       "idx": 2,
+       "arr": "18.20",
+       "dep": "18.20"
+      },
+      {
+       "stop": "CESARO' (Villa Comunale)",
+       "idx": 1,
+       "arr": "18.55",
+       "dep": "18.55"
+      },
+      {
+       "stop": "SAN TEODORO (Piazza Roma)",
+       "idx": 0,
+       "arr": "19.00",
+       "dep": "19.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

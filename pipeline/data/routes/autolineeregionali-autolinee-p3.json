@@ -1,0 +1,313 @@
+{
+ "operator": "Autolinee Regionali",
+ "route_id": "autolineeregionali-autolinee-p3",
+ "name": "RAGUSA - CALTAGIRONE",
+ "source": "AutolineeRegionali__AUTOLINEE_REGIONALI/p003.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Divieto di servizio locale estremi compresi nel tratto Modica-Ragusa ."
+ ],
+ "directions": [
+  {
+   "stops": [
+    "RAGUSA (VIA ZAMA)",
+    "COMISO (Piazza Maiorana)",
+    "PEDALINO",
+    "MAZZARONE",
+    "CUCCHI",
+    "MAZZARONE",
+    "GRANIERI",
+    "CALTAGIRONE (Autostazione)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE5,456,206,407,05"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RAGUSA (VIA ZAMA)",
+       "idx": 0,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "COMISO (Piazza Maiorana)",
+       "idx": 1,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "PEDALINO",
+       "idx": 2,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "MAZZARONE",
+       "idx": 3,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "CUCCHI",
+       "idx": 4,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "GRANIERI",
+       "idx": 6,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 7,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE15,3016,0516,2516,50"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RAGUSA (VIA ZAMA)",
+       "idx": 0,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "COMISO (Piazza Maiorana)",
+       "idx": 1,
+       "arr": "16.25",
+       "dep": "16.25"
+      },
+      {
+       "stop": "PEDALINO",
+       "idx": 2,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "MAZZARONE",
+       "idx": 3,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "CUCCHI",
+       "idx": 4,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "GRANIERI",
+       "idx": 6,
+       "arr": "17.10",
+       "dep": "17.10"
+      },
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 7,
+       "arr": "17.35",
+       "dep": "17.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE//13,3013,5014,15"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MAZZARONE",
+       "idx": 5,
+       "arr": "0.00",
+       "dep": "0.00"
+      },
+      {
+       "stop": "PEDALINO",
+       "idx": 2,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "COMISO (Piazza Maiorana)",
+       "idx": 1,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "RAGUSA (VIA ZAMA)",
+       "idx": 0,
+       "arr": "13.30",
+       "dep": "13.30"
+      }
+     ],
+     "valid": false
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE16,0515,3015,1014,45"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 7,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "GRANIERI",
+       "idx": 6,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "CUCCHI",
+       "idx": 4,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "MAZZARONE",
+       "idx": 3,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "PEDALINO",
+       "idx": 2,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "COMISO (Piazza Maiorana)",
+       "idx": 1,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "RAGUSA (VIA ZAMA)",
+       "idx": 0,
+       "arr": "15.30",
+       "dep": "15.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE8,057,307,106,45"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 7,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "GRANIERI",
+       "idx": 6,
+       "arr": "6.25",
+       "dep": "6.25"
+      },
+      {
+       "stop": "CUCCHI",
+       "idx": 4,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "MAZZARONE",
+       "idx": 3,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "PEDALINO",
+       "idx": 2,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "COMISO (Piazza Maiorana)",
+       "idx": 1,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "RAGUSA (VIA ZAMA)",
+       "idx": 0,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE//15,0014,4014,15"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PEDALINO",
+       "idx": 2,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "COMISO (Piazza Maiorana)",
+       "idx": 1,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "RAGUSA (VIA ZAMA)",
+       "idx": 0,
+       "arr": "15.00",
+       "dep": "15.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

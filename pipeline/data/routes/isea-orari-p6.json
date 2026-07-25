@@ -1,0 +1,132 @@
+{
+ "operator": "Isea",
+ "route_id": "isea-orari-p6",
+ "name": "CATANIA - TROINA",
+ "source": "ISEA_ORARI/p006.json",
+ "prescriptions": [
+  "Prescrizioni di Esercizio Divieto di servizio locale sul tratto Catania – Schettino – Carcaci, estremi inclusi."
+ ],
+ "directions": [
+  {
+   "stops": [
+    "CATANIA (Piazza della Repubblica)",
+    "MISTERBIANCO (Via C.E.E.)",
+    "PATERNO' (Corso Italia)",
+    "TROINA (Piazza Gramsci)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE5,305,456,057,30"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (Piazza della Repubblica)",
+       "idx": 0,
+       "arr": "5.30",
+       "dep": "5.30"
+      },
+      {
+       "stop": "MISTERBIANCO (Via C.E.E.)",
+       "idx": 1,
+       "arr": "5.45",
+       "dep": "5.45"
+      },
+      {
+       "stop": "PATERNO' (Corso Italia)",
+       "idx": 2,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "TROINA (Piazza Gramsci)",
+       "idx": 3,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVO9,009,159,3511,00"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (Piazza della Repubblica)",
+       "idx": 0,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "MISTERBIANCO (Via C.E.E.)",
+       "idx": 1,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "PATERNO' (Corso Italia)",
+       "idx": 2,
+       "arr": "9.35",
+       "dep": "9.35"
+      },
+      {
+       "stop": "TROINA (Piazza Gramsci)",
+       "idx": 3,
+       "arr": "11.00",
+       "dep": "11.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "17,3017,1516,5515,30"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "TROINA (Piazza Gramsci)",
+       "idx": 3,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "PATERNO' (Corso Italia)",
+       "idx": 2,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "MISTERBIANCO (Via C.E.E.)",
+       "idx": 1,
+       "arr": "17.15",
+       "dep": "17.15"
+      },
+      {
+       "stop": "CATANIA (Piazza della Repubblica)",
+       "idx": 0,
+       "arr": "17.30",
+       "dep": "17.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

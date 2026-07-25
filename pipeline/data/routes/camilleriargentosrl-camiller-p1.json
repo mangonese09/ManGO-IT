@@ -1,0 +1,135 @@
+{
+ "operator": "Camilleriargento",
+ "route_id": "camilleriargentosrl-camiller-p1",
+ "name": "Capolinea di Partenza Capolinea di Arrivo - LA DOMENICA, ETC….",
+ "source": "CAMILLERIARGENTOSRL__CAMILLERI_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio 1 C.C. SCOLASTICA .INTERO PERCORSO CAMMARATA AGRIGENTO"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Capolinea di Partenza Capolinea di Arrivo",
+    "Fermata intermedia Fermata intermedia",
+    "Fermata intermedia Fermata intermedia",
+    "Fermata intermedia Fermata intermedia",
+    "Fermata intermedia Fermata intermedia",
+    "Fermata intermedia Fermata intermedia",
+    "Capolinea di Arrivo Capolinea di Partenza",
+    "LA DOMENICA, ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "SCLASTICA7,107,508,008,158,25"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 3,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 4,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 5,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "Capolinea di Arrivo Capolinea di Partenza",
+       "idx": 6,
+       "arr": "9.40",
+       "dep": "9.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCOLASTICA14,5514,1514,0513,5513,45"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Capolinea di Arrivo Capolinea di Partenza",
+       "idx": 6,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 5,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 4,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 3,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

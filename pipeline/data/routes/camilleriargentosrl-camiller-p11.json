@@ -1,0 +1,170 @@
+{
+ "operator": "Camilleriargento",
+ "route_id": "camilleriargentosrl-camiller-p11",
+ "name": "Capolinea di Partenza Capolinea di Arrivo - SOLO LA DOMENICA, ETC….",
+ "source": "CAMILLERIARGENTOSRL__CAMILLERI_ORARI/p011.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio N. 8 C.C FERIALI RAFFADALI - AGRIGENTO (FOGLIO N.2)"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Capolinea di Partenza Capolinea di Arrivo",
+    "Capolinea di Arrivo Capolinea di Partenza",
+    "SOLO LA DOMENICA, ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE12,3013,00"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "Capolinea di Arrivo Capolinea di Partenza",
+       "idx": 1,
+       "arr": "13.00",
+       "dep": "13.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE13,3014,00"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Capolinea di Arrivo Capolinea di Partenza",
+       "idx": 1,
+       "arr": "14.00",
+       "dep": "14.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE15,3016,00"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "Capolinea di Arrivo Capolinea di Partenza",
+       "idx": 1,
+       "arr": "16.00",
+       "dep": "16.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE13,4513,15"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Capolinea di Arrivo Capolinea di Partenza",
+       "idx": 1,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "13.45",
+       "dep": "13.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE14,3014,00"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Capolinea di Arrivo Capolinea di Partenza",
+       "idx": 1,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "14.30",
+       "dep": "14.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE18,3018,00"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Capolinea di Arrivo Capolinea di Partenza",
+       "idx": 1,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "18.30",
+       "dep": "18.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,158 @@
+{
+ "operator": "Zuccala",
+ "route_id": "zuccala-orari-p3",
+ "name": "LICATA LICATA - DESUSINO DESUSINO",
+ "source": "ZUCCALA_ORARI/p003.json",
+ "prescriptions": [
+  "Prescrizioni Divieto di servizio locale sul tratto bivio Baiatiche-Riesi, Estremi compresi e per le relazioni Riesi- Barrafranca e",
+  "Riesi -Pietraperzia; divieto di servizio lacale, estremi compresi, tra bivio Falconara e Licata"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "LICATA LICATA",
+    "POGGIO DI GUARDIA POGGIO DI GUARDIA",
+    "FALCONARA FALCONARA",
+    "DESUSINO DESUSINO"
+   ],
+   "trips": [
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "giornalierada01/07al31/089,309,409,5010,00"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "LICATA LICATA",
+       "idx": 0,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "POGGIO DI GUARDIA POGGIO DI GUARDIA",
+       "idx": 1,
+       "arr": "9.40",
+       "dep": "9.40"
+      },
+      {
+       "stop": "FALCONARA FALCONARA",
+       "idx": 2,
+       "arr": "9.50",
+       "dep": "9.50"
+      },
+      {
+       "stop": "DESUSINO DESUSINO",
+       "idx": 3,
+       "arr": "10.00",
+       "dep": "10.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "giornalieradal01/07al31/08neisosabatoligiorneidfestivi21,0021,1021,15"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "LICATA LICATA",
+       "idx": 0,
+       "arr": "21.00",
+       "dep": "21.00"
+      },
+      {
+       "stop": "POGGIO DI GUARDIA POGGIO DI GUARDIA",
+       "idx": 1,
+       "arr": "21.10",
+       "dep": "21.10"
+      },
+      {
+       "stop": "FALCONARA FALCONARA",
+       "idx": 2,
+       "arr": "21.15",
+       "dep": "21.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "giornalierada01/07al31/0817,0016,5016,4016,30"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "DESUSINO DESUSINO",
+       "idx": 3,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "FALCONARA FALCONARA",
+       "idx": 2,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "POGGIO DI GUARDIA POGGIO DI GUARDIA",
+       "idx": 1,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "LICATA LICATA",
+       "idx": 0,
+       "arr": "17.00",
+       "dep": "17.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "giornalieradal01/07a31/08neisosabatoligiorneidfestivi0,150,0524,00"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "LICATA LICATA",
+       "idx": 0,
+       "arr": "0.15",
+       "dep": "0.15"
+      },
+      {
+       "stop": "POGGIO DI GUARDIA POGGIO DI GUARDIA",
+       "idx": 1,
+       "arr": "0.05",
+       "dep": "0.05"
+      },
+      {
+       "stop": "FALCONARA FALCONARA",
+       "idx": 2,
+       "arr": "24.00",
+       "dep": "24.00"
+      }
+     ],
+     "valid": false
+    }
+   ]
+  }
+ ]
+}

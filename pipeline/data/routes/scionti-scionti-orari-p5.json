@@ -1,0 +1,169 @@
+{
+ "operator": "Scionti",
+ "route_id": "scionti-scionti-orari-p5",
+ "name": "CATANIA - Zona Industriale Priolo Gargallo",
+ "source": "Scionti__SCIONTI_ORARI/p005.json",
+ "prescriptions": [
+  "Prescrizioni L'autolinea è riservata all'esclusivo servizio per il trasporto degli operai"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "CATANIA (Via D'Amico)",
+    "Zona Industriale Priolo Gargallo (ex Stabilimenti SINCAT)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE4,455,40"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico)",
+       "idx": 0,
+       "arr": "4.45",
+       "dep": "4.45"
+      },
+      {
+       "stop": "Zona Industriale Priolo Gargallo (ex Stabilimenti SINCAT)",
+       "idx": 1,
+       "arr": "5.40",
+       "dep": "5.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE12,4013,35"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico)",
+       "idx": 0,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "Zona Industriale Priolo Gargallo (ex Stabilimenti SINCAT)",
+       "idx": 1,
+       "arr": "13.35",
+       "dep": "13.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE20,4521,40"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico)",
+       "idx": 0,
+       "arr": "20.45",
+       "dep": "20.45"
+      },
+      {
+       "stop": "Zona Industriale Priolo Gargallo (ex Stabilimenti SINCAT)",
+       "idx": 1,
+       "arr": "21.40",
+       "dep": "21.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE7,156,20"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Zona Industriale Priolo Gargallo (ex Stabilimenti SINCAT)",
+       "idx": 1,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico)",
+       "idx": 0,
+       "arr": "7.15",
+       "dep": "7.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE15,1514,20"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Zona Industriale Priolo Gargallo (ex Stabilimenti SINCAT)",
+       "idx": 1,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico)",
+       "idx": 0,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE23,1522,20"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Zona Industriale Priolo Gargallo (ex Stabilimenti SINCAT)",
+       "idx": 1,
+       "arr": "22.20",
+       "dep": "22.20"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico)",
+       "idx": 0,
+       "arr": "23.15",
+       "dep": "23.15"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

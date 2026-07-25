@@ -1,0 +1,96 @@
+{
+ "operator": "Giuntabustrasporti",
+ "route_id": "giuntabustrasportisnc-giunta-p5",
+ "name": "Capolinea di Partenza Capolinea di Arrivo - VENERDI', SOLO IL SABATO, SOLO LA DOMENICA, ETC….",
+ "source": "GIUNTABUSTRASPORTISNC__GIUNTABUS_TRASPORTI_ORARI/p005.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Capolinea di Partenza Capolinea di Arrivo",
+    "Fermata intermedia Fermata intermedia",
+    "Fermata intermedia Fermata intermedia",
+    "Capolinea di Arrivo Capolinea di Partenza",
+    "VENERDI', SOLO IL SABATO, SOLO LA DOMENICA, ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "7",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "DOHMEEENICFESTIVI13,3013,3513,40"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "Capolinea di Arrivo Capolinea di Partenza",
+       "idx": 3,
+       "arr": "14.20",
+       "dep": "14.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "DOMENICHEFESTIV12,0011,5511,50"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Capolinea di Arrivo Capolinea di Partenza",
+       "idx": 3,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "11.55",
+       "dep": "11.55"
+      },
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "12.00",
+       "dep": "12.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -12,6 +12,7 @@ PAGES = os.path.join(ROOT, 'data', 'pages')
 OUT = os.path.join(ROOT, 'data', 'grids')
 
 TIME_RE = re.compile(r'^\d{1,2}[.:]\d{2}$')
+COMMA_TIME_RE = re.compile(r'^\d{1,2},\d{2}$')  # some sheets print 10,50 for 10.50
 CORSA_RE = re.compile(r'^\d{1,2}[AR]?$')
 KM_RE = re.compile(r'^\d{1,3},\d{1,3}$')
 
@@ -119,8 +120,15 @@ def parse_table(words, lines, y0, y1):
         if row[0]['y'] <= corsa_y + 1: continue
         names = [w for w in row if staz_x0 <= w['x'] <= staz_x1 and not TIME_RE.match(w['t'])
                  and w['t'] not in ('-', '|') and not KM_RE.match(w['t'])]
-        cells = [w for w in row if (TIME_RE.match(w['t']) or w['t'] in ('-', '|'))]
-        kms = [w['t'] for w in row if KM_RE.match(w['t'])]
+        cells, kms = [], []
+        for w in row:
+            if TIME_RE.match(w['t']) or w['t'] in ('-', '|'):
+                cells.append(w)
+            elif COMMA_TIME_RE.match(w['t']) and min(abs(c['x'] - w['x']) for c in corse) < win:
+                # comma-decimal time sitting in a corsa column, not a km value
+                cells.append({'t': w['t'].replace(',', '.'), 'x': w['x'], 'y': w['y']})
+            elif KM_RE.match(w['t']):
+                kms.append(w['t'])
         name = ' '.join(w['t'] for w in names).strip()
         if re.match(r'^(C O R S E|Prescrizioni|Divieto|N\.B\.)', name):
             name = ''

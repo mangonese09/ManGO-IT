@@ -1,0 +1,1345 @@
+{
+ "operator": "Cracchiolo",
+ "route_id": "cracchiolo-orari-p6",
+ "name": "P.ZA DUOMO CARINI P.ZA DUOMO - PIAZZA DUOMO PARTINICO PIAZZA DUOMO",
+ "source": "CRACCHIOLO_ORARI/p006.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "P.ZA DUOMO CARINI P.ZA DUOMO",
+    "UMBERTO I,2 CARINI P.ZA SANT'ANNA",
+    "PALERMO, 4",
+    "C.SO ITALIA, 41 C.SO UMBERTO I, 3",
+    "C.SO ITALIA, 95 VIA PALERMO, 5",
+    "ITALIA, 177 C.SO ITALIA, 48",
+    "S.P.3, 41 C.SO ITALIA, 56",
+    "S.P.3, 65 CARINI C.SO ITALIA, 150",
+    "87 (BIVIO FORESTA) S.P.3, 48",
+    "176 S.P.3, 88 (BIVIO FORESTA)",
+    "74 S.S.113 KM",
+    "STAZ. METROPOLITANA VILLAGRAZIA, 225",
+    "C.SO UMBERTO I, 362 S.S.113 KM",
+    "UMBERTO I, 318 S.S.113 KM",
+    "UMBERTO I, 120 CORSO UMBERTO I, 359",
+    "PIAZZA V.E.ORLANDO CORSO UMBERTO I, 199",
+    "UMBERTO I, 115 CORSO UMBERTO I, 115",
+    "UMBERTO I, 199 CINISI P.ZA V.E.ORLANDO (capolinea)",
+    "UMBERTO I, 359 C.SO UMBERTO I, 120",
+    "VIA PALERMO, 129 S.S.113 KM",
+    "PALERMO, 29 VIA PALERMO, 224",
+    "PIAZZA DUOMO VIA PALERMO, 58",
+    "VIA PEREZ, 94",
+    "CHIESA (CAPOLINEA) VIA RUGGERO SETTIMO>VIA PALERMO",
+    "> VIA PARTINICO VIA C. A. DALLA CHIESA (CAPOLINEA)",
+    "> VIA TEVERE VIA F.SCO CRISPI > VIA MONS. EVOLA",
+    "CONSIGLIO, 5 VIA PARTINICO > C.SO V.EMANUELE",
+    "S.S.186 KM S.S.113 KM",
+    "> VIA TARANTO LARGO MODICA",
+    "MORO (STADIO) C.SO DEI MILLE, 252",
+    "CALANDRINO, 12",
+    "PIAZZA DUOMO PARTINICO PIAZZA DUOMO"
+   ],
+   "trips": [
+    {
+     "corsa": "13",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale7,457,467,477,487,497,507,517,527,587,598,008,01"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "P.ZA DUOMO CARINI P.ZA DUOMO",
+       "idx": 0,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "UMBERTO I,2 CARINI P.ZA SANT'ANNA",
+       "idx": 1,
+       "arr": "7.46",
+       "dep": "7.46"
+      },
+      {
+       "stop": "PALERMO, 4",
+       "idx": 2,
+       "arr": "7.47",
+       "dep": "7.47"
+      },
+      {
+       "stop": "C.SO ITALIA, 41 C.SO UMBERTO I, 3",
+       "idx": 3,
+       "arr": "7.48",
+       "dep": "7.48"
+      },
+      {
+       "stop": "C.SO ITALIA, 95 VIA PALERMO, 5",
+       "idx": 4,
+       "arr": "7.49",
+       "dep": "7.49"
+      },
+      {
+       "stop": "ITALIA, 177 C.SO ITALIA, 48",
+       "idx": 5,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "S.P.3, 41 C.SO ITALIA, 56",
+       "idx": 6,
+       "arr": "7.51",
+       "dep": "7.51"
+      },
+      {
+       "stop": "S.P.3, 65 CARINI C.SO ITALIA, 150",
+       "idx": 7,
+       "arr": "7.52",
+       "dep": "7.52"
+      },
+      {
+       "stop": "87 (BIVIO FORESTA) S.P.3, 48",
+       "idx": 8,
+       "arr": "7.58",
+       "dep": "7.58"
+      },
+      {
+       "stop": "176 S.P.3, 88 (BIVIO FORESTA)",
+       "idx": 9,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "74 S.S.113 KM",
+       "idx": 10,
+       "arr": "8.01",
+       "dep": "8.01"
+      },
+      {
+       "stop": "STAZ. METROPOLITANA VILLAGRAZIA, 225",
+       "idx": 11,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "C.SO UMBERTO I, 362 S.S.113 KM",
+       "idx": 12,
+       "arr": "8.09",
+       "dep": "8.09"
+      },
+      {
+       "stop": "UMBERTO I, 318 S.S.113 KM",
+       "idx": 13,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "UMBERTO I, 120 CORSO UMBERTO I, 359",
+       "idx": 14,
+       "arr": "8.11",
+       "dep": "8.11"
+      },
+      {
+       "stop": "PIAZZA V.E.ORLANDO CORSO UMBERTO I, 199",
+       "idx": 15,
+       "arr": "8.12",
+       "dep": "8.12"
+      },
+      {
+       "stop": "UMBERTO I, 115 CORSO UMBERTO I, 115",
+       "idx": 16,
+       "arr": "8.13",
+       "dep": "8.13"
+      },
+      {
+       "stop": "UMBERTO I, 199 CINISI P.ZA V.E.ORLANDO (capolinea)",
+       "idx": 17,
+       "arr": "8.14",
+       "dep": "8.14"
+      },
+      {
+       "stop": "UMBERTO I, 359 C.SO UMBERTO I, 120",
+       "idx": 18,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "VIA PALERMO, 129 S.S.113 KM",
+       "idx": 19,
+       "arr": "8.18",
+       "dep": "8.18"
+      },
+      {
+       "stop": "PALERMO, 29 VIA PALERMO, 224",
+       "idx": 20,
+       "arr": "8.19",
+       "dep": "8.19"
+      },
+      {
+       "stop": "PIAZZA DUOMO VIA PALERMO, 58",
+       "idx": 21,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "VIA PEREZ, 94",
+       "idx": 22,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "> VIA TEVERE VIA F.SCO CRISPI > VIA MONS. EVOLA",
+       "idx": 25,
+       "arr": "8.21",
+       "dep": "8.21"
+      },
+      {
+       "stop": "CONSIGLIO, 5 VIA PARTINICO > C.SO V.EMANUELE",
+       "idx": 26,
+       "arr": "8.22",
+       "dep": "8.22"
+      },
+      {
+       "stop": "S.S.186 KM S.S.113 KM",
+       "idx": 27,
+       "arr": "8.35",
+       "dep": "8.35"
+      },
+      {
+       "stop": "> VIA TARANTO LARGO MODICA",
+       "idx": 28,
+       "arr": "8.38",
+       "dep": "8.38"
+      },
+      {
+       "stop": "MORO (STADIO) C.SO DEI MILLE, 252",
+       "idx": 29,
+       "arr": "8.40",
+       "dep": "8.40"
+      },
+      {
+       "stop": "CALANDRINO, 12",
+       "idx": 30,
+       "arr": "8.42",
+       "dep": "8.42"
+      },
+      {
+       "stop": "PIAZZA DUOMO PARTINICO PIAZZA DUOMO",
+       "idx": 31,
+       "arr": "8.44",
+       "dep": "8.44"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "15",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PIAZZA V.E.ORLANDO CORSO UMBERTO I, 199",
+       "idx": 15,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "UMBERTO I, 115 CORSO UMBERTO I, 115",
+       "idx": 16,
+       "arr": "8.56",
+       "dep": "8.56"
+      },
+      {
+       "stop": "UMBERTO I, 199 CINISI P.ZA V.E.ORLANDO (capolinea)",
+       "idx": 17,
+       "arr": "8.57",
+       "dep": "8.57"
+      },
+      {
+       "stop": "UMBERTO I, 359 C.SO UMBERTO I, 120",
+       "idx": 18,
+       "arr": "8.57",
+       "dep": "8.57"
+      },
+      {
+       "stop": "VIA PALERMO, 129 S.S.113 KM",
+       "idx": 19,
+       "arr": "8.59",
+       "dep": "8.59"
+      },
+      {
+       "stop": "PALERMO, 29 VIA PALERMO, 224",
+       "idx": 20,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "PIAZZA DUOMO VIA PALERMO, 58",
+       "idx": 21,
+       "arr": "9.01",
+       "dep": "9.01"
+      },
+      {
+       "stop": "VIA PEREZ, 94",
+       "idx": 22,
+       "arr": "9.01",
+       "dep": "9.01"
+      },
+      {
+       "stop": "> VIA TEVERE VIA F.SCO CRISPI > VIA MONS. EVOLA",
+       "idx": 25,
+       "arr": "9.02",
+       "dep": "9.02"
+      },
+      {
+       "stop": "CONSIGLIO, 5 VIA PARTINICO > C.SO V.EMANUELE",
+       "idx": 26,
+       "arr": "9.03",
+       "dep": "9.03"
+      },
+      {
+       "stop": "S.S.186 KM S.S.113 KM",
+       "idx": 27,
+       "arr": "9.16",
+       "dep": "9.16"
+      },
+      {
+       "stop": "> VIA TARANTO LARGO MODICA",
+       "idx": 28,
+       "arr": "9.19",
+       "dep": "9.19"
+      },
+      {
+       "stop": "MORO (STADIO) C.SO DEI MILLE, 252",
+       "idx": 29,
+       "arr": "9.21",
+       "dep": "9.21"
+      },
+      {
+       "stop": "CALANDRINO, 12",
+       "idx": 30,
+       "arr": "9.23",
+       "dep": "9.23"
+      },
+      {
+       "stop": "PIAZZA DUOMO PARTINICO PIAZZA DUOMO",
+       "idx": 31,
+       "arr": "9.25",
+       "dep": "9.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "17",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PIAZZA V.E.ORLANDO CORSO UMBERTO I, 199",
+       "idx": 15,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "UMBERTO I, 115 CORSO UMBERTO I, 115",
+       "idx": 16,
+       "arr": "12.41",
+       "dep": "12.41"
+      },
+      {
+       "stop": "UMBERTO I, 199 CINISI P.ZA V.E.ORLANDO (capolinea)",
+       "idx": 17,
+       "arr": "12.42",
+       "dep": "12.42"
+      },
+      {
+       "stop": "UMBERTO I, 359 C.SO UMBERTO I, 120",
+       "idx": 18,
+       "arr": "12.42",
+       "dep": "12.42"
+      },
+      {
+       "stop": "VIA PALERMO, 129 S.S.113 KM",
+       "idx": 19,
+       "arr": "12.44",
+       "dep": "12.44"
+      },
+      {
+       "stop": "PALERMO, 29 VIA PALERMO, 224",
+       "idx": 20,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "PIAZZA DUOMO VIA PALERMO, 58",
+       "idx": 21,
+       "arr": "12.46",
+       "dep": "12.46"
+      },
+      {
+       "stop": "VIA PEREZ, 94",
+       "idx": 22,
+       "arr": "12.46",
+       "dep": "12.46"
+      },
+      {
+       "stop": "> VIA TEVERE VIA F.SCO CRISPI > VIA MONS. EVOLA",
+       "idx": 25,
+       "arr": "12.47",
+       "dep": "12.47"
+      },
+      {
+       "stop": "CONSIGLIO, 5 VIA PARTINICO > C.SO V.EMANUELE",
+       "idx": 26,
+       "arr": "12.48",
+       "dep": "12.48"
+      },
+      {
+       "stop": "S.S.186 KM S.S.113 KM",
+       "idx": 27,
+       "arr": "13.01",
+       "dep": "13.01"
+      },
+      {
+       "stop": "> VIA TARANTO LARGO MODICA",
+       "idx": 28,
+       "arr": "13.04",
+       "dep": "13.04"
+      },
+      {
+       "stop": "MORO (STADIO) C.SO DEI MILLE, 252",
+       "idx": 29,
+       "arr": "13.06",
+       "dep": "13.06"
+      },
+      {
+       "stop": "CALANDRINO, 12",
+       "idx": 30,
+       "arr": "13.08",
+       "dep": "13.08"
+      },
+      {
+       "stop": "PIAZZA DUOMO PARTINICO PIAZZA DUOMO",
+       "idx": 31,
+       "arr": "13.10",
+       "dep": "13.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "19",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "scolasticoLUN/VEN"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PIAZZA V.E.ORLANDO CORSO UMBERTO I, 199",
+       "idx": 15,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "UMBERTO I, 115 CORSO UMBERTO I, 115",
+       "idx": 16,
+       "arr": "13.56",
+       "dep": "13.56"
+      },
+      {
+       "stop": "UMBERTO I, 199 CINISI P.ZA V.E.ORLANDO (capolinea)",
+       "idx": 17,
+       "arr": "13.57",
+       "dep": "13.57"
+      },
+      {
+       "stop": "UMBERTO I, 359 C.SO UMBERTO I, 120",
+       "idx": 18,
+       "arr": "13.57",
+       "dep": "13.57"
+      },
+      {
+       "stop": "VIA PALERMO, 129 S.S.113 KM",
+       "idx": 19,
+       "arr": "13.59",
+       "dep": "13.59"
+      },
+      {
+       "stop": "PALERMO, 29 VIA PALERMO, 224",
+       "idx": 20,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "PIAZZA DUOMO VIA PALERMO, 58",
+       "idx": 21,
+       "arr": "14.01",
+       "dep": "14.01"
+      },
+      {
+       "stop": "VIA PEREZ, 94",
+       "idx": 22,
+       "arr": "14.01",
+       "dep": "14.01"
+      },
+      {
+       "stop": "> VIA TEVERE VIA F.SCO CRISPI > VIA MONS. EVOLA",
+       "idx": 25,
+       "arr": "14.02",
+       "dep": "14.02"
+      },
+      {
+       "stop": "CONSIGLIO, 5 VIA PARTINICO > C.SO V.EMANUELE",
+       "idx": 26,
+       "arr": "14.03",
+       "dep": "14.03"
+      },
+      {
+       "stop": "S.S.186 KM S.S.113 KM",
+       "idx": 27,
+       "arr": "14.16",
+       "dep": "14.16"
+      },
+      {
+       "stop": "> VIA TARANTO LARGO MODICA",
+       "idx": 28,
+       "arr": "14.19",
+       "dep": "14.19"
+      },
+      {
+       "stop": "MORO (STADIO) C.SO DEI MILLE, 252",
+       "idx": 29,
+       "arr": "14.21",
+       "dep": "14.21"
+      },
+      {
+       "stop": "CALANDRINO, 12",
+       "idx": 30,
+       "arr": "14.23",
+       "dep": "14.23"
+      },
+      {
+       "stop": "PIAZZA DUOMO PARTINICO PIAZZA DUOMO",
+       "idx": 31,
+       "arr": "14.25",
+       "dep": "14.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "21",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "scolasticoSABATO13,1013,1113,1213,1313,1413,1513,1613,1713,2313,2413,2513,26"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "P.ZA DUOMO CARINI P.ZA DUOMO",
+       "idx": 0,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "UMBERTO I,2 CARINI P.ZA SANT'ANNA",
+       "idx": 1,
+       "arr": "13.11",
+       "dep": "13.11"
+      },
+      {
+       "stop": "PALERMO, 4",
+       "idx": 2,
+       "arr": "13.12",
+       "dep": "13.12"
+      },
+      {
+       "stop": "C.SO ITALIA, 41 C.SO UMBERTO I, 3",
+       "idx": 3,
+       "arr": "13.13",
+       "dep": "13.13"
+      },
+      {
+       "stop": "C.SO ITALIA, 95 VIA PALERMO, 5",
+       "idx": 4,
+       "arr": "13.14",
+       "dep": "13.14"
+      },
+      {
+       "stop": "ITALIA, 177 C.SO ITALIA, 48",
+       "idx": 5,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "S.P.3, 41 C.SO ITALIA, 56",
+       "idx": 6,
+       "arr": "13.16",
+       "dep": "13.16"
+      },
+      {
+       "stop": "S.P.3, 65 CARINI C.SO ITALIA, 150",
+       "idx": 7,
+       "arr": "13.17",
+       "dep": "13.17"
+      },
+      {
+       "stop": "87 (BIVIO FORESTA) S.P.3, 48",
+       "idx": 8,
+       "arr": "13.23",
+       "dep": "13.23"
+      },
+      {
+       "stop": "176 S.P.3, 88 (BIVIO FORESTA)",
+       "idx": 9,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "74 S.S.113 KM",
+       "idx": 10,
+       "arr": "13.26",
+       "dep": "13.26"
+      },
+      {
+       "stop": "STAZ. METROPOLITANA VILLAGRAZIA, 225",
+       "idx": 11,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "C.SO UMBERTO I, 362 S.S.113 KM",
+       "idx": 12,
+       "arr": "13.34",
+       "dep": "13.34"
+      },
+      {
+       "stop": "UMBERTO I, 318 S.S.113 KM",
+       "idx": 13,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "UMBERTO I, 120 CORSO UMBERTO I, 359",
+       "idx": 14,
+       "arr": "13.36",
+       "dep": "13.36"
+      },
+      {
+       "stop": "PIAZZA V.E.ORLANDO CORSO UMBERTO I, 199",
+       "idx": 15,
+       "arr": "13.37",
+       "dep": "13.37"
+      },
+      {
+       "stop": "UMBERTO I, 115 CORSO UMBERTO I, 115",
+       "idx": 16,
+       "arr": "13.38",
+       "dep": "13.38"
+      },
+      {
+       "stop": "UMBERTO I, 199 CINISI P.ZA V.E.ORLANDO (capolinea)",
+       "idx": 17,
+       "arr": "13.39",
+       "dep": "13.39"
+      },
+      {
+       "stop": "UMBERTO I, 359 C.SO UMBERTO I, 120",
+       "idx": 18,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "VIA PALERMO, 129 S.S.113 KM",
+       "idx": 19,
+       "arr": "13.43",
+       "dep": "13.43"
+      },
+      {
+       "stop": "PALERMO, 29 VIA PALERMO, 224",
+       "idx": 20,
+       "arr": "13.44",
+       "dep": "13.44"
+      },
+      {
+       "stop": "PIAZZA DUOMO VIA PALERMO, 58",
+       "idx": 21,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "VIA PEREZ, 94",
+       "idx": 22,
+       "arr": "13.45",
+       "dep": "13.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "23",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "scolasticoLUN/VEN14,1014,1114,1214,1314,1414,1514,1614,1714,2314,2414,2514,26"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "P.ZA DUOMO CARINI P.ZA DUOMO",
+       "idx": 0,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "UMBERTO I,2 CARINI P.ZA SANT'ANNA",
+       "idx": 1,
+       "arr": "14.11",
+       "dep": "14.11"
+      },
+      {
+       "stop": "PALERMO, 4",
+       "idx": 2,
+       "arr": "14.12",
+       "dep": "14.12"
+      },
+      {
+       "stop": "C.SO ITALIA, 41 C.SO UMBERTO I, 3",
+       "idx": 3,
+       "arr": "14.13",
+       "dep": "14.13"
+      },
+      {
+       "stop": "C.SO ITALIA, 95 VIA PALERMO, 5",
+       "idx": 4,
+       "arr": "14.14",
+       "dep": "14.14"
+      },
+      {
+       "stop": "ITALIA, 177 C.SO ITALIA, 48",
+       "idx": 5,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "S.P.3, 41 C.SO ITALIA, 56",
+       "idx": 6,
+       "arr": "14.16",
+       "dep": "14.16"
+      },
+      {
+       "stop": "S.P.3, 65 CARINI C.SO ITALIA, 150",
+       "idx": 7,
+       "arr": "14.17",
+       "dep": "14.17"
+      },
+      {
+       "stop": "87 (BIVIO FORESTA) S.P.3, 48",
+       "idx": 8,
+       "arr": "14.23",
+       "dep": "14.23"
+      },
+      {
+       "stop": "176 S.P.3, 88 (BIVIO FORESTA)",
+       "idx": 9,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "74 S.S.113 KM",
+       "idx": 10,
+       "arr": "14.26",
+       "dep": "14.26"
+      },
+      {
+       "stop": "STAZ. METROPOLITANA VILLAGRAZIA, 225",
+       "idx": 11,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "C.SO UMBERTO I, 362 S.S.113 KM",
+       "idx": 12,
+       "arr": "14.34",
+       "dep": "14.34"
+      },
+      {
+       "stop": "UMBERTO I, 318 S.S.113 KM",
+       "idx": 13,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "UMBERTO I, 120 CORSO UMBERTO I, 359",
+       "idx": 14,
+       "arr": "14.36",
+       "dep": "14.36"
+      },
+      {
+       "stop": "PIAZZA V.E.ORLANDO CORSO UMBERTO I, 199",
+       "idx": 15,
+       "arr": "14.37",
+       "dep": "14.37"
+      },
+      {
+       "stop": "UMBERTO I, 115 CORSO UMBERTO I, 115",
+       "idx": 16,
+       "arr": "14.38",
+       "dep": "14.38"
+      },
+      {
+       "stop": "UMBERTO I, 199 CINISI P.ZA V.E.ORLANDO (capolinea)",
+       "idx": 17,
+       "arr": "14.39",
+       "dep": "14.39"
+      },
+      {
+       "stop": "UMBERTO I, 359 C.SO UMBERTO I, 120",
+       "idx": 18,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "VIA PALERMO, 129 S.S.113 KM",
+       "idx": 19,
+       "arr": "14.43",
+       "dep": "14.43"
+      },
+      {
+       "stop": "PALERMO, 29 VIA PALERMO, 224",
+       "idx": 20,
+       "arr": "14.44",
+       "dep": "14.44"
+      },
+      {
+       "stop": "PIAZZA DUOMO VIA PALERMO, 58",
+       "idx": 21,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "VIA PEREZ, 94",
+       "idx": 22,
+       "arr": "14.45",
+       "dep": "14.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "14",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "scolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PIAZZA DUOMO PARTINICO PIAZZA DUOMO",
+       "idx": 31,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "MORO (STADIO) C.SO DEI MILLE, 252",
+       "idx": 29,
+       "arr": "12.31",
+       "dep": "12.31"
+      },
+      {
+       "stop": "> VIA TARANTO LARGO MODICA",
+       "idx": 28,
+       "arr": "12.32",
+       "dep": "12.32"
+      },
+      {
+       "stop": "S.S.186 KM S.S.113 KM",
+       "idx": 27,
+       "arr": "12.46",
+       "dep": "12.46"
+      },
+      {
+       "stop": "CONSIGLIO, 5 VIA PARTINICO > C.SO V.EMANUELE",
+       "idx": 26,
+       "arr": "12.52",
+       "dep": "12.52"
+      },
+      {
+       "stop": "> VIA TEVERE VIA F.SCO CRISPI > VIA MONS. EVOLA",
+       "idx": 25,
+       "arr": "12.53",
+       "dep": "12.53"
+      },
+      {
+       "stop": "CHIESA (CAPOLINEA) VIA RUGGERO SETTIMO>VIA PALERMO",
+       "idx": 23,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "PIAZZA DUOMO VIA PALERMO, 58",
+       "idx": 21,
+       "arr": "12.56",
+       "dep": "12.56"
+      },
+      {
+       "stop": "PALERMO, 29 VIA PALERMO, 224",
+       "idx": 20,
+       "arr": "12.57",
+       "dep": "12.57"
+      },
+      {
+       "stop": "VIA PALERMO, 129 S.S.113 KM",
+       "idx": 19,
+       "arr": "12.59",
+       "dep": "12.59"
+      },
+      {
+       "stop": "UMBERTO I, 359 C.SO UMBERTO I, 120",
+       "idx": 18,
+       "arr": "13.03",
+       "dep": "13.03"
+      },
+      {
+       "stop": "UMBERTO I, 199 CINISI P.ZA V.E.ORLANDO (capolinea)",
+       "idx": 17,
+       "arr": "13.04",
+       "dep": "13.04"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "16",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "scolastico14,3014,2914,2814,2714,2614,2514,2414,2314,2214,21"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PIAZZA DUOMO PARTINICO PIAZZA DUOMO",
+       "idx": 31,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "MORO (STADIO) C.SO DEI MILLE, 252",
+       "idx": 29,
+       "arr": "13.31",
+       "dep": "13.31"
+      },
+      {
+       "stop": "> VIA TARANTO LARGO MODICA",
+       "idx": 28,
+       "arr": "13.32",
+       "dep": "13.32"
+      },
+      {
+       "stop": "S.S.186 KM S.S.113 KM",
+       "idx": 27,
+       "arr": "13.46",
+       "dep": "13.46"
+      },
+      {
+       "stop": "CONSIGLIO, 5 VIA PARTINICO > C.SO V.EMANUELE",
+       "idx": 26,
+       "arr": "13.52",
+       "dep": "13.52"
+      },
+      {
+       "stop": "> VIA TEVERE VIA F.SCO CRISPI > VIA MONS. EVOLA",
+       "idx": 25,
+       "arr": "13.53",
+       "dep": "13.53"
+      },
+      {
+       "stop": "CHIESA (CAPOLINEA) VIA RUGGERO SETTIMO>VIA PALERMO",
+       "idx": 23,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "PIAZZA DUOMO VIA PALERMO, 58",
+       "idx": 21,
+       "arr": "13.56",
+       "dep": "13.56"
+      },
+      {
+       "stop": "PALERMO, 29 VIA PALERMO, 224",
+       "idx": 20,
+       "arr": "13.57",
+       "dep": "13.57"
+      },
+      {
+       "stop": "VIA PALERMO, 129 S.S.113 KM",
+       "idx": 19,
+       "arr": "13.59",
+       "dep": "13.59"
+      },
+      {
+       "stop": "UMBERTO I, 359 C.SO UMBERTO I, 120",
+       "idx": 18,
+       "arr": "14.03",
+       "dep": "14.03"
+      },
+      {
+       "stop": "UMBERTO I, 199 CINISI P.ZA V.E.ORLANDO (capolinea)",
+       "idx": 17,
+       "arr": "14.04",
+       "dep": "14.04"
+      },
+      {
+       "stop": "UMBERTO I, 115 CORSO UMBERTO I, 115",
+       "idx": 16,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "PIAZZA V.E.ORLANDO CORSO UMBERTO I, 199",
+       "idx": 15,
+       "arr": "14.06",
+       "dep": "14.06"
+      },
+      {
+       "stop": "UMBERTO I, 120 CORSO UMBERTO I, 359",
+       "idx": 14,
+       "arr": "14.07",
+       "dep": "14.07"
+      },
+      {
+       "stop": "UMBERTO I, 318 S.S.113 KM",
+       "idx": 13,
+       "arr": "14.08",
+       "dep": "14.08"
+      },
+      {
+       "stop": "C.SO UMBERTO I, 362 S.S.113 KM",
+       "idx": 12,
+       "arr": "14.11",
+       "dep": "14.11"
+      },
+      {
+       "stop": "STAZ. METROPOLITANA VILLAGRAZIA, 225",
+       "idx": 11,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "74 S.S.113 KM",
+       "idx": 10,
+       "arr": "14.21",
+       "dep": "14.21"
+      },
+      {
+       "stop": "176 S.P.3, 88 (BIVIO FORESTA)",
+       "idx": 9,
+       "arr": "14.22",
+       "dep": "14.22"
+      },
+      {
+       "stop": "87 (BIVIO FORESTA) S.P.3, 48",
+       "idx": 8,
+       "arr": "14.24",
+       "dep": "14.24"
+      },
+      {
+       "stop": "S.P.3, 65 CARINI C.SO ITALIA, 150",
+       "idx": 7,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "S.P.3, 41 C.SO ITALIA, 56",
+       "idx": 6,
+       "arr": "14.26",
+       "dep": "14.26"
+      },
+      {
+       "stop": "ITALIA, 177 C.SO ITALIA, 48",
+       "idx": 5,
+       "arr": "14.27",
+       "dep": "14.27"
+      },
+      {
+       "stop": "C.SO ITALIA, 95 VIA PALERMO, 5",
+       "idx": 4,
+       "arr": "14.28",
+       "dep": "14.28"
+      },
+      {
+       "stop": "C.SO ITALIA, 41 C.SO UMBERTO I, 3",
+       "idx": 3,
+       "arr": "14.29",
+       "dep": "14.29"
+      },
+      {
+       "stop": "P.ZA DUOMO CARINI P.ZA DUOMO",
+       "idx": 0,
+       "arr": "14.30",
+       "dep": "14.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "18",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "scolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PIAZZA DUOMO PARTINICO PIAZZA DUOMO",
+       "idx": 31,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "MORO (STADIO) C.SO DEI MILLE, 252",
+       "idx": 29,
+       "arr": "13.31",
+       "dep": "13.31"
+      },
+      {
+       "stop": "> VIA TARANTO LARGO MODICA",
+       "idx": 28,
+       "arr": "13.32",
+       "dep": "13.32"
+      },
+      {
+       "stop": "CONSIGLIO, 5 VIA PARTINICO > C.SO V.EMANUELE",
+       "idx": 26,
+       "arr": "13.52",
+       "dep": "13.52"
+      },
+      {
+       "stop": "> VIA TEVERE VIA F.SCO CRISPI > VIA MONS. EVOLA",
+       "idx": 25,
+       "arr": "13.53",
+       "dep": "13.53"
+      },
+      {
+       "stop": "> VIA PARTINICO VIA C. A. DALLA CHIESA (CAPOLINEA)",
+       "idx": 24,
+       "arr": "13.55",
+       "dep": "13.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "20",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "scolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PIAZZA DUOMO PARTINICO PIAZZA DUOMO",
+       "idx": 31,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "MORO (STADIO) C.SO DEI MILLE, 252",
+       "idx": 29,
+       "arr": "13.31",
+       "dep": "13.31"
+      },
+      {
+       "stop": "> VIA TARANTO LARGO MODICA",
+       "idx": 28,
+       "arr": "13.32",
+       "dep": "13.32"
+      },
+      {
+       "stop": "VIA PALERMO, 129 S.S.113 KM",
+       "idx": 19,
+       "arr": "13.59",
+       "dep": "13.59"
+      },
+      {
+       "stop": "UMBERTO I, 359 C.SO UMBERTO I, 120",
+       "idx": 18,
+       "arr": "14.02",
+       "dep": "14.02"
+      },
+      {
+       "stop": "UMBERTO I, 199 CINISI P.ZA V.E.ORLANDO (capolinea)",
+       "idx": 17,
+       "arr": "14.03",
+       "dep": "14.03"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "22",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "scolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PIAZZA DUOMO PARTINICO PIAZZA DUOMO",
+       "idx": 31,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "MORO (STADIO) C.SO DEI MILLE, 252",
+       "idx": 29,
+       "arr": "13.31",
+       "dep": "13.31"
+      },
+      {
+       "stop": "> VIA TARANTO LARGO MODICA",
+       "idx": 28,
+       "arr": "13.32",
+       "dep": "13.32"
+      },
+      {
+       "stop": "S.S.186 KM S.S.113 KM",
+       "idx": 27,
+       "arr": "13.46",
+       "dep": "13.46"
+      },
+      {
+       "stop": "CONSIGLIO, 5 VIA PARTINICO > C.SO V.EMANUELE",
+       "idx": 26,
+       "arr": "13.52",
+       "dep": "13.52"
+      },
+      {
+       "stop": "> VIA TEVERE VIA F.SCO CRISPI > VIA MONS. EVOLA",
+       "idx": 25,
+       "arr": "13.53",
+       "dep": "13.53"
+      },
+      {
+       "stop": "CHIESA (CAPOLINEA) VIA RUGGERO SETTIMO>VIA PALERMO",
+       "idx": 23,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "PIAZZA DUOMO VIA PALERMO, 58",
+       "idx": 21,
+       "arr": "13.56",
+       "dep": "13.56"
+      },
+      {
+       "stop": "PALERMO, 29 VIA PALERMO, 224",
+       "idx": 20,
+       "arr": "13.57",
+       "dep": "13.57"
+      },
+      {
+       "stop": "VIA PALERMO, 129 S.S.113 KM",
+       "idx": 19,
+       "arr": "13.59",
+       "dep": "13.59"
+      },
+      {
+       "stop": "UMBERTO I, 359 C.SO UMBERTO I, 120",
+       "idx": 18,
+       "arr": "14.02",
+       "dep": "14.02"
+      },
+      {
+       "stop": "UMBERTO I, 199 CINISI P.ZA V.E.ORLANDO (capolinea)",
+       "idx": 17,
+       "arr": "14.03",
+       "dep": "14.03"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "24",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "scolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PIAZZA DUOMO PARTINICO PIAZZA DUOMO",
+       "idx": 31,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "MORO (STADIO) C.SO DEI MILLE, 252",
+       "idx": 29,
+       "arr": "14.31",
+       "dep": "14.31"
+      },
+      {
+       "stop": "> VIA TARANTO LARGO MODICA",
+       "idx": 28,
+       "arr": "14.32",
+       "dep": "14.32"
+      },
+      {
+       "stop": "CONSIGLIO, 5 VIA PARTINICO > C.SO V.EMANUELE",
+       "idx": 26,
+       "arr": "14.52",
+       "dep": "14.52"
+      },
+      {
+       "stop": "> VIA TEVERE VIA F.SCO CRISPI > VIA MONS. EVOLA",
+       "idx": 25,
+       "arr": "14.53",
+       "dep": "14.53"
+      },
+      {
+       "stop": "> VIA PARTINICO VIA C. A. DALLA CHIESA (CAPOLINEA)",
+       "idx": 24,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

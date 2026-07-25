@@ -1,0 +1,119 @@
+{
+ "operator": "Imakara",
+ "route_id": "imakara-orari-p1",
+ "name": "MIRABELLA IMBACCARI - CATANIA",
+ "source": "IMAKARA_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni Divieto di servizio locale da B.vio Ramacca fino a Catania, estremi compresi."
+ ],
+ "directions": [
+  {
+   "stops": [
+    "MIRABELLA IMBACCARI (Piazza Aldo Moro)",
+    "CATANIA (Piazza dei Martiri della Libertà)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE6,20"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MIRABELLA IMBACCARI (Piazza Aldo Moro)",
+       "idx": 0,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "CATANIA (Piazza dei Martiri della Libertà)",
+       "idx": 1,
+       "arr": "8.30",
+       "dep": "8.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVAesclusaluglioedagosto15,00"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MIRABELLA IMBACCARI (Piazza Aldo Moro)",
+       "idx": 0,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "CATANIA (Piazza dei Martiri della Libertà)",
+       "idx": 1,
+       "arr": "16.10",
+       "dep": "16.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE15,10"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Piazza dei Martiri della Libertà)",
+       "idx": 1,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "MIRABELLA IMBACCARI (Piazza Aldo Moro)",
+       "idx": 0,
+       "arr": "15.10",
+       "dep": "15.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVAesclusaluglioedagosto17,40"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Piazza dei Martiri della Libertà)",
+       "idx": 1,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "MIRABELLA IMBACCARI (Piazza Aldo Moro)",
+       "idx": 0,
+       "arr": "17.40",
+       "dep": "17.40"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

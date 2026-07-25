@@ -1,0 +1,244 @@
+{
+ "operator": "Stassi",
+ "route_id": "stassi-orari-p1",
+ "name": "di Partenza Capolinea di Arrivo - Bisacquino",
+ "source": "STASSI_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio L'esercizio di tutte le corse è feriale - vedi D.A. 649/2Tr del 5/3/98"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "di Partenza Capolinea di Arrivo",
+    "intermedia Fermata intermedia",
+    "intermedia Fermata intermedia",
+    "di Arrivo Capolinea di Partenza",
+    "Bisacquino"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale7,307,407,458,00"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "di Arrivo Capolinea di Partenza",
+       "idx": 3,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale13,3013,4013,4514,00"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "di Arrivo Capolinea di Partenza",
+       "idx": 3,
+       "arr": "14.00",
+       "dep": "14.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale17,0017,1017,1517,30"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "17.10",
+       "dep": "17.10"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "17.15",
+       "dep": "17.15"
+      },
+      {
+       "stop": "di Arrivo Capolinea di Partenza",
+       "idx": 3,
+       "arr": "17.30",
+       "dep": "17.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale8,358,258,208,05"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "di Arrivo Capolinea di Partenza",
+       "idx": 3,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "8.35",
+       "dep": "8.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale14,4014,3014,2514,10"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "di Arrivo Capolinea di Partenza",
+       "idx": 3,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "14.40",
+       "dep": "14.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale18,0517,5517,5017,35"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "di Arrivo Capolinea di Partenza",
+       "idx": 3,
+       "arr": "17.35",
+       "dep": "17.35"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "17.50",
+       "dep": "17.50"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "17.55",
+       "dep": "17.55"
+      },
+      {
+       "stop": "di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "18.05",
+       "dep": "18.05"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

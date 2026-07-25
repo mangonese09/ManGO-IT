@@ -1,0 +1,557 @@
+{
+ "operator": "Isea",
+ "route_id": "isea-orari-p4",
+ "name": "S.TEODORO - ENNA",
+ "source": "ISEA_ORARI/p004.json",
+ "prescriptions": [
+  "Prescrizioni di Esercizio Divieto di servizio locale sulla tratta Nicosia-Enna, estremi compresi."
+ ],
+ "directions": [
+  {
+   "stops": [
+    "S.TEODORO (Piazza Roma)",
+    "CESARO' (Villa Comunale)",
+    "TROINA (Piazza Gramsci)",
+    "CERAMI (Villa Comunale)",
+    "SAN GIACOMO (S.S.120)",
+    "NICOSIA (Piazza San Francesco)",
+    "LEONFORTE (Piazza Scordo)",
+    "ENNA (Terminal Bus Viale Armando Diaz)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE7,157,458,05"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TROINA (Piazza Gramsci)",
+       "idx": 2,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "CERAMI (Villa Comunale)",
+       "idx": 3,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "SAN GIACOMO (S.S.120)",
+       "idx": 4,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "NICOSIA (Piazza San Francesco)",
+       "idx": 5,
+       "arr": "8.15",
+       "dep": "8.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVO11,0011,30"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TROINA (Piazza Gramsci)",
+       "idx": 2,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "CERAMI (Villa Comunale)",
+       "idx": 3,
+       "arr": "11.30",
+       "dep": "11.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE5,506,206,40"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TROINA (Piazza Gramsci)",
+       "idx": 2,
+       "arr": "5.50",
+       "dep": "5.50"
+      },
+      {
+       "stop": "CERAMI (Villa Comunale)",
+       "idx": 3,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "SAN GIACOMO (S.S.120)",
+       "idx": 4,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "NICOSIA (Piazza San Francesco)",
+       "idx": 5,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "LEONFORTE (Piazza Scordo)",
+       "idx": 6,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Armando Diaz)",
+       "idx": 7,
+       "arr": "8.20",
+       "dep": "8.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE20,0020,30"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TROINA (Piazza Gramsci)",
+       "idx": 2,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "CERAMI (Villa Comunale)",
+       "idx": 3,
+       "arr": "20.30",
+       "dep": "20.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCOLASTICO7,307,358,15"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "S.TEODORO (Piazza Roma)",
+       "idx": 0,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "CESARO' (Villa Comunale)",
+       "idx": 1,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "TROINA (Piazza Gramsci)",
+       "idx": 2,
+       "arr": "8.15",
+       "dep": "8.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCOLASTICO7,307,358,15"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "S.TEODORO (Piazza Roma)",
+       "idx": 0,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "CESARO' (Villa Comunale)",
+       "idx": 1,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "TROINA (Piazza Gramsci)",
+       "idx": 2,
+       "arr": "8.15",
+       "dep": "8.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "13",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCOLASTICO7,207,40"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CERAMI (Villa Comunale)",
+       "idx": 3,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "SAN GIACOMO (S.S.120)",
+       "idx": 4,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "NICOSIA (Piazza San Francesco)",
+       "idx": 5,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "15",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCOLASTICO7,157,458,05"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TROINA (Piazza Gramsci)",
+       "idx": 2,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "CERAMI (Villa Comunale)",
+       "idx": 3,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "SAN GIACOMO (S.S.120)",
+       "idx": 4,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "NICOSIA (Piazza San Francesco)",
+       "idx": 5,
+       "arr": "8.15",
+       "dep": "8.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE13,3013,0012,40"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "NICOSIA (Piazza San Francesco)",
+       "idx": 5,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "SAN GIACOMO (S.S.120)",
+       "idx": 4,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "CERAMI (Villa Comunale)",
+       "idx": 3,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "TROINA (Piazza Gramsci)",
+       "idx": 2,
+       "arr": "13.30",
+       "dep": "13.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVO15,3015,00"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CERAMI (Villa Comunale)",
+       "idx": 3,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "TROINA (Piazza Gramsci)",
+       "idx": 2,
+       "arr": "15.30",
+       "dep": "15.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE16,3016,0015,40"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Armando Diaz)",
+       "idx": 7,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "LEONFORTE (Piazza Scordo)",
+       "idx": 6,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "NICOSIA (Piazza San Francesco)",
+       "idx": 5,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "SAN GIACOMO (S.S.120)",
+       "idx": 4,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "CERAMI (Villa Comunale)",
+       "idx": 3,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "TROINA (Piazza Gramsci)",
+       "idx": 2,
+       "arr": "16.30",
+       "dep": "16.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE15,3015,00"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CERAMI (Villa Comunale)",
+       "idx": 3,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "TROINA (Piazza Gramsci)",
+       "idx": 2,
+       "arr": "15.30",
+       "dep": "15.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCOLASTICO14,4514,4014,00"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "TROINA (Piazza Gramsci)",
+       "idx": 2,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "CESARO' (Villa Comunale)",
+       "idx": 1,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "S.TEODORO (Piazza Roma)",
+       "idx": 0,
+       "arr": "14.45",
+       "dep": "14.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCOLASTICO14,4514,4014,00"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "TROINA (Piazza Gramsci)",
+       "idx": 2,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "CESARO' (Villa Comunale)",
+       "idx": 1,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "S.TEODORO (Piazza Roma)",
+       "idx": 0,
+       "arr": "14.45",
+       "dep": "14.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "14",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCOLASTICO14,3014,10"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "NICOSIA (Piazza San Francesco)",
+       "idx": 5,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "SAN GIACOMO (S.S.120)",
+       "idx": 4,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "CERAMI (Villa Comunale)",
+       "idx": 3,
+       "arr": "14.30",
+       "dep": "14.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "16",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCOLASTICO15,0014,3014,10"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "NICOSIA (Piazza San Francesco)",
+       "idx": 5,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "SAN GIACOMO (S.S.120)",
+       "idx": 4,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "CERAMI (Villa Comunale)",
+       "idx": 3,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "TROINA (Piazza Gramsci)",
+       "idx": 2,
+       "arr": "15.00",
+       "dep": "15.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

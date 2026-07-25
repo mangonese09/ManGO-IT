@@ -1,0 +1,464 @@
+{
+ "operator": "Isea",
+ "route_id": "isea-orari-p2",
+ "name": "CERAMI - CATANIA",
+ "source": "ISEA_ORARI/p002.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Divieto di servizio locale sul tratto Ponte Aragona – Catania, estremi compresi"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "CERAMI (Villa Comunale)",
+    "TROINA (Piazza Gramsci)",
+    "STINGI (S.S. 575)",
+    "GROTTAFUMATA (S.S. 575)",
+    "PONTE ARAGONA (S.S. 575)",
+    "PATERNO' (Piazzale Giovanni Paolo II)",
+    "CATANIA (Piazza della Repubblica)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE5,306,006,406,50"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CERAMI (Villa Comunale)",
+       "idx": 0,
+       "arr": "5.30",
+       "dep": "5.30"
+      },
+      {
+       "stop": "TROINA (Piazza Gramsci)",
+       "idx": 1,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "STINGI (S.S. 575)",
+       "idx": 2,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "GROTTAFUMATA (S.S. 575)",
+       "idx": 3,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "PONTE ARAGONA (S.S. 575)",
+       "idx": 4,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "PATERNO' (Piazzale Giovanni Paolo II)",
+       "idx": 5,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "CATANIA (Piazza della Repubblica)",
+       "idx": 6,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE(*)6,307,007,407,50"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CERAMI (Villa Comunale)",
+       "idx": 0,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "TROINA (Piazza Gramsci)",
+       "idx": 1,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "STINGI (S.S. 575)",
+       "idx": 2,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "GROTTAFUMATA (S.S. 575)",
+       "idx": 3,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "PONTE ARAGONA (S.S. 575)",
+       "idx": 4,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "PATERNO' (Piazzale Giovanni Paolo II)",
+       "idx": 5,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "CATANIA (Piazza della Repubblica)",
+       "idx": 6,
+       "arr": "9.00",
+       "dep": "9.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE13,1013,4014,2014,30"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CERAMI (Villa Comunale)",
+       "idx": 0,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "TROINA (Piazza Gramsci)",
+       "idx": 1,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "STINGI (S.S. 575)",
+       "idx": 2,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "GROTTAFUMATA (S.S. 575)",
+       "idx": 3,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "PONTE ARAGONA (S.S. 575)",
+       "idx": 4,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "PATERNO' (Piazzale Giovanni Paolo II)",
+       "idx": 5,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "CATANIA (Piazza della Repubblica)",
+       "idx": 6,
+       "arr": "15.40",
+       "dep": "15.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVO9,009,3010,1010,20"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CERAMI (Villa Comunale)",
+       "idx": 0,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "TROINA (Piazza Gramsci)",
+       "idx": 1,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "STINGI (S.S. 575)",
+       "idx": 2,
+       "arr": "10.10",
+       "dep": "10.10"
+      },
+      {
+       "stop": "GROTTAFUMATA (S.S. 575)",
+       "idx": 3,
+       "arr": "10.20",
+       "dep": "10.20"
+      },
+      {
+       "stop": "PONTE ARAGONA (S.S. 575)",
+       "idx": 4,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "PATERNO' (Piazzale Giovanni Paolo II)",
+       "idx": 5,
+       "arr": "10.55",
+       "dep": "10.55"
+      },
+      {
+       "stop": "CATANIA (Piazza della Repubblica)",
+       "idx": 6,
+       "arr": "11.30",
+       "dep": "11.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE(*)15,0014,3013,5013,40"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Piazza della Repubblica)",
+       "idx": 6,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "PATERNO' (Piazzale Giovanni Paolo II)",
+       "idx": 5,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "PONTE ARAGONA (S.S. 575)",
+       "idx": 4,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "GROTTAFUMATA (S.S. 575)",
+       "idx": 3,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "STINGI (S.S. 575)",
+       "idx": 2,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "TROINA (Piazza Gramsci)",
+       "idx": 1,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "CERAMI (Villa Comunale)",
+       "idx": 0,
+       "arr": "15.00",
+       "dep": "15.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE16,4516,1515,3515,25"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Piazza della Repubblica)",
+       "idx": 6,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "PATERNO' (Piazzale Giovanni Paolo II)",
+       "idx": 5,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "PONTE ARAGONA (S.S. 575)",
+       "idx": 4,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "GROTTAFUMATA (S.S. 575)",
+       "idx": 3,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "STINGI (S.S. 575)",
+       "idx": 2,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "TROINA (Piazza Gramsci)",
+       "idx": 1,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "CERAMI (Villa Comunale)",
+       "idx": 0,
+       "arr": "16.45",
+       "dep": "16.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE20,3020,0019,2019,10"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Piazza della Repubblica)",
+       "idx": 6,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "PATERNO' (Piazzale Giovanni Paolo II)",
+       "idx": 5,
+       "arr": "18.35",
+       "dep": "18.35"
+      },
+      {
+       "stop": "PONTE ARAGONA (S.S. 575)",
+       "idx": 4,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "GROTTAFUMATA (S.S. 575)",
+       "idx": 3,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "STINGI (S.S. 575)",
+       "idx": 2,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "TROINA (Piazza Gramsci)",
+       "idx": 1,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "CERAMI (Villa Comunale)",
+       "idx": 0,
+       "arr": "20.30",
+       "dep": "20.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVO20,3020,0019,2019,10"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Piazza della Repubblica)",
+       "idx": 6,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "PATERNO' (Piazzale Giovanni Paolo II)",
+       "idx": 5,
+       "arr": "18.35",
+       "dep": "18.35"
+      },
+      {
+       "stop": "PONTE ARAGONA (S.S. 575)",
+       "idx": 4,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "GROTTAFUMATA (S.S. 575)",
+       "idx": 3,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "STINGI (S.S. 575)",
+       "idx": 2,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "TROINA (Piazza Gramsci)",
+       "idx": 1,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "CERAMI (Villa Comunale)",
+       "idx": 0,
+       "arr": "20.30",
+       "dep": "20.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

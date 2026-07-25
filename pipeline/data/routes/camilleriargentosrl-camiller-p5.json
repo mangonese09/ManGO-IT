@@ -1,0 +1,96 @@
+{
+ "operator": "Camilleriargento",
+ "route_id": "camilleriargentosrl-camiller-p5",
+ "name": "Capolinea di Partenza Capolinea di Arrivo - ETC….",
+ "source": "CAMILLERIARGENTOSRL__CAMILLERI_ORARI/p005.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio 1 C.C. SCOL S.STEFANO QUISQUINA - CIANCIANA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Capolinea di Partenza Capolinea di Arrivo",
+    "Fermata intermedia Fermata intermedia",
+    "Fermata intermedia Fermata intermedia",
+    "Capolinea di Arrivo Capolinea di Partenza",
+    "ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "SCOL.7,257,357,457,55"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "Capolinea di Arrivo Capolinea di Partenza",
+       "idx": 3,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "SCOL14,4514,3514,2514,15"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Capolinea di Arrivo Capolinea di Partenza",
+       "idx": 3,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "14.45",
+       "dep": "14.45"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,120 @@
+{
+ "operator": "Camilleriargento",
+ "route_id": "camilleriargentosrl-camiller-p4",
+ "name": "Capolinea di Partenza Capolinea di Arrivo - LA DOMENICA, ETC….",
+ "source": "CAMILLERIARGENTOSRL__CAMILLERI_ORARI/p004.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio N.2 C.C. SCOLASTICHE S.STEFANO QUISQUINA - BIVONA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Capolinea di Partenza Capolinea di Arrivo",
+    "Capolinea di Arrivo Capolinea di Partenza",
+    "LA DOMENICA, ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCOLASTICA7,508,00"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "Capolinea di Arrivo Capolinea di Partenza",
+       "idx": 1,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCOLASTICA13,4514,00"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Capolinea di Arrivo Capolinea di Partenza",
+       "idx": 1,
+       "arr": "14.00",
+       "dep": "14.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCOLASTICA13,4013,30"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Capolinea di Arrivo Capolinea di Partenza",
+       "idx": 1,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "13.40",
+       "dep": "13.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCOLASTICA14,3014,20"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Capolinea di Arrivo Capolinea di Partenza",
+       "idx": 1,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "14.30",
+       "dep": "14.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

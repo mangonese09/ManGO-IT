@@ -1,0 +1,108 @@
+{
+ "operator": "Calatina Bus Service",
+ "route_id": "calatinabusservice-calatina--p3",
+ "name": "CENTURIPE - ENNA",
+ "source": "CALATINABUSSERVICE__CALATINA_ORARI/p003.json",
+ "prescriptions": [
+  "Prescrizioni di esercizio Nessuna"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "CENTURIPE (Via Duca D'Aosta)",
+    "SALINA'",
+    "CATENANUOVA (Piazza G. Marconi)",
+    "CATENANUOVA F.S.",
+    "ENNA (Piazza A. Diaz – Terminal Bus)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESCLUSODAL15/07AL31/086,306,406,506,55"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CENTURIPE (Via Duca D'Aosta)",
+       "idx": 0,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "SALINA'",
+       "idx": 1,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "CATENANUOVA (Piazza G. Marconi)",
+       "idx": 2,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "CATENANUOVA F.S.",
+       "idx": 3,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "ENNA (Piazza A. Diaz – Terminal Bus)",
+       "idx": 4,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESCLUSODAL15/07AL31/0815,2015,1015,0014,55"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "ENNA (Piazza A. Diaz – Terminal Bus)",
+       "idx": 4,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "CATENANUOVA F.S.",
+       "idx": 3,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "CATENANUOVA (Piazza G. Marconi)",
+       "idx": 2,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "SALINA'",
+       "idx": 1,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "CENTURIPE (Via Duca D'Aosta)",
+       "idx": 0,
+       "arr": "15.20",
+       "dep": "15.20"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

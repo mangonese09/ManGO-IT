@@ -1,0 +1,134 @@
+{
+ "operator": "Federico Nicolò",
+ "route_id": "federiconicolo-federico-orar-p2",
+ "name": "Grammichele - Punta Braccetto",
+ "source": "FedericoNicolo__FEDERICO_ORARI/p002.json",
+ "prescriptions": [
+  "Prescrizioni Ammissioni di viaggiatori dei centri di Grammichele, Granieri, Mazzarone e Acate per Punta Braccetto e viceversa e con esclusione di ogni altro traffico."
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Grammichele (Piazza Spirito Santo)",
+    "Granieri",
+    "Mazzarone",
+    "Acate",
+    "Vittoria",
+    "Scoglitti",
+    "Punta Braccetto"
+   ],
+   "trips": [
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "10/0731/087,307,457,558,208,25"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Grammichele (Piazza Spirito Santo)",
+       "idx": 0,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Granieri",
+       "idx": 1,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "Mazzarone",
+       "idx": 2,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "Acate",
+       "idx": 3,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "Vittoria",
+       "idx": 4,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "Scoglitti",
+       "idx": 5,
+       "arr": "8.50",
+       "dep": "8.50"
+      },
+      {
+       "stop": "Punta Braccetto",
+       "idx": 6,
+       "arr": "9.05",
+       "dep": "9.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "dal10/07al31/0819,3019,1519,0518,4518,30"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Punta Braccetto",
+       "idx": 6,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "Scoglitti",
+       "idx": 5,
+       "arr": "18.15",
+       "dep": "18.15"
+      },
+      {
+       "stop": "Vittoria",
+       "idx": 4,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "Acate",
+       "idx": 3,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "Mazzarone",
+       "idx": 2,
+       "arr": "19.05",
+       "dep": "19.05"
+      },
+      {
+       "stop": "Granieri",
+       "idx": 1,
+       "arr": "19.15",
+       "dep": "19.15"
+      },
+      {
+       "stop": "Grammichele (Piazza Spirito Santo)",
+       "idx": 0,
+       "arr": "19.30",
+       "dep": "19.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

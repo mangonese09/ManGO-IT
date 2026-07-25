@@ -1,0 +1,220 @@
+{
+ "operator": "Scionti",
+ "route_id": "scionti-scionti-orari-p1",
+ "name": "FRANCOFONTE - AUGUSTA",
+ "source": "Scionti__SCIONTI_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni Divieto di servizio locale, estremi compresi, sui tratti Rasiom-Punta Cugno-Augusta, Lentini-Villasmundo e Francofonte-Lentini"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "FRANCOFONTE (Via San Giuliano)",
+    "LENTINI (Piazza dei Sofisti)",
+    "CARLENTINI (Piazza Municipio)",
+    "VILLASMUNDO (Piazza Risorgimento)",
+    "RASIOM",
+    "FONTANA",
+    "AUGUSTA (Via Caracciolo)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE6,206,406,457,00"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "FRANCOFONTE (Via San Giuliano)",
+       "idx": 0,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "LENTINI (Piazza dei Sofisti)",
+       "idx": 1,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "CARLENTINI (Piazza Municipio)",
+       "idx": 2,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "VILLASMUNDO (Piazza Risorgimento)",
+       "idx": 3,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "RASIOM",
+       "idx": 4,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "FONTANA",
+       "idx": 5,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "AUGUSTA (Via Caracciolo)",
+       "idx": 6,
+       "arr": "7.40",
+       "dep": "7.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE//9,309,359,50"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "LENTINI (Piazza dei Sofisti)",
+       "idx": 1,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "CARLENTINI (Piazza Municipio)",
+       "idx": 2,
+       "arr": "9.35",
+       "dep": "9.35"
+      },
+      {
+       "stop": "VILLASMUNDO (Piazza Risorgimento)",
+       "idx": 3,
+       "arr": "9.50",
+       "dep": "9.50"
+      },
+      {
+       "stop": "FONTANA",
+       "idx": 5,
+       "arr": "10.05",
+       "dep": "10.05"
+      },
+      {
+       "stop": "AUGUSTA (Via Caracciolo)",
+       "idx": 6,
+       "arr": "10.15",
+       "dep": "10.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE17,5017,3017,2517,10"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "AUGUSTA (Via Caracciolo)",
+       "idx": 6,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "FONTANA",
+       "idx": 5,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "RASIOM",
+       "idx": 4,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "VILLASMUNDO (Piazza Risorgimento)",
+       "idx": 3,
+       "arr": "17.10",
+       "dep": "17.10"
+      },
+      {
+       "stop": "CARLENTINI (Piazza Municipio)",
+       "idx": 2,
+       "arr": "17.25",
+       "dep": "17.25"
+      },
+      {
+       "stop": "LENTINI (Piazza dei Sofisti)",
+       "idx": 1,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "FRANCOFONTE (Via San Giuliano)",
+       "idx": 0,
+       "arr": "17.50",
+       "dep": "17.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE//13,1513,1012,55"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "AUGUSTA (Via Caracciolo)",
+       "idx": 6,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "FONTANA",
+       "idx": 5,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "VILLASMUNDO (Piazza Risorgimento)",
+       "idx": 3,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "CARLENTINI (Piazza Municipio)",
+       "idx": 2,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "LENTINI (Piazza dei Sofisti)",
+       "idx": 1,
+       "arr": "13.15",
+       "dep": "13.15"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

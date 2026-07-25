@@ -1,0 +1,363 @@
+{
+ "operator": "Scionti",
+ "route_id": "scionti-scionti-orari-p2",
+ "name": "CATANIA - AUGUSTA",
+ "source": "Scionti__SCIONTI_ORARI/p002.json",
+ "prescriptions": [
+  "Prescrizioni Divieto di servizio locale, estremi compresi, sul tratto Catania - Villasmundo."
+ ],
+ "directions": [
+  {
+   "stops": [
+    "CATANIA (via D'Amico)",
+    "LENTINI (Piazza dei Sofisti)",
+    "CARLENTINI (Piazza Municipio)",
+    "VILLASMUNDO (Piazza Risorgimento)",
+    "FONTANA",
+    "AUGUSTA (Via Caracciolo)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "ferialeesclusoilsabato6,156,356,406,55"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (via D'Amico)",
+       "idx": 0,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "LENTINI (Piazza dei Sofisti)",
+       "idx": 1,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "CARLENTINI (Piazza Municipio)",
+       "idx": 2,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "VILLASMUNDO (Piazza Risorgimento)",
+       "idx": 3,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "FONTANA",
+       "idx": 4,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "AUGUSTA (Via Caracciolo)",
+       "idx": 5,
+       "arr": "7.20",
+       "dep": "7.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale6,15//////"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (via D'Amico)",
+       "idx": 0,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "FONTANA",
+       "idx": 4,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "AUGUSTA (Via Caracciolo)",
+       "idx": 5,
+       "arr": "7.15",
+       "dep": "7.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale7,00//////"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (via D'Amico)",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "FONTANA",
+       "idx": 4,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "AUGUSTA (Via Caracciolo)",
+       "idx": 5,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale16,35//////"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (via D'Amico)",
+       "idx": 0,
+       "arr": "16.35",
+       "dep": "16.35"
+      },
+      {
+       "stop": "FONTANA",
+       "idx": 4,
+       "arr": "17.25",
+       "dep": "17.25"
+      },
+      {
+       "stop": "AUGUSTA (Via Caracciolo)",
+       "idx": 5,
+       "arr": "17.35",
+       "dep": "17.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "festiviesclnatale,capodanno,pasquettapasqua,eferragosto8,30//////"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (via D'Amico)",
+       "idx": 0,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "FONTANA",
+       "idx": 4,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "AUGUSTA (Via Caracciolo)",
+       "idx": 5,
+       "arr": "9.30",
+       "dep": "9.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale7,55//////"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "AUGUSTA (Via Caracciolo)",
+       "idx": 5,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "FONTANA",
+       "idx": 4,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "CATANIA (via D'Amico)",
+       "idx": 0,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale9,00//////"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "AUGUSTA (Via Caracciolo)",
+       "idx": 5,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "FONTANA",
+       "idx": 4,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "CATANIA (via D'Amico)",
+       "idx": 0,
+       "arr": "9.00",
+       "dep": "9.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "ferialeesclusoilsabato18,1517,4517,4017,25"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "AUGUSTA (Via Caracciolo)",
+       "idx": 5,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "FONTANA",
+       "idx": 4,
+       "arr": "17.10",
+       "dep": "17.10"
+      },
+      {
+       "stop": "VILLASMUNDO (Piazza Risorgimento)",
+       "idx": 3,
+       "arr": "17.25",
+       "dep": "17.25"
+      },
+      {
+       "stop": "CARLENTINI (Piazza Municipio)",
+       "idx": 2,
+       "arr": "17.40",
+       "dep": "17.40"
+      },
+      {
+       "stop": "LENTINI (Piazza dei Sofisti)",
+       "idx": 1,
+       "arr": "17.45",
+       "dep": "17.45"
+      },
+      {
+       "stop": "CATANIA (via D'Amico)",
+       "idx": 0,
+       "arr": "18.15",
+       "dep": "18.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale20,30//////"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "AUGUSTA (Via Caracciolo)",
+       "idx": 5,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "FONTANA",
+       "idx": 4,
+       "arr": "19.40",
+       "dep": "19.40"
+      },
+      {
+       "stop": "CATANIA (via D'Amico)",
+       "idx": 0,
+       "arr": "20.30",
+       "dep": "20.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "festiviesclnatale,capodanno,pasquettapasqua,eferragosto"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "AUGUSTA (Via Caracciolo)",
+       "idx": 5,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "FONTANA",
+       "idx": 4,
+       "arr": "19.40",
+       "dep": "19.40"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

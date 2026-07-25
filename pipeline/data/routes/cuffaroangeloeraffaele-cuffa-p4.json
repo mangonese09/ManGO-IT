@@ -1,0 +1,108 @@
+{
+ "operator": "Cuffaro Angelo e Raffaele",
+ "route_id": "cuffaroangeloeraffaele-cuffa-p4",
+ "name": "PLATANI Scuola Media S. BIAGIO PLATANI Scuola Media - piazzola C/da Pirrera piazza La Rosa SCIACCA Via Agatole Terme, C/da Pirrera",
+ "source": "CUFFAROANGELOeRAFFAELE__CUFFARO_Angelo_e_Raff/p004.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio AMMISSIONE VIAGGIATORI A SAN BIAGIO PL. - S.ANGELO M.- S.ELISABETTA - RAFFADALI PER SCIACCA E VICEVERSA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "PLATANI Scuola Media S. BIAGIO PLATANI Scuola Media",
+    "MUXARO Bivio Area Attrezzata S.ANGELO MUXARO Bivio Area Attrezzata",
+    "C.so Umberto, 349 S.ELISABETTA C.so Umberto, 349",
+    "Raffad (r Ia Voltano P.zadel Carmelo-difronte Carmelo ALIDi Fronte Bar Primavera P.zadel)",
+    "piazzola C/da Pirrera piazza La Rosa SCIACCA Via Agatole Terme, C/da Pirrera"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE5,355,506,106,20"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PLATANI Scuola Media S. BIAGIO PLATANI Scuola Media",
+       "idx": 0,
+       "arr": "5.35",
+       "dep": "5.35"
+      },
+      {
+       "stop": "MUXARO Bivio Area Attrezzata S.ANGELO MUXARO Bivio Area Attrezzata",
+       "idx": 1,
+       "arr": "5.50",
+       "dep": "5.50"
+      },
+      {
+       "stop": "C.so Umberto, 349 S.ELISABETTA C.so Umberto, 349",
+       "idx": 2,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "Raffad (r Ia Voltano P.zadel Carmelo-difronte Carmelo ALIDi Fronte Bar Primavera P.zadel)",
+       "idx": 3,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "piazzola C/da Pirrera piazza La Rosa SCIACCA Via Agatole Terme, C/da Pirrera",
+       "idx": 4,
+       "arr": "7.40",
+       "dep": "7.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE15,5015,3515,1515,05"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "piazzola C/da Pirrera piazza La Rosa SCIACCA Via Agatole Terme, C/da Pirrera",
+       "idx": 4,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Raffad (r Ia Voltano P.zadel Carmelo-difronte Carmelo ALIDi Fronte Bar Primavera P.zadel)",
+       "idx": 3,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "C.so Umberto, 349 S.ELISABETTA C.so Umberto, 349",
+       "idx": 2,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "MUXARO Bivio Area Attrezzata S.ANGELO MUXARO Bivio Area Attrezzata",
+       "idx": 1,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "PLATANI Scuola Media S. BIAGIO PLATANI Scuola Media",
+       "idx": 0,
+       "arr": "15.50",
+       "dep": "15.50"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

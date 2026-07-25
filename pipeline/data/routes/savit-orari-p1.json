@@ -1,0 +1,201 @@
+{
+ "operator": "Savit",
+ "route_id": "savit-orari-p1",
+ "name": "PIAZZA ARMERINA - BUTERA",
+ "source": "SAVIT_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni di Esercizio Divieto di servizio locale, estremi inclusi, da Butera a Mazzarino"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "PIAZZA ARMERINA (Piazza Ciancio)",
+    "MAZZARINO",
+    "(Piazza San Domenico)",
+    "BUTERA (Piazza Dante)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE10,0010,4511,15"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PIAZZA ARMERINA (Piazza Ciancio)",
+       "idx": 0,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "MAZZARINO",
+       "idx": 1,
+       "arr": "10.45",
+       "dep": "10.45"
+      },
+      {
+       "stop": "BUTERA (Piazza Dante)",
+       "idx": 3,
+       "arr": "11.15",
+       "dep": "11.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE14,0014,4515,15"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PIAZZA ARMERINA (Piazza Ciancio)",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "MAZZARINO",
+       "idx": 1,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "BUTERA (Piazza Dante)",
+       "idx": 3,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEesclusodal16/07al31/0818,1519,00//"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "(Piazza San Domenico)",
+       "idx": 2,
+       "arr": "0.00",
+       "dep": "0.00"
+      },
+      {
+       "stop": "MAZZARINO",
+       "idx": 1,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (Piazza Ciancio)",
+       "idx": 0,
+       "arr": "18.15",
+       "dep": "18.15"
+      }
+     ],
+     "valid": false
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE7,457,006,30"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "BUTERA (Piazza Dante)",
+       "idx": 3,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "MAZZARINO",
+       "idx": 1,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (Piazza Ciancio)",
+       "idx": 0,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE13,3012,4512,15"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "BUTERA (Piazza Dante)",
+       "idx": 3,
+       "arr": "12.15",
+       "dep": "12.15"
+      },
+      {
+       "stop": "MAZZARINO",
+       "idx": 1,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (Piazza Ciancio)",
+       "idx": 0,
+       "arr": "13.30",
+       "dep": "13.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEesclusodal16/07al31/0819,5019,05//"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MAZZARINO",
+       "idx": 1,
+       "arr": "19.05",
+       "dep": "19.05"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (Piazza Ciancio)",
+       "idx": 0,
+       "arr": "19.50",
+       "dep": "19.50"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

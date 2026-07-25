@@ -1,0 +1,417 @@
+{
+ "operator": "Calatina Bus Service",
+ "route_id": "calatinabusservice-calatina--p2",
+ "name": "CENTURIPE - CATANIA",
+ "source": "CALATINABUSSERVICE__CALATINA_ORARI/p002.json",
+ "prescriptions": [
+  "Prescrizioni di esercizio Divieto di servizio locale, estremi inclusi, sulla tratta Schettino - Catania."
+ ],
+ "directions": [
+  {
+   "stops": [
+    "CENTURIPE (Via Duca D'Aosta)",
+    "SCHETTINO",
+    "PATERNO' (Piazzale Giovanni Paolo II)",
+    "CATANIA (Piazza Giovanni XXIII)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE6,206,456,507,35"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CENTURIPE (Via Duca D'Aosta)",
+       "idx": 0,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "SCHETTINO",
+       "idx": 1,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "PATERNO' (Piazzale Giovanni Paolo II)",
+       "idx": 2,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "CATANIA (Piazza Giovanni XXIII)",
+       "idx": 3,
+       "arr": "7.35",
+       "dep": "7.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE15,3015,5516,0016,45"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CENTURIPE (Via Duca D'Aosta)",
+       "idx": 0,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "SCHETTINO",
+       "idx": 1,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "PATERNO' (Piazzale Giovanni Paolo II)",
+       "idx": 2,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "CATANIA (Piazza Giovanni XXIII)",
+       "idx": 3,
+       "arr": "16.45",
+       "dep": "16.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico7,207,457,50//"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CENTURIPE (Via Duca D'Aosta)",
+       "idx": 0,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "SCHETTINO",
+       "idx": 1,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "PATERNO' (Piazzale Giovanni Paolo II)",
+       "idx": 2,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico7,207,457,50//"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CENTURIPE (Via Duca D'Aosta)",
+       "idx": 0,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "SCHETTINO",
+       "idx": 1,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "PATERNO' (Piazzale Giovanni Paolo II)",
+       "idx": 2,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico7,207,457,50//"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CENTURIPE (Via Duca D'Aosta)",
+       "idx": 0,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "SCHETTINO",
+       "idx": 1,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "PATERNO' (Piazzale Giovanni Paolo II)",
+       "idx": 2,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico7,207,457,50//"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CENTURIPE (Via Duca D'Aosta)",
+       "idx": 0,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "SCHETTINO",
+       "idx": 1,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "PATERNO' (Piazzale Giovanni Paolo II)",
+       "idx": 2,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE15,1514,5014,4514,00"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Piazza Giovanni XXIII)",
+       "idx": 3,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "PATERNO' (Piazzale Giovanni Paolo II)",
+       "idx": 2,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "SCHETTINO",
+       "idx": 1,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "CENTURIPE (Via Duca D'Aosta)",
+       "idx": 0,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE19,4519,2019,1518,30"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Piazza Giovanni XXIII)",
+       "idx": 3,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "PATERNO' (Piazzale Giovanni Paolo II)",
+       "idx": 2,
+       "arr": "19.15",
+       "dep": "19.15"
+      },
+      {
+       "stop": "SCHETTINO",
+       "idx": 1,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "CENTURIPE (Via Duca D'Aosta)",
+       "idx": 0,
+       "arr": "19.45",
+       "dep": "19.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico14,0013,3513,30//"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PATERNO' (Piazzale Giovanni Paolo II)",
+       "idx": 2,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "SCHETTINO",
+       "idx": 1,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "CENTURIPE (Via Duca D'Aosta)",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico14,1513,5013,45//"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PATERNO' (Piazzale Giovanni Paolo II)",
+       "idx": 2,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "SCHETTINO",
+       "idx": 1,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "CENTURIPE (Via Duca D'Aosta)",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico14,3014,0514,00//"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PATERNO' (Piazzale Giovanni Paolo II)",
+       "idx": 2,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "SCHETTINO",
+       "idx": 1,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "CENTURIPE (Via Duca D'Aosta)",
+       "idx": 0,
+       "arr": "14.30",
+       "dep": "14.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico14,3014,0514,00//"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PATERNO' (Piazzale Giovanni Paolo II)",
+       "idx": 2,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "SCHETTINO",
+       "idx": 1,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "CENTURIPE (Via Duca D'Aosta)",
+       "idx": 0,
+       "arr": "14.30",
+       "dep": "14.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

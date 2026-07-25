@@ -1,0 +1,96 @@
+{
+ "operator": "Pennisi Alfio",
+ "route_id": "pennisialfio-pennisi-orari-p1",
+ "name": "CINQUEGRANA - 31/05",
+ "source": "PennisiAlfio__PENNISI_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "CINQUEGRANA",
+    "GAMBANERA",
+    "FRANCHETTO",
+    "RAMACCA",
+    "31/05"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialidal01/10al31/059,359,409,5010,20"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CINQUEGRANA",
+       "idx": 0,
+       "arr": "9.35",
+       "dep": "9.35"
+      },
+      {
+       "stop": "GAMBANERA",
+       "idx": 1,
+       "arr": "9.40",
+       "dep": "9.40"
+      },
+      {
+       "stop": "FRANCHETTO",
+       "idx": 2,
+       "arr": "9.50",
+       "dep": "9.50"
+      },
+      {
+       "stop": "RAMACCA",
+       "idx": 3,
+       "arr": "10.20",
+       "dep": "10.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialidal01/10al31/0511,5011,4511,3511,05"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "RAMACCA",
+       "idx": 3,
+       "arr": "11.05",
+       "dep": "11.05"
+      },
+      {
+       "stop": "FRANCHETTO",
+       "idx": 2,
+       "arr": "11.35",
+       "dep": "11.35"
+      },
+      {
+       "stop": "GAMBANERA",
+       "idx": 1,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "CINQUEGRANA",
+       "idx": 0,
+       "arr": "11.50",
+       "dep": "11.50"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

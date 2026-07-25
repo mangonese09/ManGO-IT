@@ -1,0 +1,234 @@
+{
+ "operator": "Lattuca",
+ "route_id": "lattuca-orari-p11",
+ "name": "Unknown route",
+ "source": "LATTUCA_ORARI/p011.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "(P.Municipio) S.LISABETTA (P.Municipio)",
+    "(Via Roma) ARAGONA (Via Roma)",
+    "ARAGONA STAZ.CALDARE ARAGONA",
+    "S.MICHELE BORGATA S.MICHELE",
+    "QUAD.SPINASANTA AGRIGENTO QUAD.SPINASANTA",
+    "AGRIGENTO C.DA CALCARELLE AGRIGENTO C.DA CALCARELLE",
+    "P. ROSSELLI AGRIGENTO P.ROSSELLI"
+   ],
+   "trips": [
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE13,5014,1014,2014,30"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "(P.Municipio) S.LISABETTA (P.Municipio)",
+       "idx": 0,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "(Via Roma) ARAGONA (Via Roma)",
+       "idx": 1,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "ARAGONA STAZ.CALDARE ARAGONA",
+       "idx": 2,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "S.MICHELE BORGATA S.MICHELE",
+       "idx": 3,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "P. ROSSELLI AGRIGENTO P.ROSSELLI",
+       "idx": 6,
+       "arr": "14.40",
+       "dep": "14.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEinodoscolasti6,557,40"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "(P.Municipio) S.LISABETTA (P.Municipio)",
+       "idx": 0,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "QUAD.SPINASANTA AGRIGENTO QUAD.SPINASANTA",
+       "idx": 4,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "AGRIGENTO C.DA CALCARELLE AGRIGENTO C.DA CALCARELLE",
+       "idx": 5,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico7,107,55"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "(P.Municipio) S.LISABETTA (P.Municipio)",
+       "idx": 0,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "QUAD.SPINASANTA AGRIGENTO QUAD.SPINASANTA",
+       "idx": 4,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "P. ROSSELLI AGRIGENTO P.ROSSELLI",
+       "idx": 6,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE15,4515,3015,2015,10"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "P. ROSSELLI AGRIGENTO P.ROSSELLI",
+       "idx": 6,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "S.MICHELE BORGATA S.MICHELE",
+       "idx": 3,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "ARAGONA STAZ.CALDARE ARAGONA",
+       "idx": 2,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "(Via Roma) ARAGONA (Via Roma)",
+       "idx": 1,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "(P.Municipio) S.LISABETTA (P.Municipio)",
+       "idx": 0,
+       "arr": "15.45",
+       "dep": "15.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEincoplaesrtioicdoo14,4513,55"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "AGRIGENTO C.DA CALCARELLE AGRIGENTO C.DA CALCARELLE",
+       "idx": 5,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "QUAD.SPINASANTA AGRIGENTO QUAD.SPINASANTA",
+       "idx": 4,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "(P.Municipio) S.LISABETTA (P.Municipio)",
+       "idx": 0,
+       "arr": "14.45",
+       "dep": "14.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEincoplaesrtioicdoo14,5514,05"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "P. ROSSELLI AGRIGENTO P.ROSSELLI",
+       "idx": 6,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "QUAD.SPINASANTA AGRIGENTO QUAD.SPINASANTA",
+       "idx": 4,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "(P.Municipio) S.LISABETTA (P.Municipio)",
+       "idx": 0,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

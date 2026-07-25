@@ -1,0 +1,83 @@
+{
+ "operator": "Isea",
+ "route_id": "isea-orari-p5",
+ "name": "Unknown route",
+ "source": "ISEA_ORARI/p005.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Nessuna"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "CAPIZZI (Piazza Mercato)",
+    "BIVIO CERAMI (S.S. 120)",
+    "CERAMI",
+    "(Villa Comunale)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE5,005,155,30"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CAPIZZI (Piazza Mercato)",
+       "idx": 0,
+       "arr": "5.00",
+       "dep": "5.00"
+      },
+      {
+       "stop": "BIVIO CERAMI (S.S. 120)",
+       "idx": 1,
+       "arr": "5.15",
+       "dep": "5.15"
+      },
+      {
+       "stop": "CERAMI",
+       "idx": 2,
+       "arr": "5.30",
+       "dep": "5.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE17,1016,5516,40"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CERAMI",
+       "idx": 2,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "BIVIO CERAMI (S.S. 120)",
+       "idx": 1,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "CAPIZZI (Piazza Mercato)",
+       "idx": 0,
+       "arr": "17.10",
+       "dep": "17.10"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,709 @@
+{
+ "operator": "Damico",
+ "route_id": "damico-d-amico-orari-p1",
+ "name": "GROTTA COMUNE - CAPO MOLINI",
+ "source": "DAMICO__D'AMICO_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni di esercizio Nessuno"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "GROTTA COMUNE (Via Cernaia)",
+    "C.DA TREMONTI (Fraz. Trecastagni)",
+    "TRECASTAGNI (Piazza Aldo Moro)",
+    "SAN GIOVANNI LA PUNTA (Piazza Lucia Mangano)",
+    "VALVERDE (Piazza del Santuario)",
+    "SAN GREGORIO DI CATANIA (Piazza Don Bosco)",
+    "FICARAZZI (Via Tripoli)",
+    "ACI CASTELLO (Via Re Martino)",
+    "ACI TREZZA (Via Provinciale)",
+    "CAPO MOLINI (Via Capo Mulini)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "DALAL15/0610,4510,5010,5511,10"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GROTTA COMUNE (Via Cernaia)",
+       "idx": 0,
+       "arr": "10.45",
+       "dep": "10.45"
+      },
+      {
+       "stop": "C.DA TREMONTI (Fraz. Trecastagni)",
+       "idx": 1,
+       "arr": "10.50",
+       "dep": "10.50"
+      },
+      {
+       "stop": "TRECASTAGNI (Piazza Aldo Moro)",
+       "idx": 2,
+       "arr": "10.55",
+       "dep": "10.55"
+      },
+      {
+       "stop": "SAN GIOVANNI LA PUNTA (Piazza Lucia Mangano)",
+       "idx": 3,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "VALVERDE (Piazza del Santuario)",
+       "idx": 4,
+       "arr": "11.20",
+       "dep": "11.20"
+      },
+      {
+       "stop": "SAN GREGORIO DI CATANIA (Piazza Don Bosco)",
+       "idx": 5,
+       "arr": "11.25",
+       "dep": "11.25"
+      },
+      {
+       "stop": "FICARAZZI (Via Tripoli)",
+       "idx": 6,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "ACI CASTELLO (Via Re Martino)",
+       "idx": 7,
+       "arr": "11.35",
+       "dep": "11.35"
+      },
+      {
+       "stop": "ACI TREZZA (Via Provinciale)",
+       "idx": 8,
+       "arr": "11.40",
+       "dep": "11.40"
+      },
+      {
+       "stop": "CAPO MOLINI (Via Capo Mulini)",
+       "idx": 9,
+       "arr": "11.45",
+       "dep": "11.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "DALAL14/098,008,058,108,25"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GROTTA COMUNE (Via Cernaia)",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "C.DA TREMONTI (Fraz. Trecastagni)",
+       "idx": 1,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "TRECASTAGNI (Piazza Aldo Moro)",
+       "idx": 2,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "SAN GIOVANNI LA PUNTA (Piazza Lucia Mangano)",
+       "idx": 3,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "VALVERDE (Piazza del Santuario)",
+       "idx": 4,
+       "arr": "8.35",
+       "dep": "8.35"
+      },
+      {
+       "stop": "SAN GREGORIO DI CATANIA (Piazza Don Bosco)",
+       "idx": 5,
+       "arr": "8.40",
+       "dep": "8.40"
+      },
+      {
+       "stop": "FICARAZZI (Via Tripoli)",
+       "idx": 6,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "ACI CASTELLO (Via Re Martino)",
+       "idx": 7,
+       "arr": "8.50",
+       "dep": "8.50"
+      },
+      {
+       "stop": "ACI TREZZA (Via Provinciale)",
+       "idx": 8,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "CAPO MOLINI (Via Capo Mulini)",
+       "idx": 9,
+       "arr": "9.00",
+       "dep": "9.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico7,207,257,307,45"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GROTTA COMUNE (Via Cernaia)",
+       "idx": 0,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "C.DA TREMONTI (Fraz. Trecastagni)",
+       "idx": 1,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "TRECASTAGNI (Piazza Aldo Moro)",
+       "idx": 2,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "SAN GIOVANNI LA PUNTA (Piazza Lucia Mangano)",
+       "idx": 3,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "VALVERDE (Piazza del Santuario)",
+       "idx": 4,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "SAN GREGORIO DI CATANIA (Piazza Don Bosco)",
+       "idx": 5,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "FICARAZZI (Via Tripoli)",
+       "idx": 6,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "ACI CASTELLO (Via Re Martino)",
+       "idx": 7,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "ACI TREZZA (Via Provinciale)",
+       "idx": 8,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "CAPO MOLINI (Via Capo Mulini)",
+       "idx": 9,
+       "arr": "8.20",
+       "dep": "8.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico13,0513,10/13,1513,30"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GROTTA COMUNE (Via Cernaia)",
+       "idx": 0,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "C.DA TREMONTI (Fraz. Trecastagni)",
+       "idx": 1,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "TRECASTAGNI (Piazza Aldo Moro)",
+       "idx": 2,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "SAN GIOVANNI LA PUNTA (Piazza Lucia Mangano)",
+       "idx": 3,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "VALVERDE (Piazza del Santuario)",
+       "idx": 4,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "SAN GREGORIO DI CATANIA (Piazza Don Bosco)",
+       "idx": 5,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "FICARAZZI (Via Tripoli)",
+       "idx": 6,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "ACI CASTELLO (Via Re Martino)",
+       "idx": 7,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "ACI TREZZA (Via Provinciale)",
+       "idx": 8,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "CAPO MOLINI (Via Capo Mulini)",
+       "idx": 9,
+       "arr": "14.05",
+       "dep": "14.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "DALAL15/0610,3010,2510,2010,05"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAPO MOLINI (Via Capo Mulini)",
+       "idx": 9,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "ACI TREZZA (Via Provinciale)",
+       "idx": 8,
+       "arr": "9.35",
+       "dep": "9.35"
+      },
+      {
+       "stop": "ACI CASTELLO (Via Re Martino)",
+       "idx": 7,
+       "arr": "9.40",
+       "dep": "9.40"
+      },
+      {
+       "stop": "FICARAZZI (Via Tripoli)",
+       "idx": 6,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "SAN GREGORIO DI CATANIA (Piazza Don Bosco)",
+       "idx": 5,
+       "arr": "9.50",
+       "dep": "9.50"
+      },
+      {
+       "stop": "VALVERDE (Piazza del Santuario)",
+       "idx": 4,
+       "arr": "9.55",
+       "dep": "9.55"
+      },
+      {
+       "stop": "SAN GIOVANNI LA PUNTA (Piazza Lucia Mangano)",
+       "idx": 3,
+       "arr": "10.05",
+       "dep": "10.05"
+      },
+      {
+       "stop": "TRECASTAGNI (Piazza Aldo Moro)",
+       "idx": 2,
+       "arr": "10.20",
+       "dep": "10.20"
+      },
+      {
+       "stop": "C.DA TREMONTI (Fraz. Trecastagni)",
+       "idx": 1,
+       "arr": "10.25",
+       "dep": "10.25"
+      },
+      {
+       "stop": "GROTTA COMUNE (Via Cernaia)",
+       "idx": 0,
+       "arr": "10.30",
+       "dep": "10.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "DALAL14/0913,5013,4513,4013,25"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAPO MOLINI (Via Capo Mulini)",
+       "idx": 9,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "ACI TREZZA (Via Provinciale)",
+       "idx": 8,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "ACI CASTELLO (Via Re Martino)",
+       "idx": 7,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "FICARAZZI (Via Tripoli)",
+       "idx": 6,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "SAN GREGORIO DI CATANIA (Piazza Don Bosco)",
+       "idx": 5,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "VALVERDE (Piazza del Santuario)",
+       "idx": 4,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "SAN GIOVANNI LA PUNTA (Piazza Lucia Mangano)",
+       "idx": 3,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "TRECASTAGNI (Piazza Aldo Moro)",
+       "idx": 2,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "C.DA TREMONTI (Fraz. Trecastagni)",
+       "idx": 1,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "GROTTA COMUNE (Via Cernaia)",
+       "idx": 0,
+       "arr": "13.50",
+       "dep": "13.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico12,5512,5012,4512,30"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAPO MOLINI (Via Capo Mulini)",
+       "idx": 9,
+       "arr": "11.55",
+       "dep": "11.55"
+      },
+      {
+       "stop": "ACI TREZZA (Via Provinciale)",
+       "idx": 8,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "ACI CASTELLO (Via Re Martino)",
+       "idx": 7,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "FICARAZZI (Via Tripoli)",
+       "idx": 6,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "SAN GREGORIO DI CATANIA (Piazza Don Bosco)",
+       "idx": 5,
+       "arr": "12.15",
+       "dep": "12.15"
+      },
+      {
+       "stop": "VALVERDE (Piazza del Santuario)",
+       "idx": 4,
+       "arr": "12.20",
+       "dep": "12.20"
+      },
+      {
+       "stop": "SAN GIOVANNI LA PUNTA (Piazza Lucia Mangano)",
+       "idx": 3,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "TRECASTAGNI (Piazza Aldo Moro)",
+       "idx": 2,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "C.DA TREMONTI (Fraz. Trecastagni)",
+       "idx": 1,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "GROTTA COMUNE (Via Cernaia)",
+       "idx": 0,
+       "arr": "12.55",
+       "dep": "12.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico15,1015,0515,0014,45"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAPO MOLINI (Via Capo Mulini)",
+       "idx": 9,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "ACI TREZZA (Via Provinciale)",
+       "idx": 8,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "ACI CASTELLO (Via Re Martino)",
+       "idx": 7,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "FICARAZZI (Via Tripoli)",
+       "idx": 6,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "SAN GREGORIO DI CATANIA (Piazza Don Bosco)",
+       "idx": 5,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "VALVERDE (Piazza del Santuario)",
+       "idx": 4,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "SAN GIOVANNI LA PUNTA (Piazza Lucia Mangano)",
+       "idx": 3,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "TRECASTAGNI (Piazza Aldo Moro)",
+       "idx": 2,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "C.DA TREMONTI (Fraz. Trecastagni)",
+       "idx": 1,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "GROTTA COMUNE (Via Cernaia)",
+       "idx": 0,
+       "arr": "15.10",
+       "dep": "15.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEferialiesclusodal01/07al15/098,058,007,557,40"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "SAN GREGORIO DI CATANIA (Piazza Don Bosco)",
+       "idx": 5,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "VALVERDE (Piazza del Santuario)",
+       "idx": 4,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "SAN GIOVANNI LA PUNTA (Piazza Lucia Mangano)",
+       "idx": 3,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "TRECASTAGNI (Piazza Aldo Moro)",
+       "idx": 2,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "C.DA TREMONTI (Fraz. Trecastagni)",
+       "idx": 1,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "GROTTA COMUNE (Via Cernaia)",
+       "idx": 0,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEferialiesclusodal01/07al15/1013,5513,5013,4513,30"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "SAN GREGORIO DI CATANIA (Piazza Don Bosco)",
+       "idx": 5,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "VALVERDE (Piazza del Santuario)",
+       "idx": 4,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "SAN GIOVANNI LA PUNTA (Piazza Lucia Mangano)",
+       "idx": 3,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "TRECASTAGNI (Piazza Aldo Moro)",
+       "idx": 2,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "C.DA TREMONTI (Fraz. Trecastagni)",
+       "idx": 1,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "GROTTA COMUNE (Via Cernaia)",
+       "idx": 0,
+       "arr": "13.55",
+       "dep": "13.55"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

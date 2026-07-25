@@ -1,0 +1,96 @@
+{
+ "operator": "Scionti",
+ "route_id": "scionti-scionti-orari-p4",
+ "name": "CATANIA - Cugno Augusta",
+ "source": "Scionti__SCIONTI_ORARI/p004.json",
+ "prescriptions": [
+  "Prescrizioni Divieto di servizio locale, estremi inclusi, sulla tratta Rasiom - Punta Cugno - Augusta"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "CATANIA (via D'Amico)",
+    "RASIOM",
+    "SINCAT",
+    "AUGUSTA (Via Caracciolo)",
+    "Cugno Augusta"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "feriale(lunedì-venerdì)6,307,007,207,50"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (via D'Amico)",
+       "idx": 0,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "RASIOM",
+       "idx": 1,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "SINCAT",
+       "idx": 2,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "AUGUSTA (Via Caracciolo)",
+       "idx": 3,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "feriale(lunedì-venerdì)17,5017,2017,0016,30"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "AUGUSTA (Via Caracciolo)",
+       "idx": 3,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "SINCAT",
+       "idx": 2,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "RASIOM",
+       "idx": 1,
+       "arr": "17.20",
+       "dep": "17.20"
+      },
+      {
+       "stop": "CATANIA (via D'Amico)",
+       "idx": 0,
+       "arr": "17.50",
+       "dep": "17.50"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

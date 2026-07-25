@@ -1,0 +1,182 @@
+{
+ "operator": "Carusomidolo",
+ "route_id": "carusomidolo-caruso-orari-p1",
+ "name": "NOTO - RAGUSA",
+ "source": "CARUSOMIDOLO__CARUSO_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni Divieto di servizio locale, estremi inclusi, sui tratti: Bivio Salinella - Ragusa e Bivio Giarratana - Ragusa"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "NOTO",
+    "SAN GIACOMO",
+    "BALATA DI MODICA",
+    "Poggio Grasso",
+    "RAGUSA"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale5,456,507,00//"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "NOTO",
+       "idx": 0,
+       "arr": "5.45",
+       "dep": "5.45"
+      },
+      {
+       "stop": "SAN GIACOMO",
+       "idx": 1,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "BALATA DI MODICA",
+       "idx": 2,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "RAGUSA",
+       "idx": 4,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Ferialedal16/9al31/0512,0013,0513,1513,20"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "NOTO",
+       "idx": 0,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "SAN GIACOMO",
+       "idx": 1,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "BALATA DI MODICA",
+       "idx": 2,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "Poggio Grasso",
+       "idx": 3,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "RAGUSA",
+       "idx": 4,
+       "arr": "13.45",
+       "dep": "13.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale16,1515,1015,00//"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "RAGUSA",
+       "idx": 4,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "BALATA DI MODICA",
+       "idx": 2,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "SAN GIACOMO",
+       "idx": 1,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "NOTO",
+       "idx": 0,
+       "arr": "16.15",
+       "dep": "16.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Ferialedal16/9al31/059,558,508,408,35"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "RAGUSA",
+       "idx": 4,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "Poggio Grasso",
+       "idx": 3,
+       "arr": "8.35",
+       "dep": "8.35"
+      },
+      {
+       "stop": "BALATA DI MODICA",
+       "idx": 2,
+       "arr": "8.40",
+       "dep": "8.40"
+      },
+      {
+       "stop": "SAN GIACOMO",
+       "idx": 1,
+       "arr": "8.50",
+       "dep": "8.50"
+      },
+      {
+       "stop": "NOTO",
+       "idx": 0,
+       "arr": "9.55",
+       "dep": "9.55"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

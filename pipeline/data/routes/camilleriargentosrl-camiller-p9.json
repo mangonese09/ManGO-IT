@@ -1,0 +1,70 @@
+{
+ "operator": "Camilleriargento",
+ "route_id": "camilleriargentosrl-camiller-p9",
+ "name": "Capolinea di Partenza Capolinea di Arrivo - SOLO LA DOMENICA, ETC….",
+ "source": "CAMILLERIARGENTOSRL__CAMILLERI_ORARI/p009.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio N.7 C.C SCOLASTICA RAFFADALI - AGRIGENTO C.DA BONAMORONE FOGLIO N.3"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Capolinea di Partenza Capolinea di Arrivo",
+    "Capolinea di Arrivo Capolinea di Partenza",
+    "SOLO LA DOMENICA, ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "11",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "scolastica7,208,00"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "Capolinea di Arrivo Capolinea di Partenza",
+       "idx": 1,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "scolastica13,3013,00"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Capolinea di Arrivo Capolinea di Partenza",
+       "idx": 1,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "13.30",
+       "dep": "13.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

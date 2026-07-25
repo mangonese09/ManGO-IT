@@ -1,0 +1,220 @@
+{
+ "operator": "Russo Autolinee",
+ "route_id": "russoautolinee-autolinee-rus-p1",
+ "name": "Joppologiancax - SOLO IL SABATO, SOLO LA DOMENICA, ETC….",
+ "source": "RussoAutolinee__AUTOLINEE_RUSSO/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Joppologiancax (GIANCAXIOJOPPOLOIO)",
+    "AGRIGENTO AGRIGENTO 0",
+    "SOLO IL SABATO, SOLO LA DOMENICA, ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE8,459,00"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Joppologiancax (GIANCAXIOJOPPOLOIO)",
+       "idx": 0,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "AGRIGENTO AGRIGENTO 0",
+       "idx": 1,
+       "arr": "9.00",
+       "dep": "9.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEsicnoplaesritoicdoo7,158,00"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Joppologiancax (GIANCAXIOJOPPOLOIO)",
+       "idx": 0,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "AGRIGENTO AGRIGENTO 0",
+       "idx": 1,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE12,3012,45"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Joppologiancax (GIANCAXIOJOPPOLOIO)",
+       "idx": 0,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "AGRIGENTO AGRIGENTO 0",
+       "idx": 1,
+       "arr": "12.45",
+       "dep": "12.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE15,3015,50"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Joppologiancax (GIANCAXIOJOPPOLOIO)",
+       "idx": 0,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "AGRIGENTO AGRIGENTO 0",
+       "idx": 1,
+       "arr": "15.50",
+       "dep": "15.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE12,0011,45"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "AGRIGENTO AGRIGENTO 0",
+       "idx": 1,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "Joppologiancax (GIANCAXIOJOPPOLOIO)",
+       "idx": 0,
+       "arr": "12.00",
+       "dep": "12.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico14,4514,15"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "AGRIGENTO AGRIGENTO 0",
+       "idx": 1,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Joppologiancax (GIANCAXIOJOPPOLOIO)",
+       "idx": 0,
+       "arr": "14.45",
+       "dep": "14.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE13,30"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Joppologiancax (GIANCAXIOJOPPOLOIO)",
+       "idx": 0,
+       "arr": "0.00",
+       "dep": "0.00"
+      },
+      {
+       "stop": "AGRIGENTO AGRIGENTO 0",
+       "idx": 1,
+       "arr": "13.30",
+       "dep": "13.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE18,5018,30"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "AGRIGENTO AGRIGENTO 0",
+       "idx": 1,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "Joppologiancax (GIANCAXIOJOPPOLOIO)",
+       "idx": 0,
+       "arr": "18.50",
+       "dep": "18.50"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

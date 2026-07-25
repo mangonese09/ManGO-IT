@@ -1,0 +1,174 @@
+{
+ "operator": "Partannasoccoop",
+ "route_id": "partannasoccoop-partanna-ora-p2",
+ "name": "Partanna - Bv. Acropoli",
+ "source": "PARTANNASOCCOOP__PARTANNA_ORARI/p002.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio 2 C.C. GIORNALIERE IN PERIODO ESTIVO DAL 15 MAGGIO AL 30 SETTEMBRE"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Capolinea di Partenza Capolinea di Arrivo orario ( c/da Montagna)Partanna (c/da Montagna)",
+    "Fermata intermedia Fermata intermedia orario",
+    "Fermata intermedia Fermata intermedia orario",
+    "Fermata intermedia Fermata intermedia orario",
+    "Fermata intermedia Fermata intermedia orario",
+    "Fermata intermedia Fermata intermedia orario",
+    "Fermata intermedia Fermata intermedia orario",
+    "Fermata intermedia Fermata intermedia orario",
+    "Fermata intermedia Fermata intermedia orario",
+    "capolinea di arrivo capolinea di partenza",
+    "SOLO LA DOMENICA, ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "15,0015,0315,0615,07"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo orario ( c/da Montagna)Partanna (c/da Montagna)",
+       "idx": 0,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia orario",
+       "idx": 1,
+       "arr": "15.03",
+       "dep": "15.03"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia orario",
+       "idx": 2,
+       "arr": "15.06",
+       "dep": "15.06"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia orario",
+       "idx": 3,
+       "arr": "15.07",
+       "dep": "15.07"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia orario",
+       "idx": 4,
+       "arr": "15.08",
+       "dep": "15.08"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia orario",
+       "idx": 5,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia orario",
+       "idx": 6,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia orario",
+       "idx": 7,
+       "arr": "15.53",
+       "dep": "15.53"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia orario",
+       "idx": 8,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "capolinea di arrivo capolinea di partenza",
+       "idx": 9,
+       "arr": "16.00",
+       "dep": "16.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "20,0019,5719,5419,53"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "capolinea di arrivo capolinea di partenza",
+       "idx": 9,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia orario",
+       "idx": 8,
+       "arr": "19.05",
+       "dep": "19.05"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia orario",
+       "idx": 7,
+       "arr": "19.07",
+       "dep": "19.07"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia orario",
+       "idx": 6,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia orario",
+       "idx": 5,
+       "arr": "19.25",
+       "dep": "19.25"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia orario",
+       "idx": 4,
+       "arr": "19.50",
+       "dep": "19.50"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia orario",
+       "idx": 3,
+       "arr": "19.53",
+       "dep": "19.53"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia orario",
+       "idx": 2,
+       "arr": "19.54",
+       "dep": "19.54"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia orario",
+       "idx": 1,
+       "arr": "19.57",
+       "dep": "19.57"
+      },
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo orario ( c/da Montagna)Partanna (c/da Montagna)",
+       "idx": 0,
+       "arr": "20.00",
+       "dep": "20.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,82 @@
+{
+ "operator": "Lattuca",
+ "route_id": "lattuca-orari-p6",
+ "name": "ARAGONA - RAFFADALI",
+ "source": "LATTUCA_ORARI/p006.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Consentito il carico da Aragona - S.Elisabetta -Raffadali"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "ARAGONA ( Via Roma) ARAGONA ( Via Roma)",
+    "S.ELISABETTA ( P. Municipio) S.ELISABETTA ( P. Municipio)",
+    "RAFFADALI ( Via Nazionale) RAFFADALI ( Via Nazionale)"
+   ],
+   "trips": [
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE13,3013,50"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ARAGONA ( Via Roma) ARAGONA ( Via Roma)",
+       "idx": 0,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "S.ELISABETTA ( P. Municipio) S.ELISABETTA ( P. Municipio)",
+       "idx": 1,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "RAFFADALI ( Via Nazionale) RAFFADALI ( Via Nazionale)",
+       "idx": 2,
+       "arr": "13.55",
+       "dep": "13.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE14,2014,00"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "RAFFADALI ( Via Nazionale) RAFFADALI ( Via Nazionale)",
+       "idx": 2,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "S.ELISABETTA ( P. Municipio) S.ELISABETTA ( P. Municipio)",
+       "idx": 1,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "ARAGONA ( Via Roma) ARAGONA ( Via Roma)",
+       "idx": 0,
+       "arr": "14.20",
+       "dep": "14.20"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

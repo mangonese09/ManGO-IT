@@ -1,0 +1,84 @@
+{
+ "operator": "Ortolano e Puglisi",
+ "route_id": "ortolanopuglisi-ortolano-e-p-p4",
+ "name": "ALIA ALIA - SOLO LA DOMENICA, ETC….",
+ "source": "OrtolanoPuglisi__ORTOLANO_e_Puglisi_ORARI/p004.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "ALIA ALIA ( P.zza Santa Rosalia ) ( P.zza Santa Rosalia )",
+    "ROCCAPALUMBA (Via Garibaldi)",
+    "ROCCAPALUMBA (Via Garibaldi)",
+    "VICARI VICARI ( Via A. Diaz n°32 ) ( Via A. Diaz n°32 )",
+    "SOLO LA DOMENICA, ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "inperiodo7,057,25"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ALIA ALIA ( P.zza Santa Rosalia ) ( P.zza Santa Rosalia )",
+       "idx": 0,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "ROCCAPALUMBA (Via Garibaldi)",
+       "idx": 1,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "VICARI VICARI ( Via A. Diaz n°32 ) ( Via A. Diaz n°32 )",
+       "idx": 3,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "IALEinperiodo15,10"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "VICARI VICARI ( Via A. Diaz n°32 ) ( Via A. Diaz n°32 )",
+       "idx": 3,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "ROCCAPALUMBA (Via Garibaldi)",
+       "idx": 2,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "ALIA ALIA ( P.zza Santa Rosalia ) ( P.zza Santa Rosalia )",
+       "idx": 0,
+       "arr": "15.10",
+       "dep": "15.10"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

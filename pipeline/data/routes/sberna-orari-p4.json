@@ -1,0 +1,67 @@
+{
+ "operator": "Sberna",
+ "route_id": "sberna-orari-p4",
+ "name": "Spsp - Mdd",
+ "source": "SBERNA_ORARI/p004.json",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "Spsp (S. Piero.iero Piazza S. Piero.iero Piazza)",
+    "Mdd (S. Agata.uomo Piazza S. Agata M.uomo Piazza)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "STAZIONAMENTIKMFERIALEorarioCapolineadiPartenza7,10S.PieroPiazzaS.PieroS.PieroorarioFermataintermedia7,4510,2S.AgataM.Pi"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Spsp (S. Piero.iero Piazza S. Piero.iero Piazza)",
+       "idx": 0,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Mdd (S. Agata.uomo Piazza S. Agata M.uomo Piazza)",
+       "idx": 1,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "KMFERIALEdiArrivoorarioPiazza10,214,05S.PieroFermataintermediaorarioPiazza0,0013,30Duomo"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Mdd (S. Agata.uomo Piazza S. Agata M.uomo Piazza)",
+       "idx": 1,
+       "arr": "0.00",
+       "dep": "0.00"
+      },
+      {
+       "stop": "Spsp (S. Piero.iero Piazza S. Piero.iero Piazza)",
+       "idx": 0,
+       "arr": "14.05",
+       "dep": "14.05"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

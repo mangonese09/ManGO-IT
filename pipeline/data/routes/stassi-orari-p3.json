@@ -1,0 +1,583 @@
+{
+ "operator": "Stassi",
+ "route_id": "stassi-orari-p3",
+ "name": "di Partenza Capolinea di Arrivo - di Arrivo Capolinea di Partenza",
+ "source": "STASSI_ORARI/p003.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio L'esercizio di tutte le corse è feriale - vedi D.A. 649/2Tr del 5/3/98"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "di Partenza Capolinea di Arrivo",
+    "intermedia Fermata intermedia",
+    "intermedia Fermata intermedia",
+    "Giancavallo",
+    "intermedia Fermata intermedia",
+    "Campofiorito",
+    "intermedia Fermata intermedia",
+    "Chiosi",
+    "intermedia Fermata intermedia",
+    "Bivio Lupotto",
+    "Marineo",
+    "di Arrivo Capolinea di Partenza (P.zza marina) Palermo (P.zza marina)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale5,305,405,455,506,00"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "5.30",
+       "dep": "5.30"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "5.40",
+       "dep": "5.40"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "5.45",
+       "dep": "5.45"
+      },
+      {
+       "stop": "Giancavallo",
+       "idx": 3,
+       "arr": "4.48",
+       "dep": "4.48"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 4,
+       "arr": "5.50",
+       "dep": "5.50"
+      },
+      {
+       "stop": "Campofiorito",
+       "idx": 5,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 6,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "Chiosi",
+       "idx": 7,
+       "arr": "9.36",
+       "dep": "9.36"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 8,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "Bivio Lupotto",
+       "idx": 9,
+       "arr": "6.25",
+       "dep": "6.25"
+      },
+      {
+       "stop": "Marineo",
+       "idx": 10,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "di Arrivo Capolinea di Partenza (P.zza marina) Palermo (P.zza marina)",
+       "idx": 11,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": false
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale6,456,557,007,057,15"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 4,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 6,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 8,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Bivio Lupotto",
+       "idx": 9,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "Marineo",
+       "idx": 10,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "di Arrivo Capolinea di Partenza (P.zza marina) Palermo (P.zza marina)",
+       "idx": 11,
+       "arr": "8.55",
+       "dep": "8.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale15,0015,1015,1515,2015,35"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 4,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 6,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 8,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "Bivio Lupotto",
+       "idx": 9,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "Marineo",
+       "idx": 10,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "di Arrivo Capolinea di Partenza (P.zza marina) Palermo (P.zza marina)",
+       "idx": 11,
+       "arr": "17.00",
+       "dep": "17.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "Festiva16,0016,1016,1516,2016,35"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 4,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 6,
+       "arr": "16.35",
+       "dep": "16.35"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 8,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "Bivio Lupotto",
+       "idx": 9,
+       "arr": "17.10",
+       "dep": "17.10"
+      },
+      {
+       "stop": "Marineo",
+       "idx": 10,
+       "arr": "17.20",
+       "dep": "17.20"
+      },
+      {
+       "stop": "di Arrivo Capolinea di Partenza (P.zza marina) Palermo (P.zza marina)",
+       "idx": 11,
+       "arr": "18.00",
+       "dep": "18.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale16,1016,0015,5515,5015,40"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "di Arrivo Capolinea di Partenza (P.zza marina) Palermo (P.zza marina)",
+       "idx": 11,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "Marineo",
+       "idx": 10,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "Bivio Lupotto",
+       "idx": 9,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 8,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 6,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 4,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "16.10",
+       "dep": "16.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale14,4514,3514,3014,2514,15"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "di Arrivo Capolinea di Partenza (P.zza marina) Palermo (P.zza marina)",
+       "idx": 11,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "Marineo",
+       "idx": 10,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "Bivio Lupotto",
+       "idx": 9,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 8,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 6,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 4,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "14.45",
+       "dep": "14.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale20,0019,5019,4519,4019,30"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "di Arrivo Capolinea di Partenza (P.zza marina) Palermo (P.zza marina)",
+       "idx": 11,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "Marineo",
+       "idx": 10,
+       "arr": "18.40",
+       "dep": "18.40"
+      },
+      {
+       "stop": "Bivio Lupotto",
+       "idx": 9,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 8,
+       "arr": "19.15",
+       "dep": "19.15"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 6,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 4,
+       "arr": "19.40",
+       "dep": "19.40"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "19.50",
+       "dep": "19.50"
+      },
+      {
+       "stop": "di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "20.00",
+       "dep": "20.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "Festiva20,3020,2020,1520,1020,00"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "di Arrivo Capolinea di Partenza (P.zza marina) Palermo (P.zza marina)",
+       "idx": 11,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "Marineo",
+       "idx": 10,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "Bivio Lupotto",
+       "idx": 9,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 8,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 6,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 4,
+       "arr": "20.10",
+       "dep": "20.10"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "20.15",
+       "dep": "20.15"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "20.20",
+       "dep": "20.20"
+      },
+      {
+       "stop": "di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "20.30",
+       "dep": "20.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

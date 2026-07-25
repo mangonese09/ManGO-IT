@@ -1,0 +1,195 @@
+{
+ "operator": "Cracchiolo",
+ "route_id": "cracchiolo-orari-p1",
+ "name": "VIA ROMITELLO, 4 BORGETTO VIA ROMITELLO, - LA DOMENICA, ETC….",
+ "source": "CRACCHIOLO_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "VIA ROMITELLO, 4 BORGETTO VIA ROMITELLO,",
+    "VIA CALANDRINO, 28 PARTINICO VIA CALANDRINO, 28",
+    "STAZIONE FS PARTINICO STAZIONE FS",
+    "SAN CATALDO SPIAGGIA SAN CATALDO",
+    "TERRASINI SPIAGGIA TERRASINI",
+    "LA DOMENICA, ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE7,257,357,457,55"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "VIA ROMITELLO, 4 BORGETTO VIA ROMITELLO,",
+       "idx": 0,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "VIA CALANDRINO, 28 PARTINICO VIA CALANDRINO, 28",
+       "idx": 1,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "STAZIONE FS PARTINICO STAZIONE FS",
+       "idx": 2,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "SAN CATALDO SPIAGGIA SAN CATALDO",
+       "idx": 3,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "TERRASINI SPIAGGIA TERRASINI",
+       "idx": 4,
+       "arr": "8.10",
+       "dep": "8.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE13,2513,3513,4513,55"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "VIA ROMITELLO, 4 BORGETTO VIA ROMITELLO,",
+       "idx": 0,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "VIA CALANDRINO, 28 PARTINICO VIA CALANDRINO, 28",
+       "idx": 1,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "STAZIONE FS PARTINICO STAZIONE FS",
+       "idx": 2,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "SAN CATALDO SPIAGGIA SAN CATALDO",
+       "idx": 3,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "TERRASINI SPIAGGIA TERRASINI",
+       "idx": 4,
+       "arr": "14.10",
+       "dep": "14.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE14,4514,3514,2514,15"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "TERRASINI SPIAGGIA TERRASINI",
+       "idx": 4,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "SAN CATALDO SPIAGGIA SAN CATALDO",
+       "idx": 3,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "STAZIONE FS PARTINICO STAZIONE FS",
+       "idx": 2,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "VIA CALANDRINO, 28 PARTINICO VIA CALANDRINO, 28",
+       "idx": 1,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "VIA ROMITELLO, 4 BORGETTO VIA ROMITELLO,",
+       "idx": 0,
+       "arr": "14.45",
+       "dep": "14.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE19,4519,3519,2519,15"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "TERRASINI SPIAGGIA TERRASINI",
+       "idx": 4,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "SAN CATALDO SPIAGGIA SAN CATALDO",
+       "idx": 3,
+       "arr": "19.15",
+       "dep": "19.15"
+      },
+      {
+       "stop": "STAZIONE FS PARTINICO STAZIONE FS",
+       "idx": 2,
+       "arr": "19.25",
+       "dep": "19.25"
+      },
+      {
+       "stop": "VIA CALANDRINO, 28 PARTINICO VIA CALANDRINO, 28",
+       "idx": 1,
+       "arr": "19.35",
+       "dep": "19.35"
+      },
+      {
+       "stop": "VIA ROMITELLO, 4 BORGETTO VIA ROMITELLO,",
+       "idx": 0,
+       "arr": "19.45",
+       "dep": "19.45"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,247 @@
+{
+ "operator": "Ortolano e Puglisi",
+ "route_id": "ortolanopuglisi-ortolano-e-p-p2",
+ "name": "ALIA ALIA - PALERMO PALERMO",
+ "source": "OrtolanoPuglisi__ORTOLANO_e_Puglisi_ORARI/p002.json",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "ALIA ALIA ( P.zza Santa Rosalia ) ( P.zza Santa Rosalia )",
+    "(Via Garibaldi)",
+    "BIVIO MANGANARO Fermata intermedia",
+    "LERCARA F. ( Via Autonomia Siciliana )",
+    "BIVIO MANGANARO Fermata intermedia",
+    "Fermata intermedia ROCCAPALUMBA",
+    "Fermata intermedia BIVIO MANGANARO",
+    "LERCARA F. ( Via Autonomia Siciliana )",
+    "Fermata intermedia BIVIO MANGANARO",
+    "PALERMO PALERMO"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE5,306,00"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ALIA ALIA ( P.zza Santa Rosalia ) ( P.zza Santa Rosalia )",
+       "idx": 0,
+       "arr": "5.30",
+       "dep": "5.30"
+      },
+      {
+       "stop": "(Via Garibaldi)",
+       "idx": 1,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "PALERMO PALERMO",
+       "idx": 9,
+       "arr": "7.05",
+       "dep": "7.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALELun.alVen.)7,207,45"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ALIA ALIA ( P.zza Santa Rosalia ) ( P.zza Santa Rosalia )",
+       "idx": 0,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "(Via Garibaldi)",
+       "idx": 1,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "BIVIO MANGANARO Fermata intermedia",
+       "idx": 2,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "LERCARA F. ( Via Autonomia Siciliana )",
+       "idx": 3,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "BIVIO MANGANARO Fermata intermedia",
+       "idx": 4,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "PALERMO PALERMO",
+       "idx": 9,
+       "arr": "9.30",
+       "dep": "9.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALELun.-Mer.-Ven.)14,1514,35"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ALIA ALIA ( P.zza Santa Rosalia ) ( P.zza Santa Rosalia )",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "(Via Garibaldi)",
+       "idx": 1,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "PALERMO PALERMO",
+       "idx": 9,
+       "arr": "15.50",
+       "dep": "15.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE16,05"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO PALERMO",
+       "idx": 9,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Fermata intermedia ROCCAPALUMBA",
+       "idx": 5,
+       "arr": "15.45",
+       "dep": "15.45"
+      },
+      {
+       "stop": "ALIA ALIA ( P.zza Santa Rosalia ) ( P.zza Santa Rosalia )",
+       "idx": 0,
+       "arr": "16.05",
+       "dep": "16.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALELun.alVen.)14,10"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO PALERMO",
+       "idx": 9,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "Fermata intermedia BIVIO MANGANARO",
+       "idx": 8,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "LERCARA F. ( Via Autonomia Siciliana )",
+       "idx": 7,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "Fermata intermedia BIVIO MANGANARO",
+       "idx": 6,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "Fermata intermedia ROCCAPALUMBA",
+       "idx": 5,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "ALIA ALIA ( P.zza Santa Rosalia ) ( P.zza Santa Rosalia )",
+       "idx": 0,
+       "arr": "14.10",
+       "dep": "14.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALELun.-Mer.-Ven.)20,35"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO PALERMO",
+       "idx": 9,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "Fermata intermedia ROCCAPALUMBA",
+       "idx": 5,
+       "arr": "20.15",
+       "dep": "20.15"
+      },
+      {
+       "stop": "ALIA ALIA ( P.zza Santa Rosalia ) ( P.zza Santa Rosalia )",
+       "idx": 0,
+       "arr": "20.35",
+       "dep": "20.35"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

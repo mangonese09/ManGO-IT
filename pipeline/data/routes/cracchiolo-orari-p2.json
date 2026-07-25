@@ -1,0 +1,161 @@
+{
+ "operator": "Cracchiolo",
+ "route_id": "cracchiolo-orari-p2",
+ "name": "DELLE MIMOSE CAMPOREALE-P.ZA DELLE MIMOSE - ETC….",
+ "source": "CRACCHIOLO_ORARI/p002.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "DELLE MIMOSE CAMPOREALE-P.ZA DELLE MIMOSE",
+    "MARCONI CAMPOREALE-P.ZA MARCONI",
+    "BIVIO RAPITALA'",
+    "V. EMANUELE GRISI' C.SO V. EMANUELE",
+    "S.S. 113 KM",
+    "(OSPEDALE) PARTINICO Via Principe Umberto,308",
+    "Via Benevento>Via Taranto PARTINICO Largo Modica",
+    "Via Aldo Moro Stadio PARTINICO C.so dei Mille,",
+    "Piazza Duomo PARTINICO Piazza Duomo",
+    "ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE6,406,456,507,00"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "DELLE MIMOSE CAMPOREALE-P.ZA DELLE MIMOSE",
+       "idx": 0,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "MARCONI CAMPOREALE-P.ZA MARCONI",
+       "idx": 1,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "BIVIO RAPITALA'",
+       "idx": 2,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "V. EMANUELE GRISI' C.SO V. EMANUELE",
+       "idx": 3,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "S.S. 113 KM",
+       "idx": 4,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "(OSPEDALE) PARTINICO Via Principe Umberto,308",
+       "idx": 5,
+       "arr": "7.22",
+       "dep": "7.22"
+      },
+      {
+       "stop": "Via Benevento>Via Taranto PARTINICO Largo Modica",
+       "idx": 6,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Via Aldo Moro Stadio PARTINICO C.so dei Mille,",
+       "idx": 7,
+       "arr": "7.28",
+       "dep": "7.28"
+      },
+      {
+       "stop": "Piazza Duomo PARTINICO Piazza Duomo",
+       "idx": 8,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE15,2015,1515,1015,00"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Piazza Duomo PARTINICO Piazza Duomo",
+       "idx": 8,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Via Aldo Moro Stadio PARTINICO C.so dei Mille,",
+       "idx": 7,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "Via Benevento>Via Taranto PARTINICO Largo Modica",
+       "idx": 6,
+       "arr": "14.37",
+       "dep": "14.37"
+      },
+      {
+       "stop": "(OSPEDALE) PARTINICO Via Principe Umberto,308",
+       "idx": 5,
+       "arr": "14.39",
+       "dep": "14.39"
+      },
+      {
+       "stop": "S.S. 113 KM",
+       "idx": 4,
+       "arr": "14.43",
+       "dep": "14.43"
+      },
+      {
+       "stop": "V. EMANUELE GRISI' C.SO V. EMANUELE",
+       "idx": 3,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "BIVIO RAPITALA'",
+       "idx": 2,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "MARCONI CAMPOREALE-P.ZA MARCONI",
+       "idx": 1,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "DELLE MIMOSE CAMPOREALE-P.ZA DELLE MIMOSE",
+       "idx": 0,
+       "arr": "15.20",
+       "dep": "15.20"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

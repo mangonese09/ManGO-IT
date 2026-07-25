@@ -1,0 +1,51 @@
+{
+ "operator": "Calatina Bus Service",
+ "route_id": "calatinabusservice-calatina--p1",
+ "name": "CENTURIPE - CATENANUOVA SCALO F.S.",
+ "source": "CALATINABUSSERVICE__CALATINA_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni di esercizio Nessuna"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "CENTURIPE (Via Duca D'Aosta)",
+    "SALINA'",
+    "CATENANUOVA SCALO F.S."
+   ],
+   "trips": [
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico7,457,357,20"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATENANUOVA SCALO F.S.",
+       "idx": 2,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "SALINA'",
+       "idx": 1,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "CENTURIPE (Via Duca D'Aosta)",
+       "idx": 0,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

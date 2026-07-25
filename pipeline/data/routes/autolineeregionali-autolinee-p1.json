@@ -1,0 +1,346 @@
+{
+ "operator": "Autolinee Regionali",
+ "route_id": "autolineeregionali-autolinee-p1",
+ "name": "CALTAGIRONE - MAZZARONE",
+ "source": "AutolineeRegionali__AUTOLINEE_REGIONALI/p001.json",
+ "prescriptions": [
+  "Prescrizioni Divieto di servizio locale, estremi compresi, da piano chiazzina e Santo pietro per Caltagirone e viceversa;",
+  "Divieto di servizi locale estremi compresi, sul tratto in Comune con l'autolinea urbana di caltagirone n. 4;"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "CALTAGIRONE (Autostazione)",
+    "OSPEDALE SANTO PIETRO",
+    "SANTO PIETRO",
+    "PIANO CHIAZZINA",
+    "BORGO VENTIMIGLIA",
+    "PIANO CHIAZZINA",
+    "CUCCHI",
+    "MAZZARONE"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALENEIGIORNIDILUNEDI'ESABATO13,0013,3513,40//"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 0,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "OSPEDALE SANTO PIETRO",
+       "idx": 1,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "PIANO CHIAZZINA",
+       "idx": 3,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "BORGO VENTIMIGLIA",
+       "idx": 4,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "PIANO CHIAZZINA",
+       "idx": 5,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "CUCCHI",
+       "idx": 6,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "MAZZARONE",
+       "idx": 7,
+       "arr": "14.20",
+       "dep": "14.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEDALMVAERNTEEDRID'IA'L13,0013,3513,4013,50"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 0,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "OSPEDALE SANTO PIETRO",
+       "idx": 1,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "SANTO PIETRO",
+       "idx": 2,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "BORGO VENTIMIGLIA",
+       "idx": 4,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "PIANO CHIAZZINA",
+       "idx": 5,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "CUCCHI",
+       "idx": 6,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "MAZZARONE",
+       "idx": 7,
+       "arr": "14.10",
+       "dep": "14.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE13,3014,0514,10//"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 0,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "OSPEDALE SANTO PIETRO",
+       "idx": 1,
+       "arr": "14.10",
+       "dep": "14.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE15,3016,0516,10//"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 0,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "OSPEDALE SANTO PIETRO",
+       "idx": 1,
+       "arr": "16.10",
+       "dep": "16.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALENEIGIORNIDILUNEDI'ESABATO15,4015,0515,00//"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MAZZARONE",
+       "idx": 7,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "CUCCHI",
+       "idx": 6,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "PIANO CHIAZZINA",
+       "idx": 5,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "BORGO VENTIMIGLIA",
+       "idx": 4,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "PIANO CHIAZZINA",
+       "idx": 3,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "OSPEDALE SANTO PIETRO",
+       "idx": 1,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 0,
+       "arr": "15.05",
+       "dep": "15.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEDALMVAERNTEERDDI'IA'L15,4015,0515,0014,50"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MAZZARONE",
+       "idx": 7,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "CUCCHI",
+       "idx": 6,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "PIANO CHIAZZINA",
+       "idx": 5,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "BORGO VENTIMIGLIA",
+       "idx": 4,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "SANTO PIETRO",
+       "idx": 2,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "OSPEDALE SANTO PIETRO",
+       "idx": 1,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 0,
+       "arr": "15.05",
+       "dep": "15.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE14,5014,1514,10//"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "OSPEDALE SANTO PIETRO",
+       "idx": 1,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE16,5016,1516,10//"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "OSPEDALE SANTO PIETRO",
+       "idx": 1,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 0,
+       "arr": "16.15",
+       "dep": "16.15"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,735 @@
+{
+ "operator": "Sberna",
+ "route_id": "sberna-orari-p5",
+ "name": "Patamdpatamd - Efano",
+ "source": "SBERNA_ORARI/p005.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio divieto di servizio locale tra S.Agata M.llo ed Acquedolci"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Patamdpatamd (S. AGiazza.uomo S. AGiazza.uomo)",
+    "Vcvc (Acqueildlaolcoimunale Acqueildlaolcoimunale)",
+    "Tssltssl (orr1e13autarobellalocalitàorr1e13autarobellalocalità)",
+    "Ssmvbvmb (Caronia11a3rinaiarin,81 Caroniaiaarriinna,81 SS113-)",
+    "Cmcm (raisntnoertaonte\"zaaria\"raisntnoertaonte\"zaaria\")",
+    "Efano (S. STPiazza Ca Cl.vario S. STPEia Fz Az Na OCa Cl.vario)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEorario6,30orario6,40orario6,50orario"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Patamdpatamd (S. AGiazza.uomo S. AGiazza.uomo)",
+       "idx": 0,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "Vcvc (Acqueildlaolcoimunale Acqueildlaolcoimunale)",
+       "idx": 1,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "Tssltssl (orr1e13autarobellalocalitàorr1e13autarobellalocalità)",
+       "idx": 2,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "Ssmvbvmb (Caronia11a3rinaiarin,81 Caroniaiaarriinna,81 SS113-)",
+       "idx": 3,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Cmcm (raisntnoertaonte\"zaaria\"raisntnoertaonte\"zaaria\")",
+       "idx": 4,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "Efano (S. STPiazza Ca Cl.vario S. STPEia Fz Az Na OCa Cl.vario)",
+       "idx": 5,
+       "arr": "7.15",
+       "dep": "7.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE11,1511,2511,35"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Patamdpatamd (S. AGiazza.uomo S. AGiazza.uomo)",
+       "idx": 0,
+       "arr": "11.15",
+       "dep": "11.15"
+      },
+      {
+       "stop": "Vcvc (Acqueildlaolcoimunale Acqueildlaolcoimunale)",
+       "idx": 1,
+       "arr": "11.25",
+       "dep": "11.25"
+      },
+      {
+       "stop": "Tssltssl (orr1e13autarobellalocalitàorr1e13autarobellalocalità)",
+       "idx": 2,
+       "arr": "11.35",
+       "dep": "11.35"
+      },
+      {
+       "stop": "Ssmvbvmb (Caronia11a3rinaiarin,81 Caroniaiaarriinna,81 SS113-)",
+       "idx": 3,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "Cmcm (raisntnoertaonte\"zaaria\"raisntnoertaonte\"zaaria\")",
+       "idx": 4,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "Efano (S. STPiazza Ca Cl.vario S. STPEia Fz Az Na OCa Cl.vario)",
+       "idx": 5,
+       "arr": "12.00",
+       "dep": "12.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE13,3013,4013,50"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Patamdpatamd (S. AGiazza.uomo S. AGiazza.uomo)",
+       "idx": 0,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Vcvc (Acqueildlaolcoimunale Acqueildlaolcoimunale)",
+       "idx": 1,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "Tssltssl (orr1e13autarobellalocalitàorr1e13autarobellalocalità)",
+       "idx": 2,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "Ssmvbvmb (Caronia11a3rinaiarin,81 Caroniaiaarriinna,81 SS113-)",
+       "idx": 3,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Cmcm (raisntnoertaonte\"zaaria\"raisntnoertaonte\"zaaria\")",
+       "idx": 4,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "Efano (S. STPiazza Ca Cl.vario S. STPEia Fz Az Na OCa Cl.vario)",
+       "idx": 5,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE18,1518,2518,35"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Patamdpatamd (S. AGiazza.uomo S. AGiazza.uomo)",
+       "idx": 0,
+       "arr": "18.15",
+       "dep": "18.15"
+      },
+      {
+       "stop": "Vcvc (Acqueildlaolcoimunale Acqueildlaolcoimunale)",
+       "idx": 1,
+       "arr": "18.25",
+       "dep": "18.25"
+      },
+      {
+       "stop": "Tssltssl (orr1e13autarobellalocalitàorr1e13autarobellalocalità)",
+       "idx": 2,
+       "arr": "18.35",
+       "dep": "18.35"
+      },
+      {
+       "stop": "Ssmvbvmb (Caronia11a3rinaiarin,81 Caroniaiaarriinna,81 SS113-)",
+       "idx": 3,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "Cmcm (raisntnoertaonte\"zaaria\"raisntnoertaonte\"zaaria\")",
+       "idx": 4,
+       "arr": "18.50",
+       "dep": "18.50"
+      },
+      {
+       "stop": "Efano (S. STPiazza Ca Cl.vario S. STPEia Fz Az Na OCa Cl.vario)",
+       "idx": 5,
+       "arr": "19.00",
+       "dep": "19.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Ssmvbvmb (Caronia11a3rinaiarin,81 Caroniaiaarriinna,81 SS113-)",
+       "idx": 3,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "Cmcm (raisntnoertaonte\"zaaria\"raisntnoertaonte\"zaaria\")",
+       "idx": 4,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "Efano (S. STPiazza Ca Cl.vario S. STPEia Fz Az Na OCa Cl.vario)",
+       "idx": 5,
+       "arr": "6.15",
+       "dep": "6.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Ssmvbvmb (Caronia11a3rinaiarin,81 Caroniaiaarriinna,81 SS113-)",
+       "idx": 3,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "Cmcm (raisntnoertaonte\"zaaria\"raisntnoertaonte\"zaaria\")",
+       "idx": 4,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "Efano (S. STPiazza Ca Cl.vario S. STPEia Fz Az Na OCa Cl.vario)",
+       "idx": 5,
+       "arr": "16.05",
+       "dep": "16.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "13",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico6,507,007,10"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Patamdpatamd (S. AGiazza.uomo S. AGiazza.uomo)",
+       "idx": 0,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "Vcvc (Acqueildlaolcoimunale Acqueildlaolcoimunale)",
+       "idx": 1,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Tssltssl (orr1e13autarobellalocalitàorr1e13autarobellalocalità)",
+       "idx": 2,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Ssmvbvmb (Caronia11a3rinaiarin,81 Caroniaiaarriinna,81 SS113-)",
+       "idx": 3,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "Cmcm (raisntnoertaonte\"zaaria\"raisntnoertaonte\"zaaria\")",
+       "idx": 4,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Efano (S. STPiazza Ca Cl.vario S. STPEia Fz Az Na OCa Cl.vario)",
+       "idx": 5,
+       "arr": "7.35",
+       "dep": "7.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "15",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodscolastico13,4013,50"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Patamdpatamd (S. AGiazza.uomo S. AGiazza.uomo)",
+       "idx": 0,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "Vcvc (Acqueildlaolcoimunale Acqueildlaolcoimunale)",
+       "idx": 1,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "Tssltssl (orr1e13autarobellalocalitàorr1e13autarobellalocalità)",
+       "idx": 2,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "Ssmvbvmb (Caronia11a3rinaiarin,81 Caroniaiaarriinna,81 SS113-)",
+       "idx": 3,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Cmcm (raisntnoertaonte\"zaaria\"raisntnoertaonte\"zaaria\")",
+       "idx": 4,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "Efano (S. STPiazza Ca Cl.vario S. STPEia Fz Az Na OCa Cl.vario)",
+       "idx": 5,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEorario8,00orario7,50orario7,40orario"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Efano (S. STPiazza Ca Cl.vario S. STPEia Fz Az Na OCa Cl.vario)",
+       "idx": 5,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "Cmcm (raisntnoertaonte\"zaaria\"raisntnoertaonte\"zaaria\")",
+       "idx": 4,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Ssmvbvmb (Caronia11a3rinaiarin,81 Caroniaiaarriinna,81 SS113-)",
+       "idx": 3,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Tssltssl (orr1e13autarobellalocalitàorr1e13autarobellalocalità)",
+       "idx": 2,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "Vcvc (Acqueildlaolcoimunale Acqueildlaolcoimunale)",
+       "idx": 1,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "Patamdpatamd (S. AGiazza.uomo S. AGiazza.uomo)",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE13,1013,0012,50"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Efano (S. STPiazza Ca Cl.vario S. STPEia Fz Az Na OCa Cl.vario)",
+       "idx": 5,
+       "arr": "12.25",
+       "dep": "12.25"
+      },
+      {
+       "stop": "Cmcm (raisntnoertaonte\"zaaria\"raisntnoertaonte\"zaaria\")",
+       "idx": 4,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "Ssmvbvmb (Caronia11a3rinaiarin,81 Caroniaiaarriinna,81 SS113-)",
+       "idx": 3,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "Tssltssl (orr1e13autarobellalocalitàorr1e13autarobellalocalità)",
+       "idx": 2,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "Vcvc (Acqueildlaolcoimunale Acqueildlaolcoimunale)",
+       "idx": 1,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "Patamdpatamd (S. AGiazza.uomo S. AGiazza.uomo)",
+       "idx": 0,
+       "arr": "13.10",
+       "dep": "13.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE17,1517,0516,55"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Efano (S. STPiazza Ca Cl.vario S. STPEia Fz Az Na OCa Cl.vario)",
+       "idx": 5,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "Cmcm (raisntnoertaonte\"zaaria\"raisntnoertaonte\"zaaria\")",
+       "idx": 4,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "Ssmvbvmb (Caronia11a3rinaiarin,81 Caroniaiaarriinna,81 SS113-)",
+       "idx": 3,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "Tssltssl (orr1e13autarobellalocalitàorr1e13autarobellalocalità)",
+       "idx": 2,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "Vcvc (Acqueildlaolcoimunale Acqueildlaolcoimunale)",
+       "idx": 1,
+       "arr": "17.05",
+       "dep": "17.05"
+      },
+      {
+       "stop": "Patamdpatamd (S. AGiazza.uomo S. AGiazza.uomo)",
+       "idx": 0,
+       "arr": "17.15",
+       "dep": "17.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE6,256,156,05"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Efano (S. STPiazza Ca Cl.vario S. STPEia Fz Az Na OCa Cl.vario)",
+       "idx": 5,
+       "arr": "5.40",
+       "dep": "5.40"
+      },
+      {
+       "stop": "Cmcm (raisntnoertaonte\"zaaria\"raisntnoertaonte\"zaaria\")",
+       "idx": 4,
+       "arr": "5.50",
+       "dep": "5.50"
+      },
+      {
+       "stop": "Ssmvbvmb (Caronia11a3rinaiarin,81 Caroniaiaarriinna,81 SS113-)",
+       "idx": 3,
+       "arr": "5.55",
+       "dep": "5.55"
+      },
+      {
+       "stop": "Tssltssl (orr1e13autarobellalocalitàorr1e13autarobellalocalità)",
+       "idx": 2,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "Vcvc (Acqueildlaolcoimunale Acqueildlaolcoimunale)",
+       "idx": 1,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "Patamdpatamd (S. AGiazza.uomo S. AGiazza.uomo)",
+       "idx": 0,
+       "arr": "6.25",
+       "dep": "6.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Efano (S. STPiazza Ca Cl.vario S. STPEia Fz Az Na OCa Cl.vario)",
+       "idx": 5,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "Cmcm (raisntnoertaonte\"zaaria\"raisntnoertaonte\"zaaria\")",
+       "idx": 4,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "Ssmvbvmb (Caronia11a3rinaiarin,81 Caroniaiaarriinna,81 SS113-)",
+       "idx": 3,
+       "arr": "6.35",
+       "dep": "6.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Efano (S. STPiazza Ca Cl.vario S. STPEia Fz Az Na OCa Cl.vario)",
+       "idx": 5,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "Cmcm (raisntnoertaonte\"zaaria\"raisntnoertaonte\"zaaria\")",
+       "idx": 4,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "Ssmvbvmb (Caronia11a3rinaiarin,81 Caroniaiaarriinna,81 SS113-)",
+       "idx": 3,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "14",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico15,0014,5014,40"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Efano (S. STPiazza Ca Cl.vario S. STPEia Fz Az Na OCa Cl.vario)",
+       "idx": 5,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Cmcm (raisntnoertaonte\"zaaria\"raisntnoertaonte\"zaaria\")",
+       "idx": 4,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "Ssmvbvmb (Caronia11a3rinaiarin,81 Caroniaiaarriinna,81 SS113-)",
+       "idx": 3,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Tssltssl (orr1e13autarobellalocalitàorr1e13autarobellalocalità)",
+       "idx": 2,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "Vcvc (Acqueildlaolcoimunale Acqueildlaolcoimunale)",
+       "idx": 1,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "Patamdpatamd (S. AGiazza.uomo S. AGiazza.uomo)",
+       "idx": 0,
+       "arr": "15.00",
+       "dep": "15.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "16",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico8,007,507,40"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Efano (S. STPiazza Ca Cl.vario S. STPEia Fz Az Na OCa Cl.vario)",
+       "idx": 5,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "Cmcm (raisntnoertaonte\"zaaria\"raisntnoertaonte\"zaaria\")",
+       "idx": 4,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Ssmvbvmb (Caronia11a3rinaiarin,81 Caroniaiaarriinna,81 SS113-)",
+       "idx": 3,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Tssltssl (orr1e13autarobellalocalitàorr1e13autarobellalocalità)",
+       "idx": 2,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "Vcvc (Acqueildlaolcoimunale Acqueildlaolcoimunale)",
+       "idx": 1,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "Patamdpatamd (S. AGiazza.uomo S. AGiazza.uomo)",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}
