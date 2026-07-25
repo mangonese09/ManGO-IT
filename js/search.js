@@ -83,6 +83,17 @@ async function suggest(which, q) {
           sel[which] = { name: r.name, place: r.type === 'STOP' && r.id ? r.id : `${r.lat},${r.lon}` };
           document.getElementById(`${which}-input`).value = r.name;
           list.hidden = true;
+          // destination-first: picking a To with no From = route me there from here
+          if (which === 'to' && !sel.from) {
+            document.getElementById('from-input').value = 'My location';
+            locate().then((pos) => {
+              sel.from = { name: 'My location', place: `${pos.lat.toFixed(5)},${pos.lon.toFixed(5)}` };
+              runSearch();
+            }).catch(() => {
+              document.getElementById('from-input').value = '';
+              toast('Location unavailable — set a starting point', 'warn');
+            });
+          }
         },
       }, [
         el('span', { class: 'suggest-icon', text: icon }),
