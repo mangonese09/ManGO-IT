@@ -1,0 +1,340 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-tp-orari-0-750",
+ "name": "TRAPANI – Terminal piazzale Ilio - TRAPANI – Terminal piazzale Ilio",
+ "source": "AST_prov._di_TP_-ORARI_0/p009.json",
+ "prescriptions": [
+  "Prescrizioni NESSUNA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "TRAPANI – Terminal piazzale Ilio",
+    "BONAGIA via Asmara",
+    "VALDERICE bv. Immacolatella",
+    "VALDERICE bv. Misericordia",
+    "CROCEVIE via della Rinascita",
+    "ACQUESORBE",
+    "CASALBIANCO",
+    "SAN MARCO via Catalano",
+    "VALDERICE bivio Immacolatella",
+    "TRAPANI – Terminal piazzale Ilio"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 0,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "BONAGIA via Asmara",
+       "idx": 1,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "VALDERICE bv. Misericordia",
+       "idx": 3,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "CROCEVIE via della Rinascita",
+       "idx": 4,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "CASALBIANCO",
+       "idx": 6,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "SAN MARCO via Catalano",
+       "idx": 7,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "VALDERICE bivio Immacolatella",
+       "idx": 8,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 9,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "INFVEERRIANLAELE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 0,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "BONAGIA via Asmara",
+       "idx": 1,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "VALDERICE bv. Misericordia",
+       "idx": 3,
+       "arr": "7.40",
+       "dep": "7.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3A",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "FERIALESCOLASTICAesclusosabato"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CROCEVIE via della Rinascita",
+       "idx": 4,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "ACQUESORBE",
+       "idx": 5,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "CASALBIANCO",
+       "idx": 6,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "SAN MARCO via Catalano",
+       "idx": 7,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "VALDERICE bivio Immacolatella",
+       "idx": 8,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 9,
+       "arr": "15.25",
+       "dep": "15.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCFOELRAIASLTEICA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 9,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "SAN MARCO via Catalano",
+       "idx": 7,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "ACQUESORBE",
+       "idx": 5,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "CROCEVIE via della Rinascita",
+       "idx": 4,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "VALDERICE bv. Immacolatella",
+       "idx": 2,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 0,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCFOELRAIASLTEICA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 9,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "VALDERICE bivio Immacolatella",
+       "idx": 8,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "SAN MARCO via Catalano",
+       "idx": 7,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "CASALBIANCO",
+       "idx": 6,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "ACQUESORBE",
+       "idx": 5,
+       "arr": "8.35",
+       "dep": "8.35"
+      },
+      {
+       "stop": "CROCEVIE via della Rinascita",
+       "idx": 4,
+       "arr": "8.40",
+       "dep": "8.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "VALDERICE bv. Immacolatella",
+       "idx": 2,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "BONAGIA via Asmara",
+       "idx": 1,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCFOELRAIASLTEICA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 9,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "VALDERICE bivio Immacolatella",
+       "idx": 8,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "SAN MARCO via Catalano",
+       "idx": 7,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "CASALBIANCO",
+       "idx": 6,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "CROCEVIE via della Rinascita",
+       "idx": 4,
+       "arr": "13.45",
+       "dep": "13.45"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

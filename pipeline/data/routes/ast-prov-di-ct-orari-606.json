@@ -1,0 +1,438 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-ct-orari-606",
+ "name": "Zafferana Etnea - Catania",
+ "source": "AST_prov._di_CT_-_ORARI/p030.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio NESSUNA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Zafferana Etnea (via Garibaldi)",
+    "Monterosso Etneo",
+    "Lavinaio (via Cristaudo)",
+    "Aci Sant'Antonio (via Vittorio Emanuele)",
+    "Valverde (corso Vittorio Emanuele)",
+    "San Gregorio (P.za Regina Margherita)",
+    "Santa Maria La Stella (V.S.Maria la Stella)",
+    "Svincolo A18 Acireale",
+    "Catania (piazza Giovanni XXIII°)"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Zafferana Etnea (via Garibaldi)",
+       "idx": 0,
+       "arr": "5.45",
+       "dep": "5.45"
+      },
+      {
+       "stop": "Monterosso Etneo",
+       "idx": 1,
+       "arr": "5.55",
+       "dep": "5.55"
+      },
+      {
+       "stop": "Lavinaio (via Cristaudo)",
+       "idx": 2,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "Aci Sant'Antonio (via Vittorio Emanuele)",
+       "idx": 3,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "Valverde (corso Vittorio Emanuele)",
+       "idx": 4,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "San Gregorio (P.za Regina Margherita)",
+       "idx": 5,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 8,
+       "arr": "6.50",
+       "dep": "6.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Lavinaio (via Cristaudo)",
+       "idx": 2,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "Aci Sant'Antonio (via Vittorio Emanuele)",
+       "idx": 3,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "Valverde (corso Vittorio Emanuele)",
+       "idx": 4,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "San Gregorio (P.za Regina Margherita)",
+       "idx": 5,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 8,
+       "arr": "7.20",
+       "dep": "7.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Zafferana Etnea (via Garibaldi)",
+       "idx": 0,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "Monterosso Etneo",
+       "idx": 1,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "Lavinaio (via Cristaudo)",
+       "idx": 2,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Santa Maria La Stella (V.S.Maria la Stella)",
+       "idx": 6,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 8,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Zafferana Etnea (via Garibaldi)",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Monterosso Etneo",
+       "idx": 1,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "Lavinaio (via Cristaudo)",
+       "idx": 2,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Santa Maria La Stella (V.S.Maria la Stella)",
+       "idx": 6,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 8,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Lavinaio (via Cristaudo)",
+       "idx": 2,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "Santa Maria La Stella (V.S.Maria la Stella)",
+       "idx": 6,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 8,
+       "arr": "16.20",
+       "dep": "16.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 8,
+       "arr": "5.30",
+       "dep": "5.30"
+      },
+      {
+       "stop": "San Gregorio (P.za Regina Margherita)",
+       "idx": 5,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "Valverde (corso Vittorio Emanuele)",
+       "idx": 4,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "Aci Sant'Antonio (via Vittorio Emanuele)",
+       "idx": 3,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "Lavinaio (via Cristaudo)",
+       "idx": 2,
+       "arr": "6.20",
+       "dep": "6.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 8,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Santa Maria La Stella (V.S.Maria la Stella)",
+       "idx": 6,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "Lavinaio (via Cristaudo)",
+       "idx": 2,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "Monterosso Etneo",
+       "idx": 1,
+       "arr": "8.35",
+       "dep": "8.35"
+      },
+      {
+       "stop": "Zafferana Etnea (via Garibaldi)",
+       "idx": 0,
+       "arr": "8.45",
+       "dep": "8.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 8,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "Santa Maria La Stella (V.S.Maria la Stella)",
+       "idx": 6,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "Lavinaio (via Cristaudo)",
+       "idx": 2,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Monterosso Etneo",
+       "idx": 1,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "Zafferana Etnea (via Garibaldi)",
+       "idx": 0,
+       "arr": "13.45",
+       "dep": "13.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 8,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Santa Maria La Stella (V.S.Maria la Stella)",
+       "idx": 6,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "Lavinaio (via Cristaudo)",
+       "idx": 2,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 8,
+       "arr": "17.15",
+       "dep": "17.15"
+      },
+      {
+       "stop": "Santa Maria La Stella (V.S.Maria la Stella)",
+       "idx": 6,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "Lavinaio (via Cristaudo)",
+       "idx": 2,
+       "arr": "18.15",
+       "dep": "18.15"
+      },
+      {
+       "stop": "Monterosso Etneo",
+       "idx": 1,
+       "arr": "18.25",
+       "dep": "18.25"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,750 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-tp-orari-0-733",
+ "name": "TRAPANI Terminal P.Ilio Capolinea - CASTELVETRANO piazza R. Margherita",
+ "source": "AST_prov._di_TP_-ORARI_0/p014.json",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "TRAPANI Terminal P.Ilio Capolinea",
+    "VITA corso Garibaldi",
+    "SALEMI piazza Libertà",
+    "GIBELLINA viale Ind. Siciliana",
+    "SANTA NINFA via San Vito via",
+    "PARTANNA via Cialona",
+    "CASTELVETRANO piazza R. Margherita"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "VITA corso Garibaldi",
+       "idx": 1,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "SALEMI piazza Libertà",
+       "idx": 2,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "GIBELLINA viale Ind. Siciliana",
+       "idx": 3,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "SANTA NINFA via San Vito via",
+       "idx": 4,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "PARTANNA via Cialona",
+       "idx": 5,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "CASTELVETRANO piazza R. Margherita",
+       "idx": 6,
+       "arr": "8.30",
+       "dep": "8.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCFOELRAIASLTEICA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SALEMI piazza Libertà",
+       "idx": 2,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "GIBELLINA viale Ind. Siciliana",
+       "idx": 3,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "SANTA NINFA via San Vito via",
+       "idx": 4,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "CASTELVETRANO piazza R. Margherita",
+       "idx": 6,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3A",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "FERIALESCOLASTICAesclusosabato"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "VITA corso Garibaldi",
+       "idx": 1,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "SALEMI piazza Libertà",
+       "idx": 2,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "GIBELLINA viale Ind. Siciliana",
+       "idx": 3,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "CASTELVETRANO piazza R. Margherita",
+       "idx": 6,
+       "arr": "8.30",
+       "dep": "8.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCFOELRAIASLTEICA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SALEMI piazza Libertà",
+       "idx": 2,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "GIBELLINA viale Ind. Siciliana",
+       "idx": 3,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "SANTA NINFA via San Vito via",
+       "idx": 4,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "CASTELVETRANO piazza R. Margherita",
+       "idx": 6,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCFOELRAIASLTEICA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SALEMI piazza Libertà",
+       "idx": 2,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "GIBELLINA viale Ind. Siciliana",
+       "idx": 3,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "SANTA NINFA via San Vito via",
+       "idx": 4,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Terminal P.Ilio Capolinea",
+       "idx": 0,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "VITA corso Garibaldi",
+       "idx": 1,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "SALEMI piazza Libertà",
+       "idx": 2,
+       "arr": "15.20",
+       "dep": "15.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "SALEMI piazza Libertà",
+       "idx": 2,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "VITA corso Garibaldi",
+       "idx": 1,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "TRAPANI Terminal P.Ilio Capolinea",
+       "idx": 0,
+       "arr": "7.40",
+       "dep": "7.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "FERIALESCOLASTICAesclusosabato"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "VITA corso Garibaldi",
+       "idx": 1,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "TRAPANI Terminal P.Ilio Capolinea",
+       "idx": 0,
+       "arr": "7.40",
+       "dep": "7.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCFOELRAIASLTEICA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PARTANNA via Cialona",
+       "idx": 5,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "SANTA NINFA via San Vito via",
+       "idx": 4,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "GIBELLINA viale Ind. Siciliana",
+       "idx": 3,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "SALEMI piazza Libertà",
+       "idx": 2,
+       "arr": "8.25",
+       "dep": "8.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "INFVEERRIANLAELE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CASTELVETRANO piazza R. Margherita",
+       "idx": 6,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "PARTANNA via Cialona",
+       "idx": 5,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "SANTA NINFA via San Vito via",
+       "idx": 4,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "GIBELLINA viale Ind. Siciliana",
+       "idx": 3,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "SALEMI piazza Libertà",
+       "idx": 2,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "VITA corso Garibaldi",
+       "idx": 1,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "TRAPANI Terminal P.Ilio Capolinea",
+       "idx": 0,
+       "arr": "15.20",
+       "dep": "15.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FEESRTIAIVLAE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CASTELVETRANO piazza R. Margherita",
+       "idx": 6,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "PARTANNA via Cialona",
+       "idx": 5,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "SANTA NINFA via San Vito via",
+       "idx": 4,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "GIBELLINA viale Ind. Siciliana",
+       "idx": 3,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "SALEMI piazza Libertà",
+       "idx": 2,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "VITA corso Garibaldi",
+       "idx": 1,
+       "arr": "14.30",
+       "dep": "14.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCFOELRAIASLTEICA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CASTELVETRANO piazza R. Margherita",
+       "idx": 6,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "SANTA NINFA via San Vito via",
+       "idx": 4,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "GIBELLINA viale Ind. Siciliana",
+       "idx": 3,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "SALEMI piazza Libertà",
+       "idx": 2,
+       "arr": "14.10",
+       "dep": "14.10"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "TRAPANI Terminal P.Ilio Capolinea",
+    "VITA corso Garibaldi",
+    "SALEMI piazza Libertà",
+    "GIBELLINA viale Ind. Siciliana",
+    "SANTA NINFA via San Vito",
+    "PARTANNA via Cialona",
+    "CASTELVETRANO piazza R. Margherita"
+   ],
+   "trips": [
+    {
+     "corsa": "7A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEINVERNALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Terminal P.Ilio Capolinea",
+       "idx": 0,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "VITA corso Garibaldi",
+       "idx": 1,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "SALEMI piazza Libertà",
+       "idx": 2,
+       "arr": "15.45",
+       "dep": "15.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8A",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "FERIALESCOLASTICAesclusosabato"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Terminal P.Ilio Capolinea",
+       "idx": 0,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "VITA corso Garibaldi",
+       "idx": 1,
+       "arr": "15.25",
+       "dep": "15.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Terminal P.Ilio Capolinea",
+       "idx": 0,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "VITA corso Garibaldi",
+       "idx": 1,
+       "arr": "18.25",
+       "dep": "18.25"
+      },
+      {
+       "stop": "SALEMI piazza Libertà",
+       "idx": 2,
+       "arr": "18.40",
+       "dep": "18.40"
+      },
+      {
+       "stop": "GIBELLINA viale Ind. Siciliana",
+       "idx": 3,
+       "arr": "18.55",
+       "dep": "18.55"
+      },
+      {
+       "stop": "SANTA NINFA via San Vito",
+       "idx": 4,
+       "arr": "19.10",
+       "dep": "19.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7R",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "FERIALESCOLASTICAesclusosabato"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CASTELVETRANO piazza R. Margherita",
+       "idx": 6,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "GIBELLINA viale Ind. Siciliana",
+       "idx": 3,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "SALEMI piazza Libertà",
+       "idx": 2,
+       "arr": "13.55",
+       "dep": "13.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "SANTA NINFA via San Vito",
+       "idx": 4,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "GIBELLINA viale Ind. Siciliana",
+       "idx": 3,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "SALEMI piazza Libertà",
+       "idx": 2,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "VITA corso Garibaldi",
+       "idx": 1,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "TRAPANI Terminal P.Ilio Capolinea",
+       "idx": 0,
+       "arr": "15.55",
+       "dep": "15.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEINVERNALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CASTELVETRANO piazza R. Margherita",
+       "idx": 6,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "PARTANNA via Cialona",
+       "idx": 5,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "SANTA NINFA via San Vito",
+       "idx": 4,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "GIBELLINA viale Ind. Siciliana",
+       "idx": 3,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "SALEMI piazza Libertà",
+       "idx": 2,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "VITA corso Garibaldi",
+       "idx": 1,
+       "arr": "15.55",
+       "dep": "15.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10R",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "FERIALESCOLASTICAesclusosabato"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CASTELVETRANO piazza R. Margherita",
+       "idx": 6,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "SANTA NINFA via San Vito",
+       "idx": 4,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "GIBELLINA viale Ind. Siciliana",
+       "idx": 3,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "SALEMI piazza Libertà",
+       "idx": 2,
+       "arr": "15.25",
+       "dep": "15.25"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

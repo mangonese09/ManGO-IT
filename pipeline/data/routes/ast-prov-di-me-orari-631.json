@@ -1,0 +1,250 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-me-orari-631",
+ "name": "SORRENTINI piazza San Gatto Martini - PATTI SCALO FS",
+ "source": "AST_prov.di_ME_-_ORARI/p015.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio divieto di servizio locale , estremi conpresi fra Patti centro e Patti stazione - obbligo di utilizzo autobus extraurbani di tipo corto"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "SORRENTINI piazza San Gatto Martini",
+    "LAURELLO",
+    "MONTAGNAREALE via Nuova",
+    "PATTI CENTRO via Trieste",
+    "PATTI SCALO FS"
+   ],
+   "trips": [
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEINVERNALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SORRENTINI piazza San Gatto Martini",
+       "idx": 0,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "MONTAGNAREALE via Nuova",
+       "idx": 2,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "PATTI CENTRO via Trieste",
+       "idx": 3,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "PATTI SCALO FS",
+       "idx": 4,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVO"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SORRENTINI piazza San Gatto Martini",
+       "idx": 0,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "MONTAGNAREALE via Nuova",
+       "idx": 2,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "PATTI CENTRO via Trieste",
+       "idx": 3,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "PATTI SCALO FS",
+       "idx": 4,
+       "arr": "9.20",
+       "dep": "9.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SORRENTINI piazza San Gatto Martini",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "LAURELLO",
+       "idx": 1,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "MONTAGNAREALE via Nuova",
+       "idx": 2,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "PATTI CENTRO via Trieste",
+       "idx": 3,
+       "arr": "15.00",
+       "dep": "15.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEINVERNALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PATTI CENTRO via Trieste",
+       "idx": 3,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "MONTAGNAREALE via Nuova",
+       "idx": 2,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "LAURELLO",
+       "idx": 1,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "SORRENTINI piazza San Gatto Martini",
+       "idx": 0,
+       "arr": "7.20",
+       "dep": "7.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVO"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PATTI SCALO FS",
+       "idx": 4,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "PATTI CENTRO via Trieste",
+       "idx": 3,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "MONTAGNAREALE via Nuova",
+       "idx": 2,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "LAURELLO",
+       "idx": 1,
+       "arr": "8.40",
+       "dep": "8.40"
+      },
+      {
+       "stop": "SORRENTINI piazza San Gatto Martini",
+       "idx": 0,
+       "arr": "8.55",
+       "dep": "8.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PATTI SCALO FS",
+       "idx": 4,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "PATTI CENTRO via Trieste",
+       "idx": 3,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "MONTAGNAREALE via Nuova",
+       "idx": 2,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "SORRENTINI piazza San Gatto Martini",
+       "idx": 0,
+       "arr": "14.10",
+       "dep": "14.10"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

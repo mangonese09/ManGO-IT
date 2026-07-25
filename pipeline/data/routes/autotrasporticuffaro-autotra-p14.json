@@ -1,0 +1,83 @@
+{
+ "operator": "Autotrasporti Cuffaro",
+ "route_id": "autotrasporticuffaro-autotra-p14",
+ "name": "Palermo- Favara- Canicattì'",
+ "source": "AutotrasportiCuffaro__AUTOTRASP.CUFFARO_ORARI/p014.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio relazione consentite : Canicattì Palermo e Vic. E Favara Palermo e Vic."
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Capolinea di Partenza Capolinea di Arrivo",
+    "Fermata intermedia Fermata intermedia",
+    "Capolinea di Arrivo Capolinea di Partenza",
+    "SOLO IL SABATO, SOLO LA DOMENICA, ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "Capolinea di Arrivo Capolinea di Partenza",
+       "idx": 2,
+       "arr": "13.00",
+       "dep": "13.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Capolinea di Arrivo Capolinea di Partenza",
+       "idx": 2,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "19.00",
+       "dep": "19.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

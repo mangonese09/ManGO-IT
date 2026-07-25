@@ -1,0 +1,95 @@
+{
+ "operator": "Panepinto",
+ "route_id": "panepintosas-panepinto-orari-p5",
+ "name": "Castronovo di Sicilia-Prizzi - S.Stefano Q. -Bivona",
+ "source": "Panepintosas__PANEPINTO_ORARI/p005.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Castronovo d. Castronovo d.",
+    "Prizzi Prizzi",
+    "S.Stefano Q. S.Stefano Q.",
+    "Bivona Bivona"
+   ],
+   "trips": [
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "periodo"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Castronovo d. Castronovo d.",
+       "idx": 0,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Prizzi Prizzi",
+       "idx": 1,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "S.Stefano Q. S.Stefano Q.",
+       "idx": 2,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "Bivona Bivona",
+       "idx": 3,
+       "arr": "8.10",
+       "dep": "8.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "inperiodo"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Bivona Bivona",
+       "idx": 3,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "S.Stefano Q. S.Stefano Q.",
+       "idx": 2,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "Prizzi Prizzi",
+       "idx": 1,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Castronovo d. Castronovo d.",
+       "idx": 0,
+       "arr": "15.00",
+       "dep": "15.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

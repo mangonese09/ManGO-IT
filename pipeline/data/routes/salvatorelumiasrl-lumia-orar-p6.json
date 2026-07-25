@@ -1,0 +1,480 @@
+{
+ "operator": "Salvatore Lumia",
+ "route_id": "salvatorelumiasrl-lumia-orar-p6",
+ "name": "scolastico scolastico scolastico scolastico scolastico scolastico scolastico scolastico - Comunicazioni e Trasporti Dipartimento Trasporti e Comunicazioni",
+ "source": "SALVATORELUMIASRL__LUMIA_ORARI(1)/p006.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Fermate autorizzate :AGRIGENTO (bv.Bonamorone,p.za M.della Catena n.2);RIBERA(v.Circonvallazione)",
+  "Prescrizioni d'Esercizio Fermate autorizzate :AGRIGENTO (bv.Bonamorone,p.za M.della Catena n.2);RIBERA(v.Circonvallazione)"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "scolastico scolastico scolastico scolastico scolastico scolastico scolastico scolastico",
+    ":AGRIGENTO (bv.Bonamorone,p.za M.della Catena n.2);RIBERA(v.Circonvallazione)",
+    "Comunicazioni e Trasporti Dipartimento Trasporti e Comunicazioni"
+   ],
+   "trips": []
+  },
+  {
+   "stops": [
+    "ARAGONA Ist. FERMI",
+    "AGRIGENTO Q.Spinasanta",
+    "AGRIGENTO",
+    "PORTO EMPEDOCLE",
+    "DURRUELI",
+    "REALMONTE",
+    "SICULIANA",
+    "MONTALLEGRO",
+    "RIBERA",
+    "SCIACCA"
+   ],
+   "trips": [
+    {
+     "corsa": "28",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolasticoesclusosabato"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "RIBERA",
+       "idx": 8,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "MONTALLEGRO",
+       "idx": 7,
+       "arr": "13.40",
+       "dep": "13.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "30",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscolasticoinperiodo"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "RIBERA",
+       "idx": 8,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "MONTALLEGRO",
+       "idx": 7,
+       "arr": "14.35",
+       "dep": "14.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "32",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinscolasticoperiodo"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "SICULIANA",
+       "idx": 6,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "REALMONTE",
+       "idx": 5,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "DURRUELI",
+       "idx": 4,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "PORTO EMPEDOCLE",
+       "idx": 3,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "AGRIGENTO",
+       "idx": 2,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "34",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscolasticoinperiodo"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "SICULIANA",
+       "idx": 6,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "REALMONTE",
+       "idx": 5,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "DURRUELI",
+       "idx": 4,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "PORTO EMPEDOCLE",
+       "idx": 3,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "AGRIGENTO",
+       "idx": 2,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "AGRIGENTO Q.Spinasanta",
+       "idx": 1,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "36",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscolasticoinperiodo"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "REALMONTE",
+       "idx": 5,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "DURRUELI",
+       "idx": 4,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "PORTO EMPEDOCLE",
+       "idx": 3,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "AGRIGENTO",
+       "idx": 2,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "AGRIGENTO Q.Spinasanta",
+       "idx": 1,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "38",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinscolasticoperiodo"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "REALMONTE",
+       "idx": 5,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "DURRUELI",
+       "idx": 4,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "PORTO EMPEDOCLE",
+       "idx": 3,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "AGRIGENTO",
+       "idx": 2,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "40",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscolasticoinperiodo"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "REALMONTE",
+       "idx": 5,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "AGRIGENTO",
+       "idx": 2,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "42",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscolasticoinperiodo"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "REALMONTE",
+       "idx": 5,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "DURRUELI",
+       "idx": 4,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "PORTO EMPEDOCLE",
+       "idx": 3,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "AGRIGENTO",
+       "idx": 2,
+       "arr": "14.05",
+       "dep": "14.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "44",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinscolasticoperiodo"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "SICULIANA",
+       "idx": 6,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "DURRUELI",
+       "idx": 4,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "PORTO EMPEDOCLE",
+       "idx": 3,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "AGRIGENTO",
+       "idx": 2,
+       "arr": "14.20",
+       "dep": "14.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "46",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscolasticoinperiodo"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "SICULIANA",
+       "idx": 6,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "DURRUELI",
+       "idx": 4,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "PORTO EMPEDOCLE",
+       "idx": 3,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "AGRIGENTO",
+       "idx": 2,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "50",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscolasticoinperiodo"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "SCIACCA",
+       "idx": 9,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "RIBERA",
+       "idx": 8,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "PORTO EMPEDOCLE",
+       "idx": 3,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "AGRIGENTO",
+       "idx": 2,
+       "arr": "17.00",
+       "dep": "17.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "52",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinscolasticoperiodo"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "SICULIANA",
+       "idx": 6,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "REALMONTE",
+       "idx": 5,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "DURRUELI",
+       "idx": 4,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "PORTO EMPEDOCLE",
+       "idx": 3,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "AGRIGENTO",
+       "idx": 2,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "ARAGONA Ist. FERMI",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

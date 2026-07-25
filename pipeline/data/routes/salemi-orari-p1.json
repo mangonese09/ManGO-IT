@@ -1,0 +1,169 @@
+{
+ "operator": "Salemi",
+ "route_id": "salemi-orari-p1",
+ "name": "VIA CRISPI MARSALA VIA CRISPI - P.ZZA CAIROLI PALERMO P.ZZA CAIROLI",
+ "source": "SALEMI_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio DIVIETO DI TRAFFICO LOCALE SULLA TRATTA MARSALA MAZARA DEL VALLO-CASTELEVTRANO (ESTREMI COMPRESI) E VICEVERSA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "VIA CRISPI MARSALA VIA CRISPI",
+    "DEL VALLO Via Salemi A- MAZARA DEL VALLO Via Salemi",
+    "P.ZZA A- CASTELVETRANO P.ZZA",
+    "P.ZZA CAIROLI PALERMO P.ZZA CAIROLI"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "VIA CRISPI MARSALA VIA CRISPI",
+       "idx": 0,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "DEL VALLO Via Salemi A- MAZARA DEL VALLO Via Salemi",
+       "idx": 1,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "P.ZZA A- CASTELVETRANO P.ZZA",
+       "idx": 2,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "P.ZZA CAIROLI PALERMO P.ZZA CAIROLI",
+       "idx": 3,
+       "arr": "17.05",
+       "dep": "17.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "VIA CRISPI MARSALA VIA CRISPI",
+       "idx": 0,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "DEL VALLO Via Salemi A- MAZARA DEL VALLO Via Salemi",
+       "idx": 1,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "P.ZZA A- CASTELVETRANO P.ZZA",
+       "idx": 2,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "P.ZZA CAIROLI PALERMO P.ZZA CAIROLI",
+       "idx": 3,
+       "arr": "19.05",
+       "dep": "19.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "P.ZZA CAIROLI PALERMO P.ZZA CAIROLI",
+       "idx": 3,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "P.ZZA A- CASTELVETRANO P.ZZA",
+       "idx": 2,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "DEL VALLO Via Salemi A- MAZARA DEL VALLO Via Salemi",
+       "idx": 1,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "VIA CRISPI MARSALA VIA CRISPI",
+       "idx": 0,
+       "arr": "8.50",
+       "dep": "8.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "P.ZZA CAIROLI PALERMO P.ZZA CAIROLI",
+       "idx": 3,
+       "arr": "21.15",
+       "dep": "21.15"
+      },
+      {
+       "stop": "P.ZZA A- CASTELVETRANO P.ZZA",
+       "idx": 2,
+       "arr": "22.50",
+       "dep": "22.50"
+      },
+      {
+       "stop": "DEL VALLO Via Salemi A- MAZARA DEL VALLO Via Salemi",
+       "idx": 1,
+       "arr": "23.20",
+       "dep": "23.20"
+      },
+      {
+       "stop": "VIA CRISPI MARSALA VIA CRISPI",
+       "idx": 0,
+       "arr": "23.50",
+       "dep": "23.50"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,83 @@
+{
+ "operator": "Ionica",
+ "route_id": "ionicaspa-ionica-orari-p17",
+ "name": "Barracca Santa Teresa Barracca - ETC….",
+ "source": "IONICASpA__IONICA_ORARI/p017.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Divieto di servizio locale da Roccalumera a Messina e vv. estremi compresi -"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Barracca Santa Teresa Barracca",
+    "Bucalo Santa Teresa Bucalo",
+    "Furci Siculo",
+    "ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "inperiodo"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Barracca Santa Teresa Barracca",
+       "idx": 0,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "Bucalo Santa Teresa Bucalo",
+       "idx": 1,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "Furci Siculo",
+       "idx": 2,
+       "arr": "13.05",
+       "dep": "13.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "inperiodo"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Furci Siculo",
+       "idx": 2,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "Bucalo Santa Teresa Bucalo",
+       "idx": 1,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "Barracca Santa Teresa Barracca",
+       "idx": 0,
+       "arr": "13.35",
+       "dep": "13.35"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

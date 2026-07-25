@@ -1,0 +1,619 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-ct-orari-581",
+ "name": "Belpasso - Catania",
+ "source": "AST_prov._di_CT_-_ORARI/p003.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio NESSUNA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Belpasso (piazza Santa Lucia)",
+    "Borrello",
+    "Pedara",
+    "Fermata intermedia",
+    "Nicolosi (via Regione Siciliana)",
+    "Massa Annunziata (via Del Bosco)",
+    "Mascalucia (via De Gasperi)",
+    "Tremestieri (via Marconi)",
+    "San Giovanni La Punta (Ist. Polivalente)",
+    "San Giovanni La Punta (p.za Lucia Mangano)",
+    "Fermata intermedia",
+    "San Gregorio (p.za Regina Margherita)",
+    "Catania (p.za Giovanni XXIII°)"
+   ],
+   "trips": [
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Belpasso (piazza Santa Lucia)",
+       "idx": 0,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Borrello",
+       "idx": 1,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 3,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "Massa Annunziata (via Del Bosco)",
+       "idx": 5,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "Mascalucia (via De Gasperi)",
+       "idx": 6,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "Tremestieri (via Marconi)",
+       "idx": 7,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "San Giovanni La Punta (Ist. Polivalente)",
+       "idx": 8,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "San Giovanni La Punta (p.za Lucia Mangano)",
+       "idx": 9,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 10,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "Catania (p.za Giovanni XXIII°)",
+       "idx": 12,
+       "arr": "9.00",
+       "dep": "9.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Pedara",
+       "idx": 2,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 3,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Massa Annunziata (via Del Bosco)",
+       "idx": 5,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "Mascalucia (via De Gasperi)",
+       "idx": 6,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "Tremestieri (via Marconi)",
+       "idx": 7,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "San Giovanni La Punta (Ist. Polivalente)",
+       "idx": 8,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Fermata intermedia",
+       "idx": 3,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "Nicolosi (via Regione Siciliana)",
+       "idx": 4,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "Tremestieri (via Marconi)",
+       "idx": 7,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "San Giovanni La Punta (Ist. Polivalente)",
+       "idx": 8,
+       "arr": "8.20",
+       "dep": "8.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Fermata intermedia",
+       "idx": 3,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "Nicolosi (via Regione Siciliana)",
+       "idx": 4,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Tremestieri (via Marconi)",
+       "idx": 7,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "San Giovanni La Punta (Ist. Polivalente)",
+       "idx": 8,
+       "arr": "13.40",
+       "dep": "13.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Fermata intermedia",
+       "idx": 3,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Nicolosi (via Regione Siciliana)",
+       "idx": 4,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Tremestieri (via Marconi)",
+       "idx": 7,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "San Giovanni La Punta (Ist. Polivalente)",
+       "idx": 8,
+       "arr": "14.10",
+       "dep": "14.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Belpasso (piazza Santa Lucia)",
+       "idx": 0,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "Mascalucia (via De Gasperi)",
+       "idx": 6,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "Tremestieri (via Marconi)",
+       "idx": 7,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "San Giovanni La Punta (Ist. Polivalente)",
+       "idx": 8,
+       "arr": "14.20",
+       "dep": "14.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEperioindoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "San Giovanni La Punta (Ist. Polivalente)",
+       "idx": 8,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "Tremestieri (via Marconi)",
+       "idx": 7,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "Mascalucia (via De Gasperi)",
+       "idx": 6,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "Massa Annunziata (via Del Bosco)",
+       "idx": 5,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 3,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "Pedara",
+       "idx": 2,
+       "arr": "13.30",
+       "dep": "13.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Catania (p.za Giovanni XXIII°)",
+       "idx": 12,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 10,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "San Giovanni La Punta (p.za Lucia Mangano)",
+       "idx": 9,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "San Giovanni La Punta (Ist. Polivalente)",
+       "idx": 8,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "Tremestieri (via Marconi)",
+       "idx": 7,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Mascalucia (via De Gasperi)",
+       "idx": 6,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "Massa Annunziata (via Del Bosco)",
+       "idx": 5,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 3,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Borrello",
+       "idx": 1,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "Belpasso (piazza Santa Lucia)",
+       "idx": 0,
+       "arr": "13.55",
+       "dep": "13.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "San Giovanni La Punta (Ist. Polivalente)",
+       "idx": 8,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "Tremestieri (via Marconi)",
+       "idx": 7,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "Mascalucia (via De Gasperi)",
+       "idx": 6,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "Massa Annunziata (via Del Bosco)",
+       "idx": 5,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 3,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "Pedara",
+       "idx": 2,
+       "arr": "14.50",
+       "dep": "14.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "San Giovanni La Punta (Ist. Polivalente)",
+       "idx": 8,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "Tremestieri (via Marconi)",
+       "idx": 7,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "Nicolosi (via Regione Siciliana)",
+       "idx": 4,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 3,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "Borrello",
+       "idx": 1,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "Belpasso (piazza Santa Lucia)",
+       "idx": 0,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "San Giovanni La Punta (Ist. Polivalente)",
+       "idx": 8,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "Tremestieri (via Marconi)",
+       "idx": 7,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Mascalucia (via De Gasperi)",
+       "idx": 6,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "Belpasso (piazza Santa Lucia)",
+       "idx": 0,
+       "arr": "14.50",
+       "dep": "14.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "San Giovanni La Punta (Ist. Polivalente)",
+       "idx": 8,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "Tremestieri (via Marconi)",
+       "idx": 7,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Mascalucia (via De Gasperi)",
+       "idx": 6,
+       "arr": "14.35",
+       "dep": "14.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "San Giovanni La Punta (Ist. Polivalente)",
+       "idx": 8,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "Tremestieri (via Marconi)",
+       "idx": 7,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "Nicolosi (via Regione Siciliana)",
+       "idx": 4,
+       "arr": "15.20",
+       "dep": "15.20"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

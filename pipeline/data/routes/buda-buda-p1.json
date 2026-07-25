@@ -1,0 +1,371 @@
+{
+ "operator": "Buda",
+ "route_id": "buda-buda-p1",
+ "name": "0 CALATABIANO - Giarre Guardia Mangano Acireale Acicastello – Catania,",
+ "source": "Buda__BUDA/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Divieto di servizio locale, estremi compresi, sul tratto Giarre – Catania"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "0 CALATABIANO (Piazza Duomo)",
+    "PASTERIA",
+    "FIUMEFREDDO (Piazza Duomo)",
+    "GONA",
+    "MASCALI (Via Nazionale)",
+    "S.M. LA STRADA (Via RuggeroI)",
+    "GIARRE (Piazza Duomo)",
+    "TREPUNTI (Via Nazionale)",
+    "GUARDIA (Via Nazionale)",
+    "ACIREALE (Piazza Duomo)",
+    "ACICASTELLO",
+    "CATANIA 0 (via D'Amico)",
+    "Giarre Guardia Mangano Acireale Acicastello – Catania)",
+    "Giarre Guardia Mangano Acireale Acicastello – Catania,"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "0 CALATABIANO (Piazza Duomo)",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 1,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Duomo)",
+       "idx": 2,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "GONA",
+       "idx": 3,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "MASCALI (Via Nazionale)",
+       "idx": 4,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "S.M. LA STRADA (Via RuggeroI)",
+       "idx": 5,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "GIARRE (Piazza Duomo)",
+       "idx": 6,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "TREPUNTI (Via Nazionale)",
+       "idx": 7,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "GUARDIA (Via Nazionale)",
+       "idx": 8,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "ACIREALE (Piazza Duomo)",
+       "idx": 9,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "ACICASTELLO",
+       "idx": 10,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "CATANIA 0 (via D'Amico)",
+       "idx": 11,
+       "arr": "8.20",
+       "dep": "8.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "0 CALATABIANO (Piazza Duomo)",
+       "idx": 0,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 1,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Duomo)",
+       "idx": 2,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "GONA",
+       "idx": 3,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "MASCALI (Via Nazionale)",
+       "idx": 4,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "S.M. LA STRADA (Via RuggeroI)",
+       "idx": 5,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "GIARRE (Piazza Duomo)",
+       "idx": 6,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "TREPUNTI (Via Nazionale)",
+       "idx": 7,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "GUARDIA (Via Nazionale)",
+       "idx": 8,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "ACIREALE (Piazza Duomo)",
+       "idx": 9,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "ACICASTELLO",
+       "idx": 10,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "CATANIA 0 (via D'Amico)",
+       "idx": 11,
+       "arr": "15.30",
+       "dep": "15.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA 0 (via D'Amico)",
+       "idx": 11,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "ACICASTELLO",
+       "idx": 10,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "ACIREALE (Piazza Duomo)",
+       "idx": 9,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "GUARDIA (Via Nazionale)",
+       "idx": 8,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "TREPUNTI (Via Nazionale)",
+       "idx": 7,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "GIARRE (Piazza Duomo)",
+       "idx": 6,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "S.M. LA STRADA (Via RuggeroI)",
+       "idx": 5,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "MASCALI (Via Nazionale)",
+       "idx": 4,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "GONA",
+       "idx": 3,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Duomo)",
+       "idx": 2,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 1,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "0 CALATABIANO (Piazza Duomo)",
+       "idx": 0,
+       "arr": "13.55",
+       "dep": "13.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA 0 (via D'Amico)",
+       "idx": 11,
+       "arr": "17.35",
+       "dep": "17.35"
+      },
+      {
+       "stop": "ACICASTELLO",
+       "idx": 10,
+       "arr": "17.55",
+       "dep": "17.55"
+      },
+      {
+       "stop": "ACIREALE (Piazza Duomo)",
+       "idx": 9,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "GUARDIA (Via Nazionale)",
+       "idx": 8,
+       "arr": "18.15",
+       "dep": "18.15"
+      },
+      {
+       "stop": "TREPUNTI (Via Nazionale)",
+       "idx": 7,
+       "arr": "18.20",
+       "dep": "18.20"
+      },
+      {
+       "stop": "GIARRE (Piazza Duomo)",
+       "idx": 6,
+       "arr": "18.25",
+       "dep": "18.25"
+      },
+      {
+       "stop": "S.M. LA STRADA (Via RuggeroI)",
+       "idx": 5,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "MASCALI (Via Nazionale)",
+       "idx": 4,
+       "arr": "18.35",
+       "dep": "18.35"
+      },
+      {
+       "stop": "GONA",
+       "idx": 3,
+       "arr": "18.40",
+       "dep": "18.40"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Duomo)",
+       "idx": 2,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 1,
+       "arr": "18.50",
+       "dep": "18.50"
+      },
+      {
+       "stop": "0 CALATABIANO (Piazza Duomo)",
+       "idx": 0,
+       "arr": "18.55",
+       "dep": "18.55"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,145 @@
+{
+ "operator": "Ionica",
+ "route_id": "ionicaspa-ionica-orari-p20",
+ "name": "Barracca Santa Teresa Barracca - ETC….",
+ "source": "IONICASpA__IONICA_ORARI/p020.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Divieto di servizio locale da Roccalumera a Messina e vv. estremi compresi -"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Barracca Santa Teresa Barracca",
+    "Bucalo Santa Teresa Bucalo",
+    "Furci Siculo",
+    "ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "inperiodo"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Barracca Santa Teresa Barracca",
+       "idx": 0,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Bucalo Santa Teresa Bucalo",
+       "idx": 1,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "Furci Siculo",
+       "idx": 2,
+       "arr": "7.40",
+       "dep": "7.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "inperiodo"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Barracca Santa Teresa Barracca",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Bucalo Santa Teresa Bucalo",
+       "idx": 1,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "Furci Siculo",
+       "idx": 2,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "inperiodo"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Furci Siculo",
+       "idx": 2,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "Bucalo Santa Teresa Bucalo",
+       "idx": 1,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "Barracca Santa Teresa Barracca",
+       "idx": 0,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "inperiodo"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Furci Siculo",
+       "idx": 2,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Bucalo Santa Teresa Bucalo",
+       "idx": 1,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "Barracca Santa Teresa Barracca",
+       "idx": 0,
+       "arr": "14.30",
+       "dep": "14.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

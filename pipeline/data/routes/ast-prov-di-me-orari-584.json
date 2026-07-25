@@ -1,0 +1,220 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-me-orari-584",
+ "name": "MONTALBANO via Giardino - MESSINA Via Bonino",
+ "source": "AST_prov.di_ME_-_ORARI/p009.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio NESSUNA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "MONTALBANO via Giardino",
+    "SANTA BARBARA Chiesa",
+    "BASICO' via Papa Giovanni XXII",
+    "S.CONO via G. Canduci",
+    "Campogrande bv. Tripi",
+    "FURNARI via Nuova Messina",
+    "Falcone",
+    "Falcone A 20",
+    "T. DI CASTROREALE via Nazionale",
+    "Fermata intermedia",
+    "BARCELLONA via A.Gramcsi a.\\p.",
+    "OLIVARELLA bivio san Filippo",
+    "MESSINA Via Bonino"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MONTALBANO via Giardino",
+       "idx": 0,
+       "arr": "5.50",
+       "dep": "5.50"
+      },
+      {
+       "stop": "SANTA BARBARA Chiesa",
+       "idx": 1,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "BASICO' via Papa Giovanni XXII",
+       "idx": 2,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "S.CONO via G. Canduci",
+       "idx": 3,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "Campogrande bv. Tripi",
+       "idx": 4,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "FURNARI via Nuova Messina",
+       "idx": 5,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Falcone",
+       "idx": 6,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Falcone A 20",
+       "idx": 7,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 9,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "BARCELLONA via A.Gramcsi a.\\p.",
+       "idx": 10,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "OLIVARELLA bivio san Filippo",
+       "idx": 11,
+       "arr": "8.40",
+       "dep": "8.40"
+      },
+      {
+       "stop": "MESSINA Via Bonino",
+       "idx": 12,
+       "arr": "9.35",
+       "dep": "9.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MESSINA Via Bonino",
+       "idx": 12,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "OLIVARELLA bivio san Filippo",
+       "idx": 11,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "BARCELLONA via A.Gramcsi a.\\p.",
+       "idx": 10,
+       "arr": "14.05",
+       "dep": "14.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Fermata intermedia",
+       "idx": 9,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "T. DI CASTROREALE via Nazionale",
+       "idx": 8,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "FURNARI via Nuova Messina",
+       "idx": 5,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "Campogrande bv. Tripi",
+       "idx": 4,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "S.CONO via G. Canduci",
+       "idx": 3,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "BASICO' via Papa Giovanni XXII",
+       "idx": 2,
+       "arr": "15.45",
+       "dep": "15.45"
+      },
+      {
+       "stop": "SANTA BARBARA Chiesa",
+       "idx": 1,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "MONTALBANO via Giardino",
+       "idx": 0,
+       "arr": "16.15",
+       "dep": "16.15"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

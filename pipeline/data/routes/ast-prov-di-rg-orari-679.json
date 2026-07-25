@@ -1,0 +1,103 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-rg-orari-679",
+ "name": "Santa Croce C. - Modica",
+ "source": "AST_prov._di_RG_-_ORARI/p024.json",
+ "prescriptions": [
+  "Prescrizioni DIVIETO DI SERVIZZIO LOCALE ESTREMI INCLUSI FRA SANTA CROCE CAMERINA E MARINA DI RAGUSA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Santa Croce C. (p.za Quasimodo) Capolinea",
+    "Marina Ragusa (p.le Mediterraneo)",
+    "Donnalucata (via Pirandello)",
+    "Scicli (Largo Olimpiadi Iungi)",
+    "Scicli (Largo Gramsci)",
+    "Modica (Terminal p.le Borsellino) Capolinea"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "KMFERIALEFERIALEESTIVOINVERNALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Santa Croce C. (p.za Quasimodo) Capolinea",
+       "idx": 0,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "Marina Ragusa (p.le Mediterraneo)",
+       "idx": 1,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "Donnalucata (via Pirandello)",
+       "idx": 2,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Scicli (Largo Olimpiadi Iungi)",
+       "idx": 3,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Scicli (Largo Gramsci)",
+       "idx": 4,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "Modica (Terminal p.le Borsellino) Capolinea",
+       "idx": 5,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "KMFERIALEFERIALEINVERNALEESTIVO"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Scicli (Largo Gramsci)",
+       "idx": 4,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "Donnalucata (via Pirandello)",
+       "idx": 2,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "Marina Ragusa (p.le Mediterraneo)",
+       "idx": 1,
+       "arr": "15.25",
+       "dep": "15.25"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

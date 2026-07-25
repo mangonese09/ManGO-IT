@@ -1,0 +1,195 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-pa-orari-713",
+ "name": "Prizzi via Liberta - Corleone p.V.Emanuele",
+ "source": "AST_prov._di_PA_-_ORARI/p024.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio divieto di servizio locale Chiusa Sclafani -Corleone estremi compresi e divieto di servizio fra i comuni compresi in tale tratta , Corleone escluso, con Palermo"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Prizzi via Liberta",
+    "Palazzo Adriano pzz.a Umberto I",
+    "Chiusa Sclafani via Ungheria",
+    "Bisacquino via Orsi",
+    "Campofiorito via Gramsci",
+    "Corleone p.V.Emanuele"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Prizzi via Liberta",
+       "idx": 0,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "Palazzo Adriano pzz.a Umberto I",
+       "idx": 1,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "Chiusa Sclafani via Ungheria",
+       "idx": 2,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Bisacquino via Orsi",
+       "idx": 3,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "Campofiorito via Gramsci",
+       "idx": 4,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "Corleone p.V.Emanuele",
+       "idx": 5,
+       "arr": "8.20",
+       "dep": "8.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Chiusa Sclafani via Ungheria",
+       "idx": 2,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "Bisacquino via Orsi",
+       "idx": 3,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Campofiorito via Gramsci",
+       "idx": 4,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Corleone p.V.Emanuele",
+       "idx": 5,
+       "arr": "14.30",
+       "dep": "14.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Corleone p.V.Emanuele",
+       "idx": 5,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "Campofiorito via Gramsci",
+       "idx": 4,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "Bisacquino via Orsi",
+       "idx": 3,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "Chiusa Sclafani via Ungheria",
+       "idx": 2,
+       "arr": "13.30",
+       "dep": "13.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Corleone p.V.Emanuele",
+       "idx": 5,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Campofiorito via Gramsci",
+       "idx": 4,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Bisacquino via Orsi",
+       "idx": 3,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Chiusa Sclafani via Ungheria",
+       "idx": 2,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "Palazzo Adriano pzz.a Umberto I",
+       "idx": 1,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "Prizzi via Liberta",
+       "idx": 0,
+       "arr": "15.30",
+       "dep": "15.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

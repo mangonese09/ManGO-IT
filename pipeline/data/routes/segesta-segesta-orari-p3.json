@@ -1,0 +1,115 @@
+{
+ "operator": "Segesta",
+ "route_id": "segesta-segesta-orari-p3",
+ "name": "ALCAMO Piano S. Maria - STAZIONE F.S. ALCAMO DIR.NE",
+ "source": "Segesta__SEGESTA_ORARI/p003.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio nessuna"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "ALCAMO Piano S. Maria",
+    "ALCAMO Autostazione",
+    "SETTERINO",
+    "SS. 113",
+    "SICILGESSO",
+    "STAZIONE F.S. ALCAMO DIR.NE"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "ferialevenerdìdalagostolunedìal"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ALCAMO Piano S. Maria",
+       "idx": 0,
+       "arr": "5.30",
+       "dep": "5.30"
+      },
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 1,
+       "arr": "5.32",
+       "dep": "5.32"
+      },
+      {
+       "stop": "SETTERINO",
+       "idx": 2,
+       "arr": "5.40",
+       "dep": "5.40"
+      },
+      {
+       "stop": "SS. 113",
+       "idx": 3,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "SICILGESSO",
+       "idx": 4,
+       "arr": "5.45",
+       "dep": "5.45"
+      },
+      {
+       "stop": "STAZIONE F.S. ALCAMO DIR.NE",
+       "idx": 5,
+       "arr": "5.50",
+       "dep": "5.50"
+      }
+     ],
+     "valid": false
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "ferialevenerdìdalagostolunedìal"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "STAZIONE F.S. ALCAMO DIR.NE",
+       "idx": 5,
+       "arr": "5.50",
+       "dep": "5.50"
+      },
+      {
+       "stop": "SICILGESSO",
+       "idx": 4,
+       "arr": "5.55",
+       "dep": "5.55"
+      },
+      {
+       "stop": "SETTERINO",
+       "idx": 2,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 1,
+       "arr": "6.08",
+       "dep": "6.08"
+      },
+      {
+       "stop": "ALCAMO Piano S. Maria",
+       "idx": 0,
+       "arr": "6.10",
+       "dep": "6.10"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

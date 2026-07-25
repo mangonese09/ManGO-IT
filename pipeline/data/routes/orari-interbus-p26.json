@@ -1,0 +1,159 @@
+{
+ "operator": "Interbus",
+ "route_id": "orari-interbus-p26",
+ "name": "Regalbuto - Agira - Musa - Nicosia",
+ "source": "ORARI_INTERBUS/p026.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "REGALBUTO P.zza Matteotti",
+    "Garibaldi AGIRA Circonvallazione Largo",
+    "Matteotti GAGLIANO Via Roma, 63/P.zza",
+    "CONTRADA MUSA",
+    "BV. SAN GIACOMO",
+    "NICOSIA P.zza S. Francesco di Paola"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "FERIALEnelperiodoscolasticoesclusosabato-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Garibaldi AGIRA Circonvallazione Largo",
+       "idx": 1,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "Matteotti GAGLIANO Via Roma, 63/P.zza",
+       "idx": 2,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "CONTRADA MUSA",
+       "idx": 3,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "BV. SAN GIACOMO",
+       "idx": 4,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "NICOSIA P.zza S. Francesco di Paola",
+       "idx": 5,
+       "arr": "7.35",
+       "dep": "7.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALESabatonelperiodoscolastico-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Garibaldi AGIRA Circonvallazione Largo",
+       "idx": 1,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "Matteotti GAGLIANO Via Roma, 63/P.zza",
+       "idx": 2,
+       "arr": "6.55",
+       "dep": "6.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "nelscolasticoesclusosabato-"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "NICOSIA P.zza S. Francesco di Paola",
+       "idx": 5,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "BV. SAN GIACOMO",
+       "idx": 4,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "CONTRADA MUSA",
+       "idx": 3,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "Matteotti GAGLIANO Via Roma, 63/P.zza",
+       "idx": 2,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "Garibaldi AGIRA Circonvallazione Largo",
+       "idx": 1,
+       "arr": "15.05",
+       "dep": "15.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALESabatonelperiodoscolastico-"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Matteotti GAGLIANO Via Roma, 63/P.zza",
+       "idx": 2,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "Garibaldi AGIRA Circonvallazione Largo",
+       "idx": 1,
+       "arr": "15.05",
+       "dep": "15.05"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

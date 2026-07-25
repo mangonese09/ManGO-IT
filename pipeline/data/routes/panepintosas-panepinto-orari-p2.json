@@ -1,0 +1,82 @@
+{
+ "operator": "Panepinto",
+ "route_id": "panepintosas-panepinto-orari-p2",
+ "name": "Cammarata-Mussomeli",
+ "source": "Panepintosas__PANEPINTO_ORARI/p002.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Nessuna"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "CAMMARATA CAMMARATA",
+    "S.GIOV.GEMINI S.GIOV.GEMINI",
+    "MUSSOMELI MUSSOMELI"
+   ],
+   "trips": [
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "SCOL."
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CAMMARATA CAMMARATA",
+       "idx": 0,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "S.GIOV.GEMINI S.GIOV.GEMINI",
+       "idx": 1,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "MUSSOMELI MUSSOMELI",
+       "idx": 2,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "SCOL."
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MUSSOMELI MUSSOMELI",
+       "idx": 2,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "S.GIOV.GEMINI S.GIOV.GEMINI",
+       "idx": 1,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "CAMMARATA CAMMARATA",
+       "idx": 0,
+       "arr": "14.40",
+       "dep": "14.40"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

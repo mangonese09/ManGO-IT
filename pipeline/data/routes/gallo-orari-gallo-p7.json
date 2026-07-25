@@ -1,0 +1,119 @@
+{
+ "operator": "Gallo",
+ "route_id": "gallo-orari-gallo-p7",
+ "name": "MENFI-CASTELVETRANO",
+ "source": "Gallo__ORARI_GALLO/p007.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio - Rientro da Castelvetrano via SS119 - Sv. S. Ninfa - A/29 - Sv. Castelvetrano - SS115 - Menfi - N.O. prot. n.833/U.O.C./Servizio1 del 05/11/2004"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "MENFI (VIALE MICHELANGELO)",
+    "CASTELVETRANO"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MENFI (VIALE MICHELANGELO)",
+       "idx": 0,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "CASTELVETRANO",
+       "idx": 1,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MENFI (VIALE MICHELANGELO)",
+       "idx": 0,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "CASTELVETRANO",
+       "idx": 1,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CASTELVETRANO",
+       "idx": 1,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "MENFI (VIALE MICHELANGELO)",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CASTELVETRANO",
+       "idx": 1,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "MENFI (VIALE MICHELANGELO)",
+       "idx": 0,
+       "arr": "14.50",
+       "dep": "14.50"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

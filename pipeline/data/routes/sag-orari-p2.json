@@ -1,0 +1,764 @@
+{
+ "operator": "Sag",
+ "route_id": "sag-orari-p2",
+ "name": "GIARRE - RIPOSTO",
+ "source": "SAG_ORARI/p002.json",
+ "prescriptions": [
+  "Prescrizioni NESSUNA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "GIARRE",
+    "RIPOSTO"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 0,
+       "arr": "5.50",
+       "dep": "5.50"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 1,
+       "arr": "6.00",
+       "dep": "6.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialedal15/09al10/06"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 0,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 1,
+       "arr": "6.20",
+       "dep": "6.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Ferialedal11-6al14-9"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 0,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 1,
+       "arr": "6.50",
+       "dep": "6.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialedal15/09al10/06"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 0,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 1,
+       "arr": "7.00",
+       "dep": "7.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Ferialedal11-6al14-9"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 1,
+       "arr": "8.10",
+       "dep": "8.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 0,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 1,
+       "arr": "10.10",
+       "dep": "10.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialedal15/09al10/06"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 0,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 1,
+       "arr": "13.30",
+       "dep": "13.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Ferialedal11-6al14-9"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 0,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 1,
+       "arr": "12.10",
+       "dep": "12.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 0,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 1,
+       "arr": "13.50",
+       "dep": "13.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialedal15/09al10/06"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 0,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 1,
+       "arr": "14.00",
+       "dep": "14.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Ferialedal11-6al14-9"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 0,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 1,
+       "arr": "15.40",
+       "dep": "15.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 0,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 1,
+       "arr": "18.55",
+       "dep": "18.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialedal15/09al10/06"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 0,
+       "arr": "5.50",
+       "dep": "5.50"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 1,
+       "arr": "6.00",
+       "dep": "6.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 0,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 1,
+       "arr": "6.20",
+       "dep": "6.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Ferialedal11-6al14-9"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 0,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 1,
+       "arr": "6.50",
+       "dep": "6.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Ferialedal11-6al14-9"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 0,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 1,
+       "arr": "7.00",
+       "dep": "7.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialedal15/09al10/06"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 1,
+       "arr": "8.10",
+       "dep": "8.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 0,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 1,
+       "arr": "10.10",
+       "dep": "10.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 0,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 1,
+       "arr": "13.30",
+       "dep": "13.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 0,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 1,
+       "arr": "12.10",
+       "dep": "12.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 0,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 1,
+       "arr": "13.50",
+       "dep": "13.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 0,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 1,
+       "arr": "14.00",
+       "dep": "14.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "RIPOSTO",
+    "GIARRE",
+    "ROVETTAZZO"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "ROVETTAZZO",
+       "idx": 2,
+       "arr": "8.35",
+       "dep": "8.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Ferialedal11-6al14-9"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "12.25",
+       "dep": "12.25"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "ROVETTAZZO",
+       "idx": 2,
+       "arr": "12.50",
+       "dep": "12.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Ferialedal11-6al14-9"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "ROVETTAZZO",
+       "idx": 2,
+       "arr": "12.25",
+       "dep": "12.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "ROVETTAZZO",
+       "idx": 2,
+       "arr": "8.35",
+       "dep": "8.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "12.25",
+       "dep": "12.25"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "ROVETTAZZO",
+       "idx": 2,
+       "arr": "12.50",
+       "dep": "12.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "ROVETTAZZO",
+       "idx": 2,
+       "arr": "12.25",
+       "dep": "12.25"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

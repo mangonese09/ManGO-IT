@@ -1,0 +1,183 @@
+{
+ "operator": "Etna Trasporti",
+ "route_id": "etna-trasporti-orari-2-p5",
+ "name": "Piazza Armerina - Catania diramazione Raddusa-Ramacca",
+ "source": "ETNA_TRASPORTI_ORARI_2/p005.json",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "PIAZZA ARMERINA (V.le G. Ciancio-P.zza Marescalchi)",
+    "BIVIO BELLIA",
+    "AIDONE (Piazza Cultreri)",
+    "RADDUSA (Piazza Umberto I°)",
+    "RAMACCA (Piazza Ten. S. Di Fazio Caserma Carabinieri)",
+    "SIGONELLA NAF 1",
+    "AEROPORTO CATANIA",
+    "CATANIA (Terminal Bus Via Archimede)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEdaLunedìaVenerdìperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RADDUSA (Piazza Umberto I°)",
+       "idx": 3,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "RAMACCA (Piazza Ten. S. Di Fazio Caserma Carabinieri)",
+       "idx": 4,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "SIGONELLA NAF 1",
+       "idx": 5,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "AEROPORTO CATANIA",
+       "idx": 6,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "CATANIA (Terminal Bus Via Archimede)",
+       "idx": 7,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PIAZZA ARMERINA (V.le G. Ciancio-P.zza Marescalchi)",
+       "idx": 0,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "BIVIO BELLIA",
+       "idx": 1,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "AIDONE (Piazza Cultreri)",
+       "idx": 2,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "RADDUSA (Piazza Umberto I°)",
+       "idx": 3,
+       "arr": "14.30",
+       "dep": "14.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "RADDUSA (Piazza Umberto I°)",
+       "idx": 3,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "AIDONE (Piazza Cultreri)",
+       "idx": 2,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "BIVIO BELLIA",
+       "idx": 1,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (V.le G. Ciancio-P.zza Marescalchi)",
+       "idx": 0,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEdaLunedìaVenerdìperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Terminal Bus Via Archimede)",
+       "idx": 7,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "AEROPORTO CATANIA",
+       "idx": 6,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "SIGONELLA NAF 1",
+       "idx": 5,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "RAMACCA (Piazza Ten. S. Di Fazio Caserma Carabinieri)",
+       "idx": 4,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "RADDUSA (Piazza Umberto I°)",
+       "idx": 3,
+       "arr": "16.00",
+       "dep": "16.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

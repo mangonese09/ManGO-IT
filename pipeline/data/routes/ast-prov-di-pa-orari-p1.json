@@ -1,0 +1,281 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-pa-orari-p1",
+ "name": "Altavilla via Loreto - Capolinea 0",
+ "source": "AST_prov._di_PA_-_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Divieto di servizio locale fra Termini Alta-Termini stazione f.s. e viceversa."
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Altavilla via Loreto",
+    "S.Nicola l'Arena corso Umberto",
+    "Trabia via la Masa",
+    "Capolinea 0"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALESCOLASTICA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Altavilla via Loreto",
+       "idx": 0,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "S.Nicola l'Arena corso Umberto",
+       "idx": 1,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Trabia via la Masa",
+       "idx": 2,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "Capolinea 0",
+       "idx": 3,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALESCOLASTICA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Trabia via la Masa",
+       "idx": 2,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "Capolinea 0",
+       "idx": 3,
+       "arr": "8.20",
+       "dep": "8.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "S.Nicola l'Arena corso Umberto",
+       "idx": 1,
+       "arr": "10.15",
+       "dep": "10.15"
+      },
+      {
+       "stop": "Trabia via la Masa",
+       "idx": 2,
+       "arr": "10.25",
+       "dep": "10.25"
+      },
+      {
+       "stop": "Capolinea 0",
+       "idx": 3,
+       "arr": "10.55",
+       "dep": "10.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "S.Nicola l'Arena corso Umberto",
+       "idx": 1,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "Trabia via la Masa",
+       "idx": 2,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "Capolinea 0",
+       "idx": 3,
+       "arr": "13.25",
+       "dep": "13.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALESCOLASTICA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Capolinea 0",
+       "idx": 3,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "Trabia via la Masa",
+       "idx": 2,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "S.Nicola l'Arena corso Umberto",
+       "idx": 1,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "Altavilla via Loreto",
+       "idx": 0,
+       "arr": "9.25",
+       "dep": "9.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Capolinea 0",
+       "idx": 3,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "Trabia via la Masa",
+       "idx": 2,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "S.Nicola l'Arena corso Umberto",
+       "idx": 1,
+       "arr": "10.10",
+       "dep": "10.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Capolinea 0",
+       "idx": 3,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "Trabia via la Masa",
+       "idx": 2,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "S.Nicola l'Arena corso Umberto",
+       "idx": 1,
+       "arr": "12.40",
+       "dep": "12.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALESCOLASTICA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Capolinea 0",
+       "idx": 3,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Trabia via la Masa",
+       "idx": 2,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "S.Nicola l'Arena corso Umberto",
+       "idx": 1,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "Altavilla via Loreto",
+       "idx": 0,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

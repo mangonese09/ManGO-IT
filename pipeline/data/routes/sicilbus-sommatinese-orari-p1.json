@@ -1,0 +1,119 @@
+{
+ "operator": "Sicilbus",
+ "route_id": "sicilbus-sommatinese-orari-p1",
+ "name": "Gibilmanna - Gratteri",
+ "source": "SICILBUS__SOMMATINESE_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Divieto di servizio locale nel tratto compreso tra bivio Lascari e Palermo, estremi compresi"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Gibilmanna (Piazzale del Santuario)",
+    "Gratteri (Piazza Umberto) 0"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Gibilmanna (Piazzale del Santuario)",
+       "idx": 0,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "Gratteri (Piazza Umberto) 0",
+       "idx": 1,
+       "arr": "9.30",
+       "dep": "9.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Gibilmanna (Piazzale del Santuario)",
+       "idx": 0,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "Gratteri (Piazza Umberto) 0",
+       "idx": 1,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Gratteri (Piazza Umberto) 0",
+       "idx": 1,
+       "arr": "06.50",
+       "dep": "06.50"
+      },
+      {
+       "stop": "Gibilmanna (Piazzale del Santuario)",
+       "idx": 0,
+       "arr": "07.05",
+       "dep": "07.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Gratteri (Piazza Umberto) 0",
+       "idx": 1,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "Gibilmanna (Piazzale del Santuario)",
+       "idx": 0,
+       "arr": "16.15",
+       "dep": "16.15"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

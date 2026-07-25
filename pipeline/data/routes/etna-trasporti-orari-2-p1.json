@@ -1,0 +1,273 @@
+{
+ "operator": "Etna Trasporti",
+ "route_id": "etna-trasporti-orari-2-p1",
+ "name": "PIETRAPERZIA - AEROPORTO COMISO",
+ "source": "ETNA_TRASPORTI_ORARI_2/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "PIETRAPERZIA (Autostazione Via S.croce)",
+    "BARRAFRANCA (Via Campania, 8)",
+    "MAZZARINO (Piazza Gesualdo)",
+    "BUTERA (Piazza Sicilia)",
+    "BUTERA (Piazza Dante)",
+    "GELA (Piazza Stazione Fs)",
+    "VITTORIA (Piazza Stazione Fs)",
+    "AEROPORTO COMISO (V. Magliocco)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEdalLunedìaVenerdìinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PIETRAPERZIA (Autostazione Via S.croce)",
+       "idx": 0,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "BARRAFRANCA (Via Campania, 8)",
+       "idx": 1,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "MAZZARINO (Piazza Gesualdo)",
+       "idx": 2,
+       "arr": "6.45",
+       "dep": "6.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEdalLunedìaVenerdìinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "BUTERA (Piazza Sicilia)",
+       "idx": 3,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "BUTERA (Piazza Dante)",
+       "idx": 4,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "GELA (Piazza Stazione Fs)",
+       "idx": 5,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERAGIORNALIERA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GELA (Piazza Stazione Fs)",
+       "idx": 5,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "VITTORIA (Piazza Stazione Fs)",
+       "idx": 6,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "AEROPORTO COMISO (V. Magliocco)",
+       "idx": 7,
+       "arr": "8.35",
+       "dep": "8.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GELA (Piazza Stazione Fs)",
+       "idx": 5,
+       "arr": "17.15",
+       "dep": "17.15"
+      },
+      {
+       "stop": "VITTORIA (Piazza Stazione Fs)",
+       "idx": 6,
+       "arr": "17.50",
+       "dep": "17.50"
+      },
+      {
+       "stop": "AEROPORTO COMISO (V. Magliocco)",
+       "idx": 7,
+       "arr": "18.05",
+       "dep": "18.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "AEROPORTO COMISO (V. Magliocco)",
+       "idx": 7,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "VITTORIA (Piazza Stazione Fs)",
+       "idx": 6,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "GELA (Piazza Stazione Fs)",
+       "idx": 5,
+       "arr": "12.45",
+       "dep": "12.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEdalLunedìaVenerdìinperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "GELA (Piazza Stazione Fs)",
+       "idx": 5,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "BUTERA (Piazza Dante)",
+       "idx": 4,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "BUTERA (Piazza Sicilia)",
+       "idx": 3,
+       "arr": "14.40",
+       "dep": "14.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEdalLunedìaVenerdìinperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MAZZARINO (Piazza Gesualdo)",
+       "idx": 2,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "BARRAFRANCA (Via Campania, 8)",
+       "idx": 1,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "PIETRAPERZIA (Autostazione Via S.croce)",
+       "idx": 0,
+       "arr": "15.55",
+       "dep": "15.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "AEROPORTO COMISO (V. Magliocco)",
+       "idx": 7,
+       "arr": "19.15",
+       "dep": "19.15"
+      },
+      {
+       "stop": "VITTORIA (Piazza Stazione Fs)",
+       "idx": 6,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "GELA (Piazza Stazione Fs)",
+       "idx": 5,
+       "arr": "20.05",
+       "dep": "20.05"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

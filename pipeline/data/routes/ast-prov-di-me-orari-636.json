@@ -1,0 +1,539 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-me-orari-636",
+ "name": "SANTA LUCIA DEL MELA via Ungaretti - MILAZZO Molo Marullo",
+ "source": "AST_prov.di_ME_-_ORARI/p007.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "SANTA LUCIA DEL MELA via Ungaretti",
+    "SAN FILIPPO DEL MELA corso G.Garibaldi",
+    "OLIVARELLA via Nazionale",
+    "MILAZZO Molo Marullo"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SANTA LUCIA DEL MELA via Ungaretti",
+       "idx": 0,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "SAN FILIPPO DEL MELA corso G.Garibaldi",
+       "idx": 1,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale",
+       "idx": 2,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "MILAZZO Molo Marullo",
+       "idx": 3,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ferialescolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SANTA LUCIA DEL MELA via Ungaretti",
+       "idx": 0,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "SAN FILIPPO DEL MELA corso G.Garibaldi",
+       "idx": 1,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale",
+       "idx": 2,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "MILAZZO Molo Marullo",
+       "idx": 3,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SANTA LUCIA DEL MELA via Ungaretti",
+       "idx": 0,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "SAN FILIPPO DEL MELA corso G.Garibaldi",
+       "idx": 1,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale",
+       "idx": 2,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "MILAZZO Molo Marullo",
+       "idx": 3,
+       "arr": "9.30",
+       "dep": "9.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SANTA LUCIA DEL MELA via Ungaretti",
+       "idx": 0,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "SAN FILIPPO DEL MELA corso G.Garibaldi",
+       "idx": 1,
+       "arr": "12.15",
+       "dep": "12.15"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale",
+       "idx": 2,
+       "arr": "12.20",
+       "dep": "12.20"
+      },
+      {
+       "stop": "MILAZZO Molo Marullo",
+       "idx": 3,
+       "arr": "12.35",
+       "dep": "12.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SANTA LUCIA DEL MELA via Ungaretti",
+       "idx": 0,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "SAN FILIPPO DEL MELA corso G.Garibaldi",
+       "idx": 1,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale",
+       "idx": 2,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "MILAZZO Molo Marullo",
+       "idx": 3,
+       "arr": "13.50",
+       "dep": "13.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ferialescolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SANTA LUCIA DEL MELA via Ungaretti",
+       "idx": 0,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "SAN FILIPPO DEL MELA corso G.Garibaldi",
+       "idx": 1,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale",
+       "idx": 2,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "MILAZZO Molo Marullo",
+       "idx": 3,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ferialescolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SANTA LUCIA DEL MELA via Ungaretti",
+       "idx": 0,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "SAN FILIPPO DEL MELA corso G.Garibaldi",
+       "idx": 1,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale",
+       "idx": 2,
+       "arr": "15.45",
+       "dep": "15.45"
+      },
+      {
+       "stop": "MILAZZO Molo Marullo",
+       "idx": 3,
+       "arr": "16.00",
+       "dep": "16.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MILAZZO Molo Marullo",
+       "idx": 3,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale",
+       "idx": 2,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "SAN FILIPPO DEL MELA corso G.Garibaldi",
+       "idx": 1,
+       "arr": "8.35",
+       "dep": "8.35"
+      },
+      {
+       "stop": "SANTA LUCIA DEL MELA via Ungaretti",
+       "idx": 0,
+       "arr": "8.45",
+       "dep": "8.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MILAZZO Molo Marullo",
+       "idx": 3,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale",
+       "idx": 2,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "SAN FILIPPO DEL MELA corso G.Garibaldi",
+       "idx": 1,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "SANTA LUCIA DEL MELA via Ungaretti",
+       "idx": 0,
+       "arr": "12.00",
+       "dep": "12.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MILAZZO Molo Marullo",
+       "idx": 3,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale",
+       "idx": 2,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "SAN FILIPPO DEL MELA corso G.Garibaldi",
+       "idx": 1,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "SANTA LUCIA DEL MELA via Ungaretti",
+       "idx": 0,
+       "arr": "13.15",
+       "dep": "13.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeinvernale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MILAZZO Molo Marullo",
+       "idx": 3,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale",
+       "idx": 2,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "SAN FILIPPO DEL MELA corso G.Garibaldi",
+       "idx": 1,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "SANTA LUCIA DEL MELA via Ungaretti",
+       "idx": 0,
+       "arr": "13.45",
+       "dep": "13.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ferialescolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MILAZZO Molo Marullo",
+       "idx": 3,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale",
+       "idx": 2,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "SAN FILIPPO DEL MELA corso G.Garibaldi",
+       "idx": 1,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "SANTA LUCIA DEL MELA via Ungaretti",
+       "idx": 0,
+       "arr": "14.10",
+       "dep": "14.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MILAZZO Molo Marullo",
+       "idx": 3,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale",
+       "idx": 2,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "SAN FILIPPO DEL MELA corso G.Garibaldi",
+       "idx": 1,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "SANTA LUCIA DEL MELA via Ungaretti",
+       "idx": 0,
+       "arr": "14.30",
+       "dep": "14.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MILAZZO Molo Marullo",
+       "idx": 3,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale",
+       "idx": 2,
+       "arr": "17.55",
+       "dep": "17.55"
+      },
+      {
+       "stop": "SAN FILIPPO DEL MELA corso G.Garibaldi",
+       "idx": 1,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "SANTA LUCIA DEL MELA via Ungaretti",
+       "idx": 0,
+       "arr": "18.05",
+       "dep": "18.05"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

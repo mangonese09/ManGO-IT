@@ -1,0 +1,2232 @@
+{
+ "operator": "Interbus",
+ "route_id": "orari-interbus-p11",
+ "name": "Trappitello - Recanati - Taormina",
+ "source": "ORARI_INTERBUS/p011.json",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "TRAPPITELLO Via Zanchi",
+    "CHIANCHITTA",
+    "NAXOS (Caesar Palace)",
+    "Bv. Recanati",
+    "RECANATI Terminal Bus",
+    "GIARDINI (Schisò)",
+    "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+    "GIARDINI F.S.",
+    "Capo Taormina",
+    "TAORMINA Via Pirandello"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdal1164//906al-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "6.56",
+       "dep": "6.56"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "7.05",
+       "dep": "7.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPPITELLO Via Zanchi",
+       "idx": 0,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 1,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "NAXOS (Caesar Palace)",
+       "idx": 2,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "Bv. Recanati",
+       "idx": 3,
+       "arr": "8.29",
+       "dep": "8.29"
+      },
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "8.40",
+       "dep": "8.40"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "8.41",
+       "dep": "8.41"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "8.50",
+       "dep": "8.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdal1164//906al"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPPITELLO Via Zanchi",
+       "idx": 0,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 1,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "NAXOS (Caesar Palace)",
+       "idx": 2,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "Bv. Recanati",
+       "idx": 3,
+       "arr": "8.29",
+       "dep": "8.29"
+      },
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "8.40",
+       "dep": "8.40"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "8.41",
+       "dep": "8.41"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "8.50",
+       "dep": "8.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE15/6adlal15/09-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "8.40",
+       "dep": "8.40"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "8.41",
+       "dep": "8.41"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "8.50",
+       "dep": "8.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "lFERIALE-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "GIARDINI (Schisò)",
+       "idx": 5,
+       "arr": "10.05",
+       "dep": "10.05"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "10.10",
+       "dep": "10.10"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "10.11",
+       "dep": "10.11"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "10.15",
+       "dep": "10.15"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "10.20",
+       "dep": "10.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FESdTalIV1A°/4al15/09-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "GIARDINI (Schisò)",
+       "idx": 5,
+       "arr": "10.05",
+       "dep": "10.05"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "10.10",
+       "dep": "10.10"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "10.11",
+       "dep": "10.11"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "10.15",
+       "dep": "10.15"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "10.20",
+       "dep": "10.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "13",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdal15/6al15/09-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "GIARDINI (Schisò)",
+       "idx": 5,
+       "arr": "11.05",
+       "dep": "11.05"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "11.11",
+       "dep": "11.11"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "11.15",
+       "dep": "11.15"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "11.20",
+       "dep": "11.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "15",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEldal1164//906al"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPPITELLO Via Zanchi",
+       "idx": 0,
+       "arr": "11.15",
+       "dep": "11.15"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 1,
+       "arr": "11.20",
+       "dep": "11.20"
+      },
+      {
+       "stop": "NAXOS (Caesar Palace)",
+       "idx": 2,
+       "arr": "11.25",
+       "dep": "11.25"
+      },
+      {
+       "stop": "Bv. Recanati",
+       "idx": 3,
+       "arr": "11.29",
+       "dep": "11.29"
+      },
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "11.40",
+       "dep": "11.40"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "11.41",
+       "dep": "11.41"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "11.50",
+       "dep": "11.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "17",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE15/6adlal15/09"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPPITELLO Via Zanchi",
+       "idx": 0,
+       "arr": "11.15",
+       "dep": "11.15"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 1,
+       "arr": "11.20",
+       "dep": "11.20"
+      },
+      {
+       "stop": "NAXOS (Caesar Palace)",
+       "idx": 2,
+       "arr": "11.25",
+       "dep": "11.25"
+      },
+      {
+       "stop": "Bv. Recanati",
+       "idx": 3,
+       "arr": "11.29",
+       "dep": "11.29"
+      },
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "11.40",
+       "dep": "11.40"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "11.41",
+       "dep": "11.41"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "11.50",
+       "dep": "11.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "19",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEl1°/4aldal31/10-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "GIARDINI (Schisò)",
+       "idx": 5,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "12.11",
+       "dep": "12.11"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "12.15",
+       "dep": "12.15"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "12.20",
+       "dep": "12.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "21",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "lFESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPPITELLO Via Zanchi",
+       "idx": 0,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 1,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "NAXOS (Caesar Palace)",
+       "idx": 2,
+       "arr": "11.55",
+       "dep": "11.55"
+      },
+      {
+       "stop": "Bv. Recanati",
+       "idx": 3,
+       "arr": "11.59",
+       "dep": "11.59"
+      },
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "GIARDINI (Schisò)",
+       "idx": 5,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "12.11",
+       "dep": "12.11"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "12.15",
+       "dep": "12.15"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "12.20",
+       "dep": "12.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "23",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdal1164//906al-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "13.41",
+       "dep": "13.41"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "13.50",
+       "dep": "13.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "25",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdal1164//90a6l"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPPITELLO Via Zanchi",
+       "idx": 0,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 1,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "NAXOS (Caesar Palace)",
+       "idx": 2,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "Bv. Recanati",
+       "idx": 3,
+       "arr": "13.59",
+       "dep": "13.59"
+      },
+      {
+       "stop": "GIARDINI (Schisò)",
+       "idx": 5,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "14.11",
+       "dep": "14.11"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "14.20",
+       "dep": "14.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "27",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE15/6aldal15/09-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "GIARDINI (Schisò)",
+       "idx": 5,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "14.11",
+       "dep": "14.11"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "14.20",
+       "dep": "14.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "29",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIlERAda3l11//088al-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "GIARDINI (Schisò)",
+       "idx": 5,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "15.11",
+       "dep": "15.11"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "15.20",
+       "dep": "15.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "31",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "IFESdTaIlV1A°/4al31/10"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPPITELLO Via Zanchi",
+       "idx": 0,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 1,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "NAXOS (Caesar Palace)",
+       "idx": 2,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "Bv. Recanati",
+       "idx": 3,
+       "arr": "15.29",
+       "dep": "15.29"
+      },
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "15.41",
+       "dep": "15.41"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "15.45",
+       "dep": "15.45"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "15.50",
+       "dep": "15.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "33",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE1°/4aldal31/10"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPPITELLO Via Zanchi",
+       "idx": 0,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 1,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "NAXOS (Caesar Palace)",
+       "idx": 2,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "Bv. Recanati",
+       "idx": 3,
+       "arr": "15.29",
+       "dep": "15.29"
+      },
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "15.41",
+       "dep": "15.41"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "15.45",
+       "dep": "15.45"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "15.50",
+       "dep": "15.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "35",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALElinperiodosconlaosntico-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "GIARDINI (Schisò)",
+       "idx": 5,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "16.11",
+       "dep": "16.11"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "16.20",
+       "dep": "16.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "37",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVAdal1°/4al15/09-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "GIARDINI (Schisò)",
+       "idx": 5,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "16.11",
+       "dep": "16.11"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "16.20",
+       "dep": "16.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "39",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE15/6aldal15/09"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPPITELLO Via Zanchi",
+       "idx": 0,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 1,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "NAXOS (Caesar Palace)",
+       "idx": 2,
+       "arr": "16.25",
+       "dep": "16.25"
+      },
+      {
+       "stop": "Bv. Recanati",
+       "idx": 3,
+       "arr": "16.29",
+       "dep": "16.29"
+      },
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "16.41",
+       "dep": "16.41"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "16.50",
+       "dep": "16.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "41",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVAldal15/6al15/09-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "NAXOS (Caesar Palace)",
+       "idx": 2,
+       "arr": "16.25",
+       "dep": "16.25"
+      },
+      {
+       "stop": "Bv. Recanati",
+       "idx": 3,
+       "arr": "16.29",
+       "dep": "16.29"
+      },
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "16.41",
+       "dep": "16.41"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "16.50",
+       "dep": "16.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "43",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERAda1l51/50/96al-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "GIARDINI (Schisò)",
+       "idx": 5,
+       "arr": "17.05",
+       "dep": "17.05"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "17.10",
+       "dep": "17.10"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "17.11",
+       "dep": "17.11"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "17.15",
+       "dep": "17.15"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "17.20",
+       "dep": "17.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "45",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "IFESdTaIlV1A°/4lal31/10-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "17.40",
+       "dep": "17.40"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "17.41",
+       "dep": "17.41"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "17.45",
+       "dep": "17.45"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "17.50",
+       "dep": "17.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "47",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEperiodoscolastico-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "17.40",
+       "dep": "17.40"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "17.41",
+       "dep": "17.41"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "17.45",
+       "dep": "17.45"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "17.50",
+       "dep": "17.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "49",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE15/6adlal15/09-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "GIARDINI (Schisò)",
+       "idx": 5,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "18.11",
+       "dep": "18.11"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "18.15",
+       "dep": "18.15"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "18.20",
+       "dep": "18.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "51",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVAldal15/6al15/09-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "GIARDINI (Schisò)",
+       "idx": 5,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "18.11",
+       "dep": "18.11"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "18.15",
+       "dep": "18.15"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "18.20",
+       "dep": "18.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "53",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdal1°/8al31/8-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "18.40",
+       "dep": "18.40"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "18.41",
+       "dep": "18.41"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "18.50",
+       "dep": "18.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "55",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIlERAda3l11//088al-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "GIARDINI (Schisò)",
+       "idx": 5,
+       "arr": "19.05",
+       "dep": "19.05"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "19.11",
+       "dep": "19.11"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "19.15",
+       "dep": "19.15"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "19.20",
+       "dep": "19.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "57",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "IFERIALE15/6adlal15/09"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPPITELLO Via Zanchi",
+       "idx": 0,
+       "arr": "19.15",
+       "dep": "19.15"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 1,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "NAXOS (Caesar Palace)",
+       "idx": 2,
+       "arr": "19.25",
+       "dep": "19.25"
+      },
+      {
+       "stop": "Bv. Recanati",
+       "idx": 3,
+       "arr": "19.29",
+       "dep": "19.29"
+      },
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "19.40",
+       "dep": "19.40"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "19.41",
+       "dep": "19.41"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "19.50",
+       "dep": "19.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "59",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEl15/6adlal15/09-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "GIARDINI (Schisò)",
+       "idx": 5,
+       "arr": "20.05",
+       "dep": "20.05"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "20.10",
+       "dep": "20.10"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "20.11",
+       "dep": "20.11"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "20.15",
+       "dep": "20.15"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "20.20",
+       "dep": "20.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "61",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "lFESTIVAdal1°/8al31/8-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "GIARDINI (Schisò)",
+       "idx": 5,
+       "arr": "20.05",
+       "dep": "20.05"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "20.10",
+       "dep": "20.10"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "20.11",
+       "dep": "20.11"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "20.15",
+       "dep": "20.15"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "20.20",
+       "dep": "20.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "63",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEldal1164//906al"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPPITELLO Via Zanchi",
+       "idx": 0,
+       "arr": "20.15",
+       "dep": "20.15"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 1,
+       "arr": "20.20",
+       "dep": "20.20"
+      },
+      {
+       "stop": "NAXOS (Caesar Palace)",
+       "idx": 2,
+       "arr": "20.25",
+       "dep": "20.25"
+      },
+      {
+       "stop": "Bv. Recanati",
+       "idx": 3,
+       "arr": "20.29",
+       "dep": "20.29"
+      },
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "20.30",
+       "dep": "20.30"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "20.40",
+       "dep": "20.40"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "20.41",
+       "dep": "20.41"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "20.45",
+       "dep": "20.45"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "20.50",
+       "dep": "20.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "65",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE15/6aldal15/09"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPPITELLO Via Zanchi",
+       "idx": 0,
+       "arr": "20.15",
+       "dep": "20.15"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 1,
+       "arr": "20.20",
+       "dep": "20.20"
+      },
+      {
+       "stop": "NAXOS (Caesar Palace)",
+       "idx": 2,
+       "arr": "20.25",
+       "dep": "20.25"
+      },
+      {
+       "stop": "Bv. Recanati",
+       "idx": 3,
+       "arr": "20.29",
+       "dep": "20.29"
+      },
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "20.30",
+       "dep": "20.30"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "20.40",
+       "dep": "20.40"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "20.41",
+       "dep": "20.41"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "20.45",
+       "dep": "20.45"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "20.50",
+       "dep": "20.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "67",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "lFESdTalIV1A°/4al31/10"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPPITELLO Via Zanchi",
+       "idx": 0,
+       "arr": "20.15",
+       "dep": "20.15"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 1,
+       "arr": "20.20",
+       "dep": "20.20"
+      },
+      {
+       "stop": "NAXOS (Caesar Palace)",
+       "idx": 2,
+       "arr": "20.25",
+       "dep": "20.25"
+      },
+      {
+       "stop": "Bv. Recanati",
+       "idx": 3,
+       "arr": "20.29",
+       "dep": "20.29"
+      },
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "20.30",
+       "dep": "20.30"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "20.40",
+       "dep": "20.40"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "20.41",
+       "dep": "20.41"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "20.45",
+       "dep": "20.45"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "20.50",
+       "dep": "20.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "69",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdal15/6al15/09-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "NAXOS (Caesar Palace)",
+       "idx": 2,
+       "arr": "20.55",
+       "dep": "20.55"
+      },
+      {
+       "stop": "Bv. Recanati",
+       "idx": 3,
+       "arr": "20.59",
+       "dep": "20.59"
+      },
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "21.00",
+       "dep": "21.00"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "21.10",
+       "dep": "21.10"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "21.11",
+       "dep": "21.11"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "21.15",
+       "dep": "21.15"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "21.20",
+       "dep": "21.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "71",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIlERAdal1155//609al-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "21.30",
+       "dep": "21.30"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "21.40",
+       "dep": "21.40"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "21.41",
+       "dep": "21.41"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "21.45",
+       "dep": "21.45"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "21.50",
+       "dep": "21.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "73",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "IGIORNALIERAdal15/6al15/09-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "22.00",
+       "dep": "22.00"
+      },
+      {
+       "stop": "GIARDINI (Schisò)",
+       "idx": 5,
+       "arr": "22.05",
+       "dep": "22.05"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "22.10",
+       "dep": "22.10"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "22.11",
+       "dep": "22.11"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "22.15",
+       "dep": "22.15"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "22.20",
+       "dep": "22.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "75",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "IGIORNALIERAdal1155/6/09al-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "22.30",
+       "dep": "22.30"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "22.40",
+       "dep": "22.40"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "22.41",
+       "dep": "22.41"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "22.45",
+       "dep": "22.45"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "22.50",
+       "dep": "22.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "77",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "IGIORNALIERAda3l11//088al-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "23.00",
+       "dep": "23.00"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "23.10",
+       "dep": "23.10"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "23.11",
+       "dep": "23.11"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "23.15",
+       "dep": "23.15"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "23.20",
+       "dep": "23.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "79",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "IGIORNALIERAdal1°/8al31/8-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "23.30",
+       "dep": "23.30"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "23.40",
+       "dep": "23.40"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "23.41",
+       "dep": "23.41"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "23.45",
+       "dep": "23.45"
+      },
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "23.50",
+       "dep": "23.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "81",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "IGIORNALIERAdal1°/8al31/8-"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "TAORMINA Via Pirandello",
+       "idx": 9,
+       "arr": "0.20",
+       "dep": "0.20"
+      },
+      {
+       "stop": "Capo Taormina",
+       "idx": 8,
+       "arr": "0.15",
+       "dep": "0.15"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "0.11",
+       "dep": "0.11"
+      },
+      {
+       "stop": "Digu (GIAR114 IN/Sa(Vniaiomvabnenrit)o SS)",
+       "idx": 6,
+       "arr": "0.10",
+       "dep": "0.10"
+      },
+      {
+       "stop": "RECANATI Terminal Bus",
+       "idx": 4,
+       "arr": "0.00",
+       "dep": "0.00"
+      },
+      {
+       "stop": "Bv. Recanati",
+       "idx": 3,
+       "arr": "23.59",
+       "dep": "23.59"
+      },
+      {
+       "stop": "NAXOS (Caesar Palace)",
+       "idx": 2,
+       "arr": "23.55",
+       "dep": "23.55"
+      }
+     ],
+     "valid": false
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,318 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-tp-orari-0-731",
+ "name": "GIBELLINA viale Indipendenza siciliana - MAZARA DEL VALLO via Dorso",
+ "source": "AST_prov._di_TP_-ORARI_0/p002.json",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "GIBELLINA viale Indipendenza siciliana",
+    "SANTA NINFA via Pio La Torre",
+    "CASTELVETRANO piazza R. Margherita",
+    "CAMPOBELLO DI MAZARA c.so Vitt. Emanuele",
+    "MAZARA DEL VALLO via Dorso"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscolastica"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GIBELLINA viale Indipendenza siciliana",
+       "idx": 0,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "SANTA NINFA via Pio La Torre",
+       "idx": 1,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "CASTELVETRANO piazza R. Margherita",
+       "idx": 2,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "CAMPOBELLO DI MAZARA c.so Vitt. Emanuele",
+       "idx": 3,
+       "arr": "8.25",
+       "dep": "8.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscolastica"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GIBELLINA viale Indipendenza siciliana",
+       "idx": 0,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "SANTA NINFA via Pio La Torre",
+       "idx": 1,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "CASTELVETRANO piazza R. Margherita",
+       "idx": 2,
+       "arr": "8.20",
+       "dep": "8.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscolastica"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GIBELLINA viale Indipendenza siciliana",
+       "idx": 0,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "SANTA NINFA via Pio La Torre",
+       "idx": 1,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "CASTELVETRANO piazza R. Margherita",
+       "idx": 2,
+       "arr": "8.20",
+       "dep": "8.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CASTELVETRANO piazza R. Margherita",
+       "idx": 2,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "CAMPOBELLO DI MAZARA c.so Vitt. Emanuele",
+       "idx": 3,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "MAZARA DEL VALLO via Dorso",
+       "idx": 4,
+       "arr": "13.50",
+       "dep": "13.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscolastica"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CASTELVETRANO piazza R. Margherita",
+       "idx": 2,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "SANTA NINFA via Pio La Torre",
+       "idx": 1,
+       "arr": "8.20",
+       "dep": "8.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MAZARA DEL VALLO via Dorso",
+       "idx": 4,
+       "arr": "8.35",
+       "dep": "8.35"
+      },
+      {
+       "stop": "CAMPOBELLO DI MAZARA c.so Vitt. Emanuele",
+       "idx": 3,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "CASTELVETRANO piazza R. Margherita",
+       "idx": 2,
+       "arr": "9.15",
+       "dep": "9.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscolastica"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CASTELVETRANO piazza R. Margherita",
+       "idx": 2,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "GIBELLINA viale Indipendenza siciliana",
+       "idx": 0,
+       "arr": "13.55",
+       "dep": "13.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscolastica"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CASTELVETRANO piazza R. Margherita",
+       "idx": 2,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "SANTA NINFA via Pio La Torre",
+       "idx": 1,
+       "arr": "13.45",
+       "dep": "13.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscolastica"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI MAZARA c.so Vitt. Emanuele",
+       "idx": 3,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "CASTELVETRANO piazza R. Margherita",
+       "idx": 2,
+       "arr": "13.55",
+       "dep": "13.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6R",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "FERIALEscolasticaesclusosabato"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI MAZARA c.so Vitt. Emanuele",
+       "idx": 3,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "CASTELVETRANO piazza R. Margherita",
+       "idx": 2,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "SANTA NINFA via Pio La Torre",
+       "idx": 1,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "GIBELLINA viale Indipendenza siciliana",
+       "idx": 0,
+       "arr": "15.10",
+       "dep": "15.10"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

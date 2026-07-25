@@ -1,0 +1,262 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-ct-orari-575",
+ "name": "PEDAGAGGI s.p. 32 - LENTINI",
+ "source": "AST_prov._di_CT_-_ORARI/p027.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio NESSUNA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "PEDAGAGGI s.p. 32",
+    "CARLENTINI (via Scavonetti)",
+    "LENTINI (piazza dei Sofisti)"
+   ],
+   "trips": [
+    {
+     "corsa": "3A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PEDAGAGGI s.p. 32",
+       "idx": 0,
+       "arr": "6.25",
+       "dep": "6.25"
+      },
+      {
+       "stop": "CARLENTINI (via Scavonetti)",
+       "idx": 1,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "LENTINI (piazza dei Sofisti)",
+       "idx": 2,
+       "arr": "7.05",
+       "dep": "7.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "scolastica"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PEDAGAGGI s.p. 32",
+       "idx": 0,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "CARLENTINI (via Scavonetti)",
+       "idx": 1,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "LENTINI (piazza dei Sofisti)",
+       "idx": 2,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PEDAGAGGI s.p. 32",
+       "idx": 0,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "CARLENTINI (via Scavonetti)",
+       "idx": 1,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "LENTINI (piazza dei Sofisti)",
+       "idx": 2,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PEDAGAGGI s.p. 32",
+       "idx": 0,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "CARLENTINI (via Scavonetti)",
+       "idx": 1,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "LENTINI (piazza dei Sofisti)",
+       "idx": 2,
+       "arr": "16.55",
+       "dep": "16.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PEDAGAGGI s.p. 32",
+       "idx": 0,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "CARLENTINI (via Scavonetti)",
+       "idx": 1,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "LENTINI (piazza dei Sofisti)",
+       "idx": 2,
+       "arr": "16.55",
+       "dep": "16.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "LENTINI (piazza dei Sofisti)",
+       "idx": 2,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "CARLENTINI (via Scavonetti)",
+       "idx": 1,
+       "arr": "10.45",
+       "dep": "10.45"
+      },
+      {
+       "stop": "PEDAGAGGI s.p. 32",
+       "idx": 0,
+       "arr": "11.10",
+       "dep": "11.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "LENTINI (piazza dei Sofisti)",
+       "idx": 2,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "CARLENTINI (via Scavonetti)",
+       "idx": 1,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "PEDAGAGGI s.p. 32",
+       "idx": 0,
+       "arr": "15.55",
+       "dep": "15.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CARLENTINI (via Scavonetti)",
+       "idx": 1,
+       "arr": "17.15",
+       "dep": "17.15"
+      },
+      {
+       "stop": "PEDAGAGGI s.p. 32",
+       "idx": 0,
+       "arr": "17.40",
+       "dep": "17.40"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

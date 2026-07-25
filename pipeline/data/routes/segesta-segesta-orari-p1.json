@@ -1,0 +1,1408 @@
+{
+ "operator": "Segesta",
+ "route_id": "segesta-segesta-orari-p1",
+ "name": "PACECO Viale Regina Margherita - PALERMO Viale dei Picciotti, 86",
+ "source": "Segesta__SEGESTA_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "PACECO Viale Regina Margherita",
+    "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+    "PALERMO Piazza Cairoli (stazione FS)",
+    "PALERMO Viale dei Picciotti, 86"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIAaLvEendeardluìnedì-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 1,
+       "arr": "5.30",
+       "dep": "5.30"
+      },
+      {
+       "stop": "PALERMO Piazza Cairoli (stazione FS)",
+       "idx": 2,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 1,
+       "arr": "5.45",
+       "dep": "5.45"
+      },
+      {
+       "stop": "PALERMO Piazza Cairoli (stazione FS)",
+       "idx": 2,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 3,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNASLAIBERATAOESCLUSA-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 1,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "PALERMO Piazza Cairoli (stazione FS)",
+       "idx": 2,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIaALvEendeardluìnedì-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 1,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "PALERMO Piazza Cairoli (stazione FS)",
+       "idx": 2,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 3,
+       "arr": "8.20",
+       "dep": "8.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "perLiUodNoEDscI'olansetilco"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 1,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "PALERMO Piazza Cairoli (stazione FS)",
+       "idx": 2,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 3,
+       "arr": "8.30",
+       "dep": "8.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIAaLvEendeardluìnedì"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PACECO Viale Regina Margherita",
+       "idx": 0,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 1,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "PALERMO Piazza Cairoli (stazione FS)",
+       "idx": 2,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 3,
+       "arr": "9.10",
+       "dep": "9.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "13",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIAaLvEendeardluìnedì-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 1,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "PALERMO Piazza Cairoli (stazione FS)",
+       "idx": 2,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 3,
+       "arr": "9.40",
+       "dep": "9.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "15",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERA-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 1,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "PALERMO Piazza Cairoli (stazione FS)",
+       "idx": 2,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 3,
+       "arr": "10.10",
+       "dep": "10.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "17",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIaALvEendeardluìnedì-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 1,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "PALERMO Piazza Cairoli (stazione FS)",
+       "idx": 2,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 3,
+       "arr": "10.40",
+       "dep": "10.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "19",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 1,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "PALERMO Piazza Cairoli (stazione FS)",
+       "idx": 2,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 3,
+       "arr": "11.10",
+       "dep": "11.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "21",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERA-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 1,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "PALERMO Piazza Cairoli (stazione FS)",
+       "idx": 2,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 3,
+       "arr": "12.10",
+       "dep": "12.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "23",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 1,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "PALERMO Piazza Cairoli (stazione FS)",
+       "idx": 2,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 3,
+       "arr": "13.10",
+       "dep": "13.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "25",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERA-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 1,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "PALERMO Piazza Cairoli (stazione FS)",
+       "idx": 2,
+       "arr": "14.00",
+       "dep": "14.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "27",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 1,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "PALERMO Piazza Cairoli (stazione FS)",
+       "idx": 2,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 3,
+       "arr": "15.10",
+       "dep": "15.10"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "PACECO Viale Regina Margherita",
+    "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+    "PALERMO Piazza Cairoli (stazione FS)",
+    "PALERMO Viale dei Picciotti, 86"
+   ],
+   "trips": [
+    {
+     "corsa": "29",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERA-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 1,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "PALERMO Piazza Cairoli (stazione FS)",
+       "idx": 2,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 3,
+       "arr": "16.10",
+       "dep": "16.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "31",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdalunedìavenerdì-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 1,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "PALERMO Piazza Cairoli (stazione FS)",
+       "idx": 2,
+       "arr": "17.00",
+       "dep": "17.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "33",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdalunedìavenerdì-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 1,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "PALERMO Piazza Cairoli (stazione FS)",
+       "idx": 2,
+       "arr": "18.00",
+       "dep": "18.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "35",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVO-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 1,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "PALERMO Piazza Cairoli (stazione FS)",
+       "idx": 2,
+       "arr": "18.00",
+       "dep": "18.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "37",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERA-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 1,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "PALERMO Piazza Cairoli (stazione FS)",
+       "idx": 2,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 3,
+       "arr": "19.10",
+       "dep": "19.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "39",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERA-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 1,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "PALERMO Piazza Cairoli (stazione FS)",
+       "idx": 2,
+       "arr": "20.00",
+       "dep": "20.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "41",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdalunedìavenerdì-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 1,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "PALERMO Piazza Cairoli (stazione FS)",
+       "idx": 2,
+       "arr": "21.00",
+       "dep": "21.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "43",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVO-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 1,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "PALERMO Piazza Cairoli (stazione FS)",
+       "idx": 2,
+       "arr": "21.00",
+       "dep": "21.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "45",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERA-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 1,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "PALERMO Piazza Cairoli (stazione FS)",
+       "idx": 2,
+       "arr": "22.00",
+       "dep": "22.00"
+      },
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 3,
+       "arr": "22.10",
+       "dep": "22.10"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "PALERMO Viale dei Picciotti, 86",
+    "PALERMO Via Balsamo, 26 (stazione FS)",
+    "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+    "PACECO Viale Regina Margherita"
+   ],
+   "trips": [
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 0,
+       "arr": "5.50",
+       "dep": "5.50"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 2,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdalunedìavenerdì"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 0,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 2,
+       "arr": "8.30",
+       "dep": "8.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 0,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 2,
+       "arr": "9.00",
+       "dep": "9.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 2,
+       "arr": "10.00",
+       "dep": "10.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 0,
+       "arr": "8.50",
+       "dep": "8.50"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 2,
+       "arr": "11.00",
+       "dep": "11.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 0,
+       "arr": "9.50",
+       "dep": "9.50"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 2,
+       "arr": "12.00",
+       "dep": "12.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "14",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 0,
+       "arr": "10.50",
+       "dep": "10.50"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 2,
+       "arr": "13.00",
+       "dep": "13.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "16",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 0,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 2,
+       "arr": "14.00",
+       "dep": "14.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "18",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 0,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 2,
+       "arr": "15.00",
+       "dep": "15.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "20",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdalunedìavenerdì"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 0,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 2,
+       "arr": "15.30",
+       "dep": "15.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "22",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdalunedìavenerdì"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 0,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 2,
+       "arr": "15.45",
+       "dep": "15.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "24",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVO"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 0,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 2,
+       "arr": "16.00",
+       "dep": "16.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "26",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdalunedìavenerdì"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 0,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 2,
+       "arr": "16.30",
+       "dep": "16.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "28",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdalunedìavenerdì"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 0,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 2,
+       "arr": "17.00",
+       "dep": "17.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "PALERMO Viale dei Picciotti, 86",
+    "PALERMO Via Balsamo, 26 (stazione FS)",
+    "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+    "PACECO Viale Regina Margherita",
+    "NON SI EFFETTUA",
+    "Piazza Umberto I Via Fardella n. 128 Via Fardella",
+    "Terminal Bus Foro Umberto I (fermata AMAT Porta"
+   ],
+   "trips": [
+    {
+     "corsa": "30",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 0,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 2,
+       "arr": "18.00",
+       "dep": "18.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "32",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdalunedìavenerdì"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 0,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 2,
+       "arr": "18.30",
+       "dep": "18.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "34",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "sabato"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 2,
+       "arr": "19.00",
+       "dep": "19.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "36",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdalunedìavenerdì"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 2,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "PACECO Viale Regina Margherita",
+       "idx": 3,
+       "arr": "19.10",
+       "dep": "19.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "38",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdalunedìavenerdì"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 0,
+       "arr": "17.20",
+       "dep": "17.20"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 2,
+       "arr": "19.30",
+       "dep": "19.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "40",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 0,
+       "arr": "17.50",
+       "dep": "17.50"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 2,
+       "arr": "20.00",
+       "dep": "20.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "42",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERAESCLUSASABATO"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 2,
+       "arr": "21.00",
+       "dep": "21.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "44",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 2,
+       "arr": "22.00",
+       "dep": "22.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "46",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "VENERDI'periodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti, 86",
+       "idx": 0,
+       "arr": "11.20",
+       "dep": "11.20"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 2,
+       "arr": "13.30",
+       "dep": "13.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

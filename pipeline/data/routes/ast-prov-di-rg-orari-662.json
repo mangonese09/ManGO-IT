@@ -1,0 +1,132 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-rg-orari-662",
+ "name": "Modica - Monterosso Almo",
+ "source": "AST_prov._di_RG_-_ORARI/p008.json",
+ "prescriptions": [
+  "Prescrizioni NESSUNA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Modica (Istituto Alberghiero) Capolinea",
+    "Giarratana (corso XX Settembre)",
+    "Monterosso Almo"
+   ],
+   "trips": [
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEINPERIODOSCOLASTICO"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Modica (Istituto Alberghiero) Capolinea",
+       "idx": 0,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "Giarratana (corso XX Settembre)",
+       "idx": 1,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "Monterosso Almo",
+       "idx": 2,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Modica (Istituto Alberghiero) Capolinea",
+       "idx": 0,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "Giarratana (corso XX Settembre)",
+       "idx": 1,
+       "arr": "15.05",
+       "dep": "15.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Giarratana (corso XX Settembre)",
+       "idx": 1,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "Modica (Istituto Alberghiero) Capolinea",
+       "idx": 0,
+       "arr": "8.15",
+       "dep": "8.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEINPERIODOSCOLASTICO"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Monterosso Almo",
+       "idx": 2,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "Giarratana (corso XX Settembre)",
+       "idx": 1,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "Modica (Istituto Alberghiero) Capolinea",
+       "idx": 0,
+       "arr": "8.20",
+       "dep": "8.20"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

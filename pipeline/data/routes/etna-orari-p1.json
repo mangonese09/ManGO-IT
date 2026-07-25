@@ -1,0 +1,44 @@
+{
+ "operator": "Etna Trasporti",
+ "route_id": "etna-orari-p1",
+ "name": "Butera - Caltanissetta 9",
+ "source": "ETNA_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Nessuna"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "(Piazza Dante)",
+    "(Istituto Carafa) (Autostazione Piazzale"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEKMSTAZIONAMENTISabatoperiodoscolasticoBUTERA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "(Piazza Dante)",
+       "idx": 0,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "(Istituto Carafa) (Autostazione Piazzale",
+       "idx": 1,
+       "arr": "8.10",
+       "dep": "8.10"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

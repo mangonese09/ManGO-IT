@@ -1,0 +1,1043 @@
+{
+ "operator": "Gallo",
+ "route_id": "gallo-orari-gallo-p1",
+ "name": "CATTOLICA-RIBERA-SCIACCA-PALERMO",
+ "source": "Gallo__ORARI_GALLO/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio E' fatto obbligo di effettuare servizio di estremità con divieto di servizio locale intermedio.",
+  "Divieto di servizio locale Palermo - palermo Aeroporto e viceversa estremi compresi."
+ ],
+ "directions": [
+  {
+   "stops": [
+    "CATTOLICA (VIA ORETO) = =",
+    "MONTALLEGRO (VIA DELLA VITTORIA) = =",
+    "RIBERA (PIAZZA ZAMENHOF)",
+    "SCIACCA (VIA AGATOCLE)",
+    "MENFI (VIALE MICHELANGELO)",
+    "BV. GULFA",
+    "AEROPORTO (FALCONE-BORSELLINO)",
+    "PALERMO (VIA PAOLO BALSAMO)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdallunalven"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATTOLICA (VIA ORETO) = =",
+       "idx": 0,
+       "arr": "5.15",
+       "dep": "5.15"
+      },
+      {
+       "stop": "MONTALLEGRO (VIA DELLA VITTORIA) = =",
+       "idx": 1,
+       "arr": "5.30",
+       "dep": "5.30"
+      },
+      {
+       "stop": "RIBERA (PIAZZA ZAMENHOF)",
+       "idx": 2,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 3,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 7,
+       "arr": "8.10",
+       "dep": "8.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RIBERA (PIAZZA ZAMENHOF)",
+       "idx": 2,
+       "arr": "5.30",
+       "dep": "5.30"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 3,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "MENFI (VIALE MICHELANGELO)",
+       "idx": 4,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "AEROPORTO (FALCONE-BORSELLINO)",
+       "idx": 6,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 7,
+       "arr": "8.45",
+       "dep": "8.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RIBERA (PIAZZA ZAMENHOF)",
+       "idx": 2,
+       "arr": "5.15",
+       "dep": "5.15"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 3,
+       "arr": "5.45",
+       "dep": "5.45"
+      },
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 7,
+       "arr": "7.25",
+       "dep": "7.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdallunalven"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RIBERA (PIAZZA ZAMENHOF)",
+       "idx": 2,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 3,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 7,
+       "arr": "10.10",
+       "dep": "10.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdallunalven"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RIBERA (PIAZZA ZAMENHOF)",
+       "idx": 2,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 3,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "BV. GULFA",
+       "idx": 5,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 7,
+       "arr": "13.10",
+       "dep": "13.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RIBERA (PIAZZA ZAMENHOF)",
+       "idx": 2,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 3,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "MENFI (VIALE MICHELANGELO)",
+       "idx": 4,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "AEROPORTO (FALCONE-BORSELLINO)",
+       "idx": 6,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 7,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "13",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RIBERA (PIAZZA ZAMENHOF)",
+       "idx": 2,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 3,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "BV. GULFA",
+       "idx": 5,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 7,
+       "arr": "16.10",
+       "dep": "16.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "15",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RIBERA (PIAZZA ZAMENHOF)",
+       "idx": 2,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 3,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "BV. GULFA",
+       "idx": 5,
+       "arr": "17.15",
+       "dep": "17.15"
+      },
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 7,
+       "arr": "18.25",
+       "dep": "18.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "17",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RIBERA (PIAZZA ZAMENHOF)",
+       "idx": 2,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 3,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "BV. GULFA",
+       "idx": 5,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 7,
+       "arr": "21.10",
+       "dep": "21.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "19",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RIBERA (PIAZZA ZAMENHOF)",
+       "idx": 2,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 3,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "BV. GULFA",
+       "idx": 5,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 7,
+       "arr": "10.40",
+       "dep": "10.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "21",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RIBERA (PIAZZA ZAMENHOF)",
+       "idx": 2,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 3,
+       "arr": "15.45",
+       "dep": "15.45"
+      },
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 7,
+       "arr": "17.25",
+       "dep": "17.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "23",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RIBERA (PIAZZA ZAMENHOF)",
+       "idx": 2,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 3,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "BV. GULFA",
+       "idx": 5,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 7,
+       "arr": "19.10",
+       "dep": "19.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "25",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATTOLICA (VIA ORETO) = =",
+       "idx": 0,
+       "arr": "17.40",
+       "dep": "17.40"
+      },
+      {
+       "stop": "MONTALLEGRO (VIA DELLA VITTORIA) = =",
+       "idx": 1,
+       "arr": "17.55",
+       "dep": "17.55"
+      },
+      {
+       "stop": "RIBERA (PIAZZA ZAMENHOF)",
+       "idx": 2,
+       "arr": "18.25",
+       "dep": "18.25"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 3,
+       "arr": "18.55",
+       "dep": "18.55"
+      },
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 7,
+       "arr": "20.35",
+       "dep": "20.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdallunalven"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 7,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "BV. GULFA",
+       "idx": 5,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 3,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "RIBERA (PIAZZA ZAMENHOF)",
+       "idx": 2,
+       "arr": "8.25",
+       "dep": "8.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 7,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "BV. GULFA",
+       "idx": 5,
+       "arr": "10.10",
+       "dep": "10.10"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 3,
+       "arr": "10.40",
+       "dep": "10.40"
+      },
+      {
+       "stop": "RIBERA (PIAZZA ZAMENHOF)",
+       "idx": 2,
+       "arr": "11.10",
+       "dep": "11.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 7,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "BV. GULFA",
+       "idx": 5,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 3,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "RIBERA (PIAZZA ZAMENHOF)",
+       "idx": 2,
+       "arr": "13.10",
+       "dep": "13.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdallunalven"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 7,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "BV. GULFA",
+       "idx": 5,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 3,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "RIBERA (PIAZZA ZAMENHOF)",
+       "idx": 2,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "MONTALLEGRO (VIA DELLA VITTORIA) = =",
+       "idx": 1,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "CATTOLICA (VIA ORETO) = =",
+       "idx": 0,
+       "arr": "15.55",
+       "dep": "15.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALESCOLdallunalven"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 7,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "BV. GULFA",
+       "idx": 5,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 3,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "RIBERA (PIAZZA ZAMENHOF)",
+       "idx": 2,
+       "arr": "15.50",
+       "dep": "15.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 7,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "AEROPORTO (FALCONE-BORSELLINO)",
+       "idx": 6,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "MENFI (VIALE MICHELANGELO)",
+       "idx": 4,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 3,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "RIBERA (PIAZZA ZAMENHOF)",
+       "idx": 2,
+       "arr": "17.15",
+       "dep": "17.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "14",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 7,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 3,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "RIBERA (PIAZZA ZAMENHOF)",
+       "idx": 2,
+       "arr": "16.50",
+       "dep": "16.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "16",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALESABATOENONSCOL"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 7,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "BV. GULFA",
+       "idx": 5,
+       "arr": "17.25",
+       "dep": "17.25"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 3,
+       "arr": "17.55",
+       "dep": "17.55"
+      },
+      {
+       "stop": "RIBERA (PIAZZA ZAMENHOF)",
+       "idx": 2,
+       "arr": "18.25",
+       "dep": "18.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "18",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdallunalven"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 7,
+       "arr": "17.15",
+       "dep": "17.15"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 3,
+       "arr": "18.55",
+       "dep": "18.55"
+      },
+      {
+       "stop": "RIBERA (PIAZZA ZAMENHOF)",
+       "idx": 2,
+       "arr": "19.25",
+       "dep": "19.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "20",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 7,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "BV. GULFA",
+       "idx": 5,
+       "arr": "20.40",
+       "dep": "20.40"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 3,
+       "arr": "21.10",
+       "dep": "21.10"
+      },
+      {
+       "stop": "RIBERA (PIAZZA ZAMENHOF)",
+       "idx": 2,
+       "arr": "21.40",
+       "dep": "21.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "22",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 7,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "BV. GULFA",
+       "idx": 5,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 3,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "RIBERA (PIAZZA ZAMENHOF)",
+       "idx": 2,
+       "arr": "13.10",
+       "dep": "13.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "24",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 7,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 3,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "RIBERA (PIAZZA ZAMENHOF)",
+       "idx": 2,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "MONTALLEGRO (VIA DELLA VITTORIA) = =",
+       "idx": 1,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "CATTOLICA (VIA ORETO) = =",
+       "idx": 0,
+       "arr": "16.25",
+       "dep": "16.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "26",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 7,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "BV. GULFA",
+       "idx": 5,
+       "arr": "18.40",
+       "dep": "18.40"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 3,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "RIBERA (PIAZZA ZAMENHOF)",
+       "idx": 2,
+       "arr": "19.40",
+       "dep": "19.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "28",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 7,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "BV. GULFA",
+       "idx": 5,
+       "arr": "21.10",
+       "dep": "21.10"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 3,
+       "arr": "21.40",
+       "dep": "21.40"
+      },
+      {
+       "stop": "RIBERA (PIAZZA ZAMENHOF)",
+       "idx": 2,
+       "arr": "22.10",
+       "dep": "22.10"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,161 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-rg-orari-669",
+ "name": "Pachino - Scicli",
+ "source": "AST_prov._di_RG_-_ORARI/p018.json",
+ "prescriptions": [
+  "Prescrizioni NESSUNO"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Pachino (via Solferino) Capolinea",
+    "Marina della Marza",
+    "Pozzallo (p.za Marinai d'Italia)",
+    "Marina di Modica (corso Mediterraneo)",
+    "Sampieri (rotatoria)",
+    "Donnalucata (via Pirandello)",
+    "Scicli (Largo Olimpiadi)",
+    "Scicli (largo Gramsci)"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALESCOLASTICA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Pachino (via Solferino) Capolinea",
+       "idx": 0,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "Marina della Marza",
+       "idx": 1,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "Pozzallo (p.za Marinai d'Italia)",
+       "idx": 2,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALESCOLASTICA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Pozzallo (p.za Marinai d'Italia)",
+       "idx": 2,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "Marina di Modica (corso Mediterraneo)",
+       "idx": 3,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "Sampieri (rotatoria)",
+       "idx": 4,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "Donnalucata (via Pirandello)",
+       "idx": 5,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "Scicli (Largo Olimpiadi)",
+       "idx": 6,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "Scicli (largo Gramsci)",
+       "idx": 7,
+       "arr": "15.25",
+       "dep": "15.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "KMFERIALESCOLASTICA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Scicli (largo Gramsci)",
+       "idx": 7,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "Pozzallo (p.za Marinai d'Italia)",
+       "idx": 2,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALESCOLASTICA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Pozzallo (p.za Marinai d'Italia)",
+       "idx": 2,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "Marina della Marza",
+       "idx": 1,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Pachino (via Solferino) Capolinea",
+       "idx": 0,
+       "arr": "14.45",
+       "dep": "14.45"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

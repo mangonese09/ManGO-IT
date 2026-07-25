@@ -1,0 +1,160 @@
+{
+ "operator": "Magistro",
+ "route_id": "magistrosrl-orari-magistro-p6",
+ "name": "Unknown route",
+ "source": "MAGISTROSRL__ORARI_MAGISTRO/p006.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "(P.zza Municipio) FICARRA (P.zza Municipio)",
+    "CASETTE BIVIO CASETTE",
+    "MATINI",
+    "CASETTE BIVIO CASETTE",
+    "(P.zza Centrale) LACCO (P.zza Centrale)",
+    "IANNELLO",
+    "PIANA",
+    "BV. LACCO BROLO BV. LACCO",
+    "STAZ. F.S. BROLO STAZ. F.S."
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "NEL11/09AL14/06"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "(P.zza Municipio) FICARRA (P.zza Municipio)",
+       "idx": 0,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "CASETTE BIVIO CASETTE",
+       "idx": 1,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "MATINI",
+       "idx": 2,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "CASETTE BIVIO CASETTE",
+       "idx": 3,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "(P.zza Centrale) LACCO (P.zza Centrale)",
+       "idx": 4,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "IANNELLO",
+       "idx": 5,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "PIANA",
+       "idx": 6,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "BV. LACCO BROLO BV. LACCO",
+       "idx": 7,
+       "arr": "7.07",
+       "dep": "7.07"
+      },
+      {
+       "stop": "STAZ. F.S. BROLO STAZ. F.S.",
+       "idx": 8,
+       "arr": "7.10",
+       "dep": "7.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "NEL11/09AL14/06"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "STAZ. F.S. BROLO STAZ. F.S.",
+       "idx": 8,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "BV. LACCO BROLO BV. LACCO",
+       "idx": 7,
+       "arr": "14.13",
+       "dep": "14.13"
+      },
+      {
+       "stop": "PIANA",
+       "idx": 6,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "IANNELLO",
+       "idx": 5,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "(P.zza Centrale) LACCO (P.zza Centrale)",
+       "idx": 4,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "CASETTE BIVIO CASETTE",
+       "idx": 3,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "MATINI",
+       "idx": 2,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "CASETTE BIVIO CASETTE",
+       "idx": 1,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "(P.zza Municipio) FICARRA (P.zza Municipio)",
+       "idx": 0,
+       "arr": "15.00",
+       "dep": "15.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,800 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-pa-orari-697",
+ "name": "Castronovo via Mazzini - Palermo via Brasa",
+ "source": "AST_prov._di_PA_-_ORARI/p010.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Castronovo via Mazzini",
+    "Lercara via Autonomia",
+    "Fermata intermedia I",
+    "Mezzojuso via SS Crocifisso",
+    "Fermata intermedia 0",
+    "Godrano via Palermo",
+    "Fermata intermedia",
+    "Bolognetta bivio s.s. 118\\s.s. 121",
+    "Palermo via Brasa"
+   ],
+   "trips": [
+    {
+     "corsa": "6A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "infveeriranlaele"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Fermata intermedia I",
+       "idx": 2,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 6,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 8,
+       "arr": "7.35",
+       "dep": "7.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feesrtiiavlae"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Fermata intermedia I",
+       "idx": 2,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 6,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 8,
+       "arr": "7.35",
+       "dep": "7.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Castronovo via Mazzini",
+       "idx": 0,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "Lercara via Autonomia",
+       "idx": 1,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Fermata intermedia I",
+       "idx": 2,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 8,
+       "arr": "9.10",
+       "dep": "9.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "scfoelraiaslteica"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Castronovo via Mazzini",
+       "idx": 0,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "Lercara via Autonomia",
+       "idx": 1,
+       "arr": "8.25",
+       "dep": "8.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Castronovo via Mazzini",
+       "idx": 0,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "Lercara via Autonomia",
+       "idx": 1,
+       "arr": "10.15",
+       "dep": "10.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Lercara via Autonomia",
+       "idx": 1,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "Fermata intermedia 0",
+       "idx": 4,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 8,
+       "arr": "11.45",
+       "dep": "11.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "scfoelraiaslteica"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Lercara via Autonomia",
+       "idx": 1,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "Fermata intermedia I",
+       "idx": 2,
+       "arr": "13.10",
+       "dep": "13.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "scfoelraiaslteica"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Castronovo via Mazzini",
+       "idx": 0,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "Lercara via Autonomia",
+       "idx": 1,
+       "arr": "13.00",
+       "dep": "13.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Castronovo via Mazzini",
+       "idx": 0,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "Lercara via Autonomia",
+       "idx": 1,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Fermata intermedia I",
+       "idx": 2,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Mezzojuso via SS Crocifisso",
+       "idx": 3,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "Fermata intermedia 0",
+       "idx": 4,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 8,
+       "arr": "15.55",
+       "dep": "15.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "scfoelraiaslteica"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Lercara via Autonomia",
+       "idx": 1,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Mezzojuso via SS Crocifisso",
+       "idx": 3,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Fermata intermedia 0",
+       "idx": 4,
+       "arr": "14.45",
+       "dep": "14.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "scfoelraiaslteic"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Lercara via Autonomia",
+       "idx": 1,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "Fermata intermedia I",
+       "idx": 2,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "Mezzojuso via SS Crocifisso",
+       "idx": 3,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "Fermata intermedia 0",
+       "idx": 4,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "Godrano via Palermo",
+       "idx": 5,
+       "arr": "15.55",
+       "dep": "15.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "scfoelraiaslteic"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Godrano via Palermo",
+       "idx": 5,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "Fermata intermedia 0",
+       "idx": 4,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "Mezzojuso via SS Crocifisso",
+       "idx": 3,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "Lercara via Autonomia",
+       "idx": 1,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "scfoelraiaslteica"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Fermata intermedia I",
+       "idx": 2,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Lercara via Autonomia",
+       "idx": 1,
+       "arr": "7.25",
+       "dep": "7.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "scfoelraiaslteica"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Fermata intermedia 0",
+       "idx": 4,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "Mezzojuso via SS Crocifisso",
+       "idx": 3,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "Fermata intermedia I",
+       "idx": 2,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "Lercara via Autonomia",
+       "idx": 1,
+       "arr": "8.15",
+       "dep": "8.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Lercara via Autonomia",
+       "idx": 1,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "Castronovo via Mazzini",
+       "idx": 0,
+       "arr": "9.45",
+       "dep": "9.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "scfoelraiaslteica"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Lercara via Autonomia",
+       "idx": 1,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "Castronovo via Mazzini",
+       "idx": 0,
+       "arr": "12.00",
+       "dep": "12.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 8,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "Fermata intermedia I",
+       "idx": 2,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "Lercara via Autonomia",
+       "idx": 1,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "Castronovo via Mazzini",
+       "idx": 0,
+       "arr": "13.05",
+       "dep": "13.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "scfoelraiaslteic"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Fermata intermedia I",
+       "idx": 2,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "Lercara via Autonomia",
+       "idx": 1,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Castronovo via Mazzini",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "scfoelraiaslteic"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Fermata intermedia I",
+       "idx": 2,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "Lercara via Autonomia",
+       "idx": 1,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "Castronovo via Mazzini",
+       "idx": 0,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 8,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Mezzojuso via SS Crocifisso",
+       "idx": 3,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "Fermata intermedia I",
+       "idx": 2,
+       "arr": "15.20",
+       "dep": "15.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feesrtiiavlae"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 8,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "Fermata intermedia 0",
+       "idx": 4,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "Fermata intermedia I",
+       "idx": 2,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "Lercara via Autonomia",
+       "idx": 1,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "Castronovo via Mazzini",
+       "idx": 0,
+       "arr": "16.45",
+       "dep": "16.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "13R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "scfoelraiaslteic"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Fermata intermedia 0",
+       "idx": 4,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "Fermata intermedia I",
+       "idx": 2,
+       "arr": "15.35",
+       "dep": "15.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "infevrrinaalele"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 8,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "Fermata intermedia 0",
+       "idx": 4,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "Lercara via Autonomia",
+       "idx": 1,
+       "arr": "16.40",
+       "dep": "16.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 8,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "Fermata intermedia 0",
+       "idx": 4,
+       "arr": "18.20",
+       "dep": "18.20"
+      },
+      {
+       "stop": "Fermata intermedia I",
+       "idx": 2,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "Lercara via Autonomia",
+       "idx": 1,
+       "arr": "19.15",
+       "dep": "19.15"
+      },
+      {
+       "stop": "Castronovo via Mazzini",
+       "idx": 0,
+       "arr": "19.45",
+       "dep": "19.45"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

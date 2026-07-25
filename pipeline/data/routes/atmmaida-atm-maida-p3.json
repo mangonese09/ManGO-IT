@@ -1,0 +1,96 @@
+{
+ "operator": "ATM Maida",
+ "route_id": "atmmaida-atm-maida-p3",
+ "name": "Vallelunga Vallelunga orario - SOLO IL SABATO, SOLO LA DOMENICA, ETC….",
+ "source": "ATMMaida__ATM_MAIDA/p003.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Vallelunga Vallelunga orario",
+    "6.1 Villalba Villalba 23 orario",
+    "Polizzello Polizzello orario",
+    "Mussomeli Mussomeli orario",
+    "SOLO IL SABATO, SOLO LA DOMENICA, ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Vallelunga Vallelunga orario",
+       "idx": 0,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "6.1 Villalba Villalba 23 orario",
+       "idx": 1,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "Polizzello Polizzello orario",
+       "idx": 2,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "Mussomeli Mussomeli orario",
+       "idx": 3,
+       "arr": "8.10",
+       "dep": "8.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIAiLnEperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Mussomeli Mussomeli orario",
+       "idx": 3,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Polizzello Polizzello orario",
+       "idx": 2,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "6.1 Villalba Villalba 23 orario",
+       "idx": 1,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "Vallelunga Vallelunga orario",
+       "idx": 0,
+       "arr": "14.50",
+       "dep": "14.50"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,209 @@
+{
+ "operator": "Segesta",
+ "route_id": "segesta-segesta-orari-p2",
+ "name": "CAMPOREALE Piazza della Mimosa - ALCAMO Autostazione",
+ "source": "Segesta__SEGESTA_ORARI/p002.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio nessuna"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "CAMPOREALE Piazza della Mimosa",
+    "LASAGNA VALDIBELLA",
+    "BIVIO GRISI'",
+    "GRISI'",
+    "BIVIO GRISI'",
+    "FERRICINO",
+    "S. ANTONIO",
+    "ALCAMO Autostazione"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "lunedìFERIALEavenerdìdainperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CAMPOREALE Piazza della Mimosa",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "LASAGNA VALDIBELLA",
+       "idx": 1,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "BIVIO GRISI'",
+       "idx": 2,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "FERRICINO",
+       "idx": 5,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "S. ANTONIO",
+       "idx": 6,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 7,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "lunedìFERIALEavenerdìdainperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GRISI'",
+       "idx": 3,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "BIVIO GRISI'",
+       "idx": 4,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "FERRICINO",
+       "idx": 5,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "S. ANTONIO",
+       "idx": 6,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 7,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "lunedìFERIALEavenerdìdainperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 7,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "S. ANTONIO",
+       "idx": 6,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "FERRICINO",
+       "idx": 5,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "BIVIO GRISI'",
+       "idx": 4,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "LASAGNA VALDIBELLA",
+       "idx": 1,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "CAMPOREALE Piazza della Mimosa",
+       "idx": 0,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "lunedìFERIALEavenerdìdainperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 7,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "S. ANTONIO",
+       "idx": 6,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "FERRICINO",
+       "idx": 5,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "BIVIO GRISI'",
+       "idx": 4,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "GRISI'",
+       "idx": 3,
+       "arr": "15.00",
+       "dep": "15.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

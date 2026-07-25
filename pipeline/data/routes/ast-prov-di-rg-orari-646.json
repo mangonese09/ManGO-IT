@@ -1,0 +1,169 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-rg-orari-646",
+ "name": "Pachino - Pachino",
+ "source": "AST_prov._di_RG_-_ORARI/p019.json",
+ "prescriptions": [
+  "Prescrizioni NESSUNA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Pachino (via Solferino)",
+    "Portopalo (via Vittorio Emnnuele)",
+    "Marzamemi (viale Lido)",
+    "Pachino (via Solferino)"
+   ],
+   "trips": [
+    {
+     "corsa": "4A",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "FERIALESCOLASTICAESCLUSOSABATO"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Pachino (via Solferino)",
+       "idx": 0,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "Portopalo (via Vittorio Emnnuele)",
+       "idx": 1,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "Marzamemi (viale Lido)",
+       "idx": 2,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "Pachino (via Solferino)",
+       "idx": 3,
+       "arr": "7.00",
+       "dep": "7.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Pachino (via Solferino)",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Portopalo (via Vittorio Emnnuele)",
+       "idx": 1,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "Marzamemi (viale Lido)",
+       "idx": 2,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "Pachino (via Solferino)",
+       "idx": 3,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Pachino (via Solferino)",
+       "idx": 0,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "Portopalo (via Vittorio Emnnuele)",
+       "idx": 1,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "Marzamemi (viale Lido)",
+       "idx": 2,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "Pachino (via Solferino)",
+       "idx": 3,
+       "arr": "15.20",
+       "dep": "15.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Pachino (via Solferino)",
+       "idx": 0,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "Portopalo (via Vittorio Emnnuele)",
+       "idx": 1,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "Marzamemi (viale Lido)",
+       "idx": 2,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "Pachino (via Solferino)",
+       "idx": 3,
+       "arr": "15.20",
+       "dep": "15.20"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

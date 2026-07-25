@@ -1,0 +1,970 @@
+{
+ "operator": "Interbus",
+ "route_id": "orari-interbus-p8",
+ "name": "ROCCELLA-MALVAGNA-CASTIGLIONE-GIARDINI-MESSINA dir. CASTIGLIONE",
+ "source": "ORARI_INTERBUS/p008.json",
+ "prescriptions": [
+  "Prescrizioni d'esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "ROCCELLA Piazza Col. Mandanici",
+    "MOIO ALCANTARA Viale Papa Giovanni XXIII (Poste)",
+    "MALVAGNA Slargo Guarnazzo (Inizio Via Nuova)",
+    "MOIO ALCANTARA Viale Papa Giovanni XXIII (Poste)",
+    "VERZELLA Via Provinciale, 40",
+    "BV. CASTIGLIONE",
+    "CASTIGLIONE Piazza XI Febbraio",
+    "BV. CASTIGLIONE",
+    "FRANCAVILLA Piazza Annunziata (Via dei Mulini)",
+    "BV. MOTTA CAMASTRA Fondaco Motta",
+    "GOLE ALCANTARA",
+    "BV. GRANITI",
+    "GRANITI Piazza Manganelli",
+    "BV. GRANITI",
+    "GAGGI Piazza Vittorio Emanuele (Per Francavilla)",
+    "TRAPPITELLO Via Via XXIV Aprile",
+    "CHIANCHITTA",
+    "BV. SCHISO'",
+    "RECANATI Terminal Bus (Viale Dionisio)",
+    "BV. SCHISO'",
+    "GIARDINI S. Giovanni (Via Umberto SS 114)",
+    "GIARDINI Stazione FS",
+    "BV. TAORMINA",
+    "TAORMINA",
+    "MAZZARO'",
+    "SV. A/18 TAORMINA",
+    "LETOJANNI Bv. Gallodoro SS 114",
+    "BV. FORZA D'AGRO'",
+    "S. ALESSIO Via Cozzolari Valeria, 64",
+    "S. TERESA RIVA Piazza Pozzo Lazzaro (Via Lungomare 3)",
+    "FURCI Via Lungo Mare (Per Messina)",
+    "ROCCALUMERA SV. A/18",
+    "A/18",
+    "MESSINA Piazza Repubblica"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": {
+       "from": "16/9",
+       "to": "14/6"
+      },
+      "raw": "FERIALEdaLunedìaVenerdì16/9-14/6"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "FRANCAVILLA Piazza Annunziata (Via dei Mulini)",
+       "idx": 8,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "BV. MOTTA CAMASTRA Fondaco Motta",
+       "idx": 9,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "GOLE ALCANTARA",
+       "idx": 10,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "BV. GRANITI",
+       "idx": 11,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "BV. GRANITI",
+       "idx": 13,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "GAGGI Piazza Vittorio Emanuele (Per Francavilla)",
+       "idx": 14,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "TRAPPITELLO Via Via XXIV Aprile",
+       "idx": 15,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 16,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "BV. SCHISO'",
+       "idx": 17,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "BV. SCHISO'",
+       "idx": 19,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "GIARDINI S. Giovanni (Via Umberto SS 114)",
+       "idx": 20,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "GIARDINI Stazione FS",
+       "idx": 21,
+       "arr": "7.36",
+       "dep": "7.36"
+      },
+      {
+       "stop": "BV. TAORMINA",
+       "idx": 22,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "MAZZARO'",
+       "idx": 24,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "SV. A/18 TAORMINA",
+       "idx": 25,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "LETOJANNI Bv. Gallodoro SS 114",
+       "idx": 26,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "BV. FORZA D'AGRO'",
+       "idx": 27,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "S. ALESSIO Via Cozzolari Valeria, 64",
+       "idx": 28,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "S. TERESA RIVA Piazza Pozzo Lazzaro (Via Lungomare 3)",
+       "idx": 29,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "FURCI Via Lungo Mare (Per Messina)",
+       "idx": 30,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "ROCCALUMERA SV. A/18",
+       "idx": 31,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "MESSINA Piazza Repubblica",
+       "idx": 33,
+       "arr": "8.55",
+       "dep": "8.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": {
+       "from": "15/6",
+       "to": "15/9"
+      },
+      "raw": "FERIALEdaLunedìaVenerdì15/6-15/9"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "FRANCAVILLA Piazza Annunziata (Via dei Mulini)",
+       "idx": 8,
+       "arr": "12.25",
+       "dep": "12.25"
+      },
+      {
+       "stop": "BV. MOTTA CAMASTRA Fondaco Motta",
+       "idx": 9,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "GOLE ALCANTARA",
+       "idx": 10,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "BV. GRANITI",
+       "idx": 11,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "BV. GRANITI",
+       "idx": 13,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "GAGGI Piazza Vittorio Emanuele (Per Francavilla)",
+       "idx": 14,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "TRAPPITELLO Via Via XXIV Aprile",
+       "idx": 15,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 16,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "BV. SCHISO'",
+       "idx": 17,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "RECANATI Terminal Bus (Viale Dionisio)",
+       "idx": 18,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "BV. SCHISO'",
+       "idx": 19,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "GIARDINI S. Giovanni (Via Umberto SS 114)",
+       "idx": 20,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "GIARDINI Stazione FS",
+       "idx": 21,
+       "arr": "13.21",
+       "dep": "13.21"
+      },
+      {
+       "stop": "BV. TAORMINA",
+       "idx": 22,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "TAORMINA",
+       "idx": 23,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "MAZZARO'",
+       "idx": 24,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "SV. A/18 TAORMINA",
+       "idx": 25,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "LETOJANNI Bv. Gallodoro SS 114",
+       "idx": 26,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "BV. FORZA D'AGRO'",
+       "idx": 27,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "S. ALESSIO Via Cozzolari Valeria, 64",
+       "idx": 28,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "S. TERESA RIVA Piazza Pozzo Lazzaro (Via Lungomare 3)",
+       "idx": 29,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "FURCI Via Lungo Mare (Per Messina)",
+       "idx": 30,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "ROCCALUMERA SV. A/18",
+       "idx": 31,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "MESSINA Piazza Repubblica",
+       "idx": 33,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ROCCELLA Piazza Col. Mandanici",
+       "idx": 0,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "MOIO ALCANTARA Viale Papa Giovanni XXIII (Poste)",
+       "idx": 1,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "MALVAGNA Slargo Guarnazzo (Inizio Via Nuova)",
+       "idx": 2,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "MOIO ALCANTARA Viale Papa Giovanni XXIII (Poste)",
+       "idx": 3,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "VERZELLA Via Provinciale, 40",
+       "idx": 4,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "BV. CASTIGLIONE",
+       "idx": 5,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "CASTIGLIONE Piazza XI Febbraio",
+       "idx": 6,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "BV. CASTIGLIONE",
+       "idx": 7,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "FRANCAVILLA Piazza Annunziata (Via dei Mulini)",
+       "idx": 8,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "BV. MOTTA CAMASTRA Fondaco Motta",
+       "idx": 9,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "GOLE ALCANTARA",
+       "idx": 10,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "BV. GRANITI",
+       "idx": 11,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "GRANITI Piazza Manganelli",
+       "idx": 12,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "BV. GRANITI",
+       "idx": 13,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "GAGGI Piazza Vittorio Emanuele (Per Francavilla)",
+       "idx": 14,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "TRAPPITELLO Via Via XXIV Aprile",
+       "idx": 15,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 16,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "BV. SCHISO'",
+       "idx": 17,
+       "arr": "8.35",
+       "dep": "8.35"
+      },
+      {
+       "stop": "RECANATI Terminal Bus (Viale Dionisio)",
+       "idx": 18,
+       "arr": "8.45",
+       "dep": "8.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolasticodalunedìavenerdì"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "RECANATI Terminal Bus (Viale Dionisio)",
+       "idx": 18,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "BV. SCHISO'",
+       "idx": 17,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 16,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "TRAPPITELLO Via Via XXIV Aprile",
+       "idx": 15,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "GAGGI Piazza Vittorio Emanuele (Per Francavilla)",
+       "idx": 14,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "BV. GRANITI",
+       "idx": 13,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "BV. GRANITI",
+       "idx": 11,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "GOLE ALCANTARA",
+       "idx": 10,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "BV. MOTTA CAMASTRA Fondaco Motta",
+       "idx": 9,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "FRANCAVILLA Piazza Annunziata (Via dei Mulini)",
+       "idx": 8,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "BV. CASTIGLIONE",
+       "idx": 7,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "CASTIGLIONE Piazza XI Febbraio",
+       "idx": 6,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "BV. CASTIGLIONE",
+       "idx": 5,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "VERZELLA Via Provinciale, 40",
+       "idx": 4,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "MOIO ALCANTARA Viale Papa Giovanni XXIII (Poste)",
+       "idx": 3,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "MALVAGNA Slargo Guarnazzo (Inizio Via Nuova)",
+       "idx": 2,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "MOIO ALCANTARA Viale Papa Giovanni XXIII (Poste)",
+       "idx": 1,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "ROCCELLA Piazza Col. Mandanici",
+       "idx": 0,
+       "arr": "15.05",
+       "dep": "15.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolasticosabato"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "RECANATI Terminal Bus (Viale Dionisio)",
+       "idx": 18,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "BV. SCHISO'",
+       "idx": 17,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 16,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "TRAPPITELLO Via Via XXIV Aprile",
+       "idx": 15,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "GAGGI Piazza Vittorio Emanuele (Per Francavilla)",
+       "idx": 14,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "BV. GRANITI",
+       "idx": 13,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "BV. GRANITI",
+       "idx": 11,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "GOLE ALCANTARA",
+       "idx": 10,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "BV. MOTTA CAMASTRA Fondaco Motta",
+       "idx": 9,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "FRANCAVILLA Piazza Annunziata (Via dei Mulini)",
+       "idx": 8,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "BV. CASTIGLIONE",
+       "idx": 7,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "CASTIGLIONE Piazza XI Febbraio",
+       "idx": 6,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "BV. CASTIGLIONE",
+       "idx": 5,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "VERZELLA Via Provinciale, 40",
+       "idx": 4,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "MOIO ALCANTARA Viale Papa Giovanni XXIII (Poste)",
+       "idx": 3,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "MALVAGNA Slargo Guarnazzo (Inizio Via Nuova)",
+       "idx": 2,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "MOIO ALCANTARA Viale Papa Giovanni XXIII (Poste)",
+       "idx": 1,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "ROCCELLA Piazza Col. Mandanici",
+       "idx": 0,
+       "arr": "15.05",
+       "dep": "15.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "FERIALEinperiodononscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "RECANATI Terminal Bus (Viale Dionisio)",
+       "idx": 18,
+       "arr": "17.25",
+       "dep": "17.25"
+      },
+      {
+       "stop": "BV. SCHISO'",
+       "idx": 17,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 16,
+       "arr": "17.35",
+       "dep": "17.35"
+      },
+      {
+       "stop": "TRAPPITELLO Via Via XXIV Aprile",
+       "idx": 15,
+       "arr": "17.40",
+       "dep": "17.40"
+      },
+      {
+       "stop": "GAGGI Piazza Vittorio Emanuele (Per Francavilla)",
+       "idx": 14,
+       "arr": "17.45",
+       "dep": "17.45"
+      },
+      {
+       "stop": "BV. GRANITI",
+       "idx": 13,
+       "arr": "17.50",
+       "dep": "17.50"
+      },
+      {
+       "stop": "BV. GRANITI",
+       "idx": 11,
+       "arr": "17.50",
+       "dep": "17.50"
+      },
+      {
+       "stop": "GOLE ALCANTARA",
+       "idx": 10,
+       "arr": "17.55",
+       "dep": "17.55"
+      },
+      {
+       "stop": "BV. MOTTA CAMASTRA Fondaco Motta",
+       "idx": 9,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "FRANCAVILLA Piazza Annunziata (Via dei Mulini)",
+       "idx": 8,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "BV. CASTIGLIONE",
+       "idx": 7,
+       "arr": "18.15",
+       "dep": "18.15"
+      },
+      {
+       "stop": "CASTIGLIONE Piazza XI Febbraio",
+       "idx": 6,
+       "arr": "18.20",
+       "dep": "18.20"
+      },
+      {
+       "stop": "BV. CASTIGLIONE",
+       "idx": 5,
+       "arr": "18.25",
+       "dep": "18.25"
+      },
+      {
+       "stop": "VERZELLA Via Provinciale, 40",
+       "idx": 4,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "MOIO ALCANTARA Viale Papa Giovanni XXIII (Poste)",
+       "idx": 3,
+       "arr": "18.40",
+       "dep": "18.40"
+      },
+      {
+       "stop": "MALVAGNA Slargo Guarnazzo (Inizio Via Nuova)",
+       "idx": 2,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "MOIO ALCANTARA Viale Papa Giovanni XXIII (Poste)",
+       "idx": 1,
+       "arr": "18.50",
+       "dep": "18.50"
+      },
+      {
+       "stop": "ROCCELLA Piazza Col. Mandanici",
+       "idx": 0,
+       "arr": "19.05",
+       "dep": "19.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdaLunedìaVenerdì"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MESSINA Piazza Repubblica",
+       "idx": 33,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "SV. A/18 TAORMINA",
+       "idx": 25,
+       "arr": "18.40",
+       "dep": "18.40"
+      },
+      {
+       "stop": "MAZZARO'",
+       "idx": 24,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "BV. TAORMINA",
+       "idx": 22,
+       "arr": "18.50",
+       "dep": "18.50"
+      },
+      {
+       "stop": "GIARDINI Stazione FS",
+       "idx": 21,
+       "arr": "18.54",
+       "dep": "18.54"
+      },
+      {
+       "stop": "GIARDINI S. Giovanni (Via Umberto SS 114)",
+       "idx": 20,
+       "arr": "18.55",
+       "dep": "18.55"
+      },
+      {
+       "stop": "BV. SCHISO'",
+       "idx": 19,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "RECANATI Terminal Bus (Viale Dionisio)",
+       "idx": 18,
+       "arr": "19.05",
+       "dep": "19.05"
+      },
+      {
+       "stop": "BV. SCHISO'",
+       "idx": 17,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 16,
+       "arr": "19.15",
+       "dep": "19.15"
+      },
+      {
+       "stop": "TRAPPITELLO Via Via XXIV Aprile",
+       "idx": 15,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "GAGGI Piazza Vittorio Emanuele (Per Francavilla)",
+       "idx": 14,
+       "arr": "19.25",
+       "dep": "19.25"
+      },
+      {
+       "stop": "BV. GRANITI",
+       "idx": 13,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "GRANITI Piazza Manganelli",
+       "idx": 12,
+       "arr": "19.35",
+       "dep": "19.35"
+      },
+      {
+       "stop": "BV. GRANITI",
+       "idx": 11,
+       "arr": "19.40",
+       "dep": "19.40"
+      },
+      {
+       "stop": "GOLE ALCANTARA",
+       "idx": 10,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "BV. MOTTA CAMASTRA Fondaco Motta",
+       "idx": 9,
+       "arr": "19.50",
+       "dep": "19.50"
+      },
+      {
+       "stop": "FRANCAVILLA Piazza Annunziata (Via dei Mulini)",
+       "idx": 8,
+       "arr": "19.55",
+       "dep": "19.55"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

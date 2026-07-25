@@ -1,0 +1,130 @@
+{
+ "operator": "Interbus",
+ "route_id": "orari-interbus-p19",
+ "name": "Randazzo - Bronte, dir. Maniace-Petrosino",
+ "source": "ORARI_INTERBUS/p019.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "RANDAZZO Autostazione",
+    "BV. MALETTO",
+    "BV. MANIACE",
+    "C.so Fondaco/P.zza dell'Autonomia",
+    "MANIACE Petrosino/Zirilli/Piane",
+    "BV. MANIACE",
+    "PONTE CANTERA",
+    "Etnea Staz. FCE BRONTE P.zza Spedalieri"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEnelperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "C.so Fondaco/P.zza dell'Autonomia",
+       "idx": 3,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "MANIACE Petrosino/Zirilli/Piane",
+       "idx": 4,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "BV. MANIACE",
+       "idx": 5,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "PONTE CANTERA",
+       "idx": 6,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "Etnea Staz. FCE BRONTE P.zza Spedalieri",
+       "idx": 7,
+       "arr": "7.35",
+       "dep": "7.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEnelperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RANDAZZO Autostazione",
+       "idx": 0,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "BV. MALETTO",
+       "idx": 1,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "BV. MANIACE",
+       "idx": 2,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "C.so Fondaco/P.zza dell'Autonomia",
+       "idx": 3,
+       "arr": "14.10",
+       "dep": "14.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEnelperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Etnea Staz. FCE BRONTE P.zza Spedalieri",
+       "idx": 7,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "RANDAZZO Autostazione",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,271 @@
+{
+ "operator": "Magistro",
+ "route_id": "magistrosrl-orari-magistro-p11",
+ "name": "MADDALENA - Oceri Zappardino estremi inclusi. Divieto di servizio locale",
+ "source": "MAGISTROSRL__ORARI_MAGISTRO/p011.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio",
+  "Divieto di servizio locale lungo il trato comunale Acquarancio - SiGnazio - Oceri - Zappardino estremi inclusi. Divieto di servizio locale sul tratto Gioiosa marea - Patti, estremi esclusi."
+ ],
+ "directions": [
+  {
+   "stops": [
+    "MADDALENA",
+    "S.FRANCESCO",
+    "S. NICOLO'",
+    "S. LUCIA",
+    "CAFERI'",
+    "CATELLO",
+    "MAREA(P.zza Roma) GIOIOSA MAREA(P.zza Roma)",
+    "Marconi, terminal) PATTI(P.zza Marconi, terminal)",
+    "Oceri Zappardino estremi inclusi. Divieto di servizio locale"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MADDALENA",
+       "idx": 0,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "S.FRANCESCO",
+       "idx": 1,
+       "arr": "7.27",
+       "dep": "7.27"
+      },
+      {
+       "stop": "S. NICOLO'",
+       "idx": 2,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "S. LUCIA",
+       "idx": 3,
+       "arr": "7.31",
+       "dep": "7.31"
+      },
+      {
+       "stop": "CAFERI'",
+       "idx": 4,
+       "arr": "7.33",
+       "dep": "7.33"
+      },
+      {
+       "stop": "CATELLO",
+       "idx": 5,
+       "arr": "7.34",
+       "dep": "7.34"
+      },
+      {
+       "stop": "MAREA(P.zza Roma) GIOIOSA MAREA(P.zza Roma)",
+       "idx": 6,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "Marconi, terminal) PATTI(P.zza Marconi, terminal)",
+       "idx": 7,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MADDALENA",
+       "idx": 0,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "S.FRANCESCO",
+       "idx": 1,
+       "arr": "7.27",
+       "dep": "7.27"
+      },
+      {
+       "stop": "S. NICOLO'",
+       "idx": 2,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "S. LUCIA",
+       "idx": 3,
+       "arr": "7.31",
+       "dep": "7.31"
+      },
+      {
+       "stop": "CAFERI'",
+       "idx": 4,
+       "arr": "7.33",
+       "dep": "7.33"
+      },
+      {
+       "stop": "CATELLO",
+       "idx": 5,
+       "arr": "7.34",
+       "dep": "7.34"
+      },
+      {
+       "stop": "MAREA(P.zza Roma) GIOIOSA MAREA(P.zza Roma)",
+       "idx": 6,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "Marconi, terminal) PATTI(P.zza Marconi, terminal)",
+       "idx": 7,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Marconi, terminal) PATTI(P.zza Marconi, terminal)",
+       "idx": 7,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "MAREA(P.zza Roma) GIOIOSA MAREA(P.zza Roma)",
+       "idx": 6,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "CATELLO",
+       "idx": 5,
+       "arr": "13.51",
+       "dep": "13.51"
+      },
+      {
+       "stop": "CAFERI'",
+       "idx": 4,
+       "arr": "13.52",
+       "dep": "13.52"
+      },
+      {
+       "stop": "S. LUCIA",
+       "idx": 3,
+       "arr": "13.54",
+       "dep": "13.54"
+      },
+      {
+       "stop": "S. NICOLO'",
+       "idx": 2,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "S.FRANCESCO",
+       "idx": 1,
+       "arr": "13.58",
+       "dep": "13.58"
+      },
+      {
+       "stop": "MADDALENA",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Marconi, terminal) PATTI(P.zza Marconi, terminal)",
+       "idx": 7,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "MAREA(P.zza Roma) GIOIOSA MAREA(P.zza Roma)",
+       "idx": 6,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "CATELLO",
+       "idx": 5,
+       "arr": "13.51",
+       "dep": "13.51"
+      },
+      {
+       "stop": "CAFERI'",
+       "idx": 4,
+       "arr": "13.52",
+       "dep": "13.52"
+      },
+      {
+       "stop": "S. LUCIA",
+       "idx": 3,
+       "arr": "13.54",
+       "dep": "13.54"
+      },
+      {
+       "stop": "S. NICOLO'",
+       "idx": 2,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "S.FRANCESCO",
+       "idx": 1,
+       "arr": "13.58",
+       "dep": "13.58"
+      },
+      {
+       "stop": "MADDALENA",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

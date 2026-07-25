@@ -1,0 +1,903 @@
+{
+ "operator": "Salemi",
+ "route_id": "salemi-orari-p2",
+ "name": "MARSALA-VIA AMERIGO FAZIO 0 0 - PALERMO p.zza Cairoli",
+ "source": "SALEMI_ORARI/p002.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio : DIVIETO DI SERVIZIO LOCALE SULLA TRATTA MARSALA - STRASATTI - PETROSINO-MAZARA DEL VALLO (ESTREMI COMPRESI) CON POSSIBILITA' DI CARICO VIAGGIATORI A PETROSINO PER MAZARA DEL VALLO"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "MARSALA-VIA AMERIGO FAZIO 0 0",
+    "STRASATTI",
+    "PETROSINO P.zza De Vita",
+    "STRASATTI",
+    "MAZARA DEL VALLO",
+    "PALERMO P.zza Cairoli",
+    "PALERMO p.zza Cairoli"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FER."
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MARSALA-VIA AMERIGO FAZIO 0 0",
+       "idx": 0,
+       "arr": "05.15",
+       "dep": "05.15"
+      },
+      {
+       "stop": "STRASATTI",
+       "idx": 1,
+       "arr": "05.27",
+       "dep": "05.27"
+      },
+      {
+       "stop": "PETROSINO P.zza De Vita",
+       "idx": 2,
+       "arr": "05.30",
+       "dep": "05.30"
+      },
+      {
+       "stop": "STRASATTI",
+       "idx": 3,
+       "arr": "05.33",
+       "dep": "05.33"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 4,
+       "arr": "05.45",
+       "dep": "05.45"
+      },
+      {
+       "stop": "PALERMO p.zza Cairoli",
+       "idx": 6,
+       "arr": "07.55",
+       "dep": "07.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERlun/ven(1)"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MARSALA-VIA AMERIGO FAZIO 0 0",
+       "idx": 0,
+       "arr": "05.30",
+       "dep": "05.30"
+      },
+      {
+       "stop": "STRASATTI",
+       "idx": 3,
+       "arr": "05.40",
+       "dep": "05.40"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 4,
+       "arr": "06.00",
+       "dep": "06.00"
+      },
+      {
+       "stop": "PALERMO P.zza Cairoli",
+       "idx": 5,
+       "arr": "08.05",
+       "dep": "08.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FER.***"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MARSALA-VIA AMERIGO FAZIO 0 0",
+       "idx": 0,
+       "arr": "05.45",
+       "dep": "05.45"
+      },
+      {
+       "stop": "STRASATTI",
+       "idx": 3,
+       "arr": "05.55",
+       "dep": "05.55"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 4,
+       "arr": "06.15",
+       "dep": "06.15"
+      },
+      {
+       "stop": "PALERMO P.zza Cairoli",
+       "idx": 5,
+       "arr": "08.20",
+       "dep": "08.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERlun/ven***"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MARSALA-VIA AMERIGO FAZIO 0 0",
+       "idx": 0,
+       "arr": "06.30",
+       "dep": "06.30"
+      },
+      {
+       "stop": "STRASATTI",
+       "idx": 3,
+       "arr": "06.40",
+       "dep": "06.40"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 4,
+       "arr": "07.00",
+       "dep": "07.00"
+      },
+      {
+       "stop": "PALERMO P.zza Cairoli",
+       "idx": 5,
+       "arr": "09.05",
+       "dep": "09.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FER"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MARSALA-VIA AMERIGO FAZIO 0 0",
+       "idx": 0,
+       "arr": "07.30",
+       "dep": "07.30"
+      },
+      {
+       "stop": "STRASATTI",
+       "idx": 3,
+       "arr": "07.40",
+       "dep": "07.40"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 4,
+       "arr": "08.00",
+       "dep": "08.00"
+      },
+      {
+       "stop": "PALERMO P.zza Cairoli",
+       "idx": 5,
+       "arr": "10.05",
+       "dep": "10.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FER"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MARSALA-VIA AMERIGO FAZIO 0 0",
+       "idx": 0,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "STRASATTI",
+       "idx": 3,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 4,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "PALERMO P.zza Cairoli",
+       "idx": 5,
+       "arr": "11.35",
+       "dep": "11.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "13",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FER"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MARSALA-VIA AMERIGO FAZIO 0 0",
+       "idx": 0,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "STRASATTI",
+       "idx": 3,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 4,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "PALERMO P.zza Cairoli",
+       "idx": 5,
+       "arr": "15.35",
+       "dep": "15.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "15",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "DOM."
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MARSALA-VIA AMERIGO FAZIO 0 0",
+       "idx": 0,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "STRASATTI",
+       "idx": 3,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 4,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "PALERMO P.zza Cairoli",
+       "idx": 5,
+       "arr": "10.05",
+       "dep": "10.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "17",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "16/6",
+       "to": "15/9"
+      },
+      "raw": "FEST16/6-15/9"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MARSALA-VIA AMERIGO FAZIO 0 0",
+       "idx": 0,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "STRASATTI",
+       "idx": 3,
+       "arr": "10.40",
+       "dep": "10.40"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 4,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "PALERMO P.zza Cairoli",
+       "idx": 5,
+       "arr": "13.05",
+       "dep": "13.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "19",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "DOM."
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MARSALA-VIA AMERIGO FAZIO 0 0",
+       "idx": 0,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "STRASATTI",
+       "idx": 3,
+       "arr": "17.10",
+       "dep": "17.10"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 4,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "PALERMO P.zza Cairoli",
+       "idx": 5,
+       "arr": "19.35",
+       "dep": "19.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "21",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "16/6",
+       "to": "15/9"
+      },
+      "raw": "FEST16/6-15/9"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MARSALA-VIA AMERIGO FAZIO 0 0",
+       "idx": 0,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "STRASATTI",
+       "idx": 3,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 4,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "PALERMO P.zza Cairoli",
+       "idx": 5,
+       "arr": "20.35",
+       "dep": "20.35"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "PALERMO P.zza Cairoli 0",
+    "C\\VETRANO -A.S. Lo Svincolo",
+    "MAZARA DEL VALLO",
+    "STRASATTI",
+    "PETROSINO P.zza De Vita",
+    "STRASATTI",
+    "MARSALA-VIA AMERIGO FAZIO",
+    "MARSALA-VIA AMERIGO FAZIO",
+    "MARSALA-VIA AMERIGO FAZIO",
+    "Note (*) lun/ven = dal lunedì al venerdì lun/sab ( 1 ) = non si effettua del 01 agosto al",
+    "aggiornamento ottobre 2015 Fermate a Palermo: Viale Lazio (Ufficio"
+   ],
+   "trips": [
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "lun/sab"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO P.zza Cairoli 0",
+       "idx": 0,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "C\\VETRANO -A.S. Lo Svincolo",
+       "idx": 1,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 2,
+       "arr": "10.20",
+       "dep": "10.20"
+      },
+      {
+       "stop": "STRASATTI",
+       "idx": 3,
+       "arr": "10.40",
+       "dep": "10.40"
+      },
+      {
+       "stop": "MARSALA-VIA AMERIGO FAZIO",
+       "idx": 7,
+       "arr": "10.50",
+       "dep": "10.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FER.lun/ven(1)"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO P.zza Cairoli 0",
+       "idx": 0,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 2,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "STRASATTI",
+       "idx": 3,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "MARSALA-VIA AMERIGO FAZIO",
+       "idx": 6,
+       "arr": "14.35",
+       "dep": "14.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FER."
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO P.zza Cairoli 0",
+       "idx": 0,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 2,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "STRASATTI",
+       "idx": 3,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "MARSALA-VIA AMERIGO FAZIO",
+       "idx": 6,
+       "arr": "15.35",
+       "dep": "15.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FER."
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO P.zza Cairoli 0",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 2,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "STRASATTI",
+       "idx": 3,
+       "arr": "16.25",
+       "dep": "16.25"
+      },
+      {
+       "stop": "MARSALA-VIA AMERIGO FAZIO",
+       "idx": 6,
+       "arr": "16.35",
+       "dep": "16.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FER."
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO P.zza Cairoli 0",
+       "idx": 0,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 2,
+       "arr": "17.05",
+       "dep": "17.05"
+      },
+      {
+       "stop": "STRASATTI",
+       "idx": 3,
+       "arr": "17.25",
+       "dep": "17.25"
+      },
+      {
+       "stop": "MARSALA-VIA AMERIGO FAZIO",
+       "idx": 6,
+       "arr": "17.35",
+       "dep": "17.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FER.***"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO P.zza Cairoli 0",
+       "idx": 0,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 2,
+       "arr": "19.05",
+       "dep": "19.05"
+      },
+      {
+       "stop": "STRASATTI",
+       "idx": 3,
+       "arr": "19.22",
+       "dep": "19.22"
+      },
+      {
+       "stop": "PETROSINO P.zza De Vita",
+       "idx": 4,
+       "arr": "19.25",
+       "dep": "19.25"
+      },
+      {
+       "stop": "STRASATTI",
+       "idx": 5,
+       "arr": "19.28",
+       "dep": "19.28"
+      },
+      {
+       "stop": "MARSALA-VIA AMERIGO FAZIO",
+       "idx": 8,
+       "arr": "19.40",
+       "dep": "19.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "14",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "lun/ven"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO P.zza Cairoli 0",
+       "idx": 0,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 2,
+       "arr": "20.05",
+       "dep": "20.05"
+      },
+      {
+       "stop": "STRASATTI",
+       "idx": 3,
+       "arr": "20.25",
+       "dep": "20.25"
+      },
+      {
+       "stop": "MARSALA-VIA AMERIGO FAZIO",
+       "idx": 6,
+       "arr": "20.35",
+       "dep": "20.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "16",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "16/6",
+       "to": "15/9"
+      },
+      "raw": "FEST16/6-15/9"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO P.zza Cairoli 0",
+       "idx": 0,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "C\\VETRANO -A.S. Lo Svincolo",
+       "idx": 1,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 2,
+       "arr": "9.35",
+       "dep": "9.35"
+      },
+      {
+       "stop": "STRASATTI",
+       "idx": 3,
+       "arr": "9.55",
+       "dep": "9.55"
+      },
+      {
+       "stop": "MARSALA-VIA AMERIGO FAZIO",
+       "idx": 7,
+       "arr": "10.10",
+       "dep": "10.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "18",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "DOM."
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO P.zza Cairoli 0",
+       "idx": 0,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 2,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "STRASATTI",
+       "idx": 3,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "MARSALA-VIA AMERIGO FAZIO",
+       "idx": 6,
+       "arr": "13.05",
+       "dep": "13.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "20",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "16/6",
+       "to": "15/9"
+      },
+      "raw": "FEST16/6-15/9"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO P.zza Cairoli 0",
+       "idx": 0,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 2,
+       "arr": "16.35",
+       "dep": "16.35"
+      },
+      {
+       "stop": "STRASATTI",
+       "idx": 3,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "MARSALA-VIA AMERIGO FAZIO",
+       "idx": 6,
+       "arr": "17.05",
+       "dep": "17.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "22",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "DOM."
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO P.zza Cairoli 0",
+       "idx": 0,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 2,
+       "arr": "22.05",
+       "dep": "22.05"
+      },
+      {
+       "stop": "STRASATTI",
+       "idx": 3,
+       "arr": "22.25",
+       "dep": "22.25"
+      },
+      {
+       "stop": "MARSALA-VIA AMERIGO FAZIO",
+       "idx": 6,
+       "arr": "22.35",
+       "dep": "22.35"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

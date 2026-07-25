@@ -1,0 +1,83 @@
+{
+ "operator": "Anselmo Cacciatore",
+ "route_id": "anselmocacciatore-cacciatore-p1",
+ "name": "RAFFADALI - LA DOMENICA, ETC….",
+ "source": "ANSELMOCACCIATORE__CACCIATORE_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio N.1 C.C. STAGIONALE GIORNALIERA LINEA: RAFFADALI - CATTOLICA ERACLEA - ERACLEA MINOA Periodo di Esercizio dal 05/06 al 31/08."
+ ],
+ "directions": [
+  {
+   "stops": [
+    "RAFFADALI (Via Nazionale) RAFFADALI (Via Nazionale)",
+    "CATTOLICA ERACLEA (Via Oreto) CATTOLICA ERACLEA (Via Oreto)",
+    "ERACLEA MINOA ERACLEA MINOA",
+    "LA DOMENICA, ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "5",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "StagionaleFERIALEFESTIVAe"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RAFFADALI (Via Nazionale) RAFFADALI (Via Nazionale)",
+       "idx": 0,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "CATTOLICA ERACLEA (Via Oreto) CATTOLICA ERACLEA (Via Oreto)",
+       "idx": 1,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "ERACLEA MINOA ERACLEA MINOA",
+       "idx": 2,
+       "arr": "9.30",
+       "dep": "9.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "StagionaleFERIALEFESTIVAe"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "ERACLEA MINOA ERACLEA MINOA",
+       "idx": 2,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "CATTOLICA ERACLEA (Via Oreto) CATTOLICA ERACLEA (Via Oreto)",
+       "idx": 1,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "RAFFADALI (Via Nazionale) RAFFADALI (Via Nazionale)",
+       "idx": 0,
+       "arr": "20.10",
+       "dep": "20.10"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

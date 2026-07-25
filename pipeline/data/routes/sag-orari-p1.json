@@ -1,0 +1,515 @@
+{
+ "operator": "Sag",
+ "route_id": "sag-orari-p1",
+ "name": "0 ALTARELLO - TORRE ARCH.",
+ "source": "SAG_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni NESSUNA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "0 ALTARELLO (Viale delle Provincie)",
+    "GIARRE (Piazza Duomo)",
+    "RIPOSTO (Piazza Matteotti)",
+    "TORRE ARCH. (Via Marco Polo)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "0 ALTARELLO (Viale delle Provincie)",
+       "idx": 0,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "GIARRE (Piazza Duomo)",
+       "idx": 1,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "RIPOSTO (Piazza Matteotti)",
+       "idx": 2,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "TORRE ARCH. (Via Marco Polo)",
+       "idx": 3,
+       "arr": "7.15",
+       "dep": "7.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "0 ALTARELLO (Viale delle Provincie)",
+       "idx": 0,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "GIARRE (Piazza Duomo)",
+       "idx": 1,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "RIPOSTO (Piazza Matteotti)",
+       "idx": 2,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "TORRE ARCH. (Via Marco Polo)",
+       "idx": 3,
+       "arr": "9.20",
+       "dep": "9.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialedal15/09al10/06"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "0 ALTARELLO (Viale delle Provincie)",
+       "idx": 0,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "GIARRE (Piazza Duomo)",
+       "idx": 1,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "RIPOSTO (Piazza Matteotti)",
+       "idx": 2,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "TORRE ARCH. (Via Marco Polo)",
+       "idx": 3,
+       "arr": "13.20",
+       "dep": "13.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Ferialedal11-6al14-9"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "0 ALTARELLO (Viale delle Provincie)",
+       "idx": 0,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "GIARRE (Piazza Duomo)",
+       "idx": 1,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "RIPOSTO (Piazza Matteotti)",
+       "idx": 2,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "TORRE ARCH. (Via Marco Polo)",
+       "idx": 3,
+       "arr": "12.55",
+       "dep": "12.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "0 ALTARELLO (Viale delle Provincie)",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "GIARRE (Piazza Duomo)",
+       "idx": 1,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "RIPOSTO (Piazza Matteotti)",
+       "idx": 2,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "TORRE ARCH. (Via Marco Polo)",
+       "idx": 3,
+       "arr": "14.35",
+       "dep": "14.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "0 ALTARELLO (Viale delle Provincie)",
+       "idx": 0,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "GIARRE (Piazza Duomo)",
+       "idx": 1,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "RIPOSTO (Piazza Matteotti)",
+       "idx": 2,
+       "arr": "16.25",
+       "dep": "16.25"
+      },
+      {
+       "stop": "TORRE ARCH. (Via Marco Polo)",
+       "idx": 3,
+       "arr": "16.30",
+       "dep": "16.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "13",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "0 ALTARELLO (Viale delle Provincie)",
+       "idx": 0,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "GIARRE (Piazza Duomo)",
+       "idx": 1,
+       "arr": "13.55",
+       "dep": "13.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "TORRE ARCH. (Via Marco Polo)",
+       "idx": 3,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "RIPOSTO (Piazza Matteotti)",
+       "idx": 2,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "GIARRE (Piazza Duomo)",
+       "idx": 1,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "0 ALTARELLO (Viale delle Provincie)",
+       "idx": 0,
+       "arr": "7.40",
+       "dep": "7.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "TORRE ARCH. (Via Marco Polo)",
+       "idx": 3,
+       "arr": "9.25",
+       "dep": "9.25"
+      },
+      {
+       "stop": "RIPOSTO (Piazza Matteotti)",
+       "idx": 2,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "GIARRE (Piazza Duomo)",
+       "idx": 1,
+       "arr": "9.40",
+       "dep": "9.40"
+      },
+      {
+       "stop": "0 ALTARELLO (Viale delle Provincie)",
+       "idx": 0,
+       "arr": "9.45",
+       "dep": "9.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialedal15/09al10/06"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "TORRE ARCH. (Via Marco Polo)",
+       "idx": 3,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "RIPOSTO (Piazza Matteotti)",
+       "idx": 2,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "GIARRE (Piazza Duomo)",
+       "idx": 1,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "0 ALTARELLO (Viale delle Provincie)",
+       "idx": 0,
+       "arr": "13.50",
+       "dep": "13.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Ferialedal11-6al14-9"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "TORRE ARCH. (Via Marco Polo)",
+       "idx": 3,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "RIPOSTO (Piazza Matteotti)",
+       "idx": 2,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "GIARRE (Piazza Duomo)",
+       "idx": 1,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "0 ALTARELLO (Viale delle Provincie)",
+       "idx": 0,
+       "arr": "13.20",
+       "dep": "13.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "TORRE ARCH. (Via Marco Polo)",
+       "idx": 3,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "RIPOSTO (Piazza Matteotti)",
+       "idx": 2,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "GIARRE (Piazza Duomo)",
+       "idx": 1,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "0 ALTARELLO (Viale delle Provincie)",
+       "idx": 0,
+       "arr": "15.00",
+       "dep": "15.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "TORRE ARCH. (Via Marco Polo)",
+       "idx": 3,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "RIPOSTO (Piazza Matteotti)",
+       "idx": 2,
+       "arr": "16.35",
+       "dep": "16.35"
+      },
+      {
+       "stop": "GIARRE (Piazza Duomo)",
+       "idx": 1,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "0 ALTARELLO (Viale delle Provincie)",
+       "idx": 0,
+       "arr": "16.50",
+       "dep": "16.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "22",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "GIARRE (Piazza Duomo)",
+       "idx": 1,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "0 ALTARELLO (Viale delle Provincie)",
+       "idx": 0,
+       "arr": "13.35",
+       "dep": "13.35"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

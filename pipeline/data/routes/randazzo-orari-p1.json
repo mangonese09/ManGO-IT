@@ -1,0 +1,126 @@
+{
+ "operator": "Randazzo",
+ "route_id": "randazzo-orari-p1",
+ "name": "Capolinea:Caccamo:Porta Euracea - Fermata: Ist.D'Arte Km.49,6",
+ "source": "RANDAZZO_ORARI/p001.json",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "Capolinea:Caccamo:Porta Euracea",
+    "Fermata Istituto Magistrale",
+    "Fermata Piazza.Cappuccini",
+    "Fermata:Termini I. Alta Piazza S'Antonio",
+    "Fermata:Termini I. Staz.FF.SS.",
+    "Fermata .Cefalù via Aldo Moro- Staz.FF.SS.",
+    "Fermata: Ist.D'Arte Km.49,6"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "fer."
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capolinea:Caccamo:Porta Euracea",
+       "idx": 0,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "Fermata Istituto Magistrale",
+       "idx": 1,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "Fermata Piazza.Cappuccini",
+       "idx": 2,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Fermata:Termini I. Alta Piazza S'Antonio",
+       "idx": 3,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "Fermata:Termini I. Staz.FF.SS.",
+       "idx": 4,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "Fermata .Cefalù via Aldo Moro- Staz.FF.SS.",
+       "idx": 5,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "Fermata: Ist.D'Arte Km.49,6",
+       "idx": 6,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Fermata: Ist.D'Arte Km.49,6",
+       "idx": 6,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "Fermata:Termini I. Staz.FF.SS.",
+       "idx": 4,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "Fermata:Termini I. Alta Piazza S'Antonio",
+       "idx": 3,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "Fermata Piazza.Cappuccini",
+       "idx": 2,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "Fermata Istituto Magistrale",
+       "idx": 1,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "Capolinea:Caccamo:Porta Euracea",
+       "idx": 0,
+       "arr": "15.20",
+       "dep": "15.20"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

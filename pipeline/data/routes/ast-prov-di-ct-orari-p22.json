@@ -1,0 +1,108 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-ct-orari-p22",
+ "name": "Catania - Catania",
+ "source": "AST_prov._di_CT_-_ORARI/p022.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio NESSUNA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Catania (piazza Giovanni XXIII°)",
+    "Ficarazzi (via Tripoli)",
+    "Vampolieri (via dello Ionio)",
+    "Acicastello (via Re Martino)",
+    "Catania (piazza Giovanni XXIII°)"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEINVERNALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 0,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "Ficarazzi (via Tripoli)",
+       "idx": 1,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Vampolieri (via dello Ionio)",
+       "idx": 2,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Acicastello (via Re Martino)",
+       "idx": 3,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 4,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Ficarazzi (via Tripoli)",
+       "idx": 1,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "Vampolieri (via dello Ionio)",
+       "idx": 2,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "Acicastello (via Re Martino)",
+       "idx": 3,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 4,
+       "arr": "15.45",
+       "dep": "15.45"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

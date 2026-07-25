@@ -1,0 +1,65 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-me-orari-792",
+ "name": "MESSINA via Bonino - TONNARELLA via Camparia Portorosa",
+ "source": "AST_prov.di_ME_-_ORARI/p016.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio NESSUNA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "MESSINA via Bonino",
+    "Merì via Nazionale",
+    "BARCELLONA via Gramsci",
+    "TERME VIGLIATORE -via del Mare",
+    "TONNARELLA via Camparia Portorosa"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESCLUSOSABATO"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MESSINA via Bonino",
+       "idx": 0,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "Merì via Nazionale",
+       "idx": 1,
+       "arr": "11.55",
+       "dep": "11.55"
+      },
+      {
+       "stop": "BARCELLONA via Gramsci",
+       "idx": 2,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "TERME VIGLIATORE -via del Mare",
+       "idx": 3,
+       "arr": "12.20",
+       "dep": "12.20"
+      },
+      {
+       "stop": "TONNARELLA via Camparia Portorosa",
+       "idx": 4,
+       "arr": "12.30",
+       "dep": "12.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

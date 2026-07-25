@@ -1,0 +1,506 @@
+{
+ "operator": "Interbus",
+ "route_id": "orari-interbus-p15",
+ "name": "Mandanici - Messina con diramazione S.Teresa Riva",
+ "source": "ORARI_INTERBUS/p015.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "MANDANICI (Piazza Carmelo Fasti)",
+    "Bivio Locadi",
+    "PAGLIARA (Via Margherita-Uff. PT)",
+    "ROCCHENERE (Via Risorgimento 42)",
+    "ROCCALUMERA Lungomare (Via C.Colombo 19)",
+    "ROCCALUMERA (Bv. Allume)",
+    "ROCCALUMERA Lungomare (Via C.Colombo 19)",
+    "FURCI SICULO (Via Lungomare) Per Messina",
+    "S.TERESA RIVA (Pozzo Lazzaro)",
+    "ALI' TERME (Piazza Municipio)",
+    "MESSINA (Piazza della Repubblica)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdaLunediaVenerdì"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ROCCALUMERA Lungomare (Via C.Colombo 19)",
+       "idx": 4,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "ROCCALUMERA (Bv. Allume)",
+       "idx": 5,
+       "arr": "6.17",
+       "dep": "6.17"
+      },
+      {
+       "stop": "ALI' TERME (Piazza Municipio)",
+       "idx": 9,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "MESSINA (Piazza della Repubblica)",
+       "idx": 10,
+       "arr": "7.05",
+       "dep": "7.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "daLunedia"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MANDANICI (Piazza Carmelo Fasti)",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Bivio Locadi",
+       "idx": 1,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "PAGLIARA (Via Margherita-Uff. PT)",
+       "idx": 2,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "ROCCHENERE (Via Risorgimento 42)",
+       "idx": 3,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "ROCCALUMERA Lungomare (Via C.Colombo 19)",
+       "idx": 4,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "ROCCALUMERA (Bv. Allume)",
+       "idx": 5,
+       "arr": "7.22",
+       "dep": "7.22"
+      },
+      {
+       "stop": "ROCCALUMERA Lungomare (Via C.Colombo 19)",
+       "idx": 6,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "FURCI SICULO (Via Lungomare) Per Messina",
+       "idx": 7,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "S.TERESA RIVA (Pozzo Lazzaro)",
+       "idx": 8,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "FERIALEnelperiodononscolasticodalunedìavenerdì"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MANDANICI (Piazza Carmelo Fasti)",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Bivio Locadi",
+       "idx": 1,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "PAGLIARA (Via Margherita-Uff. PT)",
+       "idx": 2,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "ROCCHENERE (Via Risorgimento 42)",
+       "idx": 3,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "ROCCALUMERA Lungomare (Via C.Colombo 19)",
+       "idx": 4,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "ALI' TERME (Piazza Municipio)",
+       "idx": 9,
+       "arr": "14.45",
+       "dep": "14.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEdalunedìavenerdìnelperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MANDANICI (Piazza Carmelo Fasti)",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Bivio Locadi",
+       "idx": 1,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "PAGLIARA (Via Margherita-Uff. PT)",
+       "idx": 2,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "ROCCHENERE (Via Risorgimento 42)",
+       "idx": 3,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "ROCCALUMERA Lungomare (Via C.Colombo 19)",
+       "idx": 4,
+       "arr": "14.35",
+       "dep": "14.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdalunedìavenerdì"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ROCCALUMERA Lungomare (Via C.Colombo 19)",
+       "idx": 4,
+       "arr": "18.35",
+       "dep": "18.35"
+      },
+      {
+       "stop": "ROCCALUMERA (Bv. Allume)",
+       "idx": 5,
+       "arr": "18.37",
+       "dep": "18.37"
+      },
+      {
+       "stop": "ROCCALUMERA Lungomare (Via C.Colombo 19)",
+       "idx": 6,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "FURCI SICULO (Via Lungomare) Per Messina",
+       "idx": 7,
+       "arr": "18.50",
+       "dep": "18.50"
+      },
+      {
+       "stop": "S.TERESA RIVA (Pozzo Lazzaro)",
+       "idx": 8,
+       "arr": "19.00",
+       "dep": "19.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdaLunediaVenerdì"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "S.TERESA RIVA (Pozzo Lazzaro)",
+       "idx": 8,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "FURCI SICULO (Via Lungomare) Per Messina",
+       "idx": 7,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "ROCCALUMERA Lungomare (Via C.Colombo 19)",
+       "idx": 6,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "ROCCALUMERA (Bv. Allume)",
+       "idx": 5,
+       "arr": "6.13",
+       "dep": "6.13"
+      },
+      {
+       "stop": "ROCCALUMERA Lungomare (Via C.Colombo 19)",
+       "idx": 4,
+       "arr": "6.15",
+       "dep": "6.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "FERIALEnelperiodononscolasticodalunedìavenerdì"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "ALI' TERME (Piazza Municipio)",
+       "idx": 9,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "ROCCALUMERA Lungomare (Via C.Colombo 19)",
+       "idx": 4,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "ROCCHENERE (Via Risorgimento 42)",
+       "idx": 3,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "PAGLIARA (Via Margherita-Uff. PT)",
+       "idx": 2,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "Bivio Locadi",
+       "idx": 1,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "MANDANICI (Piazza Carmelo Fasti)",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdaLunediaVenerdì"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "S.TERESA RIVA (Pozzo Lazzaro)",
+       "idx": 8,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "FURCI SICULO (Via Lungomare) Per Messina",
+       "idx": 7,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "ROCCALUMERA Lungomare (Via C.Colombo 19)",
+       "idx": 6,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "ROCCALUMERA (Bv. Allume)",
+       "idx": 5,
+       "arr": "13.48",
+       "dep": "13.48"
+      },
+      {
+       "stop": "ROCCALUMERA Lungomare (Via C.Colombo 19)",
+       "idx": 4,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "ROCCHENERE (Via Risorgimento 42)",
+       "idx": 3,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "PAGLIARA (Via Margherita-Uff. PT)",
+       "idx": 2,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Bivio Locadi",
+       "idx": 1,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "MANDANICI (Piazza Carmelo Fasti)",
+       "idx": 0,
+       "arr": "14.10",
+       "dep": "14.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEdalunedìavenerdìnelperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "ROCCALUMERA Lungomare (Via C.Colombo 19)",
+       "idx": 4,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "ROCCHENERE (Via Risorgimento 42)",
+       "idx": 3,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "PAGLIARA (Via Margherita-Uff. PT)",
+       "idx": 2,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "Bivio Locadi",
+       "idx": 1,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "MANDANICI (Piazza Carmelo Fasti)",
+       "idx": 0,
+       "arr": "15.35",
+       "dep": "15.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdalunedìavenerdì"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MESSINA (Piazza della Repubblica)",
+       "idx": 10,
+       "arr": "17.40",
+       "dep": "17.40"
+      },
+      {
+       "stop": "ALI' TERME (Piazza Municipio)",
+       "idx": 9,
+       "arr": "18.25",
+       "dep": "18.25"
+      },
+      {
+       "stop": "ROCCALUMERA (Bv. Allume)",
+       "idx": 5,
+       "arr": "18.33",
+       "dep": "18.33"
+      },
+      {
+       "stop": "ROCCALUMERA Lungomare (Via C.Colombo 19)",
+       "idx": 4,
+       "arr": "18.35",
+       "dep": "18.35"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,181 @@
+{
+ "operator": "Giuntabus",
+ "route_id": "giuntabus-giuntabus-orari-p16",
+ "name": "Milazzo Milazzo 24 - SOLO LA DOMENICA, ETC….",
+ "source": "Giuntabus__GIUNTABUS_ORARI/p016.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio DIVIETO DI SERVIZIO LICALE DA PONTE GALLO A MESSINA ESTREMI COMPRESI"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Milazzo Milazzo 24",
+    "Grazia Grazia 18.6",
+    "Olivarella Olivarella 17",
+    "Archi Archi 14",
+    "Giammoro Giammoro 11.6",
+    "Monforte Marina Monforte Marina 9",
+    "Scala Torregrotta Scala Torregrotta 8.1",
+    "Spadafora Spadafora 4.9",
+    "Rometta Rometta 2.4",
+    "Villafranca A/20 Villafranca A/20 0",
+    "Messina",
+    "SOLO LA DOMENICA, ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Milazzo Milazzo 24",
+       "idx": 0,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "Grazia Grazia 18.6",
+       "idx": 1,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "Olivarella Olivarella 17",
+       "idx": 2,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "Archi Archi 14",
+       "idx": 3,
+       "arr": "8.35",
+       "dep": "8.35"
+      },
+      {
+       "stop": "Giammoro Giammoro 11.6",
+       "idx": 4,
+       "arr": "8.40",
+       "dep": "8.40"
+      },
+      {
+       "stop": "Monforte Marina Monforte Marina 9",
+       "idx": 5,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "Scala Torregrotta Scala Torregrotta 8.1",
+       "idx": 6,
+       "arr": "8.50",
+       "dep": "8.50"
+      },
+      {
+       "stop": "Spadafora Spadafora 4.9",
+       "idx": 7,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "Rometta Rometta 2.4",
+       "idx": 8,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "Villafranca A/20 Villafranca A/20 0",
+       "idx": 9,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "Messina",
+       "idx": 10,
+       "arr": "9.30",
+       "dep": "9.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Villafranca A/20 Villafranca A/20 0",
+       "idx": 9,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Rometta Rometta 2.4",
+       "idx": 8,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Spadafora Spadafora 4.9",
+       "idx": 7,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "Scala Torregrotta Scala Torregrotta 8.1",
+       "idx": 6,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Monforte Marina Monforte Marina 9",
+       "idx": 5,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "Giammoro Giammoro 11.6",
+       "idx": 4,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "Archi Archi 14",
+       "idx": 3,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Olivarella Olivarella 17",
+       "idx": 2,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Grazia Grazia 18.6",
+       "idx": 1,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "Milazzo Milazzo 24",
+       "idx": 0,
+       "arr": "7.40",
+       "dep": "7.40"
+      }
+     ],
+     "valid": false
+    }
+   ]
+  }
+ ]
+}

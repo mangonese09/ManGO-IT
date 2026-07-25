@@ -1,0 +1,1562 @@
+{
+ "operator": "Magistro",
+ "route_id": "magistrosrl-orari-magistro-p1",
+ "name": "TORTORICI - l'autobus dell'autolinea C.da Forte-Messina.L'impresa è autorizzata a convogliare al bivio di Piraino sull'autolinea proveniente da Tortorici",
+ "source": "MAGISTROSRL__ORARI_MAGISTRO/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio",
+  "Divieto di servizio locale tra Capo D'Orlando e Messina, e vv,estremi compresi.E' fatto obbligo di porre in coincidenza a Brolo città,l'autobus proveniente da Tortorici, con l'autobus dell'autolinea C.da Forte-Messina.L'impresa è autorizzata a convogliare al bivio di Piraino sull'autolinea provenien"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "TORTORICI ( Piazza Faranda) TORTORICI ( Piazza Faranda)",
+    "S.GIORGIO (Bivio Sfaranda S.GIORGIO (Bivio Sfaranda",
+    "SFARANDASFARANDA+==",
+    "S.GIORGIO (Bivio Sfaranda S.GIORGIO (Bivio Sfaranda",
+    "CASTELL'UMBERTO (Centro) CASTELL'UMBERTO (Centro)",
+    "FICHERUZZA in FICHERUZZA in",
+    "NASO (Bazia) NASO (Bazia)",
+    "MAINA MAINA",
+    "CAPO D'ORLANDO (FF.SS. Staz.) CAPO D'ORLANDO (FF.SS. Staz.)",
+    "BROLO (Bv. Staz. F.S.) BROLO (Bv. Staz. F.S.)",
+    "PIRAINO (Bivio S.Angelo SS. 113) PIRAINO (Bivio S.Angelo SS. 113)",
+    "GIOIOSA MAREA (P.zza Roma) GIOIOSA MAREA (P.zza Roma)",
+    "PATTI (Piazza Marconi) PATTI (Piazza Marconi)",
+    "PATTI (Svincolo A20) PATTI (Svincolo A20)",
+    "MESSINA ( Via S.M. Alemanna) MESSINA ( Via S.M. Alemanna)",
+    "MESSINA POLICLINICO MESSINA POLICLINICO",
+    "l'autobus dell'autolinea C.da Forte-Messina.L'impresa è autorizzata a convogliare al bivio di Piraino sull'autolinea proveniente da Tortorici"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "PFEERARILOIAD1L4OE1N61E/0L9/0"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CAPO D'ORLANDO (FF.SS. Staz.) CAPO D'ORLANDO (FF.SS. Staz.)",
+       "idx": 8,
+       "arr": "5.15",
+       "dep": "5.15"
+      },
+      {
+       "stop": "BROLO (Bv. Staz. F.S.) BROLO (Bv. Staz. F.S.)",
+       "idx": 9,
+       "arr": "5.30",
+       "dep": "5.30"
+      },
+      {
+       "stop": "MESSINA ( Via S.M. Alemanna) MESSINA ( Via S.M. Alemanna)",
+       "idx": 14,
+       "arr": "6.30",
+       "dep": "6.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FLERIALEDAALLRVUIENNEEDRI'1D61IPEALOD14O/0/09"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TORTORICI ( Piazza Faranda) TORTORICI ( Piazza Faranda)",
+       "idx": 0,
+       "arr": "4.50",
+       "dep": "4.50"
+      },
+      {
+       "stop": "S.GIORGIO (Bivio Sfaranda S.GIORGIO (Bivio Sfaranda",
+       "idx": 1,
+       "arr": "5.00",
+       "dep": "5.00"
+      },
+      {
+       "stop": "SFARANDASFARANDA+==",
+       "idx": 2,
+       "arr": "5.05",
+       "dep": "5.05"
+      },
+      {
+       "stop": "S.GIORGIO (Bivio Sfaranda S.GIORGIO (Bivio Sfaranda",
+       "idx": 3,
+       "arr": "5.10",
+       "dep": "5.10"
+      },
+      {
+       "stop": "CASTELL'UMBERTO (Centro) CASTELL'UMBERTO (Centro)",
+       "idx": 4,
+       "arr": "5.15",
+       "dep": "5.15"
+      },
+      {
+       "stop": "FICHERUZZA in FICHERUZZA in",
+       "idx": 5,
+       "arr": "5.20",
+       "dep": "5.20"
+      },
+      {
+       "stop": "NASO (Bazia) NASO (Bazia)",
+       "idx": 6,
+       "arr": "5.25",
+       "dep": "5.25"
+      },
+      {
+       "stop": "MAINA MAINA",
+       "idx": 7,
+       "arr": "5.40",
+       "dep": "5.40"
+      },
+      {
+       "stop": "CAPO D'ORLANDO (FF.SS. Staz.) CAPO D'ORLANDO (FF.SS. Staz.)",
+       "idx": 8,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "BROLO (Bv. Staz. F.S.) BROLO (Bv. Staz. F.S.)",
+       "idx": 9,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "PIRAINO (Bivio S.Angelo SS. 113) PIRAINO (Bivio S.Angelo SS. 113)",
+       "idx": 10,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "GIOIOSA MAREA (P.zza Roma) GIOIOSA MAREA (P.zza Roma)",
+       "idx": 11,
+       "arr": "6.25",
+       "dep": "6.25"
+      },
+      {
+       "stop": "PATTI (Piazza Marconi) PATTI (Piazza Marconi)",
+       "idx": 12,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "PATTI (Svincolo A20) PATTI (Svincolo A20)",
+       "idx": 13,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "MESSINA ( Via S.M. Alemanna) MESSINA ( Via S.M. Alemanna)",
+       "idx": 14,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "MESSINA POLICLINICO MESSINA POLICLINICO",
+       "idx": 15,
+       "arr": "8.15",
+       "dep": "8.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CAPO D'ORLANDO (FF.SS. Staz.) CAPO D'ORLANDO (FF.SS. Staz.)",
+       "idx": 8,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "BROLO (Bv. Staz. F.S.) BROLO (Bv. Staz. F.S.)",
+       "idx": 9,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "MESSINA ( Via S.M. Alemanna) MESSINA ( Via S.M. Alemanna)",
+       "idx": 14,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "MESSINA POLICLINICO MESSINA POLICLINICO",
+       "idx": 15,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEDALAF"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "BROLO (Bv. Staz. F.S.) BROLO (Bv. Staz. F.S.)",
+       "idx": 9,
+       "arr": "5.45",
+       "dep": "5.45"
+      },
+      {
+       "stop": "PIRAINO (Bivio S.Angelo SS. 113) PIRAINO (Bivio S.Angelo SS. 113)",
+       "idx": 10,
+       "arr": "5.50",
+       "dep": "5.50"
+      },
+      {
+       "stop": "GIOIOSA MAREA (P.zza Roma) GIOIOSA MAREA (P.zza Roma)",
+       "idx": 11,
+       "arr": "5.55",
+       "dep": "5.55"
+      },
+      {
+       "stop": "PATTI (Piazza Marconi) PATTI (Piazza Marconi)",
+       "idx": 12,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "PATTI (Svincolo A20) PATTI (Svincolo A20)",
+       "idx": 13,
+       "arr": "6.25",
+       "dep": "6.25"
+      },
+      {
+       "stop": "MESSINA ( Via S.M. Alemanna) MESSINA ( Via S.M. Alemanna)",
+       "idx": 14,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "MESSINA POLICLINICO MESSINA POLICLINICO",
+       "idx": 15,
+       "arr": "10.48",
+       "dep": "10.48"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "LVERLUNIANELREEDDII''E"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "BROLO (Bv. Staz. F.S.) BROLO (Bv. Staz. F.S.)",
+       "idx": 9,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "PIRAINO (Bivio S.Angelo SS. 113) PIRAINO (Bivio S.Angelo SS. 113)",
+       "idx": 10,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "GIOIOSA MAREA (P.zza Roma) GIOIOSA MAREA (P.zza Roma)",
+       "idx": 11,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "PATTI (Piazza Marconi) PATTI (Piazza Marconi)",
+       "idx": 12,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "PATTI (Svincolo A20) PATTI (Svincolo A20)",
+       "idx": 13,
+       "arr": "8.40",
+       "dep": "8.40"
+      },
+      {
+       "stop": "MESSINA ( Via S.M. Alemanna) MESSINA ( Via S.M. Alemanna)",
+       "idx": 14,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "MESSINA POLICLINICO MESSINA POLICLINICO",
+       "idx": 15,
+       "arr": "10.00",
+       "dep": "10.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "DDII''FERIALEDALAF"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TORTORICI ( Piazza Faranda) TORTORICI ( Piazza Faranda)",
+       "idx": 0,
+       "arr": "6.25",
+       "dep": "6.25"
+      },
+      {
+       "stop": "S.GIORGIO (Bivio Sfaranda S.GIORGIO (Bivio Sfaranda",
+       "idx": 1,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "SFARANDASFARANDA+==",
+       "idx": 2,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "S.GIORGIO (Bivio Sfaranda S.GIORGIO (Bivio Sfaranda",
+       "idx": 3,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "CASTELL'UMBERTO (Centro) CASTELL'UMBERTO (Centro)",
+       "idx": 4,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "FICHERUZZA in FICHERUZZA in",
+       "idx": 5,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "NASO (Bazia) NASO (Bazia)",
+       "idx": 6,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "MAINA MAINA",
+       "idx": 7,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "CAPO D'ORLANDO (FF.SS. Staz.) CAPO D'ORLANDO (FF.SS. Staz.)",
+       "idx": 8,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "BROLO (Bv. Staz. F.S.) BROLO (Bv. Staz. F.S.)",
+       "idx": 9,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "MESSINA ( Via S.M. Alemanna) MESSINA ( Via S.M. Alemanna)",
+       "idx": 14,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "MESSINA POLICLINICO MESSINA POLICLINICO",
+       "idx": 15,
+       "arr": "9.30",
+       "dep": "9.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "13",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "LVERLUNIANELREEDDII''E"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CAPO D'ORLANDO (FF.SS. Staz.) CAPO D'ORLANDO (FF.SS. Staz.)",
+       "idx": 8,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "BROLO (Bv. Staz. F.S.) BROLO (Bv. Staz. F.S.)",
+       "idx": 9,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "MESSINA ( Via S.M. Alemanna) MESSINA ( Via S.M. Alemanna)",
+       "idx": 14,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "MESSINA POLICLINICO MESSINA POLICLINICO",
+       "idx": 15,
+       "arr": "10.15",
+       "dep": "10.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "15",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "II''FEsinRIopAleaLrsEiotdcooci"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TORTORICI ( Piazza Faranda) TORTORICI ( Piazza Faranda)",
+       "idx": 0,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "S.GIORGIO (Bivio Sfaranda S.GIORGIO (Bivio Sfaranda",
+       "idx": 1,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "S.GIORGIO (Bivio Sfaranda S.GIORGIO (Bivio Sfaranda",
+       "idx": 3,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "CASTELL'UMBERTO (Centro) CASTELL'UMBERTO (Centro)",
+       "idx": 4,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "FICHERUZZA in FICHERUZZA in",
+       "idx": 5,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "NASO (Bazia) NASO (Bazia)",
+       "idx": 6,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "MAINA MAINA",
+       "idx": 7,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "CAPO D'ORLANDO (FF.SS. Staz.) CAPO D'ORLANDO (FF.SS. Staz.)",
+       "idx": 8,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "17",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FEicnRIpAlaeLsrEitoidosoco"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SFARANDASFARANDA+==",
+       "idx": 2,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "S.GIORGIO (Bivio Sfaranda S.GIORGIO (Bivio Sfaranda",
+       "idx": 3,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "CASTELL'UMBERTO (Centro) CASTELL'UMBERTO (Centro)",
+       "idx": 4,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "FICHERUZZA in FICHERUZZA in",
+       "idx": 5,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "NASO (Bazia) NASO (Bazia)",
+       "idx": 6,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "MAINA MAINA",
+       "idx": 7,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "CAPO D'ORLANDO (FF.SS. Staz.) CAPO D'ORLANDO (FF.SS. Staz.)",
+       "idx": 8,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "19",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FEicnRIpAlaeLsrEitoidosoco"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "NASO (Bazia) NASO (Bazia)",
+       "idx": 6,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "MAINA MAINA",
+       "idx": 7,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "CAPO D'ORLANDO (FF.SS. Staz.) CAPO D'ORLANDO (FF.SS. Staz.)",
+       "idx": 8,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "21",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FEDRAIALEII''LVUNNEEDLI'AI'LERD"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CAPO D'ORLANDO (FF.SS. Staz.) CAPO D'ORLANDO (FF.SS. Staz.)",
+       "idx": 8,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "BROLO (Bv. Staz. F.S.) BROLO (Bv. Staz. F.S.)",
+       "idx": 9,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "MESSINA ( Via S.M. Alemanna) MESSINA ( Via S.M. Alemanna)",
+       "idx": 14,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "MESSINA POLICLINICO MESSINA POLICLINICO",
+       "idx": 15,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "23",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "EFERIAiLEAI'Lcpoeriosdtnocslaio"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TORTORICI ( Piazza Faranda) TORTORICI ( Piazza Faranda)",
+       "idx": 0,
+       "arr": "12.15",
+       "dep": "12.15"
+      },
+      {
+       "stop": "S.GIORGIO (Bivio Sfaranda S.GIORGIO (Bivio Sfaranda",
+       "idx": 1,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "S.GIORGIO (Bivio Sfaranda S.GIORGIO (Bivio Sfaranda",
+       "idx": 3,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "CASTELL'UMBERTO (Centro) CASTELL'UMBERTO (Centro)",
+       "idx": 4,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "FICHERUZZA in FICHERUZZA in",
+       "idx": 5,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "NASO (Bazia) NASO (Bazia)",
+       "idx": 6,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "MAINA MAINA",
+       "idx": 7,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "CAPO D'ORLANDO (FF.SS. Staz.) CAPO D'ORLANDO (FF.SS. Staz.)",
+       "idx": 8,
+       "arr": "13.30",
+       "dep": "13.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "25",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FEP/0RE6IARLILOED1N1O/EL15A09"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TORTORICI ( Piazza Faranda) TORTORICI ( Piazza Faranda)",
+       "idx": 0,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "S.GIORGIO (Bivio Sfaranda S.GIORGIO (Bivio Sfaranda",
+       "idx": 1,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "SFARANDASFARANDA+==",
+       "idx": 2,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "S.GIORGIO (Bivio Sfaranda S.GIORGIO (Bivio Sfaranda",
+       "idx": 3,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "CASTELL'UMBERTO (Centro) CASTELL'UMBERTO (Centro)",
+       "idx": 4,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "FICHERUZZA in FICHERUZZA in",
+       "idx": 5,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "NASO (Bazia) NASO (Bazia)",
+       "idx": 6,
+       "arr": "15.45",
+       "dep": "15.45"
+      },
+      {
+       "stop": "MAINA MAINA",
+       "idx": 7,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "CAPO D'ORLANDO (FF.SS. Staz.) CAPO D'ORLANDO (FF.SS. Staz.)",
+       "idx": 8,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "BROLO (Bv. Staz. F.S.) BROLO (Bv. Staz. F.S.)",
+       "idx": 9,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "MESSINA ( Via S.M. Alemanna) MESSINA ( Via S.M. Alemanna)",
+       "idx": 14,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "MESSINA POLICLINICO MESSINA POLICLINICO",
+       "idx": 15,
+       "arr": "19.00",
+       "dep": "19.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALidtEcpoeriosnocslaio"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAPO D'ORLANDO (FF.SS. Staz.) CAPO D'ORLANDO (FF.SS. Staz.)",
+       "idx": 8,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "MAINA MAINA",
+       "idx": 7,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "NASO (Bazia) NASO (Bazia)",
+       "idx": 6,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "FICHERUZZA in FICHERUZZA in",
+       "idx": 5,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "CASTELL'UMBERTO (Centro) CASTELL'UMBERTO (Centro)",
+       "idx": 4,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "S.GIORGIO (Bivio Sfaranda S.GIORGIO (Bivio Sfaranda",
+       "idx": 3,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "S.GIORGIO (Bivio Sfaranda S.GIORGIO (Bivio Sfaranda",
+       "idx": 1,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "TORTORICI ( Piazza Faranda) TORTORICI ( Piazza Faranda)",
+       "idx": 0,
+       "arr": "8.20",
+       "dep": "8.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FER40IEIALLEP1ENR//9O6ADOo110L"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MESSINA ( Via S.M. Alemanna) MESSINA ( Via S.M. Alemanna)",
+       "idx": 14,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "BROLO (Bv. Staz. F.S.) BROLO (Bv. Staz. F.S.)",
+       "idx": 9,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "CAPO D'ORLANDO (FF.SS. Staz.) CAPO D'ORLANDO (FF.SS. Staz.)",
+       "idx": 8,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEP1ERNEI/9OL6ADO11/400L"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAPO D'ORLANDO (FF.SS. Staz.) CAPO D'ORLANDO (FF.SS. Staz.)",
+       "idx": 8,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "MAINA MAINA",
+       "idx": 7,
+       "arr": "10.45",
+       "dep": "10.45"
+      },
+      {
+       "stop": "NASO (Bazia) NASO (Bazia)",
+       "idx": 6,
+       "arr": "10.55",
+       "dep": "10.55"
+      },
+      {
+       "stop": "FICHERUZZA in FICHERUZZA in",
+       "idx": 5,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "CASTELL'UMBERTO (Centro) CASTELL'UMBERTO (Centro)",
+       "idx": 4,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "S.GIORGIO (Bivio Sfaranda S.GIORGIO (Bivio Sfaranda",
+       "idx": 3,
+       "arr": "11.20",
+       "dep": "11.20"
+      },
+      {
+       "stop": "SFARANDASFARANDA+==",
+       "idx": 2,
+       "arr": "11.25",
+       "dep": "11.25"
+      },
+      {
+       "stop": "S.GIORGIO (Bivio Sfaranda S.GIORGIO (Bivio Sfaranda",
+       "idx": 1,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "TORTORICI ( Piazza Faranda) TORTORICI ( Piazza Faranda)",
+       "idx": 0,
+       "arr": "11.35",
+       "dep": "11.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MESSINA POLICLINICO MESSINA POLICLINICO",
+       "idx": 15,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "MESSINA ( Via S.M. Alemanna) MESSINA ( Via S.M. Alemanna)",
+       "idx": 14,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "BROLO (Bv. Staz. F.S.) BROLO (Bv. Staz. F.S.)",
+       "idx": 9,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "CAPO D'ORLANDO (FF.SS. Staz.) CAPO D'ORLANDO (FF.SS. Staz.)",
+       "idx": 8,
+       "arr": "12.15",
+       "dep": "12.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALLEP1ENR/EI/6O9ADLO51000"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAPO D'ORLANDO (FF.SS. Staz.) CAPO D'ORLANDO (FF.SS. Staz.)",
+       "idx": 8,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "MAINA MAINA",
+       "idx": 7,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "NASO (Bazia) NASO (Bazia)",
+       "idx": 6,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "FICHERUZZA in FICHERUZZA in",
+       "idx": 5,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "CASTELL'UMBERTO (Centro) CASTELL'UMBERTO (Centro)",
+       "idx": 4,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "S.GIORGIO (Bivio Sfaranda S.GIORGIO (Bivio Sfaranda",
+       "idx": 3,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "S.GIORGIO (Bivio Sfaranda S.GIORGIO (Bivio Sfaranda",
+       "idx": 1,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "TORTORICI ( Piazza Faranda) TORTORICI ( Piazza Faranda)",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FEicnRIplAaeLsrEtiiocdooso"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAPO D'ORLANDO (FF.SS. Staz.) CAPO D'ORLANDO (FF.SS. Staz.)",
+       "idx": 8,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "MAINA MAINA",
+       "idx": 7,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "NASO (Bazia) NASO (Bazia)",
+       "idx": 6,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "FICHERUZZA in FICHERUZZA in",
+       "idx": 5,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "CASTELL'UMBERTO (Centro) CASTELL'UMBERTO (Centro)",
+       "idx": 4,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "S.GIORGIO (Bivio Sfaranda S.GIORGIO (Bivio Sfaranda",
+       "idx": 3,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "SFARANDASFARANDA+==",
+       "idx": 2,
+       "arr": "13.50",
+       "dep": "13.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "14",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "oFEicnRIplAaeLsrEtioicdooso"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAPO D'ORLANDO (FF.SS. Staz.) CAPO D'ORLANDO (FF.SS. Staz.)",
+       "idx": 8,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "MAINA MAINA",
+       "idx": 7,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "NASO (Bazia) NASO (Bazia)",
+       "idx": 6,
+       "arr": "13.30",
+       "dep": "13.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "16",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FEsinRIopAleaLrsEiotdcooci"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAPO D'ORLANDO (FF.SS. Staz.) CAPO D'ORLANDO (FF.SS. Staz.)",
+       "idx": 8,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "MAINA MAINA",
+       "idx": 7,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "NASO (Bazia) NASO (Bazia)",
+       "idx": 6,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "FICHERUZZA in FICHERUZZA in",
+       "idx": 5,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "CASTELL'UMBERTO (Centro) CASTELL'UMBERTO (Centro)",
+       "idx": 4,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "S.GIORGIO (Bivio Sfaranda S.GIORGIO (Bivio Sfaranda",
+       "idx": 3,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "S.GIORGIO (Bivio Sfaranda S.GIORGIO (Bivio Sfaranda",
+       "idx": 1,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "TORTORICI ( Piazza Faranda) TORTORICI ( Piazza Faranda)",
+       "idx": 0,
+       "arr": "14.50",
+       "dep": "14.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "18",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ooFERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MESSINA POLICLINICO MESSINA POLICLINICO",
+       "idx": 15,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "MESSINA ( Via S.M. Alemanna) MESSINA ( Via S.M. Alemanna)",
+       "idx": 14,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "PATTI (Svincolo A20) PATTI (Svincolo A20)",
+       "idx": 13,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "PATTI (Piazza Marconi) PATTI (Piazza Marconi)",
+       "idx": 12,
+       "arr": "13.28",
+       "dep": "13.28"
+      },
+      {
+       "stop": "GIOIOSA MAREA (P.zza Roma) GIOIOSA MAREA (P.zza Roma)",
+       "idx": 11,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "PIRAINO (Bivio S.Angelo SS. 113) PIRAINO (Bivio S.Angelo SS. 113)",
+       "idx": 10,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "BROLO (Bv. Staz. F.S.) BROLO (Bv. Staz. F.S.)",
+       "idx": 9,
+       "arr": "14.05",
+       "dep": "14.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "20",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALELVU"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MESSINA POLICLINICO MESSINA POLICLINICO",
+       "idx": 15,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "MESSINA ( Via S.M. Alemanna) MESSINA ( Via S.M. Alemanna)",
+       "idx": 14,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "BROLO (Bv. Staz. F.S.) BROLO (Bv. Staz. F.S.)",
+       "idx": 9,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "CAPO D'ORLANDO (FF.SS. Staz.) CAPO D'ORLANDO (FF.SS. Staz.)",
+       "idx": 8,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "MAINA MAINA",
+       "idx": 7,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "NASO (Bazia) NASO (Bazia)",
+       "idx": 6,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "FICHERUZZA in FICHERUZZA in",
+       "idx": 5,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "CASTELL'UMBERTO (Centro) CASTELL'UMBERTO (Centro)",
+       "idx": 4,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "S.GIORGIO (Bivio Sfaranda S.GIORGIO (Bivio Sfaranda",
+       "idx": 3,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "SFARANDASFARANDA+==",
+       "idx": 2,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "S.GIORGIO (Bivio Sfaranda S.GIORGIO (Bivio Sfaranda",
+       "idx": 1,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "TORTORICI ( Piazza Faranda) TORTORICI ( Piazza Faranda)",
+       "idx": 0,
+       "arr": "15.35",
+       "dep": "15.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "22",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FEDRAIALENNEEDLI'AI'LERD"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MESSINA POLICLINICO MESSINA POLICLINICO",
+       "idx": 15,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "MESSINA ( Via S.M. Alemanna) MESSINA ( Via S.M. Alemanna)",
+       "idx": 14,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "PATTI (Svincolo A20) PATTI (Svincolo A20)",
+       "idx": 13,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "PATTI (Piazza Marconi) PATTI (Piazza Marconi)",
+       "idx": 12,
+       "arr": "14.28",
+       "dep": "14.28"
+      },
+      {
+       "stop": "GIOIOSA MAREA (P.zza Roma) GIOIOSA MAREA (P.zza Roma)",
+       "idx": 11,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "PIRAINO (Bivio S.Angelo SS. 113) PIRAINO (Bivio S.Angelo SS. 113)",
+       "idx": 10,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "BROLO (Bv. Staz. F.S.) BROLO (Bv. Staz. F.S.)",
+       "idx": 9,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "CAPO D'ORLANDO (FF.SS. Staz.) CAPO D'ORLANDO (FF.SS. Staz.)",
+       "idx": 8,
+       "arr": "17.15",
+       "dep": "17.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "24",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "'LFLEVURENIANELEDERI'DDAIA'LL"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MESSINA POLICLINICO MESSINA POLICLINICO",
+       "idx": 15,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "MESSINA ( Via S.M. Alemanna) MESSINA ( Via S.M. Alemanna)",
+       "idx": 14,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "BROLO (Bv. Staz. F.S.) BROLO (Bv. Staz. F.S.)",
+       "idx": 9,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "CAPO D'ORLANDO (FF.SS. Staz.) CAPO D'ORLANDO (FF.SS. Staz.)",
+       "idx": 8,
+       "arr": "18.15",
+       "dep": "18.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "28",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FLERIALEDAALLRVUIENNEEDRI'1D61IPEAOLD14O/0/0"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MESSINA POLICLINICO MESSINA POLICLINICO",
+       "idx": 15,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "MESSINA ( Via S.M. Alemanna) MESSINA ( Via S.M. Alemanna)",
+       "idx": 14,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "PATTI (Svincolo A20) PATTI (Svincolo A20)",
+       "idx": 13,
+       "arr": "18.20",
+       "dep": "18.20"
+      },
+      {
+       "stop": "PATTI (Piazza Marconi) PATTI (Piazza Marconi)",
+       "idx": 12,
+       "arr": "18.28",
+       "dep": "18.28"
+      },
+      {
+       "stop": "GIOIOSA MAREA (P.zza Roma) GIOIOSA MAREA (P.zza Roma)",
+       "idx": 11,
+       "arr": "18.50",
+       "dep": "18.50"
+      },
+      {
+       "stop": "PIRAINO (Bivio S.Angelo SS. 113) PIRAINO (Bivio S.Angelo SS. 113)",
+       "idx": 10,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "BROLO (Bv. Staz. F.S.) BROLO (Bv. Staz. F.S.)",
+       "idx": 9,
+       "arr": "19.05",
+       "dep": "19.05"
+      },
+      {
+       "stop": "CAPO D'ORLANDO (FF.SS. Staz.) CAPO D'ORLANDO (FF.SS. Staz.)",
+       "idx": 8,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "MAINA MAINA",
+       "idx": 7,
+       "arr": "19.35",
+       "dep": "19.35"
+      },
+      {
+       "stop": "NASO (Bazia) NASO (Bazia)",
+       "idx": 6,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "FICHERUZZA in FICHERUZZA in",
+       "idx": 5,
+       "arr": "19.55",
+       "dep": "19.55"
+      },
+      {
+       "stop": "CASTELL'UMBERTO (Centro) CASTELL'UMBERTO (Centro)",
+       "idx": 4,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "S.GIORGIO (Bivio Sfaranda S.GIORGIO (Bivio Sfaranda",
+       "idx": 3,
+       "arr": "20.05",
+       "dep": "20.05"
+      },
+      {
+       "stop": "SFARANDASFARANDA+==",
+       "idx": 2,
+       "arr": "20.15",
+       "dep": "20.15"
+      },
+      {
+       "stop": "S.GIORGIO (Bivio Sfaranda S.GIORGIO (Bivio Sfaranda",
+       "idx": 1,
+       "arr": "20.20",
+       "dep": "20.20"
+      },
+      {
+       "stop": "TORTORICI ( Piazza Faranda) TORTORICI ( Piazza Faranda)",
+       "idx": 0,
+       "arr": "20.30",
+       "dep": "20.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "30",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALDEDAALV1LEUN0NEEaRlDII''d/La6l1/9140"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MESSINA POLICLINICO MESSINA POLICLINICO",
+       "idx": 15,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "MESSINA ( Via S.M. Alemanna) MESSINA ( Via S.M. Alemanna)",
+       "idx": 14,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "BROLO (Bv. Staz. F.S.) BROLO (Bv. Staz. F.S.)",
+       "idx": 9,
+       "arr": "21.00",
+       "dep": "21.00"
+      },
+      {
+       "stop": "CAPO D'ORLANDO (FF.SS. Staz.) CAPO D'ORLANDO (FF.SS. Staz.)",
+       "idx": 8,
+       "arr": "21.15",
+       "dep": "21.15"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

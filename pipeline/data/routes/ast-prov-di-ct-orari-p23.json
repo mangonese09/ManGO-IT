@@ -1,0 +1,82 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-ct-orari-p23",
+ "name": "LEONFORTE - DITTAINO",
+ "source": "AST_prov._di_CT_-_ORARI/p023.json",
+ "prescriptions": [
+  "Prescrizioni NESSUNA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "LEONFORTE (corso Umberto I°)",
+    "ASSORO (piazza 1° Maggio)",
+    "DITTAINO (piazzale Stazione)"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "STAZIONAMENTIKMFERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "LEONFORTE (corso Umberto I°)",
+       "idx": 0,
+       "arr": "6.25",
+       "dep": "6.25"
+      },
+      {
+       "stop": "ASSORO (piazza 1° Maggio)",
+       "idx": 1,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "DITTAINO (piazzale Stazione)",
+       "idx": 2,
+       "arr": "7.10",
+       "dep": "7.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "KMFERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "DITTAINO (piazzale Stazione)",
+       "idx": 2,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "ASSORO (piazza 1° Maggio)",
+       "idx": 1,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "LEONFORTE (corso Umberto I°)",
+       "idx": 0,
+       "arr": "15.25",
+       "dep": "15.25"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

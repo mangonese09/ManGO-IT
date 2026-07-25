@@ -1,0 +1,83 @@
+{
+ "operator": "Ibla",
+ "route_id": "ibla-orari-p1",
+ "name": "IBLA TOUR S.C. - VIA EDISON, 7 - 92029 RAVANUSA (AG) Codice",
+ "source": "IBLA_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "di Partenza Capolinea di Partenza",
+    "intermedia Fermata intermedia",
+    "di Arrivo Capolinea di Arrivo",
+    "SOLO LA DOMENICA, ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "di Partenza Capolinea di Partenza",
+       "idx": 0,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "18.40",
+       "dep": "18.40"
+      },
+      {
+       "stop": "di Arrivo Capolinea di Arrivo",
+       "idx": 2,
+       "arr": "18.45",
+       "dep": "18.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "di Arrivo Capolinea di Arrivo",
+       "idx": 2,
+       "arr": "19.05",
+       "dep": "19.05"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "19.15",
+       "dep": "19.15"
+      },
+      {
+       "stop": "di Partenza Capolinea di Partenza",
+       "idx": 0,
+       "arr": "19.20",
+       "dep": "19.20"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

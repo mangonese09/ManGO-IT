@@ -1,0 +1,95 @@
+{
+ "operator": "Salvatore Lumia",
+ "route_id": "salvatorelumiasrl-lumia-orar-p9",
+ "name": "BURGIO BURGIO - BIVONA BIVONA",
+ "source": "SALVATORELUMIASRL__LUMIA_ORARI(1)/p009.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "BURGIO BURGIO",
+    "VILLAFRANCA SICULA VILLAFRANCA SICULA",
+    "LUCCA SICULA LUCCA SICULA",
+    "BIVONA BIVONA"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "KMFERIALEinperiodoscolasticoBURGIO"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "BURGIO BURGIO",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "VILLAFRANCA SICULA VILLAFRANCA SICULA",
+       "idx": 1,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "LUCCA SICULA LUCCA SICULA",
+       "idx": 2,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "BIVONA BIVONA",
+       "idx": 3,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "STAZIONAMENTIKMFERIALEinperiodoscolasticoBURGIO"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "BIVONA BIVONA",
+       "idx": 3,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "LUCCA SICULA LUCCA SICULA",
+       "idx": 2,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "VILLAFRANCA SICULA VILLAFRANCA SICULA",
+       "idx": 1,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "BURGIO BURGIO",
+       "idx": 0,
+       "arr": "15.10",
+       "dep": "15.10"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

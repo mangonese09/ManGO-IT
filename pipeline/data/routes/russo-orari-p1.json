@@ -1,0 +1,1806 @@
+{
+ "operator": "Russo",
+ "route_id": "russo-orari-p1",
+ "name": "San Vito Lo Capo San Vito Lo Capo - Palermo Palermo",
+ "source": "RUSSO_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio: Divieto di servizio locale tra San Vito lo Capo e Valderice estremi compresi e viceversa",
+  "Divieto sdi servizio locale da B. Terrasini(lato TP) e Palermo estremi esclusi",
+  "Divieto sdi servizio locale tra Balestrate e Castellammare del Golfo e Valderice, Valderice -San Vito Lo Capo"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "San Vito Lo Capo San Vito Lo Capo",
+    "Castelluzzo Castelluzzo",
+    "Custonaci Custonaci",
+    "B.Custonaci- Bonagia B.Custonaci Bonagia \" \"",
+    "Valderice Valderice\"\"",
+    "B.San Marco B.San Marco \" \"",
+    "Crocevie Crocevie\"\"",
+    "Bivio Lentina Bivio Lentina \" \"",
+    "Biv.Buseto Palizzolo Biv.Buseto Palizzolo",
+    "Balata di Baida Balata di Baida",
+    "Biv.Fraginesi Biv. Fraginesi \" \"",
+    "C/mare del Golfo C/mare Del Golfo",
+    "Alcamo Marina Alcamo Marina \" \"",
+    "Balestrate Balestrate\"\"",
+    "Trapeto Trapeto\"",
+    "B.Terrasini (lato TP) B.Terrasini (lato TP) \" \"",
+    "B.Terrasini (lato PA) B.Terrasini (lato PA) \" \"",
+    "B. Cinisi B.Cinisi \" \"",
+    "Palermo Palermo"
+   ],
+   "trips": [
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "LEdal01/07al31/08"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "San Vito Lo Capo San Vito Lo Capo",
+       "idx": 0,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "Castelluzzo Castelluzzo",
+       "idx": 1,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "Custonaci Custonaci",
+       "idx": 2,
+       "arr": "11.20",
+       "dep": "11.20"
+      },
+      {
+       "stop": "Biv.Buseto Palizzolo Biv.Buseto Palizzolo",
+       "idx": 8,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "Balata di Baida Balata di Baida",
+       "idx": 9,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "C/mare del Golfo C/mare Del Golfo",
+       "idx": 11,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "Palermo Palermo",
+       "idx": 18,
+       "arr": "13.10",
+       "dep": "13.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "DOMENICALEEESTAIVLI3D1A/0L801/"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "San Vito Lo Capo San Vito Lo Capo",
+       "idx": 0,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "Castelluzzo Castelluzzo",
+       "idx": 1,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "Custonaci Custonaci",
+       "idx": 2,
+       "arr": "11.20",
+       "dep": "11.20"
+      },
+      {
+       "stop": "Biv.Buseto Palizzolo Biv.Buseto Palizzolo",
+       "idx": 8,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "Balata di Baida Balata di Baida",
+       "idx": 9,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "Biv.Fraginesi Biv. Fraginesi \" \"",
+       "idx": 10,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "C/mare del Golfo C/mare Del Golfo",
+       "idx": 11,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "Palermo Palermo",
+       "idx": 18,
+       "arr": "13.10",
+       "dep": "13.10"
+      }
+     ],
+     "valid": false
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdal01/07al31/08"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "San Vito Lo Capo San Vito Lo Capo",
+       "idx": 0,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "Castelluzzo Castelluzzo",
+       "idx": 1,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "Custonaci Custonaci",
+       "idx": 2,
+       "arr": "11.20",
+       "dep": "11.20"
+      },
+      {
+       "stop": "Biv.Buseto Palizzolo Biv.Buseto Palizzolo",
+       "idx": 8,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "Balata di Baida Balata di Baida",
+       "idx": 9,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "C/mare del Golfo C/mare Del Golfo",
+       "idx": 11,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "Palermo Palermo",
+       "idx": 18,
+       "arr": "13.10",
+       "dep": "13.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "C/mare del Golfo C/mare Del Golfo",
+       "idx": 11,
+       "arr": "5.45",
+       "dep": "5.45"
+      },
+      {
+       "stop": "Alcamo Marina Alcamo Marina \" \"",
+       "idx": 12,
+       "arr": "5.55",
+       "dep": "5.55"
+      },
+      {
+       "stop": "Balestrate Balestrate\"\"",
+       "idx": 13,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "Trapeto Trapeto\"",
+       "idx": 14,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "B.Terrasini (lato TP) B.Terrasini (lato TP) \" \"",
+       "idx": 15,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "B.Terrasini (lato PA) B.Terrasini (lato PA) \" \"",
+       "idx": 16,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "B. Cinisi B.Cinisi \" \"",
+       "idx": 17,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "Palermo Palermo",
+       "idx": 18,
+       "arr": "7.15",
+       "dep": "7.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "C/mare del Golfo C/mare Del Golfo",
+       "idx": 11,
+       "arr": "5.45",
+       "dep": "5.45"
+      },
+      {
+       "stop": "Alcamo Marina Alcamo Marina \" \"",
+       "idx": 12,
+       "arr": "5.55",
+       "dep": "5.55"
+      },
+      {
+       "stop": "Balestrate Balestrate\"\"",
+       "idx": 13,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "Trapeto Trapeto\"",
+       "idx": 14,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "B.Terrasini (lato TP) B.Terrasini (lato TP) \" \"",
+       "idx": 15,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "B.Terrasini (lato PA) B.Terrasini (lato PA) \" \"",
+       "idx": 16,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "B. Cinisi B.Cinisi \" \"",
+       "idx": 17,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "Palermo Palermo",
+       "idx": 18,
+       "arr": "7.15",
+       "dep": "7.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "San Vito Lo Capo San Vito Lo Capo",
+       "idx": 0,
+       "arr": "5.45",
+       "dep": "5.45"
+      },
+      {
+       "stop": "Castelluzzo Castelluzzo",
+       "idx": 1,
+       "arr": "5.50",
+       "dep": "5.50"
+      },
+      {
+       "stop": "Custonaci Custonaci",
+       "idx": 2,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "Biv.Buseto Palizzolo Biv.Buseto Palizzolo",
+       "idx": 8,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "Balata di Baida Balata di Baida",
+       "idx": 9,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "Biv.Fraginesi Biv. Fraginesi \" \"",
+       "idx": 10,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "C/mare del Golfo C/mare Del Golfo",
+       "idx": 11,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "Palermo Palermo",
+       "idx": 18,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "C/mare del Golfo C/mare Del Golfo",
+       "idx": 11,
+       "arr": "5.45",
+       "dep": "5.45"
+      },
+      {
+       "stop": "Alcamo Marina Alcamo Marina \" \"",
+       "idx": 12,
+       "arr": "5.55",
+       "dep": "5.55"
+      },
+      {
+       "stop": "Balestrate Balestrate\"\"",
+       "idx": 13,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "Trapeto Trapeto\"",
+       "idx": 14,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "B.Terrasini (lato TP) B.Terrasini (lato TP) \" \"",
+       "idx": 15,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "B.Terrasini (lato PA) B.Terrasini (lato PA) \" \"",
+       "idx": 16,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "B. Cinisi B.Cinisi \" \"",
+       "idx": 17,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "Palermo Palermo",
+       "idx": 18,
+       "arr": "7.15",
+       "dep": "7.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEDAL01/06AL15/10"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "San Vito Lo Capo San Vito Lo Capo",
+       "idx": 0,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "Castelluzzo Castelluzzo",
+       "idx": 1,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "Custonaci Custonaci",
+       "idx": 2,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "B.Custonaci- Bonagia B.Custonaci Bonagia \" \"",
+       "idx": 3,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "Valderice Valderice\"\"",
+       "idx": 4,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "B.San Marco B.San Marco \" \"",
+       "idx": 5,
+       "arr": "13.42",
+       "dep": "13.42"
+      },
+      {
+       "stop": "Crocevie Crocevie\"\"",
+       "idx": 6,
+       "arr": "13.48",
+       "dep": "13.48"
+      },
+      {
+       "stop": "Bivio Lentina Bivio Lentina \" \"",
+       "idx": 7,
+       "arr": "13.52",
+       "dep": "13.52"
+      },
+      {
+       "stop": "Biv.Buseto Palizzolo Biv.Buseto Palizzolo",
+       "idx": 8,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Balata di Baida Balata di Baida",
+       "idx": 9,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "Biv.Fraginesi Biv. Fraginesi \" \"",
+       "idx": 10,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "C/mare del Golfo C/mare Del Golfo",
+       "idx": 11,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Alcamo Marina Alcamo Marina \" \"",
+       "idx": 12,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "Balestrate Balestrate\"\"",
+       "idx": 13,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "Trapeto Trapeto\"",
+       "idx": 14,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "B.Terrasini (lato TP) B.Terrasini (lato TP) \" \"",
+       "idx": 15,
+       "arr": "15.08",
+       "dep": "15.08"
+      },
+      {
+       "stop": "B.Terrasini (lato PA) B.Terrasini (lato PA) \" \"",
+       "idx": 16,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "B. Cinisi B.Cinisi \" \"",
+       "idx": 17,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "Palermo Palermo",
+       "idx": 18,
+       "arr": "16.00",
+       "dep": "16.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdal15/06al15/09"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "C/mare del Golfo C/mare Del Golfo",
+       "idx": 11,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "Alcamo Marina Alcamo Marina \" \"",
+       "idx": 12,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "Balestrate Balestrate\"\"",
+       "idx": 13,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "Trapeto Trapeto\"",
+       "idx": 14,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "B.Terrasini (lato TP) B.Terrasini (lato TP) \" \"",
+       "idx": 15,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "B.Terrasini (lato PA) B.Terrasini (lato PA) \" \"",
+       "idx": 16,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "B. Cinisi B.Cinisi \" \"",
+       "idx": 17,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "Palermo Palermo",
+       "idx": 18,
+       "arr": "17.00",
+       "dep": "17.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdal01/07al31/08"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "C/mare del Golfo C/mare Del Golfo",
+       "idx": 11,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "Alcamo Marina Alcamo Marina \" \"",
+       "idx": 12,
+       "arr": "9.50",
+       "dep": "9.50"
+      },
+      {
+       "stop": "Balestrate Balestrate\"\"",
+       "idx": 13,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "Trapeto Trapeto\"",
+       "idx": 14,
+       "arr": "10.10",
+       "dep": "10.10"
+      },
+      {
+       "stop": "B.Terrasini (lato TP) B.Terrasini (lato TP) \" \"",
+       "idx": 15,
+       "arr": "10.18",
+       "dep": "10.18"
+      },
+      {
+       "stop": "B.Terrasini (lato PA) B.Terrasini (lato PA) \" \"",
+       "idx": 16,
+       "arr": "10.20",
+       "dep": "10.20"
+      },
+      {
+       "stop": "B. Cinisi B.Cinisi \" \"",
+       "idx": 17,
+       "arr": "10.35",
+       "dep": "10.35"
+      },
+      {
+       "stop": "Palermo Palermo",
+       "idx": 18,
+       "arr": "11.30",
+       "dep": "11.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdal16/10al31/5"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "C/mare del Golfo C/mare Del Golfo",
+       "idx": 11,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Alcamo Marina Alcamo Marina \" \"",
+       "idx": 12,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "Balestrate Balestrate\"\"",
+       "idx": 13,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "Trapeto Trapeto\"",
+       "idx": 14,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "B.Terrasini (lato TP) B.Terrasini (lato TP) \" \"",
+       "idx": 15,
+       "arr": "15.08",
+       "dep": "15.08"
+      },
+      {
+       "stop": "B.Terrasini (lato PA) B.Terrasini (lato PA) \" \"",
+       "idx": 16,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "B. Cinisi B.Cinisi \" \"",
+       "idx": 17,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "Palermo Palermo",
+       "idx": 18,
+       "arr": "16.00",
+       "dep": "16.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEDAL01/07AL31/08"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "C/mare del Golfo C/mare Del Golfo",
+       "idx": 11,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "Palermo Palermo",
+       "idx": 18,
+       "arr": "12.15",
+       "dep": "12.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "MENICALEdal01/06al31/08"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "San Vito Lo Capo San Vito Lo Capo",
+       "idx": 0,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "Castelluzzo Castelluzzo",
+       "idx": 1,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "Custonaci Custonaci",
+       "idx": 2,
+       "arr": "18.20",
+       "dep": "18.20"
+      },
+      {
+       "stop": "Biv.Buseto Palizzolo Biv.Buseto Palizzolo",
+       "idx": 8,
+       "arr": "18.42",
+       "dep": "18.42"
+      },
+      {
+       "stop": "Balata di Baida Balata di Baida",
+       "idx": 9,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "C/mare del Golfo C/mare Del Golfo",
+       "idx": 11,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "Palermo Palermo",
+       "idx": 18,
+       "arr": "20.15",
+       "dep": "20.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "DOMENICALEEESTAIVLI3D1A/0L801/0"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "San Vito Lo Capo San Vito Lo Capo",
+       "idx": 0,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "Castelluzzo Castelluzzo",
+       "idx": 1,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "Custonaci Custonaci",
+       "idx": 2,
+       "arr": "11.20",
+       "dep": "11.20"
+      },
+      {
+       "stop": "Biv.Buseto Palizzolo Biv.Buseto Palizzolo",
+       "idx": 8,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "Balata di Baida Balata di Baida",
+       "idx": 9,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "Biv.Fraginesi Biv. Fraginesi \" \"",
+       "idx": 10,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "C/mare del Golfo C/mare Del Golfo",
+       "idx": 11,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "Palermo Palermo",
+       "idx": 18,
+       "arr": "13.10",
+       "dep": "13.10"
+      }
+     ],
+     "valid": false
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Ferialedal01/07al31/08"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "San Vito Lo Capo San Vito Lo Capo",
+       "idx": 0,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "Castelluzzo Castelluzzo",
+       "idx": 1,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "Custonaci Custonaci",
+       "idx": 2,
+       "arr": "11.20",
+       "dep": "11.20"
+      },
+      {
+       "stop": "Biv.Buseto Palizzolo Biv.Buseto Palizzolo",
+       "idx": 8,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "Balata di Baida Balata di Baida",
+       "idx": 9,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "C/mare del Golfo C/mare Del Golfo",
+       "idx": 11,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "Palermo Palermo",
+       "idx": 18,
+       "arr": "13.10",
+       "dep": "13.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Ferialedal01/07al31/080"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "San Vito Lo Capo San Vito Lo Capo",
+       "idx": 0,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "Castelluzzo Castelluzzo",
+       "idx": 1,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "Custonaci Custonaci",
+       "idx": 2,
+       "arr": "11.20",
+       "dep": "11.20"
+      },
+      {
+       "stop": "Biv.Buseto Palizzolo Biv.Buseto Palizzolo",
+       "idx": 8,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "Balata di Baida Balata di Baida",
+       "idx": 9,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "C/mare del Golfo C/mare Del Golfo",
+       "idx": 11,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "Palermo Palermo",
+       "idx": 18,
+       "arr": "13.10",
+       "dep": "13.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdal1/06al15/10"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "San Vito Lo Capo San Vito Lo Capo",
+       "idx": 0,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "Castelluzzo Castelluzzo",
+       "idx": 1,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "Custonaci Custonaci",
+       "idx": 2,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "B.Custonaci- Bonagia B.Custonaci Bonagia \" \"",
+       "idx": 3,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "Valderice Valderice\"\"",
+       "idx": 4,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "B.San Marco B.San Marco \" \"",
+       "idx": 5,
+       "arr": "13.42",
+       "dep": "13.42"
+      },
+      {
+       "stop": "Crocevie Crocevie\"\"",
+       "idx": 6,
+       "arr": "13.48",
+       "dep": "13.48"
+      },
+      {
+       "stop": "Bivio Lentina Bivio Lentina \" \"",
+       "idx": 7,
+       "arr": "13.52",
+       "dep": "13.52"
+      },
+      {
+       "stop": "Biv.Buseto Palizzolo Biv.Buseto Palizzolo",
+       "idx": 8,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Balata di Baida Balata di Baida",
+       "idx": 9,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "Biv.Fraginesi Biv. Fraginesi \" \"",
+       "idx": 10,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "C/mare del Golfo C/mare Del Golfo",
+       "idx": 11,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Alcamo Marina Alcamo Marina \" \"",
+       "idx": 12,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "Balestrate Balestrate\"\"",
+       "idx": 13,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "Trapeto Trapeto\"",
+       "idx": 14,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "B.Terrasini (lato TP) B.Terrasini (lato TP) \" \"",
+       "idx": 15,
+       "arr": "15.08",
+       "dep": "15.08"
+      },
+      {
+       "stop": "B.Terrasini (lato PA) B.Terrasini (lato PA) \" \"",
+       "idx": 16,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "B. Cinisi B.Cinisi \" \"",
+       "idx": 17,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "Palermo Palermo",
+       "idx": 18,
+       "arr": "16.00",
+       "dep": "16.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEDAL01/07AL31/08"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Palermo Palermo",
+       "idx": 18,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "B. Cinisi B.Cinisi \" \"",
+       "idx": 17,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "B.Terrasini (lato PA) B.Terrasini (lato PA) \" \"",
+       "idx": 16,
+       "arr": "9.13",
+       "dep": "9.13"
+      },
+      {
+       "stop": "B.Terrasini (lato TP) B.Terrasini (lato TP) \" \"",
+       "idx": 15,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "Trapeto Trapeto\"",
+       "idx": 14,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "Balestrate Balestrate\"\"",
+       "idx": 13,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "Alcamo Marina Alcamo Marina \" \"",
+       "idx": 12,
+       "arr": "10.10",
+       "dep": "10.10"
+      },
+      {
+       "stop": "C/mare del Golfo C/mare Del Golfo",
+       "idx": 11,
+       "arr": "10.15",
+       "dep": "10.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "C/mare del Golfo C/mare Del Golfo",
+       "idx": 11,
+       "arr": "5.45",
+       "dep": "5.45"
+      },
+      {
+       "stop": "Alcamo Marina Alcamo Marina \" \"",
+       "idx": 12,
+       "arr": "5.55",
+       "dep": "5.55"
+      },
+      {
+       "stop": "Balestrate Balestrate\"\"",
+       "idx": 13,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "Trapeto Trapeto\"",
+       "idx": 14,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "B.Terrasini (lato TP) B.Terrasini (lato TP) \" \"",
+       "idx": 15,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "B.Terrasini (lato PA) B.Terrasini (lato PA) \" \"",
+       "idx": 16,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "B. Cinisi B.Cinisi \" \"",
+       "idx": 17,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "Palermo Palermo",
+       "idx": 18,
+       "arr": "7.15",
+       "dep": "7.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "C/mare del Golfo C/mare Del Golfo",
+       "idx": 11,
+       "arr": "5.45",
+       "dep": "5.45"
+      },
+      {
+       "stop": "Alcamo Marina Alcamo Marina \" \"",
+       "idx": 12,
+       "arr": "5.55",
+       "dep": "5.55"
+      },
+      {
+       "stop": "Balestrate Balestrate\"\"",
+       "idx": 13,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "Trapeto Trapeto\"",
+       "idx": 14,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "B.Terrasini (lato TP) B.Terrasini (lato TP) \" \"",
+       "idx": 15,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "B.Terrasini (lato PA) B.Terrasini (lato PA) \" \"",
+       "idx": 16,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "B. Cinisi B.Cinisi \" \"",
+       "idx": 17,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "Palermo Palermo",
+       "idx": 18,
+       "arr": "7.15",
+       "dep": "7.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "San Vito Lo Capo San Vito Lo Capo",
+       "idx": 0,
+       "arr": "5.45",
+       "dep": "5.45"
+      },
+      {
+       "stop": "Castelluzzo Castelluzzo",
+       "idx": 1,
+       "arr": "5.50",
+       "dep": "5.50"
+      },
+      {
+       "stop": "Custonaci Custonaci",
+       "idx": 2,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "Biv.Buseto Palizzolo Biv.Buseto Palizzolo",
+       "idx": 8,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "Balata di Baida Balata di Baida",
+       "idx": 9,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "Biv.Fraginesi Biv. Fraginesi \" \"",
+       "idx": 10,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "C/mare del Golfo C/mare Del Golfo",
+       "idx": 11,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "Palermo Palermo",
+       "idx": 18,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "C/mare del Golfo C/mare Del Golfo",
+       "idx": 11,
+       "arr": "5.45",
+       "dep": "5.45"
+      },
+      {
+       "stop": "Alcamo Marina Alcamo Marina \" \"",
+       "idx": 12,
+       "arr": "5.55",
+       "dep": "5.55"
+      },
+      {
+       "stop": "Balestrate Balestrate\"\"",
+       "idx": 13,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "Trapeto Trapeto\"",
+       "idx": 14,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "B.Terrasini (lato TP) B.Terrasini (lato TP) \" \"",
+       "idx": 15,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "B.Terrasini (lato PA) B.Terrasini (lato PA) \" \"",
+       "idx": 16,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "B. Cinisi B.Cinisi \" \"",
+       "idx": 17,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "Palermo Palermo",
+       "idx": 18,
+       "arr": "7.15",
+       "dep": "7.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdal15/06al15/09"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "C/mare del Golfo C/mare Del Golfo",
+       "idx": 11,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "Alcamo Marina Alcamo Marina \" \"",
+       "idx": 12,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "Balestrate Balestrate\"\"",
+       "idx": 13,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "Trapeto Trapeto\"",
+       "idx": 14,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "B.Terrasini (lato TP) B.Terrasini (lato TP) \" \"",
+       "idx": 15,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "B.Terrasini (lato PA) B.Terrasini (lato PA) \" \"",
+       "idx": 16,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "B. Cinisi B.Cinisi \" \"",
+       "idx": 17,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "Palermo Palermo",
+       "idx": 18,
+       "arr": "17.00",
+       "dep": "17.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEda01/07al31/08"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "C/mare del Golfo C/mare Del Golfo",
+       "idx": 11,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "Alcamo Marina Alcamo Marina \" \"",
+       "idx": 12,
+       "arr": "9.50",
+       "dep": "9.50"
+      },
+      {
+       "stop": "Balestrate Balestrate\"\"",
+       "idx": 13,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "Trapeto Trapeto\"",
+       "idx": 14,
+       "arr": "10.10",
+       "dep": "10.10"
+      },
+      {
+       "stop": "B.Terrasini (lato TP) B.Terrasini (lato TP) \" \"",
+       "idx": 15,
+       "arr": "10.18",
+       "dep": "10.18"
+      },
+      {
+       "stop": "B.Terrasini (lato PA) B.Terrasini (lato PA) \" \"",
+       "idx": 16,
+       "arr": "10.20",
+       "dep": "10.20"
+      },
+      {
+       "stop": "B. Cinisi B.Cinisi \" \"",
+       "idx": 17,
+       "arr": "10.35",
+       "dep": "10.35"
+      },
+      {
+       "stop": "Palermo Palermo",
+       "idx": 18,
+       "arr": "11.30",
+       "dep": "11.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdal16/10al30/05"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "C/mare del Golfo C/mare Del Golfo",
+       "idx": 11,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Alcamo Marina Alcamo Marina \" \"",
+       "idx": 12,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "Balestrate Balestrate\"\"",
+       "idx": 13,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "Trapeto Trapeto\"",
+       "idx": 14,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "B.Terrasini (lato TP) B.Terrasini (lato TP) \" \"",
+       "idx": 15,
+       "arr": "15.08",
+       "dep": "15.08"
+      },
+      {
+       "stop": "B.Terrasini (lato PA) B.Terrasini (lato PA) \" \"",
+       "idx": 16,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "B. Cinisi B.Cinisi \" \"",
+       "idx": 17,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "Palermo Palermo",
+       "idx": 18,
+       "arr": "16.00",
+       "dep": "16.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "DOMENICALEE0F1E/S07TIAVLO3D1A/0L8"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "San Vito Lo Capo San Vito Lo Capo",
+       "idx": 0,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "Castelluzzo Castelluzzo",
+       "idx": 1,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "Custonaci Custonaci",
+       "idx": 2,
+       "arr": "11.20",
+       "dep": "11.20"
+      },
+      {
+       "stop": "Biv.Buseto Palizzolo Biv.Buseto Palizzolo",
+       "idx": 8,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "Balata di Baida Balata di Baida",
+       "idx": 9,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "Biv.Fraginesi Biv. Fraginesi \" \"",
+       "idx": 10,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "C/mare del Golfo C/mare Del Golfo",
+       "idx": 11,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "Palermo Palermo",
+       "idx": 18,
+       "arr": "13.10",
+       "dep": "13.10"
+      }
+     ],
+     "valid": false
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "DOMENICALEL01/06AL30/0"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "San Vito Lo Capo San Vito Lo Capo",
+       "idx": 0,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "Castelluzzo Castelluzzo",
+       "idx": 1,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "Custonaci Custonaci",
+       "idx": 2,
+       "arr": "18.20",
+       "dep": "18.20"
+      },
+      {
+       "stop": "Biv.Buseto Palizzolo Biv.Buseto Palizzolo",
+       "idx": 8,
+       "arr": "18.42",
+       "dep": "18.42"
+      },
+      {
+       "stop": "Balata di Baida Balata di Baida",
+       "idx": 9,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "C/mare del Golfo C/mare Del Golfo",
+       "idx": 11,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "Palermo Palermo",
+       "idx": 18,
+       "arr": "20.15",
+       "dep": "20.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "Domenicaleestiavol3d1a/0l801/07"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "San Vito Lo Capo San Vito Lo Capo",
+       "idx": 0,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "Castelluzzo Castelluzzo",
+       "idx": 1,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "Custonaci Custonaci",
+       "idx": 2,
+       "arr": "11.20",
+       "dep": "11.20"
+      },
+      {
+       "stop": "Biv.Buseto Palizzolo Biv.Buseto Palizzolo",
+       "idx": 8,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "Balata di Baida Balata di Baida",
+       "idx": 9,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "Biv.Fraginesi Biv. Fraginesi \" \"",
+       "idx": 10,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "C/mare del Golfo C/mare Del Golfo",
+       "idx": 11,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "Palermo Palermo",
+       "idx": 18,
+       "arr": "13.10",
+       "dep": "13.10"
+      }
+     ],
+     "valid": false
+    }
+   ]
+  }
+ ]
+}

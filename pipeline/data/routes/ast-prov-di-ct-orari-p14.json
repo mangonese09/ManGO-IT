@@ -1,0 +1,169 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-ct-orari-p14",
+ "name": "Catania - ISTITUTO POLIVALENTE",
+ "source": "AST_prov._di_CT_-_ORARI/p014.json",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "Catania (piazza Giovanni XXIII°)",
+    "ISTITUTO POLIVALENTE",
+    "Nicolosi",
+    "Massa Annunziata",
+    "Sa Mascalucia",
+    "Tremestieri",
+    "ISTITUTO POLIVALENTE"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCOLASTICA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 0,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "Nicolosi",
+       "idx": 2,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "Massa Annunziata",
+       "idx": 3,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Sa Mascalucia",
+       "idx": 4,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "Tremestieri",
+       "idx": 5,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "ISTITUTO POLIVALENTE",
+       "idx": 6,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCOLASTICASCOLASTICA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "ISTITUTO POLIVALENTE",
+       "idx": 6,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Tremestieri",
+       "idx": 5,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "Sa Mascalucia",
+       "idx": 4,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "Massa Annunziata",
+       "idx": 3,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "Nicolosi",
+       "idx": 2,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "ISTITUTO POLIVALENTE",
+       "idx": 1,
+       "arr": "14.30",
+       "dep": "14.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "ISTITUTO POLIVALENTE",
+       "idx": 6,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Tremestieri",
+       "idx": 5,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "Sa Mascalucia",
+       "idx": 4,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "Massa Annunziata",
+       "idx": 3,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "Nicolosi",
+       "idx": 2,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 0,
+       "arr": "15.55",
+       "dep": "15.55"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

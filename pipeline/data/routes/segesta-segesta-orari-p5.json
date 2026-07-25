@@ -1,0 +1,848 @@
+{
+ "operator": "Segesta",
+ "route_id": "segesta-segesta-orari-p5",
+ "name": "TRAPANI Via Ammiraglio Staiti, 13 - PALERMO Viale dei Picciotti",
+ "source": "Segesta__SEGESTA_ORARI/p005.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio nessuna"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+    "NAPOLA Via Milano, 202",
+    "FULGATORE Via Capitano Rizzo, 274",
+    "svincolo Fulgatore",
+    "UMMARI",
+    "DOMINGO",
+    "CALATAFIMI Piazza Autostazione",
+    "svincolo Alcamo",
+    "ALCAMO Autostazione",
+    "ALCAMO Autostazione",
+    "PARTINICO Piazza Modica",
+    "TERRASINI Piazza Duomo",
+    "svincolo Cinisi A/29",
+    "PALERMO Via Balsamo, 26 (stazione FS)",
+    "PALERMO Viale dei Picciotti"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 9,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 13,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "PALERMO Viale dei Picciotti",
+       "idx": 14,
+       "arr": "7.40",
+       "dep": "7.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "FERIALEdalnuenlepdeìraiovdeonnerodnscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 9,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 13,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "PALERMO Viale dei Picciotti",
+       "idx": 14,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "FERIALEdalunneedlìpaervieondeordìscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 9,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 13,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "PALERMO Viale dei Picciotti",
+       "idx": 14,
+       "arr": "8.10",
+       "dep": "8.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 9,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 13,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "PALERMO Viale dei Picciotti",
+       "idx": 14,
+       "arr": "8.40",
+       "dep": "8.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "FERIALEdaluinnpederìiaodvoenneorndscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 9,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 13,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "PALERMO Viale dei Picciotti",
+       "idx": 14,
+       "arr": "8.40",
+       "dep": "8.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 9,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 13,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "PALERMO Viale dei Picciotti",
+       "idx": 14,
+       "arr": "9.25",
+       "dep": "9.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "13",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 9,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 13,
+       "arr": "10.15",
+       "dep": "10.15"
+      },
+      {
+       "stop": "PALERMO Viale dei Picciotti",
+       "idx": 14,
+       "arr": "10.25",
+       "dep": "10.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "15",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 0,
+       "arr": "12.15",
+       "dep": "12.15"
+      },
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 8,
+       "arr": "13.15",
+       "dep": "13.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "17",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 8,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 9,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 13,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "PALERMO Viale dei Picciotti",
+       "idx": 14,
+       "arr": "16.25",
+       "dep": "16.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "19",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 0,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "NAPOLA Via Milano, 202",
+       "idx": 1,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "FULGATORE Via Capitano Rizzo, 274",
+       "idx": 2,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "CALATAFIMI Piazza Autostazione",
+       "idx": 6,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 8,
+       "arr": "17.30",
+       "dep": "17.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "21",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "lunFeEdRìIaALvEendeardì"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 0,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 8,
+       "arr": "19.00",
+       "dep": "19.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "23",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "FERIALEdalunneedlìpaervieondeordìscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 9,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 13,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "PALERMO Viale dei Picciotti",
+       "idx": 14,
+       "arr": "18.55",
+       "dep": "18.55"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "PALERMO Viale dei Picciotti",
+    "PALERMO Via Balsamo, 26 (stazione FS)",
+    "svincolo Cinisi A/29",
+    "TERRASINI Piazza Duomo",
+    "BORGETTO",
+    "PARTINICO Piazza Modica",
+    "ALCAMO Autostazione",
+    "ALCAMO Autostazione",
+    "svincolo Alcamo",
+    "CALATAFIMI Piazza Autostazione",
+    "DOMINGO",
+    "UMMARI",
+    "svincolo Fulgatore",
+    "FULGATORE Via Capitano Rizzo, 274",
+    "NAPOLA Via Milano, 202",
+    "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+    "Piazza",
+    "Terminal"
+   ],
+   "trips": [
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "FERIALEdalunneedlìpaervieondeordìscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 7,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 15,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 7,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "CALATAFIMI Piazza Autostazione",
+       "idx": 9,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "DOMINGO",
+       "idx": 10,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "UMMARI",
+       "idx": 11,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "FULGATORE Via Capitano Rizzo, 274",
+       "idx": 13,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "NAPOLA Via Milano, 202",
+       "idx": 14,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 15,
+       "arr": "8.15",
+       "dep": "8.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 7,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 15,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti",
+       "idx": 0,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "TERRASINI Piazza Duomo",
+       "idx": 3,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "PARTINICO Piazza Modica",
+       "idx": 5,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 6,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 7,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 15,
+       "arr": "9.00",
+       "dep": "9.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti",
+       "idx": 0,
+       "arr": "11.20",
+       "dep": "11.20"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 6,
+       "arr": "12.45",
+       "dep": "12.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "FERIALEdalunneedlìpaervieondeordìscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti",
+       "idx": 0,
+       "arr": "12.20",
+       "dep": "12.20"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 6,
+       "arr": "13.45",
+       "dep": "13.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "14",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "FERIALEdaluniendpìearvioednoerdìscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti",
+       "idx": 0,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 6,
+       "arr": "14.45",
+       "dep": "14.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "16",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti",
+       "idx": 0,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 6,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "18",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "FERIALEdalnuenlepdeìraiovdeonneordscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti",
+       "idx": 0,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 6,
+       "arr": "16.15",
+       "dep": "16.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "20",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "lunFeEdRìIaALvEendeardì"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti",
+       "idx": 0,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 6,
+       "arr": "17.15",
+       "dep": "17.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "22",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "FERIALEdaluniendpìearvioednoerdìscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti",
+       "idx": 0,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 6,
+       "arr": "18.15",
+       "dep": "18.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "24",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti",
+       "idx": 0,
+       "arr": "17.50",
+       "dep": "17.50"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 1,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 6,
+       "arr": "19.15",
+       "dep": "19.15"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

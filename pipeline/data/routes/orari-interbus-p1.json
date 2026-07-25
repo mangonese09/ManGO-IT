@@ -1,0 +1,398 @@
+{
+ "operator": "Interbus",
+ "route_id": "orari-interbus-p1",
+ "name": "Siracusa - S.S. 114 - Asse attrezzato - A/19 - Palermo, diramazione Catenanuova 157",
+ "source": "ORARI_INTERBUS/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "SIRACUSA C.so Umberto (Terminal Bus)",
+    "S.S. 114",
+    "Asse Attrezzato",
+    "CATENANUOVA (Stazione FS)",
+    "Dittaino (Slargo Rotonda Outlet)",
+    "A/19",
+    "PALERMO (Piazza Cairoli)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "E"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SIRACUSA C.so Umberto (Terminal Bus)",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "PALERMO (Piazza Cairoli)",
+       "idx": 6,
+       "arr": "11.15",
+       "dep": "11.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SIRACUSA C.so Umberto (Terminal Bus)",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "Dittaino (Slargo Rotonda Outlet)",
+       "idx": 4,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "PALERMO (Piazza Cairoli)",
+       "idx": 6,
+       "arr": "11.15",
+       "dep": "11.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "E"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SIRACUSA C.so Umberto (Terminal Bus)",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "PALERMO (Piazza Cairoli)",
+       "idx": 6,
+       "arr": "17.15",
+       "dep": "17.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SIRACUSA C.so Umberto (Terminal Bus)",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Dittaino (Slargo Rotonda Outlet)",
+       "idx": 4,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "PALERMO (Piazza Cairoli)",
+       "idx": 6,
+       "arr": "17.15",
+       "dep": "17.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SIRACUSA C.so Umberto (Terminal Bus)",
+       "idx": 0,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "PALERMO (Piazza Cairoli)",
+       "idx": 6,
+       "arr": "20.15",
+       "dep": "20.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "LEVenerdi'"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SIRACUSA C.so Umberto (Terminal Bus)",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "PALERMO (Piazza Cairoli)",
+       "idx": 6,
+       "arr": "11.15",
+       "dep": "11.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "LE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SIRACUSA C.so Umberto (Terminal Bus)",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "PALERMO (Piazza Cairoli)",
+       "idx": 6,
+       "arr": "11.15",
+       "dep": "11.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "LE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Piazza Cairoli)",
+       "idx": 6,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "SIRACUSA C.so Umberto (Terminal Bus)",
+       "idx": 0,
+       "arr": "11.15",
+       "dep": "11.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Piazza Cairoli)",
+       "idx": 6,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "Dittaino (Slargo Rotonda Outlet)",
+       "idx": 4,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "SIRACUSA C.so Umberto (Terminal Bus)",
+       "idx": 0,
+       "arr": "11.15",
+       "dep": "11.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Piazza Cairoli)",
+       "idx": 6,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Dittaino (Slargo Rotonda Outlet)",
+       "idx": 4,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "SIRACUSA C.so Umberto (Terminal Bus)",
+       "idx": 0,
+       "arr": "17.15",
+       "dep": "17.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "LE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Piazza Cairoli)",
+       "idx": 6,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "SIRACUSA C.so Umberto (Terminal Bus)",
+       "idx": 0,
+       "arr": "17.15",
+       "dep": "17.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Piazza Cairoli)",
+       "idx": 6,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "SIRACUSA C.so Umberto (Terminal Bus)",
+       "idx": 0,
+       "arr": "21.15",
+       "dep": "21.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "LEVenerdi'"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SIRACUSA C.so Umberto (Terminal Bus)",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "PALERMO (Piazza Cairoli)",
+       "idx": 6,
+       "arr": "11.15",
+       "dep": "11.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "LE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Piazza Cairoli)",
+       "idx": 6,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "SIRACUSA C.so Umberto (Terminal Bus)",
+       "idx": 0,
+       "arr": "11.15",
+       "dep": "11.15"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

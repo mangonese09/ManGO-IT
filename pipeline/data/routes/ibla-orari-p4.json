@@ -1,0 +1,96 @@
+{
+ "operator": "Ibla",
+ "route_id": "ibla-orari-p4",
+ "name": "IBLA TOUR S.C. - VIA EDISON, 7 - 92029 RAVANUSA (AG) Codice",
+ "source": "IBLA_ORARI/p004.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "di Partenza Capolinea di Partenza",
+    "intermedia Fermata intermedia",
+    "intermedia Fermata intermedia",
+    "di Arrivo Capolinea di Arrivo",
+    "SOLO LA DOMENICA, ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GiornalieraORARIO"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "di Partenza Capolinea di Partenza",
+       "idx": 0,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "18.12",
+       "dep": "18.12"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "18.52",
+       "dep": "18.52"
+      },
+      {
+       "stop": "di Arrivo Capolinea di Arrivo",
+       "idx": 3,
+       "arr": "19.00",
+       "dep": "19.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GiornalieraORARIO"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "di Arrivo Capolinea di Arrivo",
+       "idx": 3,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "19.18",
+       "dep": "19.18"
+      },
+      {
+       "stop": "intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "19.58",
+       "dep": "19.58"
+      },
+      {
+       "stop": "di Partenza Capolinea di Partenza",
+       "idx": 0,
+       "arr": "20.05",
+       "dep": "20.05"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

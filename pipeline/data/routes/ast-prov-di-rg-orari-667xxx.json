@@ -1,0 +1,421 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-rg-orari-667xxx",
+ "name": "Modica - Catania",
+ "source": "AST_prov._di_RG_-_ORARI/p017.json",
+ "prescriptions": [
+  "Prescrizioni DIVIETO DI SERVIZIO LOCALE DA CATANIA ALLA SINCAT DI PRIOLO CON ACCEZIONE DI QUEST'ULTIMA SINCAT PER LE C.C. AUTORIZZATE"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Modica (p.za Borsellino)",
+    "Ispica (via mario Rapisardi)",
+    "Rosolini (via Canova)",
+    "Noto (Villa Comunale)",
+    "Avola (piazza Trieste)",
+    "Cassibile (via Elorina)",
+    "Siracusa . (via Rubino)",
+    "Priolo (via Pentapoli)",
+    "Aeroporto Fontanarossa (Terminal)",
+    "Catania (piazza Giovanni XXIII°)"
+   ],
+   "trips": [
+    {
+     "corsa": "15A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Modica (p.za Borsellino)",
+       "idx": 0,
+       "arr": "5.30",
+       "dep": "5.30"
+      },
+      {
+       "stop": "Ispica (via mario Rapisardi)",
+       "idx": 1,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "Rosolini (via Canova)",
+       "idx": 2,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "Noto (Villa Comunale)",
+       "idx": 3,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "Avola (piazza Trieste)",
+       "idx": 4,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Cassibile (via Elorina)",
+       "idx": 5,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "Siracusa . (via Rubino)",
+       "idx": 6,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "16A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Siracusa . (via Rubino)",
+       "idx": 6,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "Aeroporto Fontanarossa (Terminal)",
+       "idx": 8,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 9,
+       "arr": "14.05",
+       "dep": "14.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "17A",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Siracusa . (via Rubino)",
+       "idx": 6,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Priolo (via Pentapoli)",
+       "idx": 7,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Aeroporto Fontanarossa (Terminal)",
+       "idx": 8,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 9,
+       "arr": "15.05",
+       "dep": "15.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "18A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Siracusa . (via Rubino)",
+       "idx": 6,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "Priolo (via Pentapoli)",
+       "idx": 7,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "Aeroporto Fontanarossa (Terminal)",
+       "idx": 8,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 9,
+       "arr": "16.15",
+       "dep": "16.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "19A",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Siracusa . (via Rubino)",
+       "idx": 6,
+       "arr": "21.00",
+       "dep": "21.00"
+      },
+      {
+       "stop": "Priolo (via Pentapoli)",
+       "idx": 7,
+       "arr": "21.30",
+       "dep": "21.30"
+      },
+      {
+       "stop": "Aeroporto Fontanarossa (Terminal)",
+       "idx": 8,
+       "arr": "22.05",
+       "dep": "22.05"
+      },
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 9,
+       "arr": "22.20",
+       "dep": "22.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "17R",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 9,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Aeroporto Fontanarossa (Terminal)",
+       "idx": 8,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "Priolo (via Pentapoli)",
+       "idx": 7,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "Siracusa . (via Rubino)",
+       "idx": 6,
+       "arr": "9.00",
+       "dep": "9.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "15R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 9,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "Aeroporto Fontanarossa (Terminal)",
+       "idx": 8,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "Siracusa . (via Rubino)",
+       "idx": 6,
+       "arr": "14.20",
+       "dep": "14.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "14R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Siracusa . (via Rubino)",
+       "idx": 6,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Cassibile (via Elorina)",
+       "idx": 5,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "Avola (piazza Trieste)",
+       "idx": 4,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "Noto (Villa Comunale)",
+       "idx": 3,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "Rosolini (via Canova)",
+       "idx": 2,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "Ispica (via mario Rapisardi)",
+       "idx": 1,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "Modica (p.za Borsellino)",
+       "idx": 0,
+       "arr": "16.50",
+       "dep": "16.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "18R",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 9,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "Aeroporto Fontanarossa (Terminal)",
+       "idx": 8,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "Priolo (via Pentapoli)",
+       "idx": 7,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "Siracusa . (via Rubino)",
+       "idx": 6,
+       "arr": "16.30",
+       "dep": "16.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "16R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 9,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "Aeroporto Fontanarossa (Terminal)",
+       "idx": 8,
+       "arr": "17.15",
+       "dep": "17.15"
+      },
+      {
+       "stop": "Priolo (via Pentapoli)",
+       "idx": 7,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "Siracusa . (via Rubino)",
+       "idx": 6,
+       "arr": "18.30",
+       "dep": "18.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

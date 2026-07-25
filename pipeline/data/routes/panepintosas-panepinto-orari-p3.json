@@ -1,0 +1,317 @@
+{
+ "operator": "Panepinto",
+ "route_id": "panepintosas-panepinto-orari-p3",
+ "name": "CAMMARATA - PALERMO",
+ "source": "Panepintosas__PANEPINTO_ORARI/p003.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Divieto di servizio locale tra Lercara Friddi e Palermo e viceversa, estremi inclusi"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "CAMMARATA CAMMARATA",
+    "S.GIOV.GEMINI S.GIOV.GEMINI",
+    "LERCARA FRIDDI LERC. FRIDDI",
+    "PALERMO PALERMO"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CAMMARATA CAMMARATA",
+       "idx": 0,
+       "arr": "5.30",
+       "dep": "5.30"
+      },
+      {
+       "stop": "S.GIOV.GEMINI S.GIOV.GEMINI",
+       "idx": 1,
+       "arr": "5.35",
+       "dep": "5.35"
+      },
+      {
+       "stop": "LERCARA FRIDDI LERC. FRIDDI",
+       "idx": 2,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "PALERMO PALERMO",
+       "idx": 3,
+       "arr": "7.10",
+       "dep": "7.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CAMMARATA CAMMARATA",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "S.GIOV.GEMINI S.GIOV.GEMINI",
+       "idx": 1,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "LERCARA FRIDDI LERC. FRIDDI",
+       "idx": 2,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "PALERMO PALERMO",
+       "idx": 3,
+       "arr": "8.40",
+       "dep": "8.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CAMMARATA CAMMARATA",
+       "idx": 0,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "S.GIOV.GEMINI S.GIOV.GEMINI",
+       "idx": 1,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "LERCARA FRIDDI LERC. FRIDDI",
+       "idx": 2,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "PALERMO PALERMO",
+       "idx": 3,
+       "arr": "15.50",
+       "dep": "15.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CAMMARATA CAMMARATA",
+       "idx": 0,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "S.GIOV.GEMINI S.GIOV.GEMINI",
+       "idx": 1,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "LERCARA FRIDDI LERC. FRIDDI",
+       "idx": 2,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "PALERMO PALERMO",
+       "idx": 3,
+       "arr": "18.50",
+       "dep": "18.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO PALERMO",
+       "idx": 3,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "LERCARA FRIDDI LERC. FRIDDI",
+       "idx": 2,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "S.GIOV.GEMINI S.GIOV.GEMINI",
+       "idx": 1,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "CAMMARATA CAMMARATA",
+       "idx": 0,
+       "arr": "15.10",
+       "dep": "15.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO PALERMO",
+       "idx": 3,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "LERCARA FRIDDI LERC. FRIDDI",
+       "idx": 2,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "S.GIOV.GEMINI S.GIOV.GEMINI",
+       "idx": 1,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "CAMMARATA CAMMARATA",
+       "idx": 0,
+       "arr": "16.40",
+       "dep": "16.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO PALERMO",
+       "idx": 3,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "LERCARA FRIDDI LERC. FRIDDI",
+       "idx": 2,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "S.GIOV.GEMINI S.GIOV.GEMINI",
+       "idx": 1,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "CAMMARATA CAMMARATA",
+       "idx": 0,
+       "arr": "20.10",
+       "dep": "20.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO PALERMO",
+       "idx": 3,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "LERCARA FRIDDI LERC. FRIDDI",
+       "idx": 2,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "S.GIOV.GEMINI S.GIOV.GEMINI",
+       "idx": 1,
+       "arr": "20.20",
+       "dep": "20.20"
+      },
+      {
+       "stop": "CAMMARATA CAMMARATA",
+       "idx": 0,
+       "arr": "20.30",
+       "dep": "20.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

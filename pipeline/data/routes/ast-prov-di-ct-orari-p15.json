@@ -1,0 +1,1106 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-ct-orari-p15",
+ "name": "Catania - Acireale",
+ "source": "AST_prov._di_CT_-_ORARI/p015.json",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "Catania (piazza Giovanni XXIII°)",
+    "Fermata intermedia",
+    "San Gregorio (p.za Regina Margherita)",
+    "Valverde (corso Vittorio Emanuele)",
+    "Aci Sant'Antonio (via Vittorio Emanuele)",
+    "Aci Catena (via Roma)",
+    "Acireale (Terminal Corso Italia)"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 0,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "Valverde (corso Vittorio Emanuele)",
+       "idx": 3,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Aci Sant'Antonio (via Vittorio Emanuele)",
+       "idx": 4,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "Aci Catena (via Roma)",
+       "idx": 5,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Acireale (Terminal Corso Italia)",
+       "idx": 6,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "13A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "scolastica"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 0,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "Valverde (corso Vittorio Emanuele)",
+       "idx": 3,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Aci Sant'Antonio (via Vittorio Emanuele)",
+       "idx": 4,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Aci Catena (via Roma)",
+       "idx": 5,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "Acireale (Terminal Corso Italia)",
+       "idx": 6,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "Valverde (corso Vittorio Emanuele)",
+       "idx": 3,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "Aci Sant'Antonio (via Vittorio Emanuele)",
+       "idx": 4,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "Aci Catena (via Roma)",
+       "idx": 5,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "Acireale (Terminal Corso Italia)",
+       "idx": 6,
+       "arr": "9.20",
+       "dep": "9.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 0,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "9.55",
+       "dep": "9.55"
+      },
+      {
+       "stop": "Valverde (corso Vittorio Emanuele)",
+       "idx": 3,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "Aci Sant'Antonio (via Vittorio Emanuele)",
+       "idx": 4,
+       "arr": "10.15",
+       "dep": "10.15"
+      },
+      {
+       "stop": "Aci Catena (via Roma)",
+       "idx": 5,
+       "arr": "10.25",
+       "dep": "10.25"
+      },
+      {
+       "stop": "Acireale (Terminal Corso Italia)",
+       "idx": 6,
+       "arr": "10.50",
+       "dep": "10.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 0,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "11.25",
+       "dep": "11.25"
+      },
+      {
+       "stop": "Valverde (corso Vittorio Emanuele)",
+       "idx": 3,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "Aci Sant'Antonio (via Vittorio Emanuele)",
+       "idx": 4,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "Aci Catena (via Roma)",
+       "idx": 5,
+       "arr": "11.55",
+       "dep": "11.55"
+      },
+      {
+       "stop": "Acireale (Terminal Corso Italia)",
+       "idx": 6,
+       "arr": "12.20",
+       "dep": "12.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 0,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "Valverde (corso Vittorio Emanuele)",
+       "idx": 3,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Aci Sant'Antonio (via Vittorio Emanuele)",
+       "idx": 4,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Aci Catena (via Roma)",
+       "idx": 5,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "Acireale (Terminal Corso Italia)",
+       "idx": 6,
+       "arr": "14.20",
+       "dep": "14.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "Valverde (corso Vittorio Emanuele)",
+       "idx": 3,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Aci Sant'Antonio (via Vittorio Emanuele)",
+       "idx": 4,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "Aci Catena (via Roma)",
+       "idx": 5,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "Acireale (Terminal Corso Italia)",
+       "idx": 6,
+       "arr": "15.20",
+       "dep": "15.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 0,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "Valverde (corso Vittorio Emanuele)",
+       "idx": 3,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "Aci Sant'Antonio (via Vittorio Emanuele)",
+       "idx": 4,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "Aci Catena (via Roma)",
+       "idx": 5,
+       "arr": "16.25",
+       "dep": "16.25"
+      },
+      {
+       "stop": "Acireale (Terminal Corso Italia)",
+       "idx": 6,
+       "arr": "16.50",
+       "dep": "16.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 0,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "17.25",
+       "dep": "17.25"
+      },
+      {
+       "stop": "Valverde (corso Vittorio Emanuele)",
+       "idx": 3,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "Aci Sant'Antonio (via Vittorio Emanuele)",
+       "idx": 4,
+       "arr": "17.45",
+       "dep": "17.45"
+      },
+      {
+       "stop": "Aci Catena (via Roma)",
+       "idx": 5,
+       "arr": "17.55",
+       "dep": "17.55"
+      },
+      {
+       "stop": "Acireale (Terminal Corso Italia)",
+       "idx": 6,
+       "arr": "18.20",
+       "dep": "18.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 0,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "18.55",
+       "dep": "18.55"
+      },
+      {
+       "stop": "Valverde (corso Vittorio Emanuele)",
+       "idx": 3,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "Aci Sant'Antonio (via Vittorio Emanuele)",
+       "idx": 4,
+       "arr": "19.15",
+       "dep": "19.15"
+      },
+      {
+       "stop": "Aci Catena (via Roma)",
+       "idx": 5,
+       "arr": "19.25",
+       "dep": "19.25"
+      },
+      {
+       "stop": "Acireale (Terminal Corso Italia)",
+       "idx": 6,
+       "arr": "19.50",
+       "dep": "19.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 0,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "20.25",
+       "dep": "20.25"
+      },
+      {
+       "stop": "Valverde (corso Vittorio Emanuele)",
+       "idx": 3,
+       "arr": "20.30",
+       "dep": "20.30"
+      },
+      {
+       "stop": "Aci Sant'Antonio (via Vittorio Emanuele)",
+       "idx": 4,
+       "arr": "20.45",
+       "dep": "20.45"
+      },
+      {
+       "stop": "Aci Catena (via Roma)",
+       "idx": 5,
+       "arr": "20.55",
+       "dep": "20.55"
+      },
+      {
+       "stop": "Acireale (Terminal Corso Italia)",
+       "idx": 6,
+       "arr": "21.20",
+       "dep": "21.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Acireale (Terminal Corso Italia)",
+       "idx": 6,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "Aci Catena (via Roma)",
+       "idx": 5,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Aci Sant'Antonio (via Vittorio Emanuele)",
+       "idx": 4,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "Valverde (corso Vittorio Emanuele)",
+       "idx": 3,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 0,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Acireale (Terminal Corso Italia)",
+       "idx": 6,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "Aci Catena (via Roma)",
+       "idx": 5,
+       "arr": "8.40",
+       "dep": "8.40"
+      },
+      {
+       "stop": "Aci Sant'Antonio (via Vittorio Emanuele)",
+       "idx": 4,
+       "arr": "8.50",
+       "dep": "8.50"
+      },
+      {
+       "stop": "Valverde (corso Vittorio Emanuele)",
+       "idx": 3,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "San Gregorio (p.za Regina Margherita)",
+       "idx": 2,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 0,
+       "arr": "9.35",
+       "dep": "9.35"
+      }
+     ],
+     "valid": false
+    },
+    {
+     "corsa": "3R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Acireale (Terminal Corso Italia)",
+       "idx": 6,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "Aci Catena (via Roma)",
+       "idx": 5,
+       "arr": "10.10",
+       "dep": "10.10"
+      },
+      {
+       "stop": "Aci Sant'Antonio (via Vittorio Emanuele)",
+       "idx": 4,
+       "arr": "10.20",
+       "dep": "10.20"
+      },
+      {
+       "stop": "Valverde (corso Vittorio Emanuele)",
+       "idx": 3,
+       "arr": "10.35",
+       "dep": "10.35"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "10.40",
+       "dep": "10.40"
+      },
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 0,
+       "arr": "11.05",
+       "dep": "11.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Acireale (Terminal Corso Italia)",
+       "idx": 6,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "Aci Catena (via Roma)",
+       "idx": 5,
+       "arr": "11.25",
+       "dep": "11.25"
+      },
+      {
+       "stop": "Aci Sant'Antonio (via Vittorio Emanuele)",
+       "idx": 4,
+       "arr": "11.35",
+       "dep": "11.35"
+      },
+      {
+       "stop": "Valverde (corso Vittorio Emanuele)",
+       "idx": 3,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "11.55",
+       "dep": "11.55"
+      },
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 0,
+       "arr": "12.20",
+       "dep": "12.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Acireale (Terminal Corso Italia)",
+       "idx": 6,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "Aci Catena (via Roma)",
+       "idx": 5,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "Aci Sant'Antonio (via Vittorio Emanuele)",
+       "idx": 4,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "Valverde (corso Vittorio Emanuele)",
+       "idx": 3,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 0,
+       "arr": "13.50",
+       "dep": "13.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "scolastica"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Acireale (Terminal Corso Italia)",
+       "idx": 6,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Aci Catena (via Roma)",
+       "idx": 5,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "Aci Sant'Antonio (via Vittorio Emanuele)",
+       "idx": 4,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "Valverde (corso Vittorio Emanuele)",
+       "idx": 3,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 0,
+       "arr": "14.50",
+       "dep": "14.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Acireale (Terminal Corso Italia)",
+       "idx": 6,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Aci Catena (via Roma)",
+       "idx": 5,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "Aci Sant'Antonio (via Vittorio Emanuele)",
+       "idx": 4,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "Valverde (corso Vittorio Emanuele)",
+       "idx": 3,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 0,
+       "arr": "15.20",
+       "dep": "15.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Acireale (Terminal Corso Italia)",
+       "idx": 6,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "Aci Catena (via Roma)",
+       "idx": 5,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "Aci Sant'Antonio (via Vittorio Emanuele)",
+       "idx": 4,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "Valverde (corso Vittorio Emanuele)",
+       "idx": 3,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "16.25",
+       "dep": "16.25"
+      },
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 0,
+       "arr": "16.50",
+       "dep": "16.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Acireale (Terminal Corso Italia)",
+       "idx": 6,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "Aci Catena (via Roma)",
+       "idx": 5,
+       "arr": "17.25",
+       "dep": "17.25"
+      },
+      {
+       "stop": "Aci Sant'Antonio (via Vittorio Emanuele)",
+       "idx": 4,
+       "arr": "17.35",
+       "dep": "17.35"
+      },
+      {
+       "stop": "Valverde (corso Vittorio Emanuele)",
+       "idx": 3,
+       "arr": "17.50",
+       "dep": "17.50"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "17.55",
+       "dep": "17.55"
+      },
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 0,
+       "arr": "18.20",
+       "dep": "18.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Acireale (Terminal Corso Italia)",
+       "idx": 6,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "Aci Catena (via Roma)",
+       "idx": 5,
+       "arr": "18.55",
+       "dep": "18.55"
+      },
+      {
+       "stop": "Aci Sant'Antonio (via Vittorio Emanuele)",
+       "idx": 4,
+       "arr": "19.05",
+       "dep": "19.05"
+      },
+      {
+       "stop": "Valverde (corso Vittorio Emanuele)",
+       "idx": 3,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "19.25",
+       "dep": "19.25"
+      },
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 0,
+       "arr": "19.50",
+       "dep": "19.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feraile"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Acireale (Terminal Corso Italia)",
+       "idx": 6,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "Aci Catena (via Roma)",
+       "idx": 5,
+       "arr": "20.25",
+       "dep": "20.25"
+      },
+      {
+       "stop": "Aci Sant'Antonio (via Vittorio Emanuele)",
+       "idx": 4,
+       "arr": "20.35",
+       "dep": "20.35"
+      },
+      {
+       "stop": "Valverde (corso Vittorio Emanuele)",
+       "idx": 3,
+       "arr": "20.50",
+       "dep": "20.50"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "20.55",
+       "dep": "20.55"
+      },
+      {
+       "stop": "Catania (piazza Giovanni XXIII°)",
+       "idx": 0,
+       "arr": "21.20",
+       "dep": "21.20"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+{
+ "operator": "Loiacono",
+ "route_id": "loiacono-lo-iacono-orari-p4",
+ "name": "Valledolmo-Vallelunga P. scolastica",
+ "source": "LOIACONO__LO_IACONO_ORARI/p004.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Capolinea di Partenza Capolinea di Arrivo",
+    "Capolinea di Arrivo Capolinea di partenza",
+    "Capolinea di Partenza Capolinea di Arrivo",
+    "Staz.Ferr.Valledolmo",
+    "Capolinea di Arrivo Capolinea di partenza",
+    "LA DOMENICA, ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "EriRodIAoLsEcolast"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Capolinea di Arrivo Capolinea di partenza",
+       "idx": 1,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 2,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Capolinea di Arrivo Capolinea di partenza",
+       "idx": 4,
+       "arr": "14.50",
+       "dep": "14.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "Capolinea di Arrivo Capolinea di partenza",
+       "idx": 1,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 2,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "Staz.Ferr.Valledolmo",
+       "idx": 3,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "Capolinea di Arrivo Capolinea di partenza",
+       "idx": 4,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ],
+     "valid": false
+    }
+   ]
+  }
+ ]
+}

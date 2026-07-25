@@ -1,0 +1,479 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-me-orari-616",
+ "name": "SAN PIERO PATTI via II Giugno - MESSINA via Bonino",
+ "source": "AST_prov.di_ME_-_ORARI/p012.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio NESSUNA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "SAN PIERO PATTI via II Giugno",
+    "BV. COLLA S.P.122",
+    "LIBRIZZI s.p. 126",
+    "BV. COLLA S.P.122",
+    "PATTI via Trieste",
+    "PATTI STAZIONE FS",
+    "Falcone Svincolo A 20",
+    "MESSINA via Bonino"
+   ],
+   "trips": [
+    {
+     "corsa": "3A",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEINVERNALEESCLUSOSABATO"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SAN PIERO PATTI via II Giugno",
+       "idx": 0,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "BV. COLLA S.P.122",
+       "idx": 1,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "BV. COLLA S.P.122",
+       "idx": 3,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "PATTI via Trieste",
+       "idx": 4,
+       "arr": "6.55",
+       "dep": "6.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SAN PIERO PATTI via II Giugno",
+       "idx": 0,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "BV. COLLA S.P.122",
+       "idx": 1,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "LIBRIZZI s.p. 126",
+       "idx": 2,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "BV. COLLA S.P.122",
+       "idx": 3,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "PATTI via Trieste",
+       "idx": 4,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "PATTI STAZIONE FS",
+       "idx": 5,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "Falcone Svincolo A 20",
+       "idx": 6,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "MESSINA via Bonino",
+       "idx": 7,
+       "arr": "9.10",
+       "dep": "9.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVO"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SAN PIERO PATTI via II Giugno",
+       "idx": 0,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "BV. COLLA S.P.122",
+       "idx": 1,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "BV. COLLA S.P.122",
+       "idx": 3,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "PATTI via Trieste",
+       "idx": 4,
+       "arr": "9.40",
+       "dep": "9.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEINVERNALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SAN PIERO PATTI via II Giugno",
+       "idx": 0,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "BV. COLLA S.P.122",
+       "idx": 1,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "LIBRIZZI s.p. 126",
+       "idx": 2,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "BV. COLLA S.P.122",
+       "idx": 3,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "PATTI via Trieste",
+       "idx": 4,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "PATTI STAZIONE FS",
+       "idx": 5,
+       "arr": "12.40",
+       "dep": "12.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5A",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVOESCLUSOSABATO"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SAN PIERO PATTI via II Giugno",
+       "idx": 0,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "BV. COLLA S.P.122",
+       "idx": 1,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "LIBRIZZI s.p. 126",
+       "idx": 2,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "BV. COLLA S.P.122",
+       "idx": 3,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "PATTI via Trieste",
+       "idx": 4,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "PATTI STAZIONE FS",
+       "idx": 5,
+       "arr": "12.40",
+       "dep": "12.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEINVERNALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PATTI STAZIONE FS",
+       "idx": 5,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "PATTI via Trieste",
+       "idx": 4,
+       "arr": "9.25",
+       "dep": "9.25"
+      },
+      {
+       "stop": "BV. COLLA S.P.122",
+       "idx": 3,
+       "arr": "9.35",
+       "dep": "9.35"
+      },
+      {
+       "stop": "BV. COLLA S.P.122",
+       "idx": 1,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "SAN PIERO PATTI via II Giugno",
+       "idx": 0,
+       "arr": "10.05",
+       "dep": "10.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5R",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVOESCLUSOSABATO"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PATTI STAZIONE FS",
+       "idx": 5,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "PATTI via Trieste",
+       "idx": 4,
+       "arr": "9.25",
+       "dep": "9.25"
+      },
+      {
+       "stop": "BV. COLLA S.P.122",
+       "idx": 3,
+       "arr": "9.35",
+       "dep": "9.35"
+      },
+      {
+       "stop": "BV. COLLA S.P.122",
+       "idx": 1,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "SAN PIERO PATTI via II Giugno",
+       "idx": 0,
+       "arr": "10.05",
+       "dep": "10.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PATTI STAZIONE FS",
+       "idx": 5,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "PATTI via Trieste",
+       "idx": 4,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "BV. COLLA S.P.122",
+       "idx": 3,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "BV. COLLA S.P.122",
+       "idx": 1,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "SAN PIERO PATTI via II Giugno",
+       "idx": 0,
+       "arr": "13.25",
+       "dep": "13.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEINVERNALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PATTI STAZIONE FS",
+       "idx": 5,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "PATTI via Trieste",
+       "idx": 4,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "BV. COLLA S.P.122",
+       "idx": 3,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "BV. COLLA S.P.122",
+       "idx": 1,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "SAN PIERO PATTI via II Giugno",
+       "idx": 0,
+       "arr": "14.30",
+       "dep": "14.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEINVERNALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PATTI STAZIONE FS",
+       "idx": 5,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "PATTI via Trieste",
+       "idx": 4,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "BV. COLLA S.P.122",
+       "idx": 3,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "LIBRIZZI s.p. 126",
+       "idx": 2,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "BV. COLLA S.P.122",
+       "idx": 1,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "SAN PIERO PATTI via II Giugno",
+       "idx": 0,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,302 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-tp-orari-0-744",
+ "name": "TRAPANI terminal p.le Ilio Capolinea - TRAPANI Terminal P.le Ilio",
+ "source": "AST_prov._di_TP_-ORARI_0/p010.json",
+ "prescriptions": [
+  "Prescrizioni NESSUNA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "TRAPANI terminal p.le Ilio Capolinea",
+    "CROCCI via Crocci",
+    "CHIESANUOVA via Oberdan",
+    "BUSETO PALIZZOLO via P. Randazzo",
+    "TANGI s.p. 36",
+    "BALLATA via Rosselli",
+    "DATTILO via Garibaldi",
+    "NAPOLA via Milano",
+    "LENZI s.p. 34",
+    "TRAPANI Terminal P.le Ilio"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI terminal p.le Ilio Capolinea",
+       "idx": 0,
+       "arr": "5.50",
+       "dep": "5.50"
+      },
+      {
+       "stop": "CROCCI via Crocci",
+       "idx": 1,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "CHIESANUOVA via Oberdan",
+       "idx": 2,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "BUSETO PALIZZOLO via P. Randazzo",
+       "idx": 3,
+       "arr": "6.30",
+       "dep": "6.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "BUSETO PALIZZOLO via P. Randazzo",
+       "idx": 3,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "TANGI s.p. 36",
+       "idx": 4,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "BALLATA via Rosselli",
+       "idx": 5,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "DATTILO via Garibaldi",
+       "idx": 6,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "NAPOLA via Milano",
+       "idx": 7,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "LENZI s.p. 34",
+       "idx": 8,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "TRAPANI Terminal P.le Ilio",
+       "idx": 9,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEINVERNALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI terminal p.le Ilio Capolinea",
+       "idx": 0,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "CROCCI via Crocci",
+       "idx": 1,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "CHIESANUOVA via Oberdan",
+       "idx": 2,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "BUSETO PALIZZOLO via P. Randazzo",
+       "idx": 3,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "TANGI s.p. 36",
+       "idx": 4,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "BALLATA via Rosselli",
+       "idx": 5,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "DATTILO via Garibaldi",
+       "idx": 6,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "NAPOLA via Milano",
+       "idx": 7,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "LENZI s.p. 34",
+       "idx": 8,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "TRAPANI Terminal P.le Ilio",
+       "idx": 9,
+       "arr": "14.10",
+       "dep": "14.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEINVERNALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "BUSETO PALIZZOLO via P. Randazzo",
+       "idx": 3,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "CHIESANUOVA via Oberdan",
+       "idx": 2,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "CROCCI via Crocci",
+       "idx": 1,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "TRAPANI terminal p.le Ilio Capolinea",
+       "idx": 0,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "TRAPANI Terminal P.le Ilio",
+       "idx": 9,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "LENZI s.p. 34",
+       "idx": 8,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "NAPOLA via Milano",
+       "idx": 7,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "DATTILO via Garibaldi",
+       "idx": 6,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "BALLATA via Rosselli",
+       "idx": 5,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "TANGI s.p. 36",
+       "idx": 4,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "BUSETO PALIZZOLO via P. Randazzo",
+       "idx": 3,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "CHIESANUOVA via Oberdan",
+       "idx": 2,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "CROCCI via Crocci",
+       "idx": 1,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "TRAPANI terminal p.le Ilio Capolinea",
+       "idx": 0,
+       "arr": "16.20",
+       "dep": "16.20"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

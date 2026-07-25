@@ -1,0 +1,141 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-sr-orari-652",
+ "name": "Siracusa - Caltagirone",
+ "source": "AST_prov.di_SR_-_ORARI/p008.json",
+ "prescriptions": [
+  "Prescrizioni"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Siracusa (via Rubino)",
+    "Canicattini B (via Vittorio Emanuele)",
+    "Palazzolo (piazza Senatore Italia)",
+    "Buscemi (via Principe Umberto)",
+    "Buccheri (piazza Roma)",
+    "Vizzini (piazza Umberto i°)",
+    "Grammichele (via De Pretis)",
+    "Caltagirone (stazione Autolinee)"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "KMFERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "Canicattini B (via Vittorio Emanuele)",
+       "idx": 1,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "Palazzolo (piazza Senatore Italia)",
+       "idx": 2,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "Buscemi (via Principe Umberto)",
+       "idx": 3,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "Buccheri (piazza Roma)",
+       "idx": 4,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "Vizzini (piazza Umberto i°)",
+       "idx": 5,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "Grammichele (via De Pretis)",
+       "idx": 6,
+       "arr": "9.40",
+       "dep": "9.40"
+      },
+      {
+       "stop": "Caltagirone (stazione Autolinee)",
+       "idx": 7,
+       "arr": "10.10",
+       "dep": "10.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "KMFERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Caltagirone (stazione Autolinee)",
+       "idx": 7,
+       "arr": "11.15",
+       "dep": "11.15"
+      },
+      {
+       "stop": "Grammichele (via De Pretis)",
+       "idx": 6,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "Vizzini (piazza Umberto i°)",
+       "idx": 5,
+       "arr": "12.15",
+       "dep": "12.15"
+      },
+      {
+       "stop": "Buccheri (piazza Roma)",
+       "idx": 4,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "Buscemi (via Principe Umberto)",
+       "idx": 3,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "Palazzolo (piazza Senatore Italia)",
+       "idx": 2,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "14.05",
+       "dep": "14.05"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

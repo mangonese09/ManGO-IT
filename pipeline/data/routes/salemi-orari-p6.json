@@ -1,0 +1,70 @@
+{
+ "operator": "Salemi",
+ "route_id": "salemi-orari-p6",
+ "name": "via SP 21 via SP 21 via SP 21 via SS 115 via SP 21 - Alberico Gentili) Via Turati Via E. Amari",
+ "source": "SALEMI_ORARI/p006.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Nelle corse previste nella fascia oraria compresa dalle ore 10.00 alle ore 13.00 e dalle ore 19.00 alle ore 22.00 l'azienda può applicare una flessibilità oraria non superiore a 30 minuti per l'ultima corsa in partenza dall'aeroporto di Birgi per Palermo la flessibilità orar"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "via SP 21 via SP 21 via SP 21 via SS 115 via SP 21",
+    "dalle ore alle ore e dalle ore alle ore l'azienda può applicare una flessibilità oraria non superiore a 30 minuti per l'ultima corsa in partenza dall'aeroporto di Birgi per Palermo",
+    "Alberico Gentili) Via Turati Via E. Amari (C.C.I.A.A.) P.zza Cairoli (Capolinea)"
+   ],
+   "trips": [
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "giorni1-2-3-4-5-6viaSP21"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "via SP 21 via SP 21 via SP 21 via SS 115 via SP 21",
+       "idx": 0,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "dalle ore alle ore e dalle ore alle ore l'azienda può applicare una flessibilità oraria non superiore a 30 minuti per l'ultima corsa in partenza dall'aeroporto di Birgi per Palermo",
+       "idx": 1,
+       "arr": "10.00",
+       "dep": "10.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "giorni7viaSP21"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "via SP 21 via SP 21 via SP 21 via SS 115 via SP 21",
+       "idx": 0,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "dalle ore alle ore e dalle ore alle ore l'azienda può applicare una flessibilità oraria non superiore a 30 minuti per l'ultima corsa in partenza dall'aeroporto di Birgi per Palermo",
+       "idx": 1,
+       "arr": "10.00",
+       "dep": "10.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,95 @@
+{
+ "operator": "Gallo",
+ "route_id": "gallo-orari-gallo-p5",
+ "name": "ROCCAMENA-BISACQUINO",
+ "source": "Gallo__ORARI_GALLO/p005.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Nessuna"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "ROCCAMENA (CORSO UMBERTO)",
+    "CORLEONE (P.ZZA FALCONE/BORSELLINO)",
+    "CAMPOFIORITO (VIA A. GRAMSCI)",
+    "BISACQUINO (P.ZZA TRIONA)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "inperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ROCCAMENA (CORSO UMBERTO)",
+       "idx": 0,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "CORLEONE (P.ZZA FALCONE/BORSELLINO)",
+       "idx": 1,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "CAMPOFIORITO (VIA A. GRAMSCI)",
+       "idx": 2,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "BISACQUINO (P.ZZA TRIONA)",
+       "idx": 3,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "inperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "BISACQUINO (P.ZZA TRIONA)",
+       "idx": 3,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "CAMPOFIORITO (VIA A. GRAMSCI)",
+       "idx": 2,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "CORLEONE (P.ZZA FALCONE/BORSELLINO)",
+       "idx": 1,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "ROCCAMENA (CORSO UMBERTO)",
+       "idx": 0,
+       "arr": "15.20",
+       "dep": "15.20"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

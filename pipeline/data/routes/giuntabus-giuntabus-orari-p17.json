@@ -1,0 +1,108 @@
+{
+ "operator": "Giuntabus",
+ "route_id": "giuntabus-giuntabus-orari-p17",
+ "name": "Milazzo - SOLO LA DOMENICA, ETC….",
+ "source": "Giuntabus__GIUNTABUS_ORARI/p017.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio DIVIETO DI SERVIZIO LICALE DA PONTE GALLO A MESSINA ESTREMI COMPRESI"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Milazzo",
+    "Grazia",
+    "Olivarella",
+    "Archi",
+    "Giammoro",
+    "Monforte Marina",
+    "Scala Torregrotta",
+    "Spadafora",
+    "Rometta",
+    "Villafranca A/20",
+    "Messina",
+    "SOLO LA DOMENICA, ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Milazzo",
+       "idx": 0,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "Grazia",
+       "idx": 1,
+       "arr": "9.25",
+       "dep": "9.25"
+      },
+      {
+       "stop": "Olivarella",
+       "idx": 2,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "Archi",
+       "idx": 3,
+       "arr": "9.35",
+       "dep": "9.35"
+      },
+      {
+       "stop": "Giammoro",
+       "idx": 4,
+       "arr": "9.40",
+       "dep": "9.40"
+      },
+      {
+       "stop": "Monforte Marina",
+       "idx": 5,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "Scala Torregrotta",
+       "idx": 6,
+       "arr": "9.50",
+       "dep": "9.50"
+      },
+      {
+       "stop": "Spadafora",
+       "idx": 7,
+       "arr": "9.55",
+       "dep": "9.55"
+      },
+      {
+       "stop": "Rometta",
+       "idx": 8,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "Villafranca A/20",
+       "idx": 9,
+       "arr": "10.10",
+       "dep": "10.10"
+      },
+      {
+       "stop": "Messina",
+       "idx": 10,
+       "arr": "10.30",
+       "dep": "10.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

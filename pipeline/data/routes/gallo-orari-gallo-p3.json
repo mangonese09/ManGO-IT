@@ -1,0 +1,109 @@
+{
+ "operator": "Gallo",
+ "route_id": "gallo-orari-gallo-p3",
+ "name": "CHIUSA S.-GIULIANA-SAMBUCA-PALERMO",
+ "source": "Gallo__ORARI_GALLO/p003.json",
+ "prescriptions": [
+  "Prescrizioni d"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "CHIUSA SCLAFANI (VIA UNGHERIA)",
+    "GIULIANA (CHIESA MADONNA DI POMPEI)",
+    "SAMBUCA DI SICILIA (VIA BERLINGUER)",
+    "BIVIO GULFA",
+    "PALERMO (VIA PAOLO BALSAMO)",
+    "ES. DAL LUNEDI' AL VENERDI', SOLO IL"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "STAZIONAMENTIKMKMFERIALECHIUSASCLAFANI"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CHIUSA SCLAFANI (VIA UNGHERIA)",
+       "idx": 0,
+       "arr": "5.15",
+       "dep": "5.15"
+      },
+      {
+       "stop": "GIULIANA (CHIESA MADONNA DI POMPEI)",
+       "idx": 1,
+       "arr": "5.20",
+       "dep": "5.20"
+      },
+      {
+       "stop": "SAMBUCA DI SICILIA (VIA BERLINGUER)",
+       "idx": 2,
+       "arr": "5.50",
+       "dep": "5.50"
+      },
+      {
+       "stop": "BIVIO GULFA",
+       "idx": 3,
+       "arr": "5.55",
+       "dep": "5.55"
+      },
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 4,
+       "arr": "7.05",
+       "dep": "7.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "KMKMFERIALEUNGHERIA)"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 4,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "BIVIO GULFA",
+       "idx": 3,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "SAMBUCA DI SICILIA (VIA BERLINGUER)",
+       "idx": 2,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "GIULIANA (CHIESA MADONNA DI POMPEI)",
+       "idx": 1,
+       "arr": "16.35",
+       "dep": "16.35"
+      },
+      {
+       "stop": "CHIUSA SCLAFANI (VIA UNGHERIA)",
+       "idx": 0,
+       "arr": "16.50",
+       "dep": "16.50"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

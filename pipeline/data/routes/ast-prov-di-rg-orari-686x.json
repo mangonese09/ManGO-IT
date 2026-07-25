@@ -1,0 +1,745 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-rg-orari-686x",
+ "name": "Acate - Ragusa",
+ "source": "AST_prov._di_RG_-_ORARI/p003.json",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "Acate (piazza Libertà) Capolinea",
+    "Pedalino",
+    "Roccazzo",
+    "Villaggio Gulfi",
+    "via via s.s.514 Chiaramonte Gulfi p. (San Vito)",
+    "bivio Coffa",
+    "Contrada Cappello",
+    "Ragusa (terminal via Zama)"
+   ],
+   "trips": [
+    {
+     "corsa": "10A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialescolastic"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "via via s.s.514 Chiaramonte Gulfi p. (San Vito)",
+       "idx": 4,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "bivio Coffa",
+       "idx": 5,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "Ragusa (terminal via Zama)",
+       "idx": 7,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "14A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialescolastic"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Villaggio Gulfi",
+       "idx": 3,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "bivio Coffa",
+       "idx": 5,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "Ragusa (terminal via Zama)",
+       "idx": 7,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "15A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialescolastic"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "via via s.s.514 Chiaramonte Gulfi p. (San Vito)",
+       "idx": 4,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "bivio Coffa",
+       "idx": 5,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "Ragusa (terminal via Zama)",
+       "idx": 7,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "16A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialescolastic"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Villaggio Gulfi",
+       "idx": 3,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "via via s.s.514 Chiaramonte Gulfi p. (San Vito)",
+       "idx": 4,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Contrada Cappello",
+       "idx": 6,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Ragusa (terminal via Zama)",
+       "idx": 7,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeinvernale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Acate (piazza Libertà) Capolinea",
+       "idx": 0,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "Pedalino",
+       "idx": 1,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "Roccazzo",
+       "idx": 2,
+       "arr": "6.25",
+       "dep": "6.25"
+      },
+      {
+       "stop": "Villaggio Gulfi",
+       "idx": 3,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "via via s.s.514 Chiaramonte Gulfi p. (San Vito)",
+       "idx": 4,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Contrada Cappello",
+       "idx": 6,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Ragusa (terminal via Zama)",
+       "idx": 7,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "scolastica"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Acate (piazza Libertà) Capolinea",
+       "idx": 0,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "Pedalino",
+       "idx": 1,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "Roccazzo",
+       "idx": 2,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "bivio Coffa",
+       "idx": 5,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "Ragusa (terminal via Zama)",
+       "idx": 7,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ferialescolastica"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Acate (piazza Libertà) Capolinea",
+       "idx": 0,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "Pedalino",
+       "idx": 1,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Roccazzo",
+       "idx": 2,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "via via s.s.514 Chiaramonte Gulfi p. (San Vito)",
+       "idx": 4,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeinvernale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "via via s.s.514 Chiaramonte Gulfi p. (San Vito)",
+       "idx": 4,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "bivio Coffa",
+       "idx": 5,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "Ragusa (terminal via Zama)",
+       "idx": 7,
+       "arr": "9.05",
+       "dep": "9.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "18A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeinvernale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "via via s.s.514 Chiaramonte Gulfi p. (San Vito)",
+       "idx": 4,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "bivio Coffa",
+       "idx": 5,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "Ragusa (terminal via Zama)",
+       "idx": 7,
+       "arr": "13.20",
+       "dep": "13.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeinvernale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "via via s.s.514 Chiaramonte Gulfi p. (San Vito)",
+       "idx": 4,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Contrada Cappello",
+       "idx": 6,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "Ragusa (terminal via Zama)",
+       "idx": 7,
+       "arr": "15.20",
+       "dep": "15.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "19A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeinvernale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "via via s.s.514 Chiaramonte Gulfi p. (San Vito)",
+       "idx": 4,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "Contrada Cappello",
+       "idx": 6,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "Ragusa (terminal via Zama)",
+       "idx": 7,
+       "arr": "16.40",
+       "dep": "16.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeinvernale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Ragusa (terminal via Zama)",
+       "idx": 7,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "bivio Coffa",
+       "idx": 5,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "via via s.s.514 Chiaramonte Gulfi p. (San Vito)",
+       "idx": 4,
+       "arr": "7.10",
+       "dep": "7.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeinvernale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Ragusa (terminal via Zama)",
+       "idx": 7,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "Contrada Cappello",
+       "idx": 6,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "via via s.s.514 Chiaramonte Gulfi p. (San Vito)",
+       "idx": 4,
+       "arr": "12.20",
+       "dep": "12.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialescolastic"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Ragusa (terminal via Zama)",
+       "idx": 7,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Contrada Cappello",
+       "idx": 6,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "via via s.s.514 Chiaramonte Gulfi p. (San Vito)",
+       "idx": 4,
+       "arr": "14.20",
+       "dep": "14.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeinvernale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Ragusa (terminal via Zama)",
+       "idx": 7,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Contrada Cappello",
+       "idx": 6,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "via via s.s.514 Chiaramonte Gulfi p. (San Vito)",
+       "idx": 4,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "Roccazzo",
+       "idx": 2,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "Pedalino",
+       "idx": 1,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "Acate (piazza Libertà) Capolinea",
+       "idx": 0,
+       "arr": "15.00",
+       "dep": "15.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialescolastic"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Ragusa (terminal via Zama)",
+       "idx": 7,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "bivio Coffa",
+       "idx": 5,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "via via s.s.514 Chiaramonte Gulfi p. (San Vito)",
+       "idx": 4,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "Roccazzo",
+       "idx": 2,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "Pedalino",
+       "idx": 1,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "Acate (piazza Libertà) Capolinea",
+       "idx": 0,
+       "arr": "15.00",
+       "dep": "15.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeinvernale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Ragusa (terminal via Zama)",
+       "idx": 7,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Contrada Cappello",
+       "idx": 6,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "via via s.s.514 Chiaramonte Gulfi p. (San Vito)",
+       "idx": 4,
+       "arr": "14.50",
+       "dep": "14.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialescolastic"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Ragusa (terminal via Zama)",
+       "idx": 7,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Contrada Cappello",
+       "idx": 6,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "via via s.s.514 Chiaramonte Gulfi p. (San Vito)",
+       "idx": 4,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "Roccazzo",
+       "idx": 2,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "Pedalino",
+       "idx": 1,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "Acate (piazza Libertà) Capolinea",
+       "idx": 0,
+       "arr": "16.00",
+       "dep": "16.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "13R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialescolastic"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Ragusa (terminal via Zama)",
+       "idx": 7,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "bivio Coffa",
+       "idx": 5,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "via via s.s.514 Chiaramonte Gulfi p. (San Vito)",
+       "idx": 4,
+       "arr": "16.15",
+       "dep": "16.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "14R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeinvernale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Ragusa (terminal via Zama)",
+       "idx": 7,
+       "arr": "17.15",
+       "dep": "17.15"
+      },
+      {
+       "stop": "bivio Coffa",
+       "idx": 5,
+       "arr": "17.45",
+       "dep": "17.45"
+      },
+      {
+       "stop": "via via s.s.514 Chiaramonte Gulfi p. (San Vito)",
+       "idx": 4,
+       "arr": "18.05",
+       "dep": "18.05"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

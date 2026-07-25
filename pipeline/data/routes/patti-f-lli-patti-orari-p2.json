@@ -1,0 +1,95 @@
+{
+ "operator": "F.lli Patti",
+ "route_id": "patti-f-lli-patti-orari-p2",
+ "name": "Unknown route",
+ "source": "patti__F.LLI_PATTI_ORARI/p002.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "(VIALE ALDO MORO N° 75 VILLA COMUNALE)",
+    "FAVARA (V.LE CHE GUEVARA SCUOLE)",
+    "FAVARA (PIAZZA ITRIA)",
+    "SCALO FERROVIARIO ARAGONA CALDARE"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "(VIALE ALDO MORO N° 75 VILLA COMUNALE)",
+       "idx": 0,
+       "arr": "5.30",
+       "dep": "5.30"
+      },
+      {
+       "stop": "FAVARA (V.LE CHE GUEVARA SCUOLE)",
+       "idx": 1,
+       "arr": "5.32",
+       "dep": "5.32"
+      },
+      {
+       "stop": "FAVARA (PIAZZA ITRIA)",
+       "idx": 2,
+       "arr": "5.35",
+       "dep": "5.35"
+      },
+      {
+       "stop": "SCALO FERROVIARIO ARAGONA CALDARE",
+       "idx": 3,
+       "arr": "5.45",
+       "dep": "5.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "(VIALE ALDO MORO N° 75 VILLA COMUNALE)",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "FAVARA (V.LE CHE GUEVARA SCUOLE)",
+       "idx": 1,
+       "arr": "7.02",
+       "dep": "7.02"
+      },
+      {
+       "stop": "FAVARA (PIAZZA ITRIA)",
+       "idx": 2,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "SCALO FERROVIARIO ARAGONA CALDARE",
+       "idx": 3,
+       "arr": "7.10",
+       "dep": "7.10"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

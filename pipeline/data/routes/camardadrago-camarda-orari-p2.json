@@ -1,0 +1,1272 @@
+{
+ "operator": "Camarda & Drago",
+ "route_id": "camardadrago-camarda-orari-p2",
+ "name": "SAN FRATELLO - MESSINA",
+ "source": "CAMARDADRAGO__CAMARDA_ORARI/p002.json",
+ "prescriptions": [
+  "Consentito effettuare carico di viaggiatori da e per Messina in tutte le località situate tra S.Fratello ed il bivio di CapriLeone quest'ultimo estremo escluso, con divieto di servizio locale tra S.Agata Militello ed il bivio Caprileone e",
+  "Prescrizioni d'Esercizio viceversa estremi compresi."
+ ],
+ "directions": [
+  {
+   "stops": [
+    "SAN FRATELLO",
+    "SANT'ANNA",
+    "PONTE INGANNO",
+    "ACQUEDOLCI",
+    "PONTE INGANNO",
+    "SANT'AGATA MILITELLO",
+    "BIVIO MILITELLO ROSMARINO",
+    "TORRENOVA",
+    "ROCCA DI CAPRILEONE",
+    "MESSINA"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ACQUEDOLCI",
+       "idx": 3,
+       "arr": "4.45",
+       "dep": "4.45"
+      },
+      {
+       "stop": "PONTE INGANNO",
+       "idx": 4,
+       "arr": "4.55",
+       "dep": "4.55"
+      },
+      {
+       "stop": "SANT'AGATA MILITELLO",
+       "idx": 5,
+       "arr": "5.00",
+       "dep": "5.00"
+      },
+      {
+       "stop": "BIVIO MILITELLO ROSMARINO",
+       "idx": 6,
+       "arr": "5.05",
+       "dep": "5.05"
+      },
+      {
+       "stop": "TORRENOVA",
+       "idx": 7,
+       "arr": "5.15",
+       "dep": "5.15"
+      },
+      {
+       "stop": "ROCCA DI CAPRILEONE",
+       "idx": 8,
+       "arr": "5.20",
+       "dep": "5.20"
+      },
+      {
+       "stop": "MESSINA",
+       "idx": 9,
+       "arr": "6.35",
+       "dep": "6.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE**"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ACQUEDOLCI",
+       "idx": 3,
+       "arr": "5.45",
+       "dep": "5.45"
+      },
+      {
+       "stop": "PONTE INGANNO",
+       "idx": 4,
+       "arr": "5.55",
+       "dep": "5.55"
+      },
+      {
+       "stop": "SANT'AGATA MILITELLO",
+       "idx": 5,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "BIVIO MILITELLO ROSMARINO",
+       "idx": 6,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "TORRENOVA",
+       "idx": 7,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "ROCCA DI CAPRILEONE",
+       "idx": 8,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "MESSINA",
+       "idx": 9,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SAN FRATELLO",
+       "idx": 0,
+       "arr": "5.15",
+       "dep": "5.15"
+      },
+      {
+       "stop": "SANT'ANNA",
+       "idx": 1,
+       "arr": "5.40",
+       "dep": "5.40"
+      },
+      {
+       "stop": "PONTE INGANNO",
+       "idx": 2,
+       "arr": "5.50",
+       "dep": "5.50"
+      },
+      {
+       "stop": "ACQUEDOLCI",
+       "idx": 3,
+       "arr": "5.55",
+       "dep": "5.55"
+      },
+      {
+       "stop": "PONTE INGANNO",
+       "idx": 4,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "SANT'AGATA MILITELLO",
+       "idx": 5,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "BIVIO MILITELLO ROSMARINO",
+       "idx": 6,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "TORRENOVA",
+       "idx": 7,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "ROCCA DI CAPRILEONE",
+       "idx": 8,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "MESSINA",
+       "idx": 9,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE*"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ACQUEDOLCI",
+       "idx": 3,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "PONTE INGANNO",
+       "idx": 4,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "SANT'AGATA MILITELLO",
+       "idx": 5,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "BIVIO MILITELLO ROSMARINO",
+       "idx": 6,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "TORRENOVA",
+       "idx": 7,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "ROCCA DI CAPRILEONE",
+       "idx": 8,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "MESSINA",
+       "idx": 9,
+       "arr": "8.30",
+       "dep": "8.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SAN FRATELLO",
+       "idx": 0,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "SANT'ANNA",
+       "idx": 1,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "PONTE INGANNO",
+       "idx": 2,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "ACQUEDOLCI",
+       "idx": 3,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "PONTE INGANNO",
+       "idx": 4,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "SANT'AGATA MILITELLO",
+       "idx": 5,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "BIVIO MILITELLO ROSMARINO",
+       "idx": 6,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "TORRENOVA",
+       "idx": 7,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "ROCCA DI CAPRILEONE",
+       "idx": 8,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "MESSINA",
+       "idx": 9,
+       "arr": "9.00",
+       "dep": "9.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SAN FRATELLO",
+       "idx": 0,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "SANT'ANNA",
+       "idx": 1,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "PONTE INGANNO",
+       "idx": 2,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "ACQUEDOLCI",
+       "idx": 3,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "PONTE INGANNO",
+       "idx": 4,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "SANT'AGATA MILITELLO",
+       "idx": 5,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "BIVIO MILITELLO ROSMARINO",
+       "idx": 6,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "TORRENOVA",
+       "idx": 7,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "ROCCA DI CAPRILEONE",
+       "idx": 8,
+       "arr": "8.35",
+       "dep": "8.35"
+      },
+      {
+       "stop": "MESSINA",
+       "idx": 9,
+       "arr": "10.00",
+       "dep": "10.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "13",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ACQUEDOLCI",
+       "idx": 3,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "PONTE INGANNO",
+       "idx": 4,
+       "arr": "10.40",
+       "dep": "10.40"
+      },
+      {
+       "stop": "SANT'AGATA MILITELLO",
+       "idx": 5,
+       "arr": "10.50",
+       "dep": "10.50"
+      },
+      {
+       "stop": "BIVIO MILITELLO ROSMARINO",
+       "idx": 6,
+       "arr": "10.55",
+       "dep": "10.55"
+      },
+      {
+       "stop": "TORRENOVA",
+       "idx": 7,
+       "arr": "11.05",
+       "dep": "11.05"
+      },
+      {
+       "stop": "ROCCA DI CAPRILEONE",
+       "idx": 8,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "MESSINA",
+       "idx": 9,
+       "arr": "12.30",
+       "dep": "12.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "15",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE**"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ACQUEDOLCI",
+       "idx": 3,
+       "arr": "12.15",
+       "dep": "12.15"
+      },
+      {
+       "stop": "PONTE INGANNO",
+       "idx": 4,
+       "arr": "12.25",
+       "dep": "12.25"
+      },
+      {
+       "stop": "SANT'AGATA MILITELLO",
+       "idx": 5,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "BIVIO MILITELLO ROSMARINO",
+       "idx": 6,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "TORRENOVA",
+       "idx": 7,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "ROCCA DI CAPRILEONE",
+       "idx": 8,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "MESSINA",
+       "idx": 9,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "17",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SAN FRATELLO",
+       "idx": 0,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "SANT'ANNA",
+       "idx": 1,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "PONTE INGANNO",
+       "idx": 2,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "ACQUEDOLCI",
+       "idx": 3,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "PONTE INGANNO",
+       "idx": 4,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "SANT'AGATA MILITELLO",
+       "idx": 5,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "BIVIO MILITELLO ROSMARINO",
+       "idx": 6,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "TORRENOVA",
+       "idx": 7,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "ROCCA DI CAPRILEONE",
+       "idx": 8,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "MESSINA",
+       "idx": 9,
+       "arr": "15.10",
+       "dep": "15.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "19",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ACQUEDOLCI",
+       "idx": 3,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "PONTE INGANNO",
+       "idx": 4,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "SANT'AGATA MILITELLO",
+       "idx": 5,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "BIVIO MILITELLO ROSMARINO",
+       "idx": 6,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "TORRENOVA",
+       "idx": 7,
+       "arr": "17.10",
+       "dep": "17.10"
+      },
+      {
+       "stop": "ROCCA DI CAPRILEONE",
+       "idx": 8,
+       "arr": "17.15",
+       "dep": "17.15"
+      },
+      {
+       "stop": "MESSINA",
+       "idx": 9,
+       "arr": "18.40",
+       "dep": "18.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MESSINA",
+       "idx": 9,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "ROCCA DI CAPRILEONE",
+       "idx": 8,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "TORRENOVA",
+       "idx": 7,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "BIVIO MILITELLO ROSMARINO",
+       "idx": 6,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "SANT'AGATA MILITELLO",
+       "idx": 5,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "PONTE INGANNO",
+       "idx": 4,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "ACQUEDOLCI",
+       "idx": 3,
+       "arr": "8.30",
+       "dep": "8.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE**"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MESSINA",
+       "idx": 9,
+       "arr": "10.45",
+       "dep": "10.45"
+      },
+      {
+       "stop": "ROCCA DI CAPRILEONE",
+       "idx": 8,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "TORRENOVA",
+       "idx": 7,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "BIVIO MILITELLO ROSMARINO",
+       "idx": 6,
+       "arr": "12.15",
+       "dep": "12.15"
+      },
+      {
+       "stop": "SANT'AGATA MILITELLO",
+       "idx": 5,
+       "arr": "12.20",
+       "dep": "12.20"
+      },
+      {
+       "stop": "PONTE INGANNO",
+       "idx": 4,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "ACQUEDOLCI",
+       "idx": 3,
+       "arr": "12.40",
+       "dep": "12.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MESSINA",
+       "idx": 9,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "ROCCA DI CAPRILEONE",
+       "idx": 8,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "TORRENOVA",
+       "idx": 7,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "BIVIO MILITELLO ROSMARINO",
+       "idx": 6,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "SANT'AGATA MILITELLO",
+       "idx": 5,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "PONTE INGANNO",
+       "idx": 4,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "ACQUEDOLCI",
+       "idx": 3,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "PONTE INGANNO",
+       "idx": 2,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "SANT'ANNA",
+       "idx": 1,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "SAN FRATELLO",
+       "idx": 0,
+       "arr": "14.05",
+       "dep": "14.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MESSINA",
+       "idx": 9,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "ROCCA DI CAPRILEONE",
+       "idx": 8,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "TORRENOVA",
+       "idx": 7,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "BIVIO MILITELLO ROSMARINO",
+       "idx": 6,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "SANT'AGATA MILITELLO",
+       "idx": 5,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "PONTE INGANNO",
+       "idx": 4,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "ACQUEDOLCI",
+       "idx": 3,
+       "arr": "14.30",
+       "dep": "14.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MESSINA",
+       "idx": 9,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "ROCCA DI CAPRILEONE",
+       "idx": 8,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "TORRENOVA",
+       "idx": 7,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "BIVIO MILITELLO ROSMARINO",
+       "idx": 6,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "SANT'AGATA MILITELLO",
+       "idx": 5,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "PONTE INGANNO",
+       "idx": 4,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "ACQUEDOLCI",
+       "idx": 3,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "PONTE INGANNO",
+       "idx": 2,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "SANT'ANNA",
+       "idx": 1,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "SAN FRATELLO",
+       "idx": 0,
+       "arr": "16.05",
+       "dep": "16.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MESSINA",
+       "idx": 9,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "ROCCA DI CAPRILEONE",
+       "idx": 8,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "TORRENOVA",
+       "idx": 7,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "BIVIO MILITELLO ROSMARINO",
+       "idx": 6,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "SANT'AGATA MILITELLO",
+       "idx": 5,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "PONTE INGANNO",
+       "idx": 4,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "ACQUEDOLCI",
+       "idx": 3,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "PONTE INGANNO",
+       "idx": 2,
+       "arr": "16.35",
+       "dep": "16.35"
+      },
+      {
+       "stop": "SANT'ANNA",
+       "idx": 1,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "SAN FRATELLO",
+       "idx": 0,
+       "arr": "17.10",
+       "dep": "17.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "14",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE**"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MESSINA",
+       "idx": 9,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "ROCCA DI CAPRILEONE",
+       "idx": 8,
+       "arr": "17.15",
+       "dep": "17.15"
+      },
+      {
+       "stop": "TORRENOVA",
+       "idx": 7,
+       "arr": "17.20",
+       "dep": "17.20"
+      },
+      {
+       "stop": "BIVIO MILITELLO ROSMARINO",
+       "idx": 6,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "SANT'AGATA MILITELLO",
+       "idx": 5,
+       "arr": "17.35",
+       "dep": "17.35"
+      },
+      {
+       "stop": "PONTE INGANNO",
+       "idx": 4,
+       "arr": "17.45",
+       "dep": "17.45"
+      },
+      {
+       "stop": "ACQUEDOLCI",
+       "idx": 3,
+       "arr": "17.55",
+       "dep": "17.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "16",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MESSINA",
+       "idx": 9,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "ROCCA DI CAPRILEONE",
+       "idx": 8,
+       "arr": "18.15",
+       "dep": "18.15"
+      },
+      {
+       "stop": "TORRENOVA",
+       "idx": 7,
+       "arr": "18.20",
+       "dep": "18.20"
+      },
+      {
+       "stop": "BIVIO MILITELLO ROSMARINO",
+       "idx": 6,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "SANT'AGATA MILITELLO",
+       "idx": 5,
+       "arr": "18.35",
+       "dep": "18.35"
+      },
+      {
+       "stop": "PONTE INGANNO",
+       "idx": 4,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "ACQUEDOLCI",
+       "idx": 3,
+       "arr": "18.55",
+       "dep": "18.55"
+      },
+      {
+       "stop": "PONTE INGANNO",
+       "idx": 2,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "SANT'ANNA",
+       "idx": 1,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "SAN FRATELLO",
+       "idx": 0,
+       "arr": "19.35",
+       "dep": "19.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "18",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE*"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MESSINA",
+       "idx": 9,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "ROCCA DI CAPRILEONE",
+       "idx": 8,
+       "arr": "19.15",
+       "dep": "19.15"
+      },
+      {
+       "stop": "TORRENOVA",
+       "idx": 7,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "BIVIO MILITELLO ROSMARINO",
+       "idx": 6,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "SANT'AGATA MILITELLO",
+       "idx": 5,
+       "arr": "19.35",
+       "dep": "19.35"
+      },
+      {
+       "stop": "PONTE INGANNO",
+       "idx": 4,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "ACQUEDOLCI",
+       "idx": 3,
+       "arr": "19.55",
+       "dep": "19.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "20",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MESSINA",
+       "idx": 9,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "ROCCA DI CAPRILEONE",
+       "idx": 8,
+       "arr": "20.15",
+       "dep": "20.15"
+      },
+      {
+       "stop": "TORRENOVA",
+       "idx": 7,
+       "arr": "20.20",
+       "dep": "20.20"
+      },
+      {
+       "stop": "BIVIO MILITELLO ROSMARINO",
+       "idx": 6,
+       "arr": "20.30",
+       "dep": "20.30"
+      },
+      {
+       "stop": "SANT'AGATA MILITELLO",
+       "idx": 5,
+       "arr": "20.35",
+       "dep": "20.35"
+      },
+      {
+       "stop": "PONTE INGANNO",
+       "idx": 4,
+       "arr": "20.45",
+       "dep": "20.45"
+      },
+      {
+       "stop": "ACQUEDOLCI",
+       "idx": 3,
+       "arr": "20.55",
+       "dep": "20.55"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

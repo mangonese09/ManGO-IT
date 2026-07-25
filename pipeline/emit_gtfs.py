@@ -30,11 +30,15 @@ HOLIDAYS = {
     date(2027, 4, 25), date(2027, 5, 1), date(2027, 6, 2),
 }
 
-AGENCIES = {
-    'AST': ('ast', 'Azienda Siciliana Trasporti', 'https://www.aziendasicilianatrasporti.it'),
-    'Interbus': ('interbus', 'Interbus', 'https://www.interbus.it'),
-    'Etna Trasporti': ('etna', 'Etna Trasporti', 'https://www.etnatrasporti.it'),
+AGENCY_URLS = {
+    'Azienda Siciliana Trasporti': 'https://www.aziendasicilianatrasporti.it',
+    'AST': 'https://www.aziendasicilianatrasporti.it',
+    'Interbus': 'https://www.interbus.it',
+    'Etna Trasporti': 'https://www.etnatrasporti.it',
+    'SAIS Trasporti': 'https://www.saistrasporti.it',
+    'SAIS Autolinee': 'https://www.saisautolinee.it',
 }
+FALLBACK_URL = 'https://pti.regione.sicilia.it'
 
 
 def is_school_day(d):
@@ -106,14 +110,17 @@ def main():
 
     agency_rows, route_rows, trip_rows, st_rows, cal_rows = [], [], [], [], []
     stop_rows, stops_seen, services_seen = [], {}, {}
+    agencies_seen = {}
     skipped = []
-
-    for aid, name, url in AGENCIES.values():
-        agency_rows.append([aid, name, url, 'Europe/Rome', 'it'])
 
     for f in sorted(os.listdir(ROUTES)):
         route = json.load(open(os.path.join(ROUTES, f), encoding='utf-8'))
-        aid = AGENCIES[route['operator']][0]
+        op = route['operator']
+        if op not in agencies_seen:
+            aid = slug(op)[:24]
+            agencies_seen[op] = aid
+            agency_rows.append([aid, op, AGENCY_URLS.get(op, FALLBACK_URL), 'Europe/Rome', 'it'])
+        aid = agencies_seen[op]
         rid = route['route_id']
         cod = re.search(r'cod\.?\s*(\d+)', route['name'], re.I)
         route_rows.append([rid, aid, cod.group(1) if cod else '', route['name'], 3])

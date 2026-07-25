@@ -1,0 +1,145 @@
+{
+ "operator": "Etna Trasporti",
+ "route_id": "etna-trasporti-orari-2-p8",
+ "name": "Piazza Armerina - Caltagirone, dir. S.Cono 9",
+ "source": "ETNA_TRASPORTI_ORARI_2/p008.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "PIAZZA ARMERINA (V.le G. Ciancio-P.zza Marescalchi)",
+    "S.CONO (Piazza Gramsci Municipio)",
+    "S.MICHELE GANZERIA (Via Vitt. Veneto, 1 Villetta Comunale)",
+    "CALTAGIRONE (Autostazione)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEdalunedìavenerdìinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PIAZZA ARMERINA (V.le G. Ciancio-P.zza Marescalchi)",
+       "idx": 0,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "S.CONO (Piazza Gramsci Municipio)",
+       "idx": 1,
+       "arr": "7.15",
+       "dep": "7.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PIAZZA ARMERINA (V.le G. Ciancio-P.zza Marescalchi)",
+       "idx": 0,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "S.CONO (Piazza Gramsci Municipio)",
+       "idx": 1,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "S.MICHELE GANZERIA (Via Vitt. Veneto, 1 Villetta Comunale)",
+       "idx": 2,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 3,
+       "arr": "15.05",
+       "dep": "15.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 3,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "S.MICHELE GANZERIA (Via Vitt. Veneto, 1 Villetta Comunale)",
+       "idx": 2,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "S.CONO (Piazza Gramsci Municipio)",
+       "idx": 1,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (V.le G. Ciancio-P.zza Marescalchi)",
+       "idx": 0,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEdalunedìavenerdìinperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "S.CONO (Piazza Gramsci Municipio)",
+       "idx": 1,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (V.le G. Ciancio-P.zza Marescalchi)",
+       "idx": 0,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,482 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-rg-orari-664x",
+ "name": "Pozzallo Capolinea - Ragusa",
+ "source": "AST_prov._di_RG_-_ORARI/p014.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Pozzallo Capolinea",
+    "Ispica (via Rapisardi)",
+    "Pozzallo (Largo Marinai d'Italia)",
+    "Modica (Zona 167\\Scuole) 1",
+    "Modica (piazza Borsellino)",
+    "Ragusa (Terminal via Zama)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Pozzallo Capolinea",
+       "idx": 0,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "Ispica (via Rapisardi)",
+       "idx": 1,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "Modica (piazza Borsellino)",
+       "idx": 4,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Ragusa (Terminal via Zama)",
+       "idx": 5,
+       "arr": "7.40",
+       "dep": "7.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Ispica (via Rapisardi)",
+       "idx": 1,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "Pozzallo (Largo Marinai d'Italia)",
+       "idx": 2,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "Modica (piazza Borsellino)",
+       "idx": 4,
+       "arr": "9.10",
+       "dep": "9.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Modica (piazza Borsellino)",
+       "idx": 4,
+       "arr": "10.45",
+       "dep": "10.45"
+      },
+      {
+       "stop": "Ragusa (Terminal via Zama)",
+       "idx": 5,
+       "arr": "11.15",
+       "dep": "11.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Pozzallo (Largo Marinai d'Italia)",
+       "idx": 2,
+       "arr": "11.20",
+       "dep": "11.20"
+      },
+      {
+       "stop": "Modica (piazza Borsellino)",
+       "idx": 4,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "Ragusa (Terminal via Zama)",
+       "idx": 5,
+       "arr": "12.30",
+       "dep": "12.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ferialescolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Modica (Zona 167\\Scuole) 1",
+       "idx": 3,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "Modica (piazza Borsellino)",
+       "idx": 4,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "Ragusa (Terminal via Zama)",
+       "idx": 5,
+       "arr": "14.00",
+       "dep": "14.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ferialescolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Modica (Zona 167\\Scuole) 1",
+       "idx": 3,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "Modica (piazza Borsellino)",
+       "idx": 4,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Ragusa (Terminal via Zama)",
+       "idx": 5,
+       "arr": "14.35",
+       "dep": "14.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Pozzallo Capolinea",
+       "idx": 0,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "Ispica (via Rapisardi)",
+       "idx": 1,
+       "arr": "17.20",
+       "dep": "17.20"
+      },
+      {
+       "stop": "Modica (piazza Borsellino)",
+       "idx": 4,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "Ragusa (Terminal via Zama)",
+       "idx": 5,
+       "arr": "18.30",
+       "dep": "18.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ferialescolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Modica (piazza Borsellino)",
+       "idx": 4,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "Modica (Zona 167\\Scuole) 1",
+       "idx": 3,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "Pozzallo (Largo Marinai d'Italia)",
+       "idx": 2,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "Ispica (via Rapisardi)",
+       "idx": 1,
+       "arr": "8.50",
+       "dep": "8.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialescolastic"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Ragusa (Terminal via Zama)",
+       "idx": 5,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Modica (piazza Borsellino)",
+       "idx": 4,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "Modica (Zona 167\\Scuole) 1",
+       "idx": 3,
+       "arr": "8.15",
+       "dep": "8.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "13",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeinvernale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Ragusa (Terminal via Zama)",
+       "idx": 5,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "Modica (piazza Borsellino)",
+       "idx": 4,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "Modica (Zona 167\\Scuole) 1",
+       "idx": 3,
+       "arr": "8.30",
+       "dep": "8.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "14",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeestiva"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Ragusa (Terminal via Zama)",
+       "idx": 5,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "Modica (piazza Borsellino)",
+       "idx": 4,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "Pozzallo (Largo Marinai d'Italia)",
+       "idx": 2,
+       "arr": "9.00",
+       "dep": "9.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "15",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeinvernale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Ragusa (Terminal via Zama)",
+       "idx": 5,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "Modica (piazza Borsellino)",
+       "idx": 4,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "Modica (Zona 167\\Scuole) 1",
+       "idx": 3,
+       "arr": "9.30",
+       "dep": "9.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "16",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeestivo"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Ragusa (Terminal via Zama)",
+       "idx": 5,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "Modica (piazza Borsellino)",
+       "idx": 4,
+       "arr": "9.30",
+       "dep": "9.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "17",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeinvernale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Ragusa (Terminal via Zama)",
+       "idx": 5,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "Modica (piazza Borsellino)",
+       "idx": 4,
+       "arr": "11.00",
+       "dep": "11.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "19",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Ragusa (Terminal via Zama)",
+       "idx": 5,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "Modica (piazza Borsellino)",
+       "idx": 4,
+       "arr": "19.00",
+       "dep": "19.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

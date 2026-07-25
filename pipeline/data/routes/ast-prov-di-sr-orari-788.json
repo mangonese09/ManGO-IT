@@ -1,0 +1,221 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-sr-orari-788",
+ "name": "Siracusa - Palazzolo",
+ "source": "AST_prov.di_SR_-_ORARI/p011.json",
+ "prescriptions": [
+  "Prescrizioni NESSUNA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Siracusa (via Rubino)",
+    "Floridia (via Vittorio Emnauele)",
+    "Solarino (piazza Plebiscito)",
+    "ferla (piazza San Sebastiano)",
+    "Cassaro (piazza Matrice)",
+    "Buscemi (via Principe Umberto)",
+    "Palazzolo (piazza Senatore Italia)"
+   ],
+   "trips": [
+    {
+     "corsa": "4A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEiperiodoscolasti"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Cassaro (piazza Matrice)",
+       "idx": 4,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "Buscemi (via Principe Umberto)",
+       "idx": 5,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "Palazzolo (piazza Senatore Italia)",
+       "idx": 6,
+       "arr": "8.10",
+       "dep": "8.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Buscemi (via Principe Umberto)",
+       "idx": 5,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "Palazzolo (piazza Senatore Italia)",
+       "idx": 6,
+       "arr": "8.10",
+       "dep": "8.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Floridia (via Vittorio Emnauele)",
+       "idx": 1,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Solarino (piazza Plebiscito)",
+       "idx": 2,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "ferla (piazza San Sebastiano)",
+       "idx": 3,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "Cassaro (piazza Matrice)",
+       "idx": 4,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "Buscemi (via Principe Umberto)",
+       "idx": 5,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "Palazzolo (piazza Senatore Italia)",
+       "idx": 6,
+       "arr": "16.20",
+       "dep": "16.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Palazzolo (piazza Senatore Italia)",
+       "idx": 6,
+       "arr": "5.50",
+       "dep": "5.50"
+      },
+      {
+       "stop": "Buscemi (via Principe Umberto)",
+       "idx": 5,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "Cassaro (piazza Matrice)",
+       "idx": 4,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "ferla (piazza San Sebastiano)",
+       "idx": 3,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "Solarino (piazza Plebiscito)",
+       "idx": 2,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Floridia (via Vittorio Emnauele)",
+       "idx": 1,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "8.10",
+       "dep": "8.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEINPERIODOSCOLASTICO"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Palazzolo (piazza Senatore Italia)",
+       "idx": 6,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Buscemi (via Principe Umberto)",
+       "idx": 5,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Cassaro (piazza Matrice)",
+       "idx": 4,
+       "arr": "15.10",
+       "dep": "15.10"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

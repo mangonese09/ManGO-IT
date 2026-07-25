@@ -1,0 +1,115 @@
+{
+ "operator": "Giamporcaro",
+ "route_id": "giamporcaro-giamporcaro-orar-p3",
+ "name": "MONTEROSSO ALMO-CHIARAMONTE GULFI - COMISO",
+ "source": "Giamporcaro__GIAMPORCARO_ORARI/p003.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio NESSUNA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "MONTEROSSO (Via Giovanni XXIII)",
+    "CHIARAMONTE GULFI (P.zza Villa Maggiore Utello)",
+    "ROCCAZZO (Via Monte Iblei)",
+    "PEDALINO (Via Salso)",
+    "AEROPORTO COMISO (Terminal)",
+    "COMISO (P.zza Majorana)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "KMKMSTAZIONAMENTIFERIALESCOL"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MONTEROSSO (Via Giovanni XXIII)",
+       "idx": 0,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "CHIARAMONTE GULFI (P.zza Villa Maggiore Utello)",
+       "idx": 1,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "ROCCAZZO (Via Monte Iblei)",
+       "idx": 2,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "PEDALINO (Via Salso)",
+       "idx": 3,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "AEROPORTO COMISO (Terminal)",
+       "idx": 4,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "COMISO (P.zza Majorana)",
+       "idx": 5,
+       "arr": "7.25",
+       "dep": "7.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "KMKMFERIALESCOL"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "COMISO (P.zza Majorana)",
+       "idx": 5,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "PEDALINO (Via Salso)",
+       "idx": 3,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "ROCCAZZO (Via Monte Iblei)",
+       "idx": 2,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "CHIARAMONTE GULFI (P.zza Villa Maggiore Utello)",
+       "idx": 1,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "MONTEROSSO (Via Giovanni XXIII)",
+       "idx": 0,
+       "arr": "15.45",
+       "dep": "15.45"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

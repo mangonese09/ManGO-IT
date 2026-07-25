@@ -1,0 +1,124 @@
+{
+ "operator": "Interbus",
+ "route_id": "orari-interbus-p27",
+ "name": "Pettineo-Mistretta-S.Stefano C.-A/20-Messina",
+ "source": "ORARI_INTERBUS/p027.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "PETTINEO Via Stradale/Caserma Carabinieri",
+    "MOTTA D'AFFERMO P.zza S. Lucia/Via Kennedy",
+    "S.P. 174",
+    "MISTRETTA P.zza Vitt. Veneto/Via Libertà",
+    "SS. 117",
+    "REITANO Via Nazionale/Piazzetta Padre Pio",
+    "STEFANO CAMASTRA Via Vittoria/P.zza Matteotti",
+    "A/20",
+    "MESSINA P.zza della Repubblica"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEKMSTAZIONAMENTIesclusoSabato"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PETTINEO Via Stradale/Caserma Carabinieri",
+       "idx": 0,
+       "arr": "5.00",
+       "dep": "5.00"
+      },
+      {
+       "stop": "MOTTA D'AFFERMO P.zza S. Lucia/Via Kennedy",
+       "idx": 1,
+       "arr": "5.10",
+       "dep": "5.10"
+      },
+      {
+       "stop": "MISTRETTA P.zza Vitt. Veneto/Via Libertà",
+       "idx": 3,
+       "arr": "5.30",
+       "dep": "5.30"
+      },
+      {
+       "stop": "REITANO Via Nazionale/Piazzetta Padre Pio",
+       "idx": 5,
+       "arr": "5.45",
+       "dep": "5.45"
+      },
+      {
+       "stop": "STEFANO CAMASTRA Via Vittoria/P.zza Matteotti",
+       "idx": 6,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "MESSINA P.zza della Repubblica",
+       "idx": 8,
+       "arr": "7.35",
+       "dep": "7.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "KMFERIALEesclusoSabato"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MESSINA P.zza della Repubblica",
+       "idx": 8,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "STEFANO CAMASTRA Via Vittoria/P.zza Matteotti",
+       "idx": 6,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "REITANO Via Nazionale/Piazzetta Padre Pio",
+       "idx": 5,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "MISTRETTA P.zza Vitt. Veneto/Via Libertà",
+       "idx": 3,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "MOTTA D'AFFERMO P.zza S. Lucia/Via Kennedy",
+       "idx": 1,
+       "arr": "16.25",
+       "dep": "16.25"
+      },
+      {
+       "stop": "PETTINEO Via Stradale/Caserma Carabinieri",
+       "idx": 0,
+       "arr": "16.35",
+       "dep": "16.35"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

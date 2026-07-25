@@ -1,0 +1,296 @@
+{
+ "operator": "Interbus",
+ "route_id": "orari-interbus-p4",
+ "name": "SOLARINO - CATANIA",
+ "source": "ORARI_INTERBUS/p004.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "SOLARINO (P.zza del Plebiscito)",
+    "(C.so Vitt. Emanuele, 610/V.le Vitt. Veneto)",
+    "BELVEDERE (Piazza P. Bonanno)",
+    "TARGIA",
+    "FONDACO NUOVO",
+    "PRIOLO (P.zza Di Mauro/Via Mostingiano)",
+    "Strada Panoramica",
+    "AEROPORTO Fontanarossa",
+    "CATANIA (Terminal Bus/Via D'amico-Archimede)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdaLunedìaVenerdì"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SOLARINO (P.zza del Plebiscito)",
+       "idx": 0,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "(C.so Vitt. Emanuele, 610/V.le Vitt. Veneto)",
+       "idx": 1,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "BELVEDERE (Piazza P. Bonanno)",
+       "idx": 2,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "TARGIA",
+       "idx": 3,
+       "arr": "6.25",
+       "dep": "6.25"
+      },
+      {
+       "stop": "FONDACO NUOVO",
+       "idx": 4,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "PRIOLO (P.zza Di Mauro/Via Mostingiano)",
+       "idx": 5,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "AEROPORTO Fontanarossa",
+       "idx": 7,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "CATANIA (Terminal Bus/Via D'amico-Archimede)",
+       "idx": 8,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEdaLunedìaVenerdìinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SOLARINO (P.zza del Plebiscito)",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "(C.so Vitt. Emanuele, 610/V.le Vitt. Veneto)",
+       "idx": 1,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "AEROPORTO Fontanarossa",
+       "idx": 7,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "CATANIA (Terminal Bus/Via D'amico-Archimede)",
+       "idx": 8,
+       "arr": "8.10",
+       "dep": "8.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "sun-holidays",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FESTIVOinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SOLARINO (P.zza del Plebiscito)",
+       "idx": 0,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "(C.so Vitt. Emanuele, 610/V.le Vitt. Veneto)",
+       "idx": 1,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "AEROPORTO Fontanarossa",
+       "idx": 7,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "CATANIA (Terminal Bus/Via D'amico-Archimede)",
+       "idx": 8,
+       "arr": "19.10",
+       "dep": "19.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdaLunedìaVenerdì"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Terminal Bus/Via D'amico-Archimede)",
+       "idx": 8,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "AEROPORTO Fontanarossa",
+       "idx": 7,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "PRIOLO (P.zza Di Mauro/Via Mostingiano)",
+       "idx": 5,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "FONDACO NUOVO",
+       "idx": 4,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "TARGIA",
+       "idx": 3,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "BELVEDERE (Piazza P. Bonanno)",
+       "idx": 2,
+       "arr": "15.45",
+       "dep": "15.45"
+      },
+      {
+       "stop": "(C.so Vitt. Emanuele, 610/V.le Vitt. Veneto)",
+       "idx": 1,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "SOLARINO (P.zza del Plebiscito)",
+       "idx": 0,
+       "arr": "16.00",
+       "dep": "16.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEdaLunedìaVenerdìinperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Terminal Bus/Via D'amico-Archimede)",
+       "idx": 8,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "AEROPORTO Fontanarossa",
+       "idx": 7,
+       "arr": "17.40",
+       "dep": "17.40"
+      },
+      {
+       "stop": "(C.so Vitt. Emanuele, 610/V.le Vitt. Veneto)",
+       "idx": 1,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "SOLARINO (P.zza del Plebiscito)",
+       "idx": 0,
+       "arr": "18.40",
+       "dep": "18.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "sun-holidays",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FESTIVOinperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Terminal Bus/Via D'amico-Archimede)",
+       "idx": 8,
+       "arr": "19.15",
+       "dep": "19.15"
+      },
+      {
+       "stop": "AEROPORTO Fontanarossa",
+       "idx": 7,
+       "arr": "19.25",
+       "dep": "19.25"
+      },
+      {
+       "stop": "(C.so Vitt. Emanuele, 610/V.le Vitt. Veneto)",
+       "idx": 1,
+       "arr": "20.15",
+       "dep": "20.15"
+      },
+      {
+       "stop": "SOLARINO (P.zza del Plebiscito)",
+       "idx": 0,
+       "arr": "20.25",
+       "dep": "20.25"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

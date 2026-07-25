@@ -1,0 +1,1246 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-me-orari-632",
+ "name": "PATTI piazza Marconi Capolinea - MILAZZO via L. Rizzo",
+ "source": "AST_prov.di_ME_-_ORARI/p011.json",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "PATTI piazza Marconi Capolinea",
+    "TINDARI via Mons. Pullano",
+    "OLIVERI via G. Amodeo",
+    "FALCONE via Nazionale",
+    "FURNARI Via Vittorio Emanuele III",
+    "TONNARELLA via Palermo",
+    "VIGLIATORE via Nazionale",
+    "TERME DI CASTRORALE via Naz bv. Milici",
+    "BARCELLONA Via Govanni XXIII",
+    "MERI' via Nazionale",
+    "OLIVARELLA via Nazionale 5.5",
+    "MILAZZO via L. Rizzo"
+   ],
+   "trips": [
+    {
+     "corsa": "8A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeinvernale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TERME DI CASTRORALE via Naz bv. Milici",
+       "idx": 7,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "BARCELLONA Via Govanni XXIII",
+       "idx": 8,
+       "arr": "6.30",
+       "dep": "6.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PATTI piazza Marconi Capolinea",
+       "idx": 0,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "OLIVERI via G. Amodeo",
+       "idx": 2,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "FALCONE via Nazionale",
+       "idx": 3,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "TONNARELLA via Palermo",
+       "idx": 5,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "VIGLIATORE via Nazionale",
+       "idx": 6,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "TERME DI CASTRORALE via Naz bv. Milici",
+       "idx": 7,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "BARCELLONA Via Govanni XXIII",
+       "idx": 8,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "MERI' via Nazionale",
+       "idx": 9,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale 5.5",
+       "idx": 10,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "MILAZZO via L. Rizzo",
+       "idx": 11,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ferialescolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "BARCELLONA Via Govanni XXIII",
+       "idx": 8,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "MERI' via Nazionale",
+       "idx": 9,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale 5.5",
+       "idx": 10,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "MILAZZO via L. Rizzo",
+       "idx": 11,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeessacbluatsoo"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "OLIVERI via G. Amodeo",
+       "idx": 2,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "FALCONE via Nazionale",
+       "idx": 3,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "FURNARI Via Vittorio Emanuele III",
+       "idx": 4,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "VIGLIATORE via Nazionale",
+       "idx": 6,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "TERME DI CASTRORALE via Naz bv. Milici",
+       "idx": 7,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "BARCELLONA Via Govanni XXIII",
+       "idx": 8,
+       "arr": "7.35",
+       "dep": "7.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PATTI piazza Marconi Capolinea",
+       "idx": 0,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "FALCONE via Nazionale",
+       "idx": 3,
+       "arr": "8.35",
+       "dep": "8.35"
+      },
+      {
+       "stop": "FURNARI Via Vittorio Emanuele III",
+       "idx": 4,
+       "arr": "8.40",
+       "dep": "8.40"
+      },
+      {
+       "stop": "TONNARELLA via Palermo",
+       "idx": 5,
+       "arr": "8.50",
+       "dep": "8.50"
+      },
+      {
+       "stop": "VIGLIATORE via Nazionale",
+       "idx": 6,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "TERME DI CASTRORALE via Naz bv. Milici",
+       "idx": 7,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "BARCELLONA Via Govanni XXIII",
+       "idx": 8,
+       "arr": "9.20",
+       "dep": "9.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "BARCELLONA Via Govanni XXIII",
+       "idx": 8,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "MERI' via Nazionale",
+       "idx": 9,
+       "arr": "9.40",
+       "dep": "9.40"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale 5.5",
+       "idx": 10,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "MILAZZO via L. Rizzo",
+       "idx": 11,
+       "arr": "10.00",
+       "dep": "10.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeinvernal"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "BARCELLONA Via Govanni XXIII",
+       "idx": 8,
+       "arr": "12.25",
+       "dep": "12.25"
+      },
+      {
+       "stop": "MERI' via Nazionale",
+       "idx": 9,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale 5.5",
+       "idx": 10,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "MILAZZO via L. Rizzo",
+       "idx": 11,
+       "arr": "12.55",
+       "dep": "12.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeinvernale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "BARCELLONA Via Govanni XXIII",
+       "idx": 8,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "MERI' via Nazionale",
+       "idx": 9,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale 5.5",
+       "idx": 10,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "MILAZZO via L. Rizzo",
+       "idx": 11,
+       "arr": "13.30",
+       "dep": "13.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TINDARI via Mons. Pullano",
+       "idx": 1,
+       "arr": "12.15",
+       "dep": "12.15"
+      },
+      {
+       "stop": "OLIVERI via G. Amodeo",
+       "idx": 2,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "FALCONE via Nazionale",
+       "idx": 3,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "TONNARELLA via Palermo",
+       "idx": 5,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "TERME DI CASTRORALE via Naz bv. Milici",
+       "idx": 7,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "BARCELLONA Via Govanni XXIII",
+       "idx": 8,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "MERI' via Nazionale",
+       "idx": 9,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale 5.5",
+       "idx": 10,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "MILAZZO via L. Rizzo",
+       "idx": 11,
+       "arr": "13.45",
+       "dep": "13.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialescolastic"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "BARCELLONA Via Govanni XXIII",
+       "idx": 8,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "MERI' via Nazionale",
+       "idx": 9,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale 5.5",
+       "idx": 10,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "MILAZZO via L. Rizzo",
+       "idx": 11,
+       "arr": "15.05",
+       "dep": "15.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeestivo"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PATTI piazza Marconi Capolinea",
+       "idx": 0,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "OLIVERI via G. Amodeo",
+       "idx": 2,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "FALCONE via Nazionale",
+       "idx": 3,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "FURNARI Via Vittorio Emanuele III",
+       "idx": 4,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "TONNARELLA via Palermo",
+       "idx": 5,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "VIGLIATORE via Nazionale",
+       "idx": 6,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "TERME DI CASTRORALE via Naz bv. Milici",
+       "idx": 7,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "BARCELLONA Via Govanni XXIII",
+       "idx": 8,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeinvernale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PATTI piazza Marconi Capolinea",
+       "idx": 0,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "OLIVERI via G. Amodeo",
+       "idx": 2,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "FALCONE via Nazionale",
+       "idx": 3,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "FURNARI Via Vittorio Emanuele III",
+       "idx": 4,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "TONNARELLA via Palermo",
+       "idx": 5,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "VIGLIATORE via Nazionale",
+       "idx": 6,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "TERME DI CASTRORALE via Naz bv. Milici",
+       "idx": 7,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "BARCELLONA Via Govanni XXIII",
+       "idx": 8,
+       "arr": "15.10",
+       "dep": "15.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "13A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "BARCELLONA Via Govanni XXIII",
+       "idx": 8,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "MERI' via Nazionale",
+       "idx": 9,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale 5.5",
+       "idx": 10,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "MILAZZO via L. Rizzo",
+       "idx": 11,
+       "arr": "16.30",
+       "dep": "16.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "14A",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "infveerrianlaeleesclusosabato"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PATTI piazza Marconi Capolinea",
+       "idx": 0,
+       "arr": "18.50",
+       "dep": "18.50"
+      },
+      {
+       "stop": "FALCONE via Nazionale",
+       "idx": 3,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "BARCELLONA Via Govanni XXIII",
+       "idx": 8,
+       "arr": "19.30",
+       "dep": "19.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "BARCELLONA Via Govanni XXIII",
+       "idx": 8,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "TERME DI CASTRORALE via Naz bv. Milici",
+       "idx": 7,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "VIGLIATORE via Nazionale",
+       "idx": 6,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "TONNARELLA via Palermo",
+       "idx": 5,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "FURNARI Via Vittorio Emanuele III",
+       "idx": 4,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "FALCONE via Nazionale",
+       "idx": 3,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "PATTI piazza Marconi Capolinea",
+       "idx": 0,
+       "arr": "8.10",
+       "dep": "8.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MILAZZO via L. Rizzo",
+       "idx": 11,
+       "arr": "8.35",
+       "dep": "8.35"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale 5.5",
+       "idx": 10,
+       "arr": "8.50",
+       "dep": "8.50"
+      },
+      {
+       "stop": "MERI' via Nazionale",
+       "idx": 9,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "BARCELLONA Via Govanni XXIII",
+       "idx": 8,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "TERME DI CASTRORALE via Naz bv. Milici",
+       "idx": 7,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "TONNARELLA via Palermo",
+       "idx": 5,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "FALCONE via Nazionale",
+       "idx": 3,
+       "arr": "9.40",
+       "dep": "9.40"
+      },
+      {
+       "stop": "OLIVERI via G. Amodeo",
+       "idx": 2,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "TINDARI via Mons. Pullano",
+       "idx": 1,
+       "arr": "10.00",
+       "dep": "10.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeinvernal"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MILAZZO via L. Rizzo",
+       "idx": 11,
+       "arr": "10.40",
+       "dep": "10.40"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale 5.5",
+       "idx": 10,
+       "arr": "10.55",
+       "dep": "10.55"
+      },
+      {
+       "stop": "MERI' via Nazionale",
+       "idx": 9,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "BARCELLONA Via Govanni XXIII",
+       "idx": 8,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "TERME DI CASTRORALE via Naz bv. Milici",
+       "idx": 7,
+       "arr": "11.25",
+       "dep": "11.25"
+      },
+      {
+       "stop": "VIGLIATORE via Nazionale",
+       "idx": 6,
+       "arr": "11.35",
+       "dep": "11.35"
+      },
+      {
+       "stop": "TONNARELLA via Palermo",
+       "idx": 5,
+       "arr": "11.40",
+       "dep": "11.40"
+      },
+      {
+       "stop": "FURNARI Via Vittorio Emanuele III",
+       "idx": 4,
+       "arr": "11.55",
+       "dep": "11.55"
+      },
+      {
+       "stop": "FALCONE via Nazionale",
+       "idx": 3,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "OLIVERI via G. Amodeo",
+       "idx": 2,
+       "arr": "12.10",
+       "dep": "12.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeestivo"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "BARCELLONA Via Govanni XXIII",
+       "idx": 8,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "TERME DI CASTRORALE via Naz bv. Milici",
+       "idx": 7,
+       "arr": "11.25",
+       "dep": "11.25"
+      },
+      {
+       "stop": "VIGLIATORE via Nazionale",
+       "idx": 6,
+       "arr": "11.35",
+       "dep": "11.35"
+      },
+      {
+       "stop": "TONNARELLA via Palermo",
+       "idx": 5,
+       "arr": "11.40",
+       "dep": "11.40"
+      },
+      {
+       "stop": "FURNARI Via Vittorio Emanuele III",
+       "idx": 4,
+       "arr": "11.55",
+       "dep": "11.55"
+      },
+      {
+       "stop": "FALCONE via Nazionale",
+       "idx": 3,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "OLIVERI via G. Amodeo",
+       "idx": 2,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "PATTI piazza Marconi Capolinea",
+       "idx": 0,
+       "arr": "12.35",
+       "dep": "12.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeinvernale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MILAZZO via L. Rizzo",
+       "idx": 11,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale 5.5",
+       "idx": 10,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "MERI' via Nazionale",
+       "idx": 9,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "BARCELLONA Via Govanni XXIII",
+       "idx": 8,
+       "arr": "13.30",
+       "dep": "13.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ferialescolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MILAZZO via L. Rizzo",
+       "idx": 11,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale 5.5",
+       "idx": 10,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "MERI' via Nazionale",
+       "idx": 9,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "BARCELLONA Via Govanni XXIII",
+       "idx": 8,
+       "arr": "13.30",
+       "dep": "13.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MILAZZO via L. Rizzo",
+       "idx": 11,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale 5.5",
+       "idx": 10,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "MERI' via Nazionale",
+       "idx": 9,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "BARCELLONA Via Govanni XXIII",
+       "idx": 8,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "TERME DI CASTRORALE via Naz bv. Milici",
+       "idx": 7,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "VIGLIATORE via Nazionale",
+       "idx": 6,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "TONNARELLA via Palermo",
+       "idx": 5,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "FALCONE via Nazionale",
+       "idx": 3,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "OLIVERI via G. Amodeo",
+       "idx": 2,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "PATTI piazza Marconi Capolinea",
+       "idx": 0,
+       "arr": "15.40",
+       "dep": "15.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ferialescolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MILAZZO via L. Rizzo",
+       "idx": 11,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale 5.5",
+       "idx": 10,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "MERI' via Nazionale",
+       "idx": 9,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "BARCELLONA Via Govanni XXIII",
+       "idx": 8,
+       "arr": "14.30",
+       "dep": "14.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "BARCELLONA Via Govanni XXIII",
+       "idx": 8,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "TERME DI CASTRORALE via Naz bv. Milici",
+       "idx": 7,
+       "arr": "15.20",
+       "dep": "15.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeinvernale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MILAZZO via L. Rizzo",
+       "idx": 11,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale 5.5",
+       "idx": 10,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "MERI' via Nazionale",
+       "idx": 9,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "BARCELLONA Via Govanni XXIII",
+       "idx": 8,
+       "arr": "17.10",
+       "dep": "17.10"
+      },
+      {
+       "stop": "TERME DI CASTRORALE via Naz bv. Milici",
+       "idx": 7,
+       "arr": "17.25",
+       "dep": "17.25"
+      },
+      {
+       "stop": "VIGLIATORE via Nazionale",
+       "idx": 6,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "TONNARELLA via Palermo",
+       "idx": 5,
+       "arr": "17.35",
+       "dep": "17.35"
+      },
+      {
+       "stop": "FALCONE via Nazionale",
+       "idx": 3,
+       "arr": "17.40",
+       "dep": "17.40"
+      },
+      {
+       "stop": "OLIVERI via G. Amodeo",
+       "idx": 2,
+       "arr": "17.50",
+       "dep": "17.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeestivoessacbluatsoo"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "BARCELLONA Via Govanni XXIII",
+       "idx": 8,
+       "arr": "18.35",
+       "dep": "18.35"
+      },
+      {
+       "stop": "TERME DI CASTRORALE via Naz bv. Milici",
+       "idx": 7,
+       "arr": "18.50",
+       "dep": "18.50"
+      },
+      {
+       "stop": "TONNARELLA via Palermo",
+       "idx": 5,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "FALCONE via Nazionale",
+       "idx": 3,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "OLIVERI via G. Amodeo",
+       "idx": 2,
+       "arr": "19.15",
+       "dep": "19.15"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

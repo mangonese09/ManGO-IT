@@ -1,0 +1,73 @@
+{
+ "operator": "Emanuele",
+ "route_id": "emanuele-emanuele-orari-p3",
+ "name": "Gliaca Capo d'Orl. - ETC….",
+ "source": "Emanuele__EMANUELE_ORARI/p003.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Gliaca Capo d'Orl.",
+    "P.Garofalo Forno 32",
+    "Gioiosa Marea Piscittina",
+    "S.Giorgio Rocca",
+    "Patti M. Torrenova",
+    "Patti S.Agata",
+    "ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEorario---orario---orario---"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Gliaca Capo d'Orl.",
+       "idx": 0,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "P.Garofalo Forno 32",
+       "idx": 1,
+       "arr": "11.35",
+       "dep": "11.35"
+      },
+      {
+       "stop": "Gioiosa Marea Piscittina",
+       "idx": 2,
+       "arr": "11.40",
+       "dep": "11.40"
+      },
+      {
+       "stop": "S.Giorgio Rocca",
+       "idx": 3,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "Patti M. Torrenova",
+       "idx": 4,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "Patti S.Agata",
+       "idx": 5,
+       "arr": "12.05",
+       "dep": "12.05"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

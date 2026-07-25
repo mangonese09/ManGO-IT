@@ -1,0 +1,122 @@
+{
+ "operator": "Macaluso",
+ "route_id": "macaluso-orari-p4",
+ "name": "Montemagg/Catt Montemagg/Catt - SOLO IL SABATO, SOLO LA DOMENICA, ETC….",
+ "source": "MACALUSO_ORARI/p004.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Montemagg/Catt Montemagg/Catt",
+    "Aliminusa Aliminusa",
+    "Cerda Cerda",
+    "Cerda Bv.SS113 Cerda Bv.SS113",
+    "Termini Im Staz. Termini Im Staz.",
+    "Termini Im Alta Termini Im Alta",
+    "SOLO IL SABATO, SOLO LA DOMENICA, ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Montemagg/Catt Montemagg/Catt",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Aliminusa Aliminusa",
+       "idx": 1,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "Cerda Cerda",
+       "idx": 2,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Cerda Bv.SS113 Cerda Bv.SS113",
+       "idx": 3,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "Termini Im Staz. Termini Im Staz.",
+       "idx": 4,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "Termini Im Alta Termini Im Alta",
+       "idx": 5,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Termini Im Alta Termini Im Alta",
+       "idx": 5,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "Termini Im Staz. Termini Im Staz.",
+       "idx": 4,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "Cerda Bv.SS113 Cerda Bv.SS113",
+       "idx": 3,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "Cerda Cerda",
+       "idx": 2,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Aliminusa Aliminusa",
+       "idx": 1,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "Montemagg/Catt Montemagg/Catt",
+       "idx": 0,
+       "arr": "13.55",
+       "dep": "13.55"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

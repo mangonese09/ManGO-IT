@@ -1,0 +1,202 @@
+{
+ "operator": "Autotrasporti Cuffaro",
+ "route_id": "autotrasporticuffaro-autotra-p5",
+ "name": "Agrigento - Palermo",
+ "source": "AutotrasportiCuffaro__AUTOTRASP.CUFFARO_ORARI/p005.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio",
+  "divieto servizio localeAgrigento Biv Grotte e Viceversa e staz. Cammarata -Palermo e Viceversa estremi compresi"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Capolinea di Partenza Capolinea di Arrivo",
+    "Fermata intermedia Fermata intermedia",
+    "Fermata intermedia Fermata intermedia",
+    "Fermata intermedia Fermata intermedia",
+    "Biv.Staz.Campofranco Biv staz Campofranco",
+    "Fermata intermedia Fermata intermedia",
+    "Fermata intermedia Fermata intermedia",
+    "Fermata intermedia Fermata intermedia",
+    "Fermata intermedia Fermata intermedia",
+    "Biv Tumarrano Biv Tumarrano",
+    "Fermata intermedia Fermata intermedia",
+    "Capolinea di Arrivo Capolinea di Partenza",
+    "VENERDI', SOLO IL SABATO, SOLO LA DOMENICA, ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Biv.Staz.Campofranco Biv staz Campofranco",
+       "idx": 4,
+       "arr": "4.48",
+       "dep": "4.48"
+      },
+      {
+       "stop": "Biv Tumarrano Biv Tumarrano",
+       "idx": 9,
+       "arr": "7.05",
+       "dep": "7.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "11.15",
+       "dep": "11.15"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 3,
+       "arr": "11.25",
+       "dep": "11.25"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 5,
+       "arr": "11.25",
+       "dep": "11.25"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 6,
+       "arr": "11.25",
+       "dep": "11.25"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 7,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 8,
+       "arr": "11.35",
+       "dep": "11.35"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 10,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "Capolinea di Arrivo Capolinea di Partenza",
+       "idx": 11,
+       "arr": "13.00",
+       "dep": "13.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Capolinea di Arrivo Capolinea di Partenza",
+       "idx": 11,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 10,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 8,
+       "arr": "19.25",
+       "dep": "19.25"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 7,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 6,
+       "arr": "19.35",
+       "dep": "19.35"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 5,
+       "arr": "19.35",
+       "dep": "19.35"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 3,
+       "arr": "19.35",
+       "dep": "19.35"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "19.50",
+       "dep": "19.50"
+      },
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "20.00",
+       "dep": "20.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,389 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-rg-orari-681",
+ "name": "Donnalucata - Catania",
+ "source": "AST_prov._di_RG_-_ORARI/p006.json",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "Donnalucata (via Pirandello)",
+    "Scicli (p.le Olimpiadi)",
+    "Scicli (Largo Gramsci)",
+    "Modica (Zona 167)",
+    "Pozzallo (viale Europa)",
+    "Aeroporto Fontan. Terminal Arrivi\\Partenze",
+    "Catania (p.za Giovanni XXIII)"
+   ],
+   "trips": [
+    {
+     "corsa": "6A",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "festivo"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Donnalucata (via Pirandello)",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Scicli (p.le Olimpiadi)",
+       "idx": 1,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Scicli (Largo Gramsci)",
+       "idx": 2,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "Modica (Zona 167)",
+       "idx": 3,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "Pozzallo (viale Europa)",
+       "idx": 4,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "Aeroporto Fontan. Terminal Arrivi\\Partenze",
+       "idx": 5,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "Catania (p.za Giovanni XXIII)",
+       "idx": 6,
+       "arr": "10.20",
+       "dep": "10.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7A",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "festivo"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Donnalucata (via Pirandello)",
+       "idx": 0,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Scicli (p.le Olimpiadi)",
+       "idx": 1,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "Scicli (Largo Gramsci)",
+       "idx": 2,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "Modica (Zona 167)",
+       "idx": 3,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Pozzallo (viale Europa)",
+       "idx": 4,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "Aeroporto Fontan. Terminal Arrivi\\Partenze",
+       "idx": 5,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "Catania (p.za Giovanni XXIII)",
+       "idx": 6,
+       "arr": "16.50",
+       "dep": "16.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8A",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "festivo"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Donnalucata (via Pirandello)",
+       "idx": 0,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "Scicli (p.le Olimpiadi)",
+       "idx": 1,
+       "arr": "17.40",
+       "dep": "17.40"
+      },
+      {
+       "stop": "Scicli (Largo Gramsci)",
+       "idx": 2,
+       "arr": "17.50",
+       "dep": "17.50"
+      },
+      {
+       "stop": "Modica (Zona 167)",
+       "idx": 3,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "Aeroporto Fontan. Terminal Arrivi\\Partenze",
+       "idx": 5,
+       "arr": "20.30",
+       "dep": "20.30"
+      },
+      {
+       "stop": "Catania (p.za Giovanni XXIII)",
+       "idx": 6,
+       "arr": "20.50",
+       "dep": "20.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6R",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "festivo"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Catania (p.za Giovanni XXIII)",
+       "idx": 6,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "Aeroporto Fontan. Terminal Arrivi\\Partenze",
+       "idx": 5,
+       "arr": "11.20",
+       "dep": "11.20"
+      },
+      {
+       "stop": "Pozzallo (viale Europa)",
+       "idx": 4,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "Modica (Zona 167)",
+       "idx": 3,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "Scicli (Largo Gramsci)",
+       "idx": 2,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "Scicli (p.le Olimpiadi)",
+       "idx": 1,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "Donnalucata (via Pirandello)",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7R",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "festivo"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Catania (p.za Giovanni XXIII)",
+       "idx": 6,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "Aeroporto Fontan. Terminal Arrivi\\Partenze",
+       "idx": 5,
+       "arr": "17.50",
+       "dep": "17.50"
+      },
+      {
+       "stop": "Pozzallo (viale Europa)",
+       "idx": 4,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "Modica (Zona 167)",
+       "idx": 3,
+       "arr": "19.50",
+       "dep": "19.50"
+      },
+      {
+       "stop": "Scicli (Largo Gramsci)",
+       "idx": 2,
+       "arr": "20.25",
+       "dep": "20.25"
+      },
+      {
+       "stop": "Scicli (p.le Olimpiadi)",
+       "idx": 1,
+       "arr": "20.35",
+       "dep": "20.35"
+      },
+      {
+       "stop": "Donnalucata (via Pirandello)",
+       "idx": 0,
+       "arr": "20.45",
+       "dep": "20.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8R",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "festivoinvernale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Scicli (p.le Olimpiadi)",
+       "idx": 1,
+       "arr": "0.20",
+       "dep": "0.20"
+      },
+      {
+       "stop": "Scicli (Largo Gramsci)",
+       "idx": 2,
+       "arr": "0.15",
+       "dep": "0.15"
+      },
+      {
+       "stop": "Modica (Zona 167)",
+       "idx": 3,
+       "arr": "23.45",
+       "dep": "23.45"
+      },
+      {
+       "stop": "Pozzallo (viale Europa)",
+       "idx": 4,
+       "arr": "22.20",
+       "dep": "22.20"
+      },
+      {
+       "stop": "Aeroporto Fontan. Terminal Arrivi\\Partenze",
+       "idx": 5,
+       "arr": "20.50",
+       "dep": "20.50"
+      },
+      {
+       "stop": "Catania (p.za Giovanni XXIII)",
+       "idx": 6,
+       "arr": "20.30",
+       "dep": "20.30"
+      }
+     ],
+     "valid": false
+    },
+    {
+     "corsa": "8R",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "festivo"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Scicli (p.le Olimpiadi)",
+       "idx": 1,
+       "arr": "0.20",
+       "dep": "0.20"
+      },
+      {
+       "stop": "Scicli (Largo Gramsci)",
+       "idx": 2,
+       "arr": "0.15",
+       "dep": "0.15"
+      },
+      {
+       "stop": "Modica (Zona 167)",
+       "idx": 3,
+       "arr": "23.45",
+       "dep": "23.45"
+      },
+      {
+       "stop": "Pozzallo (viale Europa)",
+       "idx": 4,
+       "arr": "22.20",
+       "dep": "22.20"
+      },
+      {
+       "stop": "Aeroporto Fontan. Terminal Arrivi\\Partenze",
+       "idx": 5,
+       "arr": "20.50",
+       "dep": "20.50"
+      },
+      {
+       "stop": "Catania (p.za Giovanni XXIII)",
+       "idx": 6,
+       "arr": "20.30",
+       "dep": "20.30"
+      }
+     ],
+     "valid": false
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,69 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-ct-orari-576",
+ "name": "CASTEL DI JUDICA - CATANIA",
+ "source": "AST_prov._di_CT_-_ORARI/p008.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio divieto di servizio locale , estremi inclusi tra SFERRO e CATANIA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "CASTEL DI JUDICA (via Garibaldi)",
+    "CATANIA (piazza Giovanni XXIII°)"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "KMFERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CASTEL DI JUDICA (via Garibaldi)",
+       "idx": 0,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "CATANIA (piazza Giovanni XXIII°)",
+       "idx": 1,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "STAZIONAMENTIKMFERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (piazza Giovanni XXIII°)",
+       "idx": 1,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "CASTEL DI JUDICA (via Garibaldi)",
+       "idx": 0,
+       "arr": "16.00",
+       "dep": "16.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

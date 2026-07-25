@@ -1,0 +1,268 @@
+{
+ "operator": "Panepinto",
+ "route_id": "panepintosas-panepinto-orari-p7",
+ "name": "S.Giovanni Gemini - Cammarata scalo FF.SS.",
+ "source": "Panepintosas__PANEPINTO_ORARI/p007.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio E' FATTO OBBLIGO EFFETTUARE LA COINCIDENZA ALLA STAZIONE FERROVIARIA DI CAMMARATA PER CAMMARATA E S.GIOVANNI GEMINI"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "S.GIOV.GEMINI S.GIOV.GEMINI",
+    "CAMMARATA CAMMARATA",
+    "STAZ.F.S. STAZ.F.S."
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "S.GIOV.GEMINI S.GIOV.GEMINI",
+       "idx": 0,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "CAMMARATA CAMMARATA",
+       "idx": 1,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "STAZ.F.S. STAZ.F.S.",
+       "idx": 2,
+       "arr": "7.10",
+       "dep": "7.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "S.GIOV.GEMINI S.GIOV.GEMINI",
+       "idx": 0,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "CAMMARATA CAMMARATA",
+       "idx": 1,
+       "arr": "11.15",
+       "dep": "11.15"
+      },
+      {
+       "stop": "STAZ.F.S. STAZ.F.S.",
+       "idx": 2,
+       "arr": "11.30",
+       "dep": "11.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "S.GIOV.GEMINI S.GIOV.GEMINI",
+       "idx": 0,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "CAMMARATA CAMMARATA",
+       "idx": 1,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "STAZ.F.S. STAZ.F.S.",
+       "idx": 2,
+       "arr": "17.10",
+       "dep": "17.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "S.GIOV.GEMINI S.GIOV.GEMINI",
+       "idx": 0,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "CAMMARATA CAMMARATA",
+       "idx": 1,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "STAZ.F.S. STAZ.F.S.",
+       "idx": 2,
+       "arr": "8.35",
+       "dep": "8.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "STAZ.F.S. STAZ.F.S.",
+       "idx": 2,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "CAMMARATA CAMMARATA",
+       "idx": 1,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "S.GIOV.GEMINI S.GIOV.GEMINI",
+       "idx": 0,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "STAZ.F.S. STAZ.F.S.",
+       "idx": 2,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "CAMMARATA CAMMARATA",
+       "idx": 1,
+       "arr": "12.20",
+       "dep": "12.20"
+      },
+      {
+       "stop": "S.GIOV.GEMINI S.GIOV.GEMINI",
+       "idx": 0,
+       "arr": "12.25",
+       "dep": "12.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "STAZ.F.S. STAZ.F.S.",
+       "idx": 2,
+       "arr": "17.50",
+       "dep": "17.50"
+      },
+      {
+       "stop": "CAMMARATA CAMMARATA",
+       "idx": 1,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "S.GIOV.GEMINI S.GIOV.GEMINI",
+       "idx": 0,
+       "arr": "18.10",
+       "dep": "18.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "STAZ.F.S. STAZ.F.S.",
+       "idx": 2,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "CAMMARATA CAMMARATA",
+       "idx": 1,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "S.GIOV.GEMINI S.GIOV.GEMINI",
+       "idx": 0,
+       "arr": "9.25",
+       "dep": "9.25"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

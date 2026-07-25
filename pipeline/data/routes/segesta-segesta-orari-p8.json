@@ -1,0 +1,224 @@
+{
+ "operator": "Segesta",
+ "route_id": "segesta-segesta-orari-p8",
+ "name": "TRAPANI Via Ammiraglio Staiti, 13 - 99 angolo via Partanna;",
+ "source": "Segesta__SEGESTA_ORARI/p008.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Nessuna"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+    "svincolo A/29 dir.ne",
+    "A/29 dir.ne",
+    "A/29",
+    "Diramazione Punta Raisi",
+    "aereoporto Falcone e Borsellino",
+    "99 angolo via Partanna;"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERAdal1/7al31/8"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 0,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "aereoporto Falcone e Borsellino",
+       "idx": 5,
+       "arr": "8.55",
+       "dep": "8.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 0,
+       "arr": "10.45",
+       "dep": "10.45"
+      },
+      {
+       "stop": "aereoporto Falcone e Borsellino",
+       "idx": 5,
+       "arr": "11.55",
+       "dep": "11.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERAdal1/7al31/8"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 0,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "aereoporto Falcone e Borsellino",
+       "idx": 5,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdalunedìavenerdì"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 0,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "aereoporto Falcone e Borsellino",
+       "idx": 5,
+       "arr": "17.55",
+       "dep": "17.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERAdal1/7al31/8"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "aereoporto Falcone e Borsellino",
+       "idx": 5,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 0,
+       "arr": "10.40",
+       "dep": "10.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdalunedìavenerdì"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "aereoporto Falcone e Borsellino",
+       "idx": 5,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 0,
+       "arr": "13.40",
+       "dep": "13.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERAdal1/7al31/8"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "aereoporto Falcone e Borsellino",
+       "idx": 5,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 0,
+       "arr": "16.40",
+       "dep": "16.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "aereoporto Falcone e Borsellino",
+       "idx": 5,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "TRAPANI Via Ammiraglio Staiti, 13 (porto)",
+       "idx": 0,
+       "arr": "20.40",
+       "dep": "20.40"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

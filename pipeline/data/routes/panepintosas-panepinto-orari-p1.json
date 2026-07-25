@@ -1,0 +1,441 @@
+{
+ "operator": "Panepinto",
+ "route_id": "panepintosas-panepinto-orari-p1",
+ "name": "BIVONA - AGRIGENTO",
+ "source": "Panepintosas__PANEPINTO_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Divieto di servizio locale tra Bivona e S.Stefano Q. e viceversa e tra Agrigento e bv. di Acquaviva Platani e viceversa estremi inclusi"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "S.STEFANO Q. S.STEFANO Q.",
+    "CAMMARATA CAMMARATA",
+    "S.GIOV.GEMINI S.GIOV.GEMINI",
+    "STAZ. FF.DI STAZ. FF.DI",
+    "BV. TUMARRANBV. TUMARRANO",
+    "BV. STAZ. BV. STAZ.",
+    "EX STABIL. EX STABIL.",
+    "AGRIGENTO AGRIGENTO"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "S.STEFANO Q. S.STEFANO Q.",
+       "idx": 0,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "CAMMARATA CAMMARATA",
+       "idx": 1,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "S.GIOV.GEMINI S.GIOV.GEMINI",
+       "idx": 2,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "STAZ. FF.DI STAZ. FF.DI",
+       "idx": 3,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "BV. TUMARRANBV. TUMARRANO",
+       "idx": 4,
+       "arr": "8.35",
+       "dep": "8.35"
+      },
+      {
+       "stop": "BV. STAZ. BV. STAZ.",
+       "idx": 5,
+       "arr": "8.40",
+       "dep": "8.40"
+      },
+      {
+       "stop": "EX STABIL. EX STABIL.",
+       "idx": 6,
+       "arr": "8.50",
+       "dep": "8.50"
+      },
+      {
+       "stop": "AGRIGENTO AGRIGENTO",
+       "idx": 7,
+       "arr": "9.05",
+       "dep": "9.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "SCOL."
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "S.GIOV.GEMINI S.GIOV.GEMINI",
+       "idx": 2,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "STAZ. FF.DI STAZ. FF.DI",
+       "idx": 3,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "BV. TUMARRANBV. TUMARRANO",
+       "idx": 4,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "BV. STAZ. BV. STAZ.",
+       "idx": 5,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "EX STABIL. EX STABIL.",
+       "idx": 6,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "AGRIGENTO AGRIGENTO",
+       "idx": 7,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "S.GIOV.GEMINI S.GIOV.GEMINI",
+       "idx": 2,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "STAZ. FF.DI STAZ. FF.DI",
+       "idx": 3,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "BV. TUMARRANBV. TUMARRANO",
+       "idx": 4,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "BV. STAZ. BV. STAZ.",
+       "idx": 5,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "EX STABIL. EX STABIL.",
+       "idx": 6,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "AGRIGENTO AGRIGENTO",
+       "idx": 7,
+       "arr": "8.20",
+       "dep": "8.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "S.GIOV.GEMINI S.GIOV.GEMINI",
+       "idx": 2,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "STAZ. FF.DI STAZ. FF.DI",
+       "idx": 3,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "BV. TUMARRANBV. TUMARRANO",
+       "idx": 4,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "BV. STAZ. BV. STAZ.",
+       "idx": 5,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "EX STABIL. EX STABIL.",
+       "idx": 6,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "AGRIGENTO AGRIGENTO",
+       "idx": 7,
+       "arr": "15.00",
+       "dep": "15.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "AGRIGENTO AGRIGENTO",
+       "idx": 7,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "EX STABIL. EX STABIL.",
+       "idx": 6,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "BV. STAZ. BV. STAZ.",
+       "idx": 5,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "BV. TUMARRANBV. TUMARRANO",
+       "idx": 4,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "STAZ. FF.DI STAZ. FF.DI",
+       "idx": 3,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "S.GIOV.GEMINI S.GIOV.GEMINI",
+       "idx": 2,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "CAMMARATA CAMMARATA",
+       "idx": 1,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "S.STEFANO Q. S.STEFANO Q.",
+       "idx": 0,
+       "arr": "15.30",
+       "dep": "15.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "SCOL."
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "AGRIGENTO AGRIGENTO",
+       "idx": 7,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "EX STABIL. EX STABIL.",
+       "idx": 6,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "BV. STAZ. BV. STAZ.",
+       "idx": 5,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "BV. TUMARRANBV. TUMARRANO",
+       "idx": 4,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "STAZ. FF.DI STAZ. FF.DI",
+       "idx": 3,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "S.GIOV.GEMINI S.GIOV.GEMINI",
+       "idx": 2,
+       "arr": "14.30",
+       "dep": "14.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "AGRIGENTO AGRIGENTO",
+       "idx": 7,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "EX STABIL. EX STABIL.",
+       "idx": 6,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "BV. STAZ. BV. STAZ.",
+       "idx": 5,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "BV. TUMARRANBV. TUMARRANO",
+       "idx": 4,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "STAZ. FF.DI STAZ. FF.DI",
+       "idx": 3,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "S.GIOV.GEMINI S.GIOV.GEMINI",
+       "idx": 2,
+       "arr": "13.30",
+       "dep": "13.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "AGRIGENTO AGRIGENTO",
+       "idx": 7,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "EX STABIL. EX STABIL.",
+       "idx": 6,
+       "arr": "18.20",
+       "dep": "18.20"
+      },
+      {
+       "stop": "BV. STAZ. BV. STAZ.",
+       "idx": 5,
+       "arr": "18.40",
+       "dep": "18.40"
+      },
+      {
+       "stop": "BV. TUMARRANBV. TUMARRANO",
+       "idx": 4,
+       "arr": "18.50",
+       "dep": "18.50"
+      },
+      {
+       "stop": "STAZ. FF.DI STAZ. FF.DI",
+       "idx": 3,
+       "arr": "18.55",
+       "dep": "18.55"
+      },
+      {
+       "stop": "S.GIOV.GEMINI S.GIOV.GEMINI",
+       "idx": 2,
+       "arr": "19.00",
+       "dep": "19.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

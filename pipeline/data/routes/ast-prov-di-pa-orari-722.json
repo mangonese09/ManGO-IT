@@ -1,0 +1,678 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-pa-orari-722",
+ "name": "Capolinea - Altavilla via Loreto",
+ "source": "AST_prov._di_PA_-_ORARI/p002.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Capolinea",
+    "Bagheria via Consolare",
+    "Santa Flavia via Consolare",
+    "Casteldaccia piazza Madrice",
+    "Altavilla via Loreto"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capolinea",
+       "idx": 0,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Santa Flavia via Consolare",
+       "idx": 2,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Casteldaccia piazza Madrice",
+       "idx": 3,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Altavilla via Loreto",
+       "idx": 4,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ferialescolastica"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capolinea",
+       "idx": 0,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "Santa Flavia via Consolare",
+       "idx": 2,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "Casteldaccia piazza Madrice",
+       "idx": 3,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capolinea",
+       "idx": 0,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "Santa Flavia via Consolare",
+       "idx": 2,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "Casteldaccia piazza Madrice",
+       "idx": 3,
+       "arr": "8.40",
+       "dep": "8.40"
+      },
+      {
+       "stop": "Altavilla via Loreto",
+       "idx": 4,
+       "arr": "8.55",
+       "dep": "8.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ferialescolastica"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capolinea",
+       "idx": 0,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "Casteldaccia piazza Madrice",
+       "idx": 3,
+       "arr": "13.05",
+       "dep": "13.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capolinea",
+       "idx": 0,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "Santa Flavia via Consolare",
+       "idx": 2,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "Casteldaccia piazza Madrice",
+       "idx": 3,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "Altavilla via Loreto",
+       "idx": 4,
+       "arr": "13.10",
+       "dep": "13.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ferialescolastica"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capolinea",
+       "idx": 0,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "Santa Flavia via Consolare",
+       "idx": 2,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Casteldaccia piazza Madrice",
+       "idx": 3,
+       "arr": "13.55",
+       "dep": "13.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ferialescolastica"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capolinea",
+       "idx": 0,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "Casteldaccia piazza Madrice",
+       "idx": 3,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Altavilla via Loreto",
+       "idx": 4,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capolinea",
+       "idx": 0,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Santa Flavia via Consolare",
+       "idx": 2,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "Casteldaccia piazza Madrice",
+       "idx": 3,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "Altavilla via Loreto",
+       "idx": 4,
+       "arr": "14.20",
+       "dep": "14.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ferialescolastica"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capolinea",
+       "idx": 0,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "Santa Flavia via Consolare",
+       "idx": 2,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "Casteldaccia piazza Madrice",
+       "idx": 3,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "Altavilla via Loreto",
+       "idx": 4,
+       "arr": "15.30",
+       "dep": "15.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Altavilla via Loreto",
+       "idx": 4,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "Casteldaccia piazza Madrice",
+       "idx": 3,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "Santa Flavia via Consolare",
+       "idx": 2,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "Capolinea",
+       "idx": 0,
+       "arr": "7.10",
+       "dep": "7.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ferialescolastica"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Altavilla via Loreto",
+       "idx": 4,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Capolinea",
+       "idx": 0,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ferialescolastica"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Casteldaccia piazza Madrice",
+       "idx": 3,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Santa Flavia via Consolare",
+       "idx": 2,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "Capolinea",
+       "idx": 0,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ferialescolastica"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Casteldaccia piazza Madrice",
+       "idx": 3,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "Capolinea",
+       "idx": 0,
+       "arr": "8.20",
+       "dep": "8.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Altavilla via Loreto",
+       "idx": 4,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "Casteldaccia piazza Madrice",
+       "idx": 3,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "Santa Flavia via Consolare",
+       "idx": 2,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "Capolinea",
+       "idx": 0,
+       "arr": "8.25",
+       "dep": "8.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ferialescolastica"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Altavilla via Loreto",
+       "idx": 4,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "Capolinea",
+       "idx": 0,
+       "arr": "8.30",
+       "dep": "8.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ferialescolastica"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Altavilla via Loreto",
+       "idx": 4,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "Casteldaccia piazza Madrice",
+       "idx": 3,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "Capolinea",
+       "idx": 0,
+       "arr": "8.30",
+       "dep": "8.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Altavilla via Loreto",
+       "idx": 4,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "Casteldaccia piazza Madrice",
+       "idx": 3,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "Santa Flavia via Consolare",
+       "idx": 2,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "Capolinea",
+       "idx": 0,
+       "arr": "9.35",
+       "dep": "9.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ferialescolastica"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Casteldaccia piazza Madrice",
+       "idx": 3,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "Bagheria via Consolare",
+       "idx": 1,
+       "arr": "0.00",
+       "dep": "0.00"
+      },
+      {
+       "stop": "Capolinea",
+       "idx": 0,
+       "arr": "13.25",
+       "dep": "13.25"
+      }
+     ],
+     "valid": false
+    },
+    {
+     "corsa": "4R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Altavilla via Loreto",
+       "idx": 4,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "Casteldaccia piazza Madrice",
+       "idx": 3,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Santa Flavia via Consolare",
+       "idx": 2,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "Capolinea",
+       "idx": 0,
+       "arr": "13.45",
+       "dep": "13.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ferialescolastica"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Altavilla via Loreto",
+       "idx": 4,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "Casteldaccia piazza Madrice",
+       "idx": 3,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "Santa Flavia via Consolare",
+       "idx": 2,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "Capolinea",
+       "idx": 0,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

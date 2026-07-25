@@ -1,0 +1,82 @@
+{
+ "operator": "Interbus",
+ "route_id": "orari-interbus-p31",
+ "name": "Gagliano - Nicosia",
+ "source": "ORARI_INTERBUS/p031.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "GAGLIANO P.zza Matteotti",
+    "Bv. Ponte Galati",
+    "NICOSIA P.zza Matteotti"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALESabatonelperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GAGLIANO P.zza Matteotti",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Bv. Ponte Galati",
+       "idx": 1,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "NICOSIA P.zza Matteotti",
+       "idx": 2,
+       "arr": "7.40",
+       "dep": "7.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Sabatoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "NICOSIA P.zza Matteotti",
+       "idx": 2,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Bv. Ponte Galati",
+       "idx": 1,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "GAGLIANO P.zza Matteotti",
+       "idx": 0,
+       "arr": "14.40",
+       "dep": "14.40"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

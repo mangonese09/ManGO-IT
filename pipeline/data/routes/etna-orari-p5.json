@@ -1,0 +1,3029 @@
+{
+ "operator": "Etna Trasporti",
+ "route_id": "etna-orari-p5",
+ "name": "Taormina-Giardini F.S.-Fiumefreddo-Catania-Catania Aeroporto con instradamento S.S. 114 Sv. Giardini-A18",
+ "source": "ETNA_ORARI/p005.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Jnib (LETOANGallodorov.)",
+    "Rminavptb (TAOiairanedremllionalus)",
+    "Gadnn (IRIIaxos Fs Stazione)",
+    "Riin (GIADNViaax Cosonsolare Valeria,84)",
+    "Terminal bus",
+    "Riin (GIADNViaax Cosonsolare Valeria,84)",
+    "FIUMEFREDDO",
+    "A/18",
+    "Taniat (CABus Via D'Amicoerminal)",
+    "AEROPORTO CATANIA Fontanarossa",
+    "Ctna (AAIVia D'Amico Terminal Bus)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 1,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "Gadnn (IRIIaxos Fs Stazione)",
+       "idx": 2,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 3,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "Terminal bus",
+       "idx": 4,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "FIUMEFREDDO",
+       "idx": 6,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "Taniat (CABus Via D'Amicoerminal)",
+       "idx": 8,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 9,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEDAL15/6AL30/9-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 1,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "Gadnn (IRIIaxos Fs Stazione)",
+       "idx": 2,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 3,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "Terminal bus",
+       "idx": 4,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 9,
+       "arr": "8.50",
+       "dep": "8.50"
+      },
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 10,
+       "arr": "9.05",
+       "dep": "9.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERAFE-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 1,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "Gadnn (IRIIaxos Fs Stazione)",
+       "idx": 2,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 3,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "Terminal bus",
+       "idx": 4,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "Taniat (CABus Via D'Amicoerminal)",
+       "idx": 8,
+       "arr": "9.50",
+       "dep": "9.50"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 9,
+       "arr": "10.05",
+       "dep": "10.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "RIALEDAL1°/7AL31/8-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 1,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "Gadnn (IRIIaxos Fs Stazione)",
+       "idx": 2,
+       "arr": "9.25",
+       "dep": "9.25"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 3,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "Terminal bus",
+       "idx": 4,
+       "arr": "9.35",
+       "dep": "9.35"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "9.40",
+       "dep": "9.40"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 9,
+       "arr": "10.20",
+       "dep": "10.20"
+      },
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 10,
+       "arr": "10.35",
+       "dep": "10.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERADAL15/6AL30/9-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 1,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "Gadnn (IRIIaxos Fs Stazione)",
+       "idx": 2,
+       "arr": "9.55",
+       "dep": "9.55"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 3,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "Terminal bus",
+       "idx": 4,
+       "arr": "10.05",
+       "dep": "10.05"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "10.10",
+       "dep": "10.10"
+      },
+      {
+       "stop": "Taniat (CABus Via D'Amicoerminal)",
+       "idx": 8,
+       "arr": "10.50",
+       "dep": "10.50"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 9,
+       "arr": "11.05",
+       "dep": "11.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEDAL1°/7AL31/8-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 1,
+       "arr": "10.15",
+       "dep": "10.15"
+      },
+      {
+       "stop": "Gadnn (IRIIaxos Fs Stazione)",
+       "idx": 2,
+       "arr": "10.25",
+       "dep": "10.25"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 3,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "Terminal bus",
+       "idx": 4,
+       "arr": "10.35",
+       "dep": "10.35"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "10.40",
+       "dep": "10.40"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 9,
+       "arr": "11.20",
+       "dep": "11.20"
+      },
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 10,
+       "arr": "11.35",
+       "dep": "11.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "13",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERANatEaslecelusoCapodanno-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 1,
+       "arr": "10.45",
+       "dep": "10.45"
+      },
+      {
+       "stop": "Gadnn (IRIIaxos Fs Stazione)",
+       "idx": 2,
+       "arr": "10.55",
+       "dep": "10.55"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 3,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "Terminal bus",
+       "idx": 4,
+       "arr": "11.05",
+       "dep": "11.05"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "Taniat (CABus Via D'Amicoerminal)",
+       "idx": 8,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 9,
+       "arr": "12.05",
+       "dep": "12.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "15",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEDAL1°/7AL31/8-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 1,
+       "arr": "11.15",
+       "dep": "11.15"
+      },
+      {
+       "stop": "Gadnn (IRIIaxos Fs Stazione)",
+       "idx": 2,
+       "arr": "11.25",
+       "dep": "11.25"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 3,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "Terminal bus",
+       "idx": 4,
+       "arr": "11.35",
+       "dep": "11.35"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "11.40",
+       "dep": "11.40"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 9,
+       "arr": "12.20",
+       "dep": "12.20"
+      },
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 10,
+       "arr": "12.35",
+       "dep": "12.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "17",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEDAL15/6AL30/-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 1,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "Gadnn (IRIIaxos Fs Stazione)",
+       "idx": 2,
+       "arr": "11.55",
+       "dep": "11.55"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 3,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "Terminal bus",
+       "idx": 4,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "Taniat (CABus Via D'Amicoerminal)",
+       "idx": 8,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 9,
+       "arr": "13.05",
+       "dep": "13.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "19",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEDAL15/6AL30/-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 1,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "Gadnn (IRIIaxos Fs Stazione)",
+       "idx": 2,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 3,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "Terminal bus",
+       "idx": 4,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 9,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 10,
+       "arr": "14.05",
+       "dep": "14.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "21",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 1,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Gadnn (IRIIaxos Fs Stazione)",
+       "idx": 2,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 3,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Terminal bus",
+       "idx": 4,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "Taniat (CABus Via D'Amicoerminal)",
+       "idx": 8,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 9,
+       "arr": "15.05",
+       "dep": "15.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "23",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVADAL15/6AL30/-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 1,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Gadnn (IRIIaxos Fs Stazione)",
+       "idx": 2,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 3,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Terminal bus",
+       "idx": 4,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 9,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 10,
+       "arr": "15.05",
+       "dep": "15.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "25",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERADAL15/6AL30/9-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 1,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "Gadnn (IRIIaxos Fs Stazione)",
+       "idx": 2,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 3,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "Terminal bus",
+       "idx": 4,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "Taniat (CABus Via D'Amicoerminal)",
+       "idx": 8,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 9,
+       "arr": "16.05",
+       "dep": "16.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "27",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEesclussabatoDAL1/11AL31/-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 1,
+       "arr": "15.45",
+       "dep": "15.45"
+      },
+      {
+       "stop": "Gadnn (IRIIaxos Fs Stazione)",
+       "idx": 2,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 3,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "Terminal bus",
+       "idx": 4,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "Taniat (CABus Via D'Amicoerminal)",
+       "idx": 8,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 9,
+       "arr": "17.05",
+       "dep": "17.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "29",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVADAL1/10AL14/-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 1,
+       "arr": "15.45",
+       "dep": "15.45"
+      },
+      {
+       "stop": "Gadnn (IRIIaxos Fs Stazione)",
+       "idx": 2,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 3,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "Terminal bus",
+       "idx": 4,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "Taniat (CABus Via D'Amicoerminal)",
+       "idx": 8,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 9,
+       "arr": "17.05",
+       "dep": "17.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "31",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVADAL15/6AL30/9-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 1,
+       "arr": "15.45",
+       "dep": "15.45"
+      },
+      {
+       "stop": "Gadnn (IRIIaxos Fs Stazione)",
+       "idx": 2,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 3,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "Terminal bus",
+       "idx": 4,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "Taniat (CABus Via D'Amicoerminal)",
+       "idx": 8,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 9,
+       "arr": "17.05",
+       "dep": "17.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "33",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERADAL15/AL30/9-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 1,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "Gadnn (IRIIaxos Fs Stazione)",
+       "idx": 2,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 3,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "Terminal bus",
+       "idx": 4,
+       "arr": "17.05",
+       "dep": "17.05"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "17.10",
+       "dep": "17.10"
+      },
+      {
+       "stop": "Taniat (CABus Via D'Amicoerminal)",
+       "idx": 8,
+       "arr": "17.50",
+       "dep": "17.50"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 9,
+       "arr": "18.05",
+       "dep": "18.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "35",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEDAL1°/7AL31/8-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 1,
+       "arr": "17.15",
+       "dep": "17.15"
+      },
+      {
+       "stop": "Gadnn (IRIIaxos Fs Stazione)",
+       "idx": 2,
+       "arr": "17.25",
+       "dep": "17.25"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 3,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "Terminal bus",
+       "idx": 4,
+       "arr": "17.35",
+       "dep": "17.35"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "17.40",
+       "dep": "17.40"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 9,
+       "arr": "18.20",
+       "dep": "18.20"
+      },
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 10,
+       "arr": "18.35",
+       "dep": "18.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "37",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERA-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 1,
+       "arr": "17.45",
+       "dep": "17.45"
+      },
+      {
+       "stop": "Gadnn (IRIIaxos Fs Stazione)",
+       "idx": 2,
+       "arr": "17.55",
+       "dep": "17.55"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 3,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "Terminal bus",
+       "idx": 4,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "Taniat (CABus Via D'Amicoerminal)",
+       "idx": 8,
+       "arr": "18.50",
+       "dep": "18.50"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 9,
+       "arr": "19.05",
+       "dep": "19.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "39",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERADAL15/6AL30/9-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 1,
+       "arr": "18.15",
+       "dep": "18.15"
+      },
+      {
+       "stop": "Gadnn (IRIIaxos Fs Stazione)",
+       "idx": 2,
+       "arr": "18.25",
+       "dep": "18.25"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 3,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "Terminal bus",
+       "idx": 4,
+       "arr": "18.35",
+       "dep": "18.35"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "18.40",
+       "dep": "18.40"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 9,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 10,
+       "arr": "19.35",
+       "dep": "19.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "41",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERADAL15/6AL30/"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Jnib (LETOANGallodorov.)",
+       "idx": 0,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 1,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "Gadnn (IRIIaxos Fs Stazione)",
+       "idx": 2,
+       "arr": "18.55",
+       "dep": "18.55"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 3,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "Terminal bus",
+       "idx": 4,
+       "arr": "19.05",
+       "dep": "19.05"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "Taniat (CABus Via D'Amicoerminal)",
+       "idx": 8,
+       "arr": "19.50",
+       "dep": "19.50"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 9,
+       "arr": "20.05",
+       "dep": "20.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "43",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEDAL1°/7AL31/8-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 1,
+       "arr": "19.15",
+       "dep": "19.15"
+      },
+      {
+       "stop": "Gadnn (IRIIaxos Fs Stazione)",
+       "idx": 2,
+       "arr": "19.25",
+       "dep": "19.25"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 3,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "Terminal bus",
+       "idx": 4,
+       "arr": "19.35",
+       "dep": "19.35"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "19.40",
+       "dep": "19.40"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 9,
+       "arr": "20.20",
+       "dep": "20.20"
+      },
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 10,
+       "arr": "20.35",
+       "dep": "20.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "45",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEDAL15/6AL30/-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 1,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "Gadnn (IRIIaxos Fs Stazione)",
+       "idx": 2,
+       "arr": "19.55",
+       "dep": "19.55"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 3,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "Terminal bus",
+       "idx": 4,
+       "arr": "20.05",
+       "dep": "20.05"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "20.10",
+       "dep": "20.10"
+      },
+      {
+       "stop": "Taniat (CABus Via D'Amicoerminal)",
+       "idx": 8,
+       "arr": "20.50",
+       "dep": "20.50"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 9,
+       "arr": "21.05",
+       "dep": "21.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "47",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVADAL15/6AL30/-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 1,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "Gadnn (IRIIaxos Fs Stazione)",
+       "idx": 2,
+       "arr": "19.55",
+       "dep": "19.55"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 3,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "Terminal bus",
+       "idx": 4,
+       "arr": "20.05",
+       "dep": "20.05"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "20.10",
+       "dep": "20.10"
+      },
+      {
+       "stop": "Taniat (CABus Via D'Amicoerminal)",
+       "idx": 8,
+       "arr": "20.50",
+       "dep": "20.50"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 9,
+       "arr": "21.05",
+       "dep": "21.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "49",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEDAL15/6AL30/-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 1,
+       "arr": "20.45",
+       "dep": "20.45"
+      },
+      {
+       "stop": "Gadnn (IRIIaxos Fs Stazione)",
+       "idx": 2,
+       "arr": "20.55",
+       "dep": "20.55"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 3,
+       "arr": "21.00",
+       "dep": "21.00"
+      },
+      {
+       "stop": "Terminal bus",
+       "idx": 4,
+       "arr": "21.05",
+       "dep": "21.05"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "21.10",
+       "dep": "21.10"
+      },
+      {
+       "stop": "Taniat (CABus Via D'Amicoerminal)",
+       "idx": 8,
+       "arr": "21.50",
+       "dep": "21.50"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 9,
+       "arr": "22.05",
+       "dep": "22.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "51",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVADAL15/6AL30/9-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 1,
+       "arr": "20.45",
+       "dep": "20.45"
+      },
+      {
+       "stop": "Gadnn (IRIIaxos Fs Stazione)",
+       "idx": 2,
+       "arr": "20.55",
+       "dep": "20.55"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 3,
+       "arr": "21.00",
+       "dep": "21.00"
+      },
+      {
+       "stop": "Terminal bus",
+       "idx": 4,
+       "arr": "21.05",
+       "dep": "21.05"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "21.10",
+       "dep": "21.10"
+      },
+      {
+       "stop": "Taniat (CABus Via D'Amicoerminal)",
+       "idx": 8,
+       "arr": "21.50",
+       "dep": "21.50"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 9,
+       "arr": "22.05",
+       "dep": "22.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "53",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEDAL15/7AL31/8-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 1,
+       "arr": "21.45",
+       "dep": "21.45"
+      },
+      {
+       "stop": "Gadnn (IRIIaxos Fs Stazione)",
+       "idx": 2,
+       "arr": "21.55",
+       "dep": "21.55"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 3,
+       "arr": "22.00",
+       "dep": "22.00"
+      },
+      {
+       "stop": "Terminal bus",
+       "idx": 4,
+       "arr": "22.05",
+       "dep": "22.05"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "22.10",
+       "dep": "22.10"
+      },
+      {
+       "stop": "Taniat (CABus Via D'Amicoerminal)",
+       "idx": 8,
+       "arr": "22.50",
+       "dep": "22.50"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 9,
+       "arr": "23.05",
+       "dep": "23.05"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "Ctna (AAIVia D'Amico Terminal Bus)",
+    "AEROPORTO CATANIA Fontanarossa",
+    "Ctna (AAIVia D'Amico Terminal Bus)",
+    "A/18",
+    "FIUMEFREDDO",
+    "Riin (GIADNViaax Cosonsolare Valeria,84)",
+    "Rcntv (EAAIia Terminalle Dionisbusio)",
+    "Riin (GIADNViaax Cosonsolare Valeria,84)",
+    "Fstazione",
+    "Rminavptb (TAOiairanedremllionalus)",
+    "Jnib (LETOANGallodorov.)",
+    "S.S. 114 Dalmazia (Semafori) S.S. 114 Via Vittorio Emanuele 230 S.S.",
+    "Stazione F.S. SS.114 Hotel Corallo SS. 114 Capo Taormina SP. ME 10"
+   ],
+   "trips": [
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FsEabRaIAtoLEesclusoDAL1/11AL31/3-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 1,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 2,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "Rcntv (EAAIia Terminalle Dionisbusio)",
+       "idx": 6,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 7,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "Fstazione",
+       "idx": 8,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 9,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE15/6AL30D/9AL"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 0,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 1,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "8.40",
+       "dep": "8.40"
+      },
+      {
+       "stop": "Rcntv (EAAIia Terminalle Dionisbusio)",
+       "idx": 6,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 7,
+       "arr": "8.50",
+       "dep": "8.50"
+      },
+      {
+       "stop": "Fstazione",
+       "idx": 8,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 9,
+       "arr": "9.05",
+       "dep": "9.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVADAL15/6AL30/9"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 0,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 1,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "8.40",
+       "dep": "8.40"
+      },
+      {
+       "stop": "Rcntv (EAAIia Terminalle Dionisbusio)",
+       "idx": 6,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 7,
+       "arr": "8.50",
+       "dep": "8.50"
+      },
+      {
+       "stop": "Fstazione",
+       "idx": 8,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 9,
+       "arr": "9.05",
+       "dep": "9.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERADA3L0/195/6AL"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 1,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "Rcntv (EAAIia Terminalle Dionisbusio)",
+       "idx": 6,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 7,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "Fstazione",
+       "idx": 8,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 9,
+       "arr": "9.20",
+       "dep": "9.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNAELsIcElRuAsoCaNpaotadlaeneno-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 1,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 2,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "9.40",
+       "dep": "9.40"
+      },
+      {
+       "stop": "Rcntv (EAAIia Terminalle Dionisbusio)",
+       "idx": 6,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 7,
+       "arr": "9.50",
+       "dep": "9.50"
+      },
+      {
+       "stop": "Fstazione",
+       "idx": 8,
+       "arr": "9.55",
+       "dep": "9.55"
+      },
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 9,
+       "arr": "10.05",
+       "dep": "10.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE1°/7AL3D1A/8L"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 0,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 1,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "9.55",
+       "dep": "9.55"
+      },
+      {
+       "stop": "Rcntv (EAAIia Terminalle Dionisbusio)",
+       "idx": 6,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 7,
+       "arr": "10.05",
+       "dep": "10.05"
+      },
+      {
+       "stop": "Fstazione",
+       "idx": 8,
+       "arr": "10.10",
+       "dep": "10.10"
+      },
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 9,
+       "arr": "10.20",
+       "dep": "10.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "14",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERAALD3A0/L915/6-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 1,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 2,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "10.40",
+       "dep": "10.40"
+      },
+      {
+       "stop": "Rcntv (EAAIia Terminalle Dionisbusio)",
+       "idx": 6,
+       "arr": "10.45",
+       "dep": "10.45"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 7,
+       "arr": "10.50",
+       "dep": "10.50"
+      },
+      {
+       "stop": "Fstazione",
+       "idx": 8,
+       "arr": "10.55",
+       "dep": "10.55"
+      },
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 9,
+       "arr": "11.05",
+       "dep": "11.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "16",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE1°/7AL3D1A/8L"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 0,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 1,
+       "arr": "10.15",
+       "dep": "10.15"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "10.55",
+       "dep": "10.55"
+      },
+      {
+       "stop": "Rcntv (EAAIia Terminalle Dionisbusio)",
+       "idx": 6,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 7,
+       "arr": "11.05",
+       "dep": "11.05"
+      },
+      {
+       "stop": "Fstazione",
+       "idx": 8,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 9,
+       "arr": "11.20",
+       "dep": "11.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "18",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERAFE-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 1,
+       "arr": "10.45",
+       "dep": "10.45"
+      },
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 2,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "11.40",
+       "dep": "11.40"
+      },
+      {
+       "stop": "Rcntv (EAAIia Terminalle Dionisbusio)",
+       "idx": 6,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 7,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "Fstazione",
+       "idx": 8,
+       "arr": "11.55",
+       "dep": "11.55"
+      },
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 9,
+       "arr": "12.05",
+       "dep": "12.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "20",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "RIALE1°/7AL3D1A/8L"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 0,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 1,
+       "arr": "11.15",
+       "dep": "11.15"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "11.55",
+       "dep": "11.55"
+      },
+      {
+       "stop": "Rcntv (EAAIia Terminalle Dionisbusio)",
+       "idx": 6,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 7,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "Fstazione",
+       "idx": 8,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 9,
+       "arr": "12.20",
+       "dep": "12.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "22",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE15/6AL30D/9A-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 1,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 2,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "Rcntv (EAAIia Terminalle Dionisbusio)",
+       "idx": 6,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 7,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "Fstazione",
+       "idx": 8,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 9,
+       "arr": "13.05",
+       "dep": "13.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "24",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE15/6AL30D/9A"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 0,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 1,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "Rcntv (EAAIia Terminalle Dionisbusio)",
+       "idx": 6,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 7,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "Fstazione",
+       "idx": 8,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 9,
+       "arr": "14.05",
+       "dep": "14.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "26",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVADAL15/6AL30/-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 1,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 2,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "Rcntv (EAAIia Terminalle Dionisbusio)",
+       "idx": 6,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 7,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "Fstazione",
+       "idx": 8,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 9,
+       "arr": "14.05",
+       "dep": "14.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "28",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 1,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 2,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "FIUMEFREDDO",
+       "idx": 4,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "Rcntv (EAAIia Terminalle Dionisbusio)",
+       "idx": 6,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 7,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "Fstazione",
+       "idx": 8,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 9,
+       "arr": "15.05",
+       "dep": "15.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "30",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVADAL15/6AL30/-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 1,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 2,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "Rcntv (EAAIia Terminalle Dionisbusio)",
+       "idx": 6,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 7,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "Fstazione",
+       "idx": 8,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 9,
+       "arr": "15.05",
+       "dep": "15.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "32",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE15/6AL30D/9AL-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 1,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 2,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "Rcntv (EAAIia Terminalle Dionisbusio)",
+       "idx": 6,
+       "arr": "15.45",
+       "dep": "15.45"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 7,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "Fstazione",
+       "idx": 8,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 9,
+       "arr": "16.05",
+       "dep": "16.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "34",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERAALD3A0/L915/6-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 1,
+       "arr": "15.45",
+       "dep": "15.45"
+      },
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 2,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "Rcntv (EAAIia Terminalle Dionisbusio)",
+       "idx": 6,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 7,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "Fstazione",
+       "idx": 8,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 9,
+       "arr": "17.05",
+       "dep": "17.05"
+      },
+      {
+       "stop": "Jnib (LETOANGallodorov.)",
+       "idx": 10,
+       "arr": "17.20",
+       "dep": "17.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "36",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA1/10AL1D4A/6L-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 1,
+       "arr": "15.45",
+       "dep": "15.45"
+      },
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 2,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "Rcntv (EAAIia Terminalle Dionisbusio)",
+       "idx": 6,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 7,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "Fstazione",
+       "idx": 8,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 9,
+       "arr": "17.05",
+       "dep": "17.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "38",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE1°/7AL3D1A/8L"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 0,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 1,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "Rcntv (EAAIia Terminalle Dionisbusio)",
+       "idx": 6,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 7,
+       "arr": "17.05",
+       "dep": "17.05"
+      },
+      {
+       "stop": "Fstazione",
+       "idx": 8,
+       "arr": "17.10",
+       "dep": "17.10"
+      },
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 9,
+       "arr": "17.20",
+       "dep": "17.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "40",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERADA3L01/95/6AL-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 1,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 2,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "17.40",
+       "dep": "17.40"
+      },
+      {
+       "stop": "Rcntv (EAAIia Terminalle Dionisbusio)",
+       "idx": 6,
+       "arr": "17.45",
+       "dep": "17.45"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 7,
+       "arr": "17.50",
+       "dep": "17.50"
+      },
+      {
+       "stop": "Fstazione",
+       "idx": 8,
+       "arr": "17.55",
+       "dep": "17.55"
+      },
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 9,
+       "arr": "18.05",
+       "dep": "18.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "42",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE1°/7AL3D1A/8L"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 0,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 1,
+       "arr": "17.15",
+       "dep": "17.15"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "17.55",
+       "dep": "17.55"
+      },
+      {
+       "stop": "Rcntv (EAAIia Terminalle Dionisbusio)",
+       "idx": 6,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 7,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "Fstazione",
+       "idx": 8,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 9,
+       "arr": "18.20",
+       "dep": "18.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "44",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 1,
+       "arr": "17.45",
+       "dep": "17.45"
+      },
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 2,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "18.40",
+       "dep": "18.40"
+      },
+      {
+       "stop": "Rcntv (EAAIia Terminalle Dionisbusio)",
+       "idx": 6,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 7,
+       "arr": "18.50",
+       "dep": "18.50"
+      },
+      {
+       "stop": "Fstazione",
+       "idx": 8,
+       "arr": "18.55",
+       "dep": "18.55"
+      },
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 9,
+       "arr": "19.05",
+       "dep": "19.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "46",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVADAL15/6AL30/-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 1,
+       "arr": "17.45",
+       "dep": "17.45"
+      },
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 2,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "18.40",
+       "dep": "18.40"
+      },
+      {
+       "stop": "Rcntv (EAAIia Terminalle Dionisbusio)",
+       "idx": 6,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 7,
+       "arr": "18.50",
+       "dep": "18.50"
+      },
+      {
+       "stop": "Fstazione",
+       "idx": 8,
+       "arr": "18.55",
+       "dep": "18.55"
+      },
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 9,
+       "arr": "19.05",
+       "dep": "19.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "48",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEDAL15/6AL30/-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 1,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 2,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "19.40",
+       "dep": "19.40"
+      },
+      {
+       "stop": "Rcntv (EAAIia Terminalle Dionisbusio)",
+       "idx": 6,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 7,
+       "arr": "19.50",
+       "dep": "19.50"
+      },
+      {
+       "stop": "Fstazione",
+       "idx": 8,
+       "arr": "19.55",
+       "dep": "19.55"
+      },
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 9,
+       "arr": "20.05",
+       "dep": "20.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "50",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERA-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 1,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 2,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "20.40",
+       "dep": "20.40"
+      },
+      {
+       "stop": "Rcntv (EAAIia Terminalle Dionisbusio)",
+       "idx": 6,
+       "arr": "20.45",
+       "dep": "20.45"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 7,
+       "arr": "20.50",
+       "dep": "20.50"
+      },
+      {
+       "stop": "Fstazione",
+       "idx": 8,
+       "arr": "20.55",
+       "dep": "20.55"
+      },
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 9,
+       "arr": "21.05",
+       "dep": "21.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "52",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERADA3L01/95/6AL-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 1,
+       "arr": "20.45",
+       "dep": "20.45"
+      },
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 2,
+       "arr": "21.00",
+       "dep": "21.00"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "21.40",
+       "dep": "21.40"
+      },
+      {
+       "stop": "Rcntv (EAAIia Terminalle Dionisbusio)",
+       "idx": 6,
+       "arr": "21.45",
+       "dep": "21.45"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 7,
+       "arr": "21.50",
+       "dep": "21.50"
+      },
+      {
+       "stop": "Fstazione",
+       "idx": 8,
+       "arr": "21.55",
+       "dep": "21.55"
+      },
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 9,
+       "arr": "22.05",
+       "dep": "22.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "54",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE15/7AL3D1A/8L-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 1,
+       "arr": "21.45",
+       "dep": "21.45"
+      },
+      {
+       "stop": "Ctna (AAIVia D'Amico Terminal Bus)",
+       "idx": 2,
+       "arr": "22.00",
+       "dep": "22.00"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 5,
+       "arr": "22.40",
+       "dep": "22.40"
+      },
+      {
+       "stop": "Rcntv (EAAIia Terminalle Dionisbusio)",
+       "idx": 6,
+       "arr": "22.45",
+       "dep": "22.45"
+      },
+      {
+       "stop": "Riin (GIADNViaax Cosonsolare Valeria,84)",
+       "idx": 7,
+       "arr": "22.50",
+       "dep": "22.50"
+      },
+      {
+       "stop": "Fstazione",
+       "idx": 8,
+       "arr": "22.55",
+       "dep": "22.55"
+      },
+      {
+       "stop": "Rminavptb (TAOiairanedremllionalus)",
+       "idx": 9,
+       "arr": "23.05",
+       "dep": "23.05"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

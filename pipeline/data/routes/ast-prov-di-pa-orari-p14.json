@@ -1,0 +1,176 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-pa-orari-p14",
+ "name": "Mezzojuso via SS Crocifisso - Marineo via Agrigento",
+ "source": "AST_prov._di_PA_-_ORARI/p014.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio NESSUNA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Mezzojuso via SS Crocifisso",
+    "Villafrati corso Sammarco",
+    "Cefalà Diana via Ungheria",
+    "Godrano via Palermo",
+    "Marineo via Agrigento"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Mezzojuso via SS Crocifisso",
+       "idx": 0,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "Villafrati corso Sammarco",
+       "idx": 1,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Cefalà Diana via Ungheria",
+       "idx": 2,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "Godrano via Palermo",
+       "idx": 3,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "Marineo via Agrigento",
+       "idx": 4,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Godrano via Palermo",
+       "idx": 3,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "Marineo via Agrigento",
+       "idx": 4,
+       "arr": "12.45",
+       "dep": "12.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Marineo via Agrigento",
+       "idx": 4,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "Godrano via Palermo",
+       "idx": 3,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Cefalà Diana via Ungheria",
+       "idx": 2,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "Villafrati corso Sammarco",
+       "idx": 1,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "Mezzojuso via SS Crocifisso",
+       "idx": 0,
+       "arr": "13.55",
+       "dep": "13.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Marineo via Agrigento",
+       "idx": 4,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Godrano via Palermo",
+       "idx": 3,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "Cefalà Diana via Ungheria",
+       "idx": 2,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "Villafrati corso Sammarco",
+       "idx": 1,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "Mezzojuso via SS Crocifisso",
+       "idx": 0,
+       "arr": "15.20",
+       "dep": "15.20"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

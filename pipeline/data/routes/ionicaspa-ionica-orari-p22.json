@@ -1,0 +1,143 @@
+{
+ "operator": "Ionica",
+ "route_id": "ionicaspa-ionica-orari-p22",
+ "name": "Roccafiorita - ETC….",
+ "source": "IONICASpA__IONICA_ORARI/p022.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Divieto di servizio locale da Roccalumera a Messina e vv. estremi compresi -"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Roccafiorita",
+    "Limina",
+    "Scifì",
+    "Barracca Santa Teresa Barracca",
+    "Bucalo Santa Teresa Bucalo",
+    "Furci Siculo",
+    "Roccalumera",
+    "Ali Terme",
+    "(P.zza Cavallotti) Messina (P.zza Cavallotti)",
+    "ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Roccafiorita",
+       "idx": 0,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "Limina",
+       "idx": 1,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "Scifì",
+       "idx": 2,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "Barracca Santa Teresa Barracca",
+       "idx": 3,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "Bucalo Santa Teresa Bucalo",
+       "idx": 4,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "Furci Siculo",
+       "idx": 5,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "Roccalumera",
+       "idx": 6,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "Ali Terme",
+       "idx": 7,
+       "arr": "16.25",
+       "dep": "16.25"
+      },
+      {
+       "stop": "(P.zza Cavallotti) Messina (P.zza Cavallotti)",
+       "idx": 8,
+       "arr": "17.30",
+       "dep": "17.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "(P.zza Cavallotti) Messina (P.zza Cavallotti)",
+       "idx": 8,
+       "arr": "18.40",
+       "dep": "18.40"
+      },
+      {
+       "stop": "Ali Terme",
+       "idx": 7,
+       "arr": "19.25",
+       "dep": "19.25"
+      },
+      {
+       "stop": "Roccalumera",
+       "idx": 6,
+       "arr": "19.35",
+       "dep": "19.35"
+      },
+      {
+       "stop": "Furci Siculo",
+       "idx": 5,
+       "arr": "19.40",
+       "dep": "19.40"
+      },
+      {
+       "stop": "Bucalo Santa Teresa Bucalo",
+       "idx": 4,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "Barracca Santa Teresa Barracca",
+       "idx": 3,
+       "arr": "19.50",
+       "dep": "19.50"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

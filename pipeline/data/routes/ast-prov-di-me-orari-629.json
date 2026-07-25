@@ -1,0 +1,58 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-me-orari-629",
+ "name": "SANTA LUCIA DEL MELA via Roma Capolinea - BARCELLONA via Gramsci",
+ "source": "AST_prov.di_ME_-_ORARI/p013.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio divieto di servizio locale fra Archi stazione FS e Messina e viceversa , estremi compresi"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "SANTA LUCIA DEL MELA via Roma Capolinea",
+    "SAN FILIPPO DEL MELA c.rso Garibaldi",
+    "OLIVARELLA via Nazionale",
+    "BARCELLONA via Gramsci"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "KMFERIALESCOLASTICA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SANTA LUCIA DEL MELA via Roma Capolinea",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "SAN FILIPPO DEL MELA c.rso Garibaldi",
+       "idx": 1,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale",
+       "idx": 2,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "BARCELLONA via Gramsci",
+       "idx": 3,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,72 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-tp-orari-0-755",
+ "name": "POGGIOREALE via Ximenes - TRAPANI – Terminal piazzale Ilio",
+ "source": "AST_prov._di_TP_-ORARI_0/p004.json",
+ "prescriptions": [
+  "Prescrizioni NESSUNA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "POGGIOREALE via Ximenes",
+    "SALAPARUTA via Reg. Siciliana",
+    "PARTANNA via Cialona",
+    "SANTA NINFA via Pio La Torre",
+    "GIBELLINA viale Ind. Siciliana",
+    "TRAPANI – Terminal piazzale Ilio"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "KMFERIALE0,0"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "POGGIOREALE via Ximenes",
+       "idx": 0,
+       "arr": "5.40",
+       "dep": "5.40"
+      },
+      {
+       "stop": "SALAPARUTA via Reg. Siciliana",
+       "idx": 1,
+       "arr": "5.50",
+       "dep": "5.50"
+      },
+      {
+       "stop": "PARTANNA via Cialona",
+       "idx": 2,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "SANTA NINFA via Pio La Torre",
+       "idx": 3,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "GIBELLINA viale Ind. Siciliana",
+       "idx": 4,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 5,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

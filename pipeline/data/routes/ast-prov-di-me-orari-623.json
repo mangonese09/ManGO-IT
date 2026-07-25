@@ -1,0 +1,111 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-me-orari-623",
+ "name": "MESSINA via Bonino Capolinea - SANTA LUCIA DEL MELA via ROMA",
+ "source": "AST_prov.di_ME_-_ORARI/p006.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio divieto di servizio fra Messina ed Olivarella , estremi compresi"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "MESSINA via Bonino Capolinea",
+    "DIVIETO",
+    "VILLAFRANCA via Nazionale",
+    "SPADAFORA -via Umberto I",
+    "GIAMMORO via Nazonale",
+    "OLIVARELLA via Nazionale",
+    "SAN FILIPPO DEL MELA c.Garibaldi",
+    "SANTA LUCIA DEL MELA via ROMA"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEKMINVERNALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MESSINA via Bonino Capolinea",
+       "idx": 0,
+       "arr": "5.50",
+       "dep": "5.50"
+      },
+      {
+       "stop": "DIVIETO",
+       "idx": 1,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "VILLAFRANCA via Nazionale",
+       "idx": 2,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "SPADAFORA -via Umberto I",
+       "idx": 3,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "GIAMMORO via Nazonale",
+       "idx": 4,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale",
+       "idx": 5,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "SAN FILIPPO DEL MELA c.Garibaldi",
+       "idx": 6,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "SANTA LUCIA DEL MELA via ROMA",
+       "idx": 7,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "STAZIONAMENTIKMFERIALEINVERNALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "SPADAFORA -via Umberto I",
+       "idx": 3,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "DIVIETO",
+       "idx": 1,
+       "arr": "8.20",
+       "dep": "8.20"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

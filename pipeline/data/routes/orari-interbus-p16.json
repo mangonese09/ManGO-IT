@@ -1,0 +1,382 @@
+{
+ "operator": "Interbus",
+ "route_id": "orari-interbus-p16",
+ "name": "Ariella - Alì Superiore - Messina, con prolungamento scolastico a Santa Teresa di Riva",
+ "source": "ORARI_INTERBUS/p016.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "ARIELLA",
+    "ALI' SUPERIORE Via Roma 59 Rif Esso",
+    "ALI' BV. ALI' SUPERIORE",
+    "ALI' TERME Via Francesco Crispi 316",
+    "NIZZA DI SICILIA -Piazza Interdonato",
+    "S. TERESA RIVA Via Lungomare 3 Pozzo Lazzaro",
+    "SCALETTA ZANCLEA Piazza Stazione",
+    "GIAMPILIERI",
+    "MESSINA P.zza Repubblica"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEnelperiodoscolasticodalunedìavenerdì"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ARIELLA",
+       "idx": 0,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "ALI' SUPERIORE Via Roma 59 Rif Esso",
+       "idx": 1,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "ALI' BV. ALI' SUPERIORE",
+       "idx": 2,
+       "arr": "6.25",
+       "dep": "6.25"
+      },
+      {
+       "stop": "ALI' TERME Via Francesco Crispi 316",
+       "idx": 3,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "NIZZA DI SICILIA -Piazza Interdonato",
+       "idx": 4,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "SCALETTA ZANCLEA Piazza Stazione",
+       "idx": 6,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "GIAMPILIERI",
+       "idx": 7,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "MESSINA P.zza Repubblica",
+       "idx": 8,
+       "arr": "7.35",
+       "dep": "7.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEnelperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ARIELLA",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "ALI' SUPERIORE Via Roma 59 Rif Esso",
+       "idx": 1,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "ALI' BV. ALI' SUPERIORE",
+       "idx": 2,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "ALI' TERME Via Francesco Crispi 316",
+       "idx": 3,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "NIZZA DI SICILIA -Piazza Interdonato",
+       "idx": 4,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "S. TERESA RIVA Via Lungomare 3 Pozzo Lazzaro",
+       "idx": 5,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEnelperiodoscolasticodalunedìavenerdì"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ARIELLA",
+       "idx": 0,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "ALI' BV. ALI' SUPERIORE",
+       "idx": 2,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "ALI' TERME Via Francesco Crispi 316",
+       "idx": 3,
+       "arr": "14.10",
+       "dep": "14.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEnelperiodoscolasticodalunedìavenerdì"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ARIELLA",
+       "idx": 0,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "ALI' BV. ALI' SUPERIORE",
+       "idx": 2,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "ALI' TERME Via Francesco Crispi 316",
+       "idx": 3,
+       "arr": "14.50",
+       "dep": "14.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEnelperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "S. TERESA RIVA Via Lungomare 3 Pozzo Lazzaro",
+       "idx": 5,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "NIZZA DI SICILIA -Piazza Interdonato",
+       "idx": 4,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "ALI' TERME Via Francesco Crispi 316",
+       "idx": 3,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "ALI' BV. ALI' SUPERIORE",
+       "idx": 2,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "ALI' SUPERIORE Via Roma 59 Rif Esso",
+       "idx": 1,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "ARIELLA",
+       "idx": 0,
+       "arr": "13.45",
+       "dep": "13.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEnelperiodoscolasticodalunedìavenerdì"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "ALI' TERME Via Francesco Crispi 316",
+       "idx": 3,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "ALI' BV. ALI' SUPERIORE",
+       "idx": 2,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "ALI' SUPERIORE Via Roma 59 Rif Esso",
+       "idx": 1,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "ARIELLA",
+       "idx": 0,
+       "arr": "14.35",
+       "dep": "14.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEnelperiodoscolasticodalunedìavenerdì"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MESSINA P.zza Repubblica",
+       "idx": 8,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "GIAMPILIERI",
+       "idx": 7,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "SCALETTA ZANCLEA Piazza Stazione",
+       "idx": 6,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "NIZZA DI SICILIA -Piazza Interdonato",
+       "idx": 4,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "ALI' TERME Via Francesco Crispi 316",
+       "idx": 3,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "ALI' BV. ALI' SUPERIORE",
+       "idx": 2,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "ALI' SUPERIORE Via Roma 59 Rif Esso",
+       "idx": 1,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "ARIELLA",
+       "idx": 0,
+       "arr": "15.35",
+       "dep": "15.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEnelperiodoscolasticodalunedìavenerdì"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "ALI' TERME Via Francesco Crispi 316",
+       "idx": 3,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "ALI' BV. ALI' SUPERIORE",
+       "idx": 2,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "ALI' SUPERIORE Via Roma 59 Rif Esso",
+       "idx": 1,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "ARIELLA",
+       "idx": 0,
+       "arr": "17.00",
+       "dep": "17.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

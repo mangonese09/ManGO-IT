@@ -1,0 +1,69 @@
+{
+ "operator": "Panepinto",
+ "route_id": "panepintosas-panepinto-orari-p4",
+ "name": "Catronovo di Sicilia - Prizzi",
+ "source": "Panepintosas__PANEPINTO_ORARI/p004.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Castronovo d. Castronovo d.",
+    "Prizzi Prizzi"
+   ],
+   "trips": [
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "inperiodo"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Castronovo d. Castronovo d.",
+       "idx": 0,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Prizzi Prizzi",
+       "idx": 1,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "6inperiodo"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Prizzi Prizzi",
+       "idx": 1,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Castronovo d. Castronovo d.",
+       "idx": 0,
+       "arr": "14.45",
+       "dep": "14.45"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

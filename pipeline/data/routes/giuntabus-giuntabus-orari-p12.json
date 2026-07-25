@@ -1,0 +1,151 @@
+{
+ "operator": "Giuntabus",
+ "route_id": "giuntabus-giuntabus-orari-p12",
+ "name": "Milazzo - SOLO LA DOMENICA, ETC….",
+ "source": "Giuntabus__GIUNTABUS_ORARI/p012.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio DIVIETO DI SERVIZIO LICALE DA PONTE GALLO A MESSINA ESTREMI COMPRESI"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Milazzo",
+    "Grazia",
+    "Olivarella",
+    "Archi",
+    "Giammoro",
+    "Monforte Marina Monforte Marina 0",
+    "Scala Torregrotta Scala Torregrotta 0.9",
+    "Spadafora Spadafora 5.1",
+    "Rometta Rometta 7.6",
+    "Villafranca A/20 Villafranca A/20 10",
+    "Messina",
+    "SOLO LA DOMENICA, ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Milazzo",
+       "idx": 0,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "Grazia",
+       "idx": 1,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "Olivarella",
+       "idx": 2,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "Archi",
+       "idx": 3,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "Giammoro",
+       "idx": 4,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "Monforte Marina Monforte Marina 0",
+       "idx": 5,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Scala Torregrotta Scala Torregrotta 0.9",
+       "idx": 6,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "Spadafora Spadafora 5.1",
+       "idx": 7,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Rometta Rometta 7.6",
+       "idx": 8,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "Villafranca A/20 Villafranca A/20 10",
+       "idx": 9,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Messina",
+       "idx": 10,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Monforte Marina Monforte Marina 0",
+       "idx": 5,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "Scala Torregrotta Scala Torregrotta 0.9",
+       "idx": 6,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "Spadafora Spadafora 5.1",
+       "idx": 7,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "Rometta Rometta 7.6",
+       "idx": 8,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "Villafranca A/20 Villafranca A/20 10",
+       "idx": 9,
+       "arr": "7.00",
+       "dep": "7.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

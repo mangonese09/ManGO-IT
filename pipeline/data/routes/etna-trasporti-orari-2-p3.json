@@ -1,0 +1,160 @@
+{
+ "operator": "Etna Trasporti",
+ "route_id": "etna-trasporti-orari-2-p3",
+ "name": "S.Croce Camerina-Ragusa-Catania (corse via S.S. 194)",
+ "source": "ETNA_TRASPORTI_ORARI_2/p003.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "RAGUSA",
+    "Via XXSettembre,10191,20 (Chiesa San Bartolomeo)",
+    "MONTEROSSO ALMO",
+    "VIZZINI",
+    "FRANCOFONTE",
+    "LENTINI",
+    "CATANIA"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEdaLunedìaVenerdìinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Via XXSettembre,10191,20 (Chiesa San Bartolomeo)",
+       "idx": 1,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "MONTEROSSO ALMO",
+       "idx": 2,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "VIZZINI",
+       "idx": 3,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 6,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEnelperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RAGUSA",
+       "idx": 0,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "Via XXSettembre,10191,20 (Chiesa San Bartolomeo)",
+       "idx": 1,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "MONTEROSSO ALMO",
+       "idx": 2,
+       "arr": "13.45",
+       "dep": "13.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEnelperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MONTEROSSO ALMO",
+       "idx": 2,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Via XXSettembre,10191,20 (Chiesa San Bartolomeo)",
+       "idx": 1,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "RAGUSA",
+       "idx": 0,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEdaLunedìaVenerdìinperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 6,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "VIZZINI",
+       "idx": 3,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "MONTEROSSO ALMO",
+       "idx": 2,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "Via XXSettembre,10191,20 (Chiesa San Bartolomeo)",
+       "idx": 1,
+       "arr": "16.15",
+       "dep": "16.15"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

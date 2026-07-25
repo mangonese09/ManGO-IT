@@ -1,0 +1,441 @@
+{
+ "operator": "Interbus",
+ "route_id": "orari-interbus-p25",
+ "name": "CATANIA-A/19-LEONFORTE-NICOSIA dir. AGIRA",
+ "source": "ORARI_INTERBUS/p025.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "CATANIA Via D'Amico",
+    "AEROPORTO Fontanarossa",
+    "Sv. A19 Catania",
+    "A19",
+    "Sv. A19 Agira-Raddusa",
+    "AGIRA P.zza Garibaldi",
+    "SV. A19 Mulinello",
+    "IV Novembre LEONFORTE Via Francesco Crispi (P.zza S.Francesco)",
+    "NICOSIA P.zza S.Francesco di Paola"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "IV Novembre LEONFORTE Via Francesco Crispi (P.zza S.Francesco)",
+       "idx": 7,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "NICOSIA P.zza S.Francesco di Paola",
+       "idx": 8,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVO"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA Via D'Amico",
+       "idx": 0,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "AEROPORTO Fontanarossa",
+       "idx": 1,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "IV Novembre LEONFORTE Via Francesco Crispi (P.zza S.Francesco)",
+       "idx": 7,
+       "arr": "12.20",
+       "dep": "12.20"
+      },
+      {
+       "stop": "NICOSIA P.zza S.Francesco di Paola",
+       "idx": 8,
+       "arr": "13.00",
+       "dep": "13.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdalunedìavenerdì"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA Via D'Amico",
+       "idx": 0,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "AEROPORTO Fontanarossa",
+       "idx": 1,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "IV Novembre LEONFORTE Via Francesco Crispi (P.zza S.Francesco)",
+       "idx": 7,
+       "arr": "19.20",
+       "dep": "19.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdalunedìavenerdì"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "IV Novembre LEONFORTE Via Francesco Crispi (P.zza S.Francesco)",
+       "idx": 7,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "NICOSIA P.zza S.Francesco di Paola",
+       "idx": 8,
+       "arr": "20.00",
+       "dep": "20.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEperiodoscolasticodalunedìavenerdì"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA Via D'Amico",
+       "idx": 0,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "AEROPORTO Fontanarossa",
+       "idx": 1,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "AGIRA P.zza Garibaldi",
+       "idx": 5,
+       "arr": "20.25",
+       "dep": "20.25"
+      },
+      {
+       "stop": "IV Novembre LEONFORTE Via Francesco Crispi (P.zza S.Francesco)",
+       "idx": 7,
+       "arr": "20.50",
+       "dep": "20.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALESabato"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA Via D'Amico",
+       "idx": 0,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "AEROPORTO Fontanarossa",
+       "idx": 1,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "AGIRA P.zza Garibaldi",
+       "idx": 5,
+       "arr": "20.25",
+       "dep": "20.25"
+      },
+      {
+       "stop": "IV Novembre LEONFORTE Via Francesco Crispi (P.zza S.Francesco)",
+       "idx": 7,
+       "arr": "20.50",
+       "dep": "20.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "FERIALEperiodononscolasticodalunedìavenerdì"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "IV Novembre LEONFORTE Via Francesco Crispi (P.zza S.Francesco)",
+       "idx": 7,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "AEROPORTO Fontanarossa",
+       "idx": 1,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "CATANIA Via D'Amico",
+       "idx": 0,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEperiodoscolasticodalunedìavenerdì"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "IV Novembre LEONFORTE Via Francesco Crispi (P.zza S.Francesco)",
+       "idx": 7,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "AGIRA P.zza Garibaldi",
+       "idx": 5,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "AEROPORTO Fontanarossa",
+       "idx": 1,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "CATANIA Via D'Amico",
+       "idx": 0,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALESabatolunedì"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "IV Novembre LEONFORTE Via Francesco Crispi (P.zza S.Francesco)",
+       "idx": 7,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "AGIRA P.zza Garibaldi",
+       "idx": 5,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "AEROPORTO Fontanarossa",
+       "idx": 1,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "CATANIA Via D'Amico",
+       "idx": 0,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdaavenerdì"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "NICOSIA P.zza S.Francesco di Paola",
+       "idx": 8,
+       "arr": "5.35",
+       "dep": "5.35"
+      },
+      {
+       "stop": "IV Novembre LEONFORTE Via Francesco Crispi (P.zza S.Francesco)",
+       "idx": 7,
+       "arr": "6.10",
+       "dep": "6.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "NICOSIA P.zza S.Francesco di Paola",
+       "idx": 8,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "IV Novembre LEONFORTE Via Francesco Crispi (P.zza S.Francesco)",
+       "idx": 7,
+       "arr": "16.40",
+       "dep": "16.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEperiodoscolasticodalunedìavenerdì"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "IV Novembre LEONFORTE Via Francesco Crispi (P.zza S.Francesco)",
+       "idx": 7,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "AEROPORTO Fontanarossa",
+       "idx": 1,
+       "arr": "17.50",
+       "dep": "17.50"
+      },
+      {
+       "stop": "CATANIA Via D'Amico",
+       "idx": 0,
+       "arr": "18.00",
+       "dep": "18.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "14",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVO"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "NICOSIA P.zza S.Francesco di Paola",
+       "idx": 8,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "IV Novembre LEONFORTE Via Francesco Crispi (P.zza S.Francesco)",
+       "idx": 7,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "AEROPORTO Fontanarossa",
+       "idx": 1,
+       "arr": "17.50",
+       "dep": "17.50"
+      },
+      {
+       "stop": "CATANIA Via D'Amico",
+       "idx": 0,
+       "arr": "18.00",
+       "dep": "18.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

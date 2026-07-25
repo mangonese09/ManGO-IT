@@ -1,0 +1,59 @@
+{
+ "operator": "Ionica",
+ "route_id": "ionicaspa-ionica-orari-p2",
+ "name": "Misserio - ETC….",
+ "source": "IONICASpA__IONICA_ORARI/p002.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Divieto di servizio locale da Roccalumera a Messina e vv. estremi compresi"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Misserio",
+    "Giardino",
+    "Barracca Santa Teresa Barracca",
+    "Bucalo Santa Teresa Bucalo",
+    "ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Misserio",
+       "idx": 0,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "Giardino",
+       "idx": 1,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "Barracca Santa Teresa Barracca",
+       "idx": 2,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "Bucalo Santa Teresa Bucalo",
+       "idx": 3,
+       "arr": "16.00",
+       "dep": "16.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

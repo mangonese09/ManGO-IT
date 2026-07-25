@@ -1,0 +1,95 @@
+{
+ "operator": "Salvatore Lumia",
+ "route_id": "salvatorelumiasrl-lumia-orar-p16",
+ "name": "S.ANNA S.ANNA - PALERMO PALERMO",
+ "source": "SALVATORELUMIASRL__LUMIA_ORARI(1)/p016.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio carico passeggeri consentito solo da Caltabellotta e S.Anna per Palermo e viceversa"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "S.ANNA S.ANNA",
+    "CALTABELLOTTA CALTABELLOTTA",
+    "PALERMO PALERMO",
+    "PALERMO PALERMO"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "SOLOLUNEDI'EVENERDI'"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "S.ANNA S.ANNA",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "CALTABELLOTTA CALTABELLOTTA",
+       "idx": 1,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "PALERMO PALERMO",
+       "idx": 2,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "PALERMO PALERMO",
+       "idx": 3,
+       "arr": "9.15",
+       "dep": "9.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALESOLOLUNEDI'EVENERDI'"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO PALERMO",
+       "idx": 3,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "PALERMO PALERMO",
+       "idx": 2,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "CALTABELLOTTA CALTABELLOTTA",
+       "idx": 1,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "S.ANNA S.ANNA",
+       "idx": 0,
+       "arr": "17.00",
+       "dep": "17.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

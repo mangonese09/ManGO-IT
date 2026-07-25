@@ -1,0 +1,172 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-me-orari-633",
+ "name": "TRIPI piazza Fondaco - BARCELLONA via Gramsci",
+ "source": "AST_prov.di_ME_-_ORARI/p017.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio NESSUNA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "TRIPI piazza Fondaco",
+    "CAMPOGRANDE via Aldo Moro",
+    "FURNARI via Vittorio Emanuele III",
+    "TONNARELLA via Palermo",
+    "VIGLIATORE via Nazionale",
+    "TERME VIGLIATORE via Nazionale",
+    "BARCELLONA via Gramsci"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRIPI piazza Fondaco",
+       "idx": 0,
+       "arr": "6.25",
+       "dep": "6.25"
+      },
+      {
+       "stop": "CAMPOGRANDE via Aldo Moro",
+       "idx": 1,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "FURNARI via Vittorio Emanuele III",
+       "idx": 2,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "VIGLIATORE via Nazionale",
+       "idx": 4,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "TERME VIGLIATORE via Nazionale",
+       "idx": 5,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "BARCELLONA via Gramsci",
+       "idx": 6,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALESCOLASTICO"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRIPI piazza Fondaco",
+       "idx": 0,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "CAMPOGRANDE via Aldo Moro",
+       "idx": 1,
+       "arr": "15.20",
+       "dep": "15.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEINVERNALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "BARCELLONA via Gramsci",
+       "idx": 6,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "TERME VIGLIATORE via Nazionale",
+       "idx": 5,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "TONNARELLA via Palermo",
+       "idx": 3,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "FURNARI via Vittorio Emanuele III",
+       "idx": 2,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "CAMPOGRANDE via Aldo Moro",
+       "idx": 1,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "TRIPI piazza Fondaco",
+       "idx": 0,
+       "arr": "14.40",
+       "dep": "14.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALESCOLASTICO"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAMPOGRANDE via Aldo Moro",
+       "idx": 1,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "TRIPI piazza Fondaco",
+       "idx": 0,
+       "arr": "15.45",
+       "dep": "15.45"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

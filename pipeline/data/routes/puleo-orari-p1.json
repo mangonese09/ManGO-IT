@@ -1,0 +1,82 @@
+{
+ "operator": "Puleo",
+ "route_id": "puleo-orari-p1",
+ "name": "Santo Stefano Quisquina-Prizzi-Lercara Friddi",
+ "source": "PULEO_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "S.Stefano Quisquina S.Stefano Quisquina (Piazza Europa)",
+    "Prizzi Prizzi",
+    "Lercara Friddi(V.le delle Rose Lercara Friddi 0.0"
+   ],
+   "trips": [
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ERIALEriodoscolast"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "S.Stefano Quisquina S.Stefano Quisquina (Piazza Europa)",
+       "idx": 0,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Prizzi Prizzi",
+       "idx": 1,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "Lercara Friddi(V.le delle Rose Lercara Friddi 0.0",
+       "idx": 2,
+       "arr": "8.15",
+       "dep": "8.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Lercara Friddi(V.le delle Rose Lercara Friddi 0.0",
+       "idx": 2,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Prizzi Prizzi",
+       "idx": 1,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "S.Stefano Quisquina S.Stefano Quisquina (Piazza Europa)",
+       "idx": 0,
+       "arr": "14.35",
+       "dep": "14.35"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

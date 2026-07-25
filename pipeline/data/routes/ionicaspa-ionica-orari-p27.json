@@ -1,0 +1,109 @@
+{
+ "operator": "Ionica",
+ "route_id": "ionicaspa-ionica-orari-p27",
+ "name": "Barracca Santa Teresa Barracca - ETC….",
+ "source": "IONICASpA__IONICA_ORARI/p027.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Divieto di servizio locale da Roccalumera a Messina e vv. estremi compresi -"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Barracca Santa Teresa Barracca",
+    "Bucalo Santa Teresa Bucalo",
+    "Furci Siculo",
+    "Ali Terme",
+    "(P.zza Cavallotti) Messina (P.zza Cavallotti)",
+    "ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Barracca Santa Teresa Barracca",
+       "idx": 0,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "Bucalo Santa Teresa Bucalo",
+       "idx": 1,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "Furci Siculo",
+       "idx": 2,
+       "arr": "18.15",
+       "dep": "18.15"
+      },
+      {
+       "stop": "Ali Terme",
+       "idx": 3,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "(P.zza Cavallotti) Messina (P.zza Cavallotti)",
+       "idx": 4,
+       "arr": "19.30",
+       "dep": "19.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "(P.zza Cavallotti) Messina (P.zza Cavallotti)",
+       "idx": 4,
+       "arr": "19.40",
+       "dep": "19.40"
+      },
+      {
+       "stop": "Ali Terme",
+       "idx": 3,
+       "arr": "20.40",
+       "dep": "20.40"
+      },
+      {
+       "stop": "Furci Siculo",
+       "idx": 2,
+       "arr": "20.55",
+       "dep": "20.55"
+      },
+      {
+       "stop": "Bucalo Santa Teresa Bucalo",
+       "idx": 1,
+       "arr": "21.00",
+       "dep": "21.00"
+      },
+      {
+       "stop": "Barracca Santa Teresa Barracca",
+       "idx": 0,
+       "arr": "21.05",
+       "dep": "21.05"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

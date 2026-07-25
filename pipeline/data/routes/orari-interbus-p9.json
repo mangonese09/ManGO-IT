@@ -1,0 +1,380 @@
+{
+ "operator": "Interbus",
+ "route_id": "orari-interbus-p9",
+ "name": "Graniti - Gaggi - Giardini - S.Teresa Riva - Messina 157",
+ "source": "ORARI_INTERBUS/p009.json",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "GRANITI Piazza Manganelli",
+    "GAGGI Piazza Vittorio Emanuele (Per Francavilla)",
+    "TRAPPITELLO Via Via XXIV Aprile",
+    "CHIANCHITTA",
+    "RECANATI Terminal Bus (Viale Dionisio)",
+    "GIARDINI S. Giovanni (Via Umberto SS 114)",
+    "CAPO TAORMINA",
+    "A. TAORMINA VIA L. PIRANDELLO (Terminal bus)",
+    "P. TAORMINA VIA L. PIRANDELLO (Terminal bus)",
+    "CAPO TAORMINA",
+    "LETOJANNI Bv. Gallodoro SS 114",
+    "S. ALESSIO Via Cozzolari Valeria, 64",
+    "S. TERESA RIVA Piazza Pozzo Lazzaro (Via Lungomare 3)",
+    "FURCI Via Lungo Mare (Per Messina)",
+    "ROCCALUMERA Lungomare (Via C.Colombo 19)",
+    "NIZZA DI SICILIA (P.zza Interdonato)",
+    "ALI' TERME (Via Francesco Crispi 316)",
+    "SCALETTA ZANCLEA (Piazza Stazione)",
+    "MESSINA Piazza Repubblica"
+   ],
+   "trips": [
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "15/6",
+       "to": "15/9"
+      },
+      "raw": "FERIALE15/6-15/9"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GRANITI Piazza Manganelli",
+       "idx": 0,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "GAGGI Piazza Vittorio Emanuele (Per Francavilla)",
+       "idx": 1,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "TRAPPITELLO Via Via XXIV Aprile",
+       "idx": 2,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 3,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "RECANATI Terminal Bus (Viale Dionisio)",
+       "idx": 4,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "GIARDINI S. Giovanni (Via Umberto SS 114)",
+       "idx": 5,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "CAPO TAORMINA",
+       "idx": 6,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "A. TAORMINA VIA L. PIRANDELLO (Terminal bus)",
+       "idx": 7,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "P. TAORMINA VIA L. PIRANDELLO (Terminal bus)",
+       "idx": 8,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "CAPO TAORMINA",
+       "idx": 9,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "LETOJANNI Bv. Gallodoro SS 114",
+       "idx": 10,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "S. ALESSIO Via Cozzolari Valeria, 64",
+       "idx": 11,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "S. TERESA RIVA Piazza Pozzo Lazzaro (Via Lungomare 3)",
+       "idx": 12,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "FURCI Via Lungo Mare (Per Messina)",
+       "idx": 13,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "ROCCALUMERA Lungomare (Via C.Colombo 19)",
+       "idx": 14,
+       "arr": "16.25",
+       "dep": "16.25"
+      },
+      {
+       "stop": "NIZZA DI SICILIA (P.zza Interdonato)",
+       "idx": 15,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "ALI' TERME (Via Francesco Crispi 316)",
+       "idx": 16,
+       "arr": "16.35",
+       "dep": "16.35"
+      },
+      {
+       "stop": "SCALETTA ZANCLEA (Piazza Stazione)",
+       "idx": 17,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "MESSINA Piazza Repubblica",
+       "idx": 18,
+       "arr": "17.20",
+       "dep": "17.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GAGGI Piazza Vittorio Emanuele (Per Francavilla)",
+       "idx": 1,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "TRAPPITELLO Via Via XXIV Aprile",
+       "idx": 2,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 3,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "RECANATI Terminal Bus (Viale Dionisio)",
+       "idx": 4,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "GIARDINI S. Giovanni (Via Umberto SS 114)",
+       "idx": 5,
+       "arr": "14.25",
+       "dep": "14.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "GIARDINI S. Giovanni (Via Umberto SS 114)",
+       "idx": 5,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "RECANATI Terminal Bus (Viale Dionisio)",
+       "idx": 4,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 3,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "TRAPPITELLO Via Via XXIV Aprile",
+       "idx": 2,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "GAGGI Piazza Vittorio Emanuele (Per Francavilla)",
+       "idx": 1,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "15/6",
+       "to": "15/9"
+      },
+      "raw": "FERIALE15/6-15/9"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GRANITI Piazza Manganelli",
+       "idx": 0,
+       "arr": "0.20",
+       "dep": "0.20"
+      },
+      {
+       "stop": "GAGGI Piazza Vittorio Emanuele (Per Francavilla)",
+       "idx": 1,
+       "arr": "0.10",
+       "dep": "0.10"
+      },
+      {
+       "stop": "TRAPPITELLO Via Via XXIV Aprile",
+       "idx": 2,
+       "arr": "0.05",
+       "dep": "0.05"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 3,
+       "arr": "0.00",
+       "dep": "0.00"
+      },
+      {
+       "stop": "RECANATI Terminal Bus (Viale Dionisio)",
+       "idx": 4,
+       "arr": "23.50",
+       "dep": "23.50"
+      },
+      {
+       "stop": "GIARDINI S. Giovanni (Via Umberto SS 114)",
+       "idx": 5,
+       "arr": "23.45",
+       "dep": "23.45"
+      },
+      {
+       "stop": "CAPO TAORMINA",
+       "idx": 6,
+       "arr": "23.40",
+       "dep": "23.40"
+      },
+      {
+       "stop": "A. TAORMINA VIA L. PIRANDELLO (Terminal bus)",
+       "idx": 7,
+       "arr": "23.30",
+       "dep": "23.30"
+      },
+      {
+       "stop": "P. TAORMINA VIA L. PIRANDELLO (Terminal bus)",
+       "idx": 8,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "CAPO TAORMINA",
+       "idx": 9,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "LETOJANNI Bv. Gallodoro SS 114",
+       "idx": 10,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "S. ALESSIO Via Cozzolari Valeria, 64",
+       "idx": 11,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "S. TERESA RIVA Piazza Pozzo Lazzaro (Via Lungomare 3)",
+       "idx": 12,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "FURCI Via Lungo Mare (Per Messina)",
+       "idx": 13,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "ROCCALUMERA Lungomare (Via C.Colombo 19)",
+       "idx": 14,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "NIZZA DI SICILIA (P.zza Interdonato)",
+       "idx": 15,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "ALI' TERME (Via Francesco Crispi 316)",
+       "idx": 16,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "SCALETTA ZANCLEA (Piazza Stazione)",
+       "idx": 17,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "MESSINA Piazza Repubblica",
+       "idx": 18,
+       "arr": "14.10",
+       "dep": "14.10"
+      }
+     ],
+     "valid": false
+    }
+   ]
+  }
+ ]
+}

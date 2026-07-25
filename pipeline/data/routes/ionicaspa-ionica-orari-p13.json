@@ -1,0 +1,122 @@
+{
+ "operator": "Ionica",
+ "route_id": "ionicaspa-ionica-orari-p13",
+ "name": "Rina - ETC….",
+ "source": "IONICASpA__IONICA_ORARI/p013.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Divieto di servizio locale da Roccalumera a Ali Terme e vv. estremi compresi -"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Rina",
+    "Contura",
+    "di Paola S.Francesco di Paola",
+    "Barracca Santa Teresa Barracca",
+    "Bucalo Santa Teresa Bucalo",
+    "Furci Siculo",
+    "ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "inperiodo"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Rina",
+       "idx": 0,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "Contura",
+       "idx": 1,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "di Paola S.Francesco di Paola",
+       "idx": 2,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "Barracca Santa Teresa Barracca",
+       "idx": 3,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "Bucalo Santa Teresa Bucalo",
+       "idx": 4,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "Furci Siculo",
+       "idx": 5,
+       "arr": "13.30",
+       "dep": "13.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "inperiodo"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Furci Siculo",
+       "idx": 5,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "Bucalo Santa Teresa Bucalo",
+       "idx": 4,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "Barracca Santa Teresa Barracca",
+       "idx": 3,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "di Paola S.Francesco di Paola",
+       "idx": 2,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "Contura",
+       "idx": 1,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "Rina",
+       "idx": 0,
+       "arr": "13.10",
+       "dep": "13.10"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

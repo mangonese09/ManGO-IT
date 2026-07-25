@@ -1,0 +1,456 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-rg-orari-667",
+ "name": "MODICA - CATANIA",
+ "source": "AST_prov._di_RG_-_ORARI/p010.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "MODICA (p.za Borsellino)- Capolinea",
+    "MODICA (Zona 167) Capolinea\\Fermata",
+    "Pozzallo (viale Europa)",
+    "Ispica (via Mario Rapisardi)",
+    "Rosolini (via Canova)",
+    "Fermata intermedia",
+    "Noto (Villa Comunale)",
+    "Avola (piazza Trieste)",
+    "Aeroporto Fontanarossa",
+    "CATANIA (piazza Giovanni XXIII)"
+   ],
+   "trips": [
+    {
+     "corsa": "11A",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "festiva"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MODICA (p.za Borsellino)- Capolinea",
+       "idx": 0,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Pozzallo (viale Europa)",
+       "idx": 2,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "Ispica (via Mario Rapisardi)",
+       "idx": 3,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "Rosolini (via Canova)",
+       "idx": 4,
+       "arr": "8.50",
+       "dep": "8.50"
+      },
+      {
+       "stop": "Noto (Villa Comunale)",
+       "idx": 6,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "Avola (piazza Trieste)",
+       "idx": 7,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "Aeroporto Fontanarossa",
+       "idx": 8,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "CATANIA (piazza Giovanni XXIII)",
+       "idx": 9,
+       "arr": "10.50",
+       "dep": "10.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9A",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "festivainvernale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MODICA (p.za Borsellino)- Capolinea",
+       "idx": 0,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "Ispica (via Mario Rapisardi)",
+       "idx": 3,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "Rosolini (via Canova)",
+       "idx": 4,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "Noto (Villa Comunale)",
+       "idx": 6,
+       "arr": "15.45",
+       "dep": "15.45"
+      },
+      {
+       "stop": "Avola (piazza Trieste)",
+       "idx": 7,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "Aeroporto Fontanarossa",
+       "idx": 8,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "CATANIA (piazza Giovanni XXIII)",
+       "idx": 9,
+       "arr": "17.20",
+       "dep": "17.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10A",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "festivainvernale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MODICA (Zona 167) Capolinea\\Fermata",
+       "idx": 1,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "Aeroporto Fontanarossa",
+       "idx": 8,
+       "arr": "18.55",
+       "dep": "18.55"
+      },
+      {
+       "stop": "CATANIA (piazza Giovanni XXIII)",
+       "idx": 9,
+       "arr": "19.15",
+       "dep": "19.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12A",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "festiva"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Pozzallo (viale Europa)",
+       "idx": 2,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "Ispica (via Mario Rapisardi)",
+       "idx": 3,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "Rosolini (via Canova)",
+       "idx": 4,
+       "arr": "17.20",
+       "dep": "17.20"
+      },
+      {
+       "stop": "Noto (Villa Comunale)",
+       "idx": 6,
+       "arr": "17.45",
+       "dep": "17.45"
+      },
+      {
+       "stop": "Avola (piazza Trieste)",
+       "idx": 7,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "Aeroporto Fontanarossa",
+       "idx": 8,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "CATANIA (piazza Giovanni XXIII)",
+       "idx": 9,
+       "arr": "19.20",
+       "dep": "19.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "13A",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "festivainvernale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Pozzallo (viale Europa)",
+       "idx": 2,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "Aeroporto Fontanarossa",
+       "idx": 8,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "CATANIA (piazza Giovanni XXIII)",
+       "idx": 9,
+       "arr": "19.20",
+       "dep": "19.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9R",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "festiva"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (piazza Giovanni XXIII)",
+       "idx": 9,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "Aeroporto Fontanarossa",
+       "idx": 8,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "Avola (piazza Trieste)",
+       "idx": 7,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "Noto (Villa Comunale)",
+       "idx": 6,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "Rosolini (via Canova)",
+       "idx": 4,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Ispica (via Mario Rapisardi)",
+       "idx": 3,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "Pozzallo (viale Europa)",
+       "idx": 2,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "MODICA (Zona 167) Capolinea\\Fermata",
+       "idx": 1,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "MODICA (p.za Borsellino)- Capolinea",
+       "idx": 0,
+       "arr": "14.50",
+       "dep": "14.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10R",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "festivainvernale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (piazza Giovanni XXIII)",
+       "idx": 9,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "Aeroporto Fontanarossa",
+       "idx": 8,
+       "arr": "18.20",
+       "dep": "18.20"
+      },
+      {
+       "stop": "Avola (piazza Trieste)",
+       "idx": 7,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "Noto (Villa Comunale)",
+       "idx": 6,
+       "arr": "19.35",
+       "dep": "19.35"
+      },
+      {
+       "stop": "Rosolini (via Canova)",
+       "idx": 4,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "Ispica (via Mario Rapisardi)",
+       "idx": 3,
+       "arr": "20.20",
+       "dep": "20.20"
+      },
+      {
+       "stop": "MODICA (p.za Borsellino)- Capolinea",
+       "idx": 0,
+       "arr": "21.00",
+       "dep": "21.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12R",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "festivainvernale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (piazza Giovanni XXIII)",
+       "idx": 9,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "Aeroporto Fontanarossa",
+       "idx": 8,
+       "arr": "20.20",
+       "dep": "20.20"
+      },
+      {
+       "stop": "MODICA (Zona 167) Capolinea\\Fermata",
+       "idx": 1,
+       "arr": "22.15",
+       "dep": "22.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11R",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "festiva"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (piazza Giovanni XXIII)",
+       "idx": 9,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "Aeroporto Fontanarossa",
+       "idx": 8,
+       "arr": "20.20",
+       "dep": "20.20"
+      },
+      {
+       "stop": "Avola (piazza Trieste)",
+       "idx": 7,
+       "arr": "21.20",
+       "dep": "21.20"
+      },
+      {
+       "stop": "Noto (Villa Comunale)",
+       "idx": 6,
+       "arr": "21.35",
+       "dep": "21.35"
+      },
+      {
+       "stop": "Rosolini (via Canova)",
+       "idx": 4,
+       "arr": "22.00",
+       "dep": "22.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

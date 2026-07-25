@@ -1,0 +1,632 @@
+{
+ "operator": "Emanuele",
+ "route_id": "emanuele-emanuele-orari-p5",
+ "name": "Tortorici S.Agata - SOLO IL SABATO, SOLO LA DOMENICA, ETC….",
+ "source": "Emanuele__EMANUELE_ORARI/p005.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Divieto di servizio locale tra Tortorici e G.da Calcatizzo, estremi compresi."
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Tortorici S.Agata",
+    "Galati Torrenova",
+    "Longi Rocca",
+    "Frazzanò Capri Leone",
+    "Mirto Mirto",
+    "Capri Leone Frazzanò",
+    "Rocca Longi",
+    "Torrenova Galati",
+    "S.Agata Tortorici",
+    "SOLO IL SABATO, SOLO LA DOMENICA, ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEorario"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Tortorici S.Agata",
+       "idx": 0,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "Galati Torrenova",
+       "idx": 1,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "Longi Rocca",
+       "idx": 2,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "Frazzanò Capri Leone",
+       "idx": 3,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "Mirto Mirto",
+       "idx": 4,
+       "arr": "9.35",
+       "dep": "9.35"
+      },
+      {
+       "stop": "Capri Leone Frazzanò",
+       "idx": 5,
+       "arr": "9.40",
+       "dep": "9.40"
+      },
+      {
+       "stop": "Rocca Longi",
+       "idx": 6,
+       "arr": "9.55",
+       "dep": "9.55"
+      },
+      {
+       "stop": "Torrenova Galati",
+       "idx": 7,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "S.Agata Tortorici",
+       "idx": 8,
+       "arr": "10.20",
+       "dep": "10.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Galati Torrenova",
+       "idx": 1,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "Longi Rocca",
+       "idx": 2,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "Frazzanò Capri Leone",
+       "idx": 3,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Mirto Mirto",
+       "idx": 4,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "Capri Leone Frazzanò",
+       "idx": 5,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "Rocca Longi",
+       "idx": 6,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Torrenova Galati",
+       "idx": 7,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "S.Agata Tortorici",
+       "idx": 8,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Galati Torrenova",
+       "idx": 1,
+       "arr": "5.50",
+       "dep": "5.50"
+      },
+      {
+       "stop": "Longi Rocca",
+       "idx": 2,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "Frazzanò Capri Leone",
+       "idx": 3,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "Mirto Mirto",
+       "idx": 4,
+       "arr": "6.25",
+       "dep": "6.25"
+      },
+      {
+       "stop": "Capri Leone Frazzanò",
+       "idx": 5,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "Rocca Longi",
+       "idx": 6,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "Torrenova Galati",
+       "idx": 7,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "S.Agata Tortorici",
+       "idx": 8,
+       "arr": "7.10",
+       "dep": "7.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Galati Torrenova",
+       "idx": 1,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "Longi Rocca",
+       "idx": 2,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "Frazzanò Capri Leone",
+       "idx": 3,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Mirto Mirto",
+       "idx": 4,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "Capri Leone Frazzanò",
+       "idx": 5,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "Rocca Longi",
+       "idx": 6,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Torrenova Galati",
+       "idx": 7,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "S.Agata Tortorici",
+       "idx": 8,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Galati Torrenova",
+       "idx": 1,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "Rocca Longi",
+       "idx": 6,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "Torrenova Galati",
+       "idx": 7,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "S.Agata Tortorici",
+       "idx": 8,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Galati Torrenova",
+       "idx": 1,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "Rocca Longi",
+       "idx": 6,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "Torrenova Galati",
+       "idx": 7,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "S.Agata Tortorici",
+       "idx": 8,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEorario"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Tortorici S.Agata",
+       "idx": 0,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Galati Torrenova",
+       "idx": 1,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Longi Rocca",
+       "idx": 2,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "Frazzanò Capri Leone",
+       "idx": 3,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "Mirto Mirto",
+       "idx": 4,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Capri Leone Frazzanò",
+       "idx": 5,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "Rocca Longi",
+       "idx": 6,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "Torrenova Galati",
+       "idx": 7,
+       "arr": "14.50",
+       "dep": "14.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Tortorici S.Agata",
+       "idx": 0,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "Galati Torrenova",
+       "idx": 1,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "Longi Rocca",
+       "idx": 2,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "Frazzanò Capri Leone",
+       "idx": 3,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "Mirto Mirto",
+       "idx": 4,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "Capri Leone Frazzanò",
+       "idx": 5,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "Rocca Longi",
+       "idx": 6,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "Torrenova Galati",
+       "idx": 7,
+       "arr": "13.50",
+       "dep": "13.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Tortorici S.Agata",
+       "idx": 0,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Galati Torrenova",
+       "idx": 1,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Longi Rocca",
+       "idx": 2,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "Torrenova Galati",
+       "idx": 7,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Tortorici S.Agata",
+       "idx": 0,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Galati Torrenova",
+       "idx": 1,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Longi Rocca",
+       "idx": 2,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "Frazzanò Capri Leone",
+       "idx": 3,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "Mirto Mirto",
+       "idx": 4,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Capri Leone Frazzanò",
+       "idx": 5,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "Rocca Longi",
+       "idx": 6,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "Torrenova Galati",
+       "idx": 7,
+       "arr": "14.50",
+       "dep": "14.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Tortorici S.Agata",
+       "idx": 0,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "Galati Torrenova",
+       "idx": 1,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "Longi Rocca",
+       "idx": 2,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "Frazzanò Capri Leone",
+       "idx": 3,
+       "arr": "16.35",
+       "dep": "16.35"
+      },
+      {
+       "stop": "Mirto Mirto",
+       "idx": 4,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "Capri Leone Frazzanò",
+       "idx": 5,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "Rocca Longi",
+       "idx": 6,
+       "arr": "17.10",
+       "dep": "17.10"
+      },
+      {
+       "stop": "Torrenova Galati",
+       "idx": 7,
+       "arr": "17.30",
+       "dep": "17.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

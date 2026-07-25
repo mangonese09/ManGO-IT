@@ -1,0 +1,282 @@
+{
+ "operator": "Greco",
+ "route_id": "greco-greco-orari-p1",
+ "name": "Capolinea di Partenza Capolinea di Arrivo - Capolinea di Arrivo Capolinea di Partenza",
+ "source": "Greco__GRECO_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio DIVIETO DI FERMATA LUNGO LA S.S.115 - DIVIETO DI AMMETTERE PASSEGERI SUL TRATTO PALMA DI MONTECHIARO- VILLAGGIO CELONA E VV."
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Capolinea di Partenza Capolinea di Arrivo",
+    "Fermata intermedia Fermata intermedia",
+    "Fermata intermedia Fermata intermedia",
+    "Fermata intermedia Fermata intermedia",
+    "Fermata intermedia Fermata intermedia",
+    "Fermata intermedia Fermata intermedia",
+    "Fermata intermedia Fermata intermedia",
+    "Fermata intermedia Fermata intermedia",
+    "Capolinea di Arrivo Capolinea di Partenza"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "6.03",
+       "dep": "6.03"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 3,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 4,
+       "arr": "6.25",
+       "dep": "6.25"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 5,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 6,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 7,
+       "arr": "6.55",
+       "dep": "6.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "15.03",
+       "dep": "15.03"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 3,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 4,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 5,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 6,
+       "arr": "15.45",
+       "dep": "15.45"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 7,
+       "arr": "15.55",
+       "dep": "15.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Capolinea di Arrivo Capolinea di Partenza",
+       "idx": 8,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 7,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 6,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 5,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 4,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 3,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "7.48",
+       "dep": "7.48"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "7.52",
+       "dep": "7.52"
+      },
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Capolinea di Arrivo Capolinea di Partenza",
+       "idx": 8,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 7,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 6,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 5,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 4,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 3,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 2,
+       "arr": "16.48",
+       "dep": "16.48"
+      },
+      {
+       "stop": "Fermata intermedia Fermata intermedia",
+       "idx": 1,
+       "arr": "16.52",
+       "dep": "16.52"
+      },
+      {
+       "stop": "Capolinea di Partenza Capolinea di Arrivo",
+       "idx": 0,
+       "arr": "16.55",
+       "dep": "16.55"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,121 @@
+{
+ "operator": "Salvatore Lumia",
+ "route_id": "salvatorelumiasrl-lumia-orar-p10",
+ "name": "PORTO EMPEDOCLE PORTO EMPEDOCLE - PALERMO PALERMO",
+ "source": "SALVATORELUMIASRL__LUMIA_ORARI(1)/p010.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio DIVIETO DI SERVIZIO SUL TRATTO SICULIANA-PALERMO ESTREMI ESCLUSI"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "PORTO EMPEDOCLE PORTO EMPEDOCLE",
+    "PORTO EMPEDOCLE PORTO EMPEDOCLE",
+    "REALMONTE REALMONTE",
+    "SICULIANA SICULIANA",
+    "PALERMO PALERMO",
+    "PALERMO PALERMO"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "KMFERIALEPORTOEMPEDOCLE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PORTO EMPEDOCLE PORTO EMPEDOCLE",
+       "idx": 0,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "PORTO EMPEDOCLE PORTO EMPEDOCLE",
+       "idx": 1,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "REALMONTE REALMONTE",
+       "idx": 2,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "SICULIANA SICULIANA",
+       "idx": 3,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "PALERMO PALERMO",
+       "idx": 4,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "PALERMO PALERMO",
+       "idx": 5,
+       "arr": "9.15",
+       "dep": "9.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "KMFERIALEPORTOEMPEDOCLE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO PALERMO",
+       "idx": 5,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "PALERMO PALERMO",
+       "idx": 4,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "SICULIANA SICULIANA",
+       "idx": 3,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "REALMONTE REALMONTE",
+       "idx": 2,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "PORTO EMPEDOCLE PORTO EMPEDOCLE",
+       "idx": 1,
+       "arr": "17.05",
+       "dep": "17.05"
+      },
+      {
+       "stop": "PORTO EMPEDOCLE PORTO EMPEDOCLE",
+       "idx": 0,
+       "arr": "17.10",
+       "dep": "17.10"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

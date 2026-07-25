@@ -1,0 +1,270 @@
+{
+ "operator": "Interbus",
+ "route_id": "orari-interbus-p30",
+ "name": "Gagliano Castelferrato - Enna",
+ "source": "ORARI_INTERBUS/p030.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "GAGLIANO CASTELFERRATO P.zza Matteotti",
+    "Garibaldi AGIRA Circonvallazione Largo Fiera",
+    "A/19",
+    "NISSORIA (C.so Vitt. Emanuele/Chiesa S.Giuseppe)",
+    "LEONFORTE (C.so Umberto/Via IV Novembre)",
+    "ENNA BASSA",
+    "ENNA Viale Diaz/Terminal Bus"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "FERIALENELPERIODONONSCOLASTICO"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GAGLIANO CASTELFERRATO P.zza Matteotti",
+       "idx": 0,
+       "arr": "5.55",
+       "dep": "5.55"
+      },
+      {
+       "stop": "Garibaldi AGIRA Circonvallazione Largo Fiera",
+       "idx": 1,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "NISSORIA (C.so Vitt. Emanuele/Chiesa S.Giuseppe)",
+       "idx": 3,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "LEONFORTE (C.so Umberto/Via IV Novembre)",
+       "idx": 4,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "ENNA BASSA",
+       "idx": 5,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "ENNA Viale Diaz/Terminal Bus",
+       "idx": 6,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALENELPERIODOSCOLASTICO"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GAGLIANO CASTELFERRATO P.zza Matteotti",
+       "idx": 0,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "Garibaldi AGIRA Circonvallazione Largo Fiera",
+       "idx": 1,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "ENNA BASSA",
+       "idx": 5,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "ENNA Viale Diaz/Terminal Bus",
+       "idx": 6,
+       "arr": "7.35",
+       "dep": "7.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALENELPERIODOSCOLASTICO"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GAGLIANO CASTELFERRATO P.zza Matteotti",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Garibaldi AGIRA Circonvallazione Largo Fiera",
+       "idx": 1,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "NISSORIA (C.so Vitt. Emanuele/Chiesa S.Giuseppe)",
+       "idx": 3,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "LEONFORTE (C.so Umberto/Via IV Novembre)",
+       "idx": 4,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALENELPERIODOSCOLASTICO"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "LEONFORTE (C.so Umberto/Via IV Novembre)",
+       "idx": 4,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "NISSORIA (C.so Vitt. Emanuele/Chiesa S.Giuseppe)",
+       "idx": 3,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "Garibaldi AGIRA Circonvallazione Largo Fiera",
+       "idx": 1,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "GAGLIANO CASTELFERRATO P.zza Matteotti",
+       "idx": 0,
+       "arr": "14.35",
+       "dep": "14.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALENELPERIODOSCOLASTICO"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "ENNA Viale Diaz/Terminal Bus",
+       "idx": 6,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "ENNA BASSA",
+       "idx": 5,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "Garibaldi AGIRA Circonvallazione Largo Fiera",
+       "idx": 1,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "GAGLIANO CASTELFERRATO P.zza Matteotti",
+       "idx": 0,
+       "arr": "15.25",
+       "dep": "15.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "FERIALENELPERIODONONSCOLASTICO"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "ENNA Viale Diaz/Terminal Bus",
+       "idx": 6,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "ENNA BASSA",
+       "idx": 5,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "LEONFORTE (C.so Umberto/Via IV Novembre)",
+       "idx": 4,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "NISSORIA (C.so Vitt. Emanuele/Chiesa S.Giuseppe)",
+       "idx": 3,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "Garibaldi AGIRA Circonvallazione Largo Fiera",
+       "idx": 1,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "GAGLIANO CASTELFERRATO P.zza Matteotti",
+       "idx": 0,
+       "arr": "15.45",
+       "dep": "15.45"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

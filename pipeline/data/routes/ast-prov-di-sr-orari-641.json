@@ -1,0 +1,197 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-sr-orari-641",
+ "name": "Palazzolo - Catania",
+ "source": "AST_prov.di_SR_-_ORARI/p002.json",
+ "prescriptions": [
+  "Prescrizioni NESSUNA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Palazzolo (piazza Senatore Italia)",
+    "Buscemi (via Principe Umberto)",
+    "Buccheri (piazza Roma)",
+    "Pedagaggi",
+    "Carlentini (via Scavonetti)",
+    "Lentini (piazza dei Sofisti)",
+    "Aeroporto F. rossa",
+    "Catania (piazza Giovanni XXIII)"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Palazzolo (piazza Senatore Italia)",
+       "idx": 0,
+       "arr": "6.25",
+       "dep": "6.25"
+      },
+      {
+       "stop": "Buscemi (via Principe Umberto)",
+       "idx": 1,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "Buccheri (piazza Roma)",
+       "idx": 2,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Pedagaggi",
+       "idx": 3,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Carlentini (via Scavonetti)",
+       "idx": 4,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "Lentini (piazza dei Sofisti)",
+       "idx": 5,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "Aeroporto F. rossa",
+       "idx": 6,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "Catania (piazza Giovanni XXIII)",
+       "idx": 7,
+       "arr": "9.10",
+       "dep": "9.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALESCOALSTICA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Palazzolo (piazza Senatore Italia)",
+       "idx": 0,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Buccheri (piazza Roma)",
+       "idx": 2,
+       "arr": "15.10",
+       "dep": "15.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALESCOALSTICA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Buccheri (piazza Roma)",
+       "idx": 2,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Palazzolo (piazza Senatore Italia)",
+       "idx": 0,
+       "arr": "8.10",
+       "dep": "8.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Catania (piazza Giovanni XXIII)",
+       "idx": 7,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "Aeroporto F. rossa",
+       "idx": 6,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "Lentini (piazza dei Sofisti)",
+       "idx": 5,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "Carlentini (via Scavonetti)",
+       "idx": 4,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "Pedagaggi",
+       "idx": 3,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "Buccheri (piazza Roma)",
+       "idx": 2,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "Buscemi (via Principe Umberto)",
+       "idx": 1,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "Palazzolo (piazza Senatore Italia)",
+       "idx": 0,
+       "arr": "16.10",
+       "dep": "16.10"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

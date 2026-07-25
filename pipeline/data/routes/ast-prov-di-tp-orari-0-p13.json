@@ -1,0 +1,483 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-tp-orari-0-p13",
+ "name": "TRAPANI – Terminal piazzale Ilio - NUBIA via Libertà",
+ "source": "AST_prov._di_TP_-ORARI_0/p013.json",
+ "prescriptions": [
+  "Prescrizioni NESSUNA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "TRAPANI – Terminal piazzale Ilio",
+    "PACECO via Regina Margherita",
+    "NUBIA via Libertà"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEINVERNALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 0,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "PACECO via Regina Margherita",
+       "idx": 1,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "NUBIA via Libertà",
+       "idx": 2,
+       "arr": "7.10",
+       "dep": "7.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 0,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "PACECO via Regina Margherita",
+       "idx": 1,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "NUBIA via Libertà",
+       "idx": 2,
+       "arr": "7.25",
+       "dep": "7.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALESCOLASTICA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 0,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "PACECO via Regina Margherita",
+       "idx": 1,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALESCOLASTICA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 0,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "PACECO via Regina Margherita",
+       "idx": 1,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "NUBIA via Libertà",
+       "idx": 2,
+       "arr": "13.55",
+       "dep": "13.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALESCOLASTICA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 0,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "PACECO via Regina Margherita",
+       "idx": 1,
+       "arr": "13.45",
+       "dep": "13.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 0,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "PACECO via Regina Margherita",
+       "idx": 1,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "NUBIA via Libertà",
+       "idx": 2,
+       "arr": "14.05",
+       "dep": "14.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEINVERNALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "NUBIA via Libertà",
+       "idx": 2,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "PACECO via Regina Margherita",
+       "idx": 1,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 0,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALESCOLASTICA(periodoorasolare)"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PACECO via Regina Margherita",
+       "idx": 1,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 0,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "NUBIA via Libertà",
+       "idx": 2,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "PACECO via Regina Margherita",
+       "idx": 1,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 0,
+       "arr": "8.15",
+       "dep": "8.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4R",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "SCFOELRAIASLTEICAesclusosabato"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PACECO via Regina Margherita",
+       "idx": 1,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 0,
+       "arr": "8.20",
+       "dep": "8.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALESCOLASTICA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PACECO via Regina Margherita",
+       "idx": 1,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 0,
+       "arr": "8.20",
+       "dep": "8.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "NUBIA via Libertà",
+       "idx": 2,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "PACECO via Regina Margherita",
+       "idx": 1,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 0,
+       "arr": "14.50",
+       "dep": "14.50"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "TRAPANI – Terminal piazzale Ilio",
+    "PACECO via Regina Margherita",
+    "NUBIA via Libertà"
+   ],
+   "trips": [
+    {
+     "corsa": "7A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEINVERNALE(periodoorasolare)"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 0,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "PACECO via Regina Margherita",
+       "idx": 1,
+       "arr": "13.50",
+       "dep": "13.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEINVERNALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "PACECO via Regina Margherita",
+       "idx": 1,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "NUBIA via Libertà",
+       "idx": 2,
+       "arr": "15.00",
+       "dep": "15.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEINVERNALE(periodoorasolare)"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 0,
+       "arr": "20.30",
+       "dep": "20.30"
+      },
+      {
+       "stop": "PACECO via Regina Margherita",
+       "idx": 1,
+       "arr": "20.50",
+       "dep": "20.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEINVERNALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "NUBIA via Libertà",
+       "idx": 2,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "PACECO via Regina Margherita",
+       "idx": 1,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 0,
+       "arr": "15.40",
+       "dep": "15.40"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

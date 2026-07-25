@@ -1,0 +1,300 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-rg-orari-p15",
+ "name": "Pozzallo p. - Modica",
+ "source": "AST_prov._di_RG_-_ORARI/p015.json",
+ "prescriptions": [
+  "Prescrizioni"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Pozzallo p.(P.za Marinai d'Italia) Capolinea",
+    "Sampieri (rotatoria)",
+    "Marina di Modica (corso Mediterraneo)",
+    "Modica (P.za Borsellino)"
+   ],
+   "trips": [
+    {
+     "corsa": "6R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Pozzallo p.(P.za Marinai d'Italia) Capolinea",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Marina di Modica (corso Mediterraneo)",
+       "idx": 2,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "Modica (P.za Borsellino)",
+       "idx": 3,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Sampieri (rotatoria)",
+       "idx": 1,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "Marina di Modica (corso Mediterraneo)",
+       "idx": 2,
+       "arr": "10.10",
+       "dep": "10.10"
+      },
+      {
+       "stop": "Modica (P.za Borsellino)",
+       "idx": 3,
+       "arr": "10.50",
+       "dep": "10.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Sampieri (rotatoria)",
+       "idx": 1,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "Marina di Modica (corso Mediterraneo)",
+       "idx": 2,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "Modica (P.za Borsellino)",
+       "idx": 3,
+       "arr": "13.50",
+       "dep": "13.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Pozzallo p.(P.za Marinai d'Italia) Capolinea",
+       "idx": 0,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "Marina di Modica (corso Mediterraneo)",
+       "idx": 2,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "Modica (P.za Borsellino)",
+       "idx": 3,
+       "arr": "15.50",
+       "dep": "15.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Sampieri (rotatoria)",
+       "idx": 1,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "Marina di Modica (corso Mediterraneo)",
+       "idx": 2,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "Modica (P.za Borsellino)",
+       "idx": 3,
+       "arr": "20.40",
+       "dep": "20.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Modica (P.za Borsellino)",
+       "idx": 3,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "Marina di Modica (corso Mediterraneo)",
+       "idx": 2,
+       "arr": "9.40",
+       "dep": "9.40"
+      },
+      {
+       "stop": "Sampieri (rotatoria)",
+       "idx": 1,
+       "arr": "9.55",
+       "dep": "9.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Modica (P.za Borsellino)",
+       "idx": 3,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "Marina di Modica (corso Mediterraneo)",
+       "idx": 2,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "Sampieri (rotatoria)",
+       "idx": 1,
+       "arr": "12.55",
+       "dep": "12.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Modica (P.za Borsellino)",
+       "idx": 3,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "Marina di Modica (corso Mediterraneo)",
+       "idx": 2,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Pozzallo p.(P.za Marinai d'Italia) Capolinea",
+       "idx": 0,
+       "arr": "14.50",
+       "dep": "14.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Modica (P.za Borsellino)",
+       "idx": 3,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "Marina di Modica (corso Mediterraneo)",
+       "idx": 2,
+       "arr": "19.25",
+       "dep": "19.25"
+      },
+      {
+       "stop": "Sampieri (rotatoria)",
+       "idx": 1,
+       "arr": "19.40",
+       "dep": "19.40"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

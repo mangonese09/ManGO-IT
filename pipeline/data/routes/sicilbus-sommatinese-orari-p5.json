@@ -1,0 +1,93 @@
+{
+ "operator": "Sicilbus",
+ "route_id": "sicilbus-sommatinese-orari-p5",
+ "name": "orario - orario",
+ "source": "SICILBUS__SOMMATINESE_ORARI/p005.json",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "orario",
+    "orario",
+    "orario",
+    "orario"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "KMSTAZIONAMENTIGIORNALIERA0,00"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "orario",
+       "idx": 0,
+       "arr": "08.00",
+       "dep": "08.00"
+      },
+      {
+       "stop": "orario",
+       "idx": 1,
+       "arr": "08.15",
+       "dep": "08.15"
+      },
+      {
+       "stop": "orario",
+       "idx": 2,
+       "arr": "09.05",
+       "dep": "09.05"
+      },
+      {
+       "stop": "orario",
+       "idx": 3,
+       "arr": "09.25",
+       "dep": "09.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "KMGIORNALIERA60,40"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "orario",
+       "idx": 3,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "orario",
+       "idx": 2,
+       "arr": "18.20",
+       "dep": "18.20"
+      },
+      {
+       "stop": "orario",
+       "idx": 1,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "orario",
+       "idx": 0,
+       "arr": "19.25",
+       "dep": "19.25"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

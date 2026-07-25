@@ -1,0 +1,58 @@
+{
+ "operator": "Sommatinese Viaggi",
+ "route_id": "sommatineseviaggi-sommatines-p2",
+ "name": "Gratteri - Palermo",
+ "source": "SommatineseViaggi__SOMMATINESE_ORARI/p002.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Gratteri (Piazza Umberto) Gratteri (Piazza Umberto)",
+    "Lascari (via A. De Gasperi 46/A) Lascari (via A. De Gasperi 46/A)",
+    "Termini Imerese (Porta Palermo) Termini Imerese (Porta Palermo)",
+    "Palermo ( Viale dei Picciotti ) Palermo ( Viale dei Picciotti )"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "STAZIONAMENTIKMGIORNALIERAFERIALEorario0,0Gratteri(PiazzaUmberto)GratteriSP28SP28orario12,3Lascari(viaA.DeGasperi46/A)La"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Gratteri (Piazza Umberto) Gratteri (Piazza Umberto)",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Lascari (via A. De Gasperi 46/A) Lascari (via A. De Gasperi 46/A)",
+       "idx": 1,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Termini Imerese (Porta Palermo) Termini Imerese (Porta Palermo)",
+       "idx": 2,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "Palermo ( Viale dei Picciotti ) Palermo ( Viale dei Picciotti )",
+       "idx": 3,
+       "arr": "9.00",
+       "dep": "9.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

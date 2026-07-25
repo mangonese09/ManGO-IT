@@ -1,0 +1,760 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-sr-orari-p15",
+ "name": "Buccheri - Siracusa",
+ "source": "AST_prov.di_SR_-_ORARI/p015.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizi"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Buccheri (piazza Roma)",
+    "9 Fermata intermedia",
+    "Fermata intermedia",
+    "Palazzolo A. (piazza Senatore Italia)",
+    "Fermata intermedia diretta",
+    "Casa circondariale",
+    "Siracusa (via Rubino)"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Fermata intermedia",
+       "idx": 2,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "Fermata intermedia diretta",
+       "idx": 4,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 6,
+       "arr": "7.05",
+       "dep": "7.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Fermata intermedia",
+       "idx": 2,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "Fermata intermedia diretta",
+       "idx": 4,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 6,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialescolastic"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Fermata intermedia diretta",
+       "idx": 4,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 6,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Buccheri (piazza Roma)",
+       "idx": 0,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "9 Fermata intermedia",
+       "idx": 1,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 2,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 6,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Buccheri (piazza Roma)",
+       "idx": 0,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "9 Fermata intermedia",
+       "idx": 1,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 2,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "Fermata intermedia diretta",
+       "idx": 4,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 6,
+       "arr": "8.55",
+       "dep": "8.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Fermata intermedia",
+       "idx": 2,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "Fermata intermedia diretta",
+       "idx": 4,
+       "arr": "8.50",
+       "dep": "8.50"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 6,
+       "arr": "9.30",
+       "dep": "9.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Fermata intermedia",
+       "idx": 2,
+       "arr": "11.20",
+       "dep": "11.20"
+      },
+      {
+       "stop": "Fermata intermedia diretta",
+       "idx": 4,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "Casa circondariale",
+       "idx": 5,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 6,
+       "arr": "12.35",
+       "dep": "12.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Fermata intermedia",
+       "idx": 2,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "Fermata intermedia diretta",
+       "idx": 4,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "Casa circondariale",
+       "idx": 5,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 6,
+       "arr": "14.35",
+       "dep": "14.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Fermata intermedia",
+       "idx": 2,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Fermata intermedia diretta",
+       "idx": 4,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "Casa circondariale",
+       "idx": 5,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 6,
+       "arr": "15.45",
+       "dep": "15.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "13A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialescolastic"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Fermata intermedia",
+       "idx": 2,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "Fermata intermedia diretta",
+       "idx": 4,
+       "arr": "14.50",
+       "dep": "14.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Fermata intermedia",
+       "idx": 2,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "Fermata intermedia diretta",
+       "idx": 4,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "Casa circondariale",
+       "idx": 5,
+       "arr": "18.15",
+       "dep": "18.15"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 6,
+       "arr": "18.45",
+       "dep": "18.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "14R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialescolastic"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Fermata intermedia diretta",
+       "idx": 4,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 2,
+       "arr": "8.10",
+       "dep": "8.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 6,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "Casa circondariale",
+       "idx": 5,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "Fermata intermedia diretta",
+       "idx": 4,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 2,
+       "arr": "10.15",
+       "dep": "10.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 6,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "Fermata intermedia diretta",
+       "idx": 4,
+       "arr": "11.40",
+       "dep": "11.40"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 2,
+       "arr": "12.10",
+       "dep": "12.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 6,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "Casa circondariale",
+       "idx": 5,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "Fermata intermedia diretta",
+       "idx": 4,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 2,
+       "arr": "13.15",
+       "dep": "13.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 6,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "Fermata intermedia diretta",
+       "idx": 4,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 2,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "9 Fermata intermedia",
+       "idx": 1,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "Buccheri (piazza Roma)",
+       "idx": 0,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialescolastic"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 6,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "Fermata intermedia diretta",
+       "idx": 4,
+       "arr": "14.40",
+       "dep": "14.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 6,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "Casa circondariale",
+       "idx": 5,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "Fermata intermedia diretta",
+       "idx": 4,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 6,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 2,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "9 Fermata intermedia",
+       "idx": 1,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "Buccheri (piazza Roma)",
+       "idx": 0,
+       "arr": "15.30",
+       "dep": "15.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 6,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "Casa circondariale",
+       "idx": 5,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "Fermata intermedia diretta",
+       "idx": 4,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 2,
+       "arr": "16.45",
+       "dep": "16.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 6,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "Fermata intermedia diretta",
+       "idx": 4,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 2,
+       "arr": "18.40",
+       "dep": "18.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "15R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 6,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "Fermata intermedia diretta",
+       "idx": 4,
+       "arr": "20.10",
+       "dep": "20.10"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 2,
+       "arr": "20.40",
+       "dep": "20.40"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

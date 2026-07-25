@@ -1,0 +1,292 @@
+{
+ "operator": "Sommatinese Viaggi",
+ "route_id": "sommatineseviaggi-sommatines-p4",
+ "name": "orario - SP 15",
+ "source": "SommatineseViaggi__SOMMATINESE_ORARI/p004.json",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "orario",
+    "orario",
+    "orario",
+    "orario",
+    "orario",
+    "orario",
+    "SP 54 bis",
+    "SP 15 Bv SP 54 bis",
+    "SP 15"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "orario",
+       "idx": 0,
+       "arr": "09.00",
+       "dep": "09.00"
+      },
+      {
+       "stop": "orario",
+       "idx": 1,
+       "arr": "09.05",
+       "dep": "09.05"
+      },
+      {
+       "stop": "orario",
+       "idx": 2,
+       "arr": "09.07",
+       "dep": "09.07"
+      },
+      {
+       "stop": "orario",
+       "idx": 3,
+       "arr": "09.11",
+       "dep": "09.11"
+      },
+      {
+       "stop": "orario",
+       "idx": 4,
+       "arr": "09.15",
+       "dep": "09.15"
+      },
+      {
+       "stop": "orario",
+       "idx": 5,
+       "arr": "09.22",
+       "dep": "09.22"
+      },
+      {
+       "stop": "SP 54 bis",
+       "idx": 6,
+       "arr": "09.24",
+       "dep": "09.24"
+      },
+      {
+       "stop": "SP 15 Bv SP 54 bis",
+       "idx": 7,
+       "arr": "09.28",
+       "dep": "09.28"
+      },
+      {
+       "stop": "SP 15",
+       "idx": 8,
+       "arr": "09.30",
+       "dep": "09.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "orario",
+       "idx": 0,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "orario",
+       "idx": 1,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "orario",
+       "idx": 2,
+       "arr": "14.17",
+       "dep": "14.17"
+      },
+      {
+       "stop": "orario",
+       "idx": 3,
+       "arr": "14.21",
+       "dep": "14.21"
+      },
+      {
+       "stop": "orario",
+       "idx": 4,
+       "arr": "14.26",
+       "dep": "14.26"
+      },
+      {
+       "stop": "orario",
+       "idx": 5,
+       "arr": "14.32",
+       "dep": "14.32"
+      },
+      {
+       "stop": "SP 54 bis",
+       "idx": 6,
+       "arr": "14.34",
+       "dep": "14.34"
+      },
+      {
+       "stop": "SP 15 Bv SP 54 bis",
+       "idx": 7,
+       "arr": "14.38",
+       "dep": "14.38"
+      },
+      {
+       "stop": "SP 15",
+       "idx": 8,
+       "arr": "14.40",
+       "dep": "14.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "SP 15",
+       "idx": 8,
+       "arr": "07.30",
+       "dep": "07.30"
+      },
+      {
+       "stop": "SP 15 Bv SP 54 bis",
+       "idx": 7,
+       "arr": "07.32",
+       "dep": "07.32"
+      },
+      {
+       "stop": "SP 54 bis",
+       "idx": 6,
+       "arr": "07.36",
+       "dep": "07.36"
+      },
+      {
+       "stop": "orario",
+       "idx": 5,
+       "arr": "07.38",
+       "dep": "07.38"
+      },
+      {
+       "stop": "orario",
+       "idx": 4,
+       "arr": "07.45",
+       "dep": "07.45"
+      },
+      {
+       "stop": "orario",
+       "idx": 3,
+       "arr": "07.49",
+       "dep": "07.49"
+      },
+      {
+       "stop": "orario",
+       "idx": 2,
+       "arr": "07.53",
+       "dep": "07.53"
+      },
+      {
+       "stop": "orario",
+       "idx": 1,
+       "arr": "07.55",
+       "dep": "07.55"
+      },
+      {
+       "stop": "orario",
+       "idx": 0,
+       "arr": "08.00",
+       "dep": "08.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "SP 15",
+       "idx": 8,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "SP 15 Bv SP 54 bis",
+       "idx": 7,
+       "arr": "16.32",
+       "dep": "16.32"
+      },
+      {
+       "stop": "SP 54 bis",
+       "idx": 6,
+       "arr": "16.36",
+       "dep": "16.36"
+      },
+      {
+       "stop": "orario",
+       "idx": 5,
+       "arr": "16.38",
+       "dep": "16.38"
+      },
+      {
+       "stop": "orario",
+       "idx": 4,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "orario",
+       "idx": 3,
+       "arr": "16.49",
+       "dep": "16.49"
+      },
+      {
+       "stop": "orario",
+       "idx": 2,
+       "arr": "16.53",
+       "dep": "16.53"
+      },
+      {
+       "stop": "orario",
+       "idx": 1,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "orario",
+       "idx": 0,
+       "arr": "17.00",
+       "dep": "17.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

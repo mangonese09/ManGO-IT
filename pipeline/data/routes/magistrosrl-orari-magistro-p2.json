@@ -1,0 +1,405 @@
+{
+ "operator": "Magistro",
+ "route_id": "magistrosrl-orari-magistro-p2",
+ "name": "DI B. - D'ORLANDO",
+ "source": "MAGISTROSRL__ORARI_MAGISTRO/p002.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio",
+  "Divieto di servizio locale, estremi compresi, tra Bv. S.Angelo di Brolo e Capo D 'Orlando"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "DI B.(V.S. Francesco) S.ANGELO DI B.(V.S. Francesco)",
+    "CALABRO'",
+    "SALINA'",
+    "(Via Mendola) FIUMARA (Via Mendola)",
+    "S.ANGELO S.S. 113 BIVIO S.ANGELO S.S. 114",
+    "BROLO Staz. F.S. BIVIO BROLO Staz. F.S.",
+    "NASO PONTE NASO",
+    "SCAFA",
+    "D'ORLANDO(Staz. F.S.) CAPO D'ORLANDO(Staz. F.S.)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "DI B.(V.S. Francesco) S.ANGELO DI B.(V.S. Francesco)",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "CALABRO'",
+       "idx": 1,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "SALINA'",
+       "idx": 2,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "(Via Mendola) FIUMARA (Via Mendola)",
+       "idx": 3,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "S.ANGELO S.S. 113 BIVIO S.ANGELO S.S. 114",
+       "idx": 4,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "BROLO Staz. F.S. BIVIO BROLO Staz. F.S.",
+       "idx": 5,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "NASO PONTE NASO",
+       "idx": 6,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "SCAFA",
+       "idx": 7,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "D'ORLANDO(Staz. F.S.) CAPO D'ORLANDO(Staz. F.S.)",
+       "idx": 8,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "DI B.(V.S. Francesco) S.ANGELO DI B.(V.S. Francesco)",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "CALABRO'",
+       "idx": 1,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "SALINA'",
+       "idx": 2,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "(Via Mendola) FIUMARA (Via Mendola)",
+       "idx": 3,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "S.ANGELO S.S. 113 BIVIO S.ANGELO S.S. 114",
+       "idx": 4,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "BROLO Staz. F.S. BIVIO BROLO Staz. F.S.",
+       "idx": 5,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "NASO PONTE NASO",
+       "idx": 6,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "SCAFA",
+       "idx": 7,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "D'ORLANDO(Staz. F.S.) CAPO D'ORLANDO(Staz. F.S.)",
+       "idx": 8,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SALINA'",
+       "idx": 2,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "(Via Mendola) FIUMARA (Via Mendola)",
+       "idx": 3,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "S.ANGELO S.S. 113 BIVIO S.ANGELO S.S. 114",
+       "idx": 4,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "BROLO Staz. F.S. BIVIO BROLO Staz. F.S.",
+       "idx": 5,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "NASO PONTE NASO",
+       "idx": 6,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "SCAFA",
+       "idx": 7,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "D'ORLANDO(Staz. F.S.) CAPO D'ORLANDO(Staz. F.S.)",
+       "idx": 8,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "D'ORLANDO(Staz. F.S.) CAPO D'ORLANDO(Staz. F.S.)",
+       "idx": 8,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "SCAFA",
+       "idx": 7,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "NASO PONTE NASO",
+       "idx": 6,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "BROLO Staz. F.S. BIVIO BROLO Staz. F.S.",
+       "idx": 5,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "S.ANGELO S.S. 113 BIVIO S.ANGELO S.S. 114",
+       "idx": 4,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "(Via Mendola) FIUMARA (Via Mendola)",
+       "idx": 3,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "SALINA'",
+       "idx": 2,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "CALABRO'",
+       "idx": 1,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "DI B.(V.S. Francesco) S.ANGELO DI B.(V.S. Francesco)",
+       "idx": 0,
+       "arr": "14.30",
+       "dep": "14.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "D'ORLANDO(Staz. F.S.) CAPO D'ORLANDO(Staz. F.S.)",
+       "idx": 8,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "SCAFA",
+       "idx": 7,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "NASO PONTE NASO",
+       "idx": 6,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "BROLO Staz. F.S. BIVIO BROLO Staz. F.S.",
+       "idx": 5,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "S.ANGELO S.S. 113 BIVIO S.ANGELO S.S. 114",
+       "idx": 4,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "(Via Mendola) FIUMARA (Via Mendola)",
+       "idx": 3,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "SALINA'",
+       "idx": 2,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "CALABRO'",
+       "idx": 1,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "DI B.(V.S. Francesco) S.ANGELO DI B.(V.S. Francesco)",
+       "idx": 0,
+       "arr": "14.30",
+       "dep": "14.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "D'ORLANDO(Staz. F.S.) CAPO D'ORLANDO(Staz. F.S.)",
+       "idx": 8,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "SCAFA",
+       "idx": 7,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "NASO PONTE NASO",
+       "idx": 6,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "BROLO Staz. F.S. BIVIO BROLO Staz. F.S.",
+       "idx": 5,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "S.ANGELO S.S. 113 BIVIO S.ANGELO S.S. 114",
+       "idx": 4,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "(Via Mendola) FIUMARA (Via Mendola)",
+       "idx": 3,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "SALINA'",
+       "idx": 2,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

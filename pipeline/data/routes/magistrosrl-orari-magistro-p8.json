@@ -1,0 +1,122 @@
+{
+ "operator": "Magistro",
+ "route_id": "magistrosrl-orari-magistro-p8",
+ "name": "PIRAINO - ) PATTI",
+ "source": "MAGISTROSRL__ORARI_MAGISTRO/p008.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio",
+  "Divieto di servizio locale sul tratto Bv. SS. 113 - Patti e viceversa, estremi compresi"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "PIRAINO (Centro)",
+    "BIVIO PIRAINO",
+    "SALINA'",
+    "BIVIO S.S. 113",
+    "ZAPPARDINO",
+    ") PATTI(P.zza Marconi,Terminal"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALENELPERIODO11/09AL14/06"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PIRAINO (Centro)",
+       "idx": 0,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "BIVIO PIRAINO",
+       "idx": 1,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "SALINA'",
+       "idx": 2,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "BIVIO S.S. 113",
+       "idx": 3,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "ZAPPARDINO",
+       "idx": 4,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": ") PATTI(P.zza Marconi,Terminal",
+       "idx": 5,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALENELPERIODO11/09AL14/06"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PIRAINO (Centro)",
+       "idx": 0,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "BIVIO PIRAINO",
+       "idx": 1,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "SALINA'",
+       "idx": 2,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "BIVIO S.S. 113",
+       "idx": 3,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "ZAPPARDINO",
+       "idx": 4,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": ") PATTI(P.zza Marconi,Terminal",
+       "idx": 5,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

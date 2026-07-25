@@ -1,0 +1,318 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-pa-orari-694",
+ "name": "Castelbuono via Geraci - Cefalù Stazione FS",
+ "source": "AST_prov._di_PA_-_ORARI/p008.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Castelbuono via Geraci",
+    "Isnello pzz.a Peppino Impastato",
+    "Collesano via Mazzini",
+    "Campofelice di Roccella v. della Provincia",
+    "Cefalù Stazione FS"
+   ],
+   "trips": [
+    {
+     "corsa": "4A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ferialescolastica"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Campofelice di Roccella v. della Provincia",
+       "idx": 3,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Cefalù Stazione FS",
+       "idx": 4,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Castelbuono via Geraci",
+       "idx": 0,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "Isnello pzz.a Peppino Impastato",
+       "idx": 1,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "Collesano via Mazzini",
+       "idx": 2,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "Campofelice di Roccella v. della Provincia",
+       "idx": 3,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "Cefalù Stazione FS",
+       "idx": 4,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Castelbuono via Geraci",
+       "idx": 0,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "Isnello pzz.a Peppino Impastato",
+       "idx": 1,
+       "arr": "8.35",
+       "dep": "8.35"
+      },
+      {
+       "stop": "Collesano via Mazzini",
+       "idx": 2,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "Campofelice di Roccella v. della Provincia",
+       "idx": 3,
+       "arr": "9.25",
+       "dep": "9.25"
+      },
+      {
+       "stop": "Cefalù Stazione FS",
+       "idx": 4,
+       "arr": "9.50",
+       "dep": "9.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ferialescolastica"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Castelbuono via Geraci",
+       "idx": 0,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "Isnello pzz.a Peppino Impastato",
+       "idx": 1,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "Collesano via Mazzini",
+       "idx": 2,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "Campofelice di Roccella v. della Provincia",
+       "idx": 3,
+       "arr": "13.50",
+       "dep": "13.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ferialescolastica"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Campofelice di Roccella v. della Provincia",
+       "idx": 3,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "Collesano via Mazzini",
+       "idx": 2,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "Isnello pzz.a Peppino Impastato",
+       "idx": 1,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Castelbuono via Geraci",
+       "idx": 0,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Cefalù Stazione FS",
+       "idx": 4,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "Campofelice di Roccella v. della Provincia",
+       "idx": 3,
+       "arr": "11.25",
+       "dep": "11.25"
+      },
+      {
+       "stop": "Collesano via Mazzini",
+       "idx": 2,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "Isnello pzz.a Peppino Impastato",
+       "idx": 1,
+       "arr": "12.15",
+       "dep": "12.15"
+      },
+      {
+       "stop": "Castelbuono via Geraci",
+       "idx": 0,
+       "arr": "12.35",
+       "dep": "12.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ferialescolastica"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Cefalù Stazione FS",
+       "idx": 4,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "Campofelice di Roccella v. della Provincia",
+       "idx": 3,
+       "arr": "13.40",
+       "dep": "13.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Cefalù Stazione FS",
+       "idx": 4,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Campofelice di Roccella v. della Provincia",
+       "idx": 3,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "Collesano via Mazzini",
+       "idx": 2,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "Isnello pzz.a Peppino Impastato",
+       "idx": 1,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "Castelbuono via Geraci",
+       "idx": 0,
+       "arr": "15.50",
+       "dep": "15.50"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

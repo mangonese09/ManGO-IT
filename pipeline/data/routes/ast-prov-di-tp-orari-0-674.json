@@ -1,0 +1,51 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-tp-orari-0-674",
+ "name": "SALAPARUTA via Reg. Siciliana - SCIACCA scuole di C.da Perriera",
+ "source": "AST_prov._di_TP_-ORARI_0/p007.json",
+ "prescriptions": [
+  "Prescrizioni NESSUNA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "SALAPARUTA via Reg. Siciliana",
+    "POGGIOREALE via Ximenes",
+    "SCIACCA scuole di C.da Perriera"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "KMscolastica"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SALAPARUTA via Reg. Siciliana",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "POGGIOREALE via Ximenes",
+       "idx": 1,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "SCIACCA scuole di C.da Perriera",
+       "idx": 2,
+       "arr": "8.15",
+       "dep": "8.15"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

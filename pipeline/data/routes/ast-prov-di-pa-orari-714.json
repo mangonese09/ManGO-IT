@@ -1,0 +1,935 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-pa-orari-714",
+ "name": "Roccamena piazza Papa Giovanni XIII - Palermo via Brasa",
+ "source": "AST_prov._di_PA_-_ORARI/p025.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Roccamena piazza Papa Giovanni XIII",
+    "Camporeale piazza Scaduto",
+    "S. Cipirello via Roma",
+    "S. Giuseppe corso Umberto",
+    "Pioppo via Provinciale",
+    "Monreale via De Gasperi",
+    "Palermo via Brasa"
+   ],
+   "trips": [
+    {
+     "corsa": "9A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "S. Cipirello via Roma",
+       "idx": 2,
+       "arr": "5.25",
+       "dep": "5.25"
+      },
+      {
+       "stop": "S. Giuseppe corso Umberto",
+       "idx": 3,
+       "arr": "5.35",
+       "dep": "5.35"
+      },
+      {
+       "stop": "Pioppo via Provinciale",
+       "idx": 4,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "Monreale via De Gasperi",
+       "idx": 5,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 6,
+       "arr": "6.50",
+       "dep": "6.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Camporeale piazza Scaduto",
+       "idx": 1,
+       "arr": "5.50",
+       "dep": "5.50"
+      },
+      {
+       "stop": "S. Cipirello via Roma",
+       "idx": 2,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "S. Giuseppe corso Umberto",
+       "idx": 3,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 6,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialescolastic"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "S. Cipirello via Roma",
+       "idx": 2,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "S. Giuseppe corso Umberto",
+       "idx": 3,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 6,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialescolastic"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "S. Cipirello via Roma",
+       "idx": 2,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "S. Giuseppe corso Umberto",
+       "idx": 3,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "Pioppo via Provinciale",
+       "idx": 4,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 6,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Roccamena piazza Papa Giovanni XIII",
+       "idx": 0,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "S. Cipirello via Roma",
+       "idx": 2,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "S. Giuseppe corso Umberto",
+       "idx": 3,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 6,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Camporeale piazza Scaduto",
+       "idx": 1,
+       "arr": "6.25",
+       "dep": "6.25"
+      },
+      {
+       "stop": "S. Cipirello via Roma",
+       "idx": 2,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "S. Giuseppe corso Umberto",
+       "idx": 3,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Pioppo via Provinciale",
+       "idx": 4,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Monreale via De Gasperi",
+       "idx": 5,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 6,
+       "arr": "8.55",
+       "dep": "8.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeestiva"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "S. Cipirello via Roma",
+       "idx": 2,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "S. Giuseppe corso Umberto",
+       "idx": 3,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 6,
+       "arr": "9.00",
+       "dep": "9.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "S. Cipirello via Roma",
+       "idx": 2,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "S. Giuseppe corso Umberto",
+       "idx": 3,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "Pioppo via Provinciale",
+       "idx": 4,
+       "arr": "9.40",
+       "dep": "9.40"
+      },
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 6,
+       "arr": "10.15",
+       "dep": "10.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Roccamena piazza Papa Giovanni XIII",
+       "idx": 0,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "Camporeale piazza Scaduto",
+       "idx": 1,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "S. Cipirello via Roma",
+       "idx": 2,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "S. Giuseppe corso Umberto",
+       "idx": 3,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "Pioppo via Provinciale",
+       "idx": 4,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 6,
+       "arr": "12.15",
+       "dep": "12.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "S. Cipirello via Roma",
+       "idx": 2,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "S. Giuseppe corso Umberto",
+       "idx": 3,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Pioppo via Provinciale",
+       "idx": 4,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 6,
+       "arr": "14.50",
+       "dep": "14.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "S. Cipirello via Roma",
+       "idx": 2,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "S. Giuseppe corso Umberto",
+       "idx": 3,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "Pioppo via Provinciale",
+       "idx": 4,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 6,
+       "arr": "16.50",
+       "dep": "16.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Roccamena piazza Papa Giovanni XIII",
+       "idx": 0,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "Camporeale piazza Scaduto",
+       "idx": 1,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "S. Cipirello via Roma",
+       "idx": 2,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "S. Giuseppe corso Umberto",
+       "idx": 3,
+       "arr": "17.40",
+       "dep": "17.40"
+      },
+      {
+       "stop": "Pioppo via Provinciale",
+       "idx": 4,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 6,
+       "arr": "18.45",
+       "dep": "18.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "15R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 6,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "Monreale via De Gasperi",
+       "idx": 5,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "Pioppo via Provinciale",
+       "idx": 4,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "S. Giuseppe corso Umberto",
+       "idx": 3,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "S. Cipirello via Roma",
+       "idx": 2,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "Camporeale piazza Scaduto",
+       "idx": 1,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "Roccamena piazza Papa Giovanni XIII",
+       "idx": 0,
+       "arr": "9.30",
+       "dep": "9.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "21R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 6,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "S. Giuseppe corso Umberto",
+       "idx": 3,
+       "arr": "9.50",
+       "dep": "9.50"
+      },
+      {
+       "stop": "S. Cipirello via Roma",
+       "idx": 2,
+       "arr": "10.00",
+       "dep": "10.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "19R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 6,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "Pioppo via Provinciale",
+       "idx": 4,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "S. Giuseppe corso Umberto",
+       "idx": 3,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "S. Cipirello via Roma",
+       "idx": 2,
+       "arr": "12.15",
+       "dep": "12.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "23R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialescolastic"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 6,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "Monreale via De Gasperi",
+       "idx": 5,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "Pioppo via Provinciale",
+       "idx": 4,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "S. Giuseppe corso Umberto",
+       "idx": 3,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "S. Cipirello via Roma",
+       "idx": 2,
+       "arr": "14.00",
+       "dep": "14.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "17R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 6,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "S. Giuseppe corso Umberto",
+       "idx": 3,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "S. Cipirello via Roma",
+       "idx": 2,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Camporeale piazza Scaduto",
+       "idx": 1,
+       "arr": "14.40",
+       "dep": "14.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "18R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 6,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "Pioppo via Provinciale",
+       "idx": 4,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "S. Giuseppe corso Umberto",
+       "idx": 3,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "S. Cipirello via Roma",
+       "idx": 2,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "22R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 6,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "S. Giuseppe corso Umberto",
+       "idx": 3,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "S. Cipirello via Roma",
+       "idx": 2,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "16R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 6,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Pioppo via Provinciale",
+       "idx": 4,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "S. Giuseppe corso Umberto",
+       "idx": 3,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "S. Cipirello via Roma",
+       "idx": 2,
+       "arr": "15.45",
+       "dep": "15.45"
+      },
+      {
+       "stop": "Camporeale piazza Scaduto",
+       "idx": 1,
+       "arr": "16.25",
+       "dep": "16.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "14R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 6,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "Pioppo via Provinciale",
+       "idx": 4,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "S. Giuseppe corso Umberto",
+       "idx": 3,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "S. Cipirello via Roma",
+       "idx": 2,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "Roccamena piazza Papa Giovanni XIII",
+       "idx": 0,
+       "arr": "17.00",
+       "dep": "17.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "20R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 6,
+       "arr": "17.15",
+       "dep": "17.15"
+      },
+      {
+       "stop": "Pioppo via Provinciale",
+       "idx": 4,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "S. Giuseppe corso Umberto",
+       "idx": 3,
+       "arr": "18.20",
+       "dep": "18.20"
+      },
+      {
+       "stop": "S. Cipirello via Roma",
+       "idx": 2,
+       "arr": "18.30",
+       "dep": "18.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "13R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Palermo via Brasa",
+       "idx": 6,
+       "arr": "19.15",
+       "dep": "19.15"
+      },
+      {
+       "stop": "S. Giuseppe corso Umberto",
+       "idx": 3,
+       "arr": "20.05",
+       "dep": "20.05"
+      },
+      {
+       "stop": "S. Cipirello via Roma",
+       "idx": 2,
+       "arr": "20.15",
+       "dep": "20.15"
+      },
+      {
+       "stop": "Camporeale piazza Scaduto",
+       "idx": 1,
+       "arr": "20.55",
+       "dep": "20.55"
+      },
+      {
+       "stop": "Roccamena piazza Papa Giovanni XIII",
+       "idx": 0,
+       "arr": "21.30",
+       "dep": "21.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

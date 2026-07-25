@@ -1,0 +1,188 @@
+{
+ "operator": "F.lli Patti",
+ "route_id": "patti-f-lli-patti-orari-p5",
+ "name": "Unknown route",
+ "source": "patti__F.LLI_PATTI_ORARI/p005.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio DIVIETO DI CARICO ARAGONA PER C.DA CONSOLIDA E VICEVERSA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "(V.LE ALDO MORO N° 75 VILLA COMUNALE)",
+    "FAVARA V.LE CHE GUEVARA SCUOLE) *",
+    "FAVARA (VIA S. ANGELO N° 1)",
+    "VILL. MOSE' (V.LE L. SCIASCIA N° 67)",
+    "VILL. LA LOGGIA (IST. CASA AMICA)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "(V.LE ALDO MORO N° 75 VILLA COMUNALE)",
+       "idx": 0,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "FAVARA V.LE CHE GUEVARA SCUOLE) *",
+       "idx": 1,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "FAVARA (VIA S. ANGELO N° 1)",
+       "idx": 2,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "VILL. MOSE' (V.LE L. SCIASCIA N° 67)",
+       "idx": 3,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "VILL. LA LOGGIA (IST. CASA AMICA)",
+       "idx": 4,
+       "arr": "7.10",
+       "dep": "7.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "(V.LE ALDO MORO N° 75 VILLA COMUNALE)",
+       "idx": 0,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "FAVARA V.LE CHE GUEVARA SCUOLE) *",
+       "idx": 1,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "FAVARA (VIA S. ANGELO N° 1)",
+       "idx": 2,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "VILL. MOSE' (V.LE L. SCIASCIA N° 67)",
+       "idx": 3,
+       "arr": "13.55",
+       "dep": "13.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "VILL. LA LOGGIA (IST. CASA AMICA)",
+       "idx": 4,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "VILL. MOSE' (V.LE L. SCIASCIA N° 67)",
+       "idx": 3,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "FAVARA (VIA S. ANGELO N° 1)",
+       "idx": 2,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "FAVARA V.LE CHE GUEVARA SCUOLE) *",
+       "idx": 1,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "(V.LE ALDO MORO N° 75 VILLA COMUNALE)",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": false
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "VILL. LA LOGGIA (IST. CASA AMICA)",
+       "idx": 4,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "VILL. MOSE' (V.LE L. SCIASCIA N° 67)",
+       "idx": 3,
+       "arr": "17.05",
+       "dep": "17.05"
+      },
+      {
+       "stop": "FAVARA (VIA S. ANGELO N° 1)",
+       "idx": 2,
+       "arr": "17.20",
+       "dep": "17.20"
+      },
+      {
+       "stop": "FAVARA V.LE CHE GUEVARA SCUOLE) *",
+       "idx": 1,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "(V.LE ALDO MORO N° 75 VILLA COMUNALE)",
+       "idx": 0,
+       "arr": "17.25",
+       "dep": "17.25"
+      }
+     ],
+     "valid": false
+    }
+   ]
+  }
+ ]
+}

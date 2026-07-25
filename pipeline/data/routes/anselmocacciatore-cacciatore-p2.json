@@ -1,0 +1,195 @@
+{
+ "operator": "Anselmo Cacciatore",
+ "route_id": "anselmocacciatore-cacciatore-p2",
+ "name": "RAFFADALI - ETC….",
+ "source": "ANSELMOCACCIATORE__CACCIATORE_ORARI/p002.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio N.1 C.C. FERIALE SCOLASTICA LINEA: RAFFADALI - FAVARA Divieto di esercizio locale tra Raffadali e Favara estremi esclusi."
+ ],
+ "directions": [
+  {
+   "stops": [
+    "RAFFADALI (P.zza Voltano) RAFFADALI (P.zza Voltano)",
+    "Favara (Via Aldo Moro) Favara (Via Aldo Moro)",
+    "ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCOLASTICADAL01/09AL30/06"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RAFFADALI (P.zza Voltano) RAFFADALI (P.zza Voltano)",
+       "idx": 0,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Favara (Via Aldo Moro) Favara (Via Aldo Moro)",
+       "idx": 1,
+       "arr": "8.15",
+       "dep": "8.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCOLASTICADAL01/10AL31/05MARTEDI'EGIOVEDI'"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RAFFADALI (P.zza Voltano) RAFFADALI (P.zza Voltano)",
+       "idx": 0,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Favara (Via Aldo Moro) Favara (Via Aldo Moro)",
+       "idx": 1,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCOLASTICADAL01/09AL30/09"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Favara (Via Aldo Moro) Favara (Via Aldo Moro)",
+       "idx": 1,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "RAFFADALI (P.zza Voltano) RAFFADALI (P.zza Voltano)",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCOLASTICADAL01/10AL31/05LUN,MER,VEN,SAB"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Favara (Via Aldo Moro) Favara (Via Aldo Moro)",
+       "idx": 1,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "RAFFADALI (P.zza Voltano) RAFFADALI (P.zza Voltano)",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCOLASTICADAL01/10AL31/05MARTEDI'EGIOVEDI'"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Favara (Via Aldo Moro) Favara (Via Aldo Moro)",
+       "idx": 1,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "RAFFADALI (P.zza Voltano) RAFFADALI (P.zza Voltano)",
+       "idx": 0,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCOLASTICADAL01/10AL31/05MARTEDI'EGIOVEDI'"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Favara (Via Aldo Moro) Favara (Via Aldo Moro)",
+       "idx": 1,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "RAFFADALI (P.zza Voltano) RAFFADALI (P.zza Voltano)",
+       "idx": 0,
+       "arr": "9.15",
+       "dep": "9.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "SCOLASTICADAL01/06AL30/06"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Favara (Via Aldo Moro) Favara (Via Aldo Moro)",
+       "idx": 1,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "RAFFADALI (P.zza Voltano) RAFFADALI (P.zza Voltano)",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

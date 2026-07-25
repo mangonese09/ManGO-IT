@@ -1,0 +1,425 @@
+{
+ "operator": "Emanuele",
+ "route_id": "emanuele-emanuele-orari-p1",
+ "name": "Capo d'Orlando Tortorici - SOLO LA DOMENICA, ETC….",
+ "source": "Emanuele__EMANUELE_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Capo d'Orlando Tortorici",
+    "Forno Galati 12",
+    "Rocca Longi",
+    "Capri Leone Frazzanò",
+    "Mirto Mirto",
+    "Frazzanò Capri Leone",
+    "Longi Rocca",
+    "Galati Forno",
+    "Tortorici Capo d'Orlando",
+    "SOLO LA DOMENICA, ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEorario"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capo d'Orlando Tortorici",
+       "idx": 0,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "Forno Galati 12",
+       "idx": 1,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Rocca Longi",
+       "idx": 2,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Capri Leone Frazzanò",
+       "idx": 3,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Mirto Mirto",
+       "idx": 4,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "Frazzanò Capri Leone",
+       "idx": 5,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "Longi Rocca",
+       "idx": 6,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "Galati Forno",
+       "idx": 7,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "Tortorici Capo d'Orlando",
+       "idx": 8,
+       "arr": "8.30",
+       "dep": "8.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capo d'Orlando Tortorici",
+       "idx": 0,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "Forno Galati 12",
+       "idx": 1,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "Rocca Longi",
+       "idx": 2,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "Capri Leone Frazzanò",
+       "idx": 3,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "Mirto Mirto",
+       "idx": 4,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "Frazzanò Capri Leone",
+       "idx": 5,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "Longi Rocca",
+       "idx": 6,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "Galati Forno",
+       "idx": 7,
+       "arr": "13.50",
+       "dep": "13.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "inperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capo d'Orlando Tortorici",
+       "idx": 0,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "Forno Galati 12",
+       "idx": 1,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "Rocca Longi",
+       "idx": 2,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "Galati Forno",
+       "idx": 7,
+       "arr": "13.30",
+       "dep": "13.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capo d'Orlando Tortorici",
+       "idx": 0,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Forno Galati 12",
+       "idx": 1,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "Rocca Longi",
+       "idx": 2,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "Capri Leone Frazzanò",
+       "idx": 3,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "Mirto Mirto",
+       "idx": 4,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Frazzanò Capri Leone",
+       "idx": 5,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "Longi Rocca",
+       "idx": 6,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "Galati Forno",
+       "idx": 7,
+       "arr": "14.50",
+       "dep": "14.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "inperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Capo d'Orlando Tortorici",
+       "idx": 0,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Forno Galati 12",
+       "idx": 1,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "Rocca Longi",
+       "idx": 2,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "Galati Forno",
+       "idx": 7,
+       "arr": "14.20",
+       "dep": "14.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEorario"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Forno Galati 12",
+       "idx": 1,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "Rocca Longi",
+       "idx": 2,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "Capri Leone Frazzanò",
+       "idx": 3,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Mirto Mirto",
+       "idx": 4,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "Frazzanò Capri Leone",
+       "idx": 5,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "Longi Rocca",
+       "idx": 6,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Galati Forno",
+       "idx": 7,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "Tortorici Capo d'Orlando",
+       "idx": 8,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Forno Galati 12",
+       "idx": 1,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "Longi Rocca",
+       "idx": 6,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "Galati Forno",
+       "idx": 7,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Tortorici Capo d'Orlando",
+       "idx": 8,
+       "arr": "7.35",
+       "dep": "7.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "inperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Forno Galati 12",
+       "idx": 1,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "Longi Rocca",
+       "idx": 6,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "Galati Forno",
+       "idx": 7,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Tortorici Capo d'Orlando",
+       "idx": 8,
+       "arr": "7.35",
+       "dep": "7.35"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

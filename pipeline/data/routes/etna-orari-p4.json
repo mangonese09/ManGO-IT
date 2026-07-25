@@ -1,0 +1,250 @@
+{
+ "operator": "Etna Trasporti",
+ "route_id": "etna-orari-p4",
+ "name": "Riposto-Viagrande-Catania",
+ "source": "ETNA_ORARI/p004.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Vrvp (RIPOSTO(iaomaang.illaantano))",
+    "GIARRE",
+    "MACCHIA DI GIARRE",
+    "TREPUNTI",
+    "Nrnp (SANTAVEEIAiazza Roma)",
+    "PISANO",
+    "FLERI",
+    "MONTEROSSO ETNEO",
+    "Piazza Matteotti (Villa Comunale)",
+    "Atatnob (ACISN'NOI(ivio))",
+    "Via della Regione",
+    "S. AGATA LI BATTIATI",
+    "Tbvda (CATANIAerminalusia'mico)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEdaLunedìaVenerdìinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Vrvp (RIPOSTO(iaomaang.illaantano))",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "Tbvda (CATANIAerminalusia'mico)",
+       "idx": 12,
+       "arr": "8.50",
+       "dep": "8.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Vrvp (RIPOSTO(iaomaang.illaantano))",
+       "idx": 0,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "MACCHIA DI GIARRE",
+       "idx": 2,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "TREPUNTI",
+       "idx": 3,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Nrnp (SANTAVEEIAiazza Roma)",
+       "idx": 4,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "PISANO",
+       "idx": 5,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "FLERI",
+       "idx": 6,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "MONTEROSSO ETNEO",
+       "idx": 7,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "Piazza Matteotti (Villa Comunale)",
+       "idx": 8,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "Atatnob (ACISN'NOI(ivio))",
+       "idx": 9,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "Via della Regione",
+       "idx": 10,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Via della Regione",
+       "idx": 10,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "Atatnob (ACISN'NOI(ivio))",
+       "idx": 9,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "Piazza Matteotti (Villa Comunale)",
+       "idx": 8,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "MONTEROSSO ETNEO",
+       "idx": 7,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "FLERI",
+       "idx": 6,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "PISANO",
+       "idx": 5,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "Nrnp (SANTAVEEIAiazza Roma)",
+       "idx": 4,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "TREPUNTI",
+       "idx": 3,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "MACCHIA DI GIARRE",
+       "idx": 2,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Vrvp (RIPOSTO(iaomaang.illaantano))",
+       "idx": 0,
+       "arr": "7.40",
+       "dep": "7.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEdaLunedìaVenerdìnelperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Tbvda (CATANIAerminalusia'mico)",
+       "idx": 12,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "Vrvp (RIPOSTO(iaomaang.illaantano))",
+       "idx": 0,
+       "arr": "13.50",
+       "dep": "13.50"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

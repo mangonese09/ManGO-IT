@@ -1,0 +1,149 @@
+{
+ "operator": "Ionica",
+ "route_id": "ionicaspa-ionica-orari-p1",
+ "name": "Rimiti I - ETC….",
+ "source": "IONICASpA__IONICA_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Divieto di servizio locale da Roccalumera a Messina e vv. estremi compresi"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Rimiti I",
+    "Misitano I",
+    "Fraz. Giovannella I",
+    "Bivio Artale I",
+    "Misserio",
+    "Giardino",
+    "Barracca Santa Teresa Barracca",
+    "Bucalo Santa Teresa Bucalo",
+    "ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "inperiodo"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Rimiti I",
+       "idx": 0,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "Misitano I",
+       "idx": 1,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "Fraz. Giovannella I",
+       "idx": 2,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "Bivio Artale I",
+       "idx": 3,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Misserio",
+       "idx": 4,
+       "arr": "7.10",
+       "dep": "7.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Bucalo Santa Teresa Bucalo",
+       "idx": 7,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "Barracca Santa Teresa Barracca",
+       "idx": 6,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "Giardino",
+       "idx": 5,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "Misserio",
+       "idx": 4,
+       "arr": "6.30",
+       "dep": "6.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "inperiodo"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Misserio",
+       "idx": 4,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "Bivio Artale I",
+       "idx": 3,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "Fraz. Giovannella I",
+       "idx": 2,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "Misitano I",
+       "idx": 1,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "Rimiti I",
+       "idx": 0,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,187 @@
+{
+ "operator": "Giuntabus",
+ "route_id": "giuntabus-giuntabus-orari-p15",
+ "name": "Milazzo Milazzo 0 - SOLO LA DOMENICA, ETC….",
+ "source": "Giuntabus__GIUNTABUS_ORARI/p015.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio DIVIETO DI SERVIZIO LICALE DA PONTE GALLO A MESSINA ESTREMI COMPRESI"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Milazzo Milazzo 0",
+    "Grazia Grazia 5.4",
+    "Olivarella Olivarella 7",
+    "Archi Archi 10",
+    "Giammoro Giammoro 12.4",
+    "Monforte Marina Monforte Marina 15",
+    "Scala Torregrotta Scala Torregrotta 15.9",
+    "Spadafora Spadafora 19.1",
+    "Rometta Rometta 21.6",
+    "Villafranca A/20 Villafranca A/20 24",
+    "Messina Messina 0",
+    "SOLO LA DOMENICA, ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Milazzo Milazzo 0",
+       "idx": 0,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "Grazia Grazia 5.4",
+       "idx": 1,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "Olivarella Olivarella 7",
+       "idx": 2,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "Archi Archi 10",
+       "idx": 3,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "Giammoro Giammoro 12.4",
+       "idx": 4,
+       "arr": "8.35",
+       "dep": "8.35"
+      },
+      {
+       "stop": "Monforte Marina Monforte Marina 15",
+       "idx": 5,
+       "arr": "8.40",
+       "dep": "8.40"
+      },
+      {
+       "stop": "Scala Torregrotta Scala Torregrotta 15.9",
+       "idx": 6,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "Spadafora Spadafora 19.1",
+       "idx": 7,
+       "arr": "8.50",
+       "dep": "8.50"
+      },
+      {
+       "stop": "Rometta Rometta 21.6",
+       "idx": 8,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "Villafranca A/20 Villafranca A/20 24",
+       "idx": 9,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "Messina Messina 0",
+       "idx": 10,
+       "arr": "9.15",
+       "dep": "9.15"
+      }
+     ],
+     "valid": false
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEperioindoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Messina Messina 0",
+       "idx": 10,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "Villafranca A/20 Villafranca A/20 24",
+       "idx": 9,
+       "arr": "16.35",
+       "dep": "16.35"
+      },
+      {
+       "stop": "Rometta Rometta 21.6",
+       "idx": 8,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "Spadafora Spadafora 19.1",
+       "idx": 7,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "Scala Torregrotta Scala Torregrotta 15.9",
+       "idx": 6,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "Monforte Marina Monforte Marina 15",
+       "idx": 5,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "Giammoro Giammoro 12.4",
+       "idx": 4,
+       "arr": "17.05",
+       "dep": "17.05"
+      },
+      {
+       "stop": "Archi Archi 10",
+       "idx": 3,
+       "arr": "17.10",
+       "dep": "17.10"
+      },
+      {
+       "stop": "Olivarella Olivarella 7",
+       "idx": 2,
+       "arr": "17.15",
+       "dep": "17.15"
+      },
+      {
+       "stop": "Grazia Grazia 5.4",
+       "idx": 1,
+       "arr": "17.20",
+       "dep": "17.20"
+      },
+      {
+       "stop": "Milazzo Milazzo 0",
+       "idx": 0,
+       "arr": "17.25",
+       "dep": "17.25"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,148 @@
+{
+ "operator": "Ionica",
+ "route_id": "ionicaspa-ionica-orari-p31",
+ "name": "Canigliari Antillo Canigliari - ETC….",
+ "source": "IONICASpA__IONICA_ORARI/p031.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Divieto di servizio locale da Roccalumera a Messina e vv. estremi compresi - Divieto di carico per Messina al bivio Scifì -S.Alessio sulla ss.114 e vv."
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Canigliari Antillo Canigliari",
+    "Antillo",
+    "Scifì",
+    "Savoca I (Bivio Scifì) Sant'Alessio (Bivio Scifì)",
+    "Barracca Santa Teresa Barracca",
+    "Bucalo Santa Teresa Bucalo",
+    "Furci",
+    "Mandanici I (P.zza Cavallotti) Messina (P.zza Cavallotti)",
+    "ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Canigliari Antillo Canigliari",
+       "idx": 0,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "Antillo",
+       "idx": 1,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Scifì",
+       "idx": 2,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Savoca I (Bivio Scifì) Sant'Alessio (Bivio Scifì)",
+       "idx": 3,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Barracca Santa Teresa Barracca",
+       "idx": 4,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "Bucalo Santa Teresa Bucalo",
+       "idx": 5,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "Furci",
+       "idx": 6,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "Mandanici I (P.zza Cavallotti) Messina (P.zza Cavallotti)",
+       "idx": 7,
+       "arr": "15.30",
+       "dep": "15.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Mandanici I (P.zza Cavallotti) Messina (P.zza Cavallotti)",
+       "idx": 7,
+       "arr": "17.25",
+       "dep": "17.25"
+      },
+      {
+       "stop": "Furci",
+       "idx": 6,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "Bucalo Santa Teresa Bucalo",
+       "idx": 5,
+       "arr": "18.15",
+       "dep": "18.15"
+      },
+      {
+       "stop": "Barracca Santa Teresa Barracca",
+       "idx": 4,
+       "arr": "18.20",
+       "dep": "18.20"
+      },
+      {
+       "stop": "Savoca I (Bivio Scifì) Sant'Alessio (Bivio Scifì)",
+       "idx": 3,
+       "arr": "18.25",
+       "dep": "18.25"
+      },
+      {
+       "stop": "Scifì",
+       "idx": 2,
+       "arr": "18.40",
+       "dep": "18.40"
+      },
+      {
+       "stop": "Antillo",
+       "idx": 1,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "Canigliari Antillo Canigliari",
+       "idx": 0,
+       "arr": "19.15",
+       "dep": "19.15"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

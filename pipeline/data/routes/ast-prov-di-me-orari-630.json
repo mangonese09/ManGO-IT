@@ -1,0 +1,79 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-me-orari-630",
+ "name": "SANTA LUCIA DEL MELA via Roma Capolinea - MESSINA via Bonino",
+ "source": "AST_prov.di_ME_-_ORARI/p014.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio divieto di servizio locale fra Archi stazione FS e Messina e viceversa , estremi compresi"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "SANTA LUCIA DEL MELA via Roma Capolinea",
+    "SAN FILIPPO DEL MELA c.rso Garibaldi",
+    "OLIVARELLA via Nazionale",
+    "GIAMMORO via Nazionale",
+    "SPADAFORA via Umberto",
+    "VILLAFRANCA TIRRENA -via Nazionale",
+    "MESSINA via Bonino"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "KMFERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SANTA LUCIA DEL MELA via Roma Capolinea",
+       "idx": 0,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "SAN FILIPPO DEL MELA c.rso Garibaldi",
+       "idx": 1,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "OLIVARELLA via Nazionale",
+       "idx": 2,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "GIAMMORO via Nazionale",
+       "idx": 3,
+       "arr": "6.25",
+       "dep": "6.25"
+      },
+      {
+       "stop": "SPADAFORA via Umberto",
+       "idx": 4,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "VILLAFRANCA TIRRENA -via Nazionale",
+       "idx": 5,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "MESSINA via Bonino",
+       "idx": 6,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

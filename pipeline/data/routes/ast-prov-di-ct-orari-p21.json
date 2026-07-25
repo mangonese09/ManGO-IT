@@ -1,0 +1,132 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-ct-orari-p21",
+ "name": "Catania - Etna",
+ "source": "AST_prov._di_CT_-_ORARI/p021.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Catania (piazza Giovanni XXIII)",
+    "Nicolosi (via Etnea)",
+    "Etna (rifugio Sapienza)"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Catania (piazza Giovanni XXIII)",
+       "idx": 0,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "Nicolosi (via Etnea)",
+       "idx": 1,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "Etna (rifugio Sapienza)",
+       "idx": 2,
+       "arr": "10.15",
+       "dep": "10.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdal15/06al15/09"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Nicolosi (via Etnea)",
+       "idx": 1,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "Etna (rifugio Sapienza)",
+       "idx": 2,
+       "arr": "13.30",
+       "dep": "13.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Etna (rifugio Sapienza)",
+       "idx": 2,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "Nicolosi (via Etnea)",
+       "idx": 1,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "Catania (piazza Giovanni XXIII)",
+       "idx": 0,
+       "arr": "18.30",
+       "dep": "18.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdal15/06al15/09"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Etna (rifugio Sapienza)",
+       "idx": 2,
+       "arr": "10.45",
+       "dep": "10.45"
+      },
+      {
+       "stop": "Nicolosi (via Etnea)",
+       "idx": 1,
+       "arr": "11.45",
+       "dep": "11.45"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

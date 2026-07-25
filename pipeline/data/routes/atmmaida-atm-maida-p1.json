@@ -1,0 +1,70 @@
+{
+ "operator": "ATM Maida",
+ "route_id": "atmmaida-atm-maida-p1",
+ "name": "Mussomeli Mussomeli orario - SOLO IL SABATO, SOLO LA DOMENICA, ETC….",
+ "source": "ATMMaida__ATM_MAIDA/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Mussomeli Mussomeli orario",
+    "Palermo Palermo orario",
+    "SOLO IL SABATO, SOLO LA DOMENICA, ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Mussomeli Mussomeli orario",
+       "idx": 0,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "Palermo Palermo orario",
+       "idx": 1,
+       "arr": "8.15",
+       "dep": "8.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Palermo Palermo orario",
+       "idx": 1,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Mussomeli Mussomeli orario",
+       "idx": 0,
+       "arr": "16.15",
+       "dep": "16.15"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

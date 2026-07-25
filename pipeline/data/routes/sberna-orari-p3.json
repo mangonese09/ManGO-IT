@@ -1,0 +1,506 @@
+{
+ "operator": "Sberna",
+ "route_id": "sberna-orari-p3",
+ "name": "CAPIZZI P.zza CAPIZZI P.zza - Camera C. Camera C.",
+ "source": "SBERNA_ORARI/p003.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Divieto di servizio locale tra Acquedolci e Messina (estremi compresi)"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "CAPIZZI P.zza CAPIZZI P.zza",
+    "Portella Obolo SP168 Portella Obolo SP168",
+    "Portella Poma SP168 Portella Poma SP168",
+    "Caronia P.zza Municipio Caronia P.zza Municipio",
+    "Caronia Scalo Piazzale Caronia Scalo Piazzale 130",
+    "Caronia Marina SS 113 Caronia Marina SS 113",
+    "Torre del Lauro SS113 Torre del Lauro SS113",
+    "Furiano SS113 Furiano SS113",
+    "Acquedolci Villa Acquedolci Villa",
+    "Sant'Agata di M.llo P.zza Sant'Agata di M.llo P.zza €",
+    "Torrenova Via Torrenova Via",
+    "Rocca di Caprileone Rocca di Caprileone",
+    "Svincolo A20 Svincolo A20",
+    "Messina Cavallotti- Messina Cavallotti-",
+    "Camera C. Camera C."
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEorario"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CAPIZZI P.zza CAPIZZI P.zza",
+       "idx": 0,
+       "arr": "5.35",
+       "dep": "5.35"
+      },
+      {
+       "stop": "Portella Obolo SP168 Portella Obolo SP168",
+       "idx": 1,
+       "arr": "5.55",
+       "dep": "5.55"
+      },
+      {
+       "stop": "Portella Poma SP168 Portella Poma SP168",
+       "idx": 2,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "Caronia P.zza Municipio Caronia P.zza Municipio",
+       "idx": 3,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "Caronia Scalo Piazzale Caronia Scalo Piazzale 130",
+       "idx": 4,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "Caronia Marina SS 113 Caronia Marina SS 113",
+       "idx": 5,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "Torre del Lauro SS113 Torre del Lauro SS113",
+       "idx": 6,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "Furiano SS113 Furiano SS113",
+       "idx": 7,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Acquedolci Villa Acquedolci Villa",
+       "idx": 8,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "Sant'Agata di M.llo P.zza Sant'Agata di M.llo P.zza €",
+       "idx": 9,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "Torrenova Via Torrenova Via",
+       "idx": 10,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Rocca di Caprileone Rocca di Caprileone",
+       "idx": 11,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "Messina Cavallotti- Messina Cavallotti-",
+       "idx": 13,
+       "arr": "9.05",
+       "dep": "9.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Caronia P.zza Municipio Caronia P.zza Municipio",
+       "idx": 3,
+       "arr": "5.55",
+       "dep": "5.55"
+      },
+      {
+       "stop": "Caronia Scalo Piazzale Caronia Scalo Piazzale 130",
+       "idx": 4,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "Caronia Marina SS 113 Caronia Marina SS 113",
+       "idx": 5,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "Torre del Lauro SS113 Torre del Lauro SS113",
+       "idx": 6,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "Furiano SS113 Furiano SS113",
+       "idx": 7,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "Acquedolci Villa Acquedolci Villa",
+       "idx": 8,
+       "arr": "6.25",
+       "dep": "6.25"
+      },
+      {
+       "stop": "Sant'Agata di M.llo P.zza Sant'Agata di M.llo P.zza €",
+       "idx": 9,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "Torrenova Via Torrenova Via",
+       "idx": 10,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "Rocca di Caprileone Rocca di Caprileone",
+       "idx": 11,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "Messina Cavallotti- Messina Cavallotti-",
+       "idx": 13,
+       "arr": "8.25",
+       "dep": "8.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Caronia P.zza Municipio Caronia P.zza Municipio",
+       "idx": 3,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "Caronia Scalo Piazzale Caronia Scalo Piazzale 130",
+       "idx": 4,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Caronia Marina SS 113 Caronia Marina SS 113",
+       "idx": 5,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Torre del Lauro SS113 Torre del Lauro SS113",
+       "idx": 6,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "Furiano SS113 Furiano SS113",
+       "idx": 7,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "Acquedolci Villa Acquedolci Villa",
+       "idx": 8,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "Sant'Agata di M.llo P.zza Sant'Agata di M.llo P.zza €",
+       "idx": 9,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "Torrenova Via Torrenova Via",
+       "idx": 10,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "Rocca di Caprileone Rocca di Caprileone",
+       "idx": 11,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "Messina Cavallotti- Messina Cavallotti-",
+       "idx": 13,
+       "arr": "9.45",
+       "dep": "9.45"
+      }
+     ],
+     "valid": false
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEorario"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Camera C. Camera C.",
+       "idx": 14,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Svincolo A20 Svincolo A20",
+       "idx": 12,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "Torrenova Via Torrenova Via",
+       "idx": 10,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "Sant'Agata di M.llo P.zza Sant'Agata di M.llo P.zza €",
+       "idx": 9,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "Acquedolci Villa Acquedolci Villa",
+       "idx": 8,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "Furiano SS113 Furiano SS113",
+       "idx": 7,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "Torre del Lauro SS113 Torre del Lauro SS113",
+       "idx": 6,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "Caronia Marina SS 113 Caronia Marina SS 113",
+       "idx": 5,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "Caronia Scalo Piazzale Caronia Scalo Piazzale 130",
+       "idx": 4,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "Caronia P.zza Municipio Caronia P.zza Municipio",
+       "idx": 3,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "Portella Poma SP168 Portella Poma SP168",
+       "idx": 2,
+       "arr": "16.35",
+       "dep": "16.35"
+      },
+      {
+       "stop": "Portella Obolo SP168 Portella Obolo SP168",
+       "idx": 1,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "CAPIZZI P.zza CAPIZZI P.zza",
+       "idx": 0,
+       "arr": "17.10",
+       "dep": "17.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Messina Cavallotti- Messina Cavallotti-",
+       "idx": 13,
+       "arr": "11.15",
+       "dep": "11.15"
+      },
+      {
+       "stop": "Rocca di Caprileone Rocca di Caprileone",
+       "idx": 11,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "Torrenova Via Torrenova Via",
+       "idx": 10,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "Sant'Agata di M.llo P.zza Sant'Agata di M.llo P.zza €",
+       "idx": 9,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "Acquedolci Villa Acquedolci Villa",
+       "idx": 8,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "Furiano SS113 Furiano SS113",
+       "idx": 7,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "Torre del Lauro SS113 Torre del Lauro SS113",
+       "idx": 6,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "Caronia Marina SS 113 Caronia Marina SS 113",
+       "idx": 5,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "Caronia Scalo Piazzale Caronia Scalo Piazzale 130",
+       "idx": 4,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "Caronia P.zza Municipio Caronia P.zza Municipio",
+       "idx": 3,
+       "arr": "13.35",
+       "dep": "13.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Messina Cavallotti- Messina Cavallotti-",
+       "idx": 13,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "Rocca di Caprileone Rocca di Caprileone",
+       "idx": 11,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "Torrenova Via Torrenova Via",
+       "idx": 10,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "Sant'Agata di M.llo P.zza Sant'Agata di M.llo P.zza €",
+       "idx": 9,
+       "arr": "18.20",
+       "dep": "18.20"
+      },
+      {
+       "stop": "Acquedolci Villa Acquedolci Villa",
+       "idx": 8,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "Furiano SS113 Furiano SS113",
+       "idx": 7,
+       "arr": "18.35",
+       "dep": "18.35"
+      },
+      {
+       "stop": "Torre del Lauro SS113 Torre del Lauro SS113",
+       "idx": 6,
+       "arr": "18.40",
+       "dep": "18.40"
+      },
+      {
+       "stop": "Caronia Marina SS 113 Caronia Marina SS 113",
+       "idx": 5,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "Caronia Scalo Piazzale Caronia Scalo Piazzale 130",
+       "idx": 4,
+       "arr": "18.50",
+       "dep": "18.50"
+      },
+      {
+       "stop": "Caronia P.zza Municipio Caronia P.zza Municipio",
+       "idx": 3,
+       "arr": "19.00",
+       "dep": "19.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

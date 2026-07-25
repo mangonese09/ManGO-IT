@@ -1,0 +1,992 @@
+{
+ "operator": "Giamporcaro",
+ "route_id": "giamporcaro-giamporcaro-orar-p1",
+ "name": "VITTORIA-COMISO-AEROPORTO-CATANIA",
+ "source": "Giamporcaro__GIAMPORCARO_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Divieto di carico sul tratto dal Bivio di Comiso a Catania, estremi inclusi"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "VITTORIA (P.zza Stazione)",
+    "COMISO (Via Gandhi)",
+    "AEROPORTO COMISO TERMINAL",
+    "LENTINI (Via Etnea)",
+    "AEROPORTO CATANIA Terminal",
+    "CATANIA (Via D'amico)",
+    "ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "VITTORIA (P.zza Stazione)",
+       "idx": 0,
+       "arr": "5.45",
+       "dep": "5.45"
+      },
+      {
+       "stop": "COMISO (Via Gandhi)",
+       "idx": 1,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "LENTINI (Via Etnea)",
+       "idx": 3,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Terminal",
+       "idx": 4,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "CATANIA (Via D'amico)",
+       "idx": 5,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdalLUN-VEN"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "VITTORIA (P.zza Stazione)",
+       "idx": 0,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "COMISO (Via Gandhi)",
+       "idx": 1,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "AEROPORTO COMISO TERMINAL",
+       "idx": 2,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "LENTINI (Via Etnea)",
+       "idx": 3,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Terminal",
+       "idx": 4,
+       "arr": "8.35",
+       "dep": "8.35"
+      },
+      {
+       "stop": "CATANIA (Via D'amico)",
+       "idx": 5,
+       "arr": "8.45",
+       "dep": "8.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "VITTORIA (P.zza Stazione)",
+       "idx": 0,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "COMISO (Via Gandhi)",
+       "idx": 1,
+       "arr": "8.50",
+       "dep": "8.50"
+      },
+      {
+       "stop": "AEROPORTO COMISO TERMINAL",
+       "idx": 2,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "LENTINI (Via Etnea)",
+       "idx": 3,
+       "arr": "9.55",
+       "dep": "9.55"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Terminal",
+       "idx": 4,
+       "arr": "10.20",
+       "dep": "10.20"
+      },
+      {
+       "stop": "CATANIA (Via D'amico)",
+       "idx": 5,
+       "arr": "10.30",
+       "dep": "10.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "VITTORIA (P.zza Stazione)",
+       "idx": 0,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "COMISO (Via Gandhi)",
+       "idx": 1,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "AEROPORTO COMISO TERMINAL",
+       "idx": 2,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "LENTINI (Via Etnea)",
+       "idx": 3,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Terminal",
+       "idx": 4,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "CATANIA (Via D'amico)",
+       "idx": 5,
+       "arr": "15.00",
+       "dep": "15.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "VITTORIA (P.zza Stazione)",
+       "idx": 0,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "COMISO (Via Gandhi)",
+       "idx": 1,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "AEROPORTO COMISO TERMINAL",
+       "idx": 2,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "LENTINI (Via Etnea)",
+       "idx": 3,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Terminal",
+       "idx": 4,
+       "arr": "17.20",
+       "dep": "17.20"
+      },
+      {
+       "stop": "CATANIA (Via D'amico)",
+       "idx": 5,
+       "arr": "17.30",
+       "dep": "17.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "VITTORIA (P.zza Stazione)",
+       "idx": 0,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "COMISO (Via Gandhi)",
+       "idx": 1,
+       "arr": "18.20",
+       "dep": "18.20"
+      },
+      {
+       "stop": "AEROPORTO COMISO TERMINAL",
+       "idx": 2,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "LENTINI (Via Etnea)",
+       "idx": 3,
+       "arr": "19.25",
+       "dep": "19.25"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Terminal",
+       "idx": 4,
+       "arr": "19.50",
+       "dep": "19.50"
+      },
+      {
+       "stop": "CATANIA (Via D'amico)",
+       "idx": 5,
+       "arr": "20.00",
+       "dep": "20.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "13",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "VITTORIA (P.zza Stazione)",
+       "idx": 0,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "COMISO (Via Gandhi)",
+       "idx": 1,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "AEROPORTO COMISO TERMINAL",
+       "idx": 2,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "LENTINI (Via Etnea)",
+       "idx": 3,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Terminal",
+       "idx": 4,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "CATANIA (Via D'amico)",
+       "idx": 5,
+       "arr": "9.30",
+       "dep": "9.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "15",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "VITTORIA (P.zza Stazione)",
+       "idx": 0,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "COMISO (Via Gandhi)",
+       "idx": 1,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "AEROPORTO COMISO TERMINAL",
+       "idx": 2,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "LENTINI (Via Etnea)",
+       "idx": 3,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Terminal",
+       "idx": 4,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "CATANIA (Via D'amico)",
+       "idx": 5,
+       "arr": "16.30",
+       "dep": "16.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "17",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "VITTORIA (P.zza Stazione)",
+       "idx": 0,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "COMISO (Via Gandhi)",
+       "idx": 1,
+       "arr": "17.50",
+       "dep": "17.50"
+      },
+      {
+       "stop": "AEROPORTO COMISO TERMINAL",
+       "idx": 2,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "LENTINI (Via Etnea)",
+       "idx": 3,
+       "arr": "18.55",
+       "dep": "18.55"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Terminal",
+       "idx": 4,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "CATANIA (Via D'amico)",
+       "idx": 5,
+       "arr": "19.30",
+       "dep": "19.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "19",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "VITTORIA (P.zza Stazione)",
+       "idx": 0,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "COMISO (Via Gandhi)",
+       "idx": 1,
+       "arr": "18.20",
+       "dep": "18.20"
+      },
+      {
+       "stop": "AEROPORTO COMISO TERMINAL",
+       "idx": 2,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "LENTINI (Via Etnea)",
+       "idx": 3,
+       "arr": "19.25",
+       "dep": "19.25"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Terminal",
+       "idx": 4,
+       "arr": "19.50",
+       "dep": "19.50"
+      },
+      {
+       "stop": "CATANIA (Via D'amico)",
+       "idx": 5,
+       "arr": "20.00",
+       "dep": "20.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdalLUN-VEN"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'amico)",
+       "idx": 5,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Terminal",
+       "idx": 4,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "LENTINI (Via Etnea)",
+       "idx": 3,
+       "arr": "9.35",
+       "dep": "9.35"
+      },
+      {
+       "stop": "AEROPORTO COMISO TERMINAL",
+       "idx": 2,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "COMISO (Via Gandhi)",
+       "idx": 1,
+       "arr": "10.40",
+       "dep": "10.40"
+      },
+      {
+       "stop": "VITTORIA (P.zza Stazione)",
+       "idx": 0,
+       "arr": "11.00",
+       "dep": "11.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'amico)",
+       "idx": 5,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Terminal",
+       "idx": 4,
+       "arr": "11.40",
+       "dep": "11.40"
+      },
+      {
+       "stop": "LENTINI (Via Etnea)",
+       "idx": 3,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "AEROPORTO COMISO TERMINAL",
+       "idx": 2,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "COMISO (Via Gandhi)",
+       "idx": 1,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "VITTORIA (P.zza Stazione)",
+       "idx": 0,
+       "arr": "13.30",
+       "dep": "13.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'amico)",
+       "idx": 5,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Terminal",
+       "idx": 4,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "LENTINI (Via Etnea)",
+       "idx": 3,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "AEROPORTO COMISO TERMINAL",
+       "idx": 2,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "COMISO (Via Gandhi)",
+       "idx": 1,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "VITTORIA (P.zza Stazione)",
+       "idx": 0,
+       "arr": "16.00",
+       "dep": "16.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'amico)",
+       "idx": 5,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Terminal",
+       "idx": 4,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "LENTINI (Via Etnea)",
+       "idx": 3,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "AEROPORTO COMISO TERMINAL",
+       "idx": 2,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "COMISO (Via Gandhi)",
+       "idx": 1,
+       "arr": "17.10",
+       "dep": "17.10"
+      },
+      {
+       "stop": "VITTORIA (P.zza Stazione)",
+       "idx": 0,
+       "arr": "17.30",
+       "dep": "17.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'amico)",
+       "idx": 5,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Terminal",
+       "idx": 4,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "LENTINI (Via Etnea)",
+       "idx": 3,
+       "arr": "18.35",
+       "dep": "18.35"
+      },
+      {
+       "stop": "AEROPORTO COMISO TERMINAL",
+       "idx": 2,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "COMISO (Via Gandhi)",
+       "idx": 1,
+       "arr": "19.40",
+       "dep": "19.40"
+      },
+      {
+       "stop": "VITTORIA (P.zza Stazione)",
+       "idx": 0,
+       "arr": "20.00",
+       "dep": "20.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'amico)",
+       "idx": 5,
+       "arr": "20.30",
+       "dep": "20.30"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Terminal",
+       "idx": 4,
+       "arr": "20.40",
+       "dep": "20.40"
+      },
+      {
+       "stop": "LENTINI (Via Etnea)",
+       "idx": 3,
+       "arr": "21.05",
+       "dep": "21.05"
+      },
+      {
+       "stop": "COMISO (Via Gandhi)",
+       "idx": 1,
+       "arr": "21.10",
+       "dep": "21.10"
+      },
+      {
+       "stop": "VITTORIA (P.zza Stazione)",
+       "idx": 0,
+       "arr": "22.30",
+       "dep": "22.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "14",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'amico)",
+       "idx": 5,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Terminal",
+       "idx": 4,
+       "arr": "11.40",
+       "dep": "11.40"
+      },
+      {
+       "stop": "LENTINI (Via Etnea)",
+       "idx": 3,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "AEROPORTO COMISO TERMINAL",
+       "idx": 2,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "COMISO (Via Gandhi)",
+       "idx": 1,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "VITTORIA (P.zza Stazione)",
+       "idx": 0,
+       "arr": "13.30",
+       "dep": "13.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "16",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'amico)",
+       "idx": 5,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Terminal",
+       "idx": 4,
+       "arr": "17.10",
+       "dep": "17.10"
+      },
+      {
+       "stop": "LENTINI (Via Etnea)",
+       "idx": 3,
+       "arr": "17.35",
+       "dep": "17.35"
+      },
+      {
+       "stop": "AEROPORTO COMISO TERMINAL",
+       "idx": 2,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "COMISO (Via Gandhi)",
+       "idx": 1,
+       "arr": "18.40",
+       "dep": "18.40"
+      },
+      {
+       "stop": "VITTORIA (P.zza Stazione)",
+       "idx": 0,
+       "arr": "19.00",
+       "dep": "19.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "18",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'amico)",
+       "idx": 5,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Terminal",
+       "idx": 4,
+       "arr": "20.10",
+       "dep": "20.10"
+      },
+      {
+       "stop": "LENTINI (Via Etnea)",
+       "idx": 3,
+       "arr": "20.35",
+       "dep": "20.35"
+      },
+      {
+       "stop": "AEROPORTO COMISO TERMINAL",
+       "idx": 2,
+       "arr": "21.30",
+       "dep": "21.30"
+      },
+      {
+       "stop": "COMISO (Via Gandhi)",
+       "idx": 1,
+       "arr": "21.40",
+       "dep": "21.40"
+      },
+      {
+       "stop": "VITTORIA (P.zza Stazione)",
+       "idx": 0,
+       "arr": "22.00",
+       "dep": "22.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "20",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'amico)",
+       "idx": 5,
+       "arr": "20.30",
+       "dep": "20.30"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Terminal",
+       "idx": 4,
+       "arr": "20.40",
+       "dep": "20.40"
+      },
+      {
+       "stop": "LENTINI (Via Etnea)",
+       "idx": 3,
+       "arr": "21.05",
+       "dep": "21.05"
+      },
+      {
+       "stop": "AEROPORTO COMISO TERMINAL",
+       "idx": 2,
+       "arr": "22.00",
+       "dep": "22.00"
+      },
+      {
+       "stop": "COMISO (Via Gandhi)",
+       "idx": 1,
+       "arr": "22.10",
+       "dep": "22.10"
+      },
+      {
+       "stop": "VITTORIA (P.zza Stazione)",
+       "idx": 0,
+       "arr": "22.30",
+       "dep": "22.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

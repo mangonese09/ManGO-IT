@@ -1,0 +1,1042 @@
+{
+ "operator": "Cavaleri",
+ "route_id": "cavaleri-orari-p1",
+ "name": ".- CANICATTI' F.S. - di Km.",
+ "source": "CAVALERI_ORARI/p001.json",
+ "prescriptions": [
+  "Prescrizioni divieto di servizio di estremità tra Canicattì e Licata e viceversa"
+ ],
+ "directions": [
+  {
+   "stops": [
+    ".- CANICATTI' F.S.",
+    ".- CANICATTI' L. AOSTA",
+    ".- ACQUA NUOVA",
+    "c/da GIDDIO",
+    "BIVIO NARO",
+    "NARO P.zza MARCONI",
+    "BV. CASE POPOLARI",
+    "CAMASTRA C. V. VENETO",
+    "C/DA ZACCARIA .-",
+    "PALMA DI M. (C. Roma) .-",
+    "PALMA DI M. (Matteotti) .-",
+    "PALMA DI M. (V. Giordano) .-",
+    "TORRE DI GAFFE BV. .-",
+    "T.DI GAFFE ABITATO .-",
+    "BV. STRADA STATALE .-",
+    "LICATA (C. Roma) .- .-",
+    "di Km.",
+    "di Km.",
+    "di Km."
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FEFIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": ".- CANICATTI' F.S.",
+       "idx": 0,
+       "arr": "7.17",
+       "dep": "7.17"
+      },
+      {
+       "stop": ".- CANICATTI' L. AOSTA",
+       "idx": 1,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": ".- ACQUA NUOVA",
+       "idx": 2,
+       "arr": "7.21",
+       "dep": "7.21"
+      },
+      {
+       "stop": "c/da GIDDIO",
+       "idx": 3,
+       "arr": "7.27",
+       "dep": "7.27"
+      },
+      {
+       "stop": "BIVIO NARO",
+       "idx": 4,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "NARO P.zza MARCONI",
+       "idx": 5,
+       "arr": "7.38",
+       "dep": "7.38"
+      },
+      {
+       "stop": "BV. CASE POPOLARI",
+       "idx": 6,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "CAMASTRA C. V. VENETO",
+       "idx": 7,
+       "arr": "7.48",
+       "dep": "7.48"
+      },
+      {
+       "stop": "C/DA ZACCARIA .-",
+       "idx": 8,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "PALMA DI M. (C. Roma) .-",
+       "idx": 9,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "PALMA DI M. (V. Giordano) .-",
+       "idx": 11,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "TORRE DI GAFFE BV. .-",
+       "idx": 12,
+       "arr": "8.16",
+       "dep": "8.16"
+      },
+      {
+       "stop": "T.DI GAFFE ABITATO .-",
+       "idx": 13,
+       "arr": "8.18",
+       "dep": "8.18"
+      },
+      {
+       "stop": "BV. STRADA STATALE .-",
+       "idx": 14,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "LICATA (C. Roma) .- .-",
+       "idx": 15,
+       "arr": "8.35",
+       "dep": "8.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": ".- CANICATTI' F.S.",
+       "idx": 0,
+       "arr": "10.27",
+       "dep": "10.27"
+      },
+      {
+       "stop": ".- CANICATTI' L. AOSTA",
+       "idx": 1,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": ".- ACQUA NUOVA",
+       "idx": 2,
+       "arr": "10.31",
+       "dep": "10.31"
+      },
+      {
+       "stop": "c/da GIDDIO",
+       "idx": 3,
+       "arr": "10.37",
+       "dep": "10.37"
+      },
+      {
+       "stop": "BIVIO NARO",
+       "idx": 4,
+       "arr": "10.45",
+       "dep": "10.45"
+      },
+      {
+       "stop": "NARO P.zza MARCONI",
+       "idx": 5,
+       "arr": "10.48",
+       "dep": "10.48"
+      },
+      {
+       "stop": "BV. CASE POPOLARI",
+       "idx": 6,
+       "arr": "10.50",
+       "dep": "10.50"
+      },
+      {
+       "stop": "CAMASTRA C. V. VENETO",
+       "idx": 7,
+       "arr": "10.56",
+       "dep": "10.56"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "SCOL.-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": ".- CANICATTI' L. AOSTA",
+       "idx": 1,
+       "arr": "12.25",
+       "dep": "12.25"
+      },
+      {
+       "stop": ".- ACQUA NUOVA",
+       "idx": 2,
+       "arr": "12.26",
+       "dep": "12.26"
+      },
+      {
+       "stop": "c/da GIDDIO",
+       "idx": 3,
+       "arr": "12.32",
+       "dep": "12.32"
+      },
+      {
+       "stop": "BIVIO NARO",
+       "idx": 4,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "NARO P.zza MARCONI",
+       "idx": 5,
+       "arr": "12.43",
+       "dep": "12.43"
+      },
+      {
+       "stop": "BV. CASE POPOLARI",
+       "idx": 6,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "CAMASTRA C. V. VENETO",
+       "idx": 7,
+       "arr": "13.03",
+       "dep": "13.03"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERALE.-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": ".- CANICATTI' L. AOSTA",
+       "idx": 1,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": ".- ACQUA NUOVA",
+       "idx": 2,
+       "arr": "13.26",
+       "dep": "13.26"
+      },
+      {
+       "stop": "c/da GIDDIO",
+       "idx": 3,
+       "arr": "13.32",
+       "dep": "13.32"
+      },
+      {
+       "stop": "BIVIO NARO",
+       "idx": 4,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "NARO P.zza MARCONI",
+       "idx": 5,
+       "arr": "13.43",
+       "dep": "13.43"
+      },
+      {
+       "stop": "BV. CASE POPOLARI",
+       "idx": 6,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "CAMASTRA C. V. VENETO",
+       "idx": 7,
+       "arr": "13.53",
+       "dep": "13.53"
+      },
+      {
+       "stop": "C/DA ZACCARIA .-",
+       "idx": 8,
+       "arr": "14.03",
+       "dep": "14.03"
+      },
+      {
+       "stop": "PALMA DI M. (C. Roma) .-",
+       "idx": 9,
+       "arr": "14.13",
+       "dep": "14.13"
+      },
+      {
+       "stop": "PALMA DI M. (Matteotti) .-",
+       "idx": 10,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "PALMA DI M. (V. Giordano) .-",
+       "idx": 11,
+       "arr": "14.20",
+       "dep": "14.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "SCOL.-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": ".- CANICATTI' L. AOSTA",
+       "idx": 1,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": ".- ACQUA NUOVA",
+       "idx": 2,
+       "arr": "13.26",
+       "dep": "13.26"
+      },
+      {
+       "stop": "c/da GIDDIO",
+       "idx": 3,
+       "arr": "13.32",
+       "dep": "13.32"
+      },
+      {
+       "stop": "BIVIO NARO",
+       "idx": 4,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "CAMASTRA C. V. VENETO",
+       "idx": 7,
+       "arr": "13.53",
+       "dep": "13.53"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "SCOL.-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": ".- CANICATTI' L. AOSTA",
+       "idx": 1,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": ".- ACQUA NUOVA",
+       "idx": 2,
+       "arr": "13.36",
+       "dep": "13.36"
+      },
+      {
+       "stop": "c/da GIDDIO",
+       "idx": 3,
+       "arr": "13.42",
+       "dep": "13.42"
+      },
+      {
+       "stop": "BIVIO NARO",
+       "idx": 4,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "NARO P.zza MARCONI",
+       "idx": 5,
+       "arr": "13.53",
+       "dep": "13.53"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "13",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE.-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": ".- CANICATTI' L. AOSTA",
+       "idx": 1,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": ".- ACQUA NUOVA",
+       "idx": 2,
+       "arr": "14.21",
+       "dep": "14.21"
+      },
+      {
+       "stop": "c/da GIDDIO",
+       "idx": 3,
+       "arr": "14.27",
+       "dep": "14.27"
+      },
+      {
+       "stop": "NARO P.zza MARCONI",
+       "idx": 5,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "BV. CASE POPOLARI",
+       "idx": 6,
+       "arr": "14.48",
+       "dep": "14.48"
+      },
+      {
+       "stop": "CAMASTRA C. V. VENETO",
+       "idx": 7,
+       "arr": "14.53",
+       "dep": "14.53"
+      },
+      {
+       "stop": "C/DA ZACCARIA .-",
+       "idx": 8,
+       "arr": "15.03",
+       "dep": "15.03"
+      },
+      {
+       "stop": "PALMA DI M. (C. Roma) .-",
+       "idx": 9,
+       "arr": "15.13",
+       "dep": "15.13"
+      },
+      {
+       "stop": "PALMA DI M. (Matteotti) .-",
+       "idx": 10,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "PALMA DI M. (V. Giordano) .-",
+       "idx": 11,
+       "arr": "15.20",
+       "dep": "15.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "15",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE.-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": ".- CANICATTI' L. AOSTA",
+       "idx": 1,
+       "arr": "17.15",
+       "dep": "17.15"
+      },
+      {
+       "stop": ".- ACQUA NUOVA",
+       "idx": 2,
+       "arr": "17.16",
+       "dep": "17.16"
+      },
+      {
+       "stop": "c/da GIDDIO",
+       "idx": 3,
+       "arr": "17.23",
+       "dep": "17.23"
+      },
+      {
+       "stop": "BIVIO NARO",
+       "idx": 4,
+       "arr": "17.31",
+       "dep": "17.31"
+      },
+      {
+       "stop": "NARO P.zza MARCONI",
+       "idx": 5,
+       "arr": "17.36",
+       "dep": "17.36"
+      },
+      {
+       "stop": "CAMASTRA C. V. VENETO",
+       "idx": 7,
+       "arr": "17.45",
+       "dep": "17.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAMASTRA C. V. VENETO",
+       "idx": 7,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "BV. CASE POPOLARI",
+       "idx": 6,
+       "arr": "6.52",
+       "dep": "6.52"
+      },
+      {
+       "stop": "NARO P.zza MARCONI",
+       "idx": 5,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "BIVIO NARO",
+       "idx": 4,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "c/da GIDDIO",
+       "idx": 3,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": ".- ACQUA NUOVA",
+       "idx": 2,
+       "arr": "7.12",
+       "dep": "7.12"
+      },
+      {
+       "stop": ".- CANICATTI' L. AOSTA",
+       "idx": 1,
+       "arr": "7.13",
+       "dep": "7.13"
+      },
+      {
+       "stop": ".- CANICATTI' F.S.",
+       "idx": 0,
+       "arr": "7.16",
+       "dep": "7.16"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "SCOL."
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAMASTRA C. V. VENETO",
+       "idx": 7,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "BV. CASE POPOLARI",
+       "idx": 6,
+       "arr": "7.53",
+       "dep": "7.53"
+      },
+      {
+       "stop": "NARO P.zza MARCONI",
+       "idx": 5,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "BIVIO NARO",
+       "idx": 4,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "c/da GIDDIO",
+       "idx": 3,
+       "arr": "8.03",
+       "dep": "8.03"
+      },
+      {
+       "stop": ".- ACQUA NUOVA",
+       "idx": 2,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": ".- CANICATTI' L. AOSTA",
+       "idx": 1,
+       "arr": "8.06",
+       "dep": "8.06"
+      }
+     ],
+     "valid": false
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "SCOL"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAMASTRA C. V. VENETO",
+       "idx": 7,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "BV. CASE POPOLARI",
+       "idx": 6,
+       "arr": "7.57",
+       "dep": "7.57"
+      },
+      {
+       "stop": "c/da GIDDIO",
+       "idx": 3,
+       "arr": "8.06",
+       "dep": "8.06"
+      },
+      {
+       "stop": ".- ACQUA NUOVA",
+       "idx": 2,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": ".- CANICATTI' L. AOSTA",
+       "idx": 1,
+       "arr": "8.12",
+       "dep": "8.12"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALMA DI M. (Matteotti) .-",
+       "idx": 10,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "C/DA ZACCARIA .-",
+       "idx": 8,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "CAMASTRA C. V. VENETO",
+       "idx": 7,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "BV. CASE POPOLARI",
+       "idx": 6,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "NARO P.zza MARCONI",
+       "idx": 5,
+       "arr": "7.52",
+       "dep": "7.52"
+      },
+      {
+       "stop": "BIVIO NARO",
+       "idx": 4,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "c/da GIDDIO",
+       "idx": 3,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": ".- ACQUA NUOVA",
+       "idx": 2,
+       "arr": "8.13",
+       "dep": "8.13"
+      },
+      {
+       "stop": ".- CANICATTI' L. AOSTA",
+       "idx": 1,
+       "arr": "8.16",
+       "dep": "8.16"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "SCOL"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "NARO P.zza MARCONI",
+       "idx": 5,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "BIVIO NARO",
+       "idx": 4,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "c/da GIDDIO",
+       "idx": 3,
+       "arr": "8.18",
+       "dep": "8.18"
+      },
+      {
+       "stop": ".- ACQUA NUOVA",
+       "idx": 2,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": ".- CANICATTI' L. AOSTA",
+       "idx": 1,
+       "arr": "8.21",
+       "dep": "8.21"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAMASTRA C. V. VENETO",
+       "idx": 7,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "BV. CASE POPOLARI",
+       "idx": 6,
+       "arr": "11.07",
+       "dep": "11.07"
+      },
+      {
+       "stop": "NARO P.zza MARCONI",
+       "idx": 5,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "BIVIO NARO",
+       "idx": 4,
+       "arr": "11.15",
+       "dep": "11.15"
+      },
+      {
+       "stop": "c/da GIDDIO",
+       "idx": 3,
+       "arr": "11.23",
+       "dep": "11.23"
+      },
+      {
+       "stop": ".- ACQUA NUOVA",
+       "idx": 2,
+       "arr": "11.25",
+       "dep": "11.25"
+      },
+      {
+       "stop": ".- CANICATTI' L. AOSTA",
+       "idx": 1,
+       "arr": "11.27",
+       "dep": "11.27"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "14",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "LICATA (C. Roma) .- .-",
+       "idx": 15,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "BV. STRADA STATALE .-",
+       "idx": 14,
+       "arr": "12.15",
+       "dep": "12.15"
+      },
+      {
+       "stop": "T.DI GAFFE ABITATO .-",
+       "idx": 13,
+       "arr": "12.17",
+       "dep": "12.17"
+      },
+      {
+       "stop": "TORRE DI GAFFE BV. .-",
+       "idx": 12,
+       "arr": "12.20",
+       "dep": "12.20"
+      },
+      {
+       "stop": "PALMA DI M. (V. Giordano) .-",
+       "idx": 11,
+       "arr": "12.32",
+       "dep": "12.32"
+      },
+      {
+       "stop": "PALMA DI M. (Matteotti) .-",
+       "idx": 10,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "PALMA DI M. (C. Roma) .-",
+       "idx": 9,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "C/DA ZACCARIA .-",
+       "idx": 8,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "CAMASTRA C. V. VENETO",
+       "idx": 7,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "BV. CASE POPOLARI",
+       "idx": 6,
+       "arr": "13.02",
+       "dep": "13.02"
+      },
+      {
+       "stop": "NARO P.zza MARCONI",
+       "idx": 5,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "BIVIO NARO",
+       "idx": 4,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "c/da GIDDIO",
+       "idx": 3,
+       "arr": "13.18",
+       "dep": "13.18"
+      },
+      {
+       "stop": ".- ACQUA NUOVA",
+       "idx": 2,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": ".- CANICATTI' L. AOSTA",
+       "idx": 1,
+       "arr": "13.21",
+       "dep": "13.21"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "16",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALMA DI M. (V. Giordano) .-",
+       "idx": 11,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "PALMA DI M. (C. Roma) .-",
+       "idx": 9,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "C/DA ZACCARIA .-",
+       "idx": 8,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "CAMASTRA C. V. VENETO",
+       "idx": 7,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "BV. CASE POPOLARI",
+       "idx": 6,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "NARO P.zza MARCONI",
+       "idx": 5,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "BIVIO NARO",
+       "idx": 4,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "c/da GIDDIO",
+       "idx": 3,
+       "arr": "15.13",
+       "dep": "15.13"
+      },
+      {
+       "stop": ".- ACQUA NUOVA",
+       "idx": 2,
+       "arr": "15.17",
+       "dep": "15.17"
+      },
+      {
+       "stop": ".- CANICATTI' L. AOSTA",
+       "idx": 1,
+       "arr": "15.18",
+       "dep": "15.18"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,898 @@
+{
+ "operator": "Interbus",
+ "route_id": "orari-interbus-p18",
+ "name": "Giardini - Francavilla, prolungamento estivo a Randazzo",
+ "source": "ORARI_INTERBUS/p018.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "16/914/6",
+    "GIARDINI-RECANATI Terminal Bus",
+    "Bv. Schisò Recanati",
+    "CHIANCHITTA",
+    "TRAPPITELLO Via XXIV Aprile",
+    "Via Berlinguer GAGGI P.zza V.Emanuele",
+    "Bv. Graniti",
+    "GRANITI Piazza Manganelli",
+    "Bv. Graniti",
+    "GOLE ALCANTARA",
+    "Bv. Motta Camastra",
+    "FRANCAVILLA P.zza Annunziata/Via dei Mulini",
+    "RANDAZZO Autostazione"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "16/9",
+       "to": "14/6"
+      },
+      "raw": "FERIALE16/9-14/6"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GIARDINI-RECANATI Terminal Bus",
+       "idx": 1,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "Bv. Schisò Recanati",
+       "idx": 2,
+       "arr": "9.25",
+       "dep": "9.25"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 3,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "TRAPPITELLO Via XXIV Aprile",
+       "idx": 4,
+       "arr": "9.35",
+       "dep": "9.35"
+      },
+      {
+       "stop": "Via Berlinguer GAGGI P.zza V.Emanuele",
+       "idx": 5,
+       "arr": "9.40",
+       "dep": "9.40"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 6,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "GOLE ALCANTARA",
+       "idx": 9,
+       "arr": "9.50",
+       "dep": "9.50"
+      },
+      {
+       "stop": "Bv. Motta Camastra",
+       "idx": 10,
+       "arr": "9.55",
+       "dep": "9.55"
+      },
+      {
+       "stop": "FRANCAVILLA P.zza Annunziata/Via dei Mulini",
+       "idx": 11,
+       "arr": "10.00",
+       "dep": "10.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "15/6",
+       "to": "15/9"
+      },
+      "raw": "FERIALE15/6-15/9"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GIARDINI-RECANATI Terminal Bus",
+       "idx": 1,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "Bv. Schisò Recanati",
+       "idx": 2,
+       "arr": "9.25",
+       "dep": "9.25"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 3,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "TRAPPITELLO Via XXIV Aprile",
+       "idx": 4,
+       "arr": "9.35",
+       "dep": "9.35"
+      },
+      {
+       "stop": "Via Berlinguer GAGGI P.zza V.Emanuele",
+       "idx": 5,
+       "arr": "9.40",
+       "dep": "9.40"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 6,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "GOLE ALCANTARA",
+       "idx": 9,
+       "arr": "9.50",
+       "dep": "9.50"
+      },
+      {
+       "stop": "Bv. Motta Camastra",
+       "idx": 10,
+       "arr": "9.55",
+       "dep": "9.55"
+      },
+      {
+       "stop": "FRANCAVILLA P.zza Annunziata/Via dei Mulini",
+       "idx": 11,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "RANDAZZO Autostazione",
+       "idx": 12,
+       "arr": "10.30",
+       "dep": "10.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": {
+       "from": "1/4",
+       "to": "15/09"
+      },
+      "raw": "FESTIVO1°/4-15/09"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GIARDINI-RECANATI Terminal Bus",
+       "idx": 1,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "Bv. Schisò Recanati",
+       "idx": 2,
+       "arr": "9.25",
+       "dep": "9.25"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 3,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "TRAPPITELLO Via XXIV Aprile",
+       "idx": 4,
+       "arr": "9.35",
+       "dep": "9.35"
+      },
+      {
+       "stop": "Via Berlinguer GAGGI P.zza V.Emanuele",
+       "idx": 5,
+       "arr": "9.40",
+       "dep": "9.40"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 6,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "GOLE ALCANTARA",
+       "idx": 9,
+       "arr": "9.50",
+       "dep": "9.50"
+      },
+      {
+       "stop": "Bv. Motta Camastra",
+       "idx": 10,
+       "arr": "9.55",
+       "dep": "9.55"
+      },
+      {
+       "stop": "FRANCAVILLA P.zza Annunziata/Via dei Mulini",
+       "idx": 11,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "RANDAZZO Autostazione",
+       "idx": 12,
+       "arr": "10.30",
+       "dep": "10.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "15/6",
+       "to": "15/9"
+      },
+      "raw": "FERIALE15/6-15/9"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPPITELLO Via XXIV Aprile",
+       "idx": 4,
+       "arr": "10.35",
+       "dep": "10.35"
+      },
+      {
+       "stop": "Via Berlinguer GAGGI P.zza V.Emanuele",
+       "idx": 5,
+       "arr": "10.40",
+       "dep": "10.40"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 6,
+       "arr": "10.45",
+       "dep": "10.45"
+      },
+      {
+       "stop": "GOLE ALCANTARA",
+       "idx": 9,
+       "arr": "10.50",
+       "dep": "10.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "15/6",
+       "to": "15/9"
+      },
+      "raw": "FERIALE15/6-15/9"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPPITELLO Via XXIV Aprile",
+       "idx": 4,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "Via Berlinguer GAGGI P.zza V.Emanuele",
+       "idx": 5,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 6,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "GOLE ALCANTARA",
+       "idx": 9,
+       "arr": "12.50",
+       "dep": "12.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": {
+       "from": "1/4",
+       "to": "31/10"
+      },
+      "raw": "FESTIVO1°/4-31/10"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPPITELLO Via XXIV Aprile",
+       "idx": 4,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "Via Berlinguer GAGGI P.zza V.Emanuele",
+       "idx": 5,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 6,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "GOLE ALCANTARA",
+       "idx": 9,
+       "arr": "13.50",
+       "dep": "13.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "13",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "15/6",
+       "to": "15/9"
+      },
+      "raw": "FERIALE15/6-15/9"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPPITELLO Via XXIV Aprile",
+       "idx": 4,
+       "arr": "18.35",
+       "dep": "18.35"
+      },
+      {
+       "stop": "Via Berlinguer GAGGI P.zza V.Emanuele",
+       "idx": 5,
+       "arr": "18.40",
+       "dep": "18.40"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 6,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "GOLE ALCANTARA",
+       "idx": 9,
+       "arr": "18.50",
+       "dep": "18.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "15",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/4",
+       "to": "31/10"
+      },
+      "raw": "FERIALE1°/4-31/10"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TRAPPITELLO Via XXIV Aprile",
+       "idx": 4,
+       "arr": "22.35",
+       "dep": "22.35"
+      },
+      {
+       "stop": "Via Berlinguer GAGGI P.zza V.Emanuele",
+       "idx": 5,
+       "arr": "22.40",
+       "dep": "22.40"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 6,
+       "arr": "22.45",
+       "dep": "22.45"
+      },
+      {
+       "stop": "GOLE ALCANTARA",
+       "idx": 9,
+       "arr": "22.50",
+       "dep": "22.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "16/9",
+       "to": "14/6"
+      },
+      "raw": "FERIALE16/9-14/6"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "FRANCAVILLA P.zza Annunziata/Via dei Mulini",
+       "idx": 11,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "Bv. Motta Camastra",
+       "idx": 10,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "GOLE ALCANTARA",
+       "idx": 9,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 6,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "Via Berlinguer GAGGI P.zza V.Emanuele",
+       "idx": 5,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "TRAPPITELLO Via XXIV Aprile",
+       "idx": 4,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 3,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "Bv. Schisò Recanati",
+       "idx": 2,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "GIARDINI-RECANATI Terminal Bus",
+       "idx": 1,
+       "arr": "13.35",
+       "dep": "13.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "15/6",
+       "to": "15/9"
+      },
+      "raw": "FERIALE15/6-15/9"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "RANDAZZO Autostazione",
+       "idx": 12,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "FRANCAVILLA P.zza Annunziata/Via dei Mulini",
+       "idx": 11,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "Bv. Motta Camastra",
+       "idx": 10,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "GOLE ALCANTARA",
+       "idx": 9,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 8,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "GRANITI Piazza Manganelli",
+       "idx": 7,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 6,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "Via Berlinguer GAGGI P.zza V.Emanuele",
+       "idx": 5,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "TRAPPITELLO Via XXIV Aprile",
+       "idx": 4,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 3,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "Bv. Schisò Recanati",
+       "idx": 2,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "GIARDINI-RECANATI Terminal Bus",
+       "idx": 1,
+       "arr": "14.00",
+       "dep": "14.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": {
+       "from": "1/4",
+       "to": "15/09"
+      },
+      "raw": "FESTIVO1°/4-15/09"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "RANDAZZO Autostazione",
+       "idx": 12,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "FRANCAVILLA P.zza Annunziata/Via dei Mulini",
+       "idx": 11,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Bv. Motta Camastra",
+       "idx": 10,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "GOLE ALCANTARA",
+       "idx": 9,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 8,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "GRANITI Piazza Manganelli",
+       "idx": 7,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 6,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "Via Berlinguer GAGGI P.zza V.Emanuele",
+       "idx": 5,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "TRAPPITELLO Via XXIV Aprile",
+       "idx": 4,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 3,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "Bv. Schisò Recanati",
+       "idx": 2,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "GIARDINI-RECANATI Terminal Bus",
+       "idx": 1,
+       "arr": "15.10",
+       "dep": "15.10"
+      }
+     ],
+     "valid": false
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": {
+       "from": "1/4",
+       "to": "31/10"
+      },
+      "raw": "FESTIVO1°/4-31/10"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "GOLE ALCANTARA",
+       "idx": 9,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 6,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "Via Berlinguer GAGGI P.zza V.Emanuele",
+       "idx": 5,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "TRAPPITELLO Via XXIV Aprile",
+       "idx": 4,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/4",
+       "to": "31/10"
+      },
+      "raw": "FERIALE1°/4-31/10"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "GOLE ALCANTARA",
+       "idx": 9,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 6,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "Via Berlinguer GAGGI P.zza V.Emanuele",
+       "idx": 5,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "TRAPPITELLO Via XXIV Aprile",
+       "idx": 4,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "15/6",
+       "to": "15/9"
+      },
+      "raw": "FERIALE15/6-15/9"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "GOLE ALCANTARA",
+       "idx": 9,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 6,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "Via Berlinguer GAGGI P.zza V.Emanuele",
+       "idx": 5,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "TRAPPITELLO Via XXIV Aprile",
+       "idx": 4,
+       "arr": "16.15",
+       "dep": "16.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "14",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "15/6",
+       "to": "15/9"
+      },
+      "raw": "FERIALE15/6-15/9"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "GOLE ALCANTARA",
+       "idx": 9,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 6,
+       "arr": "19.05",
+       "dep": "19.05"
+      },
+      {
+       "stop": "Via Berlinguer GAGGI P.zza V.Emanuele",
+       "idx": 5,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "TRAPPITELLO Via XXIV Aprile",
+       "idx": 4,
+       "arr": "19.15",
+       "dep": "19.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "16",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "15/6",
+       "to": "15/9"
+      },
+      "raw": "FERIALE15/6-15/9"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "GOLE ALCANTARA",
+       "idx": 9,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 6,
+       "arr": "20.05",
+       "dep": "20.05"
+      },
+      {
+       "stop": "Via Berlinguer GAGGI P.zza V.Emanuele",
+       "idx": 5,
+       "arr": "20.10",
+       "dep": "20.10"
+      },
+      {
+       "stop": "TRAPPITELLO Via XXIV Aprile",
+       "idx": 4,
+       "arr": "20.15",
+       "dep": "20.15"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

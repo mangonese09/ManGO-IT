@@ -1,0 +1,207 @@
+{
+ "operator": "F.lli Patti",
+ "route_id": "patti-f-lli-patti-orari-p4",
+ "name": "Unknown route",
+ "source": "patti__F.LLI_PATTI_ORARI/p004.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio DIVIETO DI CARICO ARAGONA PER C.DA CONSOLIDA E VICEVERSA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "(VIALE ALDO MORO N° 75 VILLA COMUNALE) *",
+    "FAVARA (V.LE CHE GUEVARA SCUOLE)",
+    "FAVARA (PIAZZA ITRIA)",
+    "ZONA INDUSTRIALE (IPIA)",
+    "ZONA INDUSTRIALE (EX SS 189 IND. SARCUTO)",
+    "DI AGRIGENTO S. GIOVANNI DI DIO (C.DA CONSOLIDA)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "(VIALE ALDO MORO N° 75 VILLA COMUNALE) *",
+       "idx": 0,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "FAVARA (V.LE CHE GUEVARA SCUOLE)",
+       "idx": 1,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "FAVARA (PIAZZA ITRIA)",
+       "idx": 2,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "ZONA INDUSTRIALE (IPIA)",
+       "idx": 3,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "ZONA INDUSTRIALE (EX SS 189 IND. SARCUTO)",
+       "idx": 4,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "DI AGRIGENTO S. GIOVANNI DI DIO (C.DA CONSOLIDA)",
+       "idx": 5,
+       "arr": "8.35",
+       "dep": "8.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "(VIALE ALDO MORO N° 75 VILLA COMUNALE) *",
+       "idx": 0,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "FAVARA (V.LE CHE GUEVARA SCUOLE)",
+       "idx": 1,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "FAVARA (PIAZZA ITRIA)",
+       "idx": 2,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "ZONA INDUSTRIALE (IPIA)",
+       "idx": 3,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "ZONA INDUSTRIALE (EX SS 189 IND. SARCUTO)",
+       "idx": 4,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "DI AGRIGENTO S. GIOVANNI DI DIO (C.DA CONSOLIDA)",
+       "idx": 5,
+       "arr": "13.00",
+       "dep": "13.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "DI AGRIGENTO S. GIOVANNI DI DIO (C.DA CONSOLIDA)",
+       "idx": 5,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "ZONA INDUSTRIALE (EX SS 189 IND. SARCUTO)",
+       "idx": 4,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "ZONA INDUSTRIALE (IPIA)",
+       "idx": 3,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "FAVARA (PIAZZA ITRIA)",
+       "idx": 2,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "(VIALE ALDO MORO N° 75 VILLA COMUNALE) *",
+       "idx": 0,
+       "arr": "9.20",
+       "dep": "9.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "DI AGRIGENTO S. GIOVANNI DI DIO (C.DA CONSOLIDA)",
+       "idx": 5,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "ZONA INDUSTRIALE (EX SS 189 IND. SARCUTO)",
+       "idx": 4,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "ZONA INDUSTRIALE (IPIA)",
+       "idx": 3,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "FAVARA (PIAZZA ITRIA)",
+       "idx": 2,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "(VIALE ALDO MORO N° 75 VILLA COMUNALE) *",
+       "idx": 0,
+       "arr": "14.50",
+       "dep": "14.50"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,102 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-sr-orari-p13",
+ "name": "Sortino - Lentini",
+ "source": "AST_prov.di_SR_-_ORARI/p013.json",
+ "prescriptions": [
+  "Prescrizioni NESSUNA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Sortino (piazza Verga)",
+    "Villasmundo",
+    "Carlentini (via Scavonetti)",
+    "Lentini (piazza Sofisti)",
+    "Lentini (Stazione FS)"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "KMFERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Sortino (piazza Verga)",
+       "idx": 0,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "Villasmundo",
+       "idx": 1,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "Carlentini (via Scavonetti)",
+       "idx": 2,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "Lentini (piazza Sofisti)",
+       "idx": 3,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "Lentini (Stazione FS)",
+       "idx": 4,
+       "arr": "8.10",
+       "dep": "8.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "STAZIONAMENTIKMFERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Lentini (Stazione FS)",
+       "idx": 4,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Carlentini (via Scavonetti)",
+       "idx": 2,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "Villasmundo",
+       "idx": 1,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "Sortino (piazza Verga)",
+       "idx": 0,
+       "arr": "15.40",
+       "dep": "15.40"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

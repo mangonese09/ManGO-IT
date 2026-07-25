@@ -1,0 +1,169 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-ct-orari-474",
+ "name": "Motta Sant'Anastasia - Paternò",
+ "source": "AST_prov._di_CT_-_ORARI/p026.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio divieto di servizio locale estremi compresi fra il bivio CALCORRENTE 8 sulla SS 121 e PATERNO'"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Motta Sant'Anastasia (corso Sicilia)",
+    "Paternò (piazza Vittorio Veneto)"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEeriodoscolast"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Motta Sant'Anastasia (corso Sicilia)",
+       "idx": 0,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "Paternò (piazza Vittorio Veneto)",
+       "idx": 1,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FEinRIpAeLrEiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Motta Sant'Anastasia (corso Sicilia)",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Paternò (piazza Vittorio Veneto)",
+       "idx": 1,
+       "arr": "14.30",
+       "dep": "14.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FEinRIpAeLrEiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Motta Sant'Anastasia (corso Sicilia)",
+       "idx": 0,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "Paternò (piazza Vittorio Veneto)",
+       "idx": 1,
+       "arr": "15.30",
+       "dep": "15.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEeriodoscolast"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Paternò (piazza Vittorio Veneto)",
+       "idx": 1,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "Motta Sant'Anastasia (corso Sicilia)",
+       "idx": 0,
+       "arr": "7.15",
+       "dep": "7.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FEinRIpAeLrEiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Paternò (piazza Vittorio Veneto)",
+       "idx": 1,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Motta Sant'Anastasia (corso Sicilia)",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FEinRIpAeLrEiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Paternò (piazza Vittorio Veneto)",
+       "idx": 1,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Motta Sant'Anastasia (corso Sicilia)",
+       "idx": 0,
+       "arr": "15.00",
+       "dep": "15.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

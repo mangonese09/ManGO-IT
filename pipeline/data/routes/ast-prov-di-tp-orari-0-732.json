@@ -1,0 +1,603 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-tp-orari-0-732",
+ "name": "CASTELLAMARE DEL GOLFO via della Repubblica - TRAPANI – Terminal piazzale Ilio",
+ "source": "AST_prov._di_TP_-ORARI_0/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio nessuna"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "CASTELLAMARE DEL GOLFO via della Repubblica",
+    "BALATA DI BAIDA via Laudani",
+    "BATTAGLIA via Battaglia",
+    "BUSETO PALIZZOLO – via P. Randazzo",
+    "CROCEVIE via Rinascita A 29",
+    "VALDERICE via Vespri via",
+    "BUSETO via Roma",
+    "CHIESANUOVA via Oberdan",
+    "CROCCI via Crocci",
+    "TRAPANI – Terminal piazzale Ilio"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CASTELLAMARE DEL GOLFO via della Repubblica",
+       "idx": 0,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "BALATA DI BAIDA via Laudani",
+       "idx": 1,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "BATTAGLIA via Battaglia",
+       "idx": 2,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "BUSETO PALIZZOLO – via P. Randazzo",
+       "idx": 3,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "BUSETO via Roma",
+       "idx": 6,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "CHIESANUOVA via Oberdan",
+       "idx": 7,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "CROCCI via Crocci",
+       "idx": 8,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 9,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALESCOLASTICA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CASTELLAMARE DEL GOLFO via della Repubblica",
+       "idx": 0,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "BALATA DI BAIDA via Laudani",
+       "idx": 1,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "BATTAGLIA via Battaglia",
+       "idx": 2,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "BUSETO PALIZZOLO – via P. Randazzo",
+       "idx": 3,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "CROCEVIE via Rinascita A 29",
+       "idx": 4,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "VALDERICE via Vespri via",
+       "idx": 5,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 9,
+       "arr": "8.20",
+       "dep": "8.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CASTELLAMARE DEL GOLFO via della Repubblica",
+       "idx": 0,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 9,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALESCOLASTICA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CASTELLAMARE DEL GOLFO via della Repubblica",
+       "idx": 0,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "BALATA DI BAIDA via Laudani",
+       "idx": 1,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "BATTAGLIA via Battaglia",
+       "idx": 2,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "CROCEVIE via Rinascita A 29",
+       "idx": 4,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "VALDERICE via Vespri via",
+       "idx": 5,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 9,
+       "arr": "8.10",
+       "dep": "8.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CASTELLAMARE DEL GOLFO via della Repubblica",
+       "idx": 0,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "BALATA DI BAIDA via Laudani",
+       "idx": 1,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "BATTAGLIA via Battaglia",
+       "idx": 2,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "BUSETO via Roma",
+       "idx": 6,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "CHIESANUOVA via Oberdan",
+       "idx": 7,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "CROCCI via Crocci",
+       "idx": 8,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 9,
+       "arr": "13.50",
+       "dep": "13.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CASTELLAMARE DEL GOLFO via della Repubblica",
+       "idx": 0,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "BALATA DI BAIDA via Laudani",
+       "idx": 1,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "BATTAGLIA via Battaglia",
+       "idx": 2,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "CROCEVIE via Rinascita A 29",
+       "idx": 4,
+       "arr": "17.05",
+       "dep": "17.05"
+      },
+      {
+       "stop": "VALDERICE via Vespri via",
+       "idx": 5,
+       "arr": "17.15",
+       "dep": "17.15"
+      },
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 9,
+       "arr": "17.50",
+       "dep": "17.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 9,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "CROCCI via Crocci",
+       "idx": 8,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "CHIESANUOVA via Oberdan",
+       "idx": 7,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "BUSETO PALIZZOLO – via P. Randazzo",
+       "idx": 3,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "BATTAGLIA via Battaglia",
+       "idx": 2,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "BALATA DI BAIDA via Laudani",
+       "idx": 1,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "CASTELLAMARE DEL GOLFO via della Repubblica",
+       "idx": 0,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALESCOLASTICA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 9,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "CROCCI via Crocci",
+       "idx": 8,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "CHIESANUOVA via Oberdan",
+       "idx": 7,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "BUSETO PALIZZOLO – via P. Randazzo",
+       "idx": 3,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "BALATA DI BAIDA via Laudani",
+       "idx": 1,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "CASTELLAMARE DEL GOLFO via della Repubblica",
+       "idx": 0,
+       "arr": "15.40",
+       "dep": "15.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALESCOLASTICA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 9,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "VALDERICE via Vespri via",
+       "idx": 5,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "CROCEVIE via Rinascita A 29",
+       "idx": 4,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "BATTAGLIA via Battaglia",
+       "idx": 2,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "BALATA DI BAIDA via Laudani",
+       "idx": 1,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "CASTELLAMARE DEL GOLFO via della Repubblica",
+       "idx": 0,
+       "arr": "15.45",
+       "dep": "15.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 9,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "CASTELLAMARE DEL GOLFO via della Repubblica",
+       "idx": 0,
+       "arr": "15.20",
+       "dep": "15.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 9,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "VALDERICE via Vespri via",
+       "idx": 5,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "CROCEVIE via Rinascita A 29",
+       "idx": 4,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "BATTAGLIA via Battaglia",
+       "idx": 2,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "BALATA DI BAIDA via Laudani",
+       "idx": 1,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "CASTELLAMARE DEL GOLFO via della Repubblica",
+       "idx": 0,
+       "arr": "15.45",
+       "dep": "15.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "TRAPANI – Terminal piazzale Ilio",
+       "idx": 9,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "CROCCI via Crocci",
+       "idx": 8,
+       "arr": "18.25",
+       "dep": "18.25"
+      },
+      {
+       "stop": "CHIESANUOVA via Oberdan",
+       "idx": 7,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "BUSETO PALIZZOLO – via P. Randazzo",
+       "idx": 3,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "BATTAGLIA via Battaglia",
+       "idx": 2,
+       "arr": "18.50",
+       "dep": "18.50"
+      },
+      {
+       "stop": "BALATA DI BAIDA via Laudani",
+       "idx": 1,
+       "arr": "18.55",
+       "dep": "18.55"
+      },
+      {
+       "stop": "CASTELLAMARE DEL GOLFO via della Repubblica",
+       "idx": 0,
+       "arr": "19.25",
+       "dep": "19.25"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

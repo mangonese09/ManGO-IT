@@ -1,0 +1,464 @@
+{
+ "operator": "Etna Trasporti",
+ "route_id": "etna-trasporti-orari-2-p7",
+ "name": "Aidone - Piazza Armerina - Valguarnera - Catania",
+ "source": "ETNA_TRASPORTI_ORARI_2/p007.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "AIDONE (Piazza Cultreri)",
+    "PIAZZA ARMERINA (V.le G. Ciancio-P.zza Marescalchi)",
+    "VALGUARNERA (Via Mazzini, 57)",
+    "DITTAINO (Stazione F.S.)",
+    "DITTAINO (Slargo Rotonda Outlet)",
+    "CATANIA (Aeroporto Fontanarossa)",
+    "CATANIA (Terminal Bus Via Archimede)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AIDONE (Piazza Cultreri)",
+       "idx": 0,
+       "arr": "5.30",
+       "dep": "5.30"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (V.le G. Ciancio-P.zza Marescalchi)",
+       "idx": 1,
+       "arr": "5.45",
+       "dep": "5.45"
+      },
+      {
+       "stop": "VALGUARNERA (Via Mazzini, 57)",
+       "idx": 2,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "DITTAINO (Stazione F.S.)",
+       "idx": 3,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "DITTAINO (Slargo Rotonda Outlet)",
+       "idx": 4,
+       "arr": "6.25",
+       "dep": "6.25"
+      },
+      {
+       "stop": "CATANIA (Aeroporto Fontanarossa)",
+       "idx": 5,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "CATANIA (Terminal Bus Via Archimede)",
+       "idx": 6,
+       "arr": "7.20",
+       "dep": "7.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIEROesclusoNatale-CapodannoePasqua"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AIDONE (Piazza Cultreri)",
+       "idx": 0,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (V.le G. Ciancio-P.zza Marescalchi)",
+       "idx": 1,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "VALGUARNERA (Via Mazzini, 57)",
+       "idx": 2,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "DITTAINO (Stazione F.S.)",
+       "idx": 3,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "DITTAINO (Slargo Rotonda Outlet)",
+       "idx": 4,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "CATANIA (Aeroporto Fontanarossa)",
+       "idx": 5,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "CATANIA (Terminal Bus Via Archimede)",
+       "idx": 6,
+       "arr": "9.20",
+       "dep": "9.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdaLunedìaVenerdì"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AIDONE (Piazza Cultreri)",
+       "idx": 0,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (V.le G. Ciancio-P.zza Marescalchi)",
+       "idx": 1,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "VALGUARNERA (Via Mazzini, 57)",
+       "idx": 2,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "DITTAINO (Stazione F.S.)",
+       "idx": 3,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "DITTAINO (Slargo Rotonda Outlet)",
+       "idx": 4,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "CATANIA (Aeroporto Fontanarossa)",
+       "idx": 5,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "CATANIA (Terminal Bus Via Archimede)",
+       "idx": 6,
+       "arr": "15.20",
+       "dep": "15.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIEROesclusoNatale-CapodannoePasqua"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AIDONE (Piazza Cultreri)",
+       "idx": 0,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (V.le G. Ciancio-P.zza Marescalchi)",
+       "idx": 1,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "VALGUARNERA (Via Mazzini, 57)",
+       "idx": 2,
+       "arr": "17.05",
+       "dep": "17.05"
+      },
+      {
+       "stop": "DITTAINO (Stazione F.S.)",
+       "idx": 3,
+       "arr": "17.20",
+       "dep": "17.20"
+      },
+      {
+       "stop": "DITTAINO (Slargo Rotonda Outlet)",
+       "idx": 4,
+       "arr": "17.25",
+       "dep": "17.25"
+      },
+      {
+       "stop": "CATANIA (Aeroporto Fontanarossa)",
+       "idx": 5,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "CATANIA (Terminal Bus Via Archimede)",
+       "idx": 6,
+       "arr": "18.20",
+       "dep": "18.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIEROesclusoNatale-CapodannoePasqua"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Terminal Bus Via Archimede)",
+       "idx": 6,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "CATANIA (Aeroporto Fontanarossa)",
+       "idx": 5,
+       "arr": "10.40",
+       "dep": "10.40"
+      },
+      {
+       "stop": "DITTAINO (Slargo Rotonda Outlet)",
+       "idx": 4,
+       "arr": "11.25",
+       "dep": "11.25"
+      },
+      {
+       "stop": "DITTAINO (Stazione F.S.)",
+       "idx": 3,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "VALGUARNERA (Via Mazzini, 57)",
+       "idx": 2,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (V.le G. Ciancio-P.zza Marescalchi)",
+       "idx": 1,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "AIDONE (Piazza Cultreri)",
+       "idx": 0,
+       "arr": "12.25",
+       "dep": "12.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Terminal Bus Via Archimede)",
+       "idx": 6,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "CATANIA (Aeroporto Fontanarossa)",
+       "idx": 5,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "DITTAINO (Slargo Rotonda Outlet)",
+       "idx": 4,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "DITTAINO (Stazione F.S.)",
+       "idx": 3,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "VALGUARNERA (Via Mazzini, 57)",
+       "idx": 2,
+       "arr": "15.45",
+       "dep": "15.45"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (V.le G. Ciancio-P.zza Marescalchi)",
+       "idx": 1,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "AIDONE (Piazza Cultreri)",
+       "idx": 0,
+       "arr": "16.25",
+       "dep": "16.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdaLunedìaVenerdì"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Terminal Bus Via Archimede)",
+       "idx": 6,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "CATANIA (Aeroporto Fontanarossa)",
+       "idx": 5,
+       "arr": "17.40",
+       "dep": "17.40"
+      },
+      {
+       "stop": "DITTAINO (Slargo Rotonda Outlet)",
+       "idx": 4,
+       "arr": "18.25",
+       "dep": "18.25"
+      },
+      {
+       "stop": "DITTAINO (Stazione F.S.)",
+       "idx": 3,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "VALGUARNERA (Via Mazzini, 57)",
+       "idx": 2,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (V.le G. Ciancio-P.zza Marescalchi)",
+       "idx": 1,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "AIDONE (Piazza Cultreri)",
+       "idx": 0,
+       "arr": "19.25",
+       "dep": "19.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIEROesclusoNatale-CapodannoePasqua"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Terminal Bus Via Archimede)",
+       "idx": 6,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "CATANIA (Aeroporto Fontanarossa)",
+       "idx": 5,
+       "arr": "19.40",
+       "dep": "19.40"
+      },
+      {
+       "stop": "DITTAINO (Slargo Rotonda Outlet)",
+       "idx": 4,
+       "arr": "20.25",
+       "dep": "20.25"
+      },
+      {
+       "stop": "DITTAINO (Stazione F.S.)",
+       "idx": 3,
+       "arr": "20.30",
+       "dep": "20.30"
+      },
+      {
+       "stop": "VALGUARNERA (Via Mazzini, 57)",
+       "idx": 2,
+       "arr": "20.45",
+       "dep": "20.45"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (V.le G. Ciancio-P.zza Marescalchi)",
+       "idx": 1,
+       "arr": "21.10",
+       "dep": "21.10"
+      },
+      {
+       "stop": "AIDONE (Piazza Cultreri)",
+       "idx": 0,
+       "arr": "21.25",
+       "dep": "21.25"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

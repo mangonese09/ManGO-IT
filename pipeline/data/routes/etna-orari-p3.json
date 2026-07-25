@@ -1,0 +1,150 @@
+{
+ "operator": "Etna Trasporti",
+ "route_id": "etna-orari-p3",
+ "name": "Etna TrNaso - Tortorici - Catania",
+ "source": "ETNA_ORARI/p003.json",
+ "prescriptions": [
+  "Prescrizioni d'EsercizNessuno"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "(Piazza Roma-Municipio)",
+    "(Via F. Crispi Ang. Via Libertà)",
+    "(Via R. Livatino Piazza Zumbo)",
+    "(Bivio)",
+    "(Piazza Umberto I°)",
+    "VITTORIA",
+    "(Via Libertà, 119)",
+    "(Autostazione)",
+    "(Via A. Moro Staz. FCE)",
+    "(Via Etna-Staz. FCE-Corso Umberto I°-P.za",
+    "Spedalieri)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEKMSTAZIONAMENTIdalunedìavenerdìinperiodoscolasticoNASO"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "(Piazza Roma-Municipio)",
+       "idx": 0,
+       "arr": "5.55",
+       "dep": "5.55"
+      },
+      {
+       "stop": "(Bivio)",
+       "idx": 3,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "(Piazza Umberto I°)",
+       "idx": 4,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "VITTORIA",
+       "idx": 5,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "(Via Libertà, 119)",
+       "idx": 6,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "(Autostazione)",
+       "idx": 7,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "(Via Etna-Staz. FCE-Corso Umberto I°-P.za",
+       "idx": 9,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "Spedalieri)",
+       "idx": 10,
+       "arr": "9.05",
+       "dep": "9.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "KMFERIALEdalunedìavenerdìinperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Spedalieri)",
+       "idx": 10,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "(Via Etna-Staz. FCE-Corso Umberto I°-P.za",
+       "idx": 9,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "(Autostazione)",
+       "idx": 7,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "(Via Libertà, 119)",
+       "idx": 6,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "VITTORIA",
+       "idx": 5,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "(Piazza Umberto I°)",
+       "idx": 4,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "(Bivio)",
+       "idx": 3,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "(Piazza Roma-Municipio)",
+       "idx": 0,
+       "arr": "15.40",
+       "dep": "15.40"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

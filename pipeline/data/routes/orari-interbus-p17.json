@@ -1,0 +1,767 @@
+{
+ "operator": "Interbus",
+ "route_id": "orari-interbus-p17",
+ "name": "Roccela Valdemone - Francavilla di Sicilia - Giarre - Catania, diramazione Motta Camastra, Graniti e Riposto Co",
+ "source": "ORARI_INTERBUS/p017.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "ROCCELLA VALDEMONE P.zza Col. Mandanici",
+    "MOIO ALCANTARA Viale Papa Giovanni XXIII",
+    "MALVAGNA Slargo Gurnazzo (Inizio Via Nuova)",
+    "Verzella Via Provinciale 40",
+    "Bv. Castiglione",
+    "FRANCAVILLA DI SICILIA Piazza Annunziata (Via dei Mulini)",
+    "Bv. Motta Camastra",
+    "MOTTA CAMASTRA Slargo Via Roma (Scuole Medie)",
+    "Bv. Motta Camastra",
+    "Gole Alcantara",
+    "Bv. Graniti",
+    "GRANITI Piazza Manganelli",
+    "Bv. Graniti",
+    "GAGGI Piazza Vittorio Emanuele (Per Francavilla)",
+    "TRAPPITELLO Via Via XXIV Aprile",
+    "CHIANCHITTA",
+    "TAORMINA (Via Pirandello Terminal Bus)",
+    "GIARDINI S. Giovanni (Via Umberto SS 114)",
+    "GIARDINI F.S.",
+    "GIARDINI S. Giovanni (Via Umberto SS 114)",
+    "FIUMEFREDDO (P.zza Chiesa Madre) Per Giardini",
+    "MASCALI (Via Nazionale)",
+    "GIARRE (P.zza Duono/Via Callipoli 236)",
+    "RIPOSTO Via Roma (Angolo Villa Pantano)",
+    "ACIREALE (Piazza Duomo)",
+    "CATANIA (Via D'Amico/Archimede)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "IADLOESCOLAS"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TAORMINA (Via Pirandello Terminal Bus)",
+       "idx": 16,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 18,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "GIARDINI S. Giovanni (Via Umberto SS 114)",
+       "idx": 19,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "FIUMEFREDDO (P.zza Chiesa Madre) Per Giardini",
+       "idx": 20,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "MASCALI (Via Nazionale)",
+       "idx": 21,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Callipoli 236)",
+       "idx": 22,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "RIPOSTO Via Roma (Angolo Villa Pantano)",
+       "idx": 23,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEPERIOIDNOSCOLASTICO"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ROCCELLA VALDEMONE P.zza Col. Mandanici",
+       "idx": 0,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "MOIO ALCANTARA Viale Papa Giovanni XXIII",
+       "idx": 1,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "MALVAGNA Slargo Gurnazzo (Inizio Via Nuova)",
+       "idx": 2,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "FRANCAVILLA DI SICILIA Piazza Annunziata (Via dei Mulini)",
+       "idx": 5,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "Bv. Motta Camastra",
+       "idx": 6,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "MOTTA CAMASTRA Slargo Via Roma (Scuole Medie)",
+       "idx": 7,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "Bv. Motta Camastra",
+       "idx": 8,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Gole Alcantara",
+       "idx": 9,
+       "arr": "7.12",
+       "dep": "7.12"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 10,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "GRANITI Piazza Manganelli",
+       "idx": 11,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 12,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "GAGGI Piazza Vittorio Emanuele (Per Francavilla)",
+       "idx": 13,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "TRAPPITELLO Via Via XXIV Aprile",
+       "idx": 14,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 15,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "FIUMEFREDDO (P.zza Chiesa Madre) Per Giardini",
+       "idx": 20,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "MASCALI (Via Nazionale)",
+       "idx": 21,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Callipoli 236)",
+       "idx": 22,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "RIPOSTO Via Roma (Angolo Villa Pantano)",
+       "idx": 23,
+       "arr": "8.15",
+       "dep": "8.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdalunedìavenerdì"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TAORMINA (Via Pirandello Terminal Bus)",
+       "idx": 16,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 18,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "GIARDINI S. Giovanni (Via Umberto SS 114)",
+       "idx": 19,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "FIUMEFREDDO (P.zza Chiesa Madre) Per Giardini",
+       "idx": 20,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "MASCALI (Via Nazionale)",
+       "idx": 21,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Callipoli 236)",
+       "idx": 22,
+       "arr": "12.15",
+       "dep": "12.15"
+      },
+      {
+       "stop": "ACIREALE (Piazza Duomo)",
+       "idx": 24,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 25,
+       "arr": "13.15",
+       "dep": "13.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEsaba1t5o/6-15/9"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "FRANCAVILLA DI SICILIA Piazza Annunziata (Via dei Mulini)",
+       "idx": 5,
+       "arr": "12.25",
+       "dep": "12.25"
+      },
+      {
+       "stop": "Bv. Motta Camastra",
+       "idx": 6,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "Bv. Motta Camastra",
+       "idx": 8,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "Gole Alcantara",
+       "idx": 9,
+       "arr": "12.32",
+       "dep": "12.32"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 10,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 12,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "GAGGI Piazza Vittorio Emanuele (Per Francavilla)",
+       "idx": 13,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "TRAPPITELLO Via Via XXIV Aprile",
+       "idx": 14,
+       "arr": "12.45",
+       "dep": "12.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": {
+       "from": "15/6",
+       "to": "15/9"
+      },
+      "raw": "FERIALEdalunedìavenerdì15/6-15/9"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "FRANCAVILLA DI SICILIA Piazza Annunziata (Via dei Mulini)",
+       "idx": 5,
+       "arr": "19.40",
+       "dep": "19.40"
+      },
+      {
+       "stop": "Bv. Motta Camastra",
+       "idx": 6,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "Bv. Motta Camastra",
+       "idx": 8,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "Gole Alcantara",
+       "idx": 9,
+       "arr": "19.47",
+       "dep": "19.47"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 10,
+       "arr": "19.50",
+       "dep": "19.50"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 12,
+       "arr": "19.50",
+       "dep": "19.50"
+      },
+      {
+       "stop": "GAGGI Piazza Vittorio Emanuele (Per Francavilla)",
+       "idx": 13,
+       "arr": "19.55",
+       "dep": "19.55"
+      },
+      {
+       "stop": "TRAPPITELLO Via Via XXIV Aprile",
+       "idx": 14,
+       "arr": "20.00",
+       "dep": "20.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdalunedìavenerdì"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 25,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "ACIREALE (Piazza Duomo)",
+       "idx": 24,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Callipoli 236)",
+       "idx": 22,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "MASCALI (Via Nazionale)",
+       "idx": 21,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "FIUMEFREDDO (P.zza Chiesa Madre) Per Giardini",
+       "idx": 20,
+       "arr": "8.35",
+       "dep": "8.35"
+      },
+      {
+       "stop": "GIARDINI S. Giovanni (Via Umberto SS 114)",
+       "idx": 19,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 18,
+       "arr": "8.50",
+       "dep": "8.50"
+      },
+      {
+       "stop": "TAORMINA (Via Pirandello Terminal Bus)",
+       "idx": 16,
+       "arr": "9.05",
+       "dep": "9.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEPERIOIDNOSCOLASTICO"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO Via Roma (Angolo Villa Pantano)",
+       "idx": 23,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Callipoli 236)",
+       "idx": 22,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "MASCALI (Via Nazionale)",
+       "idx": 21,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "FIUMEFREDDO (P.zza Chiesa Madre) Per Giardini",
+       "idx": 20,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "GIARDINI S. Giovanni (Via Umberto SS 114)",
+       "idx": 19,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 18,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "TAORMINA (Via Pirandello Terminal Bus)",
+       "idx": 16,
+       "arr": "14.40",
+       "dep": "14.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEPERIOIDNOSCOLASTICO"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO Via Roma (Angolo Villa Pantano)",
+       "idx": 23,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Callipoli 236)",
+       "idx": 22,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "MASCALI (Via Nazionale)",
+       "idx": 21,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "FIUMEFREDDO (P.zza Chiesa Madre) Per Giardini",
+       "idx": 20,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 15,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "TRAPPITELLO Via Via XXIV Aprile",
+       "idx": 14,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "GAGGI Piazza Vittorio Emanuele (Per Francavilla)",
+       "idx": 13,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 12,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "GRANITI Piazza Manganelli",
+       "idx": 11,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 10,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "Gole Alcantara",
+       "idx": 9,
+       "arr": "14.53",
+       "dep": "14.53"
+      },
+      {
+       "stop": "Bv. Motta Camastra",
+       "idx": 8,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "MOTTA CAMASTRA Slargo Via Roma (Scuole Medie)",
+       "idx": 7,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "Bv. Motta Camastra",
+       "idx": 6,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "FRANCAVILLA DI SICILIA Piazza Annunziata (Via dei Mulini)",
+       "idx": 5,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "MALVAGNA Slargo Gurnazzo (Inizio Via Nuova)",
+       "idx": 2,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "MOIO ALCANTARA Viale Papa Giovanni XXIII",
+       "idx": 1,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "ROCCELLA VALDEMONE P.zza Col. Mandanici",
+       "idx": 0,
+       "arr": "15.55",
+       "dep": "15.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE15/9es1c5l/u6s-oAgosto"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "TRAPPITELLO Via Via XXIV Aprile",
+       "idx": 14,
+       "arr": "23.25",
+       "dep": "23.25"
+      },
+      {
+       "stop": "GAGGI Piazza Vittorio Emanuele (Per Francavilla)",
+       "idx": 13,
+       "arr": "23.30",
+       "dep": "23.30"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 12,
+       "arr": "23.35",
+       "dep": "23.35"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 10,
+       "arr": "23.35",
+       "dep": "23.35"
+      },
+      {
+       "stop": "Gole Alcantara",
+       "idx": 9,
+       "arr": "23.38",
+       "dep": "23.38"
+      },
+      {
+       "stop": "Bv. Motta Camastra",
+       "idx": 8,
+       "arr": "23.40",
+       "dep": "23.40"
+      },
+      {
+       "stop": "Bv. Motta Camastra",
+       "idx": 6,
+       "arr": "23.40",
+       "dep": "23.40"
+      },
+      {
+       "stop": "FRANCAVILLA DI SICILIA Piazza Annunziata (Via dei Mulini)",
+       "idx": 5,
+       "arr": "23.45",
+       "dep": "23.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "15/6",
+       "to": "15/9"
+      },
+      "raw": "FERIALE15/6-15/9Agosto"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "TRAPPITELLO Via Via XXIV Aprile",
+       "idx": 14,
+       "arr": "0.25",
+       "dep": "0.25"
+      },
+      {
+       "stop": "GAGGI Piazza Vittorio Emanuele (Per Francavilla)",
+       "idx": 13,
+       "arr": "0.30",
+       "dep": "0.30"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 12,
+       "arr": "0.35",
+       "dep": "0.35"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 10,
+       "arr": "0.35",
+       "dep": "0.35"
+      },
+      {
+       "stop": "Gole Alcantara",
+       "idx": 9,
+       "arr": "0.38",
+       "dep": "0.38"
+      },
+      {
+       "stop": "Bv. Motta Camastra",
+       "idx": 8,
+       "arr": "0.40",
+       "dep": "0.40"
+      },
+      {
+       "stop": "Bv. Motta Camastra",
+       "idx": 6,
+       "arr": "0.40",
+       "dep": "0.40"
+      },
+      {
+       "stop": "FRANCAVILLA DI SICILIA Piazza Annunziata (Via dei Mulini)",
+       "idx": 5,
+       "arr": "0.45",
+       "dep": "0.45"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

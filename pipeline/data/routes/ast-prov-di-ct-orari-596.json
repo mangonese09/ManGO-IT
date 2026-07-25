@@ -1,0 +1,305 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-ct-orari-596",
+ "name": "Belpasso - Acireale",
+ "source": "AST_prov._di_CT_-_ORARI/p004.json",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "Belpasso (piazza Santa Lucia)",
+    "Nicolosi (via Garibaldi)",
+    "Pedara (corso Ara di Giove)",
+    "Trecastagni (piazza Sant'Alfio)",
+    "Viscalori",
+    "Viagrande (piazza San Mauro)",
+    "Acibonaccorsi (via Lavina)",
+    "Aci Sant'Antonio (via Vittorio Emanuele)",
+    "Acicatena (via Roma)",
+    "Acireale (terminal corso Italia)"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Belpasso (piazza Santa Lucia)",
+       "idx": 0,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "Nicolosi (via Garibaldi)",
+       "idx": 1,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "Pedara (corso Ara di Giove)",
+       "idx": 2,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Trecastagni (piazza Sant'Alfio)",
+       "idx": 3,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "Viscalori",
+       "idx": 4,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Viagrande (piazza San Mauro)",
+       "idx": 5,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "Acibonaccorsi (via Lavina)",
+       "idx": 6,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "Aci Sant'Antonio (via Vittorio Emanuele)",
+       "idx": 7,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Acicatena (via Roma)",
+       "idx": 8,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "Acireale (terminal corso Italia)",
+       "idx": 9,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Nicolosi (via Garibaldi)",
+       "idx": 1,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "Pedara (corso Ara di Giove)",
+       "idx": 2,
+       "arr": "9.55",
+       "dep": "9.55"
+      },
+      {
+       "stop": "Trecastagni (piazza Sant'Alfio)",
+       "idx": 3,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "Viscalori",
+       "idx": 4,
+       "arr": "10.05",
+       "dep": "10.05"
+      },
+      {
+       "stop": "Viagrande (piazza San Mauro)",
+       "idx": 5,
+       "arr": "10.10",
+       "dep": "10.10"
+      },
+      {
+       "stop": "Acibonaccorsi (via Lavina)",
+       "idx": 6,
+       "arr": "10.15",
+       "dep": "10.15"
+      },
+      {
+       "stop": "Aci Sant'Antonio (via Vittorio Emanuele)",
+       "idx": 7,
+       "arr": "10.25",
+       "dep": "10.25"
+      },
+      {
+       "stop": "Acicatena (via Roma)",
+       "idx": 8,
+       "arr": "10.35",
+       "dep": "10.35"
+      },
+      {
+       "stop": "Acireale (terminal corso Italia)",
+       "idx": 9,
+       "arr": "11.00",
+       "dep": "11.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Acireale (terminal corso Italia)",
+       "idx": 9,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "Acicatena (via Roma)",
+       "idx": 8,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "Aci Sant'Antonio (via Vittorio Emanuele)",
+       "idx": 7,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "Acibonaccorsi (via Lavina)",
+       "idx": 6,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "Viagrande (piazza San Mauro)",
+       "idx": 5,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "Viscalori",
+       "idx": 4,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "Trecastagni (piazza Sant'Alfio)",
+       "idx": 3,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "Pedara (corso Ara di Giove)",
+       "idx": 2,
+       "arr": "9.25",
+       "dep": "9.25"
+      },
+      {
+       "stop": "Nicolosi (via Garibaldi)",
+       "idx": 1,
+       "arr": "9.35",
+       "dep": "9.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Acireale (terminal corso Italia)",
+       "idx": 9,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Acicatena (via Roma)",
+       "idx": 8,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "Aci Sant'Antonio (via Vittorio Emanuele)",
+       "idx": 7,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "Acibonaccorsi (via Lavina)",
+       "idx": 6,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "Viagrande (piazza San Mauro)",
+       "idx": 5,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "Viscalori",
+       "idx": 4,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "Trecastagni (piazza Sant'Alfio)",
+       "idx": 3,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "Pedara (corso Ara di Giove)",
+       "idx": 2,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "Nicolosi (via Garibaldi)",
+       "idx": 1,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "Belpasso (piazza Santa Lucia)",
+       "idx": 0,
+       "arr": "15.50",
+       "dep": "15.50"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

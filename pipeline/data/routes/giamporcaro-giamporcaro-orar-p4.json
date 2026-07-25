@@ -1,0 +1,170 @@
+{
+ "operator": "Giamporcaro",
+ "route_id": "giamporcaro-giamporcaro-orar-p4",
+ "name": "VITTORIA - MARINA DI RAGUSA",
+ "source": "Giamporcaro__GIAMPORCARO_ORARI/p004.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Divieto di servizio locale estremi esclusi tra Santa Croce-Marina di ragusa"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "VITTORIA (P.zza Stazione)",
+    "AEROPORTO COMISO (Terminal)",
+    "COMISO (P.zza Majorana)",
+    "SANTA CROCE DI CAMARINA (P.zza Quasimodo)",
+    "MARINA DI RAGUSA (P.zza Duca degli Abruzzi)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "VITTORIA (P.zza Stazione)",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "COMISO (P.zza Majorana)",
+       "idx": 2,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "SANTA CROCE DI CAMARINA (P.zza Quasimodo)",
+       "idx": 3,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "MARINA DI RAGUSA (P.zza Duca degli Abruzzi)",
+       "idx": 4,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AEROPORTO COMISO (Terminal)",
+       "idx": 1,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "COMISO (P.zza Majorana)",
+       "idx": 2,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "SANTA CROCE DI CAMARINA (P.zza Quasimodo)",
+       "idx": 3,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "MARINA DI RAGUSA (P.zza Duca degli Abruzzi)",
+       "idx": 4,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MARINA DI RAGUSA (P.zza Duca degli Abruzzi)",
+       "idx": 4,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "SANTA CROCE DI CAMARINA (P.zza Quasimodo)",
+       "idx": 3,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "COMISO (P.zza Majorana)",
+       "idx": 2,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "AEROPORTO COMISO (Terminal)",
+       "idx": 1,
+       "arr": "7.40",
+       "dep": "7.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MARINA DI RAGUSA (P.zza Duca degli Abruzzi)",
+       "idx": 4,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "SANTA CROCE DI CAMARINA (P.zza Quasimodo)",
+       "idx": 3,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "COMISO (P.zza Majorana)",
+       "idx": 2,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "VITTORIA (P.zza Stazione)",
+       "idx": 0,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

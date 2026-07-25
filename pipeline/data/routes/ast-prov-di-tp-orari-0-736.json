@@ -1,0 +1,361 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-tp-orari-0-736",
+ "name": "POGGIOREALE via Ximenes - CASTELVETRANO piazza Regina Margherita",
+ "source": "AST_prov._di_TP_-ORARI_0/p006.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio NESSUNA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "POGGIOREALE via Ximenes",
+    "SALAPARUTA via Regione Siciliana",
+    "PARTANNA via Cialona",
+    "Asse Belice bivio s.s. 119",
+    "SANTA NINFA via Pio La Torre",
+    "CASTELVETRANO piazza Regina Margherita"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscolastica"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "POGGIOREALE via Ximenes",
+       "idx": 0,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "SALAPARUTA via Regione Siciliana",
+       "idx": 1,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "PARTANNA via Cialona",
+       "idx": 2,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Asse Belice bivio s.s. 119",
+       "idx": 3,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "CASTELVETRANO piazza Regina Margherita",
+       "idx": 5,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "POGGIOREALE via Ximenes",
+       "idx": 0,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "SALAPARUTA via Regione Siciliana",
+       "idx": 1,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "PARTANNA via Cialona",
+       "idx": 2,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Asse Belice bivio s.s. 119",
+       "idx": 3,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "SANTA NINFA via Pio La Torre",
+       "idx": 4,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "CASTELVETRANO piazza Regina Margherita",
+       "idx": 5,
+       "arr": "8.10",
+       "dep": "8.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEINVERNALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "POGGIOREALE via Ximenes",
+       "idx": 0,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "SALAPARUTA via Regione Siciliana",
+       "idx": 1,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "PARTANNA via Cialona",
+       "idx": 2,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Asse Belice bivio s.s. 119",
+       "idx": 3,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "CASTELVETRANO piazza Regina Margherita",
+       "idx": 5,
+       "arr": "8.20",
+       "dep": "8.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4A",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscolastica"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "POGGIOREALE via Ximenes",
+       "idx": 0,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "SALAPARUTA via Regione Siciliana",
+       "idx": 1,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "PARTANNA via Cialona",
+       "idx": 2,
+       "arr": "7.25",
+       "dep": "7.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEINVERNALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CASTELVETRANO piazza Regina Margherita",
+       "idx": 5,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "SANTA NINFA via Pio La Torre",
+       "idx": 4,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "PARTANNA via Cialona",
+       "idx": 2,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "SALAPARUTA via Regione Siciliana",
+       "idx": 1,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "POGGIOREALE via Ximenes",
+       "idx": 0,
+       "arr": "15.05",
+       "dep": "15.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscolastica"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CASTELVETRANO piazza Regina Margherita",
+       "idx": 5,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "SANTA NINFA via Pio La Torre",
+       "idx": 4,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "PARTANNA via Cialona",
+       "idx": 2,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "SALAPARUTA via Regione Siciliana",
+       "idx": 1,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "POGGIOREALE via Ximenes",
+       "idx": 0,
+       "arr": "15.05",
+       "dep": "15.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CASTELVETRANO piazza Regina Margherita",
+       "idx": 5,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "SANTA NINFA via Pio La Torre",
+       "idx": 4,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "PARTANNA via Cialona",
+       "idx": 2,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "SALAPARUTA via Regione Siciliana",
+       "idx": 1,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "POGGIOREALE via Ximenes",
+       "idx": 0,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscolastica"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CASTELVETRANO piazza Regina Margherita",
+       "idx": 5,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "SANTA NINFA via Pio La Torre",
+       "idx": 4,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "PARTANNA via Cialona",
+       "idx": 2,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "SALAPARUTA via Regione Siciliana",
+       "idx": 1,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "POGGIOREALE via Ximenes",
+       "idx": 0,
+       "arr": "15.45",
+       "dep": "15.45"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

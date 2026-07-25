@@ -1,0 +1,70 @@
+{
+ "operator": "Giuntabus",
+ "route_id": "giuntabus-giuntabus-orari-p18",
+ "name": "MILAZZO PORTO MILAZZO PORTO 142 - SOLO LA DOMENICA, ETC….",
+ "source": "Giuntabus__GIUNTABUS_ORARI/p018.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio L'ESERCIZIO DELL'AUTOLINEA E' LIMITATO AL SOLO TRAFFICO DI ESTREMITA'"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "MILAZZO PORTO MILAZZO PORTO 142",
+    "CATANIA AEROPORTO CATANIA AEROPORTO 0",
+    "SOLO LA DOMENICA, ETC…."
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MILAZZO PORTO MILAZZO PORTO 142",
+       "idx": 0,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "CATANIA AEROPORTO CATANIA AEROPORTO 0",
+       "idx": 1,
+       "arr": "10.48",
+       "dep": "10.48"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA AEROPORTO CATANIA AEROPORTO 0",
+       "idx": 1,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "MILAZZO PORTO MILAZZO PORTO 142",
+       "idx": 0,
+       "arr": "18.30",
+       "dep": "18.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

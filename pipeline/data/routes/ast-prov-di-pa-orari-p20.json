@@ -1,0 +1,785 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-pa-orari-p20",
+ "name": "Palermo Parcheggio Basile - Godrano via Palermo",
+ "source": "AST_prov._di_PA_-_ORARI/p020.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Palermo Parcheggio Basile",
+    "Fermata intermedia",
+    "Palermo Stazione Centrale",
+    "Fermata intermedia",
+    "Villabate via V.Emanuele",
+    "Misilmeri via V.Emanuele",
+    "Bolognetta via Roma",
+    "Villafrati corso Sammarco",
+    "Cefalà Diana via Ungheria",
+    "Godrano via Palermo"
+   ],
+   "trips": [
+    {
+     "corsa": "6R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 3,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "Misilmeri via V.Emanuele",
+       "idx": 5,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "Bolognetta via Roma",
+       "idx": 6,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "Villafrati corso Sammarco",
+       "idx": 7,
+       "arr": "8.40",
+       "dep": "8.40"
+      },
+      {
+       "stop": "Cefalà Diana via Ungheria",
+       "idx": 8,
+       "arr": "8.50",
+       "dep": "8.50"
+      },
+      {
+       "stop": "Godrano via Palermo",
+       "idx": 9,
+       "arr": "9.00",
+       "dep": "9.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Palermo Parcheggio Basile",
+       "idx": 0,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "Misilmeri via V.Emanuele",
+       "idx": 5,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "Bolognetta via Roma",
+       "idx": 6,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "Villafrati corso Sammarco",
+       "idx": 7,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "Cefalà Diana via Ungheria",
+       "idx": 8,
+       "arr": "12.20",
+       "dep": "12.20"
+      },
+      {
+       "stop": "Godrano via Palermo",
+       "idx": 9,
+       "arr": "12.30",
+       "dep": "12.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "13R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEINVERNAL"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Palermo Parcheggio Basile",
+       "idx": 0,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "Bolognetta via Roma",
+       "idx": 6,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Villafrati corso Sammarco",
+       "idx": 7,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "Cefalà Diana via Ungheria",
+       "idx": 8,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Godrano via Palermo",
+       "idx": 9,
+       "arr": "14.25",
+       "dep": "14.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Palermo Parcheggio Basile",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 3,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Misilmeri via V.Emanuele",
+       "idx": 5,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "Bolognetta via Roma",
+       "idx": 6,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "Villafrati corso Sammarco",
+       "idx": 7,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "Cefalà Diana via Ungheria",
+       "idx": 8,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "Godrano via Palermo",
+       "idx": 9,
+       "arr": "15.35",
+       "dep": "15.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "14R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVO"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Palermo Parcheggio Basile",
+       "idx": 0,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "Misilmeri via V.Emanuele",
+       "idx": 5,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "Bolognetta via Roma",
+       "idx": 6,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "Villafrati corso Sammarco",
+       "idx": 7,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "Cefalà Diana via Ungheria",
+       "idx": 8,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "Godrano via Palermo",
+       "idx": 9,
+       "arr": "16.30",
+       "dep": "16.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Palermo Parcheggio Basile",
+       "idx": 0,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 3,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "Misilmeri via V.Emanuele",
+       "idx": 5,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "Bolognetta via Roma",
+       "idx": 6,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "Villafrati corso Sammarco",
+       "idx": 7,
+       "arr": "17.15",
+       "dep": "17.15"
+      },
+      {
+       "stop": "Cefalà Diana via Ungheria",
+       "idx": 8,
+       "arr": "17.25",
+       "dep": "17.25"
+      },
+      {
+       "stop": "Godrano via Palermo",
+       "idx": 9,
+       "arr": "17.35",
+       "dep": "17.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Palermo Parcheggio Basile",
+       "idx": 0,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "Bolognetta via Roma",
+       "idx": 6,
+       "arr": "20.30",
+       "dep": "20.30"
+      },
+      {
+       "stop": "Villafrati corso Sammarco",
+       "idx": 7,
+       "arr": "20.50",
+       "dep": "20.50"
+      },
+      {
+       "stop": "Cefalà Diana via Ungheria",
+       "idx": 8,
+       "arr": "21.00",
+       "dep": "21.00"
+      },
+      {
+       "stop": "Godrano via Palermo",
+       "idx": 9,
+       "arr": "21.10",
+       "dep": "21.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Godrano via Palermo",
+       "idx": 9,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "Cefalà Diana via Ungheria",
+       "idx": 8,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "Villafrati corso Sammarco",
+       "idx": 7,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "Bolognetta via Roma",
+       "idx": 6,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "7.20",
+       "dep": "7.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALESCOLASTIC"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Godrano via Palermo",
+       "idx": 9,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "Cefalà Diana via Ungheria",
+       "idx": 8,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "Villafrati corso Sammarco",
+       "idx": 7,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "Bolognetta via Roma",
+       "idx": 6,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "Palermo Parcheggio Basile",
+       "idx": 0,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Godrano via Palermo",
+       "idx": 9,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "Cefalà Diana via Ungheria",
+       "idx": 8,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "Villafrati corso Sammarco",
+       "idx": 7,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "Bolognetta via Roma",
+       "idx": 6,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "Misilmeri via V.Emanuele",
+       "idx": 5,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "Palermo Parcheggio Basile",
+       "idx": 0,
+       "arr": "8.15",
+       "dep": "8.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Godrano via Palermo",
+       "idx": 9,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "Cefalà Diana via Ungheria",
+       "idx": 8,
+       "arr": "9.25",
+       "dep": "9.25"
+      },
+      {
+       "stop": "Villafrati corso Sammarco",
+       "idx": 7,
+       "arr": "9.35",
+       "dep": "9.35"
+      },
+      {
+       "stop": "Bolognetta via Roma",
+       "idx": 6,
+       "arr": "9.55",
+       "dep": "9.55"
+      },
+      {
+       "stop": "Misilmeri via V.Emanuele",
+       "idx": 5,
+       "arr": "10.15",
+       "dep": "10.15"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 3,
+       "arr": "10.25",
+       "dep": "10.25"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "10.40",
+       "dep": "10.40"
+      },
+      {
+       "stop": "Palermo Parcheggio Basile",
+       "idx": 0,
+       "arr": "10.50",
+       "dep": "10.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESTIVO"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Godrano via Palermo",
+       "idx": 9,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "Cefalà Diana via Ungheria",
+       "idx": 8,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "Villafrati corso Sammarco",
+       "idx": 7,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "Bolognetta via Roma",
+       "idx": 6,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "Misilmeri via V.Emanuele",
+       "idx": 5,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 3,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "Palermo Parcheggio Basile",
+       "idx": 0,
+       "arr": "14.20",
+       "dep": "14.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Godrano via Palermo",
+       "idx": 9,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Cefalà Diana via Ungheria",
+       "idx": 8,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "Villafrati corso Sammarco",
+       "idx": 7,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "Bolognetta via Roma",
+       "idx": 6,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "Misilmeri via V.Emanuele",
+       "idx": 5,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 3,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "Palermo Parcheggio Basile",
+       "idx": 0,
+       "arr": "16.05",
+       "dep": "16.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Godrano via Palermo",
+       "idx": 9,
+       "arr": "18.15",
+       "dep": "18.15"
+      },
+      {
+       "stop": "Cefalà Diana via Ungheria",
+       "idx": 8,
+       "arr": "18.25",
+       "dep": "18.25"
+      },
+      {
+       "stop": "Villafrati corso Sammarco",
+       "idx": 7,
+       "arr": "18.35",
+       "dep": "18.35"
+      },
+      {
+       "stop": "Bolognetta via Roma",
+       "idx": 6,
+       "arr": "18.55",
+       "dep": "18.55"
+      },
+      {
+       "stop": "Fermata intermedia",
+       "idx": 1,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "Palermo Parcheggio Basile",
+       "idx": 0,
+       "arr": "20.00",
+       "dep": "20.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,475 @@
+{
+ "operator": "Randazzo",
+ "route_id": "randazzo-orari-p2",
+ "name": "p. Capolinea: Caccamo:p.Euracea a. 50 - a. Capolinea: Basile p. 0",
+ "source": "RANDAZZO_ORARI/p002.json",
+ "prescriptions": [
+  "Prescrizioni d'esercizio Divieto di servizio locali tra Termini Imerese e Palermo, estremi inclusi."
+ ],
+ "directions": [
+  {
+   "stops": [
+    "p. Capolinea: Caccamo:p.Euracea a. 50",
+    "Fermata : Istit. Magistr. 49",
+    "Fermata: p.Cappucini",
+    "Fermata: Termini I. P.S'Antonio",
+    "Fermata: Termini I. Staz.FF.SS.",
+    "Fermata:Trabia Cimitero",
+    "Fermata:San Nicola L'Ar. Angolo via Valverde",
+    "Fermata:Piazza Giulio Cesare N. 52 53",
+    "a. Capolinea: Basile p. 0"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "p. Capolinea: Caccamo:p.Euracea a. 50",
+       "idx": 0,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Fermata : Istit. Magistr. 49",
+       "idx": 1,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "Fermata: p.Cappucini",
+       "idx": 2,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "Fermata: Termini I. P.S'Antonio",
+       "idx": 3,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "Fermata:Trabia Cimitero",
+       "idx": 5,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "Fermata:San Nicola L'Ar. Angolo via Valverde",
+       "idx": 6,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "p. Capolinea: Caccamo:p.Euracea a. 50",
+       "idx": 0,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "Fermata : Istit. Magistr. 49",
+       "idx": 1,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "Fermata: p.Cappucini",
+       "idx": 2,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Fermata: Termini I. P.S'Antonio",
+       "idx": 3,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "Fermata:Trabia Cimitero",
+       "idx": 5,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "Fermata:San Nicola L'Ar. Angolo via Valverde",
+       "idx": 6,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "Fermata:Piazza Giulio Cesare N. 52 53",
+       "idx": 7,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "a. Capolinea: Basile p. 0",
+       "idx": 8,
+       "arr": "8.40",
+       "dep": "8.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "scol."
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "p. Capolinea: Caccamo:p.Euracea a. 50",
+       "idx": 0,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "Fermata : Istit. Magistr. 49",
+       "idx": 1,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "Fermata: p.Cappucini",
+       "idx": 2,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Fermata: Termini I. P.S'Antonio",
+       "idx": 3,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "Fermata: Termini I. Staz.FF.SS.",
+       "idx": 4,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "p. Capolinea: Caccamo:p.Euracea a. 50",
+       "idx": 0,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "Fermata : Istit. Magistr. 49",
+       "idx": 1,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "Fermata: p.Cappucini",
+       "idx": 2,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Fermata: Termini I. P.S'Antonio",
+       "idx": 3,
+       "arr": "7.40",
+       "dep": "7.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "15",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "fer."
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Fermata:Piazza Giulio Cesare N. 52 53",
+       "idx": 7,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "a. Capolinea: Basile p. 0",
+       "idx": 8,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Fermata:San Nicola L'Ar. Angolo via Valverde",
+       "idx": 6,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "Fermata:Trabia Cimitero",
+       "idx": 5,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "Fermata: Termini I. P.S'Antonio",
+       "idx": 3,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "Fermata: p.Cappucini",
+       "idx": 2,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "Fermata : Istit. Magistr. 49",
+       "idx": 1,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "p. Capolinea: Caccamo:p.Euracea a. 50",
+       "idx": 0,
+       "arr": "8.30",
+       "dep": "8.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "scol."
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Fermata: Termini I. Staz.FF.SS.",
+       "idx": 4,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "Fermata: Termini I. P.S'Antonio",
+       "idx": 3,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "Fermata: p.Cappucini",
+       "idx": 2,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "Fermata : Istit. Magistr. 49",
+       "idx": 1,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "p. Capolinea: Caccamo:p.Euracea a. 50",
+       "idx": 0,
+       "arr": "8.30",
+       "dep": "8.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Fermata: Termini I. Staz.FF.SS.",
+       "idx": 4,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "Fermata: Termini I. P.S'Antonio",
+       "idx": 3,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "Fermata: p.Cappucini",
+       "idx": 2,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "Fermata : Istit. Magistr. 49",
+       "idx": 1,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "p. Capolinea: Caccamo:p.Euracea a. 50",
+       "idx": 0,
+       "arr": "8.30",
+       "dep": "8.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": ""
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "a. Capolinea: Basile p. 0",
+       "idx": 8,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "Fermata:Piazza Giulio Cesare N. 52 53",
+       "idx": 7,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "Fermata:San Nicola L'Ar. Angolo via Valverde",
+       "idx": 6,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "Fermata:Trabia Cimitero",
+       "idx": 5,
+       "arr": "12.40",
+       "dep": "12.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "18",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "scol."
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Fermata:San Nicola L'Ar. Angolo via Valverde",
+       "idx": 6,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Fermata:Trabia Cimitero",
+       "idx": 5,
+       "arr": "14.40",
+       "dep": "14.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "22",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "fer."
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "a. Capolinea: Basile p. 0",
+       "idx": 8,
+       "arr": "17.45",
+       "dep": "17.45"
+      },
+      {
+       "stop": "Fermata:Piazza Giulio Cesare N. 52 53",
+       "idx": 7,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "Fermata:San Nicola L'Ar. Angolo via Valverde",
+       "idx": 6,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "Fermata:Trabia Cimitero",
+       "idx": 5,
+       "arr": "18.40",
+       "dep": "18.40"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

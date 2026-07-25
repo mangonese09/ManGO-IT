@@ -1,0 +1,520 @@
+{
+ "operator": "Interbus",
+ "route_id": "orari-interbus-p14",
+ "name": "Graniti - Taormina",
+ "source": "ORARI_INTERBUS/p014.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "GRANITI Piazza Manganelli",
+    "Bv. Graniti",
+    "GAGGI Piazza Vittorio Emanuele (Per Francavilla)",
+    "TRAPPITELLO Via Via XXIV Aprile",
+    "CHIANCHITTA",
+    "RECANATI Terminal Bus (Viale Dionisio)",
+    "GIARDINI San Giovanni",
+    "GIARDINI Stazione Fs",
+    "TAORMINA Via L. Pirandello"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEdalunedi'avenerdìinperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GRANITI Piazza Manganelli",
+       "idx": 0,
+       "arr": "5.45",
+       "dep": "5.45"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 1,
+       "arr": "5.50",
+       "dep": "5.50"
+      },
+      {
+       "stop": "GAGGI Piazza Vittorio Emanuele (Per Francavilla)",
+       "idx": 2,
+       "arr": "5.55",
+       "dep": "5.55"
+      },
+      {
+       "stop": "TRAPPITELLO Via Via XXIV Aprile",
+       "idx": 3,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "GIARDINI San Giovanni",
+       "idx": 6,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "GIARDINI Stazione Fs",
+       "idx": 7,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "TAORMINA Via L. Pirandello",
+       "idx": 8,
+       "arr": "6.20",
+       "dep": "6.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GRANITI Piazza Manganelli",
+       "idx": 0,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 1,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "GAGGI Piazza Vittorio Emanuele (Per Francavilla)",
+       "idx": 2,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "TRAPPITELLO Via Via XXIV Aprile",
+       "idx": 3,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 4,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "GIARDINI San Giovanni",
+       "idx": 6,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "GIARDINI Stazione Fs",
+       "idx": 7,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "TAORMINA Via L. Pirandello",
+       "idx": 8,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVADAL1°/4AL15/9"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GRANITI Piazza Manganelli",
+       "idx": 0,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 1,
+       "arr": "8.50",
+       "dep": "8.50"
+      },
+      {
+       "stop": "GAGGI Piazza Vittorio Emanuele (Per Francavilla)",
+       "idx": 2,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "TRAPPITELLO Via Via XXIV Aprile",
+       "idx": 3,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 4,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "RECANATI Terminal Bus (Viale Dionisio)",
+       "idx": 5,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "GIARDINI San Giovanni",
+       "idx": 6,
+       "arr": "9.25",
+       "dep": "9.25"
+      },
+      {
+       "stop": "GIARDINI Stazione Fs",
+       "idx": 7,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "TAORMINA Via L. Pirandello",
+       "idx": 8,
+       "arr": "9.40",
+       "dep": "9.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEINPERIODOSCOLASTICO"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GRANITI Piazza Manganelli",
+       "idx": 0,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 1,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "GAGGI Piazza Vittorio Emanuele (Per Francavilla)",
+       "idx": 2,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "TRAPPITELLO Via Via XXIV Aprile",
+       "idx": 3,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 4,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "RECANATI Terminal Bus (Viale Dionisio)",
+       "idx": 5,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "GIARDINI San Giovanni",
+       "idx": 6,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "GIARDINI Stazione Fs",
+       "idx": 7,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "TAORMINA Via L. Pirandello",
+       "idx": 8,
+       "arr": "15.40",
+       "dep": "15.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEdalunedi'avenerdìinperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "GIARDINI Stazione Fs",
+       "idx": 7,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "GIARDINI San Giovanni",
+       "idx": 6,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "TRAPPITELLO Via Via XXIV Aprile",
+       "idx": 3,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "GAGGI Piazza Vittorio Emanuele (Per Francavilla)",
+       "idx": 2,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 1,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "GRANITI Piazza Manganelli",
+       "idx": 0,
+       "arr": "7.10",
+       "dep": "7.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "TAORMINA Via L. Pirandello",
+       "idx": 8,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "GIARDINI Stazione Fs",
+       "idx": 7,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "GIARDINI San Giovanni",
+       "idx": 6,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 4,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "TRAPPITELLO Via Via XXIV Aprile",
+       "idx": 3,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "GAGGI Piazza Vittorio Emanuele (Per Francavilla)",
+       "idx": 2,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 1,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "GRANITI Piazza Manganelli",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEINPERIODOSCOLASTICO"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "TAORMINA Via L. Pirandello",
+       "idx": 8,
+       "arr": "18.15",
+       "dep": "18.15"
+      },
+      {
+       "stop": "GIARDINI Stazione Fs",
+       "idx": 7,
+       "arr": "18.25",
+       "dep": "18.25"
+      },
+      {
+       "stop": "GIARDINI San Giovanni",
+       "idx": 6,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "RECANATI Terminal Bus (Viale Dionisio)",
+       "idx": 5,
+       "arr": "18.40",
+       "dep": "18.40"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 4,
+       "arr": "18.50",
+       "dep": "18.50"
+      },
+      {
+       "stop": "TRAPPITELLO Via Via XXIV Aprile",
+       "idx": 3,
+       "arr": "18.55",
+       "dep": "18.55"
+      },
+      {
+       "stop": "GAGGI Piazza Vittorio Emanuele (Per Francavilla)",
+       "idx": 2,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 1,
+       "arr": "19.05",
+       "dep": "19.05"
+      },
+      {
+       "stop": "GRANITI Piazza Manganelli",
+       "idx": 0,
+       "arr": "19.10",
+       "dep": "19.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVADAL1°/4AL15/9"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "TAORMINA Via L. Pirandello",
+       "idx": 8,
+       "arr": "18.15",
+       "dep": "18.15"
+      },
+      {
+       "stop": "GIARDINI Stazione Fs",
+       "idx": 7,
+       "arr": "18.25",
+       "dep": "18.25"
+      },
+      {
+       "stop": "GIARDINI San Giovanni",
+       "idx": 6,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "RECANATI Terminal Bus (Viale Dionisio)",
+       "idx": 5,
+       "arr": "18.40",
+       "dep": "18.40"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 4,
+       "arr": "18.50",
+       "dep": "18.50"
+      },
+      {
+       "stop": "TRAPPITELLO Via Via XXIV Aprile",
+       "idx": 3,
+       "arr": "18.55",
+       "dep": "18.55"
+      },
+      {
+       "stop": "GAGGI Piazza Vittorio Emanuele (Per Francavilla)",
+       "idx": 2,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 1,
+       "arr": "19.05",
+       "dep": "19.05"
+      },
+      {
+       "stop": "GRANITI Piazza Manganelli",
+       "idx": 0,
+       "arr": "19.10",
+       "dep": "19.10"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

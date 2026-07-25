@@ -1,0 +1,282 @@
+{
+ "operator": "Segesta",
+ "route_id": "segesta-segesta-orari-p7",
+ "name": "ALCAMO Autostazione - Alcide De Gasperi Via Belgio n. 39 Via Ugo La Malfa",
+ "source": "Segesta__SEGESTA_ORARI/p007.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio lungo l'autostrada Punta Raisi - Palermo non può essere effettuata alcuna fermata"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "ALCAMO Autostazione",
+    "PARTINICO Piazza Modica",
+    "TERRASINI Piazza Duomo",
+    "PALERMO Via Balsamo, 26 (stazione FS)",
+    "PALERMO Viale dei Picciotti",
+    "Alcide De Gasperi Via Belgio n. 39 Via Ugo La Malfa (fermata AMAT ipermercato Auchan)."
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "periFoEdRoIAscLoElaisntico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 0,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "PARTINICO Piazza Modica",
+       "idx": 1,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "TERRASINI Piazza Duomo",
+       "idx": 2,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 3,
+       "arr": "9.35",
+       "dep": "9.35"
+      },
+      {
+       "stop": "PALERMO Viale dei Picciotti",
+       "idx": 4,
+       "arr": "9.45",
+       "dep": "9.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PARTINICO Piazza Modica",
+       "idx": 1,
+       "arr": "17.15",
+       "dep": "17.15"
+      },
+      {
+       "stop": "TERRASINI Piazza Duomo",
+       "idx": 2,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 3,
+       "arr": "18.20",
+       "dep": "18.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVO"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 0,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "TERRASINI Piazza Duomo",
+       "idx": 2,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 3,
+       "arr": "19.20",
+       "dep": "19.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVO"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti",
+       "idx": 4,
+       "arr": "11.20",
+       "dep": "11.20"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 3,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "TERRASINI Piazza Duomo",
+       "idx": 2,
+       "arr": "12.20",
+       "dep": "12.20"
+      },
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 0,
+       "arr": "12.50",
+       "dep": "12.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIsAcLoElaisntipceoriodo"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti",
+       "idx": 4,
+       "arr": "12.20",
+       "dep": "12.20"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 3,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "TERRASINI Piazza Duomo",
+       "idx": 2,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "PARTINICO Piazza Modica",
+       "idx": 1,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 0,
+       "arr": "14.05",
+       "dep": "14.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ferialedallunedìavenerdìinperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti",
+       "idx": 4,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 3,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "TERRASINI Piazza Duomo",
+       "idx": 2,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "PARTINICO Piazza Modica",
+       "idx": 1,
+       "arr": "14.35",
+       "dep": "14.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO Viale dei Picciotti",
+       "idx": 4,
+       "arr": "19.50",
+       "dep": "19.50"
+      },
+      {
+       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "idx": 3,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "TERRASINI Piazza Duomo",
+       "idx": 2,
+       "arr": "20.50",
+       "dep": "20.50"
+      },
+      {
+       "stop": "ALCAMO Autostazione",
+       "idx": 0,
+       "arr": "21.20",
+       "dep": "21.20"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

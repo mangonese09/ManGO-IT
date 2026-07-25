@@ -1,0 +1,1665 @@
+{
+ "operator": "Etna Trasporti",
+ "route_id": "etna-trasporti-orari-2-p4",
+ "name": "\"S.Croce Camerina-Ragusa-Catania\" con prolungamento a Marina di Ragusa (Corse via superstrada-S.S. 514/19",
+ "source": "ETNA_TRASPORTI_ORARI_2/p004.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Vlfer (daepneeurirnodedìdonìeal IALEFESTIVA)",
+    "Ragusa (Via Benede Mtto ARBIr Nin A,3 D3 I(Polizia Municipale)148,400145,400142,900)",
+    "Pcamerina (Termi Sn.a Cl RBOu Cs Eiazza Quasimodo142,100139,100136,600)",
+    "Ragusaz (Terminal Bus Viaama114,900111,900109,4007.509.50)",
+    "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+    "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+    "Simc (Zon. Ta.ndiucrsotreialelettroantiacnsia13,600)",
+    "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+    "Catani (San Giuseppe ALa Rena4,904,904,90)",
+    "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Ragusaz (Terminal Bus Viaama114,900111,900109,4007.509.50)",
+       "idx": 3,
+       "arr": "5.15",
+       "dep": "5.15"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "5.35",
+       "dep": "5.35"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "Simc (Zon. Ta.ndiucrsotreialelettroantiacnsia13,600)",
+       "idx": 6,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+       "idx": 7,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)",
+       "idx": 9,
+       "arr": "7.05",
+       "dep": "7.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Ragusa (Via Benede Mtto ARBIr Nin A,3 D3 I(Polizia Municipale)148,400145,400142,900)",
+       "idx": 1,
+       "arr": "5.45",
+       "dep": "5.45"
+      },
+      {
+       "stop": "Pcamerina (Termi Sn.a Cl RBOu Cs Eiazza Quasimodo142,100139,100136,600)",
+       "idx": 2,
+       "arr": "5.55",
+       "dep": "5.55"
+      },
+      {
+       "stop": "Ragusaz (Terminal Bus Viaama114,900111,900109,4007.509.50)",
+       "idx": 3,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Simc (Zon. Ta.ndiucrsotreialelettroantiacnsia13,600)",
+       "idx": 6,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+       "idx": 7,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)",
+       "idx": 9,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "daFELRuInAeLdEìaVenerdìnelscpoelraiosdtioco"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Ragusaz (Terminal Bus Viaama114,900111,900109,4007.509.50)",
+       "idx": 3,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "Simc (Zon. Ta.ndiucrsotreialelettroantiacnsia13,600)",
+       "idx": 6,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+       "idx": 7,
+       "arr": "8.40",
+       "dep": "8.40"
+      },
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "8.35",
+       "dep": "8.35"
+      },
+      {
+       "stop": "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)",
+       "idx": 9,
+       "arr": "8.45",
+       "dep": "8.45"
+      }
+     ],
+     "valid": false
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Ragusaz (Terminal Bus Viaama114,900111,900109,4007.509.50)",
+       "idx": 3,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+       "idx": 7,
+       "arr": "9.40",
+       "dep": "9.40"
+      },
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)",
+       "idx": 9,
+       "arr": "9.50",
+       "dep": "9.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdaLunedìaVenerdì"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Ragusaz (Terminal Bus Viaama114,900111,900109,4007.509.50)",
+       "idx": 3,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "Simc (Zon. Ta.ndiucrsotreialelettroantiacnsia13,600)",
+       "idx": 6,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+       "idx": 7,
+       "arr": "10.40",
+       "dep": "10.40"
+      },
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "10.45",
+       "dep": "10.45"
+      },
+      {
+       "stop": "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)",
+       "idx": 9,
+       "arr": "10.50",
+       "dep": "10.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "LUNEDI'nelperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Ragusaz (Terminal Bus Viaama114,900111,900109,4007.509.50)",
+       "idx": 3,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "10.20",
+       "dep": "10.20"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "10.45",
+       "dep": "10.45"
+      },
+      {
+       "stop": "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+       "idx": 7,
+       "arr": "11.40",
+       "dep": "11.40"
+      },
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "11.35",
+       "dep": "11.35"
+      },
+      {
+       "stop": "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)",
+       "idx": 9,
+       "arr": "11.45",
+       "dep": "11.45"
+      }
+     ],
+     "valid": false
+    },
+    {
+     "corsa": "13",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Ragusaz (Terminal Bus Viaama114,900111,900109,4007.509.50)",
+       "idx": 3,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "12.20",
+       "dep": "12.20"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "Simc (Zon. Ta.ndiucrsotreialelettroantiacnsia13,600)",
+       "idx": 6,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+       "idx": 7,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)",
+       "idx": 9,
+       "arr": "13.50",
+       "dep": "13.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "15",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "daFELRunIAeLdEìaVenerdìnelscpoelraiosdtioco"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Ragusaz (Terminal Bus Viaama114,900111,900109,4007.509.50)",
+       "idx": 3,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+       "idx": 7,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)",
+       "idx": 9,
+       "arr": "14.50",
+       "dep": "14.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "17",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdaLunedìaVenerdì"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Ragusa (Via Benede Mtto ARBIr Nin A,3 D3 I(Polizia Municipale)148,400145,400142,900)",
+       "idx": 1,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Pcamerina (Termi Sn.a Cl RBOu Cs Eiazza Quasimodo142,100139,100136,600)",
+       "idx": 2,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "Ragusaz (Terminal Bus Viaama114,900111,900109,4007.509.50)",
+       "idx": 3,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "Simc (Zon. Ta.ndiucrsotreialelettroantiacnsia13,600)",
+       "idx": 6,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+       "idx": 7,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "15.45",
+       "dep": "15.45"
+      },
+      {
+       "stop": "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)",
+       "idx": 9,
+       "arr": "15.50",
+       "dep": "15.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "19",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GiornalieraeCscalpuosdoaNnnatoaelePasqua"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Ragusaz (Terminal Bus Viaama114,900111,900109,4007.509.50)",
+       "idx": 3,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "15.45",
+       "dep": "15.45"
+      },
+      {
+       "stop": "Simc (Zon. Ta.ndiucrsotreialelettroantiacnsia13,600)",
+       "idx": 6,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+       "idx": 7,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)",
+       "idx": 9,
+       "arr": "16.50",
+       "dep": "16.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "21",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE-daVLeunneerddììadal1/4al31/10"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Ragusaz (Terminal Bus Viaama114,900111,900109,4007.509.50)",
+       "idx": 3,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "17.20",
+       "dep": "17.20"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "17.45",
+       "dep": "17.45"
+      },
+      {
+       "stop": "Simc (Zon. Ta.ndiucrsotreialelettroantiacnsia13,600)",
+       "idx": 6,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+       "idx": 7,
+       "arr": "18.40",
+       "dep": "18.40"
+      },
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)",
+       "idx": 9,
+       "arr": "18.50",
+       "dep": "18.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "23",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Ragusaz (Terminal Bus Viaama114,900111,900109,4007.509.50)",
+       "idx": 3,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "18.20",
+       "dep": "18.20"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+       "idx": 7,
+       "arr": "19.40",
+       "dep": "19.40"
+      },
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)",
+       "idx": 9,
+       "arr": "19.50",
+       "dep": "19.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "25",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Ragusa (Via Benede Mtto ARBIr Nin A,3 D3 I(Polizia Municipale)148,400145,400142,900)",
+       "idx": 1,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "Pcamerina (Termi Sn.a Cl RBOu Cs Eiazza Quasimodo142,100139,100136,600)",
+       "idx": 2,
+       "arr": "17.40",
+       "dep": "17.40"
+      },
+      {
+       "stop": "Ragusaz (Terminal Bus Viaama114,900111,900109,4007.509.50)",
+       "idx": 3,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "18.20",
+       "dep": "18.20"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "Simc (Zon. Ta.ndiucrsotreialelettroantiacnsia13,600)",
+       "idx": 6,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+       "idx": 7,
+       "arr": "19.40",
+       "dep": "19.40"
+      },
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)",
+       "idx": 9,
+       "arr": "19.50",
+       "dep": "19.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "27",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdaVLeunneerddììadal1/11al31/3"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Ragusaz (Terminal Bus Viaama114,900111,900109,4007.509.50)",
+       "idx": 3,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "Simc (Zon. Ta.ndiucrsotreialelettroantiacnsia13,600)",
+       "idx": 6,
+       "arr": "20.30",
+       "dep": "20.30"
+      },
+      {
+       "stop": "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+       "idx": 7,
+       "arr": "20.40",
+       "dep": "20.40"
+      },
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "20.45",
+       "dep": "20.45"
+      },
+      {
+       "stop": "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)",
+       "idx": 9,
+       "arr": "20.50",
+       "dep": "20.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "29",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Ragusaz (Terminal Bus Viaama114,900111,900109,4007.509.50)",
+       "idx": 3,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+       "idx": 7,
+       "arr": "20.40",
+       "dep": "20.40"
+      },
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "20.45",
+       "dep": "20.45"
+      },
+      {
+       "stop": "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)",
+       "idx": 9,
+       "arr": "20.50",
+       "dep": "20.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "daFELRunIAeLdEìaVenerdìnelscpoelraiosdtioco"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)",
+       "idx": 9,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+       "idx": 7,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "9.30",
+       "dep": "9.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)",
+       "idx": 9,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+       "idx": 7,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "Ragusaz (Terminal Bus Viaama114,900111,900109,4007.509.50)",
+       "idx": 3,
+       "arr": "9.50",
+       "dep": "9.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)",
+       "idx": 9,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "10.05",
+       "dep": "10.05"
+      },
+      {
+       "stop": "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+       "idx": 7,
+       "arr": "10.10",
+       "dep": "10.10"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "11.05",
+       "dep": "11.05"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "Ragusaz (Terminal Bus Viaama114,900111,900109,4007.509.50)",
+       "idx": 3,
+       "arr": "11.50",
+       "dep": "11.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "daFELRunIAeLdEìaVenerdìnelscpoelraiosdtioco"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)",
+       "idx": 9,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "11.05",
+       "dep": "11.05"
+      },
+      {
+       "stop": "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+       "idx": 7,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "Simc (Zon. Ta.ndiucrsotreialelettroantiacnsia13,600)",
+       "idx": 6,
+       "arr": "11.20",
+       "dep": "11.20"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "12.25",
+       "dep": "12.25"
+      },
+      {
+       "stop": "Ragusaz (Terminal Bus Viaama114,900111,900109,4007.509.50)",
+       "idx": 3,
+       "arr": "12.45",
+       "dep": "12.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)",
+       "idx": 9,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+       "idx": 7,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "Simc (Zon. Ta.ndiucrsotreialelettroantiacnsia13,600)",
+       "idx": 6,
+       "arr": "12.20",
+       "dep": "12.20"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "Ragusaz (Terminal Bus Viaama114,900111,900109,4007.509.50)",
+       "idx": 3,
+       "arr": "13.50",
+       "dep": "13.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "14",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Venerdìnelperiodoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)",
+       "idx": 9,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+       "idx": 7,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Ragusaz (Terminal Bus Viaama114,900111,900109,4007.509.50)",
+       "idx": 3,
+       "arr": "14.50",
+       "dep": "14.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "16",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)",
+       "idx": 9,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+       "idx": 7,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "Simc (Zon. Ta.ndiucrsotreialelettroantiacnsia13,600)",
+       "idx": 6,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "Ragusaz (Terminal Bus Viaama114,900111,900109,4007.509.50)",
+       "idx": 3,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "Pcamerina (Termi Sn.a Cl RBOu Cs Eiazza Quasimodo142,100139,100136,600)",
+       "idx": 2,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "Ragusa (Via Benede Mtto ARBIr Nin A,3 D3 I(Polizia Municipale)148,400145,400142,900)",
+       "idx": 1,
+       "arr": "16.30",
+       "dep": "16.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "18",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)",
+       "idx": 9,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+       "idx": 7,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "Simc (Zon. Ta.ndiucrsotreialelettroantiacnsia13,600)",
+       "idx": 6,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "Ragusaz (Terminal Bus Viaama114,900111,900109,4007.509.50)",
+       "idx": 3,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "Pcamerina (Termi Sn.a Cl RBOu Cs Eiazza Quasimodo142,100139,100136,600)",
+       "idx": 2,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "Ragusa (Via Benede Mtto ARBIr Nin A,3 D3 I(Polizia Municipale)148,400145,400142,900)",
+       "idx": 1,
+       "arr": "16.30",
+       "dep": "16.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "20",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdaLunedìaVenerdì"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)",
+       "idx": 9,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+       "idx": 7,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "Simc (Zon. Ta.ndiucrsotreialelettroantiacnsia13,600)",
+       "idx": 6,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "Ragusaz (Terminal Bus Viaama114,900111,900109,4007.509.50)",
+       "idx": 3,
+       "arr": "16.50",
+       "dep": "16.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "22",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GiornalieraeCsacpluosdoanNnaotaelePasqua"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)",
+       "idx": 9,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+       "idx": 7,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "Simc (Zon. Ta.ndiucrsotreialelettroantiacnsia13,600)",
+       "idx": 6,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "17.25",
+       "dep": "17.25"
+      },
+      {
+       "stop": "Ragusaz (Terminal Bus Viaama114,900111,900109,4007.509.50)",
+       "idx": 3,
+       "arr": "17.45",
+       "dep": "17.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "24",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE-daVLeunneerddììadal1/4al31/10"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)",
+       "idx": 9,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "17.05",
+       "dep": "17.05"
+      },
+      {
+       "stop": "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+       "idx": 7,
+       "arr": "17.10",
+       "dep": "17.10"
+      },
+      {
+       "stop": "Simc (Zon. Ta.ndiucrsotreialelettroantiacnsia13,600)",
+       "idx": 6,
+       "arr": "17.20",
+       "dep": "17.20"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "Ragusaz (Terminal Bus Viaama114,900111,900109,4007.509.50)",
+       "idx": 3,
+       "arr": "18.50",
+       "dep": "18.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "26",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdaLunedìaVenerdì"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)",
+       "idx": 9,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+       "idx": 7,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "Simc (Zon. Ta.ndiucrsotreialelettroantiacnsia13,600)",
+       "idx": 6,
+       "arr": "18.20",
+       "dep": "18.20"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "19.05",
+       "dep": "19.05"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "Ragusaz (Terminal Bus Viaama114,900111,900109,4007.509.50)",
+       "idx": 3,
+       "arr": "19.50",
+       "dep": "19.50"
+      },
+      {
+       "stop": "Pcamerina (Termi Sn.a Cl RBOu Cs Eiazza Quasimodo142,100139,100136,600)",
+       "idx": 2,
+       "arr": "20.20",
+       "dep": "20.20"
+      },
+      {
+       "stop": "Ragusa (Via Benede Mtto ARBIr Nin A,3 D3 I(Polizia Municipale)148,400145,400142,900)",
+       "idx": 1,
+       "arr": "20.30",
+       "dep": "20.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "28",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEdaVLeunneerddììadal1/11al31/3"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)",
+       "idx": 9,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "19.05",
+       "dep": "19.05"
+      },
+      {
+       "stop": "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+       "idx": 7,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "Simc (Zon. Ta.ndiucrsotreialelettroantiacnsia13,600)",
+       "idx": 6,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "20.05",
+       "dep": "20.05"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "20.30",
+       "dep": "20.30"
+      },
+      {
+       "stop": "Ragusaz (Terminal Bus Viaama114,900111,900109,4007.509.50)",
+       "idx": 3,
+       "arr": "20.50",
+       "dep": "20.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "30",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNALIERA"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Catania (Terminal Bus Via Archimede0,0000,0000,0006.00)",
+       "idx": 9,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "Catani (San Giuseppe ALa Rena4,904,904,90)",
+       "idx": 8,
+       "arr": "20.05",
+       "dep": "20.05"
+      },
+      {
+       "stop": "Tania (Aeropor Cto AFontanarossa6,9006,9006.10)",
+       "idx": 7,
+       "arr": "20.10",
+       "dep": "20.10"
+      },
+      {
+       "stop": "Simc (Zon. Ta.ndiucrsotreialelettroantiacnsia13,600)",
+       "idx": 6,
+       "arr": "20.20",
+       "dep": "20.20"
+      },
+      {
+       "stop": "Bvk (Area Serviziova.limzz.in3i3.000 SS5147)",
+       "idx": 5,
+       "arr": "21.05",
+       "dep": "21.05"
+      },
+      {
+       "stop": "Bsckcss (Areave.rvihziioaraalmomn.te1/2.o3m00iso514)",
+       "idx": 4,
+       "arr": "21.30",
+       "dep": "21.30"
+      },
+      {
+       "stop": "Ragusaz (Terminal Bus Viaama114,900111,900109,4007.509.50)",
+       "idx": 3,
+       "arr": "21.50",
+       "dep": "21.50"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

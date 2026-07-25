@@ -1,0 +1,172 @@
+{
+ "operator": "Interbus",
+ "route_id": "orari-interbus-p23",
+ "name": "Nicosia - Leonforte - A/19 - Aeroporto Catania - Catania",
+ "source": "ORARI_INTERBUS/p023.json",
+ "prescriptions": [
+  "Prescrizioni d"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "NICOSIA (P.zza S.Francesco di Paola)",
+    "IV Novembre LEONFORTE Via F.Crispi/P.zza",
+    "Sv. A19 Mulinello",
+    "A19",
+    "Sv. A19 Catania",
+    "Aeroporto Catania Fontanarossa",
+    "CATANIA Via D'Amico/Archimede"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "NICOSIA (P.zza S.Francesco di Paola)",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "IV Novembre LEONFORTE Via F.Crispi/P.zza",
+       "idx": 1,
+       "arr": "8.40",
+       "dep": "8.40"
+      },
+      {
+       "stop": "Aeroporto Catania Fontanarossa",
+       "idx": 5,
+       "arr": "9.50",
+       "dep": "9.50"
+      },
+      {
+       "stop": "CATANIA Via D'Amico/Archimede",
+       "idx": 6,
+       "arr": "10.00",
+       "dep": "10.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "NICOSIA (P.zza S.Francesco di Paola)",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "IV Novembre LEONFORTE Via F.Crispi/P.zza",
+       "idx": 1,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "Aeroporto Catania Fontanarossa",
+       "idx": 5,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "CATANIA Via D'Amico/Archimede",
+       "idx": 6,
+       "arr": "16.00",
+       "dep": "16.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA Via D'Amico/Archimede",
+       "idx": 6,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "Aeroporto Catania Fontanarossa",
+       "idx": 5,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "IV Novembre LEONFORTE Via F.Crispi/P.zza",
+       "idx": 1,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "NICOSIA (P.zza S.Francesco di Paola)",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CATANIA Via D'Amico/Archimede",
+       "idx": 6,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Aeroporto Catania Fontanarossa",
+       "idx": 5,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "IV Novembre LEONFORTE Via F.Crispi/P.zza",
+       "idx": 1,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "NICOSIA (P.zza S.Francesco di Paola)",
+       "idx": 0,
+       "arr": "16.00",
+       "dep": "16.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

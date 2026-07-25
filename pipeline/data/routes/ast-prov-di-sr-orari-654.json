@@ -1,0 +1,688 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-sr-orari-654",
+ "name": "Siracusa - Augusta via Caracciolo",
+ "source": "AST_prov.di_SR_-_ORARI/p009.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Siracusa (via Rubino)",
+    "Priolo via Pentapoli",
+    "Sincat Porta centrale",
+    "Augusta via Caracciolo"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "Priolo via Pentapoli",
+       "idx": 1,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "Sincat Porta centrale",
+       "idx": 2,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Augusta via Caracciolo",
+       "idx": 3,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2A",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "ferialeESCLUSOSABATO"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "Priolo via Pentapoli",
+       "idx": 1,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "Sincat Porta centrale",
+       "idx": 2,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "Augusta via Caracciolo",
+       "idx": 3,
+       "arr": "8.50",
+       "dep": "8.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "Priolo via Pentapoli",
+       "idx": 1,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "Sincat Porta centrale",
+       "idx": 2,
+       "arr": "10.35",
+       "dep": "10.35"
+      },
+      {
+       "stop": "Augusta via Caracciolo",
+       "idx": 3,
+       "arr": "11.15",
+       "dep": "11.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "Priolo via Pentapoli",
+       "idx": 1,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "Sincat Porta centrale",
+       "idx": 2,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "Augusta via Caracciolo",
+       "idx": 3,
+       "arr": "14.00",
+       "dep": "14.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialesscolastic"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "Augusta via Caracciolo",
+       "idx": 3,
+       "arr": "15.10",
+       "dep": "15.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Priolo via Pentapoli",
+       "idx": 1,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "Sincat Porta centrale",
+       "idx": 2,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "Augusta via Caracciolo",
+       "idx": 3,
+       "arr": "15.30",
+       "dep": "15.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "Priolo via Pentapoli",
+       "idx": 1,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "Sincat Porta centrale",
+       "idx": 2,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "Augusta via Caracciolo",
+       "idx": 3,
+       "arr": "18.45",
+       "dep": "18.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "Priolo via Pentapoli",
+       "idx": 1,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "Sincat Porta centrale",
+       "idx": 2,
+       "arr": "19.35",
+       "dep": "19.35"
+      },
+      {
+       "stop": "Augusta via Caracciolo",
+       "idx": 3,
+       "arr": "20.15",
+       "dep": "20.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "feriale"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "20.30",
+       "dep": "20.30"
+      },
+      {
+       "stop": "Priolo via Pentapoli",
+       "idx": 1,
+       "arr": "21.00",
+       "dep": "21.00"
+      },
+      {
+       "stop": "Sincat Porta centrale",
+       "idx": 2,
+       "arr": "21.05",
+       "dep": "21.05"
+      },
+      {
+       "stop": "Augusta via Caracciolo",
+       "idx": 3,
+       "arr": "21.45",
+       "dep": "21.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Augusta via Caracciolo",
+       "idx": 3,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "Sincat Porta centrale",
+       "idx": 2,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Priolo via Pentapoli",
+       "idx": 1,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8R",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEINPERIODOSCOLASTICO"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Augusta via Caracciolo",
+       "idx": 3,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Priolo via Pentapoli",
+       "idx": 1,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "9.00",
+       "dep": "9.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Augusta via Caracciolo",
+       "idx": 3,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "Sincat Porta centrale",
+       "idx": 2,
+       "arr": "8.40",
+       "dep": "8.40"
+      },
+      {
+       "stop": "Priolo via Pentapoli",
+       "idx": 1,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "9.15",
+       "dep": "9.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3R",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESCLUSOSABATO"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Augusta via Caracciolo",
+       "idx": 3,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "Sincat Porta centrale",
+       "idx": 2,
+       "arr": "9.40",
+       "dep": "9.40"
+      },
+      {
+       "stop": "Priolo via Pentapoli",
+       "idx": 1,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "10.15",
+       "dep": "10.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Augusta via Caracciolo",
+       "idx": 3,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "Sincat Porta centrale",
+       "idx": 2,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "Priolo via Pentapoli",
+       "idx": 1,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "13.45",
+       "dep": "13.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Augusta via Caracciolo",
+       "idx": 3,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "Sincat Porta centrale",
+       "idx": 2,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "Priolo via Pentapoli",
+       "idx": 1,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "15.30",
+       "dep": "15.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Augusta via Caracciolo",
+       "idx": 3,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "Sincat Porta centrale",
+       "idx": 2,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "Priolo via Pentapoli",
+       "idx": 1,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "16.45",
+       "dep": "16.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Augusta via Caracciolo",
+       "idx": 3,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "Sincat Porta centrale",
+       "idx": 2,
+       "arr": "19.40",
+       "dep": "19.40"
+      },
+      {
+       "stop": "Priolo via Pentapoli",
+       "idx": 1,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "20.15",
+       "dep": "20.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Augusta via Caracciolo",
+       "idx": 3,
+       "arr": "20.15",
+       "dep": "20.15"
+      },
+      {
+       "stop": "Sincat Porta centrale",
+       "idx": 2,
+       "arr": "20.55",
+       "dep": "20.55"
+      },
+      {
+       "stop": "Priolo via Pentapoli",
+       "idx": 1,
+       "arr": "21.00",
+       "dep": "21.00"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "21.30",
+       "dep": "21.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

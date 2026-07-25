@@ -1,0 +1,147 @@
+{
+ "operator": "Interbus",
+ "route_id": "orari-interbus-p24",
+ "name": "Agira - Regalbuto - S. Maria di Licodia",
+ "source": "ORARI_INTERBUS/p024.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Largo Fiera AGIRA Piazza Garibaldi",
+    "Finaita",
+    "REGALBUTO Piazza Matteotti",
+    "Sisto",
+    "Ponte Aragona",
+    "Via dei Cappuccini ADRANO Via Roma, 8",
+    "Via C. Colombo/P.zza Giovanni XXIII",
+    "V.Emanuele S. MARIA DI LICODIA Via V.Emanuele,"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALESTAZIONAMENTIKMINPERIODOSCOLASTICO"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Largo Fiera AGIRA Piazza Garibaldi",
+       "idx": 0,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "Finaita",
+       "idx": 1,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "REGALBUTO Piazza Matteotti",
+       "idx": 2,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Sisto",
+       "idx": 3,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "Ponte Aragona",
+       "idx": 4,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Via dei Cappuccini ADRANO Via Roma, 8",
+       "idx": 5,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "Via C. Colombo/P.zza Giovanni XXIII",
+       "idx": 6,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "V.Emanuele S. MARIA DI LICODIA Via V.Emanuele,",
+       "idx": 7,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEKMINPERIODOSCOLASTICO"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "V.Emanuele S. MARIA DI LICODIA Via V.Emanuele,",
+       "idx": 7,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "Via C. Colombo/P.zza Giovanni XXIII",
+       "idx": 6,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "Via dei Cappuccini ADRANO Via Roma, 8",
+       "idx": 5,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Ponte Aragona",
+       "idx": 4,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "Sisto",
+       "idx": 3,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "REGALBUTO Piazza Matteotti",
+       "idx": 2,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Finaita",
+       "idx": 1,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "Largo Fiera AGIRA Piazza Garibaldi",
+       "idx": 0,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

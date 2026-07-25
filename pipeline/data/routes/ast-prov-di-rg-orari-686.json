@@ -1,0 +1,336 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-rg-orari-686",
+ "name": "Acate - Ragusa",
+ "source": "AST_prov._di_RG_-_ORARI/p002.json",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "Acate (piazza Libertà) Capolinea",
+    "Pedalino",
+    "Roccazzo",
+    "Chiaramonte Gulfi (Terminal)",
+    "bivio Coffa",
+    "Contrada Cappello",
+    "Ragusa (terminal via Zama)"
+   ],
+   "trips": [
+    {
+     "corsa": "21A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeestivo"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Acate (piazza Libertà) Capolinea",
+       "idx": 0,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "Pedalino",
+       "idx": 1,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "Roccazzo",
+       "idx": 2,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "Chiaramonte Gulfi (Terminal)",
+       "idx": 3,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "Contrada Cappello",
+       "idx": 5,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "Ragusa (terminal via Zama)",
+       "idx": 6,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "22A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeestivo"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Chiaramonte Gulfi (Terminal)",
+       "idx": 3,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "bivio Coffa",
+       "idx": 4,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "Ragusa (terminal via Zama)",
+       "idx": 6,
+       "arr": "9.05",
+       "dep": "9.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "23A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeestivo"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Chiaramonte Gulfi (Terminal)",
+       "idx": 3,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "Contrada Cappello",
+       "idx": 5,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "Ragusa (terminal via Zama)",
+       "idx": 6,
+       "arr": "12.40",
+       "dep": "12.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "24A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeestivo"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Acate (piazza Libertà) Capolinea",
+       "idx": 0,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "Pedalino",
+       "idx": 1,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Roccazzo",
+       "idx": 2,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "Chiaramonte Gulfi (Terminal)",
+       "idx": 3,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Ragusa (terminal via Zama)",
+       "idx": 6,
+       "arr": "15.20",
+       "dep": "15.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "22R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeestivo"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Ragusa (terminal via Zama)",
+       "idx": 6,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "bivio Coffa",
+       "idx": 4,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "Chiaramonte Gulfi (Terminal)",
+       "idx": 3,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "23R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeestivo"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Ragusa (terminal via Zama)",
+       "idx": 6,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "Contrada Cappello",
+       "idx": 5,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "Chiaramonte Gulfi (Terminal)",
+       "idx": 3,
+       "arr": "11.50",
+       "dep": "11.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "24R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeestivo"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Ragusa (terminal via Zama)",
+       "idx": 6,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Contrada Cappello",
+       "idx": 5,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "Chiaramonte Gulfi (Terminal)",
+       "idx": 3,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "Roccazzo",
+       "idx": 2,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "Pedalino",
+       "idx": 1,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "Acate (piazza Libertà) Capolinea",
+       "idx": 0,
+       "arr": "15.30",
+       "dep": "15.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "26R",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialeestivo"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "Ragusa (terminal via Zama)",
+       "idx": 6,
+       "arr": "20.05",
+       "dep": "20.05"
+      },
+      {
+       "stop": "Contrada Cappello",
+       "idx": 5,
+       "arr": "20.30",
+       "dep": "20.30"
+      },
+      {
+       "stop": "Chiaramonte Gulfi (Terminal)",
+       "idx": 3,
+       "arr": "20.50",
+       "dep": "20.50"
+      },
+      {
+       "stop": "Roccazzo",
+       "idx": 2,
+       "arr": "21.10",
+       "dep": "21.10"
+      },
+      {
+       "stop": "Pedalino",
+       "idx": 1,
+       "arr": "21.20",
+       "dep": "21.20"
+      },
+      {
+       "stop": "Acate (piazza Libertà) Capolinea",
+       "idx": 0,
+       "arr": "21.30",
+       "dep": "21.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

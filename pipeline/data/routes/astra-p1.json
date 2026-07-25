@@ -1,0 +1,175 @@
+{
+ "operator": "Astra",
+ "route_id": "astra-p1",
+ "name": "GELA - CALTANISSETTA",
+ "source": "ASTRA/p001.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Le corse sul percorso rapido Gela-Caltanissetta Via Scorrimento veloce saranno riservate alla sola relazione di estremità ed esercitate con divieto di"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "GELA ( Macchitella) GELA ( Macchitella)",
+    "GELA (Stazione FS) GELA (Stazione FS)",
+    "CALTANISSETTA(Via Rochester) CALTANISSETTA(Via Rochester)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "Ferialeesclusoilsabato"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GELA ( Macchitella) GELA ( Macchitella)",
+       "idx": 0,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "GELA (Stazione FS) GELA (Stazione FS)",
+       "idx": 1,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "CALTANISSETTA(Via Rochester) CALTANISSETTA(Via Rochester)",
+       "idx": 2,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "Ferialeesclusoilsabatosabatoperiodo"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GELA ( Macchitella) GELA ( Macchitella)",
+       "idx": 0,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "GELA (Stazione FS) GELA (Stazione FS)",
+       "idx": 1,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "CALTANISSETTA(Via Rochester) CALTANISSETTA(Via Rochester)",
+       "idx": 2,
+       "arr": "15.10",
+       "dep": "15.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-sat",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "Ferialeesclusoesercitatoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GELA ( Macchitella) GELA ( Macchitella)",
+       "idx": 0,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "GELA (Stazione FS) GELA (Stazione FS)",
+       "idx": 1,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "CALTANISSETTA(Via Rochester) CALTANISSETTA(Via Rochester)",
+       "idx": 2,
+       "arr": "9.40",
+       "dep": "9.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "Ferialeesclusoilsabatosabato"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CALTANISSETTA(Via Rochester) CALTANISSETTA(Via Rochester)",
+       "idx": 2,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "GELA (Stazione FS) GELA (Stazione FS)",
+       "idx": 1,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "GELA ( Macchitella) GELA ( Macchitella)",
+       "idx": 0,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-sat",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "Ferialeesclusoesercitatoscolastico"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CALTANISSETTA(Via Rochester) CALTANISSETTA(Via Rochester)",
+       "idx": 2,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "GELA (Stazione FS) GELA (Stazione FS)",
+       "idx": 1,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "GELA ( Macchitella) GELA ( Macchitella)",
+       "idx": 0,
+       "arr": "15.25",
+       "dep": "15.25"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

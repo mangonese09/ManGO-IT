@@ -1,0 +1,1054 @@
+{
+ "operator": "Interbus",
+ "route_id": "orari-interbus-p13",
+ "name": "Enna - Leonforte - Regalbuto - Catania - Taormina - Messina",
+ "source": "ORARI_INTERBUS/p013.json",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "MESSINA (Piazza della Repubblica)",
+    "SCALETTA ZANCLEA (Piazza Stazione)",
+    "ALI' TERME (Via Francesco Crispi 316)",
+    "Nzds (, IZAIICILIA(P.zza Interdonato)6.507.25)",
+    "Rcaueav (OCLMR(ia C. Colombo19)5.406.557.30)",
+    "S.TERESA RIVA (Pozzo Lazzaro/Via Lungomare 3)",
+    "S. ALESSIO SICULO (Via Consolare Valeria 64)",
+    "LETOJANNI (Bv. Gallodoro SS 114)",
+    "TAORMINA (P.zza L. Pirandello) A. 8. 20",
+    "TAORMINA (P.zza L. Pirandello)",
+    "GIARDINI (Via Umberto SS 114/San Giovanni) 7. 45",
+    "FIUMEFREDDO (Via P. Piemonte 98)",
+    "MASCALI (Strada Statale Siculo Orientale 124)",
+    "GIARRE (P.zza Duomo/Via Callipoli 236) 8. 10",
+    "ACIREALE (Piazza Duomo)",
+    "CATANIA (Via D'Amico/Archimede)",
+    "CATANIA (Fontanarossa)",
+    "CATENANUVA (Via Vitt. Emanuele, 72)",
+    "REGALBUTO (Piazza Matteotti)",
+    "FINAITA",
+    "AGIRA (Piazza Garibaldi)",
+    "NISSORIA (Corso V. Emanuele/Chiesa S.Giuseppe)",
+    "LEONFORTE (C.so Umberto/P.zza IV Novembre)",
+    "PIRATO F.S.",
+    "RAJA",
+    "ENNA BASSA",
+    "ENNA (Terminal Bus/Viale Diaz)"
+   ],
+   "trips": [
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 15,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "CATENANUVA (Via Vitt. Emanuele, 72)",
+       "idx": 17,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "REGALBUTO (Piazza Matteotti)",
+       "idx": 18,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "FINAITA",
+       "idx": 19,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "AGIRA (Piazza Garibaldi)",
+       "idx": 20,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "NISSORIA (Corso V. Emanuele/Chiesa S.Giuseppe)",
+       "idx": 21,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "LEONFORTE (C.so Umberto/P.zza IV Novembre)",
+       "idx": 22,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "PIRATO F.S.",
+       "idx": 23,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "RAJA",
+       "idx": 24,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "ENNA BASSA",
+       "idx": 25,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "ENNA (Terminal Bus/Viale Diaz)",
+       "idx": 26,
+       "arr": "9.10",
+       "dep": "9.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "FIUMEFREDDO (Via P. Piemonte 98)",
+       "idx": 11,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "MASCALI (Strada Statale Siculo Orientale 124)",
+       "idx": 12,
+       "arr": "6.25",
+       "dep": "6.25"
+      },
+      {
+       "stop": "GIARRE (P.zza Duomo/Via Callipoli 236) 8. 10",
+       "idx": 13,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "ACIREALE (Piazza Duomo)",
+       "idx": 14,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 15,
+       "arr": "7.25",
+       "dep": "7.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "S.TERESA RIVA (Pozzo Lazzaro/Via Lungomare 3)",
+       "idx": 5,
+       "arr": "5.50",
+       "dep": "5.50"
+      },
+      {
+       "stop": "S. ALESSIO SICULO (Via Consolare Valeria 64)",
+       "idx": 6,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "LETOJANNI (Bv. Gallodoro SS 114)",
+       "idx": 7,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "TAORMINA (P.zza L. Pirandello) A. 8. 20",
+       "idx": 8,
+       "arr": "6.25",
+       "dep": "6.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FsEcpRoeIlraAiosLdtEiocion-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "S.TERESA RIVA (Pozzo Lazzaro/Via Lungomare 3)",
+       "idx": 5,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "S. ALESSIO SICULO (Via Consolare Valeria 64)",
+       "idx": 6,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "LETOJANNI (Bv. Gallodoro SS 114)",
+       "idx": 7,
+       "arr": "6.25",
+       "dep": "6.25"
+      },
+      {
+       "stop": "TAORMINA (P.zza L. Pirandello) A. 8. 20",
+       "idx": 8,
+       "arr": "6.40",
+       "dep": "6.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEFE-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TAORMINA (P.zza L. Pirandello)",
+       "idx": 9,
+       "arr": "6.25",
+       "dep": "6.25"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni) 7. 45",
+       "idx": 10,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "FIUMEFREDDO (Via P. Piemonte 98)",
+       "idx": 11,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "MASCALI (Strada Statale Siculo Orientale 124)",
+       "idx": 12,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "GIARRE (P.zza Duomo/Via Callipoli 236) 8. 10",
+       "idx": 13,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "ACIREALE (Piazza Duomo)",
+       "idx": 14,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 15,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERpIAelrLaioEdinoscostico-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ALI' TERME (Via Francesco Crispi 316)",
+       "idx": 2,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "S.TERESA RIVA (Pozzo Lazzaro/Via Lungomare 3)",
+       "idx": 5,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "S. ALESSIO SICULO (Via Consolare Valeria 64)",
+       "idx": 6,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "LETOJANNI (Bv. Gallodoro SS 114)",
+       "idx": 7,
+       "arr": "7.25",
+       "dep": "7.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "16",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ALI' TERME (Via Francesco Crispi 316)",
+       "idx": 2,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "S.TERESA RIVA (Pozzo Lazzaro/Via Lungomare 3)",
+       "idx": 5,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "S. ALESSIO SICULO (Via Consolare Valeria 64)",
+       "idx": 6,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "LETOJANNI (Bv. Gallodoro SS 114)",
+       "idx": 7,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "18",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVAFEST1IV5A/9-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "ALI' TERME (Via Francesco Crispi 316)",
+       "idx": 2,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "S.TERESA RIVA (Pozzo Lazzaro/Via Lungomare 3)",
+       "idx": 5,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "S. ALESSIO SICULO (Via Consolare Valeria 64)",
+       "idx": 6,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "LETOJANNI (Bv. Gallodoro SS 114)",
+       "idx": 7,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "TAORMINA (P.zza L. Pirandello) A. 8. 20",
+       "idx": 8,
+       "arr": "9.20",
+       "dep": "9.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "20",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FEST1IV5A/915/6--"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 15,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 16,
+       "arr": "10.10",
+       "dep": "10.10"
+      },
+      {
+       "stop": "CATENANUVA (Via Vitt. Emanuele, 72)",
+       "idx": 17,
+       "arr": "10.45",
+       "dep": "10.45"
+      },
+      {
+       "stop": "REGALBUTO (Piazza Matteotti)",
+       "idx": 18,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "FINAITA",
+       "idx": 19,
+       "arr": "11.15",
+       "dep": "11.15"
+      },
+      {
+       "stop": "AGIRA (Piazza Garibaldi)",
+       "idx": 20,
+       "arr": "11.25",
+       "dep": "11.25"
+      },
+      {
+       "stop": "NISSORIA (Corso V. Emanuele/Chiesa S.Giuseppe)",
+       "idx": 21,
+       "arr": "11.40",
+       "dep": "11.40"
+      },
+      {
+       "stop": "LEONFORTE (C.so Umberto/P.zza IV Novembre)",
+       "idx": 22,
+       "arr": "11.50",
+       "dep": "11.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "22",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVAF-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TAORMINA (P.zza L. Pirandello)",
+       "idx": 9,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni) 7. 45",
+       "idx": 10,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "FIUMEFREDDO (Via P. Piemonte 98)",
+       "idx": 11,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "MASCALI (Strada Statale Siculo Orientale 124)",
+       "idx": 12,
+       "arr": "10.10",
+       "dep": "10.10"
+      },
+      {
+       "stop": "GIARRE (P.zza Duomo/Via Callipoli 236) 8. 10",
+       "idx": 13,
+       "arr": "10.15",
+       "dep": "10.15"
+      },
+      {
+       "stop": "ACIREALE (Piazza Duomo)",
+       "idx": 14,
+       "arr": "10.40",
+       "dep": "10.40"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 15,
+       "arr": "11.15",
+       "dep": "11.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "24",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FFERdaIaAllL13E°1/4/10Ls-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "S.TERESA RIVA (Pozzo Lazzaro/Via Lungomare 3)",
+       "idx": 5,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "S. ALESSIO SICULO (Via Consolare Valeria 64)",
+       "idx": 6,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "LETOJANNI (Bv. Gallodoro SS 114)",
+       "idx": 7,
+       "arr": "9.40",
+       "dep": "9.40"
+      },
+      {
+       "stop": "TAORMINA (P.zza L. Pirandello) A. 8. 20",
+       "idx": 8,
+       "arr": "9.55",
+       "dep": "9.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "26",
+     "service": {
+      "days": "mon-sat",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "FERIALELsucnoneledaleìsptiecroioddaoaVnerdì-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 15,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 16,
+       "arr": "11.40",
+       "dep": "11.40"
+      },
+      {
+       "stop": "CATENANUVA (Via Vitt. Emanuele, 72)",
+       "idx": 17,
+       "arr": "12.15",
+       "dep": "12.15"
+      },
+      {
+       "stop": "REGALBUTO (Piazza Matteotti)",
+       "idx": 18,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "FINAITA",
+       "idx": 19,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "AGIRA (Piazza Garibaldi)",
+       "idx": 20,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "NISSORIA (Corso V. Emanuele/Chiesa S.Giuseppe)",
+       "idx": 21,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "LEONFORTE (C.so Umberto/P.zza IV Novembre)",
+       "idx": 22,
+       "arr": "13.20",
+       "dep": "13.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "34",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "naFEscRpoeIAlraiLosEdtiocnoel"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MESSINA (Piazza della Repubblica)",
+       "idx": 0,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "SCALETTA ZANCLEA (Piazza Stazione)",
+       "idx": 1,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "ALI' TERME (Via Francesco Crispi 316)",
+       "idx": 2,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "S.TERESA RIVA (Pozzo Lazzaro/Via Lungomare 3)",
+       "idx": 5,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "S. ALESSIO SICULO (Via Consolare Valeria 64)",
+       "idx": 6,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "LETOJANNI (Bv. Gallodoro SS 114)",
+       "idx": 7,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "TAORMINA (P.zza L. Pirandello) A. 8. 20",
+       "idx": 8,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "36",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FelFsEcpRoeIlraAiosLdtEiocions"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MESSINA (Piazza della Repubblica)",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "S.TERESA RIVA (Pozzo Lazzaro/Via Lungomare 3)",
+       "idx": 5,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "S. ALESSIO SICULO (Via Consolare Valeria 64)",
+       "idx": 6,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "LETOJANNI (Bv. Gallodoro SS 114)",
+       "idx": 7,
+       "arr": "15.10",
+       "dep": "15.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "38",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEnscolplearsitodicdionodavuenneerìdaì-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TAORMINA (P.zza L. Pirandello)",
+       "idx": 9,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni) 7. 45",
+       "idx": 10,
+       "arr": "15.45",
+       "dep": "15.45"
+      },
+      {
+       "stop": "FIUMEFREDDO (Via P. Piemonte 98)",
+       "idx": 11,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "MASCALI (Strada Statale Siculo Orientale 124)",
+       "idx": 12,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "GIARRE (P.zza Duomo/Via Callipoli 236) 8. 10",
+       "idx": 13,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "ACIREALE (Piazza Duomo)",
+       "idx": 14,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 15,
+       "arr": "17.15",
+       "dep": "17.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "40",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "aFERIALE-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 15,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 16,
+       "arr": "17.40",
+       "dep": "17.40"
+      },
+      {
+       "stop": "CATENANUVA (Via Vitt. Emanuele, 72)",
+       "idx": 17,
+       "arr": "18.15",
+       "dep": "18.15"
+      },
+      {
+       "stop": "REGALBUTO (Piazza Matteotti)",
+       "idx": 18,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "FINAITA",
+       "idx": 19,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "AGIRA (Piazza Garibaldi)",
+       "idx": 20,
+       "arr": "18.55",
+       "dep": "18.55"
+      },
+      {
+       "stop": "NISSORIA (Corso V. Emanuele/Chiesa S.Giuseppe)",
+       "idx": 21,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "LEONFORTE (C.so Umberto/P.zza IV Novembre)",
+       "idx": 22,
+       "arr": "19.20",
+       "dep": "19.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "42",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MESSINA (Piazza della Repubblica)",
+       "idx": 0,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "SCALETTA ZANCLEA (Piazza Stazione)",
+       "idx": 1,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "ALI' TERME (Via Francesco Crispi 316)",
+       "idx": 2,
+       "arr": "16.25",
+       "dep": "16.25"
+      },
+      {
+       "stop": "S. ALESSIO SICULO (Via Consolare Valeria 64)",
+       "idx": 6,
+       "arr": "17.00",
+       "dep": "17.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "44",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MESSINA (Piazza della Repubblica)",
+       "idx": 0,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "SCALETTA ZANCLEA (Piazza Stazione)",
+       "idx": 1,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "ALI' TERME (Via Francesco Crispi 316)",
+       "idx": 2,
+       "arr": "16.25",
+       "dep": "16.25"
+      },
+      {
+       "stop": "S. ALESSIO SICULO (Via Consolare Valeria 64)",
+       "idx": 6,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "TAORMINA (P.zza L. Pirandello) A. 8. 20",
+       "idx": 8,
+       "arr": "17.25",
+       "dep": "17.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "46",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TAORMINA (P.zza L. Pirandello)",
+       "idx": 9,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni) 7. 45",
+       "idx": 10,
+       "arr": "17.45",
+       "dep": "17.45"
+      },
+      {
+       "stop": "FIUMEFREDDO (Via P. Piemonte 98)",
+       "idx": 11,
+       "arr": "18.00",
+       "dep": "18.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "48",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVAGI-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 15,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 16,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "CATENANUVA (Via Vitt. Emanuele, 72)",
+       "idx": 17,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "REGALBUTO (Piazza Matteotti)",
+       "idx": 18,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "FINAITA",
+       "idx": 19,
+       "arr": "20.15",
+       "dep": "20.15"
+      },
+      {
+       "stop": "AGIRA (Piazza Garibaldi)",
+       "idx": 20,
+       "arr": "20.25",
+       "dep": "20.25"
+      },
+      {
+       "stop": "NISSORIA (Corso V. Emanuele/Chiesa S.Giuseppe)",
+       "idx": 21,
+       "arr": "20.40",
+       "dep": "20.40"
+      },
+      {
+       "stop": "LEONFORTE (C.so Umberto/P.zza IV Novembre)",
+       "idx": 22,
+       "arr": "20.50",
+       "dep": "20.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "50",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GI1O5R/6NAALL1IEd5Ra/9lAG-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "S. ALESSIO SICULO (Via Consolare Valeria 64)",
+       "idx": 6,
+       "arr": "19.05",
+       "dep": "19.05"
+      },
+      {
+       "stop": "LETOJANNI (Bv. Gallodoro SS 114)",
+       "idx": 7,
+       "arr": "19.15",
+       "dep": "19.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "52",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GI1O/R8NAALL3I1Ed/Ra8lA-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "S. ALESSIO SICULO (Via Consolare Valeria 64)",
+       "idx": 6,
+       "arr": "23.05",
+       "dep": "23.05"
+      },
+      {
+       "stop": "LETOJANNI (Bv. Gallodoro SS 114)",
+       "idx": 7,
+       "arr": "23.15",
+       "dep": "23.15"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

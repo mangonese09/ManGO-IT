@@ -1,0 +1,433 @@
+{
+ "operator": "Gallo",
+ "route_id": "gallo-orari-gallo-p2",
+ "name": "SCIACCA-MENFI-SAMBUCA-PALERMO",
+ "source": "Gallo__ORARI_GALLO/p002.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizi Divieto di servizio locale, estremi compresi, sui tratti Sambuca-Menfi e Sciacca-Menfi;",
+  "Divieto di servizio locale Palermo-Aeroporto Falcone e Borsellino estremi compresi;"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "SCIACCA (VIA AGATOCLE)",
+    "MENFI (VIALE MICHELANGELO)",
+    "SAMBUCA DI SICILIA (VIA BERLINGUER)",
+    "BIVIO GULFA",
+    "AEROPORTO (FALCONE-BORSELLINO)",
+    "PALERMO (VIA PAOLO BALSAMO)",
+    "Ferragosto, Natale e Santo Stefano"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEDALLUNALVEN"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MENFI (VIALE MICHELANGELO)",
+       "idx": 1,
+       "arr": "5.30",
+       "dep": "5.30"
+      },
+      {
+       "stop": "SAMBUCA DI SICILIA (VIA BERLINGUER)",
+       "idx": 2,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "BIVIO GULFA",
+       "idx": 3,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 5,
+       "arr": "7.15",
+       "dep": "7.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALESCOLDALLUNALVEN"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 0,
+       "arr": "5.45",
+       "dep": "5.45"
+      },
+      {
+       "stop": "BIVIO GULFA",
+       "idx": 3,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 5,
+       "arr": "7.25",
+       "dep": "7.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEDALLUNALVEN"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MENFI (VIALE MICHELANGELO)",
+       "idx": 1,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "SAMBUCA DI SICILIA (VIA BERLINGUER)",
+       "idx": 2,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "BIVIO GULFA",
+       "idx": 3,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 5,
+       "arr": "8.45",
+       "dep": "8.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 0,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "BIVIO GULFA",
+       "idx": 3,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 5,
+       "arr": "11.10",
+       "dep": "11.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVAINPERIODOSCOL"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 0,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "BIVIO GULFA",
+       "idx": 3,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 5,
+       "arr": "18.10",
+       "dep": "18.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVAINPERIODOSCOL"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MENFI (VIALE MICHELANGELO)",
+       "idx": 1,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "SAMBUCA DI SICILIA (VIA BERLINGUER)",
+       "idx": 2,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "BIVIO GULFA",
+       "idx": 3,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 5,
+       "arr": "18.00",
+       "dep": "18.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 5,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "BIVIO GULFA",
+       "idx": 3,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "MENFI (VIALE MICHELANGELO)",
+       "idx": 1,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 0,
+       "arr": "14.25",
+       "dep": "14.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEDALLUNALVEN"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 5,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "BIVIO GULFA",
+       "idx": 3,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "MENFI (VIALE MICHELANGELO)",
+       "idx": 1,
+       "arr": "16.15",
+       "dep": "16.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALESCOLDALLUNALVEN"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 5,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "BIVIO GULFA",
+       "idx": 3,
+       "arr": "17.25",
+       "dep": "17.25"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 0,
+       "arr": "17.55",
+       "dep": "17.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEDALLUNALVEN"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 5,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "BIVIO GULFA",
+       "idx": 3,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "SAMBUCA DI SICILIA (VIA BERLINGUER)",
+       "idx": 2,
+       "arr": "19.15",
+       "dep": "19.15"
+      },
+      {
+       "stop": "MENFI (VIALE MICHELANGELO)",
+       "idx": 1,
+       "arr": "19.45",
+       "dep": "19.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVAINPERIODOSCOL"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 5,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "BIVIO GULFA",
+       "idx": 3,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "SAMBUCA DI SICILIA (VIA BERLINGUER)",
+       "idx": 2,
+       "arr": "19.25",
+       "dep": "19.25"
+      },
+      {
+       "stop": "MENFI (VIALE MICHELANGELO)",
+       "idx": 1,
+       "arr": "19.55",
+       "dep": "19.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVAINPERIODOSCOL"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PALERMO (VIA PAOLO BALSAMO)",
+       "idx": 5,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "BIVIO GULFA",
+       "idx": 3,
+       "arr": "20.10",
+       "dep": "20.10"
+      },
+      {
+       "stop": "SCIACCA (VIA AGATOCLE)",
+       "idx": 0,
+       "arr": "20.40",
+       "dep": "20.40"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

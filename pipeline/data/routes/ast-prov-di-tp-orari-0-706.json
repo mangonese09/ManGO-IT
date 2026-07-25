@@ -1,0 +1,58 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-tp-orari-0-706",
+ "name": "v. Cialona - parcheggio Basile",
+ "source": "AST_prov._di_TP_-ORARI_0/p003.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio NESSUNA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "v. Cialona",
+    "NINFA via Pio la Torre",
+    "v.Indipendenza Siciliana",
+    "parcheggio Basile"
+   ],
+   "trips": [
+    {
+     "corsa": "1A",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "KMFERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "v. Cialona",
+       "idx": 0,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "NINFA via Pio la Torre",
+       "idx": 1,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "v.Indipendenza Siciliana",
+       "idx": 2,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "parcheggio Basile",
+       "idx": 3,
+       "arr": "8.30",
+       "dep": "8.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

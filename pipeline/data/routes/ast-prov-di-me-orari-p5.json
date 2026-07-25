@@ -1,0 +1,391 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "ast-prov-di-me-orari-p5",
+ "name": "MESSINA via Bonino Capolinea - BARCELLONA via Gramsci",
+ "source": "AST_prov.di_ME_-_ORARI/p005.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio NESSUNA"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "MESSINA via Bonino Capolinea",
+    "PAPARDO Università",
+    "MORTELLE Stab. Balneari",
+    "DIVIETO Ponte Gallo",
+    "VILLAFRANCA via Nazionale",
+    "OLIVARELLA Svincolo A 20",
+    "MERI' via Nazionale",
+    "BARCELLONA via Gramsci"
+   ],
+   "trips": [
+    {
+     "corsa": "32A",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESCLUSOSABATOEDAGOSTO"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MESSINA via Bonino Capolinea",
+       "idx": 0,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "PAPARDO Università",
+       "idx": 1,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "MORTELLE Stab. Balneari",
+       "idx": 2,
+       "arr": "11.55",
+       "dep": "11.55"
+      },
+      {
+       "stop": "DIVIETO Ponte Gallo",
+       "idx": 3,
+       "arr": "12.20",
+       "dep": "12.20"
+      },
+      {
+       "stop": "VILLAFRANCA via Nazionale",
+       "idx": 4,
+       "arr": "12.25",
+       "dep": "12.25"
+      },
+      {
+       "stop": "OLIVARELLA Svincolo A 20",
+       "idx": 5,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "MERI' via Nazionale",
+       "idx": 6,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "BARCELLONA via Gramsci",
+       "idx": 7,
+       "arr": "13.00",
+       "dep": "13.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "33A",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESCLUSOSABATOEDAGOSTO"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MESSINA via Bonino Capolinea",
+       "idx": 0,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "PAPARDO Università",
+       "idx": 1,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "MORTELLE Stab. Balneari",
+       "idx": 2,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "DIVIETO Ponte Gallo",
+       "idx": 3,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "VILLAFRANCA via Nazionale",
+       "idx": 4,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "OLIVARELLA Svincolo A 20",
+       "idx": 5,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "MERI' via Nazionale",
+       "idx": 6,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "BARCELLONA via Gramsci",
+       "idx": 7,
+       "arr": "14.35",
+       "dep": "14.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "34A",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEINVERNALEESCLUSOSABATO"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MESSINA via Bonino Capolinea",
+       "idx": 0,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "PAPARDO Università",
+       "idx": 1,
+       "arr": "17.15",
+       "dep": "17.15"
+      },
+      {
+       "stop": "MORTELLE Stab. Balneari",
+       "idx": 2,
+       "arr": "17.25",
+       "dep": "17.25"
+      },
+      {
+       "stop": "DIVIETO Ponte Gallo",
+       "idx": 3,
+       "arr": "17.50",
+       "dep": "17.50"
+      },
+      {
+       "stop": "VILLAFRANCA via Nazionale",
+       "idx": 4,
+       "arr": "17.55",
+       "dep": "17.55"
+      },
+      {
+       "stop": "OLIVARELLA Svincolo A 20",
+       "idx": 5,
+       "arr": "18.15",
+       "dep": "18.15"
+      },
+      {
+       "stop": "MERI' via Nazionale",
+       "idx": 6,
+       "arr": "18.25",
+       "dep": "18.25"
+      },
+      {
+       "stop": "BARCELLONA via Gramsci",
+       "idx": 7,
+       "arr": "18.35",
+       "dep": "18.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "31R",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESCLUSOSABATOEDAGOSTO"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "BARCELLONA via Gramsci",
+       "idx": 7,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "MERI' via Nazionale",
+       "idx": 6,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "OLIVARELLA Svincolo A 20",
+       "idx": 5,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "VILLAFRANCA via Nazionale",
+       "idx": 4,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "DIVIETO Ponte Gallo",
+       "idx": 3,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "MORTELLE Stab. Balneari",
+       "idx": 2,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "PAPARDO Università",
+       "idx": 1,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "MESSINA via Bonino Capolinea",
+       "idx": 0,
+       "arr": "9.10",
+       "dep": "9.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "32R",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEESCLUSOSABATOEDAGOSTO"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "BARCELLONA via Gramsci",
+       "idx": 7,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "MERI' via Nazionale",
+       "idx": 6,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "OLIVARELLA Svincolo A 20",
+       "idx": 5,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "VILLAFRANCA via Nazionale",
+       "idx": 4,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "DIVIETO Ponte Gallo",
+       "idx": 3,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "MORTELLE Stab. Balneari",
+       "idx": 2,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "PAPARDO Università",
+       "idx": 1,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "MESSINA via Bonino Capolinea",
+       "idx": 0,
+       "arr": "9.50",
+       "dep": "9.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "33R",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEINVERNALEESCLUSOSABATO"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "BARCELLONA via Gramsci",
+       "idx": 7,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "MERI' via Nazionale",
+       "idx": 6,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "OLIVARELLA Svincolo A 20",
+       "idx": 5,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "VILLAFRANCA via Nazionale",
+       "idx": 4,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "DIVIETO Ponte Gallo",
+       "idx": 3,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "MORTELLE Stab. Balneari",
+       "idx": 2,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "PAPARDO Università",
+       "idx": 1,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "MESSINA via Bonino Capolinea",
+       "idx": 0,
+       "arr": "9.50",
+       "dep": "9.50"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}
