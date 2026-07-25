@@ -132,6 +132,14 @@ button { cursor: pointer; }
 .ticket-title { font-weight: 600; font-size: 0.9rem; }
 .ticket-link { font-size: 0.85rem; }
 
+/* ── direct fallback ── */
+.direct-block {
+  background: var(--bg-surface, #1e1e1e); border-radius: var(--radius-lg, 14px);
+  border-left: 3px solid var(--warning, #f5a524);
+  padding: 12px 16px; margin: 12px 0;
+}
+.direct-head p { margin: 2px 0 6px; }
+
 /* ── departure board ── */
 .board-head { display: flex; align-items: center; justify-content: space-between; margin-top: 20px; }
 .board-head h2 { margin: 0 4px; }

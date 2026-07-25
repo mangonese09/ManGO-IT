@@ -30,9 +30,60 @@ const SICILY = { latMin: 36.55, latMax: 38.85, lonMin: 11.85, lonMax: 15.75 };
 // Coach stops from our own GTFS pipeline (autocomplete works even before
 // Transitous ingests the feed). Optional file; empty list if absent.
 let coachStops = [];
+let coachTrips = [];
 try {
   coachStops = JSON.parse(fs.readFileSync(path.join(__dirname, 'coach-stops.json'), 'utf8'));
 } catch { /* not generated yet */ }
+try {
+  coachTrips = JSON.parse(fs.readFileSync(path.join(__dirname, 'coach-trips.json'), 'utf8'));
+} catch { /* not generated yet */ }
+
+// ── DEGRADED DIRECT-SERVICE LOOKUP ──
+// When Transitous is unreachable, answer "next direct coaches A→B" from our
+// own feed. Single-leg only, honestly labelled in the UI.
+const IT_HOLIDAYS = new Set(['2026-08-15', '2026-11-01', '2026-12-08', '2026-12-25', '2026-12-26',
+  '2027-01-01', '2027-01-06', '2027-03-28', '2027-03-29', '2027-04-25', '2027-05-01', '2027-06-02']);
+
+function romeParts(date = new Date()) {
+  const p = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Europe/Rome', year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', minute: '2-digit', weekday: 'short', hour12: false,
+  }).formatToParts(date).reduce((a, x) => (a[x.type] = x.value, a), {});
+  const wd = { Mon: 0, Tue: 1, Wed: 2, Thu: 3, Fri: 4, Sat: 5, Sun: 6 }[p.weekday];
+  return { iso: `${p.year}-${p.month}-${p.day}`, wd, min: (p.hour === '24' ? 0 : +p.hour) * 60 + +p.minute, month: +p.month, day: +p.day };
+}
+
+function serviceRuns(trip, day) {
+  const holiday = IT_HOLIDAYS.has(day.iso) || day.wd === 6;
+  if (trip.d === 'sun-holidays') { if (!holiday) return false; }
+  else if (trip.d === 'daily') { /* runs */ }
+  else if (trip.d === 'mon-fri') { if (day.wd > 4 || holiday) return false; }
+  else { if (day.wd > 5 || holiday) return false; } // mon-sat
+  if (trip.sc === 'school-days-only' || trip.sc === 'holidays-only') {
+    const inSchool = (day.month > 9 || (day.month === 9 && day.day >= 14) || day.month < 6 ||
+      (day.month === 6 && day.day <= 8));
+    if (trip.sc === 'school-days-only' && !inSchool) return false;
+    if (trip.sc === 'holidays-only' && inSchool) return false;
+  }
+  if (trip.se) {
+    const [fd, fm] = trip.se.from.split('/').map(Number);
+    const [td, tm] = trip.se.to.split('/').map(Number);
+    const cur = day.month * 100 + day.day, lo = fm * 100 + fd, hi = tm * 100 + td;
+    const inside = lo <= hi ? (cur >= lo && cur <= hi) : (cur >= lo || cur <= hi);
+    if (!inside) return false;
+  }
+  return true;
+}
+
+function nearStopIdxs(lat, lon, radiusM) {
+  const out = [];
+  for (let i = 0; i < coachStops.length; i++) {
+    const s = coachStops[i];
+    const d = haversineM(lat, lon, s.lat, s.lon);
+    if (d <= radiusM) out.push({ i, d });
+  }
+  return out.sort((a, b) => a.d - b.d).slice(0, 25);
+}
 
 function norm(s) {
   return (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
@@ -264,6 +315,46 @@ const routes = {
     };
     cacheSet(key, out, 60 * 1000);
     return out;
+  },
+
+  'GET /api/direct': async (q) => {
+    const fLat = Number(q.get('fromLat')), fLon = Number(q.get('fromLon'));
+    const tLat = Number(q.get('toLat')), tLon = Number(q.get('toLon'));
+    if (![fLat, fLon, tLat, tLon].every(isFinite)) throw httpError(400, 'fromLat/fromLon/toLat/toLon required');
+    const radius = Math.min(Number(q.get('r')) || 1500, 5000);
+    const fromIdx = new Map(nearStopIdxs(fLat, fLon, radius).map((x) => [x.i, x.d]));
+    const toIdx = new Map(nearStopIdxs(tLat, tLon, radius).map((x) => [x.i, x.d]));
+    if (!fromIdx.size || !toIdx.size) return { results: [], reason: !fromIdx.size ? 'no-stops-near-origin' : 'no-stops-near-destination' };
+    const now = romeParts();
+    const results = [];
+    for (const dayOff of [0, 1]) {
+      const day = dayOff === 0 ? now : romeParts(new Date(Date.now() + 86400000));
+      for (const trip of coachTrips) {
+        if (!serviceRuns(trip, day)) continue;
+        let board = null;
+        for (const [idx, min] of trip.s) {
+          if (board === null) {
+            if (fromIdx.has(idx)) board = { idx, min };
+          } else if (toIdx.has(idx)) {
+            const depOk = dayOff === 1 || board.min >= now.min - 5;
+            if (depOk) {
+              results.push({
+                day: dayOff === 0 ? 'today' : 'tomorrow',
+                route: trip.r, operator: trip.op,
+                from: coachStops[board.idx].n, to: coachStops[idx].n,
+                dep: `${String(Math.floor(board.min / 60) % 24).padStart(2, '0')}:${String(board.min % 60).padStart(2, '0')}`,
+                arr: `${String(Math.floor(trip.s.find(([i]) => i === idx)[1] / 60) % 24).padStart(2, '0')}:${String(trip.s.find(([i]) => i === idx)[1] % 60).padStart(2, '0')}`,
+                depMin: board.min + dayOff * 1440,
+              });
+            }
+            break;
+          }
+        }
+      }
+      if (results.filter((r) => r.day === 'today').length >= 6) break;
+    }
+    results.sort((a, b) => a.depMin - b.depMin);
+    return { fetchedAt: Date.now(), results: results.slice(0, 10) };
   },
 
   'GET /api/vt/stations': async (q) => {

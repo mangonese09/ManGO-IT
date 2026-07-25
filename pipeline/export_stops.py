@@ -6,21 +6,37 @@ import json, os, re
 ROOT = os.path.dirname(__file__)
 
 
+def to_min(t):
+    h, m = re.split(r'[.:]', t)
+    return int(h) * 60 + int(m)
+
+
 def main():
     coords = json.load(open(os.path.join(ROOT, 'data', 'stop-coords.json'), encoding='utf-8'))
-    names = {}
-    for f in os.listdir(os.path.join(ROOT, 'data', 'routes')):
+    names, order = {}, []
+    trips = []
+    for f in sorted(os.listdir(os.path.join(ROOT, 'data', 'routes'))):
         r = json.load(open(os.path.join(ROOT, 'data', 'routes', f), encoding='utf-8'))
         for d in r['directions']:
-            for s in d['stops']:
-                key = re.sub(r'\s+', ' ', s.upper().strip())
-                if key in coords and coords[key] and key not in names:
-                    c = coords[key]
-                    names[key] = {'n': s, 'lat': round(c['lat'], 5), 'lon': round(c['lon'], 5)}
-    out = sorted(names.values(), key=lambda s: s['n'])
-    dest = os.path.join(ROOT, '..', 'server', 'coach-stops.json')
-    json.dump(out, open(dest, 'w', encoding='utf-8'), ensure_ascii=False)
-    print(f'{len(out)} coach stops -> server/coach-stops.json')
+            for t in d['trips']:
+                if not t['valid']: continue
+                seq = []
+                for s in t['stops']:
+                    key = re.sub(r'\s+', ' ', s['stop'].upper().strip())
+                    c = coords.get(key)
+                    if not c: continue
+                    if key not in names:
+                        names[key] = len(order)
+                        order.append({'n': s['stop'], 'lat': round(c['lat'], 5), 'lon': round(c['lon'], 5)})
+                    seq.append([names[key], to_min(s['dep'])])
+                if len(seq) >= 2:
+                    svc = t['service']
+                    trips.append({'r': r['name'][:60], 'op': r['operator'],
+                                  'd': svc['days'], 'sc': svc['school'],
+                                  'se': svc['season'], 's': seq})
+    json.dump(order, open(os.path.join(ROOT, '..', 'server', 'coach-stops.json'), 'w', encoding='utf-8'), ensure_ascii=False)
+    json.dump(trips, open(os.path.join(ROOT, '..', 'server', 'coach-trips.json'), 'w', encoding='utf-8'), ensure_ascii=False)
+    print(f'{len(order)} coach stops, {len(trips)} trips -> server/coach-{{stops,trips}}.json')
 
 
 if __name__ == '__main__':

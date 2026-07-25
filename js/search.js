@@ -47,7 +47,7 @@ function showMyLocationOption(list, input) {
       list.hidden = true;
       input.value = 'My location';
       locate().then((pos) => {
-        sel.from = { name: 'My location', place: `${pos.lat.toFixed(5)},${pos.lon.toFixed(5)}` };
+        sel.from = { name: 'My location', place: `${pos.lat.toFixed(5)},${pos.lon.toFixed(5)}`, lat: pos.lat, lon: pos.lon };
       }).catch(() => {
         input.value = '';
         toast('Location unavailable — type a place instead', 'warn');
@@ -80,14 +80,14 @@ async function suggest(which, q) {
       list.appendChild(el('button', {
         class: 'suggest-row',
         onclick: () => {
-          sel[which] = { name: r.name, place: r.type === 'STOP' && r.id ? r.id : `${r.lat},${r.lon}` };
+          sel[which] = { name: r.name, place: r.type === 'STOP' && r.id ? r.id : `${r.lat},${r.lon}`, lat: r.lat, lon: r.lon };
           document.getElementById(`${which}-input`).value = r.name;
           list.hidden = true;
           // destination-first: picking a To with no From = route me there from here
           if (which === 'to' && !sel.from) {
             document.getElementById('from-input').value = 'My location';
             locate().then((pos) => {
-              sel.from = { name: 'My location', place: `${pos.lat.toFixed(5)},${pos.lon.toFixed(5)}` };
+              sel.from = { name: 'My location', place: `${pos.lat.toFixed(5)},${pos.lon.toFixed(5)}`, lat: pos.lat, lon: pos.lon };
               runSearch();
             }).catch(() => {
               document.getElementById('from-input').value = '';
@@ -150,13 +150,44 @@ async function runSearch() {
     pushRecent({ from: sel.from, to: sel.to });
     renderRecents();
     renderItineraries(data.itineraries || [], { stale, fetchedAt });
+    if (!(data.itineraries || []).length) await tryDirectFallback(false);
   } catch (err) {
     results.innerHTML = '';
-    results.appendChild(el('div', { class: 'empty-state' }, [
-      el('p', { text: 'No route found — the routing service may be unreachable.' }),
-      el('p', { class: 'muted', text: 'Check the operator sites directly, or retry when back online.' }),
-    ]));
+    const ok = await tryDirectFallback(true);
+    if (!ok) {
+      results.appendChild(el('div', { class: 'empty-state' }, [
+        el('p', { text: 'No route found — the routing service may be unreachable.' }),
+        el('p', { class: 'muted', text: 'Check the operator sites directly, or retry when back online.' }),
+      ]));
+    }
   }
+}
+
+// Routing engine down or empty → direct single-leg coaches from our own feed.
+async function tryDirectFallback(routingDown) {
+  if (!sel.from?.lat || !sel.to?.lat) return false;
+  try {
+    const { data } = await api.direct({
+      fromLat: sel.from.lat, fromLon: sel.from.lon,
+      toLat: sel.to.lat, toLon: sel.to.lon,
+    });
+    if (!data.results?.length) return false;
+    const results = document.getElementById('results');
+    results.appendChild(el('div', { class: 'direct-block' }, [
+      el('div', { class: 'direct-head' }, [
+        el('strong', { text: routingDown ? 'Routing unavailable — direct coaches only' : 'Direct coaches (from ManGO:IT timetables)' }),
+        el('p', { class: 'muted', text: 'Single-leg services from our own schedule data. Scheduled times, no live status.' }),
+      ]),
+      ...data.results.map((r) => el('div', { class: 'dep-row' }, [
+        el('span', { class: 'dep-mode', text: '🚌' }),
+        el('div', { class: 'dep-main' }, [
+          el('span', { class: 'dep-route', text: `${r.dep} → ${r.arr}${r.day === 'tomorrow' ? ' (tomorrow)' : ''}` }),
+          el('span', { class: 'muted dep-headsign', text: `${r.from} → ${r.to} · ${r.operator}` }),
+        ]),
+      ])),
+    ]));
+    return true;
+  } catch { return false; }
 }
 
 function renderItineraries(itineraries, { stale, fetchedAt }) {

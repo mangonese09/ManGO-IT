@@ -43,6 +43,9 @@ export const api = {
   stoptimes: (stopId, n = 6) =>
     getJson(`/api/stoptimes?stopId=${encodeURIComponent(stopId)}&n=${n}`, { source: 'transitous' }),
 
+  direct: ({ fromLat, fromLon, toLat, toLon }) =>
+    getJson(`/api/direct?fromLat=${fromLat.toFixed(4)}&fromLon=${fromLon.toFixed(4)}&toLat=${toLat.toFixed(4)}&toLon=${toLon.toFixed(4)}`, { source: 'transitous' }),
+
   vtLive: (train) =>
     getJson(`/api/vt/live?train=${encodeURIComponent(train)}`, { source: 'viaggiatreno' }),
 
