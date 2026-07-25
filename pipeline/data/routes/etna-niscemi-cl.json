@@ -1,0 +1,78 @@
+{
+ "operator": "Etna Trasporti",
+ "route_id": "etna-niscemi-cl",
+ "name": "Niscemi - Butera - Caltanissetta",
+ "source": "ETNA_TRASPORTI_ORARI_2/p002.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio Nessuna"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "NISCEMI",
+    "(Via M.Gori incrocio Via G. Marconi)",
+    "Butera (Piazza Dante)",
+    "BV. MAZZARINO (Istituto Carafa)",
+    "CALTANISSETTA (Autostazione Piazzale Rochester)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "STAZIONAMENTIFERIALEKMdalLunedìaVenerdìperiodoscolasticoNISCEMI-0,000(ViaM.Gori-incrocioButera"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "Butera (Piazza Dante)",
+       "idx": 2,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "BV. MAZZARINO (Istituto Carafa)",
+       "idx": 3,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "CALTANISSETTA (Autostazione Piazzale Rochester)",
+       "idx": 4,
+       "arr": "8.10",
+       "dep": "8.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "KMFERIALEdalLunedìaVenerdìperiodoscolastico80,600-ViaG.Marconi)"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CALTANISSETTA (Autostazione Piazzale Rochester)",
+       "idx": 4,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "Butera (Piazza Dante)",
+       "idx": 2,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

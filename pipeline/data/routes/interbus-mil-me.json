@@ -1,0 +1,2434 @@
+{
+ "operator": "Interbus",
+ "route_id": "interbus-mil-me",
+ "name": "Militello - Scordia - Catania - Taormina - Messina",
+ "source": "ORARI_INTERBUS/p005.json",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "MILITELLO (Via Giovanni Verga, 10)",
+    "SCORDIA (Largo Ex Mercato)",
+    "PALAGONIA FS.",
+    "BV. VALSAVOIA",
+    "BV. IAZZOTTO",
+    "PONTE SIMETO",
+    "AEROPORTO Fontanarossa",
+    "CATANIA (Via D'Amico/Archimede)",
+    "ACIREALE (P.zza Duomo/C.so Umberto)",
+    "GIARRE (P.zza Duomo/Via Callipoli 236)",
+    "FIUMEFREDDO (P.zza Chiesa Madre)",
+    "GIARDINI (Via Umberto SS 114/San Giovanni)",
+    "TAORMINA (P.zza L. Pirandello)",
+    "LETOJANNI (Bv. Gallodoro SS 114)",
+    "SANTA TERESA RIVA (Via Lungomare 3)",
+    "NIZZA DI SICILIA (P.zza Interdonato)",
+    "ALI' TERME (Via Francesco Crispi 316)",
+    "SCALETTA ZANCLEA (Piazza Stazione)",
+    "MESSINA (Piazza della Repubblica)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 0,
+       "arr": "5.30",
+       "dep": "5.30"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 1,
+       "arr": "5.50",
+       "dep": "5.50"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 2,
+       "arr": "5.55",
+       "dep": "5.55"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 3,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 4,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 5,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 7,
+       "arr": "6.30",
+       "dep": "6.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 0,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 1,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 2,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 3,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 4,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 5,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 7,
+       "arr": "7.10",
+       "dep": "7.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscpoelraiosdtiocoLun.-Ven.-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 1,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 2,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 3,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 4,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 5,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 7,
+       "arr": "7.25",
+       "dep": "7.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscpoelraiosdtiocoLun.-Ven.-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 1,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 2,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 3,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 4,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 5,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 7,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 0,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 1,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 2,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 3,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 4,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 5,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "AEROPORTO Fontanarossa",
+       "idx": 6,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 7,
+       "arr": "7.35",
+       "dep": "7.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 1,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 2,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 3,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 4,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 5,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 7,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "13",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "LFuEnR.-IAVeLnE."
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 0,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 1,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 2,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 3,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 4,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 5,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 7,
+       "arr": "8.20",
+       "dep": "8.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "15",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 0,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 1,
+       "arr": "8.10",
+       "dep": "8.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "17",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 0,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 1,
+       "arr": "8.10",
+       "dep": "8.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "19",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscpoelraiosdtiocoLun.-Ven.-"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 1,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 2,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 3,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 4,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 5,
+       "arr": "8.35",
+       "dep": "8.35"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 7,
+       "arr": "8.55",
+       "dep": "8.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "21",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": {
+       "from": "15/6",
+       "to": "15/9"
+      },
+      "raw": "FESTIVAPERIODO15/6-15/9"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 0,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 1,
+       "arr": "8.50",
+       "dep": "8.50"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 2,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 3,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 4,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 5,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 7,
+       "arr": "9.35",
+       "dep": "9.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "23",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 0,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 1,
+       "arr": "8.50",
+       "dep": "8.50"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 2,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 3,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 4,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 5,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 7,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "ACIREALE (P.zza Duomo/C.so Umberto)",
+       "idx": 8,
+       "arr": "10.05",
+       "dep": "10.05"
+      },
+      {
+       "stop": "GIARRE (P.zza Duomo/Via Callipoli 236)",
+       "idx": 9,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "FIUMEFREDDO (P.zza Chiesa Madre)",
+       "idx": 10,
+       "arr": "10.45",
+       "dep": "10.45"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 11,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "TAORMINA (P.zza L. Pirandello)",
+       "idx": 12,
+       "arr": "11.15",
+       "dep": "11.40"
+      },
+      {
+       "stop": "LETOJANNI (Bv. Gallodoro SS 114)",
+       "idx": 13,
+       "arr": "11.55",
+       "dep": "11.55"
+      },
+      {
+       "stop": "SANTA TERESA RIVA (Via Lungomare 3)",
+       "idx": 14,
+       "arr": "12.15",
+       "dep": "12.15"
+      },
+      {
+       "stop": "NIZZA DI SICILIA (P.zza Interdonato)",
+       "idx": 15,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "ALI' TERME (Via Francesco Crispi 316)",
+       "idx": 16,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "SCALETTA ZANCLEA (Piazza Stazione)",
+       "idx": 17,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "MESSINA (Piazza della Repubblica)",
+       "idx": 18,
+       "arr": "13.25",
+       "dep": "13.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "25",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 0,
+       "arr": "8.50",
+       "dep": "8.50"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 1,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 2,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 3,
+       "arr": "9.25",
+       "dep": "9.25"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 4,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 5,
+       "arr": "9.35",
+       "dep": "9.35"
+      },
+      {
+       "stop": "AEROPORTO Fontanarossa",
+       "idx": 6,
+       "arr": "9.35",
+       "dep": "9.35"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 7,
+       "arr": "9.45",
+       "dep": "9.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "27",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 0,
+       "arr": "10.50",
+       "dep": "10.50"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 1,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 2,
+       "arr": "11.15",
+       "dep": "11.15"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 3,
+       "arr": "11.25",
+       "dep": "11.25"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 4,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 5,
+       "arr": "11.35",
+       "dep": "11.35"
+      },
+      {
+       "stop": "AEROPORTO Fontanarossa",
+       "idx": 6,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 7,
+       "arr": "11.55",
+       "dep": "11.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "29",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 0,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 1,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 2,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 3,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 4,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 5,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 7,
+       "arr": "13.55",
+       "dep": "13.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "31",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscpoelraiosdtiocoLun.-Ven."
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 0,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 1,
+       "arr": "13.20",
+       "dep": "13.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "33",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "FERIAeLsEclusosabatoper1io5d/6o-15/9"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 0,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 1,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 2,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 3,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 4,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 5,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 7,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "35",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEperiodoscolastico"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 0,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 1,
+       "arr": "14.10",
+       "dep": "14.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "37",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 0,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 1,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 2,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 3,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 4,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 5,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 7,
+       "arr": "15.55",
+       "dep": "15.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "39",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 0,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 1,
+       "arr": "17.10",
+       "dep": "17.10"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 2,
+       "arr": "17.15",
+       "dep": "17.15"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 3,
+       "arr": "17.25",
+       "dep": "17.25"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 4,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 5,
+       "arr": "17.35",
+       "dep": "17.35"
+      },
+      {
+       "stop": "AEROPORTO Fontanarossa",
+       "idx": 6,
+       "arr": "17.45",
+       "dep": "17.45"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 7,
+       "arr": "17.55",
+       "dep": "17.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "41",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscpoelraiosdtiocoLun.-Ven."
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 0,
+       "arr": "17.05",
+       "dep": "17.05"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 1,
+       "arr": "17.20",
+       "dep": "17.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "43",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "LFuEnR.-IAVeLnE."
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 0,
+       "arr": "18.50",
+       "dep": "18.50"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 1,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 2,
+       "arr": "19.15",
+       "dep": "19.15"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 3,
+       "arr": "19.25",
+       "dep": "19.25"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 4,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 5,
+       "arr": "19.35",
+       "dep": "19.35"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 7,
+       "arr": "19.55",
+       "dep": "19.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "45",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscpoelraiosdtiocoLun.-Ven."
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 0,
+       "arr": "19.05",
+       "dep": "19.05"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 1,
+       "arr": "19.20",
+       "dep": "19.20"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "MESSINA (Piazza della Repubblica)",
+    "SCALETTA ZANCLEA (Piazza Stazione)",
+    "ALI' TERME (Via Francesco Crispi 316)",
+    "NIZZA DI SICILIA (P.zza Interdonato)",
+    "SANTA TERESA RIVA (Via Lungomare 3)",
+    "LETOJANNI (Bv. Gallodoro SS 114)",
+    "TAORMINA (P.zza L. Pirandello)",
+    "GIARDINI (Via Umberto SS 114/San Giovanni)",
+    "FIUMEFREDDO (Via P. Piemonte 98)",
+    "GIARRE (P.zza Duomo/Via Callipoli 236)",
+    "ACIREALE (P.zza Duomo/C.so Umberto)",
+    "CATANIA (Via D'Amico/Archimede)",
+    "AEROPORTO Fontanarossa",
+    "PONTE SIMETO",
+    "BV. IAZZOTTO",
+    "BV. VALSAVOIA",
+    "PALAGONIA FS.",
+    "SCORDIA (Largo Ex Mercato)",
+    "MILITELLO (Via Giovanni Verga, 10)"
+   ],
+   "trips": [
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FpEeRriIoAdLoEscolastico--------------"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 17,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 18,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FpEeRriIoAdLoEscolastico-------------"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 11,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 13,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 14,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 15,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 16,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 17,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 18,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "peFrEioRdIAoLnEonscolastico-------------"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 11,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 13,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 14,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 15,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 16,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 17,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 18,
+       "arr": "8.20",
+       "dep": "8.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FpEeRriIoAdLoEscolastico--------------"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 17,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 18,
+       "arr": "8.30",
+       "dep": "8.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE-------------"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 11,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 13,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 14,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 15,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 16,
+       "arr": "8.40",
+       "dep": "8.40"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 17,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 18,
+       "arr": "9.05",
+       "dep": "9.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE-------------"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 11,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 13,
+       "arr": "11.20",
+       "dep": "11.20"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 14,
+       "arr": "11.25",
+       "dep": "11.25"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 15,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 16,
+       "arr": "11.40",
+       "dep": "11.40"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 17,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 18,
+       "arr": "12.05",
+       "dep": "12.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "14",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALEsaebsactolusoper1io5d/6o-15/9-------------"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 11,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 13,
+       "arr": "12.20",
+       "dep": "12.20"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 14,
+       "arr": "12.25",
+       "dep": "12.25"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 15,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 16,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 17,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 18,
+       "arr": "13.05",
+       "dep": "13.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "16",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscpoelraiosdtiocoLun.-Ven.-------------"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 11,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 13,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 14,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 15,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 16,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 17,
+       "arr": "13.15",
+       "dep": "13.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "18",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscpoelraiosdtiocoLun.-Ven.--------------"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 17,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 18,
+       "arr": "13.35",
+       "dep": "13.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "20",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FpEeRriIoAdLoEscolastico--------------"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 17,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 18,
+       "arr": "13.50",
+       "dep": "13.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "22",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE-------------"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 11,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "AEROPORTO Fontanarossa",
+       "idx": 12,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 13,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 14,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 15,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 16,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 17,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 18,
+       "arr": "14.05",
+       "dep": "14.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "24",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscpoelraiosdtiocoLun.-Ven.-------------"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 11,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 13,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 14,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 15,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 16,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 17,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "26",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscpoelraiosdtiocoLun.-Ven.--------------"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 17,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 18,
+       "arr": "14.35",
+       "dep": "14.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "28",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE-------------"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 11,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 13,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 14,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 15,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 16,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 17,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 18,
+       "arr": "15.05",
+       "dep": "15.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "30",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "LFuEnR.-IAVeLnE.-------------"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 11,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 13,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 14,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 15,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 16,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 17,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 18,
+       "arr": "15.35",
+       "dep": "15.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "32",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscpoelraiosdtiocoLun.-Ven.-------------"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 11,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 13,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 14,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 15,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 16,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 17,
+       "arr": "15.45",
+       "dep": "15.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "34",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "FERIALEscpoelraiosdtiocoLun.-Ven.--------------"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 17,
+       "arr": "15.45",
+       "dep": "15.45"
+      },
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 18,
+       "arr": "16.05",
+       "dep": "16.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "36",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MESSINA (Piazza della Repubblica)",
+       "idx": 0,
+       "arr": "11.40",
+       "dep": "11.40"
+      },
+      {
+       "stop": "SCALETTA ZANCLEA (Piazza Stazione)",
+       "idx": 1,
+       "arr": "12.15",
+       "dep": "12.15"
+      },
+      {
+       "stop": "ALI' TERME (Via Francesco Crispi 316)",
+       "idx": 2,
+       "arr": "12.25",
+       "dep": "12.25"
+      },
+      {
+       "stop": "NIZZA DI SICILIA (P.zza Interdonato)",
+       "idx": 3,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "SANTA TERESA RIVA (Via Lungomare 3)",
+       "idx": 4,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "LETOJANNI (Bv. Gallodoro SS 114)",
+       "idx": 5,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "TAORMINA (P.zza L. Pirandello)",
+       "idx": 6,
+       "arr": "13.25",
+       "dep": "13.30"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 7,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "FIUMEFREDDO (Via P. Piemonte 98)",
+       "idx": 8,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "GIARRE (P.zza Duomo/Via Callipoli 236)",
+       "idx": 9,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "ACIREALE (P.zza Duomo/C.so Umberto)",
+       "idx": 10,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 11,
+       "arr": "15.15",
+       "dep": "16.00"
+      },
+      {
+       "stop": "AEROPORTO Fontanarossa",
+       "idx": 12,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 13,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 14,
+       "arr": "16.25",
+       "dep": "16.25"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 15,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 16,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 17,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 18,
+       "arr": "17.05",
+       "dep": "17.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "38",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE-------------"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 11,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 13,
+       "arr": "17.20",
+       "dep": "17.20"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 14,
+       "arr": "17.25",
+       "dep": "17.25"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 15,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 16,
+       "arr": "17.40",
+       "dep": "17.40"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 17,
+       "arr": "17.45",
+       "dep": "17.45"
+      },
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 18,
+       "arr": "18.05",
+       "dep": "18.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "40",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "15/6",
+       "to": "15/9"
+      },
+      "raw": "PERFEIOSDTOIVA15/6-15/9-------------"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 11,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 13,
+       "arr": "17.50",
+       "dep": "17.50"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 14,
+       "arr": "17.55",
+       "dep": "17.55"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 15,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 16,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 17,
+       "arr": "18.15",
+       "dep": "18.15"
+      },
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 18,
+       "arr": "18.35",
+       "dep": "18.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "42",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE-------------"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 11,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 13,
+       "arr": "18.20",
+       "dep": "18.20"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 14,
+       "arr": "18.25",
+       "dep": "18.25"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 15,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 16,
+       "arr": "18.40",
+       "dep": "18.40"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 17,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 18,
+       "arr": "19.05",
+       "dep": "19.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "44",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "LFuEnR.-IAVeLnE.-------------"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 11,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 13,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 14,
+       "arr": "19.25",
+       "dep": "19.25"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 15,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 16,
+       "arr": "19.40",
+       "dep": "19.40"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 17,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 18,
+       "arr": "20.05",
+       "dep": "20.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "46",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "FESTIVA-------------"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 11,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "AEROPORTO Fontanarossa",
+       "idx": 12,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 13,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 14,
+       "arr": "19.25",
+       "dep": "19.25"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 15,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 16,
+       "arr": "19.40",
+       "dep": "19.40"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 17,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 18,
+       "arr": "20.05",
+       "dep": "20.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "48",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE-------------"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 11,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "AEROPORTO Fontanarossa",
+       "idx": 12,
+       "arr": "20.10",
+       "dep": "20.10"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 13,
+       "arr": "20.20",
+       "dep": "20.20"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 14,
+       "arr": "20.25",
+       "dep": "20.25"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 15,
+       "arr": "20.30",
+       "dep": "20.30"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 16,
+       "arr": "20.40",
+       "dep": "20.40"
+      },
+      {
+       "stop": "SCORDIA (Largo Ex Mercato)",
+       "idx": 17,
+       "arr": "20.45",
+       "dep": "20.45"
+      },
+      {
+       "stop": "MILITELLO (Via Giovanni Verga, 10)",
+       "idx": 18,
+       "arr": "21.05",
+       "dep": "21.05"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}
