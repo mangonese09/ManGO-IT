@@ -13,7 +13,8 @@ OUT = os.path.join(ROOT, 'data', 'routes')
 
 TIME_RE = re.compile(r'^\d{1,2}[.:]\d{2}$')
 JUNK_ROW = re.compile(r"^(KM\b|FERIALE|FESTIV|L u n|F E R|s c o|p e r|e s c|STAZIONAMENTI|"
-                      r"SOLO\b|LUNEDI|MARTEDI|MERCOLEDI|GIOVEDI|VENERDI|SABATO|DOMENICA|N\.?B)", re.I)
+                      r"SOLO\b|LUNEDI|MARTEDI|MERCOLEDI|GIOVEDI|VENERDI|SABATO|DOMENICA|LA DOMENICA|"
+                      r"IL SABATO|N\.?B)|\bETC\b", re.I)
 
 
 def squash(label):
@@ -213,6 +214,8 @@ OPERATOR_NAMES = {
     'CAMARDADRAGO': 'Camarda & Drago',
     'SALVATORELUMIA': 'Salvatore Lumia',
     'CUFFAROVINCENZOEC': 'Cuffaro Vincenzo & C.',
+    'CAMILLERIARGENTO': 'Camilleri Argento',
+    'LATTUCA': 'Lattuca',
 }
 
 
