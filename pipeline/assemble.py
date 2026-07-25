@@ -12,7 +12,8 @@ GRIDS = os.path.join(ROOT, 'data', 'grids')
 OUT = os.path.join(ROOT, 'data', 'routes')
 
 TIME_RE = re.compile(r'^\d{1,2}[.:]\d{2}$')
-JUNK_ROW = re.compile(r'^(KM\b|FERIALE|FESTIV|L u n|F E R|s c o|p e r|e s c|STAZIONAMENTI)', re.I)
+JUNK_ROW = re.compile(r"^(KM\b|FERIALE|FESTIV|L u n|F E R|s c o|p e r|e s c|STAZIONAMENTI|"
+                      r"SOLO\b|LUNEDI|MARTEDI|MERCOLEDI|GIOVEDI|VENERDI|SABATO|DOMENICA|N\.?B)", re.I)
 
 
 def squash(label):

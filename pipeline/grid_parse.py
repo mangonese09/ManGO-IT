@@ -158,11 +158,19 @@ def parse_table(words, lines, y0, y1):
     merged_stops, i = [], 0
     while i < len(stops):
         s = stops[i]
-        if MARKERS.match(s['name']) and i + 1 < len(stops) and not stops[i + 1]['times']:
+        if MARKERS.match(s['name']) and i + 1 < len(stops) and not stops[i + 1]['times'] \
+                and not MARKERS.match(stops[i + 1]['name']):
             nxt = stops[i + 1]
             merged_stops.append({'name': nxt['name'], 'km': s['km'] or nxt['km'],
                                  'times': s['times'], 'kind': s['name']})
             i += 2
+        elif MARKERS.match(s['name']) and s['times'] and merged_stops \
+                and not merged_stops[-1]['times'] and not MARKERS.match(merged_stops[-1]['name']):
+            # terminal rows print the name line ABOVE the marker line
+            merged_stops[-1] = {'name': merged_stops[-1]['name'],
+                                'km': s['km'] or merged_stops[-1]['km'],
+                                'times': s['times'], 'kind': s['name']}
+            i += 1
         else:
             if not re.search(r'viceversa|Prescrizioni|N\.B\.', s['name']):
                 merged_stops.append(s)

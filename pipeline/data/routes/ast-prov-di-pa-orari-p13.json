@@ -1,7 +1,7 @@
 {
  "operator": "Azienda Siciliana Trasporti",
  "route_id": "ast-prov-di-pa-orari-p13",
- "name": "Capolinea - Corleone pzz.a Vittorio Emanuele",
+ "name": "Mezzojuso via SS Crocifisso - Corleone pzz.a Vittorio Emanuele",
  "source": "AST_prov._di_PA_-_ORARI/p013.json",
  "prescriptions": [
   "Prescrizioni d'Esercizio NRSSUNA"
@@ -9,7 +9,6 @@
  "directions": [
   {
    "stops": [
-    "Capolinea",
     "Mezzojuso via SS Crocifisso",
     "Fermata intermedia",
     "Villafrati corso Sammarco",
@@ -32,32 +31,26 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "Capolinea",
-       "idx": 0,
-       "arr": "6.45",
-       "dep": "6.45"
-      },
-      {
        "stop": "Fermata intermedia",
-       "idx": 2,
+       "idx": 1,
        "arr": "7.00",
        "dep": "7.00"
       },
       {
        "stop": "Fermata intermedia",
-       "idx": 4,
+       "idx": 3,
        "arr": "7.10",
        "dep": "7.10"
       },
       {
        "stop": "Fermata intermedia",
-       "idx": 6,
+       "idx": 5,
        "arr": "7.20",
        "dep": "7.20"
       },
       {
        "stop": "Capolinea",
-       "idx": 8,
+       "idx": 7,
        "arr": "8.00",
        "dep": "8.00"
       }
@@ -76,33 +69,27 @@
      "stops": [
       {
        "stop": "Capolinea",
-       "idx": 8,
+       "idx": 7,
        "arr": "14.30",
        "dep": "14.30"
       },
       {
        "stop": "Fermata intermedia",
-       "idx": 6,
+       "idx": 5,
        "arr": "15.10",
        "dep": "15.10"
       },
       {
        "stop": "Fermata intermedia",
-       "idx": 4,
+       "idx": 3,
        "arr": "15.20",
        "dep": "15.20"
       },
       {
        "stop": "Fermata intermedia",
-       "idx": 2,
+       "idx": 1,
        "arr": "15.30",
        "dep": "15.30"
-      },
-      {
-       "stop": "Capolinea",
-       "idx": 0,
-       "arr": "15.45",
-       "dep": "15.45"
       }
      ],
      "valid": true
