@@ -106,6 +106,17 @@ def hms(t, wrapped_offset=0):
     return f'{int(h) + wrapped_offset:02d}:{int(m):02d}:00'
 
 
+JUNK_STOP = re.compile(r'^(Fermata( intermedia)?|Capolinea( di (Partenza|Arrivo))?)\s*$', re.I)
+
+
+def hav_km(a, b):
+    import math
+    p = math.pi / 180
+    return 2 * 6371 * math.asin(math.sqrt(
+        math.sin((b[0] - a[0]) * p / 2) ** 2 +
+        math.cos(a[0] * p) * math.cos(b[0] * p) * math.sin((b[1] - a[1]) * p / 2) ** 2))
+
+
 def load_prescription_rules():
     try:
         return json.load(open(os.path.join(ROOT, 'prescription-rules.json'), encoding='utf-8'))['rules']
@@ -122,6 +133,7 @@ def main():
     stop_rows, stops_seen, services_seen = [], {}, {}
     agencies_seen = {}
     skipped = []
+    trip_sigs, trip_ids_seen = set(), set()
 
     for f in sorted(os.listdir(ROUTES)):
         route = json.load(open(os.path.join(ROUTES, f), encoding='utf-8'))
@@ -147,9 +159,10 @@ def main():
                     services_seen[sid] = dates
                 trip_id = f'{rid}-{di}-{t["corsa"]}'
                 headsign = t['stops'][-1]['stop'].split('(')[0].strip().title()
-                trip_rows.append([rid, sid, trip_id, headsign, 1 if t['reverse'] else 0])
+                pending_st, pending_coords = [], []
                 prev_min, offset = -1, 0
                 for seq, s in enumerate(t['stops'], 1):
+                    if JUNK_STOP.match(s['stop'].strip()): continue
                     key = re.sub(r'\s+', ' ', s['stop'].upper().strip())
                     c = coords.get(key)
                     if not c: continue
@@ -181,8 +194,36 @@ def main():
                                     f"The divieto encoding is no longer exact — re-derive the rule.")
                             pickup = rule['set'].get('pickup_type', pickup)
                             dropoff = rule['set'].get('drop_off_type', dropoff)
-                    st_rows.append([trip_id, hms(s['arr'], offset and int(offset / 24)),
-                                    hms(s['dep'], offset and int(offset / 24)), stops_seen[key], seq, pickup, dropoff])
+                    pending_st.append([trip_id, hms(s['arr'], offset and int(offset / 24)),
+                                       hms(s['dep'], offset and int(offset / 24)), stops_seen[key], seq, pickup, dropoff])
+                    pending_coords.append((c['lat'], c['lon']))
+                if len(pending_st) < 2:
+                    skipped.append((rid, t['corsa'], f'only {len(pending_st)} coordinate-resolved stops'))
+                    continue
+                # speed quarantine: a bad geocode or column misalignment must not ship
+                bad_speed = False
+                for (ra, ca), (rb, cb) in zip(zip(pending_st, pending_coords), zip(pending_st[1:], pending_coords[1:])):
+                    ta = int(ra[1][:2]) * 60 + int(ra[1][3:5])
+                    tb = int(rb[1][:2]) * 60 + int(rb[1][3:5])
+                    km = hav_km(ca, cb)
+                    if (tb <= ta and km > 3) or (tb > ta and km / ((tb - ta) / 60) > 110):
+                        bad_speed = True; break
+                if bad_speed:
+                    skipped.append((rid, t['corsa'], 'speed-quarantine (bad geocode or column misalignment)'))
+                    continue
+                # duplicate-corsa artifacts ("11A" tokenized as "1"+"1A") → identical
+                # signatures are dropped; distinct ones get a unique suffix
+                sig = (rid, di, tuple((r[3], r[1]) for r in pending_st))
+                if sig in trip_sigs:
+                    skipped.append((rid, t['corsa'], 'duplicate trip signature')); continue
+                trip_sigs.add(sig)
+                while trip_id in trip_ids_seen: trip_id += 'b'
+                trip_ids_seen.add(trip_id)
+                for i, row in enumerate(pending_st, 1):
+                    row[0] = trip_id
+                    row[4] = i  # re-sequence after drops
+                trip_rows.append([rid, sid, trip_id, headsign, 1 if t['reverse'] else 0])
+                st_rows.extend(pending_st)
 
     for sid, dates in services_seen.items():
         for d in dates:

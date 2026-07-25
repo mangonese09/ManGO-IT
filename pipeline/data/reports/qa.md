@@ -1,0 +1,109 @@
+# Pipeline QA report
+
+- pages shipped: 478
+- valid trips: 3793
+- operators covered: 65
+- pages skipped: 32
+
+## Routes per operator
+
+- Azienda Siciliana Trasporti: 120
+- Ionica: 31
+- Interbus: 29
+- Giuntabustrasporti: 21
+- Giuntabus: 18
+- Salvatore Lumia: 16
+- Autotrasporti Cuffaro: 13
+- Etna Trasporti: 13
+- Cracchiolo: 12
+- Camilleri Argento: 10
+- Magistro: 10
+- Segesta: 9
+- Panepinto: 8
+- Zuccala: 8
+- Gallo: 7
+- Lattuca: 7
+- Sicilbus: 7
+- Sommatinese Viaggi: 7
+- Macaluso: 6
+- F.lli Patti: 6
+- Sag: 6
+- Buda: 5
+- Emanuele: 5
+- Isea: 5
+- Salemi: 5
+- Scionti: 5
+- Tumino: 5
+- ATM Maida: 4
+- Bevacqua: 4
+- Cuffaro Angelo e Raffaele: 4
+- Giamporcaro: 4
+- Ibla: 4
+- Loiacono: 4
+- Ortolano e Puglisi: 4
+- Sberna: 4
+- Anselmo Cacciatore: 3
+- Atis: 3
+- Calatina Bus Service: 3
+- Camarda & Drago: 3
+- Stassi: 3
+- TAI: 3
+- TUA Agrigento: 3
+- Astra: 2
+- Autolinee Regionali: 2
+- Federico Nicolò: 2
+- Molinaro: 2
+- Partannasoccoop: 2
+- Pennisi Alfio: 2
+- Randazzo: 2
+- Russo Autolinee: 2
+- Ata: 1
+- Camilleri Argento & Lattuca: 1
+- Carusomidolo: 1
+- Cavaleri: 1
+- Cita: 1
+- Cuffaro Vincenzo & C.: 1
+- Damico: 1
+- Giardina: 1
+- Greco: 1
+- Imakara: 1
+- Pintaudi: 1
+- Puleo: 1
+- Russo: 1
+- Savit: 1
+- Scadi: 1
+
+## Skipped pages (recovery backlog)
+
+- `AST_prov._di_CT_-_ORARI/p002.json` — no table detected (cover/notes/continuation page?)
+- `AST_prov._di_CT_-_ORARI/p009.json` — no table detected (cover/notes/continuation page?)
+- `AST_prov._di_CT_-_ORARI/p011.json` — no table detected (cover/notes/continuation page?)
+- `AST_prov._di_CT_-_ORARI/p012.json` — no table detected (cover/notes/continuation page?)
+- `AST_prov._di_CT_-_ORARI/p017.json` — no table detected (cover/notes/continuation page?)
+- `AST_prov._di_PA_-_ORARI/p007.json` — no table detected (cover/notes/continuation page?)
+- `AST_prov._di_PA_-_ORARI/p021.json` — no table detected (cover/notes/continuation page?)
+- `AST_prov._di_RG_-_ORARI/p020.json` — no table detected (cover/notes/continuation page?)
+- `AST_prov._di_RG_-_ORARI/p021.json` — no table detected (cover/notes/continuation page?)
+- `AST_prov.di_ME_-_ORARI/p008.json` — no table detected (cover/notes/continuation page?)
+- `AST_prov.di_ME_-_ORARI/p018.json` — no table detected (cover/notes/continuation page?)
+- `AutolineeRegionali__AUTOLINEE_REGIONALI/p002.json` — tables found but no monotonic trips (layout family not handled?)
+- `AutotrasportiCuffaro__AUTOTRASP.CUFFARO_ORARI/p008.json` — no table detected (cover/notes/continuation page?)
+- `AutotrasportiCuffaro__AUTOTRASP.CUFFARO_ORARI/p009.json` — no table detected (cover/notes/continuation page?)
+- `CAMILLERIARGENTOSRL__CAMILLERI_ORARI/p010.json` — tables found but no monotonic trips (layout family not handled?)
+- `CANCELLIERI_ORARI(1)/p001.json` — tables found but no monotonic trips (layout family not handled?)
+- `CUFFAROVINCENZOeCSRL__CUFFARO_Vincenzo_e_C/p001.json` — no table detected (cover/notes/continuation page?)
+- `IONICASpA__IONICA_ORARI/p009.json` — tables found but no monotonic trips (layout family not handled?)
+- `IONICASpA__IONICA_ORARI/p010.json` — tables found but no monotonic trips (layout family not handled?)
+- `ISEA_ORARI/p003.json` — tables found but no monotonic trips (layout family not handled?)
+- `LATTUCA_ORARI/p007.json` — tables found but no monotonic trips (layout family not handled?)
+- `LATTUCA_ORARI/p008.json` — tables found but no monotonic trips (layout family not handled?)
+- `LATTUCA_ORARI/p009.json` — tables found but no monotonic trips (layout family not handled?)
+- `LATTUCA_ORARI/p010.json` — tables found but no monotonic trips (layout family not handled?)
+- `MAGISTROSRL__ORARI_MAGISTRO/p009.json` — tables found but no monotonic trips (layout family not handled?)
+- `Mercorillo__ORARI_MERCORILLO/p001.json` — tables found but no monotonic trips (layout family not handled?)
+- `ORARI_INTERBUS/p012.json` — no table detected (cover/notes/continuation page?)
+- `SALVATORELUMIASRL__LUMIA_ORARI(1)/p007.json` — no table detected (cover/notes/continuation page?)
+- `SASSADORO_ORARI/p001.json` — no table detected (cover/notes/continuation page?)
+- `SASSADORO_ORARI/p002.json` — no table detected (cover/notes/continuation page?)
+- `SBERNA_ORARI/p002.json` — no table detected (cover/notes/continuation page?)
+- `TAISRL__TAI_ORARI/p003.json` — no table detected (cover/notes/continuation page?)
