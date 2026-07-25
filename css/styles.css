@@ -63,10 +63,10 @@ a { color: var(--mango, #ffb454); }
 .suggest-row:active { background: rgba(255,255,255,0.06); }
 .suggest-name { flex: 0 1 auto; }
 .suggest-area { color: var(--text-muted, #9a9a9a); font-size: 0.8em; margin-left: auto; }
-.when-row { display: flex; align-items: center; gap: 8px; margin: 4px 0 10px; }
-.when-row input { flex: 1; padding: 10px 12px; color-scheme: dark; }
+.when-row { display: flex; align-items: center; gap: 8px; margin: 4px 0 0; }
+.when-row input { flex: 1; padding: 10px 12px; color-scheme: dark; min-width: 0; }
 :root[data-theme="light"] .when-row input { color-scheme: light; }
-.when-tz { white-space: nowrap; }
+.when-tz { margin: 4px 2px 10px; font-size: 0.75rem; }
 
 /* ── buttons ── */
 .btn {
