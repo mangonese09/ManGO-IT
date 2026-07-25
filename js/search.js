@@ -57,10 +57,13 @@ function showMyLocationOption(list, input) {
   list.hidden = false;
 }
 
+const suggestSeq = { from: 0, to: 0 };
 async function suggest(which, q) {
   const list = document.getElementById(`${which}-suggest`);
+  const seq = ++suggestSeq[which];
   try {
     const { data } = await api.geocode(q);
+    if (seq !== suggestSeq[which]) return; // a newer request superseded this one
     list.innerHTML = '';
     const results = [...data].sort((a, b) => (a.type === 'STOP' ? -1 : 1) - (b.type === 'STOP' ? -1 : 1));
     for (const r of results.slice(0, 8)) {

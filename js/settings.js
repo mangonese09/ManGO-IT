@@ -47,7 +47,12 @@ export function renderFreshness() {
   for (const [label, ts] of rows) {
     const row = document.createElement('div');
     row.className = 'fresh-row';
-    row.innerHTML = `<span>${label}</span><span class="muted">${ts ? agoText(ts) : 'not fetched yet'}</span>`;
+    const name = document.createElement('span');
+    name.textContent = label;
+    const when = document.createElement('span');
+    when.className = 'muted';
+    when.textContent = ts ? agoText(ts) : 'not fetched yet';
+    row.append(name, when);
     holder.appendChild(row);
   }
 }

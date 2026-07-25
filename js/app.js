@@ -5,6 +5,7 @@ import { renderSaved } from './saved.js';
 import { renderMapTab } from './mapview.js';
 import { initSettings, renderFreshness } from './settings.js';
 import { closeSheet, anySheetOpen } from './ui.js';
+import { pruneCache } from './store.js';
 
 const VIEWS = ['home', 'saved', 'map', 'settings'];
 let current = 'home';
@@ -51,6 +52,7 @@ function boot() {
   for (const v of VIEWS) {
     document.getElementById(`nav-${v}`).addEventListener('click', () => setView(v));
   }
+  pruneCache();
   initSettings();
   initSearch();
   initBoard();

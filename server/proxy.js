@@ -30,6 +30,17 @@ function cacheSet(key, body, ttlMs) {
   cache.set(key, { expires: Date.now() + ttlMs, body });
 }
 
+// ── RATE LIMIT ── (public unauth endpoint; be polite to upstreams)
+const rateBuckets = new Map(); // ip → [timestamps]
+function rateLimited(ip) {
+  const now = Date.now();
+  const bucket = (rateBuckets.get(ip) || []).filter((t) => now - t < 60000);
+  bucket.push(now);
+  rateBuckets.set(ip, bucket);
+  if (rateBuckets.size > 5000) rateBuckets.clear();
+  return bucket.length > 90; // 90 req/min per IP
+}
+
 // ── UPSTREAM ──
 async function upstream(url, { asText = false, timeoutMs = 25000 } = {}) {
   const res = await fetch(url, {
@@ -118,10 +129,10 @@ function slimVtDeparture(d) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.1.0', romeTime: romeNowString() }),
+  'GET /api/health': async () => ({ ok: true, version: '0.2.0', romeTime: romeNowString() }),
 
   'GET /api/geocode': async (q) => {
-    const text = (q.get('text') || '').trim();
+    const text = (q.get('text') || '').trim().slice(0, 64);
     if (text.length < 2) return [];
     const key = `geo:${text.toLowerCase()}`;
     const hit = cacheGet(key);
@@ -142,6 +153,7 @@ const routes = {
   'GET /api/plan': async (q) => {
     const fromPlace = q.get('fromPlace'), toPlace = q.get('toPlace');
     if (!fromPlace || !toPlace) throw httpError(400, 'fromPlace and toPlace required');
+    if (fromPlace.length > 120 || toPlace.length > 120) throw httpError(400, 'place too long');
     const params = new URLSearchParams({ fromPlace, toPlace });
     if (q.get('time')) params.set('time', q.get('time'));
     if (q.get('arriveBy') === 'true') params.set('arriveBy', 'true');
@@ -242,7 +254,9 @@ const routes = {
       cacheSet(key, out, 5 * 60 * 1000);
       return out;
     }
-    const c = candidates[0];
+    // Train numbers repeat across days (and rarely across regions) — take the
+    // run whose departure date is closest to now.
+    const c = pickVtCandidate(candidates, Date.now());
     const res = await upstream(`${VT}/andamentoTreno/${c.originId}/${c.trainNumber}/${c.departureEpochMs}`);
     if (res.status === 204 || !res.data) {
       // 204 = train exists but no live data (common for cancelled/rescheduled). Not an error.
@@ -266,6 +280,11 @@ const routes = {
   },
 };
 
+function pickVtCandidate(candidates, nowMs) {
+  return [...candidates].sort((a, b) =>
+    Math.abs(a.departureEpochMs - nowMs) - Math.abs(b.departureEpochMs - nowMs))[0];
+}
+
 function httpError(status, message) {
   const e = new Error(message);
   e.status = status;
@@ -287,7 +306,7 @@ function serveStatic(req, res) {
   let p = decodeURIComponent(new URL(req.url, 'http://x').pathname);
   if (p === '/') p = '/index.html';
   const file = path.normalize(path.join(ROOT, p));
-  if (!file.startsWith(ROOT) || !fs.existsSync(file) || fs.statSync(file).isDirectory()) {
+  if (!file.startsWith(ROOT + path.sep) || !fs.existsSync(file) || fs.statSync(file).isDirectory()) {
     res.writeHead(404); res.end('not found'); return;
   }
   res.writeHead(200, { 'Content-Type': MIME[path.extname(file)] || 'application/octet-stream' });
@@ -298,7 +317,15 @@ function serveStatic(req, res) {
 const server = http.createServer(async (req, res) => {
   const url = new URL(req.url, 'http://x');
   res.setHeader('Access-Control-Allow-Origin', '*'); // same-origin in prod; harmless for GETs
+  res.setHeader('X-Content-Type-Options', 'nosniff');
   if (req.method === 'OPTIONS') { res.writeHead(204); res.end(); return; }
+
+  const ip = req.headers['x-real-ip'] || req.socket.remoteAddress || '?';
+  if (url.pathname.startsWith('/api/') && rateLimited(ip)) {
+    res.writeHead(429, { 'Content-Type': 'application/json' });
+    res.end(JSON.stringify({ error: 'rate limited' }));
+    return;
+  }
 
   const handler = routes[`${req.method} ${url.pathname}`];
   if (handler) {
@@ -323,4 +350,4 @@ if (require.main === module) {
   server.listen(PORT, () => console.log(`ManGO:IT proxy on :${PORT}${STATIC ? ' (static+api)' : ''}`));
 }
 
-module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, slimVtDeparture, haversineM, inSicily };
+module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily };

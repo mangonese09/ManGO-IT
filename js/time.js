@@ -32,13 +32,15 @@ export function durationText(seconds) {
 }
 
 // "3 min" / "now" countdown to an ISO time; negative → "gone".
+// Past 60 min it stays relative ("2h 05m") — the clock time is already
+// rendered alongside, so returning a clock here would duplicate it.
 export function countdownText(iso, now = Date.now()) {
   const ms = new Date(iso).getTime() - now;
   const m = Math.round(ms / 60000);
   if (m <= -2) return 'gone';
   if (m <= 0) return 'now';
   if (m < 60) return `${m} min`;
-  return romeTime(iso);
+  return `${Math.floor(m / 60)}h ${String(m % 60).padStart(2, '0')}m`;
 }
 
 export function agoText(epochMs, now = Date.now()) {

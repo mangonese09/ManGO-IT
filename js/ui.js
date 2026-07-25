@@ -59,7 +59,10 @@ export function openSheet(contentEl, { title = '' } = {}) {
   const overlay = el('div', { class: 'sheet-overlay' });
   const sheet = el('div', { class: 'sheet' }, [
     el('div', { class: 'sheet-grab' }),
-    title ? el('div', { class: 'sheet-title', text: title }) : null,
+    el('div', { class: 'sheet-head' }, [
+      el('div', { class: 'sheet-title', text: title }),
+      el('button', { class: 'sheet-close', 'aria-label': 'Close', text: '✕', onclick: () => closeSheet() }),
+    ]),
     contentEl,
   ]);
   overlay.appendChild(sheet);

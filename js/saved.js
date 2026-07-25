@@ -28,7 +28,7 @@ export async function renderSaved() {
     } catch { /* stale times still render below */ }
   }));
 
-  for (const d of items.sort((a, b) => new Date(a.when) - new Date(b.when))) {
+  for (const d of items.sort((a, b) => new Date(a.when || 0) - new Date(b.when || 0))) {
     const updated = d.tripId ? fresh.get(`${d.tripId}@${d.stopId}`) : null;
     const when = updated?.departure || d.when;
     const cancelled = updated?.cancelled;

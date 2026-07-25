@@ -1,12 +1,12 @@
 // ── SERVICE WORKER ──
 // App shell cache-first; /api/* never cached here (js/api.js owns API caching
 // with staleness stamps). Bump CACHE on every deploy.
-const CACHE = 'mangoit-v1';
+const CACHE = 'mangoit-v2';
 const SHELL = [
   '/',
   '/index.html',
-  '/css/styles.css?v=0.1.0',
-  '/js/app.js?v=0.1.0',
+  '/css/styles.css?v=0.2.0',
+  '/js/app.js?v=0.2.0',
   '/js/api.js',
   '/js/board.js',
   '/js/mapview.js',
@@ -48,7 +48,7 @@ self.addEventListener('fetch', (e) => {
           caches.open(CACHE).then((c) => c.put(e.request, copy));
         }
         return res;
-      }).catch(() => caches.match('/index.html')),
+      }).catch(() => (e.request.mode === 'navigate' ? caches.match('/index.html') : Response.error())),
     ),
   );
 });

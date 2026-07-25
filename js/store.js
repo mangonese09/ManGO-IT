@@ -63,6 +63,22 @@ export function markFresh(source) {
 }
 export function getFreshness() { return read('freshness', {}); }
 
+// Drop API cache entries older than 48h — plan/geocode keys are per-query and
+// would otherwise accumulate forever on a roaming phone.
+export function pruneCache(maxAgeMs = 48 * 3600 * 1000, now = Date.now()) {
+  const stale = [];
+  for (let i = 0; i < localStorage.length; i++) {
+    const k = localStorage.key(i);
+    if (!k || !k.startsWith(NS + 'cache.')) continue;
+    try {
+      const { fetchedAt } = JSON.parse(localStorage.getItem(k));
+      if (!fetchedAt || now - fetchedAt > maxAgeMs) stale.push(k);
+    } catch { stale.push(k); }
+  }
+  stale.forEach((k) => localStorage.removeItem(k));
+  return stale.length;
+}
+
 export function clearAllAppData() {
   const keys = [];
   for (let i = 0; i < localStorage.length; i++) {

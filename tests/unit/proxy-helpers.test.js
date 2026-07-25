@@ -2,7 +2,7 @@
 const { test } = require('node:test');
 const assert = require('node:assert');
 const {
-  romeNowString, parseVtStations, parseVtTrainAutocomplete, slimVtDeparture, inSicily,
+  romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, inSicily,
 } = require('../../server/proxy.js');
 
 test('romeNowString formats a Rome-timezone RFC1123-ish string', () => {
@@ -33,6 +33,17 @@ test('parseVtTrainAutocomplete extracts train, origin, epoch', () => {
 
 test('parseVtTrainAutocomplete tolerates garbage lines', () => {
   assert.deepStrictEqual(parseVtTrainAutocomplete('nonsense\n\n|also-bad\n'), []);
+});
+
+test('pickVtCandidate takes the run closest to now (train numbers repeat daily)', () => {
+  const day = 24 * 3600 * 1000;
+  const now = 10 * day;
+  const picked = pickVtCandidate([
+    { trainNumber: '21757', originId: 'S12002', departureEpochMs: now - 2 * day },
+    { trainNumber: '21757', originId: 'S12002', departureEpochMs: now - 3600 * 1000 },
+    { trainNumber: '21757', originId: 'S12002', departureEpochMs: now + day },
+  ], now);
+  assert.strictEqual(picked.departureEpochMs, now - 3600 * 1000);
 });
 
 test('slimVtDeparture maps the fields the UI needs', () => {
