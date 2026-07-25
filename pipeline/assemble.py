@@ -86,6 +86,9 @@ def clean_stops(stops):
     out = []
     for s in stops:
         name = re.sub(r'\s+', ' ', s['name']).strip()
+        toks0 = name.split()
+        if len(toks0) >= 2 and len(toks0) % 2 == 0 and toks0[:len(toks0)//2] == toks0[len(toks0)//2:]:
+            name = ' '.join(toks0[:len(toks0)//2])  # two-direction sheets print the name twice
         if not name or JUNK_ROW.match(name): continue
         toks = name.split()
         soupy = len(toks) >= 4 and sum(1 for t in toks if len(t) == 1) / len(toks) > 0.4

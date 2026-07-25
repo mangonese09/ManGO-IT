@@ -154,7 +154,7 @@ def parse_table(words, lines, y0, y1):
                 pending_times = {'times': times, 'km': kms}
     # merge marker rows ("Capolinea" / "Fermata intermedia" carry the times,
     # the real stop name sits on the adjacent name-only line)
-    MARKERS = re.compile(r'^(Capolinea|Fermata(\s+intermedia)?)$', re.I)
+    MARKERS = re.compile(r'^((Capolinea|Fermata|di|Partenza|Arrivo|intermedia|facoltativa|obbligatoria)\s*)+$', re.I)
     merged_stops, i = [], 0
     while i < len(stops):
         s = stops[i]

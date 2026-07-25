@@ -1,7 +1,7 @@
 {
  "operator": "Stassi",
  "route_id": "stassi-orari-p2",
- "name": "di Partenza Capolinea di Arrivo - di Arrivo Capolinea di Partenza",
+ "name": "E. - Sciacca",
  "source": "STASSI_ORARI/p002.json",
  "prescriptions": [
   "Prescrizioni d'Esercizio"
@@ -9,11 +9,11 @@
  "directions": [
   {
    "stops": [
-    "di Partenza Capolinea di Arrivo",
+    "E.(Via Palermo ang. Via Barbato) Contessa E.(Via Palermo ang. Via Barbato)",
     "Piano cavaliere",
-    "Capolinea di Partenza",
+    "per C.da Perriera) SS115 (deviazione per C.da Perriera)",
     "per C.da Marchesa) Sciacca (deviazione per C.da Marchesa)",
-    "di Arrivo Capolinea di Partenza"
+    "Sciacca (capolinea)"
    ],
    "trips": [
     {
@@ -27,7 +27,7 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "di Partenza Capolinea di Arrivo",
+       "stop": "E.(Via Palermo ang. Via Barbato) Contessa E.(Via Palermo ang. Via Barbato)",
        "idx": 0,
        "arr": "6.45",
        "dep": "6.45"
@@ -39,7 +39,7 @@
        "dep": "6.55"
       },
       {
-       "stop": "Capolinea di Partenza",
+       "stop": "per C.da Perriera) SS115 (deviazione per C.da Perriera)",
        "idx": 2,
        "arr": "7.30",
        "dep": "7.30"
@@ -51,7 +51,7 @@
        "dep": "7.40"
       },
       {
-       "stop": "di Arrivo Capolinea di Partenza",
+       "stop": "Sciacca (capolinea)",
        "idx": 4,
        "arr": "7.50",
        "dep": "7.50"
@@ -70,7 +70,7 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "di Arrivo Capolinea di Partenza",
+       "stop": "Sciacca (capolinea)",
        "idx": 4,
        "arr": "14.00",
        "dep": "14.00"
@@ -82,7 +82,7 @@
        "dep": "14.10"
       },
       {
-       "stop": "Capolinea di Partenza",
+       "stop": "per C.da Perriera) SS115 (deviazione per C.da Perriera)",
        "idx": 2,
        "arr": "14.20",
        "dep": "14.20"
@@ -94,7 +94,7 @@
        "dep": "14.55"
       },
       {
-       "stop": "di Partenza Capolinea di Arrivo",
+       "stop": "E.(Via Palermo ang. Via Barbato) Contessa E.(Via Palermo ang. Via Barbato)",
        "idx": 0,
        "arr": "15.05",
        "dep": "15.05"
