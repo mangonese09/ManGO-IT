@@ -1,0 +1,19 @@
+{
+  "_comment": "Conservative GTFS encodings of prescriptions that would otherwise generate illegal itineraries. direction_id 0 = as-printed (andata), 1 = reverse.",
+  "rules": [
+    {
+      "route_id": "ast-702",
+      "stop_match": "MARGHERITA BELICE",
+      "direction_id": 0,
+      "set": { "drop_off_type": 1 },
+      "why": "divieto di esercizio locale Montevago<->S.Margherita: on andata the only upstream boarding point is Montevago, so alighting here is exactly the forbidden local trip"
+    },
+    {
+      "route_id": "ast-702",
+      "stop_match": "MARGHERITA BELICE",
+      "direction_id": 1,
+      "set": { "pickup_type": 1 },
+      "why": "on ritorno, boarding here can only lead to Montevago (the terminus) — the forbidden local trip"
+    }
+  ]
+}

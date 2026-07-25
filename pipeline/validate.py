@@ -2,9 +2,49 @@
 # Structural validation of the emitted GTFS. A feed that fails never ships.
 # (The MobilityData canonical validator is Java; run it in addition wherever
 # Java exists. These checks are the CI gate.)
-import csv, io, re, sys, zipfile
+import csv, io, math, os, re, sys, zipfile
+from datetime import date
+
+sys.path.insert(0, os.path.dirname(__file__))
+import emit_gtfs
+from assemble import classify_service
 
 SICILY = dict(latMin=36.5, latMax=38.9, lonMin=11.9, lonMax=15.8)
+
+
+def haversine_km(a, b):
+    R = 6371.0
+    p = math.pi / 180
+    x = math.sin((b[0] - a[0]) * p / 2) ** 2 + \
+        math.cos(a[0] * p) * math.cos(b[0] * p) * math.sin((b[1] - a[1]) * p / 2) ** 2
+    return 2 * R * math.asin(math.sqrt(x))
+
+
+def calendar_assertions():
+    """Named-date semantics pinned down (Ferragosto, Easter Monday, Saturdays,
+    school breaks). Catching a feriale/sabato mixup here beats every Saturday
+    itinerary being wrong."""
+    errs = []
+    fer = set(emit_gtfs.service_dates({'days': 'mon-sat', 'school': None, 'season': None}))
+    fest = set(emit_gtfs.service_dates({'days': 'sun-holidays', 'school': None, 'season': None}))
+    mf = set(emit_gtfs.service_dates({'days': 'mon-fri', 'school': None, 'season': None}))
+    daily = set(emit_gtfs.service_dates({'days': 'daily', 'school': None, 'season': None}))
+    sch = set(emit_gtfs.service_dates({'days': 'mon-sat', 'school': 'school-days-only', 'season': None}))
+    ferragosto, pasquetta = date(2026, 8, 15), date(2027, 3, 29)
+    sat, tue = date(2026, 10, 3), date(2026, 10, 6)
+    if ferragosto in fer: errs.append('Ferragosto runs on a feriale service')
+    if ferragosto not in fest: errs.append('Ferragosto missing from festivo service')
+    if pasquetta in mf: errs.append('Easter Monday runs on a mon-fri service')
+    if sat not in fer: errs.append('ordinary Saturday missing from feriale (mon-sat)')
+    if sat in mf: errs.append('Saturday present in mon-fri service')
+    if ferragosto not in daily: errs.append('daily service missing Ferragosto')
+    if date(2026, 12, 28) in sch: errs.append('school service runs during Christmas break')
+    if tue not in sch: errs.append('school service missing an ordinary school Tuesday')
+    if classify_service('FERIALE')['days'] != 'mon-sat': errs.append('FERIALE != mon-sat')
+    if classify_service('FERIALE escluso sabato')['days'] != 'mon-fri': errs.append('escluso sabato != mon-fri')
+    if classify_service('FERIALEscinolpaesrtiiocodo')['school'] != 'school-days-only':
+        errs.append('interleaved scolastico label not decoded')
+    return errs
 
 
 def rows(z, name):
@@ -59,6 +99,33 @@ def main(path):
             prev = t
     orphan_stops = sids - {r['stop_id'] for r in st}
     if orphan_stops: warnings.append(f'{len(orphan_stops)} stops unused by any trip')
+
+    # implied-speed plausibility: catches column misalignment and bad geocodes
+    pos = {s['stop_id']: (float(s['stop_lat']), float(s['stop_lon'])) for s in stops}
+    speed_errs, slow_warns = 0, 0
+    for tid, seq in by_trip.items():
+        seq.sort(key=lambda r: int(r['stop_sequence']))
+        for a, b in zip(seq, seq[1:]):
+            if a['stop_id'] not in pos or b['stop_id'] not in pos: continue
+            km = haversine_km(pos[a['stop_id']], pos[b['stop_id']])
+            ta = int(a['departure_time'][:2]) * 60 + int(a['departure_time'][3:5])
+            tb = int(b['arrival_time'][:2]) * 60 + int(b['arrival_time'][3:5])
+            dt = tb - ta
+            if dt <= 0 and km > 3:
+                speed_errs += 1
+                if speed_errs <= 8: errors.append(f'trip {tid}: {km:.0f}km in {dt}min ({a["stop_id"]}→{b["stop_id"]})')
+                continue
+            if dt > 0:
+                v = km / (dt / 60)
+                if v > 110:
+                    speed_errs += 1
+                    if speed_errs <= 8: errors.append(f'trip {tid}: implied {v:.0f} km/h over {km:.0f}km')
+                elif v < 4 and km > 2.5:
+                    slow_warns += 1
+    if speed_errs > 8: errors.append(f'... plus {speed_errs - 8} more speed violations')
+    if slow_warns: warnings.append(f'{slow_warns} suspiciously slow segments (<4 km/h over >2.5km) — likely centroid-coord artifacts')
+
+    errors += calendar_assertions()
 
     print(f'trips={len(trips)} stops={len(stops)} stop_times={len(st)} services={len(svcs)}')
     for w in warnings: print('WARN:', w)

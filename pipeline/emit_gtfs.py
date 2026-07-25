@@ -106,8 +106,16 @@ def hms(t, wrapped_offset=0):
     return f'{int(h) + wrapped_offset:02d}:{int(m):02d}:00'
 
 
+def load_prescription_rules():
+    try:
+        return json.load(open(os.path.join(ROOT, 'prescription-rules.json'), encoding='utf-8'))['rules']
+    except FileNotFoundError:
+        return []
+
+
 def main():
     coords = json.load(open(os.path.join(ROOT, 'data', 'stop-coords.json'), encoding='utf-8'))
+    rules = load_prescription_rules()
     os.makedirs(OUT_DIR, exist_ok=True)
 
     agency_rows, route_rows, trip_rows, st_rows, cal_rows = [], [], [], [], []
@@ -153,8 +161,14 @@ def main():
                     h, m = re.split(r'[.:]', s['arr']); cur = int(h) * 60 + int(m)
                     if cur < prev_min - 2: offset = 24
                     prev_min = max(prev_min, cur)
+                    pickup, dropoff = 0, 0
+                    for rule in rules:
+                        if rule['route_id'] == rid and rule['direction_id'] == (1 if t['reverse'] else 0) \
+                                and rule['stop_match'] in s['stop'].upper():
+                            pickup = rule['set'].get('pickup_type', pickup)
+                            dropoff = rule['set'].get('drop_off_type', dropoff)
                     st_rows.append([trip_id, hms(s['arr'], offset and int(offset / 24)),
-                                    hms(s['dep'], offset and int(offset / 24)), stops_seen[key], seq, 0, 0])
+                                    hms(s['dep'], offset and int(offset / 24)), stops_seen[key], seq, pickup, dropoff])
 
     for sid, dates in services_seen.items():
         for d in dates:
@@ -171,6 +185,10 @@ def main():
                           [['ManGO:IT', 'https://it.mangonese.dev', 'it',
                             FEED_START.strftime('%Y%m%d'), FEED_END.strftime('%Y%m%d'),
                             date.today().isoformat(), 'miconsig@gmail.com']]),
+        'attributions.txt': (['attribution_id', 'organization_name', 'is_producer', 'is_operator', 'is_authority', 'attribution_url'],
+                             [['1', 'ManGO:IT', 1, 0, 0, 'https://it.mangonese.dev'],
+                              ['2', 'Regione Siciliana - Assessorato Infrastrutture e Mobilita', 0, 0, 1, 'https://pti.regione.sicilia.it'],
+                              ['3', 'TUA Trasporti Urbani Agrigento', 0, 1, 0, 'https://www.trasportiurbaniagrigento.it']]),
     }
     zpath = os.path.join(OUT_DIR, 'sicily-coaches.gtfs.zip')
     with zipfile.ZipFile(zpath, 'w', zipfile.ZIP_DEFLATED) as z:

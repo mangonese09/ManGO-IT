@@ -37,6 +37,13 @@ M0 repo/hosting ✅ · M1 routing+search ✅ · M2 nearby board+saved ✅ · M3 
 trains+staleness ✅ · M4 **coach GTFS pipeline** (the whole point) · M5 long-tail
 operators · M6 map tab · M7 Capacitor Android wrap.
 
+## Licensing & usage
+
+Code: MIT. Generated GTFS feed: **CC-BY 4.0** with attribution to Regione
+Siciliana and the source operators. The app never sells or books tickets
+(hard non-goal) and is strictly non-commercial, per the
+[Transitous usage policy](https://transitous.org/api/).
+
 ## PRD
 
 [docs/prd.md](docs/prd.md) — locked before any code was written. §7 (coach PDF →

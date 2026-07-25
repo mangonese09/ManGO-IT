@@ -298,6 +298,10 @@ def main():
         route['route_id'] = rid
         n_trips = sum(len(d['trips']) for d in route['directions'])
         n_valid = sum(1 for d in route['directions'] for t in d['trips'] if t['valid'])
+        # loop-route guard: direction-by-monotonicity misreads circulars
+        route['loop_flag'] = any(
+            d['stops'] and d['stops'][0].split('(')[0].strip() == d['stops'][-1].split('(')[0].strip()
+            for d in route['directions'] if len(d['stops']) > 2)
         if n_valid == 0:
             qa['no_trips'] += 1
             continue

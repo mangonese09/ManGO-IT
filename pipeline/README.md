@@ -38,5 +38,4 @@ Build dependency: `pip install pdfplumber` (pipeline only, not the app).
 ## Output
 
 `pipeline/dist/sicily-coaches.gtfs.zip`, published at
-`https://it.mangonese.dev/gtfs/sicily-coaches.gtfs.zip` (license: CC0 for the
-compilation; the underlying schedule facts are published by Regione Siciliana).
+`https://it.mangonese.dev/gtfs/sicily-coaches.gtfs.zip` (license: **CC-BY 4.0**, attribution to Regione Siciliana (Assessorato Infrastrutture e Mobilita) and the source operators; see attributions.txt in the feed).

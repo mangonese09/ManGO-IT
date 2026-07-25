@@ -12,7 +12,17 @@ const ROOT = path.join(__dirname, '..');
 
 const TRANSITOUS = 'https://api.transitous.org';
 const VT = 'http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno';
-const UA = 'ManGO-IT/0.1 (personal transit app; miconsig@gmail.com)';
+const UA = 'ManGO-IT/0.4 (+https://it.mangonese.dev; miconsig@gmail.com)';
+
+// per-day upstream request counter (Transitous asks consumers to know their volume)
+const dayCounts = {};
+function countRequest(host) {
+  const day = new Date().toISOString().slice(0, 10);
+  dayCounts[day] = dayCounts[day] || {};
+  dayCounts[day][host] = (dayCounts[day][host] || 0) + 1;
+  const days = Object.keys(dayCounts).sort();
+  while (days.length > 14) delete dayCounts[days.shift()];
+}
 
 // Sicily bounding box — geocode results outside it are dropped.
 const SICILY = { latMin: 36.55, latMax: 38.85, lonMin: 11.85, lonMax: 15.75 };
@@ -54,6 +64,7 @@ function rateLimited(ip) {
 
 // ── UPSTREAM ──
 async function upstream(url, { asText = false, timeoutMs = 25000 } = {}) {
+  countRequest(new URL(url).host);
   const res = await fetch(url, {
     headers: { 'User-Agent': UA, Accept: asText ? 'text/plain, */*' : 'application/json, */*' },
     signal: AbortSignal.timeout(timeoutMs),
@@ -140,7 +151,7 @@ function slimVtDeparture(d) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.2.0', romeTime: romeNowString() }),
+  'GET /api/health': async () => ({ ok: true, version: '0.4.0', romeTime: romeNowString(), upstreamRequests: dayCounts }),
 
   'GET /api/geocode': async (q) => {
     const text = (q.get('text') || '').trim().slice(0, 64);

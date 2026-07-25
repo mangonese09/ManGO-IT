@@ -39,7 +39,7 @@ reachable from Italian IPs.
   explicit date math incl. Italian holidays and the school year) → structural
   validation gate (a feed that fails does not ship).
 
-## State (built in ~1 day of sessions)
+## State
 
 - App v0.3.4 live: A→B search with autocomplete (deduped, province context,
   transit-stop-first ranking, own coach stops merged in), destination-first flow
@@ -49,7 +49,7 @@ reachable from Italian IPs.
   indicators on every screen, Europe/Rome time math regardless of device TZ.
 - Feed: 71/75 portal PDFs parsing → ~475 routes / 40 operators / thousands of
   trips, plus TUA Agrigento urban (Valle dei Templi + San Leone tourist lines,
-  parsed from the operator's own PDF). Published CC0 at a stable URL.
+  parsed from the operator's own PDF). Published CC-BY 4.0 (attribution: Regione Siciliana + operators) at a stable URL.
 - Upstream: PR open against `public-transport/transitous` adding our feed + FCE
   Circumetnea's official GTFS (Catania metro / Etna railway). Once merged and
   imported, coach legs appear in routing results for us and everyone else.
@@ -65,8 +65,9 @@ reachable from Italian IPs.
 - School-year calendars approximated to ±a few days; Sicilian school decrees vary.
 - ~30 of 507 timetable pages still unparsed (odd layouts, cover pages).
 - Some stop coordinates are town-centroid or km-interpolated precision.
-- One rule (an OD-pair "divieto di esercizio locale") is not expressible in GTFS;
-  it is documented rather than silently dropped or wrongly modelled.
+- An OD-pair "divieto di esercizio locale" rule is approximated conservatively
+  (pickup/drop_off restrictions that eliminate the illegal short-hop without
+  blocking legal longer journeys) and documented.
 - Known gaps with identified sources: SAIS (the Palermo–Catania–Messina trunk
   operator; site scrape planned), Prestia e Comandè airport shuttle (hand-encode),
   ATM Messina urban (their GTFS died in 2019).
