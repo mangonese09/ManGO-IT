@@ -65,23 +65,32 @@ async function suggest(which, q) {
     const { data } = await api.geocode(q);
     if (seq !== suggestSeq[which]) return; // a newer request superseded this one
     list.innerHTML = '';
-    const results = [...data].sort((a, b) => (a.type === 'STOP' ? -1 : 1) - (b.type === 'STOP' ? -1 : 1));
-    for (const r of results.slice(0, 8)) {
-      const icon = r.type === 'STOP' ? (r.modes.some(isRailMode) ? '🚉' : '🚏') : '📌';
+    list.innerHTML = '';
+    for (const r of data.slice(0, 8)) {
+      let icon = '📌';
+      if (r.type === 'STOP') icon = r.modes.some(isRailMode) ? '🚉' : '🚏';
+      else if (r.type === 'COACH_STOP') icon = '🚌';
+      else if (!r.category && r.type === 'PLACE') icon = '🏘️';
+      // context line: "town · province", never just an echo of the name
+      const bits = [];
+      if (r.type === 'COACH_STOP') bits.push('coach stop');
+      if (r.town && r.town.toLowerCase() !== r.name.toLowerCase()) bits.push(r.town);
+      if (r.province && r.province !== r.town) bits.push(`prov. ${r.province}`);
+      if (!bits.length && r.province) bits.push(`prov. ${r.province}`);
       list.appendChild(el('button', {
         class: 'suggest-row',
         onclick: () => {
-          sel[which] = { name: r.name, place: r.type === 'STOP' ? r.id : `${r.lat},${r.lon}` };
+          sel[which] = { name: r.name, place: r.type === 'STOP' && r.id ? r.id : `${r.lat},${r.lon}` };
           document.getElementById(`${which}-input`).value = r.name;
           list.hidden = true;
         },
       }, [
         el('span', { class: 'suggest-icon', text: icon }),
         el('span', { class: 'suggest-name', text: r.name }),
-        r.area ? el('span', { class: 'suggest-area', text: r.area }) : null,
+        bits.length ? el('span', { class: 'suggest-area', text: bits.join(' · ') }) : null,
       ]));
     }
-    list.hidden = results.length === 0;
+    list.hidden = data.length === 0;
   } catch {
     list.hidden = true;
   }

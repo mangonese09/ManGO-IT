@@ -17,6 +17,17 @@ const UA = 'ManGO-IT/0.1 (personal transit app; miconsig@gmail.com)';
 // Sicily bounding box — geocode results outside it are dropped.
 const SICILY = { latMin: 36.55, latMax: 38.85, lonMin: 11.85, lonMax: 15.75 };
 
+// Coach stops from our own GTFS pipeline (autocomplete works even before
+// Transitous ingests the feed). Optional file; empty list if absent.
+let coachStops = [];
+try {
+  coachStops = JSON.parse(fs.readFileSync(path.join(__dirname, 'coach-stops.json'), 'utf8'));
+} catch { /* not generated yet */ }
+
+function norm(s) {
+  return (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+}
+
 // ── CACHE ──
 const cache = new Map(); // key → {expires, body}
 function cacheGet(key) {
@@ -138,14 +149,44 @@ const routes = {
     const hit = cacheGet(key);
     if (hit) return hit;
     const { data } = await upstream(`${TRANSITOUS}/api/v1/geocode?text=${encodeURIComponent(text)}&language=it`);
-    const out = (data || [])
+    const results = (data || [])
       .filter((r) => inSicily(r.lat, r.lon))
-      .map((r) => ({
-        type: r.type, name: r.name, id: r.id, lat: r.lat, lon: r.lon,
-        modes: r.modes || [],
-        area: (r.areas || []).find((a) => a.default)?.name || null,
-      }))
-      .slice(0, 10);
+      .map((r) => {
+        const areas = r.areas || [];
+        const town = areas.find((a) => a.adminLevel === 8)?.name
+          || areas.find((a) => a.default)?.name || null;
+        const province = areas.find((a) => a.adminLevel === 6)?.name || null;
+        return {
+          type: r.type, name: r.name, id: r.id, lat: r.lat, lon: r.lon,
+          modes: r.modes || [], category: r.category || null,
+          town, province,
+          importance: r.importance || 0,
+        };
+      });
+    // our own coach stops (name-matched) — these exist before Transitous ingests the feed
+    const needle = norm(text);
+    const coach = coachStops
+      .filter((s) => norm(s.n).includes(needle))
+      .slice(0, 4)
+      .map((s) => ({
+        type: 'COACH_STOP', name: s.n, id: null, lat: s.lat, lon: s.lon,
+        modes: ['COACH'], category: null, town: null, province: null, importance: 0,
+      }));
+    // dedupe (name+town), rank: transit stops → towns → the rest
+    const seen = new Set();
+    const all = [...results, ...coach].filter((r) => {
+      const k = `${norm(r.name)}|${norm(r.town || '')}`;
+      if (seen.has(k)) return false;
+      seen.add(k); return true;
+    });
+    const bucket = (r) => {
+      if (r.type === 'STOP') return 0;
+      if (r.type === 'COACH_STOP') return 1;
+      if (r.name.toLowerCase() === text.toLowerCase() && !r.category) return 2; // the town itself
+      if (r.type === 'ADDRESS' || /^(via|viale|corso|salita|piazza)\b/i.test(r.name)) return 4;
+      return 3;
+    };
+    const out = all.sort((a, b) => bucket(a) - bucket(b) || b.importance - a.importance).slice(0, 10);
     cacheSet(key, out, 24 * 3600 * 1000);
     return out;
   },
