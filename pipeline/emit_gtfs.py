@@ -165,6 +165,20 @@ def main():
                     for rule in rules:
                         if rule['route_id'] == rid and rule['direction_id'] == (1 if t['reverse'] else 0) \
                                 and rule['stop_match'] in s['stop'].upper():
+                            # topology assertions: the rules are EXACT only for the
+                            # current stop sequence — fail the build if it changes
+                            pos = next(i for i, x in enumerate(t['stops']) if x is s)
+                            up, down = pos, len(t['stops']) - pos - 1
+                            if 'assert_upstream_stops' in rule and up != rule['assert_upstream_stops']:
+                                raise SystemExit(
+                                    f"PRESCRIPTION ASSERTION FAILED: {rid} trip {t['corsa']} has {up} upstream "
+                                    f"stops before '{s['stop']}' (expected {rule['assert_upstream_stops']}). "
+                                    f"The divieto encoding is no longer exact — re-derive the rule.")
+                            if 'assert_downstream_stops' in rule and down != rule['assert_downstream_stops']:
+                                raise SystemExit(
+                                    f"PRESCRIPTION ASSERTION FAILED: {rid} trip {t['corsa']} has {down} downstream "
+                                    f"stops after '{s['stop']}' (expected {rule['assert_downstream_stops']}). "
+                                    f"The divieto encoding is no longer exact — re-derive the rule.")
                             pickup = rule['set'].get('pickup_type', pickup)
                             dropoff = rule['set'].get('drop_off_type', dropoff)
                     st_rows.append([trip_id, hms(s['arr'], offset and int(offset / 24)),

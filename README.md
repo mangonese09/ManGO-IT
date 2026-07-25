@@ -27,8 +27,8 @@ exists for CORS, caching, and response slimming.
 
 1. Bump version in `package.json`, `version.json`, `js/version.js`, `?v=` tags in
    `index.html`, and `CACHE` in `service-worker.js` (version-sync tests enforce most of this).
-2. `scp` changed files to `root@107.172.39.168:/var/www/mangoit/`
-   (server changes: also `scp server/proxy.js` and `ssh root@… 'pm2 restart mangoit-proxy'`).
+2. `scp` changed files to `<vps>:/var/www/mangoit/   # host in private deploy notes`
+   (server changes: also scp `server/proxy.js` + `coach-*.json` to `/opt/mangoit/` and `pm2 restart mangoit-proxy`).
 3. Verify: `curl -s https://it.mangonese.dev/api/health`
 
 ## Milestones

@@ -101,6 +101,14 @@ def main(path):
     if orphan_stops: warnings.append(f'{len(orphan_stops)} stops unused by any trip')
 
     # implied-speed plausibility: catches column misalignment and bad geocodes
+    import json as _json
+    prec_by_name = {}
+    try:
+        sc = _json.load(open(os.path.join(os.path.dirname(__file__), 'data', 'stop-coords.json'), encoding='utf-8'))
+        prec_by_name = {k: v['precision'] for k, v in sc.items() if v}
+    except FileNotFoundError:
+        pass
+    precision = {s['stop_id']: prec_by_name.get(re.sub(r'\s+', ' ', s['stop_name'].upper().strip())) for s in stops}
     pos = {s['stop_id']: (float(s['stop_lat']), float(s['stop_lon'])) for s in stops}
     speed_errs, slow_warns = 0, 0
     for tid, seq in by_trip.items():
@@ -120,10 +128,17 @@ def main(path):
                 if v > 110:
                     speed_errs += 1
                     if speed_errs <= 8: errors.append(f'trip {tid}: implied {v:.0f} km/h over {km:.0f}km')
-                elif v < 4 and km > 2.5:
-                    slow_warns += 1
+                elif v < 5 and km > 2.5:
+                    # floor: duplicated/stalled time cells. Hard-fail only when both
+                    # ends have street-precision coords; centroid pins get a warning
+                    # tier since town-level geometry legitimately compresses distance.
+                    if precision.get(a['stop_id']) == 'street' and precision.get(b['stop_id']) == 'street':
+                        speed_errs += 1
+                        if speed_errs <= 8: errors.append(f'trip {tid}: implied {v:.1f} km/h over {km:.1f}km (street-precision ends)')
+                    else:
+                        slow_warns += 1
     if speed_errs > 8: errors.append(f'... plus {speed_errs - 8} more speed violations')
-    if slow_warns: warnings.append(f'{slow_warns} suspiciously slow segments (<4 km/h over >2.5km) — likely centroid-coord artifacts')
+    if slow_warns: warnings.append(f'{slow_warns} suspiciously slow segments (<5 km/h over >2.5km) at centroid/interpolated precision')
 
     errors += calendar_assertions()
 
