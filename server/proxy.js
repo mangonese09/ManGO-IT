@@ -182,7 +182,7 @@ const routes = {
     const bucket = (r) => {
       if (r.type === 'STOP') return 0;
       if (r.type === 'COACH_STOP') return 1;
-      if (r.name.toLowerCase() === text.toLowerCase() && !r.category) return 2; // the town itself
+      if (/^(city|town|village|hamlet)/.test(r.category || '') || (r.name.toLowerCase() === text.toLowerCase() && !r.category)) return 2; // settlements
       if (r.type === 'ADDRESS' || /^(via|viale|corso|salita|piazza)\b/i.test(r.name)) return 4;
       return 3;
     };

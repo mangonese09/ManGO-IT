@@ -70,7 +70,7 @@ async function suggest(which, q) {
       let icon = '📌';
       if (r.type === 'STOP') icon = r.modes.some(isRailMode) ? '🚉' : '🚏';
       else if (r.type === 'COACH_STOP') icon = '🚌';
-      else if (!r.category && r.type === 'PLACE') icon = '🏘️';
+      else if (/^(city|town|village|hamlet)/.test(r.category || '') || (!r.category && r.type === 'PLACE')) icon = '🏘️';
       // context line: "town · province", never just an echo of the name
       const bits = [];
       if (r.type === 'COACH_STOP') bits.push('coach stop');
