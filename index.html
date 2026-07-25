@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#141414">
+  <title>ManGO:IT</title>
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="/icons/icon-192.png">
+  <link rel="stylesheet" href="https://mangonese.dev/shared/mangonese.css">
+  <link rel="stylesheet" href="/css/styles.css?v=0.1.0">
+</head>
+<body>
+  <header class="app-header">
+    <span class="logo">ManGO<span class="logo-it">:IT</span></span>
+  </header>
+
+  <main>
+    <!-- ── HOME ── -->
+    <section id="view-home">
+      <div class="search-box card">
+        <div class="endpoint-row">
+          <input id="from-input" type="text" placeholder="From" autocomplete="off" enterkeyhint="search">
+          <div id="from-suggest" class="suggest" hidden></div>
+        </div>
+        <div class="endpoint-row">
+          <input id="to-input" type="text" placeholder="To — anywhere in Sicily" autocomplete="off" enterkeyhint="search">
+          <div id="to-suggest" class="suggest" hidden></div>
+          <button id="swap-btn" class="swap-btn" aria-label="Swap">⇅</button>
+        </div>
+        <div class="when-row">
+          <button id="when-toggle" class="btn btn-ghost">Depart</button>
+          <input id="when-input" type="datetime-local" aria-label="When (Italy time)">
+          <span class="muted when-tz">Italy time</span>
+        </div>
+        <button id="search-btn" class="btn btn-primary btn-wide">Find routes</button>
+        <div id="recents" class="recents"></div>
+      </div>
+
+      <div id="results"></div>
+
+      <div class="board-head">
+        <h2>Nearby departures</h2>
+        <button id="board-refresh" class="btn btn-ghost btn-small" aria-label="Refresh">↻</button>
+      </div>
+      <div id="board"></div>
+    </section>
+
+    <!-- ── SAVED ── -->
+    <section id="view-saved" hidden>
+      <h2>Saved departures</h2>
+      <div id="saved-list"></div>
+    </section>
+
+    <!-- ── MAP ── -->
+    <section id="view-map" hidden>
+      <h2>Around you</h2>
+      <div id="map-list"></div>
+    </section>
+
+    <!-- ── SETTINGS ── -->
+    <section id="view-settings" hidden>
+      <h2>Settings</h2>
+      <div class="card settings-card">
+        <div class="setting-row">
+          <span>Theme</span>
+          <button id="theme-toggle" class="btn btn-ghost">🌙 Dark</button>
+        </div>
+        <div class="setting-row">
+          <span>Data freshness</span>
+        </div>
+        <div id="freshness"></div>
+        <div class="setting-row">
+          <span>Check for updates</span>
+          <button id="check-updates" class="btn btn-ghost">Check</button>
+        </div>
+        <div class="setting-row">
+          <span>Clear cached data</span>
+          <button id="clear-cache" class="btn btn-ghost">Clear</button>
+        </div>
+        <div class="setting-row muted">
+          <span>ManGO:IT — Sicily, one view.</span>
+          <span id="app-version"></span>
+        </div>
+        <p class="muted strike-note">⚠️ Strikes (<em>scioperi</em>) are common in Italian transit and never appear in schedule data. If everything looks suspiciously quiet, check local news.</p>
+      </div>
+    </section>
+  </main>
+
+  <nav class="bottom-nav">
+    <button id="nav-home" class="nav-btn active" aria-label="Home">🏠</button>
+    <button id="nav-saved" class="nav-btn" aria-label="Saved">★</button>
+    <button id="nav-map" class="nav-btn" aria-label="Map">🗺️</button>
+    <button id="nav-settings" class="nav-btn" aria-label="Settings">⚙️</button>
+  </nav>
+
+  <script type="module" src="/js/app.js?v=0.1.0"></script>
+</body>
+</html>
