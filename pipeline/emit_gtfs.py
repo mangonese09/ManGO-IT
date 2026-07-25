@@ -66,7 +66,9 @@ def service_dates(svc):
     while d <= FEED_END:
         wd = d.weekday()
         run = False
-        if days == 'sun-holidays':
+        if days == 'daily':
+            run = True
+        elif days == 'sun-holidays':
             run = wd == 6 or d in HOLIDAYS
         elif days == 'mon-fri':
             run = wd <= 4 and d not in HOLIDAYS

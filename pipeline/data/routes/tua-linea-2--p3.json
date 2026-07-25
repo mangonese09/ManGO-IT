@@ -1,0 +1,1322 @@
+{
+ "operator": "TUA Agrigento",
+ "route_id": "tua-linea-2--p3",
+ "name": "Linea 2/: AGRIGENTO - TEMPIO DI GIUNONE - VILLAGGIO MOSE' - LE DUNE - SAN LEONE",
+ "source": "TUA__AGRIGENTO_URBANO/p003.json",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "AGRIGENTO (P.Le Rosselli)",
+    "AGRIGENTO (Stazione Fs)",
+    "AGRIGENTO (Tempio Di)",
+    "AGRIGENTO (Giunone Via L. Sciascia)",
+    "AGRIGENTO (Villaggio)",
+    "AGRIGENTO (Mose' Viale)",
+    "AGRIGENTO (Cannatello Dune)",
+    "AGRIGENTO (Viale Dei Pini)",
+    "AGRIGENTO (Villaggio)",
+    "AGRIGENTO (Peruzzo P. Ristoro)",
+    "AGRIGENTO (Templi Museo)",
+    "AGRIGENTO (Archeol. Stazione Fs)",
+    "AGRIGENTO (P.Le Rosselli)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "mon-sat"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AGRIGENTO (Villaggio)",
+       "idx": 8,
+       "arr": "05.50",
+       "dep": "05.50"
+      },
+      {
+       "stop": "AGRIGENTO (Peruzzo P. Ristoro)",
+       "idx": 9,
+       "arr": "05.52",
+       "dep": "05.52"
+      },
+      {
+       "stop": "AGRIGENTO (Templi Museo)",
+       "idx": 10,
+       "arr": "05.55",
+       "dep": "05.55"
+      },
+      {
+       "stop": "AGRIGENTO (Archeol. Stazione Fs)",
+       "idx": 11,
+       "arr": "05.58",
+       "dep": "05.58"
+      },
+      {
+       "stop": "AGRIGENTO (P.Le Rosselli)",
+       "idx": 12,
+       "arr": "06.00",
+       "dep": "06.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "mon-sat"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AGRIGENTO (Villaggio)",
+       "idx": 8,
+       "arr": "06.45",
+       "dep": "06.45"
+      },
+      {
+       "stop": "AGRIGENTO (Peruzzo P. Ristoro)",
+       "idx": 9,
+       "arr": "06.47",
+       "dep": "06.47"
+      },
+      {
+       "stop": "AGRIGENTO (Templi Museo)",
+       "idx": 10,
+       "arr": "06.50",
+       "dep": "06.50"
+      },
+      {
+       "stop": "AGRIGENTO (Archeol. Stazione Fs)",
+       "idx": 11,
+       "arr": "06.52",
+       "dep": "06.52"
+      },
+      {
+       "stop": "AGRIGENTO (P.Le Rosselli)",
+       "idx": 12,
+       "arr": "06.55",
+       "dep": "06.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "mon-sat"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AGRIGENTO (P.Le Rosselli)",
+       "idx": 0,
+       "arr": "06.55",
+       "dep": "06.55"
+      },
+      {
+       "stop": "AGRIGENTO (Stazione Fs)",
+       "idx": 1,
+       "arr": "07.00",
+       "dep": "07.00"
+      },
+      {
+       "stop": "AGRIGENTO (Tempio Di)",
+       "idx": 2,
+       "arr": "07.10",
+       "dep": "07.10"
+      },
+      {
+       "stop": "AGRIGENTO (Giunone Via L. Sciascia)",
+       "idx": 3,
+       "arr": "07.15",
+       "dep": "07.15"
+      },
+      {
+       "stop": "AGRIGENTO (Villaggio)",
+       "idx": 4,
+       "arr": "07.20",
+       "dep": "07.20"
+      },
+      {
+       "stop": "AGRIGENTO (Mose' Viale)",
+       "idx": 5,
+       "arr": "07.25",
+       "dep": "07.25"
+      },
+      {
+       "stop": "AGRIGENTO (Cannatello Dune)",
+       "idx": 6,
+       "arr": "07.30",
+       "dep": "07.30"
+      },
+      {
+       "stop": "AGRIGENTO (Viale Dei Pini)",
+       "idx": 7,
+       "arr": "07.35",
+       "dep": "07.35"
+      },
+      {
+       "stop": "AGRIGENTO (Villaggio)",
+       "idx": 8,
+       "arr": "07.40",
+       "dep": "07.40"
+      },
+      {
+       "stop": "AGRIGENTO (Peruzzo P. Ristoro)",
+       "idx": 9,
+       "arr": "07.45",
+       "dep": "07.45"
+      },
+      {
+       "stop": "AGRIGENTO (Templi Museo)",
+       "idx": 10,
+       "arr": "07.50",
+       "dep": "07.50"
+      },
+      {
+       "stop": "AGRIGENTO (Archeol. Stazione Fs)",
+       "idx": 11,
+       "arr": "07.55",
+       "dep": "07.55"
+      },
+      {
+       "stop": "AGRIGENTO (P.Le Rosselli)",
+       "idx": 12,
+       "arr": "08.00",
+       "dep": "08.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "sun-holidays"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AGRIGENTO (Villaggio)",
+       "idx": 8,
+       "arr": "07.40",
+       "dep": "07.40"
+      },
+      {
+       "stop": "AGRIGENTO (Peruzzo P. Ristoro)",
+       "idx": 9,
+       "arr": "07.45",
+       "dep": "07.45"
+      },
+      {
+       "stop": "AGRIGENTO (Templi Museo)",
+       "idx": 10,
+       "arr": "07.50",
+       "dep": "07.50"
+      },
+      {
+       "stop": "AGRIGENTO (Archeol. Stazione Fs)",
+       "idx": 11,
+       "arr": "07.55",
+       "dep": "07.55"
+      },
+      {
+       "stop": "AGRIGENTO (P.Le Rosselli)",
+       "idx": 12,
+       "arr": "08.00",
+       "dep": "08.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "5",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "daily"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AGRIGENTO (P.Le Rosselli)",
+       "idx": 0,
+       "arr": "08.00",
+       "dep": "08.00"
+      },
+      {
+       "stop": "AGRIGENTO (Stazione Fs)",
+       "idx": 1,
+       "arr": "08.05",
+       "dep": "08.05"
+      },
+      {
+       "stop": "AGRIGENTO (Tempio Di)",
+       "idx": 2,
+       "arr": "08.15",
+       "dep": "08.15"
+      },
+      {
+       "stop": "AGRIGENTO (Giunone Via L. Sciascia)",
+       "idx": 3,
+       "arr": "08.20",
+       "dep": "08.20"
+      },
+      {
+       "stop": "AGRIGENTO (Villaggio)",
+       "idx": 4,
+       "arr": "08.25",
+       "dep": "08.25"
+      },
+      {
+       "stop": "AGRIGENTO (Mose' Viale)",
+       "idx": 5,
+       "arr": "08.30",
+       "dep": "08.30"
+      },
+      {
+       "stop": "AGRIGENTO (Cannatello Dune)",
+       "idx": 6,
+       "arr": "08.35",
+       "dep": "08.35"
+      },
+      {
+       "stop": "AGRIGENTO (Viale Dei Pini)",
+       "idx": 7,
+       "arr": "08.40",
+       "dep": "08.40"
+      },
+      {
+       "stop": "AGRIGENTO (Villaggio)",
+       "idx": 8,
+       "arr": "08.45",
+       "dep": "08.45"
+      },
+      {
+       "stop": "AGRIGENTO (Peruzzo P. Ristoro)",
+       "idx": 9,
+       "arr": "08.50",
+       "dep": "08.50"
+      },
+      {
+       "stop": "AGRIGENTO (Templi Museo)",
+       "idx": 10,
+       "arr": "08.55",
+       "dep": "08.55"
+      },
+      {
+       "stop": "AGRIGENTO (Archeol. Stazione Fs)",
+       "idx": 11,
+       "arr": "09.00",
+       "dep": "09.00"
+      },
+      {
+       "stop": "AGRIGENTO (P.Le Rosselli)",
+       "idx": 12,
+       "arr": "09.05",
+       "dep": "09.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "daily"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AGRIGENTO (P.Le Rosselli)",
+       "idx": 0,
+       "arr": "09.10",
+       "dep": "09.10"
+      },
+      {
+       "stop": "AGRIGENTO (Stazione Fs)",
+       "idx": 1,
+       "arr": "09.15",
+       "dep": "09.15"
+      },
+      {
+       "stop": "AGRIGENTO (Tempio Di)",
+       "idx": 2,
+       "arr": "09.25",
+       "dep": "09.25"
+      },
+      {
+       "stop": "AGRIGENTO (Giunone Via L. Sciascia)",
+       "idx": 3,
+       "arr": "09.30",
+       "dep": "09.30"
+      },
+      {
+       "stop": "AGRIGENTO (Villaggio)",
+       "idx": 4,
+       "arr": "09.35",
+       "dep": "09.35"
+      },
+      {
+       "stop": "AGRIGENTO (Mose' Viale)",
+       "idx": 5,
+       "arr": "09.40",
+       "dep": "09.40"
+      },
+      {
+       "stop": "AGRIGENTO (Cannatello Dune)",
+       "idx": 6,
+       "arr": "09.45",
+       "dep": "09.45"
+      },
+      {
+       "stop": "AGRIGENTO (Viale Dei Pini)",
+       "idx": 7,
+       "arr": "09.50",
+       "dep": "09.50"
+      },
+      {
+       "stop": "AGRIGENTO (Villaggio)",
+       "idx": 8,
+       "arr": "09.55",
+       "dep": "09.55"
+      },
+      {
+       "stop": "AGRIGENTO (Peruzzo P. Ristoro)",
+       "idx": 9,
+       "arr": "10.00",
+       "dep": "10.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "7",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "daily"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AGRIGENTO (P.Le Rosselli)",
+       "idx": 0,
+       "arr": "10.10",
+       "dep": "10.10"
+      },
+      {
+       "stop": "AGRIGENTO (Stazione Fs)",
+       "idx": 1,
+       "arr": "10.15",
+       "dep": "10.15"
+      },
+      {
+       "stop": "AGRIGENTO (Tempio Di)",
+       "idx": 2,
+       "arr": "10.25",
+       "dep": "10.25"
+      },
+      {
+       "stop": "AGRIGENTO (Giunone Via L. Sciascia)",
+       "idx": 3,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "AGRIGENTO (Villaggio)",
+       "idx": 4,
+       "arr": "10.35",
+       "dep": "10.35"
+      },
+      {
+       "stop": "AGRIGENTO (Mose' Viale)",
+       "idx": 5,
+       "arr": "10.40",
+       "dep": "10.40"
+      },
+      {
+       "stop": "AGRIGENTO (Cannatello Dune)",
+       "idx": 6,
+       "arr": "10.45",
+       "dep": "10.45"
+      },
+      {
+       "stop": "AGRIGENTO (Viale Dei Pini)",
+       "idx": 7,
+       "arr": "10.50",
+       "dep": "10.50"
+      },
+      {
+       "stop": "AGRIGENTO (Villaggio)",
+       "idx": 8,
+       "arr": "10.55",
+       "dep": "10.55"
+      },
+      {
+       "stop": "AGRIGENTO (Peruzzo P. Ristoro)",
+       "idx": 9,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "AGRIGENTO (Templi Museo)",
+       "idx": 10,
+       "arr": "11.05",
+       "dep": "11.05"
+      },
+      {
+       "stop": "AGRIGENTO (Archeol. Stazione Fs)",
+       "idx": 11,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "AGRIGENTO (P.Le Rosselli)",
+       "idx": 12,
+       "arr": "11.15",
+       "dep": "11.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "daily"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AGRIGENTO (P.Le Rosselli)",
+       "idx": 0,
+       "arr": "11.20",
+       "dep": "11.20"
+      },
+      {
+       "stop": "AGRIGENTO (Stazione Fs)",
+       "idx": 1,
+       "arr": "11.25",
+       "dep": "11.25"
+      },
+      {
+       "stop": "AGRIGENTO (Tempio Di)",
+       "idx": 2,
+       "arr": "11.35",
+       "dep": "11.35"
+      },
+      {
+       "stop": "AGRIGENTO (Giunone Via L. Sciascia)",
+       "idx": 3,
+       "arr": "11.40",
+       "dep": "11.40"
+      },
+      {
+       "stop": "AGRIGENTO (Villaggio)",
+       "idx": 4,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "AGRIGENTO (Mose' Viale)",
+       "idx": 5,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "AGRIGENTO (Cannatello Dune)",
+       "idx": 6,
+       "arr": "11.55",
+       "dep": "11.55"
+      },
+      {
+       "stop": "AGRIGENTO (Viale Dei Pini)",
+       "idx": 7,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "AGRIGENTO (Villaggio)",
+       "idx": 8,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "AGRIGENTO (Peruzzo P. Ristoro)",
+       "idx": 9,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "AGRIGENTO (Templi Museo)",
+       "idx": 10,
+       "arr": "12.15",
+       "dep": "12.15"
+      },
+      {
+       "stop": "AGRIGENTO (Archeol. Stazione Fs)",
+       "idx": 11,
+       "arr": "12.20",
+       "dep": "12.20"
+      },
+      {
+       "stop": "AGRIGENTO (P.Le Rosselli)",
+       "idx": 12,
+       "arr": "12.25",
+       "dep": "12.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "9",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "daily"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AGRIGENTO (P.Le Rosselli)",
+       "idx": 0,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "AGRIGENTO (Stazione Fs)",
+       "idx": 1,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "AGRIGENTO (Tempio Di)",
+       "idx": 2,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "AGRIGENTO (Giunone Via L. Sciascia)",
+       "idx": 3,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "AGRIGENTO (Villaggio)",
+       "idx": 4,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "AGRIGENTO (Mose' Viale)",
+       "idx": 5,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "AGRIGENTO (Cannatello Dune)",
+       "idx": 6,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "AGRIGENTO (Viale Dei Pini)",
+       "idx": 7,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "AGRIGENTO (Villaggio)",
+       "idx": 8,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "AGRIGENTO (Peruzzo P. Ristoro)",
+       "idx": 9,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "AGRIGENTO (Templi Museo)",
+       "idx": 10,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "AGRIGENTO (Archeol. Stazione Fs)",
+       "idx": 11,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "AGRIGENTO (P.Le Rosselli)",
+       "idx": 12,
+       "arr": "13.35",
+       "dep": "13.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "daily"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AGRIGENTO (P.Le Rosselli)",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "AGRIGENTO (Stazione Fs)",
+       "idx": 1,
+       "arr": "14.02",
+       "dep": "14.02"
+      },
+      {
+       "stop": "AGRIGENTO (Tempio Di)",
+       "idx": 2,
+       "arr": "14.09",
+       "dep": "14.09"
+      },
+      {
+       "stop": "AGRIGENTO (Giunone Via L. Sciascia)",
+       "idx": 3,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "AGRIGENTO (Villaggio)",
+       "idx": 4,
+       "arr": "14.21",
+       "dep": "14.21"
+      },
+      {
+       "stop": "AGRIGENTO (Mose' Viale)",
+       "idx": 5,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "AGRIGENTO (Cannatello Dune)",
+       "idx": 6,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "AGRIGENTO (Viale Dei Pini)",
+       "idx": 7,
+       "arr": "14.36",
+       "dep": "14.36"
+      },
+      {
+       "stop": "AGRIGENTO (Villaggio)",
+       "idx": 8,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "AGRIGENTO (Peruzzo P. Ristoro)",
+       "idx": 9,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "AGRIGENTO (Templi Museo)",
+       "idx": 10,
+       "arr": "14.47",
+       "dep": "14.47"
+      },
+      {
+       "stop": "AGRIGENTO (Archeol. Stazione Fs)",
+       "idx": 11,
+       "arr": "15.02",
+       "dep": "15.02"
+      },
+      {
+       "stop": "AGRIGENTO (P.Le Rosselli)",
+       "idx": 12,
+       "arr": "15.03",
+       "dep": "15.03"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "11",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "daily"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AGRIGENTO (P.Le Rosselli)",
+       "idx": 0,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "AGRIGENTO (Stazione Fs)",
+       "idx": 1,
+       "arr": "15.13",
+       "dep": "15.13"
+      },
+      {
+       "stop": "AGRIGENTO (Tempio Di)",
+       "idx": 2,
+       "arr": "15.18",
+       "dep": "15.18"
+      },
+      {
+       "stop": "AGRIGENTO (Giunone Via L. Sciascia)",
+       "idx": 3,
+       "arr": "15.23",
+       "dep": "15.23"
+      },
+      {
+       "stop": "AGRIGENTO (Villaggio)",
+       "idx": 4,
+       "arr": "15.29",
+       "dep": "15.29"
+      },
+      {
+       "stop": "AGRIGENTO (Mose' Viale)",
+       "idx": 5,
+       "arr": "15.37",
+       "dep": "15.37"
+      },
+      {
+       "stop": "AGRIGENTO (Cannatello Dune)",
+       "idx": 6,
+       "arr": "15.42",
+       "dep": "15.42"
+      },
+      {
+       "stop": "AGRIGENTO (Viale Dei Pini)",
+       "idx": 7,
+       "arr": "15.49",
+       "dep": "15.49"
+      },
+      {
+       "stop": "AGRIGENTO (Villaggio)",
+       "idx": 8,
+       "arr": "15.53",
+       "dep": "15.53"
+      },
+      {
+       "stop": "AGRIGENTO (Peruzzo P. Ristoro)",
+       "idx": 9,
+       "arr": "15.56",
+       "dep": "15.56"
+      },
+      {
+       "stop": "AGRIGENTO (Templi Museo)",
+       "idx": 10,
+       "arr": "15.58",
+       "dep": "15.58"
+      },
+      {
+       "stop": "AGRIGENTO (Archeol. Stazione Fs)",
+       "idx": 11,
+       "arr": "16.03",
+       "dep": "16.03"
+      },
+      {
+       "stop": "AGRIGENTO (P.Le Rosselli)",
+       "idx": 12,
+       "arr": "16.04",
+       "dep": "16.04"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "daily"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AGRIGENTO (P.Le Rosselli)",
+       "idx": 0,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "AGRIGENTO (Stazione Fs)",
+       "idx": 1,
+       "arr": "16.13",
+       "dep": "16.13"
+      },
+      {
+       "stop": "AGRIGENTO (Tempio Di)",
+       "idx": 2,
+       "arr": "16.18",
+       "dep": "16.18"
+      },
+      {
+       "stop": "AGRIGENTO (Giunone Via L. Sciascia)",
+       "idx": 3,
+       "arr": "16.23",
+       "dep": "16.23"
+      },
+      {
+       "stop": "AGRIGENTO (Villaggio)",
+       "idx": 4,
+       "arr": "16.29",
+       "dep": "16.29"
+      },
+      {
+       "stop": "AGRIGENTO (Mose' Viale)",
+       "idx": 5,
+       "arr": "16.38",
+       "dep": "16.38"
+      },
+      {
+       "stop": "AGRIGENTO (Cannatello Dune)",
+       "idx": 6,
+       "arr": "16.43",
+       "dep": "16.43"
+      },
+      {
+       "stop": "AGRIGENTO (Viale Dei Pini)",
+       "idx": 7,
+       "arr": "16.49",
+       "dep": "16.49"
+      },
+      {
+       "stop": "AGRIGENTO (Villaggio)",
+       "idx": 8,
+       "arr": "16.54",
+       "dep": "16.54"
+      },
+      {
+       "stop": "AGRIGENTO (Peruzzo P. Ristoro)",
+       "idx": 9,
+       "arr": "16.57",
+       "dep": "16.57"
+      },
+      {
+       "stop": "AGRIGENTO (Templi Museo)",
+       "idx": 10,
+       "arr": "16.59",
+       "dep": "16.59"
+      },
+      {
+       "stop": "AGRIGENTO (Archeol. Stazione Fs)",
+       "idx": 11,
+       "arr": "17.04",
+       "dep": "17.04"
+      },
+      {
+       "stop": "AGRIGENTO (P.Le Rosselli)",
+       "idx": 12,
+       "arr": "17.06",
+       "dep": "17.06"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "13",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "daily"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AGRIGENTO (P.Le Rosselli)",
+       "idx": 0,
+       "arr": "17.10",
+       "dep": "17.10"
+      },
+      {
+       "stop": "AGRIGENTO (Stazione Fs)",
+       "idx": 1,
+       "arr": "17.15",
+       "dep": "17.15"
+      },
+      {
+       "stop": "AGRIGENTO (Tempio Di)",
+       "idx": 2,
+       "arr": "17.25",
+       "dep": "17.25"
+      },
+      {
+       "stop": "AGRIGENTO (Giunone Via L. Sciascia)",
+       "idx": 3,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "AGRIGENTO (Villaggio)",
+       "idx": 4,
+       "arr": "17.35",
+       "dep": "17.35"
+      },
+      {
+       "stop": "AGRIGENTO (Mose' Viale)",
+       "idx": 5,
+       "arr": "17.40",
+       "dep": "17.40"
+      },
+      {
+       "stop": "AGRIGENTO (Cannatello Dune)",
+       "idx": 6,
+       "arr": "17.45",
+       "dep": "17.45"
+      },
+      {
+       "stop": "AGRIGENTO (Viale Dei Pini)",
+       "idx": 7,
+       "arr": "17.50",
+       "dep": "17.50"
+      },
+      {
+       "stop": "AGRIGENTO (Villaggio)",
+       "idx": 8,
+       "arr": "17.55",
+       "dep": "17.55"
+      },
+      {
+       "stop": "AGRIGENTO (Peruzzo P. Ristoro)",
+       "idx": 9,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "AGRIGENTO (Templi Museo)",
+       "idx": 10,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "AGRIGENTO (Archeol. Stazione Fs)",
+       "idx": 11,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "AGRIGENTO (P.Le Rosselli)",
+       "idx": 12,
+       "arr": "18.15",
+       "dep": "18.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "14",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "daily"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AGRIGENTO (P.Le Rosselli)",
+       "idx": 0,
+       "arr": "18.20",
+       "dep": "18.20"
+      },
+      {
+       "stop": "AGRIGENTO (Stazione Fs)",
+       "idx": 1,
+       "arr": "18.25",
+       "dep": "18.25"
+      },
+      {
+       "stop": "AGRIGENTO (Tempio Di)",
+       "idx": 2,
+       "arr": "18.35",
+       "dep": "18.35"
+      },
+      {
+       "stop": "AGRIGENTO (Giunone Via L. Sciascia)",
+       "idx": 3,
+       "arr": "18.40",
+       "dep": "18.40"
+      },
+      {
+       "stop": "AGRIGENTO (Villaggio)",
+       "idx": 4,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "AGRIGENTO (Mose' Viale)",
+       "idx": 5,
+       "arr": "18.50",
+       "dep": "18.50"
+      },
+      {
+       "stop": "AGRIGENTO (Cannatello Dune)",
+       "idx": 6,
+       "arr": "18.55",
+       "dep": "18.55"
+      },
+      {
+       "stop": "AGRIGENTO (Viale Dei Pini)",
+       "idx": 7,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "AGRIGENTO (Villaggio)",
+       "idx": 8,
+       "arr": "19.05",
+       "dep": "19.05"
+      },
+      {
+       "stop": "AGRIGENTO (Peruzzo P. Ristoro)",
+       "idx": 9,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "AGRIGENTO (Templi Museo)",
+       "idx": 10,
+       "arr": "19.15",
+       "dep": "19.15"
+      },
+      {
+       "stop": "AGRIGENTO (Archeol. Stazione Fs)",
+       "idx": 11,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "AGRIGENTO (P.Le Rosselli)",
+       "idx": 12,
+       "arr": "19.25",
+       "dep": "19.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "15",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "daily"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AGRIGENTO (P.Le Rosselli)",
+       "idx": 0,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "AGRIGENTO (Stazione Fs)",
+       "idx": 1,
+       "arr": "19.35",
+       "dep": "19.35"
+      },
+      {
+       "stop": "AGRIGENTO (Tempio Di)",
+       "idx": 2,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "AGRIGENTO (Giunone Via L. Sciascia)",
+       "idx": 3,
+       "arr": "19.50",
+       "dep": "19.50"
+      },
+      {
+       "stop": "AGRIGENTO (Villaggio)",
+       "idx": 4,
+       "arr": "19.55",
+       "dep": "19.55"
+      },
+      {
+       "stop": "AGRIGENTO (Mose' Viale)",
+       "idx": 5,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "AGRIGENTO (Cannatello Dune)",
+       "idx": 6,
+       "arr": "20.05",
+       "dep": "20.05"
+      },
+      {
+       "stop": "AGRIGENTO (Viale Dei Pini)",
+       "idx": 7,
+       "arr": "20.10",
+       "dep": "20.10"
+      },
+      {
+       "stop": "AGRIGENTO (Villaggio)",
+       "idx": 8,
+       "arr": "20.15",
+       "dep": "20.15"
+      },
+      {
+       "stop": "AGRIGENTO (Peruzzo P. Ristoro)",
+       "idx": 9,
+       "arr": "20.20",
+       "dep": "20.20"
+      },
+      {
+       "stop": "AGRIGENTO (Templi Museo)",
+       "idx": 10,
+       "arr": "20.25",
+       "dep": "20.25"
+      },
+      {
+       "stop": "AGRIGENTO (Archeol. Stazione Fs)",
+       "idx": 11,
+       "arr": "20.30",
+       "dep": "20.30"
+      },
+      {
+       "stop": "AGRIGENTO (P.Le Rosselli)",
+       "idx": 12,
+       "arr": "20.35",
+       "dep": "20.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "16",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "daily"
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AGRIGENTO (P.Le Rosselli)",
+       "idx": 0,
+       "arr": "20.40",
+       "dep": "20.40"
+      },
+      {
+       "stop": "AGRIGENTO (Stazione Fs)",
+       "idx": 1,
+       "arr": "20.45",
+       "dep": "20.45"
+      },
+      {
+       "stop": "AGRIGENTO (Tempio Di)",
+       "idx": 2,
+       "arr": "20.55",
+       "dep": "20.55"
+      },
+      {
+       "stop": "AGRIGENTO (Giunone Via L. Sciascia)",
+       "idx": 3,
+       "arr": "21.00",
+       "dep": "21.00"
+      },
+      {
+       "stop": "AGRIGENTO (Villaggio)",
+       "idx": 4,
+       "arr": "21.05",
+       "dep": "21.05"
+      },
+      {
+       "stop": "AGRIGENTO (Mose' Viale)",
+       "idx": 5,
+       "arr": "21.10",
+       "dep": "21.10"
+      },
+      {
+       "stop": "AGRIGENTO (Cannatello Dune)",
+       "idx": 6,
+       "arr": "21.15",
+       "dep": "21.15"
+      },
+      {
+       "stop": "AGRIGENTO (Viale Dei Pini)",
+       "idx": 7,
+       "arr": "21.20",
+       "dep": "21.20"
+      },
+      {
+       "stop": "AGRIGENTO (Villaggio)",
+       "idx": 8,
+       "arr": "21.25",
+       "dep": "21.25"
+      },
+      {
+       "stop": "AGRIGENTO (Peruzzo P. Ristoro)",
+       "idx": 9,
+       "arr": "21.30",
+       "dep": "21.30"
+      },
+      {
+       "stop": "AGRIGENTO (Templi Museo)",
+       "idx": 10,
+       "arr": "21.35",
+       "dep": "21.35"
+      },
+      {
+       "stop": "AGRIGENTO (Archeol. Stazione Fs)",
+       "idx": 11,
+       "arr": "21.40",
+       "dep": "21.40"
+      },
+      {
+       "stop": "AGRIGENTO (P.Le Rosselli)",
+       "idx": 12,
+       "arr": "21.45",
+       "dep": "21.45"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}
