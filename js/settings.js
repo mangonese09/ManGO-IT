@@ -58,6 +58,10 @@ export function renderFreshness() {
 }
 
 async function checkForUpdates() {
+  const btn = document.getElementById('check-updates');
+  if (btn.disabled) return;
+  btn.disabled = true;
+  setTimeout(() => { btn.disabled = false; }, 2500);
   try {
     const res = await fetch(`/version.json?t=${Date.now()}`, { cache: 'no-store' });
     const { version } = await res.json();

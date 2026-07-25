@@ -7,6 +7,8 @@ export function toast(message, kind = 'info', ms = 3200) {
     holder.className = 'toast-holder';
     document.body.appendChild(holder);
   }
+  // single-toast policy: a new toast replaces whatever is showing
+  for (const old of [...holder.children]) old.remove();
   const el = document.createElement('div');
   el.className = `toast toast-${kind}`;
   el.textContent = message;
