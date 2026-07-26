@@ -1,0 +1,3353 @@
+{
+ "operator": "SAIS Autolinee",
+ "route_id": "sais-9001",
+ "name": "1 Zona 167 - Scardacucco - Cimitero",
+ "short_name": "9001",
+ "coords": "external",
+ "source": "api.saisautolinee.it line c55a8244-0c1c-427a-91e9-55e47e5844e1",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "MODICA (Zona 167)",
+    "MODICA (Circonvallazione Ortisiana, 58)",
+    "MODICA (Circonvallazione Ortisiana, 194)",
+    "MODICA (Circonvallazione Ortisiana, 218)",
+    "MODICA (SS 115 Veneta Cucine)",
+    "MODICA (Via Sacro Cuore, 167)",
+    "MODICA (Via Aldo Moro, 2)",
+    "MODICA (Via Aldo Moro fronte Ospedale)",
+    "MODICA (Via Risorgimento, 8)",
+    "MODICA (Via S. Giuliano fronte 62)",
+    "MODICA (Via S. Giuliano, 61)",
+    "MODICA (Via S. Giuliano, 33)",
+    "MODICA (Via Modica Sorda, 169)",
+    "MODICA (Via Modica Sorda fronte 88)",
+    "MODICA (Via Modica Sorda, 19)",
+    "MODICA (Via Tirella, 373)",
+    "MODICA (Via Tirella, 119)",
+    "MODICA (Corso Umberto, 8)",
+    "MODICA (Corso Umberto, 90)",
+    "MODICA (Corso Umberto, 164)",
+    "MODICA (Corso Umberto, 298 (Largo 8 Marzo))",
+    "MODICA (Corso Umberto, 470 (Baricentro Don Cafè))",
+    "MODICA (Via Modica Ragusa, 20/a)",
+    "MODICA (Via S. Antonio fronte Scuola Materna (Scardacucco))",
+    "MODICA (Via S. Antonio Panificio Cicero (Scardacucco))",
+    "MODICA (Via S. Antonio, 243 (Scardacucco))",
+    "MODICA (Via S. Antonio, 345 (Scardacucco))",
+    "MODICA (Via Rag. Orazio Pluchino, 162)",
+    "MODICA (Via Rag. Orazio Pluchino snc)",
+    "MODICA (Via San Benedetto da Norcia fronte 28 (Dente))",
+    "MODICA (Via San Benedetto da Norcia, 57 (Dente))",
+    "MODICA (Via Nazario Sauro fronte 1 (Dente))",
+    "MODICA (Via Nazario Sauro, 22 (Dente))",
+    "MODICA (Largo XI Febbraio (Dente))",
+    "MODICA (Via Nuova Sant'Antonio fronte 114)",
+    "MODICA (Via Nuova Sant'Antonio, 63)",
+    "MODICA (Via Nuova Sant'Antonio fronte Via Muriana, 29)",
+    "MODICA (Via Vittorio Veneto fronte 158)",
+    "MODICA (Via Vittorio Veneto fronte 106)",
+    "MODICA (Via Medaglie d'Oro, 57)",
+    "MODICA (Piazza Rizzone)",
+    "MODICA (Via Tirella fronte 119)",
+    "MODICA (Via Tirella fronte 373)",
+    "MODICA (Via Tirella, 6)",
+    "MODICA (Via Modica Sorda, 88)",
+    "MODICA (Via Modica Sorda, 160)",
+    "MODICA (Via San Giuliano, 10)",
+    "MODICA (Via San Giuliano, 38)",
+    "MODICA (Via Alcide De Gasperi snc)",
+    "MODICA (Piazza Libertà, 4)",
+    "MODICA (Via Sacro Cuore, 36)",
+    "MODICA (Via Resistenza Partigiana, 42/a (Agos))",
+    "MODICA (Via Resistenza Partigiana, 68)",
+    "MODICA (Via Resistenza Partigiana, 216)",
+    "MODICA (Cimitero Fermata 1)",
+    "MODICA (Cimitero Fermata 2)"
+   ],
+   "trips": [
+    {
+     "corsa": "001008",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "MOD9001_2",
+     "stops": [
+      {
+       "stop": "MODICA (Zona 167)",
+       "idx": 0,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "MODICA (Circonvallazione Ortisiana, 58)",
+       "idx": 1,
+       "arr": "19.33",
+       "dep": "19.33"
+      },
+      {
+       "stop": "MODICA (Circonvallazione Ortisiana, 194)",
+       "idx": 2,
+       "arr": "19.36",
+       "dep": "19.36"
+      },
+      {
+       "stop": "MODICA (Circonvallazione Ortisiana, 218)",
+       "idx": 3,
+       "arr": "19.37",
+       "dep": "19.37"
+      },
+      {
+       "stop": "MODICA (SS 115 Veneta Cucine)",
+       "idx": 4,
+       "arr": "19.42",
+       "dep": "19.42"
+      },
+      {
+       "stop": "MODICA (Via Sacro Cuore, 167)",
+       "idx": 5,
+       "arr": "19.43",
+       "dep": "19.43"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro, 2)",
+       "idx": 6,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro fronte Ospedale)",
+       "idx": 7,
+       "arr": "19.46",
+       "dep": "19.46"
+      },
+      {
+       "stop": "MODICA (Via Risorgimento, 8)",
+       "idx": 8,
+       "arr": "19.47",
+       "dep": "19.47"
+      },
+      {
+       "stop": "MODICA (Via S. Giuliano fronte 62)",
+       "idx": 9,
+       "arr": "19.50",
+       "dep": "19.50"
+      },
+      {
+       "stop": "MODICA (Via S. Giuliano, 61)",
+       "idx": 10,
+       "arr": "19.51",
+       "dep": "19.51"
+      },
+      {
+       "stop": "MODICA (Via S. Giuliano, 33)",
+       "idx": 11,
+       "arr": "19.52",
+       "dep": "19.52"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 169)",
+       "idx": 12,
+       "arr": "19.56",
+       "dep": "19.56"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda fronte 88)",
+       "idx": 13,
+       "arr": "19.57",
+       "dep": "19.57"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 19)",
+       "idx": 14,
+       "arr": "19.58",
+       "dep": "19.58"
+      },
+      {
+       "stop": "MODICA (Via Tirella, 373)",
+       "idx": 15,
+       "arr": "19.59",
+       "dep": "19.59"
+      },
+      {
+       "stop": "MODICA (Via Tirella, 119)",
+       "idx": 16,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 8)",
+       "idx": 17,
+       "arr": "20.01",
+       "dep": "20.01"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 90)",
+       "idx": 18,
+       "arr": "20.03",
+       "dep": "20.03"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 164)",
+       "idx": 19,
+       "arr": "20.04",
+       "dep": "20.04"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 298 (Largo 8 Marzo))",
+       "idx": 20,
+       "arr": "20.05",
+       "dep": "20.05"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 470 (Baricentro Don Cafè))",
+       "idx": 21,
+       "arr": "20.06",
+       "dep": "20.06"
+      },
+      {
+       "stop": "MODICA (Via Modica Ragusa, 20/a)",
+       "idx": 22,
+       "arr": "20.10",
+       "dep": "20.10"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio fronte Scuola Materna (Scardacucco))",
+       "idx": 23,
+       "arr": "20.16",
+       "dep": "20.16"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio Panificio Cicero (Scardacucco))",
+       "idx": 24,
+       "arr": "20.17",
+       "dep": "20.17"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio, 243 (Scardacucco))",
+       "idx": 25,
+       "arr": "20.18",
+       "dep": "20.18"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio, 345 (Scardacucco))",
+       "idx": 26,
+       "arr": "20.19",
+       "dep": "20.19"
+      },
+      {
+       "stop": "MODICA (Via Rag. Orazio Pluchino, 162)",
+       "idx": 27,
+       "arr": "20.23",
+       "dep": "20.23"
+      },
+      {
+       "stop": "MODICA (Via Rag. Orazio Pluchino snc)",
+       "idx": 28,
+       "arr": "20.24",
+       "dep": "20.24"
+      },
+      {
+       "stop": "MODICA (Via San Benedetto da Norcia fronte 28 (Dente))",
+       "idx": 29,
+       "arr": "20.29",
+       "dep": "20.29"
+      },
+      {
+       "stop": "MODICA (Via San Benedetto da Norcia, 57 (Dente))",
+       "idx": 30,
+       "arr": "20.31",
+       "dep": "20.31"
+      },
+      {
+       "stop": "MODICA (Via Nazario Sauro fronte 1 (Dente))",
+       "idx": 31,
+       "arr": "20.33",
+       "dep": "20.33"
+      },
+      {
+       "stop": "MODICA (Via Nazario Sauro, 22 (Dente))",
+       "idx": 32,
+       "arr": "20.34",
+       "dep": "20.34"
+      },
+      {
+       "stop": "MODICA (Largo XI Febbraio (Dente))",
+       "idx": 33,
+       "arr": "20.35",
+       "dep": "20.35"
+      },
+      {
+       "stop": "MODICA (Via Nuova Sant'Antonio fronte 114)",
+       "idx": 34,
+       "arr": "20.36",
+       "dep": "20.36"
+      },
+      {
+       "stop": "MODICA (Via Nuova Sant'Antonio, 63)",
+       "idx": 35,
+       "arr": "20.37",
+       "dep": "20.37"
+      },
+      {
+       "stop": "MODICA (Via Nuova Sant'Antonio fronte Via Muriana, 29)",
+       "idx": 36,
+       "arr": "20.38",
+       "dep": "20.38"
+      },
+      {
+       "stop": "MODICA (Via Vittorio Veneto fronte 158)",
+       "idx": 37,
+       "arr": "20.39",
+       "dep": "20.39"
+      },
+      {
+       "stop": "MODICA (Via Vittorio Veneto fronte 106)",
+       "idx": 38,
+       "arr": "20.40",
+       "dep": "20.40"
+      },
+      {
+       "stop": "MODICA (Via Medaglie d'Oro, 57)",
+       "idx": 39,
+       "arr": "20.41",
+       "dep": "20.41"
+      },
+      {
+       "stop": "MODICA (Piazza Rizzone)",
+       "idx": 40,
+       "arr": "20.42",
+       "dep": "20.42"
+      },
+      {
+       "stop": "MODICA (Via Tirella fronte 119)",
+       "idx": 41,
+       "arr": "20.43",
+       "dep": "20.43"
+      },
+      {
+       "stop": "MODICA (Via Tirella fronte 373)",
+       "idx": 42,
+       "arr": "20.44",
+       "dep": "20.44"
+      },
+      {
+       "stop": "MODICA (Via Tirella, 6)",
+       "idx": 43,
+       "arr": "20.45",
+       "dep": "20.45"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 88)",
+       "idx": 44,
+       "arr": "20.46",
+       "dep": "20.46"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 160)",
+       "idx": 45,
+       "arr": "20.47",
+       "dep": "20.47"
+      },
+      {
+       "stop": "MODICA (Via San Giuliano, 10)",
+       "idx": 46,
+       "arr": "20.50",
+       "dep": "20.50"
+      },
+      {
+       "stop": "MODICA (Via San Giuliano, 38)",
+       "idx": 47,
+       "arr": "20.51",
+       "dep": "20.51"
+      },
+      {
+       "stop": "MODICA (Via Alcide De Gasperi snc)",
+       "idx": 48,
+       "arr": "20.52",
+       "dep": "20.52"
+      },
+      {
+       "stop": "MODICA (Piazza Libertà, 4)",
+       "idx": 49,
+       "arr": "20.53",
+       "dep": "20.53"
+      },
+      {
+       "stop": "MODICA (Via Sacro Cuore, 36)",
+       "idx": 50,
+       "arr": "20.54",
+       "dep": "20.54"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro, 2)",
+       "idx": 51,
+       "arr": "20.55",
+       "dep": "20.55"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro fronte Ospedale)",
+       "idx": 52,
+       "arr": "20.56",
+       "dep": "20.56"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 42/a (Agos))",
+       "idx": 53,
+       "arr": "20.57",
+       "dep": "20.57"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 68)",
+       "idx": 54,
+       "arr": "20.58",
+       "dep": "20.58"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 216)",
+       "idx": 55,
+       "arr": "20.59",
+       "dep": "20.59"
+      },
+      {
+       "stop": "MODICA (Zona 167)",
+       "idx": 56,
+       "arr": "21.00",
+       "dep": "21.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "001007",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "MOD9001_2",
+     "stops": [
+      {
+       "stop": "MODICA (Zona 167)",
+       "idx": 0,
+       "arr": "17.45",
+       "dep": "17.45"
+      },
+      {
+       "stop": "MODICA (Circonvallazione Ortisiana, 58)",
+       "idx": 1,
+       "arr": "17.48",
+       "dep": "17.48"
+      },
+      {
+       "stop": "MODICA (Circonvallazione Ortisiana, 194)",
+       "idx": 2,
+       "arr": "17.51",
+       "dep": "17.51"
+      },
+      {
+       "stop": "MODICA (Circonvallazione Ortisiana, 218)",
+       "idx": 3,
+       "arr": "17.52",
+       "dep": "17.52"
+      },
+      {
+       "stop": "MODICA (SS 115 Veneta Cucine)",
+       "idx": 4,
+       "arr": "17.57",
+       "dep": "17.57"
+      },
+      {
+       "stop": "MODICA (Via Sacro Cuore, 167)",
+       "idx": 5,
+       "arr": "17.58",
+       "dep": "17.58"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro, 2)",
+       "idx": 6,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro fronte Ospedale)",
+       "idx": 7,
+       "arr": "18.01",
+       "dep": "18.01"
+      },
+      {
+       "stop": "MODICA (Via Risorgimento, 8)",
+       "idx": 8,
+       "arr": "18.02",
+       "dep": "18.02"
+      },
+      {
+       "stop": "MODICA (Via S. Giuliano fronte 62)",
+       "idx": 9,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "MODICA (Via S. Giuliano, 61)",
+       "idx": 10,
+       "arr": "18.06",
+       "dep": "18.06"
+      },
+      {
+       "stop": "MODICA (Via S. Giuliano, 33)",
+       "idx": 11,
+       "arr": "18.07",
+       "dep": "18.07"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 169)",
+       "idx": 12,
+       "arr": "18.11",
+       "dep": "18.11"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda fronte 88)",
+       "idx": 13,
+       "arr": "18.12",
+       "dep": "18.12"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 19)",
+       "idx": 14,
+       "arr": "18.13",
+       "dep": "18.13"
+      },
+      {
+       "stop": "MODICA (Via Tirella, 373)",
+       "idx": 15,
+       "arr": "18.14",
+       "dep": "18.14"
+      },
+      {
+       "stop": "MODICA (Via Tirella, 119)",
+       "idx": 16,
+       "arr": "18.15",
+       "dep": "18.15"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 8)",
+       "idx": 17,
+       "arr": "18.16",
+       "dep": "18.16"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 90)",
+       "idx": 18,
+       "arr": "18.18",
+       "dep": "18.18"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 164)",
+       "idx": 19,
+       "arr": "18.19",
+       "dep": "18.19"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 298 (Largo 8 Marzo))",
+       "idx": 20,
+       "arr": "18.20",
+       "dep": "18.20"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 470 (Baricentro Don Cafè))",
+       "idx": 21,
+       "arr": "18.21",
+       "dep": "18.21"
+      },
+      {
+       "stop": "MODICA (Via Modica Ragusa, 20/a)",
+       "idx": 22,
+       "arr": "18.25",
+       "dep": "18.25"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio fronte Scuola Materna (Scardacucco))",
+       "idx": 23,
+       "arr": "18.31",
+       "dep": "18.31"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio Panificio Cicero (Scardacucco))",
+       "idx": 24,
+       "arr": "18.32",
+       "dep": "18.32"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio, 243 (Scardacucco))",
+       "idx": 25,
+       "arr": "18.33",
+       "dep": "18.33"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio, 345 (Scardacucco))",
+       "idx": 26,
+       "arr": "18.34",
+       "dep": "18.34"
+      },
+      {
+       "stop": "MODICA (Via Rag. Orazio Pluchino, 162)",
+       "idx": 27,
+       "arr": "18.38",
+       "dep": "18.38"
+      },
+      {
+       "stop": "MODICA (Via Rag. Orazio Pluchino snc)",
+       "idx": 28,
+       "arr": "18.39",
+       "dep": "18.39"
+      },
+      {
+       "stop": "MODICA (Via San Benedetto da Norcia fronte 28 (Dente))",
+       "idx": 29,
+       "arr": "18.44",
+       "dep": "18.44"
+      },
+      {
+       "stop": "MODICA (Via San Benedetto da Norcia, 57 (Dente))",
+       "idx": 30,
+       "arr": "18.46",
+       "dep": "18.46"
+      },
+      {
+       "stop": "MODICA (Via Nazario Sauro fronte 1 (Dente))",
+       "idx": 31,
+       "arr": "18.48",
+       "dep": "18.48"
+      },
+      {
+       "stop": "MODICA (Via Nazario Sauro, 22 (Dente))",
+       "idx": 32,
+       "arr": "18.49",
+       "dep": "18.49"
+      },
+      {
+       "stop": "MODICA (Largo XI Febbraio (Dente))",
+       "idx": 33,
+       "arr": "18.50",
+       "dep": "18.50"
+      },
+      {
+       "stop": "MODICA (Via Nuova Sant'Antonio fronte 114)",
+       "idx": 34,
+       "arr": "18.51",
+       "dep": "18.51"
+      },
+      {
+       "stop": "MODICA (Via Nuova Sant'Antonio, 63)",
+       "idx": 35,
+       "arr": "18.52",
+       "dep": "18.52"
+      },
+      {
+       "stop": "MODICA (Via Nuova Sant'Antonio fronte Via Muriana, 29)",
+       "idx": 36,
+       "arr": "18.53",
+       "dep": "18.53"
+      },
+      {
+       "stop": "MODICA (Via Vittorio Veneto fronte 158)",
+       "idx": 37,
+       "arr": "18.54",
+       "dep": "18.54"
+      },
+      {
+       "stop": "MODICA (Via Vittorio Veneto fronte 106)",
+       "idx": 38,
+       "arr": "18.55",
+       "dep": "18.55"
+      },
+      {
+       "stop": "MODICA (Via Medaglie d'Oro, 57)",
+       "idx": 39,
+       "arr": "18.56",
+       "dep": "18.56"
+      },
+      {
+       "stop": "MODICA (Piazza Rizzone)",
+       "idx": 40,
+       "arr": "18.57",
+       "dep": "18.57"
+      },
+      {
+       "stop": "MODICA (Via Tirella fronte 119)",
+       "idx": 41,
+       "arr": "18.58",
+       "dep": "18.58"
+      },
+      {
+       "stop": "MODICA (Via Tirella fronte 373)",
+       "idx": 42,
+       "arr": "18.59",
+       "dep": "18.59"
+      },
+      {
+       "stop": "MODICA (Via Tirella, 6)",
+       "idx": 43,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 88)",
+       "idx": 44,
+       "arr": "19.01",
+       "dep": "19.01"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 160)",
+       "idx": 45,
+       "arr": "19.02",
+       "dep": "19.02"
+      },
+      {
+       "stop": "MODICA (Via San Giuliano, 10)",
+       "idx": 46,
+       "arr": "19.05",
+       "dep": "19.05"
+      },
+      {
+       "stop": "MODICA (Via San Giuliano, 38)",
+       "idx": 47,
+       "arr": "19.06",
+       "dep": "19.06"
+      },
+      {
+       "stop": "MODICA (Via Alcide De Gasperi snc)",
+       "idx": 48,
+       "arr": "19.07",
+       "dep": "19.07"
+      },
+      {
+       "stop": "MODICA (Piazza Libertà, 4)",
+       "idx": 49,
+       "arr": "19.08",
+       "dep": "19.08"
+      },
+      {
+       "stop": "MODICA (Via Sacro Cuore, 36)",
+       "idx": 50,
+       "arr": "19.09",
+       "dep": "19.09"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro, 2)",
+       "idx": 51,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro fronte Ospedale)",
+       "idx": 52,
+       "arr": "19.11",
+       "dep": "19.11"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 42/a (Agos))",
+       "idx": 53,
+       "arr": "19.12",
+       "dep": "19.12"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 68)",
+       "idx": 54,
+       "arr": "19.13",
+       "dep": "19.13"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 216)",
+       "idx": 55,
+       "arr": "19.14",
+       "dep": "19.14"
+      },
+      {
+       "stop": "MODICA (Zona 167)",
+       "idx": 56,
+       "arr": "19.15",
+       "dep": "19.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "001009",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "MOD9001_1",
+     "stops": [
+      {
+       "stop": "MODICA (Zona 167)",
+       "idx": 0,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "MODICA (Circonvallazione Ortisiana, 58)",
+       "idx": 1,
+       "arr": "6.33",
+       "dep": "6.33"
+      },
+      {
+       "stop": "MODICA (Circonvallazione Ortisiana, 194)",
+       "idx": 2,
+       "arr": "6.36",
+       "dep": "6.36"
+      },
+      {
+       "stop": "MODICA (Circonvallazione Ortisiana, 218)",
+       "idx": 3,
+       "arr": "6.37",
+       "dep": "6.37"
+      },
+      {
+       "stop": "MODICA (SS 115 Veneta Cucine)",
+       "idx": 4,
+       "arr": "6.42",
+       "dep": "6.42"
+      },
+      {
+       "stop": "MODICA (Via Sacro Cuore, 167)",
+       "idx": 5,
+       "arr": "6.43",
+       "dep": "6.43"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro, 2)",
+       "idx": 6,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro fronte Ospedale)",
+       "idx": 7,
+       "arr": "6.46",
+       "dep": "6.46"
+      },
+      {
+       "stop": "MODICA (Via Risorgimento, 8)",
+       "idx": 8,
+       "arr": "6.47",
+       "dep": "6.47"
+      },
+      {
+       "stop": "MODICA (Via S. Giuliano fronte 62)",
+       "idx": 9,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "MODICA (Via S. Giuliano, 61)",
+       "idx": 10,
+       "arr": "6.51",
+       "dep": "6.51"
+      },
+      {
+       "stop": "MODICA (Via S. Giuliano, 33)",
+       "idx": 11,
+       "arr": "6.52",
+       "dep": "6.52"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 169)",
+       "idx": 12,
+       "arr": "6.56",
+       "dep": "6.56"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda fronte 88)",
+       "idx": 13,
+       "arr": "6.57",
+       "dep": "6.57"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 19)",
+       "idx": 14,
+       "arr": "6.58",
+       "dep": "6.58"
+      },
+      {
+       "stop": "MODICA (Via Tirella, 373)",
+       "idx": 15,
+       "arr": "6.59",
+       "dep": "6.59"
+      },
+      {
+       "stop": "MODICA (Via Tirella, 119)",
+       "idx": 16,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 8)",
+       "idx": 17,
+       "arr": "7.01",
+       "dep": "7.01"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 90)",
+       "idx": 18,
+       "arr": "7.03",
+       "dep": "7.03"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 164)",
+       "idx": 19,
+       "arr": "7.04",
+       "dep": "7.04"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 298 (Largo 8 Marzo))",
+       "idx": 20,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 470 (Baricentro Don Cafè))",
+       "idx": 21,
+       "arr": "7.06",
+       "dep": "7.06"
+      },
+      {
+       "stop": "MODICA (Via Modica Ragusa, 20/a)",
+       "idx": 22,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio fronte Scuola Materna (Scardacucco))",
+       "idx": 23,
+       "arr": "7.16",
+       "dep": "7.16"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio Panificio Cicero (Scardacucco))",
+       "idx": 24,
+       "arr": "7.17",
+       "dep": "7.17"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio, 243 (Scardacucco))",
+       "idx": 25,
+       "arr": "7.18",
+       "dep": "7.18"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio, 345 (Scardacucco))",
+       "idx": 26,
+       "arr": "7.19",
+       "dep": "7.19"
+      },
+      {
+       "stop": "MODICA (Via Rag. Orazio Pluchino, 162)",
+       "idx": 27,
+       "arr": "7.23",
+       "dep": "7.23"
+      },
+      {
+       "stop": "MODICA (Via Rag. Orazio Pluchino snc)",
+       "idx": 28,
+       "arr": "7.24",
+       "dep": "7.24"
+      },
+      {
+       "stop": "MODICA (Cimitero Fermata 1)",
+       "idx": 29,
+       "arr": "7.26",
+       "dep": "7.26"
+      },
+      {
+       "stop": "MODICA (Cimitero Fermata 2)",
+       "idx": 30,
+       "arr": "7.26",
+       "dep": "7.26"
+      },
+      {
+       "stop": "MODICA (Via San Benedetto da Norcia fronte 28 (Dente))",
+       "idx": 31,
+       "arr": "7.29",
+       "dep": "7.29"
+      },
+      {
+       "stop": "MODICA (Via San Benedetto da Norcia, 57 (Dente))",
+       "idx": 32,
+       "arr": "7.31",
+       "dep": "7.31"
+      },
+      {
+       "stop": "MODICA (Via Nazario Sauro fronte 1 (Dente))",
+       "idx": 33,
+       "arr": "7.33",
+       "dep": "7.33"
+      },
+      {
+       "stop": "MODICA (Via Nazario Sauro, 22 (Dente))",
+       "idx": 34,
+       "arr": "7.34",
+       "dep": "7.34"
+      },
+      {
+       "stop": "MODICA (Largo XI Febbraio (Dente))",
+       "idx": 35,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "MODICA (Via Nuova Sant'Antonio fronte 114)",
+       "idx": 36,
+       "arr": "7.36",
+       "dep": "7.36"
+      },
+      {
+       "stop": "MODICA (Via Nuova Sant'Antonio, 63)",
+       "idx": 37,
+       "arr": "7.37",
+       "dep": "7.37"
+      },
+      {
+       "stop": "MODICA (Via Nuova Sant'Antonio fronte Via Muriana, 29)",
+       "idx": 38,
+       "arr": "7.38",
+       "dep": "7.38"
+      },
+      {
+       "stop": "MODICA (Via Vittorio Veneto fronte 158)",
+       "idx": 39,
+       "arr": "7.39",
+       "dep": "7.39"
+      },
+      {
+       "stop": "MODICA (Via Vittorio Veneto fronte 106)",
+       "idx": 40,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "MODICA (Via Medaglie d'Oro, 57)",
+       "idx": 41,
+       "arr": "7.41",
+       "dep": "7.41"
+      },
+      {
+       "stop": "MODICA (Piazza Rizzone)",
+       "idx": 42,
+       "arr": "7.42",
+       "dep": "7.42"
+      },
+      {
+       "stop": "MODICA (Via Tirella fronte 119)",
+       "idx": 43,
+       "arr": "7.43",
+       "dep": "7.43"
+      },
+      {
+       "stop": "MODICA (Via Tirella fronte 373)",
+       "idx": 44,
+       "arr": "7.44",
+       "dep": "7.44"
+      },
+      {
+       "stop": "MODICA (Via Tirella, 6)",
+       "idx": 45,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 88)",
+       "idx": 46,
+       "arr": "7.46",
+       "dep": "7.46"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 160)",
+       "idx": 47,
+       "arr": "7.47",
+       "dep": "7.47"
+      },
+      {
+       "stop": "MODICA (Via San Giuliano, 10)",
+       "idx": 48,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "MODICA (Via San Giuliano, 38)",
+       "idx": 49,
+       "arr": "7.51",
+       "dep": "7.51"
+      },
+      {
+       "stop": "MODICA (Via Alcide De Gasperi snc)",
+       "idx": 50,
+       "arr": "7.52",
+       "dep": "7.52"
+      },
+      {
+       "stop": "MODICA (Piazza Libertà, 4)",
+       "idx": 51,
+       "arr": "7.53",
+       "dep": "7.53"
+      },
+      {
+       "stop": "MODICA (Via Sacro Cuore, 36)",
+       "idx": 52,
+       "arr": "7.54",
+       "dep": "7.54"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro, 2)",
+       "idx": 53,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro fronte Ospedale)",
+       "idx": 54,
+       "arr": "7.56",
+       "dep": "7.56"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 42/a (Agos))",
+       "idx": 55,
+       "arr": "7.57",
+       "dep": "7.57"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 68)",
+       "idx": 56,
+       "arr": "7.58",
+       "dep": "7.58"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 216)",
+       "idx": 57,
+       "arr": "7.59",
+       "dep": "7.59"
+      },
+      {
+       "stop": "MODICA (Zona 167)",
+       "idx": 58,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "001005",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "MOD9001_1",
+     "stops": [
+      {
+       "stop": "MODICA (Zona 167)",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "MODICA (Circonvallazione Ortisiana, 58)",
+       "idx": 1,
+       "arr": "14.18",
+       "dep": "14.18"
+      },
+      {
+       "stop": "MODICA (Circonvallazione Ortisiana, 194)",
+       "idx": 2,
+       "arr": "14.21",
+       "dep": "14.21"
+      },
+      {
+       "stop": "MODICA (Circonvallazione Ortisiana, 218)",
+       "idx": 3,
+       "arr": "14.22",
+       "dep": "14.22"
+      },
+      {
+       "stop": "MODICA (SS 115 Veneta Cucine)",
+       "idx": 4,
+       "arr": "14.27",
+       "dep": "14.27"
+      },
+      {
+       "stop": "MODICA (Via Sacro Cuore, 167)",
+       "idx": 5,
+       "arr": "14.28",
+       "dep": "14.28"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro, 2)",
+       "idx": 6,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro fronte Ospedale)",
+       "idx": 7,
+       "arr": "14.31",
+       "dep": "14.31"
+      },
+      {
+       "stop": "MODICA (Via Risorgimento, 8)",
+       "idx": 8,
+       "arr": "14.32",
+       "dep": "14.32"
+      },
+      {
+       "stop": "MODICA (Via S. Giuliano fronte 62)",
+       "idx": 9,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "MODICA (Via S. Giuliano, 61)",
+       "idx": 10,
+       "arr": "14.36",
+       "dep": "14.36"
+      },
+      {
+       "stop": "MODICA (Via S. Giuliano, 33)",
+       "idx": 11,
+       "arr": "14.37",
+       "dep": "14.37"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 169)",
+       "idx": 12,
+       "arr": "14.41",
+       "dep": "14.41"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda fronte 88)",
+       "idx": 13,
+       "arr": "14.42",
+       "dep": "14.42"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 19)",
+       "idx": 14,
+       "arr": "14.43",
+       "dep": "14.43"
+      },
+      {
+       "stop": "MODICA (Via Tirella, 373)",
+       "idx": 15,
+       "arr": "14.44",
+       "dep": "14.44"
+      },
+      {
+       "stop": "MODICA (Via Tirella, 119)",
+       "idx": 16,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 8)",
+       "idx": 17,
+       "arr": "14.46",
+       "dep": "14.46"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 90)",
+       "idx": 18,
+       "arr": "14.48",
+       "dep": "14.48"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 164)",
+       "idx": 19,
+       "arr": "14.49",
+       "dep": "14.49"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 298 (Largo 8 Marzo))",
+       "idx": 20,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 470 (Baricentro Don Cafè))",
+       "idx": 21,
+       "arr": "14.51",
+       "dep": "14.51"
+      },
+      {
+       "stop": "MODICA (Via Modica Ragusa, 20/a)",
+       "idx": 22,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio fronte Scuola Materna (Scardacucco))",
+       "idx": 23,
+       "arr": "15.01",
+       "dep": "15.01"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio Panificio Cicero (Scardacucco))",
+       "idx": 24,
+       "arr": "15.02",
+       "dep": "15.02"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio, 243 (Scardacucco))",
+       "idx": 25,
+       "arr": "15.03",
+       "dep": "15.03"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio, 345 (Scardacucco))",
+       "idx": 26,
+       "arr": "15.04",
+       "dep": "15.04"
+      },
+      {
+       "stop": "MODICA (Via Rag. Orazio Pluchino, 162)",
+       "idx": 27,
+       "arr": "15.08",
+       "dep": "15.08"
+      },
+      {
+       "stop": "MODICA (Via Rag. Orazio Pluchino snc)",
+       "idx": 28,
+       "arr": "15.09",
+       "dep": "15.09"
+      },
+      {
+       "stop": "MODICA (Cimitero Fermata 1)",
+       "idx": 29,
+       "arr": "15.11",
+       "dep": "15.11"
+      },
+      {
+       "stop": "MODICA (Cimitero Fermata 2)",
+       "idx": 30,
+       "arr": "15.11",
+       "dep": "15.11"
+      },
+      {
+       "stop": "MODICA (Via San Benedetto da Norcia fronte 28 (Dente))",
+       "idx": 31,
+       "arr": "15.14",
+       "dep": "15.14"
+      },
+      {
+       "stop": "MODICA (Via San Benedetto da Norcia, 57 (Dente))",
+       "idx": 32,
+       "arr": "15.16",
+       "dep": "15.16"
+      },
+      {
+       "stop": "MODICA (Via Nazario Sauro fronte 1 (Dente))",
+       "idx": 33,
+       "arr": "15.18",
+       "dep": "15.18"
+      },
+      {
+       "stop": "MODICA (Via Nazario Sauro, 22 (Dente))",
+       "idx": 34,
+       "arr": "15.19",
+       "dep": "15.19"
+      },
+      {
+       "stop": "MODICA (Largo XI Febbraio (Dente))",
+       "idx": 35,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "MODICA (Via Nuova Sant'Antonio fronte 114)",
+       "idx": 36,
+       "arr": "15.21",
+       "dep": "15.21"
+      },
+      {
+       "stop": "MODICA (Via Nuova Sant'Antonio, 63)",
+       "idx": 37,
+       "arr": "15.22",
+       "dep": "15.22"
+      },
+      {
+       "stop": "MODICA (Via Nuova Sant'Antonio fronte Via Muriana, 29)",
+       "idx": 38,
+       "arr": "15.23",
+       "dep": "15.23"
+      },
+      {
+       "stop": "MODICA (Via Vittorio Veneto fronte 158)",
+       "idx": 39,
+       "arr": "15.24",
+       "dep": "15.24"
+      },
+      {
+       "stop": "MODICA (Via Vittorio Veneto fronte 106)",
+       "idx": 40,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "MODICA (Via Medaglie d'Oro, 57)",
+       "idx": 41,
+       "arr": "15.26",
+       "dep": "15.26"
+      },
+      {
+       "stop": "MODICA (Piazza Rizzone)",
+       "idx": 42,
+       "arr": "15.27",
+       "dep": "15.27"
+      },
+      {
+       "stop": "MODICA (Via Tirella fronte 119)",
+       "idx": 43,
+       "arr": "15.28",
+       "dep": "15.28"
+      },
+      {
+       "stop": "MODICA (Via Tirella fronte 373)",
+       "idx": 44,
+       "arr": "15.29",
+       "dep": "15.29"
+      },
+      {
+       "stop": "MODICA (Via Tirella, 6)",
+       "idx": 45,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 88)",
+       "idx": 46,
+       "arr": "15.31",
+       "dep": "15.31"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 160)",
+       "idx": 47,
+       "arr": "15.32",
+       "dep": "15.32"
+      },
+      {
+       "stop": "MODICA (Via San Giuliano, 10)",
+       "idx": 48,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "MODICA (Via San Giuliano, 38)",
+       "idx": 49,
+       "arr": "15.36",
+       "dep": "15.36"
+      },
+      {
+       "stop": "MODICA (Via Alcide De Gasperi snc)",
+       "idx": 50,
+       "arr": "15.37",
+       "dep": "15.37"
+      },
+      {
+       "stop": "MODICA (Piazza Libertà, 4)",
+       "idx": 51,
+       "arr": "15.38",
+       "dep": "15.38"
+      },
+      {
+       "stop": "MODICA (Via Sacro Cuore, 36)",
+       "idx": 52,
+       "arr": "15.39",
+       "dep": "15.39"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro, 2)",
+       "idx": 53,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro fronte Ospedale)",
+       "idx": 54,
+       "arr": "15.41",
+       "dep": "15.41"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 42/a (Agos))",
+       "idx": 55,
+       "arr": "15.42",
+       "dep": "15.42"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 68)",
+       "idx": 56,
+       "arr": "15.43",
+       "dep": "15.43"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 216)",
+       "idx": 57,
+       "arr": "15.44",
+       "dep": "15.44"
+      },
+      {
+       "stop": "MODICA (Zona 167)",
+       "idx": 58,
+       "arr": "15.45",
+       "dep": "15.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "001003",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "MOD9001_1",
+     "stops": [
+      {
+       "stop": "MODICA (Zona 167)",
+       "idx": 0,
+       "arr": "11.15",
+       "dep": "11.15"
+      },
+      {
+       "stop": "MODICA (Circonvallazione Ortisiana, 58)",
+       "idx": 1,
+       "arr": "11.18",
+       "dep": "11.18"
+      },
+      {
+       "stop": "MODICA (Circonvallazione Ortisiana, 194)",
+       "idx": 2,
+       "arr": "11.21",
+       "dep": "11.21"
+      },
+      {
+       "stop": "MODICA (Circonvallazione Ortisiana, 218)",
+       "idx": 3,
+       "arr": "11.22",
+       "dep": "11.22"
+      },
+      {
+       "stop": "MODICA (SS 115 Veneta Cucine)",
+       "idx": 4,
+       "arr": "11.27",
+       "dep": "11.27"
+      },
+      {
+       "stop": "MODICA (Via Sacro Cuore, 167)",
+       "idx": 5,
+       "arr": "11.28",
+       "dep": "11.28"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro, 2)",
+       "idx": 6,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro fronte Ospedale)",
+       "idx": 7,
+       "arr": "11.31",
+       "dep": "11.31"
+      },
+      {
+       "stop": "MODICA (Via Risorgimento, 8)",
+       "idx": 8,
+       "arr": "11.32",
+       "dep": "11.32"
+      },
+      {
+       "stop": "MODICA (Via S. Giuliano fronte 62)",
+       "idx": 9,
+       "arr": "11.35",
+       "dep": "11.35"
+      },
+      {
+       "stop": "MODICA (Via S. Giuliano, 61)",
+       "idx": 10,
+       "arr": "11.36",
+       "dep": "11.36"
+      },
+      {
+       "stop": "MODICA (Via S. Giuliano, 33)",
+       "idx": 11,
+       "arr": "11.37",
+       "dep": "11.37"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 169)",
+       "idx": 12,
+       "arr": "11.41",
+       "dep": "11.41"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda fronte 88)",
+       "idx": 13,
+       "arr": "11.42",
+       "dep": "11.42"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 19)",
+       "idx": 14,
+       "arr": "11.43",
+       "dep": "11.43"
+      },
+      {
+       "stop": "MODICA (Via Tirella, 373)",
+       "idx": 15,
+       "arr": "11.44",
+       "dep": "11.44"
+      },
+      {
+       "stop": "MODICA (Via Tirella, 119)",
+       "idx": 16,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 8)",
+       "idx": 17,
+       "arr": "11.46",
+       "dep": "11.46"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 90)",
+       "idx": 18,
+       "arr": "11.48",
+       "dep": "11.48"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 164)",
+       "idx": 19,
+       "arr": "11.49",
+       "dep": "11.49"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 298 (Largo 8 Marzo))",
+       "idx": 20,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 470 (Baricentro Don Cafè))",
+       "idx": 21,
+       "arr": "11.51",
+       "dep": "11.51"
+      },
+      {
+       "stop": "MODICA (Via Modica Ragusa, 20/a)",
+       "idx": 22,
+       "arr": "11.55",
+       "dep": "11.55"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio fronte Scuola Materna (Scardacucco))",
+       "idx": 23,
+       "arr": "12.01",
+       "dep": "12.01"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio Panificio Cicero (Scardacucco))",
+       "idx": 24,
+       "arr": "12.02",
+       "dep": "12.02"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio, 243 (Scardacucco))",
+       "idx": 25,
+       "arr": "12.03",
+       "dep": "12.03"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio, 345 (Scardacucco))",
+       "idx": 26,
+       "arr": "12.04",
+       "dep": "12.04"
+      },
+      {
+       "stop": "MODICA (Via Rag. Orazio Pluchino, 162)",
+       "idx": 27,
+       "arr": "12.08",
+       "dep": "12.08"
+      },
+      {
+       "stop": "MODICA (Via Rag. Orazio Pluchino snc)",
+       "idx": 28,
+       "arr": "12.09",
+       "dep": "12.09"
+      },
+      {
+       "stop": "MODICA (Cimitero Fermata 1)",
+       "idx": 29,
+       "arr": "12.11",
+       "dep": "12.11"
+      },
+      {
+       "stop": "MODICA (Cimitero Fermata 2)",
+       "idx": 30,
+       "arr": "12.11",
+       "dep": "12.11"
+      },
+      {
+       "stop": "MODICA (Via San Benedetto da Norcia fronte 28 (Dente))",
+       "idx": 31,
+       "arr": "12.14",
+       "dep": "12.14"
+      },
+      {
+       "stop": "MODICA (Via San Benedetto da Norcia, 57 (Dente))",
+       "idx": 32,
+       "arr": "12.16",
+       "dep": "12.16"
+      },
+      {
+       "stop": "MODICA (Via Nazario Sauro fronte 1 (Dente))",
+       "idx": 33,
+       "arr": "12.18",
+       "dep": "12.18"
+      },
+      {
+       "stop": "MODICA (Via Nazario Sauro, 22 (Dente))",
+       "idx": 34,
+       "arr": "12.19",
+       "dep": "12.19"
+      },
+      {
+       "stop": "MODICA (Largo XI Febbraio (Dente))",
+       "idx": 35,
+       "arr": "12.20",
+       "dep": "12.20"
+      },
+      {
+       "stop": "MODICA (Via Nuova Sant'Antonio fronte 114)",
+       "idx": 36,
+       "arr": "12.21",
+       "dep": "12.21"
+      },
+      {
+       "stop": "MODICA (Via Nuova Sant'Antonio, 63)",
+       "idx": 37,
+       "arr": "12.22",
+       "dep": "12.22"
+      },
+      {
+       "stop": "MODICA (Via Nuova Sant'Antonio fronte Via Muriana, 29)",
+       "idx": 38,
+       "arr": "12.23",
+       "dep": "12.23"
+      },
+      {
+       "stop": "MODICA (Via Vittorio Veneto fronte 158)",
+       "idx": 39,
+       "arr": "12.24",
+       "dep": "12.24"
+      },
+      {
+       "stop": "MODICA (Via Vittorio Veneto fronte 106)",
+       "idx": 40,
+       "arr": "12.25",
+       "dep": "12.25"
+      },
+      {
+       "stop": "MODICA (Via Medaglie d'Oro, 57)",
+       "idx": 41,
+       "arr": "12.26",
+       "dep": "12.26"
+      },
+      {
+       "stop": "MODICA (Piazza Rizzone)",
+       "idx": 42,
+       "arr": "12.27",
+       "dep": "12.27"
+      },
+      {
+       "stop": "MODICA (Via Tirella fronte 119)",
+       "idx": 43,
+       "arr": "12.28",
+       "dep": "12.28"
+      },
+      {
+       "stop": "MODICA (Via Tirella fronte 373)",
+       "idx": 44,
+       "arr": "12.29",
+       "dep": "12.29"
+      },
+      {
+       "stop": "MODICA (Via Tirella, 6)",
+       "idx": 45,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 88)",
+       "idx": 46,
+       "arr": "12.31",
+       "dep": "12.31"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 160)",
+       "idx": 47,
+       "arr": "12.32",
+       "dep": "12.32"
+      },
+      {
+       "stop": "MODICA (Via San Giuliano, 10)",
+       "idx": 48,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "MODICA (Via San Giuliano, 38)",
+       "idx": 49,
+       "arr": "12.36",
+       "dep": "12.36"
+      },
+      {
+       "stop": "MODICA (Via Alcide De Gasperi snc)",
+       "idx": 50,
+       "arr": "12.37",
+       "dep": "12.37"
+      },
+      {
+       "stop": "MODICA (Piazza Libertà, 4)",
+       "idx": 51,
+       "arr": "12.38",
+       "dep": "12.38"
+      },
+      {
+       "stop": "MODICA (Via Sacro Cuore, 36)",
+       "idx": 52,
+       "arr": "12.39",
+       "dep": "12.39"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro, 2)",
+       "idx": 53,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro fronte Ospedale)",
+       "idx": 54,
+       "arr": "12.41",
+       "dep": "12.41"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 42/a (Agos))",
+       "idx": 55,
+       "arr": "12.42",
+       "dep": "12.42"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 68)",
+       "idx": 56,
+       "arr": "12.43",
+       "dep": "12.43"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 216)",
+       "idx": 57,
+       "arr": "12.44",
+       "dep": "12.44"
+      },
+      {
+       "stop": "MODICA (Zona 167)",
+       "idx": 58,
+       "arr": "12.45",
+       "dep": "12.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "001006",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "MOD9001_1",
+     "stops": [
+      {
+       "stop": "MODICA (Zona 167)",
+       "idx": 0,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "MODICA (Circonvallazione Ortisiana, 58)",
+       "idx": 1,
+       "arr": "16.03",
+       "dep": "16.03"
+      },
+      {
+       "stop": "MODICA (Circonvallazione Ortisiana, 194)",
+       "idx": 2,
+       "arr": "16.06",
+       "dep": "16.06"
+      },
+      {
+       "stop": "MODICA (Circonvallazione Ortisiana, 218)",
+       "idx": 3,
+       "arr": "16.07",
+       "dep": "16.07"
+      },
+      {
+       "stop": "MODICA (SS 115 Veneta Cucine)",
+       "idx": 4,
+       "arr": "16.12",
+       "dep": "16.12"
+      },
+      {
+       "stop": "MODICA (Via Sacro Cuore, 167)",
+       "idx": 5,
+       "arr": "16.13",
+       "dep": "16.13"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro, 2)",
+       "idx": 6,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro fronte Ospedale)",
+       "idx": 7,
+       "arr": "16.16",
+       "dep": "16.16"
+      },
+      {
+       "stop": "MODICA (Via Risorgimento, 8)",
+       "idx": 8,
+       "arr": "16.17",
+       "dep": "16.17"
+      },
+      {
+       "stop": "MODICA (Via S. Giuliano fronte 62)",
+       "idx": 9,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "MODICA (Via S. Giuliano, 61)",
+       "idx": 10,
+       "arr": "16.21",
+       "dep": "16.21"
+      },
+      {
+       "stop": "MODICA (Via S. Giuliano, 33)",
+       "idx": 11,
+       "arr": "16.22",
+       "dep": "16.22"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 169)",
+       "idx": 12,
+       "arr": "16.26",
+       "dep": "16.26"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda fronte 88)",
+       "idx": 13,
+       "arr": "16.27",
+       "dep": "16.27"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 19)",
+       "idx": 14,
+       "arr": "16.28",
+       "dep": "16.28"
+      },
+      {
+       "stop": "MODICA (Via Tirella, 373)",
+       "idx": 15,
+       "arr": "16.29",
+       "dep": "16.29"
+      },
+      {
+       "stop": "MODICA (Via Tirella, 119)",
+       "idx": 16,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 8)",
+       "idx": 17,
+       "arr": "16.31",
+       "dep": "16.31"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 90)",
+       "idx": 18,
+       "arr": "16.33",
+       "dep": "16.33"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 164)",
+       "idx": 19,
+       "arr": "16.34",
+       "dep": "16.34"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 298 (Largo 8 Marzo))",
+       "idx": 20,
+       "arr": "16.35",
+       "dep": "16.35"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 470 (Baricentro Don Cafè))",
+       "idx": 21,
+       "arr": "16.36",
+       "dep": "16.36"
+      },
+      {
+       "stop": "MODICA (Via Modica Ragusa, 20/a)",
+       "idx": 22,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio fronte Scuola Materna (Scardacucco))",
+       "idx": 23,
+       "arr": "16.46",
+       "dep": "16.46"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio Panificio Cicero (Scardacucco))",
+       "idx": 24,
+       "arr": "16.47",
+       "dep": "16.47"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio, 243 (Scardacucco))",
+       "idx": 25,
+       "arr": "16.48",
+       "dep": "16.48"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio, 345 (Scardacucco))",
+       "idx": 26,
+       "arr": "16.49",
+       "dep": "16.49"
+      },
+      {
+       "stop": "MODICA (Via Rag. Orazio Pluchino, 162)",
+       "idx": 27,
+       "arr": "16.53",
+       "dep": "16.53"
+      },
+      {
+       "stop": "MODICA (Via Rag. Orazio Pluchino snc)",
+       "idx": 28,
+       "arr": "16.54",
+       "dep": "16.54"
+      },
+      {
+       "stop": "MODICA (Cimitero Fermata 1)",
+       "idx": 29,
+       "arr": "16.56",
+       "dep": "16.56"
+      },
+      {
+       "stop": "MODICA (Cimitero Fermata 2)",
+       "idx": 30,
+       "arr": "16.56",
+       "dep": "16.56"
+      },
+      {
+       "stop": "MODICA (Via San Benedetto da Norcia fronte 28 (Dente))",
+       "idx": 31,
+       "arr": "16.59",
+       "dep": "16.59"
+      },
+      {
+       "stop": "MODICA (Via San Benedetto da Norcia, 57 (Dente))",
+       "idx": 32,
+       "arr": "17.01",
+       "dep": "17.01"
+      },
+      {
+       "stop": "MODICA (Via Nazario Sauro fronte 1 (Dente))",
+       "idx": 33,
+       "arr": "17.03",
+       "dep": "17.03"
+      },
+      {
+       "stop": "MODICA (Via Nazario Sauro, 22 (Dente))",
+       "idx": 34,
+       "arr": "17.04",
+       "dep": "17.04"
+      },
+      {
+       "stop": "MODICA (Largo XI Febbraio (Dente))",
+       "idx": 35,
+       "arr": "17.05",
+       "dep": "17.05"
+      },
+      {
+       "stop": "MODICA (Via Nuova Sant'Antonio fronte 114)",
+       "idx": 36,
+       "arr": "17.06",
+       "dep": "17.06"
+      },
+      {
+       "stop": "MODICA (Via Nuova Sant'Antonio, 63)",
+       "idx": 37,
+       "arr": "17.07",
+       "dep": "17.07"
+      },
+      {
+       "stop": "MODICA (Via Nuova Sant'Antonio fronte Via Muriana, 29)",
+       "idx": 38,
+       "arr": "17.08",
+       "dep": "17.08"
+      },
+      {
+       "stop": "MODICA (Via Vittorio Veneto fronte 158)",
+       "idx": 39,
+       "arr": "17.09",
+       "dep": "17.09"
+      },
+      {
+       "stop": "MODICA (Via Vittorio Veneto fronte 106)",
+       "idx": 40,
+       "arr": "17.10",
+       "dep": "17.10"
+      },
+      {
+       "stop": "MODICA (Via Medaglie d'Oro, 57)",
+       "idx": 41,
+       "arr": "17.11",
+       "dep": "17.11"
+      },
+      {
+       "stop": "MODICA (Piazza Rizzone)",
+       "idx": 42,
+       "arr": "17.12",
+       "dep": "17.12"
+      },
+      {
+       "stop": "MODICA (Via Tirella fronte 119)",
+       "idx": 43,
+       "arr": "17.13",
+       "dep": "17.13"
+      },
+      {
+       "stop": "MODICA (Via Tirella fronte 373)",
+       "idx": 44,
+       "arr": "17.14",
+       "dep": "17.14"
+      },
+      {
+       "stop": "MODICA (Via Tirella, 6)",
+       "idx": 45,
+       "arr": "17.15",
+       "dep": "17.15"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 88)",
+       "idx": 46,
+       "arr": "17.16",
+       "dep": "17.16"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 160)",
+       "idx": 47,
+       "arr": "17.17",
+       "dep": "17.17"
+      },
+      {
+       "stop": "MODICA (Via San Giuliano, 10)",
+       "idx": 48,
+       "arr": "17.20",
+       "dep": "17.20"
+      },
+      {
+       "stop": "MODICA (Via San Giuliano, 38)",
+       "idx": 49,
+       "arr": "17.21",
+       "dep": "17.21"
+      },
+      {
+       "stop": "MODICA (Via Alcide De Gasperi snc)",
+       "idx": 50,
+       "arr": "17.22",
+       "dep": "17.22"
+      },
+      {
+       "stop": "MODICA (Piazza Libertà, 4)",
+       "idx": 51,
+       "arr": "17.23",
+       "dep": "17.23"
+      },
+      {
+       "stop": "MODICA (Via Sacro Cuore, 36)",
+       "idx": 52,
+       "arr": "17.24",
+       "dep": "17.24"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro, 2)",
+       "idx": 53,
+       "arr": "17.25",
+       "dep": "17.25"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro fronte Ospedale)",
+       "idx": 54,
+       "arr": "17.26",
+       "dep": "17.26"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 42/a (Agos))",
+       "idx": 55,
+       "arr": "17.27",
+       "dep": "17.27"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 68)",
+       "idx": 56,
+       "arr": "17.28",
+       "dep": "17.28"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 216)",
+       "idx": 57,
+       "arr": "17.29",
+       "dep": "17.29"
+      },
+      {
+       "stop": "MODICA (Zona 167)",
+       "idx": 58,
+       "arr": "17.30",
+       "dep": "17.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "001010",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "MOD9001_1",
+     "stops": [
+      {
+       "stop": "MODICA (Zona 167)",
+       "idx": 0,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "MODICA (Circonvallazione Ortisiana, 58)",
+       "idx": 1,
+       "arr": "8.48",
+       "dep": "8.48"
+      },
+      {
+       "stop": "MODICA (Circonvallazione Ortisiana, 194)",
+       "idx": 2,
+       "arr": "8.51",
+       "dep": "8.51"
+      },
+      {
+       "stop": "MODICA (Circonvallazione Ortisiana, 218)",
+       "idx": 3,
+       "arr": "8.52",
+       "dep": "8.52"
+      },
+      {
+       "stop": "MODICA (SS 115 Veneta Cucine)",
+       "idx": 4,
+       "arr": "8.57",
+       "dep": "8.57"
+      },
+      {
+       "stop": "MODICA (Via Sacro Cuore, 167)",
+       "idx": 5,
+       "arr": "8.58",
+       "dep": "8.58"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro, 2)",
+       "idx": 6,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro fronte Ospedale)",
+       "idx": 7,
+       "arr": "9.01",
+       "dep": "9.01"
+      },
+      {
+       "stop": "MODICA (Via Risorgimento, 8)",
+       "idx": 8,
+       "arr": "9.02",
+       "dep": "9.02"
+      },
+      {
+       "stop": "MODICA (Via S. Giuliano fronte 62)",
+       "idx": 9,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "MODICA (Via S. Giuliano, 61)",
+       "idx": 10,
+       "arr": "9.06",
+       "dep": "9.06"
+      },
+      {
+       "stop": "MODICA (Via S. Giuliano, 33)",
+       "idx": 11,
+       "arr": "9.07",
+       "dep": "9.07"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 169)",
+       "idx": 12,
+       "arr": "9.11",
+       "dep": "9.11"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda fronte 88)",
+       "idx": 13,
+       "arr": "9.12",
+       "dep": "9.12"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 19)",
+       "idx": 14,
+       "arr": "9.13",
+       "dep": "9.13"
+      },
+      {
+       "stop": "MODICA (Via Tirella, 373)",
+       "idx": 15,
+       "arr": "9.14",
+       "dep": "9.14"
+      },
+      {
+       "stop": "MODICA (Via Tirella, 119)",
+       "idx": 16,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 8)",
+       "idx": 17,
+       "arr": "9.16",
+       "dep": "9.16"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 90)",
+       "idx": 18,
+       "arr": "9.18",
+       "dep": "9.18"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 164)",
+       "idx": 19,
+       "arr": "9.19",
+       "dep": "9.19"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 298 (Largo 8 Marzo))",
+       "idx": 20,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 470 (Baricentro Don Cafè))",
+       "idx": 21,
+       "arr": "9.21",
+       "dep": "9.21"
+      },
+      {
+       "stop": "MODICA (Via Modica Ragusa, 20/a)",
+       "idx": 22,
+       "arr": "9.25",
+       "dep": "9.25"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio fronte Scuola Materna (Scardacucco))",
+       "idx": 23,
+       "arr": "9.31",
+       "dep": "9.31"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio Panificio Cicero (Scardacucco))",
+       "idx": 24,
+       "arr": "9.32",
+       "dep": "9.32"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio, 243 (Scardacucco))",
+       "idx": 25,
+       "arr": "9.33",
+       "dep": "9.33"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio, 345 (Scardacucco))",
+       "idx": 26,
+       "arr": "9.34",
+       "dep": "9.34"
+      },
+      {
+       "stop": "MODICA (Via Rag. Orazio Pluchino, 162)",
+       "idx": 27,
+       "arr": "9.38",
+       "dep": "9.38"
+      },
+      {
+       "stop": "MODICA (Via Rag. Orazio Pluchino snc)",
+       "idx": 28,
+       "arr": "9.39",
+       "dep": "9.39"
+      },
+      {
+       "stop": "MODICA (Cimitero Fermata 1)",
+       "idx": 29,
+       "arr": "9.41",
+       "dep": "9.41"
+      },
+      {
+       "stop": "MODICA (Cimitero Fermata 2)",
+       "idx": 30,
+       "arr": "9.41",
+       "dep": "9.41"
+      },
+      {
+       "stop": "MODICA (Via San Benedetto da Norcia fronte 28 (Dente))",
+       "idx": 31,
+       "arr": "9.44",
+       "dep": "9.44"
+      },
+      {
+       "stop": "MODICA (Via San Benedetto da Norcia, 57 (Dente))",
+       "idx": 32,
+       "arr": "9.46",
+       "dep": "9.46"
+      },
+      {
+       "stop": "MODICA (Via Nazario Sauro fronte 1 (Dente))",
+       "idx": 33,
+       "arr": "9.48",
+       "dep": "9.48"
+      },
+      {
+       "stop": "MODICA (Via Nazario Sauro, 22 (Dente))",
+       "idx": 34,
+       "arr": "9.49",
+       "dep": "9.49"
+      },
+      {
+       "stop": "MODICA (Largo XI Febbraio (Dente))",
+       "idx": 35,
+       "arr": "9.50",
+       "dep": "9.50"
+      },
+      {
+       "stop": "MODICA (Via Nuova Sant'Antonio fronte 114)",
+       "idx": 36,
+       "arr": "9.51",
+       "dep": "9.51"
+      },
+      {
+       "stop": "MODICA (Via Nuova Sant'Antonio, 63)",
+       "idx": 37,
+       "arr": "9.52",
+       "dep": "9.52"
+      },
+      {
+       "stop": "MODICA (Via Nuova Sant'Antonio fronte Via Muriana, 29)",
+       "idx": 38,
+       "arr": "9.53",
+       "dep": "9.53"
+      },
+      {
+       "stop": "MODICA (Via Vittorio Veneto fronte 158)",
+       "idx": 39,
+       "arr": "9.54",
+       "dep": "9.54"
+      },
+      {
+       "stop": "MODICA (Via Vittorio Veneto fronte 106)",
+       "idx": 40,
+       "arr": "9.55",
+       "dep": "9.55"
+      },
+      {
+       "stop": "MODICA (Via Medaglie d'Oro, 57)",
+       "idx": 41,
+       "arr": "9.56",
+       "dep": "9.56"
+      },
+      {
+       "stop": "MODICA (Piazza Rizzone)",
+       "idx": 42,
+       "arr": "9.57",
+       "dep": "9.57"
+      },
+      {
+       "stop": "MODICA (Via Tirella fronte 119)",
+       "idx": 43,
+       "arr": "9.58",
+       "dep": "9.58"
+      },
+      {
+       "stop": "MODICA (Via Tirella fronte 373)",
+       "idx": 44,
+       "arr": "9.59",
+       "dep": "9.59"
+      },
+      {
+       "stop": "MODICA (Via Tirella, 6)",
+       "idx": 45,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 88)",
+       "idx": 46,
+       "arr": "10.01",
+       "dep": "10.01"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 160)",
+       "idx": 47,
+       "arr": "10.02",
+       "dep": "10.02"
+      },
+      {
+       "stop": "MODICA (Via San Giuliano, 10)",
+       "idx": 48,
+       "arr": "10.05",
+       "dep": "10.05"
+      },
+      {
+       "stop": "MODICA (Via San Giuliano, 38)",
+       "idx": 49,
+       "arr": "10.06",
+       "dep": "10.06"
+      },
+      {
+       "stop": "MODICA (Via Alcide De Gasperi snc)",
+       "idx": 50,
+       "arr": "10.07",
+       "dep": "10.07"
+      },
+      {
+       "stop": "MODICA (Piazza Libertà, 4)",
+       "idx": 51,
+       "arr": "10.08",
+       "dep": "10.08"
+      },
+      {
+       "stop": "MODICA (Via Sacro Cuore, 36)",
+       "idx": 52,
+       "arr": "10.09",
+       "dep": "10.09"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro, 2)",
+       "idx": 53,
+       "arr": "10.10",
+       "dep": "10.10"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro fronte Ospedale)",
+       "idx": 54,
+       "arr": "10.11",
+       "dep": "10.11"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 42/a (Agos))",
+       "idx": 55,
+       "arr": "10.12",
+       "dep": "10.12"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 68)",
+       "idx": 56,
+       "arr": "10.13",
+       "dep": "10.13"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 216)",
+       "idx": 57,
+       "arr": "10.14",
+       "dep": "10.14"
+      },
+      {
+       "stop": "MODICA (Zona 167)",
+       "idx": 58,
+       "arr": "10.15",
+       "dep": "10.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "001004",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "MOD9001_1",
+     "stops": [
+      {
+       "stop": "MODICA (Zona 167)",
+       "idx": 0,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "MODICA (Circonvallazione Ortisiana, 58)",
+       "idx": 1,
+       "arr": "12.48",
+       "dep": "12.48"
+      },
+      {
+       "stop": "MODICA (Circonvallazione Ortisiana, 194)",
+       "idx": 2,
+       "arr": "12.51",
+       "dep": "12.51"
+      },
+      {
+       "stop": "MODICA (Circonvallazione Ortisiana, 218)",
+       "idx": 3,
+       "arr": "12.52",
+       "dep": "12.52"
+      },
+      {
+       "stop": "MODICA (SS 115 Veneta Cucine)",
+       "idx": 4,
+       "arr": "12.57",
+       "dep": "12.57"
+      },
+      {
+       "stop": "MODICA (Via Sacro Cuore, 167)",
+       "idx": 5,
+       "arr": "12.58",
+       "dep": "12.58"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro, 2)",
+       "idx": 6,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro fronte Ospedale)",
+       "idx": 7,
+       "arr": "13.01",
+       "dep": "13.01"
+      },
+      {
+       "stop": "MODICA (Via Risorgimento, 8)",
+       "idx": 8,
+       "arr": "13.02",
+       "dep": "13.02"
+      },
+      {
+       "stop": "MODICA (Via S. Giuliano fronte 62)",
+       "idx": 9,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "MODICA (Via S. Giuliano, 61)",
+       "idx": 10,
+       "arr": "13.06",
+       "dep": "13.06"
+      },
+      {
+       "stop": "MODICA (Via S. Giuliano, 33)",
+       "idx": 11,
+       "arr": "13.07",
+       "dep": "13.07"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 169)",
+       "idx": 12,
+       "arr": "13.11",
+       "dep": "13.11"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda fronte 88)",
+       "idx": 13,
+       "arr": "13.12",
+       "dep": "13.12"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 19)",
+       "idx": 14,
+       "arr": "13.13",
+       "dep": "13.13"
+      },
+      {
+       "stop": "MODICA (Via Tirella, 373)",
+       "idx": 15,
+       "arr": "13.14",
+       "dep": "13.14"
+      },
+      {
+       "stop": "MODICA (Via Tirella, 119)",
+       "idx": 16,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 8)",
+       "idx": 17,
+       "arr": "13.16",
+       "dep": "13.16"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 90)",
+       "idx": 18,
+       "arr": "13.18",
+       "dep": "13.18"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 164)",
+       "idx": 19,
+       "arr": "13.19",
+       "dep": "13.19"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 298 (Largo 8 Marzo))",
+       "idx": 20,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 470 (Baricentro Don Cafè))",
+       "idx": 21,
+       "arr": "13.21",
+       "dep": "13.21"
+      },
+      {
+       "stop": "MODICA (Via Modica Ragusa, 20/a)",
+       "idx": 22,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio fronte Scuola Materna (Scardacucco))",
+       "idx": 23,
+       "arr": "13.31",
+       "dep": "13.31"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio Panificio Cicero (Scardacucco))",
+       "idx": 24,
+       "arr": "13.32",
+       "dep": "13.32"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio, 243 (Scardacucco))",
+       "idx": 25,
+       "arr": "13.33",
+       "dep": "13.33"
+      },
+      {
+       "stop": "MODICA (Via S. Antonio, 345 (Scardacucco))",
+       "idx": 26,
+       "arr": "13.34",
+       "dep": "13.34"
+      },
+      {
+       "stop": "MODICA (Via Rag. Orazio Pluchino, 162)",
+       "idx": 27,
+       "arr": "13.38",
+       "dep": "13.38"
+      },
+      {
+       "stop": "MODICA (Via Rag. Orazio Pluchino snc)",
+       "idx": 28,
+       "arr": "13.39",
+       "dep": "13.39"
+      },
+      {
+       "stop": "MODICA (Cimitero Fermata 1)",
+       "idx": 29,
+       "arr": "13.41",
+       "dep": "13.41"
+      },
+      {
+       "stop": "MODICA (Cimitero Fermata 2)",
+       "idx": 30,
+       "arr": "13.41",
+       "dep": "13.41"
+      },
+      {
+       "stop": "MODICA (Via San Benedetto da Norcia fronte 28 (Dente))",
+       "idx": 31,
+       "arr": "13.44",
+       "dep": "13.44"
+      },
+      {
+       "stop": "MODICA (Via San Benedetto da Norcia, 57 (Dente))",
+       "idx": 32,
+       "arr": "13.46",
+       "dep": "13.46"
+      },
+      {
+       "stop": "MODICA (Via Nazario Sauro fronte 1 (Dente))",
+       "idx": 33,
+       "arr": "13.48",
+       "dep": "13.48"
+      },
+      {
+       "stop": "MODICA (Via Nazario Sauro, 22 (Dente))",
+       "idx": 34,
+       "arr": "13.49",
+       "dep": "13.49"
+      },
+      {
+       "stop": "MODICA (Largo XI Febbraio (Dente))",
+       "idx": 35,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "MODICA (Via Nuova Sant'Antonio fronte 114)",
+       "idx": 36,
+       "arr": "13.51",
+       "dep": "13.51"
+      },
+      {
+       "stop": "MODICA (Via Nuova Sant'Antonio, 63)",
+       "idx": 37,
+       "arr": "13.52",
+       "dep": "13.52"
+      },
+      {
+       "stop": "MODICA (Via Nuova Sant'Antonio fronte Via Muriana, 29)",
+       "idx": 38,
+       "arr": "13.53",
+       "dep": "13.53"
+      },
+      {
+       "stop": "MODICA (Via Vittorio Veneto fronte 158)",
+       "idx": 39,
+       "arr": "13.54",
+       "dep": "13.54"
+      },
+      {
+       "stop": "MODICA (Via Vittorio Veneto fronte 106)",
+       "idx": 40,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "MODICA (Via Medaglie d'Oro, 57)",
+       "idx": 41,
+       "arr": "13.56",
+       "dep": "13.56"
+      },
+      {
+       "stop": "MODICA (Piazza Rizzone)",
+       "idx": 42,
+       "arr": "13.57",
+       "dep": "13.57"
+      },
+      {
+       "stop": "MODICA (Via Tirella fronte 119)",
+       "idx": 43,
+       "arr": "13.58",
+       "dep": "13.58"
+      },
+      {
+       "stop": "MODICA (Via Tirella fronte 373)",
+       "idx": 44,
+       "arr": "13.59",
+       "dep": "13.59"
+      },
+      {
+       "stop": "MODICA (Via Tirella, 6)",
+       "idx": 45,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 88)",
+       "idx": 46,
+       "arr": "14.01",
+       "dep": "14.01"
+      },
+      {
+       "stop": "MODICA (Via Modica Sorda, 160)",
+       "idx": 47,
+       "arr": "14.02",
+       "dep": "14.02"
+      },
+      {
+       "stop": "MODICA (Via San Giuliano, 10)",
+       "idx": 48,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "MODICA (Via San Giuliano, 38)",
+       "idx": 49,
+       "arr": "14.06",
+       "dep": "14.06"
+      },
+      {
+       "stop": "MODICA (Via Alcide De Gasperi snc)",
+       "idx": 50,
+       "arr": "14.07",
+       "dep": "14.07"
+      },
+      {
+       "stop": "MODICA (Piazza Libertà, 4)",
+       "idx": 51,
+       "arr": "14.08",
+       "dep": "14.08"
+      },
+      {
+       "stop": "MODICA (Via Sacro Cuore, 36)",
+       "idx": 52,
+       "arr": "14.09",
+       "dep": "14.09"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro, 2)",
+       "idx": 53,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "MODICA (Via Aldo Moro fronte Ospedale)",
+       "idx": 54,
+       "arr": "14.11",
+       "dep": "14.11"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 42/a (Agos))",
+       "idx": 55,
+       "arr": "14.12",
+       "dep": "14.12"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 68)",
+       "idx": 56,
+       "arr": "14.13",
+       "dep": "14.13"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 216)",
+       "idx": 57,
+       "arr": "14.14",
+       "dep": "14.14"
+      },
+      {
+       "stop": "MODICA (Zona 167)",
+       "idx": 58,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

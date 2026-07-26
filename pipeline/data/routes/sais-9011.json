@@ -1,0 +1,2515 @@
+{
+ "operator": "SAIS Autolinee",
+ "route_id": "sais-9011",
+ "name": "11 Terminal bus P.le Borsellino - Marina di Modica - Maganuco",
+ "short_name": "9011",
+ "coords": "external",
+ "source": "api.saisautolinee.it line 6120bac5-745b-4adf-9b2c-c98ac1b1db97",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "MODICA (Piazza Borsellino)",
+    "MODICA (Corso Umberto, 121)",
+    "MODICA (Piazza Rizzone)",
+    "MODICA (Via Nazionale fronte 63)",
+    "MODICA (Piazza Libertà, 4)",
+    "MODICA (Via Resistenza Partigiana, 22 (Ospedale))",
+    "MODICA (Corso Sandro Pertini fronte Hotel Torre del Sud)",
+    "MODICA (Corso Sandro Pertini Treppieni Nord)",
+    "MODICA (Zona 167 fronte Boutique Modica Hotel)",
+    "MODICA (Via Sorda Sampieri, 3 (Galleria Solaria))",
+    "MODICA (Zappulla fermata 2)",
+    "MODICA (Zappulla fermata 1)",
+    "MODICA (Via dei Navigatori, 63)",
+    "MODICA (Via dei Navigatori, 101 (Chiesa))",
+    "MODICA (Via Genova (Maganuco))",
+    "MODICA (SP 66 Maganuco HTL Cabrera)",
+    "MODICA (Via Sorda Sampieri fronte 3 (fronte Galleria Solari)",
+    "MODICA (Zona 167)",
+    "MODICA (Corso Sandro Pertini fronte Treppiedi Nord)",
+    "MODICA (Corso Sandro Pertini Hotel Torre del Sud)",
+    "MODICA (Via Indipendenza, 1/j)",
+    "MODICA (Via Risorgimento, 2)",
+    "MODICA (Via Alcide De Gasperi snc)",
+    "MODICA (Via Nazionale, 63)",
+    "MODICA (Corso Umberto, 8)",
+    "MODICA (Corso Umberto, 90)",
+    "MODICA (Corso Umberto, 164)",
+    "MODICA (Corso Umberto, 298 (Largo 8 Marzo))"
+   ],
+   "trips": [
+    {
+     "corsa": "011039",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "MOD9011_5",
+     "stops": [
+      {
+       "stop": "MODICA (Piazza Borsellino)",
+       "idx": 0,
+       "arr": "26.10",
+       "dep": "26.10"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 121)",
+       "idx": 1,
+       "arr": "26.12",
+       "dep": "26.12"
+      },
+      {
+       "stop": "MODICA (Piazza Rizzone)",
+       "idx": 2,
+       "arr": "26.14",
+       "dep": "26.14"
+      },
+      {
+       "stop": "MODICA (Via Nazionale fronte 63)",
+       "idx": 3,
+       "arr": "26.18",
+       "dep": "26.18"
+      },
+      {
+       "stop": "MODICA (Piazza Libertà, 4)",
+       "idx": 4,
+       "arr": "26.20",
+       "dep": "26.20"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 22 (Ospedale))",
+       "idx": 5,
+       "arr": "26.22",
+       "dep": "26.22"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini fronte Hotel Torre del Sud)",
+       "idx": 6,
+       "arr": "26.24",
+       "dep": "26.24"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini Treppieni Nord)",
+       "idx": 7,
+       "arr": "26.25",
+       "dep": "26.25"
+      },
+      {
+       "stop": "MODICA (Zona 167 fronte Boutique Modica Hotel)",
+       "idx": 8,
+       "arr": "26.26",
+       "dep": "26.26"
+      },
+      {
+       "stop": "MODICA (Via Sorda Sampieri, 3 (Galleria Solaria))",
+       "idx": 9,
+       "arr": "26.27",
+       "dep": "26.27"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 2)",
+       "idx": 10,
+       "arr": "26.37",
+       "dep": "26.37"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 1)",
+       "idx": 11,
+       "arr": "26.39",
+       "dep": "26.39"
+      },
+      {
+       "stop": "MODICA (Via dei Navigatori, 63)",
+       "idx": 12,
+       "arr": "26.52",
+       "dep": "26.52"
+      },
+      {
+       "stop": "MODICA (Via dei Navigatori, 101 (Chiesa))",
+       "idx": 13,
+       "arr": "26.55",
+       "dep": "26.55"
+      },
+      {
+       "stop": "MODICA (Via Genova (Maganuco))",
+       "idx": 14,
+       "arr": "26.59",
+       "dep": "26.59"
+      },
+      {
+       "stop": "MODICA (SP 66 Maganuco HTL Cabrera)",
+       "idx": 15,
+       "arr": "27.01",
+       "dep": "27.01"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 1)",
+       "idx": 16,
+       "arr": "27.17",
+       "dep": "27.17"
+      },
+      {
+       "stop": "MODICA (Via Sorda Sampieri fronte 3 (fronte Galleria Solari)",
+       "idx": 17,
+       "arr": "27.29",
+       "dep": "27.29"
+      },
+      {
+       "stop": "MODICA (Zona 167)",
+       "idx": 18,
+       "arr": "27.30",
+       "dep": "27.30"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini fronte Treppiedi Nord)",
+       "idx": 19,
+       "arr": "27.31",
+       "dep": "27.31"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini Hotel Torre del Sud)",
+       "idx": 20,
+       "arr": "27.33",
+       "dep": "27.33"
+      },
+      {
+       "stop": "MODICA (Via Indipendenza, 1/j)",
+       "idx": 21,
+       "arr": "27.35",
+       "dep": "27.35"
+      },
+      {
+       "stop": "MODICA (Via Risorgimento, 2)",
+       "idx": 22,
+       "arr": "27.36",
+       "dep": "27.36"
+      },
+      {
+       "stop": "MODICA (Via Alcide De Gasperi snc)",
+       "idx": 23,
+       "arr": "27.39",
+       "dep": "27.39"
+      },
+      {
+       "stop": "MODICA (Via Nazionale, 63)",
+       "idx": 24,
+       "arr": "27.40",
+       "dep": "27.40"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 8)",
+       "idx": 25,
+       "arr": "27.44",
+       "dep": "27.44"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 90)",
+       "idx": 26,
+       "arr": "27.47",
+       "dep": "27.47"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 164)",
+       "idx": 27,
+       "arr": "27.48",
+       "dep": "27.48"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 298 (Largo 8 Marzo))",
+       "idx": 28,
+       "arr": "27.49",
+       "dep": "27.49"
+      },
+      {
+       "stop": "MODICA (Piazza Borsellino)",
+       "idx": 29,
+       "arr": "27.50",
+       "dep": "27.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "011035",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "MOD9011_5",
+     "stops": [
+      {
+       "stop": "MODICA (Piazza Borsellino)",
+       "idx": 0,
+       "arr": "24.30",
+       "dep": "24.30"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 121)",
+       "idx": 1,
+       "arr": "24.32",
+       "dep": "24.32"
+      },
+      {
+       "stop": "MODICA (Piazza Rizzone)",
+       "idx": 2,
+       "arr": "24.34",
+       "dep": "24.34"
+      },
+      {
+       "stop": "MODICA (Via Nazionale fronte 63)",
+       "idx": 3,
+       "arr": "24.38",
+       "dep": "24.38"
+      },
+      {
+       "stop": "MODICA (Piazza Libertà, 4)",
+       "idx": 4,
+       "arr": "24.40",
+       "dep": "24.40"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 22 (Ospedale))",
+       "idx": 5,
+       "arr": "24.42",
+       "dep": "24.42"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini fronte Hotel Torre del Sud)",
+       "idx": 6,
+       "arr": "24.44",
+       "dep": "24.44"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini Treppieni Nord)",
+       "idx": 7,
+       "arr": "24.45",
+       "dep": "24.45"
+      },
+      {
+       "stop": "MODICA (Zona 167 fronte Boutique Modica Hotel)",
+       "idx": 8,
+       "arr": "24.46",
+       "dep": "24.46"
+      },
+      {
+       "stop": "MODICA (Via Sorda Sampieri, 3 (Galleria Solaria))",
+       "idx": 9,
+       "arr": "24.47",
+       "dep": "24.47"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 2)",
+       "idx": 10,
+       "arr": "24.57",
+       "dep": "24.57"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 1)",
+       "idx": 11,
+       "arr": "24.59",
+       "dep": "24.59"
+      },
+      {
+       "stop": "MODICA (Via dei Navigatori, 63)",
+       "idx": 12,
+       "arr": "25.12",
+       "dep": "25.12"
+      },
+      {
+       "stop": "MODICA (Via dei Navigatori, 101 (Chiesa))",
+       "idx": 13,
+       "arr": "25.15",
+       "dep": "25.15"
+      },
+      {
+       "stop": "MODICA (Via Genova (Maganuco))",
+       "idx": 14,
+       "arr": "25.19",
+       "dep": "25.19"
+      },
+      {
+       "stop": "MODICA (SP 66 Maganuco HTL Cabrera)",
+       "idx": 15,
+       "arr": "25.21",
+       "dep": "25.21"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 1)",
+       "idx": 16,
+       "arr": "25.37",
+       "dep": "25.37"
+      },
+      {
+       "stop": "MODICA (Via Sorda Sampieri fronte 3 (fronte Galleria Solari)",
+       "idx": 17,
+       "arr": "25.49",
+       "dep": "25.49"
+      },
+      {
+       "stop": "MODICA (Zona 167)",
+       "idx": 18,
+       "arr": "25.50",
+       "dep": "25.50"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini fronte Treppiedi Nord)",
+       "idx": 19,
+       "arr": "25.51",
+       "dep": "25.51"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini Hotel Torre del Sud)",
+       "idx": 20,
+       "arr": "25.53",
+       "dep": "25.53"
+      },
+      {
+       "stop": "MODICA (Via Indipendenza, 1/j)",
+       "idx": 21,
+       "arr": "25.55",
+       "dep": "25.55"
+      },
+      {
+       "stop": "MODICA (Via Risorgimento, 2)",
+       "idx": 22,
+       "arr": "25.56",
+       "dep": "25.56"
+      },
+      {
+       "stop": "MODICA (Via Alcide De Gasperi snc)",
+       "idx": 23,
+       "arr": "25.59",
+       "dep": "25.59"
+      },
+      {
+       "stop": "MODICA (Via Nazionale, 63)",
+       "idx": 24,
+       "arr": "26.00",
+       "dep": "26.00"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 8)",
+       "idx": 25,
+       "arr": "26.04",
+       "dep": "26.04"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 90)",
+       "idx": 26,
+       "arr": "26.07",
+       "dep": "26.07"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 164)",
+       "idx": 27,
+       "arr": "26.08",
+       "dep": "26.08"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 298 (Largo 8 Marzo))",
+       "idx": 28,
+       "arr": "26.09",
+       "dep": "26.09"
+      },
+      {
+       "stop": "MODICA (Piazza Borsellino)",
+       "idx": 29,
+       "arr": "26.10",
+       "dep": "26.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "011031",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "MOD9011_5",
+     "stops": [
+      {
+       "stop": "MODICA (Piazza Borsellino)",
+       "idx": 0,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 121)",
+       "idx": 1,
+       "arr": "18.02",
+       "dep": "18.02"
+      },
+      {
+       "stop": "MODICA (Piazza Rizzone)",
+       "idx": 2,
+       "arr": "18.04",
+       "dep": "18.04"
+      },
+      {
+       "stop": "MODICA (Via Nazionale fronte 63)",
+       "idx": 3,
+       "arr": "18.08",
+       "dep": "18.08"
+      },
+      {
+       "stop": "MODICA (Piazza Libertà, 4)",
+       "idx": 4,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 22 (Ospedale))",
+       "idx": 5,
+       "arr": "18.12",
+       "dep": "18.12"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini fronte Hotel Torre del Sud)",
+       "idx": 6,
+       "arr": "18.14",
+       "dep": "18.14"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini Treppieni Nord)",
+       "idx": 7,
+       "arr": "18.15",
+       "dep": "18.15"
+      },
+      {
+       "stop": "MODICA (Zona 167 fronte Boutique Modica Hotel)",
+       "idx": 8,
+       "arr": "18.16",
+       "dep": "18.16"
+      },
+      {
+       "stop": "MODICA (Via Sorda Sampieri, 3 (Galleria Solaria))",
+       "idx": 9,
+       "arr": "18.17",
+       "dep": "18.17"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 2)",
+       "idx": 10,
+       "arr": "18.27",
+       "dep": "18.27"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 1)",
+       "idx": 11,
+       "arr": "18.29",
+       "dep": "18.29"
+      },
+      {
+       "stop": "MODICA (Via dei Navigatori, 63)",
+       "idx": 12,
+       "arr": "18.42",
+       "dep": "18.42"
+      },
+      {
+       "stop": "MODICA (Via dei Navigatori, 101 (Chiesa))",
+       "idx": 13,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "MODICA (Via Genova (Maganuco))",
+       "idx": 14,
+       "arr": "18.49",
+       "dep": "18.49"
+      },
+      {
+       "stop": "MODICA (SP 66 Maganuco HTL Cabrera)",
+       "idx": 15,
+       "arr": "18.51",
+       "dep": "18.51"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 1)",
+       "idx": 16,
+       "arr": "19.07",
+       "dep": "19.07"
+      },
+      {
+       "stop": "MODICA (Via Sorda Sampieri fronte 3 (fronte Galleria Solari)",
+       "idx": 17,
+       "arr": "19.19",
+       "dep": "19.19"
+      },
+      {
+       "stop": "MODICA (Zona 167)",
+       "idx": 18,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini fronte Treppiedi Nord)",
+       "idx": 19,
+       "arr": "19.21",
+       "dep": "19.21"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini Hotel Torre del Sud)",
+       "idx": 20,
+       "arr": "19.23",
+       "dep": "19.23"
+      },
+      {
+       "stop": "MODICA (Via Indipendenza, 1/j)",
+       "idx": 21,
+       "arr": "19.25",
+       "dep": "19.25"
+      },
+      {
+       "stop": "MODICA (Via Risorgimento, 2)",
+       "idx": 22,
+       "arr": "19.26",
+       "dep": "19.26"
+      },
+      {
+       "stop": "MODICA (Via Alcide De Gasperi snc)",
+       "idx": 23,
+       "arr": "19.29",
+       "dep": "19.29"
+      },
+      {
+       "stop": "MODICA (Via Nazionale, 63)",
+       "idx": 24,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 8)",
+       "idx": 25,
+       "arr": "19.34",
+       "dep": "19.34"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 90)",
+       "idx": 26,
+       "arr": "19.37",
+       "dep": "19.37"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 164)",
+       "idx": 27,
+       "arr": "19.38",
+       "dep": "19.38"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 298 (Largo 8 Marzo))",
+       "idx": 28,
+       "arr": "19.39",
+       "dep": "19.39"
+      },
+      {
+       "stop": "MODICA (Piazza Borsellino)",
+       "idx": 29,
+       "arr": "19.40",
+       "dep": "19.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "011023",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "MOD9011_5",
+     "stops": [
+      {
+       "stop": "MODICA (Piazza Borsellino)",
+       "idx": 0,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 121)",
+       "idx": 1,
+       "arr": "10.02",
+       "dep": "10.02"
+      },
+      {
+       "stop": "MODICA (Piazza Rizzone)",
+       "idx": 2,
+       "arr": "10.04",
+       "dep": "10.04"
+      },
+      {
+       "stop": "MODICA (Via Nazionale fronte 63)",
+       "idx": 3,
+       "arr": "10.08",
+       "dep": "10.08"
+      },
+      {
+       "stop": "MODICA (Piazza Libertà, 4)",
+       "idx": 4,
+       "arr": "10.10",
+       "dep": "10.10"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 22 (Ospedale))",
+       "idx": 5,
+       "arr": "10.12",
+       "dep": "10.12"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini fronte Hotel Torre del Sud)",
+       "idx": 6,
+       "arr": "10.14",
+       "dep": "10.14"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini Treppieni Nord)",
+       "idx": 7,
+       "arr": "10.15",
+       "dep": "10.15"
+      },
+      {
+       "stop": "MODICA (Zona 167 fronte Boutique Modica Hotel)",
+       "idx": 8,
+       "arr": "10.16",
+       "dep": "10.16"
+      },
+      {
+       "stop": "MODICA (Via Sorda Sampieri, 3 (Galleria Solaria))",
+       "idx": 9,
+       "arr": "10.17",
+       "dep": "10.17"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 2)",
+       "idx": 10,
+       "arr": "10.27",
+       "dep": "10.27"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 1)",
+       "idx": 11,
+       "arr": "10.29",
+       "dep": "10.29"
+      },
+      {
+       "stop": "MODICA (Via dei Navigatori, 63)",
+       "idx": 12,
+       "arr": "10.42",
+       "dep": "10.42"
+      },
+      {
+       "stop": "MODICA (Via dei Navigatori, 101 (Chiesa))",
+       "idx": 13,
+       "arr": "10.45",
+       "dep": "10.45"
+      },
+      {
+       "stop": "MODICA (Via Genova (Maganuco))",
+       "idx": 14,
+       "arr": "10.49",
+       "dep": "10.49"
+      },
+      {
+       "stop": "MODICA (SP 66 Maganuco HTL Cabrera)",
+       "idx": 15,
+       "arr": "10.51",
+       "dep": "10.51"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 1)",
+       "idx": 16,
+       "arr": "11.07",
+       "dep": "11.07"
+      },
+      {
+       "stop": "MODICA (Via Sorda Sampieri fronte 3 (fronte Galleria Solari)",
+       "idx": 17,
+       "arr": "11.19",
+       "dep": "11.19"
+      },
+      {
+       "stop": "MODICA (Zona 167)",
+       "idx": 18,
+       "arr": "11.20",
+       "dep": "11.20"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini fronte Treppiedi Nord)",
+       "idx": 19,
+       "arr": "11.21",
+       "dep": "11.21"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini Hotel Torre del Sud)",
+       "idx": 20,
+       "arr": "11.23",
+       "dep": "11.23"
+      },
+      {
+       "stop": "MODICA (Via Indipendenza, 1/j)",
+       "idx": 21,
+       "arr": "11.25",
+       "dep": "11.25"
+      },
+      {
+       "stop": "MODICA (Via Risorgimento, 2)",
+       "idx": 22,
+       "arr": "11.26",
+       "dep": "11.26"
+      },
+      {
+       "stop": "MODICA (Via Alcide De Gasperi snc)",
+       "idx": 23,
+       "arr": "11.29",
+       "dep": "11.29"
+      },
+      {
+       "stop": "MODICA (Via Nazionale, 63)",
+       "idx": 24,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 8)",
+       "idx": 25,
+       "arr": "11.34",
+       "dep": "11.34"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 90)",
+       "idx": 26,
+       "arr": "11.37",
+       "dep": "11.37"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 164)",
+       "idx": 27,
+       "arr": "11.38",
+       "dep": "11.38"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 298 (Largo 8 Marzo))",
+       "idx": 28,
+       "arr": "11.39",
+       "dep": "11.39"
+      },
+      {
+       "stop": "MODICA (Piazza Borsellino)",
+       "idx": 29,
+       "arr": "11.40",
+       "dep": "11.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "011025",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "MOD9011_5",
+     "stops": [
+      {
+       "stop": "MODICA (Piazza Borsellino)",
+       "idx": 0,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 121)",
+       "idx": 1,
+       "arr": "12.02",
+       "dep": "12.02"
+      },
+      {
+       "stop": "MODICA (Piazza Rizzone)",
+       "idx": 2,
+       "arr": "12.04",
+       "dep": "12.04"
+      },
+      {
+       "stop": "MODICA (Via Nazionale fronte 63)",
+       "idx": 3,
+       "arr": "12.08",
+       "dep": "12.08"
+      },
+      {
+       "stop": "MODICA (Piazza Libertà, 4)",
+       "idx": 4,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 22 (Ospedale))",
+       "idx": 5,
+       "arr": "12.12",
+       "dep": "12.12"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini fronte Hotel Torre del Sud)",
+       "idx": 6,
+       "arr": "12.14",
+       "dep": "12.14"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini Treppieni Nord)",
+       "idx": 7,
+       "arr": "12.15",
+       "dep": "12.15"
+      },
+      {
+       "stop": "MODICA (Zona 167 fronte Boutique Modica Hotel)",
+       "idx": 8,
+       "arr": "12.16",
+       "dep": "12.16"
+      },
+      {
+       "stop": "MODICA (Via Sorda Sampieri, 3 (Galleria Solaria))",
+       "idx": 9,
+       "arr": "12.17",
+       "dep": "12.17"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 2)",
+       "idx": 10,
+       "arr": "12.27",
+       "dep": "12.27"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 1)",
+       "idx": 11,
+       "arr": "12.29",
+       "dep": "12.29"
+      },
+      {
+       "stop": "MODICA (Via dei Navigatori, 63)",
+       "idx": 12,
+       "arr": "12.42",
+       "dep": "12.42"
+      },
+      {
+       "stop": "MODICA (Via dei Navigatori, 101 (Chiesa))",
+       "idx": 13,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "MODICA (Via Genova (Maganuco))",
+       "idx": 14,
+       "arr": "12.49",
+       "dep": "12.49"
+      },
+      {
+       "stop": "MODICA (SP 66 Maganuco HTL Cabrera)",
+       "idx": 15,
+       "arr": "12.51",
+       "dep": "12.51"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 1)",
+       "idx": 16,
+       "arr": "13.07",
+       "dep": "13.07"
+      },
+      {
+       "stop": "MODICA (Via Sorda Sampieri fronte 3 (fronte Galleria Solari)",
+       "idx": 17,
+       "arr": "13.19",
+       "dep": "13.19"
+      },
+      {
+       "stop": "MODICA (Zona 167)",
+       "idx": 18,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini fronte Treppiedi Nord)",
+       "idx": 19,
+       "arr": "13.21",
+       "dep": "13.21"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini Hotel Torre del Sud)",
+       "idx": 20,
+       "arr": "13.23",
+       "dep": "13.23"
+      },
+      {
+       "stop": "MODICA (Via Indipendenza, 1/j)",
+       "idx": 21,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "MODICA (Via Risorgimento, 2)",
+       "idx": 22,
+       "arr": "13.26",
+       "dep": "13.26"
+      },
+      {
+       "stop": "MODICA (Via Alcide De Gasperi snc)",
+       "idx": 23,
+       "arr": "13.29",
+       "dep": "13.29"
+      },
+      {
+       "stop": "MODICA (Via Nazionale, 63)",
+       "idx": 24,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 8)",
+       "idx": 25,
+       "arr": "13.34",
+       "dep": "13.34"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 90)",
+       "idx": 26,
+       "arr": "13.37",
+       "dep": "13.37"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 164)",
+       "idx": 27,
+       "arr": "13.38",
+       "dep": "13.38"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 298 (Largo 8 Marzo))",
+       "idx": 28,
+       "arr": "13.39",
+       "dep": "13.39"
+      },
+      {
+       "stop": "MODICA (Piazza Borsellino)",
+       "idx": 29,
+       "arr": "13.40",
+       "dep": "13.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "011037",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "MOD9011_5",
+     "stops": [
+      {
+       "stop": "MODICA (Piazza Borsellino)",
+       "idx": 0,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 121)",
+       "idx": 1,
+       "arr": "20.02",
+       "dep": "20.02"
+      },
+      {
+       "stop": "MODICA (Piazza Rizzone)",
+       "idx": 2,
+       "arr": "20.04",
+       "dep": "20.04"
+      },
+      {
+       "stop": "MODICA (Via Nazionale fronte 63)",
+       "idx": 3,
+       "arr": "20.08",
+       "dep": "20.08"
+      },
+      {
+       "stop": "MODICA (Piazza Libertà, 4)",
+       "idx": 4,
+       "arr": "20.10",
+       "dep": "20.10"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 22 (Ospedale))",
+       "idx": 5,
+       "arr": "20.12",
+       "dep": "20.12"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini fronte Hotel Torre del Sud)",
+       "idx": 6,
+       "arr": "20.14",
+       "dep": "20.14"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini Treppieni Nord)",
+       "idx": 7,
+       "arr": "20.15",
+       "dep": "20.15"
+      },
+      {
+       "stop": "MODICA (Zona 167 fronte Boutique Modica Hotel)",
+       "idx": 8,
+       "arr": "20.16",
+       "dep": "20.16"
+      },
+      {
+       "stop": "MODICA (Via Sorda Sampieri, 3 (Galleria Solaria))",
+       "idx": 9,
+       "arr": "20.17",
+       "dep": "20.17"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 2)",
+       "idx": 10,
+       "arr": "20.27",
+       "dep": "20.27"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 1)",
+       "idx": 11,
+       "arr": "20.29",
+       "dep": "20.29"
+      },
+      {
+       "stop": "MODICA (Via dei Navigatori, 63)",
+       "idx": 12,
+       "arr": "20.42",
+       "dep": "20.42"
+      },
+      {
+       "stop": "MODICA (Via dei Navigatori, 101 (Chiesa))",
+       "idx": 13,
+       "arr": "20.45",
+       "dep": "20.45"
+      },
+      {
+       "stop": "MODICA (Via Genova (Maganuco))",
+       "idx": 14,
+       "arr": "20.49",
+       "dep": "20.49"
+      },
+      {
+       "stop": "MODICA (SP 66 Maganuco HTL Cabrera)",
+       "idx": 15,
+       "arr": "20.51",
+       "dep": "20.51"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 1)",
+       "idx": 16,
+       "arr": "21.07",
+       "dep": "21.07"
+      },
+      {
+       "stop": "MODICA (Via Sorda Sampieri fronte 3 (fronte Galleria Solari)",
+       "idx": 17,
+       "arr": "21.19",
+       "dep": "21.19"
+      },
+      {
+       "stop": "MODICA (Zona 167)",
+       "idx": 18,
+       "arr": "21.20",
+       "dep": "21.20"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini fronte Treppiedi Nord)",
+       "idx": 19,
+       "arr": "21.21",
+       "dep": "21.21"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini Hotel Torre del Sud)",
+       "idx": 20,
+       "arr": "21.23",
+       "dep": "21.23"
+      },
+      {
+       "stop": "MODICA (Via Indipendenza, 1/j)",
+       "idx": 21,
+       "arr": "21.25",
+       "dep": "21.25"
+      },
+      {
+       "stop": "MODICA (Via Risorgimento, 2)",
+       "idx": 22,
+       "arr": "21.26",
+       "dep": "21.26"
+      },
+      {
+       "stop": "MODICA (Via Alcide De Gasperi snc)",
+       "idx": 23,
+       "arr": "21.29",
+       "dep": "21.29"
+      },
+      {
+       "stop": "MODICA (Via Nazionale, 63)",
+       "idx": 24,
+       "arr": "21.30",
+       "dep": "21.30"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 8)",
+       "idx": 25,
+       "arr": "21.34",
+       "dep": "21.34"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 90)",
+       "idx": 26,
+       "arr": "21.37",
+       "dep": "21.37"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 164)",
+       "idx": 27,
+       "arr": "21.38",
+       "dep": "21.38"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 298 (Largo 8 Marzo))",
+       "idx": 28,
+       "arr": "21.39",
+       "dep": "21.39"
+      },
+      {
+       "stop": "MODICA (Piazza Borsellino)",
+       "idx": 29,
+       "arr": "21.40",
+       "dep": "21.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "011021",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "MOD9011_5",
+     "stops": [
+      {
+       "stop": "MODICA (Piazza Borsellino)",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 121)",
+       "idx": 1,
+       "arr": "8.02",
+       "dep": "8.02"
+      },
+      {
+       "stop": "MODICA (Piazza Rizzone)",
+       "idx": 2,
+       "arr": "8.04",
+       "dep": "8.04"
+      },
+      {
+       "stop": "MODICA (Via Nazionale fronte 63)",
+       "idx": 3,
+       "arr": "8.08",
+       "dep": "8.08"
+      },
+      {
+       "stop": "MODICA (Piazza Libertà, 4)",
+       "idx": 4,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 22 (Ospedale))",
+       "idx": 5,
+       "arr": "8.12",
+       "dep": "8.12"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini fronte Hotel Torre del Sud)",
+       "idx": 6,
+       "arr": "8.14",
+       "dep": "8.14"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini Treppieni Nord)",
+       "idx": 7,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "MODICA (Zona 167 fronte Boutique Modica Hotel)",
+       "idx": 8,
+       "arr": "8.16",
+       "dep": "8.16"
+      },
+      {
+       "stop": "MODICA (Via Sorda Sampieri, 3 (Galleria Solaria))",
+       "idx": 9,
+       "arr": "8.17",
+       "dep": "8.17"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 2)",
+       "idx": 10,
+       "arr": "8.27",
+       "dep": "8.27"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 1)",
+       "idx": 11,
+       "arr": "8.29",
+       "dep": "8.29"
+      },
+      {
+       "stop": "MODICA (Via dei Navigatori, 63)",
+       "idx": 12,
+       "arr": "8.42",
+       "dep": "8.42"
+      },
+      {
+       "stop": "MODICA (Via dei Navigatori, 101 (Chiesa))",
+       "idx": 13,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "MODICA (Via Genova (Maganuco))",
+       "idx": 14,
+       "arr": "8.49",
+       "dep": "8.49"
+      },
+      {
+       "stop": "MODICA (SP 66 Maganuco HTL Cabrera)",
+       "idx": 15,
+       "arr": "8.51",
+       "dep": "8.51"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 1)",
+       "idx": 16,
+       "arr": "9.07",
+       "dep": "9.07"
+      },
+      {
+       "stop": "MODICA (Via Sorda Sampieri fronte 3 (fronte Galleria Solari)",
+       "idx": 17,
+       "arr": "9.19",
+       "dep": "9.19"
+      },
+      {
+       "stop": "MODICA (Zona 167)",
+       "idx": 18,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini fronte Treppiedi Nord)",
+       "idx": 19,
+       "arr": "9.21",
+       "dep": "9.21"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini Hotel Torre del Sud)",
+       "idx": 20,
+       "arr": "9.23",
+       "dep": "9.23"
+      },
+      {
+       "stop": "MODICA (Via Indipendenza, 1/j)",
+       "idx": 21,
+       "arr": "9.25",
+       "dep": "9.25"
+      },
+      {
+       "stop": "MODICA (Via Risorgimento, 2)",
+       "idx": 22,
+       "arr": "9.26",
+       "dep": "9.26"
+      },
+      {
+       "stop": "MODICA (Via Alcide De Gasperi snc)",
+       "idx": 23,
+       "arr": "9.29",
+       "dep": "9.29"
+      },
+      {
+       "stop": "MODICA (Via Nazionale, 63)",
+       "idx": 24,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 8)",
+       "idx": 25,
+       "arr": "9.34",
+       "dep": "9.34"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 90)",
+       "idx": 26,
+       "arr": "9.37",
+       "dep": "9.37"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 164)",
+       "idx": 27,
+       "arr": "9.38",
+       "dep": "9.38"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 298 (Largo 8 Marzo))",
+       "idx": 28,
+       "arr": "9.39",
+       "dep": "9.39"
+      },
+      {
+       "stop": "MODICA (Piazza Borsellino)",
+       "idx": 29,
+       "arr": "9.40",
+       "dep": "9.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "011029",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "MOD9011_5",
+     "stops": [
+      {
+       "stop": "MODICA (Piazza Borsellino)",
+       "idx": 0,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 121)",
+       "idx": 1,
+       "arr": "16.02",
+       "dep": "16.02"
+      },
+      {
+       "stop": "MODICA (Piazza Rizzone)",
+       "idx": 2,
+       "arr": "16.04",
+       "dep": "16.04"
+      },
+      {
+       "stop": "MODICA (Via Nazionale fronte 63)",
+       "idx": 3,
+       "arr": "16.08",
+       "dep": "16.08"
+      },
+      {
+       "stop": "MODICA (Piazza Libertà, 4)",
+       "idx": 4,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 22 (Ospedale))",
+       "idx": 5,
+       "arr": "16.12",
+       "dep": "16.12"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini fronte Hotel Torre del Sud)",
+       "idx": 6,
+       "arr": "16.14",
+       "dep": "16.14"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini Treppieni Nord)",
+       "idx": 7,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "MODICA (Zona 167 fronte Boutique Modica Hotel)",
+       "idx": 8,
+       "arr": "16.16",
+       "dep": "16.16"
+      },
+      {
+       "stop": "MODICA (Via Sorda Sampieri, 3 (Galleria Solaria))",
+       "idx": 9,
+       "arr": "16.17",
+       "dep": "16.17"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 2)",
+       "idx": 10,
+       "arr": "16.27",
+       "dep": "16.27"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 1)",
+       "idx": 11,
+       "arr": "16.29",
+       "dep": "16.29"
+      },
+      {
+       "stop": "MODICA (Via dei Navigatori, 63)",
+       "idx": 12,
+       "arr": "16.42",
+       "dep": "16.42"
+      },
+      {
+       "stop": "MODICA (Via dei Navigatori, 101 (Chiesa))",
+       "idx": 13,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "MODICA (Via Genova (Maganuco))",
+       "idx": 14,
+       "arr": "16.49",
+       "dep": "16.49"
+      },
+      {
+       "stop": "MODICA (SP 66 Maganuco HTL Cabrera)",
+       "idx": 15,
+       "arr": "16.51",
+       "dep": "16.51"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 1)",
+       "idx": 16,
+       "arr": "17.07",
+       "dep": "17.07"
+      },
+      {
+       "stop": "MODICA (Via Sorda Sampieri fronte 3 (fronte Galleria Solari)",
+       "idx": 17,
+       "arr": "17.19",
+       "dep": "17.19"
+      },
+      {
+       "stop": "MODICA (Zona 167)",
+       "idx": 18,
+       "arr": "17.20",
+       "dep": "17.20"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini fronte Treppiedi Nord)",
+       "idx": 19,
+       "arr": "17.21",
+       "dep": "17.21"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini Hotel Torre del Sud)",
+       "idx": 20,
+       "arr": "17.23",
+       "dep": "17.23"
+      },
+      {
+       "stop": "MODICA (Via Indipendenza, 1/j)",
+       "idx": 21,
+       "arr": "17.25",
+       "dep": "17.25"
+      },
+      {
+       "stop": "MODICA (Via Risorgimento, 2)",
+       "idx": 22,
+       "arr": "17.26",
+       "dep": "17.26"
+      },
+      {
+       "stop": "MODICA (Via Alcide De Gasperi snc)",
+       "idx": 23,
+       "arr": "17.29",
+       "dep": "17.29"
+      },
+      {
+       "stop": "MODICA (Via Nazionale, 63)",
+       "idx": 24,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 8)",
+       "idx": 25,
+       "arr": "17.34",
+       "dep": "17.34"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 90)",
+       "idx": 26,
+       "arr": "17.37",
+       "dep": "17.37"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 164)",
+       "idx": 27,
+       "arr": "17.38",
+       "dep": "17.38"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 298 (Largo 8 Marzo))",
+       "idx": 28,
+       "arr": "17.39",
+       "dep": "17.39"
+      },
+      {
+       "stop": "MODICA (Piazza Borsellino)",
+       "idx": 29,
+       "arr": "17.40",
+       "dep": "17.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "011027",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "MOD9011_5",
+     "stops": [
+      {
+       "stop": "MODICA (Piazza Borsellino)",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 121)",
+       "idx": 1,
+       "arr": "14.02",
+       "dep": "14.02"
+      },
+      {
+       "stop": "MODICA (Piazza Rizzone)",
+       "idx": 2,
+       "arr": "14.04",
+       "dep": "14.04"
+      },
+      {
+       "stop": "MODICA (Via Nazionale fronte 63)",
+       "idx": 3,
+       "arr": "14.08",
+       "dep": "14.08"
+      },
+      {
+       "stop": "MODICA (Piazza Libertà, 4)",
+       "idx": 4,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 22 (Ospedale))",
+       "idx": 5,
+       "arr": "14.12",
+       "dep": "14.12"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini fronte Hotel Torre del Sud)",
+       "idx": 6,
+       "arr": "14.14",
+       "dep": "14.14"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini Treppieni Nord)",
+       "idx": 7,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "MODICA (Zona 167 fronte Boutique Modica Hotel)",
+       "idx": 8,
+       "arr": "14.16",
+       "dep": "14.16"
+      },
+      {
+       "stop": "MODICA (Via Sorda Sampieri, 3 (Galleria Solaria))",
+       "idx": 9,
+       "arr": "14.17",
+       "dep": "14.17"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 2)",
+       "idx": 10,
+       "arr": "14.27",
+       "dep": "14.27"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 1)",
+       "idx": 11,
+       "arr": "14.29",
+       "dep": "14.29"
+      },
+      {
+       "stop": "MODICA (Via dei Navigatori, 63)",
+       "idx": 12,
+       "arr": "14.42",
+       "dep": "14.42"
+      },
+      {
+       "stop": "MODICA (Via dei Navigatori, 101 (Chiesa))",
+       "idx": 13,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "MODICA (Via Genova (Maganuco))",
+       "idx": 14,
+       "arr": "14.49",
+       "dep": "14.49"
+      },
+      {
+       "stop": "MODICA (SP 66 Maganuco HTL Cabrera)",
+       "idx": 15,
+       "arr": "14.51",
+       "dep": "14.51"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 1)",
+       "idx": 16,
+       "arr": "15.07",
+       "dep": "15.07"
+      },
+      {
+       "stop": "MODICA (Via Sorda Sampieri fronte 3 (fronte Galleria Solari)",
+       "idx": 17,
+       "arr": "15.19",
+       "dep": "15.19"
+      },
+      {
+       "stop": "MODICA (Zona 167)",
+       "idx": 18,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini fronte Treppiedi Nord)",
+       "idx": 19,
+       "arr": "15.21",
+       "dep": "15.21"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini Hotel Torre del Sud)",
+       "idx": 20,
+       "arr": "15.23",
+       "dep": "15.23"
+      },
+      {
+       "stop": "MODICA (Via Indipendenza, 1/j)",
+       "idx": 21,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "MODICA (Via Risorgimento, 2)",
+       "idx": 22,
+       "arr": "15.26",
+       "dep": "15.26"
+      },
+      {
+       "stop": "MODICA (Via Alcide De Gasperi snc)",
+       "idx": 23,
+       "arr": "15.29",
+       "dep": "15.29"
+      },
+      {
+       "stop": "MODICA (Via Nazionale, 63)",
+       "idx": 24,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 8)",
+       "idx": 25,
+       "arr": "15.34",
+       "dep": "15.34"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 90)",
+       "idx": 26,
+       "arr": "15.37",
+       "dep": "15.37"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 164)",
+       "idx": 27,
+       "arr": "15.38",
+       "dep": "15.38"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 298 (Largo 8 Marzo))",
+       "idx": 28,
+       "arr": "15.39",
+       "dep": "15.39"
+      },
+      {
+       "stop": "MODICA (Piazza Borsellino)",
+       "idx": 29,
+       "arr": "15.40",
+       "dep": "15.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "011033",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "MOD9011_5",
+     "stops": [
+      {
+       "stop": "MODICA (Piazza Borsellino)",
+       "idx": 0,
+       "arr": "21.30",
+       "dep": "21.30"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 121)",
+       "idx": 1,
+       "arr": "21.32",
+       "dep": "21.32"
+      },
+      {
+       "stop": "MODICA (Piazza Rizzone)",
+       "idx": 2,
+       "arr": "21.34",
+       "dep": "21.34"
+      },
+      {
+       "stop": "MODICA (Via Nazionale fronte 63)",
+       "idx": 3,
+       "arr": "21.38",
+       "dep": "21.38"
+      },
+      {
+       "stop": "MODICA (Piazza Libertà, 4)",
+       "idx": 4,
+       "arr": "21.40",
+       "dep": "21.40"
+      },
+      {
+       "stop": "MODICA (Via Resistenza Partigiana, 22 (Ospedale))",
+       "idx": 5,
+       "arr": "21.42",
+       "dep": "21.42"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini fronte Hotel Torre del Sud)",
+       "idx": 6,
+       "arr": "21.44",
+       "dep": "21.44"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini Treppieni Nord)",
+       "idx": 7,
+       "arr": "21.45",
+       "dep": "21.45"
+      },
+      {
+       "stop": "MODICA (Zona 167 fronte Boutique Modica Hotel)",
+       "idx": 8,
+       "arr": "21.46",
+       "dep": "21.46"
+      },
+      {
+       "stop": "MODICA (Via Sorda Sampieri, 3 (Galleria Solaria))",
+       "idx": 9,
+       "arr": "21.47",
+       "dep": "21.47"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 2)",
+       "idx": 10,
+       "arr": "21.57",
+       "dep": "21.57"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 1)",
+       "idx": 11,
+       "arr": "21.59",
+       "dep": "21.59"
+      },
+      {
+       "stop": "MODICA (Via dei Navigatori, 63)",
+       "idx": 12,
+       "arr": "22.12",
+       "dep": "22.12"
+      },
+      {
+       "stop": "MODICA (Via dei Navigatori, 101 (Chiesa))",
+       "idx": 13,
+       "arr": "22.15",
+       "dep": "22.15"
+      },
+      {
+       "stop": "MODICA (Via Genova (Maganuco))",
+       "idx": 14,
+       "arr": "22.19",
+       "dep": "22.19"
+      },
+      {
+       "stop": "MODICA (SP 66 Maganuco HTL Cabrera)",
+       "idx": 15,
+       "arr": "22.21",
+       "dep": "22.21"
+      },
+      {
+       "stop": "MODICA (Zappulla fermata 1)",
+       "idx": 16,
+       "arr": "22.37",
+       "dep": "22.37"
+      },
+      {
+       "stop": "MODICA (Via Sorda Sampieri fronte 3 (fronte Galleria Solari)",
+       "idx": 17,
+       "arr": "22.49",
+       "dep": "22.49"
+      },
+      {
+       "stop": "MODICA (Zona 167)",
+       "idx": 18,
+       "arr": "22.50",
+       "dep": "22.50"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini fronte Treppiedi Nord)",
+       "idx": 19,
+       "arr": "22.51",
+       "dep": "22.51"
+      },
+      {
+       "stop": "MODICA (Corso Sandro Pertini Hotel Torre del Sud)",
+       "idx": 20,
+       "arr": "22.53",
+       "dep": "22.53"
+      },
+      {
+       "stop": "MODICA (Via Indipendenza, 1/j)",
+       "idx": 21,
+       "arr": "22.55",
+       "dep": "22.55"
+      },
+      {
+       "stop": "MODICA (Via Risorgimento, 2)",
+       "idx": 22,
+       "arr": "22.56",
+       "dep": "22.56"
+      },
+      {
+       "stop": "MODICA (Via Alcide De Gasperi snc)",
+       "idx": 23,
+       "arr": "22.59",
+       "dep": "22.59"
+      },
+      {
+       "stop": "MODICA (Via Nazionale, 63)",
+       "idx": 24,
+       "arr": "23.00",
+       "dep": "23.00"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 8)",
+       "idx": 25,
+       "arr": "23.04",
+       "dep": "23.04"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 90)",
+       "idx": 26,
+       "arr": "23.07",
+       "dep": "23.07"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 164)",
+       "idx": 27,
+       "arr": "23.08",
+       "dep": "23.08"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 298 (Largo 8 Marzo))",
+       "idx": 28,
+       "arr": "23.09",
+       "dep": "23.09"
+      },
+      {
+       "stop": "MODICA (Piazza Borsellino)",
+       "idx": 29,
+       "arr": "23.10",
+       "dep": "23.10"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -102,6 +102,8 @@ def main():
     stops_out = {}
     for f in sorted(os.listdir(ROUTES)):
         route = json.load(open(os.path.join(ROUTES, f), encoding='utf-8'))
+        if route.get('coords') == 'external':
+            continue  # SAIS et al.: exact coords ship in data/sais-stop-coords.json
         for d in route['directions']:
             names = d['stops']
             kms = [None] * len(names)

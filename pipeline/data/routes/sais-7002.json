@@ -1,0 +1,6743 @@
+{
+ "operator": "SAIS Autolinee",
+ "route_id": "sais-7002",
+ "name": "106 Ortigia",
+ "short_name": "7002",
+ "coords": "external",
+ "source": "api.saisautolinee.it line 535c25d1-f7d0-4692-a99a-7adfc8992824",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "SIRACUSA (Via Rubino)",
+    "SIRACUSA (Piazzale della Stazione Centrale)",
+    "SIRACUSA (Corso Umberto I 111)",
+    "SIRACUSA (Piazzale Marconi)",
+    "SIRACUSA (Corso Umberto I (fronte 138))",
+    "SIRACUSA (Via Rodi 9)",
+    "SIRACUSA (Via Chindemi 17)",
+    "SIRACUSA (Corso Matteotti 7)",
+    "SIRACUSA (Via della Maestranza 84)",
+    "SIRACUSA (Belvedere San Giacomo)",
+    "SIRACUSA (Lungomare Vittorini (fronte 56))",
+    "SIRACUSA (Parcheggio Talete)",
+    "SIRACUSA (Riva della Posta)",
+    "SIRACUSA (Corso Umberto I 24)"
+   ],
+   "trips": [
+    {
+     "corsa": "002006",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "9.01",
+       "dep": "9.01"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "9.02",
+       "dep": "9.02"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "9.03",
+       "dep": "9.03"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "9.04",
+       "dep": "9.04"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "9.07",
+       "dep": "9.07"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "9.09",
+       "dep": "9.09"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "9.11",
+       "dep": "9.11"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "9.12",
+       "dep": "9.12"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "9.13",
+       "dep": "9.13"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "9.14",
+       "dep": "9.14"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "9.16",
+       "dep": "9.16"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "9.17",
+       "dep": "9.17"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "9.18",
+       "dep": "9.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "9.20",
+       "dep": "9.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002024",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "18.01",
+       "dep": "18.01"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "18.02",
+       "dep": "18.02"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "18.03",
+       "dep": "18.03"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "18.04",
+       "dep": "18.04"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "18.07",
+       "dep": "18.07"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "18.09",
+       "dep": "18.09"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "18.11",
+       "dep": "18.11"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "18.12",
+       "dep": "18.12"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "18.13",
+       "dep": "18.13"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "18.14",
+       "dep": "18.14"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "18.16",
+       "dep": "18.16"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "18.17",
+       "dep": "18.17"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "18.18",
+       "dep": "18.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "18.20",
+       "dep": "18.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002004",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "8.01",
+       "dep": "8.01"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "8.02",
+       "dep": "8.02"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "8.03",
+       "dep": "8.03"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "8.04",
+       "dep": "8.04"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "8.07",
+       "dep": "8.07"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "8.09",
+       "dep": "8.09"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "8.11",
+       "dep": "8.11"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "8.12",
+       "dep": "8.12"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "8.13",
+       "dep": "8.13"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "8.14",
+       "dep": "8.14"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "8.16",
+       "dep": "8.16"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "8.17",
+       "dep": "8.17"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "8.18",
+       "dep": "8.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "8.20",
+       "dep": "8.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002013",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "12.31",
+       "dep": "12.31"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "12.32",
+       "dep": "12.32"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "12.33",
+       "dep": "12.33"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "12.34",
+       "dep": "12.34"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "12.37",
+       "dep": "12.37"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "12.39",
+       "dep": "12.39"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "12.41",
+       "dep": "12.41"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "12.42",
+       "dep": "12.42"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "12.43",
+       "dep": "12.43"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "12.44",
+       "dep": "12.44"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "12.46",
+       "dep": "12.46"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "12.47",
+       "dep": "12.47"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "12.48",
+       "dep": "12.48"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "12.50",
+       "dep": "12.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002022",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "17.01",
+       "dep": "17.01"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "17.02",
+       "dep": "17.02"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "17.03",
+       "dep": "17.03"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "17.04",
+       "dep": "17.04"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "17.05",
+       "dep": "17.05"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "17.07",
+       "dep": "17.07"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "17.09",
+       "dep": "17.09"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "17.10",
+       "dep": "17.10"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "17.11",
+       "dep": "17.11"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "17.12",
+       "dep": "17.12"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "17.13",
+       "dep": "17.13"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "17.14",
+       "dep": "17.14"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "17.16",
+       "dep": "17.16"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "17.17",
+       "dep": "17.17"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "17.18",
+       "dep": "17.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "17.20",
+       "dep": "17.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002027",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "19.31",
+       "dep": "19.31"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "19.32",
+       "dep": "19.32"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "19.33",
+       "dep": "19.33"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "19.34",
+       "dep": "19.34"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "19.35",
+       "dep": "19.35"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "19.37",
+       "dep": "19.37"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "19.39",
+       "dep": "19.39"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "19.40",
+       "dep": "19.40"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "19.41",
+       "dep": "19.41"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "19.42",
+       "dep": "19.42"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "19.43",
+       "dep": "19.43"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "19.44",
+       "dep": "19.44"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "19.46",
+       "dep": "19.46"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "19.47",
+       "dep": "19.47"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "19.48",
+       "dep": "19.48"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "19.50",
+       "dep": "19.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002007",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "9.31",
+       "dep": "9.31"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "9.32",
+       "dep": "9.32"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "9.33",
+       "dep": "9.33"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "9.34",
+       "dep": "9.34"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "9.35",
+       "dep": "9.35"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "9.37",
+       "dep": "9.37"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "9.39",
+       "dep": "9.39"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "9.40",
+       "dep": "9.40"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "9.41",
+       "dep": "9.41"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "9.42",
+       "dep": "9.42"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "9.43",
+       "dep": "9.43"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "9.44",
+       "dep": "9.44"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "9.46",
+       "dep": "9.46"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "9.47",
+       "dep": "9.47"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "9.48",
+       "dep": "9.48"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "9.50",
+       "dep": "9.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002037",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "24.30",
+       "dep": "24.30"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "24.31",
+       "dep": "24.31"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "24.32",
+       "dep": "24.32"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "24.33",
+       "dep": "24.33"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "24.34",
+       "dep": "24.34"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "24.35",
+       "dep": "24.35"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "24.37",
+       "dep": "24.37"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "24.39",
+       "dep": "24.39"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "24.40",
+       "dep": "24.40"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "24.41",
+       "dep": "24.41"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "24.42",
+       "dep": "24.42"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "24.43",
+       "dep": "24.43"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "24.44",
+       "dep": "24.44"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "24.46",
+       "dep": "24.46"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "24.47",
+       "dep": "24.47"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "24.48",
+       "dep": "24.48"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "24.50",
+       "dep": "24.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002011",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "11.31",
+       "dep": "11.31"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "11.32",
+       "dep": "11.32"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "11.33",
+       "dep": "11.33"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "11.34",
+       "dep": "11.34"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "11.35",
+       "dep": "11.35"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "11.37",
+       "dep": "11.37"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "11.39",
+       "dep": "11.39"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "11.40",
+       "dep": "11.40"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "11.41",
+       "dep": "11.41"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "11.42",
+       "dep": "11.42"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "11.43",
+       "dep": "11.43"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "11.44",
+       "dep": "11.44"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "11.46",
+       "dep": "11.46"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "11.47",
+       "dep": "11.47"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "11.48",
+       "dep": "11.48"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "11.50",
+       "dep": "11.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002029",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "20.30",
+       "dep": "20.30"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "20.31",
+       "dep": "20.31"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "20.32",
+       "dep": "20.32"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "20.33",
+       "dep": "20.33"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "20.34",
+       "dep": "20.34"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "20.35",
+       "dep": "20.35"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "20.37",
+       "dep": "20.37"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "20.39",
+       "dep": "20.39"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "20.40",
+       "dep": "20.40"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "20.41",
+       "dep": "20.41"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "20.42",
+       "dep": "20.42"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "20.43",
+       "dep": "20.43"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "20.44",
+       "dep": "20.44"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "20.46",
+       "dep": "20.46"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "20.47",
+       "dep": "20.47"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "20.48",
+       "dep": "20.48"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "20.50",
+       "dep": "20.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002019",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "15.31",
+       "dep": "15.31"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "15.32",
+       "dep": "15.32"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "15.33",
+       "dep": "15.33"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "15.34",
+       "dep": "15.34"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "15.37",
+       "dep": "15.37"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "15.39",
+       "dep": "15.39"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "15.41",
+       "dep": "15.41"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "15.42",
+       "dep": "15.42"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "15.43",
+       "dep": "15.43"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "15.44",
+       "dep": "15.44"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "15.46",
+       "dep": "15.46"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "15.47",
+       "dep": "15.47"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "15.48",
+       "dep": "15.48"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "15.50",
+       "dep": "15.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002040",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "26.00",
+       "dep": "26.00"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "26.01",
+       "dep": "26.01"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "26.02",
+       "dep": "26.02"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "26.03",
+       "dep": "26.03"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "26.04",
+       "dep": "26.04"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "26.05",
+       "dep": "26.05"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "26.07",
+       "dep": "26.07"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "26.09",
+       "dep": "26.09"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "26.10",
+       "dep": "26.10"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "26.11",
+       "dep": "26.11"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "26.12",
+       "dep": "26.12"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "26.13",
+       "dep": "26.13"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "26.14",
+       "dep": "26.14"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "26.16",
+       "dep": "26.16"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "26.17",
+       "dep": "26.17"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "26.18",
+       "dep": "26.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "26.20",
+       "dep": "26.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002023",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "17.31",
+       "dep": "17.31"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "17.32",
+       "dep": "17.32"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "17.33",
+       "dep": "17.33"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "17.34",
+       "dep": "17.34"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "17.35",
+       "dep": "17.35"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "17.37",
+       "dep": "17.37"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "17.39",
+       "dep": "17.39"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "17.40",
+       "dep": "17.40"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "17.41",
+       "dep": "17.41"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "17.42",
+       "dep": "17.42"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "17.43",
+       "dep": "17.43"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "17.44",
+       "dep": "17.44"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "17.46",
+       "dep": "17.46"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "17.47",
+       "dep": "17.47"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "17.48",
+       "dep": "17.48"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "17.50",
+       "dep": "17.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002005",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "8.31",
+       "dep": "8.31"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "8.32",
+       "dep": "8.32"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "8.33",
+       "dep": "8.33"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "8.34",
+       "dep": "8.34"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "8.35",
+       "dep": "8.35"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "8.37",
+       "dep": "8.37"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "8.39",
+       "dep": "8.39"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "8.40",
+       "dep": "8.40"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "8.41",
+       "dep": "8.41"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "8.42",
+       "dep": "8.42"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "8.43",
+       "dep": "8.43"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "8.44",
+       "dep": "8.44"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "8.46",
+       "dep": "8.46"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "8.47",
+       "dep": "8.47"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "8.48",
+       "dep": "8.48"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "8.50",
+       "dep": "8.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002018",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "15.01",
+       "dep": "15.01"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "15.02",
+       "dep": "15.02"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "15.03",
+       "dep": "15.03"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "15.04",
+       "dep": "15.04"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "15.07",
+       "dep": "15.07"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "15.09",
+       "dep": "15.09"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "15.11",
+       "dep": "15.11"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "15.12",
+       "dep": "15.12"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "15.13",
+       "dep": "15.13"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "15.14",
+       "dep": "15.14"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "15.16",
+       "dep": "15.16"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "15.17",
+       "dep": "15.17"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "15.18",
+       "dep": "15.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "15.20",
+       "dep": "15.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002014",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "13.01",
+       "dep": "13.01"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "13.02",
+       "dep": "13.02"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "13.03",
+       "dep": "13.03"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "13.04",
+       "dep": "13.04"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "13.07",
+       "dep": "13.07"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "13.09",
+       "dep": "13.09"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "13.11",
+       "dep": "13.11"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "13.12",
+       "dep": "13.12"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "13.13",
+       "dep": "13.13"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "13.14",
+       "dep": "13.14"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "13.16",
+       "dep": "13.16"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "13.17",
+       "dep": "13.17"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "13.18",
+       "dep": "13.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "13.20",
+       "dep": "13.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002026",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "19.01",
+       "dep": "19.01"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "19.02",
+       "dep": "19.02"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "19.03",
+       "dep": "19.03"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "19.04",
+       "dep": "19.04"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "19.05",
+       "dep": "19.05"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "19.07",
+       "dep": "19.07"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "19.09",
+       "dep": "19.09"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "19.11",
+       "dep": "19.11"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "19.12",
+       "dep": "19.12"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "19.13",
+       "dep": "19.13"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "19.14",
+       "dep": "19.14"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "19.16",
+       "dep": "19.16"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "19.17",
+       "dep": "19.17"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "19.18",
+       "dep": "19.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "19.20",
+       "dep": "19.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002012",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "12.01",
+       "dep": "12.01"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "12.02",
+       "dep": "12.02"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "12.03",
+       "dep": "12.03"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "12.04",
+       "dep": "12.04"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "12.07",
+       "dep": "12.07"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "12.09",
+       "dep": "12.09"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "12.11",
+       "dep": "12.11"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "12.12",
+       "dep": "12.12"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "12.13",
+       "dep": "12.13"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "12.14",
+       "dep": "12.14"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "12.16",
+       "dep": "12.16"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "12.17",
+       "dep": "12.17"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "12.18",
+       "dep": "12.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "12.20",
+       "dep": "12.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002032",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "22.00",
+       "dep": "22.00"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "22.01",
+       "dep": "22.01"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "22.02",
+       "dep": "22.02"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "22.03",
+       "dep": "22.03"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "22.04",
+       "dep": "22.04"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "22.05",
+       "dep": "22.05"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "22.07",
+       "dep": "22.07"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "22.09",
+       "dep": "22.09"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "22.10",
+       "dep": "22.10"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "22.11",
+       "dep": "22.11"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "22.12",
+       "dep": "22.12"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "22.13",
+       "dep": "22.13"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "22.14",
+       "dep": "22.14"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "22.16",
+       "dep": "22.16"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "22.17",
+       "dep": "22.17"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "22.18",
+       "dep": "22.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "22.20",
+       "dep": "22.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002033",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "22.30",
+       "dep": "22.30"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "22.31",
+       "dep": "22.31"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "22.32",
+       "dep": "22.32"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "22.33",
+       "dep": "22.33"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "22.34",
+       "dep": "22.34"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "22.35",
+       "dep": "22.35"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "22.37",
+       "dep": "22.37"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "22.39",
+       "dep": "22.39"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "22.40",
+       "dep": "22.40"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "22.41",
+       "dep": "22.41"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "22.42",
+       "dep": "22.42"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "22.43",
+       "dep": "22.43"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "22.44",
+       "dep": "22.44"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "22.46",
+       "dep": "22.46"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "22.47",
+       "dep": "22.47"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "22.48",
+       "dep": "22.48"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "22.50",
+       "dep": "22.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002034",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "23.00",
+       "dep": "23.00"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "23.01",
+       "dep": "23.01"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "23.02",
+       "dep": "23.02"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "23.03",
+       "dep": "23.03"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "23.04",
+       "dep": "23.04"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "23.05",
+       "dep": "23.05"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "23.07",
+       "dep": "23.07"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "23.09",
+       "dep": "23.09"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "23.10",
+       "dep": "23.10"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "23.11",
+       "dep": "23.11"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "23.12",
+       "dep": "23.12"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "23.13",
+       "dep": "23.13"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "23.14",
+       "dep": "23.14"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "23.16",
+       "dep": "23.16"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "23.17",
+       "dep": "23.17"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "23.18",
+       "dep": "23.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "23.20",
+       "dep": "23.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002036",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "24.00",
+       "dep": "24.00"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "24.01",
+       "dep": "24.01"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "24.02",
+       "dep": "24.02"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "24.03",
+       "dep": "24.03"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "24.04",
+       "dep": "24.04"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "24.05",
+       "dep": "24.05"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "24.07",
+       "dep": "24.07"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "24.09",
+       "dep": "24.09"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "24.10",
+       "dep": "24.10"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "24.11",
+       "dep": "24.11"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "24.12",
+       "dep": "24.12"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "24.13",
+       "dep": "24.13"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "24.14",
+       "dep": "24.14"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "24.16",
+       "dep": "24.16"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "24.17",
+       "dep": "24.17"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "24.18",
+       "dep": "24.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "24.20",
+       "dep": "24.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002002",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "35 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "7.01",
+       "dep": "7.01"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "7.02",
+       "dep": "7.02"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "7.03",
+       "dep": "7.03"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "7.04",
+       "dep": "7.04"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "7.07",
+       "dep": "7.07"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "7.09",
+       "dep": "7.09"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "7.11",
+       "dep": "7.11"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "7.12",
+       "dep": "7.12"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "7.13",
+       "dep": "7.13"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "7.14",
+       "dep": "7.14"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "7.16",
+       "dep": "7.16"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "7.17",
+       "dep": "7.17"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "7.18",
+       "dep": "7.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "7.20",
+       "dep": "7.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002031",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "21.30",
+       "dep": "21.30"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "21.31",
+       "dep": "21.31"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "21.32",
+       "dep": "21.32"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "21.33",
+       "dep": "21.33"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "21.34",
+       "dep": "21.34"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "21.35",
+       "dep": "21.35"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "21.37",
+       "dep": "21.37"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "21.39",
+       "dep": "21.39"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "21.40",
+       "dep": "21.40"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "21.41",
+       "dep": "21.41"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "21.42",
+       "dep": "21.42"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "21.43",
+       "dep": "21.43"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "21.44",
+       "dep": "21.44"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "21.46",
+       "dep": "21.46"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "21.47",
+       "dep": "21.47"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "21.48",
+       "dep": "21.48"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "21.50",
+       "dep": "21.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002008",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "10.01",
+       "dep": "10.01"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "10.02",
+       "dep": "10.02"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "10.03",
+       "dep": "10.03"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "10.04",
+       "dep": "10.04"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "10.05",
+       "dep": "10.05"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "10.07",
+       "dep": "10.07"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "10.09",
+       "dep": "10.09"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "10.10",
+       "dep": "10.10"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "10.11",
+       "dep": "10.11"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "10.12",
+       "dep": "10.12"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "10.13",
+       "dep": "10.13"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "10.14",
+       "dep": "10.14"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "10.16",
+       "dep": "10.16"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "10.17",
+       "dep": "10.17"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "10.18",
+       "dep": "10.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "10.20",
+       "dep": "10.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002038",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "25.00",
+       "dep": "25.00"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "25.01",
+       "dep": "25.01"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "25.02",
+       "dep": "25.02"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "25.03",
+       "dep": "25.03"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "25.04",
+       "dep": "25.04"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "25.05",
+       "dep": "25.05"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "25.07",
+       "dep": "25.07"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "25.09",
+       "dep": "25.09"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "25.10",
+       "dep": "25.10"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "25.11",
+       "dep": "25.11"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "25.12",
+       "dep": "25.12"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "25.13",
+       "dep": "25.13"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "25.14",
+       "dep": "25.14"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "25.16",
+       "dep": "25.16"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "25.17",
+       "dep": "25.17"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "25.18",
+       "dep": "25.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "25.20",
+       "dep": "25.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002025",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "18.31",
+       "dep": "18.31"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "18.32",
+       "dep": "18.32"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "18.33",
+       "dep": "18.33"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "18.34",
+       "dep": "18.34"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "18.35",
+       "dep": "18.35"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "18.37",
+       "dep": "18.37"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "18.39",
+       "dep": "18.39"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "18.40",
+       "dep": "18.40"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "18.41",
+       "dep": "18.41"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "18.42",
+       "dep": "18.42"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "18.43",
+       "dep": "18.43"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "18.44",
+       "dep": "18.44"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "18.46",
+       "dep": "18.46"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "18.47",
+       "dep": "18.47"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "18.48",
+       "dep": "18.48"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "18.50",
+       "dep": "18.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002001",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "35 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "6.31",
+       "dep": "6.31"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "6.32",
+       "dep": "6.32"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "6.33",
+       "dep": "6.33"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "6.34",
+       "dep": "6.34"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "6.37",
+       "dep": "6.37"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "6.39",
+       "dep": "6.39"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "6.41",
+       "dep": "6.41"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "6.42",
+       "dep": "6.42"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "6.43",
+       "dep": "6.43"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "6.44",
+       "dep": "6.44"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "6.46",
+       "dep": "6.46"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "6.47",
+       "dep": "6.47"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "6.48",
+       "dep": "6.48"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "6.50",
+       "dep": "6.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002015",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "13.31",
+       "dep": "13.31"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "13.32",
+       "dep": "13.32"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "13.33",
+       "dep": "13.33"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "13.34",
+       "dep": "13.34"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "13.37",
+       "dep": "13.37"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "13.39",
+       "dep": "13.39"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "13.41",
+       "dep": "13.41"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "13.42",
+       "dep": "13.42"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "13.43",
+       "dep": "13.43"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "13.44",
+       "dep": "13.44"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "13.46",
+       "dep": "13.46"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "13.47",
+       "dep": "13.47"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "13.48",
+       "dep": "13.48"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "13.50",
+       "dep": "13.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002003",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "35 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "7.31",
+       "dep": "7.31"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "7.32",
+       "dep": "7.32"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "7.33",
+       "dep": "7.33"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "7.34",
+       "dep": "7.34"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "7.37",
+       "dep": "7.37"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "7.39",
+       "dep": "7.39"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "7.41",
+       "dep": "7.41"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "7.42",
+       "dep": "7.42"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "7.43",
+       "dep": "7.43"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "7.44",
+       "dep": "7.44"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "7.46",
+       "dep": "7.46"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "7.47",
+       "dep": "7.47"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "7.48",
+       "dep": "7.48"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002035",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "23.30",
+       "dep": "23.30"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "23.31",
+       "dep": "23.31"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "23.32",
+       "dep": "23.32"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "23.33",
+       "dep": "23.33"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "23.34",
+       "dep": "23.34"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "23.35",
+       "dep": "23.35"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "23.37",
+       "dep": "23.37"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "23.39",
+       "dep": "23.39"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "23.40",
+       "dep": "23.40"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "23.41",
+       "dep": "23.41"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "23.42",
+       "dep": "23.42"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "23.43",
+       "dep": "23.43"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "23.44",
+       "dep": "23.44"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "23.46",
+       "dep": "23.46"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "23.47",
+       "dep": "23.47"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "23.48",
+       "dep": "23.48"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "23.50",
+       "dep": "23.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002017",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "14.31",
+       "dep": "14.31"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "14.32",
+       "dep": "14.32"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "14.33",
+       "dep": "14.33"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "14.34",
+       "dep": "14.34"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "14.37",
+       "dep": "14.37"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "14.39",
+       "dep": "14.39"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "14.41",
+       "dep": "14.41"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "14.42",
+       "dep": "14.42"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "14.43",
+       "dep": "14.43"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "14.44",
+       "dep": "14.44"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "14.46",
+       "dep": "14.46"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "14.47",
+       "dep": "14.47"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "14.48",
+       "dep": "14.48"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "14.50",
+       "dep": "14.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002028",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "20.01",
+       "dep": "20.01"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "20.02",
+       "dep": "20.02"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "20.03",
+       "dep": "20.03"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "20.04",
+       "dep": "20.04"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "20.05",
+       "dep": "20.05"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "20.07",
+       "dep": "20.07"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "20.09",
+       "dep": "20.09"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "20.10",
+       "dep": "20.10"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "20.11",
+       "dep": "20.11"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "20.12",
+       "dep": "20.12"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "20.13",
+       "dep": "20.13"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "20.14",
+       "dep": "20.14"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "20.16",
+       "dep": "20.16"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "20.17",
+       "dep": "20.17"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "20.18",
+       "dep": "20.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "20.20",
+       "dep": "20.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002030",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "21.00",
+       "dep": "21.00"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "21.01",
+       "dep": "21.01"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "21.02",
+       "dep": "21.02"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "21.03",
+       "dep": "21.03"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "21.04",
+       "dep": "21.04"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "21.05",
+       "dep": "21.05"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "21.07",
+       "dep": "21.07"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "21.09",
+       "dep": "21.09"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "21.10",
+       "dep": "21.10"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "21.11",
+       "dep": "21.11"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "21.12",
+       "dep": "21.12"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "21.13",
+       "dep": "21.13"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "21.14",
+       "dep": "21.14"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "21.16",
+       "dep": "21.16"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "21.17",
+       "dep": "21.17"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "21.18",
+       "dep": "21.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "21.20",
+       "dep": "21.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002021",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "16.31",
+       "dep": "16.31"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "16.32",
+       "dep": "16.32"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "16.33",
+       "dep": "16.33"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "16.34",
+       "dep": "16.34"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "16.35",
+       "dep": "16.35"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "16.37",
+       "dep": "16.37"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "16.39",
+       "dep": "16.39"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "16.41",
+       "dep": "16.41"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "16.42",
+       "dep": "16.42"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "16.43",
+       "dep": "16.43"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "16.44",
+       "dep": "16.44"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "16.46",
+       "dep": "16.46"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "16.47",
+       "dep": "16.47"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "16.48",
+       "dep": "16.48"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "16.50",
+       "dep": "16.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002039",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "25.30",
+       "dep": "25.30"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "25.31",
+       "dep": "25.31"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "25.32",
+       "dep": "25.32"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "25.33",
+       "dep": "25.33"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "25.34",
+       "dep": "25.34"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "25.35",
+       "dep": "25.35"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "25.37",
+       "dep": "25.37"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "25.39",
+       "dep": "25.39"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "25.40",
+       "dep": "25.40"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "25.41",
+       "dep": "25.41"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "25.42",
+       "dep": "25.42"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "25.43",
+       "dep": "25.43"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "25.44",
+       "dep": "25.44"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "25.46",
+       "dep": "25.46"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "25.47",
+       "dep": "25.47"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "25.48",
+       "dep": "25.48"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "25.50",
+       "dep": "25.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002020",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "16.01",
+       "dep": "16.01"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "16.02",
+       "dep": "16.02"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "16.03",
+       "dep": "16.03"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "16.04",
+       "dep": "16.04"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "16.07",
+       "dep": "16.07"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "16.09",
+       "dep": "16.09"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "16.11",
+       "dep": "16.11"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "16.12",
+       "dep": "16.12"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "16.13",
+       "dep": "16.13"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "16.14",
+       "dep": "16.14"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "16.16",
+       "dep": "16.16"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "16.17",
+       "dep": "16.17"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "16.18",
+       "dep": "16.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "16.20",
+       "dep": "16.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002009",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "10.31",
+       "dep": "10.31"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "10.32",
+       "dep": "10.32"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "10.33",
+       "dep": "10.33"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "10.34",
+       "dep": "10.34"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "10.35",
+       "dep": "10.35"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "10.37",
+       "dep": "10.37"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "10.39",
+       "dep": "10.39"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "10.40",
+       "dep": "10.40"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "10.41",
+       "dep": "10.41"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "10.42",
+       "dep": "10.42"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "10.43",
+       "dep": "10.43"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "10.44",
+       "dep": "10.44"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "10.46",
+       "dep": "10.46"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "10.47",
+       "dep": "10.47"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "10.48",
+       "dep": "10.48"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "10.50",
+       "dep": "10.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002010",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "11.01",
+       "dep": "11.01"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "11.02",
+       "dep": "11.02"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "11.03",
+       "dep": "11.03"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "11.04",
+       "dep": "11.04"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "11.05",
+       "dep": "11.05"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "11.07",
+       "dep": "11.07"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "11.09",
+       "dep": "11.09"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "11.11",
+       "dep": "11.11"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "11.12",
+       "dep": "11.12"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "11.13",
+       "dep": "11.13"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "11.14",
+       "dep": "11.14"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "11.16",
+       "dep": "11.16"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "11.17",
+       "dep": "11.17"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "11.18",
+       "dep": "11.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "11.20",
+       "dep": "11.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "002016",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7002_5 25-11",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 1,
+       "arr": "14.01",
+       "dep": "14.01"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 2,
+       "arr": "14.02",
+       "dep": "14.02"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 3,
+       "arr": "14.03",
+       "dep": "14.03"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 4,
+       "arr": "14.04",
+       "dep": "14.04"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 5,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "SIRACUSA (Via Rodi 9)",
+       "idx": 6,
+       "arr": "14.07",
+       "dep": "14.07"
+      },
+      {
+       "stop": "SIRACUSA (Via Chindemi 17)",
+       "idx": 7,
+       "arr": "14.09",
+       "dep": "14.09"
+      },
+      {
+       "stop": "SIRACUSA (Corso Matteotti 7)",
+       "idx": 8,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "SIRACUSA (Via della Maestranza 84)",
+       "idx": 9,
+       "arr": "14.11",
+       "dep": "14.11"
+      },
+      {
+       "stop": "SIRACUSA (Belvedere San Giacomo)",
+       "idx": 10,
+       "arr": "14.12",
+       "dep": "14.12"
+      },
+      {
+       "stop": "SIRACUSA (Lungomare Vittorini (fronte 56))",
+       "idx": 11,
+       "arr": "14.13",
+       "dep": "14.13"
+      },
+      {
+       "stop": "SIRACUSA (Parcheggio Talete)",
+       "idx": 12,
+       "arr": "14.14",
+       "dep": "14.14"
+      },
+      {
+       "stop": "SIRACUSA (Riva della Posta)",
+       "idx": 13,
+       "arr": "14.16",
+       "dep": "14.16"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "14.17",
+       "dep": "14.17"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "14.18",
+       "dep": "14.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Rubino)",
+       "idx": 16,
+       "arr": "14.20",
+       "dep": "14.20"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

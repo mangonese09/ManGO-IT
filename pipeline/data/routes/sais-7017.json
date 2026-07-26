@@ -1,0 +1,1732 @@
+{
+ "operator": "SAIS Autolinee",
+ "route_id": "sais-7017",
+ "name": "126 Tivoli",
+ "short_name": "7017",
+ "coords": "external",
+ "source": "api.saisautolinee.it line 8c59e047-95ba-4d56-b7a4-657a4aa95cde",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "SIRACUSA (Tivoli Capolinea)",
+    "SIRACUSA (Tivoli Fermata 1)",
+    "SIRACUSA (Tivoli Fermata 2)",
+    "SIRACUSA (Tivoli Fermata 3)",
+    "SIRACUSA (Tivoli Fermata 4)",
+    "SIRACUSA (Tivoli Fermata 5)",
+    "SIRACUSA (Tivoli Fermata 6)",
+    "SIRACUSA (Tivoli Fermata 7)",
+    "SIRACUSA (Tivoli Fermata 8)",
+    "SIRACUSA (Via Necropoli del Fusco (Archimede))",
+    "SIRACUSA (Piazzale della Stazione Centrale)",
+    "SIRACUSA (Corso Umberto I 111)",
+    "SIRACUSA (Piazzale Marconi)",
+    "SIRACUSA (Via Malta 29)",
+    "SIRACUSA (Corso Umberto I 24)",
+    "SIRACUSA (Corso Umberto I (fronte 138))"
+   ],
+   "trips": [
+    {
+     "corsa": "017011",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7017_2",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Tivoli Capolinea)",
+       "idx": 0,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 1)",
+       "idx": 1,
+       "arr": "19.01",
+       "dep": "19.01"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 2)",
+       "idx": 2,
+       "arr": "19.02",
+       "dep": "19.02"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 3)",
+       "idx": 3,
+       "arr": "19.03",
+       "dep": "19.03"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 4)",
+       "idx": 4,
+       "arr": "19.04",
+       "dep": "19.04"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 5)",
+       "idx": 5,
+       "arr": "19.05",
+       "dep": "19.05"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 6)",
+       "idx": 6,
+       "arr": "19.06",
+       "dep": "19.06"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 7)",
+       "idx": 7,
+       "arr": "19.08",
+       "dep": "19.08"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 8)",
+       "idx": 8,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "SIRACUSA (Via Necropoli del Fusco (Archimede))",
+       "idx": 9,
+       "arr": "19.18",
+       "dep": "19.18"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 10,
+       "arr": "19.26",
+       "dep": "19.26"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 11,
+       "arr": "19.26",
+       "dep": "19.26"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 12,
+       "arr": "19.27",
+       "dep": "19.27"
+      },
+      {
+       "stop": "SIRACUSA (Via Malta 29)",
+       "idx": 13,
+       "arr": "19.28",
+       "dep": "19.28"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "19.29",
+       "dep": "19.29"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "19.30",
+       "dep": "19.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "017009",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7017_2",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Tivoli Capolinea)",
+       "idx": 0,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 1)",
+       "idx": 1,
+       "arr": "10.01",
+       "dep": "10.01"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 2)",
+       "idx": 2,
+       "arr": "10.02",
+       "dep": "10.02"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 3)",
+       "idx": 3,
+       "arr": "10.03",
+       "dep": "10.03"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 4)",
+       "idx": 4,
+       "arr": "10.04",
+       "dep": "10.04"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 5)",
+       "idx": 5,
+       "arr": "10.05",
+       "dep": "10.05"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 6)",
+       "idx": 6,
+       "arr": "10.06",
+       "dep": "10.06"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 7)",
+       "idx": 7,
+       "arr": "10.08",
+       "dep": "10.08"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 8)",
+       "idx": 8,
+       "arr": "10.10",
+       "dep": "10.10"
+      },
+      {
+       "stop": "SIRACUSA (Via Necropoli del Fusco (Archimede))",
+       "idx": 9,
+       "arr": "10.18",
+       "dep": "10.18"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 10,
+       "arr": "10.26",
+       "dep": "10.26"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 11,
+       "arr": "10.26",
+       "dep": "10.26"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 12,
+       "arr": "10.27",
+       "dep": "10.27"
+      },
+      {
+       "stop": "SIRACUSA (Via Malta 29)",
+       "idx": 13,
+       "arr": "10.28",
+       "dep": "10.28"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "10.29",
+       "dep": "10.29"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "10.30",
+       "dep": "10.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "017007",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "16 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7017_2",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Tivoli Capolinea)",
+       "idx": 0,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 1)",
+       "idx": 1,
+       "arr": "8.31",
+       "dep": "8.31"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 2)",
+       "idx": 2,
+       "arr": "8.32",
+       "dep": "8.32"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 3)",
+       "idx": 3,
+       "arr": "8.33",
+       "dep": "8.33"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 4)",
+       "idx": 4,
+       "arr": "8.34",
+       "dep": "8.34"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 5)",
+       "idx": 5,
+       "arr": "8.35",
+       "dep": "8.35"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 6)",
+       "idx": 6,
+       "arr": "8.36",
+       "dep": "8.36"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 7)",
+       "idx": 7,
+       "arr": "8.38",
+       "dep": "8.38"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 8)",
+       "idx": 8,
+       "arr": "8.40",
+       "dep": "8.40"
+      },
+      {
+       "stop": "SIRACUSA (Via Necropoli del Fusco (Archimede))",
+       "idx": 9,
+       "arr": "8.48",
+       "dep": "8.48"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 10,
+       "arr": "8.56",
+       "dep": "8.56"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 11,
+       "arr": "8.56",
+       "dep": "8.56"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 12,
+       "arr": "8.57",
+       "dep": "8.57"
+      },
+      {
+       "stop": "SIRACUSA (Via Malta 29)",
+       "idx": 13,
+       "arr": "8.58",
+       "dep": "8.58"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "8.59",
+       "dep": "8.59"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "9.00",
+       "dep": "9.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "017013",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "35 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7017_2",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Tivoli Capolinea)",
+       "idx": 0,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 1)",
+       "idx": 1,
+       "arr": "6.51",
+       "dep": "6.51"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 2)",
+       "idx": 2,
+       "arr": "6.52",
+       "dep": "6.52"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 3)",
+       "idx": 3,
+       "arr": "6.53",
+       "dep": "6.53"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 4)",
+       "idx": 4,
+       "arr": "6.54",
+       "dep": "6.54"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 5)",
+       "idx": 5,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 6)",
+       "idx": 6,
+       "arr": "6.56",
+       "dep": "6.56"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 7)",
+       "idx": 7,
+       "arr": "6.58",
+       "dep": "6.58"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 8)",
+       "idx": 8,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "SIRACUSA (Via Necropoli del Fusco (Archimede))",
+       "idx": 9,
+       "arr": "7.08",
+       "dep": "7.08"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 10,
+       "arr": "7.16",
+       "dep": "7.16"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 11,
+       "arr": "7.16",
+       "dep": "7.16"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 12,
+       "arr": "7.17",
+       "dep": "7.17"
+      },
+      {
+       "stop": "SIRACUSA (Via Malta 29)",
+       "idx": 13,
+       "arr": "7.18",
+       "dep": "7.18"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "7.19",
+       "dep": "7.19"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "7.20",
+       "dep": "7.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "017005",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7017_2",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Tivoli Capolinea)",
+       "idx": 0,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 1)",
+       "idx": 1,
+       "arr": "15.16",
+       "dep": "15.16"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 2)",
+       "idx": 2,
+       "arr": "15.17",
+       "dep": "15.17"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 3)",
+       "idx": 3,
+       "arr": "15.18",
+       "dep": "15.18"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 4)",
+       "idx": 4,
+       "arr": "15.19",
+       "dep": "15.19"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 5)",
+       "idx": 5,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 6)",
+       "idx": 6,
+       "arr": "15.21",
+       "dep": "15.21"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 7)",
+       "idx": 7,
+       "arr": "15.23",
+       "dep": "15.23"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 8)",
+       "idx": 8,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "SIRACUSA (Via Necropoli del Fusco (Archimede))",
+       "idx": 9,
+       "arr": "15.33",
+       "dep": "15.33"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 10,
+       "arr": "15.41",
+       "dep": "15.41"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 11,
+       "arr": "15.41",
+       "dep": "15.41"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 12,
+       "arr": "15.42",
+       "dep": "15.42"
+      },
+      {
+       "stop": "SIRACUSA (Via Malta 29)",
+       "idx": 13,
+       "arr": "15.43",
+       "dep": "15.43"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "15.44",
+       "dep": "15.44"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "15.45",
+       "dep": "15.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "017011",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "52 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7017_6",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Tivoli Capolinea)",
+       "idx": 0,
+       "arr": "20.30",
+       "dep": "20.30"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 1)",
+       "idx": 1,
+       "arr": "20.31",
+       "dep": "20.31"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 2)",
+       "idx": 2,
+       "arr": "20.32",
+       "dep": "20.32"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 3)",
+       "idx": 3,
+       "arr": "20.33",
+       "dep": "20.33"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 4)",
+       "idx": 4,
+       "arr": "20.34",
+       "dep": "20.34"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 5)",
+       "idx": 5,
+       "arr": "20.35",
+       "dep": "20.35"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 6)",
+       "idx": 6,
+       "arr": "20.36",
+       "dep": "20.36"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 7)",
+       "idx": 7,
+       "arr": "20.38",
+       "dep": "20.38"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli Fermata 8)",
+       "idx": 8,
+       "arr": "20.40",
+       "dep": "20.40"
+      },
+      {
+       "stop": "SIRACUSA (Via Necropoli del Fusco (Archimede))",
+       "idx": 9,
+       "arr": "20.48",
+       "dep": "20.48"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale della Stazione Centrale)",
+       "idx": 10,
+       "arr": "20.56",
+       "dep": "20.56"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 111)",
+       "idx": 11,
+       "arr": "20.56",
+       "dep": "20.56"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 12,
+       "arr": "20.57",
+       "dep": "20.57"
+      },
+      {
+       "stop": "SIRACUSA (Via Malta 29)",
+       "idx": 13,
+       "arr": "20.58",
+       "dep": "20.58"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 14,
+       "arr": "20.59",
+       "dep": "20.59"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 15,
+       "arr": "21.00",
+       "dep": "21.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "SIRACUSA (Corso Umberto I (fronte 138))",
+    "SIRACUSA (Corso Gelone 52)",
+    "SIRACUSA (Corso Gelone 90)",
+    "SIRACUSA (Corso Gelone (Ospedale Umberto)",
+    "SIRACUSA (Via Paolo Orsi 2)",
+    "SIRACUSA (Via Necropoli del Fusco (Archimede))",
+    "SIRACUSA (Tivoli fronte fermata 8)",
+    "SIRACUSA (Tivoli fronte fermata 7)",
+    "SIRACUSA (Tivoli fronte fermata 6)",
+    "SIRACUSA (Tivoli fronte fermata 5)",
+    "SIRACUSA (Tivoli fronte fermata 4)",
+    "SIRACUSA (Tivoli fronte fermata 3)",
+    "SIRACUSA (Tivoli fronte fermata 2)",
+    "SIRACUSA (Tivoli fronte fermata 1)",
+    "SIRACUSA (Tivoli fronte Capolinea)"
+   ],
+   "trips": [
+    {
+     "corsa": "017010",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "SR7017_3",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 0,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 52)",
+       "idx": 1,
+       "arr": "18.31",
+       "dep": "18.31"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 90)",
+       "idx": 2,
+       "arr": "18.32",
+       "dep": "18.32"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone (Ospedale Umberto)",
+       "idx": 3,
+       "arr": "18.33",
+       "dep": "18.33"
+      },
+      {
+       "stop": "SIRACUSA (Via Paolo Orsi 2)",
+       "idx": 4,
+       "arr": "18.36",
+       "dep": "18.36"
+      },
+      {
+       "stop": "SIRACUSA (Via Necropoli del Fusco (Archimede))",
+       "idx": 5,
+       "arr": "18.39",
+       "dep": "18.39"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 8)",
+       "idx": 6,
+       "arr": "18.48",
+       "dep": "18.48"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 7)",
+       "idx": 7,
+       "arr": "18.49",
+       "dep": "18.49"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 6)",
+       "idx": 8,
+       "arr": "18.52",
+       "dep": "18.52"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 5)",
+       "idx": 9,
+       "arr": "18.55",
+       "dep": "18.55"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 4)",
+       "idx": 10,
+       "arr": "18.56",
+       "dep": "18.56"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 3)",
+       "idx": 11,
+       "arr": "18.57",
+       "dep": "18.57"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 2)",
+       "idx": 12,
+       "arr": "18.58",
+       "dep": "18.58"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 1)",
+       "idx": 13,
+       "arr": "18.59",
+       "dep": "18.59"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte Capolinea)",
+       "idx": 14,
+       "arr": "19.00",
+       "dep": "19.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "017006",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "SR7017_3",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 0,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 52)",
+       "idx": 1,
+       "arr": "14.46",
+       "dep": "14.46"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 90)",
+       "idx": 2,
+       "arr": "14.47",
+       "dep": "14.47"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone (Ospedale Umberto)",
+       "idx": 3,
+       "arr": "14.48",
+       "dep": "14.48"
+      },
+      {
+       "stop": "SIRACUSA (Via Paolo Orsi 2)",
+       "idx": 4,
+       "arr": "14.51",
+       "dep": "14.51"
+      },
+      {
+       "stop": "SIRACUSA (Via Necropoli del Fusco (Archimede))",
+       "idx": 5,
+       "arr": "14.54",
+       "dep": "14.54"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 8)",
+       "idx": 6,
+       "arr": "15.03",
+       "dep": "15.03"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 7)",
+       "idx": 7,
+       "arr": "15.04",
+       "dep": "15.04"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 6)",
+       "idx": 8,
+       "arr": "15.07",
+       "dep": "15.07"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 5)",
+       "idx": 9,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 4)",
+       "idx": 10,
+       "arr": "15.11",
+       "dep": "15.11"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 3)",
+       "idx": 11,
+       "arr": "15.12",
+       "dep": "15.12"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 2)",
+       "idx": 12,
+       "arr": "15.13",
+       "dep": "15.13"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 1)",
+       "idx": 13,
+       "arr": "15.14",
+       "dep": "15.14"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte Capolinea)",
+       "idx": 14,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "017008",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "16 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "SR7017_3",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 52)",
+       "idx": 1,
+       "arr": "8.01",
+       "dep": "8.01"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 90)",
+       "idx": 2,
+       "arr": "8.02",
+       "dep": "8.02"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone (Ospedale Umberto)",
+       "idx": 3,
+       "arr": "8.03",
+       "dep": "8.03"
+      },
+      {
+       "stop": "SIRACUSA (Via Paolo Orsi 2)",
+       "idx": 4,
+       "arr": "8.06",
+       "dep": "8.06"
+      },
+      {
+       "stop": "SIRACUSA (Via Necropoli del Fusco (Archimede))",
+       "idx": 5,
+       "arr": "8.09",
+       "dep": "8.09"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 8)",
+       "idx": 6,
+       "arr": "8.18",
+       "dep": "8.18"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 7)",
+       "idx": 7,
+       "arr": "8.19",
+       "dep": "8.19"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 6)",
+       "idx": 8,
+       "arr": "8.22",
+       "dep": "8.22"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 5)",
+       "idx": 9,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 4)",
+       "idx": 10,
+       "arr": "8.26",
+       "dep": "8.26"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 3)",
+       "idx": 11,
+       "arr": "8.27",
+       "dep": "8.27"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 2)",
+       "idx": 12,
+       "arr": "8.28",
+       "dep": "8.28"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 1)",
+       "idx": 13,
+       "arr": "8.29",
+       "dep": "8.29"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte Capolinea)",
+       "idx": 14,
+       "arr": "8.30",
+       "dep": "8.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "017010 ",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "SR7017_3",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 0,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 52)",
+       "idx": 1,
+       "arr": "20.01",
+       "dep": "20.01"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 90)",
+       "idx": 2,
+       "arr": "20.02",
+       "dep": "20.02"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone (Ospedale Umberto)",
+       "idx": 3,
+       "arr": "20.03",
+       "dep": "20.03"
+      },
+      {
+       "stop": "SIRACUSA (Via Paolo Orsi 2)",
+       "idx": 4,
+       "arr": "20.06",
+       "dep": "20.06"
+      },
+      {
+       "stop": "SIRACUSA (Via Necropoli del Fusco (Archimede))",
+       "idx": 5,
+       "arr": "20.09",
+       "dep": "20.09"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 8)",
+       "idx": 6,
+       "arr": "20.18",
+       "dep": "20.18"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 7)",
+       "idx": 7,
+       "arr": "20.19",
+       "dep": "20.19"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 6)",
+       "idx": 8,
+       "arr": "20.22",
+       "dep": "20.22"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 5)",
+       "idx": 9,
+       "arr": "20.25",
+       "dep": "20.25"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 4)",
+       "idx": 10,
+       "arr": "20.26",
+       "dep": "20.26"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 3)",
+       "idx": 11,
+       "arr": "20.27",
+       "dep": "20.27"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 2)",
+       "idx": 12,
+       "arr": "20.28",
+       "dep": "20.28"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 1)",
+       "idx": 13,
+       "arr": "20.29",
+       "dep": "20.29"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte Capolinea)",
+       "idx": 14,
+       "arr": "20.30",
+       "dep": "20.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "017002",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "SR7017_3",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 0,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 52)",
+       "idx": 1,
+       "arr": "9.31",
+       "dep": "9.31"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 90)",
+       "idx": 2,
+       "arr": "9.32",
+       "dep": "9.32"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone (Ospedale Umberto)",
+       "idx": 3,
+       "arr": "9.33",
+       "dep": "9.33"
+      },
+      {
+       "stop": "SIRACUSA (Via Paolo Orsi 2)",
+       "idx": 4,
+       "arr": "9.36",
+       "dep": "9.36"
+      },
+      {
+       "stop": "SIRACUSA (Via Necropoli del Fusco (Archimede))",
+       "idx": 5,
+       "arr": "9.39",
+       "dep": "9.39"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 8)",
+       "idx": 6,
+       "arr": "9.48",
+       "dep": "9.48"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 7)",
+       "idx": 7,
+       "arr": "9.49",
+       "dep": "9.49"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 6)",
+       "idx": 8,
+       "arr": "9.52",
+       "dep": "9.52"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 5)",
+       "idx": 9,
+       "arr": "9.55",
+       "dep": "9.55"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 4)",
+       "idx": 10,
+       "arr": "9.56",
+       "dep": "9.56"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 3)",
+       "idx": 11,
+       "arr": "9.57",
+       "dep": "9.57"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 2)",
+       "idx": 12,
+       "arr": "9.58",
+       "dep": "9.58"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte fermata 1)",
+       "idx": 13,
+       "arr": "9.59",
+       "dep": "9.59"
+      },
+      {
+       "stop": "SIRACUSA (Tivoli fronte Capolinea)",
+       "idx": 14,
+       "arr": "10.00",
+       "dep": "10.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

@@ -13,6 +13,9 @@ def to_min(t):
 
 def main():
     coords = json.load(open(os.path.join(ROOT, 'data', 'stop-coords.json'), encoding='utf-8'))
+    sais_f = os.path.join(ROOT, 'data', 'sais-stop-coords.json')
+    if os.path.exists(sais_f):
+        coords.update(json.load(open(sais_f, encoding='utf-8')))
     names, order = {}, []
     trips = []
     for f in sorted(os.listdir(os.path.join(ROOT, 'data', 'routes'))):
@@ -31,9 +34,12 @@ def main():
                     seq.append([names[key], to_min(s['dep'])])
                 if len(seq) >= 2:
                     svc = t['service']
-                    trips.append({'r': r['name'][:60], 'op': r['operator'],
-                                  'd': svc['days'], 'sc': svc['school'],
-                                  'se': svc['season'], 's': seq})
+                    row = {'r': r['name'][:60], 'op': r['operator'],
+                           'd': svc['days'], 'sc': svc['school'],
+                           'se': svc['season'], 's': seq}
+                    if svc.get('explicit_dates'):
+                        row['xd'] = svc['explicit_dates']  # exact ISO dates (SAIS/Albatross)
+                    trips.append(row)
     json.dump(order, open(os.path.join(ROOT, '..', 'server', 'coach-stops.json'), 'w', encoding='utf-8'), ensure_ascii=False)
     json.dump(trips, open(os.path.join(ROOT, '..', 'server', 'coach-trips.json'), 'w', encoding='utf-8'), ensure_ascii=False)
     print(f'{len(order)} coach stops, {len(trips)} trips -> server/coach-{{stops,trips}}.json')

@@ -1,0 +1,454 @@
+{
+ "operator": "SAIS Autolinee",
+ "route_id": "sais-181",
+ "name": "Barrafranca - Pietraperzia - Pergusa - Enna",
+ "short_name": "181",
+ "coords": "external",
+ "source": "api.saisautolinee.it line 07d11ec5-f642-4b48-adbe-20a7ba3e122c",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "BARRAFRANCA (Corso V.Emanuele 462)",
+    "BARRAFRANCA (Corso V.Emanuele 216)",
+    "BARRAFRANCA (Corso Garibaldi 219)",
+    "BARRAFRANCA (Via Campania 7)",
+    "BARRAFRANCA (Corso Garibaldi 453/466)",
+    "BARRAFRANCA (Corso Garibaldi 551)",
+    "BARRAFRANCA (SS191 (C.da Albana))",
+    "PIETRAPERZIA (SS191 (Bivio Luogo))",
+    "PIETRAPERZIA (Viale della Libertà 12/13)",
+    "PIETRAPERZIA (Via G.Marconi 68/71)",
+    "PIETRAPERZIA (Via G.Marconi(incr.Via G.Pastorello))",
+    "PIETRAPERZIA (Viale G.Verdi 122)",
+    "PIETRAPERZIA (SS560 (C.da Marcato Bianco))",
+    "ENNA (SP30 (Bivio Ficodindia))",
+    "BORGO CASCINO (Chiesa)",
+    "ENNA (SS117bis (Bivio Benesiti))",
+    "ENNA (SS117bis (C.da Salinella))",
+    "ENNA (SS117bis (C.da Bruchito))",
+    "ENNA BASSA (Viale dell'Unità d'Italia 49)",
+    "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+    "ENNA BASSA (Via Pergusina (Ospedale))",
+    "ENNA (Terminal Bus Viale Diaz 80)"
+   ],
+   "trips": [
+    {
+     "corsa": "AGGIUNTA 1",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "B.franca C-T-P.perzia-Borgo-Enna",
+     "stops": [
+      {
+       "stop": "BARRAFRANCA (Corso V.Emanuele 462)",
+       "idx": 0,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso V.Emanuele 216)",
+       "idx": 1,
+       "arr": "6.38",
+       "dep": "6.38"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 219)",
+       "idx": 2,
+       "arr": "6.42",
+       "dep": "6.42"
+      },
+      {
+       "stop": "BARRAFRANCA (Via Campania 7)",
+       "idx": 3,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 453/466)",
+       "idx": 4,
+       "arr": "6.46",
+       "dep": "6.46"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 551)",
+       "idx": 5,
+       "arr": "6.47",
+       "dep": "6.47"
+      },
+      {
+       "stop": "BARRAFRANCA (SS191 (C.da Albana))",
+       "idx": 6,
+       "arr": "6.49",
+       "dep": "6.49"
+      },
+      {
+       "stop": "PIETRAPERZIA (SS191 (Bivio Luogo))",
+       "idx": 7,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "PIETRAPERZIA (Viale della Libertà 12/13)",
+       "idx": 8,
+       "arr": "6.58",
+       "dep": "6.58"
+      },
+      {
+       "stop": "PIETRAPERZIA (Via G.Marconi 68/71)",
+       "idx": 9,
+       "arr": "6.59",
+       "dep": "6.59"
+      },
+      {
+       "stop": "PIETRAPERZIA (Via G.Marconi(incr.Via G.Pastorello))",
+       "idx": 10,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "PIETRAPERZIA (Viale G.Verdi 122)",
+       "idx": 11,
+       "arr": "7.01",
+       "dep": "7.01"
+      },
+      {
+       "stop": "PIETRAPERZIA (SS560 (C.da Marcato Bianco))",
+       "idx": 12,
+       "arr": "7.08",
+       "dep": "7.08"
+      },
+      {
+       "stop": "ENNA (SP30 (Bivio Ficodindia))",
+       "idx": 13,
+       "arr": "7.14",
+       "dep": "7.14"
+      },
+      {
+       "stop": "BORGO CASCINO (Chiesa)",
+       "idx": 14,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "ENNA (SS117bis (Bivio Benesiti))",
+       "idx": 15,
+       "arr": "7.22",
+       "dep": "7.22"
+      },
+      {
+       "stop": "ENNA (SS117bis (C.da Salinella))",
+       "idx": 16,
+       "arr": "7.26",
+       "dep": "7.26"
+      },
+      {
+       "stop": "ENNA (SS117bis (C.da Bruchito))",
+       "idx": 17,
+       "arr": "7.28",
+       "dep": "7.28"
+      },
+      {
+       "stop": "ENNA BASSA (Viale dell'Unità d'Italia 49)",
+       "idx": 18,
+       "arr": "7.41",
+       "dep": "7.41"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 19,
+       "arr": "7.43",
+       "dep": "7.43"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "idx": 20,
+       "arr": "7.46",
+       "dep": "7.46"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 21,
+       "arr": "7.58",
+       "dep": "7.58"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "ENNA (Terminal Bus Viale Diaz 80)",
+    "ENNA (Via S.Agata 82)",
+    "ENNA (Via Pergusa 210 (ex Vigorelli))",
+    "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+    "ENNA BASSA (Viale dell'Unità d'Italia(fronte 49))",
+    "ENNA (SS117bis (C.da Bruchito))",
+    "ENNA (SS117bis (C.da Salinella))",
+    "ENNA (SS117bis (Bivio Benesiti))",
+    "BORGO CASCINO (Chiesa)",
+    "ENNA (SP30 (Bivio Ficodindia))",
+    "PIETRAPERZIA (SS560 (C.da Marcato Bianco))",
+    "PIETRAPERZIA (Viale G.Verdi 122)",
+    "PIETRAPERZIA (Via G.Marconi(incr.Via G.Pastorello))",
+    "PIETRAPERZIA (Via G.Marconi 68/71)",
+    "PIETRAPERZIA (Viale della Libertà 12/13)",
+    "PIETRAPERZIA (SS191 (Bivio Luogo))",
+    "BARRAFRANCA (SS191 (C.da Albana))",
+    "BARRAFRANCA (Corso Garibaldi 551)",
+    "BARRAFRANCA (Corso Garibaldi 453/466)",
+    "BARRAFRANCA (Corso V.Emanuele 462)",
+    "BARRAFRANCA (Corso V.Emanuele 216)",
+    "BARRAFRANCA (Corso Garibaldi 219)",
+    "BARRAFRANCA (Via Campania 7)"
+   ],
+   "trips": [
+    {
+     "corsa": "AGGIUNTA 2",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "variant": "Enna-Borgo-P.perzia-B.franca",
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 0,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "ENNA (Via S.Agata 82)",
+       "idx": 1,
+       "arr": "14.21",
+       "dep": "14.21"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
+       "idx": 2,
+       "arr": "14.23",
+       "dep": "14.23"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 3,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "ENNA BASSA (Viale dell'Unità d'Italia(fronte 49))",
+       "idx": 4,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "ENNA (SS117bis (C.da Bruchito))",
+       "idx": 5,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "ENNA (SS117bis (C.da Salinella))",
+       "idx": 6,
+       "arr": "14.47",
+       "dep": "14.47"
+      },
+      {
+       "stop": "ENNA (SS117bis (Bivio Benesiti))",
+       "idx": 7,
+       "arr": "14.51",
+       "dep": "14.51"
+      },
+      {
+       "stop": "BORGO CASCINO (Chiesa)",
+       "idx": 8,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "ENNA (SP30 (Bivio Ficodindia))",
+       "idx": 9,
+       "arr": "15.01",
+       "dep": "15.01"
+      },
+      {
+       "stop": "PIETRAPERZIA (SS560 (C.da Marcato Bianco))",
+       "idx": 10,
+       "arr": "15.07",
+       "dep": "15.07"
+      },
+      {
+       "stop": "PIETRAPERZIA (Viale G.Verdi 122)",
+       "idx": 11,
+       "arr": "15.14",
+       "dep": "15.14"
+      },
+      {
+       "stop": "PIETRAPERZIA (Via G.Marconi(incr.Via G.Pastorello))",
+       "idx": 12,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "PIETRAPERZIA (Via G.Marconi 68/71)",
+       "idx": 13,
+       "arr": "15.16",
+       "dep": "15.16"
+      },
+      {
+       "stop": "PIETRAPERZIA (Viale della Libertà 12/13)",
+       "idx": 14,
+       "arr": "15.17",
+       "dep": "15.17"
+      },
+      {
+       "stop": "PIETRAPERZIA (SS191 (Bivio Luogo))",
+       "idx": 15,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "BARRAFRANCA (SS191 (C.da Albana))",
+       "idx": 16,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 551)",
+       "idx": 17,
+       "arr": "15.27",
+       "dep": "15.27"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 453/466)",
+       "idx": 18,
+       "arr": "15.28",
+       "dep": "15.28"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso V.Emanuele 462)",
+       "idx": 19,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso V.Emanuele 216)",
+       "idx": 20,
+       "arr": "15.33",
+       "dep": "15.33"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 219)",
+       "idx": 21,
+       "arr": "15.37",
+       "dep": "15.37"
+      },
+      {
+       "stop": "BARRAFRANCA (Via Campania 7)",
+       "idx": 22,
+       "arr": "15.40",
+       "dep": "15.40"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

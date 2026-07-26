@@ -1,0 +1,7816 @@
+{
+ "operator": "SAIS Autolinee",
+ "route_id": "sais-8003",
+ "name": "5 Porto - Stazione",
+ "short_name": "8003",
+ "coords": "external",
+ "source": "api.saisautolinee.it line 42ec685c-982f-45fa-aa50-68ea248b8a23",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "MILAZZO (Porto)",
+    "MILAZZO (Piazza Roma 20)",
+    "MILAZZO (Via Risorgimento 91)",
+    "MILAZZO (Via Risorgimento 65)",
+    "MILAZZO (Via Risorgimento 3)",
+    "MILAZZO (Piazza XXV Aprile)",
+    "MILAZZO (Via Magistri 40)",
+    "MILAZZO (Via Ciantro 10)",
+    "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+    "MILAZZO (Via Ciantro 30)",
+    "MILAZZO (Via Ciantro incrocio Marconi)",
+    "MILAZZO (Via Ciantro fronte 57)",
+    "MILAZZO (Viale Gramsci 84)",
+    "MILAZZO (Viale Gramsci 162)",
+    "MILAZZO (Stazione FS)",
+    "MILAZZO (Via Firenze 13 - Corolla accanto Decathlon)"
+   ],
+   "trips": [
+    {
+     "corsa": "005091",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "9 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_18",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "19.50",
+       "dep": "19.50"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "19.52",
+       "dep": "19.52"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "19.53",
+       "dep": "19.53"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "19.54",
+       "dep": "19.54"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "19.55",
+       "dep": "19.55"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "19.56",
+       "dep": "19.56"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "19.57",
+       "dep": "19.57"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "19.58",
+       "dep": "19.58"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "19.59",
+       "dep": "19.59"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "19.59",
+       "dep": "19.59"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "20.01",
+       "dep": "20.01"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "20.03",
+       "dep": "20.03"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "20.04",
+       "dep": "20.04"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "20.05",
+       "dep": "20.05"
+      },
+      {
+       "stop": "MILAZZO (Via Firenze 13 - Corolla accanto Decathlon)",
+       "idx": 15,
+       "arr": "20.10",
+       "dep": "20.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005083",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "9 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_18",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "15.57",
+       "dep": "15.57"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "15.58",
+       "dep": "15.58"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "15.59",
+       "dep": "15.59"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "16.01",
+       "dep": "16.01"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "16.02",
+       "dep": "16.02"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "16.03",
+       "dep": "16.03"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "16.04",
+       "dep": "16.04"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "16.04",
+       "dep": "16.04"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "16.06",
+       "dep": "16.06"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "16.08",
+       "dep": "16.08"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "16.09",
+       "dep": "16.09"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "MILAZZO (Via Firenze 13 - Corolla accanto Decathlon)",
+       "idx": 15,
+       "arr": "16.15",
+       "dep": "16.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005089",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "9 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_18",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "18.50",
+       "dep": "18.50"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "18.52",
+       "dep": "18.52"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "18.53",
+       "dep": "18.53"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "18.54",
+       "dep": "18.54"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "18.55",
+       "dep": "18.55"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "18.56",
+       "dep": "18.56"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "18.57",
+       "dep": "18.57"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "18.58",
+       "dep": "18.58"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "18.59",
+       "dep": "18.59"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "18.59",
+       "dep": "18.59"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "19.01",
+       "dep": "19.01"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "19.03",
+       "dep": "19.03"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "19.04",
+       "dep": "19.04"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "19.05",
+       "dep": "19.05"
+      },
+      {
+       "stop": "MILAZZO (Via Firenze 13 - Corolla accanto Decathlon)",
+       "idx": 15,
+       "arr": "19.10",
+       "dep": "19.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005079",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "9 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_18",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "12.47",
+       "dep": "12.47"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "12.48",
+       "dep": "12.48"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "12.49",
+       "dep": "12.49"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "12.51",
+       "dep": "12.51"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "12.52",
+       "dep": "12.52"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "12.53",
+       "dep": "12.53"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "12.54",
+       "dep": "12.54"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "12.54",
+       "dep": "12.54"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "12.56",
+       "dep": "12.56"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "12.58",
+       "dep": "12.58"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "12.59",
+       "dep": "12.59"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "MILAZZO (Via Firenze 13 - Corolla accanto Decathlon)",
+       "idx": 15,
+       "arr": "13.05",
+       "dep": "13.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005087",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "9 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_18",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "17.45",
+       "dep": "17.45"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "17.47",
+       "dep": "17.47"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "17.48",
+       "dep": "17.48"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "17.49",
+       "dep": "17.49"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "17.50",
+       "dep": "17.50"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "17.51",
+       "dep": "17.51"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "17.52",
+       "dep": "17.52"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "17.53",
+       "dep": "17.53"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "17.54",
+       "dep": "17.54"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "17.54",
+       "dep": "17.54"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "17.55",
+       "dep": "17.55"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "17.56",
+       "dep": "17.56"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "17.58",
+       "dep": "17.58"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "17.59",
+       "dep": "17.59"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "MILAZZO (Via Firenze 13 - Corolla accanto Decathlon)",
+       "idx": 15,
+       "arr": "18.05",
+       "dep": "18.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005073",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "9 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_18",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "9.12",
+       "dep": "9.12"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "9.13",
+       "dep": "9.13"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "9.14",
+       "dep": "9.14"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "9.16",
+       "dep": "9.16"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "9.17",
+       "dep": "9.17"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "9.18",
+       "dep": "9.18"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "9.19",
+       "dep": "9.19"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "9.19",
+       "dep": "9.19"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "9.21",
+       "dep": "9.21"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "9.23",
+       "dep": "9.23"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "9.24",
+       "dep": "9.24"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "9.25",
+       "dep": "9.25"
+      },
+      {
+       "stop": "MILAZZO (Via Firenze 13 - Corolla accanto Decathlon)",
+       "idx": 15,
+       "arr": "9.30",
+       "dep": "9.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005075",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "9 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_18",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "10.02",
+       "dep": "10.02"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "10.03",
+       "dep": "10.03"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "10.04",
+       "dep": "10.04"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "10.05",
+       "dep": "10.05"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "10.06",
+       "dep": "10.06"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "10.07",
+       "dep": "10.07"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "10.08",
+       "dep": "10.08"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "10.09",
+       "dep": "10.09"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "10.09",
+       "dep": "10.09"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "10.10",
+       "dep": "10.10"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "10.11",
+       "dep": "10.11"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "10.13",
+       "dep": "10.13"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "10.14",
+       "dep": "10.14"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "10.15",
+       "dep": "10.15"
+      },
+      {
+       "stop": "MILAZZO (Via Firenze 13 - Corolla accanto Decathlon)",
+       "idx": 15,
+       "arr": "10.20",
+       "dep": "10.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005085",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "9 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_18",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "16.52",
+       "dep": "16.52"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "16.53",
+       "dep": "16.53"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "16.54",
+       "dep": "16.54"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "16.56",
+       "dep": "16.56"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "16.57",
+       "dep": "16.57"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "16.58",
+       "dep": "16.58"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "16.59",
+       "dep": "16.59"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "16.59",
+       "dep": "16.59"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "17.01",
+       "dep": "17.01"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "17.03",
+       "dep": "17.03"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "17.04",
+       "dep": "17.04"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "17.05",
+       "dep": "17.05"
+      },
+      {
+       "stop": "MILAZZO (Via Firenze 13 - Corolla accanto Decathlon)",
+       "idx": 15,
+       "arr": "17.10",
+       "dep": "17.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005077",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "9 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_18",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "11.47",
+       "dep": "11.47"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "11.48",
+       "dep": "11.48"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "11.49",
+       "dep": "11.49"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "11.51",
+       "dep": "11.51"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "11.52",
+       "dep": "11.52"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "11.53",
+       "dep": "11.53"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "11.54",
+       "dep": "11.54"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "11.54",
+       "dep": "11.54"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "11.55",
+       "dep": "11.55"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "11.56",
+       "dep": "11.56"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "11.58",
+       "dep": "11.58"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "11.59",
+       "dep": "11.59"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "MILAZZO (Via Firenze 13 - Corolla accanto Decathlon)",
+       "idx": 15,
+       "arr": "12.05",
+       "dep": "12.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005073",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "8 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_10",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "9.12",
+       "dep": "9.12"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "9.13",
+       "dep": "9.13"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "9.14",
+       "dep": "9.14"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "9.16",
+       "dep": "9.16"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "9.17",
+       "dep": "9.17"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "9.18",
+       "dep": "9.18"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "9.19",
+       "dep": "9.19"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "9.19",
+       "dep": "9.19"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "9.21",
+       "dep": "9.21"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "9.23",
+       "dep": "9.23"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "9.24",
+       "dep": "9.24"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "9.25",
+       "dep": "9.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005049",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "44 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_10",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "12.42",
+       "dep": "12.42"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "12.43",
+       "dep": "12.43"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "12.44",
+       "dep": "12.44"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "12.46",
+       "dep": "12.46"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "12.47",
+       "dep": "12.47"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "12.48",
+       "dep": "12.48"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "12.49",
+       "dep": "12.49"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "12.49",
+       "dep": "12.49"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "12.51",
+       "dep": "12.51"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "12.53",
+       "dep": "12.53"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "12.54",
+       "dep": "12.54"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "12.55",
+       "dep": "12.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005031",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "44 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_10",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "6.57",
+       "dep": "6.57"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "6.58",
+       "dep": "6.58"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "6.59",
+       "dep": "6.59"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "7.01",
+       "dep": "7.01"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "7.02",
+       "dep": "7.02"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "7.03",
+       "dep": "7.03"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "7.04",
+       "dep": "7.04"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "7.04",
+       "dep": "7.04"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "7.06",
+       "dep": "7.06"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "7.08",
+       "dep": "7.08"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "7.09",
+       "dep": "7.09"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "7.10",
+       "dep": "7.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005089",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "8 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_10",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "18.50",
+       "dep": "18.50"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "18.52",
+       "dep": "18.52"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "18.53",
+       "dep": "18.53"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "18.54",
+       "dep": "18.54"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "18.55",
+       "dep": "18.55"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "18.56",
+       "dep": "18.56"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "18.57",
+       "dep": "18.57"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "18.58",
+       "dep": "18.58"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "18.59",
+       "dep": "18.59"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "18.59",
+       "dep": "18.59"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "19.01",
+       "dep": "19.01"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "19.03",
+       "dep": "19.03"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "19.04",
+       "dep": "19.04"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "19.05",
+       "dep": "19.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005041",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "44 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_10",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "9.32",
+       "dep": "9.32"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "9.33",
+       "dep": "9.33"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "9.34",
+       "dep": "9.34"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "9.35",
+       "dep": "9.35"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "9.36",
+       "dep": "9.36"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "9.37",
+       "dep": "9.37"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "9.38",
+       "dep": "9.38"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "9.39",
+       "dep": "9.39"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "9.39",
+       "dep": "9.39"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "9.40",
+       "dep": "9.40"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "9.41",
+       "dep": "9.41"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "9.43",
+       "dep": "9.43"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "9.44",
+       "dep": "9.44"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "9.45",
+       "dep": "9.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005067",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "44 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_10",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "21.00",
+       "dep": "21.00"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "21.02",
+       "dep": "21.02"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "21.03",
+       "dep": "21.03"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "21.04",
+       "dep": "21.04"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "21.05",
+       "dep": "21.05"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "21.06",
+       "dep": "21.06"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "21.07",
+       "dep": "21.07"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "21.08",
+       "dep": "21.08"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "21.09",
+       "dep": "21.09"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "21.09",
+       "dep": "21.09"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "21.10",
+       "dep": "21.10"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "21.11",
+       "dep": "21.11"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "21.13",
+       "dep": "21.13"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "21.14",
+       "dep": "21.14"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "21.15",
+       "dep": "21.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005077",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "8 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_10",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "11.47",
+       "dep": "11.47"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "11.48",
+       "dep": "11.48"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "11.49",
+       "dep": "11.49"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "11.51",
+       "dep": "11.51"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "11.52",
+       "dep": "11.52"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "11.53",
+       "dep": "11.53"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "11.54",
+       "dep": "11.54"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "11.54",
+       "dep": "11.54"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "11.55",
+       "dep": "11.55"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "11.56",
+       "dep": "11.56"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "11.58",
+       "dep": "11.58"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "11.59",
+       "dep": "11.59"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "12.00",
+       "dep": "12.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005085",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "8 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_10",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "16.52",
+       "dep": "16.52"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "16.53",
+       "dep": "16.53"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "16.54",
+       "dep": "16.54"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "16.56",
+       "dep": "16.56"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "16.57",
+       "dep": "16.57"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "16.58",
+       "dep": "16.58"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "16.59",
+       "dep": "16.59"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "16.59",
+       "dep": "16.59"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "17.01",
+       "dep": "17.01"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "17.03",
+       "dep": "17.03"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "17.04",
+       "dep": "17.04"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "17.05",
+       "dep": "17.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005091",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "8 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_10",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "19.50",
+       "dep": "19.50"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "19.52",
+       "dep": "19.52"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "19.53",
+       "dep": "19.53"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "19.54",
+       "dep": "19.54"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "19.55",
+       "dep": "19.55"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "19.56",
+       "dep": "19.56"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "19.57",
+       "dep": "19.57"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "19.58",
+       "dep": "19.58"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "19.59",
+       "dep": "19.59"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "19.59",
+       "dep": "19.59"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "20.01",
+       "dep": "20.01"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "20.03",
+       "dep": "20.03"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "20.04",
+       "dep": "20.04"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "20.05",
+       "dep": "20.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005051",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "44 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_10",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "13.42",
+       "dep": "13.42"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "13.43",
+       "dep": "13.43"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "13.44",
+       "dep": "13.44"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "13.46",
+       "dep": "13.46"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "13.47",
+       "dep": "13.47"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "13.48",
+       "dep": "13.48"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "13.49",
+       "dep": "13.49"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "13.49",
+       "dep": "13.49"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "13.51",
+       "dep": "13.51"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "13.53",
+       "dep": "13.53"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "13.54",
+       "dep": "13.54"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "13.55",
+       "dep": "13.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005043",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "44 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_10",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "10.15",
+       "dep": "10.15"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "10.17",
+       "dep": "10.17"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "10.18",
+       "dep": "10.18"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "10.19",
+       "dep": "10.19"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "10.20",
+       "dep": "10.20"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "10.21",
+       "dep": "10.21"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "10.22",
+       "dep": "10.22"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "10.23",
+       "dep": "10.23"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "10.24",
+       "dep": "10.24"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "10.24",
+       "dep": "10.24"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "10.25",
+       "dep": "10.25"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "10.26",
+       "dep": "10.26"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "10.28",
+       "dep": "10.28"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "10.29",
+       "dep": "10.29"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "10.30",
+       "dep": "10.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005079",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "8 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_10",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "12.47",
+       "dep": "12.47"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "12.48",
+       "dep": "12.48"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "12.49",
+       "dep": "12.49"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "12.51",
+       "dep": "12.51"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "12.52",
+       "dep": "12.52"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "12.53",
+       "dep": "12.53"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "12.54",
+       "dep": "12.54"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "12.54",
+       "dep": "12.54"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "12.56",
+       "dep": "12.56"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "12.58",
+       "dep": "12.58"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "12.59",
+       "dep": "12.59"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "13.00",
+       "dep": "13.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005037",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "44 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_10",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "6.12",
+       "dep": "6.12"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "6.13",
+       "dep": "6.13"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "6.14",
+       "dep": "6.14"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "6.16",
+       "dep": "6.16"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "6.17",
+       "dep": "6.17"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "6.18",
+       "dep": "6.18"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "6.19",
+       "dep": "6.19"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "6.19",
+       "dep": "6.19"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "6.21",
+       "dep": "6.21"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "6.23",
+       "dep": "6.23"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "6.24",
+       "dep": "6.24"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "6.25",
+       "dep": "6.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005057",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "44 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_10",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "17.02",
+       "dep": "17.02"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "17.03",
+       "dep": "17.03"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "17.04",
+       "dep": "17.04"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "17.05",
+       "dep": "17.05"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "17.06",
+       "dep": "17.06"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "17.07",
+       "dep": "17.07"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "17.08",
+       "dep": "17.08"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "17.09",
+       "dep": "17.09"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "17.09",
+       "dep": "17.09"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "17.10",
+       "dep": "17.10"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "17.11",
+       "dep": "17.11"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "17.13",
+       "dep": "17.13"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "17.14",
+       "dep": "17.14"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "17.15",
+       "dep": "17.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005053",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "44 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_10",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "15.02",
+       "dep": "15.02"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "15.03",
+       "dep": "15.03"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "15.04",
+       "dep": "15.04"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "15.06",
+       "dep": "15.06"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "15.07",
+       "dep": "15.07"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "15.08",
+       "dep": "15.08"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "15.09",
+       "dep": "15.09"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "15.09",
+       "dep": "15.09"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "15.11",
+       "dep": "15.11"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "15.13",
+       "dep": "15.13"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "15.14",
+       "dep": "15.14"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005061",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "44 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_10",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "19.15",
+       "dep": "19.15"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "19.17",
+       "dep": "19.17"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "19.18",
+       "dep": "19.18"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "19.19",
+       "dep": "19.19"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "19.21",
+       "dep": "19.21"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "19.22",
+       "dep": "19.22"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "19.23",
+       "dep": "19.23"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "19.24",
+       "dep": "19.24"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "19.24",
+       "dep": "19.24"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "19.25",
+       "dep": "19.25"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "19.26",
+       "dep": "19.26"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "19.28",
+       "dep": "19.28"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "19.29",
+       "dep": "19.29"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "19.30",
+       "dep": "19.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005087",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "8 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_10",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "17.45",
+       "dep": "17.45"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "17.47",
+       "dep": "17.47"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "17.48",
+       "dep": "17.48"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "17.49",
+       "dep": "17.49"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "17.50",
+       "dep": "17.50"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "17.51",
+       "dep": "17.51"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "17.52",
+       "dep": "17.52"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "17.53",
+       "dep": "17.53"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "17.54",
+       "dep": "17.54"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "17.54",
+       "dep": "17.54"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "17.55",
+       "dep": "17.55"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "17.56",
+       "dep": "17.56"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "17.58",
+       "dep": "17.58"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "17.59",
+       "dep": "17.59"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "18.00",
+       "dep": "18.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005069",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "44 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_10",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "8.02",
+       "dep": "8.02"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "8.03",
+       "dep": "8.03"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "8.04",
+       "dep": "8.04"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "8.06",
+       "dep": "8.06"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "8.07",
+       "dep": "8.07"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "8.08",
+       "dep": "8.08"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "8.09",
+       "dep": "8.09"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "8.09",
+       "dep": "8.09"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "8.11",
+       "dep": "8.11"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "8.13",
+       "dep": "8.13"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "8.14",
+       "dep": "8.14"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "8.15",
+       "dep": "8.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005045",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "44 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_10",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "10.45",
+       "dep": "10.45"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "10.47",
+       "dep": "10.47"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "10.48",
+       "dep": "10.48"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "10.49",
+       "dep": "10.49"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "10.50",
+       "dep": "10.50"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "10.51",
+       "dep": "10.51"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "10.52",
+       "dep": "10.52"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "10.53",
+       "dep": "10.53"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "10.54",
+       "dep": "10.54"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "10.54",
+       "dep": "10.54"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "10.55",
+       "dep": "10.55"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "10.56",
+       "dep": "10.56"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "10.58",
+       "dep": "10.58"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "10.59",
+       "dep": "10.59"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "11.00",
+       "dep": "11.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005055",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "44 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_10",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "16.02",
+       "dep": "16.02"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "16.03",
+       "dep": "16.03"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "16.04",
+       "dep": "16.04"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "16.06",
+       "dep": "16.06"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "16.07",
+       "dep": "16.07"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "16.08",
+       "dep": "16.08"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "16.09",
+       "dep": "16.09"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "16.09",
+       "dep": "16.09"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "16.11",
+       "dep": "16.11"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "16.13",
+       "dep": "16.13"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "16.14",
+       "dep": "16.14"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "16.15",
+       "dep": "16.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005063",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "44 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_10",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "19.47",
+       "dep": "19.47"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "19.48",
+       "dep": "19.48"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "19.49",
+       "dep": "19.49"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "19.50",
+       "dep": "19.50"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "19.51",
+       "dep": "19.51"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "19.52",
+       "dep": "19.52"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "19.53",
+       "dep": "19.53"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "19.54",
+       "dep": "19.54"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "19.54",
+       "dep": "19.54"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "19.55",
+       "dep": "19.55"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "19.56",
+       "dep": "19.56"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "19.58",
+       "dep": "19.58"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "19.59",
+       "dep": "19.59"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "20.00",
+       "dep": "20.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005083",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "8 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_10",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "15.57",
+       "dep": "15.57"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "15.58",
+       "dep": "15.58"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "15.59",
+       "dep": "15.59"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "16.01",
+       "dep": "16.01"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "16.02",
+       "dep": "16.02"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "16.03",
+       "dep": "16.03"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "16.04",
+       "dep": "16.04"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "16.04",
+       "dep": "16.04"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "16.06",
+       "dep": "16.06"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "16.08",
+       "dep": "16.08"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "16.09",
+       "dep": "16.09"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "16.10",
+       "dep": "16.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005047",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "44 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_10",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "12.02",
+       "dep": "12.02"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "12.03",
+       "dep": "12.03"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "12.04",
+       "dep": "12.04"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "12.06",
+       "dep": "12.06"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "12.07",
+       "dep": "12.07"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "12.08",
+       "dep": "12.08"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "12.09",
+       "dep": "12.09"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "12.09",
+       "dep": "12.09"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "12.11",
+       "dep": "12.11"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "12.13",
+       "dep": "12.13"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "12.14",
+       "dep": "12.14"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "12.15",
+       "dep": "12.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005075",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "8 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_10",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "10.02",
+       "dep": "10.02"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "10.03",
+       "dep": "10.03"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "10.04",
+       "dep": "10.04"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "10.05",
+       "dep": "10.05"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "10.06",
+       "dep": "10.06"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "10.07",
+       "dep": "10.07"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "10.08",
+       "dep": "10.08"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "10.09",
+       "dep": "10.09"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "10.09",
+       "dep": "10.09"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "10.10",
+       "dep": "10.10"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "10.11",
+       "dep": "10.11"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "10.13",
+       "dep": "10.13"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "10.14",
+       "dep": "10.14"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "10.15",
+       "dep": "10.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005059",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "44 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8003_10",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "18.02",
+       "dep": "18.02"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "18.03",
+       "dep": "18.03"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "18.04",
+       "dep": "18.04"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "18.06",
+       "dep": "18.06"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "18.07",
+       "dep": "18.07"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "18.08",
+       "dep": "18.08"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "18.09",
+       "dep": "18.09"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 9,
+       "arr": "18.09",
+       "dep": "18.09"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 10,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 11,
+       "arr": "18.11",
+       "dep": "18.11"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 12,
+       "arr": "18.13",
+       "dep": "18.13"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 13,
+       "arr": "18.14",
+       "dep": "18.14"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 14,
+       "arr": "18.15",
+       "dep": "18.15"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "MILAZZO (Stazione FS)",
+    "MILAZZO (Viale Gramsci fronte 162)",
+    "MILAZZO (Viale Gramsci 27)",
+    "MILAZZO (Via Ciantro 57)",
+    "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+    "MILAZZO (Via Ciantro 13)",
+    "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+    "MILAZZO (Via Ciantro 3)",
+    "MILAZZO (Via dei Mille)",
+    "MILAZZO (Porto)",
+    "MILAZZO (Via Firenze 13 - Corolla accanto Decathlon)"
+   ],
+   "trips": [
+    {
+     "corsa": "005070",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_5",
+     "stops": [
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 0,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 1,
+       "arr": "8.23",
+       "dep": "8.23"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 2,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 3,
+       "arr": "8.28",
+       "dep": "8.28"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 4,
+       "arr": "8.29",
+       "dep": "8.29"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 5,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 6,
+       "arr": "8.31",
+       "dep": "8.31"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 7,
+       "arr": "8.32",
+       "dep": "8.32"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 8,
+       "arr": "8.33",
+       "dep": "8.33"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 9,
+       "arr": "8.35",
+       "dep": "8.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005074",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "8 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_5",
+     "stops": [
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 0,
+       "arr": "9.40",
+       "dep": "9.40"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 1,
+       "arr": "9.43",
+       "dep": "9.43"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 2,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 3,
+       "arr": "9.48",
+       "dep": "9.48"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 4,
+       "arr": "9.49",
+       "dep": "9.49"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 5,
+       "arr": "9.50",
+       "dep": "9.50"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 6,
+       "arr": "9.51",
+       "dep": "9.51"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 7,
+       "arr": "9.52",
+       "dep": "9.52"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 8,
+       "arr": "9.53",
+       "dep": "9.53"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 9,
+       "arr": "9.55",
+       "dep": "9.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005040",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_5",
+     "stops": [
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 0,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 1,
+       "arr": "7.13",
+       "dep": "7.13"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 2,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 3,
+       "arr": "7.18",
+       "dep": "7.18"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 4,
+       "arr": "7.19",
+       "dep": "7.19"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 5,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 6,
+       "arr": "7.21",
+       "dep": "7.21"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 7,
+       "arr": "7.22",
+       "dep": "7.22"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 8,
+       "arr": "7.23",
+       "dep": "7.23"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 9,
+       "arr": "7.25",
+       "dep": "7.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005086",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "8 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_5",
+     "stops": [
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 0,
+       "arr": "21.00",
+       "dep": "21.00"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 1,
+       "arr": "21.03",
+       "dep": "21.03"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 2,
+       "arr": "21.05",
+       "dep": "21.05"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 3,
+       "arr": "21.08",
+       "dep": "21.08"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 4,
+       "arr": "21.09",
+       "dep": "21.09"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 5,
+       "arr": "21.10",
+       "dep": "21.10"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 6,
+       "arr": "21.11",
+       "dep": "21.11"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 7,
+       "arr": "21.12",
+       "dep": "21.12"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 8,
+       "arr": "21.13",
+       "dep": "21.13"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 9,
+       "arr": "21.15",
+       "dep": "21.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005046",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_5",
+     "stops": [
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 0,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 1,
+       "arr": "11.13",
+       "dep": "11.13"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 2,
+       "arr": "11.15",
+       "dep": "11.15"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 3,
+       "arr": "11.18",
+       "dep": "11.18"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 4,
+       "arr": "11.19",
+       "dep": "11.19"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 5,
+       "arr": "11.20",
+       "dep": "11.20"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 6,
+       "arr": "11.21",
+       "dep": "11.21"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 7,
+       "arr": "11.22",
+       "dep": "11.22"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 8,
+       "arr": "11.23",
+       "dep": "11.23"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 9,
+       "arr": "11.25",
+       "dep": "11.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005048",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_5",
+     "stops": [
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 0,
+       "arr": "12.15",
+       "dep": "12.15"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 1,
+       "arr": "12.18",
+       "dep": "12.18"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 2,
+       "arr": "12.20",
+       "dep": "12.20"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 3,
+       "arr": "12.23",
+       "dep": "12.23"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 4,
+       "arr": "12.24",
+       "dep": "12.24"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 5,
+       "arr": "12.25",
+       "dep": "12.25"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 6,
+       "arr": "12.26",
+       "dep": "12.26"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 7,
+       "arr": "12.27",
+       "dep": "12.27"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 8,
+       "arr": "12.28",
+       "dep": "12.28"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 9,
+       "arr": "12.30",
+       "dep": "12.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005068",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_5",
+     "stops": [
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 0,
+       "arr": "21.30",
+       "dep": "21.30"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 1,
+       "arr": "21.33",
+       "dep": "21.33"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 2,
+       "arr": "21.35",
+       "dep": "21.35"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 3,
+       "arr": "21.38",
+       "dep": "21.38"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 4,
+       "arr": "21.39",
+       "dep": "21.39"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 5,
+       "arr": "21.40",
+       "dep": "21.40"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 6,
+       "arr": "21.41",
+       "dep": "21.41"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 7,
+       "arr": "21.42",
+       "dep": "21.42"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 8,
+       "arr": "21.43",
+       "dep": "21.43"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 9,
+       "arr": "21.45",
+       "dep": "21.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005054",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_5",
+     "stops": [
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 0,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 1,
+       "arr": "15.33",
+       "dep": "15.33"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 2,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 3,
+       "arr": "15.38",
+       "dep": "15.38"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 4,
+       "arr": "15.39",
+       "dep": "15.39"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 5,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 6,
+       "arr": "15.41",
+       "dep": "15.41"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 7,
+       "arr": "15.42",
+       "dep": "15.42"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 8,
+       "arr": "15.43",
+       "dep": "15.43"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 9,
+       "arr": "15.45",
+       "dep": "15.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005076",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "8 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_5",
+     "stops": [
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 0,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 1,
+       "arr": "11.03",
+       "dep": "11.03"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 2,
+       "arr": "11.05",
+       "dep": "11.05"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 3,
+       "arr": "11.08",
+       "dep": "11.08"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 4,
+       "arr": "11.09",
+       "dep": "11.09"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 5,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 6,
+       "arr": "11.11",
+       "dep": "11.11"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 7,
+       "arr": "11.12",
+       "dep": "11.12"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 8,
+       "arr": "11.13",
+       "dep": "11.13"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 9,
+       "arr": "11.15",
+       "dep": "11.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005078",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "8 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_5",
+     "stops": [
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 0,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 1,
+       "arr": "13.13",
+       "dep": "13.13"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 2,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 3,
+       "arr": "13.18",
+       "dep": "13.18"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 4,
+       "arr": "13.19",
+       "dep": "13.19"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 5,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 6,
+       "arr": "13.21",
+       "dep": "13.21"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 7,
+       "arr": "13.22",
+       "dep": "13.22"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 8,
+       "arr": "13.23",
+       "dep": "13.23"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 9,
+       "arr": "13.25",
+       "dep": "13.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005058",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_5",
+     "stops": [
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 0,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 1,
+       "arr": "17.33",
+       "dep": "17.33"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 2,
+       "arr": "17.35",
+       "dep": "17.35"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 3,
+       "arr": "17.38",
+       "dep": "17.38"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 4,
+       "arr": "17.39",
+       "dep": "17.39"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 5,
+       "arr": "17.40",
+       "dep": "17.40"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 6,
+       "arr": "17.41",
+       "dep": "17.41"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 7,
+       "arr": "17.42",
+       "dep": "17.42"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 8,
+       "arr": "17.43",
+       "dep": "17.43"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 9,
+       "arr": "17.45",
+       "dep": "17.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005082",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "8 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_5",
+     "stops": [
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 0,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 1,
+       "arr": "18.08",
+       "dep": "18.08"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 2,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 3,
+       "arr": "18.13",
+       "dep": "18.13"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 4,
+       "arr": "18.14",
+       "dep": "18.14"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 5,
+       "arr": "18.15",
+       "dep": "18.15"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 6,
+       "arr": "18.16",
+       "dep": "18.16"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 7,
+       "arr": "18.17",
+       "dep": "18.17"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 8,
+       "arr": "18.18",
+       "dep": "18.18"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 9,
+       "arr": "18.20",
+       "dep": "18.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005042",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_5",
+     "stops": [
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 0,
+       "arr": "9.50",
+       "dep": "9.50"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 1,
+       "arr": "9.53",
+       "dep": "9.53"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 2,
+       "arr": "9.55",
+       "dep": "9.55"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 3,
+       "arr": "9.58",
+       "dep": "9.58"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 4,
+       "arr": "9.59",
+       "dep": "9.59"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 5,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 6,
+       "arr": "10.01",
+       "dep": "10.01"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 7,
+       "arr": "10.02",
+       "dep": "10.02"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 8,
+       "arr": "10.03",
+       "dep": "10.03"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 9,
+       "arr": "10.05",
+       "dep": "10.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005052",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_5",
+     "stops": [
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 0,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 1,
+       "arr": "19.33",
+       "dep": "19.33"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 2,
+       "arr": "19.35",
+       "dep": "19.35"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 3,
+       "arr": "19.38",
+       "dep": "19.38"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 4,
+       "arr": "19.39",
+       "dep": "19.39"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 5,
+       "arr": "19.40",
+       "dep": "19.40"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 6,
+       "arr": "19.41",
+       "dep": "19.41"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 7,
+       "arr": "19.42",
+       "dep": "19.42"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 8,
+       "arr": "19.43",
+       "dep": "19.43"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 9,
+       "arr": "19.45",
+       "dep": "19.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005060",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_5",
+     "stops": [
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 0,
+       "arr": "18.35",
+       "dep": "18.35"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 1,
+       "arr": "18.38",
+       "dep": "18.38"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 2,
+       "arr": "18.40",
+       "dep": "18.40"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 3,
+       "arr": "18.43",
+       "dep": "18.43"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 4,
+       "arr": "18.44",
+       "dep": "18.44"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 5,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 6,
+       "arr": "18.46",
+       "dep": "18.46"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 7,
+       "arr": "18.47",
+       "dep": "18.47"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 8,
+       "arr": "18.48",
+       "dep": "18.48"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 9,
+       "arr": "18.50",
+       "dep": "18.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005056",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_5",
+     "stops": [
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 0,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 1,
+       "arr": "16.33",
+       "dep": "16.33"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 2,
+       "arr": "16.35",
+       "dep": "16.35"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 3,
+       "arr": "16.38",
+       "dep": "16.38"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 4,
+       "arr": "16.39",
+       "dep": "16.39"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 5,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 6,
+       "arr": "16.41",
+       "dep": "16.41"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 7,
+       "arr": "16.42",
+       "dep": "16.42"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 8,
+       "arr": "16.43",
+       "dep": "16.43"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 9,
+       "arr": "16.45",
+       "dep": "16.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005038",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_5",
+     "stops": [
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 0,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 1,
+       "arr": "6.43",
+       "dep": "6.43"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 2,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 3,
+       "arr": "6.48",
+       "dep": "6.48"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 4,
+       "arr": "6.49",
+       "dep": "6.49"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 5,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 6,
+       "arr": "6.51",
+       "dep": "6.51"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 7,
+       "arr": "6.52",
+       "dep": "6.52"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 8,
+       "arr": "6.53",
+       "dep": "6.53"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 9,
+       "arr": "6.55",
+       "dep": "6.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005064",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_5",
+     "stops": [
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 0,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 1,
+       "arr": "20.03",
+       "dep": "20.03"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 2,
+       "arr": "20.05",
+       "dep": "20.05"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 3,
+       "arr": "20.08",
+       "dep": "20.08"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 4,
+       "arr": "20.09",
+       "dep": "20.09"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 5,
+       "arr": "20.10",
+       "dep": "20.10"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 6,
+       "arr": "20.11",
+       "dep": "20.11"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 7,
+       "arr": "20.12",
+       "dep": "20.12"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 8,
+       "arr": "20.13",
+       "dep": "20.13"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 9,
+       "arr": "20.15",
+       "dep": "20.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005052",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_5",
+     "stops": [
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 0,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 1,
+       "arr": "14.08",
+       "dep": "14.08"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 2,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 3,
+       "arr": "14.13",
+       "dep": "14.13"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 4,
+       "arr": "14.14",
+       "dep": "14.14"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 5,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 6,
+       "arr": "14.16",
+       "dep": "14.16"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 7,
+       "arr": "14.17",
+       "dep": "14.17"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 8,
+       "arr": "14.18",
+       "dep": "14.18"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 9,
+       "arr": "14.20",
+       "dep": "14.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005050",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_5",
+     "stops": [
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 0,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 1,
+       "arr": "13.18",
+       "dep": "13.18"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 2,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 3,
+       "arr": "13.23",
+       "dep": "13.23"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 4,
+       "arr": "13.24",
+       "dep": "13.24"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 5,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 6,
+       "arr": "13.26",
+       "dep": "13.26"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 7,
+       "arr": "13.27",
+       "dep": "13.27"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 8,
+       "arr": "13.28",
+       "dep": "13.28"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 9,
+       "arr": "13.30",
+       "dep": "13.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005084",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "8 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_5",
+     "stops": [
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 0,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 1,
+       "arr": "19.23",
+       "dep": "19.23"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 2,
+       "arr": "19.25",
+       "dep": "19.25"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 3,
+       "arr": "19.28",
+       "dep": "19.28"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 4,
+       "arr": "19.29",
+       "dep": "19.29"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 5,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 6,
+       "arr": "19.31",
+       "dep": "19.31"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 7,
+       "arr": "19.32",
+       "dep": "19.32"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 8,
+       "arr": "19.33",
+       "dep": "19.33"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 9,
+       "arr": "19.35",
+       "dep": "19.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005044",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_5",
+     "stops": [
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 0,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 1,
+       "arr": "10.33",
+       "dep": "10.33"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 2,
+       "arr": "10.35",
+       "dep": "10.35"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 3,
+       "arr": "10.38",
+       "dep": "10.38"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 4,
+       "arr": "10.39",
+       "dep": "10.39"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 5,
+       "arr": "10.40",
+       "dep": "10.40"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 6,
+       "arr": "10.41",
+       "dep": "10.41"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 7,
+       "arr": "10.42",
+       "dep": "10.42"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 8,
+       "arr": "10.43",
+       "dep": "10.43"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 9,
+       "arr": "10.45",
+       "dep": "10.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005082",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "9 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_19",
+     "stops": [
+      {
+       "stop": "MILAZZO (Via Firenze 13 - Corolla accanto Decathlon)",
+       "idx": 0,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 1,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 2,
+       "arr": "18.13",
+       "dep": "18.13"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 3,
+       "arr": "18.15",
+       "dep": "18.15"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 4,
+       "arr": "18.18",
+       "dep": "18.18"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 5,
+       "arr": "18.19",
+       "dep": "18.19"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 6,
+       "arr": "18.20",
+       "dep": "18.20"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 7,
+       "arr": "18.21",
+       "dep": "18.21"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 8,
+       "arr": "18.22",
+       "dep": "18.22"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 9,
+       "arr": "18.23",
+       "dep": "18.23"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 10,
+       "arr": "18.25",
+       "dep": "18.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005086",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "9 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_19",
+     "stops": [
+      {
+       "stop": "MILAZZO (Via Firenze 13 - Corolla accanto Decathlon)",
+       "idx": 0,
+       "arr": "20.55",
+       "dep": "20.55"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 1,
+       "arr": "21.00",
+       "dep": "21.00"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 2,
+       "arr": "21.03",
+       "dep": "21.03"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 3,
+       "arr": "21.05",
+       "dep": "21.05"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 4,
+       "arr": "21.08",
+       "dep": "21.08"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 5,
+       "arr": "21.09",
+       "dep": "21.09"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 6,
+       "arr": "21.10",
+       "dep": "21.10"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 7,
+       "arr": "21.11",
+       "dep": "21.11"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 8,
+       "arr": "21.12",
+       "dep": "21.12"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 9,
+       "arr": "21.13",
+       "dep": "21.13"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 10,
+       "arr": "21.15",
+       "dep": "21.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005084",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "9 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_19",
+     "stops": [
+      {
+       "stop": "MILAZZO (Via Firenze 13 - Corolla accanto Decathlon)",
+       "idx": 0,
+       "arr": "19.15",
+       "dep": "19.15"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 1,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 2,
+       "arr": "19.23",
+       "dep": "19.23"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 3,
+       "arr": "19.25",
+       "dep": "19.25"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 4,
+       "arr": "19.28",
+       "dep": "19.28"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 5,
+       "arr": "19.29",
+       "dep": "19.29"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 6,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 7,
+       "arr": "19.31",
+       "dep": "19.31"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 8,
+       "arr": "19.32",
+       "dep": "19.32"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 9,
+       "arr": "19.33",
+       "dep": "19.33"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 10,
+       "arr": "19.35",
+       "dep": "19.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005092",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "9 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_19",
+     "stops": [
+      {
+       "stop": "MILAZZO (Via Firenze 13 - Corolla accanto Decathlon)",
+       "idx": 0,
+       "arr": "17.25",
+       "dep": "17.25"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 1,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 2,
+       "arr": "17.33",
+       "dep": "17.33"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 3,
+       "arr": "17.35",
+       "dep": "17.35"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 4,
+       "arr": "17.38",
+       "dep": "17.38"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 5,
+       "arr": "17.39",
+       "dep": "17.39"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 6,
+       "arr": "17.40",
+       "dep": "17.40"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 7,
+       "arr": "17.41",
+       "dep": "17.41"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 8,
+       "arr": "17.42",
+       "dep": "17.42"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 9,
+       "arr": "17.43",
+       "dep": "17.43"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 10,
+       "arr": "17.45",
+       "dep": "17.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005074",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "9 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_19",
+     "stops": [
+      {
+       "stop": "MILAZZO (Via Firenze 13 - Corolla accanto Decathlon)",
+       "idx": 0,
+       "arr": "9.35",
+       "dep": "9.35"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 1,
+       "arr": "9.40",
+       "dep": "9.40"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 2,
+       "arr": "9.43",
+       "dep": "9.43"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 3,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 4,
+       "arr": "9.48",
+       "dep": "9.48"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 5,
+       "arr": "9.49",
+       "dep": "9.49"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 6,
+       "arr": "9.50",
+       "dep": "9.50"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 7,
+       "arr": "9.51",
+       "dep": "9.51"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 8,
+       "arr": "9.52",
+       "dep": "9.52"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 9,
+       "arr": "9.53",
+       "dep": "9.53"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 10,
+       "arr": "9.55",
+       "dep": "9.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005088",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "9 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_19",
+     "stops": [
+      {
+       "stop": "MILAZZO (Via Firenze 13 - Corolla accanto Decathlon)",
+       "idx": 0,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 1,
+       "arr": "12.15",
+       "dep": "12.15"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 2,
+       "arr": "12.18",
+       "dep": "12.18"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 3,
+       "arr": "12.20",
+       "dep": "12.20"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 4,
+       "arr": "12.23",
+       "dep": "12.23"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 5,
+       "arr": "12.24",
+       "dep": "12.24"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 6,
+       "arr": "12.25",
+       "dep": "12.25"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 7,
+       "arr": "12.26",
+       "dep": "12.26"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 8,
+       "arr": "12.27",
+       "dep": "12.27"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 9,
+       "arr": "12.28",
+       "dep": "12.28"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 10,
+       "arr": "12.30",
+       "dep": "12.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005078",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "9 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_19",
+     "stops": [
+      {
+       "stop": "MILAZZO (Via Firenze 13 - Corolla accanto Decathlon)",
+       "idx": 0,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 1,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 2,
+       "arr": "13.13",
+       "dep": "13.13"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 3,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 4,
+       "arr": "13.18",
+       "dep": "13.18"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 5,
+       "arr": "13.19",
+       "dep": "13.19"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 6,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 7,
+       "arr": "13.21",
+       "dep": "13.21"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 8,
+       "arr": "13.22",
+       "dep": "13.22"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 9,
+       "arr": "13.23",
+       "dep": "13.23"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 10,
+       "arr": "13.25",
+       "dep": "13.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005076",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "9 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_19",
+     "stops": [
+      {
+       "stop": "MILAZZO (Via Firenze 13 - Corolla accanto Decathlon)",
+       "idx": 0,
+       "arr": "10.55",
+       "dep": "10.55"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 1,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 2,
+       "arr": "11.03",
+       "dep": "11.03"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 3,
+       "arr": "11.05",
+       "dep": "11.05"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 4,
+       "arr": "11.08",
+       "dep": "11.08"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 5,
+       "arr": "11.09",
+       "dep": "11.09"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 6,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 7,
+       "arr": "11.11",
+       "dep": "11.11"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 8,
+       "arr": "11.12",
+       "dep": "11.12"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 9,
+       "arr": "11.13",
+       "dep": "11.13"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 10,
+       "arr": "11.15",
+       "dep": "11.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "005090",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "9 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "MIL8003_19",
+     "stops": [
+      {
+       "stop": "MILAZZO (Via Firenze 13 - Corolla accanto Decathlon)",
+       "idx": 0,
+       "arr": "16.25",
+       "dep": "16.25"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 1,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 2,
+       "arr": "16.33",
+       "dep": "16.33"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 3,
+       "arr": "16.35",
+       "dep": "16.35"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 4,
+       "arr": "16.38",
+       "dep": "16.38"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 5,
+       "arr": "16.39",
+       "dep": "16.39"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 6,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 7,
+       "arr": "16.41",
+       "dep": "16.41"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 8,
+       "arr": "16.42",
+       "dep": "16.42"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 9,
+       "arr": "16.43",
+       "dep": "16.43"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 10,
+       "arr": "16.45",
+       "dep": "16.45"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

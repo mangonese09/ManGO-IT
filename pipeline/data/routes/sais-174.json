@@ -1,0 +1,910 @@
+{
+ "operator": "SAIS Autolinee",
+ "route_id": "sais-174",
+ "name": "Caltagirone - P. Armerina - Enna - dir.Aidone - dev. Valguarnera",
+ "short_name": "174",
+ "coords": "external",
+ "source": "api.saisautolinee.it line bafba53f-376b-4512-88ec-7d81494c4650",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "AIDONE (Piazza Generale Cultreri)",
+    "PIAZZA ARMERINA (SS288 (Bivio Bellia))",
+    "ENNA (SS117bis (Parco Ronza))",
+    "ENNA (SP4 (Floristella))",
+    "VALGUARNERA (Via L.Sturzo(Scuola Mazzini))",
+    "ENNA (SP4 (Bivio Grottacalda))",
+    "PERGUSA (Viale dei Miti 56(incr.Via Nettuno))",
+    "PERGUSA (Viale dei Miti 27 (rifornimento))",
+    "ENNA BASSA (Via Pergusina (Ospedale))",
+    "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+    "ENNA (Terminal Bus Viale Diaz 80)",
+    "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
+    "CALTAGIRONE (Viale Sicilia)",
+    "CALTAGIRONE (SP37ii (C.da Salvatorello))",
+    "CALTAGIRONE (SP37i (Bivio Tempio))",
+    "MIRABELLA IMBACCARI (Via G.Lupis(incr.Piazza A.Moro))",
+    "PIAZZA ARMERINA (SP16 (case Liuzzo))",
+    "ENNA (SS121 (incr.SS290))",
+    "ENNA (SP3)",
+    "ENNA (Stazione fs)"
+   ],
+   "trips": [
+    {
+     "corsa": "AGGIUNTA 6",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "Aid-Valg-Perg-En 2",
+     "stops": [
+      {
+       "stop": "AIDONE (Piazza Generale Cultreri)",
+       "idx": 0,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SS288 (Bivio Bellia))",
+       "idx": 1,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "ENNA (SS117bis (Parco Ronza))",
+       "idx": 2,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "ENNA (SP4 (Floristella))",
+       "idx": 3,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "VALGUARNERA (Via L.Sturzo(Scuola Mazzini))",
+       "idx": 4,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "ENNA (SP4 (Floristella))",
+       "idx": 5,
+       "arr": "7.09",
+       "dep": "7.09"
+      },
+      {
+       "stop": "ENNA (SP4 (Bivio Grottacalda))",
+       "idx": 6,
+       "arr": "7.13",
+       "dep": "7.13"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti 56(incr.Via Nettuno))",
+       "idx": 7,
+       "arr": "7.23",
+       "dep": "7.23"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
+       "idx": 8,
+       "arr": "7.24",
+       "dep": "7.24"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "idx": 9,
+       "arr": "7.32",
+       "dep": "7.32"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 10,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 11,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "AGGIUNTA 7",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "P.Arm-Valg-Perg-En 2",
+     "stops": [
+      {
+       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
+       "idx": 0,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "ENNA (SS117bis (Parco Ronza))",
+       "idx": 1,
+       "arr": "7.46",
+       "dep": "7.46"
+      },
+      {
+       "stop": "ENNA (SP4 (Floristella))",
+       "idx": 2,
+       "arr": "7.53",
+       "dep": "7.53"
+      },
+      {
+       "stop": "VALGUARNERA (Via L.Sturzo(Scuola Mazzini))",
+       "idx": 3,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "ENNA (SP4 (Floristella))",
+       "idx": 4,
+       "arr": "8.06",
+       "dep": "8.06"
+      },
+      {
+       "stop": "ENNA (SP4 (Bivio Grottacalda))",
+       "idx": 5,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti 56(incr.Via Nettuno))",
+       "idx": 6,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
+       "idx": 7,
+       "arr": "8.21",
+       "dep": "8.21"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "idx": 8,
+       "arr": "8.28",
+       "dep": "8.28"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 9,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 10,
+       "arr": "8.40",
+       "dep": "8.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "AGGIUNTA 5",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "35 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11"
+      ]
+     },
+     "reverse": false,
+     "variant": "C.gir-En-FS",
+     "stops": [
+      {
+       "stop": "CALTAGIRONE (Viale Sicilia)",
+       "idx": 0,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "CALTAGIRONE (SP37ii (C.da Salvatorello))",
+       "idx": 1,
+       "arr": "6.23",
+       "dep": "6.23"
+      },
+      {
+       "stop": "CALTAGIRONE (SP37i (Bivio Tempio))",
+       "idx": 2,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "MIRABELLA IMBACCARI (Via G.Lupis(incr.Piazza A.Moro))",
+       "idx": 3,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP16 (case Liuzzo))",
+       "idx": 4,
+       "arr": "6.58",
+       "dep": "6.58"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
+       "idx": 5,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "ENNA (SS117bis (Parco Ronza))",
+       "idx": 6,
+       "arr": "7.11",
+       "dep": "7.11"
+      },
+      {
+       "stop": "ENNA (SP4 (Bivio Grottacalda))",
+       "idx": 7,
+       "arr": "7.14",
+       "dep": "7.14"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti 56(incr.Via Nettuno))",
+       "idx": 8,
+       "arr": "7.24",
+       "dep": "7.24"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
+       "idx": 9,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "idx": 10,
+       "arr": "7.33",
+       "dep": "7.33"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 11,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 12,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "ENNA (SS121 (incr.SS290))",
+       "idx": 13,
+       "arr": "7.56",
+       "dep": "7.56"
+      },
+      {
+       "stop": "ENNA (SP3)",
+       "idx": 14,
+       "arr": "7.59",
+       "dep": "7.59"
+      },
+      {
+       "stop": "ENNA (Stazione fs)",
+       "idx": 15,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "ENNA (Terminal Bus Viale Diaz 80)",
+    "ENNA (Via S.Agata 82)",
+    "ENNA (Via Pergusa 210 (ex Vigorelli))",
+    "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+    "ENNA BASSA (Via Pergusina (Ospedale))",
+    "PERGUSA (Viale dei Miti 22)",
+    "PERGUSA (Viale dei Miti (incr.Via Apollo))",
+    "ENNA (SP4 (Bivio Grottacalda))",
+    "ENNA (SP4 (Floristella))",
+    "VALGUARNERA (Via L.Sturzo(Scuola Mazzini))",
+    "ENNA (SS117bis (Parco Ronza))",
+    "PIAZZA ARMERINA (SS288 (Bivio Bellia))",
+    "AIDONE (Piazza Generale Cultreri)",
+    "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
+    "ENNA (Stazione fs)",
+    "ENNA (SP3)",
+    "ENNA (SS121 (incr.SS290))",
+    "ENNA (Corso Sicilia 2)",
+    "PIAZZA ARMERINA (SP16 (case Liuzzo))",
+    "MIRABELLA IMBACCARI (Via G.Lupis(incr.Piazza A.Moro))",
+    "CALTAGIRONE (SP37i (Bivio Tempio))",
+    "CALTAGIRONE (SP37ii (C.da Salvatorello))",
+    "CALTAGIRONE (Viale Sicilia)"
+   ],
+   "trips": [
+    {
+     "corsa": "AGGIUNTA 9",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "variant": "En-Perg-Valg-Aid",
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 0,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "ENNA (Via S.Agata 82)",
+       "idx": 1,
+       "arr": "14.21",
+       "dep": "14.21"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
+       "idx": 2,
+       "arr": "14.23",
+       "dep": "14.23"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 3,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "idx": 4,
+       "arr": "14.33",
+       "dep": "14.33"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti 22)",
+       "idx": 5,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti (incr.Via Apollo))",
+       "idx": 6,
+       "arr": "14.41",
+       "dep": "14.41"
+      },
+      {
+       "stop": "ENNA (SP4 (Bivio Grottacalda))",
+       "idx": 7,
+       "arr": "14.51",
+       "dep": "14.51"
+      },
+      {
+       "stop": "ENNA (SP4 (Floristella))",
+       "idx": 8,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "VALGUARNERA (Via L.Sturzo(Scuola Mazzini))",
+       "idx": 9,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "ENNA (SP4 (Floristella))",
+       "idx": 10,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "ENNA (SS117bis (Parco Ronza))",
+       "idx": 11,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SS288 (Bivio Bellia))",
+       "idx": 12,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "AIDONE (Piazza Generale Cultreri)",
+       "idx": 13,
+       "arr": "15.25",
+       "dep": "15.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "AGGIUNTA 8",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "variant": "En-Perg-Valg-P.Arm",
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 0,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "ENNA (Via S.Agata 82)",
+       "idx": 1,
+       "arr": "13.01",
+       "dep": "13.01"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
+       "idx": 2,
+       "arr": "13.03",
+       "dep": "13.03"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 3,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "idx": 4,
+       "arr": "13.13",
+       "dep": "13.13"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti 22)",
+       "idx": 5,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti (incr.Via Apollo))",
+       "idx": 6,
+       "arr": "13.21",
+       "dep": "13.21"
+      },
+      {
+       "stop": "ENNA (SP4 (Bivio Grottacalda))",
+       "idx": 7,
+       "arr": "13.31",
+       "dep": "13.31"
+      },
+      {
+       "stop": "ENNA (SP4 (Floristella))",
+       "idx": 8,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "VALGUARNERA (Via L.Sturzo(Scuola Mazzini))",
+       "idx": 9,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "ENNA (SP4 (Floristella))",
+       "idx": 10,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "ENNA (SS117bis (Parco Ronza))",
+       "idx": 11,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
+       "idx": 12,
+       "arr": "13.55",
+       "dep": "13.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "AGGIUNTA 10",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "35 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11"
+      ]
+     },
+     "reverse": true,
+     "variant": "EnFS-C.gir",
+     "stops": [
+      {
+       "stop": "ENNA (Stazione fs)",
+       "idx": 0,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "ENNA (SP3)",
+       "idx": 1,
+       "arr": "17.31",
+       "dep": "17.31"
+      },
+      {
+       "stop": "ENNA (SS121 (incr.SS290))",
+       "idx": 2,
+       "arr": "17.34",
+       "dep": "17.34"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 3,
+       "arr": "17.44",
+       "dep": "17.44"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 4,
+       "arr": "17.45",
+       "dep": "17.45"
+      },
+      {
+       "stop": "ENNA (Via S.Agata 82)",
+       "idx": 5,
+       "arr": "17.46",
+       "dep": "17.46"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
+       "idx": 6,
+       "arr": "17.48",
+       "dep": "17.48"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 7,
+       "arr": "17.55",
+       "dep": "17.55"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "idx": 8,
+       "arr": "17.58",
+       "dep": "17.58"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti 22)",
+       "idx": 9,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti (incr.Via Apollo))",
+       "idx": 10,
+       "arr": "18.06",
+       "dep": "18.06"
+      },
+      {
+       "stop": "ENNA (SP4 (Bivio Grottacalda))",
+       "idx": 11,
+       "arr": "18.16",
+       "dep": "18.16"
+      },
+      {
+       "stop": "ENNA (SS117bis (Parco Ronza))",
+       "idx": 12,
+       "arr": "18.19",
+       "dep": "18.19"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
+       "idx": 13,
+       "arr": "18.25",
+       "dep": "18.25"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP16 (case Liuzzo))",
+       "idx": 14,
+       "arr": "18.32",
+       "dep": "18.32"
+      },
+      {
+       "stop": "MIRABELLA IMBACCARI (Via G.Lupis(incr.Piazza A.Moro))",
+       "idx": 15,
+       "arr": "18.50",
+       "dep": "18.50"
+      },
+      {
+       "stop": "CALTAGIRONE (SP37i (Bivio Tempio))",
+       "idx": 16,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "CALTAGIRONE (SP37ii (C.da Salvatorello))",
+       "idx": 17,
+       "arr": "19.07",
+       "dep": "19.07"
+      },
+      {
+       "stop": "CALTAGIRONE (Viale Sicilia)",
+       "idx": 18,
+       "arr": "19.15",
+       "dep": "19.15"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

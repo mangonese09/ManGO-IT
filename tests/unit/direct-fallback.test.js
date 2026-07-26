@@ -18,9 +18,14 @@ function findStop(re) {
   return s;
 }
 
+// Pin the exact terminal stops: coach-stops.json ordering changes on every
+// regeneration (and SAIS adds more SIRACUSA (...) berths), so a bare
+// /^SIRACUSA/ prefix match can land on a stop outside the 1500m radius.
+const SR_TERMINAL = /^SIRACUSA \(C\.so Umberto\/Terminal Bus\)$/;
+
 test('Siracusa→Catania festivo services surface on a Sunday', () => {
-  const sr = findStop(/^SIRACUSA/i);
-  const ct = findStop(/^CATANIA$/i) || findStop(/^CATANIA/i);
+  const sr = findStop(SR_TERMINAL);
+  const ct = findStop(/^CATANIA$/i);
   const { results } = directSearch(sr.lat, sr.lon, ct.lat, ct.lon, 1500, [SUNDAY]);
   assert.ok(results.length >= 3, `expected ≥3 Sunday runs, got ${results.length}`);
   assert.ok(results.some((r) => r.dep === '08:00'), 'the 08:00 festivo run is missing');
@@ -28,8 +33,8 @@ test('Siracusa→Catania festivo services surface on a Sunday', () => {
 });
 
 test('weekday offers at least as many runs as Sunday', () => {
-  const sr = findStop(/^SIRACUSA/i);
-  const ct = findStop(/^CATANIA/i);
+  const sr = findStop(SR_TERMINAL);
+  const ct = findStop(/^CATANIA$/i);
   const sun = directSearch(sr.lat, sr.lon, ct.lat, ct.lon, 1500, [SUNDAY]).results.length;
   const mon = directSearch(sr.lat, sr.lon, ct.lat, ct.lon, 1500, [MONDAY]).results.length;
   assert.ok(mon >= sun, `weekday (${mon}) should be ≥ Sunday (${sun})`);
@@ -40,4 +45,12 @@ test('serviceRuns: feriale never runs on Ferragosto, festivo always does', () =>
   assert.strictEqual(serviceRuns({ d: 'mon-sat', sc: null, se: null }, ferragosto), false);
   assert.strictEqual(serviceRuns({ d: 'sun-holidays', sc: null, se: null }, ferragosto), true);
   assert.strictEqual(serviceRuns({ d: 'daily', sc: null, se: null }, ferragosto), true);
+});
+
+test('serviceRuns: explicit-date services (SAIS) ignore weekday/holiday inference', () => {
+  const ferragosto = { iso: '2026-08-15', wd: 5, min: 0, month: 8, day: 15 };
+  const monday = { iso: '2026-08-17', wd: 0, min: 0, month: 8, day: 17 };
+  const trip = { d: 'explicit', sc: null, se: null, xd: ['2026-08-15', '2026-08-16'] };
+  assert.strictEqual(serviceRuns(trip, ferragosto), true, 'listed date must run');
+  assert.strictEqual(serviceRuns(trip, monday), false, 'unlisted date must not run');
 });

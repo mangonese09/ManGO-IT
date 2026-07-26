@@ -1,0 +1,3077 @@
+{
+ "operator": "SAIS Autolinee",
+ "route_id": "sais-1",
+ "name": "1 Sp.Santo - Valverde - Sp.Santo",
+ "short_name": "1",
+ "coords": "external",
+ "source": "api.saisautolinee.it line 09e35d43-734d-4d06-8650-e381b1d90a01",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "ENNA (Terminal Bus Viale Diaz 80)",
+    "ENNA (Corso Sicilia 157)",
+    "ENNA (Corso Sicilia 11)",
+    "ENNA (Via S.Agata 82)",
+    "ENNA (Via Roma 326)",
+    "ENNA (Via Roma 402)",
+    "ENNA (Piazza Napoleone Colajanni)",
+    "ENNA (Piazza Giovan Battista Scarlata)",
+    "ENNA (Piazza S.Francesco di Paola)",
+    "ENNA (Via della Cittadella 4)",
+    "ENNA (Via della Rinascita(Chiesa S.Biagio))",
+    "ENNA (Via della Rinascita 50)",
+    "ENNA (Via della Rinascita 98)",
+    "ENNA (Via della Rinascita 136)",
+    "ENNA (Via della Rinascita 154 (Valverde))",
+    "ENNA (Via Spirito Santo 144)",
+    "ENNA (Via Spirito Santo 123)",
+    "ENNA (Via Risorgimento 20)",
+    "ENNA (Viale IV Novembre 13)",
+    "ENNA (Viale Diaz 10)",
+    "ENNA (Via Trieste 2)",
+    "ENNA (Via Trieste 49)",
+    "ENNA (Via Catania 97/99)",
+    "ENNA (Via Vittorio Emanuele (L.Artistico))",
+    "ENNA (Via Vittorio Emanuele 37)",
+    "ENNA (Via Vittorio Emanuele 1)",
+    "ENNA (Via S.Leone 37)",
+    "ENNA (Via S.Leone 127)",
+    "ENNA (Via S.Leone 31)",
+    "ENNA (Via Ottavio Catalano 102)",
+    "ENNA (Via Ottavio Catalano (rifornimento))",
+    "ENNA (Via Pergusa (fronte 210))",
+    "ENNA (Via Pergusa (fronte 104))",
+    "ENNA (Piazza Scelfo)",
+    "ENNA (Piazza Alessi)",
+    "ENNA (Corso Sicilia 2)",
+    "ENNA (Corso Sicilia 32)",
+    "ENNA (Viale Diaz 75)",
+    "ENNA (Viale Diaz (Istituto Professionale))",
+    "ENNA (Viale Diaz 47)",
+    "ENNA (Viale IV Novembre 8)",
+    "ENNA (Piazza Europa)",
+    "ENNA (Via Cavalieri di Vittorio Veneto 48)",
+    "ENNA (Via Cav. di Vittorio Veneto(incr. Via Piave))",
+    "ENNA (Via S.Francesco d'Assisi 12)",
+    "ENNA (Viale Diaz 34)",
+    "ENNA (Viale Diaz 86)"
+   ],
+   "trips": [
+    {
+     "corsa": "0101",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "35 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11"
+      ]
+     },
+     "reverse": false,
+     "variant": "SU1_1",
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 0,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 157)",
+       "idx": 1,
+       "arr": "6.36",
+       "dep": "6.36"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 11)",
+       "idx": 2,
+       "arr": "6.37",
+       "dep": "6.37"
+      },
+      {
+       "stop": "ENNA (Via S.Agata 82)",
+       "idx": 3,
+       "arr": "6.38",
+       "dep": "6.38"
+      },
+      {
+       "stop": "ENNA (Via Roma 326)",
+       "idx": 4,
+       "arr": "6.39",
+       "dep": "6.39"
+      },
+      {
+       "stop": "ENNA (Via Roma 402)",
+       "idx": 5,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "ENNA (Piazza Napoleone Colajanni)",
+       "idx": 6,
+       "arr": "6.41",
+       "dep": "6.41"
+      },
+      {
+       "stop": "ENNA (Piazza Giovan Battista Scarlata)",
+       "idx": 7,
+       "arr": "6.43",
+       "dep": "6.43"
+      },
+      {
+       "stop": "ENNA (Piazza S.Francesco di Paola)",
+       "idx": 8,
+       "arr": "6.44",
+       "dep": "6.44"
+      },
+      {
+       "stop": "ENNA (Via della Cittadella 4)",
+       "idx": 9,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita(Chiesa S.Biagio))",
+       "idx": 10,
+       "arr": "6.46",
+       "dep": "6.46"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 50)",
+       "idx": 11,
+       "arr": "6.47",
+       "dep": "6.47"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 98)",
+       "idx": 12,
+       "arr": "6.48",
+       "dep": "6.48"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 136)",
+       "idx": 13,
+       "arr": "6.49",
+       "dep": "6.49"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 154 (Valverde))",
+       "idx": 14,
+       "arr": "6.50",
+       "dep": "6.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0109",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "SU1_6",
+     "stops": [
+      {
+       "stop": "ENNA (Via Spirito Santo 144)",
+       "idx": 0,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "ENNA (Via Spirito Santo 123)",
+       "idx": 1,
+       "arr": "13.16",
+       "dep": "13.16"
+      },
+      {
+       "stop": "ENNA (Via Risorgimento 20)",
+       "idx": 2,
+       "arr": "13.17",
+       "dep": "13.17"
+      },
+      {
+       "stop": "ENNA (Viale IV Novembre 13)",
+       "idx": 3,
+       "arr": "13.19",
+       "dep": "13.19"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 10)",
+       "idx": 4,
+       "arr": "13.21",
+       "dep": "13.21"
+      },
+      {
+       "stop": "ENNA (Via Trieste 2)",
+       "idx": 5,
+       "arr": "13.22",
+       "dep": "13.22"
+      },
+      {
+       "stop": "ENNA (Via Trieste 49)",
+       "idx": 6,
+       "arr": "13.23",
+       "dep": "13.23"
+      },
+      {
+       "stop": "ENNA (Via Catania 97/99)",
+       "idx": 7,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "ENNA (Via Vittorio Emanuele (L.Artistico))",
+       "idx": 8,
+       "arr": "13.26",
+       "dep": "13.26"
+      },
+      {
+       "stop": "ENNA (Via Vittorio Emanuele 37)",
+       "idx": 9,
+       "arr": "13.27",
+       "dep": "13.27"
+      },
+      {
+       "stop": "ENNA (Via Vittorio Emanuele 1)",
+       "idx": 10,
+       "arr": "13.28",
+       "dep": "13.28"
+      },
+      {
+       "stop": "ENNA (Via Roma 326)",
+       "idx": 11,
+       "arr": "13.29",
+       "dep": "13.29"
+      },
+      {
+       "stop": "ENNA (Via Roma 402)",
+       "idx": 12,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "ENNA (Piazza Napoleone Colajanni)",
+       "idx": 13,
+       "arr": "13.31",
+       "dep": "13.31"
+      },
+      {
+       "stop": "ENNA (Piazza Giovan Battista Scarlata)",
+       "idx": 14,
+       "arr": "13.32",
+       "dep": "13.32"
+      },
+      {
+       "stop": "ENNA (Piazza S.Francesco di Paola)",
+       "idx": 15,
+       "arr": "13.33",
+       "dep": "13.33"
+      },
+      {
+       "stop": "ENNA (Via della Cittadella 4)",
+       "idx": 16,
+       "arr": "13.34",
+       "dep": "13.34"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita(Chiesa S.Biagio))",
+       "idx": 17,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 50)",
+       "idx": 18,
+       "arr": "13.36",
+       "dep": "13.36"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 98)",
+       "idx": 19,
+       "arr": "13.37",
+       "dep": "13.37"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 136)",
+       "idx": 20,
+       "arr": "13.38",
+       "dep": "13.38"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 154 (Valverde))",
+       "idx": 21,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 37)",
+       "idx": 22,
+       "arr": "13.46",
+       "dep": "13.46"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 127)",
+       "idx": 23,
+       "arr": "13.47",
+       "dep": "13.47"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 31)",
+       "idx": 24,
+       "arr": "13.47",
+       "dep": "13.47"
+      },
+      {
+       "stop": "ENNA (Via Ottavio Catalano 102)",
+       "idx": 25,
+       "arr": "13.48",
+       "dep": "13.48"
+      },
+      {
+       "stop": "ENNA (Via Ottavio Catalano (rifornimento))",
+       "idx": 26,
+       "arr": "13.49",
+       "dep": "13.49"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 210))",
+       "idx": 27,
+       "arr": "13.51",
+       "dep": "13.51"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 104))",
+       "idx": 28,
+       "arr": "13.52",
+       "dep": "13.52"
+      },
+      {
+       "stop": "ENNA (Piazza Scelfo)",
+       "idx": 29,
+       "arr": "13.54",
+       "dep": "13.54"
+      },
+      {
+       "stop": "ENNA (Piazza Alessi)",
+       "idx": 30,
+       "arr": "13.54",
+       "dep": "13.54"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 31,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 32)",
+       "idx": 32,
+       "arr": "13.56",
+       "dep": "13.56"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 75)",
+       "idx": 33,
+       "arr": "13.57",
+       "dep": "13.57"
+      },
+      {
+       "stop": "ENNA (Viale Diaz (Istituto Professionale))",
+       "idx": 34,
+       "arr": "13.57",
+       "dep": "13.57"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 47)",
+       "idx": 35,
+       "arr": "13.58",
+       "dep": "13.58"
+      },
+      {
+       "stop": "ENNA (Viale IV Novembre 8)",
+       "idx": 36,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "ENNA (Piazza Europa)",
+       "idx": 37,
+       "arr": "14.01",
+       "dep": "14.01"
+      },
+      {
+       "stop": "ENNA (Via Cavalieri di Vittorio Veneto 48)",
+       "idx": 38,
+       "arr": "14.02",
+       "dep": "14.02"
+      },
+      {
+       "stop": "ENNA (Via Cav. di Vittorio Veneto(incr. Via Piave))",
+       "idx": 39,
+       "arr": "14.03",
+       "dep": "14.03"
+      },
+      {
+       "stop": "ENNA (Via Spirito Santo 144)",
+       "idx": 40,
+       "arr": "14.04",
+       "dep": "14.04"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0102",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "SU1_9",
+     "stops": [
+      {
+       "stop": "ENNA (Via Spirito Santo 144)",
+       "idx": 0,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "ENNA (Via Spirito Santo 123)",
+       "idx": 1,
+       "arr": "6.56",
+       "dep": "6.56"
+      },
+      {
+       "stop": "ENNA (Via Risorgimento 20)",
+       "idx": 2,
+       "arr": "6.57",
+       "dep": "6.57"
+      },
+      {
+       "stop": "ENNA (Viale IV Novembre 13)",
+       "idx": 3,
+       "arr": "6.58",
+       "dep": "6.58"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 10)",
+       "idx": 4,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "ENNA (Via Trieste 2)",
+       "idx": 5,
+       "arr": "7.01",
+       "dep": "7.01"
+      },
+      {
+       "stop": "ENNA (Via Trieste 49)",
+       "idx": 6,
+       "arr": "7.02",
+       "dep": "7.02"
+      },
+      {
+       "stop": "ENNA (Via Catania 97/99)",
+       "idx": 7,
+       "arr": "7.03",
+       "dep": "7.03"
+      },
+      {
+       "stop": "ENNA (Via S.Francesco d'Assisi 12)",
+       "idx": 8,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 157)",
+       "idx": 9,
+       "arr": "7.06",
+       "dep": "7.06"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 11)",
+       "idx": 10,
+       "arr": "7.07",
+       "dep": "7.07"
+      },
+      {
+       "stop": "ENNA (Via S.Agata 82)",
+       "idx": 11,
+       "arr": "7.08",
+       "dep": "7.08"
+      },
+      {
+       "stop": "ENNA (Via Roma 326)",
+       "idx": 12,
+       "arr": "7.09",
+       "dep": "7.09"
+      },
+      {
+       "stop": "ENNA (Via Roma 402)",
+       "idx": 13,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "ENNA (Piazza Napoleone Colajanni)",
+       "idx": 14,
+       "arr": "7.11",
+       "dep": "7.11"
+      },
+      {
+       "stop": "ENNA (Piazza Giovan Battista Scarlata)",
+       "idx": 15,
+       "arr": "7.12",
+       "dep": "7.12"
+      },
+      {
+       "stop": "ENNA (Piazza S.Francesco di Paola)",
+       "idx": 16,
+       "arr": "7.13",
+       "dep": "7.13"
+      },
+      {
+       "stop": "ENNA (Via della Cittadella 4)",
+       "idx": 17,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita(Chiesa S.Biagio))",
+       "idx": 18,
+       "arr": "7.16",
+       "dep": "7.16"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 50)",
+       "idx": 19,
+       "arr": "7.17",
+       "dep": "7.17"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 98)",
+       "idx": 20,
+       "arr": "7.18",
+       "dep": "7.18"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 136)",
+       "idx": 21,
+       "arr": "7.19",
+       "dep": "7.19"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 154 (Valverde))",
+       "idx": 22,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 37)",
+       "idx": 23,
+       "arr": "7.21",
+       "dep": "7.21"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 127)",
+       "idx": 24,
+       "arr": "7.22",
+       "dep": "7.22"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 31)",
+       "idx": 25,
+       "arr": "7.22",
+       "dep": "7.22"
+      },
+      {
+       "stop": "ENNA (Via Ottavio Catalano 102)",
+       "idx": 26,
+       "arr": "7.23",
+       "dep": "7.23"
+      },
+      {
+       "stop": "ENNA (Via Ottavio Catalano (rifornimento))",
+       "idx": 27,
+       "arr": "7.24",
+       "dep": "7.24"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 210))",
+       "idx": 28,
+       "arr": "7.26",
+       "dep": "7.26"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 104))",
+       "idx": 29,
+       "arr": "7.27",
+       "dep": "7.27"
+      },
+      {
+       "stop": "ENNA (Piazza Scelfo)",
+       "idx": 30,
+       "arr": "7.29",
+       "dep": "7.29"
+      },
+      {
+       "stop": "ENNA (Piazza Alessi)",
+       "idx": 31,
+       "arr": "7.29",
+       "dep": "7.29"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 32,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 32)",
+       "idx": 33,
+       "arr": "7.31",
+       "dep": "7.31"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 75)",
+       "idx": 34,
+       "arr": "7.32",
+       "dep": "7.32"
+      },
+      {
+       "stop": "ENNA (Viale Diaz (Istituto Professionale))",
+       "idx": 35,
+       "arr": "7.33",
+       "dep": "7.33"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 47)",
+       "idx": 36,
+       "arr": "7.34",
+       "dep": "7.34"
+      },
+      {
+       "stop": "ENNA (Viale IV Novembre 8)",
+       "idx": 37,
+       "arr": "7.36",
+       "dep": "7.36"
+      },
+      {
+       "stop": "ENNA (Piazza Europa)",
+       "idx": 38,
+       "arr": "7.37",
+       "dep": "7.37"
+      },
+      {
+       "stop": "ENNA (Via Cavalieri di Vittorio Veneto 48)",
+       "idx": 39,
+       "arr": "7.38",
+       "dep": "7.38"
+      },
+      {
+       "stop": "ENNA (Via Cav. di Vittorio Veneto(incr. Via Piave))",
+       "idx": 40,
+       "arr": "7.39",
+       "dep": "7.39"
+      },
+      {
+       "stop": "ENNA (Via Spirito Santo 144)",
+       "idx": 41,
+       "arr": "7.40",
+       "dep": "7.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0104",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "SU1_3",
+     "stops": [
+      {
+       "stop": "ENNA (Via Spirito Santo 144)",
+       "idx": 0,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "ENNA (Via Spirito Santo 123)",
+       "idx": 1,
+       "arr": "7.41",
+       "dep": "7.41"
+      },
+      {
+       "stop": "ENNA (Via Risorgimento 20)",
+       "idx": 2,
+       "arr": "7.42",
+       "dep": "7.42"
+      },
+      {
+       "stop": "ENNA (Viale IV Novembre 13)",
+       "idx": 3,
+       "arr": "7.44",
+       "dep": "7.44"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 10)",
+       "idx": 4,
+       "arr": "7.46",
+       "dep": "7.46"
+      },
+      {
+       "stop": "ENNA (Via Trieste 2)",
+       "idx": 5,
+       "arr": "7.47",
+       "dep": "7.47"
+      },
+      {
+       "stop": "ENNA (Via Trieste 49)",
+       "idx": 6,
+       "arr": "7.48",
+       "dep": "7.48"
+      },
+      {
+       "stop": "ENNA (Via Catania 97/99)",
+       "idx": 7,
+       "arr": "7.49",
+       "dep": "7.49"
+      },
+      {
+       "stop": "ENNA (Via S.Francesco d'Assisi 12)",
+       "idx": 8,
+       "arr": "7.51",
+       "dep": "7.51"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 157)",
+       "idx": 9,
+       "arr": "7.52",
+       "dep": "7.52"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 11)",
+       "idx": 10,
+       "arr": "7.53",
+       "dep": "7.53"
+      },
+      {
+       "stop": "ENNA (Via S.Agata 82)",
+       "idx": 11,
+       "arr": "7.54",
+       "dep": "7.54"
+      },
+      {
+       "stop": "ENNA (Via Roma 326)",
+       "idx": 12,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "ENNA (Via Roma 402)",
+       "idx": 13,
+       "arr": "7.56",
+       "dep": "7.56"
+      },
+      {
+       "stop": "ENNA (Piazza Napoleone Colajanni)",
+       "idx": 14,
+       "arr": "7.57",
+       "dep": "7.57"
+      },
+      {
+       "stop": "ENNA (Piazza Giovan Battista Scarlata)",
+       "idx": 15,
+       "arr": "7.58",
+       "dep": "7.58"
+      },
+      {
+       "stop": "ENNA (Piazza S.Francesco di Paola)",
+       "idx": 16,
+       "arr": "7.59",
+       "dep": "7.59"
+      },
+      {
+       "stop": "ENNA (Via della Cittadella 4)",
+       "idx": 17,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita(Chiesa S.Biagio))",
+       "idx": 18,
+       "arr": "8.01",
+       "dep": "8.01"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 50)",
+       "idx": 19,
+       "arr": "8.02",
+       "dep": "8.02"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 98)",
+       "idx": 20,
+       "arr": "8.03",
+       "dep": "8.03"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 136)",
+       "idx": 21,
+       "arr": "8.04",
+       "dep": "8.04"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 154 (Valverde))",
+       "idx": 22,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 37)",
+       "idx": 23,
+       "arr": "8.46",
+       "dep": "8.46"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 127)",
+       "idx": 24,
+       "arr": "8.47",
+       "dep": "8.47"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 31)",
+       "idx": 25,
+       "arr": "8.47",
+       "dep": "8.47"
+      },
+      {
+       "stop": "ENNA (Via Ottavio Catalano 102)",
+       "idx": 26,
+       "arr": "8.48",
+       "dep": "8.48"
+      },
+      {
+       "stop": "ENNA (Via Ottavio Catalano (rifornimento))",
+       "idx": 27,
+       "arr": "8.49",
+       "dep": "8.49"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 210))",
+       "idx": 28,
+       "arr": "8.51",
+       "dep": "8.51"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 104))",
+       "idx": 29,
+       "arr": "8.52",
+       "dep": "8.52"
+      },
+      {
+       "stop": "ENNA (Piazza Scelfo)",
+       "idx": 30,
+       "arr": "8.54",
+       "dep": "8.54"
+      },
+      {
+       "stop": "ENNA (Piazza Alessi)",
+       "idx": 31,
+       "arr": "8.54",
+       "dep": "8.54"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 32,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 32)",
+       "idx": 33,
+       "arr": "8.56",
+       "dep": "8.56"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 75)",
+       "idx": 34,
+       "arr": "8.57",
+       "dep": "8.57"
+      },
+      {
+       "stop": "ENNA (Viale Diaz (Istituto Professionale))",
+       "idx": 35,
+       "arr": "8.58",
+       "dep": "8.58"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 47)",
+       "idx": 36,
+       "arr": "8.59",
+       "dep": "8.59"
+      },
+      {
+       "stop": "ENNA (Viale IV Novembre 8)",
+       "idx": 37,
+       "arr": "9.01",
+       "dep": "9.01"
+      },
+      {
+       "stop": "ENNA (Piazza Europa)",
+       "idx": 38,
+       "arr": "9.02",
+       "dep": "9.02"
+      },
+      {
+       "stop": "ENNA (Via Cavalieri di Vittorio Veneto 48)",
+       "idx": 39,
+       "arr": "9.03",
+       "dep": "9.03"
+      },
+      {
+       "stop": "ENNA (Via Cav. di Vittorio Veneto(incr. Via Piave))",
+       "idx": 40,
+       "arr": "9.04",
+       "dep": "9.04"
+      },
+      {
+       "stop": "ENNA (Via Spirito Santo 144)",
+       "idx": 41,
+       "arr": "9.05",
+       "dep": "9.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0114",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SU1_8",
+     "stops": [
+      {
+       "stop": "ENNA (Via della Rinascita 154 (Valverde))",
+       "idx": 0,
+       "arr": "20.30",
+       "dep": "20.30"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 37)",
+       "idx": 1,
+       "arr": "20.31",
+       "dep": "20.31"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 127)",
+       "idx": 2,
+       "arr": "20.32",
+       "dep": "20.32"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 31)",
+       "idx": 3,
+       "arr": "20.33",
+       "dep": "20.33"
+      },
+      {
+       "stop": "ENNA (Via Ottavio Catalano 102)",
+       "idx": 4,
+       "arr": "20.35",
+       "dep": "20.35"
+      },
+      {
+       "stop": "ENNA (Via Ottavio Catalano (rifornimento))",
+       "idx": 5,
+       "arr": "20.36",
+       "dep": "20.36"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 210))",
+       "idx": 6,
+       "arr": "20.39",
+       "dep": "20.39"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 104))",
+       "idx": 7,
+       "arr": "20.40",
+       "dep": "20.40"
+      },
+      {
+       "stop": "ENNA (Piazza Scelfo)",
+       "idx": 8,
+       "arr": "20.42",
+       "dep": "20.42"
+      },
+      {
+       "stop": "ENNA (Piazza Alessi)",
+       "idx": 9,
+       "arr": "20.42",
+       "dep": "20.42"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 10,
+       "arr": "20.43",
+       "dep": "20.43"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 32)",
+       "idx": 11,
+       "arr": "20.44",
+       "dep": "20.44"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 75)",
+       "idx": 12,
+       "arr": "20.45",
+       "dep": "20.45"
+      },
+      {
+       "stop": "ENNA (Viale Diaz (Istituto Professionale))",
+       "idx": 13,
+       "arr": "20.46",
+       "dep": "20.46"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 47)",
+       "idx": 14,
+       "arr": "20.47",
+       "dep": "20.47"
+      },
+      {
+       "stop": "ENNA (Viale IV Novembre 8)",
+       "idx": 15,
+       "arr": "20.48",
+       "dep": "20.48"
+      },
+      {
+       "stop": "ENNA (Piazza Europa)",
+       "idx": 16,
+       "arr": "20.49",
+       "dep": "20.49"
+      },
+      {
+       "stop": "ENNA (Via Cavalieri di Vittorio Veneto 48)",
+       "idx": 17,
+       "arr": "20.50",
+       "dep": "20.50"
+      },
+      {
+       "stop": "ENNA (Via Cav. di Vittorio Veneto(incr. Via Piave))",
+       "idx": 18,
+       "arr": "20.51",
+       "dep": "20.51"
+      },
+      {
+       "stop": "ENNA (Via Spirito Santo 144)",
+       "idx": 19,
+       "arr": "20.52",
+       "dep": "20.52"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0112",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "SU1_4",
+     "stops": [
+      {
+       "stop": "ENNA (Via della Rinascita 154 (Valverde))",
+       "idx": 0,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 37)",
+       "idx": 1,
+       "arr": "14.36",
+       "dep": "14.36"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 127)",
+       "idx": 2,
+       "arr": "14.37",
+       "dep": "14.37"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 31)",
+       "idx": 3,
+       "arr": "14.38",
+       "dep": "14.38"
+      },
+      {
+       "stop": "ENNA (Via Ottavio Catalano 102)",
+       "idx": 4,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "ENNA (Via Ottavio Catalano (rifornimento))",
+       "idx": 5,
+       "arr": "14.41",
+       "dep": "14.41"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 210))",
+       "idx": 6,
+       "arr": "14.44",
+       "dep": "14.44"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 104))",
+       "idx": 7,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "ENNA (Piazza Scelfo)",
+       "idx": 8,
+       "arr": "14.47",
+       "dep": "14.47"
+      },
+      {
+       "stop": "ENNA (Piazza Alessi)",
+       "idx": 9,
+       "arr": "14.47",
+       "dep": "14.47"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 10,
+       "arr": "14.48",
+       "dep": "14.48"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 32)",
+       "idx": 11,
+       "arr": "14.49",
+       "dep": "14.49"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 12,
+       "arr": "14.50",
+       "dep": "14.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0108",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SU1_5",
+     "stops": [
+      {
+       "stop": "ENNA (Via Spirito Santo 144)",
+       "idx": 0,
+       "arr": "12.15",
+       "dep": "12.15"
+      },
+      {
+       "stop": "ENNA (Via Spirito Santo 123)",
+       "idx": 1,
+       "arr": "12.16",
+       "dep": "12.16"
+      },
+      {
+       "stop": "ENNA (Via Risorgimento 20)",
+       "idx": 2,
+       "arr": "12.17",
+       "dep": "12.17"
+      },
+      {
+       "stop": "ENNA (Viale IV Novembre 13)",
+       "idx": 3,
+       "arr": "12.19",
+       "dep": "12.19"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 10)",
+       "idx": 4,
+       "arr": "12.21",
+       "dep": "12.21"
+      },
+      {
+       "stop": "ENNA (Via Trieste 2)",
+       "idx": 5,
+       "arr": "12.22",
+       "dep": "12.22"
+      },
+      {
+       "stop": "ENNA (Via Trieste 49)",
+       "idx": 6,
+       "arr": "12.23",
+       "dep": "12.23"
+      },
+      {
+       "stop": "ENNA (Via Catania 97/99)",
+       "idx": 7,
+       "arr": "12.25",
+       "dep": "12.25"
+      },
+      {
+       "stop": "ENNA (Via Vittorio Emanuele (L.Artistico))",
+       "idx": 8,
+       "arr": "12.26",
+       "dep": "12.26"
+      },
+      {
+       "stop": "ENNA (Via Vittorio Emanuele 37)",
+       "idx": 9,
+       "arr": "12.27",
+       "dep": "12.27"
+      },
+      {
+       "stop": "ENNA (Via Vittorio Emanuele 1)",
+       "idx": 10,
+       "arr": "12.28",
+       "dep": "12.28"
+      },
+      {
+       "stop": "ENNA (Via Roma 326)",
+       "idx": 11,
+       "arr": "12.29",
+       "dep": "12.29"
+      },
+      {
+       "stop": "ENNA (Via Roma 402)",
+       "idx": 12,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "ENNA (Piazza Napoleone Colajanni)",
+       "idx": 13,
+       "arr": "12.31",
+       "dep": "12.31"
+      },
+      {
+       "stop": "ENNA (Piazza Giovan Battista Scarlata)",
+       "idx": 14,
+       "arr": "12.32",
+       "dep": "12.32"
+      },
+      {
+       "stop": "ENNA (Piazza S.Francesco di Paola)",
+       "idx": 15,
+       "arr": "12.33",
+       "dep": "12.33"
+      },
+      {
+       "stop": "ENNA (Via della Cittadella 4)",
+       "idx": 16,
+       "arr": "12.34",
+       "dep": "12.34"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita(Chiesa S.Biagio))",
+       "idx": 17,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 50)",
+       "idx": 18,
+       "arr": "12.36",
+       "dep": "12.36"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 98)",
+       "idx": 19,
+       "arr": "12.37",
+       "dep": "12.37"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 136)",
+       "idx": 20,
+       "arr": "12.38",
+       "dep": "12.38"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 154 (Valverde))",
+       "idx": 21,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 37)",
+       "idx": 22,
+       "arr": "12.46",
+       "dep": "12.46"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 127)",
+       "idx": 23,
+       "arr": "12.47",
+       "dep": "12.47"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 31)",
+       "idx": 24,
+       "arr": "12.47",
+       "dep": "12.47"
+      },
+      {
+       "stop": "ENNA (Via Ottavio Catalano 102)",
+       "idx": 25,
+       "arr": "12.48",
+       "dep": "12.48"
+      },
+      {
+       "stop": "ENNA (Via Ottavio Catalano (rifornimento))",
+       "idx": 26,
+       "arr": "12.49",
+       "dep": "12.49"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 210))",
+       "idx": 27,
+       "arr": "12.51",
+       "dep": "12.51"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 104))",
+       "idx": 28,
+       "arr": "12.52",
+       "dep": "12.52"
+      },
+      {
+       "stop": "ENNA (Piazza Scelfo)",
+       "idx": 29,
+       "arr": "12.54",
+       "dep": "12.54"
+      },
+      {
+       "stop": "ENNA (Piazza Alessi)",
+       "idx": 30,
+       "arr": "12.54",
+       "dep": "12.54"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 31,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 32)",
+       "idx": 32,
+       "arr": "12.56",
+       "dep": "12.56"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 75)",
+       "idx": 33,
+       "arr": "12.57",
+       "dep": "12.57"
+      },
+      {
+       "stop": "ENNA (Viale Diaz (Istituto Professionale))",
+       "idx": 34,
+       "arr": "12.58",
+       "dep": "12.58"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 47)",
+       "idx": 35,
+       "arr": "12.59",
+       "dep": "12.59"
+      },
+      {
+       "stop": "ENNA (Viale IV Novembre 8)",
+       "idx": 36,
+       "arr": "13.01",
+       "dep": "13.01"
+      },
+      {
+       "stop": "ENNA (Piazza Europa)",
+       "idx": 37,
+       "arr": "13.02",
+       "dep": "13.02"
+      },
+      {
+       "stop": "ENNA (Via Cavalieri di Vittorio Veneto 48)",
+       "idx": 38,
+       "arr": "13.03",
+       "dep": "13.03"
+      },
+      {
+       "stop": "ENNA (Via Cav. di Vittorio Veneto(incr. Via Piave))",
+       "idx": 39,
+       "arr": "13.04",
+       "dep": "13.04"
+      },
+      {
+       "stop": "ENNA (Via Spirito Santo 144)",
+       "idx": 40,
+       "arr": "13.05",
+       "dep": "13.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0111",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "SU1_5",
+     "stops": [
+      {
+       "stop": "ENNA (Via Spirito Santo 144)",
+       "idx": 0,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "ENNA (Via Spirito Santo 123)",
+       "idx": 1,
+       "arr": "14.06",
+       "dep": "14.06"
+      },
+      {
+       "stop": "ENNA (Via Risorgimento 20)",
+       "idx": 2,
+       "arr": "14.07",
+       "dep": "14.07"
+      },
+      {
+       "stop": "ENNA (Viale IV Novembre 13)",
+       "idx": 3,
+       "arr": "14.09",
+       "dep": "14.09"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 10)",
+       "idx": 4,
+       "arr": "14.11",
+       "dep": "14.11"
+      },
+      {
+       "stop": "ENNA (Via Trieste 2)",
+       "idx": 5,
+       "arr": "14.12",
+       "dep": "14.12"
+      },
+      {
+       "stop": "ENNA (Via Trieste 49)",
+       "idx": 6,
+       "arr": "14.13",
+       "dep": "14.13"
+      },
+      {
+       "stop": "ENNA (Via Catania 97/99)",
+       "idx": 7,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "ENNA (Via Vittorio Emanuele (L.Artistico))",
+       "idx": 8,
+       "arr": "14.16",
+       "dep": "14.16"
+      },
+      {
+       "stop": "ENNA (Via Vittorio Emanuele 37)",
+       "idx": 9,
+       "arr": "14.17",
+       "dep": "14.17"
+      },
+      {
+       "stop": "ENNA (Via Vittorio Emanuele 1)",
+       "idx": 10,
+       "arr": "14.18",
+       "dep": "14.18"
+      },
+      {
+       "stop": "ENNA (Via Roma 326)",
+       "idx": 11,
+       "arr": "14.19",
+       "dep": "14.19"
+      },
+      {
+       "stop": "ENNA (Via Roma 402)",
+       "idx": 12,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "ENNA (Piazza Napoleone Colajanni)",
+       "idx": 13,
+       "arr": "14.21",
+       "dep": "14.21"
+      },
+      {
+       "stop": "ENNA (Piazza Giovan Battista Scarlata)",
+       "idx": 14,
+       "arr": "14.22",
+       "dep": "14.22"
+      },
+      {
+       "stop": "ENNA (Piazza S.Francesco di Paola)",
+       "idx": 15,
+       "arr": "14.23",
+       "dep": "14.23"
+      },
+      {
+       "stop": "ENNA (Via della Cittadella 4)",
+       "idx": 16,
+       "arr": "14.24",
+       "dep": "14.24"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita(Chiesa S.Biagio))",
+       "idx": 17,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 50)",
+       "idx": 18,
+       "arr": "14.26",
+       "dep": "14.26"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 98)",
+       "idx": 19,
+       "arr": "14.27",
+       "dep": "14.27"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 136)",
+       "idx": 20,
+       "arr": "14.28",
+       "dep": "14.28"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 154 (Valverde))",
+       "idx": 21,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 37)",
+       "idx": 22,
+       "arr": "14.36",
+       "dep": "14.36"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 127)",
+       "idx": 23,
+       "arr": "14.37",
+       "dep": "14.37"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 31)",
+       "idx": 24,
+       "arr": "14.37",
+       "dep": "14.37"
+      },
+      {
+       "stop": "ENNA (Via Ottavio Catalano 102)",
+       "idx": 25,
+       "arr": "14.38",
+       "dep": "14.38"
+      },
+      {
+       "stop": "ENNA (Via Ottavio Catalano (rifornimento))",
+       "idx": 26,
+       "arr": "14.39",
+       "dep": "14.39"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 210))",
+       "idx": 27,
+       "arr": "14.41",
+       "dep": "14.41"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 104))",
+       "idx": 28,
+       "arr": "14.42",
+       "dep": "14.42"
+      },
+      {
+       "stop": "ENNA (Piazza Scelfo)",
+       "idx": 29,
+       "arr": "14.44",
+       "dep": "14.44"
+      },
+      {
+       "stop": "ENNA (Piazza Alessi)",
+       "idx": 30,
+       "arr": "14.44",
+       "dep": "14.44"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 31,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 32)",
+       "idx": 32,
+       "arr": "14.46",
+       "dep": "14.46"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 75)",
+       "idx": 33,
+       "arr": "14.47",
+       "dep": "14.47"
+      },
+      {
+       "stop": "ENNA (Viale Diaz (Istituto Professionale))",
+       "idx": 34,
+       "arr": "14.48",
+       "dep": "14.48"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 47)",
+       "idx": 35,
+       "arr": "14.49",
+       "dep": "14.49"
+      },
+      {
+       "stop": "ENNA (Viale IV Novembre 8)",
+       "idx": 36,
+       "arr": "14.51",
+       "dep": "14.51"
+      },
+      {
+       "stop": "ENNA (Piazza Europa)",
+       "idx": 37,
+       "arr": "14.52",
+       "dep": "14.52"
+      },
+      {
+       "stop": "ENNA (Via Cavalieri di Vittorio Veneto 48)",
+       "idx": 38,
+       "arr": "14.53",
+       "dep": "14.53"
+      },
+      {
+       "stop": "ENNA (Via Cav. di Vittorio Veneto(incr. Via Piave))",
+       "idx": 39,
+       "arr": "14.54",
+       "dep": "14.54"
+      },
+      {
+       "stop": "ENNA (Via Spirito Santo 144)",
+       "idx": 40,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0107",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "8 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SU1_5",
+     "stops": [
+      {
+       "stop": "ENNA (Via Spirito Santo 144)",
+       "idx": 0,
+       "arr": "11.15",
+       "dep": "11.15"
+      },
+      {
+       "stop": "ENNA (Via Spirito Santo 123)",
+       "idx": 1,
+       "arr": "11.16",
+       "dep": "11.16"
+      },
+      {
+       "stop": "ENNA (Via Risorgimento 20)",
+       "idx": 2,
+       "arr": "11.17",
+       "dep": "11.17"
+      },
+      {
+       "stop": "ENNA (Viale IV Novembre 13)",
+       "idx": 3,
+       "arr": "11.19",
+       "dep": "11.19"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 10)",
+       "idx": 4,
+       "arr": "11.21",
+       "dep": "11.21"
+      },
+      {
+       "stop": "ENNA (Via Trieste 2)",
+       "idx": 5,
+       "arr": "11.22",
+       "dep": "11.22"
+      },
+      {
+       "stop": "ENNA (Via Trieste 49)",
+       "idx": 6,
+       "arr": "11.23",
+       "dep": "11.23"
+      },
+      {
+       "stop": "ENNA (Via Catania 97/99)",
+       "idx": 7,
+       "arr": "11.25",
+       "dep": "11.25"
+      },
+      {
+       "stop": "ENNA (Via Vittorio Emanuele (L.Artistico))",
+       "idx": 8,
+       "arr": "11.26",
+       "dep": "11.26"
+      },
+      {
+       "stop": "ENNA (Via Vittorio Emanuele 37)",
+       "idx": 9,
+       "arr": "11.27",
+       "dep": "11.27"
+      },
+      {
+       "stop": "ENNA (Via Vittorio Emanuele 1)",
+       "idx": 10,
+       "arr": "11.28",
+       "dep": "11.28"
+      },
+      {
+       "stop": "ENNA (Via Roma 326)",
+       "idx": 11,
+       "arr": "11.29",
+       "dep": "11.29"
+      },
+      {
+       "stop": "ENNA (Via Roma 402)",
+       "idx": 12,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "ENNA (Piazza Napoleone Colajanni)",
+       "idx": 13,
+       "arr": "11.31",
+       "dep": "11.31"
+      },
+      {
+       "stop": "ENNA (Piazza Giovan Battista Scarlata)",
+       "idx": 14,
+       "arr": "11.32",
+       "dep": "11.32"
+      },
+      {
+       "stop": "ENNA (Piazza S.Francesco di Paola)",
+       "idx": 15,
+       "arr": "11.33",
+       "dep": "11.33"
+      },
+      {
+       "stop": "ENNA (Via della Cittadella 4)",
+       "idx": 16,
+       "arr": "11.34",
+       "dep": "11.34"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita(Chiesa S.Biagio))",
+       "idx": 17,
+       "arr": "11.35",
+       "dep": "11.35"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 50)",
+       "idx": 18,
+       "arr": "11.36",
+       "dep": "11.36"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 98)",
+       "idx": 19,
+       "arr": "11.37",
+       "dep": "11.37"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 136)",
+       "idx": 20,
+       "arr": "11.38",
+       "dep": "11.38"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 154 (Valverde))",
+       "idx": 21,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 37)",
+       "idx": 22,
+       "arr": "11.46",
+       "dep": "11.46"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 127)",
+       "idx": 23,
+       "arr": "11.47",
+       "dep": "11.47"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 31)",
+       "idx": 24,
+       "arr": "11.47",
+       "dep": "11.47"
+      },
+      {
+       "stop": "ENNA (Via Ottavio Catalano 102)",
+       "idx": 25,
+       "arr": "11.48",
+       "dep": "11.48"
+      },
+      {
+       "stop": "ENNA (Via Ottavio Catalano (rifornimento))",
+       "idx": 26,
+       "arr": "11.49",
+       "dep": "11.49"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 210))",
+       "idx": 27,
+       "arr": "11.51",
+       "dep": "11.51"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 104))",
+       "idx": 28,
+       "arr": "11.52",
+       "dep": "11.52"
+      },
+      {
+       "stop": "ENNA (Piazza Scelfo)",
+       "idx": 29,
+       "arr": "11.54",
+       "dep": "11.54"
+      },
+      {
+       "stop": "ENNA (Piazza Alessi)",
+       "idx": 30,
+       "arr": "11.54",
+       "dep": "11.54"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 31,
+       "arr": "11.55",
+       "dep": "11.55"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 32)",
+       "idx": 32,
+       "arr": "11.56",
+       "dep": "11.56"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 75)",
+       "idx": 33,
+       "arr": "11.57",
+       "dep": "11.57"
+      },
+      {
+       "stop": "ENNA (Viale Diaz (Istituto Professionale))",
+       "idx": 34,
+       "arr": "11.58",
+       "dep": "11.58"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 47)",
+       "idx": 35,
+       "arr": "11.59",
+       "dep": "11.59"
+      },
+      {
+       "stop": "ENNA (Viale IV Novembre 8)",
+       "idx": 36,
+       "arr": "12.01",
+       "dep": "12.01"
+      },
+      {
+       "stop": "ENNA (Piazza Europa)",
+       "idx": 37,
+       "arr": "12.02",
+       "dep": "12.02"
+      },
+      {
+       "stop": "ENNA (Via Cavalieri di Vittorio Veneto 48)",
+       "idx": 38,
+       "arr": "12.03",
+       "dep": "12.03"
+      },
+      {
+       "stop": "ENNA (Via Cav. di Vittorio Veneto(incr. Via Piave))",
+       "idx": 39,
+       "arr": "12.04",
+       "dep": "12.04"
+      },
+      {
+       "stop": "ENNA (Via Spirito Santo 144)",
+       "idx": 40,
+       "arr": "12.05",
+       "dep": "12.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0106",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SU1_5",
+     "stops": [
+      {
+       "stop": "ENNA (Via Spirito Santo 144)",
+       "idx": 0,
+       "arr": "10.15",
+       "dep": "10.15"
+      },
+      {
+       "stop": "ENNA (Via Spirito Santo 123)",
+       "idx": 1,
+       "arr": "10.16",
+       "dep": "10.16"
+      },
+      {
+       "stop": "ENNA (Via Risorgimento 20)",
+       "idx": 2,
+       "arr": "10.17",
+       "dep": "10.17"
+      },
+      {
+       "stop": "ENNA (Viale IV Novembre 13)",
+       "idx": 3,
+       "arr": "10.19",
+       "dep": "10.19"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 10)",
+       "idx": 4,
+       "arr": "10.21",
+       "dep": "10.21"
+      },
+      {
+       "stop": "ENNA (Via Trieste 2)",
+       "idx": 5,
+       "arr": "10.22",
+       "dep": "10.22"
+      },
+      {
+       "stop": "ENNA (Via Trieste 49)",
+       "idx": 6,
+       "arr": "10.23",
+       "dep": "10.23"
+      },
+      {
+       "stop": "ENNA (Via Catania 97/99)",
+       "idx": 7,
+       "arr": "10.25",
+       "dep": "10.25"
+      },
+      {
+       "stop": "ENNA (Via Vittorio Emanuele (L.Artistico))",
+       "idx": 8,
+       "arr": "10.26",
+       "dep": "10.26"
+      },
+      {
+       "stop": "ENNA (Via Vittorio Emanuele 37)",
+       "idx": 9,
+       "arr": "10.27",
+       "dep": "10.27"
+      },
+      {
+       "stop": "ENNA (Via Vittorio Emanuele 1)",
+       "idx": 10,
+       "arr": "10.28",
+       "dep": "10.28"
+      },
+      {
+       "stop": "ENNA (Via Roma 326)",
+       "idx": 11,
+       "arr": "10.29",
+       "dep": "10.29"
+      },
+      {
+       "stop": "ENNA (Via Roma 402)",
+       "idx": 12,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "ENNA (Piazza Napoleone Colajanni)",
+       "idx": 13,
+       "arr": "10.31",
+       "dep": "10.31"
+      },
+      {
+       "stop": "ENNA (Piazza Giovan Battista Scarlata)",
+       "idx": 14,
+       "arr": "10.32",
+       "dep": "10.32"
+      },
+      {
+       "stop": "ENNA (Piazza S.Francesco di Paola)",
+       "idx": 15,
+       "arr": "10.33",
+       "dep": "10.33"
+      },
+      {
+       "stop": "ENNA (Via della Cittadella 4)",
+       "idx": 16,
+       "arr": "10.34",
+       "dep": "10.34"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita(Chiesa S.Biagio))",
+       "idx": 17,
+       "arr": "10.35",
+       "dep": "10.35"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 50)",
+       "idx": 18,
+       "arr": "10.36",
+       "dep": "10.36"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 98)",
+       "idx": 19,
+       "arr": "10.37",
+       "dep": "10.37"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 136)",
+       "idx": 20,
+       "arr": "10.38",
+       "dep": "10.38"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 154 (Valverde))",
+       "idx": 21,
+       "arr": "10.45",
+       "dep": "10.45"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 37)",
+       "idx": 22,
+       "arr": "10.46",
+       "dep": "10.46"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 127)",
+       "idx": 23,
+       "arr": "10.47",
+       "dep": "10.47"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 31)",
+       "idx": 24,
+       "arr": "10.47",
+       "dep": "10.47"
+      },
+      {
+       "stop": "ENNA (Via Ottavio Catalano 102)",
+       "idx": 25,
+       "arr": "10.48",
+       "dep": "10.48"
+      },
+      {
+       "stop": "ENNA (Via Ottavio Catalano (rifornimento))",
+       "idx": 26,
+       "arr": "10.49",
+       "dep": "10.49"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 210))",
+       "idx": 27,
+       "arr": "10.51",
+       "dep": "10.51"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 104))",
+       "idx": 28,
+       "arr": "10.52",
+       "dep": "10.52"
+      },
+      {
+       "stop": "ENNA (Piazza Scelfo)",
+       "idx": 29,
+       "arr": "10.54",
+       "dep": "10.54"
+      },
+      {
+       "stop": "ENNA (Piazza Alessi)",
+       "idx": 30,
+       "arr": "10.54",
+       "dep": "10.54"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 31,
+       "arr": "10.55",
+       "dep": "10.55"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 32)",
+       "idx": 32,
+       "arr": "10.56",
+       "dep": "10.56"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 75)",
+       "idx": 33,
+       "arr": "10.57",
+       "dep": "10.57"
+      },
+      {
+       "stop": "ENNA (Viale Diaz (Istituto Professionale))",
+       "idx": 34,
+       "arr": "10.58",
+       "dep": "10.58"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 47)",
+       "idx": 35,
+       "arr": "10.59",
+       "dep": "10.59"
+      },
+      {
+       "stop": "ENNA (Viale IV Novembre 8)",
+       "idx": 36,
+       "arr": "11.01",
+       "dep": "11.01"
+      },
+      {
+       "stop": "ENNA (Piazza Europa)",
+       "idx": 37,
+       "arr": "11.02",
+       "dep": "11.02"
+      },
+      {
+       "stop": "ENNA (Via Cavalieri di Vittorio Veneto 48)",
+       "idx": 38,
+       "arr": "11.03",
+       "dep": "11.03"
+      },
+      {
+       "stop": "ENNA (Via Cav. di Vittorio Veneto(incr. Via Piave))",
+       "idx": 39,
+       "arr": "11.04",
+       "dep": "11.04"
+      },
+      {
+       "stop": "ENNA (Via Spirito Santo 144)",
+       "idx": 40,
+       "arr": "11.05",
+       "dep": "11.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0105",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SU1_5",
+     "stops": [
+      {
+       "stop": "ENNA (Via Spirito Santo 144)",
+       "idx": 0,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "ENNA (Via Spirito Santo 123)",
+       "idx": 1,
+       "arr": "9.16",
+       "dep": "9.16"
+      },
+      {
+       "stop": "ENNA (Via Risorgimento 20)",
+       "idx": 2,
+       "arr": "9.17",
+       "dep": "9.17"
+      },
+      {
+       "stop": "ENNA (Viale IV Novembre 13)",
+       "idx": 3,
+       "arr": "9.19",
+       "dep": "9.19"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 10)",
+       "idx": 4,
+       "arr": "9.21",
+       "dep": "9.21"
+      },
+      {
+       "stop": "ENNA (Via Trieste 2)",
+       "idx": 5,
+       "arr": "9.22",
+       "dep": "9.22"
+      },
+      {
+       "stop": "ENNA (Via Trieste 49)",
+       "idx": 6,
+       "arr": "9.23",
+       "dep": "9.23"
+      },
+      {
+       "stop": "ENNA (Via Catania 97/99)",
+       "idx": 7,
+       "arr": "9.25",
+       "dep": "9.25"
+      },
+      {
+       "stop": "ENNA (Via Vittorio Emanuele (L.Artistico))",
+       "idx": 8,
+       "arr": "9.26",
+       "dep": "9.26"
+      },
+      {
+       "stop": "ENNA (Via Vittorio Emanuele 37)",
+       "idx": 9,
+       "arr": "9.27",
+       "dep": "9.27"
+      },
+      {
+       "stop": "ENNA (Via Vittorio Emanuele 1)",
+       "idx": 10,
+       "arr": "9.28",
+       "dep": "9.28"
+      },
+      {
+       "stop": "ENNA (Via Roma 326)",
+       "idx": 11,
+       "arr": "9.29",
+       "dep": "9.29"
+      },
+      {
+       "stop": "ENNA (Via Roma 402)",
+       "idx": 12,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "ENNA (Piazza Napoleone Colajanni)",
+       "idx": 13,
+       "arr": "9.31",
+       "dep": "9.31"
+      },
+      {
+       "stop": "ENNA (Piazza Giovan Battista Scarlata)",
+       "idx": 14,
+       "arr": "9.32",
+       "dep": "9.32"
+      },
+      {
+       "stop": "ENNA (Piazza S.Francesco di Paola)",
+       "idx": 15,
+       "arr": "9.33",
+       "dep": "9.33"
+      },
+      {
+       "stop": "ENNA (Via della Cittadella 4)",
+       "idx": 16,
+       "arr": "9.34",
+       "dep": "9.34"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita(Chiesa S.Biagio))",
+       "idx": 17,
+       "arr": "9.35",
+       "dep": "9.35"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 50)",
+       "idx": 18,
+       "arr": "9.36",
+       "dep": "9.36"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 98)",
+       "idx": 19,
+       "arr": "9.37",
+       "dep": "9.37"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 136)",
+       "idx": 20,
+       "arr": "9.38",
+       "dep": "9.38"
+      },
+      {
+       "stop": "ENNA (Via della Rinascita 154 (Valverde))",
+       "idx": 21,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 37)",
+       "idx": 22,
+       "arr": "9.46",
+       "dep": "9.46"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 127)",
+       "idx": 23,
+       "arr": "9.47",
+       "dep": "9.47"
+      },
+      {
+       "stop": "ENNA (Via S.Leone 31)",
+       "idx": 24,
+       "arr": "9.47",
+       "dep": "9.47"
+      },
+      {
+       "stop": "ENNA (Via Ottavio Catalano 102)",
+       "idx": 25,
+       "arr": "9.48",
+       "dep": "9.48"
+      },
+      {
+       "stop": "ENNA (Via Ottavio Catalano (rifornimento))",
+       "idx": 26,
+       "arr": "9.49",
+       "dep": "9.49"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 210))",
+       "idx": 27,
+       "arr": "9.51",
+       "dep": "9.51"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 104))",
+       "idx": 28,
+       "arr": "9.52",
+       "dep": "9.52"
+      },
+      {
+       "stop": "ENNA (Piazza Scelfo)",
+       "idx": 29,
+       "arr": "9.54",
+       "dep": "9.54"
+      },
+      {
+       "stop": "ENNA (Piazza Alessi)",
+       "idx": 30,
+       "arr": "9.54",
+       "dep": "9.54"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 31,
+       "arr": "9.55",
+       "dep": "9.55"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 32)",
+       "idx": 32,
+       "arr": "9.56",
+       "dep": "9.56"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 75)",
+       "idx": 33,
+       "arr": "9.57",
+       "dep": "9.57"
+      },
+      {
+       "stop": "ENNA (Viale Diaz (Istituto Professionale))",
+       "idx": 34,
+       "arr": "9.58",
+       "dep": "9.58"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 47)",
+       "idx": 35,
+       "arr": "9.59",
+       "dep": "9.59"
+      },
+      {
+       "stop": "ENNA (Viale IV Novembre 8)",
+       "idx": 36,
+       "arr": "10.01",
+       "dep": "10.01"
+      },
+      {
+       "stop": "ENNA (Piazza Europa)",
+       "idx": 37,
+       "arr": "10.02",
+       "dep": "10.02"
+      },
+      {
+       "stop": "ENNA (Via Cavalieri di Vittorio Veneto 48)",
+       "idx": 38,
+       "arr": "10.03",
+       "dep": "10.03"
+      },
+      {
+       "stop": "ENNA (Via Cav. di Vittorio Veneto(incr. Via Piave))",
+       "idx": 39,
+       "arr": "10.04",
+       "dep": "10.04"
+      },
+      {
+       "stop": "ENNA (Via Spirito Santo 144)",
+       "idx": 40,
+       "arr": "10.05",
+       "dep": "10.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0113",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "SU1_7",
+     "stops": [
+      {
+       "stop": "ENNA (Via Spirito Santo 144)",
+       "idx": 0,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "ENNA (Via Spirito Santo 123)",
+       "idx": 1,
+       "arr": "15.01",
+       "dep": "15.01"
+      },
+      {
+       "stop": "ENNA (Via Risorgimento 20)",
+       "idx": 2,
+       "arr": "15.02",
+       "dep": "15.02"
+      },
+      {
+       "stop": "ENNA (Viale IV Novembre 13)",
+       "idx": 3,
+       "arr": "15.04",
+       "dep": "15.04"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 10)",
+       "idx": 4,
+       "arr": "15.06",
+       "dep": "15.06"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 34)",
+       "idx": 5,
+       "arr": "15.07",
+       "dep": "15.07"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 86)",
+       "idx": 6,
+       "arr": "15.08",
+       "dep": "15.08"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 7,
+       "arr": "15.10",
+       "dep": "15.10"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

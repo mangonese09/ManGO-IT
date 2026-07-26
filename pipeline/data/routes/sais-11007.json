@@ -1,0 +1,1276 @@
+{
+ "operator": "SAIS Autolinee",
+ "route_id": "sais-11007",
+ "name": "9 - Linea Estiva Lungomare Federico II di Svevia",
+ "short_name": "11007",
+ "coords": "external",
+ "source": "api.saisautolinee.it line 20b1db31-b999-4add-9fbf-b79d5c8bf426",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "GELA (Piazza Stazione)",
+    "GELA (Via Venezia, 23)",
+    "GELA (Via dell'Acropoli (Tribunale))",
+    "GELA (Lungomare Federico II di Svevia, 198)",
+    "GELA (Via Ettore Romagnoli, 124)",
+    "GELA (Via Giovanni Meli fronte 17)",
+    "GELA (Viale Indipendenza, 2)",
+    "GELA (Viale Indipendenza fronte 2)",
+    "GELA (Via Ettore Romagnoli, 67)",
+    "GELA (Lungomare Federico II di Svevia fronte 198)",
+    "GELA (Via dell'Acropoli)"
+   ],
+   "trips": [
+    {
+     "corsa": "009007",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "8 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11007_4",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 0,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "GELA (Via Venezia, 23)",
+       "idx": 1,
+       "arr": "11.03",
+       "dep": "11.03"
+      },
+      {
+       "stop": "GELA (Via dell'Acropoli (Tribunale))",
+       "idx": 2,
+       "arr": "11.05",
+       "dep": "11.05"
+      },
+      {
+       "stop": "GELA (Lungomare Federico II di Svevia, 198)",
+       "idx": 3,
+       "arr": "11.09",
+       "dep": "11.09"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 124)",
+       "idx": 4,
+       "arr": "11.12",
+       "dep": "11.12"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 5,
+       "arr": "11.13",
+       "dep": "11.13"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza, 2)",
+       "idx": 6,
+       "arr": "11.14",
+       "dep": "11.14"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza fronte 2)",
+       "idx": 7,
+       "arr": "11.16",
+       "dep": "11.16"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 8,
+       "arr": "11.18",
+       "dep": "11.18"
+      },
+      {
+       "stop": "GELA (Lungomare Federico II di Svevia fronte 198)",
+       "idx": 9,
+       "arr": "11.20",
+       "dep": "11.20"
+      },
+      {
+       "stop": "GELA (Via dell'Acropoli)",
+       "idx": 10,
+       "arr": "11.22",
+       "dep": "11.22"
+      },
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 11,
+       "arr": "11.25",
+       "dep": "11.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "009015",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "8 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11007_4",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 0,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "GELA (Via Venezia, 23)",
+       "idx": 1,
+       "arr": "13.03",
+       "dep": "13.03"
+      },
+      {
+       "stop": "GELA (Via dell'Acropoli (Tribunale))",
+       "idx": 2,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "GELA (Lungomare Federico II di Svevia, 198)",
+       "idx": 3,
+       "arr": "13.09",
+       "dep": "13.09"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 124)",
+       "idx": 4,
+       "arr": "13.12",
+       "dep": "13.12"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 5,
+       "arr": "13.13",
+       "dep": "13.13"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza, 2)",
+       "idx": 6,
+       "arr": "13.14",
+       "dep": "13.14"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza fronte 2)",
+       "idx": 7,
+       "arr": "13.16",
+       "dep": "13.16"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 8,
+       "arr": "13.18",
+       "dep": "13.18"
+      },
+      {
+       "stop": "GELA (Lungomare Federico II di Svevia fronte 198)",
+       "idx": 9,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "GELA (Via dell'Acropoli)",
+       "idx": 10,
+       "arr": "13.22",
+       "dep": "13.22"
+      },
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 11,
+       "arr": "13.25",
+       "dep": "13.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "009017",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "8 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11007_4",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 0,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "GELA (Via Venezia, 23)",
+       "idx": 1,
+       "arr": "13.33",
+       "dep": "13.33"
+      },
+      {
+       "stop": "GELA (Via dell'Acropoli (Tribunale))",
+       "idx": 2,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "GELA (Lungomare Federico II di Svevia, 198)",
+       "idx": 3,
+       "arr": "13.39",
+       "dep": "13.39"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 124)",
+       "idx": 4,
+       "arr": "13.42",
+       "dep": "13.42"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 5,
+       "arr": "13.43",
+       "dep": "13.43"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza, 2)",
+       "idx": 6,
+       "arr": "13.44",
+       "dep": "13.44"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza fronte 2)",
+       "idx": 7,
+       "arr": "13.46",
+       "dep": "13.46"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 8,
+       "arr": "13.48",
+       "dep": "13.48"
+      },
+      {
+       "stop": "GELA (Lungomare Federico II di Svevia fronte 198)",
+       "idx": 9,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "GELA (Via dell'Acropoli)",
+       "idx": 10,
+       "arr": "13.52",
+       "dep": "13.52"
+      },
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 11,
+       "arr": "13.55",
+       "dep": "13.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "009019",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "8 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11007_4",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "GELA (Via Venezia, 23)",
+       "idx": 1,
+       "arr": "14.03",
+       "dep": "14.03"
+      },
+      {
+       "stop": "GELA (Via dell'Acropoli (Tribunale))",
+       "idx": 2,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "GELA (Lungomare Federico II di Svevia, 198)",
+       "idx": 3,
+       "arr": "14.09",
+       "dep": "14.09"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 124)",
+       "idx": 4,
+       "arr": "14.12",
+       "dep": "14.12"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 5,
+       "arr": "14.13",
+       "dep": "14.13"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza, 2)",
+       "idx": 6,
+       "arr": "14.14",
+       "dep": "14.14"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza fronte 2)",
+       "idx": 7,
+       "arr": "14.16",
+       "dep": "14.16"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 8,
+       "arr": "14.18",
+       "dep": "14.18"
+      },
+      {
+       "stop": "GELA (Lungomare Federico II di Svevia fronte 198)",
+       "idx": 9,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "GELA (Via dell'Acropoli)",
+       "idx": 10,
+       "arr": "14.22",
+       "dep": "14.22"
+      },
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 11,
+       "arr": "14.25",
+       "dep": "14.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "009001",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "8 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11007_4",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 0,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "GELA (Via Venezia, 23)",
+       "idx": 1,
+       "arr": "9.33",
+       "dep": "9.33"
+      },
+      {
+       "stop": "GELA (Via dell'Acropoli (Tribunale))",
+       "idx": 2,
+       "arr": "9.35",
+       "dep": "9.35"
+      },
+      {
+       "stop": "GELA (Lungomare Federico II di Svevia, 198)",
+       "idx": 3,
+       "arr": "9.39",
+       "dep": "9.39"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 124)",
+       "idx": 4,
+       "arr": "9.42",
+       "dep": "9.42"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 5,
+       "arr": "9.43",
+       "dep": "9.43"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza, 2)",
+       "idx": 6,
+       "arr": "9.44",
+       "dep": "9.44"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza fronte 2)",
+       "idx": 7,
+       "arr": "9.46",
+       "dep": "9.46"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 8,
+       "arr": "9.48",
+       "dep": "9.48"
+      },
+      {
+       "stop": "GELA (Lungomare Federico II di Svevia fronte 198)",
+       "idx": 9,
+       "arr": "9.50",
+       "dep": "9.50"
+      },
+      {
+       "stop": "GELA (Via dell'Acropoli)",
+       "idx": 10,
+       "arr": "9.52",
+       "dep": "9.52"
+      },
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 11,
+       "arr": "9.55",
+       "dep": "9.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "009013",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "8 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11007_4",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 0,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "GELA (Via Venezia, 23)",
+       "idx": 1,
+       "arr": "12.33",
+       "dep": "12.33"
+      },
+      {
+       "stop": "GELA (Via dell'Acropoli (Tribunale))",
+       "idx": 2,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "GELA (Lungomare Federico II di Svevia, 198)",
+       "idx": 3,
+       "arr": "12.39",
+       "dep": "12.39"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 124)",
+       "idx": 4,
+       "arr": "12.42",
+       "dep": "12.42"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 5,
+       "arr": "12.43",
+       "dep": "12.43"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza, 2)",
+       "idx": 6,
+       "arr": "12.44",
+       "dep": "12.44"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza fronte 2)",
+       "idx": 7,
+       "arr": "12.46",
+       "dep": "12.46"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 8,
+       "arr": "12.48",
+       "dep": "12.48"
+      },
+      {
+       "stop": "GELA (Lungomare Federico II di Svevia fronte 198)",
+       "idx": 9,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "GELA (Via dell'Acropoli)",
+       "idx": 10,
+       "arr": "12.52",
+       "dep": "12.52"
+      },
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 11,
+       "arr": "12.55",
+       "dep": "12.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "009011",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "8 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11007_4",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 0,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "GELA (Via Venezia, 23)",
+       "idx": 1,
+       "arr": "12.03",
+       "dep": "12.03"
+      },
+      {
+       "stop": "GELA (Via dell'Acropoli (Tribunale))",
+       "idx": 2,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "GELA (Lungomare Federico II di Svevia, 198)",
+       "idx": 3,
+       "arr": "12.09",
+       "dep": "12.09"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 124)",
+       "idx": 4,
+       "arr": "12.12",
+       "dep": "12.12"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 5,
+       "arr": "12.13",
+       "dep": "12.13"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza, 2)",
+       "idx": 6,
+       "arr": "12.14",
+       "dep": "12.14"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza fronte 2)",
+       "idx": 7,
+       "arr": "12.16",
+       "dep": "12.16"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 8,
+       "arr": "12.18",
+       "dep": "12.18"
+      },
+      {
+       "stop": "GELA (Lungomare Federico II di Svevia fronte 198)",
+       "idx": 9,
+       "arr": "12.20",
+       "dep": "12.20"
+      },
+      {
+       "stop": "GELA (Via dell'Acropoli)",
+       "idx": 10,
+       "arr": "12.22",
+       "dep": "12.22"
+      },
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 11,
+       "arr": "12.25",
+       "dep": "12.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "009005",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "8 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11007_4",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 0,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "GELA (Via Venezia, 23)",
+       "idx": 1,
+       "arr": "10.33",
+       "dep": "10.33"
+      },
+      {
+       "stop": "GELA (Via dell'Acropoli (Tribunale))",
+       "idx": 2,
+       "arr": "10.35",
+       "dep": "10.35"
+      },
+      {
+       "stop": "GELA (Lungomare Federico II di Svevia, 198)",
+       "idx": 3,
+       "arr": "10.39",
+       "dep": "10.39"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 124)",
+       "idx": 4,
+       "arr": "10.42",
+       "dep": "10.42"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 5,
+       "arr": "10.43",
+       "dep": "10.43"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza, 2)",
+       "idx": 6,
+       "arr": "10.44",
+       "dep": "10.44"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza fronte 2)",
+       "idx": 7,
+       "arr": "10.46",
+       "dep": "10.46"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 8,
+       "arr": "10.48",
+       "dep": "10.48"
+      },
+      {
+       "stop": "GELA (Lungomare Federico II di Svevia fronte 198)",
+       "idx": 9,
+       "arr": "10.50",
+       "dep": "10.50"
+      },
+      {
+       "stop": "GELA (Via dell'Acropoli)",
+       "idx": 10,
+       "arr": "10.52",
+       "dep": "10.52"
+      },
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 11,
+       "arr": "10.55",
+       "dep": "10.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "009025",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "8 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11007_4",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 0,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "GELA (Via Venezia, 23)",
+       "idx": 1,
+       "arr": "15.33",
+       "dep": "15.33"
+      },
+      {
+       "stop": "GELA (Via dell'Acropoli (Tribunale))",
+       "idx": 2,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "GELA (Lungomare Federico II di Svevia, 198)",
+       "idx": 3,
+       "arr": "15.39",
+       "dep": "15.39"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 124)",
+       "idx": 4,
+       "arr": "15.42",
+       "dep": "15.42"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 5,
+       "arr": "15.43",
+       "dep": "15.43"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza, 2)",
+       "idx": 6,
+       "arr": "15.44",
+       "dep": "15.44"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza fronte 2)",
+       "idx": 7,
+       "arr": "15.46",
+       "dep": "15.46"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 8,
+       "arr": "15.48",
+       "dep": "15.48"
+      },
+      {
+       "stop": "GELA (Lungomare Federico II di Svevia fronte 198)",
+       "idx": 9,
+       "arr": "15.50",
+       "dep": "15.50"
+      },
+      {
+       "stop": "GELA (Via dell'Acropoli)",
+       "idx": 10,
+       "arr": "15.52",
+       "dep": "15.52"
+      },
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 11,
+       "arr": "15.55",
+       "dep": "15.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "009023",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "8 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11007_4",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 0,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "GELA (Via Venezia, 23)",
+       "idx": 1,
+       "arr": "15.03",
+       "dep": "15.03"
+      },
+      {
+       "stop": "GELA (Via dell'Acropoli (Tribunale))",
+       "idx": 2,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "GELA (Lungomare Federico II di Svevia, 198)",
+       "idx": 3,
+       "arr": "15.09",
+       "dep": "15.09"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 124)",
+       "idx": 4,
+       "arr": "15.12",
+       "dep": "15.12"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 5,
+       "arr": "15.13",
+       "dep": "15.13"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza, 2)",
+       "idx": 6,
+       "arr": "15.14",
+       "dep": "15.14"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza fronte 2)",
+       "idx": 7,
+       "arr": "15.16",
+       "dep": "15.16"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 8,
+       "arr": "15.18",
+       "dep": "15.18"
+      },
+      {
+       "stop": "GELA (Lungomare Federico II di Svevia fronte 198)",
+       "idx": 9,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "GELA (Via dell'Acropoli)",
+       "idx": 10,
+       "arr": "15.22",
+       "dep": "15.22"
+      },
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 11,
+       "arr": "15.25",
+       "dep": "15.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "009021",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "8 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11007_4",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 0,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "GELA (Via Venezia, 23)",
+       "idx": 1,
+       "arr": "14.33",
+       "dep": "14.33"
+      },
+      {
+       "stop": "GELA (Via dell'Acropoli (Tribunale))",
+       "idx": 2,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "GELA (Lungomare Federico II di Svevia, 198)",
+       "idx": 3,
+       "arr": "14.39",
+       "dep": "14.39"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 124)",
+       "idx": 4,
+       "arr": "14.42",
+       "dep": "14.42"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 5,
+       "arr": "14.43",
+       "dep": "14.43"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza, 2)",
+       "idx": 6,
+       "arr": "14.44",
+       "dep": "14.44"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza fronte 2)",
+       "idx": 7,
+       "arr": "14.46",
+       "dep": "14.46"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 8,
+       "arr": "14.48",
+       "dep": "14.48"
+      },
+      {
+       "stop": "GELA (Lungomare Federico II di Svevia fronte 198)",
+       "idx": 9,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "GELA (Via dell'Acropoli)",
+       "idx": 10,
+       "arr": "14.52",
+       "dep": "14.52"
+      },
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 11,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "009009",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "8 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11007_4",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 0,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "GELA (Via Venezia, 23)",
+       "idx": 1,
+       "arr": "11.33",
+       "dep": "11.33"
+      },
+      {
+       "stop": "GELA (Via dell'Acropoli (Tribunale))",
+       "idx": 2,
+       "arr": "11.35",
+       "dep": "11.35"
+      },
+      {
+       "stop": "GELA (Lungomare Federico II di Svevia, 198)",
+       "idx": 3,
+       "arr": "11.39",
+       "dep": "11.39"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 124)",
+       "idx": 4,
+       "arr": "11.42",
+       "dep": "11.42"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 5,
+       "arr": "11.43",
+       "dep": "11.43"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza, 2)",
+       "idx": 6,
+       "arr": "11.44",
+       "dep": "11.44"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza fronte 2)",
+       "idx": 7,
+       "arr": "11.46",
+       "dep": "11.46"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 8,
+       "arr": "11.48",
+       "dep": "11.48"
+      },
+      {
+       "stop": "GELA (Lungomare Federico II di Svevia fronte 198)",
+       "idx": 9,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "GELA (Via dell'Acropoli)",
+       "idx": 10,
+       "arr": "11.52",
+       "dep": "11.52"
+      },
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 11,
+       "arr": "11.55",
+       "dep": "11.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "009003",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "8 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11007_4",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 0,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "GELA (Via Venezia, 23)",
+       "idx": 1,
+       "arr": "10.03",
+       "dep": "10.03"
+      },
+      {
+       "stop": "GELA (Via dell'Acropoli (Tribunale))",
+       "idx": 2,
+       "arr": "10.05",
+       "dep": "10.05"
+      },
+      {
+       "stop": "GELA (Lungomare Federico II di Svevia, 198)",
+       "idx": 3,
+       "arr": "10.09",
+       "dep": "10.09"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 124)",
+       "idx": 4,
+       "arr": "10.12",
+       "dep": "10.12"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 5,
+       "arr": "10.13",
+       "dep": "10.13"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza, 2)",
+       "idx": 6,
+       "arr": "10.14",
+       "dep": "10.14"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza fronte 2)",
+       "idx": 7,
+       "arr": "10.16",
+       "dep": "10.16"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 8,
+       "arr": "10.18",
+       "dep": "10.18"
+      },
+      {
+       "stop": "GELA (Lungomare Federico II di Svevia fronte 198)",
+       "idx": 9,
+       "arr": "10.20",
+       "dep": "10.20"
+      },
+      {
+       "stop": "GELA (Via dell'Acropoli)",
+       "idx": 10,
+       "arr": "10.22",
+       "dep": "10.22"
+      },
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 11,
+       "arr": "10.25",
+       "dep": "10.25"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

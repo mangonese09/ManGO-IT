@@ -1,0 +1,1539 @@
+{
+ "operator": "SAIS Autolinee",
+ "route_id": "sais-8002",
+ "name": "4 Porto - Stazione - Ospedale",
+ "short_name": "8002",
+ "coords": "external",
+ "source": "api.saisautolinee.it line 494d9928-4c0b-43a9-8ffb-7b32c839e1b8",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "MILAZZO (Porto)",
+    "MILAZZO (Piazza Roma 20)",
+    "MILAZZO (Via Risorgimento 65)",
+    "MILAZZO (Via Risorgimento 3)",
+    "MILAZZO (Piazza XXV Aprile)",
+    "MILAZZO (Via Magistri 40)",
+    "MILAZZO (Via Ciantro 10)",
+    "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+    "MILAZZO (Via Ciantro 30)",
+    "MILAZZO (Via Ciantro incrocio Marconi)",
+    "MILAZZO (Via Ciantro fronte 57)",
+    "MILAZZO (Viale Gramsci 84)",
+    "MILAZZO (Viale Gramsci 162)",
+    "MILAZZO (Stazione FS)",
+    "MILAZZO (Via Madonna delle Grazie 6)",
+    "MILAZZO (Via Madonna delle Grazie 74)",
+    "MILAZZO (Via Madonna delle Grazie 140)",
+    "MILAZZO (Via della Concordia 26)",
+    "MILAZZO (Via della Concordia 74)",
+    "MILAZZO (Via della Concordia 162)",
+    "MILAZZO (Via Olivarella 144)",
+    "MILAZZO (Via Botteghelle 135)",
+    "MILAZZO (Via Botteghelle 97)",
+    "MILAZZO (Via Botteghelle 29)",
+    "MILAZZO (Via Fiumarella fronte 48)",
+    "MILAZZO (Via Fiumarella 22)",
+    "MILAZZO (Via Fiumarella 11)",
+    "MILAZZO (Via Luigi Fulci 44)",
+    "MILAZZO (Via Luigi Fulci 132)",
+    "MILAZZO (Via Madonna delle Grazie 67)",
+    "MILAZZO (Via Madonna delle Grazie 11)",
+    "MILAZZO (Viale Gramsci fronte 162)",
+    "MILAZZO (Viale Gramsci 27)",
+    "MILAZZO (Via Ciantro 57)",
+    "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+    "MILAZZO (Via Ciantro 13)",
+    "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+    "MILAZZO (Via Ciantro 3)",
+    "MILAZZO (Via dei Mille)"
+   ],
+   "trips": [
+    {
+     "corsa": "004025",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8002_5",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "9.02",
+       "dep": "9.02"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 2,
+       "arr": "9.04",
+       "dep": "9.04"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 3,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 4,
+       "arr": "9.06",
+       "dep": "9.06"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 5,
+       "arr": "9.07",
+       "dep": "9.07"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 6,
+       "arr": "9.08",
+       "dep": "9.08"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 7,
+       "arr": "9.09",
+       "dep": "9.09"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 8,
+       "arr": "9.09",
+       "dep": "9.09"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 9,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 10,
+       "arr": "9.11",
+       "dep": "9.11"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 11,
+       "arr": "9.13",
+       "dep": "9.13"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 12,
+       "arr": "9.14",
+       "dep": "9.14"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 13,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "MILAZZO (Via Madonna delle Grazie 6)",
+       "idx": 14,
+       "arr": "9.16",
+       "dep": "9.16"
+      },
+      {
+       "stop": "MILAZZO (Via Madonna delle Grazie 74)",
+       "idx": 15,
+       "arr": "9.17",
+       "dep": "9.17"
+      },
+      {
+       "stop": "MILAZZO (Via Madonna delle Grazie 140)",
+       "idx": 16,
+       "arr": "9.18",
+       "dep": "9.18"
+      },
+      {
+       "stop": "MILAZZO (Via della Concordia 26)",
+       "idx": 17,
+       "arr": "9.19",
+       "dep": "9.19"
+      },
+      {
+       "stop": "MILAZZO (Via della Concordia 74)",
+       "idx": 18,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "MILAZZO (Via della Concordia 162)",
+       "idx": 19,
+       "arr": "9.21",
+       "dep": "9.21"
+      },
+      {
+       "stop": "MILAZZO (Via Olivarella 144)",
+       "idx": 20,
+       "arr": "9.23",
+       "dep": "9.23"
+      },
+      {
+       "stop": "MILAZZO (Via Botteghelle 135)",
+       "idx": 21,
+       "arr": "9.25",
+       "dep": "9.25"
+      },
+      {
+       "stop": "MILAZZO (Via Botteghelle 97)",
+       "idx": 22,
+       "arr": "9.27",
+       "dep": "9.27"
+      },
+      {
+       "stop": "MILAZZO (Via Botteghelle 29)",
+       "idx": 23,
+       "arr": "9.28",
+       "dep": "9.28"
+      },
+      {
+       "stop": "MILAZZO (Via Fiumarella fronte 48)",
+       "idx": 24,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "MILAZZO (Via Fiumarella 22)",
+       "idx": 25,
+       "arr": "9.31",
+       "dep": "9.31"
+      },
+      {
+       "stop": "MILAZZO (Via Fiumarella 11)",
+       "idx": 26,
+       "arr": "9.32",
+       "dep": "9.32"
+      },
+      {
+       "stop": "MILAZZO (Via Luigi Fulci 44)",
+       "idx": 27,
+       "arr": "9.33",
+       "dep": "9.33"
+      },
+      {
+       "stop": "MILAZZO (Via Luigi Fulci 132)",
+       "idx": 28,
+       "arr": "9.33",
+       "dep": "9.33"
+      },
+      {
+       "stop": "MILAZZO (Via Madonna delle Grazie 67)",
+       "idx": 29,
+       "arr": "9.34",
+       "dep": "9.34"
+      },
+      {
+       "stop": "MILAZZO (Via Madonna delle Grazie 11)",
+       "idx": 30,
+       "arr": "9.35",
+       "dep": "9.35"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 31,
+       "arr": "9.37",
+       "dep": "9.37"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 32,
+       "arr": "9.38",
+       "dep": "9.38"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 33,
+       "arr": "9.40",
+       "dep": "9.40"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 34,
+       "arr": "9.43",
+       "dep": "9.43"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 35,
+       "arr": "9.44",
+       "dep": "9.44"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 36,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 37,
+       "arr": "9.46",
+       "dep": "9.46"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 38,
+       "arr": "9.47",
+       "dep": "9.47"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 39,
+       "arr": "9.48",
+       "dep": "9.48"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 40,
+       "arr": "9.50",
+       "dep": "9.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "004031",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8002_15",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "20.15",
+       "dep": "20.15"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "20.17",
+       "dep": "20.17"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 2,
+       "arr": "20.19",
+       "dep": "20.19"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 3,
+       "arr": "20.20",
+       "dep": "20.20"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 4,
+       "arr": "20.21",
+       "dep": "20.21"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 5,
+       "arr": "20.22",
+       "dep": "20.22"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 6,
+       "arr": "20.23",
+       "dep": "20.23"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 7,
+       "arr": "20.24",
+       "dep": "20.24"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 8,
+       "arr": "20.24",
+       "dep": "20.24"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 9,
+       "arr": "20.25",
+       "dep": "20.25"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 10,
+       "arr": "20.26",
+       "dep": "20.26"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 11,
+       "arr": "20.27",
+       "dep": "20.27"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 12,
+       "arr": "20.28",
+       "dep": "20.28"
+      },
+      {
+       "stop": "MILAZZO (Via Madonna delle Grazie 6)",
+       "idx": 13,
+       "arr": "20.29",
+       "dep": "20.29"
+      },
+      {
+       "stop": "MILAZZO (Via Madonna delle Grazie 74)",
+       "idx": 14,
+       "arr": "20.30",
+       "dep": "20.30"
+      },
+      {
+       "stop": "MILAZZO (Via Madonna delle Grazie 140)",
+       "idx": 15,
+       "arr": "20.31",
+       "dep": "20.31"
+      },
+      {
+       "stop": "MILAZZO (Via della Concordia 26)",
+       "idx": 16,
+       "arr": "20.32",
+       "dep": "20.32"
+      },
+      {
+       "stop": "MILAZZO (Via della Concordia 74)",
+       "idx": 17,
+       "arr": "20.33",
+       "dep": "20.33"
+      },
+      {
+       "stop": "MILAZZO (Via della Concordia 162)",
+       "idx": 18,
+       "arr": "20.34",
+       "dep": "20.34"
+      },
+      {
+       "stop": "MILAZZO (Via Olivarella 144)",
+       "idx": 19,
+       "arr": "20.36",
+       "dep": "20.36"
+      },
+      {
+       "stop": "MILAZZO (Via Botteghelle 135)",
+       "idx": 20,
+       "arr": "20.38",
+       "dep": "20.38"
+      },
+      {
+       "stop": "MILAZZO (Via Botteghelle 97)",
+       "idx": 21,
+       "arr": "20.40",
+       "dep": "20.40"
+      },
+      {
+       "stop": "MILAZZO (Via Botteghelle 29)",
+       "idx": 22,
+       "arr": "20.41",
+       "dep": "20.41"
+      },
+      {
+       "stop": "MILAZZO (Via Fiumarella fronte 48)",
+       "idx": 23,
+       "arr": "20.43",
+       "dep": "20.43"
+      },
+      {
+       "stop": "MILAZZO (Via Fiumarella 22)",
+       "idx": 24,
+       "arr": "20.44",
+       "dep": "20.44"
+      },
+      {
+       "stop": "MILAZZO (Via Fiumarella 11)",
+       "idx": 25,
+       "arr": "20.45",
+       "dep": "20.45"
+      },
+      {
+       "stop": "MILAZZO (Via Luigi Fulci 44)",
+       "idx": 26,
+       "arr": "20.46",
+       "dep": "20.46"
+      },
+      {
+       "stop": "MILAZZO (Via Luigi Fulci 132)",
+       "idx": 27,
+       "arr": "20.46",
+       "dep": "20.46"
+      },
+      {
+       "stop": "MILAZZO (Via Madonna delle Grazie 67)",
+       "idx": 28,
+       "arr": "20.47",
+       "dep": "20.47"
+      },
+      {
+       "stop": "MILAZZO (Via Madonna delle Grazie 11)",
+       "idx": 29,
+       "arr": "20.48",
+       "dep": "20.48"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 30,
+       "arr": "20.49",
+       "dep": "20.49"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 31,
+       "arr": "20.50",
+       "dep": "20.50"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 32,
+       "arr": "20.53",
+       "dep": "20.53"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 33,
+       "arr": "20.54",
+       "dep": "20.54"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 34,
+       "arr": "20.55",
+       "dep": "20.55"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 35,
+       "arr": "20.56",
+       "dep": "20.56"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 36,
+       "arr": "20.57",
+       "dep": "20.57"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 37,
+       "arr": "20.58",
+       "dep": "20.58"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 38,
+       "arr": "21.00",
+       "dep": "21.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "004029",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8002_15",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "16.32",
+       "dep": "16.32"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 2,
+       "arr": "16.34",
+       "dep": "16.34"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 3,
+       "arr": "16.35",
+       "dep": "16.35"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 4,
+       "arr": "16.36",
+       "dep": "16.36"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 5,
+       "arr": "16.37",
+       "dep": "16.37"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 6,
+       "arr": "16.38",
+       "dep": "16.38"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 7,
+       "arr": "16.39",
+       "dep": "16.39"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 8,
+       "arr": "16.39",
+       "dep": "16.39"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 9,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 10,
+       "arr": "16.41",
+       "dep": "16.41"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 11,
+       "arr": "16.42",
+       "dep": "16.42"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 12,
+       "arr": "16.43",
+       "dep": "16.43"
+      },
+      {
+       "stop": "MILAZZO (Via Madonna delle Grazie 6)",
+       "idx": 13,
+       "arr": "16.44",
+       "dep": "16.44"
+      },
+      {
+       "stop": "MILAZZO (Via Madonna delle Grazie 74)",
+       "idx": 14,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "MILAZZO (Via Madonna delle Grazie 140)",
+       "idx": 15,
+       "arr": "16.46",
+       "dep": "16.46"
+      },
+      {
+       "stop": "MILAZZO (Via della Concordia 26)",
+       "idx": 16,
+       "arr": "16.47",
+       "dep": "16.47"
+      },
+      {
+       "stop": "MILAZZO (Via della Concordia 74)",
+       "idx": 17,
+       "arr": "16.48",
+       "dep": "16.48"
+      },
+      {
+       "stop": "MILAZZO (Via della Concordia 162)",
+       "idx": 18,
+       "arr": "16.49",
+       "dep": "16.49"
+      },
+      {
+       "stop": "MILAZZO (Via Olivarella 144)",
+       "idx": 19,
+       "arr": "16.51",
+       "dep": "16.51"
+      },
+      {
+       "stop": "MILAZZO (Via Botteghelle 135)",
+       "idx": 20,
+       "arr": "16.53",
+       "dep": "16.53"
+      },
+      {
+       "stop": "MILAZZO (Via Botteghelle 97)",
+       "idx": 21,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "MILAZZO (Via Botteghelle 29)",
+       "idx": 22,
+       "arr": "16.56",
+       "dep": "16.56"
+      },
+      {
+       "stop": "MILAZZO (Via Fiumarella fronte 48)",
+       "idx": 23,
+       "arr": "16.58",
+       "dep": "16.58"
+      },
+      {
+       "stop": "MILAZZO (Via Fiumarella 22)",
+       "idx": 24,
+       "arr": "16.59",
+       "dep": "16.59"
+      },
+      {
+       "stop": "MILAZZO (Via Fiumarella 11)",
+       "idx": 25,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "MILAZZO (Via Luigi Fulci 44)",
+       "idx": 26,
+       "arr": "17.01",
+       "dep": "17.01"
+      },
+      {
+       "stop": "MILAZZO (Via Luigi Fulci 132)",
+       "idx": 27,
+       "arr": "17.01",
+       "dep": "17.01"
+      },
+      {
+       "stop": "MILAZZO (Via Madonna delle Grazie 67)",
+       "idx": 28,
+       "arr": "17.02",
+       "dep": "17.02"
+      },
+      {
+       "stop": "MILAZZO (Via Madonna delle Grazie 11)",
+       "idx": 29,
+       "arr": "17.03",
+       "dep": "17.03"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 30,
+       "arr": "17.04",
+       "dep": "17.04"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 31,
+       "arr": "17.05",
+       "dep": "17.05"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 32,
+       "arr": "17.08",
+       "dep": "17.08"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 33,
+       "arr": "17.09",
+       "dep": "17.09"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 34,
+       "arr": "17.10",
+       "dep": "17.10"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 35,
+       "arr": "17.11",
+       "dep": "17.11"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 36,
+       "arr": "17.12",
+       "dep": "17.12"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 37,
+       "arr": "17.13",
+       "dep": "17.13"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 38,
+       "arr": "17.15",
+       "dep": "17.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "004027",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8002_15",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "12.52",
+       "dep": "12.52"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 2,
+       "arr": "12.54",
+       "dep": "12.54"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 3,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 4,
+       "arr": "12.56",
+       "dep": "12.56"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 5,
+       "arr": "12.57",
+       "dep": "12.57"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 6,
+       "arr": "12.58",
+       "dep": "12.58"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 7,
+       "arr": "12.59",
+       "dep": "12.59"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 8,
+       "arr": "12.59",
+       "dep": "12.59"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 9,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 10,
+       "arr": "13.01",
+       "dep": "13.01"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 11,
+       "arr": "13.02",
+       "dep": "13.02"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 12,
+       "arr": "13.03",
+       "dep": "13.03"
+      },
+      {
+       "stop": "MILAZZO (Via Madonna delle Grazie 6)",
+       "idx": 13,
+       "arr": "13.04",
+       "dep": "13.04"
+      },
+      {
+       "stop": "MILAZZO (Via Madonna delle Grazie 74)",
+       "idx": 14,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "MILAZZO (Via Madonna delle Grazie 140)",
+       "idx": 15,
+       "arr": "13.06",
+       "dep": "13.06"
+      },
+      {
+       "stop": "MILAZZO (Via della Concordia 26)",
+       "idx": 16,
+       "arr": "13.07",
+       "dep": "13.07"
+      },
+      {
+       "stop": "MILAZZO (Via della Concordia 74)",
+       "idx": 17,
+       "arr": "13.08",
+       "dep": "13.08"
+      },
+      {
+       "stop": "MILAZZO (Via della Concordia 162)",
+       "idx": 18,
+       "arr": "13.09",
+       "dep": "13.09"
+      },
+      {
+       "stop": "MILAZZO (Via Olivarella 144)",
+       "idx": 19,
+       "arr": "13.11",
+       "dep": "13.11"
+      },
+      {
+       "stop": "MILAZZO (Via Botteghelle 135)",
+       "idx": 20,
+       "arr": "13.13",
+       "dep": "13.13"
+      },
+      {
+       "stop": "MILAZZO (Via Botteghelle 97)",
+       "idx": 21,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "MILAZZO (Via Botteghelle 29)",
+       "idx": 22,
+       "arr": "13.16",
+       "dep": "13.16"
+      },
+      {
+       "stop": "MILAZZO (Via Fiumarella fronte 48)",
+       "idx": 23,
+       "arr": "13.18",
+       "dep": "13.18"
+      },
+      {
+       "stop": "MILAZZO (Via Fiumarella 22)",
+       "idx": 24,
+       "arr": "13.19",
+       "dep": "13.19"
+      },
+      {
+       "stop": "MILAZZO (Via Fiumarella 11)",
+       "idx": 25,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "MILAZZO (Via Luigi Fulci 44)",
+       "idx": 26,
+       "arr": "13.21",
+       "dep": "13.21"
+      },
+      {
+       "stop": "MILAZZO (Via Luigi Fulci 132)",
+       "idx": 27,
+       "arr": "13.21",
+       "dep": "13.21"
+      },
+      {
+       "stop": "MILAZZO (Via Madonna delle Grazie 67)",
+       "idx": 28,
+       "arr": "13.22",
+       "dep": "13.22"
+      },
+      {
+       "stop": "MILAZZO (Via Madonna delle Grazie 11)",
+       "idx": 29,
+       "arr": "13.23",
+       "dep": "13.23"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 30,
+       "arr": "13.24",
+       "dep": "13.24"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 31,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 32,
+       "arr": "13.28",
+       "dep": "13.28"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 33,
+       "arr": "13.29",
+       "dep": "13.29"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 34,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 35,
+       "arr": "13.31",
+       "dep": "13.31"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 36,
+       "arr": "13.32",
+       "dep": "13.32"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 37,
+       "arr": "13.33",
+       "dep": "13.33"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 38,
+       "arr": "13.35",
+       "dep": "13.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "004023",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8002_17",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "7.17",
+       "dep": "7.17"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 2,
+       "arr": "7.19",
+       "dep": "7.19"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 3,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 4,
+       "arr": "7.21",
+       "dep": "7.21"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 5,
+       "arr": "7.22",
+       "dep": "7.22"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 6,
+       "arr": "7.23",
+       "dep": "7.23"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 7,
+       "arr": "7.24",
+       "dep": "7.24"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 30)",
+       "idx": 8,
+       "arr": "7.24",
+       "dep": "7.24"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro incrocio Marconi)",
+       "idx": 9,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte 57)",
+       "idx": 10,
+       "arr": "7.26",
+       "dep": "7.26"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 84)",
+       "idx": 11,
+       "arr": "7.27",
+       "dep": "7.27"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 162)",
+       "idx": 12,
+       "arr": "7.28",
+       "dep": "7.28"
+      },
+      {
+       "stop": "MILAZZO (Via Madonna delle Grazie 6)",
+       "idx": 13,
+       "arr": "7.29",
+       "dep": "7.29"
+      },
+      {
+       "stop": "MILAZZO (Via Madonna delle Grazie 74)",
+       "idx": 14,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "MILAZZO (Via Madonna delle Grazie 140)",
+       "idx": 15,
+       "arr": "7.31",
+       "dep": "7.31"
+      },
+      {
+       "stop": "MILAZZO (Via della Concordia 26)",
+       "idx": 16,
+       "arr": "7.32",
+       "dep": "7.32"
+      },
+      {
+       "stop": "MILAZZO (Via della Concordia 74)",
+       "idx": 17,
+       "arr": "7.33",
+       "dep": "7.33"
+      },
+      {
+       "stop": "MILAZZO (Via della Concordia 162)",
+       "idx": 18,
+       "arr": "7.34",
+       "dep": "7.34"
+      },
+      {
+       "stop": "MILAZZO (Via Olivarella 144)",
+       "idx": 19,
+       "arr": "7.36",
+       "dep": "7.36"
+      },
+      {
+       "stop": "MILAZZO (Via Botteghelle 135)",
+       "idx": 20,
+       "arr": "7.38",
+       "dep": "7.38"
+      },
+      {
+       "stop": "MILAZZO (Via Botteghelle 97)",
+       "idx": 21,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "MILAZZO (Via Botteghelle 29)",
+       "idx": 22,
+       "arr": "7.41",
+       "dep": "7.41"
+      },
+      {
+       "stop": "MILAZZO (Via Fiumarella fronte 48)",
+       "idx": 23,
+       "arr": "7.43",
+       "dep": "7.43"
+      },
+      {
+       "stop": "MILAZZO (Via Fiumarella 22)",
+       "idx": 24,
+       "arr": "7.44",
+       "dep": "7.44"
+      },
+      {
+       "stop": "MILAZZO (Via Fiumarella 11)",
+       "idx": 25,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "MILAZZO (Via Luigi Fulci 44)",
+       "idx": 26,
+       "arr": "7.46",
+       "dep": "7.46"
+      },
+      {
+       "stop": "MILAZZO (Via Luigi Fulci 132)",
+       "idx": 27,
+       "arr": "7.46",
+       "dep": "7.46"
+      },
+      {
+       "stop": "MILAZZO (Via Madonna delle Grazie 67)",
+       "idx": 28,
+       "arr": "7.47",
+       "dep": "7.47"
+      },
+      {
+       "stop": "MILAZZO (Via Madonna delle Grazie 11)",
+       "idx": 29,
+       "arr": "7.48",
+       "dep": "7.48"
+      },
+      {
+       "stop": "MILAZZO (Stazione FS)",
+       "idx": 30,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci fronte 162)",
+       "idx": 31,
+       "arr": "7.53",
+       "dep": "7.53"
+      },
+      {
+       "stop": "MILAZZO (Viale Gramsci 27)",
+       "idx": 32,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 57)",
+       "idx": 33,
+       "arr": "7.58",
+       "dep": "7.58"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte incrocio Marconi)",
+       "idx": 34,
+       "arr": "7.59",
+       "dep": "7.59"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 13)",
+       "idx": 35,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 36,
+       "arr": "8.01",
+       "dep": "8.01"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 37,
+       "arr": "8.02",
+       "dep": "8.02"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 38,
+       "arr": "8.03",
+       "dep": "8.03"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 39,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

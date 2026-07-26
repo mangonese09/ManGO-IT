@@ -108,6 +108,11 @@ def main(path):
         prec_by_name = {k: v['precision'] for k, v in sc.items() if v}
     except FileNotFoundError:
         pass
+    try:
+        sc2 = _json.load(open(os.path.join(os.path.dirname(__file__), 'data', 'sais-stop-coords.json'), encoding='utf-8'))
+        prec_by_name.update({k: v['precision'] for k, v in sc2.items() if v})
+    except FileNotFoundError:
+        pass
     precision = {s['stop_id']: prec_by_name.get(re.sub(r'\s+', ' ', s['stop_name'].upper().strip())) for s in stops}
     pos = {s['stop_id']: (float(s['stop_lat']), float(s['stop_lon'])) for s in stops}
     speed_errs, slow_warns = 0, 0
@@ -132,6 +137,9 @@ def main(path):
                     # floor: duplicated/stalled time cells. Hard-fail only when both
                     # ends have street-precision coords; centroid pins get a warning
                     # tier since town-level geometry legitimately compresses distance.
+                    # 'exact' (API-sourced) ends stay in the warning tier: slow legs
+                    # there are schedule truth (school circuits, long dwells), not
+                    # the stalled-PDF-cell artifact this gate exists to catch.
                     if precision.get(a['stop_id']) == 'street' and precision.get(b['stop_id']) == 'street':
                         speed_errs += 1
                         if speed_errs <= 8: errors.append(f'trip {tid}: implied {v:.1f} km/h over {km:.1f}km (street-precision ends)')

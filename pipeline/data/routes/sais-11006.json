@@ -1,0 +1,564 @@
+{
+ "operator": "SAIS Autolinee",
+ "route_id": "sais-11006",
+ "name": "10 Stazione-Macchitella-Indipendenza-Ospedale-Cimitero",
+ "short_name": "11006",
+ "coords": "external",
+ "source": "api.saisautolinee.it line 8a686958-fbfe-4d17-a994-499cfa49da2c",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "GELA (Piazza Stazione)",
+    "GELA (Via Niscemi (campo sportivo fronte 44))",
+    "GELA (Via Niscemi, 31)",
+    "GELA (Via Generale Cascino 205)",
+    "GELA (Via Generale Cascino, 9)",
+    "GELA (Via Giovanni Verga, 114)",
+    "GELA (Via Francesco Crispi, 132)",
+    "GELA (Via Francesco Crispi, 194)",
+    "GELA (Via Francesco Crispi, 318)",
+    "GELA (Via Francesco Crispi, 404)",
+    "GELA (Via Butera, 7)",
+    "GELA (Via Palazzi, 38)",
+    "GELA (Via Palazzi, 140)",
+    "GELA (Via Palazzi, 194)",
+    "GELA (Via Licata (fronte 5))",
+    "GELA (Via Enrico Mattei (Centro Sportivo))",
+    "GELA (Via Cortemaggiore)",
+    "GELA (Via Cortemaggiore (Clinica Santa Barbara))",
+    "GELA (Via Sabbioncello (fronte 4))",
+    "GELA (Via Caviaga (fronte 1))",
+    "GELA (Via Caviaga (fronte 23))",
+    "GELA (Via Cortemaggiore (fronte 88))",
+    "GELA (Via Cortemaggiore) [CORTEMAG]",
+    "GELA (Viale Indipendenza (prima fermata))",
+    "GELA (Viale Indipendenza, 21 (seconda fermata))",
+    "GELA (Viale Indipendenza, 17)",
+    "GELA (Viale Indipendenza (fronte 128))",
+    "GELA (Ospedale)",
+    "GELA (Cimitero Farello)"
+   ],
+   "trips": [
+    {
+     "corsa": "011001",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "7 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11006_5",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 0,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "GELA (Via Niscemi (campo sportivo fronte 44))",
+       "idx": 1,
+       "arr": "8.31",
+       "dep": "8.31"
+      },
+      {
+       "stop": "GELA (Via Niscemi, 31)",
+       "idx": 2,
+       "arr": "8.32",
+       "dep": "8.32"
+      },
+      {
+       "stop": "GELA (Via Generale Cascino 205)",
+       "idx": 3,
+       "arr": "8.33",
+       "dep": "8.33"
+      },
+      {
+       "stop": "GELA (Via Generale Cascino, 9)",
+       "idx": 4,
+       "arr": "8.34",
+       "dep": "8.34"
+      },
+      {
+       "stop": "GELA (Via Giovanni Verga, 114)",
+       "idx": 5,
+       "arr": "8.35",
+       "dep": "8.35"
+      },
+      {
+       "stop": "GELA (Via Francesco Crispi, 132)",
+       "idx": 6,
+       "arr": "8.36",
+       "dep": "8.36"
+      },
+      {
+       "stop": "GELA (Via Francesco Crispi, 194)",
+       "idx": 7,
+       "arr": "8.37",
+       "dep": "8.37"
+      },
+      {
+       "stop": "GELA (Via Francesco Crispi, 318)",
+       "idx": 8,
+       "arr": "8.39",
+       "dep": "8.39"
+      },
+      {
+       "stop": "GELA (Via Francesco Crispi, 404)",
+       "idx": 9,
+       "arr": "8.40",
+       "dep": "8.40"
+      },
+      {
+       "stop": "GELA (Via Butera, 7)",
+       "idx": 10,
+       "arr": "8.42",
+       "dep": "8.42"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 38)",
+       "idx": 11,
+       "arr": "8.43",
+       "dep": "8.43"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 140)",
+       "idx": 12,
+       "arr": "8.44",
+       "dep": "8.44"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 194)",
+       "idx": 13,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "GELA (Via Licata (fronte 5))",
+       "idx": 14,
+       "arr": "8.48",
+       "dep": "8.48"
+      },
+      {
+       "stop": "GELA (Via Enrico Mattei (Centro Sportivo))",
+       "idx": 15,
+       "arr": "8.50",
+       "dep": "8.50"
+      },
+      {
+       "stop": "GELA (Via Cortemaggiore)",
+       "idx": 16,
+       "arr": "8.51",
+       "dep": "8.51"
+      },
+      {
+       "stop": "GELA (Via Cortemaggiore (Clinica Santa Barbara))",
+       "idx": 17,
+       "arr": "8.52",
+       "dep": "8.52"
+      },
+      {
+       "stop": "GELA (Via Sabbioncello (fronte 4))",
+       "idx": 18,
+       "arr": "8.53",
+       "dep": "8.53"
+      },
+      {
+       "stop": "GELA (Via Caviaga (fronte 1))",
+       "idx": 19,
+       "arr": "8.54",
+       "dep": "8.54"
+      },
+      {
+       "stop": "GELA (Via Caviaga (fronte 23))",
+       "idx": 20,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "GELA (Via Cortemaggiore (fronte 88))",
+       "idx": 21,
+       "arr": "8.57",
+       "dep": "8.57"
+      },
+      {
+       "stop": "GELA (Via Cortemaggiore) [CORTEMAG]",
+       "idx": 22,
+       "arr": "8.58",
+       "dep": "8.58"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza (prima fermata))",
+       "idx": 23,
+       "arr": "8.59",
+       "dep": "8.59"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza, 21 (seconda fermata))",
+       "idx": 24,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza, 17)",
+       "idx": 25,
+       "arr": "9.01",
+       "dep": "9.01"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza (fronte 128))",
+       "idx": 26,
+       "arr": "9.02",
+       "dep": "9.02"
+      },
+      {
+       "stop": "GELA (Ospedale)",
+       "idx": 27,
+       "arr": "9.06",
+       "dep": "9.06"
+      },
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 28,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "GELA (Cimitero Farello)",
+       "idx": 29,
+       "arr": "9.50",
+       "dep": "9.50"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "GELA (Cimitero Farello)",
+    "GELA (Piazza Stazione)",
+    "GELA (Via Niscemi (campo sportivo fronte 44))",
+    "GELA (Via Niscemi, 31)",
+    "GELA (Via Generale Cascino 205)",
+    "GELA (Via Generale Cascino, 9)",
+    "GELA (Via Giovanni Verga, 114)",
+    "GELA (Via Francesco Crispi, 132)",
+    "GELA (Via Francesco Crispi, 194)",
+    "GELA (Via Francesco Crispi, 318)",
+    "GELA (Via Francesco Crispi, 404)",
+    "GELA (Via Butera, 7)",
+    "GELA (Via Palazzi, 38)",
+    "GELA (Via Palazzi, 140)",
+    "GELA (Via Palazzi, 194)",
+    "GELA (Via Licata (fronte 5))",
+    "GELA (Via Enrico Mattei (Centro Sportivo))",
+    "GELA (Via Cortemaggiore)",
+    "GELA (Via Cortemaggiore (Clinica Santa Barbara))",
+    "GELA (Via Sabbioncello (fronte 4))",
+    "GELA (Via Caviaga (fronte 1))",
+    "GELA (Via Caviaga (fronte 23))",
+    "GELA (Via Cortemaggiore (fronte 88))",
+    "GELA (Via Cortemaggiore) [CORTEMAG]",
+    "GELA (Viale Indipendenza (prima fermata))",
+    "GELA (Viale Indipendenza, 21 (seconda fermata))",
+    "GELA (Viale Indipendenza, 17)",
+    "GELA (Viale Indipendenza (fronte 128))",
+    "GELA (Viale Indipendenza (fronte 16))",
+    "GELA (Via Manzoni, 137)",
+    "GELA (Via Manzoni, 77)",
+    "GELA (Corso Salvatore Aldisio (fronte 336))",
+    "GELA (Corso Salvatore Aldisio, 211)",
+    "GELA (Corso Salvatore Aldisio, 67)",
+    "GELA (Corso Salvatore Aldisio, 25)",
+    "GELA (Via Cristoforo Colombo (parcheggio Arena))",
+    "GELA (Via G. Navarra (fronte 96))",
+    "GELA (Via G. Navarra, 9)",
+    "GELA (Via Tevere, 114)",
+    "GELA (Via Madonna del Rosario (fronte 7))"
+   ],
+   "trips": [
+    {
+     "corsa": "011002",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "7 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07"
+      ]
+     },
+     "reverse": true,
+     "variant": "GEL11006_6",
+     "stops": [
+      {
+       "stop": "GELA (Cimitero Farello)",
+       "idx": 0,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 1,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "GELA (Via Niscemi (campo sportivo fronte 44))",
+       "idx": 2,
+       "arr": "12.01",
+       "dep": "12.01"
+      },
+      {
+       "stop": "GELA (Via Niscemi, 31)",
+       "idx": 3,
+       "arr": "12.02",
+       "dep": "12.02"
+      },
+      {
+       "stop": "GELA (Via Generale Cascino 205)",
+       "idx": 4,
+       "arr": "12.03",
+       "dep": "12.03"
+      },
+      {
+       "stop": "GELA (Via Generale Cascino, 9)",
+       "idx": 5,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "GELA (Via Giovanni Verga, 114)",
+       "idx": 6,
+       "arr": "12.06",
+       "dep": "12.06"
+      },
+      {
+       "stop": "GELA (Via Francesco Crispi, 132)",
+       "idx": 7,
+       "arr": "12.07",
+       "dep": "12.07"
+      },
+      {
+       "stop": "GELA (Via Francesco Crispi, 194)",
+       "idx": 8,
+       "arr": "12.08",
+       "dep": "12.08"
+      },
+      {
+       "stop": "GELA (Via Francesco Crispi, 318)",
+       "idx": 9,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "GELA (Via Francesco Crispi, 404)",
+       "idx": 10,
+       "arr": "12.11",
+       "dep": "12.11"
+      },
+      {
+       "stop": "GELA (Via Butera, 7)",
+       "idx": 11,
+       "arr": "12.13",
+       "dep": "12.13"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 38)",
+       "idx": 12,
+       "arr": "12.14",
+       "dep": "12.14"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 140)",
+       "idx": 13,
+       "arr": "12.15",
+       "dep": "12.15"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 194)",
+       "idx": 14,
+       "arr": "12.16",
+       "dep": "12.16"
+      },
+      {
+       "stop": "GELA (Via Licata (fronte 5))",
+       "idx": 15,
+       "arr": "12.19",
+       "dep": "12.19"
+      },
+      {
+       "stop": "GELA (Via Enrico Mattei (Centro Sportivo))",
+       "idx": 16,
+       "arr": "12.21",
+       "dep": "12.21"
+      },
+      {
+       "stop": "GELA (Via Cortemaggiore)",
+       "idx": 17,
+       "arr": "12.22",
+       "dep": "12.22"
+      },
+      {
+       "stop": "GELA (Via Cortemaggiore (Clinica Santa Barbara))",
+       "idx": 18,
+       "arr": "12.23",
+       "dep": "12.23"
+      },
+      {
+       "stop": "GELA (Via Sabbioncello (fronte 4))",
+       "idx": 19,
+       "arr": "12.24",
+       "dep": "12.24"
+      },
+      {
+       "stop": "GELA (Via Caviaga (fronte 1))",
+       "idx": 20,
+       "arr": "12.25",
+       "dep": "12.25"
+      },
+      {
+       "stop": "GELA (Via Caviaga (fronte 23))",
+       "idx": 21,
+       "arr": "12.26",
+       "dep": "12.26"
+      },
+      {
+       "stop": "GELA (Via Cortemaggiore (fronte 88))",
+       "idx": 22,
+       "arr": "12.28",
+       "dep": "12.28"
+      },
+      {
+       "stop": "GELA (Via Cortemaggiore) [CORTEMAG]",
+       "idx": 23,
+       "arr": "12.29",
+       "dep": "12.29"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza (prima fermata))",
+       "idx": 24,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza, 21 (seconda fermata))",
+       "idx": 25,
+       "arr": "12.31",
+       "dep": "12.31"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza, 17)",
+       "idx": 26,
+       "arr": "12.32",
+       "dep": "12.32"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza (fronte 128))",
+       "idx": 27,
+       "arr": "12.33",
+       "dep": "12.33"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza (fronte 16))",
+       "idx": 28,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "GELA (Via Manzoni, 137)",
+       "idx": 29,
+       "arr": "12.36",
+       "dep": "12.36"
+      },
+      {
+       "stop": "GELA (Via Manzoni, 77)",
+       "idx": 30,
+       "arr": "12.37",
+       "dep": "12.37"
+      },
+      {
+       "stop": "GELA (Corso Salvatore Aldisio (fronte 336))",
+       "idx": 31,
+       "arr": "12.38",
+       "dep": "12.38"
+      },
+      {
+       "stop": "GELA (Corso Salvatore Aldisio, 211)",
+       "idx": 32,
+       "arr": "12.39",
+       "dep": "12.39"
+      },
+      {
+       "stop": "GELA (Corso Salvatore Aldisio, 67)",
+       "idx": 33,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "GELA (Corso Salvatore Aldisio, 25)",
+       "idx": 34,
+       "arr": "12.41",
+       "dep": "12.41"
+      },
+      {
+       "stop": "GELA (Via Cristoforo Colombo (parcheggio Arena))",
+       "idx": 35,
+       "arr": "12.43",
+       "dep": "12.43"
+      },
+      {
+       "stop": "GELA (Via G. Navarra (fronte 96))",
+       "idx": 36,
+       "arr": "12.44",
+       "dep": "12.44"
+      },
+      {
+       "stop": "GELA (Via G. Navarra, 9)",
+       "idx": 37,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "GELA (Via Tevere, 114)",
+       "idx": 38,
+       "arr": "12.46",
+       "dep": "12.46"
+      },
+      {
+       "stop": "GELA (Via Madonna del Rosario (fronte 7))",
+       "idx": 39,
+       "arr": "12.48",
+       "dep": "12.48"
+      },
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 40,
+       "arr": "12.50",
+       "dep": "12.50"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

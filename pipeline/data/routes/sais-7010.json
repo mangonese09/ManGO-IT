@@ -1,0 +1,2526 @@
+{
+ "operator": "SAIS Autolinee",
+ "route_id": "sais-7010",
+ "name": "121-122 Cassibile",
+ "short_name": "7010",
+ "coords": "external",
+ "source": "api.saisautolinee.it line e79b2d39-5832-4b1d-bf17-d3551e3edb39",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "SIRACUSA (Corso Umberto I (fronte 138))",
+    "SIRACUSA (Corso Gelone 52)",
+    "SIRACUSA (Corso Gelone 90)",
+    "SIRACUSA (Corso Gelone (Ospedale Umberto)",
+    "SIRACUSA (Via Columba (fronte 33))",
+    "SIRACUSA (Via Columba(fronte Concessionaria))",
+    "SIRACUSA (Via Columba (fronte 105))",
+    "SIRACUSA (Via Elorina - Ist.Agrario)",
+    "SIRACUSA (Via Elorina 99 B)",
+    "SIRACUSA (Via Lido Sacramento (fronte 19))",
+    "SIRACUSA (Via Lido Sacramento 70)",
+    "SIRACUSA (Traversa Torre Milocca 13)",
+    "SIRACUSA (Strada Ognina 36)",
+    "SIRACUSA (Viale dei Lidi(incr.Str.Ognina))",
+    "SIRACUSA (Viale dei Lidi 214)",
+    "SIRACUSA (Viale dei Lidi 354)",
+    "SIRACUSA (Viale dei Lidi 384)",
+    "SIRACUSA (Viale dei Lidi 414)",
+    "SIRACUSA (Viale dei Lidi 428)",
+    "SIRACUSA (Viale dei Lidi 444)",
+    "SIRACUSA (Viale dei Lidi (fronte 476))",
+    "CASSIBILE (Via Nazionale 217)",
+    "CASSIBILE (Via Nazionale 195)",
+    "CASSIBILE (Via Nazionale (fronte 82))",
+    "CASSIBILE (Via Nazionale 41)",
+    "SIRACUSA (Via Elorina 83)",
+    "SIRACUSA (Piazzale Marconi)",
+    "SIRACUSA (Corso Umberto I 24)",
+    "CASSIBILE (Via Nazionale 4)",
+    "CASSIBILE (Via Nazionale 28)",
+    "CASSIBILE (Via Nazionale 160)",
+    "CASSIBILE (Via Nazionale 306)",
+    "SIRACUSA (Viale dei Lidi 519)",
+    "SIRACUSA (Viale dei Lidi (fronte 444))",
+    "SIRACUSA (Viale dei Lidi 479)",
+    "SIRACUSA (Viale dei Lidi (fronte 414))",
+    "SIRACUSA (Viale dei Lidi (fronte 382))",
+    "SIRACUSA (Viale dei Lidi 433)",
+    "SIRACUSA (Viale dei Lidi 307)"
+   ],
+   "trips": [
+    {
+     "corsa": "010001",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7010_18",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 0,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 52)",
+       "idx": 1,
+       "arr": "6.21",
+       "dep": "6.21"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 90)",
+       "idx": 2,
+       "arr": "6.22",
+       "dep": "6.22"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone (Ospedale Umberto)",
+       "idx": 3,
+       "arr": "6.23",
+       "dep": "6.23"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba (fronte 33))",
+       "idx": 4,
+       "arr": "6.27",
+       "dep": "6.27"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba(fronte Concessionaria))",
+       "idx": 5,
+       "arr": "6.28",
+       "dep": "6.28"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba (fronte 105))",
+       "idx": 6,
+       "arr": "6.28",
+       "dep": "6.28"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina - Ist.Agrario)",
+       "idx": 7,
+       "arr": "6.29",
+       "dep": "6.29"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 99 B)",
+       "idx": 8,
+       "arr": "6.31",
+       "dep": "6.31"
+      },
+      {
+       "stop": "SIRACUSA (Via Lido Sacramento (fronte 19))",
+       "idx": 9,
+       "arr": "6.34",
+       "dep": "6.34"
+      },
+      {
+       "stop": "SIRACUSA (Via Lido Sacramento 70)",
+       "idx": 10,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "SIRACUSA (Traversa Torre Milocca 13)",
+       "idx": 11,
+       "arr": "6.36",
+       "dep": "6.36"
+      },
+      {
+       "stop": "SIRACUSA (Strada Ognina 36)",
+       "idx": 12,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi(incr.Str.Ognina))",
+       "idx": 13,
+       "arr": "6.47",
+       "dep": "6.47"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 214)",
+       "idx": 14,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 354)",
+       "idx": 15,
+       "arr": "6.52",
+       "dep": "6.52"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 384)",
+       "idx": 16,
+       "arr": "6.53",
+       "dep": "6.53"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 414)",
+       "idx": 17,
+       "arr": "6.54",
+       "dep": "6.54"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 428)",
+       "idx": 18,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 444)",
+       "idx": 19,
+       "arr": "6.56",
+       "dep": "6.56"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi (fronte 476))",
+       "idx": 20,
+       "arr": "6.57",
+       "dep": "6.57"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 217)",
+       "idx": 21,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 195)",
+       "idx": 22,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale (fronte 82))",
+       "idx": 23,
+       "arr": "7.06",
+       "dep": "7.06"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 41)",
+       "idx": 24,
+       "arr": "7.07",
+       "dep": "7.07"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 99 B)",
+       "idx": 25,
+       "arr": "7.22",
+       "dep": "7.22"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 83)",
+       "idx": 26,
+       "arr": "7.24",
+       "dep": "7.24"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 27,
+       "arr": "7.27",
+       "dep": "7.27"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 28,
+       "arr": "7.29",
+       "dep": "7.29"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 29,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "010004",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7010_18",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 0,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 52)",
+       "idx": 1,
+       "arr": "18.46",
+       "dep": "18.46"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 90)",
+       "idx": 2,
+       "arr": "18.47",
+       "dep": "18.47"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone (Ospedale Umberto)",
+       "idx": 3,
+       "arr": "18.48",
+       "dep": "18.48"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba (fronte 33))",
+       "idx": 4,
+       "arr": "18.52",
+       "dep": "18.52"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba(fronte Concessionaria))",
+       "idx": 5,
+       "arr": "18.53",
+       "dep": "18.53"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba (fronte 105))",
+       "idx": 6,
+       "arr": "18.53",
+       "dep": "18.53"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina - Ist.Agrario)",
+       "idx": 7,
+       "arr": "18.54",
+       "dep": "18.54"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 99 B)",
+       "idx": 8,
+       "arr": "18.56",
+       "dep": "18.56"
+      },
+      {
+       "stop": "SIRACUSA (Via Lido Sacramento (fronte 19))",
+       "idx": 9,
+       "arr": "18.59",
+       "dep": "18.59"
+      },
+      {
+       "stop": "SIRACUSA (Via Lido Sacramento 70)",
+       "idx": 10,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "SIRACUSA (Traversa Torre Milocca 13)",
+       "idx": 11,
+       "arr": "19.01",
+       "dep": "19.01"
+      },
+      {
+       "stop": "SIRACUSA (Strada Ognina 36)",
+       "idx": 12,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi(incr.Str.Ognina))",
+       "idx": 13,
+       "arr": "19.12",
+       "dep": "19.12"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 214)",
+       "idx": 14,
+       "arr": "19.15",
+       "dep": "19.15"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 354)",
+       "idx": 15,
+       "arr": "19.17",
+       "dep": "19.17"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 384)",
+       "idx": 16,
+       "arr": "19.18",
+       "dep": "19.18"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 414)",
+       "idx": 17,
+       "arr": "19.19",
+       "dep": "19.19"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 428)",
+       "idx": 18,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 444)",
+       "idx": 19,
+       "arr": "19.21",
+       "dep": "19.21"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi (fronte 476))",
+       "idx": 20,
+       "arr": "19.22",
+       "dep": "19.22"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 217)",
+       "idx": 21,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 195)",
+       "idx": 22,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale (fronte 82))",
+       "idx": 23,
+       "arr": "19.31",
+       "dep": "19.31"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 41)",
+       "idx": 24,
+       "arr": "19.32",
+       "dep": "19.32"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 99 B)",
+       "idx": 25,
+       "arr": "19.47",
+       "dep": "19.47"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 83)",
+       "idx": 26,
+       "arr": "19.49",
+       "dep": "19.49"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 27,
+       "arr": "19.52",
+       "dep": "19.52"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 28,
+       "arr": "19.54",
+       "dep": "19.54"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 29,
+       "arr": "19.55",
+       "dep": "19.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "010003",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7010_18",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 0,
+       "arr": "15.45",
+       "dep": "15.45"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 52)",
+       "idx": 1,
+       "arr": "15.46",
+       "dep": "15.46"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 90)",
+       "idx": 2,
+       "arr": "15.47",
+       "dep": "15.47"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone (Ospedale Umberto)",
+       "idx": 3,
+       "arr": "15.48",
+       "dep": "15.48"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba (fronte 33))",
+       "idx": 4,
+       "arr": "15.52",
+       "dep": "15.52"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba(fronte Concessionaria))",
+       "idx": 5,
+       "arr": "15.53",
+       "dep": "15.53"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba (fronte 105))",
+       "idx": 6,
+       "arr": "15.53",
+       "dep": "15.53"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina - Ist.Agrario)",
+       "idx": 7,
+       "arr": "15.54",
+       "dep": "15.54"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 99 B)",
+       "idx": 8,
+       "arr": "15.56",
+       "dep": "15.56"
+      },
+      {
+       "stop": "SIRACUSA (Via Lido Sacramento (fronte 19))",
+       "idx": 9,
+       "arr": "15.59",
+       "dep": "15.59"
+      },
+      {
+       "stop": "SIRACUSA (Via Lido Sacramento 70)",
+       "idx": 10,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "SIRACUSA (Traversa Torre Milocca 13)",
+       "idx": 11,
+       "arr": "16.01",
+       "dep": "16.01"
+      },
+      {
+       "stop": "SIRACUSA (Strada Ognina 36)",
+       "idx": 12,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi(incr.Str.Ognina))",
+       "idx": 13,
+       "arr": "16.12",
+       "dep": "16.12"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 214)",
+       "idx": 14,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 354)",
+       "idx": 15,
+       "arr": "16.17",
+       "dep": "16.17"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 384)",
+       "idx": 16,
+       "arr": "16.18",
+       "dep": "16.18"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 414)",
+       "idx": 17,
+       "arr": "16.19",
+       "dep": "16.19"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 428)",
+       "idx": 18,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 444)",
+       "idx": 19,
+       "arr": "16.21",
+       "dep": "16.21"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi (fronte 476))",
+       "idx": 20,
+       "arr": "16.22",
+       "dep": "16.22"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 217)",
+       "idx": 21,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 195)",
+       "idx": 22,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale (fronte 82))",
+       "idx": 23,
+       "arr": "16.31",
+       "dep": "16.31"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 41)",
+       "idx": 24,
+       "arr": "16.32",
+       "dep": "16.32"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 99 B)",
+       "idx": 25,
+       "arr": "16.47",
+       "dep": "16.47"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 83)",
+       "idx": 26,
+       "arr": "16.49",
+       "dep": "16.49"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 27,
+       "arr": "16.52",
+       "dep": "16.52"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 28,
+       "arr": "16.54",
+       "dep": "16.54"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 29,
+       "arr": "16.55",
+       "dep": "16.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "010002",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7010_18",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 0,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 52)",
+       "idx": 1,
+       "arr": "9.46",
+       "dep": "9.46"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 90)",
+       "idx": 2,
+       "arr": "9.47",
+       "dep": "9.47"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone (Ospedale Umberto)",
+       "idx": 3,
+       "arr": "9.48",
+       "dep": "9.48"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba (fronte 33))",
+       "idx": 4,
+       "arr": "9.52",
+       "dep": "9.52"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba(fronte Concessionaria))",
+       "idx": 5,
+       "arr": "9.53",
+       "dep": "9.53"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba (fronte 105))",
+       "idx": 6,
+       "arr": "9.53",
+       "dep": "9.53"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina - Ist.Agrario)",
+       "idx": 7,
+       "arr": "9.54",
+       "dep": "9.54"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 99 B)",
+       "idx": 8,
+       "arr": "9.56",
+       "dep": "9.56"
+      },
+      {
+       "stop": "SIRACUSA (Via Lido Sacramento (fronte 19))",
+       "idx": 9,
+       "arr": "9.59",
+       "dep": "9.59"
+      },
+      {
+       "stop": "SIRACUSA (Via Lido Sacramento 70)",
+       "idx": 10,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "SIRACUSA (Traversa Torre Milocca 13)",
+       "idx": 11,
+       "arr": "10.01",
+       "dep": "10.01"
+      },
+      {
+       "stop": "SIRACUSA (Strada Ognina 36)",
+       "idx": 12,
+       "arr": "10.10",
+       "dep": "10.10"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi(incr.Str.Ognina))",
+       "idx": 13,
+       "arr": "10.12",
+       "dep": "10.12"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 214)",
+       "idx": 14,
+       "arr": "10.15",
+       "dep": "10.15"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 354)",
+       "idx": 15,
+       "arr": "10.17",
+       "dep": "10.17"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 384)",
+       "idx": 16,
+       "arr": "10.18",
+       "dep": "10.18"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 414)",
+       "idx": 17,
+       "arr": "10.19",
+       "dep": "10.19"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 428)",
+       "idx": 18,
+       "arr": "10.20",
+       "dep": "10.20"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 444)",
+       "idx": 19,
+       "arr": "10.21",
+       "dep": "10.21"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi (fronte 476))",
+       "idx": 20,
+       "arr": "10.22",
+       "dep": "10.22"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 217)",
+       "idx": 21,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 195)",
+       "idx": 22,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale (fronte 82))",
+       "idx": 23,
+       "arr": "10.31",
+       "dep": "10.31"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 41)",
+       "idx": 24,
+       "arr": "10.32",
+       "dep": "10.32"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 99 B)",
+       "idx": 25,
+       "arr": "10.47",
+       "dep": "10.47"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 83)",
+       "idx": 26,
+       "arr": "10.49",
+       "dep": "10.49"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 27,
+       "arr": "10.52",
+       "dep": "10.52"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 28,
+       "arr": "10.54",
+       "dep": "10.54"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 29,
+       "arr": "10.55",
+       "dep": "10.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "010007",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7010_19",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 0,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 52)",
+       "idx": 1,
+       "arr": "12.46",
+       "dep": "12.46"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 90)",
+       "idx": 2,
+       "arr": "12.47",
+       "dep": "12.47"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone (Ospedale Umberto)",
+       "idx": 3,
+       "arr": "12.48",
+       "dep": "12.48"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba (fronte 33))",
+       "idx": 4,
+       "arr": "12.52",
+       "dep": "12.52"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba(fronte Concessionaria))",
+       "idx": 5,
+       "arr": "12.53",
+       "dep": "12.53"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba (fronte 105))",
+       "idx": 6,
+       "arr": "12.54",
+       "dep": "12.54"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina - Ist.Agrario)",
+       "idx": 7,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 99 B)",
+       "idx": 8,
+       "arr": "12.59",
+       "dep": "12.59"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 4)",
+       "idx": 9,
+       "arr": "13.12",
+       "dep": "13.12"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 28)",
+       "idx": 10,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 160)",
+       "idx": 11,
+       "arr": "13.16",
+       "dep": "13.16"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 306)",
+       "idx": 12,
+       "arr": "13.17",
+       "dep": "13.17"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 519)",
+       "idx": 13,
+       "arr": "13.19",
+       "dep": "13.19"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi (fronte 444))",
+       "idx": 14,
+       "arr": "13.24",
+       "dep": "13.24"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 479)",
+       "idx": 15,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi (fronte 414))",
+       "idx": 16,
+       "arr": "13.26",
+       "dep": "13.26"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi (fronte 382))",
+       "idx": 17,
+       "arr": "13.27",
+       "dep": "13.27"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 433)",
+       "idx": 18,
+       "arr": "13.28",
+       "dep": "13.28"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 307)",
+       "idx": 19,
+       "arr": "13.31",
+       "dep": "13.31"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi(incr.Str.Ognina))",
+       "idx": 20,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "SIRACUSA (Strada Ognina 36)",
+       "idx": 21,
+       "arr": "13.38",
+       "dep": "13.38"
+      },
+      {
+       "stop": "SIRACUSA (Traversa Torre Milocca 13)",
+       "idx": 22,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "SIRACUSA (Via Lido Sacramento 70)",
+       "idx": 23,
+       "arr": "13.48",
+       "dep": "13.48"
+      },
+      {
+       "stop": "SIRACUSA (Via Lido Sacramento (fronte 19))",
+       "idx": 24,
+       "arr": "13.49",
+       "dep": "13.49"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 99 B)",
+       "idx": 25,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 83)",
+       "idx": 26,
+       "arr": "13.52",
+       "dep": "13.52"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 27,
+       "arr": "13.53",
+       "dep": "13.53"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 28,
+       "arr": "13.54",
+       "dep": "13.54"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 29,
+       "arr": "13.55",
+       "dep": "13.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "010008",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7010_19",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 52)",
+       "idx": 1,
+       "arr": "14.16",
+       "dep": "14.16"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 90)",
+       "idx": 2,
+       "arr": "14.17",
+       "dep": "14.17"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone (Ospedale Umberto)",
+       "idx": 3,
+       "arr": "14.18",
+       "dep": "14.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba (fronte 33))",
+       "idx": 4,
+       "arr": "14.22",
+       "dep": "14.22"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba(fronte Concessionaria))",
+       "idx": 5,
+       "arr": "14.23",
+       "dep": "14.23"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba (fronte 105))",
+       "idx": 6,
+       "arr": "14.24",
+       "dep": "14.24"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina - Ist.Agrario)",
+       "idx": 7,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 99 B)",
+       "idx": 8,
+       "arr": "14.29",
+       "dep": "14.29"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 4)",
+       "idx": 9,
+       "arr": "14.42",
+       "dep": "14.42"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 28)",
+       "idx": 10,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 160)",
+       "idx": 11,
+       "arr": "14.46",
+       "dep": "14.46"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 306)",
+       "idx": 12,
+       "arr": "14.47",
+       "dep": "14.47"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 519)",
+       "idx": 13,
+       "arr": "14.49",
+       "dep": "14.49"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi (fronte 444))",
+       "idx": 14,
+       "arr": "14.54",
+       "dep": "14.54"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 479)",
+       "idx": 15,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi (fronte 414))",
+       "idx": 16,
+       "arr": "14.56",
+       "dep": "14.56"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi (fronte 382))",
+       "idx": 17,
+       "arr": "14.57",
+       "dep": "14.57"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 433)",
+       "idx": 18,
+       "arr": "14.58",
+       "dep": "14.58"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 307)",
+       "idx": 19,
+       "arr": "15.01",
+       "dep": "15.01"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi(incr.Str.Ognina))",
+       "idx": 20,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "SIRACUSA (Strada Ognina 36)",
+       "idx": 21,
+       "arr": "15.08",
+       "dep": "15.08"
+      },
+      {
+       "stop": "SIRACUSA (Traversa Torre Milocca 13)",
+       "idx": 22,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "SIRACUSA (Via Lido Sacramento 70)",
+       "idx": 23,
+       "arr": "15.18",
+       "dep": "15.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Lido Sacramento (fronte 19))",
+       "idx": 24,
+       "arr": "15.19",
+       "dep": "15.19"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 99 B)",
+       "idx": 25,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 83)",
+       "idx": 26,
+       "arr": "15.22",
+       "dep": "15.22"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 27,
+       "arr": "15.23",
+       "dep": "15.23"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 28,
+       "arr": "15.24",
+       "dep": "15.24"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 29,
+       "arr": "15.25",
+       "dep": "15.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "010009",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7010_19",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 0,
+       "arr": "17.15",
+       "dep": "17.15"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 52)",
+       "idx": 1,
+       "arr": "17.16",
+       "dep": "17.16"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 90)",
+       "idx": 2,
+       "arr": "17.17",
+       "dep": "17.17"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone (Ospedale Umberto)",
+       "idx": 3,
+       "arr": "17.18",
+       "dep": "17.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba (fronte 33))",
+       "idx": 4,
+       "arr": "17.22",
+       "dep": "17.22"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba(fronte Concessionaria))",
+       "idx": 5,
+       "arr": "17.23",
+       "dep": "17.23"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba (fronte 105))",
+       "idx": 6,
+       "arr": "17.24",
+       "dep": "17.24"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina - Ist.Agrario)",
+       "idx": 7,
+       "arr": "17.25",
+       "dep": "17.25"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 99 B)",
+       "idx": 8,
+       "arr": "17.29",
+       "dep": "17.29"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 4)",
+       "idx": 9,
+       "arr": "17.42",
+       "dep": "17.42"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 28)",
+       "idx": 10,
+       "arr": "17.45",
+       "dep": "17.45"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 160)",
+       "idx": 11,
+       "arr": "17.46",
+       "dep": "17.46"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 306)",
+       "idx": 12,
+       "arr": "17.47",
+       "dep": "17.47"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 519)",
+       "idx": 13,
+       "arr": "17.49",
+       "dep": "17.49"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi (fronte 444))",
+       "idx": 14,
+       "arr": "17.54",
+       "dep": "17.54"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 479)",
+       "idx": 15,
+       "arr": "17.55",
+       "dep": "17.55"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi (fronte 414))",
+       "idx": 16,
+       "arr": "17.56",
+       "dep": "17.56"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi (fronte 382))",
+       "idx": 17,
+       "arr": "17.57",
+       "dep": "17.57"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 433)",
+       "idx": 18,
+       "arr": "17.58",
+       "dep": "17.58"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 307)",
+       "idx": 19,
+       "arr": "18.01",
+       "dep": "18.01"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi(incr.Str.Ognina))",
+       "idx": 20,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "SIRACUSA (Strada Ognina 36)",
+       "idx": 21,
+       "arr": "18.08",
+       "dep": "18.08"
+      },
+      {
+       "stop": "SIRACUSA (Traversa Torre Milocca 13)",
+       "idx": 22,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "SIRACUSA (Via Lido Sacramento 70)",
+       "idx": 23,
+       "arr": "18.18",
+       "dep": "18.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Lido Sacramento (fronte 19))",
+       "idx": 24,
+       "arr": "18.19",
+       "dep": "18.19"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 99 B)",
+       "idx": 25,
+       "arr": "18.20",
+       "dep": "18.20"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 83)",
+       "idx": 26,
+       "arr": "18.22",
+       "dep": "18.22"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 27,
+       "arr": "18.23",
+       "dep": "18.23"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 28,
+       "arr": "18.24",
+       "dep": "18.24"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 29,
+       "arr": "18.25",
+       "dep": "18.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "010005",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7010_19",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 0,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 52)",
+       "idx": 1,
+       "arr": "8.16",
+       "dep": "8.16"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 90)",
+       "idx": 2,
+       "arr": "8.17",
+       "dep": "8.17"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone (Ospedale Umberto)",
+       "idx": 3,
+       "arr": "8.18",
+       "dep": "8.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba (fronte 33))",
+       "idx": 4,
+       "arr": "8.22",
+       "dep": "8.22"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba(fronte Concessionaria))",
+       "idx": 5,
+       "arr": "8.23",
+       "dep": "8.23"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba (fronte 105))",
+       "idx": 6,
+       "arr": "8.24",
+       "dep": "8.24"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina - Ist.Agrario)",
+       "idx": 7,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 99 B)",
+       "idx": 8,
+       "arr": "8.29",
+       "dep": "8.29"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 4)",
+       "idx": 9,
+       "arr": "8.42",
+       "dep": "8.42"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 28)",
+       "idx": 10,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 160)",
+       "idx": 11,
+       "arr": "8.46",
+       "dep": "8.46"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 306)",
+       "idx": 12,
+       "arr": "8.47",
+       "dep": "8.47"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 519)",
+       "idx": 13,
+       "arr": "8.49",
+       "dep": "8.49"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi (fronte 444))",
+       "idx": 14,
+       "arr": "8.54",
+       "dep": "8.54"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 479)",
+       "idx": 15,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi (fronte 414))",
+       "idx": 16,
+       "arr": "8.56",
+       "dep": "8.56"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi (fronte 382))",
+       "idx": 17,
+       "arr": "8.57",
+       "dep": "8.57"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 433)",
+       "idx": 18,
+       "arr": "8.58",
+       "dep": "8.58"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 307)",
+       "idx": 19,
+       "arr": "9.01",
+       "dep": "9.01"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi(incr.Str.Ognina))",
+       "idx": 20,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "SIRACUSA (Strada Ognina 36)",
+       "idx": 21,
+       "arr": "9.08",
+       "dep": "9.08"
+      },
+      {
+       "stop": "SIRACUSA (Traversa Torre Milocca 13)",
+       "idx": 22,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "SIRACUSA (Via Lido Sacramento 70)",
+       "idx": 23,
+       "arr": "9.18",
+       "dep": "9.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Lido Sacramento (fronte 19))",
+       "idx": 24,
+       "arr": "9.19",
+       "dep": "9.19"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 99 B)",
+       "idx": 25,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 83)",
+       "idx": 26,
+       "arr": "9.22",
+       "dep": "9.22"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 27,
+       "arr": "9.23",
+       "dep": "9.23"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 28,
+       "arr": "9.24",
+       "dep": "9.24"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 29,
+       "arr": "9.25",
+       "dep": "9.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "010010",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7010_19",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 0,
+       "arr": "20.15",
+       "dep": "20.15"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 52)",
+       "idx": 1,
+       "arr": "20.16",
+       "dep": "20.16"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 90)",
+       "idx": 2,
+       "arr": "20.17",
+       "dep": "20.17"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone (Ospedale Umberto)",
+       "idx": 3,
+       "arr": "20.18",
+       "dep": "20.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba (fronte 33))",
+       "idx": 4,
+       "arr": "20.22",
+       "dep": "20.22"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba(fronte Concessionaria))",
+       "idx": 5,
+       "arr": "20.23",
+       "dep": "20.23"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba (fronte 105))",
+       "idx": 6,
+       "arr": "20.24",
+       "dep": "20.24"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina - Ist.Agrario)",
+       "idx": 7,
+       "arr": "20.25",
+       "dep": "20.25"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 99 B)",
+       "idx": 8,
+       "arr": "20.29",
+       "dep": "20.29"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 4)",
+       "idx": 9,
+       "arr": "20.42",
+       "dep": "20.42"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 28)",
+       "idx": 10,
+       "arr": "20.45",
+       "dep": "20.45"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 160)",
+       "idx": 11,
+       "arr": "20.46",
+       "dep": "20.46"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 306)",
+       "idx": 12,
+       "arr": "20.47",
+       "dep": "20.47"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 519)",
+       "idx": 13,
+       "arr": "20.49",
+       "dep": "20.49"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi (fronte 444))",
+       "idx": 14,
+       "arr": "20.54",
+       "dep": "20.54"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 479)",
+       "idx": 15,
+       "arr": "20.55",
+       "dep": "20.55"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi (fronte 414))",
+       "idx": 16,
+       "arr": "20.56",
+       "dep": "20.56"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi (fronte 382))",
+       "idx": 17,
+       "arr": "20.57",
+       "dep": "20.57"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 433)",
+       "idx": 18,
+       "arr": "20.58",
+       "dep": "20.58"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 307)",
+       "idx": 19,
+       "arr": "21.01",
+       "dep": "21.01"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi(incr.Str.Ognina))",
+       "idx": 20,
+       "arr": "21.05",
+       "dep": "21.05"
+      },
+      {
+       "stop": "SIRACUSA (Strada Ognina 36)",
+       "idx": 21,
+       "arr": "21.08",
+       "dep": "21.08"
+      },
+      {
+       "stop": "SIRACUSA (Traversa Torre Milocca 13)",
+       "idx": 22,
+       "arr": "21.10",
+       "dep": "21.10"
+      },
+      {
+       "stop": "SIRACUSA (Via Lido Sacramento 70)",
+       "idx": 23,
+       "arr": "21.18",
+       "dep": "21.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Lido Sacramento (fronte 19))",
+       "idx": 24,
+       "arr": "21.19",
+       "dep": "21.19"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 99 B)",
+       "idx": 25,
+       "arr": "21.20",
+       "dep": "21.20"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 83)",
+       "idx": 26,
+       "arr": "21.22",
+       "dep": "21.22"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 27,
+       "arr": "21.23",
+       "dep": "21.23"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 28,
+       "arr": "21.24",
+       "dep": "21.24"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 29,
+       "arr": "21.25",
+       "dep": "21.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "010006",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "SR7010_19",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 0,
+       "arr": "11.15",
+       "dep": "11.15"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 52)",
+       "idx": 1,
+       "arr": "11.16",
+       "dep": "11.16"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone 90)",
+       "idx": 2,
+       "arr": "11.17",
+       "dep": "11.17"
+      },
+      {
+       "stop": "SIRACUSA (Corso Gelone (Ospedale Umberto)",
+       "idx": 3,
+       "arr": "11.18",
+       "dep": "11.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba (fronte 33))",
+       "idx": 4,
+       "arr": "11.22",
+       "dep": "11.22"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba(fronte Concessionaria))",
+       "idx": 5,
+       "arr": "11.23",
+       "dep": "11.23"
+      },
+      {
+       "stop": "SIRACUSA (Via Columba (fronte 105))",
+       "idx": 6,
+       "arr": "11.24",
+       "dep": "11.24"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina - Ist.Agrario)",
+       "idx": 7,
+       "arr": "11.25",
+       "dep": "11.25"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 99 B)",
+       "idx": 8,
+       "arr": "11.29",
+       "dep": "11.29"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 4)",
+       "idx": 9,
+       "arr": "11.42",
+       "dep": "11.42"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 28)",
+       "idx": 10,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 160)",
+       "idx": 11,
+       "arr": "11.46",
+       "dep": "11.46"
+      },
+      {
+       "stop": "CASSIBILE (Via Nazionale 306)",
+       "idx": 12,
+       "arr": "11.47",
+       "dep": "11.47"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 519)",
+       "idx": 13,
+       "arr": "11.49",
+       "dep": "11.49"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi (fronte 444))",
+       "idx": 14,
+       "arr": "11.54",
+       "dep": "11.54"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 479)",
+       "idx": 15,
+       "arr": "11.55",
+       "dep": "11.55"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi (fronte 414))",
+       "idx": 16,
+       "arr": "11.56",
+       "dep": "11.56"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi (fronte 382))",
+       "idx": 17,
+       "arr": "11.57",
+       "dep": "11.57"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 433)",
+       "idx": 18,
+       "arr": "11.58",
+       "dep": "11.58"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi 307)",
+       "idx": 19,
+       "arr": "12.01",
+       "dep": "12.01"
+      },
+      {
+       "stop": "SIRACUSA (Viale dei Lidi(incr.Str.Ognina))",
+       "idx": 20,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "SIRACUSA (Strada Ognina 36)",
+       "idx": 21,
+       "arr": "12.08",
+       "dep": "12.08"
+      },
+      {
+       "stop": "SIRACUSA (Traversa Torre Milocca 13)",
+       "idx": 22,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "SIRACUSA (Via Lido Sacramento 70)",
+       "idx": 23,
+       "arr": "12.18",
+       "dep": "12.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Lido Sacramento (fronte 19))",
+       "idx": 24,
+       "arr": "12.19",
+       "dep": "12.19"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 99 B)",
+       "idx": 25,
+       "arr": "12.20",
+       "dep": "12.20"
+      },
+      {
+       "stop": "SIRACUSA (Via Elorina 83)",
+       "idx": 26,
+       "arr": "12.22",
+       "dep": "12.22"
+      },
+      {
+       "stop": "SIRACUSA (Piazzale Marconi)",
+       "idx": 27,
+       "arr": "12.23",
+       "dep": "12.23"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I 24)",
+       "idx": 28,
+       "arr": "12.24",
+       "dep": "12.24"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto I (fronte 138))",
+       "idx": 29,
+       "arr": "12.25",
+       "dep": "12.25"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

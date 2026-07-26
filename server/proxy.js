@@ -54,6 +54,9 @@ function romeParts(date = new Date()) {
 }
 
 function serviceRuns(trip, day) {
+  // Explicit-date services (SAIS/Albatross): the exact calendar ships with
+  // the trip; no weekday/holiday/school inference at all.
+  if (trip.xd) return trip.xd.includes(day.iso);
   const holiday = IT_HOLIDAYS.has(day.iso) || day.wd === 6;
   if (trip.d === 'sun-holidays') { if (!holiday) return false; }
   else if (trip.d === 'daily') { /* runs */ }
@@ -240,7 +243,7 @@ function slimVtDeparture(d) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.4.2', romeTime: romeNowString(), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.5.0', romeTime: romeNowString(), upstreamRequests: dayCounts }),
 
   'GET /api/geocode': async (q) => {
     const text = (q.get('text') || '').trim().slice(0, 64);

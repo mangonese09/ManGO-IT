@@ -1,0 +1,2325 @@
+{
+ "operator": "SAIS Autolinee",
+ "route_id": "sais-183",
+ "name": "Calascibetta - EN - Villarosa - CL - dir. EN FS",
+ "short_name": "183",
+ "coords": "external",
+ "source": "api.saisautolinee.it line 85440c4f-25ef-455b-bb30-b1f61470a914",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "CALASCIBETTA (SS290 141)",
+    "CALASCIBETTA (SS290(parcheggio S.Barbara))",
+    "CALASCIBETTA (SS290 (Oleificio))",
+    "CALASCIBETTA (SS290 (ex Brace))",
+    "CALASCIBETTA (SS290)",
+    "ENNA (SP3)",
+    "ENNA (Stazione fs)",
+    "ENNA (SS121 (incr.SS290))",
+    "ENNA (Corso Sicilia 2)",
+    "ENNA (Terminal Bus Viale Diaz 80)",
+    "CALASCIBETTA (Piazza Umberto I)",
+    "ENNA (SS121 (Bivio Kamuth))",
+    "ENNA (SS121 (c.da Mancadarso))",
+    "VILLAROSA STAZIONE (SS121 (Bivio))",
+    "VILLAROSA (SS121 (Oleificio Madem))",
+    "VILLAROSA (SS121 (Madonna della Catena))",
+    "VILLAROSA (Corso Garibaldi 134)",
+    "VILLAROSA (Corso Garibaldi 300)",
+    "CALTANISSETTA (Via Rochester c/o Autostazione)",
+    "BUONRIPOSO (SS290 (Chiesa))",
+    "BUONRIPOSO (SS290)",
+    "BUONRIPOSO (SS290 (Campo Sportivo))",
+    "CALASCIBETTA (SS290 (C.da S.Leonardo))",
+    "CALASCIBETTA (SS290 (incr.SP63))",
+    "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+    "ENNA BASSA (Viale dell'Unità d'Italia(fronte 49))",
+    "ENNA BASSA (Via Scifitello(incr.Via Veneto))"
+   ],
+   "trips": [
+    {
+     "corsa": "60122",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "35 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11"
+      ]
+     },
+     "reverse": false,
+     "variant": "C.betta-EN FS",
+     "stops": [
+      {
+       "stop": "CALASCIBETTA (SS290 141)",
+       "idx": 0,
+       "arr": "17.20",
+       "dep": "17.20"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290(parcheggio S.Barbara))",
+       "idx": 1,
+       "arr": "17.23",
+       "dep": "17.23"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (Oleificio))",
+       "idx": 2,
+       "arr": "17.25",
+       "dep": "17.25"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (ex Brace))",
+       "idx": 3,
+       "arr": "17.26",
+       "dep": "17.26"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290)",
+       "idx": 4,
+       "arr": "17.27",
+       "dep": "17.27"
+      },
+      {
+       "stop": "ENNA (SP3)",
+       "idx": 5,
+       "arr": "17.29",
+       "dep": "17.29"
+      },
+      {
+       "stop": "ENNA (Stazione fs)",
+       "idx": 6,
+       "arr": "17.30",
+       "dep": "17.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "351VUOTOCLT",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "35 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11"
+      ]
+     },
+     "reverse": false,
+     "variant": "En Fs-En",
+     "stops": [
+      {
+       "stop": "ENNA (Stazione fs)",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "ENNA (SP3)",
+       "idx": 1,
+       "arr": "8.01",
+       "dep": "8.01"
+      },
+      {
+       "stop": "ENNA (SS121 (incr.SS290))",
+       "idx": 2,
+       "arr": "8.04",
+       "dep": "8.04"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 3,
+       "arr": "8.14",
+       "dep": "8.14"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 4,
+       "arr": "8.15",
+       "dep": "8.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "60042",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "CALASCIB_32",
+     "stops": [
+      {
+       "stop": "CALASCIBETTA (Piazza Umberto I)",
+       "idx": 0,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290(parcheggio S.Barbara))",
+       "idx": 1,
+       "arr": "7.12",
+       "dep": "7.12"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (Oleificio))",
+       "idx": 2,
+       "arr": "7.13",
+       "dep": "7.13"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (ex Brace))",
+       "idx": 3,
+       "arr": "7.14",
+       "dep": "7.14"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290)",
+       "idx": 4,
+       "arr": "7.16",
+       "dep": "7.16"
+      },
+      {
+       "stop": "ENNA (SP3)",
+       "idx": 5,
+       "arr": "7.19",
+       "dep": "7.19"
+      },
+      {
+       "stop": "ENNA (Stazione fs)",
+       "idx": 6,
+       "arr": "7.20",
+       "dep": "7.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2589",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "C.betta-EN",
+     "stops": [
+      {
+       "stop": "CALASCIBETTA (SS290 141)",
+       "idx": 0,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290(parcheggio S.Barbara))",
+       "idx": 1,
+       "arr": "12.48",
+       "dep": "12.48"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (Oleificio))",
+       "idx": 2,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (ex Brace))",
+       "idx": 3,
+       "arr": "12.51",
+       "dep": "12.51"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290)",
+       "idx": 4,
+       "arr": "12.53",
+       "dep": "12.53"
+      },
+      {
+       "stop": "ENNA (SS121 (incr.SS290))",
+       "idx": 5,
+       "arr": "12.56",
+       "dep": "12.56"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 6,
+       "arr": "13.04",
+       "dep": "13.04"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 7,
+       "arr": "13.05",
+       "dep": "13.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "60121",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "7 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-08-01",
+       "2026-08-08",
+       "2026-08-22",
+       "2026-08-29",
+       "2026-09-05",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "C.betta-EN",
+     "stops": [
+      {
+       "stop": "CALASCIBETTA (SS290 141)",
+       "idx": 0,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290(parcheggio S.Barbara))",
+       "idx": 1,
+       "arr": "16.13",
+       "dep": "16.13"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (Oleificio))",
+       "idx": 2,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (ex Brace))",
+       "idx": 3,
+       "arr": "16.16",
+       "dep": "16.16"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290)",
+       "idx": 4,
+       "arr": "16.18",
+       "dep": "16.18"
+      },
+      {
+       "stop": "ENNA (SS121 (incr.SS290))",
+       "idx": 5,
+       "arr": "16.21",
+       "dep": "16.21"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 6,
+       "arr": "16.29",
+       "dep": "16.29"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 7,
+       "arr": "16.30",
+       "dep": "16.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8949",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "EN-V.rosa-CL",
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 0,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "ENNA (SS121 (Bivio Kamuth))",
+       "idx": 1,
+       "arr": "13.19",
+       "dep": "13.19"
+      },
+      {
+       "stop": "ENNA (SS121 (c.da Mancadarso))",
+       "idx": 2,
+       "arr": "13.24",
+       "dep": "13.24"
+      },
+      {
+       "stop": "VILLAROSA STAZIONE (SS121 (Bivio))",
+       "idx": 3,
+       "arr": "13.29",
+       "dep": "13.29"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Oleificio Madem))",
+       "idx": 4,
+       "arr": "13.34",
+       "dep": "13.34"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Madonna della Catena))",
+       "idx": 5,
+       "arr": "13.38",
+       "dep": "13.38"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 134)",
+       "idx": 6,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 300)",
+       "idx": 7,
+       "arr": "13.43",
+       "dep": "13.43"
+      },
+      {
+       "stop": "CALTANISSETTA (Via Rochester c/o Autostazione)",
+       "idx": 8,
+       "arr": "14.10",
+       "dep": "14.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "AGGIUNTA 3",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "EN-V.rosa-CL",
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 0,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "ENNA (SS121 (Bivio Kamuth))",
+       "idx": 1,
+       "arr": "14.09",
+       "dep": "14.09"
+      },
+      {
+       "stop": "ENNA (SS121 (c.da Mancadarso))",
+       "idx": 2,
+       "arr": "14.14",
+       "dep": "14.14"
+      },
+      {
+       "stop": "VILLAROSA STAZIONE (SS121 (Bivio))",
+       "idx": 3,
+       "arr": "14.19",
+       "dep": "14.19"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Oleificio Madem))",
+       "idx": 4,
+       "arr": "14.24",
+       "dep": "14.24"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Madonna della Catena))",
+       "idx": 5,
+       "arr": "14.28",
+       "dep": "14.28"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 134)",
+       "idx": 6,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 300)",
+       "idx": 7,
+       "arr": "14.33",
+       "dep": "14.33"
+      },
+      {
+       "stop": "CALTANISSETTA (Via Rochester c/o Autostazione)",
+       "idx": 8,
+       "arr": "15.00",
+       "dep": "15.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2585",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "EN-V.rosa-CL",
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "ENNA (SS121 (Bivio Kamuth))",
+       "idx": 1,
+       "arr": "8.04",
+       "dep": "8.04"
+      },
+      {
+       "stop": "ENNA (SS121 (c.da Mancadarso))",
+       "idx": 2,
+       "arr": "8.09",
+       "dep": "8.09"
+      },
+      {
+       "stop": "VILLAROSA STAZIONE (SS121 (Bivio))",
+       "idx": 3,
+       "arr": "8.14",
+       "dep": "8.14"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Oleificio Madem))",
+       "idx": 4,
+       "arr": "8.19",
+       "dep": "8.19"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Madonna della Catena))",
+       "idx": 5,
+       "arr": "8.23",
+       "dep": "8.23"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 134)",
+       "idx": 6,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 300)",
+       "idx": 7,
+       "arr": "8.28",
+       "dep": "8.28"
+      },
+      {
+       "stop": "CALTANISSETTA (Via Rochester c/o Autostazione)",
+       "idx": 8,
+       "arr": "8.55",
+       "dep": "8.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2591",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "B.riposo-En FS",
+     "stops": [
+      {
+       "stop": "BUONRIPOSO (SS290 (Chiesa))",
+       "idx": 0,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "BUONRIPOSO (SS290)",
+       "idx": 1,
+       "arr": "8.31",
+       "dep": "8.31"
+      },
+      {
+       "stop": "BUONRIPOSO (SS290 (Campo Sportivo))",
+       "idx": 2,
+       "arr": "8.32",
+       "dep": "8.32"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (C.da S.Leonardo))",
+       "idx": 3,
+       "arr": "8.33",
+       "dep": "8.33"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (incr.SP63))",
+       "idx": 4,
+       "arr": "8.34",
+       "dep": "8.34"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 141)",
+       "idx": 5,
+       "arr": "8.35",
+       "dep": "8.35"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290(parcheggio S.Barbara))",
+       "idx": 6,
+       "arr": "8.37",
+       "dep": "8.37"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (Oleificio))",
+       "idx": 7,
+       "arr": "8.38",
+       "dep": "8.38"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (ex Brace))",
+       "idx": 8,
+       "arr": "8.39",
+       "dep": "8.39"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290)",
+       "idx": 9,
+       "arr": "8.41",
+       "dep": "8.41"
+      },
+      {
+       "stop": "ENNA (SP3)",
+       "idx": 10,
+       "arr": "8.44",
+       "dep": "8.44"
+      },
+      {
+       "stop": "ENNA (Stazione fs)",
+       "idx": 11,
+       "arr": "8.45",
+       "dep": "8.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "60043",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "En FS-En B-Rag-S.Lucia-En",
+     "stops": [
+      {
+       "stop": "ENNA (Stazione fs)",
+       "idx": 0,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "ENNA (SP3)",
+       "idx": 1,
+       "arr": "7.21",
+       "dep": "7.21"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 2,
+       "arr": "7.31",
+       "dep": "7.31"
+      },
+      {
+       "stop": "ENNA BASSA (Viale dell'Unità d'Italia(fronte 49))",
+       "idx": 3,
+       "arr": "7.37",
+       "dep": "7.37"
+      },
+      {
+       "stop": "ENNA BASSA (Via Scifitello(incr.Via Veneto))",
+       "idx": 4,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 5,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2598",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "En FS-En B-Rag-S.Lucia-En",
+     "stops": [
+      {
+       "stop": "ENNA (Stazione fs)",
+       "idx": 0,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "ENNA (SP3)",
+       "idx": 1,
+       "arr": "8.46",
+       "dep": "8.46"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 2,
+       "arr": "8.56",
+       "dep": "8.56"
+      },
+      {
+       "stop": "ENNA BASSA (Viale dell'Unità d'Italia(fronte 49))",
+       "idx": 3,
+       "arr": "9.02",
+       "dep": "9.02"
+      },
+      {
+       "stop": "ENNA BASSA (Via Scifitello(incr.Via Veneto))",
+       "idx": 4,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 5,
+       "arr": "9.15",
+       "dep": "9.15"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "ENNA (Terminal Bus Viale Diaz 80)",
+    "ENNA (SS121 (incr.SS290))",
+    "ENNA (SP3)",
+    "ENNA (Stazione fs)",
+    "CALASCIBETTA (SS290)",
+    "CALASCIBETTA (SS290 (ex Brace))",
+    "CALASCIBETTA (SS290 (Oleificio))",
+    "CALASCIBETTA (SS290 (rifornimento))",
+    "CALASCIBETTA (SS290 (fronte 141))",
+    "CALASCIBETTA (SS290 (incr.SP63))",
+    "CALASCIBETTA (SS290 (C.da S.Leonardo))",
+    "BUONRIPOSO (SS290 (Campo Sportivo))",
+    "BUONRIPOSO (SS290)",
+    "BUONRIPOSO (SS290 (Chiesa))",
+    "CALTANISSETTA (Via Rochester c/o Autostazione)",
+    "VILLAROSA (Corso Garibaldi 277)",
+    "VILLAROSA (Corso Garibaldi 135)",
+    "VILLAROSA (SS121 (Madonna della Catena))",
+    "VILLAROSA (SS121 (Oleificio Madem))",
+    "VILLAROSA STAZIONE (SS121 (Bivio))",
+    "ENNA (SS121 (c.da Mancadarso))",
+    "ENNA (SS121 (Bivio Kamuth))",
+    "ENNA (Corso Sicilia 2)",
+    "ENNA (Via S.Agata 82)",
+    "ENNA (Via Pergusa 210 (ex Vigorelli))",
+    "ENNA BASSA (Via Scifitello(incr.Via Veneto))",
+    "ENNA BASSA (Viale dell'Unità d'Italia 49)",
+    "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)"
+   ],
+   "trips": [
+    {
+     "corsa": "350 VUOTO",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "35 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11"
+      ]
+     },
+     "reverse": true,
+     "variant": "En-En Fs",
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 0,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "ENNA (SS121 (incr.SS290))",
+       "idx": 1,
+       "arr": "8.01",
+       "dep": "8.01"
+      },
+      {
+       "stop": "ENNA (SP3)",
+       "idx": 2,
+       "arr": "8.04",
+       "dep": "8.04"
+      },
+      {
+       "stop": "ENNA (Stazione fs)",
+       "idx": 3,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2610",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "variant": "EN-B.riposo",
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 0,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "ENNA (SS121 (incr.SS290))",
+       "idx": 1,
+       "arr": "14.31",
+       "dep": "14.31"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290)",
+       "idx": 2,
+       "arr": "14.34",
+       "dep": "14.34"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (ex Brace))",
+       "idx": 3,
+       "arr": "14.36",
+       "dep": "14.36"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (Oleificio))",
+       "idx": 4,
+       "arr": "14.37",
+       "dep": "14.37"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (rifornimento))",
+       "idx": 5,
+       "arr": "14.38",
+       "dep": "14.38"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (fronte 141))",
+       "idx": 6,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (incr.SP63))",
+       "idx": 7,
+       "arr": "14.41",
+       "dep": "14.41"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (C.da S.Leonardo))",
+       "idx": 8,
+       "arr": "14.42",
+       "dep": "14.42"
+      },
+      {
+       "stop": "BUONRIPOSO (SS290 (Campo Sportivo))",
+       "idx": 9,
+       "arr": "14.43",
+       "dep": "14.43"
+      },
+      {
+       "stop": "BUONRIPOSO (SS290)",
+       "idx": 10,
+       "arr": "14.44",
+       "dep": "14.44"
+      },
+      {
+       "stop": "BUONRIPOSO (SS290 (Chiesa))",
+       "idx": 11,
+       "arr": "14.45",
+       "dep": "14.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2615",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "variant": "En Fs-C.betta",
+     "stops": [
+      {
+       "stop": "ENNA (Stazione fs)",
+       "idx": 0,
+       "arr": "17.05",
+       "dep": "17.05"
+      },
+      {
+       "stop": "ENNA (SP3)",
+       "idx": 1,
+       "arr": "17.06",
+       "dep": "17.06"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290)",
+       "idx": 2,
+       "arr": "17.09",
+       "dep": "17.09"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (ex Brace))",
+       "idx": 3,
+       "arr": "17.11",
+       "dep": "17.11"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (Oleificio))",
+       "idx": 4,
+       "arr": "17.12",
+       "dep": "17.12"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (rifornimento))",
+       "idx": 5,
+       "arr": "17.13",
+       "dep": "17.13"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (fronte 141))",
+       "idx": 6,
+       "arr": "17.15",
+       "dep": "17.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2612",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "variant": "En Fs-C.betta",
+     "stops": [
+      {
+       "stop": "ENNA (Stazione fs)",
+       "idx": 0,
+       "arr": "12.25",
+       "dep": "12.25"
+      },
+      {
+       "stop": "ENNA (SP3)",
+       "idx": 1,
+       "arr": "12.26",
+       "dep": "12.26"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290)",
+       "idx": 2,
+       "arr": "12.29",
+       "dep": "12.29"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (ex Brace))",
+       "idx": 3,
+       "arr": "12.31",
+       "dep": "12.31"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (Oleificio))",
+       "idx": 4,
+       "arr": "12.32",
+       "dep": "12.32"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (rifornimento))",
+       "idx": 5,
+       "arr": "12.33",
+       "dep": "12.33"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (fronte 141))",
+       "idx": 6,
+       "arr": "12.35",
+       "dep": "12.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "60120",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "7 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-08-01",
+       "2026-08-08",
+       "2026-08-22",
+       "2026-08-29",
+       "2026-09-05",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "variant": "En Fs-B.riposo",
+     "stops": [
+      {
+       "stop": "ENNA (Stazione fs)",
+       "idx": 0,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "ENNA (SP3)",
+       "idx": 1,
+       "arr": "8.16",
+       "dep": "8.16"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290)",
+       "idx": 2,
+       "arr": "8.19",
+       "dep": "8.19"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (ex Brace))",
+       "idx": 3,
+       "arr": "8.21",
+       "dep": "8.21"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (Oleificio))",
+       "idx": 4,
+       "arr": "8.22",
+       "dep": "8.22"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (rifornimento))",
+       "idx": 5,
+       "arr": "8.23",
+       "dep": "8.23"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (fronte 141))",
+       "idx": 6,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (incr.SP63))",
+       "idx": 7,
+       "arr": "8.26",
+       "dep": "8.26"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (C.da S.Leonardo))",
+       "idx": 8,
+       "arr": "8.27",
+       "dep": "8.27"
+      },
+      {
+       "stop": "BUONRIPOSO (SS290 (Campo Sportivo))",
+       "idx": 9,
+       "arr": "8.28",
+       "dep": "8.28"
+      },
+      {
+       "stop": "BUONRIPOSO (SS290)",
+       "idx": 10,
+       "arr": "8.29",
+       "dep": "8.29"
+      },
+      {
+       "stop": "BUONRIPOSO (SS290 (Chiesa))",
+       "idx": 11,
+       "arr": "8.30",
+       "dep": "8.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "60118",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "35 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11"
+      ]
+     },
+     "reverse": true,
+     "variant": "En Fs-B.riposo",
+     "stops": [
+      {
+       "stop": "ENNA (Stazione fs)",
+       "idx": 0,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "ENNA (SP3)",
+       "idx": 1,
+       "arr": "8.06",
+       "dep": "8.06"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290)",
+       "idx": 2,
+       "arr": "8.09",
+       "dep": "8.09"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (ex Brace))",
+       "idx": 3,
+       "arr": "8.11",
+       "dep": "8.11"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (Oleificio))",
+       "idx": 4,
+       "arr": "8.12",
+       "dep": "8.12"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (rifornimento))",
+       "idx": 5,
+       "arr": "8.13",
+       "dep": "8.13"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (fronte 141))",
+       "idx": 6,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (incr.SP63))",
+       "idx": 7,
+       "arr": "8.16",
+       "dep": "8.16"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (C.da S.Leonardo))",
+       "idx": 8,
+       "arr": "8.17",
+       "dep": "8.17"
+      },
+      {
+       "stop": "BUONRIPOSO (SS290 (Campo Sportivo))",
+       "idx": 9,
+       "arr": "8.18",
+       "dep": "8.18"
+      },
+      {
+       "stop": "BUONRIPOSO (SS290)",
+       "idx": 10,
+       "arr": "8.19",
+       "dep": "8.19"
+      },
+      {
+       "stop": "BUONRIPOSO (SS290 (Chiesa))",
+       "idx": 11,
+       "arr": "8.20",
+       "dep": "8.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "AGGIUNTA 4",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "variant": "CL-V.rosa-EN",
+     "stops": [
+      {
+       "stop": "CALTANISSETTA (Via Rochester c/o Autostazione)",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 277)",
+       "idx": 1,
+       "arr": "14.42",
+       "dep": "14.42"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 135)",
+       "idx": 2,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Madonna della Catena))",
+       "idx": 3,
+       "arr": "14.47",
+       "dep": "14.47"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Oleificio Madem))",
+       "idx": 4,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "VILLAROSA STAZIONE (SS121 (Bivio))",
+       "idx": 5,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "ENNA (SS121 (c.da Mancadarso))",
+       "idx": 6,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "ENNA (SS121 (Bivio Kamuth))",
+       "idx": 7,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 8,
+       "arr": "15.09",
+       "dep": "15.09"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 9,
+       "arr": "15.10",
+       "dep": "15.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8950",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "variant": "CL-V.rosa-EN",
+     "stops": [
+      {
+       "stop": "CALTANISSETTA (Via Rochester c/o Autostazione)",
+       "idx": 0,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 277)",
+       "idx": 1,
+       "arr": "7.22",
+       "dep": "7.22"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 135)",
+       "idx": 2,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Madonna della Catena))",
+       "idx": 3,
+       "arr": "7.27",
+       "dep": "7.27"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Oleificio Madem))",
+       "idx": 4,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "VILLAROSA STAZIONE (SS121 (Bivio))",
+       "idx": 5,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "ENNA (SS121 (c.da Mancadarso))",
+       "idx": 6,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "ENNA (SS121 (Bivio Kamuth))",
+       "idx": 7,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 8,
+       "arr": "7.49",
+       "dep": "7.49"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 9,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2622",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "variant": "En-S.Lucia-En B-En Fs",
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 0,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "ENNA (Via S.Agata 82)",
+       "idx": 1,
+       "arr": "16.41",
+       "dep": "16.41"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
+       "idx": 2,
+       "arr": "16.43",
+       "dep": "16.43"
+      },
+      {
+       "stop": "ENNA BASSA (Via Scifitello(incr.Via Veneto))",
+       "idx": 3,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "ENNA BASSA (Viale dell'Unità d'Italia 49)",
+       "idx": 4,
+       "arr": "16.53",
+       "dep": "16.53"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 5,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "ENNA (SP3)",
+       "idx": 6,
+       "arr": "17.04",
+       "dep": "17.04"
+      },
+      {
+       "stop": "ENNA (Stazione fs)",
+       "idx": 7,
+       "arr": "17.05",
+       "dep": "17.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "60119",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "7 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-08-01",
+       "2026-08-08",
+       "2026-08-22",
+       "2026-08-29",
+       "2026-09-05",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "variant": "En-S.Lucia-En B-En Fs",
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 0,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "ENNA (Via S.Agata 82)",
+       "idx": 1,
+       "arr": "7.51",
+       "dep": "7.51"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
+       "idx": 2,
+       "arr": "7.53",
+       "dep": "7.53"
+      },
+      {
+       "stop": "ENNA BASSA (Via Scifitello(incr.Via Veneto))",
+       "idx": 3,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "ENNA BASSA (Viale dell'Unità d'Italia 49)",
+       "idx": 4,
+       "arr": "8.03",
+       "dep": "8.03"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 5,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "ENNA (SP3)",
+       "idx": 6,
+       "arr": "8.14",
+       "dep": "8.14"
+      },
+      {
+       "stop": "ENNA (Stazione fs)",
+       "idx": 7,
+       "arr": "8.15",
+       "dep": "8.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2619",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "variant": "En-S.Lucia-En B-En Fs",
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 0,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "ENNA (Via S.Agata 82)",
+       "idx": 1,
+       "arr": "12.01",
+       "dep": "12.01"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
+       "idx": 2,
+       "arr": "12.03",
+       "dep": "12.03"
+      },
+      {
+       "stop": "ENNA BASSA (Via Scifitello(incr.Via Veneto))",
+       "idx": 3,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "ENNA BASSA (Viale dell'Unità d'Italia 49)",
+       "idx": 4,
+       "arr": "12.13",
+       "dep": "12.13"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 5,
+       "arr": "12.15",
+       "dep": "12.15"
+      },
+      {
+       "stop": "ENNA (SP3)",
+       "idx": 6,
+       "arr": "12.24",
+       "dep": "12.24"
+      },
+      {
+       "stop": "ENNA (Stazione fs)",
+       "idx": 7,
+       "arr": "12.25",
+       "dep": "12.25"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

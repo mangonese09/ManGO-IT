@@ -1,0 +1,8587 @@
+{
+ "operator": "SAIS Autolinee",
+ "route_id": "sais-11004",
+ "name": "4 Lagrange - Ospedale - Mattei - Lagrange",
+ "short_name": "11004",
+ "coords": "external",
+ "source": "api.saisautolinee.it line 0f02347d-fb58-42dc-85f5-6997edc62b4b",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "GELA (Piazza Lagrange)",
+    "GELA (Via Ettore Romagnoli, 67)",
+    "GELA (Via Giovanni Meli fronte 17)",
+    "GELA (Via Emanuele Morselli (Piazza Giordano))",
+    "GELA (Via Europa 93)",
+    "GELA (Via Europa 51)",
+    "GELA (Via Palazzi 134)",
+    "GELA (Via Palazzi, 194)",
+    "GELA (Via Appia, 19 (fronte chiesa))",
+    "GELA (Via Portuense fronte falegnameria)",
+    "GELA (Via Portuense fronte 109)",
+    "GELA (Via R. Cannilla snc)",
+    "GELA (Via Portuense, 109)",
+    "GELA (Via Portuense, 67)",
+    "GELA (Via Portuense, 17)",
+    "GELA (Via Butera, 84)",
+    "GELA (Via Butera, 158)",
+    "GELA (Via Butera, 174)",
+    "GELA (Via Butera, 196)",
+    "GELA (Via Bettino Craxi, 8)",
+    "GELA (Via Bettino Craxi, 44)",
+    "GELA (Via Nicola Calipari snc)",
+    "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+    "GELA (Via Giovan Battista Basile fronte 29)",
+    "GELA (Via Giovan Battista Basile, 52)",
+    "GELA (Via Ara Pacis fronte Piazza Masaccio)",
+    "GELA (Via Ara Pacis, 44)",
+    "GELA (Via Ara Pacis, 18)",
+    "GELA (Via Ara Pacis, 7)",
+    "GELA (Via Venezia fronte 354)",
+    "GELA (Via Venezia, 313)",
+    "GELA (Via Venezia fronte 262)",
+    "GELA (Via Venezia fronte 220)",
+    "GELA (Via Tevere, 149)",
+    "GELA (Piazza Enrico Mattei)",
+    "GELA (Via Tevere fronte 171)",
+    "GELA (Via Venezia, 220)",
+    "GELA (Via Venezia, 262)",
+    "GELA (Via Venezia, 300)",
+    "GELA (Via Venezia, 354)",
+    "GELA (Via Ara Pacis fronte 7)",
+    "GELA (Via Ara Pacis, 46)",
+    "GELA (Piazza Masaccio)",
+    "GELA (Via Giovan Battista Basile fronte 52)",
+    "GELA (Via Giovan Battista Basile, 29)",
+    "GELA (Via Butera fronte 192)",
+    "GELA (Via Butera, 171)",
+    "GELA (Via Butera Franzy's shop)",
+    "GELA (Via Butera fronte 84)",
+    "GELA (Via Portuense fronte 17)",
+    "GELA (Via Venezia fronte 425)",
+    "GELA (Via Venezia, 558)",
+    "GELA (Via Licata fronte 16)",
+    "GELA (Viale Indipendenza (fronte 16))",
+    "GELA (Via Europa fronte 119 (Liceo Scienze Umane))",
+    "GELA (Via Ettore Romagnoli fronte 138)"
+   ],
+   "trips": [
+    {
+     "corsa": "004008",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11004_11",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Lagrange)",
+       "idx": 0,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 1,
+       "arr": "17.31",
+       "dep": "17.31"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 2,
+       "arr": "17.32",
+       "dep": "17.32"
+      },
+      {
+       "stop": "GELA (Via Emanuele Morselli (Piazza Giordano))",
+       "idx": 3,
+       "arr": "17.33",
+       "dep": "17.33"
+      },
+      {
+       "stop": "GELA (Via Europa 93)",
+       "idx": 4,
+       "arr": "17.33",
+       "dep": "17.33"
+      },
+      {
+       "stop": "GELA (Via Europa 51)",
+       "idx": 5,
+       "arr": "17.34",
+       "dep": "17.34"
+      },
+      {
+       "stop": "GELA (Via Palazzi 134)",
+       "idx": 6,
+       "arr": "17.36",
+       "dep": "17.36"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 194)",
+       "idx": 7,
+       "arr": "17.37",
+       "dep": "17.37"
+      },
+      {
+       "stop": "GELA (Via Appia, 19 (fronte chiesa))",
+       "idx": 8,
+       "arr": "17.39",
+       "dep": "17.39"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 9,
+       "arr": "17.39",
+       "dep": "17.39"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 109)",
+       "idx": 10,
+       "arr": "17.40",
+       "dep": "17.40"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 11,
+       "arr": "17.41",
+       "dep": "17.41"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 12,
+       "arr": "17.42",
+       "dep": "17.42"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 13,
+       "arr": "17.43",
+       "dep": "17.43"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 14,
+       "arr": "17.44",
+       "dep": "17.44"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 15,
+       "arr": "17.45",
+       "dep": "17.45"
+      },
+      {
+       "stop": "GELA (Via Butera, 158)",
+       "idx": 16,
+       "arr": "17.46",
+       "dep": "17.46"
+      },
+      {
+       "stop": "GELA (Via Butera, 174)",
+       "idx": 17,
+       "arr": "17.47",
+       "dep": "17.47"
+      },
+      {
+       "stop": "GELA (Via Butera, 196)",
+       "idx": 18,
+       "arr": "17.48",
+       "dep": "17.48"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 19,
+       "arr": "17.49",
+       "dep": "17.49"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 20,
+       "arr": "17.50",
+       "dep": "17.50"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 21,
+       "arr": "17.51",
+       "dep": "17.51"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 22,
+       "arr": "17.52",
+       "dep": "17.52"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 29)",
+       "idx": 23,
+       "arr": "17.54",
+       "dep": "17.54"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 52)",
+       "idx": 24,
+       "arr": "17.55",
+       "dep": "17.55"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte Piazza Masaccio)",
+       "idx": 25,
+       "arr": "17.56",
+       "dep": "17.56"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 44)",
+       "idx": 26,
+       "arr": "17.57",
+       "dep": "17.57"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 27,
+       "arr": "17.58",
+       "dep": "17.58"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 7)",
+       "idx": 28,
+       "arr": "17.59",
+       "dep": "17.59"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 354)",
+       "idx": 29,
+       "arr": "18.01",
+       "dep": "18.01"
+      },
+      {
+       "stop": "GELA (Via Venezia, 313)",
+       "idx": 30,
+       "arr": "18.03",
+       "dep": "18.03"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 262)",
+       "idx": 31,
+       "arr": "18.04",
+       "dep": "18.04"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 220)",
+       "idx": 32,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "GELA (Via Tevere, 149)",
+       "idx": 33,
+       "arr": "18.06",
+       "dep": "18.06"
+      },
+      {
+       "stop": "GELA (Piazza Enrico Mattei)",
+       "idx": 34,
+       "arr": "18.08",
+       "dep": "18.08"
+      },
+      {
+       "stop": "GELA (Via Tevere fronte 171)",
+       "idx": 35,
+       "arr": "18.09",
+       "dep": "18.09"
+      },
+      {
+       "stop": "GELA (Via Venezia, 220)",
+       "idx": 36,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "GELA (Via Venezia, 262)",
+       "idx": 37,
+       "arr": "18.11",
+       "dep": "18.11"
+      },
+      {
+       "stop": "GELA (Via Venezia, 300)",
+       "idx": 38,
+       "arr": "18.12",
+       "dep": "18.12"
+      },
+      {
+       "stop": "GELA (Via Venezia, 354)",
+       "idx": 39,
+       "arr": "18.13",
+       "dep": "18.13"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte 7)",
+       "idx": 40,
+       "arr": "18.15",
+       "dep": "18.15"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 41,
+       "arr": "18.16",
+       "dep": "18.16"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 46)",
+       "idx": 42,
+       "arr": "18.17",
+       "dep": "18.17"
+      },
+      {
+       "stop": "GELA (Piazza Masaccio)",
+       "idx": 43,
+       "arr": "18.18",
+       "dep": "18.18"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 52)",
+       "idx": 44,
+       "arr": "18.19",
+       "dep": "18.19"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 29)",
+       "idx": 45,
+       "arr": "18.20",
+       "dep": "18.20"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 46,
+       "arr": "18.21",
+       "dep": "18.21"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 47,
+       "arr": "18.22",
+       "dep": "18.22"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 48,
+       "arr": "18.23",
+       "dep": "18.23"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 49,
+       "arr": "18.24",
+       "dep": "18.24"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 192)",
+       "idx": 50,
+       "arr": "18.26",
+       "dep": "18.26"
+      },
+      {
+       "stop": "GELA (Via Butera, 171)",
+       "idx": 51,
+       "arr": "18.27",
+       "dep": "18.27"
+      },
+      {
+       "stop": "GELA (Via Butera Franzy's shop)",
+       "idx": 52,
+       "arr": "18.27",
+       "dep": "18.27"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 84)",
+       "idx": 53,
+       "arr": "18.28",
+       "dep": "18.28"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 17)",
+       "idx": 54,
+       "arr": "18.29",
+       "dep": "18.29"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 55,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 56,
+       "arr": "18.31",
+       "dep": "18.31"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 57,
+       "arr": "18.32",
+       "dep": "18.32"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 58,
+       "arr": "18.33",
+       "dep": "18.33"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 59,
+       "arr": "18.34",
+       "dep": "18.34"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 60,
+       "arr": "18.35",
+       "dep": "18.35"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 425)",
+       "idx": 61,
+       "arr": "18.36",
+       "dep": "18.36"
+      },
+      {
+       "stop": "GELA (Via Venezia, 558)",
+       "idx": 62,
+       "arr": "18.37",
+       "dep": "18.37"
+      },
+      {
+       "stop": "GELA (Via Licata fronte 16)",
+       "idx": 63,
+       "arr": "18.38",
+       "dep": "18.38"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza (fronte 16))",
+       "idx": 64,
+       "arr": "18.40",
+       "dep": "18.40"
+      },
+      {
+       "stop": "GELA (Via Europa fronte 119 (Liceo Scienze Umane))",
+       "idx": 65,
+       "arr": "18.42",
+       "dep": "18.42"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli fronte 138)",
+       "idx": 66,
+       "arr": "18.43",
+       "dep": "18.43"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 67,
+       "arr": "18.44",
+       "dep": "18.44"
+      },
+      {
+       "stop": "GELA (Piazza Lagrange)",
+       "idx": 68,
+       "arr": "18.45",
+       "dep": "18.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "004002",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11004_11",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Lagrange)",
+       "idx": 0,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 1,
+       "arr": "9.01",
+       "dep": "9.01"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 2,
+       "arr": "9.02",
+       "dep": "9.02"
+      },
+      {
+       "stop": "GELA (Via Emanuele Morselli (Piazza Giordano))",
+       "idx": 3,
+       "arr": "9.03",
+       "dep": "9.03"
+      },
+      {
+       "stop": "GELA (Via Europa 93)",
+       "idx": 4,
+       "arr": "9.03",
+       "dep": "9.03"
+      },
+      {
+       "stop": "GELA (Via Europa 51)",
+       "idx": 5,
+       "arr": "9.04",
+       "dep": "9.04"
+      },
+      {
+       "stop": "GELA (Via Palazzi 134)",
+       "idx": 6,
+       "arr": "9.06",
+       "dep": "9.06"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 194)",
+       "idx": 7,
+       "arr": "9.07",
+       "dep": "9.07"
+      },
+      {
+       "stop": "GELA (Via Appia, 19 (fronte chiesa))",
+       "idx": 8,
+       "arr": "9.09",
+       "dep": "9.09"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 9,
+       "arr": "9.09",
+       "dep": "9.09"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 109)",
+       "idx": 10,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 11,
+       "arr": "9.11",
+       "dep": "9.11"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 12,
+       "arr": "9.12",
+       "dep": "9.12"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 13,
+       "arr": "9.13",
+       "dep": "9.13"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 14,
+       "arr": "9.14",
+       "dep": "9.14"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 15,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "GELA (Via Butera, 158)",
+       "idx": 16,
+       "arr": "9.16",
+       "dep": "9.16"
+      },
+      {
+       "stop": "GELA (Via Butera, 174)",
+       "idx": 17,
+       "arr": "9.17",
+       "dep": "9.17"
+      },
+      {
+       "stop": "GELA (Via Butera, 196)",
+       "idx": 18,
+       "arr": "9.18",
+       "dep": "9.18"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 19,
+       "arr": "9.19",
+       "dep": "9.19"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 20,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 21,
+       "arr": "9.21",
+       "dep": "9.21"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 22,
+       "arr": "9.22",
+       "dep": "9.22"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 29)",
+       "idx": 23,
+       "arr": "9.24",
+       "dep": "9.24"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 52)",
+       "idx": 24,
+       "arr": "9.25",
+       "dep": "9.25"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte Piazza Masaccio)",
+       "idx": 25,
+       "arr": "9.26",
+       "dep": "9.26"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 44)",
+       "idx": 26,
+       "arr": "9.27",
+       "dep": "9.27"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 27,
+       "arr": "9.28",
+       "dep": "9.28"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 7)",
+       "idx": 28,
+       "arr": "9.29",
+       "dep": "9.29"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 354)",
+       "idx": 29,
+       "arr": "9.31",
+       "dep": "9.31"
+      },
+      {
+       "stop": "GELA (Via Venezia, 313)",
+       "idx": 30,
+       "arr": "9.33",
+       "dep": "9.33"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 262)",
+       "idx": 31,
+       "arr": "9.34",
+       "dep": "9.34"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 220)",
+       "idx": 32,
+       "arr": "9.35",
+       "dep": "9.35"
+      },
+      {
+       "stop": "GELA (Via Tevere, 149)",
+       "idx": 33,
+       "arr": "9.36",
+       "dep": "9.36"
+      },
+      {
+       "stop": "GELA (Piazza Enrico Mattei)",
+       "idx": 34,
+       "arr": "9.38",
+       "dep": "9.38"
+      },
+      {
+       "stop": "GELA (Via Tevere fronte 171)",
+       "idx": 35,
+       "arr": "9.39",
+       "dep": "9.39"
+      },
+      {
+       "stop": "GELA (Via Venezia, 220)",
+       "idx": 36,
+       "arr": "9.40",
+       "dep": "9.40"
+      },
+      {
+       "stop": "GELA (Via Venezia, 262)",
+       "idx": 37,
+       "arr": "9.41",
+       "dep": "9.41"
+      },
+      {
+       "stop": "GELA (Via Venezia, 300)",
+       "idx": 38,
+       "arr": "9.42",
+       "dep": "9.42"
+      },
+      {
+       "stop": "GELA (Via Venezia, 354)",
+       "idx": 39,
+       "arr": "9.43",
+       "dep": "9.43"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte 7)",
+       "idx": 40,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 41,
+       "arr": "9.46",
+       "dep": "9.46"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 46)",
+       "idx": 42,
+       "arr": "9.47",
+       "dep": "9.47"
+      },
+      {
+       "stop": "GELA (Piazza Masaccio)",
+       "idx": 43,
+       "arr": "9.48",
+       "dep": "9.48"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 52)",
+       "idx": 44,
+       "arr": "9.49",
+       "dep": "9.49"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 29)",
+       "idx": 45,
+       "arr": "9.50",
+       "dep": "9.50"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 46,
+       "arr": "9.51",
+       "dep": "9.51"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 47,
+       "arr": "9.52",
+       "dep": "9.52"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 48,
+       "arr": "9.53",
+       "dep": "9.53"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 49,
+       "arr": "9.54",
+       "dep": "9.54"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 192)",
+       "idx": 50,
+       "arr": "9.56",
+       "dep": "9.56"
+      },
+      {
+       "stop": "GELA (Via Butera, 171)",
+       "idx": 51,
+       "arr": "9.57",
+       "dep": "9.57"
+      },
+      {
+       "stop": "GELA (Via Butera Franzy's shop)",
+       "idx": 52,
+       "arr": "9.57",
+       "dep": "9.57"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 84)",
+       "idx": 53,
+       "arr": "9.58",
+       "dep": "9.58"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 17)",
+       "idx": 54,
+       "arr": "9.59",
+       "dep": "9.59"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 55,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 56,
+       "arr": "10.01",
+       "dep": "10.01"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 57,
+       "arr": "10.02",
+       "dep": "10.02"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 58,
+       "arr": "10.03",
+       "dep": "10.03"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 59,
+       "arr": "10.04",
+       "dep": "10.04"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 60,
+       "arr": "10.05",
+       "dep": "10.05"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 425)",
+       "idx": 61,
+       "arr": "10.06",
+       "dep": "10.06"
+      },
+      {
+       "stop": "GELA (Via Venezia, 558)",
+       "idx": 62,
+       "arr": "10.07",
+       "dep": "10.07"
+      },
+      {
+       "stop": "GELA (Via Licata fronte 16)",
+       "idx": 63,
+       "arr": "10.08",
+       "dep": "10.08"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza (fronte 16))",
+       "idx": 64,
+       "arr": "10.10",
+       "dep": "10.10"
+      },
+      {
+       "stop": "GELA (Via Europa fronte 119 (Liceo Scienze Umane))",
+       "idx": 65,
+       "arr": "10.12",
+       "dep": "10.12"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli fronte 138)",
+       "idx": 66,
+       "arr": "10.13",
+       "dep": "10.13"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 67,
+       "arr": "10.14",
+       "dep": "10.14"
+      },
+      {
+       "stop": "GELA (Piazza Lagrange)",
+       "idx": 68,
+       "arr": "10.15",
+       "dep": "10.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "004004",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11004_11",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Lagrange)",
+       "idx": 0,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 1,
+       "arr": "11.46",
+       "dep": "11.46"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 2,
+       "arr": "11.47",
+       "dep": "11.47"
+      },
+      {
+       "stop": "GELA (Via Emanuele Morselli (Piazza Giordano))",
+       "idx": 3,
+       "arr": "11.48",
+       "dep": "11.48"
+      },
+      {
+       "stop": "GELA (Via Europa 93)",
+       "idx": 4,
+       "arr": "11.48",
+       "dep": "11.48"
+      },
+      {
+       "stop": "GELA (Via Europa 51)",
+       "idx": 5,
+       "arr": "11.49",
+       "dep": "11.49"
+      },
+      {
+       "stop": "GELA (Via Palazzi 134)",
+       "idx": 6,
+       "arr": "11.51",
+       "dep": "11.51"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 194)",
+       "idx": 7,
+       "arr": "11.52",
+       "dep": "11.52"
+      },
+      {
+       "stop": "GELA (Via Appia, 19 (fronte chiesa))",
+       "idx": 8,
+       "arr": "11.54",
+       "dep": "11.54"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 9,
+       "arr": "11.54",
+       "dep": "11.54"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 109)",
+       "idx": 10,
+       "arr": "11.55",
+       "dep": "11.55"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 11,
+       "arr": "11.56",
+       "dep": "11.56"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 12,
+       "arr": "11.57",
+       "dep": "11.57"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 13,
+       "arr": "11.58",
+       "dep": "11.58"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 14,
+       "arr": "11.59",
+       "dep": "11.59"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 15,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "GELA (Via Butera, 158)",
+       "idx": 16,
+       "arr": "12.01",
+       "dep": "12.01"
+      },
+      {
+       "stop": "GELA (Via Butera, 174)",
+       "idx": 17,
+       "arr": "12.02",
+       "dep": "12.02"
+      },
+      {
+       "stop": "GELA (Via Butera, 196)",
+       "idx": 18,
+       "arr": "12.03",
+       "dep": "12.03"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 19,
+       "arr": "12.04",
+       "dep": "12.04"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 20,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 21,
+       "arr": "12.06",
+       "dep": "12.06"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 22,
+       "arr": "12.07",
+       "dep": "12.07"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 29)",
+       "idx": 23,
+       "arr": "12.09",
+       "dep": "12.09"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 52)",
+       "idx": 24,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte Piazza Masaccio)",
+       "idx": 25,
+       "arr": "12.11",
+       "dep": "12.11"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 44)",
+       "idx": 26,
+       "arr": "12.12",
+       "dep": "12.12"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 27,
+       "arr": "12.13",
+       "dep": "12.13"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 7)",
+       "idx": 28,
+       "arr": "12.14",
+       "dep": "12.14"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 354)",
+       "idx": 29,
+       "arr": "12.16",
+       "dep": "12.16"
+      },
+      {
+       "stop": "GELA (Via Venezia, 313)",
+       "idx": 30,
+       "arr": "12.18",
+       "dep": "12.18"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 262)",
+       "idx": 31,
+       "arr": "12.19",
+       "dep": "12.19"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 220)",
+       "idx": 32,
+       "arr": "12.20",
+       "dep": "12.20"
+      },
+      {
+       "stop": "GELA (Via Tevere, 149)",
+       "idx": 33,
+       "arr": "12.21",
+       "dep": "12.21"
+      },
+      {
+       "stop": "GELA (Piazza Enrico Mattei)",
+       "idx": 34,
+       "arr": "12.23",
+       "dep": "12.23"
+      },
+      {
+       "stop": "GELA (Via Tevere fronte 171)",
+       "idx": 35,
+       "arr": "12.24",
+       "dep": "12.24"
+      },
+      {
+       "stop": "GELA (Via Venezia, 220)",
+       "idx": 36,
+       "arr": "12.25",
+       "dep": "12.25"
+      },
+      {
+       "stop": "GELA (Via Venezia, 262)",
+       "idx": 37,
+       "arr": "12.26",
+       "dep": "12.26"
+      },
+      {
+       "stop": "GELA (Via Venezia, 300)",
+       "idx": 38,
+       "arr": "12.27",
+       "dep": "12.27"
+      },
+      {
+       "stop": "GELA (Via Venezia, 354)",
+       "idx": 39,
+       "arr": "12.28",
+       "dep": "12.28"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte 7)",
+       "idx": 40,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 41,
+       "arr": "12.31",
+       "dep": "12.31"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 46)",
+       "idx": 42,
+       "arr": "12.32",
+       "dep": "12.32"
+      },
+      {
+       "stop": "GELA (Piazza Masaccio)",
+       "idx": 43,
+       "arr": "12.33",
+       "dep": "12.33"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 52)",
+       "idx": 44,
+       "arr": "12.34",
+       "dep": "12.34"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 29)",
+       "idx": 45,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 46,
+       "arr": "12.36",
+       "dep": "12.36"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 47,
+       "arr": "12.37",
+       "dep": "12.37"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 48,
+       "arr": "12.38",
+       "dep": "12.38"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 49,
+       "arr": "12.39",
+       "dep": "12.39"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 192)",
+       "idx": 50,
+       "arr": "12.41",
+       "dep": "12.41"
+      },
+      {
+       "stop": "GELA (Via Butera, 171)",
+       "idx": 51,
+       "arr": "12.42",
+       "dep": "12.42"
+      },
+      {
+       "stop": "GELA (Via Butera Franzy's shop)",
+       "idx": 52,
+       "arr": "12.42",
+       "dep": "12.42"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 84)",
+       "idx": 53,
+       "arr": "12.43",
+       "dep": "12.43"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 17)",
+       "idx": 54,
+       "arr": "12.44",
+       "dep": "12.44"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 55,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 56,
+       "arr": "12.46",
+       "dep": "12.46"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 57,
+       "arr": "12.47",
+       "dep": "12.47"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 58,
+       "arr": "12.48",
+       "dep": "12.48"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 59,
+       "arr": "12.49",
+       "dep": "12.49"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 60,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 425)",
+       "idx": 61,
+       "arr": "12.51",
+       "dep": "12.51"
+      },
+      {
+       "stop": "GELA (Via Venezia, 558)",
+       "idx": 62,
+       "arr": "12.52",
+       "dep": "12.52"
+      },
+      {
+       "stop": "GELA (Via Licata fronte 16)",
+       "idx": 63,
+       "arr": "12.53",
+       "dep": "12.53"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza (fronte 16))",
+       "idx": 64,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "GELA (Via Europa fronte 119 (Liceo Scienze Umane))",
+       "idx": 65,
+       "arr": "12.57",
+       "dep": "12.57"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli fronte 138)",
+       "idx": 66,
+       "arr": "12.58",
+       "dep": "12.58"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 67,
+       "arr": "12.59",
+       "dep": "12.59"
+      },
+      {
+       "stop": "GELA (Piazza Lagrange)",
+       "idx": 68,
+       "arr": "13.00",
+       "dep": "13.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "004009",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11004_11",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Lagrange)",
+       "idx": 0,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 1,
+       "arr": "19.01",
+       "dep": "19.01"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 2,
+       "arr": "19.02",
+       "dep": "19.02"
+      },
+      {
+       "stop": "GELA (Via Emanuele Morselli (Piazza Giordano))",
+       "idx": 3,
+       "arr": "19.03",
+       "dep": "19.03"
+      },
+      {
+       "stop": "GELA (Via Europa 93)",
+       "idx": 4,
+       "arr": "19.03",
+       "dep": "19.03"
+      },
+      {
+       "stop": "GELA (Via Europa 51)",
+       "idx": 5,
+       "arr": "19.04",
+       "dep": "19.04"
+      },
+      {
+       "stop": "GELA (Via Palazzi 134)",
+       "idx": 6,
+       "arr": "19.06",
+       "dep": "19.06"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 194)",
+       "idx": 7,
+       "arr": "19.07",
+       "dep": "19.07"
+      },
+      {
+       "stop": "GELA (Via Appia, 19 (fronte chiesa))",
+       "idx": 8,
+       "arr": "19.09",
+       "dep": "19.09"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 9,
+       "arr": "19.09",
+       "dep": "19.09"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 109)",
+       "idx": 10,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 11,
+       "arr": "19.11",
+       "dep": "19.11"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 12,
+       "arr": "19.12",
+       "dep": "19.12"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 13,
+       "arr": "19.13",
+       "dep": "19.13"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 14,
+       "arr": "19.14",
+       "dep": "19.14"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 15,
+       "arr": "19.15",
+       "dep": "19.15"
+      },
+      {
+       "stop": "GELA (Via Butera, 158)",
+       "idx": 16,
+       "arr": "19.16",
+       "dep": "19.16"
+      },
+      {
+       "stop": "GELA (Via Butera, 174)",
+       "idx": 17,
+       "arr": "19.17",
+       "dep": "19.17"
+      },
+      {
+       "stop": "GELA (Via Butera, 196)",
+       "idx": 18,
+       "arr": "19.18",
+       "dep": "19.18"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 19,
+       "arr": "19.19",
+       "dep": "19.19"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 20,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 21,
+       "arr": "19.21",
+       "dep": "19.21"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 22,
+       "arr": "19.22",
+       "dep": "19.22"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 29)",
+       "idx": 23,
+       "arr": "19.24",
+       "dep": "19.24"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 52)",
+       "idx": 24,
+       "arr": "19.25",
+       "dep": "19.25"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte Piazza Masaccio)",
+       "idx": 25,
+       "arr": "19.26",
+       "dep": "19.26"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 44)",
+       "idx": 26,
+       "arr": "19.27",
+       "dep": "19.27"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 27,
+       "arr": "19.28",
+       "dep": "19.28"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 7)",
+       "idx": 28,
+       "arr": "19.29",
+       "dep": "19.29"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 354)",
+       "idx": 29,
+       "arr": "19.31",
+       "dep": "19.31"
+      },
+      {
+       "stop": "GELA (Via Venezia, 313)",
+       "idx": 30,
+       "arr": "19.33",
+       "dep": "19.33"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 262)",
+       "idx": 31,
+       "arr": "19.34",
+       "dep": "19.34"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 220)",
+       "idx": 32,
+       "arr": "19.35",
+       "dep": "19.35"
+      },
+      {
+       "stop": "GELA (Via Tevere, 149)",
+       "idx": 33,
+       "arr": "19.36",
+       "dep": "19.36"
+      },
+      {
+       "stop": "GELA (Piazza Enrico Mattei)",
+       "idx": 34,
+       "arr": "19.38",
+       "dep": "19.38"
+      },
+      {
+       "stop": "GELA (Via Tevere fronte 171)",
+       "idx": 35,
+       "arr": "19.39",
+       "dep": "19.39"
+      },
+      {
+       "stop": "GELA (Via Venezia, 220)",
+       "idx": 36,
+       "arr": "19.40",
+       "dep": "19.40"
+      },
+      {
+       "stop": "GELA (Via Venezia, 262)",
+       "idx": 37,
+       "arr": "19.41",
+       "dep": "19.41"
+      },
+      {
+       "stop": "GELA (Via Venezia, 300)",
+       "idx": 38,
+       "arr": "19.42",
+       "dep": "19.42"
+      },
+      {
+       "stop": "GELA (Via Venezia, 354)",
+       "idx": 39,
+       "arr": "19.43",
+       "dep": "19.43"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte 7)",
+       "idx": 40,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 41,
+       "arr": "19.46",
+       "dep": "19.46"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 46)",
+       "idx": 42,
+       "arr": "19.47",
+       "dep": "19.47"
+      },
+      {
+       "stop": "GELA (Piazza Masaccio)",
+       "idx": 43,
+       "arr": "19.48",
+       "dep": "19.48"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 52)",
+       "idx": 44,
+       "arr": "19.49",
+       "dep": "19.49"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 29)",
+       "idx": 45,
+       "arr": "19.50",
+       "dep": "19.50"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 46,
+       "arr": "19.51",
+       "dep": "19.51"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 47,
+       "arr": "19.52",
+       "dep": "19.52"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 48,
+       "arr": "19.53",
+       "dep": "19.53"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 49,
+       "arr": "19.54",
+       "dep": "19.54"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 192)",
+       "idx": 50,
+       "arr": "19.56",
+       "dep": "19.56"
+      },
+      {
+       "stop": "GELA (Via Butera, 171)",
+       "idx": 51,
+       "arr": "19.57",
+       "dep": "19.57"
+      },
+      {
+       "stop": "GELA (Via Butera Franzy's shop)",
+       "idx": 52,
+       "arr": "19.57",
+       "dep": "19.57"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 84)",
+       "idx": 53,
+       "arr": "19.58",
+       "dep": "19.58"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 17)",
+       "idx": 54,
+       "arr": "19.59",
+       "dep": "19.59"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 55,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 56,
+       "arr": "20.01",
+       "dep": "20.01"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 57,
+       "arr": "20.02",
+       "dep": "20.02"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 58,
+       "arr": "20.03",
+       "dep": "20.03"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 59,
+       "arr": "20.04",
+       "dep": "20.04"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 60,
+       "arr": "20.05",
+       "dep": "20.05"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 425)",
+       "idx": 61,
+       "arr": "20.06",
+       "dep": "20.06"
+      },
+      {
+       "stop": "GELA (Via Venezia, 558)",
+       "idx": 62,
+       "arr": "20.07",
+       "dep": "20.07"
+      },
+      {
+       "stop": "GELA (Via Licata fronte 16)",
+       "idx": 63,
+       "arr": "20.08",
+       "dep": "20.08"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza (fronte 16))",
+       "idx": 64,
+       "arr": "20.10",
+       "dep": "20.10"
+      },
+      {
+       "stop": "GELA (Via Europa fronte 119 (Liceo Scienze Umane))",
+       "idx": 65,
+       "arr": "20.12",
+       "dep": "20.12"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli fronte 138)",
+       "idx": 66,
+       "arr": "20.13",
+       "dep": "20.13"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 67,
+       "arr": "20.14",
+       "dep": "20.14"
+      },
+      {
+       "stop": "GELA (Piazza Lagrange)",
+       "idx": 68,
+       "arr": "20.15",
+       "dep": "20.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "004003",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11004_11",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Lagrange)",
+       "idx": 0,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 1,
+       "arr": "10.31",
+       "dep": "10.31"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 2,
+       "arr": "10.32",
+       "dep": "10.32"
+      },
+      {
+       "stop": "GELA (Via Emanuele Morselli (Piazza Giordano))",
+       "idx": 3,
+       "arr": "10.33",
+       "dep": "10.33"
+      },
+      {
+       "stop": "GELA (Via Europa 93)",
+       "idx": 4,
+       "arr": "10.33",
+       "dep": "10.33"
+      },
+      {
+       "stop": "GELA (Via Europa 51)",
+       "idx": 5,
+       "arr": "10.34",
+       "dep": "10.34"
+      },
+      {
+       "stop": "GELA (Via Palazzi 134)",
+       "idx": 6,
+       "arr": "10.36",
+       "dep": "10.36"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 194)",
+       "idx": 7,
+       "arr": "10.37",
+       "dep": "10.37"
+      },
+      {
+       "stop": "GELA (Via Appia, 19 (fronte chiesa))",
+       "idx": 8,
+       "arr": "10.39",
+       "dep": "10.39"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 9,
+       "arr": "10.39",
+       "dep": "10.39"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 109)",
+       "idx": 10,
+       "arr": "10.40",
+       "dep": "10.40"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 11,
+       "arr": "10.41",
+       "dep": "10.41"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 12,
+       "arr": "10.42",
+       "dep": "10.42"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 13,
+       "arr": "10.43",
+       "dep": "10.43"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 14,
+       "arr": "10.44",
+       "dep": "10.44"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 15,
+       "arr": "10.45",
+       "dep": "10.45"
+      },
+      {
+       "stop": "GELA (Via Butera, 158)",
+       "idx": 16,
+       "arr": "10.46",
+       "dep": "10.46"
+      },
+      {
+       "stop": "GELA (Via Butera, 174)",
+       "idx": 17,
+       "arr": "10.47",
+       "dep": "10.47"
+      },
+      {
+       "stop": "GELA (Via Butera, 196)",
+       "idx": 18,
+       "arr": "10.48",
+       "dep": "10.48"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 19,
+       "arr": "10.49",
+       "dep": "10.49"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 20,
+       "arr": "10.50",
+       "dep": "10.50"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 21,
+       "arr": "10.51",
+       "dep": "10.51"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 22,
+       "arr": "10.52",
+       "dep": "10.52"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 29)",
+       "idx": 23,
+       "arr": "10.54",
+       "dep": "10.54"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 52)",
+       "idx": 24,
+       "arr": "10.55",
+       "dep": "10.55"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte Piazza Masaccio)",
+       "idx": 25,
+       "arr": "10.56",
+       "dep": "10.56"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 44)",
+       "idx": 26,
+       "arr": "10.57",
+       "dep": "10.57"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 27,
+       "arr": "10.58",
+       "dep": "10.58"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 7)",
+       "idx": 28,
+       "arr": "10.59",
+       "dep": "10.59"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 354)",
+       "idx": 29,
+       "arr": "11.01",
+       "dep": "11.01"
+      },
+      {
+       "stop": "GELA (Via Venezia, 313)",
+       "idx": 30,
+       "arr": "11.03",
+       "dep": "11.03"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 262)",
+       "idx": 31,
+       "arr": "11.04",
+       "dep": "11.04"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 220)",
+       "idx": 32,
+       "arr": "11.05",
+       "dep": "11.05"
+      },
+      {
+       "stop": "GELA (Via Tevere, 149)",
+       "idx": 33,
+       "arr": "11.06",
+       "dep": "11.06"
+      },
+      {
+       "stop": "GELA (Piazza Enrico Mattei)",
+       "idx": 34,
+       "arr": "11.08",
+       "dep": "11.08"
+      },
+      {
+       "stop": "GELA (Via Tevere fronte 171)",
+       "idx": 35,
+       "arr": "11.09",
+       "dep": "11.09"
+      },
+      {
+       "stop": "GELA (Via Venezia, 220)",
+       "idx": 36,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "GELA (Via Venezia, 262)",
+       "idx": 37,
+       "arr": "11.11",
+       "dep": "11.11"
+      },
+      {
+       "stop": "GELA (Via Venezia, 300)",
+       "idx": 38,
+       "arr": "11.12",
+       "dep": "11.12"
+      },
+      {
+       "stop": "GELA (Via Venezia, 354)",
+       "idx": 39,
+       "arr": "11.13",
+       "dep": "11.13"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte 7)",
+       "idx": 40,
+       "arr": "11.15",
+       "dep": "11.15"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 41,
+       "arr": "11.16",
+       "dep": "11.16"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 46)",
+       "idx": 42,
+       "arr": "11.17",
+       "dep": "11.17"
+      },
+      {
+       "stop": "GELA (Piazza Masaccio)",
+       "idx": 43,
+       "arr": "11.18",
+       "dep": "11.18"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 52)",
+       "idx": 44,
+       "arr": "11.19",
+       "dep": "11.19"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 29)",
+       "idx": 45,
+       "arr": "11.20",
+       "dep": "11.20"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 46,
+       "arr": "11.21",
+       "dep": "11.21"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 47,
+       "arr": "11.22",
+       "dep": "11.22"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 48,
+       "arr": "11.23",
+       "dep": "11.23"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 49,
+       "arr": "11.24",
+       "dep": "11.24"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 192)",
+       "idx": 50,
+       "arr": "11.26",
+       "dep": "11.26"
+      },
+      {
+       "stop": "GELA (Via Butera, 171)",
+       "idx": 51,
+       "arr": "11.27",
+       "dep": "11.27"
+      },
+      {
+       "stop": "GELA (Via Butera Franzy's shop)",
+       "idx": 52,
+       "arr": "11.27",
+       "dep": "11.27"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 84)",
+       "idx": 53,
+       "arr": "11.28",
+       "dep": "11.28"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 17)",
+       "idx": 54,
+       "arr": "11.29",
+       "dep": "11.29"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 55,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 56,
+       "arr": "11.31",
+       "dep": "11.31"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 57,
+       "arr": "11.32",
+       "dep": "11.32"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 58,
+       "arr": "11.33",
+       "dep": "11.33"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 59,
+       "arr": "11.34",
+       "dep": "11.34"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 60,
+       "arr": "11.35",
+       "dep": "11.35"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 425)",
+       "idx": 61,
+       "arr": "11.36",
+       "dep": "11.36"
+      },
+      {
+       "stop": "GELA (Via Venezia, 558)",
+       "idx": 62,
+       "arr": "11.37",
+       "dep": "11.37"
+      },
+      {
+       "stop": "GELA (Via Licata fronte 16)",
+       "idx": 63,
+       "arr": "11.38",
+       "dep": "11.38"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza (fronte 16))",
+       "idx": 64,
+       "arr": "11.40",
+       "dep": "11.40"
+      },
+      {
+       "stop": "GELA (Via Europa fronte 119 (Liceo Scienze Umane))",
+       "idx": 65,
+       "arr": "11.42",
+       "dep": "11.42"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli fronte 138)",
+       "idx": 66,
+       "arr": "11.43",
+       "dep": "11.43"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 67,
+       "arr": "11.44",
+       "dep": "11.44"
+      },
+      {
+       "stop": "GELA (Piazza Lagrange)",
+       "idx": 68,
+       "arr": "11.45",
+       "dep": "11.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "004006",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11004_11",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Lagrange)",
+       "idx": 0,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 1,
+       "arr": "14.31",
+       "dep": "14.31"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 2,
+       "arr": "14.32",
+       "dep": "14.32"
+      },
+      {
+       "stop": "GELA (Via Emanuele Morselli (Piazza Giordano))",
+       "idx": 3,
+       "arr": "14.33",
+       "dep": "14.33"
+      },
+      {
+       "stop": "GELA (Via Europa 93)",
+       "idx": 4,
+       "arr": "14.33",
+       "dep": "14.33"
+      },
+      {
+       "stop": "GELA (Via Europa 51)",
+       "idx": 5,
+       "arr": "14.34",
+       "dep": "14.34"
+      },
+      {
+       "stop": "GELA (Via Palazzi 134)",
+       "idx": 6,
+       "arr": "14.36",
+       "dep": "14.36"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 194)",
+       "idx": 7,
+       "arr": "14.37",
+       "dep": "14.37"
+      },
+      {
+       "stop": "GELA (Via Appia, 19 (fronte chiesa))",
+       "idx": 8,
+       "arr": "14.39",
+       "dep": "14.39"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 9,
+       "arr": "14.39",
+       "dep": "14.39"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 109)",
+       "idx": 10,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 11,
+       "arr": "14.41",
+       "dep": "14.41"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 12,
+       "arr": "14.42",
+       "dep": "14.42"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 13,
+       "arr": "14.43",
+       "dep": "14.43"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 14,
+       "arr": "14.44",
+       "dep": "14.44"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 15,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "GELA (Via Butera, 158)",
+       "idx": 16,
+       "arr": "14.46",
+       "dep": "14.46"
+      },
+      {
+       "stop": "GELA (Via Butera, 174)",
+       "idx": 17,
+       "arr": "14.47",
+       "dep": "14.47"
+      },
+      {
+       "stop": "GELA (Via Butera, 196)",
+       "idx": 18,
+       "arr": "14.48",
+       "dep": "14.48"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 19,
+       "arr": "14.49",
+       "dep": "14.49"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 20,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 21,
+       "arr": "14.51",
+       "dep": "14.51"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 22,
+       "arr": "14.52",
+       "dep": "14.52"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 29)",
+       "idx": 23,
+       "arr": "14.54",
+       "dep": "14.54"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 52)",
+       "idx": 24,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte Piazza Masaccio)",
+       "idx": 25,
+       "arr": "14.56",
+       "dep": "14.56"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 44)",
+       "idx": 26,
+       "arr": "14.57",
+       "dep": "14.57"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 27,
+       "arr": "14.58",
+       "dep": "14.58"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 7)",
+       "idx": 28,
+       "arr": "14.59",
+       "dep": "14.59"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 354)",
+       "idx": 29,
+       "arr": "15.01",
+       "dep": "15.01"
+      },
+      {
+       "stop": "GELA (Via Venezia, 313)",
+       "idx": 30,
+       "arr": "15.03",
+       "dep": "15.03"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 262)",
+       "idx": 31,
+       "arr": "15.04",
+       "dep": "15.04"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 220)",
+       "idx": 32,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "GELA (Via Tevere, 149)",
+       "idx": 33,
+       "arr": "15.06",
+       "dep": "15.06"
+      },
+      {
+       "stop": "GELA (Piazza Enrico Mattei)",
+       "idx": 34,
+       "arr": "15.08",
+       "dep": "15.08"
+      },
+      {
+       "stop": "GELA (Via Tevere fronte 171)",
+       "idx": 35,
+       "arr": "15.09",
+       "dep": "15.09"
+      },
+      {
+       "stop": "GELA (Via Venezia, 220)",
+       "idx": 36,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "GELA (Via Venezia, 262)",
+       "idx": 37,
+       "arr": "15.11",
+       "dep": "15.11"
+      },
+      {
+       "stop": "GELA (Via Venezia, 300)",
+       "idx": 38,
+       "arr": "15.12",
+       "dep": "15.12"
+      },
+      {
+       "stop": "GELA (Via Venezia, 354)",
+       "idx": 39,
+       "arr": "15.13",
+       "dep": "15.13"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte 7)",
+       "idx": 40,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 41,
+       "arr": "15.16",
+       "dep": "15.16"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 46)",
+       "idx": 42,
+       "arr": "15.17",
+       "dep": "15.17"
+      },
+      {
+       "stop": "GELA (Piazza Masaccio)",
+       "idx": 43,
+       "arr": "15.18",
+       "dep": "15.18"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 52)",
+       "idx": 44,
+       "arr": "15.19",
+       "dep": "15.19"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 29)",
+       "idx": 45,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 46,
+       "arr": "15.21",
+       "dep": "15.21"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 47,
+       "arr": "15.22",
+       "dep": "15.22"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 48,
+       "arr": "15.23",
+       "dep": "15.23"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 49,
+       "arr": "15.24",
+       "dep": "15.24"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 192)",
+       "idx": 50,
+       "arr": "15.26",
+       "dep": "15.26"
+      },
+      {
+       "stop": "GELA (Via Butera, 171)",
+       "idx": 51,
+       "arr": "15.27",
+       "dep": "15.27"
+      },
+      {
+       "stop": "GELA (Via Butera Franzy's shop)",
+       "idx": 52,
+       "arr": "15.27",
+       "dep": "15.27"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 84)",
+       "idx": 53,
+       "arr": "15.28",
+       "dep": "15.28"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 17)",
+       "idx": 54,
+       "arr": "15.29",
+       "dep": "15.29"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 55,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 56,
+       "arr": "15.31",
+       "dep": "15.31"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 57,
+       "arr": "15.32",
+       "dep": "15.32"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 58,
+       "arr": "15.33",
+       "dep": "15.33"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 59,
+       "arr": "15.34",
+       "dep": "15.34"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 60,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 425)",
+       "idx": 61,
+       "arr": "15.36",
+       "dep": "15.36"
+      },
+      {
+       "stop": "GELA (Via Venezia, 558)",
+       "idx": 62,
+       "arr": "15.37",
+       "dep": "15.37"
+      },
+      {
+       "stop": "GELA (Via Licata fronte 16)",
+       "idx": 63,
+       "arr": "15.38",
+       "dep": "15.38"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza (fronte 16))",
+       "idx": 64,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "GELA (Via Europa fronte 119 (Liceo Scienze Umane))",
+       "idx": 65,
+       "arr": "15.42",
+       "dep": "15.42"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli fronte 138)",
+       "idx": 66,
+       "arr": "15.43",
+       "dep": "15.43"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 67,
+       "arr": "15.44",
+       "dep": "15.44"
+      },
+      {
+       "stop": "GELA (Piazza Lagrange)",
+       "idx": 68,
+       "arr": "15.45",
+       "dep": "15.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "004001",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11004_11",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Lagrange)",
+       "idx": 0,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 1,
+       "arr": "7.31",
+       "dep": "7.31"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 2,
+       "arr": "7.32",
+       "dep": "7.32"
+      },
+      {
+       "stop": "GELA (Via Emanuele Morselli (Piazza Giordano))",
+       "idx": 3,
+       "arr": "7.33",
+       "dep": "7.33"
+      },
+      {
+       "stop": "GELA (Via Europa 93)",
+       "idx": 4,
+       "arr": "7.33",
+       "dep": "7.33"
+      },
+      {
+       "stop": "GELA (Via Europa 51)",
+       "idx": 5,
+       "arr": "7.34",
+       "dep": "7.34"
+      },
+      {
+       "stop": "GELA (Via Palazzi 134)",
+       "idx": 6,
+       "arr": "7.36",
+       "dep": "7.36"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 194)",
+       "idx": 7,
+       "arr": "7.37",
+       "dep": "7.37"
+      },
+      {
+       "stop": "GELA (Via Appia, 19 (fronte chiesa))",
+       "idx": 8,
+       "arr": "7.39",
+       "dep": "7.39"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 9,
+       "arr": "7.39",
+       "dep": "7.39"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 109)",
+       "idx": 10,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 11,
+       "arr": "7.41",
+       "dep": "7.41"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 12,
+       "arr": "7.42",
+       "dep": "7.42"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 13,
+       "arr": "7.43",
+       "dep": "7.43"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 14,
+       "arr": "7.44",
+       "dep": "7.44"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 15,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "GELA (Via Butera, 158)",
+       "idx": 16,
+       "arr": "7.46",
+       "dep": "7.46"
+      },
+      {
+       "stop": "GELA (Via Butera, 174)",
+       "idx": 17,
+       "arr": "7.47",
+       "dep": "7.47"
+      },
+      {
+       "stop": "GELA (Via Butera, 196)",
+       "idx": 18,
+       "arr": "7.48",
+       "dep": "7.48"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 19,
+       "arr": "7.49",
+       "dep": "7.49"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 20,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 21,
+       "arr": "7.51",
+       "dep": "7.51"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 22,
+       "arr": "7.52",
+       "dep": "7.52"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 29)",
+       "idx": 23,
+       "arr": "7.54",
+       "dep": "7.54"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 52)",
+       "idx": 24,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte Piazza Masaccio)",
+       "idx": 25,
+       "arr": "7.56",
+       "dep": "7.56"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 44)",
+       "idx": 26,
+       "arr": "7.57",
+       "dep": "7.57"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 27,
+       "arr": "7.58",
+       "dep": "7.58"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 7)",
+       "idx": 28,
+       "arr": "7.59",
+       "dep": "7.59"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 354)",
+       "idx": 29,
+       "arr": "8.01",
+       "dep": "8.01"
+      },
+      {
+       "stop": "GELA (Via Venezia, 313)",
+       "idx": 30,
+       "arr": "8.03",
+       "dep": "8.03"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 262)",
+       "idx": 31,
+       "arr": "8.04",
+       "dep": "8.04"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 220)",
+       "idx": 32,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "GELA (Via Tevere, 149)",
+       "idx": 33,
+       "arr": "8.06",
+       "dep": "8.06"
+      },
+      {
+       "stop": "GELA (Piazza Enrico Mattei)",
+       "idx": 34,
+       "arr": "8.08",
+       "dep": "8.08"
+      },
+      {
+       "stop": "GELA (Via Tevere fronte 171)",
+       "idx": 35,
+       "arr": "8.09",
+       "dep": "8.09"
+      },
+      {
+       "stop": "GELA (Via Venezia, 220)",
+       "idx": 36,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "GELA (Via Venezia, 262)",
+       "idx": 37,
+       "arr": "8.11",
+       "dep": "8.11"
+      },
+      {
+       "stop": "GELA (Via Venezia, 300)",
+       "idx": 38,
+       "arr": "8.12",
+       "dep": "8.12"
+      },
+      {
+       "stop": "GELA (Via Venezia, 354)",
+       "idx": 39,
+       "arr": "8.13",
+       "dep": "8.13"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte 7)",
+       "idx": 40,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 41,
+       "arr": "8.16",
+       "dep": "8.16"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 46)",
+       "idx": 42,
+       "arr": "8.17",
+       "dep": "8.17"
+      },
+      {
+       "stop": "GELA (Piazza Masaccio)",
+       "idx": 43,
+       "arr": "8.18",
+       "dep": "8.18"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 52)",
+       "idx": 44,
+       "arr": "8.19",
+       "dep": "8.19"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 29)",
+       "idx": 45,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 46,
+       "arr": "8.21",
+       "dep": "8.21"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 47,
+       "arr": "8.22",
+       "dep": "8.22"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 48,
+       "arr": "8.23",
+       "dep": "8.23"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 49,
+       "arr": "8.24",
+       "dep": "8.24"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 192)",
+       "idx": 50,
+       "arr": "8.26",
+       "dep": "8.26"
+      },
+      {
+       "stop": "GELA (Via Butera, 171)",
+       "idx": 51,
+       "arr": "8.27",
+       "dep": "8.27"
+      },
+      {
+       "stop": "GELA (Via Butera Franzy's shop)",
+       "idx": 52,
+       "arr": "8.27",
+       "dep": "8.27"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 84)",
+       "idx": 53,
+       "arr": "8.28",
+       "dep": "8.28"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 17)",
+       "idx": 54,
+       "arr": "8.29",
+       "dep": "8.29"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 55,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 56,
+       "arr": "8.31",
+       "dep": "8.31"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 57,
+       "arr": "8.32",
+       "dep": "8.32"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 58,
+       "arr": "8.33",
+       "dep": "8.33"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 59,
+       "arr": "8.34",
+       "dep": "8.34"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 60,
+       "arr": "8.35",
+       "dep": "8.35"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 425)",
+       "idx": 61,
+       "arr": "8.36",
+       "dep": "8.36"
+      },
+      {
+       "stop": "GELA (Via Venezia, 558)",
+       "idx": 62,
+       "arr": "8.37",
+       "dep": "8.37"
+      },
+      {
+       "stop": "GELA (Via Licata fronte 16)",
+       "idx": 63,
+       "arr": "8.38",
+       "dep": "8.38"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza (fronte 16))",
+       "idx": 64,
+       "arr": "8.40",
+       "dep": "8.40"
+      },
+      {
+       "stop": "GELA (Via Europa fronte 119 (Liceo Scienze Umane))",
+       "idx": 65,
+       "arr": "8.42",
+       "dep": "8.42"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli fronte 138)",
+       "idx": 66,
+       "arr": "8.43",
+       "dep": "8.43"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 67,
+       "arr": "8.44",
+       "dep": "8.44"
+      },
+      {
+       "stop": "GELA (Piazza Lagrange)",
+       "idx": 68,
+       "arr": "8.45",
+       "dep": "8.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "004007",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11004_11",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Lagrange)",
+       "idx": 0,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 1,
+       "arr": "16.01",
+       "dep": "16.01"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 2,
+       "arr": "16.02",
+       "dep": "16.02"
+      },
+      {
+       "stop": "GELA (Via Emanuele Morselli (Piazza Giordano))",
+       "idx": 3,
+       "arr": "16.03",
+       "dep": "16.03"
+      },
+      {
+       "stop": "GELA (Via Europa 93)",
+       "idx": 4,
+       "arr": "16.03",
+       "dep": "16.03"
+      },
+      {
+       "stop": "GELA (Via Europa 51)",
+       "idx": 5,
+       "arr": "16.04",
+       "dep": "16.04"
+      },
+      {
+       "stop": "GELA (Via Palazzi 134)",
+       "idx": 6,
+       "arr": "16.06",
+       "dep": "16.06"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 194)",
+       "idx": 7,
+       "arr": "16.07",
+       "dep": "16.07"
+      },
+      {
+       "stop": "GELA (Via Appia, 19 (fronte chiesa))",
+       "idx": 8,
+       "arr": "16.09",
+       "dep": "16.09"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 9,
+       "arr": "16.09",
+       "dep": "16.09"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 109)",
+       "idx": 10,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 11,
+       "arr": "16.11",
+       "dep": "16.11"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 12,
+       "arr": "16.12",
+       "dep": "16.12"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 13,
+       "arr": "16.13",
+       "dep": "16.13"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 14,
+       "arr": "16.14",
+       "dep": "16.14"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 15,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "GELA (Via Butera, 158)",
+       "idx": 16,
+       "arr": "16.16",
+       "dep": "16.16"
+      },
+      {
+       "stop": "GELA (Via Butera, 174)",
+       "idx": 17,
+       "arr": "16.17",
+       "dep": "16.17"
+      },
+      {
+       "stop": "GELA (Via Butera, 196)",
+       "idx": 18,
+       "arr": "16.18",
+       "dep": "16.18"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 19,
+       "arr": "16.19",
+       "dep": "16.19"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 20,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 21,
+       "arr": "16.21",
+       "dep": "16.21"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 22,
+       "arr": "16.22",
+       "dep": "16.22"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 29)",
+       "idx": 23,
+       "arr": "16.24",
+       "dep": "16.24"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 52)",
+       "idx": 24,
+       "arr": "16.25",
+       "dep": "16.25"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte Piazza Masaccio)",
+       "idx": 25,
+       "arr": "16.26",
+       "dep": "16.26"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 44)",
+       "idx": 26,
+       "arr": "16.27",
+       "dep": "16.27"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 27,
+       "arr": "16.28",
+       "dep": "16.28"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 7)",
+       "idx": 28,
+       "arr": "16.29",
+       "dep": "16.29"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 354)",
+       "idx": 29,
+       "arr": "16.31",
+       "dep": "16.31"
+      },
+      {
+       "stop": "GELA (Via Venezia, 313)",
+       "idx": 30,
+       "arr": "16.33",
+       "dep": "16.33"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 262)",
+       "idx": 31,
+       "arr": "16.34",
+       "dep": "16.34"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 220)",
+       "idx": 32,
+       "arr": "16.35",
+       "dep": "16.35"
+      },
+      {
+       "stop": "GELA (Via Tevere, 149)",
+       "idx": 33,
+       "arr": "16.36",
+       "dep": "16.36"
+      },
+      {
+       "stop": "GELA (Piazza Enrico Mattei)",
+       "idx": 34,
+       "arr": "16.38",
+       "dep": "16.38"
+      },
+      {
+       "stop": "GELA (Via Tevere fronte 171)",
+       "idx": 35,
+       "arr": "16.39",
+       "dep": "16.39"
+      },
+      {
+       "stop": "GELA (Via Venezia, 220)",
+       "idx": 36,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "GELA (Via Venezia, 262)",
+       "idx": 37,
+       "arr": "16.41",
+       "dep": "16.41"
+      },
+      {
+       "stop": "GELA (Via Venezia, 300)",
+       "idx": 38,
+       "arr": "16.42",
+       "dep": "16.42"
+      },
+      {
+       "stop": "GELA (Via Venezia, 354)",
+       "idx": 39,
+       "arr": "16.43",
+       "dep": "16.43"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte 7)",
+       "idx": 40,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 41,
+       "arr": "16.46",
+       "dep": "16.46"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 46)",
+       "idx": 42,
+       "arr": "16.47",
+       "dep": "16.47"
+      },
+      {
+       "stop": "GELA (Piazza Masaccio)",
+       "idx": 43,
+       "arr": "16.48",
+       "dep": "16.48"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 52)",
+       "idx": 44,
+       "arr": "16.49",
+       "dep": "16.49"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 29)",
+       "idx": 45,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 46,
+       "arr": "16.51",
+       "dep": "16.51"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 47,
+       "arr": "16.52",
+       "dep": "16.52"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 48,
+       "arr": "16.53",
+       "dep": "16.53"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 49,
+       "arr": "16.54",
+       "dep": "16.54"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 192)",
+       "idx": 50,
+       "arr": "16.56",
+       "dep": "16.56"
+      },
+      {
+       "stop": "GELA (Via Butera, 171)",
+       "idx": 51,
+       "arr": "16.57",
+       "dep": "16.57"
+      },
+      {
+       "stop": "GELA (Via Butera Franzy's shop)",
+       "idx": 52,
+       "arr": "16.57",
+       "dep": "16.57"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 84)",
+       "idx": 53,
+       "arr": "16.58",
+       "dep": "16.58"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 17)",
+       "idx": 54,
+       "arr": "16.59",
+       "dep": "16.59"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 55,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 56,
+       "arr": "17.01",
+       "dep": "17.01"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 57,
+       "arr": "17.02",
+       "dep": "17.02"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 58,
+       "arr": "17.03",
+       "dep": "17.03"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 59,
+       "arr": "17.04",
+       "dep": "17.04"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 60,
+       "arr": "17.05",
+       "dep": "17.05"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 425)",
+       "idx": 61,
+       "arr": "17.06",
+       "dep": "17.06"
+      },
+      {
+       "stop": "GELA (Via Venezia, 558)",
+       "idx": 62,
+       "arr": "17.07",
+       "dep": "17.07"
+      },
+      {
+       "stop": "GELA (Via Licata fronte 16)",
+       "idx": 63,
+       "arr": "17.08",
+       "dep": "17.08"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza (fronte 16))",
+       "idx": 64,
+       "arr": "17.10",
+       "dep": "17.10"
+      },
+      {
+       "stop": "GELA (Via Europa fronte 119 (Liceo Scienze Umane))",
+       "idx": 65,
+       "arr": "17.12",
+       "dep": "17.12"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli fronte 138)",
+       "idx": 66,
+       "arr": "17.13",
+       "dep": "17.13"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 67,
+       "arr": "17.14",
+       "dep": "17.14"
+      },
+      {
+       "stop": "GELA (Piazza Lagrange)",
+       "idx": 68,
+       "arr": "17.15",
+       "dep": "17.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "004005",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11004_11",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Lagrange)",
+       "idx": 0,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 1,
+       "arr": "13.01",
+       "dep": "13.01"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 2,
+       "arr": "13.02",
+       "dep": "13.02"
+      },
+      {
+       "stop": "GELA (Via Emanuele Morselli (Piazza Giordano))",
+       "idx": 3,
+       "arr": "13.03",
+       "dep": "13.03"
+      },
+      {
+       "stop": "GELA (Via Europa 93)",
+       "idx": 4,
+       "arr": "13.03",
+       "dep": "13.03"
+      },
+      {
+       "stop": "GELA (Via Europa 51)",
+       "idx": 5,
+       "arr": "13.04",
+       "dep": "13.04"
+      },
+      {
+       "stop": "GELA (Via Palazzi 134)",
+       "idx": 6,
+       "arr": "13.06",
+       "dep": "13.06"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 194)",
+       "idx": 7,
+       "arr": "13.07",
+       "dep": "13.07"
+      },
+      {
+       "stop": "GELA (Via Appia, 19 (fronte chiesa))",
+       "idx": 8,
+       "arr": "13.09",
+       "dep": "13.09"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 9,
+       "arr": "13.09",
+       "dep": "13.09"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 109)",
+       "idx": 10,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 11,
+       "arr": "13.11",
+       "dep": "13.11"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 12,
+       "arr": "13.12",
+       "dep": "13.12"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 13,
+       "arr": "13.13",
+       "dep": "13.13"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 14,
+       "arr": "13.14",
+       "dep": "13.14"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 15,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "GELA (Via Butera, 158)",
+       "idx": 16,
+       "arr": "13.16",
+       "dep": "13.16"
+      },
+      {
+       "stop": "GELA (Via Butera, 174)",
+       "idx": 17,
+       "arr": "13.17",
+       "dep": "13.17"
+      },
+      {
+       "stop": "GELA (Via Butera, 196)",
+       "idx": 18,
+       "arr": "13.18",
+       "dep": "13.18"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 19,
+       "arr": "13.19",
+       "dep": "13.19"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 20,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 21,
+       "arr": "13.21",
+       "dep": "13.21"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 22,
+       "arr": "13.22",
+       "dep": "13.22"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 29)",
+       "idx": 23,
+       "arr": "13.24",
+       "dep": "13.24"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 52)",
+       "idx": 24,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte Piazza Masaccio)",
+       "idx": 25,
+       "arr": "13.26",
+       "dep": "13.26"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 44)",
+       "idx": 26,
+       "arr": "13.27",
+       "dep": "13.27"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 27,
+       "arr": "13.28",
+       "dep": "13.28"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 7)",
+       "idx": 28,
+       "arr": "13.29",
+       "dep": "13.29"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 354)",
+       "idx": 29,
+       "arr": "13.31",
+       "dep": "13.31"
+      },
+      {
+       "stop": "GELA (Via Venezia, 313)",
+       "idx": 30,
+       "arr": "13.33",
+       "dep": "13.33"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 262)",
+       "idx": 31,
+       "arr": "13.34",
+       "dep": "13.34"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 220)",
+       "idx": 32,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "GELA (Via Tevere, 149)",
+       "idx": 33,
+       "arr": "13.36",
+       "dep": "13.36"
+      },
+      {
+       "stop": "GELA (Piazza Enrico Mattei)",
+       "idx": 34,
+       "arr": "13.38",
+       "dep": "13.38"
+      },
+      {
+       "stop": "GELA (Via Tevere fronte 171)",
+       "idx": 35,
+       "arr": "13.39",
+       "dep": "13.39"
+      },
+      {
+       "stop": "GELA (Via Venezia, 220)",
+       "idx": 36,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "GELA (Via Venezia, 262)",
+       "idx": 37,
+       "arr": "13.41",
+       "dep": "13.41"
+      },
+      {
+       "stop": "GELA (Via Venezia, 300)",
+       "idx": 38,
+       "arr": "13.42",
+       "dep": "13.42"
+      },
+      {
+       "stop": "GELA (Via Venezia, 354)",
+       "idx": 39,
+       "arr": "13.43",
+       "dep": "13.43"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte 7)",
+       "idx": 40,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 41,
+       "arr": "13.46",
+       "dep": "13.46"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 46)",
+       "idx": 42,
+       "arr": "13.47",
+       "dep": "13.47"
+      },
+      {
+       "stop": "GELA (Piazza Masaccio)",
+       "idx": 43,
+       "arr": "13.48",
+       "dep": "13.48"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 52)",
+       "idx": 44,
+       "arr": "13.49",
+       "dep": "13.49"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 29)",
+       "idx": 45,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 46,
+       "arr": "13.51",
+       "dep": "13.51"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 47,
+       "arr": "13.52",
+       "dep": "13.52"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 48,
+       "arr": "13.53",
+       "dep": "13.53"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 49,
+       "arr": "13.54",
+       "dep": "13.54"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 192)",
+       "idx": 50,
+       "arr": "13.56",
+       "dep": "13.56"
+      },
+      {
+       "stop": "GELA (Via Butera, 171)",
+       "idx": 51,
+       "arr": "13.57",
+       "dep": "13.57"
+      },
+      {
+       "stop": "GELA (Via Butera Franzy's shop)",
+       "idx": 52,
+       "arr": "13.57",
+       "dep": "13.57"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 84)",
+       "idx": 53,
+       "arr": "13.58",
+       "dep": "13.58"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 17)",
+       "idx": 54,
+       "arr": "13.59",
+       "dep": "13.59"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 55,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 56,
+       "arr": "14.01",
+       "dep": "14.01"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 57,
+       "arr": "14.02",
+       "dep": "14.02"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 58,
+       "arr": "14.03",
+       "dep": "14.03"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 59,
+       "arr": "14.04",
+       "dep": "14.04"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 60,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 425)",
+       "idx": 61,
+       "arr": "14.06",
+       "dep": "14.06"
+      },
+      {
+       "stop": "GELA (Via Venezia, 558)",
+       "idx": 62,
+       "arr": "14.07",
+       "dep": "14.07"
+      },
+      {
+       "stop": "GELA (Via Licata fronte 16)",
+       "idx": 63,
+       "arr": "14.08",
+       "dep": "14.08"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza (fronte 16))",
+       "idx": 64,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "GELA (Via Europa fronte 119 (Liceo Scienze Umane))",
+       "idx": 65,
+       "arr": "14.12",
+       "dep": "14.12"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli fronte 138)",
+       "idx": 66,
+       "arr": "14.13",
+       "dep": "14.13"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 67,
+       "arr": "14.14",
+       "dep": "14.14"
+      },
+      {
+       "stop": "GELA (Piazza Lagrange)",
+       "idx": 68,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "004017",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11004_12",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Enrico Mattei)",
+       "idx": 0,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "GELA (Via Tevere fronte 171)",
+       "idx": 1,
+       "arr": "17.31",
+       "dep": "17.31"
+      },
+      {
+       "stop": "GELA (Via Venezia, 220)",
+       "idx": 2,
+       "arr": "17.32",
+       "dep": "17.32"
+      },
+      {
+       "stop": "GELA (Via Venezia, 262)",
+       "idx": 3,
+       "arr": "17.33",
+       "dep": "17.33"
+      },
+      {
+       "stop": "GELA (Via Venezia, 300)",
+       "idx": 4,
+       "arr": "17.34",
+       "dep": "17.34"
+      },
+      {
+       "stop": "GELA (Via Venezia, 354)",
+       "idx": 5,
+       "arr": "17.37",
+       "dep": "17.37"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte 7)",
+       "idx": 6,
+       "arr": "17.38",
+       "dep": "17.38"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 7,
+       "arr": "17.39",
+       "dep": "17.39"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 46)",
+       "idx": 8,
+       "arr": "17.40",
+       "dep": "17.40"
+      },
+      {
+       "stop": "GELA (Piazza Masaccio)",
+       "idx": 9,
+       "arr": "17.40",
+       "dep": "17.40"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 52)",
+       "idx": 10,
+       "arr": "17.41",
+       "dep": "17.41"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 29)",
+       "idx": 11,
+       "arr": "17.42",
+       "dep": "17.42"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 12,
+       "arr": "17.43",
+       "dep": "17.43"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 13,
+       "arr": "17.44",
+       "dep": "17.44"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 14,
+       "arr": "17.45",
+       "dep": "17.45"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 15,
+       "arr": "17.46",
+       "dep": "17.46"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 192)",
+       "idx": 16,
+       "arr": "17.47",
+       "dep": "17.47"
+      },
+      {
+       "stop": "GELA (Via Butera, 171)",
+       "idx": 17,
+       "arr": "17.48",
+       "dep": "17.48"
+      },
+      {
+       "stop": "GELA (Via Butera Franzy's shop)",
+       "idx": 18,
+       "arr": "17.49",
+       "dep": "17.49"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 84)",
+       "idx": 19,
+       "arr": "17.50",
+       "dep": "17.50"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 17)",
+       "idx": 20,
+       "arr": "17.51",
+       "dep": "17.51"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 21,
+       "arr": "17.55",
+       "dep": "17.55"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 22,
+       "arr": "17.56",
+       "dep": "17.56"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 23,
+       "arr": "17.57",
+       "dep": "17.57"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 24,
+       "arr": "17.58",
+       "dep": "17.58"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 25,
+       "arr": "17.59",
+       "dep": "17.59"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 26,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 425)",
+       "idx": 27,
+       "arr": "18.01",
+       "dep": "18.01"
+      },
+      {
+       "stop": "GELA (Via Venezia, 558)",
+       "idx": 28,
+       "arr": "18.02",
+       "dep": "18.02"
+      },
+      {
+       "stop": "GELA (Via Licata fronte 16)",
+       "idx": 29,
+       "arr": "18.03",
+       "dep": "18.03"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza (fronte 16))",
+       "idx": 30,
+       "arr": "18.04",
+       "dep": "18.04"
+      },
+      {
+       "stop": "GELA (Via Europa fronte 119 (Liceo Scienze Umane))",
+       "idx": 31,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli fronte 138)",
+       "idx": 32,
+       "arr": "18.06",
+       "dep": "18.06"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 33,
+       "arr": "18.07",
+       "dep": "18.07"
+      },
+      {
+       "stop": "GELA (Piazza Lagrange)",
+       "idx": 34,
+       "arr": "18.08",
+       "dep": "18.08"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 35,
+       "arr": "18.09",
+       "dep": "18.09"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 36,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "GELA (Via Emanuele Morselli (Piazza Giordano))",
+       "idx": 37,
+       "arr": "18.11",
+       "dep": "18.11"
+      },
+      {
+       "stop": "GELA (Via Europa 93)",
+       "idx": 38,
+       "arr": "18.11",
+       "dep": "18.11"
+      },
+      {
+       "stop": "GELA (Via Europa 51)",
+       "idx": 39,
+       "arr": "18.12",
+       "dep": "18.12"
+      },
+      {
+       "stop": "GELA (Via Palazzi 134)",
+       "idx": 40,
+       "arr": "18.13",
+       "dep": "18.13"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 194)",
+       "idx": 41,
+       "arr": "18.14",
+       "dep": "18.14"
+      },
+      {
+       "stop": "GELA (Via Appia, 19 (fronte chiesa))",
+       "idx": 42,
+       "arr": "18.16",
+       "dep": "18.16"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 43,
+       "arr": "18.16",
+       "dep": "18.16"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 109)",
+       "idx": 44,
+       "arr": "18.17",
+       "dep": "18.17"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 45,
+       "arr": "18.18",
+       "dep": "18.18"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 46,
+       "arr": "18.19",
+       "dep": "18.19"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 47,
+       "arr": "18.20",
+       "dep": "18.20"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 48,
+       "arr": "18.21",
+       "dep": "18.21"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 49,
+       "arr": "18.22",
+       "dep": "18.22"
+      },
+      {
+       "stop": "GELA (Via Butera, 158)",
+       "idx": 50,
+       "arr": "18.23",
+       "dep": "18.23"
+      },
+      {
+       "stop": "GELA (Via Butera, 174)",
+       "idx": 51,
+       "arr": "18.24",
+       "dep": "18.24"
+      },
+      {
+       "stop": "GELA (Via Butera, 196)",
+       "idx": 52,
+       "arr": "18.25",
+       "dep": "18.25"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 53,
+       "arr": "18.26",
+       "dep": "18.26"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 54,
+       "arr": "18.27",
+       "dep": "18.27"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 55,
+       "arr": "18.28",
+       "dep": "18.28"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 56,
+       "arr": "18.29",
+       "dep": "18.29"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 29)",
+       "idx": 57,
+       "arr": "18.31",
+       "dep": "18.31"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 52)",
+       "idx": 58,
+       "arr": "18.32",
+       "dep": "18.32"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte Piazza Masaccio)",
+       "idx": 59,
+       "arr": "18.33",
+       "dep": "18.33"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 44)",
+       "idx": 60,
+       "arr": "18.33",
+       "dep": "18.33"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 61,
+       "arr": "18.34",
+       "dep": "18.34"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 7)",
+       "idx": 62,
+       "arr": "18.35",
+       "dep": "18.35"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 354)",
+       "idx": 63,
+       "arr": "18.37",
+       "dep": "18.37"
+      },
+      {
+       "stop": "GELA (Via Venezia, 313)",
+       "idx": 64,
+       "arr": "18.40",
+       "dep": "18.40"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 262)",
+       "idx": 65,
+       "arr": "18.41",
+       "dep": "18.41"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 220)",
+       "idx": 66,
+       "arr": "18.42",
+       "dep": "18.42"
+      },
+      {
+       "stop": "GELA (Via Tevere, 149)",
+       "idx": 67,
+       "arr": "18.43",
+       "dep": "18.43"
+      },
+      {
+       "stop": "GELA (Piazza Enrico Mattei)",
+       "idx": 68,
+       "arr": "18.45",
+       "dep": "18.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "004018",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11004_12",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Enrico Mattei)",
+       "idx": 0,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "GELA (Via Tevere fronte 171)",
+       "idx": 1,
+       "arr": "19.01",
+       "dep": "19.01"
+      },
+      {
+       "stop": "GELA (Via Venezia, 220)",
+       "idx": 2,
+       "arr": "19.02",
+       "dep": "19.02"
+      },
+      {
+       "stop": "GELA (Via Venezia, 262)",
+       "idx": 3,
+       "arr": "19.03",
+       "dep": "19.03"
+      },
+      {
+       "stop": "GELA (Via Venezia, 300)",
+       "idx": 4,
+       "arr": "19.04",
+       "dep": "19.04"
+      },
+      {
+       "stop": "GELA (Via Venezia, 354)",
+       "idx": 5,
+       "arr": "19.07",
+       "dep": "19.07"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte 7)",
+       "idx": 6,
+       "arr": "19.08",
+       "dep": "19.08"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 7,
+       "arr": "19.09",
+       "dep": "19.09"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 46)",
+       "idx": 8,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "GELA (Piazza Masaccio)",
+       "idx": 9,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 52)",
+       "idx": 10,
+       "arr": "19.11",
+       "dep": "19.11"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 29)",
+       "idx": 11,
+       "arr": "19.12",
+       "dep": "19.12"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 12,
+       "arr": "19.13",
+       "dep": "19.13"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 13,
+       "arr": "19.14",
+       "dep": "19.14"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 14,
+       "arr": "19.15",
+       "dep": "19.15"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 15,
+       "arr": "19.16",
+       "dep": "19.16"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 192)",
+       "idx": 16,
+       "arr": "19.17",
+       "dep": "19.17"
+      },
+      {
+       "stop": "GELA (Via Butera, 171)",
+       "idx": 17,
+       "arr": "19.18",
+       "dep": "19.18"
+      },
+      {
+       "stop": "GELA (Via Butera Franzy's shop)",
+       "idx": 18,
+       "arr": "19.19",
+       "dep": "19.19"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 84)",
+       "idx": 19,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 17)",
+       "idx": 20,
+       "arr": "19.21",
+       "dep": "19.21"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 21,
+       "arr": "19.25",
+       "dep": "19.25"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 22,
+       "arr": "19.26",
+       "dep": "19.26"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 23,
+       "arr": "19.27",
+       "dep": "19.27"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 24,
+       "arr": "19.28",
+       "dep": "19.28"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 25,
+       "arr": "19.29",
+       "dep": "19.29"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 26,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 425)",
+       "idx": 27,
+       "arr": "19.31",
+       "dep": "19.31"
+      },
+      {
+       "stop": "GELA (Via Venezia, 558)",
+       "idx": 28,
+       "arr": "19.32",
+       "dep": "19.32"
+      },
+      {
+       "stop": "GELA (Via Licata fronte 16)",
+       "idx": 29,
+       "arr": "19.33",
+       "dep": "19.33"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza (fronte 16))",
+       "idx": 30,
+       "arr": "19.34",
+       "dep": "19.34"
+      },
+      {
+       "stop": "GELA (Via Europa fronte 119 (Liceo Scienze Umane))",
+       "idx": 31,
+       "arr": "19.35",
+       "dep": "19.35"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli fronte 138)",
+       "idx": 32,
+       "arr": "19.36",
+       "dep": "19.36"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 33,
+       "arr": "19.37",
+       "dep": "19.37"
+      },
+      {
+       "stop": "GELA (Piazza Lagrange)",
+       "idx": 34,
+       "arr": "19.38",
+       "dep": "19.38"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 35,
+       "arr": "19.39",
+       "dep": "19.39"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 36,
+       "arr": "19.40",
+       "dep": "19.40"
+      },
+      {
+       "stop": "GELA (Via Emanuele Morselli (Piazza Giordano))",
+       "idx": 37,
+       "arr": "19.41",
+       "dep": "19.41"
+      },
+      {
+       "stop": "GELA (Via Europa 93)",
+       "idx": 38,
+       "arr": "19.41",
+       "dep": "19.41"
+      },
+      {
+       "stop": "GELA (Via Europa 51)",
+       "idx": 39,
+       "arr": "19.42",
+       "dep": "19.42"
+      },
+      {
+       "stop": "GELA (Via Palazzi 134)",
+       "idx": 40,
+       "arr": "19.43",
+       "dep": "19.43"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 194)",
+       "idx": 41,
+       "arr": "19.44",
+       "dep": "19.44"
+      },
+      {
+       "stop": "GELA (Via Appia, 19 (fronte chiesa))",
+       "idx": 42,
+       "arr": "19.46",
+       "dep": "19.46"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 43,
+       "arr": "19.46",
+       "dep": "19.46"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 109)",
+       "idx": 44,
+       "arr": "19.47",
+       "dep": "19.47"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 45,
+       "arr": "19.48",
+       "dep": "19.48"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 46,
+       "arr": "19.49",
+       "dep": "19.49"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 47,
+       "arr": "19.50",
+       "dep": "19.50"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 48,
+       "arr": "19.51",
+       "dep": "19.51"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 49,
+       "arr": "19.52",
+       "dep": "19.52"
+      },
+      {
+       "stop": "GELA (Via Butera, 158)",
+       "idx": 50,
+       "arr": "19.53",
+       "dep": "19.53"
+      },
+      {
+       "stop": "GELA (Via Butera, 174)",
+       "idx": 51,
+       "arr": "19.54",
+       "dep": "19.54"
+      },
+      {
+       "stop": "GELA (Via Butera, 196)",
+       "idx": 52,
+       "arr": "19.55",
+       "dep": "19.55"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 53,
+       "arr": "19.56",
+       "dep": "19.56"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 54,
+       "arr": "19.57",
+       "dep": "19.57"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 55,
+       "arr": "19.58",
+       "dep": "19.58"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 56,
+       "arr": "19.59",
+       "dep": "19.59"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 29)",
+       "idx": 57,
+       "arr": "20.01",
+       "dep": "20.01"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 52)",
+       "idx": 58,
+       "arr": "20.02",
+       "dep": "20.02"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte Piazza Masaccio)",
+       "idx": 59,
+       "arr": "20.03",
+       "dep": "20.03"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 44)",
+       "idx": 60,
+       "arr": "20.03",
+       "dep": "20.03"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 61,
+       "arr": "20.04",
+       "dep": "20.04"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 7)",
+       "idx": 62,
+       "arr": "20.05",
+       "dep": "20.05"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 354)",
+       "idx": 63,
+       "arr": "20.07",
+       "dep": "20.07"
+      },
+      {
+       "stop": "GELA (Via Venezia, 313)",
+       "idx": 64,
+       "arr": "20.10",
+       "dep": "20.10"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 262)",
+       "idx": 65,
+       "arr": "20.11",
+       "dep": "20.11"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 220)",
+       "idx": 66,
+       "arr": "20.12",
+       "dep": "20.12"
+      },
+      {
+       "stop": "GELA (Via Tevere, 149)",
+       "idx": 67,
+       "arr": "20.13",
+       "dep": "20.13"
+      },
+      {
+       "stop": "GELA (Piazza Enrico Mattei)",
+       "idx": 68,
+       "arr": "20.15",
+       "dep": "20.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "004014",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11004_12",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Enrico Mattei)",
+       "idx": 0,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "GELA (Via Tevere fronte 171)",
+       "idx": 1,
+       "arr": "13.01",
+       "dep": "13.01"
+      },
+      {
+       "stop": "GELA (Via Venezia, 220)",
+       "idx": 2,
+       "arr": "13.02",
+       "dep": "13.02"
+      },
+      {
+       "stop": "GELA (Via Venezia, 262)",
+       "idx": 3,
+       "arr": "13.03",
+       "dep": "13.03"
+      },
+      {
+       "stop": "GELA (Via Venezia, 300)",
+       "idx": 4,
+       "arr": "13.04",
+       "dep": "13.04"
+      },
+      {
+       "stop": "GELA (Via Venezia, 354)",
+       "idx": 5,
+       "arr": "13.07",
+       "dep": "13.07"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte 7)",
+       "idx": 6,
+       "arr": "13.08",
+       "dep": "13.08"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 7,
+       "arr": "13.09",
+       "dep": "13.09"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 46)",
+       "idx": 8,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "GELA (Piazza Masaccio)",
+       "idx": 9,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 52)",
+       "idx": 10,
+       "arr": "13.11",
+       "dep": "13.11"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 29)",
+       "idx": 11,
+       "arr": "13.12",
+       "dep": "13.12"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 12,
+       "arr": "13.13",
+       "dep": "13.13"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 13,
+       "arr": "13.14",
+       "dep": "13.14"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 14,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 15,
+       "arr": "13.16",
+       "dep": "13.16"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 192)",
+       "idx": 16,
+       "arr": "13.17",
+       "dep": "13.17"
+      },
+      {
+       "stop": "GELA (Via Butera, 171)",
+       "idx": 17,
+       "arr": "13.18",
+       "dep": "13.18"
+      },
+      {
+       "stop": "GELA (Via Butera Franzy's shop)",
+       "idx": 18,
+       "arr": "13.19",
+       "dep": "13.19"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 84)",
+       "idx": 19,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 17)",
+       "idx": 20,
+       "arr": "13.21",
+       "dep": "13.21"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 21,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 22,
+       "arr": "13.26",
+       "dep": "13.26"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 23,
+       "arr": "13.27",
+       "dep": "13.27"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 24,
+       "arr": "13.28",
+       "dep": "13.28"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 25,
+       "arr": "13.29",
+       "dep": "13.29"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 26,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 425)",
+       "idx": 27,
+       "arr": "13.31",
+       "dep": "13.31"
+      },
+      {
+       "stop": "GELA (Via Venezia, 558)",
+       "idx": 28,
+       "arr": "13.32",
+       "dep": "13.32"
+      },
+      {
+       "stop": "GELA (Via Licata fronte 16)",
+       "idx": 29,
+       "arr": "13.33",
+       "dep": "13.33"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza (fronte 16))",
+       "idx": 30,
+       "arr": "13.34",
+       "dep": "13.34"
+      },
+      {
+       "stop": "GELA (Via Europa fronte 119 (Liceo Scienze Umane))",
+       "idx": 31,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli fronte 138)",
+       "idx": 32,
+       "arr": "13.36",
+       "dep": "13.36"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 33,
+       "arr": "13.37",
+       "dep": "13.37"
+      },
+      {
+       "stop": "GELA (Piazza Lagrange)",
+       "idx": 34,
+       "arr": "13.38",
+       "dep": "13.38"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 35,
+       "arr": "13.39",
+       "dep": "13.39"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 36,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "GELA (Via Emanuele Morselli (Piazza Giordano))",
+       "idx": 37,
+       "arr": "13.41",
+       "dep": "13.41"
+      },
+      {
+       "stop": "GELA (Via Europa 93)",
+       "idx": 38,
+       "arr": "13.41",
+       "dep": "13.41"
+      },
+      {
+       "stop": "GELA (Via Europa 51)",
+       "idx": 39,
+       "arr": "13.42",
+       "dep": "13.42"
+      },
+      {
+       "stop": "GELA (Via Palazzi 134)",
+       "idx": 40,
+       "arr": "13.43",
+       "dep": "13.43"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 194)",
+       "idx": 41,
+       "arr": "13.44",
+       "dep": "13.44"
+      },
+      {
+       "stop": "GELA (Via Appia, 19 (fronte chiesa))",
+       "idx": 42,
+       "arr": "13.46",
+       "dep": "13.46"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 43,
+       "arr": "13.46",
+       "dep": "13.46"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 109)",
+       "idx": 44,
+       "arr": "13.47",
+       "dep": "13.47"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 45,
+       "arr": "13.48",
+       "dep": "13.48"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 46,
+       "arr": "13.49",
+       "dep": "13.49"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 47,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 48,
+       "arr": "13.51",
+       "dep": "13.51"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 49,
+       "arr": "13.52",
+       "dep": "13.52"
+      },
+      {
+       "stop": "GELA (Via Butera, 158)",
+       "idx": 50,
+       "arr": "13.53",
+       "dep": "13.53"
+      },
+      {
+       "stop": "GELA (Via Butera, 174)",
+       "idx": 51,
+       "arr": "13.54",
+       "dep": "13.54"
+      },
+      {
+       "stop": "GELA (Via Butera, 196)",
+       "idx": 52,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 53,
+       "arr": "13.56",
+       "dep": "13.56"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 54,
+       "arr": "13.57",
+       "dep": "13.57"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 55,
+       "arr": "13.58",
+       "dep": "13.58"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 56,
+       "arr": "13.59",
+       "dep": "13.59"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 29)",
+       "idx": 57,
+       "arr": "14.01",
+       "dep": "14.01"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 52)",
+       "idx": 58,
+       "arr": "14.02",
+       "dep": "14.02"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte Piazza Masaccio)",
+       "idx": 59,
+       "arr": "14.03",
+       "dep": "14.03"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 44)",
+       "idx": 60,
+       "arr": "14.03",
+       "dep": "14.03"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 61,
+       "arr": "14.04",
+       "dep": "14.04"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 7)",
+       "idx": 62,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 354)",
+       "idx": 63,
+       "arr": "14.07",
+       "dep": "14.07"
+      },
+      {
+       "stop": "GELA (Via Venezia, 313)",
+       "idx": 64,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 262)",
+       "idx": 65,
+       "arr": "14.11",
+       "dep": "14.11"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 220)",
+       "idx": 66,
+       "arr": "14.12",
+       "dep": "14.12"
+      },
+      {
+       "stop": "GELA (Via Tevere, 149)",
+       "idx": 67,
+       "arr": "14.13",
+       "dep": "14.13"
+      },
+      {
+       "stop": "GELA (Piazza Enrico Mattei)",
+       "idx": 68,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "004016",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11004_12",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Enrico Mattei)",
+       "idx": 0,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "GELA (Via Tevere fronte 171)",
+       "idx": 1,
+       "arr": "16.01",
+       "dep": "16.01"
+      },
+      {
+       "stop": "GELA (Via Venezia, 220)",
+       "idx": 2,
+       "arr": "16.02",
+       "dep": "16.02"
+      },
+      {
+       "stop": "GELA (Via Venezia, 262)",
+       "idx": 3,
+       "arr": "16.03",
+       "dep": "16.03"
+      },
+      {
+       "stop": "GELA (Via Venezia, 300)",
+       "idx": 4,
+       "arr": "16.04",
+       "dep": "16.04"
+      },
+      {
+       "stop": "GELA (Via Venezia, 354)",
+       "idx": 5,
+       "arr": "16.07",
+       "dep": "16.07"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte 7)",
+       "idx": 6,
+       "arr": "16.08",
+       "dep": "16.08"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 7,
+       "arr": "16.09",
+       "dep": "16.09"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 46)",
+       "idx": 8,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "GELA (Piazza Masaccio)",
+       "idx": 9,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 52)",
+       "idx": 10,
+       "arr": "16.11",
+       "dep": "16.11"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 29)",
+       "idx": 11,
+       "arr": "16.12",
+       "dep": "16.12"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 12,
+       "arr": "16.13",
+       "dep": "16.13"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 13,
+       "arr": "16.14",
+       "dep": "16.14"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 14,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 15,
+       "arr": "16.16",
+       "dep": "16.16"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 192)",
+       "idx": 16,
+       "arr": "16.17",
+       "dep": "16.17"
+      },
+      {
+       "stop": "GELA (Via Butera, 171)",
+       "idx": 17,
+       "arr": "16.18",
+       "dep": "16.18"
+      },
+      {
+       "stop": "GELA (Via Butera Franzy's shop)",
+       "idx": 18,
+       "arr": "16.19",
+       "dep": "16.19"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 84)",
+       "idx": 19,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 17)",
+       "idx": 20,
+       "arr": "16.21",
+       "dep": "16.21"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 21,
+       "arr": "16.25",
+       "dep": "16.25"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 22,
+       "arr": "16.26",
+       "dep": "16.26"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 23,
+       "arr": "16.27",
+       "dep": "16.27"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 24,
+       "arr": "16.28",
+       "dep": "16.28"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 25,
+       "arr": "16.29",
+       "dep": "16.29"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 26,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 425)",
+       "idx": 27,
+       "arr": "16.31",
+       "dep": "16.31"
+      },
+      {
+       "stop": "GELA (Via Venezia, 558)",
+       "idx": 28,
+       "arr": "16.32",
+       "dep": "16.32"
+      },
+      {
+       "stop": "GELA (Via Licata fronte 16)",
+       "idx": 29,
+       "arr": "16.33",
+       "dep": "16.33"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza (fronte 16))",
+       "idx": 30,
+       "arr": "16.34",
+       "dep": "16.34"
+      },
+      {
+       "stop": "GELA (Via Europa fronte 119 (Liceo Scienze Umane))",
+       "idx": 31,
+       "arr": "16.35",
+       "dep": "16.35"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli fronte 138)",
+       "idx": 32,
+       "arr": "16.36",
+       "dep": "16.36"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 33,
+       "arr": "16.37",
+       "dep": "16.37"
+      },
+      {
+       "stop": "GELA (Piazza Lagrange)",
+       "idx": 34,
+       "arr": "16.38",
+       "dep": "16.38"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 35,
+       "arr": "16.39",
+       "dep": "16.39"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 36,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "GELA (Via Emanuele Morselli (Piazza Giordano))",
+       "idx": 37,
+       "arr": "16.41",
+       "dep": "16.41"
+      },
+      {
+       "stop": "GELA (Via Europa 93)",
+       "idx": 38,
+       "arr": "16.41",
+       "dep": "16.41"
+      },
+      {
+       "stop": "GELA (Via Europa 51)",
+       "idx": 39,
+       "arr": "16.42",
+       "dep": "16.42"
+      },
+      {
+       "stop": "GELA (Via Palazzi 134)",
+       "idx": 40,
+       "arr": "16.43",
+       "dep": "16.43"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 194)",
+       "idx": 41,
+       "arr": "16.44",
+       "dep": "16.44"
+      },
+      {
+       "stop": "GELA (Via Appia, 19 (fronte chiesa))",
+       "idx": 42,
+       "arr": "16.46",
+       "dep": "16.46"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 43,
+       "arr": "16.46",
+       "dep": "16.46"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 109)",
+       "idx": 44,
+       "arr": "16.47",
+       "dep": "16.47"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 45,
+       "arr": "16.48",
+       "dep": "16.48"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 46,
+       "arr": "16.49",
+       "dep": "16.49"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 47,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 48,
+       "arr": "16.51",
+       "dep": "16.51"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 49,
+       "arr": "16.52",
+       "dep": "16.52"
+      },
+      {
+       "stop": "GELA (Via Butera, 158)",
+       "idx": 50,
+       "arr": "16.53",
+       "dep": "16.53"
+      },
+      {
+       "stop": "GELA (Via Butera, 174)",
+       "idx": 51,
+       "arr": "16.54",
+       "dep": "16.54"
+      },
+      {
+       "stop": "GELA (Via Butera, 196)",
+       "idx": 52,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 53,
+       "arr": "16.56",
+       "dep": "16.56"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 54,
+       "arr": "16.57",
+       "dep": "16.57"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 55,
+       "arr": "16.58",
+       "dep": "16.58"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 56,
+       "arr": "16.59",
+       "dep": "16.59"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 29)",
+       "idx": 57,
+       "arr": "17.01",
+       "dep": "17.01"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 52)",
+       "idx": 58,
+       "arr": "17.02",
+       "dep": "17.02"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte Piazza Masaccio)",
+       "idx": 59,
+       "arr": "17.03",
+       "dep": "17.03"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 44)",
+       "idx": 60,
+       "arr": "17.03",
+       "dep": "17.03"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 61,
+       "arr": "17.04",
+       "dep": "17.04"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 7)",
+       "idx": 62,
+       "arr": "17.05",
+       "dep": "17.05"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 354)",
+       "idx": 63,
+       "arr": "17.07",
+       "dep": "17.07"
+      },
+      {
+       "stop": "GELA (Via Venezia, 313)",
+       "idx": 64,
+       "arr": "17.10",
+       "dep": "17.10"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 262)",
+       "idx": 65,
+       "arr": "17.11",
+       "dep": "17.11"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 220)",
+       "idx": 66,
+       "arr": "17.12",
+       "dep": "17.12"
+      },
+      {
+       "stop": "GELA (Via Tevere, 149)",
+       "idx": 67,
+       "arr": "17.13",
+       "dep": "17.13"
+      },
+      {
+       "stop": "GELA (Piazza Enrico Mattei)",
+       "idx": 68,
+       "arr": "17.15",
+       "dep": "17.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "004015",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11004_12",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Enrico Mattei)",
+       "idx": 0,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "GELA (Via Tevere fronte 171)",
+       "idx": 1,
+       "arr": "14.31",
+       "dep": "14.31"
+      },
+      {
+       "stop": "GELA (Via Venezia, 220)",
+       "idx": 2,
+       "arr": "14.32",
+       "dep": "14.32"
+      },
+      {
+       "stop": "GELA (Via Venezia, 262)",
+       "idx": 3,
+       "arr": "14.33",
+       "dep": "14.33"
+      },
+      {
+       "stop": "GELA (Via Venezia, 300)",
+       "idx": 4,
+       "arr": "14.34",
+       "dep": "14.34"
+      },
+      {
+       "stop": "GELA (Via Venezia, 354)",
+       "idx": 5,
+       "arr": "14.37",
+       "dep": "14.37"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte 7)",
+       "idx": 6,
+       "arr": "14.38",
+       "dep": "14.38"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 7,
+       "arr": "14.39",
+       "dep": "14.39"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 46)",
+       "idx": 8,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "GELA (Piazza Masaccio)",
+       "idx": 9,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 52)",
+       "idx": 10,
+       "arr": "14.41",
+       "dep": "14.41"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 29)",
+       "idx": 11,
+       "arr": "14.42",
+       "dep": "14.42"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 12,
+       "arr": "14.43",
+       "dep": "14.43"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 13,
+       "arr": "14.44",
+       "dep": "14.44"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 14,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 15,
+       "arr": "14.46",
+       "dep": "14.46"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 192)",
+       "idx": 16,
+       "arr": "14.47",
+       "dep": "14.47"
+      },
+      {
+       "stop": "GELA (Via Butera, 171)",
+       "idx": 17,
+       "arr": "14.48",
+       "dep": "14.48"
+      },
+      {
+       "stop": "GELA (Via Butera Franzy's shop)",
+       "idx": 18,
+       "arr": "14.49",
+       "dep": "14.49"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 84)",
+       "idx": 19,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 17)",
+       "idx": 20,
+       "arr": "14.51",
+       "dep": "14.51"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 21,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 22,
+       "arr": "14.56",
+       "dep": "14.56"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 23,
+       "arr": "14.57",
+       "dep": "14.57"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 24,
+       "arr": "14.58",
+       "dep": "14.58"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 25,
+       "arr": "14.59",
+       "dep": "14.59"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 26,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 425)",
+       "idx": 27,
+       "arr": "15.01",
+       "dep": "15.01"
+      },
+      {
+       "stop": "GELA (Via Venezia, 558)",
+       "idx": 28,
+       "arr": "15.02",
+       "dep": "15.02"
+      },
+      {
+       "stop": "GELA (Via Licata fronte 16)",
+       "idx": 29,
+       "arr": "15.03",
+       "dep": "15.03"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza (fronte 16))",
+       "idx": 30,
+       "arr": "15.04",
+       "dep": "15.04"
+      },
+      {
+       "stop": "GELA (Via Europa fronte 119 (Liceo Scienze Umane))",
+       "idx": 31,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli fronte 138)",
+       "idx": 32,
+       "arr": "15.06",
+       "dep": "15.06"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 33,
+       "arr": "15.07",
+       "dep": "15.07"
+      },
+      {
+       "stop": "GELA (Piazza Lagrange)",
+       "idx": 34,
+       "arr": "15.08",
+       "dep": "15.08"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 35,
+       "arr": "15.09",
+       "dep": "15.09"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 36,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "GELA (Via Emanuele Morselli (Piazza Giordano))",
+       "idx": 37,
+       "arr": "15.11",
+       "dep": "15.11"
+      },
+      {
+       "stop": "GELA (Via Europa 93)",
+       "idx": 38,
+       "arr": "15.11",
+       "dep": "15.11"
+      },
+      {
+       "stop": "GELA (Via Europa 51)",
+       "idx": 39,
+       "arr": "15.12",
+       "dep": "15.12"
+      },
+      {
+       "stop": "GELA (Via Palazzi 134)",
+       "idx": 40,
+       "arr": "15.13",
+       "dep": "15.13"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 194)",
+       "idx": 41,
+       "arr": "15.14",
+       "dep": "15.14"
+      },
+      {
+       "stop": "GELA (Via Appia, 19 (fronte chiesa))",
+       "idx": 42,
+       "arr": "15.16",
+       "dep": "15.16"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 43,
+       "arr": "15.16",
+       "dep": "15.16"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 109)",
+       "idx": 44,
+       "arr": "15.17",
+       "dep": "15.17"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 45,
+       "arr": "15.18",
+       "dep": "15.18"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 46,
+       "arr": "15.19",
+       "dep": "15.19"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 47,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 48,
+       "arr": "15.21",
+       "dep": "15.21"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 49,
+       "arr": "15.22",
+       "dep": "15.22"
+      },
+      {
+       "stop": "GELA (Via Butera, 158)",
+       "idx": 50,
+       "arr": "15.23",
+       "dep": "15.23"
+      },
+      {
+       "stop": "GELA (Via Butera, 174)",
+       "idx": 51,
+       "arr": "15.24",
+       "dep": "15.24"
+      },
+      {
+       "stop": "GELA (Via Butera, 196)",
+       "idx": 52,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 53,
+       "arr": "15.26",
+       "dep": "15.26"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 54,
+       "arr": "15.27",
+       "dep": "15.27"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 55,
+       "arr": "15.28",
+       "dep": "15.28"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 56,
+       "arr": "15.29",
+       "dep": "15.29"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 29)",
+       "idx": 57,
+       "arr": "15.31",
+       "dep": "15.31"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 52)",
+       "idx": 58,
+       "arr": "15.32",
+       "dep": "15.32"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte Piazza Masaccio)",
+       "idx": 59,
+       "arr": "15.33",
+       "dep": "15.33"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 44)",
+       "idx": 60,
+       "arr": "15.33",
+       "dep": "15.33"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 61,
+       "arr": "15.34",
+       "dep": "15.34"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 7)",
+       "idx": 62,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 354)",
+       "idx": 63,
+       "arr": "15.37",
+       "dep": "15.37"
+      },
+      {
+       "stop": "GELA (Via Venezia, 313)",
+       "idx": 64,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 262)",
+       "idx": 65,
+       "arr": "15.41",
+       "dep": "15.41"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 220)",
+       "idx": 66,
+       "arr": "15.42",
+       "dep": "15.42"
+      },
+      {
+       "stop": "GELA (Via Tevere, 149)",
+       "idx": 67,
+       "arr": "15.43",
+       "dep": "15.43"
+      },
+      {
+       "stop": "GELA (Piazza Enrico Mattei)",
+       "idx": 68,
+       "arr": "15.45",
+       "dep": "15.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "004013",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11004_12",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Enrico Mattei)",
+       "idx": 0,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "GELA (Via Tevere fronte 171)",
+       "idx": 1,
+       "arr": "11.31",
+       "dep": "11.31"
+      },
+      {
+       "stop": "GELA (Via Venezia, 220)",
+       "idx": 2,
+       "arr": "11.32",
+       "dep": "11.32"
+      },
+      {
+       "stop": "GELA (Via Venezia, 262)",
+       "idx": 3,
+       "arr": "11.33",
+       "dep": "11.33"
+      },
+      {
+       "stop": "GELA (Via Venezia, 300)",
+       "idx": 4,
+       "arr": "11.34",
+       "dep": "11.34"
+      },
+      {
+       "stop": "GELA (Via Venezia, 354)",
+       "idx": 5,
+       "arr": "11.37",
+       "dep": "11.37"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte 7)",
+       "idx": 6,
+       "arr": "11.38",
+       "dep": "11.38"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 7,
+       "arr": "11.39",
+       "dep": "11.39"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 46)",
+       "idx": 8,
+       "arr": "11.40",
+       "dep": "11.40"
+      },
+      {
+       "stop": "GELA (Piazza Masaccio)",
+       "idx": 9,
+       "arr": "11.40",
+       "dep": "11.40"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 52)",
+       "idx": 10,
+       "arr": "11.41",
+       "dep": "11.41"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 29)",
+       "idx": 11,
+       "arr": "11.42",
+       "dep": "11.42"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 12,
+       "arr": "11.43",
+       "dep": "11.43"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 13,
+       "arr": "11.44",
+       "dep": "11.44"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 14,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 15,
+       "arr": "11.46",
+       "dep": "11.46"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 192)",
+       "idx": 16,
+       "arr": "11.47",
+       "dep": "11.47"
+      },
+      {
+       "stop": "GELA (Via Butera, 171)",
+       "idx": 17,
+       "arr": "11.48",
+       "dep": "11.48"
+      },
+      {
+       "stop": "GELA (Via Butera Franzy's shop)",
+       "idx": 18,
+       "arr": "11.49",
+       "dep": "11.49"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 84)",
+       "idx": 19,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 17)",
+       "idx": 20,
+       "arr": "11.51",
+       "dep": "11.51"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 21,
+       "arr": "11.55",
+       "dep": "11.55"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 22,
+       "arr": "11.56",
+       "dep": "11.56"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 23,
+       "arr": "11.57",
+       "dep": "11.57"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 24,
+       "arr": "11.58",
+       "dep": "11.58"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 25,
+       "arr": "11.59",
+       "dep": "11.59"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 26,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 425)",
+       "idx": 27,
+       "arr": "12.01",
+       "dep": "12.01"
+      },
+      {
+       "stop": "GELA (Via Venezia, 558)",
+       "idx": 28,
+       "arr": "12.02",
+       "dep": "12.02"
+      },
+      {
+       "stop": "GELA (Via Licata fronte 16)",
+       "idx": 29,
+       "arr": "12.03",
+       "dep": "12.03"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza (fronte 16))",
+       "idx": 30,
+       "arr": "12.04",
+       "dep": "12.04"
+      },
+      {
+       "stop": "GELA (Via Europa fronte 119 (Liceo Scienze Umane))",
+       "idx": 31,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli fronte 138)",
+       "idx": 32,
+       "arr": "12.06",
+       "dep": "12.06"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 33,
+       "arr": "12.07",
+       "dep": "12.07"
+      },
+      {
+       "stop": "GELA (Piazza Lagrange)",
+       "idx": 34,
+       "arr": "12.08",
+       "dep": "12.08"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 35,
+       "arr": "12.09",
+       "dep": "12.09"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 36,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "GELA (Via Emanuele Morselli (Piazza Giordano))",
+       "idx": 37,
+       "arr": "12.11",
+       "dep": "12.11"
+      },
+      {
+       "stop": "GELA (Via Europa 93)",
+       "idx": 38,
+       "arr": "12.11",
+       "dep": "12.11"
+      },
+      {
+       "stop": "GELA (Via Europa 51)",
+       "idx": 39,
+       "arr": "12.12",
+       "dep": "12.12"
+      },
+      {
+       "stop": "GELA (Via Palazzi 134)",
+       "idx": 40,
+       "arr": "12.13",
+       "dep": "12.13"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 194)",
+       "idx": 41,
+       "arr": "12.14",
+       "dep": "12.14"
+      },
+      {
+       "stop": "GELA (Via Appia, 19 (fronte chiesa))",
+       "idx": 42,
+       "arr": "12.16",
+       "dep": "12.16"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 43,
+       "arr": "12.16",
+       "dep": "12.16"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 109)",
+       "idx": 44,
+       "arr": "12.17",
+       "dep": "12.17"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 45,
+       "arr": "12.18",
+       "dep": "12.18"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 46,
+       "arr": "12.19",
+       "dep": "12.19"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 47,
+       "arr": "12.20",
+       "dep": "12.20"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 48,
+       "arr": "12.21",
+       "dep": "12.21"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 49,
+       "arr": "12.22",
+       "dep": "12.22"
+      },
+      {
+       "stop": "GELA (Via Butera, 158)",
+       "idx": 50,
+       "arr": "12.23",
+       "dep": "12.23"
+      },
+      {
+       "stop": "GELA (Via Butera, 174)",
+       "idx": 51,
+       "arr": "12.24",
+       "dep": "12.24"
+      },
+      {
+       "stop": "GELA (Via Butera, 196)",
+       "idx": 52,
+       "arr": "12.25",
+       "dep": "12.25"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 53,
+       "arr": "12.26",
+       "dep": "12.26"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 54,
+       "arr": "12.27",
+       "dep": "12.27"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 55,
+       "arr": "12.28",
+       "dep": "12.28"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 56,
+       "arr": "12.29",
+       "dep": "12.29"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 29)",
+       "idx": 57,
+       "arr": "12.31",
+       "dep": "12.31"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 52)",
+       "idx": 58,
+       "arr": "12.32",
+       "dep": "12.32"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte Piazza Masaccio)",
+       "idx": 59,
+       "arr": "12.33",
+       "dep": "12.33"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 44)",
+       "idx": 60,
+       "arr": "12.33",
+       "dep": "12.33"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 61,
+       "arr": "12.34",
+       "dep": "12.34"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 7)",
+       "idx": 62,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 354)",
+       "idx": 63,
+       "arr": "12.37",
+       "dep": "12.37"
+      },
+      {
+       "stop": "GELA (Via Venezia, 313)",
+       "idx": 64,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 262)",
+       "idx": 65,
+       "arr": "12.41",
+       "dep": "12.41"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 220)",
+       "idx": 66,
+       "arr": "12.42",
+       "dep": "12.42"
+      },
+      {
+       "stop": "GELA (Via Tevere, 149)",
+       "idx": 67,
+       "arr": "12.43",
+       "dep": "12.43"
+      },
+      {
+       "stop": "GELA (Piazza Enrico Mattei)",
+       "idx": 68,
+       "arr": "12.45",
+       "dep": "12.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "004010",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11004_12",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Enrico Mattei)",
+       "idx": 0,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "GELA (Via Tevere fronte 171)",
+       "idx": 1,
+       "arr": "7.16",
+       "dep": "7.16"
+      },
+      {
+       "stop": "GELA (Via Venezia, 220)",
+       "idx": 2,
+       "arr": "7.17",
+       "dep": "7.17"
+      },
+      {
+       "stop": "GELA (Via Venezia, 262)",
+       "idx": 3,
+       "arr": "7.18",
+       "dep": "7.18"
+      },
+      {
+       "stop": "GELA (Via Venezia, 300)",
+       "idx": 4,
+       "arr": "7.19",
+       "dep": "7.19"
+      },
+      {
+       "stop": "GELA (Via Venezia, 354)",
+       "idx": 5,
+       "arr": "7.22",
+       "dep": "7.22"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte 7)",
+       "idx": 6,
+       "arr": "7.23",
+       "dep": "7.23"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 7,
+       "arr": "7.24",
+       "dep": "7.24"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 46)",
+       "idx": 8,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "GELA (Piazza Masaccio)",
+       "idx": 9,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 52)",
+       "idx": 10,
+       "arr": "7.26",
+       "dep": "7.26"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 29)",
+       "idx": 11,
+       "arr": "7.27",
+       "dep": "7.27"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 12,
+       "arr": "7.28",
+       "dep": "7.28"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 13,
+       "arr": "7.29",
+       "dep": "7.29"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 14,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 15,
+       "arr": "7.31",
+       "dep": "7.31"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 192)",
+       "idx": 16,
+       "arr": "7.32",
+       "dep": "7.32"
+      },
+      {
+       "stop": "GELA (Via Butera, 171)",
+       "idx": 17,
+       "arr": "7.33",
+       "dep": "7.33"
+      },
+      {
+       "stop": "GELA (Via Butera Franzy's shop)",
+       "idx": 18,
+       "arr": "7.34",
+       "dep": "7.34"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 84)",
+       "idx": 19,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 17)",
+       "idx": 20,
+       "arr": "7.36",
+       "dep": "7.36"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 21,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 22,
+       "arr": "7.41",
+       "dep": "7.41"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 23,
+       "arr": "7.42",
+       "dep": "7.42"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 24,
+       "arr": "7.43",
+       "dep": "7.43"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 25,
+       "arr": "7.44",
+       "dep": "7.44"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 26,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 425)",
+       "idx": 27,
+       "arr": "7.46",
+       "dep": "7.46"
+      },
+      {
+       "stop": "GELA (Via Venezia, 558)",
+       "idx": 28,
+       "arr": "7.47",
+       "dep": "7.47"
+      },
+      {
+       "stop": "GELA (Via Licata fronte 16)",
+       "idx": 29,
+       "arr": "7.48",
+       "dep": "7.48"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza (fronte 16))",
+       "idx": 30,
+       "arr": "7.49",
+       "dep": "7.49"
+      },
+      {
+       "stop": "GELA (Via Europa fronte 119 (Liceo Scienze Umane))",
+       "idx": 31,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli fronte 138)",
+       "idx": 32,
+       "arr": "7.51",
+       "dep": "7.51"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 33,
+       "arr": "7.52",
+       "dep": "7.52"
+      },
+      {
+       "stop": "GELA (Piazza Lagrange)",
+       "idx": 34,
+       "arr": "7.53",
+       "dep": "7.53"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 35,
+       "arr": "7.54",
+       "dep": "7.54"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 36,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "GELA (Via Emanuele Morselli (Piazza Giordano))",
+       "idx": 37,
+       "arr": "7.56",
+       "dep": "7.56"
+      },
+      {
+       "stop": "GELA (Via Europa 93)",
+       "idx": 38,
+       "arr": "7.56",
+       "dep": "7.56"
+      },
+      {
+       "stop": "GELA (Via Europa 51)",
+       "idx": 39,
+       "arr": "7.57",
+       "dep": "7.57"
+      },
+      {
+       "stop": "GELA (Via Palazzi 134)",
+       "idx": 40,
+       "arr": "7.58",
+       "dep": "7.58"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 194)",
+       "idx": 41,
+       "arr": "7.59",
+       "dep": "7.59"
+      },
+      {
+       "stop": "GELA (Via Appia, 19 (fronte chiesa))",
+       "idx": 42,
+       "arr": "8.01",
+       "dep": "8.01"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 43,
+       "arr": "8.01",
+       "dep": "8.01"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 109)",
+       "idx": 44,
+       "arr": "8.02",
+       "dep": "8.02"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 45,
+       "arr": "8.03",
+       "dep": "8.03"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 46,
+       "arr": "8.04",
+       "dep": "8.04"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 47,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 48,
+       "arr": "8.06",
+       "dep": "8.06"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 49,
+       "arr": "8.07",
+       "dep": "8.07"
+      },
+      {
+       "stop": "GELA (Via Butera, 158)",
+       "idx": 50,
+       "arr": "8.08",
+       "dep": "8.08"
+      },
+      {
+       "stop": "GELA (Via Butera, 174)",
+       "idx": 51,
+       "arr": "8.09",
+       "dep": "8.09"
+      },
+      {
+       "stop": "GELA (Via Butera, 196)",
+       "idx": 52,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 53,
+       "arr": "8.11",
+       "dep": "8.11"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 54,
+       "arr": "8.12",
+       "dep": "8.12"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 55,
+       "arr": "8.13",
+       "dep": "8.13"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 56,
+       "arr": "8.14",
+       "dep": "8.14"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 29)",
+       "idx": 57,
+       "arr": "8.16",
+       "dep": "8.16"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 52)",
+       "idx": 58,
+       "arr": "8.17",
+       "dep": "8.17"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte Piazza Masaccio)",
+       "idx": 59,
+       "arr": "8.18",
+       "dep": "8.18"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 44)",
+       "idx": 60,
+       "arr": "8.18",
+       "dep": "8.18"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 61,
+       "arr": "8.19",
+       "dep": "8.19"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 7)",
+       "idx": 62,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 354)",
+       "idx": 63,
+       "arr": "8.22",
+       "dep": "8.22"
+      },
+      {
+       "stop": "GELA (Via Venezia, 313)",
+       "idx": 64,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 262)",
+       "idx": 65,
+       "arr": "8.26",
+       "dep": "8.26"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 220)",
+       "idx": 66,
+       "arr": "8.27",
+       "dep": "8.27"
+      },
+      {
+       "stop": "GELA (Via Tevere, 149)",
+       "idx": 67,
+       "arr": "8.28",
+       "dep": "8.28"
+      },
+      {
+       "stop": "GELA (Piazza Enrico Mattei)",
+       "idx": 68,
+       "arr": "8.30",
+       "dep": "8.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "004011",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11004_12",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Enrico Mattei)",
+       "idx": 0,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "GELA (Via Tevere fronte 171)",
+       "idx": 1,
+       "arr": "8.31",
+       "dep": "8.31"
+      },
+      {
+       "stop": "GELA (Via Venezia, 220)",
+       "idx": 2,
+       "arr": "8.32",
+       "dep": "8.32"
+      },
+      {
+       "stop": "GELA (Via Venezia, 262)",
+       "idx": 3,
+       "arr": "8.33",
+       "dep": "8.33"
+      },
+      {
+       "stop": "GELA (Via Venezia, 300)",
+       "idx": 4,
+       "arr": "8.34",
+       "dep": "8.34"
+      },
+      {
+       "stop": "GELA (Via Venezia, 354)",
+       "idx": 5,
+       "arr": "8.37",
+       "dep": "8.37"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte 7)",
+       "idx": 6,
+       "arr": "8.38",
+       "dep": "8.38"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 7,
+       "arr": "8.39",
+       "dep": "8.39"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 46)",
+       "idx": 8,
+       "arr": "8.40",
+       "dep": "8.40"
+      },
+      {
+       "stop": "GELA (Piazza Masaccio)",
+       "idx": 9,
+       "arr": "8.40",
+       "dep": "8.40"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 52)",
+       "idx": 10,
+       "arr": "8.41",
+       "dep": "8.41"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 29)",
+       "idx": 11,
+       "arr": "8.42",
+       "dep": "8.42"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 12,
+       "arr": "8.43",
+       "dep": "8.43"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 13,
+       "arr": "8.44",
+       "dep": "8.44"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 14,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 15,
+       "arr": "8.46",
+       "dep": "8.46"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 192)",
+       "idx": 16,
+       "arr": "8.47",
+       "dep": "8.47"
+      },
+      {
+       "stop": "GELA (Via Butera, 171)",
+       "idx": 17,
+       "arr": "8.48",
+       "dep": "8.48"
+      },
+      {
+       "stop": "GELA (Via Butera Franzy's shop)",
+       "idx": 18,
+       "arr": "8.49",
+       "dep": "8.49"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 84)",
+       "idx": 19,
+       "arr": "8.50",
+       "dep": "8.50"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 17)",
+       "idx": 20,
+       "arr": "8.51",
+       "dep": "8.51"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 21,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 22,
+       "arr": "8.56",
+       "dep": "8.56"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 23,
+       "arr": "8.57",
+       "dep": "8.57"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 24,
+       "arr": "8.58",
+       "dep": "8.58"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 25,
+       "arr": "8.59",
+       "dep": "8.59"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 26,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 425)",
+       "idx": 27,
+       "arr": "9.01",
+       "dep": "9.01"
+      },
+      {
+       "stop": "GELA (Via Venezia, 558)",
+       "idx": 28,
+       "arr": "9.02",
+       "dep": "9.02"
+      },
+      {
+       "stop": "GELA (Via Licata fronte 16)",
+       "idx": 29,
+       "arr": "9.03",
+       "dep": "9.03"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza (fronte 16))",
+       "idx": 30,
+       "arr": "9.04",
+       "dep": "9.04"
+      },
+      {
+       "stop": "GELA (Via Europa fronte 119 (Liceo Scienze Umane))",
+       "idx": 31,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli fronte 138)",
+       "idx": 32,
+       "arr": "9.06",
+       "dep": "9.06"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 33,
+       "arr": "9.07",
+       "dep": "9.07"
+      },
+      {
+       "stop": "GELA (Piazza Lagrange)",
+       "idx": 34,
+       "arr": "9.08",
+       "dep": "9.08"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 35,
+       "arr": "9.09",
+       "dep": "9.09"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 36,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "GELA (Via Emanuele Morselli (Piazza Giordano))",
+       "idx": 37,
+       "arr": "9.11",
+       "dep": "9.11"
+      },
+      {
+       "stop": "GELA (Via Europa 93)",
+       "idx": 38,
+       "arr": "9.11",
+       "dep": "9.11"
+      },
+      {
+       "stop": "GELA (Via Europa 51)",
+       "idx": 39,
+       "arr": "9.12",
+       "dep": "9.12"
+      },
+      {
+       "stop": "GELA (Via Palazzi 134)",
+       "idx": 40,
+       "arr": "9.13",
+       "dep": "9.13"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 194)",
+       "idx": 41,
+       "arr": "9.14",
+       "dep": "9.14"
+      },
+      {
+       "stop": "GELA (Via Appia, 19 (fronte chiesa))",
+       "idx": 42,
+       "arr": "9.16",
+       "dep": "9.16"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 43,
+       "arr": "9.16",
+       "dep": "9.16"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 109)",
+       "idx": 44,
+       "arr": "9.17",
+       "dep": "9.17"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 45,
+       "arr": "9.18",
+       "dep": "9.18"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 46,
+       "arr": "9.19",
+       "dep": "9.19"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 47,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 48,
+       "arr": "9.21",
+       "dep": "9.21"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 49,
+       "arr": "9.22",
+       "dep": "9.22"
+      },
+      {
+       "stop": "GELA (Via Butera, 158)",
+       "idx": 50,
+       "arr": "9.23",
+       "dep": "9.23"
+      },
+      {
+       "stop": "GELA (Via Butera, 174)",
+       "idx": 51,
+       "arr": "9.24",
+       "dep": "9.24"
+      },
+      {
+       "stop": "GELA (Via Butera, 196)",
+       "idx": 52,
+       "arr": "9.25",
+       "dep": "9.25"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 53,
+       "arr": "9.26",
+       "dep": "9.26"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 54,
+       "arr": "9.27",
+       "dep": "9.27"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 55,
+       "arr": "9.28",
+       "dep": "9.28"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 56,
+       "arr": "9.29",
+       "dep": "9.29"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 29)",
+       "idx": 57,
+       "arr": "9.31",
+       "dep": "9.31"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 52)",
+       "idx": 58,
+       "arr": "9.32",
+       "dep": "9.32"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte Piazza Masaccio)",
+       "idx": 59,
+       "arr": "9.33",
+       "dep": "9.33"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 44)",
+       "idx": 60,
+       "arr": "9.33",
+       "dep": "9.33"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 61,
+       "arr": "9.34",
+       "dep": "9.34"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 7)",
+       "idx": 62,
+       "arr": "9.35",
+       "dep": "9.35"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 354)",
+       "idx": 63,
+       "arr": "9.37",
+       "dep": "9.37"
+      },
+      {
+       "stop": "GELA (Via Venezia, 313)",
+       "idx": 64,
+       "arr": "9.40",
+       "dep": "9.40"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 262)",
+       "idx": 65,
+       "arr": "9.41",
+       "dep": "9.41"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 220)",
+       "idx": 66,
+       "arr": "9.42",
+       "dep": "9.42"
+      },
+      {
+       "stop": "GELA (Via Tevere, 149)",
+       "idx": 67,
+       "arr": "9.43",
+       "dep": "9.43"
+      },
+      {
+       "stop": "GELA (Piazza Enrico Mattei)",
+       "idx": 68,
+       "arr": "9.45",
+       "dep": "9.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "004012",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11004_12",
+     "stops": [
+      {
+       "stop": "GELA (Piazza Enrico Mattei)",
+       "idx": 0,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "GELA (Via Tevere fronte 171)",
+       "idx": 1,
+       "arr": "10.01",
+       "dep": "10.01"
+      },
+      {
+       "stop": "GELA (Via Venezia, 220)",
+       "idx": 2,
+       "arr": "10.02",
+       "dep": "10.02"
+      },
+      {
+       "stop": "GELA (Via Venezia, 262)",
+       "idx": 3,
+       "arr": "10.03",
+       "dep": "10.03"
+      },
+      {
+       "stop": "GELA (Via Venezia, 300)",
+       "idx": 4,
+       "arr": "10.04",
+       "dep": "10.04"
+      },
+      {
+       "stop": "GELA (Via Venezia, 354)",
+       "idx": 5,
+       "arr": "10.07",
+       "dep": "10.07"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte 7)",
+       "idx": 6,
+       "arr": "10.08",
+       "dep": "10.08"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 7,
+       "arr": "10.09",
+       "dep": "10.09"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 46)",
+       "idx": 8,
+       "arr": "10.10",
+       "dep": "10.10"
+      },
+      {
+       "stop": "GELA (Piazza Masaccio)",
+       "idx": 9,
+       "arr": "10.10",
+       "dep": "10.10"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 52)",
+       "idx": 10,
+       "arr": "10.11",
+       "dep": "10.11"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 29)",
+       "idx": 11,
+       "arr": "10.12",
+       "dep": "10.12"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 12,
+       "arr": "10.13",
+       "dep": "10.13"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 13,
+       "arr": "10.14",
+       "dep": "10.14"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 14,
+       "arr": "10.15",
+       "dep": "10.15"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 15,
+       "arr": "10.16",
+       "dep": "10.16"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 192)",
+       "idx": 16,
+       "arr": "10.17",
+       "dep": "10.17"
+      },
+      {
+       "stop": "GELA (Via Butera, 171)",
+       "idx": 17,
+       "arr": "10.18",
+       "dep": "10.18"
+      },
+      {
+       "stop": "GELA (Via Butera Franzy's shop)",
+       "idx": 18,
+       "arr": "10.19",
+       "dep": "10.19"
+      },
+      {
+       "stop": "GELA (Via Butera fronte 84)",
+       "idx": 19,
+       "arr": "10.20",
+       "dep": "10.20"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 17)",
+       "idx": 20,
+       "arr": "10.21",
+       "dep": "10.21"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 21,
+       "arr": "10.25",
+       "dep": "10.25"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 22,
+       "arr": "10.26",
+       "dep": "10.26"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 23,
+       "arr": "10.27",
+       "dep": "10.27"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 24,
+       "arr": "10.28",
+       "dep": "10.28"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 25,
+       "arr": "10.29",
+       "dep": "10.29"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 26,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 425)",
+       "idx": 27,
+       "arr": "10.31",
+       "dep": "10.31"
+      },
+      {
+       "stop": "GELA (Via Venezia, 558)",
+       "idx": 28,
+       "arr": "10.32",
+       "dep": "10.32"
+      },
+      {
+       "stop": "GELA (Via Licata fronte 16)",
+       "idx": 29,
+       "arr": "10.33",
+       "dep": "10.33"
+      },
+      {
+       "stop": "GELA (Viale Indipendenza (fronte 16))",
+       "idx": 30,
+       "arr": "10.34",
+       "dep": "10.34"
+      },
+      {
+       "stop": "GELA (Via Europa fronte 119 (Liceo Scienze Umane))",
+       "idx": 31,
+       "arr": "10.35",
+       "dep": "10.35"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli fronte 138)",
+       "idx": 32,
+       "arr": "10.36",
+       "dep": "10.36"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 33,
+       "arr": "10.37",
+       "dep": "10.37"
+      },
+      {
+       "stop": "GELA (Piazza Lagrange)",
+       "idx": 34,
+       "arr": "10.38",
+       "dep": "10.38"
+      },
+      {
+       "stop": "GELA (Via Ettore Romagnoli, 67)",
+       "idx": 35,
+       "arr": "10.39",
+       "dep": "10.39"
+      },
+      {
+       "stop": "GELA (Via Giovanni Meli fronte 17)",
+       "idx": 36,
+       "arr": "10.40",
+       "dep": "10.40"
+      },
+      {
+       "stop": "GELA (Via Emanuele Morselli (Piazza Giordano))",
+       "idx": 37,
+       "arr": "10.41",
+       "dep": "10.41"
+      },
+      {
+       "stop": "GELA (Via Europa 93)",
+       "idx": 38,
+       "arr": "10.41",
+       "dep": "10.41"
+      },
+      {
+       "stop": "GELA (Via Europa 51)",
+       "idx": 39,
+       "arr": "10.42",
+       "dep": "10.42"
+      },
+      {
+       "stop": "GELA (Via Palazzi 134)",
+       "idx": 40,
+       "arr": "10.43",
+       "dep": "10.43"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 194)",
+       "idx": 41,
+       "arr": "10.44",
+       "dep": "10.44"
+      },
+      {
+       "stop": "GELA (Via Appia, 19 (fronte chiesa))",
+       "idx": 42,
+       "arr": "10.46",
+       "dep": "10.46"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte falegnameria)",
+       "idx": 43,
+       "arr": "10.46",
+       "dep": "10.46"
+      },
+      {
+       "stop": "GELA (Via Portuense fronte 109)",
+       "idx": 44,
+       "arr": "10.47",
+       "dep": "10.47"
+      },
+      {
+       "stop": "GELA (Via R. Cannilla snc)",
+       "idx": 45,
+       "arr": "10.48",
+       "dep": "10.48"
+      },
+      {
+       "stop": "GELA (Via Portuense, 109)",
+       "idx": 46,
+       "arr": "10.49",
+       "dep": "10.49"
+      },
+      {
+       "stop": "GELA (Via Portuense, 67)",
+       "idx": 47,
+       "arr": "10.50",
+       "dep": "10.50"
+      },
+      {
+       "stop": "GELA (Via Portuense, 17)",
+       "idx": 48,
+       "arr": "10.51",
+       "dep": "10.51"
+      },
+      {
+       "stop": "GELA (Via Butera, 84)",
+       "idx": 49,
+       "arr": "10.52",
+       "dep": "10.52"
+      },
+      {
+       "stop": "GELA (Via Butera, 158)",
+       "idx": 50,
+       "arr": "10.53",
+       "dep": "10.53"
+      },
+      {
+       "stop": "GELA (Via Butera, 174)",
+       "idx": 51,
+       "arr": "10.54",
+       "dep": "10.54"
+      },
+      {
+       "stop": "GELA (Via Butera, 196)",
+       "idx": 52,
+       "arr": "10.55",
+       "dep": "10.55"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 8)",
+       "idx": 53,
+       "arr": "10.56",
+       "dep": "10.56"
+      },
+      {
+       "stop": "GELA (Via Bettino Craxi, 44)",
+       "idx": 54,
+       "arr": "10.57",
+       "dep": "10.57"
+      },
+      {
+       "stop": "GELA (Via Nicola Calipari snc)",
+       "idx": 55,
+       "arr": "10.58",
+       "dep": "10.58"
+      },
+      {
+       "stop": "GELA (Via Enzo Tortora fronte campetto San Paolo)",
+       "idx": 56,
+       "arr": "10.59",
+       "dep": "10.59"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile fronte 29)",
+       "idx": 57,
+       "arr": "11.01",
+       "dep": "11.01"
+      },
+      {
+       "stop": "GELA (Via Giovan Battista Basile, 52)",
+       "idx": 58,
+       "arr": "11.02",
+       "dep": "11.02"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis fronte Piazza Masaccio)",
+       "idx": 59,
+       "arr": "11.03",
+       "dep": "11.03"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 44)",
+       "idx": 60,
+       "arr": "11.03",
+       "dep": "11.03"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 18)",
+       "idx": 61,
+       "arr": "11.04",
+       "dep": "11.04"
+      },
+      {
+       "stop": "GELA (Via Ara Pacis, 7)",
+       "idx": 62,
+       "arr": "11.05",
+       "dep": "11.05"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 354)",
+       "idx": 63,
+       "arr": "11.07",
+       "dep": "11.07"
+      },
+      {
+       "stop": "GELA (Via Venezia, 313)",
+       "idx": 64,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 262)",
+       "idx": 65,
+       "arr": "11.11",
+       "dep": "11.11"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 220)",
+       "idx": 66,
+       "arr": "11.12",
+       "dep": "11.12"
+      },
+      {
+       "stop": "GELA (Via Tevere, 149)",
+       "idx": 67,
+       "arr": "11.13",
+       "dep": "11.13"
+      },
+      {
+       "stop": "GELA (Piazza Enrico Mattei)",
+       "idx": 68,
+       "arr": "11.15",
+       "dep": "11.15"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

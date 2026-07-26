@@ -1,0 +1,349 @@
+{
+ "operator": "SAIS Autolinee",
+ "route_id": "sais-182",
+ "name": "Pietraperzia - Barrafranca - Piazza Armerina",
+ "short_name": "182",
+ "coords": "external",
+ "source": "api.saisautolinee.it line a491b8e4-a414-4292-953e-135d7ea0dff7",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "PIETRAPERZIA (Via G.Marconi(incr.Via G.Pastorello))",
+    "PIETRAPERZIA (Via G.Marconi 68/71)",
+    "PIETRAPERZIA (Viale della Libertà 12/13)",
+    "PIETRAPERZIA (SS191 (Bivio Luogo))",
+    "BARRAFRANCA (SS191 (C.da Albana))",
+    "BARRAFRANCA (Corso Garibaldi 551)",
+    "BARRAFRANCA (Corso Garibaldi 453/466)",
+    "BARRAFRANCA (Via Campania 7)",
+    "BARRAFRANCA (C.da Zotta)",
+    "BARRAFRANCA (SP42 (X C.da Zotta))",
+    "PIAZZA ARMERINA (SP15 (Braemi))",
+    "PIAZZA ARMERINA (SP15 (C.da Risignolo))",
+    "PIAZZA ARMERINA (SP15 (Scavi del Casale))",
+    "PIAZZA ARMERINA (Via S.Principato 10)",
+    "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))"
+   ],
+   "trips": [
+    {
+     "corsa": "AGGIUNTA 54",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "P.perz-B.fran-P.Arm",
+     "stops": [
+      {
+       "stop": "PIETRAPERZIA (Via G.Marconi(incr.Via G.Pastorello))",
+       "idx": 0,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "PIETRAPERZIA (Via G.Marconi 68/71)",
+       "idx": 1,
+       "arr": "6.46",
+       "dep": "6.46"
+      },
+      {
+       "stop": "PIETRAPERZIA (Viale della Libertà 12/13)",
+       "idx": 2,
+       "arr": "6.47",
+       "dep": "6.47"
+      },
+      {
+       "stop": "PIETRAPERZIA (SS191 (Bivio Luogo))",
+       "idx": 3,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "BARRAFRANCA (SS191 (C.da Albana))",
+       "idx": 4,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 551)",
+       "idx": 5,
+       "arr": "6.57",
+       "dep": "6.57"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 453/466)",
+       "idx": 6,
+       "arr": "6.58",
+       "dep": "6.58"
+      },
+      {
+       "stop": "BARRAFRANCA (Via Campania 7)",
+       "idx": 7,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "BARRAFRANCA (C.da Zotta)",
+       "idx": 8,
+       "arr": "7.04",
+       "dep": "7.04"
+      },
+      {
+       "stop": "BARRAFRANCA (SP42 (X C.da Zotta))",
+       "idx": 9,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (Braemi))",
+       "idx": 10,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (C.da Risignolo))",
+       "idx": 11,
+       "arr": "7.24",
+       "dep": "7.24"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (Scavi del Casale))",
+       "idx": 12,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (Via S.Principato 10)",
+       "idx": 13,
+       "arr": "7.31",
+       "dep": "7.31"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
+       "idx": 14,
+       "arr": "7.35",
+       "dep": "7.35"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
+    "PIAZZA ARMERINA (Via S.Principato 3)",
+    "PIAZZA ARMERINA (SP15 (Scavi del Casale))",
+    "PIAZZA ARMERINA (SP15 (C.da Risignolo))",
+    "PIAZZA ARMERINA (SP15 (Braemi))",
+    "BARRAFRANCA (SP42 (X C.da Zotta))",
+    "BARRAFRANCA (C.da Zotta)",
+    "BARRAFRANCA (Via Campania 7)",
+    "BARRAFRANCA (Corso Garibaldi 453/466)",
+    "BARRAFRANCA (Corso Garibaldi 551)",
+    "BARRAFRANCA (SS191 (C.da Albana))",
+    "PIETRAPERZIA (SS191 (Bivio Luogo))",
+    "PIETRAPERZIA (Viale della Libertà 12/13)",
+    "PIETRAPERZIA (Via G.Marconi 68/71)",
+    "PIETRAPERZIA (Via G.Marconi(incr.Via G.Pastorello))"
+   ],
+   "trips": [
+    {
+     "corsa": "AGGIUNTA 55",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "variant": "P.Arm-B.fran-P.perz",
+     "stops": [
+      {
+       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (Via S.Principato 3)",
+       "idx": 1,
+       "arr": "14.04",
+       "dep": "14.04"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (Scavi del Casale))",
+       "idx": 2,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (C.da Risignolo))",
+       "idx": 3,
+       "arr": "14.11",
+       "dep": "14.11"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (Braemi))",
+       "idx": 4,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "BARRAFRANCA (SP42 (X C.da Zotta))",
+       "idx": 5,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "BARRAFRANCA (C.da Zotta)",
+       "idx": 6,
+       "arr": "14.31",
+       "dep": "14.31"
+      },
+      {
+       "stop": "BARRAFRANCA (Via Campania 7)",
+       "idx": 7,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 453/466)",
+       "idx": 8,
+       "arr": "14.36",
+       "dep": "14.36"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 551)",
+       "idx": 9,
+       "arr": "14.37",
+       "dep": "14.37"
+      },
+      {
+       "stop": "BARRAFRANCA (SS191 (C.da Albana))",
+       "idx": 10,
+       "arr": "14.39",
+       "dep": "14.39"
+      },
+      {
+       "stop": "PIETRAPERZIA (SS191 (Bivio Luogo))",
+       "idx": 11,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "PIETRAPERZIA (Viale della Libertà 12/13)",
+       "idx": 12,
+       "arr": "14.48",
+       "dep": "14.48"
+      },
+      {
+       "stop": "PIETRAPERZIA (Via G.Marconi 68/71)",
+       "idx": 13,
+       "arr": "14.49",
+       "dep": "14.49"
+      },
+      {
+       "stop": "PIETRAPERZIA (Via G.Marconi(incr.Via G.Pastorello))",
+       "idx": 14,
+       "arr": "14.50",
+       "dep": "14.50"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

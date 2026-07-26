@@ -1,0 +1,1812 @@
+{
+ "operator": "SAIS Autolinee",
+ "route_id": "sais-10501",
+ "name": "1 Villaggio Jungi - Ospedale",
+ "short_name": "10501",
+ "coords": "external",
+ "source": "api.saisautolinee.it line e984e214-05f5-4571-acc1-13fa63300fc6",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "SCICLI (Villaggio Jungi)",
+    "SCICLI (Viale I Maggio, 87)",
+    "SCICLI (Viale I Maggio, 15)",
+    "SCICLI (Via Bixio, 87)",
+    "SCICLI (Via Bixio fronte 66)",
+    "SCICLI (Piazza Italia)",
+    "SCICLI (Via Nazionale, 78)",
+    "SCICLI (Via Vasco da Gama fronte Bar Vindigni)",
+    "SCICLI (Via Cristoforo Colombo, 125)",
+    "SCICLI (Via Ospedale fronte ingresso)",
+    "SCICLI (Cimitero)",
+    "SCICLI (Ospedale Ingresso)",
+    "SCICLI (Via Montello)",
+    "SCICLI (Largo Gramsci)",
+    "SCICLI (Corso Garibaldi fronte 139)",
+    "SCICLI (Corso Garibaldi, 240)",
+    "SCICLI (Viale I Maggio, 36)",
+    "SCICLI (Viale I Maggio, 130)",
+    "SCICLI (Viale dei Fiori, 32)",
+    "SCICLI (Viale dei Fiori fronte Piazzale Bufalino)",
+    "SCICLI (Via Vitaliano Brancati fronte 25)",
+    "SCICLI (Viale I Maggio, 185)"
+   ],
+   "trips": [
+    {
+     "corsa": "001017",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "SCI10501_2",
+     "stops": [
+      {
+       "stop": "SCICLI (Villaggio Jungi)",
+       "idx": 0,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 87)",
+       "idx": 1,
+       "arr": "14.46",
+       "dep": "14.46"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 15)",
+       "idx": 2,
+       "arr": "14.47",
+       "dep": "14.47"
+      },
+      {
+       "stop": "SCICLI (Via Bixio, 87)",
+       "idx": 3,
+       "arr": "14.48",
+       "dep": "14.48"
+      },
+      {
+       "stop": "SCICLI (Via Bixio fronte 66)",
+       "idx": 4,
+       "arr": "14.49",
+       "dep": "14.49"
+      },
+      {
+       "stop": "SCICLI (Piazza Italia)",
+       "idx": 5,
+       "arr": "14.51",
+       "dep": "14.51"
+      },
+      {
+       "stop": "SCICLI (Via Nazionale, 78)",
+       "idx": 6,
+       "arr": "14.53",
+       "dep": "14.53"
+      },
+      {
+       "stop": "SCICLI (Via Vasco da Gama fronte Bar Vindigni)",
+       "idx": 7,
+       "arr": "14.54",
+       "dep": "14.54"
+      },
+      {
+       "stop": "SCICLI (Via Cristoforo Colombo, 125)",
+       "idx": 8,
+       "arr": "14.56",
+       "dep": "14.56"
+      },
+      {
+       "stop": "SCICLI (Via Ospedale fronte ingresso)",
+       "idx": 9,
+       "arr": "14.58",
+       "dep": "14.58"
+      },
+      {
+       "stop": "SCICLI (Cimitero)",
+       "idx": 10,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "SCICLI (Ospedale Ingresso)",
+       "idx": 11,
+       "arr": "15.02",
+       "dep": "15.02"
+      },
+      {
+       "stop": "SCICLI (Via Montello)",
+       "idx": 12,
+       "arr": "15.06",
+       "dep": "15.06"
+      },
+      {
+       "stop": "SCICLI (Largo Gramsci)",
+       "idx": 13,
+       "arr": "15.07",
+       "dep": "15.07"
+      },
+      {
+       "stop": "SCICLI (Corso Garibaldi fronte 139)",
+       "idx": 14,
+       "arr": "15.08",
+       "dep": "15.08"
+      },
+      {
+       "stop": "SCICLI (Corso Garibaldi, 240)",
+       "idx": 15,
+       "arr": "15.09",
+       "dep": "15.09"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 36)",
+       "idx": 16,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 130)",
+       "idx": 17,
+       "arr": "15.12",
+       "dep": "15.12"
+      },
+      {
+       "stop": "SCICLI (Viale dei Fiori, 32)",
+       "idx": 18,
+       "arr": "15.14",
+       "dep": "15.14"
+      },
+      {
+       "stop": "SCICLI (Viale dei Fiori fronte Piazzale Bufalino)",
+       "idx": 19,
+       "arr": "15.16",
+       "dep": "15.16"
+      },
+      {
+       "stop": "SCICLI (Via Vitaliano Brancati fronte 25)",
+       "idx": 20,
+       "arr": "15.18",
+       "dep": "15.18"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 185)",
+       "idx": 21,
+       "arr": "15.23",
+       "dep": "15.23"
+      },
+      {
+       "stop": "SCICLI (Villaggio Jungi)",
+       "idx": 22,
+       "arr": "15.25",
+       "dep": "15.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "001007",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "SCI10501_2",
+     "stops": [
+      {
+       "stop": "SCICLI (Villaggio Jungi)",
+       "idx": 0,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 87)",
+       "idx": 1,
+       "arr": "9.31",
+       "dep": "9.31"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 15)",
+       "idx": 2,
+       "arr": "9.32",
+       "dep": "9.32"
+      },
+      {
+       "stop": "SCICLI (Via Bixio, 87)",
+       "idx": 3,
+       "arr": "9.33",
+       "dep": "9.33"
+      },
+      {
+       "stop": "SCICLI (Via Bixio fronte 66)",
+       "idx": 4,
+       "arr": "9.34",
+       "dep": "9.34"
+      },
+      {
+       "stop": "SCICLI (Piazza Italia)",
+       "idx": 5,
+       "arr": "9.36",
+       "dep": "9.36"
+      },
+      {
+       "stop": "SCICLI (Via Nazionale, 78)",
+       "idx": 6,
+       "arr": "9.38",
+       "dep": "9.38"
+      },
+      {
+       "stop": "SCICLI (Via Vasco da Gama fronte Bar Vindigni)",
+       "idx": 7,
+       "arr": "9.39",
+       "dep": "9.39"
+      },
+      {
+       "stop": "SCICLI (Via Cristoforo Colombo, 125)",
+       "idx": 8,
+       "arr": "9.41",
+       "dep": "9.41"
+      },
+      {
+       "stop": "SCICLI (Via Ospedale fronte ingresso)",
+       "idx": 9,
+       "arr": "9.43",
+       "dep": "9.43"
+      },
+      {
+       "stop": "SCICLI (Cimitero)",
+       "idx": 10,
+       "arr": "9.45",
+       "dep": "9.45"
+      },
+      {
+       "stop": "SCICLI (Ospedale Ingresso)",
+       "idx": 11,
+       "arr": "9.47",
+       "dep": "9.47"
+      },
+      {
+       "stop": "SCICLI (Via Montello)",
+       "idx": 12,
+       "arr": "9.51",
+       "dep": "9.51"
+      },
+      {
+       "stop": "SCICLI (Largo Gramsci)",
+       "idx": 13,
+       "arr": "9.52",
+       "dep": "9.52"
+      },
+      {
+       "stop": "SCICLI (Corso Garibaldi fronte 139)",
+       "idx": 14,
+       "arr": "9.53",
+       "dep": "9.53"
+      },
+      {
+       "stop": "SCICLI (Corso Garibaldi, 240)",
+       "idx": 15,
+       "arr": "9.54",
+       "dep": "9.54"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 36)",
+       "idx": 16,
+       "arr": "9.55",
+       "dep": "9.55"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 130)",
+       "idx": 17,
+       "arr": "9.57",
+       "dep": "9.57"
+      },
+      {
+       "stop": "SCICLI (Viale dei Fiori, 32)",
+       "idx": 18,
+       "arr": "9.59",
+       "dep": "9.59"
+      },
+      {
+       "stop": "SCICLI (Viale dei Fiori fronte Piazzale Bufalino)",
+       "idx": 19,
+       "arr": "10.01",
+       "dep": "10.01"
+      },
+      {
+       "stop": "SCICLI (Via Vitaliano Brancati fronte 25)",
+       "idx": 20,
+       "arr": "10.03",
+       "dep": "10.03"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 185)",
+       "idx": 21,
+       "arr": "10.08",
+       "dep": "10.08"
+      },
+      {
+       "stop": "SCICLI (Villaggio Jungi)",
+       "idx": 22,
+       "arr": "10.10",
+       "dep": "10.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "001015",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "SCI10501_2",
+     "stops": [
+      {
+       "stop": "SCICLI (Villaggio Jungi)",
+       "idx": 0,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 87)",
+       "idx": 1,
+       "arr": "13.46",
+       "dep": "13.46"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 15)",
+       "idx": 2,
+       "arr": "13.47",
+       "dep": "13.47"
+      },
+      {
+       "stop": "SCICLI (Via Bixio, 87)",
+       "idx": 3,
+       "arr": "13.48",
+       "dep": "13.48"
+      },
+      {
+       "stop": "SCICLI (Via Bixio fronte 66)",
+       "idx": 4,
+       "arr": "13.49",
+       "dep": "13.49"
+      },
+      {
+       "stop": "SCICLI (Piazza Italia)",
+       "idx": 5,
+       "arr": "13.51",
+       "dep": "13.51"
+      },
+      {
+       "stop": "SCICLI (Via Nazionale, 78)",
+       "idx": 6,
+       "arr": "13.53",
+       "dep": "13.53"
+      },
+      {
+       "stop": "SCICLI (Via Vasco da Gama fronte Bar Vindigni)",
+       "idx": 7,
+       "arr": "13.54",
+       "dep": "13.54"
+      },
+      {
+       "stop": "SCICLI (Via Cristoforo Colombo, 125)",
+       "idx": 8,
+       "arr": "13.56",
+       "dep": "13.56"
+      },
+      {
+       "stop": "SCICLI (Via Ospedale fronte ingresso)",
+       "idx": 9,
+       "arr": "13.58",
+       "dep": "13.58"
+      },
+      {
+       "stop": "SCICLI (Cimitero)",
+       "idx": 10,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "SCICLI (Ospedale Ingresso)",
+       "idx": 11,
+       "arr": "14.02",
+       "dep": "14.02"
+      },
+      {
+       "stop": "SCICLI (Via Montello)",
+       "idx": 12,
+       "arr": "14.06",
+       "dep": "14.06"
+      },
+      {
+       "stop": "SCICLI (Largo Gramsci)",
+       "idx": 13,
+       "arr": "14.07",
+       "dep": "14.07"
+      },
+      {
+       "stop": "SCICLI (Corso Garibaldi fronte 139)",
+       "idx": 14,
+       "arr": "14.08",
+       "dep": "14.08"
+      },
+      {
+       "stop": "SCICLI (Corso Garibaldi, 240)",
+       "idx": 15,
+       "arr": "14.09",
+       "dep": "14.09"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 36)",
+       "idx": 16,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 130)",
+       "idx": 17,
+       "arr": "14.12",
+       "dep": "14.12"
+      },
+      {
+       "stop": "SCICLI (Viale dei Fiori, 32)",
+       "idx": 18,
+       "arr": "14.14",
+       "dep": "14.14"
+      },
+      {
+       "stop": "SCICLI (Viale dei Fiori fronte Piazzale Bufalino)",
+       "idx": 19,
+       "arr": "14.16",
+       "dep": "14.16"
+      },
+      {
+       "stop": "SCICLI (Via Vitaliano Brancati fronte 25)",
+       "idx": 20,
+       "arr": "14.18",
+       "dep": "14.18"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 185)",
+       "idx": 21,
+       "arr": "14.23",
+       "dep": "14.23"
+      },
+      {
+       "stop": "SCICLI (Villaggio Jungi)",
+       "idx": 22,
+       "arr": "14.25",
+       "dep": "14.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "001005",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "SCI10501_2",
+     "stops": [
+      {
+       "stop": "SCICLI (Villaggio Jungi)",
+       "idx": 0,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 87)",
+       "idx": 1,
+       "arr": "8.31",
+       "dep": "8.31"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 15)",
+       "idx": 2,
+       "arr": "8.32",
+       "dep": "8.32"
+      },
+      {
+       "stop": "SCICLI (Via Bixio, 87)",
+       "idx": 3,
+       "arr": "8.33",
+       "dep": "8.33"
+      },
+      {
+       "stop": "SCICLI (Via Bixio fronte 66)",
+       "idx": 4,
+       "arr": "8.34",
+       "dep": "8.34"
+      },
+      {
+       "stop": "SCICLI (Piazza Italia)",
+       "idx": 5,
+       "arr": "8.36",
+       "dep": "8.36"
+      },
+      {
+       "stop": "SCICLI (Via Nazionale, 78)",
+       "idx": 6,
+       "arr": "8.38",
+       "dep": "8.38"
+      },
+      {
+       "stop": "SCICLI (Via Vasco da Gama fronte Bar Vindigni)",
+       "idx": 7,
+       "arr": "8.39",
+       "dep": "8.39"
+      },
+      {
+       "stop": "SCICLI (Via Cristoforo Colombo, 125)",
+       "idx": 8,
+       "arr": "8.41",
+       "dep": "8.41"
+      },
+      {
+       "stop": "SCICLI (Via Ospedale fronte ingresso)",
+       "idx": 9,
+       "arr": "8.43",
+       "dep": "8.43"
+      },
+      {
+       "stop": "SCICLI (Cimitero)",
+       "idx": 10,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "SCICLI (Ospedale Ingresso)",
+       "idx": 11,
+       "arr": "8.47",
+       "dep": "8.47"
+      },
+      {
+       "stop": "SCICLI (Via Montello)",
+       "idx": 12,
+       "arr": "8.51",
+       "dep": "8.51"
+      },
+      {
+       "stop": "SCICLI (Largo Gramsci)",
+       "idx": 13,
+       "arr": "8.52",
+       "dep": "8.52"
+      },
+      {
+       "stop": "SCICLI (Corso Garibaldi fronte 139)",
+       "idx": 14,
+       "arr": "8.53",
+       "dep": "8.53"
+      },
+      {
+       "stop": "SCICLI (Corso Garibaldi, 240)",
+       "idx": 15,
+       "arr": "8.54",
+       "dep": "8.54"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 36)",
+       "idx": 16,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 130)",
+       "idx": 17,
+       "arr": "8.57",
+       "dep": "8.57"
+      },
+      {
+       "stop": "SCICLI (Viale dei Fiori, 32)",
+       "idx": 18,
+       "arr": "8.59",
+       "dep": "8.59"
+      },
+      {
+       "stop": "SCICLI (Viale dei Fiori fronte Piazzale Bufalino)",
+       "idx": 19,
+       "arr": "9.01",
+       "dep": "9.01"
+      },
+      {
+       "stop": "SCICLI (Via Vitaliano Brancati fronte 25)",
+       "idx": 20,
+       "arr": "9.03",
+       "dep": "9.03"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 185)",
+       "idx": 21,
+       "arr": "9.08",
+       "dep": "9.08"
+      },
+      {
+       "stop": "SCICLI (Villaggio Jungi)",
+       "idx": 22,
+       "arr": "9.10",
+       "dep": "9.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "001003",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "SCI10501_2",
+     "stops": [
+      {
+       "stop": "SCICLI (Villaggio Jungi)",
+       "idx": 0,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 87)",
+       "idx": 1,
+       "arr": "7.31",
+       "dep": "7.31"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 15)",
+       "idx": 2,
+       "arr": "7.32",
+       "dep": "7.32"
+      },
+      {
+       "stop": "SCICLI (Via Bixio, 87)",
+       "idx": 3,
+       "arr": "7.33",
+       "dep": "7.33"
+      },
+      {
+       "stop": "SCICLI (Via Bixio fronte 66)",
+       "idx": 4,
+       "arr": "7.34",
+       "dep": "7.34"
+      },
+      {
+       "stop": "SCICLI (Piazza Italia)",
+       "idx": 5,
+       "arr": "7.36",
+       "dep": "7.36"
+      },
+      {
+       "stop": "SCICLI (Via Nazionale, 78)",
+       "idx": 6,
+       "arr": "7.38",
+       "dep": "7.38"
+      },
+      {
+       "stop": "SCICLI (Via Vasco da Gama fronte Bar Vindigni)",
+       "idx": 7,
+       "arr": "7.39",
+       "dep": "7.39"
+      },
+      {
+       "stop": "SCICLI (Via Cristoforo Colombo, 125)",
+       "idx": 8,
+       "arr": "7.41",
+       "dep": "7.41"
+      },
+      {
+       "stop": "SCICLI (Via Ospedale fronte ingresso)",
+       "idx": 9,
+       "arr": "7.43",
+       "dep": "7.43"
+      },
+      {
+       "stop": "SCICLI (Cimitero)",
+       "idx": 10,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "SCICLI (Ospedale Ingresso)",
+       "idx": 11,
+       "arr": "7.47",
+       "dep": "7.47"
+      },
+      {
+       "stop": "SCICLI (Via Montello)",
+       "idx": 12,
+       "arr": "7.51",
+       "dep": "7.51"
+      },
+      {
+       "stop": "SCICLI (Largo Gramsci)",
+       "idx": 13,
+       "arr": "7.52",
+       "dep": "7.52"
+      },
+      {
+       "stop": "SCICLI (Corso Garibaldi fronte 139)",
+       "idx": 14,
+       "arr": "7.53",
+       "dep": "7.53"
+      },
+      {
+       "stop": "SCICLI (Corso Garibaldi, 240)",
+       "idx": 15,
+       "arr": "7.54",
+       "dep": "7.54"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 36)",
+       "idx": 16,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 130)",
+       "idx": 17,
+       "arr": "7.57",
+       "dep": "7.57"
+      },
+      {
+       "stop": "SCICLI (Viale dei Fiori, 32)",
+       "idx": 18,
+       "arr": "7.59",
+       "dep": "7.59"
+      },
+      {
+       "stop": "SCICLI (Viale dei Fiori fronte Piazzale Bufalino)",
+       "idx": 19,
+       "arr": "8.01",
+       "dep": "8.01"
+      },
+      {
+       "stop": "SCICLI (Via Vitaliano Brancati fronte 25)",
+       "idx": 20,
+       "arr": "8.03",
+       "dep": "8.03"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 185)",
+       "idx": 21,
+       "arr": "8.08",
+       "dep": "8.08"
+      },
+      {
+       "stop": "SCICLI (Villaggio Jungi)",
+       "idx": 22,
+       "arr": "8.10",
+       "dep": "8.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0010125",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "SCI10501_2",
+     "stops": [
+      {
+       "stop": "SCICLI (Villaggio Jungi)",
+       "idx": 0,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 87)",
+       "idx": 1,
+       "arr": "12.46",
+       "dep": "12.46"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 15)",
+       "idx": 2,
+       "arr": "12.47",
+       "dep": "12.47"
+      },
+      {
+       "stop": "SCICLI (Via Bixio, 87)",
+       "idx": 3,
+       "arr": "12.48",
+       "dep": "12.48"
+      },
+      {
+       "stop": "SCICLI (Via Bixio fronte 66)",
+       "idx": 4,
+       "arr": "12.49",
+       "dep": "12.49"
+      },
+      {
+       "stop": "SCICLI (Piazza Italia)",
+       "idx": 5,
+       "arr": "12.51",
+       "dep": "12.51"
+      },
+      {
+       "stop": "SCICLI (Via Nazionale, 78)",
+       "idx": 6,
+       "arr": "12.53",
+       "dep": "12.53"
+      },
+      {
+       "stop": "SCICLI (Via Vasco da Gama fronte Bar Vindigni)",
+       "idx": 7,
+       "arr": "12.54",
+       "dep": "12.54"
+      },
+      {
+       "stop": "SCICLI (Via Cristoforo Colombo, 125)",
+       "idx": 8,
+       "arr": "12.56",
+       "dep": "12.56"
+      },
+      {
+       "stop": "SCICLI (Via Ospedale fronte ingresso)",
+       "idx": 9,
+       "arr": "12.58",
+       "dep": "12.58"
+      },
+      {
+       "stop": "SCICLI (Cimitero)",
+       "idx": 10,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "SCICLI (Ospedale Ingresso)",
+       "idx": 11,
+       "arr": "13.02",
+       "dep": "13.02"
+      },
+      {
+       "stop": "SCICLI (Via Montello)",
+       "idx": 12,
+       "arr": "13.06",
+       "dep": "13.06"
+      },
+      {
+       "stop": "SCICLI (Largo Gramsci)",
+       "idx": 13,
+       "arr": "13.07",
+       "dep": "13.07"
+      },
+      {
+       "stop": "SCICLI (Corso Garibaldi fronte 139)",
+       "idx": 14,
+       "arr": "13.08",
+       "dep": "13.08"
+      },
+      {
+       "stop": "SCICLI (Corso Garibaldi, 240)",
+       "idx": 15,
+       "arr": "13.09",
+       "dep": "13.09"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 36)",
+       "idx": 16,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 130)",
+       "idx": 17,
+       "arr": "13.12",
+       "dep": "13.12"
+      },
+      {
+       "stop": "SCICLI (Viale dei Fiori, 32)",
+       "idx": 18,
+       "arr": "13.14",
+       "dep": "13.14"
+      },
+      {
+       "stop": "SCICLI (Viale dei Fiori fronte Piazzale Bufalino)",
+       "idx": 19,
+       "arr": "13.16",
+       "dep": "13.16"
+      },
+      {
+       "stop": "SCICLI (Via Vitaliano Brancati fronte 25)",
+       "idx": 20,
+       "arr": "13.18",
+       "dep": "13.18"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 185)",
+       "idx": 21,
+       "arr": "13.23",
+       "dep": "13.23"
+      },
+      {
+       "stop": "SCICLI (Villaggio Jungi)",
+       "idx": 22,
+       "arr": "13.25",
+       "dep": "13.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "001001",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "SCI10501_2",
+     "stops": [
+      {
+       "stop": "SCICLI (Villaggio Jungi)",
+       "idx": 0,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 87)",
+       "idx": 1,
+       "arr": "6.51",
+       "dep": "6.51"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 15)",
+       "idx": 2,
+       "arr": "6.52",
+       "dep": "6.52"
+      },
+      {
+       "stop": "SCICLI (Via Bixio, 87)",
+       "idx": 3,
+       "arr": "6.53",
+       "dep": "6.53"
+      },
+      {
+       "stop": "SCICLI (Via Bixio fronte 66)",
+       "idx": 4,
+       "arr": "6.54",
+       "dep": "6.54"
+      },
+      {
+       "stop": "SCICLI (Piazza Italia)",
+       "idx": 5,
+       "arr": "6.56",
+       "dep": "6.56"
+      },
+      {
+       "stop": "SCICLI (Via Nazionale, 78)",
+       "idx": 6,
+       "arr": "6.58",
+       "dep": "6.58"
+      },
+      {
+       "stop": "SCICLI (Via Vasco da Gama fronte Bar Vindigni)",
+       "idx": 7,
+       "arr": "6.59",
+       "dep": "6.59"
+      },
+      {
+       "stop": "SCICLI (Via Cristoforo Colombo, 125)",
+       "idx": 8,
+       "arr": "7.01",
+       "dep": "7.01"
+      },
+      {
+       "stop": "SCICLI (Via Ospedale fronte ingresso)",
+       "idx": 9,
+       "arr": "7.03",
+       "dep": "7.03"
+      },
+      {
+       "stop": "SCICLI (Cimitero)",
+       "idx": 10,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "SCICLI (Ospedale Ingresso)",
+       "idx": 11,
+       "arr": "7.07",
+       "dep": "7.07"
+      },
+      {
+       "stop": "SCICLI (Via Montello)",
+       "idx": 12,
+       "arr": "7.11",
+       "dep": "7.11"
+      },
+      {
+       "stop": "SCICLI (Largo Gramsci)",
+       "idx": 13,
+       "arr": "7.12",
+       "dep": "7.12"
+      },
+      {
+       "stop": "SCICLI (Corso Garibaldi fronte 139)",
+       "idx": 14,
+       "arr": "7.13",
+       "dep": "7.13"
+      },
+      {
+       "stop": "SCICLI (Corso Garibaldi, 240)",
+       "idx": 15,
+       "arr": "7.14",
+       "dep": "7.14"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 36)",
+       "idx": 16,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 130)",
+       "idx": 17,
+       "arr": "7.17",
+       "dep": "7.17"
+      },
+      {
+       "stop": "SCICLI (Viale dei Fiori, 32)",
+       "idx": 18,
+       "arr": "7.19",
+       "dep": "7.19"
+      },
+      {
+       "stop": "SCICLI (Viale dei Fiori fronte Piazzale Bufalino)",
+       "idx": 19,
+       "arr": "7.21",
+       "dep": "7.21"
+      },
+      {
+       "stop": "SCICLI (Via Vitaliano Brancati fronte 25)",
+       "idx": 20,
+       "arr": "7.23",
+       "dep": "7.23"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 185)",
+       "idx": 21,
+       "arr": "7.28",
+       "dep": "7.28"
+      },
+      {
+       "stop": "SCICLI (Villaggio Jungi)",
+       "idx": 22,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "001009",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "SCI10501_2",
+     "stops": [
+      {
+       "stop": "SCICLI (Villaggio Jungi)",
+       "idx": 0,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 87)",
+       "idx": 1,
+       "arr": "10.31",
+       "dep": "10.31"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 15)",
+       "idx": 2,
+       "arr": "10.32",
+       "dep": "10.32"
+      },
+      {
+       "stop": "SCICLI (Via Bixio, 87)",
+       "idx": 3,
+       "arr": "10.33",
+       "dep": "10.33"
+      },
+      {
+       "stop": "SCICLI (Via Bixio fronte 66)",
+       "idx": 4,
+       "arr": "10.34",
+       "dep": "10.34"
+      },
+      {
+       "stop": "SCICLI (Piazza Italia)",
+       "idx": 5,
+       "arr": "10.36",
+       "dep": "10.36"
+      },
+      {
+       "stop": "SCICLI (Via Nazionale, 78)",
+       "idx": 6,
+       "arr": "10.38",
+       "dep": "10.38"
+      },
+      {
+       "stop": "SCICLI (Via Vasco da Gama fronte Bar Vindigni)",
+       "idx": 7,
+       "arr": "10.39",
+       "dep": "10.39"
+      },
+      {
+       "stop": "SCICLI (Via Cristoforo Colombo, 125)",
+       "idx": 8,
+       "arr": "10.41",
+       "dep": "10.41"
+      },
+      {
+       "stop": "SCICLI (Via Ospedale fronte ingresso)",
+       "idx": 9,
+       "arr": "10.43",
+       "dep": "10.43"
+      },
+      {
+       "stop": "SCICLI (Cimitero)",
+       "idx": 10,
+       "arr": "10.45",
+       "dep": "10.45"
+      },
+      {
+       "stop": "SCICLI (Ospedale Ingresso)",
+       "idx": 11,
+       "arr": "10.47",
+       "dep": "10.47"
+      },
+      {
+       "stop": "SCICLI (Via Montello)",
+       "idx": 12,
+       "arr": "10.51",
+       "dep": "10.51"
+      },
+      {
+       "stop": "SCICLI (Largo Gramsci)",
+       "idx": 13,
+       "arr": "10.52",
+       "dep": "10.52"
+      },
+      {
+       "stop": "SCICLI (Corso Garibaldi fronte 139)",
+       "idx": 14,
+       "arr": "10.53",
+       "dep": "10.53"
+      },
+      {
+       "stop": "SCICLI (Corso Garibaldi, 240)",
+       "idx": 15,
+       "arr": "10.54",
+       "dep": "10.54"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 36)",
+       "idx": 16,
+       "arr": "10.55",
+       "dep": "10.55"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 130)",
+       "idx": 17,
+       "arr": "10.57",
+       "dep": "10.57"
+      },
+      {
+       "stop": "SCICLI (Viale dei Fiori, 32)",
+       "idx": 18,
+       "arr": "10.59",
+       "dep": "10.59"
+      },
+      {
+       "stop": "SCICLI (Viale dei Fiori fronte Piazzale Bufalino)",
+       "idx": 19,
+       "arr": "11.01",
+       "dep": "11.01"
+      },
+      {
+       "stop": "SCICLI (Via Vitaliano Brancati fronte 25)",
+       "idx": 20,
+       "arr": "11.03",
+       "dep": "11.03"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 185)",
+       "idx": 21,
+       "arr": "11.08",
+       "dep": "11.08"
+      },
+      {
+       "stop": "SCICLI (Villaggio Jungi)",
+       "idx": 22,
+       "arr": "11.10",
+       "dep": "11.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "001011",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "43 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "SCI10501_2",
+     "stops": [
+      {
+       "stop": "SCICLI (Villaggio Jungi)",
+       "idx": 0,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 87)",
+       "idx": 1,
+       "arr": "11.31",
+       "dep": "11.31"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 15)",
+       "idx": 2,
+       "arr": "11.32",
+       "dep": "11.32"
+      },
+      {
+       "stop": "SCICLI (Via Bixio, 87)",
+       "idx": 3,
+       "arr": "11.33",
+       "dep": "11.33"
+      },
+      {
+       "stop": "SCICLI (Via Bixio fronte 66)",
+       "idx": 4,
+       "arr": "11.34",
+       "dep": "11.34"
+      },
+      {
+       "stop": "SCICLI (Piazza Italia)",
+       "idx": 5,
+       "arr": "11.36",
+       "dep": "11.36"
+      },
+      {
+       "stop": "SCICLI (Via Nazionale, 78)",
+       "idx": 6,
+       "arr": "11.38",
+       "dep": "11.38"
+      },
+      {
+       "stop": "SCICLI (Via Vasco da Gama fronte Bar Vindigni)",
+       "idx": 7,
+       "arr": "11.39",
+       "dep": "11.39"
+      },
+      {
+       "stop": "SCICLI (Via Cristoforo Colombo, 125)",
+       "idx": 8,
+       "arr": "11.41",
+       "dep": "11.41"
+      },
+      {
+       "stop": "SCICLI (Via Ospedale fronte ingresso)",
+       "idx": 9,
+       "arr": "11.43",
+       "dep": "11.43"
+      },
+      {
+       "stop": "SCICLI (Cimitero)",
+       "idx": 10,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "SCICLI (Ospedale Ingresso)",
+       "idx": 11,
+       "arr": "11.47",
+       "dep": "11.47"
+      },
+      {
+       "stop": "SCICLI (Via Montello)",
+       "idx": 12,
+       "arr": "11.51",
+       "dep": "11.51"
+      },
+      {
+       "stop": "SCICLI (Largo Gramsci)",
+       "idx": 13,
+       "arr": "11.52",
+       "dep": "11.52"
+      },
+      {
+       "stop": "SCICLI (Corso Garibaldi fronte 139)",
+       "idx": 14,
+       "arr": "11.53",
+       "dep": "11.53"
+      },
+      {
+       "stop": "SCICLI (Corso Garibaldi, 240)",
+       "idx": 15,
+       "arr": "11.54",
+       "dep": "11.54"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 36)",
+       "idx": 16,
+       "arr": "11.55",
+       "dep": "11.55"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 130)",
+       "idx": 17,
+       "arr": "11.57",
+       "dep": "11.57"
+      },
+      {
+       "stop": "SCICLI (Viale dei Fiori, 32)",
+       "idx": 18,
+       "arr": "11.59",
+       "dep": "11.59"
+      },
+      {
+       "stop": "SCICLI (Viale dei Fiori fronte Piazzale Bufalino)",
+       "idx": 19,
+       "arr": "12.01",
+       "dep": "12.01"
+      },
+      {
+       "stop": "SCICLI (Via Vitaliano Brancati fronte 25)",
+       "idx": 20,
+       "arr": "12.03",
+       "dep": "12.03"
+      },
+      {
+       "stop": "SCICLI (Viale I Maggio, 185)",
+       "idx": 21,
+       "arr": "12.08",
+       "dep": "12.08"
+      },
+      {
+       "stop": "SCICLI (Villaggio Jungi)",
+       "idx": 22,
+       "arr": "12.10",
+       "dep": "12.10"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

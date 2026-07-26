@@ -1,0 +1,1532 @@
+{
+ "operator": "SAIS Autolinee",
+ "route_id": "sais-2170",
+ "name": "Messina - Palermo",
+ "short_name": "2170",
+ "coords": "external",
+ "source": "api.saisautolinee.it line b87e260c-c940-4969-94c6-763a6aae1422",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "MESSINA (Stazione - T.Bus Piazza della Repubblica)",
+    "MESSINA (Viale Boccetta(Chiesa S.Francesco))",
+    "PALERMO (Via Oreto 464)",
+    "PALERMO (Stazione - T.Bus Via Fazello)",
+    "ROCCA DI CAPRI LEONE (Via Provinciale (Campo Sportivo))"
+   ],
+   "trips": [
+    {
+     "corsa": "adeguamento 8",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "35 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11"
+      ]
+     },
+     "reverse": false,
+     "variant": "ME - PA Dir",
+     "stops": [
+      {
+       "stop": "MESSINA (Stazione - T.Bus Piazza della Repubblica)",
+       "idx": 0,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "MESSINA (Viale Boccetta(Chiesa S.Francesco))",
+       "idx": 1,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "PALERMO (Via Oreto 464)",
+       "idx": 2,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "PALERMO (Stazione - T.Bus Via Fazello)",
+       "idx": 3,
+       "arr": "9.15",
+       "dep": "9.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "AGG-120",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "9 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "ME - PA Dir",
+     "stops": [
+      {
+       "stop": "MESSINA (Stazione - T.Bus Piazza della Repubblica)",
+       "idx": 0,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "MESSINA (Viale Boccetta(Chiesa S.Francesco))",
+       "idx": 1,
+       "arr": "18.35",
+       "dep": "18.35"
+      },
+      {
+       "stop": "PALERMO (Via Oreto 464)",
+       "idx": 2,
+       "arr": "21.10",
+       "dep": "21.10"
+      },
+      {
+       "stop": "PALERMO (Stazione - T.Bus Via Fazello)",
+       "idx": 3,
+       "arr": "21.15",
+       "dep": "21.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "AGG-121",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "44 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "ME - PA Dir",
+     "stops": [
+      {
+       "stop": "MESSINA (Stazione - T.Bus Piazza della Repubblica)",
+       "idx": 0,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "MESSINA (Viale Boccetta(Chiesa S.Francesco))",
+       "idx": 1,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "PALERMO (Via Oreto 464)",
+       "idx": 2,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "PALERMO (Stazione - T.Bus Via Fazello)",
+       "idx": 3,
+       "arr": "14.45",
+       "dep": "14.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8863",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "ME - PA Dir",
+     "stops": [
+      {
+       "stop": "MESSINA (Stazione - T.Bus Piazza della Repubblica)",
+       "idx": 0,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "MESSINA (Viale Boccetta(Chiesa S.Francesco))",
+       "idx": 1,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "PALERMO (Via Oreto 464)",
+       "idx": 2,
+       "arr": "20.40",
+       "dep": "20.40"
+      },
+      {
+       "stop": "PALERMO (Stazione - T.Bus Via Fazello)",
+       "idx": 3,
+       "arr": "20.45",
+       "dep": "20.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "886302",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "9 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "ME - PA Dir",
+     "stops": [
+      {
+       "stop": "MESSINA (Stazione - T.Bus Piazza della Repubblica)",
+       "idx": 0,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "MESSINA (Viale Boccetta(Chiesa S.Francesco))",
+       "idx": 1,
+       "arr": "17.35",
+       "dep": "17.35"
+      },
+      {
+       "stop": "PALERMO (Via Oreto 464)",
+       "idx": 2,
+       "arr": "20.10",
+       "dep": "20.10"
+      },
+      {
+       "stop": "PALERMO (Stazione - T.Bus Via Fazello)",
+       "idx": 3,
+       "arr": "20.15",
+       "dep": "20.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8860",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "ME - PA Dir",
+     "stops": [
+      {
+       "stop": "MESSINA (Stazione - T.Bus Piazza della Repubblica)",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "MESSINA (Viale Boccetta(Chiesa S.Francesco))",
+       "idx": 1,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "PALERMO (Via Oreto 464)",
+       "idx": 2,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "PALERMO (Stazione - T.Bus Via Fazello)",
+       "idx": 3,
+       "arr": "17.00",
+       "dep": "17.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "AGGIUNTA 52",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "35 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11"
+      ]
+     },
+     "reverse": false,
+     "variant": "ME - Rocca - PA",
+     "stops": [
+      {
+       "stop": "MESSINA (Stazione - T.Bus Piazza della Repubblica)",
+       "idx": 0,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "MESSINA (Viale Boccetta(Chiesa S.Francesco))",
+       "idx": 1,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "ROCCA DI CAPRI LEONE (Via Provinciale (Campo Sportivo))",
+       "idx": 2,
+       "arr": "17.10",
+       "dep": "17.10"
+      },
+      {
+       "stop": "PALERMO (Via Oreto 464)",
+       "idx": 3,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "PALERMO (Stazione - T.Bus Via Fazello)",
+       "idx": 4,
+       "arr": "18.50",
+       "dep": "18.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8859",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "ME - Rocca - PA",
+     "stops": [
+      {
+       "stop": "MESSINA (Stazione - T.Bus Piazza della Repubblica)",
+       "idx": 0,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "MESSINA (Viale Boccetta(Chiesa S.Francesco))",
+       "idx": 1,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "ROCCA DI CAPRI LEONE (Via Provinciale (Campo Sportivo))",
+       "idx": 2,
+       "arr": "10.10",
+       "dep": "10.10"
+      },
+      {
+       "stop": "PALERMO (Via Oreto 464)",
+       "idx": 3,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "PALERMO (Stazione - T.Bus Via Fazello)",
+       "idx": 4,
+       "arr": "11.50",
+       "dep": "11.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2390",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "35 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11"
+      ]
+     },
+     "reverse": false,
+     "variant": "ME - Rocca - PA",
+     "stops": [
+      {
+       "stop": "MESSINA (Stazione - T.Bus Piazza della Repubblica)",
+       "idx": 0,
+       "arr": "4.40",
+       "dep": "4.40"
+      },
+      {
+       "stop": "MESSINA (Viale Boccetta(Chiesa S.Francesco))",
+       "idx": 1,
+       "arr": "4.45",
+       "dep": "4.45"
+      },
+      {
+       "stop": "ROCCA DI CAPRI LEONE (Via Provinciale (Campo Sportivo))",
+       "idx": 2,
+       "arr": "5.50",
+       "dep": "5.50"
+      },
+      {
+       "stop": "PALERMO (Via Oreto 464)",
+       "idx": 3,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "PALERMO (Stazione - T.Bus Via Fazello)",
+       "idx": 4,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "PALERMO (Stazione - T.Bus Via Fazello)",
+    "PALERMO (Via Oreto 385)",
+    "MESSINA (Viale Boccetta(fronte Chiesa S.Francesco))",
+    "MESSINA (Stazione - T.Bus Piazza della Repubblica)",
+    "ROCCA DI CAPRI LEONE (Via Provinciale (Campo Sportivo))"
+   ],
+   "trips": [
+    {
+     "corsa": "8906",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "35 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11"
+      ]
+     },
+     "reverse": true,
+     "variant": "PA - ME Dir",
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione - T.Bus Via Fazello)",
+       "idx": 0,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "PALERMO (Via Oreto 385)",
+       "idx": 1,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "MESSINA (Viale Boccetta(fronte Chiesa S.Francesco))",
+       "idx": 2,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "MESSINA (Stazione - T.Bus Piazza della Repubblica)",
+       "idx": 3,
+       "arr": "9.15",
+       "dep": "9.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "89062",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "16 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "PA - ME Dir",
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione - T.Bus Via Fazello)",
+       "idx": 0,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "PALERMO (Via Oreto 385)",
+       "idx": 1,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "MESSINA (Viale Boccetta(fronte Chiesa S.Francesco))",
+       "idx": 2,
+       "arr": "20.40",
+       "dep": "20.40"
+      },
+      {
+       "stop": "MESSINA (Stazione - T.Bus Piazza della Repubblica)",
+       "idx": 3,
+       "arr": "20.45",
+       "dep": "20.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "AGG-122",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "35 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11"
+      ]
+     },
+     "reverse": true,
+     "variant": "PA - ME Dir",
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione - T.Bus Via Fazello)",
+       "idx": 0,
+       "arr": "5.00",
+       "dep": "5.00"
+      },
+      {
+       "stop": "PALERMO (Via Oreto 385)",
+       "idx": 1,
+       "arr": "5.05",
+       "dep": "5.05"
+      },
+      {
+       "stop": "MESSINA (Viale Boccetta(fronte Chiesa S.Francesco))",
+       "idx": 2,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "MESSINA (Stazione - T.Bus Piazza della Repubblica)",
+       "idx": 3,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "AGG-124",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "9 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "PA - ME Dir",
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione - T.Bus Via Fazello)",
+       "idx": 0,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "PALERMO (Via Oreto 385)",
+       "idx": 1,
+       "arr": "17.35",
+       "dep": "17.35"
+      },
+      {
+       "stop": "MESSINA (Viale Boccetta(fronte Chiesa S.Francesco))",
+       "idx": 2,
+       "arr": "20.10",
+       "dep": "20.10"
+      },
+      {
+       "stop": "MESSINA (Stazione - T.Bus Piazza della Repubblica)",
+       "idx": 3,
+       "arr": "20.15",
+       "dep": "20.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "AGG-123",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "9 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "PA - ME Dir",
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione - T.Bus Via Fazello)",
+       "idx": 0,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "PALERMO (Via Oreto 385)",
+       "idx": 1,
+       "arr": "18.35",
+       "dep": "18.35"
+      },
+      {
+       "stop": "MESSINA (Viale Boccetta(fronte Chiesa S.Francesco))",
+       "idx": 2,
+       "arr": "21.10",
+       "dep": "21.10"
+      },
+      {
+       "stop": "MESSINA (Stazione - T.Bus Piazza della Repubblica)",
+       "idx": 3,
+       "arr": "21.15",
+       "dep": "21.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8901",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "35 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11"
+      ]
+     },
+     "reverse": true,
+     "variant": "PA - ME Dir",
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione - T.Bus Via Fazello)",
+       "idx": 0,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "PALERMO (Via Oreto 385)",
+       "idx": 1,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "MESSINA (Viale Boccetta(fronte Chiesa S.Francesco))",
+       "idx": 2,
+       "arr": "18.40",
+       "dep": "18.40"
+      },
+      {
+       "stop": "MESSINA (Stazione - T.Bus Piazza della Repubblica)",
+       "idx": 3,
+       "arr": "18.45",
+       "dep": "18.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8902",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "PA - ME Dir",
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione - T.Bus Via Fazello)",
+       "idx": 0,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "PALERMO (Via Oreto 385)",
+       "idx": 1,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "MESSINA (Viale Boccetta(fronte Chiesa S.Francesco))",
+       "idx": 2,
+       "arr": "11.40",
+       "dep": "11.40"
+      },
+      {
+       "stop": "MESSINA (Stazione - T.Bus Piazza della Repubblica)",
+       "idx": 3,
+       "arr": "11.45",
+       "dep": "11.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8904",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "PA - Rocca - ME",
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione - T.Bus Via Fazello)",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "PALERMO (Via Oreto 385)",
+       "idx": 1,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "ROCCA DI CAPRI LEONE (Via Provinciale (Campo Sportivo))",
+       "idx": 2,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "MESSINA (Viale Boccetta(fronte Chiesa S.Francesco))",
+       "idx": 3,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "MESSINA (Stazione - T.Bus Piazza della Repubblica)",
+       "idx": 4,
+       "arr": "17.05",
+       "dep": "17.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8901",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "35 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11"
+      ]
+     },
+     "reverse": true,
+     "variant": "PA - Rocca - ME",
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione - T.Bus Via Fazello)",
+       "idx": 0,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "PALERMO (Via Oreto 385)",
+       "idx": 1,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "ROCCA DI CAPRI LEONE (Via Provinciale (Campo Sportivo))",
+       "idx": 2,
+       "arr": "17.40",
+       "dep": "17.40"
+      },
+      {
+       "stop": "MESSINA (Viale Boccetta(fronte Chiesa S.Francesco))",
+       "idx": 3,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "MESSINA (Stazione - T.Bus Piazza della Repubblica)",
+       "idx": 4,
+       "arr": "18.50",
+       "dep": "18.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8903",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "35 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11"
+      ]
+     },
+     "reverse": true,
+     "variant": "PA - Rocca - ME",
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione - T.Bus Via Fazello)",
+       "idx": 0,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "PALERMO (Via Oreto 385)",
+       "idx": 1,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "ROCCA DI CAPRI LEONE (Via Provinciale (Campo Sportivo))",
+       "idx": 2,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "MESSINA (Viale Boccetta(fronte Chiesa S.Francesco))",
+       "idx": 3,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "MESSINA (Stazione - T.Bus Piazza della Repubblica)",
+       "idx": 4,
+       "arr": "14.50",
+       "dep": "14.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "AGGIUNTA 53",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "35 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11"
+      ]
+     },
+     "reverse": true,
+     "variant": "PA - Rocca - ME",
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione - T.Bus Via Fazello)",
+       "idx": 0,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "PALERMO (Via Oreto 385)",
+       "idx": 1,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "ROCCA DI CAPRI LEONE (Via Provinciale (Campo Sportivo))",
+       "idx": 2,
+       "arr": "19.40",
+       "dep": "19.40"
+      },
+      {
+       "stop": "MESSINA (Viale Boccetta(fronte Chiesa S.Francesco))",
+       "idx": 3,
+       "arr": "20.45",
+       "dep": "20.45"
+      },
+      {
+       "stop": "MESSINA (Stazione - T.Bus Piazza della Repubblica)",
+       "idx": 4,
+       "arr": "20.50",
+       "dep": "20.50"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

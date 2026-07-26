@@ -1,0 +1,1658 @@
+{
+ "operator": "SAIS Autolinee",
+ "route_id": "sais-3170",
+ "name": "Catania-Enna",
+ "short_name": "3170",
+ "coords": "external",
+ "source": "api.saisautolinee.it line 40c1bbc9-b533-4135-8540-9f7cc1eb9ac0",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "CATANIA (Stazione - T.Bus Via Archimede)",
+    "CATANIA (Piazza P.Borsellino)",
+    "CATANIA (Via Domenico Tempio 30)",
+    "CATANIA (Via S.Giuseppe alla Rena 86/b)",
+    "CATANIAAEROPORTO (Terminal Bus)",
+    "DITTAINO (Sicilia Outlet)",
+    "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+    "ENNA (Terminal Bus Viale Diaz 80)"
+   ],
+   "trips": [
+    {
+     "corsa": "8895",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "CT-EN",
+     "stops": [
+      {
+       "stop": "CATANIA (Stazione - T.Bus Via Archimede)",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "CATANIA (Piazza P.Borsellino)",
+       "idx": 1,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "CATANIA (Via Domenico Tempio 30)",
+       "idx": 2,
+       "arr": "8.06",
+       "dep": "8.06"
+      },
+      {
+       "stop": "CATANIA (Via S.Giuseppe alla Rena 86/b)",
+       "idx": 3,
+       "arr": "8.08",
+       "dep": "8.08"
+      },
+      {
+       "stop": "CATANIAAEROPORTO (Terminal Bus)",
+       "idx": 4,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "DITTAINO (Sicilia Outlet)",
+       "idx": 5,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 6,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 7,
+       "arr": "9.30",
+       "dep": "9.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "AGG-173",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "CT-EN",
+     "stops": [
+      {
+       "stop": "CATANIA (Stazione - T.Bus Via Archimede)",
+       "idx": 0,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "CATANIA (Piazza P.Borsellino)",
+       "idx": 1,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "CATANIA (Via Domenico Tempio 30)",
+       "idx": 2,
+       "arr": "18.06",
+       "dep": "18.06"
+      },
+      {
+       "stop": "CATANIA (Via S.Giuseppe alla Rena 86/b)",
+       "idx": 3,
+       "arr": "18.08",
+       "dep": "18.08"
+      },
+      {
+       "stop": "CATANIAAEROPORTO (Terminal Bus)",
+       "idx": 4,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "DITTAINO (Sicilia Outlet)",
+       "idx": 5,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 6,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 7,
+       "arr": "19.30",
+       "dep": "19.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "aggiunta 15",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "CT-EN",
+     "stops": [
+      {
+       "stop": "CATANIA (Stazione - T.Bus Via Archimede)",
+       "idx": 0,
+       "arr": "20.30",
+       "dep": "20.30"
+      },
+      {
+       "stop": "CATANIA (Piazza P.Borsellino)",
+       "idx": 1,
+       "arr": "20.35",
+       "dep": "20.35"
+      },
+      {
+       "stop": "CATANIA (Via Domenico Tempio 30)",
+       "idx": 2,
+       "arr": "20.36",
+       "dep": "20.36"
+      },
+      {
+       "stop": "CATANIA (Via S.Giuseppe alla Rena 86/b)",
+       "idx": 3,
+       "arr": "20.38",
+       "dep": "20.38"
+      },
+      {
+       "stop": "CATANIAAEROPORTO (Terminal Bus)",
+       "idx": 4,
+       "arr": "20.40",
+       "dep": "20.40"
+      },
+      {
+       "stop": "DITTAINO (Sicilia Outlet)",
+       "idx": 5,
+       "arr": "21.30",
+       "dep": "21.30"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 6,
+       "arr": "21.50",
+       "dep": "21.50"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 7,
+       "arr": "22.00",
+       "dep": "22.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "AGG-172",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "35 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11"
+      ]
+     },
+     "reverse": false,
+     "variant": "CT-EN",
+     "stops": [
+      {
+       "stop": "CATANIA (Stazione - T.Bus Via Archimede)",
+       "idx": 0,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "CATANIA (Piazza P.Borsellino)",
+       "idx": 1,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "CATANIA (Via Domenico Tempio 30)",
+       "idx": 2,
+       "arr": "6.21",
+       "dep": "6.21"
+      },
+      {
+       "stop": "CATANIA (Via S.Giuseppe alla Rena 86/b)",
+       "idx": 3,
+       "arr": "6.23",
+       "dep": "6.23"
+      },
+      {
+       "stop": "CATANIAAEROPORTO (Terminal Bus)",
+       "idx": 4,
+       "arr": "6.25",
+       "dep": "6.25"
+      },
+      {
+       "stop": "DITTAINO (Sicilia Outlet)",
+       "idx": 5,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 6,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 7,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8900",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "9 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "CT-EN",
+     "stops": [
+      {
+       "stop": "CATANIA (Stazione - T.Bus Via Archimede)",
+       "idx": 0,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "CATANIA (Piazza P.Borsellino)",
+       "idx": 1,
+       "arr": "19.05",
+       "dep": "19.05"
+      },
+      {
+       "stop": "CATANIA (Via Domenico Tempio 30)",
+       "idx": 2,
+       "arr": "19.06",
+       "dep": "19.06"
+      },
+      {
+       "stop": "CATANIA (Via S.Giuseppe alla Rena 86/b)",
+       "idx": 3,
+       "arr": "19.08",
+       "dep": "19.08"
+      },
+      {
+       "stop": "CATANIAAEROPORTO (Terminal Bus)",
+       "idx": 4,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "DITTAINO (Sicilia Outlet)",
+       "idx": 5,
+       "arr": "20.00",
+       "dep": "20.00"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 6,
+       "arr": "20.20",
+       "dep": "20.20"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 7,
+       "arr": "20.30",
+       "dep": "20.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "60128",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "35 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11"
+      ]
+     },
+     "reverse": false,
+     "variant": "CT-EN",
+     "stops": [
+      {
+       "stop": "CATANIA (Stazione - T.Bus Via Archimede)",
+       "idx": 0,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "CATANIA (Piazza P.Borsellino)",
+       "idx": 1,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "CATANIA (Via Domenico Tempio 30)",
+       "idx": 2,
+       "arr": "12.06",
+       "dep": "12.06"
+      },
+      {
+       "stop": "CATANIA (Via S.Giuseppe alla Rena 86/b)",
+       "idx": 3,
+       "arr": "12.08",
+       "dep": "12.08"
+      },
+      {
+       "stop": "CATANIAAEROPORTO (Terminal Bus)",
+       "idx": 4,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "DITTAINO (Sicilia Outlet)",
+       "idx": 5,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 6,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 7,
+       "arr": "13.30",
+       "dep": "13.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8898",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "9 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "CT-EN",
+     "stops": [
+      {
+       "stop": "CATANIA (Stazione - T.Bus Via Archimede)",
+       "idx": 0,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "CATANIA (Piazza P.Borsellino)",
+       "idx": 1,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "CATANIA (Via Domenico Tempio 30)",
+       "idx": 2,
+       "arr": "9.06",
+       "dep": "9.06"
+      },
+      {
+       "stop": "CATANIA (Via S.Giuseppe alla Rena 86/b)",
+       "idx": 3,
+       "arr": "9.08",
+       "dep": "9.08"
+      },
+      {
+       "stop": "CATANIAAEROPORTO (Terminal Bus)",
+       "idx": 4,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "DITTAINO (Sicilia Outlet)",
+       "idx": 5,
+       "arr": "10.00",
+       "dep": "10.00"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 6,
+       "arr": "10.20",
+       "dep": "10.20"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 7,
+       "arr": "10.30",
+       "dep": "10.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8899",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "variant": "CT-EN",
+     "stops": [
+      {
+       "stop": "CATANIA (Stazione - T.Bus Via Archimede)",
+       "idx": 0,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "CATANIA (Piazza P.Borsellino)",
+       "idx": 1,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "CATANIA (Via Domenico Tempio 30)",
+       "idx": 2,
+       "arr": "16.06",
+       "dep": "16.06"
+      },
+      {
+       "stop": "CATANIA (Via S.Giuseppe alla Rena 86/b)",
+       "idx": 3,
+       "arr": "16.08",
+       "dep": "16.08"
+      },
+      {
+       "stop": "CATANIAAEROPORTO (Terminal Bus)",
+       "idx": 4,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "DITTAINO (Sicilia Outlet)",
+       "idx": 5,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 6,
+       "arr": "17.20",
+       "dep": "17.20"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 7,
+       "arr": "17.30",
+       "dep": "17.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "ENNA (Terminal Bus Viale Diaz 80)",
+    "ENNA (Via S.Agata 82)",
+    "ENNA (Via Pergusa 210 (ex Vigorelli))",
+    "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+    "DITTAINO (Sicilia Outlet)",
+    "CATANIA (Via Fontanarossa(Aeroporto Militare))",
+    "CATANIAAEROPORTO (Terminal Bus.)",
+    "CATANIA (Via S.Giuseppe alla Rena 69)",
+    "CATANIA (Via Domenico Tempio (Fermata Tempio Est 1))",
+    "CATANIA (Piazza Martiri della Libertà)",
+    "CATANIA (Stazione - T.Bus Via Archimede)"
+   ],
+   "trips": [
+    {
+     "corsa": "AGG-175",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "variant": "EN-CT",
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "ENNA (Via S.Agata 82)",
+       "idx": 1,
+       "arr": "14.16",
+       "dep": "14.16"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
+       "idx": 2,
+       "arr": "14.18",
+       "dep": "14.18"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 3,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "DITTAINO (Sicilia Outlet)",
+       "idx": 4,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "CATANIA (Via Fontanarossa(Aeroporto Militare))",
+       "idx": 5,
+       "arr": "15.32",
+       "dep": "15.32"
+      },
+      {
+       "stop": "CATANIAAEROPORTO (Terminal Bus.)",
+       "idx": 6,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "CATANIA (Via S.Giuseppe alla Rena 69)",
+       "idx": 7,
+       "arr": "15.36",
+       "dep": "15.36"
+      },
+      {
+       "stop": "CATANIA (Via Domenico Tempio (Fermata Tempio Est 1))",
+       "idx": 8,
+       "arr": "15.38",
+       "dep": "15.38"
+      },
+      {
+       "stop": "CATANIA (Piazza Martiri della Libertà)",
+       "idx": 9,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "CATANIA (Stazione - T.Bus Via Archimede)",
+       "idx": 10,
+       "arr": "15.45",
+       "dep": "15.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "AGGIUNTA 12 B",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "variant": "EN-CT",
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "ENNA (Via S.Agata 82)",
+       "idx": 1,
+       "arr": "8.01",
+       "dep": "8.01"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
+       "idx": 2,
+       "arr": "8.03",
+       "dep": "8.03"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 3,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "DITTAINO (Sicilia Outlet)",
+       "idx": 4,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "CATANIA (Via Fontanarossa(Aeroporto Militare))",
+       "idx": 5,
+       "arr": "9.17",
+       "dep": "9.17"
+      },
+      {
+       "stop": "CATANIAAEROPORTO (Terminal Bus.)",
+       "idx": 6,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "CATANIA (Via S.Giuseppe alla Rena 69)",
+       "idx": 7,
+       "arr": "9.21",
+       "dep": "9.21"
+      },
+      {
+       "stop": "CATANIA (Via Domenico Tempio (Fermata Tempio Est 1))",
+       "idx": 8,
+       "arr": "9.23",
+       "dep": "9.23"
+      },
+      {
+       "stop": "CATANIA (Piazza Martiri della Libertà)",
+       "idx": 9,
+       "arr": "9.25",
+       "dep": "9.25"
+      },
+      {
+       "stop": "CATANIA (Stazione - T.Bus Via Archimede)",
+       "idx": 10,
+       "arr": "9.30",
+       "dep": "9.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "aggiunta 14",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "44 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "EN-CT",
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 0,
+       "arr": "11.15",
+       "dep": "11.15"
+      },
+      {
+       "stop": "ENNA (Via S.Agata 82)",
+       "idx": 1,
+       "arr": "11.16",
+       "dep": "11.16"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
+       "idx": 2,
+       "arr": "11.18",
+       "dep": "11.18"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 3,
+       "arr": "11.25",
+       "dep": "11.25"
+      },
+      {
+       "stop": "DITTAINO (Sicilia Outlet)",
+       "idx": 4,
+       "arr": "11.40",
+       "dep": "11.40"
+      },
+      {
+       "stop": "CATANIA (Via Fontanarossa(Aeroporto Militare))",
+       "idx": 5,
+       "arr": "12.32",
+       "dep": "12.32"
+      },
+      {
+       "stop": "CATANIAAEROPORTO (Terminal Bus.)",
+       "idx": 6,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "CATANIA (Via S.Giuseppe alla Rena 69)",
+       "idx": 7,
+       "arr": "12.36",
+       "dep": "12.36"
+      },
+      {
+       "stop": "CATANIA (Via Domenico Tempio (Fermata Tempio Est 1))",
+       "idx": 8,
+       "arr": "12.38",
+       "dep": "12.38"
+      },
+      {
+       "stop": "CATANIA (Piazza Martiri della Libertà)",
+       "idx": 9,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "CATANIA (Stazione - T.Bus Via Archimede)",
+       "idx": 10,
+       "arr": "12.45",
+       "dep": "12.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8946",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "EN-CT",
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 0,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "ENNA (Via S.Agata 82)",
+       "idx": 1,
+       "arr": "18.01",
+       "dep": "18.01"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
+       "idx": 2,
+       "arr": "18.03",
+       "dep": "18.03"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 3,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "DITTAINO (Sicilia Outlet)",
+       "idx": 4,
+       "arr": "18.25",
+       "dep": "18.25"
+      },
+      {
+       "stop": "CATANIA (Via Fontanarossa(Aeroporto Militare))",
+       "idx": 5,
+       "arr": "19.17",
+       "dep": "19.17"
+      },
+      {
+       "stop": "CATANIAAEROPORTO (Terminal Bus.)",
+       "idx": 6,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "CATANIA (Via S.Giuseppe alla Rena 69)",
+       "idx": 7,
+       "arr": "19.21",
+       "dep": "19.21"
+      },
+      {
+       "stop": "CATANIA (Via Domenico Tempio (Fermata Tempio Est 1))",
+       "idx": 8,
+       "arr": "19.23",
+       "dep": "19.23"
+      },
+      {
+       "stop": "CATANIA (Piazza Martiri della Libertà)",
+       "idx": 9,
+       "arr": "19.25",
+       "dep": "19.25"
+      },
+      {
+       "stop": "CATANIA (Stazione - T.Bus Via Archimede)",
+       "idx": 10,
+       "arr": "19.30",
+       "dep": "19.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8945",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "9 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-26",
+       "2026-08-02",
+       "2026-08-09",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-23",
+       "2026-08-30",
+       "2026-09-06",
+       "2026-09-13"
+      ]
+     },
+     "reverse": true,
+     "variant": "EN-CT",
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 0,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "ENNA (Via S.Agata 82)",
+       "idx": 1,
+       "arr": "17.01",
+       "dep": "17.01"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
+       "idx": 2,
+       "arr": "17.03",
+       "dep": "17.03"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 3,
+       "arr": "17.10",
+       "dep": "17.10"
+      },
+      {
+       "stop": "DITTAINO (Sicilia Outlet)",
+       "idx": 4,
+       "arr": "17.25",
+       "dep": "17.25"
+      },
+      {
+       "stop": "CATANIA (Via Fontanarossa(Aeroporto Militare))",
+       "idx": 5,
+       "arr": "18.17",
+       "dep": "18.17"
+      },
+      {
+       "stop": "CATANIAAEROPORTO (Terminal Bus.)",
+       "idx": 6,
+       "arr": "18.20",
+       "dep": "18.20"
+      },
+      {
+       "stop": "CATANIA (Via S.Giuseppe alla Rena 69)",
+       "idx": 7,
+       "arr": "18.21",
+       "dep": "18.21"
+      },
+      {
+       "stop": "CATANIA (Via Domenico Tempio (Fermata Tempio Est 1))",
+       "idx": 8,
+       "arr": "18.23",
+       "dep": "18.23"
+      },
+      {
+       "stop": "CATANIA (Piazza Martiri della Libertà)",
+       "idx": 9,
+       "arr": "18.25",
+       "dep": "18.25"
+      },
+      {
+       "stop": "CATANIA (Stazione - T.Bus Via Archimede)",
+       "idx": 10,
+       "arr": "18.30",
+       "dep": "18.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8944",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "42 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "variant": "EN-CT",
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 0,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "ENNA (Via S.Agata 82)",
+       "idx": 1,
+       "arr": "15.31",
+       "dep": "15.31"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
+       "idx": 2,
+       "arr": "15.33",
+       "dep": "15.33"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 3,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "DITTAINO (Sicilia Outlet)",
+       "idx": 4,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "CATANIA (Via Fontanarossa(Aeroporto Militare))",
+       "idx": 5,
+       "arr": "16.47",
+       "dep": "16.47"
+      },
+      {
+       "stop": "CATANIAAEROPORTO (Terminal Bus.)",
+       "idx": 6,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "CATANIA (Via S.Giuseppe alla Rena 69)",
+       "idx": 7,
+       "arr": "16.51",
+       "dep": "16.51"
+      },
+      {
+       "stop": "CATANIA (Via Domenico Tempio (Fermata Tempio Est 1))",
+       "idx": 8,
+       "arr": "16.53",
+       "dep": "16.53"
+      },
+      {
+       "stop": "CATANIA (Piazza Martiri della Libertà)",
+       "idx": 9,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "CATANIA (Stazione - T.Bus Via Archimede)",
+       "idx": 10,
+       "arr": "17.00",
+       "dep": "17.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "60129",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "35 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11"
+      ]
+     },
+     "reverse": true,
+     "variant": "EN-CT",
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 0,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "ENNA (Via S.Agata 82)",
+       "idx": 1,
+       "arr": "13.01",
+       "dep": "13.01"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
+       "idx": 2,
+       "arr": "13.03",
+       "dep": "13.03"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 3,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "DITTAINO (Sicilia Outlet)",
+       "idx": 4,
+       "arr": "13.25",
+       "dep": "13.25"
+      },
+      {
+       "stop": "CATANIA (Via Fontanarossa(Aeroporto Militare))",
+       "idx": 5,
+       "arr": "14.17",
+       "dep": "14.17"
+      },
+      {
+       "stop": "CATANIAAEROPORTO (Terminal Bus.)",
+       "idx": 6,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "CATANIA (Via S.Giuseppe alla Rena 69)",
+       "idx": 7,
+       "arr": "14.21",
+       "dep": "14.21"
+      },
+      {
+       "stop": "CATANIA (Via Domenico Tempio (Fermata Tempio Est 1))",
+       "idx": 8,
+       "arr": "14.23",
+       "dep": "14.23"
+      },
+      {
+       "stop": "CATANIA (Piazza Martiri della Libertà)",
+       "idx": 9,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "CATANIA (Stazione - T.Bus Via Archimede)",
+       "idx": 10,
+       "arr": "14.30",
+       "dep": "14.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

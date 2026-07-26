@@ -60,6 +60,11 @@ def season_window(season, d):
 
 
 def service_dates(svc):
+    if svc.get('explicit_dates'):
+        # SAIS/Albatross services carry their exact calendar (no school-year
+        # or holiday approximation); just clip to the feed window.
+        return [d for d in (date.fromisoformat(x) for x in svc['explicit_dates'])
+                if FEED_START <= d <= FEED_END]
     days, school, season = svc['days'], svc['school'], svc['season']
     out = []
     d = FEED_START
@@ -95,6 +100,9 @@ def slug(name):
 
 
 def svc_id(svc):
+    if svc.get('explicit_dates'):
+        import hashlib
+        return 'x' + hashlib.sha1(','.join(svc['explicit_dates']).encode()).hexdigest()[:10]
     parts = [svc['days']]
     if svc['school']: parts.append(svc['school'])
     if svc['season']: parts.append(f"s{svc['season']['from'].replace('/', '')}-{svc['season']['to'].replace('/', '')}")
@@ -126,6 +134,10 @@ def load_prescription_rules():
 
 def main():
     coords = json.load(open(os.path.join(ROOT, 'data', 'stop-coords.json'), encoding='utf-8'))
+    sais_f = os.path.join(ROOT, 'data', 'sais-stop-coords.json')
+    if os.path.exists(sais_f):
+        # API-exact coords win over geocoded pins for identically-named stops
+        coords.update(json.load(open(sais_f, encoding='utf-8')))
     rules = load_prescription_rules()
     os.makedirs(OUT_DIR, exist_ok=True)
 
@@ -145,7 +157,8 @@ def main():
         aid = agencies_seen[op]
         rid = route['route_id']
         cod = re.search(r'cod\.?\s*(\d+)', route['name'], re.I)
-        route_rows.append([rid, aid, cod.group(1) if cod else '', route['name'], 3])
+        short = route.get('short_name') or (cod.group(1) if cod else '')
+        route_rows.append([rid, aid, short, route['name'], 3])
         for di, d in enumerate(route['directions']):
             for t in d['trips']:
                 if not t['valid']:
@@ -243,7 +256,8 @@ def main():
         'attributions.txt': (['attribution_id', 'organization_name', 'is_producer', 'is_operator', 'is_authority', 'attribution_url'],
                              [['1', 'ManGO:IT', 1, 0, 0, 'https://it.mangonese.dev'],
                               ['2', 'Regione Siciliana - Assessorato Infrastrutture e Mobilita', 0, 0, 1, 'https://pti.regione.sicilia.it'],
-                              ['3', 'TUA Trasporti Urbani Agrigento', 0, 1, 0, 'https://www.trasportiurbaniagrigento.it']]),
+                              ['3', 'TUA Trasporti Urbani Agrigento', 0, 1, 0, 'https://www.trasportiurbaniagrigento.it'],
+                              ['4', 'SAIS Autolinee', 0, 1, 0, 'https://www.saisautolinee.it']]),
     }
     zpath = os.path.join(OUT_DIR, 'sicily-coaches.gtfs.zip')
     with zipfile.ZipFile(zpath, 'w', zipfile.ZIP_DEFLATED) as z:

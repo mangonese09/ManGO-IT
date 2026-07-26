@@ -1,0 +1,1826 @@
+{
+ "operator": "SAIS Autolinee",
+ "route_id": "sais-7018",
+ "name": "127 Tisia",
+ "short_name": "7018",
+ "coords": "external",
+ "source": "api.saisautolinee.it line 31db3533-4459-4c63-976b-b336106eee39",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "SIRACUSA (Piazza Marcello Sgarlata)",
+    "SIRACUSA (Via Antonello da Messina, 43)",
+    "SIRACUSA (Via Antonello da Messina, 21)",
+    "SIRACUSA (Via Ludovico Mazzanti (Parcheggio))",
+    "SIRACUSA (Viale Zecchino70)",
+    "SIRACUSA (Viale Zecchino 168)",
+    "SIRACUSA (Via Tisia 145)",
+    "SIRACUSA (Via Tisia, 49)",
+    "SIRACUSA (Via Tisia, 17)",
+    "SIRACUSA (Via dell'Olimpiade, 2)",
+    "SIRACUSA (Via Von Platen 29 B)",
+    "SIRACUSA (Via Piave, 165)",
+    "SIRACUSA (Via Piave, 111)",
+    "SIRACUSA (Via Piave, 65)",
+    "SIRACUSA (Via Agatocle, 61)",
+    "SIRACUSA (Via Agatocle, 45)",
+    "SIRACUSA (Via Cadorna, 8)",
+    "SIRACUSA (Via Luigi Cadorna 48)",
+    "SIRACUSA (Via Luigi Cadorna 68)",
+    "SIRACUSA (Via Luigi Cadorna 118 A)",
+    "SIRACUSA (Via Von Platen fronte 29 b)",
+    "SIRACUSA (Via dell'Olimpiade, 23)",
+    "SIRACUSA (Via Tisia, 20)",
+    "SIRACUSA (Via Tisia 88)",
+    "SIRACUSA (Via Tisia 140)"
+   ],
+   "trips": [
+    {
+     "corsa": "18001",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "Sgarlata-Piave",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Piazza Marcello Sgarlata)",
+       "idx": 0,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "SIRACUSA (Via Antonello da Messina, 43)",
+       "idx": 1,
+       "arr": "15.01",
+       "dep": "15.01"
+      },
+      {
+       "stop": "SIRACUSA (Via Antonello da Messina, 21)",
+       "idx": 2,
+       "arr": "15.02",
+       "dep": "15.02"
+      },
+      {
+       "stop": "SIRACUSA (Via Ludovico Mazzanti (Parcheggio))",
+       "idx": 3,
+       "arr": "15.03",
+       "dep": "15.03"
+      },
+      {
+       "stop": "SIRACUSA (Viale Zecchino70)",
+       "idx": 4,
+       "arr": "15.06",
+       "dep": "15.06"
+      },
+      {
+       "stop": "SIRACUSA (Viale Zecchino 168)",
+       "idx": 5,
+       "arr": "15.07",
+       "dep": "15.07"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia 145)",
+       "idx": 6,
+       "arr": "15.08",
+       "dep": "15.08"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia, 49)",
+       "idx": 7,
+       "arr": "15.09",
+       "dep": "15.09"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia, 17)",
+       "idx": 8,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "SIRACUSA (Via dell'Olimpiade, 2)",
+       "idx": 9,
+       "arr": "15.11",
+       "dep": "15.11"
+      },
+      {
+       "stop": "SIRACUSA (Via Von Platen 29 B)",
+       "idx": 10,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "SIRACUSA (Via Piave, 165)",
+       "idx": 11,
+       "arr": "15.16",
+       "dep": "15.16"
+      },
+      {
+       "stop": "SIRACUSA (Via Piave, 111)",
+       "idx": 12,
+       "arr": "15.17",
+       "dep": "15.17"
+      },
+      {
+       "stop": "SIRACUSA (Via Piave, 65)",
+       "idx": 13,
+       "arr": "15.19",
+       "dep": "15.19"
+      },
+      {
+       "stop": "SIRACUSA (Via Agatocle, 61)",
+       "idx": 14,
+       "arr": "15.21",
+       "dep": "15.21"
+      },
+      {
+       "stop": "SIRACUSA (Via Agatocle, 45)",
+       "idx": 15,
+       "arr": "15.22",
+       "dep": "15.22"
+      },
+      {
+       "stop": "SIRACUSA (Via Cadorna, 8)",
+       "idx": 16,
+       "arr": "15.24",
+       "dep": "15.24"
+      },
+      {
+       "stop": "SIRACUSA (Via Luigi Cadorna 48)",
+       "idx": 17,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "SIRACUSA (Via Luigi Cadorna 68)",
+       "idx": 18,
+       "arr": "15.26",
+       "dep": "15.26"
+      },
+      {
+       "stop": "SIRACUSA (Via Luigi Cadorna 118 A)",
+       "idx": 19,
+       "arr": "15.27",
+       "dep": "15.27"
+      },
+      {
+       "stop": "SIRACUSA (Via Von Platen fronte 29 b)",
+       "idx": 20,
+       "arr": "15.29",
+       "dep": "15.29"
+      },
+      {
+       "stop": "SIRACUSA (Via dell'Olimpiade, 23)",
+       "idx": 21,
+       "arr": "15.33",
+       "dep": "15.33"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia, 20)",
+       "idx": 22,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia 88)",
+       "idx": 23,
+       "arr": "15.36",
+       "dep": "15.36"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia 140)",
+       "idx": 24,
+       "arr": "15.37",
+       "dep": "15.37"
+      },
+      {
+       "stop": "SIRACUSA (Piazza Marcello Sgarlata)",
+       "idx": 25,
+       "arr": "15.40",
+       "dep": "15.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "18005",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "Sgarlata-Piave",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Piazza Marcello Sgarlata)",
+       "idx": 0,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "SIRACUSA (Via Antonello da Messina, 43)",
+       "idx": 1,
+       "arr": "18.01",
+       "dep": "18.01"
+      },
+      {
+       "stop": "SIRACUSA (Via Antonello da Messina, 21)",
+       "idx": 2,
+       "arr": "18.02",
+       "dep": "18.02"
+      },
+      {
+       "stop": "SIRACUSA (Via Ludovico Mazzanti (Parcheggio))",
+       "idx": 3,
+       "arr": "18.03",
+       "dep": "18.03"
+      },
+      {
+       "stop": "SIRACUSA (Viale Zecchino70)",
+       "idx": 4,
+       "arr": "18.06",
+       "dep": "18.06"
+      },
+      {
+       "stop": "SIRACUSA (Viale Zecchino 168)",
+       "idx": 5,
+       "arr": "18.07",
+       "dep": "18.07"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia 145)",
+       "idx": 6,
+       "arr": "18.08",
+       "dep": "18.08"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia, 49)",
+       "idx": 7,
+       "arr": "18.09",
+       "dep": "18.09"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia, 17)",
+       "idx": 8,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "SIRACUSA (Via dell'Olimpiade, 2)",
+       "idx": 9,
+       "arr": "18.11",
+       "dep": "18.11"
+      },
+      {
+       "stop": "SIRACUSA (Via Von Platen 29 B)",
+       "idx": 10,
+       "arr": "18.15",
+       "dep": "18.15"
+      },
+      {
+       "stop": "SIRACUSA (Via Piave, 165)",
+       "idx": 11,
+       "arr": "18.16",
+       "dep": "18.16"
+      },
+      {
+       "stop": "SIRACUSA (Via Piave, 111)",
+       "idx": 12,
+       "arr": "18.17",
+       "dep": "18.17"
+      },
+      {
+       "stop": "SIRACUSA (Via Piave, 65)",
+       "idx": 13,
+       "arr": "18.19",
+       "dep": "18.19"
+      },
+      {
+       "stop": "SIRACUSA (Via Agatocle, 61)",
+       "idx": 14,
+       "arr": "18.21",
+       "dep": "18.21"
+      },
+      {
+       "stop": "SIRACUSA (Via Agatocle, 45)",
+       "idx": 15,
+       "arr": "18.22",
+       "dep": "18.22"
+      },
+      {
+       "stop": "SIRACUSA (Via Cadorna, 8)",
+       "idx": 16,
+       "arr": "18.24",
+       "dep": "18.24"
+      },
+      {
+       "stop": "SIRACUSA (Via Luigi Cadorna 48)",
+       "idx": 17,
+       "arr": "18.25",
+       "dep": "18.25"
+      },
+      {
+       "stop": "SIRACUSA (Via Luigi Cadorna 68)",
+       "idx": 18,
+       "arr": "18.26",
+       "dep": "18.26"
+      },
+      {
+       "stop": "SIRACUSA (Via Luigi Cadorna 118 A)",
+       "idx": 19,
+       "arr": "18.27",
+       "dep": "18.27"
+      },
+      {
+       "stop": "SIRACUSA (Via Von Platen fronte 29 b)",
+       "idx": 20,
+       "arr": "18.29",
+       "dep": "18.29"
+      },
+      {
+       "stop": "SIRACUSA (Via dell'Olimpiade, 23)",
+       "idx": 21,
+       "arr": "18.33",
+       "dep": "18.33"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia, 20)",
+       "idx": 22,
+       "arr": "18.35",
+       "dep": "18.35"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia 88)",
+       "idx": 23,
+       "arr": "18.36",
+       "dep": "18.36"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia 140)",
+       "idx": 24,
+       "arr": "18.37",
+       "dep": "18.37"
+      },
+      {
+       "stop": "SIRACUSA (Piazza Marcello Sgarlata)",
+       "idx": 25,
+       "arr": "18.40",
+       "dep": "18.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "18007",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "Sgarlata-Piave",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Piazza Marcello Sgarlata)",
+       "idx": 0,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "SIRACUSA (Via Antonello da Messina, 43)",
+       "idx": 1,
+       "arr": "19.31",
+       "dep": "19.31"
+      },
+      {
+       "stop": "SIRACUSA (Via Antonello da Messina, 21)",
+       "idx": 2,
+       "arr": "19.32",
+       "dep": "19.32"
+      },
+      {
+       "stop": "SIRACUSA (Via Ludovico Mazzanti (Parcheggio))",
+       "idx": 3,
+       "arr": "19.33",
+       "dep": "19.33"
+      },
+      {
+       "stop": "SIRACUSA (Viale Zecchino70)",
+       "idx": 4,
+       "arr": "19.36",
+       "dep": "19.36"
+      },
+      {
+       "stop": "SIRACUSA (Viale Zecchino 168)",
+       "idx": 5,
+       "arr": "19.37",
+       "dep": "19.37"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia 145)",
+       "idx": 6,
+       "arr": "19.38",
+       "dep": "19.38"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia, 49)",
+       "idx": 7,
+       "arr": "19.39",
+       "dep": "19.39"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia, 17)",
+       "idx": 8,
+       "arr": "19.40",
+       "dep": "19.40"
+      },
+      {
+       "stop": "SIRACUSA (Via dell'Olimpiade, 2)",
+       "idx": 9,
+       "arr": "19.41",
+       "dep": "19.41"
+      },
+      {
+       "stop": "SIRACUSA (Via Von Platen 29 B)",
+       "idx": 10,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "SIRACUSA (Via Piave, 165)",
+       "idx": 11,
+       "arr": "19.46",
+       "dep": "19.46"
+      },
+      {
+       "stop": "SIRACUSA (Via Piave, 111)",
+       "idx": 12,
+       "arr": "19.47",
+       "dep": "19.47"
+      },
+      {
+       "stop": "SIRACUSA (Via Piave, 65)",
+       "idx": 13,
+       "arr": "19.49",
+       "dep": "19.49"
+      },
+      {
+       "stop": "SIRACUSA (Via Agatocle, 61)",
+       "idx": 14,
+       "arr": "19.51",
+       "dep": "19.51"
+      },
+      {
+       "stop": "SIRACUSA (Via Agatocle, 45)",
+       "idx": 15,
+       "arr": "19.52",
+       "dep": "19.52"
+      },
+      {
+       "stop": "SIRACUSA (Via Cadorna, 8)",
+       "idx": 16,
+       "arr": "19.54",
+       "dep": "19.54"
+      },
+      {
+       "stop": "SIRACUSA (Via Luigi Cadorna 48)",
+       "idx": 17,
+       "arr": "19.55",
+       "dep": "19.55"
+      },
+      {
+       "stop": "SIRACUSA (Via Luigi Cadorna 68)",
+       "idx": 18,
+       "arr": "19.56",
+       "dep": "19.56"
+      },
+      {
+       "stop": "SIRACUSA (Via Luigi Cadorna 118 A)",
+       "idx": 19,
+       "arr": "19.57",
+       "dep": "19.57"
+      },
+      {
+       "stop": "SIRACUSA (Via Von Platen fronte 29 b)",
+       "idx": 20,
+       "arr": "19.59",
+       "dep": "19.59"
+      },
+      {
+       "stop": "SIRACUSA (Via dell'Olimpiade, 23)",
+       "idx": 21,
+       "arr": "20.03",
+       "dep": "20.03"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia, 20)",
+       "idx": 22,
+       "arr": "20.05",
+       "dep": "20.05"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia 88)",
+       "idx": 23,
+       "arr": "20.06",
+       "dep": "20.06"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia 140)",
+       "idx": 24,
+       "arr": "20.07",
+       "dep": "20.07"
+      },
+      {
+       "stop": "SIRACUSA (Piazza Marcello Sgarlata)",
+       "idx": 25,
+       "arr": "20.10",
+       "dep": "20.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "18004",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "Sgarlata-Piave",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Piazza Marcello Sgarlata)",
+       "idx": 0,
+       "arr": "17.15",
+       "dep": "17.15"
+      },
+      {
+       "stop": "SIRACUSA (Via Antonello da Messina, 43)",
+       "idx": 1,
+       "arr": "17.16",
+       "dep": "17.16"
+      },
+      {
+       "stop": "SIRACUSA (Via Antonello da Messina, 21)",
+       "idx": 2,
+       "arr": "17.17",
+       "dep": "17.17"
+      },
+      {
+       "stop": "SIRACUSA (Via Ludovico Mazzanti (Parcheggio))",
+       "idx": 3,
+       "arr": "17.18",
+       "dep": "17.18"
+      },
+      {
+       "stop": "SIRACUSA (Viale Zecchino70)",
+       "idx": 4,
+       "arr": "17.21",
+       "dep": "17.21"
+      },
+      {
+       "stop": "SIRACUSA (Viale Zecchino 168)",
+       "idx": 5,
+       "arr": "17.22",
+       "dep": "17.22"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia 145)",
+       "idx": 6,
+       "arr": "17.23",
+       "dep": "17.23"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia, 49)",
+       "idx": 7,
+       "arr": "17.24",
+       "dep": "17.24"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia, 17)",
+       "idx": 8,
+       "arr": "17.25",
+       "dep": "17.25"
+      },
+      {
+       "stop": "SIRACUSA (Via dell'Olimpiade, 2)",
+       "idx": 9,
+       "arr": "17.26",
+       "dep": "17.26"
+      },
+      {
+       "stop": "SIRACUSA (Via Von Platen 29 B)",
+       "idx": 10,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "SIRACUSA (Via Piave, 165)",
+       "idx": 11,
+       "arr": "17.31",
+       "dep": "17.31"
+      },
+      {
+       "stop": "SIRACUSA (Via Piave, 111)",
+       "idx": 12,
+       "arr": "17.32",
+       "dep": "17.32"
+      },
+      {
+       "stop": "SIRACUSA (Via Piave, 65)",
+       "idx": 13,
+       "arr": "17.34",
+       "dep": "17.34"
+      },
+      {
+       "stop": "SIRACUSA (Via Agatocle, 61)",
+       "idx": 14,
+       "arr": "17.36",
+       "dep": "17.36"
+      },
+      {
+       "stop": "SIRACUSA (Via Agatocle, 45)",
+       "idx": 15,
+       "arr": "17.37",
+       "dep": "17.37"
+      },
+      {
+       "stop": "SIRACUSA (Via Cadorna, 8)",
+       "idx": 16,
+       "arr": "17.39",
+       "dep": "17.39"
+      },
+      {
+       "stop": "SIRACUSA (Via Luigi Cadorna 48)",
+       "idx": 17,
+       "arr": "17.40",
+       "dep": "17.40"
+      },
+      {
+       "stop": "SIRACUSA (Via Luigi Cadorna 68)",
+       "idx": 18,
+       "arr": "17.41",
+       "dep": "17.41"
+      },
+      {
+       "stop": "SIRACUSA (Via Luigi Cadorna 118 A)",
+       "idx": 19,
+       "arr": "17.42",
+       "dep": "17.42"
+      },
+      {
+       "stop": "SIRACUSA (Via Von Platen fronte 29 b)",
+       "idx": 20,
+       "arr": "17.44",
+       "dep": "17.44"
+      },
+      {
+       "stop": "SIRACUSA (Via dell'Olimpiade, 23)",
+       "idx": 21,
+       "arr": "17.48",
+       "dep": "17.48"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia, 20)",
+       "idx": 22,
+       "arr": "17.50",
+       "dep": "17.50"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia 88)",
+       "idx": 23,
+       "arr": "17.51",
+       "dep": "17.51"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia 140)",
+       "idx": 24,
+       "arr": "17.52",
+       "dep": "17.52"
+      },
+      {
+       "stop": "SIRACUSA (Piazza Marcello Sgarlata)",
+       "idx": 25,
+       "arr": "17.55",
+       "dep": "17.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "18006",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "Sgarlata-Piave",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Piazza Marcello Sgarlata)",
+       "idx": 0,
+       "arr": "18.45",
+       "dep": "18.45"
+      },
+      {
+       "stop": "SIRACUSA (Via Antonello da Messina, 43)",
+       "idx": 1,
+       "arr": "18.46",
+       "dep": "18.46"
+      },
+      {
+       "stop": "SIRACUSA (Via Antonello da Messina, 21)",
+       "idx": 2,
+       "arr": "18.47",
+       "dep": "18.47"
+      },
+      {
+       "stop": "SIRACUSA (Via Ludovico Mazzanti (Parcheggio))",
+       "idx": 3,
+       "arr": "18.48",
+       "dep": "18.48"
+      },
+      {
+       "stop": "SIRACUSA (Viale Zecchino70)",
+       "idx": 4,
+       "arr": "18.51",
+       "dep": "18.51"
+      },
+      {
+       "stop": "SIRACUSA (Viale Zecchino 168)",
+       "idx": 5,
+       "arr": "18.52",
+       "dep": "18.52"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia 145)",
+       "idx": 6,
+       "arr": "18.53",
+       "dep": "18.53"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia, 49)",
+       "idx": 7,
+       "arr": "18.54",
+       "dep": "18.54"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia, 17)",
+       "idx": 8,
+       "arr": "18.55",
+       "dep": "18.55"
+      },
+      {
+       "stop": "SIRACUSA (Via dell'Olimpiade, 2)",
+       "idx": 9,
+       "arr": "18.56",
+       "dep": "18.56"
+      },
+      {
+       "stop": "SIRACUSA (Via Von Platen 29 B)",
+       "idx": 10,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "SIRACUSA (Via Piave, 165)",
+       "idx": 11,
+       "arr": "19.01",
+       "dep": "19.01"
+      },
+      {
+       "stop": "SIRACUSA (Via Piave, 111)",
+       "idx": 12,
+       "arr": "19.02",
+       "dep": "19.02"
+      },
+      {
+       "stop": "SIRACUSA (Via Piave, 65)",
+       "idx": 13,
+       "arr": "19.04",
+       "dep": "19.04"
+      },
+      {
+       "stop": "SIRACUSA (Via Agatocle, 61)",
+       "idx": 14,
+       "arr": "19.06",
+       "dep": "19.06"
+      },
+      {
+       "stop": "SIRACUSA (Via Agatocle, 45)",
+       "idx": 15,
+       "arr": "19.07",
+       "dep": "19.07"
+      },
+      {
+       "stop": "SIRACUSA (Via Cadorna, 8)",
+       "idx": 16,
+       "arr": "19.09",
+       "dep": "19.09"
+      },
+      {
+       "stop": "SIRACUSA (Via Luigi Cadorna 48)",
+       "idx": 17,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "SIRACUSA (Via Luigi Cadorna 68)",
+       "idx": 18,
+       "arr": "19.11",
+       "dep": "19.11"
+      },
+      {
+       "stop": "SIRACUSA (Via Luigi Cadorna 118 A)",
+       "idx": 19,
+       "arr": "19.12",
+       "dep": "19.12"
+      },
+      {
+       "stop": "SIRACUSA (Via Von Platen fronte 29 b)",
+       "idx": 20,
+       "arr": "19.14",
+       "dep": "19.14"
+      },
+      {
+       "stop": "SIRACUSA (Via dell'Olimpiade, 23)",
+       "idx": 21,
+       "arr": "19.18",
+       "dep": "19.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia, 20)",
+       "idx": 22,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia 88)",
+       "idx": 23,
+       "arr": "19.21",
+       "dep": "19.21"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia 140)",
+       "idx": 24,
+       "arr": "19.22",
+       "dep": "19.22"
+      },
+      {
+       "stop": "SIRACUSA (Piazza Marcello Sgarlata)",
+       "idx": 25,
+       "arr": "19.25",
+       "dep": "19.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "18003",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "Sgarlata-Piave",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Piazza Marcello Sgarlata)",
+       "idx": 0,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "SIRACUSA (Via Antonello da Messina, 43)",
+       "idx": 1,
+       "arr": "16.31",
+       "dep": "16.31"
+      },
+      {
+       "stop": "SIRACUSA (Via Antonello da Messina, 21)",
+       "idx": 2,
+       "arr": "16.32",
+       "dep": "16.32"
+      },
+      {
+       "stop": "SIRACUSA (Via Ludovico Mazzanti (Parcheggio))",
+       "idx": 3,
+       "arr": "16.33",
+       "dep": "16.33"
+      },
+      {
+       "stop": "SIRACUSA (Viale Zecchino70)",
+       "idx": 4,
+       "arr": "16.36",
+       "dep": "16.36"
+      },
+      {
+       "stop": "SIRACUSA (Viale Zecchino 168)",
+       "idx": 5,
+       "arr": "16.37",
+       "dep": "16.37"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia 145)",
+       "idx": 6,
+       "arr": "16.38",
+       "dep": "16.38"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia, 49)",
+       "idx": 7,
+       "arr": "16.39",
+       "dep": "16.39"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia, 17)",
+       "idx": 8,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "SIRACUSA (Via dell'Olimpiade, 2)",
+       "idx": 9,
+       "arr": "16.41",
+       "dep": "16.41"
+      },
+      {
+       "stop": "SIRACUSA (Via Von Platen 29 B)",
+       "idx": 10,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "SIRACUSA (Via Piave, 165)",
+       "idx": 11,
+       "arr": "16.46",
+       "dep": "16.46"
+      },
+      {
+       "stop": "SIRACUSA (Via Piave, 111)",
+       "idx": 12,
+       "arr": "16.47",
+       "dep": "16.47"
+      },
+      {
+       "stop": "SIRACUSA (Via Piave, 65)",
+       "idx": 13,
+       "arr": "16.49",
+       "dep": "16.49"
+      },
+      {
+       "stop": "SIRACUSA (Via Agatocle, 61)",
+       "idx": 14,
+       "arr": "16.51",
+       "dep": "16.51"
+      },
+      {
+       "stop": "SIRACUSA (Via Agatocle, 45)",
+       "idx": 15,
+       "arr": "16.52",
+       "dep": "16.52"
+      },
+      {
+       "stop": "SIRACUSA (Via Cadorna, 8)",
+       "idx": 16,
+       "arr": "16.54",
+       "dep": "16.54"
+      },
+      {
+       "stop": "SIRACUSA (Via Luigi Cadorna 48)",
+       "idx": 17,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "SIRACUSA (Via Luigi Cadorna 68)",
+       "idx": 18,
+       "arr": "16.56",
+       "dep": "16.56"
+      },
+      {
+       "stop": "SIRACUSA (Via Luigi Cadorna 118 A)",
+       "idx": 19,
+       "arr": "16.57",
+       "dep": "16.57"
+      },
+      {
+       "stop": "SIRACUSA (Via Von Platen fronte 29 b)",
+       "idx": 20,
+       "arr": "16.59",
+       "dep": "16.59"
+      },
+      {
+       "stop": "SIRACUSA (Via dell'Olimpiade, 23)",
+       "idx": 21,
+       "arr": "17.03",
+       "dep": "17.03"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia, 20)",
+       "idx": 22,
+       "arr": "17.05",
+       "dep": "17.05"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia 88)",
+       "idx": 23,
+       "arr": "17.06",
+       "dep": "17.06"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia 140)",
+       "idx": 24,
+       "arr": "17.07",
+       "dep": "17.07"
+      },
+      {
+       "stop": "SIRACUSA (Piazza Marcello Sgarlata)",
+       "idx": 25,
+       "arr": "17.10",
+       "dep": "17.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "18008",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "Sgarlata-Piave",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Piazza Marcello Sgarlata)",
+       "idx": 0,
+       "arr": "20.15",
+       "dep": "20.15"
+      },
+      {
+       "stop": "SIRACUSA (Via Antonello da Messina, 43)",
+       "idx": 1,
+       "arr": "20.16",
+       "dep": "20.16"
+      },
+      {
+       "stop": "SIRACUSA (Via Antonello da Messina, 21)",
+       "idx": 2,
+       "arr": "20.17",
+       "dep": "20.17"
+      },
+      {
+       "stop": "SIRACUSA (Via Ludovico Mazzanti (Parcheggio))",
+       "idx": 3,
+       "arr": "20.18",
+       "dep": "20.18"
+      },
+      {
+       "stop": "SIRACUSA (Viale Zecchino70)",
+       "idx": 4,
+       "arr": "20.21",
+       "dep": "20.21"
+      },
+      {
+       "stop": "SIRACUSA (Viale Zecchino 168)",
+       "idx": 5,
+       "arr": "20.22",
+       "dep": "20.22"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia 145)",
+       "idx": 6,
+       "arr": "20.23",
+       "dep": "20.23"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia, 49)",
+       "idx": 7,
+       "arr": "20.24",
+       "dep": "20.24"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia, 17)",
+       "idx": 8,
+       "arr": "20.25",
+       "dep": "20.25"
+      },
+      {
+       "stop": "SIRACUSA (Via dell'Olimpiade, 2)",
+       "idx": 9,
+       "arr": "20.26",
+       "dep": "20.26"
+      },
+      {
+       "stop": "SIRACUSA (Via Von Platen 29 B)",
+       "idx": 10,
+       "arr": "20.30",
+       "dep": "20.30"
+      },
+      {
+       "stop": "SIRACUSA (Via Piave, 165)",
+       "idx": 11,
+       "arr": "20.31",
+       "dep": "20.31"
+      },
+      {
+       "stop": "SIRACUSA (Via Piave, 111)",
+       "idx": 12,
+       "arr": "20.32",
+       "dep": "20.32"
+      },
+      {
+       "stop": "SIRACUSA (Via Piave, 65)",
+       "idx": 13,
+       "arr": "20.34",
+       "dep": "20.34"
+      },
+      {
+       "stop": "SIRACUSA (Via Agatocle, 61)",
+       "idx": 14,
+       "arr": "20.36",
+       "dep": "20.36"
+      },
+      {
+       "stop": "SIRACUSA (Via Agatocle, 45)",
+       "idx": 15,
+       "arr": "20.37",
+       "dep": "20.37"
+      },
+      {
+       "stop": "SIRACUSA (Via Cadorna, 8)",
+       "idx": 16,
+       "arr": "20.39",
+       "dep": "20.39"
+      },
+      {
+       "stop": "SIRACUSA (Via Luigi Cadorna 48)",
+       "idx": 17,
+       "arr": "20.40",
+       "dep": "20.40"
+      },
+      {
+       "stop": "SIRACUSA (Via Luigi Cadorna 68)",
+       "idx": 18,
+       "arr": "20.41",
+       "dep": "20.41"
+      },
+      {
+       "stop": "SIRACUSA (Via Luigi Cadorna 118 A)",
+       "idx": 19,
+       "arr": "20.42",
+       "dep": "20.42"
+      },
+      {
+       "stop": "SIRACUSA (Via Von Platen fronte 29 b)",
+       "idx": 20,
+       "arr": "20.44",
+       "dep": "20.44"
+      },
+      {
+       "stop": "SIRACUSA (Via dell'Olimpiade, 23)",
+       "idx": 21,
+       "arr": "20.48",
+       "dep": "20.48"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia, 20)",
+       "idx": 22,
+       "arr": "20.50",
+       "dep": "20.50"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia 88)",
+       "idx": 23,
+       "arr": "20.51",
+       "dep": "20.51"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia 140)",
+       "idx": 24,
+       "arr": "20.52",
+       "dep": "20.52"
+      },
+      {
+       "stop": "SIRACUSA (Piazza Marcello Sgarlata)",
+       "idx": 25,
+       "arr": "20.55",
+       "dep": "20.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "18002",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "51 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-07-25",
+       "2026-07-26",
+       "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
+       "2026-08-01",
+       "2026-08-02",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
+       "2026-08-08",
+       "2026-08-09",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
+       "2026-08-15",
+       "2026-08-16",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
+       "2026-08-22",
+       "2026-08-23",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
+       "2026-08-29",
+       "2026-08-30",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
+       "2026-09-05",
+       "2026-09-06",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
+       "2026-09-12",
+       "2026-09-13"
+      ]
+     },
+     "reverse": false,
+     "variant": "Sgarlata-Piave",
+     "stops": [
+      {
+       "stop": "SIRACUSA (Piazza Marcello Sgarlata)",
+       "idx": 0,
+       "arr": "15.45",
+       "dep": "15.45"
+      },
+      {
+       "stop": "SIRACUSA (Via Antonello da Messina, 43)",
+       "idx": 1,
+       "arr": "15.46",
+       "dep": "15.46"
+      },
+      {
+       "stop": "SIRACUSA (Via Antonello da Messina, 21)",
+       "idx": 2,
+       "arr": "15.47",
+       "dep": "15.47"
+      },
+      {
+       "stop": "SIRACUSA (Via Ludovico Mazzanti (Parcheggio))",
+       "idx": 3,
+       "arr": "15.48",
+       "dep": "15.48"
+      },
+      {
+       "stop": "SIRACUSA (Viale Zecchino70)",
+       "idx": 4,
+       "arr": "15.51",
+       "dep": "15.51"
+      },
+      {
+       "stop": "SIRACUSA (Viale Zecchino 168)",
+       "idx": 5,
+       "arr": "15.52",
+       "dep": "15.52"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia 145)",
+       "idx": 6,
+       "arr": "15.53",
+       "dep": "15.53"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia, 49)",
+       "idx": 7,
+       "arr": "15.54",
+       "dep": "15.54"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia, 17)",
+       "idx": 8,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "SIRACUSA (Via dell'Olimpiade, 2)",
+       "idx": 9,
+       "arr": "15.56",
+       "dep": "15.56"
+      },
+      {
+       "stop": "SIRACUSA (Via Von Platen 29 B)",
+       "idx": 10,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "SIRACUSA (Via Piave, 165)",
+       "idx": 11,
+       "arr": "16.01",
+       "dep": "16.01"
+      },
+      {
+       "stop": "SIRACUSA (Via Piave, 111)",
+       "idx": 12,
+       "arr": "16.02",
+       "dep": "16.02"
+      },
+      {
+       "stop": "SIRACUSA (Via Piave, 65)",
+       "idx": 13,
+       "arr": "16.04",
+       "dep": "16.04"
+      },
+      {
+       "stop": "SIRACUSA (Via Agatocle, 61)",
+       "idx": 14,
+       "arr": "16.06",
+       "dep": "16.06"
+      },
+      {
+       "stop": "SIRACUSA (Via Agatocle, 45)",
+       "idx": 15,
+       "arr": "16.07",
+       "dep": "16.07"
+      },
+      {
+       "stop": "SIRACUSA (Via Cadorna, 8)",
+       "idx": 16,
+       "arr": "16.09",
+       "dep": "16.09"
+      },
+      {
+       "stop": "SIRACUSA (Via Luigi Cadorna 48)",
+       "idx": 17,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "SIRACUSA (Via Luigi Cadorna 68)",
+       "idx": 18,
+       "arr": "16.11",
+       "dep": "16.11"
+      },
+      {
+       "stop": "SIRACUSA (Via Luigi Cadorna 118 A)",
+       "idx": 19,
+       "arr": "16.12",
+       "dep": "16.12"
+      },
+      {
+       "stop": "SIRACUSA (Via Von Platen fronte 29 b)",
+       "idx": 20,
+       "arr": "16.14",
+       "dep": "16.14"
+      },
+      {
+       "stop": "SIRACUSA (Via dell'Olimpiade, 23)",
+       "idx": 21,
+       "arr": "16.18",
+       "dep": "16.18"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia, 20)",
+       "idx": 22,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia 88)",
+       "idx": 23,
+       "arr": "16.21",
+       "dep": "16.21"
+      },
+      {
+       "stop": "SIRACUSA (Via Tisia 140)",
+       "idx": 24,
+       "arr": "16.22",
+       "dep": "16.22"
+      },
+      {
+       "stop": "SIRACUSA (Piazza Marcello Sgarlata)",
+       "idx": 25,
+       "arr": "16.25",
+       "dep": "16.25"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}
