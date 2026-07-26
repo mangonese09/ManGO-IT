@@ -70,10 +70,13 @@ HOLIDAYS = {
 
 
 def sweep_dates():
-    """7 consecutive days from next Monday (weekday pattern) + the next
-    national holiday inside the horizon (holiday behaviour probe)."""
+    """21 consecutive days from next Monday + the next national holiday
+    inside the horizon. Three full weeks because TPL period changes happen
+    mid-summer: the 2026-08-03 service change added runs invisible to a
+    single-week sweep (caught by saist_verify), and contiguous coverage
+    makes swept dates authoritative for calendar inference."""
     anchor = date.today() + timedelta(days=(7 - date.today().weekday()) % 7 or 7)
-    days = [anchor + timedelta(days=i) for i in range(7)]
+    days = [anchor + timedelta(days=i) for i in range(21)]
     probe = next((h for h in sorted(HOLIDAYS) if days[-1] < h <= days[-1] + timedelta(days=45)), None)
     return days + ([probe] if probe else [])
 
@@ -284,15 +287,29 @@ def stitch(day_runs, edges=None):
     return trips, ambiguous
 
 
-def infer_dates(observed, week_days, holiday_probe, ran_on_probe, cap):
-    """Weekly-pattern extrapolation from sweep start to cap. National
+def infer_dates(observed, week_days, holiday_probe, ran_on_probe, cap, swept=None):
+    """Calendar from observations + weekly-pattern extrapolation to cap.
+    SWEPT DATES ARE AUTHORITATIVE: a swept date is included iff observed
+    (the API answered for that exact day); only unswept dates fall back to
+    the weekly pattern. If the pattern says the trip should have run on a
+    swept date AFTER its last observation and it didn't, the service ended
+    (period change) — no extrapolation past the last observation. National
     holidays: skipped unless the trip demonstrably ran on the probe holiday
     (or runs Sundays — Italian festivo convention)."""
-    lo = min(observed)
+    swept = swept or set()
+    lo, hi_obs = min(observed), max(observed)
+    ended = any(d in swept and d not in observed and d.weekday() in week_days
+                and d > hi_obs for d in swept)
     festivo_like = week_days == {6} or ran_on_probe
     out = []
     d = lo
-    while d <= cap:
+    end = hi_obs if ended else cap
+    while d <= end:
+        if d in swept:
+            if d in observed:
+                out.append(d)
+            d += timedelta(days=1)
+            continue
         run = d.weekday() in week_days
         if d in HOLIDAYS:
             run = festivo_like or (holiday_probe is None and 6 in week_days and d.weekday() == 6)
@@ -346,6 +363,7 @@ def cmd_build():
         if d in HOLIDAYS:
             probe_day = d
     week = [d for d in sweep_days if d != probe_day]
+    swept_set = set(sweep_days)
 
     # signature = (linea, ((loc,min),...)) → set of dates it ran
     sig_dates = {}
@@ -380,10 +398,13 @@ def cmd_build():
         dirs = {}
         for nodes, dts in sorted(entries):
             week_days = {d.weekday() for d in dts if d != probe_day}
-            if not week_days:
-                continue  # holiday-probe-only appearance: no weekly evidence
             ran_on_probe = probe_day in dts if probe_day else False
-            dates = infer_dates(dts, week_days, probe_day, ran_on_probe, cap)
+            if not week_days:
+                # holiday-probe-only appearance: no weekly evidence — ship
+                # exactly the observed ground-truth date(s), nothing more
+                dates = sorted(dts)
+            else:
+                dates = infer_dates(dts, week_days, probe_day, ran_on_probe, cap, swept_set)
             if not dates:
                 continue
             di = 0 if nodes[0][0] < nodes[-1][0] else 1
