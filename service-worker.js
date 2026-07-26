@@ -1,12 +1,12 @@
 // ── SERVICE WORKER ──
 // App shell cache-first; /api/* never cached here (js/api.js owns API caching
 // with staleness stamps). Bump CACHE on every deploy.
-const CACHE = 'mangoit-v13';
+const CACHE = 'mangoit-v14';
 const SHELL = [
   '/',
   '/index.html',
-  '/css/styles.css?v=0.5.2',
-  '/js/app.js?v=0.5.2',
+  '/css/styles.css?v=0.5.3',
+  '/js/app.js?v=0.5.3',
   '/js/api.js',
   '/js/board.js',
   '/js/mapview.js',
@@ -26,7 +26,13 @@ const SHELL = [
 ];
 
 self.addEventListener('install', (e) => {
-  e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting()));
+  // cache:'reload' bypasses the HTTP cache: unversioned module URLs
+  // (/js/saved.js …) must be fetched fresh from the server, or a new SW
+  // precaches STALE modules next to a fresh index.html (torn app state —
+  // the ManGO classic v8.34.2 bug, reproduced here on the Saved tab).
+  e.waitUntil(caches.open(CACHE)
+    .then((c) => c.addAll(SHELL.map((u) => new Request(u, { cache: 'reload' }))))
+    .then(() => self.skipWaiting()));
 });
 
 self.addEventListener('activate', (e) => {

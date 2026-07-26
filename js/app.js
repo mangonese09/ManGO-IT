@@ -60,6 +60,17 @@ function boot() {
 
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/service-worker.js').catch(() => { /* offline first load */ });
+    // A new SW claiming this page means the precache just changed under us —
+    // reload ONCE so the running modules match the new shell (no torn state).
+    // Only when a controller is REPLACED: first-ever install claiming an
+    // uncontrolled page must not reload the very first visit.
+    const hadController = !!navigator.serviceWorker.controller;
+    let swReloaded = false;
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (!hadController || swReloaded) return;
+      swReloaded = true;
+      location.reload();
+    });
   }
 }
 
