@@ -116,6 +116,107 @@ function directSearch(fLat, fLon, tLat, tLon, radius = 1500, days = null) {
   return { fetchedAt: Date.now(), results: results.slice(0, 10) };
 }
 
+// ── ONE-TRANSFER COACH CHAINING ──
+// Until Transitous ingests the feed (PR #2327), multi-leg coach journeys
+// don't exist anywhere. This answers A→X→B over our own schedule data:
+// leg 1 boards near the origin, leg 2 departs a stop within XFER_WALK_M of
+// the alighting point between XFER_MIN_MIN and XFER_MAX_MIN later.
+// Schedule-only, honestly labeled in the UI. days injectable for tests.
+const XFER_MIN_MIN = 10;    // coaches are hourly — never sell a 3-minute dash
+const XFER_MAX_MIN = 150;
+const XFER_WALK_M = 250;
+
+let stopTripIdx = null;     // stop index → [{t: trip, k: position}]
+function tripIndex() {
+  if (!stopTripIdx) {
+    stopTripIdx = new Map();
+    for (const trip of coachTrips) {
+      trip.s.forEach(([idx], k) => {
+        if (!stopTripIdx.has(idx)) stopTripIdx.set(idx, []);
+        stopTripIdx.get(idx).push({ t: trip, k });
+      });
+    }
+  }
+  return stopTripIdx;
+}
+
+function fmtMin(m) {
+  return `${String(Math.floor(m / 60) % 24).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`;
+}
+
+function twoLegSearch(fLat, fLon, tLat, tLon, radius = 1500, days = null) {
+  const fromIdx = new Map(nearStopIdxs(fLat, fLon, radius).map((x) => [x.i, x.d]));
+  const toIdx = new Map(nearStopIdxs(tLat, tLon, radius).map((x) => [x.i, x.d]));
+  if (!fromIdx.size || !toIdx.size) return [];
+  const idxOf = tripIndex();
+  const dayList = days || [romeParts(), romeParts(new Date(Date.now() + 86400000))];
+  const now = dayList[0];
+  const chains = [];
+  for (let dayOff = 0; dayOff < dayList.length && !chains.length; dayOff++) {
+    const day = dayList[dayOff];
+    for (const t1 of coachTrips) {
+      if (!serviceRuns(t1, day)) continue;
+      let board = null;
+      for (let k = 0; k < t1.s.length; k++) {
+        const [idx, min] = t1.s[k];
+        if (board === null) {
+          if (fromIdx.has(idx) && (dayOff > 0 || min >= now.min - 5)) board = { idx, min };
+          continue;
+        }
+        if (toIdx.has(idx)) break; // direct exists on this trip — directSearch owns it
+        // try transferring at this alighting point
+        const xferAt = coachStops[idx];
+        for (const [cand, candStop] of nearTransferStops(idx, xferAt)) {
+          for (const { t: t2, k: k2 } of idxOf.get(cand) || []) {
+            if (t2 === t1 || k2 >= t2.s.length - 1 || !serviceRuns(t2, day)) continue;
+            const dep2 = t2.s[k2][1];
+            if (dep2 < min + XFER_MIN_MIN || dep2 > min + XFER_MAX_MIN) continue;
+            for (let j = k2 + 1; j < t2.s.length; j++) {
+              const [idx3, arr3] = t2.s[j];
+              if (!toIdx.has(idx3)) continue;
+              chains.push({
+                day: dayOff === 0 ? 'today' : 'tomorrow',
+                depMin: board.min + dayOff * 1440, arrMin: arr3 + dayOff * 1440,
+                waitMin: dep2 - min,
+                legs: [
+                  { route: t1.r, operator: t1.op, from: coachStops[board.idx].n,
+                    to: xferAt.n, dep: fmtMin(board.min), arr: fmtMin(min) },
+                  { route: t2.r, operator: t2.op, from: candStop.n,
+                    to: coachStops[idx3].n, dep: fmtMin(dep2), arr: fmtMin(arr3) },
+                ],
+                xferStop: xferAt.n,
+              });
+              break;
+            }
+          }
+        }
+      }
+    }
+  }
+  chains.sort((a, b) => a.arrMin - b.arrMin || a.waitMin - b.waitMin);
+  // one best chain per (leg1 route + departure); cap at 4
+  const seen = new Set();
+  const out = [];
+  for (const c of chains) {
+    const key = `${c.legs[0].route}|${c.legs[0].dep}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    out.push(c);
+    if (out.length >= 4) break;
+  }
+  return out;
+}
+
+function nearTransferStops(idx, at) {
+  const out = [[idx, at]];
+  for (let i = 0; i < coachStops.length; i++) {
+    if (i !== idx && haversineM(at.lat, at.lon, coachStops[i].lat, coachStops[i].lon) <= XFER_WALK_M) {
+      out.push([i, coachStops[i]]);
+    }
+  }
+  return out;
+}
+
 // Departure board for a COACH stop from our own feed — coach stops have no
 // Transitous stopId until the feed is ingested upstream, but the favorites
 // tab must still show their next departures. days injectable for tests.
@@ -406,7 +507,12 @@ const routes = {
     const tLat = Number(q.get('toLat')), tLon = Number(q.get('toLon'));
     if (![fLat, fLon, tLat, tLon].every(isFinite)) throw httpError(400, 'fromLat/fromLon/toLat/toLon required');
     const radius = Math.min(Number(q.get('r')) || 1500, 5000);
-    return directSearch(fLat, fLon, tLat, tLon, radius);
+    const out = directSearch(fLat, fLon, tLat, tLon, radius);
+    // one-transfer chains: most useful when direct service is thin
+    if ((out.results || []).length < 6) {
+      out.transfers = twoLegSearch(fLat, fLon, tLat, tLon, radius);
+    }
+    return out;
   },
 
   'GET /api/coach-board': async (q) => {
@@ -552,4 +658,4 @@ if (require.main === module) {
   server.listen(PORT, () => console.log(`ManGO:IT proxy on :${PORT}${STATIC ? ' (static+api)' : ''}`));
 }
 
-module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, serviceRuns, romeParts };
+module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts };

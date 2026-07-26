@@ -66,3 +66,17 @@ test('coachBoard: lists next departures from a coach stop, never the terminus', 
   assert.ok(results.every((r) => r.headsign && r.dep), 'each row has headsign and time');
   assert.ok(results.every((r) => r.depMin >= 6 * 60 - 2), 'no departed runs listed');
 });
+
+test('twoLegSearch: Raffadali→Catania chains via Agrigento with a sane transfer window', () => {
+  const { twoLegSearch } = require('../../server/proxy.js');
+  // Raffadali centre → Catania centre, Monday morning
+  const MONDAY = { iso: '2026-07-27', wd: 0, min: 5 * 60, month: 7, day: 27 };
+  const chains = twoLegSearch(37.4029, 13.5339, 37.5023, 15.0873, 2500, [MONDAY]);
+  assert.ok(chains.length >= 1, `expected at least one 1-transfer chain, got ${chains.length}`);
+  for (const c of chains) {
+    assert.strictEqual(c.legs.length, 2);
+    assert.ok(c.waitMin >= 10 && c.waitMin <= 150, `transfer wait ${c.waitMin} outside 10-150min`);
+    assert.ok(c.arrMin > c.depMin, 'arrives after departing');
+  }
+  assert.ok(/AGRIGENTO/i.test(chains[0].xferStop), `expected Agrigento transfer, got ${chains[0].xferStop}`);
+});

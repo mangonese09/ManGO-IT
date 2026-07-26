@@ -174,18 +174,19 @@ async function runSearch() {
     renderItineraries(data.itineraries || [], { stale, fetchedAt });
     const dir = await directPromise;
     const runs = dir?.data?.results || [];
+    const xfers = dir?.data?.transfers || [];
     const its = data.itineraries || [];
     if (!its.length) {
-      renderDirectBlock(runs, 'empty');
+      renderDirectBlock(runs, 'empty', xfers);
     } else if (runs.length) {
       const bestPlanMin = Math.min(...its.map((i) => (i.duration || 1e9) / 60));
       const bestDirectMin = Math.min(...runs.map(directRunMinutes));
-      if (bestDirectMin + 15 < bestPlanMin) renderDirectBlock(runs, 'faster');
+      if (bestDirectMin + 15 < bestPlanMin) renderDirectBlock(runs, 'faster', xfers);
     }
   } catch (err) {
     results.innerHTML = '';
     const dir = await directPromise;
-    const ok = renderDirectBlock(dir?.data?.results || [], 'down');
+    const ok = renderDirectBlock(dir?.data?.results || [], 'down', dir?.data?.transfers || []);
     if (!ok) {
       results.appendChild(el('div', { class: 'empty-state' }, [
         el('p', { text: 'No route found — the routing service may be unreachable.' }),
@@ -207,14 +208,15 @@ const DIRECT_HEADS = {
   faster: 'Faster direct coaches — from ManGO:IT timetables',
 };
 
-// Direct single-leg coaches from our own feed, honestly labeled.
-function renderDirectBlock(runs, reason) {
-  if (!runs.length) return false;
+// Direct single-leg coaches + one-transfer chains from our own feed,
+// honestly labeled (scheduled times only).
+function renderDirectBlock(runs, reason, transfers = []) {
+  if (!runs.length && !transfers.length) return false;
   const results = document.getElementById('results');
-  results.appendChild(el('div', { class: 'direct-block' }, [
+  const kids = [
     el('div', { class: 'direct-head' }, [
       el('strong', { text: DIRECT_HEADS[reason] }),
-      el('p', { class: 'muted', text: 'Single-leg services from our own schedule data. Scheduled times, no live status.' }),
+      el('p', { class: 'muted', text: 'From our own schedule data. Scheduled times, no live status.' }),
     ]),
     ...runs.map((r) => el('div', { class: 'dep-row' }, [
       el('span', { class: 'dep-mode', text: '🚌' }),
@@ -223,7 +225,18 @@ function renderDirectBlock(runs, reason) {
         el('span', { class: 'muted dep-headsign', text: `${r.from} → ${r.to} · ${r.operator}` }),
       ]),
     ])),
-  ]));
+  ];
+  for (const c of transfers) {
+    kids.push(el('div', { class: 'dep-row xfer-row' }, [
+      el('span', { class: 'dep-mode', text: '🚌🚌' }),
+      el('div', { class: 'dep-main' }, [
+        el('span', { class: 'dep-route', text: `${c.legs[0].dep} → ${c.legs[1].arr}${c.day === 'tomorrow' ? ' (tomorrow)' : ''} · 1 transfer` }),
+        el('span', { class: 'muted dep-headsign', text: `${c.legs[0].from} → ${c.xferStop} (${c.waitMin} min wait) → ${c.legs[1].to}` }),
+        el('span', { class: 'muted dep-headsign', text: `${c.legs[0].operator} + ${c.legs[1].operator}` }),
+      ]),
+    ]));
+  }
+  results.appendChild(el('div', { class: 'direct-block' }, kids));
   return true;
 }
 
