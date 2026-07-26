@@ -38,10 +38,11 @@ BATCH = 20          # lineIds per timetable request
 DELAY = 1.0         # seconds between requests
 
 # Sweep weeks: one full week inside each plausible sub-period of the
-# current timetable, incl. Ferragosto week (seasonal beach runs) and two
-# post-summer probe weeks (cheap: empty responses are 2 bytes).
-SWEEP_WEEKS = [date(2026, 7, 27), date(2026, 8, 10), date(2026, 8, 31),
-               date(2026, 9, 14), date(2026, 9, 28)]
+# timetable horizon, computed from today so the weekly refresh keeps
+# working (0/2/5/7/9 weeks out from next Monday ≈ 10 weeks of horizon;
+# far-out weeks past the loaded period return 2-byte empties, cheap).
+_ANCHOR = date.today() + timedelta(days=(7 - date.today().weekday()) % 7 or 7)
+SWEEP_WEEKS = [_ANCHOR + timedelta(weeks=w) for w in (0, 2, 5, 7, 9)]
 SWEEP_DATES = [w + timedelta(days=i) for w in SWEEP_WEEKS for i in range(7)]
 
 # Italian national holidays relevant to observed validity windows
@@ -91,7 +92,7 @@ def d_of(obj):
 
 # Some validities are open-ended (validityTo decades out, ~200 years of
 # dates = a 490MB coach-trips.json); clamp to the window the feed ships.
-WINDOW_LO = date(2026, 7, 25)
+WINDOW_LO = date.today()
 WINDOW_HI = date(2027, 7, 31)  # emit_gtfs FEED_END
 
 
@@ -188,6 +189,11 @@ def main():
     os.makedirs(SAIS_DIR, exist_ok=True)
     man_f = os.path.join(SAIS_DIR, 'manifest.json')
     manifest = json.load(open(man_f, encoding='utf-8')) if os.path.exists(man_f) else {}
+    if force:  # clean slate: stale sweep-date caches would never be read again
+        for f in os.listdir(SAIS_DIR):
+            if f.startswith('tt-'):
+                os.remove(os.path.join(SAIS_DIR, f))
+        manifest = {k: v for k, v in manifest.items() if not k.startswith('tt-')}
 
     stops = fetch('/stops', 'stops.json', manifest, force)
     lines = fetch('/lines', 'lines.json', manifest, force)

@@ -23,7 +23,23 @@ PROBES = [
     ('d9f137e8-2ab6-47c0-b571-a1eab3cf077a', '4170', 'Messina - Catania'),
     ('2675685c-8ed3-4143-8d5f-adcef719ff0d', '172', 'Palermo - Enna - Piazza Armerina - Gela'),
 ]
-PROBE_DATES = [date(2026, 8, 5), date(2026, 8, 23)]  # Wed + Sun, both outside sweep weeks
+def _probe_dates():
+    """One weekday + one Sunday, both deliberately OUTSIDE the harvest sweep
+    so the verification requests are independent of the harvested data."""
+    sys.path.insert(0, ROOT)
+    from sais_harvest import SWEEP_DATES
+    from datetime import timedelta
+    sweep = set(SWEEP_DATES)
+    d, picks = min(sweep) + timedelta(days=1), []
+    want_sunday = False
+    while len(picks) < 2 and d < max(sweep):
+        if d not in sweep and (d.weekday() == 6) == want_sunday:
+            picks.append(d); want_sunday = True
+        d += timedelta(days=1)
+    return picks
+
+
+PROBE_DATES = _probe_dates()  # e.g. Wed 8/5 + Sun 8/23 for the 2026-07-27 sweep
 
 
 def api_trips(line_id, d):

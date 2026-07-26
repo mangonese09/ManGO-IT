@@ -37,13 +37,44 @@ Urban pools: Enna, Augusta, Gela, Milazzo, Modica, Scicli, Siracusa.
 6. National lines: include only Sicily-internal segments? DECISION: include whole
    line (Transitous is international) but mark agency correctly.
 
-## SAIS Trasporti — separate system, recon needed
+## SAIS Trasporti — SOLVED 2026-07-25: Laser.Orchard JSON web-service
 
-- `api.saistrasporti.it` does not resolve/connect — NOT Albatross.
-- Site: `saistrasporti.it/it-IT/ricerca-orari-e-linee` (ASP.NET). WebFetch fails
-  on their TLS (self-signed intermediate?); use browser or curl -k next session.
-- This company holds **Agrigento↔Catania(+airport)** — the corridor that makes
-  Raffadali→Catania work — plus Palermo↔Caltanissetta etc.
+NOT Albatross; the Orchard CMS site proxies an internal booking API as JSON.
+TLS chain is broken (curl needs `-k`; Python needs `ssl` verification off).
+Base: `https://www.saistrasporti.it/Laser.Orchard.WebServices/webapi/display`
+
+| Query | Returns |
+|---|---|
+| `?alias=from&lang=it-IT` | 144 localities `{Id, Descrizione, Tpl}` (Tpl=true → regional TPL network; Tpl=false includes national cities: Bari, Bologna, Rome…) |
+| `?alias=to&from={id}&lang=it-IT` | valid destinations for an origin (the sale graph; AGRIGENTO → 47 dests) |
+| `?alias=search&from={id}&to={id}&type=1&lang=it-IT&departingdate=DD/MM/YYYY&returningdate=DD/MM/YYYY` | runs: `{Orario, Ora_arrivo, Linea, Costo, Info: DIRETTO, Data, Secondi(+arrivo), Tipo: Andata/Ritorno, Tpl}` — payload at `ExternalSearch.ExternalSearchDPart.ExternalSearchFieldExternal.ContentObject.root.ExternalSearchList` |
+
+Key ids: AGRIGENTO 109, CATANIA 106, CALTANISSETTA 114, PALERMO 140, AEROPORTO CT 2153.
+
+**What it does NOT give (unlike Albatross):**
+- No intermediate stops per run — city-level OD pairs only.
+- No validity calendars — runs exist per queried date only.
+
+**Both gaps are workable, verified live:**
+- *Stitching:* the same physical run is consistent across OD queries —
+  AG 02:30 →(AG→CL query) CL arr 03:45; CL→CT query has dep 03:45 → CT 05:20;
+  AG→CT query shows 02:30 → 05:20. Line 9001, zero-dwell chaining on
+  (Linea, Data, arr≈dep). Trip reconstruction = group the OD matrix by
+  (Data, Linea) and chain legs.
+- *Calendars:* must be INFERRED from a date sweep (e.g. 14 consecutive days →
+  weekly pattern + holiday probes). This is weaker than Autolinee's exact
+  validities — document the approximation in feed NOTES if shipped.
+
+**Harvest sizing:** filter to Sicily-internal edges (drop national OD pairs —
+FlixBus territory, out of v1 scope). Sicilian localities ≈ 100; sale-graph
+edges a few hundred; × 14 sweep dates at 1 req/s ≈ a few hours, cacheable.
+Stops are city-level → geocode towns via the existing Nominatim path
+(precision 'town'), or pin to existing feed stops where names match.
+
+**Open decision before building:** the user's bar for SAIS was "perfect" —
+Autolinee met it because calendars are exact. Trasporti calendars can only be
+inferred from sampling; ship with documented approximation, or hold until a
+better source (their public line PDFs?) is found.
 
 ## Verification plan ("perfect" bar)
 - Cross-check harvested times against the booking engine's own rendered Orari
