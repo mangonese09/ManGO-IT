@@ -13,6 +13,7 @@ exists (PRD §7).
 | Assemble | `assemble.py` + `seed_routes.json` | Trips per corsa, direction auto-detected (first-vs-last time), A./P. terminal pairs merged, service classified from label keywords via subsequence matching (handles interleaved vertical text). Non-monotonic trips are dropped and reported, never shipped. |
 | Geocode | `geocode.py` | Nominatim (1.1s delay, permanent cache in `data/geocode-cache.json`, overrides in `geocode-overrides.json`), street→town fallback, km-interpolation between geocoded neighbours for road junctions ("BV."). Precision recorded per stop. |
 | SAIS harvest | `sais_harvest.py` | No PDFs: saisautolinee.it runs an unauthenticated Albatross timetable API (recon in `docs/sais-recon.md`). `/stops` has exact lat/lon (no geocoding; sidecar `data/sais-stop-coords.json`, precision `exact`), `/routestimetables/timetable` has per-stop times + **exact validity calendars** → services emitted as `explicit_dates` (no school-year approximation). The `?date=` param filters templates to that day, so the harvester sweeps 5 full weeks across the timetable period and merges by templateId. Raw responses cached under `data/sais/` with sha256 manifest. ~140 requests/sweep at 1/s. Refresh weekly (current validities end 2026-09-13; the next period appears in the API later). |
+| SAIS Trasporti harvest | `saist_harvest.py` | The booking engine's JSON web-service gives city-level OD searches only (no per-stop data, no calendars). `--graph` caches the 124 Sicilian localities + sale graph; `--sweep` queries all ~1.8k Sicily-internal OD pairs for 7 consecutive days + a holiday probe (resumable JSONL cache); `--build` reconstructs trips by chaining legs on exact (city, time) nodes (verified consistent, see `docs/sais-recon.md`) and **infers calendars from the weekly pattern**, extrapolated no further than the TPL summer horizon observed in the Autolinee validities. Cross-verified on out-of-sweep dates by `saist_verify.py`. |
 | Emit | `emit_gtfs.py` | calendar_dates-only calendars: exact date sets per service (feriale/festivo/scolastico/seasonal), or verbatim `explicit_dates` for API-sourced services. Window 2026-08-01 → 2027-07-31. |
 | Validate | `validate.py` | Referential integrity, monotonic times, Sicily bbox, ≥2 stops/trip. **A feed that fails does not ship.** |
 
@@ -28,6 +29,11 @@ Build dependency: `pip install pdfplumber` (pipeline only, not the app).
   the live portal works; operator sites are an alternative source).
 - **School calendar approximated** (2026-09-14 → 2027-06-08 + Christmas/Easter
   breaks). The regional decree shifts by a few days each year.
+- **SAIS Trasporti calendars are inferred, not published.** Their API answers
+  per-date searches only, so service days come from a 7-day sample + holiday
+  probe, extrapolated week-by-week and capped at the TPL summer horizon.
+  Times are exact (cross-verified); the *pattern* is sampled. Re-harvest
+  monthly to extend the horizon past the cap.
 - **`Divieto di esercizio locale` prescriptions** (OD-pair prohibitions, e.g.
   AST 702 Montevago↔S. Margherita) are **not expressible in GTFS** and are
   documented in `data/reports/prescriptions.md` rather than silently dropped.

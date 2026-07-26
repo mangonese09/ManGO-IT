@@ -15,3 +15,7 @@ pipeline/data/sais/tt-*.json
 
 # weekly refresh log (local)
 pipeline/data/reports/sais-refresh.log
+
+# SAIS Trasporti sweep cache (regenerated per harvest; graph+localities are committed)
+pipeline/data/saist/runs-*.jsonl
+pipeline/data/saist/sweep*.log

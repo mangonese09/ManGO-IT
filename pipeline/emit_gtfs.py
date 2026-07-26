@@ -257,7 +257,8 @@ def main():
                              [['1', 'ManGO:IT', 1, 0, 0, 'https://it.mangonese.dev'],
                               ['2', 'Regione Siciliana - Assessorato Infrastrutture e Mobilita', 0, 0, 1, 'https://pti.regione.sicilia.it'],
                               ['3', 'TUA Trasporti Urbani Agrigento', 0, 1, 0, 'https://www.trasportiurbaniagrigento.it'],
-                              ['4', 'SAIS Autolinee', 0, 1, 0, 'https://www.saisautolinee.it']]),
+                              ['4', 'SAIS Autolinee', 0, 1, 0, 'https://www.saisautolinee.it'],
+                              ['5', 'SAIS Trasporti', 0, 1, 0, 'https://www.saistrasporti.it']]),
     }
     zpath = os.path.join(OUT_DIR, 'sicily-coaches.gtfs.zip')
     with zipfile.ZipFile(zpath, 'w', zipfile.ZIP_DEFLATED) as z:
