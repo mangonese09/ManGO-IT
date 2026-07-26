@@ -238,3 +238,10 @@ body.sheet-open { overflow: hidden; }
 :root[data-theme="light"] .suggest { box-shadow: 0 8px 24px rgba(0,0,0,0.18); }
 :root[data-theme="light"] .dep-row { border-top-color: rgba(0,0,0,0.06); }
 :root[data-theme="light"] .sheet-grab { background: rgba(0,0,0,0.2); }
+
+/* favorite stops (Saved tab) */
+.fav-search { margin-bottom: 12px; }
+.fav-stop-card { margin-bottom: 12px; padding: 12px 14px; }
+.fav-stop-head { display: flex; align-items: center; gap: 10px; }
+.fav-stop-head .dep-main { flex: 1; }
+.fav-stop-rows { margin-top: 4px; }

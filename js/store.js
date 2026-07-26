@@ -44,6 +44,21 @@ export function purgeSaved(now = Date.now()) {
 }
 
 // ── recent searches ──
+// Favorite STOPS (whole departure boards on the Saved tab), any kind:
+// train station / city bus / coach. Keyed by Transitous stopId when the
+// stop has one, else by rounded coords (coach stops pre-ingestion).
+export function getFavStops() { return read('favstops', []); }
+export function addFavStop(stop) {
+  const list = getFavStops().filter((s) => s.key !== stop.key);
+  list.push(stop);
+  write('favstops', list.slice(-12));
+  return list;
+}
+export function removeFavStop(key) {
+  write('favstops', getFavStops().filter((s) => s.key !== key));
+}
+export function isFavStop(key) { return getFavStops().some((s) => s.key === key); }
+
 export function getRecents() { return read('recents', []); }
 export function pushRecent(entry) {
   const all = getRecents().filter((r) => !(r.from.name === entry.from.name && r.to.name === entry.to.name));

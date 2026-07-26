@@ -54,3 +54,15 @@ test('serviceRuns: explicit-date services (SAIS) ignore weekday/holiday inferenc
   assert.strictEqual(serviceRuns(trip, ferragosto), true, 'listed date must run');
   assert.strictEqual(serviceRuns(trip, monday), false, 'unlisted date must not run');
 });
+
+test('coachBoard: lists next departures from a coach stop, never the terminus', () => {
+  const { coachBoard } = require('../../server/proxy.js');
+  const stops = require('../../server/coach-stops.json');
+  const sr = stops.find((x) => /^SIRACUSA \(C\.so Umberto\/Terminal Bus\)$/.test(x.n));
+  const MONDAY = { iso: '2026-07-27', wd: 0, min: 6 * 60, month: 7, day: 27 };
+  const { results, stopName } = coachBoard(sr.lat, sr.lon, 250, [MONDAY]);
+  assert.ok(stopName, 'nearest stop name resolves');
+  assert.ok(results.length >= 3, `expected departures from the Siracusa terminal, got ${results.length}`);
+  assert.ok(results.every((r) => r.headsign && r.dep), 'each row has headsign and time');
+  assert.ok(results.every((r) => r.depMin >= 6 * 60 - 2), 'no departed runs listed');
+});

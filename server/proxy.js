@@ -116,6 +116,40 @@ function directSearch(fLat, fLon, tLat, tLon, radius = 1500, days = null) {
   return { fetchedAt: Date.now(), results: results.slice(0, 10) };
 }
 
+// Departure board for a COACH stop from our own feed — coach stops have no
+// Transitous stopId until the feed is ingested upstream, but the favorites
+// tab must still show their next departures. days injectable for tests.
+function coachBoard(lat, lon, radius = 300, days = null) {
+  const here = new Map(nearStopIdxs(lat, lon, radius).map((x) => [x.i, x.d]));
+  if (!here.size) return { fetchedAt: Date.now(), stopName: null, results: [] };
+  const dayList = days || [romeParts(), romeParts(new Date(Date.now() + 86400000))];
+  const now = dayList[0];
+  const results = [];
+  for (let dayOff = 0; dayOff < dayList.length && results.length < 8; dayOff++) {
+    const day = dayList[dayOff];
+    for (const trip of coachTrips) {
+      if (!serviceRuns(trip, day)) continue;
+      for (let k = 0; k < trip.s.length - 1; k++) {   // never "depart" from the terminus
+        const [idx, min] = trip.s[k];
+        if (!here.has(idx)) continue;
+        if (dayOff === 0 && min < now.min - 2) continue;
+        results.push({
+          day: dayOff === 0 ? 'today' : 'tomorrow',
+          route: trip.r, operator: trip.op,
+          stopName: coachStops[idx].n,
+          headsign: coachStops[trip.s[trip.s.length - 1][0]].n,
+          dep: `${String(Math.floor(min / 60) % 24).padStart(2, '0')}:${String(min % 60).padStart(2, '0')}`,
+          depMin: min + dayOff * 1440,
+        });
+        break;                                        // one boarding point per trip
+      }
+    }
+  }
+  results.sort((a, b) => a.depMin - b.depMin);
+  const nearest = [...here.entries()].sort((a, b) => a[1] - b[1])[0];
+  return { fetchedAt: Date.now(), stopName: coachStops[nearest[0]].n, results: results.slice(0, 8) };
+}
+
 function nearStopIdxs(lat, lon, radiusM) {
   const out = [];
   for (let i = 0; i < coachStops.length; i++) {
@@ -243,7 +277,7 @@ function slimVtDeparture(d) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.5.1', romeTime: romeNowString(), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.5.2', romeTime: romeNowString(), upstreamRequests: dayCounts }),
 
   'GET /api/geocode': async (q) => {
     const text = (q.get('text') || '').trim().slice(0, 64);
@@ -364,6 +398,13 @@ const routes = {
     if (![fLat, fLon, tLat, tLon].every(isFinite)) throw httpError(400, 'fromLat/fromLon/toLat/toLon required');
     const radius = Math.min(Number(q.get('r')) || 1500, 5000);
     return directSearch(fLat, fLon, tLat, tLon, radius);
+  },
+
+  'GET /api/coach-board': async (q) => {
+    const lat = Number(q.get('lat')), lon = Number(q.get('lon'));
+    if (![lat, lon].every(isFinite)) throw httpError(400, 'lat/lon required');
+    const radius = Math.min(Number(q.get('r')) || 300, 1500);
+    return coachBoard(lat, lon, radius);
   },
 
   'GET /api/vt/stations': async (q) => {
@@ -502,4 +543,4 @@ if (require.main === module) {
   server.listen(PORT, () => console.log(`ManGO:IT proxy on :${PORT}${STATIC ? ' (static+api)' : ''}`));
 }
 
-module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, serviceRuns, romeParts };
+module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, serviceRuns, romeParts };

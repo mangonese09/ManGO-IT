@@ -9,7 +9,7 @@
   <link rel="icon" href="/icons/icon-192.png">
   <link rel="apple-touch-icon" href="/icons/icon-192.png">
   <link rel="stylesheet" href="https://mangonese.dev/shared/mangonese.css">
-  <link rel="stylesheet" href="/css/styles.css?v=0.5.1">
+  <link rel="stylesheet" href="/css/styles.css?v=0.5.2">
 </head>
 <body>
   <header class="app-header">
@@ -51,6 +51,13 @@
     <!-- ── SAVED ── -->
     <section id="view-saved" hidden>
       <h2>Saved departures</h2>
+      <div class="search-box card fav-search">
+        <div class="endpoint-row">
+          <input id="fav-input" type="text" placeholder="Add a stop — bus, coach or train" autocomplete="off" enterkeyhint="search">
+          <div id="fav-suggest" class="suggest" hidden></div>
+        </div>
+      </div>
+      <div id="fav-stops"></div>
       <div id="saved-list"></div>
     </section>
 
@@ -109,6 +116,6 @@
     </button>
   </nav>
 
-  <script type="module" src="/js/app.js?v=0.5.1"></script>
+  <script type="module" src="/js/app.js?v=0.5.2"></script>
 </body>
 </html>

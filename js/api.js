@@ -43,6 +43,11 @@ export const api = {
   stoptimes: (stopId, n = 6) =>
     getJson(`/api/stoptimes?stopId=${encodeURIComponent(stopId)}&n=${n}`, { source: 'transitous' }),
 
+  coachBoard: (lat, lon, r = 300) =>
+    getJson(`/api/coach-board?lat=${lat.toFixed(5)}&lon=${lon.toFixed(5)}&r=${r}`, {
+      cacheKey: `coachboard:${lat.toFixed(4)},${lon.toFixed(4)}`, source: 'transitous',
+    }),
+
   direct: ({ fromLat, fromLon, toLat, toLon }) =>
     getJson(`/api/direct?fromLat=${fromLat.toFixed(4)}&fromLon=${fromLon.toFixed(4)}&toLat=${toLat.toFixed(4)}&toLon=${toLon.toFixed(4)}`, { source: 'transitous' }),
 
