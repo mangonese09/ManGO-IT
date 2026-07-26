@@ -8,130 +8,42 @@
  "directions": [
   {
    "stops": [
+    "PALERMO",
     "CALTANISSETTA",
-    "CAMPOBELLO DI LICATA",
-    "RAVANUSA",
     "RIESI",
-    "PALERMO"
+    "RAVANUSA",
+    "CAMPOBELLO DI LICATA"
    ],
    "trips": [
-    {
-     "corsa": "1610",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
-      "explicit_dates": [
-       "2026-07-28",
-       "2026-08-04",
-       "2026-08-11",
-       "2026-08-18",
-       "2026-08-25",
-       "2026-09-01",
-       "2026-09-08"
-      ]
-     },
-     "reverse": false,
-     "stops": [
-      {
-       "stop": "CALTANISSETTA",
-       "idx": 0,
-       "arr": "16.10",
-       "dep": "16.10"
-      },
-      {
-       "stop": "CAMPOBELLO DI LICATA",
-       "idx": 1,
-       "arr": "17.30",
-       "dep": "17.30"
-      }
-     ],
-     "valid": true
-    },
-    {
-     "corsa": "1610",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
-      "explicit_dates": [
-       "2026-07-28",
-       "2026-08-04",
-       "2026-08-11",
-       "2026-08-18",
-       "2026-08-25",
-       "2026-09-01",
-       "2026-09-08"
-      ]
-     },
-     "reverse": false,
-     "stops": [
-      {
-       "stop": "CALTANISSETTA",
-       "idx": 0,
-       "arr": "16.10",
-       "dep": "16.10"
-      },
-      {
-       "stop": "RAVANUSA",
-       "idx": 1,
-       "arr": "17.20",
-       "dep": "17.20"
-      }
-     ],
-     "valid": true
-    },
-    {
-     "corsa": "1610",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
-      "explicit_dates": [
-       "2026-07-28",
-       "2026-08-04",
-       "2026-08-11",
-       "2026-08-18",
-       "2026-08-25",
-       "2026-09-01",
-       "2026-09-08"
-      ]
-     },
-     "reverse": false,
-     "stops": [
-      {
-       "stop": "CALTANISSETTA",
-       "idx": 0,
-       "arr": "16.10",
-       "dep": "16.10"
-      },
-      {
-       "stop": "RIESI",
-       "idx": 1,
-       "arr": "16.55",
-       "dep": "16.55"
-      }
-     ],
-     "valid": true
-    },
     {
      "corsa": "1430",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "raw": "inferred from ['2026-07-27', '2026-07-28', '2026-07-29'] (weekly pattern, capped 2026-09-14)",
       "explicit_dates": [
        "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
        "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
        "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
        "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
        "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
        "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
        "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
        "2026-09-14"
       ]
      },
@@ -169,84 +81,16 @@
       }
      ],
      "valid": true
-    },
-    {
-     "corsa": "0520",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
-      "explicit_dates": [
-       "2026-07-28",
-       "2026-08-04",
-       "2026-08-11",
-       "2026-08-18",
-       "2026-08-25",
-       "2026-09-01",
-       "2026-09-08"
-      ]
-     },
-     "reverse": false,
-     "stops": [
-      {
-       "stop": "CAMPOBELLO DI LICATA",
-       "idx": 0,
-       "arr": "5.20",
-       "dep": "5.20"
-      },
-      {
-       "stop": "RAVANUSA",
-       "idx": 1,
-       "arr": "5.30",
-       "dep": "5.30"
-      }
-     ],
-     "valid": true
-    },
-    {
-     "corsa": "0520",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
-      "explicit_dates": [
-       "2026-07-28",
-       "2026-08-04",
-       "2026-08-11",
-       "2026-08-18",
-       "2026-08-25",
-       "2026-09-01",
-       "2026-09-08"
-      ]
-     },
-     "reverse": false,
-     "stops": [
-      {
-       "stop": "CAMPOBELLO DI LICATA",
-       "idx": 0,
-       "arr": "5.20",
-       "dep": "5.20"
-      },
-      {
-       "stop": "RIESI",
-       "idx": 1,
-       "arr": "5.55",
-       "dep": "5.55"
-      }
-     ],
-     "valid": true
     }
    ]
   },
   {
    "stops": [
     "CAMPOBELLO DI LICATA",
-    "CALTANISSETTA",
-    "PALERMO",
     "RAVANUSA",
-    "RIESI"
+    "RIESI",
+    "CALTANISSETTA",
+    "PALERMO"
    ],
    "trips": [
     {
@@ -255,55 +99,29 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
-      "explicit_dates": [
-       "2026-07-28",
-       "2026-08-04",
-       "2026-08-11",
-       "2026-08-18",
-       "2026-08-25",
-       "2026-09-01",
-       "2026-09-08"
-      ]
-     },
-     "reverse": true,
-     "stops": [
-      {
-       "stop": "CAMPOBELLO DI LICATA",
-       "idx": 0,
-       "arr": "5.20",
-       "dep": "5.20"
-      },
-      {
-       "stop": "CALTANISSETTA",
-       "idx": 1,
-       "arr": "6.45",
-       "dep": "6.45"
-      },
-      {
-       "stop": "PALERMO",
-       "idx": 2,
-       "arr": "8.25",
-       "dep": "8.25"
-      }
-     ],
-     "valid": true
-    },
-    {
-     "corsa": "0520",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "raw": "inferred from ['2026-07-27', '2026-07-28', '2026-07-29'] (weekly pattern, capped 2026-09-14)",
       "explicit_dates": [
        "2026-07-27",
+       "2026-07-28",
+       "2026-07-29",
        "2026-08-03",
+       "2026-08-04",
+       "2026-08-05",
        "2026-08-10",
+       "2026-08-11",
+       "2026-08-12",
        "2026-08-17",
+       "2026-08-18",
+       "2026-08-19",
        "2026-08-24",
+       "2026-08-25",
+       "2026-08-26",
        "2026-08-31",
+       "2026-09-01",
+       "2026-09-02",
        "2026-09-07",
+       "2026-09-08",
+       "2026-09-09",
        "2026-09-14"
       ]
      },

@@ -320,6 +320,21 @@ def cmd_build():
     day_files = sorted(f for f in os.listdir(ST_DIR) if f.startswith('runs-'))
     if not day_files:
         sys.exit('no runs-*.jsonl — run --sweep first')
+    # a partially-fetched date poisons the build: its chains are missing legs,
+    # which inflates signature count and pollutes weekday inference. Only use
+    # dates whose sweep is complete (all Sicily-internal edges present).
+    n_edges = sum(1 for a, ds in graph.items() if a in sic_ids for b in ds if b in sic_ids)
+    complete = []
+    for f in day_files:
+        with open(os.path.join(ST_DIR, f), encoding='utf-8') as fh:
+            n = sum(1 for _ in fh)
+        if n >= n_edges:
+            complete.append(f)
+        else:
+            print(f'SKIP {f}: {n}/{n_edges} edges fetched (sweep incomplete)')
+    day_files = complete
+    if not day_files:
+        sys.exit('no COMPLETE day files yet — let the sweep finish')
     cap = autolinee_horizon() or (date.fromisoformat(day_files[0][5:15]) + timedelta(days=49))
     print(f'extrapolation cap: {cap} (TPL summer horizon from Autolinee validities)')
 
