@@ -163,7 +163,9 @@ def hhmm_min(s):
 
 def autolinee_horizon():
     """Max validityTo across the cached SAIS Autolinee sweep — the TPL
-    summer-period boundary for the consortium. Extrapolation cap."""
+    summer-period boundary for the consortium. Extrapolation cap.
+    Open-ended validities (years out, 'until further notice') are ignored:
+    only boundaries within a year of today are real period ends."""
     best = None
     sais_dir = os.path.join(ROOT, 'data', 'sais')
     try:
@@ -174,8 +176,12 @@ def autolinee_horizon():
                 for t in route['tripTemplates']:
                     for v in t['validities']:
                         vt = v['validityTo']
-                        d = date(min(vt['year'], 2030), vt['month'], vt['day'])
-                        best = max(best or d, d)
+                        try:
+                            d = date(vt['year'], vt['month'], vt['day'])
+                        except ValueError:
+                            continue
+                        if d <= date.today() + timedelta(days=365):
+                            best = max(best or d, d)
     except FileNotFoundError:
         pass
     return best
@@ -336,8 +342,15 @@ def cmd_build():
             n_trips += 1
         if not any(d['trips'] for d in dirs.values()):
             continue
+        # human corridor name from the longest reconstructed trip
+        longest = max((t for d_ in dirs.values() for t in d_['trips']),
+                      key=lambda t: len(t['stops']))
+        ends = [longest['stops'][0]['stop'], longest['stops'][-1]['stop']]
+        if longest['reverse']:
+            ends.reverse()
+        corridor = ' - '.join(e.split(' (')[0].title() for e in ends)
         route = {'operator': OPERATOR, 'route_id': rid,
-                 'name': f'SAIS Trasporti linea {linea}',
+                 'name': f'{corridor} (SAIS Trasporti {linea})',
                  'short_name': str(linea),
                  'source': f'saistrasporti.it webapi (OD-matrix, sampled w/c {week[0] if week else "?"})',
                  'prescriptions': [], 'directions': []}
