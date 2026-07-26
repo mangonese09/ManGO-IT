@@ -1,23 +1,565 @@
 {
  "operator": "SAIS Trasporti",
  "route_id": "saist-9040",
- "name": "Madonnuzza - Alimena (SAIS Trasporti 9040)",
+ "name": "Gangi - Alimena (SAIS Trasporti 9040)",
  "short_name": "9040",
  "source": "saistrasporti.it webapi (OD-matrix, sampled w/c 2026-07-27)",
  "prescriptions": [],
  "directions": [
   {
    "stops": [
+    "GANGI",
     "MADONNUZZA",
+    "PETRALIA SOPRANA",
+    "PETRALIA SOTTANA",
     "FASANÒ",
     "PIANELLO",
     "BLUFI",
     "LOCATI",
     "BOMPIETRO",
-    "ALIMENA",
-    "PETRALIA SOTTANA"
+    "ALIMENA"
    ],
    "trips": [
+    {
+     "corsa": "1310",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GANGI",
+       "idx": 0,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "MADONNUZZA",
+       "idx": 1,
+       "arr": "13.40",
+       "dep": "13.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1310",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GANGI",
+       "idx": 0,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "PETRALIA SOPRANA",
+       "idx": 1,
+       "arr": "13.30",
+       "dep": "13.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1310",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GANGI",
+       "idx": 0,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "PETRALIA SOTTANA",
+       "idx": 1,
+       "arr": "13.45",
+       "dep": "13.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1310",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GANGI",
+       "idx": 0,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "FASANÒ",
+       "idx": 1,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "PIANELLO",
+       "idx": 2,
+       "arr": "14.00",
+       "dep": "14.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1310",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GANGI",
+       "idx": 0,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "BLUFI",
+       "idx": 1,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "LOCATI",
+       "idx": 2,
+       "arr": "14.20",
+       "dep": "14.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1310",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GANGI",
+       "idx": 0,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "BOMPIETRO",
+       "idx": 1,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "ALIMENA",
+       "idx": 2,
+       "arr": "14.40",
+       "dep": "14.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1355",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GANGI",
+       "idx": 0,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "FASANÒ",
+       "idx": 1,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "PIANELLO",
+       "idx": 2,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "BLUFI",
+       "idx": 3,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "LOCATI",
+       "idx": 4,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "BOMPIETRO",
+       "idx": 5,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "ALIMENA",
+       "idx": 6,
+       "arr": "15.20",
+       "dep": "15.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1355",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GANGI",
+       "idx": 0,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "FASANÒ",
+       "idx": 1,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "PIANELLO",
+       "idx": 2,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "BLUFI",
+       "idx": 3,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "LOCATI",
+       "idx": 4,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "ALIMENA",
+       "idx": 5,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "BOMPIETRO",
+       "idx": 6,
+       "arr": "15.40",
+       "dep": "15.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1410",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GANGI",
+       "idx": 0,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "MADONNUZZA",
+       "idx": 1,
+       "arr": "14.35",
+       "dep": "14.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1410",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GANGI",
+       "idx": 0,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "PETRALIA SOPRANA",
+       "idx": 1,
+       "arr": "14.30",
+       "dep": "14.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1410",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GANGI",
+       "idx": 0,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "FASANÒ",
+       "idx": 1,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "PIANELLO",
+       "idx": 2,
+       "arr": "14.50",
+       "dep": "14.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1410",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GANGI",
+       "idx": 0,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "BLUFI",
+       "idx": 1,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "LOCATI",
+       "idx": 2,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1410",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GANGI",
+       "idx": 0,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "BOMPIETRO",
+       "idx": 1,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "ALIMENA",
+       "idx": 2,
+       "arr": "15.35",
+       "dep": "15.35"
+      }
+     ],
+     "valid": true
+    },
     {
      "corsa": "1420",
      "service": {
@@ -149,6 +691,124 @@
      "valid": true
     },
     {
+     "corsa": "1415",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PETRALIA SOPRANA",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "FASANÒ",
+       "idx": 1,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "BLUFI",
+       "idx": 2,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "LOCATI",
+       "idx": 3,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "BOMPIETRO",
+       "idx": 4,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "ALIMENA",
+       "idx": 5,
+       "arr": "15.20",
+       "dep": "15.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1415",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PETRALIA SOPRANA",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "FASANÒ",
+       "idx": 1,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "BLUFI",
+       "idx": 2,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "LOCATI",
+       "idx": 3,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "ALIMENA",
+       "idx": 4,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "BOMPIETRO",
+       "idx": 5,
+       "arr": "15.40",
+       "dep": "15.40"
+      }
+     ],
+     "valid": true
+    },
+    {
      "corsa": "1430",
      "service": {
       "days": "explicit",
@@ -233,40 +893,6 @@
        "dep": "13.55"
       },
       {
-       "stop": "PIANELLO",
-       "idx": 1,
-       "arr": "14.00",
-       "dep": "14.00"
-      }
-     ],
-     "valid": true
-    },
-    {
-     "corsa": "1355",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
-      "explicit_dates": [
-       "2026-07-28",
-       "2026-08-04",
-       "2026-08-11",
-       "2026-08-18",
-       "2026-08-25",
-       "2026-09-01",
-       "2026-09-08"
-      ]
-     },
-     "reverse": false,
-     "stops": [
-      {
-       "stop": "FASANÒ",
-       "idx": 0,
-       "arr": "13.55",
-       "dep": "13.55"
-      },
-      {
        "stop": "BLUFI",
        "idx": 1,
        "arr": "14.05",
@@ -317,40 +943,6 @@
        "idx": 2,
        "arr": "14.40",
        "dep": "14.40"
-      }
-     ],
-     "valid": true
-    },
-    {
-     "corsa": "1445",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
-      "explicit_dates": [
-       "2026-07-28",
-       "2026-08-04",
-       "2026-08-11",
-       "2026-08-18",
-       "2026-08-25",
-       "2026-09-01",
-       "2026-09-08"
-      ]
-     },
-     "reverse": false,
-     "stops": [
-      {
-       "stop": "FASANÒ",
-       "idx": 0,
-       "arr": "14.45",
-       "dep": "14.45"
-      },
-      {
-       "stop": "PIANELLO",
-       "idx": 1,
-       "arr": "14.50",
-       "dep": "14.50"
       }
      ],
      "valid": true
@@ -519,18 +1111,53 @@
   },
   {
    "stops": [
-    "FASANÒ",
+    "MADONNUZZA",
     "GANGI",
+    "FASANÒ",
     "PETRALIA SOPRANA",
     "PETRALIA SOTTANA",
-    "BLUFI",
-    "MADONNUZZA",
-    "ALIMENA",
-    "BOMPIETRO",
     "PIANELLO",
-    "LOCATI"
+    "BLUFI",
+    "LOCATI",
+    "ALIMENA",
+    "BOMPIETRO"
    ],
    "trips": [
+    {
+     "corsa": "0710",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MADONNUZZA",
+       "idx": 0,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "GANGI",
+       "idx": 1,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
     {
      "corsa": "0705",
      "service": {
@@ -571,15 +1198,23 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
       "explicit_dates": [
+       "2026-07-27",
        "2026-07-28",
+       "2026-08-03",
        "2026-08-04",
+       "2026-08-10",
        "2026-08-11",
+       "2026-08-17",
        "2026-08-18",
+       "2026-08-24",
        "2026-08-25",
+       "2026-08-31",
        "2026-09-01",
-       "2026-09-08"
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
       ]
      },
      "reverse": true,
@@ -629,6 +1264,47 @@
        "idx": 1,
        "arr": "7.15",
        "dep": "7.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0705",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "FASANÒ",
+       "idx": 0,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "PETRALIA SOTTANA",
+       "idx": 1,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "GANGI",
+       "idx": 2,
+       "arr": "7.55",
+       "dep": "7.55"
       }
      ],
      "valid": true
@@ -668,6 +1344,41 @@
      "valid": true
     },
     {
+     "corsa": "0700",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PIANELLO",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "GANGI",
+       "idx": 1,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
      "corsa": "0655",
      "service": {
       "days": "explicit",
@@ -707,15 +1418,23 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
       "explicit_dates": [
+       "2026-07-27",
        "2026-07-28",
+       "2026-08-03",
        "2026-08-04",
+       "2026-08-10",
        "2026-08-11",
+       "2026-08-17",
        "2026-08-18",
+       "2026-08-24",
        "2026-08-25",
+       "2026-08-31",
        "2026-09-01",
-       "2026-09-08"
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
       ]
      },
      "reverse": true,
@@ -765,6 +1484,47 @@
        "idx": 1,
        "arr": "7.15",
        "dep": "7.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0655",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "BLUFI",
+       "idx": 0,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "PETRALIA SOTTANA",
+       "idx": 1,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "GANGI",
+       "idx": 2,
+       "arr": "7.55",
+       "dep": "7.55"
       }
      ],
      "valid": true
@@ -805,6 +1565,235 @@
        "idx": 2,
        "arr": "7.10",
        "dep": "7.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0640",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "LOCATI",
+       "idx": 0,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "PETRALIA SOPRANA",
+       "idx": 1,
+       "arr": "7.35",
+       "dep": "7.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0640",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "LOCATI",
+       "idx": 0,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "PETRALIA SOTTANA",
+       "idx": 1,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "GANGI",
+       "idx": 2,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0620",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "ALIMENA",
+       "idx": 0,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "PETRALIA SOPRANA",
+       "idx": 1,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "GANGI",
+       "idx": 2,
+       "arr": "9.30",
+       "dep": "9.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0620",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "ALIMENA",
+       "idx": 0,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "PETRALIA SOTTANA",
+       "idx": 1,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "GANGI",
+       "idx": 2,
+       "arr": "9.30",
+       "dep": "9.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0620",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "ALIMENA",
+       "idx": 0,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "BOMPIETRO",
+       "idx": 1,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "LOCATI",
+       "idx": 2,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "BLUFI",
+       "idx": 3,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "PIANELLO",
+       "idx": 4,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "FASANÒ",
+       "idx": 5,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "MADONNUZZA",
+       "idx": 6,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "GANGI",
+       "idx": 7,
+       "arr": "9.30",
+       "dep": "9.30"
       }
      ],
      "valid": true
@@ -1016,6 +2005,47 @@
       "days": "explicit",
       "school": null,
       "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "BOMPIETRO",
+       "idx": 0,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "PETRALIA SOPRANA",
+       "idx": 1,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "GANGI",
+       "idx": 2,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0635",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
       "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
       "explicit_dates": [
        "2026-07-28",
@@ -1040,6 +2070,47 @@
        "idx": 1,
        "arr": "7.15",
        "dep": "7.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0635",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "BOMPIETRO",
+       "idx": 0,
+       "arr": "6.35",
+       "dep": "6.35"
+      },
+      {
+       "stop": "PETRALIA SOTTANA",
+       "idx": 1,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "GANGI",
+       "idx": 2,
+       "arr": "7.55",
+       "dep": "7.55"
       }
      ],
      "valid": true

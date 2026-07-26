@@ -14,9 +14,9 @@
     "CANICATTÌ",
     "CALTANISSETTA",
     "SAN CATALDO",
-    "SERRADIFALCO",
     "GROTTE",
-    "RACALMUTO"
+    "RACALMUTO",
+    "SERRADIFALCO"
    ],
    "trips": [
     {
@@ -410,6 +410,90 @@
      "valid": true
     },
     {
+     "corsa": "1430",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AGRIGENTO",
+       "idx": 0,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "FAVARA",
+       "idx": 1,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1430",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AGRIGENTO",
+       "idx": 0,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "FAVARA",
+       "idx": 1,
+       "arr": "15.00",
+       "dep": "15.00"
+      }
+     ],
+     "valid": true
+    },
+    {
      "corsa": "0735",
      "service": {
       "days": "explicit",
@@ -473,40 +557,6 @@
        "idx": 1,
        "arr": "8.20",
        "dep": "8.20"
-      }
-     ],
-     "valid": true
-    },
-    {
-     "corsa": "0735",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
-      "explicit_dates": [
-       "2026-07-28",
-       "2026-08-04",
-       "2026-08-11",
-       "2026-08-18",
-       "2026-08-25",
-       "2026-09-01",
-       "2026-09-08"
-      ]
-     },
-     "reverse": false,
-     "stops": [
-      {
-       "stop": "CANICATTÌ",
-       "idx": 0,
-       "arr": "7.35",
-       "dep": "7.35"
-      },
-      {
-       "stop": "SERRADIFALCO",
-       "idx": 1,
-       "arr": "8.00",
-       "dep": "8.00"
       }
      ],
      "valid": true
@@ -797,6 +847,90 @@
        "idx": 1,
        "arr": "15.25",
        "dep": "15.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0720",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "FAVARA",
+       "idx": 0,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "AGRIGENTO",
+       "idx": 1,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0720",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "FAVARA",
+       "idx": 0,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "AGRIGENTO",
+       "idx": 1,
+       "arr": "7.55",
+       "dep": "7.55"
       }
      ],
      "valid": true
@@ -1338,6 +1472,46 @@
       "days": "explicit",
       "school": null,
       "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "GROTTE",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 1,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "SERRADIFALCO",
+       "idx": 2,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0700",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
       "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
       "explicit_dates": [
        "2026-07-27",
@@ -1385,6 +1559,46 @@
       {
        "stop": "CALTANISSETTA",
        "idx": 5,
+       "arr": "8.40",
+       "dep": "8.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0700",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "GROTTE",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "RACALMUTO",
+       "idx": 1,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 2,
        "arr": "8.40",
        "dep": "8.40"
       }

@@ -9,15 +9,95 @@
   {
    "stops": [
     "GANGI",
-    "PETRALIA SOPRANA",
-    "MADONNUZZA",
-    "PETRALIA SOTTANA",
     "CASTELLANA SICULA",
     "CALCARELLI",
     "POLIZZI GENEROSA",
-    "CALTAVUTURO"
+    "CALTAVUTURO",
+    "PETRALIA SOPRANA",
+    "MADONNUZZA",
+    "PETRALIA SOTTANA"
    ],
    "trips": [
+    {
+     "corsa": "1310",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GANGI",
+       "idx": 0,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "CASTELLANA SICULA",
+       "idx": 1,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "CALCARELLI",
+       "idx": 2,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "POLIZZI GENEROSA",
+       "idx": 3,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1310",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GANGI",
+       "idx": 0,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "CALTAVUTURO",
+       "idx": 1,
+       "arr": "14.45",
+       "dep": "14.45"
+      }
+     ],
+     "valid": true
+    },
     {
      "corsa": "1355",
      "service": {
@@ -212,46 +292,6 @@
        "idx": 1,
        "arr": "14.30",
        "dep": "14.30"
-      }
-     ],
-     "valid": true
-    },
-    {
-     "corsa": "1400",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
-      "explicit_dates": [
-       "2026-07-28",
-       "2026-08-04",
-       "2026-08-11",
-       "2026-08-18",
-       "2026-08-25",
-       "2026-09-01",
-       "2026-09-08"
-      ]
-     },
-     "reverse": false,
-     "stops": [
-      {
-       "stop": "CASTELLANA SICULA",
-       "idx": 0,
-       "arr": "14.00",
-       "dep": "14.00"
-      },
-      {
-       "stop": "CALCARELLI",
-       "idx": 1,
-       "arr": "14.10",
-       "dep": "14.10"
-      },
-      {
-       "stop": "POLIZZI GENEROSA",
-       "idx": 2,
-       "arr": "14.15",
-       "dep": "14.15"
       }
      ],
      "valid": true

@@ -274,8 +274,11 @@ def stitch(day_runs, edges=None):
                     else:
                         bad = True
             if bad:
+                # same-line same-minute doubled runs (school variants) at city
+                # granularity: both are sold journeys. Keep this corroborated
+                # chain; the contradicting legs stay unconsumed and seed their
+                # own (shorter) trips instead of both being thrown away.
                 ambiguous += 1
-                continue
             consumed.update(explained)
             trips.append((linea, nodes))
     return trips, ambiguous

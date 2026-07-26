@@ -491,6 +491,108 @@
       }
      ],
      "valid": true
+    },
+    {
+     "corsa": "0700",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GROTTE",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "RACALMUTO",
+       "idx": 1,
+       "arr": "7.10",
+       "dep": "7.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0845",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GROTTE",
+       "idx": 0,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "RACALMUTO",
+       "idx": 1,
+       "arr": "8.55",
+       "dep": "8.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1405",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "GROTTE",
+       "idx": 0,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "RACALMUTO",
+       "idx": 1,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
     }
    ]
   },
@@ -508,15 +610,22 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
       "explicit_dates": [
        "2026-07-27",
+       "2026-07-28",
        "2026-08-03",
+       "2026-08-04",
        "2026-08-10",
+       "2026-08-11",
        "2026-08-17",
+       "2026-08-18",
        "2026-08-24",
+       "2026-08-25",
        "2026-08-31",
+       "2026-09-01",
        "2026-09-07",
+       "2026-09-08",
        "2026-09-14"
       ]
      },
@@ -539,6 +648,40 @@
        "idx": 2,
        "arr": "7.55",
        "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0700",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "GROTTE",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 1,
+       "arr": "7.35",
+       "dep": "7.35"
       }
      ],
      "valid": true
@@ -585,6 +728,157 @@
      "valid": true
     },
     {
+     "corsa": "0845",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "GROTTE",
+       "idx": 0,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 1,
+       "arr": "9.20",
+       "dep": "9.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0845",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "GROTTE",
+       "idx": 0,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 1,
+       "arr": "9.30",
+       "dep": "9.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0845",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "GROTTE",
+       "idx": 0,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "RACALMUTO",
+       "idx": 1,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 2,
+       "arr": "9.20",
+       "dep": "9.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1405",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "GROTTE",
+       "idx": 0,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 1,
+       "arr": "14.40",
+       "dep": "14.40"
+      }
+     ],
+     "valid": true
+    },
+    {
      "corsa": "1405",
      "service": {
       "days": "explicit",
@@ -621,6 +915,41 @@
        "idx": 2,
        "arr": "14.40",
        "dep": "14.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0855",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "RACALMUTO",
+       "idx": 0,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 1,
+       "arr": "9.30",
+       "dep": "9.30"
       }
      ],
      "valid": true

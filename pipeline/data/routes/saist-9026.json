@@ -351,11 +351,93 @@
   {
    "stops": [
     "RIESI",
+    "CANICATTÌ",
     "SOMMATINO",
-    "DELIA",
-    "CANICATTÌ"
+    "DELIA"
    ],
    "trips": [
+    {
+     "corsa": "0705",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "RIESI",
+       "idx": 0,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 1,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0705",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "RIESI",
+       "idx": 0,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "SOMMATINO",
+       "idx": 1,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "DELIA",
+       "idx": 2,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 3,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
     {
      "corsa": "1410",
      "service": {
@@ -399,6 +481,41 @@
        "idx": 3,
        "arr": "15.05",
        "dep": "15.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0730",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "SOMMATINO",
+       "idx": 0,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 1,
+       "arr": "8.05",
+       "dep": "8.05"
       }
      ],
      "valid": true
@@ -450,23 +567,15 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
       "explicit_dates": [
-       "2026-07-27",
        "2026-07-28",
-       "2026-08-03",
        "2026-08-04",
-       "2026-08-10",
        "2026-08-11",
-       "2026-08-17",
        "2026-08-18",
-       "2026-08-24",
        "2026-08-25",
-       "2026-08-31",
        "2026-09-01",
-       "2026-09-07",
-       "2026-09-08",
-       "2026-09-14"
+       "2026-09-08"
       ]
      },
      "reverse": true,
