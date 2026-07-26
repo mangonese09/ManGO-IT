@@ -12,3 +12,6 @@ __pycache__/
 # SAIS raw timetable sweep cache (131MB, refetched on each weekly refresh;
 # provenance lives in pipeline/data/sais/manifest.json)
 pipeline/data/sais/tt-*.json
+
+# weekly refresh log (local)
+pipeline/data/reports/sais-refresh.log

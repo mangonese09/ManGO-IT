@@ -53,9 +53,15 @@ git add pipeline/data/routes pipeline/data/sais-stop-coords.json pipeline/data/s
     pipeline/data/sais/stops.json pipeline/data/sais/lines.json server/coach-stops.json server/coach-trips.json 2>&1 | Out-Null
 git diff --cached --quiet
 if ($LASTEXITCODE -ne 0) {
-    git commit -m "chore(pipeline): weekly SAIS refresh $(Get-Date -Format 'yyyy-MM-dd')" | Out-Null
+    # git writes progress to stderr; under ErrorActionPreference=Stop that
+    # becomes a terminating NativeCommandError — relax around the push.
+    $ErrorActionPreference = 'Continue'
+    git commit -m "chore(pipeline): weekly SAIS refresh $(Get-Date -Format 'yyyy-MM-dd')" 2>&1 | Out-Null
     git push 2>&1 | Out-Null
-    Log 'artifacts committed and pushed'
+    $pushOk = ($LASTEXITCODE -eq 0)
+    $ErrorActionPreference = 'Stop'
+    if ($pushOk) { Log 'artifacts committed and pushed' }
+    else { Log 'artifacts committed; PUSH FAILED (will ride along next push)' }
 } else {
     Log 'no artifact changes (API data unchanged)'
 }
