@@ -277,7 +277,7 @@ function slimVtDeparture(d) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.5.3', romeTime: romeNowString(), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.5.4', romeTime: romeNowString(), upstreamRequests: dayCounts }),
 
   'GET /api/geocode': async (q) => {
     const text = (q.get('text') || '').trim().slice(0, 64);
@@ -336,10 +336,19 @@ const routes = {
     if (q.get('time')) params.set('time', q.get('time'));
     if (q.get('arriveBy') === 'true') params.set('arriveBy', 'true');
     params.set('numItineraries', q.get('n') || '6');
+    // Routing controls tuned for a sparse rural network (audit F-1).
+    // MOTIS defaults are metro-grade: searchWindow 900s = 15 MINUTES —
+    // on a 3-runs-a-day coach corridor that alone fabricates dead ends.
+    params.set('searchWindow', q.get('searchWindow') || '21600');       // 6 h
+    params.set('maxMatchingDistance', '600');   // town-centroid stops sit off the road graph at 250 m
+    params.set('additionalTransferTime', '3');  // minutes; hourly coaches deserve a cushion
+    params.set('maxPreTransitTime', '1800');    // 30 min first/last-mile walk ceiling
+    params.set('maxPostTransitTime', '1800');
     const key = `plan:${params.toString()}`;
     const hit = cacheGet(key);
     if (hit) return hit;
-    const { data } = await upstream(`${TRANSITOUS}/api/v3/plan?${params}`, { timeoutMs: 45000 });
+    // 18 s: the client aborts at 20 s — a 45 s upstream wait answered nobody (audit 1C)
+    const { data } = await upstream(`${TRANSITOUS}/api/v3/plan?${params}`, { timeoutMs: 18000 });
     const out = {
       fetchedAt: Date.now(),
       itineraries: (data.itineraries || []).map(slimItinerary),

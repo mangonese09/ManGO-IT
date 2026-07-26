@@ -1,9 +1,20 @@
 # ── EXPORT COACH STOPS ──
 # stop-coords.json + route stop names → server/coach-stops.json, feeding the
 # proxy's autocomplete so coach stops are searchable before Transitous ingests.
-import json, os, re
+# Applies the same stop consolidation as emit_gtfs (audit F-2) so boards and
+# autocomplete don't show three spellings of one pole.
+import json, math, os, re
+
+from stopnorm import canon_key, display_score, MERGE_M
 
 ROOT = os.path.dirname(__file__)
+
+
+def hav_m(a, b):
+    p = math.pi / 180
+    return 2 * 6371000 * math.asin(math.sqrt(
+        math.sin((b[0] - a[0]) * p / 2) ** 2 +
+        math.cos(a[0] * p) * math.cos(b[0] * p) * math.sin((b[1] - a[1]) * p / 2) ** 2))
 
 
 def to_min(t):
@@ -17,6 +28,7 @@ def main():
     if os.path.exists(sais_f):
         coords.update(json.load(open(sais_f, encoding='utf-8')))
     names, order = {}, []
+    canon_registry = {}
     trips = []
     for f in sorted(os.listdir(os.path.join(ROOT, 'data', 'routes'))):
         r = json.load(open(os.path.join(ROOT, 'data', 'routes', f), encoding='utf-8'))
@@ -29,8 +41,25 @@ def main():
                     c = coords.get(key)
                     if not c: continue
                     if key not in names:
-                        names[key] = len(order)
-                        order.append({'n': s['stop'], 'lat': round(c['lat'], 5), 'lon': round(c['lon'], 5)})
+                        ck = canon_key(s['stop'])
+                        merged = None
+                        for cand in canon_registry.get(ck, []):
+                            if hav_m((c['lat'], c['lon']), (cand['lat'], cand['lon'])) <= MERGE_M:
+                                merged = cand
+                                break
+                        if merged:
+                            names[key] = merged['i']
+                            score = display_score(s['stop'], c.get('precision'))
+                            if score > merged['score']:
+                                order[merged['i']] = {'n': s['stop'], 'lat': round(c['lat'], 5), 'lon': round(c['lon'], 5)}
+                                merged.update(lat=c['lat'], lon=c['lon'], score=score)
+                        else:
+                            names[key] = len(order)
+                            canon_registry.setdefault(ck, []).append({
+                                'i': len(order), 'lat': c['lat'], 'lon': c['lon'],
+                                'score': display_score(s['stop'], c.get('precision')),
+                            })
+                            order.append({'n': s['stop'], 'lat': round(c['lat'], 5), 'lon': round(c['lon'], 5)})
                     seq.append([names[key], to_min(s['dep'])])
                 if len(seq) >= 2:
                     svc = t['service']

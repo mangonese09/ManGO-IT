@@ -56,8 +56,13 @@ def feed_runs(name_a, name_b, d):
     active = {c['service_id'] for c in rows('calendar_dates.txt') if c['date'] == day}
     trips = {t['trip_id']: routes[t['route_id']] for t in rows('trips.txt')
              if t['route_id'] in routes and t['service_id'] in active}
-    sid = {s['stop_id']: re.sub(r'\s+', ' ', s['stop_name'].upper().strip()) for s in rows('stops.txt')}
-    ka, kb = name_a.upper(), name_b.upper()
+    from stopnorm import canon_key
+    sid = {s['stop_id']: canon_key(s['stop_name']) for s in rows('stops.txt')}
+    from stopnorm import canon_key as _ck
+    mm = json.load(open(os.path.join(ROOT, 'dist', 'stop-merge-map.json'), encoding='utf-8'))
+    def _cname(n):
+        return _ck(mm.get(re.sub(r'\s+', ' ', n.upper().strip()), n))
+    ka, kb = _cname(name_a), _cname(name_b)
     by_trip = {}
     for st in rows('stop_times.txt'):
         if st['trip_id'] in trips:

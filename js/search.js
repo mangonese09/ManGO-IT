@@ -158,15 +158,34 @@ async function runSearch() {
     if (departMode === 'arrive') params.arriveBy = true;
   }
 
+  // Race the plan with our own direct lookup (answers in ms): direct coaches
+  // render alongside WEAK plan results too, not only on total failure —
+  // Transitous can "succeed" with a 4 h rail-replacement bus while our feed
+  // holds a 2 h coach it hasn't ingested yet (audit F-4).
+  const directPromise = (sel.from?.lat && sel.to?.lat)
+    ? api.direct({ fromLat: sel.from.lat, fromLon: sel.from.lon,
+                   toLat: sel.to.lat, toLon: sel.to.lon }).catch(() => null)
+    : Promise.resolve(null);
+
   try {
     const { data, stale, fetchedAt } = await api.plan(params);
     pushRecent({ from: sel.from, to: sel.to });
     renderRecents();
     renderItineraries(data.itineraries || [], { stale, fetchedAt });
-    if (!(data.itineraries || []).length) await tryDirectFallback(false);
+    const dir = await directPromise;
+    const runs = dir?.data?.results || [];
+    const its = data.itineraries || [];
+    if (!its.length) {
+      renderDirectBlock(runs, 'empty');
+    } else if (runs.length) {
+      const bestPlanMin = Math.min(...its.map((i) => (i.duration || 1e9) / 60));
+      const bestDirectMin = Math.min(...runs.map(directRunMinutes));
+      if (bestDirectMin + 15 < bestPlanMin) renderDirectBlock(runs, 'faster');
+    }
   } catch (err) {
     results.innerHTML = '';
-    const ok = await tryDirectFallback(true);
+    const dir = await directPromise;
+    const ok = renderDirectBlock(dir?.data?.results || [], 'down');
     if (!ok) {
       results.appendChild(el('div', { class: 'empty-state' }, [
         el('p', { text: 'No route found — the routing service may be unreachable.' }),
@@ -176,31 +195,36 @@ async function runSearch() {
   }
 }
 
-// Routing engine down or empty → direct single-leg coaches from our own feed.
-async function tryDirectFallback(routingDown) {
-  if (!sel.from?.lat || !sel.to?.lat) return false;
-  try {
-    const { data } = await api.direct({
-      fromLat: sel.from.lat, fromLon: sel.from.lon,
-      toLat: sel.to.lat, toLon: sel.to.lon,
-    });
-    if (!data.results?.length) return false;
-    const results = document.getElementById('results');
-    results.appendChild(el('div', { class: 'direct-block' }, [
-      el('div', { class: 'direct-head' }, [
-        el('strong', { text: routingDown ? 'Routing unavailable — direct coaches only' : 'Direct coaches (from ManGO:IT timetables)' }),
-        el('p', { class: 'muted', text: 'Single-leg services from our own schedule data. Scheduled times, no live status.' }),
+function directRunMinutes(r) {
+  const [dh, dm] = r.dep.split(':').map(Number);
+  const [ah, am] = r.arr.split(':').map(Number);
+  return ((ah * 60 + am) - (dh * 60 + dm) + 1440) % 1440;
+}
+
+const DIRECT_HEADS = {
+  down: 'Routing unavailable — direct coaches only',
+  empty: 'Direct coaches (from ManGO:IT timetables)',
+  faster: 'Faster direct coaches — from ManGO:IT timetables',
+};
+
+// Direct single-leg coaches from our own feed, honestly labeled.
+function renderDirectBlock(runs, reason) {
+  if (!runs.length) return false;
+  const results = document.getElementById('results');
+  results.appendChild(el('div', { class: 'direct-block' }, [
+    el('div', { class: 'direct-head' }, [
+      el('strong', { text: DIRECT_HEADS[reason] }),
+      el('p', { class: 'muted', text: 'Single-leg services from our own schedule data. Scheduled times, no live status.' }),
+    ]),
+    ...runs.map((r) => el('div', { class: 'dep-row' }, [
+      el('span', { class: 'dep-mode', text: '🚌' }),
+      el('div', { class: 'dep-main' }, [
+        el('span', { class: 'dep-route', text: `${r.dep} → ${r.arr}${r.day === 'tomorrow' ? ' (tomorrow)' : ''}` }),
+        el('span', { class: 'muted dep-headsign', text: `${r.from} → ${r.to} · ${r.operator}` }),
       ]),
-      ...data.results.map((r) => el('div', { class: 'dep-row' }, [
-        el('span', { class: 'dep-mode', text: '🚌' }),
-        el('div', { class: 'dep-main' }, [
-          el('span', { class: 'dep-route', text: `${r.dep} → ${r.arr}${r.day === 'tomorrow' ? ' (tomorrow)' : ''}` }),
-          el('span', { class: 'muted dep-headsign', text: `${r.from} → ${r.to} · ${r.operator}` }),
-        ]),
-      ])),
-    ]));
-    return true;
-  } catch { return false; }
+    ])),
+  ]));
+  return true;
 }
 
 function renderItineraries(itineraries, { stale, fetchedAt }) {

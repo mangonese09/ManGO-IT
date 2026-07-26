@@ -1,0 +1,92 @@
+{
+ "operator": "SAIS Trasporti",
+ "route_id": "saist-9033",
+ "name": "Caltanissetta - Resuttano (SAIS Trasporti 9033)",
+ "short_name": "9033",
+ "source": "saistrasporti.it webapi (OD-matrix, sampled w/c 2026-07-27)",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "CALTANISSETTA",
+    "RESUTTANO"
+   ],
+   "trips": [
+    {
+     "corsa": "1330",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-08-01'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-08-01",
+       "2026-08-08",
+       "2026-08-22",
+       "2026-08-29",
+       "2026-09-05",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 0,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "RESUTTANO",
+       "idx": 1,
+       "arr": "14.20",
+       "dep": "14.20"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "GUASTAFERRO",
+    "RESUTTANO"
+   ],
+   "trips": [
+    {
+     "corsa": "1335",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-08-01'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-08-01",
+       "2026-08-08",
+       "2026-08-22",
+       "2026-08-29",
+       "2026-09-05",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "GUASTAFERRO",
+       "idx": 0,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "RESUTTANO",
+       "idx": 1,
+       "arr": "14.20",
+       "dep": "14.20"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

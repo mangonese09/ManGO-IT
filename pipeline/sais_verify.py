@@ -52,7 +52,11 @@ def api_trips(line_id, d):
     by_id = {s['id']: s for s in stops}
     sys.path.insert(0, ROOT)
     from sais_harvest import validity_dates, build_name_map, in_sicily
+    from stopnorm import canon_key
     name_of = build_name_map(stops)
+    mm = json.load(open(os.path.join(ROOT, 'dist', 'stop-merge-map.json'), encoding='utf-8'))
+    def cname(n):
+        return canon_key(mm.get(re.sub(r'\s+', ' ', n.upper().strip()), n))
     out = set()
     for route in data:
         di = 1 if route.get('direction') else 0
@@ -65,7 +69,7 @@ def api_trips(line_id, d):
             for s in t['stops']:
                 if s['stopId'] not in by_id or not in_sicily(by_id[s['stopId']]):
                     continue
-                nm = re.sub(r'\s+', ' ', name_of[s['stopId']].upper().strip())
+                nm = cname(name_of[s['stopId']])
                 h = s['stopTime']['days'] * 24 + s['stopTime']['hours']
                 seq.append((nm, f"{h:02d}:{s['stopTime']['minutes']:02d}"))
             if len(seq) >= 2:
@@ -84,7 +88,8 @@ def feed_trips(route_short, d):
     day = d.strftime('%Y%m%d')
     active_svc = {c['service_id'] for c in rows('calendar_dates.txt') if c['date'] == day}
     trips = {t['trip_id']: t for t in rows('trips.txt') if t['route_id'] in rid and t['service_id'] in active_svc}
-    stop_names = {s['stop_id']: re.sub(r'\s+', ' ', s['stop_name'].upper().strip()) for s in rows('stops.txt')}
+    from stopnorm import canon_key
+    stop_names = {s['stop_id']: canon_key(s['stop_name']) for s in rows('stops.txt')}
     by_trip = {}
     for st in rows('stop_times.txt'):
         if st['trip_id'] in trips:

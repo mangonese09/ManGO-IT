@@ -13,7 +13,9 @@
     "MADONNUZZA",
     "PETRALIA SOTTANA",
     "CASTELLANA SICULA",
-    "POLIZZI GENEROSA"
+    "POLIZZI GENEROSA",
+    "GERACI BV.",
+    "CALCARELLI"
    ],
    "trips": [
     {
@@ -22,22 +24,29 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "inferred from ['2026-07-27', '2026-07-29'] (weekly pattern, capped 2026-09-14)",
+      "raw": "inferred from ['2026-07-27', '2026-07-29', '2026-07-31'] (weekly pattern, capped 2026-09-14)",
       "explicit_dates": [
        "2026-07-27",
        "2026-07-29",
+       "2026-07-31",
        "2026-08-03",
        "2026-08-05",
+       "2026-08-07",
        "2026-08-10",
        "2026-08-12",
+       "2026-08-14",
        "2026-08-17",
        "2026-08-19",
+       "2026-08-21",
        "2026-08-24",
        "2026-08-26",
+       "2026-08-28",
        "2026-08-31",
        "2026-09-02",
+       "2026-09-04",
        "2026-09-07",
        "2026-09-09",
+       "2026-09-11",
        "2026-09-14"
       ]
      },
@@ -88,15 +97,22 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "raw": "inferred from ['2026-07-28', '2026-07-30'] (weekly pattern, capped 2026-09-14)",
       "explicit_dates": [
        "2026-07-28",
+       "2026-07-30",
        "2026-08-04",
+       "2026-08-06",
        "2026-08-11",
+       "2026-08-13",
        "2026-08-18",
+       "2026-08-20",
        "2026-08-25",
+       "2026-08-27",
        "2026-09-01",
-       "2026-09-08"
+       "2026-09-03",
+       "2026-09-08",
+       "2026-09-10"
       ]
      },
      "reverse": false,
@@ -175,42 +191,338 @@
       }
      ],
      "valid": true
-    }
-   ]
-  },
-  {
-   "stops": [
-    "POLIZZI GENEROSA",
-    "CASTELLANA SICULA",
-    "PETRALIA SOTTANA",
-    "GERACI BV.",
-    "PETRALIA SOPRANA",
-    "MADONNUZZA",
-    "CALCARELLI"
-   ],
-   "trips": [
+    },
     {
      "corsa": "1240",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "inferred from ['2026-07-27', '2026-07-29'] (weekly pattern, capped 2026-09-14)",
+      "raw": "inferred from ['2026-08-01'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-08-01",
+       "2026-08-08",
+       "2026-08-22",
+       "2026-08-29",
+       "2026-09-05",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "MADONNUZZA",
+       "idx": 0,
+       "arr": "12.40",
+       "dep": "12.40"
+      },
+      {
+       "stop": "PETRALIA SOPRANA",
+       "idx": 1,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "GERACI BV.",
+       "idx": 2,
+       "arr": "13.10",
+       "dep": "13.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1220",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-08-01'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-08-01",
+       "2026-08-08",
+       "2026-08-22",
+       "2026-08-29",
+       "2026-09-05",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CASTELLANA SICULA",
+       "idx": 0,
+       "arr": "12.20",
+       "dep": "12.20"
+      },
+      {
+       "stop": "PETRALIA SOPRANA",
+       "idx": 1,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "GERACI BV.",
+       "idx": 2,
+       "arr": "13.10",
+       "dep": "13.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1205",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-08-01'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-08-01",
+       "2026-08-08",
+       "2026-08-22",
+       "2026-08-29",
+       "2026-09-05",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "POLIZZI GENEROSA",
+       "idx": 0,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "PETRALIA SOTTANA",
+       "idx": 1,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "PETRALIA SOPRANA",
+       "idx": 2,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "GERACI BV.",
+       "idx": 3,
+       "arr": "13.10",
+       "dep": "13.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1215",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-08-01'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-08-01",
+       "2026-08-08",
+       "2026-08-22",
+       "2026-08-29",
+       "2026-09-05",
+       "2026-09-12"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CALCARELLI",
+       "idx": 0,
+       "arr": "12.15",
+       "dep": "12.15"
+      },
+      {
+       "stop": "GERACI BV.",
+       "idx": 1,
+       "arr": "13.10",
+       "dep": "13.10"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "PETRALIA SOPRANA",
+    "GERACI SICULO",
+    "PETRALIA SOTTANA",
+    "CASTELLANA SICULA",
+    "POLIZZI GENEROSA",
+    "GERACI BV.",
+    "MADONNUZZA",
+    "CALCARELLI"
+   ],
+   "trips": [
+    {
+     "corsa": "1250",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-08-01'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-08-01",
+       "2026-08-08",
+       "2026-08-22",
+       "2026-08-29",
+       "2026-09-05",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PETRALIA SOPRANA",
+       "idx": 0,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "GERACI SICULO",
+       "idx": 1,
+       "arr": "13.15",
+       "dep": "13.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1235",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-08-01'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-08-01",
+       "2026-08-08",
+       "2026-08-22",
+       "2026-08-29",
+       "2026-09-05",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PETRALIA SOTTANA",
+       "idx": 0,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "GERACI SICULO",
+       "idx": 1,
+       "arr": "13.15",
+       "dep": "13.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1220",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-08-01'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-08-01",
+       "2026-08-08",
+       "2026-08-22",
+       "2026-08-29",
+       "2026-09-05",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CASTELLANA SICULA",
+       "idx": 0,
+       "arr": "12.20",
+       "dep": "12.20"
+      },
+      {
+       "stop": "GERACI SICULO",
+       "idx": 1,
+       "arr": "13.15",
+       "dep": "13.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1205",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-08-01'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-08-01",
+       "2026-08-08",
+       "2026-08-22",
+       "2026-08-29",
+       "2026-09-05",
+       "2026-09-12"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "POLIZZI GENEROSA",
+       "idx": 0,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "GERACI SICULO",
+       "idx": 1,
+       "arr": "13.15",
+       "dep": "13.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1240",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-29', '2026-07-31'] (weekly pattern, capped 2026-09-14)",
       "explicit_dates": [
        "2026-07-27",
        "2026-07-29",
+       "2026-07-31",
        "2026-08-03",
        "2026-08-05",
+       "2026-08-07",
        "2026-08-10",
        "2026-08-12",
+       "2026-08-14",
        "2026-08-17",
        "2026-08-19",
+       "2026-08-21",
        "2026-08-24",
        "2026-08-26",
+       "2026-08-28",
        "2026-08-31",
        "2026-09-02",
+       "2026-09-04",
        "2026-09-07",
        "2026-09-09",
+       "2026-09-11",
        "2026-09-14"
       ]
      },
@@ -243,22 +555,29 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "inferred from ['2026-07-27', '2026-07-29'] (weekly pattern, capped 2026-09-14)",
+      "raw": "inferred from ['2026-07-27', '2026-07-29', '2026-07-31'] (weekly pattern, capped 2026-09-14)",
       "explicit_dates": [
        "2026-07-27",
        "2026-07-29",
+       "2026-07-31",
        "2026-08-03",
        "2026-08-05",
+       "2026-08-07",
        "2026-08-10",
        "2026-08-12",
+       "2026-08-14",
        "2026-08-17",
        "2026-08-19",
+       "2026-08-21",
        "2026-08-24",
        "2026-08-26",
+       "2026-08-28",
        "2026-08-31",
        "2026-09-02",
+       "2026-09-04",
        "2026-09-07",
        "2026-09-09",
+       "2026-09-11",
        "2026-09-14"
       ]
      },
@@ -309,15 +628,22 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "raw": "inferred from ['2026-07-28', '2026-07-30'] (weekly pattern, capped 2026-09-14)",
       "explicit_dates": [
        "2026-07-28",
+       "2026-07-30",
        "2026-08-04",
+       "2026-08-06",
        "2026-08-11",
+       "2026-08-13",
        "2026-08-18",
+       "2026-08-20",
        "2026-08-25",
+       "2026-08-27",
        "2026-09-01",
-       "2026-09-08"
+       "2026-09-03",
+       "2026-09-08",
+       "2026-09-10"
       ]
      },
      "reverse": true,
@@ -361,29 +687,43 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "inferred from ['2026-07-27', '2026-07-28', '2026-07-29'] (weekly pattern, capped 2026-09-14)",
+      "raw": "inferred from ['2026-07-27', '2026-07-28', '2026-07-29', '2026-07-30', '2026-07-31'] (weekly pattern, capped 2026-09-14)",
       "explicit_dates": [
        "2026-07-27",
        "2026-07-28",
        "2026-07-29",
+       "2026-07-30",
+       "2026-07-31",
        "2026-08-03",
        "2026-08-04",
        "2026-08-05",
+       "2026-08-06",
+       "2026-08-07",
        "2026-08-10",
        "2026-08-11",
        "2026-08-12",
+       "2026-08-13",
+       "2026-08-14",
        "2026-08-17",
        "2026-08-18",
        "2026-08-19",
+       "2026-08-20",
+       "2026-08-21",
        "2026-08-24",
        "2026-08-25",
        "2026-08-26",
+       "2026-08-27",
+       "2026-08-28",
        "2026-08-31",
        "2026-09-01",
        "2026-09-02",
+       "2026-09-03",
+       "2026-09-04",
        "2026-09-07",
        "2026-09-08",
        "2026-09-09",
+       "2026-09-10",
+       "2026-09-11",
        "2026-09-14"
       ]
      },

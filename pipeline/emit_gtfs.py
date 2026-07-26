@@ -9,6 +9,12 @@
 import csv, io, json, os, re, unicodedata, zipfile
 from datetime import date, timedelta
 
+from stopnorm import canon_key, display_score, sig_tokens, MERGE_M, TIGHT_M, PRECISE
+
+
+def _cell(lat, lon):
+    return (round(lat / 0.0003), round(lon / 0.0003))
+
 ROOT = os.path.dirname(__file__)
 ROUTES = os.path.join(ROOT, 'data', 'routes')
 OUT_DIR = os.path.join(ROOT, 'dist')
@@ -143,6 +149,7 @@ def main():
 
     agency_rows, route_rows, trip_rows, st_rows, cal_rows = [], [], [], [], []
     stop_rows, stops_seen, services_seen = [], {}, {}
+    canon_registry, grid_registry, merged_variants, key2entry = {}, {}, [0], {}
     agencies_seen = {}
     skipped = []
     trip_sigs, trip_ids_seen = set(), set()
@@ -180,10 +187,54 @@ def main():
                     c = coords.get(key)
                     if not c: continue
                     if key not in stops_seen:
-                        sid_stop = slug(s['stop'])
-                        while sid_stop in stops_seen.values(): sid_stop += '-2'
-                        stops_seen[key] = sid_stop
-                        stop_rows.append([sid_stop, s['stop'], round(c['lat'], 6), round(c['lon'], 6)])
+                        # consolidation (audit F-2): spelling variants of the
+                        # same physical stop collapse onto one stop_id when the
+                        # canonical name matches AND they sit within MERGE_M.
+                        ck = canon_key(s['stop'])
+                        merged = None
+                        for cand in canon_registry.get(ck, []):
+                            if hav_km((c['lat'], c['lon']), (cand['lat'], cand['lon'])) * 1000 <= MERGE_M:
+                                merged = cand
+                                break
+                        if not merged and c.get('precision') in PRECISE:
+                            # rule 2: precise coords within TIGHT_M + a shared
+                            # significant token → same pole, different wording
+                            st_ = sig_tokens(ck)
+                            if st_:
+                                cx, cy = _cell(c['lat'], c['lon'])
+                                for dx in (-1, 0, 1):
+                                    for dy in (-1, 0, 1):
+                                        for cand in grid_registry.get((cx + dx, cy + dy), []):
+                                            if cand['precise'] and (st_ & cand['sig']) and \
+                                                    hav_km((c['lat'], c['lon']), (cand['lat'], cand['lon'])) * 1000 <= TIGHT_M:
+                                                merged = cand
+                                                break
+                                        if merged: break
+                                    if merged: break
+                        if merged:
+                            stops_seen[key] = merged['sid']
+                            key2entry[key] = merged
+                            merged_variants[0] += 1
+                            score = display_score(s['stop'], c.get('precision'))
+                            if score > merged['score']:
+                                row = stop_rows[merged['row']]
+                                row[1], row[2], row[3] = s['stop'], round(c['lat'], 6), round(c['lon'], 6)
+                                merged.update(lat=c['lat'], lon=c['lon'], score=score)
+                        else:
+                            sid_stop = slug(s['stop'])
+                            while sid_stop in stops_seen.values(): sid_stop += '-2'
+                            stops_seen[key] = sid_stop
+                            entry = {
+                                'sid': sid_stop, 'lat': c['lat'], 'lon': c['lon'],
+                                'score': display_score(s['stop'], c.get('precision')),
+                                'row': len(stop_rows),
+                                'sig': sig_tokens(ck),
+                                'precise': c.get('precision') in PRECISE,
+                            }
+                            canon_registry.setdefault(ck, []).append(entry)
+                            grid_registry.setdefault(_cell(c['lat'], c['lon']), []).append(entry)
+                            key2entry[key] = entry
+                            stop_rows.append([sid_stop, s['stop'], round(c['lat'], 6), round(c['lon'], 6)])
                     h, m = re.split(r'[.:]', s['arr']); cur = int(h) * 60 + int(m)
                     if cur < prev_min - 2: offset = 24
                     prev_min = max(prev_min, cur)
@@ -267,8 +318,14 @@ def main():
             w = csv.writer(buf, lineterminator='\n')
             w.writerow(header); w.writerows(rows)
             z.writestr(fn, buf.getvalue())
+    # sidecar for the verifiers: variant name key → canonical display name,
+    # so their API-side reconstructions can apply the same consolidation
+    merge_map = {k: stop_rows[e['row']][1] for k, e in key2entry.items()}
+    json.dump(merge_map, open(os.path.join(OUT_DIR, 'stop-merge-map.json'), 'w', encoding='utf-8'),
+              ensure_ascii=False, indent=0)
     print(f'wrote {zpath}')
     print(f'  stops={len(stop_rows)} routes={len(route_rows)} trips={len(trip_rows)} stop_times={len(st_rows)} service_dates={len(cal_rows)}')
+    print(f'  stop consolidation: {merged_variants[0]} spelling variants merged into canonical stops')
     if skipped:
         print('skipped:')
         for s in skipped: print('  ', s)
