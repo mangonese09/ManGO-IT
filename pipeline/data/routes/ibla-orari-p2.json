@@ -4,19 +4,20 @@
  "name": "IBLA TOUR S.C. - VIA EDISON, 7 - 92029 RAVANUSA (AG) Codice",
  "source": "IBLA_ORARI/p002.json",
  "prescriptions": [
+  "Prescrizioni d'Esercizio",
   "Prescrizioni d'Esercizio"
  ],
  "directions": [
   {
    "stops": [
-    "di Licata P.zza della Vittoria C.bello di Licata P.zza della Vittoria",
-    "P.zza Crispi Ravanusa P.zza Crispi",
-    "Bellia P.zzale Lido Lido Bellia P.zzale Lido",
-    "Mollarella P.zzale Lido Lido Mollarella P.zzale Lido",
-    "di Licata P.zza della Vittoria C.bello di Licata P.zza della Vittoria",
-    "P.zza Crispi Ravanusa P.zza Crispi",
-    "Bellia P.zzale Lido Lido Bellia P.zzale Lido",
-    "Mollarella P.zzale Lido Lido Mollarella P.zzale Lido"
+    "C.bello di Licata P.zza della Vittoria",
+    "Ravanusa P.zza Crispi",
+    "32 Fermata intermedia",
+    "Lido Mollarella P.zzale Lido",
+    "C.bello di Licata P.zza della Vittoria",
+    "Ravanusa P.zza Crispi",
+    "Lido Bellia P.zzale Lido",
+    "Lido Mollarella P.zzale Lido"
    ],
    "trips": [
     {
@@ -30,25 +31,25 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "di Licata P.zza della Vittoria C.bello di Licata P.zza della Vittoria",
+       "stop": "C.bello di Licata P.zza della Vittoria",
        "idx": 0,
        "arr": "9.00",
        "dep": "9.00"
       },
       {
-       "stop": "P.zza Crispi Ravanusa P.zza Crispi",
+       "stop": "Ravanusa P.zza Crispi",
        "idx": 1,
        "arr": "9.07",
        "dep": "9.07"
       },
       {
-       "stop": "Bellia P.zzale Lido Lido Bellia P.zzale Lido",
+       "stop": "32 Fermata intermedia",
        "idx": 2,
        "arr": "9.47",
        "dep": "9.47"
       },
       {
-       "stop": "Mollarella P.zzale Lido Lido Mollarella P.zzale Lido",
+       "stop": "Lido Mollarella P.zzale Lido",
        "idx": 3,
        "arr": "9.55",
        "dep": "9.55"
@@ -67,32 +68,46 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "di Licata P.zza della Vittoria C.bello di Licata P.zza della Vittoria",
+       "stop": "C.bello di Licata P.zza della Vittoria",
        "idx": 4,
        "arr": "9.15",
        "dep": "9.15"
       },
       {
-       "stop": "P.zza Crispi Ravanusa P.zza Crispi",
+       "stop": "Ravanusa P.zza Crispi",
        "idx": 5,
        "arr": "9.22",
        "dep": "9.22"
       },
       {
-       "stop": "Bellia P.zzale Lido Lido Bellia P.zzale Lido",
+       "stop": "Lido Bellia P.zzale Lido",
        "idx": 6,
        "arr": "10.02",
        "dep": "10.02"
       },
       {
-       "stop": "Mollarella P.zzale Lido Lido Mollarella P.zzale Lido",
+       "stop": "Lido Mollarella P.zzale Lido",
        "idx": 7,
        "arr": "10.10",
        "dep": "10.10"
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "C.bello di Licata P.zza della Vittoria",
+    "Ravanusa P.zza Crispi",
+    "Fermata intermedia 10",
+    "Lido Mollarella P.zzale Lido",
+    "C.bello di Licata P.zza della Vittoria",
+    "Ravanusa P.zza Crispi",
+    "Fermata intermedia 10",
+    "Lido Mollarella P.zzale Lido"
+   ],
+   "trips": [
     {
      "corsa": "2",
      "service": {
@@ -104,25 +119,25 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "Mollarella P.zzale Lido Lido Mollarella P.zzale Lido",
+       "stop": "Lido Mollarella P.zzale Lido",
        "idx": 3,
        "arr": "10.05",
        "dep": "10.05"
       },
       {
-       "stop": "Bellia P.zzale Lido Lido Bellia P.zzale Lido",
+       "stop": "Fermata intermedia 10",
        "idx": 2,
        "arr": "10.13",
        "dep": "10.13"
       },
       {
-       "stop": "P.zza Crispi Ravanusa P.zza Crispi",
+       "stop": "Ravanusa P.zza Crispi",
        "idx": 1,
        "arr": "10.53",
        "dep": "10.53"
       },
       {
-       "stop": "di Licata P.zza della Vittoria C.bello di Licata P.zza della Vittoria",
+       "stop": "C.bello di Licata P.zza della Vittoria",
        "idx": 0,
        "arr": "11.00",
        "dep": "11.00"
@@ -141,25 +156,25 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "Mollarella P.zzale Lido Lido Mollarella P.zzale Lido",
+       "stop": "Lido Mollarella P.zzale Lido",
        "idx": 7,
        "arr": "19.00",
        "dep": "19.00"
       },
       {
-       "stop": "Bellia P.zzale Lido Lido Bellia P.zzale Lido",
+       "stop": "Fermata intermedia 10",
        "idx": 6,
        "arr": "19.08",
        "dep": "19.08"
       },
       {
-       "stop": "P.zza Crispi Ravanusa P.zza Crispi",
+       "stop": "Ravanusa P.zza Crispi",
        "idx": 5,
        "arr": "19.48",
        "dep": "19.48"
       },
       {
-       "stop": "di Licata P.zza della Vittoria C.bello di Licata P.zza della Vittoria",
+       "stop": "C.bello di Licata P.zza della Vittoria",
        "idx": 4,
        "arr": "19.55",
        "dep": "19.55"
@@ -169,5 +184,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

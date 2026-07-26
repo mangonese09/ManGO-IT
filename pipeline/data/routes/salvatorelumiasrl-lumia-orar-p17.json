@@ -4,6 +4,7 @@
  "name": "S.ANNA - SCIACCA",
  "source": "SALVATORELUMIASRL__LUMIA_ORARI(1)/p017.json",
  "prescriptions": [
+  "Prescrizioni d'Esercizio",
   "Prescrizioni d'Esercizio"
  ],
  "directions": [
@@ -16,7 +17,6 @@
     "C.DA S.MARIA",
     "SCIACCA",
     "SCIACCA",
-    "c.da Marchesa",
     "SCIACCA"
    ],
    "trips": [
@@ -118,7 +118,7 @@
       },
       {
        "stop": "SCIACCA",
-       "idx": 8,
+       "idx": 7,
        "arr": "8.15",
        "dep": "8.15"
       }
@@ -278,7 +278,22 @@
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "S.ANNA",
+    "CALTABELLOTTA",
+    "PIETRAGROSSA",
+    "C.DA NADORE",
+    "C.DA S.MARIA",
+    "SCIACCA",
+    "SCIACCA",
+    "c.da Marchesa",
+    "SCIACCA"
+   ],
+   "trips": [
     {
      "corsa": "2",
      "service": {
@@ -576,5 +591,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

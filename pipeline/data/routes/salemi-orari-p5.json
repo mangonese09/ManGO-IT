@@ -1,13 +1,13 @@
 {
  "operator": "Salemi",
  "route_id": "salemi-orari-p5",
- "name": "Marsala via Crispi - PALERMO P.zza Cairoli PALERMO P.zza",
+ "name": "*** Marsala via Crispi - PALERMO P.zza Cairoli",
  "source": "SALEMI_ORARI/p005.json",
  "prescriptions": [],
  "directions": [
   {
    "stops": [
-    "Marsala via Crispi",
+    "*** Marsala via Crispi",
     "S. Silvestro",
     "Cardilla",
     "Matarocco",
@@ -15,10 +15,10 @@
     "Torretta",
     "SS188",
     "Pusillesi",
-    ". P.zza Libertà Arrivo Salemi P.zza Libertà",
-    "Salemi . Stazione F.S. Salemi . Stazione",
+    "Salemi . P.zza Libertà Arrivo",
+    "Salemi . Stazione F.S.",
     "A29",
-    "PALERMO P.zza Cairoli PALERMO P.zza (15 AGOSTO)"
+    "PALERMO P.zza Cairoli"
    ],
    "trips": [
     {
@@ -32,7 +32,7 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "Marsala via Crispi",
+       "stop": "*** Marsala via Crispi",
        "idx": 0,
        "arr": "5.45",
        "dep": "5.45"
@@ -74,19 +74,19 @@
        "dep": "6.15"
       },
       {
-       "stop": ". P.zza Libertà Arrivo Salemi P.zza Libertà",
+       "stop": "Salemi . P.zza Libertà Arrivo",
        "idx": 8,
        "arr": "6.20",
        "dep": "6.20"
       },
       {
-       "stop": "Salemi . Stazione F.S. Salemi . Stazione",
+       "stop": "Salemi . Stazione F.S.",
        "idx": 9,
        "arr": "6.30",
        "dep": "6.30"
       },
       {
-       "stop": "PALERMO P.zza Cairoli PALERMO P.zza (15 AGOSTO)",
+       "stop": "PALERMO P.zza Cairoli",
        "idx": 11,
        "arr": "8.00",
        "dep": "8.00"
@@ -105,7 +105,7 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "Marsala via Crispi",
+       "stop": "*** Marsala via Crispi",
        "idx": 0,
        "arr": "16.30",
        "dep": "16.30"
@@ -147,19 +147,19 @@
        "dep": "17.00"
       },
       {
-       "stop": ". P.zza Libertà Arrivo Salemi P.zza Libertà",
+       "stop": "Salemi . P.zza Libertà Arrivo",
        "idx": 8,
        "arr": "17.05",
        "dep": "17.05"
       },
       {
-       "stop": "Salemi . Stazione F.S. Salemi . Stazione",
+       "stop": "Salemi . Stazione F.S.",
        "idx": 9,
        "arr": "17.15",
        "dep": "17.15"
       },
       {
-       "stop": "PALERMO P.zza Cairoli PALERMO P.zza (15 AGOSTO)",
+       "stop": "PALERMO P.zza Cairoli",
        "idx": 11,
        "arr": "18.45",
        "dep": "18.45"
@@ -191,7 +191,23 @@
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "Marsala via Crispi",
+    "S. Silvestro",
+    "Cardilla",
+    "Matarocco",
+    "bivio Billusa",
+    "Torretta",
+    "Pusillesi",
+    "Salemi P.zza Libertà Partenza",
+    "Salemi . Stazione F.S.",
+    "PALERMO P.zza Cairoli ***"
+   ],
+   "trips": [
     {
      "corsa": "2",
      "service": {
@@ -203,26 +219,26 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "PALERMO P.zza Cairoli PALERMO P.zza (15 AGOSTO)",
-       "idx": 11,
+       "stop": "PALERMO P.zza Cairoli ***",
+       "idx": 9,
        "arr": "14.00",
        "dep": "14.00"
       },
       {
-       "stop": "Salemi . Stazione F.S. Salemi . Stazione",
-       "idx": 9,
+       "stop": "Salemi . Stazione F.S.",
+       "idx": 8,
        "arr": "15.30",
        "dep": "15.30"
       },
       {
-       "stop": ". P.zza Libertà Arrivo Salemi P.zza Libertà",
-       "idx": 8,
+       "stop": "Salemi P.zza Libertà Partenza",
+       "idx": 7,
        "arr": "15.40",
        "dep": "15.40"
       },
       {
        "stop": "Pusillesi",
-       "idx": 7,
+       "idx": 6,
        "arr": "15.45",
        "dep": "15.45"
       },
@@ -276,26 +292,26 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "PALERMO P.zza Cairoli PALERMO P.zza (15 AGOSTO)",
-       "idx": 11,
+       "stop": "PALERMO P.zza Cairoli ***",
+       "idx": 9,
        "arr": "19.00",
        "dep": "19.00"
       },
       {
-       "stop": "Salemi . Stazione F.S. Salemi . Stazione",
-       "idx": 9,
+       "stop": "Salemi . Stazione F.S.",
+       "idx": 8,
        "arr": "20.30",
        "dep": "20.30"
       },
       {
-       "stop": ". P.zza Libertà Arrivo Salemi P.zza Libertà",
-       "idx": 8,
+       "stop": "Salemi P.zza Libertà Partenza",
+       "idx": 7,
        "arr": "20.40",
        "dep": "20.40"
       },
       {
        "stop": "Pusillesi",
-       "idx": 7,
+       "idx": 6,
        "arr": "20.45",
        "dep": "20.45"
       },
@@ -340,5 +356,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

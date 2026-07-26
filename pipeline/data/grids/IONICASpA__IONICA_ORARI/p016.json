@@ -33,7 +33,65 @@
      "n": "11",
      "x": 244.6,
      "label": "(*)"
+    }
+   ],
+   "stops": [
+    {
+     "name": "KM KM STAZIONAMENTI",
+     "km": [],
+     "times": {}
     },
+    {
+     "name": "Santa Teresa Barracca Santa Teresa Barracca",
+     "km": [
+      "0,0",
+      "0,0",
+      "5,7"
+     ],
+     "times": {
+      "5": "13.20"
+     }
+    },
+    {
+     "name": "I Santa Teresa Bucalo Santa Teresa Bucalo",
+     "km": [
+      "2,3",
+      "3,4"
+     ],
+     "times": {
+      "5": "13.30"
+     }
+    },
+    {
+     "name": "I Furci Siculo Furci Siculo",
+     "km": [
+      "5,7",
+      "0,0"
+     ],
+     "times": {
+      "5": "13.35"
+     }
+    },
+    {
+     "name": "a Messina e vv. estremi compresi",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "SOLO IL SABATO, SOLO LA DOMENICA, ETC….",
+     "km": [],
+     "times": {
+      "7": "-"
+     }
+    }
+   ],
+   "prescriptions": [
+    "Prescrizioni d'Esercizio Divieto di servizio locale da Roccalumera a Messina e vv. estremi compresi -"
+   ],
+   "spacing": 24.8
+  },
+  {
+   "corse": [
     {
      "n": "2",
      "x": 596.7,
@@ -67,54 +125,44 @@
    ],
    "stops": [
     {
-     "name": "STAZIONAMENTI KM KM",
+     "name": "KM KM",
      "km": [],
      "times": {}
     },
     {
-     "name": "Barracca Santa Teresa Barracca",
+     "name": "GIORNALIERAFERIALE",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "I orario",
      "km": [
       "0,0",
       "0,0",
       "5,7"
      ],
      "times": {
-      "5": "13.20",
       "6": "14.00"
      }
     },
     {
-     "name": "Bucalo Santa Teresa Bucalo",
+     "name": "I orario",
      "km": [
       "2,3",
       "3,4"
      ],
      "times": {
-      "5": "13.30",
       "6": "13.50"
      }
     },
     {
-     "name": "Furci Siculo",
+     "name": "0 orario",
      "km": [
       "5,7",
       "0,0"
      ],
      "times": {
-      "5": "13.35",
       "6": "13.45"
-     }
-    },
-    {
-     "name": "compresi",
-     "km": [],
-     "times": {}
-    },
-    {
-     "name": "ETC….",
-     "km": [],
-     "times": {
-      "7": "-"
      }
     }
    ],

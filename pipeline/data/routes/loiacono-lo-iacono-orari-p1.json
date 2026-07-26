@@ -5,6 +5,8 @@
  "source": "LOIACONO__LO_IACONO_ORARI/p001.json",
  "prescriptions": [
   "Prescrizioni d'Esercizio",
+  "Divieto servizio locale sul tratto Alia-Vicari",
+  "Prescrizioni d'Esercizio",
   "Divieto servizio locale sul tratto Alia-Vicari"
  ],
  "directions": [
@@ -97,7 +99,19 @@
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "Capolinea di Arrivo orario",
+    "Fermata intermedia orario",
+    "Fermata intermedia orario",
+    "Capolinea di Partenza orario",
+    "Capolinea di Arrivo orario",
+    "Capolinea di Partenza orario"
+   ],
+   "trips": [
     {
      "corsa": "2",
      "service": {
@@ -109,31 +123,31 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "Valledolmo-Piazza Olmo",
+       "stop": "Capolinea di Arrivo orario",
        "idx": 0,
        "arr": "8.25",
        "dep": "8.25"
       },
       {
-       "stop": "Alia-Piazza Guccione",
+       "stop": "Fermata intermedia orario",
        "idx": 2,
        "arr": "8.00",
        "dep": "8.00"
       },
       {
-       "stop": "Alia-Chianchitelle",
+       "stop": "Capolinea di Partenza orario",
        "idx": 3,
        "arr": "7.55",
        "dep": "7.55"
       },
       {
-       "stop": "Valledolmo-Piazza Olmo",
+       "stop": "Capolinea di Arrivo orario",
        "idx": 4,
        "arr": "15.10",
        "dep": "15.10"
       },
       {
-       "stop": "Vicari-Via Vitt. Emanuele",
+       "stop": "Capolinea di Partenza orario",
        "idx": 5,
        "arr": "14.10",
        "dep": "14.10"
@@ -152,25 +166,25 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "Alia-Chianchitelle",
+       "stop": "Capolinea di Partenza orario",
        "idx": 3,
        "arr": "14.10",
        "dep": "14.10"
       },
       {
-       "stop": "Alia-Piazza Guccione",
+       "stop": "Fermata intermedia orario",
        "idx": 2,
        "arr": "14.15",
        "dep": "14.15"
       },
       {
-       "stop": "Marcatobianco",
+       "stop": "Fermata intermedia orario",
        "idx": 1,
        "arr": "14.25",
        "dep": "14.25"
       },
       {
-       "stop": "Valledolmo-Piazza Olmo",
+       "stop": "Capolinea di Arrivo orario",
        "idx": 0,
        "arr": "14.50",
        "dep": "14.50"
@@ -180,5 +194,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

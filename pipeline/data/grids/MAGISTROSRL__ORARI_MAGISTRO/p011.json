@@ -38,7 +38,114 @@
      "n": "13",
      "x": 218.5,
      "label": ""
+    }
+   ],
+   "stops": [
+    {
+     "name": "KM KM",
+     "km": [],
+     "times": {}
     },
+    {
+     "name": "MADDALENA",
+     "km": [
+      "19,4"
+     ],
+     "times": {
+      "1": "7.25",
+      "3": "7.25"
+     }
+    },
+    {
+     "name": "S.FRANCESCO",
+     "km": [
+      "0,7",
+      "18,7"
+     ],
+     "times": {
+      "1": "7.27",
+      "3": "7.27"
+     }
+    },
+    {
+     "name": "S. NICOLO'",
+     "km": [
+      "1,6",
+      "17,8"
+     ],
+     "times": {
+      "1": "7.30",
+      "3": "7.30"
+     }
+    },
+    {
+     "name": "S. LUCIA",
+     "km": [
+      "2,8",
+      "16,6"
+     ],
+     "times": {
+      "1": "7.31",
+      "3": "7.31"
+     }
+    },
+    {
+     "name": "CAFERI'",
+     "km": [
+      "3,5",
+      "15,9"
+     ],
+     "times": {
+      "1": "7.33",
+      "3": "7.33"
+     }
+    },
+    {
+     "name": "CATELLO",
+     "km": [
+      "4,2",
+      "15,2"
+     ],
+     "times": {
+      "1": "7.34",
+      "3": "7.34"
+     }
+    },
+    {
+     "name": "GIOIOSA MAREA(P.zza Roma)",
+     "km": [
+      "6,7",
+      "12,7"
+     ],
+     "times": {
+      "1": "7.35",
+      "3": "7.35"
+     }
+    },
+    {
+     "name": "PATTI(P.zza Marconi, terminal)",
+     "km": [
+      "19,4"
+     ],
+     "times": {
+      "1": "7.55",
+      "3": "7.55"
+     }
+    },
+    {
+     "name": "Acquarancio SiGnazio Oceri Zappardino",
+     "km": [],
+     "times": {}
+    }
+   ],
+   "prescriptions": [
+    "Prescrizioni d'Esercizio",
+    "Divieto di servizio locale lungo il trato comunale Acquarancio - SiGnazio - Oceri - Zappardino estremi inclusi. Divieto di servizio locale sul tratto Gioiosa marea - Patti, estremi esclusi."
+   ],
+   "spacing": 28.4
+  },
+  {
+   "corse": [
     {
      "n": "2",
      "x": 626.8,
@@ -77,13 +184,16 @@
    ],
    "stops": [
     {
+     "name": "KM KM",
+     "km": [],
+     "times": {}
+    },
+    {
      "name": "MADDALENA",
      "km": [
       "19,4"
      ],
      "times": {
-      "1": "7.25",
-      "3": "7.25",
       "2": "14.00",
       "4": "14.00"
      }
@@ -95,8 +205,6 @@
       "18,7"
      ],
      "times": {
-      "1": "7.27",
-      "3": "7.27",
       "2": "13.58",
       "4": "13.58"
      }
@@ -108,8 +216,6 @@
       "17,8"
      ],
      "times": {
-      "1": "7.30",
-      "3": "7.30",
       "2": "13.55",
       "4": "13.55"
      }
@@ -121,8 +227,6 @@
       "16,6"
      ],
      "times": {
-      "1": "7.31",
-      "3": "7.31",
       "2": "13.54",
       "4": "13.54"
      }
@@ -134,8 +238,6 @@
       "15,9"
      ],
      "times": {
-      "1": "7.33",
-      "3": "7.33",
       "2": "13.52",
       "4": "13.52"
      }
@@ -147,39 +249,33 @@
       "15,2"
      ],
      "times": {
-      "1": "7.34",
-      "3": "7.34",
       "2": "13.51",
       "4": "13.51"
      }
     },
     {
-     "name": "MAREA(P.zza Roma) GIOIOSA MAREA(P.zza Roma)",
+     "name": "GIOIOSA MAREA(P.zza Roma)",
      "km": [
       "6,7",
       "12,7"
      ],
      "times": {
-      "1": "7.35",
-      "3": "7.35",
       "2": "13.50",
       "4": "13.50"
      }
     },
     {
-     "name": "Marconi, terminal) PATTI(P.zza Marconi, terminal)",
+     "name": "PATTI(P.zza Marconi, terminal)",
      "km": [
       "19,4"
      ],
      "times": {
-      "1": "7.55",
-      "3": "7.55",
       "2": "13.30",
       "4": "13.30"
      }
     },
     {
-     "name": "Oceri Zappardino estremi inclusi. Divieto di servizio locale",
+     "name": "estremi inclusi. Divieto di servizio locale sul tratto Gioiosa marea",
      "km": [],
      "times": {
       "2": "-"

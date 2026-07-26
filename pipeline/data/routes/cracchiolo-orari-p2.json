@@ -1,23 +1,26 @@
 {
  "operator": "Cracchiolo",
  "route_id": "cracchiolo-orari-p2",
- "name": "DELLE MIMOSE CAMPOREALE-P.ZA DELLE MIMOSE - Piazza Duomo PARTINICO Piazza Duomo",
+ "name": "CAMPOREALE-P.ZA DELLE MIMOSE - PARTINICO Piazza Duomo",
  "source": "CRACCHIOLO_ORARI/p002.json",
  "prescriptions": [
+  "Prescrizioni d'Esercizio",
   "Prescrizioni d'Esercizio"
  ],
  "directions": [
   {
    "stops": [
-    "DELLE MIMOSE CAMPOREALE-P.ZA DELLE MIMOSE",
-    "MARCONI CAMPOREALE-P.ZA MARCONI",
+    "CAMPOREALE-P.ZA DELLE MIMOSE",
+    "CAMPOREALE-P.ZA MARCONI",
     "BIVIO RAPITALA'",
-    "V. EMANUELE GRISI' C.SO V. EMANUELE",
+    "GRISI' C.SO V. EMANUELE",
     "S.S. 113 KM",
-    "(OSPEDALE) PARTINICO Via Principe Umberto,308",
-    "Via Benevento>Via Taranto PARTINICO Largo Modica",
-    "Via Aldo Moro Stadio PARTINICO C.so dei Mille,",
-    "Piazza Duomo PARTINICO Piazza Duomo"
+    "S.S. 186 KM",
+    "S.S. 186 KM",
+    "S.S. 186 KM (OSPEDALE)",
+    "PARTINICO Via Benevento>Via Taranto",
+    "PARTINICO Via Aldo Moro Stadio",
+    "PARTINICO Piazza Duomo"
    ],
    "trips": [
     {
@@ -31,13 +34,13 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "DELLE MIMOSE CAMPOREALE-P.ZA DELLE MIMOSE",
+       "stop": "CAMPOREALE-P.ZA DELLE MIMOSE",
        "idx": 0,
        "arr": "6.40",
        "dep": "6.40"
       },
       {
-       "stop": "MARCONI CAMPOREALE-P.ZA MARCONI",
+       "stop": "CAMPOREALE-P.ZA MARCONI",
        "idx": 1,
        "arr": "6.45",
        "dep": "6.45"
@@ -49,7 +52,7 @@
        "dep": "6.50"
       },
       {
-       "stop": "V. EMANUELE GRISI' C.SO V. EMANUELE",
+       "stop": "GRISI' C.SO V. EMANUELE",
        "idx": 3,
        "arr": "7.00",
        "dep": "7.00"
@@ -57,36 +60,63 @@
       {
        "stop": "S.S. 113 KM",
        "idx": 4,
+       "arr": "7.17",
+       "dep": "7.17"
+      },
+      {
+       "stop": "S.S. 186 KM",
+       "idx": 5,
        "arr": "7.20",
        "dep": "7.20"
       },
       {
-       "stop": "(OSPEDALE) PARTINICO Via Principe Umberto,308",
-       "idx": 5,
+       "stop": "S.S. 186 KM",
+       "idx": 6,
+       "arr": "7.21",
+       "dep": "7.21"
+      },
+      {
+       "stop": "S.S. 186 KM (OSPEDALE)",
+       "idx": 7,
        "arr": "7.22",
        "dep": "7.22"
       },
       {
-       "stop": "Via Benevento>Via Taranto PARTINICO Largo Modica",
-       "idx": 6,
+       "stop": "PARTINICO Via Benevento>Via Taranto",
+       "idx": 8,
        "arr": "7.25",
        "dep": "7.25"
       },
       {
-       "stop": "Via Aldo Moro Stadio PARTINICO C.so dei Mille,",
-       "idx": 7,
+       "stop": "PARTINICO Via Aldo Moro Stadio",
+       "idx": 9,
        "arr": "7.28",
        "dep": "7.28"
       },
       {
-       "stop": "Piazza Duomo PARTINICO Piazza Duomo",
-       "idx": 8,
+       "stop": "PARTINICO Piazza Duomo",
+       "idx": 10,
        "arr": "7.30",
        "dep": "7.30"
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CAMPOREALE-P.ZA DELLE MIMOSE",
+    "CAMPOREALE-P.ZA MARCONI",
+    "BIVIO RAPITALA'",
+    "GRISI' C.SO V. EMANUELE",
+    "S.S. 113 KM",
+    "PARTINICO Via Principe Umberto,308",
+    "PARTINICO Largo Modica",
+    "PARTINICO C.so dei Mille, 252",
+    "PARTINICO Piazza Duomo"
+   ],
+   "trips": [
     {
      "corsa": "4",
      "service": {
@@ -98,25 +128,25 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "Piazza Duomo PARTINICO Piazza Duomo",
+       "stop": "PARTINICO Piazza Duomo",
        "idx": 8,
        "arr": "14.30",
        "dep": "14.30"
       },
       {
-       "stop": "Via Aldo Moro Stadio PARTINICO C.so dei Mille,",
+       "stop": "PARTINICO C.so dei Mille, 252",
        "idx": 7,
        "arr": "14.35",
        "dep": "14.35"
       },
       {
-       "stop": "Via Benevento>Via Taranto PARTINICO Largo Modica",
+       "stop": "PARTINICO Largo Modica",
        "idx": 6,
        "arr": "14.37",
        "dep": "14.37"
       },
       {
-       "stop": "(OSPEDALE) PARTINICO Via Principe Umberto,308",
+       "stop": "PARTINICO Via Principe Umberto,308",
        "idx": 5,
        "arr": "14.39",
        "dep": "14.39"
@@ -128,7 +158,7 @@
        "dep": "14.43"
       },
       {
-       "stop": "V. EMANUELE GRISI' C.SO V. EMANUELE",
+       "stop": "GRISI' C.SO V. EMANUELE",
        "idx": 3,
        "arr": "15.00",
        "dep": "15.00"
@@ -140,13 +170,13 @@
        "dep": "15.10"
       },
       {
-       "stop": "MARCONI CAMPOREALE-P.ZA MARCONI",
+       "stop": "CAMPOREALE-P.ZA MARCONI",
        "idx": 1,
        "arr": "15.15",
        "dep": "15.15"
       },
       {
-       "stop": "DELLE MIMOSE CAMPOREALE-P.ZA DELLE MIMOSE",
+       "stop": "CAMPOREALE-P.ZA DELLE MIMOSE",
        "idx": 0,
        "arr": "15.20",
        "dep": "15.20"
@@ -156,5 +186,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

@@ -33,7 +33,107 @@
      "n": "11",
      "x": 243.4,
      "label": "(*)"
+    }
+   ],
+   "stops": [
+    {
+     "name": "KM KM",
+     "km": [],
+     "times": {}
     },
+    {
+     "name": "S.ELISABETTA (P.Municipio)",
+     "km": [
+      "6,45",
+      "0,0",
+      "0,0",
+      "24,5",
+      "24,5",
+      "9,05"
+     ],
+     "times": {
+      "3": "13.50",
+      "5": "6.55",
+      "7": "7.10"
+     }
+    },
+    {
+     "name": "ARAGONA (Via Roma)",
+     "km": [
+      "7,05",
+      "8,7",
+      "15,8",
+      "8,45"
+     ],
+     "times": {
+      "3": "14.10"
+     }
+    },
+    {
+     "name": "STAZ.CALDARE ARAGONA",
+     "km": [
+      "7,15",
+      "12,70",
+      "11,8",
+      "8,35"
+     ],
+     "times": {
+      "3": "14.20"
+     }
+    },
+    {
+     "name": "BORGATA S.MICHELE",
+     "km": [
+      "7,25",
+      "17,6",
+      "6,9",
+      "8,25"
+     ],
+     "times": {
+      "3": "14.30"
+     }
+    },
+    {
+     "name": "AGRIGENTO QUAD.SPINASANTA",
+     "km": [
+      "18,5",
+      "18,5"
+     ],
+     "times": {
+      "5": "7.40",
+      "7": "7.55"
+     }
+    },
+    {
+     "name": "AGRIGENTO C.DA CALCARELLE",
+     "km": [],
+     "times": {
+      "5": "7.55"
+     }
+    },
+    {
+     "name": "AGRIGENTO P. ROSSELLI",
+     "km": [
+      "7,35",
+      "24,5",
+      "24,5",
+      "0,0",
+      "0,0",
+      "8,15"
+     ],
+     "times": {
+      "3": "14.40",
+      "7": "8.00"
+     }
+    }
+   ],
+   "prescriptions": [
+    "Prescrizioni d'Esercizio"
+   ],
+   "spacing": 25.1
+  },
+  {
+   "corse": [
     {
      "n": "2",
      "x": 598.7,
@@ -67,12 +167,12 @@
    ],
    "stops": [
     {
-     "name": "KM",
+     "name": "KM KM",
      "km": [],
      "times": {}
     },
     {
-     "name": "(P.Municipio) S.LISABETTA (P.Municipio)",
+     "name": "S.LISABETTA (P.Municipio)",
      "km": [
       "6,45",
       "0,0",
@@ -82,16 +182,13 @@
       "9,05"
      ],
      "times": {
-      "3": "13.50",
-      "5": "6.55",
-      "7": "7.10",
       "4": "15.45",
       "6": "14.45",
       "8": "14.55"
      }
     },
     {
-     "name": "(Via Roma) ARAGONA (Via Roma)",
+     "name": "ARAGONA (Via Roma)",
      "km": [
       "7,05",
       "8,7",
@@ -99,12 +196,11 @@
       "8,45"
      ],
      "times": {
-      "3": "14.10",
       "4": "15.30"
      }
     },
     {
-     "name": "ARAGONA STAZ.CALDARE ARAGONA",
+     "name": "STAZ.CALDARE ARAGONA",
      "km": [
       "7,15",
       "12,70",
@@ -112,12 +208,11 @@
       "8,35"
      ],
      "times": {
-      "3": "14.20",
       "4": "15.20"
      }
     },
     {
-     "name": "S.MICHELE BORGATA S.MICHELE",
+     "name": "BORGATA S.MICHELE",
      "km": [
       "7,25",
       "17,6",
@@ -125,33 +220,29 @@
       "8,25"
      ],
      "times": {
-      "3": "14.30",
       "4": "15.10"
      }
     },
     {
-     "name": "QUAD.SPINASANTA AGRIGENTO QUAD.SPINASANTA",
+     "name": "AGRIGENTO QUAD.SPINASANTA",
      "km": [
       "18,5",
       "18,5"
      ],
      "times": {
-      "5": "7.40",
-      "7": "7.55",
       "6": "13.55",
       "8": "14.05"
      }
     },
     {
-     "name": "AGRIGENTO C.DA CALCARELLE AGRIGENTO C.DA CALCARELLE",
+     "name": "AGRIGENTO C.DA CALCARELLE",
      "km": [],
      "times": {
-      "5": "7.55",
       "6": "13.45"
      }
     },
     {
-     "name": "P. ROSSELLI AGRIGENTO P.ROSSELLI",
+     "name": "AGRIGENTO P.ROSSELLI",
      "km": [
       "7,35",
       "24,5",
@@ -161,8 +252,6 @@
       "8,15"
      ],
      "times": {
-      "3": "14.40",
-      "7": "8.00",
       "4": "15.00",
       "8": "13.55"
      }

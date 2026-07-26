@@ -4,6 +4,7 @@
  "name": "S.Giovanni Gemini - Cammarata scalo FF.SS.",
  "source": "Panepintosas__PANEPINTO_ORARI/p007.json",
  "prescriptions": [
+  "Prescrizioni d'Esercizio E' FATTO OBBLIGO EFFETTUARE LA COINCIDENZA ALLA STAZIONE FERROVIARIA DI CAMMARATA PER CAMMARATA E S.GIOVANNI GEMINI",
   "Prescrizioni d'Esercizio E' FATTO OBBLIGO EFFETTUARE LA COINCIDENZA ALLA STAZIONE FERROVIARIA DI CAMMARATA PER CAMMARATA E S.GIOVANNI GEMINI"
  ],
  "directions": [
@@ -137,7 +138,16 @@
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "S.GIOV.GEMINI",
+    "CAMMARATA",
+    "STAZ.F.S."
+   ],
+   "trips": [
     {
      "corsa": "2",
      "service": {
@@ -264,5 +274,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

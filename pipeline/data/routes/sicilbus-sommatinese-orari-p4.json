@@ -1,18 +1,18 @@
 {
  "operator": "Sicilbus",
  "route_id": "sicilbus-sommatinese-orari-p4",
- "name": "orario - SP 15",
+ "name": "GIORNALIERA - SP 15",
  "source": "SICILBUS__SOMMATINESE_ORARI/p004.json",
  "prescriptions": [],
  "directions": [
   {
    "stops": [
-    "orario",
-    "orario",
-    "orario",
-    "orario",
-    "orario",
-    "orario",
+    "GIORNALIERA",
+    "Cefalù Stazione",
+    "SS 113",
+    "SP136",
+    "SS 113",
+    "SP 54 bis bv SS 113",
     "SP 54 bis",
     "SP 15 Bv SP 54 bis",
     "SP 15"
@@ -29,37 +29,37 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "orario",
+       "stop": "GIORNALIERA",
        "idx": 0,
        "arr": "09.00",
        "dep": "09.00"
       },
       {
-       "stop": "orario",
+       "stop": "Cefalù Stazione",
        "idx": 1,
        "arr": "09.05",
        "dep": "09.05"
       },
       {
-       "stop": "orario",
+       "stop": "SS 113",
        "idx": 2,
        "arr": "09.07",
        "dep": "09.07"
       },
       {
-       "stop": "orario",
+       "stop": "SP136",
        "idx": 3,
        "arr": "09.11",
        "dep": "09.11"
       },
       {
-       "stop": "orario",
+       "stop": "SS 113",
        "idx": 4,
        "arr": "09.15",
        "dep": "09.15"
       },
       {
-       "stop": "orario",
+       "stop": "SP 54 bis bv SS 113",
        "idx": 5,
        "arr": "09.22",
        "dep": "09.22"
@@ -96,37 +96,37 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "orario",
+       "stop": "GIORNALIERA",
        "idx": 0,
        "arr": "14.10",
        "dep": "14.10"
       },
       {
-       "stop": "orario",
+       "stop": "Cefalù Stazione",
        "idx": 1,
        "arr": "14.15",
        "dep": "14.15"
       },
       {
-       "stop": "orario",
+       "stop": "SS 113",
        "idx": 2,
        "arr": "14.17",
        "dep": "14.17"
       },
       {
-       "stop": "orario",
+       "stop": "SP136",
        "idx": 3,
        "arr": "14.21",
        "dep": "14.21"
       },
       {
-       "stop": "orario",
+       "stop": "SS 113",
        "idx": 4,
        "arr": "14.26",
        "dep": "14.26"
       },
       {
-       "stop": "orario",
+       "stop": "SP 54 bis bv SS 113",
        "idx": 5,
        "arr": "14.32",
        "dep": "14.32"
@@ -181,37 +181,37 @@
        "dep": "07.36"
       },
       {
-       "stop": "orario",
+       "stop": "SP 54 bis bv SS 113",
        "idx": 5,
        "arr": "07.38",
        "dep": "07.38"
       },
       {
-       "stop": "orario",
+       "stop": "SS 113",
        "idx": 4,
        "arr": "07.45",
        "dep": "07.45"
       },
       {
-       "stop": "orario",
+       "stop": "SP136",
        "idx": 3,
        "arr": "07.49",
        "dep": "07.49"
       },
       {
-       "stop": "orario",
+       "stop": "SS 113",
        "idx": 2,
        "arr": "07.53",
        "dep": "07.53"
       },
       {
-       "stop": "orario",
+       "stop": "Cefalù Stazione",
        "idx": 1,
        "arr": "07.55",
        "dep": "07.55"
       },
       {
-       "stop": "orario",
+       "stop": "GIORNALIERA",
        "idx": 0,
        "arr": "08.00",
        "dep": "08.00"
@@ -248,37 +248,37 @@
        "dep": "16.36"
       },
       {
-       "stop": "orario",
+       "stop": "SP 54 bis bv SS 113",
        "idx": 5,
        "arr": "16.38",
        "dep": "16.38"
       },
       {
-       "stop": "orario",
+       "stop": "SS 113",
        "idx": 4,
        "arr": "16.45",
        "dep": "16.45"
       },
       {
-       "stop": "orario",
+       "stop": "SP136",
        "idx": 3,
        "arr": "16.49",
        "dep": "16.49"
       },
       {
-       "stop": "orario",
+       "stop": "SS 113",
        "idx": 2,
        "arr": "16.53",
        "dep": "16.53"
       },
       {
-       "stop": "orario",
+       "stop": "Cefalù Stazione",
        "idx": 1,
        "arr": "16.55",
        "dep": "16.55"
       },
       {
-       "stop": "orario",
+       "stop": "GIORNALIERA",
        "idx": 0,
        "arr": "17.00",
        "dep": "17.00"
@@ -288,5 +288,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

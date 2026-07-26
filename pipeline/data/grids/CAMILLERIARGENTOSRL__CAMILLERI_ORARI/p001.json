@@ -33,7 +33,111 @@
      "n": "11",
      "x": 240.5,
      "label": "(*)"
+    }
+   ],
+   "stops": [
+    {
+     "name": "KM KM STAZIONAMENTI",
+     "km": [],
+     "times": {}
     },
+    {
+     "name": "CAMMARATA",
+     "km": [
+      "0,00",
+      "94,70"
+     ],
+     "times": {
+      "3": "7.10"
+     },
+     "kind": "Capolinea di Partenza"
+    },
+    {
+     "name": "S.STEFANO QUISQUINA",
+     "km": [
+      "22,00",
+      "72,70"
+     ],
+     "times": {
+      "3": "7.50"
+     },
+     "kind": "Fermata intermedia"
+    },
+    {
+     "name": "BIVONA",
+     "km": [
+      "29,20",
+      "65,50"
+     ],
+     "times": {
+      "3": "8.00"
+     },
+     "kind": "Fermata intermedia"
+    },
+    {
+     "name": "ALESSANDRIA DELLA ROCCA",
+     "km": [
+      "39,00",
+      "55,50"
+     ],
+     "times": {
+      "3": "8.15"
+     },
+     "kind": "Fermata intermedia"
+    },
+    {
+     "name": "CIANCIANA",
+     "km": [
+      "48,50",
+      "46,20"
+     ],
+     "times": {
+      "3": "8.25"
+     },
+     "kind": "Fermata intermedia"
+    },
+    {
+     "name": "RAFFADALI",
+     "km": [
+      "68,50",
+      "16,20"
+     ],
+     "times": {
+      "3": "9.15"
+     },
+     "kind": "Fermata intermedia"
+    },
+    {
+     "name": "AGRIGENTO",
+     "km": [
+      "94,70",
+      "0,00"
+     ],
+     "times": {
+      "3": "9.40"
+     },
+     "kind": "Capolinea di Arrivo"
+    },
+    {
+     "name": "PERCORSO CAMMARATA AGRIGENTO",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "SOLO IL SABATO, SOLO LA DOMENICA, ETC….",
+     "km": [],
+     "times": {
+      "7": "-"
+     }
+    }
+   ],
+   "prescriptions": [
+    "Prescrizioni d'Esercizio 1 C.C. SCOLASTICA .INTERO PERCORSO CAMMARATA AGRIGENTO"
+   ],
+   "spacing": 25.1
+  },
+  {
+   "corse": [
     {
      "n": "2",
      "x": 592.2,
@@ -67,105 +171,114 @@
    ],
    "stops": [
     {
-     "name": "STAZIONAMENTI KM",
+     "name": "KM KM",
      "km": [],
      "times": {}
     },
     {
-     "name": "CAMMARATA CAMMARATA",
+     "name": "Capolinea di Arrivo orario",
      "km": [
       "0,00",
       "94,70"
      ],
      "times": {
-      "3": "7.10",
       "4": "14.55"
-     },
-     "kind": "Capolinea di Partenza Capolinea di Arrivo"
+     }
     },
     {
-     "name": "S.STEFANO QUISQUINA S.STEFANO QUISQUINA",
+     "name": "CAMMARATA",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Fermata intermedia orario",
      "km": [
       "22,00",
       "72,70"
      ],
      "times": {
-      "3": "7.50",
       "4": "14.15"
-     },
-     "kind": "Fermata intermedia Fermata intermedia"
+     }
     },
     {
-     "name": "BIVONA BIVONA",
+     "name": "S.STEFANO QUISQUINA",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Fermata intermedia orario",
      "km": [
       "29,20",
       "65,50"
      ],
      "times": {
-      "3": "8.00",
       "4": "14.05"
-     },
-     "kind": "Fermata intermedia Fermata intermedia"
+     }
     },
     {
-     "name": "ALESSANDRIA DELLA ROCCA ALESSANDRIA DELLA ROCCA",
+     "name": "BIVONA",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Fermata intermedia orario",
      "km": [
       "39,00",
       "55,50"
      ],
      "times": {
-      "3": "8.15",
       "4": "13.55"
-     },
-     "kind": "Fermata intermedia Fermata intermedia"
+     }
     },
     {
-     "name": "CIANCIANA CIANCIANA",
+     "name": "ALESSANDRIA DELLA ROCCA",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Fermata intermedia orario",
      "km": [
       "48,50",
       "46,20"
      ],
      "times": {
-      "3": "8.25",
       "4": "13.45"
-     },
-     "kind": "Fermata intermedia Fermata intermedia"
+     }
     },
     {
-     "name": "RAFFADALI RAFFADALI",
+     "name": "CIANCIANA",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Fermata intermedia orario",
      "km": [
       "68,50",
       "16,20"
      ],
      "times": {
-      "3": "9.15",
       "4": "13.05"
-     },
-     "kind": "Fermata intermedia Fermata intermedia"
+     }
     },
     {
-     "name": "AGRIGENTO AGRIGENTO",
+     "name": "RAFFADALI",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Capolinea di Partenza orario",
      "km": [
       "94,70",
       "0,00"
      ],
      "times": {
-      "3": "9.40",
       "4": "12.35"
-     },
-     "kind": "Capolinea di Arrivo Capolinea di Partenza"
+     }
     },
     {
      "name": "AGRIGENTO",
      "km": [],
      "times": {}
-    },
-    {
-     "name": "LA DOMENICA, ETC….",
-     "km": [],
-     "times": {
-      "7": "-"
-     }
     }
    ],
    "prescriptions": [

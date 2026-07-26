@@ -1,0 +1,153 @@
+{
+ "operator": "Camilleri Argento",
+ "route_id": "camilleriargentosrl-camiller-p10",
+ "name": "RAFFADALI - AGRIGENTO",
+ "source": "CAMILLERIARGENTOSRL__CAMILLERI_ORARI/p010.json",
+ "prescriptions": [
+  "Prescrizioni d'Esercizio N. 8 C.C. FERIALI RAFFADALI - AGRIGENTO (FOGLIO N.1)",
+  "Prescrizioni d'Esercizio N. 8 C.C. FERIALI RAFFADALI - AGRIGENTO (FOGLIO N.1)"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "RAFFADALI",
+    "AGRIGENTO"
+   ],
+   "trips": []
+  },
+  {
+   "stops": [
+    "RAFFADALI",
+    "AGRIGENTO"
+   ],
+   "trips": [
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE14,3014,00"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "AGRIGENTO",
+       "idx": 1,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "RAFFADALI",
+       "idx": 0,
+       "arr": "14.30",
+       "dep": "14.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "8,207,50"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "AGRIGENTO",
+       "idx": 1,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "RAFFADALI",
+       "idx": 0,
+       "arr": "8.20",
+       "dep": "8.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "10,3510,15"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "AGRIGENTO",
+       "idx": 1,
+       "arr": "10.15",
+       "dep": "10.15"
+      },
+      {
+       "stop": "RAFFADALI",
+       "idx": 0,
+       "arr": "10.35",
+       "dep": "10.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "10",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE11,4511,15"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "AGRIGENTO",
+       "idx": 1,
+       "arr": "11.15",
+       "dep": "11.15"
+      },
+      {
+       "stop": "RAFFADALI",
+       "idx": 0,
+       "arr": "11.45",
+       "dep": "11.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "12",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE13,0012,30"
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "AGRIGENTO",
+       "idx": 1,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "RAFFADALI",
+       "idx": 0,
+       "arr": "13.00",
+       "dep": "13.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ],
+ "loop_flag": false
+}

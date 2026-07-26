@@ -1,17 +1,19 @@
 {
  "operator": "Lattuca",
  "route_id": "lattuca-orari-p6",
- "name": "ARAGONA - RAFFADALI",
+ "name": "0 ARAGONA - -Raffadali",
  "source": "LATTUCA_ORARI/p006.json",
  "prescriptions": [
+  "Prescrizioni d'Esercizio Consentito il carico da Aragona - S.Elisabetta -Raffadali",
   "Prescrizioni d'Esercizio Consentito il carico da Aragona - S.Elisabetta -Raffadali"
  ],
  "directions": [
   {
    "stops": [
-    "ARAGONA ( Via Roma)",
+    "0 ARAGONA ( Via Roma)",
     "S.ELISABETTA ( P. Municipio)",
-    "RAFFADALI ( Via Nazionale)"
+    "RAFFADALI ( Via Nazionale)",
+    "-Raffadali"
    ],
    "trips": [
     {
@@ -25,7 +27,7 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "ARAGONA ( Via Roma)",
+       "stop": "0 ARAGONA ( Via Roma)",
        "idx": 0,
        "arr": "13.30",
        "dep": "13.30"
@@ -44,7 +46,16 @@
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "ARAGONA ( Via Roma)",
+    "S.ELISABETTA ( P. Municipio)",
+    "RAFFADALI ( Via Nazionale) 0"
+   ],
+   "trips": [
     {
      "corsa": "4",
      "service": {
@@ -56,7 +67,7 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "RAFFADALI ( Via Nazionale)",
+       "stop": "RAFFADALI ( Via Nazionale) 0",
        "idx": 2,
        "arr": "13.55",
        "dep": "13.55"
@@ -78,5 +89,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

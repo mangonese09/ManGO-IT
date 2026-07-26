@@ -33,7 +33,106 @@
      "n": "11",
      "x": 252.0,
      "label": "(*)"
+    }
+   ],
+   "stops": [
+    {
+     "name": "KM KM STAZIONAMENTI",
+     "km": [],
+     "times": {}
     },
+    {
+     "name": "AGRIGENTO",
+     "km": [
+      "0,00",
+      "72,70"
+     ],
+     "times": {
+      "3": "6.10",
+      "5": "0.00"
+     },
+     "kind": "Capolinea di Partenza"
+    },
+    {
+     "name": "RAFFADALI",
+     "km": [
+      "16,20",
+      "46,50"
+     ],
+     "times": {
+      "3": "6.30",
+      "5": "0.00"
+     },
+     "kind": "Fermata intermedia"
+    },
+    {
+     "name": "CIANCIANA",
+     "km": [
+      "46,20",
+      "26,50"
+     ],
+     "times": {
+      "3": "7.10",
+      "5": "0.00"
+     },
+     "kind": "Fermata intermedia"
+    },
+    {
+     "name": "ALESSANDRIA DELLA ROCCA",
+     "km": [
+      "55,50",
+      "17,00"
+     ],
+     "times": {
+      "3": "7.20",
+      "5": "0.00"
+     },
+     "kind": "Fermata intermedia"
+    },
+    {
+     "name": "BIVONA",
+     "km": [
+      "65,50",
+      "7,20"
+     ],
+     "times": {
+      "3": "7.35",
+      "5": "0.00"
+     },
+     "kind": "Fermata intermedia"
+    },
+    {
+     "name": "S.STEFANO QUISQUINA",
+     "km": [
+      "72,70",
+      "0,00"
+     ],
+     "times": {
+      "3": "7.45",
+      "5": "0.00"
+     },
+     "kind": "Capolinea di Arrivo"
+    },
+    {
+     "name": "STEFANO QUISQUINA",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "SOLO IL SABATO, SOLO LA DOMENICA, ETC….",
+     "km": [],
+     "times": {
+      "7": "-"
+     }
+    }
+   ],
+   "prescriptions": [
+    "Prescrizioni d'Esercizio N.1 C.C. FERIALI AGRIGENTO - STEFANO QUISQUINA"
+   ],
+   "spacing": 25.1
+  },
+  {
+   "corse": [
     {
      "n": "2",
      "x": 603.7,
@@ -67,100 +166,105 @@
    ],
    "stops": [
     {
-     "name": "STAZIONAMENTI KM",
+     "name": "KM KM",
      "km": [],
      "times": {}
     },
     {
-     "name": "AGRIGENTO AGRIGENTO",
+     "name": "Capolinea di Arrivo orario",
      "km": [
       "0,00",
       "72,70"
      ],
      "times": {
-      "3": "6.10",
-      "5": "0.00",
       "4": "13.55",
       "6": "0.00"
-     },
-     "kind": "Capolinea di Partenza Capolinea di Arrivo"
+     }
     },
     {
-     "name": "RAFFADALI RAFFADALI",
+     "name": "AGRIGENTO",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Fermata intermedia orario",
      "km": [
       "16,20",
       "46,50"
      ],
      "times": {
-      "3": "6.30",
-      "5": "0.00",
       "4": "13.30",
       "6": "0.00"
-     },
-     "kind": "Fermata intermedia Fermata intermedia"
+     }
     },
     {
-     "name": "CIANCIANA CIANCIANA",
+     "name": "RAFFADALI",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Fermata intermedia orario",
      "km": [
       "46,20",
       "26,50"
      ],
      "times": {
-      "3": "7.10",
-      "5": "0.00",
       "4": "12.45",
       "6": "0.00"
-     },
-     "kind": "Fermata intermedia Fermata intermedia"
+     }
     },
     {
-     "name": "ALESSANDRIA DELLA ROCCA ALESSANDRIA DELLA ROCCA",
+     "name": "CIANCIANA",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Fermata intermedia orario",
      "km": [
       "55,50",
       "17,00"
      ],
      "times": {
-      "3": "7.20",
-      "5": "0.00",
       "4": "12.30",
       "6": "0.00"
-     },
-     "kind": "Fermata intermedia Fermata intermedia"
+     }
     },
     {
-     "name": "BIVONA BIVONA",
+     "name": "ALESSANDRIA DELLA ROCCA",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Fermata intermedia orario",
      "km": [
       "65,50",
       "7,20"
      ],
      "times": {
-      "3": "7.35",
-      "5": "0.00",
       "4": "12.15",
       "6": "0.00"
-     },
-     "kind": "Fermata intermedia Fermata intermedia"
+     }
     },
     {
-     "name": "S.STEFANO QUISQUINA S.STEFANO QUISQUINA",
+     "name": "BIVONA",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Capolinea di Partenza orario",
      "km": [
       "72,70",
       "0,00"
      ],
      "times": {
-      "3": "7.45",
-      "5": "0.00",
       "4": "12.00",
       "6": "0.00"
-     },
-     "kind": "Capolinea di Arrivo Capolinea di Partenza"
+     }
     },
     {
-     "name": "LA DOMENICA, ETC….",
+     "name": "S.STEFANO QUISQUINA",
      "km": [],
-     "times": {
-      "7": "-"
-     }
+     "times": {}
     }
    ],
    "prescriptions": [

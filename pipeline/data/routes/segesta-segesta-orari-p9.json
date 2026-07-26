@@ -1,17 +1,18 @@
 {
  "operator": "Segesta",
  "route_id": "segesta-segesta-orari-p9",
- "name": "ALCAMO Autostazione - TRAPPETO Piazzetta Santa Rosalia",
+ "name": "ALCAMO - TRAPPETO",
  "source": "Segesta__SEGESTA_ORARI/p009.json",
  "prescriptions": [
+  "Prescrizioni d'Esercizio divieto di servizio locale da Balestrate a Trappeto e viceversa",
   "Prescrizioni d'Esercizio divieto di servizio locale da Balestrate a Trappeto e viceversa"
  ],
  "directions": [
   {
    "stops": [
-    "ALCAMO Autostazione",
-    "BALESTRATE Piazza Rettore Evola",
-    "TRAPPETO Piazzetta Santa Rosalia"
+    "ALCAMO",
+    "BALESTRATE",
+    "TRAPPETO"
    ],
    "trips": [
     {
@@ -25,26 +26,35 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "ALCAMO Autostazione",
+       "stop": "ALCAMO",
        "idx": 0,
        "arr": "14.30",
        "dep": "14.30"
       },
       {
-       "stop": "BALESTRATE Piazza Rettore Evola",
+       "stop": "BALESTRATE",
        "idx": 1,
        "arr": "14.55",
        "dep": "14.55"
       },
       {
-       "stop": "TRAPPETO Piazzetta Santa Rosalia",
+       "stop": "TRAPPETO",
        "idx": 2,
        "arr": "15.10",
        "dep": "15.10"
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "Autostazione",
+    "Piazza Rettore Evola",
+    "Piazzetta Santa Rosalia"
+   ],
+   "trips": [
     {
      "corsa": "2",
      "service": {
@@ -56,19 +66,19 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "TRAPPETO Piazzetta Santa Rosalia",
+       "stop": "Piazzetta Santa Rosalia",
        "idx": 2,
        "arr": "7.10",
        "dep": "7.10"
       },
       {
-       "stop": "BALESTRATE Piazza Rettore Evola",
+       "stop": "Piazza Rettore Evola",
        "idx": 1,
        "arr": "7.25",
        "dep": "7.25"
       },
       {
-       "stop": "ALCAMO Autostazione",
+       "stop": "Autostazione",
        "idx": 0,
        "arr": "7.50",
        "dep": "7.50"
@@ -78,5 +88,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

@@ -1,22 +1,23 @@
 {
  "operator": "Ionica",
  "route_id": "ionicaspa-ionica-orari-p33",
- "name": "Canigliari Antillo Canigliari - Mandanici I",
+ "name": "Antillo Canigliari - Messina",
  "source": "IONICASpA__IONICA_ORARI/p033.json",
  "prescriptions": [
+  "Prescrizioni d'Esercizio Divieto di servizio locale da Roccalumera a Messina e vv. estremi compresi - Divieto di carico per Messina al bivio Scifì -S.Alessio sulla ss.114 e vv.",
   "Prescrizioni d'Esercizio Divieto di servizio locale da Roccalumera a Messina e vv. estremi compresi - Divieto di carico per Messina al bivio Scifì -S.Alessio sulla ss.114 e vv."
  ],
  "directions": [
   {
    "stops": [
-    "Canigliari Antillo Canigliari",
+    "Antillo Canigliari",
     "Antillo",
-    "Scifì",
-    "Savoca I (Bivio Scifì) Sant'Alessio (Bivio Scifì)",
-    "Barracca Santa Teresa Barracca",
-    "Bucalo Santa Teresa Bucalo",
-    "Furci",
-    "Mandanici I (P.zza Cavallotti) Messina (P.zza Cavallotti)"
+    "I Scifi' Scifì",
+    "I Sant'Alessio (Bivio Scifì) Sant'Alessio (Bivio Scifì)",
+    "I Santa Teresa Barracca Santa Teresa Barracca",
+    "I Santa Teresa Bucalo Santa Teresa Bucalo",
+    "I Furci Furci",
+    "Messina (P.zza Cavallotti)"
    ],
    "trips": [
     {
@@ -30,7 +31,7 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "Canigliari Antillo Canigliari",
+       "stop": "Antillo Canigliari",
        "idx": 0,
        "arr": "6.30",
        "dep": "6.30"
@@ -42,44 +43,58 @@
        "dep": "6.35"
       },
       {
-       "stop": "Scifì",
+       "stop": "I Scifi' Scifì",
        "idx": 2,
        "arr": "7.05",
        "dep": "7.05"
       },
       {
-       "stop": "Savoca I (Bivio Scifì) Sant'Alessio (Bivio Scifì)",
+       "stop": "I Sant'Alessio (Bivio Scifì) Sant'Alessio (Bivio Scifì)",
        "idx": 3,
        "arr": "7.20",
        "dep": "7.20"
       },
       {
-       "stop": "Barracca Santa Teresa Barracca",
+       "stop": "I Santa Teresa Barracca Santa Teresa Barracca",
        "idx": 4,
        "arr": "7.30",
        "dep": "7.30"
       },
       {
-       "stop": "Bucalo Santa Teresa Bucalo",
+       "stop": "I Santa Teresa Bucalo Santa Teresa Bucalo",
        "idx": 5,
        "arr": "7.35",
        "dep": "7.35"
       },
       {
-       "stop": "Furci",
+       "stop": "I Furci Furci",
        "idx": 6,
        "arr": "7.40",
        "dep": "7.40"
       },
       {
-       "stop": "Mandanici I (P.zza Cavallotti) Messina (P.zza Cavallotti)",
+       "stop": "Messina (P.zza Cavallotti)",
        "idx": 7,
        "arr": "8.20",
        "dep": "8.20"
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "I orario",
+    "I orario",
+    "I orario",
+    "I orario",
+    "I orario",
+    "I orario",
+    "I",
+    "0"
+   ],
+   "trips": [
     {
      "corsa": "4",
      "service": {
@@ -91,49 +106,49 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "Mandanici I (P.zza Cavallotti) Messina (P.zza Cavallotti)",
+       "stop": "0",
        "idx": 7,
        "arr": "11.00",
        "dep": "11.00"
       },
       {
-       "stop": "Furci",
+       "stop": "I",
        "idx": 6,
        "arr": "11.45",
        "dep": "11.45"
       },
       {
-       "stop": "Bucalo Santa Teresa Bucalo",
+       "stop": "I orario",
        "idx": 5,
        "arr": "11.50",
        "dep": "11.50"
       },
       {
-       "stop": "Barracca Santa Teresa Barracca",
+       "stop": "I orario",
        "idx": 4,
        "arr": "11.55",
        "dep": "11.55"
       },
       {
-       "stop": "Savoca I (Bivio Scifì) Sant'Alessio (Bivio Scifì)",
+       "stop": "I orario",
        "idx": 3,
        "arr": "12.00",
        "dep": "12.00"
       },
       {
-       "stop": "Scifì",
+       "stop": "I orario",
        "idx": 2,
        "arr": "12.15",
        "dep": "12.15"
       },
       {
-       "stop": "Antillo",
+       "stop": "I orario",
        "idx": 1,
        "arr": "12.45",
        "dep": "12.45"
       },
       {
-       "stop": "Canigliari Antillo Canigliari",
+       "stop": "I orario",
        "idx": 0,
        "arr": "12.50",
        "dep": "12.50"
@@ -143,5 +158,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

@@ -28,7 +28,72 @@
      "n": "9",
      "x": 253.9,
      "label": "(*)"
+    }
+   ],
+   "stops": [
+    {
+     "name": "KM",
+     "km": [],
+     "times": {}
     },
+    {
+     "name": "Valledolmo-Piazza Olmo",
+     "km": [
+      "0,0",
+      "14,0"
+     ],
+     "times": {
+      "3": "7.00"
+     },
+     "kind": "Capolinea di Partenza"
+    },
+    {
+     "name": "Vallelunga P.le Liguria",
+     "km": [
+      "14,0",
+      "0,0"
+     ],
+     "times": {
+      "3": "7.25"
+     },
+     "kind": "Capolinea di Arrivo"
+    },
+    {
+     "name": "Valledolmo Piazza dell'Olmo",
+     "km": [
+      "0,0",
+      "16,0"
+     ],
+     "times": {
+      "3": "14.15"
+     },
+     "kind": "Capolinea di Partenza"
+    },
+    {
+     "name": "Vallelunga P.le Liguria",
+     "km": [
+      "14,0"
+     ],
+     "times": {
+      "3": "14.50"
+     },
+     "kind": "Capolinea di Arrivo"
+    },
+    {
+     "name": "SOLO IL SABATO, SOLO LA DOMENICA, ETC….",
+     "km": [],
+     "times": {
+      "5": "-"
+     }
+    }
+   ],
+   "prescriptions": [
+    "Prescrizioni d'Esercizio"
+   ],
+   "spacing": 26.3
+  },
+  {
+   "corse": [
     {
      "n": "2",
      "x": 638.8,
@@ -57,71 +122,85 @@
    ],
    "stops": [
     {
-     "name": "KM",
+     "name": "KM KM",
      "km": [],
      "times": {}
     },
     {
-     "name": "Valledolmo-Piazza Olmo Valledolmo-Piazza Olmo",
+     "name": "GIORNALIERA",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Capolinea di Arrivo orario",
      "km": [
       "0,0",
       "14,0"
      ],
      "times": {
-      "3": "7.00",
       "2": "7.55"
-     },
-     "kind": "Capolinea di Partenza Capolinea di Arrivo"
+     }
     },
     {
-     "name": "Vallelunga P.le Liguria Vallelunga P.le Liguria",
+     "name": "Valledolmo-Piazza Olmo",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Capolinea di partenza orario",
      "km": [
       "14,0",
       "0,0"
      ],
      "times": {
-      "3": "7.25",
       "2": "7.30"
-     },
-     "kind": "Capolinea di Arrivo Capolinea di partenza"
+     }
     },
     {
-     "name": "Valledolmo Piazza dell'Olmo Valledolmo Piazza dell'Olmo",
+     "name": "Vallelunga P.le Liguria",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Capolinea di Arrivo orario",
      "km": [
       "0,0",
       "16,0"
      ],
      "times": {
-      "3": "14.15",
       "2": "15.25"
-     },
-     "kind": "Capolinea di Partenza Capolinea di Arrivo"
+     }
+    },
+    {
+     "name": "Valledolmo Piazza dell'Olmo",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Fermata intermedia orario",
+     "km": [],
+     "times": {
+      "2": "15.05"
+     }
     },
     {
      "name": "Staz.Ferr.Valledolmo",
      "km": [],
-     "times": {
-      "2": "15.05"
-     },
-     "kind": "Fermata intermedia"
+     "times": {}
     },
     {
-     "name": "Vallelunga P.le Liguria Vallelunga P.le Liguria",
+     "name": "Capolinea di partenza 0 orario",
      "km": [
       "14,0"
      ],
      "times": {
-      "3": "14.50",
       "2": "14.55"
-     },
-     "kind": "Capolinea di Arrivo Capolinea di partenza"
+     }
     },
     {
-     "name": "LA DOMENICA, ETC….",
+     "name": "Vallelunga P.le Liguria",
      "km": [],
-     "times": {
-      "5": "-"
-     }
+     "times": {}
     }
    ],
    "prescriptions": [

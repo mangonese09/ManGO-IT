@@ -1,47 +1,56 @@
 {
  "operator": "Cracchiolo",
  "route_id": "cracchiolo-orari-p10",
- "name": "P.ZA DUOMO CARINI P.ZA DUOMO - PIAZZA DUOMO PARTINICO PIAZZA DUOMO",
+ "name": "CARINI P.ZA DUOMO - PARTINICO PIAZZA DUOMO",
  "source": "CRACCHIOLO_ORARI/p010.json",
  "prescriptions": [
+  "Prescrizioni d'Esercizio",
   "Prescrizioni d'Esercizio"
  ],
  "directions": [
   {
    "stops": [
-    "P.ZA DUOMO CARINI P.ZA DUOMO",
-    "UMBERTO I,2",
-    "PALERMO, 4",
-    "ITALIA, 41 C.SO UMBERTO I, 3",
-    "ITALIA, 95 VIA PALERMO, 5",
-    "ITALIA, 177 C.SO ITALIA, 48",
-    "S.P.3, 41 C.SO ITALIA, 56",
-    "S.P.3, 65 CARINI C.SO ITALIA, 150",
-    "(BIVIO FORESTA) S.P.3, 48",
-    "176 S.P.3, 88 (BIVIO FORESTA)",
-    "74 S.S.113 KM",
-    "STAZ. METROPOLITANA VILLAGRAZIA, 225",
-    "UMBERTO I, 362 S.S.113 KM",
-    "UMBERTO I, 318 S.S.113 KM",
-    "UMBERTO I, 120 CORSO UMBERTO I, 359",
-    "V.E.ORLANDO CORSO UMBERTO I, 199",
-    "UMBERTO I, 115 CORSO UMBERTO I, 115",
-    "UMBERTO I, 199 CINISI P.ZA V.E.ORLANDO (capolinea)",
-    "UMBERTO I, 359 C.SO UMBERTO I, 120",
-    "VIA PALERMO, 129 S.S.113 KM",
-    "PALERMO, 29 VIA PALERMO, 224",
-    "DUOMO VIA PALERMO, 58",
-    "CHIESA (CAPOLINEA)",
-    "V.EMANUELE, 274 VIA F.P. PEREZ, 103",
+    "CARINI P.ZA DUOMO",
+    "C.SO UMBERTO I,2",
+    "VIA PALERMO, 4",
+    "C.SO ITALIA, 41",
+    "C.SO ITALIA, 95",
+    "C.SO ITALIA, 177",
+    "S.P.3, 41",
+    "S.P.3, 65",
+    "S.P.3, 87 (BIVIO FORESTA)",
+    "S.S.113 KM",
+    "VILLAGRAZIA, 176",
+    "VILLAGRAZIA, 74",
+    "PIRAINETO STAZ. METROPOLITANA",
+    "S.S.113 KM",
+    "S.S.113 KM",
+    "S.S.113 KM",
+    "CINISI C.SO UMBERTO I, 362",
+    "C.SO UMBERTO I, 318",
+    "C.SO UMBERTO I, 120",
+    "CINISI PIAZZA V.E.ORLANDO",
+    "CORSO UMBERTO I, 115",
+    "CORSO UMBERTO I, 199",
+    "CORSO UMBERTO I, 359",
+    "S.S.113 KM",
+    "S.S.113 KM",
+    "TERRASINI, VIA PALERMO, 129",
+    "VIA PALERMO, 29",
     "VIA C. A. DALLA CHIESA (CAPOLINEA)",
-    "V.EMANUELE, 414 VIA F.SCO CRISPI > VIA MONS. EVOLA",
-    "CONSIGLIO, 5 VIA PARTINICO > C.SO V.EMANUELE",
-    "S.S.186 KM S.S.113 KM",
-    "(OSPEDALE) C.SO DEI MILLE, 508",
-    "> VIA TARANTO C.SO DEI MILLE, 448",
-    "MORO (STADIO) C.SO DEI MILLE, 252",
-    "12",
-    "PIAZZA DUOMO PARTINICO PIAZZA DUOMO"
+    "C.SO V.EMANUELE, 274",
+    "C.SO V.EMANUELE, 414",
+    "VIALE CONSIGLIO, 5",
+    "S.S.113 KM",
+    "S.S.113 KM",
+    "S.S.113 KM",
+    "PARTINICO S.S.186 KM",
+    "S.S.186 KM",
+    "S.S.186 KM (OSPEDALE)",
+    "VIA BENVENTO > VIA TARANTO",
+    "V.LE ALDO MORO (STADIO)",
+    "VIA CALANDRINO, 12",
+    "PARTINICO PIAZZA DUOMO"
    ],
    "trips": [
     {
@@ -55,62 +64,74 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "CHIESA (CAPOLINEA)",
-       "idx": 22,
+       "stop": "VIA C. A. DALLA CHIESA (CAPOLINEA)",
+       "idx": 27,
        "arr": "13.35",
        "dep": "13.35"
       },
       {
-       "stop": "V.EMANUELE, 274 VIA F.P. PEREZ, 103",
-       "idx": 23,
+       "stop": "C.SO V.EMANUELE, 274",
+       "idx": 28,
        "arr": "13.37",
        "dep": "13.37"
       },
       {
-       "stop": "V.EMANUELE, 414 VIA F.SCO CRISPI > VIA MONS. EVOLA",
-       "idx": 25,
+       "stop": "C.SO V.EMANUELE, 414",
+       "idx": 29,
        "arr": "13.38",
        "dep": "13.38"
       },
       {
-       "stop": "CONSIGLIO, 5 VIA PARTINICO > C.SO V.EMANUELE",
-       "idx": 26,
+       "stop": "VIALE CONSIGLIO, 5",
+       "idx": 30,
        "arr": "13.39",
        "dep": "13.39"
       },
       {
-       "stop": "S.S.186 KM S.S.113 KM",
-       "idx": 27,
+       "stop": "S.S.113 KM",
+       "idx": 31,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "PARTINICO S.S.186 KM",
+       "idx": 34,
        "arr": "13.51",
        "dep": "13.51"
       },
       {
-       "stop": "(OSPEDALE) C.SO DEI MILLE, 508",
-       "idx": 28,
+       "stop": "S.S.186 KM",
+       "idx": 35,
+       "arr": "13.52",
+       "dep": "13.52"
+      },
+      {
+       "stop": "S.S.186 KM (OSPEDALE)",
+       "idx": 36,
        "arr": "13.53",
        "dep": "13.53"
       },
       {
-       "stop": "> VIA TARANTO C.SO DEI MILLE, 448",
-       "idx": 29,
+       "stop": "VIA BENVENTO > VIA TARANTO",
+       "idx": 37,
        "arr": "13.54",
        "dep": "13.54"
       },
       {
-       "stop": "MORO (STADIO) C.SO DEI MILLE, 252",
-       "idx": 30,
+       "stop": "V.LE ALDO MORO (STADIO)",
+       "idx": 38,
        "arr": "13.56",
        "dep": "13.56"
       },
       {
-       "stop": "12",
-       "idx": 31,
+       "stop": "VIA CALANDRINO, 12",
+       "idx": 39,
        "arr": "13.58",
        "dep": "13.58"
       },
       {
-       "stop": "PIAZZA DUOMO PARTINICO PIAZZA DUOMO",
-       "idx": 32,
+       "stop": "PARTINICO PIAZZA DUOMO",
+       "idx": 40,
        "arr": "14.00",
        "dep": "14.00"
       }
@@ -128,134 +149,170 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "P.ZA DUOMO CARINI P.ZA DUOMO",
+       "stop": "CARINI P.ZA DUOMO",
        "idx": 0,
        "arr": "13.30",
        "dep": "13.30"
       },
       {
-       "stop": "UMBERTO I,2",
+       "stop": "C.SO UMBERTO I,2",
        "idx": 1,
        "arr": "13.31",
        "dep": "13.31"
       },
       {
-       "stop": "PALERMO, 4",
+       "stop": "VIA PALERMO, 4",
        "idx": 2,
        "arr": "13.32",
        "dep": "13.32"
       },
       {
-       "stop": "ITALIA, 41 C.SO UMBERTO I, 3",
+       "stop": "C.SO ITALIA, 41",
        "idx": 3,
        "arr": "13.33",
        "dep": "13.33"
       },
       {
-       "stop": "ITALIA, 95 VIA PALERMO, 5",
+       "stop": "C.SO ITALIA, 95",
        "idx": 4,
        "arr": "13.34",
        "dep": "13.34"
       },
       {
-       "stop": "ITALIA, 177 C.SO ITALIA, 48",
+       "stop": "C.SO ITALIA, 177",
        "idx": 5,
        "arr": "13.35",
        "dep": "13.35"
       },
       {
-       "stop": "S.P.3, 41 C.SO ITALIA, 56",
+       "stop": "S.P.3, 41",
        "idx": 6,
        "arr": "13.36",
        "dep": "13.36"
       },
       {
-       "stop": "S.P.3, 65 CARINI C.SO ITALIA, 150",
+       "stop": "S.P.3, 65",
        "idx": 7,
        "arr": "13.37",
        "dep": "13.37"
       },
       {
-       "stop": "(BIVIO FORESTA) S.P.3, 48",
+       "stop": "S.P.3, 87 (BIVIO FORESTA)",
        "idx": 8,
        "arr": "13.38",
        "dep": "13.38"
       },
       {
-       "stop": "176 S.P.3, 88 (BIVIO FORESTA)",
+       "stop": "S.S.113 KM",
        "idx": 9,
+       "arr": "13.39",
+       "dep": "13.39"
+      },
+      {
+       "stop": "VILLAGRAZIA, 176",
+       "idx": 10,
        "arr": "13.40",
        "dep": "13.40"
       },
       {
-       "stop": "74 S.S.113 KM",
-       "idx": 10,
+       "stop": "VILLAGRAZIA, 74",
+       "idx": 11,
        "arr": "13.41",
        "dep": "13.41"
       },
       {
-       "stop": "STAZ. METROPOLITANA VILLAGRAZIA, 225",
-       "idx": 11,
+       "stop": "PIRAINETO STAZ. METROPOLITANA",
+       "idx": 12,
        "arr": "13.45",
        "dep": "13.45"
       },
       {
-       "stop": "UMBERTO I, 362 S.S.113 KM",
-       "idx": 12,
+       "stop": "S.S.113 KM",
+       "idx": 13,
+       "arr": "13.46",
+       "dep": "13.46"
+      },
+      {
+       "stop": "S.S.113 KM",
+       "idx": 14,
+       "arr": "13.48",
+       "dep": "13.48"
+      },
+      {
+       "stop": "S.S.113 KM",
+       "idx": 15,
+       "arr": "13.51",
+       "dep": "13.51"
+      },
+      {
+       "stop": "CINISI C.SO UMBERTO I, 362",
+       "idx": 16,
        "arr": "13.52",
        "dep": "13.52"
       },
       {
-       "stop": "UMBERTO I, 318 S.S.113 KM",
-       "idx": 13,
+       "stop": "C.SO UMBERTO I, 318",
+       "idx": 17,
        "arr": "13.53",
        "dep": "13.53"
       },
       {
-       "stop": "UMBERTO I, 120 CORSO UMBERTO I, 359",
-       "idx": 14,
+       "stop": "C.SO UMBERTO I, 120",
+       "idx": 18,
        "arr": "13.54",
        "dep": "13.54"
       },
       {
-       "stop": "V.E.ORLANDO CORSO UMBERTO I, 199",
-       "idx": 15,
+       "stop": "CINISI PIAZZA V.E.ORLANDO",
+       "idx": 19,
        "arr": "13.55",
        "dep": "13.55"
       },
       {
-       "stop": "UMBERTO I, 115 CORSO UMBERTO I, 115",
-       "idx": 16,
+       "stop": "CORSO UMBERTO I, 115",
+       "idx": 20,
        "arr": "13.56",
        "dep": "13.56"
       },
       {
-       "stop": "UMBERTO I, 199 CINISI P.ZA V.E.ORLANDO (capolinea)",
-       "idx": 17,
+       "stop": "CORSO UMBERTO I, 199",
+       "idx": 21,
        "arr": "13.57",
        "dep": "13.57"
       },
       {
-       "stop": "UMBERTO I, 359 C.SO UMBERTO I, 120",
-       "idx": 18,
+       "stop": "CORSO UMBERTO I, 359",
+       "idx": 22,
        "arr": "13.58",
        "dep": "13.58"
       },
       {
-       "stop": "VIA PALERMO, 129 S.S.113 KM",
-       "idx": 19,
+       "stop": "S.S.113 KM",
+       "idx": 23,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "S.S.113 KM",
+       "idx": 24,
+       "arr": "14.02",
+       "dep": "14.02"
+      },
+      {
+       "stop": "TERRASINI, VIA PALERMO, 129",
+       "idx": 25,
        "arr": "14.03",
        "dep": "14.03"
       },
       {
-       "stop": "PALERMO, 29 VIA PALERMO, 224",
-       "idx": 20,
+       "stop": "VIA PALERMO, 29",
+       "idx": 26,
        "arr": "14.04",
        "dep": "14.04"
       },
       {
-       "stop": "CHIESA (CAPOLINEA)",
-       "idx": 22,
+       "stop": "VIA C. A. DALLA CHIESA (CAPOLINEA)",
+       "idx": 27,
        "arr": "14.05",
        "dep": "14.05"
       }
@@ -273,134 +330,170 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "P.ZA DUOMO CARINI P.ZA DUOMO",
+       "stop": "CARINI P.ZA DUOMO",
        "idx": 0,
        "arr": "14.20",
        "dep": "14.20"
       },
       {
-       "stop": "UMBERTO I,2",
+       "stop": "C.SO UMBERTO I,2",
        "idx": 1,
        "arr": "14.21",
        "dep": "14.21"
       },
       {
-       "stop": "PALERMO, 4",
+       "stop": "VIA PALERMO, 4",
        "idx": 2,
        "arr": "14.22",
        "dep": "14.22"
       },
       {
-       "stop": "ITALIA, 41 C.SO UMBERTO I, 3",
+       "stop": "C.SO ITALIA, 41",
        "idx": 3,
        "arr": "14.23",
        "dep": "14.23"
       },
       {
-       "stop": "ITALIA, 95 VIA PALERMO, 5",
+       "stop": "C.SO ITALIA, 95",
        "idx": 4,
        "arr": "14.24",
        "dep": "14.24"
       },
       {
-       "stop": "ITALIA, 177 C.SO ITALIA, 48",
+       "stop": "C.SO ITALIA, 177",
        "idx": 5,
        "arr": "14.25",
        "dep": "14.25"
       },
       {
-       "stop": "S.P.3, 41 C.SO ITALIA, 56",
+       "stop": "S.P.3, 41",
        "idx": 6,
        "arr": "14.26",
        "dep": "14.26"
       },
       {
-       "stop": "S.P.3, 65 CARINI C.SO ITALIA, 150",
+       "stop": "S.P.3, 65",
        "idx": 7,
        "arr": "14.27",
        "dep": "14.27"
       },
       {
-       "stop": "(BIVIO FORESTA) S.P.3, 48",
+       "stop": "S.P.3, 87 (BIVIO FORESTA)",
        "idx": 8,
        "arr": "14.28",
        "dep": "14.28"
       },
       {
-       "stop": "176 S.P.3, 88 (BIVIO FORESTA)",
+       "stop": "S.S.113 KM",
        "idx": 9,
+       "arr": "14.29",
+       "dep": "14.29"
+      },
+      {
+       "stop": "VILLAGRAZIA, 176",
+       "idx": 10,
        "arr": "14.30",
        "dep": "14.30"
       },
       {
-       "stop": "74 S.S.113 KM",
-       "idx": 10,
+       "stop": "VILLAGRAZIA, 74",
+       "idx": 11,
        "arr": "14.31",
        "dep": "14.31"
       },
       {
-       "stop": "STAZ. METROPOLITANA VILLAGRAZIA, 225",
-       "idx": 11,
+       "stop": "PIRAINETO STAZ. METROPOLITANA",
+       "idx": 12,
        "arr": "14.35",
        "dep": "14.35"
       },
       {
-       "stop": "UMBERTO I, 362 S.S.113 KM",
-       "idx": 12,
+       "stop": "S.S.113 KM",
+       "idx": 13,
+       "arr": "14.36",
+       "dep": "14.36"
+      },
+      {
+       "stop": "S.S.113 KM",
+       "idx": 14,
+       "arr": "14.38",
+       "dep": "14.38"
+      },
+      {
+       "stop": "S.S.113 KM",
+       "idx": 15,
+       "arr": "14.41",
+       "dep": "14.41"
+      },
+      {
+       "stop": "CINISI C.SO UMBERTO I, 362",
+       "idx": 16,
        "arr": "14.42",
        "dep": "14.42"
       },
       {
-       "stop": "UMBERTO I, 318 S.S.113 KM",
-       "idx": 13,
+       "stop": "C.SO UMBERTO I, 318",
+       "idx": 17,
        "arr": "14.43",
        "dep": "14.43"
       },
       {
-       "stop": "UMBERTO I, 120 CORSO UMBERTO I, 359",
-       "idx": 14,
+       "stop": "C.SO UMBERTO I, 120",
+       "idx": 18,
        "arr": "14.44",
        "dep": "14.44"
       },
       {
-       "stop": "V.E.ORLANDO CORSO UMBERTO I, 199",
-       "idx": 15,
+       "stop": "CINISI PIAZZA V.E.ORLANDO",
+       "idx": 19,
        "arr": "14.45",
        "dep": "14.45"
       },
       {
-       "stop": "UMBERTO I, 115 CORSO UMBERTO I, 115",
-       "idx": 16,
+       "stop": "CORSO UMBERTO I, 115",
+       "idx": 20,
        "arr": "14.46",
        "dep": "14.46"
       },
       {
-       "stop": "UMBERTO I, 199 CINISI P.ZA V.E.ORLANDO (capolinea)",
-       "idx": 17,
+       "stop": "CORSO UMBERTO I, 199",
+       "idx": 21,
        "arr": "14.47",
        "dep": "14.47"
       },
       {
-       "stop": "UMBERTO I, 359 C.SO UMBERTO I, 120",
-       "idx": 18,
+       "stop": "CORSO UMBERTO I, 359",
+       "idx": 22,
        "arr": "14.48",
        "dep": "14.48"
       },
       {
-       "stop": "VIA PALERMO, 129 S.S.113 KM",
-       "idx": 19,
+       "stop": "S.S.113 KM",
+       "idx": 23,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "S.S.113 KM",
+       "idx": 24,
+       "arr": "14.52",
+       "dep": "14.52"
+      },
+      {
+       "stop": "TERRASINI, VIA PALERMO, 129",
+       "idx": 25,
        "arr": "14.53",
        "dep": "14.53"
       },
       {
-       "stop": "PALERMO, 29 VIA PALERMO, 224",
-       "idx": 20,
+       "stop": "VIA PALERMO, 29",
+       "idx": 26,
        "arr": "14.54",
        "dep": "14.54"
       },
       {
-       "stop": "CHIESA (CAPOLINEA)",
-       "idx": 22,
+       "stop": "VIA C. A. DALLA CHIESA (CAPOLINEA)",
+       "idx": 27,
        "arr": "14.55",
        "dep": "14.55"
       }
@@ -418,134 +511,170 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "P.ZA DUOMO CARINI P.ZA DUOMO",
+       "stop": "CARINI P.ZA DUOMO",
        "idx": 0,
        "arr": "15.30",
        "dep": "15.30"
       },
       {
-       "stop": "UMBERTO I,2",
+       "stop": "C.SO UMBERTO I,2",
        "idx": 1,
        "arr": "15.31",
        "dep": "15.31"
       },
       {
-       "stop": "PALERMO, 4",
+       "stop": "VIA PALERMO, 4",
        "idx": 2,
        "arr": "15.32",
        "dep": "15.32"
       },
       {
-       "stop": "ITALIA, 41 C.SO UMBERTO I, 3",
+       "stop": "C.SO ITALIA, 41",
        "idx": 3,
        "arr": "15.33",
        "dep": "15.33"
       },
       {
-       "stop": "ITALIA, 95 VIA PALERMO, 5",
+       "stop": "C.SO ITALIA, 95",
        "idx": 4,
        "arr": "15.34",
        "dep": "15.34"
       },
       {
-       "stop": "ITALIA, 177 C.SO ITALIA, 48",
+       "stop": "C.SO ITALIA, 177",
        "idx": 5,
        "arr": "15.35",
        "dep": "15.35"
       },
       {
-       "stop": "S.P.3, 41 C.SO ITALIA, 56",
+       "stop": "S.P.3, 41",
        "idx": 6,
        "arr": "15.36",
        "dep": "15.36"
       },
       {
-       "stop": "S.P.3, 65 CARINI C.SO ITALIA, 150",
+       "stop": "S.P.3, 65",
        "idx": 7,
        "arr": "15.37",
        "dep": "15.37"
       },
       {
-       "stop": "(BIVIO FORESTA) S.P.3, 48",
+       "stop": "S.P.3, 87 (BIVIO FORESTA)",
        "idx": 8,
        "arr": "15.38",
        "dep": "15.38"
       },
       {
-       "stop": "176 S.P.3, 88 (BIVIO FORESTA)",
+       "stop": "S.S.113 KM",
        "idx": 9,
+       "arr": "15.39",
+       "dep": "15.39"
+      },
+      {
+       "stop": "VILLAGRAZIA, 176",
+       "idx": 10,
        "arr": "15.40",
        "dep": "15.40"
       },
       {
-       "stop": "74 S.S.113 KM",
-       "idx": 10,
+       "stop": "VILLAGRAZIA, 74",
+       "idx": 11,
        "arr": "15.41",
        "dep": "15.41"
       },
       {
-       "stop": "STAZ. METROPOLITANA VILLAGRAZIA, 225",
-       "idx": 11,
+       "stop": "PIRAINETO STAZ. METROPOLITANA",
+       "idx": 12,
        "arr": "15.45",
        "dep": "15.45"
       },
       {
-       "stop": "UMBERTO I, 362 S.S.113 KM",
-       "idx": 12,
+       "stop": "S.S.113 KM",
+       "idx": 13,
+       "arr": "15.46",
+       "dep": "15.46"
+      },
+      {
+       "stop": "S.S.113 KM",
+       "idx": 14,
+       "arr": "15.48",
+       "dep": "15.48"
+      },
+      {
+       "stop": "S.S.113 KM",
+       "idx": 15,
+       "arr": "15.51",
+       "dep": "15.51"
+      },
+      {
+       "stop": "CINISI C.SO UMBERTO I, 362",
+       "idx": 16,
        "arr": "15.52",
        "dep": "15.52"
       },
       {
-       "stop": "UMBERTO I, 318 S.S.113 KM",
-       "idx": 13,
+       "stop": "C.SO UMBERTO I, 318",
+       "idx": 17,
        "arr": "15.53",
        "dep": "15.53"
       },
       {
-       "stop": "UMBERTO I, 120 CORSO UMBERTO I, 359",
-       "idx": 14,
+       "stop": "C.SO UMBERTO I, 120",
+       "idx": 18,
        "arr": "15.54",
        "dep": "15.54"
       },
       {
-       "stop": "V.E.ORLANDO CORSO UMBERTO I, 199",
-       "idx": 15,
+       "stop": "CINISI PIAZZA V.E.ORLANDO",
+       "idx": 19,
        "arr": "15.55",
        "dep": "15.55"
       },
       {
-       "stop": "UMBERTO I, 115 CORSO UMBERTO I, 115",
-       "idx": 16,
+       "stop": "CORSO UMBERTO I, 115",
+       "idx": 20,
        "arr": "15.56",
        "dep": "15.56"
       },
       {
-       "stop": "UMBERTO I, 199 CINISI P.ZA V.E.ORLANDO (capolinea)",
-       "idx": 17,
+       "stop": "CORSO UMBERTO I, 199",
+       "idx": 21,
        "arr": "15.57",
        "dep": "15.57"
       },
       {
-       "stop": "UMBERTO I, 359 C.SO UMBERTO I, 120",
-       "idx": 18,
+       "stop": "CORSO UMBERTO I, 359",
+       "idx": 22,
        "arr": "15.58",
        "dep": "15.58"
       },
       {
-       "stop": "VIA PALERMO, 129 S.S.113 KM",
-       "idx": 19,
+       "stop": "S.S.113 KM",
+       "idx": 23,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "S.S.113 KM",
+       "idx": 24,
+       "arr": "16.02",
+       "dep": "16.02"
+      },
+      {
+       "stop": "TERRASINI, VIA PALERMO, 129",
+       "idx": 25,
        "arr": "16.03",
        "dep": "16.03"
       },
       {
-       "stop": "PALERMO, 29 VIA PALERMO, 224",
-       "idx": 20,
+       "stop": "VIA PALERMO, 29",
+       "idx": 26,
        "arr": "16.04",
        "dep": "16.04"
       },
       {
-       "stop": "CHIESA (CAPOLINEA)",
-       "idx": 22,
+       "stop": "VIA C. A. DALLA CHIESA (CAPOLINEA)",
+       "idx": 27,
        "arr": "16.05",
        "dep": "16.05"
       }
@@ -563,62 +692,86 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "CHIESA (CAPOLINEA)",
-       "idx": 22,
+       "stop": "VIA C. A. DALLA CHIESA (CAPOLINEA)",
+       "idx": 27,
        "arr": "16.05",
        "dep": "16.05"
       },
       {
-       "stop": "V.EMANUELE, 274 VIA F.P. PEREZ, 103",
-       "idx": 23,
+       "stop": "C.SO V.EMANUELE, 274",
+       "idx": 28,
        "arr": "16.07",
        "dep": "16.07"
       },
       {
-       "stop": "V.EMANUELE, 414 VIA F.SCO CRISPI > VIA MONS. EVOLA",
-       "idx": 25,
+       "stop": "C.SO V.EMANUELE, 414",
+       "idx": 29,
        "arr": "16.08",
        "dep": "16.08"
       },
       {
-       "stop": "CONSIGLIO, 5 VIA PARTINICO > C.SO V.EMANUELE",
-       "idx": 26,
+       "stop": "VIALE CONSIGLIO, 5",
+       "idx": 30,
        "arr": "16.09",
        "dep": "16.09"
       },
       {
-       "stop": "S.S.186 KM S.S.113 KM",
-       "idx": 27,
+       "stop": "S.S.113 KM",
+       "idx": 31,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "S.S.113 KM",
+       "idx": 32,
+       "arr": "16.12",
+       "dep": "16.12"
+      },
+      {
+       "stop": "S.S.113 KM",
+       "idx": 33,
+       "arr": "16.14",
+       "dep": "16.14"
+      },
+      {
+       "stop": "PARTINICO S.S.186 KM",
+       "idx": 34,
        "arr": "16.21",
        "dep": "16.21"
       },
       {
-       "stop": "(OSPEDALE) C.SO DEI MILLE, 508",
-       "idx": 28,
+       "stop": "S.S.186 KM",
+       "idx": 35,
+       "arr": "16.22",
+       "dep": "16.22"
+      },
+      {
+       "stop": "S.S.186 KM (OSPEDALE)",
+       "idx": 36,
        "arr": "16.23",
        "dep": "16.23"
       },
       {
-       "stop": "> VIA TARANTO C.SO DEI MILLE, 448",
-       "idx": 29,
+       "stop": "VIA BENVENTO > VIA TARANTO",
+       "idx": 37,
        "arr": "16.24",
        "dep": "16.24"
       },
       {
-       "stop": "MORO (STADIO) C.SO DEI MILLE, 252",
-       "idx": 30,
+       "stop": "V.LE ALDO MORO (STADIO)",
+       "idx": 38,
        "arr": "16.26",
        "dep": "16.26"
       },
       {
-       "stop": "12",
-       "idx": 31,
+       "stop": "VIA CALANDRINO, 12",
+       "idx": 39,
        "arr": "16.28",
        "dep": "16.28"
       },
       {
-       "stop": "PIAZZA DUOMO PARTINICO PIAZZA DUOMO",
-       "idx": 32,
+       "stop": "PARTINICO PIAZZA DUOMO",
+       "idx": 40,
        "arr": "16.30",
        "dep": "16.30"
       }
@@ -636,104 +789,181 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "V.E.ORLANDO CORSO UMBERTO I, 199",
-       "idx": 15,
+       "stop": "CINISI PIAZZA V.E.ORLANDO",
+       "idx": 19,
        "arr": "16.45",
        "dep": "16.45"
       },
       {
-       "stop": "UMBERTO I, 115 CORSO UMBERTO I, 115",
-       "idx": 16,
+       "stop": "CORSO UMBERTO I, 115",
+       "idx": 20,
        "arr": "16.46",
        "dep": "16.46"
       },
       {
-       "stop": "UMBERTO I, 199 CINISI P.ZA V.E.ORLANDO (capolinea)",
-       "idx": 17,
+       "stop": "CORSO UMBERTO I, 199",
+       "idx": 21,
        "arr": "16.47",
        "dep": "16.47"
       },
       {
-       "stop": "UMBERTO I, 359 C.SO UMBERTO I, 120",
-       "idx": 18,
+       "stop": "CORSO UMBERTO I, 359",
+       "idx": 22,
        "arr": "16.48",
        "dep": "16.48"
       },
       {
-       "stop": "VIA PALERMO, 129 S.S.113 KM",
-       "idx": 19,
+       "stop": "S.S.113 KM",
+       "idx": 23,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "S.S.113 KM",
+       "idx": 24,
+       "arr": "16.52",
+       "dep": "16.52"
+      },
+      {
+       "stop": "TERRASINI, VIA PALERMO, 129",
+       "idx": 25,
        "arr": "16.53",
        "dep": "16.53"
       },
       {
-       "stop": "PALERMO, 29 VIA PALERMO, 224",
-       "idx": 20,
+       "stop": "VIA PALERMO, 29",
+       "idx": 26,
        "arr": "16.54",
        "dep": "16.54"
       },
       {
-       "stop": "CHIESA (CAPOLINEA)",
-       "idx": 22,
+       "stop": "VIA C. A. DALLA CHIESA (CAPOLINEA)",
+       "idx": 27,
        "arr": "16.55",
        "dep": "16.55"
       },
       {
-       "stop": "V.EMANUELE, 274 VIA F.P. PEREZ, 103",
-       "idx": 23,
+       "stop": "C.SO V.EMANUELE, 274",
+       "idx": 28,
        "arr": "16.57",
        "dep": "16.57"
       },
       {
-       "stop": "V.EMANUELE, 414 VIA F.SCO CRISPI > VIA MONS. EVOLA",
-       "idx": 25,
+       "stop": "C.SO V.EMANUELE, 414",
+       "idx": 29,
        "arr": "16.58",
        "dep": "16.58"
       },
       {
-       "stop": "CONSIGLIO, 5 VIA PARTINICO > C.SO V.EMANUELE",
-       "idx": 26,
+       "stop": "VIALE CONSIGLIO, 5",
+       "idx": 30,
        "arr": "16.59",
        "dep": "16.59"
       },
       {
-       "stop": "S.S.186 KM S.S.113 KM",
-       "idx": 27,
+       "stop": "S.S.113 KM",
+       "idx": 31,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "S.S.113 KM",
+       "idx": 32,
+       "arr": "17.02",
+       "dep": "17.02"
+      },
+      {
+       "stop": "S.S.113 KM",
+       "idx": 33,
+       "arr": "17.04",
+       "dep": "17.04"
+      },
+      {
+       "stop": "PARTINICO S.S.186 KM",
+       "idx": 34,
        "arr": "17.11",
        "dep": "17.11"
       },
       {
-       "stop": "(OSPEDALE) C.SO DEI MILLE, 508",
-       "idx": 28,
+       "stop": "S.S.186 KM",
+       "idx": 35,
+       "arr": "17.12",
+       "dep": "17.12"
+      },
+      {
+       "stop": "S.S.186 KM (OSPEDALE)",
+       "idx": 36,
        "arr": "17.13",
        "dep": "17.13"
       },
       {
-       "stop": "> VIA TARANTO C.SO DEI MILLE, 448",
-       "idx": 29,
+       "stop": "VIA BENVENTO > VIA TARANTO",
+       "idx": 37,
        "arr": "17.14",
        "dep": "17.14"
       },
       {
-       "stop": "MORO (STADIO) C.SO DEI MILLE, 252",
-       "idx": 30,
+       "stop": "V.LE ALDO MORO (STADIO)",
+       "idx": 38,
        "arr": "17.16",
        "dep": "17.16"
       },
       {
-       "stop": "12",
-       "idx": 31,
+       "stop": "VIA CALANDRINO, 12",
+       "idx": 39,
        "arr": "17.18",
        "dep": "17.18"
       },
       {
-       "stop": "PIAZZA DUOMO PARTINICO PIAZZA DUOMO",
-       "idx": 32,
+       "stop": "PARTINICO PIAZZA DUOMO",
+       "idx": 40,
        "arr": "17.20",
        "dep": "17.20"
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CARINI P.ZA DUOMO",
+    "C.SO UMBERTO I, 3",
+    "VIA PALERMO, 5",
+    "C.SO ITALIA, 48",
+    "C.SO ITALIA, 56",
+    "CARINI C.SO ITALIA, 150",
+    "S.P.3, 48",
+    "S.P.3, 64",
+    "S.P.3, 88 (BIVIO FORESTA)",
+    "S.S.113 KM",
+    "VILLAGRAZIA, 225",
+    "VILLAGRAZIA, 95",
+    "PIRAINETO STAZ. METROPOLITANA",
+    "S.S.113 KM",
+    "S.S.113 KM",
+    "S.S.113 KM",
+    "CORSO UMBERTO I, 359",
+    "CORSO UMBERTO I, 199",
+    "CORSO UMBERTO I, 115",
+    "CINISI P.ZA V.E.ORLANDO (capolinea)",
+    "C.SO UMBERTO I, 120",
+    "C.SO UMBERTO I, 318",
+    "CINISI C.SO UMBERTO I, 362",
+    "S.S.113 KM",
+    "VIA PALERMO, 224",
+    "VIA PALERMO, 58",
+    "VIA C. A. DALLA CHIESA (CAPOLINEA)",
+    "VIA F.SCO CRISPI > VIA MONS. EVOLA",
+    "VIA PARTINICO > C.SO V.EMANUELE",
+    "VIA PARTINICO > VIA G.VERDI",
+    "TERRASINI VIA PARTINICO,",
+    "C.SO DEI MILLE, 508",
+    "C.SO DEI MILLE, 448",
+    "C.SO DEI MILLE, 252",
+    "PARTINICO PIAZZA DUOMO"
+   ],
+   "trips": [
     {
      "corsa": "26",
      "service": {
@@ -745,44 +975,56 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "PIAZZA DUOMO PARTINICO PIAZZA DUOMO",
-       "idx": 32,
+       "stop": "PARTINICO PIAZZA DUOMO",
+       "idx": 34,
        "arr": "13.30",
        "dep": "13.30"
       },
       {
-       "stop": "MORO (STADIO) C.SO DEI MILLE, 252",
-       "idx": 30,
+       "stop": "C.SO DEI MILLE, 252",
+       "idx": 33,
        "arr": "13.31",
        "dep": "13.31"
       },
       {
-       "stop": "> VIA TARANTO C.SO DEI MILLE, 448",
-       "idx": 29,
+       "stop": "C.SO DEI MILLE, 448",
+       "idx": 32,
        "arr": "13.33",
        "dep": "13.33"
       },
       {
-       "stop": "(OSPEDALE) C.SO DEI MILLE, 508",
-       "idx": 28,
+       "stop": "C.SO DEI MILLE, 508",
+       "idx": 31,
        "arr": "13.35",
        "dep": "13.35"
       },
       {
-       "stop": "CONSIGLIO, 5 VIA PARTINICO > C.SO V.EMANUELE",
-       "idx": 26,
+       "stop": "TERRASINI VIA PARTINICO,",
+       "idx": 30,
+       "arr": "13.49",
+       "dep": "13.49"
+      },
+      {
+       "stop": "VIA PARTINICO > VIA G.VERDI",
+       "idx": 29,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "VIA PARTINICO > C.SO V.EMANUELE",
+       "idx": 28,
        "arr": "13.51",
        "dep": "13.51"
       },
       {
-       "stop": "V.EMANUELE, 414 VIA F.SCO CRISPI > VIA MONS. EVOLA",
-       "idx": 25,
+       "stop": "VIA F.SCO CRISPI > VIA MONS. EVOLA",
+       "idx": 27,
        "arr": "13.52",
        "dep": "13.52"
       },
       {
        "stop": "VIA C. A. DALLA CHIESA (CAPOLINEA)",
-       "idx": 24,
+       "idx": 26,
        "arr": "13.55",
        "dep": "13.55"
       }
@@ -800,44 +1042,56 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "PIAZZA DUOMO PARTINICO PIAZZA DUOMO",
-       "idx": 32,
+       "stop": "PARTINICO PIAZZA DUOMO",
+       "idx": 34,
        "arr": "14.00",
        "dep": "14.00"
       },
       {
-       "stop": "MORO (STADIO) C.SO DEI MILLE, 252",
-       "idx": 30,
+       "stop": "C.SO DEI MILLE, 252",
+       "idx": 33,
        "arr": "14.01",
        "dep": "14.01"
       },
       {
-       "stop": "> VIA TARANTO C.SO DEI MILLE, 448",
-       "idx": 29,
+       "stop": "C.SO DEI MILLE, 448",
+       "idx": 32,
        "arr": "14.03",
        "dep": "14.03"
       },
       {
-       "stop": "(OSPEDALE) C.SO DEI MILLE, 508",
-       "idx": 28,
+       "stop": "C.SO DEI MILLE, 508",
+       "idx": 31,
        "arr": "14.05",
        "dep": "14.05"
       },
       {
-       "stop": "CONSIGLIO, 5 VIA PARTINICO > C.SO V.EMANUELE",
-       "idx": 26,
+       "stop": "TERRASINI VIA PARTINICO,",
+       "idx": 30,
+       "arr": "14.19",
+       "dep": "14.19"
+      },
+      {
+       "stop": "VIA PARTINICO > VIA G.VERDI",
+       "idx": 29,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "VIA PARTINICO > C.SO V.EMANUELE",
+       "idx": 28,
        "arr": "14.21",
        "dep": "14.21"
       },
       {
-       "stop": "V.EMANUELE, 414 VIA F.SCO CRISPI > VIA MONS. EVOLA",
-       "idx": 25,
+       "stop": "VIA F.SCO CRISPI > VIA MONS. EVOLA",
+       "idx": 27,
        "arr": "14.22",
        "dep": "14.22"
       },
       {
        "stop": "VIA C. A. DALLA CHIESA (CAPOLINEA)",
-       "idx": 24,
+       "idx": 26,
        "arr": "14.25",
        "dep": "14.25"
       }
@@ -855,44 +1109,56 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "PIAZZA DUOMO PARTINICO PIAZZA DUOMO",
-       "idx": 32,
+       "stop": "PARTINICO PIAZZA DUOMO",
+       "idx": 34,
        "arr": "14.20",
        "dep": "14.20"
       },
       {
-       "stop": "MORO (STADIO) C.SO DEI MILLE, 252",
-       "idx": 30,
+       "stop": "C.SO DEI MILLE, 252",
+       "idx": 33,
        "arr": "14.21",
        "dep": "14.21"
       },
       {
-       "stop": "> VIA TARANTO C.SO DEI MILLE, 448",
-       "idx": 29,
+       "stop": "C.SO DEI MILLE, 448",
+       "idx": 32,
        "arr": "14.23",
        "dep": "14.23"
       },
       {
-       "stop": "(OSPEDALE) C.SO DEI MILLE, 508",
-       "idx": 28,
+       "stop": "C.SO DEI MILLE, 508",
+       "idx": 31,
        "arr": "14.25",
        "dep": "14.25"
       },
       {
-       "stop": "CONSIGLIO, 5 VIA PARTINICO > C.SO V.EMANUELE",
-       "idx": 26,
+       "stop": "TERRASINI VIA PARTINICO,",
+       "idx": 30,
+       "arr": "14.39",
+       "dep": "14.39"
+      },
+      {
+       "stop": "VIA PARTINICO > VIA G.VERDI",
+       "idx": 29,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "VIA PARTINICO > C.SO V.EMANUELE",
+       "idx": 28,
        "arr": "14.41",
        "dep": "14.41"
       },
       {
-       "stop": "V.EMANUELE, 414 VIA F.SCO CRISPI > VIA MONS. EVOLA",
-       "idx": 25,
+       "stop": "VIA F.SCO CRISPI > VIA MONS. EVOLA",
+       "idx": 27,
        "arr": "14.42",
        "dep": "14.42"
       },
       {
        "stop": "VIA C. A. DALLA CHIESA (CAPOLINEA)",
-       "idx": 24,
+       "idx": 26,
        "arr": "14.45",
        "dep": "14.45"
       }
@@ -911,126 +1177,162 @@
      "stops": [
       {
        "stop": "VIA C. A. DALLA CHIESA (CAPOLINEA)",
-       "idx": 24,
+       "idx": 26,
        "arr": "14.45",
        "dep": "14.45"
       },
       {
-       "stop": "DUOMO VIA PALERMO, 58",
-       "idx": 21,
+       "stop": "VIA PALERMO, 58",
+       "idx": 25,
        "arr": "14.47",
        "dep": "14.47"
       },
       {
-       "stop": "PALERMO, 29 VIA PALERMO, 224",
-       "idx": 20,
+       "stop": "VIA PALERMO, 224",
+       "idx": 24,
        "arr": "14.48",
        "dep": "14.48"
       },
       {
-       "stop": "VIA PALERMO, 129 S.S.113 KM",
-       "idx": 19,
+       "stop": "S.S.113 KM",
+       "idx": 23,
        "arr": "14.50",
        "dep": "14.50"
       },
       {
-       "stop": "UMBERTO I, 359 C.SO UMBERTO I, 120",
-       "idx": 18,
+       "stop": "CINISI C.SO UMBERTO I, 362",
+       "idx": 22,
+       "arr": "14.52",
+       "dep": "14.52"
+      },
+      {
+       "stop": "C.SO UMBERTO I, 318",
+       "idx": 21,
+       "arr": "14.53",
+       "dep": "14.53"
+      },
+      {
+       "stop": "C.SO UMBERTO I, 120",
+       "idx": 20,
        "arr": "14.54",
        "dep": "14.54"
       },
       {
-       "stop": "UMBERTO I, 199 CINISI P.ZA V.E.ORLANDO (capolinea)",
-       "idx": 17,
+       "stop": "CINISI P.ZA V.E.ORLANDO (capolinea)",
+       "idx": 19,
        "arr": "14.55",
        "dep": "14.55"
       },
       {
-       "stop": "UMBERTO I, 115 CORSO UMBERTO I, 115",
-       "idx": 16,
+       "stop": "CORSO UMBERTO I, 115",
+       "idx": 18,
        "arr": "14.56",
        "dep": "14.56"
       },
       {
-       "stop": "V.E.ORLANDO CORSO UMBERTO I, 199",
-       "idx": 15,
+       "stop": "CORSO UMBERTO I, 199",
+       "idx": 17,
        "arr": "14.57",
        "dep": "14.57"
       },
       {
-       "stop": "UMBERTO I, 120 CORSO UMBERTO I, 359",
-       "idx": 14,
+       "stop": "CORSO UMBERTO I, 359",
+       "idx": 16,
        "arr": "14.58",
        "dep": "14.58"
       },
       {
-       "stop": "UMBERTO I, 318 S.S.113 KM",
-       "idx": 13,
+       "stop": "S.S.113 KM",
+       "idx": 15,
        "arr": "14.59",
        "dep": "14.59"
       },
       {
-       "stop": "UMBERTO I, 362 S.S.113 KM",
-       "idx": 12,
+       "stop": "S.S.113 KM",
+       "idx": 14,
        "arr": "15.02",
        "dep": "15.02"
       },
       {
-       "stop": "STAZ. METROPOLITANA VILLAGRAZIA, 225",
+       "stop": "S.S.113 KM",
+       "idx": 13,
+       "arr": "15.04",
+       "dep": "15.04"
+      },
+      {
+       "stop": "PIRAINETO STAZ. METROPOLITANA",
+       "idx": 12,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "VILLAGRAZIA, 95",
        "idx": 11,
+       "arr": "15.09",
+       "dep": "15.09"
+      },
+      {
+       "stop": "VILLAGRAZIA, 225",
+       "idx": 10,
        "arr": "15.10",
        "dep": "15.10"
       },
       {
-       "stop": "74 S.S.113 KM",
-       "idx": 10,
+       "stop": "S.S.113 KM",
+       "idx": 9,
        "arr": "15.11",
        "dep": "15.11"
       },
       {
-       "stop": "176 S.P.3, 88 (BIVIO FORESTA)",
-       "idx": 9,
+       "stop": "S.P.3, 88 (BIVIO FORESTA)",
+       "idx": 8,
        "arr": "15.12",
        "dep": "15.12"
       },
       {
-       "stop": "(BIVIO FORESTA) S.P.3, 48",
-       "idx": 8,
+       "stop": "S.P.3, 64",
+       "idx": 7,
+       "arr": "15.13",
+       "dep": "15.13"
+      },
+      {
+       "stop": "S.P.3, 48",
+       "idx": 6,
        "arr": "15.14",
        "dep": "15.14"
       },
       {
-       "stop": "S.P.3, 65 CARINI C.SO ITALIA, 150",
-       "idx": 7,
+       "stop": "CARINI C.SO ITALIA, 150",
+       "idx": 5,
        "arr": "15.15",
        "dep": "15.15"
       },
       {
-       "stop": "S.P.3, 41 C.SO ITALIA, 56",
-       "idx": 6,
+       "stop": "C.SO ITALIA, 56",
+       "idx": 4,
        "arr": "15.16",
        "dep": "15.16"
       },
       {
-       "stop": "ITALIA, 177 C.SO ITALIA, 48",
-       "idx": 5,
+       "stop": "C.SO ITALIA, 48",
+       "idx": 3,
        "arr": "15.17",
        "dep": "15.17"
       },
       {
-       "stop": "ITALIA, 95 VIA PALERMO, 5",
-       "idx": 4,
+       "stop": "VIA PALERMO, 5",
+       "idx": 2,
        "arr": "15.18",
        "dep": "15.18"
       },
       {
-       "stop": "ITALIA, 41 C.SO UMBERTO I, 3",
-       "idx": 3,
+       "stop": "C.SO UMBERTO I, 3",
+       "idx": 1,
        "arr": "15.19",
        "dep": "15.19"
       },
       {
-       "stop": "P.ZA DUOMO CARINI P.ZA DUOMO",
+       "stop": "CARINI P.ZA DUOMO",
        "idx": 0,
        "arr": "15.20",
        "dep": "15.20"
@@ -1049,44 +1351,56 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "PIAZZA DUOMO PARTINICO PIAZZA DUOMO",
-       "idx": 32,
+       "stop": "PARTINICO PIAZZA DUOMO",
+       "idx": 34,
        "arr": "14.20",
        "dep": "14.20"
       },
       {
-       "stop": "MORO (STADIO) C.SO DEI MILLE, 252",
-       "idx": 30,
+       "stop": "C.SO DEI MILLE, 252",
+       "idx": 33,
        "arr": "14.21",
        "dep": "14.21"
       },
       {
-       "stop": "> VIA TARANTO C.SO DEI MILLE, 448",
-       "idx": 29,
+       "stop": "C.SO DEI MILLE, 448",
+       "idx": 32,
        "arr": "14.23",
        "dep": "14.23"
       },
       {
-       "stop": "(OSPEDALE) C.SO DEI MILLE, 508",
-       "idx": 28,
+       "stop": "C.SO DEI MILLE, 508",
+       "idx": 31,
        "arr": "14.25",
        "dep": "14.25"
       },
       {
-       "stop": "VIA PALERMO, 129 S.S.113 KM",
-       "idx": 19,
+       "stop": "S.S.113 KM",
+       "idx": 23,
        "arr": "14.50",
        "dep": "14.50"
       },
       {
-       "stop": "UMBERTO I, 359 C.SO UMBERTO I, 120",
-       "idx": 18,
+       "stop": "CINISI C.SO UMBERTO I, 362",
+       "idx": 22,
+       "arr": "14.52",
+       "dep": "14.52"
+      },
+      {
+       "stop": "C.SO UMBERTO I, 318",
+       "idx": 21,
+       "arr": "14.53",
+       "dep": "14.53"
+      },
+      {
+       "stop": "C.SO UMBERTO I, 120",
+       "idx": 20,
        "arr": "14.54",
        "dep": "14.54"
       },
       {
-       "stop": "UMBERTO I, 199 CINISI P.ZA V.E.ORLANDO (capolinea)",
-       "idx": 17,
+       "stop": "CINISI P.ZA V.E.ORLANDO (capolinea)",
+       "idx": 19,
        "arr": "14.55",
        "dep": "14.55"
       }
@@ -1104,44 +1418,56 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "PIAZZA DUOMO PARTINICO PIAZZA DUOMO",
-       "idx": 32,
+       "stop": "PARTINICO PIAZZA DUOMO",
+       "idx": 34,
        "arr": "14.30",
        "dep": "14.30"
       },
       {
-       "stop": "MORO (STADIO) C.SO DEI MILLE, 252",
-       "idx": 30,
+       "stop": "C.SO DEI MILLE, 252",
+       "idx": 33,
        "arr": "14.31",
        "dep": "14.31"
       },
       {
-       "stop": "> VIA TARANTO C.SO DEI MILLE, 448",
-       "idx": 29,
+       "stop": "C.SO DEI MILLE, 448",
+       "idx": 32,
        "arr": "14.33",
        "dep": "14.33"
       },
       {
-       "stop": "(OSPEDALE) C.SO DEI MILLE, 508",
-       "idx": 28,
+       "stop": "C.SO DEI MILLE, 508",
+       "idx": 31,
        "arr": "14.35",
        "dep": "14.35"
       },
       {
-       "stop": "CONSIGLIO, 5 VIA PARTINICO > C.SO V.EMANUELE",
-       "idx": 26,
+       "stop": "TERRASINI VIA PARTINICO,",
+       "idx": 30,
+       "arr": "14.49",
+       "dep": "14.49"
+      },
+      {
+       "stop": "VIA PARTINICO > VIA G.VERDI",
+       "idx": 29,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "VIA PARTINICO > C.SO V.EMANUELE",
+       "idx": 28,
        "arr": "14.51",
        "dep": "14.51"
       },
       {
-       "stop": "V.EMANUELE, 414 VIA F.SCO CRISPI > VIA MONS. EVOLA",
-       "idx": 25,
+       "stop": "VIA F.SCO CRISPI > VIA MONS. EVOLA",
+       "idx": 27,
        "arr": "14.52",
        "dep": "14.52"
       },
       {
        "stop": "VIA C. A. DALLA CHIESA (CAPOLINEA)",
-       "idx": 24,
+       "idx": 26,
        "arr": "14.55",
        "dep": "14.55"
       }
@@ -1150,5 +1476,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

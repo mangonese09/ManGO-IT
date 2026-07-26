@@ -1,0 +1,352 @@
+{
+ "operator": "SAIS Trasporti",
+ "route_id": "saist-9012",
+ "name": "Termini Imerese - Petralia Soprana (SAIS Trasporti 9012)",
+ "short_name": "9012",
+ "source": "saistrasporti.it webapi (OD-matrix, sampled w/c 2026-07-27)",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "TERMINI IMERESE",
+    "POLIZZI GENEROSA",
+    "CASTELLANA SICULA",
+    "PETRALIA SOTTANA",
+    "PETRALIA SOPRANA",
+    "SCILLATO"
+   ],
+   "trips": [
+    {
+     "corsa": "1410",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TERMINI IMERESE",
+       "idx": 0,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "POLIZZI GENEROSA",
+       "idx": 1,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "CASTELLANA SICULA",
+       "idx": 2,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "PETRALIA SOTTANA",
+       "idx": 3,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "PETRALIA SOPRANA",
+       "idx": 4,
+       "arr": "15.50",
+       "dep": "15.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1410",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "TERMINI IMERESE",
+       "idx": 0,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "SCILLATO",
+       "idx": 1,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "CASTELLANA SICULA",
+       "idx": 2,
+       "arr": "15.25",
+       "dep": "15.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0640",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CASTELLANA SICULA",
+       "idx": 0,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "POLIZZI GENEROSA",
+       "idx": 1,
+       "arr": "6.55",
+       "dep": "6.55"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "PETRALIA SOPRANA",
+    "PETRALIA SOTTANA",
+    "CASTELLANA SICULA",
+    "POLIZZI GENEROSA",
+    "TERMINI IMERESE",
+    "SCILLATO"
+   ],
+   "trips": [
+    {
+     "corsa": "0615",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "PETRALIA SOPRANA",
+       "idx": 0,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "PETRALIA SOTTANA",
+       "idx": 1,
+       "arr": "6.25",
+       "dep": "6.25"
+      },
+      {
+       "stop": "CASTELLANA SICULA",
+       "idx": 2,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "POLIZZI GENEROSA",
+       "idx": 3,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "TERMINI IMERESE",
+       "idx": 4,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0640",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CASTELLANA SICULA",
+       "idx": 0,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "TERMINI IMERESE",
+       "idx": 1,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1525",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CASTELLANA SICULA",
+       "idx": 0,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "PETRALIA SOPRANA",
+       "idx": 1,
+       "arr": "15.50",
+       "dep": "15.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1525",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CASTELLANA SICULA",
+       "idx": 0,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "PETRALIA SOTTANA",
+       "idx": 1,
+       "arr": "15.40",
+       "dep": "15.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0725",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "SCILLATO",
+       "idx": 0,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "TERMINI IMERESE",
+       "idx": 1,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

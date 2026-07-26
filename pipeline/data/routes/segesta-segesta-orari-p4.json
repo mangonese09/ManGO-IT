@@ -1,20 +1,20 @@
 {
  "operator": "Segesta",
  "route_id": "segesta-segesta-orari-p4",
- "name": "ALCAMO Autostazione - PALERMO Viale dei Picciotti",
+ "name": "ALCAMO - PALERMO",
  "source": "Segesta__SEGESTA_ORARI/p004.json",
  "prescriptions": [],
  "directions": [
   {
    "stops": [
-    "ALCAMO Autostazione",
+    "ALCAMO",
     "BOSCO",
-    "BORGETTO Via Roma",
-    "PARTINICO Piazza Modica",
-    "BORGETTO Via Roma",
-    "TERRASINI Piazza Duomo",
-    "PALERMO Via Balsamo, 26 (stazione FS)",
-    "PALERMO Viale dei Picciotti"
+    "BORGETTO",
+    "PARTINICO",
+    "BORGETTO",
+    "TERRASINI",
+    "PALERMO",
+    "PALERMO"
    ],
    "trips": [
     {
@@ -28,31 +28,31 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "BORGETTO Via Roma",
+       "stop": "BORGETTO",
        "idx": 2,
        "arr": "6.10",
        "dep": "6.10"
       },
       {
-       "stop": "PARTINICO Piazza Modica",
+       "stop": "PARTINICO",
        "idx": 3,
        "arr": "6.20",
        "dep": "6.20"
       },
       {
-       "stop": "TERRASINI Piazza Duomo",
+       "stop": "TERRASINI",
        "idx": 5,
        "arr": "6.45",
        "dep": "6.45"
       },
       {
-       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "stop": "PALERMO",
        "idx": 6,
        "arr": "7.35",
        "dep": "7.35"
       },
       {
-       "stop": "PALERMO Viale dei Picciotti",
+       "stop": "PALERMO",
        "idx": 7,
        "arr": "7.45",
        "dep": "7.45"
@@ -71,31 +71,31 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "BORGETTO Via Roma",
+       "stop": "BORGETTO",
        "idx": 2,
        "arr": "6.20",
        "dep": "6.20"
       },
       {
-       "stop": "PARTINICO Piazza Modica",
+       "stop": "PARTINICO",
        "idx": 3,
        "arr": "6.30",
        "dep": "6.30"
       },
       {
-       "stop": "TERRASINI Piazza Duomo",
+       "stop": "TERRASINI",
        "idx": 5,
        "arr": "6.45",
        "dep": "6.45"
       },
       {
-       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "stop": "PALERMO",
        "idx": 6,
        "arr": "7.35",
        "dep": "7.35"
       },
       {
-       "stop": "PALERMO Viale dei Picciotti",
+       "stop": "PALERMO",
        "idx": 7,
        "arr": "7.45",
        "dep": "7.45"
@@ -114,31 +114,31 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "BORGETTO Via Roma",
+       "stop": "BORGETTO",
        "idx": 2,
        "arr": "6.30",
        "dep": "6.30"
       },
       {
-       "stop": "PARTINICO Piazza Modica",
+       "stop": "PARTINICO",
        "idx": 3,
        "arr": "6.40",
        "dep": "6.40"
       },
       {
-       "stop": "TERRASINI Piazza Duomo",
+       "stop": "TERRASINI",
        "idx": 5,
        "arr": "6.55",
        "dep": "6.55"
       },
       {
-       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "stop": "PALERMO",
        "idx": 6,
        "arr": "7.45",
        "dep": "7.45"
       },
       {
-       "stop": "PALERMO Viale dei Picciotti",
+       "stop": "PALERMO",
        "idx": 7,
        "arr": "7.55",
        "dep": "7.55"
@@ -157,7 +157,7 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "ALCAMO Autostazione",
+       "stop": "ALCAMO",
        "idx": 0,
        "arr": "13.30",
        "dep": "13.30"
@@ -169,38 +169,51 @@
        "dep": "13.40"
       },
       {
-       "stop": "BORGETTO Via Roma",
+       "stop": "BORGETTO",
        "idx": 2,
        "arr": "14.05",
        "dep": "14.05"
       },
       {
-       "stop": "PARTINICO Piazza Modica",
+       "stop": "PARTINICO",
        "idx": 3,
        "arr": "14.15",
        "dep": "14.15"
       },
       {
-       "stop": "TERRASINI Piazza Duomo",
+       "stop": "TERRASINI",
        "idx": 5,
        "arr": "14.30",
        "dep": "14.30"
       },
       {
-       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
+       "stop": "PALERMO",
        "idx": 6,
        "arr": "15.20",
        "dep": "15.20"
       },
       {
-       "stop": "PALERMO Viale dei Picciotti",
+       "stop": "PALERMO",
        "idx": 7,
        "arr": "15.30",
        "dep": "15.30"
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "Autostazione",
+    "Via Roma",
+    "Piazza Modica",
+    "Via Roma",
+    "Piazza Duomo",
+    "Via Balsamo, 26 (stazione FS)",
+    "Viale dei Picciotti"
+   ],
+   "trips": [
     {
      "corsa": "2",
      "service": {
@@ -212,32 +225,32 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "PALERMO Viale dei Picciotti",
-       "idx": 7,
+       "stop": "Viale dei Picciotti",
+       "idx": 6,
        "arr": "14.20",
        "dep": "14.20"
       },
       {
-       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
-       "idx": 6,
+       "stop": "Via Balsamo, 26 (stazione FS)",
+       "idx": 5,
        "arr": "14.30",
        "dep": "14.30"
       },
       {
-       "stop": "TERRASINI Piazza Duomo",
-       "idx": 5,
+       "stop": "Piazza Duomo",
+       "idx": 4,
        "arr": "15.20",
        "dep": "15.20"
       },
       {
-       "stop": "BORGETTO Via Roma",
-       "idx": 4,
+       "stop": "Via Roma",
+       "idx": 3,
        "arr": "15.40",
        "dep": "15.40"
       },
       {
-       "stop": "PARTINICO Piazza Modica",
-       "idx": 3,
+       "stop": "Piazza Modica",
+       "idx": 2,
        "arr": "15.50",
        "dep": "15.50"
       }
@@ -255,32 +268,32 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "PALERMO Viale dei Picciotti",
-       "idx": 7,
+       "stop": "Viale dei Picciotti",
+       "idx": 6,
        "arr": "16.20",
        "dep": "16.20"
       },
       {
-       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
-       "idx": 6,
+       "stop": "Via Balsamo, 26 (stazione FS)",
+       "idx": 5,
        "arr": "16.30",
        "dep": "16.30"
       },
       {
-       "stop": "TERRASINI Piazza Duomo",
-       "idx": 5,
+       "stop": "Piazza Duomo",
+       "idx": 4,
        "arr": "17.20",
        "dep": "17.20"
       },
       {
-       "stop": "BORGETTO Via Roma",
-       "idx": 4,
+       "stop": "Via Roma",
+       "idx": 3,
        "arr": "17.40",
        "dep": "17.40"
       },
       {
-       "stop": "PARTINICO Piazza Modica",
-       "idx": 3,
+       "stop": "Piazza Modica",
+       "idx": 2,
        "arr": "17.50",
        "dep": "17.50"
       }
@@ -298,32 +311,32 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "PALERMO Viale dei Picciotti",
-       "idx": 7,
+       "stop": "Viale dei Picciotti",
+       "idx": 6,
        "arr": "17.20",
        "dep": "17.20"
       },
       {
-       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
-       "idx": 6,
+       "stop": "Via Balsamo, 26 (stazione FS)",
+       "idx": 5,
        "arr": "17.30",
        "dep": "17.30"
       },
       {
-       "stop": "TERRASINI Piazza Duomo",
-       "idx": 5,
+       "stop": "Piazza Duomo",
+       "idx": 4,
        "arr": "18.20",
        "dep": "18.20"
       },
       {
-       "stop": "BORGETTO Via Roma",
-       "idx": 4,
+       "stop": "Via Roma",
+       "idx": 3,
        "arr": "18.40",
        "dep": "18.40"
       },
       {
-       "stop": "PARTINICO Piazza Modica",
-       "idx": 3,
+       "stop": "Piazza Modica",
+       "idx": 2,
        "arr": "18.50",
        "dep": "18.50"
       }
@@ -341,43 +354,37 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "PALERMO Viale dei Picciotti",
-       "idx": 7,
+       "stop": "Viale dei Picciotti",
+       "idx": 6,
        "arr": "18.20",
        "dep": "18.20"
       },
       {
-       "stop": "PALERMO Via Balsamo, 26 (stazione FS)",
-       "idx": 6,
+       "stop": "Via Balsamo, 26 (stazione FS)",
+       "idx": 5,
        "arr": "18.30",
        "dep": "18.30"
       },
       {
-       "stop": "TERRASINI Piazza Duomo",
-       "idx": 5,
+       "stop": "Piazza Duomo",
+       "idx": 4,
        "arr": "19.20",
        "dep": "19.20"
       },
       {
-       "stop": "BORGETTO Via Roma",
-       "idx": 4,
+       "stop": "Via Roma",
+       "idx": 3,
        "arr": "19.40",
        "dep": "19.40"
       },
       {
-       "stop": "PARTINICO Piazza Modica",
-       "idx": 3,
+       "stop": "Piazza Modica",
+       "idx": 2,
        "arr": "19.50",
        "dep": "19.50"
       },
       {
-       "stop": "BOSCO",
-       "idx": 1,
-       "arr": "20.10",
-       "dep": "20.10"
-      },
-      {
-       "stop": "ALCAMO Autostazione",
+       "stop": "Autostazione",
        "idx": 0,
        "arr": "20.20",
        "dep": "20.20"
@@ -387,5 +394,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

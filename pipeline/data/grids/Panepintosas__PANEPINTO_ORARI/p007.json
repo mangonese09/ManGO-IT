@@ -33,7 +33,70 @@
      "n": "11",
      "x": 253.6,
      "label": "(*)"
+    }
+   ],
+   "stops": [
+    {
+     "name": "KM KM STAZIONAMENTI",
+     "km": [],
+     "times": {}
     },
+    {
+     "name": "S.GIOV.GEMINI",
+     "km": [
+      "0,0",
+      "7,90"
+     ],
+     "times": {
+      "1": "6.50",
+      "3": "11.10",
+      "5": "16.50",
+      "7": "8.15"
+     }
+    },
+    {
+     "name": "CAMMARATA",
+     "km": [
+      "6,90"
+     ],
+     "times": {
+      "1": "6.55",
+      "3": "11.15",
+      "5": "16.55",
+      "7": "8.20"
+     }
+    },
+    {
+     "name": "STAZ.F.S.",
+     "km": [
+      "7,90",
+      "0,0"
+     ],
+     "times": {
+      "1": "7.10",
+      "3": "11.30",
+      "5": "17.10",
+      "7": "8.35"
+     }
+    },
+    {
+     "name": "CAMMARATA",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "LA COINCIDENZA ALLA STAZIONE FERROVIARIA",
+     "km": [],
+     "times": {}
+    }
+   ],
+   "prescriptions": [
+    "Prescrizioni d'Esercizio E' FATTO OBBLIGO EFFETTUARE LA COINCIDENZA ALLA STAZIONE FERROVIARIA DI CAMMARATA PER CAMMARATA E S.GIOVANNI GEMINI"
+   ],
+   "spacing": 28.8
+  },
+  {
+   "corse": [
     {
      "n": "2",
      "x": 628.7,
@@ -67,21 +130,17 @@
    ],
    "stops": [
     {
-     "name": "STAZIONAMENTI KM",
+     "name": "KM KM",
      "km": [],
      "times": {}
     },
     {
-     "name": "S.GIOV.GEMINI S.GIOV.GEMINI",
+     "name": "S.GIOV.GEMINI",
      "km": [
       "0,0",
       "7,90"
      ],
      "times": {
-      "1": "6.50",
-      "3": "11.10",
-      "5": "16.50",
-      "7": "8.15",
       "2": "8.05",
       "4": "12.25",
       "6": "18.10",
@@ -89,15 +148,11 @@
      }
     },
     {
-     "name": "CAMMARATA CAMMARATA",
+     "name": "CAMMARATA",
      "km": [
       "6,90"
      ],
      "times": {
-      "1": "6.55",
-      "3": "11.15",
-      "5": "16.55",
-      "7": "8.20",
       "2": "8.00",
       "4": "12.20",
       "6": "18.05",
@@ -105,16 +160,12 @@
      }
     },
     {
-     "name": "STAZ.F.S. STAZ.F.S.",
+     "name": "STAZ.F.S.",
      "km": [
       "7,90",
       "0,0"
      ],
      "times": {
-      "1": "7.10",
-      "3": "11.30",
-      "5": "17.10",
-      "7": "8.35",
       "2": "7.45",
       "4": "12.05",
       "6": "17.50",
@@ -122,12 +173,12 @@
      }
     },
     {
-     "name": "CAMMARATA CAMMARATA",
+     "name": "CAMMARATA",
      "km": [],
      "times": {}
     },
     {
-     "name": "ALLA STAZIONE FERROVIARIA DI CAMMARATA PER CAMMARATA",
+     "name": "DI CAMMARATA PER CAMMARATA E S.GIOVANNI GEMINI",
      "km": [],
      "times": {}
     }

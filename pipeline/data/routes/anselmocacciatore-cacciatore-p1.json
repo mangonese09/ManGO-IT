@@ -4,6 +4,7 @@
  "name": "RAFFADALI - ERACLEA MINOA",
  "source": "ANSELMOCACCIATORE__CACCIATORE_ORARI/p001.json",
  "prescriptions": [
+  "Prescrizioni d'Esercizio N.1 C.C. STAGIONALE GIORNALIERA LINEA: RAFFADALI - CATTOLICA ERACLEA - ERACLEA MINOA Periodo di Esercizio dal 05/06 al 31/08.",
   "Prescrizioni d'Esercizio N.1 C.C. STAGIONALE GIORNALIERA LINEA: RAFFADALI - CATTOLICA ERACLEA - ERACLEA MINOA Periodo di Esercizio dal 05/06 al 31/08."
  ],
  "directions": [
@@ -44,7 +45,16 @@
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "RAFFADALI (Via Nazionale) orario",
+    "CATTOLICA ERACLEA (Via Oreto) orario",
+    "ERACLEA MINOA orario"
+   ],
+   "trips": [
     {
      "corsa": "6",
      "service": {
@@ -56,19 +66,19 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "ERACLEA MINOA",
+       "stop": "ERACLEA MINOA orario",
        "idx": 2,
        "arr": "19.00",
        "dep": "19.00"
       },
       {
-       "stop": "CATTOLICA ERACLEA (Via Oreto)",
+       "stop": "CATTOLICA ERACLEA (Via Oreto) orario",
        "idx": 1,
        "arr": "19.30",
        "dep": "19.30"
       },
       {
-       "stop": "RAFFADALI (Via Nazionale)",
+       "stop": "RAFFADALI (Via Nazionale) orario",
        "idx": 0,
        "arr": "20.10",
        "dep": "20.10"
@@ -78,5 +88,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

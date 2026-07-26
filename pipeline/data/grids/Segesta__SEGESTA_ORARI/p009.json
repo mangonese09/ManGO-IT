@@ -38,7 +38,88 @@
      "n": "13",
      "x": 281.1,
      "label": ""
+    }
+   ],
+   "stops": [
+    {
+     "name": "KM",
+     "km": [],
+     "times": {}
     },
+    {
+     "name": "ALCAMO",
+     "km": [
+      "0,0",
+      "26,3"
+     ],
+     "times": {
+      "1": "14.30"
+     }
+    },
+    {
+     "name": "SS. 187",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "C.da Palma",
+     "km": [
+      "6,0",
+      "20,3"
+     ],
+     "times": {}
+    },
+    {
+     "name": "A/29 SP. 55",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "ALCAMO MARINA",
+     "km": [
+      "9,7",
+      "16,6"
+     ],
+     "times": {}
+    },
+    {
+     "name": "SS. 187",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "BALESTRATE",
+     "km": [
+      "17,3",
+      "9,0"
+     ],
+     "times": {
+      "1": "14.55"
+     }
+    },
+    {
+     "name": "SS. 187",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "TRAPPETO",
+     "km": [
+      "26,3",
+      "0,0"
+     ],
+     "times": {
+      "1": "15.10"
+     }
+    }
+   ],
+   "prescriptions": [
+    "Prescrizioni d'Esercizio divieto di servizio locale da Balestrate a Trappeto e viceversa"
+   ],
+   "spacing": 39.3
+  },
+  {
+   "corse": [
     {
      "n": "2",
      "x": 556.1,
@@ -87,23 +168,17 @@
      "times": {}
     },
     {
-     "name": "ALCAMO Autostazione",
+     "name": "Autostazione",
      "km": [
       "0,0",
       "26,3"
      ],
      "times": {
-      "1": "14.30",
       "2": "7.50"
      }
     },
     {
-     "name": "SS. 187",
-     "km": [],
-     "times": {}
-    },
-    {
-     "name": "C.da Palma Ristorante La Lanterna",
+     "name": "Ristorante La Lanterna",
      "km": [
       "6,0",
       "20,3"
@@ -111,12 +186,7 @@
      "times": {}
     },
     {
-     "name": "A/29 SP. 55",
-     "km": [],
-     "times": {}
-    },
-    {
-     "name": "ALCAMO MARINA Bivio contrada Canalotto",
+     "name": "Bivio contrada Canalotto",
      "km": [
       "9,7",
       "16,6"
@@ -124,34 +194,22 @@
      "times": {}
     },
     {
-     "name": "SS. 187",
-     "km": [],
-     "times": {}
-    },
-    {
-     "name": "BALESTRATE Piazza Rettore Evola",
+     "name": "Piazza Rettore Evola",
      "km": [
       "17,3",
       "9,0"
      ],
      "times": {
-      "1": "14.55",
       "2": "7.25"
      }
     },
     {
-     "name": "SS. 187",
-     "km": [],
-     "times": {}
-    },
-    {
-     "name": "TRAPPETO Piazzetta Santa Rosalia",
+     "name": "Piazzetta Santa Rosalia",
      "km": [
       "26,3",
       "0,0"
      ],
      "times": {
-      "1": "15.10",
       "2": "7.10",
       "4": "-",
       "6": "-",

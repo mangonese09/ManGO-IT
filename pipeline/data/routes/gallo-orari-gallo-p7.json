@@ -4,6 +4,7 @@
  "name": "MENFI-CASTELVETRANO",
  "source": "Gallo__ORARI_GALLO/p007.json",
  "prescriptions": [
+  "Prescrizioni d'Esercizio - Rientro da Castelvetrano via SS119 - Sv. S. Ninfa - A/29 - Sv. Castelvetrano - SS115 - Menfi - N.O. prot. n.833/U.O.C./Servizio1 del 05/11/2004",
   "Prescrizioni d'Esercizio - Rientro da Castelvetrano via SS119 - Sv. S. Ninfa - A/29 - Sv. Castelvetrano - SS115 - Menfi - N.O. prot. n.833/U.O.C./Servizio1 del 05/11/2004"
  ],
  "directions": [
@@ -62,7 +63,15 @@
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "scolastico",
+    "SS115 Menfi N.O. prot. n.833/U.O.C./Servizio1"
+   ],
+   "trips": [
     {
      "corsa": "2",
      "service": {
@@ -74,13 +83,13 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "CASTELVETRANO",
+       "stop": "SS115 Menfi N.O. prot. n.833/U.O.C./Servizio1",
        "idx": 1,
        "arr": "13.00",
        "dep": "13.00"
       },
       {
-       "stop": "MENFI (VIALE MICHELANGELO)",
+       "stop": "scolastico",
        "idx": 0,
        "arr": "14.00",
        "dep": "14.00"
@@ -99,13 +108,13 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "CASTELVETRANO",
+       "stop": "SS115 Menfi N.O. prot. n.833/U.O.C./Servizio1",
        "idx": 1,
        "arr": "13.50",
        "dep": "13.50"
       },
       {
-       "stop": "MENFI (VIALE MICHELANGELO)",
+       "stop": "scolastico",
        "idx": 0,
        "arr": "14.50",
        "dep": "14.50"
@@ -115,5 +124,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

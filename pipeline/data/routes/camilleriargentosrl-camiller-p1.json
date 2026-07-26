@@ -4,6 +4,7 @@
  "name": "CAMMARATA - AGRIGENTO",
  "source": "CAMILLERIARGENTOSRL__CAMILLERI_ORARI/p001.json",
  "prescriptions": [
+  "Prescrizioni d'Esercizio 1 C.C. SCOLASTICA .INTERO PERCORSO CAMMARATA AGRIGENTO",
   "Prescrizioni d'Esercizio 1 C.C. SCOLASTICA .INTERO PERCORSO CAMMARATA AGRIGENTO"
  ],
  "directions": [
@@ -72,7 +73,20 @@
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "Capolinea di Arrivo orario",
+    "Fermata intermedia orario",
+    "Fermata intermedia orario",
+    "Fermata intermedia orario",
+    "Fermata intermedia orario",
+    "Fermata intermedia orario",
+    "Capolinea di Partenza orario"
+   ],
+   "trips": [
     {
      "corsa": "4",
      "service": {
@@ -84,43 +98,43 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "AGRIGENTO",
+       "stop": "Capolinea di Partenza orario",
        "idx": 6,
        "arr": "12.35",
        "dep": "12.35"
       },
       {
-       "stop": "RAFFADALI",
+       "stop": "Fermata intermedia orario",
        "idx": 5,
        "arr": "13.05",
        "dep": "13.05"
       },
       {
-       "stop": "CIANCIANA",
+       "stop": "Fermata intermedia orario",
        "idx": 4,
        "arr": "13.45",
        "dep": "13.45"
       },
       {
-       "stop": "ALESSANDRIA DELLA ROCCA",
+       "stop": "Fermata intermedia orario",
        "idx": 3,
        "arr": "13.55",
        "dep": "13.55"
       },
       {
-       "stop": "BIVONA",
+       "stop": "Fermata intermedia orario",
        "idx": 2,
        "arr": "14.05",
        "dep": "14.05"
       },
       {
-       "stop": "S.STEFANO QUISQUINA",
+       "stop": "Fermata intermedia orario",
        "idx": 1,
        "arr": "14.15",
        "dep": "14.15"
       },
       {
-       "stop": "CAMMARATA",
+       "stop": "Capolinea di Arrivo orario",
        "idx": 0,
        "arr": "14.55",
        "dep": "14.55"
@@ -130,5 +144,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

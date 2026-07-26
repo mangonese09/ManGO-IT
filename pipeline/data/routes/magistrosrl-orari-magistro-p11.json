@@ -1,9 +1,11 @@
 {
  "operator": "Magistro",
  "route_id": "magistrosrl-orari-magistro-p11",
- "name": "MADDALENA - Oceri Zappardino estremi inclusi. Divieto di servizio locale",
+ "name": "MADDALENA - PATTI",
  "source": "MAGISTROSRL__ORARI_MAGISTRO/p011.json",
  "prescriptions": [
+  "Prescrizioni d'Esercizio",
+  "Divieto di servizio locale lungo il trato comunale Acquarancio - SiGnazio - Oceri - Zappardino estremi inclusi. Divieto di servizio locale sul tratto Gioiosa marea - Patti, estremi esclusi.",
   "Prescrizioni d'Esercizio",
   "Divieto di servizio locale lungo il trato comunale Acquarancio - SiGnazio - Oceri - Zappardino estremi inclusi. Divieto di servizio locale sul tratto Gioiosa marea - Patti, estremi esclusi."
  ],
@@ -16,9 +18,8 @@
     "S. LUCIA",
     "CAFERI'",
     "CATELLO",
-    "MAREA(P.zza Roma) GIOIOSA MAREA(P.zza Roma)",
-    "Marconi, terminal) PATTI(P.zza Marconi, terminal)",
-    "Oceri Zappardino estremi inclusi. Divieto di servizio locale"
+    "GIOIOSA MAREA(P.zza Roma)",
+    "PATTI(P.zza Marconi, terminal)"
    ],
    "trips": [
     {
@@ -68,13 +69,13 @@
        "dep": "7.34"
       },
       {
-       "stop": "MAREA(P.zza Roma) GIOIOSA MAREA(P.zza Roma)",
+       "stop": "GIOIOSA MAREA(P.zza Roma)",
        "idx": 6,
        "arr": "7.35",
        "dep": "7.35"
       },
       {
-       "stop": "Marconi, terminal) PATTI(P.zza Marconi, terminal)",
+       "stop": "PATTI(P.zza Marconi, terminal)",
        "idx": 7,
        "arr": "7.55",
        "dep": "7.55"
@@ -129,20 +130,35 @@
        "dep": "7.34"
       },
       {
-       "stop": "MAREA(P.zza Roma) GIOIOSA MAREA(P.zza Roma)",
+       "stop": "GIOIOSA MAREA(P.zza Roma)",
        "idx": 6,
        "arr": "7.35",
        "dep": "7.35"
       },
       {
-       "stop": "Marconi, terminal) PATTI(P.zza Marconi, terminal)",
+       "stop": "PATTI(P.zza Marconi, terminal)",
        "idx": 7,
        "arr": "7.55",
        "dep": "7.55"
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "MADDALENA",
+    "S.FRANCESCO",
+    "S. NICOLO'",
+    "S. LUCIA",
+    "CAFERI'",
+    "CATELLO",
+    "GIOIOSA MAREA(P.zza Roma)",
+    "PATTI(P.zza Marconi, terminal)",
+    "estremi inclusi. Divieto di servizio locale sul tratto Gioiosa marea"
+   ],
+   "trips": [
     {
      "corsa": "2",
      "service": {
@@ -154,13 +170,13 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "Marconi, terminal) PATTI(P.zza Marconi, terminal)",
+       "stop": "PATTI(P.zza Marconi, terminal)",
        "idx": 7,
        "arr": "13.30",
        "dep": "13.30"
       },
       {
-       "stop": "MAREA(P.zza Roma) GIOIOSA MAREA(P.zza Roma)",
+       "stop": "GIOIOSA MAREA(P.zza Roma)",
        "idx": 6,
        "arr": "13.50",
        "dep": "13.50"
@@ -215,13 +231,13 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "Marconi, terminal) PATTI(P.zza Marconi, terminal)",
+       "stop": "PATTI(P.zza Marconi, terminal)",
        "idx": 7,
        "arr": "13.30",
        "dep": "13.30"
       },
       {
-       "stop": "MAREA(P.zza Roma) GIOIOSA MAREA(P.zza Roma)",
+       "stop": "GIOIOSA MAREA(P.zza Roma)",
        "idx": 6,
        "arr": "13.50",
        "dep": "13.50"
@@ -267,5 +283,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

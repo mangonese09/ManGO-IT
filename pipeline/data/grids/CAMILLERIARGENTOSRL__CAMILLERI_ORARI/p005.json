@@ -33,7 +33,78 @@
      "n": "11",
      "x": 253.7,
      "label": "(*)"
+    }
+   ],
+   "stops": [
+    {
+     "name": "KM KM STAZIONAMENTI",
+     "km": [],
+     "times": {}
     },
+    {
+     "name": "S.STEFANO QUISQUINA",
+     "km": [
+      "0,00",
+      "27,00"
+     ],
+     "times": {
+      "3": "7.25"
+     },
+     "kind": "Capolinea di Partenza"
+    },
+    {
+     "name": "BIVONA",
+     "km": [
+      "7,20",
+      "19,30"
+     ],
+     "times": {
+      "3": "7.35"
+     },
+     "kind": "Fermata intermedia"
+    },
+    {
+     "name": "ALESSANDRIA DELLA ROCCA",
+     "km": [
+      "17,00",
+      "9,30"
+     ],
+     "times": {
+      "3": "7.45"
+     },
+     "kind": "Fermata intermedia"
+    },
+    {
+     "name": "CIANCIANA",
+     "km": [
+      "27,00",
+      "0,00"
+     ],
+     "times": {
+      "3": "7.55"
+     },
+     "kind": "Capolinea di Arrivo"
+    },
+    {
+     "name": "CIANCIANA",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "IL SABATO, SOLO LA DOMENICA, ETC….",
+     "km": [],
+     "times": {
+      "7": "-"
+     }
+    }
+   ],
+   "prescriptions": [
+    "Prescrizioni d'Esercizio 1 C.C. SCOL S.STEFANO QUISQUINA - CIANCIANA"
+   ],
+   "spacing": 25.1
+  },
+  {
+   "corse": [
     {
      "n": "2",
      "x": 605.4,
@@ -67,64 +138,69 @@
    ],
    "stops": [
     {
-     "name": "STAZIONAMENTI KM",
+     "name": "KM KM",
      "km": [],
      "times": {}
     },
     {
-     "name": "S.STEFANO QUISQUINA S.STEFANO QUISQUINA",
+     "name": "Capolinea di Arrivo orario",
      "km": [
       "0,00",
       "27,00"
      ],
      "times": {
-      "3": "7.25",
       "4": "14.45"
-     },
-     "kind": "Capolinea di Partenza Capolinea di Arrivo"
+     }
     },
     {
-     "name": "BIVONA BIVONA",
+     "name": "S.STEFANO QUISQUINA",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Fermata intermedia orario",
      "km": [
       "7,20",
       "19,30"
      ],
      "times": {
-      "3": "7.35",
       "4": "14.35"
-     },
-     "kind": "Fermata intermedia Fermata intermedia"
+     }
     },
     {
-     "name": "ALESSANDRIA DELLA ROCCA ALESSANDRIA DELLA ROCCA",
+     "name": "BIVONA",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Fermata intermedia orario",
      "km": [
       "17,00",
       "9,30"
      ],
      "times": {
-      "3": "7.45",
       "4": "14.25"
-     },
-     "kind": "Fermata intermedia Fermata intermedia"
+     }
     },
     {
-     "name": "CIANCIANA CIANCIANA",
+     "name": "ALESSANDRIA DELLA ROCCA",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Capolinea di Partenza orario",
      "km": [
       "27,00",
       "0,00"
      ],
      "times": {
-      "3": "7.55",
       "4": "14.15"
-     },
-     "kind": "Capolinea di Arrivo Capolinea di Partenza"
+     }
     },
     {
-     "name": "ETC….",
+     "name": "CIANCIANA",
      "km": [],
-     "times": {
-      "7": "-"
-     }
+     "times": {}
     }
    ],
    "prescriptions": [

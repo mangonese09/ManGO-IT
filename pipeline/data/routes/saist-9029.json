@@ -1,0 +1,2768 @@
+{
+ "operator": "SAIS Trasporti",
+ "route_id": "saist-9029",
+ "name": "Caltanissetta - Licata (SAIS Trasporti 9029)",
+ "short_name": "9029",
+ "source": "saistrasporti.it webapi (OD-matrix, sampled w/c 2026-07-27)",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "CANICATTÌ",
+    "CAMPOBELLO DI LICATA",
+    "LICATA",
+    "RAVANUSA",
+    "CALTANISSETTA",
+    "SAN CATALDO",
+    "SERRADIFALCO",
+    "GUASTAFERRO"
+   ],
+   "trips": [
+    {
+     "corsa": "0630",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CANICATTÌ",
+       "idx": 0,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 1,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "LICATA",
+       "idx": 2,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0630",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CANICATTÌ",
+       "idx": 0,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 1,
+       "arr": "6.55",
+       "dep": "6.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0630",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CANICATTÌ",
+       "idx": 0,
+       "arr": "6.30",
+       "dep": "6.30"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 1,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 2,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "LICATA",
+       "idx": 3,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0640",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CANICATTÌ",
+       "idx": 0,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "LICATA",
+       "idx": 1,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0640",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CANICATTÌ",
+       "idx": 0,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 1,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 2,
+       "arr": "7.15",
+       "dep": "7.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0640",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CANICATTÌ",
+       "idx": 0,
+       "arr": "6.40",
+       "dep": "6.40"
+      },
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 1,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 2,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "LICATA",
+       "idx": 3,
+       "arr": "7.45",
+       "dep": "7.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0740",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CANICATTÌ",
+       "idx": 0,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 1,
+       "arr": "8.15",
+       "dep": "8.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0740",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CANICATTÌ",
+       "idx": 0,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 1,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0740",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CANICATTÌ",
+       "idx": 0,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 1,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 2,
+       "arr": "8.15",
+       "dep": "8.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0755",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CANICATTÌ",
+       "idx": 0,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "LICATA",
+       "idx": 1,
+       "arr": "9.00",
+       "dep": "9.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0805",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CANICATTÌ",
+       "idx": 0,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 1,
+       "arr": "8.40",
+       "dep": "8.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0805",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CANICATTÌ",
+       "idx": 0,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 1,
+       "arr": "8.30",
+       "dep": "8.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0805",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CANICATTÌ",
+       "idx": 0,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 1,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 2,
+       "arr": "8.40",
+       "dep": "8.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0855",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CANICATTÌ",
+       "idx": 0,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 1,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 2,
+       "arr": "9.30",
+       "dep": "9.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1245",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CANICATTÌ",
+       "idx": 0,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 1,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 2,
+       "arr": "13.15",
+       "dep": "13.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1405",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CANICATTÌ",
+       "idx": 0,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 1,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1405",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CANICATTÌ",
+       "idx": 0,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "SAN CATALDO",
+       "idx": 1,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1440",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CANICATTÌ",
+       "idx": 0,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 1,
+       "arr": "15.00",
+       "dep": "15.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1445",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CANICATTÌ",
+       "idx": 0,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 1,
+       "arr": "15.10",
+       "dep": "15.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1450",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CANICATTÌ",
+       "idx": 0,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "LICATA",
+       "idx": 1,
+       "arr": "16.05",
+       "dep": "16.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1450",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CANICATTÌ",
+       "idx": 0,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 1,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 2,
+       "arr": "15.25",
+       "dep": "15.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1450",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CANICATTÌ",
+       "idx": 0,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 1,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 2,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "LICATA",
+       "idx": 3,
+       "arr": "16.05",
+       "dep": "16.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1520",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CANICATTÌ",
+       "idx": 0,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 1,
+       "arr": "15.45",
+       "dep": "15.45"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 2,
+       "arr": "15.55",
+       "dep": "15.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1600",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CANICATTÌ",
+       "idx": 0,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 1,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 2,
+       "arr": "16.30",
+       "dep": "16.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0645",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 0,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 1,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 2,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 3,
+       "arr": "8.30",
+       "dep": "8.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0645",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 0,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "LICATA",
+       "idx": 1,
+       "arr": "9.00",
+       "dep": "9.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0645",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 0,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "SAN CATALDO",
+       "idx": 1,
+       "arr": "7.05",
+       "dep": "7.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0645",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 0,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "SAN CATALDO",
+       "idx": 1,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "SERRADIFALCO",
+       "idx": 2,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 3,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 4,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 5,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "LICATA",
+       "idx": 6,
+       "arr": "9.00",
+       "dep": "9.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0645",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 0,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "SERRADIFALCO",
+       "idx": 1,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0750",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 0,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "SAN CATALDO",
+       "idx": 1,
+       "arr": "8.10",
+       "dep": "8.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0750",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 0,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "SAN CATALDO",
+       "idx": 1,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "GUASTAFERRO",
+       "idx": 2,
+       "arr": "8.25",
+       "dep": "8.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1045",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 0,
+       "arr": "10.45",
+       "dep": "10.45"
+      },
+      {
+       "stop": "SAN CATALDO",
+       "idx": 1,
+       "arr": "11.05",
+       "dep": "11.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1400",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 1,
+       "arr": "14.45",
+       "dep": "14.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0710",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 0,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 1,
+       "arr": "7.20",
+       "dep": "7.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0815",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 0,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 1,
+       "arr": "8.25",
+       "dep": "8.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1205",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 0,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 1,
+       "arr": "12.15",
+       "dep": "12.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1210",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 0,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 1,
+       "arr": "12.20",
+       "dep": "12.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1340",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 0,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 1,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "SERRADIFALCO",
+       "idx": 2,
+       "arr": "14.30",
+       "dep": "14.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1340",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 0,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "SAN CATALDO",
+       "idx": 1,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1350",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 0,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 1,
+       "arr": "14.00",
+       "dep": "14.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1355",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 0,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 1,
+       "arr": "14.05",
+       "dep": "14.05"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "LICATA",
+    "RAVANUSA",
+    "CAMPOBELLO DI LICATA",
+    "CANICATTÌ",
+    "GUASTAFERRO",
+    "CALTANISSETTA",
+    "SERRADIFALCO",
+    "SAN CATALDO"
+   ],
+   "trips": [
+    {
+     "corsa": "0610",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "LICATA",
+       "idx": 0,
+       "arr": "6.10",
+       "dep": "6.10"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 1,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 2,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 3,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "GUASTAFERRO",
+       "idx": 4,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 5,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0745",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "LICATA",
+       "idx": 0,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 1,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 2,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 3,
+       "arr": "8.50",
+       "dep": "8.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1430",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "LICATA",
+       "idx": 0,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 1,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 2,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 3,
+       "arr": "15.40",
+       "dep": "15.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0700",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 1,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "GUASTAFERRO",
+       "idx": 2,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 3,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0815",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 0,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 1,
+       "arr": "8.50",
+       "dep": "8.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0815",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 0,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 1,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 2,
+       "arr": "8.50",
+       "dep": "8.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0820",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 0,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "LICATA",
+       "idx": 1,
+       "arr": "9.00",
+       "dep": "9.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0830",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 0,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 1,
+       "arr": "8.50",
+       "dep": "8.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0845",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 0,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 1,
+       "arr": "9.10",
+       "dep": "9.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0940",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 0,
+       "arr": "9.40",
+       "dep": "9.40"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 1,
+       "arr": "10.05",
+       "dep": "10.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1245",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 0,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 1,
+       "arr": "13.10",
+       "dep": "13.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1340",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 0,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 1,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "SERRADIFALCO",
+       "idx": 2,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "SAN CATALDO",
+       "idx": 3,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 4,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1340",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 0,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 1,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1350",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 0,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "LICATA",
+       "idx": 1,
+       "arr": "14.30",
+       "dep": "14.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1350",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 0,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 1,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "LICATA",
+       "idx": 2,
+       "arr": "14.30",
+       "dep": "14.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1415",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 1,
+       "arr": "14.40",
+       "dep": "14.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1420",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 0,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 1,
+       "arr": "14.40",
+       "dep": "14.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1515",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 0,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "LICATA",
+       "idx": 1,
+       "arr": "16.05",
+       "dep": "16.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1520",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 0,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 1,
+       "arr": "15.40",
+       "dep": "15.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0655",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "RAVANUSA",
+       "idx": 0,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "GUASTAFERRO",
+       "idx": 1,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 2,
+       "arr": "7.40",
+       "dep": "7.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0720",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "RAVANUSA",
+       "idx": 0,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 1,
+       "arr": "7.40",
+       "dep": "7.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0730",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "RAVANUSA",
+       "idx": 0,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 1,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0930",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "RAVANUSA",
+       "idx": 0,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 1,
+       "arr": "9.40",
+       "dep": "9.40"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 2,
+       "arr": "10.05",
+       "dep": "10.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1235",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "RAVANUSA",
+       "idx": 0,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 1,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 2,
+       "arr": "13.10",
+       "dep": "13.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1410",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "RAVANUSA",
+       "idx": 0,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 1,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "CANICATTÌ",
+       "idx": 2,
+       "arr": "14.40",
+       "dep": "14.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0810",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "SAN CATALDO",
+       "idx": 0,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 1,
+       "arr": "8.30",
+       "dep": "8.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1115",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "SAN CATALDO",
+       "idx": 0,
+       "arr": "11.15",
+       "dep": "11.15"
+      },
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 1,
+       "arr": "11.35",
+       "dep": "11.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1405",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "GUASTAFERRO",
+       "idx": 0,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 1,
+       "arr": "14.45",
+       "dep": "14.45"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

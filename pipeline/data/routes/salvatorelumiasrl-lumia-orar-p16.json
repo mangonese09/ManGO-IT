@@ -4,6 +4,7 @@
  "name": "S.ANNA - PALERMO",
  "source": "SALVATORELUMIASRL__LUMIA_ORARI(1)/p016.json",
  "prescriptions": [
+  "Prescrizioni d'Esercizio carico passeggeri consentito solo da Caltabellotta e S.Anna per Palermo e viceversa",
   "Prescrizioni d'Esercizio carico passeggeri consentito solo da Caltabellotta e S.Anna per Palermo e viceversa"
  ],
  "directions": [
@@ -51,7 +52,17 @@
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "S.ANNA",
+    "CALTABELLOTTA",
+    "PALERMO",
+    "PALERMO"
+   ],
+   "trips": [
     {
      "corsa": "2",
      "service": {
@@ -91,5 +102,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

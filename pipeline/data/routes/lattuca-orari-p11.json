@@ -1,21 +1,22 @@
 {
  "operator": "Lattuca",
  "route_id": "lattuca-orari-p11",
- "name": "Unknown route",
+ "name": "S.ELISABETTA - AGRIGENTO P. ROSSELLI",
  "source": "LATTUCA_ORARI/p011.json",
  "prescriptions": [
+  "Prescrizioni d'Esercizio",
   "Prescrizioni d'Esercizio"
  ],
  "directions": [
   {
    "stops": [
-    "(P.Municipio) S.LISABETTA (P.Municipio)",
-    "(Via Roma) ARAGONA (Via Roma)",
-    "ARAGONA STAZ.CALDARE ARAGONA",
-    "S.MICHELE BORGATA S.MICHELE",
-    "QUAD.SPINASANTA AGRIGENTO QUAD.SPINASANTA",
+    "S.ELISABETTA (P.Municipio)",
+    "ARAGONA (Via Roma)",
+    "STAZ.CALDARE ARAGONA",
+    "BORGATA S.MICHELE",
+    "AGRIGENTO QUAD.SPINASANTA",
     "AGRIGENTO C.DA CALCARELLE",
-    "P. ROSSELLI AGRIGENTO P.ROSSELLI"
+    "AGRIGENTO P. ROSSELLI"
    ],
    "trips": [
     {
@@ -29,31 +30,31 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "(P.Municipio) S.LISABETTA (P.Municipio)",
+       "stop": "S.ELISABETTA (P.Municipio)",
        "idx": 0,
        "arr": "13.50",
        "dep": "13.50"
       },
       {
-       "stop": "(Via Roma) ARAGONA (Via Roma)",
+       "stop": "ARAGONA (Via Roma)",
        "idx": 1,
        "arr": "14.10",
        "dep": "14.10"
       },
       {
-       "stop": "ARAGONA STAZ.CALDARE ARAGONA",
+       "stop": "STAZ.CALDARE ARAGONA",
        "idx": 2,
        "arr": "14.20",
        "dep": "14.20"
       },
       {
-       "stop": "S.MICHELE BORGATA S.MICHELE",
+       "stop": "BORGATA S.MICHELE",
        "idx": 3,
        "arr": "14.30",
        "dep": "14.30"
       },
       {
-       "stop": "P. ROSSELLI AGRIGENTO P.ROSSELLI",
+       "stop": "AGRIGENTO P. ROSSELLI",
        "idx": 6,
        "arr": "14.40",
        "dep": "14.40"
@@ -72,13 +73,13 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "(P.Municipio) S.LISABETTA (P.Municipio)",
+       "stop": "S.ELISABETTA (P.Municipio)",
        "idx": 0,
        "arr": "6.55",
        "dep": "6.55"
       },
       {
-       "stop": "QUAD.SPINASANTA AGRIGENTO QUAD.SPINASANTA",
+       "stop": "AGRIGENTO QUAD.SPINASANTA",
        "idx": 4,
        "arr": "7.40",
        "dep": "7.40"
@@ -103,26 +104,39 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "(P.Municipio) S.LISABETTA (P.Municipio)",
+       "stop": "S.ELISABETTA (P.Municipio)",
        "idx": 0,
        "arr": "7.10",
        "dep": "7.10"
       },
       {
-       "stop": "QUAD.SPINASANTA AGRIGENTO QUAD.SPINASANTA",
+       "stop": "AGRIGENTO QUAD.SPINASANTA",
        "idx": 4,
        "arr": "7.55",
        "dep": "7.55"
       },
       {
-       "stop": "P. ROSSELLI AGRIGENTO P.ROSSELLI",
+       "stop": "AGRIGENTO P. ROSSELLI",
        "idx": 6,
        "arr": "8.00",
        "dep": "8.00"
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "S.LISABETTA (P.Municipio)",
+    "ARAGONA (Via Roma)",
+    "STAZ.CALDARE ARAGONA",
+    "BORGATA S.MICHELE",
+    "AGRIGENTO QUAD.SPINASANTA",
+    "AGRIGENTO C.DA CALCARELLE",
+    "AGRIGENTO P.ROSSELLI"
+   ],
+   "trips": [
     {
      "corsa": "4",
      "service": {
@@ -134,31 +148,31 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "P. ROSSELLI AGRIGENTO P.ROSSELLI",
+       "stop": "AGRIGENTO P.ROSSELLI",
        "idx": 6,
        "arr": "15.00",
        "dep": "15.00"
       },
       {
-       "stop": "S.MICHELE BORGATA S.MICHELE",
+       "stop": "BORGATA S.MICHELE",
        "idx": 3,
        "arr": "15.10",
        "dep": "15.10"
       },
       {
-       "stop": "ARAGONA STAZ.CALDARE ARAGONA",
+       "stop": "STAZ.CALDARE ARAGONA",
        "idx": 2,
        "arr": "15.20",
        "dep": "15.20"
       },
       {
-       "stop": "(Via Roma) ARAGONA (Via Roma)",
+       "stop": "ARAGONA (Via Roma)",
        "idx": 1,
        "arr": "15.30",
        "dep": "15.30"
       },
       {
-       "stop": "(P.Municipio) S.LISABETTA (P.Municipio)",
+       "stop": "S.LISABETTA (P.Municipio)",
        "idx": 0,
        "arr": "15.45",
        "dep": "15.45"
@@ -183,13 +197,13 @@
        "dep": "13.45"
       },
       {
-       "stop": "QUAD.SPINASANTA AGRIGENTO QUAD.SPINASANTA",
+       "stop": "AGRIGENTO QUAD.SPINASANTA",
        "idx": 4,
        "arr": "13.55",
        "dep": "13.55"
       },
       {
-       "stop": "(P.Municipio) S.LISABETTA (P.Municipio)",
+       "stop": "S.LISABETTA (P.Municipio)",
        "idx": 0,
        "arr": "14.45",
        "dep": "14.45"
@@ -208,19 +222,19 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "P. ROSSELLI AGRIGENTO P.ROSSELLI",
+       "stop": "AGRIGENTO P.ROSSELLI",
        "idx": 6,
        "arr": "13.55",
        "dep": "13.55"
       },
       {
-       "stop": "QUAD.SPINASANTA AGRIGENTO QUAD.SPINASANTA",
+       "stop": "AGRIGENTO QUAD.SPINASANTA",
        "idx": 4,
        "arr": "14.05",
        "dep": "14.05"
       },
       {
-       "stop": "(P.Municipio) S.LISABETTA (P.Municipio)",
+       "stop": "S.LISABETTA (P.Municipio)",
        "idx": 0,
        "arr": "14.55",
        "dep": "14.55"
@@ -230,5 +244,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

@@ -1,18 +1,19 @@
 {
  "operator": "Lattuca",
  "route_id": "lattuca-orari-p3",
- "name": "ARAGONA - AGRIGENTO P.ROSSELLI AGRIGENTO P.ROSSELLI 0",
+ "name": "ARAGONA - AGRIGENTO P.ROSSELLI",
  "source": "LATTUCA_ORARI/p003.json",
  "prescriptions": [
+  "Prescrizioni d'Esercizio",
   "Prescrizioni d'Esercizio"
  ],
  "directions": [
   {
    "stops": [
-    "ARAGONA (Via Roma) ARAGONA ( Via Roma)",
+    "ARAGONA (Via Roma)",
     "STAZ.CALDARE ARAGONA",
     "BORGATA S. MICHELE",
-    "AGRIGENTO P.ROSSELLI AGRIGENTO P.ROSSELLI 0"
+    "AGRIGENTO P.ROSSELLI"
    ],
    "trips": [
     {
@@ -26,7 +27,7 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "ARAGONA (Via Roma) ARAGONA ( Via Roma)",
+       "stop": "ARAGONA (Via Roma)",
        "idx": 0,
        "arr": "9.20",
        "dep": "9.20"
@@ -44,7 +45,7 @@
        "dep": "9.40"
       },
       {
-       "stop": "AGRIGENTO P.ROSSELLI AGRIGENTO P.ROSSELLI 0",
+       "stop": "AGRIGENTO P.ROSSELLI",
        "idx": 3,
        "arr": "9.50",
        "dep": "9.50"
@@ -63,7 +64,7 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "ARAGONA (Via Roma) ARAGONA ( Via Roma)",
+       "stop": "ARAGONA (Via Roma)",
        "idx": 0,
        "arr": "8.30",
        "dep": "8.30"
@@ -81,7 +82,7 @@
        "dep": "8.50"
       },
       {
-       "stop": "AGRIGENTO P.ROSSELLI AGRIGENTO P.ROSSELLI 0",
+       "stop": "AGRIGENTO P.ROSSELLI",
        "idx": 3,
        "arr": "9.00",
        "dep": "9.00"
@@ -100,7 +101,7 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "ARAGONA (Via Roma) ARAGONA ( Via Roma)",
+       "stop": "ARAGONA (Via Roma)",
        "idx": 0,
        "arr": "10.00",
        "dep": "10.00"
@@ -118,7 +119,7 @@
        "dep": "10.20"
       },
       {
-       "stop": "AGRIGENTO P.ROSSELLI AGRIGENTO P.ROSSELLI 0",
+       "stop": "AGRIGENTO P.ROSSELLI",
        "idx": 3,
        "arr": "10.30",
        "dep": "10.30"
@@ -137,7 +138,7 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "ARAGONA (Via Roma) ARAGONA ( Via Roma)",
+       "stop": "ARAGONA (Via Roma)",
        "idx": 0,
        "arr": "11.15",
        "dep": "11.15"
@@ -155,7 +156,7 @@
        "dep": "11.35"
       },
       {
-       "stop": "AGRIGENTO P.ROSSELLI AGRIGENTO P.ROSSELLI 0",
+       "stop": "AGRIGENTO P.ROSSELLI",
        "idx": 3,
        "arr": "11.45",
        "dep": "11.45"
@@ -174,7 +175,7 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "ARAGONA (Via Roma) ARAGONA ( Via Roma)",
+       "stop": "ARAGONA (Via Roma)",
        "idx": 0,
        "arr": "12.30",
        "dep": "12.30"
@@ -192,7 +193,7 @@
        "dep": "12.50"
       },
       {
-       "stop": "AGRIGENTO P.ROSSELLI AGRIGENTO P.ROSSELLI 0",
+       "stop": "AGRIGENTO P.ROSSELLI",
        "idx": 3,
        "arr": "13.00",
        "dep": "13.00"
@@ -211,7 +212,7 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "ARAGONA (Via Roma) ARAGONA ( Via Roma)",
+       "stop": "ARAGONA (Via Roma)",
        "idx": 0,
        "arr": "17.30",
        "dep": "17.30"
@@ -229,14 +230,24 @@
        "dep": "17.50"
       },
       {
-       "stop": "AGRIGENTO P.ROSSELLI AGRIGENTO P.ROSSELLI 0",
+       "stop": "AGRIGENTO P.ROSSELLI",
        "idx": 3,
        "arr": "18.00",
        "dep": "18.00"
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "ARAGONA ( Via Roma)",
+    "STAZ.CALDARE ARAGONA",
+    "BORGATA S. MICHELE",
+    "AGRIGENTO P.ROSSELLI 0"
+   ],
+   "trips": [
     {
      "corsa": "2",
      "service": {
@@ -248,7 +259,7 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "AGRIGENTO P.ROSSELLI AGRIGENTO P.ROSSELLI 0",
+       "stop": "AGRIGENTO P.ROSSELLI 0",
        "idx": 3,
        "arr": "7.05",
        "dep": "7.05"
@@ -266,7 +277,7 @@
        "dep": "7.25"
       },
       {
-       "stop": "ARAGONA (Via Roma) ARAGONA ( Via Roma)",
+       "stop": "ARAGONA ( Via Roma)",
        "idx": 0,
        "arr": "7.35",
        "dep": "7.35"
@@ -285,7 +296,7 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "AGRIGENTO P.ROSSELLI AGRIGENTO P.ROSSELLI 0",
+       "stop": "AGRIGENTO P.ROSSELLI 0",
        "idx": 3,
        "arr": "10.00",
        "dep": "10.00"
@@ -303,7 +314,7 @@
        "dep": "10.20"
       },
       {
-       "stop": "ARAGONA (Via Roma) ARAGONA ( Via Roma)",
+       "stop": "ARAGONA ( Via Roma)",
        "idx": 0,
        "arr": "10.30",
        "dep": "10.30"
@@ -322,7 +333,7 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "AGRIGENTO P.ROSSELLI AGRIGENTO P.ROSSELLI 0",
+       "stop": "AGRIGENTO P.ROSSELLI 0",
        "idx": 3,
        "arr": "9.10",
        "dep": "9.10"
@@ -340,7 +351,7 @@
        "dep": "9.30"
       },
       {
-       "stop": "ARAGONA (Via Roma) ARAGONA ( Via Roma)",
+       "stop": "ARAGONA ( Via Roma)",
        "idx": 0,
        "arr": "9.40",
        "dep": "9.40"
@@ -359,7 +370,7 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "AGRIGENTO P.ROSSELLI AGRIGENTO P.ROSSELLI 0",
+       "stop": "AGRIGENTO P.ROSSELLI 0",
        "idx": 3,
        "arr": "11.15",
        "dep": "11.15"
@@ -377,7 +388,7 @@
        "dep": "11.35"
       },
       {
-       "stop": "ARAGONA (Via Roma) ARAGONA ( Via Roma)",
+       "stop": "ARAGONA ( Via Roma)",
        "idx": 0,
        "arr": "11.45",
        "dep": "11.45"
@@ -396,7 +407,7 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "AGRIGENTO P.ROSSELLI AGRIGENTO P.ROSSELLI 0",
+       "stop": "AGRIGENTO P.ROSSELLI 0",
        "idx": 3,
        "arr": "12.30",
        "dep": "12.30"
@@ -414,7 +425,7 @@
        "dep": "12.50"
       },
       {
-       "stop": "ARAGONA (Via Roma) ARAGONA ( Via Roma)",
+       "stop": "ARAGONA ( Via Roma)",
        "idx": 0,
        "arr": "13.00",
        "dep": "13.00"
@@ -433,7 +444,7 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "AGRIGENTO P.ROSSELLI AGRIGENTO P.ROSSELLI 0",
+       "stop": "AGRIGENTO P.ROSSELLI 0",
        "idx": 3,
        "arr": "13.05",
        "dep": "13.05"
@@ -451,7 +462,7 @@
        "dep": "13.25"
       },
       {
-       "stop": "ARAGONA (Via Roma) ARAGONA ( Via Roma)",
+       "stop": "ARAGONA ( Via Roma)",
        "idx": 0,
        "arr": "13.35",
        "dep": "13.35"
@@ -470,7 +481,7 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "AGRIGENTO P.ROSSELLI AGRIGENTO P.ROSSELLI 0",
+       "stop": "AGRIGENTO P.ROSSELLI 0",
        "idx": 3,
        "arr": "19.00",
        "dep": "19.00"
@@ -488,7 +499,7 @@
        "dep": "19.20"
       },
       {
-       "stop": "ARAGONA (Via Roma) ARAGONA ( Via Roma)",
+       "stop": "ARAGONA ( Via Roma)",
        "idx": 0,
        "arr": "19.30",
        "dep": "19.30"
@@ -498,5 +509,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

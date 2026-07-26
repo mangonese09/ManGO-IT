@@ -33,7 +33,77 @@
      "n": "11",
      "x": 236.7,
      "label": "(*)"
+    }
+   ],
+   "stops": [
+    {
+     "name": "KM STAZIONAMENTI",
+     "km": [],
+     "times": {}
     },
+    {
+     "name": "CAMMARATA",
+     "km": [
+      "0,0",
+      "92,5"
+     ],
+     "times": {
+      "1": "5.30",
+      "3": "7.00",
+      "5": "14.10",
+      "7": "16.50"
+     }
+    },
+    {
+     "name": "S.GIOV.GEMINI",
+     "km": [
+      "91,50"
+     ],
+     "times": {
+      "1": "5.35",
+      "3": "7.05",
+      "5": "14.15",
+      "7": "16.55"
+     }
+    },
+    {
+     "name": "LERCARA FRIDDI",
+     "km": [
+      "57,6"
+     ],
+     "times": {
+      "1": "6.05",
+      "3": "7.35",
+      "5": "14.45",
+      "7": "17.30"
+     }
+    },
+    {
+     "name": "PALERMO",
+     "km": [
+      "92,5",
+      "0,0"
+     ],
+     "times": {
+      "1": "7.10",
+      "3": "8.40",
+      "5": "15.50",
+      "7": "18.50"
+     }
+    },
+    {
+     "name": "tra Lercara Friddi e Palermo",
+     "km": [],
+     "times": {}
+    }
+   ],
+   "prescriptions": [
+    "Prescrizioni d'Esercizio Divieto di servizio locale tra Lercara Friddi e Palermo e viceversa, estremi inclusi"
+   ],
+   "spacing": 21.5
+  },
+  {
+   "corse": [
     {
      "n": "2",
      "x": 576.2,
@@ -67,21 +137,17 @@
    ],
    "stops": [
     {
-     "name": "STAZIONAMENTI KM",
+     "name": "KM KM",
      "km": [],
      "times": {}
     },
     {
-     "name": "CAMMARATA CAMMARATA",
+     "name": "CAMMARATA",
      "km": [
       "0,0",
       "92,5"
      ],
      "times": {
-      "1": "5.30",
-      "3": "7.00",
-      "5": "14.10",
-      "7": "16.50",
       "2": "15.10",
       "4": "16.40",
       "6": "20.10",
@@ -89,15 +155,11 @@
      }
     },
     {
-     "name": "S.GIOV.GEMINI S.GIOV.GEMINI",
+     "name": "S.GIOV.GEMINI",
      "km": [
       "91,50"
      ],
      "times": {
-      "1": "5.35",
-      "3": "7.05",
-      "5": "14.15",
-      "7": "16.55",
       "2": "15.00",
       "4": "16.30",
       "6": "20.00",
@@ -105,15 +167,11 @@
      }
     },
     {
-     "name": "LERCARA FRIDDI LERC. FRIDDI",
+     "name": "LERC. FRIDDI",
      "km": [
       "57,6"
      ],
      "times": {
-      "1": "6.05",
-      "3": "7.35",
-      "5": "14.45",
-      "7": "17.30",
       "2": "14.30",
       "4": "16.00",
       "6": "19.30",
@@ -121,16 +179,12 @@
      }
     },
     {
-     "name": "PALERMO PALERMO",
+     "name": "PALERMO",
      "km": [
       "92,5",
       "0,0"
      ],
      "times": {
-      "1": "7.10",
-      "3": "8.40",
-      "5": "15.50",
-      "7": "18.50",
       "2": "13.30",
       "4": "15.00",
       "6": "18.30",

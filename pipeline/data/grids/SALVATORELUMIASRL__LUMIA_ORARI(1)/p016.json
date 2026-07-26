@@ -13,7 +13,79 @@
      "n": "3",
      "x": 113.0,
      "label": ""
+    }
+   ],
+   "stops": [
+    {
+     "name": "KM",
+     "km": [],
+     "times": {}
     },
+    {
+     "name": "S.ANNA",
+     "km": [
+      "123,3"
+     ],
+     "times": {
+      "1": "7.00"
+     }
+    },
+    {
+     "name": "p.za Fontana",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "CALTABELLOTTA",
+     "km": [
+      "9,2",
+      "114,1"
+     ],
+     "times": {
+      "1": "7.15"
+     }
+    },
+    {
+     "name": "v. Triocola",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "PALERMO",
+     "km": [
+      "123,3"
+     ],
+     "times": {
+      "1": "9.10"
+     }
+    },
+    {
+     "name": "v.Basile",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "PALERMO",
+     "km": [
+      "123,3"
+     ],
+     "times": {
+      "1": "9.15"
+     }
+    },
+    {
+     "name": "v.Balsamo",
+     "km": [],
+     "times": {}
+    }
+   ],
+   "prescriptions": [
+    "Prescrizioni d'Esercizio carico passeggeri consentito solo da Caltabellotta e S.Anna per Palermo e viceversa"
+   ],
+   "spacing": 41.2
+  },
+  {
+   "corse": [
     {
      "n": "2",
      "x": 600.4,
@@ -27,68 +99,74 @@
    ],
    "stops": [
     {
-     "name": "KM",
+     "name": "KM FERIALE",
      "km": [],
      "times": {}
     },
     {
-     "name": "S.ANNA S.ANNA",
+     "name": "S.ANNA",
      "km": [
       "123,3"
      ],
      "times": {
-      "1": "7.00",
       "2": "17.00"
      }
     },
     {
-     "name": "p.za Fontana p.za Fontana",
+     "name": "p.za Fontana",
      "km": [],
      "times": {}
     },
     {
-     "name": "CALTABELLOTTA CALTABELLOTTA",
+     "name": "CALTABELLOTTA",
      "km": [
       "9,2",
       "114,1"
      ],
      "times": {
-      "1": "7.15",
       "2": "16.45"
      }
     },
     {
-     "name": "v. Triocola v. Triocola",
+     "name": "v. Triocola",
      "km": [],
      "times": {}
     },
     {
-     "name": "PALERMO PALERMO",
+     "name": "PALERMO",
      "km": [
       "123,3"
      ],
      "times": {
-      "1": "9.10",
       "2": "14.50"
      }
     },
     {
-     "name": "v.Basile v.Basile",
+     "name": "v.Basile",
      "km": [],
      "times": {}
     },
     {
-     "name": "PALERMO PALERMO",
+     "name": "PALERMO",
      "km": [
       "123,3"
      ],
      "times": {
-      "1": "9.15",
       "2": "14.45"
      }
     },
     {
-     "name": "v.Balsamo v.Balsamo",
+     "name": "v.Balsamo",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "220",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "120",
      "km": [],
      "times": {}
     }

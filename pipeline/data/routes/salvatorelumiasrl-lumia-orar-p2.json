@@ -4,6 +4,7 @@
  "name": "CATTOLICA ERACLEA - SCIACCA",
  "source": "SALVATORELUMIASRL__LUMIA_ORARI(1)/p002.json",
  "prescriptions": [
+  "Prescrizioni",
   "Prescrizioni"
  ],
  "directions": [
@@ -127,7 +128,19 @@
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CATTOLICA ERACLEA",
+    "MONTALLEGRO",
+    "RIBERA",
+    "SCIACCA",
+    "SCIACCA",
+    "SCIACCA"
+   ],
+   "trips": [
     {
      "corsa": "20",
      "service": {
@@ -241,5 +254,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

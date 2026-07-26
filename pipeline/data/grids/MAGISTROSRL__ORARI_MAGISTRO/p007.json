@@ -18,7 +18,168 @@
      "n": "5",
      "x": 194.2,
      "label": "FERIALEinperiodoscolastico"
+    }
+   ],
+   "stops": [
+    {
+     "name": "KM KM STAZIONAMENTI",
+     "km": [],
+     "times": {}
     },
+    {
+     "name": "+ 13 FLORESTA",
+     "km": [],
+     "times": {
+      "3": "6.30"
+     }
+    },
+    {
+     "name": "+ BV. FONDACHELLO",
+     "km": [
+      "14,5",
+      "14,5"
+     ],
+     "times": {
+      "5": "6.30"
+     }
+    },
+    {
+     "name": "UCRIA(P.zza Dante)",
+     "km": [
+      "0,0",
+      "27,7"
+     ],
+     "times": {
+      "1": "7.00",
+      "3": "7.00"
+     }
+    },
+    {
+     "name": "C.DA FORTE",
+     "km": [
+      "4,8",
+      "22,9"
+     ],
+     "times": {
+      "1": "7.10",
+      "3": "7.10"
+     }
+    },
+    {
+     "name": "SINAGRA(P.zza S.Teodoro)",
+     "km": [
+      "8,8",
+      "18,9"
+     ],
+     "times": {
+      "1": "7.15",
+      "3": "7.15",
+      "5": "7.10"
+     }
+    },
+    {
+     "name": "C.DA MONACI",
+     "km": [
+      "11,3",
+      "16,4"
+     ],
+     "times": {
+      "5": "7.20"
+     }
+    },
+    {
+     "name": "C.DA MULINAZZO",
+     "km": [
+      "13,1",
+      "14,6"
+     ],
+     "times": {
+      "5": "7.25"
+     }
+    },
+    {
+     "name": "FIUMARA DI NASO(Tratt. Bontempo)",
+     "km": [
+      "16,9",
+      "10,8"
+     ],
+     "times": {
+      "5": "7.30"
+     }
+    },
+    {
+     "name": "PONTE NASO",
+     "km": [
+      "20,8",
+      "6,9"
+     ],
+     "times": {
+      "1": "7.25",
+      "3": "7.25",
+      "5": "7.35"
+     }
+    },
+    {
+     "name": "+3,1 BROLO (Staz. F.S.)",
+     "km": [],
+     "times": {
+      "1": "7.35",
+      "3": "7.35"
+     }
+    },
+    {
+     "name": "PONTE NASO",
+     "km": [
+      "20,8",
+      "6,9"
+     ],
+     "times": {
+      "1": "7.45",
+      "3": "7.45"
+     }
+    },
+    {
+     "name": "C.DA S. GREGORIO",
+     "km": [
+      "25,1",
+      "2,6"
+     ],
+     "times": {
+      "1": "7.50",
+      "3": "7.50",
+      "5": "7.50"
+     }
+    },
+    {
+     "name": "CAPO D'ORLANDO(Staz. F.S.)",
+     "km": [
+      "27,7"
+     ],
+     "times": {
+      "1": "7.55",
+      "3": "7.55",
+      "5": "7.55"
+     }
+    },
+    {
+     "name": "stati approvate, con richiesta in data 08.08.2005",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "di servizio locale tra Brolo Staz. FF.SS. e Capo D'Orlando,estremi",
+     "km": [],
+     "times": {}
+    }
+   ],
+   "prescriptions": [
+    "Prescrizioni d'Esercizio",
+    "Divieto di servizio locale tra Brolo Staz. FF.SS. e Capo D'Orlando,estremi compresi"
+   ],
+   "spacing": 29.4
+  },
+  {
+   "corse": [
     {
      "n": "2",
      "x": 614.7,
@@ -42,33 +203,39 @@
    ],
    "stops": [
     {
-     "name": "FLORESTA",
+     "name": "KM KM FERIALE",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "PERIODO",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "FLORESTA + 13",
      "km": [],
      "times": {
-      "3": "6.30",
       "6": "14.55"
      }
     },
     {
-     "name": "BV. FONDACHELLO",
+     "name": "BV. FONDACHELLO +",
      "km": [
       "14,5",
       "14,5"
      ],
      "times": {
-      "5": "6.30",
       "8": "14.55"
      }
     },
     {
-     "name": "Dante) UCRIA(P.zza Dante)",
+     "name": "UCRIA(P.zza Dante)",
      "km": [
       "0,0",
       "27,7"
      ],
      "times": {
-      "1": "7.00",
-      "3": "7.00",
       "4": "15.00",
       "6": "14.25"
      }
@@ -80,22 +247,17 @@
       "22,9"
      ],
      "times": {
-      "1": "7.10",
-      "3": "7.10",
       "4": "14.50",
       "6": "14.15"
      }
     },
     {
-     "name": "S.Teodoro) SINAGRA(P.zza S.Teodoro)",
+     "name": "SINAGRA(P.zza S.Teodoro)",
      "km": [
       "8,8",
       "18,9"
      ],
      "times": {
-      "1": "7.15",
-      "3": "7.15",
-      "5": "7.10",
       "4": "14.40",
       "6": "14.10",
       "8": "14.10"
@@ -108,7 +270,6 @@
       "16,4"
      ],
      "times": {
-      "5": "7.20",
       "4": "14.35",
       "8": "14.05"
      }
@@ -120,98 +281,83 @@
       "14,6"
      ],
      "times": {
-      "5": "7.25",
       "4": "14.30",
       "8": "14.00"
      }
     },
     {
-     "name": "DI NASO(Tratt. Bontempo) FIUMARA DI NASO(Tratt. Bontempo)",
+     "name": "FIUMARA DI NASO(Tratt. Bontempo)",
      "km": [
       "16,9",
       "10,8"
      ],
      "times": {
-      "5": "7.30",
       "4": "14.25",
       "8": "13.55"
      }
     },
     {
-     "name": "NASO PONTE NASO",
+     "name": "PONTE NASO",
      "km": [
       "20,8",
       "6,9"
      ],
      "times": {
-      "1": "7.25",
-      "3": "7.25",
-      "5": "7.35",
       "4": "14.20",
       "6": "14.00"
      }
     },
     {
-     "name": "(Staz. F.S.) BROLO (Staz. F.S.)",
+     "name": "BROLO (Staz. F.S.) +3,1",
      "km": [],
      "times": {
-      "1": "7.35",
-      "3": "7.35",
       "2": "13.55",
       "4": "14.15",
       "6": "13.55"
      }
     },
     {
-     "name": "NASO PONTE NASO",
+     "name": "PONTE NASO",
      "km": [
       "20,8",
       "6,9"
      ],
      "times": {
-      "1": "7.45",
-      "3": "7.45",
       "2": "13.45",
       "6": "13.50",
       "8": "13.50"
      }
     },
     {
-     "name": "GREGORIO C.DA S. GREGORIO",
+     "name": "C.DA S. GREGORIO",
      "km": [
       "25,1",
       "2,6"
      ],
      "times": {
-      "1": "7.50",
-      "3": "7.50",
-      "5": "7.50",
       "2": "13.35",
       "6": "13.45",
       "8": "13.45"
      }
     },
     {
-     "name": "F.S.) CAPO D'ORLANDO(Staz. F.S.)",
+     "name": "CAPO D'ORLANDO(Staz. F.S.)",
      "km": [
       "27,7"
      ],
      "times": {
-      "1": "7.55",
-      "3": "7.55",
-      "5": "7.55",
       "2": "13.30",
       "6": "13.30",
       "8": "13.30"
      }
     },
     {
-     "name": "richiesta in data 08.08.2005 ,ai sensi della circolare D.D.G.",
+     "name": ",ai sensi della circolare D.D.G. n° 3 del 18.05.2004,",
      "km": [],
      "times": {}
     },
     {
-     "name": "FF.SS. e Capo D'Orlando,estremi compresi",
+     "name": "compresi",
      "km": [],
      "times": {}
     }

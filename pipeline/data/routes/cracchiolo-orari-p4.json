@@ -1,41 +1,42 @@
 {
  "operator": "Cracchiolo",
  "route_id": "cracchiolo-orari-p4",
- "name": "di porco TERRASINI c.da muso di porco - FERRATA MONREALE VIA LINEA FERRATA",
+ "name": "TERRASINI c.da muso di porco - MONREALE VIA LINEA FERRATA",
  "source": "CRACCHIOLO_ORARI/p004.json",
  "prescriptions": [
+  "Prescrizioni d'Esercizio",
   "Prescrizioni d'Esercizio"
  ],
  "directions": [
   {
    "stops": [
-    "di porco TERRASINI c.da muso di porco",
-    "(SS 113 KM 301,100) CITTA' DEL MARE (SS 113 KM 301,100)",
+    "TERRASINI c.da muso di porco",
+    "CITTA' DEL MARE (SS 113 KM 301,100)",
     "S.S.113 KM298,8",
-    "A. DALLA CHIESA(CAPOLINEA) VIA PEREZ > VIA TEVERE",
-    "SETTIMO, 45 TERRASINI VIA C. A. DALLA CHIESA(CAPOLINEA)",
-    "TERRASINI VIA PEREZ,94",
-    "MAGAGGIARI CINISI SPIAGGIA MAGAGGIARI",
+    "TERRASINI VIA C. A. DALLA CHIESA(CAPOLINEA)",
+    "TERRASINI VIA RUGGERO SETTIMO, 45",
     "CINISI C.SO UMBERTO,407",
-    "ORLANDO CINISI C.SO UMBERTO,199",
-    "CINISI PIAZZA V.E. ORLANDO",
+    "CINISI SPIAGGIA MAGAGGIARI",
     "CINISI C.SO UMBERTO,318",
+    "CINISI PIAZZA V.E. ORLANDO",
+    "CINISI C.SO UMBERTO,199",
     "CINISI S.S.113 KM",
-    "NATALE BIVIO A 29 CINISI",
-    "DI SCALEA (CONCA D'ORO) BIVIO A 29 TOMMASO NATALE",
-    "(VILLA ADRIANA) PALERMO VIA LANZA DI SCALEA (CONCA D'ORO)",
+    "BIVIO A 29",
+    "BIVIO A 29 TOMMASO NATALE",
+    "PALERMO VIA LANZA DI SCALEA (CONCA D'ORO)",
     "VIA SAN LORENZO (VILLA ADRIANA)",
     "VIALE STRASBURGO>ARDISIO",
-    "VIALE CROCE ROSSA,123",
-    "VERDURA (Metro' Giachery) VIALE DELLA LIBERTA>NOTARBARTOLO",
+    "VIALE CROCE ROSSA,56",
+    "VIALE DELLA LIBERTA>NOTARBARTOLO",
     "VIA DUCA DELLA VERDURA (Metro' Giachery)",
-    "VIA TURATI / PIAZZA POLITEAMA",
-    "V.EMANUELE III PIAZZA VERDI",
-    "TRIBUNALE",
+    "POLITEAMA",
+    "PIAZZA VERDI",
+    "VIA MAQUEDA>C.SO V.EMANUELE III",
     "CATTEDRALE",
     "PIAZZA INDIPENDENZA",
-    "C.SO CALATAFIMI >PINDEMONTE",
-    "FERRATA MONREALE VIA LINEA FERRATA"
+    "C.SO CALATAFIMI,69",
+    "C.SO CALATAFIMI>PINDEMONTE",
+    "MONREALE VIA LINEA FERRATA"
    ],
    "trips": [
     {
@@ -49,13 +50,13 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "di porco TERRASINI c.da muso di porco",
+       "stop": "TERRASINI c.da muso di porco",
        "idx": 0,
        "arr": "8.00",
        "dep": "8.00"
       },
       {
-       "stop": "(SS 113 KM 301,100) CITTA' DEL MARE (SS 113 KM 301,100)",
+       "stop": "CITTA' DEL MARE (SS 113 KM 301,100)",
        "idx": 1,
        "arr": "8.05",
        "dep": "8.05"
@@ -67,115 +68,115 @@
        "dep": "8.07"
       },
       {
-       "stop": "SETTIMO, 45 TERRASINI VIA C. A. DALLA CHIESA(CAPOLINEA)",
+       "stop": "TERRASINI VIA RUGGERO SETTIMO, 45",
        "idx": 4,
        "arr": "8.10",
        "dep": "8.10"
       },
       {
-       "stop": "TERRASINI VIA PEREZ,94",
+       "stop": "CINISI C.SO UMBERTO,407",
        "idx": 5,
        "arr": "8.15",
        "dep": "8.15"
       },
       {
-       "stop": "MAGAGGIARI CINISI SPIAGGIA MAGAGGIARI",
+       "stop": "CINISI SPIAGGIA MAGAGGIARI",
        "idx": 6,
        "arr": "8.20",
        "dep": "8.20"
       },
       {
-       "stop": "CINISI C.SO UMBERTO,318",
+       "stop": "CINISI S.S.113 KM",
        "idx": 10,
        "arr": "8.23",
        "dep": "8.23"
       },
       {
-       "stop": "CINISI S.S.113 KM",
+       "stop": "BIVIO A 29",
        "idx": 11,
        "arr": "8.24",
        "dep": "8.24"
       },
       {
-       "stop": "NATALE BIVIO A 29 CINISI",
+       "stop": "BIVIO A 29 TOMMASO NATALE",
        "idx": 12,
        "arr": "8.37",
        "dep": "8.37"
       },
       {
-       "stop": "DI SCALEA (CONCA D'ORO) BIVIO A 29 TOMMASO NATALE",
+       "stop": "PALERMO VIA LANZA DI SCALEA (CONCA D'ORO)",
        "idx": 13,
        "arr": "8.40",
        "dep": "8.40"
       },
       {
-       "stop": "(VILLA ADRIANA) PALERMO VIA LANZA DI SCALEA (CONCA D'ORO)",
+       "stop": "VIA SAN LORENZO (VILLA ADRIANA)",
        "idx": 14,
        "arr": "8.42",
        "dep": "8.42"
       },
       {
-       "stop": "VIA SAN LORENZO (VILLA ADRIANA)",
+       "stop": "VIALE STRASBURGO>ARDISIO",
        "idx": 15,
        "arr": "8.44",
        "dep": "8.44"
       },
       {
-       "stop": "VIALE STRASBURGO>ARDISIO",
+       "stop": "VIALE CROCE ROSSA,56",
        "idx": 16,
        "arr": "8.46",
        "dep": "8.46"
       },
       {
-       "stop": "VIALE CROCE ROSSA,123",
+       "stop": "VIALE DELLA LIBERTA>NOTARBARTOLO",
        "idx": 17,
        "arr": "8.52",
        "dep": "8.52"
       },
       {
-       "stop": "VIA DUCA DELLA VERDURA (Metro' Giachery)",
+       "stop": "POLITEAMA",
        "idx": 19,
        "arr": "8.57",
        "dep": "8.57"
       },
       {
-       "stop": "VIA TURATI / PIAZZA POLITEAMA",
+       "stop": "PIAZZA VERDI",
        "idx": 20,
        "arr": "9.02",
        "dep": "9.02"
       },
       {
-       "stop": "V.EMANUELE III PIAZZA VERDI",
+       "stop": "VIA MAQUEDA>C.SO V.EMANUELE III",
        "idx": 21,
        "arr": "9.07",
        "dep": "9.07"
       },
       {
-       "stop": "TRIBUNALE",
+       "stop": "CATTEDRALE",
        "idx": 22,
        "arr": "9.12",
        "dep": "9.12"
       },
       {
-       "stop": "CATTEDRALE",
+       "stop": "PIAZZA INDIPENDENZA",
        "idx": 23,
        "arr": "9.17",
        "dep": "9.17"
       },
       {
-       "stop": "PIAZZA INDIPENDENZA",
+       "stop": "C.SO CALATAFIMI,69",
        "idx": 24,
        "arr": "9.17",
        "dep": "9.17"
       },
       {
-       "stop": "C.SO CALATAFIMI >PINDEMONTE",
+       "stop": "C.SO CALATAFIMI>PINDEMONTE",
        "idx": 25,
        "arr": "9.19",
        "dep": "9.19"
       },
       {
-       "stop": "FERRATA MONREALE VIA LINEA FERRATA",
+       "stop": "MONREALE VIA LINEA FERRATA",
        "idx": 26,
        "arr": "9.32",
        "dep": "9.32"
@@ -194,13 +195,13 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "di porco TERRASINI c.da muso di porco",
+       "stop": "TERRASINI c.da muso di porco",
        "idx": 0,
        "arr": "15.00",
        "dep": "15.00"
       },
       {
-       "stop": "(SS 113 KM 301,100) CITTA' DEL MARE (SS 113 KM 301,100)",
+       "stop": "CITTA' DEL MARE (SS 113 KM 301,100)",
        "idx": 1,
        "arr": "15.05",
        "dep": "15.05"
@@ -212,115 +213,115 @@
        "dep": "15.07"
       },
       {
-       "stop": "SETTIMO, 45 TERRASINI VIA C. A. DALLA CHIESA(CAPOLINEA)",
+       "stop": "TERRASINI VIA RUGGERO SETTIMO, 45",
        "idx": 4,
        "arr": "15.10",
        "dep": "15.10"
       },
       {
-       "stop": "TERRASINI VIA PEREZ,94",
+       "stop": "CINISI C.SO UMBERTO,407",
        "idx": 5,
        "arr": "15.15",
        "dep": "15.15"
       },
       {
-       "stop": "MAGAGGIARI CINISI SPIAGGIA MAGAGGIARI",
+       "stop": "CINISI SPIAGGIA MAGAGGIARI",
        "idx": 6,
        "arr": "15.20",
        "dep": "15.20"
       },
       {
-       "stop": "CINISI C.SO UMBERTO,318",
+       "stop": "CINISI S.S.113 KM",
        "idx": 10,
        "arr": "15.23",
        "dep": "15.23"
       },
       {
-       "stop": "CINISI S.S.113 KM",
+       "stop": "BIVIO A 29",
        "idx": 11,
        "arr": "15.24",
        "dep": "15.24"
       },
       {
-       "stop": "NATALE BIVIO A 29 CINISI",
+       "stop": "BIVIO A 29 TOMMASO NATALE",
        "idx": 12,
        "arr": "15.37",
        "dep": "15.37"
       },
       {
-       "stop": "DI SCALEA (CONCA D'ORO) BIVIO A 29 TOMMASO NATALE",
+       "stop": "PALERMO VIA LANZA DI SCALEA (CONCA D'ORO)",
        "idx": 13,
        "arr": "15.40",
        "dep": "15.40"
       },
       {
-       "stop": "(VILLA ADRIANA) PALERMO VIA LANZA DI SCALEA (CONCA D'ORO)",
+       "stop": "VIA SAN LORENZO (VILLA ADRIANA)",
        "idx": 14,
        "arr": "15.42",
        "dep": "15.42"
       },
       {
-       "stop": "VIA SAN LORENZO (VILLA ADRIANA)",
+       "stop": "VIALE STRASBURGO>ARDISIO",
        "idx": 15,
        "arr": "15.44",
        "dep": "15.44"
       },
       {
-       "stop": "VIALE STRASBURGO>ARDISIO",
+       "stop": "VIALE CROCE ROSSA,56",
        "idx": 16,
        "arr": "15.46",
        "dep": "15.46"
       },
       {
-       "stop": "VIALE CROCE ROSSA,123",
+       "stop": "VIALE DELLA LIBERTA>NOTARBARTOLO",
        "idx": 17,
        "arr": "15.52",
        "dep": "15.52"
       },
       {
-       "stop": "VIA DUCA DELLA VERDURA (Metro' Giachery)",
+       "stop": "POLITEAMA",
        "idx": 19,
        "arr": "15.57",
        "dep": "15.57"
       },
       {
-       "stop": "VIA TURATI / PIAZZA POLITEAMA",
+       "stop": "PIAZZA VERDI",
        "idx": 20,
        "arr": "16.02",
        "dep": "16.02"
       },
       {
-       "stop": "V.EMANUELE III PIAZZA VERDI",
+       "stop": "VIA MAQUEDA>C.SO V.EMANUELE III",
        "idx": 21,
        "arr": "16.07",
        "dep": "16.07"
       },
       {
-       "stop": "TRIBUNALE",
+       "stop": "CATTEDRALE",
        "idx": 22,
        "arr": "16.12",
        "dep": "16.12"
       },
       {
-       "stop": "CATTEDRALE",
+       "stop": "PIAZZA INDIPENDENZA",
        "idx": 23,
        "arr": "16.17",
        "dep": "16.17"
       },
       {
-       "stop": "PIAZZA INDIPENDENZA",
+       "stop": "C.SO CALATAFIMI,69",
        "idx": 24,
        "arr": "16.17",
        "dep": "16.17"
       },
       {
-       "stop": "C.SO CALATAFIMI >PINDEMONTE",
+       "stop": "C.SO CALATAFIMI>PINDEMONTE",
        "idx": 25,
        "arr": "16.19",
        "dep": "16.19"
       },
       {
-       "stop": "FERRATA MONREALE VIA LINEA FERRATA",
+       "stop": "MONREALE VIA LINEA FERRATA",
        "idx": 26,
        "arr": "16.32",
        "dep": "16.32"
@@ -339,85 +340,85 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "A. DALLA CHIESA(CAPOLINEA) VIA PEREZ > VIA TEVERE",
+       "stop": "TERRASINI VIA C. A. DALLA CHIESA(CAPOLINEA)",
        "idx": 3,
        "arr": "7.00",
        "dep": "7.00"
       },
       {
-       "stop": "SETTIMO, 45 TERRASINI VIA C. A. DALLA CHIESA(CAPOLINEA)",
+       "stop": "TERRASINI VIA RUGGERO SETTIMO, 45",
        "idx": 4,
        "arr": "7.01",
        "dep": "7.01"
       },
       {
-       "stop": "CINISI C.SO UMBERTO,407",
+       "stop": "CINISI C.SO UMBERTO,318",
        "idx": 7,
        "arr": "7.06",
        "dep": "7.06"
       },
       {
-       "stop": "ORLANDO CINISI C.SO UMBERTO,199",
+       "stop": "CINISI PIAZZA V.E. ORLANDO",
        "idx": 8,
        "arr": "7.07",
        "dep": "7.07"
       },
       {
-       "stop": "CINISI PIAZZA V.E. ORLANDO",
+       "stop": "CINISI C.SO UMBERTO,199",
        "idx": 9,
        "arr": "7.08",
        "dep": "7.08"
       },
       {
-       "stop": "CINISI C.SO UMBERTO,318",
+       "stop": "CINISI S.S.113 KM",
        "idx": 10,
        "arr": "7.09",
        "dep": "7.09"
       },
       {
-       "stop": "CINISI S.S.113 KM",
+       "stop": "BIVIO A 29",
        "idx": 11,
        "arr": "7.10",
        "dep": "7.10"
       },
       {
-       "stop": "NATALE BIVIO A 29 CINISI",
+       "stop": "BIVIO A 29 TOMMASO NATALE",
        "idx": 12,
        "arr": "7.23",
        "dep": "7.23"
       },
       {
-       "stop": "DI SCALEA (CONCA D'ORO) BIVIO A 29 TOMMASO NATALE",
+       "stop": "PALERMO VIA LANZA DI SCALEA (CONCA D'ORO)",
        "idx": 13,
        "arr": "7.26",
        "dep": "7.26"
       },
       {
-       "stop": "(VILLA ADRIANA) PALERMO VIA LANZA DI SCALEA (CONCA D'ORO)",
+       "stop": "VIA SAN LORENZO (VILLA ADRIANA)",
        "idx": 14,
        "arr": "7.28",
        "dep": "7.28"
       },
       {
-       "stop": "VIA SAN LORENZO (VILLA ADRIANA)",
+       "stop": "VIALE STRASBURGO>ARDISIO",
        "idx": 15,
        "arr": "7.30",
        "dep": "7.30"
       },
       {
-       "stop": "VIALE STRASBURGO>ARDISIO",
+       "stop": "VIALE CROCE ROSSA,56",
        "idx": 16,
        "arr": "7.32",
        "dep": "7.32"
       },
       {
-       "stop": "VIALE CROCE ROSSA,123",
+       "stop": "VIALE DELLA LIBERTA>NOTARBARTOLO",
        "idx": 17,
        "arr": "7.38",
        "dep": "7.38"
       },
       {
-       "stop": "VERDURA (Metro' Giachery) VIALE DELLA LIBERTA>NOTARBARTOLO",
+       "stop": "VIA DUCA DELLA VERDURA (Metro' Giachery)",
        "idx": 18,
        "arr": "7.43",
        "dep": "7.43"
@@ -436,26 +437,59 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "SETTIMO, 45 TERRASINI VIA C. A. DALLA CHIESA(CAPOLINEA)",
+       "stop": "TERRASINI VIA RUGGERO SETTIMO, 45",
        "idx": 4,
        "arr": "0.00",
        "dep": "0.00"
       },
       {
-       "stop": "(VILLA ADRIANA) PALERMO VIA LANZA DI SCALEA (CONCA D'ORO)",
+       "stop": "VIA SAN LORENZO (VILLA ADRIANA)",
        "idx": 14,
        "arr": "29.00",
        "dep": "29.00"
       },
       {
-       "stop": "VERDURA (Metro' Giachery) VIALE DELLA LIBERTA>NOTARBARTOLO",
+       "stop": "VIA DUCA DELLA VERDURA (Metro' Giachery)",
        "idx": 18,
        "arr": "35.00",
        "dep": "35.00"
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "TERRASINI c.da muso di porco",
+    "CITTA' DEL MARE (SS 113 KM 301,100)",
+    "S.S.113 KM298,8",
+    "VIA PEREZ > VIA TEVERE",
+    "TERRASINI VIA C. A. DALLA CHIESA(CAPOLINEA)",
+    "TERRASINI VIA PEREZ,94",
+    "CINISI SPIAGGIA MAGAGGIARI",
+    "CINISI C.SO UMBERTO,407",
+    "CINISI C.SO UMBERTO,199",
+    "CINISI PIAZZA V.E. ORLANDO",
+    "CINISI C.SO UMBERTO,318",
+    "CINISI S.S.113 KM",
+    "BIVIO A 29 CINISI",
+    "BIVIO A 29 TOMMASO NATALE",
+    "PALERMO VIA LANZA DI SCALEA (CONCA D'ORO)",
+    "VIA SAN LORENZO (VILLA ADRIANA)",
+    "VIALE STRASBURGO>ARDISIO",
+    "VIALE CROCE ROSSA,123",
+    "VIALE DELLA LIBERTA>NOTARBARTOLO",
+    "VIA DUCA DELLA VERDURA (Metro' Giachery)",
+    "VIA TURATI / PIAZZA POLITEAMA",
+    "PIAZZA VERDI",
+    "TRIBUNALE",
+    "CATTEDRALE",
+    "PIAZZA INDIPENDENZA",
+    "C.SO CALATAFIMI >PINDEMONTE",
+    "MONREALE VIA LINEA FERRATA"
+   ],
+   "trips": [
     {
      "corsa": "2",
      "service": {
@@ -467,7 +501,7 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "FERRATA MONREALE VIA LINEA FERRATA",
+       "stop": "MONREALE VIA LINEA FERRATA",
        "idx": 26,
        "arr": "11.45",
        "dep": "11.45"
@@ -497,7 +531,7 @@
        "dep": "12.08"
       },
       {
-       "stop": "V.EMANUELE III PIAZZA VERDI",
+       "stop": "PIAZZA VERDI",
        "idx": 21,
        "arr": "12.15",
        "dep": "12.15"
@@ -509,7 +543,7 @@
        "dep": "12.23"
       },
       {
-       "stop": "VERDURA (Metro' Giachery) VIALE DELLA LIBERTA>NOTARBARTOLO",
+       "stop": "VIALE DELLA LIBERTA>NOTARBARTOLO",
        "idx": 18,
        "arr": "12.26",
        "dep": "12.26"
@@ -533,19 +567,19 @@
        "dep": "12.36"
       },
       {
-       "stop": "(VILLA ADRIANA) PALERMO VIA LANZA DI SCALEA (CONCA D'ORO)",
+       "stop": "PALERMO VIA LANZA DI SCALEA (CONCA D'ORO)",
        "idx": 14,
        "arr": "12.38",
        "dep": "12.38"
       },
       {
-       "stop": "DI SCALEA (CONCA D'ORO) BIVIO A 29 TOMMASO NATALE",
+       "stop": "BIVIO A 29 TOMMASO NATALE",
        "idx": 13,
        "arr": "12.41",
        "dep": "12.41"
       },
       {
-       "stop": "NATALE BIVIO A 29 CINISI",
+       "stop": "BIVIO A 29 CINISI",
        "idx": 12,
        "arr": "12.54",
        "dep": "12.54"
@@ -563,7 +597,7 @@
        "dep": "12.56"
       },
       {
-       "stop": "MAGAGGIARI CINISI SPIAGGIA MAGAGGIARI",
+       "stop": "CINISI SPIAGGIA MAGAGGIARI",
        "idx": 6,
        "arr": "13.00",
        "dep": "13.00"
@@ -575,7 +609,7 @@
        "dep": "13.10"
       },
       {
-       "stop": "A. DALLA CHIESA(CAPOLINEA) VIA PEREZ > VIA TEVERE",
+       "stop": "VIA PEREZ > VIA TEVERE",
        "idx": 3,
        "arr": "13.11",
        "dep": "13.11"
@@ -587,13 +621,13 @@
        "dep": "13.13"
       },
       {
-       "stop": "(SS 113 KM 301,100) CITTA' DEL MARE (SS 113 KM 301,100)",
+       "stop": "CITTA' DEL MARE (SS 113 KM 301,100)",
        "idx": 1,
        "arr": "13.15",
        "dep": "13.15"
       },
       {
-       "stop": "di porco TERRASINI c.da muso di porco",
+       "stop": "TERRASINI c.da muso di porco",
        "idx": 0,
        "arr": "13.20",
        "dep": "13.20"
@@ -612,7 +646,7 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "FERRATA MONREALE VIA LINEA FERRATA",
+       "stop": "MONREALE VIA LINEA FERRATA",
        "idx": 26,
        "arr": "18.15",
        "dep": "18.15"
@@ -642,7 +676,7 @@
        "dep": "18.38"
       },
       {
-       "stop": "V.EMANUELE III PIAZZA VERDI",
+       "stop": "PIAZZA VERDI",
        "idx": 21,
        "arr": "18.45",
        "dep": "18.45"
@@ -654,7 +688,7 @@
        "dep": "18.53"
       },
       {
-       "stop": "VERDURA (Metro' Giachery) VIALE DELLA LIBERTA>NOTARBARTOLO",
+       "stop": "VIALE DELLA LIBERTA>NOTARBARTOLO",
        "idx": 18,
        "arr": "18.56",
        "dep": "18.56"
@@ -678,19 +712,19 @@
        "dep": "19.06"
       },
       {
-       "stop": "(VILLA ADRIANA) PALERMO VIA LANZA DI SCALEA (CONCA D'ORO)",
+       "stop": "PALERMO VIA LANZA DI SCALEA (CONCA D'ORO)",
        "idx": 14,
        "arr": "19.08",
        "dep": "19.08"
       },
       {
-       "stop": "DI SCALEA (CONCA D'ORO) BIVIO A 29 TOMMASO NATALE",
+       "stop": "BIVIO A 29 TOMMASO NATALE",
        "idx": 13,
        "arr": "19.11",
        "dep": "19.11"
       },
       {
-       "stop": "NATALE BIVIO A 29 CINISI",
+       "stop": "BIVIO A 29 CINISI",
        "idx": 12,
        "arr": "19.24",
        "dep": "19.24"
@@ -708,7 +742,7 @@
        "dep": "19.26"
       },
       {
-       "stop": "MAGAGGIARI CINISI SPIAGGIA MAGAGGIARI",
+       "stop": "CINISI SPIAGGIA MAGAGGIARI",
        "idx": 6,
        "arr": "19.30",
        "dep": "19.30"
@@ -720,7 +754,7 @@
        "dep": "19.40"
       },
       {
-       "stop": "A. DALLA CHIESA(CAPOLINEA) VIA PEREZ > VIA TEVERE",
+       "stop": "VIA PEREZ > VIA TEVERE",
        "idx": 3,
        "arr": "19.41",
        "dep": "19.41"
@@ -732,13 +766,13 @@
        "dep": "19.43"
       },
       {
-       "stop": "(SS 113 KM 301,100) CITTA' DEL MARE (SS 113 KM 301,100)",
+       "stop": "CITTA' DEL MARE (SS 113 KM 301,100)",
        "idx": 1,
        "arr": "19.45",
        "dep": "19.45"
       },
       {
-       "stop": "di porco TERRASINI c.da muso di porco",
+       "stop": "TERRASINI c.da muso di porco",
        "idx": 0,
        "arr": "19.50",
        "dep": "19.50"
@@ -763,7 +797,7 @@
        "dep": "13.05"
       },
       {
-       "stop": "VERDURA (Metro' Giachery) VIALE DELLA LIBERTA>NOTARBARTOLO",
+       "stop": "VIALE DELLA LIBERTA>NOTARBARTOLO",
        "idx": 18,
        "arr": "13.10",
        "dep": "13.10"
@@ -787,19 +821,19 @@
        "dep": "13.30"
       },
       {
-       "stop": "(VILLA ADRIANA) PALERMO VIA LANZA DI SCALEA (CONCA D'ORO)",
+       "stop": "PALERMO VIA LANZA DI SCALEA (CONCA D'ORO)",
        "idx": 14,
        "arr": "13.32",
        "dep": "13.32"
       },
       {
-       "stop": "DI SCALEA (CONCA D'ORO) BIVIO A 29 TOMMASO NATALE",
+       "stop": "BIVIO A 29 TOMMASO NATALE",
        "idx": 13,
        "arr": "13.35",
        "dep": "13.35"
       },
       {
-       "stop": "NATALE BIVIO A 29 CINISI",
+       "stop": "BIVIO A 29 CINISI",
        "idx": 12,
        "arr": "13.43",
        "dep": "13.43"
@@ -823,7 +857,7 @@
        "dep": "13.46"
       },
       {
-       "stop": "ORLANDO CINISI C.SO UMBERTO,199",
+       "stop": "CINISI C.SO UMBERTO,199",
        "idx": 8,
        "arr": "13.47",
        "dep": "13.47"
@@ -835,7 +869,7 @@
        "dep": "13.52"
       },
       {
-       "stop": "SETTIMO, 45 TERRASINI VIA C. A. DALLA CHIESA(CAPOLINEA)",
+       "stop": "TERRASINI VIA C. A. DALLA CHIESA(CAPOLINEA)",
        "idx": 4,
        "arr": "13.53",
        "dep": "13.53"
@@ -845,5 +879,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

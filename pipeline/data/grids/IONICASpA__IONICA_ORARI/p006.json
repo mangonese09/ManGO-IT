@@ -33,7 +33,75 @@
      "n": "11",
      "x": 244.6,
      "label": "(*)"
+    }
+   ],
+   "stops": [
+    {
+     "name": "KM KM STAZIONAMENTI",
+     "km": [],
+     "times": {}
     },
+    {
+     "name": "Misserio Misserio",
+     "km": [
+      "0,0",
+      "0,0",
+      "15,0"
+     ],
+     "times": {
+      "3": "8.20"
+     }
+    },
+    {
+     "name": "I Giardino Giardino",
+     "km": [
+      "5,3",
+      "8,6"
+     ],
+     "times": {
+      "3": "8.30"
+     }
+    },
+    {
+     "name": "I Santa Teresa Barracca Santa Teresa Barracca",
+     "km": [
+      "11,7",
+      "2,2"
+     ],
+     "times": {
+      "3": "8.40"
+     }
+    },
+    {
+     "name": "I Santa Teresa Bucalo Santa Teresa Bucalo",
+     "km": [
+      "15,0",
+      "0,0"
+     ],
+     "times": {
+      "3": "8.50"
+     }
+    },
+    {
+     "name": "a Messina e vv. estremi compresi",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "SOLO IL SABATO, SOLO LA DOMENICA, ETC….",
+     "km": [],
+     "times": {
+      "7": "-"
+     }
+    }
+   ],
+   "prescriptions": [
+    "Prescrizioni d'Esercizio Divieto di servizio locale da Roccalumera a Messina e vv. estremi compresi"
+   ],
+   "spacing": 24.8
+  },
+  {
+   "corse": [
     {
      "n": "2",
      "x": 596.7,
@@ -67,65 +135,54 @@
    ],
    "stops": [
     {
-     "name": "STAZIONAMENTI KM KM",
+     "name": "KM KM",
      "km": [],
      "times": {}
     },
     {
-     "name": "Misserio",
+     "name": "GIORNALIERAFERIALE",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "I orario",
      "km": [
       "0,0",
       "0,0",
       "15,0"
      ],
      "times": {
-      "3": "8.20",
       "4": "11.00"
      }
     },
     {
-     "name": "Giardino",
+     "name": "I orario",
      "km": [
       "5,3",
       "8,6"
      ],
      "times": {
-      "3": "8.30",
       "4": "10.50"
      }
     },
     {
-     "name": "Barracca Santa Teresa Barracca",
+     "name": "I orario",
      "km": [
       "11,7",
       "2,2"
      ],
      "times": {
-      "3": "8.40",
       "4": "10.35"
      }
     },
     {
-     "name": "Bucalo Santa Teresa Bucalo",
+     "name": "I",
      "km": [
       "15,0",
       "0,0"
      ],
      "times": {
-      "3": "8.50",
       "4": "10.30"
-     }
-    },
-    {
-     "name": "compresi",
-     "km": [],
-     "times": {}
-    },
-    {
-     "name": "ETC….",
-     "km": [],
-     "times": {
-      "7": "-"
      }
     }
    ],

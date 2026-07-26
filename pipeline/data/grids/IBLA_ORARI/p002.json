@@ -33,7 +33,113 @@
      "n": "11",
      "x": 248.3,
      "label": "(*)"
+    }
+   ],
+   "stops": [
+    {
+     "name": "KM STAZIONAMENTI",
+     "km": [],
+     "times": {}
     },
+    {
+     "name": "C.bello di Licata P.zza della Vittoria",
+     "km": [
+      "5,0"
+     ],
+     "times": {
+      "1": "9.00"
+     },
+     "kind": "Capolinea di Partenza"
+    },
+    {
+     "name": "Ravanusa P.zza Crispi",
+     "km": [
+      "5,0",
+      "32,0"
+     ],
+     "times": {
+      "1": "9.07"
+     },
+     "kind": "Fermata intermedia"
+    },
+    {
+     "name": "32 Fermata intermedia",
+     "km": [],
+     "times": {
+      "1": "9.47"
+     }
+    },
+    {
+     "name": "Lido Bellia P.zzale Lido",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Lido Mollarella P.zzale Lido",
+     "km": [
+      "10,0"
+     ],
+     "times": {
+      "1": "9.55"
+     },
+     "kind": "Capolinea di Arrivo"
+    },
+    {
+     "name": "C.bello di Licata P.zza della Vittoria",
+     "km": [
+      "5,0"
+     ],
+     "times": {
+      "7": "9.15"
+     },
+     "kind": "Capolinea di Partenza"
+    },
+    {
+     "name": "Ravanusa P.zza Crispi",
+     "km": [
+      "5,0",
+      "32,0"
+     ],
+     "times": {
+      "7": "9.22"
+     },
+     "kind": "Fermata intermedia"
+    },
+    {
+     "name": "Lido Bellia P.zzale Lido",
+     "km": [
+      "32,0"
+     ],
+     "times": {
+      "7": "10.02"
+     },
+     "kind": "Fermata intermedia"
+    },
+    {
+     "name": "Lido Mollarella P.zzale Lido",
+     "km": [
+      "10,0"
+     ],
+     "times": {
+      "7": "10.10"
+     },
+     "kind": "Capolinea di Arrivo"
+    },
+    {
+     "name": "SOLO IL SABATO, SOLO LA DOMENICA, ETC….",
+     "km": [],
+     "times": {
+      "7": "-"
+     }
+    }
+   ],
+   "prescriptions": [
+    "Prescrizioni d'Esercizio"
+   ],
+   "spacing": 30.6
+  },
+  {
+   "corse": [
     {
      "n": "2",
      "x": 614.2,
@@ -67,99 +173,97 @@
    ],
    "stops": [
     {
-     "name": "di Licata P.zza della Vittoria C.bello di Licata P.zza della Vittoria",
+     "name": "KM",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "C.bello di Licata P.zza della Vittoria",
      "km": [
       "5,0"
      ],
      "times": {
-      "1": "9.00",
       "2": "11.00"
      },
-     "kind": "di Partenza Capolinea di Partenza"
+     "kind": "Capolinea di Partenza"
     },
     {
-     "name": "P.zza Crispi Ravanusa P.zza Crispi",
+     "name": "Ravanusa P.zza Crispi",
      "km": [
       "5,0",
       "32,0"
      ],
      "times": {
-      "1": "9.07",
       "2": "10.53"
      },
-     "kind": "intermedia Fermata intermedia"
+     "kind": "Fermata intermedia"
     },
     {
-     "name": "Bellia P.zzale Lido Lido Bellia P.zzale Lido",
+     "name": "Fermata intermedia 10",
      "km": [],
      "times": {
-      "1": "9.47",
       "2": "10.13"
-     },
-     "kind": "intermedia Fermata intermedia"
+     }
     },
     {
-     "name": "Mollarella P.zzale Lido Lido Mollarella P.zzale Lido",
+     "name": "Lido Bellia P.zzale Lido",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Lido Mollarella P.zzale Lido",
      "km": [
       "10,0"
      ],
      "times": {
-      "1": "9.55",
       "2": "10.05"
      },
-     "kind": "di Arrivo Capolinea di Arrivo"
+     "kind": "Capolinea di Arrivo"
     },
     {
-     "name": "di Licata P.zza della Vittoria C.bello di Licata P.zza della Vittoria",
+     "name": "C.bello di Licata P.zza della Vittoria",
      "km": [
       "5,0"
      ],
      "times": {
-      "7": "9.15",
       "8": "19.55"
      },
-     "kind": "di Partenza Capolinea di Partenza"
+     "kind": "Capolinea di Partenza"
     },
     {
-     "name": "P.zza Crispi Ravanusa P.zza Crispi",
+     "name": "Ravanusa P.zza Crispi",
      "km": [
       "5,0",
       "32,0"
      ],
      "times": {
-      "7": "9.22",
       "8": "19.48"
      },
-     "kind": "intermedia Fermata intermedia"
+     "kind": "Fermata intermedia"
     },
     {
-     "name": "Bellia P.zzale Lido Lido Bellia P.zzale Lido",
+     "name": "Fermata intermedia 10",
      "km": [
       "32,0"
      ],
      "times": {
-      "7": "10.02",
       "8": "19.08"
-     },
-     "kind": "intermedia Fermata intermedia"
+     }
     },
     {
-     "name": "Mollarella P.zzale Lido Lido Mollarella P.zzale Lido",
+     "name": "Lido Bellia P.zzale Lido",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Lido Mollarella P.zzale Lido",
      "km": [
       "10,0"
      ],
      "times": {
-      "7": "10.10",
       "8": "19.00"
      },
-     "kind": "di Arrivo Capolinea di Arrivo"
-    },
-    {
-     "name": "SOLO LA DOMENICA, ETC….",
-     "km": [],
-     "times": {
-      "7": "-"
-     }
+     "kind": "Capolinea di Arrivo"
     }
    ],
    "prescriptions": [

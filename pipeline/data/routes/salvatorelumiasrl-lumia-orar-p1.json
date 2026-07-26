@@ -4,6 +4,7 @@
  "name": "CATTOLICA ERACLEA - AGRIGENTO Q.Spinasanta",
  "source": "SALVATORELUMIASRL__LUMIA_ORARI(1)/p001.json",
  "prescriptions": [
+  "Prescrizioni d'Esercizio",
   "Prescrizioni d'Esercizio"
  ],
  "directions": [
@@ -309,7 +310,21 @@
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CATTOLICA ERACLEA",
+    "MONTALLEGRO",
+    "SICULIANA",
+    "REALMONTE",
+    "DURRUELI",
+    "P.EMPEDOCLE",
+    "AGRIGENTO",
+    "AGRIGENTO Q.Spinasanta"
+   ],
+   "trips": [
     {
      "corsa": "2",
      "service": {
@@ -603,5 +618,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

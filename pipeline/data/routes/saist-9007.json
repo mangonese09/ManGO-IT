@@ -1,0 +1,146 @@
+{
+ "operator": "SAIS Trasporti",
+ "route_id": "saist-9007",
+ "name": "Caltanissetta - Cefalù (SAIS Trasporti 9007)",
+ "short_name": "9007",
+ "source": "saistrasporti.it webapi (OD-matrix, sampled w/c 2026-07-27)",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "CALTANISSETTA",
+    "CEFALÙ",
+    "RESUTTANO BV."
+   ],
+   "trips": [
+    {
+     "corsa": "0830",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 0,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "CEFALÙ",
+       "idx": 1,
+       "arr": "10.00",
+       "dep": "10.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0910",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RESUTTANO BV.",
+       "idx": 0,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "CEFALÙ",
+       "idx": 1,
+       "arr": "10.00",
+       "dep": "10.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CEFALÙ",
+    "CALTANISSETTA"
+   ],
+   "trips": [
+    {
+     "corsa": "1800",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CEFALÙ",
+       "idx": 0,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 1,
+       "arr": "19.30",
+       "dep": "19.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

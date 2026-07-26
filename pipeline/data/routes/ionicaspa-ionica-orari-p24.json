@@ -1,22 +1,23 @@
 {
  "operator": "Ionica",
  "route_id": "ionicaspa-ionica-orari-p24",
- "name": "Roccafiorita - Ospedale Villa Sirina Giardini Ospedale Villa Sirina",
+ "name": "Roccafiorita - I Giardini Ospedale Villa Sirina Giardini Ospedale Villa Sirina",
  "source": "IONICASpA__IONICA_ORARI/p024.json",
  "prescriptions": [
+  "Prescrizioni d'Esercizio Divieto di servizio locale da Roccalumera a Messina e vv. estremi compresi -",
   "Prescrizioni d'Esercizio Divieto di servizio locale da Roccalumera a Messina e vv. estremi compresi -"
  ],
  "directions": [
   {
    "stops": [
     "Roccafiorita",
-    "Limina",
-    "Scifì",
-    "(Bivio) Sant'Alessio (Bivio)",
-    "(Via nazionale) Sant'Alessio (Via nazionale)",
-    "Letojanni",
-    "Taormina",
-    "Ospedale Villa Sirina Giardini Ospedale Villa Sirina"
+    "I Limina Limina",
+    "I Scifì Scifì",
+    "I Sant'Alessio (Bivio) Sant'Alessio (Bivio)",
+    "I Sant'Alessio (Via nazionale) Sant'Alessio (Via nazionale)",
+    "I Letojanni Letojanni",
+    "I Taormina Taormina",
+    "I Giardini Ospedale Villa Sirina Giardini Ospedale Villa Sirina"
    ],
    "trips": [
     {
@@ -36,50 +37,64 @@
        "dep": "6.30"
       },
       {
-       "stop": "Limina",
+       "stop": "I Limina Limina",
        "idx": 1,
        "arr": "6.35",
        "dep": "6.35"
       },
       {
-       "stop": "Scifì",
+       "stop": "I Scifì Scifì",
        "idx": 2,
        "arr": "7.00",
        "dep": "7.00"
       },
       {
-       "stop": "(Bivio) Sant'Alessio (Bivio)",
+       "stop": "I Sant'Alessio (Bivio) Sant'Alessio (Bivio)",
        "idx": 3,
        "arr": "7.10",
        "dep": "7.10"
       },
       {
-       "stop": "(Via nazionale) Sant'Alessio (Via nazionale)",
+       "stop": "I Sant'Alessio (Via nazionale) Sant'Alessio (Via nazionale)",
        "idx": 4,
        "arr": "7.15",
        "dep": "7.15"
       },
       {
-       "stop": "Letojanni",
+       "stop": "I Letojanni Letojanni",
        "idx": 5,
        "arr": "7.25",
        "dep": "7.25"
       },
       {
-       "stop": "Taormina",
+       "stop": "I Taormina Taormina",
        "idx": 6,
        "arr": "7.45",
        "dep": "7.45"
       },
       {
-       "stop": "Ospedale Villa Sirina Giardini Ospedale Villa Sirina",
+       "stop": "I Giardini Ospedale Villa Sirina Giardini Ospedale Villa Sirina",
        "idx": 7,
        "arr": "8.00",
        "dep": "8.00"
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "I orario",
+    "I orario",
+    "I",
+    "I orario",
+    "I orario",
+    "I orario",
+    "I orario",
+    "0 orario"
+   ],
+   "trips": [
     {
      "corsa": "4",
      "service": {
@@ -91,49 +106,49 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "Ospedale Villa Sirina Giardini Ospedale Villa Sirina",
+       "stop": "0 orario",
        "idx": 7,
        "arr": "13.00",
        "dep": "13.00"
       },
       {
-       "stop": "Taormina",
+       "stop": "I orario",
        "idx": 6,
        "arr": "13.15",
        "dep": "13.15"
       },
       {
-       "stop": "Letojanni",
+       "stop": "I orario",
        "idx": 5,
        "arr": "13.35",
        "dep": "13.35"
       },
       {
-       "stop": "(Via nazionale) Sant'Alessio (Via nazionale)",
+       "stop": "I orario",
        "idx": 4,
        "arr": "13.50",
        "dep": "13.50"
       },
       {
-       "stop": "(Bivio) Sant'Alessio (Bivio)",
+       "stop": "I orario",
        "idx": 3,
        "arr": "15.55",
        "dep": "15.55"
       },
       {
-       "stop": "Scifì",
+       "stop": "I",
        "idx": 2,
        "arr": "14.05",
        "dep": "14.05"
       },
       {
-       "stop": "Limina",
+       "stop": "I orario",
        "idx": 1,
        "arr": "14.25",
        "dep": "14.25"
       },
       {
-       "stop": "Roccafiorita",
+       "stop": "I orario",
        "idx": 0,
        "arr": "14.30",
        "dep": "14.30"
@@ -143,5 +158,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

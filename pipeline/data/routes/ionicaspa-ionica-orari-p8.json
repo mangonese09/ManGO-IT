@@ -1,20 +1,21 @@
 {
  "operator": "Ionica",
  "route_id": "ionicaspa-ionica-orari-p8",
- "name": "Misserio - Messina",
+ "name": "Misserio - I Messina Messina",
  "source": "IONICASpA__IONICA_ORARI/p008.json",
  "prescriptions": [
+  "Prescrizioni d'Esercizio Divieto di servizio locale da Roccalumera a Messina e vv. estremi compresi",
   "Prescrizioni d'Esercizio Divieto di servizio locale da Roccalumera a Messina e vv. estremi compresi"
  ],
  "directions": [
   {
    "stops": [
     "Misserio",
-    "Giardino",
-    "Barracca Santa Teresa Barracca",
-    "Bucalo Santa Teresa Bucalo",
-    "Furci Siculo",
-    "Messina"
+    "I Giardino Giardino",
+    "I Santa Teresa Barracca Santa Teresa Barracca",
+    "I Santa Teresa Bucalo Santa Teresa Bucalo",
+    "I Furci Siculo Furci Siculo",
+    "I Messina Messina"
    ],
    "trips": [
     {
@@ -34,31 +35,31 @@
        "dep": "6.30"
       },
       {
-       "stop": "Giardino",
+       "stop": "I Giardino Giardino",
        "idx": 1,
        "arr": "6.40",
        "dep": "6.40"
       },
       {
-       "stop": "Barracca Santa Teresa Barracca",
+       "stop": "I Santa Teresa Barracca Santa Teresa Barracca",
        "idx": 2,
        "arr": "6.55",
        "dep": "6.55"
       },
       {
-       "stop": "Bucalo Santa Teresa Bucalo",
+       "stop": "I Santa Teresa Bucalo Santa Teresa Bucalo",
        "idx": 3,
        "arr": "7.00",
        "dep": "7.00"
       },
       {
-       "stop": "Furci Siculo",
+       "stop": "I Furci Siculo Furci Siculo",
        "idx": 4,
        "arr": "7.05",
        "dep": "7.05"
       },
       {
-       "stop": "Messina",
+       "stop": "I Messina Messina",
        "idx": 5,
        "arr": "7.50",
        "dep": "7.50"
@@ -83,26 +84,38 @@
        "dep": "7.10"
       },
       {
-       "stop": "Giardino",
+       "stop": "I Giardino Giardino",
        "idx": 1,
        "arr": "7.20",
        "dep": "7.20"
       },
       {
-       "stop": "Barracca Santa Teresa Barracca",
+       "stop": "I Santa Teresa Barracca Santa Teresa Barracca",
        "idx": 2,
        "arr": "7.35",
        "dep": "7.35"
       },
       {
-       "stop": "Bucalo Santa Teresa Bucalo",
+       "stop": "I Santa Teresa Bucalo Santa Teresa Bucalo",
        "idx": 3,
        "arr": "7.40",
        "dep": "7.40"
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "I orario",
+    "I orario",
+    "I orario",
+    "I orario",
+    "I orario",
+    "I orario"
+   ],
+   "trips": [
     {
      "corsa": "4",
      "service": {
@@ -114,37 +127,37 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "Messina",
+       "stop": "I orario",
        "idx": 5,
        "arr": "13.55",
        "dep": "13.55"
       },
       {
-       "stop": "Furci Siculo",
+       "stop": "I orario",
        "idx": 4,
        "arr": "14.40",
        "dep": "14.40"
       },
       {
-       "stop": "Bucalo Santa Teresa Bucalo",
+       "stop": "I orario",
        "idx": 3,
        "arr": "14.45",
        "dep": "14.45"
       },
       {
-       "stop": "Barracca Santa Teresa Barracca",
+       "stop": "I orario",
        "idx": 2,
        "arr": "14.50",
        "dep": "14.50"
       },
       {
-       "stop": "Giardino",
+       "stop": "I orario",
        "idx": 1,
        "arr": "15.10",
        "dep": "15.10"
       },
       {
-       "stop": "Misserio",
+       "stop": "I orario",
        "idx": 0,
        "arr": "15.25",
        "dep": "15.25"
@@ -154,5 +167,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": true
 }

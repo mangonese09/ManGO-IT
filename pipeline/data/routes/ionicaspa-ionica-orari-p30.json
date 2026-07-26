@@ -1,23 +1,24 @@
 {
  "operator": "Ionica",
  "route_id": "ionicaspa-ionica-orari-p30",
- "name": "Canigliari Antillo Canigliari - Bucalo Santa Teresa Bucalo",
+ "name": "Antillo Canigliari - Santa Teresa Bucalo",
  "source": "IONICASpA__IONICA_ORARI/p030.json",
  "prescriptions": [
+  "Prescrizioni d'Esercizio Divieto di servizio locale da Roccalumera a Messina e vv. estremi compresi - Divieto di carico per Messina al bivio Scifì -S.Alessio sulla ss.114 e vv.",
   "Prescrizioni d'Esercizio Divieto di servizio locale da Roccalumera a Messina e vv. estremi compresi - Divieto di carico per Messina al bivio Scifì -S.Alessio sulla ss.114 e vv."
  ],
  "directions": [
   {
    "stops": [
-    "Canigliari Antillo Canigliari",
+    "Antillo Canigliari",
     "Antillo",
-    "Scifì",
-    "Fadarechi I",
-    "Casalvecchio I",
-    "Savoca I",
-    "(Bivio Scifì) Sant'Alessio (Bivio Scifì)",
-    "Barracca Santa Teresa Barracca",
-    "Bucalo Santa Teresa Bucalo"
+    "I Scifi' Scifì",
+    "I Fadarechi Fadarechi",
+    "I Casalvecchio Casalvecchio",
+    "I Savoca Savoca",
+    "I Sant'Alessio (Bivio Scifì) Sant'Alessio (Bivio Scifì)",
+    "Santa Teresa Barracca",
+    "Santa Teresa Bucalo"
    ],
    "trips": [
     {
@@ -31,7 +32,7 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "Canigliari Antillo Canigliari",
+       "stop": "Antillo Canigliari",
        "idx": 0,
        "arr": "15.00",
        "dep": "15.00"
@@ -43,31 +44,31 @@
        "dep": "15.05"
       },
       {
-       "stop": "Fadarechi I",
+       "stop": "I Fadarechi Fadarechi",
        "idx": 3,
        "arr": "15.25",
        "dep": "15.25"
       },
       {
-       "stop": "Casalvecchio I",
+       "stop": "I Casalvecchio Casalvecchio",
        "idx": 4,
        "arr": "15.40",
        "dep": "15.40"
       },
       {
-       "stop": "Savoca I",
+       "stop": "I Savoca Savoca",
        "idx": 5,
        "arr": "15.45",
        "dep": "15.45"
       },
       {
-       "stop": "Barracca Santa Teresa Barracca",
+       "stop": "Santa Teresa Barracca",
        "idx": 7,
        "arr": "15.55",
        "dep": "15.55"
       },
       {
-       "stop": "Bucalo Santa Teresa Bucalo",
+       "stop": "Santa Teresa Bucalo",
        "idx": 8,
        "arr": "16.00",
        "dep": "16.00"
@@ -86,7 +87,7 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "Canigliari Antillo Canigliari",
+       "stop": "Antillo Canigliari",
        "idx": 0,
        "arr": "7.00",
        "dep": "7.00"
@@ -98,25 +99,25 @@
        "dep": "7.05"
       },
       {
-       "stop": "Scifì",
+       "stop": "I Scifi' Scifì",
        "idx": 2,
        "arr": "7.35",
        "dep": "7.35"
       },
       {
-       "stop": "(Bivio Scifì) Sant'Alessio (Bivio Scifì)",
+       "stop": "I Sant'Alessio (Bivio Scifì) Sant'Alessio (Bivio Scifì)",
        "idx": 6,
        "arr": "7.50",
        "dep": "7.50"
       },
       {
-       "stop": "Barracca Santa Teresa Barracca",
+       "stop": "Santa Teresa Barracca",
        "idx": 7,
        "arr": "7.55",
        "dep": "7.55"
       },
       {
-       "stop": "Bucalo Santa Teresa Bucalo",
+       "stop": "Santa Teresa Bucalo",
        "idx": 8,
        "arr": "8.00",
        "dep": "8.00"
@@ -135,7 +136,7 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "Canigliari Antillo Canigliari",
+       "stop": "Antillo Canigliari",
        "idx": 0,
        "arr": "9.00",
        "dep": "9.00"
@@ -147,38 +148,50 @@
        "dep": "9.05"
       },
       {
-       "stop": "Fadarechi I",
+       "stop": "I Fadarechi Fadarechi",
        "idx": 3,
        "arr": "9.26",
        "dep": "9.26"
       },
       {
-       "stop": "Casalvecchio I",
+       "stop": "I Casalvecchio Casalvecchio",
        "idx": 4,
        "arr": "9.40",
        "dep": "9.40"
       },
       {
-       "stop": "Savoca I",
+       "stop": "I Savoca Savoca",
        "idx": 5,
        "arr": "9.46",
        "dep": "9.46"
       },
       {
-       "stop": "Barracca Santa Teresa Barracca",
+       "stop": "Santa Teresa Barracca",
        "idx": 7,
        "arr": "9.55",
        "dep": "9.55"
       },
       {
-       "stop": "Bucalo Santa Teresa Bucalo",
+       "stop": "Santa Teresa Bucalo",
        "idx": 8,
        "arr": "10.00",
        "dep": "10.00"
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "GIORNALIERAFERIALE",
+    "I orario",
+    "I orario",
+    "I orario",
+    "I orario",
+    "I orario"
+   ],
+   "trips": [
     {
      "corsa": "4",
      "service": {
@@ -190,37 +203,19 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "Bucalo Santa Teresa Bucalo",
-       "idx": 8,
-       "arr": "13.35",
-       "dep": "13.35"
-      },
-      {
-       "stop": "Barracca Santa Teresa Barracca",
-       "idx": 7,
-       "arr": "13.40",
-       "dep": "13.40"
-      },
-      {
-       "stop": "(Bivio Scifì) Sant'Alessio (Bivio Scifì)",
-       "idx": 6,
+       "stop": "I orario",
+       "idx": 5,
        "arr": "13.45",
        "dep": "13.45"
       },
       {
-       "stop": "Scifì",
-       "idx": 2,
+       "stop": "I orario",
+       "idx": 1,
        "arr": "14.00",
        "dep": "14.00"
       },
       {
-       "stop": "Antillo",
-       "idx": 1,
-       "arr": "14.30",
-       "dep": "14.30"
-      },
-      {
-       "stop": "Canigliari Antillo Canigliari",
+       "stop": "GIORNALIERAFERIALE",
        "idx": 0,
        "arr": "14.35",
        "dep": "14.35"
@@ -239,37 +234,19 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "Bucalo Santa Teresa Bucalo",
-       "idx": 8,
-       "arr": "5.30",
-       "dep": "5.30"
-      },
-      {
-       "stop": "Barracca Santa Teresa Barracca",
-       "idx": 7,
-       "arr": "5.35",
-       "dep": "5.35"
-      },
-      {
-       "stop": "(Bivio Scifì) Sant'Alessio (Bivio Scifì)",
-       "idx": 6,
+       "stop": "I orario",
+       "idx": 5,
        "arr": "5.40",
        "dep": "5.40"
       },
       {
-       "stop": "Scifì",
-       "idx": 2,
+       "stop": "I orario",
+       "idx": 1,
        "arr": "5.55",
        "dep": "5.55"
       },
       {
-       "stop": "Antillo",
-       "idx": 1,
-       "arr": "6.25",
-       "dep": "6.25"
-      },
-      {
-       "stop": "Canigliari Antillo Canigliari",
+       "stop": "GIORNALIERAFERIALE",
        "idx": 0,
        "arr": "6.30",
        "dep": "6.30"
@@ -288,43 +265,25 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "Bucalo Santa Teresa Bucalo",
-       "idx": 8,
-       "arr": "11.50",
-       "dep": "11.50"
-      },
-      {
-       "stop": "Barracca Santa Teresa Barracca",
-       "idx": 7,
-       "arr": "11.55",
-       "dep": "11.55"
-      },
-      {
-       "stop": "Savoca I",
-       "idx": 5,
+       "stop": "I orario",
+       "idx": 4,
        "arr": "12.05",
        "dep": "12.05"
       },
       {
-       "stop": "Casalvecchio I",
-       "idx": 4,
+       "stop": "I orario",
+       "idx": 3,
        "arr": "12.10",
        "dep": "12.10"
       },
       {
-       "stop": "Fadarechi I",
-       "idx": 3,
+       "stop": "I orario",
+       "idx": 2,
        "arr": "12.26",
        "dep": "12.26"
       },
       {
-       "stop": "Antillo",
-       "idx": 1,
-       "arr": "12.40",
-       "dep": "12.40"
-      },
-      {
-       "stop": "Canigliari Antillo Canigliari",
+       "stop": "GIORNALIERAFERIALE",
        "idx": 0,
        "arr": "12.45",
        "dep": "12.45"
@@ -334,5 +293,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

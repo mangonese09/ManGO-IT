@@ -1,0 +1,1344 @@
+{
+ "operator": "SAIS Trasporti",
+ "route_id": "saist-9028",
+ "name": "Caltanissetta - Campobello Di Licata (SAIS Trasporti 9028)",
+ "short_name": "9028",
+ "source": "saistrasporti.it webapi (OD-matrix, sampled w/c 2026-07-27)",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "CALTANISSETTA",
+    "DELIA",
+    "SOMMATINO",
+    "CAMPOBELLO DI LICATA",
+    "RAVANUSA"
+   ],
+   "trips": [
+    {
+     "corsa": "0650",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 0,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "DELIA",
+       "idx": 1,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "SOMMATINO",
+       "idx": 2,
+       "arr": "7.40",
+       "dep": "7.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0730",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 0,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "SOMMATINO",
+       "idx": 1,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1015",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 0,
+       "arr": "10.15",
+       "dep": "10.15"
+      },
+      {
+       "stop": "DELIA",
+       "idx": 1,
+       "arr": "10.50",
+       "dep": "10.50"
+      },
+      {
+       "stop": "SOMMATINO",
+       "idx": 2,
+       "arr": "11.15",
+       "dep": "11.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1230",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 0,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "DELIA",
+       "idx": 1,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "SOMMATINO",
+       "idx": 2,
+       "arr": "13.20",
+       "dep": "13.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1300",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 0,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "SOMMATINO",
+       "idx": 1,
+       "arr": "13.50",
+       "dep": "13.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1315",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 0,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "DELIA",
+       "idx": 1,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "SOMMATINO",
+       "idx": 2,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1330",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 0,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "DELIA",
+       "idx": 1,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "SOMMATINO",
+       "idx": 2,
+       "arr": "14.20",
+       "dep": "14.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1615",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 0,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "DELIA",
+       "idx": 1,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "SOMMATINO",
+       "idx": 2,
+       "arr": "17.05",
+       "dep": "17.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1945",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 0,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 1,
+       "arr": "21.05",
+       "dep": "21.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1945",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 0,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 1,
+       "arr": "20.55",
+       "dep": "20.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1945",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 0,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "DELIA",
+       "idx": 1,
+       "arr": "20.20",
+       "dep": "20.20"
+      },
+      {
+       "stop": "SOMMATINO",
+       "idx": 2,
+       "arr": "20.35",
+       "dep": "20.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1945",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 0,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "DELIA",
+       "idx": 1,
+       "arr": "20.20",
+       "dep": "20.20"
+      },
+      {
+       "stop": "SOMMATINO",
+       "idx": 2,
+       "arr": "20.35",
+       "dep": "20.35"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 3,
+       "arr": "20.55",
+       "dep": "20.55"
+      },
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 4,
+       "arr": "21.05",
+       "dep": "21.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1620",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 0,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "SOMMATINO",
+       "idx": 1,
+       "arr": "16.50",
+       "dep": "16.50"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CAMPOBELLO DI LICATA",
+    "SOMMATINO",
+    "DELIA",
+    "CALTANISSETTA",
+    "RAVANUSA",
+    "GUASTAFERRO"
+   ],
+   "trips": [
+    {
+     "corsa": "1620",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 0,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "SOMMATINO",
+       "idx": 1,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "DELIA",
+       "idx": 2,
+       "arr": "17.05",
+       "dep": "17.05"
+      },
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 3,
+       "arr": "17.40",
+       "dep": "17.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1620",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 0,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "DELIA",
+       "idx": 1,
+       "arr": "17.05",
+       "dep": "17.05"
+      },
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 2,
+       "arr": "17.40",
+       "dep": "17.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1630",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "RAVANUSA",
+       "idx": 0,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "SOMMATINO",
+       "idx": 1,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "DELIA",
+       "idx": 2,
+       "arr": "17.05",
+       "dep": "17.05"
+      },
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 3,
+       "arr": "17.40",
+       "dep": "17.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0545",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "SOMMATINO",
+       "idx": 0,
+       "arr": "5.45",
+       "dep": "5.45"
+      },
+      {
+       "stop": "DELIA",
+       "idx": 1,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 2,
+       "arr": "6.35",
+       "dep": "6.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0650",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "SOMMATINO",
+       "idx": 0,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "GUASTAFERRO",
+       "idx": 1,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 2,
+       "arr": "7.30",
+       "dep": "7.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0800",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "SOMMATINO",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "DELIA",
+       "idx": 1,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 2,
+       "arr": "8.50",
+       "dep": "8.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1320",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "SOMMATINO",
+       "idx": 0,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 1,
+       "arr": "13.50",
+       "dep": "13.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1425",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "SOMMATINO",
+       "idx": 0,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "DELIA",
+       "idx": 1,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 2,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1430",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "SOMMATINO",
+       "idx": 0,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 1,
+       "arr": "15.20",
+       "dep": "15.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0600",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "DELIA",
+       "idx": 0,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 1,
+       "arr": "6.35",
+       "dep": "6.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0815",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "DELIA",
+       "idx": 0,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 1,
+       "arr": "8.50",
+       "dep": "8.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1440",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "DELIA",
+       "idx": 0,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 1,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1505",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "DELIA",
+       "idx": 0,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "SOMMATINO",
+       "idx": 1,
+       "arr": "15.35",
+       "dep": "15.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2020",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "DELIA",
+       "idx": 0,
+       "arr": "20.20",
+       "dep": "20.20"
+      },
+      {
+       "stop": "CAMPOBELLO DI LICATA",
+       "idx": 1,
+       "arr": "21.05",
+       "dep": "21.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2020",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "DELIA",
+       "idx": 0,
+       "arr": "20.20",
+       "dep": "20.20"
+      },
+      {
+       "stop": "RAVANUSA",
+       "idx": 1,
+       "arr": "20.55",
+       "dep": "20.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1235",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "GUASTAFERRO",
+       "idx": 0,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "DELIA",
+       "idx": 1,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "SOMMATINO",
+       "idx": 2,
+       "arr": "13.20",
+       "dep": "13.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1305",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "GUASTAFERRO",
+       "idx": 0,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "SOMMATINO",
+       "idx": 1,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "CALTANISSETTA",
+       "idx": 2,
+       "arr": "14.30",
+       "dep": "14.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1320",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "GUASTAFERRO",
+       "idx": 0,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "DELIA",
+       "idx": 1,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "SOMMATINO",
+       "idx": 2,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1620",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "GUASTAFERRO",
+       "idx": 0,
+       "arr": "16.20",
+       "dep": "16.20"
+      },
+      {
+       "stop": "DELIA",
+       "idx": 1,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "SOMMATINO",
+       "idx": 2,
+       "arr": "17.05",
+       "dep": "17.05"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

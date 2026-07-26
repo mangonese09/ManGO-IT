@@ -4,6 +4,7 @@
  "name": "Santo Stefano Quisquina-Prizzi-Lercara Friddi",
  "source": "PULEO_ORARI/p001.json",
  "prescriptions": [
+  "Prescrizioni d'Esercizio",
   "Prescrizioni d'Esercizio"
  ],
  "directions": [
@@ -11,7 +12,7 @@
    "stops": [
     "S.Stefano Quisquina (Piazza Europa)",
     "Prizzi",
-    "Lercara Friddi(V.le delle Rose Lercara Friddi 0.0"
+    "40.0 Lercara Friddi(V.le delle Rose"
    ],
    "trips": [
     {
@@ -37,14 +38,23 @@
        "dep": "7.50"
       },
       {
-       "stop": "Lercara Friddi(V.le delle Rose Lercara Friddi 0.0",
+       "stop": "40.0 Lercara Friddi(V.le delle Rose",
        "idx": 2,
        "arr": "8.15",
        "dep": "8.15"
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "S.Stefano Quisquina orario",
+    "Prizzi orario",
+    "Lercara Friddi 0.0 orario"
+   ],
+   "trips": [
     {
      "corsa": "6",
      "service": {
@@ -56,19 +66,19 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "Lercara Friddi(V.le delle Rose Lercara Friddi 0.0",
+       "stop": "Lercara Friddi 0.0 orario",
        "idx": 2,
        "arr": "13.45",
        "dep": "13.45"
       },
       {
-       "stop": "Prizzi",
+       "stop": "Prizzi orario",
        "idx": 1,
        "arr": "14.10",
        "dep": "14.10"
       },
       {
-       "stop": "S.Stefano Quisquina (Piazza Europa)",
+       "stop": "S.Stefano Quisquina orario",
        "idx": 0,
        "arr": "14.35",
        "dep": "14.35"
@@ -78,5 +88,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

@@ -1,9 +1,11 @@
 {
  "operator": "Magistro",
  "route_id": "magistrosrl-orari-magistro-p1",
- "name": "TORTORICI - l'autobus dell'autolinea C.da Forte-Messina.L'impresa è autorizzata a convogliare al bivio di Piraino sull'autolinea proveniente da Tortorici",
+ "name": "TORTORICI - proveniente da Tortorici, con l'autobus dell'autolinea C.da Forte-Messina.L'impresa",
  "source": "MAGISTROSRL__ORARI_MAGISTRO/p001.json",
  "prescriptions": [
+  "Prescrizioni d'Esercizio",
+  "Divieto di servizio locale tra Capo D'Orlando e Messina, e vv,estremi compresi.E' fatto obbligo di porre in coincidenza a Brolo città,l'autobus proveniente da Tortorici, con l'autobus dell'autolinea C.da Forte-Messina.L'impresa è autorizzata a convogliare al bivio di Piraino sull'autolinea provenien",
   "Prescrizioni d'Esercizio",
   "Divieto di servizio locale tra Capo D'Orlando e Messina, e vv,estremi compresi.E' fatto obbligo di porre in coincidenza a Brolo città,l'autobus proveniente da Tortorici, con l'autobus dell'autolinea C.da Forte-Messina.L'impresa è autorizzata a convogliare al bivio di Piraino sull'autolinea provenien"
  ],
@@ -12,10 +14,10 @@
    "stops": [
     "TORTORICI ( Piazza Faranda)",
     "S.GIORGIO (Bivio Sfaranda",
-    "SFARANDASFARANDA+==",
+    "+ SFARANDA",
     "S.GIORGIO (Bivio Sfaranda",
     "CASTELL'UMBERTO (Centro)",
-    "FICHERUZZA in",
+    "in A/20 in A/20 FICHERUZZA",
     "NASO (Bazia)",
     "MAINA",
     "CAPO D'ORLANDO (FF.SS. Staz.)",
@@ -26,7 +28,7 @@
     "PATTI (Svincolo A20)",
     "MESSINA ( Via S.M. Alemanna)",
     "MESSINA POLICLINICO",
-    "l'autobus dell'autolinea C.da Forte-Messina.L'impresa è autorizzata a convogliare al bivio di Piraino sull'autolinea proveniente da Tortorici"
+    "proveniente da Tortorici, con l'autobus dell'autolinea C.da Forte-Messina.L'impresa"
    ],
    "trips": [
     {
@@ -83,7 +85,7 @@
        "dep": "5.00"
       },
       {
-       "stop": "SFARANDASFARANDA+==",
+       "stop": "+ SFARANDA",
        "idx": 2,
        "arr": "5.05",
        "dep": "5.05"
@@ -101,7 +103,7 @@
        "dep": "5.15"
       },
       {
-       "stop": "FICHERUZZA in",
+       "stop": "in A/20 in A/20 FICHERUZZA",
        "idx": 5,
        "arr": "5.20",
        "dep": "5.20"
@@ -339,7 +341,7 @@
        "dep": "6.30"
       },
       {
-       "stop": "SFARANDASFARANDA+==",
+       "stop": "+ SFARANDA",
        "idx": 2,
        "arr": "6.35",
        "dep": "6.35"
@@ -357,7 +359,7 @@
        "dep": "6.50"
       },
       {
-       "stop": "FICHERUZZA in",
+       "stop": "in A/20 in A/20 FICHERUZZA",
        "idx": 5,
        "arr": "6.55",
        "dep": "6.55"
@@ -473,7 +475,7 @@
        "dep": "7.05"
       },
       {
-       "stop": "FICHERUZZA in",
+       "stop": "in A/20 in A/20 FICHERUZZA",
        "idx": 5,
        "arr": "7.10",
        "dep": "7.10"
@@ -510,7 +512,7 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "SFARANDASFARANDA+==",
+       "stop": "+ SFARANDA",
        "idx": 2,
        "arr": "7.00",
        "dep": "7.00"
@@ -528,7 +530,7 @@
        "dep": "7.10"
       },
       {
-       "stop": "FICHERUZZA in",
+       "stop": "in A/20 in A/20 FICHERUZZA",
        "idx": 5,
        "arr": "7.15",
        "dep": "7.15"
@@ -657,7 +659,7 @@
        "dep": "12.40"
       },
       {
-       "stop": "FICHERUZZA in",
+       "stop": "in A/20 in A/20 FICHERUZZA",
        "idx": 5,
        "arr": "12.50",
        "dep": "12.50"
@@ -706,7 +708,7 @@
        "dep": "15.10"
       },
       {
-       "stop": "SFARANDASFARANDA+==",
+       "stop": "+ SFARANDA",
        "idx": 2,
        "arr": "15.15",
        "dep": "15.15"
@@ -724,7 +726,7 @@
        "dep": "15.30"
       },
       {
-       "stop": "FICHERUZZA in",
+       "stop": "in A/20 in A/20 FICHERUZZA",
        "idx": 5,
        "arr": "15.35",
        "dep": "15.35"
@@ -767,7 +769,29 @@
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "TORTORICI ( Piazza Faranda)",
+    "S.GIORGIO (Bivio Sfaranda",
+    "SFARANDA +",
+    "S.GIORGIO (Bivio Sfaranda",
+    "CASTELL'UMBERTO (Centro)",
+    "in FICHERUZZA in",
+    "NASO (Bazia)",
+    "MAINA",
+    "CAPO D'ORLANDO (FF.SS. Staz.)",
+    "BROLO (Bv. Staz. F.S.)",
+    "PIRAINO (Bivio S.Angelo SS. 113)",
+    "GIOIOSA MAREA (P.zza Roma)",
+    "PATTI (Piazza Marconi)",
+    "PATTI (Svincolo A20)",
+    "MESSINA ( Via S.M. Alemanna)",
+    "MESSINA POLICLINICO"
+   ],
+   "trips": [
     {
      "corsa": "2",
      "service": {
@@ -797,7 +821,7 @@
        "dep": "7.55"
       },
       {
-       "stop": "FICHERUZZA in",
+       "stop": "in FICHERUZZA in",
        "idx": 5,
        "arr": "8.00",
        "dep": "8.00"
@@ -889,7 +913,7 @@
        "dep": "10.55"
       },
       {
-       "stop": "FICHERUZZA in",
+       "stop": "in FICHERUZZA in",
        "idx": 5,
        "arr": "11.00",
        "dep": "11.00"
@@ -907,7 +931,7 @@
        "dep": "11.20"
       },
       {
-       "stop": "SFARANDASFARANDA+==",
+       "stop": "SFARANDA +",
        "idx": 2,
        "arr": "11.25",
        "dep": "11.25"
@@ -993,7 +1017,7 @@
        "dep": "13.25"
       },
       {
-       "stop": "FICHERUZZA in",
+       "stop": "in FICHERUZZA in",
        "idx": 5,
        "arr": "13.30",
        "dep": "13.30"
@@ -1054,7 +1078,7 @@
        "dep": "13.30"
       },
       {
-       "stop": "FICHERUZZA in",
+       "stop": "in FICHERUZZA in",
        "idx": 5,
        "arr": "13.35",
        "dep": "13.35"
@@ -1072,7 +1096,7 @@
        "dep": "13.45"
       },
       {
-       "stop": "SFARANDASFARANDA+==",
+       "stop": "SFARANDA +",
        "idx": 2,
        "arr": "13.50",
        "dep": "13.50"
@@ -1140,7 +1164,7 @@
        "dep": "14.10"
       },
       {
-       "stop": "FICHERUZZA in",
+       "stop": "in FICHERUZZA in",
        "idx": 5,
        "arr": "14.15",
        "dep": "14.15"
@@ -1274,7 +1298,7 @@
        "dep": "14.50"
       },
       {
-       "stop": "FICHERUZZA in",
+       "stop": "in FICHERUZZA in",
        "idx": 5,
        "arr": "14.55",
        "dep": "14.55"
@@ -1292,7 +1316,7 @@
        "dep": "15.05"
       },
       {
-       "stop": "SFARANDASFARANDA+==",
+       "stop": "SFARANDA +",
        "idx": 2,
        "arr": "15.15",
        "dep": "15.15"
@@ -1481,7 +1505,7 @@
        "dep": "19.45"
       },
       {
-       "stop": "FICHERUZZA in",
+       "stop": "in FICHERUZZA in",
        "idx": 5,
        "arr": "19.55",
        "dep": "19.55"
@@ -1499,7 +1523,7 @@
        "dep": "20.05"
       },
       {
-       "stop": "SFARANDASFARANDA+==",
+       "stop": "SFARANDA +",
        "idx": 2,
        "arr": "20.15",
        "dep": "20.15"
@@ -1558,5 +1582,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

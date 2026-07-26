@@ -33,7 +33,60 @@
      "n": "11",
      "x": 256.4,
      "label": "(*)"
+    }
+   ],
+   "stops": [
+    {
+     "name": "KM STAZIONAMENTI",
+     "km": [],
+     "times": {}
     },
+    {
+     "name": "Ravanusa P.zza Crispi",
+     "km": [
+      "8,1"
+     ],
+     "times": {
+      "3": "18.30"
+     },
+     "kind": "Capolinea di Partenza"
+    },
+    {
+     "name": "C.bello di Licata P.zza della Vittoria",
+     "km": [
+      "5,0",
+      "3,1"
+     ],
+     "times": {
+      "3": "18.40"
+     },
+     "kind": "Fermata intermedia"
+    },
+    {
+     "name": "Stazione FS P.zzale Stazione",
+     "km": [
+      "8,1"
+     ],
+     "times": {
+      "3": "18.45"
+     },
+     "kind": "Capolinea di Arrivo"
+    },
+    {
+     "name": "SOLO IL SABATO, SOLO LA DOMENICA, ETC….",
+     "km": [],
+     "times": {
+      "7": "-"
+     }
+    }
+   ],
+   "prescriptions": [
+    "Prescrizioni d'Esercizio"
+   ],
+   "spacing": 30.1
+  },
+  {
+   "corse": [
     {
      "n": "2",
      "x": 616.3,
@@ -67,45 +120,57 @@
    ],
    "stops": [
     {
-     "name": "P.zza Crispi Ravanusa P.zza Crispi",
+     "name": "KM",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "GIORNALIERA",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Capolinea di Partenza orario",
      "km": [
       "8,1"
      ],
      "times": {
-      "3": "18.30",
       "4": "19.20"
-     },
-     "kind": "di Partenza Capolinea di Partenza"
+     }
     },
     {
-     "name": "di Licata P.zza della Vittoria C.bello di Licata P.zza della Vittoria",
+     "name": "Ravanusa P.zza Crispi",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Fermata intermedia orario",
      "km": [
       "5,0",
       "3,1"
      ],
      "times": {
-      "3": "18.40",
       "4": "19.15"
-     },
-     "kind": "intermedia Fermata intermedia"
+     }
     },
     {
-     "name": "FS P.zzale Stazione Stazione FS P.zzale Stazione",
+     "name": "C.bello di Licata P.zza della Vittoria",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Capolinea di Arrivo orario",
      "km": [
       "8,1"
      ],
      "times": {
-      "3": "18.45",
       "4": "19.05"
-     },
-     "kind": "di Arrivo Capolinea di Arrivo"
+     }
     },
     {
-     "name": "SOLO LA DOMENICA, ETC….",
+     "name": "Stazione FS P.zzale Stazione",
      "km": [],
-     "times": {
-      "7": "-"
-     }
+     "times": {}
     }
    ],
    "prescriptions": [

@@ -1,22 +1,23 @@
 {
  "operator": "Ionica",
  "route_id": "ionicaspa-ionica-orari-p15",
- "name": "Rina - Ali Terme",
+ "name": "Rina - I Ali Terme Ali Terme",
  "source": "IONICASpA__IONICA_ORARI/p015.json",
  "prescriptions": [
+  "Prescrizioni d'Esercizio Divieto di servizio locale da Roccalumera a Ali Terme e vv. estremi compresi -",
   "Prescrizioni d'Esercizio Divieto di servizio locale da Roccalumera a Ali Terme e vv. estremi compresi -"
  ],
  "directions": [
   {
    "stops": [
     "Rina",
-    "Contura",
-    "di Paola S.Francesco di Paola",
-    "Barracca Santa Teresa Barracca",
-    "Bucalo Santa Teresa Bucalo",
-    "Furci Siculo",
-    "Roccalumera",
-    "Ali Terme"
+    "I Contura Contura",
+    "I S.Francesco di Paola S.Francesco di Paola",
+    "I Santa Teresa Barracca Santa Teresa Barracca",
+    "I Santa Teresa Bucalo Santa Teresa Bucalo",
+    "I Furci Siculo Furci Siculo",
+    "I Roccalumera Roccalumera",
+    "I Ali Terme Ali Terme"
    ],
    "trips": [
     {
@@ -36,50 +37,64 @@
        "dep": "7.15"
       },
       {
-       "stop": "Contura",
+       "stop": "I Contura Contura",
        "idx": 1,
        "arr": "7.20",
        "dep": "7.20"
       },
       {
-       "stop": "di Paola S.Francesco di Paola",
+       "stop": "I S.Francesco di Paola S.Francesco di Paola",
        "idx": 2,
        "arr": "7.25",
        "dep": "7.25"
       },
       {
-       "stop": "Barracca Santa Teresa Barracca",
+       "stop": "I Santa Teresa Barracca Santa Teresa Barracca",
        "idx": 3,
        "arr": "7.30",
        "dep": "7.30"
       },
       {
-       "stop": "Bucalo Santa Teresa Bucalo",
+       "stop": "I Santa Teresa Bucalo Santa Teresa Bucalo",
        "idx": 4,
        "arr": "7.35",
        "dep": "7.35"
       },
       {
-       "stop": "Furci Siculo",
+       "stop": "I Furci Siculo Furci Siculo",
        "idx": 5,
        "arr": "7.40",
        "dep": "7.40"
       },
       {
-       "stop": "Roccalumera",
+       "stop": "I Roccalumera Roccalumera",
        "idx": 6,
        "arr": "7.45",
        "dep": "7.45"
       },
       {
-       "stop": "Ali Terme",
+       "stop": "I Ali Terme Ali Terme",
        "idx": 7,
        "arr": "8.00",
        "dep": "8.00"
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "I orario",
+    "I orario",
+    "I orario",
+    "I orario",
+    "I orario",
+    "I orario",
+    "I orario",
+    "0 orario"
+   ],
+   "trips": [
     {
      "corsa": "6",
      "service": {
@@ -91,49 +106,49 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "Ali Terme",
+       "stop": "0 orario",
        "idx": 7,
        "arr": "13.30",
        "dep": "13.30"
       },
       {
-       "stop": "Roccalumera",
+       "stop": "I orario",
        "idx": 6,
        "arr": "13.45",
        "dep": "13.45"
       },
       {
-       "stop": "Furci Siculo",
+       "stop": "I orario",
        "idx": 5,
        "arr": "13.50",
        "dep": "13.50"
       },
       {
-       "stop": "Bucalo Santa Teresa Bucalo",
+       "stop": "I orario",
        "idx": 4,
        "arr": "14.00",
        "dep": "14.00"
       },
       {
-       "stop": "Barracca Santa Teresa Barracca",
+       "stop": "I orario",
        "idx": 3,
        "arr": "14.05",
        "dep": "14.05"
       },
       {
-       "stop": "di Paola S.Francesco di Paola",
+       "stop": "I orario",
        "idx": 2,
        "arr": "14.10",
        "dep": "14.10"
       },
       {
-       "stop": "Contura",
+       "stop": "I orario",
        "idx": 1,
        "arr": "14.15",
        "dep": "14.15"
       },
       {
-       "stop": "Rina",
+       "stop": "I orario",
        "idx": 0,
        "arr": "14.20",
        "dep": "14.20"
@@ -143,5 +158,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

@@ -28,7 +28,102 @@
      "n": "9",
      "x": 261.4,
      "label": "(*)"
+    }
+   ],
+   "stops": [
+    {
+     "name": "KM",
+     "km": [],
+     "times": {}
     },
+    {
+     "name": "Valledolmo-Piazza Olmo",
+     "km": [
+      "0,0",
+      "0,0",
+      "20,2",
+      "24,0"
+     ],
+     "times": {
+      "1": "7.10",
+      "3": "13.30"
+     },
+     "kind": "Capolinea di Partenza"
+    },
+    {
+     "name": "Marcatobianco",
+     "km": [
+      "16,3"
+     ],
+     "times": {
+      "1": "7.30"
+     },
+     "kind": "Fermata intermedia"
+    },
+    {
+     "name": "Alia-Piazza Guccione",
+     "km": [],
+     "times": {
+      "1": "7.50",
+      "3": "13.50"
+     },
+     "kind": "Fermata intermedia"
+    },
+    {
+     "name": "Alia-Chianchitelle",
+     "km": [
+      "24,0",
+      "20,2",
+      "0,0",
+      "0,0"
+     ],
+     "times": {
+      "1": "7.55",
+      "3": "13.55"
+     },
+     "kind": "Capolinea di Arrivo"
+    },
+    {
+     "name": "Valledolmo-Piazza Olmo",
+     "km": [
+      "0,0"
+     ],
+     "times": {
+      "1": "7.10"
+     },
+     "kind": "Capolinea di Partenza"
+    },
+    {
+     "name": "Vicari-Via Vitt. Emanuele",
+     "km": [
+      "39,5"
+     ],
+     "times": {
+      "1": "8.10"
+     },
+     "kind": "Capolinea di Arrivo"
+    },
+    {
+     "name": "tratto Alia-Vicari",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "SOLO IL SABATO, SOLO LA DOMENICA, ETC….",
+     "km": [],
+     "times": {
+      "5": "-"
+     }
+    }
+   ],
+   "prescriptions": [
+    "Prescrizioni d'Esercizio",
+    "Divieto servizio locale sul tratto Alia-Vicari"
+   ],
+   "spacing": 21.8
+  },
+  {
+   "corse": [
     {
      "n": "2",
      "x": 646.2,
@@ -57,12 +152,17 @@
    ],
    "stops": [
     {
-     "name": "KM",
+     "name": "KM KM",
      "km": [],
      "times": {}
     },
     {
-     "name": "Valledolmo-Piazza Olmo Valledolmo-Piazza Olmo",
+     "name": "GIORNALIERA",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Capolinea di Arrivo orario",
      "km": [
       "0,0",
       "0,0",
@@ -70,37 +170,44 @@
       "24,0"
      ],
      "times": {
-      "1": "7.10",
-      "3": "13.30",
       "2": "8.25",
       "4": "14.50"
-     },
-     "kind": "Capolinea di Partenza Capolinea di Arrivo"
+     }
     },
     {
-     "name": "Marcatobianco Marcatobianco",
+     "name": "Valledolmo-Piazza Olmo",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Fermata intermedia orario",
      "km": [
       "16,3"
      ],
      "times": {
-      "1": "7.30",
       "4": "14.25"
-     },
-     "kind": "Fermata intermedia Fermata intermedia"
+     }
     },
     {
-     "name": "Alia-Piazza Guccione Alia-Piazza Guccione",
+     "name": "Marcatobianco",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Fermata intermedia orario",
      "km": [],
      "times": {
-      "1": "7.50",
-      "3": "13.50",
       "2": "8.00",
       "4": "14.15"
-     },
-     "kind": "Fermata intermedia Fermata intermedia"
+     }
     },
     {
-     "name": "Alia-Chianchitelle Alia-Chianchitelle",
+     "name": "Alia-Piazza Guccione",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Capolinea di Partenza orario",
      "km": [
       "24,0",
       "20,2",
@@ -108,41 +215,42 @@
       "0,0"
      ],
      "times": {
-      "1": "7.55",
-      "3": "13.55",
       "2": "7.55",
       "4": "14.10"
-     },
-     "kind": "Capolinea di Arrivo Capolinea di Partenza"
+     }
     },
     {
-     "name": "Valledolmo-Piazza Olmo Valledolmo-Piazza Olmo",
+     "name": "Alia-Chianchitelle",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Capolinea di Arrivo orario",
      "km": [
       "0,0"
      ],
      "times": {
-      "1": "7.10",
       "2": "15.10"
-     },
-     "kind": "Capolinea di Partenza Capolinea di Arrivo"
+     }
     },
     {
-     "name": "Vicari-Via Vitt. Emanuele Vicari-Via Vitt. Emanuele",
+     "name": "Valledolmo-Piazza Olmo",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Capolinea di Partenza orario",
      "km": [
       "39,5"
      ],
      "times": {
-      "1": "8.10",
       "2": "14.10"
-     },
-     "kind": "Capolinea di Arrivo Capolinea di Partenza"
+     }
     },
     {
-     "name": "LA DOMENICA, ETC….",
+     "name": "Vicari-Via Vitt. Emanuele",
      "km": [],
-     "times": {
-      "5": "-"
-     }
+     "times": {}
     }
    ],
    "prescriptions": [

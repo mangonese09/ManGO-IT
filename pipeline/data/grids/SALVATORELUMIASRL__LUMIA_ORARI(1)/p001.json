@@ -48,7 +48,166 @@
      "n": "17",
      "x": 247.4,
      "label": "FERIALE"
+    }
+   ],
+   "stops": [
+    {
+     "name": "KM",
+     "km": [],
+     "times": {}
     },
+    {
+     "name": "CATTOLICA ERACLEA",
+     "km": [
+      "47,5"
+     ],
+     "times": {
+      "1": "6.15",
+      "3": "6.50",
+      "5": "7.00",
+      "7": "9.00",
+      "9": "14.40",
+      "11": "15.15",
+      "13": "15.35",
+      "15": "16.30",
+      "17": "18.15"
+     }
+    },
+    {
+     "name": "v.Oreto",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "MONTALLEGRO",
+     "km": [
+      "9,2",
+      "38,3"
+     ],
+     "times": {
+      "1": "6.30",
+      "3": "7.05",
+      "5": "7.15",
+      "7": "9.15",
+      "9": "14.55",
+      "11": "15.30",
+      "13": "15.50",
+      "15": "16.45",
+      "17": "18.30"
+     }
+    },
+    {
+     "name": "v.Vittorio Emanuele II",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "SICULIANA",
+     "km": [
+      "20,4",
+      "27,1"
+     ],
+     "times": {
+      "3": "7.20",
+      "5": "7.30"
+     }
+    },
+    {
+     "name": "v.Roma",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "REALMONTE",
+     "km": [
+      "26,0",
+      "21,5"
+     ],
+     "times": {
+      "3": "7.30",
+      "5": "7.40"
+     }
+    },
+    {
+     "name": "v.Rina",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "DURRUELI",
+     "km": [
+      "29,6",
+      "17,9"
+     ],
+     "times": {
+      "3": "7.35",
+      "5": "7.45"
+     }
+    },
+    {
+     "name": "Bivio SS115",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "P.EMPEDOCLE",
+     "km": [
+      "33,8",
+      "13,7"
+     ],
+     "times": {
+      "3": "7.45",
+      "5": "7.55"
+     }
+    },
+    {
+     "name": "SS 115 semafori",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "AGRIGENTO",
+     "km": [
+      "43,8",
+      "3,7"
+     ],
+     "times": {
+      "3": "8.00",
+      "5": "8.10"
+     }
+    },
+    {
+     "name": "P.Rosselli",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "AGRIGENTO Q.Spinasanta",
+     "km": [
+      "47,5"
+     ],
+     "times": {
+      "3": "8.05"
+     }
+    },
+    {
+     "name": "C.da Calcarelle",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "M.della Catena n.2);RIBERA(v.Circonvallazione)",
+     "km": [],
+     "times": {}
+    }
+   ],
+   "prescriptions": [
+    "Prescrizioni d'Esercizio"
+   ],
+   "spacing": 23.8
+  },
+  {
+   "corse": [
     {
      "n": "2",
      "x": 512.8,
@@ -97,25 +256,16 @@
    ],
    "stops": [
     {
-     "name": "KM FERIALE",
+     "name": "KM",
      "km": [],
      "times": {}
     },
     {
-     "name": "CATTOLICA ERACLEA CATTOLICA ERACLEA",
+     "name": "CATTOLICA ERACLEA",
      "km": [
       "47,5"
      ],
      "times": {
-      "1": "6.15",
-      "3": "6.50",
-      "5": "7.00",
-      "7": "9.00",
-      "9": "14.40",
-      "11": "15.15",
-      "13": "15.35",
-      "15": "16.30",
-      "17": "18.15",
       "2": "6.55",
       "4": "8.45",
       "6": "9.30",
@@ -128,26 +278,17 @@
      }
     },
     {
-     "name": "v.Oreto v.Oreto",
+     "name": "v.Oreto",
      "km": [],
      "times": {}
     },
     {
-     "name": "MONTALLEGRO MONTALLEGRO",
+     "name": "MONTALLEGRO",
      "km": [
       "9,2",
       "38,3"
      ],
      "times": {
-      "1": "6.30",
-      "3": "7.05",
-      "5": "7.15",
-      "7": "9.15",
-      "9": "14.55",
-      "11": "15.30",
-      "13": "15.50",
-      "15": "16.45",
-      "17": "18.30",
       "2": "6.40",
       "4": "8.30",
       "6": "9.15",
@@ -160,117 +301,101 @@
      }
     },
     {
-     "name": "v.Vittorio Emanuele II v.Vittorio Emanuele II",
+     "name": "v.Vittorio Emanuele II",
      "km": [],
      "times": {}
     },
     {
-     "name": "SICULIANA SICULIANA",
+     "name": "SICULIANA",
      "km": [
       "20,4",
       "27,1"
      ],
      "times": {
-      "3": "7.20",
-      "5": "7.30",
       "8": "13.50",
       "10": "14.50"
      }
     },
     {
-     "name": "v.Roma v.Roma",
+     "name": "v.Roma",
      "km": [],
      "times": {}
     },
     {
-     "name": "REALMONTE REALMONTE",
+     "name": "REALMONTE",
      "km": [
       "26,0",
       "21,5"
      ],
      "times": {
-      "3": "7.30",
-      "5": "7.40",
       "8": "13.40",
       "10": "14.45"
      }
     },
     {
-     "name": "v.Rina v.Rina",
+     "name": "v.Rina",
      "km": [],
      "times": {}
     },
     {
-     "name": "DURRUELI DURRUELI",
+     "name": "DURRUELI",
      "km": [
       "29,6",
       "17,9"
      ],
      "times": {
-      "3": "7.35",
-      "5": "7.45",
       "8": "13.35",
       "10": "14.40"
      }
     },
     {
-     "name": "Bivio SS115 Bivio SS115",
+     "name": "Bivio SS115",
      "km": [],
      "times": {}
     },
     {
-     "name": "P.EMPEDOCLE P.EMPEDOCLE",
+     "name": "P.EMPEDOCLE",
      "km": [
       "33,8",
       "13,7"
      ],
      "times": {
-      "3": "7.45",
-      "5": "7.55",
       "8": "13.25",
       "10": "14.35"
      }
     },
     {
-     "name": "SS 115 semafori SS 115 semafori",
+     "name": "SS 115 semafori",
      "km": [],
      "times": {}
     },
     {
-     "name": "AGRIGENTO AGRIGENTO",
+     "name": "AGRIGENTO",
      "km": [
       "43,8",
       "3,7"
      ],
      "times": {
-      "3": "8.00",
-      "5": "8.10",
       "8": "13.10",
       "10": "14.20"
      }
     },
     {
-     "name": "P.Rosselli P.Rosselli",
+     "name": "P.Rosselli",
      "km": [],
      "times": {}
     },
     {
-     "name": "AGRIGENTO Q.Spinasanta AGRIGENTO Q.Spinasanta",
+     "name": "AGRIGENTO Q.Spinasanta",
      "km": [
       "47,5"
      ],
      "times": {
-      "3": "8.05",
       "8": "13.05"
      }
     },
     {
-     "name": "C.da Calcarelle C.da Calcarelle",
-     "km": [],
-     "times": {}
-    },
-    {
-     "name": "M.della Catena n.2);RIBERA(v.Circonvallazione)",
+     "name": "C.da Calcarelle",
      "km": [],
      "times": {}
     }

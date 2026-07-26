@@ -33,7 +33,142 @@
      "n": "11",
      "x": 197.1,
      "label": "(*)"
+    }
+   ],
+   "stops": [
+    {
+     "name": "KM KM",
+     "km": [],
+     "times": {}
     },
+    {
+     "name": "CAMPOREALE-P.ZA DELLE MIMOSE",
+     "km": [
+      "0,0",
+      "31,6"
+     ],
+     "times": {
+      "3": "6.40"
+     }
+    },
+    {
+     "name": "CAMPOREALE-P.ZA MARCONI",
+     "km": [
+      "2,5",
+      "29,1"
+     ],
+     "times": {
+      "3": "6.45"
+     }
+    },
+    {
+     "name": "BIVIO RAPITALA'",
+     "km": [
+      "7,7",
+      "23,9"
+     ],
+     "times": {
+      "3": "6.50"
+     }
+    },
+    {
+     "name": "GRISI' C.SO V. EMANUELE",
+     "km": [
+      "13,6",
+      "18,0"
+     ],
+     "times": {
+      "3": "7.00"
+     }
+    },
+    {
+     "name": "S.S. 113 KM",
+     "km": [
+      "23,4",
+      "314,5"
+     ],
+     "times": {
+      "3": "7.17"
+     }
+    },
+    {
+     "name": "S.S. 186 KM",
+     "km": [
+      "28,1",
+      "29,1",
+      "314,5",
+      "8,2"
+     ],
+     "times": {
+      "3": "7.20"
+     }
+    },
+    {
+     "name": "S.S. 186 KM",
+     "km": [
+      "28,4",
+      "28,8"
+     ],
+     "times": {
+      "3": "7.21"
+     }
+    },
+    {
+     "name": "S.S. 186 KM (OSPEDALE)",
+     "km": [
+      "29,0",
+      "28,2",
+      "1,1"
+     ],
+     "times": {
+      "3": "7.22"
+     }
+    },
+    {
+     "name": "PARTINICO Via Benevento>Via Taranto",
+     "km": [
+      "29,5",
+      "0,6"
+     ],
+     "times": {
+      "3": "7.25"
+     }
+    },
+    {
+     "name": "PARTINICO Via Aldo Moro Stadio",
+     "km": [
+      "31,0",
+      "0,2"
+     ],
+     "times": {
+      "3": "7.28"
+     }
+    },
+    {
+     "name": "PARTINICO Piazza Duomo",
+     "km": [
+      "31,6",
+      "0,0"
+     ],
+     "times": {
+      "3": "7.30"
+     }
+    },
+    {
+     "name": "SOLO IL SABATO, SOLO LA DOMENICA, ETC….",
+     "km": [],
+     "times": {
+      "9": "-"
+     }
+    }
+   ],
+   "prescriptions": [
+    "Prescrizioni d'Esercizio"
+   ],
+   "spacing": 29.1
+  },
+  {
+   "corse": [
     {
      "n": "2",
      "x": 648.0,
@@ -67,24 +202,27 @@
    ],
    "stops": [
     {
-     "name": "DELLE MIMOSE CAMPOREALE-P.ZA DELLE MIMOSE",
+     "name": "KM KM",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "CAMPOREALE-P.ZA DELLE MIMOSE",
      "km": [
       "0,0",
       "31,6"
      ],
      "times": {
-      "3": "6.40",
       "4": "15.20"
      }
     },
     {
-     "name": "MARCONI CAMPOREALE-P.ZA MARCONI",
+     "name": "CAMPOREALE-P.ZA MARCONI",
      "km": [
       "2,5",
       "29,1"
      ],
      "times": {
-      "3": "6.45",
       "4": "15.15"
      }
     },
@@ -95,18 +233,16 @@
       "23,9"
      ],
      "times": {
-      "3": "6.50",
       "4": "15.10"
      }
     },
     {
-     "name": "V. EMANUELE GRISI' C.SO V. EMANUELE",
+     "name": "GRISI' C.SO V. EMANUELE",
      "km": [
       "13,6",
       "18,0"
      ],
      "times": {
-      "3": "7.00",
       "4": "15.00"
      }
     },
@@ -119,60 +255,48 @@
       "8,2"
      ],
      "times": {
-      "3": "7.20",
       "4": "14.43"
      }
     },
     {
-     "name": "(OSPEDALE) PARTINICO Via Principe Umberto,308",
+     "name": "PARTINICO Via Principe Umberto,308",
      "km": [
       "29,0",
       "28,2",
       "1,1"
      ],
      "times": {
-      "3": "7.22",
       "4": "14.39"
      }
     },
     {
-     "name": "Via Benevento>Via Taranto PARTINICO Largo Modica",
+     "name": "PARTINICO Largo Modica",
      "km": [
       "29,5",
       "0,6"
      ],
      "times": {
-      "3": "7.25",
       "4": "14.37"
      }
     },
     {
-     "name": "Via Aldo Moro Stadio PARTINICO C.so dei Mille,",
+     "name": "PARTINICO C.so dei Mille, 252",
      "km": [
       "31,0",
       "0,2"
      ],
      "times": {
-      "3": "7.28",
       "4": "14.35"
      }
     },
     {
-     "name": "Piazza Duomo PARTINICO Piazza Duomo",
+     "name": "PARTINICO Piazza Duomo",
      "km": [
       "31,6",
       "0,0"
      ],
      "times": {
-      "3": "7.30",
       "4": "14.30"
-     }
-    },
-    {
-     "name": "ETC….",
-     "km": [],
-     "times": {
-      "9": "-"
      }
     }
    ],

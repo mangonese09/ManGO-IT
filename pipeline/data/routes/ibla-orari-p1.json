@@ -4,14 +4,15 @@
  "name": "IBLA TOUR S.C. - VIA EDISON, 7 - 92029 RAVANUSA (AG) Codice",
  "source": "IBLA_ORARI/p001.json",
  "prescriptions": [
+  "Prescrizioni d'Esercizio",
   "Prescrizioni d'Esercizio"
  ],
  "directions": [
   {
    "stops": [
-    "P.zza Crispi Ravanusa P.zza Crispi",
-    "di Licata P.zza della Vittoria C.bello di Licata P.zza della Vittoria",
-    "FS P.zzale Stazione Stazione FS P.zzale Stazione"
+    "Ravanusa P.zza Crispi",
+    "C.bello di Licata P.zza della Vittoria",
+    "Stazione FS P.zzale Stazione"
    ],
    "trips": [
     {
@@ -25,26 +26,35 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "P.zza Crispi Ravanusa P.zza Crispi",
+       "stop": "Ravanusa P.zza Crispi",
        "idx": 0,
        "arr": "18.30",
        "dep": "18.30"
       },
       {
-       "stop": "di Licata P.zza della Vittoria C.bello di Licata P.zza della Vittoria",
+       "stop": "C.bello di Licata P.zza della Vittoria",
        "idx": 1,
        "arr": "18.40",
        "dep": "18.40"
       },
       {
-       "stop": "FS P.zzale Stazione Stazione FS P.zzale Stazione",
+       "stop": "Stazione FS P.zzale Stazione",
        "idx": 2,
        "arr": "18.45",
        "dep": "18.45"
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "Capolinea di Partenza orario",
+    "Fermata intermedia orario",
+    "Capolinea di Arrivo orario"
+   ],
+   "trips": [
     {
      "corsa": "4",
      "service": {
@@ -56,19 +66,19 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "FS P.zzale Stazione Stazione FS P.zzale Stazione",
+       "stop": "Capolinea di Arrivo orario",
        "idx": 2,
        "arr": "19.05",
        "dep": "19.05"
       },
       {
-       "stop": "di Licata P.zza della Vittoria C.bello di Licata P.zza della Vittoria",
+       "stop": "Fermata intermedia orario",
        "idx": 1,
        "arr": "19.15",
        "dep": "19.15"
       },
       {
-       "stop": "P.zza Crispi Ravanusa P.zza Crispi",
+       "stop": "Capolinea di Partenza orario",
        "idx": 0,
        "arr": "19.20",
        "dep": "19.20"
@@ -78,5 +88,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

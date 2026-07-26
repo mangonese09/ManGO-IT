@@ -33,7 +33,66 @@
      "n": "11",
      "x": 243.1,
      "label": ""
+    }
+   ],
+   "stops": [
+    {
+     "name": "KM KM STAZIONAMENTI",
+     "km": [],
+     "times": {}
     },
+    {
+     "name": "CAMMARATA",
+     "km": [
+      "29,20"
+     ],
+     "times": {
+      "3": "7.10"
+     },
+     "kind": "Capolinea di Partenza"
+    },
+    {
+     "name": "S.STEFANO QUISQUINA",
+     "km": [
+      "22,00",
+      "7,20"
+     ],
+     "times": {
+      "3": "7.50"
+     },
+     "kind": "Fermata intermedia"
+    },
+    {
+     "name": "BIVONA",
+     "km": [
+      "29,20",
+      "0,00"
+     ],
+     "times": {
+      "3": "8.00"
+     },
+     "kind": "Capolinea di Arrivo"
+    },
+    {
+     "name": "BIVONA",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "SOLO IL SABATO, SOLO LA DOMENICA, ETC….",
+     "km": [],
+     "times": {
+      "7": "-"
+     }
+    }
+   ],
+   "prescriptions": [
+    "Prescrizioni d'Esercizio N.1 C.C. SCOLASTICA CAMMARATA - BIVONA"
+   ],
+   "spacing": 24.9
+  },
+  {
+   "corse": [
     {
      "n": "2",
      "x": 594.8,
@@ -67,51 +126,53 @@
    ],
    "stops": [
     {
-     "name": "STAZIONAMENTI KM",
+     "name": "KM KM",
      "km": [],
      "times": {}
     },
     {
-     "name": "CAMMARATA CAMMARATA",
+     "name": "Capolinea di Arrivo orario",
      "km": [
       "29,20"
      ],
      "times": {
-      "3": "7.10",
       "4": "15.05"
-     },
-     "kind": "Capolinea di Partenza Capolinea di Arrivo"
+     }
     },
     {
-     "name": "S.STEFANO QUISQUINA S.STEFANO QUISQUINA",
+     "name": "CAMMARATA",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Fermata intermedia orario",
      "km": [
       "22,00",
       "7,20"
      ],
      "times": {
-      "3": "7.50",
       "4": "14.25"
-     },
-     "kind": "Fermata intermedia Fermata intermedia"
+     }
     },
     {
-     "name": "BIVONA BIVONA",
+     "name": "S.STEFANO QUISQUINA",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Capolinea di Arrivo orario",
      "km": [
       "29,20",
       "0,00"
      ],
      "times": {
-      "3": "8.00",
       "4": "14.15"
-     },
-     "kind": "Capolinea di Arrivo Capolinea di Arrivo"
+     }
     },
     {
-     "name": "LA DOMENICA, ETC….",
+     "name": "BIVONA",
      "km": [],
-     "times": {
-      "7": "-"
-     }
+     "times": {}
     }
    ],
    "prescriptions": [

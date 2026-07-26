@@ -33,7 +33,57 @@
      "n": "11",
      "x": 242.8,
      "label": "FERIALE"
+    }
+   ],
+   "stops": [
+    {
+     "name": "KM KM STAZIONAMENTI",
+     "km": [],
+     "times": {}
     },
+    {
+     "name": "0 ARAGONA ( Via Roma)",
+     "km": [
+      "13,6"
+     ],
+     "times": {
+      "3": "13.30"
+     }
+    },
+    {
+     "name": "S.ELISABETTA ( P. Municipio)",
+     "km": [
+      "8,7",
+      "4,9"
+     ],
+     "times": {
+      "3": "13.50"
+     }
+    },
+    {
+     "name": "RAFFADALI ( Via Nazionale)",
+     "km": [
+      "13,6"
+     ],
+     "times": {
+      "3": "13.55"
+     }
+    },
+    {
+     "name": "-Raffadali",
+     "km": [],
+     "times": {
+      "11": "-"
+     }
+    }
+   ],
+   "prescriptions": [
+    "Prescrizioni d'Esercizio Consentito il carico da Aragona - S.Elisabetta -Raffadali"
+   ],
+   "spacing": 25.1
+  },
+  {
+   "corse": [
     {
      "n": "2",
      "x": 594.6,
@@ -67,38 +117,35 @@
    ],
    "stops": [
     {
-     "name": "STAZIONAMENTI KM",
+     "name": "KM KM",
      "km": [],
      "times": {}
     },
     {
-     "name": "ARAGONA ( Via Roma) ARAGONA ( Via Roma)",
+     "name": "ARAGONA ( Via Roma)",
      "km": [
       "13,6"
      ],
      "times": {
-      "3": "13.30",
       "4": "14.20"
      }
     },
     {
-     "name": "S.ELISABETTA ( P. Municipio) S.ELISABETTA ( P. Municipio)",
+     "name": "S.ELISABETTA ( P. Municipio)",
      "km": [
       "8,7",
       "4,9"
      ],
      "times": {
-      "3": "13.50",
       "4": "14.00"
      }
     },
     {
-     "name": "RAFFADALI ( Via Nazionale) RAFFADALI ( Via Nazionale)",
+     "name": "RAFFADALI ( Via Nazionale) 0",
      "km": [
       "13,6"
      ],
      "times": {
-      "3": "13.55",
       "4": "13.55"
      }
     }

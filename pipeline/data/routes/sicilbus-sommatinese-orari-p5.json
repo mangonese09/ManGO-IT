@@ -1,16 +1,16 @@
 {
  "operator": "Sicilbus",
  "route_id": "sicilbus-sommatinese-orari-p5",
- "name": "orario - orario",
+ "name": "GIORNALIERA - Lido Bellia",
  "source": "SICILBUS__SOMMATINESE_ORARI/p005.json",
  "prescriptions": [],
  "directions": [
   {
    "stops": [
-    "orario",
-    "orario",
-    "orario",
-    "orario"
+    "GIORNALIERA",
+    "Delia",
+    "Sommatino",
+    "Lido Bellia"
    ],
    "trips": [
     {
@@ -24,25 +24,25 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "orario",
+       "stop": "GIORNALIERA",
        "idx": 0,
        "arr": "08.00",
        "dep": "08.00"
       },
       {
-       "stop": "orario",
+       "stop": "Delia",
        "idx": 1,
        "arr": "08.15",
        "dep": "08.15"
       },
       {
-       "stop": "orario",
+       "stop": "Sommatino",
        "idx": 2,
        "arr": "09.05",
        "dep": "09.05"
       },
       {
-       "stop": "orario",
+       "stop": "Lido Bellia",
        "idx": 3,
        "arr": "09.25",
        "dep": "09.25"
@@ -61,25 +61,25 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "orario",
+       "stop": "Lido Bellia",
        "idx": 3,
        "arr": "0.00",
        "dep": "0.00"
       },
       {
-       "stop": "orario",
+       "stop": "Sommatino",
        "idx": 2,
        "arr": "12.00",
        "dep": "12.00"
       },
       {
-       "stop": "orario",
+       "stop": "Delia",
        "idx": 1,
        "arr": "52.50",
        "dep": "52.50"
       },
       {
-       "stop": "orario",
+       "stop": "GIORNALIERA",
        "idx": 0,
        "arr": "60.40",
        "dep": "60.40"
@@ -89,5 +89,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

@@ -1,0 +1,252 @@
+{
+ "operator": "SAIS Trasporti",
+ "route_id": "saist-9008",
+ "name": "Palermo - Marianopoli (SAIS Trasporti 9008)",
+ "short_name": "9008",
+ "source": "saistrasporti.it webapi (OD-matrix, sampled w/c 2026-07-27)",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "PALERMO",
+    "RESUTTANO",
+    "MARIANOPOLI",
+    "RESUTTANO BV."
+   ],
+   "trips": [
+    {
+     "corsa": "1415",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "PALERMO",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "RESUTTANO",
+       "idx": 1,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "MARIANOPOLI",
+       "idx": 2,
+       "arr": "16.15",
+       "dep": "16.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0600",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RESUTTANO BV.",
+       "idx": 0,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "RESUTTANO",
+       "idx": 1,
+       "arr": "6.10",
+       "dep": "6.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1530",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "RESUTTANO BV.",
+       "idx": 0,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "RESUTTANO",
+       "idx": 1,
+       "arr": "15.40",
+       "dep": "15.40"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "RESUTTANO",
+    "RESUTTANO BV.",
+    "MARIANOPOLI",
+    "PALERMO"
+   ],
+   "trips": [
+    {
+     "corsa": "0550",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "RESUTTANO",
+       "idx": 0,
+       "arr": "5.50",
+       "dep": "5.50"
+      },
+      {
+       "stop": "RESUTTANO BV.",
+       "idx": 1,
+       "arr": "6.00",
+       "dep": "6.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1520",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "RESUTTANO",
+       "idx": 0,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "RESUTTANO BV.",
+       "idx": 1,
+       "arr": "15.30",
+       "dep": "15.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0600",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "MARIANOPOLI",
+       "idx": 0,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "RESUTTANO",
+       "idx": 1,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "PALERMO",
+       "idx": 2,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

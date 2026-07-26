@@ -33,7 +33,63 @@
      "n": "11",
      "x": 246.8,
      "label": "scolastica7,207,50"
+    }
+   ],
+   "stops": [
+    {
+     "name": "KM KM STAZIONAMENTI",
+     "km": [],
+     "times": {}
     },
+    {
+     "name": "RAFFADALI",
+     "km": [
+      "16,20"
+     ],
+     "times": {
+      "3": "7.20",
+      "5": "7.20",
+      "7": "7.20",
+      "9": "7.20",
+      "11": "7.20"
+     },
+     "kind": "Capolinea di Partenza"
+    },
+    {
+     "name": "AGRIGENTO",
+     "km": [
+      "16,20",
+      "0,00"
+     ],
+     "times": {
+      "3": "7.50",
+      "5": "7.50",
+      "7": "7.50",
+      "9": "7.50",
+      "11": "7.50"
+     },
+     "kind": "Capolinea di Arrivo"
+    },
+    {
+     "name": "AGRIGENTO FOGLIO 1.",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "SOLO IL SABATO, SOLO LA DOMENICA, ETC….",
+     "km": [],
+     "times": {
+      "9": "-"
+     }
+    }
+   ],
+   "prescriptions": [
+    "Prescrizioni d'Esercizio N.7 C.C. SCOLASTICHE RAFFADALI - AGRIGENTO FOGLIO 1."
+   ],
+   "spacing": 25.1
+  },
+  {
+   "corse": [
     {
      "n": "2",
      "x": 598.5,
@@ -67,60 +123,46 @@
    ],
    "stops": [
     {
-     "name": "STAZIONAMENTI KM",
+     "name": "KM KM",
      "km": [],
      "times": {}
     },
     {
-     "name": "RAFFADALI RAFFADALI",
+     "name": "Capolinea di Arrivo orario",
      "km": [
       "16,20"
      ],
      "times": {
-      "3": "7.20",
-      "5": "7.20",
-      "7": "7.20",
-      "9": "7.20",
-      "11": "7.20",
       "4": "13.00",
       "6": "13.40",
       "8": "13.40",
       "10": "14.35",
       "12": "13.45"
-     },
-     "kind": "Capolinea di Partenza Capolinea di Arrivo"
+     }
     },
     {
-     "name": "AGRIGENTO AGRIGENTO",
+     "name": "RAFFADALI",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "Capolinea di Partenza orario",
      "km": [
       "16,20",
       "0,00"
      ],
      "times": {
-      "3": "7.50",
-      "5": "7.50",
-      "7": "7.50",
-      "9": "7.50",
-      "11": "7.50",
       "4": "12.30",
       "6": "13.10",
       "8": "13.10",
       "10": "14.05",
       "12": "13.15"
-     },
-     "kind": "Capolinea di Arrivo Capolinea di Partenza"
+     }
     },
     {
-     "name": "FOGLIO 1.",
+     "name": "AGRIGENTO",
      "km": [],
      "times": {}
-    },
-    {
-     "name": "SOLO LA DOMENICA, ETC….",
-     "km": [],
-     "times": {
-      "9": "-"
-     }
     }
    ],
    "prescriptions": [

@@ -1,9 +1,12 @@
 {
  "operator": "Zuccala",
  "route_id": "zuccala-orari-p7",
- "name": "LICATA - estremi compresi, tra bivio Falconara e Licata",
+ "name": "0 LICATA - servizio locale, estremi compresi,",
  "source": "ZUCCALA_ORARI/p007.json",
  "prescriptions": [
+  "Prescrizioni d'Esercizio Divieto di servizio locale sul tratto bivio Baiatiche - Riesi. Estremi compresi e per le relazioni Riesi - Barrafranca e",
+  "Riesi - Pietraperzia; divieto do servizio locale, estremi compresi, tra bivio Falconara e Licata",
+  "Prescrizioni d'Esercizio 1 c.c. stagionale dal 1/7 al 31/8 sulla ralazione Licata - De Susino",
   "Prescrizioni d'Esercizio Divieto di servizio locale sul tratto bivio Baiatiche - Riesi. Estremi compresi e per le relazioni Riesi - Barrafranca e",
   "Riesi - Pietraperzia; divieto do servizio locale, estremi compresi, tra bivio Falconara e Licata",
   "Prescrizioni d'Esercizio 1 c.c. stagionale dal 1/7 al 31/8 sulla ralazione Licata - De Susino"
@@ -11,11 +14,11 @@
  "directions": [
   {
    "stops": [
-    "LICATA",
+    "0 LICATA",
     "POGGIO DI GUARDIA",
     "FALCONARA",
     "DESUSINO",
-    "estremi compresi, tra bivio Falconara e Licata"
+    "servizio locale, estremi compresi,"
    ],
    "trips": [
     {
@@ -29,7 +32,7 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "LICATA",
+       "stop": "0 LICATA",
        "idx": 0,
        "arr": "9.30",
        "dep": "9.30"
@@ -66,7 +69,7 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "LICATA",
+       "stop": "0 LICATA",
        "idx": 0,
        "arr": "21.00",
        "dep": "21.00"
@@ -85,7 +88,17 @@
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "LICATA",
+    "POGGIO DI GUARDIA",
+    "FALCONARA",
+    "DESUSINO"
+   ],
+   "trips": [
     {
      "corsa": "4",
      "service": {
@@ -156,5 +169,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

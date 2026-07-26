@@ -5,6 +5,7 @@
  "source": "SALVATORELUMIASRL__LUMIA_ORARI(1)/p015.json",
  "prescriptions": [
   "Prescrizioni d'Esercizio",
+  "Prescrizioni d'Esercizio",
   "Prescrizioni d'Esercizio"
  ],
  "directions": [
@@ -458,7 +459,18 @@
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "SAMBUCA",
+    "MISILBESI",
+    "MENFI",
+    "PORTO PALO",
+    "SCIACCA"
+   ],
+   "trips": [
     {
      "corsa": "16",
      "service": {
@@ -517,5 +529,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

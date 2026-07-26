@@ -33,7 +33,53 @@
      "n": "11",
      "x": 243.4,
      "label": ""
+    }
+   ],
+   "stops": [
+    {
+     "name": "KM KM",
+     "km": [],
+     "times": {}
     },
+    {
+     "name": "AGRIGENTO P.ROSSELLI",
+     "km": [
+      "7,50",
+      "0,0",
+      "9,0",
+      "13,25"
+     ],
+     "times": {
+      "3": "7.55",
+      "5": "8.15"
+     }
+    },
+    {
+     "name": "ARAGONA I.P.I.A E.FERMI",
+     "km": [
+      "8,05",
+      "9,0",
+      "0,0",
+      "13,10"
+     ],
+     "times": {
+      "3": "8.10",
+      "5": "8.30"
+     }
+    },
+    {
+     "name": "DA AGRIGENTO PER L'ISTITUTO \" E. FERMI\" SITO IN TERRITORIO",
+     "km": [],
+     "times": {}
+    }
+   ],
+   "prescriptions": [
+    "Prescrizioni d'Esercizio CARICO ESCLUSIVO DI PASSEGGERI DA AGRIGENTO PER L'ISTITUTO \" E. FERMI\" SITO IN TERRITORIO DI ARAGONA (VIA MINIERA TACCIA CAPI PIRANDELLO ) E VICEVERSA."
+   ],
+   "spacing": 25.1
+  },
+  {
+   "corse": [
     {
      "n": "2",
      "x": 598.7,
@@ -67,12 +113,17 @@
    ],
    "stops": [
     {
-     "name": "KM",
+     "name": "KM KM",
      "km": [],
      "times": {}
     },
     {
-     "name": "P.ROSSELLI AGRIGENTO P.ROSSELLI",
+     "name": "periodo",
+     "km": [],
+     "times": {}
+    },
+    {
+     "name": "AGRIGENTO P.ROSSELLI",
      "km": [
       "7,50",
       "0,0",
@@ -80,14 +131,12 @@
       "13,25"
      ],
      "times": {
-      "3": "7.55",
-      "5": "8.15",
       "4": "13.25",
       "6": "14.15"
      }
     },
     {
-     "name": "I.P.I.A E.FERMI ARAGONA I.P.I.A. E. FERMI",
+     "name": "ARAGONA I.P.I.A. E. FERMI",
      "km": [
       "8,05",
       "9,0",
@@ -95,14 +144,12 @@
       "13,10"
      ],
      "times": {
-      "3": "8.10",
-      "5": "8.30",
       "4": "13.10",
       "6": "14.00"
      }
     },
     {
-     "name": "\" E. FERMI\" SITO IN TERRITORIO DI ARAGONA (VIA MINIERA TACCIA CAPI PIRANDELLO",
+     "name": "DI ARAGONA (VIA MINIERA TACCIA CAPI PIRANDELLO ) E VICEVERSA.",
      "km": [],
      "times": {}
     }

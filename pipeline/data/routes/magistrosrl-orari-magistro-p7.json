@@ -1,28 +1,30 @@
 {
  "operator": "Magistro",
  "route_id": "magistrosrl-orari-magistro-p7",
- "name": "FLORESTA - F.S.) CAPO D'ORLANDO",
+ "name": "+ 13 FLORESTA - CAPO D'ORLANDO",
  "source": "MAGISTROSRL__ORARI_MAGISTRO/p007.json",
  "prescriptions": [
+  "Prescrizioni d'Esercizio",
+  "Divieto di servizio locale tra Brolo Staz. FF.SS. e Capo D'Orlando,estremi compresi",
   "Prescrizioni d'Esercizio",
   "Divieto di servizio locale tra Brolo Staz. FF.SS. e Capo D'Orlando,estremi compresi"
  ],
  "directions": [
   {
    "stops": [
-    "FLORESTA",
-    "BV. FONDACHELLO",
-    "Dante) UCRIA(P.zza Dante)",
+    "+ 13 FLORESTA",
+    "+ BV. FONDACHELLO",
+    "UCRIA(P.zza Dante)",
     "C.DA FORTE",
-    "S.Teodoro) SINAGRA(P.zza S.Teodoro)",
+    "SINAGRA(P.zza S.Teodoro)",
     "C.DA MONACI",
     "C.DA MULINAZZO",
-    "DI NASO(Tratt. Bontempo) FIUMARA DI NASO(Tratt. Bontempo)",
-    "NASO PONTE NASO",
-    "(Staz. F.S.) BROLO (Staz. F.S.)",
-    "NASO PONTE NASO",
-    "GREGORIO C.DA S. GREGORIO",
-    "F.S.) CAPO D'ORLANDO(Staz. F.S.)"
+    "FIUMARA DI NASO(Tratt. Bontempo)",
+    "PONTE NASO",
+    "+3,1 BROLO (Staz. F.S.)",
+    "PONTE NASO",
+    "C.DA S. GREGORIO",
+    "CAPO D'ORLANDO(Staz. F.S.)"
    ],
    "trips": [
     {
@@ -36,7 +38,7 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "Dante) UCRIA(P.zza Dante)",
+       "stop": "UCRIA(P.zza Dante)",
        "idx": 2,
        "arr": "7.00",
        "dep": "7.00"
@@ -48,37 +50,37 @@
        "dep": "7.10"
       },
       {
-       "stop": "S.Teodoro) SINAGRA(P.zza S.Teodoro)",
+       "stop": "SINAGRA(P.zza S.Teodoro)",
        "idx": 4,
        "arr": "7.15",
        "dep": "7.15"
       },
       {
-       "stop": "NASO PONTE NASO",
+       "stop": "PONTE NASO",
        "idx": 8,
        "arr": "7.25",
        "dep": "7.25"
       },
       {
-       "stop": "(Staz. F.S.) BROLO (Staz. F.S.)",
+       "stop": "+3,1 BROLO (Staz. F.S.)",
        "idx": 9,
        "arr": "7.35",
        "dep": "7.35"
       },
       {
-       "stop": "NASO PONTE NASO",
+       "stop": "PONTE NASO",
        "idx": 10,
        "arr": "7.45",
        "dep": "7.45"
       },
       {
-       "stop": "GREGORIO C.DA S. GREGORIO",
+       "stop": "C.DA S. GREGORIO",
        "idx": 11,
        "arr": "7.50",
        "dep": "7.50"
       },
       {
-       "stop": "F.S.) CAPO D'ORLANDO(Staz. F.S.)",
+       "stop": "CAPO D'ORLANDO(Staz. F.S.)",
        "idx": 12,
        "arr": "7.55",
        "dep": "7.55"
@@ -97,13 +99,13 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "FLORESTA",
+       "stop": "+ 13 FLORESTA",
        "idx": 0,
        "arr": "6.30",
        "dep": "6.30"
       },
       {
-       "stop": "Dante) UCRIA(P.zza Dante)",
+       "stop": "UCRIA(P.zza Dante)",
        "idx": 2,
        "arr": "7.00",
        "dep": "7.00"
@@ -115,37 +117,37 @@
        "dep": "7.10"
       },
       {
-       "stop": "S.Teodoro) SINAGRA(P.zza S.Teodoro)",
+       "stop": "SINAGRA(P.zza S.Teodoro)",
        "idx": 4,
        "arr": "7.15",
        "dep": "7.15"
       },
       {
-       "stop": "NASO PONTE NASO",
+       "stop": "PONTE NASO",
        "idx": 8,
        "arr": "7.25",
        "dep": "7.25"
       },
       {
-       "stop": "(Staz. F.S.) BROLO (Staz. F.S.)",
+       "stop": "+3,1 BROLO (Staz. F.S.)",
        "idx": 9,
        "arr": "7.35",
        "dep": "7.35"
       },
       {
-       "stop": "NASO PONTE NASO",
+       "stop": "PONTE NASO",
        "idx": 10,
        "arr": "7.45",
        "dep": "7.45"
       },
       {
-       "stop": "GREGORIO C.DA S. GREGORIO",
+       "stop": "C.DA S. GREGORIO",
        "idx": 11,
        "arr": "7.50",
        "dep": "7.50"
       },
       {
-       "stop": "F.S.) CAPO D'ORLANDO(Staz. F.S.)",
+       "stop": "CAPO D'ORLANDO(Staz. F.S.)",
        "idx": 12,
        "arr": "7.55",
        "dep": "7.55"
@@ -164,13 +166,13 @@
      "reverse": false,
      "stops": [
       {
-       "stop": "BV. FONDACHELLO",
+       "stop": "+ BV. FONDACHELLO",
        "idx": 1,
        "arr": "6.30",
        "dep": "6.30"
       },
       {
-       "stop": "S.Teodoro) SINAGRA(P.zza S.Teodoro)",
+       "stop": "SINAGRA(P.zza S.Teodoro)",
        "idx": 4,
        "arr": "7.10",
        "dep": "7.10"
@@ -188,32 +190,51 @@
        "dep": "7.25"
       },
       {
-       "stop": "DI NASO(Tratt. Bontempo) FIUMARA DI NASO(Tratt. Bontempo)",
+       "stop": "FIUMARA DI NASO(Tratt. Bontempo)",
        "idx": 7,
        "arr": "7.30",
        "dep": "7.30"
       },
       {
-       "stop": "NASO PONTE NASO",
+       "stop": "PONTE NASO",
        "idx": 8,
        "arr": "7.35",
        "dep": "7.35"
       },
       {
-       "stop": "GREGORIO C.DA S. GREGORIO",
+       "stop": "C.DA S. GREGORIO",
        "idx": 11,
        "arr": "7.50",
        "dep": "7.50"
       },
       {
-       "stop": "F.S.) CAPO D'ORLANDO(Staz. F.S.)",
+       "stop": "CAPO D'ORLANDO(Staz. F.S.)",
        "idx": 12,
        "arr": "7.55",
        "dep": "7.55"
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "FLORESTA + 13",
+    "BV. FONDACHELLO +",
+    "UCRIA(P.zza Dante)",
+    "C.DA FORTE",
+    "SINAGRA(P.zza S.Teodoro)",
+    "C.DA MONACI",
+    "C.DA MULINAZZO",
+    "FIUMARA DI NASO(Tratt. Bontempo)",
+    "PONTE NASO",
+    "BROLO (Staz. F.S.) +3,1",
+    "PONTE NASO",
+    "C.DA S. GREGORIO",
+    "CAPO D'ORLANDO(Staz. F.S.)"
+   ],
+   "trips": [
     {
      "corsa": "2",
      "service": {
@@ -225,25 +246,25 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "F.S.) CAPO D'ORLANDO(Staz. F.S.)",
+       "stop": "CAPO D'ORLANDO(Staz. F.S.)",
        "idx": 12,
        "arr": "13.30",
        "dep": "13.30"
       },
       {
-       "stop": "GREGORIO C.DA S. GREGORIO",
+       "stop": "C.DA S. GREGORIO",
        "idx": 11,
        "arr": "13.35",
        "dep": "13.35"
       },
       {
-       "stop": "NASO PONTE NASO",
+       "stop": "PONTE NASO",
        "idx": 10,
        "arr": "13.45",
        "dep": "13.45"
       },
       {
-       "stop": "(Staz. F.S.) BROLO (Staz. F.S.)",
+       "stop": "BROLO (Staz. F.S.) +3,1",
        "idx": 9,
        "arr": "13.55",
        "dep": "13.55"
@@ -262,19 +283,19 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "(Staz. F.S.) BROLO (Staz. F.S.)",
+       "stop": "BROLO (Staz. F.S.) +3,1",
        "idx": 9,
        "arr": "14.15",
        "dep": "14.15"
       },
       {
-       "stop": "NASO PONTE NASO",
+       "stop": "PONTE NASO",
        "idx": 8,
        "arr": "14.20",
        "dep": "14.20"
       },
       {
-       "stop": "DI NASO(Tratt. Bontempo) FIUMARA DI NASO(Tratt. Bontempo)",
+       "stop": "FIUMARA DI NASO(Tratt. Bontempo)",
        "idx": 7,
        "arr": "14.25",
        "dep": "14.25"
@@ -292,7 +313,7 @@
        "dep": "14.35"
       },
       {
-       "stop": "S.Teodoro) SINAGRA(P.zza S.Teodoro)",
+       "stop": "SINAGRA(P.zza S.Teodoro)",
        "idx": 4,
        "arr": "14.40",
        "dep": "14.40"
@@ -304,7 +325,7 @@
        "dep": "14.50"
       },
       {
-       "stop": "Dante) UCRIA(P.zza Dante)",
+       "stop": "UCRIA(P.zza Dante)",
        "idx": 2,
        "arr": "15.00",
        "dep": "15.00"
@@ -323,37 +344,37 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "F.S.) CAPO D'ORLANDO(Staz. F.S.)",
+       "stop": "CAPO D'ORLANDO(Staz. F.S.)",
        "idx": 12,
        "arr": "13.30",
        "dep": "13.30"
       },
       {
-       "stop": "GREGORIO C.DA S. GREGORIO",
+       "stop": "C.DA S. GREGORIO",
        "idx": 11,
        "arr": "13.45",
        "dep": "13.45"
       },
       {
-       "stop": "NASO PONTE NASO",
+       "stop": "PONTE NASO",
        "idx": 10,
        "arr": "13.50",
        "dep": "13.50"
       },
       {
-       "stop": "(Staz. F.S.) BROLO (Staz. F.S.)",
+       "stop": "BROLO (Staz. F.S.) +3,1",
        "idx": 9,
        "arr": "13.55",
        "dep": "13.55"
       },
       {
-       "stop": "NASO PONTE NASO",
+       "stop": "PONTE NASO",
        "idx": 8,
        "arr": "14.00",
        "dep": "14.00"
       },
       {
-       "stop": "S.Teodoro) SINAGRA(P.zza S.Teodoro)",
+       "stop": "SINAGRA(P.zza S.Teodoro)",
        "idx": 4,
        "arr": "14.10",
        "dep": "14.10"
@@ -365,13 +386,13 @@
        "dep": "14.15"
       },
       {
-       "stop": "Dante) UCRIA(P.zza Dante)",
+       "stop": "UCRIA(P.zza Dante)",
        "idx": 2,
        "arr": "14.25",
        "dep": "14.25"
       },
       {
-       "stop": "FLORESTA",
+       "stop": "FLORESTA + 13",
        "idx": 0,
        "arr": "14.55",
        "dep": "14.55"
@@ -390,25 +411,25 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "F.S.) CAPO D'ORLANDO(Staz. F.S.)",
+       "stop": "CAPO D'ORLANDO(Staz. F.S.)",
        "idx": 12,
        "arr": "13.30",
        "dep": "13.30"
       },
       {
-       "stop": "GREGORIO C.DA S. GREGORIO",
+       "stop": "C.DA S. GREGORIO",
        "idx": 11,
        "arr": "13.45",
        "dep": "13.45"
       },
       {
-       "stop": "NASO PONTE NASO",
+       "stop": "PONTE NASO",
        "idx": 10,
        "arr": "13.50",
        "dep": "13.50"
       },
       {
-       "stop": "DI NASO(Tratt. Bontempo) FIUMARA DI NASO(Tratt. Bontempo)",
+       "stop": "FIUMARA DI NASO(Tratt. Bontempo)",
        "idx": 7,
        "arr": "13.55",
        "dep": "13.55"
@@ -426,13 +447,13 @@
        "dep": "14.05"
       },
       {
-       "stop": "S.Teodoro) SINAGRA(P.zza S.Teodoro)",
+       "stop": "SINAGRA(P.zza S.Teodoro)",
        "idx": 4,
        "arr": "14.10",
        "dep": "14.10"
       },
       {
-       "stop": "BV. FONDACHELLO",
+       "stop": "BV. FONDACHELLO +",
        "idx": 1,
        "arr": "14.55",
        "dep": "14.55"
@@ -442,5 +463,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

@@ -1,18 +1,19 @@
 {
  "operator": "Ionica",
  "route_id": "ionicaspa-ionica-orari-p6",
- "name": "Misserio - Bucalo Santa Teresa Bucalo",
+ "name": "Misserio - I Santa Teresa Bucalo Santa Teresa Bucalo",
  "source": "IONICASpA__IONICA_ORARI/p006.json",
  "prescriptions": [
+  "Prescrizioni d'Esercizio Divieto di servizio locale da Roccalumera a Messina e vv. estremi compresi",
   "Prescrizioni d'Esercizio Divieto di servizio locale da Roccalumera a Messina e vv. estremi compresi"
  ],
  "directions": [
   {
    "stops": [
     "Misserio",
-    "Giardino",
-    "Barracca Santa Teresa Barracca",
-    "Bucalo Santa Teresa Bucalo"
+    "I Giardino Giardino",
+    "I Santa Teresa Barracca Santa Teresa Barracca",
+    "I Santa Teresa Bucalo Santa Teresa Bucalo"
    ],
    "trips": [
     {
@@ -32,26 +33,36 @@
        "dep": "8.20"
       },
       {
-       "stop": "Giardino",
+       "stop": "I Giardino Giardino",
        "idx": 1,
        "arr": "8.30",
        "dep": "8.30"
       },
       {
-       "stop": "Barracca Santa Teresa Barracca",
+       "stop": "I Santa Teresa Barracca Santa Teresa Barracca",
        "idx": 2,
        "arr": "8.40",
        "dep": "8.40"
       },
       {
-       "stop": "Bucalo Santa Teresa Bucalo",
+       "stop": "I Santa Teresa Bucalo Santa Teresa Bucalo",
        "idx": 3,
        "arr": "8.50",
        "dep": "8.50"
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "I orario",
+    "I orario",
+    "I orario",
+    "I"
+   ],
+   "trips": [
     {
      "corsa": "4",
      "service": {
@@ -63,25 +74,25 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "Bucalo Santa Teresa Bucalo",
+       "stop": "I",
        "idx": 3,
        "arr": "10.30",
        "dep": "10.30"
       },
       {
-       "stop": "Barracca Santa Teresa Barracca",
+       "stop": "I orario",
        "idx": 2,
        "arr": "10.35",
        "dep": "10.35"
       },
       {
-       "stop": "Giardino",
+       "stop": "I orario",
        "idx": 1,
        "arr": "10.50",
        "dep": "10.50"
       },
       {
-       "stop": "Misserio",
+       "stop": "I orario",
        "idx": 0,
        "arr": "11.00",
        "dep": "11.00"
@@ -91,5 +102,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }

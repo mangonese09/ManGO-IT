@@ -1,0 +1,628 @@
+{
+ "operator": "SAIS Trasporti",
+ "route_id": "saist-9401",
+ "name": "Catania - Sommatino (SAIS Trasporti 9401)",
+ "short_name": "9401",
+ "source": "saistrasporti.it webapi (OD-matrix, sampled w/c 2026-07-27)",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "CATANIA",
+    "OUTLET DITTAINO",
+    "PIETRAPERZIA",
+    "BARRAFRANCA",
+    "SOMMATINO",
+    "RIESI",
+    "AEROPORTO CT"
+   ],
+   "trips": [
+    {
+     "corsa": "1415",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "OUTLET DITTAINO",
+       "idx": 1,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "PIETRAPERZIA",
+       "idx": 2,
+       "arr": "16.00",
+       "dep": "16.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1415",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "OUTLET DITTAINO",
+       "idx": 1,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "PIETRAPERZIA",
+       "idx": 2,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "BARRAFRANCA",
+       "idx": 3,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "SOMMATINO",
+       "idx": 4,
+       "arr": "16.30",
+       "dep": "16.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1415",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "RIESI",
+       "idx": 1,
+       "arr": "16.10",
+       "dep": "16.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1415",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "RIESI",
+       "idx": 1,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "SOMMATINO",
+       "idx": 2,
+       "arr": "16.30",
+       "dep": "16.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1415",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "BARRAFRANCA",
+       "idx": 1,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "SOMMATINO",
+       "idx": 2,
+       "arr": "16.30",
+       "dep": "16.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1425",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AEROPORTO CT",
+       "idx": 0,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "OUTLET DITTAINO",
+       "idx": 1,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "PIETRAPERZIA",
+       "idx": 2,
+       "arr": "16.00",
+       "dep": "16.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1425",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AEROPORTO CT",
+       "idx": 0,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "OUTLET DITTAINO",
+       "idx": 1,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "PIETRAPERZIA",
+       "idx": 2,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "BARRAFRANCA",
+       "idx": 3,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "SOMMATINO",
+       "idx": 4,
+       "arr": "16.30",
+       "dep": "16.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1425",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27', '2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-07-28",
+       "2026-08-03",
+       "2026-08-04",
+       "2026-08-10",
+       "2026-08-11",
+       "2026-08-17",
+       "2026-08-18",
+       "2026-08-24",
+       "2026-08-25",
+       "2026-08-31",
+       "2026-09-01",
+       "2026-09-07",
+       "2026-09-08",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AEROPORTO CT",
+       "idx": 0,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "RIESI",
+       "idx": 1,
+       "arr": "16.10",
+       "dep": "16.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1425",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "AEROPORTO CT",
+       "idx": 0,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "BARRAFRANCA",
+       "idx": 1,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "SOMMATINO",
+       "idx": 2,
+       "arr": "16.30",
+       "dep": "16.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "1510",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "OUTLET DITTAINO",
+       "idx": 0,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "RIESI",
+       "idx": 1,
+       "arr": "16.10",
+       "dep": "16.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0600",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": false,
+     "stops": [
+      {
+       "stop": "BARRAFRANCA",
+       "idx": 0,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "PIETRAPERZIA",
+       "idx": 1,
+       "arr": "6.15",
+       "dep": "6.15"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "SOMMATINO",
+    "RIESI",
+    "OUTLET DITTAINO",
+    "AEROPORTO CT",
+    "CATANIA",
+    "BARRAFRANCA",
+    "PIETRAPERZIA"
+   ],
+   "trips": [
+    {
+     "corsa": "0545",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "SOMMATINO",
+       "idx": 0,
+       "arr": "5.45",
+       "dep": "5.45"
+      },
+      {
+       "stop": "RIESI",
+       "idx": 1,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "OUTLET DITTAINO",
+       "idx": 2,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "AEROPORTO CT",
+       "idx": 3,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 4,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0600",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-28'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-28",
+       "2026-08-04",
+       "2026-08-11",
+       "2026-08-18",
+       "2026-08-25",
+       "2026-09-01",
+       "2026-09-08"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "BARRAFRANCA",
+       "idx": 0,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "AEROPORTO CT",
+       "idx": 1,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 2,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0600",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "inferred from ['2026-07-27'] (weekly pattern, capped 2026-09-14)",
+      "explicit_dates": [
+       "2026-07-27",
+       "2026-08-03",
+       "2026-08-10",
+       "2026-08-17",
+       "2026-08-24",
+       "2026-08-31",
+       "2026-09-07",
+       "2026-09-14"
+      ]
+     },
+     "reverse": true,
+     "stops": [
+      {
+       "stop": "BARRAFRANCA",
+       "idx": 0,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "PIETRAPERZIA",
+       "idx": 1,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "AEROPORTO CT",
+       "idx": 2,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 3,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

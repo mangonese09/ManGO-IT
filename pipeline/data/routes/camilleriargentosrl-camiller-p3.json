@@ -4,6 +4,7 @@
  "name": "S.STEFANO QUISQUINA - AGRIGENTO",
  "source": "CAMILLERIARGENTOSRL__CAMILLERI_ORARI/p003.json",
  "prescriptions": [
+  "Prescrizioni d'Esercizio n.2 c.c. feriali S.STEFANO QUISQUINA - AGRIGENTO",
   "Prescrizioni d'Esercizio n.2 c.c. feriali S.STEFANO QUISQUINA - AGRIGENTO"
  ],
  "directions": [
@@ -114,7 +115,19 @@
       }
      ],
      "valid": true
-    },
+    }
+   ]
+  },
+  {
+   "stops": [
+    "Capolinea di Arrivo orario",
+    "Fermata intermedia orario",
+    "Fermata intermedia orario",
+    "Fermata intermedia orario",
+    "Fermata intermedia orario",
+    "Capolinea di Partenza orario"
+   ],
+   "trips": [
     {
      "corsa": "4",
      "service": {
@@ -126,37 +139,37 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "AGRIGENTO",
+       "stop": "Capolinea di Partenza orario",
        "idx": 5,
        "arr": "14.15",
        "dep": "14.15"
       },
       {
-       "stop": "RAFFADALI",
+       "stop": "Fermata intermedia orario",
        "idx": 4,
        "arr": "14.35",
        "dep": "14.35"
       },
       {
-       "stop": "CIANCIANA",
+       "stop": "Fermata intermedia orario",
        "idx": 3,
        "arr": "15.20",
        "dep": "15.20"
       },
       {
-       "stop": "ALESSANDRIA DELLA ROCCA",
+       "stop": "Fermata intermedia orario",
        "idx": 2,
        "arr": "15.30",
        "dep": "15.30"
       },
       {
-       "stop": "BIVONA",
+       "stop": "Fermata intermedia orario",
        "idx": 1,
        "arr": "15.40",
        "dep": "15.40"
       },
       {
-       "stop": "S.STEFANO QUISQUINA",
+       "stop": "Capolinea di Arrivo orario",
        "idx": 0,
        "arr": "15.50",
        "dep": "15.50"
@@ -175,37 +188,37 @@
      "reverse": true,
      "stops": [
       {
-       "stop": "AGRIGENTO",
+       "stop": "Capolinea di Partenza orario",
        "idx": 5,
        "arr": "19.00",
        "dep": "19.00"
       },
       {
-       "stop": "RAFFADALI",
+       "stop": "Fermata intermedia orario",
        "idx": 4,
        "arr": "19.25",
        "dep": "19.25"
       },
       {
-       "stop": "CIANCIANA",
+       "stop": "Fermata intermedia orario",
        "idx": 3,
        "arr": "20.05",
        "dep": "20.05"
       },
       {
-       "stop": "ALESSANDRIA DELLA ROCCA",
+       "stop": "Fermata intermedia orario",
        "idx": 2,
        "arr": "20.15",
        "dep": "20.15"
       },
       {
-       "stop": "BIVONA",
+       "stop": "Fermata intermedia orario",
        "idx": 1,
        "arr": "20.30",
        "dep": "20.30"
       },
       {
-       "stop": "S.STEFANO QUISQUINA",
+       "stop": "Capolinea di Arrivo orario",
        "idx": 0,
        "arr": "20.40",
        "dep": "20.40"
@@ -215,5 +228,6 @@
     }
    ]
   }
- ]
+ ],
+ "loop_flag": false
 }
