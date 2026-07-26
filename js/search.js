@@ -67,13 +67,26 @@ async function suggest(which, q) {
     list.innerHTML = '';
     list.innerHTML = '';
     for (const r of data.slice(0, 8)) {
+      // every result states WHAT it is: train station / metro / tram /
+      // city bus stop / intercity coach stop / town / address
       let icon = '📌';
-      if (r.type === 'STOP') icon = r.modes.some(isRailMode) ? '🚉' : '🚏';
-      else if (r.type === 'COACH_STOP') icon = '🚌';
-      else if (/^(city|town|village|hamlet)/.test(r.category || '') || (!r.category && r.type === 'PLACE')) icon = '🏘️';
-      // context line: "town · province", never just an echo of the name
+      let kind = '';
+      if (r.type === 'STOP') {
+        const m = r.modes || [];
+        if (m.some((x) => /RAIL|LONG_DISTANCE/.test(x || ''))) { icon = '🚉'; kind = 'train station'; }
+        else if (m.some((x) => /METRO|SUBWAY/.test(x || ''))) { icon = '🚇'; kind = 'metro station'; }
+        else if (m.some((x) => /TRAM/.test(x || ''))) { icon = '🚊'; kind = 'tram stop'; }
+        else { icon = '🚏'; kind = 'city bus stop'; }
+      } else if (r.type === 'COACH_STOP') {
+        icon = '🚌'; kind = 'coach stop';
+      } else if (/^(city|town|village|hamlet)/.test(r.category || '') || (!r.category && r.type === 'PLACE')) {
+        icon = '🏘️'; kind = 'town';
+      } else if (r.type === 'ADDRESS' || /^(via|viale|corso|salita|piazza)\b/i.test(r.name)) {
+        kind = 'address';
+      }
+      // context line: "what it is · town · province", never just an echo of the name
       const bits = [];
-      if (r.type === 'COACH_STOP') bits.push('coach stop');
+      if (kind) bits.push(kind);
       if (r.town && r.town.toLowerCase() !== r.name.toLowerCase()) bits.push(r.town);
       if (r.province && r.province !== r.town) bits.push(`prov. ${r.province}`);
       if (!bits.length && r.province) bits.push(`prov. ${r.province}`);

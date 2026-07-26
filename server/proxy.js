@@ -243,7 +243,7 @@ function slimVtDeparture(d) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.5.0', romeTime: romeNowString(), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.5.1', romeTime: romeNowString(), upstreamRequests: dayCounts }),
 
   'GET /api/geocode': async (q) => {
     const text = (q.get('text') || '').trim().slice(0, 64);
