@@ -1,4 +1,10 @@
-# SAIS ingestion recon — 2026-07-26 (complete, build next session)
+# SAIS ingestion recon — 2026-07-26 (BUILT: pipeline/sais_harvest.py, shipped in v0.5.0)
+
+> Status update: the harvester below shipped 2026-07-25 (v0.5.0). Key finding
+> vs the design: the `?date=` param FILTERS templates to that exact day, so the
+> harvester sweeps 5 full weeks instead of fetching one date per line, and
+> merges by templateId. Cross-verification (pipeline/sais_verify.py) passes
+> trip-by-trip on out-of-sweep dates. SAIS Trasporti recon still open.
 
 ## SAIS Autolinee — SOLVED: full unauthenticated timetable API (Albatross v8.3)
 
