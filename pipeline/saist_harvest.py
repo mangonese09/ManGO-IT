@@ -43,9 +43,22 @@ CTX.verify_mode = ssl.CERT_NONE
 
 # National-line endpoints (FlixBus territory, out of v1 scope). Everything
 # else in /from is Sicilian; --graph asserts this list stays in sync.
+# Compared after normalizing spaces/dots: the API spells 'VILLA S. GIOVANNI'
+# with a space, which silently defeated an exact-match blacklist.
 MAINLAND = {'BARI', 'BARLETTA', 'BATTIPAGLIA', 'BOLOGNA', 'BRINDISI', 'CERIGNOLA', 'COSENZA',
             'FIRENZE', 'FOGGIA', 'GIOIA DEL COLLE', 'GROTTAGLIE', 'LECCE', 'MAGLIE', 'MASSAFRA',
-            'NAPOLI', 'ROMA', 'SALERNO', 'SIENA', 'TARANTO', 'TRANI'}
+            'NAPOLI', 'ROMA', 'SALERNO', 'SIENA', 'TARANTO', 'TRANI',
+            'VILLA S GIOVANNI', 'VILLA SAN GIOVANNI', 'CASTELLANETA MARINA', 'MILANO',
+            'REGGIO CALABRIA', 'CATANZARO', 'CROTONE', 'LAMEZIA TERME', 'MESSINA IMBARCADERO'}
+
+# Line codes: 9xxx = TPL Sicilia regional; SP/SFB/SN prefixes are the
+# national services (out of scope even when a queried Sicily-internal OD
+# pair happens to lie along them).
+NATIONAL_LINEA = re.compile(r'^(SP|SFB|SN)', re.I)
+
+
+def norm_city(desc):
+    return re.sub(r'\s+', ' ', desc.upper().replace('.', ' ').replace('-', ' ')).strip()
 
 HOLIDAYS = {
     date(2026, 8, 15), date(2026, 11, 1), date(2026, 12, 8),
@@ -94,8 +107,9 @@ def load_graph():
 
 
 def sicilian(locs):
-    return [l for l in locs if l['Descrizione'].upper().split(' - ')[0] not in MAINLAND
-            and l['Descrizione'].upper() not in MAINLAND]
+    ml = {norm_city(x) for x in MAINLAND}
+    return [l for l in locs if norm_city(l['Descrizione'].split(' - ')[0]) not in ml
+            and norm_city(l['Descrizione']) not in ml]
 
 
 def cmd_graph():
@@ -187,55 +201,82 @@ def autolinee_horizon():
     return best
 
 
-def stitch(day_runs):
+def stitch(day_runs, edges=None):
     """One (date, linea) group of leg observations → reconstructed trips.
     Nodes are exact (locality, minute); legs chain when arr(B)==dep(B').
-    Returns list of trips (each: sorted [(loc, min)]), plus ambiguity count."""
+    Every leg fully explained by a chain (both endpoints on it, forward,
+    matching times) is CONSUMED; unconsumed legs seed further chains — so
+    the return half of a zero-dwell out-and-back becomes its own trip
+    instead of fusing (no city revisits) or being lost (no natural start).
+
+    CORROBORATION: every sellable (cityA, cityB) sub-pair of a real trip
+    appears as its own direct leg in the OD sweep. So a candidate next hop
+    is accepted only if, for EVERY earlier chain node whose pair with the
+    candidate was queried (edges), the matching direct leg exists. This is
+    what stops a same-line concurrent run (e.g. the Aeroporto branch) from
+    being grafted onto another bus's chain.
+    Returns list of trips (each: [(loc, min), ...]), plus ambiguity count."""
     trips, ambiguous = [], 0
+    edges = edges or set()
     by_linea = {}
     for (a, b, dep, arr, linea) in day_runs:
         by_linea.setdefault(linea, []).append((a, dep, b, arr))
     for linea, legs in by_linea.items():
-        legs = sorted(set(legs), key=lambda x: (x[1], x[3]))
-        # successor: node (loc,time) → outgoing legs departing exactly then
-        out_at, in_at = {}, {}
+        legs = sorted(set(legs), key=lambda x: (x[1], x[3], x[0], x[2]))
+        leg_set = set(legs)
+        out_at = {}
         for leg in legs:
             out_at.setdefault((leg[0], leg[1]), []).append(leg)
-            in_at.setdefault((leg[2], leg[3]), []).append(leg)
-        # chain starts: departure nodes that are not an arrival node of the same linea
-        starts = [n for n in out_at if n not in in_at]
-        for start in sorted(starts):
-            nodes, cur, ok = [start], start, True
-            seen_legs = set()
-            while cur in out_at:
-                nxt = {(l[2], l[3]) for l in out_at[cur] if l not in seen_legs}
-                nxt = {n for n in nxt if n[1] >= cur[1]}
+        consumed = set()
+        for seed in legs:
+            if seed in consumed:
+                continue
+            start = (seed[0], seed[1])
+            nodes, visited = [start], {seed[0]}
+            while True:
+                # candidates depart from ANY node already on the chain — the
+                # next physical stop isn't always sellable from the previous
+                # one (e.g. Aeroporto→Catania centre), but it IS sellable
+                # from earlier cities, so the leg exists further back
+                cands = [l for (mc, mt) in nodes for l in out_at.get((mc, mt), [])
+                         if l not in consumed and l[2] not in visited and l[3] >= nodes[-1][1]]
+                # nearest arrival FIRST (direct long legs coexist with the
+                # stop-by-stop chain), but only if corroborated by direct
+                # legs from every earlier chain node where the pair is sellable
+                nxt = None
+                for l in sorted(cands, key=lambda l: l[3]):
+                    ok = True
+                    for (mc, mt) in nodes:
+                        if (mc, l[2]) in edges and (mc, mt, l[2], l[3]) not in leg_set:
+                            ok = False
+                            break
+                    if ok:
+                        nxt = (l[2], l[3])
+                        break
                 if not nxt:
                     break
-                if len({n for n in nxt}) > 1:
-                    # multiple distinct next hops: keep the NEAREST in time
-                    # (direct long legs coexist with the stop-by-stop chain —
-                    # the far ones are the same bus, validated below)
-                    nxt_node = min(nxt, key=lambda n: n[1])
-                else:
-                    nxt_node = next(iter(nxt))
-                for l in out_at[cur]:
-                    seen_legs.add(l)
-                nodes.append(nxt_node)
-                cur = nxt_node
+                nodes.append(nxt)
+                visited.add(nxt[0])
             if len(nodes) < 2:
                 continue
-            # consistency: every observed leg between nodes of this chain must
-            # match the chain's own times, else count as ambiguous
-            node_set = dict(nodes)
-            bad = False
-            for (a, dep, b, arr) in legs:
-                if a in node_set and b in node_set and node_set[a] == dep and node_set[b] != arr:
-                    bad = True
-                    break
+            node_time = dict(nodes)
+            node_idx = {c: i for i, (c, t) in enumerate(nodes)}
+            # forward consistency: a leg departing a chain node at the chain's
+            # time toward a LATER chain city must land at that city's chain
+            # time (return legs run backward through the chain — not ours)
+            explained, bad = [], False
+            for l in legs:
+                a, dep, b, arr = l
+                if a in node_idx and b in node_idx and node_idx[a] < node_idx[b] \
+                        and node_time[a] == dep:
+                    if node_time[b] == arr:
+                        explained.append(l)
+                    else:
+                        bad = True
             if bad:
                 ambiguous += 1
                 continue
+            consumed.update(explained)
             trips.append((linea, nodes))
     return trips, ambiguous
 
@@ -270,6 +311,9 @@ def pretty_name(desc):
 def cmd_build():
     locs, graph = load_graph()
     name_of = {l['Id']: pretty_name(l['Descrizione']) for l in locs}
+    sic_ids = {l['Id'] for l in sicilian(locs)}
+    queried_edges = {(a, b) for a, ds in graph.items() if a in sic_ids
+                     for b in ds if b in sic_ids}
     day_files = sorted(f for f in os.listdir(ST_DIR) if f.startswith('runs-'))
     if not day_files:
         sys.exit('no runs-*.jsonl — run --sweep first')
@@ -297,8 +341,10 @@ def cmd_build():
                 for r in row['runs']:
                     if r.get('giorno_arrivo') and r['giorno_arrivo'][:2] != f'{d.day:02d}':
                         continue  # overnight arrivals: not chainable at city level, skip leg
+                    if NATIONAL_LINEA.match(str(r['linea'])):
+                        continue  # national services (SP/SFB/SN): out of v1 scope
                     day_runs.append((row['from'], row['to'], hhmm_min(r['dep']), hhmm_min(r['arr']), r['linea']))
-        trips, ambig = stitch(day_runs)
+        trips, ambig = stitch(day_runs, queried_edges)
         total_ambig += ambig
         for linea, nodes in trips:
             sig_dates.setdefault((linea, tuple(nodes)), set()).add(d)
