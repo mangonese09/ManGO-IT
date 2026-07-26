@@ -266,6 +266,12 @@ def route_name_fallback(route):
 
 def main():
     os.makedirs(OUT, exist_ok=True)
+    # clear our own previous output: a parser change can stop producing a page
+    # (junk it used to misparse) and a stale route JSON must not outlive it.
+    # sais-*/saist-* (API harvesters) and tua-* (tua_parse.py) are not ours.
+    for f in os.listdir(OUT):
+        if f.endswith('.json') and not f.startswith(('sais-', 'saist-', 'tua-')):
+            os.remove(os.path.join(OUT, f))
     seed = json.load(open(os.path.join(ROOT, 'seed_routes.json'), encoding='utf-8'))
     seeded = {(e['dir'], e['page']) for e in seed}
     report, qa = [], {'ok': 0, 'no_trips': 0, 'no_grid_pages': 0}

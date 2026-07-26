@@ -65,9 +65,9 @@ def parse_page(data):
             continue
         dedup.append((y0, y1))
     for y0, y1 in dedup:
-        t = parse_table(words, lines, y0, y1)
-        if t and t['stops']:
-            tables.append(t)
+        for t in parse_table(words, lines, y0, y1) or []:
+            if t and t['stops']:
+                tables.append(t)
     return {'pdf': data['pdf'], 'page': data['page'], 'tables': tables,
             'header_lines': [' '.join(w['t'] for w in r) for r in lines if r[0]['y'] < (header_ys[0] if header_ys else 1e9)][:8]}
 
@@ -104,6 +104,51 @@ def parse_table(words, lines, y0, y1):
         mine.sort(key=lambda w: (round(w['y'] / 6), w['x']))
         c['label'] = ''.join(w['t'] for w in mine)[:120]
 
+    # Family A2 (Cracchiolo): andata and ritorno follow DIFFERENT one-way
+    # streets, so the sheet prints TWO name columns between the two corsa
+    # blocks — [andata times][andata names][ritorno names][ritorno times].
+    # Detect: corsa columns in two groups AND name-word starts in the inter
+    # band form two clusters with a clear gap. Then parse as two tables.
+    if len(xs) >= 4:
+        gaps = [(b - a, i) for i, (a, b) in enumerate(zip(xs, xs[1:]))]
+        maxgap, gi = max(gaps)
+        if maxgap > 4 * spacing:
+            left_max, right_min = xs[gi], xs[gi + 1]
+            band = sorted(w['x'] for w in seg
+                          if left_max + 25 < w['x'] < right_min - 15 and w['y'] > corsa_y + 2
+                          and re.search(r'[A-Za-z]', w['t'])
+                          and not TIME_RE.match(w['t']) and not KM_RE.match(w['t']))
+            if len(band) >= 16:
+                bg, mid = max((b - a, (a + b) / 2) for a, b in zip(band, band[1:]))
+                nl = sum(1 for x in band if x < mid)
+                if bg >= 25 and nl >= 8 and len(band) - nl >= 8:
+                    lcorse = [c for c in corse if c['x'] <= left_max]
+                    rcorse = [c for c in corse if c['x'] >= right_min]
+                    tl = parse_rows(seg_lines, corse, lcorse, corsa_y, win,
+                                    left_max + 25, mid, spacing)
+                    tr = parse_rows(seg_lines, corse, rcorse, corsa_y, win,
+                                    mid, right_min - 15, spacing)
+                    # Accept the split ONLY if both halves look like real stop
+                    # lists (family A sheets like Gallo have one shared name
+                    # column plus a pseudo-cluster of '='/road-marker cells —
+                    # splitting those loses the ritorno half entirely).
+                    def n_real(t):
+                        # rows with a real name AND at least one true clock time
+                        # ('|' / '-' passthrough markers don't count — the Gallo
+                        # pseudo-half is exactly names-less markers)
+                        if not t:
+                            return 0
+                        return sum(1 for s in t['stops']
+                                   if sum(c.isalpha() for c in s['name']) >= 4
+                                   and any(TIME_RE.match(v) for v in s['times'].values()))
+                    nl_, nr_ = n_real(tl), n_real(tr)
+                    # True A2 sheets are symmetric (each direction lists its own
+                    # full stop set: Cracchiolo 21/22, Camilleri 2/2). A label
+                    # column masquerading as a name cluster is tiny next to the
+                    # real one (Sommatinese 6 vs 2) — reject asymmetric splits.
+                    if min(nl_, nr_) >= 2 and min(nl_, nr_) / max(nl_, nr_) >= 0.6:
+                        return [tl, tr]
+
     # STAZIONAMENTI x-band: between the two halves of corsa columns, or where the
     # literal word appears
     staz_words = [w for w in seg if 'STAZIONAMENT' in w['t'].upper()]
@@ -112,19 +157,27 @@ def parse_table(words, lines, y0, y1):
         staz_x1 = staz_words[0]['x'] + 165
     else:
         staz_x0, staz_x1 = 150, 420  # fallback: middle band
+    t = parse_rows(seg_lines, corse, corse, corsa_y, win, staz_x0, staz_x1, spacing)
+    return [t] if t else []
 
-    # stop rows: lines with a name in the staz band and/or times at corsa columns
+
+MARKERS = re.compile(r'^((Capolinea|Fermata|di|Partenza|Arrivo|intermedia|facoltativa|obbligatoria)\s*)+$', re.I)
+
+
+def parse_rows(seg_lines, all_corse, corse, corsa_y, win, nx0, nx1, spacing):
+    """Stop rows for one logical table: names from the [nx0, nx1] band,
+    times snapped only to `corse` (a subset of all_corse in split layouts)."""
     stops = []
     pending_times = None
     for row in seg_lines:
         if row[0]['y'] <= corsa_y + 1: continue
-        names = [w for w in row if staz_x0 <= w['x'] <= staz_x1 and not TIME_RE.match(w['t'])
+        names = [w for w in row if nx0 <= w['x'] <= nx1 and not TIME_RE.match(w['t'])
                  and w['t'] not in ('-', '|') and not KM_RE.match(w['t'])]
         cells, kms = [], []
         for w in row:
             if TIME_RE.match(w['t']) or w['t'] in ('-', '|'):
                 cells.append(w)
-            elif COMMA_TIME_RE.match(w['t']) and min(abs(c['x'] - w['x']) for c in corse) < win:
+            elif COMMA_TIME_RE.match(w['t']) and min(abs(c['x'] - w['x']) for c in all_corse) < win:
                 # comma-decimal time sitting in a corsa column, not a km value
                 cells.append({'t': w['t'].replace(',', '.'), 'x': w['x'], 'y': w['y']})
             elif KM_RE.match(w['t']):
@@ -132,11 +185,17 @@ def parse_table(words, lines, y0, y1):
         name = ' '.join(w['t'] for w in names).strip()
         if re.match(r'^(C O R S E|Prescrizioni|Divieto|N\.B\.)', name):
             name = ''
+        if re.fullmatch(r'(orario|orari|andata|ritorno)', name, re.I):
+            name = ''  # schedule words in the name band are layout furniture, not stops
         times = {}
         for w in cells:
-            best = min(corse, key=lambda c: abs(c['x'] - w['x']))
-            if abs(best['x'] - w['x']) < win + 6:
-                times.setdefault(best['n'], w['t'])
+            # snap to the nearest of ALL columns first: a cell belonging to the
+            # other half of a split table must not leak into this one
+            best_all = min(all_corse, key=lambda c: abs(c['x'] - w['x']))
+            if best_all not in corse:
+                continue
+            if abs(best_all['x'] - w['x']) < win + 6:
+                times.setdefault(best_all['n'], w['t'])
         if name and times:
             stops.append({'name': name, 'km': kms, 'times': times})
             pending_times = None
@@ -154,7 +213,6 @@ def parse_table(words, lines, y0, y1):
                 pending_times = {'times': times, 'km': kms}
     # merge marker rows ("Capolinea" / "Fermata intermedia" carry the times,
     # the real stop name sits on the adjacent name-only line)
-    MARKERS = re.compile(r'^((Capolinea|Fermata|di|Partenza|Arrivo|intermedia|facoltativa|obbligatoria)\s*)+$', re.I)
     merged_stops, i = [], 0
     while i < len(stops):
         s = stops[i]
