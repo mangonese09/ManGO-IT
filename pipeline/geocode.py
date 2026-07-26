@@ -58,6 +58,11 @@ def geocode_name(name):
     key = re.sub(r'\s+', ' ', name.upper().strip())
     if key in overrides:
         o = overrides[key]
+        if o.get('interpolate'):
+            # explicit "no pin exists": force km/index interpolation between
+            # geocoded neighbours (localities Nominatim doesn't know, e.g.
+            # FALLICA on the Tumino S. Croce Camerina sheets)
+            return None
         return {'lat': o['lat'], 'lon': o['lon'], 'precision': 'override'}
     if key in cache:
         return cache[key]
