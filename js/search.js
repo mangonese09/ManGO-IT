@@ -4,7 +4,7 @@ import { el, modeMeta, modeClass, modeIcon, isRailMode, liveBadge, staleChip, op
 import { romeTime, romeDay, durationText, isOtherRomeDay, romeWallToIso } from './time.js';
 import { worstTransferMin, transferTier, transferChipText, imminentText, legStripModel } from './itinerary.js';
 import { operatorFor } from './operators.js';
-import { getRecents, pushRecent } from './store.js';
+import { getRecents, pushRecent, removeRecent, getFavStops, addFavStop, removeFavStop } from './store.js';
 import { toast } from './toast.js';
 
 // Selected endpoints: {name, place} where place is "lat,lon" or a stopId.
@@ -139,6 +139,31 @@ function itineraryAllowed(it) {
   return true;
 }
 
+// star a stop/station straight from the Home suggestions -> Saved favorites
+function suggestStar(r, kind) {
+  const key = r.type === 'STOP' && r.id ? r.id : `${r.lat.toFixed(5)},${r.lon.toFixed(5)}`;
+  const isFav = () => getFavStops().some((f) => f.key === key);
+  const star = el('span', {
+    class: `pin-btn suggest-star${isFav() ? ' pinned' : ''}`,
+    role: 'button', tabindex: '0', 'aria-label': 'Save stop', text: isFav() ? '★' : '☆',
+    onclick: (e) => {
+      e.stopPropagation();
+      if (isFav()) {
+        removeFavStop(key);
+        star.textContent = '☆'; star.classList.remove('pinned');
+        toast('Removed from Saved', 'info', 1400);
+      } else {
+        const iconMode = r.type === 'COACH_STOP' ? 'COACH'
+          : (r.modes || []).some((x) => /RAIL|LONG_DISTANCE/.test(x || '')) ? 'RAIL' : 'BUS';
+        addFavStop({ key, name: r.name, kind, iconMode, stopId: r.type === 'STOP' ? r.id : null, lat: r.lat, lon: r.lon });
+        star.textContent = '★'; star.classList.add('pinned');
+        toast('Saved — see the Saved tab', 'info', 1400);
+      }
+    },
+  });
+  return star;
+}
+
 const suggestSeq = { from: 0, to: 0 };
 async function suggest(which, q) {
   const list = document.getElementById(`${which}-suggest`);
@@ -196,6 +221,7 @@ async function suggest(which, q) {
         el('span', { class: 'suggest-icon' }, [iconEl]),
         el('span', { class: 'suggest-name', text: r.name }),
         bits.length ? el('span', { class: 'suggest-area', text: bits.join(' · ') }) : null,
+        (r.type === 'STOP' || r.type === 'COACH_STOP') ? suggestStar(r, kind) : null,
       ]));
     }
     list.hidden = data.length === 0;
@@ -710,17 +736,23 @@ function renderRecents() {
   const recents = getRecents();
   holder.innerHTML = '';
   if (!recents.length) return;
-  for (const r of recents) {
-    holder.appendChild(el('button', {
-      class: 'chip chip-recent', text: `${shortName(r.from.name)} → ${shortName(r.to.name)}`,
-      onclick: () => {
-        sel.from = r.from; sel.to = r.to;
-        document.getElementById('from-input').value = r.from.name;
-        document.getElementById('to-input').value = r.to.name;
-        syncClears();
-        runSearch();
-      },
-    }));
-  }
+  recents.forEach((r, i) => {
+    holder.appendChild(el('span', { class: 'chip chip-recent chip-recent-wrap' }, [
+      el('button', {
+        class: 'chip-recent-go', text: `${shortName(r.from.name)} → ${shortName(r.to.name)}`,
+        onclick: () => {
+          sel.from = r.from; sel.to = r.to;
+          document.getElementById('from-input').value = r.from.name;
+          document.getElementById('to-input').value = r.to.name;
+          syncClears();
+          runSearch();
+        },
+      }),
+      el('button', {
+        class: 'chip-recent-x', 'aria-label': 'Remove from recents', text: '✕',
+        onclick: () => { removeRecent(i); renderRecents(); },
+      }),
+    ]));
+  });
 }
 function shortName(n) { return (n || '').split('(')[0].trim().slice(0, 18); }

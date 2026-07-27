@@ -502,3 +502,10 @@ body { font-size: 1rem; }
 .field-clear::after { content: ''; position: absolute; inset: -6px; }
 .mode-toggle { min-height: 44px; }
 #view-settings a { display: inline-block; padding: 10px 4px; }
+
+/* v0.9.4: recents delete + suggestion stars */
+.chip-recent-wrap { display: inline-flex; align-items: center; gap: 2px; padding: 0; }
+.chip-recent-go { background: none; border: none; color: inherit; font: inherit; padding: 8px 4px 8px 12px; cursor: pointer; }
+.chip-recent-x { background: none; border: none; color: var(--text-muted, #9a9a9a); font-size: 0.8rem; padding: 8px 10px 8px 6px; cursor: pointer; }
+.suggest-star { margin-left: auto; flex: 0 0 auto; padding: 6px 8px; font-size: 1.05rem; }
+.suggest-row { display: flex; align-items: center; gap: 8px; }

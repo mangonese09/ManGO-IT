@@ -60,6 +60,11 @@ export function removeFavStop(key) {
 export function isFavStop(key) { return getFavStops().some((s) => s.key === key); }
 
 export function getRecents() { return read('recents', []); }
+export function removeRecent(i) {
+  const all = getRecents();
+  all.splice(i, 1);
+  write('recents', all);
+}
 export function pushRecent(entry) {
   const all = getRecents().filter((r) => !(r.from.name === entry.from.name && r.to.name === entry.to.name));
   all.unshift(entry);
