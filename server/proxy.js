@@ -618,6 +618,10 @@ const routes = {
     const tLat = Number(q.get('toLat')), tLon = Number(q.get('toLon'));
     if (![fLat, fLon, tLat, tLon].every(isFinite)) throw httpError(400, 'fromLat/fromLon/toLat/toLon required');
     const radius = Math.min(Number(q.get('r')) || 1500, 5000);
+    // QA-01: identical endpoints would match urban loop trips as "journeys"
+    if (haversineM(fLat, fLon, tLat, tLon) < 400) {
+      return { fetchedAt: Date.now(), results: [], transfers: [], reason: 'same-place' };
+    }
     // explicit travel date (audit P2 visual QA): without this, a query for
     // Oct 15 rendered TODAY's coaches under a date-picked search — wrong-day
     // information presented as an answer

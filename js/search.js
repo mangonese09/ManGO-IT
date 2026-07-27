@@ -219,12 +219,24 @@ function locate() {
   });
 }
 
+function havM(a, b) {
+  const p = Math.PI / 180, dl = (b.lon - a.lon) * p, dp = (b.lat - a.lat) * p;
+  const x = Math.sin(dp / 2) ** 2 + Math.cos(a.lat * p) * Math.cos(b.lat * p) * Math.sin(dl / 2) ** 2;
+  return 2 * 6371000 * Math.asin(Math.sqrt(x));
+}
+
 let searchSeq = 0;
 async function runSearch() {
   const mySeq = ++searchSeq; // rapid re-searches (mode toggles) supersede in-flight ones
   const results = document.getElementById('results');
   if (!sel.from || !sel.to) {
     toast('Pick both places from the suggestions', 'warn');
+    return;
+  }
+  // QA-01: same place both ends -> honest refusal, not loop-bus self-trips
+  if (sel.from.name === sel.to.name ||
+      (sel.from.lat && sel.to.lat && havM(sel.from, sel.to) < 400)) {
+    toast('Origin and destination are the same place', 'warn');
     return;
   }
   results.innerHTML = '';
