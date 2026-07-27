@@ -36,7 +36,9 @@ P = {
     'Palermo Centrale': (38.1090, 13.3665),
     'Catania': (37.502361, 15.087372),          # Terminal Bus via Archimede (Centrale adjacent)
     'Enna': (37.5668, 14.2807),                 # Terminal viale Diaz
-    'Siracusa': (37.0316, 15.2124),             # C.so Umberto terminal
+    # NOTE: first run used (37.0316,15.2124) — a misgeocoded feed cluster in
+    # open country 4 km SW of town; real C.so Umberto terminal below.
+    'Siracusa': (37.0708, 15.2854),
     'Sciacca': (37.5068, 13.0819),
     'Gela': (37.0664, 14.2502),                 # Terminal Stazione FS
     'Caltanissetta': (37.4903, 14.0633),        # Autostazione p.le Rochester
@@ -129,17 +131,36 @@ def summarize_live(data):
     if not its:
         return {'status': 'NONE', 'n': 0, 'elapsed_s': data.get('_meta', {}).get('elapsed_s')}
     out = []
+
+    from datetime import datetime, timedelta
+
+    def rome(iso, ref_iso=None):
+        # upstream times are UTC ('Z'); all five audit dates are CEST (+2).
+        # ref_iso = itinerary start: arrivals on a later Rome day get '+1d'.
+        if not iso or len(iso) < 16:
+            return ''
+        t = datetime.fromisoformat(iso[:16]) + timedelta(hours=2)
+        tag = ''
+        if ref_iso:
+            r = datetime.fromisoformat(ref_iso[:16]) + timedelta(hours=2)
+            if t.date() > r.date():
+                tag = '+1d'
+        return t.strftime('%H:%M') + tag
+
     for it in its:
         legs = [l for l in (it.get('legs') or []) if l.get('mode') != 'WALK']
         out.append({
-            'dep': (it.get('startTime') or '')[11:16],
-            'arr': (it.get('endTime') or '')[11:16],
+            'dep': rome(it.get('startTime')),
+            'arr': rome(it.get('endTime'), it.get('startTime')),
             'duration_min': round((it.get('duration') or 0) / 60),
             'transfers': max(0, len(legs) - 1),
             'legs': [f"{l.get('mode')}:{l.get('routeShortName') or l.get('routeLongName') or ''}"
                      f"@{(l.get('agencyName') or '?')}" for l in legs],
+            '_end_iso': it.get('endTime') or '9999',
         })
-    best = min(out, key=lambda x: x['arr'] or '99')
+    best = min(out, key=lambda x: x['_end_iso'])
+    for o in out:
+        del o['_end_iso']
     return {'status': 'OK', 'n': len(out), 'best': best, 'all': out,
             'elapsed_s': data.get('_meta', {}).get('elapsed_s')}
 

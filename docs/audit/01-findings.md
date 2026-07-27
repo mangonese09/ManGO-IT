@@ -1,66 +1,77 @@
-# Phase 1 — Findings (DRAFT — query matrix pending v0.6.0 ship)
+# Phase 1 — Findings (FINAL 2026-07-26, matrix complete)
 
 Severity scale: S1 = produces dead ends / wrong journeys, S2 = degrades
-results or trust, S3 = polish. Evidence inline.
+results or trust, S3 = polish. Evidence inline; quantification in
+`02-query-matrix.md`.
+
+## 1A. Query matrix — see `02-query-matrix.md`
+
+100 cells (20 pairs × 5 day types), three systems per cell. Headlines:
+untuned live dead in 65/100; F-1 tuning rescued 25; our feed alone answers
+33 cells the tuned live network cannot; 7 cells dead everywhere. Failure
+classes A–H with per-corridor deltas in the matrix doc.
 
 ## 1B. Data layer
 
-### F-1 (S1) — `/api/plan` uses none of MOTIS's routing controls
-Verified against MOTIS `openapi.yaml` (v3): the API accepts `searchWindow`,
-`maxTransfers`, `minTransferTime`, `additionalTransferTime`,
-`transferTimeFactor`, `maxPreTransitTime`/`maxPostTransitTime`,
-`maxMatchingDistance` (default **250 m**), `slowDirect`, `timetableView`,
-`via`. Our proxy sends only from/to/time/arriveBy/numItineraries.
-Consequences on a sparse rural network:
-- Default search window on a day with 3 runs can look like "no results"
-  when the next run is outside the window → **dead ends of the worst kind**.
-  Fix: widen `searchWindow`, and/or probe +1 day for the no-results rule.
-- `maxMatchingDistance` 250 m: a town-centroid-geocoded rural stop can sit
-  >250 m from the road graph → origin/destination unmatchable → dead end.
-- `additionalTransferTime=0`: zero cushion on coach-to-coach transfers that
-  run hourly; one late coach = stranded. We should set a floor.
-Impact: several matrix failure classes may be tunable to success without
-any data change. To quantify in the matrix (tuned vs untuned columns).
+### F-1 (S1) — `/api/plan` used none of MOTIS's routing controls — **FIXED v0.5.4, now quantified**
+Deployed params: searchWindow 6 h, maxMatchingDistance 600 m,
+additionalTransferTime 3 min, max pre/post-transit 30 min. The matrix ran
+both variants: the tuning alone converts **25 of 100** cells from "no
+results" to a usable journey (all of PA→Messina, PA→Cefalù, CT→Taormina,
+Gela→CT, plus every school-day rail cell), and repairs absurd routings
+(CL→PA 11 h → 2.5 h). Class B/C in the matrix doc.
 
-### F-2 (S1) — 573 likely-duplicate stop pairs inside our own feed
-Scan: same town prefix, <120 m apart, ≥2 shared name tokens, different
-stop_ids → 573 pairs in the 2,879-stop feed. Examples: three spelling
-variants of RAFFADALI (Via Nazionale) at 0–85 m; three of LENTINI (piazza
-Sofisti) at 0 m; case variants of CATANIA (piazza Giovanni XXIII°).
-Cause: stop identity is the verbatim per-operator sheet spelling.
-Consequences: fragmented departure boards, MOTIS sees distinct nodes so
-cross-operator transfers depend on generated walk links instead of being
-same-stop, and autocomplete shows dupes. This is the brief's "duplicate
-stops silently kill transfers," confirmed in our own data.
-Fix direction: a consolidation stage in emit (cluster <60 m + normalized
-name equality → one canonical stop; keep aliases for search). Needs care
-with the divieto topology assertions.
+### F-2 (S1) — duplicate / misgeocoded stops — **consolidation SHIPPED v0.6.0 (261 variants merged), residue now measured**
+The matrix caught surviving cases with routing impact:
+- `Palermo (via P. Balsamo)` (Camilleri) geocoded 1.6 km west of the real
+  terminal — severs the S.Elisabetta line from every other Palermo stop;
+  costs PA→AG 3 h 48 min of journey time (CSA 15:03 vs the 11:15 the 09:15
+  direct would give). One override in geocode-overrides.json fixes it.
+- Siracusa: misgeocoded cluster 4 km SW of town (open country).
+- `catania-piazza-giovanni-xxiii` 30 km inland (wrong province).
+- ~12 AGRIGENTO stops share one identical town-centroid coordinate
+  (transfer topology is accidentally right, but boards/maps are wrong).
+Fix direction: blame-driven geocode overrides (tooling exists from the
+quarantine-recovery cycle), then a wrong-province sweep in validate.py
+(stop >25 km from its route's centroid ⇒ gate).
 
-### F-3 (S2) — ViaggiaTreno is HTTP-only and single-sourced
-Live train status rides an unofficial API over plain HTTP; 204s are handled
-honestly (no-data ≠ error), 60 s cache. No GTFS-RT anywhere else. Risk:
-silent total loss of realtime if VT changes; mitigation is labeling (already
-honest) — no action beyond Phase 3 source research (Trenitalia GTFS-RT).
+### F-3 (S2) — ViaggiaTreno is HTTP-only and single-sourced — unchanged
+Honest 204 handling, 60 s cache. Phase 3 item: Trenitalia GTFS-RT research.
 
-### F-4 (S2) — `/api/direct` is invisible until total failure
-The degraded fallback triggers only when plan fails or returns zero. The
-PA→AG probe shows Transitous returning a *worse* itinerary (3h53 via
-Trenitalia rail-replacement bus) while our feed holds ~2h coaches — the
-fallback never fires because plan "succeeded." Until PR #2327 merges, known
-direct coaches should render alongside weak plan results, not only on empty.
+### F-4 (S2) — `/api/direct` invisible until total failure — **FIXED v0.6.0**
+Direct now races plan and renders when ≥15 min faster. The matrix validates
+the design: on AG→CT / Modica→CT the live network "succeeds" with 7 h 56 m /
+7 h 44 m itineraries while our coaches do 3 h 50 m / 3 h 25 m (class D).
+Keep racing post-#2327 as the latency floor (live p95 2.6 s vs ms).
 
-## 1C. Performance (initial numbers, full pass with matrix)
+### F-5 (S1, NEW) — Autotrasporti Cuffaro shipped with zero trips
+All 9 Cuffaro routes (the PA↔AG flagship corridor's main operator) are
+fully quarantined; PA→AG rides on one Camilleri line (5 Mon–Sat runs, none
+Sun). Blame tooling exists; this is the highest-value single recovery in
+the feed.
 
-- Transitous v3 plan, PA→AG, warm CDN, from this network: **2.0 s** —
-  already at the brief's 4G budget with zero headroom for proxy+render;
-  worst-case Transitous responses take up to our 45 s proxy timeout with no
-  early abort to the fallback. Consider racing `/api/direct` in parallel
-  and rendering it first (it answers in ms from memory).
-- Client bundle is ~2.2 k lines total vanilla JS, no build step — bundle
-  weight is a non-issue; the risk sits entirely in network waterfalls.
+### F-6 (S1, NEW) — harvest-horizon cliff renders as fake "no service"
+On the school-day column (9/23) our feed goes dark on 9/20 pairs (TPL
+summer sheets and SAIS validities end ~Sept 14; SAIS Trasporti swept window
+ends 8/16). Refresh automation (weekly Autolinee, monthly Trasporti —
+registered today) tracks the horizon, but the client must distinguish
+"schedules known through <date>" from "no service" (backlog: feed-horizon
+metadata in /api/health + UI copy).
 
-## 1A / 1D — pending
+### F-7 (S2, NEW) — Ferragosto thinning: mostly real, one probe wanted
+8/20 pairs lose all coach service on 8/15 (observed-authoritative for SAIS
+Trasporti; plausible operator suspensions elsewhere), but four pairs run
+Sunday 8/9 yet not Ferragosto. One targeted verify probe on 8/15 (both SAIS
+systems) would settle it.
 
-Query matrix (both baselines, tuned/untuned) after v0.6.0. Capacitor: no
-code exists (inventory §6); 1D is a design exercise, not an audit of
-existing behavior.
+## 1C. Performance — complete
+
+Live plan across 200 calls: p50 1.5 s, p95 2.6 s, max 5.6 s. At p95 the
+4 s 4G budget is gone before proxy+render. `/api/direct` (in-memory)
+answers in ms — the v0.6.0 racing architecture is the right shape; keep it
+permanently. Client bundle remains a non-issue (~2.2 k lines, no build).
+
+## 1D. Capacitor — design exercise, not an audit item
+
+No code exists (inventory §6). Deferred to the redesign phase gated on
+owner sign-off.
