@@ -457,3 +457,8 @@ body.sheet-open { overflow: hidden; }
   opacity: 0; pointer-events: none;
 }
 .endpoint-stack .swap-btn { transition: opacity 0.12s; }
+
+/* QA-02: the clock line never wraps; the walk chip never deforms */
+.chip-walk { white-space: nowrap; flex-shrink: 0; }
+.dep-main-tight .dep-route { flex-wrap: nowrap; min-width: 0; }
+.dep-main-tight .dep-route > span:first-child { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
