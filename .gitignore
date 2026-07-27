@@ -19,3 +19,9 @@ pipeline/data/reports/sais-refresh.log
 # SAIS Trasporti sweep cache (regenerated per harvest; graph+localities are committed)
 pipeline/data/saist/runs-*.jsonl
 pipeline/data/saist/sweep*.log
+
+# monthly SAIS Trasporti refresh log (local)
+pipeline/data/reports/saist-refresh.log
+
+# audit query-matrix raw response cache (matrix-results.json is committed)
+docs/audit/matrix-cache/
