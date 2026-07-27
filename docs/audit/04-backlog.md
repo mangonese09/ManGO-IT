@@ -1,8 +1,11 @@
 # Phase 4 — Prioritized backlog (2026-07-26)
 
 Sourced from 01-findings (F-numbers), 02-query-matrix (classes A–H), and
-03-competitive (steals 1–6). **Nothing below is started — awaiting owner
-sign-off on scope and order.** Suggested order within each tier.
+03-competitive (steals 1–6). **STATUS 2026-07-27: owner signed off; items
+1–11 SHIPPED (P0 in the feed deploy, P1+P2 in v0.7.0), item 12 design doc
+done (docs/capacitor-design.md, build awaiting green light), item 13
+research done (docs/gtfs-rt-research.md — no domestic GTFS-RT exists; VT
+stays primary with monitoring).**
 
 ## P0 — data repairs (small, measured payoff, no design decisions)
 
