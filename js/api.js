@@ -51,6 +51,14 @@ export const api = {
   direct: ({ fromLat, fromLon, toLat, toLon }) =>
     getJson(`/api/direct?fromLat=${fromLat.toFixed(4)}&fromLon=${fromLon.toFixed(4)}&toLat=${toLat.toFixed(4)}&toLon=${toLon.toFixed(4)}`, { source: 'transitous' }),
 
+  health: () =>
+    getJson('/api/health', { source: 'transitous' }),
+
+  nearestServed: (lat, lon) =>
+    getJson(`/api/nearest-served?lat=${lat.toFixed(4)}&lon=${lon.toFixed(4)}`, {
+      cacheKey: `nearserved:${lat.toFixed(3)},${lon.toFixed(3)}`, source: 'transitous',
+    }),
+
   vtLive: (train) =>
     getJson(`/api/vt/live?train=${encodeURIComponent(train)}`, { source: 'viaggiatreno' }),
 

@@ -66,3 +66,12 @@ test('inSicily bounds: Palermo yes, Rome no, Malta no', () => {
   assert.ok(!inSicily(41.9, 12.5));        // Rome
   assert.ok(!inSicily(35.9, 14.5));        // Valletta
 });
+
+test('feedHorizon: reports a verified-through date with sane shape (audit F-6)', () => {
+  const { feedHorizon } = require('../../server/proxy.js');
+  const h = feedHorizon();
+  assert.match(h.date, /^\d{4}-\d{2}-\d{2}$/);
+  assert.ok(h.tripsToday > 1000, `tripsToday ${h.tripsToday} suspiciously low`);
+  const today = new Date().toISOString().slice(0, 10);
+  assert.ok(h.date >= today, `horizon ${h.date} is in the past`);
+});

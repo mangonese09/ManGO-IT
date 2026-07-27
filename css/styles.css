@@ -245,3 +245,15 @@ body.sheet-open { overflow: hidden; }
 .fav-stop-head { display: flex; align-items: center; gap: 10px; }
 .fav-stop-head .dep-main { flex: 1; }
 .fav-stop-rows { margin-top: 4px; }
+
+/* ── dead-end fallbacks (audit P1) ── */
+.horizon-note {
+  margin: 12px 4px 0;
+  padding: 8px 12px;
+  border-left: 3px solid var(--mango, #ffb454);
+  background: var(--bg-elevated, #2a2a2a);
+  border-radius: 0 8px 8px 0;
+  font-size: 0.85rem;
+}
+:root[data-theme="light"] .horizon-note { background: #f4ede2; }
+.empty-state .btn { margin-top: 8px; }

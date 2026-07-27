@@ -177,12 +177,14 @@ async function runSearch() {
     const xfers = dir?.data?.transfers || [];
     const its = data.itineraries || [];
     if (!its.length) {
-      renderDirectBlock(runs, 'empty', xfers);
+      const ok = renderDirectBlock(runs, 'empty', xfers);
+      if (!ok) await renderDeadEnd(params, whenVal);
     } else if (runs.length) {
       const bestPlanMin = Math.min(...its.map((i) => (i.duration || 1e9) / 60));
       const bestDirectMin = Math.min(...runs.map(directRunMinutes));
       if (bestDirectMin + 15 < bestPlanMin) renderDirectBlock(runs, 'faster', xfers);
     }
+    maybeHorizonNote(whenVal);
   } catch (err) {
     results.innerHTML = '';
     const dir = await directPromise;
@@ -194,6 +196,86 @@ async function runSearch() {
       ]));
     }
   }
+}
+
+// ── DEAD-END FALLBACKS (audit P1) ──
+// Empty results are never a bare shrug: (1) admit when the query is past
+// the verified schedule horizon, (2) probe the same trip tomorrow, (3) name
+// the nearest stop our data actually serves when an endpoint is uncovered.
+let healthPromise = null;
+function feedHorizonDate() {
+  healthPromise ||= api.health().catch(() => null);
+  return healthPromise.then((h) => h?.data?.feedHorizon?.date || null);
+}
+
+function romeDateStr(offsetDays = 0) {
+  return new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Europe/Rome', year: 'numeric', month: '2-digit', day: '2-digit',
+  }).format(new Date(Date.now() + offsetDays * 86400000));
+}
+
+function nextDateStr(dateStr) {
+  const [y, m, d] = dateStr.split('-').map(Number);
+  const nd = new Date(Date.UTC(y, m - 1, d) + 86400000);
+  return nd.toISOString().slice(0, 10);
+}
+
+async function maybeHorizonNote(whenVal) {
+  const horizon = await feedHorizonDate();
+  const qDate = (whenVal && whenVal.slice(0, 10)) || romeDateStr(0);
+  if (!horizon || qDate <= horizon) return;
+  const results = document.getElementById('results');
+  if (results.querySelector('.horizon-note')) return;
+  results.appendChild(el('div', { class: 'horizon-note muted', text:
+    `Coach schedules are verified through ${horizon}. On later dates coaches that do run may be missing here — recheck closer to travel.` }));
+}
+
+async function renderDeadEnd(params, whenVal) {
+  const results = document.getElementById('results');
+  const box = el('div', { class: 'empty-state' }, [
+    el('p', { text: 'No connections found for this trip.' }),
+  ]);
+  results.appendChild(box);
+
+  const baseDate = (whenVal && whenVal.slice(0, 10)) || romeDateStr(0);
+  const probeDate = nextDateStr(baseDate);
+
+  // next-day probe: "nothing today" usually means "the last run left",
+  // and the honest answer is when the next one goes
+  try {
+    const probe = await api.plan({
+      fromPlace: params.fromPlace, toPlace: params.toPlace,
+      time: romeWallToIso(`${probeDate}T05:00`),
+    });
+    const its = probe?.data?.itineraries || [];
+    if (its.length) {
+      const first = its[0];
+      box.appendChild(el('p', { text:
+        `First connection on ${romeDay(first.startTime)}: ${romeTime(first.startTime)} → ${romeTime(first.endTime)} (${durationText(first.duration)}).` }));
+      box.appendChild(el('button', { class: 'btn btn-ghost btn-small', text: 'Search that day instead', onclick: () => {
+        document.getElementById('when-input').value = `${probeDate}T05:00`;
+        departMode = 'depart';
+        runSearch();
+      } }));
+    }
+  } catch { /* probe is best-effort */ }
+
+  // unserved-endpoint hint: say which side has no coverage and name the
+  // closest stop that does
+  for (const which of ['from', 'to']) {
+    const pt = sel[which];
+    if (!pt?.lat) continue;
+    try {
+      const near = await api.nearestServed(pt.lat, pt.lon);
+      const s = near?.data?.stops?.[0];
+      if (s && s.m > 2000) {
+        box.appendChild(el('p', { class: 'muted', text:
+          `${pt.name} has no nearby stop in our coach data — nearest served: ${s.name}, ${(s.m / 1000).toFixed(1)} km away.` }));
+      }
+    } catch { /* hint only */ }
+  }
+
+  maybeHorizonNote(whenVal);
 }
 
 function directRunMinutes(r) {
@@ -245,13 +327,7 @@ function renderItineraries(itineraries, { stale, fetchedAt }) {
   results.innerHTML = '';
   results.appendChild(staleChip(fetchedAt, stale));
 
-  if (!itineraries.length) {
-    results.appendChild(el('div', { class: 'empty-state' }, [
-      el('p', { text: 'No route found for that trip.' }),
-      el('p', { class: 'muted', text: 'Sicilian coach coverage grows as the ManGO:IT feed lands (M4). Try rail hubs, or check operator sites.' }),
-    ]));
-    return;
-  }
+  if (!itineraries.length) return; // caller renders direct results or the dead-end fallbacks
 
   for (const it of itineraries) {
     const transitLegs = it.legs.filter((l) => l.mode !== 'WALK');

@@ -251,6 +251,34 @@ function coachBoard(lat, lon, radius = 300, days = null) {
   return { fetchedAt: Date.now(), stopName: coachStops[nearest[0]].n, results: results.slice(0, 8) };
 }
 
+// ── FEED HORIZON (audit F-6) ──
+// PDF sheets and SAIS validities have real end dates; queries past them
+// silently lose coaches. Expose "coach schedules known through <date>" so
+// the client can say so instead of rendering absence as "no service".
+// Horizon = last day (next 120) where the runnable-trip count holds ≥ 50%
+// of today's count. Cached until the Rome day changes or data reloads.
+let horizonCache = null;
+function feedHorizon() {
+  const today = romeParts().iso;
+  if (horizonCache && horizonCache.computedFor === today) return horizonCache.value;
+  const counts = [];
+  for (let i = 0; i < 120; i++) {
+    const day = romeParts(new Date(Date.now() + i * 86400000));
+    let n = 0;
+    for (const trip of coachTrips) if (serviceRuns(trip, day)) n++;
+    counts.push({ iso: day.iso, n });
+  }
+  const base = Math.max(1, counts[0].n);
+  let lastGood = counts[0].iso;
+  for (const c of counts) {
+    if (c.n < base * 0.5) break;
+    lastGood = c.iso;
+  }
+  const value = { date: lastGood, tripsToday: counts[0].n };
+  horizonCache = { computedFor: today, value };
+  return value;
+}
+
 function nearStopIdxs(lat, lon, radiusM) {
   const out = [];
   for (let i = 0; i < coachStops.length; i++) {
@@ -378,7 +406,24 @@ function slimVtDeparture(d) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.6.1', romeTime: romeNowString(), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.6.1', romeTime: romeNowString(), feedHorizon: feedHorizon(), upstreamRequests: dayCounts }),
+
+  // nearest coach stops regardless of radius — the "this area isn't served"
+  // empty state names the closest place our data actually covers (audit P1)
+  'GET /api/nearest-served': async (q) => {
+    const lat = Number(q.get('lat')), lon = Number(q.get('lon'));
+    if (![lat, lon].every(isFinite)) throw httpError(400, 'lat/lon required');
+    const best = [];
+    for (const s of coachStops) {
+      const d = haversineM(lat, lon, s.lat, s.lon);
+      if (best.length < 3 || d < best[best.length - 1].m) {
+        best.push({ name: s.n, lat: s.lat, lon: s.lon, m: Math.round(d) });
+        best.sort((a, b) => a.m - b.m);
+        if (best.length > 3) best.pop();
+      }
+    }
+    return { fetchedAt: Date.now(), stops: best };
+  },
 
   'GET /api/geocode': async (q) => {
     const text = (q.get('text') || '').trim().slice(0, 64);
@@ -658,4 +703,4 @@ if (require.main === module) {
   server.listen(PORT, () => console.log(`ManGO:IT proxy on :${PORT}${STATIC ? ' (static+api)' : ''}`));
 }
 
-module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts };
+module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon };
