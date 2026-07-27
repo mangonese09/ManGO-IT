@@ -1,10 +1,16 @@
 {
   "name": "mango-it",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "private": true,
   "description": "ManGO:IT — single-view Sicily intercity transit",
   "scripts": {
     "start": "node server/proxy.js",
     "test": "node --test"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^8.4.2",
+    "@capacitor/app": "^8.1.1",
+    "@capacitor/cli": "^8.4.2",
+    "@capacitor/core": "^8.4.2"
   }
 }

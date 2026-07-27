@@ -34,6 +34,21 @@ function goBack() {
   return false;
 }
 
+// ── NATIVE SHELL BRIDGE (Capacitor wrap, M7) ──
+// No-ops on plain web: the same bundle serves it.mangonese.dev and the
+// Android app. Hardware back: close sheet → pop nav stack → on the root
+// view, minimize instead of killing the activity.
+function initNativeBackButton() {
+  const C = window.Capacitor;
+  const App = C?.Plugins?.App;
+  if (!App?.addListener) return;
+  App.addListener('backButton', () => {
+    if (goBack()) return;
+    if (App.minimizeApp) App.minimizeApp();
+    else if (App.exitApp) App.exitApp();
+  });
+}
+
 // Left-edge swipe back (house PWA standard).
 function initEdgeSwipe() {
   let startX = null, startY = null;
@@ -59,6 +74,7 @@ function boot() {
   initSearch();
   initBoard();
   initEdgeSwipe();
+  initNativeBackButton();
 
   // pull-to-refresh reloads the page: reopen the tab the user was on
   try {
