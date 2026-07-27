@@ -15,6 +15,8 @@ function setView(view, push = true) {
   if (!VIEWS.includes(view) || view === current) return;
   if (push) navStack.push(current);
   current = view;
+  // survive a page reload (browser pull-to-refresh) on the same tab
+  try { localStorage.setItem('mangoit.view', view); } catch { /* private mode */ }
   for (const v of VIEWS) {
     document.getElementById(`view-${v}`).hidden = v !== view;
     document.getElementById(`nav-${v}`).classList.toggle('active', v === view);
@@ -57,6 +59,12 @@ function boot() {
   initSearch();
   initBoard();
   initEdgeSwipe();
+
+  // pull-to-refresh reloads the page: reopen the tab the user was on
+  try {
+    const last = localStorage.getItem('mangoit.view');
+    if (last && last !== 'home') setView(last, false);
+  } catch { /* private mode */ }
 
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('/service-worker.js').catch(() => { /* offline first load */ });

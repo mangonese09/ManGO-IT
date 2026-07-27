@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <radialGradient id="gearBody" cx="38%" cy="28%" r="85%">
+      <stop offset="0%" stop-color="#fff1c4"/>
+      <stop offset="40%" stop-color="#ffc34d"/>
+      <stop offset="100%" stop-color="#d94e00"/>
+    </radialGradient>
+    <linearGradient id="gearLeaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b9e08a"/>
+      <stop offset="100%" stop-color="#3e6b1c"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="128" cy="232" rx="86" ry="10" fill="#000" opacity="0.2"/>
+
+  <!-- gear, centered at (128, 150), big chunky 6-tooth design — fewer teeth = readable at 30px -->
+  <g transform="translate(128 150)">
+    <g fill="url(#gearBody)" stroke="#9a3700" stroke-width="8" stroke-linejoin="round">
+      <rect x="-22" y="-104" width="44" height="38" rx="10"/>
+      <g transform="rotate(60)"><rect x="-22" y="-104" width="44" height="38" rx="10"/></g>
+      <g transform="rotate(120)"><rect x="-22" y="-104" width="44" height="38" rx="10"/></g>
+      <g transform="rotate(180)"><rect x="-22" y="-104" width="44" height="38" rx="10"/></g>
+      <g transform="rotate(240)"><rect x="-22" y="-104" width="44" height="38" rx="10"/></g>
+      <g transform="rotate(300)"><rect x="-22" y="-104" width="44" height="38" rx="10"/></g>
+    </g>
+    <!-- main disc -->
+    <circle r="78" fill="url(#gearBody)" stroke="#9a3700" stroke-width="9"/>
+    <!-- top highlight -->
+    <path d="M -55 -45 Q -20 -68, 25 -65" stroke="#fff7d6" stroke-width="11" fill="none" opacity="0.55" stroke-linecap="round"/>
+    <!-- center hole — large so the gear reads -->
+    <circle r="32" fill="#2b1810" stroke="#000" stroke-width="3"/>
+    <circle r="22" fill="#5d3a1f"/>
+    <circle r="10" fill="#2b1810"/>
+  </g>
+
+  <!-- mango stem (sprouts from top tooth area) -->
+  <path d="M 122 44 Q 120 22, 138 14 L 152 14" stroke="#5d3a1f" stroke-width="11" fill="none" stroke-linecap="round"/>
+
+  <!-- mango leaf — bigger -->
+  <path d="M 152 14 Q 200 -12, 230 16 Q 222 56, 184 46 Q 152 34, 152 14 Z" fill="url(#gearLeaf)" stroke="#2d4f12" stroke-width="4"/>
+  <path d="M 162 24 Q 192 20, 220 28" stroke="#2d4f12" stroke-width="3" fill="none" opacity="0.55"/>
+</svg>

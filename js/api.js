@@ -43,9 +43,9 @@ export const api = {
   stoptimes: (stopId, n = 6) =>
     getJson(`/api/stoptimes?stopId=${encodeURIComponent(stopId)}&n=${n}`, { source: 'transitous' }),
 
-  coachBoard: (lat, lon, r = 300) =>
-    getJson(`/api/coach-board?lat=${lat.toFixed(5)}&lon=${lon.toFixed(5)}&r=${r}`, {
-      cacheKey: `coachboard:${lat.toFixed(4)},${lon.toFixed(4)}`, source: 'transitous',
+  coachBoard: (lat, lon, r = 300, all = false) =>
+    getJson(`/api/coach-board?lat=${lat.toFixed(5)}&lon=${lon.toFixed(5)}&r=${r}${all ? '&all=1' : ''}`, {
+      cacheKey: `coachboard:${lat.toFixed(4)},${lon.toFixed(4)}${all ? ':all' : ''}`, source: 'transitous',
     }),
 
   direct: ({ fromLat, fromLon, toLat, toLon, date, afterMin }) => {

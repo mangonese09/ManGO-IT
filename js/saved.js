@@ -1,6 +1,6 @@
 // ── SAVED (favorite stops + pinned departures) ──
 import { api } from './api.js';
-import { el, modeMeta, modeIcon, confirmModal } from './ui.js';
+import { el, modeMeta, modeIcon, confirmModal, openSheet } from './ui.js';
 import { romeTime, romeDay, countdownText, isOtherRomeDay } from './time.js';
 import { getSaved, purgeSaved, removeSaved, getFavStops, addFavStop, removeFavStop } from './store.js';
 import { toast } from './toast.js';
@@ -63,13 +63,70 @@ async function favSuggest(q) {
   }
 }
 
+
+// ── FULL DAY SCHEDULE ──
+// Tapping a favorite stop opens every remaining + past departure for today:
+// own-feed coach stops get the complete timetable; Transitous stops get the
+// next 40 departures the network knows.
+async function openStopSchedule(s) {
+  const body = el('div', { class: 'iti-detail sched-sheet' });
+  body.appendChild(el('div', { class: 'loading', text: 'Loading schedule…' }));
+  openSheet(body, { title: `Today — ${s.name}` });
+  try {
+    let rows = [];
+    let note = '';
+    if (s.stopId) {
+      const { data } = await api.stoptimes(s.stopId, 40);
+      rows = (data.stopTimes || []).map((st) => ({
+        time: romeTime(st.departure || st.scheduledDeparture),
+        mode: st.mode,
+        label: `${st.routeShortName || modeMeta(st.mode).label} → ${st.headsign || ''}`,
+        live: st.realTime, cancelled: st.cancelled,
+      }));
+      note = 'Next departures from the live network.';
+    } else {
+      const { data } = await api.coachBoard(s.lat, s.lon, 300, true);
+      rows = (data.results || []).map((r) => ({
+        time: r.dep, mode: 'COACH',
+        label: `${r.route} → ${r.headsign}`,
+        past: r.depMin < romeNowMin(),
+      }));
+      note = 'Complete coach timetable for today — scheduled times, no live status.';
+    }
+    body.innerHTML = '';
+    body.appendChild(el('p', { class: 'muted sched-note', text: note }));
+    if (!rows.length) {
+      body.appendChild(el('p', { class: 'muted', text: 'No departures today.' }));
+      return;
+    }
+    for (const r of rows) {
+      body.appendChild(el('div', { class: `sched-row${r.past ? ' sched-past' : ''}${r.cancelled ? ' sched-cancelled' : ''}` }, [
+        el('strong', { class: 'sched-time', text: r.time }),
+        modeIcon(r.mode, 'mode-img mode-img-sm'),
+        el('span', { class: 'sched-label', text: r.label }),
+        r.live ? el('span', { class: 'badge badge-live', text: 'live' }) : null,
+        r.cancelled ? el('span', { class: 'badge badge-cancel', text: 'CANCELLED' }) : null,
+      ]));
+    }
+  } catch {
+    body.innerHTML = '';
+    body.appendChild(el('p', { class: 'muted', text: 'Could not load the schedule — check connectivity and retry.' }));
+  }
+}
+
+function romeNowMin() {
+  const p = new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Rome', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date());
+  const [h, m] = p.split(':').map(Number);
+  return h * 60 + m;
+}
+
 async function favStopCard(s) {
   const card = el('div', { class: 'card fav-stop-card' }, [
-    el('div', { class: 'fav-stop-head' }, [
+    el('div', { class: 'fav-stop-head fav-stop-tap', role: 'button', tabindex: '0', onclick: () => openStopSchedule(s) }, [
       el('span', { class: 'suggest-icon' }, [modeIcon(s.iconMode || (s.icon === '🚌' ? 'COACH' : 'BUS'))]),
       el('div', { class: 'dep-main' }, [
         el('span', { class: 'dep-route', text: s.name }),
-        el('span', { class: 'muted dep-headsign', text: s.kind }),
+        el('span', { class: 'muted dep-headsign', text: `${s.kind} · tap for today's schedule` }),
       ]),
       el('button', {
         class: 'pin-btn pinned', text: '★',

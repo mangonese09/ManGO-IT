@@ -65,7 +65,7 @@ function wireEndpoint(which) {
 function showMyLocationOption(list, input) {
   list.innerHTML = '';
   list.appendChild(el('button', {
-    class: 'suggest-row suggest-loc', text: '📍 My location',
+    class: 'suggest-row suggest-loc',
     onclick: () => {
       list.hidden = true;
       input.value = 'My location';
@@ -78,7 +78,10 @@ function showMyLocationOption(list, input) {
         toast('Location unavailable — type a place instead', 'warn');
       });
     },
-  }));
+  }, [
+    el('img', { src: '/icons/place-pin.png', alt: '' }),
+    el('span', { text: ' My location' }),
+  ]));
   list.hidden = false;
 }
 

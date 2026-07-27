@@ -224,20 +224,20 @@ function nearTransferStops(idx, at) {
 // Departure board for a COACH stop from our own feed — coach stops have no
 // Transitous stopId until the feed is ingested upstream, but the favorites
 // tab must still show their next departures. days injectable for tests.
-function coachBoard(lat, lon, radius = 300, days = null) {
+function coachBoard(lat, lon, radius = 300, days = null, all = false) {
   const here = new Map(nearStopIdxs(lat, lon, radius).map((x) => [x.i, x.d]));
   if (!here.size) return { fetchedAt: Date.now(), stopName: null, results: [] };
   const dayList = days || [romeParts(), romeParts(new Date(Date.now() + 86400000))];
   const now = dayList[0];
   const results = [];
-  for (let dayOff = 0; dayOff < dayList.length && results.length < 8; dayOff++) {
+  for (let dayOff = 0; dayOff < dayList.length && (all ? dayOff < 1 : results.length < 8); dayOff++) {
     const day = dayList[dayOff];
     for (const trip of coachTrips) {
       if (!serviceRuns(trip, day)) continue;
       for (let k = 0; k < trip.s.length - 1; k++) {   // never "depart" from the terminus
         const [idx, min] = trip.s[k];
         if (!here.has(idx)) continue;
-        if (dayOff === 0 && min < now.min - 2) continue;
+        if (!all && dayOff === 0 && min < now.min - 2) continue;
         results.push({
           day: dayOff === 0 ? 'today' : 'tomorrow',
           route: trip.r, operator: trip.op,
@@ -252,7 +252,7 @@ function coachBoard(lat, lon, radius = 300, days = null) {
   }
   results.sort((a, b) => a.depMin - b.depMin);
   const nearest = [...here.entries()].sort((a, b) => a[1] - b[1])[0];
-  return { fetchedAt: Date.now(), stopName: coachStops[nearest[0]].n, results: results.slice(0, 8) };
+  return { fetchedAt: Date.now(), stopName: coachStops[nearest[0]].n, results: all ? results : results.slice(0, 8) };
 }
 
 // ── FEED HORIZON (audit F-6) ──
@@ -434,7 +434,7 @@ function slimVtDeparture(d) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.7.1', romeTime: romeNowString(), feedHorizon: feedHorizon(), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.8.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)
@@ -610,7 +610,7 @@ const routes = {
     const lat = Number(q.get('lat')), lon = Number(q.get('lon'));
     if (![lat, lon].every(isFinite)) throw httpError(400, 'lat/lon required');
     const radius = Math.min(Number(q.get('r')) || 300, 1500);
-    return coachBoard(lat, lon, radius);
+    return coachBoard(lat, lon, radius, null, q.get('all') === '1');
   },
 
   'GET /api/vt/stations': async (q) => {
