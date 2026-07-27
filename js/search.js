@@ -689,6 +689,7 @@ function renderRecents() {
         sel.from = r.from; sel.to = r.to;
         document.getElementById('from-input').value = r.from.name;
         document.getElementById('to-input').value = r.to.name;
+        syncClears();
         runSearch();
       },
     }));

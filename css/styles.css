@@ -450,3 +450,10 @@ body.sheet-open { overflow: hidden; }
 .dep-chevron { color: var(--text-muted, #9a9a9a); font-size: 1.2rem; flex: 0 0 auto; align-self: center; }
 .direct-head strong { font-size: 0.95rem; }
 .direct-head p { font-size: 0.78rem; }
+
+/* v0.9.2: the floating swap is meaningless mid-typing and got clipped by the
+   open suggestion dropdown — hide it while either suggest list is showing */
+.endpoint-stack:has(.suggest:not([hidden])) .swap-btn {
+  opacity: 0; pointer-events: none;
+}
+.endpoint-stack .swap-btn { transition: opacity 0.12s; }
