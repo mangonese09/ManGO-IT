@@ -9,7 +9,7 @@
 import csv, io, json, os, re, unicodedata, zipfile
 from datetime import date, timedelta
 
-from stopnorm import canon_key, display_score, sig_tokens, MERGE_M, TIGHT_M, PRECISE
+from stopnorm import canon_key, display_score, sig_tokens, apply_renames, MERGE_M, TIGHT_M, PRECISE
 
 
 def _cell(lat, lon):
@@ -155,7 +155,7 @@ def main():
     trip_sigs, trip_ids_seen = set(), set()
 
     for f in sorted(os.listdir(ROUTES)):
-        route = json.load(open(os.path.join(ROUTES, f), encoding='utf-8'))
+        route = apply_renames(json.load(open(os.path.join(ROUTES, f), encoding='utf-8')))
         op = route['operator']
         if op not in agencies_seen:
             aid = slug(op)[:24]
@@ -293,6 +293,17 @@ def main():
         for d in dates:
             cal_rows.append([sid, d.strftime('%Y%m%d'), 1])
 
+    # sidecar map must be built while e['row'] indices are still valid
+    merge_map = {k: stop_rows[e['row']][1] for k, e in key2entry.items()}
+
+    # orphan filter (audit P0.3): stops get registered while a trip is still
+    # being considered, so quarantined trips left 674 never-referenced stops
+    # polluting stops.txt and the autocomplete index. Ship only stops that a
+    # surviving stop_time actually uses.
+    used_stops = {row[3] for row in st_rows}
+    n_orphans = sum(1 for r in stop_rows if r[0] not in used_stops)
+    stop_rows = [r for r in stop_rows if r[0] in used_stops]
+
     files = {
         'agency.txt': (['agency_id', 'agency_name', 'agency_url', 'agency_timezone', 'agency_lang'], agency_rows),
         'stops.txt': (['stop_id', 'stop_name', 'stop_lat', 'stop_lon'], stop_rows),
@@ -320,11 +331,10 @@ def main():
             z.writestr(fn, buf.getvalue())
     # sidecar for the verifiers: variant name key → canonical display name,
     # so their API-side reconstructions can apply the same consolidation
-    merge_map = {k: stop_rows[e['row']][1] for k, e in key2entry.items()}
     json.dump(merge_map, open(os.path.join(OUT_DIR, 'stop-merge-map.json'), 'w', encoding='utf-8'),
               ensure_ascii=False, indent=0)
     print(f'wrote {zpath}')
-    print(f'  stops={len(stop_rows)} routes={len(route_rows)} trips={len(trip_rows)} stop_times={len(st_rows)} service_dates={len(cal_rows)}')
+    print(f'  stops={len(stop_rows)} ({n_orphans} orphans dropped) routes={len(route_rows)} trips={len(trip_rows)} stop_times={len(st_rows)} service_dates={len(cal_rows)}')
     print(f'  stop consolidation: {merged_variants[0]} spelling variants merged into canonical stops')
     if skipped:
         print('skipped:')

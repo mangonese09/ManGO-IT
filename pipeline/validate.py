@@ -148,6 +148,33 @@ def main(path):
     if speed_errs > 8: errors.append(f'... plus {speed_errs - 8} more speed violations')
     if slow_warns: warnings.append(f'{slow_warns} suspiciously slow segments (<5 km/h over >2.5km) at centroid/interpolated precision')
 
+    # wrong-province gate (audit P0.3): a stop whose name claims a major city
+    # must sit near that city. Catches homonym geocodes that survive the speed
+    # gate on slow legs (CATANIA piazza Giovanni XXIII shipped 30 km inland).
+    CITY_KM = 25
+    CITIES = {
+        'PALERMO': (38.116, 13.362), 'CATANIA': (37.507, 15.083),
+        'MESSINA': (38.193, 15.554), 'SIRACUSA': (37.069, 15.283),
+        'AGRIGENTO': (37.311, 13.577), 'TRAPANI': (38.017, 12.514),
+        'RAGUSA': (36.925, 14.731), 'ENNA': (37.567, 14.279),
+        'CALTANISSETTA': (37.490, 14.063), 'GELA': (37.073, 14.240),
+        'MODICA': (36.859, 14.761), 'MILAZZO': (38.221, 15.240),
+    }
+    city_errs = 0
+    for s_ in stops:
+        up = s_['stop_name'].upper()
+        if 'AEROPORTO' in up or 'PUNTA RAISI' in up:
+            continue  # airports legitimately sit outside their city
+        for city, c in CITIES.items():
+            if re.match(rf'{city}\b', up):
+                d_ = haversine_km((float(s_['stop_lat']), float(s_['stop_lon'])), c)
+                if d_ > CITY_KM:
+                    city_errs += 1
+                    if city_errs <= 8:
+                        errors.append(f"stop {s_['stop_id']} \"{s_['stop_name']}\" is {d_:.0f}km from {city} (wrong-province geocode?)")
+                break
+    if city_errs > 8: errors.append(f'... plus {city_errs - 8} more wrong-province stops')
+
     errors += calendar_assertions()
 
     print(f'trips={len(trips)} stops={len(stops)} stop_times={len(st)} services={len(svcs)}')

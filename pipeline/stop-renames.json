@@ -1,0 +1,23 @@
+{
+ "_comment": "Per-route stop-name corrections for parse-level damage the grid parser cannot fix. Keys are normalized (upper, collapsed spaces) sheet spellings INSIDE the named route only; values are canonical stop names. Two damage classes: (1) the terminus row label fused with prescription/footnote text (p1/p3/p5: the Palermo row became 'e Viceversa estremi compresi'); (2) generic template sheets whose rows are literally 'Capolinea di Partenza/Arrivo' — the termini are named by the sheet's own route title, so labeling them is reading the sheet, not inventing data. Rows that cannot be identified from the sheet itself (anonymous 'Fermata intermedia') are NEVER renamed and stay dropped.",
+ "per_route": {
+  "autotrasporticuffaro-autotra-p1": {
+   "E VICEVERSA ESTREMI COMPRESI": "Palermo (via P. Balsamo)"
+  },
+  "autotrasporticuffaro-autotra-p3": {
+   "-PALERMO E VICEVERSA ESTREMI COMPRESI": "Palermo (via P. Balsamo)"
+  },
+  "autotrasporticuffaro-autotra-p5": {
+   "-PALERMO E VICEVERSA ESTREMI COMPRESI": "Palermo (via P. Balsamo)"
+  },
+  "autotrasporticuffaro-autotra-p2": {
+   "CAPOLINEA DI PARTENZA CAPOLINEA DI ARRIVO ORARIO": "Agrigento",
+   "CAPOLINEA DI ARRIVO CAPOLINEA DI PARTENZA ORARIO": "Palermo (via P. Balsamo)"
+  },
+  "autotrasporticuffaro-autotra-p10": {
+   "CAPOLINEA DI PARTENZA CAPOLINEA DI ARRIVO ORARIO": "Canicattì",
+   "CAPOLINEA DI ARRIVO CAPOLINEA DI PARTENZA ORARIO": "Palermo (via P. Balsamo)",
+   "FERMATA INTERMEDIA FERMATA INTERMEDIA ORARIO": "Favara"
+  }
+ }
+}

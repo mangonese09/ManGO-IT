@@ -4,6 +4,9 @@
 # are interpolated between geocoded neighbours using the timetable's own KM
 # column. Every resolution is tagged with its precision.
 import json, os, re, time, math, urllib.request, urllib.parse
+from statistics import median
+
+from stopnorm import apply_renames
 
 ROOT = os.path.dirname(__file__)
 ROUTES = os.path.join(ROOT, 'data', 'routes')
@@ -86,16 +89,55 @@ def km_of(kms):
     return None
 
 
-def interpolate(missing_idx, coords, kms):
-    """Linear interpolation between nearest geocoded neighbours by km."""
+def rep_minutes(d):
+    """Representative elapsed minutes per stop index, median across the
+    direction's trips. Used as interpolation weight when the sheet has no KM
+    column: index-even spacing puts same-minute clustered stops kilometres
+    apart and fabricates speed-gate violations (Cuffaro SS189 bivios); the
+    operator's own timings place them honestly."""
+    per_idx = {}
+    for t in d.get('trips', []):
+        base, seen = None, []
+        for s in t.get('stops', []):
+            m = re.split(r'[.:]', s.get('arr') or '')
+            if len(m) < 2 or not m[0].isdigit() or not m[1].isdigit():
+                continue
+            v = int(m[0]) * 60 + int(m[1])
+            if base is None:
+                base = v
+            v -= base
+            if v < 0:
+                v += 1440
+            seen.append((s['idx'], v))
+        if not seen:
+            continue
+        if t.get('reverse'):
+            # a return run visits the stop list backwards: mirror its elapsed
+            # times so idx 0 is always the route origin, or medians mixing
+            # both directions collapse to a constant and lose the proportions
+            total = max(v for _i, v in seen)
+            seen = [(i, total - v) for i, v in seen]
+        for i, v in seen:
+            per_idx.setdefault(i, []).append(v)
+    return [median(per_idx[i]) if i in per_idx else None for i in range(len(d['stops']))]
+
+
+def interpolate(missing_idx, coords, kms, mins=None):
+    """Linear interpolation between nearest geocoded neighbours by km,
+    falling back to elapsed-time proportion, then index spacing."""
     before = next((i for i in range(missing_idx - 1, -1, -1) if coords[i]), None)
     after = next((i for i in range(missing_idx + 1, len(coords)) if coords[i]), None)
     if before is None or after is None: return None
     k0, k1, km = kms[before], kms[after], kms[missing_idx]
-    if None in (k0, k1, km) or k1 == k0:
-        f = (missing_idx - before) / (after - before)
-    else:
+    m0 = mins[before] if mins else None
+    m1 = mins[after] if mins else None
+    mm = mins[missing_idx] if mins else None
+    if None not in (k0, k1, km) and k1 != k0:
         f = (km - k0) / (k1 - k0)
+    elif None not in (m0, m1, mm) and m1 != m0:
+        f = (mm - m0) / (m1 - m0)
+    else:
+        f = (missing_idx - before) / (after - before)
     f = min(1, max(0, f))
     a, b = coords[before], coords[after]
     return {'lat': a['lat'] + (b['lat'] - a['lat']) * f,
@@ -106,21 +148,22 @@ def interpolate(missing_idx, coords, kms):
 def main():
     stops_out = {}
     for f in sorted(os.listdir(ROUTES)):
-        route = json.load(open(os.path.join(ROUTES, f), encoding='utf-8'))
+        route = apply_renames(json.load(open(os.path.join(ROUTES, f), encoding='utf-8')))
         if route.get('coords') == 'external':
             continue  # SAIS et al.: exact coords ship in data/sais-stop-coords.json
         for d in route['directions']:
             names = d['stops']
             kms = [None] * len(names)
-            # km from the richest trip's source rows isn't carried per stop here;
-            # fall back to index spacing when km unknown
+            # km isn't carried per stop here; interpolate() falls back to
+            # elapsed-time proportion from the trips, then index spacing
+            mins = rep_minutes(d)
             coords = []
             for n in names:
                 g = geocode_name(n)
                 coords.append(g)
             for i, (n, c) in enumerate(zip(names, coords)):
                 if c is None:
-                    coords[i] = interpolate(i, coords, kms)
+                    coords[i] = interpolate(i, coords, kms, mins)
             for n, c in zip(names, coords):
                 key = re.sub(r'\s+', ' ', n.upper().strip())
                 if key not in stops_out or (c and stops_out[key] is None):

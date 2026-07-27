@@ -61,3 +61,30 @@ def display_score(name, precision):
     precision wins, then the fullest spelling."""
     prec_rank = {'exact': 4, 'street': 3, 'override': 2, 'town': 1, 'interpolated': 0}
     return (prec_rank.get(precision, 0), sum(c.isalpha() for c in name or ''))
+
+
+# ── PER-ROUTE STOP RENAMES (parse-damage corrections) ──
+# pipeline/stop-renames.json: normalized junk spelling -> canonical name,
+# scoped to a single route_id. See the file's _comment for the two damage
+# classes. Applied by geocode.py AND emit_gtfs.py right after route load so
+# both see identical names.
+import json as _json
+import os as _os
+
+_RENAMES_F = _os.path.join(_os.path.dirname(_os.path.abspath(__file__)), 'stop-renames.json')
+RENAMES = (_json.load(open(_RENAMES_F, encoding='utf-8')).get('per_route', {})
+           if _os.path.exists(_RENAMES_F) else {})
+
+
+def apply_renames(route):
+    m = RENAMES.get(route.get('route_id'))
+    if not m:
+        return route
+    def fix(name):
+        return m.get(re.sub(r'\s+', ' ', name.upper().strip()), name)
+    for d in route['directions']:
+        d['stops'] = [fix(s) for s in d['stops']]
+        for t in d['trips']:
+            for s in t['stops']:
+                s['stop'] = fix(s['stop'])
+    return route
