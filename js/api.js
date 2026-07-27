@@ -28,10 +28,11 @@ export const api = {
   geocode: (text) =>
     getJson(`/api/geocode?text=${encodeURIComponent(text)}`, { source: 'transitous' }),
 
-  plan: ({ fromPlace, toPlace, time, arriveBy }) => {
+  plan: ({ fromPlace, toPlace, time, arriveBy, modes }) => {
     const p = new URLSearchParams({ fromPlace, toPlace });
     if (time) p.set('time', time);
     if (arriveBy) p.set('arriveBy', 'true');
+    if (modes) p.set('modes', modes);
     return getJson(`/api/plan?${p}`, { source: 'transitous' });
   },
 

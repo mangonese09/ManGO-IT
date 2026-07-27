@@ -17,6 +17,7 @@ export function initSearch() {
   document.getElementById('swap-btn').addEventListener('click', swapEndpoints);
   document.getElementById('search-btn').addEventListener('click', runSearch);
   document.getElementById('when-toggle').addEventListener('click', toggleWhen);
+  initModeToggles();
   renderRecents();
 }
 
@@ -83,6 +84,51 @@ function showMyLocationOption(list, input) {
     el('span', { text: ' My location' }),
   ]));
   list.hidden = false;
+}
+
+// ── MODE FILTERS (v0.9.0) ──
+// Two honest buckets: trains vs buses+coaches. Tram/metro/ferry are
+// marginal here and always stay included. Both-off is nonsense — blocked.
+const RAIL_MODES = 'RAIL,HIGHSPEED_RAIL,LONG_DISTANCE,NIGHT_RAIL,REGIONAL_RAIL,REGIONAL_FAST_RAIL';
+const BUS_MODES = 'BUS,COACH';
+const ALWAYS_MODES = 'TRAM,METRO,SUBWAY,FERRY';
+let modeSel = { train: true, bus: true };
+try { modeSel = { ...modeSel, ...JSON.parse(localStorage.getItem('mangoit.modes') || '{}') } } catch { /* fresh */ }
+
+function initModeToggles() {
+  for (const which of ['train', 'bus']) {
+    const btn = document.getElementById(`mode-${which}`);
+    btn.classList.toggle('active', modeSel[which]);
+    btn.setAttribute('aria-pressed', String(modeSel[which]));
+    btn.addEventListener('click', () => {
+      if (modeSel[which] && !modeSel[which === 'train' ? 'bus' : 'train']) {
+        toast('Keep at least one mode on', 'warn');
+        return;
+      }
+      modeSel[which] = !modeSel[which];
+      btn.classList.toggle('active', modeSel[which]);
+      btn.setAttribute('aria-pressed', String(modeSel[which]));
+      try { localStorage.setItem('mangoit.modes', JSON.stringify(modeSel)); } catch { /* private mode */ }
+      if (sel.from && sel.to) runSearch(); // live re-filter of the current search
+    });
+  }
+}
+
+function planModes() {
+  if (modeSel.train && modeSel.bus) return null; // no filter
+  return (modeSel.train ? RAIL_MODES : BUS_MODES) + ',' + ALWAYS_MODES;
+}
+
+// belt-and-suspenders if upstream ignores transitModes
+function itineraryAllowed(it) {
+  for (const l of it.legs || []) {
+    if (l.mode === 'WALK') continue;
+    const isRail = /RAIL|LONG_DISTANCE/.test(l.mode || '');
+    const isBus = l.mode === 'BUS' || l.mode === 'COACH';
+    if (isRail && !modeSel.train) return false;
+    if (isBus && !modeSel.bus) return false;
+  }
+  return true;
 }
 
 const suggestSeq = { from: 0, to: 0 };
@@ -173,7 +219,9 @@ function locate() {
   });
 }
 
+let searchSeq = 0;
 async function runSearch() {
+  const mySeq = ++searchSeq; // rapid re-searches (mode toggles) supersede in-flight ones
   const results = document.getElementById('results');
   if (!sel.from || !sel.to) {
     toast('Pick both places from the suggestions', 'warn');
@@ -188,6 +236,8 @@ async function runSearch() {
     params.time = romeWallToIso(whenVal);
     if (departMode === 'arrive') params.arriveBy = true;
   }
+  const modes = planModes();
+  if (modes) params.modes = modes;
 
   // Race the plan with our own direct lookup (answers in ms): direct coaches
   // render alongside WEAK plan results too, not only on total failure —
@@ -198,7 +248,7 @@ async function runSearch() {
   const qDate = whenVal ? whenVal.slice(0, 10) : null;
   const qAfterMin = (whenVal && departMode === 'depart')
     ? Number(whenVal.slice(11, 13)) * 60 + Number(whenVal.slice(14, 16)) : null;
-  const directPromise = (sel.from?.lat && sel.to?.lat)
+  const directPromise = (modeSel.bus && sel.from?.lat && sel.to?.lat)
     ? api.direct({ fromLat: sel.from.lat, fromLon: sel.from.lon,
                    toLat: sel.to.lat, toLon: sel.to.lon,
                    date: qDate || undefined, afterMin: qAfterMin ?? undefined }).catch(() => null)
@@ -206,13 +256,16 @@ async function runSearch() {
 
   try {
     const { data, stale, fetchedAt } = await api.plan(params);
+    if (mySeq !== searchSeq) return;
     pushRecent({ from: sel.from, to: sel.to });
     renderRecents();
-    renderItineraries(data.itineraries || [], { stale, fetchedAt });
+    const allowed = (data.itineraries || []).filter(itineraryAllowed);
+    renderItineraries(allowed, { stale, fetchedAt });
     const dir = await directPromise;
+    if (mySeq !== searchSeq) return;
     const runs = dir?.data?.results || [];
     const xfers = dir?.data?.transfers || [];
-    const its = data.itineraries || [];
+    const its = allowed;
     if (!its.length) {
       const ok = renderDirectBlock(runs, 'empty', xfers);
       if (!ok) await renderDeadEnd(params, whenVal);
@@ -223,8 +276,10 @@ async function runSearch() {
     }
     maybeHorizonNote(whenVal);
   } catch (err) {
+    if (mySeq !== searchSeq) return;
     results.innerHTML = '';
     const dir = await directPromise;
+    if (mySeq !== searchSeq) return;
     const ok = renderDirectBlock(dir?.data?.results || [], 'down', dir?.data?.transfers || []);
     if (!ok) {
       results.appendChild(el('div', { class: 'empty-state' }, [

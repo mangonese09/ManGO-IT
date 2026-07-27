@@ -9,7 +9,7 @@
   <link rel="icon" href="/icons/icon-192.png">
   <link rel="apple-touch-icon" href="/icons/icon-192.png">
   <link rel="stylesheet" href="https://mangonese.dev/shared/mangonese.css">
-  <link rel="stylesheet" href="/css/styles.css?v=0.8.1">
+  <link rel="stylesheet" href="/css/styles.css?v=0.9.0">
 </head>
 <body>
   <header class="app-header">
@@ -21,20 +21,31 @@
     <!-- ── HOME ── -->
     <section id="view-home">
       <div class="search-box card">
-        <div class="endpoint-row">
-          <input id="from-input" type="text" placeholder="From" autocomplete="off" enterkeyhint="search">
-          <button id="from-clear" class="field-clear" aria-label="Clear From" hidden>&#10005;</button>
-          <div id="from-suggest" class="suggest" hidden></div>
-        </div>
-        <div class="endpoint-row">
-          <input id="to-input" type="text" placeholder="To — anywhere in Sicily" autocomplete="off" enterkeyhint="search">
-          <button id="to-clear" class="field-clear" aria-label="Clear To" hidden>&#10005;</button>
-          <div id="to-suggest" class="suggest" hidden></div>
-          <button id="swap-btn" class="swap-btn" aria-label="Swap">⇅</button>
+        <div class="endpoint-stack">
+          <div class="endpoint-row">
+            <input id="from-input" type="text" placeholder="From" autocomplete="off" enterkeyhint="search">
+            <button id="from-clear" class="field-clear" aria-label="Clear From" hidden>&#10005;</button>
+            <div id="from-suggest" class="suggest" hidden></div>
+          </div>
+          <div class="endpoint-divider"></div>
+          <div class="endpoint-row">
+            <input id="to-input" type="text" placeholder="To — anywhere in Sicily" autocomplete="off" enterkeyhint="search">
+            <button id="to-clear" class="field-clear" aria-label="Clear To" hidden>&#10005;</button>
+            <div id="to-suggest" class="suggest" hidden></div>
+          </div>
+          <button id="swap-btn" class="swap-btn" aria-label="Swap From and To">⇅</button>
         </div>
         <div class="when-row">
           <button id="when-toggle" class="btn btn-ghost">Depart</button>
           <input id="when-input" type="datetime-local" aria-label="When (Italy time)">
+        </div>
+        <div class="mode-row" role="group" aria-label="Modes to include">
+          <button id="mode-train" class="mode-toggle active" aria-pressed="true">
+            <img src="/icons/modes/train.png" alt=""><span>Trains</span>
+          </button>
+          <button id="mode-bus" class="mode-toggle active" aria-pressed="true">
+            <img src="/icons/modes/bus.png" alt=""><span>Buses &amp; coaches</span>
+          </button>
         </div>
         <p class="muted when-tz">Blank = leave now · times are Italy time</p>
         <button id="search-btn" class="btn btn-primary btn-wide">Find routes</button>
@@ -118,6 +129,6 @@
     </button>
   </nav>
 
-  <script type="module" src="/js/app.js?v=0.8.1"></script>
+  <script type="module" src="/js/app.js?v=0.9.0"></script>
 </body>
 </html>

@@ -467,7 +467,7 @@ function slimVtDeparture(d) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.8.1', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.9.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)
@@ -543,6 +543,11 @@ const routes = {
     if (q.get('time')) params.set('time', q.get('time'));
     if (q.get('arriveBy') === 'true') params.set('arriveBy', 'true');
     params.set('numItineraries', q.get('n') || '6');
+    // mode filter (v0.9.0 home toggles): validated pass-through to MOTIS
+    const modes = q.get('modes');
+    if (modes && /^[A-Z_]+(,[A-Z_]+)*$/.test(modes) && modes.length <= 200) {
+      params.set('transitModes', modes);
+    }
     // Routing controls tuned for a sparse rural network (audit F-1).
     // MOTIS defaults are metro-grade: searchWindow 900s = 15 MINUTES —
     // on a 3-runs-a-day coach corridor that alone fabricates dead ends.
