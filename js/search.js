@@ -388,9 +388,12 @@ function directRunMinutes(r) {
   return ((ah * 60 + am) - (dh * 60 + dm) + 1440) % 1440;
 }
 
+// QA-22: compact day marker — the clock stays the loudest thing on the line
 function dayTag(day) {
   if (!day || day === 'today') return '';
-  return day === 'tomorrow' ? ' (tomorrow)' : ` (${day})`;
+  if (day === 'tomorrow') return ' +1';
+  const d = new Date(day + 'T12:00:00Z');
+  return isNaN(d) ? ` ${day}` : ' ' + d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
 }
 
 // ── DIRECT-RESULT DETAIL SHEETS ──
