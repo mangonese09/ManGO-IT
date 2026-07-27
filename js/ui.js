@@ -36,12 +36,26 @@ export function isRailMode(mode) {
   return /RAIL|LONG_DISTANCE|METRO|SUBWAY/.test(mode || '');
 }
 
-// Green "live" vs grey "scheduled" — honesty about data quality (PRD §10).
+// Five fixed mode colors (audit P2, competitive §7): consistency beats
+// operator branding at 44+ tiny operators. Always paired with the glyph —
+// color alone never carries the meaning.
+export function modeClass(mode) {
+  if (isRailMode(mode) && /METRO|SUBWAY|TRAM/.test(mode)) return 'mode-tram';
+  if (isRailMode(mode)) return 'mode-rail';
+  if (mode === 'FERRY') return 'mode-ferry';
+  if (mode === 'TRAM') return 'mode-tram';
+  if (mode === 'COACH') return 'mode-coach';
+  return 'mode-bus'; // urban bus + unknowns
+}
+
+// Live = animated pulse glyph (Transit-style, competitive §3); scheduled =
+// quiet text. Binary and honest: never tint a scheduled time green.
 export function liveBadge(realTime) {
-  return el('span', {
-    class: `badge ${realTime ? 'badge-live' : 'badge-sched'}`,
-    text: realTime ? 'live' : 'scheduled',
-  });
+  if (!realTime) return el('span', { class: 'badge badge-sched', text: 'scheduled' });
+  return el('span', { class: 'badge badge-live' }, [
+    el('span', { class: 'pulse-dot', 'aria-hidden': 'true' }),
+    el('span', { text: 'live' }),
+  ]);
 }
 
 export function staleChip(fetchedAt, stale) {

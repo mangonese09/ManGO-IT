@@ -257,3 +257,72 @@ body.sheet-open { overflow: hidden; }
 }
 :root[data-theme="light"] .horizon-note { background: #f4ede2; }
 .empty-state .btn { margin-top: 8px; }
+
+/* ── P2 result card: clocks dominant, proportional leg strip ── */
+.iti-times { display: flex; align-items: baseline; gap: 10px; }
+.iti-time { font-size: 1.25rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.iti-dur { margin-left: auto; color: var(--text-muted, #9a9a9a); }
+.chip-imminent {
+  background: var(--mango, #ffb454); color: #1a1208;
+  font-weight: 600; font-size: 0.75rem; padding: 2px 8px; border-radius: 999px;
+}
+
+.leg-strip { display: flex; align-items: center; gap: 3px; margin: 10px 0 8px; min-height: 26px; }
+.leg-seg {
+  display: inline-flex; align-items: center; justify-content: center; gap: 4px;
+  flex-basis: 0; min-width: 34px; height: 26px; border-radius: 7px;
+  padding: 0 4px; overflow: hidden; white-space: nowrap;
+  font-size: 0.75rem; font-weight: 600; color: #10130f;
+}
+.leg-label { overflow: hidden; text-overflow: ellipsis; max-width: 12ch; }
+.leg-walk-gap { color: var(--text-muted, #9a9a9a); font-size: 0.8rem; flex: 0 0 auto; }
+.leg-walk-long { font-size: 0.9rem; }
+
+/* five fixed mode colors (audit P2 §7) — always paired with a glyph */
+.mode-rail  { background: #7db8f7; }
+.mode-coach { background: var(--mango, #ffb454); }
+.mode-bus   { background: #8fd08a; }
+.mode-tram  { background: #cba6f0; }
+.mode-ferry { background: #7fd6e0; }
+.line-mode { background: transparent; }
+.line-mode.mode-rail  { color: #7db8f7; }
+.line-mode.mode-coach { color: var(--mango, #ffb454); }
+
+/* live pulse glyph (audit P2 §3) */
+.badge-live { display: inline-flex; align-items: center; gap: 5px; }
+.pulse-dot { width: 7px; height: 7px; border-radius: 50%; background: currentColor; position: relative; }
+.pulse-dot::after {
+  content: ''; position: absolute; inset: -4px; border-radius: 50%;
+  border: 1.5px solid currentColor; opacity: 0;
+  animation: pulse-ring 1.6s ease-out infinite;
+}
+@keyframes pulse-ring {
+  0% { transform: scale(0.5); opacity: 0.8; }
+  100% { transform: scale(1.4); opacity: 0; }
+}
+@media (prefers-reduced-motion: reduce) { .pulse-dot::after { animation: none; } }
+
+/* transfer-risk chips (audit P2 §4) */
+.chip-xfer-tight { background: #b98a2b; color: #1a1208; font-size: 0.75rem; padding: 2px 8px; border-radius: 999px; font-weight: 600; }
+.chip-xfer-risky { background: var(--error, #e5484d); color: #fff; font-size: 0.75rem; padding: 2px 8px; border-radius: 999px; font-weight: 600; }
+
+/* ── P2 line-first nearby board ── */
+.line-board { display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
+.line-row {
+  display: flex; gap: 10px; padding: 10px 12px;
+  background: var(--bg-elevated, #232323); border-radius: 12px;
+}
+.line-row .line-mode { font-size: 1.15rem; line-height: 1.4; }
+.line-main { flex: 1; min-width: 0; }
+.line-name { margin-bottom: 2px; }
+.line-dir {
+  display: grid; grid-template-columns: minmax(0, 1fr) auto auto;
+  grid-template-areas: "headsign when pin" "stop when pin";
+  column-gap: 8px; align-items: center; padding: 3px 0;
+}
+.line-dir + .line-dir { border-top: 1px solid rgba(255,255,255,0.06); }
+:root[data-theme="light"] .line-dir + .line-dir { border-top-color: rgba(0,0,0,0.08); }
+.line-headsign { grid-area: headsign; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.line-stop { grid-area: stop; font-size: 0.72rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.line-dir .dep-when { grid-area: when; text-align: right; }
+.line-dir .pin-btn { grid-area: pin; }

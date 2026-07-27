@@ -1,7 +1,8 @@
 // ── A→B SEARCH ──
 import { api } from './api.js';
-import { el, modeMeta, isRailMode, liveBadge, staleChip, openSheet } from './ui.js';
+import { el, modeMeta, modeClass, isRailMode, liveBadge, staleChip, openSheet } from './ui.js';
 import { romeTime, romeDay, durationText, isOtherRomeDay, romeWallToIso } from './time.js';
+import { worstTransferMin, transferTier, transferChipText, imminentText, legStripModel } from './itinerary.js';
 import { operatorFor } from './operators.js';
 import { getRecents, pushRecent } from './store.js';
 import { toast } from './toast.js';
@@ -162,9 +163,15 @@ async function runSearch() {
   // render alongside WEAK plan results too, not only on total failure —
   // Transitous can "succeed" with a 4 h rail-replacement bus while our feed
   // holds a 2 h coach it hasn't ingested yet (audit F-4).
+  // explicit travel dates flow through to the direct lookup, or a date-picked
+  // search would render TODAY's coaches as the answer
+  const qDate = whenVal ? whenVal.slice(0, 10) : null;
+  const qAfterMin = (whenVal && departMode === 'depart')
+    ? Number(whenVal.slice(11, 13)) * 60 + Number(whenVal.slice(14, 16)) : null;
   const directPromise = (sel.from?.lat && sel.to?.lat)
     ? api.direct({ fromLat: sel.from.lat, fromLon: sel.from.lon,
-                   toLat: sel.to.lat, toLon: sel.to.lon }).catch(() => null)
+                   toLat: sel.to.lat, toLon: sel.to.lon,
+                   date: qDate || undefined, afterMin: qAfterMin ?? undefined }).catch(() => null)
     : Promise.resolve(null);
 
   try {
@@ -284,6 +291,11 @@ function directRunMinutes(r) {
   return ((ah * 60 + am) - (dh * 60 + dm) + 1440) % 1440;
 }
 
+function dayTag(day) {
+  if (!day || day === 'today') return '';
+  return day === 'tomorrow' ? ' (tomorrow)' : ` (${day})`;
+}
+
 const DIRECT_HEADS = {
   down: 'Routing unavailable — direct coaches only',
   empty: 'Direct coaches (from ManGO:IT timetables)',
@@ -303,7 +315,7 @@ function renderDirectBlock(runs, reason, transfers = []) {
     ...runs.map((r) => el('div', { class: 'dep-row' }, [
       el('span', { class: 'dep-mode', text: '🚌' }),
       el('div', { class: 'dep-main' }, [
-        el('span', { class: 'dep-route', text: `${r.dep} → ${r.arr}${r.day === 'tomorrow' ? ' (tomorrow)' : ''}` }),
+        el('span', { class: 'dep-route', text: `${r.dep} → ${r.arr}${dayTag(r.day)}` }),
         el('span', { class: 'muted dep-headsign', text: `${r.from} → ${r.to} · ${r.operator}` }),
       ]),
     ])),
@@ -312,7 +324,7 @@ function renderDirectBlock(runs, reason, transfers = []) {
     kids.push(el('div', { class: 'dep-row xfer-row' }, [
       el('span', { class: 'dep-mode', text: '🚌🚌' }),
       el('div', { class: 'dep-main' }, [
-        el('span', { class: 'dep-route', text: `${c.legs[0].dep} → ${c.legs[1].arr}${c.day === 'tomorrow' ? ' (tomorrow)' : ''} · 1 transfer` }),
+        el('span', { class: 'dep-route', text: `${c.legs[0].dep} → ${c.legs[1].arr}${dayTag(c.day)} · 1 transfer` }),
         el('span', { class: 'muted dep-headsign', text: `${c.legs[0].from} → ${c.xferStop} (${c.waitMin} min wait) → ${c.legs[1].to}` }),
         el('span', { class: 'muted dep-headsign', text: `${c.legs[0].operator} + ${c.legs[1].operator}` }),
       ]),
@@ -329,28 +341,50 @@ function renderItineraries(itineraries, { stale, fetchedAt }) {
 
   if (!itineraries.length) return; // caller renders direct results or the dead-end fallbacks
 
-  for (const it of itineraries) {
-    const transitLegs = it.legs.filter((l) => l.mode !== 'WALK');
-    const chips = el('div', { class: 'iti-chips' });
-    for (const leg of transitLegs.length ? transitLegs : it.legs) {
-      const m = modeMeta(leg.mode);
-      chips.appendChild(el('span', { class: 'chip', text: `${m.icon} ${leg.routeShortName || leg.displayName || m.label}` }));
+  for (const it of itineraries) results.appendChild(itineraryCard(it));
+}
+
+// Result card (audit P2, competitive §1–§4): dep→arr clocks dominant,
+// proportional leg strip, worst-transfer risk chip, honest live/scheduled.
+function itineraryCard(it) {
+  const transitLegs = it.legs.filter((l) => l.mode !== 'WALK');
+
+  const strip = el('div', { class: 'leg-strip' });
+  for (const seg of legStripModel(it.legs)) {
+    if (seg.walk) {
+      strip.appendChild(el('span', { class: `leg-walk-gap${seg.long ? ' leg-walk-long' : ''}`, text: seg.long ? '🚶' : '›' }));
+      continue;
     }
-    const anyStatic = transitLegs.some((l) => !l.realTime);
-    const card = el('button', { class: 'card iti-card', onclick: () => openItineraryDetail(it) }, [
-      el('div', { class: 'iti-times' }, [
-        el('span', { class: 'iti-time', text: `${romeTime(it.startTime)} → ${romeTime(it.endTime)}` }),
-        el('span', { class: 'iti-dur', text: durationText(it.duration) }),
-      ]),
-      isOtherRomeDay(it.startTime) ? el('div', { class: 'iti-day muted', text: romeDay(it.startTime) }) : null,
-      chips,
-      el('div', { class: 'iti-meta' }, [
-        el('span', { class: 'muted', text: it.transfers === 0 ? 'direct' : `${it.transfers} transfer${it.transfers > 1 ? 's' : ''}` }),
-        anyStatic ? el('span', { class: 'badge badge-sched', text: 'some legs schedule-only' }) : el('span', { class: 'badge badge-live', text: 'live data' }),
-      ]),
-    ]);
-    results.appendChild(card);
+    const m = modeMeta(seg.mode);
+    strip.appendChild(el('span', {
+      class: `leg-seg ${modeClass(seg.mode)}`, style: `flex-grow:${seg.pct}`,
+      title: `${m.label} ${seg.label}`.trim(),
+    }, [
+      el('span', { class: 'leg-glyph', text: m.icon }),
+      seg.label ? el('span', { class: 'leg-label', text: seg.label }) : null,
+    ]));
   }
+
+  const worst = worstTransferMin(it.legs);
+  const tier = transferTier(worst);
+  const imminent = imminentText(it.startTime);
+  const anyLive = transitLegs.some((l) => l.realTime);
+
+  return el('button', { class: 'card iti-card', onclick: () => openItineraryDetail(it) }, [
+    el('div', { class: 'iti-times' }, [
+      el('span', { class: 'iti-time', text: `${romeTime(it.startTime)} → ${romeTime(it.endTime)}` }),
+      imminent ? el('span', { class: 'chip chip-imminent', text: imminent }) : null,
+      el('span', { class: 'iti-dur', text: durationText(it.duration) }),
+    ]),
+    isOtherRomeDay(it.startTime) ? el('div', { class: 'iti-day muted', text: romeDay(it.startTime) }) : null,
+    strip,
+    el('div', { class: 'iti-meta' }, [
+      el('span', { class: 'muted', text: it.transfers === 0 ? 'direct' : `${it.transfers} transfer${it.transfers > 1 ? 's' : ''}` }),
+      tier === 'calm' ? el('span', { class: 'muted', text: transferChipText(worst, tier) }) : null,
+      tier === 'tight' || tier === 'risky' ? el('span', { class: `chip chip-xfer-${tier}`, text: transferChipText(worst, tier) }) : null,
+      liveBadge(anyLive),
+    ]),
+  ]);
 }
 
 // ── ITINERARY DETAIL ──

@@ -261,18 +261,26 @@ let horizonCache = null;
 function feedHorizon() {
   const today = romeParts().iso;
   if (horizonCache && horizonCache.computedFor === today) return horizonCache.value;
+  // The cliff lives in the EXPLICIT-DATE services (harvested validities end
+  // with the timetable period; PDF pattern trips have no end date and would
+  // mask it). Rolling 7-day windows so the Sunday dip doesn't read as the
+  // cliff; horizon = end of the last window holding >=50% of the first.
   const counts = [];
   for (let i = 0; i < 120; i++) {
     const day = romeParts(new Date(Date.now() + i * 86400000));
-    let n = 0;
-    for (const trip of coachTrips) if (serviceRuns(trip, day)) n++;
-    counts.push({ iso: day.iso, n });
+    let n = 0, xd = 0;
+    for (const trip of coachTrips) if (serviceRuns(trip, day)) { n++; if (trip.xd) xd++; }
+    counts.push({ iso: day.iso, n, xd });
   }
-  const base = Math.max(1, counts[0].n);
-  let lastGood = counts[0].iso;
-  for (const c of counts) {
-    if (c.n < base * 0.5) break;
-    lastGood = c.iso;
+  const win = (i) => counts.slice(i, i + 7).reduce((a, c) => a + c.xd, 0);
+  const base = win(0);
+  let lastGood = counts[counts.length - 1].iso;
+  if (base > 0) {
+    lastGood = counts[6].iso;
+    for (let i = 0; i + 7 <= counts.length; i++) {
+      if (win(i) < base * 0.5) break;
+      lastGood = counts[i + 6].iso;
+    }
   }
   const value = { date: lastGood, tripsToday: counts[0].n };
   horizonCache = { computedFor: today, value };
@@ -406,7 +414,7 @@ function slimVtDeparture(d) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.6.1', romeTime: romeNowString(), feedHorizon: feedHorizon(), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.7.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)
@@ -552,10 +560,28 @@ const routes = {
     const tLat = Number(q.get('toLat')), tLon = Number(q.get('toLon'));
     if (![fLat, fLon, tLat, tLon].every(isFinite)) throw httpError(400, 'fromLat/fromLon/toLat/toLon required');
     const radius = Math.min(Number(q.get('r')) || 1500, 5000);
-    const out = directSearch(fLat, fLon, tLat, tLon, radius);
+    // explicit travel date (audit P2 visual QA): without this, a query for
+    // Oct 15 rendered TODAY's coaches under a date-picked search — wrong-day
+    // information presented as an answer
+    const dateStr = q.get('date');
+    let days = null, dayLabels = null;
+    if (dateStr && /^\d{4}-\d{2}-\d{2}$/.test(dateStr) && dateStr !== romeParts().iso) {
+      const noon = new Date(dateStr + 'T12:00:00Z');
+      if (isNaN(noon)) throw httpError(400, 'bad date');
+      const d0 = romeParts(noon);
+      d0.min = Math.max(0, Math.min(1439, Number(q.get('afterMin')) || 0));
+      const d1 = romeParts(new Date(noon.getTime() + 86400000));
+      days = [d0, d1];
+      dayLabels = { today: d0.iso, tomorrow: d1.iso };
+    }
+    const out = directSearch(fLat, fLon, tLat, tLon, radius, days);
     // one-transfer chains: most useful when direct service is thin
     if ((out.results || []).length < 6) {
-      out.transfers = twoLegSearch(fLat, fLon, tLat, tLon, radius);
+      out.transfers = twoLegSearch(fLat, fLon, tLat, tLon, radius, days);
+    }
+    if (dayLabels) {
+      for (const r of out.results || []) r.day = dayLabels[r.day] || r.day;
+      for (const c of out.transfers || []) c.day = dayLabels[c.day] || c.day;
     }
     return out;
   },

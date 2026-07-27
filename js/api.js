@@ -48,8 +48,12 @@ export const api = {
       cacheKey: `coachboard:${lat.toFixed(4)},${lon.toFixed(4)}`, source: 'transitous',
     }),
 
-  direct: ({ fromLat, fromLon, toLat, toLon }) =>
-    getJson(`/api/direct?fromLat=${fromLat.toFixed(4)}&fromLon=${fromLon.toFixed(4)}&toLat=${toLat.toFixed(4)}&toLon=${toLon.toFixed(4)}`, { source: 'transitous' }),
+  direct: ({ fromLat, fromLon, toLat, toLon, date, afterMin }) => {
+    let url = `/api/direct?fromLat=${fromLat.toFixed(4)}&fromLon=${fromLon.toFixed(4)}&toLat=${toLat.toFixed(4)}&toLon=${toLon.toFixed(4)}`;
+    if (date) url += `&date=${date}`;
+    if (afterMin != null) url += `&afterMin=${afterMin}`;
+    return getJson(url, { source: 'transitous' });
+  },
 
   health: () =>
     getJson('/api/health', { source: 'transitous' }),
