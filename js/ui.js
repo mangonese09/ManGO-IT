@@ -102,15 +102,19 @@ export function openSheet(contentEl, { title = '' } = {}) {
   document.body.classList.add('sheet-open');
   requestAnimationFrame(() => overlay.classList.add('show'));
   sheetStack.push(overlay);
+  // QA-03: sheets are history entries — browser/hardware back closes them
+  try { history.pushState({ ...(history.state || {}), sheet: sheetStack.length }, ''); } catch { /* sandboxed */ }
   return overlay;
 }
 
-export function closeSheet() {
+// fromPop: true when history.popstate is unwinding us — don't call back() again
+export function closeSheet(fromPop = false) {
   const overlay = sheetStack.pop();
   if (!overlay) return false;
   overlay.classList.remove('show');
   setTimeout(() => overlay.remove(), 250);
   if (!sheetStack.length) document.body.classList.remove('sheet-open');
+  if (!fromPop && history.state && history.state.sheet) history.back();
   return true;
 }
 export function anySheetOpen() { return sheetStack.length > 0; }

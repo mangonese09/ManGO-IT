@@ -17,6 +17,8 @@ function setView(view, push = true) {
   current = view;
   // survive a page reload (browser pull-to-refresh) on the same tab
   try { localStorage.setItem('mangoit.view', view); } catch { /* private mode */ }
+  // QA-03: browser back walks the tab stack instead of exiting the app
+  if (push) { try { history.pushState({ view }, '', '#' + view); } catch { /* sandboxed */ } }
   for (const v of VIEWS) {
     document.getElementById(`view-${v}`).hidden = v !== view;
     document.getElementById(`nav-${v}`).classList.toggle('active', v === view);
@@ -30,9 +32,21 @@ function setView(view, push = true) {
 function goBack() {
   if (anySheetOpen()) { closeSheet(); return true; }
   const prev = navStack.pop();
-  if (prev) { setView(prev, false); return true; }
+  if (prev) {
+    setView(prev, false);
+    try { if (history.state && history.state.view) history.back(); } catch { /* sandboxed */ }
+    return true;
+  }
   return false;
 }
+
+// browser/hardware back → unwind sheet, then tab stack (QA-03)
+window.addEventListener('popstate', (e) => {
+  if (anySheetOpen()) { closeSheet(true); return; }
+  const v = (e.state && e.state.view) || 'home';
+  navStack.length = 0; // history is now the source of truth for depth
+  if (v !== current) setView(v, false);
+});
 
 // ── NATIVE SHELL BRIDGE (Capacitor wrap, M7) ──
 // No-ops on plain web: the same bundle serves it.mangonese.dev and the
@@ -80,6 +94,7 @@ function boot() {
   try {
     const last = localStorage.getItem('mangoit.view');
     if (last && last !== 'home') setView(last, false);
+    history.replaceState({ view: current }, '', '#' + current);
   } catch { /* private mode */ }
 
   if ('serviceWorker' in navigator) {
