@@ -75,3 +75,18 @@ test('feedHorizon: reports a verified-through date with sane shape (audit F-6)',
   const today = new Date().toISOString().slice(0, 10);
   assert.ok(h.date >= today, `horizon ${h.date} is in the past`);
 });
+
+test('vtSilence: flags consecutive zero-parse days, quiet days do not alarm', () => {
+  const { vtSilence } = require('../../server/proxy.js');
+  // healthy yesterday, silent today (many requests, zero parses) -> 1 day, no alert yet
+  let r = vtSilence({ '2026-07-26': { req: 20, ok: 5 }, '2026-07-27': { req: 12, ok: 0 } });
+  assert.strictEqual(r.silentDays, 1);
+  assert.strictEqual(r.alert, false);
+  // two full silent days -> alert
+  r = vtSilence({ '2026-07-25': { req: 9, ok: 3 }, '2026-07-26': { req: 8, ok: 0 }, '2026-07-27': { req: 12, ok: 0 } });
+  assert.strictEqual(r.silentDays, 2);
+  assert.strictEqual(r.alert, true);
+  // low-traffic silent day is not evidence
+  r = vtSilence({ '2026-07-26': { req: 2, ok: 0 }, '2026-07-27': { req: 1, ok: 0 } });
+  assert.strictEqual(r.silentDays, 0);
+});

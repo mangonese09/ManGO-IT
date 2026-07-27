@@ -255,6 +255,39 @@ function coachBoard(lat, lon, radius = 300, days = null, all = false) {
   return { fetchedAt: Date.now(), stopName: coachStops[nearest[0]].n, results: all ? results : results.slice(0, 8) };
 }
 
+// ── VT SILENT-DEATH DETECTION (gtfs-rt-research mitigation #1) ──
+// ViaggiaTreno is unofficial and single-sourced; if it changes shape it
+// fails SILENTLY (every lookup honestly reports "no live data"). Track
+// per-day outcomes, persisted across restarts, and flag consecutive days
+// where nothing parsed — that pattern is an API break, not quiet rails.
+const VT_STATS_F = path.join(__dirname, 'vt-stats.json');
+let vtStats = {};
+try { vtStats = JSON.parse(fs.readFileSync(VT_STATS_F, 'utf8')); } catch { /* first run */ }
+
+function vtRecord(gotData) {
+  const day = romeParts().iso;
+  const s = vtStats[day] || (vtStats[day] = { req: 0, ok: 0 });
+  s.req++;
+  if (gotData) s.ok++;
+  const days = Object.keys(vtStats).sort();
+  while (days.length > 21) delete vtStats[days.shift()];
+  try { fs.writeFileSync(VT_STATS_F, JSON.stringify(vtStats)); } catch { /* read-only fs */ }
+}
+
+// pure for tests: consecutive trailing days (>=3 requests) with zero parses
+function vtSilence(stats) {
+  const days = Object.keys(stats).sort().reverse();
+  let silent = 0;
+  for (const d of days) {
+    const s = stats[d];
+    if (!s || s.ok > 0 || s.req < 3) break;
+    silent++;
+  }
+  const last7 = {};
+  for (const d of Object.keys(stats).sort().slice(-7)) last7[d] = stats[d];
+  return { silentDays: silent, alert: silent >= 2, recent: last7 };
+}
+
 // ── FEED HORIZON (audit F-6) ──
 // PDF sheets and SAIS validities have real end dates; queries past them
 // silently lose coaches. Expose "coach schedules known through <date>" so
@@ -434,7 +467,7 @@ function slimVtDeparture(d) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.8.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.8.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)
@@ -646,8 +679,15 @@ const routes = {
     const key = `vtl:${train}`;
     const hit = cacheGet(key);
     if (hit) return hit;
-    const auto = await upstream(`${VT}/cercaNumeroTrenoTrenoAutocomplete/${train}`, { asText: true });
+    let auto;
+    try {
+      auto = await upstream(`${VT}/cercaNumeroTrenoTrenoAutocomplete/${train}`, { asText: true });
+    } catch (e) {
+      vtRecord(false);
+      throw e;
+    }
     const candidates = parseVtTrainAutocomplete(auto.data || '');
+    vtRecord(candidates.length > 0);
     if (!candidates.length) {
       const out = { live: false, reason: 'unknown-train' };
       cacheSet(key, out, 5 * 60 * 1000);
@@ -749,4 +789,4 @@ if (require.main === module) {
   server.listen(PORT, () => console.log(`ManGO:IT proxy on :${PORT}${STATIC ? ' (static+api)' : ''}`));
 }
 
-module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon };
+module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon, vtSilence };
