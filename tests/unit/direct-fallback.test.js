@@ -80,3 +80,15 @@ test('twoLegSearch: Raffadali→Catania chains via Agrigento with a sane transfe
   }
   assert.ok(/AGRIGENTO/i.test(chains[0].xferStop), `expected Agrigento transfer, got ${chains[0].xferStop}`);
 });
+
+test('far-attach: an origin ~4km from the nearest stop still gets runs, with the walk stated (v0.7.1)', () => {
+  const MON = { iso: '2026-08-03', wd: 0, min: 0, month: 8, day: 3 };
+  // countryside point between Aragona and Favara, ~3km+ from any stop
+  const far = { lat: 37.435, lon: 13.615 };
+  const ag = { lat: 37.3114, lon: 13.5872 };
+  const { results } = directSearch(far.lat, far.lon, ag.lat, ag.lon, 1500, [MON]);
+  assert.ok(results.length > 0, 'expected runs via far-attach');
+  const r = results[0];
+  assert.ok(r.fromWalkM > 1500 && r.fromWalkM <= 6000, `fromWalkM ${r.fromWalkM} should be a real long walk`);
+  assert.ok(r.toWalkM <= 1500, `toWalkM ${r.toWalkM} — destination is at a served stop`);
+});

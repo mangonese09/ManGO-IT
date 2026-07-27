@@ -3,7 +3,7 @@
 // so the tab is still useful on the ground.
 
 import { api } from './api.js';
-import { el, modeMeta } from './ui.js';
+import { el, modeMeta, modeIcon } from './ui.js';
 import { getLastPos } from './board.js';
 
 export async function renderMapTab() {
@@ -21,9 +21,9 @@ export async function renderMapTab() {
   try {
     const { data: stops } = await api.nearbyStops(pos.lat, pos.lon, 2500);
     for (const s of stops.slice(0, 25)) {
-      const icons = [...new Set((s.modes || []).map((mo) => modeMeta(mo).icon))].join(' ');
+      
       holder.appendChild(el('div', { class: 'dep-row' }, [
-        el('span', { class: 'dep-mode', text: icons || '🚏' }),
+        el('span', { class: 'dep-mode' }, [modeIcon((s.modes || [])[0] || 'BUS')]),
         el('div', { class: 'dep-main' }, [el('span', { class: 'dep-route', text: s.name })]),
         el('span', { class: 'muted', text: `${s.dist} m` }),
       ]));

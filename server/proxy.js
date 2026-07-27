@@ -80,8 +80,8 @@ function serviceRuns(trip, day) {
 
 // days injectable for tests: [{iso, wd, min, month, day}, …]; day 0 filters by "not departed yet"
 function directSearch(fLat, fLon, tLat, tLon, radius = 1500, days = null) {
-  const fromIdx = new Map(nearStopIdxs(fLat, fLon, radius).map((x) => [x.i, x.d]));
-  const toIdx = new Map(nearStopIdxs(tLat, tLon, radius).map((x) => [x.i, x.d]));
+  const fromIdx = new Map(attachStops(fLat, fLon, radius).map((x) => [x.i, x.d]));
+  const toIdx = new Map(attachStops(tLat, tLon, radius).map((x) => [x.i, x.d]));
   if (!fromIdx.size || !toIdx.size) return { results: [], reason: !fromIdx.size ? 'no-stops-near-origin' : 'no-stops-near-destination' };
   const dayList = days || [romeParts(), romeParts(new Date(Date.now() + 86400000))];
   const now = dayList[0];
@@ -101,6 +101,8 @@ function directSearch(fLat, fLon, tLat, tLon, radius = 1500, days = null) {
               day: dayOff === 0 ? 'today' : 'tomorrow',
               route: trip.r, operator: trip.op,
               from: coachStops[board.idx].n, to: coachStops[idx].n,
+              fromWalkM: Math.round(fromIdx.get(board.idx) || 0),
+              toWalkM: Math.round(toIdx.get(idx) || 0),
               dep: `${String(Math.floor(board.min / 60) % 24).padStart(2, '0')}:${String(board.min % 60).padStart(2, '0')}`,
               arr: `${String(Math.floor(arrMin / 60) % 24).padStart(2, '0')}:${String(arrMin % 60).padStart(2, '0')}`,
               depMin: board.min + dayOff * 1440,
@@ -145,8 +147,8 @@ function fmtMin(m) {
 }
 
 function twoLegSearch(fLat, fLon, tLat, tLon, radius = 1500, days = null) {
-  const fromIdx = new Map(nearStopIdxs(fLat, fLon, radius).map((x) => [x.i, x.d]));
-  const toIdx = new Map(nearStopIdxs(tLat, tLon, radius).map((x) => [x.i, x.d]));
+  const fromIdx = new Map(attachStops(fLat, fLon, radius).map((x) => [x.i, x.d]));
+  const toIdx = new Map(attachStops(tLat, tLon, radius).map((x) => [x.i, x.d]));
   if (!fromIdx.size || !toIdx.size) return [];
   const idxOf = tripIndex();
   const dayList = days || [romeParts(), romeParts(new Date(Date.now() + 86400000))];
@@ -178,6 +180,8 @@ function twoLegSearch(fLat, fLon, tLat, tLon, radius = 1500, days = null) {
                 day: dayOff === 0 ? 'today' : 'tomorrow',
                 depMin: board.min + dayOff * 1440, arrMin: arr3 + dayOff * 1440,
                 waitMin: dep2 - min,
+                fromWalkM: Math.round(fromIdx.get(board.idx) || 0),
+                toWalkM: Math.round(toIdx.get(idx3) || 0),
                 legs: [
                   { route: t1.r, operator: t1.op, from: coachStops[board.idx].n,
                     to: xferAt.n, dep: fmtMin(board.min), arr: fmtMin(min) },
@@ -285,6 +289,22 @@ function feedHorizon() {
   const value = { date: lastGood, tripsToday: counts[0].n };
   horizonCache = { computedFor: today, value };
   return value;
+}
+
+// far-attach (v0.7.1): an origin/destination that isn't close to any stop
+// still deserves an answer — attach to the nearest stops up to a long-walk
+// cap and surface the walk explicitly in the UI. Beyond the cap the
+// nearest-served empty-state hint takes over.
+const FAR_ATTACH_M = 6000; // ~75 min walk
+function attachStops(lat, lon, radius) {
+  const near = nearStopIdxs(lat, lon, radius);
+  if (near.length) return near;
+  const best = [];
+  for (let i = 0; i < coachStops.length; i++) {
+    const d = haversineM(lat, lon, coachStops[i].lat, coachStops[i].lon);
+    if (d <= FAR_ATTACH_M) best.push({ i, d });
+  }
+  return best.sort((a, b) => a.d - b.d).slice(0, 8);
 }
 
 function nearStopIdxs(lat, lon, radiusM) {
@@ -414,7 +434,7 @@ function slimVtDeparture(d) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.7.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.7.1', romeTime: romeNowString(), feedHorizon: feedHorizon(), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)
@@ -496,8 +516,8 @@ const routes = {
     params.set('searchWindow', q.get('searchWindow') || '21600');       // 6 h
     params.set('maxMatchingDistance', '600');   // town-centroid stops sit off the road graph at 250 m
     params.set('additionalTransferTime', '3');  // minutes; hourly coaches deserve a cushion
-    params.set('maxPreTransitTime', '1800');    // 30 min first/last-mile walk ceiling
-    params.set('maxPostTransitTime', '1800');
+    params.set('maxPreTransitTime', '3600');    // 60 min first/last-mile ceiling — rural addresses sit far from the network
+    params.set('maxPostTransitTime', '3600');
     const key = `plan:${params.toString()}`;
     const hit = cacheGet(key);
     if (hit) return hit;

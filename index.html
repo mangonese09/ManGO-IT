@@ -9,7 +9,7 @@
   <link rel="icon" href="/icons/icon-192.png">
   <link rel="apple-touch-icon" href="/icons/icon-192.png">
   <link rel="stylesheet" href="https://mangonese.dev/shared/mangonese.css">
-  <link rel="stylesheet" href="/css/styles.css?v=0.7.0">
+  <link rel="stylesheet" href="/css/styles.css?v=0.7.1">
 </head>
 <body>
   <header class="app-header">
@@ -23,10 +23,12 @@
       <div class="search-box card">
         <div class="endpoint-row">
           <input id="from-input" type="text" placeholder="From" autocomplete="off" enterkeyhint="search">
+          <button id="from-clear" class="field-clear" aria-label="Clear From" hidden>&#10005;</button>
           <div id="from-suggest" class="suggest" hidden></div>
         </div>
         <div class="endpoint-row">
           <input id="to-input" type="text" placeholder="To — anywhere in Sicily" autocomplete="off" enterkeyhint="search">
+          <button id="to-clear" class="field-clear" aria-label="Clear To" hidden>&#10005;</button>
           <div id="to-suggest" class="suggest" hidden></div>
           <button id="swap-btn" class="swap-btn" aria-label="Swap">⇅</button>
         </div>
@@ -116,6 +118,6 @@
     </button>
   </nav>
 
-  <script type="module" src="/js/app.js?v=0.7.0"></script>
+  <script type="module" src="/js/app.js?v=0.7.1"></script>
 </body>
 </html>

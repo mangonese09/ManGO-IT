@@ -1,6 +1,6 @@
 // ── SAVED (favorite stops + pinned departures) ──
 import { api } from './api.js';
-import { el, modeMeta, confirmModal } from './ui.js';
+import { el, modeMeta, modeIcon, confirmModal } from './ui.js';
 import { romeTime, romeDay, countdownText, isOtherRomeDay } from './time.js';
 import { getSaved, purgeSaved, removeSaved, getFavStops, addFavStop, removeFavStop } from './store.js';
 import { toast } from './toast.js';
@@ -33,26 +33,26 @@ async function favSuggest(q) {
     // stops only — this box adds departure boards, not places
     const stops = data.filter((r) => r.type === 'STOP' || r.type === 'COACH_STOP').slice(0, 8);
     for (const r of stops) {
-      let icon = '🚏', kind = 'city bus stop';
+      let iconMode = 'BUS', kind = 'city bus stop';
       const m = r.modes || [];
-      if (r.type === 'COACH_STOP') { icon = '🚌'; kind = 'coach stop'; }
-      else if (m.some((x) => /RAIL|LONG_DISTANCE/.test(x || ''))) { icon = '🚉'; kind = 'train station'; }
-      else if (m.some((x) => /METRO|SUBWAY/.test(x || ''))) { icon = '🚇'; kind = 'metro station'; }
-      else if (m.some((x) => /TRAM/.test(x || ''))) { icon = '🚊'; kind = 'tram stop'; }
+      if (r.type === 'COACH_STOP') { iconMode = 'COACH'; kind = 'coach stop'; }
+      else if (m.some((x) => /RAIL|LONG_DISTANCE/.test(x || ''))) { iconMode = 'RAIL'; kind = 'train station'; }
+      else if (m.some((x) => /METRO|SUBWAY/.test(x || ''))) { iconMode = 'METRO'; kind = 'metro station'; }
+      else if (m.some((x) => /TRAM/.test(x || ''))) { iconMode = 'TRAM'; kind = 'tram stop'; }
       const bits = [kind];
       if (r.town && r.town.toLowerCase() !== r.name.toLowerCase()) bits.push(r.town);
       list.appendChild(el('button', {
         class: 'suggest-row',
         onclick: () => {
           const key = r.type === 'STOP' && r.id ? r.id : `${r.lat.toFixed(5)},${r.lon.toFixed(5)}`;
-          addFavStop({ key, name: r.name, kind, icon, stopId: r.type === 'STOP' ? r.id : null, lat: r.lat, lon: r.lon });
+          addFavStop({ key, name: r.name, kind, iconMode, stopId: r.type === 'STOP' ? r.id : null, lat: r.lat, lon: r.lon });
           document.getElementById('fav-input').value = '';
           list.hidden = true;
           toast(`${r.name} added`, 'info', 1400);
           renderSaved();
         },
       }, [
-        el('span', { class: 'suggest-icon', text: icon }),
+        el('span', { class: 'suggest-icon' }, [modeIcon(iconMode)]),
         el('span', { class: 'suggest-name', text: r.name }),
         el('span', { class: 'suggest-area', text: bits.join(' · ') }),
       ]));
@@ -66,7 +66,7 @@ async function favSuggest(q) {
 async function favStopCard(s) {
   const card = el('div', { class: 'card fav-stop-card' }, [
     el('div', { class: 'fav-stop-head' }, [
-      el('span', { class: 'suggest-icon', text: s.icon || '🚏' }),
+      el('span', { class: 'suggest-icon' }, [modeIcon(s.iconMode || (s.icon === '🚌' ? 'COACH' : 'BUS'))]),
       el('div', { class: 'dep-main' }, [
         el('span', { class: 'dep-route', text: s.name }),
         el('span', { class: 'muted dep-headsign', text: s.kind }),
@@ -88,13 +88,13 @@ async function favStopCard(s) {
       const { data } = await api.stoptimes(s.stopId, 4);
       deps = (data.stopTimes || []).map((st) => ({
         label: `${st.routeShortName || modeMeta(st.mode).label} → ${st.headsign || ''}`,
-        icon: modeMeta(st.mode).icon,
+        iconMode: st.mode,
         when: st.departure, live: st.realTime, cancelled: st.cancelled,
       }));
     } else {
       const { data } = await api.coachBoard(s.lat, s.lon);
       deps = (data.results || []).map((r) => ({
-        label: `${r.route} → ${r.headsign}`, icon: '🚌',
+        label: `${r.route} → ${r.headsign}`, iconMode: 'COACH',
         clock: r.dep + (r.day === 'tomorrow' ? ' (tomorrow)' : ''),
       }));
     }
@@ -102,7 +102,7 @@ async function favStopCard(s) {
     if (!deps.length) rows.appendChild(el('p', { class: 'muted', text: 'No upcoming departures.' }));
     for (const d of deps.slice(0, 4)) {
       rows.appendChild(el('div', { class: 'dep-row' }, [
-        el('span', { class: 'dep-mode', text: d.icon }),
+        el('span', { class: 'dep-mode' }, [modeIcon(d.iconMode || 'BUS')]),
         el('div', { class: 'dep-main' }, [el('span', { class: 'dep-route', text: d.label })]),
         el('div', { class: 'dep-when' }, [
           d.cancelled
@@ -154,7 +154,7 @@ export async function renderSaved() {
     const cancelled = updated?.cancelled;
     const m = modeMeta(d.mode);
     holder.appendChild(el('div', { class: 'dep-row saved-row' }, [
-      el('span', { class: 'dep-mode', text: m.icon }),
+      el('span', { class: 'dep-mode' }, [modeIcon(d.mode)]),
       el('div', { class: 'dep-main' }, [
         el('span', { class: 'dep-route', text: `${d.routeShortName || m.label} ${d.headsign ? '→ ' + d.headsign : ''}` }),
         el('span', { class: 'muted dep-headsign', text: `${d.stopName}${isOtherRomeDay(when) ? ' · ' + romeDay(when) : ''}` }),

@@ -1,6 +1,6 @@
 // ── A→B SEARCH ──
 import { api } from './api.js';
-import { el, modeMeta, modeClass, isRailMode, liveBadge, staleChip, openSheet } from './ui.js';
+import { el, modeMeta, modeClass, modeIcon, isRailMode, liveBadge, staleChip, openSheet } from './ui.js';
 import { romeTime, romeDay, durationText, isOtherRomeDay, romeWallToIso } from './time.js';
 import { worstTransferMin, transferTier, transferChipText, imminentText, legStripModel } from './itinerary.js';
 import { operatorFor } from './operators.js';
@@ -20,13 +20,35 @@ export function initSearch() {
   renderRecents();
 }
 
+
+// programmatic value changes don't fire 'input' — call after any of them
+function syncClears() {
+  for (const w of ['from', 'to']) {
+    const i = document.getElementById(`${w}-input`);
+    const b = document.getElementById(`${w}-clear`);
+    if (i && b) b.hidden = !i.value;
+  }
+}
+
 function wireEndpoint(which) {
   const input = document.getElementById(`${which}-input`);
   const list = document.getElementById(`${which}-suggest`);
+  const clearBtn = document.getElementById(`${which}-clear`);
   let timer = null;
+
+  const syncClear = () => { clearBtn.hidden = !input.value; };
+  clearBtn.addEventListener('click', () => {
+    input.value = '';
+    sel[which] = null;
+    list.innerHTML = '';
+    list.hidden = true;
+    syncClear();
+    input.focus();
+  });
 
   input.addEventListener('input', () => {
     sel[which] = null;
+    syncClear();
     clearTimeout(timer);
     const q = input.value.trim();
     if (q.length < 2) { list.innerHTML = ''; list.hidden = true; return; }
@@ -47,10 +69,12 @@ function showMyLocationOption(list, input) {
     onclick: () => {
       list.hidden = true;
       input.value = 'My location';
+      syncClears();
       locate().then((pos) => {
         sel.from = { name: 'My location', place: `${pos.lat.toFixed(5)},${pos.lon.toFixed(5)}`, lat: pos.lat, lon: pos.lon };
       }).catch(() => {
         input.value = '';
+        syncClears();
         toast('Location unavailable — type a place instead', 'warn');
       });
     },
@@ -70,18 +94,18 @@ async function suggest(which, q) {
     for (const r of data.slice(0, 8)) {
       // every result states WHAT it is: train station / metro / tram /
       // city bus stop / intercity coach stop / town / address
-      let icon = '📌';
+      let iconEl = el('span', { class: 'mode-emoji', text: '📌' });
       let kind = '';
       if (r.type === 'STOP') {
         const m = r.modes || [];
-        if (m.some((x) => /RAIL|LONG_DISTANCE/.test(x || ''))) { icon = '🚉'; kind = 'train station'; }
-        else if (m.some((x) => /METRO|SUBWAY/.test(x || ''))) { icon = '🚇'; kind = 'metro station'; }
-        else if (m.some((x) => /TRAM/.test(x || ''))) { icon = '🚊'; kind = 'tram stop'; }
-        else { icon = '🚏'; kind = 'city bus stop'; }
+        if (m.some((x) => /RAIL|LONG_DISTANCE/.test(x || ''))) { iconEl = modeIcon('RAIL'); kind = 'train station'; }
+        else if (m.some((x) => /METRO|SUBWAY/.test(x || ''))) { iconEl = modeIcon('METRO'); kind = 'metro station'; }
+        else if (m.some((x) => /TRAM/.test(x || ''))) { iconEl = modeIcon('TRAM'); kind = 'tram stop'; }
+        else { iconEl = modeIcon('BUS'); kind = 'city bus stop'; }
       } else if (r.type === 'COACH_STOP') {
-        icon = '🚌'; kind = 'coach stop';
+        iconEl = modeIcon('COACH'); kind = 'coach stop';
       } else if (/^(city|town|village|hamlet)/.test(r.category || '') || (!r.category && r.type === 'PLACE')) {
-        icon = '🏘️'; kind = 'town';
+        iconEl = el('span', { class: 'mode-emoji', text: '🏘️' }); kind = 'town';
       } else if (r.type === 'ADDRESS' || /^(via|viale|corso|salita|piazza)\b/i.test(r.name)) {
         kind = 'address';
       }
@@ -96,10 +120,12 @@ async function suggest(which, q) {
         onclick: () => {
           sel[which] = { name: r.name, place: r.type === 'STOP' && r.id ? r.id : `${r.lat},${r.lon}`, lat: r.lat, lon: r.lon };
           document.getElementById(`${which}-input`).value = r.name;
+          syncClears();
           list.hidden = true;
           // destination-first: picking a To with no From = route me there from here
           if (which === 'to' && !sel.from) {
             document.getElementById('from-input').value = 'My location';
+            syncClears();
             locate().then((pos) => {
               sel.from = { name: 'My location', place: `${pos.lat.toFixed(5)},${pos.lon.toFixed(5)}`, lat: pos.lat, lon: pos.lon };
               runSearch();
@@ -110,7 +136,7 @@ async function suggest(which, q) {
           }
         },
       }, [
-        el('span', { class: 'suggest-icon', text: icon }),
+        el('span', { class: 'suggest-icon' }, [iconEl]),
         el('span', { class: 'suggest-name', text: r.name }),
         bits.length ? el('span', { class: 'suggest-area', text: bits.join(' · ') }) : null,
       ]));
@@ -126,6 +152,7 @@ function swapEndpoints() {
   const ti = document.getElementById('to-input');
   [fi.value, ti.value] = [ti.value, fi.value];
   [sel.from, sel.to] = [sel.to, sel.from];
+  syncClears();
 }
 
 function toggleWhen() {
@@ -296,6 +323,104 @@ function dayTag(day) {
   return day === 'tomorrow' ? ' (tomorrow)' : ` (${day})`;
 }
 
+// ── DIRECT-RESULT DETAIL SHEETS ──
+// Every result row opens a full itinerary breakdown, same as plan cards.
+function detailWalkRow(m, text) {
+  return el('div', { class: 'leg leg-walk' }, [
+    modeIcon('WALK', 'mode-img mode-img-sm'),
+    el('span', { text: ` ${text}` }),
+  ]);
+}
+
+function detailCoachLeg(leg) {
+  return el('div', { class: 'leg leg-transit' }, [
+    el('span', { class: 'leg-route' }, [
+      modeIcon('COACH', 'mode-img mode-img-sm'),
+      el('span', { text: ` ${leg.route}` }),
+    ]),
+    el('div', { class: 'leg-stops' }, [
+      el('div', { class: 'leg-stop' }, [
+        el('strong', { text: leg.dep }), el('span', { text: ` ${leg.from}` }),
+      ]),
+      el('div', { class: 'leg-stop' }, [
+        el('strong', { text: leg.arr }), el('span', { text: ` ${leg.to}` }),
+      ]),
+    ]),
+    el('div', { class: 'muted leg-op', text: `${leg.operator} · scheduled times, no live status` }),
+  ]);
+}
+
+function openDirectDetail(r) {
+  const body = el('div', { class: 'iti-detail' });
+  body.appendChild(el('div', { class: 'iti-detail-head' }, [
+    el('strong', { text: `${r.dep} → ${r.arr}` }),
+    el('span', { class: 'muted', text: `${dayTag(r.day) || ' today'} · direct coach` }),
+  ]));
+  if (r.fromWalkM > 400) {
+    const w = walkMin(r.fromWalkM);
+    body.appendChild(detailWalkRow(r.fromWalkM,
+      `${w} min walk (${(r.fromWalkM / 1000).toFixed(1)} km) to ${r.from} — leave by ~${leaveBy(r.dep, w)}`));
+  }
+  body.appendChild(detailCoachLeg(r));
+  if (r.toWalkM > 400) {
+    body.appendChild(detailWalkRow(r.toWalkM,
+      `${walkMin(r.toWalkM)} min walk (${(r.toWalkM / 1000).toFixed(1)} km) from ${r.to} to your destination`));
+  }
+  openSheet(body, { title: 'Trip detail' });
+}
+
+function openChainDetail(c) {
+  const body = el('div', { class: 'iti-detail' });
+  body.appendChild(el('div', { class: 'iti-detail-head' }, [
+    el('strong', { text: `${c.legs[0].dep} → ${c.legs[1].arr}` }),
+    el('span', { class: 'muted', text: `${dayTag(c.day) || ' today'} · 1 transfer` }),
+  ]));
+  if (c.fromWalkM > 400) {
+    const w = walkMin(c.fromWalkM);
+    body.appendChild(detailWalkRow(c.fromWalkM,
+      `${w} min walk (${(c.fromWalkM / 1000).toFixed(1)} km) to ${c.legs[0].from} — leave by ~${leaveBy(c.legs[0].dep, w)}`));
+  }
+  body.appendChild(detailCoachLeg(c.legs[0]));
+  body.appendChild(el('div', { class: 'leg leg-walk' }, [
+    el('span', { text: `⏱ ${c.waitMin} min at ${c.xferStop}` }),
+  ]));
+  body.appendChild(detailCoachLeg(c.legs[1]));
+  if (c.toWalkM > 400) {
+    body.appendChild(detailWalkRow(c.toWalkM,
+      `${walkMin(c.toWalkM)} min walk (${(c.toWalkM / 1000).toFixed(1)} km) from ${c.legs[1].to} to your destination`));
+  }
+  openSheet(body, { title: 'Trip detail' });
+}
+
+// Walk legs to/from the coach network (v0.7.1): an address 4 km from the
+// nearest stop still gets its route — with the walk stated, not hidden.
+const WALK_M_PER_MIN = 80; // ~4.8 km/h
+function walkMin(m) { return Math.max(1, Math.round(m / WALK_M_PER_MIN)); }
+
+function leaveBy(dep, wMin) {
+  const [h, mm] = dep.split(':').map(Number);
+  const t = ((h * 60 + mm - wMin) + 1440) % 1440;
+  return `${String(Math.floor(t / 60)).padStart(2, '0')}:${String(t % 60).padStart(2, '0')}`;
+}
+
+function walkLines(fromWalkM, toWalkM, dep, fromName, toName) {
+  const out = [];
+  if (fromWalkM > 400) {
+    const w = walkMin(fromWalkM);
+    out.push(el('span', { class: 'muted dep-walk' }, [
+      modeIcon('WALK', 'mode-img mode-img-sm'),
+      el('span', { text: `${w} min walk (${(fromWalkM / 1000).toFixed(1)} km) to ${fromName} — leave by ~${leaveBy(dep, w)}` }),
+    ]));
+  }
+  if (toWalkM > 400) {
+    out.push(el('span', { class: 'muted dep-walk' }, [
+      modeIcon('WALK', 'mode-img mode-img-sm'),
+      el('span', { text: `then ${walkMin(toWalkM)} min walk (${(toWalkM / 1000).toFixed(1)} km) from ${toName}` }),
+    ]));
+  }
+  return out;
+}
+
 const DIRECT_HEADS = {
   down: 'Routing unavailable — direct coaches only',
   empty: 'Direct coaches (from ManGO:IT timetables)',
@@ -312,21 +437,23 @@ function renderDirectBlock(runs, reason, transfers = []) {
       el('strong', { text: DIRECT_HEADS[reason] }),
       el('p', { class: 'muted', text: 'From our own schedule data. Scheduled times, no live status.' }),
     ]),
-    ...runs.map((r) => el('div', { class: 'dep-row' }, [
-      el('span', { class: 'dep-mode', text: '🚌' }),
+    ...runs.map((r) => el('button', { class: 'dep-row dep-row-btn', onclick: () => openDirectDetail(r) }, [
+      el('span', { class: 'dep-mode' }, [modeIcon('COACH')]),
       el('div', { class: 'dep-main' }, [
         el('span', { class: 'dep-route', text: `${r.dep} → ${r.arr}${dayTag(r.day)}` }),
         el('span', { class: 'muted dep-headsign', text: `${r.from} → ${r.to} · ${r.operator}` }),
+        ...walkLines(r.fromWalkM || 0, r.toWalkM || 0, r.dep, r.from, r.to),
       ]),
     ])),
   ];
   for (const c of transfers) {
-    kids.push(el('div', { class: 'dep-row xfer-row' }, [
-      el('span', { class: 'dep-mode', text: '🚌🚌' }),
+    kids.push(el('button', { class: 'dep-row xfer-row dep-row-btn', onclick: () => openChainDetail(c) }, [
+      el('span', { class: 'dep-mode' }, [modeIcon('COACH'), modeIcon('COACH')]),
       el('div', { class: 'dep-main' }, [
         el('span', { class: 'dep-route', text: `${c.legs[0].dep} → ${c.legs[1].arr}${dayTag(c.day)} · 1 transfer` }),
         el('span', { class: 'muted dep-headsign', text: `${c.legs[0].from} → ${c.xferStop} (${c.waitMin} min wait) → ${c.legs[1].to}` }),
         el('span', { class: 'muted dep-headsign', text: `${c.legs[0].operator} + ${c.legs[1].operator}` }),
+        ...walkLines(c.fromWalkM || 0, c.toWalkM || 0, c.legs[0].dep, c.legs[0].from, c.legs[1].to),
       ]),
     ]));
   }
@@ -352,7 +479,9 @@ function itineraryCard(it) {
   const strip = el('div', { class: 'leg-strip' });
   for (const seg of legStripModel(it.legs)) {
     if (seg.walk) {
-      strip.appendChild(el('span', { class: `leg-walk-gap${seg.long ? ' leg-walk-long' : ''}`, text: seg.long ? '🚶' : '›' }));
+      strip.appendChild(seg.long
+        ? el('span', { class: 'leg-walk-gap leg-walk-long' }, [modeIcon('WALK', 'mode-img mode-img-sm')])
+        : el('span', { class: 'leg-walk-gap', text: '›' }));
       continue;
     }
     const m = modeMeta(seg.mode);
@@ -360,7 +489,7 @@ function itineraryCard(it) {
       class: `leg-seg ${modeClass(seg.mode)}`, style: `flex-grow:${seg.pct}`,
       title: `${m.label} ${seg.label}`.trim(),
     }, [
-      el('span', { class: 'leg-glyph', text: m.icon }),
+      modeIcon(seg.mode, 'mode-img leg-glyph-img'),
       seg.label ? el('span', { class: 'leg-label', text: seg.label }) : null,
     ]));
   }
@@ -398,7 +527,8 @@ function openItineraryDetail(it) {
   it.legs.forEach((leg, i) => {
     if (leg.mode === 'WALK') {
       body.appendChild(el('div', { class: 'leg leg-walk' }, [
-        el('span', { text: `🚶 ${durationText(leg.duration)} walk` }),
+        modeIcon('WALK', 'mode-img mode-img-sm'),
+        el('span', { text: ` ${durationText(leg.duration)} walk` }),
         el('span', { class: 'muted', text: leg.to?.name ? ` to ${leg.to.name}` : '' }),
       ]));
       return;
@@ -414,7 +544,10 @@ function renderTransitLeg(leg, idx) {
   const wrap = el('div', { class: 'leg' });
 
   wrap.appendChild(el('div', { class: 'leg-head' }, [
-    el('span', { class: 'leg-route', text: `${m.icon} ${leg.displayName || leg.routeShortName || m.label}` }),
+    el('span', { class: 'leg-route' }, [
+      modeIcon(leg.mode, 'mode-img mode-img-sm'),
+      el('span', { text: ` ${leg.displayName || leg.routeShortName || m.label}` }),
+    ]),
     liveBadge(leg.realTime),
     leg.cancelled ? el('span', { class: 'badge badge-cancel', text: 'CANCELLED' }) : null,
   ]));

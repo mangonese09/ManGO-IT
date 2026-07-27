@@ -36,6 +36,22 @@ export function isRailMode(mode) {
   return /RAIL|LONG_DISTANCE|METRO|SUBWAY/.test(mode || '');
 }
 
+// Mango-character mode icons (from ManGO blueline): train / bus / walker.
+// Metro and tram ride the train mango; ferry keeps its emoji until a mango
+// boat exists. Every img carries the mode label as alt text.
+const MODE_IMG = {
+  rail: '/icons/modes/train.png',
+  bus: '/icons/modes/bus.png',
+  walk: '/icons/modes/pedestrian.png',
+};
+export function modeIcon(mode, cls = 'mode-img') {
+  const kind = mode === 'WALK' ? 'walk'
+    : (isRailMode(mode) || mode === 'TRAM') ? 'rail'
+    : mode === 'FERRY' ? null : 'bus';
+  if (!kind) return el('span', { class: cls.replace('mode-img', 'mode-emoji'), text: modeMeta(mode).icon });
+  return el('img', { class: cls, src: MODE_IMG[kind], alt: modeMeta(mode).label });
+}
+
 // Five fixed mode colors (audit P2, competitive §7): consistency beats
 // operator branding at 44+ tiny operators. Always paired with the glyph —
 // color alone never carries the meaning.

@@ -326,3 +326,29 @@ body.sheet-open { overflow: hidden; }
 .line-stop { grid-area: stop; font-size: 0.72rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .line-dir .dep-when { grid-area: when; text-align: right; }
 .line-dir .pin-btn { grid-area: pin; }
+
+/* ── mango mode icons (v0.7.1, from ManGO blueline) ── */
+.mode-img { width: 22px; height: 22px; object-fit: contain; vertical-align: middle; }
+.mode-img-sm { width: 17px; height: 17px; }
+.leg-glyph-img { width: 18px; height: 18px; }
+.mode-emoji { font-size: 1rem; }
+.dep-mode .mode-img + .mode-img { margin-left: -6px; }
+.dep-walk { display: flex; align-items: center; gap: 5px; font-size: 0.8rem; }
+.dep-row-btn { text-align: left; width: 100%; background: none; border: none; color: inherit; font: inherit; cursor: pointer; }
+.leg-stops { margin: 4px 0 2px 4px; border-left: 2px solid var(--mango, #ffb454); padding-left: 10px; }
+.leg-stop { padding: 2px 0; }
+.leg-op { font-size: 0.78rem; }
+
+/* ── field clear buttons (Home from/to) ── */
+.endpoint-row { position: relative; }
+.field-clear {
+  position: absolute; right: 8px; top: 50%; transform: translateY(-50%);
+  width: 30px; height: 30px; border-radius: 50%; border: none;
+  background: rgba(255,255,255,0.08); color: var(--text-muted, #9a9a9a);
+  font-size: 0.85rem; line-height: 1; cursor: pointer; z-index: 2;
+}
+:root[data-theme="light"] .field-clear { background: rgba(0,0,0,0.07); }
+#to-input { padding-right: 74px; }
+#from-input { padding-right: 44px; }
+.endpoint-row #swap-btn { z-index: 3; }
+#to-clear { right: 44px; }

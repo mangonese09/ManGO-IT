@@ -4,7 +4,7 @@
 // render first, network refresh after.
 
 import { api } from './api.js';
-import { el, modeMeta, modeClass, staleChip } from './ui.js';
+import { el, modeMeta, modeClass, modeIcon, staleChip } from './ui.js';
 import { countdownText, romeTime } from './time.js';
 import { saveDeparture, isSaved } from './store.js';
 import { toast } from './toast.js';
@@ -131,7 +131,7 @@ function lineRow(line) {
   // two directions max on the row, soonest first — more is noise
   const dirs = [...line.dirs.entries()].sort((a, b) => a[1].when - b[1].when).slice(0, 2);
   return el('div', { class: 'line-row' }, [
-    el('span', { class: `dep-mode line-mode ${modeClass(line.mode)}`, text: m.icon }),
+    el('span', { class: `dep-mode line-mode ${modeClass(line.mode)}` }, [modeIcon(line.mode)]),
     el('div', { class: 'line-main' }, [
       el('div', { class: 'line-name' }, [
         el('strong', { text: line.route || m.label }),
