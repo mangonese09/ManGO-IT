@@ -1,8 +1,15 @@
 import { test } from 'node:test';
 import assert from 'node:assert';
 import {
-  romeTime, durationText, countdownText, isOtherRomeDay, romeWallToIso, agoText,
+  romeTime, durationText, countdownText, isOtherRomeDay, romeWallToIso, agoText, whenLabel,
 } from '../../js/time.js';
+
+test('whenLabel formats the datetime chip', () => {
+  assert.strictEqual(whenLabel(''), 'Now');
+  assert.strictEqual(whenLabel(null), 'Now');
+  assert.strictEqual(whenLabel('2026-07-28T15:30'), 'Tue 28 Jul · 15:30');
+  assert.strictEqual(whenLabel('2026-12-25T06:05'), 'Fri 25 Dec · 06:05');
+});
 
 test('romeTime renders Rome wall clock regardless of host TZ', () => {
   assert.strictEqual(romeTime('2026-07-27T08:21:00Z'), '10:21'); // CEST

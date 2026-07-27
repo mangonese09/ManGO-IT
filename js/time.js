@@ -53,6 +53,18 @@ export function agoText(epochMs, now = Date.now()) {
   return h < 24 ? `${h}h ago` : `${Math.round(h / 24)}d ago`;
 }
 
+// datetime-local value ("2026-07-28T15:30") → chip label ("Tue 28 Jul · 15:30").
+// Pure wall-clock formatting: the value already IS Italy time, so no zone math.
+export function whenLabel(value) {
+  if (!value) return 'Now';
+  const [datePart, timePart] = value.split('T');
+  const [y, mo, d] = datePart.split('-').map(Number);
+  const day = new Intl.DateTimeFormat('en-GB', {
+    timeZone: 'UTC', weekday: 'short', day: 'numeric', month: 'short',
+  }).format(new Date(Date.UTC(y, mo - 1, d)));
+  return `${day} · ${timePart}`;
+}
+
 // Local datetime-input value (rendered in Rome time) → ISO instant string.
 // input like "2026-07-27T08:30" interpreted as Rome wall clock.
 export function romeWallToIso(value) {

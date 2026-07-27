@@ -8,8 +8,10 @@
   <link rel="manifest" href="/manifest.json">
   <link rel="icon" href="/icons/icon-192.png">
   <link rel="apple-touch-icon" href="/icons/icon-192.png">
+  <link rel="preconnect" href="https://mangonese.dev">
+  <link rel="preconnect" href="https://mangonese.dev" crossorigin>
   <link rel="stylesheet" href="https://mangonese.dev/shared/mangonese.css">
-  <link rel="stylesheet" href="/css/styles.css?v=0.9.4">
+  <link rel="stylesheet" href="/css/styles.css?v=0.9.5">
 </head>
 <body>
   <header class="app-header">
@@ -37,7 +39,9 @@
         </div>
         <div class="when-row">
           <button id="when-toggle" class="btn btn-ghost">Depart</button>
-          <input id="when-input" type="datetime-local" aria-label="When (Italy time)">
+          <button id="when-display" class="btn btn-ghost when-display" aria-label="Choose date and time (Italy time)">Now</button>
+          <button id="when-clear" class="field-clear when-clear" aria-label="Reset to now" hidden>&#10005;</button>
+          <input id="when-input" type="datetime-local" class="when-native" aria-hidden="true" tabindex="-1">
         </div>
         <div class="mode-row" role="group" aria-label="Modes to include">
           <button id="mode-train" class="mode-toggle active" aria-pressed="true">
@@ -129,6 +133,6 @@
     </button>
   </nav>
 
-  <script type="module" src="/js/app.js?v=0.9.4"></script>
+  <script type="module" src="/js/app.js?v=0.9.5"></script>
 </body>
 </html>

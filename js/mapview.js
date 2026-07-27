@@ -5,6 +5,7 @@
 import { api } from './api.js';
 import { el, modeMeta, modeIcon } from './ui.js';
 import { getLastPos } from './board.js';
+import { displayName } from './names.js';
 
 export async function renderMapTab() {
   const holder = document.getElementById('map-list');
@@ -24,7 +25,7 @@ export async function renderMapTab() {
       
       holder.appendChild(el('div', { class: 'dep-row' }, [
         el('span', { class: 'dep-mode' }, [modeIcon((s.modes || [])[0] || 'BUS')]),
-        el('div', { class: 'dep-main' }, [el('span', { class: 'dep-route', text: s.name })]),
+        el('div', { class: 'dep-main' }, [el('span', { class: 'dep-route', text: displayName(s.name) })]),
         el('span', { class: 'muted', text: `${s.dist} m` }),
       ]));
     }

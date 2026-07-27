@@ -503,6 +503,51 @@ body { font-size: 1rem; }
 .mode-toggle { min-height: 44px; }
 #view-settings a { display: inline-block; padding: 10px 4px; }
 
+/* ── v0.9.5 layout deep-dive fixes ── */
+
+/* LH-01: long endpoint values fade out before the ✕ instead of slamming into it */
+#from-input, #to-input { text-overflow: ellipsis; }
+
+/* LH-02: suggestion rows go two-line — the stop NAME owns the width,
+   the type/area context sits under it instead of stealing half the row */
+.suggest-row:has(.suggest-name) {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  grid-template-areas: "icon name star" "icon area star";
+  column-gap: 8px; row-gap: 1px; align-items: center;
+}
+.suggest-row .suggest-icon { grid-area: icon; }
+.suggest-row .suggest-name { grid-area: name; }
+.suggest-row .suggest-area {
+  grid-area: area; justify-self: start; margin-left: 0;
+  font-size: 0.75rem; overflow: hidden; text-overflow: ellipsis;
+  white-space: nowrap; max-width: 100%;
+}
+.suggest-row .suggest-star { grid-area: star; margin-left: 0; }
+
+/* LH-05: leg-strip segments drop their text label when squeezed —
+   the mode glyph and color still carry the meaning */
+.leg-seg { container-type: inline-size; }
+@container (max-width: 58px) { .leg-label { display: none; } }
+
+/* LH-07: mode pills never wrap unevenly; the OFF state is unmistakable */
+.mode-toggle span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.mode-toggle { font-size: 0.85rem; }
+.mode-toggle:not(.active) { opacity: 0.55; }
+.mode-toggle.active { font-weight: 600; }
+
+/* LH-08: styled when-chip fronts the native datetime input */
+.when-display { flex: 1; text-align: left; font-variant-numeric: tabular-nums; }
+.when-clear { position: static; transform: none; flex: 0 0 auto; }
+.when-native {
+  position: absolute; width: 1px; height: 1px; opacity: 0;
+  pointer-events: none; border: 0; padding: 0; margin: 0;
+}
+.when-row { position: relative; }
+
+/* LH-10: nearby-board location prompt */
+.geo-btn img { width: 16px; height: 16px; object-fit: contain; vertical-align: -3px; }
+
 /* v0.9.4: recents delete + suggestion stars */
 .chip-recent-wrap { display: inline-flex; align-items: center; gap: 2px; padding: 0; }
 .chip-recent-go { background: none; border: none; color: inherit; font: inherit; padding: 8px 4px 8px 12px; cursor: pointer; }

@@ -6,6 +6,7 @@
 import { api } from './api.js';
 import { el, modeMeta, modeClass, modeIcon, staleChip } from './ui.js';
 import { countdownText, romeTime } from './time.js';
+import { displayName } from './names.js';
 import { saveDeparture, isSaved } from './store.js';
 import { toast } from './toast.js';
 
@@ -32,8 +33,38 @@ async function locate() {
   });
 }
 
+// Only auto-request geolocation when the user already granted it — a
+// permission prompt on page load is hostile (and a Lighthouse flag). First
+// visit gets a "Show departures near me" button that asks on tap instead.
+async function geoGranted() {
+  try {
+    const st = await navigator.permissions.query({ name: 'geolocation' });
+    return st.state === 'granted';
+  } catch {
+    return true; // Permissions API unavailable → keep the old behavior
+  }
+}
+
+function renderGeoPrompt(holder) {
+  holder.innerHTML = '';
+  holder.appendChild(el('div', { class: 'empty-state' }, [
+    el('p', { text: 'See departures at stops around you.' }),
+    el('button', {
+      class: 'btn btn-ghost geo-btn',
+      onclick: () => loadBoard(true),
+    }, [
+      el('img', { src: '/icons/place-pin.png', alt: '' }),
+      el('span', { text: ' Show departures near me' }),
+    ]),
+  ]));
+}
+
 export async function loadBoard(manual = false) {
   const holder = document.getElementById('board');
+  if (!manual && !(await geoGranted())) {
+    if (!document.querySelector('#board .line-row')) renderGeoPrompt(holder);
+    return;
+  }
   try {
     lastPos = await locate();
   } catch {
@@ -158,8 +189,8 @@ function directionLine(headsign, { st, stop }) {
     },
   });
   return el('div', { class: 'line-dir' }, [
-    el('span', { class: 'line-headsign muted', text: headsign ? `→ ${headsign}` : '→ …' }),
-    el('span', { class: 'line-stop muted', text: `${stop.name} · ${stop.dist} m` }),
+    el('span', { class: 'line-headsign muted', text: headsign ? `→ ${displayName(headsign)}` : '→ …' }),
+    el('span', { class: 'line-stop muted', text: `${displayName(stop.name)} · ${stop.dist} m` }),
     el('div', { class: 'dep-when' }, [
       el('span', { class: `dep-count${st.realTime ? ' is-live' : ''}`, text: countdownText(st.departure || st.scheduledDeparture) }),
       el('span', { class: 'dep-clock muted', text: romeTime(st.departure || st.scheduledDeparture) }),

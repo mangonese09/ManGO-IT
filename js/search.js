@@ -1,7 +1,8 @@
 // ── A→B SEARCH ──
 import { api } from './api.js';
 import { el, modeMeta, modeClass, modeIcon, isRailMode, liveBadge, staleChip, openSheet } from './ui.js';
-import { romeTime, romeDay, durationText, isOtherRomeDay, romeWallToIso } from './time.js';
+import { romeTime, romeDay, durationText, isOtherRomeDay, romeWallToIso, whenLabel } from './time.js';
+import { displayName } from './names.js';
 import { worstTransferMin, transferTier, transferChipText, imminentText, legStripModel } from './itinerary.js';
 import { operatorFor } from './operators.js';
 import { getRecents, pushRecent, removeRecent, getFavStops, addFavStop, removeFavStop } from './store.js';
@@ -17,8 +18,37 @@ export function initSearch() {
   document.getElementById('swap-btn').addEventListener('click', swapEndpoints);
   document.getElementById('search-btn').addEventListener('click', runSearch);
   document.getElementById('when-toggle').addEventListener('click', toggleWhen);
+  initWhenChip();
   initModeToggles();
   renderRecents();
+}
+
+// ── WHEN CHIP (v0.9.5) ──
+// The native datetime-local's "mm/dd/yyyy --:--" placeholder read as broken
+// US-formatted text. A styled chip shows "Now" or the picked Italy time and
+// opens the native picker on tap; the input stays in the DOM (visually
+// hidden) so the picker, form value and existing search code are unchanged.
+function syncWhenDisplay() {
+  const input = document.getElementById('when-input');
+  const disp = document.getElementById('when-display');
+  const clear = document.getElementById('when-clear');
+  if (!input || !disp) return;
+  disp.textContent = whenLabel(input.value);
+  if (clear) clear.hidden = !input.value;
+}
+
+function initWhenChip() {
+  const input = document.getElementById('when-input');
+  const disp = document.getElementById('when-display');
+  const clear = document.getElementById('when-clear');
+  if (!input || !disp) return;
+  disp.addEventListener('click', () => {
+    try { input.showPicker(); } catch { input.focus(); }
+  });
+  input.addEventListener('change', syncWhenDisplay);
+  input.addEventListener('input', syncWhenDisplay);
+  if (clear) clear.addEventListener('click', () => { input.value = ''; syncWhenDisplay(); });
+  syncWhenDisplay();
 }
 
 
@@ -194,14 +224,14 @@ async function suggest(which, q) {
       // context line: "what it is · town · province", never just an echo of the name
       const bits = [];
       if (kind) bits.push(kind);
-      if (r.town && r.town.toLowerCase() !== r.name.toLowerCase()) bits.push(r.town);
+      if (r.town && r.town.toLowerCase() !== r.name.toLowerCase()) bits.push(displayName(r.town));
       if (r.province && r.province !== r.town) bits.push(`prov. ${r.province}`);
       if (!bits.length && r.province) bits.push(`prov. ${r.province}`);
       list.appendChild(el('button', {
         class: 'suggest-row',
         onclick: () => {
           sel[which] = { name: r.name, place: r.type === 'STOP' && r.id ? r.id : `${r.lat},${r.lon}`, lat: r.lat, lon: r.lon };
-          document.getElementById(`${which}-input`).value = r.name;
+          document.getElementById(`${which}-input`).value = displayName(r.name);
           syncClears();
           list.hidden = true;
           // destination-first: picking a To with no From = route me there from here
@@ -219,7 +249,7 @@ async function suggest(which, q) {
         },
       }, [
         el('span', { class: 'suggest-icon' }, [iconEl]),
-        el('span', { class: 'suggest-name', text: r.name }),
+        el('span', { class: 'suggest-name', text: displayName(r.name) }),
         bits.length ? el('span', { class: 'suggest-area', text: bits.join(' · ') }) : null,
         (r.type === 'STOP' || r.type === 'COACH_STOP') ? suggestStar(r, kind) : null,
       ]));
@@ -392,6 +422,7 @@ async function renderDeadEnd(params, whenVal) {
         `First connection on ${romeDay(first.startTime)}: ${romeTime(first.startTime)} → ${romeTime(first.endTime)} (${durationText(first.duration)}).` }));
       box.appendChild(el('button', { class: 'btn btn-ghost btn-small', text: 'Search that day instead', onclick: () => {
         document.getElementById('when-input').value = `${probeDate}T05:00`;
+        syncWhenDisplay();
         departMode = 'depart';
         runSearch();
       } }));
@@ -408,7 +439,7 @@ async function renderDeadEnd(params, whenVal) {
       const s = near?.data?.stops?.[0];
       if (s && s.m > 2000) {
         box.appendChild(el('p', { class: 'muted', text:
-          `${pt.name} has no nearby stop in our coach data — nearest served: ${s.name}, ${(s.m / 1000).toFixed(1)} km away.` }));
+          `${displayName(pt.name)} has no nearby stop in our coach data — nearest served: ${displayName(s.name)}, ${(s.m / 1000).toFixed(1)} km away.` }));
       }
     } catch { /* hint only */ }
   }
@@ -448,14 +479,14 @@ function detailCoachLeg(leg) {
   return el('div', { class: 'leg leg-transit' }, [
     el('span', { class: 'leg-route' }, [
       modeIcon('COACH', 'mode-img mode-img-sm'),
-      el('span', { text: ` ${leg.route}` }),
+      el('span', { text: ` ${displayName(leg.route)}` }),
     ]),
     el('div', { class: 'leg-stops' }, [
       el('div', { class: 'leg-stop' }, [
-        el('strong', { text: leg.dep }), el('span', { text: ` ${leg.from}` }),
+        el('strong', { text: leg.dep }), el('span', { text: ` ${displayName(leg.from)}` }),
       ]),
       el('div', { class: 'leg-stop' }, [
-        el('strong', { text: leg.arr }), el('span', { text: ` ${leg.to}` }),
+        el('strong', { text: leg.arr }), el('span', { text: ` ${displayName(leg.to)}` }),
       ]),
     ]),
     el('div', { class: 'muted leg-op', text: `${leg.operator} · scheduled times, no live status` }),
@@ -471,12 +502,12 @@ function openDirectDetail(r) {
   if (r.fromWalkM > 400) {
     const w = walkMin(r.fromWalkM);
     body.appendChild(detailWalkRow(r.fromWalkM,
-      `${w} min walk (${(r.fromWalkM / 1000).toFixed(1)} km) to ${r.from} — leave by ~${leaveBy(r.dep, w)}`));
+      `${w} min walk (${(r.fromWalkM / 1000).toFixed(1)} km) to ${displayName(r.from)} — leave by ~${leaveBy(r.dep, w)}`));
   }
   body.appendChild(detailCoachLeg(r));
   if (r.toWalkM > 400) {
     body.appendChild(detailWalkRow(r.toWalkM,
-      `${walkMin(r.toWalkM)} min walk (${(r.toWalkM / 1000).toFixed(1)} km) from ${r.to} to your destination`));
+      `${walkMin(r.toWalkM)} min walk (${(r.toWalkM / 1000).toFixed(1)} km) from ${displayName(r.to)} to your destination`));
   }
   openSheet(body, { title: 'Trip detail' });
 }
@@ -490,16 +521,16 @@ function openChainDetail(c) {
   if (c.fromWalkM > 400) {
     const w = walkMin(c.fromWalkM);
     body.appendChild(detailWalkRow(c.fromWalkM,
-      `${w} min walk (${(c.fromWalkM / 1000).toFixed(1)} km) to ${c.legs[0].from} — leave by ~${leaveBy(c.legs[0].dep, w)}`));
+      `${w} min walk (${(c.fromWalkM / 1000).toFixed(1)} km) to ${displayName(c.legs[0].from)} — leave by ~${leaveBy(c.legs[0].dep, w)}`));
   }
   body.appendChild(detailCoachLeg(c.legs[0]));
   body.appendChild(el('div', { class: 'leg leg-walk' }, [
-    el('span', { text: `⏱ ${c.waitMin} min at ${c.xferStop}` }),
+    el('span', { text: `⏱ ${c.waitMin} min at ${displayName(c.xferStop)}` }),
   ]));
   body.appendChild(detailCoachLeg(c.legs[1]));
   if (c.toWalkM > 400) {
     body.appendChild(detailWalkRow(c.toWalkM,
-      `${walkMin(c.toWalkM)} min walk (${(c.toWalkM / 1000).toFixed(1)} km) from ${c.legs[1].to} to your destination`));
+      `${walkMin(c.toWalkM)} min walk (${(c.toWalkM / 1000).toFixed(1)} km) from ${displayName(c.legs[1].to)} to your destination`));
   }
   openSheet(body, { title: 'Trip detail' });
 }
@@ -548,7 +579,7 @@ function renderDirectBlock(runs, reason, transfers = []) {
           el('span', { text: `${r.dep} → ${r.arr}${dayTag(r.day)}` }),
           walkChip(r.fromWalkM || 0, r.toWalkM || 0),
         ]),
-        el('span', { class: 'muted dep-headsign dep-oneline', text: `${r.from} → ${r.to}` }),
+        el('span', { class: 'muted dep-headsign dep-oneline', text: `${displayName(r.from)} → ${displayName(r.to)}` }),
       ]),
       el('span', { class: 'dep-chevron', text: '›' }),
     ])),
@@ -561,7 +592,7 @@ function renderDirectBlock(runs, reason, transfers = []) {
           el('span', { text: `${c.legs[0].dep} → ${c.legs[1].arr}${dayTag(c.day)} · 1 transfer` }),
           walkChip(c.fromWalkM || 0, c.toWalkM || 0),
         ]),
-        el('span', { class: 'muted dep-headsign dep-oneline', text: `${c.legs[0].from} → ${c.legs[1].to}` }),
+        el('span', { class: 'muted dep-headsign dep-oneline', text: `${displayName(c.legs[0].from)} → ${displayName(c.legs[1].to)}` }),
       ]),
       el('span', { class: 'dep-chevron', text: '›' }),
     ]));
@@ -633,21 +664,22 @@ function openItineraryDetail(it) {
     el('span', { class: 'muted', text: ` · ${durationText(it.duration)} · ${romeDay(it.startTime)}` }),
   ]));
 
+  const opsSeen = new Set(); // one ticket block per operator per sheet
   it.legs.forEach((leg, i) => {
     if (leg.mode === 'WALK') {
       body.appendChild(el('div', { class: 'leg leg-walk' }, [
         modeIcon('WALK', 'mode-img mode-img-sm'),
         el('span', { text: ` ${durationText(leg.duration)} walk` }),
-        el('span', { class: 'muted', text: leg.to?.name ? ` to ${leg.to.name}` : '' }),
+        el('span', { class: 'muted', text: leg.to?.name ? ` to ${displayName(leg.to.name)}` : '' }),
       ]));
       return;
     }
-    body.appendChild(renderTransitLeg(leg, i));
+    body.appendChild(renderTransitLeg(leg, i, opsSeen));
   });
   openSheet(body, { title: 'Trip detail' });
 }
 
-function renderTransitLeg(leg, idx) {
+function renderTransitLeg(leg, idx, opsSeen = new Set()) {
   const m = modeMeta(leg.mode);
   const op = operatorFor(leg.agencyName);
   const wrap = el('div', { class: 'leg' });
@@ -660,7 +692,7 @@ function renderTransitLeg(leg, idx) {
     liveBadge(leg.realTime),
     leg.cancelled ? el('span', { class: 'badge badge-cancel', text: 'CANCELLED' }) : null,
   ]));
-  if (leg.headsign) wrap.appendChild(el('div', { class: 'muted leg-headsign', text: `→ ${leg.headsign}` }));
+  if (leg.headsign) wrap.appendChild(el('div', { class: 'muted leg-headsign', text: `→ ${displayName(leg.headsign)}` }));
 
   wrap.appendChild(el('div', { class: 'leg-stops' }, [
     legEndpointRow(leg.from, leg.from?.departure || leg.startTime, true),
@@ -668,7 +700,7 @@ function renderTransitLeg(leg, idx) {
     legEndpointRow(leg.to, leg.to?.arrival || leg.endTime, false),
   ]));
 
-  if (leg.agencyName) wrap.appendChild(el('div', { class: 'muted leg-agency', text: `Operated by ${leg.agencyName}` }));
+  if (leg.agencyName) wrap.appendChild(el('div', { class: 'muted leg-agency', text: `Operated by ${op?.name || leg.agencyName}` }));
 
   // Live Trenitalia status for rail legs, resolved by train number.
   if (isRailMode(leg.mode) && /trenitalia/i.test(leg.agencyName || '')) {
@@ -691,7 +723,10 @@ function renderTransitLeg(leg, idx) {
   }
 
   // Ticketing block — informational only, links out (PRD non-goal: never sell).
-  if (op) {
+  // Shown once per operator per sheet: a Trenitalia train + Trenitalia bus
+  // itinerary was repeating the identical block back-to-back.
+  if (op && !opsSeen.has(op.name)) {
+    opsSeen.add(op.name);
     wrap.appendChild(el('div', { class: 'ticket-block' }, [
       el('div', { class: 'ticket-title', text: `🎫 Tickets — ${op.name}` }),
       el('p', { class: 'muted', text: op.howToBuy }),
@@ -704,7 +739,7 @@ function renderTransitLeg(leg, idx) {
 function legEndpointRow(place, timeIso, isDep) {
   return el('div', { class: 'stop-row stop-endpoint' }, [
     el('span', { class: 'stop-time', text: romeTime(timeIso) }),
-    el('span', { class: 'stop-name', text: place?.name || '—' }),
+    el('span', { class: 'stop-name', text: displayName(place?.name) || '—' }),
     place?.track ? el('span', { class: 'badge badge-track', text: `bin. ${place.track}` }) : null,
   ]);
 }
@@ -716,15 +751,16 @@ function intermediateBlock(leg) {
   for (const s of stops) {
     list.appendChild(el('div', { class: 'stop-row' }, [
       el('span', { class: 'stop-time muted', text: romeTime(s.arrival || s.departure) }),
-      el('span', { class: 'stop-name muted', text: s.name }),
+      el('span', { class: 'stop-name muted', text: displayName(s.name) }),
     ]));
   }
+  const word = stops.length === 1 ? 'stop' : 'stops';
   const btn = el('button', {
-    class: 'stops-toggle', text: `${stops.length} stops ▾`,
+    class: 'stops-toggle', text: `${stops.length} ${word} ▾`,
     onclick: () => {
       const open = !list.hidden;
       list.hidden = open;
-      btn.textContent = `${stops.length} stops ${open ? '▾' : '▴'}`;
+      btn.textContent = `${stops.length} ${word} ${open ? '▾' : '▴'}`;
     },
   });
   return el('div', {}, [btn, list]);
@@ -755,4 +791,4 @@ function renderRecents() {
     ]));
   });
 }
-function shortName(n) { return (n || '').split('(')[0].trim().slice(0, 18); }
+function shortName(n) { return displayName((n || '').split('(')[0].trim().slice(0, 18)); }
