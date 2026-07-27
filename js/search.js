@@ -58,6 +58,12 @@ function wireEndpoint(which) {
   input.addEventListener('focus', () => {
     if (which === 'from' && !input.value.trim()) showMyLocationOption(list, input);
   });
+  // QA-23: Enter searches (was never wired; enterkeyhint promised it)
+  input.addEventListener('keydown', (e) => {
+    if (e.key !== 'Enter') return;
+    list.hidden = true;
+    if (sel.from && sel.to) runSearch();
+  });
   document.addEventListener('click', (e) => {
     if (!list.contains(e.target) && e.target !== input) { list.hidden = true; }
   });

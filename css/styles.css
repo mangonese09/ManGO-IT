@@ -495,3 +495,10 @@ main { padding: 0 16px; }
 
 /* QA-08: shared css pins body at 16PX; rem here lets inherited control text follow browser text-size */
 body { font-size: 1rem; }
+
+/* QA-06b: remaining sub-44px targets from the post-fix sweep */
+.endpoint-stack .swap-btn { width: 44px; height: 44px; }
+.field-clear { width: 36px; height: 36px; }
+.field-clear::after { content: ''; position: absolute; inset: -6px; }
+.mode-toggle { min-height: 44px; }
+#view-settings a { display: inline-block; padding: 10px 4px; }
