@@ -434,3 +434,19 @@ body.sheet-open { overflow: hidden; }
 .mode-toggle.active img { filter: none; }
 :root[data-theme="light"] .mode-toggle { border-color: rgba(0,0,0,0.12); }
 :root[data-theme="light"] .mode-toggle.active { border-color: var(--mango, #e8930c); color: #222; }
+
+/* ── v0.9.1 compact direct rows ── */
+.dep-mode { display: inline-flex; flex-direction: row; align-items: center; flex: 0 0 auto; white-space: nowrap; }
+.dep-main-tight .dep-route { display: flex; align-items: center; gap: 8px; }
+.dep-oneline { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.chip-walk {
+  display: inline-flex; align-items: center; gap: 3px;
+  font-size: 0.72rem; padding: 1px 7px; border-radius: 999px;
+  background: var(--bg-elevated, #2a2a2a); color: var(--text-muted, #9a9a9a);
+  border: 1px solid rgba(255,255,255,0.1); font-weight: 500;
+}
+:root[data-theme="light"] .chip-walk { border-color: rgba(0,0,0,0.12); }
+.mode-img-xs { width: 13px; height: 13px; }
+.dep-chevron { color: var(--text-muted, #9a9a9a); font-size: 1.2rem; flex: 0 0 auto; align-self: center; }
+.direct-head strong { font-size: 0.95rem; }
+.direct-head p { font-size: 0.78rem; }

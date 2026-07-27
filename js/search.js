@@ -461,28 +461,20 @@ function leaveBy(dep, wMin) {
   return `${String(Math.floor(t / 60)).padStart(2, '0')}:${String(t % 60).padStart(2, '0')}`;
 }
 
-function walkLines(fromWalkM, toWalkM, dep, fromName, toName) {
-  const out = [];
-  if (fromWalkM > 400) {
-    const w = walkMin(fromWalkM);
-    out.push(el('span', { class: 'muted dep-walk' }, [
-      modeIcon('WALK', 'mode-img mode-img-sm'),
-      el('span', { text: `${w} min walk (${(fromWalkM / 1000).toFixed(1)} km) to ${fromName} — leave by ~${leaveBy(dep, w)}` }),
-    ]));
-  }
-  if (toWalkM > 400) {
-    out.push(el('span', { class: 'muted dep-walk' }, [
-      modeIcon('WALK', 'mode-img mode-img-sm'),
-      el('span', { text: `then ${walkMin(toWalkM)} min walk (${(toWalkM / 1000).toFixed(1)} km) from ${toName}` }),
-    ]));
-  }
-  return out;
+function walkChip(fromWalkM, toWalkM) {
+  const total = (fromWalkM > 400 ? fromWalkM : 0) + (toWalkM > 400 ? toWalkM : 0);
+  if (!total) return null;
+  return el('span', { class: 'chip chip-walk' }, [
+    modeIcon('WALK', 'mode-img mode-img-xs'),
+    el('span', { text: `${walkMin(total)} min` }),
+  ]);
 }
 
+
 const DIRECT_HEADS = {
-  down: 'Routing unavailable — direct coaches only',
-  empty: 'Direct coaches (from ManGO:IT timetables)',
-  faster: 'Faster direct coaches — from ManGO:IT timetables',
+  down: 'Routing unavailable — our coaches only',
+  empty: 'Direct coaches',
+  faster: 'Faster by coach',
 };
 
 // Direct single-leg coaches + one-transfer chains from our own feed,
@@ -493,26 +485,31 @@ function renderDirectBlock(runs, reason, transfers = []) {
   const kids = [
     el('div', { class: 'direct-head' }, [
       el('strong', { text: DIRECT_HEADS[reason] }),
-      el('p', { class: 'muted', text: 'From our own schedule data. Scheduled times, no live status.' }),
+      el('p', { class: 'muted', text: 'Scheduled times · tap a trip for details' }),
     ]),
     ...runs.map((r) => el('button', { class: 'dep-row dep-row-btn', onclick: () => openDirectDetail(r) }, [
       el('span', { class: 'dep-mode' }, [modeIcon('COACH')]),
-      el('div', { class: 'dep-main' }, [
-        el('span', { class: 'dep-route', text: `${r.dep} → ${r.arr}${dayTag(r.day)}` }),
-        el('span', { class: 'muted dep-headsign', text: `${r.from} → ${r.to} · ${r.operator}` }),
-        ...walkLines(r.fromWalkM || 0, r.toWalkM || 0, r.dep, r.from, r.to),
+      el('div', { class: 'dep-main dep-main-tight' }, [
+        el('span', { class: 'dep-route' }, [
+          el('span', { text: `${r.dep} → ${r.arr}${dayTag(r.day)}` }),
+          walkChip(r.fromWalkM || 0, r.toWalkM || 0),
+        ]),
+        el('span', { class: 'muted dep-headsign dep-oneline', text: `${r.from} → ${r.to}` }),
       ]),
+      el('span', { class: 'dep-chevron', text: '›' }),
     ])),
   ];
   for (const c of transfers) {
     kids.push(el('button', { class: 'dep-row xfer-row dep-row-btn', onclick: () => openChainDetail(c) }, [
       el('span', { class: 'dep-mode' }, [modeIcon('COACH'), modeIcon('COACH')]),
-      el('div', { class: 'dep-main' }, [
-        el('span', { class: 'dep-route', text: `${c.legs[0].dep} → ${c.legs[1].arr}${dayTag(c.day)} · 1 transfer` }),
-        el('span', { class: 'muted dep-headsign', text: `${c.legs[0].from} → ${c.xferStop} (${c.waitMin} min wait) → ${c.legs[1].to}` }),
-        el('span', { class: 'muted dep-headsign', text: `${c.legs[0].operator} + ${c.legs[1].operator}` }),
-        ...walkLines(c.fromWalkM || 0, c.toWalkM || 0, c.legs[0].dep, c.legs[0].from, c.legs[1].to),
+      el('div', { class: 'dep-main dep-main-tight' }, [
+        el('span', { class: 'dep-route' }, [
+          el('span', { text: `${c.legs[0].dep} → ${c.legs[1].arr}${dayTag(c.day)} · 1 transfer` }),
+          walkChip(c.fromWalkM || 0, c.toWalkM || 0),
+        ]),
+        el('span', { class: 'muted dep-headsign dep-oneline', text: `${c.legs[0].from} → ${c.legs[1].to}` }),
       ]),
+      el('span', { class: 'dep-chevron', text: '›' }),
     ]));
   }
   results.appendChild(el('div', { class: 'direct-block' }, kids));
