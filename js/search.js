@@ -109,7 +109,9 @@ function initModeToggles() {
       btn.classList.toggle('active', modeSel[which]);
       btn.setAttribute('aria-pressed', String(modeSel[which]));
       try { localStorage.setItem('mangoit.modes', JSON.stringify(modeSel)); } catch { /* private mode */ }
-      if (sel.from && sel.to) runSearch(); // live re-filter of the current search
+      // QA-17: debounced — toggle bursts fire one search, not one per tap
+      clearTimeout(initModeToggles._t);
+      if (sel.from && sel.to) initModeToggles._t = setTimeout(runSearch, 400);
     });
   }
 }
@@ -379,6 +381,11 @@ async function renderDeadEnd(params, whenVal) {
     } catch { /* hint only */ }
   }
 
+  // QA-12: never a bare one-liner — always close with something actionable
+  const horizon = await feedHorizonDate();
+  box.appendChild(el('p', { class: 'muted', text:
+    (horizon ? `Coach schedules are verified through ${horizon}. ` : '') +
+    'Try another date, swap the direction, or check the operator sites.' }));
   maybeHorizonNote(whenVal);
 }
 

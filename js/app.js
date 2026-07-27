@@ -11,8 +11,10 @@ const VIEWS = ['home', 'saved', 'map', 'settings'];
 let current = 'home';
 const navStack = [];
 
+const viewScroll = {}; // QA-16: keep each tab's scroll position
 function setView(view, push = true) {
   if (!VIEWS.includes(view) || view === current) return;
+  viewScroll[current] = window.scrollY;
   if (push) navStack.push(current);
   current = view;
   // survive a page reload (browser pull-to-refresh) on the same tab
@@ -27,6 +29,7 @@ function setView(view, push = true) {
   if (view === 'saved') renderSaved();
   if (view === 'map') renderMapTab();
   if (view === 'settings') renderFreshness();
+  requestAnimationFrame(() => scrollTo(0, viewScroll[view] || 0));
 }
 
 function goBack() {
