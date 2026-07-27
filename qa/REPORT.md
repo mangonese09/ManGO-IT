@@ -1,4 +1,12 @@
-# ManGO:IT — Adversarial Visual & Interaction QA — REPORT (v0.9.2, 2026-07-27)
+# ManGO:IT — Adversarial Visual & Interaction QA — REPORT (v0.9.2 → fixes shipped in v0.9.3, 2026-07-27)
+
+## Fix outcomes (post-sign-off)
+
+FIXED: QA-01 (client+server same-place guard; repro now returns nothing), QA-02, QA-03 (History API; sheets+tabs unwind on back), QA-04 (mangonese.css dark --text-muted #4a5a6a → #7e8fa0 AT SOURCE, backup .bak-qa04 on VPS), QA-05 (post-fix CLS: none over 0.10), QA-06+06b (nav 48px, refresh/swap/toggles 44px, clears 36px+hitbox, settings links padded), QA-07, QA-08, QA-09, QA-10, QA-11, QA-12, QA-13, QA-14, QA-16, QA-17, QA-19, QA-20, QA-21, QA-22, plus NEW QA-23 (Enter-to-search was never wired — the pre-fix pass was contaminated by leftover results; now wired).
+NO CHANGE NEEDED: QA-18 (single-toast policy already exists; sweep saw the 300 ms fade overlap).
+SKIPPED (needs design): QA-15 (resume search after mid-search reload — requires persisting selected endpoints, not just their names).
+REMAINING (shared-token scope, not app code): light-theme muted (#8a9aa8 on light surfaces ≈2.6:1) and mango-as-text in light theme (logo suffix, links) still fail contrast — fixing means another mangonese.css palette pass across all apps; flagged for a dedicated session.
+Post-fix sweep: raw hits 1030 → 541; CLS findings 0; remaining raw hits are the shared-token contrast class, scrollable-content nav-collision false positives, and sparse-screen dead-space false positives documented above.
 
 ## Verdict
 
