@@ -492,3 +492,6 @@ main { padding: 0 16px; }
 /* QA-20: suggestion rows keep one line per part at narrow widths */
 .suggest-row .suggest-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
 .suggest-row .suggest-area { white-space: nowrap; flex-shrink: 0; }
+
+/* QA-08: shared css pins body at 16PX; rem here lets inherited control text follow browser text-size */
+body { font-size: 1rem; }
