@@ -40,6 +40,8 @@ def _probe_dates():
 
 
 PROBE_DATES = _probe_dates()  # e.g. Wed 8/5 + Sun 8/23 for the 2026-07-27 sweep
+if len(sys.argv) > 1:  # explicit probe dates, e.g. the Ferragosto check
+    PROBE_DATES = [date.fromisoformat(a) for a in sys.argv[1:]]
 
 
 def api_trips(line_id, d):

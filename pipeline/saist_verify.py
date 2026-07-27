@@ -82,7 +82,7 @@ def main():
     name_of = {l['Id']: pretty_name(l['Descrizione']) for l in locs}
     fails = 0
     for a, b, label in CORRIDORS:
-        for d in probe_dates():
+        for d in ([date.fromisoformat(a) for a in sys.argv[1:]] or probe_dates()):
             api = api_runs(a, b, d)
             feed = feed_runs(name_of[a], name_of[b], d)
             only_api, only_feed = api - feed, feed - api
