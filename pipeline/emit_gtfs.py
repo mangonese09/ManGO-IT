@@ -120,18 +120,9 @@ def hms(t, wrapped_offset=0):
     return f'{int(h) + wrapped_offset:02d}:{int(m):02d}:00'
 
 
-# Anonymous placeholder rows are unmappable and never ship. Cycle 4 widened
-# this to the parse-damaged variants: OCR-ish suffixes ("Fermata intermedia I",
-# "… 0") and collapsed counts ("10 Fermata intermedie 10").
-JUNK_STOP = re.compile(r'^(\d{0,2}\s*Fermata( intermedi\w{0,2})?( [I0-9]{1,2})?|Capolinea( di (Partenza|Arrivo))?)\s*$', re.I)
-
-
-def hav_km(a, b):
-    import math
-    p = math.pi / 180
-    return 2 * 6371 * math.asin(math.sqrt(
-        math.sin((b[0] - a[0]) * p / 2) ** 2 +
-        math.cos(a[0] * p) * math.cos(b[0] * p) * math.sin((b[1] - a[1]) * p / 2) ** 2))
+# The junk-stop pattern, the speed thresholds and the span ceiling live in
+# gates.py so export_stops.py enforces exactly the same ones (review R-26).
+from gates import JUNK_STOP, hav_km, speed_violation, span_violation  # noqa: E402
 
 
 def load_prescription_rules():
@@ -268,15 +259,15 @@ def main():
                     skipped.append((rid, t['corsa'], f'only {len(pending_st)} coordinate-resolved stops'))
                     continue
                 # speed quarantine: a bad geocode or column misalignment must not ship
-                bad_speed = False
-                for (ra, ca), (rb, cb) in zip(zip(pending_st, pending_coords), zip(pending_st[1:], pending_coords[1:])):
-                    ta = int(ra[1][:2]) * 60 + int(ra[1][3:5])
-                    tb = int(rb[1][:2]) * 60 + int(rb[1][3:5])
-                    km = hav_km(ca, cb)
-                    if (tb <= ta and km > 3) or (tb > ta and km / ((tb - ta) / 60) > 110):
-                        bad_speed = True; break
-                if bad_speed:
+                pending_min = [int(r[1][:2]) * 60 + int(r[1][3:5]) for r in pending_st]
+                if speed_violation(pending_min, pending_coords):
                     skipped.append((rid, t['corsa'], 'speed-quarantine (bad geocode or column misalignment)'))
+                    continue
+                # span quarantine (R-16): the speed gate cannot see an absurd
+                # duration — it reads as an absurdly low speed.
+                span = span_violation(pending_min)
+                if span is not None:
+                    skipped.append((rid, t['corsa'], f'span-quarantine ({span} min — parse damage)'))
                     continue
                 # duplicate-corsa artifacts ("11A" tokenized as "1"+"1A") → identical
                 # signatures are dropped; distinct ones get a unique suffix

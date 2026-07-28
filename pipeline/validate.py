@@ -148,6 +148,24 @@ def main(path):
     if speed_errs > 8: errors.append(f'... plus {speed_errs - 8} more speed violations')
     if slow_warns: warnings.append(f'{slow_warns} suspiciously slow segments (<5 km/h over >2.5km) at centroid/interpolated precision')
 
+    # trip-span gate (review R-16): the speed gate structurally cannot see an
+    # absurd DURATION — 'GIORNALIERA - Lido Bellia' ships stop times 0/720/3170
+    # (52:50), and 3170 minutes over a few km reads as an absurdly LOW speed,
+    # landing in the slow warning tier beside legitimate school circuits. The
+    # longest genuine run in the corpus is 325 min (Militello–Messina), so a
+    # 360-minute ceiling has real headroom and still catches the damage.
+    MAX_SPAN_MIN = 360
+    span_errs = 0
+    for tid, seq in by_trip.items():
+        mins = [int(r['departure_time'][:2]) * 60 + int(r['departure_time'][3:5]) for r in seq]
+        span = max(mins) - min(mins)
+        if span > MAX_SPAN_MIN:
+            span_errs += 1
+            if span_errs <= 8:
+                errors.append(f'trip {tid}: spans {span // 60}h{span % 60:02d} '
+                              f'(ceiling {MAX_SPAN_MIN // 60}h) — parse damage, not a long run')
+    if span_errs > 8: errors.append(f'... plus {span_errs - 8} more trip-span violations')
+
     # wrong-province gate (audit P0.3): a stop whose name claims a major city
     # must sit near that city. Catches homonym geocodes that survive the speed
     # gate on slow legs (CATANIA piazza Giovanni XXIII shipped 30 km inland).

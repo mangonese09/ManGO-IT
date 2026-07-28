@@ -18,17 +18,27 @@ function findStop(re) {
   return s;
 }
 
-// Pin the exact terminal stops: coach-stops.json ordering changes on every
+// Pin the exact terminal stop: coach-stops.json ordering changes on every
 // regeneration (and SAIS adds more SIRACUSA (...) berths), so a bare
 // /^SIRACUSA/ prefix match can land on a stop outside the 1500m radius.
-const SR_TERMINAL = /^SIRACUSA \(C\.so Umberto\/Terminal Bus\)$/;
+// R-15 collapsed the four co-located berths at 37.0706,15.2851 — including the
+// old fixture name 'SIRACUSA (C.so Umberto/Terminal Bus)' — into one stop, and
+// the generic name is the survivor by design. Same pole, same coordinate.
+const SR_TERMINAL = /^SIRACUSA$/;
 
 test('Siracusa→Catania festivo services surface on a Sunday', () => {
   const sr = findStop(SR_TERMINAL);
   const ct = findStop(/^CATANIA$/i);
   const { results } = directSearch(sr.lat, sr.lon, ct.lat, ct.lon, 1500, [SUNDAY]);
   assert.ok(results.length >= 3, `expected ≥3 Sunday runs, got ${results.length}`);
-  assert.ok(results.some((r) => r.dep === '08:00'), 'the 08:00 festivo run is missing');
+  // The 08:00 run this fixture used to assert is gone on purpose. R-26 put the
+  // app's data behind the same speed gate as the GTFS build, and that trip
+  // carries 'SANTA TERESA' geocoded to 37.473,15.211 — 55 km up the coast, a
+  // 10-minute leg from Cassibile at 330 km/h. The feed has always rejected it;
+  // only the app was still serving it. Recovering the run means fixing the
+  // geocode (the interpolate override is not producing a sane coordinate), not
+  // loosening the gate — tracked in reports/gated-trips.md.
+  assert.ok(results.some((r) => r.dep === '16:00'), 'the 16:00 festivo run is missing');
   assert.ok(results.every((r) => r.operator === 'Interbus'), 'unexpected operator in fixture corridor');
 });
 
@@ -58,7 +68,7 @@ test('serviceRuns: explicit-date services (SAIS) ignore weekday/holiday inferenc
 test('coachBoard: lists next departures from a coach stop, never the terminus', () => {
   const { coachBoard } = require('../../server/proxy.js');
   const stops = require('../../server/coach-stops.json');
-  const sr = stops.find((x) => /^SIRACUSA \(C\.so Umberto\/Terminal Bus\)$/.test(x.n));
+  const sr = stops.find((x) => SR_TERMINAL.test(x.n));
   const MONDAY = { iso: '2026-07-27', wd: 0, min: 6 * 60, month: 7, day: 27 };
   const { results, stopName } = coachBoard(sr.lat, sr.lon, 250, [MONDAY]);
   assert.ok(stopName, 'nearest stop name resolves');
