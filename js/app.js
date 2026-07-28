@@ -70,6 +70,8 @@ function initNativeBackButton() {
 function initEdgeSwipe() {
   let startX = null, startY = null;
   document.addEventListener('touchstart', (e) => {
+    // panning the map from the left edge must not navigate back (M6)
+    if (e.target.closest?.('.leaflet-container')) { startX = null; return; }
     const t = e.touches[0];
     startX = t.clientX <= 24 ? t.clientX : null;
     startY = t.clientY;

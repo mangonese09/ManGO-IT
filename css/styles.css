@@ -564,6 +564,48 @@ body { font-size: 1rem; }
 .saved-pinned-card { padding: 10px 14px 6px; }
 .saved-pinned-card > .dep-headsign { padding: 2px 0 4px; }
 
+/* ── v0.10.0 M6 map view ── */
+#map-canvas {
+  height: calc(100dvh - 245px - env(safe-area-inset-bottom));
+  min-height: 320px;
+  border-radius: var(--radius-lg, 14px);
+  overflow: hidden;
+  background: var(--bg-elevated, #2a2a2a); /* pre-tile / offline surface */
+  overscroll-behavior: contain;
+}
+.map-note { margin: 8px 4px; font-size: 0.8rem; }
+
+/* mango mode icons as stop pins — soft disc so they read on any tile */
+.stop-pin { background: none; border: none; }
+.stop-pin img {
+  width: 30px; height: 30px; object-fit: contain;
+  background: rgba(255,255,255,0.92);
+  border-radius: 50%; padding: 3px; box-sizing: border-box;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
+
+.map-locate-btn {
+  width: 44px; height: 44px; border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.2);
+  background: #fff; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.35);
+}
+.map-locate-btn img { width: 24px; height: 24px; object-fit: contain; }
+
+/* leaflet chrome on dark tiles */
+:root[data-theme="dark"] .leaflet-control-zoom a {
+  background: #1e242e; color: #e8f0ea; border-color: rgba(255,255,255,0.15);
+}
+:root[data-theme="dark"] .leaflet-control-attribution {
+  background: rgba(13,17,23,0.75); color: #7e8fa0;
+}
+:root[data-theme="dark"] .leaflet-control-attribution a { color: #8fa0b3; }
+:root[data-theme="dark"] .leaflet-tooltip {
+  background: #1e242e; color: #e8f0ea; border-color: #1e242e;
+}
+:root[data-theme="dark"] .leaflet-tooltip-top::before { border-top-color: #1e242e; }
+
 /* v0.9.4: recents delete + suggestion stars */
 .chip-recent-wrap { display: inline-flex; align-items: center; gap: 2px; padding: 0; }
 .chip-recent-go { background: none; border: none; color: inherit; font: inherit; padding: 8px 4px 8px 12px; cursor: pointer; }
