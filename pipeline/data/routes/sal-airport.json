@@ -1,0 +1,277 @@
+{
+ "operator": "Autolinee SAL",
+ "route_id": "sal-airport",
+ "name": "PORTO EMPEDOCLE - AGRIGENTO - AEROPORTO PALERMO",
+ "source": "autolineesal.it official PDF (via sitabus.it mirror), Mod.7.9/d; outbound airport arrivals cross-confirmed current vs orariautobus.it 2026-07",
+ "prescriptions": [
+  "Il servizio non si effettua la DOMENICA e nei GIORNI FESTIVI"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "Porto Empedocle",
+    "AGRIGENTO (P.le Rosselli)",
+    "AEROPORTO PALERMO (Falcone Borsellino)"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Il servizio non si effettua la DOMENICA e nei GIORNI FESTIVI"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Porto Empedocle",
+       "idx": 0,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "AGRIGENTO (P.le Rosselli)",
+       "idx": 1,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "AEROPORTO PALERMO (Falcone Borsellino)",
+       "idx": 2,
+       "arr": "9.00",
+       "dep": "9.00"
+      }
+     ]
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Il servizio non si effettua la DOMENICA e nei GIORNI FESTIVI"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Porto Empedocle",
+       "idx": 0,
+       "arr": "8.15",
+       "dep": "8.15"
+      },
+      {
+       "stop": "AGRIGENTO (P.le Rosselli)",
+       "idx": 1,
+       "arr": "8.35",
+       "dep": "8.35"
+      },
+      {
+       "stop": "AEROPORTO PALERMO (Falcone Borsellino)",
+       "idx": 2,
+       "arr": "11.15",
+       "dep": "11.15"
+      }
+     ]
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Il servizio non si effettua la DOMENICA e nei GIORNI FESTIVI"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Porto Empedocle",
+       "idx": 0,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "AGRIGENTO (P.le Rosselli)",
+       "idx": 1,
+       "arr": "12.20",
+       "dep": "12.20"
+      },
+      {
+       "stop": "AEROPORTO PALERMO (Falcone Borsellino)",
+       "idx": 2,
+       "arr": "15.00",
+       "dep": "15.00"
+      }
+     ]
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Il servizio non si effettua la DOMENICA e nei GIORNI FESTIVI"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Porto Empedocle",
+       "idx": 0,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "AGRIGENTO (P.le Rosselli)",
+       "idx": 1,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "AEROPORTO PALERMO (Falcone Borsellino)",
+       "idx": 2,
+       "arr": "17.30",
+       "dep": "17.30"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "AEROPORTO PALERMO (Falcone Borsellino)",
+    "AGRIGENTO (P.le Rosselli)",
+    "Porto Empedocle"
+   ],
+   "trips": [
+    {
+     "corsa": "1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Il servizio non si effettua la DOMENICA e nei GIORNI FESTIVI"
+     },
+     "reverse": true,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AEROPORTO PALERMO (Falcone Borsellino)",
+       "idx": 0,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "AGRIGENTO (P.le Rosselli)",
+       "idx": 1,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "Porto Empedocle",
+       "idx": 2,
+       "arr": "13.30",
+       "dep": "13.30"
+      }
+     ]
+    },
+    {
+     "corsa": "2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Il servizio non si effettua la DOMENICA e nei GIORNI FESTIVI"
+     },
+     "reverse": true,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AEROPORTO PALERMO (Falcone Borsellino)",
+       "idx": 0,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "AGRIGENTO (P.le Rosselli)",
+       "idx": 1,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "Porto Empedocle",
+       "idx": 2,
+       "arr": "15.35",
+       "dep": "15.35"
+      }
+     ]
+    },
+    {
+     "corsa": "3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Il servizio non si effettua la DOMENICA e nei GIORNI FESTIVI"
+     },
+     "reverse": true,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AEROPORTO PALERMO (Falcone Borsellino)",
+       "idx": 0,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "AGRIGENTO (P.le Rosselli)",
+       "idx": 1,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "Porto Empedocle",
+       "idx": 2,
+       "arr": "19.30",
+       "dep": "19.30"
+      }
+     ]
+    },
+    {
+     "corsa": "4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Il servizio non si effettua la DOMENICA e nei GIORNI FESTIVI"
+     },
+     "reverse": true,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AEROPORTO PALERMO (Falcone Borsellino)",
+       "idx": 0,
+       "arr": "19.45",
+       "dep": "19.45"
+      },
+      {
+       "stop": "AGRIGENTO (P.le Rosselli)",
+       "idx": 1,
+       "arr": "22.00",
+       "dep": "22.00"
+      },
+      {
+       "stop": "Porto Empedocle",
+       "idx": 2,
+       "arr": "22.20",
+       "dep": "22.20"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
