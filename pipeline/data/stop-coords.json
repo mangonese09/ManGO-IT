@@ -210,9 +210,9 @@
   "precision": "town"
  },
  "ACICATENA (VIA ROMA)": {
-  "lat": 37.7522656,
-  "lon": 13.2694495,
-  "precision": "town"
+  "lat": 37.6020496,
+  "lon": 15.1401274,
+  "precision": "override"
  },
  "ACI SAN FILIPPO (VIA FINOCCHIARI)": {
   "lat": 37.5891435,
@@ -705,9 +705,9 @@
   "precision": "interpolated"
  },
  "NOVARA DI SICILIA VIA NAZIONALE CAPOLINEA": {
-  "lat": 38.0161849,
-  "lon": 15.131956,
-  "precision": "town"
+  "lat": 38.0148309,
+  "lon": 15.1290307,
+  "precision": "street"
  },
  "SAN BASILIO VIA RISORGIMENTO": {
   "lat": 38.0299534,
@@ -795,9 +795,9 @@
   "precision": "street"
  },
  "MESSINA VIA BONINO CAPOLINEA": {
-  "lat": 38.1937571,
-  "lon": 15.5542082,
-  "precision": "town"
+  "lat": 38.1657684,
+  "lon": 15.5417453,
+  "precision": "street"
  },
  "MERI' VIA NAZIONALE": {
   "lat": 38.1669407,
@@ -805,8 +805,8 @@
   "precision": "town"
  },
  "DIVIETO S.S.113": {
-  "lat": 38.23671701111111,
-  "lon": 15.462329444444444,
+  "lat": 38.23360715555555,
+  "lon": 15.460944677777778,
   "precision": "interpolated"
  },
  "SPADAFORA VIA UMBERTO I": {
@@ -845,13 +845,13 @@
   "precision": "street"
  },
  "SANTA LUCIA DEL MELA VIA ROMA CAPOLINEA": {
-  "lat": 38.1434611,
-  "lon": 15.2806757,
-  "precision": "town"
+  "lat": 38.1477781,
+  "lon": 15.2790408,
+  "precision": "street"
  },
  "SAN FILIPPO DEL MELA C.RSO GARIBALDI": {
-  "lat": 38.16692956666667,
-  "lon": 15.269970633333333,
+  "lat": 38.168368566666665,
+  "lon": 15.269425666666667,
   "precision": "interpolated"
  },
  "BARCELLONA VIA GRAMSCI": {
@@ -890,9 +890,9 @@
   "precision": "town"
  },
  "PATTI PIAZZA MARCONI CAPOLINEA": {
-  "lat": 38.1389007,
-  "lon": 14.9648163,
-  "precision": "town"
+  "lat": 38.138828,
+  "lon": 14.9666437,
+  "precision": "street"
  },
  "TINDARI VIA MONS. PULLANO": {
   "lat": 38.1416999,
@@ -980,18 +980,18 @@
   "precision": "town"
  },
  "PAPARDO UNIVERSITÀ": {
-  "lat": 38.219343517647054,
-  "lon": 15.499486294117647,
+  "lat": 38.20617236470588,
+  "lon": 15.4936214,
   "precision": "interpolated"
  },
  "MORTELLE STAB. BALNEARI": {
-  "lat": 38.22502938823529,
-  "lon": 15.487325870588235,
+  "lat": 38.21515102352941,
+  "lon": 15.4829272,
   "precision": "interpolated"
  },
  "DIVIETO PONTE GALLO": {
-  "lat": 38.23924406470588,
-  "lon": 15.456924811764706,
+  "lat": 38.23759767058823,
+  "lon": 15.4561917,
   "precision": "interpolated"
  },
  "OLIVARELLA SVINCOLO A 20": {
@@ -1110,9 +1110,9 @@
   "precision": "interpolated"
  },
  "CAPOLINEA": {
-  "lat": 36.9262662,
-  "lon": 14.7438538,
-  "precision": "town"
+  "lat": 37.998322,
+  "lon": 13.4976845,
+  "precision": "interpolated"
  },
  "BAGHERIA VIA CONSOLARE": {
   "lat": 38.0886315,
@@ -1469,6 +1469,11 @@
   "lon": 15.1169606,
   "precision": "street"
  },
+ "SIRACUSA (VIA RUBINO) CAPOLINEA": {
+  "lat": 37.0682082,
+  "lon": 15.2805382,
+  "precision": "street"
+ },
  "CASSIBILE (VIA ELORINA)": {
   "lat": 36.9859241,
   "lon": 15.2123282,
@@ -1529,6 +1534,11 @@
   "lon": 14.2502445,
   "precision": "town"
  },
+ "MODICA (ISTITUTO ALBERGHIERO) CAPOLINEA": {
+  "lat": 36.8589209,
+  "lon": 14.7613018,
+  "precision": "town"
+ },
  "GIARRATANA (CORSO XX SETTEMBRE)": {
   "lat": 37.0478148,
   "lon": 14.7993318,
@@ -1539,15 +1549,35 @@
   "lon": 14.7627081,
   "precision": "town"
  },
+ "MODICA (PIAZZA BORSELLINO) CAPOLINEA": {
+  "lat": 36.8667643,
+  "lon": 14.7568416,
+  "precision": "street"
+ },
  "MODICA (ZONA 167\\SCUOLE)": {
   "lat": 36.8589209,
   "lon": 14.7613018,
+  "precision": "town"
+ },
+ "POZZALLO CAPOLINEA": {
+  "lat": 36.7265294,
+  "lon": 14.8465811,
   "precision": "town"
  },
  "MODICA (ZONA 167\\SCUOLE) 1": {
   "lat": 36.7265294,
   "lon": 14.8465811,
   "precision": "interpolated"
+ },
+ "MODICA (P.ZA BORSELLINO)- CAPOLINEA": {
+  "lat": 36.8667643,
+  "lon": 14.7568416,
+  "precision": "street"
+ },
+ "MODICA (ZONA 167) CAPOLINEA\\FERMATA": {
+  "lat": 36.8353938,
+  "lon": 14.7943015,
+  "precision": "street"
  },
  "POZZALLO (VIALE EUROPA)": {
   "lat": 36.7313899,
@@ -1558,6 +1588,16 @@
   "lat": 36.7858666,
   "lon": 14.9076362,
   "precision": "town"
+ },
+ "MODICA (P.ZA BORSELLINO) CAPOLINEA": {
+  "lat": 36.8667643,
+  "lon": 14.7568416,
+  "precision": "street"
+ },
+ "0 MODICA (ZONA 167) CAPOLINEA\\FERMATA": {
+  "lat": 36.8353938,
+  "lon": 14.7943015,
+  "precision": "street"
  },
  "MODICA (P.ZA BORSELLINO)": {
   "lat": 36.8667643,
@@ -1573,6 +1613,16 @@
   "lat": 37.4672405,
   "lon": 15.0675846,
   "precision": "town"
+ },
+ "PACHINO (VIA SOLFERINO) CAPOLINEA": {
+  "lat": 36.7186766,
+  "lon": 15.0924803,
+  "precision": "street"
+ },
+ "MARINA DELLA MARZA": {
+  "lat": 36.7265294,
+  "lon": 14.8465811,
+  "precision": "interpolated"
  },
  "POZZALLO (P.ZA MARINAI D'ITALIA)": {
   "lat": 36.7265294,
@@ -1614,6 +1664,11 @@
   "lon": 14.8343354,
   "precision": "street"
  },
+ "SANTA CROCE C. (P.ZA QUASIMODO) CAPOLINEA": {
+  "lat": 37.3131122,
+  "lon": 13.5723478,
+  "precision": "town"
+ },
  "MARINA RAGUSA (P.LE MEDITERRANEO)": {
   "lat": 36.9856364,
   "lon": 14.3574477,
@@ -1622,6 +1677,16 @@
  "SCICLI (LARGO OLIMPIADI IUNGI)": {
   "lat": 36.7935701,
   "lon": 14.7069644,
+  "precision": "town"
+ },
+ "MODICA (TERMINAL P.LE BORSELLINO) CAPOLINEA": {
+  "lat": 36.8589209,
+  "lon": 14.7613018,
+  "precision": "town"
+ },
+ "SANTA CROCE CAMERINA CAPOLINEA": {
+  "lat": 36.827897,
+  "lon": 14.5255384,
   "precision": "town"
  },
  "SCICLI (IUNGI)": {
@@ -1694,6 +1759,11 @@
   "lon": 14.6631104,
   "precision": "interpolated"
  },
+ "ACATE (PIAZZA LIBERTÀ) CAPOLINEA": {
+  "lat": 37.0266362,
+  "lon": 14.493838,
+  "precision": "street"
+ },
  "PEDALINO": {
   "lat": 37.0236326,
   "lon": 14.5840085,
@@ -1724,6 +1794,16 @@
   "lon": 14.6815404,
   "precision": "interpolated"
  },
+ "CATANIA (PIAZZA GIOVANNI XXIII) CAPOLINEA": {
+  "lat": 37.5089,
+  "lon": 15.0864,
+  "precision": "override"
+ },
+ "AEREOPORTO FONTANAROSSA": {
+  "lat": 37.468626349999994,
+  "lon": 15.023635425,
+  "precision": "interpolated"
+ },
  "SIGONELLA": {
   "lat": 37.4015036,
   "lon": 14.9190278,
@@ -1748,6 +1828,16 @@
   "lat": 37.0266362,
   "lon": 14.493838,
   "precision": "street"
+ },
+ "POZZALLO P.(P.ZA MARINAI D'ITALIA) CAPOLINEA": {
+  "lat": 36.7265294,
+  "lon": 14.8465811,
+  "precision": "town"
+ },
+ "RAGUSA (TERMINAL VIA ZAMA) CAPOLINEA": {
+  "lat": 36.9257118,
+  "lon": 14.7307524,
+  "precision": "town"
  },
  "MODICA (TERMINAL P.ZA BORSELLINO)": {
   "lat": 36.8589209,
@@ -2755,13 +2845,13 @@
   "precision": "street"
  },
  "4 S.M. LA STRADA (VIA RUGGERO I)": {
-  "lat": 37.743510099999995,
-  "lon": 15.190523800000001,
-  "precision": "interpolated"
+  "lat": 37.1320245,
+  "lon": 15.2108226,
+  "precision": "town"
  },
  "10 FIUMEFREDDO (PIAZZA DUOMO)": {
-  "lat": 37.7923548,
-  "lon": 15.2069456,
+  "lat": 37.7994474,
+  "lon": 15.197015,
   "precision": "town"
  },
  "CALATABIANO (PIAZZA DUOMO)": {
@@ -2779,10 +2869,10 @@
   "lon": 14.7409241,
   "precision": "street"
  },
- "SALINA'": {
-  "lat": 38.5590495,
-  "lon": 14.8358646,
-  "precision": "town"
+ "SALINA (CATENANUOVA)": {
+  "lat": 37.594943099999995,
+  "lon": 14.7163714,
+  "precision": "interpolated"
  },
  "SCHETTINO": {
   "lat": 37.591955,
@@ -3114,6 +3204,16 @@
   "lon": 13.0710912,
   "precision": "town"
  },
+ "4 BORGETTO VIA ROMITELLO, 4": {
+  "lat": 38.0483788,
+  "lon": 13.1558996,
+  "precision": "street"
+ },
+ "28 PARTINICO VIA CALANDRINO, 28": {
+  "lat": 38.0438957,
+  "lon": 13.1198211,
+  "precision": "town"
+ },
  "C.SO UMBERTO I,2": {
   "lat": 38.0782841,
   "lon": 13.5072427,
@@ -3265,9 +3365,9 @@
   "precision": "street"
  },
  "VIA CALANDRINO, 12": {
-  "lat": 37.8081154,
-  "lon": 12.872257,
-  "precision": "town"
+  "lat": 37.9722295,
+  "lon": 12.9702672,
+  "precision": "override"
  },
  "PARTINICO PIAZZA DUOMO": {
   "lat": 38.0466633,
@@ -3390,39 +3490,39 @@
   "precision": "interpolated"
  },
  "ITALIA, 95 VIA PALERMO, 5": {
-  "lat": 37.568957175,
-  "lon": 14.258116000000001,
+  "lat": 37.623262504761904,
+  "lon": 14.168674495238095,
   "precision": "interpolated"
  },
  "ITALIA, 177 C.SO ITALIA, 48": {
-  "lat": 37.57164815,
-  "lon": 14.243392000000002,
+  "lat": 37.68025880952381,
+  "lon": 14.06450899047619,
   "precision": "interpolated"
  },
  "S.P.3, 41 C.SO ITALIA, 56": {
-  "lat": 37.574339125,
-  "lon": 14.228668000000003,
+  "lat": 37.73725511428571,
+  "lon": 13.960343485714285,
   "precision": "interpolated"
  },
  "S.P.3, 65 CARINI C.SO ITALIA, 150": {
-  "lat": 37.5770301,
-  "lon": 14.213944000000001,
+  "lat": 37.79425141904761,
+  "lon": 13.85617798095238,
   "precision": "interpolated"
  },
  "(BIVIO FORESTA) S.P.3, 48": {
-  "lat": 37.579721075,
-  "lon": 14.19922,
+  "lat": 37.851247723809514,
+  "lon": 13.752012476190474,
   "precision": "interpolated"
  },
  "176 S.P.3, 88 (BIVIO FORESTA)": {
-  "lat": 37.585103025,
-  "lon": 14.169772,
+  "lat": 37.96524033333333,
+  "lon": 13.543681466666666,
   "precision": "interpolated"
  },
  "74 S.S.113 KM": {
-  "lat": 37.587794,
-  "lon": 14.155048,
-  "precision": "town"
+  "lat": 38.02223663809523,
+  "lon": 13.439515961904762,
+  "precision": "interpolated"
  },
  "METROPOLITANA VILLAGRAZIA, 225": {
   "lat": 38.1647274,
@@ -3750,13 +3850,13 @@
   "precision": "town"
  },
  "PEREZ, 94": {
-  "lat": 38.1737828,
-  "lon": 13.2405793,
-  "precision": "town"
+  "lat": 37.751568,
+  "lon": 14.0766456,
+  "precision": "override"
  },
  "CHIESA (CAPOLINEA) VIA RUGGERO SETTIMO>VIA PALERMO": {
-  "lat": 37.894289529411765,
-  "lon": 12.629510017647059,
+  "lat": 37.79494487058823,
+  "lon": 12.8262315,
   "precision": "interpolated"
  },
  "V. E. ORLANDO": {
@@ -3785,18 +3885,18 @@
   "precision": "interpolated"
  },
  "C.SO ITALIA, 41 C.SO UMBERTO I, 3": {
-  "lat": 37.5678039,
-  "lon": 14.264426285714286,
+  "lat": 37.59855635,
+  "lon": 14.212513177777778,
   "precision": "interpolated"
  },
  "C.SO ITALIA, 95 VIA PALERMO, 5": {
-  "lat": 37.5693416,
-  "lon": 14.256012571428572,
+  "lat": 37.630846500000004,
+  "lon": 14.152186355555555,
   "precision": "interpolated"
  },
  "87 (BIVIO FORESTA) S.P.3, 48": {
-  "lat": 37.5831809,
-  "lon": 14.180289142857143,
+  "lat": 37.92145785,
+  "lon": 13.609244955555555,
   "precision": "interpolated"
  },
  "C.SO UMBERTO I, 362 S.S.113 KM": {
@@ -3825,13 +3925,13 @@
   "precision": "town"
  },
  "CHIESA (CAPOLINEA) VIA RUGGERO SETTIMO": {
-  "lat": 37.757422336842104,
-  "lon": 13.89033337631579,
+  "lat": 37.63520226315789,
+  "lon": 14.132352568421053,
   "precision": "interpolated"
  },
  "V.EMANUELE, 274 VIA F.P. PEREZ, 103": {
-  "lat": 37.757422336842104,
-  "lon": 13.89033337631579,
+  "lat": 37.63520226315789,
+  "lon": 14.132352568421053,
   "precision": "interpolated"
  },
  "V.EMANUELE, 414 VIA C. A. DALLA CHIESA (CAPOLINEA)": {
@@ -4127,7 +4227,7 @@
  "CATANIA (AEROPORTO FONTANAROSSA)": {
   "lat": 37.4672405,
   "lon": 15.0675846,
-  "precision": "street"
+  "precision": "override"
  },
  "CATANIA (TERMINAL BUS VIA ARCHIMEDE)": {
   "lat": 37.5023612,
@@ -4364,50 +4464,40 @@
   "lon": 15.0873718,
   "precision": "town"
  },
- "RAGUSA (VIA BENEDE MTTO ARBIR NIN A,3 D3 I(POLIZIA MUNICIPALE)148,400145,400142,900)": {
-  "lat": 36.9257118,
-  "lon": 14.7307524,
-  "precision": "town"
+ "RAGUSA (POLIZIA MUNICIPALE)": {
+  "lat": 36.9155612,
+  "lon": 14.7282752,
+  "precision": "override"
  },
- "PCAMERINA (TERMI SN.A CL RBOU CS EIAZZA QUASIMODO142,100139,100136,600)": {
-  "lat": 36.94182205,
-  "lon": 14.78359638,
+ "S. CROCE CAMERINA (PIAZZA QUASIMODO)": {
+  "lat": 36.8226478,
+  "lon": 14.523272,
+  "precision": "override"
+ },
+ "RAGUSA (TERMINAL BUS VIA ZAMA)": {
+  "lat": 36.9121725,
+  "lon": 14.7230303,
+  "precision": "override"
+ },
+ "AREA DI SERVIZIO SS514 (KM 12,300)": {
+  "lat": 37.02916321111111,
+  "lon": 14.798695544444444,
   "precision": "interpolated"
  },
- "RAGUSAZ (TERMINAL BUS VIAAMA114,900111,900109,4007.509.50)": {
-  "lat": 36.94182205,
-  "lon": 14.78359638,
+ "AREA DI SERVIZIO SS514 (KM 33,000)": {
+  "lat": 37.1754016,
+  "lon": 14.893277099999999,
   "precision": "interpolated"
  },
- "BSCKCSS (AREAVE.RVIHZIIOARAALMOMN.TE1/2.O3M00ISO514)": {
-  "lat": 36.9708205,
-  "lon": 14.878715544,
-  "precision": "interpolated"
+ "CATANIA (ZONA INDUSTRIALE - STMICROELECTRONICS)": {
+  "lat": 37.4386307,
+  "lon": 15.0635239,
+  "precision": "override"
  },
- "BVK (AREA SERVIZIOVA.LIMZZ.IN3I3.000 SS5147)": {
-  "lat": 37.0070685625,
-  "lon": 14.997614499,
-  "precision": "interpolated"
- },
- "SIMC (ZON. TA.NDIUCRSOTREIALELETTROANTIACNSIA13,600)": {
-  "lat": 37.072315075,
-  "lon": 15.211632618,
-  "precision": "interpolated"
- },
- "TANIA (AEROPOR CTO AFONTANAROSSA6,9006,9006.10)": {
-  "lat": 37.0868143,
-  "lon": 15.2591922,
-  "precision": "town"
- },
- "CATANI (SAN GIUSEPPE ALA RENA4,904,904,90)": {
-  "lat": 37.294587750000005,
-  "lon": 15.173282,
-  "precision": "interpolated"
- },
- "CATANIA (TERMINAL BUS VIA ARCHIMEDE0,0000,0000,0006.00)": {
-  "lat": 37.5023612,
-  "lon": 15.0873718,
-  "precision": "town"
+ "CATANIA (SAN GIUSEPPE LA RENA)": {
+  "lat": 37.4740896,
+  "lon": 15.0756253,
+  "precision": "override"
  },
  "PIAZZA ARMERINA (V.LE G. CIANCIO-P.ZZA MARESCALCHI)": {
   "lat": 37.385946,
@@ -5160,9 +5250,9 @@
   "precision": "street"
  },
  "SANTA TERESA": {
-  "lat": 36.8655121,
-  "lon": 14.7637267,
-  "precision": "town"
+  "lat": 37.47326436,
+  "lon": 15.21147534,
+  "precision": "interpolated"
  },
  "SIRACUSA A. (C.SO UMBERTO/TERMINAL BUS)": {
   "lat": 38.2187583,
@@ -5309,6 +5399,11 @@
   "lon": 15.3309096,
   "precision": "town"
  },
+ "I ORARIO": {
+  "lat": 37.63114480588236,
+  "lon": 15.024352476470588,
+  "precision": "interpolated"
+ },
  "I ROCCALUMERA ROCCALUMERA": {
   "lat": 37.9755016,
   "lon": 15.3950272,
@@ -5317,6 +5412,11 @@
  "I ALI TERME ALI TERME": {
   "lat": 38.005064,
   "lon": 15.42269,
+  "precision": "town"
+ },
+ "0 ORARIO": {
+  "lat": 38.4891283,
+  "lon": 14.9628639,
   "precision": "town"
  },
  "SANTA TERESA BARRACCA": {
@@ -5377,6 +5477,11 @@
  "SAVOCA": {
   "lat": 37.9558591,
   "lon": 15.3393223,
+  "precision": "town"
+ },
+ "39 ORARIO": {
+  "lat": 38.4891283,
+  "lon": 14.9628639,
   "precision": "town"
  },
  "ANTILLO CANIGLIARI": {
@@ -5780,13 +5885,13 @@
   "precision": "town"
  },
  "11 CERDA CERDA": {
-  "lat": 37.9006045,
-  "lon": 13.8245731,
+  "lat": 37.9038816,
+  "lon": 13.8154084,
   "precision": "town"
  },
  "19 CERDA BV.SS113 CERDA BV.SS113": {
-  "lat": 37.93046061111111,
-  "lon": 13.868991566666667,
+  "lat": 37.93300946666667,
+  "lon": 13.861863466666668,
   "precision": "interpolated"
  },
  "CEFALÙ": {
@@ -5795,8 +5900,8 @@
   "precision": "town"
  },
  "68 PALERMO PALERMO": {
-  "lat": 37.4989997,
-  "lon": 15.0700816,
+  "lat": 38.140915,
+  "lon": 13.3485711,
   "precision": "town"
  },
  "TORTORICI ( PIAZZA FARANDA)": {
@@ -5984,19 +6089,24 @@
   "lon": 14.8779047,
   "precision": "town"
  },
+ "SALINA'": {
+  "lat": 38.136534166666664,
+  "lon": 14.8529143,
+  "precision": "interpolated"
+ },
  "(VIA MENDOLA) FIUMARA (VIA MENDOLA)": {
-  "lat": 38.4556528,
-  "lon": 14.827631825000001,
+  "lat": 38.1387663,
+  "lon": 14.8404191,
   "precision": "interpolated"
  },
  "S.ANGELO S.S. 113 BIVIO S.ANGELO S.S. 114": {
-  "lat": 38.352256100000005,
-  "lon": 14.819399050000001,
+  "lat": 38.14099843333334,
+  "lon": 14.8279239,
   "precision": "interpolated"
  },
  "BROLO STAZ. F.S. BIVIO BROLO STAZ. F.S.": {
-  "lat": 38.2488594,
-  "lon": 14.811166275000001,
+  "lat": 38.143230566666674,
+  "lon": 14.8154287,
   "precision": "interpolated"
  },
  "NASO PONTE NASO": {
@@ -7425,9 +7535,9 @@
   "precision": "override"
  },
  "S.GIOV.GEMINI": {
-  "lat": 38.0077265,
-  "lon": 14.256726,
-  "precision": "interpolated"
+  "lat": 37.6299364,
+  "lon": 13.6413747,
+  "precision": "override"
  },
  "STAZ. FF.DI": {
   "lat": 38.0077265,
@@ -7460,8 +7570,8 @@
   "precision": "town"
  },
  "LERC. FRIDDI": {
-  "lat": 37.824785479999996,
-  "lon": 13.5236246,
+  "lat": 37.790366533333334,
+  "lon": 13.545064266666667,
   "precision": "interpolated"
  },
  "CASTRONOVO D.": {
@@ -7703,6 +7813,11 @@
   "lat": 38.0518672,
   "lon": 13.0042665,
   "precision": "town"
+ },
+ "TRAPPETO (PA)": {
+  "lat": 38.067008,
+  "lon": 13.0365496,
+  "precision": "override"
  },
  "B.TERRASINI (LATO TP)": {
   "lat": 38.1528221,
@@ -8155,9 +8270,9 @@
   "precision": "town"
  },
  "VILLABATE": {
-  "lat": 38.0765278,
-  "lon": 13.4436674,
-  "precision": "town"
+  "lat": 37.2686823,
+  "lon": 13.5923172,
+  "precision": "override"
  },
  "SANTA CATERINA VILLARMOSA": {
   "lat": 37.591147,
@@ -8875,9 +8990,9 @@
   "precision": "town"
  },
  "ANGOLO VIA PARTANNA;": {
-  "lat": 37.2915931,
-  "lon": 13.7966824,
-  "precision": "town"
+  "lat": 38.182979,
+  "lon": 13.3082743,
+  "precision": "override"
  },
  "ALCIDE DE GASPERI VIA BELGIO N. 39 VIA UGO LA MALFA (FERMATA AMAT IPERMERCATO AUCHAN).": {
   "lat": 38.0187998,
@@ -8885,14 +9000,24 @@
   "precision": "town"
  },
  "A/29": {
-  "lat": 37.9011288,
-  "lon": 15.1362079,
-  "precision": "town"
+  "lat": 37.6477395,
+  "lon": 13.1110313,
+  "precision": "override"
  },
  "DIRAMAZIONE PUNTA RAISI": {
   "lat": 38.1877509,
   "lon": 13.1285891,
   "precision": "town"
+ },
+ "AEREOPORTO FALCONE E BORSELLINO": {
+  "lat": 38.18536495,
+  "lon": 13.2184317,
+  "precision": "interpolated"
+ },
+ "99 ANGOLO VIA PARTANNA;": {
+  "lat": 38.182979,
+  "lon": 13.3082743,
+  "precision": "override"
  },
  "PIAZZA RETTORE EVOLA": {
   "lat": 38.0504766,

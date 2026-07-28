@@ -120,7 +120,10 @@ def hms(t, wrapped_offset=0):
     return f'{int(h) + wrapped_offset:02d}:{int(m):02d}:00'
 
 
-JUNK_STOP = re.compile(r'^(Fermata( intermedia)?|Capolinea( di (Partenza|Arrivo))?)\s*$', re.I)
+# Anonymous placeholder rows are unmappable and never ship. Cycle 4 widened
+# this to the parse-damaged variants: OCR-ish suffixes ("Fermata intermedia I",
+# "… 0") and collapsed counts ("10 Fermata intermedie 10").
+JUNK_STOP = re.compile(r'^(\d{0,2}\s*Fermata( intermedi\w{0,2})?( [I0-9]{1,2})?|Capolinea( di (Partenza|Arrivo))?)\s*$', re.I)
 
 
 def hav_km(a, b):

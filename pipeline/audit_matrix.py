@@ -197,7 +197,7 @@ def main():
             b = lambda s: (s.get('best', {}).get('dep', '—') + '->' + s.get('best', {}).get('arr', '—')) if s.get('status') == 'OK' else s.get('status')
             print(f"{fname}->{tname} {iso}: untuned={b(row['live_untuned'])} tuned={b(row['live_tuned'])} csa={b(row['csa'])}", flush=True)
     with open(OUT, 'w', encoding='utf-8') as f:
-        json.dump({'generated': '2026-07-26', 'depart_after': '08:00 Europe/Rome',
+        json.dump({'generated': '2026-07-28', 'depart_after': '08:00 Europe/Rome',
                    'pairs': len(PAIRS), 'dates': len(DATES), 'results': results}, f, indent=1)
     print(f'\n{len(results)} cells, {n_live} live calls this run -> {OUT}')
 

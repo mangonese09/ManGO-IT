@@ -1,5 +1,5 @@
 {
- "generated": "2026-07-26",
+ "generated": "2026-07-28",
  "depart_after": "08:00 Europe/Rome",
  "pairs": 20,
  "dates": 5,
@@ -13,12 +13,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 1.55
+    "elapsed_s": 0.9
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 1.19
+    "elapsed_s": 1.1
    },
    "csa": {
     "status": "OK",
@@ -44,12 +44,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.8
+    "elapsed_s": 0.82
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.98
+    "elapsed_s": 1.07
    },
    "csa": {
     "status": "OK",
@@ -75,12 +75,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.82
+    "elapsed_s": 0.98
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.95
+    "elapsed_s": 1.22
    },
    "csa": {
     "status": "OK",
@@ -106,12 +106,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.89
+    "elapsed_s": 0.92
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 1.28
+    "elapsed_s": 1.2
    },
    "csa": {
     "status": "NONE"
@@ -126,15 +126,26 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.73
+    "elapsed_s": 0.95
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 1.03
+    "elapsed_s": 1.14
    },
    "csa": {
-    "status": "NONE"
+    "status": "OK",
+    "best": {
+     "dep": "08:30",
+     "arr": "18:20",
+     "transfers": 2,
+     "legs": [
+      "COACH:S. Elisabetta - Palermo@Camilleri Argento & Lattuca",
+      "COACH:Siracusa - S.S. 114 - Asse attrezz@Interbus",
+      "COACH:Aidone - Piazza Armerina - Valguar@Etna Trasporti"
+     ]
+    },
+    "day_departures": 3
    }
   },
   {
@@ -146,12 +157,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.83
+    "elapsed_s": 1.63
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.82
+    "elapsed_s": 0.93
    },
    "csa": {
     "status": "OK",
@@ -175,12 +186,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.8
+    "elapsed_s": 0.83
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.91
+    "elapsed_s": 0.96
    },
    "csa": {
     "status": "OK",
@@ -204,12 +215,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.74
+    "elapsed_s": 1.03
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.84
+    "elapsed_s": 0.87
    },
    "csa": {
     "status": "OK",
@@ -233,12 +244,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.81
+    "elapsed_s": 0.88
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.76
+    "elapsed_s": 0.82
    },
    "csa": {
     "status": "OK",
@@ -262,7 +273,7 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.8
+    "elapsed_s": 0.77
    },
    "live_tuned": {
     "status": "NONE",
@@ -358,7 +369,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.65
+    "elapsed_s": 1.83
    },
    "live_tuned": {
     "status": "OK",
@@ -439,22 +450,19 @@
       ]
      }
     ],
-    "elapsed_s": 1.83
+    "elapsed_s": 2.09
    },
    "csa": {
     "status": "OK",
     "best": {
-     "dep": "09:00",
-     "arr": "15:03",
-     "transfers": 3,
+     "dep": "09:15",
+     "arr": "11:15",
+     "transfers": 0,
      "legs": [
-      "COACH:Catania - Palermo@SAIS Autolinee",
-      "COACH:Catania - Porto Empedocle (SAIS Tr@SAIS Trasporti",
-      "COACH:Catania - Porto Empedocle (SAIS Tr@SAIS Trasporti",
-      "COACH:Linea 2/: AGRIGENTO - TEMPIO DI GI@TUA Agrigento"
+      "COACH:S. Elisabetta - Palermo@Camilleri Argento & Lattuca"
      ]
     },
-    "day_departures": 11
+    "day_departures": 9
    }
   },
   {
@@ -533,7 +541,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.87
+    "elapsed_s": 2.07
    },
    "live_tuned": {
     "status": "OK",
@@ -605,22 +613,19 @@
       ]
      }
     ],
-    "elapsed_s": 2.04
+    "elapsed_s": 2.09
    },
    "csa": {
     "status": "OK",
     "best": {
-     "dep": "09:00",
-     "arr": "15:03",
-     "transfers": 3,
+     "dep": "09:15",
+     "arr": "11:15",
+     "transfers": 0,
      "legs": [
-      "COACH:Catania - Palermo@SAIS Autolinee",
-      "COACH:Catania - Porto Empedocle (SAIS Tr@SAIS Trasporti",
-      "COACH:Catania - Porto Empedocle (SAIS Tr@SAIS Trasporti",
-      "COACH:Linea 2/: AGRIGENTO - TEMPIO DI GI@TUA Agrigento"
+      "COACH:S. Elisabetta - Palermo@Camilleri Argento & Lattuca"
      ]
     },
-    "day_departures": 9
+    "day_departures": 8
    }
   },
   {
@@ -698,7 +703,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.62
+    "elapsed_s": 1.83
    },
    "live_tuned": {
     "status": "OK",
@@ -769,7 +774,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.91
+    "elapsed_s": 3.01
    },
    "csa": {
     "status": "OK",
@@ -784,7 +789,7 @@
       "COACH:Linea 1: AGRIGENTO - VALLE DEI TEM@TUA Agrigento"
      ]
     },
-    "day_departures": 9
+    "day_departures": 10
    }
   },
   {
@@ -862,7 +867,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.71
+    "elapsed_s": 2.89
    },
    "live_tuned": {
     "status": "OK",
@@ -933,10 +938,19 @@
       ]
      }
     ],
-    "elapsed_s": 1.82
+    "elapsed_s": 3.09
    },
    "csa": {
-    "status": "NONE"
+    "status": "OK",
+    "best": {
+     "dep": "20:00",
+     "arr": "22:00",
+     "transfers": 0,
+     "legs": [
+      "COACH:S. Elisabetta - Palermo@Camilleri Argento & Lattuca"
+     ]
+    },
+    "day_departures": 1
    }
   },
   {
@@ -1020,7 +1034,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.85
+    "elapsed_s": 2.64
    },
    "live_tuned": {
     "status": "OK",
@@ -1097,21 +1111,19 @@
       ]
      }
     ],
-    "elapsed_s": 1.92
+    "elapsed_s": 2.47
    },
    "csa": {
     "status": "OK",
     "best": {
-     "dep": "09:00",
-     "arr": "15:03",
-     "transfers": 2,
+     "dep": "09:15",
+     "arr": "11:15",
+     "transfers": 0,
      "legs": [
-      "COACH:CATTOLICA-RIBERA-SCIACCA-PALERMO@Gallo",
-      "COACH:AGRIGENTO-REALMONTE-SICULIANA-MONT@Salvatore Lumia",
-      "COACH:Linea 2/: AGRIGENTO - TEMPIO DI GI@TUA Agrigento"
+      "COACH:S. Elisabetta - Palermo@Camilleri Argento & Lattuca"
      ]
     },
-    "day_departures": 8
+    "day_departures": 9
    }
   },
   {
@@ -1204,7 +1216,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.82
+    "elapsed_s": 2.18
    },
    "live_tuned": {
     "status": "OK",
@@ -1286,7 +1298,7 @@
       ]
      }
     ],
-    "elapsed_s": 2.02
+    "elapsed_s": 2.12
    },
    "csa": {
     "status": "OK",
@@ -1391,7 +1403,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.68
+    "elapsed_s": 2.44
    },
    "live_tuned": {
     "status": "OK",
@@ -1473,7 +1485,7 @@
       ]
      }
     ],
-    "elapsed_s": 2.35
+    "elapsed_s": 4.85
    },
    "csa": {
     "status": "OK",
@@ -1577,7 +1589,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.73
+    "elapsed_s": 3.1
    },
    "live_tuned": {
     "status": "OK",
@@ -1656,7 +1668,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.87
+    "elapsed_s": 1.89
    },
    "csa": {
     "status": "OK",
@@ -1760,7 +1772,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.76
+    "elapsed_s": 2.08
    },
    "live_tuned": {
     "status": "OK",
@@ -1839,7 +1851,7 @@
       ]
      }
     ],
-    "elapsed_s": 2.65
+    "elapsed_s": 2.69
    },
    "csa": {
     "status": "OK",
@@ -1864,7 +1876,7 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 5.61
+    "elapsed_s": 5.99
    },
    "live_tuned": {
     "status": "OK",
@@ -1941,23 +1953,21 @@
       ]
      }
     ],
-    "elapsed_s": 1.91
+    "elapsed_s": 2.01
    },
    "csa": {
     "status": "OK",
     "best": {
-     "dep": "08:00",
+     "dep": "09:00",
      "arr": "18:20",
-     "transfers": 4,
+     "transfers": 2,
      "legs": [
-      "COACH:Linea 1: AGRIGENTO - VALLE DEI TEM@TUA Agrigento",
-      "COACH:AGRIGENTO-REALMONTE-SICULIANA-MONT@Salvatore Lumia",
-      "COACH:CATTOLICA-RIBERA-SCIACCA-PALERMO@Gallo",
+      "COACH:S. Elisabetta - Palermo@Camilleri Argento & Lattuca",
       "COACH:Siracusa - S.S. 114 - Asse attrezz@Interbus",
       "COACH:Aidone - Piazza Armerina - Valguar@Etna Trasporti"
      ]
     },
-    "day_departures": 2
+    "day_departures": 4
    }
   },
   {
@@ -2045,7 +2055,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.78
+    "elapsed_s": 2.02
    },
    "live_tuned": {
     "status": "OK",
@@ -2131,7 +2141,7 @@
       ]
      }
     ],
-    "elapsed_s": 2.36
+    "elapsed_s": 2.66
    },
    "csa": {
     "status": "OK",
@@ -2230,7 +2240,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.71
+    "elapsed_s": 1.91
    },
    "live_tuned": {
     "status": "OK",
@@ -2325,7 +2335,7 @@
       ]
      }
     ],
-    "elapsed_s": 2.07
+    "elapsed_s": 2.51
    },
    "csa": {
     "status": "OK",
@@ -2424,7 +2434,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.88
+    "elapsed_s": 2.57
    },
    "live_tuned": {
     "status": "OK",
@@ -2498,7 +2508,7 @@
       ]
      }
     ],
-    "elapsed_s": 2.18
+    "elapsed_s": 2.43
    },
    "csa": {
     "status": "OK",
@@ -2511,7 +2521,7 @@
       "COACH:Catania - Porto Empedocle (SAIS Tr@SAIS Trasporti"
      ]
     },
-    "day_departures": 12
+    "day_departures": 10
    }
   },
   {
@@ -2597,7 +2607,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.77
+    "elapsed_s": 1.78
    },
    "live_tuned": {
     "status": "OK",
@@ -2671,21 +2681,20 @@
       ]
      }
     ],
-    "elapsed_s": 1.92
+    "elapsed_s": 2.19
    },
    "csa": {
     "status": "OK",
     "best": {
      "dep": "09:00",
-     "arr": "18:25",
-     "transfers": 2,
+     "arr": "13:00",
+     "transfers": 1,
      "legs": [
       "COACH:Catania - Palermo@SAIS Autolinee",
-      "COACH:Siracusa-Aeroporto-Catania@Interbus",
-      "COACH:Siracusa-Aeroporto-Catania@Interbus"
+      "COACH:Taormina-Giardini F.S.-Fiumefreddo@Etna Trasporti"
      ]
     },
-    "day_departures": 11
+    "day_departures": 10
    }
   },
   {
@@ -2697,7 +2706,7 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 4.9
+    "elapsed_s": 5.35
    },
    "live_tuned": {
     "status": "OK",
@@ -2767,7 +2776,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.85
+    "elapsed_s": 2.3
    },
    "csa": {
     "status": "OK",
@@ -2792,12 +2801,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.78
+    "elapsed_s": 0.91
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.95
+    "elapsed_s": 1.04
    },
    "csa": {
     "status": "OK",
@@ -2822,12 +2831,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.82
+    "elapsed_s": 0.9
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 1.03
+    "elapsed_s": 1.08
    },
    "csa": {
     "status": "OK",
@@ -2853,12 +2862,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.8
+    "elapsed_s": 0.93
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.96
+    "elapsed_s": 1.04
    },
    "csa": {
     "status": "OK",
@@ -2883,12 +2892,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.87
+    "elapsed_s": 1.04
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 1.01
+    "elapsed_s": 1.07
    },
    "csa": {
     "status": "OK",
@@ -2913,12 +2922,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.81
+    "elapsed_s": 0.85
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 1.03
+    "elapsed_s": 1.21
    },
    "csa": {
     "status": "NONE"
@@ -3005,7 +3014,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.63
+    "elapsed_s": 1.75
    },
    "live_tuned": {
     "status": "OK",
@@ -3136,21 +3145,19 @@
       ]
      }
     ],
-    "elapsed_s": 1.96
+    "elapsed_s": 2.62
    },
    "csa": {
     "status": "OK",
     "best": {
      "dep": "09:00",
-     "arr": "12:25",
-     "transfers": 2,
+     "arr": "10:15",
+     "transfers": 0,
      "legs": [
-      "COACH:Caltagirone - Siracusa@Azienda Siciliana Trasporti",
-      "COACH:CARLENTINI - CATANIA p.za Giovanni@Azienda Siciliana Trasporti",
-      "COACH:Siracusa-Aeroporto-Catania@Interbus"
+      "COACH:Portopalo di Capopassero - Pachino@Interbus"
      ]
     },
-    "day_departures": 6
+    "day_departures": 10
    }
   },
   {
@@ -3234,7 +3241,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.67
+    "elapsed_s": 2.02
    },
    "live_tuned": {
     "status": "OK",
@@ -3365,18 +3372,16 @@
       ]
      }
     ],
-    "elapsed_s": 2.58
+    "elapsed_s": 2.11
    },
    "csa": {
     "status": "OK",
     "best": {
      "dep": "09:00",
-     "arr": "12:25",
-     "transfers": 2,
+     "arr": "10:15",
+     "transfers": 0,
      "legs": [
-      "COACH:Caltagirone - Siracusa@Azienda Siciliana Trasporti",
-      "COACH:CARLENTINI - CATANIA p.za Giovanni@Azienda Siciliana Trasporti",
-      "COACH:Siracusa-Aeroporto-Catania@Interbus"
+      "COACH:Portopalo di Capopassero - Pachino@Interbus"
      ]
     },
     "day_departures": 6
@@ -3463,7 +3468,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.71
+    "elapsed_s": 1.98
    },
    "live_tuned": {
     "status": "OK",
@@ -3594,7 +3599,7 @@
       ]
      }
     ],
-    "elapsed_s": 2.08
+    "elapsed_s": 2.19
    },
    "csa": {
     "status": "NONE"
@@ -3681,7 +3686,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.66
+    "elapsed_s": 1.84
    },
    "live_tuned": {
     "status": "OK",
@@ -3812,7 +3817,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.87
+    "elapsed_s": 2.5
    },
    "csa": {
     "status": "NONE"
@@ -3827,7 +3832,7 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 4.98
+    "elapsed_s": 5.44
    },
    "live_tuned": {
     "status": "OK",
@@ -3897,21 +3902,19 @@
       ]
      }
     ],
-    "elapsed_s": 1.82
+    "elapsed_s": 1.86
    },
    "csa": {
     "status": "OK",
     "best": {
-     "dep": "09:00",
-     "arr": "12:25",
-     "transfers": 2,
+     "dep": "08:30",
+     "arr": "09:45",
+     "transfers": 0,
      "legs": [
-      "COACH:Caltagirone - Siracusa@Azienda Siciliana Trasporti",
-      "COACH:CARLENTINI - CATANIA p.za Giovanni@Azienda Siciliana Trasporti",
-      "COACH:Siracusa-Aeroporto-Catania@Interbus"
+      "COACH:Portopalo di Capopassero - Pachino@Interbus"
      ]
     },
-    "day_departures": 6
+    "day_departures": 11
    }
   },
   {
@@ -3923,12 +3926,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.83
+    "elapsed_s": 0.84
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.98
+    "elapsed_s": 0.9
    },
    "csa": {
     "status": "OK",
@@ -3952,12 +3955,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.85
+    "elapsed_s": 0.78
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.99
+    "elapsed_s": 0.85
    },
    "csa": {
     "status": "OK",
@@ -3969,7 +3972,7 @@
       "COACH:SCIACCA-MENFI-SAMBUCA-PALERMO@Gallo"
      ]
     },
-    "day_departures": 10
+    "day_departures": 11
    }
   },
   {
@@ -3981,12 +3984,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.76
+    "elapsed_s": 0.69
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.96
+    "elapsed_s": 0.91
    },
    "csa": {
     "status": "OK",
@@ -4010,12 +4013,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.81
+    "elapsed_s": 0.82
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.92
+    "elapsed_s": 0.94
    },
    "csa": {
     "status": "OK",
@@ -4039,12 +4042,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.78
+    "elapsed_s": 0.77
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.96
+    "elapsed_s": 0.95
    },
    "csa": {
     "status": "OK",
@@ -4068,12 +4071,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.83
+    "elapsed_s": 0.8
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.83
+    "elapsed_s": 0.82
    },
    "csa": {
     "status": "OK",
@@ -4098,12 +4101,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.82
+    "elapsed_s": 0.81
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.85
+    "elapsed_s": 0.8
    },
    "csa": {
     "status": "OK",
@@ -4128,12 +4131,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.83
+    "elapsed_s": 0.8
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.77
+    "elapsed_s": 0.85
    },
    "csa": {
     "status": "OK",
@@ -4150,7 +4153,7 @@
       "COACH:Linea 1: AGRIGENTO - VALLE DEI TEM@TUA Agrigento"
      ]
     },
-    "day_departures": 1
+    "day_departures": 4
    }
   },
   {
@@ -4162,15 +4165,25 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.72
+    "elapsed_s": 0.83
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.84
+    "elapsed_s": 0.82
    },
    "csa": {
-    "status": "NONE"
+    "status": "OK",
+    "best": {
+     "dep": "09:00",
+     "arr": "22:00",
+     "transfers": 1,
+     "legs": [
+      "COACH:CATTOLICA-RIBERA-SCIACCA-PALERMO@Gallo",
+      "COACH:S. Elisabetta - Palermo@Camilleri Argento & Lattuca"
+     ]
+    },
+    "day_departures": 4
    }
   },
   {
@@ -4182,12 +4195,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.94
+    "elapsed_s": 0.78
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.82
+    "elapsed_s": 0.79
    },
    "csa": {
     "status": "OK",
@@ -4212,7 +4225,7 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 1.0
+    "elapsed_s": 0.88
    },
    "live_tuned": {
     "status": "OK",
@@ -4302,7 +4315,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.95
+    "elapsed_s": 2.76
    },
    "csa": {
     "status": "OK",
@@ -4330,7 +4343,7 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.78
+    "elapsed_s": 0.83
    },
    "live_tuned": {
     "status": "OK",
@@ -4423,7 +4436,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.88
+    "elapsed_s": 2.82
    },
    "csa": {
     "status": "OK",
@@ -4447,6 +4460,124 @@
    "class": "coach-trunk",
    "date": "2026-08-09",
    "day": "festivo (Sun)",
+   "live_untuned": {
+    "status": "NONE",
+    "n": 0,
+    "elapsed_s": 0.86
+   },
+   "live_tuned": {
+    "status": "OK",
+    "n": 7,
+    "best": {
+     "dep": "04:24",
+     "arr": "07:58",
+     "duration_min": 214,
+     "transfers": 2,
+     "legs": [
+      "BUS:BUS @TRENITALIA",
+      "REGIONAL_RAIL:REG 21900@TRENITALIA",
+      "BUS:425@Azienda Metropolitana Trasporti Catania"
+     ]
+    },
+    "all": [
+     {
+      "dep": "04:24",
+      "arr": "08:06",
+      "duration_min": 222,
+      "transfers": 1,
+      "legs": [
+       "BUS:BUS @TRENITALIA",
+       "REGIONAL_RAIL:REG 21900@TRENITALIA"
+      ]
+     },
+     {
+      "dep": "04:24",
+      "arr": "07:58",
+      "duration_min": 214,
+      "transfers": 2,
+      "legs": [
+       "BUS:BUS @TRENITALIA",
+       "REGIONAL_RAIL:REG 21900@TRENITALIA",
+       "BUS:425@Azienda Metropolitana Trasporti Catania"
+      ]
+     },
+     {
+      "dep": "06:41",
+      "arr": "10:49",
+      "duration_min": 248,
+      "transfers": 1,
+      "legs": [
+       "REGIONAL_RAIL:REG 5466@TRENITALIA",
+       "REGIONAL_RAIL:REG 5506@TRENITALIA"
+      ]
+     },
+     {
+      "dep": "06:41",
+      "arr": "10:43",
+      "duration_min": 242,
+      "transfers": 2,
+      "legs": [
+       "REGIONAL_RAIL:REG 5466@TRENITALIA",
+       "REGIONAL_RAIL:REG 5506@TRENITALIA",
+       "BUS:L-EX@Azienda Metropolitana Trasporti Catania"
+      ]
+     },
+     {
+      "dep": "08:40",
+      "arr": "12:49",
+      "duration_min": 249,
+      "transfers": 1,
+      "legs": [
+       "REGIONAL_RAIL:REG 5468@TRENITALIA",
+       "REGIONAL_RAIL:REG 5508@TRENITALIA"
+      ]
+     },
+     {
+      "dep": "14:50",
+      "arr": "18:35",
+      "duration_min": 225,
+      "transfers": 1,
+      "legs": [
+       "BUS:BUS @TRENITALIA",
+       "REGIONAL_RAIL:REG 21904@TRENITALIA"
+      ]
+     },
+     {
+      "dep": "14:50",
+      "arr": "18:27",
+      "duration_min": 217,
+      "transfers": 2,
+      "legs": [
+       "BUS:BUS @TRENITALIA",
+       "REGIONAL_RAIL:REG 21904@TRENITALIA",
+       "BUS:D@Azienda Metropolitana Trasporti Catania"
+      ]
+     }
+    ],
+    "elapsed_s": 1.97
+   },
+   "csa": {
+    "status": "OK",
+    "best": {
+     "dep": "08:40",
+     "arr": "13:00",
+     "transfers": 3,
+     "legs": [
+      "COACH:Palermo - Enna - Piazza Armerina -@SAIS Autolinee",
+      "COACH:5 Terminal - Pergusa - Terminal@SAIS Autolinee",
+      "COACH:Catania-Enna@SAIS Autolinee",
+      "COACH:Taormina-Giardini F.S.-Fiumefreddo@Etna Trasporti"
+     ]
+    },
+    "day_departures": 3
+   }
+  },
+  {
+   "from": "Gela",
+   "to": "Catania",
+   "class": "coach-trunk",
+   "date": "2026-08-15",
+   "day": "Ferragosto (Sat)",
    "live_untuned": {
     "status": "NONE",
     "n": 0,
@@ -4541,142 +4672,23 @@
       ]
      }
     ],
-    "elapsed_s": 2.09
-   },
-   "csa": {
-    "status": "OK",
-    "best": {
-     "dep": "08:40",
-     "arr": "13:50",
-     "transfers": 3,
-     "legs": [
-      "COACH:Palermo - Enna - Piazza Armerina -@SAIS Autolinee",
-      "COACH:5 Terminal - Pergusa - Terminal@SAIS Autolinee",
-      "COACH:Catania-Enna@SAIS Autolinee",
-      "COACH:Catania - Porto Empedocle (SAIS Tr@SAIS Trasporti"
-     ]
-    },
-    "day_departures": 8
-   }
-  },
-  {
-   "from": "Gela",
-   "to": "Catania",
-   "class": "coach-trunk",
-   "date": "2026-08-15",
-   "day": "Ferragosto (Sat)",
-   "live_untuned": {
-    "status": "NONE",
-    "n": 0,
-    "elapsed_s": 0.77
-   },
-   "live_tuned": {
-    "status": "OK",
-    "n": 7,
-    "best": {
-     "dep": "04:24",
-     "arr": "07:58",
-     "duration_min": 214,
-     "transfers": 2,
-     "legs": [
-      "BUS:BUS @TRENITALIA",
-      "REGIONAL_RAIL:REG 21900@TRENITALIA",
-      "BUS:425@Azienda Metropolitana Trasporti Catania"
-     ]
-    },
-    "all": [
-     {
-      "dep": "04:24",
-      "arr": "08:06",
-      "duration_min": 222,
-      "transfers": 1,
-      "legs": [
-       "BUS:BUS @TRENITALIA",
-       "REGIONAL_RAIL:REG 21900@TRENITALIA"
-      ]
-     },
-     {
-      "dep": "04:24",
-      "arr": "07:58",
-      "duration_min": 214,
-      "transfers": 2,
-      "legs": [
-       "BUS:BUS @TRENITALIA",
-       "REGIONAL_RAIL:REG 21900@TRENITALIA",
-       "BUS:425@Azienda Metropolitana Trasporti Catania"
-      ]
-     },
-     {
-      "dep": "06:41",
-      "arr": "10:49",
-      "duration_min": 248,
-      "transfers": 1,
-      "legs": [
-       "REGIONAL_RAIL:REG 5466@TRENITALIA",
-       "REGIONAL_RAIL:REG 5506@TRENITALIA"
-      ]
-     },
-     {
-      "dep": "06:41",
-      "arr": "10:43",
-      "duration_min": 242,
-      "transfers": 2,
-      "legs": [
-       "REGIONAL_RAIL:REG 5466@TRENITALIA",
-       "REGIONAL_RAIL:REG 5506@TRENITALIA",
-       "BUS:L-EX@Azienda Metropolitana Trasporti Catania"
-      ]
-     },
-     {
-      "dep": "08:40",
-      "arr": "12:49",
-      "duration_min": 249,
-      "transfers": 1,
-      "legs": [
-       "REGIONAL_RAIL:REG 5468@TRENITALIA",
-       "REGIONAL_RAIL:REG 5508@TRENITALIA"
-      ]
-     },
-     {
-      "dep": "14:50",
-      "arr": "18:35",
-      "duration_min": 225,
-      "transfers": 1,
-      "legs": [
-       "BUS:BUS @TRENITALIA",
-       "REGIONAL_RAIL:REG 21904@TRENITALIA"
-      ]
-     },
-     {
-      "dep": "14:50",
-      "arr": "18:27",
-      "duration_min": 217,
-      "transfers": 2,
-      "legs": [
-       "BUS:BUS @TRENITALIA",
-       "REGIONAL_RAIL:REG 21904@TRENITALIA",
-       "BUS:D@Azienda Metropolitana Trasporti Catania"
-      ]
-     }
-    ],
-    "elapsed_s": 2.13
+    "elapsed_s": 2.22
    },
    "csa": {
     "status": "OK",
     "best": {
      "dep": "08:07",
-     "arr": "18:25",
-     "transfers": 5,
+     "arr": "13:00",
+     "transfers": 4,
      "legs": [
       "COACH:1 Stazione FS - Palazzi - Macchite@SAIS Autolinee",
       "COACH:Palermo - Enna - Piazza Armerina -@SAIS Autolinee",
       "COACH:Catania-Enna@SAIS Autolinee",
       "COACH:Catania-Enna@SAIS Autolinee",
-      "COACH:Siracusa-Aeroporto-Catania@Interbus",
-      "COACH:Siracusa-Aeroporto-Catania@Interbus"
+      "COACH:Taormina-Giardini F.S.-Fiumefreddo@Etna Trasporti"
      ]
     },
-    "day_departures": 11
+    "day_departures": 4
    }
   },
   {
@@ -4688,7 +4700,7 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.71
+    "elapsed_s": 0.9
    },
    "live_tuned": {
     "status": "OK",
@@ -4765,7 +4777,7 @@
       ]
      }
     ],
-    "elapsed_s": 2.55
+    "elapsed_s": 2.52
    },
    "csa": {
     "status": "NONE"
@@ -4858,7 +4870,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.64
+    "elapsed_s": 1.95
    },
    "live_tuned": {
     "status": "OK",
@@ -4929,7 +4941,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.87
+    "elapsed_s": 1.96
    },
    "csa": {
     "status": "OK",
@@ -4943,7 +4955,7 @@
       "COACH:Palermo - Enna - Piazza Armerina -@SAIS Autolinee"
      ]
     },
-    "day_departures": 11
+    "day_departures": 12
    }
   },
   {
@@ -5054,7 +5066,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.9
+    "elapsed_s": 2.11
    },
    "live_tuned": {
     "status": "OK",
@@ -5125,7 +5137,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.7
+    "elapsed_s": 1.92
    },
    "csa": {
     "status": "OK",
@@ -5139,7 +5151,7 @@
       "COACH:Palermo - Enna - Piazza Armerina -@SAIS Autolinee"
      ]
     },
-    "day_departures": 10
+    "day_departures": 11
    }
   },
   {
@@ -5229,7 +5241,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.71
+    "elapsed_s": 1.9
    },
    "live_tuned": {
     "status": "OK",
@@ -5303,7 +5315,7 @@
       ]
      }
     ],
-    "elapsed_s": 2.27
+    "elapsed_s": 1.86
    },
    "csa": {
     "status": "OK",
@@ -5427,7 +5439,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.85
+    "elapsed_s": 1.74
    },
    "live_tuned": {
     "status": "OK",
@@ -5498,7 +5510,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.75
+    "elapsed_s": 1.91
    },
    "csa": {
     "status": "OK",
@@ -5606,7 +5618,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.77
+    "elapsed_s": 2.42
    },
    "live_tuned": {
     "status": "OK",
@@ -5683,7 +5695,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.92
+    "elapsed_s": 1.87
    },
    "csa": {
     "status": "NONE"
@@ -5782,7 +5794,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.93
+    "elapsed_s": 1.79
    },
    "live_tuned": {
     "status": "OK",
@@ -5871,20 +5883,10 @@
       ]
      }
     ],
-    "elapsed_s": 2.02
+    "elapsed_s": 1.92
    },
    "csa": {
-    "status": "OK",
-    "best": {
-     "dep": "09:00",
-     "arr": "12:25",
-     "transfers": 1,
-     "legs": [
-      "COACH:MODICA - Catania@Azienda Siciliana Trasporti",
-      "COACH:Siracusa-Aeroporto-Catania@Interbus"
-     ]
-    },
-    "day_departures": 6
+    "status": "NONE"
    }
   },
   {
@@ -5980,7 +5982,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.74
+    "elapsed_s": 1.71
    },
    "live_tuned": {
     "status": "OK",
@@ -6063,20 +6065,10 @@
       ]
      }
     ],
-    "elapsed_s": 1.97
+    "elapsed_s": 1.91
    },
    "csa": {
-    "status": "OK",
-    "best": {
-     "dep": "09:00",
-     "arr": "12:25",
-     "transfers": 1,
-     "legs": [
-      "COACH:MODICA - Catania@Azienda Siciliana Trasporti",
-      "COACH:Siracusa-Aeroporto-Catania@Interbus"
-     ]
-    },
-    "day_departures": 6
+    "status": "NONE"
    }
   },
   {
@@ -6169,7 +6161,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.81
+    "elapsed_s": 1.84
    },
    "live_tuned": {
     "status": "OK",
@@ -6249,21 +6241,10 @@
       ]
      }
     ],
-    "elapsed_s": 2.0
+    "elapsed_s": 1.91
    },
    "csa": {
-    "status": "OK",
-    "best": {
-     "dep": "12:25",
-     "arr": "18:25",
-     "transfers": 2,
-     "legs": [
-      "COACH:Palermo - Enna - Piazza Armerina -@SAIS Autolinee",
-      "COACH:MODICA - CATANIA@Azienda Siciliana Trasporti",
-      "COACH:Siracusa-Aeroporto-Catania@Interbus"
-     ]
-    },
-    "day_departures": 3
+    "status": "NONE"
    }
   },
   {
@@ -6353,7 +6334,7 @@
       ]
      }
     ],
-    "elapsed_s": 2.03
+    "elapsed_s": 2.04
    },
    "live_tuned": {
     "status": "OK",
@@ -6433,21 +6414,10 @@
       ]
      }
     ],
-    "elapsed_s": 2.08
+    "elapsed_s": 2.06
    },
    "csa": {
-    "status": "OK",
-    "best": {
-     "dep": "12:25",
-     "arr": "18:25",
-     "transfers": 2,
-     "legs": [
-      "COACH:Palermo - Enna - Piazza Armerina -@SAIS Autolinee",
-      "COACH:MODICA - CATANIA@Azienda Siciliana Trasporti",
-      "COACH:Siracusa-Aeroporto-Catania@Interbus"
-     ]
-    },
-    "day_departures": 3
+    "status": "NONE"
    }
   },
   {
@@ -6459,7 +6429,7 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 5.45
+    "elapsed_s": 5.01
    },
    "live_tuned": {
     "status": "OK",
@@ -6541,20 +6511,10 @@
       ]
      }
     ],
-    "elapsed_s": 2.56
+    "elapsed_s": 2.02
    },
    "csa": {
-    "status": "OK",
-    "best": {
-     "dep": "09:00",
-     "arr": "12:25",
-     "transfers": 1,
-     "legs": [
-      "COACH:MODICA - Catania@Azienda Siciliana Trasporti",
-      "COACH:Siracusa-Aeroporto-Catania@Interbus"
-     ]
-    },
-    "day_departures": 6
+    "status": "NONE"
    }
   },
   {
@@ -6566,12 +6526,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.61
+    "elapsed_s": 0.58
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.82
+    "elapsed_s": 0.81
    },
    "csa": {
     "status": "OK",
@@ -6595,12 +6555,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.61
+    "elapsed_s": 0.6
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.84
+    "elapsed_s": 0.88
    },
    "csa": {
     "status": "OK",
@@ -6624,12 +6584,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.54
+    "elapsed_s": 0.63
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.98
+    "elapsed_s": 2.02
    },
    "csa": {
     "status": "OK",
@@ -6653,12 +6613,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.59
+    "elapsed_s": 0.53
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.88
+    "elapsed_s": 0.79
    },
    "csa": {
     "status": "OK",
@@ -6687,7 +6647,7 @@
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.89
+    "elapsed_s": 0.87
    },
    "csa": {
     "status": "OK",
@@ -6711,12 +6671,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.94
+    "elapsed_s": 1.15
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.97
+    "elapsed_s": 0.9
    },
    "csa": {
     "status": "OK",
@@ -6743,12 +6703,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.92
+    "elapsed_s": 0.81
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.93
+    "elapsed_s": 0.78
    },
    "csa": {
     "status": "OK",
@@ -6775,12 +6735,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.99
+    "elapsed_s": 0.83
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.93
+    "elapsed_s": 0.8
    },
    "csa": {
     "status": "NONE"
@@ -6795,12 +6755,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.92
+    "elapsed_s": 1.12
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.87
+    "elapsed_s": 0.73
    },
    "csa": {
     "status": "NONE"
@@ -6815,12 +6775,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 1.02
+    "elapsed_s": 0.81
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 1.01
+    "elapsed_s": 0.7
    },
    "csa": {
     "status": "OK",
@@ -6847,7 +6807,7 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.91
+    "elapsed_s": 0.83
    },
    "live_tuned": {
     "status": "OK",
@@ -6918,7 +6878,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.94
+    "elapsed_s": 1.86
    },
    "csa": {
     "status": "OK",
@@ -6942,7 +6902,7 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.78
+    "elapsed_s": 0.84
    },
    "live_tuned": {
     "status": "OK",
@@ -7013,7 +6973,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.76
+    "elapsed_s": 1.89
    },
    "csa": {
     "status": "OK",
@@ -7037,7 +6997,7 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.71
+    "elapsed_s": 0.7
    },
    "live_tuned": {
     "status": "OK",
@@ -7108,7 +7068,7 @@
       ]
      }
     ],
-    "elapsed_s": 2.1
+    "elapsed_s": 1.79
    },
    "csa": {
     "status": "OK",
@@ -7203,7 +7163,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.84
+    "elapsed_s": 1.82
    },
    "csa": {
     "status": "OK",
@@ -7227,7 +7187,7 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.78
+    "elapsed_s": 0.83
    },
    "live_tuned": {
     "status": "OK",
@@ -7298,7 +7258,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.75
+    "elapsed_s": 1.85
    },
    "csa": {
     "status": "NONE"
@@ -7313,12 +7273,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.81
+    "elapsed_s": 0.78
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.84
+    "elapsed_s": 0.83
    },
    "csa": {
     "status": "OK",
@@ -7345,12 +7305,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.69
+    "elapsed_s": 0.74
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.78
+    "elapsed_s": 1.12
    },
    "csa": {
     "status": "OK",
@@ -7375,21 +7335,22 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.8
+    "elapsed_s": 0.72
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.8
+    "elapsed_s": 0.95
    },
    "csa": {
     "status": "OK",
     "best": {
      "dep": "11:15",
      "arr": "14:55",
-     "transfers": 1,
+     "transfers": 2,
      "legs": [
       "COACH:Catania-Enna@SAIS Autolinee",
+      "COACH:Taormina-Giardini F.S.-Fiumefreddo@Etna Trasporti",
       "COACH:Catania - Porto Empedocle (SAIS Tr@SAIS Trasporti"
      ]
     },
@@ -7405,24 +7366,23 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.9
+    "elapsed_s": 1.01
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.8
+    "elapsed_s": 0.94
    },
    "csa": {
     "status": "OK",
     "best": {
      "dep": "08:03",
      "arr": "23:35",
-     "transfers": 4,
+     "transfers": 3,
      "legs": [
       "COACH:4 Pisciotto - Piazza Garibaldi - P@SAIS Autolinee",
       "COACH:Catania-Enna@SAIS Autolinee",
-      "COACH:Siracusa-Aeroporto-Catania@Interbus",
-      "COACH:Portopalo di Capopassero - Pachino@Interbus",
+      "COACH:Taormina-Giardini F.S.-Fiumefreddo@Etna Trasporti",
       "COACH:Catania - Porto Empedocle (SAIS Tr@SAIS Trasporti"
      ]
     },
@@ -7438,12 +7398,12 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 1.0
+    "elapsed_s": 0.82
    },
    "live_tuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.75
+    "elapsed_s": 0.84
    },
    "csa": {
     "status": "NONE"
@@ -7458,7 +7418,7 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.74
+    "elapsed_s": 0.92
    },
    "live_tuned": {
     "status": "OK",
@@ -7546,7 +7506,7 @@
       ]
      }
     ],
-    "elapsed_s": 2.1
+    "elapsed_s": 2.61
    },
    "csa": {
     "status": "OK",
@@ -7572,7 +7532,7 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.84
+    "elapsed_s": 0.91
    },
    "live_tuned": {
     "status": "OK",
@@ -7669,7 +7629,7 @@
       ]
      }
     ],
-    "elapsed_s": 2.01
+    "elapsed_s": 1.96
    },
    "csa": {
     "status": "OK",
@@ -7695,7 +7655,7 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.83
+    "elapsed_s": 0.74
    },
    "live_tuned": {
     "status": "OK",
@@ -7793,7 +7753,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.88
+    "elapsed_s": 2.3
    },
    "csa": {
     "status": "OK",
@@ -7821,7 +7781,7 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.9
+    "elapsed_s": 0.81
    },
    "live_tuned": {
     "status": "OK",
@@ -7919,7 +7879,7 @@
       ]
      }
     ],
-    "elapsed_s": 2.26
+    "elapsed_s": 2.47
    },
    "csa": {
     "status": "NONE"
@@ -7934,7 +7894,7 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.88
+    "elapsed_s": 0.81
    },
    "live_tuned": {
     "status": "OK",
@@ -8022,7 +7982,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.72
+    "elapsed_s": 1.76
    },
    "csa": {
     "status": "NONE"
@@ -8037,7 +7997,7 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.78
+    "elapsed_s": 0.72
    },
    "live_tuned": {
     "status": "OK",
@@ -8252,10 +8212,20 @@
       ]
      }
     ],
-    "elapsed_s": 2.51
+    "elapsed_s": 2.48
    },
    "csa": {
-    "status": "NONE"
+    "status": "OK",
+    "best": {
+     "dep": "08:00",
+     "arr": "11:15",
+     "transfers": 1,
+     "legs": [
+      "COACH:Militello - Scordia - Catania - Ta@Interbus",
+      "COACH:Militello - Scordia - Catania - Ta@Interbus"
+     ]
+    },
+    "day_departures": 3
    }
   },
   {
@@ -8267,7 +8237,7 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.83
+    "elapsed_s": 0.73
    },
    "live_tuned": {
     "status": "OK",
@@ -8425,10 +8395,20 @@
       ]
      }
     ],
-    "elapsed_s": 2.27
+    "elapsed_s": 2.42
    },
    "csa": {
-    "status": "NONE"
+    "status": "OK",
+    "best": {
+     "dep": "08:00",
+     "arr": "11:15",
+     "transfers": 1,
+     "legs": [
+      "COACH:Militello - Scordia - Catania - Ta@Interbus",
+      "COACH:Militello - Scordia - Catania - Ta@Interbus"
+     ]
+    },
+    "day_departures": 3
    }
   },
   {
@@ -8440,7 +8420,7 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.9
+    "elapsed_s": 0.8
    },
    "live_tuned": {
     "status": "OK",
@@ -8569,7 +8549,7 @@
       ]
      }
     ],
-    "elapsed_s": 2.2
+    "elapsed_s": 2.93
    },
    "csa": {
     "status": "NONE"
@@ -8584,7 +8564,7 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 0.84
+    "elapsed_s": 0.8
    },
    "live_tuned": {
     "status": "OK",
@@ -8713,7 +8693,7 @@
       ]
      }
     ],
-    "elapsed_s": 2.34
+    "elapsed_s": 2.39
    },
    "csa": {
     "status": "NONE"
@@ -8728,7 +8708,7 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 1.05
+    "elapsed_s": 0.82
    },
    "live_tuned": {
     "status": "OK",
@@ -8852,10 +8832,20 @@
       ]
      }
     ],
-    "elapsed_s": 2.2
+    "elapsed_s": 2.18
    },
    "csa": {
-    "status": "NONE"
+    "status": "OK",
+    "best": {
+     "dep": "08:00",
+     "arr": "11:15",
+     "transfers": 1,
+     "legs": [
+      "COACH:Militello - Scordia - Catania - Ta@Interbus",
+      "COACH:Militello - Scordia - Catania - Ta@Interbus"
+     ]
+    },
+    "day_departures": 7
    }
   },
   {
@@ -8939,7 +8929,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.61
+    "elapsed_s": 1.6
    },
    "live_tuned": {
     "status": "OK",
@@ -9088,7 +9078,7 @@
       ]
      }
     ],
-    "elapsed_s": 2.09
+    "elapsed_s": 2.88
    },
    "csa": {
     "status": "OK",
@@ -9101,7 +9091,7 @@
       "COACH:Catania - Porto Empedocle (SAIS Tr@SAIS Trasporti"
      ]
     },
-    "day_departures": 16
+    "day_departures": 15
    }
   },
   {
@@ -9185,7 +9175,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.75
+    "elapsed_s": 1.62
    },
    "live_tuned": {
     "status": "OK",
@@ -9334,7 +9324,7 @@
       ]
      }
     ],
-    "elapsed_s": 2.81
+    "elapsed_s": 2.15
    },
    "csa": {
     "status": "OK",
@@ -9346,7 +9336,7 @@
       "COACH:Messina - Catania@SAIS Autolinee"
      ]
     },
-    "day_departures": 13
+    "day_departures": 12
    }
   },
   {
@@ -9430,7 +9420,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.64
+    "elapsed_s": 1.85
    },
    "live_tuned": {
     "status": "OK",
@@ -9561,20 +9551,10 @@
       ]
      }
     ],
-    "elapsed_s": 1.99
+    "elapsed_s": 2.14
    },
    "csa": {
-    "status": "OK",
-    "best": {
-     "dep": "08:30",
-     "arr": "11:55",
-     "transfers": 1,
-     "legs": [
-      "COACH:Messina - Catania@SAIS Autolinee",
-      "COACH:Catania - Porto Empedocle (SAIS Tr@SAIS Trasporti"
-     ]
-    },
-    "day_departures": 15
+    "status": "NONE"
    }
   },
   {
@@ -9658,7 +9638,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.67
+    "elapsed_s": 1.8
    },
    "live_tuned": {
     "status": "OK",
@@ -9789,21 +9769,10 @@
       ]
      }
     ],
-    "elapsed_s": 2.68
+    "elapsed_s": 2.16
    },
    "csa": {
-    "status": "OK",
-    "best": {
-     "dep": "08:30",
-     "arr": "18:25",
-     "transfers": 2,
-     "legs": [
-      "COACH:Messina - Catania@SAIS Autolinee",
-      "COACH:Siracusa-Aeroporto-Catania@Interbus",
-      "COACH:Siracusa-Aeroporto-Catania@Interbus"
-     ]
-    },
-    "day_departures": 15
+    "status": "NONE"
    }
   },
   {
@@ -9815,7 +9784,7 @@
    "live_untuned": {
     "status": "NONE",
     "n": 0,
-    "elapsed_s": 4.78
+    "elapsed_s": 5.06
    },
    "live_tuned": {
     "status": "OK",
@@ -9903,23 +9872,21 @@
       ]
      }
     ],
-    "elapsed_s": 2.01
+    "elapsed_s": 2.23
    },
    "csa": {
     "status": "OK",
     "best": {
-     "dep": "09:15",
-     "arr": "17:15",
-     "transfers": 4,
+     "dep": "11:40",
+     "arr": "14:50",
+     "transfers": 2,
      "legs": [
-      "COACH:MILAZZO PORTO - MESSINA@Giuntabustrasporti",
       "COACH:Floresta-Randazzo-Linguaglossa-Gia@Interbus",
-      "COACH:0 RIPOSTO - TAORMINA 0@Buda",
-      "COACH:0 RIPOSTO - TAORMINA 0@Buda",
-      "COACH:Enna - Leonforte - Regalbuto - Cat@Interbus"
+      "COACH:Graniti - Taormina@Interbus",
+      "COACH:Taormina-Giardini F.S.-Fiumefreddo@Etna Trasporti"
      ]
     },
-    "day_departures": 5
+    "day_departures": 2
    }
   },
   {
@@ -9996,7 +9963,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.63
+    "elapsed_s": 1.64
    },
    "live_tuned": {
     "status": "OK",
@@ -10165,7 +10132,7 @@
       ]
      }
     ],
-    "elapsed_s": 2.24
+    "elapsed_s": 2.47
    },
    "csa": {
     "status": "OK",
@@ -10179,7 +10146,7 @@
       "COACH:Palermo - Gangi (SAIS Trasporti 90@SAIS Trasporti"
      ]
     },
-    "day_departures": 2
+    "day_departures": 3
    }
   },
   {
@@ -10256,7 +10223,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.54
+    "elapsed_s": 1.74
    },
    "live_tuned": {
     "status": "OK",
@@ -10439,7 +10406,7 @@
       "COACH:Palermo - Gangi (SAIS Trasporti 90@SAIS Trasporti"
      ]
     },
-    "day_departures": 2
+    "day_departures": 3
    }
   },
   {
@@ -10516,7 +10483,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.58
+    "elapsed_s": 1.67
    },
    "live_tuned": {
     "status": "OK",
@@ -10668,7 +10635,7 @@
       ]
      }
     ],
-    "elapsed_s": 2.16
+    "elapsed_s": 2.07
    },
    "csa": {
     "status": "NONE"
@@ -10748,7 +10715,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.73
+    "elapsed_s": 1.56
    },
    "live_tuned": {
     "status": "OK",
@@ -10900,7 +10867,7 @@
       ]
      }
     ],
-    "elapsed_s": 2.14
+    "elapsed_s": 2.04
    },
    "csa": {
     "status": "NONE"
@@ -10980,7 +10947,7 @@
       ]
      }
     ],
-    "elapsed_s": 1.65
+    "elapsed_s": 1.91
    },
    "live_tuned": {
     "status": "OK",
@@ -11140,7 +11107,7 @@
       ]
      }
     ],
-    "elapsed_s": 2.02
+    "elapsed_s": 2.05
    },
    "csa": {
     "status": "NONE"

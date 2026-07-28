@@ -58,6 +58,12 @@ SPELLFIX = {
 def geocode_name(name):
     for bad, good in SPELLFIX.items():
         name = re.sub(bad, good, name, flags=re.I)
+    # RG-province AST sheets decorate termini: 'MODICA (p.za Borsellino)- Capolinea',
+    # '0 MODICA (ZONA 167) CAPOLINEA\FERMATA'. Nominatim chokes on the suffix and
+    # the miss was cached, silently dropping the terminus from every trip
+    # (matrix regression: Modica→Catania NONE despite 44 emitted trips).
+    name = re.sub(r'\s*-?\s*Capolinea(\\Fermata)?( di (Partenza|Arrivo))?\s*$', '', name, flags=re.I)
+    name = re.sub(r'^\s*\d{1,2}\s+(?=\S)', '', name)
     key = re.sub(r'\s+', ' ', name.upper().strip())
     if key in overrides:
         o = overrides[key]
