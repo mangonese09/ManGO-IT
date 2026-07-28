@@ -12,7 +12,7 @@ const ROOT = path.join(__dirname, '..');
 
 const TRANSITOUS = 'https://api.transitous.org';
 const VT = 'http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno';
-const UA = 'ManGO-IT/0.15.0 (+https://it.mangonese.dev; miconsig@gmail.com)';
+const UA = 'ManGO-IT/0.16.0 (+https://it.mangonese.dev; miconsig@gmail.com)';
 
 // per-day upstream request counter (Transitous asks consumers to know their volume)
 const dayCounts = {};
@@ -584,6 +584,26 @@ function slimItinerary(it) {
     transfers: it.transfers, legs: (it.legs || []).map(slimLeg),
   };
 }
+
+// Drop strictly-dominated itineraries (audit 2026-07-28). MOTIS timetableView
+// returns departure-ordered, so a 10 h rail milk-run can sit ABOVE a 3 h coach
+// leaving at nearly the same time (Catania→Ragusa, Palermo→Enna). A traveller
+// wants to leave no earlier and arrive no later: itinerary B dominates A when it
+// departs >= A and arrives <= A with at least one strict — then A is pure waste.
+// Ties (same start+end) are both kept; the caller sorts for display.
+function dropDominated(its) {
+  const t = (x) => [new Date(x.startTime).getTime(), new Date(x.endTime).getTime()];
+  return its.filter((a, i) => {
+    const [as, ae] = t(a);
+    if (!isFinite(as) || !isFinite(ae)) return true;
+    return !its.some((b, j) => {
+      if (i === j) return false;
+      const [bs, be] = t(b);
+      if (!isFinite(bs) || !isFinite(be)) return false;
+      return bs >= as && be <= ae && (bs > as || be < ae);
+    });
+  });
+}
 function inSicily(lat, lon) {
   return lat >= SICILY.latMin && lat <= SICILY.latMax && lon >= SICILY.lonMin && lon <= SICILY.lonMax;
 }
@@ -617,7 +637,7 @@ function slimVtDeparture(d) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.15.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.16.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)
@@ -692,11 +712,15 @@ const routes = {
     const params = new URLSearchParams({ fromPlace, toPlace });
     if (q.get('time')) params.set('time', q.get('time'));
     if (q.get('arriveBy') === 'true') params.set('arriveBy', 'true');
-    params.set('numItineraries', q.get('n') || '6');
     // Whole-day view (Ship 3, R-24): the client raises maxItineraries and a
     // wide searchWindow; Earlier/Later pills page the edges via pageCursor.
     const maxIt = Number(q.get('maxItineraries'));
-    if (Number.isInteger(maxIt) && maxIt > 0 && maxIt <= 60) params.set('maxItineraries', String(maxIt));
+    const hasMax = Number.isInteger(maxIt) && maxIt > 0 && maxIt <= 60;
+    if (hasMax) params.set('maxItineraries', String(maxIt));
+    // numItineraries is a MINIMUM; MOTIS 400s when it exceeds maxItineraries.
+    let numIt = Number(q.get('n')) || 6;
+    if (hasMax) numIt = Math.min(numIt, maxIt);
+    params.set('numItineraries', String(numIt));
     // MOTIS: "keep the original request as is" and add the cursor; URLSearchParams
     // encodes the load-bearing pipe (a raw pipe is HTTP 400, §5.4).
     const cursor = q.get('pageCursor');
@@ -721,7 +745,7 @@ const routes = {
     const { data } = await upstream(`${TRANSITOUS}/api/v3/plan?${params}`, { timeoutMs: 18000 });
     const out = {
       fetchedAt: Date.now(),
-      itineraries: (data.itineraries || []).map(slimItinerary),
+      itineraries: dropDominated((data.itineraries || []).map(slimItinerary)),
       // Ship 3: edge paging for the whole-day view (Earlier ▲ / Later ▼).
       nextPageCursor: data.nextPageCursor || null,
       previousPageCursor: data.previousPageCursor || null,
@@ -995,4 +1019,4 @@ if (require.main === module) {
   server.listen(PORT, () => console.log(`ManGO:IT proxy on :${PORT}${STATIC ? ' (static+api)' : ''}`));
 }
 
-module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon, vtSilence };
+module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon, vtSilence, dropDominated };

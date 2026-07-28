@@ -2,8 +2,28 @@
 const { test } = require('node:test');
 const assert = require('node:assert');
 const {
-  romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, inSicily,
+  romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, inSicily, dropDominated,
 } = require('../../server/proxy.js');
+
+test('dropDominated removes strictly-worse itineraries (audit fix)', () => {
+  const it = (start, end) => ({ startTime: `2026-08-05T${start}:00Z`, endTime: `2026-08-05T${end}:00Z` });
+  // the milk-run 16:00→20:00 is dominated by BOTH later options; the other two
+  // trade off (16:05 arrives earlier, 17:00 leaves later) so both survive.
+  const kept = dropDominated([
+    it('16:00', '20:00'),   // dominated — dropped
+    it('16:05', '19:44'),   // earlier arrival — survives
+    it('17:00', '19:50'),   // later departure, slightly later arrival — survives
+  ]);
+  const times = kept.map((x) => x.startTime.slice(11, 16)).sort();
+  assert.deepStrictEqual(times, ['16:05', '17:00'], 'drops only the strictly-dominated milk-run');
+});
+
+test('dropDominated keeps ties and Pareto-incomparable options', () => {
+  const it = (start, end) => ({ startTime: `2026-08-05T${start}:00Z`, endTime: `2026-08-05T${end}:00Z` });
+  assert.strictEqual(dropDominated([it('08:00', '10:00'), it('08:00', '10:00')]).length, 2); // identical: both kept
+  assert.strictEqual(dropDominated([it('08:00', '10:30'), it('09:00', '11:00')]).length, 2); // trade-off: both kept
+  assert.strictEqual(dropDominated([it('08:00', '11:00'), it('09:00', '11:00')]).length, 1); // same arr, later dep wins
+});
 
 test('romeNowString formats a Rome-timezone RFC1123-ish string', () => {
   // Fixed instant: 2026-07-25T14:16:02Z == 16:16:02 CEST

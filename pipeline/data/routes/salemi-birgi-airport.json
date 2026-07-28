@@ -1,0 +1,648 @@
+{
+ "operator": "Autoservizi Salemi",
+ "route_id": "salemi-birgi-airport",
+ "name": "MARSALA - TRAPANI BIRGI AEROPORTO - PALERMO AEROPORTO - PALERMO",
+ "source": "autoservizisalemi.it official PDFs AEROPORTO_TRAPANI_{Andata,Ritorno}.pdf, in vigore dal 06/07/2026 (parsed via pdfplumber). Clean-calendar cols only (mon-fri/mon-sat/sun); irregular single-day cols omitted.",
+ "prescriptions": [
+  "NON si effettua il servizio dall’aeroporto di Punta Raisi a Palermo città e viceversa"
+ ],
+ "directions": [
+  {
+   "stops": [
+    "MARSALA (Via A. Fazio - Stazione FS)",
+    "AEROPORTO TRAPANI BIRGI (Area Bus)",
+    "AEROPORTO PALERMO (Falcone Borsellino)",
+    "PALERMO (Via Fazello - Terminal Bus)"
+   ],
+   "trips": [
+    {
+     "corsa": "a1",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "Salemi orari in vigore dal 06/07/2026"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MARSALA (Via A. Fazio - Stazione FS)",
+       "idx": 0,
+       "arr": "5.45",
+       "dep": "5.45"
+      },
+      {
+       "stop": "AEROPORTO TRAPANI BIRGI (Area Bus)",
+       "idx": 1,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "AEROPORTO PALERMO (Falcone Borsellino)",
+       "idx": 2,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "PALERMO (Via Fazello - Terminal Bus)",
+       "idx": 3,
+       "arr": "8.10",
+       "dep": "8.10"
+      }
+     ]
+    },
+    {
+     "corsa": "a2",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "Salemi orari in vigore dal 06/07/2026"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MARSALA (Via A. Fazio - Stazione FS)",
+       "idx": 0,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "AEROPORTO TRAPANI BIRGI (Area Bus)",
+       "idx": 1,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "AEROPORTO PALERMO (Falcone Borsellino)",
+       "idx": 2,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "PALERMO (Via Fazello - Terminal Bus)",
+       "idx": 3,
+       "arr": "9.10",
+       "dep": "9.10"
+      }
+     ]
+    },
+    {
+     "corsa": "a3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Salemi orari in vigore dal 06/07/2026"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MARSALA (Via A. Fazio - Stazione FS)",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "AEROPORTO TRAPANI BIRGI (Area Bus)",
+       "idx": 1,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "AEROPORTO PALERMO (Falcone Borsellino)",
+       "idx": 2,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "PALERMO (Via Fazello - Terminal Bus)",
+       "idx": 3,
+       "arr": "16.25",
+       "dep": "16.25"
+      }
+     ]
+    },
+    {
+     "corsa": "a4",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "Salemi orari in vigore dal 06/07/2026"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MARSALA (Via A. Fazio - Stazione FS)",
+       "idx": 0,
+       "arr": "9.00",
+       "dep": "9.00"
+      },
+      {
+       "stop": "AEROPORTO TRAPANI BIRGI (Area Bus)",
+       "idx": 1,
+       "arr": "9.30",
+       "dep": "9.30"
+      },
+      {
+       "stop": "AEROPORTO PALERMO (Falcone Borsellino)",
+       "idx": 2,
+       "arr": "10.40",
+       "dep": "10.40"
+      },
+      {
+       "stop": "PALERMO (Via Fazello - Terminal Bus)",
+       "idx": 3,
+       "arr": "11.25",
+       "dep": "11.25"
+      }
+     ]
+    },
+    {
+     "corsa": "a5",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "Salemi orari in vigore dal 06/07/2026"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MARSALA (Via A. Fazio - Stazione FS)",
+       "idx": 0,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "AEROPORTO TRAPANI BIRGI (Area Bus)",
+       "idx": 1,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "AEROPORTO PALERMO (Falcone Borsellino)",
+       "idx": 2,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "PALERMO (Via Fazello - Terminal Bus)",
+       "idx": 3,
+       "arr": "12.55",
+       "dep": "12.55"
+      }
+     ]
+    },
+    {
+     "corsa": "a6",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "Salemi orari in vigore dal 06/07/2026"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MARSALA (Via A. Fazio - Stazione FS)",
+       "idx": 0,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "AEROPORTO TRAPANI BIRGI (Area Bus)",
+       "idx": 1,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "AEROPORTO PALERMO (Falcone Borsellino)",
+       "idx": 2,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "PALERMO (Via Fazello - Terminal Bus)",
+       "idx": 3,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ]
+    },
+    {
+     "corsa": "a7",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "Salemi orari in vigore dal 06/07/2026"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MARSALA (Via A. Fazio - Stazione FS)",
+       "idx": 0,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "AEROPORTO TRAPANI BIRGI (Area Bus)",
+       "idx": 1,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "AEROPORTO PALERMO (Falcone Borsellino)",
+       "idx": 2,
+       "arr": "19.10",
+       "dep": "19.10"
+      },
+      {
+       "stop": "PALERMO (Via Fazello - Terminal Bus)",
+       "idx": 3,
+       "arr": "19.55",
+       "dep": "19.55"
+      }
+     ]
+    },
+    {
+     "corsa": "a8",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "Salemi orari in vigore dal 06/07/2026"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MARSALA (Via A. Fazio - Stazione FS)",
+       "idx": 0,
+       "arr": "21.00",
+       "dep": "21.00"
+      },
+      {
+       "stop": "AEROPORTO TRAPANI BIRGI (Area Bus)",
+       "idx": 1,
+       "arr": "21.30",
+       "dep": "21.30"
+      },
+      {
+       "stop": "AEROPORTO PALERMO (Falcone Borsellino)",
+       "idx": 2,
+       "arr": "22.40",
+       "dep": "22.40"
+      },
+      {
+       "stop": "PALERMO (Via Fazello - Terminal Bus)",
+       "idx": 3,
+       "arr": "23.25",
+       "dep": "23.25"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "PALERMO (Via Fazello - Terminal Bus)",
+    "AEROPORTO PALERMO (Falcone Borsellino)",
+    "AEROPORTO TRAPANI BIRGI (Area Bus)",
+    "MARSALA (Via A. Fazio - Stazione FS)"
+   ],
+   "trips": [
+    {
+     "corsa": "r1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Salemi orari in vigore dal 06/07/2026"
+     },
+     "reverse": true,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Via Fazello - Terminal Bus)",
+       "idx": 0,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "AEROPORTO TRAPANI BIRGI (Area Bus)",
+       "idx": 1,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "MARSALA (Via A. Fazio - Stazione FS)",
+       "idx": 2,
+       "arr": "8.30",
+       "dep": "8.30"
+      }
+     ]
+    },
+    {
+     "corsa": "r2",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "Salemi orari in vigore dal 06/07/2026"
+     },
+     "reverse": true,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Via Fazello - Terminal Bus)",
+       "idx": 0,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "AEROPORTO PALERMO (Falcone Borsellino)",
+       "idx": 1,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "AEROPORTO TRAPANI BIRGI (Area Bus)",
+       "idx": 2,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "MARSALA (Via A. Fazio - Stazione FS)",
+       "idx": 3,
+       "arr": "16.55",
+       "dep": "16.55"
+      }
+     ]
+    },
+    {
+     "corsa": "r3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Salemi orari in vigore dal 06/07/2026"
+     },
+     "reverse": true,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Via Fazello - Terminal Bus)",
+       "idx": 0,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "AEROPORTO PALERMO (Falcone Borsellino)",
+       "idx": 1,
+       "arr": "17.15",
+       "dep": "17.15"
+      },
+      {
+       "stop": "AEROPORTO TRAPANI BIRGI (Area Bus)",
+       "idx": 2,
+       "arr": "18.15",
+       "dep": "18.15"
+      },
+      {
+       "stop": "MARSALA (Via A. Fazio - Stazione FS)",
+       "idx": 3,
+       "arr": "18.55",
+       "dep": "18.55"
+      }
+     ]
+    },
+    {
+     "corsa": "r4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Salemi orari in vigore dal 06/07/2026"
+     },
+     "reverse": true,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Via Fazello - Terminal Bus)",
+       "idx": 0,
+       "arr": "18.30",
+       "dep": "18.30"
+      },
+      {
+       "stop": "AEROPORTO PALERMO (Falcone Borsellino)",
+       "idx": 1,
+       "arr": "19.15",
+       "dep": "19.15"
+      },
+      {
+       "stop": "AEROPORTO TRAPANI BIRGI (Area Bus)",
+       "idx": 2,
+       "arr": "20.15",
+       "dep": "20.15"
+      },
+      {
+       "stop": "MARSALA (Via A. Fazio - Stazione FS)",
+       "idx": 3,
+       "arr": "20.55",
+       "dep": "20.55"
+      }
+     ]
+    },
+    {
+     "corsa": "r5",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "Salemi orari in vigore dal 06/07/2026"
+     },
+     "reverse": true,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Via Fazello - Terminal Bus)",
+       "idx": 0,
+       "arr": "3.30",
+       "dep": "3.30"
+      },
+      {
+       "stop": "AEROPORTO PALERMO (Falcone Borsellino)",
+       "idx": 1,
+       "arr": "4.05",
+       "dep": "4.05"
+      },
+      {
+       "stop": "AEROPORTO TRAPANI BIRGI (Area Bus)",
+       "idx": 2,
+       "arr": "5.15",
+       "dep": "5.15"
+      },
+      {
+       "stop": "MARSALA (Via A. Fazio - Stazione FS)",
+       "idx": 3,
+       "arr": "5.55",
+       "dep": "5.55"
+      }
+     ]
+    },
+    {
+     "corsa": "r6",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "Salemi orari in vigore dal 06/07/2026"
+     },
+     "reverse": true,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Via Fazello - Terminal Bus)",
+       "idx": 0,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "AEROPORTO TRAPANI BIRGI (Area Bus)",
+       "idx": 1,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "MARSALA (Via A. Fazio - Stazione FS)",
+       "idx": 2,
+       "arr": "8.30",
+       "dep": "8.30"
+      }
+     ]
+    },
+    {
+     "corsa": "r7",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "Salemi orari in vigore dal 06/07/2026"
+     },
+     "reverse": true,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Via Fazello - Terminal Bus)",
+       "idx": 0,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "AEROPORTO PALERMO (Falcone Borsellino)",
+       "idx": 1,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "AEROPORTO TRAPANI BIRGI (Area Bus)",
+       "idx": 2,
+       "arr": "10.15",
+       "dep": "10.15"
+      },
+      {
+       "stop": "MARSALA (Via A. Fazio - Stazione FS)",
+       "idx": 3,
+       "arr": "10.55",
+       "dep": "10.55"
+      }
+     ]
+    },
+    {
+     "corsa": "r8",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "Salemi orari in vigore dal 06/07/2026"
+     },
+     "reverse": true,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Via Fazello - Terminal Bus)",
+       "idx": 0,
+       "arr": "12.15",
+       "dep": "12.15"
+      },
+      {
+       "stop": "AEROPORTO PALERMO (Falcone Borsellino)",
+       "idx": 1,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "AEROPORTO TRAPANI BIRGI (Area Bus)",
+       "idx": 2,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "MARSALA (Via A. Fazio - Stazione FS)",
+       "idx": 3,
+       "arr": "14.40",
+       "dep": "14.40"
+      }
+     ]
+    },
+    {
+     "corsa": "r9",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "Salemi orari in vigore dal 06/07/2026"
+     },
+     "reverse": true,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Via Fazello - Terminal Bus)",
+       "idx": 0,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "AEROPORTO PALERMO (Falcone Borsellino)",
+       "idx": 1,
+       "arr": "17.15",
+       "dep": "17.15"
+      },
+      {
+       "stop": "AEROPORTO TRAPANI BIRGI (Area Bus)",
+       "idx": 2,
+       "arr": "18.15",
+       "dep": "18.15"
+      },
+      {
+       "stop": "MARSALA (Via A. Fazio - Stazione FS)",
+       "idx": 3,
+       "arr": "18.55",
+       "dep": "18.55"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
