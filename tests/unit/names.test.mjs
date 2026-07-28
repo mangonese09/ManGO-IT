@@ -22,6 +22,9 @@ const cases = [
   ['BV. IAZZOTTO', 'Bv. Iazzotto'],
   ['(PIAZZA MARINA)', '(Piazza Marina)'],
   ['PALERMO (via P. Balsamo)', 'Palermo (via P. Balsamo)'],
+  // attached parentheticals: the all-caps half is cased, mixed half untouched
+  ['CALTANISSETTA(Via Rochester)', 'Caltanissetta(Via Rochester)'],
+  ['GELA(AUTOSTAZIONE)', 'Gela(Autostazione)'],
   // digit tokens, initials and road sigle keep their caps
   ['S.S.113 KM 90', 'S.S.113 Km 90'],
   ['VIA E. BASILE', 'Via E. Basile'],

@@ -548,6 +548,22 @@ body { font-size: 1rem; }
 /* LH-10: nearby-board location prompt */
 .geo-btn img { width: 16px; height: 16px; object-fit: contain; vertical-align: -3px; }
 
+/* ── v0.9.6 tabs deep-dive ── */
+
+/* QA-19 follow-up: shared css centers empty-states via flex align-items,
+   so short first lines still floated to the middle — left-align fully */
+.empty-state { align-items: flex-start; }
+
+/* Settings attribution: links keep their 44px touch target (padding) but
+   negative margins hand the space back to the line grid — no more ragged
+   leading on link-bearing lines */
+.attribution a, #view-settings a { margin: -8px -2px; }
+.attribution { line-height: 1.55; }
+
+/* pinned departures share the card language of the favorites above */
+.saved-pinned-card { padding: 10px 14px 6px; }
+.saved-pinned-card > .dep-headsign { padding: 2px 0 4px; }
+
 /* v0.9.4: recents delete + suggestion stars */
 .chip-recent-wrap { display: inline-flex; align-items: center; gap: 2px; padding: 0; }
 .chip-recent-go { background: none; border: none; color: inherit; font: inherit; padding: 8px 4px 8px 12px; cursor: pointer; }

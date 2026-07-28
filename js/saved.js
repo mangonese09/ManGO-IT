@@ -65,11 +65,18 @@ async function favSuggest(q) {
 }
 
 
+// route + optional headsign — never a dangling "BUS →" when the feed has no
+// destination for the run
+function routeLabel(route, headsign) {
+  return headsign ? `${route} → ${headsign}` : route;
+}
+
 // ── FULL DAY SCHEDULE ──
 // Tapping a favorite stop opens every remaining + past departure for today:
 // own-feed coach stops get the complete timetable; Transitous stops get the
-// next 40 departures the network knows.
-async function openStopSchedule(s) {
+// next 40 departures the network knows. Exported: the Map tab opens the same
+// sheet for any nearby stop.
+export async function openStopSchedule(s) {
   const body = el('div', { class: 'iti-detail sched-sheet' });
   body.appendChild(el('div', { class: 'loading', text: 'Loading schedule…' }));
   openSheet(body, { title: `Today — ${displayName(s.name)}` });
@@ -81,7 +88,7 @@ async function openStopSchedule(s) {
       rows = (data.stopTimes || []).map((st) => ({
         time: romeTime(st.departure || st.scheduledDeparture),
         mode: st.mode,
-        label: `${st.routeShortName || modeMeta(st.mode).label} → ${displayName(st.headsign) || ''}`,
+        label: routeLabel(st.routeShortName || modeMeta(st.mode).label, displayName(st.headsign)),
         live: st.realTime, cancelled: st.cancelled,
       }));
       note = 'Next departures from the live network.';
@@ -89,7 +96,7 @@ async function openStopSchedule(s) {
       const { data } = await api.coachBoard(s.lat, s.lon, 300, true);
       rows = (data.results || []).map((r) => ({
         time: r.dep, mode: 'COACH',
-        label: `${displayName(r.route)} → ${displayName(r.headsign)}`,
+        label: routeLabel(displayName(r.route), displayName(r.headsign)),
         past: r.depMin < romeNowMin(),
       }));
       note = 'Complete coach timetable for today — scheduled times, no live status.';
@@ -130,8 +137,11 @@ async function favStopCard(s) {
         el('span', { class: 'muted dep-headsign', text: `${s.kind} · tap for today's schedule` }),
       ]),
       el('button', {
-        class: 'pin-btn pinned', text: '★',
-        onclick: async () => {
+        class: 'pin-btn pinned', text: '★', 'aria-label': 'Remove from favorites',
+        onclick: async (e) => {
+          // the ★ lives inside the tappable card head — without this, one tap
+          // opened the remove modal AND the schedule sheet stacked on top
+          e.stopPropagation();
           const ok = await confirmModal(`Remove ${displayName(s.name)} from favorites?`, { confirmText: 'Remove' });
           if (ok) { removeFavStop(s.key); renderSaved(); }
         },
@@ -145,14 +155,14 @@ async function favStopCard(s) {
     if (s.stopId) {
       const { data } = await api.stoptimes(s.stopId, 4);
       deps = (data.stopTimes || []).map((st) => ({
-        label: `${st.routeShortName || modeMeta(st.mode).label} → ${displayName(st.headsign) || ''}`,
+        label: routeLabel(st.routeShortName || modeMeta(st.mode).label, displayName(st.headsign)),
         iconMode: st.mode,
         when: st.departure, live: st.realTime, cancelled: st.cancelled,
       }));
     } else {
       const { data } = await api.coachBoard(s.lat, s.lon);
       deps = (data.results || []).map((r) => ({
-        label: `${displayName(r.route)} → ${displayName(r.headsign)}`, iconMode: 'COACH',
+        label: routeLabel(displayName(r.route), displayName(r.headsign)), iconMode: 'COACH',
         clock: r.dep + (r.day === 'tomorrow' ? ' (tomorrow)' : ''),
       }));
     }
@@ -206,12 +216,18 @@ export async function renderSaved() {
     } catch { /* stale times still render below */ }
   }));
 
+  // pinned rows get the same card surface as the favorite stops above them
+  const pinnedCard = el('div', { class: 'card saved-pinned-card' }, [
+    el('div', { class: 'muted dep-headsign', text: 'Pinned departures' }),
+  ]);
+  holder.appendChild(pinnedCard);
+
   for (const d of items.sort((a, b) => new Date(a.when || 0) - new Date(b.when || 0))) {
     const updated = d.tripId ? fresh.get(`${d.tripId}@${d.stopId}`) : null;
     const when = updated?.departure || d.when;
     const cancelled = updated?.cancelled;
     const m = modeMeta(d.mode);
-    holder.appendChild(el('div', { class: 'dep-row saved-row' }, [
+    pinnedCard.appendChild(el('div', { class: 'dep-row saved-row' }, [
       el('span', { class: 'dep-mode' }, [modeIcon(d.mode)]),
       el('div', { class: 'dep-main' }, [
         el('span', { class: 'dep-route', text: `${d.routeShortName || m.label} ${d.headsign ? '→ ' + displayName(d.headsign) : ''}` }),

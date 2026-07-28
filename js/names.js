@@ -25,26 +25,35 @@ const ROMAN = /^M{0,3}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$/;
 const hasLower = /[a-zàèéìòùáíóú]/;
 const hasLetter = /[A-Za-zÀ-ÿ]/;
 
-// Capitalize the first letter and any letter after a separator
-// (space handled by tokenizing; here: ' . ( - / apostrophes).
-function capWord(w) {
-  const low = w.toLowerCase();
-  return low.replace(/(^|['’.(\-/])([a-zà-ÿ])/g, (m, sep, ch) => sep + ch.toUpperCase());
+function cap(seg) {
+  const low = seg.toLowerCase();
+  return low.charAt(0).toUpperCase() + low.slice(1);
+}
+
+// One run of letters between separators. Cased independently so tokens with
+// an attached parenthetical — "CALTANISSETTA(Via Rochester)" — still get
+// their all-caps half fixed while the mixed-case half stays untouched.
+function caseSegment(seg, isLeading) {
+  if (hasLower.test(seg)) return seg;              // already mixed-case — hands off
+  if (seg.length <= 1) return seg;                 // E. — initials keep caps
+  if (PARTICLES.has(seg.toLowerCase())) {
+    return isLeading ? cap(seg) : seg.toLowerCase();
+  }
+  if (KEEP.has(seg)) return seg;
+  if (ROMAN.test(seg)) return seg;                 // XXIII, IV …
+  return cap(seg);
 }
 
 export function displayName(name) {
   if (!name) return '';
   return String(name).split(' ').map((tok, i) => {
-    if (!hasLetter.test(tok)) return tok;            // pure punctuation/numbers
-    if (hasLower.test(tok)) return tok;              // already mixed-case — hands off
-    if (/\d/.test(tok)) return tok;                  // S.S.113, KM90 …
-    const bare = tok.replace(/[^A-ZÀ-Þ]/g, '');
-    if (bare.length <= 1) return tok;                // E. — initials keep caps
-    if (PARTICLES.has(bare.toLowerCase())) {
-      return i === 0 ? capWord(tok) : tok.toLowerCase();
-    }
-    if (KEEP.has(bare)) return tok;
-    if (bare.length >= 2 && ROMAN.test(bare)) return tok; // XXIII, IV …
-    return capWord(tok);
+    if (!hasLetter.test(tok)) return tok;          // pure punctuation/numbers
+    if (/\d/.test(tok)) return tok;                // S.S.113, KM90 …
+    let leading = i === 0;
+    return tok.replace(/[A-Za-zÀ-ÿ]+/g, (seg) => {
+      const out = caseSegment(seg, leading);
+      leading = false;
+      return out;
+    });
   }).join(' ');
 }
