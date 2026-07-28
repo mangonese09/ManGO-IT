@@ -38,8 +38,11 @@ function applyTheme(theme) {
 
 export function renderFreshness() {
   const f = getFreshness();
+  // R-07: our own coach feed is the source the app leans on hardest and was
+  // the one source this panel couldn't report on.
   const rows = [
     ['Transitous routing', f.transitous],
+    ['Our coach feed', f.coachfeed],
     ['ViaggiaTreno live trains', f.viaggiatreno],
   ];
   const holder = document.getElementById('freshness');

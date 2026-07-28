@@ -202,7 +202,6 @@ async function suggest(which, q) {
     const { data } = await api.geocode(q);
     if (seq !== suggestSeq[which]) return; // a newer request superseded this one
     list.innerHTML = '';
-    list.innerHTML = '';
     for (const r of data.slice(0, 8)) {
       // every result states WHAT it is: train station / metro / tram /
       // city bus stop / intercity coach stop / town / address
@@ -255,8 +254,15 @@ async function suggest(which, q) {
       ]));
     }
     list.hidden = data.length === 0;
-  } catch {
-    list.hidden = true;
+  } catch (err) {
+    // R-05: a dead lookup used to look exactly like "no matches" — the one
+    // surface where absence went unexplained. Say so, once per outage.
+    if (seq !== suggestSeq[which]) return;
+    list.innerHTML = '';
+    list.appendChild(el('div', { class: 'suggest-row suggest-dead muted', text:
+      /429/.test(err?.message || '') ? 'Too many searches just now — wait a moment and retype.'
+        : "Can't reach place search — check your connection and retype." }));
+    list.hidden = false;
   }
 }
 
@@ -270,7 +276,14 @@ function swapEndpoints() {
 
 function toggleWhen() {
   departMode = departMode === 'depart' ? 'arrive' : 'depart';
-  document.getElementById('when-toggle').textContent = departMode === 'depart' ? 'Depart' : 'Arrive by';
+  const btn = document.getElementById('when-toggle');
+  btn.textContent = departMode === 'depart' ? 'Depart' : 'Arrive by';
+  btn.setAttribute('aria-pressed', String(departMode === 'arrive'));
+  // R-01: "Arrive by" only reaches the router when a time is set, so with no
+  // time it silently did nothing. Say what it needs instead of pretending.
+  if (departMode === 'arrive' && !document.getElementById('when-input').value) {
+    toast('Pick an arrival time — tap the Now chip', 'info', 2200);
+  }
 }
 
 function locate() {
@@ -358,9 +371,16 @@ async function runSearch() {
     if (mySeq !== searchSeq) return;
     const ok = renderDirectBlock(dir?.data?.results || [], 'down', dir?.data?.transfers || []);
     if (!ok) {
+      // R-04: "too many requests" is not "the service is down" — saying the
+      // wrong one sends the user to check their connection for no reason.
+      const busy = /429/.test(err?.message || '');
       results.appendChild(el('div', { class: 'empty-state' }, [
-        el('p', { text: 'No route found — the routing service may be unreachable.' }),
-        el('p', { class: 'muted', text: 'Check the operator sites directly, or retry when back online.' }),
+        el('p', { text: busy
+          ? 'Too many searches in the last minute.'
+          : 'No route found — the routing service may be unreachable.' }),
+        el('p', { class: 'muted', text: busy
+          ? 'Wait about a minute and search again.'
+          : 'Check the operator sites directly, or retry when back online.' }),
       ]));
     }
   }
@@ -370,9 +390,16 @@ async function runSearch() {
 // Empty results are never a bare shrug: (1) admit when the query is past
 // the verified schedule horizon, (2) probe the same trip tomorrow, (3) name
 // the nearest stop our data actually serves when an endpoint is uncovered.
+// R-18: memoised, but not forever — a tab left open across a feed refresh
+// would otherwise quote a horizon that moved hours ago.
 let healthPromise = null;
+let healthAt = 0;
+const HEALTH_TTL_MS = 30 * 60 * 1000;
 function feedHorizonDate() {
-  healthPromise ||= api.health().catch(() => null);
+  if (!healthPromise || Date.now() - healthAt > HEALTH_TTL_MS) {
+    healthAt = Date.now();
+    healthPromise = api.health().catch(() => null);
+  }
   return healthPromise.then((h) => h?.data?.feedHorizon?.date || null);
 }
 
@@ -444,12 +471,12 @@ async function renderDeadEnd(params, whenVal) {
     } catch { /* hint only */ }
   }
 
-  // QA-12: never a bare one-liner — always close with something actionable
-  const horizon = await feedHorizonDate();
+  // QA-12: never a bare one-liner — always close with something actionable.
+  // R-03/C-1: the horizon sentence belongs to maybeHorizonNote alone; printing
+  // it here too rendered it twice, back to back, on every past-horizon search.
   box.appendChild(el('p', { class: 'muted', text:
-    (horizon ? `Coach schedules are verified through ${horizon}. ` : '') +
     'Try another date, swap the direction, or check the operator sites.' }));
-  maybeHorizonNote(whenVal);
+  await maybeHorizonNote(whenVal);
 }
 
 function directRunMinutes(r) {
@@ -778,8 +805,10 @@ function renderRecents() {
         class: 'chip-recent-go', text: `${shortName(r.from.name)} → ${shortName(r.to.name)}`,
         onclick: () => {
           sel.from = r.from; sel.to = r.to;
-          document.getElementById('from-input').value = r.from.name;
-          document.getElementById('to-input').value = r.to.name;
+          // R-08: every other display sink runs names through displayName();
+          // this one refilled the fields in raw ALL-CAPS feed spelling.
+          document.getElementById('from-input').value = displayName(r.from.name);
+          document.getElementById('to-input').value = displayName(r.to.name);
           syncClears();
           runSearch();
         },

@@ -12,7 +12,7 @@ const ROOT = path.join(__dirname, '..');
 
 const TRANSITOUS = 'https://api.transitous.org';
 const VT = 'http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno';
-const UA = 'ManGO-IT/0.6 (+https://it.mangonese.dev; miconsig@gmail.com)';
+const UA = 'ManGO-IT/0.10.1 (+https://it.mangonese.dev; miconsig@gmail.com)';
 
 // per-day upstream request counter (Transitous asks consumers to know their volume)
 const dayCounts = {};
@@ -115,7 +115,7 @@ function directSearch(fLat, fLon, tLat, tLon, radius = 1500, days = null) {
     if (results.filter((r) => r.day === 'today').length >= 6) break;
   }
   results.sort((a, b) => a.depMin - b.depMin);
-  return { fetchedAt: Date.now(), results: results.slice(0, 10) };
+  return { fetchedAt: Date.now(), results: results.slice(0, 10), truncated: results.length > 10 };
 }
 
 // ── ONE-TRANSFER COACH CHAINING ──
@@ -368,14 +368,32 @@ function cacheSet(key, body, ttlMs) {
 }
 
 // ── RATE LIMIT ── (public unauth endpoint; be polite to upstreams)
-const rateBuckets = new Map(); // ip → [timestamps]
-function rateLimited(ip) {
+//
+// R-04: two buckets, not one. The 90/min limit exists to protect UPSTREAMS
+// (Transitous, ViaggiaTreno). Applying it to our own-feed paths meant that a
+// burst of plan requests also locked out /api/direct — a lookup against JSON
+// already in this process's memory — in the one scenario where the coach feed
+// is the whole product. Own-feed paths get their own, far looser bucket.
+const OWN_FEED_PATHS = new Set([
+  '/api/direct', '/api/coach-board', '/api/nearest-served', '/api/health', '/api/stops',
+]);
+const rateBuckets = new Map();     // ip → [timestamps]  (upstream-backed)
+const ownBuckets = new Map();      // ip → [timestamps]  (own feed)
+
+function hit(map, ip, limit) {
   const now = Date.now();
-  const bucket = (rateBuckets.get(ip) || []).filter((t) => now - t < 60000);
+  const bucket = (map.get(ip) || []).filter((t) => now - t < 60000);
   bucket.push(now);
-  rateBuckets.set(ip, bucket);
-  if (rateBuckets.size > 5000) rateBuckets.clear();
-  return bucket.length > 90; // 90 req/min per IP
+  map.set(ip, bucket);
+  // R-19: evict expired buckets instead of flushing everyone's history
+  if (map.size > 5000) {
+    for (const [k, v] of map) if (!v.length || now - v[v.length - 1] > 60000) map.delete(k);
+  }
+  return bucket.length > limit;
+}
+
+function rateLimited(ip, pathname) {
+  return OWN_FEED_PATHS.has(pathname) ? hit(ownBuckets, ip, 600) : hit(rateBuckets, ip, 90);
 }
 
 // ── UPSTREAM ──
@@ -467,7 +485,7 @@ function slimVtDeparture(d) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.9.4', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.10.1', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)
@@ -769,9 +787,10 @@ const server = http.createServer(async (req, res) => {
   if (req.method === 'OPTIONS') { res.writeHead(204); res.end(); return; }
 
   const ip = req.headers['x-real-ip'] || req.socket.remoteAddress || '?';
-  if (url.pathname.startsWith('/api/') && rateLimited(ip)) {
-    res.writeHead(429, { 'Content-Type': 'application/json' });
-    res.end(JSON.stringify({ error: 'rate limited' }));
+  if (url.pathname.startsWith('/api/') && rateLimited(ip, url.pathname)) {
+    // R-20: tell the client how long to wait so it can say so
+    res.writeHead(429, { 'Content-Type': 'application/json', 'Retry-After': '60' });
+    res.end(JSON.stringify({ error: 'rate limited', retryAfter: 60 }));
     return;
   }
 

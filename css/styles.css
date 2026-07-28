@@ -499,7 +499,11 @@ body { font-size: 1rem; }
 /* QA-06b: remaining sub-44px targets from the post-fix sweep */
 .endpoint-stack .swap-btn { width: 44px; height: 44px; }
 .field-clear { width: 36px; height: 36px; }
-.field-clear::after { content: ''; position: absolute; inset: -6px; }
+/* R-02/C-4: the 6px touch halo is only safe inside a positioned parent.
+   Scoped to the endpoint rows — on .when-row the clear button is static
+   (LH-08), so an unscoped halo escaped to .when-row{position:relative}
+   and swallowed every tap on the whole row. */
+.endpoint-row .field-clear::after { content: ''; position: absolute; inset: -6px; }
 .mode-toggle { min-height: 44px; }
 #view-settings a { display: inline-block; padding: 10px 4px; }
 
@@ -538,7 +542,10 @@ body { font-size: 1rem; }
 
 /* LH-08: styled when-chip fronts the native datetime input */
 .when-display { flex: 1; text-align: left; font-variant-numeric: tabular-nums; }
-.when-clear { position: static; transform: none; flex: 0 0 auto; }
+/* R-02: relative (not static) — still in flow, but now a containing block,
+   so its own touch halo can't escape onto the row beneath it. */
+.when-clear { position: relative; transform: none; flex: 0 0 auto; }
+.when-clear::after { content: ''; position: absolute; inset: -6px; }
 .when-native {
   position: absolute; width: 1px; height: 1px; opacity: 0;
   pointer-events: none; border: 0; padding: 0; margin: 0;
@@ -612,3 +619,6 @@ body { font-size: 1rem; }
 .chip-recent-x { background: none; border: none; color: var(--text-muted, #9a9a9a); font-size: 0.8rem; padding: 8px 10px 8px 6px; cursor: pointer; }
 .suggest-star { margin-left: auto; flex: 0 0 auto; padding: 6px 8px; font-size: 1.05rem; }
 .suggest-row { display: flex; align-items: center; gap: 8px; }
+
+/* R-05: autocomplete failure states its own reason instead of looking empty */
+.suggest-dead { padding: 12px; font-size: 0.875rem; cursor: default; }
