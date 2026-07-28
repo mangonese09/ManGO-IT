@@ -3,7 +3,7 @@ import { api } from './api.js';
 import { el, modeMeta, modeClass, modeIcon, isRailMode, liveBadge, staleChip, openSheet } from './ui.js';
 import { romeTime, romeDay, romeHour, dayPartKey, DAYPARTS, durationText, isOtherRomeDay, romeWallToIso, whenLabel } from './time.js';
 import { displayName } from './names.js';
-import { worstTransferMin, transferTier, transferChipText, imminentText, legStripModel, groupByDaypart, plusTag } from './itinerary.js';
+import { worstTransferMin, transferTier, transferChipText, imminentText, legStripModel, groupByDaypart, plusTag, isRailReplacement } from './itinerary.js';
 import { operatorFor } from './operators.js';
 import { getRecents, pushRecent, removeRecent, getFavStops, addFavStop, removeFavStop, getSettings } from './store.js';
 import { toast } from './toast.js';
@@ -856,6 +856,7 @@ function itineraryCard(it) {
   const tier = transferTier(worst);
   const imminent = imminentText(it.startTime);
   const anyLive = transitLegs.some((l) => l.realTime);
+  const railBus = transitLegs.some(isRailReplacement); // R-09: give the anonymous BUS cards an identity
 
   return el('button', { class: 'card iti-card', onclick: () => openItineraryDetail(it) }, [
     el('div', { class: 'iti-times' }, [
@@ -867,6 +868,7 @@ function itineraryCard(it) {
     strip,
     el('div', { class: 'iti-meta' }, [
       el('span', { class: 'muted', text: it.transfers === 0 ? 'direct' : `${it.transfers} transfer${it.transfers > 1 ? 's' : ''}` }),
+      railBus ? el('span', { class: 'chip chip-railbus', text: 'replacement bus' }) : null,
       tier === 'calm' ? el('span', { class: 'muted', text: transferChipText(worst, tier) }) : null,
       tier === 'tight' || tier === 'risky' ? el('span', { class: `chip chip-xfer-${tier}`, text: transferChipText(worst, tier) }) : null,
       liveBadge(anyLive),
@@ -902,14 +904,18 @@ function renderTransitLeg(leg, idx, opsSeen = new Set()) {
   const op = operatorFor(leg.agencyName);
   const wrap = el('div', { class: 'leg' });
 
+  const railBus = isRailReplacement(leg);
   wrap.appendChild(el('div', { class: 'leg-head' }, [
     el('span', { class: 'leg-route' }, [
       modeIcon(leg.mode, 'mode-img mode-img-sm'),
-      el('span', { text: ` ${leg.displayName || leg.routeShortName || m.label}` }),
+      el('span', { text: ` ${railBus ? 'Rail replacement bus' : (leg.displayName || leg.routeShortName || m.label)}` }),
     ]),
+    railBus ? el('span', { class: 'badge badge-railbus', text: 'REPLACEMENT' }) : null,
     liveBadge(leg.realTime),
     leg.cancelled ? el('span', { class: 'badge badge-cancel', text: 'CANCELLED' }) : null,
   ]));
+  // R-09: a substitute bus standing in for a train — say so, don't leave it anonymous.
+  if (railBus) wrap.appendChild(el('div', { class: 'muted leg-headsign', text: 'Runs in place of the train · same Trenitalia ticket' }));
   if (leg.headsign) wrap.appendChild(el('div', { class: 'muted leg-headsign', text: `→ ${displayName(leg.headsign)}` }));
 
   wrap.appendChild(el('div', { class: 'leg-stops' }, [

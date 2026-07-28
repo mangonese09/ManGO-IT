@@ -1,7 +1,7 @@
 // Transfer-risk grading + leg-strip model (audit P2).
 import { test } from 'node:test';
 import assert from 'node:assert';
-import { worstTransferMin, transferTier, transferChipText, imminentText, legStripModel, groupByDaypart, plusTag } from '../../js/itinerary.js';
+import { worstTransferMin, transferTier, transferChipText, imminentText, legStripModel, groupByDaypart, plusTag, isRailReplacement } from '../../js/itinerary.js';
 
 const leg = (mode, start, end, extra = {}) => ({
   mode, startTime: `2026-08-05T${start}:00Z`, endTime: `2026-08-05T${end}:00Z`,
@@ -92,4 +92,18 @@ test('plusTag marks past-midnight day carry (R-25)', () => {
   assert.strictEqual(plusTag(0), '');
   assert.strictEqual(plusTag(1), '+1');
   assert.strictEqual(plusTag(2), '+2');
+});
+
+test('isRailReplacement flags Trenitalia BUS legs only (R-09)', () => {
+  assert.strictEqual(isRailReplacement({ mode: 'BUS', agencyName: 'Trenitalia' }), true);
+  assert.strictEqual(isRailReplacement({ mode: 'BUS', agencyName: 'Trenitalia S.p.A.' }), true);
+  assert.strictEqual(isRailReplacement({ mode: 'RAIL', agencyName: 'Trenitalia' }), false); // a real train
+  assert.strictEqual(isRailReplacement({ mode: 'BUS', agencyName: 'AST' }), false);         // a real coach
+  assert.strictEqual(isRailReplacement({ mode: 'BUS', agencyName: '' }), false);
+  assert.strictEqual(isRailReplacement(null), false);
+});
+
+test('legStripModel labels a rail-replacement leg "Rail bus"', () => {
+  const legs = [{ mode: 'BUS', agencyName: 'Trenitalia', duration: 3600, routeShortName: '' }];
+  assert.strictEqual(legStripModel(legs)[0].label, 'Rail bus');
 });

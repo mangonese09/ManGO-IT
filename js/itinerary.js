@@ -22,6 +22,14 @@ export function plusTag(n) {
   return n > 0 ? `+${n}` : '';
 }
 
+// R-09: Trenitalia runs no scheduled city buses, so any Trenitalia BUS leg is a
+// rail-replacement service. These render as anonymous identical BUS cards with
+// no route identity; naming them lets the traveller tell the six lookalikes
+// apart from the genuine coach sitting below them.
+export function isRailReplacement(leg) {
+  return !!leg && leg.mode === 'BUS' && /trenitalia/i.test(leg.agencyName || '');
+}
+
 // Transfer-risk grading (audit P2, competitive §4): Sicilian coaches run
 // hourly or worse, so a blown 5-minute change strands people. The card
 // shows the WORST buffer across the itinerary, in three tiers.
@@ -78,7 +86,7 @@ export function legStripModel(legs) {
     out.push({
       walk: false,
       mode: l.mode,
-      label: l.routeShortName || l.displayName || '',
+      label: isRailReplacement(l) ? 'Rail bus' : (l.routeShortName || l.displayName || ''),
       pct: Math.max(8, Math.round(100 * (l.duration || 0) / total)),
       realTime: !!l.realTime,
     });

@@ -107,6 +107,9 @@ button { cursor: pointer; }
 .badge-sched { background: rgba(255,255,255,0.08); color: var(--text-muted, #9a9a9a); }
 .badge-cancel { background: rgba(229, 72, 77, 0.18); color: var(--error, #e5484d); }
 .badge-track { background: rgba(255, 180, 84, 0.15); color: var(--mango, #ffb454); }
+.badge-railbus { background: rgba(120, 150, 200, 0.18); color: #9db4e0; }
+.chip-railbus { background: rgba(120, 150, 200, 0.16); color: #9db4e0; font-size: 0.75rem; padding: 2px 8px; border-radius: 999px; font-weight: 600; }
+:root[data-theme="light"] .chip-railbus, :root[data-theme="light"] .badge-railbus { color: #3a5488; background: rgba(120, 150, 200, 0.16); }
 
 .stale-chip { display: block; font-size: 0.72rem; color: var(--text-muted, #9a9a9a); margin: 4px 4px 0; }
 .stale-chip.is-stale { color: var(--warning, #f5a524); font-weight: 600; }
