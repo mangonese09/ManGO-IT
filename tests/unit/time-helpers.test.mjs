@@ -2,6 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert';
 import {
   romeTime, durationText, countdownText, isOtherRomeDay, romeWallToIso, agoText, whenLabel,
+  romeHour, dayPartKey,
 } from '../../js/time.js';
 
 test('whenLabel formats the datetime chip', () => {
@@ -47,4 +48,22 @@ test('agoText buckets', () => {
   assert.strictEqual(agoText(now - 30 * 1000, now), 'just now');
   assert.strictEqual(agoText(now - 5 * 60 * 1000, now), '5m ago');
   assert.strictEqual(agoText(now - 3 * 3600 * 1000, now), '3h ago');
+});
+
+test('romeHour returns Rome wall-clock hour regardless of host TZ', () => {
+  assert.strictEqual(romeHour('2026-07-27T08:21:00Z'), 10); // CEST +2
+  assert.strictEqual(romeHour('2026-07-27T22:30:00Z'), 0);  // 00:30 next Rome day
+  assert.strictEqual(romeHour('2026-01-15T23:00:00Z'), 0);  // CET +1 → midnight
+  assert.strictEqual(romeHour('bad'), null);
+});
+
+test('dayPartKey buckets the day into morning/afternoon/evening (late night rides evening)', () => {
+  assert.strictEqual(dayPartKey(4), 'morning');
+  assert.strictEqual(dayPartKey(11), 'morning');
+  assert.strictEqual(dayPartKey(12), 'afternoon');
+  assert.strictEqual(dayPartKey(16), 'afternoon');
+  assert.strictEqual(dayPartKey(17), 'evening');
+  assert.strictEqual(dayPartKey(23), 'evening');
+  assert.strictEqual(dayPartKey(0), 'evening');  // 00:30 tail of evening service
+  assert.strictEqual(dayPartKey(3), 'evening');
 });

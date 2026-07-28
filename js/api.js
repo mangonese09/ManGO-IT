@@ -33,11 +33,14 @@ export const api = {
   geocode: (text) =>
     getJson(`/api/geocode?text=${encodeURIComponent(text)}`, { source: 'transitous' }),
 
-  plan: ({ fromPlace, toPlace, time, arriveBy, modes }) => {
+  plan: ({ fromPlace, toPlace, time, arriveBy, modes, searchWindow, maxItineraries, pageCursor }) => {
     const p = new URLSearchParams({ fromPlace, toPlace });
     if (time) p.set('time', time);
     if (arriveBy) p.set('arriveBy', 'true');
     if (modes) p.set('modes', modes);
+    if (searchWindow) p.set('searchWindow', String(searchWindow));
+    if (maxItineraries) p.set('maxItineraries', String(maxItineraries));
+    if (pageCursor) p.set('pageCursor', pageCursor);
     return getJson(`/api/plan?${p}`, { source: 'transitous' });
   },
 
@@ -54,10 +57,11 @@ export const api = {
       cacheKey: `coachboard:${lat.toFixed(4)},${lon.toFixed(4)}${all ? ':all' : ''}`, source: 'coachfeed',
     }),
 
-  direct: ({ fromLat, fromLon, toLat, toLon, date, afterMin }) => {
+  direct: ({ fromLat, fromLon, toLat, toLon, date, afterMin, full }) => {
     let url = `/api/direct?fromLat=${fromLat.toFixed(4)}&fromLon=${fromLon.toFixed(4)}&toLat=${toLat.toFixed(4)}&toLon=${toLon.toFixed(4)}`;
     if (date) url += `&date=${date}`;
     if (afterMin != null) url += `&afterMin=${afterMin}`;
+    if (full) url += '&full=1';
     return getJson(url, { source: 'coachfeed' });
   },
 

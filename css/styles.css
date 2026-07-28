@@ -622,3 +622,47 @@ body { font-size: 1rem; }
 
 /* R-05: autocomplete failure states its own reason instead of looking empty */
 .suggest-dead { padding: 12px; font-size: 0.875rem; cursor: default; }
+
+/* ── WHOLE-DAY VIEW (Ship 3, §5.7) ── */
+.daypart-head {
+  position: sticky; top: calc(44px + env(safe-area-inset-top)); z-index: 10;
+  margin: 14px 0 6px; padding: 4px 0;
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase;
+  color: var(--text-muted, #9a9a9a);
+  background: var(--bg-primary, #141414);
+}
+.daypart-head:first-of-type { margin-top: 4px; }
+.iti-past { opacity: 0.48; }
+.now-rule {
+  display: flex; align-items: center; gap: 8px;
+  margin: 12px 0 8px; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em;
+  color: var(--mango, #ffb454);
+}
+.now-rule::before, .now-rule::after {
+  content: ''; flex: 1; height: 1px; background: var(--mango, #ffb454); opacity: 0.4;
+}
+.day-page {
+  display: block; width: 100%; text-align: center; cursor: pointer;
+  background: var(--bg-surface, #1e1e1e); color: var(--text-primary, #f2f2f2);
+  border: 1px solid var(--border, rgba(255,255,255,0.1));
+  border-radius: var(--radius-md, 10px);
+  padding: 10px; margin: 8px 0; font: inherit; font-size: 0.85rem;
+}
+.day-page:active { transform: scale(0.99); }
+:root[data-theme="light"] .day-page { border-color: rgba(0,0,0,0.12); }
+.next-dep-pill {
+  position: fixed; right: 14px; bottom: calc(72px + env(safe-area-inset-bottom)); z-index: 30;
+  background: var(--mango, #ffb454); color: #1a1206; border: none;
+  border-radius: 999px; padding: 10px 16px; cursor: pointer;
+  font: inherit; font-weight: 600; font-size: 0.85rem;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.35);
+}
+.next-dep-pill[hidden] { display: none; }
+@media (prefers-reduced-motion: reduce) { .day-page:active { transform: none; } }
+.day-head {
+  margin: 20px 0 4px; padding: 6px 0 2px;
+  font-size: 0.9rem; font-weight: 700; letter-spacing: -0.01em;
+  color: var(--text-primary, #f2f2f2);
+  border-top: 1px solid var(--border, rgba(255,255,255,0.12));
+}
+:root[data-theme="light"] .day-head { border-top-color: rgba(0,0,0,0.12); }

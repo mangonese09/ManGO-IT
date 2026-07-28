@@ -1,7 +1,7 @@
 // Transfer-risk grading + leg-strip model (audit P2).
 import { test } from 'node:test';
 import assert from 'node:assert';
-import { worstTransferMin, transferTier, transferChipText, imminentText, legStripModel } from '../../js/itinerary.js';
+import { worstTransferMin, transferTier, transferChipText, imminentText, legStripModel, groupByDaypart, plusTag } from '../../js/itinerary.js';
 
 const leg = (mode, start, end, extra = {}) => ({
   mode, startTime: `2026-08-05T${start}:00Z`, endTime: `2026-08-05T${end}:00Z`,
@@ -53,4 +53,43 @@ test('legStripModel: proportional transit segs, walks collapsed, edges trimmed',
   assert.ok(m.some((s) => s.walk && !s.long), 'short connector present');
   assert.ok(m[m.length - 1].walk && m[m.length - 1].long, 'long trailing walk kept');
   assert.ok(!m[0].walk, 'leading short walk trimmed');
+});
+
+// ── WHOLE-DAY GROUPING (Ship 3, §5.7) ──
+test('groupByDaypart clusters by hour, preserves order, drops empty dayparts', () => {
+  const items = [
+    { id: 'a', h: 7 }, { id: 'b', h: 9 },   // morning
+    { id: 'c', h: 14 },                       // afternoon
+    { id: 'd', h: 18 }, { id: 'e', h: 23 },  // evening
+  ];
+  const groups = groupByDaypart(items, (it) => it.h);
+  assert.deepStrictEqual(groups.map((g) => g.key), ['morning', 'afternoon', 'evening']);
+  assert.deepStrictEqual(groups[0].items.map((i) => i.id), ['a', 'b']);
+  assert.deepStrictEqual(groups[1].items.map((i) => i.id), ['c']);
+  assert.deepStrictEqual(groups[2].items.map((i) => i.id), ['d', 'e']);
+  assert.strictEqual(groups[0].label, 'Morning');
+});
+
+test('groupByDaypart: a 3-a-day corridor shows only the dayparts it uses', () => {
+  const groups = groupByDaypart([{ h: 6 }, { h: 13 }, { h: 19 }], (it) => it.h);
+  assert.strictEqual(groups.length, 3);
+  const only = groupByDaypart([{ h: 8 }, { h: 10 }], (it) => it.h);
+  assert.deepStrictEqual(only.map((g) => g.key), ['morning']);
+});
+
+test('groupByDaypart: null hour and post-midnight ride the evening', () => {
+  const groups = groupByDaypart([{ id: 'x', h: null }, { id: 'y', h: 1 }], (it) => it.h);
+  assert.deepStrictEqual(groups.map((g) => g.key), ['evening']);
+  assert.deepStrictEqual(groups[0].items.map((i) => i.id), ['x', 'y']);
+});
+
+test('groupByDaypart handles empty/nullish input', () => {
+  assert.deepStrictEqual(groupByDaypart([], (i) => i), []);
+  assert.deepStrictEqual(groupByDaypart(null, (i) => i), []);
+});
+
+test('plusTag marks past-midnight day carry (R-25)', () => {
+  assert.strictEqual(plusTag(0), '');
+  assert.strictEqual(plusTag(1), '+1');
+  assert.strictEqual(plusTag(2), '+2');
 });

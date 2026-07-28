@@ -15,6 +15,16 @@ export function initSettings() {
     applyTheme(next);
   });
 
+  // §5.8: whole-day (default) vs the old next-6-departures view.
+  const spanBtn = document.getElementById('span-toggle');
+  applySpanLabel(spanBtn);
+  spanBtn.addEventListener('click', () => {
+    const next = getSettings().resultSpan === 'next' ? 'whole' : 'next';
+    patchSettings({ resultSpan: next });
+    applySpanLabel(spanBtn);
+    toast(next === 'next' ? 'Showing next departures only' : 'Showing the whole day', 'info', 1600);
+  });
+
   document.getElementById('clear-cache').addEventListener('click', async () => {
     const ok = await confirmModal('Clear all cached data and settings?', { confirmText: 'Clear' });
     if (!ok) return;
@@ -28,6 +38,10 @@ export function initSettings() {
 
   document.getElementById('check-updates').addEventListener('click', checkForUpdates);
   renderFreshness();
+}
+
+function applySpanLabel(btn) {
+  if (btn) btn.textContent = getSettings().resultSpan === 'next' ? 'Next departures' : 'Whole day';
 }
 
 function applyTheme(theme) {

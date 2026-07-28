@@ -1,11 +1,11 @@
 // ── A→B SEARCH ──
 import { api } from './api.js';
 import { el, modeMeta, modeClass, modeIcon, isRailMode, liveBadge, staleChip, openSheet } from './ui.js';
-import { romeTime, romeDay, durationText, isOtherRomeDay, romeWallToIso, whenLabel } from './time.js';
+import { romeTime, romeDay, romeHour, dayPartKey, DAYPARTS, durationText, isOtherRomeDay, romeWallToIso, whenLabel } from './time.js';
 import { displayName } from './names.js';
-import { worstTransferMin, transferTier, transferChipText, imminentText, legStripModel } from './itinerary.js';
+import { worstTransferMin, transferTier, transferChipText, imminentText, legStripModel, groupByDaypart, plusTag } from './itinerary.js';
 import { operatorFor } from './operators.js';
-import { getRecents, pushRecent, removeRecent, getFavStops, addFavStop, removeFavStop } from './store.js';
+import { getRecents, pushRecent, removeRecent, getFavStops, addFavStop, removeFavStop, getSettings } from './store.js';
 import { toast } from './toast.js';
 
 // Selected endpoints: {name, place} where place is "lat,lon" or a stopId.
@@ -155,6 +155,42 @@ function initModeToggles() {
 function planModes() {
   if (modeSel.train && modeSel.bus) return null; // no filter
   return (modeSel.train ? RAIL_MODES : BUS_MODES) + ',' + ALWAYS_MODES;
+}
+
+// ── WHOLE-DAY VIEW (Ship 3, §5) ──
+// A search covers from-now to the end of the service day (§5.3, Open Q#1 →
+// user chose from-now + Earlier ▲). Results cluster by daypart; Earlier/Later
+// pills page the edges via MOTIS cursors. Users who want a short list flip
+// Settings → "Next departures only" (§5.8), which restores the 6-in-6h view.
+function wholeDay() { return getSettings().resultSpan !== 'next'; }
+
+// Seconds from an anchor instant to 03:00 Rome the next day — the service-day
+// end (§5.6: no coach departs 00:00–04:00). Clamped so a late search still
+// spans the tail and an early one doesn't request an absurd window.
+function wholeDayWindowSec(anchorMs) {
+  const romeDate = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Europe/Rome', year: 'numeric', month: '2-digit', day: '2-digit',
+  }).format(new Date(anchorMs));
+  const endIso = romeWallToIso(`${nextDateStr(romeDate)}T03:00`);
+  const sec = Math.round((new Date(endIso).getTime() - anchorMs) / 1000);
+  return Math.max(3600, Math.min(90000, sec)); // 1h floor, ~25h ceiling
+}
+
+function romeDateOf(ms) {
+  return new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Europe/Rome', year: 'numeric', month: '2-digit', day: '2-digit',
+  }).format(new Date(ms));
+}
+const DAYPART_LABEL = Object.fromEntries(DAYPARTS.map((d) => [d.key, d.label]));
+
+// Accumulated whole-day plan state — the pills page into this and re-render.
+// cutoffMs = service-day end (03:00 next day); the default view stops there and
+// `expanded` flips true when Later reveals the already-fetched next day (§5.6).
+const dayView = { its: [], next: null, prev: null, base: null, stale: false, fetchedAt: 0, loading: false, cutoffMs: 0, expanded: false };
+function itiKey(it) { return `${it.startTime}|${it.endTime}|${it.legs?.[0]?.routeShortName || ''}`; }
+function mergeIts(more) {
+  const seen = new Set(dayView.its.map(itiKey));
+  for (const it of more) if (!seen.has(itiKey(it))) { seen.add(itiKey(it)); dayView.its.push(it); }
 }
 
 // belt-and-suspenders if upstream ignores transitModes
@@ -328,6 +364,18 @@ async function runSearch() {
   const modes = planModes();
   if (modes) params.modes = modes;
 
+  // Whole-day window (§5.3): from the anchor (now, or an explicit Depart-at
+  // time) to the service-day end. "Arrive by" keeps the tight before-deadline
+  // window — a whole day of arrivals is not what that question asks.
+  const whole = wholeDay() && departMode === 'depart';
+  let cutoffMs = 0;
+  if (whole) {
+    const anchorMs = params.time ? new Date(params.time).getTime() : Date.now();
+    params.searchWindow = wholeDayWindowSec(anchorMs);
+    params.maxItineraries = 24;
+    cutoffMs = anchorMs + params.searchWindow * 1000; // service-day end
+  }
+
   // Race the plan with our own direct lookup (answers in ms): direct coaches
   // render alongside WEAK plan results too, not only on total failure —
   // Transitous can "succeed" with a 4 h rail-replacement bus while our feed
@@ -340,7 +388,8 @@ async function runSearch() {
   const directPromise = (modeSel.bus && sel.from?.lat && sel.to?.lat)
     ? api.direct({ fromLat: sel.from.lat, fromLon: sel.from.lon,
                    toLat: sel.to.lat, toLon: sel.to.lon,
-                   date: qDate || undefined, afterMin: qAfterMin ?? undefined }).catch(() => null)
+                   date: qDate || undefined, afterMin: qAfterMin ?? undefined,
+                   full: whole }).catch(() => null)
     : Promise.resolve(null);
 
   try {
@@ -349,7 +398,17 @@ async function runSearch() {
     pushRecent({ from: sel.from, to: sel.to });
     renderRecents();
     const allowed = (data.itineraries || []).filter(itineraryAllowed);
-    renderItineraries(allowed, { stale, fetchedAt });
+    if (whole && allowed.length) {
+      dayView.its = allowed.slice();
+      dayView.next = data.nextPageCursor || null;
+      dayView.prev = data.previousPageCursor || null;
+      dayView.base = { ...params }; delete dayView.base.pageCursor;
+      dayView.stale = stale; dayView.fetchedAt = fetchedAt;
+      dayView.cutoffMs = cutoffMs; dayView.expanded = false;
+      renderDayView();
+    } else {
+      renderItineraries(allowed, { stale, fetchedAt });
+    }
     const dir = await directPromise;
     if (mySeq !== searchSeq) return;
     const runs = dir?.data?.results || [];
@@ -589,49 +648,181 @@ const DIRECT_HEADS = {
   faster: 'Faster by coach',
 };
 
-// Direct single-leg coaches + one-transfer chains from our own feed,
-// honestly labeled (scheduled times only).
+function directRunBtn(r) {
+  return el('button', { class: 'dep-row dep-row-btn', onclick: () => openDirectDetail(r) }, [
+    el('span', { class: 'dep-mode' }, [modeIcon('COACH')]),
+    el('div', { class: 'dep-main dep-main-tight' }, [
+      el('span', { class: 'dep-route' }, [
+        el('span', { text: `${r.dep} → ${r.arr}${plusTag(r.arrPlus)}${dayTag(r.day)}` }),
+        walkChip(r.fromWalkM || 0, r.toWalkM || 0),
+      ]),
+      el('span', { class: 'muted dep-headsign dep-oneline', text: `${displayName(r.from)} → ${displayName(r.to)}` }),
+    ]),
+    el('span', { class: 'dep-chevron', text: '›' }),
+  ]);
+}
+
+function directXferBtn(c) {
+  return el('button', { class: 'dep-row xfer-row dep-row-btn', onclick: () => openChainDetail(c) }, [
+    el('span', { class: 'dep-mode' }, [modeIcon('COACH'), modeIcon('COACH')]),
+    el('div', { class: 'dep-main dep-main-tight' }, [
+      el('span', { class: 'dep-route' }, [
+        el('span', { text: `${c.legs[0].dep} → ${c.legs[1].arr}${plusTag(c.arrPlus)}${dayTag(c.day)} · 1 transfer` }),
+        walkChip(c.fromWalkM || 0, c.toWalkM || 0),
+      ]),
+      el('span', { class: 'muted dep-headsign dep-oneline', text: `${displayName(c.legs[0].from)} → ${displayName(c.legs[1].to)}` }),
+    ]),
+    el('span', { class: 'dep-chevron', text: '›' }),
+  ]);
+}
+
+// Direct single-leg coaches + one-transfer chains from our own feed, honestly
+// labeled (scheduled times only). As a supplement beside plan results ('faster')
+// it stays short; as the primary answer ('empty'/'down') on a whole-day search
+// it groups by daypart like the plan list.
 function renderDirectBlock(runs, reason, transfers = []) {
   if (!runs.length && !transfers.length) return false;
   const results = document.getElementById('results');
+  const primary = reason === 'empty' || reason === 'down';
+  const shown = (!primary && runs.length > 3) ? runs.slice(0, 3) : runs;
   const kids = [
     el('div', { class: 'direct-head' }, [
       el('strong', { text: DIRECT_HEADS[reason] }),
       el('p', { class: 'muted', text: 'Scheduled times · tap a trip for details' }),
     ]),
-    ...runs.map((r) => el('button', { class: 'dep-row dep-row-btn', onclick: () => openDirectDetail(r) }, [
-      el('span', { class: 'dep-mode' }, [modeIcon('COACH')]),
-      el('div', { class: 'dep-main dep-main-tight' }, [
-        el('span', { class: 'dep-route' }, [
-          el('span', { text: `${r.dep} → ${r.arr}${dayTag(r.day)}` }),
-          walkChip(r.fromWalkM || 0, r.toWalkM || 0),
-        ]),
-        el('span', { class: 'muted dep-headsign dep-oneline', text: `${displayName(r.from)} → ${displayName(r.to)}` }),
-      ]),
-      el('span', { class: 'dep-chevron', text: '›' }),
-    ])),
   ];
-  for (const c of transfers) {
-    kids.push(el('button', { class: 'dep-row xfer-row dep-row-btn', onclick: () => openChainDetail(c) }, [
-      el('span', { class: 'dep-mode' }, [modeIcon('COACH'), modeIcon('COACH')]),
-      el('div', { class: 'dep-main dep-main-tight' }, [
-        el('span', { class: 'dep-route' }, [
-          el('span', { text: `${c.legs[0].dep} → ${c.legs[1].arr}${dayTag(c.day)} · 1 transfer` }),
-          walkChip(c.fromWalkM || 0, c.toWalkM || 0),
-        ]),
-        el('span', { class: 'muted dep-headsign dep-oneline', text: `${displayName(c.legs[0].from)} → ${displayName(c.legs[1].to)}` }),
-      ]),
-      el('span', { class: 'dep-chevron', text: '›' }),
-    ]));
+  if (primary && shown.length > 6) {
+    const today = shown.filter((r) => r.day === 'today');
+    const later = shown.filter((r) => r.day !== 'today');
+    const base = today.length ? today : later;
+    for (const g of groupByDaypart(base, (r) => Number(r.dep.slice(0, 2)))) {
+      kids.push(el('h3', { class: 'daypart-head', text: g.label }));
+      for (const r of g.items) kids.push(directRunBtn(r));
+    }
+    if (today.length && later.length) {
+      kids.push(el('h3', { class: 'daypart-head', text: 'Tomorrow' }));
+      for (const r of later) kids.push(directRunBtn(r));
+    }
+  } else {
+    for (const r of shown) kids.push(directRunBtn(r));
   }
+  for (const c of transfers) kids.push(directXferBtn(c));
   results.appendChild(el('div', { class: 'direct-block' }, kids));
   return true;
+}
+
+// ── WHOLE-DAY RENDER (Ship 3, §5.7) ──
+function pagePill(dir) {
+  const label = dir === 'earlier' ? '▲  Earlier today' : '▼  Later departures';
+  return el('button', { class: `day-page day-page-${dir}`, onclick: () => pageDay(dir) },
+    [el('span', { text: label })]);
+}
+
+function hasLaterLocal() {
+  return !dayView.expanded && dayView.cutoffMs > 0
+    && dayView.its.some((it) => new Date(it.startTime).getTime() >= dayView.cutoffMs);
+}
+
+async function pageDay(dir) {
+  if (dayView.loading) return;
+  // Later first reveals the next day already fetched (instant), before paging.
+  if (dir === 'later' && hasLaterLocal()) { dayView.expanded = true; renderDayView(); return; }
+  const cursor = dir === 'earlier' ? dayView.prev : dayView.next;
+  if (!cursor || !dayView.base) return;
+  dayView.loading = true;
+  const btn = document.querySelector(`.day-page-${dir} span`);
+  if (btn) btn.textContent = 'Loading…';
+  try {
+    const { data } = await api.plan({ ...dayView.base, pageCursor: cursor });
+    mergeIts((data.itineraries || []).filter(itineraryAllowed));
+    if (dir === 'earlier') dayView.prev = data.previousPageCursor || null;
+    else { dayView.next = data.nextPageCursor || null; dayView.expanded = true; }
+    renderDayView();
+  } catch {
+    toast('Could not load more departures', 'warn');
+    if (btn) btn.textContent = dir === 'earlier' ? '▲  Earlier today' : '▼  Later departures';
+  } finally {
+    dayView.loading = false;
+  }
+}
+
+// Single-pass, day-aware render: sorted by time so today precedes tomorrow.
+// A day header appears only for days beyond today (today's dayparts speak for
+// themselves); dayparts head each cluster within a day.
+function renderDayView() {
+  const results = document.getElementById('results');
+  results.innerHTML = '';
+  results.appendChild(staleChip(dayView.fetchedAt, dayView.stale));
+  if (dayView.prev) results.appendChild(pagePill('earlier'));
+
+  const now = Date.now();
+  let sorted = [...dayView.its].sort((a, b) => new Date(a.startTime) - new Date(b.startTime));
+  if (!dayView.expanded && dayView.cutoffMs > 0) {
+    sorted = sorted.filter((it) => new Date(it.startTime).getTime() < dayView.cutoffMs);
+  }
+  const hasPast = sorted.some((x) => new Date(x.startTime).getTime() < now - 60000);
+  const todayDate = romeDateOf(now);
+  let curDate = null, curPart = null, nowRuleDone = false;
+  for (const it of sorted) {
+    const ms = new Date(it.startTime).getTime();
+    const d = romeDateOf(ms);
+    if (d !== curDate) {
+      if (d !== todayDate) results.appendChild(el('h3', { class: 'day-head', text: romeDay(it.startTime) }));
+      curDate = d; curPart = null;
+    }
+    const part = dayPartKey(romeHour(it.startTime) ?? 20);
+    if (part !== curPart) {
+      results.appendChild(el('h3', { class: 'daypart-head', text: DAYPART_LABEL[part] }));
+      curPart = part;
+    }
+    const past = ms < now - 60000;
+    if (!past && !nowRuleDone && hasPast) {
+      results.appendChild(el('div', { class: 'now-rule', text: 'now' }));
+      nowRuleDone = true;
+    }
+    const card = itineraryCard(it);
+    if (past) card.classList.add('iti-past');
+    results.appendChild(card);
+  }
+  if (hasLaterLocal() || dayView.next) results.appendChild(pagePill('later'));
+  ensureNextPill();
+}
+
+// Floating "↑ Next departure" pill (§5.7): jumps back to the first future row
+// after the user scrolls past it. Reuses the map tab's locate-button pattern.
+let nextPillWired = false;
+function ensureNextPill() {
+  if (!document.getElementById('next-dep-pill')) {
+    const pill = el('button', { id: 'next-dep-pill', class: 'next-dep-pill', hidden: 'hidden', text: '↑ Next departure' });
+    pill.addEventListener('click', () => {
+      const t = document.querySelector('#results .iti-card:not(.iti-past)');
+      if (t) t.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+    document.body.appendChild(pill);
+  }
+  if (!nextPillWired) {
+    nextPillWired = true;
+    window.addEventListener('scroll', updateNextPill, { passive: true });
+  }
+  updateNextPill();
+}
+function updateNextPill() {
+  const pill = document.getElementById('next-dep-pill');
+  if (!pill) return;
+  const onHome = !document.getElementById('view-home')?.hidden;
+  const t = document.querySelector('#results .iti-card:not(.iti-past)');
+  pill.hidden = !onHome || !t || t.getBoundingClientRect().top > 80;
+}
+function hideNextPill() {
+  const p = document.getElementById('next-dep-pill');
+  if (p) p.hidden = true;
 }
 
 function renderItineraries(itineraries, { stale, fetchedAt }) {
   const results = document.getElementById('results');
   results.innerHTML = '';
   results.appendChild(staleChip(fetchedAt, stale));
+  hideNextPill();
 
   if (!itineraries.length) return; // caller renders direct results or the dead-end fallbacks
 

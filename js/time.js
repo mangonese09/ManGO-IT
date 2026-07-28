@@ -18,6 +18,29 @@ export function romeDay(iso) {
   return isNaN(d) ? '—' : dayFmt.format(d);
 }
 
+// Rome wall-clock hour (0–23) for an instant, device-zone-safe.
+const hourFmt = new Intl.DateTimeFormat('en-GB', { timeZone: ROME, hour: '2-digit', hour12: false });
+export function romeHour(iso) {
+  const d = iso instanceof Date ? iso : new Date(iso);
+  if (isNaN(d)) return null;
+  const h = Number(hourFmt.format(d));
+  return h === 24 ? 0 : h; // some ICU builds render midnight as "24"
+}
+
+// Whole-day results (§5.7) cluster into three scannable dayparts. Late-night
+// (0–3, the tail of evening service) rides with the evening so a 23:40 and a
+// 00:30 departure sit together. Pure over an hour number — no zone math.
+export function dayPartKey(hour) {
+  if (hour >= 4 && hour < 12) return 'morning';
+  if (hour >= 12 && hour < 17) return 'afternoon';
+  return 'evening';
+}
+export const DAYPARTS = [
+  { key: 'morning', label: 'Morning' },
+  { key: 'afternoon', label: 'Afternoon' },
+  { key: 'evening', label: 'Evening' },
+];
+
 // True if `iso` falls on a different Rome calendar day than now.
 export function isOtherRomeDay(iso, now = new Date()) {
   const f = new Intl.DateTimeFormat('en-CA', { timeZone: ROME, year: 'numeric', month: '2-digit', day: '2-digit' });

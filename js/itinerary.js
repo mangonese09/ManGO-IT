@@ -1,4 +1,27 @@
 // ── ITINERARY MATH (pure, unit-tested) ──
+import { dayPartKey, DAYPARTS } from './time.js';
+
+// Whole-day results (§5.7, Ship 3) cluster into three dayparts with sticky
+// headers so a 19-departure corridor reads as three scannable groups and a
+// 3-a-day corridor shows its sparseness honestly. `hourOf(item)` returns the
+// item's Rome departure hour (0–23); a null hour rides with the evening.
+// Order is preserved (caller sorts); empty dayparts drop out.
+export function groupByDaypart(items, hourOf) {
+  const buckets = new Map(DAYPARTS.map((d) => [d.key, []]));
+  for (const it of items || []) {
+    const h = hourOf(it);
+    buckets.get(dayPartKey(h == null ? 20 : h)).push(it);
+  }
+  return DAYPARTS.map((d) => ({ ...d, items: buckets.get(d.key) })).filter((g) => g.items.length);
+}
+
+// R-25: past-midnight times lose their day under %24 formatting. A run that
+// departs 23:40 and arrives 00:30 needs the arrival marked "+1". `n` is whole
+// days past the departure day (floor(arrMin/1440) - floor(depMin/1440)).
+export function plusTag(n) {
+  return n > 0 ? `+${n}` : '';
+}
+
 // Transfer-risk grading (audit P2, competitive §4): Sicilian coaches run
 // hourly or worse, so a blown 5-minute change strands people. The card
 // shows the WORST buffer across the itinerary, in three tiers.

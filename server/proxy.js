@@ -12,7 +12,7 @@ const ROOT = path.join(__dirname, '..');
 
 const TRANSITOUS = 'https://api.transitous.org';
 const VT = 'http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno';
-const UA = 'ManGO-IT/0.10.2 (+https://it.mangonese.dev; miconsig@gmail.com)';
+const UA = 'ManGO-IT/0.11.0 (+https://it.mangonese.dev; miconsig@gmail.com)';
 
 // per-day upstream request counter (Transitous asks consumers to know their volume)
 const dayCounts = {};
@@ -79,7 +79,9 @@ function serviceRuns(trip, day) {
 }
 
 // days injectable for tests: [{iso, wd, min, month, day}, …]; day 0 filters by "not departed yet"
-function directSearch(fLat, fLon, tLat, tLon, radius = 1500, days = null) {
+// `full` (Ship 3, R-17): the whole-day view needs the entire remaining day,
+// not the 10-row teardown cap — when set, no early break and no slice.
+function directSearch(fLat, fLon, tLat, tLon, radius = 1500, days = null, full = false) {
   const fromIdx = new Map(attachStops(fLat, fLon, radius).map((x) => [x.i, x.d]));
   const toIdx = new Map(attachStops(tLat, tLon, radius).map((x) => [x.i, x.d]));
   if (!fromIdx.size || !toIdx.size) return { results: [], reason: !fromIdx.size ? 'no-stops-near-origin' : 'no-stops-near-destination' };
@@ -103,8 +105,10 @@ function directSearch(fLat, fLon, tLat, tLon, radius = 1500, days = null) {
               from: coachStops[board.idx].n, to: coachStops[idx].n,
               fromWalkM: Math.round(fromIdx.get(board.idx) || 0),
               toWalkM: Math.round(toIdx.get(idx) || 0),
-              dep: `${String(Math.floor(board.min / 60) % 24).padStart(2, '0')}:${String(board.min % 60).padStart(2, '0')}`,
-              arr: `${String(Math.floor(arrMin / 60) % 24).padStart(2, '0')}:${String(arrMin % 60).padStart(2, '0')}`,
+              dep: fmtMin(board.min),
+              arr: fmtMin(arrMin),
+              // R-25: an overnight leg (arrMin >= 1440) arrives the next day.
+              arrPlus: Math.floor(arrMin / 1440) - Math.floor(board.min / 1440),
               depMin: board.min + dayOff * 1440,
             });
           }
@@ -112,10 +116,12 @@ function directSearch(fLat, fLon, tLat, tLon, radius = 1500, days = null) {
         }
       }
     }
-    if (results.filter((r) => r.day === 'today').length >= 6) break;
+    if (!full && results.filter((r) => r.day === 'today').length >= 6) break;
   }
   results.sort((a, b) => a.depMin - b.depMin);
-  return { fetchedAt: Date.now(), results: results.slice(0, 10), truncated: results.length > 10 };
+  return full
+    ? { fetchedAt: Date.now(), results, truncated: false }
+    : { fetchedAt: Date.now(), results: results.slice(0, 10), truncated: results.length > 10 };
 }
 
 // ── ONE-TRANSFER COACH CHAINING ──
@@ -179,6 +185,7 @@ function twoLegSearch(fLat, fLon, tLat, tLon, radius = 1500, days = null) {
               chains.push({
                 day: dayOff === 0 ? 'today' : 'tomorrow',
                 depMin: board.min + dayOff * 1440, arrMin: arr3 + dayOff * 1440,
+                arrPlus: Math.floor(arr3 / 1440) - Math.floor(board.min / 1440), // R-25
                 waitMin: dep2 - min,
                 fromWalkM: Math.round(fromIdx.get(board.idx) || 0),
                 toWalkM: Math.round(toIdx.get(idx3) || 0),
@@ -485,7 +492,7 @@ function slimVtDeparture(d) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.10.2', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.11.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)
@@ -561,6 +568,14 @@ const routes = {
     if (q.get('time')) params.set('time', q.get('time'));
     if (q.get('arriveBy') === 'true') params.set('arriveBy', 'true');
     params.set('numItineraries', q.get('n') || '6');
+    // Whole-day view (Ship 3, R-24): the client raises maxItineraries and a
+    // wide searchWindow; Earlier/Later pills page the edges via pageCursor.
+    const maxIt = Number(q.get('maxItineraries'));
+    if (Number.isInteger(maxIt) && maxIt > 0 && maxIt <= 60) params.set('maxItineraries', String(maxIt));
+    // MOTIS: "keep the original request as is" and add the cursor; URLSearchParams
+    // encodes the load-bearing pipe (a raw pipe is HTTP 400, §5.4).
+    const cursor = q.get('pageCursor');
+    if (cursor && cursor.length <= 200 && /^[A-Za-z0-9_|=-]+$/.test(cursor)) params.set('pageCursor', cursor);
     // mode filter (v0.9.0 home toggles): validated pass-through to MOTIS
     const modes = q.get('modes');
     if (modes && /^[A-Z_]+(,[A-Z_]+)*$/.test(modes) && modes.length <= 200) {
@@ -582,6 +597,9 @@ const routes = {
     const out = {
       fetchedAt: Date.now(),
       itineraries: (data.itineraries || []).map(slimItinerary),
+      // Ship 3: edge paging for the whole-day view (Earlier ▲ / Later ▼).
+      nextPageCursor: data.nextPageCursor || null,
+      previousPageCursor: data.previousPageCursor || null,
     };
     cacheSet(key, out, 60 * 1000);
     return out;
@@ -654,7 +672,8 @@ const routes = {
       days = [d0, d1];
       dayLabels = { today: d0.iso, tomorrow: d1.iso };
     }
-    const out = directSearch(fLat, fLon, tLat, tLon, radius, days);
+    const full = q.get('full') === '1'; // whole-day view (Ship 3, R-17)
+    const out = directSearch(fLat, fLon, tLat, tLon, radius, days, full);
     // one-transfer chains: most useful when direct service is thin
     if ((out.results || []).length < 6) {
       out.transfers = twoLegSearch(fLat, fLon, tLat, tLon, radius, days);
