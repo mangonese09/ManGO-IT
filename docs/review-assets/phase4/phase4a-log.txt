@@ -1,0 +1,72 @@
+== A1: when-chip / Depart-toggle interaction with date set ==
+  chip now: Wed 29 Jul · 09:00
+  after tapping Depart-toggle center: chip=Now | toggle=Depart | input value=""
+== A2: populate Saved (fav train stop + fav coach stop) ==
+  added: Palermo Centrale | train station · Palermo
+  added: Marineo via Agrigento | coach stop
+  SAVED TEXT:
+    Saved departures
+    Palermo Centrale
+    train station · tap for today's schedule
+    ★
+    REG 5603
+    now
+    04:30
+    N7 → Pomara Figurella
+    2 min
+    04:32
+    N7 → Pomara Figurella
+    3 min
+    04:33
+    REG 34932
+    8 min
+    04:38
+    Marineo via Agrigento
+    coach stop · tap for today's schedule
+    ★
+    
+    No upcoming departures.
+  COACH SCHEDULE SHEET (first 18 lines):
+    Today — Marineo via Agrigento
+    ✕
+    
+    Complete coach timetable for today — scheduled times, no live status.
+    
+    No departures today.
+  after history back: sheet open? false | on view: #saved
+== A3: pin departure from board ==
+  saved tab now:
+    Pinned departures
+    N2 → Indipendenza
+    Roma Bandiera
+    6 min
+    04:37
+    ★
+  after reload: view=saved | saved visible? true
+== A4: double submit ==
+  after 5 rapid submits: 8 cards, 1 stale-chips (expect one coherent set)
+== A4b: toggle spam right after submit ==
+  bus toggle state after 6 taps: true | cards: 8
+== A5: sheet/back stack ==
+  sheets open after double card tap: 1
+  after back#1: sheets=0 url hash=#home
+  after back#2: url=https://it.mangonese.dev/#saved
+== A6: long/mangled names ==
+  "Marchesa" suggestions:
+    Filaga via Marchesa
+    coach stop
+    ☆
+    Modica (Via Marchesa Tedeschi, 20)
+    coach stop
+    ☆
+    Modica (Via Marchesa Tedeschi, 99)
+    coach stop
+    ☆
+    per C.da Marchesa) Sciacca (deviazione per C.da Marchesa)
+  rows with horizontal overflow: []
+== A7: type census on results ==
+  MANGO-IT TYPE CENSUS: {"textNodes":220,"sizes":[["16px",75],["14px",52],["12px",23],["20px",18],["16.8px",13],["11.52px",10],["19.2px",10],["13.6px",7],["11.2px",6],["12.8px",4],["15.2px",1],["12.48px",1]],"weights":[["400",159],["600",36],["700",25]]}
+== A8: viewports ==
+  landscape 844x390: horizontal overflow px=0
+  tiny 320x568: horizontal overflow px=0
+  tablet 768x1024: horizontal overflow px=0
