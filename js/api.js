@@ -65,8 +65,11 @@ export const api = {
     return getJson(url, { source: 'coachfeed' });
   },
 
-  viaHub: ({ fromLat, fromLon, toPlace, date, afterMin }) => {
-    let url = `/api/via-hub?fromLat=${fromLat.toFixed(4)}&fromLon=${fromLon.toFixed(4)}&toPlace=${encodeURIComponent(toPlace)}`;
+  viaHub: ({ fromLat, fromLon, fromPlace, toPlace, toLat, toLon, date, afterMin }) => {
+    let url = `/api/via-hub?fromLat=${fromLat.toFixed(4)}&fromLon=${fromLon.toFixed(4)}`;
+    if (fromPlace) url += `&fromPlace=${encodeURIComponent(fromPlace)}`;
+    if (toPlace) url += `&toPlace=${encodeURIComponent(toPlace)}`;
+    if (isFinite(toLat) && isFinite(toLon)) url += `&toLat=${toLat.toFixed(4)}&toLon=${toLon.toFixed(4)}`;
     if (date) url += `&date=${date}`;
     if (afterMin != null) url += `&afterMin=${afterMin}`;
     return getJson(url, { source: 'transitous', allowStale: false });

@@ -12,7 +12,7 @@ const ROOT = path.join(__dirname, '..');
 
 const TRANSITOUS = 'https://api.transitous.org';
 const VT = 'http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno';
-const UA = 'ManGO-IT/0.13.0 (+https://it.mangonese.dev; miconsig@gmail.com)';
+const UA = 'ManGO-IT/0.14.0 (+https://it.mangonese.dev; miconsig@gmail.com)';
 
 // per-day upstream request counter (Transitous asks consumers to know their volume)
 const dayCounts = {};
@@ -494,13 +494,50 @@ async function hubStitch(fLat, fLon, toPlace, days, baseDate) {
       finalArrival: best.endTime, journeyMin,
     });
   }
-  // Rank by total journey, not arrival clock: a coach leaving tonight and
-  // arriving 04:49 after an 11 h overnight wait must not outrank a 3 h daytime
-  // trip that departs tomorrow. Drop absurdly long stitches unless nothing else.
-  const sane = stitches.filter((s) => s.journeyMin <= 600);
-  const pool = sane.length ? sane : stitches;
-  pool.sort((a, b) => a.journeyMin - b.journeyMin);
-  return pool.slice(0, 2);
+  return stitches;
+}
+
+// Reverse orientation: MOTIS [origin → hub] + our coach [hub → destination].
+// Answers a rail-served origin (an airport) to a coach-only town (Raffadali):
+// take the train to the city, then the coach onward. `fromPlace` is a MOTIS
+// place; the destination is coords for the coach search.
+async function hubStitchReverse(fromPlace, tLat, tLon, days, baseDate, queryTimeIso) {
+  const stitches = [];
+  for (const hub of HUBS) {
+    if (haversineM(tLat, tLon, hub.lat, hub.lon) < 8000) continue; // dest already at the hub
+    // Cheap gate first: does our feed even run hub → dest? (no upstream cost)
+    if (!(directSearch(hub.lat, hub.lon, tLat, tLon, 2500, days, false).results || []).length) continue;
+    let toHub;
+    try { toHub = await motisPlan(fromPlace, `${hub.lat},${hub.lon}`, { timeIso: queryTimeIso }); }
+    catch { continue; }
+    const rail = (toHub || [])[0];
+    if (!rail) continue;
+    // Coach from the hub departing after the train arrives (+15 min cushion).
+    const arr = romeParts(new Date(rail.endTime));
+    const coachDays = [{ ...arr, min: arr.min + 15 }, romeParts(new Date(new Date(rail.endTime).getTime() + 86400000))];
+    const coach = directSearch(hub.lat, hub.lon, tLat, tLon, 2500, coachDays, true);
+    const leg2 = (coach.results || [])[0];
+    if (!leg2) continue;
+    const coachArrIso = romeInstant(arr.iso, leg2.arrAbsMin ?? 0);
+    stitches.push({
+      hub: hub.name, reverse: true, onward: rail, coach: leg2,
+      finalArrival: coachArrIso,
+      journeyMin: Math.round((new Date(coachArrIso).getTime() - new Date(rail.startTime).getTime()) / 60000),
+    });
+  }
+  return stitches;
+}
+
+// Rank forward + reverse together by total journey, not arrival clock: a coach
+// leaving tonight and arriving 04:49 after an 11 h overnight wait must not
+// outrank a 3 h daytime trip that departs tomorrow. A stitch over 10 h is not
+// a real answer — drop it entirely rather than surface a 13 h "option" next to
+// a good direct coach the caller may already be showing.
+function rankStitches(all) {
+  return all
+    .filter((s) => s.journeyMin > 0 && s.journeyMin <= 600)
+    .sort((a, b) => a.journeyMin - b.journeyMin)
+    .slice(0, 3);
 }
 
 // ── ROME TIME ──
@@ -580,7 +617,7 @@ function slimVtDeparture(d) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.13.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.14.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)
@@ -779,11 +816,12 @@ const routes = {
   // (doesn't know the airport train) can complete on its own.
   'GET /api/via-hub': async (q) => {
     const fLat = Number(q.get('fromLat')), fLon = Number(q.get('fromLon'));
-    const toPlace = q.get('toPlace');
-    if (![fLat, fLon].every(isFinite) || !toPlace) throw httpError(400, 'fromLat/fromLon/toPlace required');
-    if (toPlace.length > 120) throw httpError(400, 'place too long');
+    const tLat = Number(q.get('toLat')), tLon = Number(q.get('toLon'));
+    const toPlace = q.get('toPlace'), fromPlace = q.get('fromPlace');
+    if (![fLat, fLon].every(isFinite)) throw httpError(400, 'fromLat/fromLon required');
+    if ((toPlace && toPlace.length > 120) || (fromPlace && fromPlace.length > 120)) throw httpError(400, 'place too long');
     const dateStr = q.get('date');
-    let days = null, baseDate = romeParts().iso;
+    let days = null, baseDate = romeParts().iso, queryTimeIso;
     if (dateStr && /^\d{4}-\d{2}-\d{2}$/.test(dateStr) && dateStr !== romeParts().iso) {
       const noon = new Date(dateStr + 'T12:00:00Z');
       if (isNaN(noon)) throw httpError(400, 'bad date');
@@ -791,11 +829,17 @@ const routes = {
       d0.min = Math.max(0, Math.min(1439, Number(q.get('afterMin')) || 0));
       const d1 = romeParts(new Date(noon.getTime() + 86400000));
       days = [d0, d1]; baseDate = dateStr;
+      queryTimeIso = romeInstant(dateStr, d0.min);
     }
-    const key = `viahub:${fLat.toFixed(3)},${fLon.toFixed(3)}:${toPlace}:${baseDate}`;
+    const key = `viahub:${fLat.toFixed(3)},${fLon.toFixed(3)}:${toPlace || tLat + ',' + tLon}:${baseDate}`;
     const hit = cacheGet(key);
     if (hit) return hit;
-    const out = { fetchedAt: Date.now(), stitches: await hubStitch(fLat, fLon, toPlace, days, baseDate) };
+    // Forward: coach [origin → hub] + MOTIS [hub → dest]. Reverse: MOTIS
+    // [origin → hub] + coach [hub → dest]. Run whichever the endpoints allow.
+    const all = [];
+    if (toPlace) all.push(...await hubStitch(fLat, fLon, toPlace, days, baseDate));
+    if (fromPlace && [tLat, tLon].every(isFinite)) all.push(...await hubStitchReverse(fromPlace, tLat, tLon, days, baseDate, queryTimeIso));
+    const out = { fetchedAt: Date.now(), stitches: rankStitches(all) };
     cacheSet(key, out, 60 * 1000);
     return out;
   },

@@ -561,7 +561,8 @@ async function maybeRenderViaHub(whenVal, mySeq) {
   let data;
   try {
     ({ data } = await api.viaHub({ fromLat: sel.from.lat, fromLon: sel.from.lon,
-      toPlace: sel.to.place, date: qDate, afterMin: qAfterMin }));
+      fromPlace: sel.from.place, toPlace: sel.to.place,
+      toLat: sel.to.lat, toLon: sel.to.lon, date: qDate, afterMin: qAfterMin }));
   } catch { note.remove(); return false; }
   if (mySeq !== searchSeq) { note.remove(); return false; }
   note.remove();
@@ -573,8 +574,35 @@ async function maybeRenderViaHub(whenVal, mySeq) {
 
 function onwardSummary(it) {
   const transit = (it.legs || []).filter((l) => l.mode !== 'WALK');
-  const names = transit.map((l) => l.routeShortName || l.displayName || modeMeta(l.mode).label);
+  const names = transit.map((l) => isRailReplacement(l) ? 'rail bus' : (l.routeShortName || l.displayName || modeMeta(l.mode).label));
   return names.join(' → ') || 'onward connection';
+}
+
+// Overall start/end clocks — the coach is first (forward) or last (reverse).
+function stitchTimes(s) {
+  return s.reverse
+    ? { dep: romeTime(s.onward.startTime), arr: `${s.coach.arr}${plusTag(s.coach.arrPlus)}` }
+    : { dep: s.coach.dep, arr: romeTime(s.onward.endTime) };
+}
+
+function appendMotisLegs(body, legs) {
+  const opsSeen = new Set();
+  (legs || []).forEach((leg, i) => {
+    if (leg.mode === 'WALK') {
+      const dest = leg.to?.name && !/^(end|start)$/i.test(leg.to.name) ? ` to ${displayName(leg.to.name)}` : '';
+      body.appendChild(el('div', { class: 'leg leg-walk' }, [
+        modeIcon('WALK', 'mode-img mode-img-sm'),
+        el('span', { text: ` ${durationText(leg.duration)} walk` }),
+        el('span', { class: 'muted', text: dest }),
+      ]));
+      return;
+    }
+    body.appendChild(renderTransitLeg(leg, i, opsSeen));
+  });
+}
+
+function coachLegNode(c) {
+  return detailCoachLeg({ route: c.routeId || '', operator: c.operator, from: c.from, to: c.to, dep: c.dep, arr: c.arr });
 }
 
 function renderViaHubBlock(stitches) {
@@ -582,18 +610,24 @@ function renderViaHubBlock(stitches) {
   const kids = [
     el('div', { class: 'direct-head' }, [
       el('strong', { text: 'Coach + train — via a hub' }),
-      el('p', { class: 'muted', text: 'Our coaches aren’t in the main router yet, so this is stitched: a scheduled coach to the city, then the live connection onward.' }),
+      el('p', { class: 'muted', text: 'Our coaches aren’t in the main router yet, so this is stitched: a scheduled coach plus the live connection, changing in the city.' }),
     ]),
   ];
   for (const s of stitches) {
+    const t = stitchTimes(s);
+    const coachLine = `🚌 coach ${s.coach.dep} → ${s.coach.arr}${plusTag(s.coach.arrPlus)} to ${displayName(s.coach.to)}`;
+    const railLine = `${onwardSummary(s.onward)} to ${s.hub}`;
     kids.push(el('button', { class: 'card iti-card stitch-card', onclick: () => openStitchDetail(s) }, [
       el('div', { class: 'iti-times' }, [
-        el('span', { class: 'iti-time', text: `${s.coach.dep} → ${romeTime(s.onward.endTime)}` }),
+        el('span', { class: 'iti-time', text: `${t.dep} → ${t.arr}` }),
         el('span', { class: 'iti-dur', text: `via ${s.hub}` }),
       ]),
-      el('div', { class: 'stitch-legline muted', text:
-        `🚌 coach ${s.coach.dep} → ${s.coach.arr}${plusTag(s.coach.arrPlus)} to ${displayName(s.coach.to)}` }),
-      el('div', { class: 'stitch-legline muted', text: `then ${onwardSummary(s.onward)} → ${displayName(destName())}` }),
+      s.reverse
+        ? el('div', { class: 'stitch-legline muted', text: `🚆 ${railLine}` })
+        : el('div', { class: 'stitch-legline muted', text: coachLine }),
+      s.reverse
+        ? el('div', { class: 'stitch-legline muted', text: `then ${coachLine}` })
+        : el('div', { class: 'stitch-legline muted', text: `then ${onwardSummary(s.onward)} to ${displayName(destName())}` }),
       el('span', { class: 'dep-chevron', text: '›' }),
     ]));
   }
@@ -602,38 +636,41 @@ function renderViaHubBlock(stitches) {
 
 function destName() { return sel.to?.name || 'destination'; }
 
+function stitchChangeNote(atName) {
+  return el('div', { class: 'stitch-change muted', text:
+    `↕ Change at ${displayName(atName)}. The coach isn’t in the live router — confirm its scheduled time with the operator before you rely on this connection.` });
+}
+
 function openStitchDetail(s) {
   const body = el('div', { class: 'iti-detail' });
+  const t = stitchTimes(s);
   body.appendChild(el('div', { class: 'iti-detail-head' }, [
-    el('strong', { text: `${s.coach.dep} → ${romeTime(s.onward.endTime)}` }),
+    el('strong', { text: `${t.dep} → ${t.arr}` }),
     el('span', { class: 'muted', text: ` · via ${s.hub}` }),
   ]));
-  // Leg 1 — our coach feed (scheduled)
-  if (s.coach.fromWalkM > 400) {
-    const w = walkMin(s.coach.fromWalkM);
-    body.appendChild(detailWalkRow(s.coach.fromWalkM,
-      `${w} min walk (${(s.coach.fromWalkM / 1000).toFixed(1)} km) to ${displayName(s.coach.from)} — leave by ~${leaveBy(s.coach.dep, w)}`));
+
+  if (s.reverse) {
+    // MOTIS [origin → hub] first, then our coach [hub → destination].
+    appendMotisLegs(body, s.onward.legs);
+    body.appendChild(stitchChangeNote(s.coach.from));
+    coachWalkIn(body, s.coach);
+    body.appendChild(coachLegNode(s.coach));
+  } else {
+    // Our coach [origin → hub] first, then MOTIS [hub → destination].
+    coachWalkIn(body, s.coach);
+    body.appendChild(coachLegNode(s.coach));
+    body.appendChild(stitchChangeNote(s.coach.to));
+    appendMotisLegs(body, s.onward.legs);
   }
-  body.appendChild(detailCoachLeg({
-    route: s.coach.routeId || '', operator: s.coach.operator,
-    from: s.coach.from, to: s.coach.to, dep: s.coach.dep, arr: s.coach.arr,
-  }));
-  body.appendChild(el('div', { class: 'stitch-change muted', text:
-    `↕ Change at ${displayName(s.coach.to)}. The coach isn’t in the live router — confirm its time with the operator; the connection below is timed from its scheduled arrival.` }));
-  // Leg 2+ — MOTIS onward (includes the walk to the station)
-  const opsSeen = new Set();
-  (s.onward.legs || []).forEach((leg, i) => {
-    if (leg.mode === 'WALK') {
-      body.appendChild(el('div', { class: 'leg leg-walk' }, [
-        modeIcon('WALK', 'mode-img mode-img-sm'),
-        el('span', { text: ` ${durationText(leg.duration)} walk` }),
-        el('span', { class: 'muted', text: leg.to?.name ? ` to ${displayName(leg.to.name)}` : '' }),
-      ]));
-      return;
-    }
-    body.appendChild(renderTransitLeg(leg, i, opsSeen));
-  });
   openSheet(body, { title: 'Trip detail — coach + connection' });
+}
+
+function coachWalkIn(body, coach) {
+  if (coach.fromWalkM > 400) {
+    const w = walkMin(coach.fromWalkM);
+    body.appendChild(detailWalkRow(coach.fromWalkM,
+      `${w} min walk (${(coach.fromWalkM / 1000).toFixed(1)} km) to ${displayName(coach.from)} — leave by ~${leaveBy(coach.dep, w)}`));
+  }
 }
 
 // QA-22: compact day marker — the clock stays the loudest thing on the line
