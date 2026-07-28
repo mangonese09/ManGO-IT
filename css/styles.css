@@ -669,3 +669,8 @@ body { font-size: 1rem; }
   border-top: 1px solid var(--border, rgba(255,255,255,0.12));
 }
 :root[data-theme="light"] .day-head { border-top-color: rgba(0,0,0,0.12); }
+
+/* ── cross-network hub stitch ── */
+.stitch-card { position: relative; }
+.stitch-legline { font-size: 0.85rem; margin-top: 4px; }
+.stitch-change { font-size: 0.8rem; margin: 8px 0; padding-left: 2px; }

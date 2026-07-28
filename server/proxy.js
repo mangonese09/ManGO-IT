@@ -12,7 +12,7 @@ const ROOT = path.join(__dirname, '..');
 
 const TRANSITOUS = 'https://api.transitous.org';
 const VT = 'http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno';
-const UA = 'ManGO-IT/0.12.0 (+https://it.mangonese.dev; miconsig@gmail.com)';
+const UA = 'ManGO-IT/0.13.0 (+https://it.mangonese.dev; miconsig@gmail.com)';
 
 // per-day upstream request counter (Transitous asks consumers to know their volume)
 const dayCounts = {};
@@ -110,6 +110,9 @@ function directSearch(fLat, fLon, tLat, tLon, radius = 1500, days = null, full =
               // R-25: an overnight leg (arrMin >= 1440) arrives the next day.
               arrPlus: Math.floor(arrMin / 1440) - Math.floor(board.min / 1440),
               depMin: board.min + dayOff * 1440,
+              arrAbsMin: arrMin + dayOff * 1440, // absolute minutes for hub-stitch timing
+              arrLat: coachStops[idx].lat, arrLon: coachStops[idx].lon, // drop point for onward routing
+              routeId: trip.r,
             });
           }
           break;
@@ -415,6 +418,91 @@ async function upstream(url, { asText = false, timeoutMs = 25000 } = {}) {
   return { status: res.status, data: asText ? await res.text() : await res.json() };
 }
 
+// ── HUB-STITCH (cross-network) ──
+// Our coach feed isn't in Transitous yet (PR #2327), so a trip that needs our
+// coaches to escape a coach-only town AND a Transitous train/bus for the last
+// leg (the classic case: a small town → Palermo airport) routes on neither
+// path. Bridge it: our coach [origin → a big-city rail hub] + a MOTIS leg
+// [hub → destination]. A stopgap that retires itself once the feed is ingested.
+const HUBS = [
+  { name: 'Palermo', lat: 38.1086, lon: 13.3670 },   // Palermo Centrale
+  { name: 'Catania', lat: 37.5023, lon: 15.0920 },   // Catania Centrale
+  { name: 'Messina', lat: 38.1799, lon: 15.5525 },   // Messina Centrale
+  { name: 'Agrigento', lat: 37.3110, lon: 13.5766 }, // Agrigento (rail node)
+];
+
+// The UTC instant for `minutes` past midnight (Rome) on dateISO — DST-safe by
+// converging the guess against the zone's own rendering (mirrors the client's
+// romeWallToIso). minutes may exceed 1440 (rolls into the next day).
+function romeInstant(dateISO, minutes) {
+  const [y, m, d] = dateISO.split('-').map(Number);
+  const addDays = Math.floor(minutes / 1440), hh = Math.floor((minutes % 1440) / 60), mm = minutes % 60;
+  let guess = Date.UTC(y, m - 1, d + addDays, hh, mm) - 2 * 3600 * 1000;
+  for (let i = 0; i < 3; i++) {
+    const f = new Intl.DateTimeFormat('en-CA', {
+      timeZone: 'Europe/Rome', year: 'numeric', month: '2-digit', day: '2-digit',
+      hour: '2-digit', minute: '2-digit', hour12: false,
+    }).formatToParts(new Date(guess)).reduce((a, p) => (a[p.type] = p.value, a), {});
+    const got = Date.UTC(+f.year, +f.month - 1, +f.day, f.hour === '24' ? 0 : +f.hour, +f.minute);
+    const want = Date.UTC(y, m - 1, d + addDays, hh, mm);
+    if (got === want) break;
+    guess += want - got;
+  }
+  return new Date(guess).toISOString();
+}
+
+// One MOTIS plan with the F-1 tuning, slimmed. Separate from the /api/plan
+// route so the stitcher can reuse it without the cursor/mode plumbing.
+async function motisPlan(fromPlace, toPlace, { timeIso, searchWindow = '21600', numItineraries = '3' } = {}) {
+  const params = new URLSearchParams({
+    fromPlace, toPlace, numItineraries: String(numItineraries), searchWindow: String(searchWindow),
+    maxMatchingDistance: '600', additionalTransferTime: '3', maxPreTransitTime: '3600', maxPostTransitTime: '3600',
+  });
+  if (timeIso) params.set('time', timeIso);
+  const key = `plan:${params.toString()}`;
+  const hit = cacheGet(key);
+  if (hit) return hit.itineraries || [];
+  const { data } = await upstream(`${TRANSITOUS}/api/v3/plan?${params}`, { timeoutMs: 15000 });
+  const its = (data.itineraries || []).map(slimItinerary);
+  cacheSet(key, { fetchedAt: Date.now(), itineraries: its }, 60 * 1000);
+  return its;
+}
+
+// Coach [origin → hub] + MOTIS [hub → dest]. Returns the best stitch per hub
+// (earliest final arrival), sorted, capped. `days`/`baseDate` mirror /api/direct.
+async function hubStitch(fLat, fLon, toPlace, days, baseDate) {
+  const stitches = [];
+  for (const hub of HUBS) {
+    if (haversineM(fLat, fLon, hub.lat, hub.lon) < 8000) continue; // already at/near the hub
+    const coach = directSearch(fLat, fLon, hub.lat, hub.lon, 2500, days, true);
+    const leg1 = (coach.results || [])[0]; // earliest coach that reaches the hub
+    if (!leg1) continue;
+    const boardIso = romeInstant(baseDate, (leg1.arrAbsMin ?? 0) + 15); // 15-min transfer cushion
+    // Onward search starts from the coach's ACTUAL drop point, so MOTIS walks
+    // to whichever station is nearest (maxPreTransitTime 60 min) and renders
+    // that walk as a leg — the drop is rarely on the platform itself.
+    const onwardFrom = (isFinite(leg1.arrLat) && isFinite(leg1.arrLon)) ? `${leg1.arrLat},${leg1.arrLon}` : `${hub.lat},${hub.lon}`;
+    let onward;
+    try { onward = await motisPlan(onwardFrom, toPlace, { timeIso: boardIso, searchWindow: '21600' }); }
+    catch { continue; }
+    const best = (onward || [])[0];
+    if (!best) continue;
+    const depInstant = romeInstant(baseDate, leg1.depMin ?? 0);
+    const journeyMin = Math.round((new Date(best.endTime).getTime() - new Date(depInstant).getTime()) / 60000);
+    stitches.push({
+      hub: hub.name, coach: leg1, onward: best,
+      finalArrival: best.endTime, journeyMin,
+    });
+  }
+  // Rank by total journey, not arrival clock: a coach leaving tonight and
+  // arriving 04:49 after an 11 h overnight wait must not outrank a 3 h daytime
+  // trip that departs tomorrow. Drop absurdly long stitches unless nothing else.
+  const sane = stitches.filter((s) => s.journeyMin <= 600);
+  const pool = sane.length ? sane : stitches;
+  pool.sort((a, b) => a.journeyMin - b.journeyMin);
+  return pool.slice(0, 2);
+}
+
 // ── ROME TIME ──
 // RFC1123-ish string ViaggiaTreno expects: "Sat Jul 25 2026 18:30:00 GMT+0200"
 function romeNowString(now = new Date()) {
@@ -492,7 +580,7 @@ function slimVtDeparture(d) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.12.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.13.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)
@@ -682,6 +770,33 @@ const routes = {
       for (const r of out.results || []) r.day = dayLabels[r.day] || r.day;
       for (const c of out.transfers || []) c.day = dayLabels[c.day] || c.day;
     }
+    return out;
+  },
+
+  // Cross-network stitch: our coach [origin → big-city rail hub] + a MOTIS leg
+  // [hub → destination]. Answers trips like "small coach town → Palermo airport"
+  // that neither the pure-MOTIS plan (doesn't know our coaches) nor /api/direct
+  // (doesn't know the airport train) can complete on its own.
+  'GET /api/via-hub': async (q) => {
+    const fLat = Number(q.get('fromLat')), fLon = Number(q.get('fromLon'));
+    const toPlace = q.get('toPlace');
+    if (![fLat, fLon].every(isFinite) || !toPlace) throw httpError(400, 'fromLat/fromLon/toPlace required');
+    if (toPlace.length > 120) throw httpError(400, 'place too long');
+    const dateStr = q.get('date');
+    let days = null, baseDate = romeParts().iso;
+    if (dateStr && /^\d{4}-\d{2}-\d{2}$/.test(dateStr) && dateStr !== romeParts().iso) {
+      const noon = new Date(dateStr + 'T12:00:00Z');
+      if (isNaN(noon)) throw httpError(400, 'bad date');
+      const d0 = romeParts(noon);
+      d0.min = Math.max(0, Math.min(1439, Number(q.get('afterMin')) || 0));
+      const d1 = romeParts(new Date(noon.getTime() + 86400000));
+      days = [d0, d1]; baseDate = dateStr;
+    }
+    const key = `viahub:${fLat.toFixed(3)},${fLon.toFixed(3)}:${toPlace}:${baseDate}`;
+    const hit = cacheGet(key);
+    if (hit) return hit;
+    const out = { fetchedAt: Date.now(), stitches: await hubStitch(fLat, fLon, toPlace, days, baseDate) };
+    cacheSet(key, out, 60 * 1000);
     return out;
   },
 

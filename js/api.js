@@ -65,6 +65,13 @@ export const api = {
     return getJson(url, { source: 'coachfeed' });
   },
 
+  viaHub: ({ fromLat, fromLon, toPlace, date, afterMin }) => {
+    let url = `/api/via-hub?fromLat=${fromLat.toFixed(4)}&fromLon=${fromLon.toFixed(4)}&toPlace=${encodeURIComponent(toPlace)}`;
+    if (date) url += `&date=${date}`;
+    if (afterMin != null) url += `&afterMin=${afterMin}`;
+    return getJson(url, { source: 'transitous', allowStale: false });
+  },
+
   health: () =>
     getJson('/api/health', { source: null }),
 
