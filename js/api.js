@@ -49,6 +49,16 @@ export const api = {
       cacheKey: `stops:${lat.toFixed(3)},${lon.toFixed(3)}`, source: 'transitous',
     }),
 
+  mapStops: (lat, lon, r = 1500) =>
+    getJson(`/api/map-stops?lat=${lat.toFixed(4)}&lon=${lon.toFixed(4)}&r=${r}`, {
+      cacheKey: `mapstops:${lat.toFixed(3)},${lon.toFixed(3)},${r}`, source: 'transitous',
+    }),
+
+  stopRoutes: ({ ci, stopId }) =>
+    getJson(`/api/stop-routes?${ci != null ? `ci=${ci}` : `stopId=${encodeURIComponent(stopId)}`}`, {
+      cacheKey: `sr:${ci != null ? 'c' + ci : stopId}`, source: 'transitous',
+    }),
+
   stoptimes: (stopId, n = 6) =>
     getJson(`/api/stoptimes?stopId=${encodeURIComponent(stopId)}&n=${n}`, { source: 'transitous' }),
 

@@ -603,6 +603,42 @@ body { font-size: 1rem; }
 }
 .map-locate-btn img { width: 24px; height: 24px; object-fit: contain; }
 
+/* Dark basemap is near-black and hard to read — lift it to a legible dark grey
+   (roads + labels emerge) while staying cohesive with the dark app chrome. */
+:root[data-theme="dark"] .leaflet-tile-pane {
+  filter: brightness(1.6) contrast(0.86) saturate(0.9);
+}
+
+/* Route highlight (click a stop): its routes draw as coloured lines, the stops
+   on those routes stay bright, everything else fades back. */
+.stop-pin img { transition: opacity 0.15s, transform 0.15s; }
+#map-canvas.has-highlight .stop-pin:not(.lit) img { opacity: 0.28; }
+.stop-pin.lit img { transform: scale(1.18); box-shadow: 0 2px 8px rgba(0,0,0,0.55); }
+.stop-pin.origin img { transform: scale(1.35); outline: 3px solid var(--mango, #ffb454); border-radius: 50%; }
+
+.map-info-bar {
+  position: absolute; left: 8px; right: 8px; bottom: 8px; z-index: 500;
+  display: flex; align-items: center; gap: 10px;
+  background: var(--bg-surface, #1e1e1e); color: var(--text-primary, #f2f2f2);
+  border: 1px solid var(--border, rgba(255,255,255,0.12));
+  border-radius: var(--radius-md, 10px); padding: 10px 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+.map-info-bar .mib-main { flex: 1; min-width: 0; }
+.map-info-bar .mib-name { font-weight: 700; font-size: 0.95rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.map-info-bar .mib-sub { font-size: 0.8rem; color: var(--text-muted, #9a9a9a); }
+.map-info-bar .mib-btn {
+  background: var(--mango, #ffb454); color: #1a1206; border: none; border-radius: 8px;
+  padding: 8px 12px; font: inherit; font-weight: 600; font-size: 0.85rem; cursor: pointer; white-space: nowrap;
+}
+.map-info-bar .mib-x {
+  background: var(--bg-elevated, #2a2a2a); color: inherit; border: none; border-radius: 8px;
+  width: 34px; height: 34px; font-size: 1rem; cursor: pointer; flex-shrink: 0;
+}
+.map-legend { display: flex; flex-wrap: wrap; gap: 4px 10px; margin-top: 4px; }
+.map-legend span { display: inline-flex; align-items: center; gap: 4px; font-size: 0.72rem; color: var(--text-muted, #9a9a9a); }
+.map-legend i { width: 14px; height: 3px; border-radius: 2px; display: inline-block; }
+
 /* leaflet chrome on dark tiles */
 :root[data-theme="dark"] .leaflet-control-zoom a {
   background: #1e242e; color: #e8f0ea; border-color: rgba(255,255,255,0.15);

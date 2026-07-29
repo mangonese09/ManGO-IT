@@ -65,10 +65,11 @@ function modeImgSrc(mode) {
   return '/icons/modes/bus.png';
 }
 
-function stopIcon(mode) {
+function stopIcon(mode, kind) {
+  const src = kind === 'coach' ? '/icons/modes/bus.png' : modeImgSrc(mode);
   return window.L.divIcon({
-    className: 'stop-pin',
-    html: `<img src="${modeImgSrc(mode)}" alt="">`,
+    className: `stop-pin${kind === 'coach' ? ' pin-coach' : ''}`,
+    html: `<img src="${src}" alt="">`,
     iconSize: [30, 30], iconAnchor: [15, 15],
   });
 }
@@ -84,37 +85,122 @@ function showYou(pos) {
   }
 }
 
-// Stops for the visible area: center + radius from the viewport (server caps
-// r at 5 km / 40 closest stops — zoomed way out this is honest sampling of
-// the middle, and the zoom hint below the map says so).
+// Stops for the visible area — transit (Transitous) AND our coach stops. The
+// server caps at 60 transit + 90 coach nearest the centre; the zoom hint says
+// zoomed-way-out is honest sampling of the middle.
 let loadSeq = 0;
 async function loadVisibleStops() {
-  if (!map) return;
+  if (!map || highlightActive) return; // don't churn markers under an active highlight
   const seq = ++loadSeq;
   const c = map.getCenter();
   const corner = map.getBounds().getNorthEast();
-  const r = Math.min(5000, Math.max(400, Math.round(map.distance(c, corner))));
+  const r = Math.min(8000, Math.max(500, Math.round(map.distance(c, corner))));
   try {
-    const { data: stops } = await api.nearbyStops(c.lat, c.lng, r);
-    if (seq !== loadSeq || !map) return; // superseded by a later pan
+    const { data } = await api.mapStops(c.lat, c.lng, r);
+    if (seq !== loadSeq || !map || highlightActive) return;
+    const stops = data.stops || [];
     const keep = new Set();
     for (const s of stops) {
-      keep.add(s.stopId);
-      if (markers.has(s.stopId)) continue;
+      keep.add(s.id);
+      if (markers.has(s.id)) continue;
+      const meta = { id: s.id, kind: s.kind, name: s.name, stopId: s.kind === 'transit' ? s.id : null, lat: s.lat, lon: s.lon };
       const m = window.L.marker([s.lat, s.lon], {
-        icon: stopIcon((s.modes || [])[0]), keyboard: false,
+        icon: stopIcon((s.modes || [])[0], s.kind), keyboard: false,
       }).addTo(map);
+      m.meta = meta;
       m.bindTooltip(displayName(s.name), { direction: 'top', offset: [0, -14] });
-      m.on('click', () => openStopSchedule({ name: s.name, stopId: s.stopId, lat: s.lat, lon: s.lon }));
-      markers.set(s.stopId, m);
+      m.on('click', () => highlightStop(meta));
+      markers.set(s.id, m);
     }
-    // drop markers far outside the current view so long sessions stay light
     const limit = r * 2.5;
     for (const [id, m] of markers) {
       if (keep.has(id)) continue;
       if (map.distance(c, m.getLatLng()) > limit) { m.remove(); markers.delete(id); }
     }
   } catch { /* pan on — stale markers beat an error state */ }
+}
+
+// ── CLICK-TO-HIGHLIGHT ROUTES ──
+const ROUTE_COLORS = { COACH: '#ffb454', BUS: '#46c878', RAIL: '#4a90e2', REGIONAL_RAIL: '#4a90e2',
+  HIGHSPEED_RAIL: '#4a90e2', LONG_DISTANCE: '#4a90e2', TRAM: '#e267c8', METRO: '#e2a04a', SUBWAY: '#e2a04a', FERRY: '#2ac0c0' };
+function routeColor(mode, i) { return ROUTE_COLORS[mode] || ['#ffb454', '#46c878', '#4a90e2', '#e267c8', '#e2a04a'][i % 5]; }
+function modeLabel(mode) {
+  if (/RAIL|LONG_DISTANCE/.test(mode || '')) return 'train';
+  if (mode === 'COACH') return 'coach';
+  if (/TRAM/.test(mode || '')) return 'tram';
+  if (/METRO|SUBWAY/.test(mode || '')) return 'metro';
+  if (/FERRY/.test(mode || '')) return 'ferry';
+  return 'bus';
+}
+
+let highlightLayer = null;
+let highlightActive = false;
+let infoBar = null;
+
+function clearHighlight() {
+  highlightActive = false;
+  if (highlightLayer) { highlightLayer.remove(); highlightLayer = null; }
+  const cv = document.getElementById('map-canvas');
+  if (cv) cv.classList.remove('has-highlight');
+  for (const m of markers.values()) {
+    const e = m.getElement();
+    if (e) e.classList.remove('lit', 'origin');
+  }
+  if (infoBar) { infoBar.remove(); infoBar = null; }
+}
+
+async function highlightStop(meta) {
+  const L = window.L;
+  clearHighlight();
+  let data;
+  try {
+    ({ data } = await api.stopRoutes(meta.kind === 'coach' ? { ci: meta.id.slice(1) } : { stopId: meta.id }));
+  } catch { openStopSchedule(meta); return; }
+  const routes = (data && data.routes) || [];
+  if (!routes.length) { openStopSchedule(meta); return; } // nothing to draw — just show times
+
+  highlightActive = true;
+  highlightLayer = L.layerGroup().addTo(map);
+  const litPts = [];
+  routes.forEach((rt, i) => {
+    const pts = rt.stops.map((s) => [s.lat, s.lon]);
+    L.polyline(pts, { color: routeColor(rt.mode, i), weight: 4, opacity: 0.85, lineJoin: 'round' }).addTo(highlightLayer);
+    litPts.push(...rt.stops);
+  });
+  // Frame the routes without zooming past street level.
+  const all = routes.flatMap((r) => r.stops.map((s) => [s.lat, s.lon]));
+  if (all.length) map.fitBounds(L.latLngBounds(all).pad(0.12), { maxZoom: 13, animate: true });
+  document.getElementById('map-canvas').classList.add('has-highlight');
+  for (const [id, m] of markers) {
+    const e = m.getElement();
+    if (!e) continue;
+    if (id === meta.id) { e.classList.add('lit', 'origin'); continue; }
+    const ll = m.getLatLng();
+    if (litPts.some((s) => map.distance(ll, [s.lat, s.lon]) < 45)) e.classList.add('lit');
+  }
+  showInfoBar(meta, routes);
+}
+
+function showInfoBar(meta, routes) {
+  const holder = document.getElementById('map-canvas');
+  if (infoBar) infoBar.remove();
+  const legend = el('div', { class: 'map-legend' });
+  routes.slice(0, 6).forEach((rt, i) => {
+    legend.appendChild(el('span', {}, [
+      el('i', { style: `background:${routeColor(rt.mode, i)}` }),
+      el('span', { text: displayName((rt.name || modeLabel(rt.mode)).slice(0, 22)) }),
+    ]));
+  });
+  infoBar = el('div', { class: 'map-info-bar' }, [
+    el('div', { class: 'mib-main' }, [
+      el('div', { class: 'mib-name', text: displayName(meta.name) }),
+      el('div', { class: 'mib-sub', text: `${routes.length} route${routes.length > 1 ? 's' : ''} here` }),
+      legend,
+    ]),
+    el('button', { class: 'mib-btn', text: 'Schedule', onclick: () => openStopSchedule(meta) }),
+    el('button', { class: 'mib-x', 'aria-label': 'Clear', text: '✕', onclick: clearHighlight }),
+  ]);
+  holder.appendChild(infoBar);
 }
 
 function ensureTiles() {
@@ -169,6 +255,7 @@ async function initMap(pos) {
     clearTimeout(moveTimer);
     moveTimer = setTimeout(loadVisibleStops, 350);
   });
+  map.on('click', clearHighlight); // tap the map background to drop a highlight
   loadVisibleStops();
 }
 
@@ -186,7 +273,7 @@ export async function renderMapTab() {
 
   holder.innerHTML = '';
   holder.appendChild(el('div', { id: 'map-canvas' }));
-  holder.appendChild(el('p', { class: 'muted map-note', text: 'Tap a stop for today’s schedule · zoom in for more stops.' }));
+  holder.appendChild(el('p', { class: 'muted map-note', text: 'Tap a stop to trace its routes · tap the map to clear · zoom in for more stops.' }));
 
   try {
     await loadLeaflet();

@@ -12,7 +12,7 @@ const ROOT = path.join(__dirname, '..');
 
 const TRANSITOUS = 'https://api.transitous.org';
 const VT = 'http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno';
-const UA = 'ManGO-IT/0.16.0 (+https://it.mangonese.dev; miconsig@gmail.com)';
+const UA = 'ManGO-IT/0.17.0 (+https://it.mangonese.dev; miconsig@gmail.com)';
 
 // per-day upstream request counter (Transitous asks consumers to know their volume)
 const dayCounts = {};
@@ -637,7 +637,7 @@ function slimVtDeparture(d) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.16.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.17.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)
@@ -771,6 +771,94 @@ const routes = {
       dist: Math.round(haversineM(lat, lon, s.lat, s.lon)),
     })).sort((a, b) => a.dist - b.dist).slice(0, 40);
     cacheSet(key, out, 5 * 60 * 1000);
+    return out;
+  },
+
+  // Map tab: transit stops (Transitous) + our own coach stops in one bbox call,
+  // each tagged with kind so the map can pin and route-highlight both.
+  'GET /api/map-stops': async (q) => {
+    const lat = Number(q.get('lat')), lon = Number(q.get('lon'));
+    if (!isFinite(lat) || !isFinite(lon)) throw httpError(400, 'lat/lon required');
+    const r = Math.min(Number(q.get('r')) || 1500, 8000);
+    const dLat = r / 111320, dLon = r / (111320 * Math.cos((lat * Math.PI) / 180));
+    const key = `mapstops:${lat.toFixed(3)},${lon.toFixed(3)},${r}`;
+    const hit = cacheGet(key);
+    if (hit) return hit;
+    let transit = [];
+    try {
+      const { data } = await upstream(`${TRANSITOUS}/api/v1/map/stops?min=${lat - dLat},${lon - dLon}&max=${lat + dLat},${lon + dLon}`);
+      transit = (data || []).map((s) => ({
+        kind: 'transit', id: s.stopId, name: s.name, lat: s.lat, lon: s.lon,
+        modes: s.modes || [], dist: Math.round(haversineM(lat, lon, s.lat, s.lon)),
+      }));
+    } catch { /* coach stops still render if Transitous is down */ }
+    const coach = [];
+    for (let i = 0; i < coachStops.length; i++) {
+      const s = coachStops[i];
+      if (s.lat >= lat - dLat && s.lat <= lat + dLat && s.lon >= lon - dLon && s.lon <= lon + dLon) {
+        coach.push({ kind: 'coach', id: `c${i}`, name: s.n, lat: s.lat, lon: s.lon, modes: ['COACH'], dist: Math.round(haversineM(lat, lon, s.lat, s.lon)) });
+      }
+    }
+    transit.sort((a, b) => a.dist - b.dist);
+    coach.sort((a, b) => a.dist - b.dist);
+    const out = { fetchedAt: Date.now(), stops: [...transit.slice(0, 60), ...coach.slice(0, 90)] };
+    cacheSet(key, out, 5 * 60 * 1000);
+    return out;
+  },
+
+  // Routes serving a stop, with geometry, for the map's click-to-highlight.
+  // Coach stops (?ci=<index>) resolve from our own feed (full paths). Transit
+  // stops (?stopId=) resolve via MOTIS stoptimes → trip geometry, capped.
+  'GET /api/stop-routes': async (q) => {
+    const ci = q.get('ci'), stopId = q.get('stopId');
+    if (ci != null && /^\d+$/.test(ci)) {
+      const idx = Number(ci);
+      if (idx < 0 || idx >= coachStops.length) throw httpError(400, 'bad ci');
+      const key = `sr:c${idx}`;
+      const hit = cacheGet(key);
+      if (hit) return hit;
+      const byRoute = new Map(); // route name → longest stop sequence seen
+      for (const t of coachTrips) {
+        if (!t.s.some(([i]) => i === idx)) continue;
+        const prev = byRoute.get(t.r);
+        if (!prev || t.s.length > prev.len) {
+          byRoute.set(t.r, { len: t.s.length, operator: t.op, stops: t.s.map(([i]) => ({ name: coachStops[i].n, lat: coachStops[i].lat, lon: coachStops[i].lon })) });
+        }
+      }
+      const routes = [...byRoute.entries()].slice(0, 10).map(([name, v]) => ({ name, mode: 'COACH', operator: v.operator, stops: v.stops }));
+      const o = coachStops[idx];
+      const out = { origin: { name: o.n, lat: o.lat, lon: o.lon }, routes };
+      cacheSet(key, out, 10 * 60 * 1000);
+      return out;
+    }
+    if (!stopId) throw httpError(400, 'ci or stopId required');
+    const key = `sr:${stopId}`;
+    const hit = cacheGet(key);
+    if (hit) return hit;
+    const { data } = await upstream(`${TRANSITOUS}/api/v1/stoptimes?stopId=${encodeURIComponent(stopId)}&n=16`);
+    const seen = new Set(), trips = [];
+    for (const st of data.stopTimes || []) {
+      const rk = st.routeShortName || st.displayName;
+      if (!rk || seen.has(rk) || !st.tripId) continue;
+      seen.add(rk);
+      trips.push({ route: rk, mode: st.mode, tripId: st.tripId });
+      if (trips.length >= 5) break; // cap MOTIS trip calls per click
+    }
+    const routes = [];
+    for (const t of trips) {
+      try {
+        const { data: td } = await upstream(`${TRANSITOUS}/api/v1/trip?tripId=${encodeURIComponent(t.tripId)}`, { timeoutMs: 8000 });
+        const leg = (td.legs || []).find((l) => l.mode !== 'WALK');
+        if (!leg) continue;
+        const stops = [leg.from, ...(leg.intermediateStops || []), leg.to]
+          .filter((p) => p && isFinite(p.lat) && isFinite(p.lon))
+          .map((p) => ({ name: p.name, lat: p.lat, lon: p.lon }));
+        if (stops.length >= 2) routes.push({ name: t.route, mode: t.mode, stops });
+      } catch { /* skip a trip that won't resolve */ }
+    }
+    const o = data.stopTimes?.[0]?.place;
+    const out = { origin: o ? { name: o.name, lat: o.lat, lon: o.lon } : null, routes };
+    cacheSet(key, out, 10 * 60 * 1000);
     return out;
   },
 
