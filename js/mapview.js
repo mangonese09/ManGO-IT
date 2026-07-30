@@ -107,10 +107,13 @@ function modeImgSrc(mode) {
   return '/icons/modes/bus.png';
 }
 
-function stopIcon(mode, kind) {
+function stopIcon(mode, kind, merged = false) {
   const src = kind === 'coach' ? '/icons/modes/bus.png' : modeImgSrc(mode);
+  // Merged depot pins (several stops folded into one, opening the stop picker)
+  // get a distinct teal disc so it's obvious the tap leads to a choice of stops.
+  const cls = `stop-pin${kind === 'coach' ? ' pin-coach' : ''}${merged ? ' pin-merged' : ''}`;
   return window.L.divIcon({
-    className: `stop-pin${kind === 'coach' ? ' pin-coach' : ''}`,
+    className: cls,
     html: `<img src="${src}" alt="">`,
     iconSize: [30, 30], iconAnchor: [15, 15],
   });
@@ -217,7 +220,7 @@ function renderIndividual(all, c, r) {
     const ll = pos.get(s.id) || [s.lat, s.lon];
     if (markers.has(s.id)) { markers.get(s.id).setLatLng(ll); continue; }
     const meta = { id: s.id, kind: s.kind, ci: s.kind === 'coach' ? Number(s.id.slice(1)) : null, name: s.name, stopId: s.kind === 'transit' ? s.id : null, lat: s.lat, lon: s.lon, members: s.members || null };
-    const m = window.L.marker(ll, { icon: stopIcon((s.modes || [])[0], s.kind), keyboard: false }).addTo(map);
+    const m = window.L.marker(ll, { icon: stopIcon((s.modes || [])[0], s.kind, s.merged > 1), keyboard: false }).addTo(map);
     m.meta = meta;
     m.bindTooltip(displayName(s.name), { direction: 'top', offset: [0, -14] });
     m.on('click', () => openStopRoutes(meta));

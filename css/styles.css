@@ -795,6 +795,12 @@ body { font-size: 1rem; }
 
 /* Route highlight (click a stop): its routes draw as coloured lines, the stops
    on those routes stay bright, everything else fades back. */
+/* Merged depot pin: teal disc + ring signals "several stops — tap to pick one". */
+.stop-pin.pin-merged img {
+  background: #0f8a7e;
+  border-color: #3dd6ac;
+  box-shadow: 0 0 0 2px rgba(61,214,172,0.45), 0 1px 4px rgba(0,0,0,0.5);
+}
 .stop-pin img { transition: opacity 0.15s, transform 0.15s; }
 #map-canvas.has-highlight .stop-pin:not(.lit) img { opacity: 0.28; }
 .stop-pin.lit img { transform: scale(1.18); box-shadow: 0 2px 8px rgba(0,0,0,0.55); }
