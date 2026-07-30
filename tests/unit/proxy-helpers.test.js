@@ -3,28 +3,31 @@ const { test } = require('node:test');
 const assert = require('node:assert');
 const {
   romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, inSicily, dropDominated,
-  parseBias, geoScore, mergeStopsByName,
+  parseBias, geoScore, clusterStopsByProximity,
 } = require('../../server/proxy.js');
 
-// ── MAP STOP DE-DUPLICATION (big-hub direction pairs / platform variants) ──
-test('mergeStopsByName collapses same-name stops within 250m, unions modes', () => {
-  const merged = mergeStopsByName([
-    { id: 'a', name: 'STAZIONE CENTRALE', lat: 38.11016, lon: 13.36802, modes: ['BUS'], dist: 40 },
-    { id: 'b', name: 'STAZIONE CENTRALE', lat: 38.11009, lon: 13.36806, modes: ['TRAM'], dist: 12 }, // ~8m away, nearer
-    { id: 'c', name: 'GARIBALDI', lat: 38.11362, lon: 13.36688, modes: ['BUS'], dist: 300 },
-  ]);
-  assert.strictEqual(merged.length, 2, 'the two STAZIONE CENTRALE collapse; GARIBALDI stays');
-  const sc = merged.find((s) => s.name === 'STAZIONE CENTRALE');
-  assert.strictEqual(sc.id, 'b', 'keeps the nearer stop as representative');
-  assert.deepStrictEqual([...sc.modes].sort(), ['BUS', 'TRAM'], 'modes unioned');
+// ── MAP STOP DE-DUPLICATION (dense depot/interchange collapses to one pin) ──
+test('clusterStopsByProximity folds all stops within 200m into one, regardless of name', () => {
+  // three station-area stops within ~60m + one 300m+ away
+  const out = clusterStopsByProximity([
+    { id: 'a', name: 'STAZIONE CENTRALE LINCOLN', lat: 38.11016, lon: 13.36802, modes: ['BUS'], dist: 40 },
+    { id: 'b', name: 'STAZIONE CENTRALE BALSAMO', lat: 38.11024, lon: 13.36735, modes: ['TRAM'], dist: 12 }, // nearest → seed
+    { id: 'c', name: 'STAZIONE CENTRALE PENSILINA', lat: 38.11031, lon: 13.36686, modes: ['BUS'], dist: 55 },
+    { id: 'd', name: 'GARIBALDI', lat: 38.11362, lon: 13.36688, modes: ['BUS'], dist: 400 },
+  ], 200);
+  assert.strictEqual(out.length, 2, 'the three station stops collapse to one; GARIBALDI stays');
+  const hub = out.find((s) => s.id === 'b');
+  assert.strictEqual(hub.merged, 3, 'seed folded in the other two');
+  assert.deepStrictEqual([...hub.modes].sort(), ['BUS', 'TRAM'], 'modes unioned');
+  assert.ok(out.some((s) => s.id === 'd' && s.merged === 1), 'the far stop stays on its own');
 });
 
-test('mergeStopsByName keeps same-name stops that are far apart (distinct places)', () => {
-  const merged = mergeStopsByName([
-    { id: 'a', name: 'ROMA', lat: 38.1100, lon: 13.3600, modes: [], dist: 10 },
-    { id: 'b', name: 'ROMA', lat: 38.2000, lon: 13.5000, modes: [], dist: 9000 }, // ~15km away
-  ]);
-  assert.strictEqual(merged.length, 2, 'same name but far apart → not merged');
+test('clusterStopsByProximity leaves normally-spaced stops alone', () => {
+  const out = clusterStopsByProximity([
+    { id: 'a', name: 'X', lat: 38.1100, lon: 13.3600, modes: [], dist: 10 },
+    { id: 'b', name: 'Y', lat: 38.1130, lon: 13.3600, modes: [], dist: 340 }, // ~334m away
+  ], 200);
+  assert.strictEqual(out.length, 2, 'stops >200m apart are not merged');
 });
 
 // ── GEOCODE LOCATION BIAS + RANKING (all-Italy addresses) ──
