@@ -343,10 +343,10 @@ function openStopPicker(meta) {
   for (const s of meta.members) {
     body.appendChild(el('button', {
       class: 'stop-picker-row',
-      onclick: () => {
-        closeSheet();
-        openStopSchedule({ id: s.id, kind: 'transit', stopId: s.id, name: s.name, lat: s.lat, lon: s.lon });
-      },
+      // Stack the departures ON TOP of the picker (don't closeSheet first — its
+      // history.back() fires a popstate that would close the board we just
+      // opened). Closing the board then returns to this stop list.
+      onclick: () => openStopSchedule({ id: s.id, kind: 'transit', stopId: s.id, name: s.name, lat: s.lat, lon: s.lon }),
     }, [
       el('span', { class: 'sp-icon' }, [modeIcon('BUS', 'mode-img mode-img-sm')]),
       el('span', { class: 'sp-name', text: displayName(s.name) }),
