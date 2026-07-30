@@ -1,8 +1,8 @@
 // ── SAVED (favorite stops + pinned departures) ──
 import { api } from './api.js';
-import { el, modeMeta, modeIcon, confirmModal, openSheet } from './ui.js';
+import { el, modeMeta, modeIcon, confirmModal, openSheet, closeSheet, placeIcon, placeIconKey, PLACE_ICONS } from './ui.js';
 import { romeTime, romeDay, countdownText, isOtherRomeDay } from './time.js';
-import { getSaved, purgeSaved, removeSaved, getFavStops, addFavStop, removeFavStop, getPlacesSorted, addPlace, removePlace, setHomePlace } from './store.js';
+import { getSaved, purgeSaved, removeSaved, getFavStops, addFavStop, removeFavStop, getPlacesSorted, addPlace, removePlace, setHomePlace, setPlaceIcon } from './store.js';
 import { toast } from './toast.js';
 import { displayName } from './names.js';
 
@@ -280,7 +280,7 @@ async function placeSuggest(q) {
           renderSaved();
         },
       }, [
-        el('span', { class: 'suggest-icon' }, [el('span', { class: 'mode-emoji', text: '📍' })]),
+        el('span', { class: 'suggest-icon' }, [placeIcon('pin')]),
         el('span', { class: 'suggest-name', text: displayName(r.name) }),
         bits.length ? el('span', { class: 'suggest-area', text: bits.join(' · ') }) : null,
       ]));
@@ -288,10 +288,31 @@ async function placeSuggest(q) {
     list.hidden = rows.length === 0;
   } catch { list.hidden = true; }
 }
+// Icon picker: tap a place's icon → a sheet of the mango icon set. Picking one
+// persists it (setPlaceIcon) and re-renders. Home stays a separate toggle.
+function openIconPicker(p) {
+  const grid = el('div', { class: 'icon-picker-grid' });
+  for (const opt of PLACE_ICONS) {
+    const active = placeIconKey(p) === opt.key;
+    grid.appendChild(el('button', {
+      class: `icon-picker-cell${active ? ' active' : ''}`,
+      'aria-label': opt.label, 'aria-pressed': String(active),
+      onclick: () => { setPlaceIcon(p.key, opt.key); closeSheet(); renderSaved(); },
+    }, [
+      placeIcon(opt.key, 'place-icon-img place-icon-lg'),
+      el('span', { class: 'icon-picker-label', text: opt.label }),
+    ]));
+  }
+  openSheet(el('div', { class: 'icon-picker' }, [grid]), { title: `Icon for ${displayName(p.name)}` });
+}
+
 function placeCard(p) {
   return el('div', { class: 'card fav-place-card' }, [
     el('div', { class: 'fav-stop-head' }, [
-      el('span', { class: 'suggest-icon' }, [el('span', { class: 'mode-emoji', text: p.home ? '🏠' : '📍' })]),
+      el('button', {
+        class: 'place-icon-btn', 'aria-label': 'Change icon', title: 'Change icon',
+        onclick: () => openIconPicker(p),
+      }, [placeIcon(placeIconKey(p))]),
       el('div', { class: 'dep-main' }, [
         el('span', { class: 'dep-route', text: p.label || displayName(p.name) }),
         el('span', { class: 'muted dep-headsign', text: p.home ? 'Home' : 'saved place' }),

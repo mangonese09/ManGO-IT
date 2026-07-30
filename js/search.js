@@ -1,6 +1,6 @@
 // ── A→B SEARCH ──
 import { api } from './api.js';
-import { el, modeMeta, modeClass, modeIcon, isRailMode, liveBadge, staleChip, openSheet } from './ui.js';
+import { el, modeMeta, modeClass, modeIcon, isRailMode, liveBadge, staleChip, openSheet, placeIcon, placeIconKey } from './ui.js';
 import { romeTime, romeDay, romeHour, dayPartKey, DAYPARTS, durationText, isOtherRomeDay, romeWallToIso, whenLabel } from './time.js';
 import { displayName } from './names.js';
 import { worstTransferMin, transferTier, transferChipText, imminentText, legStripModel, groupByDaypart, plusTag, isRailReplacement } from './itinerary.js';
@@ -149,7 +149,7 @@ function showQuickPicks(which, list, input) {
         }
       },
     }, [
-      el('span', { class: 'suggest-icon' }, [el('span', { class: 'mode-emoji', text: p.home ? '🏠' : '📍' })]),
+      el('span', { class: 'suggest-icon' }, [placeIcon(placeIconKey(p))]),
       el('span', { class: 'suggest-name', text: p.label || displayName(p.name) }),
       el('span', { class: 'suggest-area', text: p.home ? 'Home' : 'saved place' }),
     ]));
@@ -313,8 +313,9 @@ async function suggest(which, q) {
     list.innerHTML = '';
     for (const r of data.slice(0, 8)) {
       // every result states WHAT it is: train station / metro / tram /
-      // city bus stop / intercity coach stop / town / address
-      let iconEl = el('span', { class: 'mode-emoji', text: '📌' });
+      // city bus stop / intercity coach stop / town / address. The neutral
+      // default is the mango pin (was a bare red 📌 emoji).
+      let iconEl = placeIcon('pin');
       let kind = '';
       if (r.type === 'STOP') {
         const m = r.modes || [];

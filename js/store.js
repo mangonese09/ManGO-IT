@@ -72,8 +72,22 @@ export function addPlace(place) {
 }
 export function removePlace(key) { write('places', getPlaces().filter((p) => p.key !== key)); }
 export function isPlace(key) { return getPlaces().some((p) => p.key === key); }
+// Set a place's chosen icon (one of PLACE_ICONS keys). Persists across renders.
+export function setPlaceIcon(key, icon) {
+  write('places', getPlaces().map((p) => (p.key === key ? { ...p, icon } : p)));
+}
 // key===null clears Home entirely; otherwise makes exactly that place Home.
-export function setHomePlace(key) { write('places', getPlaces().map((p) => ({ ...p, home: p.key === key }))); }
+// Marking Home adopts the house icon unless the user already picked a custom
+// one; unsetting drops a defaulted house back to the neutral pin.
+export function setHomePlace(key) {
+  write('places', getPlaces().map((p) => {
+    const home = p.key === key;
+    let icon = p.icon;
+    if (home && (!icon || icon === 'pin')) icon = 'home';
+    else if (!home && icon === 'home') icon = 'pin';
+    return { ...p, home, icon };
+  }));
+}
 // Home first, then most-recently-added.
 export function getPlacesSorted() { return getPlaces().slice().sort((a, b) => (b.home ? 1 : 0) - (a.home ? 1 : 0)); }
 

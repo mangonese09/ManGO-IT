@@ -1,13 +1,12 @@
 // ── SETTINGS ──
 import { APP_VERSION } from './version.js';
-import { getSettings, patchSettings, getFreshness, clearAllAppData } from './store.js';
-import { agoText } from './time.js';
-import { confirmModal } from './ui.js';
+import { getSettings, patchSettings, clearAllAppData } from './store.js';
+import { confirmModal, openSheet, el } from './ui.js';
+import { api } from './api.js';
 import { toast } from './toast.js';
 
 export function initSettings() {
   applyTheme(getSettings().theme);
-  document.getElementById('app-version').textContent = `v${APP_VERSION}`;
 
   document.getElementById('theme-toggle').addEventListener('click', () => {
     const next = getSettings().theme === 'dark' ? 'light' : 'dark';
@@ -37,7 +36,8 @@ export function initSettings() {
   });
 
   document.getElementById('check-updates').addEventListener('click', checkForUpdates);
-  renderFreshness();
+  document.getElementById('data-info').addEventListener('click', openDataSheet);
+  document.getElementById('about-open').addEventListener('click', openAboutSheet);
 }
 
 function applySpanLabel(btn) {
@@ -50,28 +50,79 @@ function applyTheme(theme) {
   if (btn) btn.textContent = theme === 'dark' ? '🌙 Dark' : '☀️ Light';
 }
 
-export function renderFreshness() {
-  const f = getFreshness();
-  // R-07: our own coach feed is the source the app leans on hardest and was
-  // the one source this panel couldn't report on.
-  const rows = [
-    ['Transitous routing', f.transitous],
-    ['Our coach feed', f.coachfeed],
-    ['ViaggiaTreno live trains', f.viaggiatreno],
-  ];
-  const holder = document.getElementById('freshness');
-  holder.innerHTML = '';
-  for (const [label, ts] of rows) {
-    const row = document.createElement('div');
-    row.className = 'fresh-row';
-    const name = document.createElement('span');
-    name.textContent = label;
-    const when = document.createElement('span');
-    when.className = 'muted';
-    when.textContent = ts ? agoText(ts) : 'not fetched yet';
-    row.append(name, when);
-    holder.appendChild(row);
-  }
+// ── DATA & SCHEDULES SHEET ──
+// Meaningful provenance, not per-device "last fetched" clocks (which read as
+// "broken/stale" for the bundled coach feed). Each source says what it is,
+// how fresh it is, and when it's used.
+function fmtHorizon(iso) {
+  if (!iso) return null;
+  const d = new Date(`${iso}T12:00:00Z`);
+  return isNaN(d) ? null : d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+}
+
+function dataRow(title, value, desc, ok = false) {
+  return el('div', { class: 'data-src' }, [
+    el('div', { class: 'data-src-head' }, [
+      el('span', { class: 'data-src-title', text: title }),
+      el('span', { class: `data-src-value${ok ? ' data-src-ok' : ''}`, text: value }),
+    ]),
+    el('p', { class: 'muted data-src-desc', text: desc }),
+  ]);
+}
+
+async function openDataSheet() {
+  const body = el('div', { class: 'data-sheet' });
+  // provisional render, then fill the coach horizon once /api/health answers
+  const coachSlot = dataRow('Coach schedules', 'bundled & auto-refreshed',
+    'Bundled in the app and refreshed automatically — weekly (SAIS Autolinee) and monthly (SAIS Trasporti) — from operator and Regione Siciliana timetables.');
+  body.appendChild(coachSlot);
+  body.appendChild(dataRow('Live trains', 'ViaggiaTreno (RFI)',
+    'Real-time status, fetched live when you open a train station’s board.'));
+  body.appendChild(dataRow('Routing', 'Transitous (MOTIS)',
+    'Plans your A→B itineraries across trains, coaches and city transit.'));
+  openSheet(body, { title: 'Data & schedules' });
+
+  try {
+    const { data } = await api.health();
+    const horizon = fmtHorizon(data?.feedHorizon?.date);
+    if (horizon) {
+      const val = coachSlot.querySelector('.data-src-value');
+      val.textContent = `verified through ${horizon}`;
+      val.classList.add('data-src-ok');
+    }
+  } catch { /* leave the provisional line — the feed is bundled regardless */ }
+}
+
+// ── ABOUT SHEET ──
+// The small print lives here now, off the main Settings screen.
+function link(href, text) {
+  return el('a', { href, target: '_blank', rel: 'noopener', text });
+}
+function openAboutSheet() {
+  const body = el('div', { class: 'about-sheet' }, [
+    el('div', { class: 'about-head' }, [
+      el('img', { class: 'about-logo', src: '/icons/logo.png', alt: '' }),
+      el('div', {}, [
+        el('div', { class: 'about-name', text: 'ManGO:IT' }),
+        el('div', { class: 'muted about-tag', text: `Sicily, one view · v${APP_VERSION}` }),
+      ]),
+    ]),
+    el('p', { class: 'muted strike-note' }, [
+      el('span', { text: '⚠️ Strikes (' }), el('em', { text: 'scioperi' }),
+      el('span', { text: ') are common in Italian transit and never appear in schedule data. If everything looks suspiciously quiet, check local news.' }),
+    ]),
+    el('p', { class: 'muted attribution' }, [
+      el('span', { text: 'Routing by ' }), link('https://transitous.org', 'Transitous'),
+      el('span', { text: ' · ' }), link('https://transitous.org/sources/', 'data sources'),
+      el('span', { text: ' · map data © ' }), link('https://www.openstreetmap.org/copyright', 'OpenStreetMap contributors'),
+    ]),
+    el('p', { class: 'muted attribution', text:
+      'Coach schedules derived from timetables published by Regione Siciliana and the operators (SAIS Autolinee via their public timetable API) · live trains via ViaggiaTreno.' }),
+    el('p', { class: 'muted attribution' }, [
+      link('https://github.com/mangonese09/ManGO-IT', 'Source code on GitHub'),
+    ]),
+  ]);
+  openSheet(body, { title: 'About' });
 }
 
 async function checkForUpdates() {

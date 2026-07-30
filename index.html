@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://mangonese.dev">
   <link rel="preconnect" href="https://mangonese.dev" crossorigin>
   <link rel="stylesheet" href="https://mangonese.dev/shared/mangonese.css">
-  <link rel="stylesheet" href="/css/styles.css?v=0.23.0">
+  <link rel="stylesheet" href="/css/styles.css?v=0.25.0">
 </head>
 <body>
   <header class="app-header">
@@ -105,10 +105,11 @@
           <span>Search results</span>
           <button id="span-toggle" class="btn btn-ghost">Whole day</button>
         </div>
-        <div class="setting-row">
-          <span>Data freshness</span>
-        </div>
-        <div id="freshness"></div>
+        <div class="setting-sep"></div>
+        <button id="data-info" class="setting-row setting-link" aria-haspopup="dialog">
+          <span>Data &amp; schedules</span>
+          <span class="setting-chevron" aria-hidden="true">›</span>
+        </button>
         <div class="setting-row">
           <span>Check for updates</span>
           <button id="check-updates" class="btn btn-ghost">Check</button>
@@ -117,17 +118,11 @@
           <span>Clear cached data</span>
           <button id="clear-cache" class="btn btn-ghost">Clear</button>
         </div>
-        <div class="setting-row muted">
-          <span>ManGO:IT — Sicily, one view.</span>
-          <span id="app-version"></span>
-        </div>
-        <p class="muted strike-note">⚠️ Strikes (<em>scioperi</em>) are common in Italian transit and never appear in schedule data. If everything looks suspiciously quiet, check local news.</p>
-        <p class="muted attribution">Routing by <a href="https://transitous.org" target="_blank" rel="noopener">Transitous</a> ·
-          <a href="https://transitous.org/sources/" target="_blank" rel="noopener">data sources</a> ·
-          map data © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a></p>
-        <p class="muted attribution">Coach schedules derived from timetables published by Regione Siciliana and the operators
-          (SAIS Autolinee via their public timetable API) · live trains via ViaggiaTreno</p>
-        <p class="muted attribution"><a href="https://github.com/mangonese09/ManGO-IT" target="_blank" rel="noopener">Source code on GitHub</a></p>
+        <div class="setting-sep"></div>
+        <button id="about-open" class="setting-row setting-link" aria-haspopup="dialog">
+          <span>About ManGO:IT</span>
+          <span class="setting-chevron" aria-hidden="true">›</span>
+        </button>
       </div>
     </section>
   </main>
@@ -147,6 +142,6 @@
     </button>
   </nav>
 
-  <script type="module" src="/js/app.js?v=0.23.0"></script>
+  <script type="module" src="/js/app.js?v=0.25.0"></script>
 </body>
 </html>

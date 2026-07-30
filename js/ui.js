@@ -52,6 +52,36 @@ export function modeIcon(mode, cls = 'mode-img') {
   return el('img', { class: cls, src: MODE_IMG[kind], alt: modeMeta(mode).label });
 }
 
+// ── PLACE ICONS (favourite trip endpoints) ──
+// Mango-styled SVG set borrowed from ManGO blueline (orange circle + white
+// glyph), recoloured to the ManGO:IT --mango token. The order here is the
+// order shown in the picker; 'pin' is the neutral default, 'home' is auto-set
+// when a place is marked Home.
+export const PLACE_ICONS = [
+  { key: 'home', label: 'Home' },
+  { key: 'work', label: 'Work' },
+  { key: 'pin', label: 'Pin' },
+  { key: 'coffee', label: 'Café' },
+  { key: 'food', label: 'Food' },
+  { key: 'friend', label: 'Friend' },
+  { key: 'gym', label: 'Gym' },
+  { key: 'school', label: 'School' },
+  { key: 'shopping', label: 'Shopping' },
+];
+const PLACE_ICON_KEYS = new Set(PLACE_ICONS.map((i) => i.key));
+
+// The icon a place actually shows: an explicit choice wins; a Home place with
+// no explicit choice shows the house; everything else the neutral pin.
+export function placeIconKey(p) {
+  if (p && PLACE_ICON_KEYS.has(p.icon)) return p.icon;
+  return p && p.home ? 'home' : 'pin';
+}
+export function placeIcon(key, cls = 'place-icon-img') {
+  const k = PLACE_ICON_KEYS.has(key) ? key : 'pin';
+  const label = (PLACE_ICONS.find((i) => i.key === k) || {}).label || 'Place';
+  return el('img', { class: cls, src: `/icons/places/place-${k}.svg`, alt: label });
+}
+
 // Five fixed mode colors (audit P2, competitive §7): consistency beats
 // operator branding at 44+ tiny operators. Always paired with the glyph —
 // color alone never carries the meaning.

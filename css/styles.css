@@ -163,6 +163,27 @@ button { cursor: pointer; }
 }
 .pin-btn.pinned { color: var(--mango, #ffb454); }
 
+/* ── place icons (favourite trip endpoints) ── */
+.place-icon-img { width: 24px; height: 24px; object-fit: contain; vertical-align: middle; display: block; }
+.place-icon-lg { width: 34px; height: 34px; }
+/* the tappable icon on a place card opens the picker — 40px touch target */
+.place-icon-btn {
+  background: none; border: none; padding: 0; cursor: pointer;
+  min-width: 40px; min-height: 40px; display: flex; align-items: center; justify-content: center;
+  border-radius: 999px;
+}
+.place-icon-btn:active { transform: scale(0.92); }
+.icon-picker-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; padding: 4px 2px 8px;
+}
+.icon-picker-cell {
+  background: var(--bg-elevated, #2a2a2a); border: 1.5px solid transparent; border-radius: 12px;
+  padding: 12px 6px; display: flex; flex-direction: column; align-items: center; gap: 6px;
+  color: var(--text, #e6e6e6); cursor: pointer; font: inherit;
+}
+.icon-picker-cell.active { border-color: var(--mango, #ffb454); }
+.icon-picker-label { font-size: 0.78rem; }
+
 /* ── sheets & modals ── */
 .sheet-overlay {
   position: fixed; inset: 0; z-index: 50; background: rgba(0,0,0,0.55);
@@ -192,8 +213,26 @@ body.sheet-open { overflow: hidden; }
 .modal-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 14px; }
 
 /* ── settings ── */
-.setting-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; }
-.fresh-row { display: flex; justify-content: space-between; padding: 4px 0 4px 12px; font-size: 0.85rem; }
+.setting-row { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; min-height: 44px; }
+.setting-sep { height: 1px; background: var(--border, rgba(255,255,255,0.08)); margin: 2px 0; }
+/* a whole row that acts as a link into a detail sheet */
+.setting-link { width: 100%; background: none; border: none; font: inherit; color: inherit; cursor: pointer; text-align: left; }
+.setting-chevron { color: var(--text-muted, #9a9a9a); font-size: 1.3rem; line-height: 1; }
+.setting-link:active { opacity: 0.6; }
+
+/* Data & schedules sheet */
+.data-sheet { display: flex; flex-direction: column; gap: 16px; padding-bottom: 4px; }
+.data-src-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+.data-src-title { font-weight: 600; }
+.data-src-value { font-size: 0.85rem; color: var(--text-muted, #9a9a9a); text-align: right; }
+.data-src-ok { color: var(--success, #46c878); }
+.data-src-desc { margin: 4px 0 0; line-height: 1.45; font-size: 0.85rem; }
+
+/* About sheet */
+.about-head { display: flex; align-items: center; gap: 12px; margin-bottom: 6px; }
+.about-logo { width: 40px; height: 40px; object-fit: contain; }
+.about-name { font-weight: 700; font-size: 1.1rem; }
+.about-tag { font-size: 0.85rem; }
 .strike-note { margin-top: 14px; line-height: 1.4; }
 
 /* ── nav ── */

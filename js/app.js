@@ -3,7 +3,7 @@ import { initSearch } from './search.js';
 import { initBoard, setBoardVisible } from './board.js';
 import { renderSaved } from './saved.js';
 import { renderMapTab } from './mapview.js';
-import { initSettings, renderFreshness } from './settings.js';
+import { initSettings } from './settings.js';
 import { closeSheet, anySheetOpen } from './ui.js';
 import { pruneCache } from './store.js';
 
@@ -28,7 +28,6 @@ function setView(view, push = true) {
   setBoardVisible(view === 'home');
   if (view === 'saved') renderSaved();
   if (view === 'map') renderMapTab();
-  if (view === 'settings') renderFreshness();
   requestAnimationFrame(() => scrollTo(0, viewScroll[view] || 0));
 }
 
