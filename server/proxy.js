@@ -12,7 +12,7 @@ const ROOT = path.join(__dirname, '..');
 
 const TRANSITOUS = 'https://api.transitous.org';
 const VT = 'http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno';
-const UA = 'ManGO-IT/0.25.1 (+https://it.mangonese.dev; miconsig@gmail.com)';
+const UA = 'ManGO-IT/0.26.0 (+https://it.mangonese.dev; miconsig@gmail.com)';
 
 // per-day upstream request counter (Transitous asks consumers to know their volume)
 const dayCounts = {};
@@ -824,7 +824,7 @@ async function resolveVtCode(stopId, name) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.25.1', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.26.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)
@@ -887,7 +887,13 @@ const routes = {
       if (seen.has(k)) return false;
       seen.add(k); return true;
     });
-    const out = all.sort((a, b) => geoScore(a, text) - geoScore(b, text) || b.importance - a.importance).slice(0, 10);
+    const sorted = all.sort((a, b) => geoScore(a, text) - geoScore(b, text) || b.importance - a.importance);
+    // Prioritise Sicily "for the time being": when Sicily has enough matches,
+    // don't dilute the list with mainland homonyms (the app is Sicily-first).
+    // Fall back to the all-Italy list only when the Sicilian side is sparse —
+    // that's a genuine mainland query (e.g. "Via Dante Milano"), which still works.
+    const sic = sorted.filter((r) => inSicily(r.lat, r.lon));
+    const out = (sic.length >= 6 ? sic : sorted).slice(0, 15);
     cacheSet(key, out, 24 * 3600 * 1000);
     return out;
   },

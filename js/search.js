@@ -311,7 +311,9 @@ async function suggest(which, q) {
     const { data } = await api.geocode(q, geoBias());
     if (seq !== suggestSeq[which]) return; // a newer request superseded this one
     list.innerHTML = '';
-    for (const r of data.slice(0, 8)) {
+    // show up to 12 (the geocoder caps at ~10 anyway): with Sicily-first ranking
+    // this surfaces more Sicilian streets so a nearby one isn't cut off the list
+    for (const r of data.slice(0, 12)) {
       // every result states WHAT it is: train station / metro / tram /
       // city bus stop / intercity coach stop / town / address. The neutral
       // default is the mango pin (was a bare red 📌 emoji).

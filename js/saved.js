@@ -264,7 +264,7 @@ async function placeSuggest(q) {
     const { data } = await api.geocode(q);
     if (seq !== placeSeq) return;
     list.innerHTML = '';
-    const rows = (data || []).filter((r) => isFinite(r.lat) && isFinite(r.lon)).slice(0, 8);
+    const rows = (data || []).filter((r) => isFinite(r.lat) && isFinite(r.lon)).slice(0, 12);
     for (const r of rows) {
       const bits = [];
       if (r.town && r.town.toLowerCase() !== r.name.toLowerCase()) bits.push(displayName(r.town));
@@ -297,7 +297,13 @@ function openIconPicker(p) {
     grid.appendChild(el('button', {
       class: `icon-picker-cell${active ? ' active' : ''}`,
       'aria-label': opt.label, 'aria-pressed': String(active),
-      onclick: () => { setPlaceIcon(p.key, opt.key); closeSheet(); renderSaved(); },
+      onclick: () => {
+        // Choosing "Home" IS the home designation (exclusive) — there's no
+        // separate toggle any more. Any other icon un-homes a former home place.
+        if (opt.key === 'home') { setPlaceIcon(p.key, 'home'); setHomePlace(p.key); }
+        else { setPlaceIcon(p.key, opt.key); if (p.home) setHomePlace(null); }
+        closeSheet(); renderSaved();
+      },
     }, [
       placeIcon(opt.key, 'place-icon-img place-icon-lg'),
       el('span', { class: 'icon-picker-label', text: opt.label }),
@@ -317,11 +323,6 @@ function placeCard(p) {
         el('span', { class: 'dep-route', text: p.label || displayName(p.name) }),
         el('span', { class: 'muted dep-headsign', text: p.home ? 'Home' : 'saved place' }),
       ]),
-      el('button', {
-        class: `pin-btn place-home${p.home ? ' pinned' : ''}`, text: '🏠',
-        title: p.home ? 'Unset home' : 'Set as home', 'aria-label': 'Set as home',
-        onclick: () => { setHomePlace(p.home ? null : p.key); renderSaved(); },
-      }),
       el('button', {
         class: 'pin-btn pinned', text: '✕', 'aria-label': 'Remove place',
         onclick: async () => {
