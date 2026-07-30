@@ -389,6 +389,29 @@ body.sheet-open { overflow: hidden; }
 .sched-cancelled .sched-label { text-decoration: line-through; }
 .sched-sheet { max-height: 60vh; overflow-y: auto; }
 
+/* saved-tab sections + favourite places */
+.saved-subhead { margin: 16px 4px 8px; font-size: 0.95rem; font-weight: 700; }
+.fav-place-card { padding: 4px 6px; }
+.place-empty { margin: 0 4px 6px; }
+.place-home { filter: grayscale(1); opacity: 0.45; } /* dim until this place is Home */
+.place-home.pinned { filter: none; opacity: 1; }
+
+/* live ViaggiaTreno station board */
+.vt-livedot { display: inline-block; color: var(--mango, #ffb454); vertical-align: middle; margin-right: 4px; }
+.vt-cat {
+  flex-shrink: 0; font-size: 0.66rem; font-weight: 700; letter-spacing: 0.03em;
+  padding: 2px 6px; border-radius: 5px; background: rgba(74,144,226,0.18);
+  color: #7fb0ee; border: 1px solid rgba(74,144,226,0.4); text-transform: uppercase;
+}
+.vt-main { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+.vt-dest { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.vt-meta { font-size: 0.74rem; }
+.vt-delay { flex-shrink: 0; font-size: 0.8rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.vt-delay.vt-late { color: var(--warning, #f5a524); }
+.vt-delay.vt-early { color: #46c878; }
+.vt-delay.vt-ontime { color: #46c878; font-weight: 600; font-size: 0.72rem; }
+.vt-row.sched-cancelled .vt-dest { text-decoration: line-through; }
+
 /* ── v0.9.0 Kayak-style home search ── */
 .endpoint-stack {
   position: relative;
@@ -576,30 +599,136 @@ body { font-size: 1rem; }
 
 /* ── v0.10.0 M6 map view ── */
 #map-canvas {
-  height: calc(100dvh - 245px - env(safe-area-inset-bottom));
-  min-height: 320px;
+  position: relative;
+  /* isolate = trap Leaflet's internal z-indexes (panes/controls run up to ~1000)
+     inside this box, so body-level sheets/toasts paint ABOVE the map instead of
+     being covered by it. */
+  isolation: isolate;
+  height: calc(100dvh - 210px - env(safe-area-inset-bottom));
+  min-height: 340px;
   border-radius: var(--radius-lg, 14px);
   overflow: hidden;
   background: var(--bg-elevated, #2a2a2a); /* pre-tile / offline surface */
   overscroll-behavior: contain;
 }
-.map-note { margin: 8px 4px; font-size: 0.8rem; }
+/* In-map usage hint (bottom overlay) — replaces the old note row that collided
+   with bottom toasts. Fades out after the first stop tap; the info-bar that
+   then appears occupies the same bottom edge. */
+.map-hint {
+  position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);
+  z-index: 450; max-width: calc(100% - 24px);
+  background: rgba(20, 22, 28, 0.82); color: #e7ecf3;
+  border: 1px solid rgba(255,255,255,0.12); border-radius: 999px;
+  padding: 5px 12px; font-size: 0.74rem; white-space: nowrap;
+  overflow: hidden; text-overflow: ellipsis; pointer-events: none;
+  backdrop-filter: blur(6px); transition: opacity 0.4s;
+}
+.map-hint.gone { opacity: 0; }
 
-/* mango mode icons as stop pins — soft disc so they read on any tile */
-.stop-pin { background: none; border: none; }
+/* #2/#4 Top-left controls: search pill + Trains/Buses filter chips. */
+.map-controls {
+  position: absolute; top: 8px; left: 8px; z-index: 460;
+  display: flex; flex-wrap: wrap; gap: 6px; max-width: calc(100% - 72px);
+}
+.map-chip {
+  display: inline-flex; align-items: center; gap: 5px;
+  background: rgba(20, 22, 28, 0.86); color: #e7ecf3;
+  border: 1px solid rgba(255,255,255,0.14); border-radius: 999px;
+  padding: 6px 11px; font-size: 0.76rem; font-weight: 600; cursor: pointer;
+  backdrop-filter: blur(6px); white-space: nowrap;
+}
+.map-chip .mode-img-sm { width: 16px; height: 16px; }
+.map-chip:not(.on) { opacity: 0.5; }
+.map-chip.on { border-color: var(--mango, #ffb454); }
+.map-search-btn { color: #e7ecf3; }
+.map-search-ico { font-size: 1.05rem; line-height: 1; }
+
+/* #4 Place-search sheet */
+.map-search-body { display: flex; flex-direction: column; gap: 10px; padding: 4px 2px 8px; }
+.map-search-input {
+  width: 100%; box-sizing: border-box; padding: 12px 14px; font: inherit;
+  background: var(--bg-elevated, #24262c); color: var(--text-primary, #f2f2f2);
+  border: 1px solid var(--border, rgba(255,255,255,0.14)); border-radius: 10px;
+}
+.map-search-results { display: flex; flex-direction: column; }
+.map-search-row { display: flex; flex-direction: column; align-items: flex-start; gap: 1px; text-align: left; }
+
+/* Routes window (tap a stop → list its routes → pick one to trace) */
+.routes-actions { display: flex; gap: 8px; padding: 2px 2px 8px; }
+.chip-btn {
+  display: inline-flex; align-items: center; gap: 4px;
+  background: var(--bg-elevated, #24262c); color: var(--text-primary, #f2f2f2);
+  border: 1px solid var(--border, rgba(255,255,255,0.14)); border-radius: 999px;
+  padding: 8px 14px; font: inherit; font-size: 0.85rem; font-weight: 600; cursor: pointer;
+}
+.chip-btn.on { border-color: var(--mango, #ffb454); color: var(--mango, #ffb454); }
+.routes-hint { margin: 0 2px 8px; font-size: 0.8rem; }
+.route-pick-row { display: flex; align-items: center; gap: 10px; }
+.route-pick-row .line-swatch { width: 20px; height: 6px; border-radius: 3px; flex-shrink: 0; }
+.mib-swatch { display: inline-block; width: 16px; height: 5px; border-radius: 3px; margin-right: 7px; vertical-align: middle; flex-shrink: 0; }
+.map-info-bar .mib-name { display: flex; align-items: center; }
+.map-info-bar .mib-name .lg-text { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.map-info-bar .mib-back { font-size: 1.3rem; line-height: 1; }
+
+/* #1 Line-detail sheet */
+.line-sheet-head { display: flex; align-items: center; gap: 10px; padding: 2px 2px 10px; }
+.line-swatch { width: 22px; height: 6px; border-radius: 3px; flex-shrink: 0; }
+.line-op { font-size: 0.82rem; }
+.line-stop-row { display: flex; align-items: center; gap: 10px; }
+.line-stop-dot {
+  width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0;
+  border: 3px solid var(--mango, #ffb454); background: var(--bg-surface, #1e1e1e);
+}
+
+/* mango mode icons as stop pins — a translucent dark disc (matches the map
+   chrome; the bright mango icons read on it on any tile) */
+.stop-pin { background: none; border: none; position: relative; }
 .stop-pin img {
   width: 30px; height: 30px; object-fit: contain;
-  background: rgba(255,255,255,0.92);
+  background: rgba(22,24,30,0.72);
+  border: 1px solid rgba(255,255,255,0.16);
   border-radius: 50%; padding: 3px; box-sizing: border-box;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.45);
+}
+/* favourited stops = a bold GOLD STAR with the stop icon on top (#D) */
+.fav-pin .fav-star {
+  position: absolute; inset: 0; width: 38px; height: 38px;
+  background: var(--mango, #ffb454);
+  clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+  filter: drop-shadow(0 1px 2px rgba(0,0,0,0.55));
+}
+.fav-pin img {
+  position: absolute; top: 50%; left: 50%; transform: translate(-50%, -56%);
+  width: 17px; height: 17px; object-fit: contain;
+  background: #fff; border: none; border-radius: 50%; padding: 2px; box-shadow: none;
+}
+/* clustered counts when zoomed out (#agg) — translucent HEAT BLOBS sized by
+   count, with soft transparent edges so city names read through the map. */
+.cluster-blob {
+  display: flex; align-items: center; justify-content: center;
+  border-radius: 50%; color: #fff; font-weight: 700;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.95), 0 0 4px rgba(0,0,0,0.7);
+  background: radial-gradient(circle at center,
+    rgba(255,180,84,0.55) 0%, rgba(255,180,84,0.24) 55%, rgba(255,180,84,0) 100%);
+}
+.cluster-blob.cluster-transit {
+  background: radial-gradient(circle at center,
+    rgba(74,144,226,0.55) 0%, rgba(74,144,226,0.24) 55%, rgba(74,144,226,0) 100%);
+}
+/* small dots for the other stops along a highlighted route (#C) */
+.route-dot { background: none; border: none; }
+.route-dot span {
+  display: block; width: 11px; height: 11px; border-radius: 50%;
+  background: var(--bg-surface, #1e1e1e); box-shadow: 0 0 0 2px #000a;
+  border: 3px solid var(--mango, #ffb454); box-sizing: border-box;
 }
 
 .map-locate-btn {
   width: 44px; height: 44px; border-radius: 50%;
-  border: 1px solid rgba(0,0,0,0.2);
-  background: #fff; cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.16);
+  background: rgba(20,22,28,0.86); backdrop-filter: blur(6px); cursor: pointer;
   display: flex; align-items: center; justify-content: center;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.35);
+  box-shadow: 0 1px 5px rgba(0,0,0,0.4);
 }
 .map-locate-btn img { width: 24px; height: 24px; object-fit: contain; }
 
@@ -626,7 +755,7 @@ body { font-size: 1rem; }
 }
 .map-info-bar .mib-main { flex: 1; min-width: 0; }
 .map-info-bar .mib-name { font-weight: 700; font-size: 0.95rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-.map-info-bar .mib-sub { font-size: 0.8rem; color: var(--text-muted, #9a9a9a); }
+.map-info-bar .mib-sub { font-size: 0.8rem; color: var(--text-muted, #9a9a9a); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .map-info-bar .mib-btn {
   background: var(--mango, #ffb454); color: #1a1206; border: none; border-radius: 8px;
   padding: 8px 12px; font: inherit; font-weight: 600; font-size: 0.85rem; cursor: pointer; white-space: nowrap;
@@ -635,9 +764,16 @@ body { font-size: 1rem; }
   background: var(--bg-elevated, #2a2a2a); color: inherit; border: none; border-radius: 8px;
   width: 34px; height: 34px; font-size: 1rem; cursor: pointer; flex-shrink: 0;
 }
+.map-info-bar .mib-fav {
+  background: var(--bg-elevated, #2a2a2a); border: none; border-radius: 8px;
+  width: 34px; height: 34px; font-size: 1.05rem; cursor: pointer; flex-shrink: 0;
+  color: var(--text-muted, #9a9a9a);
+}
+.map-info-bar .mib-fav.on { color: var(--mango, #ffb454); }
 .map-legend { display: flex; flex-wrap: wrap; gap: 4px 10px; margin-top: 4px; }
-.map-legend span { display: inline-flex; align-items: center; gap: 4px; font-size: 0.72rem; color: var(--text-muted, #9a9a9a); }
-.map-legend i { width: 14px; height: 3px; border-radius: 2px; display: inline-block; }
+.map-legend > span { display: inline-flex; align-items: center; gap: 4px; font-size: 0.72rem; color: var(--text-muted, #9a9a9a); max-width: 46vw; }
+.map-legend .lg-text { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.map-legend i { width: 14px; height: 3px; border-radius: 2px; display: inline-block; flex-shrink: 0; }
 
 /* leaflet chrome on dark tiles */
 :root[data-theme="dark"] .leaflet-control-zoom a {

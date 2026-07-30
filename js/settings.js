@@ -85,8 +85,17 @@ async function checkForUpdates() {
     if (version === APP_VERSION) { toast(`Up to date (v${APP_VERSION})`, 'info'); return; }
     toast(`Updating to v${version}…`, 'info');
     const reg = await navigator.serviceWorker?.getRegistration();
-    if (reg) { await reg.update(); }
-    setTimeout(() => location.reload(true), 800);
+    if (!reg) { location.reload(); return; }
+    // Reload the moment the NEW worker takes control — that's when the fresh
+    // assets are actually in place. The old code reloaded on a blind 800ms
+    // timer that often fired mid-install, so the reload was served from the OLD
+    // cache and nothing changed. A generous fallback covers a stuck install.
+    let done = false;
+    const finish = () => { if (done) return; done = true; location.reload(); };
+    navigator.serviceWorker.addEventListener('controllerchange', finish);
+    await reg.update();
+    if (reg.waiting) reg.waiting.postMessage({ type: 'SKIP_WAITING' }); // activate an already-installed worker
+    setTimeout(finish, 10000);
   } catch {
     toast('Could not check for updates', 'warn');
   }

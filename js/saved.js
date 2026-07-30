@@ -2,7 +2,7 @@
 import { api } from './api.js';
 import { el, modeMeta, modeIcon, confirmModal, openSheet } from './ui.js';
 import { romeTime, romeDay, countdownText, isOtherRomeDay } from './time.js';
-import { getSaved, purgeSaved, removeSaved, getFavStops, addFavStop, removeFavStop } from './store.js';
+import { getSaved, purgeSaved, removeSaved, getFavStops, addFavStop, removeFavStop, getPlacesSorted, addPlace, removePlace, setHomePlace } from './store.js';
 import { toast } from './toast.js';
 import { displayName } from './names.js';
 
@@ -71,16 +71,39 @@ function routeLabel(route, headsign) {
   return headsign ? `${route} → ${headsign}` : route;
 }
 
+// A clean "line → destination" label for a live-network departure. Drops junk
+// where the route name is just the mode word — Trenitalia's rail-replacement
+// buses arrive as a nameless "BUS", which used to render "BUS BUS". Now a
+// station board reads "Bus" or "R → Palermo Centrale", never "BUS BUS".
+function transitLabel(st) {
+  const rn = (st.routeShortName || '').trim();
+  const head = displayName((st.headsign || '').trim());
+  const modeName = modeMeta(st.mode).label;
+  const route = rn && rn.toUpperCase() !== (st.mode || '').toUpperCase() && rn.toLowerCase() !== modeName.toLowerCase() ? rn : '';
+  if (route && head) return `${route} → ${head}`;
+  if (head) return `${modeName} → ${head}`;
+  return route || modeName;
+}
+
 // ── FULL DAY SCHEDULE ──
 // Tapping a favorite stop opens every remaining + past departure for today:
 // own-feed coach stops get the complete timetable; Transitous stops get the
 // next 40 departures the network knows. Exported: the Map tab opens the same
 // sheet for any nearby stop.
+const isRailStop = (s) => s.stopId && /otherTRENITALIA/i.test(s.stopId);
+
 export async function openStopSchedule(s) {
   const body = el('div', { class: 'iti-detail sched-sheet' });
   body.appendChild(el('div', { class: 'loading', text: 'Loading schedule…' }));
   openSheet(body, { title: `Today — ${displayName(s.name)}` });
   try {
+    // Rail stations: a live ViaggiaTreno board (train #, destination, delay,
+    // platform). Empty (bus-substituted line / VT down) → fall through to MOTIS.
+    if (isRailStop(s)) {
+      let board = null;
+      try { ({ data: board } = await api.vtBoard(s.stopId, s.name)); } catch { /* fall back */ }
+      if (board && (board.departures || []).length) { renderVtBoard(body, board.departures); return; }
+    }
     let rows = [];
     let note = '';
     if (s.stopId) {
@@ -88,10 +111,12 @@ export async function openStopSchedule(s) {
       rows = (data.stopTimes || []).map((st) => ({
         time: romeTime(st.departure || st.scheduledDeparture),
         mode: st.mode,
-        label: routeLabel(st.routeShortName || modeMeta(st.mode).label, displayName(st.headsign)),
+        label: transitLabel(st),
         live: st.realTime, cancelled: st.cancelled,
       }));
-      note = 'Next departures from the live network.';
+      note = isRailStop(s)
+        ? 'No live train data right now — showing what the network schedule knows.'
+        : 'Next departures from the live network.';
     } else {
       const { data } = await api.coachBoard(s.lat, s.lon, 300, true);
       rows = (data.results || []).map((r) => ({
@@ -119,6 +144,37 @@ export async function openStopSchedule(s) {
   } catch {
     body.innerHTML = '';
     body.appendChild(el('p', { class: 'muted', text: 'Could not load the schedule — check connectivity and retry.' }));
+  }
+}
+
+// Delay → { text, cls }. Positive = late (amber), negative = early, 0 = on time.
+function vtDelay(d) {
+  if (d.delayMin == null) return { text: '', cls: '' };
+  if (d.delayMin > 0) return { text: `+${d.delayMin}′`, cls: 'vt-late' };
+  if (d.delayMin < 0) return { text: `${d.delayMin}′`, cls: 'vt-early' };
+  return { text: 'on time', cls: 'vt-ontime' };
+}
+
+function renderVtBoard(body, deps) {
+  body.innerHTML = '';
+  body.appendChild(el('p', { class: 'muted sched-note' }, [
+    el('span', { class: 'pulse-dot vt-livedot', 'aria-hidden': 'true' }),
+    el('span', { text: ' Live departures — Trenitalia (RFI)' }),
+  ]));
+  for (const d of deps) {
+    const delay = vtDelay(d);
+    const meta = [`#${d.trainNumber}`, d.platform ? `Bin. ${d.platform}` : null].filter(Boolean).join(' · ');
+    body.appendChild(el('div', { class: `sched-row vt-row${d.departed ? ' sched-past' : ''}${d.cancelled ? ' sched-cancelled' : ''}` }, [
+      el('strong', { class: 'sched-time', text: d.clock || romeTime(d.scheduledMs) }),
+      el('span', { class: 'vt-cat', text: d.category || 'Train' }),
+      el('div', { class: 'vt-main' }, [
+        el('span', { class: 'vt-dest', text: `→ ${displayName(d.destination) || d.label}` }),
+        el('span', { class: 'vt-meta muted', text: meta }),
+      ]),
+      d.cancelled
+        ? el('span', { class: 'badge badge-cancel', text: 'CANCELLED' })
+        : (delay.text ? el('span', { class: `vt-delay ${delay.cls}`, text: delay.text }) : null),
+    ]));
   }
 }
 
@@ -155,7 +211,7 @@ async function favStopCard(s) {
     if (s.stopId) {
       const { data } = await api.stoptimes(s.stopId, 4);
       deps = (data.stopTimes || []).map((st) => ({
-        label: routeLabel(st.routeShortName || modeMeta(st.mode).label, displayName(st.headsign)),
+        label: transitLabel(st),
         iconMode: st.mode,
         when: st.departure, live: st.realTime, cancelled: st.cancelled,
       }));
@@ -187,7 +243,83 @@ async function favStopCard(s) {
   return card;
 }
 
+// ── FAVOURITE PLACES (trip endpoints) ──
+let placeWired = false, placeTimer = null, placeSeq = 0;
+function wirePlaceSearch() {
+  if (placeWired) return;
+  placeWired = true;
+  const input = document.getElementById('place-input');
+  const list = document.getElementById('place-suggest');
+  input.addEventListener('input', () => {
+    clearTimeout(placeTimer);
+    const q = input.value.trim();
+    if (q.length < 2) { list.hidden = true; return; }
+    placeTimer = setTimeout(() => placeSuggest(q), 300);
+  });
+}
+async function placeSuggest(q) {
+  const list = document.getElementById('place-suggest');
+  const seq = ++placeSeq;
+  try {
+    const { data } = await api.geocode(q);
+    if (seq !== placeSeq) return;
+    list.innerHTML = '';
+    const rows = (data || []).filter((r) => isFinite(r.lat) && isFinite(r.lon)).slice(0, 8);
+    for (const r of rows) {
+      const bits = [];
+      if (r.town && r.town.toLowerCase() !== r.name.toLowerCase()) bits.push(displayName(r.town));
+      if (r.province && r.province !== r.town) bits.push(`prov. ${r.province}`);
+      list.appendChild(el('button', {
+        class: 'suggest-row',
+        onclick: () => {
+          const key = `${r.lat.toFixed(5)},${r.lon.toFixed(5)}`;
+          addPlace({ key, label: displayName(r.name), name: r.name, lat: r.lat, lon: r.lon });
+          document.getElementById('place-input').value = '';
+          list.hidden = true;
+          toast(`${displayName(r.name)} added`, 'info', 1400);
+          renderSaved();
+        },
+      }, [
+        el('span', { class: 'suggest-icon' }, [el('span', { class: 'mode-emoji', text: '📍' })]),
+        el('span', { class: 'suggest-name', text: displayName(r.name) }),
+        bits.length ? el('span', { class: 'suggest-area', text: bits.join(' · ') }) : null,
+      ]));
+    }
+    list.hidden = rows.length === 0;
+  } catch { list.hidden = true; }
+}
+function placeCard(p) {
+  return el('div', { class: 'card fav-place-card' }, [
+    el('div', { class: 'fav-stop-head' }, [
+      el('span', { class: 'suggest-icon' }, [el('span', { class: 'mode-emoji', text: p.home ? '🏠' : '📍' })]),
+      el('div', { class: 'dep-main' }, [
+        el('span', { class: 'dep-route', text: p.label || displayName(p.name) }),
+        el('span', { class: 'muted dep-headsign', text: p.home ? 'Home' : 'saved place' }),
+      ]),
+      el('button', {
+        class: `pin-btn place-home${p.home ? ' pinned' : ''}`, text: '🏠',
+        title: p.home ? 'Unset home' : 'Set as home', 'aria-label': 'Set as home',
+        onclick: () => { setHomePlace(p.home ? null : p.key); renderSaved(); },
+      }),
+      el('button', {
+        class: 'pin-btn pinned', text: '✕', 'aria-label': 'Remove place',
+        onclick: async () => {
+          const ok = await confirmModal(`Remove ${displayName(p.name)}?`, { confirmText: 'Remove' });
+          if (ok) { removePlace(p.key); renderSaved(); }
+        },
+      }),
+    ]),
+  ]);
+}
+
 export async function renderSaved() {
+  wirePlaceSearch();
+  const placeHolder = document.getElementById('fav-places');
+  placeHolder.innerHTML = '';
+  const places = getPlacesSorted();
+  for (const p of places) placeHolder.appendChild(placeCard(p));
+  if (!places.length) placeHolder.appendChild(el('p', { class: 'muted place-empty', text: 'No places yet — add Home or a town above for one-tap routing.' }));
+
   wireFavSearch();
   const favHolder = document.getElementById('fav-stops');
   favHolder.innerHTML = '';

@@ -1,7 +1,7 @@
 // Display-casing of ALL-CAPS feed stop names (v0.9.5).
 import { test } from 'node:test';
 import assert from 'node:assert';
-import { displayName } from '../../js/names.js';
+import { displayName, cleanRouteName } from '../../js/names.js';
 
 const cases = [
   // all-caps feed names get title-cased
@@ -42,5 +42,21 @@ const cases = [
 for (const [input, want] of cases) {
   test(`displayName(${JSON.stringify(input)}) → ${JSON.stringify(want)}`, () => {
     assert.strictEqual(displayName(input), want);
+  });
+}
+
+// Route/line label tidy (map trace legend).
+const routeCases = [
+  ['0 Aragona - -Raffadali', 'Aragona – Raffadali'],   // leading-0 + doubled dash
+  ['Raffadali - Eraclea MI', 'Raffadali – Eraclea MI'], // spaced hyphen → en-dash
+  ['S. Elisabetta - Palermo', 'S. Elisabetta – Palermo'], // no mid-word truncation
+  ['109', '109'],                                        // bare route number untouched
+  ['N2', 'N2'],
+  ['', ''],
+  [null, ''],
+];
+for (const [input, want] of routeCases) {
+  test(`cleanRouteName(${JSON.stringify(input)}) → ${JSON.stringify(want)}`, () => {
+    assert.strictEqual(cleanRouteName(input), want);
   });
 }

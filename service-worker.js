@@ -1,12 +1,12 @@
 // ── SERVICE WORKER ──
 // App shell cache-first; /api/* never cached here (js/api.js owns API caching
 // with staleness stamps). Bump CACHE on every deploy.
-const CACHE = 'mangoit-v38';
+const CACHE = 'mangoit-v49';
 const SHELL = [
   '/',
   '/index.html',
-  '/css/styles.css?v=0.17.0',
-  '/js/app.js?v=0.17.0',
+  '/css/styles.css?v=0.23.0',
+  '/js/app.js?v=0.23.0',
   '/js/api.js',
   '/js/board.js',
   '/js/itinerary.js',
@@ -44,9 +44,21 @@ self.addEventListener('install', (e) => {
   // (/js/saved.js …) must be fetched fresh from the server, or a new SW
   // precaches STALE modules next to a fresh index.html (torn app state —
   // the ManGO classic v8.34.2 bug, reproduced here on the Saved tab).
-  e.waitUntil(caches.open(CACHE)
-    .then((c) => c.addAll(SHELL.map((u) => new Request(u, { cache: 'reload' }))))
-    .then(() => self.skipWaiting()));
+  //
+  // Precache each asset INDEPENDENTLY (allSettled), not atomically (addAll):
+  // one flaky/slow fetch used to reject the whole install, so the new SW never
+  // activated and "Check for updates" silently no-op'd. A missing asset now
+  // just falls back to the network at runtime instead of blocking the update.
+  e.waitUntil((async () => {
+    const c = await caches.open(CACHE);
+    await Promise.allSettled(SHELL.map((u) => c.add(new Request(u, { cache: 'reload' }))));
+    await self.skipWaiting();
+  })());
+});
+
+// Let the page force an installed-but-waiting worker to take over immediately.
+self.addEventListener('message', (e) => {
+  if (e.data && e.data.type === 'SKIP_WAITING') self.skipWaiting();
 });
 
 self.addEventListener('activate', (e) => {

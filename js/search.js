@@ -5,7 +5,8 @@ import { romeTime, romeDay, romeHour, dayPartKey, DAYPARTS, durationText, isOthe
 import { displayName } from './names.js';
 import { worstTransferMin, transferTier, transferChipText, imminentText, legStripModel, groupByDaypart, plusTag, isRailReplacement } from './itinerary.js';
 import { operatorFor } from './operators.js';
-import { getRecents, pushRecent, removeRecent, getFavStops, addFavStop, removeFavStop, getSettings } from './store.js';
+import { getRecents, pushRecent, removeRecent, getFavStops, addFavStop, removeFavStop, getSettings, getPlacesSorted, addPlace, removePlace, isPlace } from './store.js';
+import { getLastPos } from './board.js';
 import { toast } from './toast.js';
 
 // Selected endpoints: {name, place} where place is "lat,lon" or a stopId.
@@ -86,7 +87,7 @@ function wireEndpoint(which) {
     timer = setTimeout(() => suggest(which, q), 300);
   });
   input.addEventListener('focus', () => {
-    if (which === 'from' && !input.value.trim()) showMyLocationOption(list, input);
+    if (!input.value.trim()) showQuickPicks(which, list, input);
   });
   // QA-23: Enter searches (was never wired; enterkeyhint promised it)
   input.addEventListener('keydown', (e) => {
@@ -99,27 +100,61 @@ function wireEndpoint(which) {
   });
 }
 
-function showMyLocationOption(list, input) {
+// Focusing an empty endpoint shows quick-picks: My location (From only), then
+// your saved places (Home first). Tapping one fills the endpoint immediately.
+function showQuickPicks(which, list, input) {
   list.innerHTML = '';
-  list.appendChild(el('button', {
-    class: 'suggest-row suggest-loc',
-    onclick: () => {
-      list.hidden = true;
-      input.value = 'My location';
-      syncClears();
-      locate().then((pos) => {
-        sel.from = { name: 'My location', place: `${pos.lat.toFixed(5)},${pos.lon.toFixed(5)}`, lat: pos.lat, lon: pos.lon };
-      }).catch(() => {
-        input.value = '';
+  if (which === 'from') {
+    list.appendChild(el('button', {
+      class: 'suggest-row suggest-loc',
+      onclick: () => {
+        list.hidden = true;
+        input.value = 'My location';
         syncClears();
-        toast('Location unavailable — type a place instead', 'warn');
-      });
-    },
-  }, [
-    el('img', { src: '/icons/place-pin.png', alt: '' }),
-    el('span', { text: ' My location' }),
-  ]));
-  list.hidden = false;
+        locate().then((pos) => {
+          sel.from = { name: 'My location', place: `${pos.lat.toFixed(5)},${pos.lon.toFixed(5)}`, lat: pos.lat, lon: pos.lon };
+        }).catch(() => {
+          input.value = '';
+          syncClears();
+          toast('Location unavailable — type a place instead', 'warn');
+        });
+      },
+    }, [
+      el('img', { src: '/icons/place-pin.png', alt: '' }),
+      el('span', { text: ' My location' }),
+    ]));
+  }
+  for (const p of getPlacesSorted().slice(0, 6)) {
+    list.appendChild(el('button', {
+      class: 'suggest-row suggest-place',
+      onclick: () => {
+        list.hidden = true;
+        sel[which] = { name: p.name, place: `${p.lat},${p.lon}`, lat: p.lat, lon: p.lon };
+        input.value = p.label || displayName(p.name);
+        syncClears();
+        // destination-first, mirroring a suggestion pick
+        if (which === 'to' && !sel.from) {
+          document.getElementById('from-input').value = 'My location';
+          syncClears();
+          locate().then((pos) => {
+            sel.from = { name: 'My location', place: `${pos.lat.toFixed(5)},${pos.lon.toFixed(5)}`, lat: pos.lat, lon: pos.lon };
+            runSearch();
+          }).catch(() => {
+            document.getElementById('from-input').value = '';
+            syncClears();
+            toast('Location unavailable — set a starting point', 'warn');
+          });
+        } else if (sel.from && sel.to) {
+          runSearch();
+        }
+      },
+    }, [
+      el('span', { class: 'suggest-icon' }, [el('span', { class: 'mode-emoji', text: p.home ? '🏠' : '📍' })]),
+      el('span', { class: 'suggest-name', text: p.label || displayName(p.name) }),
+      el('span', { class: 'suggest-area', text: p.home ? 'Home' : 'saved place' }),
+    ]));
+  }
+  list.hidden = list.children.length === 0;
 }
 
 // ── MODE FILTERS (v0.9.0) ──
@@ -230,12 +265,50 @@ function suggestStar(r, kind) {
   return star;
 }
 
+// Star for a PLACE result (town / address) — saves a trip-endpoint favourite,
+// distinct from a stop's departures board.
+function placeStar(r) {
+  const key = `${r.lat.toFixed(5)},${r.lon.toFixed(5)}`;
+  const star = el('span', {
+    class: `pin-btn suggest-star${isPlace(key) ? ' pinned' : ''}`,
+    role: 'button', tabindex: '0', 'aria-label': 'Save place', text: isPlace(key) ? '★' : '☆',
+    onclick: (e) => {
+      e.stopPropagation();
+      if (isPlace(key)) {
+        removePlace(key);
+        star.textContent = '☆'; star.classList.remove('pinned');
+        toast('Removed from places', 'info', 1400);
+      } else {
+        addPlace({ key, label: displayName(r.name), name: r.name, lat: r.lat, lon: r.lon });
+        star.textContent = '★'; star.classList.add('pinned');
+        toast('Saved to places — Saved tab', 'info', 1400);
+      }
+    },
+  });
+  return star;
+}
+
+// Location bias for address autocomplete (§geocode): a bare street query like
+// "Via Crocifisso" is one of dozens across Italy — without a bias Transitous
+// returns a globally-ranked list where Sicily barely appears. Bias to the
+// user's known position when it's inside Italy (best local relevance), else the
+// Sicily centroid. Never triggers a permission prompt — reuses board.js's
+// already-granted fix, so a Chicago-set phone still gets Sicilian streets.
+const SICILY_CENTROID = '37.6,14.15';
+function inItaly(p) {
+  return p && p.lat >= 35.2 && p.lat <= 47.2 && p.lon >= 6.5 && p.lon <= 18.8;
+}
+function geoBias() {
+  const p = getLastPos();
+  return (p && inItaly(p)) ? `${p.lat.toFixed(4)},${p.lon.toFixed(4)}` : SICILY_CENTROID;
+}
+
 const suggestSeq = { from: 0, to: 0 };
 async function suggest(which, q) {
   const list = document.getElementById(`${which}-suggest`);
   const seq = ++suggestSeq[which];
   try {
-    const { data } = await api.geocode(q);
+    const { data } = await api.geocode(q, geoBias());
     if (seq !== suggestSeq[which]) return; // a newer request superseded this one
     list.innerHTML = '';
     for (const r of data.slice(0, 8)) {
@@ -286,7 +359,8 @@ async function suggest(which, q) {
         el('span', { class: 'suggest-icon' }, [iconEl]),
         el('span', { class: 'suggest-name', text: displayName(r.name) }),
         bits.length ? el('span', { class: 'suggest-area', text: bits.join(' · ') }) : null,
-        (r.type === 'STOP' || r.type === 'COACH_STOP') ? suggestStar(r, kind) : null,
+        (r.type === 'STOP' || r.type === 'COACH_STOP') ? suggestStar(r, kind)
+          : (isFinite(r.lat) && isFinite(r.lon) ? placeStar(r) : null),
       ]));
     }
     list.hidden = data.length === 0;

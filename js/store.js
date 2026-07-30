@@ -59,6 +59,24 @@ export function removeFavStop(key) {
 }
 export function isFavStop(key) { return getFavStops().some((s) => s.key === key); }
 
+// ── FAVOURITE PLACES (trip endpoints: Home + named places) ──
+// A place is a location you route to/from, distinct from a favourite STOP
+// (a departures board). Keyed by rounded coords. At most one place is `home`.
+export function getPlaces() { return read('places', []); }
+export function addPlace(place) {
+  let list = getPlaces().filter((p) => p.key !== place.key);
+  if (place.home) list = list.map((p) => ({ ...p, home: false }));
+  list.push(place);
+  write('places', list.slice(-20));
+  return list;
+}
+export function removePlace(key) { write('places', getPlaces().filter((p) => p.key !== key)); }
+export function isPlace(key) { return getPlaces().some((p) => p.key === key); }
+// key===null clears Home entirely; otherwise makes exactly that place Home.
+export function setHomePlace(key) { write('places', getPlaces().map((p) => ({ ...p, home: p.key === key }))); }
+// Home first, then most-recently-added.
+export function getPlacesSorted() { return getPlaces().slice().sort((a, b) => (b.home ? 1 : 0) - (a.home ? 1 : 0)); }
+
 export function getRecents() { return read('recents', []); }
 export function removeRecent(i) {
   const all = getRecents();

@@ -12,7 +12,7 @@ const ROOT = path.join(__dirname, '..');
 
 const TRANSITOUS = 'https://api.transitous.org';
 const VT = 'http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno';
-const UA = 'ManGO-IT/0.17.0 (+https://it.mangonese.dev; miconsig@gmail.com)';
+const UA = 'ManGO-IT/0.23.0 (+https://it.mangonese.dev; miconsig@gmail.com)';
 
 // per-day upstream request counter (Transitous asks consumers to know their volume)
 const dayCounts = {};
@@ -37,6 +37,21 @@ try {
 try {
   coachTrips = JSON.parse(fs.readFileSync(path.join(__dirname, 'coach-trips.json'), 'utf8'));
 } catch { /* not generated yet */ }
+
+// #5 Tidy line labels at the data layer so EVERY consumer (direct rows, coach
+// board, map trace) serves clean names — not just the map legend. Strips the
+// parse-damage leading "0 " corsa token and normalises doubled/spaced hyphens
+// to a spaced en-dash. Title-casing stays client-side (displayName). Deep
+// parse damage (fused double-names) is still a pipeline-frontier item.
+function tidyRoute(name) {
+  let s = String(name == null ? '' : name).trim();
+  s = s.replace(/^0\s+(?=\D)/, '');
+  s = s.replace(/\s*-\s*-\s*/g, ' – ');
+  s = s.replace(/\s+-\s+/g, ' – ');
+  s = s.replace(/\s{2,}/g, ' ').trim();
+  return s;
+}
+for (const t of coachTrips) t.r = tidyRoute(t.r);
 
 // ── DEGRADED DIRECT-SERVICE LOOKUP ──
 // When Transitous is unreachable, answer "next direct coaches A→B" from our
@@ -418,6 +433,62 @@ async function upstream(url, { asText = false, timeoutMs = 25000 } = {}) {
   return { status: res.status, data: asText ? await res.text() : await res.json() };
 }
 
+// ── ROAD SNAPPING ──
+// A traced route drawn as straight "connect the dots" lines between stops looks
+// wrong — buses follow roads, not the countryside. Snap an ordered stop list to
+// the road network so the drawn line hugs the real roads. Approximate by design
+// (OSRM `driving`, not the operator's exact path — the user only wants "the road
+// it likely uses"). ONLY for road modes (BUS/COACH): trains do NOT follow roads,
+// so rail/tram/metro keep straight stop-to-stop segments. Geometry is static, so
+// it's cached hard and reused across every stop on the same line.
+const OSRM = 'https://router.project-osrm.org';
+
+// #6 Persistent shape cache. A snapped line is static, so once OSRM has drawn
+// it we keep it forever — on disk, not just in memory — so restarts don't
+// re-hit OSRM and a viewed line never depends on OSRM being up twice. This is
+// the durable form of a precomputed shapes sidecar: it fills lazily as lines
+// are viewed (or eagerly via scripts/warm-shapes.mjs). Keyed by the waypoint
+// signature so identical stop sequences share one geometry.
+const SHAPES_F = path.join(__dirname, 'route-shapes.json');
+let shapeCache = new Map();
+try {
+  shapeCache = new Map(Object.entries(JSON.parse(fs.readFileSync(SHAPES_F, 'utf8'))));
+} catch { /* first run — created on first write */ }
+let shapeWriteTimer = null;
+function persistShapes() {
+  clearTimeout(shapeWriteTimer);
+  shapeWriteTimer = setTimeout(() => {
+    try { fs.writeFileSync(SHAPES_F, JSON.stringify(Object.fromEntries(shapeCache))); } catch { /* disk read-only — memory cache still serves */ }
+  }, 4000);
+}
+
+async function snapToRoads(stops) {
+  const pts = (stops || []).filter((s) => isFinite(s.lat) && isFinite(s.lon));
+  if (pts.length < 2) return null;
+  // OSRM's demo server caps waypoints per request; sample evenly if a line is huge.
+  let way = pts;
+  if (pts.length > 90) {
+    way = [];
+    const step = pts.length / 90;
+    for (let i = 0; i < 90; i++) way.push(pts[Math.floor(i * step)]);
+    way[way.length - 1] = pts[pts.length - 1];
+  }
+  const sig = way.map((s) => `${s.lat.toFixed(4)},${s.lon.toFixed(4)}`).join(';');
+  if (shapeCache.has(sig)) return shapeCache.get(sig);
+  const coords = way.map((s) => `${s.lon},${s.lat}`).join(';');
+  try {
+    const { data } = await upstream(`${OSRM}/route/v1/driving/${coords}?overview=full&geometries=geojson`, { timeoutMs: 12000 });
+    if (data && data.code === 'Ok' && data.routes && data.routes[0]) {
+      const pathLL = data.routes[0].geometry.coordinates.map(([lon, lat]) => [lat, lon]);
+      shapeCache.set(sig, pathLL);
+      persistShapes();
+      return pathLL;
+    }
+  } catch { /* fall back to straight lines */ }
+  return null;
+}
+const isRoadMode = (m) => /BUS|COACH/i.test(m || '');
+
 // ── HUB-STITCH (cross-network) ──
 // Our coach feed isn't in Transitous yet (PR #2327), so a trip that needs our
 // coaches to escape a coach-only town AND a Transitous train/bus for the last
@@ -468,33 +539,95 @@ async function motisPlan(fromPlace, toPlace, { timeIso, searchWindow = '21600', 
   return its;
 }
 
-// Coach [origin → hub] + MOTIS [hub → dest]. Returns the best stitch per hub
-// (earliest final arrival), sorted, capped. `days`/`baseDate` mirror /api/direct.
-async function hubStitch(fLat, fLon, toPlace, days, baseDate) {
-  const stitches = [];
+// Coach drops reachable from the origin that make real PROGRESS toward the dest
+// — candidate transfer points where MOTIS then walks to the nearest station and
+// continues by train. Generalises the fixed 4-hub list to ANY station en route
+// (the user's "bus drops me near a small station, I catch the train" case).
+// Returns leg1-shaped coach results (earliest per drop), deduped, capped.
+function coachDropsToward(fLat, fLon, tLat, tLon, days, radius = 2500) {
+  const fromIdx = new Map(attachStops(fLat, fLon, radius).map((x) => [x.i, x.d]));
+  if (!fromIdx.size) return [];
+  const originDist = haversineM(fLat, fLon, tLat, tLon);
+  const dayList = days || [romeParts(), romeParts(new Date(Date.now() + 86400000))];
+  const now = dayList[0];
+  const best = new Map(); // dropIdx → earliest-arriving candidate
+  for (let dayOff = 0; dayOff < dayList.length; dayOff++) {
+    const day = dayList[dayOff];
+    for (const trip of coachTrips) {
+      if (!serviceRuns(trip, day)) continue;
+      let board = null;
+      for (const [idx, min] of trip.s) {
+        if (board === null) { if (fromIdx.has(idx)) board = { idx, min }; continue; }
+        if (dayOff === 0 && board.min < now.min - 5) break; // this run already departed
+        const drop = coachStops[idx];
+        const dropDist = haversineM(drop.lat, drop.lon, tLat, tLon);
+        if (dropDist >= originDist - 8000 || dropDist <= 2500) continue; // no real progress / basically at dest
+        const arrAbsMin = min + dayOff * 1440;
+        const prev = best.get(idx);
+        if (prev && prev.arrAbsMin <= arrAbsMin) continue;
+        best.set(idx, {
+          day: dayOff === 0 ? 'today' : 'tomorrow', route: trip.r, operator: trip.op,
+          from: coachStops[board.idx].n, to: drop.n,
+          fromWalkM: Math.round(fromIdx.get(board.idx) || 0), toWalkM: 0,
+          dep: fmtMin(board.min), arr: fmtMin(min),
+          arrPlus: Math.floor(min / 1440) - Math.floor(board.min / 1440),
+          depMin: board.min + dayOff * 1440, arrAbsMin,
+          arrLat: drop.lat, arrLon: drop.lon, routeId: trip.r, dropDist,
+        });
+      }
+    }
+  }
+  const ranked = [...best.values()].sort((a, b) => a.dropDist - b.dropDist || a.arrAbsMin - b.arrAbsMin);
+  const picked = [];
+  for (const c of ranked) {
+    if (picked.some((p) => haversineM(p.arrLat, p.arrLon, c.arrLat, c.arrLon) < 3000)) continue;
+    picked.push(c);
+    if (picked.length >= 5) break;
+  }
+  return picked;
+}
+
+// Coach [origin → transfer] + MOTIS [transfer → dest]. Transfer points = the
+// named rail hubs (fast-train backtracks) PLUS any coach drop that progresses
+// toward the dest. MOTIS onward is run in PARALLEL so trying more stations
+// stays fast. Returns the best stitch per transfer, sorted/capped downstream.
+async function hubStitch(fLat, fLon, toPlace, destCoords, days, baseDate) {
+  // named hubs → coach leg1s
+  const cands = [];
   for (const hub of HUBS) {
     if (haversineM(fLat, fLon, hub.lat, hub.lon) < 8000) continue; // already at/near the hub
-    const coach = directSearch(fLat, fLon, hub.lat, hub.lon, 2500, days, true);
-    const leg1 = (coach.results || [])[0]; // earliest coach that reaches the hub
-    if (!leg1) continue;
+    const leg1 = (directSearch(fLat, fLon, hub.lat, hub.lon, 2500, days, true).results || [])[0];
+    if (leg1) { leg1._name = hub.name; cands.push(leg1); }
+  }
+  // dynamic drops toward the dest (needs dest coords)
+  if (destCoords) {
+    for (const c of coachDropsToward(fLat, fLon, destCoords.lat, destCoords.lon, days)) {
+      if (isFinite(c.arrLat) && isFinite(c.arrLon)) cands.push(c);
+    }
+  }
+  // dedup by drop location (~3km); hubs listed first so they win, cap the fan-out
+  const uniq = [];
+  for (const c of cands) {
+    if (!isFinite(c.arrLat) || !isFinite(c.arrLon)) continue;
+    if (uniq.some((p) => haversineM(p.arrLat, p.arrLon, c.arrLat, c.arrLon) < 3000)) continue;
+    uniq.push(c);
+    if (uniq.length >= 6) break;
+  }
+  const stitches = await Promise.all(uniq.map(async (leg1) => {
     const boardIso = romeInstant(baseDate, (leg1.arrAbsMin ?? 0) + 15); // 15-min transfer cushion
     // Onward search starts from the coach's ACTUAL drop point, so MOTIS walks
     // to whichever station is nearest (maxPreTransitTime 60 min) and renders
     // that walk as a leg — the drop is rarely on the platform itself.
-    const onwardFrom = (isFinite(leg1.arrLat) && isFinite(leg1.arrLon)) ? `${leg1.arrLat},${leg1.arrLon}` : `${hub.lat},${hub.lon}`;
     let onward;
-    try { onward = await motisPlan(onwardFrom, toPlace, { timeIso: boardIso, searchWindow: '21600' }); }
-    catch { continue; }
+    try { onward = await motisPlan(`${leg1.arrLat},${leg1.arrLon}`, toPlace, { timeIso: boardIso, searchWindow: '21600' }); }
+    catch { return null; }
     const best = (onward || [])[0];
-    if (!best) continue;
+    if (!best) return null;
     const depInstant = romeInstant(baseDate, leg1.depMin ?? 0);
     const journeyMin = Math.round((new Date(best.endTime).getTime() - new Date(depInstant).getTime()) / 60000);
-    stitches.push({
-      hub: hub.name, coach: leg1, onward: best,
-      finalArrival: best.endTime, journeyMin,
-    });
-  }
-  return stitches;
+    return { hub: leg1._name || leg1.to, coach: leg1, onward: best, finalArrival: best.endTime, journeyMin };
+  }));
+  return stitches.filter(Boolean);
 }
 
 // Reverse orientation: MOTIS [origin → hub] + our coach [hub → destination].
@@ -608,6 +741,38 @@ function inSicily(lat, lon) {
   return lat >= SICILY.latMin && lat <= SICILY.latMax && lon >= SICILY.lonMin && lon <= SICILY.lonMax;
 }
 
+// Geocode location bias: the client sends "lat,lon" (its known position when
+// inside Italy, else the Sicily centroid). Forwarded to Transitous as &place=
+// so a bare street query ("Via Crocifisso") surfaces NEARBY matches instead of
+// a globally-ranked list where Sicily barely appears. Returns null if malformed.
+function parseBias(str) {
+  if (!str || typeof str !== 'string' || str.length > 40) return null;
+  const m = str.match(/^(-?\d{1,3}(?:\.\d{1,6})?),(-?\d{1,3}(?:\.\d{1,6})?)$/);
+  if (!m) return null;
+  const lat = Number(m[1]), lon = Number(m[2]);
+  if (!Number.isFinite(lat) || !Number.isFinite(lon)) return null;
+  if (lat < -90 || lat > 90 || lon < -180 || lon > 180) return null;
+  return { lat, lon };
+}
+
+// Sort key for a geocode result. Lower sorts first. Region is PRIMARY — this is
+// a Sicily-first app, so every Sicilian result ranks above every mainland one
+// (mainland still appears, just below). Within a region the type bucket orders
+// stops → coach stops → settlements → other → addresses. Without the region
+// term, two mainland stops named "Via Crocifisso" (Puglia/Lazio) outranked the
+// whole Sicilian street list a Sicily user is actually after.
+function geoScore(r, text) {
+  const cat = r.category || '';
+  const name = (r.name || '');
+  let bucket;
+  if (r.type === 'STOP') bucket = 0;
+  else if (r.type === 'COACH_STOP') bucket = 1;
+  else if (/^(city|town|village|hamlet)/.test(cat) || (name.toLowerCase() === (text || '').toLowerCase() && !cat)) bucket = 2;
+  else if (r.type === 'ADDRESS' || /^(via|viale|corso|salita|piazza)\b/i.test(name)) bucket = 4;
+  else bucket = 3;
+  return (inSicily(r.lat, r.lon) ? 0 : 10) + bucket;
+}
+
 // ── VIAGGIATRENO PARSERS ──
 function parseVtStations(text) {
   return text.split('\n').filter(Boolean).map((line) => {
@@ -625,19 +790,41 @@ function parseVtTrainAutocomplete(text) {
 }
 function slimVtDeparture(d) {
   return {
-    trainNumber: d.numeroTreno, category: d.categoriaDescrizione || d.categoria || '',
-    destination: d.destinazione || '', scheduledMs: d.partenzaTreno || null,
+    trainNumber: d.numeroTreno,
+    // "REG 21840" ready-made; falls back to category + number.
+    label: (d.compNumeroTreno || '').trim() || `${d.categoria || ''} ${d.numeroTreno}`.trim(),
+    category: d.categoriaDescrizione || d.categoria || '',
+    destination: d.destinazione || '',
+    // orarioPartenza is the reliable SCHEDULED epoch; partenzaTreno is usually
+    // null. compOrarioPartenza is the pre-formatted "21:03" clock.
+    scheduledMs: d.orarioPartenza || d.partenzaTreno || null,
+    clock: d.compOrarioPartenza || null,
     delayMin: typeof d.ritardo === 'number' ? d.ritardo : null,
-    platformScheduled: d.binarioProgrammatoPartenzaDescrizione || null,
-    platformActual: d.binarioEffettivoPartenzaDescrizione || null,
-    departed: d.nonPartito === false, circulating: !!d.circolante,
+    platform: d.binarioEffettivoPartenzaDescrizione || d.binarioProgrammatoPartenzaDescrizione || null,
+    departed: d.nonPartito === false && !d.inStazione, circulating: !!d.circolante,
     cancelled: d.provvedimento === 1 || d.tipoTreno === 'ST',
   };
 }
 
+// Resolve a Transitous rail stopId (or a station name) to a ViaggiaTreno S-code.
+// The Trenitalia stopId embeds the RFI code: …otherTRENITALIA:830012002 → S12002.
+async function resolveVtCode(stopId, name) {
+  const m = String(stopId || '').match(/(?:TRENITALIA:)?8300(\d{4,6})$/);
+  if (m) return `S${m[1]}`;
+  const n = String(name || '').trim();
+  if (n.length >= 2) {
+    try {
+      const { data } = await upstream(`${VT}/autocompletaStazione/${encodeURIComponent(n.toUpperCase())}`, { asText: true });
+      const st = parseVtStations(data || '')[0];
+      if (st && /^S\d+$/.test(st.id)) return st.id;
+    } catch { /* VT down — caller falls back */ }
+  }
+  return null;
+}
+
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.17.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.23.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)
@@ -659,12 +846,19 @@ const routes = {
   'GET /api/geocode': async (q) => {
     const text = (q.get('text') || '').trim().slice(0, 64);
     if (text.length < 2) return [];
-    const key = `geo:${text.toLowerCase()}`;
+    const bias = parseBias(q.get('place'));
+    // Bias is part of the identity of the result set — cache per coarse locale
+    // so a Palermo-biased and an Agrigento-biased "Via Roma" don't collide.
+    const biasKey = bias ? `${bias.lat.toFixed(2)},${bias.lon.toFixed(2)}` : '';
+    const key = `geo:${text.toLowerCase()}|${biasKey}`;
     const hit = cacheGet(key);
     if (hit) return hit;
-    const { data } = await upstream(`${TRANSITOUS}/api/v1/geocode?text=${encodeURIComponent(text)}&language=it`);
+    const placeParam = bias ? `&place=${bias.lat},${bias.lon}` : '';
+    const { data } = await upstream(`${TRANSITOUS}/api/v1/geocode?text=${encodeURIComponent(text)}&language=it${placeParam}`);
+    // All of Italy (was Sicily-only): mainland addresses are now valid trip
+    // endpoints; cross-border noise (France/Malta/Switzerland) drops by country.
     const results = (data || [])
-      .filter((r) => inSicily(r.lat, r.lon))
+      .filter((r) => r.country === 'IT')
       .map((r) => {
         const areas = r.areas || [];
         const town = areas.find((a) => a.adminLevel === 8)?.name
@@ -693,14 +887,7 @@ const routes = {
       if (seen.has(k)) return false;
       seen.add(k); return true;
     });
-    const bucket = (r) => {
-      if (r.type === 'STOP') return 0;
-      if (r.type === 'COACH_STOP') return 1;
-      if (/^(city|town|village|hamlet)/.test(r.category || '') || (r.name.toLowerCase() === text.toLowerCase() && !r.category)) return 2; // settlements
-      if (r.type === 'ADDRESS' || /^(via|viale|corso|salita|piazza)\b/i.test(r.name)) return 4;
-      return 3;
-    };
-    const out = all.sort((a, b) => bucket(a) - bucket(b) || b.importance - a.importance).slice(0, 10);
+    const out = all.sort((a, b) => geoScore(a, text) - geoScore(b, text) || b.importance - a.importance).slice(0, 10);
     cacheSet(key, out, 24 * 3600 * 1000);
     return out;
   },
@@ -779,9 +966,11 @@ const routes = {
   'GET /api/map-stops': async (q) => {
     const lat = Number(q.get('lat')), lon = Number(q.get('lon'));
     if (!isFinite(lat) || !isFinite(lon)) throw httpError(400, 'lat/lon required');
-    const r = Math.min(Number(q.get('r')) || 1500, 8000);
+    const agg = q.get('agg') === '1';
+    const cellM = agg ? Math.max(60, Math.min(80000, Number(q.get('cell')) || 4000)) : 0;
+    const r = Math.min(Number(q.get('r')) || 1500, agg ? 200000 : 8000);
     const dLat = r / 111320, dLon = r / (111320 * Math.cos((lat * Math.PI) / 180));
-    const key = `mapstops:${lat.toFixed(3)},${lon.toFixed(3)},${r}`;
+    const key = `mapstops:${agg ? `a${cellM}:` : ''}${lat.toFixed(3)},${lon.toFixed(3)},${r}`;
     const hit = cacheGet(key);
     if (hit) return hit;
     let transit = [];
@@ -799,6 +988,30 @@ const routes = {
         coach.push({ kind: 'coach', id: `c${i}`, name: s.n, lat: s.lat, lon: s.lon, modes: ['COACH'], dist: Math.round(haversineM(lat, lon, s.lat, s.lon)) });
       }
     }
+    // Aggregated mode (zoomed out): bucket every in-view stop onto an ABSOLUTE
+    // grid sized to ~a fixed screen distance (cellM, passed by the client per
+    // zoom). Absolute cell keys are stable across pans, so the client reconciles
+    // cleanly (no stale-cluster pileup). A cell holding a SINGLE stop is
+    // returned as that stop (client draws its icon, not a "1" bubble); cells
+    // with more become one counted cluster. Counts are exact (whole bbox).
+    if (agg) {
+      const cellLat = cellM / 111320, cellLon = cellM / (111320 * Math.cos((lat * Math.PI) / 180));
+      const cells = new Map();
+      for (const s of [...transit, ...coach]) {
+        const ck = `${Math.floor(s.lon / cellLon)},${Math.floor(s.lat / cellLat)}`;
+        const c = cells.get(ck) || { count: 0, sumLat: 0, sumLon: 0, transit: 0, coach: 0, one: null };
+        c.count++; c.sumLat += s.lat; c.sumLon += s.lon; c[s.kind]++;
+        c.one = c.count === 1 ? s : null;
+        cells.set(ck, c);
+      }
+      const clusters = [...cells.entries()].map(([ck, c]) => (c.count === 1
+        ? { id: c.one.id, single: true, count: 1, lat: c.one.lat, lon: c.one.lon, name: c.one.name, kind: c.one.kind, modes: c.one.modes || [] }
+        : { id: `g${ck}`, count: c.count, lat: c.sumLat / c.count, lon: c.sumLon / c.count, kind: c.coach >= c.transit ? 'coach' : 'transit' }
+      )).sort((a, b) => b.count - a.count).slice(0, 300);
+      const aggOut = { fetchedAt: Date.now(), aggregated: true, clusters };
+      cacheSet(key, aggOut, 5 * 60 * 1000);
+      return aggOut;
+    }
     transit.sort((a, b) => a.dist - b.dist);
     coach.sort((a, b) => a.dist - b.dist);
     const out = { fetchedAt: Date.now(), stops: [...transit.slice(0, 60), ...coach.slice(0, 90)] };
@@ -810,7 +1023,21 @@ const routes = {
   // Coach stops (?ci=<index>) resolve from our own feed (full paths). Transit
   // stops (?stopId=) resolve via MOTIS stoptimes → trip geometry, capped.
   'GET /api/stop-routes': async (q) => {
-    const ci = q.get('ci'), stopId = q.get('stopId');
+    let ci = q.get('ci');
+    const stopId = q.get('stopId');
+    // Favourites store coach stops by coords (no index) — resolve the nearest
+    // coach stop so a saved coach stop can still trace its routes from the map.
+    if (ci == null && !stopId) {
+      const lat = Number(q.get('lat')), lon = Number(q.get('lon'));
+      if (isFinite(lat) && isFinite(lon)) {
+        let best = -1, bestD = 250;
+        for (let i = 0; i < coachStops.length; i++) {
+          const d = haversineM(lat, lon, coachStops[i].lat, coachStops[i].lon);
+          if (d < bestD) { bestD = d; best = i; }
+        }
+        if (best >= 0) ci = String(best);
+      }
+    }
     if (ci != null && /^\d+$/.test(ci)) {
       const idx = Number(ci);
       if (idx < 0 || idx >= coachStops.length) throw httpError(400, 'bad ci');
@@ -826,6 +1053,8 @@ const routes = {
         }
       }
       const routes = [...byRoute.entries()].slice(0, 10).map(([name, v]) => ({ name, mode: 'COACH', operator: v.operator, stops: v.stops }));
+      // Road-snap each line so the drawn path follows real roads (coaches only).
+      await Promise.all(routes.map(async (rt) => { rt.path = await snapToRoads(rt.stops); }));
       const o = coachStops[idx];
       const out = { origin: { name: o.n, lat: o.lat, lon: o.lon }, routes };
       cacheSet(key, out, 10 * 60 * 1000);
@@ -856,6 +1085,8 @@ const routes = {
         if (stops.length >= 2) routes.push({ name: t.route, mode: t.mode, stops });
       } catch { /* skip a trip that won't resolve */ }
     }
+    // Road-snap bus lines only — trains/trams don't follow the road network.
+    await Promise.all(routes.map(async (rt) => { if (isRoadMode(rt.mode)) rt.path = await snapToRoads(rt.stops); }));
     const o = data.stopTimes?.[0]?.place;
     const out = { origin: o ? { name: o.name, lat: o.lat, lon: o.lon } : null, routes };
     cacheSet(key, out, 10 * 60 * 1000);
@@ -948,8 +1179,13 @@ const routes = {
     if (hit) return hit;
     // Forward: coach [origin → hub] + MOTIS [hub → dest]. Reverse: MOTIS
     // [origin → hub] + coach [hub → dest]. Run whichever the endpoints allow.
+    // dest coords for the forward drop-scan: explicit toLat/toLon, else parse a
+    // "lat,lon" toPlace (a stopId toPlace just falls back to the named hubs).
+    let destCoords = null;
+    if ([tLat, tLon].every(isFinite)) destCoords = { lat: tLat, lon: tLon };
+    else if (toPlace) { const m = String(toPlace).match(/^(-?\d+(?:\.\d+)?),(-?\d+(?:\.\d+)?)$/); if (m) destCoords = { lat: +m[1], lon: +m[2] }; }
     const all = [];
-    if (toPlace) all.push(...await hubStitch(fLat, fLon, toPlace, days, baseDate));
+    if (toPlace) all.push(...await hubStitch(fLat, fLon, toPlace, destCoords, days, baseDate));
     if (fromPlace && [tLat, tLon].every(isFinite)) all.push(...await hubStitchReverse(fromPlace, tLat, tLon, days, baseDate, queryTimeIso));
     const out = { fetchedAt: Date.now(), stitches: rankStitches(all) };
     cacheSet(key, out, 60 * 1000);
@@ -972,6 +1208,27 @@ const routes = {
     const { data } = await upstream(`${VT}/autocompletaStazione/${encodeURIComponent(text)}`, { asText: true });
     const out = parseVtStations(data || '');
     cacheSet(key, out, 24 * 3600 * 1000);
+    return out;
+  },
+
+  // Live departures board for a rail station, resolved from a Transitous stopId
+  // (or name). Returns [] on no-code / VT-down / no-trains so the client falls
+  // back to the MOTIS board (e.g. bus-substituted lines like Agrigento).
+  'GET /api/vt/board': async (q) => {
+    const code = await resolveVtCode(q.get('stopId'), q.get('name'));
+    if (!code) return { source: 'viaggiatreno', code: null, departures: [] };
+    const key = `vtb:${code}`;
+    const hit = cacheGet(key);
+    if (hit) return hit;
+    let departures = [];
+    try {
+      const { data } = await upstream(`${VT}/partenze/${code}/${encodeURIComponent(romeNowString())}`);
+      departures = (data || []).map(slimVtDeparture)
+        .filter((d) => d.scheduledMs || d.clock)
+        .sort((a, b) => (a.scheduledMs || 0) - (b.scheduledMs || 0));
+    } catch { /* VT down → empty → client uses MOTIS */ }
+    const out = { source: 'viaggiatreno', code, fetchedAt: Date.now(), departures };
+    cacheSet(key, out, 60 * 1000);
     return out;
   },
 
@@ -1107,4 +1364,4 @@ if (require.main === module) {
   server.listen(PORT, () => console.log(`ManGO:IT proxy on :${PORT}${STATIC ? ' (static+api)' : ''}`));
 }
 
-module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon, vtSilence, dropDominated };
+module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon, vtSilence, dropDominated, parseBias, geoScore };

@@ -3,7 +3,52 @@ const { test } = require('node:test');
 const assert = require('node:assert');
 const {
   romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, inSicily, dropDominated,
+  parseBias, geoScore,
 } = require('../../server/proxy.js');
+
+// ── GEOCODE LOCATION BIAS + RANKING (all-Italy addresses) ──
+test('parseBias accepts a valid "lat,lon" pair', () => {
+  assert.deepStrictEqual(parseBias('37.4045,13.5303'), { lat: 37.4045, lon: 13.5303 });
+  assert.deepStrictEqual(parseBias('37.6,14.15'), { lat: 37.6, lon: 14.15 });
+  assert.deepStrictEqual(parseBias('-12.5,-70'), { lat: -12.5, lon: -70 });
+});
+
+test('parseBias rejects malformed / out-of-range / abusive input', () => {
+  for (const bad of ['', null, undefined, 'abc', '37.4', '37.4,', ',13.5', '200,13', '37,999',
+    '37.4,13.5;drop', '1'.repeat(50) + ',2', '37.4 13.5']) {
+    assert.strictEqual(parseBias(bad), null, `should reject ${JSON.stringify(bad)}`);
+  }
+});
+
+test('geoScore buckets by type: stop < coach < settlement < other < address', () => {
+  const at = (lat, lon) => ({ lat, lon }); // mainland to isolate the bucket term
+  const mainland = (o) => ({ ...o, ...at(45, 9) }); // Milan — inSicily false, no boost
+  assert.ok(geoScore(mainland({ type: 'STOP', name: 'X' }), 'q')
+    < geoScore(mainland({ type: 'COACH_STOP', name: 'X' }), 'q'));
+  assert.ok(geoScore(mainland({ type: 'PLACE', category: 'town', name: 'X' }), 'q')
+    < geoScore(mainland({ type: 'ADDRESS', name: 'Via Y' }), 'q'));
+  assert.ok(geoScore(mainland({ type: 'PLACE', category: 'restaurant', name: 'Z' }), 'q')
+    < geoScore(mainland({ type: 'ADDRESS', name: 'Via Y' }), 'q'));
+});
+
+test('geoScore ranks Sicily as a hard block above mainland (Sicily-first app)', () => {
+  const sicAddr = { type: 'ADDRESS', name: 'Via Crocifisso', lat: 37.4045, lon: 13.5303 }; // Raffadali
+  const mainAddr = { type: 'ADDRESS', name: 'Via Crocifisso', lat: 41.9, lon: 12.5 };       // Rome
+  assert.ok(geoScore(sicAddr, 'via crocifisso') < geoScore(mainAddr, 'via crocifisso'));
+  // Even a mainland STOP (best bucket) sits below any Sicilian result — the two
+  // Puglia/Lazio "Via Crocifisso" stops must not top the Sicilian street list.
+  const mainStop = { type: 'STOP', name: 'Oria - Via Crocifisso', lat: 40.5, lon: 17.6 };
+  assert.ok(geoScore(sicAddr, 'q') < geoScore(mainStop, 'q'));
+});
+
+test('geoScore still orders by type within a region', () => {
+  const sic = (o) => ({ ...o, lat: 37.4, lon: 13.5 });
+  assert.ok(geoScore(sic({ type: 'STOP', name: 'X' }), 'q')
+    < geoScore(sic({ type: 'ADDRESS', name: 'Via Y' }), 'q'));
+  const main = (o) => ({ ...o, lat: 45, lon: 9 });
+  assert.ok(geoScore(main({ type: 'STOP', name: 'X' }), 'q')
+    < geoScore(main({ type: 'ADDRESS', name: 'Via Y' }), 'q'));
+});
 
 test('dropDominated removes strictly-worse itineraries (audit fix)', () => {
   const it = (start, end) => ({ startTime: `2026-08-05T${start}:00Z`, endTime: `2026-08-05T${end}:00Z` });
@@ -69,14 +114,18 @@ test('pickVtCandidate takes the run closest to now (train numbers repeat daily)'
 test('slimVtDeparture maps the fields the UI needs', () => {
   const out = slimVtDeparture({
     numeroTreno: 21757, categoriaDescrizione: 'REG', destinazione: 'PALERMO AEROPORTO',
-    partenzaTreno: 1784995980000, ritardo: 3,
+    compNumeroTreno: 'REG 21757', compOrarioPartenza: '17:33',
+    orarioPartenza: 1784995980000, partenzaTreno: null, ritardo: 3,
     binarioProgrammatoPartenzaDescrizione: '4', binarioEffettivoPartenzaDescrizione: null,
     nonPartito: false, circolante: true, provvedimento: 0,
   });
   assert.strictEqual(out.trainNumber, 21757);
   assert.strictEqual(out.category, 'REG');
+  assert.strictEqual(out.label, 'REG 21757');
   assert.strictEqual(out.delayMin, 3);
-  assert.strictEqual(out.platformScheduled, '4');
+  assert.strictEqual(out.scheduledMs, 1784995980000);   // orarioPartenza, not the null partenzaTreno
+  assert.strictEqual(out.clock, '17:33');
+  assert.strictEqual(out.platform, '4');                // actual ?? scheduled
   assert.strictEqual(out.cancelled, false);
 });
 

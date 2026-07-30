@@ -44,6 +44,19 @@ function caseSegment(seg, isLeading) {
   return cap(seg);
 }
 
+// Route/line labels ("0 Aragona - -Raffadali", "S. Elisabetta - Palermo") carry
+// parse-damage artefacts: a spurious leading "0 " corsa token and doubled hyphen
+// separators. Tidy those and normalise the A–B separator to a spaced en-dash,
+// then title-case. Bare route numbers ("109", "N2") pass through untouched.
+export function cleanRouteName(name) {
+  let s = String(name || '').trim();
+  s = s.replace(/^0\s+(?=\D)/, '');        // drop a parse-damage leading "0 "
+  s = s.replace(/\s*-\s*-\s*/g, ' – ');    // doubled dash "- -" → en-dash
+  s = s.replace(/\s+-\s+/g, ' – ');         // spaced hyphen separator → en-dash
+  s = s.replace(/\s{2,}/g, ' ').trim();
+  return displayName(s);
+}
+
 export function displayName(name) {
   if (!name) return '';
   return String(name).split(' ').map((tok, i) => {

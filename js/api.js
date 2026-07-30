@@ -30,8 +30,10 @@ async function getJson(path, { cacheKey = path, source = 'transitous', allowStal
 }
 
 export const api = {
-  geocode: (text) =>
-    getJson(`/api/geocode?text=${encodeURIComponent(text)}`, { source: 'transitous' }),
+  geocode: (text, place) =>
+    getJson(`/api/geocode?text=${encodeURIComponent(text)}${place ? `&place=${encodeURIComponent(place)}` : ''}`, {
+      cacheKey: `geo:${text}${place ? `|${place}` : ''}`, source: 'transitous',
+    }),
 
   plan: ({ fromPlace, toPlace, time, arriveBy, modes, searchWindow, maxItineraries, pageCursor }) => {
     const p = new URLSearchParams({ fromPlace, toPlace });
@@ -49,15 +51,19 @@ export const api = {
       cacheKey: `stops:${lat.toFixed(3)},${lon.toFixed(3)}`, source: 'transitous',
     }),
 
-  mapStops: (lat, lon, r = 1500) =>
-    getJson(`/api/map-stops?lat=${lat.toFixed(4)}&lon=${lon.toFixed(4)}&r=${r}`, {
-      cacheKey: `mapstops:${lat.toFixed(3)},${lon.toFixed(3)},${r}`, source: 'transitous',
+  mapStops: (lat, lon, r = 1500, agg = false, cell = 0) =>
+    getJson(`/api/map-stops?lat=${lat.toFixed(4)}&lon=${lon.toFixed(4)}&r=${r}${agg ? `&agg=1&cell=${Math.round(cell)}` : ''}`, {
+      cacheKey: `mapstops:${agg ? `a${Math.round(cell)}:` : ''}${lat.toFixed(3)},${lon.toFixed(3)},${r}`, source: 'transitous',
     }),
 
-  stopRoutes: ({ ci, stopId }) =>
-    getJson(`/api/stop-routes?${ci != null ? `ci=${ci}` : `stopId=${encodeURIComponent(stopId)}`}`, {
-      cacheKey: `sr:${ci != null ? 'c' + ci : stopId}`, source: 'transitous',
-    }),
+  stopRoutes: ({ ci, stopId, lat, lon }) => {
+    const qs = ci != null ? `ci=${ci}`
+      : stopId ? `stopId=${encodeURIComponent(stopId)}`
+      : `lat=${(+lat).toFixed(5)}&lon=${(+lon).toFixed(5)}`;
+    return getJson(`/api/stop-routes?${qs}`, {
+      cacheKey: `sr:${ci != null ? 'c' + ci : stopId || `${(+lat).toFixed(4)},${(+lon).toFixed(4)}`}`, source: 'transitous',
+    });
+  },
 
   stoptimes: (stopId, n = 6) =>
     getJson(`/api/stoptimes?stopId=${encodeURIComponent(stopId)}&n=${n}`, { source: 'transitous' }),
@@ -98,4 +104,10 @@ export const api = {
 
   vtDepartures: (stationId) =>
     getJson(`/api/vt/departures?stationId=${encodeURIComponent(stationId)}`, { source: 'viaggiatreno' }),
+
+  // Live train board for a rail station (resolved from its Transitous stopId).
+  vtBoard: (stopId, name = '') =>
+    getJson(`/api/vt/board?stopId=${encodeURIComponent(stopId)}${name ? `&name=${encodeURIComponent(name)}` : ''}`, {
+      cacheKey: `vtboard:${stopId}`, source: 'viaggiatreno',
+    }),
 };

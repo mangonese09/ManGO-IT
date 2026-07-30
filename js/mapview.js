@@ -6,11 +6,21 @@
 // If it can't load (first visit offline), the old nearest-stops list renders.
 
 import { api } from './api.js';
-import { el, modeIcon } from './ui.js';
+import { el, modeIcon, openSheet, closeSheet } from './ui.js';
 import { getLastPos } from './board.js';
-import { displayName } from './names.js';
+import { displayName, cleanRouteName } from './names.js';
 import { openStopSchedule } from './saved.js';
+import { isFavStop, addFavStop, removeFavStop, getFavStops } from './store.js';
 import { toast } from './toast.js';
+
+// Favourite key — same scheme as Home/Saved: transit stops key by id, coach
+// stops (no stable id) by rounded coords.
+// Works on both a marker meta and a raw server stop (transit stops key by their
+// stopId — which is `id` in the map-stops response; coach stops by coords).
+function favKey(o) {
+  const sid = o.stopId || (o.kind === 'transit' ? o.id : null);
+  return sid || `${(+o.lat).toFixed(5)},${(+o.lon).toFixed(5)}`;
+}
 
 const SICILY_CENTER = [37.55, 14.27]; // no-fix fallback: the whole island
 const SICILY_ZOOM = 8;
@@ -21,7 +31,39 @@ let tileLayer = null;
 let tileTheme = null;
 let youMarker = null;
 let leafletPromise = null;
+let hintEl = null;
 const markers = new Map(); // stopId -> L.Marker
+
+// #2 Mode filter — which pin families to show. Persisted; both on by default.
+let mapFilter = { rail: true, road: true };
+try { mapFilter = { rail: true, road: true, ...JSON.parse(localStorage.getItem('mangoit.mapModes') || '{}') }; } catch { /* default */ }
+// A stop is 'rail' (trains/metro/tram) or 'road' (buses + our coaches).
+function stopBucket(s) {
+  if (s.kind === 'coach') return 'road';
+  return (s.modes || []).some((m) => /RAIL|METRO|SUBWAY|TRAM|LONG_DISTANCE/.test(m)) ? 'rail' : 'road';
+}
+function stopShown(s) { return mapFilter[stopBucket(s)]; }
+
+// #3 De-overlap: stops sharing a ~40m cell (e.g. RAFFADALI + RAFFADALI Via
+// Nazionale) fan out onto a small circle so each stays visible and tappable.
+// Only the DISPLAY position moves; meta keeps the true coords for schedules.
+function declutter(stops) {
+  const cell = new Map();
+  for (const s of stops) {
+    const k = `${Math.round(s.lat * 2800)},${Math.round(s.lon * 2800)}`;
+    (cell.get(k) || cell.set(k, []).get(k)).push(s);
+  }
+  const pos = new Map();
+  for (const group of cell.values()) {
+    if (group.length === 1) { pos.set(group[0].id, [group[0].lat, group[0].lon]); continue; }
+    const R = 0.0002; // ~22m
+    group.forEach((s, i) => {
+      const a = (2 * Math.PI * i) / group.length;
+      pos.set(s.id, [s.lat + R * Math.cos(a), s.lon + R * Math.sin(a) / Math.cos(s.lat * Math.PI / 180)]);
+    });
+  }
+  return pos;
+}
 
 function currentTheme() {
   return document.documentElement.dataset.theme === 'light' ? 'light' : 'dark';
@@ -74,6 +116,30 @@ function stopIcon(mode, kind) {
   });
 }
 
+// Favourited stops get a distinct GOLD STAR pin (bigger, star-shaped backdrop)
+// so they stand out and stay visible even when everything else clusters.
+function favIcon(mode, kind) {
+  const src = kind === 'coach' ? '/icons/modes/bus.png' : modeImgSrc(mode);
+  return window.L.divIcon({
+    className: 'stop-pin fav-pin',
+    html: `<span class="fav-star"></span><img src="${src}" alt="">`,
+    iconSize: [38, 38], iconAnchor: [19, 19],
+  });
+}
+
+// Cluster shown zoomed out — a soft, translucent heat blob sized by how many
+// stops sit in that grid cell (log scale). Transparent edges let the basemap +
+// city labels read through; overlapping blobs blend like a heatmap.
+function clusterIcon(count, kind) {
+  const d = Math.round(Math.min(74, 30 + Math.log2(count) * 8));
+  const fs = Math.max(11, Math.round(d * 0.34));
+  return window.L.divIcon({
+    className: `cluster-blob cluster-${kind}`,
+    html: `<span style="font-size:${fs}px">${count}</span>`,
+    iconSize: [d, d], iconAnchor: [d / 2, d / 2],
+  });
+}
+
 function showYou(pos) {
   if (!map || !pos) return;
   const L = window.L;
@@ -85,40 +151,117 @@ function showYou(pos) {
   }
 }
 
-// Stops for the visible area — transit (Transitous) AND our coach stops. The
-// server caps at 60 transit + 90 coach nearest the centre; the zoom hint says
-// zoomed-way-out is honest sampling of the middle.
+// Below this zoom the map aggregates stops into counted clusters; at/above it,
+// individual pins. Favourites are always shown individually, either way.
+const CLUSTER_ZOOM = 12;
+const clusterMarkers = new Map(); // cell id -> L.Marker
+const favMarkers = new Map();     // fav key -> L.Marker
+
+// Favourite pins render from the saved store (not the viewport feed), so they
+// stay visible everywhere — including zoomed out, beside the clusters.
+function renderFavorites() {
+  if (!map) return;
+  const favs = getFavStops();
+  const keep = new Set();
+  for (const f of favs) {
+    if (!isFinite(f.lat) || !isFinite(f.lon)) continue;
+    keep.add(f.key);
+    if (favMarkers.has(f.key)) continue;
+    const kind = f.stopId ? 'transit' : 'coach';
+    const meta = { id: f.key, kind, ci: null, name: f.name, stopId: f.stopId || null, lat: f.lat, lon: f.lon };
+    const m = window.L.marker([f.lat, f.lon], { icon: favIcon(f.iconMode, kind), keyboard: false, zIndexOffset: 1000 }).addTo(map);
+    m.bindTooltip(displayName(f.name), { direction: 'top', offset: [0, -18] });
+    m.on('click', () => openStopRoutes(meta));
+    favMarkers.set(f.key, m);
+  }
+  for (const [k, m] of favMarkers) if (!keep.has(k)) { m.remove(); favMarkers.delete(k); }
+}
+function clearIndividual() { for (const m of markers.values()) m.remove(); markers.clear(); }
+function clearClusters() { for (const m of clusterMarkers.values()) m.remove(); clusterMarkers.clear(); }
+
 let loadSeq = 0;
 async function loadVisibleStops() {
   if (!map || highlightActive) return; // don't churn markers under an active highlight
+  renderFavorites();                   // always, at every zoom
   const seq = ++loadSeq;
   const c = map.getCenter();
   const corner = map.getBounds().getNorthEast();
-  const r = Math.min(8000, Math.max(500, Math.round(map.distance(c, corner))));
+  const clustered = map.getZoom() < CLUSTER_ZOOM;
+  // Clustered mode covers the whole viewport (up to the island); individual mode
+  // stays a tight radius so it samples the centre and stays fast.
+  const reach = Math.round(map.distance(c, corner));
+  const r = clustered ? Math.min(200000, Math.max(4000, reach)) : Math.min(8000, Math.max(500, reach));
+  // Grid cell ≈ a fixed on-screen distance so cluster density feels the same at
+  // every zoom (groups split as you zoom in). Measured from 64px at the centre.
+  const sz = map.getSize();
+  const px = map.distance(map.containerPointToLatLng([sz.x / 2, sz.y / 2]), map.containerPointToLatLng([sz.x / 2 + 54, sz.y / 2]));
+  const cellM = clustered ? Math.max(50, Math.round(px / 50) * 50) : 0; // snap to 50m so a pan doesn't churn the grid/cache
   try {
-    const { data } = await api.mapStops(c.lat, c.lng, r);
+    const { data } = await api.mapStops(c.lat, c.lng, r, clustered, cellM);
     if (seq !== loadSeq || !map || highlightActive) return;
-    const stops = data.stops || [];
-    const keep = new Set();
-    for (const s of stops) {
-      keep.add(s.id);
-      if (markers.has(s.id)) continue;
-      const meta = { id: s.id, kind: s.kind, name: s.name, stopId: s.kind === 'transit' ? s.id : null, lat: s.lat, lon: s.lon };
-      const m = window.L.marker([s.lat, s.lon], {
-        icon: stopIcon((s.modes || [])[0], s.kind), keyboard: false,
-      }).addTo(map);
-      m.meta = meta;
-      m.bindTooltip(displayName(s.name), { direction: 'top', offset: [0, -14] });
-      m.on('click', () => highlightStop(meta));
-      markers.set(s.id, m);
-    }
-    const limit = r * 2.5;
-    for (const [id, m] of markers) {
-      if (keep.has(id)) continue;
-      if (map.distance(c, m.getLatLng()) > limit) { m.remove(); markers.delete(id); }
-    }
+    if (clustered) { renderClusters(data.clusters || []); return; }
+    renderIndividual(data.stops || [], c, r);
   } catch { /* pan on — stale markers beat an error state */ }
 }
+
+const favKeys = () => new Set(getFavStops().map((f) => f.key));
+
+function renderIndividual(all, c, r) {
+  clearClusters();
+  const fk = favKeys();
+  const stops = all.filter(stopShown).filter((s) => !fk.has(favKey(s))); // favourites show via favMarkers
+  const pos = declutter(stops);
+  const keep = new Set();
+  for (const s of stops) {
+    keep.add(s.id);
+    const ll = pos.get(s.id) || [s.lat, s.lon];
+    if (markers.has(s.id)) { markers.get(s.id).setLatLng(ll); continue; }
+    const meta = { id: s.id, kind: s.kind, ci: s.kind === 'coach' ? Number(s.id.slice(1)) : null, name: s.name, stopId: s.kind === 'transit' ? s.id : null, lat: s.lat, lon: s.lon };
+    const m = window.L.marker(ll, { icon: stopIcon((s.modes || [])[0], s.kind), keyboard: false }).addTo(map);
+    m.meta = meta;
+    m.bindTooltip(displayName(s.name), { direction: 'top', offset: [0, -14] });
+    m.on('click', () => openStopRoutes(meta));
+    markers.set(s.id, m);
+  }
+  const limit = r * 2.5;
+  for (const [id, m] of markers) {
+    if (keep.has(id)) continue;
+    if (map.distance(c, m.getLatLng()) > limit) { m.remove(); markers.delete(id); }
+  }
+}
+
+function renderClusters(clusters) {
+  clearIndividual();
+  const fk = favKeys();
+  // Reconcile by stable id: singletons key on the stop id, clusters on their
+  // absolute-grid id — so pans keep markers but a zoom (new grid) swaps them,
+  // instead of piling stale bubbles up.
+  const want = new Map();
+  for (const cl of clusters) {
+    if (!mapFilter[cl.kind === 'coach' ? 'road' : 'rail']) continue; // mode filter
+    if (cl.single && fk.has(favKey(cl))) continue;                   // shown as a fav star
+    want.set(cl.id, cl);
+  }
+  for (const [id, m] of clusterMarkers) if (!want.has(id)) { m.remove(); clusterMarkers.delete(id); }
+  for (const [id, cl] of want) {
+    if (clusterMarkers.has(id)) continue;
+    let m;
+    if (cl.single) {
+      // a lone stop draws as its own icon (not a "1" bubble) and opens its routes
+      const meta = { id: cl.id, kind: cl.kind, ci: cl.kind === 'coach' ? Number(cl.id.slice(1)) : null, name: cl.name, stopId: cl.kind === 'transit' ? cl.id : null, lat: cl.lat, lon: cl.lon };
+      m = window.L.marker([cl.lat, cl.lon], { icon: stopIcon((cl.modes || [])[0], cl.kind), keyboard: false }).addTo(map);
+      m.bindTooltip(displayName(cl.name), { direction: 'top', offset: [0, -14] });
+      m.on('click', () => openStopRoutes(meta));
+    } else {
+      m = window.L.marker([cl.lat, cl.lon], { icon: clusterIcon(cl.count, cl.kind), keyboard: false }).addTo(map);
+      m.on('click', () => map.flyTo([cl.lat, cl.lon], Math.min(map.getZoom() + 3, 16), { duration: 0.8 }));
+    }
+    clusterMarkers.set(id, m);
+  }
+}
+
+// Toggling a filter changes which pins belong on the map — drop them and reload.
+function applyFilter() { clearIndividual(); clearClusters(); loadVisibleStops(); }
 
 // ── CLICK-TO-HIGHLIGHT ROUTES ──
 const ROUTE_COLORS = { COACH: '#ffb454', BUS: '#46c878', RAIL: '#4a90e2', REGIONAL_RAIL: '#4a90e2',
@@ -136,8 +279,10 @@ function modeLabel(mode) {
 let highlightLayer = null;
 let highlightActive = false;
 let infoBar = null;
+let suppressClearOnce = false; // tapping a line opens its sheet without dropping the trace
 
 function clearHighlight() {
+  if (suppressClearOnce) { suppressClearOnce = false; return; }
   highlightActive = false;
   if (highlightLayer) { highlightLayer.remove(); highlightLayer = null; }
   const cv = document.getElementById('map-canvas');
@@ -149,58 +294,191 @@ function clearHighlight() {
   if (infoBar) { infoBar.remove(); infoBar = null; }
 }
 
-async function highlightStop(meta) {
-  const L = window.L;
-  clearHighlight();
+// Tapping a stop:
+//  • COACH stop (our feed, the differentiator) → a window listing its routes,
+//    each traceable on the map (one at a time), flying there smoothly.
+//  • TRAIN station / city transit stop → straight to its departures. Tracing a
+//    rail line on a map has little value (it obviously follows the rails), and
+//    dumping every line/departure is "too intense" — the schedule is what you
+//    actually want at a station.
+// Tapping a stop eases the map in and lifts the stop toward the upper third, so
+// you see WHERE it is (above where the info sheet will cover the bottom) before
+// the sheet appears. Zooms in to at least street level; never zooms out.
+function focusStop(lat, lon) {
+  if (!map || !isFinite(lat) || !isFinite(lon)) return;
+  const z = Math.max(map.getZoom(), 15);
+  const size = map.getSize();
+  const center = map.unproject(map.project([lat, lon], z).add([0, size.y * 0.18]), z);
+  map.flyTo(center, z, { duration: 0.5 });
+}
+
+async function openStopRoutes(meta) {
+  if (hintEl) hintEl.classList.add('gone');
+  focusStop(meta.lat, meta.lon);
+  await new Promise((r) => setTimeout(r, 320)); // let the zoom read before the info sheet
+  if (meta.kind === 'transit') { openStopSchedule(meta); return; } // schedule-first for stations
+  // viewport coach → ci; saved coach (no index) → coords.
+  const q = meta.ci != null ? { ci: meta.ci } : { lat: meta.lat, lon: meta.lon };
   let data;
   try {
-    ({ data } = await api.stopRoutes(meta.kind === 'coach' ? { ci: meta.id.slice(1) } : { stopId: meta.id }));
+    ({ data } = await api.stopRoutes(q));
   } catch { openStopSchedule(meta); return; }
   const routes = (data && data.routes) || [];
-  if (!routes.length) { openStopSchedule(meta); return; } // nothing to draw — just show times
+  if (!routes.length) { openStopSchedule(meta); return; }
+  openRoutesSheet(meta, routes);
+}
 
+function openRoutesSheet(meta, routes) {
+  const key = favKey(meta);
+  const body = el('div', { class: 'iti-detail routes-sheet' });
+  const favBtn = el('button', { class: `chip-btn${isFavStop(key) ? ' on' : ''}` });
+  const paintFav = () => { const on = isFavStop(key); favBtn.classList.toggle('on', on); favBtn.textContent = on ? '★ Saved' : '☆ Save'; };
+  paintFav();
+  favBtn.addEventListener('click', () => { toggleFav(meta, null); paintFav(); });
+  body.appendChild(el('div', { class: 'routes-actions' }, [
+    el('button', { class: 'chip-btn', text: 'Schedule', onclick: () => openStopSchedule(meta) }),
+    favBtn,
+  ]));
+  body.appendChild(el('p', { class: 'muted routes-hint', text: 'Tap a route to trace it on the map.' }));
+  routes.forEach((rt, i) => {
+    const color = routeColor(rt.mode, i);
+    body.appendChild(el('button', {
+      class: 'dep-row dep-row-btn route-pick-row',
+      onclick: () => { closeSheet(); traceRoute(meta, routes, i); },
+    }, [
+      el('span', { class: 'line-swatch', style: `background:${color}` }),
+      el('div', { class: 'dep-main' }, [
+        el('span', { class: 'dep-route', text: cleanRouteName(rt.name) || modeLabel(rt.mode) }),
+        el('span', { class: 'muted dep-headsign', text: `${rt.operator ? displayName(rt.operator) + ' · ' : ''}${rt.stops.length} stops` }),
+      ]),
+      el('span', { class: 'dep-chevron', text: '›' }),
+    ]));
+  });
+  openSheet(body, { title: displayName(meta.name) });
+}
+
+// Trace ONE chosen route: draw its (road-snapped) line + stop dots, fly the map
+// to it smoothly, and show an info-bar scoped to that route.
+function traceRoute(meta, routes, idx) {
+  const L = window.L;
+  clearHighlight();
+  const rt = routes[idx];
+  const color = routeColor(rt.mode, idx);
   highlightActive = true;
   highlightLayer = L.layerGroup().addTo(map);
-  const litPts = [];
-  routes.forEach((rt, i) => {
-    const pts = rt.stops.map((s) => [s.lat, s.lon]);
-    L.polyline(pts, { color: routeColor(rt.mode, i), weight: 4, opacity: 0.85, lineJoin: 'round' }).addTo(highlightLayer);
-    litPts.push(...rt.stops);
-  });
-  // Frame the routes without zooming past street level.
-  const all = routes.flatMap((r) => r.stops.map((s) => [s.lat, s.lon]));
-  if (all.length) map.fitBounds(L.latLngBounds(all).pad(0.12), { maxZoom: 13, animate: true });
+  const line = (rt.path && rt.path.length >= 2) ? rt.path : rt.stops.map((s) => [s.lat, s.lon]);
+  // Visible line first (non-interactive), fat transparent casing ON TOP as the
+  // tap target — taps land on the casing (→ stop list), not the map background.
+  L.polyline(line, { color, weight: 4, opacity: 0.9, lineJoin: 'round', lineCap: 'round', interactive: false }).addTo(highlightLayer);
+  const hit = L.polyline(line, { color, weight: 20, opacity: 0, lineCap: 'round', interactive: true }).addTo(highlightLayer);
+  hit.on('click', () => { keepTrace(); openLineSheet(rt, color); });
+  // A dot at every OTHER stop on the route (deduped), tappable for its schedule.
+  const originK = `${(+meta.lat).toFixed(4)},${(+meta.lon).toFixed(4)}`;
+  const dotSeen = new Set();
+  for (const s of rt.stops) {
+    if (!isFinite(s.lat) || !isFinite(s.lon)) continue;
+    const k = `${s.lat.toFixed(4)},${s.lon.toFixed(4)}`;
+    if (k === originK || dotSeen.has(k)) continue;
+    dotSeen.add(k);
+    const dot = L.marker([s.lat, s.lon], {
+      icon: L.divIcon({ className: 'route-dot', html: '<span></span>', iconSize: [11, 11], iconAnchor: [6, 6] }),
+      keyboard: false, zIndexOffset: -200,
+    }).addTo(highlightLayer);
+    dot.bindTooltip(displayName(s.name), { direction: 'top', offset: [0, -8] });
+    dot.on('click', () => { keepTrace(); openStopSchedule({ name: s.name, lat: s.lat, lon: s.lon, stopId: s.stopId || null }); });
+  }
   document.getElementById('map-canvas').classList.add('has-highlight');
   for (const [id, m] of markers) {
     const e = m.getElement();
     if (!e) continue;
     if (id === meta.id) { e.classList.add('lit', 'origin'); continue; }
     const ll = m.getLatLng();
-    if (litPts.some((s) => map.distance(ll, [s.lat, s.lon]) < 45)) e.classList.add('lit');
+    if (rt.stops.some((s) => map.distance(ll, [s.lat, s.lon]) < 45)) e.classList.add('lit');
   }
-  showInfoBar(meta, routes);
+  // Smooth animated zoom to the route's extent (flyTo, not a hard fitBounds).
+  const b = L.latLngBounds(rt.stops.map((s) => [s.lat, s.lon]));
+  if (b.isValid()) map.flyToBounds(b.pad(0.14), { maxZoom: 13, duration: 0.9 });
+  showRouteInfoBar(meta, routes, idx, color);
 }
 
-function showInfoBar(meta, routes) {
+// A dot/line tap opens a sheet; the map-bg click that Leaflet fires next must
+// NOT drop the trace. One-shot suppress that resets after this event tick.
+function keepTrace() { suppressClearOnce = true; setTimeout(() => { suppressClearOnce = false; }, 0); }
+
+function showRouteInfoBar(meta, routes, idx, color) {
   const holder = document.getElementById('map-canvas');
   if (infoBar) infoBar.remove();
-  const legend = el('div', { class: 'map-legend' });
-  routes.slice(0, 6).forEach((rt, i) => {
-    legend.appendChild(el('span', {}, [
-      el('i', { style: `background:${routeColor(rt.mode, i)}` }),
-      el('span', { text: displayName((rt.name || modeLabel(rt.mode)).slice(0, 22)) }),
-    ]));
+  const rt = routes[idx];
+  const key = favKey(meta);
+  const favBtn = el('button', {
+    class: `mib-fav${isFavStop(key) ? ' on' : ''}`, 'aria-label': 'Save this stop', text: '★',
+    onclick: () => toggleFav(meta, favBtn),
   });
   infoBar = el('div', { class: 'map-info-bar' }, [
     el('div', { class: 'mib-main' }, [
-      el('div', { class: 'mib-name', text: displayName(meta.name) }),
-      el('div', { class: 'mib-sub', text: `${routes.length} route${routes.length > 1 ? 's' : ''} here` }),
-      legend,
+      el('div', { class: 'mib-name' }, [
+        el('span', { class: 'mib-swatch', style: `background:${color}` }),
+        el('span', { class: 'lg-text', text: cleanRouteName(rt.name) || modeLabel(rt.mode) }),
+      ]),
+      el('div', { class: 'mib-sub', text: `${displayName(meta.name)} · ${rt.stops.length} stops` }),
     ]),
-    el('button', { class: 'mib-btn', text: 'Schedule', onclick: () => openStopSchedule(meta) }),
+    routes.length > 1 ? el('button', { class: 'mib-x mib-back', 'aria-label': 'Back to routes', text: '‹', onclick: () => openRoutesSheet(meta, routes) }) : null,
+    el('button', { class: 'mib-btn', text: 'Stops', onclick: () => openLineSheet(rt, color) }),
+    favBtn,
     el('button', { class: 'mib-x', 'aria-label': 'Clear', text: '✕', onclick: clearHighlight }),
   ]);
+  // Without this, a tap on any info-bar button also reaches the Leaflet map as a
+  // background click → clearHighlight yanks the bar out from under the tap.
+  window.L.DomEvent.disableClickPropagation(infoBar);
   holder.appendChild(infoBar);
+}
+
+// #E Favourite / unfavourite a stop straight from the map. The star pin lives in
+// the always-on favourites layer, so sync that + the info-bar star + Saved tab.
+function toggleFav(meta, btn) {
+  const key = favKey(meta);
+  const nowFav = !isFavStop(key);
+  if (nowFav) {
+    addFavStop({ key, name: meta.name, kind: meta.kind === 'coach' ? 'coach stop' : 'stop', iconMode: meta.kind === 'coach' ? 'COACH' : (meta.modes || [])[0] || 'BUS', stopId: meta.stopId || null, lat: meta.lat, lon: meta.lon });
+  } else {
+    removeFavStop(key);
+  }
+  btn && btn.classList.toggle('on', nowFav);
+  toast(nowFav ? 'Saved to favorites' : 'Removed from favorites');
+  renderFavorites();
+  // reconcile the plain/cluster layers: the now-favourite drops its plain pin
+  // (shown as a star instead); an un-favourite comes back as a plain pin.
+  if (!highlightActive) loadVisibleStops();
+}
+
+// #1 Tap a drawn line → its full ordered stop list, each row opening that
+// stop's schedule. Turns the traced geometry from decoration into navigation.
+function openLineSheet(rt, color) {
+  const stops = rt.stops || [];
+  const body = el('div', { class: 'iti-detail line-sheet' });
+  body.appendChild(el('div', { class: 'line-sheet-head' }, [
+    el('span', { class: 'line-swatch', style: `background:${color}` }),
+    el('div', {}, [
+      el('div', { class: 'line-op muted', text: `${rt.operator ? displayName(rt.operator) + ' · ' : ''}${stops.length} stops` }),
+    ]),
+  ]));
+  body.appendChild(el('p', { class: 'muted line-sheet-hint', text: 'Tap a stop to move the map there.' }));
+  for (const s of stops) {
+    body.appendChild(el('button', {
+      class: 'dep-row dep-row-btn line-stop-row',
+      // #9 tapping a stop pans the map to it (the trace stays drawn underneath)
+      onclick: () => {
+        if (!isFinite(s.lat) || !isFinite(s.lon)) return;
+        closeSheet();
+        map.setView([s.lat, s.lon], Math.max(map.getZoom(), NEAR_ZOOM), { animate: true });
+      },
+    }, [
+      el('span', { class: 'line-stop-dot', style: `border-color:${color}` }),
+      el('div', { class: 'dep-main' }, [el('span', { class: 'dep-route', text: displayName(s.name) })]),
+      el('span', { class: 'dep-chevron', text: '›' }),
+    ]));
+  }
+  openSheet(body, { title: cleanRouteName(rt.name) || modeLabel(rt.mode) });
 }
 
 function ensureTiles() {
@@ -241,8 +519,11 @@ function addLocateControl() {
 async function initMap(pos) {
   const L = window.L;
   map = L.map('map-canvas', { zoomControl: false, attributionControl: true });
-  L.control.zoom({ position: 'bottomright' }).addTo(map);
   addLocateControl();
+  // Zoom sits top-right under the locate button — the bottom edge belongs to the
+  // stop info-bar, which used to collide with a bottom-right zoom control (the ✕
+  // ended up hidden behind the +/− buttons).
+  L.control.zoom({ position: 'topright' }).addTo(map);
   ensureTiles();
   if (pos) {
     map.setView([pos.lat, pos.lon], NEAR_ZOOM);
@@ -256,7 +537,93 @@ async function initMap(pos) {
     moveTimer = setTimeout(loadVisibleStops, 350);
   });
   map.on('click', clearHighlight); // tap the map background to drop a highlight
+  buildControls();
+  // Usage hint (bottom, above where the info-bar appears) — fades out after the
+  // first stop tap. Bottom keeps the top-left clear for the search + filters.
+  hintEl = el('div', { class: 'map-hint', text: 'Tap a stop to trace its routes' });
+  document.getElementById('map-canvas').appendChild(hintEl);
   loadVisibleStops();
+}
+
+// #2 filter chips + #4 place search, as a top-left in-map overlay.
+let chipRail = null, chipRoad = null;
+function buildControls() {
+  const holder = document.getElementById('map-canvas');
+  const mkChip = (bucket, label) => el('button', {
+    class: `map-chip${mapFilter[bucket] ? ' on' : ''}`,
+    onclick: () => {
+      const next = !mapFilter[bucket];
+      const other = bucket === 'rail' ? 'road' : 'rail';
+      if (!next && !mapFilter[other]) { toast('Keep at least one type on', 'warn'); return; }
+      mapFilter[bucket] = next;
+      try { localStorage.setItem('mangoit.mapModes', JSON.stringify(mapFilter)); } catch { /* private mode */ }
+      (bucket === 'rail' ? chipRail : chipRoad).classList.toggle('on', next);
+      applyFilter();
+    },
+  }, [modeIcon(bucket === 'rail' ? 'RAIL' : 'BUS', 'mode-img mode-img-sm'), el('span', { text: label })]);
+  chipRail = mkChip('rail', 'Trains');
+  chipRoad = mkChip('road', 'Buses');
+  const search = el('button', { class: 'map-chip map-search-btn', 'aria-label': 'Search a place', onclick: openMapSearch }, [
+    el('span', { class: 'map-search-ico', text: '⌕' }), el('span', { text: 'Search' }),
+  ]);
+  const bar = el('div', { class: 'map-controls' }, [search, chipRail, chipRoad]);
+  window.L.DomEvent.disableClickPropagation(bar);
+  holder.appendChild(bar);
+}
+
+// #4 Place search — a sheet with a debounced geocode input; picking a result
+// recenters the map there and loads its stops.
+let mapSearchSeq = 0;
+function openMapSearch() {
+  const results = el('div', { class: 'map-search-results' });
+  const input = el('input', {
+    class: 'map-search-input', type: 'search', placeholder: 'Search a town, station or stop…',
+    autocomplete: 'off', autocapitalize: 'off', spellcheck: 'false',
+  });
+  const body = el('div', { class: 'map-search-body' }, [input, results]);
+  openSheet(body, { title: 'Find a place' });
+  setTimeout(() => input.focus(), 60);
+  let timer = null;
+  input.addEventListener('input', () => {
+    clearTimeout(timer);
+    const q = input.value.trim();
+    if (q.length < 2) { results.innerHTML = ''; return; }
+    timer = setTimeout(async () => {
+      const seq = ++mapSearchSeq;
+      try {
+        const { data } = await api.geocode(q);
+        if (seq !== mapSearchSeq) return;
+        results.innerHTML = '';
+        const rows = (data || []).filter((r) => isFinite(r.lat) && isFinite(r.lon)).slice(0, 8);
+        if (!rows.length) { results.appendChild(el('div', { class: 'suggest-row suggest-dead muted', text: 'No match' })); return; }
+        for (const r of rows) {
+          const kind = r.type === 'COACH_STOP' ? 'coach stop'
+            : r.type === 'STOP' ? ((r.modes || []).some((x) => /RAIL|LONG_DISTANCE/.test(x)) ? 'train station' : 'stop')
+            : (/^(city|town|village|hamlet)/.test(r.category || '') ? 'town' : '');
+          const bits = [];
+          if (kind) bits.push(kind);
+          if (r.town && r.town.toLowerCase() !== r.name.toLowerCase()) bits.push(displayName(r.town));
+          if (r.province && r.province !== r.town) bits.push(`prov. ${r.province}`);
+          results.appendChild(el('button', {
+            class: 'suggest-row map-search-row',
+            onclick: () => {
+              closeSheet();
+              clearHighlight();
+              map.setView([r.lat, r.lon], Math.max(map.getZoom(), NEAR_ZOOM));
+              loadVisibleStops();
+            },
+          }, [
+            el('span', { class: 'suggest-name', text: displayName(r.name) }),
+            bits.length ? el('span', { class: 'suggest-area', text: bits.join(' · ') }) : null,
+          ]));
+        }
+      } catch {
+        if (seq !== mapSearchSeq) return;
+        results.innerHTML = '';
+        results.appendChild(el('div', { class: 'suggest-row suggest-dead muted', text: 'Search unavailable' }));
+      }
+    }, 300);
+  });
 }
 
 export async function renderMapTab() {
@@ -273,7 +640,6 @@ export async function renderMapTab() {
 
   holder.innerHTML = '';
   holder.appendChild(el('div', { id: 'map-canvas' }));
-  holder.appendChild(el('p', { class: 'muted map-note', text: 'Tap a stop to trace its routes · tap the map to clear · zoom in for more stops.' }));
 
   try {
     await loadLeaflet();
