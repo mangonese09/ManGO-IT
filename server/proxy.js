@@ -12,7 +12,7 @@ const ROOT = path.join(__dirname, '..');
 
 const TRANSITOUS = 'https://api.transitous.org';
 const VT = 'http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno';
-const UA = 'ManGO-IT/0.26.6 (+https://it.mangonese.dev; miconsig@gmail.com)';
+const UA = 'ManGO-IT/0.26.7 (+https://it.mangonese.dev; miconsig@gmail.com)';
 
 // per-day upstream request counter (Transitous asks consumers to know their volume)
 const dayCounts = {};
@@ -884,7 +884,7 @@ async function resolveVtCode(stopId, name) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.26.6', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.26.7', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)
@@ -1078,10 +1078,11 @@ const routes = {
       cacheSet(key, aggOut, 5 * 60 * 1000);
       return aggOut;
     }
-    // Collapse dense depot/interchange pile-ups: any transit stops within ~200m
+    // Collapse dense depot/interchange pile-ups: any transit stops within ~250m
     // fold into one pin (big hubs like Palermo Centrale model every direction &
-    // platform as its own stop node).
-    transit = clusterStopsByProximity(transit, 200);
+    // platform as its own stop node). 250m (up from 200) consolidates the
+    // station depots further without merging genuinely separate stops.
+    transit = clusterStopsByProximity(transit, 250);
     transit.sort((a, b) => a.dist - b.dist);
     coach.sort((a, b) => a.dist - b.dist);
     const out = { fetchedAt: Date.now(), stops: [...transit.slice(0, 60), ...coach.slice(0, 90)] };
