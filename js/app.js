@@ -93,6 +93,7 @@ function boot() {
   initBoard();
   initEdgeSwipe();
   initNativeBackButton();
+  initKeyboardNav();
 
   // pull-to-refresh reloads the page: reopen the tab the user was on
   try {
@@ -115,6 +116,21 @@ function boot() {
       location.reload();
     });
   }
+}
+
+// Hide the fixed bottom nav while the soft keyboard is open. A position:fixed
+// bottom bar otherwise floats ABOVE the keyboard on mobile, covering the From/To
+// suggestion dropdown. Tie it to the real keyboard via VisualViewport (the
+// visual viewport shrinks when the keyboard opens) so it never fires on desktop.
+function initKeyboardNav() {
+  const vv = window.visualViewport;
+  if (!vv) return;
+  const sync = () => {
+    // URL-bar collapse is ~50-100px; a keyboard is ~250px+. 150 is a safe gate.
+    const kbOpen = (window.innerHeight - vv.height) > 150;
+    document.body.classList.toggle('kb-open', kbOpen);
+  };
+  vv.addEventListener('resize', sync);
 }
 
 document.addEventListener('DOMContentLoaded', boot);
