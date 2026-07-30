@@ -3,8 +3,29 @@ const { test } = require('node:test');
 const assert = require('node:assert');
 const {
   romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, inSicily, dropDominated,
-  parseBias, geoScore,
+  parseBias, geoScore, mergeStopsByName,
 } = require('../../server/proxy.js');
+
+// ── MAP STOP DE-DUPLICATION (big-hub direction pairs / platform variants) ──
+test('mergeStopsByName collapses same-name stops within 250m, unions modes', () => {
+  const merged = mergeStopsByName([
+    { id: 'a', name: 'STAZIONE CENTRALE', lat: 38.11016, lon: 13.36802, modes: ['BUS'], dist: 40 },
+    { id: 'b', name: 'STAZIONE CENTRALE', lat: 38.11009, lon: 13.36806, modes: ['TRAM'], dist: 12 }, // ~8m away, nearer
+    { id: 'c', name: 'GARIBALDI', lat: 38.11362, lon: 13.36688, modes: ['BUS'], dist: 300 },
+  ]);
+  assert.strictEqual(merged.length, 2, 'the two STAZIONE CENTRALE collapse; GARIBALDI stays');
+  const sc = merged.find((s) => s.name === 'STAZIONE CENTRALE');
+  assert.strictEqual(sc.id, 'b', 'keeps the nearer stop as representative');
+  assert.deepStrictEqual([...sc.modes].sort(), ['BUS', 'TRAM'], 'modes unioned');
+});
+
+test('mergeStopsByName keeps same-name stops that are far apart (distinct places)', () => {
+  const merged = mergeStopsByName([
+    { id: 'a', name: 'ROMA', lat: 38.1100, lon: 13.3600, modes: [], dist: 10 },
+    { id: 'b', name: 'ROMA', lat: 38.2000, lon: 13.5000, modes: [], dist: 9000 }, // ~15km away
+  ]);
+  assert.strictEqual(merged.length, 2, 'same name but far apart → not merged');
+});
 
 // ── GEOCODE LOCATION BIAS + RANKING (all-Italy addresses) ──
 test('parseBias accepts a valid "lat,lon" pair', () => {

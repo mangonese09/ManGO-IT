@@ -12,7 +12,7 @@ const ROOT = path.join(__dirname, '..');
 
 const TRANSITOUS = 'https://api.transitous.org';
 const VT = 'http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno';
-const UA = 'ManGO-IT/0.26.0 (+https://it.mangonese.dev; miconsig@gmail.com)';
+const UA = 'ManGO-IT/0.26.1 (+https://it.mangonese.dev; miconsig@gmail.com)';
 
 // per-day upstream request counter (Transitous asks consumers to know their volume)
 const dayCounts = {};
@@ -755,6 +755,33 @@ function parseBias(str) {
   return { lat, lon };
 }
 
+// Big urban hubs (AMAT Palermo, AMTS Catania) model each direction and platform
+// as a SEPARATE stop node, so a place like Palermo Centrale returns dozens of
+// pins — many sharing a name and the same lines (the two-direction pair across a
+// street). Collapse map stops that share a normalized name AND sit within ~250m
+// into ONE pin: keep the one nearest the query centre, union their modes. Stops
+// with genuinely different names stay separate (they're distinct boarding points).
+function mergeStopsByName(stops) {
+  const groups = new Map();
+  for (const s of stops) {
+    const nk = norm(s.name || '');
+    const arr = groups.get(nk);
+    if (!arr) { groups.set(nk, [{ ...s, _modes: new Set(s.modes || []) }]); continue; }
+    const near = arr.find((m) => haversineM(m.lat, m.lon, s.lat, s.lon) <= 250);
+    if (near) {
+      for (const md of s.modes || []) near._modes.add(md);
+      if (s.dist < near.dist) { near.lat = s.lat; near.lon = s.lon; near.id = s.id; near.dist = s.dist; }
+    } else {
+      arr.push({ ...s, _modes: new Set(s.modes || []) });
+    }
+  }
+  const out = [];
+  for (const arr of groups.values()) for (const s of arr) {
+    s.modes = [...s._modes]; delete s._modes; out.push(s);
+  }
+  return out;
+}
+
 // Sort key for a geocode result. Lower sorts first. Region is PRIMARY — this is
 // a Sicily-first app, so every Sicilian result ranks above every mainland one
 // (mainland still appears, just below). Within a region the type bucket orders
@@ -824,7 +851,7 @@ async function resolveVtCode(stopId, name) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.26.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.26.1', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)
@@ -1018,6 +1045,9 @@ const routes = {
       cacheSet(key, aggOut, 5 * 60 * 1000);
       return aggOut;
     }
+    // Collapse same-name near-duplicate transit stops (direction pairs / platform
+    // variants at big hubs like Palermo Centrale) so the map isn't a pile-up.
+    transit = mergeStopsByName(transit);
     transit.sort((a, b) => a.dist - b.dist);
     coach.sort((a, b) => a.dist - b.dist);
     const out = { fetchedAt: Date.now(), stops: [...transit.slice(0, 60), ...coach.slice(0, 90)] };
@@ -1370,4 +1400,4 @@ if (require.main === module) {
   server.listen(PORT, () => console.log(`ManGO:IT proxy on :${PORT}${STATIC ? ' (static+api)' : ''}`));
 }
 
-module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon, vtSilence, dropDominated, parseBias, geoScore };
+module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon, vtSilence, dropDominated, parseBias, geoScore, mergeStopsByName };
