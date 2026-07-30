@@ -12,7 +12,7 @@ const ROOT = path.join(__dirname, '..');
 
 const TRANSITOUS = 'https://api.transitous.org';
 const VT = 'http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno';
-const UA = 'ManGO-IT/0.26.3 (+https://it.mangonese.dev; miconsig@gmail.com)';
+const UA = 'ManGO-IT/0.26.4 (+https://it.mangonese.dev; miconsig@gmail.com)';
 
 // per-day upstream request counter (Transitous asks consumers to know their volume)
 const dayCounts = {};
@@ -794,19 +794,23 @@ function clusterStopsByProximity(stops, radiusM = 200) {
     if (claimed.has(seed)) continue;
     claimed.add(seed);
     const modes = new Set(seed.modes || []);
-    const names = [seed.name || ''];
+    // members = the real underlying stops (id + specific name), so the map can
+    // offer a "pick the exact stop" list on a merged depot pin.
+    const members = [{ id: seed.id, name: seed.name, lat: seed.lat, lon: seed.lon }];
     for (const s of byDist) {
       if (claimed.has(s)) continue;
       if (haversineM(seed.lat, seed.lon, s.lat, s.lon) <= radiusM) {
         claimed.add(s);
         for (const md of s.modes || []) modes.add(md);
-        names.push(s.name || '');
+        members.push({ id: s.id, name: s.name, lat: s.lat, lon: s.lon });
       }
     }
-    const merged = names.length;
+    const merged = members.length;
     // Only re-name real depots (3+ stops); a pair keeps its own name.
-    const name = (merged >= 3 && clusterAreaName(names)) || seed.name;
-    out.push({ ...seed, name, modes: [...modes], merged });
+    const name = (merged >= 3 && clusterAreaName(members.map((m) => m.name))) || seed.name;
+    const o = { ...seed, name, modes: [...modes], merged };
+    if (merged > 1) o.members = members; // drives the map's specific-stop picker
+    out.push(o);
   }
   return out;
 }
@@ -880,7 +884,7 @@ async function resolveVtCode(stopId, name) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.26.3', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.26.4', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)

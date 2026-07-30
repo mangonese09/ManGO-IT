@@ -33,7 +33,11 @@ test('clusterStopsByProximity folds all stops within 200m into one, regardless o
   const hub = out.find((s) => s.id === 'b');
   assert.strictEqual(hub.merged, 3, 'seed folded in the other two');
   assert.deepStrictEqual([...hub.modes].sort(), ['BUS', 'TRAM'], 'modes unioned');
-  assert.ok(out.some((s) => s.id === 'd' && s.merged === 1), 'the far stop stays on its own');
+  assert.strictEqual(hub.members.length, 3, 'members carry the real underlying stops');
+  assert.ok(hub.members.every((m) => m.id && m.name), 'each member has its real id + specific name');
+  const far = out.find((s) => s.id === 'd');
+  assert.strictEqual(far.merged, 1, 'the far stop stays on its own');
+  assert.strictEqual(far.members, undefined, 'a lone stop carries no members list');
 });
 
 test('clusterStopsByProximity leaves normally-spaced stops alone', () => {

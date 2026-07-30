@@ -216,7 +216,7 @@ function renderIndividual(all, c, r) {
     keep.add(s.id);
     const ll = pos.get(s.id) || [s.lat, s.lon];
     if (markers.has(s.id)) { markers.get(s.id).setLatLng(ll); continue; }
-    const meta = { id: s.id, kind: s.kind, ci: s.kind === 'coach' ? Number(s.id.slice(1)) : null, name: s.name, stopId: s.kind === 'transit' ? s.id : null, lat: s.lat, lon: s.lon };
+    const meta = { id: s.id, kind: s.kind, ci: s.kind === 'coach' ? Number(s.id.slice(1)) : null, name: s.name, stopId: s.kind === 'transit' ? s.id : null, lat: s.lat, lon: s.lon, members: s.members || null };
     const m = window.L.marker(ll, { icon: stopIcon((s.modes || [])[0], s.kind), keyboard: false }).addTo(map);
     m.meta = meta;
     m.bindTooltip(displayName(s.name), { direction: 'top', offset: [0, -14] });
@@ -316,7 +316,12 @@ async function openStopRoutes(meta) {
   if (hintEl) hintEl.classList.add('gone');
   focusStop(meta.lat, meta.lon);
   await new Promise((r) => setTimeout(r, 320)); // let the zoom read before the info sheet
-  if (meta.kind === 'transit') { openStopSchedule(meta); return; } // schedule-first for stations
+  if (meta.kind === 'transit') {
+    // A merged depot pin (several boarding islands within 200m): let the user
+    // pick the exact stop first, then show that stop's departures.
+    if (meta.members && meta.members.length > 1) { openStopPicker(meta); return; }
+    openStopSchedule(meta); return; // schedule-first for a single station stop
+  }
   // viewport coach → ci; saved coach (no index) → coords.
   const q = meta.ci != null ? { ci: meta.ci } : { lat: meta.lat, lon: meta.lon };
   let data;
@@ -326,6 +331,29 @@ async function openStopRoutes(meta) {
   const routes = (data && data.routes) || [];
   if (!routes.length) { openStopSchedule(meta); return; }
   openRoutesSheet(meta, routes);
+}
+
+// Merged-depot picker: the map draws one pin for a cluster of boarding islands
+// (Palermo Centrale = ~12 stops). Tapping it lists the real stops with their
+// specific names; picking one opens that exact stop's departures board.
+function openStopPicker(meta) {
+  const body = el('div', { class: 'stop-picker' });
+  body.appendChild(el('p', { class: 'muted stop-picker-note', text:
+    'Several stops here — pick one for its departures.' }));
+  for (const s of meta.members) {
+    body.appendChild(el('button', {
+      class: 'stop-picker-row',
+      onclick: () => {
+        closeSheet();
+        openStopSchedule({ id: s.id, kind: 'transit', stopId: s.id, name: s.name, lat: s.lat, lon: s.lon });
+      },
+    }, [
+      el('span', { class: 'sp-icon' }, [modeIcon('BUS', 'mode-img mode-img-sm')]),
+      el('span', { class: 'sp-name', text: displayName(s.name) }),
+      el('span', { class: 'dep-chevron', text: '›' }),
+    ]));
+  }
+  openSheet(body, { title: `${displayName(meta.name)} · ${meta.members.length} stops` });
 }
 
 function openRoutesSheet(meta, routes) {

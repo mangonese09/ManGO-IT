@@ -163,6 +163,18 @@ button { cursor: pointer; }
 }
 .pin-btn.pinned { color: var(--mango, #ffb454); }
 
+/* ── merged-depot stop picker (map) ── */
+.stop-picker-note { margin: 0 0 6px; }
+.stop-picker-row {
+  display: flex; align-items: center; gap: 10px; width: 100%;
+  padding: 12px 2px; background: none; border: none;
+  border-top: 1px solid var(--border, rgba(255,255,255,0.06));
+  color: inherit; font: inherit; text-align: left; cursor: pointer;
+}
+.stop-picker-row:active { opacity: 0.6; }
+.stop-picker-row .sp-name { flex: 1; }
+.stop-picker-row .dep-chevron { color: var(--text-muted, #9a9a9a); font-size: 1.2rem; }
+
 /* ── place icons (favourite trip endpoints) ── */
 .place-icon-img { width: 24px; height: 24px; object-fit: contain; vertical-align: middle; display: block; }
 .place-icon-lg { width: 34px; height: 34px; }
