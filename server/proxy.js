@@ -12,7 +12,7 @@ const ROOT = path.join(__dirname, '..');
 
 const TRANSITOUS = 'https://api.transitous.org';
 const VT = 'http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno';
-const UA = 'ManGO-IT/0.26.2 (+https://it.mangonese.dev; miconsig@gmail.com)';
+const UA = 'ManGO-IT/0.26.3 (+https://it.mangonese.dev; miconsig@gmail.com)';
 
 // per-day upstream request counter (Transitous asks consumers to know their volume)
 const dayCounts = {};
@@ -762,6 +762,30 @@ function parseBias(str) {
 // first (so the surviving pin is the most central), modes are unioned, `merged`
 // records how many folded in. Stops >200m from every seed stay separate — in
 // normal areas bus stops are 300m+ apart, so this only fires on dense clusters.
+// Name a merged depot by what its stops CALL the area, not by whichever single
+// stop is nearest the centre. At a station the boarding islands nearly all share
+// a leading phrase ("STAZIONE CENTRALE Lincoln / Balsamo / Pensilina …") — that
+// shared phrase is the area name. Returns the longest leading token-run present
+// in a majority (≥50%) of the members, min 2 tokens (a lone "Via"/"Piazza" is
+// not an area name), else null → keep the seed's own name.
+function clusterAreaName(names) {
+  let pool = names.map((n) => (n || '').trim().split(/\s+/).filter(Boolean)).filter((t) => t.length);
+  const total = pool.length;
+  if (total < 2) return null;
+  const need = Math.max(2, Math.ceil(total * 0.5));
+  const out = [];
+  for (let i = 0; i < 4; i++) {
+    const counts = new Map();
+    for (const t of pool) if (i < t.length) counts.set(t[i].toUpperCase(), (counts.get(t[i].toUpperCase()) || 0) + 1);
+    let best = null, bestC = 0;
+    for (const [w, c] of counts) if (c > bestC) { best = w; bestC = c; }
+    if (!best || bestC < need) break;
+    out.push(best);
+    pool = pool.filter((t) => i < t.length && t[i].toUpperCase() === best);
+  }
+  return out.length >= 2 ? out.join(' ') : null;
+}
+
 function clusterStopsByProximity(stops, radiusM = 200) {
   const byDist = [...stops].sort((a, b) => a.dist - b.dist);
   const claimed = new Set();
@@ -770,16 +794,19 @@ function clusterStopsByProximity(stops, radiusM = 200) {
     if (claimed.has(seed)) continue;
     claimed.add(seed);
     const modes = new Set(seed.modes || []);
-    let merged = 1;
+    const names = [seed.name || ''];
     for (const s of byDist) {
       if (claimed.has(s)) continue;
       if (haversineM(seed.lat, seed.lon, s.lat, s.lon) <= radiusM) {
         claimed.add(s);
         for (const md of s.modes || []) modes.add(md);
-        merged++;
+        names.push(s.name || '');
       }
     }
-    out.push({ ...seed, modes: [...modes], merged });
+    const merged = names.length;
+    // Only re-name real depots (3+ stops); a pair keeps its own name.
+    const name = (merged >= 3 && clusterAreaName(names)) || seed.name;
+    out.push({ ...seed, name, modes: [...modes], merged });
   }
   return out;
 }
@@ -853,7 +880,7 @@ async function resolveVtCode(stopId, name) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.26.2', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.26.3', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)
@@ -1403,4 +1430,4 @@ if (require.main === module) {
   server.listen(PORT, () => console.log(`ManGO:IT proxy on :${PORT}${STATIC ? ' (static+api)' : ''}`));
 }
 
-module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon, vtSilence, dropDominated, parseBias, geoScore, clusterStopsByProximity };
+module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon, vtSilence, dropDominated, parseBias, geoScore, clusterStopsByProximity, clusterAreaName };

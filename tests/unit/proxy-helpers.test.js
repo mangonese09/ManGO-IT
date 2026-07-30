@@ -3,8 +3,22 @@ const { test } = require('node:test');
 const assert = require('node:assert');
 const {
   romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, inSicily, dropDominated,
-  parseBias, geoScore, clusterStopsByProximity,
+  parseBias, geoScore, clusterStopsByProximity, clusterAreaName,
 } = require('../../server/proxy.js');
+
+test('clusterAreaName names a depot by the shared leading phrase', () => {
+  assert.strictEqual(clusterAreaName([
+    'LINCOLN DEI MILLE', 'STAZIONE CENTRALE LINCOLN', 'STAZIONE CENTRALE BALSAMO',
+    'STAZIONE CENTRALE', 'STAZIONE CENTRALE PENSILINA ESTERNA', 'STAZIONE CENTRALE GIULIO CESARE',
+    'ROMA FS', 'DEI MILLE BALSAMO',
+  ]), 'STAZIONE CENTRALE');
+});
+
+test('clusterAreaName returns null when there is no ≥50% 2-token consensus', () => {
+  assert.strictEqual(clusterAreaName(['Piazza A', 'Corso B', 'Via C']), null); // no consensus
+  assert.strictEqual(clusterAreaName(['VIA ROMA', 'VIA MILANO', 'VIA TORINO']), null); // only "VIA" shared → too generic
+  assert.strictEqual(clusterAreaName(['GARIBALDI', 'GARIBALDI']), null); // single token → keep seed name
+});
 
 // ── MAP STOP DE-DUPLICATION (dense depot/interchange collapses to one pin) ──
 test('clusterStopsByProximity folds all stops within 200m into one, regardless of name', () => {
