@@ -1091,6 +1091,15 @@ function openItineraryDetail(it) {
     el('span', { class: 'muted', text: ` · ${durationText(it.duration)} · ${romeDay(it.startTime)}` }),
   ]));
 
+  // Sum-total row (§4.6): only when EVERY paid transit leg has an exact fare;
+  // a booking/counter leg is unknowable, so we never sum it. Always "≈" since
+  // urban 90-min tickets can cover a transfer (an upper bound, not a promise).
+  const paidLegs = it.legs.filter((l) => l.mode !== 'WALK' && !isRailReplacement(l));
+  const fares = paidLegs.map(legExactFare);
+  if (paidLegs.length >= 2 && fares.every((f) => f != null)) {
+    body.appendChild(el('div', { class: 'iti-total', text: `≈ ${eur(fares.reduce((a, b) => a + b, 0))} total` }));
+  }
+
   const opsSeen = new Set(); // one ticket block per operator per sheet
   const opCounts = operatorLegCounts(it.legs); // for the urban day-pass hint (§4.5)
   it.legs.forEach((leg, i) => {
@@ -1123,6 +1132,15 @@ function operatorLegCounts(legs) {
 function legOdFare(leg) {
   if (!leg || !/sais\s*trasporti/i.test(leg.agencyName || '')) return null;
   return saisOdFare(leg.from?.name, leg.to?.name);
+}
+
+// A leg's exact fare as a number, or null if it can't be summed (counter/booking/
+// unknown). SAIS OD price wins; otherwise an operator flat single.
+function legExactFare(leg) {
+  const od = legOdFare(leg);
+  if (od != null) return od;
+  const op = operatorFor(leg.agencyName);
+  return op && op.fare && op.fare.kind === 'flat' ? op.fare.single : null;
 }
 
 function fareChipEl(op, leg) {

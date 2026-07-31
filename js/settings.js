@@ -80,6 +80,8 @@ async function openDataSheet() {
     'Real-time status, fetched live when you open a train station’s board.'));
   body.appendChild(dataRow('Routing', 'Transitous (MOTIS)',
     'Plans your A→B itineraries across trains, coaches and city transit.'));
+  body.appendChild(dataRow('Fares', 'checked Jul 2026',
+    'Urban flats (AMAT, AMTS, FCE, TUA) and SAIS Trasporti city-pair prices are exact; rail and most coaches are priced at booking — never estimated.'));
   openSheet(body, { title: 'Data & schedules' });
 
   try {
