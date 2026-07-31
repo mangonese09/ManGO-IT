@@ -1,0 +1,695 @@
+{
+ "operator": "Prestia e Comandè",
+ "route_id": "prestia-cianciana",
+ "name": "Cianciana - Bivona - Lercara Friddi - Palermo",
+ "source": "prestia/Quadro-Orari-Cianciana-Palermo-pubblico-V4.pdf",
+ "short_name": "",
+ "directions": [
+  {
+   "stops": [
+    "CIANCIANA (Corso Vittorio Emanuele)",
+    "ALESSANDRIA DELLA ROCCA",
+    "BIVONA",
+    "SANTO STEFANO QUISQUINA",
+    "BIVIO FILAGA",
+    "BIVIO LERCARA FRIDDI",
+    "PALERMO (Via T. Fazello)"
+   ],
+   "trips": [
+    {
+     "corsa": "A1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNI FERIALI"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CIANCIANA (Corso Vittorio Emanuele)",
+       "idx": 0,
+       "arr": "04:30",
+       "dep": "04:30"
+      },
+      {
+       "stop": "ALESSANDRIA DELLA ROCCA",
+       "idx": 1,
+       "arr": "04:45",
+       "dep": "04:45"
+      },
+      {
+       "stop": "BIVONA",
+       "idx": 2,
+       "arr": "05:00",
+       "dep": "05:00"
+      },
+      {
+       "stop": "SANTO STEFANO QUISQUINA",
+       "idx": 3,
+       "arr": "05:15",
+       "dep": "05:15"
+      },
+      {
+       "stop": "BIVIO FILAGA",
+       "idx": 4,
+       "arr": "05:30",
+       "dep": "05:30"
+      },
+      {
+       "stop": "BIVIO LERCARA FRIDDI",
+       "idx": 5,
+       "arr": "05:45",
+       "dep": "05:45"
+      },
+      {
+       "stop": "PALERMO (Via T. Fazello)",
+       "idx": 6,
+       "arr": "07:00",
+       "dep": "07:00"
+      }
+     ]
+    },
+    {
+     "corsa": "A2",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "LUN-VEN PERIODO SCOLASTICO"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CIANCIANA (Corso Vittorio Emanuele)",
+       "idx": 0,
+       "arr": "05:30",
+       "dep": "05:30"
+      },
+      {
+       "stop": "ALESSANDRIA DELLA ROCCA",
+       "idx": 1,
+       "arr": "05:45",
+       "dep": "05:45"
+      },
+      {
+       "stop": "BIVONA",
+       "idx": 2,
+       "arr": "06:00",
+       "dep": "06:00"
+      },
+      {
+       "stop": "SANTO STEFANO QUISQUINA",
+       "idx": 3,
+       "arr": "06:15",
+       "dep": "06:15"
+      },
+      {
+       "stop": "BIVIO FILAGA",
+       "idx": 4,
+       "arr": "06:30",
+       "dep": "06:30"
+      },
+      {
+       "stop": "BIVIO LERCARA FRIDDI",
+       "idx": 5,
+       "arr": "06:45",
+       "dep": "06:45"
+      },
+      {
+       "stop": "PALERMO (Via T. Fazello)",
+       "idx": 6,
+       "arr": "08:00",
+       "dep": "08:00"
+      }
+     ]
+    },
+    {
+     "corsa": "A3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNI FERIALI"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CIANCIANA (Corso Vittorio Emanuele)",
+       "idx": 0,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "ALESSANDRIA DELLA ROCCA",
+       "idx": 1,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "BIVONA",
+       "idx": 2,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "SANTO STEFANO QUISQUINA",
+       "idx": 3,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "BIVIO FILAGA",
+       "idx": 4,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "BIVIO LERCARA FRIDDI",
+       "idx": 5,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "PALERMO (Via T. Fazello)",
+       "idx": 6,
+       "arr": "09:45",
+       "dep": "09:45"
+      }
+     ]
+    },
+    {
+     "corsa": "A4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNI FERIALI"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CIANCIANA (Corso Vittorio Emanuele)",
+       "idx": 0,
+       "arr": "11:00",
+       "dep": "11:00"
+      },
+      {
+       "stop": "ALESSANDRIA DELLA ROCCA",
+       "idx": 1,
+       "arr": "11:15",
+       "dep": "11:15"
+      },
+      {
+       "stop": "BIVONA",
+       "idx": 2,
+       "arr": "11:30",
+       "dep": "11:30"
+      },
+      {
+       "stop": "SANTO STEFANO QUISQUINA",
+       "idx": 3,
+       "arr": "11:45",
+       "dep": "11:45"
+      },
+      {
+       "stop": "BIVIO FILAGA",
+       "idx": 4,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "BIVIO LERCARA FRIDDI",
+       "idx": 5,
+       "arr": "12:15",
+       "dep": "12:15"
+      },
+      {
+       "stop": "PALERMO (Via T. Fazello)",
+       "idx": 6,
+       "arr": "13:30",
+       "dep": "13:30"
+      }
+     ]
+    },
+    {
+     "corsa": "A5",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "TUTTI I GIORNI"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CIANCIANA (Corso Vittorio Emanuele)",
+       "idx": 0,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "ALESSANDRIA DELLA ROCCA",
+       "idx": 1,
+       "arr": "15:15",
+       "dep": "15:15"
+      },
+      {
+       "stop": "BIVONA",
+       "idx": 2,
+       "arr": "15:30",
+       "dep": "15:30"
+      },
+      {
+       "stop": "SANTO STEFANO QUISQUINA",
+       "idx": 3,
+       "arr": "15:45",
+       "dep": "15:45"
+      },
+      {
+       "stop": "BIVIO FILAGA",
+       "idx": 4,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "BIVIO LERCARA FRIDDI",
+       "idx": 5,
+       "arr": "16:15",
+       "dep": "16:15"
+      },
+      {
+       "stop": "PALERMO (Via T. Fazello)",
+       "idx": 6,
+       "arr": "17:30",
+       "dep": "17:30"
+      }
+     ]
+    },
+    {
+     "corsa": "A6",
+     "service": {
+      "days": "sun-holidays",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "DOM E FESTIVI PERIODO SCOLASTICO"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CIANCIANA (Corso Vittorio Emanuele)",
+       "idx": 0,
+       "arr": "17:00",
+       "dep": "17:00"
+      },
+      {
+       "stop": "ALESSANDRIA DELLA ROCCA",
+       "idx": 1,
+       "arr": "17:15",
+       "dep": "17:15"
+      },
+      {
+       "stop": "BIVONA",
+       "idx": 2,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "SANTO STEFANO QUISQUINA",
+       "idx": 3,
+       "arr": "17:45",
+       "dep": "17:45"
+      },
+      {
+       "stop": "BIVIO FILAGA",
+       "idx": 4,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "BIVIO LERCARA FRIDDI",
+       "idx": 5,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "PALERMO (Via T. Fazello)",
+       "idx": 6,
+       "arr": "19:30",
+       "dep": "19:30"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "PALERMO (Via T. Fazello)",
+    "BIVIO LERCARA FRIDDI",
+    "BIVIO FILAGA",
+    "SANTO STEFANO QUISQUINA",
+    "BIVONA",
+    "ALESSANDRIA DELLA ROCCA",
+    "CIANCIANA (Corso Vittorio Emanuele)"
+   ],
+   "trips": [
+    {
+     "corsa": "R1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNI FERIALI"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Via T. Fazello)",
+       "idx": 0,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "BIVIO LERCARA FRIDDI",
+       "idx": 1,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "BIVIO FILAGA",
+       "idx": 2,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "SANTO STEFANO QUISQUINA",
+       "idx": 3,
+       "arr": "09:45",
+       "dep": "09:45"
+      },
+      {
+       "stop": "BIVONA",
+       "idx": 4,
+       "arr": "10:00",
+       "dep": "10:00"
+      },
+      {
+       "stop": "ALESSANDRIA DELLA ROCCA",
+       "idx": 5,
+       "arr": "10:15",
+       "dep": "10:15"
+      },
+      {
+       "stop": "CIANCIANA (Corso Vittorio Emanuele)",
+       "idx": 6,
+       "arr": "10:30",
+       "dep": "10:30"
+      }
+     ]
+    },
+    {
+     "corsa": "R2",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "LUN-VEN PERIODO SCOLASTICO"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Via T. Fazello)",
+       "idx": 0,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "BIVIO LERCARA FRIDDI",
+       "idx": 1,
+       "arr": "15:15",
+       "dep": "15:15"
+      },
+      {
+       "stop": "BIVIO FILAGA",
+       "idx": 2,
+       "arr": "15:30",
+       "dep": "15:30"
+      },
+      {
+       "stop": "SANTO STEFANO QUISQUINA",
+       "idx": 3,
+       "arr": "15:45",
+       "dep": "15:45"
+      },
+      {
+       "stop": "BIVONA",
+       "idx": 4,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "ALESSANDRIA DELLA ROCCA",
+       "idx": 5,
+       "arr": "16:15",
+       "dep": "16:15"
+      },
+      {
+       "stop": "CIANCIANA (Corso Vittorio Emanuele)",
+       "idx": 6,
+       "arr": "16:30",
+       "dep": "16:30"
+      }
+     ]
+    },
+    {
+     "corsa": "R3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNI FERIALI"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Via T. Fazello)",
+       "idx": 0,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "BIVIO LERCARA FRIDDI",
+       "idx": 1,
+       "arr": "16:15",
+       "dep": "16:15"
+      },
+      {
+       "stop": "BIVIO FILAGA",
+       "idx": 2,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "SANTO STEFANO QUISQUINA",
+       "idx": 3,
+       "arr": "16:45",
+       "dep": "16:45"
+      },
+      {
+       "stop": "BIVONA",
+       "idx": 4,
+       "arr": "17:00",
+       "dep": "17:00"
+      },
+      {
+       "stop": "ALESSANDRIA DELLA ROCCA",
+       "idx": 5,
+       "arr": "17:15",
+       "dep": "17:15"
+      },
+      {
+       "stop": "CIANCIANA (Corso Vittorio Emanuele)",
+       "idx": 6,
+       "arr": "17:30",
+       "dep": "17:30"
+      }
+     ]
+    },
+    {
+     "corsa": "R4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "GIORNI FERIALI"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Via T. Fazello)",
+       "idx": 0,
+       "arr": "17:00",
+       "dep": "17:00"
+      },
+      {
+       "stop": "BIVIO LERCARA FRIDDI",
+       "idx": 1,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "BIVIO FILAGA",
+       "idx": 2,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "SANTO STEFANO QUISQUINA",
+       "idx": 3,
+       "arr": "18:45",
+       "dep": "18:45"
+      },
+      {
+       "stop": "BIVONA",
+       "idx": 4,
+       "arr": "19:00",
+       "dep": "19:00"
+      },
+      {
+       "stop": "ALESSANDRIA DELLA ROCCA",
+       "idx": 5,
+       "arr": "19:15",
+       "dep": "19:15"
+      },
+      {
+       "stop": "CIANCIANA (Corso Vittorio Emanuele)",
+       "idx": 6,
+       "arr": "19:30",
+       "dep": "19:30"
+      }
+     ]
+    },
+    {
+     "corsa": "R5",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "TUTTI I GIORNI"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Via T. Fazello)",
+       "idx": 0,
+       "arr": "19:00",
+       "dep": "19:00"
+      },
+      {
+       "stop": "BIVIO LERCARA FRIDDI",
+       "idx": 1,
+       "arr": "20:15",
+       "dep": "20:15"
+      },
+      {
+       "stop": "BIVIO FILAGA",
+       "idx": 2,
+       "arr": "20:30",
+       "dep": "20:30"
+      },
+      {
+       "stop": "SANTO STEFANO QUISQUINA",
+       "idx": 3,
+       "arr": "20:45",
+       "dep": "20:45"
+      },
+      {
+       "stop": "BIVONA",
+       "idx": 4,
+       "arr": "21:00",
+       "dep": "21:00"
+      },
+      {
+       "stop": "ALESSANDRIA DELLA ROCCA",
+       "idx": 5,
+       "arr": "21:15",
+       "dep": "21:15"
+      },
+      {
+       "stop": "CIANCIANA (Corso Vittorio Emanuele)",
+       "idx": 6,
+       "arr": "21:30",
+       "dep": "21:30"
+      }
+     ]
+    },
+    {
+     "corsa": "R6",
+     "service": {
+      "days": "sun-holidays",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "DOM E FESTIVI PERIODO SCOLASTICO"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Via T. Fazello)",
+       "idx": 0,
+       "arr": "20:30",
+       "dep": "20:30"
+      },
+      {
+       "stop": "BIVIO LERCARA FRIDDI",
+       "idx": 1,
+       "arr": "21:45",
+       "dep": "21:45"
+      },
+      {
+       "stop": "BIVIO FILAGA",
+       "idx": 2,
+       "arr": "22:00",
+       "dep": "22:00"
+      },
+      {
+       "stop": "SANTO STEFANO QUISQUINA",
+       "idx": 3,
+       "arr": "22:15",
+       "dep": "22:15"
+      },
+      {
+       "stop": "BIVONA",
+       "idx": 4,
+       "arr": "22:30",
+       "dep": "22:30"
+      },
+      {
+       "stop": "ALESSANDRIA DELLA ROCCA",
+       "idx": 5,
+       "arr": "22:45",
+       "dep": "22:45"
+      },
+      {
+       "stop": "CIANCIANA (Corso Vittorio Emanuele)",
+       "idx": 6,
+       "arr": "23:00",
+       "dep": "23:00"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
