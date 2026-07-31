@@ -4,7 +4,7 @@ import { el, modeMeta, modeClass, modeIcon, isRailMode, liveBadge, staleChip, op
 import { romeTime, romeDay, romeHour, dayPartKey, DAYPARTS, durationText, isOtherRomeDay, romeWallToIso, whenLabel } from './time.js';
 import { displayName } from './names.js';
 import { worstTransferMin, transferTier, transferChipText, imminentText, legStripModel, groupByDaypart, plusTag, isRailReplacement } from './itinerary.js';
-import { operatorFor } from './operators.js';
+import { operatorFor, fareChip, fareSummary } from './operators.js';
 import { getRecents, pushRecent, removeRecent, getFavStops, addFavStop, removeFavStop, getSettings, getPlacesSorted, addPlace, removePlace, isPlace } from './store.js';
 import { getLastPos } from './board.js';
 import { toast } from './toast.js';
@@ -1091,6 +1091,7 @@ function openItineraryDetail(it) {
   ]));
 
   const opsSeen = new Set(); // one ticket block per operator per sheet
+  const opCounts = operatorLegCounts(it.legs); // for the urban day-pass hint (§4.5)
   it.legs.forEach((leg, i) => {
     if (leg.mode === 'WALK') {
       body.appendChild(el('div', { class: 'leg leg-walk' }, [
@@ -1100,12 +1101,32 @@ function openItineraryDetail(it) {
       ]));
       return;
     }
-    body.appendChild(renderTransitLeg(leg, i, opsSeen));
+    body.appendChild(renderTransitLeg(leg, i, opsSeen, opCounts));
   });
   openSheet(body, { title: 'Trip detail' });
 }
 
-function renderTransitLeg(leg, idx, opsSeen = new Set()) {
+// Count transit legs per operator in an itinerary (day-pass hint needs 2+).
+function operatorLegCounts(legs) {
+  const counts = {};
+  for (const l of legs || []) {
+    if (l.mode === 'WALK') continue;
+    const o = operatorFor(l.agencyName);
+    if (o) counts[o.name] = (counts[o.name] || 0) + 1;
+  }
+  return counts;
+}
+
+function fareChipEl(op) {
+  const c = fareChip(op);
+  if (!c) return null;
+  return el('span', { class: `chip fare-chip fare-${c.state}` }, [
+    el('span', { text: c.text }),
+    c.sub ? el('span', { class: 'fare-sub', text: ` · ${c.sub}` }) : null,
+  ]);
+}
+
+function renderTransitLeg(leg, idx, opsSeen = new Set(), opCounts = {}) {
   const m = modeMeta(leg.mode);
   const op = operatorFor(leg.agencyName);
   const wrap = el('div', { class: 'leg' });
@@ -1119,6 +1140,7 @@ function renderTransitLeg(leg, idx, opsSeen = new Set()) {
     railBus ? el('span', { class: 'badge badge-railbus', text: 'REPLACEMENT' }) : null,
     liveBadge(leg.realTime),
     leg.cancelled ? el('span', { class: 'badge badge-cancel', text: 'CANCELLED' }) : null,
+    railBus ? null : fareChipEl(op), // rail-replacement rides the train ticket — no separate fare
   ]));
   // R-09: a substitute bus standing in for a train — say so, don't leave it anonymous.
   if (railBus) wrap.appendChild(el('div', { class: 'muted leg-headsign', text: 'Runs in place of the train · same Trenitalia ticket' }));
@@ -1157,11 +1179,29 @@ function renderTransitLeg(leg, idx, opsSeen = new Set()) {
   // itinerary was repeating the identical block back-to-back.
   if (op && !opsSeen.has(op.name)) {
     opsSeen.add(op.name);
-    wrap.appendChild(el('div', { class: 'ticket-block' }, [
-      el('div', { class: 'ticket-title', text: `🎫 Tickets — ${op.name}` }),
-      el('p', { class: 'muted', text: op.howToBuy }),
-      el('a', { class: 'ticket-link', href: op.website, target: '_blank', rel: 'noopener', text: op.website.replace('https://', '') }),
-    ]));
+    const kids = [el('div', { class: 'ticket-title', text: `🎫 How to buy — ${op.name}` })];
+    // Fare summary (§4.3): exact flats show the number + passes; counter/booking
+    // show the honest text. The chip on the leg row carries the headline price.
+    const summary = fareSummary(op, opCounts[op.name] || 1);
+    if (summary) {
+      for (const line of summary.lines) kids.push(el('div', { class: 'fare-line', text: line }));
+      if (summary.passHint) kids.push(el('div', { class: 'fare-hint', text: `💡 ${summary.passHint}` }));
+    }
+    // Purchase instructions collapse by default — the fare is the headline.
+    const detail = el('p', { class: 'muted ticket-how', hidden: 'hidden', text: op.howToBuy });
+    const toggle = el('button', {
+      class: 'stops-toggle', text: 'How to buy ▾',
+      onclick: () => { detail.hidden = !detail.hidden; toggle.textContent = detail.hidden ? 'How to buy ▾' : 'How to buy ▴'; },
+    });
+    kids.push(toggle, detail);
+    // Outbound link, honestly labelled — no buy-button styling (§4.6).
+    if (op.website) {
+      kids.push(el('a', { class: 'ticket-link', href: op.website, target: '_blank', rel: 'noopener' }, [
+        el('span', { text: op.website.replace(/^https?:\/\/(www\.)?/, '') }),
+        el('span', { class: 'muted', text: ' ↗ leaves ManGO:IT' }),
+      ]));
+    }
+    wrap.appendChild(el('div', { class: 'ticket-block' }, kids));
   }
   return wrap;
 }

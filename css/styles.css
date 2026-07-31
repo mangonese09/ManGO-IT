@@ -133,7 +133,19 @@ button { cursor: pointer; }
 .stops-toggle { background: none; border: none; color: var(--mango, #ffb454); font: inherit; font-size: 0.82rem; padding: 4px 0 4px 56px; }
 .ticket-block { margin-top: 10px; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 8px; }
 .ticket-title { font-weight: 600; font-size: 0.9rem; }
-.ticket-link { font-size: 0.85rem; }
+.ticket-link { font-size: 0.85rem; display: inline-block; margin-top: 6px; }
+
+/* ── fares (review §4) ── */
+.fare-chip {
+  margin-left: auto; font-size: 0.82rem; font-variant-numeric: tabular-nums;
+  padding: 2px 9px; border-radius: 999px; white-space: nowrap;
+}
+.fare-chip.fare-exact { background: rgba(70,200,120,0.16); color: var(--success, #46c878); font-weight: 700; }
+.fare-chip.fare-counter, .fare-chip.fare-muted { background: var(--bg-elevated, #2a2a2a); color: var(--text-muted, #9a9a9a); }
+.fare-sub { font-weight: 400; opacity: 0.85; }
+.fare-line { font-size: 0.85rem; margin-top: 3px; font-variant-numeric: tabular-nums; }
+.fare-hint { font-size: 0.82rem; color: var(--mango, #ffb454); margin-top: 5px; }
+.ticket-how { margin-top: 4px; }
 
 /* ── direct fallback ── */
 .direct-block {
