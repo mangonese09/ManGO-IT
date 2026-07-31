@@ -4,7 +4,8 @@ import { el, modeMeta, modeClass, modeIcon, isRailMode, liveBadge, staleChip, op
 import { romeTime, romeDay, romeHour, dayPartKey, DAYPARTS, durationText, isOtherRomeDay, romeWallToIso, whenLabel } from './time.js';
 import { displayName } from './names.js';
 import { worstTransferMin, transferTier, transferChipText, imminentText, legStripModel, groupByDaypart, plusTag, isRailReplacement } from './itinerary.js';
-import { operatorFor, fareChip, fareSummary } from './operators.js';
+import { operatorFor, fareChip, fareSummary, eur } from './operators.js';
+import { saisOdFare } from './fares-od.js';
 import { getRecents, pushRecent, removeRecent, getFavStops, addFavStop, removeFavStop, getSettings, getPlacesSorted, addPlace, removePlace, isPlace } from './store.js';
 import { getLastPos } from './board.js';
 import { toast } from './toast.js';
@@ -1117,8 +1118,16 @@ function operatorLegCounts(legs) {
   return counts;
 }
 
-function fareChipEl(op) {
-  const c = fareChip(op);
+// SAIS Trasporti has exact per-city-pair fares (harvested costo) — resolve the
+// leg's from/to cities to an OD price; null falls back to the generic state.
+function legOdFare(leg) {
+  if (!leg || !/sais\s*trasporti/i.test(leg.agencyName || '')) return null;
+  return saisOdFare(leg.from?.name, leg.to?.name);
+}
+
+function fareChipEl(op, leg) {
+  const od = legOdFare(leg);
+  const c = od != null ? { state: 'exact', text: eur(od), sub: null } : fareChip(op);
   if (!c) return null;
   return el('span', { class: `chip fare-chip fare-${c.state}` }, [
     el('span', { text: c.text }),
@@ -1140,7 +1149,7 @@ function renderTransitLeg(leg, idx, opsSeen = new Set(), opCounts = {}) {
     railBus ? el('span', { class: 'badge badge-railbus', text: 'REPLACEMENT' }) : null,
     liveBadge(leg.realTime),
     leg.cancelled ? el('span', { class: 'badge badge-cancel', text: 'CANCELLED' }) : null,
-    railBus ? null : fareChipEl(op), // rail-replacement rides the train ticket — no separate fare
+    railBus ? null : fareChipEl(op, leg), // rail-replacement rides the train ticket — no separate fare
   ]));
   // R-09: a substitute bus standing in for a train — say so, don't leave it anonymous.
   if (railBus) wrap.appendChild(el('div', { class: 'muted leg-headsign', text: 'Runs in place of the train · same Trenitalia ticket' }));
@@ -1180,6 +1189,10 @@ function renderTransitLeg(leg, idx, opsSeen = new Set(), opCounts = {}) {
   if (op && !opsSeen.has(op.name)) {
     opsSeen.add(op.name);
     const kids = [el('div', { class: 'ticket-title', text: `🎫 How to buy — ${op.name}` })];
+    // SAIS Trasporti: this leg's exact city-pair fare (harvested), shown before
+    // the generic how-to-buy text.
+    const od = legOdFare(leg);
+    if (od != null) kids.push(el('div', { class: 'fare-line', text: `${eur(od)} · ${displayName(leg.from?.name)} → ${displayName(leg.to?.name)} (buy before boarding)` }));
     // Fare summary (§4.3): exact flats show the number + passes; counter/booking
     // show the honest text. The chip on the leg row carries the headline price.
     const summary = fareSummary(op, opCounts[op.name] || 1);
