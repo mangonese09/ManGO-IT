@@ -32,6 +32,35 @@ SAME_MINUTE_MAX_KM = 3
 MAX_SPAN_MIN = 360
 
 
+# ── LOCAL (COMUNE) PATRON-SAINT HOLIDAYS ──
+# Feste patronali are civil holidays in ONE comune only — Sant'Agata closes
+# Catania but is a normal working day in Palermo, and Santa Rosalia the reverse.
+# So they can't go in the region-wide holiday set (that would suppress real
+# service everywhere else). Instead a date here applies to a trip only when the
+# route serves the observing town, matched on the route name. Recurring by
+# (month, day) so it needs no per-year maintenance. Curated to provincial
+# capitals with a fixed-date civic patron; movable feasts (Trapani's Misteri on
+# Good Friday, Ragusa Ibla's San Giorgio) are intentionally omitted.
+LOCAL_HOLIDAYS = [
+    {'town': 'PALERMO', 'm': 7, 'd': 15, 'name': 'Santa Rosalia'},
+    {'town': 'CATANIA', 'm': 2, 'd': 5, 'name': "Sant'Agata"},
+    {'town': 'SIRACUSA', 'm': 12, 'd': 13, 'name': 'Santa Lucia'},
+    {'town': 'MESSINA', 'm': 6, 'd': 3, 'name': 'Madonna della Lettera'},
+    {'town': 'AGRIGENTO', 'm': 2, 'd': 25, 'name': 'San Gerlando'},
+    {'town': 'CALTANISSETTA', 'm': 9, 'd': 29, 'name': 'San Michele Arcangelo'},
+    {'town': 'ENNA', 'm': 7, 'd': 2, 'name': 'Maria SS. della Visitazione'},
+    {'town': 'RAGUSA', 'm': 8, 'd': 29, 'name': 'San Giovanni Battista'},
+]
+
+
+def route_local_hols(route_name):
+    """(month, day) pairs a route observes as local holidays, by town name match."""
+    up = (route_name or '').upper()
+    return frozenset(
+        (h['m'], h['d']) for h in LOCAL_HOLIDAYS
+        if re.search(r'\b' + re.escape(h['town']) + r'\b', up))
+
+
 def hav_km(a, b):
     """Great-circle km between (lat, lon) pairs."""
     p = math.pi / 180

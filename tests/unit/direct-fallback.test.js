@@ -65,6 +65,23 @@ test('serviceRuns: explicit-date services (SAIS) ignore weekday/holiday inferenc
   assert.strictEqual(serviceRuns(trip, monday), false, 'unlisted date must not run');
 });
 
+test('serviceRuns: local patron-saint feasts are scoped to the observing town', () => {
+  // both are ordinary weekdays (Thu / Fri) so feriale would normally run
+  const rosalia = { iso: '2027-07-15', wd: 3, min: 0, month: 7, day: 15 }; // Palermo
+  const agata = { iso: '2027-02-05', wd: 4, min: 0, month: 2, day: 5 };   // Catania
+  const palermoLine = { d: 'mon-sat', sc: null, se: null, lh: [[7, 15]] };
+  const cataniaLine = { d: 'mon-sat', sc: null, se: null, lh: [[2, 5]] };
+  // a feast suppresses feriale service on ITS city's line…
+  assert.strictEqual(serviceRuns(palermoLine, rosalia), false, 'Palermo line paused on Santa Rosalia');
+  assert.strictEqual(serviceRuns(cataniaLine, agata), false, 'Catania line paused on Sant’Agata');
+  // …but not on the other city's line (the whole point of scoping)
+  assert.strictEqual(serviceRuns(cataniaLine, rosalia), true, 'Catania line runs normally on Jul 15');
+  assert.strictEqual(serviceRuns(palermoLine, agata), true, 'Palermo line runs normally on Feb 5');
+  // festivo service runs on the local feast; a line with no lh is unaffected
+  assert.strictEqual(serviceRuns({ d: 'sun-holidays', sc: null, se: null, lh: [[7, 15]] }, rosalia), true);
+  assert.strictEqual(serviceRuns({ d: 'mon-sat', sc: null, se: null }, rosalia), true, 'no-lh line unaffected');
+});
+
 test('coachBoard: lists next departures from a coach stop, never the terminus', () => {
   const { coachBoard } = require('../../server/proxy.js');
   const stops = require('../../server/coach-stops.json');

@@ -72,14 +72,18 @@ function serviceRuns(trip, day) {
   // Explicit-date services (SAIS/Albatross): the exact calendar ships with
   // the trip; no weekday/holiday/school inference at all.
   if (trip.xd) return trip.xd.includes(day.iso);
-  const holiday = IT_HOLIDAYS.has(day.iso) || day.wd === 6;
+  // trip.lh: comune patron-saint feasts this route serves, as [month, day]
+  // pairs (set in export_stops from the shared gates.route_local_hols). Local
+  // to the route — a Palermo line observes Santa Rosalia, a Catania one doesn't.
+  const localHoliday = Array.isArray(trip.lh) && trip.lh.some((p) => p[0] === day.month && p[1] === day.day);
+  const holiday = IT_HOLIDAYS.has(day.iso) || day.wd === 6 || localHoliday;
   if (trip.d === 'sun-holidays') { if (!holiday) return false; }
   else if (trip.d === 'daily') { /* runs */ }
   else if (trip.d === 'mon-fri') { if (day.wd > 4 || holiday) return false; }
   else { if (day.wd > 5 || holiday) return false; } // mon-sat
   if (trip.sc === 'school-days-only' || trip.sc === 'holidays-only') {
     const inSchool = (day.month > 9 || (day.month === 9 && day.day >= 14) || day.month < 6 ||
-      (day.month === 6 && day.day <= 8));
+      (day.month === 6 && day.day <= 8)) && !localHoliday; // a local feast closes its schools
     if (trip.sc === 'school-days-only' && !inSchool) return false;
     if (trip.sc === 'holidays-only' && inSchool) return false;
   }

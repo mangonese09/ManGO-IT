@@ -9,7 +9,7 @@
 # validated feed had already rejected.
 import collections, json, math, os, re
 
-from gates import is_junk_stop, speed_violation, span_violation
+from gates import is_junk_stop, speed_violation, span_violation, route_local_hols
 from stopnorm import canon_key, display_score, sig_tokens, MERGE_M
 
 ROOT = os.path.dirname(__file__)
@@ -103,6 +103,9 @@ def main():
                        'se': svc['season'], 's': seq}
                 if svc.get('explicit_dates'):
                     row['xd'] = svc['explicit_dates']  # exact ISO dates (SAIS/Albatross)
+                lh = route_local_hols(r['name'])  # comune feasts served → [[m,d],…]
+                if lh:
+                    row['lh'] = sorted([m, d] for m, d in lh)
                 trips.append(row)
 
     # coordinate pileups (R-15): 167 clusters of stops share one exact

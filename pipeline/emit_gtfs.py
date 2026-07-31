@@ -47,10 +47,11 @@ AGENCY_URLS = {
 FALLBACK_URL = 'https://pti.regione.sicilia.it'
 
 
-def is_school_day(d):
+def is_school_day(d, local_hols=frozenset()):
     if not (SCHOOL_START <= d <= SCHOOL_END): return False
     if any(a <= d <= b for a, b in SCHOOL_BREAKS): return False
     if d in HOLIDAYS or d.weekday() == 6: return False
+    if (d.month, d.day) in local_hols: return False  # comune feast closes its schools
     return True
 
 
@@ -65,7 +66,7 @@ def season_window(season, d):
     return lo <= cur <= hi if lo <= hi else (cur >= lo or cur <= hi)
 
 
-def service_dates(svc):
+def service_dates(svc, local_hols=frozenset()):
     if svc.get('explicit_dates'):
         # SAIS/Albatross services carry their exact calendar (no school-year
         # or holiday approximation); just clip to the feed window.
@@ -76,21 +77,24 @@ def service_dates(svc):
     d = FEED_START
     while d <= FEED_END:
         wd = d.weekday()
+        # national holidays apply everywhere; local (comune) feasts only to
+        # routes that serve the observing town (local_hols passed by caller)
+        holiday = d in HOLIDAYS or (d.month, d.day) in local_hols
         run = False
         if days == 'daily':
             run = True
         elif days == 'sun-holidays':
-            run = wd == 6 or d in HOLIDAYS
+            run = wd == 6 or holiday
         elif days == 'mon-fri':
-            run = wd <= 4 and d not in HOLIDAYS
+            run = wd <= 4 and not holiday
         else:  # mon-sat feriale
-            run = wd <= 5 and d not in HOLIDAYS
+            run = wd <= 5 and not holiday
         if run and school == 'school-days-only' and days != 'sun-holidays':
-            run = is_school_day(d)
+            run = is_school_day(d, local_hols)
         if run and school == 'school-days-only' and days == 'sun-holidays':
             run = SCHOOL_START <= d <= SCHOOL_END  # "domenicale nel periodo scolastico"
         if run and school == 'holidays-only':
-            run = not (SCHOOL_START <= d <= SCHOOL_END) or not is_school_day(d)
+            run = not (SCHOOL_START <= d <= SCHOOL_END) or not is_school_day(d, local_hols)
         if run and not season_window(season, d):
             run = False
         if run: out.append(d)
@@ -105,13 +109,16 @@ def slug(name):
     return s[:60] or 'stop'
 
 
-def svc_id(svc):
+def svc_id(svc, local_hols=frozenset()):
     if svc.get('explicit_dates'):
         import hashlib
         return 'x' + hashlib.sha1(','.join(svc['explicit_dates']).encode()).hexdigest()[:10]
     parts = [svc['days']]
     if svc['school']: parts.append(svc['school'])
     if svc['season']: parts.append(f"s{svc['season']['from'].replace('/', '')}-{svc['season']['to'].replace('/', '')}")
+    # routes observing different local feasts can't share a calendar, so salt
+    # the id (empty set → unchanged, keeping existing ids stable for the corpus)
+    if local_hols: parts.append('lh' + '-'.join(f'{m:02d}{d:02d}' for m, d in sorted(local_hols)))
     return re.sub(r'[^a-z0-9\-]', '', '-'.join(parts))
 
 
@@ -122,7 +129,7 @@ def hms(t, wrapped_offset=0):
 
 # The junk-stop pattern, the speed thresholds and the span ceiling live in
 # gates.py so export_stops.py enforces exactly the same ones (review R-26).
-from gates import JUNK_STOP, hav_km, speed_violation, span_violation  # noqa: E402
+from gates import JUNK_STOP, hav_km, speed_violation, span_violation, route_local_hols  # noqa: E402
 
 
 def load_prescription_rules():
@@ -160,14 +167,15 @@ def main():
         cod = re.search(r'cod\.?\s*(\d+)', route['name'], re.I)
         short = route.get('short_name') or (cod.group(1) if cod else '')
         route_rows.append([rid, aid, short, route['name'], 3])
+        lh = route_local_hols(route['name'])  # comune feasts this route observes
         for di, d in enumerate(route['directions']):
             for t in d['trips']:
                 if not t['valid']:
                     skipped.append((rid, t['corsa'], 'non-monotonic times')); continue
                 svc = t['service']
-                sid = svc_id(svc)
+                sid = svc_id(svc, lh)
                 if sid not in services_seen:
-                    dates = service_dates(svc)
+                    dates = service_dates(svc, lh)
                     if not dates:
                         skipped.append((rid, t['corsa'], f'service {sid} has zero dates')); continue
                     services_seen[sid] = dates
