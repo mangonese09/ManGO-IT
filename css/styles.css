@@ -92,6 +92,16 @@ button { cursor: pointer; }
 }
 .chip-recent:active { background: rgba(255,255,255,0.1); }
 
+/* hub board: mode-filter chips + favourite toggle, sticky above the rows */
+.hub-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin: 2px 0 12px; flex-wrap: wrap; }
+.hub-chips { display: inline-flex; gap: 6px; }
+.chip-btn {
+  padding: 5px 12px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.14);
+  background: var(--bg-elevated, #2a2a2a); color: inherit; font-size: 0.82rem; font-weight: 600; cursor: pointer;
+}
+.chip-btn.is-active { background: var(--mango, #ffb454); color: #1a1208; border-color: transparent; }
+.hub-fav.pinned { color: var(--mango, #ffb454); border-color: var(--mango, #ffb454); }
+
 /* ── itinerary cards ── */
 .iti-card { display: block; width: 100%; text-align: left; }
 .iti-times { display: flex; justify-content: space-between; align-items: baseline; }
@@ -760,6 +770,17 @@ body { font-size: 1rem; }
   border: 1px solid rgba(255,255,255,0.16);
   border-radius: 50%; padding: 3px; box-sizing: border-box;
   box-shadow: 0 1px 4px rgba(0,0,0,0.45);
+}
+/* curated transit hub = a bold mango disc with an airport/rail glyph, sized up
+   so it reads as the primary tap target over the surrounding stop pins */
+.hub-pin { background: none; border: none; }
+.hub-pin .hub-glyph {
+  display: flex; align-items: center; justify-content: center;
+  width: 40px; height: 40px; font-size: 20px; line-height: 1;
+  background: var(--mango, #ffb454);
+  border: 2px solid rgba(22,24,30,0.85);
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
 /* favourited stops = a bold GOLD STAR with the stop icon on top (#D) */
 .fav-pin .fav-star {

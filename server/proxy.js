@@ -1238,7 +1238,17 @@ const routes = {
     transit = clusterStopsByProximity(transit, 250);
     transit.sort((a, b) => a.dist - b.dist);
     coach.sort((a, b) => a.dist - b.dist);
-    const out = { fetchedAt: Date.now(), stops: [...transit.slice(0, 60), ...coach.slice(0, 90)] };
+    // Curated hubs in view collapse to a single unified pin; the transit/coach
+    // stops inside the hub radius fold under it (a tap opens the merged board),
+    // so the forecourt shows one hub marker instead of a pile of stop pins.
+    const hubs = hubsInBbox(lat - dLat, lon - dLon, lat + dLat, lon + dLon);
+    const absorbed = (s) => hubs.some((h) => haversineM(h.lat, h.lon, s.lat, s.lon) <= h.radiusM);
+    const hubFeatures = hubs.map((h) => ({ kind: 'hub', id: `hub:${h.id}`, hubId: h.id, subkind: h.kind, name: h.name, lat: h.lat, lon: h.lon }));
+    const out = { fetchedAt: Date.now(), stops: [
+      ...hubFeatures,
+      ...transit.filter((s) => !absorbed(s)).slice(0, 60),
+      ...coach.filter((s) => !absorbed(s)).slice(0, 90),
+    ] };
     cacheSet(key, out, 5 * 60 * 1000);
     return out;
   },

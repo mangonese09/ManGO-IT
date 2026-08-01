@@ -9,7 +9,7 @@ import { api } from './api.js';
 import { el, modeIcon, openSheet, closeSheet } from './ui.js';
 import { getLastPos } from './board.js';
 import { displayName, cleanRouteName } from './names.js';
-import { openStopSchedule } from './saved.js';
+import { openStopSchedule, openHubBoard } from './saved.js';
 import { isFavStop, addFavStop, removeFavStop, getFavStops } from './store.js';
 import { toast } from './toast.js';
 
@@ -42,7 +42,7 @@ function stopBucket(s) {
   if (s.kind === 'coach') return 'road';
   return (s.modes || []).some((m) => /RAIL|METRO|SUBWAY|TRAM|LONG_DISTANCE/.test(m)) ? 'rail' : 'road';
 }
-function stopShown(s) { return mapFilter[stopBucket(s)]; }
+function stopShown(s) { return s.kind === 'hub' || mapFilter[stopBucket(s)]; } // hubs (rail+road) always show
 
 // #3 De-overlap: stops sharing a ~40m cell (e.g. RAFFADALI + RAFFADALI Via
 // Nazionale) fan out onto a small circle so each stays visible and tappable.
@@ -119,6 +119,16 @@ function stopIcon(mode, kind, merged = false) {
   });
 }
 
+// A curated transit hub (airport / main station) — one distinct pin that opens
+// the unified multi-mode departures board. Glyph marks airport vs rail.
+function hubIcon(subkind) {
+  return window.L.divIcon({
+    className: 'hub-pin',
+    html: `<span class="hub-glyph">${subkind === 'airport' ? '✈️' : '🚉'}</span>`,
+    iconSize: [40, 40], iconAnchor: [20, 20],
+  });
+}
+
 // Favourited stops get a distinct GOLD STAR pin (bigger, star-shaped backdrop)
 // so they stand out and stay visible even when everything else clusters.
 function favIcon(mode, kind) {
@@ -170,6 +180,14 @@ function renderFavorites() {
     if (!isFinite(f.lat) || !isFinite(f.lon)) continue;
     keep.add(f.key);
     if (favMarkers.has(f.key)) continue;
+    if (f.kind === 'hub' && f.hubId) {
+      const hubMeta = { hubId: f.hubId, subkind: f.iconMode === 'RAIL' ? 'rail' : 'airport', name: f.name, lat: f.lat, lon: f.lon };
+      const hm = window.L.marker([f.lat, f.lon], { icon: hubIcon(hubMeta.subkind), keyboard: false, zIndexOffset: 1000 }).addTo(map);
+      hm.bindTooltip(displayName(f.name), { direction: 'top', offset: [0, -18] });
+      hm.on('click', () => openHubBoard(hubMeta));
+      favMarkers.set(f.key, hm);
+      continue;
+    }
     const kind = f.stopId ? 'transit' : 'coach';
     const meta = { id: f.key, kind, ci: null, name: f.name, stopId: f.stopId || null, lat: f.lat, lon: f.lon };
     const m = window.L.marker([f.lat, f.lon], { icon: favIcon(f.iconMode, kind), keyboard: false, zIndexOffset: 1000 }).addTo(map);
@@ -219,6 +237,15 @@ function renderIndividual(all, c, r) {
     keep.add(s.id);
     const ll = pos.get(s.id) || [s.lat, s.lon];
     if (markers.has(s.id)) { markers.get(s.id).setLatLng(ll); continue; }
+    if (s.kind === 'hub') {
+      const hubMeta = { hubId: s.hubId, subkind: s.subkind, name: s.name, lat: s.lat, lon: s.lon };
+      const hm = window.L.marker(ll, { icon: hubIcon(s.subkind), keyboard: false, zIndexOffset: 900 }).addTo(map);
+      hm.meta = hubMeta;
+      hm.bindTooltip(displayName(s.name), { direction: 'top', offset: [0, -18] });
+      hm.on('click', () => openHubBoard(hubMeta));
+      markers.set(s.id, hm);
+      continue;
+    }
     const meta = { id: s.id, kind: s.kind, ci: s.kind === 'coach' ? Number(s.id.slice(1)) : null, name: s.name, stopId: s.kind === 'transit' ? s.id : null, lat: s.lat, lon: s.lon, members: s.members || null };
     const m = window.L.marker(ll, { icon: stopIcon((s.modes || [])[0], s.kind, s.merged > 1), keyboard: false }).addTo(map);
     m.meta = meta;
