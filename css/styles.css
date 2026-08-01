@@ -719,6 +719,7 @@ body { font-size: 1rem; }
   backdrop-filter: blur(6px); white-space: nowrap;
 }
 .map-chip .mode-img-sm { width: 16px; height: 16px; }
+.map-chip .chip-hub-glyph { font-size: 14px; line-height: 1; }
 .map-chip:not(.on) { opacity: 0.5; }
 .map-chip.on { border-color: var(--mango, #ffb454); }
 .map-search-btn { color: #e7ecf3; }

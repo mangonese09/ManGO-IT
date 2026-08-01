@@ -251,3 +251,25 @@ test('mergeDepartures enforces per-mode then overall caps', () => {
   const capped = mergeDepartures([mk('BUS', 20)], now, { perMode: 50, cap: 5 });
   assert.strictEqual(capped.length, 5, 'overall cap applied');
 });
+
+test('mergeDepartures collapses exact repeats (multi-node station dupes)', () => {
+  const now = Date.parse('2026-08-01T08:00:00Z');
+  const t = '2026-08-01T08:05:00Z';
+  // same line+dest+instant from 7 platform nodes → one row; a later 101 run stays
+  const dupes = Array.from({ length: 7 }, () => ({ mode: 'BUS', line: '101', headsign: 'STAZIONE CENTRALE', timeISO: t }));
+  const later = { mode: 'BUS', line: '101', headsign: 'STAZIONE CENTRALE', timeISO: '2026-08-01T08:20:00Z' };
+  const out = mergeDepartures([dupes, [later]], now, { perMode: 10, cap: 40 });
+  assert.strictEqual(out.length, 2, 'the 7 identical rows collapse to one; the later run survives');
+  assert.strictEqual(out.filter((r) => r.timeISO === t).length, 1, 'exactly one 08:05 row');
+});
+
+test('mergeDepartures keeps the realtime copy when a dupe pair disagrees', () => {
+  const now = Date.parse('2026-08-01T08:00:00Z');
+  const t = '2026-08-01T08:05:00Z';
+  const out = mergeDepartures([
+    [{ mode: 'RAIL', line: 'R1', headsign: 'X', timeISO: t, realtime: false }],
+    [{ mode: 'RAIL', line: 'R1', headsign: 'X', timeISO: t, realtime: true }],
+  ], now, { perMode: 10, cap: 40 });
+  assert.strictEqual(out.length, 1);
+  assert.strictEqual(out[0].realtime, true, 'live copy wins');
+});

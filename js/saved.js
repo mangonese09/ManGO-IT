@@ -182,8 +182,9 @@ export async function openHubBoard(hub) {
     return;
   }
 
-  let filter = 'all'; // all | rail | bus (bus = coach + urban)
-  const inFilter = (r) => filter === 'all' || (filter === 'rail' ? r.mode === 'RAIL' : r.mode !== 'RAIL');
+  let filter = 'all'; // all | rail | city | coach
+  const MODE_OF = { rail: 'RAIL', city: 'BUS', coach: 'COACH' };
+  const inFilter = (r) => filter === 'all' || r.mode === MODE_OF[filter];
   const list = el('div', { class: 'hub-rows' });
   function renderRows() {
     list.innerHTML = '';
@@ -216,11 +217,18 @@ export async function openHubBoard(hub) {
   };
   paintFav();
 
+  // Only offer the mode chips that this hub actually has (an airport shows no
+  // Trains chip; a rail-only stop shows no Coaches chip), and only when there's
+  // more than one mode to split.
+  const present = new Set(departures.map((r) => r.mode));
+  const chipDefs = [['all', 'All']];
+  if (present.has('RAIL')) chipDefs.push(['rail', 'Trains']);
+  if (present.has('BUS')) chipDefs.push(['city', 'City']);
+  if (present.has('COACH')) chipDefs.push(['coach', 'Coaches']);
+  const chipRow = chipDefs.length > 2 ? el('div', { class: 'hub-chips' }, chipDefs.map(([k, t]) => chip(k, t))) : null;
+
   body.innerHTML = '';
-  body.appendChild(el('div', { class: 'hub-toolbar' }, [
-    el('div', { class: 'hub-chips' }, [chip('all', 'All'), chip('rail', 'Trains'), chip('bus', 'Buses')]),
-    favBtn,
-  ]));
+  body.appendChild(el('div', { class: 'hub-toolbar' }, [chipRow, favBtn]));
   body.appendChild(list);
   renderRows();
 }

@@ -12,7 +12,7 @@ const ROOT = path.join(__dirname, '..');
 
 const TRANSITOUS = 'https://api.transitous.org';
 const VT = 'http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno';
-const UA = 'ManGO-IT/0.29.0 (+https://it.mangonese.dev; miconsig@gmail.com)';
+const UA = 'ManGO-IT/0.30.0 (+https://it.mangonese.dev; miconsig@gmail.com)';
 
 // per-day upstream request counter (Transitous asks consumers to know their volume)
 const dayCounts = {};
@@ -822,6 +822,18 @@ function mergeDepartures(lists, nowMs, opts = {}) {
   const perMode = opts.perMode || 8, cap = opts.cap || 30;
   let rows = [].concat(...(lists || [])).filter((r) => r && r.timeISO && Date.parse(r.timeISO) >= nowMs);
   rows.sort((a, b) => Date.parse(a.timeISO) - Date.parse(b.timeISO));
+  // Collapse exact repeats: a big station has many platform/stop nodes, so the
+  // same line+destination+time comes back once per node (Palermo Centrale
+  // returned "101 → Stazione Centrale" 7×). Same mode+line+headsign+instant =
+  // one departure. Genuinely-spaced runs of a line keep their own rows. Prefer
+  // the realtime copy when duplicates disagree.
+  const byKey = new Map();
+  for (const r of rows) {
+    const k = `${r.mode}|${r.line}|${r.headsign}|${r.timeISO}`;
+    if (!byKey.has(k)) byKey.set(k, r);
+    else if (r.realtime && !byKey.get(k).realtime) byKey.set(k, r);
+  }
+  rows = [...byKey.values()];
   const seen = {};
   rows = rows.filter((r) => { seen[r.mode] = (seen[r.mode] || 0) + 1; return seen[r.mode] <= perMode; });
   rows = rows.slice(0, cap);
@@ -1038,7 +1050,7 @@ async function railRows(hub) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.29.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.30.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)

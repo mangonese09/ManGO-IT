@@ -34,15 +34,24 @@ let leafletPromise = null;
 let hintEl = null;
 const markers = new Map(); // stopId -> L.Marker
 
-// #2 Mode filter — which pin families to show. Persisted; both on by default.
-let mapFilter = { rail: true, road: true };
-try { mapFilter = { rail: true, road: true, ...JSON.parse(localStorage.getItem('mangoit.mapModes') || '{}') }; } catch { /* default */ }
-// A stop is 'rail' (trains/metro/tram) or 'road' (buses + our coaches).
+// #2 Pin-family filters. 'rail' = trains/metro/tram, 'city' = urban buses,
+// 'coach' = our long-distance coaches, 'hub' = the curated hub pins. All on by
+// default, persisted. Migrate the legacy single 'road' key (buses+coaches)
+// onto both city+coach so an upgrade never silently hides pins.
+const MAP_FILTER_KEYS = ['rail', 'city', 'coach', 'hub'];
+let mapFilter = { rail: true, city: true, coach: true, hub: true };
+try {
+  const saved = JSON.parse(localStorage.getItem('mangoit.mapModes') || '{}');
+  if ('road' in saved && !('city' in saved)) { saved.city = saved.road; saved.coach = saved.road; }
+  for (const k of MAP_FILTER_KEYS) if (k in saved) mapFilter[k] = !!saved[k];
+} catch { /* default */ }
+// Which toggle family a stop belongs to.
 function stopBucket(s) {
-  if (s.kind === 'coach') return 'road';
-  return (s.modes || []).some((m) => /RAIL|METRO|SUBWAY|TRAM|LONG_DISTANCE/.test(m)) ? 'rail' : 'road';
+  if (s.kind === 'hub') return 'hub';
+  if (s.kind === 'coach') return 'coach';
+  return (s.modes || []).some((m) => /RAIL|METRO|SUBWAY|TRAM|LONG_DISTANCE/.test(m)) ? 'rail' : 'city';
 }
-function stopShown(s) { return s.kind === 'hub' || mapFilter[stopBucket(s)]; } // hubs (rail+road) always show
+function stopShown(s) { return mapFilter[stopBucket(s)]; }
 
 // #3 De-overlap: stops sharing a ~40m cell (e.g. RAFFADALI + RAFFADALI Via
 // Nazionale) fan out onto a small circle so each stays visible and tappable.
@@ -268,7 +277,9 @@ function renderClusters(clusters) {
   // instead of piling stale bubbles up.
   const want = new Map();
   for (const cl of clusters) {
-    if (!mapFilter[cl.kind === 'coach' ? 'road' : 'rail']) continue; // mode filter
+    // Aggregated clusters can't split rail vs city within a transit blob, so a
+    // transit cluster shows if EITHER trains or city buses are on.
+    if (!(cl.kind === 'coach' ? mapFilter.coach : (mapFilter.rail || mapFilter.city))) continue;
     if (cl.single && fk.has(favKey(cl))) continue;                   // shown as a fav star
     want.set(cl.id, cl);
   }
@@ -604,27 +615,35 @@ async function initMap(pos) {
 }
 
 // #2 filter chips + #4 place search, as a top-left in-map overlay.
-let chipRail = null, chipRoad = null;
+const MAP_CHIPS = [
+  { key: 'rail', label: 'Trains', icon: 'RAIL' },
+  { key: 'city', label: 'City buses', icon: 'BUS' },
+  { key: 'coach', label: 'Coaches', icon: 'COACH' },
+  { key: 'hub', label: 'Hubs', icon: null }, // 🚉 glyph, matches the hub pin
+];
 function buildControls() {
   const holder = document.getElementById('map-canvas');
-  const mkChip = (bucket, label) => el('button', {
-    class: `map-chip${mapFilter[bucket] ? ' on' : ''}`,
-    onclick: () => {
-      const next = !mapFilter[bucket];
-      const other = bucket === 'rail' ? 'road' : 'rail';
-      if (!next && !mapFilter[other]) { toast('Keep at least one type on', 'warn'); return; }
-      mapFilter[bucket] = next;
-      try { localStorage.setItem('mangoit.mapModes', JSON.stringify(mapFilter)); } catch { /* private mode */ }
-      (bucket === 'rail' ? chipRail : chipRoad).classList.toggle('on', next);
-      applyFilter();
-    },
-  }, [modeIcon(bucket === 'rail' ? 'RAIL' : 'BUS', 'mode-img mode-img-sm'), el('span', { text: label })]);
-  chipRail = mkChip('rail', 'Trains');
-  chipRoad = mkChip('road', 'Buses');
+  const mkChip = ({ key, label, icon }) => {
+    const glyph = icon ? modeIcon(icon, 'mode-img mode-img-sm') : el('span', { class: 'chip-hub-glyph', text: '🚉' });
+    const chip = el('button', {
+      class: `map-chip${mapFilter[key] ? ' on' : ''}`,
+      onclick: () => {
+        const next = !mapFilter[key];
+        if (!next && MAP_FILTER_KEYS.filter((k) => mapFilter[k]).length === 1) {
+          toast('Keep at least one filter on', 'warn'); return;
+        }
+        mapFilter[key] = next;
+        try { localStorage.setItem('mangoit.mapModes', JSON.stringify(mapFilter)); } catch { /* private mode */ }
+        chip.classList.toggle('on', next);
+        applyFilter();
+      },
+    }, [glyph, el('span', { text: label })]);
+    return chip;
+  };
   const search = el('button', { class: 'map-chip map-search-btn', 'aria-label': 'Search a place', onclick: openMapSearch }, [
     el('span', { class: 'map-search-ico', text: '⌕' }), el('span', { text: 'Search' }),
   ]);
-  const bar = el('div', { class: 'map-controls' }, [search, chipRail, chipRoad]);
+  const bar = el('div', { class: 'map-controls' }, [search, ...MAP_CHIPS.map(mkChip)]);
   window.L.DomEvent.disableClickPropagation(bar);
   holder.appendChild(bar);
 }
