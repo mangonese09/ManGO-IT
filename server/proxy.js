@@ -938,6 +938,104 @@ async function resolveVtCode(stopId, name) {
   return null;
 }
 
+// ── HUB-BOARD PRODUCERS (shared with the existing routes; DRY) ──
+// Transitous map/stops in a radius around a point → common stop records. The
+// upstream query is a bbox; callers that need a true circle filter by haversine.
+// Also the producer behind /api/map-stops' transit array.
+async function transitStopsInRadius(lat, lon, r) {
+  const dLat = r / 111320, dLon = r / (111320 * Math.cos((lat * Math.PI) / 180));
+  const { data } = await upstream(`${TRANSITOUS}/api/v1/map/stops?min=${lat - dLat},${lon - dLon}&max=${lat + dLat},${lon + dLon}`);
+  return (data || []).map((s) => ({
+    stopId: s.stopId, name: s.name, lat: s.lat, lon: s.lon,
+    modes: s.modes || [], dist: Math.round(haversineM(lat, lon, s.lat, s.lon)),
+  }));
+}
+
+// Normalized upcoming stoptimes for a Transitous stop. The producer behind
+// /api/stoptimes (identical shape + 60s cache).
+async function stoptimesData(stopId, n = 6) {
+  const nn = Math.min(n, 20);
+  const key = `st:${stopId}:${nn}`;
+  const hit = cacheGet(key);
+  if (hit) return hit;
+  const { data } = await upstream(`${TRANSITOUS}/api/v1/stoptimes?stopId=${encodeURIComponent(stopId)}&n=${nn}`);
+  const out = {
+    fetchedAt: Date.now(),
+    stopTimes: (data.stopTimes || []).map((st) => ({
+      stopName: st.place?.name || null, stopId: st.place?.stopId || null,
+      departure: st.place?.departure || st.place?.arrival || null,
+      scheduledDeparture: st.place?.scheduledDeparture || st.place?.scheduledArrival || null,
+      cancelled: !!st.place?.cancelled, mode: st.mode, realTime: !!st.realTime,
+      headsign: st.headsign || '', routeShortName: st.routeShortName || st.displayName || '',
+      agencyName: st.agencyName || null, tripId: st.tripId || null,
+      track: st.place?.track || null,
+    })),
+  };
+  cacheSet(key, out, 60 * 1000);
+  return out;
+}
+
+// Live ViaggiaTreno board for an already-resolved S-code. The producer behind
+// /api/vt/board (shared so the endpoint and the hub board never diverge).
+async function vtBoardByCode(code) {
+  if (!code) return { source: 'viaggiatreno', code: null, departures: [] };
+  const key = `vtb:${code}`;
+  const hit = cacheGet(key);
+  if (hit) return hit;
+  let departures = [];
+  try {
+    const { data } = await upstream(`${VT}/partenze/${code}/${encodeURIComponent(romeNowString())}`);
+    departures = (data || []).map(slimVtDeparture)
+      .filter((d) => d.scheduledMs || d.clock)
+      .sort((a, b) => (a.scheduledMs || 0) - (b.scheduledMs || 0));
+  } catch { /* VT down → empty → client uses MOTIS */ }
+  const out = { source: 'viaggiatreno', code, fetchedAt: Date.now(), departures };
+  cacheSet(key, out, 60 * 1000);
+  return out;
+}
+// Resolve a rail hub's station name to its VT board.
+async function vtBoardData(name) {
+  return vtBoardByCode(await resolveVtCode(null, name));
+}
+
+// ── HUB-BOARD NORMALIZERS (each returns the common departure row shape) ──
+// COACH: our own feed board around the hub. depMin already folds tomorrow
+// (+1440), so romeInstant gives a DST-safe instant for today OR tomorrow.
+function coachRows(hub) {
+  const { results = [] } = coachBoard(hub.lat, hub.lon, hub.radiusM, null, true);
+  const todayIso = romeParts().iso;
+  return results.map((r) => ({
+    mode: 'COACH', line: r.route, headsign: r.headsign,
+    timeISO: romeInstant(todayIso, r.depMin),
+    operator: r.operator || null, stopName: r.stopName || hub.name, realtime: false, stopId: null,
+  }));
+}
+// URBAN (+ any rail Transitous also carries): stoptimes for the hub's nearest
+// transit stops inside the radius. Bounded to the 8 nearest stops to cap the
+// upstream fan-out on dense station forecourts.
+async function urbanRows(hub) {
+  const stops = (await transitStopsInRadius(hub.lat, hub.lon, hub.radiusM))
+    .filter((s) => haversineM(hub.lat, hub.lon, s.lat, s.lon) <= hub.radiusM)
+    .sort((a, b) => a.dist - b.dist)
+    .slice(0, 8);
+  const lists = await Promise.all(stops.map((s) => stoptimesData(s.stopId, 12).then((d) => (d.stopTimes || []).map((st) => ({
+    mode: st.mode === 'RAIL' ? 'RAIL' : 'BUS', line: st.routeShortName || '', headsign: st.headsign || '',
+    timeISO: st.departure || st.scheduledDeparture, operator: st.agencyName || null,
+    stopName: st.stopName || s.name, realtime: !!st.realTime, stopId: s.stopId,
+  }))).catch(() => [])));
+  return [].concat(...lists);
+}
+// RAIL: live ViaggiaTreno board for the station (rail hubs only). scheduledMs
+// is the reliable epoch; rows without one drop out in mergeDepartures.
+async function railRows(hub) {
+  const board = await vtBoardData(hub.railName);
+  return (board.departures || []).map((d) => ({
+    mode: 'RAIL', line: d.label || d.category || 'Treno', headsign: d.destination,
+    timeISO: d.scheduledMs ? new Date(d.scheduledMs).toISOString() : null,
+    operator: 'Trenitalia', stopName: hub.name, realtime: true, stopId: null,
+  }));
+}
+
 // ── ROUTES ──
 const routes = {
   'GET /api/health': async () => ({ ok: true, version: '0.28.3', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
@@ -1097,10 +1195,9 @@ const routes = {
     if (hit) return hit;
     let transit = [];
     try {
-      const { data } = await upstream(`${TRANSITOUS}/api/v1/map/stops?min=${lat - dLat},${lon - dLon}&max=${lat + dLat},${lon + dLon}`);
-      transit = (data || []).map((s) => ({
+      transit = (await transitStopsInRadius(lat, lon, r)).map((s) => ({
         kind: 'transit', id: s.stopId, name: s.name, lat: s.lat, lon: s.lon,
-        modes: s.modes || [], dist: Math.round(haversineM(lat, lon, s.lat, s.lon)),
+        modes: s.modes, dist: s.dist,
       }));
     } catch { /* coach stops still render if Transitous is down */ }
     const coach = [];
@@ -1223,25 +1320,23 @@ const routes = {
   'GET /api/stoptimes': async (q) => {
     const stopId = q.get('stopId');
     if (!stopId) throw httpError(400, 'stopId required');
-    const n = Math.min(Number(q.get('n')) || 6, 20);
-    const key = `st:${stopId}:${n}`;
-    const hit = cacheGet(key);
-    if (hit) return hit;
-    const { data } = await upstream(`${TRANSITOUS}/api/v1/stoptimes?stopId=${encodeURIComponent(stopId)}&n=${n}`);
-    const out = {
-      fetchedAt: Date.now(),
-      stopTimes: (data.stopTimes || []).map((st) => ({
-        stopName: st.place?.name || null, stopId: st.place?.stopId || null,
-        departure: st.place?.departure || st.place?.arrival || null,
-        scheduledDeparture: st.place?.scheduledDeparture || st.place?.scheduledArrival || null,
-        cancelled: !!st.place?.cancelled, mode: st.mode, realTime: !!st.realTime,
-        headsign: st.headsign || '', routeShortName: st.routeShortName || st.displayName || '',
-        agencyName: st.agencyName || null, tripId: st.tripId || null,
-        track: st.place?.track || null,
-      })),
-    };
-    cacheSet(key, out, 60 * 1000);
-    return out;
+    return stoptimesData(stopId, Math.min(Number(q.get('n')) || 6, 20));
+  },
+
+  // Unified departures board for a curated hub: fan out to VT rail (rail hubs),
+  // our coach feed, and Transitous urban stops in radius, then merge-sort-cap.
+  // Each source is wrapped so one dead upstream never blanks the whole board.
+  'GET /api/hub-board': async (q) => {
+    const hub = TRANSIT_HUBS.find((h) => h.id === q.get('hubId'));
+    if (!hub) throw httpError(404, 'unknown hub');
+    const now = Date.now();
+    const [rail, coach, urban] = await Promise.all([
+      hub.kind === 'rail' ? railRows(hub).catch(() => []) : Promise.resolve([]),
+      Promise.resolve().then(() => coachRows(hub)).catch(() => []),
+      urbanRows(hub).catch(() => []),
+    ]);
+    const departures = mergeDepartures([rail, coach, urban], now, { perMode: 10, cap: 40 });
+    return { hub: { id: hub.id, name: hub.name, kind: hub.kind }, asOf: now, departures };
   },
 
   'GET /api/direct': async (q) => {
@@ -1342,21 +1437,7 @@ const routes = {
   // (or name). Returns [] on no-code / VT-down / no-trains so the client falls
   // back to the MOTIS board (e.g. bus-substituted lines like Agrigento).
   'GET /api/vt/board': async (q) => {
-    const code = await resolveVtCode(q.get('stopId'), q.get('name'));
-    if (!code) return { source: 'viaggiatreno', code: null, departures: [] };
-    const key = `vtb:${code}`;
-    const hit = cacheGet(key);
-    if (hit) return hit;
-    let departures = [];
-    try {
-      const { data } = await upstream(`${VT}/partenze/${code}/${encodeURIComponent(romeNowString())}`);
-      departures = (data || []).map(slimVtDeparture)
-        .filter((d) => d.scheduledMs || d.clock)
-        .sort((a, b) => (a.scheduledMs || 0) - (b.scheduledMs || 0));
-    } catch { /* VT down → empty → client uses MOTIS */ }
-    const out = { source: 'viaggiatreno', code, fetchedAt: Date.now(), departures };
-    cacheSet(key, out, 60 * 1000);
-    return out;
+    return vtBoardByCode(await resolveVtCode(q.get('stopId'), q.get('name')));
   },
 
   'GET /api/vt/departures': async (q) => {
