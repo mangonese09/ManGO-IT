@@ -36,6 +36,8 @@ export function initSettings() {
   });
 
   document.getElementById('check-updates').addEventListener('click', checkForUpdates);
+  const ver = document.getElementById('current-version');
+  if (ver) ver.textContent = `v${APP_VERSION}`;
   document.getElementById('data-info').addEventListener('click', openDataSheet);
   document.getElementById('about-open').addEventListener('click', openAboutSheet);
 }
