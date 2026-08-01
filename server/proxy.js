@@ -12,7 +12,7 @@ const ROOT = path.join(__dirname, '..');
 
 const TRANSITOUS = 'https://api.transitous.org';
 const VT = 'http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno';
-const UA = 'ManGO-IT/0.28.1 (+https://it.mangonese.dev; miconsig@gmail.com)';
+const UA = 'ManGO-IT/0.28.2 (+https://it.mangonese.dev; miconsig@gmail.com)';
 
 // per-day upstream request counter (Transitous asks consumers to know their volume)
 const dayCounts = {};
@@ -809,11 +809,25 @@ function clusterStopsByProximity(stops, radiusM = 200) {
         members.push({ id: s.id, name: s.name, lat: s.lat, lon: s.lon });
       }
     }
-    const merged = members.length;
-    // Only re-name real depots (3+ stops); a pair keeps its own name.
-    const name = (merged >= 3 && clusterAreaName(members.map((m) => m.name))) || seed.name;
+    // Transitous often emits one stop record per DIRECTION, so a cluster can
+    // hold several members with the IDENTICAL name ("Messina Marine Alagna" ×2).
+    // That double-counted the pin and showed repeat rows in the picker. Collapse
+    // same-name members (within the cluster only — different-named boarding
+    // islands like Palermo Centrale's platforms are kept): keep the closest
+    // (members are dist-ordered) and union the ids so a board can query both.
+    const byName = new Map();
+    for (const m of members) {
+      const key = m.name.trim().replace(/\s+/g, " ").toUpperCase();
+      const prev = byName.get(key);
+      if (prev) prev.ids.push(m.id);
+      else byName.set(key, { id: m.id, ids: [m.id], name: m.name, lat: m.lat, lon: m.lon });
+    }
+    const uniq = [...byName.values()];
+    const merged = uniq.length;
+    // Only re-name real depots (3+ distinct stops); a pair keeps its own name.
+    const name = (merged >= 3 && clusterAreaName(uniq.map((m) => m.name))) || seed.name;
     const o = { ...seed, name, modes: [...modes], merged };
-    if (merged > 1) o.members = members; // drives the map's specific-stop picker
+    if (merged > 1) o.members = uniq; // drives the map's specific-stop picker
     out.push(o);
   }
   return out;
@@ -888,7 +902,7 @@ async function resolveVtCode(stopId, name) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.28.1', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.28.2', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)

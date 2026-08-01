@@ -40,6 +40,23 @@ test('clusterStopsByProximity folds all stops within 200m into one, regardless o
   assert.strictEqual(far.members, undefined, 'a lone stop carries no members list');
 });
 
+test('clusterStopsByProximity collapses same-named members (Transitous per-direction dupes)', () => {
+  // Two records with the IDENTICAL name (one per direction) + a distinct one,
+  // all within 200m — the cluster should count 2, not 3, and list no repeats.
+  const out = clusterStopsByProximity([
+    { id: 'a', name: 'Messina Marine Alagna', lat: 38.19340, lon: 15.55010, modes: ['BUS'], dist: 20 },
+    { id: 'b', name: 'Messina Marine Alagna', lat: 38.19352, lon: 15.55022, modes: ['BUS'], dist: 35 },
+    { id: 'c', name: "Messina Marine D' Aosta", lat: 38.19360, lon: 15.55040, modes: ['BUS'], dist: 60 },
+  ], 200);
+  assert.strictEqual(out.length, 1, 'all three fold into one cluster');
+  const hub = out[0];
+  assert.strictEqual(hub.merged, 2, 'the two identical-named records count once');
+  assert.strictEqual(hub.members.length, 2, 'no repeat rows in the picker');
+  const alagna = hub.members.find((m) => m.name === 'Messina Marine Alagna');
+  assert.deepStrictEqual(alagna.ids.sort(), ['a', 'b'], 'both underlying ids kept on the surviving member');
+  assert.ok(hub.members.some((m) => m.name === "Messina Marine D' Aosta"), 'the distinct stop is preserved');
+});
+
 test('clusterStopsByProximity leaves normally-spaced stops alone', () => {
   const out = clusterStopsByProximity([
     { id: 'a', name: 'X', lat: 38.1100, lon: 13.3600, modes: [], dist: 10 },
