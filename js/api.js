@@ -110,4 +110,10 @@ export const api = {
     getJson(`/api/vt/board?stopId=${encodeURIComponent(stopId)}${name ? `&name=${encodeURIComponent(name)}` : ''}`, {
       cacheKey: `vtboard:${stopId}`, source: 'viaggiatreno',
     }),
+
+  // Unified rail+coach+urban departures board for a curated hub.
+  hubBoard: (hubId) =>
+    getJson(`/api/hub-board?hubId=${encodeURIComponent(hubId)}`, {
+      cacheKey: `hubboard:${hubId}`, source: 'transitous',
+    }),
 };

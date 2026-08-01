@@ -4,6 +4,7 @@ const assert = require('node:assert');
 const {
   romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, inSicily, dropDominated,
   parseBias, geoScore, clusterStopsByProximity, clusterAreaName,
+  HUBS, hubsInBbox, mergeDepartures,
 } = require('../../server/proxy.js');
 
 test('clusterAreaName names a depot by the shared leading phrase', () => {
@@ -217,4 +218,36 @@ test('vtSilence: flags consecutive zero-parse days, quiet days do not alarm', ()
   // low-traffic silent day is not evidence
   r = vtSilence({ '2026-07-26': { req: 2, ok: 0 }, '2026-07-27': { req: 1, ok: 0 } });
   assert.strictEqual(r.silentDays, 0);
+});
+
+test('hubsInBbox returns only hubs inside the viewport', () => {
+  const box = [38.09, 13.34, 38.13, 13.39]; // central Palermo
+  const ids = hubsInBbox(...box).map((h) => h.id);
+  assert.ok(ids.includes('palermo-centrale'), 'Palermo Centrale is in-box');
+  assert.ok(!ids.includes('catania-centrale'), 'Catania is not in this box');
+  assert.ok(HUBS.every((h) => h.lat && h.lon && h.name && h.kind), 'every hub is well-formed');
+});
+
+test('mergeDepartures merges, drops past, sorts, caps per mode', () => {
+  const now = Date.parse('2026-08-01T08:00:00Z');
+  const rail = [{ mode: 'RAIL', line: 'R1', headsign: 'X', timeISO: '2026-08-01T08:10:00Z' }];
+  const coach = [{ mode: 'COACH', line: '224', headsign: 'Pomara', timeISO: '2026-08-01T07:50:00Z' }, // past → dropped
+                 { mode: 'COACH', line: '224', headsign: 'Pomara', timeISO: '2026-08-01T08:05:00Z' }];
+  const out = mergeDepartures([rail, coach], now, { cap: 10, perMode: 8 });
+  assert.strictEqual(out.length, 2, 'past row dropped');
+  assert.strictEqual(out[0].line, '224', 'earliest first (08:05 before 08:10)');
+  assert.strictEqual(out[0].minutes, 5, 'minutes computed from now');
+  assert.ok(out.every((r) => r.mode && r.timeISO), 'rows keep shape');
+});
+
+test('mergeDepartures enforces per-mode then overall caps', () => {
+  const now = Date.parse('2026-08-01T08:00:00Z');
+  const mk = (mode, n) => Array.from({ length: n }, (_, i) => ({
+    mode, line: String(i), headsign: 'H', timeISO: new Date(now + (i + 1) * 60000).toISOString(),
+  }));
+  const out = mergeDepartures([mk('BUS', 12), mk('RAIL', 12)], now, { perMode: 8, cap: 30 });
+  assert.strictEqual(out.filter((r) => r.mode === 'BUS').length, 8, 'BUS capped at perMode');
+  assert.strictEqual(out.filter((r) => r.mode === 'RAIL').length, 8, 'RAIL capped at perMode');
+  const capped = mergeDepartures([mk('BUS', 20)], now, { perMode: 50, cap: 5 });
+  assert.strictEqual(capped.length, 5, 'overall cap applied');
 });

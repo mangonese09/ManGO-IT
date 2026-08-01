@@ -2,7 +2,7 @@
 import { api } from './api.js';
 import { el, modeMeta, modeIcon, confirmModal, openSheet, closeSheet, placeIcon, placeIconKey, PLACE_ICONS } from './ui.js';
 import { romeTime, romeDay, countdownText, isOtherRomeDay } from './time.js';
-import { getSaved, purgeSaved, removeSaved, getFavStops, addFavStop, removeFavStop, getPlacesSorted, addPlace, removePlace, setHomePlace, setPlaceIcon } from './store.js';
+import { getSaved, purgeSaved, removeSaved, getFavStops, addFavStop, removeFavStop, isFavStop, getPlacesSorted, addPlace, removePlace, setHomePlace, setPlaceIcon } from './store.js';
 import { toast } from './toast.js';
 import { displayName } from './names.js';
 
@@ -93,6 +93,7 @@ function transitLabel(st) {
 const isRailStop = (s) => s.stopId && /otherTRENITALIA/i.test(s.stopId);
 
 export async function openStopSchedule(s) {
+  if (s && (s.kind === 'hub' || s.hubId)) return openHubBoard(s); // a saved hub opens its unified board
   const body = el('div', { class: 'iti-detail sched-sheet' });
   body.appendChild(el('div', { class: 'loading', text: 'Loading schedule…' }));
   openSheet(body, { title: `Today — ${displayName(s.name)}` });
@@ -161,6 +162,69 @@ export async function openStopSchedule(s) {
   }
 }
 
+// ── HUB BOARD ──
+// A curated hub (airport / main station) opens ONE unified departures board:
+// live rail (ViaggiaTreno) + our coaches + urban buses in radius, merge-sorted
+// by /api/hub-board. Mode chips filter Trains vs Buses; the ★ favourites the
+// hub like any stop (a saved hub reopens this board, not a stop schedule).
+export async function openHubBoard(hub) {
+  const favK = `hub:${hub.hubId}`;
+  const body = el('div', { class: 'iti-detail sched-sheet hub-sheet' });
+  body.appendChild(el('div', { class: 'loading', text: 'Loading departures…' }));
+  openSheet(body, { title: displayName(hub.name) });
+  let departures = [];
+  try {
+    const { data } = await api.hubBoard(hub.hubId);
+    departures = data.departures || [];
+  } catch {
+    body.innerHTML = '';
+    body.appendChild(el('p', { class: 'muted', text: 'Could not load departures — check connectivity and retry.' }));
+    return;
+  }
+
+  let filter = 'all'; // all | rail | bus (bus = coach + urban)
+  const inFilter = (r) => filter === 'all' || (filter === 'rail' ? r.mode === 'RAIL' : r.mode !== 'RAIL');
+  const list = el('div', { class: 'hub-rows' });
+  function renderRows() {
+    list.innerHTML = '';
+    const rows = departures.filter(inFilter);
+    if (!rows.length) { list.appendChild(el('p', { class: 'muted', text: 'No upcoming departures.' })); return; }
+    for (const r of rows) {
+      const line = (r.line || '').trim() || modeMeta(r.mode).label;
+      const head = displayName((r.headsign || '').trim());
+      list.appendChild(el('div', { class: 'sched-row' }, [
+        el('strong', { class: 'sched-time', text: romeTime(r.timeISO) }),
+        modeIcon(r.mode, 'mode-img mode-img-sm'),
+        el('span', { class: 'sched-label', text: head ? `${line} → ${head}` : line }),
+        r.realtime ? el('span', { class: 'badge badge-live', text: 'live' }) : null,
+        el('span', { class: 'dep-count', text: countdownText(r.timeISO) }),
+      ]));
+    }
+  }
+
+  const chip = (key, text) => el('button', {
+    class: `chip-btn hub-chip${filter === key ? ' is-active' : ''}`, text,
+    onclick: (e) => { filter = key; for (const b of e.currentTarget.parentNode.children) b.classList.toggle('is-active', b === e.currentTarget); renderRows(); },
+  });
+
+  const favBtn = el('button', { class: 'chip-btn hub-fav' });
+  const paintFav = () => { const on = isFavStop(favK); favBtn.textContent = on ? '★ Saved' : '☆ Save'; favBtn.classList.toggle('pinned', on); };
+  favBtn.onclick = () => {
+    if (isFavStop(favK)) removeFavStop(favK);
+    else addFavStop({ key: favK, hubId: hub.hubId, name: hub.name, kind: 'hub', iconMode: hub.subkind === 'airport' ? 'BUS' : 'RAIL', stopId: null, lat: hub.lat, lon: hub.lon });
+    paintFav();
+  };
+  paintFav();
+
+  body.innerHTML = '';
+  body.appendChild(el('div', { class: 'hub-toolbar' }, [
+    el('div', { class: 'hub-chips' }, [chip('all', 'All'), chip('rail', 'Trains'), chip('bus', 'Buses')]),
+    favBtn,
+  ]));
+  body.appendChild(list);
+  renderRows();
+}
+
 // Delay → { text, cls }. Positive = late (amber), negative = early, 0 = on time.
 function vtDelay(d) {
   if (d.delayMin == null) return { text: '', cls: '' };
@@ -222,7 +286,13 @@ async function favStopCard(s) {
   card.appendChild(rows);
   try {
     let deps = [];
-    if (s.stopId) {
+    if (s.kind === 'hub' && s.hubId) {
+      const { data } = await api.hubBoard(s.hubId);
+      deps = (data.departures || []).map((r) => ({
+        label: r.headsign ? `${(r.line || '').trim() || r.mode} → ${displayName(r.headsign)}` : (r.line || r.mode),
+        iconMode: r.mode, when: r.timeISO, live: r.realtime,
+      }));
+    } else if (s.stopId) {
       const { data } = await api.stoptimes(s.stopId, 4);
       deps = (data.stopTimes || []).map((st) => ({
         label: transitLabel(st),
