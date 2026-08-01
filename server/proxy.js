@@ -790,6 +790,44 @@ function clusterAreaName(names) {
   return out.length >= 2 ? out.join(' ') : null;
 }
 
+// ── TRANSIT HUBS ──
+// Curated airport/main-station "hubs" that get a single unified departures pin
+// on the map. A tap fans out to rail + coach + urban buses within radiusM and
+// merges the boards (see /api/hub-board). Coords are approximate — fine for a
+// ~400–500m hub radius. Airports are limited to the 4 mainland-served fields.
+const TRANSIT_HUBS = [
+  { id: 'palermo-airport', name: 'Aeroporto Falcone Borsellino', kind: 'airport', lat: 38.1815, lon: 13.0995, radiusM: 500 },
+  { id: 'catania-airport', name: 'Aeroporto Catania Fontanarossa', kind: 'airport', lat: 37.4668, lon: 15.0664, radiusM: 500 },
+  { id: 'trapani-airport', name: 'Aeroporto Trapani-Birgi', kind: 'airport', lat: 37.9114, lon: 12.4880, radiusM: 500 },
+  { id: 'comiso-airport', name: 'Aeroporto di Comiso', kind: 'airport', lat: 36.9946, lon: 14.6072, radiusM: 500 },
+  { id: 'palermo-centrale', name: 'Palermo Centrale', kind: 'rail', lat: 38.1103, lon: 13.3680, radiusM: 400, railName: 'PALERMO CENTRALE' },
+  { id: 'catania-centrale', name: 'Catania Centrale', kind: 'rail', lat: 37.5100, lon: 15.0980, radiusM: 400, railName: 'CATANIA CENTRALE' },
+  { id: 'messina-centrale', name: 'Messina Centrale', kind: 'rail', lat: 38.1780, lon: 15.5530, radiusM: 400, railName: 'MESSINA CENTRALE' },
+  { id: 'siracusa', name: 'Siracusa', kind: 'rail', lat: 37.0680, lon: 15.2790, radiusM: 400, railName: 'SIRACUSA' },
+  { id: 'ragusa', name: 'Ragusa', kind: 'rail', lat: 36.9250, lon: 14.7290, radiusM: 400, railName: 'RAGUSA' },
+  { id: 'agrigento-centrale', name: 'Agrigento Centrale', kind: 'rail', lat: 37.3110, lon: 13.5770, radiusM: 400, railName: 'AGRIGENTO CENTRALE' },
+  { id: 'caltanissetta-centrale', name: 'Caltanissetta Centrale', kind: 'rail', lat: 37.4880, lon: 14.0630, radiusM: 400, railName: 'CALTANISSETTA CENTRALE' },
+  { id: 'enna', name: 'Enna', kind: 'rail', lat: 37.5620, lon: 14.2880, radiusM: 400, railName: 'ENNA' },
+  { id: 'trapani', name: 'Trapani', kind: 'rail', lat: 38.0170, lon: 12.5370, radiusM: 400, railName: 'TRAPANI' },
+];
+function hubsInBbox(minLat, minLon, maxLat, maxLon) {
+  return TRANSIT_HUBS.filter((h) => h.lat >= minLat && h.lat <= maxLat && h.lon >= minLon && h.lon <= maxLon);
+}
+
+// Merge already-shaped departure rows from N sources into one board: drop
+// anything already departed, sort ascending by time, stamp `minutes` from now,
+// then apply a per-mode cap (so one busy mode can't crowd out the others) and
+// an overall cap. Rows keep their common shape {mode,line,headsign,timeISO,…}.
+function mergeDepartures(lists, nowMs, opts = {}) {
+  const perMode = opts.perMode || 8, cap = opts.cap || 30;
+  let rows = [].concat(...(lists || [])).filter((r) => r && r.timeISO && Date.parse(r.timeISO) >= nowMs);
+  rows.sort((a, b) => Date.parse(a.timeISO) - Date.parse(b.timeISO));
+  const seen = {};
+  rows = rows.filter((r) => { seen[r.mode] = (seen[r.mode] || 0) + 1; return seen[r.mode] <= perMode; });
+  rows = rows.slice(0, cap);
+  return rows.map((r) => ({ ...r, minutes: Math.round((Date.parse(r.timeISO) - nowMs) / 60000) }));
+}
+
 function clusterStopsByProximity(stops, radiusM = 200) {
   const byDist = [...stops].sort((a, b) => a.dist - b.dist);
   const claimed = new Set();
@@ -1453,4 +1491,4 @@ if (require.main === module) {
   server.listen(PORT, () => console.log(`ManGO:IT proxy on :${PORT}${STATIC ? ' (static+api)' : ''}`));
 }
 
-module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon, vtSilence, dropDominated, parseBias, geoScore, clusterStopsByProximity, clusterAreaName };
+module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon, vtSilence, dropDominated, parseBias, geoScore, clusterStopsByProximity, clusterAreaName, HUBS: TRANSIT_HUBS, hubsInBbox, mergeDepartures };
