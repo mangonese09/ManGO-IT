@@ -445,6 +445,9 @@ body.kb-open .bottom-nav { transform: translateY(100%); }
 
 .fav-stop-tap { cursor: pointer; }
 .sched-note { margin-bottom: 10px; }
+.sched-dir { font-size: .74rem; font-weight: 700; letter-spacing: .02em; text-transform: uppercase;
+  color: var(--accent, #e0a63a); padding: 12px 2px 4px; border-bottom: 1px solid rgba(255,255,255,.06); margin-bottom: 2px; }
+.sched-dir:first-child { padding-top: 2px; }
 .sched-row {
   display: flex; align-items: center; gap: 9px; padding: 7px 2px;
   border-top: 1px solid rgba(255,255,255,0.06);

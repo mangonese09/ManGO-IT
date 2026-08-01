@@ -112,6 +112,7 @@ export async function openStopSchedule(s) {
         time: romeTime(st.departure || st.scheduledDeparture),
         mode: st.mode,
         label: transitLabel(st),
+        dir: displayName((st.headsign || '').trim()),
         live: st.realTime, cancelled: st.cancelled,
       }));
       note = isRailStop(s)
@@ -122,6 +123,7 @@ export async function openStopSchedule(s) {
       rows = (data.results || []).map((r) => ({
         time: r.dep, mode: 'COACH',
         label: routeLabel(displayName(r.route), displayName(r.headsign)),
+        dir: displayName(r.headsign),
         past: r.depMin < romeNowMin(),
       }));
       note = 'Complete coach timetable for today — scheduled times, no live status.';
@@ -132,14 +134,26 @@ export async function openStopSchedule(s) {
       body.appendChild(el('p', { class: 'muted', text: 'No departures today.' }));
       return;
     }
-    for (const r of rows) {
-      body.appendChild(el('div', { class: `sched-row${r.past ? ' sched-past' : ''}${r.cancelled ? ' sched-cancelled' : ''}` }, [
-        el('strong', { class: 'sched-time', text: r.time }),
-        modeIcon(r.mode, 'mode-img mode-img-sm'),
-        el('span', { class: 'sched-label', text: r.label }),
-        r.live ? el('span', { class: 'badge badge-live', text: 'live' }) : null,
-        r.cancelled ? el('span', { class: 'badge badge-cancel', text: 'CANCELLED' }) : null,
-      ]));
+    // Group by direction (headsign): a parent/bidirectional stop returns BOTH
+    // ways of a line (224 → Pomara AND 224 → Stazione Centrale). Interleaving
+    // them by time reads as if you could board either here — split into
+    // per-direction sections instead (the short label drops the redundant "→").
+    const rowEl = (r, short) => el('div', { class: `sched-row${r.past ? ' sched-past' : ''}${r.cancelled ? ' sched-cancelled' : ''}` }, [
+      el('strong', { class: 'sched-time', text: r.time }),
+      modeIcon(r.mode, 'mode-img mode-img-sm'),
+      el('span', { class: 'sched-label', text: short ? r.label.split(' → ')[0] : r.label }),
+      r.live ? el('span', { class: 'badge badge-live', text: 'live' }) : null,
+      r.cancelled ? el('span', { class: 'badge badge-cancel', text: 'CANCELLED' }) : null,
+    ]);
+    const dirs = [];
+    for (const r of rows) { if (r.dir && !dirs.includes(r.dir)) dirs.push(r.dir); }
+    if (dirs.length > 1) {
+      for (const d of dirs) {
+        body.appendChild(el('div', { class: 'sched-dir', text: `→ ${d}` }));
+        for (const r of rows.filter((x) => x.dir === d)) body.appendChild(rowEl(r, true));
+      }
+    } else {
+      for (const r of rows) body.appendChild(rowEl(r, false));
     }
   } catch {
     body.innerHTML = '';
