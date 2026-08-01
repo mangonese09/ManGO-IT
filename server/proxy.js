@@ -12,7 +12,7 @@ const ROOT = path.join(__dirname, '..');
 
 const TRANSITOUS = 'https://api.transitous.org';
 const VT = 'http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno';
-const UA = 'ManGO-IT/0.30.0 (+https://it.mangonese.dev; miconsig@gmail.com)';
+const UA = 'ManGO-IT/0.30.1 (+https://it.mangonese.dev; miconsig@gmail.com)';
 
 // per-day upstream request counter (Transitous asks consumers to know their volume)
 const dayCounts = {};
@@ -1050,7 +1050,7 @@ async function railRows(hub) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.30.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.30.1', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)
@@ -1205,6 +1205,11 @@ const routes = {
     const key = `mapstops:${agg ? `a${cellM}:` : ''}${lat.toFixed(3)},${lon.toFixed(3)},${r}`;
     const hit = cacheGet(key);
     if (hit) return hit;
+    // Curated hubs in the viewport are returned as their OWN layer (both zoom
+    // modes) so the client can draw them on top, never clustered or folded into
+    // the heat map — a hub pin must stand out and show at every zoom level.
+    const hubsInView = hubsInBbox(lat - dLat, lon - dLon, lat + dLat, lon + dLon);
+    const hubFeatures = hubsInView.map((h) => ({ kind: 'hub', id: `hub:${h.id}`, hubId: h.id, subkind: h.kind, name: h.name, lat: h.lat, lon: h.lon }));
     let transit = [];
     try {
       transit = (await transitStopsInRadius(lat, lon, r)).map((s) => ({
@@ -1239,7 +1244,7 @@ const routes = {
         ? { id: c.one.id, single: true, count: 1, lat: c.one.lat, lon: c.one.lon, name: c.one.name, kind: c.one.kind, modes: c.one.modes || [] }
         : { id: `g${ck}`, count: c.count, lat: c.sumLat / c.count, lon: c.sumLon / c.count, kind: c.coach >= c.transit ? 'coach' : 'transit' }
       )).sort((a, b) => b.count - a.count).slice(0, 300);
-      const aggOut = { fetchedAt: Date.now(), aggregated: true, clusters };
+      const aggOut = { fetchedAt: Date.now(), aggregated: true, clusters, hubs: hubFeatures };
       cacheSet(key, aggOut, 5 * 60 * 1000);
       return aggOut;
     }
@@ -1250,14 +1255,11 @@ const routes = {
     transit = clusterStopsByProximity(transit, 250);
     transit.sort((a, b) => a.dist - b.dist);
     coach.sort((a, b) => a.dist - b.dist);
-    // Curated hubs in view collapse to a single unified pin; the transit/coach
-    // stops inside the hub radius fold under it (a tap opens the merged board),
-    // so the forecourt shows one hub marker instead of a pile of stop pins.
-    const hubs = hubsInBbox(lat - dLat, lon - dLon, lat + dLat, lon + dLon);
-    const absorbed = (s) => hubs.some((h) => haversineM(h.lat, h.lon, s.lat, s.lon) <= h.radiusM);
-    const hubFeatures = hubs.map((h) => ({ kind: 'hub', id: `hub:${h.id}`, hubId: h.id, subkind: h.kind, name: h.name, lat: h.lat, lon: h.lon }));
-    const out = { fetchedAt: Date.now(), stops: [
-      ...hubFeatures,
+    // The transit/coach stops inside a hub's radius fold under its pin (a tap
+    // opens the merged board), so the forecourt shows the hub pin instead of a
+    // pile of stop pins. Hubs themselves ride the separate `hubs` layer above.
+    const absorbed = (s) => hubsInView.some((h) => haversineM(h.lat, h.lon, s.lat, s.lon) <= h.radiusM);
+    const out = { fetchedAt: Date.now(), hubs: hubFeatures, stops: [
       ...transit.filter((s) => !absorbed(s)).slice(0, 60),
       ...coach.filter((s) => !absorbed(s)).slice(0, 90),
     ] };

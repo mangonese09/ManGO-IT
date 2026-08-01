@@ -187,16 +187,9 @@ function renderFavorites() {
   const keep = new Set();
   for (const f of favs) {
     if (!isFinite(f.lat) || !isFinite(f.lon)) continue;
+    if (f.kind === 'hub') continue; // hubs render on the always-on hub layer, not as fav stars
     keep.add(f.key);
     if (favMarkers.has(f.key)) continue;
-    if (f.kind === 'hub' && f.hubId) {
-      const hubMeta = { hubId: f.hubId, subkind: f.iconMode === 'RAIL' ? 'rail' : 'airport', name: f.name, lat: f.lat, lon: f.lon };
-      const hm = window.L.marker([f.lat, f.lon], { icon: hubIcon(hubMeta.subkind), keyboard: false, zIndexOffset: 1000 }).addTo(map);
-      hm.bindTooltip(displayName(f.name), { direction: 'top', offset: [0, -18] });
-      hm.on('click', () => openHubBoard(hubMeta));
-      favMarkers.set(f.key, hm);
-      continue;
-    }
     const kind = f.stopId ? 'transit' : 'coach';
     const meta = { id: f.key, kind, ci: null, name: f.name, stopId: f.stopId || null, lat: f.lat, lon: f.lon };
     const m = window.L.marker([f.lat, f.lon], { icon: favIcon(f.iconMode, kind), keyboard: false, zIndexOffset: 1000 }).addTo(map);
@@ -208,6 +201,27 @@ function renderFavorites() {
 }
 function clearIndividual() { for (const m of markers.values()) m.remove(); markers.clear(); }
 function clearClusters() { for (const m of clusterMarkers.values()) m.remove(); clusterMarkers.clear(); }
+
+// Hubs are their OWN layer: always drawn on top (above stops, clusters and
+// favourites), never clustered or folded into the heat map, and shown at every
+// zoom level. Reconciled by hubId so pans/zooms keep the markers; the Hubs
+// filter chip removes them wholesale.
+const hubMarkers = new Map(); // hubId -> L.Marker
+function renderHubs(hubs) {
+  if (!map) return;
+  if (!mapFilter.hub) { for (const m of hubMarkers.values()) m.remove(); hubMarkers.clear(); return; }
+  const keep = new Set();
+  for (const h of hubs) {
+    keep.add(h.hubId);
+    if (hubMarkers.has(h.hubId)) continue;
+    const hubMeta = { hubId: h.hubId, subkind: h.subkind, name: h.name, lat: h.lat, lon: h.lon };
+    const m = window.L.marker([h.lat, h.lon], { icon: hubIcon(h.subkind), keyboard: false, zIndexOffset: 1200 }).addTo(map);
+    m.bindTooltip(displayName(h.name), { direction: 'top', offset: [0, -18] });
+    m.on('click', () => openHubBoard(hubMeta));
+    hubMarkers.set(h.hubId, m);
+  }
+  for (const [id, m] of hubMarkers) if (!keep.has(id)) { m.remove(); hubMarkers.delete(id); }
+}
 
 let loadSeq = 0;
 async function loadVisibleStops() {
@@ -229,6 +243,7 @@ async function loadVisibleStops() {
   try {
     const { data } = await api.mapStops(c.lat, c.lng, r, clustered, cellM);
     if (seq !== loadSeq || !map || highlightActive) return;
+    renderHubs(data.hubs || []);           // always, both zoom modes, on top
     if (clustered) { renderClusters(data.clusters || []); return; }
     renderIndividual(data.stops || [], c, r);
   } catch { /* pan on — stale markers beat an error state */ }
@@ -246,15 +261,6 @@ function renderIndividual(all, c, r) {
     keep.add(s.id);
     const ll = pos.get(s.id) || [s.lat, s.lon];
     if (markers.has(s.id)) { markers.get(s.id).setLatLng(ll); continue; }
-    if (s.kind === 'hub') {
-      const hubMeta = { hubId: s.hubId, subkind: s.subkind, name: s.name, lat: s.lat, lon: s.lon };
-      const hm = window.L.marker(ll, { icon: hubIcon(s.subkind), keyboard: false, zIndexOffset: 900 }).addTo(map);
-      hm.meta = hubMeta;
-      hm.bindTooltip(displayName(s.name), { direction: 'top', offset: [0, -18] });
-      hm.on('click', () => openHubBoard(hubMeta));
-      markers.set(s.id, hm);
-      continue;
-    }
     const meta = { id: s.id, kind: s.kind, ci: s.kind === 'coach' ? Number(s.id.slice(1)) : null, name: s.name, stopId: s.kind === 'transit' ? s.id : null, lat: s.lat, lon: s.lon, members: s.members || null };
     const m = window.L.marker(ll, { icon: stopIcon((s.modes || [])[0], s.kind, s.merged > 1), keyboard: false }).addTo(map);
     m.meta = meta;
