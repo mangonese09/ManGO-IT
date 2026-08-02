@@ -12,7 +12,7 @@ const ROOT = path.join(__dirname, '..');
 
 const TRANSITOUS = 'https://api.transitous.org';
 const VT = 'http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno';
-const UA = 'ManGO-IT/0.31.1 (+https://it.mangonese.dev; miconsig@gmail.com)';
+const UA = 'ManGO-IT/0.31.2 (+https://it.mangonese.dev; miconsig@gmail.com)';
 
 // per-day upstream request counter (Transitous asks consumers to know their volume)
 const dayCounts = {};
@@ -968,18 +968,26 @@ async function stoptimesData(stopId, n = 6) {
   const hit = cacheGet(key);
   if (hit) return hit;
   const { data } = await upstream(`${TRANSITOUS}/api/v1/stoptimes?stopId=${encodeURIComponent(stopId)}&n=${nn}`);
-  const out = {
-    fetchedAt: Date.now(),
-    stopTimes: (data.stopTimes || []).map((st) => ({
-      stopName: st.place?.name || null, stopId: st.place?.stopId || null,
-      departure: st.place?.departure || st.place?.arrival || null,
-      scheduledDeparture: st.place?.scheduledDeparture || st.place?.scheduledArrival || null,
-      cancelled: !!st.place?.cancelled, mode: st.mode, realTime: !!st.realTime,
-      headsign: st.headsign || '', routeShortName: st.routeShortName || st.displayName || '',
-      agencyName: st.agencyName || null, tripId: st.tripId || null,
-      track: st.place?.track || null,
-    })),
-  };
+  let rows = (data.stopTimes || []).map((st) => ({
+    stopName: st.place?.name || null, stopId: st.place?.stopId || null,
+    departure: st.place?.departure || st.place?.arrival || null,
+    scheduledDeparture: st.place?.scheduledDeparture || st.place?.scheduledArrival || null,
+    cancelled: !!st.place?.cancelled, mode: st.mode, realTime: !!st.realTime,
+    headsign: st.headsign || '', routeShortName: st.routeShortName || st.displayName || '',
+    agencyName: st.agencyName || null, tripId: st.tripId || null,
+    track: st.place?.track || null,
+  }));
+  // Upstream feeds duplicate some departures (AMAT per-direction records,
+  // Trenitalia rail-replacement "BUS" rows ×3): same instant + line + headsign
+  // = one departure everywhere downstream (sheet, fav cards, hub boards).
+  // Prefer the realtime copy when duplicates disagree.
+  const seen = new Map();
+  for (const r of rows) {
+    const k = `${r.departure || r.scheduledDeparture}|${r.routeShortName}|${r.headsign}|${r.mode}`;
+    if (!seen.has(k) || (r.realTime && !seen.get(k).realTime)) seen.set(k, r);
+  }
+  rows = [...seen.values()];
+  const out = { fetchedAt: Date.now(), stopTimes: rows };
   cacheSet(key, out, 60 * 1000);
   return out;
 }
@@ -1047,7 +1055,7 @@ async function railRows(hub) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.31.1', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.31.2', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)
