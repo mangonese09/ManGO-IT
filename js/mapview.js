@@ -638,7 +638,7 @@ async function initMap(pos) {
 // #2 filter chips + #4 place search, as a top-left in-map overlay.
 const MAP_CHIPS = [
   { key: 'rail', label: 'Trains', icon: 'RAIL' },
-  { key: 'city', label: 'City buses', icon: 'BUS' },
+  { key: 'city', label: 'City', icon: 'BUS' }, // matches the hub sheet's chip; icon carries "bus"
   { key: 'coach', label: 'Coaches', icon: 'COACH' },
   { key: 'hub', label: 'Hubs', icon: null }, // 🚉 glyph, matches the hub pin
 ];
