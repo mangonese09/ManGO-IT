@@ -65,12 +65,12 @@ export const api = {
     });
   },
 
-  stoptimes: (stopId, n = 6) =>
-    getJson(`/api/stoptimes?stopId=${encodeURIComponent(stopId)}&n=${n}`, { source: 'transitous' }),
+  stoptimes: (stopId, n = 6, timeIso = null) =>
+    getJson(`/api/stoptimes?stopId=${encodeURIComponent(stopId)}&n=${n}${timeIso ? `&time=${encodeURIComponent(timeIso)}` : ''}`, { source: 'transitous' }),
 
-  coachBoard: (lat, lon, r = 300, all = false) =>
-    getJson(`/api/coach-board?lat=${lat.toFixed(5)}&lon=${lon.toFixed(5)}&r=${r}${all ? '&all=1' : ''}`, {
-      cacheKey: `coachboard:${lat.toFixed(4)},${lon.toFixed(4)}${all ? ':all' : ''}`, source: 'coachfeed',
+  coachBoard: (lat, lon, r = 300, all = false, date = null) =>
+    getJson(`/api/coach-board?lat=${lat.toFixed(5)}&lon=${lon.toFixed(5)}&r=${r}${all ? '&all=1' : ''}${date ? `&date=${date}` : ''}`, {
+      cacheKey: `coachboard:${lat.toFixed(4)},${lon.toFixed(4)}${all ? ':all' : ''}${date ? `:${date}` : ''}`, source: 'coachfeed',
     }),
 
   direct: ({ fromLat, fromLon, toLat, toLon, date, afterMin, full }) => {

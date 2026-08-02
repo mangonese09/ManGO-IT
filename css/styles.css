@@ -93,6 +93,7 @@ button { cursor: pointer; }
 .chip-recent:active { background: rgba(255,255,255,0.1); }
 
 /* hub board: mode-filter chips + favourite toggle, sticky above the rows */
+.sched-daychips { margin: 2px 0 10px; }
 .hub-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin: 2px 0 12px; flex-wrap: wrap; }
 .hub-chips { display: inline-flex; gap: 6px; }
 .chip-btn {

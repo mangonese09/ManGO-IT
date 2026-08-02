@@ -1,7 +1,7 @@
 // ── SAVED (favorite stops + pinned departures) ──
 import { api } from './api.js';
 import { el, modeMeta, modeIcon, confirmModal, openSheet, closeSheet, placeIcon, placeIconKey, PLACE_ICONS } from './ui.js';
-import { romeTime, romeDay, countdownText, isOtherRomeDay } from './time.js';
+import { romeTime, romeDay, countdownText, isOtherRomeDay, romeWallToIso } from './time.js';
 import { getSaved, purgeSaved, removeSaved, getFavStops, addFavStop, removeFavStop, isFavStop, getPlacesSorted, addPlace, removePlace, setHomePlace, setPlaceIcon } from './store.js';
 import { toast } from './toast.js';
 import { displayName } from './names.js';
@@ -92,97 +92,149 @@ function transitLabel(st) {
 // sheet for any nearby stop.
 const isRailStop = (s) => s.stopId && /otherTRENITALIA/i.test(s.stopId);
 
+// The Rome calendar date string (YYYY-MM-DD) for a Date, and chip candidates:
+// Today · Tomorrow · next Sat · next Sun. Sunday IS the festive board in these
+// feeds (festivo service = Sunday service), so no separate "festive" chip —
+// abstract categories would lie anyway (a school-term Tuesday ≠ an August
+// Tuesday); every chip is a CONCRETE date whose calendars resolve honestly.
+const romeDateStr = (d) => new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Rome', year: 'numeric', month: '2-digit', day: '2-digit' }).format(d);
+function scheduleDayChips() {
+  const now = new Date();
+  const days = [];
+  for (let i = 0; i < 9 && days.length < 4; i++) {
+    const d = new Date(now.getTime() + i * 86400000);
+    const dow = new Intl.DateTimeFormat('en-US', { timeZone: 'Europe/Rome', weekday: 'short' }).format(d);
+    const label = i === 0 ? 'Today' : i === 1 ? 'Tomorrow' : null;
+    if (label) days.push({ date: i === 0 ? null : romeDateStr(d), label });
+    else if ((dow === 'Sat' && !days.some((x) => x.sat)) || (dow === 'Sun' && !days.some((x) => x.sun))) {
+      days.push({ date: romeDateStr(d), label: `${dow} ${new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Rome', day: 'numeric' }).format(d)}`, [dow.toLowerCase()]: true });
+    }
+  }
+  return days;
+}
+
 export async function openStopSchedule(s) {
   if (s && (s.kind === 'hub' || s.hubId)) return openHubBoard(s); // a saved hub opens its unified board
   const body = el('div', { class: 'iti-detail sched-sheet' });
-  body.appendChild(el('div', { class: 'loading', text: 'Loading schedule…' }));
-  openSheet(body, { title: `Today — ${displayName(s.name)}` });
-  try {
-    // Rail stations: a live ViaggiaTreno board (train #, destination, delay,
-    // platform). Empty (bus-substituted line / VT down) → fall through to MOTIS.
-    if (isRailStop(s)) {
-      let board = null;
-      try { ({ data: board } = await api.vtBoard(s.stopId, s.name)); } catch { /* fall back */ }
-      if (board && (board.departures || []).length) { renderVtBoard(body, board.departures); return; }
-    }
-    let rows = [];
-    let note = '';
-    if (s.stopId) {
-      const { data } = await api.stoptimes(s.stopId, 40);
-      rows = (data.stopTimes || []).map((st) => ({
-        iso: st.departure || st.scheduledDeparture,
-        time: romeTime(st.departure || st.scheduledDeparture),
-        mode: st.mode,
-        label: transitLabel(st),
-        dir: displayName((st.headsign || '').trim()),
-        live: st.realTime, cancelled: st.cancelled,
-      }));
-      // A sparse stop (one train a day) makes "next 40 departures" span WEEKS —
-      // rendered date-blind it read as the same train repeated 14× ("16:36 REG
-      // 21879" × N, one per future day). Drop exact repeats, then split by day:
-      // today renders as before, later days go under day headers (capped).
-      const seen = new Set();
-      rows = rows.filter((r) => {
-        const k = `${r.iso}|${r.label}`;
-        if (seen.has(k)) return false;
-        seen.add(k); return true;
-      });
-      note = isRailStop(s)
-        ? 'No live train data right now — showing what the network schedule knows.'
-        : 'Next departures from the live network.';
-    } else {
-      const { data } = await api.coachBoard(s.lat, s.lon, 300, true);
-      rows = (data.results || []).map((r) => ({
-        time: r.dep, mode: 'COACH',
-        label: routeLabel(displayName(r.route), displayName(r.headsign)),
-        dir: displayName(r.headsign),
-        past: r.depMin < romeNowMin(),
-      }));
-      note = 'Complete coach timetable for today — scheduled times, no live status.';
-    }
-    body.innerHTML = '';
-    body.appendChild(el('p', { class: 'muted sched-note', text: note }));
-    if (!rows.length) {
-      body.appendChild(el('p', { class: 'muted', text: 'No departures today.' }));
-      return;
-    }
-    // Group by direction (headsign): a parent/bidirectional stop returns BOTH
-    // ways of a line (224 → Pomara AND 224 → Stazione Centrale). Interleaving
-    // them by time reads as if you could board either here — split into
-    // per-direction sections instead (the short label drops the redundant "→").
-    const rowEl = (r, short) => el('div', { class: `sched-row${r.past ? ' sched-past' : ''}${r.cancelled ? ' sched-cancelled' : ''}` }, [
-      el('strong', { class: 'sched-time', text: r.time }),
-      modeIcon(r.mode, 'mode-img mode-img-sm'),
-      el('span', { class: 'sched-label', text: short ? r.label.split(' → ')[0] : r.label }),
-      r.live ? el('span', { class: 'badge badge-live', text: 'live' }) : null,
-      r.cancelled ? el('span', { class: 'badge badge-cancel', text: 'CANCELLED' }) : null,
-    ]);
-    // Today first (grouped by direction as before); departures on LATER days —
-    // the whole tail at a one-train-a-day stop — sit under explicit day
-    // headers so "16:36" fourteen times reads as fourteen DAYS, capped at 10.
-    const today = rows.filter((r) => !r.iso || !isOtherRomeDay(r.iso));
-    const later = rows.filter((r) => r.iso && isOtherRomeDay(r.iso)).slice(0, 10);
-    const dirs = [];
-    for (const r of today) { if (r.dir && !dirs.includes(r.dir)) dirs.push(r.dir); }
-    if (dirs.length > 1) {
-      for (const d of dirs) {
-        body.appendChild(el('div', { class: 'sched-dir', text: `→ ${d}` }));
-        for (const r of today.filter((x) => x.dir === d)) body.appendChild(rowEl(r, true));
-      }
-    } else {
-      for (const r of today) body.appendChild(rowEl(r, false));
-    }
-    if (!today.length) body.appendChild(el('p', { class: 'muted', text: 'No more departures today.' }));
-    let lastDay = null;
-    for (const r of later) {
-      const day = romeDay(r.iso);
-      if (day !== lastDay) { body.appendChild(el('div', { class: 'sched-dir sched-day', text: day })); lastDay = day; }
-      body.appendChild(rowEl(r, false));
-    }
-  } catch {
-    body.innerHTML = '';
-    body.appendChild(el('p', { class: 'muted', text: 'Could not load the schedule — check connectivity and retry.' }));
+  openSheet(body, { title: displayName(s.name) });
+  const content = el('div', { class: 'sched-content' });
+
+  // Day chips: the board for a CONCRETE date — weekday/weekend/festive service
+  // differences fall out of the real calendars for that day.
+  let activeDate = null; // null = today
+  const chipRow = el('div', { class: 'hub-chips sched-daychips' });
+  for (const c of scheduleDayChips()) {
+    const b = el('button', {
+      class: `chip-btn${c.date === null ? ' is-active' : ''}`, text: c.label,
+      onclick: () => {
+        activeDate = c.date;
+        for (const x of chipRow.children) x.classList.toggle('is-active', x === b);
+        load();
+      },
+    });
+    chipRow.appendChild(b);
   }
+  body.appendChild(chipRow);
+  body.appendChild(content);
+
+  async function load() {
+    const forDate = activeDate; // capture; a stale response must not clobber a newer chip
+    content.innerHTML = '';
+    content.appendChild(el('div', { class: 'loading', text: 'Loading schedule…' }));
+    try {
+      // Rail stations TODAY: the live ViaggiaTreno board (train #, delay,
+      // platform). Other days (and VT-down) → the network schedule below.
+      if (!forDate && isRailStop(s)) {
+        let board = null;
+        try { ({ data: board } = await api.vtBoard(s.stopId, s.name)); } catch { /* fall back */ }
+        if (forDate !== activeDate) return;
+        if (board && (board.departures || []).length) { content.innerHTML = ''; renderVtBoard(content, board.departures); return; }
+      }
+      let rows = [];
+      let note = '';
+      if (s.stopId) {
+        const timeIso = forDate ? romeWallToIso(`${forDate}T00:00`) : null;
+        const { data } = await api.stoptimes(s.stopId, 40, timeIso);
+        if (forDate !== activeDate) return;
+        rows = (data.stopTimes || []).map((st) => ({
+          iso: st.departure || st.scheduledDeparture,
+          time: romeTime(st.departure || st.scheduledDeparture),
+          mode: st.mode,
+          label: transitLabel(st),
+          dir: displayName((st.headsign || '').trim()),
+          live: st.realTime, cancelled: st.cancelled,
+        }));
+        // A sparse stop (one train a day) makes "next 40 departures" span
+        // WEEKS — date-blind it read as the same train repeated 14×. Drop
+        // exact repeats; day handling below.
+        const seen = new Set();
+        rows = rows.filter((r) => {
+          const k = `${r.iso}|${r.label}`;
+          if (seen.has(k)) return false;
+          seen.add(k); return true;
+        });
+        if (forDate) rows = rows.filter((r) => r.iso && romeDateStr(new Date(r.iso)) === forDate);
+        note = forDate ? 'Network schedule for that day — no live status.'
+          : isRailStop(s)
+            ? 'No live train data right now — showing what the network schedule knows.'
+            : 'Next departures from the live network.';
+      } else {
+        const { data } = await api.coachBoard(s.lat, s.lon, 300, true, forDate);
+        if (forDate !== activeDate) return;
+        rows = (data.results || []).filter((r) => forDate || r.day !== 'tomorrow').map((r) => ({
+          time: r.dep, mode: 'COACH',
+          label: routeLabel(displayName(r.route), displayName(r.headsign)),
+          dir: displayName(r.headsign),
+          past: !forDate && r.depMin < romeNowMin(),
+        }));
+        note = forDate ? 'Complete coach timetable for that day — scheduled times, no live status.'
+          : 'Complete coach timetable for today — scheduled times, no live status.';
+      }
+      content.innerHTML = '';
+      content.appendChild(el('p', { class: 'muted sched-note', text: note }));
+      if (!rows.length) {
+        content.appendChild(el('p', { class: 'muted', text: forDate ? 'No departures that day.' : 'No departures today.' }));
+        return;
+      }
+      // Group by direction (headsign): a parent/bidirectional stop returns BOTH
+      // ways of a line; interleaved by time it reads as if you could board
+      // either here — split into per-direction sections instead.
+      const rowEl = (r, short) => el('div', { class: `sched-row${r.past ? ' sched-past' : ''}${r.cancelled ? ' sched-cancelled' : ''}` }, [
+        el('strong', { class: 'sched-time', text: r.time }),
+        modeIcon(r.mode, 'mode-img mode-img-sm'),
+        el('span', { class: 'sched-label', text: short ? r.label.split(' → ')[0] : r.label }),
+        r.live ? el('span', { class: 'badge badge-live', text: 'live' }) : null,
+        r.cancelled ? el('span', { class: 'badge badge-cancel', text: 'CANCELLED' }) : null,
+      ]);
+      // The selected day renders grouped by direction; on the Today view,
+      // departures on LATER days (the whole tail at a one-train-a-day stop)
+      // sit under explicit day headers, capped at 10.
+      const dayRows = rows.filter((r) => !r.iso || !isOtherRomeDay(r.iso) || forDate);
+      const later = forDate ? [] : rows.filter((r) => r.iso && isOtherRomeDay(r.iso)).slice(0, 10);
+      const dirs = [];
+      for (const r of dayRows) { if (r.dir && !dirs.includes(r.dir)) dirs.push(r.dir); }
+      if (dirs.length > 1) {
+        for (const d of dirs) {
+          content.appendChild(el('div', { class: 'sched-dir', text: `→ ${d}` }));
+          for (const r of dayRows.filter((x) => x.dir === d)) content.appendChild(rowEl(r, true));
+        }
+      } else {
+        for (const r of dayRows) content.appendChild(rowEl(r, false));
+      }
+      if (!dayRows.length && !forDate) content.appendChild(el('p', { class: 'muted', text: 'No more departures today.' }));
+      let lastDay = null;
+      for (const r of later) {
+        const day = romeDay(r.iso);
+        if (day !== lastDay) { content.appendChild(el('div', { class: 'sched-dir sched-day', text: day })); lastDay = day; }
+        content.appendChild(rowEl(r, false));
+      }
+    } catch {
+      if (forDate !== activeDate) return;
+      content.innerHTML = '';
+      content.appendChild(el('p', { class: 'muted', text: 'Could not load the schedule — check connectivity and retry.' }));
+    }
+  }
+  load();
 }
 
 // ── HUB BOARD ──
