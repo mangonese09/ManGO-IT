@@ -104,8 +104,11 @@ function scheduleDayChips() {
   for (let i = 0; i < 9 && days.length < 4; i++) {
     const d = new Date(now.getTime() + i * 86400000);
     const dow = new Intl.DateTimeFormat('en-US', { timeZone: 'Europe/Rome', weekday: 'short' }).format(d);
-    const label = i === 0 ? 'Today' : i === 1 ? 'Tomorrow' : null;
-    if (label) days.push({ date: i === 0 ? null : romeDateStr(d), label });
+    // Today/Tomorrow carry their ROME weekday — the app runs on Italy time, so
+    // a Chicago Saturday evening is already a Rome Sunday; "Today (Sun)" makes
+    // that visible instead of a baffling Today + separate Sun chip.
+    const label = i === 0 ? `Today (${dow})` : i === 1 ? `Tomorrow (${dow})` : null;
+    if (label) days.push({ date: i === 0 ? null : romeDateStr(d), label, [dow.toLowerCase()]: true });
     else if ((dow === 'Sat' && !days.some((x) => x.sat)) || (dow === 'Sun' && !days.some((x) => x.sun))) {
       days.push({ date: romeDateStr(d), label: `${dow} ${new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Rome', day: 'numeric' }).format(d)}`, [dow.toLowerCase()]: true });
     }
