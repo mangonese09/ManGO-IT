@@ -4,6 +4,7 @@ import { getSettings, patchSettings, clearAllAppData } from './store.js';
 import { confirmModal, openSheet, el } from './ui.js';
 import { api } from './api.js';
 import { toast } from './toast.js';
+import { setMapStyle, getMapStyle } from './mapview.js';
 
 export function initSettings() {
   applyTheme(getSettings().theme);
@@ -13,6 +14,21 @@ export function initSettings() {
     patchSettings({ theme: next });
     applyTheme(next);
   });
+
+  // Map basemap style: Auto (follows theme) → Dark → Light → Auto.
+  const mapBtn = document.getElementById('map-style-toggle');
+  const paintMapStyle = () => {
+    const v = getMapStyle();
+    if (mapBtn) mapBtn.textContent = v === 'dark' ? '🌙 Dark' : v === 'light' ? '☀️ Light' : 'Auto';
+  };
+  if (mapBtn) {
+    paintMapStyle();
+    mapBtn.addEventListener('click', () => {
+      const order = ['auto', 'dark', 'light'];
+      setMapStyle(order[(order.indexOf(getMapStyle()) + 1) % 3]);
+      paintMapStyle();
+    });
+  }
 
   // §5.8: whole-day (default) vs the old next-6-departures view.
   const spanBtn = document.getElementById('span-toggle');

@@ -123,17 +123,30 @@ export async function openStopSchedule(s) {
   // differences fall out of the real calendars for that day.
   let activeDate = null; // null = today
   const chipRow = el('div', { class: 'hub-chips sched-daychips' });
+  const activate = (b) => { for (const x of chipRow.children) x.classList.toggle('is-active', x === b); };
   for (const c of scheduleDayChips()) {
     const b = el('button', {
       class: `chip-btn${c.date === null ? ' is-active' : ''}`, text: c.label,
-      onclick: () => {
-        activeDate = c.date;
-        for (const x of chipRow.children) x.classList.toggle('is-active', x === b);
-        load();
-      },
+      onclick: () => { activeDate = c.date; activate(b); load(); },
     });
     chipRow.appendChild(b);
   }
+  // Any future date (planning): a 📅 chip fronting a hidden native date input —
+  // same pattern as the Home when-picker. The chip label becomes the picked day.
+  const dateInput = el('input', { type: 'date', class: 'when-native', 'aria-hidden': 'true', tabindex: '-1' });
+  dateInput.min = romeDateStr(new Date());
+  const pickBtn = el('button', {
+    class: 'chip-btn sched-pick', text: '📅',
+    onclick: () => { try { dateInput.showPicker(); } catch { dateInput.click(); } },
+  });
+  dateInput.addEventListener('change', () => {
+    if (!dateInput.value) return;
+    activeDate = dateInput.value;
+    pickBtn.textContent = `📅 ${romeDay(`${dateInput.value}T12:00:00`)}`;
+    activate(pickBtn); load();
+  });
+  chipRow.appendChild(pickBtn);
+  chipRow.appendChild(dateInput);
   body.appendChild(chipRow);
   body.appendChild(content);
 
@@ -188,7 +201,7 @@ export async function openStopSchedule(s) {
           past: !forDate && r.depMin < romeNowMin(),
         }));
         note = forDate ? 'Complete coach timetable for that day — scheduled times, no live status.'
-          : 'Complete coach timetable for today — scheduled times, no live status.';
+          : 'Complete coach timetable for today, including already-departed runs (dimmed) — scheduled times, no live status.';
       }
       content.innerHTML = '';
       content.appendChild(el('p', { class: 'muted sched-note', text: note }));

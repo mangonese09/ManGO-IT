@@ -74,7 +74,18 @@ function declutter(stops) {
   return pos;
 }
 
+// Map style: 'auto' follows the app theme; 'dark'/'light' pin the basemap
+// regardless of theme (Settings → Map style). Persisted.
+let mapStyle = 'auto';
+try { mapStyle = localStorage.getItem('mangoit.mapStyle') || 'auto'; } catch { /* default */ }
+export function setMapStyle(v) {
+  mapStyle = v;
+  try { localStorage.setItem('mangoit.mapStyle', v); } catch { /* private mode */ }
+  if (map) ensureTiles();
+}
+export function getMapStyle() { return mapStyle; }
 function currentTheme() {
+  if (mapStyle === 'dark' || mapStyle === 'light') return mapStyle;
   return document.documentElement.dataset.theme === 'light' ? 'light' : 'dark';
 }
 
@@ -558,6 +569,10 @@ function openLineSheet(rt, color) {
 
 function ensureTiles() {
   const theme = currentTheme();
+  // tiles-dark drives the CSS brightness lift (Carto dark_all is too murky
+  // raw); tiles-light keeps the container background from flashing dark.
+  const cv = document.getElementById('map-canvas');
+  if (cv) { cv.classList.toggle('tiles-dark', theme === 'dark'); cv.classList.toggle('tiles-light', theme === 'light'); }
   if (tileLayer && tileTheme === theme) return;
   if (tileLayer) tileLayer.remove();
   tileTheme = theme;
@@ -628,7 +643,7 @@ const MAP_CHIPS = [
   { key: 'hub', label: 'Hubs', icon: null }, // 🚉 glyph, matches the hub pin
 ];
 function buildControls() {
-  const holder = document.getElementById('map-canvas');
+  const canvas = document.getElementById('map-canvas');
   const mkChip = ({ key, label, icon }) => {
     const glyph = icon ? modeIcon(icon, 'mode-img mode-img-sm') : el('span', { class: 'chip-hub-glyph', text: '🚉' });
     const chip = el('button', {
@@ -649,9 +664,10 @@ function buildControls() {
   const search = el('button', { class: 'map-chip map-search-btn', 'aria-label': 'Search a place', onclick: openMapSearch }, [
     el('span', { class: 'map-search-ico', text: '⌕' }), el('span', { text: 'Search' }),
   ]);
+  // The bar sits ABOVE the map (normal flow), not overlaid on the tiles —
+  // chips stop covering the viewport and wrap freely on narrow screens.
   const bar = el('div', { class: 'map-controls' }, [search, ...MAP_CHIPS.map(mkChip)]);
-  window.L.DomEvent.disableClickPropagation(bar);
-  holder.appendChild(bar);
+  canvas.parentNode.insertBefore(bar, canvas);
 }
 
 // #4 Place search — a sheet with a debounced geocode input; picking a result

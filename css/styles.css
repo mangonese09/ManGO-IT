@@ -710,9 +710,14 @@ body { font-size: 1rem; }
 
 /* #2/#4 Top-left controls: search pill + Trains/Buses filter chips. */
 .map-controls {
-  position: absolute; top: 8px; left: 8px; z-index: 460;
-  display: flex; flex-wrap: wrap; gap: 6px; max-width: calc(100% - 72px);
+  display: flex; flex-wrap: wrap; gap: 6px;
+  margin: 0 0 10px;
 }
+/* Carto dark_all is too murky raw — lift it while keeping the dark look.
+   The container bg matches so unloaded tile edges don't flash black. */
+#map-canvas.tiles-dark { background: #2a2e37; }
+#map-canvas.tiles-dark .leaflet-tile { filter: brightness(1.6) contrast(0.92) saturate(0.95); }
+#map-canvas.tiles-light { background: #e8e8e4; }
 .map-chip {
   display: inline-flex; align-items: center; gap: 5px;
   background: rgba(20, 22, 28, 0.86); color: #e7ecf3;
@@ -773,6 +778,13 @@ body { font-size: 1rem; }
   border: 1px solid rgba(255,255,255,0.16);
   border-radius: 50%; padding: 3px; box-sizing: border-box;
   box-shadow: 0 1px 4px rgba(0,0,0,0.45);
+}
+/* Long-distance coaches read differently from city stops: a mango-red disc
+   (dark red-orange keeps the yellow coach glyph legible; green would collide
+   with the teal merged-depot pins, plain mango with the hub pins). */
+.stop-pin.pin-coach img {
+  background: #a63d16;
+  border-color: rgba(255, 180, 84, 0.45);
 }
 /* curated transit hub = a bold mango disc with an airport/rail glyph, sized up
    so it reads as the primary tap target over the surrounding stop pins */
