@@ -145,9 +145,10 @@ function stopIcon(mode, kind, merged = false) {
 // A curated transit hub (airport / main station) — one distinct pin that opens
 // the unified multi-mode departures board. Glyph marks airport vs rail.
 function hubIcon(subkind) {
+  const src = subkind === 'airport' ? '/icons/plane-mango.svg' : '/icons/modes/train.png';
   return window.L.divIcon({
     className: 'hub-pin',
-    html: `<span class="hub-glyph">${subkind === 'airport' ? '✈️' : '🚉'}</span>`,
+    html: `<span class="hub-glyph"><img src="${src}" alt=""></span>`,
     iconSize: [40, 40], iconAnchor: [20, 20],
   });
 }
@@ -694,7 +695,8 @@ const MAP_CHIPS = [
 function buildControls() {
   const canvas = document.getElementById('map-canvas');
   const mkChip = ({ key, label, icon }) => {
-    const glyph = icon ? modeIcon(icon, 'mode-img mode-img-sm') : el('span', { class: 'chip-hub-glyph', text: '🚉' });
+    const glyph = icon ? modeIcon(icon, 'mode-img mode-img-sm')
+      : el('span', { class: 'chip-hub-glyph' }, [el('img', { src: '/icons/modes/train.png', alt: '' })]); // mini hub pin: mango disc + mango train
     const chip = el('button', {
       class: `map-chip${mapFilter[key] ? ' on' : ''}`,
       onclick: () => {
@@ -712,7 +714,7 @@ function buildControls() {
   };
   // icon-only search keeps the whole bar to one line on a 390px phone
   const search = el('button', { class: 'map-chip map-search-btn', 'aria-label': 'Search a place', onclick: openMapSearch }, [
-    el('span', { class: 'map-search-ico', text: '⌕' }),
+    el('img', { class: 'map-search-img', src: '/icons/search-mango.svg', alt: '' }),
   ]);
   // The bar sits ABOVE the map (normal flow), not overlaid on the tiles —
   // chips stop covering the viewport and wrap freely on narrow screens.

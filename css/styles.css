@@ -94,6 +94,8 @@ button { cursor: pointer; }
 
 /* hub board: mode-filter chips + favourite toggle, sticky above the rows */
 .sched-daychips { margin: 2px 0 10px; }
+.sched-pick { display: inline-flex; align-items: center; gap: 5px; }
+.chip-cal-img { width: 17px; height: 17px; display: block; }
 .hub-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin: 2px 0 12px; flex-wrap: wrap; }
 .hub-chips { display: inline-flex; gap: 6px; }
 .chip-btn {
@@ -726,12 +728,18 @@ body { font-size: 1rem; }
   backdrop-filter: blur(6px); white-space: nowrap;
 }
 .map-chip .mode-img-sm { width: 16px; height: 16px; }
-.map-chip .chip-hub-glyph { font-size: 14px; line-height: 1; }
+/* Hubs chip = a miniature hub pin: mango disc with the mango train inside */
+.map-chip .chip-hub-glyph {
+  width: 17px; height: 17px; border-radius: 50%;
+  background: var(--mango, #ffb454);
+  display: inline-flex; align-items: center; justify-content: center;
+}
+.map-chip .chip-hub-glyph img { width: 12px; height: 12px; object-fit: contain; }
 .map-chip:not(.on) { opacity: 0.5; }
 .map-chip.on { border-color: var(--mango, #ffb454); }
 /* icon-only chip must read at the same visual weight/height as its neighbours */
-.map-search-btn { color: #e7ecf3; padding: 4px 10px; }
-.map-search-ico { font-size: 1.3rem; line-height: 20px; font-weight: 700; }
+.map-search-btn { color: #e7ecf3; padding: 5px 8px; }
+.map-search-img { width: 19px; height: 19px; display: block; }
 
 /* #4 Place-search sheet */
 .map-search-body { display: flex; flex-direction: column; gap: 10px; padding: 4px 2px 8px; }
@@ -792,12 +800,13 @@ body { font-size: 1rem; }
 .hub-pin { background: none; border: none; }
 .hub-pin .hub-glyph {
   display: flex; align-items: center; justify-content: center;
-  width: 40px; height: 40px; font-size: 20px; line-height: 1;
+  width: 40px; height: 40px;
   background: var(--mango, #ffb454);
   border: 2px solid rgba(22,24,30,0.85);
   border-radius: 50%;
   box-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
+.hub-pin .hub-glyph img { width: 24px; height: 24px; object-fit: contain; }
 /* favourited stops = a bold GOLD STAR with the stop icon on top (#D) */
 .fav-pin .fav-star {
   position: absolute; inset: 0; width: 38px; height: 38px;
