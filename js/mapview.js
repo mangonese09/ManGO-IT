@@ -258,11 +258,14 @@ async function loadVisibleStops() {
   try {
     const { data } = await api.mapStops(c.lat, c.lng, r, clustered, cellM);
     if (seq !== loadSeq || !map || highlightActive) return;
-    renderHubs(data.hubs || []);           // always, both zoom modes, on top
-    if (clustered) { renderClusters(data.clusters || []); return; }
-    renderIndividual(data.stops || [], c, r);
+    lastView = { clustered, hubs: data.hubs || [], clusters: data.clusters || [], stops: data.stops || [], c, r };
+    renderHubs(lastView.hubs);             // always, both zoom modes, on top
+    if (clustered) { renderClusters(lastView.clusters); return; }
+    renderIndividual(lastView.stops, c, r);
   } catch { /* pan on — stale markers beat an error state */ }
 }
+// last successful payload — filter toggles re-render from this in place
+let lastView = null;
 
 const favKeys = () => new Set(getFavStops().map((f) => f.key));
 
@@ -279,6 +282,7 @@ function renderIndividual(all, c, r) {
     const meta = { id: s.id, kind: s.kind, ci: s.kind === 'coach' ? Number(s.id.slice(1)) : null, name: s.name, stopId: s.kind === 'transit' ? s.id : null, lat: s.lat, lon: s.lon, members: s.members || null };
     const m = window.L.marker(ll, { icon: stopIcon((s.modes || [])[0], s.kind, s.merged > 1), keyboard: false }).addTo(map);
     m.meta = meta;
+    m.bucket = stopBucket(s); // filter toggles prune by family without a refetch
     m.bindTooltip(displayName(s.name), { direction: 'top', offset: [0, -14] });
     m.on('click', () => openStopRoutes(meta));
     markers.set(s.id, m);
@@ -322,8 +326,19 @@ function renderClusters(clusters) {
   }
 }
 
-// Toggling a filter changes which pins belong on the map — drop them and reload.
-function applyFilter() { clearIndividual(); clearClusters(); loadVisibleStops(); }
+// Toggling a filter is an IN-PLACE show/hide over the already-loaded payload:
+// remove only the markers of families switched off, re-add re-enabled ones from
+// lastView (the renderers reconcile by id). No clear-everything, no refetch —
+// the old clear+reload flashed the whole map blank for a network round-trip.
+function applyFilter() {
+  if (!lastView) { loadVisibleStops(); return; }
+  for (const [id, m] of markers) {
+    if (m.bucket && !mapFilter[m.bucket]) { m.remove(); markers.delete(id); }
+  }
+  renderHubs(lastView.hubs);
+  if (lastView.clustered) renderClusters(lastView.clusters);
+  else renderIndividual(lastView.stops, lastView.c, lastView.r);
+}
 
 // ── CLICK-TO-HIGHLIGHT ROUTES ──
 const ROUTE_COLORS = { COACH: '#ffb454', BUS: '#46c878', RAIL: '#4a90e2', REGIONAL_RAIL: '#4a90e2',
