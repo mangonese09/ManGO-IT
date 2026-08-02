@@ -12,7 +12,7 @@ const ROOT = path.join(__dirname, '..');
 
 const TRANSITOUS = 'https://api.transitous.org';
 const VT = 'http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno';
-const UA = 'ManGO-IT/0.30.1 (+https://it.mangonese.dev; miconsig@gmail.com)';
+const UA = 'ManGO-IT/0.31.0 (+https://it.mangonese.dev; miconsig@gmail.com)';
 
 // per-day upstream request counter (Transitous asks consumers to know their volume)
 const dayCounts = {};
@@ -795,20 +795,17 @@ function clusterAreaName(names) {
 // on the map. A tap fans out to rail + coach + urban buses within radiusM and
 // merges the boards (see /api/hub-board). Coords are approximate — fine for a
 // ~400–500m hub radius. Airports are limited to the 4 mainland-served fields.
+// Curated 2026-08-01 (user review of live boards): hubs are the MAJOR gateways
+// only — Palermo/Catania stations+airports and the Messina rail gateway. The
+// provincial stations (Siracusa, Ragusa, Agrigento, Caltanissetta, Enna,
+// Trapani) and minor airports (Trapani-Birgi, Comiso) returned thin or empty
+// boards and diluted the concept; their stops render as normal pins instead.
 const TRANSIT_HUBS = [
   { id: 'palermo-airport', name: 'Aeroporto Falcone Borsellino', kind: 'airport', lat: 38.1815, lon: 13.0995, radiusM: 500 },
   { id: 'catania-airport', name: 'Aeroporto Catania Fontanarossa', kind: 'airport', lat: 37.4668, lon: 15.0664, radiusM: 500 },
-  { id: 'trapani-airport', name: 'Aeroporto Trapani-Birgi', kind: 'airport', lat: 37.9114, lon: 12.4880, radiusM: 500 },
-  { id: 'comiso-airport', name: 'Aeroporto di Comiso', kind: 'airport', lat: 36.9946, lon: 14.6072, radiusM: 500 },
   { id: 'palermo-centrale', name: 'Palermo Centrale', kind: 'rail', lat: 38.1103, lon: 13.3680, radiusM: 400, railName: 'PALERMO CENTRALE' },
   { id: 'catania-centrale', name: 'Catania Centrale', kind: 'rail', lat: 37.5100, lon: 15.0980, radiusM: 400, railName: 'CATANIA CENTRALE' },
   { id: 'messina-centrale', name: 'Messina Centrale', kind: 'rail', lat: 38.1780, lon: 15.5530, radiusM: 400, railName: 'MESSINA CENTRALE' },
-  { id: 'siracusa', name: 'Siracusa', kind: 'rail', lat: 37.0680, lon: 15.2790, radiusM: 400, railName: 'SIRACUSA' },
-  { id: 'ragusa', name: 'Ragusa', kind: 'rail', lat: 36.9250, lon: 14.7290, radiusM: 400, railName: 'RAGUSA' },
-  { id: 'agrigento-centrale', name: 'Agrigento Centrale', kind: 'rail', lat: 37.3110, lon: 13.5770, radiusM: 400, railName: 'AGRIGENTO CENTRALE' },
-  { id: 'caltanissetta-centrale', name: 'Caltanissetta Centrale', kind: 'rail', lat: 37.4880, lon: 14.0630, radiusM: 400, railName: 'CALTANISSETTA CENTRALE' },
-  { id: 'enna', name: 'Enna', kind: 'rail', lat: 37.5620, lon: 14.2880, radiusM: 400, railName: 'ENNA' },
-  { id: 'trapani', name: 'Trapani', kind: 'rail', lat: 38.0170, lon: 12.5370, radiusM: 400, railName: 'TRAPANI' },
 ];
 function hubsInBbox(minLat, minLon, maxLat, maxLon) {
   return TRANSIT_HUBS.filter((h) => h.lat >= minLat && h.lat <= maxLat && h.lon >= minLon && h.lon <= maxLon);
@@ -1050,7 +1047,7 @@ async function railRows(hub) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.30.1', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.31.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)

@@ -173,9 +173,11 @@ export async function openHubBoard(hub) {
   body.appendChild(el('div', { class: 'loading', text: 'Loading departures…' }));
   openSheet(body, { title: displayName(hub.name) });
   let departures = [];
+  let hubKind = hub.subkind || null; // 'rail' | 'airport'
   try {
     const { data } = await api.hubBoard(hub.hubId);
     departures = data.departures || [];
+    hubKind = data.hub?.kind || hubKind;
   } catch {
     body.innerHTML = '';
     body.appendChild(el('p', { class: 'muted', text: 'Could not load departures — check connectivity and retry.' }));
@@ -217,12 +219,13 @@ export async function openHubBoard(hub) {
   };
   paintFav();
 
-  // Only offer the mode chips that this hub actually has (an airport shows no
-  // Trains chip; a rail-only stop shows no Coaches chip), and only when there's
-  // more than one mode to split.
+  // Offer the mode chips this hub can have: a RAIL hub always gets the Trains
+  // chip (even late at night when no train rows are up — the filter shouldn't
+  // come and go with the timetable); airports get it only when trains actually
+  // appear. City/Coaches chips follow what the board currently carries.
   const present = new Set(departures.map((r) => r.mode));
   const chipDefs = [['all', 'All']];
-  if (present.has('RAIL')) chipDefs.push(['rail', 'Trains']);
+  if (hubKind === 'rail' || present.has('RAIL')) chipDefs.push(['rail', 'Trains']);
   if (present.has('BUS')) chipDefs.push(['city', 'City']);
   if (present.has('COACH')) chipDefs.push(['coach', 'Coaches']);
   const chipRow = chipDefs.length > 2 ? el('div', { class: 'hub-chips' }, chipDefs.map(([k, t]) => chip(k, t))) : null;
