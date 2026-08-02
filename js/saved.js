@@ -265,14 +265,18 @@ export async function openHubBoard(hub) {
     return;
   }
 
-  let filter = 'all'; // all | rail | city | coach
-  const MODE_OF = { rail: 'RAIL', city: 'BUS', coach: 'COACH' };
-  const inFilter = (r) => filter === 'all' || r.mode === MODE_OF[filter];
+  // Same filter model as the main map: independent mango-icon toggle chips
+  // (all on by default) + the mango search lens filtering by destination text.
+  const fam = { rail: true, city: true, coach: true };
+  let query = '';
+  const FAM_OF = { RAIL: 'rail', BUS: 'city', COACH: 'coach' };
+  const inFilter = (r) => fam[FAM_OF[r.mode] || 'city'] &&
+    (!query || `${r.line || ''} ${r.headsign || ''} ${r.stopName || ''}`.toLowerCase().includes(query));
   const list = el('div', { class: 'hub-rows' });
   function renderRows() {
     list.innerHTML = '';
     const rows = departures.filter(inFilter);
-    if (!rows.length) { list.appendChild(el('p', { class: 'muted', text: 'No upcoming departures.' })); return; }
+    if (!rows.length) { list.appendChild(el('p', { class: 'muted', text: query ? 'No departures match.' : 'No upcoming departures.' })); return; }
     for (const r of rows) {
       const line = (r.line || '').trim() || modeMeta(r.mode).label;
       const head = displayName((r.headsign || '').trim());
@@ -286,11 +290,6 @@ export async function openHubBoard(hub) {
     }
   }
 
-  const chip = (key, text) => el('button', {
-    class: `chip-btn hub-chip${filter === key ? ' is-active' : ''}`, text,
-    onclick: (e) => { filter = key; for (const b of e.currentTarget.parentNode.children) b.classList.toggle('is-active', b === e.currentTarget); renderRows(); },
-  });
-
   const favBtn = el('button', { class: 'chip-btn hub-fav' });
   const paintFav = () => { const on = isFavStop(favK); favBtn.textContent = on ? '★ Saved' : '☆ Save'; favBtn.classList.toggle('pinned', on); };
   favBtn.onclick = () => {
@@ -300,19 +299,41 @@ export async function openHubBoard(hub) {
   };
   paintFav();
 
-  // Offer the mode chips this hub can have: a RAIL hub always gets the Trains
-  // chip (even late at night when no train rows are up — the filter shouldn't
-  // come and go with the timetable); airports get it only when trains actually
-  // appear. City/Coaches chips follow what the board currently carries.
+  // Map-style toggle chips (mango icons, .on ring, dim when off). A RAIL hub
+  // always gets the Trains chip (the filter shouldn't come and go with the
+  // timetable); airports get it only when trains actually appear.
   const present = new Set(departures.map((r) => r.mode));
-  const chipDefs = [['all', 'All']];
-  if (hubKind === 'rail' || present.has('RAIL')) chipDefs.push(['rail', 'Trains']);
-  if (present.has('BUS')) chipDefs.push(['city', 'City']);
-  if (present.has('COACH')) chipDefs.push(['coach', 'Coaches']);
-  const chipRow = chipDefs.length > 2 ? el('div', { class: 'hub-chips' }, chipDefs.map(([k, t]) => chip(k, t))) : null;
+  const chipRow = el('div', { class: 'hub-chips' });
+  const mkFam = (key, mode, label) => {
+    const b = el('button', {
+      class: 'map-chip on',
+      onclick: () => { fam[key] = !fam[key]; b.classList.toggle('on', fam[key]); renderRows(); },
+    }, [modeIcon(mode, 'mode-img mode-img-sm'), el('span', { text: label })]);
+    return b;
+  };
+  // mango search lens — filter this board by destination text
+  const searchInput = el('input', {
+    class: 'map-search-input hub-search', type: 'search',
+    placeholder: 'Filter by destination…', autocomplete: 'off',
+  });
+  searchInput.hidden = true;
+  searchInput.addEventListener('input', () => { query = searchInput.value.trim().toLowerCase(); renderRows(); });
+  const searchBtn = el('button', {
+    class: 'map-chip map-search-btn', 'aria-label': 'Search this board',
+    onclick: () => {
+      searchInput.hidden = !searchInput.hidden;
+      if (!searchInput.hidden) searchInput.focus();
+      else { searchInput.value = ''; query = ''; renderRows(); }
+    },
+  }, [el('img', { class: 'map-search-img', src: '/icons/search-mango.svg', alt: '', width: '19', height: '19' })]);
+  chipRow.appendChild(searchBtn);
+  if (hubKind === 'rail' || present.has('RAIL')) chipRow.appendChild(mkFam('rail', 'RAIL', 'Trains'));
+  if (present.has('BUS')) chipRow.appendChild(mkFam('city', 'BUS', 'City'));
+  if (present.has('COACH')) chipRow.appendChild(mkFam('coach', 'COACH', 'Coaches'));
 
   body.innerHTML = '';
   body.appendChild(el('div', { class: 'hub-toolbar' }, [chipRow, favBtn]));
+  body.appendChild(searchInput);
   body.appendChild(list);
   renderRows();
 }
