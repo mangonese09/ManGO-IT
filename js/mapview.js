@@ -638,7 +638,7 @@ async function initMap(pos) {
 // #2 filter chips + #4 place search, as a top-left in-map overlay.
 const MAP_CHIPS = [
   { key: 'rail', label: 'Trains', icon: 'RAIL' },
-  { key: 'city', label: 'City buses', icon: 'BUS' },
+  { key: 'city', label: 'City', icon: 'BUS' }, // matches the hub sheet's chip; icon carries "bus"
   { key: 'coach', label: 'Coaches', icon: 'COACH' },
   { key: 'hub', label: 'Hubs', icon: null }, // 🚉 glyph, matches the hub pin
 ];
@@ -661,8 +661,9 @@ function buildControls() {
     }, [glyph, el('span', { text: label })]);
     return chip;
   };
+  // icon-only search keeps the whole bar to one line on a 390px phone
   const search = el('button', { class: 'map-chip map-search-btn', 'aria-label': 'Search a place', onclick: openMapSearch }, [
-    el('span', { class: 'map-search-ico', text: '⌕' }), el('span', { text: 'Search' }),
+    el('span', { class: 'map-search-ico', text: '⌕' }),
   ]);
   // The bar sits ABOVE the map (normal flow), not overlaid on the tiles —
   // chips stop covering the viewport and wrap freely on narrow screens.
