@@ -697,9 +697,9 @@
   "note": "audit F-2: was 30km inland; station square"
  },
  "CATANIA (PIAZZA GIOVANNI XXIII°)": {
-  "lat": 37.5089,
-  "lon": 15.0864,
-  "note": "audit F-2: was 30km inland; station square"
+  "lat": 37.506,
+  "lon": 15.0987,
+  "note": "hub audit 2026-08-02: the station square in front of Catania Centrale - was 1.2km W near Via Etnea"
  },
  "CATANIA P.ZA GIOVANNI XXIII)": {
   "lat": 37.5089,
@@ -1128,9 +1128,9 @@
   "note": "Prestia stop (Nominatim matched wrong town; authoritative Palermo/Punta Raisi coord)"
  },
  "AEROPORTO (FALCONE BORSELLINO)": {
-  "lat": 38.1815,
-  "lon": 13.0995,
-  "note": "Prestia stop (Nominatim matched wrong town; authoritative Palermo/Punta Raisi coord)"
+  "lat": 38.1878,
+  "lon": 13.1085,
+  "note": "hub audit 2026-08-02: Prestia stop was on the old hub pin 1.1km SW of the terminal; forecourt canonical"
  },
  "MONDELLO (PARCHEGGIO GALATEA)": {
   "lat": 38.2005,
@@ -1176,5 +1176,35 @@
   "lat": 37.4704,
   "lon": 15.0674,
   "note": "2026-08-02: Catania Fontanarossa bus-terminal forecourt (was ~1km+ north near airfield centroid/entrance; the 500m hub-board radius missed every departure at this stop — SAIS Trasporti Agrigento runs, Etna Taormina line, Giuntabus Messina line)"
+ },
+ "AEREOPORTO FONTANAROSSA": {
+  "lat": 37.4704,
+  "lon": 15.0674,
+  "note": "hub audit 2026-08-02: misspelled variant was 3.8km out"
+ },
+ "AEROPORTO CATANIA FONTANAROSSA": {
+  "lat": 37.4704,
+  "lon": 15.0674,
+  "note": "hub audit 2026-08-02: was on the town-precision airfield pin 1.1km N"
+ },
+ "AEROPORTO CATANIA TERMINAL": {
+  "lat": 37.4704,
+  "lon": 15.0674,
+  "note": "hub audit 2026-08-02: was 10.7km out"
+ },
+ "AEROPORTO FONT. (TERMINAL ARRIVI\\PARTENZE)": {
+  "lat": 37.4704,
+  "lon": 15.0674,
+  "note": "hub audit 2026-08-02: terminal stop was 1.1km S of the forecourt"
+ },
+ "AEREOPORTO FALCONE E BORSELLINO": {
+  "lat": 38.1878,
+  "lon": 13.1085,
+  "note": "hub audit 2026-08-02: was 10.4km out"
+ },
+ "CATANIA (VIA D'AMICO)": {
+  "lat": 37.5079,
+  "lon": 15.0993,
+  "note": "hub audit 2026-08-02: the Via D Amico coach terminal beside Catania Centrale - Nominatim street-matched a Via D Amico in the Giarre area 17.5km NE (street precision, passed the 25km city gate); was masked while the airport stop was also misplaced"
  }
 }
