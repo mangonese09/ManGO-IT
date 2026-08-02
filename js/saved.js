@@ -254,11 +254,9 @@ export async function openHubBoard(hub) {
   body.appendChild(el('div', { class: 'loading', text: 'Loading departures…' }));
   openSheet(body, { title: displayName(hub.name) });
   let departures = [];
-  let hubKind = hub.subkind || null; // 'rail' | 'airport'
   try {
     const { data } = await api.hubBoard(hub.hubId);
     departures = data.departures || [];
-    hubKind = data.hub?.kind || hubKind;
   } catch {
     body.innerHTML = '';
     body.appendChild(el('p', { class: 'muted', text: 'Could not load departures — check connectivity and retry.' }));
@@ -299,10 +297,9 @@ export async function openHubBoard(hub) {
   };
   paintFav();
 
-  // Map-style toggle chips (mango icons, .on ring, dim when off). A RAIL hub
-  // always gets the Trains chip (the filter shouldn't come and go with the
-  // timetable); airports get it only when trains actually appear.
-  const present = new Set(departures.map((r) => r.mode));
+  // Map-style toggle chips (mango icons, .on ring, dim when off). Every hub —
+  // airport or station — always gets all three chips, matching the map top-bar;
+  // filters shouldn't come and go with the timetable.
   const chipRow = el('div', { class: 'hub-chips' });
   const mkFam = (key, mode, label) => {
     const b = el('button', {
@@ -327,9 +324,9 @@ export async function openHubBoard(hub) {
     },
   }, [el('img', { class: 'map-search-img', src: '/icons/search-mango.svg', alt: '', width: '19', height: '19' })]);
   chipRow.appendChild(searchBtn);
-  if (hubKind === 'rail' || present.has('RAIL')) chipRow.appendChild(mkFam('rail', 'RAIL', 'Trains'));
-  if (present.has('BUS')) chipRow.appendChild(mkFam('city', 'BUS', 'City'));
-  if (present.has('COACH')) chipRow.appendChild(mkFam('coach', 'COACH', 'Coaches'));
+  chipRow.appendChild(mkFam('rail', 'RAIL', 'Trains'));
+  chipRow.appendChild(mkFam('city', 'BUS', 'City'));
+  chipRow.appendChild(mkFam('coach', 'COACH', 'Coaches'));
 
   body.innerHTML = '';
   body.appendChild(el('div', { class: 'hub-toolbar' }, [chipRow, favBtn]));
