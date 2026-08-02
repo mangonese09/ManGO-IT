@@ -183,7 +183,7 @@ export async function openStopSchedule(s) {
         note = forDate ? 'Network schedule for that day — no live status.'
           : isRailStop(s)
             ? 'No live train data right now — showing what the network schedule knows.'
-            : 'Next departures from the live network.';
+            : 'Live departures.';
       } else {
         const { data } = await api.coachBoard(s.lat, s.lon, 300, true, forDate);
         if (forDate !== activeDate) return;
@@ -192,6 +192,7 @@ export async function openStopSchedule(s) {
           label: routeLabel(displayName(r.route), displayName(r.headsign)),
           dir: displayName(r.headsign),
           past: !forDate && r.depMin < romeNowMin(),
+          depMin: r.depMin,
         }));
         note = forDate ? 'Complete coach timetable for that day — scheduled times, no live status.'
           : 'Complete coach timetable for today, including already-departed runs (dimmed) — scheduled times, no live status.';
@@ -205,12 +206,24 @@ export async function openStopSchedule(s) {
       // Group by direction (headsign): a parent/bidirectional stop returns BOTH
       // ways of a line; interleaved by time it reads as if you could board
       // either here — split into per-direction sections instead.
+      // Right-aligned countdown on today's upcoming rows — same readout as the
+      // hub board, so "how soon" doesn't require clock math against Rome time.
+      const rowCountdown = (r) => {
+        if (forDate || r.past || r.cancelled) return '';
+        if (r.iso) return isOtherRomeDay(r.iso) ? '' : countdownText(r.iso);
+        if (r.depMin == null) return '';
+        const diff = r.depMin - romeNowMin();
+        if (diff < -2) return '';
+        if (diff <= 1) return 'now';
+        return diff < 60 ? `${diff} min` : `${Math.floor(diff / 60)}h ${diff % 60}m`;
+      };
       const rowEl = (r, short) => el('div', { class: `sched-row${r.past ? ' sched-past' : ''}${r.cancelled ? ' sched-cancelled' : ''}` }, [
         el('strong', { class: 'sched-time', text: r.time }),
         modeIcon(r.mode, 'mode-img mode-img-sm'),
         el('span', { class: 'sched-label', text: short ? r.label.split(' → ')[0] : r.label }),
         r.live ? el('span', { class: 'badge badge-live', text: 'live' }) : null,
         r.cancelled ? el('span', { class: 'badge badge-cancel', text: 'CANCELLED' }) : null,
+        el('span', { class: 'dep-count', text: rowCountdown(r) }),
       ]);
       // The selected day renders grouped by direction; on the Today view,
       // departures on LATER days (the whole tail at a one-train-a-day stop)
@@ -252,7 +265,19 @@ export async function openHubBoard(hub) {
   const favK = `hub:${hub.hubId}`;
   const body = el('div', { class: 'iti-detail sched-sheet hub-sheet' });
   body.appendChild(el('div', { class: 'loading', text: 'Loading departures…' }));
-  openSheet(body, { title: displayName(hub.name) });
+  const overlay = openSheet(body, { title: displayName(hub.name) });
+  // ★ save lives in the sheet HEAD beside ✕ (icon-only) — as a toolbar button
+  // it pushed the chip row past 390px and wrapped onto a lonely second line.
+  const favBtn = el('button', { class: 'hub-fav-head', 'aria-label': 'Save this hub' });
+  const paintFav = () => { const on = isFavStop(favK); favBtn.textContent = on ? '★' : '☆'; favBtn.classList.toggle('pinned', on); };
+  favBtn.onclick = () => {
+    if (isFavStop(favK)) removeFavStop(favK);
+    else addFavStop({ key: favK, hubId: hub.hubId, name: hub.name, kind: 'hub', iconMode: hub.subkind === 'airport' ? 'BUS' : 'RAIL', stopId: null, lat: hub.lat, lon: hub.lon });
+    paintFav();
+  };
+  paintFav();
+  const head = overlay.querySelector('.sheet-head');
+  head.insertBefore(favBtn, head.querySelector('.sheet-close'));
   let departures = [];
   try {
     const { data } = await api.hubBoard(hub.hubId);
@@ -313,26 +338,25 @@ export async function openHubBoard(hub) {
       if (hit && !`${r.headsign || ''} ${r.stopName || ''}`.toLowerCase().includes(query)) {
         lbl.appendChild(el('span', { class: 'muted', text: ` · calls at ${displayName(hit)}` }));
       }
-      list.appendChild(el('div', { class: 'sched-row' }, [
+      const cells = [
         el('strong', { class: 'sched-time', text: romeTime(r.timeISO) }),
         modeIcon(r.mode, 'mode-img mode-img-sm'),
         lbl,
         r.realtime ? el('span', { class: 'badge badge-live', text: 'live' }) : null,
         el('span', { class: 'dep-count', text: countdownText(r.timeISO) }),
-      ]));
+      ];
+      // train rows tap through to live status (delay, last seen) — VT already
+      // resolves it server-side; bus/coach rows have no live source to open
+      if (r.mode === 'RAIL' && r.trainNumber) {
+        cells.push(el('span', { class: 'dep-chevron', text: '›' }));
+        list.appendChild(el('button', { class: 'sched-row sched-row-btn', onclick: () => openTrainLive(r) }, cells));
+      } else {
+        list.appendChild(el('div', { class: 'sched-row' }, cells));
+      }
     }
     if (rows.length > MAX) list.appendChild(el('p', { class: 'muted', text: `+${rows.length - MAX} more later today` }));
     if (searching) list.appendChild(el('p', { class: 'muted', text: 'Searching the rest of today…' }));
   }
-
-  const favBtn = el('button', { class: 'chip-btn hub-fav' });
-  const paintFav = () => { const on = isFavStop(favK); favBtn.textContent = on ? '★ Saved' : '☆ Save'; favBtn.classList.toggle('pinned', on); };
-  favBtn.onclick = () => {
-    if (isFavStop(favK)) removeFavStop(favK);
-    else addFavStop({ key: favK, hubId: hub.hubId, name: hub.name, kind: 'hub', iconMode: hub.subkind === 'airport' ? 'BUS' : 'RAIL', stopId: null, lat: hub.lat, lon: hub.lon });
-    paintFav();
-  };
-  paintFav();
 
   // Map-style toggle chips (mango icons, .on ring, dim when off). Every hub —
   // airport or station — always gets all three chips, matching the map top-bar;
@@ -370,10 +394,40 @@ export async function openHubBoard(hub) {
   chipRow.appendChild(mkFam('coach', 'COACH', 'Coaches'));
 
   body.innerHTML = '';
-  body.appendChild(el('div', { class: 'hub-toolbar' }, [chipRow, favBtn]));
+  body.appendChild(el('div', { class: 'hub-toolbar' }, [chipRow]));
   body.appendChild(searchInput);
   body.appendChild(list);
   renderRows();
+}
+
+// Live status for one train off a hub board row — number, delay, last seen.
+async function openTrainLive(r) {
+  const body = el('div', { class: 'iti-detail train-live' });
+  body.appendChild(el('div', { class: 'loading', text: 'Checking live status…' }));
+  openSheet(body, { title: `${(r.line || '').trim() || 'Train'} → ${displayName((r.headsign || '').trim())}` });
+  try {
+    const { data } = await api.vtLive(r.trainNumber);
+    body.innerHTML = '';
+    if (!data || !data.live) {
+      body.appendChild(el('p', { class: 'muted', text: 'No live data for this train right now — it may not have departed yet.' }));
+      return;
+    }
+    if (data.cancelled) body.appendChild(el('p', {}, [el('span', { class: 'badge badge-cancel', text: 'CANCELLED' })]));
+    const d = vtDelay(data);
+    body.appendChild(el('p', { class: `train-live-delay ${d.cls}`, text:
+      data.delayMin == null ? 'No delay reported yet.'
+        : data.delayMin > 0 ? `Running ${data.delayMin} min late.`
+          : data.delayMin < 0 ? `Running ${-data.delayMin} min early.` : 'On time.' }));
+    if (data.lastSeenStation) {
+      body.appendChild(el('p', { class: 'muted', text: `Last seen at ${displayName(data.lastSeenStation)}${data.lastSeenAtMs ? ` (${romeTime(data.lastSeenAtMs)})` : ''}.` }));
+    }
+    if (data.origin || data.destination) {
+      body.appendChild(el('p', { class: 'muted', text: `${displayName(data.origin || '?')} → ${displayName(data.destination || '?')} · #${data.trainNumber}` }));
+    }
+  } catch {
+    body.innerHTML = '';
+    body.appendChild(el('p', { class: 'muted', text: 'Could not reach live tracking — check connectivity and retry.' }));
+  }
 }
 
 // Delay → { text, cls }. Positive = late (amber), negative = early, 0 = on time.

@@ -241,8 +241,29 @@ function itineraryAllowed(it) {
   return true;
 }
 
+// What a geocode result IS (icon + human kind) — shared by Home suggestions
+// and the Map tab's place search so both surfaces read identically.
+export function classifySuggestion(r) {
+  let iconEl = placeIcon('pin');
+  let kind = '';
+  if (r.type === 'STOP') {
+    const m = r.modes || [];
+    if (m.some((x) => /RAIL|LONG_DISTANCE/.test(x || ''))) { iconEl = modeIcon('RAIL'); kind = 'train station'; }
+    else if (m.some((x) => /METRO|SUBWAY/.test(x || ''))) { iconEl = modeIcon('METRO'); kind = 'metro station'; }
+    else if (m.some((x) => /TRAM/.test(x || ''))) { iconEl = modeIcon('TRAM'); kind = 'tram stop'; }
+    else { iconEl = modeIcon('BUS'); kind = 'city bus stop'; }
+  } else if (r.type === 'COACH_STOP') {
+    iconEl = modeIcon('COACH'); kind = 'coach stop';
+  } else if (/^(city|town|village|hamlet)/.test(r.category || '') || (!r.category && r.type === 'PLACE')) {
+    iconEl = el('span', { class: 'mode-emoji', text: '🏘️' }); kind = 'town';
+  } else if (r.type === 'ADDRESS' || /^(via|viale|corso|salita|piazza)\b/i.test(r.name)) {
+    kind = 'address';
+  }
+  return { iconEl, kind };
+}
+
 // star a stop/station straight from the Home suggestions -> Saved favorites
-function suggestStar(r, kind) {
+export function suggestStar(r, kind) {
   const key = r.type === 'STOP' && r.id ? r.id : `${r.lat.toFixed(5)},${r.lon.toFixed(5)}`;
   const isFav = () => getFavStops().some((f) => f.key === key);
   const star = el('span', {
@@ -268,7 +289,7 @@ function suggestStar(r, kind) {
 
 // Star for a PLACE result (town / address) — saves a trip-endpoint favourite,
 // distinct from a stop's departures board.
-function placeStar(r) {
+export function placeStar(r) {
   const key = `${r.lat.toFixed(5)},${r.lon.toFixed(5)}`;
   const star = el('span', {
     class: `pin-btn suggest-star${isPlace(key) ? ' pinned' : ''}`,
@@ -318,21 +339,7 @@ async function suggest(which, q) {
       // every result states WHAT it is: train station / metro / tram /
       // city bus stop / intercity coach stop / town / address. The neutral
       // default is the mango pin (was a bare red 📌 emoji).
-      let iconEl = placeIcon('pin');
-      let kind = '';
-      if (r.type === 'STOP') {
-        const m = r.modes || [];
-        if (m.some((x) => /RAIL|LONG_DISTANCE/.test(x || ''))) { iconEl = modeIcon('RAIL'); kind = 'train station'; }
-        else if (m.some((x) => /METRO|SUBWAY/.test(x || ''))) { iconEl = modeIcon('METRO'); kind = 'metro station'; }
-        else if (m.some((x) => /TRAM/.test(x || ''))) { iconEl = modeIcon('TRAM'); kind = 'tram stop'; }
-        else { iconEl = modeIcon('BUS'); kind = 'city bus stop'; }
-      } else if (r.type === 'COACH_STOP') {
-        iconEl = modeIcon('COACH'); kind = 'coach stop';
-      } else if (/^(city|town|village|hamlet)/.test(r.category || '') || (!r.category && r.type === 'PLACE')) {
-        iconEl = el('span', { class: 'mode-emoji', text: '🏘️' }); kind = 'town';
-      } else if (r.type === 'ADDRESS' || /^(via|viale|corso|salita|piazza)\b/i.test(r.name)) {
-        kind = 'address';
-      }
+      const { iconEl, kind } = classifySuggestion(r);
       // context line: "what it is · town · province", never just an echo of the name
       const bits = [];
       if (kind) bits.push(kind);

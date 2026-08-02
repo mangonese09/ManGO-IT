@@ -12,6 +12,7 @@ import { displayName, cleanRouteName } from './names.js';
 import { openStopSchedule, openHubBoard } from './saved.js';
 import { isFavStop, addFavStop, removeFavStop, getFavStops } from './store.js';
 import { toast } from './toast.js';
+import { classifySuggestion, suggestStar, placeStar } from './search.js';
 
 // Favourite key — same scheme as Home/Saved: transit stops key by id, coach
 // stops (no stable id) by rounded coords.
@@ -22,8 +23,9 @@ function favKey(o) {
   return sid || `${(+o.lat).toFixed(5)},${(+o.lon).toFixed(5)}`;
 }
 
-const SICILY_CENTER = [37.55, 14.27]; // no-fix fallback: the whole island
-const SICILY_ZOOM = 8;
+// No-fix fallback: frame the WHOLE island (fitBounds, not a fixed center/zoom —
+// the old [37.55,14.27] z8 clipped Messina and left half the frame open sea).
+const SICILY_BOUNDS = [[36.62, 12.35], [38.35, 15.75]];
 const NEAR_ZOOM = 16;
 
 let map = null;
@@ -32,6 +34,8 @@ let tileTheme = null;
 let youMarker = null;
 let leafletPromise = null;
 let hintEl = null;
+let hintDismissed = false; // first successful stop tap retires the hint for good
+let nearestEl = null;      // "Nearest stop: …" chip when the viewport has no pins
 const markers = new Map(); // stopId -> L.Marker
 
 // #2 Pin-family filters. 'rail' = trains/metro/tram, 'city' = urban buses,
@@ -130,25 +134,39 @@ function modeImgSrc(mode) {
   return '/icons/modes/bus.png';
 }
 
-function stopIcon(mode, kind, merged = false) {
+function stopIcon(mode, kind, merged = 0) {
   const src = kind === 'coach' ? '/icons/modes/bus.png' : modeImgSrc(mode);
   // Merged depot pins (several stops folded into one, opening the stop picker)
-  // get a distinct teal disc so it's obvious the tap leads to a choice of stops.
-  const cls = `stop-pin${kind === 'coach' ? ' pin-coach' : ''}${merged ? ' pin-merged' : ''}`;
+  // get a distinct teal disc + a COUNT badge, so "this is several stops" is
+  // legible before tapping (a bare disc read as one stop).
+  const cls = `stop-pin${kind === 'coach' ? ' pin-coach' : ''}${merged > 1 ? ' pin-merged' : ''}`;
+  const badge = merged > 1 ? `<span class="pin-count">${merged}</span>` : '';
   return window.L.divIcon({
     className: cls,
-    html: `<img src="${src}" alt="">`,
+    html: `<img src="${src}" alt="">${badge}`,
     iconSize: [30, 30], iconAnchor: [15, 15],
   });
 }
 
 // A curated transit hub (airport / main station) — one distinct pin that opens
 // the unified multi-mode departures board. Glyph marks airport vs rail.
-function hubIcon(subkind) {
-  const src = subkind === 'airport' ? '/icons/plane-mango.svg' : '/icons/modes/train.png';
+// `labelled` adds a persistent name pill under the disc (mobile has no hover,
+// so an unlabelled 🚉 disc doesn't say WHICH station it is). A grouped entry
+// (several hubs sharing a pin at island zoom) shows a count badge instead.
+function hubEntryIcon(entry, labelled) {
+  if (entry.hubs.length > 1) {
+    return window.L.divIcon({
+      className: 'hub-pin',
+      html: `<span class="hub-glyph"><img src="/icons/modes/train.png" alt="" width="24" height="24"><span class="hub-count">${entry.hubs.length}</span></span>`,
+      iconSize: [40, 40], iconAnchor: [20, 20],
+    });
+  }
+  const h = entry.hubs[0];
+  const src = h.subkind === 'airport' ? '/icons/plane-mango.svg' : '/icons/modes/train.png';
+  const label = labelled ? `<span class="hub-name">${displayName(h.name)}</span>` : '';
   return window.L.divIcon({
     className: 'hub-pin',
-    html: `<span class="hub-glyph"><img src="${src}" alt="" width="24" height="24"></span>`,
+    html: `<span class="hub-glyph"><img src="${src}" alt="" width="24" height="24"></span>${label}`,
     iconSize: [40, 40], iconAnchor: [20, 20],
   });
 }
@@ -169,8 +187,11 @@ function favIcon(mode, kind) {
 // city labels read through; overlapping blobs blend like a heatmap.
 function clusterIcon(count, kind) {
   // Pure heat blob — size (log scale) already encodes density; the count
-  // numbers on top were visual noise (user call, v0.36.1).
-  const d = Math.round(Math.min(74, 30 + Math.log2(count) * 8));
+  // numbers on top were visual noise (user call, v0.36.1). Scaled DOWN as the
+  // map zooms out: at the island view full-size blobs merged into one solid
+  // orange blanket that hid both the density signal and the coastline.
+  const zf = map ? Math.max(0.42, Math.min(1, (map.getZoom() - 5) / 6)) : 1;
+  const d = Math.round(Math.min(74, 30 + Math.log2(count) * 8) * zf);
   return window.L.divIcon({
     className: `cluster-blob cluster-${kind}`,
     html: '',
@@ -222,21 +243,79 @@ function clearClusters() { for (const m of clusterMarkers.values()) m.remove(); 
 // favourites), never clustered or folded into the heat map, and shown at every
 // zoom level. Reconciled by hubId so pans/zooms keep the markers; the Hubs
 // filter chip removes them wholesale.
-const hubMarkers = new Map(); // hubId -> L.Marker
+const hubMarkers = new Map(); // entry key -> L.Marker
+const HUB_GROUP_ZOOM = 9;   // below this, co-located hub pairs share one pin
+const HUB_LABEL_ZOOM = 11;  // at/above this, hub pins carry their name pill
 function renderHubs(hubs) {
   if (!map) return;
   if (!mapFilter.hub) { for (const m of hubMarkers.values()) m.remove(); hubMarkers.clear(); return; }
+  const z = map.getZoom();
+  const labelled = z >= HUB_LABEL_ZOOM;
+  // Island zoom: nearby hubs (Catania station + airport ~6km; at z7 even the
+  // Palermo pair) stack into an unreadable pile — group any hubs that would
+  // sit within ~44 on-screen px into a single pin that opens a picker. The
+  // threshold is measured in PIXELS at the current zoom, so it groups exactly
+  // what would actually overlap. City zoom keeps every hub as its own pin.
+  let entries;
+  if (z < HUB_GROUP_ZOOM) {
+    const sz = map.getSize();
+    const nearPx = map.distance(
+      map.containerPointToLatLng([sz.x / 2, sz.y / 2]),
+      map.containerPointToLatLng([sz.x / 2 + 44, sz.y / 2]),
+    );
+    const groups = [];
+    for (const h of hubs) {
+      const g = groups.find((G) => G.some((x) => map.distance([x.lat, x.lon], [h.lat, h.lon]) < nearPx));
+      if (g) g.push(h); else groups.push([h]);
+    }
+    entries = groups.map((g) => (g.length === 1
+      ? { key: g[0].hubId, hubs: g, lat: g[0].lat, lon: g[0].lon }
+      : { key: 'grp:' + g.map((x) => x.hubId).sort().join('+'), hubs: g,
+          lat: g.reduce((s, x) => s + x.lat, 0) / g.length, lon: g.reduce((s, x) => s + x.lon, 0) / g.length }));
+  } else {
+    entries = hubs.map((h) => ({ key: h.hubId, hubs: [h], lat: h.lat, lon: h.lon }));
+  }
   const keep = new Set();
-  for (const h of hubs) {
-    keep.add(h.hubId);
-    if (hubMarkers.has(h.hubId)) continue;
-    const hubMeta = { hubId: h.hubId, subkind: h.subkind, name: h.name, lat: h.lat, lon: h.lon };
-    const m = window.L.marker([h.lat, h.lon], { icon: hubIcon(h.subkind), keyboard: false, zIndexOffset: 1200 }).addTo(map);
-    m.bindTooltip(displayName(h.name), { direction: 'top', offset: [0, -18] });
-    m.on('click', () => openHubBoard(hubMeta));
-    hubMarkers.set(h.hubId, m);
+  for (const e of entries) {
+    keep.add(e.key);
+    const iconKey = `${e.key}|${labelled}`;
+    const existing = hubMarkers.get(e.key);
+    if (existing) {
+      if (existing.iconKey !== iconKey) { existing.setIcon(hubEntryIcon(e, labelled)); existing.iconKey = iconKey; }
+      continue;
+    }
+    const m = window.L.marker([e.lat, e.lon], { icon: hubEntryIcon(e, labelled), keyboard: false, zIndexOffset: 1200 }).addTo(map);
+    m.iconKey = iconKey;
+    if (e.hubs.length === 1) {
+      const h = e.hubs[0];
+      const hubMeta = { hubId: h.hubId, subkind: h.subkind, name: h.name, lat: h.lat, lon: h.lon };
+      m.bindTooltip(displayName(h.name), { direction: 'top', offset: [0, -18] });
+      m.on('click', () => openHubBoard(hubMeta));
+    } else {
+      m.on('click', () => openHubPicker(e.hubs));
+    }
+    hubMarkers.set(e.key, m);
   }
   for (const [id, m] of hubMarkers) if (!keep.has(id)) { m.remove(); hubMarkers.delete(id); }
+}
+
+// Grouped island-zoom hub pin → pick which hub's board to open.
+function openHubPicker(hubs) {
+  const body = el('div', { class: 'stop-picker' });
+  for (const h of hubs) {
+    body.appendChild(el('button', {
+      class: 'stop-picker-row',
+      onclick: () => openHubBoard({ hubId: h.hubId, subkind: h.subkind, name: h.name, lat: h.lat, lon: h.lon }),
+    }, [
+      el('span', { class: 'sp-icon' }, [el('img', {
+        src: h.subkind === 'airport' ? '/icons/plane-mango.svg' : '/icons/modes/train.png',
+        alt: '', width: '18', height: '18', class: 'mode-img mode-img-sm',
+      })]),
+      el('span', { class: 'sp-name', text: displayName(h.name) }),
+      el('span', { class: 'dep-chevron', text: '›' }),
+    ]));
+  }
+  openSheet(body, { title: 'Transit hubs here' });
 }
 
 let loadSeq = 0;
@@ -281,7 +360,7 @@ function renderIndividual(all, c, r) {
     const ll = pos.get(s.id) || [s.lat, s.lon];
     if (markers.has(s.id)) { markers.get(s.id).setLatLng(ll); continue; }
     const meta = { id: s.id, kind: s.kind, ci: s.kind === 'coach' ? Number(s.id.slice(1)) : null, name: s.name, stopId: s.kind === 'transit' ? s.id : null, lat: s.lat, lon: s.lon, members: s.members || null };
-    const m = window.L.marker(ll, { icon: stopIcon((s.modes || [])[0], s.kind, s.merged > 1), keyboard: false }).addTo(map);
+    const m = window.L.marker(ll, { icon: stopIcon((s.modes || [])[0], s.kind, s.merged || 0), keyboard: false }).addTo(map);
     m.meta = meta;
     m.bucket = stopBucket(s); // filter toggles prune by family without a refetch
     m.bindTooltip(displayName(s.name), { direction: 'top', offset: [0, -14] });
@@ -293,10 +372,36 @@ function renderIndividual(all, c, r) {
     if (keep.has(id)) continue;
     if (map.distance(c, m.getLatLng()) > limit) { m.remove(); markers.delete(id); }
   }
+  updateNearestChip(all);
+}
+
+// At street zoom the viewport is a couple hundred metres wide — it often holds
+// no pins at all, which read as "the map is empty/broken". When nothing is in
+// view, point at the closest loaded stop instead; tapping the chip flies there.
+function updateNearestChip(all) {
+  if (nearestEl) { nearestEl.remove(); nearestEl = null; }
+  if (!map) return;
+  const b = map.getBounds();
+  const anyVisible = [...markers.values(), ...favMarkers.values(), ...hubMarkers.values()]
+    .some((m) => b.contains(m.getLatLng()));
+  const shown = (all || []).filter(stopShown);
+  if (anyVisible || !shown.length) { if (hintEl) hintEl.style.display = ''; return; }
+  const ctr = b.getCenter();
+  const near = shown
+    .map((s) => ({ s, d: map.distance(ctr, [s.lat, s.lon]) }))
+    .sort((a, x) => a.d - x.d)[0];
+  const dist = near.d >= 950 ? `${(near.d / 1000).toFixed(1)} km` : `${Math.round(near.d / 10) * 10} m`;
+  nearestEl = el('button', {
+    class: 'map-hint map-nearest',
+    onclick: () => { focusStop(near.s.lat, near.s.lon); },
+  }, [el('span', { text: `Nearest stop: ${displayName(near.s.name)} · ${dist} ` }), el('span', { class: 'map-nearest-go', text: '→' })]);
+  document.getElementById('map-canvas').appendChild(nearestEl);
+  if (hintEl) hintEl.style.display = 'none'; // one pill at a time
 }
 
 function renderClusters(clusters) {
   clearIndividual();
+  if (nearestEl) { nearestEl.remove(); nearestEl = null; if (hintEl) hintEl.style.display = ''; }
   const fk = favKeys();
   // Reconcile by stable id: singletons key on the stop id, clusters on their
   // absolute-grid id — so pans keep markers but a zoom (new grid) swaps them,
@@ -405,6 +510,7 @@ function focusStop(lat, lon) {
 }
 
 async function openStopRoutes(meta) {
+  hintDismissed = true;
   if (hintEl) hintEl.classList.add('gone');
   focusStop(meta.lat, meta.lon);
   await new Promise((r) => setTimeout(r, 320)); // let the zoom read before the info sheet
@@ -433,6 +539,7 @@ function openStopPicker(meta) {
   body.appendChild(el('p', { class: 'muted stop-picker-note', text:
     'Several stops here — pick one for its departures.' }));
   for (const s of meta.members) {
+    const d = (isFinite(s.lat) && isFinite(s.lon)) ? Math.round(map.distance([meta.lat, meta.lon], [s.lat, s.lon])) : 0;
     body.appendChild(el('button', {
       class: 'stop-picker-row',
       // Stack the departures ON TOP of the picker (don't closeSheet first — its
@@ -440,8 +547,9 @@ function openStopPicker(meta) {
       // opened). Closing the board then returns to this stop list.
       onclick: () => openStopSchedule({ id: s.id, kind: 'transit', stopId: s.id, name: s.name, lat: s.lat, lon: s.lon }),
     }, [
-      el('span', { class: 'sp-icon' }, [modeIcon('BUS', 'mode-img mode-img-sm')]),
+      el('span', { class: 'sp-icon' }, [modeIcon((s.modes || [])[0] || 'BUS', 'mode-img mode-img-sm')]),
       el('span', { class: 'sp-name', text: displayName(s.name) }),
+      d > 30 ? el('span', { class: 'muted sp-dist', text: `${d} m` }) : null,
       el('span', { class: 'dep-chevron', text: '›' }),
     ]));
   }
@@ -699,7 +807,7 @@ async function initMap(pos) {
     map.setView([pos.lat, pos.lon], NEAR_ZOOM);
     showYou(pos);
   } else {
-    map.setView(SICILY_CENTER, SICILY_ZOOM);
+    map.fitBounds(SICILY_BOUNDS, { padding: [12, 12] });
   }
   let moveTimer = null;
   map.on('moveend', () => {
@@ -708,11 +816,22 @@ async function initMap(pos) {
   });
   map.on('click', clearHighlight); // tap the map background to drop a highlight
   buildControls();
-  // Usage hint (bottom, above where the info-bar appears) — fades out after the
-  // first stop tap. Bottom keeps the top-left clear for the search + filters.
-  hintEl = el('div', { class: 'map-hint', text: 'Tap a stop to trace its routes' });
+  // Usage hint (bottom, above where the info-bar appears). Zoom-aware: at the
+  // clustered/heat view there is nothing tappable yet, so it says what to do
+  // ("zoom in"); at pin level it explains the tap. Retires after the first
+  // successful stop tap.
+  hintEl = el('div', { class: 'map-hint' });
   document.getElementById('map-canvas').appendChild(hintEl);
+  updateHint();
+  map.on('zoomend', updateHint);
   loadVisibleStops();
+}
+
+function updateHint() {
+  if (!hintEl || hintDismissed || !map) return;
+  hintEl.textContent = map.getZoom() < CLUSTER_ZOOM
+    ? 'Zoom in to see stops'
+    : 'Tap a stop for departures & routes';
 }
 
 // #2 filter chips + #4 place search, as a top-left in-map overlay.
@@ -777,15 +896,28 @@ function openMapSearch() {
         const { data } = await api.geocode(q);
         if (seq !== mapSearchSeq) return;
         results.innerHTML = '';
-        const rows = (data || []).filter((r) => isFinite(r.lat) && isFinite(r.lon)).slice(0, 8);
+        // Rank exact-name matches first: searching "Taormina" should lead with
+        // the town/station itself, not Catania street stops NAMED after it.
+        const ql = q.toLowerCase();
+        const score = (r) => {
+          const n = (r.name || '').toLowerCase();
+          const nameRank = n === ql ? 0 : n.startsWith(ql) ? 1 : 2;
+          const { kind } = classifySuggestion(r);
+          const kindRank = kind === 'town' ? 0 : kind === 'train station' ? 1 : kind === 'coach stop' ? 2 : 3;
+          return nameRank * 10 + kindRank;
+        };
+        const rows = (data || []).filter((r) => isFinite(r.lat) && isFinite(r.lon))
+          .map((r, i) => ({ r, i, sc: score(r) }))
+          .sort((a, b) => a.sc - b.sc || a.i - b.i)
+          .slice(0, 8).map((x) => x.r);
         if (!rows.length) { results.appendChild(el('div', { class: 'suggest-row suggest-dead muted', text: 'No match' })); return; }
         for (const r of rows) {
-          const kind = r.type === 'COACH_STOP' ? 'coach stop'
-            : r.type === 'STOP' ? ((r.modes || []).some((x) => /RAIL|LONG_DISTANCE/.test(x)) ? 'train station' : 'stop')
-            : (/^(city|town|village|hamlet)/.test(r.category || '') ? 'town' : '');
+          // Same row anatomy as the Home suggestions: mode icon, name,
+          // "what · where" context line, ★ to save.
+          const { iconEl, kind } = classifySuggestion(r);
           const bits = [];
           if (kind) bits.push(kind);
-          if (r.town && r.town.toLowerCase() !== r.name.toLowerCase()) bits.push(displayName(r.town));
+          if (r.town && r.town !== 'Italia' && r.town.toLowerCase() !== r.name.toLowerCase()) bits.push(displayName(r.town));
           if (r.province && r.province !== r.town) bits.push(`prov. ${r.province}`);
           results.appendChild(el('button', {
             class: 'suggest-row map-search-row',
@@ -796,8 +928,11 @@ function openMapSearch() {
               loadVisibleStops();
             },
           }, [
+            el('span', { class: 'suggest-icon' }, [iconEl]),
             el('span', { class: 'suggest-name', text: displayName(r.name) }),
             bits.length ? el('span', { class: 'suggest-area', text: bits.join(' · ') }) : null,
+            (r.type === 'STOP' || r.type === 'COACH_STOP') ? suggestStar(r, kind)
+              : (isFinite(r.lat) && isFinite(r.lon) ? placeStar(r) : null),
           ]));
         }
       } catch {

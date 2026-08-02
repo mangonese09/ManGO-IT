@@ -12,7 +12,7 @@ const ROOT = path.join(__dirname, '..');
 
 const TRANSITOUS = 'https://api.transitous.org';
 const VT = 'http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno';
-const UA = 'ManGO-IT/0.40.1 (+https://it.mangonese.dev; miconsig@gmail.com)';
+const UA = 'ManGO-IT/0.41.1 (+https://it.mangonese.dev; miconsig@gmail.com)';
 
 // per-day upstream request counter (Transitous asks consumers to know their volume)
 const dayCounts = {};
@@ -852,15 +852,16 @@ function clusterStopsByProximity(stops, radiusM = 200) {
     if (claimed.has(seed)) continue;
     claimed.add(seed);
     const modes = new Set(seed.modes || []);
-    // members = the real underlying stops (id + specific name), so the map can
-    // offer a "pick the exact stop" list on a merged depot pin.
-    const members = [{ id: seed.id, name: seed.name, lat: seed.lat, lon: seed.lon }];
+    // members = the real underlying stops (id + specific name + modes), so the
+    // map can offer a "pick the exact stop" list on a merged depot pin with
+    // the right mode icon per row.
+    const members = [{ id: seed.id, name: seed.name, lat: seed.lat, lon: seed.lon, modes: seed.modes || [] }];
     for (const s of byDist) {
       if (claimed.has(s)) continue;
       if (haversineM(seed.lat, seed.lon, s.lat, s.lon) <= radiusM) {
         claimed.add(s);
         for (const md of s.modes || []) modes.add(md);
-        members.push({ id: s.id, name: s.name, lat: s.lat, lon: s.lon });
+        members.push({ id: s.id, name: s.name, lat: s.lat, lon: s.lon, modes: s.modes || [] });
       }
     }
     // Transitous often emits one stop record per DIRECTION, so a cluster can
@@ -1108,7 +1109,7 @@ function afterStation(stops, stationName) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.40.1', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.41.1', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)
