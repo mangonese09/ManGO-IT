@@ -302,10 +302,14 @@ export async function openHubBoard(hub) {
   // filters shouldn't come and go with the timetable.
   const chipRow = el('div', { class: 'hub-chips' });
   const mkFam = (key, mode, label) => {
+    // A family with nothing on the board is greyed out and inert — you can't
+    // filter down to a mode that has no departures to show.
+    const has = departures.some((r) => (FAM_OF[r.mode] || 'city') === key);
     const b = el('button', {
-      class: 'map-chip on',
-      onclick: () => { fam[key] = !fam[key]; b.classList.toggle('on', fam[key]); renderRows(); },
+      class: has ? 'map-chip on' : 'map-chip chip-none',
+      onclick: () => { if (!has) return; fam[key] = !fam[key]; b.classList.toggle('on', fam[key]); renderRows(); },
     }, [modeIcon(mode, 'mode-img mode-img-sm'), el('span', { text: label })]);
+    if (!has) b.disabled = true;
     return b;
   };
   // mango search lens — filter this board by destination text

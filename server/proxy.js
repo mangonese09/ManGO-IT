@@ -12,7 +12,7 @@ const ROOT = path.join(__dirname, '..');
 
 const TRANSITOUS = 'https://api.transitous.org';
 const VT = 'http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno';
-const UA = 'ManGO-IT/0.37.0 (+https://it.mangonese.dev; miconsig@gmail.com)';
+const UA = 'ManGO-IT/0.38.0 (+https://it.mangonese.dev; miconsig@gmail.com)';
 
 // per-day upstream request counter (Transitous asks consumers to know their volume)
 const dayCounts = {};
@@ -801,8 +801,8 @@ function clusterAreaName(names) {
 // Trapani) and minor airports (Trapani-Birgi, Comiso) returned thin or empty
 // boards and diluted the concept; their stops render as normal pins instead.
 const TRANSIT_HUBS = [
-  { id: 'palermo-airport', name: 'Aeroporto Falcone Borsellino', kind: 'airport', lat: 38.1815, lon: 13.0995, radiusM: 500 },
-  { id: 'catania-airport', name: 'Aeroporto Catania Fontanarossa', kind: 'airport', lat: 37.4668, lon: 15.0664, radiusM: 500 },
+  { id: 'palermo-airport', name: 'Aeroporto Falcone Borsellino', kind: 'airport', lat: 38.1815, lon: 13.0995, radiusM: 500, railName: 'PALERMO AEROPORTO' },
+  { id: 'catania-airport', name: 'Aeroporto Catania Fontanarossa', kind: 'airport', lat: 37.4668, lon: 15.0664, radiusM: 500, railName: 'CATANIA AEROPORTO FONTANAROSSA' },
   { id: 'palermo-centrale', name: 'Palermo Centrale', kind: 'rail', lat: 38.1103, lon: 13.3680, radiusM: 400, railName: 'PALERMO CENTRALE' },
   { id: 'catania-centrale', name: 'Catania Centrale', kind: 'rail', lat: 37.5100, lon: 15.0980, radiusM: 400, railName: 'CATANIA CENTRALE' },
   { id: 'messina-centrale', name: 'Messina Centrale', kind: 'rail', lat: 38.1780, lon: 15.5530, radiusM: 400, railName: 'MESSINA CENTRALE' },
@@ -1043,8 +1043,10 @@ async function urbanRows(hub) {
   }))).catch(() => [])));
   return [].concat(...lists);
 }
-// RAIL: live ViaggiaTreno board for the station (rail hubs only). scheduledMs
-// is the reliable epoch; rows without one drop out in mergeDepartures.
+// RAIL: live ViaggiaTreno board for the hub's station (any hub with a railName
+// — both airports have real stations: Fontanarossa on the CT–SR line, Punta
+// Raisi in-terminal). scheduledMs is the reliable epoch; rows without one drop
+// out in mergeDepartures.
 async function railRows(hub) {
   const board = await vtBoardData(hub.railName);
   return (board.departures || []).map((d) => ({
@@ -1056,7 +1058,7 @@ async function railRows(hub) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.37.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.38.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)
@@ -1362,7 +1364,7 @@ const routes = {
     return stoptimesData(stopId, Math.min(Number(q.get('n')) || 6, 20), timeIso);
   },
 
-  // Unified departures board for a curated hub: fan out to VT rail (rail hubs),
+  // Unified departures board for a curated hub: fan out to VT rail (railName),
   // our coach feed, and Transitous urban stops in radius, then merge-sort-cap.
   // Each source is wrapped so one dead upstream never blanks the whole board.
   'GET /api/hub-board': async (q) => {
@@ -1370,7 +1372,7 @@ const routes = {
     if (!hub) throw httpError(404, 'unknown hub');
     const now = Date.now();
     const [rail, coach, urban] = await Promise.all([
-      hub.kind === 'rail' ? railRows(hub).catch(() => []) : Promise.resolve([]),
+      hub.railName ? railRows(hub).catch(() => []) : Promise.resolve([]),
       Promise.resolve().then(() => coachRows(hub)).catch(() => []),
       urbanRows(hub).catch(() => []),
     ]);
