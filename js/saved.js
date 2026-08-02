@@ -92,28 +92,17 @@ function transitLabel(st) {
 // sheet for any nearby stop.
 const isRailStop = (s) => s.stopId && /otherTRENITALIA/i.test(s.stopId);
 
-// The Rome calendar date string (YYYY-MM-DD) for a Date, and chip candidates:
-// Today · Tomorrow · next Sat · next Sun. Sunday IS the festive board in these
-// feeds (festivo service = Sunday service), so no separate "festive" chip —
-// abstract categories would lie anyway (a school-term Tuesday ≠ an August
-// Tuesday); every chip is a CONCRETE date whose calendars resolve honestly.
+// The Rome calendar date string (YYYY-MM-DD) for a Date. Chips are just
+// Today · Tomorrow — any other day comes via the 📅 date picker (each chip is
+// a CONCRETE Rome date so feriale/festivo/scolastico calendars resolve
+// honestly; no abstract weekday/weekend categories).
 const romeDateStr = (d) => new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Rome', year: 'numeric', month: '2-digit', day: '2-digit' }).format(d);
 function scheduleDayChips() {
   const now = new Date();
-  const days = [];
-  for (let i = 0; i < 9 && days.length < 4; i++) {
-    const d = new Date(now.getTime() + i * 86400000);
-    const dow = new Intl.DateTimeFormat('en-US', { timeZone: 'Europe/Rome', weekday: 'short' }).format(d);
-    // Today/Tomorrow carry their ROME weekday — the app runs on Italy time, so
-    // a Chicago Saturday evening is already a Rome Sunday; "Today (Sun)" makes
-    // that visible instead of a baffling Today + separate Sun chip.
-    const label = i === 0 ? `Today (${dow})` : i === 1 ? `Tomorrow (${dow})` : null;
-    if (label) days.push({ date: i === 0 ? null : romeDateStr(d), label, [dow.toLowerCase()]: true });
-    else if ((dow === 'Sat' && !days.some((x) => x.sat)) || (dow === 'Sun' && !days.some((x) => x.sun))) {
-      days.push({ date: romeDateStr(d), label: `${dow} ${new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Rome', day: 'numeric' }).format(d)}`, [dow.toLowerCase()]: true });
-    }
-  }
-  return days;
+  return [
+    { date: null, label: 'Today' },
+    { date: romeDateStr(new Date(now.getTime() + 86400000)), label: 'Tomorrow' },
+  ];
 }
 
 export async function openStopSchedule(s) {
