@@ -12,7 +12,7 @@ const ROOT = path.join(__dirname, '..');
 
 const TRANSITOUS = 'https://api.transitous.org';
 const VT = 'http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno';
-const UA = 'ManGO-IT/0.38.0 (+https://it.mangonese.dev; miconsig@gmail.com)';
+const UA = 'ManGO-IT/0.39.1 (+https://it.mangonese.dev; miconsig@gmail.com)';
 
 // per-day upstream request counter (Transitous asks consumers to know their volume)
 const dayCounts = {};
@@ -253,7 +253,7 @@ function nearTransferStops(idx, at) {
 // Departure board for a COACH stop from our own feed — coach stops have no
 // Transitous stopId until the feed is ingested upstream, but the favorites
 // tab must still show their next departures. days injectable for tests.
-function coachBoard(lat, lon, radius = 300, days = null, all = false) {
+function coachBoard(lat, lon, radius = 300, days = null, all = false, withVia = false) {
   const here = new Map(nearStopIdxs(lat, lon, radius).map((x) => [x.i, x.d]));
   if (!here.size) return { fetchedAt: Date.now(), stopName: null, results: [] };
   const dayList = days || [romeParts(), romeParts(new Date(Date.now() + 86400000))];
@@ -274,6 +274,9 @@ function coachBoard(lat, lon, radius = 300, days = null, all = false) {
           headsign: coachStops[trip.s[trip.s.length - 1][0]].n,
           dep: `${String(Math.floor(min / 60) % 24).padStart(2, '0')}:${String(min % 60).padStart(2, '0')}`,
           depMin: min + dayOff * 1440,
+          // intermediate calls after boarding (terminus excluded — it's the
+          // headsign) so a destination search can match places passed through
+          ...(withVia ? { via: trip.s.slice(k + 1, -1).map(([i]) => coachStops[i].n) } : {}),
         });
         break;                                        // one boarding point per trip
       }
@@ -1019,24 +1022,25 @@ async function vtBoardData(name) {
 // ── HUB-BOARD NORMALIZERS (each returns the common departure row shape) ──
 // COACH: our own feed board around the hub. depMin already folds tomorrow
 // (+1440), so romeInstant gives a DST-safe instant for today OR tomorrow.
-function coachRows(hub) {
-  const { results = [] } = coachBoard(hub.lat, hub.lon, hub.radiusM, null, true);
+function coachRows(hub, withVia = false) {
+  const { results = [] } = coachBoard(hub.lat, hub.lon, hub.radiusM, null, true, withVia);
   const todayIso = romeParts().iso;
   return results.map((r) => ({
     mode: 'COACH', line: r.route, headsign: r.headsign,
     timeISO: romeInstant(todayIso, r.depMin),
     operator: r.operator || null, stopName: r.stopName || hub.name, realtime: false, stopId: null,
+    ...(withVia ? { via: r.via || [] } : {}),
   }));
 }
 // URBAN (+ any rail Transitous also carries): stoptimes for the hub's nearest
 // transit stops inside the radius. Bounded to the 8 nearest stops to cap the
 // upstream fan-out on dense station forecourts.
-async function urbanRows(hub) {
+async function urbanRows(hub, full = false) {
   const stops = (await transitStopsInRadius(hub.lat, hub.lon, hub.radiusM))
     .filter((s) => haversineM(hub.lat, hub.lon, s.lat, s.lon) <= hub.radiusM)
     .sort((a, b) => a.dist - b.dist)
     .slice(0, 8);
-  const lists = await Promise.all(stops.map((s) => stoptimesData(s.stopId, 12).then((d) => (d.stopTimes || []).map((st) => ({
+  const lists = await Promise.all(stops.map((s) => stoptimesData(s.stopId, full ? 20 : 12).then((d) => (d.stopTimes || []).map((st) => ({
     mode: st.mode === 'RAIL' ? 'RAIL' : 'BUS', line: st.routeShortName || '', headsign: st.headsign || '',
     timeISO: st.departure || st.scheduledDeparture, operator: st.agencyName || null,
     stopName: st.stopName || s.name, realtime: !!st.realTime, stopId: s.stopId,
@@ -1047,18 +1051,55 @@ async function urbanRows(hub) {
 // — both airports have real stations: Fontanarossa on the CT–SR line, Punta
 // Raisi in-terminal). scheduledMs is the reliable epoch; rows without one drop
 // out in mergeDepartures.
-async function railRows(hub) {
+async function railRows(hub, withVia = false) {
   const board = await vtBoardData(hub.railName);
-  return (board.departures || []).map((d) => ({
+  const rows = (board.departures || []).map((d) => ({
     mode: 'RAIL', line: d.label || d.category || 'Treno', headsign: d.destination,
     timeISO: d.scheduledMs ? new Date(d.scheduledMs).toISOString() : null,
     operator: 'Trenitalia', stopName: hub.name, realtime: true, stopId: null,
+    trainNumber: d.trainNumber || null,
   }));
+  if (withVia) {
+    await Promise.all(rows.map(async (r) => {
+      r.via = r.trainNumber ? await vtCallsAfter(r.trainNumber, hub.railName) : [];
+    }));
+  }
+  return rows;
+}
+
+// Stations a train calls at AFTER the given one, from VT andamentoTreno —
+// so a hub-board destination search can match a Messina-bound REG when you
+// type an intermediate stop like "Taormina". Stop lists don't change within
+// a run, so cache long. Any failure degrades to [] (search falls back to
+// headsign matching only).
+async function vtCallsAfter(trainNumber, stationName) {
+  const key = `vtvia:${trainNumber}`;
+  const hit = cacheGet(key);
+  if (hit) return afterStation(hit, stationName);
+  let stops = [];
+  try {
+    const auto = await upstream(`${VT}/cercaNumeroTrenoTrenoAutocomplete/${trainNumber}`, { asText: true });
+    const c = pickVtCandidate(parseVtTrainAutocomplete(auto.data || ''), Date.now());
+    if (c) {
+      const res = await upstream(`${VT}/andamentoTreno/${c.originId}/${c.trainNumber}/${c.departureEpochMs}`);
+      stops = ((res.data && res.data.fermate) || []).map((f) => f.stazione).filter(Boolean);
+    }
+  } catch { /* VT down → no via matching for this train */ }
+  cacheSet(key, stops, 30 * 60 * 1000);
+  return afterStation(stops, stationName);
+}
+function afterStation(stops, stationName) {
+  const want = String(stationName || '').toUpperCase();
+  const i = stops.findIndex((s) => {
+    const u = String(s).toUpperCase();
+    return u === want || u.includes(want) || want.includes(u);
+  });
+  return i >= 0 ? stops.slice(i + 1) : stops.slice();
 }
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.38.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.39.1', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)
@@ -1370,14 +1411,19 @@ const routes = {
   'GET /api/hub-board': async (q) => {
     const hub = TRANSIT_HUBS.find((h) => h.id === q.get('hubId'));
     if (!hub) throw httpError(404, 'unknown hub');
+    // full=1 (destination search): the whole rest of today, uncapped, with
+    // intermediate calls (via) on coach + rail rows so "Taormina" matches a
+    // Messina-bound REG. The default board stays the tight next-departures cut.
+    const full = q.get('full') === '1';
     const now = Date.now();
     const [rail, coach, urban] = await Promise.all([
-      hub.railName ? railRows(hub).catch(() => []) : Promise.resolve([]),
-      Promise.resolve().then(() => coachRows(hub)).catch(() => []),
-      urbanRows(hub).catch(() => []),
+      hub.railName ? railRows(hub, full).catch(() => []) : Promise.resolve([]),
+      Promise.resolve().then(() => coachRows(hub, full)).catch(() => []),
+      urbanRows(hub, full).catch(() => []),
     ]);
-    const departures = mergeDepartures([rail, coach, urban], now, { perMode: 10, cap: 40 });
-    return { hub: { id: hub.id, name: hub.name, kind: hub.kind }, asOf: now, departures };
+    const departures = mergeDepartures([rail, coach, urban], now,
+      full ? { perMode: 500, cap: 1000 } : { perMode: 10, cap: 40 });
+    return { hub: { id: hub.id, name: hub.name, kind: hub.kind }, asOf: now, full, departures };
   },
 
   'GET /api/direct': async (q) => {
@@ -1625,4 +1671,4 @@ if (require.main === module) {
   server.listen(PORT, () => console.log(`ManGO:IT proxy on :${PORT}${STATIC ? ' (static+api)' : ''}`));
 }
 
-module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon, vtSilence, dropDominated, parseBias, geoScore, clusterStopsByProximity, clusterAreaName, HUBS: TRANSIT_HUBS, hubsInBbox, mergeDepartures };
+module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon, vtSilence, dropDominated, parseBias, geoScore, clusterStopsByProximity, clusterAreaName, HUBS: TRANSIT_HUBS, hubsInBbox, mergeDepartures, afterStation };

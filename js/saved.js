@@ -265,27 +265,64 @@ export async function openHubBoard(hub) {
 
   // Same filter model as the main map: independent mango-icon toggle chips
   // (all on by default) + the mango search lens filtering by destination text.
+  // A typed query searches the WHOLE rest of today (lazy full board fetch with
+  // intermediate calls), not just the next-departures window — so "Taormina"
+  // matches a Messina-bound REG that calls there, and an evening Agrigento
+  // coach matches at lunchtime.
   const fam = { rail: true, city: true, coach: true };
   let query = '';
+  let fullRows = null, fullFailed = false, fullPromise = null;
+  const loadFull = () => {
+    if (fullPromise) return;
+    fullPromise = api.hubBoard(hub.hubId, true)
+      .then(({ data }) => { fullRows = data.departures || []; })
+      .catch(() => { fullFailed = true; })
+      .then(() => renderRows());
+  };
   const FAM_OF = { RAIL: 'rail', BUS: 'city', COACH: 'coach' };
-  const inFilter = (r) => fam[FAM_OF[r.mode] || 'city'] &&
-    (!query || `${r.line || ''} ${r.headsign || ''} ${r.stopName || ''}`.toLowerCase().includes(query));
+  // When a row carries its intermediate calls (via), match direction-accurately
+  // on where THIS run actually goes — headsign + calls, not the line name (a
+  // "Catania – Taormina – Messina" line name would match its Militello-bound
+  // return run too). Rows without via keep line-name matching.
+  const hayOf = (r) => (r.via ? `${r.headsign || ''} ${r.stopName || ''} ${r.via.join(' ')}`
+    : `${r.line || ''} ${r.headsign || ''} ${r.stopName || ''}`).toLowerCase();
+  const viaHit = (r) => (query && (r.via || []).find((v) => v.toLowerCase().includes(query))) || null;
+  const inFilter = (r) => fam[FAM_OF[r.mode] || 'city'] && (!query || hayOf(r).includes(query));
   const list = el('div', { class: 'hub-rows' });
   function renderRows() {
     list.innerHTML = '';
-    const rows = departures.filter(inFilter);
-    if (!rows.length) { list.appendChild(el('p', { class: 'muted', text: query ? 'No departures match.' : 'No upcoming departures.' })); return; }
-    for (const r of rows) {
+    const searching = query && !fullRows && !fullFailed;
+    if (searching) loadFull();
+    const rows = (query && fullRows ? fullRows : departures).filter(inFilter);
+    if (!rows.length) {
+      list.appendChild(el('p', {
+        class: 'muted',
+        text: searching ? 'Searching the rest of today…'
+          : query ? (fullRows ? 'No departures match today.' : 'No departures match.')
+            : 'No upcoming departures.',
+      }));
+      return;
+    }
+    const MAX = 60;
+    for (const r of rows.slice(0, MAX)) {
       const line = (r.line || '').trim() || modeMeta(r.mode).label;
       const head = displayName((r.headsign || '').trim());
+      const lbl = el('span', { class: 'sched-label', text: head ? `${line} → ${head}` : line });
+      // matched on an intermediate stop, not the destination — say so
+      const hit = viaHit(r);
+      if (hit && !`${r.headsign || ''} ${r.stopName || ''}`.toLowerCase().includes(query)) {
+        lbl.appendChild(el('span', { class: 'muted', text: ` · calls at ${displayName(hit)}` }));
+      }
       list.appendChild(el('div', { class: 'sched-row' }, [
         el('strong', { class: 'sched-time', text: romeTime(r.timeISO) }),
         modeIcon(r.mode, 'mode-img mode-img-sm'),
-        el('span', { class: 'sched-label', text: head ? `${line} → ${head}` : line }),
+        lbl,
         r.realtime ? el('span', { class: 'badge badge-live', text: 'live' }) : null,
         el('span', { class: 'dep-count', text: countdownText(r.timeISO) }),
       ]));
     }
+    if (rows.length > MAX) list.appendChild(el('p', { class: 'muted', text: `+${rows.length - MAX} more later today` }));
+    if (searching) list.appendChild(el('p', { class: 'muted', text: 'Searching the rest of today…' }));
   }
 
   const favBtn = el('button', { class: 'chip-btn hub-fav' });

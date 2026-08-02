@@ -111,9 +111,10 @@ export const api = {
       cacheKey: `vtboard:${stopId}`, source: 'viaggiatreno',
     }),
 
-  // Unified rail+coach+urban departures board for a curated hub.
-  hubBoard: (hubId) =>
-    getJson(`/api/hub-board?hubId=${encodeURIComponent(hubId)}`, {
-      cacheKey: `hubboard:${hubId}`, source: 'transitous',
+  // Unified rail+coach+urban departures board for a curated hub. full=true
+  // fetches the whole rest of today with intermediate calls (destination search).
+  hubBoard: (hubId, full = false) =>
+    getJson(`/api/hub-board?hubId=${encodeURIComponent(hubId)}${full ? '&full=1' : ''}`, {
+      cacheKey: `hubboard:${hubId}${full ? ':full' : ''}`, source: 'transitous',
     }),
 };

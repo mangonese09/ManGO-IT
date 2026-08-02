@@ -273,3 +273,14 @@ test('mergeDepartures keeps the realtime copy when a dupe pair disagrees', () =>
   assert.strictEqual(out.length, 1);
   assert.strictEqual(out[0].realtime, true, 'live copy wins');
 });
+
+test('afterStation returns the calls after the boarding station', () => {
+  const { afterStation } = require('../../server/proxy.js');
+  const stops = ['CATANIA CENTRALE', 'CATANIA AEROPORTO FONTANAROSSA', 'LENTINI', 'AUGUSTA', 'SIRACUSA'];
+  assert.deepStrictEqual(afterStation(stops, 'CATANIA AEROPORTO FONTANAROSSA'), ['LENTINI', 'AUGUSTA', 'SIRACUSA']);
+  // partial containment either way still anchors (VT spellings drift)
+  assert.deepStrictEqual(afterStation(stops, 'AEROPORTO FONTANAROSSA'), ['LENTINI', 'AUGUSTA', 'SIRACUSA']);
+  // unknown station → keep the whole list so search still has something to match
+  assert.deepStrictEqual(afterStation(stops, 'MESSINA CENTRALE'), stops);
+  assert.deepStrictEqual(afterStation([], 'X'), []);
+});
