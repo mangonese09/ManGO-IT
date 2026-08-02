@@ -300,17 +300,30 @@ function renderClusters(clusters) {
   // Reconcile by stable id: singletons key on the stop id, clusters on their
   // absolute-grid id — so pans keep markers but a zoom (new grid) swaps them,
   // instead of piling stale bubbles up.
+  // A blob's number = stops in the ENABLED families only (server sends per-
+  // family rail/city/coach counts), so every filter chip reshapes the heat map.
+  // Falls back to the total for pre-split cached payloads.
+  const visCount = (cl) => (cl.rail == null ? cl.count
+    : (mapFilter.rail ? cl.rail : 0) + (mapFilter.city ? cl.city : 0) + (mapFilter.coach ? cl.coach : 0));
+  const visKind = (cl) => (cl.rail == null ? cl.kind
+    : ((mapFilter.coach ? cl.coach : 0) >= (mapFilter.rail ? cl.rail : 0) + (mapFilter.city ? cl.city : 0) ? 'coach' : 'transit'));
   const want = new Map();
   for (const cl of clusters) {
-    // Aggregated clusters can't split rail vs city within a transit blob, so a
-    // transit cluster shows if EITHER trains or city buses are on.
-    if (!(cl.kind === 'coach' ? mapFilter.coach : (mapFilter.rail || mapFilter.city))) continue;
-    if (cl.single && fk.has(favKey(cl))) continue;                   // shown as a fav star
+    if (cl.single) {
+      if (!stopShown(cl)) continue;                                  // family filter (modes-aware)
+      if (fk.has(favKey(cl))) continue;                              // shown as a fav star
+    } else if (!visCount(cl)) continue;                              // nothing visible in this cell
     want.set(cl.id, cl);
   }
   for (const [id, m] of clusterMarkers) if (!want.has(id)) { m.remove(); clusterMarkers.delete(id); }
   for (const [id, cl] of want) {
-    if (clusterMarkers.has(id)) continue;
+    const vis = cl.single ? 1 : visCount(cl);
+    const existing = clusterMarkers.get(id);
+    if (existing) {
+      // filter toggles change the visible total — restamp the bubble in place
+      if (!cl.single && existing.visCount !== vis) { existing.setIcon(clusterIcon(vis, visKind(cl))); existing.visCount = vis; }
+      continue;
+    }
     let m;
     if (cl.single) {
       // a lone stop draws as its own icon (not a "1" bubble) and opens its routes
@@ -319,7 +332,8 @@ function renderClusters(clusters) {
       m.bindTooltip(displayName(cl.name), { direction: 'top', offset: [0, -14] });
       m.on('click', () => openStopRoutes(meta));
     } else {
-      m = window.L.marker([cl.lat, cl.lon], { icon: clusterIcon(cl.count, cl.kind), keyboard: false }).addTo(map);
+      m = window.L.marker([cl.lat, cl.lon], { icon: clusterIcon(vis, visKind(cl)), keyboard: false }).addTo(map);
+      m.visCount = vis;
       m.on('click', () => map.flyTo([cl.lat, cl.lon], Math.min(map.getZoom() + 3, 16), { duration: 0.8 }));
     }
     clusterMarkers.set(id, m);
