@@ -12,7 +12,7 @@ const ROOT = path.join(__dirname, '..');
 
 const TRANSITOUS = 'https://api.transitous.org';
 const VT = 'http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno';
-const UA = 'ManGO-IT/0.35.2 (+https://it.mangonese.dev; miconsig@gmail.com)';
+const UA = 'ManGO-IT/0.36.0 (+https://it.mangonese.dev; miconsig@gmail.com)';
 
 // per-day upstream request counter (Transitous asks consumers to know their volume)
 const dayCounts = {};
@@ -1056,7 +1056,7 @@ async function railRows(hub) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.35.2', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.36.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)
@@ -1238,17 +1238,23 @@ const routes = {
     // with more become one counted cluster. Counts are exact (whole bbox).
     if (agg) {
       const cellLat = cellM / 111320, cellLon = cellM / (111320 * Math.cos((lat * Math.PI) / 180));
+      // Per-FAMILY cell counts (rail/city/coach, not just transit/coach) so the
+      // client's filter chips can re-total the heat map without a refetch — a
+      // transit-only split made Trains/City toggles no-ops at cluster zoom.
+      const famOf = (s) => (s.kind === 'coach' ? 'coach'
+        : (s.modes || []).some((m) => /RAIL|METRO|SUBWAY|TRAM|LONG_DISTANCE/.test(m)) ? 'rail' : 'city');
       const cells = new Map();
       for (const s of [...transit, ...coach]) {
         const ck = `${Math.floor(s.lon / cellLon)},${Math.floor(s.lat / cellLat)}`;
-        const c = cells.get(ck) || { count: 0, sumLat: 0, sumLon: 0, transit: 0, coach: 0, one: null };
-        c.count++; c.sumLat += s.lat; c.sumLon += s.lon; c[s.kind]++;
+        const c = cells.get(ck) || { count: 0, sumLat: 0, sumLon: 0, rail: 0, city: 0, coach: 0, one: null };
+        c.count++; c.sumLat += s.lat; c.sumLon += s.lon; c[famOf(s)]++;
         c.one = c.count === 1 ? s : null;
         cells.set(ck, c);
       }
       const clusters = [...cells.entries()].map(([ck, c]) => (c.count === 1
         ? { id: c.one.id, single: true, count: 1, lat: c.one.lat, lon: c.one.lon, name: c.one.name, kind: c.one.kind, modes: c.one.modes || [] }
-        : { id: `g${ck}`, count: c.count, lat: c.sumLat / c.count, lon: c.sumLon / c.count, kind: c.coach >= c.transit ? 'coach' : 'transit' }
+        : { id: `g${ck}`, count: c.count, rail: c.rail, city: c.city, coach: c.coach,
+            lat: c.sumLat / c.count, lon: c.sumLon / c.count, kind: c.coach >= c.rail + c.city ? 'coach' : 'transit' }
       )).sort((a, b) => b.count - a.count).slice(0, 300);
       const aggOut = { fetchedAt: Date.now(), aggregated: true, clusters, hubs: hubFeatures };
       cacheSet(key, aggOut, 5 * 60 * 1000);
