@@ -168,11 +168,12 @@ function favIcon(mode, kind) {
 // stops sit in that grid cell (log scale). Transparent edges let the basemap +
 // city labels read through; overlapping blobs blend like a heatmap.
 function clusterIcon(count, kind) {
+  // Pure heat blob — size (log scale) already encodes density; the count
+  // numbers on top were visual noise (user call, v0.36.1).
   const d = Math.round(Math.min(74, 30 + Math.log2(count) * 8));
-  const fs = Math.max(11, Math.round(d * 0.34));
   return window.L.divIcon({
     className: `cluster-blob cluster-${kind}`,
-    html: `<span style="font-size:${fs}px">${count}</span>`,
+    html: '',
     iconSize: [d, d], iconAnchor: [d / 2, d / 2],
   });
 }
