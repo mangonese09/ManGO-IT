@@ -606,10 +606,56 @@ function addLocateControl() {
   map.addControl(new Locate());
 }
 
+// One-finger zoom (Google Maps style): double-tap and, on the SECOND tap,
+// drag down to zoom in / up to zoom out, anchored at the tap point. A plain
+// double tap (no drag) still gets Leaflet's native +1 zoom. During the drag
+// zoomSnap is lifted for a smooth ramp, then the zoom snaps back to a whole
+// level on release so tiles render crisp at rest.
+function initDoubleTapDragZoom() {
+  const cont = map.getContainer();
+  let lastTap = 0, lastX = 0, lastY = 0;
+  let armed = false, active = false, startY = 0, startZoom = 0, anchor = null, prevSnap = 1;
+  cont.addEventListener('touchstart', (e) => {
+    if (e.touches.length !== 1) { armed = false; active = false; return; }
+    const t = e.touches[0], now = Date.now();
+    if (now - lastTap < 300 && Math.abs(t.clientX - lastX) < 40 && Math.abs(t.clientY - lastY) < 40) {
+      armed = true; startY = t.clientY; startZoom = map.getZoom();
+      const r = cont.getBoundingClientRect();
+      anchor = window.L.point(t.clientX - r.left, t.clientY - r.top);
+    }
+    lastTap = now; lastX = t.clientX; lastY = t.clientY;
+  }, { passive: true });
+  cont.addEventListener('touchmove', (e) => {
+    if (!armed || e.touches.length !== 1) return;
+    const dy = e.touches[0].clientY - startY;
+    if (!active) {
+      if (Math.abs(dy) < 8) return;           // still could be a plain double tap
+      active = true;
+      prevSnap = map.options.zoomSnap;
+      map.options.zoomSnap = 0;               // fluid fractional zoom mid-gesture
+      map.dragging.disable();
+    }
+    e.preventDefault();                        // no pan/scroll while zooming
+    const z = Math.max(map.getMinZoom(), Math.min(map.getMaxZoom(), startZoom + dy / 100));
+    map.setZoomAround(anchor, z, { animate: false });
+  }, { passive: false });
+  const end = () => {
+    if (active) {
+      map.options.zoomSnap = prevSnap;
+      map.setZoom(Math.round(map.getZoom())); // crisp whole-level rest
+      map.dragging.enable();
+    }
+    armed = false; active = false;
+  };
+  cont.addEventListener('touchend', end);
+  cont.addEventListener('touchcancel', end);
+}
+
 async function initMap(pos) {
   const L = window.L;
   map = L.map('map-canvas', { zoomControl: false, attributionControl: true });
   addLocateControl();
+  initDoubleTapDragZoom();
   // Zoom sits top-right under the locate button — the bottom edge belongs to the
   // stop info-bar, which used to collide with a bottom-right zoom control (the ✕
   // ended up hidden behind the +/− buttons).
