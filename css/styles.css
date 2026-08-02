@@ -710,8 +710,8 @@ body { font-size: 1rem; }
 
 /* #2/#4 Top-left controls: search pill + Trains/Buses filter chips. */
 .map-controls {
-  display: flex; flex-wrap: wrap; gap: 6px;
-  margin: 0 0 10px;
+  display: flex; flex-wrap: wrap; gap: 5px;
+  margin: 6px 0 8px;
 }
 /* Carto dark_all is too murky raw — lift it while keeping the dark look.
    The container bg matches so unloaded tile edges don't flash black. */
@@ -719,10 +719,10 @@ body { font-size: 1rem; }
 #map-canvas.tiles-dark .leaflet-tile { filter: brightness(1.6) contrast(0.92) saturate(0.95); }
 #map-canvas.tiles-light { background: #e8e8e4; }
 .map-chip {
-  display: inline-flex; align-items: center; gap: 5px;
+  display: inline-flex; align-items: center; gap: 4px;
   background: rgba(20, 22, 28, 0.86); color: #e7ecf3;
   border: 1px solid rgba(255,255,255,0.14); border-radius: 999px;
-  padding: 6px 11px; font-size: 0.76rem; font-weight: 600; cursor: pointer;
+  padding: 6px 9px; font-size: 0.74rem; font-weight: 600; cursor: pointer;
   backdrop-filter: blur(6px); white-space: nowrap;
 }
 .map-chip .mode-img-sm { width: 16px; height: 16px; }

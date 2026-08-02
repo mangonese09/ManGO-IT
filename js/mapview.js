@@ -661,8 +661,9 @@ function buildControls() {
     }, [glyph, el('span', { text: label })]);
     return chip;
   };
+  // icon-only search keeps the whole bar to one line on a 390px phone
   const search = el('button', { class: 'map-chip map-search-btn', 'aria-label': 'Search a place', onclick: openMapSearch }, [
-    el('span', { class: 'map-search-ico', text: '⌕' }), el('span', { text: 'Search' }),
+    el('span', { class: 'map-search-ico', text: '⌕' }),
   ]);
   // The bar sits ABOVE the map (normal flow), not overlaid on the tiles —
   // chips stop covering the viewport and wrap freely on narrow screens.
