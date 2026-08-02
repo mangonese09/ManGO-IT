@@ -735,8 +735,10 @@ body { font-size: 1rem; }
   display: inline-flex; align-items: center; justify-content: center;
 }
 .map-chip .chip-hub-glyph img { width: 12px; height: 12px; object-fit: contain; }
-.map-chip:not(.on) { opacity: 0.5; }
-.map-chip.on { border-color: var(--mango, #ffb454); }
+/* dimming means "family switched off" — the search chip is an action, not a
+   toggle, so it always renders at the enabled look (full opacity + mango ring) */
+.map-chip:not(.on):not(.map-search-btn) { opacity: 0.5; }
+.map-chip.on, .map-search-btn { border-color: var(--mango, #ffb454); }
 /* icon-only chip must read at the same visual weight/height as its neighbours */
 .map-search-btn { color: #e7ecf3; padding: 5px 8px; }
 .map-search-img { width: 19px; height: 19px; display: block; }
