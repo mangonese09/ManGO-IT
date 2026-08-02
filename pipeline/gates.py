@@ -13,9 +13,16 @@ import re
 
 # Anonymous placeholder rows are unmappable and never ship. Cycle 4 widened
 # this to the parse-damaged variants: OCR-ish suffixes ("Fermata intermedia I",
-# "… 0") and collapsed counts ("10 Fermata intermedie 10").
+# "… 0") and collapsed counts ("10 Fermata intermedie 10"). Audit 2026-08-01
+# widened again: an optional leading word ("ROCCAPALUMBA Fermata intermedia",
+# "intermedia Fermata intermedia"), a trailing qualifier ("Fermata intermedia
+# diretta"), and the Ionica column-header artifact ("I orario" / "0 orario")
+# that shipped a phantom 2-stop trip with one stop in the open sea.
 JUNK_STOP = re.compile(
-    r'^(\d{0,2}\s*Fermata( intermedi\w{0,2})?( [I0-9]{1,2})?|Capolinea( di (Partenza|Arrivo))?)\s*$', re.I)
+    r"^(([\w'\.À-ù]+\s+)?\d{0,2}\s*Fermata( intermedi\w{0,2})?( [I0-9]{1,2})?( diretta)?"
+    r"|Capolinea( di (Partenza|Arrivo))?"
+    r"|[I0-9]{1,2}\s*orario"
+    r"|[I0])\s*$", re.I)
 
 # A coach cannot average this over a straight line between two consecutive
 # stops; exceeding it means a bad geocode or a column misalignment.
