@@ -12,7 +12,7 @@ const ROOT = path.join(__dirname, '..');
 
 const TRANSITOUS = 'https://api.transitous.org';
 const VT = 'http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno';
-const UA = 'ManGO-IT/0.31.2 (+https://it.mangonese.dev; miconsig@gmail.com)';
+const UA = 'ManGO-IT/0.32.0 (+https://it.mangonese.dev; miconsig@gmail.com)';
 
 // per-day upstream request counter (Transitous asks consumers to know their volume)
 const dayCounts = {};
@@ -962,12 +962,13 @@ async function transitStopsInRadius(lat, lon, r) {
 
 // Normalized upcoming stoptimes for a Transitous stop. The producer behind
 // /api/stoptimes (identical shape + 60s cache).
-async function stoptimesData(stopId, n = 6) {
+async function stoptimesData(stopId, n = 6, timeIso = null) {
   const nn = Math.min(n, 20);
-  const key = `st:${stopId}:${nn}`;
+  const key = `st:${stopId}:${nn}${timeIso ? `:${timeIso}` : ''}`;
   const hit = cacheGet(key);
   if (hit) return hit;
-  const { data } = await upstream(`${TRANSITOUS}/api/v1/stoptimes?stopId=${encodeURIComponent(stopId)}&n=${nn}`);
+  const timeQ = timeIso ? `&time=${encodeURIComponent(timeIso)}` : '';
+  const { data } = await upstream(`${TRANSITOUS}/api/v1/stoptimes?stopId=${encodeURIComponent(stopId)}&n=${nn}${timeQ}`);
   let rows = (data.stopTimes || []).map((st) => ({
     stopName: st.place?.name || null, stopId: st.place?.stopId || null,
     departure: st.place?.departure || st.place?.arrival || null,
@@ -1055,7 +1056,7 @@ async function railRows(hub) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.31.2', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.32.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)
@@ -1349,7 +1350,10 @@ const routes = {
   'GET /api/stoptimes': async (q) => {
     const stopId = q.get('stopId');
     if (!stopId) throw httpError(400, 'stopId required');
-    return stoptimesData(stopId, Math.min(Number(q.get('n')) || 6, 20));
+    // optional ISO start time (stop-sheet day chips): board for a future day
+    const t = q.get('time');
+    const timeIso = t && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?(\.\d+)?Z$/.test(t) ? t : null;
+    return stoptimesData(stopId, Math.min(Number(q.get('n')) || 6, 20), timeIso);
   },
 
   // Unified departures board for a curated hub: fan out to VT rail (rail hubs),
@@ -1447,7 +1451,19 @@ const routes = {
     const lat = Number(q.get('lat')), lon = Number(q.get('lon'));
     if (![lat, lon].every(isFinite)) throw httpError(400, 'lat/lon required');
     const radius = Math.min(Number(q.get('r')) || 300, 1500);
-    return coachBoard(lat, lon, radius, null, q.get('all') === '1');
+    // explicit board date (stop-sheet day chips): full-day board for that Rome
+    // date, service calendars (feriale/festivo/scolastico/feste) resolved for
+    // the ACTUAL day — same honest-date pattern as /api/direct.
+    let days = null;
+    const dateStr = q.get('date');
+    if (dateStr && /^\d{4}-\d{2}-\d{2}$/.test(dateStr) && dateStr !== romeParts().iso) {
+      const noon = new Date(dateStr + 'T12:00:00Z');
+      if (isNaN(noon)) throw httpError(400, 'bad date');
+      const d0 = romeParts(noon);
+      d0.min = 0;
+      days = [d0, romeParts(new Date(noon.getTime() + 86400000))];
+    }
+    return coachBoard(lat, lon, radius, days, q.get('all') === '1');
   },
 
   'GET /api/vt/stations': async (q) => {
