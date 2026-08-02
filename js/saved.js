@@ -127,14 +127,15 @@ export async function openStopSchedule(s) {
   // same pattern as the Home when-picker. The chip label becomes the picked day.
   const dateInput = el('input', { type: 'date', class: 'when-native', 'aria-hidden': 'true', tabindex: '-1' });
   dateInput.min = romeDateStr(new Date());
+  const pickLabel = el('span', { text: '' });
   const pickBtn = el('button', {
-    class: 'chip-btn sched-pick', text: '📅',
+    class: 'chip-btn sched-pick', 'aria-label': 'Pick a date',
     onclick: () => { try { dateInput.showPicker(); } catch { dateInput.click(); } },
-  });
+  }, [el('img', { class: 'chip-cal-img', src: '/icons/calendar-mango.svg', alt: '' }), pickLabel]);
   dateInput.addEventListener('change', () => {
     if (!dateInput.value) return;
     activeDate = dateInput.value;
-    pickBtn.textContent = `📅 ${romeDay(`${dateInput.value}T12:00:00`)}`;
+    pickLabel.textContent = romeDay(`${dateInput.value}T12:00:00`);
     activate(pickBtn); load();
   });
   chipRow.appendChild(pickBtn);
