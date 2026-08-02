@@ -131,7 +131,7 @@ export async function openStopSchedule(s) {
   const pickBtn = el('button', {
     class: 'chip-btn sched-pick', 'aria-label': 'Pick a date',
     onclick: () => { try { dateInput.showPicker(); } catch { dateInput.click(); } },
-  }, [el('img', { class: 'chip-cal-img', src: '/icons/calendar-mango.svg', alt: '' }), pickLabel]);
+  }, [el('img', { class: 'chip-cal-img', src: '/icons/calendar-mango.svg', alt: '', width: '17', height: '17' }), pickLabel]);
   dateInput.addEventListener('change', () => {
     if (!dateInput.value) return;
     activeDate = dateInput.value;

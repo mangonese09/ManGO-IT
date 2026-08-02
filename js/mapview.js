@@ -148,7 +148,7 @@ function hubIcon(subkind) {
   const src = subkind === 'airport' ? '/icons/plane-mango.svg' : '/icons/modes/train.png';
   return window.L.divIcon({
     className: 'hub-pin',
-    html: `<span class="hub-glyph"><img src="${src}" alt=""></span>`,
+    html: `<span class="hub-glyph"><img src="${src}" alt="" width="24" height="24"></span>`,
     iconSize: [40, 40], iconAnchor: [20, 20],
   });
 }
@@ -695,8 +695,10 @@ const MAP_CHIPS = [
 function buildControls() {
   const canvas = document.getElementById('map-canvas');
   const mkChip = ({ key, label, icon }) => {
+    // explicit width/height attrs: sizing must survive a stale-CSS/new-JS mix
+    // mid-SW-update (natural-size PNGs rendered as giant mangoes once)
     const glyph = icon ? modeIcon(icon, 'mode-img mode-img-sm')
-      : el('span', { class: 'chip-hub-glyph' }, [el('img', { src: '/icons/modes/train.png', alt: '' })]); // mini hub pin: mango disc + mango train
+      : el('span', { class: 'chip-hub-glyph' }, [el('img', { src: '/icons/modes/train.png', alt: '', width: '12', height: '12' })]);
     const chip = el('button', {
       class: `map-chip${mapFilter[key] ? ' on' : ''}`,
       onclick: () => {
@@ -714,7 +716,7 @@ function buildControls() {
   };
   // icon-only search keeps the whole bar to one line on a 390px phone
   const search = el('button', { class: 'map-chip map-search-btn', 'aria-label': 'Search a place', onclick: openMapSearch }, [
-    el('img', { class: 'map-search-img', src: '/icons/search-mango.svg', alt: '' }),
+    el('img', { class: 'map-search-img', src: '/icons/search-mango.svg', alt: '', width: '19', height: '19' }),
   ]);
   // The bar sits ABOVE the map (normal flow), not overlaid on the tiles —
   // chips stop covering the viewport and wrap freely on narrow screens.
