@@ -110,12 +110,23 @@ export async function openStopSchedule(s) {
     if (s.stopId) {
       const { data } = await api.stoptimes(s.stopId, 40);
       rows = (data.stopTimes || []).map((st) => ({
+        iso: st.departure || st.scheduledDeparture,
         time: romeTime(st.departure || st.scheduledDeparture),
         mode: st.mode,
         label: transitLabel(st),
         dir: displayName((st.headsign || '').trim()),
         live: st.realTime, cancelled: st.cancelled,
       }));
+      // A sparse stop (one train a day) makes "next 40 departures" span WEEKS —
+      // rendered date-blind it read as the same train repeated 14× ("16:36 REG
+      // 21879" × N, one per future day). Drop exact repeats, then split by day:
+      // today renders as before, later days go under day headers (capped).
+      const seen = new Set();
+      rows = rows.filter((r) => {
+        const k = `${r.iso}|${r.label}`;
+        if (seen.has(k)) return false;
+        seen.add(k); return true;
+      });
       note = isRailStop(s)
         ? 'No live train data right now — showing what the network schedule knows.'
         : 'Next departures from the live network.';
@@ -146,15 +157,27 @@ export async function openStopSchedule(s) {
       r.live ? el('span', { class: 'badge badge-live', text: 'live' }) : null,
       r.cancelled ? el('span', { class: 'badge badge-cancel', text: 'CANCELLED' }) : null,
     ]);
+    // Today first (grouped by direction as before); departures on LATER days —
+    // the whole tail at a one-train-a-day stop — sit under explicit day
+    // headers so "16:36" fourteen times reads as fourteen DAYS, capped at 10.
+    const today = rows.filter((r) => !r.iso || !isOtherRomeDay(r.iso));
+    const later = rows.filter((r) => r.iso && isOtherRomeDay(r.iso)).slice(0, 10);
     const dirs = [];
-    for (const r of rows) { if (r.dir && !dirs.includes(r.dir)) dirs.push(r.dir); }
+    for (const r of today) { if (r.dir && !dirs.includes(r.dir)) dirs.push(r.dir); }
     if (dirs.length > 1) {
       for (const d of dirs) {
         body.appendChild(el('div', { class: 'sched-dir', text: `→ ${d}` }));
-        for (const r of rows.filter((x) => x.dir === d)) body.appendChild(rowEl(r, true));
+        for (const r of today.filter((x) => x.dir === d)) body.appendChild(rowEl(r, true));
       }
     } else {
-      for (const r of rows) body.appendChild(rowEl(r, false));
+      for (const r of today) body.appendChild(rowEl(r, false));
+    }
+    if (!today.length) body.appendChild(el('p', { class: 'muted', text: 'No more departures today.' }));
+    let lastDay = null;
+    for (const r of later) {
+      const day = romeDay(r.iso);
+      if (day !== lastDay) { body.appendChild(el('div', { class: 'sched-dir sched-day', text: day })); lastDay = day; }
+      body.appendChild(rowEl(r, false));
     }
   } catch {
     body.innerHTML = '';
