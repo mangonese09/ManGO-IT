@@ -92,7 +92,10 @@ function currentTheme() {
 // Carto raster basemaps pair with OSM data; attribution per their policy.
 const TILE_URL = {
   dark: 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
-  light: 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png',
+  // Voyager, not light_all/Positron: Positron is a deliberately ultra-pale
+  // data-overlay canvas (no visible roads/borders at rest); Voyager is a real
+  // navigation basemap with road colors and boundaries.
+  light: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
 };
 const TILE_ATTR = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>';
 

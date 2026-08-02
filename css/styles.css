@@ -717,7 +717,7 @@ body { font-size: 1rem; }
    The container bg matches so unloaded tile edges don't flash black. */
 #map-canvas.tiles-dark { background: #2a2e37; }
 #map-canvas.tiles-dark .leaflet-tile { filter: brightness(1.6) contrast(0.92) saturate(0.95); }
-#map-canvas.tiles-light { background: #e8e8e4; }
+#map-canvas.tiles-light { background: #f6f3ef; } /* voyager land tone */
 .map-chip {
   display: inline-flex; align-items: center; gap: 4px;
   background: rgba(20, 22, 28, 0.86); color: #e7ecf3;
@@ -729,8 +729,9 @@ body { font-size: 1rem; }
 .map-chip .chip-hub-glyph { font-size: 14px; line-height: 1; }
 .map-chip:not(.on) { opacity: 0.5; }
 .map-chip.on { border-color: var(--mango, #ffb454); }
-.map-search-btn { color: #e7ecf3; }
-.map-search-ico { font-size: 1.05rem; line-height: 1; }
+/* icon-only chip must read at the same visual weight/height as its neighbours */
+.map-search-btn { color: #e7ecf3; padding: 4px 10px; }
+.map-search-ico { font-size: 1.3rem; line-height: 20px; font-weight: 700; }
 
 /* #4 Place-search sheet */
 .map-search-body { display: flex; flex-direction: column; gap: 10px; padding: 4px 2px 8px; }
@@ -840,8 +841,11 @@ body { font-size: 1rem; }
 .map-locate-btn img { width: 24px; height: 24px; object-fit: contain; }
 
 /* Dark basemap is near-black and hard to read — lift it to a legible dark grey
-   (roads + labels emerge) while staying cohesive with the dark app chrome. */
-:root[data-theme="dark"] .leaflet-tile-pane {
+   (roads + labels emerge). Scoped to the DARK BASEMAP (.tiles-dark), not the
+   app theme: theme-scoping blew out the light basemap to pure white when the
+   app ran dark with Map style = Light. Stacks with the .leaflet-tile rule
+   above — the combined lift is the look that was visually tuned. */
+#map-canvas.tiles-dark .leaflet-tile-pane {
   filter: brightness(1.6) contrast(0.86) saturate(0.9);
 }
 
