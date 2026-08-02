@@ -1,6 +1,25 @@
 {
  "_comment": "Per-route stop-name corrections for parse-level damage the grid parser cannot fix. Keys are normalized (upper, collapsed spaces) sheet spellings INSIDE the named route only; values are canonical stop names. Two damage classes: (1) the terminus row label fused with prescription/footnote text (p1/p3/p5: the Palermo row became 'e Viceversa estremi compresi'); (2) generic template sheets whose rows are literally 'Capolinea di Partenza/Arrivo' — the termini are named by the sheet's own route title, so labeling them is reading the sheet, not inventing data. Rows that cannot be identified from the sheet itself (anonymous 'Fermata intermedia') are NEVER renamed and stay dropped.",
  "per_route": {
+  "lattuca-orari-p2": {
+   "( VIA ROMA) ARAGONA ( VIA ROMA)": "ARAGONA ( Via Roma)",
+   "ARAGONA STAZ.CALDARE ARAGONA": "STAZ.CALDARE ARAGONA",
+   "S. MICHELE BORGATA S. MICHELE": "BORGATA S. MICHELE",
+   "QUAD.SP. IST.TEC. AGRIGENTO QUAD.SP. IST.TEC.": "AGRIGENTO QUAD.SPINASANTA",
+   "C/DA CALCARELLE AGRIGENTO C/DA CALCARELLE": "AGRIGENTO C.DA CALCARELLE",
+   "C.DA CALCARELLE": "AGRIGENTO C.DA CALCARELLE",
+   "P.ROSSELLI AGRIGENTO P.ROSSELLI 0": "AGRIGENTO P.ROSSELLI"
+  },
+  "lattuca-orari-p5": {
+   "MUXARO (P.UMBERTO I) S.ANGELO MUXARO (P.UMBERTO I)": "SANT'ANGELO MUXARO P.za Umberto 1°",
+   "(P.MUNICIPIO) S.ELISABETTA (P.MUNICIPIO)": "S. Elisabetta (P. Municipio)",
+   "(VIA ROMA) ARAGONA ( VIA ROMA)": "ARAGONA ( Via Roma)",
+   "CALDARE ARAGONA STAZIONE CALDARE ARAGONA": "STAZ.CALDARE ARAGONA",
+   "S. MICHELE B.S. MICHELE": "BORGATA S. MICHELE",
+   "FERMATA I.TEC.QUAD. AGRIGENTO FERMATA I.TEC.QUAD.": "AGRIGENTO QUAD.SPINASANTA",
+   "C/DA CALCARELLE AGRIGENTO C/DA CALCARELLE": "AGRIGENTO C.DA CALCARELLE",
+   "(P.ROSSELLI) AGRIGENTO (P.ROSSELLI)": "AGRIGENTO P.ROSSELLI"
+  },
   "autotrasporticuffaro-autotra-p1": {
    "E VICEVERSA ESTREMI COMPRESI": "Palermo (via P. Balsamo)"
   },
