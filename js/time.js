@@ -63,6 +63,9 @@ export function countdownText(iso, now = Date.now()) {
   if (m <= -2) return 'gone';
   if (m <= 0) return 'now';
   if (m < 60) return `${m} min`;
+  // beyond a day — a sparse stop's next run can be days out; "336h 00m" reads
+  // like a glitch, "in 14d" reads like a schedule
+  if (m >= 1440) return `${Math.round(m / 1440)}d`;
   return `${Math.floor(m / 60)}h ${String(m % 60).padStart(2, '0')}m`;
 }
 

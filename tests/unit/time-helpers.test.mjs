@@ -29,6 +29,7 @@ test('countdownText near/far/past', () => {
   assert.strictEqual(countdownText('2026-07-27T08:00:20Z', now), 'now');
   assert.strictEqual(countdownText('2026-07-27T07:50:00Z', now), 'gone');
   assert.strictEqual(countdownText('2026-07-27T10:30:00Z', now), '2h 30m'); // >60min stays relative
+  assert.strictEqual(countdownText('2026-08-10T08:00:00Z', now), '14d'); // days out reads as days, not "336h 00m"
 });
 
 test('isOtherRomeDay flips at Rome midnight, not device midnight', () => {
