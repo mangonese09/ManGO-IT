@@ -81,6 +81,22 @@ def main(path):
         if not (SICILY['latMin'] <= lat <= SICILY['latMax'] and SICILY['lonMin'] <= lon <= SICILY['lonMax']):
             errors.append(f"stop {s['stop_id']}: outside Sicily bbox ({lat},{lon})")
 
+    # ids that differ only by surrounding whitespace collide once a consumer
+    # trims fields (gtfsclean rejected the feed in Transitous PR #2327 CI over
+    # exactly this: "017010" vs "017010 " both became one trip with two seq=1s)
+    stripped_ids = {}
+    for t in trips:
+        k = t['trip_id'].strip()
+        if k in stripped_ids and stripped_ids[k] != t['trip_id']:
+            errors.append(f"trip ids collide after whitespace strip: {stripped_ids[k]!r} vs {t['trip_id']!r}")
+        stripped_ids.setdefault(k, t['trip_id'])
+    seen_pairs = set()
+    for row in st:
+        p = (row['trip_id'].strip(), int(row['stop_sequence']))
+        if p in seen_pairs:
+            errors.append(f'duplicate (trip_id, stop_sequence) after strip: {p}')
+        seen_pairs.add(p)
+
     by_trip = {}
     for row in st:
         by_trip.setdefault(row['trip_id'], []).append(row)

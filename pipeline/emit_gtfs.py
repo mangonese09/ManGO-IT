@@ -179,7 +179,12 @@ def main():
                     if not dates:
                         skipped.append((rid, t['corsa'], f'service {sid} has zero dates')); continue
                     services_seen[sid] = dates
-                trip_id = f'{rid}-{di}-{t["corsa"]}'
+                # corsa codes can carry stray whitespace from the sheet parse
+                # ("017010 " vs "017010" on SAIS 7017 — two REAL runs). Strip it
+                # here: GTFS consumers (gtfsclean) trim ids, so two ids that
+                # differ only by whitespace collide downstream. After stripping,
+                # true duplicates fall through to the trip_ids_seen dedupe below.
+                trip_id = f'{rid}-{di}-{t["corsa"].strip()}'
                 headsign = t['stops'][-1]['stop'].split('(')[0].strip().title()
                 pending_st, pending_coords = [], []
                 prev_min, offset = -1, 0
