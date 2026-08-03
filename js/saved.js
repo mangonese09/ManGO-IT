@@ -384,12 +384,15 @@ export async function openHubBoard(hub) {
   searchInput.addEventListener('input', () => { query = searchInput.value.trim().toLowerCase(); renderRows(); });
   const searchBtn = el('button', {
     class: 'hub-head-btn hub-head-lens', 'aria-label': 'Search this board',
+    // a plain magnifier in mango (user call) — the mango-fruit lens read as
+    // decoration here; stroke uses currentColor so the CSS owns the colour
+    html: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="15.6" y1="15.6" x2="21" y2="21"/></svg>',
     onclick: () => {
       searchInput.hidden = !searchInput.hidden;
       if (!searchInput.hidden) searchInput.focus();
       else { searchInput.value = ''; query = ''; renderRows(); }
     },
-  }, [el('img', { class: 'map-search-img', src: '/icons/search-mango.svg', alt: '', width: '19', height: '19' })]);
+  });
   head.insertBefore(searchBtn, favBtn);
   chipRow.appendChild(mkFam('rail', 'RAIL', 'Trains'));
   chipRow.appendChild(mkFam('city', 'BUS', 'City'));

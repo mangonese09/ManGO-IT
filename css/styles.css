@@ -257,15 +257,19 @@ button { cursor: pointer; }
   background: var(--bg-elevated, #2a2a2a); border: none; cursor: pointer;
   line-height: 1; padding: 0;
 }
-.hub-head-lens { border: 1px solid var(--mango, #ffb454); }
-.hub-fav-head { color: var(--text-secondary, #c9c9c9); font-size: 1.15rem; }
+.hub-head-lens { color: var(--mango, #ffb454); }
+.hub-head-lens svg { display: block; }
+.hub-fav-head { color: var(--mango, #ffb454); font-size: 1.15rem; }
 .hub-fav-head.pinned { color: var(--mango, #ffb454); }
-/* the sheet's own ✕ matches the disc size ONLY on hub boards */
-.sheet:has(.hub-sheet) .sheet-close { width: 40px; height: 40px; font-size: 0.95rem; }
-/* Fixed-detent behaviour (what Maps-style bottom sheets do): the sheet keeps a
-   stable height while chips/search reshape the list — content scrolls inside;
-   a sheet that grows/shrinks per keystroke moves tap targets underfoot. */
-.hub-sheet { min-height: 56vh; }
+/* the sheet's own ✕ matches the trio's disc size + mango ONLY on hub boards */
+.sheet:has(.hub-sheet) .sheet-close {
+  width: 40px; height: 40px; font-size: 0.95rem; color: var(--mango, #ffb454);
+}
+/* Fixed-detent behaviour (what Maps-style bottom sheets do): the sheet keeps
+   ONE height while chips/search reshape the list — content scrolls inside; a
+   min/max range still let a full list nudge the sheet taller (user saw the
+   "bump"), so the height is now a single fixed value. */
+.hub-sheet { height: 58vh; }
 .sheet-close {
   background: var(--bg-elevated, #2a2a2a); border: none; color: var(--text-secondary, #c9c9c9);
   border-radius: 50%; width: 28px; height: 28px; font-size: 0.8rem; line-height: 1;
