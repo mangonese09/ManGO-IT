@@ -307,13 +307,16 @@ export async function openHubBoard(hub) {
       .then(() => renderRows());
   };
   const FAM_OF = { RAIL: 'rail', BUS: 'city', COACH: 'coach' };
+  // via entries are {n, t} (stop + clock); tolerate plain strings from older
+  // cached payloads.
+  const viaName = (v) => (v && v.n != null ? v.n : String(v || ''));
   // When a row carries its intermediate calls (via), match direction-accurately
   // on where THIS run actually goes — headsign + calls, not the line name (a
   // "Catania – Taormina – Messina" line name would match its Militello-bound
   // return run too). Rows without via keep line-name matching.
-  const hayOf = (r) => (r.via ? `${r.headsign || ''} ${r.stopName || ''} ${r.via.join(' ')}`
+  const hayOf = (r) => (r.via ? `${r.headsign || ''} ${r.stopName || ''} ${r.via.map(viaName).join(' ')}`
     : `${r.line || ''} ${r.headsign || ''} ${r.stopName || ''}`).toLowerCase();
-  const viaHit = (r) => (query && (r.via || []).find((v) => v.toLowerCase().includes(query))) || null;
+  const viaHit = (r) => (query && (r.via || []).find((v) => viaName(v).toLowerCase().includes(query))) || null;
   const inFilter = (r) => fam[FAM_OF[r.mode] || 'city'] && (!query || hayOf(r).includes(query));
   const list = el('div', { class: 'hub-rows' });
   function renderRows() {
@@ -324,7 +327,7 @@ export async function openHubBoard(hub) {
     if (!rows.length) {
       list.appendChild(el('p', {
         class: 'muted',
-        text: searching ? 'Searching the rest of today…'
+        text: searching ? 'Searching all of today…'
           : query ? (fullRows ? 'No departures match today.' : 'No departures match.')
             : 'No upcoming departures.',
       }));
@@ -334,30 +337,40 @@ export async function openHubBoard(hub) {
     for (const r of rows.slice(0, MAX)) {
       const line = (r.line || '').trim() || modeMeta(r.mode).label;
       const head = displayName((r.headsign || '').trim());
-      const lbl = el('span', { class: 'sched-label', text: head ? `${line} → ${head}` : line });
-      // matched on an intermediate stop, not the destination — say so
+      const past = typeof r.minutes === 'number' && r.minutes < 0;
+      const lbl = el('div', { class: 'sched-label2' }, [
+        el('span', { class: 'sl-main', text: head ? `${line} → ${head}` : line }),
+      ]);
+      // matched on an intermediate stop: answer "where does it fit for ME" on
+      // its OWN line with the arrival clock — appended inline it vanished
+      // under the headsign's ellipsis
       const hit = viaHit(r);
       if (hit && !`${r.headsign || ''} ${r.stopName || ''}`.toLowerCase().includes(query)) {
-        lbl.appendChild(el('span', { class: 'muted', text: ` · calls at ${displayName(hit)}` }));
+        const t = hit && hit.t ? ` at ${hit.t}` : '';
+        lbl.appendChild(el('span', { class: 'sl-via muted', text: `→ reaches ${displayName(viaName(hit))}${t}` }));
       }
       const cells = [
         el('strong', { class: 'sched-time', text: romeTime(r.timeISO) }),
         modeIcon(r.mode, 'mode-img mode-img-sm'),
         lbl,
         r.realtime ? el('span', { class: 'badge badge-live', text: 'live' }) : null,
-        el('span', { class: 'dep-count', text: countdownText(r.timeISO) }),
+        el('span', { class: 'dep-count', text: past ? '' : countdownText(r.timeISO) }),
       ];
-      // train rows tap through to live status (delay, last seen) — VT already
-      // resolves it server-side; bus/coach rows have no live source to open
+      // rows tap through: trains → live status + full call list; coaches with
+      // route data → the remaining route with times
+      const rowCls = `sched-row${past ? ' sched-past' : ''}`;
       if (r.mode === 'RAIL' && r.trainNumber) {
         cells.push(el('span', { class: 'dep-chevron', text: '›' }));
-        list.appendChild(el('button', { class: 'sched-row sched-row-btn', onclick: () => openTrainLive(r) }, cells));
+        list.appendChild(el('button', { class: `${rowCls} sched-row-btn`, onclick: () => openTrainLive(r) }, cells));
+      } else if (r.mode === 'COACH' && Array.isArray(r.via) && r.via.length) {
+        cells.push(el('span', { class: 'dep-chevron', text: '›' }));
+        list.appendChild(el('button', { class: `${rowCls} sched-row-btn`, onclick: () => openCoachRoute(r, hub.name) }, cells));
       } else {
-        list.appendChild(el('div', { class: 'sched-row' }, cells));
+        list.appendChild(el('div', { class: rowCls }, cells));
       }
     }
     if (rows.length > MAX) list.appendChild(el('p', { class: 'muted', text: `+${rows.length - MAX} more later today` }));
-    if (searching) list.appendChild(el('p', { class: 'muted', text: 'Searching the rest of today…' }));
+    if (searching) list.appendChild(el('p', { class: 'muted', text: 'Searching all of today…' }));
   }
 
   // Map-style toggle chips (mango icons, .on ring, dim when off). Every hub —
@@ -405,16 +418,47 @@ export async function openHubBoard(hub) {
   renderRows();
 }
 
-// Live status for one train off a hub board row — number, delay, last seen.
+// Ordered stop list rows shared by the train + coach route sheets.
+function routeStopRows(body, stops) {
+  for (const s of stops) {
+    const n = s && s.n != null ? s.n : String(s || '');
+    body.appendChild(el('div', { class: 'sched-row' }, [
+      el('strong', { class: 'sched-time', text: (s && s.t) || '' }),
+      el('span', { class: 'sched-label', text: displayName(n) }),
+    ]));
+  }
+}
+
+// A coach row's remaining route: every stop from here to the terminus, with
+// scheduled times ("where does this coach go" answered in one tap).
+function openCoachRoute(r, hubName) {
+  const body = el('div', { class: 'iti-detail sched-sheet' });
+  body.appendChild(el('p', { class: 'muted sched-note', text:
+    `${r.operator ? displayName(r.operator) + ' · ' : ''}Scheduled times — no live tracking.` }));
+  body.appendChild(el('div', { class: 'sched-row' }, [
+    el('strong', { class: 'sched-time', text: romeTime(r.timeISO) }),
+    el('span', { class: 'sched-label', text: displayName(r.stopName || hubName || 'This stop') }),
+  ]));
+  routeStopRows(body, r.via || []);
+  openSheet(body, { title: displayName((r.line || '').trim() || 'Coach route') });
+}
+
+// Live status for one train off a hub board row — delay, last seen, and the
+// full ordered call list (VT's fermate; falls back to the row's via data).
 async function openTrainLive(r) {
-  const body = el('div', { class: 'iti-detail train-live' });
+  const body = el('div', { class: 'iti-detail train-live sched-sheet' });
   body.appendChild(el('div', { class: 'loading', text: 'Checking live status…' }));
   openSheet(body, { title: `${(r.line || '').trim() || 'Train'} → ${displayName((r.headsign || '').trim())}` });
+  const viaFallback = (r.via || []).map((v) => (v && v.n != null ? v : { n: String(v || ''), t: null }));
   try {
     const { data } = await api.vtLive(r.trainNumber);
     body.innerHTML = '';
     if (!data || !data.live) {
       body.appendChild(el('p', { class: 'muted', text: 'No live data for this train right now — it may not have departed yet.' }));
+      if (viaFallback.length) {
+        body.appendChild(el('div', { class: 'sched-dir', text: 'Calls at' }));
+        routeStopRows(body, viaFallback);
+      }
       return;
     }
     if (data.cancelled) body.appendChild(el('p', {}, [el('span', { class: 'badge badge-cancel', text: 'CANCELLED' })]));
@@ -429,9 +473,18 @@ async function openTrainLive(r) {
     if (data.origin || data.destination) {
       body.appendChild(el('p', { class: 'muted', text: `${displayName(data.origin || '?')} → ${displayName(data.destination || '?')} · #${data.trainNumber}` }));
     }
+    const stops = (data.stops || []).length ? data.stops : viaFallback;
+    if (stops.length) {
+      body.appendChild(el('div', { class: 'sched-dir', text: 'Calls at' }));
+      routeStopRows(body, stops);
+    }
   } catch {
     body.innerHTML = '';
     body.appendChild(el('p', { class: 'muted', text: 'Could not reach live tracking — check connectivity and retry.' }));
+    if (viaFallback.length) {
+      body.appendChild(el('div', { class: 'sched-dir', text: 'Calls at' }));
+      routeStopRows(body, viaFallback);
+    }
   }
 }
 

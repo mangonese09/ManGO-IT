@@ -510,6 +510,11 @@ body.kb-open .bottom-nav { transform: translateY(100%); }
 .sched-row:first-of-type { border-top: none; }
 .sched-time { font-variant-numeric: tabular-nums; min-width: 46px; }
 .sched-label { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* two-line hub-board label: headsign on top, "→ reaches X at HH:MM" beneath —
+   the search-match answer must never disappear under the headsign's ellipsis */
+.sched-label2 { flex: 1; min-width: 0; display: flex; flex-direction: column; text-align: left; }
+.sched-label2 .sl-main, .sched-label2 .sl-via { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sched-label2 .sl-via { font-size: 0.78rem; }
 .sched-past { opacity: 0.45; }
 .sched-cancelled .sched-label { text-decoration: line-through; }
 .sched-sheet { max-height: 60vh; overflow-y: auto; }

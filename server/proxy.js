@@ -12,7 +12,7 @@ const ROOT = path.join(__dirname, '..');
 
 const TRANSITOUS = 'https://api.transitous.org';
 const VT = 'http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno';
-const UA = 'ManGO-IT/0.42.0 (+https://it.mangonese.dev; miconsig@gmail.com)';
+const UA = 'ManGO-IT/0.43.0 (+https://it.mangonese.dev; miconsig@gmail.com)';
 
 // per-day upstream request counter (Transitous asks consumers to know their volume)
 const dayCounts = {};
@@ -274,9 +274,13 @@ function coachBoard(lat, lon, radius = 300, days = null, all = false, withVia = 
           headsign: coachStops[trip.s[trip.s.length - 1][0]].n,
           dep: `${String(Math.floor(min / 60) % 24).padStart(2, '0')}:${String(min % 60).padStart(2, '0')}`,
           depMin: min + dayOff * 1440,
-          // intermediate calls after boarding (terminus excluded — it's the
-          // headsign) so a destination search can match places passed through
-          ...(withVia ? { via: trip.s.slice(k + 1, -1).map(([i]) => coachStops[i].n) } : {}),
+          // remaining calls after boarding WITH their times — a destination
+          // search matches them, the row can say "reaches X at HH:MM", and a
+          // tap can show the full remaining route.
+          ...(withVia ? { via: trip.s.slice(k + 1).map(([i, m]) => ({
+            n: coachStops[i].n,
+            t: `${String(Math.floor(m / 60) % 24).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`,
+          })) } : {}),
         });
         break;                                        // one boarding point per trip
       }
@@ -824,7 +828,10 @@ function hubsInBbox(minLat, minLon, maxLat, maxLon) {
 // an overall cap. Rows keep their common shape {mode,line,headsign,timeISO,…}.
 function mergeDepartures(lists, nowMs, opts = {}) {
   const perMode = opts.perMode || 8, cap = opts.cap || 30;
-  let rows = [].concat(...(lists || [])).filter((r) => r && r.timeISO && Date.parse(r.timeISO) >= nowMs);
+  // full boards keep the WHOLE day: already-departed rows survive back to
+  // dayStartMs (client dims them); the default board stays future-only.
+  const floor = opts.dayStartMs != null ? opts.dayStartMs : nowMs;
+  let rows = [].concat(...(lists || [])).filter((r) => r && r.timeISO && Date.parse(r.timeISO) >= floor);
   rows.sort((a, b) => Date.parse(a.timeISO) - Date.parse(b.timeISO));
   // Collapse exact repeats: a big station has many platform/stop nodes, so the
   // same line+destination+time comes back once per node (Palermo Centrale
@@ -1112,8 +1119,13 @@ async function vtTrainMeta(trainNumber) {
     if (c) {
       const res = await upstream(`${VT}/andamentoTreno/${c.originId}/${c.trainNumber}/${c.departureEpochMs}`);
       const d = res.data || {};
-      meta.stops = (d.fermate || []).map((f) => f.stazione).filter(Boolean);
-      meta.destination = d.destinazione || meta.stops[meta.stops.length - 1] || null;
+      meta.stops = (d.fermate || []).filter((f) => f.stazione).map((f) => ({
+        n: f.stazione,
+        t: (f.programmata || f.partenza_teorica) ? new Intl.DateTimeFormat('en-GB', {
+          timeZone: 'Europe/Rome', hour: '2-digit', minute: '2-digit', hour12: false,
+        }).format(new Date(f.programmata || f.partenza_teorica)) : null,
+      }));
+      meta.destination = d.destinazione || (meta.stops[meta.stops.length - 1] || {}).n || null;
     }
   } catch { /* VT down → empties */ }
   cacheSet(key, meta, 30 * 60 * 1000);
@@ -1126,8 +1138,9 @@ async function vtCallsAfter(trainNumber, stationName) {
 }
 function afterStation(stops, stationName) {
   const want = String(stationName || '').toUpperCase();
+  const nameOf = (s) => String(s && s.n != null ? s.n : s).toUpperCase();
   const i = stops.findIndex((s) => {
-    const u = String(s).toUpperCase();
+    const u = nameOf(s);
     return u === want || u.includes(want) || want.includes(u);
   });
   return i >= 0 ? stops.slice(i + 1) : stops.slice();
@@ -1135,7 +1148,7 @@ function afterStation(stops, stationName) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.42.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.43.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)
@@ -1458,7 +1471,7 @@ const routes = {
       urbanRows(hub, full).catch(() => []),
     ]);
     const departures = mergeDepartures([rail, coach, urban], now,
-      full ? { perMode: 500, cap: 1000 } : { perMode: 10, cap: 40 });
+      full ? { perMode: 500, cap: 1000, dayStartMs: Date.parse(romeInstant(romeParts().iso, 0)) } : { perMode: 10, cap: 40 });
     return { hub: { id: hub.id, name: hub.name, kind: hub.kind }, asOf: now, full, departures };
   },
 
@@ -1621,6 +1634,9 @@ const routes = {
       return out;
     }
     const d = res.data;
+    const romeClock = (ms) => ms ? new Intl.DateTimeFormat('en-GB', {
+      timeZone: 'Europe/Rome', hour: '2-digit', minute: '2-digit', hour12: false,
+    }).format(new Date(ms)) : null;
     const out = {
       live: true, fetchedAt: Date.now(),
       trainNumber: c.trainNumber,
@@ -1630,6 +1646,11 @@ const routes = {
       lastSeenAtMs: d.oraUltimoRilevamento || null,
       origin: d.origine || null, destination: d.destinazione || null,
       cancelled: d.provvedimento === 1 || d.tipoTreno === 'ST',
+      // full ordered call list with scheduled clocks — the "where does this
+      // train go" answer, rendered by the hub-board train sheet
+      stops: (d.fermate || []).filter((f) => f.stazione).map((f) => ({
+        n: f.stazione, t: romeClock(f.programmata || f.partenza_teorica),
+      })),
     };
     cacheSet(key, out, 60 * 1000);
     return out;
