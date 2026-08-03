@@ -669,7 +669,8 @@ export async function pickPointOnMap() {
   }
   const canvas = document.getElementById('map-canvas');
   canvas.classList.add('picking');
-  const pin = el('div', { class: 'pick-pin' }, [el('img', { src: '/icons/place-pin.png', alt: '', width: '36', height: '36' })]);
+  // 70×96 native — keep the aspect or the pin renders squashed
+  const pin = el('div', { class: 'pick-pin' }, [el('img', { src: '/icons/place-pin.png', alt: '', width: '34', height: '47' })]);
   const addr = el('div', { class: 'pick-addr', text: 'Move the map to place the pin' });
   const useBtn = el('button', { class: 'btn btn-primary pick-use', text: 'Use this spot' });
   const cancelBtn = el('button', { class: 'sheet-close', 'aria-label': 'Cancel pick', text: '✕' });
