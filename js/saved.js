@@ -268,7 +268,7 @@ export async function openHubBoard(hub) {
   const overlay = openSheet(body, { title: displayName(hub.name) });
   // ★ save lives in the sheet HEAD beside ✕ (icon-only) — as a toolbar button
   // it pushed the chip row past 390px and wrapped onto a lonely second line.
-  const favBtn = el('button', { class: 'hub-fav-head', 'aria-label': 'Save this hub' });
+  const favBtn = el('button', { class: 'hub-head-btn hub-fav-head', 'aria-label': 'Save this hub' });
   const paintFav = () => { const on = isFavStop(favK); favBtn.textContent = on ? '★' : '☆'; favBtn.classList.toggle('pinned', on); };
   favBtn.onclick = () => {
     if (isFavStop(favK)) removeFavStop(favK);
@@ -373,7 +373,9 @@ export async function openHubBoard(hub) {
     if (!has) b.disabled = true;
     return b;
   };
-  // mango search lens — filter this board by destination text
+  // mango search lens — filter this board by destination text. The lens lives
+  // in the SHEET HEAD beside ★ and ✕ (all three sized alike): it's a sheet
+  // action, not a family filter, so it doesn't belong in the chip row.
   const searchInput = el('input', {
     class: 'map-search-input hub-search', type: 'search',
     placeholder: 'Filter by destination…', autocomplete: 'off',
@@ -381,14 +383,14 @@ export async function openHubBoard(hub) {
   searchInput.hidden = true;
   searchInput.addEventListener('input', () => { query = searchInput.value.trim().toLowerCase(); renderRows(); });
   const searchBtn = el('button', {
-    class: 'map-chip map-search-btn', 'aria-label': 'Search this board',
+    class: 'hub-head-btn hub-head-lens', 'aria-label': 'Search this board',
     onclick: () => {
       searchInput.hidden = !searchInput.hidden;
       if (!searchInput.hidden) searchInput.focus();
       else { searchInput.value = ''; query = ''; renderRows(); }
     },
   }, [el('img', { class: 'map-search-img', src: '/icons/search-mango.svg', alt: '', width: '19', height: '19' })]);
-  chipRow.appendChild(searchBtn);
+  head.insertBefore(searchBtn, favBtn);
   chipRow.appendChild(mkFam('rail', 'RAIL', 'Trains'));
   chipRow.appendChild(mkFam('city', 'BUS', 'City'));
   chipRow.appendChild(mkFam('coach', 'COACH', 'Coaches'));

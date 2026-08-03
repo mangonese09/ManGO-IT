@@ -249,15 +249,23 @@ button { cursor: pointer; }
 .sheet-grab { width: 40px; height: 4px; border-radius: 2px; background: rgba(255,255,255,0.25); margin: 6px auto 10px; }
 .sheet-head { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; min-height: 28px; }
 .sheet-title { font-weight: 700; flex: 1; min-width: 0; }
-/* hub-board ★ save — icon button beside ✕ in the sheet head (same disc look
-   as .sheet-close but its own class: generic "close" selectors must not hit it) */
-.hub-fav-head {
-  background: var(--bg-elevated, #2a2a2a); border: none;
-  color: var(--text-secondary, #c9c9c9);
-  border-radius: 50%; width: 28px; height: 28px; font-size: 0.95rem; line-height: 1;
-  flex: 0 0 auto; cursor: pointer;
+/* hub-board head actions: 🔍 lens, ★ save, ✕ — one shared 40px disc size
+   (the lens set the reference; mismatched 28px ★/✕ read as clutter) */
+.hub-head-btn {
+  width: 40px; height: 40px; border-radius: 50%; flex: 0 0 auto;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--bg-elevated, #2a2a2a); border: none; cursor: pointer;
+  line-height: 1; padding: 0;
 }
+.hub-head-lens { border: 1px solid var(--mango, #ffb454); }
+.hub-fav-head { color: var(--text-secondary, #c9c9c9); font-size: 1.15rem; }
 .hub-fav-head.pinned { color: var(--mango, #ffb454); }
+/* the sheet's own ✕ matches the disc size ONLY on hub boards */
+.sheet:has(.hub-sheet) .sheet-close { width: 40px; height: 40px; font-size: 0.95rem; }
+/* Fixed-detent behaviour (what Maps-style bottom sheets do): the sheet keeps a
+   stable height while chips/search reshape the list — content scrolls inside;
+   a sheet that grows/shrinks per keystroke moves tap targets underfoot. */
+.hub-sheet { min-height: 56vh; }
 .sheet-close {
   background: var(--bg-elevated, #2a2a2a); border: none; color: var(--text-secondary, #c9c9c9);
   border-radius: 50%; width: 28px; height: 28px; font-size: 0.8rem; line-height: 1;
