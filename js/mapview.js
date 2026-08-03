@@ -633,6 +633,31 @@ function traceRoute(meta, routes, idx) {
 // NOT drop the trace. One-shot suppress that resets after this event tick.
 function keepTrace() { suppressClearOnce = true; setTimeout(() => { suppressClearOnce = false; }, 0); }
 
+// Entry point for OTHER surfaces (hub-board coach route sheet): jump to the
+// Map tab and trace this coach route — same road-snapped line + stop dots as
+// tapping the stop's pin. boardMeta: { ci?, lat, lon, routeName, stopName }.
+export async function showCoachRouteOnMap(boardMeta) {
+  document.getElementById('nav-map')?.click();
+  for (let i = 0; i < 60 && !map; i++) await new Promise((r) => setTimeout(r, 100)); // leaflet lazy-loads
+  if (!map) { toast('Map unavailable right now', 'warn'); return; }
+  try {
+    const q = boardMeta.ci != null ? { ci: boardMeta.ci } : { lat: boardMeta.lat, lon: boardMeta.lon };
+    const { data } = await api.stopRoutes(q);
+    const routes = (data && data.routes) || [];
+    if (!routes.length) { toast('No route map available for this run', 'warn'); return; }
+    const want = cleanRouteName(boardMeta.routeName || '').toLowerCase();
+    let idx = routes.findIndex((rt) => cleanRouteName(rt.name || '').toLowerCase() === want);
+    if (idx < 0) idx = routes.findIndex((rt) => {
+      const n = cleanRouteName(rt.name || '').toLowerCase();
+      return n.includes(want) || want.includes(n);
+    });
+    if (idx < 0) idx = 0;
+    traceRoute({ id: null, name: boardMeta.stopName || '', lat: boardMeta.lat, lon: boardMeta.lon, kind: 'coach', ci: boardMeta.ci ?? null }, routes, idx);
+  } catch {
+    toast('Could not load the route map', 'warn');
+  }
+}
+
 function showRouteInfoBar(meta, routes, idx, color) {
   const holder = document.getElementById('map-canvas');
   if (infoBar) infoBar.remove();

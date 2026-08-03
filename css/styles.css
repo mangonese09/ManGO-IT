@@ -1083,3 +1083,6 @@ body { font-size: 1rem; }
 .stitch-legline .stitch-then { flex: 0 0 auto; }
 .stitch-chevron { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); color: var(--text-muted, #9a9a9a); font-size: 1.2rem; }
 .stitch-change { font-size: 0.8rem; margin: 8px 0; padding-left: 2px; }
+
+/* hub-board coach route sheet: jump to the traced line on the Map tab */
+.coach-map-btn { margin: 0 0 10px; display: inline-flex; align-items: center; gap: 6px; border-color: var(--mango, #ffb454); }

@@ -430,9 +430,21 @@ function routeStopRows(body, stops) {
 }
 
 // A coach row's remaining route: every stop from here to the terminus, with
-// scheduled times ("where does this coach go" answered in one tap).
+// scheduled times ("where does this coach go" answered in one tap), plus a
+// jump to the Map tab's traced line for the same route.
 function openCoachRoute(r, hubName) {
   const body = el('div', { class: 'iti-detail sched-sheet' });
+  if (r.ci != null || (isFinite(r.sLat) && isFinite(r.sLon))) {
+    body.appendChild(el('button', {
+      class: 'chip-btn coach-map-btn', text: '🗺 View route on map',
+      onclick: async () => {
+        const { showCoachRouteOnMap } = await import('./mapview.js');
+        closeSheet(); // route sheet
+        closeSheet(); // hub board beneath
+        showCoachRouteOnMap({ ci: r.ci, lat: r.sLat, lon: r.sLon, routeName: r.line, stopName: r.stopName || hubName });
+      },
+    }));
+  }
   body.appendChild(el('p', { class: 'muted sched-note', text:
     `${r.operator ? displayName(r.operator) + ' · ' : ''}Scheduled times — no live tracking.` }));
   body.appendChild(el('div', { class: 'sched-row' }, [

@@ -12,7 +12,7 @@ const ROOT = path.join(__dirname, '..');
 
 const TRANSITOUS = 'https://api.transitous.org';
 const VT = 'http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno';
-const UA = 'ManGO-IT/0.43.0 (+https://it.mangonese.dev; miconsig@gmail.com)';
+const UA = 'ManGO-IT/0.43.1 (+https://it.mangonese.dev; miconsig@gmail.com)';
 
 // per-day upstream request counter (Transitous asks consumers to know their volume)
 const dayCounts = {};
@@ -276,11 +276,15 @@ function coachBoard(lat, lon, radius = 300, days = null, all = false, withVia = 
           depMin: min + dayOff * 1440,
           // remaining calls after boarding WITH their times — a destination
           // search matches them, the row can say "reaches X at HH:MM", and a
-          // tap can show the full remaining route.
-          ...(withVia ? { via: trip.s.slice(k + 1).map(([i, m]) => ({
-            n: coachStops[i].n,
-            t: `${String(Math.floor(m / 60) % 24).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`,
-          })) } : {}),
+          // tap can show the full remaining route. ci + boarding coords let
+          // the client hand the row to the map's route tracer.
+          ...(withVia ? {
+            ci: idx, sLat: coachStops[idx].lat, sLon: coachStops[idx].lon,
+            via: trip.s.slice(k + 1).map(([i, m]) => ({
+              n: coachStops[i].n,
+              t: `${String(Math.floor(m / 60) % 24).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`,
+            })),
+          } : {}),
         });
         break;                                        // one boarding point per trip
       }
@@ -1061,7 +1065,7 @@ function coachRows(hub, withVia = false) {
     mode: 'COACH', line: r.route, headsign: r.headsign,
     timeISO: romeInstant(todayIso, r.depMin),
     operator: r.operator || null, stopName: r.stopName || hub.name, realtime: false, stopId: null,
-    ...(withVia ? { via: r.via || [] } : {}),
+    ...(withVia ? { via: r.via || [], ci: r.ci, sLat: r.sLat, sLon: r.sLon } : {}),
   }));
 }
 // URBAN (+ any rail Transitous also carries): stoptimes for the hub's nearest
@@ -1148,7 +1152,7 @@ function afterStation(stops, stationName) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.43.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.43.1', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)
