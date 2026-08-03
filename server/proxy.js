@@ -12,7 +12,7 @@ const ROOT = path.join(__dirname, '..');
 
 const TRANSITOUS = 'https://api.transitous.org';
 const VT = 'http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno';
-const UA = 'ManGO-IT/0.41.4 (+https://it.mangonese.dev; miconsig@gmail.com)';
+const UA = 'ManGO-IT/0.42.0 (+https://it.mangonese.dev; miconsig@gmail.com)';
 
 // per-day upstream request counter (Transitous asks consumers to know their volume)
 const dayCounts = {};
@@ -996,6 +996,26 @@ async function stoptimesData(stopId, n = 6, timeIso = null) {
     if (!seen.has(k) || (r.realTime && !seen.get(k).realTime)) seen.set(k, r);
   }
   rows = [...seen.values()];
+  // Trenitalia's GTFS ships EMPTY headsigns for many trips, leaving schedule
+  // rows that say "REG 21850" with no direction — unusable. VT knows every
+  // train's destination; enrich the blanks from it (cached per train, bounded
+  // fan-out, best-effort: a VT miss just leaves the row as it was).
+  const blanks = [...new Set(rows
+    .filter((r) => /RAIL|LONG_DISTANCE/.test(r.mode || '') && !r.headsign)
+    .map((r) => (r.routeShortName.match(/(\d{3,6})\s*$/) || [])[1])
+    .filter(Boolean))].slice(0, 15);
+  if (blanks.length) {
+    const dests = new Map();
+    await Promise.all(blanks.map(async (num) => {
+      const meta = await vtTrainMeta(num);
+      if (meta.destination) dests.set(num, meta.destination);
+    }));
+    for (const r of rows) {
+      if (r.headsign) continue;
+      const num = (r.routeShortName.match(/(\d{3,6})\s*$/) || [])[1];
+      if (num && dests.has(num)) r.headsign = dests.get(num);
+    }
+  }
   const out = { fetchedAt: Date.now(), stopTimes: rows };
   cacheSet(key, out, 60 * 1000);
   return out;
@@ -1077,26 +1097,32 @@ async function railRows(hub, withVia = false) {
   return rows;
 }
 
-// Stations a train calls at AFTER the given one, from VT andamentoTreno —
-// so a hub-board destination search can match a Messina-bound REG when you
-// type an intermediate stop like "Taormina". Stop lists don't change within
-// a run, so cache long. Any failure degrades to [] (search falls back to
-// headsign matching only).
-async function vtCallsAfter(trainNumber, stationName) {
-  const key = `vtvia:${trainNumber}`;
+// One cached VT lookup per train: its ordered stop list + destination.
+// Feeds both the hub-board "via" search (calls after a station) and the
+// empty-headsign enrichment in stoptimesData. Stop lists don't change within
+// a run, so cache long. Any failure degrades to empties.
+async function vtTrainMeta(trainNumber) {
+  const key = `vtmeta:${trainNumber}`;
   const hit = cacheGet(key);
-  if (hit) return afterStation(hit, stationName);
-  let stops = [];
+  if (hit) return hit;
+  const meta = { stops: [], destination: null };
   try {
     const auto = await upstream(`${VT}/cercaNumeroTrenoTrenoAutocomplete/${trainNumber}`, { asText: true });
     const c = pickVtCandidate(parseVtTrainAutocomplete(auto.data || ''), Date.now());
     if (c) {
       const res = await upstream(`${VT}/andamentoTreno/${c.originId}/${c.trainNumber}/${c.departureEpochMs}`);
-      stops = ((res.data && res.data.fermate) || []).map((f) => f.stazione).filter(Boolean);
+      const d = res.data || {};
+      meta.stops = (d.fermate || []).map((f) => f.stazione).filter(Boolean);
+      meta.destination = d.destinazione || meta.stops[meta.stops.length - 1] || null;
     }
-  } catch { /* VT down → no via matching for this train */ }
-  cacheSet(key, stops, 30 * 60 * 1000);
-  return afterStation(stops, stationName);
+  } catch { /* VT down → empties */ }
+  cacheSet(key, meta, 30 * 60 * 1000);
+  return meta;
+}
+// Stations a train calls at AFTER the given one — so a hub-board destination
+// search can match a Messina-bound REG when you type "Taormina".
+async function vtCallsAfter(trainNumber, stationName) {
+  return afterStation((await vtTrainMeta(trainNumber)).stops, stationName);
 }
 function afterStation(stops, stationName) {
   const want = String(stationName || '').toUpperCase();
@@ -1109,7 +1135,7 @@ function afterStation(stops, stationName) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.41.4', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.42.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)

@@ -57,8 +57,15 @@ export function cleanRouteName(name) {
   return displayName(s);
 }
 
+// Feed abbreviations worth spelling out — a suggestion row reading
+// "Catania Aer.Font" isn't a name anyone searched for.
+const EXPANSIONS = [
+  [/\bAer\.? ?Font\.?/i, 'Aeroporto Fontanarossa'],
+];
+
 export function displayName(name) {
   if (!name) return '';
+  for (const [re, full] of EXPANSIONS) name = String(name).replace(re, full);
   return String(name).split(' ').map((tok, i) => {
     if (!hasLetter.test(tok)) return tok;          // pure punctuation/numbers
     if (/\d/.test(tok)) return tok;                // S.S.113, KM90 …

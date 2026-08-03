@@ -11,7 +11,7 @@ const cases = [
   ['SAN MARCO via Calvario', 'San Marco via Calvario'],
   // already-clean names pass through untouched
   ['Palermo Lolli', 'Palermo Lolli'],
-  ['Catania Aer.Font', 'Catania Aer.Font'],
+  ['Catania Aer.Font', 'Catania Aeroporto Fontanarossa'], // feed abbreviation expanded (v0.42.0)
   ['Trapani (Papa Giovanni Paolo II)', 'Trapani (Papa Giovanni Paolo II)'],
   // roman numerals survive; lowercase words inside parens are respected
   ['CATANIA (piazza Giovanni XXIII)', 'Catania (piazza Giovanni XXIII)'],
@@ -60,3 +60,8 @@ for (const [input, want] of routeCases) {
     assert.strictEqual(cleanRouteName(input), want);
   });
 }
+
+test('displayName expands feed abbreviations (Aer.Font)', () => {
+  assert.strictEqual(displayName('Catania Aer.Font'), 'Catania Aeroporto Fontanarossa');
+  assert.strictEqual(displayName('CATANIA AER.FONT'), 'Catania Aeroporto Fontanarossa');
+});

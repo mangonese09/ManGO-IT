@@ -225,11 +225,13 @@ export async function openStopSchedule(s) {
         r.cancelled ? el('span', { class: 'badge badge-cancel', text: 'CANCELLED' }) : null,
         el('span', { class: 'dep-count', text: rowCountdown(r) }),
       ]);
-      // The selected day renders grouped by direction; on the Today view,
-      // departures on LATER days (the whole tail at a one-train-a-day stop)
-      // sit under explicit day headers, capped at 10.
+      // The selected day renders grouped by direction. The later-days tail
+      // (day-headed rows) exists for SPARSE stops, where "next 40" spans weeks
+      // and today alone would read as a dead stop — at a stop with a healthy
+      // board it just duplicated the Tomorrow chip, so it only renders when
+      // today is thin.
       const dayRows = rows.filter((r) => !r.iso || !isOtherRomeDay(r.iso) || forDate);
-      const later = forDate ? [] : rows.filter((r) => r.iso && isOtherRomeDay(r.iso)).slice(0, 10);
+      const later = (forDate || dayRows.length >= 5) ? [] : rows.filter((r) => r.iso && isOtherRomeDay(r.iso)).slice(0, 10);
       const dirs = [];
       for (const r of dayRows) { if (r.dir && !dirs.includes(r.dir)) dirs.push(r.dir); }
       if (dirs.length > 1) {

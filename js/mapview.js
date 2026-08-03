@@ -12,7 +12,7 @@ import { displayName, cleanRouteName } from './names.js';
 import { openStopSchedule, openHubBoard } from './saved.js';
 import { isFavStop, addFavStop, removeFavStop, getFavStops } from './store.js';
 import { toast } from './toast.js';
-import { classifySuggestion, suggestStar, placeStar } from './search.js';
+import { classifySuggestion, suggestStar, placeStar, rankSuggestions } from './search.js';
 
 // Favourite key — same scheme as Home/Saved: transit stops key by id, coach
 // stops (no stable id) by rounded coords.
@@ -894,20 +894,7 @@ function openMapSearch() {
         const { data } = await api.geocode(q);
         if (seq !== mapSearchSeq) return;
         results.innerHTML = '';
-        // Rank exact-name matches first: searching "Taormina" should lead with
-        // the town/station itself, not Catania street stops NAMED after it.
-        const ql = q.toLowerCase();
-        const score = (r) => {
-          const n = (r.name || '').toLowerCase();
-          const nameRank = n === ql ? 0 : n.startsWith(ql) ? 1 : 2;
-          const { kind } = classifySuggestion(r);
-          const kindRank = kind === 'town' ? 0 : kind === 'train station' ? 1 : kind === 'coach stop' ? 2 : 3;
-          return nameRank * 10 + kindRank;
-        };
-        const rows = (data || []).filter((r) => isFinite(r.lat) && isFinite(r.lon))
-          .map((r, i) => ({ r, i, sc: score(r) }))
-          .sort((a, b) => a.sc - b.sc || a.i - b.i)
-          .slice(0, 8).map((x) => x.r);
+        const rows = rankSuggestions((data || []).filter((r) => isFinite(r.lat) && isFinite(r.lon)), q).slice(0, 8);
         if (!rows.length) { results.appendChild(el('div', { class: 'suggest-row suggest-dead muted', text: 'No match' })); return; }
         for (const r of rows) {
           // Same row anatomy as the Home suggestions: mode icon, name,

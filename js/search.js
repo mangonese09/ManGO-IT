@@ -262,6 +262,23 @@ export function classifySuggestion(r) {
   return { iconEl, kind };
 }
 
+// Exact-name-first ranking, shared by Home + map search: typing "palermo"
+// should lead with Palermo the city and its main station, not Catania street
+// stops NAMED after Palermo. Ties keep the server's Sicily-first order.
+export function rankSuggestions(rows, q) {
+  const ql = (q || '').trim().toLowerCase();
+  const score = (r) => {
+    const n = (r.name || '').toLowerCase();
+    const nameRank = n === ql ? 0 : n.startsWith(ql) ? 1 : 2;
+    const { kind } = classifySuggestion(r);
+    const kindRank = kind === 'town' ? 0 : kind === 'train station' ? 1 : kind === 'coach stop' ? 2 : 3;
+    return nameRank * 10 + kindRank;
+  };
+  return rows.map((r, i) => ({ r, i, sc: score(r) }))
+    .sort((a, b) => a.sc - b.sc || a.i - b.i)
+    .map((x) => x.r);
+}
+
 // star a stop/station straight from the Home suggestions -> Saved favorites
 export function suggestStar(r, kind) {
   const key = r.type === 'STOP' && r.id ? r.id : `${r.lat.toFixed(5)},${r.lon.toFixed(5)}`;
@@ -335,15 +352,16 @@ async function suggest(which, q) {
     list.innerHTML = '';
     // show up to 12 (the geocoder caps at ~10 anyway): with Sicily-first ranking
     // this surfaces more Sicilian streets so a nearby one isn't cut off the list
-    for (const r of data.slice(0, 12)) {
+    for (const r of rankSuggestions(data, q).slice(0, 12)) {
       // every result states WHAT it is: train station / metro / tram /
       // city bus stop / intercity coach stop / town / address. The neutral
       // default is the mango pin (was a bare red 📌 emoji).
       const { iconEl, kind } = classifySuggestion(r);
-      // context line: "what it is · town · province", never just an echo of the name
+      // context line: "what it is · town · province", never just an echo of
+      // the name ("· Italia" is geocoder filler, not context — drop it)
       const bits = [];
       if (kind) bits.push(kind);
-      if (r.town && r.town.toLowerCase() !== r.name.toLowerCase()) bits.push(displayName(r.town));
+      if (r.town && r.town !== 'Italia' && r.town.toLowerCase() !== r.name.toLowerCase()) bits.push(displayName(r.town));
       if (r.province && r.province !== r.town) bits.push(`prov. ${r.province}`);
       if (!bits.length && r.province) bits.push(`prov. ${r.province}`);
       list.appendChild(el('button', {
@@ -637,6 +655,9 @@ function directRunMinutes(r) {
 // ── CROSS-NETWORK HUB STITCH (coach + train) ──
 async function maybeRenderViaHub(whenVal, mySeq) {
   if (!sel.from?.lat || !sel.to?.place) return false;
+  // Mode toggles are a contract: every stitch contains a coach leg, so with
+  // buses off the whole block is out (the plan/direct blocks already comply).
+  if (!modeSel.bus) return false;
   const results = document.getElementById('results');
   const note = el('div', { class: 'loading', text: 'Checking coach + train connections…' });
   results.appendChild(note);
@@ -651,7 +672,9 @@ async function maybeRenderViaHub(whenVal, mySeq) {
   } catch { note.remove(); return false; }
   if (mySeq !== searchSeq) { note.remove(); return false; }
   note.remove();
-  const stitches = (data?.stitches || []).filter((s) => s.coach && s.onward?.legs?.length);
+  const stitches = (data?.stitches || []).filter((s) => s.coach && s.onward?.legs?.length)
+    // trains off → drop stitches whose live half rides a rail leg
+    .filter((s) => modeSel.train || !(s.onward.legs || []).some((l) => /RAIL|LONG_DISTANCE/.test(l.mode || '')));
   if (!stitches.length) return false;
   renderViaHubBlock(stitches);
   return true;
@@ -694,26 +717,33 @@ function renderViaHubBlock(stitches) {
   const results = document.getElementById('results');
   const kids = [
     el('div', { class: 'direct-head' }, [
-      el('strong', { text: 'Coach + train — via a hub' }),
-      el('p', { class: 'muted', text: 'Our coaches aren’t in the main router yet, so this is stitched: a scheduled coach plus the live connection, changing in the city.' }),
+      el('strong', { text: 'Change in the hub city' }),
+      el('p', { class: 'muted', text: 'Coach legs run on their printed schedule — no live tracking.' }),
     ]),
   ];
+  // Leg lines use the same mango mode icons as every other result — a stitch
+  // is just an itinerary with a change, not a different kind of thing.
+  const legLine = (mode, text, then = false) => el('div', { class: 'stitch-legline muted' }, [
+    then ? el('span', { class: 'stitch-then', text: 'then ' }) : null,
+    modeIcon(mode, 'mode-img mode-img-sm'),
+    el('span', { text: ` ${text}` }),
+  ]);
   for (const s of stitches) {
     const t = stitchTimes(s);
-    const coachLine = `🚌 coach ${s.coach.dep} → ${s.coach.arr}${plusTag(s.coach.arrPlus)} to ${displayName(s.coach.to)}`;
-    const railLine = `${onwardSummary(s.onward)} to ${s.hub}`;
+    const onwardMode = ((s.onward.legs || []).find((l) => l.mode !== 'WALK') || {}).mode || 'RAIL';
+    const coachText = `${s.coach.dep} → ${s.coach.arr}${plusTag(s.coach.arrPlus)} to ${displayName(s.coach.to)}`;
     kids.push(el('button', { class: 'card iti-card stitch-card', onclick: () => openStitchDetail(s) }, [
       el('div', { class: 'iti-times' }, [
         el('span', { class: 'iti-time', text: `${t.dep} → ${t.arr}` }),
         el('span', { class: 'iti-dur', text: `via ${s.hub}` }),
       ]),
       s.reverse
-        ? el('div', { class: 'stitch-legline muted', text: `🚆 ${railLine}` })
-        : el('div', { class: 'stitch-legline muted', text: coachLine }),
+        ? legLine(onwardMode, `${onwardSummary(s.onward)} to ${s.hub}`)
+        : legLine('COACH', coachText),
       s.reverse
-        ? el('div', { class: 'stitch-legline muted', text: `then ${coachLine}` })
-        : el('div', { class: 'stitch-legline muted', text: `then ${onwardSummary(s.onward)} to ${displayName(destName())}` }),
-      el('span', { class: 'dep-chevron', text: '›' }),
+        ? legLine('COACH', coachText, true)
+        : legLine(onwardMode, `${onwardSummary(s.onward)} to ${displayName(destName())}`, true),
+      el('span', { class: 'dep-chevron stitch-chevron', text: '›' }),
     ]));
   }
   results.appendChild(el('div', { class: 'direct-block' }, kids));
@@ -723,7 +753,7 @@ function destName() { return sel.to?.name || 'destination'; }
 
 function stitchChangeNote(atName) {
   return el('div', { class: 'stitch-change muted', text:
-    `↕ Change at ${displayName(atName)}. The coach isn’t in the live router — confirm its scheduled time with the operator before you rely on this connection.` });
+    `↕ Change at ${displayName(atName)}. The coach runs on its printed schedule (no live tracking) — allow some margin at the change.` });
 }
 
 function openStitchDetail(s) {
