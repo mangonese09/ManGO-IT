@@ -8,6 +8,11 @@
 # saturday / sunday via SERVICEID_1/3/6), so we faithfully correct the obvious
 # template bug: keep the day-of-week masks and start_date, extend end_date to the
 # published 20280228. Every other file is copied through byte-for-byte.
+#
+# feed_info.txt carries the SAME stale template stamp (feed_end_date 20250228)
+# and must be corrected too: GTFS consumers give feed_info.txt precedence over
+# calendar end dates when judging expiry (Transitous CI rejected the feed as
+# "expired" off feed_info alone — found via PR #2327's import check).
 import csv, io, sys, zipfile, os
 
 SRC = os.path.join(os.path.dirname(__file__), 'data', 'sources', 'fce', 'fce.gtfs.zip')
@@ -30,6 +35,22 @@ def rewrite_calendar(raw: bytes) -> bytes:
     print(f'  calendar.txt: extended end_date on {changed}/{len(rows)} service rows -> {NEW_END}')
     return buf.getvalue().encode('utf-8')
 
+def rewrite_feed_info(raw: bytes) -> bytes:
+    rd = csv.DictReader(io.StringIO(raw.decode('utf-8-sig')))
+    fields = rd.fieldnames
+    rows = list(rd)
+    changed = 0
+    for r in rows:
+        if r.get('feed_end_date') not in (None, '', NEW_END):
+            r['feed_end_date'] = NEW_END
+            changed += 1
+    buf = io.StringIO()
+    w = csv.DictWriter(buf, fieldnames=fields, lineterminator='\n')
+    w.writeheader()
+    w.writerows(rows)
+    print(f'  feed_info.txt: extended feed_end_date on {changed}/{len(rows)} rows -> {NEW_END}')
+    return buf.getvalue().encode('utf-8')
+
 def main():
     with zipfile.ZipFile(SRC) as zin:
         names = zin.namelist()
@@ -49,6 +70,8 @@ def main():
                 data = zin.read(n)
                 if n == 'calendar.txt':
                     data = rewrite_calendar(data)
+                elif n == 'feed_info.txt':
+                    data = rewrite_feed_info(data)
                 zout.writestr(n, data)
     print(f'  wrote {OUT} ({os.path.getsize(OUT):,} bytes)')
 
