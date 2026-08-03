@@ -184,3 +184,7 @@ export function confirmModal(message, { confirmText = 'Delete', danger = true } 
     document.body.appendChild(overlay);
   });
 }
+
+// Plain magnifier glyph, stroke = currentColor (mango via CSS) — the single
+// search icon everywhere (replaced the mango-fruit lens, user call 2026-08-02).
+export const LENS_SVG = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="15.6" y1="15.6" x2="21" y2="21"/></svg>';

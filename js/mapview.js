@@ -6,7 +6,7 @@
 // If it can't load (first visit offline), the old nearest-stops list renders.
 
 import { api } from './api.js';
-import { el, modeIcon, openSheet, closeSheet } from './ui.js';
+import { el, modeIcon, openSheet, closeSheet, LENS_SVG } from './ui.js';
 import { getLastPos } from './board.js';
 import { displayName, cleanRouteName } from './names.js';
 import { openStopSchedule, openHubBoard } from './saved.js';
@@ -864,9 +864,7 @@ function buildControls() {
     return chip;
   };
   // icon-only search keeps the whole bar to one line on a 390px phone
-  const search = el('button', { class: 'map-chip map-search-btn', 'aria-label': 'Search a place', onclick: openMapSearch }, [
-    el('img', { class: 'map-search-img', src: '/icons/search-mango.svg', alt: '', width: '19', height: '19' }),
-  ]);
+  const search = el('button', { class: 'map-chip map-search-btn', 'aria-label': 'Search a place', html: LENS_SVG, onclick: openMapSearch });
   // The bar sits ABOVE the map (normal flow), not overlaid on the tiles —
   // chips stop covering the viewport and wrap freely on narrow screens.
   const bar = el('div', { class: 'map-controls' }, [search, ...MAP_CHIPS.map(mkChip)]);

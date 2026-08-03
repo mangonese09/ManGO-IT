@@ -782,9 +782,10 @@ body { font-size: 1rem; }
 .map-chip.chip-none:not(.on) { opacity: 0.3; cursor: default; }
 .map-chip.chip-none .mode-img-sm { filter: grayscale(1); }
 .map-chip.on, .map-search-btn { border-color: var(--mango, #ffb454); }
-/* icon-only chip must read at the same visual weight/height as its neighbours */
-.map-search-btn { color: #e7ecf3; padding: 5px 8px; }
-.map-search-img { width: 19px; height: 19px; display: block; }
+/* icon-only chip must read at the same visual weight/height as its neighbours;
+   mango magnifier glyph in BOTH themes (the one search icon app-wide) */
+.map-search-btn { color: var(--mango, #ffb454); padding: 6px 8px; }
+.map-search-btn svg { display: block; }
 
 /* #4 Place-search sheet */
 .map-search-body { display: flex; flex-direction: column; gap: 10px; padding: 4px 2px 8px; }
@@ -923,7 +924,6 @@ body { font-size: 1rem; }
 :root[data-theme="light"] .map-chip {
   background: rgba(255,255,255,0.92); color: #22303e; border-color: rgba(0,0,0,0.18);
 }
-:root[data-theme="light"] .map-search-btn { color: #22303e; }
 #map-canvas.tiles-light .map-locate-btn {
   background: rgba(255,255,255,0.92); border-color: rgba(0,0,0,0.16);
 }

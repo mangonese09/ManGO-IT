@@ -1,6 +1,6 @@
 // ── SAVED (favorite stops + pinned departures) ──
 import { api } from './api.js';
-import { el, modeMeta, modeIcon, confirmModal, openSheet, closeSheet, placeIcon, placeIconKey, PLACE_ICONS } from './ui.js';
+import { el, modeMeta, modeIcon, confirmModal, openSheet, closeSheet, placeIcon, placeIconKey, PLACE_ICONS, LENS_SVG } from './ui.js';
 import { romeTime, romeDay, countdownText, isOtherRomeDay, romeWallToIso } from './time.js';
 import { getSaved, purgeSaved, removeSaved, getFavStops, addFavStop, removeFavStop, isFavStop, getPlacesSorted, addPlace, removePlace, setHomePlace, setPlaceIcon } from './store.js';
 import { toast } from './toast.js';
@@ -384,9 +384,7 @@ export async function openHubBoard(hub) {
   searchInput.addEventListener('input', () => { query = searchInput.value.trim().toLowerCase(); renderRows(); });
   const searchBtn = el('button', {
     class: 'hub-head-btn hub-head-lens', 'aria-label': 'Search this board',
-    // a plain magnifier in mango (user call) — the mango-fruit lens read as
-    // decoration here; stroke uses currentColor so the CSS owns the colour
-    html: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><line x1="15.6" y1="15.6" x2="21" y2="21"/></svg>',
+    html: LENS_SVG, // plain mango magnifier — the one search glyph app-wide
     onclick: () => {
       searchInput.hidden = !searchInput.hidden;
       if (!searchInput.hidden) searchInput.focus();
