@@ -111,6 +111,18 @@ export const api = {
       cacheKey: `vtboard:${stopId}`, source: 'viaggiatreno',
     }),
 
+  // Route + geometry for one network trip (city bus / train) → map tracer.
+  tripShape: (tripId) =>
+    getJson(`/api/trip-shape?tripId=${encodeURIComponent(tripId)}`, {
+      cacheKey: `tsh:${tripId}`, source: 'transitous',
+    }),
+
+  // Trip shape for a VT train row (no tripId): matched server-side at the hub.
+  railShape: (hubId, train, timeISO) =>
+    getJson(`/api/rail-shape?hubId=${encodeURIComponent(hubId)}&train=${encodeURIComponent(train)}${timeISO ? `&time=${encodeURIComponent(timeISO)}` : ''}`, {
+      source: 'transitous',
+    }),
+
   // Unified rail+coach+urban departures board for a curated hub. full=true
   // fetches the whole rest of today with intermediate calls (destination search).
   hubBoard: (hubId, full = false) =>

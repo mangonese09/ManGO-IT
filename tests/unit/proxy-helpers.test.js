@@ -284,3 +284,12 @@ test('afterStation returns the calls after the boarding station', () => {
   assert.deepStrictEqual(afterStation(stops, 'MESSINA CENTRALE'), stops);
   assert.deepStrictEqual(afterStation([], 'X'), []);
 });
+
+test('decodePolyline decodes the classic Google example (precision 5)', () => {
+  const { decodePolyline } = require('../../server/proxy.js');
+  const pts = decodePolyline('_p~iF~ps|U_ulLnnqC_mqNvxq`@', 5);
+  assert.strictEqual(pts.length, 3);
+  assert.deepStrictEqual(pts[0], [38.5, -120.2]);
+  assert.deepStrictEqual(pts[1], [40.7, -120.95]);
+  assert.deepStrictEqual(pts[2], [43.252, -126.453]);
+});

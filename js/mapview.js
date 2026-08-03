@@ -633,13 +633,30 @@ function traceRoute(meta, routes, idx) {
 // NOT drop the trace. One-shot suppress that resets after this event tick.
 function keepTrace() { suppressClearOnce = true; setTimeout(() => { suppressClearOnce = false; }, 0); }
 
+// Switch to the Map tab and wait for the (lazy-loaded) leaflet instance.
+async function mapTabReady() {
+  document.getElementById('nav-map')?.click();
+  for (let i = 0; i < 60 && !map; i++) await new Promise((r) => setTimeout(r, 100));
+  return !!map;
+}
+
+// Trace an already-normalized trip shape (from /api/trip-shape or
+// /api/rail-shape): real network geometry + stop dots — trains and city
+// buses get the same treatment as coaches.
+export async function showTripShapeOnMap(rt, origin = {}) {
+  if (!(await mapTabReady())) { toast('Map unavailable right now', 'warn'); return; }
+  const s0 = (rt.stops || [])[0] || {};
+  traceRoute({
+    id: null, name: origin.name || s0.name || '', kind: 'transit',
+    lat: origin.lat != null ? origin.lat : s0.lat, lon: origin.lon != null ? origin.lon : s0.lon,
+  }, [rt], 0);
+}
+
 // Entry point for OTHER surfaces (hub-board coach route sheet): jump to the
 // Map tab and trace this coach route — same road-snapped line + stop dots as
 // tapping the stop's pin. boardMeta: { ci?, lat, lon, routeName, stopName }.
 export async function showCoachRouteOnMap(boardMeta) {
-  document.getElementById('nav-map')?.click();
-  for (let i = 0; i < 60 && !map; i++) await new Promise((r) => setTimeout(r, 100)); // leaflet lazy-loads
-  if (!map) { toast('Map unavailable right now', 'warn'); return; }
+  if (!(await mapTabReady())) { toast('Map unavailable right now', 'warn'); return; }
   try {
     const q = boardMeta.ci != null ? { ci: boardMeta.ci } : { lat: boardMeta.lat, lon: boardMeta.lon };
     const { data } = await api.stopRoutes(q);

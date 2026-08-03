@@ -12,7 +12,7 @@ const ROOT = path.join(__dirname, '..');
 
 const TRANSITOUS = 'https://api.transitous.org';
 const VT = 'http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno';
-const UA = 'ManGO-IT/0.43.1 (+https://it.mangonese.dev; miconsig@gmail.com)';
+const UA = 'ManGO-IT/0.44.0 (+https://it.mangonese.dev; miconsig@gmail.com)';
 
 // per-day upstream request counter (Transitous asks consumers to know their volume)
 const dayCounts = {};
@@ -979,6 +979,54 @@ async function transitStopsInRadius(lat, lon, r) {
   }));
 }
 
+// Google encoded-polyline decoder (MOTIS legGeometry, precision usually 7).
+function decodePolyline(str, precision = 7) {
+  const factor = Math.pow(10, precision);
+  let index = 0, lat = 0, lon = 0;
+  const path = [];
+  while (index < str.length) {
+    for (const which of [0, 1]) {
+      let result = 0, shift = 0, b;
+      do { b = str.charCodeAt(index++) - 63; result |= (b & 0x1f) << shift; shift += 5; } while (b >= 0x20);
+      const d = (result & 1) ? ~(result >> 1) : (result >> 1);
+      if (which === 0) lat += d; else lon += d;
+    }
+    path.push([lat / factor, lon / factor]);
+  }
+  return path;
+}
+
+function romeClockMs(ms) {
+  if (!ms || !isFinite(ms)) return null;
+  return new Intl.DateTimeFormat('en-GB', { timeZone: 'Europe/Rome', hour: '2-digit', minute: '2-digit', hour12: false }).format(new Date(ms));
+}
+
+// One Transitous trip normalized for the map tracer: ordered stops with
+// clocks + the real route geometry. Works for ANY network trip — city buses
+// and trains alike (Trenitalia trips ship track polylines).
+async function tripShape(tripId) {
+  if (!tripId) throw httpError(400, 'tripId required');
+  const key = `trip:${tripId}`;
+  const hit = cacheGet(key);
+  if (hit) return hit;
+  const { data } = await upstream(`${TRANSITOUS}/api/v1/trip?tripId=${encodeURIComponent(tripId)}`);
+  const leg = ((data && data.legs) || []).find((l) => l.mode !== 'WALK');
+  if (!leg) throw httpError(404, 'no transit leg on this trip');
+  const pts = [leg.from, ...(leg.intermediateStops || []), leg.to].filter((p) => p && isFinite(p.lat) && isFinite(p.lon));
+  const shape = {
+    name: leg.routeShortName || leg.displayName || '', mode: leg.mode,
+    operator: leg.agencyName || null, headsign: leg.headsign || '',
+    stops: pts.map((p) => ({
+      name: p.name, lat: p.lat, lon: p.lon, stopId: p.stopId || null,
+      t: romeClockMs(Date.parse(p.departure || p.scheduledDeparture || p.arrival || p.scheduledArrival || '')),
+    })),
+    path: (leg.legGeometry && leg.legGeometry.points)
+      ? decodePolyline(leg.legGeometry.points, leg.legGeometry.precision || 7) : null,
+  };
+  cacheSet(key, shape, 5 * 60 * 1000);
+  return shape;
+}
+
 // Normalized upcoming stoptimes for a Transitous stop. The producer behind
 // /api/stoptimes (identical shape + 60s cache).
 async function stoptimesData(stopId, n = 6, timeIso = null) {
@@ -1085,6 +1133,7 @@ async function urbanRows(hub, full = false) {
       mode: 'BUS', line: st.routeShortName || '', headsign: st.headsign || '',
       timeISO: st.departure || st.scheduledDeparture, operator: st.agencyName || null,
       stopName: st.stopName || s.name, realtime: !!st.realTime, stopId: s.stopId,
+      tripId: st.tripId || null, // → /api/trip-shape (route + geometry on tap)
     }))).catch(() => [])));
   return [].concat(...lists);
 }
@@ -1152,7 +1201,7 @@ function afterStation(stops, stationName) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.43.1', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.44.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)
@@ -1479,6 +1528,35 @@ const routes = {
     return { hub: { id: hub.id, name: hub.name, kind: hub.kind }, asOf: now, full, departures };
   },
 
+  // Route + geometry for one network trip (city bus / train) — the map tracer's
+  // food. tripId comes off hub-board urban rows.
+  'GET /api/trip-shape': async (q) => tripShape(q.get('tripId')),
+
+  // Same, but for a VT-sourced train row (no tripId): match the train number
+  // against the hub station's own Transitous stoptimes around the departure
+  // time, then fetch that trip's shape.
+  'GET /api/rail-shape': async (q) => {
+    const hub = TRANSIT_HUBS.find((h) => h.id === q.get('hubId'));
+    const train = (q.get('train') || '').replace(/\D/g, '');
+    if (!hub || !train) throw httpError(400, 'hubId + train required');
+    const timeISO = q.get('time');
+    const railStops = (await transitStopsInRadius(hub.lat, hub.lon, Math.max(hub.radiusM, 1200)))
+      .filter((s) => (s.modes || []).some((m) => /RAIL|LONG_DISTANCE/.test(m)))
+      .sort((a, b) => a.dist - b.dist);
+    if (!railStops.length) throw httpError(404, 'no rail stop at this hub');
+    // The merged station area is flooded with urban rows (Palermo Centrale =
+    // AMAT every couple of minutes), so ask upstream for a WIDE window and
+    // filter to rail before matching the train number.
+    const fromIso = timeISO ? new Date(Date.parse(timeISO) - 10 * 60000).toISOString() : null;
+    const timeQ = fromIso ? `&time=${encodeURIComponent(fromIso)}` : '';
+    const { data } = await upstream(`${TRANSITOUS}/api/v1/stoptimes?stopId=${encodeURIComponent(railStops[0].stopId)}&n=60${timeQ}`);
+    const numRe = new RegExp(`\\b${train}\\s*$`);
+    const row = ((data && data.stopTimes) || []).find((st) =>
+      /RAIL|LONG_DISTANCE/.test(st.mode || '') && st.tripId && numRe.test(st.routeShortName || st.displayName || ''));
+    if (!row) throw httpError(404, 'train not found in network data');
+    return tripShape(row.tripId);
+  },
+
   'GET /api/direct': async (q) => {
     const fLat = Number(q.get('fromLat')), fLon = Number(q.get('fromLon'));
     const tLat = Number(q.get('toLat')), tLon = Number(q.get('toLon'));
@@ -1732,4 +1810,4 @@ if (require.main === module) {
   server.listen(PORT, () => console.log(`ManGO:IT proxy on :${PORT}${STATIC ? ' (static+api)' : ''}`));
 }
 
-module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon, vtSilence, dropDominated, parseBias, geoScore, clusterStopsByProximity, clusterAreaName, HUBS: TRANSIT_HUBS, hubsInBbox, mergeDepartures, afterStation };
+module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon, vtSilence, dropDominated, parseBias, geoScore, clusterStopsByProximity, clusterAreaName, HUBS: TRANSIT_HUBS, hubsInBbox, mergeDepartures, afterStation, decodePolyline };

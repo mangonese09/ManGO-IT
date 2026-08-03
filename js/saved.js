@@ -356,15 +356,16 @@ export async function openHubBoard(hub) {
         r.realtime ? el('span', { class: 'badge badge-live', text: 'live' }) : null,
         el('span', { class: 'dep-count', text: past ? '' : countdownText(r.timeISO) }),
       ];
-      // rows tap through: trains → live status + full call list; coaches with
-      // route data → the remaining route with times
+      // rows tap through: trains → live status + calls + map; coaches → the
+      // remaining route with times + map; city buses → network route + map
       const rowCls = `sched-row${past ? ' sched-past' : ''}`;
-      if (r.mode === 'RAIL' && r.trainNumber) {
+      let open = null;
+      if (r.mode === 'RAIL' && r.trainNumber) open = () => openTrainLive(r, hub);
+      else if (r.mode === 'COACH' && Array.isArray(r.via) && r.via.length) open = () => openCoachRoute(r, hub.name);
+      else if (r.mode === 'BUS' && r.tripId) open = () => openTripRoute(r);
+      if (open) {
         cells.push(el('span', { class: 'dep-chevron', text: '›' }));
-        list.appendChild(el('button', { class: `${rowCls} sched-row-btn`, onclick: () => openTrainLive(r) }, cells));
-      } else if (r.mode === 'COACH' && Array.isArray(r.via) && r.via.length) {
-        cells.push(el('span', { class: 'dep-chevron', text: '›' }));
-        list.appendChild(el('button', { class: `${rowCls} sched-row-btn`, onclick: () => openCoachRoute(r, hub.name) }, cells));
+        list.appendChild(el('button', { class: `${rowCls} sched-row-btn`, onclick: open }, cells));
       } else {
         list.appendChild(el('div', { class: rowCls }, cells));
       }
@@ -418,6 +419,43 @@ export async function openHubBoard(hub) {
   renderRows();
 }
 
+// "View route on map" — jumps to the Map tab and traces the given shape
+// (already-normalized {stops, path}) via the shared tracer.
+function shapeMapBtn(getShape, originName) {
+  return el('button', {
+    class: 'chip-btn coach-map-btn', text: '🗺 View route on map',
+    onclick: async () => {
+      try {
+        const shape = await getShape();
+        const { showTripShapeOnMap } = await import('./mapview.js');
+        closeSheet(); // this sheet
+        closeSheet(); // hub board beneath
+        showTripShapeOnMap(shape, { name: originName || '' });
+      } catch {
+        toast('No route map available for this run', 'warn');
+      }
+    },
+  });
+}
+
+// City-bus row → its full network route (stops + times) with a map jump.
+async function openTripRoute(r) {
+  const body = el('div', { class: 'iti-detail sched-sheet' });
+  body.appendChild(el('div', { class: 'loading', text: 'Loading route…' }));
+  openSheet(body, { title: `${(r.line || '').trim() || 'Route'} → ${displayName((r.headsign || '').trim())}` });
+  try {
+    const { data: shape } = await api.tripShape(r.tripId);
+    body.innerHTML = '';
+    body.appendChild(shapeMapBtn(() => shape, r.stopName));
+    body.appendChild(el('p', { class: 'muted sched-note', text:
+      `${shape.operator ? displayName(shape.operator) + ' · ' : ''}Network schedule.` }));
+    routeStopRows(body, shape.stops.map((s2) => ({ n: s2.name, t: s2.t })));
+  } catch {
+    body.innerHTML = '';
+    body.appendChild(el('p', { class: 'muted', text: 'Could not load this route — check connectivity and retry.' }));
+  }
+}
+
 // Ordered stop list rows shared by the train + coach route sheets.
 function routeStopRows(body, stops) {
   for (const s of stops) {
@@ -455,16 +493,19 @@ function openCoachRoute(r, hubName) {
   openSheet(body, { title: displayName((r.line || '').trim() || 'Coach route') });
 }
 
-// Live status for one train off a hub board row — delay, last seen, and the
-// full ordered call list (VT's fermate; falls back to the row's via data).
-async function openTrainLive(r) {
+// Live status for one train off a hub board row — delay, last seen, the
+// full ordered call list (VT's fermate; falls back to the row's via data),
+// and a map jump (trip matched server-side against the network data).
+async function openTrainLive(r, hub) {
   const body = el('div', { class: 'iti-detail train-live sched-sheet' });
   body.appendChild(el('div', { class: 'loading', text: 'Checking live status…' }));
   openSheet(body, { title: `${(r.line || '').trim() || 'Train'} → ${displayName((r.headsign || '').trim())}` });
   const viaFallback = (r.via || []).map((v) => (v && v.n != null ? v : { n: String(v || ''), t: null }));
+  const mapBtn = hub ? shapeMapBtn(async () => (await api.railShape(hub.hubId, r.trainNumber, r.timeISO)).data, hub.name) : null;
   try {
     const { data } = await api.vtLive(r.trainNumber);
     body.innerHTML = '';
+    if (mapBtn) body.appendChild(mapBtn);
     if (!data || !data.live) {
       body.appendChild(el('p', { class: 'muted', text: 'No live data for this train right now — it may not have departed yet.' }));
       if (viaFallback.length) {
@@ -492,6 +533,7 @@ async function openTrainLive(r) {
     }
   } catch {
     body.innerHTML = '';
+    if (mapBtn) body.appendChild(mapBtn);
     body.appendChild(el('p', { class: 'muted', text: 'Could not reach live tracking — check connectivity and retry.' }));
     if (viaFallback.length) {
       body.appendChild(el('div', { class: 'sched-dir', text: 'Calls at' }));
