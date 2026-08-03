@@ -660,13 +660,23 @@ let pickCleanup = null;
 export async function pickPointOnMap() {
   if (!(await mapTabReady())) { toast('Map unavailable right now', 'warn'); return null; }
   if (pickCleanup) pickCleanup(); // a stale pick session — drop it
+  // Street-level precision is the whole point — from the island overview the
+  // pin hangs over open sea and reads as a glitch. Zoom in first (to the
+  // user's position when known).
+  if (map.getZoom() < 12) {
+    const pos = getLastPos();
+    map.setView(pos ? [pos.lat, pos.lon] : map.getCenter(), 15);
+  }
   const canvas = document.getElementById('map-canvas');
   canvas.classList.add('picking');
   const pin = el('div', { class: 'pick-pin' }, [el('img', { src: '/icons/place-pin.png', alt: '', width: '36', height: '36' })]);
-  const addr = el('div', { class: 'pick-addr', text: 'Move the map to drop the pin' });
+  const addr = el('div', { class: 'pick-addr', text: 'Move the map to place the pin' });
   const useBtn = el('button', { class: 'btn btn-primary pick-use', text: 'Use this spot' });
   const cancelBtn = el('button', { class: 'sheet-close', 'aria-label': 'Cancel pick', text: '✕' });
-  const bar = el('div', { class: 'pick-bar' }, [addr, useBtn, cancelBtn]);
+  const bar = el('div', { class: 'pick-bar' }, [
+    el('div', { class: 'pick-text' }, [el('div', { class: 'pick-title', text: 'Choose on map' }), addr]),
+    useBtn, cancelBtn,
+  ]);
   canvas.appendChild(pin);
   canvas.appendChild(bar);
   let lastLabel = null;
@@ -684,8 +694,14 @@ export async function pickPointOnMap() {
   refresh();
   return new Promise((resolve) => {
     const done = (val) => { if (!pickCleanup) return; pickCleanup(); resolve(val); };
+    // Leaving the tab = cancelling — without this the pin + bar lingered on
+    // the map canvas forever after a nav switch ("floating icon").
+    const navEls = [...document.querySelectorAll('.nav-btn')];
+    const onNav = () => done(null);
+    navEls.forEach((b) => b.addEventListener('click', onNav));
     pickCleanup = () => {
       map.off('moveend', onMove); clearTimeout(debounce);
+      navEls.forEach((b) => b.removeEventListener('click', onNav));
       pin.remove(); bar.remove(); canvas.classList.remove('picking');
       pickCleanup = null;
     };

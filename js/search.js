@@ -280,8 +280,8 @@ async function chooseOnMap(which) {
   document.getElementById(`${which}-suggest`).hidden = true;
   const { pickPointOnMap } = await import('./mapview.js');
   const pick = await pickPointOnMap();
+  if (!pick) return; // cancelled (✕ or a nav tap) — stay wherever the user went
   document.getElementById('nav-home')?.click();
-  if (!pick) return;
   sel[which] = { name: pick.label, place: `${pick.lat.toFixed(5)},${pick.lon.toFixed(5)}`, lat: pick.lat, lon: pick.lon };
   document.getElementById(`${which}-input`).value = pick.label;
   syncClears();
