@@ -12,7 +12,7 @@ const ROOT = path.join(__dirname, '..');
 
 const TRANSITOUS = 'https://api.transitous.org';
 const VT = 'http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno';
-const UA = 'ManGO-IT/0.44.0 (+https://it.mangonese.dev; miconsig@gmail.com)';
+const UA = 'ManGO-IT/0.45.0 (+https://it.mangonese.dev; miconsig@gmail.com)';
 
 // per-day upstream request counter (Transitous asks consumers to know their volume)
 const dayCounts = {};
@@ -1201,7 +1201,7 @@ function afterStation(stops, stationName) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.44.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: '0.45.0', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)
@@ -1526,6 +1526,28 @@ const routes = {
     const departures = mergeDepartures([rail, coach, urban], now,
       full ? { perMode: 500, cap: 1000, dayStartMs: Date.parse(romeInstant(romeParts().iso, 0)) } : { perMode: 10, cap: 40 });
     return { hub: { id: hub.id, name: hub.name, kind: hub.kind }, asOf: now, full, departures };
+  },
+
+  // Reverse geocode for the map's "Choose on map" pin: nearest address + town.
+  'GET /api/rev': async (q) => {
+    const lat = Number(q.get('lat')), lon = Number(q.get('lon'));
+    if (![lat, lon].every(isFinite)) throw httpError(400, 'lat/lon required');
+    const key = `rev:${lat.toFixed(5)},${lon.toFixed(5)}`;
+    const hit = cacheGet(key);
+    if (hit) return hit;
+    let name = null, town = null;
+    try {
+      const { data } = await upstream(`${TRANSITOUS}/api/v1/reverse-geocode?place=${lat.toFixed(6)},${lon.toFixed(6)}&type=ADDRESS`);
+      const r = (data || [])[0];
+      if (r && r.name) {
+        name = r.name;
+        const area = (r.areas || []).find((a) => a.adminLevel >= 6 && a.adminLevel <= 9);
+        town = area ? area.name : null;
+      }
+    } catch { /* upstream down → client falls back to raw coords label */ }
+    const out = { name, town };
+    cacheSet(key, out, 10 * 60 * 1000);
+    return out;
   },
 
   // Route + geometry for one network trip (city bus / train) — the map tracer's

@@ -111,6 +111,10 @@ export const api = {
       cacheKey: `vtboard:${stopId}`, source: 'viaggiatreno',
     }),
 
+  // Nearest address for a map point ("Choose on map" pin label).
+  revGeocode: (lat, lon) =>
+    getJson(`/api/rev?lat=${(+lat).toFixed(5)}&lon=${(+lon).toFixed(5)}`, { source: 'transitous' }),
+
   // Route + geometry for one network trip (city bus / train) → map tracer.
   tripShape: (tripId) =>
     getJson(`/api/trip-shape?tripId=${encodeURIComponent(tripId)}`, {

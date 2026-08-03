@@ -125,6 +125,7 @@ function showQuickPicks(which, list, input) {
       el('span', { text: ' My location' }),
     ]));
   }
+  list.appendChild(chooseOnMapRow(which));
   for (const p of getPlacesSorted().slice(0, 6)) {
     list.appendChild(el('button', {
       class: 'suggest-row suggest-place',
@@ -262,6 +263,31 @@ export function classifySuggestion(r) {
   return { iconEl, kind };
 }
 
+// "Choose on map" (Google Maps' directions pattern): jump to the Map tab in
+// pick mode — pan a fixed centre pin, confirm, come back with the spot set.
+function chooseOnMapRow(which) {
+  return el('button', {
+    class: 'suggest-row suggest-mappick',
+    onclick: () => chooseOnMap(which),
+  }, [
+    el('span', { class: 'suggest-icon' }, [placeIcon('pin')]),
+    el('span', { class: 'suggest-name', text: 'Choose on map' }),
+    el('span', { class: 'suggest-area', text: 'drop a pin anywhere' }),
+  ]);
+}
+
+async function chooseOnMap(which) {
+  document.getElementById(`${which}-suggest`).hidden = true;
+  const { pickPointOnMap } = await import('./mapview.js');
+  const pick = await pickPointOnMap();
+  document.getElementById('nav-home')?.click();
+  if (!pick) return;
+  sel[which] = { name: pick.label, place: `${pick.lat.toFixed(5)},${pick.lon.toFixed(5)}`, lat: pick.lat, lon: pick.lon };
+  document.getElementById(`${which}-input`).value = pick.label;
+  syncClears();
+  if (sel.from && sel.to) runSearch();
+}
+
 // Exact-name-first ranking, shared by Home + map search: typing "palermo"
 // should lead with Palermo the city and its main station, not Catania street
 // stops NAMED after Palermo. Ties keep the server's Sicily-first order.
@@ -350,6 +376,7 @@ async function suggest(which, q) {
     const { data } = await api.geocode(q, geoBias());
     if (seq !== suggestSeq[which]) return; // a newer request superseded this one
     list.innerHTML = '';
+    list.appendChild(chooseOnMapRow(which));
     // show up to 12 (the geocoder caps at ~10 anyway): with Sicily-first ranking
     // this surfaces more Sicilian streets so a nearby one isn't cut off the list
     for (const r of rankSuggestions(data, q).slice(0, 12)) {
@@ -392,7 +419,7 @@ async function suggest(which, q) {
           : (isFinite(r.lat) && isFinite(r.lon) ? placeStar(r) : null),
       ]));
     }
-    list.hidden = data.length === 0;
+    list.hidden = false; // the Choose-on-map row is always present
   } catch (err) {
     // R-05: a dead lookup used to look exactly like "no matches" — the one
     // surface where absence went unexplained. Say so, once per outage.

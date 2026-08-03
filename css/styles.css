@@ -1086,3 +1086,25 @@ body { font-size: 1rem; }
 
 /* hub-board coach route sheet: jump to the traced line on the Map tab */
 .coach-map-btn { margin: 0 0 10px; display: inline-flex; align-items: center; gap: 6px; border-color: var(--mango, #ffb454); }
+
+/* ── "Choose on map" pick mode ── */
+/* stop pins/blobs go inert so a stray tap can't open a departures sheet */
+#map-canvas.picking .leaflet-marker-pane, #map-canvas.picking .leaflet-overlay-pane { pointer-events: none; }
+#map-canvas.picking .map-hint, #map-canvas.picking .map-nearest { display: none; }
+.pick-pin {
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -100%);
+  z-index: 620; pointer-events: none;
+  filter: drop-shadow(0 3px 5px rgba(0,0,0,0.5));
+}
+.pick-bar {
+  position: absolute; left: 8px; right: 8px; bottom: 8px; z-index: 640;
+  display: flex; align-items: center; gap: 10px;
+  background: var(--bg-surface, #1e1e1e); color: var(--text-primary, #f2f2f2);
+  border: 1px solid var(--border, rgba(255,255,255,0.12));
+  border-radius: var(--radius-md, 10px); padding: 10px 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+}
+.pick-addr { flex: 1; min-width: 0; font-size: 0.85rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.pick-use { flex: 0 0 auto; padding: 8px 14px; }
+/* the picker row itself reads as an action, mango-accented */
+.suggest-mappick .suggest-name { color: var(--mango, #ffb454); font-weight: 600; }

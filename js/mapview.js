@@ -652,6 +652,51 @@ export async function showTripShapeOnMap(rt, origin = {}) {
   }, [rt], 0);
 }
 
+// "Choose on map" (Google Maps pattern): a fixed centre pin, pan the map under
+// it, live reverse-geocoded address in the confirm bar. Resolves with
+// { lat, lon, label } on confirm, null on cancel. During pick mode the stop
+// pins go inert so a stray tap doesn't open a departures sheet.
+let pickCleanup = null;
+export async function pickPointOnMap() {
+  if (!(await mapTabReady())) { toast('Map unavailable right now', 'warn'); return null; }
+  if (pickCleanup) pickCleanup(); // a stale pick session — drop it
+  const canvas = document.getElementById('map-canvas');
+  canvas.classList.add('picking');
+  const pin = el('div', { class: 'pick-pin' }, [el('img', { src: '/icons/place-pin.png', alt: '', width: '36', height: '36' })]);
+  const addr = el('div', { class: 'pick-addr', text: 'Move the map to drop the pin' });
+  const useBtn = el('button', { class: 'btn btn-primary pick-use', text: 'Use this spot' });
+  const cancelBtn = el('button', { class: 'sheet-close', 'aria-label': 'Cancel pick', text: '✕' });
+  const bar = el('div', { class: 'pick-bar' }, [addr, useBtn, cancelBtn]);
+  canvas.appendChild(pin);
+  canvas.appendChild(bar);
+  let lastLabel = null;
+  const refresh = async () => {
+    const c = map.getCenter();
+    try {
+      const { data } = await api.revGeocode(c.lat, c.lng);
+      lastLabel = data && data.name ? `${displayName(data.name)}${data.town ? `, ${displayName(data.town)}` : ''}` : null;
+    } catch { lastLabel = null; }
+    addr.textContent = lastLabel || `Dropped pin (${c.lat.toFixed(4)}, ${c.lng.toFixed(4)})`;
+  };
+  let debounce = null;
+  const onMove = () => { clearTimeout(debounce); addr.textContent = '…'; debounce = setTimeout(refresh, 350); };
+  map.on('moveend', onMove);
+  refresh();
+  return new Promise((resolve) => {
+    const done = (val) => { if (!pickCleanup) return; pickCleanup(); resolve(val); };
+    pickCleanup = () => {
+      map.off('moveend', onMove); clearTimeout(debounce);
+      pin.remove(); bar.remove(); canvas.classList.remove('picking');
+      pickCleanup = null;
+    };
+    useBtn.onclick = () => {
+      const c = map.getCenter();
+      done({ lat: c.lat, lon: c.lng, label: lastLabel || `Dropped pin (${c.lat.toFixed(4)}, ${c.lng.toFixed(4)})` });
+    };
+    cancelBtn.onclick = () => done(null);
+  });
+}
+
 // Entry point for OTHER surfaces (hub-board coach route sheet): jump to the
 // Map tab and trace this coach route — same road-snapped line + stop dots as
 // tapping the stop's pin. boardMeta: { ci?, lat, lon, routeName, stopName }.
