@@ -869,6 +869,7 @@ body { font-size: 1rem; }
   box-shadow: 0 2px 8px rgba(0,0,0,0.5);
 }
 .hub-pin .hub-glyph img { width: 24px; height: 24px; object-fit: contain; }
+.hub-pin .hub-glyph img.hub-air { width: 32px; height: 32px; }
 /* persistent name pill under the hub disc (city zoom) — phones have no hover */
 .hub-pin .hub-name {
   position: absolute; top: 42px; left: 50%; transform: translateX(-50%);

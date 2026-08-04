@@ -162,11 +162,15 @@ function hubEntryIcon(entry, labelled) {
     });
   }
   const h = entry.hubs[0];
-  const src = h.subkind === 'airport' ? '/icons/plane-mango.png' : '/icons/modes/train.png';
+  const air = h.subkind === 'airport';
+  // the plane artwork is a wide side view — at the train glyph's 24px it reads
+  // undersized in the 40px disc, so it gets a larger slot (css .hub-air)
+  const src = air ? '/icons/plane-mango.png' : '/icons/modes/train.png';
+  const size = air ? 32 : 24;
   const label = labelled ? `<span class="hub-name">${displayName(h.name)}</span>` : '';
   return window.L.divIcon({
     className: 'hub-pin',
-    html: `<span class="hub-glyph"><img src="${src}" alt="" width="24" height="24"></span>${label}`,
+    html: `<span class="hub-glyph"><img src="${src}" alt="" width="${size}" height="${size}"${air ? ' class="hub-air"' : ''}></span>${label}`,
     iconSize: [40, 40], iconAnchor: [20, 20],
   });
 }
