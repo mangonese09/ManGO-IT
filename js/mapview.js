@@ -162,7 +162,7 @@ function hubEntryIcon(entry, labelled) {
     });
   }
   const h = entry.hubs[0];
-  const src = h.subkind === 'airport' ? '/icons/plane-mango.svg' : '/icons/modes/train.png';
+  const src = h.subkind === 'airport' ? '/icons/plane-mango.png' : '/icons/modes/train.png';
   const label = labelled ? `<span class="hub-name">${displayName(h.name)}</span>` : '';
   return window.L.divIcon({
     className: 'hub-pin',
@@ -308,7 +308,7 @@ function openHubPicker(hubs) {
       onclick: () => openHubBoard({ hubId: h.hubId, subkind: h.subkind, name: h.name, lat: h.lat, lon: h.lon }),
     }, [
       el('span', { class: 'sp-icon' }, [el('img', {
-        src: h.subkind === 'airport' ? '/icons/plane-mango.svg' : '/icons/modes/train.png',
+        src: h.subkind === 'airport' ? '/icons/plane-mango.png' : '/icons/modes/train.png',
         alt: '', width: '18', height: '18', class: 'mode-img mode-img-sm',
       })]),
       el('span', { class: 'sp-name', text: displayName(h.name) }),
