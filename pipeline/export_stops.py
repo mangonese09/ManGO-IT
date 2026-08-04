@@ -10,7 +10,7 @@
 import collections, json, math, os, re
 
 from gates import is_junk_stop, speed_violation, span_violation, route_local_hols
-from stopnorm import canon_key, display_score, sig_tokens, MERGE_M
+from stopnorm import canon_key, display_score, sig_tokens, polish_display, MERGE_M
 
 ROOT = os.path.dirname(__file__)
 
@@ -174,6 +174,10 @@ def main():
         for st in t['s']:
             st[0] = remap[st[0]]
 
+    # display-time polish (1.0 cosmetics): mirrors emit_gtfs so the app and
+    # the published GTFS show identical names; indices/coords untouched
+    for o in order:
+        o['n'] = polish_display(o['n'])
     json.dump(order, open(os.path.join(ROOT, '..', 'server', 'coach-stops.json'), 'w', encoding='utf-8'), ensure_ascii=False)
     json.dump(trips, open(os.path.join(ROOT, '..', 'server', 'coach-trips.json'), 'w', encoding='utf-8'), ensure_ascii=False)
     rep_dir = os.path.join(ROOT, 'data', 'reports')

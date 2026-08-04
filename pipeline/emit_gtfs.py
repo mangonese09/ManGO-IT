@@ -9,7 +9,7 @@
 import csv, io, json, os, re, unicodedata, zipfile
 from datetime import date, timedelta
 
-from stopnorm import canon_key, display_score, sig_tokens, apply_renames, MERGE_M, TIGHT_M, PRECISE
+from stopnorm import canon_key, display_score, sig_tokens, apply_renames, polish_display, MERGE_M, TIGHT_M, PRECISE
 
 
 def _cell(lat, lon):
@@ -166,7 +166,25 @@ def main():
         rid = route['route_id']
         cod = re.search(r'cod\.?\s*(\d+)', route['name'], re.I)
         short = route.get('short_name') or (cod.group(1) if cod else '')
-        route_rows.append([rid, aid, short, route['name'], 3])
+        # sheets without a readable header shipped literal "Unknown route" —
+        # synthesize a name from the direction-0 endpoints instead
+        rname = route['name']
+        if not rname or rname.strip().lower() == 'unknown route':
+            d0 = route['directions'][0]['stops'] if route.get('directions') else []
+            def endpoint(seq):
+                for s in seq:
+                    if JUNK_STOP.match(s.strip()):
+                        continue
+                    nm = polish_display(s).split('(')[0].strip().title()
+                    nm = re.sub(r'^[\d\s\-\*\.]+', '', nm)   # sheet row numbers
+                    nm = re.sub(r'[\)\*\s]+$', '', nm)       # stray closers
+                    if nm:
+                        return nm
+                return ''
+            a, b = endpoint(d0), endpoint(reversed(d0))
+            if a and b:
+                rname = f'{a} - {b}'
+        route_rows.append([rid, aid, short, rname, 3])
         lh = route_local_hols(route['name'])  # comune feasts this route observes
         for di, d in enumerate(route['directions']):
             for t in d['trips']:
@@ -310,6 +328,12 @@ def main():
     used_stops = {row[3] for row in st_rows}
     n_orphans = sum(1 for r in stop_rows if r[0] not in used_stops)
     stop_rows = [r for r in stop_rows if r[0] in used_stops]
+
+    # display-time polish (1.0 cosmetics): names only — ids/coords untouched
+    for r in stop_rows:
+        r[1] = polish_display(r[1])
+    for r in trip_rows:
+        r[3] = polish_display(r[3])
 
     files = {
         'agency.txt': (['agency_id', 'agency_name', 'agency_url', 'agency_timezone', 'agency_lang'], agency_rows),

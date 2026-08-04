@@ -20,7 +20,7 @@ import re
 # that shipped a phantom 2-stop trip with one stop in the open sea.
 JUNK_STOP = re.compile(
     r"^(([\w'\.À-ù]+\s+)?\d{0,2}\s*Fermata( intermedi\w{0,2})?( [I0-9]{1,2})?( diretta)?"
-    r"|Capolinea( di (Partenza|Arrivo))?"
+    r"|Capolinea( di (Partenza|Arrivo))?( \d{1,3})?"
     r"|[I0-9]{1,2}\s*orario"
     r"|[I0])\s*$", re.I)
 

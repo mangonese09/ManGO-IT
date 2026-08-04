@@ -88,3 +88,40 @@ def apply_renames(route):
             for s in t['stops']:
                 s['stop'] = fix(s['stop'])
     return route
+
+
+# ── DISPLAY POLISH (1.0 cosmetics sweep, 2026-08-04) ──
+# Applied at DISPLAY-emission time only (GTFS stop_name / headsigns, app stop
+# index) — never at identity/geocode level, so ids, canon keys and the
+# coordinate caches are untouched. Fixes the audit's ugly-but-correct class:
+# doubled sheet phrases ("I Savoca Savoca"), unbalanced parentheses, mojibake
+# from the PDF extraction (U+FFFD where the sheet had à/ò), backslashes, and
+# a few exact strings no mechanical rule can judge.
+_POLISH_EXACT = {
+    "I Scifi' Scif\ufffd": 'Scifò',
+    "Savoca (Bivio Scif\ufffd) Sant'Alessio (Bivio Scif\ufffd) I": "Sant'Alessio (Bivio Scifò)",
+}
+_MOJIBAKE = (
+    ('Scif\ufffd', 'Scifò'), ('Muscar\ufffd', 'Muscarà'),
+    ('Libert\ufffd', 'Libertà'), ('libert\ufffd', 'libertà'),
+    ('Umberto 1\ufffd', 'Umberto I'), ('Universit\ufffd', 'Università'),
+)
+
+
+def polish_display(name):
+    n = (name or '').strip()
+    if n in _POLISH_EXACT:
+        return _POLISH_EXACT[n]
+    for k, v in _MOJIBAKE:
+        n = n.replace(k, v)
+    n = n.replace('\\', '/')
+    # doubled phrase from interleaved sheet columns: "I X X" / "X X I" → X
+    m = re.match(r"^(?:I\s+)?(.{6,}?)\s+\1(?:\s+I)?$", n, re.I)
+    if m:
+        n = m.group(1)
+    o, c = n.count('('), n.count(')')
+    if o > c:
+        n = n + ')' * (o - c)
+    while n.count(')') > n.count('(') and n.rstrip().endswith(')'):
+        n = n.rstrip()[:-1].rstrip()
+    return n.strip()
