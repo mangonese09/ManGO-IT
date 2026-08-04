@@ -1,12 +1,12 @@
 // ── SERVICE WORKER ──
 // App shell cache-first; /api/* never cached here (js/api.js owns API caching
 // with staleness stamps). Bump CACHE on every deploy.
-const CACHE = 'mangoit-v105';
+const CACHE = 'mangoit-v106';
 const SHELL = [
   '/',
   '/index.html',
-  '/css/styles.css?v=0.45.4',
-  '/js/app.js?v=0.45.4',
+  '/css/styles.css?v=0.45.5',
+  '/js/app.js?v=0.45.5',
   '/js/api.js',
   '/js/board.js',
   '/js/itinerary.js',
