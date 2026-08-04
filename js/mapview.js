@@ -30,6 +30,7 @@ const NEAR_ZOOM = 16;
 
 let map = null;
 let tileLayer = null;
+let tileLabelsLayer = null;
 let tileTheme = null;
 let youMarker = null;
 let leafletPromise = null;
@@ -94,12 +95,20 @@ function currentTheme() {
 }
 
 // Carto raster basemaps pair with OSM data; attribution per their policy.
+// v0.45.6: *_nolabels base + *_only_labels tiles from z13 up. Below z13 the
+// app draws its OWN place labels (city-labels.js) — denser, zoom-stable, and
+// never hidden under a stop pin; from z13 the Carto label tiles take over
+// (street names etc. that we can't draw ourselves).
 const TILE_URL = {
-  dark: 'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',
+  dark: 'https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png',
   // Voyager, not light_all/Positron: Positron is a deliberately ultra-pale
   // data-overlay canvas (no visible roads/borders at rest); Voyager is a real
   // navigation basemap with road colors and boundaries.
-  light: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
+  light: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png',
+};
+const TILE_LABELS_URL = {
+  dark: 'https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png',
+  light: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}{r}.png',
 };
 const TILE_ATTR = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>';
 
@@ -825,9 +834,20 @@ function ensureTiles() {
   if (cv) { cv.classList.toggle('tiles-dark', theme === 'dark'); cv.classList.toggle('tiles-light', theme === 'light'); }
   if (tileLayer && tileTheme === theme) return;
   if (tileLayer) tileLayer.remove();
+  if (tileLabelsLayer) tileLabelsLayer.remove();
   tileTheme = theme;
   tileLayer = window.L.tileLayer(TILE_URL[theme], {
     attribution: TILE_ATTR, maxZoom: 19, subdomains: 'abcd',
+  }).addTo(map);
+  // Carto's label tiles ride in their own pane between tiles and pins; below
+  // z13 they don't load at all — city-labels.js owns the names down there.
+  if (!map.getPane('tile-labels')) {
+    map.createPane('tile-labels');
+    map.getPane('tile-labels').style.zIndex = 350;
+    map.getPane('tile-labels').style.pointerEvents = 'none';
+  }
+  tileLabelsLayer = window.L.tileLayer(TILE_LABELS_URL[theme], {
+    maxZoom: 19, minZoom: 13, subdomains: 'abcd', pane: 'tile-labels',
   }).addTo(map);
 }
 
@@ -933,6 +953,8 @@ async function initMap(pos) {
   updateHint();
   map.on('zoomend', updateHint);
   loadVisibleStops();
+  // Own place labels below z13 (density + stability the raster tiles can't give).
+  import('./city-labels.js').then((m) => m.initCityLabels(map)).catch(() => {});
 }
 
 function updateHint() {
