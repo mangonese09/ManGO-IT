@@ -115,6 +115,16 @@ export function staleChip(fetchedAt, stale) {
 // ── SHEETS (bottom sheets with drag-to-dismiss) ──
 let sheetStack = [];
 
+// Escape closes the top sheet — keyboard rule; every other close path
+// (backdrop, ✕, drag, hardware back) existed but Esc was missing. Found by
+// the session suite (session-core.js s3). Guarded: unit tests import this
+// module in Node, where there is no document.
+if (typeof document !== 'undefined') {
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && sheetStack.length) { e.preventDefault(); closeSheet(); }
+  });
+}
+
 export function openSheet(contentEl, { title = '' } = {}) {
   const overlay = el('div', { class: 'sheet-overlay' });
   const sheet = el('div', { class: 'sheet' }, [
