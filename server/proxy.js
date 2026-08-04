@@ -10,9 +10,17 @@ const PORT = process.env.PORT || 3041;
 const STATIC = process.env.STATIC === '1';
 const ROOT = path.join(__dirname, '..');
 
+// Single-source version: read the deployed app's version.json so /api/health
+// (and the UA) can never drift from the client again — the hardcoded string
+// sat at 0.45.2 through five releases. Web root first (VPS), repo root for dev.
+let APP_VERSION = 'unknown';
+for (const vp of ['/var/www/mangoit/version.json', path.join(__dirname, '..', 'version.json')]) {
+  try { APP_VERSION = JSON.parse(fs.readFileSync(vp, 'utf8')).version; break; } catch { /* try next */ }
+}
+
 const TRANSITOUS = 'https://api.transitous.org';
 const VT = 'http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno';
-const UA = 'ManGO-IT/0.45.2 (+https://it.mangonese.dev; miconsig@gmail.com)';
+const UA = `ManGO-IT/${APP_VERSION} (+https://it.mangonese.dev; miconsig@gmail.com)`;
 
 // per-day upstream request counter (Transitous asks consumers to know their volume)
 const dayCounts = {};
@@ -1201,7 +1209,7 @@ function afterStation(stops, stationName) {
 
 // ── ROUTES ──
 const routes = {
-  'GET /api/health': async () => ({ ok: true, version: '0.45.2', romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
+  'GET /api/health': async () => ({ ok: true, version: APP_VERSION, romeTime: romeNowString(), feedHorizon: feedHorizon(), viaggiaTreno: vtSilence(vtStats), upstreamRequests: dayCounts }),
 
   // nearest coach stops regardless of radius — the "this area isn't served"
   // empty state names the closest place our data actually covers (audit P1)

@@ -43,9 +43,11 @@ ingested by Transitous.
 
 ## Portal recovery backlog
 
-- 4 PDFs produced zero routes: Adranone, Cancellieri, Mercorillo, Sassadoro
-  (1–2 pages each, layout oddities)
-- 32 pages skipped inside otherwise-parsed PDFs (see pipeline/data/reports/qa.md)
+**Triaged page-by-page 2026-08-04 — see `pipeline/data/reports/recovery-verdicts.md`.**
+Cancellieri + Mercorillo closed (their PDFs contain no schedule tables — the
+zero-route outcome is correct); Sassadoro + Adranone are open-recoverable; the
+skipped pages resolve to 11 closed non-timetable pages and 9 prioritized open
+items (largest: the Castelmola–Taormina Interbus shuttle page).
 
 ## Bottom line
 

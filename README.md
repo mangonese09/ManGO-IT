@@ -37,6 +37,23 @@ M0 repo/hosting ✅ · M1 routing+search ✅ · M2 nearby board+saved ✅ · M3 
 trains+staleness ✅ · M4 **coach GTFS pipeline** (the whole point) · M5 long-tail
 operators · M6 map tab · M7 Capacitor Android wrap.
 
+## 1.0 scope decisions (deliberate, not gaps)
+
+- **Coach fares are informational states, never invented numbers.** Urban flat
+  fares are exact (open data); SAIS ships its published OD fare table;
+  everything else shows an honest `counter`/`booking` state with how-to-buy
+  text. Full OD fare tables for AST/Interbus bands are out of scope until an
+  operator publishes them.
+- **Accountless by design.** Saved places/favourites live in localStorage
+  only. This is a deliberate exemption from the house Firebase-from-day-one
+  rule: the app has no per-user server data, sells nothing, and works fully
+  offline-first; adding auth would add surface without function. Revisit only
+  if cross-device sync is actually wanted.
+- **No ferries / island buses** (PRD non-goal) and **no bus GTFS-RT** —
+  none exists in Sicily (docs/gtfs-rt-research.md); ViaggiaTreno live status
+  for trains is the realtime ceiling. The app says "scheduled" honestly
+  rather than faking liveness.
+
 ## Licensing & usage
 
 Code: MIT. Generated GTFS feed: **CC-BY 4.0** with attribution to Regione
