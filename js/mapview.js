@@ -839,11 +839,13 @@ function ensureTiles() {
   tileLayer = window.L.tileLayer(TILE_URL[theme], {
     attribution: TILE_ATTR, maxZoom: 19, subdomains: 'abcd',
   }).addTo(map);
-  // Carto's label tiles ride in their own pane between tiles and pins; below
-  // z13 they don't load at all — city-labels.js owns the names down there.
+  // Carto's label tiles (text on transparent) ride ABOVE the marker pane
+  // (600), like our own city labels — a pin must never hide a place name at
+  // ANY zoom. Tap-through; below z13 they don't load at all and
+  // city-labels.js owns the names.
   if (!map.getPane('tile-labels')) {
     map.createPane('tile-labels');
-    map.getPane('tile-labels').style.zIndex = 350;
+    map.getPane('tile-labels').style.zIndex = 610;
     map.getPane('tile-labels').style.pointerEvents = 'none';
   }
   tileLabelsLayer = window.L.tileLayer(TILE_LABELS_URL[theme], {
