@@ -1,7 +1,7 @@
 # Airport-code search — design note
 
 **Date:** 2026-08-07
-**Status:** DESIGN — not implemented. One open decision (§5) needs the user's call before coding.
+**Status:** IMPLEMENTED and LIVE in v1.1.0 (2026-08-07). §5 was settled by measurement, not by a call — see the note there.
 **Ask:** typing `PMO` in the Home From/To box should resolve to Palermo Falcone Borsellino airport; `CTA` to Catania Fontanarossa.
 
 ---
@@ -46,7 +46,18 @@ Add two fields: `iata` and `aliases: string[]`.
 
 **Trapani-Birgi (TPS) and Comiso (CIY) were deliberately dropped from `TRANSIT_HUBS`** (comment at `proxy.js:816-821`) because their *hub boards* were too thin. That reasoning does not apply to search aliases — a code that resolves to the right coordinate is useful even where the departures board is sparse. Coach stops for both already exist in `server/coach-stops.json` (`AEROPORTO COMISO (Terminal)`, `AEROPORTO TRAPANI BIRGI (Area Bus)`). **Recommendation: alias all four codes, but keep the hub table itself at five entries** — i.e. the alias table is its own thing that *references* hubs where one exists, rather than forcing every alias to become a hub.
 
-## 5. OPEN DECISION — what should `PMO` resolve to?
+## 5. ~~OPEN DECISION~~ — RESOLVED: (b), the coordinate, for all four
+
+**Measured 2026-08-07 before coding, which made the decision for us.** Planning
+`38.1881,13.1093` → Palermo Centrale returns the *same* `REG 5636` train as
+planning from the rail station's stop id, **plus** the shuttle coach. The
+coordinate is a strict superset of option (a) here, and it keeps a fragile
+third-party stop id out of our source. The other three airports have no rail
+station at all (`CATANIA AEROPORTO FONTANAROSSA` resolves to coach stops, not a
+rail node), so the coordinate is the only honest answer there. No per-airport
+branching was needed. Original analysis kept below for the record.
+
+
 
 This is the one thing that needs the user's call, because the two options route differently:
 

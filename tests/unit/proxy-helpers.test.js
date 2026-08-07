@@ -5,6 +5,7 @@ const {
   romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, inSicily, dropDominated,
   parseBias, geoScore, clusterStopsByProximity, clusterAreaName,
   HUBS, hubsInBbox, mergeDepartures,
+  AIRPORTS, airportMatch, airportResult,
 } = require('../../server/proxy.js');
 
 test('clusterAreaName names a depot by the shared leading phrase', () => {
@@ -89,6 +90,43 @@ test('geoScore buckets by type: stop < coach < settlement < other < address', ()
     < geoScore(mainland({ type: 'ADDRESS', name: 'Via Y' }), 'q'));
   assert.ok(geoScore(mainland({ type: 'PLACE', category: 'restaurant', name: 'Z' }), 'q')
     < geoScore(mainland({ type: 'ADDRESS', name: 'Via Y' }), 'q'));
+});
+
+test('airportMatch resolves every Sicilian IATA code, case/space-insensitively', () => {
+  const codes = { PMO: 'palermo', CTA: 'catania', TPS: 'trapani', CIY: 'comiso' };
+  for (const [code, town] of Object.entries(codes)) {
+    for (const form of [code, code.toLowerCase(), ` ${code} `]) {
+      const a = airportMatch(form);
+      assert.ok(a, `${form} should match an airport`);
+      assert.strictEqual(a.iata, code);
+      assert.ok(new RegExp(town, 'i').test(`${a.name} ${a.town} ${a.province}`), `${code} should be the ${town} airport`);
+      assert.ok(inSicily(a.lat, a.lon), `${code} coords must be in Sicily`);
+    }
+  }
+});
+
+test('airportMatch takes the colloquial names the geocoder gets wrong', () => {
+  // measured live 2026-08-07: these returned piazzas and unrelated towns
+  assert.strictEqual(airportMatch('punta raisi').iata, 'PMO');
+  assert.strictEqual(airportMatch('Falcone Borsellino').iata, 'PMO');
+  assert.strictEqual(airportMatch('birgi').iata, 'TPS');
+  assert.strictEqual(airportMatch('aeroporto di comiso').iata, 'CIY');
+});
+
+test('airportMatch is EXACT — a code must never substring-match', () => {
+  // the whole reason the alias layer is safe: "CTA" inside a longer query is
+  // just letters, not an airport, or every "Catania…" search becomes noise
+  for (const q of ['catania', 'Catania Centrale', 'PMO airport', 'via cta', 'aeroporto', 'Aeroporto Fontanarossa', '', 'c']) {
+    assert.strictEqual(airportMatch(q), null, `${q} must not match`);
+  }
+});
+
+test('an airport result outranks every other geocode row', () => {
+  const pmo = airportResult(AIRPORTS.find((a) => a.iata === 'PMO'));
+  const sicStop = { type: 'STOP', name: 'PALERMO CENTRALE', lat: 38.1089, lon: 13.3675 };
+  assert.ok(geoScore(pmo, 'pmo') < geoScore(sicStop, 'pmo'));
+  // and it survives as a normal row: coords + a name the client can render
+  assert.ok(inSicily(pmo.lat, pmo.lon) && pmo.name && pmo.id === null);
 });
 
 test('geoScore ranks Sicily as a hard block above mainland (Sicily-first app)', () => {

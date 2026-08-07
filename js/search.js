@@ -247,7 +247,14 @@ function itineraryAllowed(it) {
 export function classifySuggestion(r) {
   let iconEl = placeIcon('pin');
   let kind = '';
-  if (r.type === 'STOP') {
+  if (r.type === 'AIRPORT') {
+    // server-side IATA/alias hit (PMO, CTA…) — same plane artwork as the map's
+    // airport hub pins. Explicit width/height: a dynamically-created icon img
+    // must not depend on CSS alone (a stale-CSS/fresh-JS service worker window
+    // renders it at natural size otherwise).
+    iconEl = el('img', { class: 'mode-img', src: '/icons/plane-mango.png', alt: 'Airport', width: '22', height: '22' });
+    kind = 'airport';
+  } else if (r.type === 'STOP') {
     const m = r.modes || [];
     if (m.some((x) => /RAIL|LONG_DISTANCE/.test(x || ''))) { iconEl = modeIcon('RAIL'); kind = 'train station'; }
     else if (m.some((x) => /METRO|SUBWAY/.test(x || ''))) { iconEl = modeIcon('METRO'); kind = 'metro station'; }
@@ -294,6 +301,10 @@ async function chooseOnMap(which) {
 export function rankSuggestions(rows, q) {
   const ql = (q || '').trim().toLowerCase();
   const score = (r) => {
+    // an airport row only exists when the query EXACTLY matched its code or an
+    // alias, so it is the answer — without this it scores on name ("Aeroporto
+    // Falcone Borsellino" doesn't start with "pmo") and gets pushed down.
+    if (r.type === 'AIRPORT') return -1;
     const n = (r.name || '').toLowerCase();
     const nameRank = n === ql ? 0 : n.startsWith(ql) ? 1 : 2;
     const { kind } = classifySuggestion(r);

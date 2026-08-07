@@ -834,6 +834,54 @@ function hubsInBbox(minLat, minLon, maxLat, maxLon) {
   return TRANSIT_HUBS.filter((h) => h.lat >= minLat && h.lat <= maxLat && h.lon >= minLon && h.lon <= maxLon);
 }
 
+// ── AIRPORT SEARCH ALIASES ──
+// An IATA code is how people name an airport, and the geocoder knows none of
+// them (measured 2026-08-07: "PMO" returned nothing; "CTA" confidently returned
+// a hamlet near Paternò — a wrong answer is worse than none, because it gets
+// picked). Colloquial names fail the same way: "punta raisi", "falcone
+// borsellino" and "birgi" all land on unrelated piazzas and towns.
+//
+// This is a SEARCH-time layer only — it does not make an airport a hub.
+// Trapani-Birgi and Comiso stay off the hub map (their boards were too thin,
+// see the note above), but a code that lands on the right coordinate is useful
+// regardless of how busy the departures board is.
+//
+// Every entry resolves to its COORDINATE, never to an upstream stop id.
+// Measured: planning Palermo airport → Palermo Centrale from the coordinate
+// returns the same REG 5636 train as planning from the rail station's stop id,
+// PLUS the shuttle coach — the coordinate is a superset, and it keeps a
+// fragile third-party id out of our source. The other three airports have no
+// rail station at all, so the coordinate is the only honest answer there.
+// Palermo/Catania coords are the audited hub pins; Trapani/Comiso are their
+// terminal bus areas from the coach feed.
+const AIRPORTS = [
+  { iata: 'PMO', name: 'Aeroporto Falcone Borsellino', town: 'Cinisi', province: 'Palermo', lat: 38.1881, lon: 13.1093,
+    aliases: ['punta raisi', 'palermo punta raisi', 'falcone borsellino', 'aeroporto di palermo'] },
+  { iata: 'CTA', name: 'Aeroporto Catania Fontanarossa', town: 'Catania', province: 'Catania', lat: 37.4700, lon: 15.0670,
+    aliases: ['fontanarossa', 'aeroporto di catania'] },
+  { iata: 'TPS', name: 'Aeroporto Trapani-Birgi Vincenzo Florio', town: 'Misiliscemi', province: 'Trapani', lat: 37.91136, lon: 12.48747,
+    aliases: ['birgi', 'trapani birgi', 'aeroporto di trapani'] },
+  { iata: 'CIY', name: 'Aeroporto Comiso Pio La Torre', town: 'Comiso', province: 'Ragusa', lat: 36.99428, lon: 14.60716,
+    aliases: ['aeroporto di comiso'] },
+];
+// EXACT match only, on the code or on a listed alias. Never a substring — a
+// 3-letter code matched loosely turns "CTA" into a hit on every "Catania…"
+// string and the fix becomes noise.
+function airportMatch(text) {
+  // norm() lowercases and strips diacritics but leaves whitespace alone, so
+  // trim/collapse here — the handler trims its input, other callers may not.
+  const n = norm(text || '').trim().replace(/\s+/g, ' ');
+  if (!n) return null;
+  return AIRPORTS.find((a) => norm(a.iata) === n || a.aliases.some((x) => norm(x) === n)) || null;
+}
+// Shaped like a geocode row so it merges into the same list/dedupe/sort.
+function airportResult(a) {
+  return {
+    type: 'AIRPORT', iata: a.iata, name: a.name, id: null, lat: a.lat, lon: a.lon,
+    modes: [], category: 'aerodrome', town: a.town, province: a.province, importance: 1,
+  };
+}
+
 // Merge already-shaped departure rows from N sources into one board: drop
 // anything already departed, sort ascending by time, stamp `minutes` from now,
 // then apply a per-mode cap (so one busy mode can't crowd out the others) and
@@ -917,7 +965,9 @@ function geoScore(r, text) {
   const cat = r.category || '';
   const name = (r.name || '');
   let bucket;
-  if (r.type === 'STOP') bucket = 0;
+  // an exact airport code/alias hit is the answer to the query, not a candidate
+  if (r.type === 'AIRPORT') bucket = -1;
+  else if (r.type === 'STOP') bucket = 0;
   else if (r.type === 'COACH_STOP') bucket = 1;
   else if (/^(city|town|village|hamlet)/.test(cat) || (name.toLowerCase() === (text || '').toLowerCase() && !cat)) bucket = 2;
   else if (r.type === 'ADDRESS' || /^(via|viale|corso|salita|piazza)\b/i.test(name)) bucket = 4;
@@ -1265,9 +1315,16 @@ const routes = {
         type: 'COACH_STOP', name: s.n, id: null, lat: s.lat, lon: s.lon,
         modes: ['COACH'], category: null, town: null, province: null, importance: 0,
       }));
-    // dedupe (name+town), rank: transit stops → towns → the rest
+    // an exact IATA code / airport alias answers the query outright (see
+    // AIRPORTS). It leads the array so the name+town dedupe below keeps OUR
+    // row over a near-identical upstream one ("AEROPORTO CATANIA Fontanarossa"),
+    // and geoScore's -1 bucket keeps it first after the sort. Upstream results
+    // are still returned underneath — the alias adds an answer, it never hides
+    // the geocoder's.
+    const airport = airportMatch(text);
+    // dedupe (name+town), rank: airport → transit stops → towns → the rest
     const seen = new Set();
-    const all = [...results, ...coach].filter((r) => {
+    const all = [...(airport ? [airportResult(airport)] : []), ...results, ...coach].filter((r) => {
       const k = `${norm(r.name)}|${norm(r.town || '')}`;
       if (seen.has(k)) return false;
       seen.add(k); return true;
@@ -1840,4 +1897,4 @@ if (require.main === module) {
   server.listen(PORT, () => console.log(`ManGO:IT proxy on :${PORT}${STATIC ? ' (static+api)' : ''}`));
 }
 
-module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon, vtSilence, dropDominated, parseBias, geoScore, clusterStopsByProximity, clusterAreaName, HUBS: TRANSIT_HUBS, hubsInBbox, mergeDepartures, afterStation, decodePolyline };
+module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon, vtSilence, dropDominated, parseBias, geoScore, clusterStopsByProximity, clusterAreaName, HUBS: TRANSIT_HUBS, hubsInBbox, AIRPORTS, airportMatch, airportResult, mergeDepartures, afterStation, decodePolyline };
