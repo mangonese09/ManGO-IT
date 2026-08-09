@@ -49,6 +49,16 @@ operators · M6 map tab · M7 Capacitor Android wrap.
   rule: the app has no per-user server data, sells nothing, and works fully
   offline-first; adding auth would add surface without function. Revisit only
   if cross-device sync is actually wanted.
+- **"Leave earlier and wait longer" is not a hideable result — it does not
+  exist.** Transitous/MOTIS uses range-RAPTOR, which identifies a journey by its
+  arrival time and reports it at the *latest* departure achieving that arrival.
+  So on a sparse corridor where six trains feed one onward coach, only the last
+  useful train is ever returned — at any layer, with any window or page cursor
+  (verified by stepping 1-hour windows across an empty Sunday afternoon). Our
+  `dropDominated` in `server/proxy.js` is a second pass that removes only
+  same-departure duplicates. A "show suppressed departures" toggle would
+  therefore be a control that does nothing; surfacing earlier runs of the *first
+  leg* is the real version of that feature, and is not built yet.
 - **No ferries / island buses** (PRD non-goal) and **no bus GTFS-RT** —
   none exists in Sicily (docs/gtfs-rt-research.md); ViaggiaTreno live status
   for trains is the realtime ceiling. The app says "scheduled" honestly

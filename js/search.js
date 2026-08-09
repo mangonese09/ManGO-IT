@@ -223,7 +223,12 @@ const DAYPART_LABEL = Object.fromEntries(DAYPARTS.map((d) => [d.key, d.label]));
 // Accumulated whole-day plan state — the pills page into this and re-render.
 // cutoffMs = service-day end (03:00 next day); the default view stops there and
 // `expanded` flips true when Later reveals the already-fetched next day (§5.6).
-const dayView = { its: [], next: null, prev: null, base: null, stale: false, fetchedAt: 0, loading: false, cutoffMs: 0, expanded: false };
+// anchorMs = the instant the user actually asked about (the Depart-at time, or
+// now). Day labelling keys off THIS, not off the device's today — searching a
+// future date used to leave rows on today's date silently unlabelled while the
+// requested day got a header, so an Earlier page that walked back into
+// yesterday read as part of the searched day.
+const dayView = { its: [], next: null, prev: null, base: null, stale: false, fetchedAt: 0, loading: false, cutoffMs: 0, expanded: false, anchorMs: 0 };
 function itiKey(it) { return `${it.startTime}|${it.endTime}|${it.legs?.[0]?.routeShortName || ''}`; }
 function mergeIts(more) {
   const seen = new Set(dayView.its.map(itiKey));
@@ -505,13 +510,17 @@ async function runSearch() {
   const modes = planModes();
   if (modes) params.modes = modes;
 
+  // The instant the user asked about — day labelling and the "nothing until…"
+  // note both key off this, so it is set for every search, whole-day or not.
+  const anchorMs = params.time ? new Date(params.time).getTime() : Date.now();
+  dayView.anchorMs = anchorMs;
+
   // Whole-day window (§5.3): from the anchor (now, or an explicit Depart-at
   // time) to the service-day end. "Arrive by" keeps the tight before-deadline
   // window — a whole day of arrivals is not what that question asks.
   const whole = wholeDay() && departMode === 'depart';
   let cutoffMs = 0;
   if (whole) {
-    const anchorMs = params.time ? new Date(params.time).getTime() : Date.now();
     params.searchWindow = wholeDayWindowSec(anchorMs);
     params.maxItineraries = 24;
     cutoffMs = anchorMs + params.searchWindow * 1000; // service-day end
@@ -994,8 +1003,12 @@ function renderDirectBlock(runs, reason, transfers = []) {
 }
 
 // ── WHOLE-DAY RENDER (Ship 3, §5.7) ──
+// "Earlier today" was a lie: when the searched day is empty MOTIS's earlier
+// cursor walks back into the PREVIOUS day, and it said "today" regardless.
+// Neither pill can know which day it will land on until the page returns, so
+// neither one claims a day — the day headers below state it once it's known.
 function pagePill(dir) {
-  const label = dir === 'earlier' ? '▲  Earlier today' : '▼  Later departures';
+  const label = dir === 'earlier' ? '▲  Earlier departures' : '▼  Later departures';
   return el('button', { class: `day-page day-page-${dir}`, onclick: () => pageDay(dir) },
     [el('span', { text: label })]);
 }
@@ -1028,28 +1041,56 @@ async function pageDay(dir) {
   }
 }
 
-// Single-pass, day-aware render: sorted by time so today precedes tomorrow.
-// A day header appears only for days beyond today (today's dayparts speak for
-// themselves); dayparts head each cluster within a day.
+// The searched day may simply have nothing after the requested time — Sunday
+// coach service to a hill town is genuinely empty for hours. Say so, with the
+// real gap, instead of opening on a 19:00 result as if it were the next one.
+// Measured over the UNFILTERED window so a chip selection can't change the claim.
+function anchorGapNote(inWindow, anchorMs) {
+  if (!inWindow.length || !anchorMs) return null;
+  const anchorIso = new Date(anchorMs).toISOString();
+  const anchorDate = romeDateOf(anchorMs);
+  const when = anchorDate === romeDateOf(Date.now()) ? 'today' : romeDay(anchorIso);
+  const from = romeTime(anchorIso);
+  const onDay = inWindow.filter((it) => romeDateOf(new Date(it.startTime).getTime()) === anchorDate);
+  if (!onDay.length) {
+    return el('div', { class: 'gap-note muted', text:
+      `No departures ${when} after ${from} — showing the next ones.` });
+  }
+  const firstMs = Math.min(...onDay.map((it) => new Date(it.startTime).getTime()));
+  if (firstMs - anchorMs < 90 * 60000) return null; // a normal wait, not a gap
+  return el('div', { class: 'gap-note muted', text:
+    `Nothing between ${from} and ${romeTime(new Date(firstMs).toISOString())} ${when} — that's the first departure.` });
+}
+
+// Single-pass, day-aware render: sorted by time so the searched day precedes
+// the next. A day header appears whenever the list spans more than one day, or
+// when its single day isn't the one you searched — paging can land on either.
+// Dayparts head each cluster within a day.
 function renderDayView() {
   const results = document.getElementById('results');
   results.innerHTML = '';
   results.appendChild(staleChip(dayView.fetchedAt, dayView.stale));
-  if (dayView.prev) results.appendChild(pagePill('earlier'));
 
   const now = Date.now();
+  const anchorMs = dayView.anchorMs || now;
+  const anchorDate = romeDateOf(anchorMs);
+
   let sorted = [...dayView.its].sort((a, b) => new Date(a.startTime) - new Date(b.startTime));
   if (!dayView.expanded && dayView.cutoffMs > 0) {
     sorted = sorted.filter((it) => new Date(it.startTime).getTime() < dayView.cutoffMs);
   }
+  if (dayView.prev) results.appendChild(pagePill('earlier'));
+  const gap = anchorGapNote(sorted, anchorMs);
+  if (gap) results.appendChild(gap);
+
   const hasPast = sorted.some((x) => new Date(x.startTime).getTime() < now - 60000);
-  const todayDate = romeDateOf(now);
+  const multiDay = new Set(sorted.map((it) => romeDateOf(new Date(it.startTime).getTime()))).size > 1;
   let curDate = null, curPart = null, nowRuleDone = false;
   for (const it of sorted) {
     const ms = new Date(it.startTime).getTime();
     const d = romeDateOf(ms);
     if (d !== curDate) {
-      if (d !== todayDate) results.appendChild(el('h3', { class: 'day-head', text: romeDay(it.startTime) }));
+      if (multiDay || d !== anchorDate) results.appendChild(el('h3', { class: 'day-head', text: romeDay(it.startTime) }));
       curDate = d; curPart = null;
     }
     const part = dayPartKey(romeHour(it.startTime) ?? 20);
@@ -1146,7 +1187,10 @@ function itineraryCard(it) {
       imminent ? el('span', { class: 'chip chip-imminent', text: imminent }) : null,
       el('span', { class: 'iti-dur', text: durationText(it.duration) }),
     ]),
-    isOtherRomeDay(it.startTime) ? el('div', { class: 'iti-day muted', text: romeDay(it.startTime) }) : null,
+    // "other day" means other than the day you SEARCHED, not other than the
+    // device's today — otherwise a future-dated search labels every row.
+    isOtherRomeDay(it.startTime, new Date(dayView.anchorMs || Date.now()))
+      ? el('div', { class: 'iti-day muted', text: romeDay(it.startTime) }) : null,
     strip,
     el('div', { class: 'iti-meta' }, [
       el('span', { class: 'muted', text: it.transfers === 0 ? 'direct' : `${it.transfers} transfer${it.transfers > 1 ? 's' : ''}` }),
