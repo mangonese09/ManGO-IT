@@ -1035,6 +1035,31 @@ body { font-size: 1rem; }
 /* R-05: autocomplete failure states its own reason instead of looking empty */
 .suggest-dead { padding: 12px; font-size: 0.875rem; cursor: default; }
 
+/* ── RESULT FILTER CHIPS (v1.2.0) ── */
+.filter-row {
+  display: flex; gap: 8px; margin: 4px 0 2px;
+  overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch;
+}
+.filter-row::-webkit-scrollbar { display: none; }
+.filter-chip {
+  display: inline-flex; align-items: center; gap: 6px; flex: 0 0 auto;
+  min-height: 44px; padding: 0 14px; cursor: pointer;
+  background: var(--bg-surface, #1e1e1e); color: var(--text-primary, #f2f2f2);
+  border: 1px solid var(--border, rgba(255,255,255,0.1));
+  border-radius: 999px; font: inherit; font-size: 0.875rem;
+}
+.filter-chip.active {
+  border-color: var(--mango, #ffb454); font-weight: 600;
+}
+.filter-chip-empty:not(.active) { opacity: 0.45; }
+.filter-count {
+  font-size: 0.75rem; font-variant-numeric: tabular-nums;
+  color: var(--text-muted, #9a9a9a);
+}
+.filter-chip.active .filter-count { color: var(--mango, #ffb454); }
+:root[data-theme="light"] .filter-chip { border-color: rgba(0,0,0,0.12); }
+:root[data-theme="light"] .filter-chip.active { border-color: var(--mango, #e8930c); }
+
 /* honest "there is genuinely nothing until X" line above the first result */
 .gap-note {
   margin: 8px 0 2px; padding: 10px 12px;

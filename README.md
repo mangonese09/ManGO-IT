@@ -14,9 +14,14 @@ on the ground, mid-trip, on a phone.
 ## Run locally
 
 ```
-STATIC=1 node server/proxy.js     # serves app + API on http://localhost:3041
-npm test                          # unit tests (node --test)
+STATIC=1 node server/proxy.js           # serves app + API on http://localhost:3041
+npm test                                # unit tests (node --test)
+node tests/review/session-core.js       # browser session regression (needs the server up)
+node tests/review/session-dayview.js    # whole-day view: day labels, gaps, filters
 ```
+
+Session tests default to `http://localhost:3041/`; pass `BASE=https://it.mangonese.dev/`
+to run them against production instead.
 
 ## Env vars
 

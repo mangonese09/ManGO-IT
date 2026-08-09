@@ -3,7 +3,7 @@ import { api } from './api.js';
 import { el, modeMeta, modeClass, modeIcon, isRailMode, liveBadge, staleChip, openSheet, placeIcon, placeIconKey } from './ui.js';
 import { romeTime, romeDay, romeHour, dayPartKey, DAYPARTS, durationText, isOtherRomeDay, romeWallToIso, whenLabel } from './time.js';
 import { displayName } from './names.js';
-import { worstTransferMin, transferTier, transferChipText, imminentText, legStripModel, groupByDaypart, plusTag, isRailReplacement } from './itinerary.js';
+import { worstTransferMin, transferTier, transferChipText, imminentText, legStripModel, groupByDaypart, plusTag, isRailReplacement, RESULT_FILTERS, matchesFilter } from './itinerary.js';
 import { operatorFor, fareChip, fareSummary, eur } from './operators.js';
 import { saisOdFare } from './fares-od.js';
 import { getRecents, pushRecent, removeRecent, getFavStops, addFavStop, removeFavStop, getSettings, getPlacesSorted, addPlace, removePlace, isPlace } from './store.js';
@@ -233,6 +233,42 @@ function itiKey(it) { return `${it.startTime}|${it.endTime}|${it.legs?.[0]?.rout
 function mergeIts(more) {
   const seen = new Set(dayView.its.map(itiKey));
   for (const it of more) if (!seen.has(itiKey(it))) { seen.add(itiKey(it)); dayView.its.push(it); }
+}
+
+// ── RESULT FILTER (v1.2.0) ──
+// Chips narrow the list already in hand and carry their own counts, so an empty
+// bucket is visible before you tap it. Predicates live in itinerary.js (pure,
+// unit-tested). Reset to All on every new search: a sticky "Direct" would
+// quietly empty the next route you looked up.
+let resultFilter = 'all';
+let rerenderResults = () => {};
+
+function filterRow(all) {
+  const row = el('div', { class: 'filter-row', role: 'group', 'aria-label': 'Filter results' });
+  for (const f of RESULT_FILTERS) {
+    const n = f.key === 'all' ? all.length : all.filter((it) => matchesFilter(it, f.key)).length;
+    const active = resultFilter === f.key;
+    row.appendChild(el('button', {
+      class: `filter-chip${active ? ' active' : ''}${!n ? ' filter-chip-empty' : ''}`,
+      'aria-pressed': String(active),
+      onclick: () => { if (resultFilter === f.key) return; resultFilter = f.key; rerenderResults(); },
+    }, [
+      el('span', { text: f.label }),
+      f.key === 'all' ? null : el('span', { class: 'filter-count', text: String(n) }),
+    ]));
+  }
+  return row;
+}
+
+function filterEmptyState() {
+  const label = (RESULT_FILTERS.find((f) => f.key === resultFilter) || {}).label || 'that';
+  return el('div', { class: 'empty-state' }, [
+    el('p', { text: `No ${label.toLowerCase()} options on this route.` }),
+    el('button', {
+      class: 'btn btn-ghost btn-small', text: 'Show all results',
+      onclick: () => { resultFilter = 'all'; rerenderResults(); },
+    }),
+  ]);
 }
 
 // belt-and-suspenders if upstream ignores transitModes
@@ -514,6 +550,7 @@ async function runSearch() {
   // note both key off this, so it is set for every search, whole-day or not.
   const anchorMs = params.time ? new Date(params.time).getTime() : Date.now();
   dayView.anchorMs = anchorMs;
+  resultFilter = 'all';
 
   // Whole-day window (§5.3): from the anchor (now, or an explicit Depart-at
   // time) to the service-day end. "Arrive by" keeps the tight before-deadline
@@ -1068,6 +1105,7 @@ function anchorGapNote(inWindow, anchorMs) {
 // Dayparts head each cluster within a day.
 function renderDayView() {
   const results = document.getElementById('results');
+  rerenderResults = renderDayView;
   results.innerHTML = '';
   results.appendChild(staleChip(dayView.fetchedAt, dayView.stale));
 
@@ -1075,13 +1113,22 @@ function renderDayView() {
   const anchorMs = dayView.anchorMs || now;
   const anchorDate = romeDateOf(anchorMs);
 
-  let sorted = [...dayView.its].sort((a, b) => new Date(a.startTime) - new Date(b.startTime));
+  let inWindow = [...dayView.its].sort((a, b) => new Date(a.startTime) - new Date(b.startTime));
   if (!dayView.expanded && dayView.cutoffMs > 0) {
-    sorted = sorted.filter((it) => new Date(it.startTime).getTime() < dayView.cutoffMs);
+    inWindow = inWindow.filter((it) => new Date(it.startTime).getTime() < dayView.cutoffMs);
   }
+  results.appendChild(filterRow(inWindow));
   if (dayView.prev) results.appendChild(pagePill('earlier'));
-  const gap = anchorGapNote(sorted, anchorMs);
+  const gap = anchorGapNote(inWindow, anchorMs);
   if (gap) results.appendChild(gap);
+
+  const sorted = inWindow.filter((it) => matchesFilter(it, resultFilter));
+  if (!sorted.length) {
+    results.appendChild(filterEmptyState());
+    if (hasLaterLocal() || dayView.next) results.appendChild(pagePill('later'));
+    ensureNextPill();
+    return;
+  }
 
   const hasPast = sorted.some((x) => new Date(x.startTime).getTime() < now - 60000);
   const multiDay = new Set(sorted.map((it) => romeDateOf(new Date(it.startTime).getTime()))).size > 1;
@@ -1143,13 +1190,17 @@ function hideNextPill() {
 
 function renderItineraries(itineraries, { stale, fetchedAt }) {
   const results = document.getElementById('results');
+  rerenderResults = () => renderItineraries(itineraries, { stale, fetchedAt });
   results.innerHTML = '';
   results.appendChild(staleChip(fetchedAt, stale));
   hideNextPill();
 
   if (!itineraries.length) return; // caller renders direct results or the dead-end fallbacks
 
-  for (const it of itineraries) results.appendChild(itineraryCard(it));
+  results.appendChild(filterRow(itineraries));
+  const shown = itineraries.filter((it) => matchesFilter(it, resultFilter));
+  if (!shown.length) { results.appendChild(filterEmptyState()); return; }
+  for (const it of shown) results.appendChild(itineraryCard(it));
 }
 
 // Result card (audit P2, competitive §1–§4): dep→arr clocks dominant,

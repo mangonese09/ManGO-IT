@@ -1,7 +1,7 @@
 // Transfer-risk grading + leg-strip model (audit P2).
 import { test } from 'node:test';
 import assert from 'node:assert';
-import { worstTransferMin, transferTier, transferChipText, imminentText, legStripModel, groupByDaypart, plusTag, isRailReplacement } from '../../js/itinerary.js';
+import { worstTransferMin, transferTier, transferChipText, imminentText, legStripModel, groupByDaypart, plusTag, isRailReplacement, RESULT_FILTERS, matchesFilter } from '../../js/itinerary.js';
 
 const leg = (mode, start, end, extra = {}) => ({
   mode, startTime: `2026-08-05T${start}:00Z`, endTime: `2026-08-05T${end}:00Z`,
@@ -106,4 +106,53 @@ test('isRailReplacement flags Trenitalia BUS legs only (R-09)', () => {
 test('legStripModel labels a rail-replacement leg "Rail bus"', () => {
   const legs = [{ mode: 'BUS', agencyName: 'Trenitalia', duration: 3600, routeShortName: '' }];
   assert.strictEqual(legStripModel(legs)[0].label, 'Rail bus');
+});
+
+// ── RESULT FILTER (v1.2.0) ──
+// Shapes taken from the real PMO -> RAFFADALI (Via Nazionale) plan response.
+const iti = (transfers, ...modes) => ({
+  transfers,
+  legs: [{ mode: 'WALK', duration: 300 }, ...modes.map((m) => ({ mode: m.mode || m, agencyName: m.agencyName || '' }))],
+});
+
+test('matchesFilter: All keeps everything, including odd shapes', () => {
+  assert.strictEqual(matchesFilter(iti(0, 'BUS'), 'all'), true);
+  assert.strictEqual(matchesFilter({ legs: [] }, 'all'), true);
+  assert.strictEqual(matchesFilter(iti(0, 'BUS'), undefined), true);
+});
+
+test('matchesFilter: Direct means no transfers, walks ignored', () => {
+  assert.strictEqual(matchesFilter(iti(0, 'BUS'), 'direct'), true);
+  assert.strictEqual(matchesFilter(iti(1, 'BUS', 'BUS'), 'direct'), false);
+  // upstream `transfers` missing -> fall back to the transit-leg count
+  assert.strictEqual(matchesFilter({ legs: [{ mode: 'WALK' }, { mode: 'COACH' }] }, 'direct'), true);
+  assert.strictEqual(matchesFilter({ legs: [{ mode: 'COACH' }, { mode: 'BUS' }] }, 'direct'), false);
+});
+
+test('matchesFilter: Train needs a real rail leg, not a replacement bus', () => {
+  assert.strictEqual(matchesFilter(iti(1, 'REGIONAL_RAIL', 'BUS'), 'train'), true);
+  assert.strictEqual(matchesFilter(iti(0, 'METRO'), 'train'), true);
+  // the Sunday Palermo-Agrigento reality: a Trenitalia BUS is not a train
+  assert.strictEqual(matchesFilter(iti(1, { mode: 'BUS', agencyName: 'TRENITALIA' }, 'BUS'), 'train'), false);
+  assert.strictEqual(matchesFilter(iti(1, 'BUS', 'COACH'), 'train'), false);
+});
+
+test('matchesFilter: Bus & coach excludes any rail leg, including tram', () => {
+  assert.strictEqual(matchesFilter(iti(1, 'BUS', 'COACH'), 'bus'), true);
+  assert.strictEqual(matchesFilter(iti(1, { mode: 'BUS', agencyName: 'TRENITALIA' }, 'BUS'), 'bus'), true);
+  assert.strictEqual(matchesFilter(iti(1, 'REGIONAL_RAIL', 'BUS'), 'bus'), false);
+  assert.strictEqual(matchesFilter(iti(1, 'TRAM', 'BUS'), 'bus'), false); // a tram is not a bus
+});
+
+test('matchesFilter: a walk-only itinerary answers no filtered question', () => {
+  const walkOnly = { transfers: 0, legs: [{ mode: 'WALK', duration: 900 }] };
+  assert.strictEqual(matchesFilter(walkOnly, 'direct'), false);
+  assert.strictEqual(matchesFilter(walkOnly, 'bus'), false);
+  assert.strictEqual(matchesFilter(walkOnly, 'train'), false);
+  assert.strictEqual(matchesFilter(walkOnly, 'all'), true);
+});
+
+test('RESULT_FILTERS leads with All and covers every predicate branch', () => {
+  assert.strictEqual(RESULT_FILTERS[0].key, 'all');
+  assert.deepStrictEqual(RESULT_FILTERS.map((f) => f.key), ['all', 'direct', 'train', 'bus']);
 });

@@ -30,6 +30,42 @@ export function isRailReplacement(leg) {
   return !!leg && leg.mode === 'BUS' && /trenitalia/i.test(leg.agencyName || '');
 }
 
+// ── RESULT FILTER PREDICATES (v1.2.0) ──
+// A view over results already in hand, NOT a routing restriction: the
+// home-screen Trains/Buses toggles constrain what MOTIS may use, so "trains
+// only" on a route whose last mile is bus-only returns nothing at all.
+// Mode tests are local (mirroring ui.js's isRailMode) to keep this module
+// pure — it imports nothing that touches the DOM.
+export const RESULT_FILTERS = [
+  { key: 'all', label: 'All' },
+  { key: 'direct', label: 'Direct' },
+  { key: 'train', label: 'Train' },
+  { key: 'bus', label: 'Bus & coach' },
+];
+
+export function isTrainLeg(leg) {
+  return !!leg && /RAIL|LONG_DISTANCE|METRO|SUBWAY/.test(leg.mode || '');
+}
+// A Trenitalia rail-replacement service is mode BUS, so it counts as a bus and
+// not as a train — which is what you actually board.
+export function isBusLeg(leg) {
+  return !!leg && (leg.mode === 'BUS' || leg.mode === 'COACH');
+}
+
+export function matchesFilter(it, key) {
+  if (key === 'all' || !key) return true;
+  const legs = (it?.legs || []).filter((l) => l.mode !== 'WALK');
+  if (!legs.length) return false; // walk-only: never an answer to a filtered question
+  if (key === 'direct') {
+    // read defensively — `transfers` is upstream's field, leg count is ours
+    const n = Number.isInteger(it.transfers) ? it.transfers : legs.length - 1;
+    return n === 0;
+  }
+  if (key === 'train') return legs.some(isTrainLeg);
+  if (key === 'bus') return legs.every(isBusLeg);
+  return true;
+}
+
 // Transfer-risk grading (audit P2, competitive §4): Sicilian coaches run
 // hourly or worse, so a blown 5-minute change strands people. The card
 // shows the WORST buffer across the itinerary, in three tiers.
