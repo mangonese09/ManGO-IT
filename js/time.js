@@ -47,6 +47,43 @@ export function isOtherRomeDay(iso, now = new Date()) {
   return f.format(new Date(iso)) !== f.format(now);
 }
 
+// ── DEVICE-vs-ITALY GAP ──
+// Every clock in this app is Europe/Rome. On a phone still set to the traveller's
+// home zone those correct times read as a conversion bug ("I asked for 1:30pm and
+// got 8:30pm"), so where the gap exists we say it out loud instead of hoping a
+// static "times are Italy time" footnote gets read.
+
+// Rome's UTC offset in minutes for an instant (+120 CEST, +60 CET).
+function romeOffsetMin(when) {
+  const p = new Intl.DateTimeFormat('en-GB', { timeZone: ROME, timeZoneName: 'longOffset' })
+    .formatToParts(when).find((x) => x.type === 'timeZoneName');
+  const m = /GMT([+-])(\d{2}):(\d{2})/.exec(p ? p.value : '') || [, '+', '00', '00'];
+  return (m[1] === '-' ? -1 : 1) * (Number(m[2]) * 60 + Number(m[3]));
+}
+
+// How far Italy runs from the device clock, or null when they agree — a phone on
+// Berlin time needs no warning, only a genuinely different offset does.
+export function deviceZoneGap(now = new Date(), deviceOffsetMin = -now.getTimezoneOffset()) {
+  const gap = romeOffsetMin(now) - deviceOffsetMin;
+  if (gap === 0) return null;
+  const mins = Math.abs(gap);
+  const h = Math.floor(mins / 60);
+  const m = mins % 60;
+  // half-hour zones (Kolkata, Adelaide) must not round away
+  const amount = m ? `${h}h ${m}m` : `${h} hour${h === 1 ? '' : 's'}`;
+  return { minutes: gap, ahead: gap > 0, text: `${amount} ${gap > 0 ? 'ahead of' : 'behind'} your phone` };
+}
+
+// Rome now as a datetime-local value, so the native picker opens on Italy time
+// rather than seeding itself from the device clock.
+export function romeNowInputValue(now = new Date()) {
+  const f = new Intl.DateTimeFormat('en-CA', {
+    timeZone: ROME, year: 'numeric', month: '2-digit', day: '2-digit',
+    hour: '2-digit', minute: '2-digit', hour12: false,
+  }).formatToParts(now).reduce((a, p) => (a[p.type] = p.value, a), {});
+  return `${f.year}-${f.month}-${f.day}T${f.hour === '24' ? '00' : f.hour}:${f.minute}`;
+}
+
 export function durationText(seconds) {
   if (!isFinite(seconds)) return '—';
   const m = Math.round(seconds / 60);

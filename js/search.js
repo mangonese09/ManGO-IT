@@ -1,7 +1,7 @@
 // ── A→B SEARCH ──
 import { api } from './api.js';
 import { el, modeMeta, modeClass, modeIcon, isRailMode, liveBadge, staleChip, openSheet, placeIcon, placeIconKey } from './ui.js';
-import { romeTime, romeDay, romeHour, dayPartKey, DAYPARTS, durationText, isOtherRomeDay, romeWallToIso, whenLabel } from './time.js';
+import { romeTime, romeDay, romeHour, dayPartKey, DAYPARTS, durationText, isOtherRomeDay, romeWallToIso, whenLabel, deviceZoneGap, romeNowInputValue } from './time.js';
 import { displayName } from './names.js';
 import { worstTransferMin, transferTier, transferChipText, imminentText, legStripModel, groupByDaypart, plusTag, isRailReplacement, RESULT_FILTERS, matchesFilter } from './itinerary.js';
 import { operatorFor, fareChip, fareSummary, eur } from './operators.js';
@@ -44,13 +44,40 @@ function initWhenChip() {
   const disp = document.getElementById('when-display');
   const clear = document.getElementById('when-clear');
   if (!input || !disp) return;
+  // An empty datetime-local opens seeded from the DEVICE clock, so a phone still
+  // on Chicago time invited the user to pick 1:30pm meaning their own 1:30pm.
+  // Seed Italy now instead; if they dismiss the picker, drop back to "Now".
+  let seeded = null;
   disp.addEventListener('click', () => {
+    if (!input.value) { seeded = romeNowInputValue(); input.value = seeded; syncWhenDisplay(); }
     try { input.showPicker(); } catch { input.focus(); }
   });
-  input.addEventListener('change', syncWhenDisplay);
+  input.addEventListener('cancel', () => {
+    if (seeded && input.value === seeded) { input.value = ''; syncWhenDisplay(); }
+    seeded = null;
+  });
+  input.addEventListener('change', () => { seeded = null; syncWhenDisplay(); });
   input.addEventListener('input', syncWhenDisplay);
-  if (clear) clear.addEventListener('click', () => { input.value = ''; syncWhenDisplay(); });
+  if (clear) clear.addEventListener('click', () => { input.value = ''; seeded = null; syncWhenDisplay(); });
   syncWhenDisplay();
+  renderZoneNote();
+}
+
+// ── ITALY-TIME NOTICE ──
+// Silent on an Italian-offset phone. Off-offset, it replaces the footnote with
+// the actual gap and repeats it above the results, where the clock times are.
+function renderZoneNote() {
+  const p = document.querySelector('.when-tz');
+  const gap = deviceZoneGap();
+  if (!p || !gap) return;
+  p.textContent = `All times are Italy time — ${gap.text}.`;
+  p.classList.add('tz-gap');
+}
+
+export function zoneBanner() {
+  const gap = deviceZoneGap();
+  if (!gap) return null;
+  return el('p', { class: 'tz-banner', text: `Italy time — ${gap.text}` });
 }
 
 
@@ -1108,6 +1135,7 @@ function renderDayView() {
   rerenderResults = renderDayView;
   results.innerHTML = '';
   results.appendChild(staleChip(dayView.fetchedAt, dayView.stale));
+  const zb1 = zoneBanner(); if (zb1) results.appendChild(zb1);
 
   const now = Date.now();
   const anchorMs = dayView.anchorMs || now;
@@ -1193,6 +1221,7 @@ function renderItineraries(itineraries, { stale, fetchedAt }) {
   rerenderResults = () => renderItineraries(itineraries, { stale, fetchedAt });
   results.innerHTML = '';
   results.appendChild(staleChip(fetchedAt, stale));
+  const zb2 = zoneBanner(); if (zb2) results.appendChild(zb2);
   hideNextPill();
 
   if (!itineraries.length) return; // caller renders direct results or the dead-end fallbacks

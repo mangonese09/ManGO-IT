@@ -1,7 +1,7 @@
 // ── SAVED (favorite stops + pinned departures) ──
 import { api } from './api.js';
 import { el, modeMeta, modeIcon, confirmModal, openSheet, closeSheet, placeIcon, placeIconKey, PLACE_ICONS, LENS_SVG } from './ui.js';
-import { romeTime, romeDay, countdownText, isOtherRomeDay, romeWallToIso } from './time.js';
+import { romeTime, romeDay, countdownText, isOtherRomeDay, romeWallToIso, deviceZoneGap } from './time.js';
 import { getSaved, purgeSaved, removeSaved, getFavStops, addFavStop, removeFavStop, isFavStop, getPlacesSorted, addPlace, removePlace, setHomePlace, setPlaceIcon } from './store.js';
 import { toast } from './toast.js';
 import { displayName } from './names.js';
@@ -198,6 +198,10 @@ export async function openStopSchedule(s) {
           : 'Complete coach timetable for today, including already-departed runs (dimmed) — scheduled times, no live status.';
       }
       content.innerHTML = '';
+      // a board of bare clock times is the other place the Rome/device gap reads
+      // as a bug — state the zone here too, not only on the Home form
+      const gap = deviceZoneGap();
+      if (gap) content.appendChild(el('p', { class: 'tz-banner', text: `Italy time — ${gap.text}` }));
       content.appendChild(el('p', { class: 'muted sched-note', text: note }));
       if (!rows.length) {
         content.appendChild(el('p', { class: 'muted', text: forDate ? 'No departures that day.' : 'No departures today.' }));

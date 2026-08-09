@@ -2,7 +2,7 @@ import { test } from 'node:test';
 import assert from 'node:assert';
 import {
   romeTime, durationText, countdownText, isOtherRomeDay, romeWallToIso, agoText, whenLabel,
-  romeHour, dayPartKey,
+  romeHour, dayPartKey, deviceZoneGap, romeNowInputValue,
 } from '../../js/time.js';
 
 test('whenLabel formats the datetime chip', () => {
@@ -56,6 +56,38 @@ test('romeHour returns Rome wall-clock hour regardless of host TZ', () => {
   assert.strictEqual(romeHour('2026-07-27T22:30:00Z'), 0);  // 00:30 next Rome day
   assert.strictEqual(romeHour('2026-01-15T23:00:00Z'), 0);  // CET +1 → midnight
   assert.strictEqual(romeHour('bad'), null);
+});
+
+// The reported bug: a traveller in Sicily whose phone is still on Chicago time
+// read correct Rome departures ("8:30pm and onwards") as a broken +7h
+// conversion, because nothing next to the times said which zone they were in.
+// The times were never wrong — the app just never owned up to the gap.
+test('deviceZoneGap is silent when the device already agrees with Italy', () => {
+  const summer = new Date('2026-08-09T14:41:00Z');
+  assert.strictEqual(deviceZoneGap(summer, 120), null);            // Rome itself
+  assert.strictEqual(deviceZoneGap(summer, 120), null);            // Berlin/Paris share the offset
+  assert.strictEqual(deviceZoneGap(new Date('2026-01-10T09:00:00Z'), 60), null); // CET winter
+});
+
+test('deviceZoneGap names the offset the way the user would say it', () => {
+  const summer = new Date('2026-08-09T14:41:00Z'); // Rome +2
+  const chicago = deviceZoneGap(summer, -300);     // CDT −5
+  assert.strictEqual(chicago.minutes, 420);
+  assert.ok(chicago.ahead);
+  assert.strictEqual(chicago.text, '7 hours ahead of your phone');
+
+  const winter = new Date('2026-01-10T09:00:00Z'); // Rome +1
+  assert.strictEqual(deviceZoneGap(winter, 0).text, '1 hour ahead of your phone'); // London
+
+  // east of Rome the app is behind, and half-hour zones must not round away
+  assert.strictEqual(deviceZoneGap(summer, 330).text, '3h 30m behind your phone'); // Kolkata
+  assert.ok(!deviceZoneGap(summer, 330).ahead);
+});
+
+test('romeNowInputValue seeds the picker with Italy now, not the device clock', () => {
+  // 14:41Z is 16:41 in Rome and 09:41 in Chicago — the picker must open on 16:41
+  assert.strictEqual(romeNowInputValue(new Date('2026-08-09T14:41:00Z')), '2026-08-09T16:41');
+  assert.strictEqual(romeNowInputValue(new Date('2026-01-10T23:30:00Z')), '2026-01-11T00:30'); // rolls the Rome day
 });
 
 test('dayPartKey buckets the day into morning/afternoon/evening (late night rides evening)', () => {
