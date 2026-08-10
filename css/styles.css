@@ -128,7 +128,14 @@ button { cursor: pointer; }
 .iti-dur { color: var(--text-secondary, #c9c9c9); }
 .iti-day { margin-top: 2px; }
 .iti-chips { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
-.iti-meta { display: flex; justify-content: space-between; align-items: center; }
+/* Field report 2026-08-10: "1 transfer", the risk chip and the fare chip were
+   breaking INSIDE themselves — an item never wraps internally; the row wraps
+   cleanly between items instead. */
+.iti-meta {
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; row-gap: 5px; column-gap: 8px;
+}
+.iti-meta > * { white-space: nowrap; flex: 0 0 auto; }
 
 /* ── badges ── */
 .badge { border-radius: 6px; padding: 2px 7px; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.02em; }
@@ -1283,9 +1290,17 @@ body:has(#results .tz-banner) .search-box .mode-row { margin-bottom: 14px; }
 .choice-row.is-active > .choice-main > span:first-child { font-weight: 600; }
 
 /* ── v1.6.0 field-report round ── */
-/* ticket block: the How-to-buy toggle aligns LEFT like every other line
-   (.stops-toggle's 56px indent belongs to the stop-list context only) */
-.ticket-block .stops-toggle { display: block; padding-left: 0; text-align: left; }
+/* v1.6.1: the whole ticket block is ONE disclosure, collapsed by default —
+   title row = the tap target, mango caret states the affordance */
+.ticket-head {
+  display: flex; align-items: center; justify-content: space-between; gap: 8px;
+  width: 100%; min-height: 44px; padding: 2px 0;
+  background: none; border: none; font: inherit; color: inherit;
+  text-align: left; cursor: pointer;
+}
+.ticket-head:active { opacity: 0.7; }
+.ticket-caret { color: var(--mango, #ffb454); flex: 0 0 auto; font-size: 0.875rem; }
+.ticket-body { padding-bottom: 2px; }
 /* nearest ticket sellers (urban bus legs): tappable rows → map pin */
 .ticket-shops { margin-top: 8px; }
 .ticket-shops-head { font-size: 0.75rem; margin-bottom: 2px; }

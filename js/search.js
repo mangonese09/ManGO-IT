@@ -1528,41 +1528,39 @@ function renderTransitLeg(leg, idx, opsSeen = new Set(), opCounts = {}) {
   // Ticketing block — informational only, links out (PRD non-goal: never sell).
   // Shown once per operator per sheet: a Trenitalia train + Trenitalia bus
   // itinerary was repeating the identical block back-to-back.
+  // v1.6.1 (field report): the WHOLE block is one disclosure, collapsed by
+  // default, so a multi-leg trip shows more legs on screen — the leg row's
+  // fare chip already carries the headline price, so nothing vital hides.
   if (op && !opsSeen.has(op.name)) {
     opsSeen.add(op.name);
-    const kids = [el('div', { class: 'ticket-title', text: `🎫 How to buy — ${op.name}` })];
+    const body = el('div', { class: 'ticket-body', hidden: 'hidden' });
     // SAIS Trasporti: this leg's exact city-pair fare (harvested), shown before
     // the generic how-to-buy text.
     const od = legOdFare(leg);
-    if (od != null) kids.push(el('div', { class: 'fare-line', text: `${eur(od)} · ${displayName(leg.from?.name)} → ${displayName(leg.to?.name)} (buy before boarding)` }));
+    if (od != null) body.appendChild(el('div', { class: 'fare-line', text: `${eur(od)} · ${displayName(leg.from?.name)} → ${displayName(leg.to?.name)} (buy before boarding)` }));
     // Fare summary (§4.3): exact flats show the number + passes; counter/booking
-    // show the honest text. The chip on the leg row carries the headline price.
+    // show the honest text.
     const summary = fareSummary(op, opCounts[op.name] || 1);
     if (summary) {
-      for (const line of summary.lines) kids.push(el('div', { class: 'fare-line', text: line }));
-      if (summary.passHint) kids.push(el('div', { class: 'fare-hint', text: `💡 ${summary.passHint}` }));
+      for (const line of summary.lines) body.appendChild(el('div', { class: 'fare-line', text: line }));
+      if (summary.passHint) body.appendChild(el('div', { class: 'fare-hint', text: `💡 ${summary.passHint}` }));
     }
-    // Purchase instructions collapse by default — the fare is the headline.
-    const detail = el('p', { class: 'muted ticket-how', hidden: 'hidden', text: op.howToBuy });
-    const toggle = el('button', {
-      class: 'stops-toggle', text: 'How to buy ▾',
-      onclick: () => { detail.hidden = !detail.hidden; toggle.textContent = detail.hidden ? 'How to buy ▾' : 'How to buy ▴'; },
-    });
-    kids.push(toggle, detail);
+    body.appendChild(el('p', { class: 'muted ticket-how', text: op.howToBuy }));
     // Outbound link, honestly labelled — no buy-button styling (§4.6).
     if (op.website) {
-      kids.push(el('a', { class: 'ticket-link', href: op.website, target: '_blank', rel: 'noopener' }, [
+      body.appendChild(el('a', { class: 'ticket-link', href: op.website, target: '_blank', rel: 'noopener' }, [
         el('span', { text: op.website.replace(/^https?:\/\/(www\.)?/, '') }),
         el('span', { class: 'muted', text: ' ↗ leaves ManGO:IT' }),
       ]));
     }
-    // v1.6.0: "buy before boarding" is only actionable if you know WHERE —
-    // nearest rivendite (tabaccherie/edicole) to the boarding stop. Urban
-    // buses only; coaches sell at terminals/online. Async and silent on
-    // failure: the block is complete without it.
-    if (leg.mode === 'BUS' && leg.from && isFinite(leg.from.lat) && isFinite(leg.from.lon)) {
+    // v1.6.0: nearest rivendite (tabaccherie/edicole) to the boarding stop —
+    // urban buses only; fetched on FIRST expand, silent on failure.
+    let shopsLoaded = false;
+    const loadShops = () => {
+      if (shopsLoaded || leg.mode !== 'BUS' || !leg.from || !isFinite(leg.from.lat) || !isFinite(leg.from.lon)) return;
+      shopsLoaded = true;
       const slot = el('div', { class: 'ticket-shops' });
-      kids.push(slot);
+      body.appendChild(slot);
       api.ticketShops(leg.from.lat, leg.from.lon).then(({ data }) => {
         const shops = (data && data.shops) || [];
         if (!shops.length) return;
@@ -1580,8 +1578,21 @@ function renderTransitLeg(leg, idx, opsSeen = new Set(), opCounts = {}) {
           ]));
         }
       }).catch(() => { /* offline → the block simply has no seller rows */ });
-    }
-    wrap.appendChild(el('div', { class: 'ticket-block' }, kids));
+    };
+    const caret = el('span', { class: 'ticket-caret', 'aria-hidden': 'true', text: '▾' });
+    const head = el('button', {
+      class: 'ticket-head', 'aria-expanded': 'false',
+      onclick: () => {
+        body.hidden = !body.hidden;
+        caret.textContent = body.hidden ? '▾' : '▴';
+        head.setAttribute('aria-expanded', String(!body.hidden));
+        if (!body.hidden) loadShops();
+      },
+    }, [
+      el('span', { class: 'ticket-title', text: `🎫 How to buy — ${op.name}` }),
+      caret,
+    ]);
+    wrap.appendChild(el('div', { class: 'ticket-block' }, [head, body]));
   }
   return wrap;
 }
