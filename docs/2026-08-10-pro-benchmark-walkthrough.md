@@ -1,5 +1,11 @@
 # Pro-benchmark walkthrough — 2026-08-10 (v1.3.1/v1.3.2 live)
 
+**STATUS: ALL FINDINGS SHIPPED in v1.4.0 (2026-08-10, commit 5ce59c8)** — the
+user chose "do them all in that order". F-1 had shipped in v1.3.2. Verified:
+154/154 unit, 13-check measured Playwright pass local AND live, session-core
+16/16, session-airport all pass, F-6 measured (14 query tops unchanged,
+Rosselli punctuation variants collapse). Findings below kept for the record.
+
 Full-app tour at 390 px against the live site (dark + light themes), 22
 screenshots, zero console/page errors across every screen. Each surface
 compared to Google Maps, Apple Maps, Waze, and the commuter apps (Citymapper,
