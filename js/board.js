@@ -6,7 +6,7 @@
 import { api } from './api.js';
 import { el, modeMeta, modeClass, modeIcon, staleChip } from './ui.js';
 import { countdownText, romeTime } from './time.js';
-import { displayName } from './names.js';
+import { displayName, railReplacementLabel } from './names.js';
 import { saveDeparture, isSaved } from './store.js';
 import { toast } from './toast.js';
 
@@ -123,8 +123,10 @@ function renderBoard(boards, { stale, fetchedAt }) {
   for (const { stop, res } of boards) {
     for (const st of (res?.data?.stopTimes || [])) {
       if (st.cancelled) continue;
-      const key = `${st.mode}|${st.routeShortName || ''}`;
-      if (!lines.has(key)) lines.set(key, { mode: st.mode, route: st.routeShortName, dirs: new Map() });
+      // F-3: nameless Trenitalia BUS = rail-replacement run; name the group
+      const routeName = railReplacementLabel(st.mode, `${st.tripId || ''}${st.stopId || ''}`, st.routeShortName) || st.routeShortName;
+      const key = `${st.mode}|${routeName || ''}`;
+      if (!lines.has(key)) lines.set(key, { mode: st.mode, route: routeName, dirs: new Map() });
       const line = lines.get(key);
       const dir = st.headsign || '';
       const when = new Date(st.departure || st.scheduledDeparture).getTime();

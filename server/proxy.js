@@ -730,6 +730,9 @@ function slimLeg(l) {
     routeShortName: l.routeShortName || null, routeLongName: l.routeLongName || null,
     displayName: l.displayName || null, tripShortName: l.tripShortName || null,
     headsign: l.headsign || null, source: l.source || null,
+    // F-7: the trip id lets "Show on map" fetch this leg's REAL geometry via
+    // /api/trip on demand — polylines stay out of every plan response.
+    tripId: l.tripId || null,
     from: slimPlace(l.from), to: slimPlace(l.to),
     intermediateStops: (l.intermediateStops || []).map(slimPlace),
   };
@@ -880,6 +883,18 @@ function airportResult(a) {
     type: 'AIRPORT', iata: a.iata, name: a.name, id: null, lat: a.lat, lon: a.lon,
     modes: [], category: 'aerodrome', town: a.town, province: a.province, importance: 1,
   };
+}
+
+// F-6 (2026-08-10 walkthrough): "AGRIGENTO (P.LE ROSSELLI)" and "Agrigento
+// P.Rosselli" are the same stop wearing different punctuation — the old
+// name|town key kept both. The key now strips punctuation and drops
+// abbreviation stubs (letter tokens ≤2 chars: P, LE, C…), so punctuation
+// variants collapse while genuinely distinct names ("Agrigento Centrale" vs
+// "Agrigento Bassa") stay apart. Digit tokens always count ("N2" vs "N4").
+function geoDedupeKey(name, town) {
+  const toks = norm(name || '').replace(/[^a-z0-9]+/gi, ' ').trim().split(/\s+/)
+    .filter((t) => t.length >= 3 || /\d/.test(t));
+  return `${toks.join(' ') || norm(name || '')}|${norm(town || '')}`;
 }
 
 // ── NOMINATIM COVERAGE FALLBACK (v1.3.1) ──
@@ -1154,8 +1169,13 @@ async function stoptimesData(stopId, n = 6, timeIso = null) {
   // rows that say "REG 21850" with no direction — unusable. VT knows every
   // train's destination; enrich the blanks from it (cached per train, bounded
   // fan-out, best-effort: a VT miss just leaves the row as it was).
+  // F-3: Trenitalia's rail-REPLACEMENT buses ship the same blank headsigns as
+  // its trains — when the route name carries the train number, VT can name
+  // their destination too (mode BUS + a Trenitalia trip id = replacement run).
+  const vtEligible = (r) => /RAIL|LONG_DISTANCE/.test(r.mode || '')
+    || (r.mode === 'BUS' && /trenitalia/i.test(r.tripId || ''));
   const blanks = [...new Set(rows
-    .filter((r) => /RAIL|LONG_DISTANCE/.test(r.mode || '') && !r.headsign)
+    .filter((r) => vtEligible(r) && !r.headsign)
     .map((r) => (r.routeShortName.match(/(\d{3,6})\s*$/) || [])[1])
     .filter(Boolean))].slice(0, 15);
   if (blanks.length) {
@@ -1379,7 +1399,7 @@ const routes = {
     // dedupe (name+town), rank: airport → transit stops → towns → the rest
     const seen = new Set();
     const all = [...(airport ? [airportResult(airport)] : []), ...results, ...coach].filter((r) => {
-      const k = `${norm(r.name)}|${norm(r.town || '')}`;
+      const k = geoDedupeKey(r.name, r.town);
       if (seen.has(k)) return false;
       seen.add(k); return true;
     });
@@ -1394,7 +1414,7 @@ const routes = {
     if (!sic.length) {
       const extra = await nominatimFallback(text);
       const fresh = extra.filter((r) => {
-        const k = `${norm(r.name)}|${norm(r.town || '')}`;
+        const k = geoDedupeKey(r.name, r.town);
         if (seen.has(k)) return false;
         seen.add(k); return true;
       });
@@ -1965,4 +1985,4 @@ if (require.main === module) {
   server.listen(PORT, () => console.log(`ManGO:IT proxy on :${PORT}${STATIC ? ' (static+api)' : ''}`));
 }
 
-module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon, vtSilence, dropDominated, parseBias, geoScore, clusterStopsByProximity, clusterAreaName, HUBS: TRANSIT_HUBS, hubsInBbox, AIRPORTS, airportMatch, airportResult, nominatimToRow, mergeDepartures, afterStation, decodePolyline };
+module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon, vtSilence, dropDominated, parseBias, geoScore, clusterStopsByProximity, clusterAreaName, HUBS: TRANSIT_HUBS, hubsInBbox, AIRPORTS, airportMatch, airportResult, nominatimToRow, geoDedupeKey, mergeDepartures, afterStation, decodePolyline };

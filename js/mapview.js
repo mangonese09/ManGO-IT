@@ -143,7 +143,21 @@ function modeImgSrc(mode) {
   return '/icons/modes/bus.png';
 }
 
-function stopIcon(mode, kind, merged = 0) {
+const DISC_ZOOM = 15; // F-4: below this, stops render as dots, not 30px discs
+
+function stopIcon(mode, kind, merged = 0, small = false) {
+  // F-4 (2026-08-10 walkthrough): at city-wide zooms a carpet of illustrated
+  // discs buried the map — Google/Apple render minor stops as small dots and
+  // reserve full markers for hubs/favourites. Same family colours, same taps.
+  if (small) {
+    const cls = `stop-dot${kind === 'coach' ? ' dot-coach' : ''}${merged > 1 ? ' dot-merged' : ''}`;
+    const badge = merged > 1 ? `<span class="pin-count">${merged}</span>` : '';
+    return window.L.divIcon({
+      className: cls,
+      html: `<span class="dot"></span>${badge}`,
+      iconSize: [22, 22], iconAnchor: [11, 11],
+    });
+  }
   const src = kind === 'coach' ? '/icons/modes/bus.png' : modeImgSrc(mode);
   // Merged depot pins (several stops folded into one, opening the stop picker)
   // get a distinct teal disc + a COUNT badge, so "this is several stops" is
@@ -375,12 +389,21 @@ function renderIndividual(all, c, r) {
   const stops = all.filter(stopShown).filter((s) => !fk.has(favKey(s))); // favourites show via favMarkers
   const pos = declutter(stops);
   const keep = new Set();
+  const small = map.getZoom() < DISC_ZOOM; // F-4: dots below disc zoom
   for (const s of stops) {
     keep.add(s.id);
     const ll = pos.get(s.id) || [s.lat, s.lon];
-    if (markers.has(s.id)) { markers.get(s.id).setLatLng(ll); continue; }
+    if (markers.has(s.id)) {
+      const m0 = markers.get(s.id);
+      m0.setLatLng(ll);
+      // crossing the dot/disc threshold restamps the icon in place
+      if (m0.small !== small && m0.iconArgs) { m0.setIcon(stopIcon(...m0.iconArgs, small)); m0.small = small; }
+      continue;
+    }
     const meta = { id: s.id, kind: s.kind, ci: s.kind === 'coach' ? Number(s.id.slice(1)) : null, name: s.name, stopId: s.kind === 'transit' ? s.id : null, lat: s.lat, lon: s.lon, members: s.members || null };
-    const m = window.L.marker(ll, { icon: stopIcon((s.modes || [])[0], s.kind, s.merged || 0), keyboard: false }).addTo(map);
+    const m = window.L.marker(ll, { icon: stopIcon((s.modes || [])[0], s.kind, s.merged || 0, small), keyboard: false }).addTo(map);
+    m.iconArgs = [(s.modes || [])[0], s.kind, s.merged || 0];
+    m.small = small;
     m.meta = meta;
     m.bucket = stopBucket(s); // filter toggles prune by family without a refetch
     m.bindTooltip(displayName(s.name), { direction: 'top', offset: [0, -14] });
@@ -390,7 +413,10 @@ function renderIndividual(all, c, r) {
   const limit = r * 2.5;
   for (const [id, m] of markers) {
     if (keep.has(id)) continue;
-    if (map.distance(c, m.getLatLng()) > limit) { m.remove(); markers.delete(id); }
+    if (map.distance(c, m.getLatLng()) > limit) { m.remove(); markers.delete(id); continue; }
+    // kept-but-not-refetched markers must still cross the dot/disc threshold,
+    // or a pan at dot zoom drags stale street-zoom discs along the edge
+    if (m.small !== small && m.iconArgs) { m.setIcon(stopIcon(...m.iconArgs, small)); m.small = small; }
   }
   updateNearestChip(all);
 }
@@ -660,6 +686,73 @@ async function mapTabReady() {
   return !!map;
 }
 
+// F-7: "Show on map" from the trip sheet — the whole itinerary drawn at once:
+// each transit leg's real network geometry (fetched per-leg via /api/trip-shape
+// only when asked — plan responses stay slim), trimmed to the boarded segment,
+// joined by dashed walk links, with tappable-tooltip dots at board/alight points.
+function nearestIdx(path, pt) {
+  let bi = 0, bd = Infinity;
+  for (let i = 0; i < path.length; i++) {
+    const d = (path[i][0] - pt.lat) ** 2 + (path[i][1] - pt.lon) ** 2;
+    if (d < bd) { bd = d; bi = i; }
+  }
+  return bi;
+}
+function trimPath(path, a, b) {
+  if (!a || !b || !isFinite(a.lat) || !isFinite(b.lat)) return path;
+  let i = nearestIdx(path, a), j = nearestIdx(path, b);
+  if (i > j) [i, j] = [j, i];
+  const seg = path.slice(i, j + 1);
+  return seg.length >= 2 ? seg : path;
+}
+export async function showItineraryOnMap(it) {
+  if (!(await mapTabReady())) { toast('Map unavailable right now', 'warn'); return; }
+  const L = window.L;
+  clearHighlight();
+  highlightActive = true;
+  highlightLayer = L.layerGroup().addTo(map);
+  const bounds = [];
+  let colorIdx = 0;
+  for (const leg of it.legs || []) {
+    const { from, to } = leg;
+    if (leg.mode === 'WALK') {
+      if (from && to && isFinite(from.lat) && isFinite(to.lat)) {
+        L.polyline([[from.lat, from.lon], [to.lat, to.lon]], {
+          color: '#9aa4b0', weight: 3, opacity: 0.8, dashArray: '4 7', interactive: false,
+        }).addTo(highlightLayer);
+        bounds.push([from.lat, from.lon], [to.lat, to.lon]);
+      }
+      continue;
+    }
+    // slim-plan stops give an instant straight line; the real geometry
+    // replaces it when the trip shape answers (best-effort)
+    const pts = [from, ...(leg.intermediateStops || []), to].filter((p) => p && isFinite(p.lat) && isFinite(p.lon));
+    const color = routeColor(leg.mode, colorIdx++);
+    let line = pts.map((p) => [p.lat, p.lon]);
+    if (leg.tripId) {
+      try {
+        const { data: shape } = await api.tripShape(leg.tripId);
+        if (shape && shape.path && shape.path.length >= 2) line = trimPath(shape.path, from, to);
+      } catch { /* stop-to-stop fallback already in `line` */ }
+    }
+    if (line.length >= 2) {
+      L.polyline(line, { color, weight: 4, opacity: 0.9, lineJoin: 'round', lineCap: 'round', interactive: false }).addTo(highlightLayer);
+      bounds.push(...line);
+    }
+    for (const p of [from, to]) {
+      if (!p || !isFinite(p.lat) || !isFinite(p.lon)) continue;
+      const dot = L.marker([p.lat, p.lon], {
+        icon: L.divIcon({ className: 'route-dot', html: '<span></span>', iconSize: [11, 11], iconAnchor: [6, 6] }),
+        keyboard: false,
+      }).addTo(highlightLayer);
+      if (p.name) dot.bindTooltip(displayName(p.name), { direction: 'top', offset: [0, -8] });
+    }
+  }
+  document.getElementById('map-canvas').classList.add('has-highlight');
+  const b = L.latLngBounds(bounds);
+  if (b.isValid()) map.flyToBounds(b.pad(0.12), { duration: 0.9 });
+}
+
 // Trace an already-normalized trip shape (from /api/trip-shape or
 // /api/rail-shape): real network geometry + stop dots — trains and city
 // buses get the same treatment as coaches.
@@ -801,7 +894,12 @@ function toggleFav(meta, btn) {
   const key = favKey(meta);
   const nowFav = !isFavStop(key);
   if (nowFav) {
-    addFavStop({ key, name: meta.name, kind: meta.kind === 'coach' ? 'coach stop' : 'stop', iconMode: meta.kind === 'coach' ? 'COACH' : (meta.modes || [])[0] || 'BUS', stopId: meta.stopId || null, lat: meta.lat, lon: meta.lon });
+    // F-8: store the shared classifier's kind (was a literal 'stop', which the
+    // saved card then displayed verbatim)
+    addFavStop({ key, name: meta.name,
+      kind: classifySuggestion({ type: meta.kind === 'coach' ? 'COACH_STOP' : 'STOP', modes: meta.modes || [] }).kind,
+      iconMode: meta.kind === 'coach' ? 'COACH' : (meta.modes || [])[0] || 'BUS',
+      stopId: meta.stopId || null, lat: meta.lat, lon: meta.lon });
   } else {
     removeFavStop(key);
   }

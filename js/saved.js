@@ -4,7 +4,8 @@ import { el, modeMeta, modeIcon, confirmModal, openSheet, closeSheet, placeIcon,
 import { romeTime, romeDay, countdownText, isOtherRomeDay, romeWallToIso, deviceZoneGap } from './time.js';
 import { getSaved, purgeSaved, removeSaved, getFavStops, addFavStop, removeFavStop, isFavStop, getPlacesSorted, addPlace, removePlace, setHomePlace, setPlaceIcon } from './store.js';
 import { toast } from './toast.js';
-import { displayName } from './names.js';
+import { displayName, railReplacementLabel } from './names.js';
+import { classifySuggestion } from './search.js';
 
 // ── favorite-stop search: any stop kind (city bus / coach / train) ──
 let favWired = false;
@@ -34,12 +35,15 @@ async function favSuggest(q) {
     // stops only — this box adds departure boards, not places
     const stops = data.filter((r) => r.type === 'STOP' || r.type === 'COACH_STOP').slice(0, 8);
     for (const r of stops) {
-      let iconMode = 'BUS', kind = 'city bus stop';
+      // F-8: the ONE shared classifier — this inline copy predated v1.3.0's
+      // compound labels, so a starred station complex stored "train station"
+      // while every other surface said "train, tram & bus station".
+      const { iconEl, kind } = classifySuggestion(r);
       const m = r.modes || [];
-      if (r.type === 'COACH_STOP') { iconMode = 'COACH'; kind = 'coach stop'; }
-      else if (m.some((x) => /RAIL|LONG_DISTANCE/.test(x || ''))) { iconMode = 'RAIL'; kind = 'train station'; }
-      else if (m.some((x) => /METRO|SUBWAY/.test(x || ''))) { iconMode = 'METRO'; kind = 'metro station'; }
-      else if (m.some((x) => /TRAM/.test(x || ''))) { iconMode = 'TRAM'; kind = 'tram stop'; }
+      const iconMode = r.type === 'COACH_STOP' ? 'COACH'
+        : m.some((x) => /RAIL|LONG_DISTANCE/.test(x || '')) ? 'RAIL'
+          : m.some((x) => /METRO|SUBWAY/.test(x || '')) ? 'METRO'
+            : m.some((x) => /TRAM/.test(x || '')) ? 'TRAM' : 'BUS';
       const bits = [kind];
       if (r.town && r.town.toLowerCase() !== r.name.toLowerCase()) bits.push(displayName(r.town));
       list.appendChild(el('button', {
@@ -53,7 +57,7 @@ async function favSuggest(q) {
           renderSaved();
         },
       }, [
-        el('span', { class: 'suggest-icon' }, [modeIcon(iconMode)]),
+        el('span', { class: 'suggest-icon' }, [iconEl]),
         el('span', { class: 'suggest-name', text: displayName(r.name) }),
         el('span', { class: 'suggest-area', text: bits.join(' · ') }),
       ]));
@@ -82,7 +86,8 @@ function transitLabel(st) {
   const route = rn && rn.toUpperCase() !== (st.mode || '').toUpperCase() && rn.toLowerCase() !== modeName.toLowerCase() ? rn : '';
   if (route && head) return `${route} → ${head}`;
   if (head) return `${modeName} → ${head}`;
-  return route || modeName;
+  // F-3: a nameless, destination-less Trenitalia BUS is a rail-replacement run
+  return railReplacementLabel(st.mode, `${st.tripId || ''}${st.stopId || ''}`, rn) || route || modeName;
 }
 
 // ── FULL DAY SCHEDULE ──
@@ -103,6 +108,30 @@ function scheduleDayChips() {
     { date: null, label: 'Today' },
     { date: romeDateStr(new Date(now.getTime() + 86400000)), label: 'Tomorrow' },
   ];
+}
+
+// ── F-2: LINE-GROUPED BOARDS (2026-08-10 walkthrough) ──
+// One row per line+direction with the following runs' clocks stacked — the
+// Transit/Citymapper pattern ("N4 → Sarullo · then 04:55 · 05:25") instead of
+// one row per departure. Cancelled and live rows stay standalone: their status
+// is per-run and must not vanish into a group. Pure — unit-tested.
+export function groupRuns(rows, keyOf, isPlain = () => true) {
+  const out = [];
+  const byKey = new Map();
+  for (const r of rows) {
+    if (!isPlain(r)) { out.push({ first: r, rest: [] }); continue; }
+    const k = keyOf(r);
+    const g = byKey.get(k);
+    if (g) g.rest.push(r);
+    else { const ng = { first: r, rest: [] }; byKey.set(k, ng); out.push(ng); }
+  }
+  return out;
+}
+export function thenText(clocks, cap = 3) {
+  if (!clocks.length) return '';
+  const shown = clocks.slice(0, cap);
+  const more = clocks.length - shown.length;
+  return `then ${shown.join(' · ')}${more > 0 ? ` +${more} more` : ''}`;
 }
 
 export async function openStopSchedule(s) {
@@ -236,15 +265,34 @@ export async function openStopSchedule(s) {
       // today is thin.
       const dayRows = rows.filter((r) => !r.iso || !isOtherRomeDay(r.iso) || forDate);
       const later = (forDate || dayRows.length >= 5) ? [] : rows.filter((r) => r.iso && isOtherRomeDay(r.iso)).slice(0, 10);
+      // F-2: within a direction, one row per line with every run's clock on a
+      // wrapped times line (paper-timetable style) — the bold clock and the
+      // countdown always describe the NEXT departure, not the first of the day.
+      const renderGroup = (g, short) => {
+        const runs = [g.first, ...g.rest];
+        const nxt = runs.find((x) => !x.past) || g.first;
+        const row = rowEl({ ...nxt, past: runs.every((x) => x.past) }, short);
+        content.appendChild(row);
+        if (runs.length > 1) {
+          const wrap = el('div', { class: 'sched-times' });
+          for (const x of runs) {
+            wrap.appendChild(el('span', {
+              class: `sched-t${x.past ? ' sched-past' : ''}${x === nxt ? ' sched-t-next' : ''}`, text: x.time,
+            }));
+          }
+          content.appendChild(wrap);
+        }
+      };
+      const grouped = (list2) => groupRuns(list2, (x) => x.label, (x) => !x.live && !x.cancelled);
       const dirs = [];
       for (const r of dayRows) { if (r.dir && !dirs.includes(r.dir)) dirs.push(r.dir); }
       if (dirs.length > 1) {
         for (const d of dirs) {
           content.appendChild(el('div', { class: 'sched-dir', text: `→ ${d}` }));
-          for (const r of dayRows.filter((x) => x.dir === d)) content.appendChild(rowEl(r, true));
+          for (const g of grouped(dayRows.filter((x) => x.dir === d))) renderGroup(g, true);
         }
       } else {
-        for (const r of dayRows) content.appendChild(rowEl(r, false));
+        for (const g of grouped(dayRows)) renderGroup(g, false);
       }
       if (!dayRows.length && !forDate) content.appendChild(el('p', { class: 'muted', text: 'No more departures today.' }));
       let lastDay = null;
@@ -338,13 +386,24 @@ export async function openHubBoard(hub) {
       return;
     }
     const MAX = 60;
-    for (const r of rows.slice(0, MAX)) {
-      const line = (r.line || '').trim() || modeMeta(r.mode).label;
+    // F-2: one row per line+direction, following runs stacked underneath.
+    // Rail rows carry the train number in `line`, so they stay one-per-train.
+    const groups = groupRuns(rows,
+      (x) => `${x.mode}|${(x.line || '').trim()}|${(x.headsign || '').trim()}`,
+      (x) => !x.realtime && !x.cancelled);
+    for (const g of groups.slice(0, MAX)) {
+      const r = g.first;
+      const line = (r.line || '').trim().toUpperCase() === 'BUS' || !(r.line || '').trim()
+        ? (railReplacementLabel(r.mode, r.tripId, r.line) || (r.line || '').trim() || modeMeta(r.mode).label)
+        : (r.line || '').trim();
       const head = displayName((r.headsign || '').trim());
       const past = typeof r.minutes === 'number' && r.minutes < 0;
       const lbl = el('div', { class: 'sched-label2' }, [
         el('span', { class: 'sl-main', text: head ? `${line} → ${head}` : line }),
       ]);
+      if (g.rest.length) {
+        lbl.appendChild(el('span', { class: 'sl-via muted', text: thenText(g.rest.map((x) => romeTime(x.timeISO))) }));
+      }
       // matched on an intermediate stop: answer "where does it fit for ME" on
       // its OWN line with the arrival clock — appended inline it vanished
       // under the headsign's ellipsis
@@ -374,7 +433,7 @@ export async function openHubBoard(hub) {
         list.appendChild(el('div', { class: rowCls }, cells));
       }
     }
-    if (rows.length > MAX) list.appendChild(el('p', { class: 'muted', text: `+${rows.length - MAX} more later today` }));
+    if (groups.length > MAX) list.appendChild(el('p', { class: 'muted', text: `+${groups.length - MAX} more lines later today` }));
     if (searching) list.appendChild(el('p', { class: 'muted', text: 'Searching all of today…' }));
   }
 
@@ -614,7 +673,9 @@ async function favStopCard(s) {
         iconMode: r.mode, when: r.timeISO, live: r.realtime,
       }));
     } else if (s.stopId) {
-      const { data } = await api.stoptimes(s.stopId, 4);
+      // 10 not 4: grouping by line (below) collapses same-line runs, so a
+      // 4-row fetch often filled the card with one line's next four buses
+      const { data } = await api.stoptimes(s.stopId, 10);
       deps = (data.stopTimes || []).map((st) => ({
         label: transitLabel(st),
         iconMode: st.mode,
@@ -629,7 +690,10 @@ async function favStopCard(s) {
     }
     rows.innerHTML = '';
     if (!deps.length) rows.appendChild(el('p', { class: 'muted', text: 'No upcoming departures.' }));
-    for (const d of deps.slice(0, 4)) {
+    // F-2: one card row per line+direction, next runs stacked under the clock
+    for (const g of groupRuns(deps, (x) => x.label, (x) => !x.live && !x.cancelled).slice(0, 4)) {
+      const d = g.first;
+      const clocks = g.rest.map((x) => (x.when ? romeTime(x.when) : x.clock)).filter(Boolean);
       rows.appendChild(el('div', { class: 'dep-row' }, [
         el('span', { class: 'dep-mode' }, [modeIcon(d.iconMode || 'BUS')]),
         el('div', { class: 'dep-main' }, [el('span', { class: 'dep-route', text: d.label })]),
@@ -638,6 +702,7 @@ async function favStopCard(s) {
             ? el('span', { class: 'badge badge-cancel', text: 'CANCELLED' })
             : el('span', { class: `dep-count${d.live ? ' is-live' : ''}`, text: d.when ? countdownText(d.when) : d.clock }),
           d.when ? el('span', { class: 'dep-clock muted', text: romeTime(d.when) }) : null,
+          clocks.length ? el('span', { class: 'dep-clock muted dep-then', text: thenText(clocks, 2) }) : null,
         ]),
       ]));
     }

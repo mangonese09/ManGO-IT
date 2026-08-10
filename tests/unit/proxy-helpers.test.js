@@ -5,8 +5,22 @@ const {
   romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, inSicily, dropDominated,
   parseBias, geoScore, clusterStopsByProximity, clusterAreaName,
   HUBS, hubsInBbox, mergeDepartures,
-  AIRPORTS, airportMatch, airportResult, nominatimToRow,
+  AIRPORTS, airportMatch, airportResult, nominatimToRow, geoDedupeKey,
 } = require('../../server/proxy.js');
+
+// ── F-6: punctuation-insensitive geocode dedupe ──
+test('punctuation variants of one stop share a dedupe key', () => {
+  assert.strictEqual(
+    geoDedupeKey('Agrigento (P.le Rosselli)', 'Agrigento'),
+    geoDedupeKey('Agrigento P.Rosselli', 'Agrigento'),
+  );
+});
+
+test('genuinely distinct names keep distinct keys', () => {
+  assert.notStrictEqual(geoDedupeKey('Agrigento Centrale', 'Agrigento'), geoDedupeKey('Agrigento Bassa', 'Agrigento'));
+  assert.notStrictEqual(geoDedupeKey('Palermo N2', 'Palermo'), geoDedupeKey('Palermo N4', 'Palermo'));
+  assert.notStrictEqual(geoDedupeKey('San Leone', 'Agrigento'), geoDedupeKey('San Leone', 'Tortorici'));
+});
 
 // ── NOMINATIM COVERAGE FALLBACK (v1.3.1) ──
 test('nominatimToRow maps a jsonv2 result into the geocode row shape', () => {

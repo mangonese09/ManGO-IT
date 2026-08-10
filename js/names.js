@@ -57,16 +57,35 @@ export function cleanRouteName(name) {
   return displayName(s);
 }
 
+// F-3 (2026-08-10 walkthrough): Trenitalia's rail-replacement runs arrive as
+// a nameless "BUS" with no headsign — no board row may read bare "Bus". Say
+// what the run IS. Returns null for anything that has a real name.
+export function railReplacementLabel(mode, ids, route) {
+  const rn = String(route || '').trim();
+  if (mode !== 'BUS' || (rn && rn.toUpperCase() !== 'BUS')) return null;
+  return /trenitalia/i.test(String(ids || '')) ? 'Rail replacement bus' : null;
+}
+
 // Feed abbreviations worth spelling out — a suggestion row reading
 // "Catania Aer.Font" isn't a name anyone searched for.
 const EXPANSIONS = [
   [/\bAer\.? ?Font\.?/i, 'Aeroporto Fontanarossa'],
 ];
 
+// F-10: Italian ALL-CAPS feeds write final accents as apostrophes (CEFALU' =
+// Cefalù). Word-final only — "Sant'Agata"'s apostrophe is FOLLOWED by a
+// letter and must survive.
+const APO_ACCENT = { a: 'à', e: 'è', i: 'ì', o: 'ò', u: 'ù', A: 'À', E: 'È', I: 'Ì', O: 'Ò', U: 'Ù' };
+
 export function displayName(name) {
   if (!name) return '';
-  for (const [re, full] of EXPANSIONS) name = String(name).replace(re, full);
-  return String(name).split(' ').map((tok, i) => {
+  let s = String(name);
+  for (const [re, full] of EXPANSIONS) s = s.replace(re, full);
+  // F-10 cosmetics (2026-08-10 walkthrough), display layer only:
+  s = s.replace(/([AaEeIiOoUu])['’](?=[\s,)]|$)/g, (m, v) => APO_ACCENT[v] || m);
+  s = s.replace(/(\S)- /g, '$1 - '); // a hyphen glued to the left word
+  s = s.replace(/\s{2,}/g, ' ');
+  return s.split(' ').map((tok, i) => {
     if (!hasLetter.test(tok)) return tok;          // pure punctuation/numbers
     if (/\d/.test(tok)) return tok;                // S.S.113, KM90 …
     let leading = i === 0;

@@ -1,6 +1,6 @@
 // ── A→B SEARCH ──
 import { api } from './api.js';
-import { el, modeMeta, modeClass, modeIcon, isRailMode, liveBadge, staleChip, openSheet, placeIcon, placeIconKey } from './ui.js';
+import { el, modeMeta, modeClass, modeIcon, isRailMode, liveBadge, staleChip, openSheet, closeSheet, placeIcon, placeIconKey } from './ui.js';
 import { romeTime, romeDay, romeHour, dayPartKey, DAYPARTS, durationText, isOtherRomeDay, romeWallToIso, whenLabel, deviceZoneGap, romeNowInputValue } from './time.js';
 import { displayName } from './names.js';
 import { worstTransferMin, transferTier, transferChipText, imminentText, legStripModel, groupByDaypart, plusTag, isRailReplacement, RESULT_FILTERS, matchesFilter } from './itinerary.js';
@@ -152,7 +152,6 @@ function showQuickPicks(which, list, input) {
       el('span', { text: ' My location' }),
     ]));
   }
-  list.appendChild(chooseOnMapRow(which));
   // one fill path for every quick-pick row (saved place or recent destination)
   const pickQuick = (chosen, label) => {
     list.hidden = true;
@@ -199,6 +198,9 @@ function showQuickPicks(which, list, input) {
       el('span', { class: 'suggest-area', text: 'recent' }),
     ]));
   }
+  // F-11: an input METHOD, not a destination — it closes the list, below the
+  // places the user actually goes (Google orders saved/recents first too)
+  list.appendChild(chooseOnMapRow(which));
   list.hidden = list.children.length === 0;
 }
 
@@ -1365,9 +1367,24 @@ function itineraryCard(it) {
       railBus ? el('span', { class: 'chip chip-railbus', text: 'replacement bus' }) : null,
       tier === 'calm' ? el('span', { class: 'muted', text: transferChipText(worst, tier) }) : null,
       tier === 'tight' || tier === 'risky' ? el('span', { class: `chip chip-xfer-${tier}`, text: transferChipText(worst, tier) }) : null,
+      cardFareText(it),
       liveBadge(anyLive),
     ]),
   ]);
+}
+
+// F-9 (2026-08-10 walkthrough): the fare rides the card when it is EXACT for
+// every paid leg (Google/Citymapper show fares up front). One flat-fare leg =
+// the plain price; multi-leg sums carry "≈" — an urban 90-min ticket can cover
+// a transfer, so the sum is an upper bound, never a promise. Anything with an
+// unknowable leg (rail at-booking, coach counter fares) shows nothing.
+function cardFareText(it) {
+  const paid = it.legs.filter((l) => l.mode !== 'WALK' && !isRailReplacement(l));
+  if (!paid.length) return null;
+  const fares = paid.map(legExactFare);
+  if (!fares.every((f) => f != null)) return null;
+  const sum = fares.reduce((a, b) => a + b, 0);
+  return el('span', { class: 'chip chip-fare', text: paid.length === 1 ? eur(sum) : `≈ ${eur(sum)}` });
 }
 
 // ── ITINERARY DETAIL ──
@@ -1376,6 +1393,24 @@ function openItineraryDetail(it) {
   body.appendChild(el('div', { class: 'iti-detail-head' }, [
     el('strong', { text: `${romeTime(it.startTime)} → ${romeTime(it.endTime)}` }),
     el('span', { class: 'muted', text: ` · ${durationText(it.duration)} · ${romeDay(it.startTime)}` }),
+    // F-7: every itinerary pairs with its map (Google/Apple convention) — the
+    // tracer draws each leg's real geometry, so this is a jump, not a rebuild
+    el('button', {
+      class: 'btn btn-ghost iti-map-btn', text: 'Show on map',
+      onclick: async () => {
+        const { showItineraryOnMap } = await import('./mapview.js');
+        // closeSheet() unwinds a HISTORY entry; its async popstate re-asserts
+        // the pre-sheet tab and would bounce us straight back off the Map tab.
+        // Let it land first, then navigate.
+        const popped = new Promise((resolve) => {
+          window.addEventListener('popstate', resolve, { once: true });
+          setTimeout(resolve, 350); // sandboxed/history-less fallback
+        });
+        closeSheet();
+        await popped;
+        showItineraryOnMap(it);
+      },
+    }),
   ]));
 
   // Sum-total row (§4.6): only when EVERY paid transit leg has an exact fare;
