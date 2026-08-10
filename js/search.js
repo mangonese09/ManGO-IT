@@ -366,7 +366,14 @@ async function chooseOnMap(which) {
 // Exact-name-first ranking, shared by Home + map search: typing "palermo"
 // should lead with Palermo the city and its main station, not Catania street
 // stops NAMED after Palermo. Ties keep the server's Sicily-first order.
-export function rankSuggestions(rows, q) {
+// `origin` biases results toward where the user actually is. Without it a
+// same-named place anywhere in Italy could outrank the local one: typing
+// "San Leone" put a hamlet in Tortorici (prov. Messina, 137 km away) ABOVE
+// Agrigento's own San Leone beach — because kindRank scores town(0) over
+// coach stop(2) and NOTHING scored distance. Planning to that hamlet returns
+// zero itineraries, so the user got a dead end for a stop with 27 departures
+// a day. Distance dominates the score: a far homonym can never win.
+export function rankSuggestions(rows, q, origin) {
   const ql = (q || '').trim().toLowerCase();
   const score = (r) => {
     // an airport row only exists when the query EXACTLY matched its code or an
@@ -377,7 +384,14 @@ export function rankSuggestions(rows, q) {
     const nameRank = n === ql ? 0 : n.startsWith(ql) ? 1 : 2;
     const { kind } = classifySuggestion(r);
     const kindRank = kind === 'town' ? 0 : kind === 'train station' ? 1 : kind === 'coach stop' ? 2 : 3;
-    return nameRank * 10 + kindRank;
+    // Coarse bands, not raw metres: within a band the existing name/kind order
+    // still decides, so this only fires when results are genuinely far apart.
+    let farRank = 0;
+    if (origin && isFinite(r.lat) && isFinite(r.lon)) {
+      const km = havM(origin, r) / 1000;
+      farRank = km > 100 ? 3 : km > 50 ? 2 : km > 20 ? 1 : 0;
+    }
+    return farRank * 100 + nameRank * 10 + kindRank;
   };
   return rows.map((r, i) => ({ r, i, sc: score(r) }))
     .sort((a, b) => a.sc - b.sc || a.i - b.i)
@@ -446,6 +460,16 @@ function geoBias() {
   const p = getLastPos();
   return (p && inItaly(p)) ? `${p.lat.toFixed(4)},${p.lon.toFixed(4)}` : SICILY_CENTROID;
 }
+// Same bias as a point, for ranking. Falling back to the island centroid still
+// demotes MAINLAND homonyms ("Punta Bianca" was returning Ponza and Sondrio);
+// it is deliberately too coarse to separate two Sicilian places, which is why
+// results also STATE their province so the user can tell them apart on sight.
+function biasPoint() {
+  const p = getLastPos();
+  if (p && inItaly(p)) return p;
+  const [lat, lon] = SICILY_CENTROID.split(',').map(Number);
+  return { lat, lon };
+}
 
 const suggestSeq = { from: 0, to: 0 };
 async function suggest(which, q) {
@@ -458,7 +482,7 @@ async function suggest(which, q) {
     list.appendChild(chooseOnMapRow(which));
     // show up to 12 (the geocoder caps at ~10 anyway): with Sicily-first ranking
     // this surfaces more Sicilian streets so a nearby one isn't cut off the list
-    for (const r of rankSuggestions(data, q).slice(0, 12)) {
+    for (const r of rankSuggestions(data, q, biasPoint()).slice(0, 12)) {
       // every result states WHAT it is: train station / metro / tram /
       // city bus stop / intercity coach stop / town / address. The neutral
       // default is the mango pin (was a bare red 📌 emoji).

@@ -1307,6 +1307,7 @@ const routes = {
         };
       });
     // our own coach stops (name-matched) — these exist before Transitous ingests the feed
+    const COACH_AREA_M = 3000; // how close an upstream row must be to lend its town/province
     const needle = norm(text);
     const coach = coachStops
       .filter((s) => norm(s.n).includes(needle))
@@ -1315,6 +1316,22 @@ const routes = {
         type: 'COACH_STOP', name: s.n, id: null, lat: s.lat, lon: s.lon,
         modes: ['COACH'], category: null, town: null, province: null, importance: 0,
       }));
+    // Our own coach stops are {n,lat,lon} with no admin areas, so they rendered
+    // BARE ("San Leone · coach stop") next to a fully-labelled homonym ("San
+    // Leone · town · Tortorici · prov. Messina") — nothing on screen said which
+    // one was the local one. Borrow town/province from a co-located upstream
+    // result (same physical place, already carrying areas). Nothing within
+    // reach => stay null: an invented province is worse than none, and a wrong
+    // one would be exactly the confident-wrong-answer failure we design against.
+    for (const c of coach) {
+      let best = null, bestD = COACH_AREA_M;
+      for (const r of results) {
+        if (!r.town && !r.province) continue;
+        const d = haversineM(c.lat, c.lon, r.lat, r.lon);
+        if (d < bestD) { bestD = d; best = r; }
+      }
+      if (best) { c.town = best.town; c.province = best.province; }
+    }
     // an exact IATA code / airport alias answers the query outright (see
     // AIRPORTS). It leads the array so the name+town dedupe below keeps OUR
     // row over a near-identical upstream one ("AEROPORTO CATANIA Fontanarossa"),

@@ -1026,7 +1026,7 @@ function openMapSearch() {
         const { data } = await api.geocode(q);
         if (seq !== mapSearchSeq) return;
         results.innerHTML = '';
-        const rows = rankSuggestions((data || []).filter((r) => isFinite(r.lat) && isFinite(r.lon)), q).slice(0, 8);
+        const rows = rankSuggestions((data || []).filter((r) => isFinite(r.lat) && isFinite(r.lon)), q, map ? { lat: map.getCenter().lat, lon: map.getCenter().lng } : null).slice(0, 8);
         if (!rows.length) { results.appendChild(el('div', { class: 'suggest-row suggest-dead muted', text: 'No match' })); return; }
         for (const r of rows) {
           // Same row anatomy as the Home suggestions: mode icon, name,
