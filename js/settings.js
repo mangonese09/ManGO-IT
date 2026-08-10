@@ -4,7 +4,7 @@
 // discovery never mutates the setting (the old cycling pills changed it just
 // to reveal the next state). Cache clearing is split from data erasure (S-1).
 import { APP_VERSION } from './version.js';
-import { getSettings, patchSettings, clearAllAppData, clearCachedData, getFavStops, getPlaces, getRecents, getSaved } from './store.js';
+import { getSettings, patchSettings, clearAllAppData, clearCachedData, getFavStops, getPlaces, getRecents, getSaved, exportBackup, importBackup, describeBackup, quarantineCount } from './store.js';
 import { confirmModal, openSheet, closeSheet, el } from './ui.js';
 import { api } from './api.js';
 import { toast } from './toast.js';
@@ -75,7 +75,7 @@ export function initSettings() {
     add(getRecents().length, 'recent search');
     add(getSaved().length, 'saved departure');
     const what = bits.length ? `Removes ${bits.join(', ')} — and all settings. ` : 'Removes all settings. ';
-    const ok = await confirmModal(`Erase everything? ${what}This cannot be undone.`, { confirmText: 'Erase' });
+    const ok = await confirmModal(`Erase everything? ${what}This cannot be undone — “Back up my data” above saves a copy first.`, { confirmText: 'Erase' });
     if (!ok) return;
     clearAllAppData();
     if ('caches' in window) {
@@ -83,6 +83,40 @@ export function initSettings() {
       await Promise.all(names.map((n) => caches.delete(n)));
     }
     location.reload();
+  });
+
+  // ── BACKUP / RESTORE (storage-durability §6) ──
+  document.getElementById('backup-data')?.addEventListener('click', async () => {
+    const json = JSON.stringify(exportBackup(), null, 1);
+    const name = `mango-it-backup-${new Date().toISOString().slice(0, 10)}.json`;
+    // Blob downloads are unreliable inside the Capacitor WebView — go straight
+    // to the clipboard there; on the web, download with a clipboard fallback.
+    const toClipboard = async () => {
+      await navigator.clipboard.writeText(json);
+      toast('Backup copied to clipboard — paste it somewhere safe', 'info', 3600);
+    };
+    try {
+      if (window.Capacitor) { await toClipboard(); return; }
+      const a = el('a', { href: URL.createObjectURL(new Blob([json], { type: 'application/json' })), download: name });
+      document.body.appendChild(a); a.click(); a.remove();
+      setTimeout(() => URL.revokeObjectURL(a.href), 5000);
+      toast(`Backup saved (${name})`, 'info', 3000);
+    } catch {
+      try { await toClipboard(); } catch { toast('Could not create a backup', 'warn'); }
+    }
+  });
+  const fileInput = document.getElementById('restore-file');
+  document.getElementById('restore-data')?.addEventListener('click', () => fileInput?.click());
+  fileInput?.addEventListener('change', async () => {
+    const f = fileInput.files && fileInput.files[0];
+    fileInput.value = '';
+    if (!f) return;
+    let obj = null;
+    try { obj = JSON.parse(await f.text()); } catch { toast('That file is not a ManGO:IT backup', 'warn'); return; }
+    if (!obj || obj.app !== 'mangoit' || !obj.data) { toast('That file is not a ManGO:IT backup', 'warn'); return; }
+    const ok = await confirmModal(`Restore this backup? ${describeBackup(obj)} — this replaces what’s on this device.`, { confirmText: 'Restore' });
+    if (!ok) return;
+    try { importBackup(obj); location.reload(); } catch { toast('Could not restore that backup', 'warn'); }
   });
 
   document.getElementById('check-updates')?.addEventListener('click', checkForUpdates);
@@ -179,6 +213,16 @@ async function openDataSheet() {
     'Plans your A→B itineraries across trains, coaches and city transit.'));
   body.appendChild(dataRow('Fares', 'checked Jul 2026',
     'Urban flats (AMAT, AMTS, FCE, TUA) and SAIS Trasporti city-pair prices are exact; rail and most coaches are priced at booking — never estimated.'));
+  // storage-durability §3/§5: honest storage status + the quiet recovery line
+  const qn = quarantineCount();
+  const yourData = dataRow('Your data', '…',
+    `Saved stops, places and settings live on this device only — back up from Settings.${qn ? ` ${qn} recovered data snapshot${qn > 1 ? 's' : ''} held.` : ''}`);
+  body.appendChild(yourData);
+  navigator.storage?.persisted?.().then((p) => {
+    const val = yourData.querySelector('.data-src-value');
+    val.textContent = p ? 'protected' : 'best-effort';
+    if (p) val.classList.add('data-src-ok');
+  }).catch(() => { yourData.querySelector('.data-src-value').textContent = 'on device'; });
   openSheet(body, { title: 'Data & schedules' });
 
   try {

@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://mangonese.dev">
   <link rel="preconnect" href="https://mangonese.dev" crossorigin>
   <link rel="stylesheet" href="https://mangonese.dev/shared/mangonese.css">
-  <link rel="stylesheet" href="/css/styles.css?v=1.6.1">
+  <link rel="stylesheet" href="/css/styles.css?v=1.7.0">
 </head>
 <body>
   <header class="app-header">
@@ -127,6 +127,15 @@
           <span>Check for updates <span class="muted setting-ver" id="current-version"></span></span>
         </button>
         <div class="setting-sep"></div>
+        <button id="backup-data" class="setting-row setting-link">
+          <span>Back up my data</span>
+        </button>
+        <div class="setting-sep"></div>
+        <button id="restore-data" class="setting-row setting-link">
+          <span>Restore from backup</span>
+        </button>
+        <input id="restore-file" type="file" accept="application/json,.json" class="when-native" aria-hidden="true" tabindex="-1">
+        <div class="setting-sep"></div>
         <button id="clear-cache" class="setting-row setting-link">
           <span>Clear cached schedules</span>
         </button>
@@ -176,6 +185,6 @@
       });
     }
   </script>
-  <script type="module" src="/js/app.js?v=1.6.1"></script>
+  <script type="module" src="/js/app.js?v=1.7.0"></script>
 </body>
 </html>

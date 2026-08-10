@@ -645,7 +645,7 @@ function romeNowMin() {
 async function favStopCard(s) {
   const card = el('div', { class: 'card fav-stop-card' }, [
     el('div', { class: 'fav-stop-head fav-stop-tap', role: 'button', tabindex: '0', onclick: () => openStopSchedule(s) }, [
-      el('span', { class: 'suggest-icon' }, [modeIcon(s.iconMode || (s.icon === '🚌' ? 'COACH' : 'BUS'))]),
+      el('span', { class: 'suggest-icon' }, [modeIcon(s.iconMode || 'BUS')]),
       el('div', { class: 'dep-main' }, [
         el('span', { class: 'dep-route', text: displayName(s.name) }),
         el('span', { class: 'muted dep-headsign', text: `${s.kind} · tap for today's schedule` }),

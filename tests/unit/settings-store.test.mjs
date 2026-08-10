@@ -37,6 +37,71 @@ test('clearCachedData drops only cache + freshness', () => {
   assert.strictEqual(store.getSettings().theme, 'light');
 });
 
+// ── v1.7.0 storage durability ──
+
+test('migration 1→2 fills iconMode and re-encodes raw stray keys', () => {
+  mem.clear();
+  mem.set('mangoit.favstops', JSON.stringify([{ key: 'k', name: 'X', icon: '🚌' }, { key: 'k2', name: 'Y', iconMode: 'RAIL' }]));
+  mem.set('mangoit.view', 'saved');       // pre-v1.7 RAW string
+  mem.set('mangoit.mapStyle', 'auto');    // pre-v1.7 RAW string
+  store.migrateStorage();
+  assert.strictEqual(store.getFavStops()[0].iconMode, 'COACH');
+  assert.strictEqual(store.getFavStops()[1].iconMode, 'RAIL');
+  assert.strictEqual(store.getPref('view', null), 'saved');
+  assert.strictEqual(store.getPref('mapStyle', 'x'), 'auto');
+  assert.strictEqual(JSON.parse(mem.get('mangoit.schemaVersion')), 2);
+});
+
+test('corrupt user data is quarantined, never silently dropped', () => {
+  mem.clear();
+  mem.set('mangoit.schemaVersion', '2');
+  mem.set('mangoit.favstops', '{corrupt!!');
+  assert.deepStrictEqual(store.getFavStops(), []);
+  assert.strictEqual(store.quarantineCount(), 1);
+  const qKey = [...mem.keys()].find((k) => k.startsWith('mangoit.__quarantine.favstops.'));
+  assert.strictEqual(mem.get(qKey), '{corrupt!!'); // the raw bytes survive
+});
+
+test('quota pressure evicts cache and the user write succeeds', () => {
+  mem.clear();
+  mem.set('mangoit.schemaVersion', '2');
+  store.cacheWrite('big', [1, 2, 3]);
+  const realSet = globalThis.localStorage.setItem;
+  let failures = 1; // first attempt hits "quota", the retry succeeds
+  globalThis.localStorage.setItem = (k, v) => {
+    if (k === 'mangoit.places' && failures > 0) { failures -= 1; throw new Error('QuotaExceededError'); }
+    realSet(k, v);
+  };
+  const ok = store.addPlace({ key: 'p', name: 'Mondello', lat: 38, lon: 13 });
+  globalThis.localStorage.setItem = realSet;
+  assert.ok(ok);
+  assert.strictEqual(store.getPlaces().length, 1);        // user data landed
+  assert.strictEqual(store.cacheRead('big'), null);       // cache paid for it
+});
+
+test('export → import round trip, with a v1 backup migrated on the way in', () => {
+  mem.clear();
+  mem.set('mangoit.schemaVersion', '2');
+  store.addFavStop({ key: 's1', name: 'PALERMO CENTRALE', iconMode: 'RAIL' });
+  store.addPlace({ key: 'p1', name: 'Mondello', lat: 38.2, lon: 13.3 });
+  const backup = store.exportBackup();
+  assert.strictEqual(backup.app, 'mangoit');
+  assert.match(store.describeBackup(backup), /1 saved stop, 1 place/);
+  store.clearAllAppData();
+  store.importBackup(backup);
+  assert.strictEqual(store.getFavStops().length, 1);
+  assert.strictEqual(store.getPlaces()[0].name, 'Mondello');
+  // a v1-era backup (emoji icon, no iconMode) migrates during import
+  store.importBackup({ app: 'mangoit', schemaVersion: 1, data: { favstops: [{ key: 'k', name: 'X', icon: '🚌' }] } });
+  assert.strictEqual(store.getFavStops()[0].iconMode, 'COACH');
+  assert.strictEqual(store.getPlaces().length, 0); // absent keys clear — a backup REPLACES
+});
+
+test('importBackup rejects foreign files', () => {
+  assert.throws(() => store.importBackup({ app: 'other', data: {} }));
+  assert.throws(() => store.importBackup({ app: 'mangoit' }));
+});
+
 test('clearAllAppData erases everything under the namespace', () => {
   seed();
   store.clearAllAppData();

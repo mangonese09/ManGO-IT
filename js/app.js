@@ -5,7 +5,7 @@ import { renderSaved } from './saved.js';
 import { renderMapTab } from './mapview.js';
 import { initSettings } from './settings.js';
 import { closeSheet, anySheetOpen } from './ui.js';
-import { pruneCache } from './store.js';
+import { pruneCache, getPref, setPref } from './store.js';
 
 const VIEWS = ['home', 'saved', 'map', 'settings'];
 let current = 'home';
@@ -18,7 +18,7 @@ function setView(view, push = true) {
   if (push) navStack.push(current);
   current = view;
   // survive a page reload (browser pull-to-refresh) on the same tab
-  try { localStorage.setItem('mangoit.view', view); } catch { /* private mode */ }
+  setPref('view', view);
   // QA-03: browser back walks the tab stack instead of exiting the app
   if (push) { try { history.pushState({ view }, '', '#' + view); } catch { /* sandboxed */ } }
   for (const v of VIEWS) {
@@ -96,6 +96,9 @@ function boot() {
   // above swaps the torn shell out on its own.
   const safe = (name, fn) => { try { fn(); } catch (err) { console.error(`init ${name} failed`, err); } };
   safe('pruneCache', pruneCache);
+  // storage-durability §5: ask the browser not to evict our origin under
+  // pressure — non-blocking, and Settings reports the honest answer.
+  safe('persistStorage', () => { navigator.storage?.persist?.().catch(() => {}); });
   safe('settings', initSettings);
   safe('search', initSearch);
   safe('board', initBoard);
@@ -105,7 +108,7 @@ function boot() {
 
   // pull-to-refresh reloads the page: reopen the tab the user was on
   try {
-    const last = localStorage.getItem('mangoit.view');
+    const last = getPref('view', null);
     if (last && last !== 'home') setView(last, false);
     history.replaceState({ view: current }, '', '#' + current);
   } catch { /* private mode */ }

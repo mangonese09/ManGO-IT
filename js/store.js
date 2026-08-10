@@ -2,18 +2,115 @@
 // v1 backend is localStorage (single user, works offline on roaming).
 // Firebase Auth + Firestore mirror is a planned fast-follow — keep all
 // persistence behind these functions so the swap is one file.
+//
+// v1.7.0 (storage-durability design, 2026-08-09): this file is the ONLY door
+// to localStorage. It owns the schema version + migration chain, quarantines
+// unreadable user data instead of dropping it, evicts cache before ever
+// failing a user-data write, and produces/consumes the backup format.
+import { toast } from './toast.js';
 
 const NS = 'mangoit.';
+export const SCHEMA_VERSION = 2; // 1 = the pre-v1.7 unversioned shape
+
+// Every key that holds USER state (preferences included). Cache and metadata
+// keys are deliberately absent: they are disposable, these are not.
+const USER_KEYS = ['settings', 'saved', 'favstops', 'places', 'recents', 'view', 'mapStyle', 'mapModes', 'modes'];
+
+function rawGet(k) { try { return localStorage.getItem(NS + k); } catch { return null; } }
+function rawDel(k) { try { localStorage.removeItem(NS + k); } catch { /* hostile storage */ } }
 
 function read(key, fallback) {
+  const raw = rawGet(key);
+  if (raw === null) return fallback;
   try {
-    const raw = localStorage.getItem(NS + key);
-    return raw === null ? fallback : JSON.parse(raw);
-  } catch { return fallback; }
+    return JSON.parse(raw);
+  } catch {
+    // Unreadable USER data is QUARANTINED, never dropped: the raw bytes move
+    // aside so a later import/human can recover them. Cache is disposable.
+    if (USER_KEYS.includes(key)) {
+      try { localStorage.setItem(`${NS}__quarantine.${key}.${Date.now()}`, raw); } catch { /* keep booting */ }
+    }
+    rawDel(key);
+    return fallback;
+  }
 }
+
 function write(key, value) {
-  try { localStorage.setItem(NS + key, JSON.stringify(value)); } catch { /* quota — ignore */ }
+  const s = JSON.stringify(value);
+  try {
+    localStorage.setItem(NS + key, s);
+    return true;
+  } catch {
+    if (!USER_KEYS.includes(key)) return false; // a cache write may fail silently
+    // Quota: USER data wins over cache — evict every cache blob, retry once.
+    try {
+      for (let i = localStorage.length - 1; i >= 0; i--) {
+        const k = localStorage.key(i);
+        if (k && k.startsWith(NS + 'cache.')) localStorage.removeItem(k);
+      }
+      localStorage.setItem(NS + key, s);
+      return true;
+    } catch {
+      try { toast('Could not save — device storage is full', 'warn'); } catch { /* headless */ }
+      return false;
+    }
+  }
 }
+
+// ── SCHEMA MIGRATIONS ──
+// migrateData lifts a {key: value} bag from `version` to SCHEMA_VERSION —
+// shared by the boot migration and by importing an older backup file.
+function fillIconModes(list) {
+  return (list || []).map((s) => (s && !s.iconMode ? { ...s, iconMode: s.icon === '🚌' ? 'COACH' : 'BUS' } : s));
+}
+export function migrateData(version, data) {
+  if (version < 2 && data.favstops) data.favstops = fillIconModes(data.favstops);
+  return data;
+}
+
+function snapshotUserKeys() {
+  const snap = {};
+  for (const k of USER_KEYS) snap[k] = rawGet(k);
+  try { localStorage.setItem(`${NS}__backup.v1`, JSON.stringify(snap)); } catch { /* best effort */ }
+}
+function restoreSnapshot() {
+  const raw = rawGet('__backup.v1');
+  if (raw === null) return;
+  try {
+    const snap = JSON.parse(raw);
+    for (const k of USER_KEYS) {
+      if (snap[k] === null || snap[k] === undefined) rawDel(k);
+      else localStorage.setItem(NS + k, snap[k]);
+    }
+  } catch { /* the snapshot itself is gone — nothing to restore */ }
+}
+
+// Runs at module load (before any reader — every module reads through here).
+// Exported so tests can exercise it against a seeded storage stub.
+export function migrateStorage() {
+  // A migration that died mid-flight leaves the flag set: restore the
+  // pre-migration snapshot rather than proceeding on half-migrated data.
+  if (rawGet('__migrating') !== null) restoreSnapshot();
+  const v = Number(read('schemaVersion', 1)) || 1;
+  if (v >= SCHEMA_VERSION) { rawDel('__migrating'); return; }
+  snapshotUserKeys();
+  try { localStorage.setItem(`${NS}__migrating`, '1'); } catch { /* private mode */ }
+  // 1→2a: two stray keys predate this file owning them and hold RAW strings
+  // ('home', 'auto') — re-encode as JSON so read() stops quarantining them.
+  for (const k of ['view', 'mapStyle']) {
+    const raw = rawGet(k);
+    if (raw === null) continue;
+    try { JSON.parse(raw); } catch { try { localStorage.setItem(NS + k, JSON.stringify(raw)); } catch { /* skip */ } }
+  }
+  // 1→2b: the favstops iconMode legacy patch moves here from saved.js —
+  // one owner (this migration) instead of an inline fallback that never dies.
+  // Only when the key exists: a fresh (or freshly-erased) device must not
+  // grow an empty list it never had.
+  if (rawGet('favstops') !== null) write('favstops', fillIconModes(read('favstops', [])));
+  write('schemaVersion', SCHEMA_VERSION);
+  rawDel('__migrating');
+}
+try { migrateStorage(); } catch { /* a broken storage layer must never block boot */ }
 
 // ── settings ──
 export function getSettings() {
@@ -22,6 +119,11 @@ export function getSettings() {
 export function patchSettings(patch) {
   write('settings', Object.assign(getSettings(), patch));
 }
+
+// ── small preferences (view / mapStyle / mapModes / modes) ──
+// The four former stray keys — behind the same door as everything else.
+export function getPref(key, fallback) { return read(key, fallback); }
+export function setPref(key, value) { return write(key, value); }
 
 // ── saved departures ──
 export function getSaved() { return read('saved', []); }
@@ -131,9 +233,51 @@ export function pruneCache(maxAgeMs = 48 * 3600 * 1000, now = Date.now()) {
   return stale.length;
 }
 
-// S-1 (settings deep dive): cache-only clear — "clear cache" must be SAFE by
-// definition. User data (favstops, places, recents, saved, settings) is never
-// touched here; erasing that is clearAllAppData, a separate deliberate action.
+// ── BACKUP (export / import, storage-durability §6) ──
+export function exportBackup() {
+  const data = {};
+  for (const k of USER_KEYS) {
+    const v = read(k, null);
+    if (v !== null) data[k] = v;
+  }
+  return { app: 'mangoit', schemaVersion: SCHEMA_VERSION, exportedAt: new Date().toISOString(), data };
+}
+// Counts for the confirm modal — the import names exactly what lands.
+export function describeBackup(obj) {
+  const d = (obj && obj.data) || {};
+  const bits = [];
+  const add = (n, word) => { if (n) bits.push(`${n} ${word}${n > 1 ? 's' : ''}`); };
+  add((d.favstops || []).length, 'saved stop');
+  add((d.places || []).length, 'place');
+  add((d.recents || []).length, 'recent search');
+  add((d.saved || []).length, 'saved departure');
+  return bits.length ? bits.join(', ') : 'settings only';
+}
+export function importBackup(obj) {
+  if (!obj || obj.app !== 'mangoit' || typeof obj.data !== 'object' || obj.data === null) {
+    throw new Error('not a ManGO:IT backup');
+  }
+  const data = migrateData(Number(obj.schemaVersion) || 1, { ...obj.data });
+  for (const k of USER_KEYS) {
+    if (k in data && data[k] !== null && data[k] !== undefined) write(k, data[k]);
+    else rawDel(k); // a backup REPLACES device state — absent keys clear
+  }
+  write('schemaVersion', SCHEMA_VERSION);
+  return data;
+}
+
+export function quarantineCount() {
+  let n = 0;
+  for (let i = 0; i < localStorage.length; i++) {
+    const k = localStorage.key(i);
+    if (k && k.startsWith(NS + '__quarantine.')) n += 1;
+  }
+  return n;
+}
+
+// S-1: cache-only clear — "clear cache" must be SAFE by definition. User data
+// (favstops, places, recents, saved, settings) is never touched here; erasing
+// that is clearAllAppData, a separate deliberate action.
 export function clearCachedData() {
   const keys = [];
   for (let i = 0; i < localStorage.length; i++) {

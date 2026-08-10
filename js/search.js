@@ -6,7 +6,7 @@ import { displayName } from './names.js';
 import { worstTransferMin, transferTier, transferChipText, imminentText, legStripModel, groupByDaypart, plusTag, isRailReplacement, RESULT_FILTERS, matchesFilter } from './itinerary.js';
 import { operatorFor, fareChip, fareSummary, eur } from './operators.js';
 import { saisOdFare } from './fares-od.js';
-import { getRecents, pushRecent, removeRecent, getFavStops, addFavStop, removeFavStop, getSettings, getPlacesSorted, addPlace, removePlace, isPlace } from './store.js';
+import { getRecents, pushRecent, removeRecent, getFavStops, addFavStop, removeFavStop, getSettings, getPlacesSorted, addPlace, removePlace, isPlace, getPref, setPref } from './store.js';
 import { getLastPos } from './board.js';
 import { toast } from './toast.js';
 
@@ -232,7 +232,7 @@ const RAIL_MODES = 'RAIL,HIGHSPEED_RAIL,LONG_DISTANCE,NIGHT_RAIL,REGIONAL_RAIL,R
 const BUS_MODES = 'BUS,COACH';
 const ALWAYS_MODES = 'TRAM,METRO,SUBWAY,FERRY';
 let modeSel = { train: true, bus: true };
-try { modeSel = { ...modeSel, ...JSON.parse(localStorage.getItem('mangoit.modes') || '{}') } } catch { /* fresh */ }
+modeSel = { ...modeSel, ...getPref('modes', {}) };
 
 function initModeToggles() {
   for (const which of ['train', 'bus']) {
@@ -247,7 +247,7 @@ function initModeToggles() {
       modeSel[which] = !modeSel[which];
       btn.classList.toggle('active', modeSel[which]);
       btn.setAttribute('aria-pressed', String(modeSel[which]));
-      try { localStorage.setItem('mangoit.modes', JSON.stringify(modeSel)); } catch { /* private mode */ }
+      setPref('modes', modeSel);
       // QA-17: debounced — toggle bursts fire one search, not one per tap
       clearTimeout(initModeToggles._t);
       if (sel.from && sel.to) initModeToggles._t = setTimeout(runSearch, 400);

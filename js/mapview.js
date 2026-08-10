@@ -13,6 +13,7 @@ import { openStopSchedule, openHubBoard } from './saved.js';
 import { isFavStop, addFavStop, removeFavStop, getFavStops } from './store.js';
 import { toast } from './toast.js';
 import { classifySuggestion, suggestStar, placeStar, rankSuggestions } from './search.js';
+import { getPref, setPref } from './store.js';
 
 // Favourite key — same scheme as Home/Saved: transit stops key by id, coach
 // stops (no stable id) by rounded coords.
@@ -46,7 +47,7 @@ const markers = new Map(); // stopId -> L.Marker
 const MAP_FILTER_KEYS = ['rail', 'city', 'coach', 'hub'];
 let mapFilter = { rail: true, city: true, coach: true, hub: true };
 try {
-  const saved = JSON.parse(localStorage.getItem('mangoit.mapModes') || '{}');
+  const saved = getPref('mapModes', {});
   if ('road' in saved && !('city' in saved)) { saved.city = saved.road; saved.coach = saved.road; }
   for (const k of MAP_FILTER_KEYS) if (k in saved) mapFilter[k] = !!saved[k];
 } catch { /* default */ }
@@ -82,10 +83,10 @@ function declutter(stops) {
 // Map style: 'auto' follows the app theme; 'dark'/'light' pin the basemap
 // regardless of theme (Settings → Map style). Persisted.
 let mapStyle = 'auto';
-try { mapStyle = localStorage.getItem('mangoit.mapStyle') || 'auto'; } catch { /* default */ }
+mapStyle = getPref('mapStyle', 'auto');
 export function setMapStyle(v) {
   mapStyle = v;
-  try { localStorage.setItem('mangoit.mapStyle', v); } catch { /* private mode */ }
+  setPref('mapStyle', v);
   if (map) ensureTiles();
 }
 export function getMapStyle() { return mapStyle; }
@@ -1134,7 +1135,7 @@ function buildControls() {
           toast('Keep at least one filter on', 'warn'); return;
         }
         mapFilter[key] = next;
-        try { localStorage.setItem('mangoit.mapModes', JSON.stringify(mapFilter)); } catch { /* private mode */ }
+        setPref('mapModes', mapFilter);
         chip.classList.toggle('on', next);
         applyFilter();
       },
