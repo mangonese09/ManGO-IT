@@ -97,6 +97,19 @@ test('export → import round trip, with a v1 backup migrated on the way in', ()
   assert.strictEqual(store.getPlaces().length, 0); // absent keys clear — a backup REPLACES
 });
 
+test('favourite lines: cap evicts oldest, backup carries them', () => {
+  mem.clear();
+  mem.set('mangoit.schemaVersion', '2');
+  for (let i = 0; i < 9; i++) store.addFavLine({ key: 'L' + i, mode: 'COACH', line: 'Linea ' + i, headsign: 'X', lat: 38, lon: 13, stopName: 'S' });
+  const lines = store.getFavLines();
+  assert.strictEqual(lines.length, 8);
+  assert.strictEqual(lines[0].key, 'L1'); // L0 evicted
+  assert.ok(store.isFavLine('L8') && !store.isFavLine('L0'));
+  assert.match(store.describeBackup(store.exportBackup()), /8 lines/);
+  store.removeFavLine('L8');
+  assert.strictEqual(store.getFavLines().length, 7);
+});
+
 test('importBackup rejects foreign files', () => {
   assert.throws(() => store.importBackup({ app: 'other', data: {} }));
   assert.throws(() => store.importBackup({ app: 'mangoit' }));

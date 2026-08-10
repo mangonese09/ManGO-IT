@@ -2,7 +2,8 @@
 import { api } from './api.js';
 import { el, modeMeta, modeIcon, confirmModal, openSheet, closeSheet, placeIcon, placeIconKey, PLACE_ICONS, LENS_SVG } from './ui.js';
 import { romeTime, romeDay, countdownText, isOtherRomeDay, romeWallToIso, deviceZoneGap } from './time.js';
-import { getSaved, purgeSaved, removeSaved, getFavStops, addFavStop, removeFavStop, isFavStop, getPlacesSorted, addPlace, removePlace, setHomePlace, setPlaceIcon } from './store.js';
+import { getSaved, purgeSaved, removeSaved, getFavStops, addFavStop, removeFavStop, isFavStop, getFavLines, addFavLine, removeFavLine, isFavLine, getPlacesSorted, addPlace, removePlace, setHomePlace, setPlaceIcon } from './store.js';
+import { cleanRouteName } from './names.js';
 import { toast } from './toast.js';
 import { displayName, railReplacementLabel } from './names.js';
 import { classifySuggestion, routeToPlace } from './search.js';
@@ -505,6 +506,86 @@ export async function openHubBoard(hub) {
   renderRows();
 }
 
+// ── FAVOURITE LINES (Transit-style) ──
+// A line+direction is saveable from its route sheet; the card remembers the
+// stop it was starred from so "next departures of MY line" has an anchor.
+function lineCandidate(r, fallbackStopName) {
+  const line = (r.line || '').trim();
+  const head = (r.headsign || '').trim();
+  if (!line) return null;
+  if (r.mode === 'COACH' && isFinite(r.sLat) && isFinite(r.sLon)) {
+    return { key: `COACH|${line}|${head}`, mode: 'COACH', line, headsign: head, lat: r.sLat, lon: r.sLon, stopName: r.stopName || fallbackStopName || '' };
+  }
+  if (r.mode === 'BUS' && r.stopId) {
+    return { key: `BUS|${line}|${head}`, mode: 'BUS', line, headsign: head, stopId: r.stopId, stopName: r.stopName || fallbackStopName || '' };
+  }
+  return null;
+}
+function lineFavButton(cand) {
+  if (!cand) return null;
+  const btn = el('button', { class: 'chip-btn line-fav-btn' });
+  const paint = () => { btn.textContent = isFavLine(cand.key) ? '★ Saved to your lines' : '☆ Save this line'; };
+  paint();
+  btn.onclick = () => {
+    if (isFavLine(cand.key)) { removeFavLine(cand.key); toast('Line removed', 'info', 1400); }
+    else { addFavLine(cand); toast('Line saved — Saved tab', 'info', 1600); }
+    paint();
+  };
+  return btn;
+}
+async function favLineCard(l) {
+  const title = routeLabel(cleanRouteName(l.line), displayName(l.headsign));
+  const card = el('div', { class: 'card fav-stop-card' }, [
+    el('div', {
+      class: 'fav-stop-head fav-stop-tap', role: 'button', tabindex: '0',
+      onclick: () => openStopSchedule(l.mode === 'BUS'
+        ? { name: l.stopName, stopId: l.stopId }
+        : { name: l.stopName, lat: l.lat, lon: l.lon }),
+    }, [
+      modeIcon(l.mode),
+      el('div', { class: 'dep-main' }, [
+        el('span', { class: 'dep-route', text: title }),
+        el('span', { class: 'muted dep-headsign', text: `from ${displayName(l.stopName) || 'saved stop'}` }),
+      ]),
+      el('button', {
+        class: 'pin-btn pinned', text: '✕', 'aria-label': 'Remove line',
+        onclick: async (e) => {
+          e.stopPropagation();
+          const ok = await confirmModal(`Remove ${cleanRouteName(l.line)} from your lines?`, { confirmText: 'Remove' });
+          if (ok) { removeFavLine(l.key); renderSaved(); }
+        },
+      }),
+    ]),
+  ]);
+  const rows = el('div', { class: 'fav-stop-rows', text: '…' });
+  card.appendChild(rows);
+  try {
+    const same = (a, b) => String(a || '').trim().toLowerCase() === String(b || '').trim().toLowerCase();
+    let clocks = [];
+    if (l.mode === 'BUS' && l.stopId) {
+      const { data } = await api.stoptimes(l.stopId, 12);
+      clocks = (data.stopTimes || [])
+        .filter((st) => same(st.routeShortName, l.line) && (!l.headsign || same(st.headsign, l.headsign)))
+        .map((st) => romeTime(st.departure || st.scheduledDeparture));
+    } else {
+      const { data } = await api.coachBoard(l.lat, l.lon, 300);
+      clocks = (data.results || [])
+        .filter((r2) => same(r2.route, l.line) && (!l.headsign || same(r2.headsign, l.headsign)))
+        .map((r2) => r2.dep + (r2.day === 'tomorrow' ? ' (tomorrow)' : ''));
+    }
+    rows.textContent = '';
+    rows.appendChild(el('div', { class: 'dep-row' }, [
+      el('div', { class: 'dep-main' }, [
+        el('span', { class: 'dep-route line-next', text: clocks.length ? `Next: ${clocks.slice(0, 3).join(' · ')}` : 'No more departures today.' }),
+      ]),
+    ]));
+  } catch {
+    rows.textContent = '';
+    rows.appendChild(el('p', { class: 'muted', text: 'Departures unavailable right now.' }));
+  }
+  return card;
+}
+
 // "View route on map" — jumps to the Map tab and traces the given shape
 // (already-normalized {stops, path}) via the shared tracer.
 function shapeMapBtn(getShape, originName) {
@@ -532,6 +613,8 @@ async function openTripRoute(r) {
   try {
     const { data: shape } = await api.tripShape(r.tripId);
     body.innerHTML = '';
+    const fav = lineFavButton(lineCandidate(r));
+    if (fav) body.appendChild(fav);
     body.appendChild(shapeMapBtn(() => shape, r.stopName));
     body.appendChild(el('p', { class: 'muted sched-note', text:
       `${shape.operator ? displayName(shape.operator) + ' · ' : ''}Network schedule.` }));
@@ -558,6 +641,8 @@ function routeStopRows(body, stops) {
 // jump to the Map tab's traced line for the same route.
 function openCoachRoute(r, hubName) {
   const body = el('div', { class: 'iti-detail sched-sheet' });
+  const fav = lineFavButton(lineCandidate(r, hubName));
+  if (fav) body.appendChild(fav);
   if (r.ci != null || (isFinite(r.sLat) && isFinite(r.sLon))) {
     body.appendChild(el('button', {
       class: 'chip-btn coach-map-btn', text: '🗺 View route on map',
@@ -869,6 +954,15 @@ export async function renderSaved() {
   favHolder.innerHTML = '';
   const favs = getFavStops();
   for (const s of favs) favHolder.appendChild(await favStopCard(s));
+
+  // favourite LINES (header renders only when any exist)
+  const lineHolder = document.getElementById('fav-lines');
+  lineHolder.innerHTML = '';
+  const favLines = getFavLines();
+  if (favLines.length) {
+    lineHolder.appendChild(el('h3', { class: 'saved-subhead', text: 'Lines' }));
+    for (const l of favLines) lineHolder.appendChild(await favLineCard(l));
+  }
 
   const holder = document.getElementById('saved-list');
   const items = purgeSaved();

@@ -1337,6 +1337,9 @@ body.no-ptr { overscroll-behavior-y: none; }
 .place-slot:active { opacity: 0.7; }
 .place-slot-icon { opacity: 0.75; }
 .icon-picker-hint { margin: 0 0 10px; font-size: 0.8125rem; }
+/* favourite-line star in route sheets + the Next: readout on line cards */
+.line-fav-btn { display: block; margin: 0 0 8px; color: var(--mango, #ffb454); }
+.line-next { font-variant-numeric: tabular-nums; }
 
 /* S-6: About — the trust line + one attribution per line */
 .about-privacy { margin: 10px 0 2px; font-weight: 600; font-size: 0.875rem; color: var(--teal, #3dd6ac); }

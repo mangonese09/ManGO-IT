@@ -14,7 +14,7 @@ export const SCHEMA_VERSION = 2; // 1 = the pre-v1.7 unversioned shape
 
 // Every key that holds USER state (preferences included). Cache and metadata
 // keys are deliberately absent: they are disposable, these are not.
-const USER_KEYS = ['settings', 'saved', 'favstops', 'places', 'recents', 'view', 'mapStyle', 'mapModes', 'modes'];
+const USER_KEYS = ['settings', 'saved', 'favstops', 'favlines', 'places', 'recents', 'view', 'mapStyle', 'mapModes', 'modes'];
 
 function rawGet(k) { try { return localStorage.getItem(NS + k); } catch { return null; } }
 function rawDel(k) { try { localStorage.removeItem(NS + k); } catch { /* hostile storage */ } }
@@ -166,6 +166,22 @@ export function removeFavStop(key) {
 }
 export function isFavStop(key) { return getFavStops().some((s) => s.key === key); }
 
+// ── FAVOURITE LINES (one line+direction; a next-departures card on Saved,
+// remembering the stop it was starred from) ──
+export function getFavLines() { return read('favlines', []); }
+export function addFavLine(line) {
+  const list = getFavLines().filter((l) => l.key !== line.key);
+  list.push(line);
+  if (list.length > 8) {
+    list.splice(0, list.length - 8);
+    try { toast('Line limit (8) reached — oldest removed', 'info', 2400); } catch { /* headless */ }
+  }
+  write('favlines', list);
+  return list;
+}
+export function removeFavLine(key) { write('favlines', getFavLines().filter((l) => l.key !== key)); }
+export function isFavLine(key) { return getFavLines().some((l) => l.key === key); }
+
 // ── FAVOURITE PLACES (trip endpoints: Home + named places) ──
 // A place is a location you route to/from, distinct from a favourite STOP
 // (a departures board). Keyed by rounded coords. At most one place is `home`.
@@ -258,6 +274,7 @@ export function describeBackup(obj) {
   const bits = [];
   const add = (n, word) => { if (n) bits.push(`${n} ${word}${n > 1 ? 's' : ''}`); };
   add((d.favstops || []).length, 'saved stop');
+  add((d.favlines || []).length, 'line');
   add((d.places || []).length, 'place');
   add((d.recents || []).length, 'recent search');
   add((d.saved || []).length, 'saved departure');
