@@ -1324,6 +1324,20 @@ body.no-ptr { overscroll-behavior-y: none; }
 .ticket-shop-dist { flex: 0 0 auto; font-variant-numeric: tabular-nums; }
 .poi-pin { background: none; border: none; }
 
+/* ── v1.8.0 Saved-tab round (SV-1..SV-6) ── */
+.add-toggle {
+  display: block; width: 100%; min-height: 44px; padding: 10px 4px;
+  background: none; border: none; font: inherit; text-align: left;
+  color: var(--mango, #ffb454); font-weight: 600; cursor: pointer;
+}
+.add-toggle:active { opacity: 0.7; }
+.place-go { background: none; border: none; font: inherit; color: inherit; text-align: left; cursor: pointer; padding: 0; }
+.place-go:active { opacity: 0.7; }
+.place-slot { display: flex; align-items: center; gap: 10px; width: 100%; font: inherit; color: inherit; text-align: left; border: 1px dashed rgba(255, 180, 84, 0.4); cursor: pointer; }
+.place-slot:active { opacity: 0.7; }
+.place-slot-icon { opacity: 0.75; }
+.icon-picker-hint { margin: 0 0 10px; font-size: 0.8125rem; }
+
 /* S-6: About — the trust line + one attribution per line */
 .about-privacy { margin: 10px 0 2px; font-weight: 600; font-size: 0.875rem; color: var(--teal, #3dd6ac); }
 .about-links { list-style: none; padding: 0; margin: 8px 0 4px; display: flex; flex-direction: column; gap: 9px; font-size: 0.875rem; line-height: 1.4; }

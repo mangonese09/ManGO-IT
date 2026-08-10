@@ -1387,6 +1387,24 @@ function cardFareText(it) {
   return el('span', { class: 'chip chip-fare', text: paid.length === 1 ? eur(sum) : `≈ ${eur(sum)}` });
 }
 
+// SV-1 (Saved-tab analysis): a saved place's primary action is GO THERE —
+// destination-first from wherever the user is, same flow as a quick-pick.
+export function routeToPlace(p) {
+  document.getElementById('nav-home')?.click();
+  sel.to = { name: p.name, place: `${p.lat},${p.lon}`, lat: p.lat, lon: p.lon };
+  document.getElementById('to-input').value = p.label || displayName(p.name);
+  document.getElementById('from-input').value = 'My location';
+  syncClears();
+  locate().then((pos) => {
+    sel.from = { name: 'My location', place: `${pos.lat.toFixed(5)},${pos.lon.toFixed(5)}`, lat: pos.lat, lon: pos.lon };
+    runSearch();
+  }).catch(() => {
+    document.getElementById('from-input').value = '';
+    syncClears();
+    toast('Location unavailable — set a starting point', 'warn');
+  });
+}
+
 // closeSheet() unwinds a HISTORY entry; its async popstate re-asserts the
 // pre-sheet tab and would bounce a tab-jump straight back. Let it land, then go.
 function closeSheetThen(fn) {

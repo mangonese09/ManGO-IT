@@ -153,7 +153,12 @@ export function getFavStops() { return read('favstops', []); }
 export function addFavStop(stop) {
   const list = getFavStops().filter((s) => s.key !== stop.key);
   list.push(stop);
-  write('favstops', list.slice(-12));
+  // SV-4: the cap evicts LOUDLY — a silently vanished favourite reads as a bug
+  if (list.length > 12) {
+    list.splice(0, list.length - 12);
+    try { toast('Stop limit (12) reached — oldest removed', 'info', 2400); } catch { /* headless */ }
+  }
+  write('favstops', list);
   return list;
 }
 export function removeFavStop(key) {
@@ -169,7 +174,11 @@ export function addPlace(place) {
   let list = getPlaces().filter((p) => p.key !== place.key);
   if (place.home) list = list.map((p) => ({ ...p, home: false }));
   list.push(place);
-  write('places', list.slice(-20));
+  if (list.length > 20) {
+    list.splice(0, list.length - 20);
+    try { toast('Place limit (20) reached — oldest removed', 'info', 2400); } catch { /* headless */ }
+  }
+  write('places', list);
   return list;
 }
 export function removePlace(key) { write('places', getPlaces().filter((p) => p.key !== key)); }
@@ -190,8 +199,9 @@ export function setHomePlace(key) {
     return { ...p, home, icon };
   }));
 }
-// Home first, then most-recently-added.
-export function getPlacesSorted() { return getPlaces().slice().sort((a, b) => (b.home ? 1 : 0) - (a.home ? 1 : 0)); }
+// Home first, Work second (SV-5), then most-recently-added.
+const placeRank = (p) => (p.home ? 2 : p.icon === 'work' ? 1 : 0);
+export function getPlacesSorted() { return getPlaces().slice().sort((a, b) => placeRank(b) - placeRank(a)); }
 
 export function getRecents() { return read('recents', []); }
 export function removeRecent(i) {

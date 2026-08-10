@@ -5,7 +5,30 @@ import { romeTime, romeDay, countdownText, isOtherRomeDay, romeWallToIso, device
 import { getSaved, purgeSaved, removeSaved, getFavStops, addFavStop, removeFavStop, isFavStop, getPlacesSorted, addPlace, removePlace, setHomePlace, setPlaceIcon } from './store.js';
 import { toast } from './toast.js';
 import { displayName, railReplacementLabel } from './names.js';
-import { classifySuggestion } from './search.js';
+import { classifySuggestion, routeToPlace } from './search.js';
+
+// SV-2/SV-3: the add-search cards collapse behind "+ Add" rows; the Home/Work
+// slot rows open the place search with a pending designation that the next
+// added place adopts.
+let pendingSlot = null;
+const PLACE_PH = 'Add a place — home, a town or an address';
+function openAddCard(which, placeholder) {
+  const card = document.getElementById(which === 'place' ? 'place-search-card' : 'fav-search-card');
+  const tog = document.getElementById(which === 'place' ? 'place-add-toggle' : 'fav-add-toggle');
+  const input = document.getElementById(which === 'place' ? 'place-input' : 'fav-input');
+  if (card) card.hidden = false;
+  if (tog) tog.hidden = true;
+  if (input) { if (placeholder) input.placeholder = placeholder; input.focus(); }
+}
+function closeAddCard(which) {
+  const card = document.getElementById(which === 'place' ? 'place-search-card' : 'fav-search-card');
+  const tog = document.getElementById(which === 'place' ? 'place-add-toggle' : 'fav-add-toggle');
+  const input = document.getElementById(which === 'place' ? 'place-input' : 'fav-input');
+  if (card) card.hidden = true;
+  if (tog) tog.hidden = false;
+  if (input) { input.value = ''; input.placeholder = which === 'place' ? PLACE_PH : input.placeholder; }
+  pendingSlot = null;
+}
 
 // ── favorite-stop search: any stop kind (city bus / coach / train) ──
 let favWired = false;
@@ -51,7 +74,7 @@ async function favSuggest(q) {
         onclick: () => {
           const key = r.type === 'STOP' && r.id ? r.id : `${r.lat.toFixed(5)},${r.lon.toFixed(5)}`;
           addFavStop({ key, name: r.name, kind, iconMode, stopId: r.type === 'STOP' ? r.id : null, lat: r.lat, lon: r.lon });
-          document.getElementById('fav-input').value = '';
+          closeAddCard('fav');
           list.hidden = true;
           toast(`${displayName(r.name)} added`, 'info', 1400);
           renderSaved();
@@ -648,7 +671,7 @@ async function favStopCard(s) {
       el('span', { class: 'suggest-icon' }, [modeIcon(s.iconMode || 'BUS')]),
       el('div', { class: 'dep-main' }, [
         el('span', { class: 'dep-route', text: displayName(s.name) }),
-        el('span', { class: 'muted dep-headsign', text: `${s.kind} · tap for today's schedule` }),
+        el('span', { class: 'muted dep-headsign', text: s.kind || 'stop' }),
       ]),
       el('button', {
         class: 'pin-btn pinned', text: '★', 'aria-label': 'Remove from favorites',
@@ -743,10 +766,12 @@ async function placeSuggest(q) {
         class: 'suggest-row',
         onclick: () => {
           const key = `${r.lat.toFixed(5)},${r.lon.toFixed(5)}`;
-          addPlace({ key, label: displayName(r.name), name: r.name, lat: r.lat, lon: r.lon });
-          document.getElementById('place-input').value = '';
+          const slot = pendingSlot; // SV-2/SV-5: a slot-opened add IS the designation
+          addPlace({ key, label: displayName(r.name), name: r.name, lat: r.lat, lon: r.lon,
+            home: slot === 'home', icon: slot || undefined });
           list.hidden = true;
-          toast(`${displayName(r.name)} added`, 'info', 1400);
+          closeAddCard('place');
+          toast(`${displayName(r.name)} ${slot === 'home' ? 'set as Home' : slot === 'work' ? 'set as Work' : 'added'}`, 'info', 1400);
           renderSaved();
         },
       }, [
@@ -779,7 +804,11 @@ function openIconPicker(p) {
       el('span', { class: 'icon-picker-label', text: opt.label }),
     ]));
   }
-  openSheet(el('div', { class: 'icon-picker' }, [grid]), { title: `Icon for ${displayName(p.name)}` });
+  openSheet(el('div', { class: 'icon-picker' }, [
+    // SV-2: the icon-is-the-designation coupling stops being a secret
+    el('p', { class: 'muted icon-picker-hint', text: 'Choosing the Home icon makes this your Home place.' }),
+    grid,
+  ]), { title: `Icon for ${displayName(p.name)}` });
 }
 
 function placeCard(p) {
@@ -789,9 +818,11 @@ function placeCard(p) {
         class: 'place-icon-btn', 'aria-label': 'Change icon', title: 'Change icon',
         onclick: () => openIconPicker(p),
       }, [placeIcon(placeIconKey(p))]),
-      el('div', { class: 'dep-main' }, [
+      // SV-1: the card's PRIMARY action is GO THERE (Citymapper's one-tap
+      // home) — destination-first routing from wherever the user is now.
+      el('button', { class: 'dep-main fav-stop-tap place-go', onclick: () => routeToPlace(p) }, [
         el('span', { class: 'dep-route', text: p.label || displayName(p.name) }),
-        el('span', { class: 'muted dep-headsign', text: p.home ? 'Home' : 'saved place' }),
+        el('span', { class: 'muted dep-headsign', text: p.home ? 'Home — tap to go' : p.icon === 'work' ? 'Work — tap to go' : 'Tap to go' }),
       ]),
       el('button', {
         class: 'pin-btn pinned', text: '✕', 'aria-label': 'Remove place',
@@ -806,11 +837,32 @@ function placeCard(p) {
 
 export async function renderSaved() {
   wirePlaceSearch();
+  // SV-3: the add-search cards live behind compact "+ Add" rows
+  const pTog = document.getElementById('place-add-toggle');
+  if (pTog && !pTog.dataset.wired) {
+    pTog.dataset.wired = '1';
+    pTog.addEventListener('click', () => { pendingSlot = null; openAddCard('place', PLACE_PH); });
+    document.getElementById('fav-add-toggle').addEventListener('click', () => openAddCard('fav'));
+  }
   const placeHolder = document.getElementById('fav-places');
   placeHolder.innerHTML = '';
   const places = getPlacesSorted();
+  // SV-2/SV-5: Home and Work are permanent labelled SLOTS that ask to be
+  // filled (Google/Citymapper convention) — not secrets inside an icon picker.
+  const slotRow = (kind, label) => el('button', {
+    class: 'card fav-place-card place-slot',
+    onclick: () => { pendingSlot = kind; openAddCard('place', kind === 'home' ? 'Where is Home?' : 'Where is Work?'); },
+  }, [
+    el('span', { class: 'place-icon-btn place-slot-icon' }, [placeIcon(kind)]),
+    el('div', { class: 'dep-main' }, [
+      el('span', { class: 'dep-route', text: label }),
+      el('span', { class: 'muted dep-headsign', text: 'One tap to route there, every day' }),
+    ]),
+    el('span', { class: 'dep-chevron', text: '›' }),
+  ]);
+  if (!places.some((p) => p.home)) placeHolder.appendChild(slotRow('home', 'Set Home'));
+  if (!places.some((p) => p.icon === 'work')) placeHolder.appendChild(slotRow('work', 'Set Work'));
   for (const p of places) placeHolder.appendChild(placeCard(p));
-  if (!places.length) placeHolder.appendChild(el('p', { class: 'muted place-empty', text: 'No places yet — add Home or a town above for one-tap routing.' }));
 
   wireFavSearch();
   const favHolder = document.getElementById('fav-stops');

@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://mangonese.dev">
   <link rel="preconnect" href="https://mangonese.dev" crossorigin>
   <link rel="stylesheet" href="https://mangonese.dev/shared/mangonese.css">
-  <link rel="stylesheet" href="/css/styles.css?v=1.7.1">
+  <link rel="stylesheet" href="/css/styles.css?v=1.8.0">
 </head>
 <body>
   <header class="app-header">
@@ -69,7 +69,8 @@
     <section id="view-saved" hidden>
       <h2>Saved</h2>
       <h3 class="saved-subhead">Places</h3>
-      <div class="search-box card fav-search">
+      <button id="place-add-toggle" class="add-toggle">+ Add a place</button>
+      <div id="place-search-card" class="search-box card fav-search" hidden>
         <div class="endpoint-row">
           <input id="place-input" type="text" placeholder="Add a place — home, a town or an address" autocomplete="off" enterkeyhint="search">
           <div id="place-suggest" class="suggest" hidden></div>
@@ -77,7 +78,8 @@
       </div>
       <div id="fav-places"></div>
       <h3 class="saved-subhead">Stops</h3>
-      <div class="search-box card fav-search">
+      <button id="fav-add-toggle" class="add-toggle">+ Add a stop</button>
+      <div id="fav-search-card" class="search-box card fav-search" hidden>
         <div class="endpoint-row">
           <input id="fav-input" type="text" placeholder="Add a stop — bus, coach or train" autocomplete="off" enterkeyhint="search">
           <div id="fav-suggest" class="suggest" hidden></div>
@@ -183,6 +185,6 @@
       });
     }
   </script>
-  <script type="module" src="/js/app.js?v=1.7.1"></script>
+  <script type="module" src="/js/app.js?v=1.8.0"></script>
 </body>
 </html>
