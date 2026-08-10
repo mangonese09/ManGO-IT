@@ -49,6 +49,15 @@ test('a stop with no recognisable mode still gets the bus fallback', () => {
   assert.strictEqual(classifySuggestion({ type: 'STOP', modes: [] }).kind, 'city bus stop');
 });
 
+test('a natural feature from the coverage fallback reads as a landmark', () => {
+  // verbatim category from Nominatim for Punta Bianca (natural=cape, v1.3.1)
+  assert.strictEqual(classifySuggestion({ type: 'PLACE', category: 'cape', name: 'Punta Bianca' }).kind, 'landmark');
+  assert.strictEqual(classifySuggestion({ type: 'PLACE', category: 'beach', name: 'Spiaggia di San Leone' }).kind, 'landmark');
+  // towns and addresses keep their kinds — the landmark branch must not shadow them
+  assert.strictEqual(classifySuggestion({ type: 'PLACE', category: 'hamlet', name: 'San Leone' }).kind, 'town');
+  assert.strictEqual(classifySuggestion({ type: 'ADDRESS', category: null, name: 'Via Roma' }).kind, 'address');
+});
+
 // ── item 6: which endpoints resurface as recent destinations ──
 
 const ep = (name, lat, lon) => ({ name, place: `${lat},${lon}`, lat, lon });

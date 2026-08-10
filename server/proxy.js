@@ -882,6 +882,43 @@ function airportResult(a) {
   };
 }
 
+// ── NOMINATIM COVERAGE FALLBACK (v1.3.1) ──
+// Transitous's geocoder skips some OSM natural features: "Punta Bianca" (the
+// Agrigento cape, natural=cape in OSM) returned NOTHING Sicilian, so the app
+// confidently offered an Alpine peak 1060 km away — the exact confident-wrong-
+// answer failure we design against. When upstream yields zero Sicilian rows,
+// ask Nominatim hard-bounded to the Sicily bbox (it can only answer with local
+// places; a truly unknown name stays an honest empty). Rare by construction —
+// any query with one Sicilian hit never reaches it — cached with the geocode
+// response for 24h, and rate-guarded to respect Nominatim's 1 req/s policy.
+const SICILY_VIEWBOX = '12.3,38.4,15.7,36.6'; // lon1,lat1,lon2,lat2
+let lastNominatimMs = 0;
+function nominatimToRow(n) {
+  const a = n.address || {};
+  return {
+    type: 'PLACE', name: n.name || String(n.display_name || '').split(',')[0], id: null,
+    lat: Number(n.lat), lon: Number(n.lon),
+    modes: [], category: n.type || null,
+    town: a.city || a.town || a.village || null,
+    province: a.county || a.province || null,
+    importance: n.importance || 0,
+  };
+}
+async function nominatimFallback(text) {
+  const now = Date.now();
+  if (now - lastNominatimMs < 1100) return []; // policy: ≤1 req/s — skip, never queue
+  lastNominatimMs = now;
+  try {
+    const { data } = await upstream(
+      `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(text)}`
+      + `&viewbox=${SICILY_VIEWBOX}&bounded=1&format=jsonv2&addressdetails=1&limit=6`,
+      { timeoutMs: 8000 },
+    );
+    return (data || []).map(nominatimToRow)
+      .filter((r) => r.name && isFinite(r.lat) && isFinite(r.lon) && inSicily(r.lat, r.lon));
+  } catch { return []; } // fallback of a fallback is the status quo
+}
+
 // Merge already-shaped departure rows from N sources into one board: drop
 // anything already departed, sort ascending by time, stamp `minutes` from now,
 // then apply a per-mode cap (so one busy mode can't crowd out the others) and
@@ -1346,12 +1383,26 @@ const routes = {
       if (seen.has(k)) return false;
       seen.add(k); return true;
     });
-    const sorted = all.sort((a, b) => geoScore(a, text) - geoScore(b, text) || b.importance - a.importance);
+    let sorted = all.sort((a, b) => geoScore(a, text) - geoScore(b, text) || b.importance - a.importance);
     // Prioritise Sicily "for the time being": when Sicily has enough matches,
     // don't dilute the list with mainland homonyms (the app is Sicily-first).
     // Fall back to the all-Italy list only when the Sicilian side is sparse —
     // that's a genuine mainland query (e.g. "Via Dante Milano"), which still works.
-    const sic = sorted.filter((r) => inSicily(r.lat, r.lon));
+    let sic = sorted.filter((r) => inSicily(r.lat, r.lon));
+    // Zero Sicilian rows = the coverage gap case ("Punta Bianca") — see
+    // nominatimFallback above. Merged rows re-enter the same dedupe + sort.
+    if (!sic.length) {
+      const extra = await nominatimFallback(text);
+      const fresh = extra.filter((r) => {
+        const k = `${norm(r.name)}|${norm(r.town || '')}`;
+        if (seen.has(k)) return false;
+        seen.add(k); return true;
+      });
+      if (fresh.length) {
+        sorted = [...sorted, ...fresh].sort((a, b) => geoScore(a, text) - geoScore(b, text) || b.importance - a.importance);
+        sic = sorted.filter((r) => inSicily(r.lat, r.lon));
+      }
+    }
     const out = (sic.length >= 6 ? sic : sorted).slice(0, 15);
     cacheSet(key, out, 24 * 3600 * 1000);
     return out;
@@ -1914,4 +1965,4 @@ if (require.main === module) {
   server.listen(PORT, () => console.log(`ManGO:IT proxy on :${PORT}${STATIC ? ' (static+api)' : ''}`));
 }
 
-module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon, vtSilence, dropDominated, parseBias, geoScore, clusterStopsByProximity, clusterAreaName, HUBS: TRANSIT_HUBS, hubsInBbox, AIRPORTS, airportMatch, airportResult, mergeDepartures, afterStation, decodePolyline };
+module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon, vtSilence, dropDominated, parseBias, geoScore, clusterStopsByProximity, clusterAreaName, HUBS: TRANSIT_HUBS, hubsInBbox, AIRPORTS, airportMatch, airportResult, nominatimToRow, mergeDepartures, afterStation, decodePolyline };

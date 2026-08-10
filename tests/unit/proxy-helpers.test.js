@@ -5,8 +5,33 @@ const {
   romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, inSicily, dropDominated,
   parseBias, geoScore, clusterStopsByProximity, clusterAreaName,
   HUBS, hubsInBbox, mergeDepartures,
-  AIRPORTS, airportMatch, airportResult,
+  AIRPORTS, airportMatch, airportResult, nominatimToRow,
 } = require('../../server/proxy.js');
+
+// ── NOMINATIM COVERAGE FALLBACK (v1.3.1) ──
+test('nominatimToRow maps a jsonv2 result into the geocode row shape', () => {
+  // verbatim (trimmed) from nominatim.openstreetmap.org for "Punta Bianca"
+  const row = nominatimToRow({
+    lat: '37.1943657', lon: '13.6611229', name: 'Punta Bianca',
+    category: 'natural', type: 'cape', importance: 0.107,
+    display_name: 'Punta Bianca, Agrigento, Sicilia, 92100, Italia',
+    address: { city: 'Agrigento', county: 'Agrigento', state: 'Sicilia' },
+  });
+  assert.strictEqual(row.type, 'PLACE');
+  assert.strictEqual(row.name, 'Punta Bianca');
+  assert.strictEqual(row.category, 'cape');
+  assert.strictEqual(row.town, 'Agrigento');
+  assert.strictEqual(row.province, 'Agrigento');
+  assert.ok(Math.abs(row.lat - 37.19437) < 1e-4 && Math.abs(row.lon - 13.66112) < 1e-4);
+});
+
+test('nominatimToRow survives a sparse result without inventing fields', () => {
+  const row = nominatimToRow({ lat: '37.5', lon: '14.1', display_name: 'Somewhere, Sicilia' });
+  assert.strictEqual(row.name, 'Somewhere');
+  assert.strictEqual(row.town, null);
+  assert.strictEqual(row.province, null);
+  assert.strictEqual(row.category, null);
+});
 
 test('clusterAreaName names a depot by the shared leading phrase', () => {
   assert.strictEqual(clusterAreaName([

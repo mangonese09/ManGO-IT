@@ -380,6 +380,10 @@ export function classifySuggestion(r) {
     iconEl = modeIcon('COACH'); kind = 'coach stop';
   } else if (/^(city|town|village|hamlet)/.test(r.category || '') || (!r.category && r.type === 'PLACE')) {
     iconEl = el('span', { class: 'mode-emoji', text: '🏘️' }); kind = 'town';
+  } else if (/^(cape|beach|cliff|peak|bay|islet|island|headland|nature_reserve|protected_area|wood|spring)$/.test(r.category || '')) {
+    // natural features arrive via the Nominatim coverage fallback (v1.3.1 —
+    // Punta Bianca's cape); a plain "what it is" beats an empty context line
+    kind = 'landmark';
   } else if (r.type === 'ADDRESS' || /^(via|viale|corso|salita|piazza)\b/i.test(r.name)) {
     kind = 'address';
   }
