@@ -1261,11 +1261,20 @@ body:has(#results .tz-banner) .search-box .mode-row { margin-bottom: 14px; }
 .settings-group {
   font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.08em;
   text-transform: uppercase; color: var(--text-muted, #9a9a9a);
-  margin: 18px 6px 6px;
+  margin: 12px 6px 5px;
 }
-#view-settings .settings-card { padding: 4px 16px; margin-bottom: 4px; }
-#view-settings .settings-about-card { margin-top: 18px; }
-#view-settings .setting-row { padding: 4px 0; min-height: 52px; }
+/* v1.7.1 (field report): the whole tab fits one 844px view — tighter rhythm,
+   rows still clear the 44px touch floor */
+#view-settings h2 { margin: 0 0 2px; }
+#view-settings .settings-card { padding: 2px 16px; margin-bottom: 4px; }
+#view-settings .settings-about-card { margin-top: 12px; }
+#view-settings .setting-row { padding: 2px 0; min-height: 48px; }
+
+/* v1.7.1: browser pull-to-refresh only means something on Home (the board) —
+   on the other tabs it just reloaded the app and Android's overscroll STRETCH
+   squished the fixed bottom nav with it. Native apps don't stretch chrome;
+   suppress the affordance everywhere pull has no job. */
+body.no-ptr { overscroll-behavior-y: none; }
 /* S-2/S-3: the row IS the control — current value as muted text + chevron */
 .setting-value {
   display: inline-flex; align-items: center; gap: 8px; flex: 0 0 auto;

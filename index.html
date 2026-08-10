@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://mangonese.dev">
   <link rel="preconnect" href="https://mangonese.dev" crossorigin>
   <link rel="stylesheet" href="https://mangonese.dev/shared/mangonese.css">
-  <link rel="stylesheet" href="/css/styles.css?v=1.7.0">
+  <link rel="stylesheet" href="/css/styles.css?v=1.7.1">
 </head>
 <body>
   <header class="app-header">
@@ -97,7 +97,7 @@
          data erase) -->
     <section id="view-settings" hidden>
       <h2>Settings</h2>
-      <h3 class="settings-group">Appearance</h3>
+      <h3 class="settings-group">Preferences</h3>
       <div class="card settings-card">
         <button id="theme-row" class="setting-row setting-link" aria-haspopup="dialog">
           <span>Theme</span>
@@ -108,9 +108,7 @@
           <span>Map style</span>
           <span class="setting-value"><span id="map-style-value"></span><span class="setting-chevron" aria-hidden="true">›</span></span>
         </button>
-      </div>
-      <h3 class="settings-group">Search</h3>
-      <div class="card settings-card">
+        <div class="setting-sep"></div>
         <button id="span-row" class="setting-row setting-link" aria-haspopup="dialog">
           <span>Search results</span>
           <span class="setting-value"><span id="span-value"></span><span class="setting-chevron" aria-hidden="true">›</span></span>
@@ -185,6 +183,6 @@
       });
     }
   </script>
-  <script type="module" src="/js/app.js?v=1.7.0"></script>
+  <script type="module" src="/js/app.js?v=1.7.1"></script>
 </body>
 </html>

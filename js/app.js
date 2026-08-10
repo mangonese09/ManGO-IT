@@ -26,6 +26,8 @@ function setView(view, push = true) {
     document.getElementById(`nav-${v}`).classList.toggle('active', v === view);
   }
   setBoardVisible(view === 'home');
+  // pull-to-refresh (and its Android overscroll stretch) only on Home
+  document.body.classList.toggle('no-ptr', view !== 'home');
   if (view === 'saved') renderSaved();
   if (view === 'map') renderMapTab();
   requestAnimationFrame(() => scrollTo(0, viewScroll[view] || 0));
