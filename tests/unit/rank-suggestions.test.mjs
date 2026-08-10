@@ -52,15 +52,10 @@ test('a user standing in Agrigento gets Agrigento\'s San Leone first', () => {
   assert.strictEqual(top.type, 'STOP');
 });
 
-// KNOWN FAILING (todo, not skip — these run and report every time). v1.2.2
-// fixed this ONLY for a user whose browser has given up a position; with the
-// centroid fallback the Aidone homonym still leads, which is what a first-time
-// user sees. Measured in the browser 2026-08-09, not inferred. The obvious fix
-// — "a boardable stop outranks a place" — was measured against 18 live queries
-// and rejected: it makes "Palermo"/"Catania"/"Agrigento" lead with the STATION
-// instead of the city. A real fix likely needs the server to mark whether any
-// stop lies within ~2 km of a place, so dead-end micro-places sort last.
-test('with no device position, the reachable stop still leads the homonyms', { todo: 'centroid fallback cannot separate 62km from 75km; needs a served-by-transit signal' }, () => {
+// The bug this file was written for. v1.2.2 only fixed it for users who had
+// already granted geolocation; with the centroid fallback the Aidone homonym
+// still led, which is what a first-time user saw. Verified in the browser.
+test('with no device position, the reachable stop still leads the homonyms', () => {
   // The centroid cannot separate two Sicilian places by distance alone
   // (Agrigento 62 km, Tortorici 75 km — same coarse band), so distance must
   // not be the ONLY tiebreak: a result with departures beats one without.
@@ -69,7 +64,7 @@ test('with no device position, the reachable stop still leads the homonyms', { t
     `expected the servable stop to lead, got "${top.name}" in ${top.town}`);
 });
 
-test('a place with no service never leads a stop that has service', { todo: 'same root cause as above' }, () => {
+test('a boardable stop leads same-named places regardless of array order', () => {
   // Order-independent: the geocoder does not promise a stable order, so the
   // fix must not depend on the stop arriving first in the array.
   const shuffled = [...SAN_LEONE].reverse();

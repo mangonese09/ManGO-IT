@@ -366,13 +366,20 @@ async function chooseOnMap(which) {
 // Exact-name-first ranking, shared by Home + map search: typing "palermo"
 // should lead with Palermo the city and its main station, not Catania street
 // stops NAMED after Palermo. Ties keep the server's Sicily-first order.
-// `origin` biases results toward where the user actually is. Without it a
-// same-named place anywhere in Italy could outrank the local one: typing
-// "San Leone" put a hamlet in Tortorici (prov. Messina, 137 km away) ABOVE
-// Agrigento's own San Leone beach — because kindRank scores town(0) over
-// coach stop(2) and NOTHING scored distance. Planning to that hamlet returns
-// zero itineraries, so the user got a dead end for a stop with 27 departures
-// a day. Distance dominates the score: a far homonym can never win.
+// `origin` biases results toward where the user actually is, but only as a
+// TIEBREAK. v1.2.2 made distance the top key and that backfired: geoBias()
+// falls back to the island centroid when the browser has no position (every
+// first-time user), and the centroid sits 62 km from Agrigento's San Leone and
+// 75 km from Tortorici's — the same coarse band — while an unrelated San Leone
+// in Aidone sits 33 km away and took the top row. Distance measured from a
+// guess cannot outrank what the user actually typed.
+//
+// So among rows matching the name equally well, prefer one you can BOARD.
+// "San Leone" then leads with the Agrigento stop (27 departures a day) instead
+// of a neighbourhood, and "Messina" leads with the city instead of a coach stop
+// called MASUGNA MESSINA that merely contains the word. This is deliberately
+// NOT a "does transit reach here" test: a stop 400 m from Aidone's San Leone
+// makes that dead end look served, so proximity-to-a-stop cannot separate them.
 export function rankSuggestions(rows, q, origin) {
   const ql = (q || '').trim().toLowerCase();
   const score = (r) => {
@@ -384,6 +391,11 @@ export function rankSuggestions(rows, q, origin) {
     const nameRank = n === ql ? 0 : n.startsWith(ql) ? 1 : 2;
     const { kind } = classifySuggestion(r);
     const kindRank = kind === 'town' ? 0 : kind === 'train station' ? 1 : kind === 'coach stop' ? 2 : 3;
+    // A real stop in the feed beats a place that merely shares the name. Ranked
+    // BELOW nameRank so typing "palermo" still leads with Palermo the city
+    // rather than Palermo Centrale — the city matches exactly, the station does
+    // not, and that distinction is what the user typed.
+    const boardRank = (r.type === 'STOP' || r.type === 'COACH_STOP') ? 0 : 1;
     // Coarse bands, not raw metres: within a band the existing name/kind order
     // still decides, so this only fires when results are genuinely far apart.
     let farRank = 0;
@@ -391,7 +403,7 @@ export function rankSuggestions(rows, q, origin) {
       const km = havM(origin, r) / 1000;
       farRank = km > 100 ? 3 : km > 50 ? 2 : km > 20 ? 1 : 0;
     }
-    return farRank * 100 + nameRank * 10 + kindRank;
+    return nameRank * 1000 + boardRank * 100 + farRank * 10 + kindRank;
   };
   return rows.map((r, i) => ({ r, i, sc: score(r) }))
     .sort((a, b) => a.sc - b.sc || a.i - b.i)
