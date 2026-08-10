@@ -1,5 +1,11 @@
 # Settings tab deep dive — 2026-08-10 (v1.4.0 live)
 
+**STATUS: ALL SEVEN FINDINGS SHIPPED in v1.5.0 (2026-08-10)** — grouped
+whole-row layout, choice sheets (Theme gained System), cache clear split from
+the itemized red Erase, emoji dropped, About restructured with the trust
+line. 156/156 unit + 14-check measured pass local AND live + session-core.
+Findings kept below for the record.
+
 Measured walkthrough of the Settings tab (dark + light, both sheets, the
 confirm modal, both toasts, DOM-measured layout), compared against the
 settings surfaces of Google Maps (Material 3), Apple Maps / iOS grouped
