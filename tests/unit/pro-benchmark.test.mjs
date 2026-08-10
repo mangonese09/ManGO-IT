@@ -77,3 +77,14 @@ test('a hyphen glued to the left word gets its space back', () => {
 test('doubled spaces collapse', () => {
   assert.strictEqual(displayName('Palermo  Centrale'), 'Palermo Centrale');
 });
+
+// ── v1.6.0: Autolinee SAL gets its verified site; 'sal' alone must not match ──
+const { operatorFor } = await import('../../js/operators.js');
+test('Autolinee SAL matches its operator entry with the verified website', () => {
+  const op = operatorFor('Autolinee SAL');
+  assert.ok(op && op.website === 'https://www.autolineesal.it', JSON.stringify(op && op.name));
+});
+test("the bare letters 'sal' inside other agency names do not match SAL", () => {
+  assert.notStrictEqual(operatorFor('Autolinee Salemi')?.name, 'Autolinee SAL');
+  assert.notStrictEqual(operatorFor('SAIS Autolinee')?.name, 'Autolinee SAL');
+});

@@ -111,6 +111,12 @@ export const api = {
       cacheKey: `vtboard:${stopId}`, source: 'viaggiatreno',
     }),
 
+  // Nearest bus-ticket sellers (tabaccherie/edicole) to a boarding stop.
+  ticketShops: (lat, lon) =>
+    getJson(`/api/ticket-shops?lat=${(+lat).toFixed(5)}&lon=${(+lon).toFixed(5)}`, {
+      cacheKey: `tshops:${(+lat).toFixed(3)},${(+lon).toFixed(3)}`, source: 'coachfeed',
+    }),
+
   // Nearest address for a map point ("Choose on map" pin label).
   revGeocode: (lat, lon) =>
     getJson(`/api/rev?lat=${(+lat).toFixed(5)}&lon=${(+lon).toFixed(5)}`, { source: 'transitous' }),

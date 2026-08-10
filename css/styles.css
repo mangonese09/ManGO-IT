@@ -78,7 +78,7 @@ button { cursor: pointer; }
   display: flex; align-items: center; gap: 6px;
   margin: 8px 4px 0; padding: 8px 10px;
   border-radius: var(--radius-md, 10px);
-  border-left: 3px solid var(--mango, #ffb454);
+  /* no left accent bar — it read as a rendering artefact (field report 2026-08-10) */
   background: rgba(255, 180, 84, 0.12);
   /* --text-primary, not --text: --text is not a defined token, so it silently
      fell back to near-white — invisible on the light theme's peach banner */
@@ -413,7 +413,11 @@ body.kb-open .bottom-nav { transform: translateY(100%); }
   padding: 0 4px; overflow: hidden; white-space: nowrap;
   font-size: 0.75rem; font-weight: 600; color: #10130f;
 }
-.leg-label { overflow: hidden; text-overflow: ellipsis; max-width: 12ch; }
+/* No 12ch cap (field report: "PORTO EMPEDO…" truncated with room to spare) —
+   the label uses whatever width its segment actually has; flex shrink +
+   ellipsis still guard the squeezed case, and the container query below
+   drops the label entirely under 58px. */
+.leg-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
 .leg-walk-gap { color: var(--text-muted, #9a9a9a); font-size: 0.75rem; flex: 0 0 auto; }
 .leg-walk-long { font-size: 0.875rem; }
 
@@ -1219,6 +1223,9 @@ body { font-size: 1rem; }
    visible (it sits beside the clock times it explains) the card footnote's
    louder gap form yields. Clearing results brings the footnote back. */
 body:has(#results .tz-banner) .when-tz.tz-gap { display: none; }
+/* …and the footnote's vertical space comes back explicitly, or Find routes
+   sits flush against the mode pills (field report 2026-08-10) */
+body:has(#results .tz-banner) .search-box .mode-row { margin-bottom: 14px; }
 
 /* F-7: "Show on map" sits at the right edge of the trip-sheet head */
 .iti-detail-head { display: flex; align-items: center; flex-wrap: wrap; gap: 4px; }
@@ -1274,6 +1281,24 @@ body:has(#results .tz-banner) .when-tz.tz-gap { display: none; }
 .choice-check { color: var(--mango, #ffb454); font-weight: 700; font-size: 1.125rem; visibility: hidden; flex: 0 0 auto; }
 .choice-row.is-active .choice-check { visibility: visible; }
 .choice-row.is-active > .choice-main > span:first-child { font-weight: 600; }
+
+/* ── v1.6.0 field-report round ── */
+/* ticket block: the How-to-buy toggle aligns LEFT like every other line
+   (.stops-toggle's 56px indent belongs to the stop-list context only) */
+.ticket-block .stops-toggle { display: block; padding-left: 0; text-align: left; }
+/* nearest ticket sellers (urban bus legs): tappable rows → map pin */
+.ticket-shops { margin-top: 8px; }
+.ticket-shops-head { font-size: 0.75rem; margin-bottom: 2px; }
+.ticket-shop-row {
+  display: flex; justify-content: space-between; align-items: center; gap: 10px;
+  width: 100%; min-height: 40px; padding: 8px 0;
+  background: none; border: none; font: inherit; font-size: 0.875rem;
+  color: inherit; text-align: left; cursor: pointer;
+}
+.ticket-shop-row:active { opacity: 0.65; }
+.ticket-shop-name { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ticket-shop-dist { flex: 0 0 auto; font-variant-numeric: tabular-nums; }
+.poi-pin { background: none; border: none; }
 
 /* S-6: About — the trust line + one attribution per line */
 .about-privacy { margin: 10px 0 2px; font-weight: 600; font-size: 0.875rem; color: var(--teal, #3dd6ac); }

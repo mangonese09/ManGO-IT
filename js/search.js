@@ -1387,6 +1387,17 @@ function cardFareText(it) {
   return el('span', { class: 'chip chip-fare', text: paid.length === 1 ? eur(sum) : `≈ ${eur(sum)}` });
 }
 
+// closeSheet() unwinds a HISTORY entry; its async popstate re-asserts the
+// pre-sheet tab and would bounce a tab-jump straight back. Let it land, then go.
+function closeSheetThen(fn) {
+  const popped = new Promise((resolve) => {
+    window.addEventListener('popstate', resolve, { once: true });
+    setTimeout(resolve, 350); // sandboxed/history-less fallback
+  });
+  closeSheet();
+  popped.then(fn);
+}
+
 // ── ITINERARY DETAIL ──
 function openItineraryDetail(it) {
   const body = el('div', { class: 'iti-detail' });
@@ -1397,19 +1408,10 @@ function openItineraryDetail(it) {
     // tracer draws each leg's real geometry, so this is a jump, not a rebuild
     el('button', {
       class: 'btn btn-ghost iti-map-btn', text: 'Show on map',
-      onclick: async () => {
+      onclick: () => closeSheetThen(async () => {
         const { showItineraryOnMap } = await import('./mapview.js');
-        // closeSheet() unwinds a HISTORY entry; its async popstate re-asserts
-        // the pre-sheet tab and would bounce us straight back off the Map tab.
-        // Let it land first, then navigate.
-        const popped = new Promise((resolve) => {
-          window.addEventListener('popstate', resolve, { once: true });
-          setTimeout(resolve, 350); // sandboxed/history-less fallback
-        });
-        closeSheet();
-        await popped;
         showItineraryOnMap(it);
-      },
+      }),
     }),
   ]));
 
@@ -1553,6 +1555,31 @@ function renderTransitLeg(leg, idx, opsSeen = new Set(), opCounts = {}) {
         el('span', { text: op.website.replace(/^https?:\/\/(www\.)?/, '') }),
         el('span', { class: 'muted', text: ' ↗ leaves ManGO:IT' }),
       ]));
+    }
+    // v1.6.0: "buy before boarding" is only actionable if you know WHERE —
+    // nearest rivendite (tabaccherie/edicole) to the boarding stop. Urban
+    // buses only; coaches sell at terminals/online. Async and silent on
+    // failure: the block is complete without it.
+    if (leg.mode === 'BUS' && leg.from && isFinite(leg.from.lat) && isFinite(leg.from.lon)) {
+      const slot = el('div', { class: 'ticket-shops' });
+      kids.push(slot);
+      api.ticketShops(leg.from.lat, leg.from.lon).then(({ data }) => {
+        const shops = (data && data.shops) || [];
+        if (!shops.length) return;
+        slot.appendChild(el('div', { class: 'muted ticket-shops-head', text: `Ticket sellers near ${displayName(leg.from.name || 'the stop')}` }));
+        for (const s of shops.slice(0, 3)) {
+          slot.appendChild(el('button', {
+            class: 'ticket-shop-row',
+            onclick: () => closeSheetThen(async () => {
+              const { showPointOnMap } = await import('./mapview.js');
+              showPointOnMap(s);
+            }),
+          }, [
+            el('span', { class: 'ticket-shop-name', text: `${displayName(s.name)}${s.kind && s.kind !== s.name ? ` · ${s.kind}` : ''}` }),
+            el('span', { class: 'muted ticket-shop-dist', text: `${s.dist} m ›` }),
+          ]));
+        }
+      }).catch(() => { /* offline → the block simply has no seller rows */ });
     }
     wrap.appendChild(el('div', { class: 'ticket-block' }, kids));
   }

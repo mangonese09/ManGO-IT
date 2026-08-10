@@ -117,6 +117,17 @@ export const OPERATORS = [
     fare: { kind: 'counter', note: 'Pay the driver / booking portal — no published prices.', asOf: '2026-07' },
   },
   {
+    // Word-boundary test, never substring: 'autolinee sal' is a PREFIX of
+    // 'autolinee salemi', and bare 'sal' lives inside half of Sicily.
+    match: [],
+    test: (n) => /\bautolinee\s+sal\b/.test(n),
+    name: 'Autolinee SAL',
+    mode: 'Intercity coach',
+    howToBuy: 'Book online at autolineesal.it or buy at their listed ticket offices (see the site’s Biglietterie page). Book ahead for airport runs.',
+    website: 'https://www.autolineesal.it',
+    fare: { kind: 'booking', note: 'Per-route fare — book online or at the office.', asOf: '2026-08', source: 'autolineesal.it' },
+  },
+  {
     match: ['camilleri'],
     name: 'Camilleri Argento & Lattuca',
     mode: 'Intercity coach',
@@ -137,7 +148,7 @@ export const OPERATORS = [
 export function operatorFor(agencyName) {
   if (!agencyName) return null;
   const n = agencyName.toLowerCase();
-  return OPERATORS.find((o) => o.match.some((m) => n.includes(m))) || null;
+  return OPERATORS.find((o) => (o.test ? o.test(n) : o.match.some((m) => n.includes(m)))) || null;
 }
 
 // ── FARE RENDERING HELPERS (pure, unit-tested) ──

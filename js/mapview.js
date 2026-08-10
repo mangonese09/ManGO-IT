@@ -753,6 +753,28 @@ export async function showItineraryOnMap(it) {
   if (b.isValid()) map.flyToBounds(b.pad(0.12), { duration: 0.9 });
 }
 
+// v1.6.0: fly to ONE point of interest (a ticket seller near a boarding
+// stop) with a labelled temporary marker — same highlight lifecycle as a
+// route trace, so a map tap clears it.
+export async function showPointOnMap(pt) {
+  if (!(await mapTabReady())) { toast('Map unavailable right now', 'warn'); return; }
+  const L = window.L;
+  clearHighlight();
+  highlightActive = true;
+  highlightLayer = L.layerGroup().addTo(map);
+  const m = L.marker([pt.lat, pt.lon], {
+    icon: L.divIcon({
+      className: 'poi-pin',
+      html: '<img src="/icons/place-pin.png" alt="" width="34" height="47">',
+      iconSize: [34, 47], iconAnchor: [17, 47],
+    }),
+    keyboard: false, zIndexOffset: 1300,
+  }).addTo(highlightLayer);
+  if (pt.name) m.bindTooltip(displayName(pt.name), { permanent: true, direction: 'top', offset: [0, -50] }).openTooltip();
+  document.getElementById('map-canvas').classList.add('has-highlight');
+  map.flyTo([pt.lat, pt.lon], Math.max(map.getZoom(), 16), { duration: 0.9 });
+}
+
 // Trace an already-normalized trip shape (from /api/trip-shape or
 // /api/rail-shape): real network geometry + stop dots — trains and city
 // buses get the same treatment as coaches.

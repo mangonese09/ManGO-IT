@@ -897,6 +897,29 @@ function geoDedupeKey(name, town) {
   return `${toks.join(' ') || norm(name || '')}|${norm(town || '')}`;
 }
 
+// ── TICKET SELLERS (v1.6.0) ──
+// Sicily rivendite from OSM (shop=tobacco/newsagent/ticket; Overpass extract
+// 2026-08-10 → server/ticket-shops.json, 1,520 points). "Buy before boarding"
+// is only actionable if the app can point at a seller near the boarding stop.
+let ticketShops = [];
+try {
+  ticketShops = JSON.parse(fs.readFileSync(path.join(__dirname, 'ticket-shops.json'), 'utf8'));
+} catch { /* endpoint answers empty — the how-to-buy text stands alone */ }
+const SHOP_LABEL = { tobacco: 'Tabaccheria', newsagent: 'Edicola', ticket: 'Biglietteria' };
+function nearestTicketShops(shops, lat, lon, radiusM = 600, n = 3) {
+  const out = [];
+  for (const s of shops) {
+    const d = haversineM(lat, lon, s.lat, s.lon);
+    if (d <= radiusM) out.push({ s, d: Math.round(d) });
+  }
+  out.sort((a, b) => a.d - b.d);
+  return out.slice(0, n).map(({ s, d }) => ({
+    name: s.n || SHOP_LABEL[s.t] || 'Rivendita',
+    kind: SHOP_LABEL[s.t] || null,
+    lat: s.lat, lon: s.lon, dist: d,
+  }));
+}
+
 // ── NOMINATIM COVERAGE FALLBACK (v1.3.1) ──
 // Transitous's geocoder skips some OSM natural features: "Punta Bianca" (the
 // Agrigento cape, natural=cape in OSM) returned NOTHING Sicilian, so the app
@@ -1426,6 +1449,14 @@ const routes = {
     const out = (sic.length >= 6 ? sic : sorted).slice(0, 15);
     cacheSet(key, out, 24 * 3600 * 1000);
     return out;
+  },
+
+  // Nearest bus-ticket sellers to a boarding stop (own data, no upstream).
+  'GET /api/ticket-shops': (q) => {
+    const lat = Number(q.get('lat')), lon = Number(q.get('lon'));
+    if (!isFinite(lat) || !isFinite(lon)) throw httpError(400, 'lat and lon required');
+    const radius = Math.min(Number(q.get('r')) || 600, 1500);
+    return { shops: nearestTicketShops(ticketShops, lat, lon, radius, 4) };
   },
 
   'GET /api/plan': async (q) => {
@@ -1985,4 +2016,4 @@ if (require.main === module) {
   server.listen(PORT, () => console.log(`ManGO:IT proxy on :${PORT}${STATIC ? ' (static+api)' : ''}`));
 }
 
-module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon, vtSilence, dropDominated, parseBias, geoScore, clusterStopsByProximity, clusterAreaName, HUBS: TRANSIT_HUBS, hubsInBbox, AIRPORTS, airportMatch, airportResult, nominatimToRow, geoDedupeKey, mergeDepartures, afterStation, decodePolyline };
+module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon, vtSilence, dropDominated, parseBias, geoScore, clusterStopsByProximity, clusterAreaName, HUBS: TRANSIT_HUBS, hubsInBbox, AIRPORTS, airportMatch, airportResult, nominatimToRow, geoDedupeKey, nearestTicketShops, mergeDepartures, afterStation, decodePolyline };

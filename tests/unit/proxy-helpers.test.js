@@ -5,8 +5,27 @@ const {
   romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, inSicily, dropDominated,
   parseBias, geoScore, clusterStopsByProximity, clusterAreaName,
   HUBS, hubsInBbox, mergeDepartures,
-  AIRPORTS, airportMatch, airportResult, nominatimToRow, geoDedupeKey,
+  AIRPORTS, airportMatch, airportResult, nominatimToRow, geoDedupeKey, nearestTicketShops,
 } = require('../../server/proxy.js');
+
+// ── v1.6.0: nearest ticket sellers ──
+const SHOPS = [
+  { n: 'Tabaccheria Rossi', t: 'tobacco', lat: 38.1100, lon: 13.3670 },  // ~120 m N of the probe
+  { n: '', t: 'newsagent', lat: 38.1092, lon: 13.3679 },                 // ~50 m — unnamed edicola
+  { n: 'Biglietteria AMAT', t: 'ticket', lat: 38.1200, lon: 13.3670 },   // ~1.2 km — outside radius
+];
+test('nearestTicketShops filters by radius, sorts by distance, labels unnamed', () => {
+  const got = nearestTicketShops(SHOPS, 38.1089, 13.3675, 600, 3);
+  assert.strictEqual(got.length, 2);
+  assert.strictEqual(got[0].name, 'Edicola'); // unnamed → type label
+  assert.strictEqual(got[0].kind, 'Edicola');
+  assert.strictEqual(got[1].name, 'Tabaccheria Rossi');
+  assert.ok(got[0].dist < got[1].dist);
+  assert.ok(got.every((s) => s.dist <= 600));
+});
+test('nearestTicketShops respects the result cap', () => {
+  assert.strictEqual(nearestTicketShops(SHOPS, 38.1089, 13.3675, 5000, 1).length, 1);
+});
 
 // ── F-6: punctuation-insensitive geocode dedupe ──
 test('punctuation variants of one stop share a dedupe key', () => {
