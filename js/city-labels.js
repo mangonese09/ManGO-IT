@@ -28,8 +28,19 @@ let map = null;
 let layer = null;
 let places = null;
 let loading = null;
+let schedule = () => {};
+// Obstacles the labels must not paint across (v1.3.0, backlog item 8): the
+// hub pins are 40×40 discs centred on the same point a city label centres on,
+// so "PALERMO" landed straight across the airport pin. mapview registers a
+// source returning [{lat, lon, r}] and pokes refreshLabels() when hubs land
+// (they arrive async, after moveend has already drawn the labels).
+let obstacleSource = () => [];
+export function setObstacleSource(fn) { obstacleSource = fn; }
+export function refreshLabels() { schedule(); }
 
 function tier(p) { return p >= 45000 ? 'big' : p >= 8000 ? 'mid' : 'small'; }
+// estimated on-screen label box per tier — collision math only, not layout
+const EST = { big: { cw: 10, h: 18 }, mid: { cw: 7.5, h: 16 }, small: { cw: 6.5, h: 14 } };
 
 function loadPlaces() {
   loading ||= fetch(DATA_URL)
@@ -39,6 +50,17 @@ function loadPlaces() {
   return loading;
 }
 
+// does a w×h label box centred at (x, y+dy) touch any obstacle disc?
+function hitsObstacle(x, y, dy, w, h, obs) {
+  const top = y + dy - h / 2, left = x - w / 2;
+  for (const o of obs) {
+    const cx = Math.max(left, Math.min(o.x, left + w));
+    const cy = Math.max(top, Math.min(o.y, top + h));
+    if ((cx - o.x) ** 2 + (cy - o.y) ** 2 < o.r * o.r) return true;
+  }
+  return false;
+}
+
 function render() {
   if (!map || !places) return;
   layer.clearLayers();
@@ -46,6 +68,10 @@ function render() {
   if (z >= HANDOFF_ZOOM) return;
   const bounds = map.getBounds().pad(0.08);
   const floor = minPop(z);
+  const obs = obstacleSource().map((o) => {
+    const q = map.project([o.lat, o.lon], z);
+    return { x: q.x, y: q.y, r: o.r || 26 };
+  });
   // greedy collision cull, biggest towns first: one label per ~78×26px cell,
   // with the horizontal neighbours reserved too (labels are wide).
   const taken = new Set();
@@ -55,21 +81,32 @@ function render() {
     if (shown >= CAP) break;
     if (!bounds.contains([p.lat, p.lon])) continue;
     const pt = map.project([p.lat, p.lon], z);
+    // The town name outranks a hub pin, but offset beats overlay (Google/Apple
+    // put the label beside the marker): centred by default, and when that
+    // crosses a hub disc try below it, then above — below wins if both fail.
+    const est = EST[tier(p.p)];
+    const w = p.n.length * est.cw;
+    let dy = 0;
+    if (obs.length && hitsObstacle(pt.x, pt.y, 0, w, est.h, obs)) {
+      dy = !hitsObstacle(pt.x, pt.y, 38, w, est.h, obs) ? 38
+        : (!hitsObstacle(pt.x, pt.y, -38, w, est.h, obs) ? -38 : 38);
+    }
     const cx = Math.round(pt.x / 78);
-    const cy = Math.round(pt.y / 26);
+    const cy = Math.round((pt.y + dy) / 26);
     const cells = [`${cx},${cy}`, `${cx - 1},${cy}`, `${cx + 1},${cy}`];
     if (cells.some((c) => taken.has(c))) continue;
     cells.forEach((c) => taken.add(c));
     shown += 1;
     // divIcon html is a template string — escape the OSM name (quotes exist)
     const safe = p.n.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+    const style = dy ? ` style="transform:translate(-50%,calc(-50% + ${dy}px))"` : '';
     layer.addLayer(window.L.marker([p.lat, p.lon], {
       pane: PANE,
       interactive: false,
       keyboard: false,
       icon: window.L.divIcon({
         className: 'city-label-wrap',
-        html: `<span class="city-label cl-${tier(p.p)}">${safe}</span>`,
+        html: `<span class="city-label cl-${tier(p.p)}"${style}>${safe}</span>`,
         iconSize: [0, 0],
       }),
     }));
@@ -84,7 +121,7 @@ export async function initCityLabels(theMap) {
   pane.style.pointerEvents = 'none'; // taps fall through to the pins beneath
   layer = window.L.layerGroup().addTo(map);
   let t = null;
-  const schedule = () => { clearTimeout(t); t = setTimeout(render, 120); };
+  schedule = () => { clearTimeout(t); t = setTimeout(render, 120); };
   map.on('zoomend', schedule);
   map.on('moveend', schedule);
   await loadPlaces();

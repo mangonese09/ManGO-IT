@@ -643,9 +643,11 @@ body.kb-open .bottom-nav { transform: translateY(100%); }
 /* QA-07: suggestion dropdown scrolls internally, never under the nav */
 .suggest { max-height: min(52vh, 420px); overflow-y: auto; }
 
-/* QA-11: mango is rare — toggles and direct block go neutral, mango stays on the primary action */
-.mode-toggle.active { border-color: var(--border-strong, rgba(255,255,255,0.25)); color: var(--text-primary, #e8f0ea); }
-:root[data-theme="light"] .mode-toggle.active { border-color: var(--border-strong, rgba(0,0,0,0.3)); color: var(--text-primary, #222); }
+/* QA-11: mango is rare — the direct block goes neutral, mango stays on the
+   primary action. Its .mode-toggle.active half was retired in v1.3.0: the
+   v1.2.0 filter chips and the map chips both settled on the mango ring as THE
+   selected-state, so the home toggles follow the same convention (their
+   original mango rules above resume). */
 .direct-block { border-left-color: var(--border-strong, rgba(255,255,255,0.25)) !important; }
 
 /* QA-13: one 16px content rail */
@@ -1174,3 +1176,25 @@ body { font-size: 1rem; }
 #map-canvas.tiles-light .city-label { color: #4c5561; text-shadow: 0 1px 3px rgba(255,255,255,0.95), 0 0 6px rgba(255,255,255,0.9), 0 0 2px rgba(255,255,255,1); }
 #map-canvas.tiles-light .city-label.cl-mid { color: #3c4550; }
 #map-canvas.tiles-light .city-label.cl-big { color: #2b333d; }
+
+/* ── v1.3.0 UX backlog ── */
+
+/* #3: Depart/Arrive-by never resizes — a hidden sizer stacked under the label
+   reserves the widest state, so the row can't reflow on toggle */
+#when-toggle { display: inline-grid; justify-items: center; align-items: center; }
+#when-toggle > span { grid-area: 1 / 1; }
+#when-toggle::after { content: 'Arrive by'; grid-area: 1 / 1; visibility: hidden; }
+
+/* #2: pick-mode feedback — the pin lifts while the map pans and settles on
+   release; a fixed ground dot marks the exact point the pin tip returns to */
+.pick-dot {
+  position: absolute; left: 50%; top: 50%; width: 8px; height: 8px;
+  transform: translate(-50%, -50%); box-sizing: border-box;
+  border-radius: 50%; background: var(--mango, #ffb454);
+  border: 2px solid rgba(0,0,0,0.55);
+  z-index: 619; pointer-events: none;
+}
+.pick-pin img { transition: transform 160ms ease-out; }
+#map-canvas.pick-lift .pick-pin img { transform: translateY(-10px); }
+#map-canvas.pick-lift .pick-pin { filter: drop-shadow(0 10px 8px rgba(0,0,0,0.35)); }
+@media (prefers-reduced-motion: reduce) { .pick-pin img { transition: none; } }

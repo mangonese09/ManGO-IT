@@ -1,5 +1,9 @@
 # UX backlog — raised 2026-08-09 (post v1.2.3)
 
+**STATUS: CLOSED — all items shipped in v1.3.0 (2026-08-09/10).** Each was
+investigated/benchmarked first; verdicts and rationale live in
+`2026-08-09-ux-backlog-decisions.md`. Original text kept below for the record.
+
 Eight items from the user, verbatim intent preserved. Nothing below is
 investigated yet except #5. Do NOT start coding these — several are questions
 that need an answer before they are tasks, and #2/#8 need a look at how

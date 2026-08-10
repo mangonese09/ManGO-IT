@@ -153,37 +153,74 @@ function showQuickPicks(which, list, input) {
     ]));
   }
   list.appendChild(chooseOnMapRow(which));
-  for (const p of getPlacesSorted().slice(0, 6)) {
+  // one fill path for every quick-pick row (saved place or recent destination)
+  const pickQuick = (chosen, label) => {
+    list.hidden = true;
+    sel[which] = chosen;
+    input.value = label;
+    syncClears();
+    // destination-first, mirroring a suggestion pick
+    if (which === 'to' && !sel.from) {
+      document.getElementById('from-input').value = 'My location';
+      syncClears();
+      locate().then((pos) => {
+        sel.from = { name: 'My location', place: `${pos.lat.toFixed(5)},${pos.lon.toFixed(5)}`, lat: pos.lat, lon: pos.lon };
+        runSearch();
+      }).catch(() => {
+        document.getElementById('from-input').value = '';
+        syncClears();
+        toast('Location unavailable — set a starting point', 'warn');
+      });
+    } else if (sel.from && sel.to) {
+      runSearch();
+    }
+  };
+  const places = getPlacesSorted();
+  for (const p of places.slice(0, 6)) {
     list.appendChild(el('button', {
       class: 'suggest-row suggest-place',
-      onclick: () => {
-        list.hidden = true;
-        sel[which] = { name: p.name, place: `${p.lat},${p.lon}`, lat: p.lat, lon: p.lon };
-        input.value = p.label || displayName(p.name);
-        syncClears();
-        // destination-first, mirroring a suggestion pick
-        if (which === 'to' && !sel.from) {
-          document.getElementById('from-input').value = 'My location';
-          syncClears();
-          locate().then((pos) => {
-            sel.from = { name: 'My location', place: `${pos.lat.toFixed(5)},${pos.lon.toFixed(5)}`, lat: pos.lat, lon: pos.lon };
-            runSearch();
-          }).catch(() => {
-            document.getElementById('from-input').value = '';
-            syncClears();
-            toast('Location unavailable — set a starting point', 'warn');
-          });
-        } else if (sel.from && sel.to) {
-          runSearch();
-        }
-      },
+      onclick: () => pickQuick({ name: p.name, place: `${p.lat},${p.lon}`, lat: p.lat, lon: p.lon }, p.label || displayName(p.name)),
     }, [
       el('span', { class: 'suggest-icon' }, [placeIcon(placeIconKey(p))]),
       el('span', { class: 'suggest-name', text: p.label || displayName(p.name) }),
       el('span', { class: 'suggest-area', text: p.home ? 'Home' : 'saved place' }),
     ]));
   }
+  // Recent destinations below saved places (item 6) — Google's field-focus
+  // pattern. Derived from the recent-routes store: no new storage key, and
+  // removing the route chips clears these too.
+  for (const d of recentDestinations(getRecents(), places)) {
+    list.appendChild(el('button', {
+      class: 'suggest-row suggest-recent',
+      onclick: () => pickQuick({ name: d.name, place: d.place, lat: d.lat, lon: d.lon }, displayName(d.name)),
+    }, [
+      el('span', { class: 'suggest-icon' }, [el('span', { class: 'mode-emoji', text: '🕘' })]),
+      el('span', { class: 'suggest-name', text: displayName(d.name) }),
+      el('span', { class: 'suggest-area', text: 'recent' }),
+    ]));
+  }
   list.hidden = list.children.length === 0;
+}
+
+// Endpoints a user recently routed to (or from), for the quick-picks list:
+// newest route first, destination before origin, minus "My location", minus
+// anything already saved as a place, deduped by coordinate. Pure — unit-tested.
+export function recentDestinations(recents, places, cap = 4) {
+  const key = (lat, lon) => `${(+lat).toFixed(4)},${(+lon).toFixed(4)}`;
+  const seen = new Set((places || []).filter((p) => isFinite(p.lat) && isFinite(p.lon)).map((p) => key(p.lat, p.lon)));
+  const out = [];
+  for (const r of recents || []) {
+    for (const e of [r && r.to, r && r.from]) {
+      if (!e || !isFinite(e.lat) || !isFinite(e.lon) || !e.place) continue;
+      if (e.name === 'My location') continue;
+      const k = key(e.lat, e.lon);
+      if (seen.has(k)) continue;
+      seen.add(k);
+      if (out.length < cap) out.push(e);
+    }
+    if (out.length >= cap) break;
+  }
+  return out;
 }
 
 // ── MODE FILTERS (v0.9.0) ──
@@ -324,9 +361,20 @@ export function classifySuggestion(r) {
     kind = 'airport';
   } else if (r.type === 'STOP') {
     const m = r.modes || [];
-    if (m.some((x) => /RAIL|LONG_DISTANCE/.test(x || ''))) { iconEl = modeIcon('RAIL'); kind = 'train station'; }
-    else if (m.some((x) => /METRO|SUBWAY/.test(x || ''))) { iconEl = modeIcon('METRO'); kind = 'metro station'; }
-    else if (m.some((x) => /TRAM/.test(x || ''))) { iconEl = modeIcon('TRAM'); kind = 'tram stop'; }
+    // A station complex arrives MERGED from upstream (one stop carrying every
+    // mode; its board serves them all) — so name every family present, or
+    // "train station" hides the buses from the user who wants one (item 7).
+    const fams = [];
+    if (m.some((x) => /RAIL|LONG_DISTANCE/.test(x || ''))) fams.push('train');
+    if (m.some((x) => /METRO|SUBWAY/.test(x || ''))) fams.push('metro');
+    if (m.some((x) => /TRAM/.test(x || ''))) fams.push('tram');
+    if (m.some((x) => x === 'BUS' || x === 'COACH')) fams.push('bus');
+    if (fams.length > 1) {
+      iconEl = modeIcon(fams[0] === 'train' ? 'RAIL' : fams[0] === 'metro' ? 'METRO' : 'TRAM');
+      kind = `${fams.slice(0, -1).join(', ')} & ${fams[fams.length - 1]} station`;
+    } else if (fams[0] === 'train') { iconEl = modeIcon('RAIL'); kind = 'train station'; }
+    else if (fams[0] === 'metro') { iconEl = modeIcon('METRO'); kind = 'metro station'; }
+    else if (fams[0] === 'tram') { iconEl = modeIcon('TRAM'); kind = 'tram stop'; }
     else { iconEl = modeIcon('BUS'); kind = 'city bus stop'; }
   } else if (r.type === 'COACH_STOP') {
     iconEl = modeIcon('COACH'); kind = 'coach stop';
@@ -558,7 +606,7 @@ function swapEndpoints() {
 function toggleWhen() {
   departMode = departMode === 'depart' ? 'arrive' : 'depart';
   const btn = document.getElementById('when-toggle');
-  btn.textContent = departMode === 'depart' ? 'Depart' : 'Arrive by';
+  btn.querySelector('span').textContent = departMode === 'depart' ? 'Depart' : 'Arrive by';
   btn.setAttribute('aria-pressed', String(departMode === 'arrive'));
   // R-01: "Arrive by" only reaches the router when a time is set, so with no
   // time it silently did nothing. Say what it needs instead of pretending.

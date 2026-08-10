@@ -257,11 +257,16 @@ function clearClusters() { for (const m of clusterMarkers.values()) m.remove(); 
 // zoom level. Reconciled by hubId so pans/zooms keep the markers; the Hubs
 // filter chip removes them wholesale.
 const hubMarkers = new Map(); // entry key -> L.Marker
+let cityLabelsMod = null; // set once city-labels.js loads (labels dodge hub pins)
 const HUB_GROUP_ZOOM = 9;   // below this, co-located hub pairs share one pin
 const HUB_LABEL_ZOOM = 11;  // at/above this, hub pins carry their name pill
 function renderHubs(hubs) {
   if (!map) return;
-  if (!mapFilter.hub) { for (const m of hubMarkers.values()) m.remove(); hubMarkers.clear(); return; }
+  if (!mapFilter.hub) {
+    for (const m of hubMarkers.values()) m.remove(); hubMarkers.clear();
+    cityLabelsMod?.refreshLabels(); // obstacles gone — labels re-centre
+    return;
+  }
   const z = map.getZoom();
   const labelled = z >= HUB_LABEL_ZOOM;
   // Island zoom: nearby hubs (Catania station + airport ~6km; at z7 even the
@@ -310,6 +315,8 @@ function renderHubs(hubs) {
     hubMarkers.set(e.key, m);
   }
   for (const [id, m] of hubMarkers) if (!keep.has(id)) { m.remove(); hubMarkers.delete(id); }
+  // hubs land async (after moveend already drew the labels) — re-place them
+  cityLabelsMod?.refreshLabels();
 }
 
 // Grouped island-zoom hub pin → pick which hub's board to open.
@@ -684,6 +691,7 @@ export async function pickPointOnMap() {
   canvas.classList.add('picking');
   // 70×96 native — keep the aspect or the pin renders squashed
   const pin = el('div', { class: 'pick-pin' }, [el('img', { src: '/icons/place-pin.png', alt: '', width: '34', height: '47' })]);
+  const dot = el('div', { class: 'pick-dot' });
   const addr = el('div', { class: 'pick-addr', text: 'Move the map to place the pin' });
   const useBtn = el('button', { class: 'btn btn-primary pick-use', text: 'Use this spot' });
   const cancelBtn = el('button', { class: 'sheet-close', 'aria-label': 'Cancel pick', text: '✕' });
@@ -691,6 +699,7 @@ export async function pickPointOnMap() {
     el('div', { class: 'pick-text' }, [el('div', { class: 'pick-title', text: 'Choose on map' }), addr]),
     useBtn, cancelBtn,
   ]);
+  canvas.appendChild(dot);
   canvas.appendChild(pin);
   canvas.appendChild(bar);
   let lastLabel = null;
@@ -703,7 +712,14 @@ export async function pickPointOnMap() {
     addr.textContent = lastLabel || `Dropped pin (${c.lat.toFixed(4)}, ${c.lng.toFixed(4)})`;
   };
   let debounce = null;
-  const onMove = () => { clearTimeout(debounce); addr.textContent = '…'; debounce = setTimeout(refresh, 350); };
+  // lift the pin while the map pans (Google's cue that the MAP moves, not the
+  // pin); it settles back onto the ground dot on release
+  const onMoveStart = () => canvas.classList.add('pick-lift');
+  const onMove = () => {
+    canvas.classList.remove('pick-lift');
+    clearTimeout(debounce); addr.textContent = '…'; debounce = setTimeout(refresh, 350);
+  };
+  map.on('movestart', onMoveStart);
   map.on('moveend', onMove);
   refresh();
   return new Promise((resolve) => {
@@ -714,9 +730,10 @@ export async function pickPointOnMap() {
     const onNav = () => done(null);
     navEls.forEach((b) => b.addEventListener('click', onNav));
     pickCleanup = () => {
-      map.off('moveend', onMove); clearTimeout(debounce);
+      map.off('movestart', onMoveStart); map.off('moveend', onMove); clearTimeout(debounce);
       navEls.forEach((b) => b.removeEventListener('click', onNav));
-      pin.remove(); bar.remove(); canvas.classList.remove('picking');
+      pin.remove(); dot.remove(); bar.remove();
+      canvas.classList.remove('picking', 'pick-lift');
       pickCleanup = null;
     };
     useBtn.onclick = () => {
@@ -956,7 +973,16 @@ async function initMap(pos) {
   map.on('zoomend', updateHint);
   loadVisibleStops();
   // Own place labels below z13 (density + stability the raster tiles can't give).
-  import('./city-labels.js').then((m) => m.initCityLabels(map)).catch(() => {});
+  // Hub pins register as label obstacles (item 8): a city label must offset
+  // around a hub disc, never paint across it.
+  import('./city-labels.js').then((m) => {
+    cityLabelsMod = m;
+    m.setObstacleSource(() => [...hubMarkers.values()].map((mk) => {
+      const ll = mk.getLatLng();
+      return { lat: ll.lat, lon: ll.lng, r: 26 };
+    }));
+    return m.initCityLabels(map);
+  }).catch(() => {});
 }
 
 function updateHint() {
