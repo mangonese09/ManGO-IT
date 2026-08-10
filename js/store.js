@@ -131,6 +131,19 @@ export function pruneCache(maxAgeMs = 48 * 3600 * 1000, now = Date.now()) {
   return stale.length;
 }
 
+// S-1 (settings deep dive): cache-only clear — "clear cache" must be SAFE by
+// definition. User data (favstops, places, recents, saved, settings) is never
+// touched here; erasing that is clearAllAppData, a separate deliberate action.
+export function clearCachedData() {
+  const keys = [];
+  for (let i = 0; i < localStorage.length; i++) {
+    const k = localStorage.key(i);
+    if (k && (k.startsWith(NS + 'cache.') || k === NS + 'freshness')) keys.push(k);
+  }
+  keys.forEach((k) => localStorage.removeItem(k));
+  return keys.length;
+}
+
 export function clearAllAppData() {
   const keys = [];
   for (let i = 0; i < localStorage.length; i++) {

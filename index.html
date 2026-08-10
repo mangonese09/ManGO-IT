@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://mangonese.dev">
   <link rel="preconnect" href="https://mangonese.dev" crossorigin>
   <link rel="stylesheet" href="https://mangonese.dev/shared/mangonese.css">
-  <link rel="stylesheet" href="/css/styles.css?v=1.4.0">
+  <link rel="stylesheet" href="/css/styles.css?v=1.5.0">
 </head>
 <body>
   <header class="app-header">
@@ -92,36 +92,50 @@
       <div id="map-list"></div>
     </section>
 
-    <!-- ── SETTINGS ── -->
+    <!-- ── SETTINGS ── (v1.5.0 deep-dive redesign: grouped, whole-row taps,
+         value-as-text rows opening choice sheets; cache clear split from
+         data erase) -->
     <section id="view-settings" hidden>
       <h2>Settings</h2>
+      <h3 class="settings-group">Appearance</h3>
       <div class="card settings-card">
-        <div class="setting-row">
+        <button id="theme-row" class="setting-row setting-link" aria-haspopup="dialog">
           <span>Theme</span>
-          <button id="theme-toggle" class="btn btn-ghost">🌙 Dark</button>
-        </div>
-        <div class="setting-row">
-          <span>Search results</span>
-          <button id="span-toggle" class="btn btn-ghost">Whole day</button>
-        </div>
-        <div class="setting-row">
-          <span>Map style</span>
-          <button id="map-style-toggle" class="btn btn-ghost">Auto</button>
-        </div>
+          <span class="setting-value"><span id="theme-value"></span><span class="setting-chevron" aria-hidden="true">›</span></span>
+        </button>
         <div class="setting-sep"></div>
+        <button id="map-style-row" class="setting-row setting-link" aria-haspopup="dialog">
+          <span>Map style</span>
+          <span class="setting-value"><span id="map-style-value"></span><span class="setting-chevron" aria-hidden="true">›</span></span>
+        </button>
+      </div>
+      <h3 class="settings-group">Search</h3>
+      <div class="card settings-card">
+        <button id="span-row" class="setting-row setting-link" aria-haspopup="dialog">
+          <span>Search results</span>
+          <span class="setting-value"><span id="span-value"></span><span class="setting-chevron" aria-hidden="true">›</span></span>
+        </button>
+      </div>
+      <h3 class="settings-group">Data</h3>
+      <div class="card settings-card">
         <button id="data-info" class="setting-row setting-link" aria-haspopup="dialog">
           <span>Data &amp; schedules</span>
           <span class="setting-chevron" aria-hidden="true">›</span>
         </button>
-        <div class="setting-row">
-          <span>Check for updates <span class="muted setting-ver" id="current-version"></span></span>
-          <button id="check-updates" class="btn btn-ghost">Check</button>
-        </div>
-        <div class="setting-row">
-          <span>Clear cached data</span>
-          <button id="clear-cache" class="btn btn-ghost">Clear</button>
-        </div>
         <div class="setting-sep"></div>
+        <button id="check-updates" class="setting-row setting-link">
+          <span>Check for updates <span class="muted setting-ver" id="current-version"></span></span>
+        </button>
+        <div class="setting-sep"></div>
+        <button id="clear-cache" class="setting-row setting-link">
+          <span>Clear cached schedules</span>
+        </button>
+        <div class="setting-sep"></div>
+        <button id="erase-all" class="setting-row setting-link setting-danger">
+          <span>Erase all data</span>
+        </button>
+      </div>
+      <div class="card settings-card settings-about-card">
         <button id="about-open" class="setting-row setting-link" aria-haspopup="dialog">
           <span>About ManGO:IT</span>
           <span class="setting-chevron" aria-hidden="true">›</span>
@@ -145,6 +159,6 @@
     </button>
   </nav>
 
-  <script type="module" src="/js/app.js?v=1.4.0"></script>
+  <script type="module" src="/js/app.js?v=1.5.0"></script>
 </body>
 </html>

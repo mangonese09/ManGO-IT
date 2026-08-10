@@ -1239,3 +1239,44 @@ body:has(#results .tz-banner) .when-tz.tz-gap { display: none; }
 
 /* F-9: exact-fare chip on result cards */
 .chip-fare { font-variant-numeric: tabular-nums; font-weight: 600; }
+
+/* ── v1.5.0 settings redesign (deep dive S-1..S-6) ── */
+
+/* S-4: grouped cards under small uppercase headers (same voice as the
+   MORNING day-part headers), uniform 52px row rhythm */
+.settings-group {
+  font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--text-muted, #9a9a9a);
+  margin: 18px 6px 6px;
+}
+#view-settings .settings-card { padding: 4px 16px; margin-bottom: 4px; }
+#view-settings .settings-about-card { margin-top: 18px; }
+#view-settings .setting-row { padding: 4px 0; min-height: 52px; }
+/* S-2/S-3: the row IS the control — current value as muted text + chevron */
+.setting-value {
+  display: inline-flex; align-items: center; gap: 8px; flex: 0 0 auto;
+  color: var(--text-muted, #9a9a9a); font-size: 0.9375rem;
+}
+/* S-1: the destructive row reads destructive (red text, iOS convention) */
+.setting-danger { color: var(--error, #e85a5a); }
+.setting-row:disabled { opacity: 0.5; }
+
+/* choice sheets: radio rows with a description, mango ✓ on the active one */
+.choice-row {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  width: 100%; min-height: 52px; padding: 10px 4px;
+  background: none; border: none; font: inherit; color: inherit;
+  text-align: left; cursor: pointer;
+}
+.choice-row:active { opacity: 0.65; }
+.choice-main { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.choice-desc { font-size: 0.8125rem; line-height: 1.35; }
+.choice-check { color: var(--mango, #ffb454); font-weight: 700; font-size: 1.125rem; visibility: hidden; flex: 0 0 auto; }
+.choice-row.is-active .choice-check { visibility: visible; }
+.choice-row.is-active > .choice-main > span:first-child { font-weight: 600; }
+
+/* S-6: About — the trust line + one attribution per line */
+.about-privacy { margin: 10px 0 2px; font-weight: 600; font-size: 0.875rem; color: var(--teal, #3dd6ac); }
+.about-links { list-style: none; padding: 0; margin: 8px 0 4px; display: flex; flex-direction: column; gap: 9px; font-size: 0.875rem; line-height: 1.4; }
+/* links keep a ≥40px touch target without breaking the line rhythm */
+.about-links a { display: inline-block; padding: 9px 2px; margin: -7px 0; }
