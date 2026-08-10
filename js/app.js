@@ -84,16 +84,24 @@ function initEdgeSwipe() {
 }
 
 function boot() {
+  // The service-worker registration + torn-state reload live in an INLINE
+  // script in index.html (v1.5.1) — a torn half-updated cache can kill this
+  // whole module graph before boot() exists, and the self-heal must survive
+  // exactly that. Nothing SW-related belongs in here.
   for (const v of VIEWS) {
     document.getElementById(`nav-${v}`).addEventListener('click', () => setView(v));
   }
-  pruneCache();
-  initSettings();
-  initSearch();
-  initBoard();
-  initEdgeSwipe();
-  initNativeBackButton();
-  initKeyboardNav();
+  // One broken/torn module must not take the rest of the app down with it:
+  // the failure is logged, the other tabs keep working, and the SW block
+  // above swaps the torn shell out on its own.
+  const safe = (name, fn) => { try { fn(); } catch (err) { console.error(`init ${name} failed`, err); } };
+  safe('pruneCache', pruneCache);
+  safe('settings', initSettings);
+  safe('search', initSearch);
+  safe('board', initBoard);
+  safe('edgeSwipe', initEdgeSwipe);
+  safe('nativeBack', initNativeBackButton);
+  safe('keyboardNav', initKeyboardNav);
 
   // pull-to-refresh reloads the page: reopen the tab the user was on
   try {
@@ -101,21 +109,6 @@ function boot() {
     if (last && last !== 'home') setView(last, false);
     history.replaceState({ view: current }, '', '#' + current);
   } catch { /* private mode */ }
-
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js').catch(() => { /* offline first load */ });
-    // A new SW claiming this page means the precache just changed under us —
-    // reload ONCE so the running modules match the new shell (no torn state).
-    // Only when a controller is REPLACED: first-ever install claiming an
-    // uncontrolled page must not reload the very first visit.
-    const hadController = !!navigator.serviceWorker.controller;
-    let swReloaded = false;
-    navigator.serviceWorker.addEventListener('controllerchange', () => {
-      if (!hadController || swReloaded) return;
-      swReloaded = true;
-      location.reload();
-    });
-  }
 }
 
 // Hide the fixed bottom nav while the soft keyboard is open. A position:fixed

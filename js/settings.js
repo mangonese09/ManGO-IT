@@ -55,7 +55,7 @@ export function initSettings() {
 
   // S-1: cache-only clear — saved stops/places/recents are untouched, so no
   // scare copy needed; a reload refetches fresh schedules.
-  document.getElementById('clear-cache').addEventListener('click', async () => {
+  document.getElementById('clear-cache')?.addEventListener('click', async () => {
     const ok = await confirmModal('Clear cached schedules and map data? Your saved stops and places are kept.', { confirmText: 'Clear', danger: false });
     if (!ok) return;
     clearCachedData();
@@ -67,7 +67,7 @@ export function initSettings() {
   });
 
   // S-1: the deliberate, red, itemized one. The modal counts what dies.
-  document.getElementById('erase-all').addEventListener('click', async () => {
+  document.getElementById('erase-all')?.addEventListener('click', async () => {
     const bits = [];
     const add = (n, word) => { if (n) bits.push(`${n} ${word}${n > 1 ? 's' : ''}`); };
     add(getFavStops().length, 'saved stop');
@@ -85,11 +85,11 @@ export function initSettings() {
     location.reload();
   });
 
-  document.getElementById('check-updates').addEventListener('click', checkForUpdates);
+  document.getElementById('check-updates')?.addEventListener('click', checkForUpdates);
   const ver = document.getElementById('current-version');
   if (ver) ver.textContent = `v${APP_VERSION}`;
-  document.getElementById('data-info').addEventListener('click', openDataSheet);
-  document.getElementById('about-open').addEventListener('click', openAboutSheet);
+  document.getElementById('data-info')?.addEventListener('click', openDataSheet);
+  document.getElementById('about-open')?.addEventListener('click', openAboutSheet);
 }
 
 // ── CHOICE SHEETS (S-2/S-3/S-7) ──
@@ -108,8 +108,13 @@ function paintValues() {
 }
 
 function wireChoiceRow(rowId, cfg) {
+  // Null-tolerant (v1.5.1): a torn half-updated cache can pair this module
+  // with a different generation of index.html — a missing row must degrade
+  // to "that row does nothing" while the SW replaces the shell, never throw.
+  const row = document.getElementById(rowId);
+  if (!row) return;
   rowConfigs.set(rowId, cfg);
-  document.getElementById(rowId).addEventListener('click', () => {
+  row.addEventListener('click', () => {
     const body = el('div', { class: 'choice-sheet' });
     for (const o of cfg.options) {
       body.appendChild(el('button', {

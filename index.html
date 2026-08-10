@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://mangonese.dev">
   <link rel="preconnect" href="https://mangonese.dev" crossorigin>
   <link rel="stylesheet" href="https://mangonese.dev/shared/mangonese.css">
-  <link rel="stylesheet" href="/css/styles.css?v=1.5.0">
+  <link rel="stylesheet" href="/css/styles.css?v=1.5.1">
 </head>
 <body>
   <header class="app-header">
@@ -159,6 +159,23 @@
     </button>
   </nav>
 
-  <script type="module" src="/js/app.js?v=1.5.0"></script>
+  <script>
+    // Self-heal OUTSIDE the module graph (v1.5.1). A half-updated cache can
+    // pair modules whose imports no longer line up — then the ES-module graph
+    // fails to even evaluate and nothing inside app.js ever runs. The service
+    // worker registration and the one-shot reload that REPAIRS the tear must
+    // therefore live here, in a plain script that always executes.
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js').catch(function () { /* offline first load */ });
+      var swHadController = !!navigator.serviceWorker.controller;
+      var swReloaded = false;
+      navigator.serviceWorker.addEventListener('controllerchange', function () {
+        if (!swHadController || swReloaded) return;
+        swReloaded = true;
+        location.reload();
+      });
+    }
+  </script>
+  <script type="module" src="/js/app.js?v=1.5.1"></script>
 </body>
 </html>

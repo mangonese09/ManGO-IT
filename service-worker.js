@@ -1,12 +1,12 @@
 // ── SERVICE WORKER ──
 // App shell cache-first; /api/* never cached here (js/api.js owns API caching
 // with staleness stamps). Bump CACHE on every deploy.
-const CACHE = 'mangoit-v150';
+const CACHE = 'mangoit-v151';
 const SHELL = [
   '/',
   '/index.html',
-  '/css/styles.css?v=1.5.0',
-  '/js/app.js?v=1.5.0',
+  '/css/styles.css?v=1.5.1',
+  '/js/app.js?v=1.5.1',
   '/js/api.js',
   '/js/board.js',
   '/js/itinerary.js',
@@ -89,7 +89,11 @@ self.addEventListener('fetch', (e) => {
   if (url.pathname === '/version.json') return; // update checks must hit network
   e.respondWith(
     caches.match(e.request, { ignoreSearch: false }).then((hit) => hit ||
-      fetch(e.request).then((res) => {
+      // Module cache-misses revalidate with the SERVER (v1.5.1): nginx serves
+      // /js/* with max-age=86400, so a plain fetch could fill the cache with a
+      // day-stale module next to a fresh shell — the torn state that bricked
+      // the settings tab. 'no-cache' still rides ETags (cheap 304s).
+      fetch(url.pathname.startsWith('/js/') ? new Request(e.request, { cache: 'no-cache' }) : e.request).then((res) => {
         if (res.ok && url.origin === location.origin) {
           const copy = res.clone();
           caches.open(CACHE).then((c) => c.put(e.request, copy));
