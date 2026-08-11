@@ -1103,10 +1103,19 @@ async function resolveVtCode(stopId, name) {
 // Transitous map/stops in a radius around a point → common stop records. The
 // upstream query is a bbox; callers that need a true circle filter by haversine.
 // Also the producer behind /api/map-stops' transit array.
+// Malta is in Transitous but out of our coverage — an island-zoom radius swept
+// in "Aeroporto di Malta (MLA)" and drew it as a lone pin in open sea (map
+// deep dive M-2). Exclusion is Malta's OWN bbox, not a latitude line: the
+// Pelagie islands (Lampedusa 35.50, Linosa 35.86) are Sicilian and sit further
+// SOUTH than Malta — they survive because they lie west of 13.9°E.
+function outOfCoverage(lat, lon) {
+  return lat > 35.6 && lat < 36.2 && lon > 13.9 && lon < 14.9;
+}
+
 async function transitStopsInRadius(lat, lon, r) {
   const dLat = r / 111320, dLon = r / (111320 * Math.cos((lat * Math.PI) / 180));
   const { data } = await upstream(`${TRANSITOUS}/api/v1/map/stops?min=${lat - dLat},${lon - dLon}&max=${lat + dLat},${lon + dLon}`);
-  return (data || []).map((s) => ({
+  return (data || []).filter((s) => !outOfCoverage(s.lat, s.lon)).map((s) => ({
     stopId: s.stopId, name: s.name, lat: s.lat, lon: s.lon,
     modes: s.modes || [], dist: Math.round(haversineM(lat, lon, s.lat, s.lon)),
   }));
@@ -2016,4 +2025,4 @@ if (require.main === module) {
   server.listen(PORT, () => console.log(`ManGO:IT proxy on :${PORT}${STATIC ? ' (static+api)' : ''}`));
 }
 
-module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon, vtSilence, dropDominated, parseBias, geoScore, clusterStopsByProximity, clusterAreaName, HUBS: TRANSIT_HUBS, hubsInBbox, AIRPORTS, airportMatch, airportResult, nominatimToRow, geoDedupeKey, nearestTicketShops, mergeDepartures, afterStation, decodePolyline };
+module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, outOfCoverage, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon, vtSilence, dropDominated, parseBias, geoScore, clusterStopsByProximity, clusterAreaName, HUBS: TRANSIT_HUBS, hubsInBbox, AIRPORTS, airportMatch, airportResult, nominatimToRow, geoDedupeKey, nearestTicketShops, mergeDepartures, afterStation, decodePolyline };

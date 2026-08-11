@@ -381,7 +381,10 @@ export function classifySuggestion(r) {
   } else if (r.type === 'COACH_STOP') {
     iconEl = modeIcon('COACH'); kind = 'coach stop';
   } else if (/^(city|town|village|hamlet)/.test(r.category || '') || (!r.category && r.type === 'PLACE')) {
-    iconEl = el('span', { class: 'mode-emoji', text: '🏘️' }); kind = 'town';
+    // M-9 (map deep dive): the 🏘️ emoji was the last emoji icon left after
+    // S-5 — towns now wear a mango-family icon like every other kind
+    iconEl = el('img', { class: 'mode-img', src: '/icons/town-mango.svg', alt: 'Town', width: '22', height: '22' });
+    kind = 'town';
   } else if (/^(cape|beach|cliff|peak|bay|islet|island|headland|nature_reserve|protected_area|wood|spring)$/.test(r.category || '')) {
     // natural features arrive via the Nominatim coverage fallback (v1.3.1 —
     // Punta Bianca's cape); a plain "what it is" beats an empty context line
@@ -1428,7 +1431,8 @@ function openItineraryDetail(it) {
       class: 'btn btn-ghost iti-map-btn', text: 'Show on map',
       onclick: () => closeSheetThen(async () => {
         const { showItineraryOnMap } = await import('./mapview.js');
-        showItineraryOnMap(it);
+        // M-5: the trace's info bar gets a "Trip" button back to this sheet
+        showItineraryOnMap(it, () => openItineraryDetail(it));
       }),
     }),
   ]));

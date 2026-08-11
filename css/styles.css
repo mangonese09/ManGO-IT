@@ -855,7 +855,11 @@ body { font-size: 1rem; }
 .route-pick-row .line-swatch { width: 20px; height: 6px; border-radius: 3px; flex-shrink: 0; }
 .mib-swatch { display: inline-block; width: 16px; height: 5px; border-radius: 3px; margin-right: 7px; vertical-align: middle; flex-shrink: 0; }
 .map-info-bar .mib-name { display: flex; align-items: center; }
-.map-info-bar .mib-name .lg-text { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+/* M-8: route names were cut to ~10ch by the button row — wrap to two lines */
+.map-info-bar .mib-name .lg-text {
+  min-width: 0; overflow: hidden; white-space: normal;
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;
+}
 .map-info-bar .mib-back { font-size: 1.125rem; line-height: 1; }
 
 /* #1 Line-detail sheet */
@@ -958,6 +962,42 @@ body { font-size: 1rem; }
 }
 .map-locate-btn img { width: 24px; height: 24px; object-fit: contain; }
 
+/* M-6: 44px hit floor without inflating the visuals — invisible overlays
+   extend each small control's tap area (chips 32→44, info-bar 34→44,
+   pick-✕ 28→44). Pseudo-element clicks land on the button. */
+.map-chip, .map-info-bar .mib-x, .map-info-bar .mib-fav, .pick-bar .sheet-close { position: relative; }
+.map-chip::after { content: ''; position: absolute; left: -2px; right: -2px; top: -7px; bottom: -7px; }
+.map-info-bar .mib-x::after, .map-info-bar .mib-fav::after { content: ''; position: absolute; inset: -5px -3px; }
+.pick-bar .sheet-close::after { content: ''; position: absolute; inset: -8px; }
+/* Leaflet's 30px zoom buttons sat under the floor AND misaligned with the
+   44px locate button stacked above them — size them to match. The #map-canvas
+   id out-specifies leaflet.css, which loads lazily AFTER this sheet. */
+#map-canvas .leaflet-control-zoom a {
+  width: 44px; height: 44px; line-height: 42px; font-size: 1.375rem;
+}
+
+/* M-4: you-marker — blue dot (white ring) + optional heading wedge; the
+   accuracy halo is an L.circle in map units, drawn by showYou. */
+.you-wrap { pointer-events: none; }
+.you-dot {
+  position: absolute; inset: 1px; border-radius: 50%;
+  background: #3f8cff; border: 2px solid #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.45);
+}
+.you-heading {
+  display: none; position: absolute; left: 50%; top: 50%;
+  width: 14px; height: 14px; margin: -21px 0 0 -7px;
+  transform-origin: 7px 21px;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  background: linear-gradient(rgba(63,140,255,0.9), rgba(63,140,255,0));
+}
+
+/* M-10: pick mode — the pins are inert (pointer-events off below); dim them
+   so the mode reads as "map only", Google-style. The you-dot stays lit. */
+#map-canvas.picking .stop-pin, #map-canvas.picking .stop-dot,
+#map-canvas.picking .hub-pin, #map-canvas.picking .cluster-blob,
+#map-canvas.picking .fav-pin { opacity: 0.45; }
+
 /* Light theme / light basemap: the chips row follows the APP theme (it sits
    above the map in normal flow); the in-map overlays (locate, hint pills)
    follow the BASEMAP so they read against the tiles. Without these, dark
@@ -1019,7 +1059,7 @@ body { font-size: 1rem; }
   box-shadow: 0 4px 16px rgba(0,0,0,0.4);
 }
 .map-info-bar .mib-main { flex: 1; min-width: 0; }
-.map-info-bar .mib-name { font-weight: 700; font-size: 0.875rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.map-info-bar .mib-name { font-weight: 700; font-size: 0.875rem; overflow: hidden; } /* wrap handled per-span (M-8) */
 .map-info-bar .mib-sub { font-size: 0.75rem; color: var(--text-muted, #9a9a9a); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .map-info-bar .mib-btn {
   background: var(--mango, #ffb454); color: #1a1206; border: none; border-radius: 8px;

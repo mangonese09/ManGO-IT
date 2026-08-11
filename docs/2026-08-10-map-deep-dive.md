@@ -1,6 +1,12 @@
 # Map tab deep dive — 2026-08-10 (v1.9.0 live)
 
-**STATUS: FINDINGS AWAITING USER PICKS — nothing implemented.**
+**STATUS: ALL TEN FINDINGS SHIPPED in v1.10.0 (2026-08-10, user: "Do these
+all").** Verified: 167/167 unit (incl. new outOfCoverage tests), 25-check
+measured Playwright harness (scratch verify-map.js) local AND live,
+session-update.js 5 sessions (SW precache changed), session-core 16/16 on
+prod. Server got `outOfCoverage` (Malta bbox filter in transitStopsInRadius);
+the itinerary info bar walks past MOTIS's "START"/"END" junk endpoint names
+and reuses romeTime. Findings below kept for the record.
 
 Method: full read of `js/mapview.js` (1,271 lines) + `js/city-labels.js`, then a
 measured Playwright tour of the LIVE site at 390×844 — 20 screenshots across

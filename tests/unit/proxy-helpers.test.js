@@ -389,3 +389,17 @@ test('decodePolyline decodes the classic Google example (precision 5)', () => {
   assert.deepStrictEqual(pts[1], [40.7, -120.95]);
   assert.deepStrictEqual(pts[2], [43.252, -126.453]);
 });
+
+test('outOfCoverage excludes Malta but keeps the Pelagie islands and the strait (M-2)', () => {
+  const { outOfCoverage } = require('../../server/proxy.js');
+  // Malta: airport (the real pin that leaked onto the map) + Valletta
+  assert.strictEqual(outOfCoverage(35.857, 14.478), true);
+  assert.strictEqual(outOfCoverage(35.899, 14.514), true);
+  // Sicilian islands FURTHER SOUTH than Malta stay in coverage
+  assert.strictEqual(outOfCoverage(35.50, 12.60), false);  // Lampedusa
+  assert.strictEqual(outOfCoverage(35.86, 12.87), false);  // Linosa
+  assert.strictEqual(outOfCoverage(36.83, 11.95), false);  // Pantelleria
+  // core coverage
+  assert.strictEqual(outOfCoverage(38.11, 13.36), false);  // Palermo
+  assert.strictEqual(outOfCoverage(38.22, 15.55), false);  // Villa S. Giovanni (strait)
+});

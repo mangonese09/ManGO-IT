@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <!-- M-3: centre-on-me crosshair in the mango house style (ring + ticks in
+       the mango radial gradient, teal centre dot matching the leaf accent) -->
+  <defs>
+    <radialGradient id="lcg" cx="38%" cy="32%" r="75%">
+      <stop offset="0%" stop-color="#f8c820"/>
+      <stop offset="55%" stop-color="#f0a500"/>
+      <stop offset="100%" stop-color="#c97f00"/>
+    </radialGradient>
+  </defs>
+  <circle cx="20" cy="20" r="11" fill="none" stroke="url(#lcg)" stroke-width="3.5"/>
+  <g stroke="url(#lcg)" stroke-width="3.5" stroke-linecap="round">
+    <line x1="20" y1="2.5" x2="20" y2="7"/>
+    <line x1="20" y1="33" x2="20" y2="37.5"/>
+    <line x1="2.5" y1="20" x2="7" y2="20"/>
+    <line x1="33" y1="20" x2="37.5" y2="20"/>
+  </g>
+  <circle cx="20" cy="20" r="4.5" fill="#3dd6ac"/>
+</svg>

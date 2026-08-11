@@ -6,13 +6,14 @@
 // If it can't load (first visit offline), the old nearest-stops list renders.
 
 import { api } from './api.js';
-import { el, modeIcon, openSheet, closeSheet, LENS_SVG } from './ui.js';
+import { el, modeIcon, openSheet, closeSheet, LENS_SVG, placeIcon, placeIconKey } from './ui.js';
 import { getLastPos } from './board.js';
+import { romeTime } from './time.js';
 import { displayName, cleanRouteName } from './names.js';
 import { openStopSchedule, openHubBoard } from './saved.js';
-import { isFavStop, addFavStop, removeFavStop, getFavStops } from './store.js';
+import { isFavStop, addFavStop, removeFavStop, getFavStops, getPlacesSorted, getRecents } from './store.js';
 import { toast } from './toast.js';
-import { classifySuggestion, suggestStar, placeStar, rankSuggestions } from './search.js';
+import { classifySuggestion, suggestStar, placeStar, rankSuggestions, recentDestinations } from './search.js';
 import { getPref, setPref } from './store.js';
 
 // Favourite key — same scheme as Home/Saved: transit stops key by id, coach
@@ -28,6 +29,30 @@ function favKey(o) {
 // the old [37.55,14.27] z8 clipped Messina and left half the frame open sea).
 const SICILY_BOUNDS = [[36.62, 12.35], [38.35, 15.75]];
 const NEAR_ZOOM = 16;
+
+// M-1: never strand the user on a blank world — pan/zoom clamp to the coverage
+// area (Sicily + Pelagie/Pantelleria + the strait and southern Calabria).
+// Itinerary traces may legitimately leave it (VT rail reaches the mainland):
+// showItineraryOnMap lifts the clamp, clearHighlight restores it.
+const CLAMP_BOUNDS = [[35.2, 11.6], [39.0, 16.4]];
+const MIN_ZOOM = 7;
+let clampLifted = false;
+function liftClamp() {
+  if (!map || clampLifted) return;
+  clampLifted = true;
+  map.setMaxBounds(null);
+  map.setMinZoom(3);
+}
+function restoreClamp() {
+  if (!map || !clampLifted) return;
+  clampLifted = false;
+  map.setMinZoom(MIN_ZOOM);
+  // a cleared mainland trace flies home first, so the clamp never yanks
+  if (!window.L.latLngBounds(CLAMP_BOUNDS).contains(map.getCenter())) {
+    map.fitBounds(SICILY_BOUNDS, { padding: [12, 12] });
+  }
+  map.setMaxBounds(CLAMP_BOUNDS);
+}
 
 let map = null;
 let tileLayer = null;
@@ -129,14 +154,38 @@ function loadLeaflet() {
   return leafletPromise;
 }
 
+// One coords shape for dot + halo + heading (M-4): heading arrives null on
+// most desktops — normalized to NaN so isFinite gates the wedge.
+function slimFix(p) {
+  return { lat: p.coords.latitude, lon: p.coords.longitude,
+    acc: p.coords.accuracy, heading: p.coords.heading == null ? NaN : p.coords.heading };
+}
 function locateHere() {
   return new Promise((resolve, reject) => {
     if (!navigator.geolocation) return reject(new Error('no geolocation'));
     navigator.geolocation.getCurrentPosition(
-      (p) => resolve({ lat: p.coords.latitude, lon: p.coords.longitude }),
+      (p) => resolve(slimFix(p)),
       reject, { timeout: 10000, maximumAge: 60000 },
     );
   });
+}
+
+// M-4: follow the fix while the Map tab is open (Google/Apple/Transit keep the
+// you-dot moving). Starts only when permission is ALREADY granted — never
+// prompts; stops when the tab is left or the app is backgrounded.
+let youWatchId = null;
+function startYouWatch() {
+  if (youWatchId != null || !navigator.geolocation || !navigator.permissions) return;
+  navigator.permissions.query({ name: 'geolocation' }).then((st) => {
+    if (st.state !== 'granted' || youWatchId != null) return;
+    youWatchId = navigator.geolocation.watchPosition(
+      (p) => showYou(slimFix(p)),
+      () => {}, { maximumAge: 5000, timeout: 20000 },
+    );
+  }).catch(() => { /* permissions API unavailable — no follow */ });
+}
+function stopYouWatch() {
+  if (youWatchId != null) { navigator.geolocation.clearWatch(youWatchId); youWatchId = null; }
 }
 
 function modeImgSrc(mode) {
@@ -227,14 +276,32 @@ function clusterIcon(count, kind) {
   });
 }
 
+// M-4: dot + accuracy halo + heading wedge (halo only when it means something
+// — a <25m fix would draw smaller than the dot itself).
+let youHalo = null;
 function showYou(pos) {
   if (!map || !pos) return;
   const L = window.L;
-  if (youMarker) youMarker.setLatLng([pos.lat, pos.lon]);
+  const ll = [pos.lat, pos.lon];
+  if (youMarker) youMarker.setLatLng(ll);
   else {
-    youMarker = L.circleMarker([pos.lat, pos.lon], {
-      radius: 8, color: '#fff', weight: 2, fillColor: '#3f8cff', fillOpacity: 1,
+    youMarker = L.marker(ll, {
+      icon: L.divIcon({ className: 'you-wrap', html: '<span class="you-heading"></span><span class="you-dot"></span>', iconSize: [18, 18], iconAnchor: [9, 9] }),
+      keyboard: false, interactive: false, zIndexOffset: 1400,
     }).addTo(map);
+  }
+  const acc = isFinite(pos.acc) ? Math.min(pos.acc, 2000) : null;
+  if (acc != null && acc > 25) {
+    if (youHalo) { youHalo.setLatLng(ll); youHalo.setRadius(acc); }
+    else {
+      youHalo = L.circle(ll, { radius: acc, color: '#3f8cff', weight: 1, opacity: 0.35,
+        fillColor: '#3f8cff', fillOpacity: 0.12, interactive: false }).addTo(map);
+    }
+  } else if (youHalo) { youHalo.remove(); youHalo = null; }
+  const hEl = youMarker.getElement() && youMarker.getElement().querySelector('.you-heading');
+  if (hEl) {
+    if (isFinite(pos.heading)) { hEl.style.display = 'block'; hEl.style.transform = `rotate(${Math.round(pos.heading)}deg)`; }
+    else hEl.style.display = 'none';
   }
 }
 
@@ -528,6 +595,9 @@ let suppressClearOnce = false; // tapping a line opens its sheet without droppin
 function clearHighlight() {
   if (suppressClearOnce) { suppressClearOnce = false; return; }
   highlightActive = false;
+  restoreClamp();
+  updateHint();
+  const hadLayer = !!highlightLayer; // a trace was actually cleared
   if (highlightLayer) { highlightLayer.remove(); highlightLayer = null; }
   const cv = document.getElementById('map-canvas');
   if (cv) cv.classList.remove('has-highlight');
@@ -536,6 +606,9 @@ function clearHighlight() {
     if (e) e.classList.remove('lit', 'origin');
   }
   if (infoBar) { infoBar.remove(); infoBar = null; }
+  // a cross-tab trace (Show on map) lands on a viewport that never loaded
+  // pins (loads pause under a highlight) — refill it once the trace clears
+  if (hadLayer) loadVisibleStops();
 }
 
 // Tapping a stop:
@@ -640,6 +713,7 @@ function traceRoute(meta, routes, idx) {
   const rt = routes[idx];
   const color = routeColor(rt.mode, idx);
   highlightActive = true;
+  updateHint();
   highlightLayer = L.layerGroup().addTo(map);
   const line = (rt.path && rt.path.length >= 2) ? rt.path : rt.stops.map((s) => [s.lat, s.lon]);
   // Visible line first (non-interactive), fat transparent casing ON TOP as the
@@ -706,11 +780,12 @@ function trimPath(path, a, b) {
   const seg = path.slice(i, j + 1);
   return seg.length >= 2 ? seg : path;
 }
-export async function showItineraryOnMap(it) {
+export async function showItineraryOnMap(it, onBack) {
   if (!(await mapTabReady())) { toast('Map unavailable right now', 'warn'); return; }
   const L = window.L;
   clearHighlight();
   highlightActive = true;
+  updateHint();
   highlightLayer = L.layerGroup().addTo(map);
   const bounds = [];
   let colorIdx = 0;
@@ -751,7 +826,44 @@ export async function showItineraryOnMap(it) {
   }
   document.getElementById('map-canvas').classList.add('has-highlight');
   const b = L.latLngBounds(bounds);
-  if (b.isValid()) map.flyToBounds(b.pad(0.12), { duration: 0.9 });
+  if (b.isValid()) {
+    // a mainland-reaching trace must escape the coverage clamp
+    if (!L.latLngBounds(CLAMP_BOUNDS).contains(b)) liftClamp();
+    map.flyToBounds(b.pad(0.12), { duration: 0.9 });
+  }
+  showItineraryInfoBar(it, onBack);
+}
+
+// M-5: the itinerary trace used to draw with NO chrome — no summary, no ✕, no
+// way back to the trip but the undiscoverable background tap. Same info-bar
+// pattern as a coach route trace.
+function showItineraryInfoBar(it, onBack) {
+  const holder = document.getElementById('map-canvas');
+  if (infoBar) infoBar.remove();
+  const legs = it.legs || [];
+  // MOTIS names coordinate endpoints "START"/"END" — walk inward past the
+  // junk to the nearest real stop/place name on each side
+  const junk = /^(start|end|origin|destination)$/i;
+  const named = (list, side) => {
+    for (const l of list) {
+      const n = l && l[side] && l[side].name;
+      if (n && !junk.test(n)) return n;
+    }
+    return null;
+  };
+  const fromName = displayName(named(legs, 'from') || 'Start');
+  const toName = displayName(named([...legs].reverse(), 'to') || 'Destination');
+  const times = it.startTime && it.endTime ? `${romeTime(it.startTime)} → ${romeTime(it.endTime)}` : 'Your trip';
+  infoBar = el('div', { class: 'map-info-bar' }, [
+    el('div', { class: 'mib-main' }, [
+      el('div', { class: 'mib-name' }, [el('span', { class: 'lg-text', text: `${fromName} → ${toName}` })]),
+      el('div', { class: 'mib-sub', text: times }),
+    ]),
+    onBack ? el('button', { class: 'mib-btn', text: 'Trip', onclick: () => { clearHighlight(); onBack(); } }) : null,
+    el('button', { class: 'mib-x', 'aria-label': 'Clear', text: '✕', onclick: clearHighlight }),
+  ]);
+  window.L.DomEvent.disableClickPropagation(infoBar);
+  holder.appendChild(infoBar);
 }
 
 // v1.6.0: fly to ONE point of interest (a ticket seller near a boarding
@@ -762,6 +874,7 @@ export async function showPointOnMap(pt) {
   const L = window.L;
   clearHighlight();
   highlightActive = true;
+  updateHint();
   highlightLayer = L.layerGroup().addTo(map);
   const m = L.marker([pt.lat, pt.lon], {
     icon: L.divIcon({
@@ -999,7 +1112,10 @@ function addLocateControl() {
       const btn = L.DomUtil.create('button', 'map-locate-btn');
       btn.type = 'button';
       btn.setAttribute('aria-label', 'Center on my location');
-      btn.innerHTML = '<img src="/icons/place-pin.png" alt="">';
+      // M-3: crosshair, not the place-pin — a pin glyph means "a dropped
+      // location" (it IS the pick pin + POI pin); centre-on-me is a crosshair
+      // in every mainstream map. Explicit size attrs per the v0.35.1 lesson.
+      btn.innerHTML = '<img src="/icons/locate-mango.svg" alt="" width="24" height="24">';
       L.DomEvent.disableClickPropagation(btn);
       L.DomEvent.on(btn, 'click', async () => {
         try {
@@ -1063,7 +1179,10 @@ function initDoubleTapDragZoom() {
 
 async function initMap(pos) {
   const L = window.L;
-  map = L.map('map-canvas', { zoomControl: false, attributionControl: true });
+  map = L.map('map-canvas', {
+    zoomControl: false, attributionControl: true,
+    minZoom: MIN_ZOOM, maxBounds: CLAMP_BOUNDS, maxBoundsViscosity: 0.9,
+  });
   addLocateControl();
   initDoubleTapDragZoom();
   // Zoom sits top-right under the locate button — the bottom edge belongs to the
@@ -1092,6 +1211,15 @@ async function initMap(pos) {
   document.getElementById('map-canvas').appendChild(hintEl);
   updateHint();
   map.on('zoomend', updateHint);
+  // M-4 follow lifecycle: watch runs only while the Map tab is front-most
+  startYouWatch();
+  document.querySelectorAll('.nav-btn').forEach((b) => b.addEventListener('click', () => {
+    if (b.id === 'nav-map') startYouWatch(); else stopYouWatch();
+  }));
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) stopYouWatch();
+    else if (document.getElementById('map-canvas') && document.getElementById('map-canvas').offsetParent) startYouWatch();
+  });
   loadVisibleStops();
   // Own place labels below z13 (density + stability the raster tiles can't give).
   // Hub pins register as label obstacles (item 8): a city label must offset
@@ -1108,6 +1236,9 @@ async function initMap(pos) {
 
 function updateHint() {
   if (!hintEl || hintDismissed || !map) return;
+  // M-5: a hint about tapping stops is noise over an active trace
+  hintEl.style.display = highlightActive ? 'none' : '';
+  if (highlightActive) return;
   hintEl.textContent = map.getZoom() < CLUSTER_ZOOM
     ? 'Zoom in to see stops'
     : 'Tap a stop for departures & routes';
@@ -1160,13 +1291,46 @@ function openMapSearch() {
     autocomplete: 'off', autocapitalize: 'off', spellcheck: 'false',
   });
   const body = el('div', { class: 'map-search-body' }, [input, results]);
+  // M-7: the sheet used to open BLANK — lead with the places the user actually
+  // goes (Home's field-focus pattern): saved places, then recent destinations.
+  // Tapping a row recentres the map there.
+  const goTo = (lat, lon) => {
+    closeSheet();
+    clearHighlight();
+    map.setView([lat, lon], Math.max(map.getZoom(), NEAR_ZOOM));
+    loadVisibleStops();
+  };
+  const renderQuick = () => {
+    results.innerHTML = '';
+    const places = getPlacesSorted().filter((p) => isFinite(p.lat) && isFinite(p.lon));
+    for (const p of places.slice(0, 5)) {
+      results.appendChild(el('button', {
+        class: 'suggest-row map-search-row', onclick: () => goTo(p.lat, p.lon),
+      }, [
+        el('span', { class: 'suggest-icon' }, [placeIcon(placeIconKey(p))]),
+        el('span', { class: 'suggest-name', text: p.label || displayName(p.name) }),
+        el('span', { class: 'suggest-area', text: p.home ? 'Home' : 'saved place' }),
+      ]));
+    }
+    for (const d of recentDestinations(getRecents(), places)) {
+      if (!isFinite(d.lat) || !isFinite(d.lon)) continue;
+      results.appendChild(el('button', {
+        class: 'suggest-row map-search-row', onclick: () => goTo(d.lat, d.lon),
+      }, [
+        el('span', { class: 'suggest-icon' }, [el('span', { class: 'mode-emoji', text: '🕘' })]),
+        el('span', { class: 'suggest-name', text: displayName(d.name) }),
+        el('span', { class: 'suggest-area', text: 'recent' }),
+      ]));
+    }
+  };
+  renderQuick();
   openSheet(body, { title: 'Find a place' });
   setTimeout(() => input.focus(), 60);
   let timer = null;
   input.addEventListener('input', () => {
     clearTimeout(timer);
     const q = input.value.trim();
-    if (q.length < 2) { results.innerHTML = ''; return; }
+    if (q.length < 2) { renderQuick(); return; }
     timer = setTimeout(async () => {
       const seq = ++mapSearchSeq;
       try {
@@ -1217,6 +1381,7 @@ export async function renderMapTab() {
     ensureTiles();
     const pos = getLastPos();
     if (pos) showYou(pos);
+    startYouWatch();
     return;
   }
 
