@@ -44,14 +44,25 @@ function liftClamp() {
   map.setMinZoom(3);
 }
 function restoreClamp() {
-  if (!map || !clampLifted) return;
+  if (!map || !clampLifted) return false;
   clampLifted = false;
-  map.setMinZoom(MIN_ZOOM);
-  // a cleared mainland trace flies home first, so the clamp never yanks
+  // A cleared mainland trace flies home first. Restoring min-zoom/max-bounds
+  // while the camera is still out there stacks three fights: setMinZoom snaps
+  // the zoom, fitBounds from a far-away centre teleports instead of animating,
+  // and setMaxBounds immediately pans-inside and cancels whatever animation is
+  // running. Fly home smoothly and put the fences back only once it lands.
   if (!window.L.latLngBounds(CLAMP_BOUNDS).contains(map.getCenter())) {
-    map.fitBounds(SICILY_BOUNDS, { padding: [12, 12] });
+    map.once('moveend', () => {
+      if (!map || clampLifted) return; // a new trace re-lifted it mid-flight
+      map.setMinZoom(MIN_ZOOM);
+      map.setMaxBounds(CLAMP_BOUNDS);
+    });
+    map.flyToBounds(SICILY_BOUNDS, { padding: [12, 12], duration: 1.1 });
+    return true; // homing flight launched — moveend refreshes the pins
   }
+  map.setMinZoom(MIN_ZOOM);
   map.setMaxBounds(CLAMP_BOUNDS);
+  return false;
 }
 
 let map = null;
@@ -595,7 +606,7 @@ let suppressClearOnce = false; // tapping a line opens its sheet without droppin
 function clearHighlight() {
   if (suppressClearOnce) { suppressClearOnce = false; return; }
   highlightActive = false;
-  restoreClamp();
+  const flyingHome = restoreClamp();
   updateHint();
   const hadLayer = !!highlightLayer; // a trace was actually cleared
   if (highlightLayer) { highlightLayer.remove(); highlightLayer = null; }
@@ -607,8 +618,10 @@ function clearHighlight() {
   }
   if (infoBar) { infoBar.remove(); infoBar = null; }
   // a cross-tab trace (Show on map) lands on a viewport that never loaded
-  // pins (loads pause under a highlight) — refill it once the trace clears
-  if (hadLayer) loadVisibleStops();
+  // pins (loads pause under a highlight) — refill it once the trace clears.
+  // Not while flying home from the mainland: churning markers mid-animation
+  // drops frames, and the landing's moveend reloads the right viewport anyway.
+  if (hadLayer && !flyingHome) loadVisibleStops();
 }
 
 // Tapping a stop:
@@ -746,7 +759,12 @@ function traceRoute(meta, routes, idx) {
   }
   // Smooth animated zoom to the route's extent (flyTo, not a hard fitBounds).
   const b = L.latLngBounds(rt.stops.map((s) => [s.lat, s.lon]));
-  if (b.isValid()) map.flyToBounds(b.pad(0.14), { maxZoom: 13, duration: 0.9 });
+  if (b.isValid()) {
+    // a mainland-reaching train run must escape the coverage clamp like an
+    // itinerary trace — else maxBounds yanks the camera back as it lands
+    if (!L.latLngBounds(CLAMP_BOUNDS).contains(b)) liftClamp();
+    map.flyToBounds(b.pad(0.14), { maxZoom: 13, duration: 0.9 });
+  }
   showRouteInfoBar(meta, routes, idx, color);
 }
 
@@ -1087,8 +1105,14 @@ function ensureTiles() {
   if (tileLayer) tileLayer.remove();
   if (tileLabelsLayer) tileLabelsLayer.remove();
   tileTheme = theme;
+  // updateWhenZooming:false — during a flyTo the default refetches/redraws
+  // tiles at every intermediate zoom level, which is most of the "choppy zoom"
+  // cost; deferring the refresh to the landing keeps the flight one smooth
+  // scale. keepBuffer widens the retained ring so the zoom-out reveals cached
+  // tiles instead of bg-colour gaps.
   tileLayer = window.L.tileLayer(TILE_URL[theme], {
     attribution: TILE_ATTR, maxZoom: 19, subdomains: 'abcd',
+    updateWhenZooming: false, keepBuffer: 4,
   }).addTo(map);
   // Carto's label tiles (text on transparent) ride ABOVE the marker pane
   // (600), like our own city labels — a pin must never hide a place name at
@@ -1101,6 +1125,7 @@ function ensureTiles() {
   }
   tileLabelsLayer = window.L.tileLayer(TILE_LABELS_URL[theme], {
     maxZoom: 19, minZoom: 13, subdomains: 'abcd', pane: 'tile-labels',
+    updateWhenZooming: false, keepBuffer: 4,
   }).addTo(map);
 }
 

@@ -797,9 +797,9 @@ body { font-size: 1rem; }
   margin: 6px 0 8px;
 }
 /* Carto dark_all is too murky raw — lift it while keeping the dark look.
-   The container bg matches so unloaded tile edges don't flash black. */
+   The container bg matches so unloaded tile edges don't flash black.
+   (The lift itself lives in the pane-level filter rule further down.) */
 #map-canvas.tiles-dark { background: #2a2e37; }
-#map-canvas.tiles-dark .leaflet-tile { filter: brightness(1.6) contrast(0.92) saturate(0.95); }
 #map-canvas.tiles-light { background: #f6f3ef; } /* voyager land tone */
 .map-chip {
   display: inline-flex; align-items: center; gap: 4px;
@@ -1022,11 +1022,16 @@ body { font-size: 1rem; }
 /* Dark basemap is near-black and hard to read — lift it to a legible dark grey
    (roads + labels emerge). Scoped to the DARK BASEMAP (.tiles-dark), not the
    app theme: theme-scoping blew out the light basemap to pure white when the
-   app ran dark with Map style = Light. Stacks with the .leaflet-tile rule
-   above — the combined lift is the look that was visually tuned. */
+   app ran dark with Map style = Light.
+   One filter pass per PANE, never per tile: a per-.leaflet-tile filter meant
+   ~40 filtered layers re-rasterizing through every frame of a zoom flight —
+   half the "choppy zoom" cost. The list below is the old per-tile lift
+   composed with the old pane lift (brightness/contrast/saturate are affine,
+   so element-then-pane equals this exact sequence) — the visually tuned look
+   is unchanged, pixel-diff-verified. */
 #map-canvas.tiles-dark .leaflet-tile-pane,
 #map-canvas.tiles-dark .leaflet-tile-labels-pane {
-  filter: brightness(1.6) contrast(0.86) saturate(0.9);
+  filter: brightness(1.6) contrast(0.92) saturate(0.95) brightness(1.6) contrast(0.86) saturate(0.9);
 }
 
 /* Route highlight (click a stop): its routes draw as coloured lines, the stops
