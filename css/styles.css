@@ -332,7 +332,10 @@ body.sheet-open { overflow: hidden; }
   position: fixed; bottom: 0; left: 0; right: 0; z-index: 40;
   display: flex; justify-content: space-around;
   background: var(--bg-surface, #1e1e1e);
-  padding: 8px 0 calc(8px + env(safe-area-inset-bottom));
+  /* No bottom padding here — it moves inside .nav-btn so the whole visible
+     bar is tappable. As container padding it left a dead strip along the
+     bottom edge on a phone with a home indicator. */
+  padding: 0;
   border-top: 1px solid rgba(255,255,255,0.06);
   transition: transform 0.2s ease;
 }
@@ -340,7 +343,11 @@ body.sheet-open { overflow: hidden; }
    off-screen so it doesn't float above the keyboard over the suggestions. */
 body.kb-open .bottom-nav { transform: translateY(100%); }
 .nav-btn {
-  background: none; border: none; padding: 6px 18px;
+  background: none; border: none;
+  flex: 1;
+  padding: 14px 18px calc(8px + env(safe-area-inset-bottom));
+  min-height: calc(48px + env(safe-area-inset-bottom));
+  display: flex; align-items: center; justify-content: center;
   color: var(--text-muted, #b9b9b9); transition: color 0.15s;
   position: relative;
 }
