@@ -1,0 +1,461 @@
+{
+ "operator": "SAIS Autolinee",
+ "route_id": "sais-178",
+ "name": "Gangi - Enna",
+ "short_name": "178",
+ "coords": "external",
+ "source": "api.saisautolinee.it line 1c850eda-fd21-4c89-ad3d-98d1fc9d72f2",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "GANGI (Via Nazionale 114)",
+    "SPERLINGA (Via Roma 34)",
+    "VILLADORO (Piazza Carlo Alberto)",
+    "CACCHIAMO (SP32)",
+    "VILLAPRIOLO (Via della Regione 28)",
+    "VILLAROSA (SP6 (C.da Giurfo))",
+    "VILLAROSA (SP6 (C.da Gargiulla))",
+    "VILLAROSA (Corso Garibaldi 277)",
+    "VILLAROSA (Corso Garibaldi 135)",
+    "VILLAROSA (SS121 (Madonna della Catena))",
+    "VILLAROSA (SS121 (Oleificio Madem))",
+    "VILLAROSA STAZIONE (SS121 (Bivio))",
+    "ENNA (SS121 (c.da Mancadarso))",
+    "ENNA (SS121 (Bivio Kamuth))",
+    "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+    "ENNA BASSA (Viale delle Olimpiadi(incr.Via S.Mazza))",
+    "ENNA BASSA (Viale delle Olimpiadi(incr.Via Ingrà))",
+    "ENNA (Terminal Bus Viale Diaz 80)"
+   ],
+   "trips": [
+    {
+     "corsa": "2549",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "70 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-15",
+       "2026-09-16",
+       "2026-09-17",
+       "2026-09-18",
+       "2026-09-21",
+       "2026-09-22",
+       "2026-09-23",
+       "2026-09-24",
+       "2026-09-25",
+       "2026-09-28",
+       "2026-09-29",
+       "2026-09-30",
+       "2026-10-01",
+       "2026-10-02",
+       "2026-10-05",
+       "2026-10-06",
+       "2026-10-07",
+       "2026-10-08",
+       "2026-10-09",
+       "2026-10-12",
+       "2026-10-13",
+       "2026-10-14",
+       "2026-10-15",
+       "2026-10-16",
+       "2026-10-19",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-23",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-30",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-06",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-13",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-20",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-21",
+       "2026-12-22"
+      ]
+     },
+     "reverse": false,
+     "variant": "Gangi-V.rosa-En 2",
+     "stops": [
+      {
+       "stop": "GANGI (Via Nazionale 114)",
+       "idx": 0,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "SPERLINGA (Via Roma 34)",
+       "idx": 1,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "VILLADORO (Piazza Carlo Alberto)",
+       "idx": 2,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "CACCHIAMO (SP32)",
+       "idx": 3,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "VILLAPRIOLO (Via della Regione 28)",
+       "idx": 4,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "VILLAROSA (SP6 (C.da Giurfo))",
+       "idx": 5,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "VILLAROSA (SP6 (C.da Gargiulla))",
+       "idx": 6,
+       "arr": "7.18",
+       "dep": "7.18"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 277)",
+       "idx": 7,
+       "arr": "7.22",
+       "dep": "7.22"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 135)",
+       "idx": 8,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Madonna della Catena))",
+       "idx": 9,
+       "arr": "7.27",
+       "dep": "7.27"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Oleificio Madem))",
+       "idx": 10,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "VILLAROSA STAZIONE (SS121 (Bivio))",
+       "idx": 11,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "ENNA (SS121 (c.da Mancadarso))",
+       "idx": 12,
+       "arr": "7.37",
+       "dep": "7.37"
+      },
+      {
+       "stop": "ENNA (SS121 (Bivio Kamuth))",
+       "idx": 13,
+       "arr": "7.39",
+       "dep": "7.39"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 14,
+       "arr": "7.47",
+       "dep": "7.47"
+      },
+      {
+       "stop": "ENNA BASSA (Viale delle Olimpiadi(incr.Via S.Mazza))",
+       "idx": 15,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "ENNA BASSA (Viale delle Olimpiadi(incr.Via Ingrà))",
+       "idx": 16,
+       "arr": "7.51",
+       "dep": "7.51"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 17,
+       "arr": "8.00",
+       "dep": "8.00"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "ENNA (Terminal Bus Viale Diaz 80)",
+    "ENNA (Via S.Agata 82)",
+    "ENNA (Via Pergusa 210 (ex Vigorelli))",
+    "ENNA BASSA (Viale delle Olimpiadi(incr.Via S.Mazza))",
+    "ENNA BASSA (Viale delle Olimpiadi(incr.Via Ingrà))",
+    "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+    "ENNA (SS121 (Bivio Kamuth))",
+    "ENNA (SS121 (c.da Mancadarso))",
+    "VILLAROSA STAZIONE (SS121 (Bivio))",
+    "VILLAROSA (SS121 (Oleificio Madem))",
+    "VILLAROSA (SS121 (Madonna della Catena))",
+    "VILLAROSA (Corso Garibaldi 134)",
+    "VILLAROSA (Corso Garibaldi 300)",
+    "VILLAROSA (SP6 (C.da Gargiulla))",
+    "VILLAROSA (SP6 (C.da Giurfo))",
+    "VILLAPRIOLO (Via della Regione 25)",
+    "CACCHIAMO (SP32)",
+    "VILLADORO (Piazza Carlo Alberto)",
+    "SPERLINGA (Via Roma 34)",
+    "GANGI (Via Nazionale 114)"
+   ],
+   "trips": [
+    {
+     "corsa": "2550",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "70 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-15",
+       "2026-09-16",
+       "2026-09-17",
+       "2026-09-18",
+       "2026-09-21",
+       "2026-09-22",
+       "2026-09-23",
+       "2026-09-24",
+       "2026-09-25",
+       "2026-09-28",
+       "2026-09-29",
+       "2026-09-30",
+       "2026-10-01",
+       "2026-10-02",
+       "2026-10-05",
+       "2026-10-06",
+       "2026-10-07",
+       "2026-10-08",
+       "2026-10-09",
+       "2026-10-12",
+       "2026-10-13",
+       "2026-10-14",
+       "2026-10-15",
+       "2026-10-16",
+       "2026-10-19",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-23",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-30",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-06",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-13",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-20",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-21",
+       "2026-12-22"
+      ]
+     },
+     "reverse": true,
+     "variant": "En-V.rosa-Gangi",
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 0,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "ENNA (Via S.Agata 82)",
+       "idx": 1,
+       "arr": "14.11",
+       "dep": "14.11"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
+       "idx": 2,
+       "arr": "14.13",
+       "dep": "14.13"
+      },
+      {
+       "stop": "ENNA BASSA (Viale delle Olimpiadi(incr.Via S.Mazza))",
+       "idx": 3,
+       "arr": "14.18",
+       "dep": "14.18"
+      },
+      {
+       "stop": "ENNA BASSA (Viale delle Olimpiadi(incr.Via Ingrà))",
+       "idx": 4,
+       "arr": "14.19",
+       "dep": "14.19"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 5,
+       "arr": "14.23",
+       "dep": "14.23"
+      },
+      {
+       "stop": "ENNA (SS121 (Bivio Kamuth))",
+       "idx": 6,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "ENNA (SS121 (c.da Mancadarso))",
+       "idx": 7,
+       "arr": "14.34",
+       "dep": "14.34"
+      },
+      {
+       "stop": "VILLAROSA STAZIONE (SS121 (Bivio))",
+       "idx": 8,
+       "arr": "14.37",
+       "dep": "14.37"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Oleificio Madem))",
+       "idx": 9,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Madonna della Catena))",
+       "idx": 10,
+       "arr": "14.43",
+       "dep": "14.43"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 134)",
+       "idx": 11,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 300)",
+       "idx": 12,
+       "arr": "14.48",
+       "dep": "14.48"
+      },
+      {
+       "stop": "VILLAROSA (SP6 (C.da Gargiulla))",
+       "idx": 13,
+       "arr": "14.52",
+       "dep": "14.52"
+      },
+      {
+       "stop": "VILLAROSA (SP6 (C.da Giurfo))",
+       "idx": 14,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "VILLAPRIOLO (Via della Regione 25)",
+       "idx": 15,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "CACCHIAMO (SP32)",
+       "idx": 16,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "VILLADORO (Piazza Carlo Alberto)",
+       "idx": 17,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "SPERLINGA (Via Roma 34)",
+       "idx": 18,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "GANGI (Via Nazionale 114)",
+       "idx": 19,
+       "arr": "16.10",
+       "dep": "16.10"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

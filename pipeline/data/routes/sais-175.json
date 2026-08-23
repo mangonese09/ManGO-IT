@@ -1,174 +1,210 @@
 {
  "operator": "SAIS Autolinee",
- "route_id": "sais-174",
- "name": "Caltagirone - P. Armerina - Enna - dir.Aidone - dev. Valguarnera",
- "short_name": "174",
+ "route_id": "sais-175",
+ "name": "Alimena - Villarosa - Enna - A19 - Catania",
+ "short_name": "175",
  "coords": "external",
- "source": "api.saisautolinee.it line bafba53f-376b-4512-88ec-7d81494c4650",
+ "source": "api.saisautolinee.it line b92042a9-359b-43ba-aa7e-0d3d1f48d607",
  "prescriptions": [],
  "directions": [
   {
    "stops": [
-    "VALGUARNERA (Via L.Sturzo(Scuola Mazzini))",
-    "ENNA (SP4 (Floristella))",
-    "ENNA (SP4 (Bivio Grottacalda))",
-    "PERGUSA (Viale dei Miti 56(incr.Via Nettuno))",
-    "PERGUSA (Viale dei Miti 27 (rifornimento))",
-    "ENNA BASSA (Via Pergusina (Ospedale))",
+    "VILLAROSA (Corso Garibaldi 135)",
+    "VILLAROSA (SS121 (Madonna della Catena))",
+    "VILLAROSA (SS121 (Oleificio Madem))",
+    "VILLAROSA STAZIONE (SS121 (Bivio))",
+    "ENNA (SS121 (c.da Mancadarso))",
+    "ENNA (SS121 (Bivio Kamuth))",
     "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+    "ENNA BASSA (Via Pergusina(incr.Via delle Acacie))",
+    "ENNA BASSA (Viale delle Olimpiadi(incr.Via S.Mazza))",
+    "ENNA BASSA (Viale delle Olimpiadi(incr.Via Ingrà))",
     "ENNA (Terminal Bus Viale Diaz 80)",
-    "AIDONE (Piazza Generale Cultreri)",
-    "PIAZZA ARMERINA (SS288 (Bivio Bellia))",
-    "ENNA (SS117bis (Parco Ronza))",
-    "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
-    "CALTAGIRONE (Viale Sicilia)",
-    "CALTAGIRONE (SP37ii (C.da Salvatorello))",
-    "CALTAGIRONE (SP37i (Bivio Tempio))",
-    "MIRABELLA IMBACCARI (Via G.Lupis(incr.Piazza A.Moro))",
-    "PIAZZA ARMERINA (SP16 (case Liuzzo))",
-    "ENNA (SS121 (incr.SS290))",
-    "ENNA (SP3)",
-    "ENNA (Stazione fs)",
-    "CALDERARI (SS192 (X SP62))",
-    "ENNA BASSA (Viale dell'Unità d'Italia(fronte 49))"
+    "ALIMENA (Piazza A.Diaz)",
+    "VILLAPRIOLO (Via della Regione 28)",
+    "VILLAROSA (SP6 (C.da Giurfo))",
+    "VILLAROSA (SP6 (C.da Gargiulla))",
+    "VILLAROSA (Corso Garibaldi 277)",
+    "ENNA (Corso Sicilia 2)",
+    "ENNA (Via S.Agata 82)",
+    "ENNA (Via Pergusa 210 (ex Vigorelli))",
+    "DITTAINO (Sicilia Outlet)",
+    "CATANIA (Via Fontanarossa(Aeroporto Militare))",
+    "CATANIAAEROPORTO (Terminal Bus.)",
+    "CATANIA (Via S.Giuseppe alla Rena 69)",
+    "CATANIA (Via Domenico Tempio (Fermata Tempio Est 1))",
+    "CATANIA (Piazza Martiri della Libertà)",
+    "CATANIA (Stazione - T.Bus Via Archimede)"
    ],
    "trips": [
     {
-     "corsa": "AGG-199",
+     "corsa": "2524",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "70 exact dates from Albatross validities",
+      "raw": "84 exact dates from Albatross validities",
       "explicit_dates": [
        "2026-09-15",
        "2026-09-16",
        "2026-09-17",
        "2026-09-18",
+       "2026-09-19",
        "2026-09-21",
        "2026-09-22",
        "2026-09-23",
        "2026-09-24",
        "2026-09-25",
+       "2026-09-26",
        "2026-09-28",
        "2026-09-29",
        "2026-09-30",
        "2026-10-01",
        "2026-10-02",
+       "2026-10-03",
        "2026-10-05",
        "2026-10-06",
        "2026-10-07",
        "2026-10-08",
        "2026-10-09",
+       "2026-10-10",
        "2026-10-12",
        "2026-10-13",
        "2026-10-14",
        "2026-10-15",
        "2026-10-16",
+       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
        "2026-10-22",
        "2026-10-23",
+       "2026-10-24",
        "2026-10-26",
        "2026-10-27",
        "2026-10-28",
        "2026-10-29",
        "2026-10-30",
+       "2026-10-31",
        "2026-11-02",
        "2026-11-03",
        "2026-11-04",
        "2026-11-05",
        "2026-11-06",
+       "2026-11-07",
        "2026-11-09",
        "2026-11-10",
        "2026-11-11",
        "2026-11-12",
        "2026-11-13",
+       "2026-11-14",
        "2026-11-16",
        "2026-11-17",
        "2026-11-18",
        "2026-11-19",
        "2026-11-20",
+       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
        "2026-11-26",
        "2026-11-27",
+       "2026-11-28",
        "2026-11-30",
        "2026-12-01",
        "2026-12-02",
        "2026-12-03",
        "2026-12-04",
+       "2026-12-05",
        "2026-12-07",
        "2026-12-09",
        "2026-12-10",
        "2026-12-11",
+       "2026-12-12",
        "2026-12-14",
        "2026-12-15",
        "2026-12-16",
        "2026-12-17",
        "2026-12-18",
+       "2026-12-19",
        "2026-12-21",
        "2026-12-22"
       ]
      },
      "reverse": false,
-     "variant": "Valg-Perg-En",
+     "variant": "AL-EN-CT_20",
      "stops": [
       {
-       "stop": "VALGUARNERA (Via L.Sturzo(Scuola Mazzini))",
+       "stop": "VILLAROSA (Corso Garibaldi 135)",
        "idx": 0,
-       "arr": "14.00",
-       "dep": "14.00"
+       "arr": "7.25",
+       "dep": "7.25"
       },
       {
-       "stop": "ENNA (SP4 (Floristella))",
+       "stop": "VILLAROSA (SS121 (Madonna della Catena))",
        "idx": 1,
-       "arr": "14.05",
-       "dep": "14.05"
+       "arr": "7.27",
+       "dep": "7.27"
       },
       {
-       "stop": "ENNA (SP4 (Bivio Grottacalda))",
+       "stop": "VILLAROSA (SS121 (Oleificio Madem))",
        "idx": 2,
-       "arr": "14.09",
-       "dep": "14.09"
+       "arr": "7.30",
+       "dep": "7.30"
       },
       {
-       "stop": "PERGUSA (Viale dei Miti 56(incr.Via Nettuno))",
+       "stop": "VILLAROSA STAZIONE (SS121 (Bivio))",
        "idx": 3,
-       "arr": "14.19",
-       "dep": "14.19"
+       "arr": "7.35",
+       "dep": "7.35"
       },
       {
-       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
+       "stop": "ENNA (SS121 (c.da Mancadarso))",
        "idx": 4,
-       "arr": "14.20",
-       "dep": "14.20"
+       "arr": "7.40",
+       "dep": "7.40"
       },
       {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "stop": "ENNA (SS121 (Bivio Kamuth))",
        "idx": 5,
-       "arr": "14.28",
-       "dep": "14.28"
+       "arr": "7.45",
+       "dep": "7.45"
       },
       {
        "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
        "idx": 6,
-       "arr": "14.30",
-       "dep": "14.30"
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina(incr.Via delle Acacie))",
+       "idx": 7,
+       "arr": "7.56",
+       "dep": "7.56"
+      },
+      {
+       "stop": "ENNA BASSA (Viale delle Olimpiadi(incr.Via S.Mazza))",
+       "idx": 8,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "ENNA BASSA (Viale delle Olimpiadi(incr.Via Ingrà))",
+       "idx": 9,
+       "arr": "8.01",
+       "dep": "8.01"
       },
       {
        "stop": "ENNA (Terminal Bus Viale Diaz 80)",
-       "idx": 7,
-       "arr": "14.40",
-       "dep": "14.40"
+       "idx": 10,
+       "arr": "8.10",
+       "dep": "8.10"
       }
      ],
      "valid": true
     },
     {
-     "corsa": "17405",
+     "corsa": "2531",
      "service": {
       "days": "explicit",
       "school": null,
@@ -248,85 +284,765 @@
       ]
      },
      "reverse": false,
-     "variant": "Valg-Perg-En",
+     "variant": "Alimena-En-Ct",
      "stops": [
       {
-       "stop": "VALGUARNERA (Via L.Sturzo(Scuola Mazzini))",
+       "stop": "ALIMENA (Piazza A.Diaz)",
+       "idx": 0,
+       "arr": "6.20",
+       "dep": "6.20"
+      },
+      {
+       "stop": "VILLAPRIOLO (Via della Regione 28)",
+       "idx": 1,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "VILLAROSA (SP6 (C.da Giurfo))",
+       "idx": 2,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "VILLAROSA (SP6 (C.da Gargiulla))",
+       "idx": 3,
+       "arr": "7.18",
+       "dep": "7.18"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 277)",
+       "idx": 4,
+       "arr": "7.22",
+       "dep": "7.22"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 135)",
+       "idx": 5,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Madonna della Catena))",
+       "idx": 6,
+       "arr": "7.27",
+       "dep": "7.27"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Oleificio Madem))",
+       "idx": 7,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "VILLAROSA STAZIONE (SS121 (Bivio))",
+       "idx": 8,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "ENNA (SS121 (c.da Mancadarso))",
+       "idx": 9,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "ENNA (SS121 (Bivio Kamuth))",
+       "idx": 10,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 11,
+       "arr": "7.49",
+       "dep": "7.49"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 12,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "ENNA (Via S.Agata 82)",
+       "idx": 13,
+       "arr": "8.01",
+       "dep": "8.01"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
+       "idx": 14,
+       "arr": "8.03",
+       "dep": "8.03"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 15,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "DITTAINO (Sicilia Outlet)",
+       "idx": 16,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "CATANIA (Via Fontanarossa(Aeroporto Militare))",
+       "idx": 17,
+       "arr": "9.17",
+       "dep": "9.17"
+      },
+      {
+       "stop": "CATANIAAEROPORTO (Terminal Bus.)",
+       "idx": 18,
+       "arr": "9.20",
+       "dep": "9.20"
+      },
+      {
+       "stop": "CATANIA (Via S.Giuseppe alla Rena 69)",
+       "idx": 19,
+       "arr": "9.21",
+       "dep": "9.21"
+      },
+      {
+       "stop": "CATANIA (Via Domenico Tempio (Fermata Tempio Est 1))",
+       "idx": 20,
+       "arr": "9.23",
+       "dep": "9.23"
+      },
+      {
+       "stop": "CATANIA (Piazza Martiri della Libertà)",
+       "idx": 21,
+       "arr": "9.25",
+       "dep": "9.25"
+      },
+      {
+       "stop": "CATANIA (Stazione - T.Bus Via Archimede)",
+       "idx": 22,
+       "arr": "9.30",
+       "dep": "9.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2533",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "84 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-15",
+       "2026-09-16",
+       "2026-09-17",
+       "2026-09-18",
+       "2026-09-19",
+       "2026-09-21",
+       "2026-09-22",
+       "2026-09-23",
+       "2026-09-24",
+       "2026-09-25",
+       "2026-09-26",
+       "2026-09-28",
+       "2026-09-29",
+       "2026-09-30",
+       "2026-10-01",
+       "2026-10-02",
+       "2026-10-03",
+       "2026-10-05",
+       "2026-10-06",
+       "2026-10-07",
+       "2026-10-08",
+       "2026-10-09",
+       "2026-10-10",
+       "2026-10-12",
+       "2026-10-13",
+       "2026-10-14",
+       "2026-10-15",
+       "2026-10-16",
+       "2026-10-17",
+       "2026-10-19",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-23",
+       "2026-10-24",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-30",
+       "2026-10-31",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-06",
+       "2026-11-07",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-13",
+       "2026-11-14",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-20",
+       "2026-11-21",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-28",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-05",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-12",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-19",
+       "2026-12-21",
+       "2026-12-22"
+      ]
+     },
+     "reverse": false,
+     "variant": "V.priolo-En-Ct",
+     "stops": [
+      {
+       "stop": "VILLAPRIOLO (Via della Regione 28)",
+       "idx": 0,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "VILLAROSA (SP6 (C.da Giurfo))",
+       "idx": 1,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "VILLAROSA (SP6 (C.da Gargiulla))",
+       "idx": 2,
+       "arr": "13.23",
+       "dep": "13.23"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 277)",
+       "idx": 3,
+       "arr": "13.27",
+       "dep": "13.27"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 135)",
+       "idx": 4,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Madonna della Catena))",
+       "idx": 5,
+       "arr": "13.32",
+       "dep": "13.32"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Oleificio Madem))",
+       "idx": 6,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "VILLAROSA STAZIONE (SS121 (Bivio))",
+       "idx": 7,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "ENNA (SS121 (c.da Mancadarso))",
+       "idx": 8,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "ENNA (SS121 (Bivio Kamuth))",
+       "idx": 9,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 10,
+       "arr": "13.54",
+       "dep": "13.54"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 11,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "ENNA (Via S.Agata 82)",
+       "idx": 12,
+       "arr": "14.16",
+       "dep": "14.16"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
+       "idx": 13,
+       "arr": "14.18",
+       "dep": "14.18"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 14,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "DITTAINO (Sicilia Outlet)",
+       "idx": 15,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "CATANIA (Via Fontanarossa(Aeroporto Militare))",
+       "idx": 16,
+       "arr": "15.32",
+       "dep": "15.32"
+      },
+      {
+       "stop": "CATANIAAEROPORTO (Terminal Bus.)",
+       "idx": 17,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "CATANIA (Via S.Giuseppe alla Rena 69)",
+       "idx": 18,
+       "arr": "15.36",
+       "dep": "15.36"
+      },
+      {
+       "stop": "CATANIA (Via Domenico Tempio (Fermata Tempio Est 1))",
+       "idx": 19,
+       "arr": "15.38",
+       "dep": "15.38"
+      },
+      {
+       "stop": "CATANIA (Piazza Martiri della Libertà)",
+       "idx": 20,
+       "arr": "15.40",
+       "dep": "15.40"
+      },
+      {
+       "stop": "CATANIA (Stazione - T.Bus Via Archimede)",
+       "idx": 21,
+       "arr": "15.45",
+       "dep": "15.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "60113",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "84 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-15",
+       "2026-09-16",
+       "2026-09-17",
+       "2026-09-18",
+       "2026-09-19",
+       "2026-09-21",
+       "2026-09-22",
+       "2026-09-23",
+       "2026-09-24",
+       "2026-09-25",
+       "2026-09-26",
+       "2026-09-28",
+       "2026-09-29",
+       "2026-09-30",
+       "2026-10-01",
+       "2026-10-02",
+       "2026-10-03",
+       "2026-10-05",
+       "2026-10-06",
+       "2026-10-07",
+       "2026-10-08",
+       "2026-10-09",
+       "2026-10-10",
+       "2026-10-12",
+       "2026-10-13",
+       "2026-10-14",
+       "2026-10-15",
+       "2026-10-16",
+       "2026-10-17",
+       "2026-10-19",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-23",
+       "2026-10-24",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-30",
+       "2026-10-31",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-06",
+       "2026-11-07",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-13",
+       "2026-11-14",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-20",
+       "2026-11-21",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-28",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-05",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-12",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-19",
+       "2026-12-21",
+       "2026-12-22"
+      ]
+     },
+     "reverse": false,
+     "variant": "AL-EN-CT_5",
+     "stops": [
+      {
+       "stop": "VILLAPRIOLO (Via della Regione 28)",
+       "idx": 0,
+       "arr": "8.50",
+       "dep": "8.50"
+      },
+      {
+       "stop": "VILLAROSA (SP6 (C.da Giurfo))",
+       "idx": 1,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "VILLAROSA (SP6 (C.da Gargiulla))",
+       "idx": 2,
+       "arr": "8.58",
+       "dep": "8.58"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 277)",
+       "idx": 3,
+       "arr": "9.02",
+       "dep": "9.02"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 135)",
+       "idx": 4,
+       "arr": "9.05",
+       "dep": "9.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2530",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "84 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-15",
+       "2026-09-16",
+       "2026-09-17",
+       "2026-09-18",
+       "2026-09-19",
+       "2026-09-21",
+       "2026-09-22",
+       "2026-09-23",
+       "2026-09-24",
+       "2026-09-25",
+       "2026-09-26",
+       "2026-09-28",
+       "2026-09-29",
+       "2026-09-30",
+       "2026-10-01",
+       "2026-10-02",
+       "2026-10-03",
+       "2026-10-05",
+       "2026-10-06",
+       "2026-10-07",
+       "2026-10-08",
+       "2026-10-09",
+       "2026-10-10",
+       "2026-10-12",
+       "2026-10-13",
+       "2026-10-14",
+       "2026-10-15",
+       "2026-10-16",
+       "2026-10-17",
+       "2026-10-19",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-23",
+       "2026-10-24",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-30",
+       "2026-10-31",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-06",
+       "2026-11-07",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-13",
+       "2026-11-14",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-20",
+       "2026-11-21",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-28",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-05",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-12",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-19",
+       "2026-12-21",
+       "2026-12-22"
+      ]
+     },
+     "reverse": false,
+     "variant": "AL-EN-CT_5",
+     "stops": [
+      {
+       "stop": "VILLAPRIOLO (Via della Regione 28)",
        "idx": 0,
        "arr": "7.10",
        "dep": "7.10"
       },
       {
-       "stop": "ENNA (SP4 (Floristella))",
+       "stop": "VILLAROSA (SP6 (C.da Giurfo))",
        "idx": 1,
        "arr": "7.15",
        "dep": "7.15"
       },
       {
-       "stop": "ENNA (SP4 (Bivio Grottacalda))",
+       "stop": "VILLAROSA (SP6 (C.da Gargiulla))",
        "idx": 2,
-       "arr": "7.19",
-       "dep": "7.19"
+       "arr": "7.18",
+       "dep": "7.18"
       },
       {
-       "stop": "PERGUSA (Viale dei Miti 56(incr.Via Nettuno))",
+       "stop": "VILLAROSA (Corso Garibaldi 277)",
        "idx": 3,
-       "arr": "7.29",
-       "dep": "7.29"
+       "arr": "7.22",
+       "dep": "7.22"
       },
       {
-       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
+       "stop": "VILLAROSA (Corso Garibaldi 135)",
        "idx": 4,
-       "arr": "7.30",
-       "dep": "7.30"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 5,
-       "arr": "7.38",
-       "dep": "7.38"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 6,
-       "arr": "7.40",
-       "dep": "7.40"
-      },
-      {
-       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
-       "idx": 7,
-       "arr": "7.50",
-       "dep": "7.50"
+       "arr": "7.25",
+       "dep": "7.25"
       }
      ],
      "valid": true
     },
     {
-     "corsa": "AGGIUNTA 6",
+     "corsa": "60130",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "102 exact dates (merged templates)",
+      "raw": "70 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-08-24",
-       "2026-08-25",
-       "2026-08-26",
-       "2026-08-27",
-       "2026-08-28",
-       "2026-08-29",
-       "2026-08-31",
-       "2026-09-01",
-       "2026-09-02",
-       "2026-09-03",
-       "2026-09-04",
-       "2026-09-05",
-       "2026-09-07",
-       "2026-09-08",
-       "2026-09-09",
-       "2026-09-10",
-       "2026-09-11",
-       "2026-09-12",
+       "2026-09-15",
+       "2026-09-16",
+       "2026-09-17",
+       "2026-09-18",
+       "2026-09-21",
+       "2026-09-22",
+       "2026-09-23",
+       "2026-09-24",
+       "2026-09-25",
+       "2026-09-28",
+       "2026-09-29",
+       "2026-09-30",
+       "2026-10-01",
+       "2026-10-02",
+       "2026-10-05",
+       "2026-10-06",
+       "2026-10-07",
+       "2026-10-08",
+       "2026-10-09",
+       "2026-10-12",
+       "2026-10-13",
+       "2026-10-14",
+       "2026-10-15",
+       "2026-10-16",
+       "2026-10-19",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-23",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-30",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-06",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-13",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-20",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-21",
+       "2026-12-22"
+      ]
+     },
+     "reverse": false,
+     "variant": "AL-EN-CT_5",
+     "stops": [
+      {
+       "stop": "VILLAPRIOLO (Via della Regione 28)",
+       "idx": 0,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "VILLAROSA (SP6 (C.da Giurfo))",
+       "idx": 1,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "VILLAROSA (SP6 (C.da Gargiulla))",
+       "idx": 2,
+       "arr": "15.08",
+       "dep": "15.08"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 277)",
+       "idx": 3,
+       "arr": "15.12",
+       "dep": "15.12"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 135)",
+       "idx": 4,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "60041",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "84 exact dates from Albatross validities",
+      "explicit_dates": [
        "2026-09-15",
        "2026-09-16",
        "2026-09-17",
@@ -414,516 +1130,191 @@
       ]
      },
      "reverse": false,
-     "variant": "Aid-Valg-Perg-En 2",
+     "variant": "AL-EN-CT_5",
      "stops": [
       {
-       "stop": "AIDONE (Piazza Generale Cultreri)",
+       "stop": "VILLAPRIOLO (Via della Regione 28)",
        "idx": 0,
-       "arr": "6.40",
-       "dep": "6.40"
+       "arr": "20.15",
+       "dep": "20.15"
       },
       {
-       "stop": "PIAZZA ARMERINA (SS288 (Bivio Bellia))",
+       "stop": "VILLAROSA (SP6 (C.da Giurfo))",
        "idx": 1,
-       "arr": "6.50",
-       "dep": "6.50"
+       "arr": "20.20",
+       "dep": "20.20"
       },
       {
-       "stop": "ENNA (SS117bis (Parco Ronza))",
+       "stop": "VILLAROSA (SP6 (C.da Gargiulla))",
        "idx": 2,
-       "arr": "6.55",
-       "dep": "6.55"
+       "arr": "20.23",
+       "dep": "20.23"
       },
       {
-       "stop": "ENNA (SP4 (Floristella))",
+       "stop": "VILLAROSA (Corso Garibaldi 277)",
        "idx": 3,
-       "arr": "7.00",
-       "dep": "7.00"
+       "arr": "20.27",
+       "dep": "20.27"
       },
       {
-       "stop": "VALGUARNERA (Via L.Sturzo(Scuola Mazzini))",
+       "stop": "VILLAROSA (Corso Garibaldi 135)",
        "idx": 4,
-       "arr": "7.05",
-       "dep": "7.05"
-      },
-      {
-       "stop": "ENNA (SP4 (Floristella))",
-       "idx": 5,
-       "arr": "7.09",
-       "dep": "7.09"
-      },
-      {
-       "stop": "ENNA (SP4 (Bivio Grottacalda))",
-       "idx": 6,
-       "arr": "7.13",
-       "dep": "7.13"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti 56(incr.Via Nettuno))",
-       "idx": 7,
-       "arr": "7.23",
-       "dep": "7.23"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
-       "idx": 8,
-       "arr": "7.24",
-       "dep": "7.24"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 9,
-       "arr": "7.32",
-       "dep": "7.32"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 10,
-       "arr": "7.35",
-       "dep": "7.35"
-      },
-      {
-       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
-       "idx": 11,
-       "arr": "7.45",
-       "dep": "7.45"
+       "arr": "20.30",
+       "dep": "20.30"
       }
      ],
      "valid": true
     },
     {
-     "corsa": "AGGIUNTA 7",
+     "corsa": "60124",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "18 exact dates from Albatross validities",
-      "explicit_dates": [
-       "2026-08-24",
-       "2026-08-25",
-       "2026-08-26",
-       "2026-08-27",
-       "2026-08-28",
-       "2026-08-29",
-       "2026-08-31",
-       "2026-09-01",
-       "2026-09-02",
-       "2026-09-03",
-       "2026-09-04",
-       "2026-09-05",
-       "2026-09-07",
-       "2026-09-08",
-       "2026-09-09",
-       "2026-09-10",
-       "2026-09-11",
-       "2026-09-12"
-      ]
-     },
-     "reverse": false,
-     "variant": "P.Arm-Valg-Perg-En 2",
-     "stops": [
-      {
-       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
-       "idx": 0,
-       "arr": "7.40",
-       "dep": "7.40"
-      },
-      {
-       "stop": "ENNA (SS117bis (Parco Ronza))",
-       "idx": 1,
-       "arr": "7.46",
-       "dep": "7.46"
-      },
-      {
-       "stop": "ENNA (SP4 (Floristella))",
-       "idx": 2,
-       "arr": "7.53",
-       "dep": "7.53"
-      },
-      {
-       "stop": "VALGUARNERA (Via L.Sturzo(Scuola Mazzini))",
-       "idx": 3,
-       "arr": "8.00",
-       "dep": "8.00"
-      },
-      {
-       "stop": "ENNA (SP4 (Floristella))",
-       "idx": 4,
-       "arr": "8.06",
-       "dep": "8.06"
-      },
-      {
-       "stop": "ENNA (SP4 (Bivio Grottacalda))",
-       "idx": 5,
-       "arr": "8.10",
-       "dep": "8.10"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti 56(incr.Via Nettuno))",
-       "idx": 6,
-       "arr": "8.20",
-       "dep": "8.20"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
-       "idx": 7,
-       "arr": "8.21",
-       "dep": "8.21"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 8,
-       "arr": "8.28",
-       "dep": "8.28"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 9,
-       "arr": "8.30",
-       "dep": "8.30"
-      },
-      {
-       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
-       "idx": 10,
-       "arr": "8.40",
-       "dep": "8.40"
-      }
-     ],
-     "valid": true
-    },
-    {
-     "corsa": "2504",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "85 exact dates (merged templates)",
-      "explicit_dates": [
-       "2026-08-24",
-       "2026-08-25",
-       "2026-08-26",
-       "2026-08-27",
-       "2026-08-28",
-       "2026-08-31",
-       "2026-09-01",
-       "2026-09-02",
-       "2026-09-03",
-       "2026-09-04",
-       "2026-09-07",
-       "2026-09-08",
-       "2026-09-09",
-       "2026-09-10",
-       "2026-09-11",
-       "2026-09-15",
-       "2026-09-16",
-       "2026-09-17",
-       "2026-09-18",
-       "2026-09-21",
-       "2026-09-22",
-       "2026-09-23",
-       "2026-09-24",
-       "2026-09-25",
-       "2026-09-28",
-       "2026-09-29",
-       "2026-09-30",
-       "2026-10-01",
-       "2026-10-02",
-       "2026-10-05",
-       "2026-10-06",
-       "2026-10-07",
-       "2026-10-08",
-       "2026-10-09",
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-19",
-       "2026-10-20",
-       "2026-10-21",
-       "2026-10-22",
-       "2026-10-23",
-       "2026-10-26",
-       "2026-10-27",
-       "2026-10-28",
-       "2026-10-29",
-       "2026-10-30",
-       "2026-11-02",
-       "2026-11-03",
-       "2026-11-04",
-       "2026-11-05",
-       "2026-11-06",
-       "2026-11-09",
-       "2026-11-10",
-       "2026-11-11",
-       "2026-11-12",
-       "2026-11-13",
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-23",
-       "2026-11-24",
-       "2026-11-25",
-       "2026-11-26",
-       "2026-11-27",
-       "2026-11-30",
-       "2026-12-01",
-       "2026-12-02",
-       "2026-12-03",
-       "2026-12-04",
-       "2026-12-07",
-       "2026-12-09",
-       "2026-12-10",
-       "2026-12-11",
-       "2026-12-14",
-       "2026-12-15",
-       "2026-12-16",
-       "2026-12-17",
-       "2026-12-18",
-       "2026-12-21",
-       "2026-12-22"
-      ]
-     },
-     "reverse": false,
-     "variant": "C.gir-En-FS",
-     "stops": [
-      {
-       "stop": "CALTAGIRONE (Viale Sicilia)",
-       "idx": 0,
-       "arr": "6.15",
-       "dep": "6.15"
-      },
-      {
-       "stop": "CALTAGIRONE (SP37ii (C.da Salvatorello))",
-       "idx": 1,
-       "arr": "6.23",
-       "dep": "6.23"
-      },
-      {
-       "stop": "CALTAGIRONE (SP37i (Bivio Tempio))",
-       "idx": 2,
-       "arr": "6.30",
-       "dep": "6.30"
-      },
-      {
-       "stop": "MIRABELLA IMBACCARI (Via G.Lupis(incr.Piazza A.Moro))",
-       "idx": 3,
-       "arr": "6.40",
-       "dep": "6.40"
-      },
-      {
-       "stop": "PIAZZA ARMERINA (SP16 (case Liuzzo))",
-       "idx": 4,
-       "arr": "6.58",
-       "dep": "6.58"
-      },
-      {
-       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
-       "idx": 5,
-       "arr": "7.05",
-       "dep": "7.05"
-      },
-      {
-       "stop": "ENNA (SS117bis (Parco Ronza))",
-       "idx": 6,
-       "arr": "7.11",
-       "dep": "7.11"
-      },
-      {
-       "stop": "ENNA (SP4 (Bivio Grottacalda))",
-       "idx": 7,
-       "arr": "7.14",
-       "dep": "7.14"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti 56(incr.Via Nettuno))",
-       "idx": 8,
-       "arr": "7.24",
-       "dep": "7.24"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
-       "idx": 9,
-       "arr": "7.25",
-       "dep": "7.25"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 10,
-       "arr": "7.33",
-       "dep": "7.33"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 11,
-       "arr": "7.35",
-       "dep": "7.35"
-      },
-      {
-       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
-       "idx": 12,
-       "arr": "7.45",
-       "dep": "7.45"
-      },
-      {
-       "stop": "ENNA (SS121 (incr.SS290))",
-       "idx": 13,
-       "arr": "7.56",
-       "dep": "7.56"
-      },
-      {
-       "stop": "ENNA (SP3)",
-       "idx": 14,
-       "arr": "7.59",
-       "dep": "7.59"
-      },
-      {
-       "stop": "ENNA (Stazione fs)",
-       "idx": 15,
-       "arr": "8.00",
-       "dep": "8.00"
-      }
-     ],
-     "valid": true
-    },
-    {
-     "corsa": "2506",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "70 exact dates from Albatross validities",
+      "raw": "84 exact dates from Albatross validities",
       "explicit_dates": [
        "2026-09-15",
        "2026-09-16",
        "2026-09-17",
        "2026-09-18",
+       "2026-09-19",
        "2026-09-21",
        "2026-09-22",
        "2026-09-23",
        "2026-09-24",
        "2026-09-25",
+       "2026-09-26",
        "2026-09-28",
        "2026-09-29",
        "2026-09-30",
        "2026-10-01",
        "2026-10-02",
+       "2026-10-03",
        "2026-10-05",
        "2026-10-06",
        "2026-10-07",
        "2026-10-08",
        "2026-10-09",
+       "2026-10-10",
        "2026-10-12",
        "2026-10-13",
        "2026-10-14",
        "2026-10-15",
        "2026-10-16",
+       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
        "2026-10-22",
        "2026-10-23",
+       "2026-10-24",
        "2026-10-26",
        "2026-10-27",
        "2026-10-28",
        "2026-10-29",
        "2026-10-30",
+       "2026-10-31",
        "2026-11-02",
        "2026-11-03",
        "2026-11-04",
        "2026-11-05",
        "2026-11-06",
+       "2026-11-07",
        "2026-11-09",
        "2026-11-10",
        "2026-11-11",
        "2026-11-12",
        "2026-11-13",
+       "2026-11-14",
        "2026-11-16",
        "2026-11-17",
        "2026-11-18",
        "2026-11-19",
        "2026-11-20",
+       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
        "2026-11-26",
        "2026-11-27",
+       "2026-11-28",
        "2026-11-30",
        "2026-12-01",
        "2026-12-02",
        "2026-12-03",
        "2026-12-04",
+       "2026-12-05",
        "2026-12-07",
        "2026-12-09",
        "2026-12-10",
        "2026-12-11",
+       "2026-12-12",
        "2026-12-14",
        "2026-12-15",
        "2026-12-16",
        "2026-12-17",
        "2026-12-18",
+       "2026-12-19",
        "2026-12-21",
        "2026-12-22"
       ]
      },
      "reverse": false,
-     "variant": "P.Arm-En Dir",
+     "variant": "V.rosa-En",
      "stops": [
       {
-       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
+       "stop": "VILLAROSA (Corso Garibaldi 135)",
        "idx": 0,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Madonna della Catena))",
+       "idx": 1,
+       "arr": "9.07",
+       "dep": "9.07"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Oleificio Madem))",
+       "idx": 2,
+       "arr": "9.10",
+       "dep": "9.10"
+      },
+      {
+       "stop": "VILLAROSA STAZIONE (SS121 (Bivio))",
+       "idx": 3,
+       "arr": "9.15",
+       "dep": "9.15"
+      },
+      {
+       "stop": "ENNA (SS121 (c.da Mancadarso))",
+       "idx": 4,
        "arr": "9.20",
        "dep": "9.20"
       },
       {
-       "stop": "ENNA (SS117bis (Parco Ronza))",
-       "idx": 1,
-       "arr": "9.26",
-       "dep": "9.26"
+       "stop": "ENNA (SS121 (Bivio Kamuth))",
+       "idx": 5,
+       "arr": "9.25",
+       "dep": "9.25"
       },
       {
-       "stop": "ENNA (SP4 (Bivio Grottacalda))",
-       "idx": 2,
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 6,
        "arr": "9.29",
        "dep": "9.29"
       },
       {
-       "stop": "PERGUSA (Viale dei Miti 56(incr.Via Nettuno))",
-       "idx": 3,
-       "arr": "9.39",
-       "dep": "9.39"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
-       "idx": 4,
-       "arr": "9.40",
-       "dep": "9.40"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 5,
-       "arr": "9.48",
-       "dep": "9.48"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 6,
-       "arr": "9.50",
-       "dep": "9.50"
-      },
-      {
        "stop": "ENNA (Terminal Bus Viale Diaz 80)",
        "idx": 7,
-       "arr": "10.00",
-       "dep": "10.00"
+       "arr": "9.30",
+       "dep": "9.30"
       }
      ],
      "valid": true
     },
     {
-     "corsa": "2505",
+     "corsa": "2528",
      "service": {
       "days": "explicit",
       "school": null,
@@ -1017,339 +1408,61 @@
       ]
      },
      "reverse": false,
-     "variant": "P.Arm-En Dir",
+     "variant": "V.rosa-En",
      "stops": [
       {
-       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
+       "stop": "VILLAROSA (Corso Garibaldi 135)",
        "idx": 0,
-       "arr": "8.20",
-       "dep": "8.20"
+       "arr": "20.30",
+       "dep": "20.30"
       },
       {
-       "stop": "ENNA (SS117bis (Parco Ronza))",
+       "stop": "VILLAROSA (SS121 (Madonna della Catena))",
        "idx": 1,
-       "arr": "8.26",
-       "dep": "8.26"
+       "arr": "20.32",
+       "dep": "20.32"
       },
       {
-       "stop": "ENNA (SP4 (Bivio Grottacalda))",
+       "stop": "VILLAROSA (SS121 (Oleificio Madem))",
        "idx": 2,
-       "arr": "8.29",
-       "dep": "8.29"
+       "arr": "20.35",
+       "dep": "20.35"
       },
       {
-       "stop": "PERGUSA (Viale dei Miti 56(incr.Via Nettuno))",
+       "stop": "VILLAROSA STAZIONE (SS121 (Bivio))",
        "idx": 3,
-       "arr": "8.39",
-       "dep": "8.39"
+       "arr": "20.40",
+       "dep": "20.40"
       },
       {
-       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
+       "stop": "ENNA (SS121 (c.da Mancadarso))",
        "idx": 4,
-       "arr": "8.40",
-       "dep": "8.40"
+       "arr": "20.45",
+       "dep": "20.45"
       },
       {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "stop": "ENNA (SS121 (Bivio Kamuth))",
        "idx": 5,
-       "arr": "8.48",
-       "dep": "8.48"
+       "arr": "20.50",
+       "dep": "20.50"
       },
       {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "stop": "ENNA (Corso Sicilia 2)",
        "idx": 6,
-       "arr": "8.50",
-       "dep": "8.50"
+       "arr": "20.54",
+       "dep": "20.54"
       },
       {
        "stop": "ENNA (Terminal Bus Viale Diaz 80)",
        "idx": 7,
-       "arr": "9.00",
-       "dep": "9.00"
+       "arr": "20.55",
+       "dep": "20.55"
       }
      ],
      "valid": true
     },
     {
-     "corsa": "2507",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "84 exact dates from Albatross validities",
-      "explicit_dates": [
-       "2026-09-15",
-       "2026-09-16",
-       "2026-09-17",
-       "2026-09-18",
-       "2026-09-19",
-       "2026-09-21",
-       "2026-09-22",
-       "2026-09-23",
-       "2026-09-24",
-       "2026-09-25",
-       "2026-09-26",
-       "2026-09-28",
-       "2026-09-29",
-       "2026-09-30",
-       "2026-10-01",
-       "2026-10-02",
-       "2026-10-03",
-       "2026-10-05",
-       "2026-10-06",
-       "2026-10-07",
-       "2026-10-08",
-       "2026-10-09",
-       "2026-10-10",
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
-       "2026-10-19",
-       "2026-10-20",
-       "2026-10-21",
-       "2026-10-22",
-       "2026-10-23",
-       "2026-10-24",
-       "2026-10-26",
-       "2026-10-27",
-       "2026-10-28",
-       "2026-10-29",
-       "2026-10-30",
-       "2026-10-31",
-       "2026-11-02",
-       "2026-11-03",
-       "2026-11-04",
-       "2026-11-05",
-       "2026-11-06",
-       "2026-11-07",
-       "2026-11-09",
-       "2026-11-10",
-       "2026-11-11",
-       "2026-11-12",
-       "2026-11-13",
-       "2026-11-14",
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
-       "2026-11-23",
-       "2026-11-24",
-       "2026-11-25",
-       "2026-11-26",
-       "2026-11-27",
-       "2026-11-28",
-       "2026-11-30",
-       "2026-12-01",
-       "2026-12-02",
-       "2026-12-03",
-       "2026-12-04",
-       "2026-12-05",
-       "2026-12-07",
-       "2026-12-09",
-       "2026-12-10",
-       "2026-12-11",
-       "2026-12-12",
-       "2026-12-14",
-       "2026-12-15",
-       "2026-12-16",
-       "2026-12-17",
-       "2026-12-18",
-       "2026-12-19",
-       "2026-12-21",
-       "2026-12-22"
-      ]
-     },
-     "reverse": false,
-     "variant": "P.Arm-En Dir",
-     "stops": [
-      {
-       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
-       "idx": 0,
-       "arr": "14.10",
-       "dep": "14.10"
-      },
-      {
-       "stop": "ENNA (SS117bis (Parco Ronza))",
-       "idx": 1,
-       "arr": "14.16",
-       "dep": "14.16"
-      },
-      {
-       "stop": "ENNA (SP4 (Bivio Grottacalda))",
-       "idx": 2,
-       "arr": "14.19",
-       "dep": "14.19"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti 56(incr.Via Nettuno))",
-       "idx": 3,
-       "arr": "14.29",
-       "dep": "14.29"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
-       "idx": 4,
-       "arr": "14.30",
-       "dep": "14.30"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 5,
-       "arr": "14.38",
-       "dep": "14.38"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 6,
-       "arr": "14.40",
-       "dep": "14.40"
-      },
-      {
-       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
-       "idx": 7,
-       "arr": "14.50",
-       "dep": "14.50"
-      }
-     ],
-     "valid": true
-    },
-    {
-     "corsa": "2511",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "84 exact dates from Albatross validities",
-      "explicit_dates": [
-       "2026-09-15",
-       "2026-09-16",
-       "2026-09-17",
-       "2026-09-18",
-       "2026-09-19",
-       "2026-09-21",
-       "2026-09-22",
-       "2026-09-23",
-       "2026-09-24",
-       "2026-09-25",
-       "2026-09-26",
-       "2026-09-28",
-       "2026-09-29",
-       "2026-09-30",
-       "2026-10-01",
-       "2026-10-02",
-       "2026-10-03",
-       "2026-10-05",
-       "2026-10-06",
-       "2026-10-07",
-       "2026-10-08",
-       "2026-10-09",
-       "2026-10-10",
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
-       "2026-10-19",
-       "2026-10-20",
-       "2026-10-21",
-       "2026-10-22",
-       "2026-10-23",
-       "2026-10-24",
-       "2026-10-26",
-       "2026-10-27",
-       "2026-10-28",
-       "2026-10-29",
-       "2026-10-30",
-       "2026-10-31",
-       "2026-11-02",
-       "2026-11-03",
-       "2026-11-04",
-       "2026-11-05",
-       "2026-11-06",
-       "2026-11-07",
-       "2026-11-09",
-       "2026-11-10",
-       "2026-11-11",
-       "2026-11-12",
-       "2026-11-13",
-       "2026-11-14",
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
-       "2026-11-23",
-       "2026-11-24",
-       "2026-11-25",
-       "2026-11-26",
-       "2026-11-27",
-       "2026-11-28",
-       "2026-11-30",
-       "2026-12-01",
-       "2026-12-02",
-       "2026-12-03",
-       "2026-12-04",
-       "2026-12-05",
-       "2026-12-07",
-       "2026-12-09",
-       "2026-12-10",
-       "2026-12-11",
-       "2026-12-12",
-       "2026-12-14",
-       "2026-12-15",
-       "2026-12-16",
-       "2026-12-17",
-       "2026-12-18",
-       "2026-12-19",
-       "2026-12-21",
-       "2026-12-22"
-      ]
-     },
-     "reverse": false,
-     "variant": "Valg-Cald-En 1",
-     "stops": [
-      {
-       "stop": "VALGUARNERA (Via L.Sturzo(Scuola Mazzini))",
-       "idx": 0,
-       "arr": "7.10",
-       "dep": "7.10"
-      },
-      {
-       "stop": "CALDERARI (SS192 (X SP62))",
-       "idx": 1,
-       "arr": "7.25",
-       "dep": "7.25"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 2,
-       "arr": "7.40",
-       "dep": "7.40"
-      },
-      {
-       "stop": "ENNA BASSA (Viale dell'Unità d'Italia(fronte 49))",
-       "idx": 3,
-       "arr": "7.45",
-       "dep": "7.45"
-      },
-      {
-       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
-       "idx": 4,
-       "arr": "7.55",
-       "dep": "7.55"
-      }
-     ],
-     "valid": true
-    },
-    {
-     "corsa": "2508",
+     "corsa": "60131",
      "service": {
       "days": "explicit",
       "school": null,
@@ -1429,251 +1542,55 @@
       ]
      },
      "reverse": false,
-     "variant": "Aid-Valg-Perg-En 4",
+     "variant": "V.rosa-En",
      "stops": [
       {
-       "stop": "AIDONE (Piazza Generale Cultreri)",
+       "stop": "VILLAROSA (Corso Garibaldi 135)",
        "idx": 0,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Madonna della Catena))",
+       "idx": 1,
+       "arr": "15.17",
+       "dep": "15.17"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Oleificio Madem))",
+       "idx": 2,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "VILLAROSA STAZIONE (SS121 (Bivio))",
+       "idx": 3,
        "arr": "15.25",
        "dep": "15.25"
       },
       {
-       "stop": "PIAZZA ARMERINA (SS288 (Bivio Bellia))",
-       "idx": 1,
+       "stop": "ENNA (SS121 (c.da Mancadarso))",
+       "idx": 4,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "ENNA (SS121 (Bivio Kamuth))",
+       "idx": 5,
        "arr": "15.35",
        "dep": "15.35"
       },
       {
-       "stop": "ENNA (SS117bis (Parco Ronza))",
-       "idx": 2,
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 6,
+       "arr": "15.39",
+       "dep": "15.39"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 7,
        "arr": "15.40",
        "dep": "15.40"
-      },
-      {
-       "stop": "ENNA (SP4 (Floristella))",
-       "idx": 3,
-       "arr": "15.45",
-       "dep": "15.45"
-      },
-      {
-       "stop": "VALGUARNERA (Via L.Sturzo(Scuola Mazzini))",
-       "idx": 4,
-       "arr": "15.50",
-       "dep": "15.50"
-      },
-      {
-       "stop": "ENNA (SP4 (Floristella))",
-       "idx": 5,
-       "arr": "15.54",
-       "dep": "15.54"
-      },
-      {
-       "stop": "ENNA (SP4 (Bivio Grottacalda))",
-       "idx": 6,
-       "arr": "15.58",
-       "dep": "15.58"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti 56(incr.Via Nettuno))",
-       "idx": 7,
-       "arr": "16.08",
-       "dep": "16.08"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
-       "idx": 8,
-       "arr": "16.09",
-       "dep": "16.09"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 9,
-       "arr": "16.17",
-       "dep": "16.17"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 10,
-       "arr": "16.19",
-       "dep": "16.19"
-      },
-      {
-       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
-       "idx": 11,
-       "arr": "16.30",
-       "dep": "16.30"
-      }
-     ],
-     "valid": true
-    },
-    {
-     "corsa": "2512",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "84 exact dates from Albatross validities",
-      "explicit_dates": [
-       "2026-09-15",
-       "2026-09-16",
-       "2026-09-17",
-       "2026-09-18",
-       "2026-09-19",
-       "2026-09-21",
-       "2026-09-22",
-       "2026-09-23",
-       "2026-09-24",
-       "2026-09-25",
-       "2026-09-26",
-       "2026-09-28",
-       "2026-09-29",
-       "2026-09-30",
-       "2026-10-01",
-       "2026-10-02",
-       "2026-10-03",
-       "2026-10-05",
-       "2026-10-06",
-       "2026-10-07",
-       "2026-10-08",
-       "2026-10-09",
-       "2026-10-10",
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
-       "2026-10-19",
-       "2026-10-20",
-       "2026-10-21",
-       "2026-10-22",
-       "2026-10-23",
-       "2026-10-24",
-       "2026-10-26",
-       "2026-10-27",
-       "2026-10-28",
-       "2026-10-29",
-       "2026-10-30",
-       "2026-10-31",
-       "2026-11-02",
-       "2026-11-03",
-       "2026-11-04",
-       "2026-11-05",
-       "2026-11-06",
-       "2026-11-07",
-       "2026-11-09",
-       "2026-11-10",
-       "2026-11-11",
-       "2026-11-12",
-       "2026-11-13",
-       "2026-11-14",
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
-       "2026-11-23",
-       "2026-11-24",
-       "2026-11-25",
-       "2026-11-26",
-       "2026-11-27",
-       "2026-11-28",
-       "2026-11-30",
-       "2026-12-01",
-       "2026-12-02",
-       "2026-12-03",
-       "2026-12-04",
-       "2026-12-05",
-       "2026-12-07",
-       "2026-12-09",
-       "2026-12-10",
-       "2026-12-11",
-       "2026-12-12",
-       "2026-12-14",
-       "2026-12-15",
-       "2026-12-16",
-       "2026-12-17",
-       "2026-12-18",
-       "2026-12-19",
-       "2026-12-21",
-       "2026-12-22"
-      ]
-     },
-     "reverse": false,
-     "variant": "P.Arm-Valg-Perg-En 1",
-     "stops": [
-      {
-       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
-       "idx": 0,
-       "arr": "7.40",
-       "dep": "7.40"
-      },
-      {
-       "stop": "ENNA (SS117bis (Parco Ronza))",
-       "idx": 1,
-       "arr": "7.46",
-       "dep": "7.46"
-      },
-      {
-       "stop": "ENNA (SP4 (Floristella))",
-       "idx": 2,
-       "arr": "7.51",
-       "dep": "7.51"
-      },
-      {
-       "stop": "VALGUARNERA (Via L.Sturzo(Scuola Mazzini))",
-       "idx": 3,
-       "arr": "8.00",
-       "dep": "8.00"
-      },
-      {
-       "stop": "ENNA (SP4 (Floristella))",
-       "idx": 4,
-       "arr": "8.04",
-       "dep": "8.04"
-      },
-      {
-       "stop": "ENNA (SP4 (Bivio Grottacalda))",
-       "idx": 5,
-       "arr": "8.08",
-       "dep": "8.08"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti 56(incr.Via Nettuno))",
-       "idx": 6,
-       "arr": "8.18",
-       "dep": "8.18"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
-       "idx": 7,
-       "arr": "8.20",
-       "dep": "8.20"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 8,
-       "arr": "8.28",
-       "dep": "8.28"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 9,
-       "arr": "8.30",
-       "dep": "8.30"
-      },
-      {
-       "stop": "ENNA BASSA (Viale dell'Unità d'Italia(fronte 49))",
-       "idx": 10,
-       "arr": "8.35",
-       "dep": "8.35"
-      },
-      {
-       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
-       "idx": 11,
-       "arr": "8.40",
-       "dep": "8.40"
       }
      ],
      "valid": true
@@ -1683,636 +1600,33 @@
   {
    "stops": [
     "ENNA (Terminal Bus Viale Diaz 80)",
+    "ENNA (SS121 (Bivio Kamuth))",
+    "ENNA (SS121 (c.da Mancadarso))",
+    "VILLAROSA STAZIONE (SS121 (Bivio))",
+    "VILLAROSA (SS121 (Oleificio Madem))",
+    "VILLAROSA (SS121 (Madonna della Catena))",
+    "VILLAROSA (Corso Garibaldi 134)",
+    "VILLAROSA (Corso Garibaldi 300)",
+    "VILLAROSA (SP6 (C.da Gargiulla))",
+    "VILLAROSA (SP6 (C.da Giurfo))",
+    "VILLAPRIOLO (Via della Regione 25)",
     "ENNA (Via S.Agata 82)",
     "ENNA (Via Pergusa 210 (ex Vigorelli))",
-    "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-    "ENNA BASSA (Via Pergusina (Ospedale))",
-    "PERGUSA (Viale dei Miti 22)",
-    "PERGUSA (Viale dei Miti (incr.Via Apollo))",
-    "ENNA (SP4 (Bivio Grottacalda))",
-    "ENNA (SP4 (Floristella))",
-    "VALGUARNERA (Via L.Sturzo(Scuola Mazzini))",
-    "ENNA (SS117bis (Parco Ronza))",
-    "PIAZZA ARMERINA (SS288 (Bivio Bellia))",
-    "AIDONE (Piazza Generale Cultreri)",
-    "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
-    "ENNA (Stazione fs)",
-    "ENNA (SP3)",
-    "ENNA (SS121 (incr.SS290))",
-    "ENNA (Corso Sicilia 2)",
-    "PIAZZA ARMERINA (SP16 (case Liuzzo))",
-    "MIRABELLA IMBACCARI (Via G.Lupis(incr.Piazza A.Moro))",
-    "CALTAGIRONE (SP37i (Bivio Tempio))",
-    "CALTAGIRONE (SP37ii (C.da Salvatorello))",
-    "CALTAGIRONE (Viale Sicilia)",
-    "ENNA BASSA (Viale dell'Unità d'Italia 49)",
-    "CALDERARI (SS192 (X SP62))",
     "ENNA BASSA (Via Scifitello(incr.Via Veneto))",
     "ENNA BASSA (Viale delle Olimpiadi(incr.Via S.Mazza))",
-    "ENNA BASSA (Viale delle Olimpiadi(incr.Via Ingrà))"
+    "ENNA BASSA (Viale delle Olimpiadi(incr.Via Ingrà))",
+    "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+    "CATANIA (Stazione - T.Bus Via Archimede)",
+    "CATANIA (Piazza P.Borsellino)",
+    "CATANIA (Via Domenico Tempio 30)",
+    "CATANIA (Via S.Giuseppe alla Rena 86/b)",
+    "CATANIAAEROPORTO (Terminal Bus)",
+    "DITTAINO (Sicilia Outlet)",
+    "ALIMENA (Piazza A.Diaz)"
    ],
    "trips": [
     {
-     "corsa": "AGG-202",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "102 exact dates (merged templates)",
-      "explicit_dates": [
-       "2026-08-24",
-       "2026-08-25",
-       "2026-08-26",
-       "2026-08-27",
-       "2026-08-28",
-       "2026-08-29",
-       "2026-08-31",
-       "2026-09-01",
-       "2026-09-02",
-       "2026-09-03",
-       "2026-09-04",
-       "2026-09-05",
-       "2026-09-07",
-       "2026-09-08",
-       "2026-09-09",
-       "2026-09-10",
-       "2026-09-11",
-       "2026-09-12",
-       "2026-09-15",
-       "2026-09-16",
-       "2026-09-17",
-       "2026-09-18",
-       "2026-09-19",
-       "2026-09-21",
-       "2026-09-22",
-       "2026-09-23",
-       "2026-09-24",
-       "2026-09-25",
-       "2026-09-26",
-       "2026-09-28",
-       "2026-09-29",
-       "2026-09-30",
-       "2026-10-01",
-       "2026-10-02",
-       "2026-10-03",
-       "2026-10-05",
-       "2026-10-06",
-       "2026-10-07",
-       "2026-10-08",
-       "2026-10-09",
-       "2026-10-10",
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
-       "2026-10-19",
-       "2026-10-20",
-       "2026-10-21",
-       "2026-10-22",
-       "2026-10-23",
-       "2026-10-24",
-       "2026-10-26",
-       "2026-10-27",
-       "2026-10-28",
-       "2026-10-29",
-       "2026-10-30",
-       "2026-10-31",
-       "2026-11-02",
-       "2026-11-03",
-       "2026-11-04",
-       "2026-11-05",
-       "2026-11-06",
-       "2026-11-07",
-       "2026-11-09",
-       "2026-11-10",
-       "2026-11-11",
-       "2026-11-12",
-       "2026-11-13",
-       "2026-11-14",
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
-       "2026-11-23",
-       "2026-11-24",
-       "2026-11-25",
-       "2026-11-26",
-       "2026-11-27",
-       "2026-11-28",
-       "2026-11-30",
-       "2026-12-01",
-       "2026-12-02",
-       "2026-12-03",
-       "2026-12-04",
-       "2026-12-05",
-       "2026-12-07",
-       "2026-12-09",
-       "2026-12-10",
-       "2026-12-11",
-       "2026-12-12",
-       "2026-12-14",
-       "2026-12-15",
-       "2026-12-16",
-       "2026-12-17",
-       "2026-12-18",
-       "2026-12-19",
-       "2026-12-21",
-       "2026-12-22"
-      ]
-     },
-     "reverse": true,
-     "variant": "En-Perg-Valg-Aid",
-     "stops": [
-      {
-       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
-       "idx": 0,
-       "arr": "14.20",
-       "dep": "14.20"
-      },
-      {
-       "stop": "ENNA (Via S.Agata 82)",
-       "idx": 1,
-       "arr": "14.21",
-       "dep": "14.21"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
-       "idx": 2,
-       "arr": "14.23",
-       "dep": "14.23"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 3,
-       "arr": "14.30",
-       "dep": "14.30"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 4,
-       "arr": "14.33",
-       "dep": "14.33"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti 22)",
-       "idx": 5,
-       "arr": "14.40",
-       "dep": "14.40"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti (incr.Via Apollo))",
-       "idx": 6,
-       "arr": "14.41",
-       "dep": "14.41"
-      },
-      {
-       "stop": "ENNA (SP4 (Bivio Grottacalda))",
-       "idx": 7,
-       "arr": "14.51",
-       "dep": "14.51"
-      },
-      {
-       "stop": "ENNA (SP4 (Floristella))",
-       "idx": 8,
-       "arr": "14.55",
-       "dep": "14.55"
-      },
-      {
-       "stop": "VALGUARNERA (Via L.Sturzo(Scuola Mazzini))",
-       "idx": 9,
-       "arr": "15.00",
-       "dep": "15.00"
-      },
-      {
-       "stop": "ENNA (SP4 (Floristella))",
-       "idx": 10,
-       "arr": "15.05",
-       "dep": "15.05"
-      },
-      {
-       "stop": "ENNA (SS117bis (Parco Ronza))",
-       "idx": 11,
-       "arr": "15.10",
-       "dep": "15.10"
-      },
-      {
-       "stop": "PIAZZA ARMERINA (SS288 (Bivio Bellia))",
-       "idx": 12,
-       "arr": "15.20",
-       "dep": "15.20"
-      },
-      {
-       "stop": "AIDONE (Piazza Generale Cultreri)",
-       "idx": 13,
-       "arr": "15.25",
-       "dep": "15.25"
-      }
-     ],
-     "valid": true
-    },
-    {
-     "corsa": "AGG-201",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "88 exact dates (merged templates)",
-      "explicit_dates": [
-       "2026-08-24",
-       "2026-08-25",
-       "2026-08-26",
-       "2026-08-27",
-       "2026-08-28",
-       "2026-08-29",
-       "2026-08-31",
-       "2026-09-01",
-       "2026-09-02",
-       "2026-09-03",
-       "2026-09-04",
-       "2026-09-05",
-       "2026-09-07",
-       "2026-09-08",
-       "2026-09-09",
-       "2026-09-10",
-       "2026-09-11",
-       "2026-09-12",
-       "2026-09-15",
-       "2026-09-16",
-       "2026-09-17",
-       "2026-09-18",
-       "2026-09-21",
-       "2026-09-22",
-       "2026-09-23",
-       "2026-09-24",
-       "2026-09-25",
-       "2026-09-28",
-       "2026-09-29",
-       "2026-09-30",
-       "2026-10-01",
-       "2026-10-02",
-       "2026-10-05",
-       "2026-10-06",
-       "2026-10-07",
-       "2026-10-08",
-       "2026-10-09",
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-19",
-       "2026-10-20",
-       "2026-10-21",
-       "2026-10-22",
-       "2026-10-23",
-       "2026-10-26",
-       "2026-10-27",
-       "2026-10-28",
-       "2026-10-29",
-       "2026-10-30",
-       "2026-11-02",
-       "2026-11-03",
-       "2026-11-04",
-       "2026-11-05",
-       "2026-11-06",
-       "2026-11-09",
-       "2026-11-10",
-       "2026-11-11",
-       "2026-11-12",
-       "2026-11-13",
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-23",
-       "2026-11-24",
-       "2026-11-25",
-       "2026-11-26",
-       "2026-11-27",
-       "2026-11-30",
-       "2026-12-01",
-       "2026-12-02",
-       "2026-12-03",
-       "2026-12-04",
-       "2026-12-07",
-       "2026-12-09",
-       "2026-12-10",
-       "2026-12-11",
-       "2026-12-14",
-       "2026-12-15",
-       "2026-12-16",
-       "2026-12-17",
-       "2026-12-18",
-       "2026-12-21",
-       "2026-12-22"
-      ]
-     },
-     "reverse": true,
-     "variant": "En-Perg-Valg-P.Arm",
-     "stops": [
-      {
-       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
-       "idx": 0,
-       "arr": "13.00",
-       "dep": "13.00"
-      },
-      {
-       "stop": "ENNA (Via S.Agata 82)",
-       "idx": 1,
-       "arr": "13.01",
-       "dep": "13.01"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
-       "idx": 2,
-       "arr": "13.03",
-       "dep": "13.03"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 3,
-       "arr": "13.10",
-       "dep": "13.10"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 4,
-       "arr": "13.13",
-       "dep": "13.13"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti 22)",
-       "idx": 5,
-       "arr": "13.20",
-       "dep": "13.20"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti (incr.Via Apollo))",
-       "idx": 6,
-       "arr": "13.21",
-       "dep": "13.21"
-      },
-      {
-       "stop": "ENNA (SP4 (Bivio Grottacalda))",
-       "idx": 7,
-       "arr": "13.31",
-       "dep": "13.31"
-      },
-      {
-       "stop": "ENNA (SP4 (Floristella))",
-       "idx": 8,
-       "arr": "13.35",
-       "dep": "13.35"
-      },
-      {
-       "stop": "VALGUARNERA (Via L.Sturzo(Scuola Mazzini))",
-       "idx": 9,
-       "arr": "13.40",
-       "dep": "13.40"
-      },
-      {
-       "stop": "ENNA (SP4 (Floristella))",
-       "idx": 10,
-       "arr": "13.45",
-       "dep": "13.45"
-      },
-      {
-       "stop": "ENNA (SS117bis (Parco Ronza))",
-       "idx": 11,
-       "arr": "13.50",
-       "dep": "13.50"
-      },
-      {
-       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
-       "idx": 12,
-       "arr": "13.55",
-       "dep": "13.55"
-      }
-     ],
-     "valid": true
-    },
-    {
-     "corsa": "2513",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "85 exact dates (merged templates)",
-      "explicit_dates": [
-       "2026-08-24",
-       "2026-08-25",
-       "2026-08-26",
-       "2026-08-27",
-       "2026-08-28",
-       "2026-08-31",
-       "2026-09-01",
-       "2026-09-02",
-       "2026-09-03",
-       "2026-09-04",
-       "2026-09-07",
-       "2026-09-08",
-       "2026-09-09",
-       "2026-09-10",
-       "2026-09-11",
-       "2026-09-15",
-       "2026-09-16",
-       "2026-09-17",
-       "2026-09-18",
-       "2026-09-21",
-       "2026-09-22",
-       "2026-09-23",
-       "2026-09-24",
-       "2026-09-25",
-       "2026-09-28",
-       "2026-09-29",
-       "2026-09-30",
-       "2026-10-01",
-       "2026-10-02",
-       "2026-10-05",
-       "2026-10-06",
-       "2026-10-07",
-       "2026-10-08",
-       "2026-10-09",
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-19",
-       "2026-10-20",
-       "2026-10-21",
-       "2026-10-22",
-       "2026-10-23",
-       "2026-10-26",
-       "2026-10-27",
-       "2026-10-28",
-       "2026-10-29",
-       "2026-10-30",
-       "2026-11-02",
-       "2026-11-03",
-       "2026-11-04",
-       "2026-11-05",
-       "2026-11-06",
-       "2026-11-09",
-       "2026-11-10",
-       "2026-11-11",
-       "2026-11-12",
-       "2026-11-13",
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-23",
-       "2026-11-24",
-       "2026-11-25",
-       "2026-11-26",
-       "2026-11-27",
-       "2026-11-30",
-       "2026-12-01",
-       "2026-12-02",
-       "2026-12-03",
-       "2026-12-04",
-       "2026-12-07",
-       "2026-12-09",
-       "2026-12-10",
-       "2026-12-11",
-       "2026-12-14",
-       "2026-12-15",
-       "2026-12-16",
-       "2026-12-17",
-       "2026-12-18",
-       "2026-12-21",
-       "2026-12-22"
-      ]
-     },
-     "reverse": true,
-     "variant": "EnFS-C.gir",
-     "stops": [
-      {
-       "stop": "ENNA (Stazione fs)",
-       "idx": 0,
-       "arr": "17.30",
-       "dep": "17.30"
-      },
-      {
-       "stop": "ENNA (SP3)",
-       "idx": 1,
-       "arr": "17.31",
-       "dep": "17.31"
-      },
-      {
-       "stop": "ENNA (SS121 (incr.SS290))",
-       "idx": 2,
-       "arr": "17.34",
-       "dep": "17.34"
-      },
-      {
-       "stop": "ENNA (Corso Sicilia 2)",
-       "idx": 3,
-       "arr": "17.44",
-       "dep": "17.44"
-      },
-      {
-       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
-       "idx": 4,
-       "arr": "17.45",
-       "dep": "17.45"
-      },
-      {
-       "stop": "ENNA (Via S.Agata 82)",
-       "idx": 5,
-       "arr": "17.46",
-       "dep": "17.46"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
-       "idx": 6,
-       "arr": "17.48",
-       "dep": "17.48"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 7,
-       "arr": "17.55",
-       "dep": "17.55"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 8,
-       "arr": "17.58",
-       "dep": "17.58"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti 22)",
-       "idx": 9,
-       "arr": "18.05",
-       "dep": "18.05"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti (incr.Via Apollo))",
-       "idx": 10,
-       "arr": "18.06",
-       "dep": "18.06"
-      },
-      {
-       "stop": "ENNA (SP4 (Bivio Grottacalda))",
-       "idx": 11,
-       "arr": "18.16",
-       "dep": "18.16"
-      },
-      {
-       "stop": "ENNA (SS117bis (Parco Ronza))",
-       "idx": 12,
-       "arr": "18.19",
-       "dep": "18.19"
-      },
-      {
-       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
-       "idx": 13,
-       "arr": "18.25",
-       "dep": "18.25"
-      },
-      {
-       "stop": "PIAZZA ARMERINA (SP16 (case Liuzzo))",
-       "idx": 14,
-       "arr": "18.32",
-       "dep": "18.32"
-      },
-      {
-       "stop": "MIRABELLA IMBACCARI (Via G.Lupis(incr.Piazza A.Moro))",
-       "idx": 15,
-       "arr": "18.50",
-       "dep": "18.50"
-      },
-      {
-       "stop": "CALTAGIRONE (SP37i (Bivio Tempio))",
-       "idx": 16,
-       "arr": "19.00",
-       "dep": "19.00"
-      },
-      {
-       "stop": "CALTAGIRONE (SP37ii (C.da Salvatorello))",
-       "idx": 17,
-       "arr": "19.07",
-       "dep": "19.07"
-      },
-      {
-       "stop": "CALTAGIRONE (Viale Sicilia)",
-       "idx": 18,
-       "arr": "19.15",
-       "dep": "19.15"
-      }
-     ],
-     "valid": true
-    },
-    {
-     "corsa": "2514",
+     "corsa": "60132",
      "service": {
       "days": "explicit",
       "school": null,
@@ -2406,225 +1720,55 @@
       ]
      },
      "reverse": true,
-     "variant": "En-P.Arm",
+     "variant": "En-V.rosa",
      "stops": [
       {
        "stop": "ENNA (Terminal Bus Viale Diaz 80)",
        "idx": 0,
-       "arr": "6.55",
-       "dep": "6.55"
+       "arr": "8.00",
+       "dep": "8.00"
       },
       {
-       "stop": "ENNA (Via S.Agata 82)",
+       "stop": "ENNA (SS121 (Bivio Kamuth))",
        "idx": 1,
-       "arr": "6.56",
-       "dep": "6.56"
+       "arr": "8.04",
+       "dep": "8.04"
       },
       {
-       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
+       "stop": "ENNA (SS121 (c.da Mancadarso))",
        "idx": 2,
-       "arr": "6.58",
-       "dep": "6.58"
+       "arr": "8.09",
+       "dep": "8.09"
       },
       {
-       "stop": "ENNA BASSA (Viale dell'Unità d'Italia 49)",
+       "stop": "VILLAROSA STAZIONE (SS121 (Bivio))",
        "idx": 3,
-       "arr": "7.03",
-       "dep": "7.03"
+       "arr": "8.14",
+       "dep": "8.14"
       },
       {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "stop": "VILLAROSA (SS121 (Oleificio Madem))",
        "idx": 4,
-       "arr": "7.05",
-       "dep": "7.05"
+       "arr": "8.19",
+       "dep": "8.19"
       },
       {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "stop": "VILLAROSA (SS121 (Madonna della Catena))",
        "idx": 5,
-       "arr": "7.08",
-       "dep": "7.08"
+       "arr": "8.23",
+       "dep": "8.23"
       },
       {
-       "stop": "PERGUSA (Viale dei Miti 22)",
+       "stop": "VILLAROSA (Corso Garibaldi 134)",
        "idx": 6,
-       "arr": "7.15",
-       "dep": "7.15"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti (incr.Via Apollo))",
-       "idx": 7,
-       "arr": "7.16",
-       "dep": "7.16"
-      },
-      {
-       "stop": "ENNA (SP4 (Bivio Grottacalda))",
-       "idx": 8,
-       "arr": "7.26",
-       "dep": "7.26"
-      },
-      {
-       "stop": "ENNA (SS117bis (Parco Ronza))",
-       "idx": 9,
-       "arr": "7.29",
-       "dep": "7.29"
-      },
-      {
-       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
-       "idx": 10,
-       "arr": "7.35",
-       "dep": "7.35"
+       "arr": "8.25",
+       "dep": "8.25"
       }
      ],
      "valid": true
     },
     {
-     "corsa": "2517",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "70 exact dates from Albatross validities",
-      "explicit_dates": [
-       "2026-09-15",
-       "2026-09-16",
-       "2026-09-17",
-       "2026-09-18",
-       "2026-09-21",
-       "2026-09-22",
-       "2026-09-23",
-       "2026-09-24",
-       "2026-09-25",
-       "2026-09-28",
-       "2026-09-29",
-       "2026-09-30",
-       "2026-10-01",
-       "2026-10-02",
-       "2026-10-05",
-       "2026-10-06",
-       "2026-10-07",
-       "2026-10-08",
-       "2026-10-09",
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-19",
-       "2026-10-20",
-       "2026-10-21",
-       "2026-10-22",
-       "2026-10-23",
-       "2026-10-26",
-       "2026-10-27",
-       "2026-10-28",
-       "2026-10-29",
-       "2026-10-30",
-       "2026-11-02",
-       "2026-11-03",
-       "2026-11-04",
-       "2026-11-05",
-       "2026-11-06",
-       "2026-11-09",
-       "2026-11-10",
-       "2026-11-11",
-       "2026-11-12",
-       "2026-11-13",
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-23",
-       "2026-11-24",
-       "2026-11-25",
-       "2026-11-26",
-       "2026-11-27",
-       "2026-11-30",
-       "2026-12-01",
-       "2026-12-02",
-       "2026-12-03",
-       "2026-12-04",
-       "2026-12-07",
-       "2026-12-09",
-       "2026-12-10",
-       "2026-12-11",
-       "2026-12-14",
-       "2026-12-15",
-       "2026-12-16",
-       "2026-12-17",
-       "2026-12-18",
-       "2026-12-21",
-       "2026-12-22"
-      ]
-     },
-     "reverse": true,
-     "variant": "En-Cald-Valg-Aid",
-     "stops": [
-      {
-       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
-       "idx": 0,
-       "arr": "18.00",
-       "dep": "18.00"
-      },
-      {
-       "stop": "ENNA (Via S.Agata 82)",
-       "idx": 1,
-       "arr": "18.01",
-       "dep": "18.01"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
-       "idx": 2,
-       "arr": "18.03",
-       "dep": "18.03"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 3,
-       "arr": "18.10",
-       "dep": "18.10"
-      },
-      {
-       "stop": "CALDERARI (SS192 (X SP62))",
-       "idx": 4,
-       "arr": "18.25",
-       "dep": "18.25"
-      },
-      {
-       "stop": "VALGUARNERA (Via L.Sturzo(Scuola Mazzini))",
-       "idx": 5,
-       "arr": "18.40",
-       "dep": "18.40"
-      },
-      {
-       "stop": "ENNA (SP4 (Floristella))",
-       "idx": 6,
-       "arr": "18.45",
-       "dep": "18.45"
-      },
-      {
-       "stop": "ENNA (SS117bis (Parco Ronza))",
-       "idx": 7,
-       "arr": "18.48",
-       "dep": "18.48"
-      },
-      {
-       "stop": "PIAZZA ARMERINA (SS288 (Bivio Bellia))",
-       "idx": 8,
-       "arr": "18.52",
-       "dep": "18.52"
-      },
-      {
-       "stop": "AIDONE (Piazza Generale Cultreri)",
-       "idx": 9,
-       "arr": "19.00",
-       "dep": "19.00"
-      }
-     ],
-     "valid": true
-    },
-    {
-     "corsa": "2520",
+     "corsa": "2535",
      "service": {
       "days": "explicit",
       "school": null,
@@ -2718,505 +1862,47 @@
       ]
      },
      "reverse": true,
-     "variant": "En-Cald-Valg",
+     "variant": "En-V.rosa",
      "stops": [
       {
        "stop": "ENNA (Terminal Bus Viale Diaz 80)",
        "idx": 0,
-       "arr": "14.20",
-       "dep": "14.20"
+       "arr": "12.30",
+       "dep": "12.30"
       },
       {
-       "stop": "ENNA (Via S.Agata 82)",
+       "stop": "ENNA (SS121 (Bivio Kamuth))",
        "idx": 1,
-       "arr": "14.21",
-       "dep": "14.21"
+       "arr": "12.34",
+       "dep": "12.34"
       },
       {
-       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
+       "stop": "ENNA (SS121 (c.da Mancadarso))",
        "idx": 2,
-       "arr": "14.23",
-       "dep": "14.23"
+       "arr": "12.39",
+       "dep": "12.39"
       },
       {
-       "stop": "ENNA BASSA (Via Scifitello(incr.Via Veneto))",
+       "stop": "VILLAROSA STAZIONE (SS121 (Bivio))",
        "idx": 3,
-       "arr": "14.30",
-       "dep": "14.30"
+       "arr": "12.44",
+       "dep": "12.44"
       },
       {
-       "stop": "ENNA BASSA (Viale delle Olimpiadi(incr.Via S.Mazza))",
+       "stop": "VILLAROSA (SS121 (Oleificio Madem))",
        "idx": 4,
-       "arr": "14.35",
-       "dep": "14.35"
-      },
-      {
-       "stop": "ENNA BASSA (Viale delle Olimpiadi(incr.Via Ingrà))",
-       "idx": 5,
-       "arr": "14.36",
-       "dep": "14.36"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 6,
-       "arr": "14.40",
-       "dep": "14.40"
-      },
-      {
-       "stop": "CALDERARI (SS192 (X SP62))",
-       "idx": 7,
-       "arr": "14.55",
-       "dep": "14.55"
-      },
-      {
-       "stop": "VALGUARNERA (Via L.Sturzo(Scuola Mazzini))",
-       "idx": 8,
-       "arr": "15.10",
-       "dep": "15.10"
-      }
-     ],
-     "valid": true
-    },
-    {
-     "corsa": "17424",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "70 exact dates from Albatross validities",
-      "explicit_dates": [
-       "2026-09-15",
-       "2026-09-16",
-       "2026-09-17",
-       "2026-09-18",
-       "2026-09-21",
-       "2026-09-22",
-       "2026-09-23",
-       "2026-09-24",
-       "2026-09-25",
-       "2026-09-28",
-       "2026-09-29",
-       "2026-09-30",
-       "2026-10-01",
-       "2026-10-02",
-       "2026-10-05",
-       "2026-10-06",
-       "2026-10-07",
-       "2026-10-08",
-       "2026-10-09",
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-19",
-       "2026-10-20",
-       "2026-10-21",
-       "2026-10-22",
-       "2026-10-23",
-       "2026-10-26",
-       "2026-10-27",
-       "2026-10-28",
-       "2026-10-29",
-       "2026-10-30",
-       "2026-11-02",
-       "2026-11-03",
-       "2026-11-04",
-       "2026-11-05",
-       "2026-11-06",
-       "2026-11-09",
-       "2026-11-10",
-       "2026-11-11",
-       "2026-11-12",
-       "2026-11-13",
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-23",
-       "2026-11-24",
-       "2026-11-25",
-       "2026-11-26",
-       "2026-11-27",
-       "2026-11-30",
-       "2026-12-01",
-       "2026-12-02",
-       "2026-12-03",
-       "2026-12-04",
-       "2026-12-07",
-       "2026-12-09",
-       "2026-12-10",
-       "2026-12-11",
-       "2026-12-14",
-       "2026-12-15",
-       "2026-12-16",
-       "2026-12-17",
-       "2026-12-18",
-       "2026-12-21",
-       "2026-12-22"
-      ]
-     },
-     "reverse": true,
-     "variant": "En-Cald-Valg",
-     "stops": [
-      {
-       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
-       "idx": 0,
-       "arr": "14.20",
-       "dep": "14.20"
-      },
-      {
-       "stop": "ENNA (Via S.Agata 82)",
-       "idx": 1,
-       "arr": "14.21",
-       "dep": "14.21"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
-       "idx": 2,
-       "arr": "14.23",
-       "dep": "14.23"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 3,
-       "arr": "14.30",
-       "dep": "14.30"
-      },
-      {
-       "stop": "CALDERARI (SS192 (X SP62))",
-       "idx": 4,
-       "arr": "14.45",
-       "dep": "14.45"
-      },
-      {
-       "stop": "VALGUARNERA (Via L.Sturzo(Scuola Mazzini))",
-       "idx": 5,
-       "arr": "15.00",
-       "dep": "15.00"
-      }
-     ],
-     "valid": true
-    },
-    {
-     "corsa": "2518",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "70 exact dates from Albatross validities",
-      "explicit_dates": [
-       "2026-09-15",
-       "2026-09-16",
-       "2026-09-17",
-       "2026-09-18",
-       "2026-09-21",
-       "2026-09-22",
-       "2026-09-23",
-       "2026-09-24",
-       "2026-09-25",
-       "2026-09-28",
-       "2026-09-29",
-       "2026-09-30",
-       "2026-10-01",
-       "2026-10-02",
-       "2026-10-05",
-       "2026-10-06",
-       "2026-10-07",
-       "2026-10-08",
-       "2026-10-09",
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-19",
-       "2026-10-20",
-       "2026-10-21",
-       "2026-10-22",
-       "2026-10-23",
-       "2026-10-26",
-       "2026-10-27",
-       "2026-10-28",
-       "2026-10-29",
-       "2026-10-30",
-       "2026-11-02",
-       "2026-11-03",
-       "2026-11-04",
-       "2026-11-05",
-       "2026-11-06",
-       "2026-11-09",
-       "2026-11-10",
-       "2026-11-11",
-       "2026-11-12",
-       "2026-11-13",
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-23",
-       "2026-11-24",
-       "2026-11-25",
-       "2026-11-26",
-       "2026-11-27",
-       "2026-11-30",
-       "2026-12-01",
-       "2026-12-02",
-       "2026-12-03",
-       "2026-12-04",
-       "2026-12-07",
-       "2026-12-09",
-       "2026-12-10",
-       "2026-12-11",
-       "2026-12-14",
-       "2026-12-15",
-       "2026-12-16",
-       "2026-12-17",
-       "2026-12-18",
-       "2026-12-21",
-       "2026-12-22"
-      ]
-     },
-     "reverse": true,
-     "variant": "En-Perg-Valg",
-     "stops": [
-      {
-       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
-       "idx": 0,
-       "arr": "13.10",
-       "dep": "13.10"
-      },
-      {
-       "stop": "ENNA (Via S.Agata 82)",
-       "idx": 1,
-       "arr": "13.11",
-       "dep": "13.11"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
-       "idx": 2,
-       "arr": "13.12",
-       "dep": "13.12"
-      },
-      {
-       "stop": "ENNA BASSA (Via Scifitello(incr.Via Veneto))",
-       "idx": 3,
-       "arr": "13.17",
-       "dep": "13.17"
-      },
-      {
-       "stop": "ENNA BASSA (Viale delle Olimpiadi(incr.Via S.Mazza))",
-       "idx": 4,
-       "arr": "13.21",
-       "dep": "13.21"
-      },
-      {
-       "stop": "ENNA BASSA (Viale delle Olimpiadi(incr.Via Ingrà))",
-       "idx": 5,
-       "arr": "13.22",
-       "dep": "13.22"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 6,
-       "arr": "13.25",
-       "dep": "13.25"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 7,
-       "arr": "13.28",
-       "dep": "13.28"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti 22)",
-       "idx": 8,
-       "arr": "13.35",
-       "dep": "13.35"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti (incr.Via Apollo))",
-       "idx": 9,
-       "arr": "13.36",
-       "dep": "13.36"
-      },
-      {
-       "stop": "ENNA (SP4 (Bivio Grottacalda))",
-       "idx": 10,
-       "arr": "13.46",
-       "dep": "13.46"
-      },
-      {
-       "stop": "ENNA (SP4 (Floristella))",
-       "idx": 11,
-       "arr": "13.50",
-       "dep": "13.50"
-      },
-      {
-       "stop": "VALGUARNERA (Via L.Sturzo(Scuola Mazzini))",
-       "idx": 12,
-       "arr": "13.55",
-       "dep": "13.55"
-      }
-     ],
-     "valid": true
-    },
-    {
-     "corsa": "2515",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "84 exact dates from Albatross validities",
-      "explicit_dates": [
-       "2026-09-15",
-       "2026-09-16",
-       "2026-09-17",
-       "2026-09-18",
-       "2026-09-19",
-       "2026-09-21",
-       "2026-09-22",
-       "2026-09-23",
-       "2026-09-24",
-       "2026-09-25",
-       "2026-09-26",
-       "2026-09-28",
-       "2026-09-29",
-       "2026-09-30",
-       "2026-10-01",
-       "2026-10-02",
-       "2026-10-03",
-       "2026-10-05",
-       "2026-10-06",
-       "2026-10-07",
-       "2026-10-08",
-       "2026-10-09",
-       "2026-10-10",
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
-       "2026-10-19",
-       "2026-10-20",
-       "2026-10-21",
-       "2026-10-22",
-       "2026-10-23",
-       "2026-10-24",
-       "2026-10-26",
-       "2026-10-27",
-       "2026-10-28",
-       "2026-10-29",
-       "2026-10-30",
-       "2026-10-31",
-       "2026-11-02",
-       "2026-11-03",
-       "2026-11-04",
-       "2026-11-05",
-       "2026-11-06",
-       "2026-11-07",
-       "2026-11-09",
-       "2026-11-10",
-       "2026-11-11",
-       "2026-11-12",
-       "2026-11-13",
-       "2026-11-14",
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
-       "2026-11-23",
-       "2026-11-24",
-       "2026-11-25",
-       "2026-11-26",
-       "2026-11-27",
-       "2026-11-28",
-       "2026-11-30",
-       "2026-12-01",
-       "2026-12-02",
-       "2026-12-03",
-       "2026-12-04",
-       "2026-12-05",
-       "2026-12-07",
-       "2026-12-09",
-       "2026-12-10",
-       "2026-12-11",
-       "2026-12-12",
-       "2026-12-14",
-       "2026-12-15",
-       "2026-12-16",
-       "2026-12-17",
-       "2026-12-18",
-       "2026-12-19",
-       "2026-12-21",
-       "2026-12-22"
-      ]
-     },
-     "reverse": true,
-     "variant": "En-P.Arm",
-     "stops": [
-      {
-       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
-       "idx": 0,
-       "arr": "12.15",
-       "dep": "12.15"
-      },
-      {
-       "stop": "ENNA (Via S.Agata 82)",
-       "idx": 1,
-       "arr": "12.16",
-       "dep": "12.16"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
-       "idx": 2,
-       "arr": "12.18",
-       "dep": "12.18"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 3,
-       "arr": "12.25",
-       "dep": "12.25"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 4,
-       "arr": "12.28",
-       "dep": "12.28"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti 22)",
-       "idx": 5,
-       "arr": "12.35",
-       "dep": "12.35"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti (incr.Via Apollo))",
-       "idx": 6,
-       "arr": "12.36",
-       "dep": "12.36"
-      },
-      {
-       "stop": "ENNA (SP4 (Bivio Grottacalda))",
-       "idx": 7,
-       "arr": "12.46",
-       "dep": "12.46"
-      },
-      {
-       "stop": "ENNA (SS117bis (Parco Ronza))",
-       "idx": 8,
        "arr": "12.49",
        "dep": "12.49"
       },
       {
-       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
-       "idx": 9,
+       "stop": "VILLAROSA (SS121 (Madonna della Catena))",
+       "idx": 5,
+       "arr": "12.53",
+       "dep": "12.53"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 134)",
+       "idx": 6,
        "arr": "12.55",
        "dep": "12.55"
       }
@@ -3224,7 +1910,7 @@
      "valid": true
     },
     {
-     "corsa": "2516",
+     "corsa": "2537",
      "service": {
       "days": "explicit",
       "school": null,
@@ -3318,67 +2004,1127 @@
       ]
      },
      "reverse": true,
-     "variant": "En-P.Arm",
+     "variant": "En-V.rosa",
      "stops": [
       {
        "stop": "ENNA (Terminal Bus Viale Diaz 80)",
        "idx": 0,
-       "arr": "13.15",
-       "dep": "13.15"
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "ENNA (SS121 (Bivio Kamuth))",
+       "idx": 1,
+       "arr": "14.24",
+       "dep": "14.24"
+      },
+      {
+       "stop": "ENNA (SS121 (c.da Mancadarso))",
+       "idx": 2,
+       "arr": "14.29",
+       "dep": "14.29"
+      },
+      {
+       "stop": "VILLAROSA STAZIONE (SS121 (Bivio))",
+       "idx": 3,
+       "arr": "14.34",
+       "dep": "14.34"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Oleificio Madem))",
+       "idx": 4,
+       "arr": "14.39",
+       "dep": "14.39"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Madonna della Catena))",
+       "idx": 5,
+       "arr": "14.43",
+       "dep": "14.43"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 134)",
+       "idx": 6,
+       "arr": "14.45",
+       "dep": "14.45"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "60133",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "84 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-15",
+       "2026-09-16",
+       "2026-09-17",
+       "2026-09-18",
+       "2026-09-19",
+       "2026-09-21",
+       "2026-09-22",
+       "2026-09-23",
+       "2026-09-24",
+       "2026-09-25",
+       "2026-09-26",
+       "2026-09-28",
+       "2026-09-29",
+       "2026-09-30",
+       "2026-10-01",
+       "2026-10-02",
+       "2026-10-03",
+       "2026-10-05",
+       "2026-10-06",
+       "2026-10-07",
+       "2026-10-08",
+       "2026-10-09",
+       "2026-10-10",
+       "2026-10-12",
+       "2026-10-13",
+       "2026-10-14",
+       "2026-10-15",
+       "2026-10-16",
+       "2026-10-17",
+       "2026-10-19",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-23",
+       "2026-10-24",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-30",
+       "2026-10-31",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-06",
+       "2026-11-07",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-13",
+       "2026-11-14",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-20",
+       "2026-11-21",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-28",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-05",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-12",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-19",
+       "2026-12-21",
+       "2026-12-22"
+      ]
+     },
+     "reverse": true,
+     "variant": "AL-EN-CT_9",
+     "stops": [
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 134)",
+       "idx": 0,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 300)",
+       "idx": 1,
+       "arr": "8.28",
+       "dep": "8.28"
+      },
+      {
+       "stop": "VILLAROSA (SP6 (C.da Gargiulla))",
+       "idx": 2,
+       "arr": "8.32",
+       "dep": "8.32"
+      },
+      {
+       "stop": "VILLAROSA (SP6 (C.da Giurfo))",
+       "idx": 3,
+       "arr": "8.35",
+       "dep": "8.35"
+      },
+      {
+       "stop": "VILLAPRIOLO (Via della Regione 25)",
+       "idx": 4,
+       "arr": "8.40",
+       "dep": "8.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "60134",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "84 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-15",
+       "2026-09-16",
+       "2026-09-17",
+       "2026-09-18",
+       "2026-09-19",
+       "2026-09-21",
+       "2026-09-22",
+       "2026-09-23",
+       "2026-09-24",
+       "2026-09-25",
+       "2026-09-26",
+       "2026-09-28",
+       "2026-09-29",
+       "2026-09-30",
+       "2026-10-01",
+       "2026-10-02",
+       "2026-10-03",
+       "2026-10-05",
+       "2026-10-06",
+       "2026-10-07",
+       "2026-10-08",
+       "2026-10-09",
+       "2026-10-10",
+       "2026-10-12",
+       "2026-10-13",
+       "2026-10-14",
+       "2026-10-15",
+       "2026-10-16",
+       "2026-10-17",
+       "2026-10-19",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-23",
+       "2026-10-24",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-30",
+       "2026-10-31",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-06",
+       "2026-11-07",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-13",
+       "2026-11-14",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-20",
+       "2026-11-21",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-28",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-05",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-12",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-19",
+       "2026-12-21",
+       "2026-12-22"
+      ]
+     },
+     "reverse": true,
+     "variant": "AL-EN-CT_9",
+     "stops": [
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 134)",
+       "idx": 0,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 300)",
+       "idx": 1,
+       "arr": "12.58",
+       "dep": "12.58"
+      },
+      {
+       "stop": "VILLAROSA (SP6 (C.da Gargiulla))",
+       "idx": 2,
+       "arr": "13.02",
+       "dep": "13.02"
+      },
+      {
+       "stop": "VILLAROSA (SP6 (C.da Giurfo))",
+       "idx": 3,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "VILLAPRIOLO (Via della Regione 25)",
+       "idx": 4,
+       "arr": "13.10",
+       "dep": "13.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "60044",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "70 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-15",
+       "2026-09-16",
+       "2026-09-17",
+       "2026-09-18",
+       "2026-09-21",
+       "2026-09-22",
+       "2026-09-23",
+       "2026-09-24",
+       "2026-09-25",
+       "2026-09-28",
+       "2026-09-29",
+       "2026-09-30",
+       "2026-10-01",
+       "2026-10-02",
+       "2026-10-05",
+       "2026-10-06",
+       "2026-10-07",
+       "2026-10-08",
+       "2026-10-09",
+       "2026-10-12",
+       "2026-10-13",
+       "2026-10-14",
+       "2026-10-15",
+       "2026-10-16",
+       "2026-10-19",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-23",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-30",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-06",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-13",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-20",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-21",
+       "2026-12-22"
+      ]
+     },
+     "reverse": true,
+     "variant": "AL-EN-CT_9",
+     "stops": [
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 134)",
+       "idx": 0,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 300)",
+       "idx": 1,
+       "arr": "14.28",
+       "dep": "14.28"
+      },
+      {
+       "stop": "VILLAROSA (SP6 (C.da Gargiulla))",
+       "idx": 2,
+       "arr": "14.32",
+       "dep": "14.32"
+      },
+      {
+       "stop": "VILLAROSA (SP6 (C.da Giurfo))",
+       "idx": 3,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "VILLAPRIOLO (Via della Regione 25)",
+       "idx": 4,
+       "arr": "14.40",
+       "dep": "14.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2542",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "84 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-15",
+       "2026-09-16",
+       "2026-09-17",
+       "2026-09-18",
+       "2026-09-19",
+       "2026-09-21",
+       "2026-09-22",
+       "2026-09-23",
+       "2026-09-24",
+       "2026-09-25",
+       "2026-09-26",
+       "2026-09-28",
+       "2026-09-29",
+       "2026-09-30",
+       "2026-10-01",
+       "2026-10-02",
+       "2026-10-03",
+       "2026-10-05",
+       "2026-10-06",
+       "2026-10-07",
+       "2026-10-08",
+       "2026-10-09",
+       "2026-10-10",
+       "2026-10-12",
+       "2026-10-13",
+       "2026-10-14",
+       "2026-10-15",
+       "2026-10-16",
+       "2026-10-17",
+       "2026-10-19",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-23",
+       "2026-10-24",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-30",
+       "2026-10-31",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-06",
+       "2026-11-07",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-13",
+       "2026-11-14",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-20",
+       "2026-11-21",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-28",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-05",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-12",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-19",
+       "2026-12-21",
+       "2026-12-22"
+      ]
+     },
+     "reverse": true,
+     "variant": "AL-EN-CT_9",
+     "stops": [
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 134)",
+       "idx": 0,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 300)",
+       "idx": 1,
+       "arr": "14.48",
+       "dep": "14.48"
+      },
+      {
+       "stop": "VILLAROSA (SP6 (C.da Gargiulla))",
+       "idx": 2,
+       "arr": "14.52",
+       "dep": "14.52"
+      },
+      {
+       "stop": "VILLAROSA (SP6 (C.da Giurfo))",
+       "idx": 3,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "VILLAPRIOLO (Via della Regione 25)",
+       "idx": 4,
+       "arr": "15.00",
+       "dep": "15.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2536",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "70 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-15",
+       "2026-09-16",
+       "2026-09-17",
+       "2026-09-18",
+       "2026-09-21",
+       "2026-09-22",
+       "2026-09-23",
+       "2026-09-24",
+       "2026-09-25",
+       "2026-09-28",
+       "2026-09-29",
+       "2026-09-30",
+       "2026-10-01",
+       "2026-10-02",
+       "2026-10-05",
+       "2026-10-06",
+       "2026-10-07",
+       "2026-10-08",
+       "2026-10-09",
+       "2026-10-12",
+       "2026-10-13",
+       "2026-10-14",
+       "2026-10-15",
+       "2026-10-16",
+       "2026-10-19",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-23",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-30",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-06",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-13",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-20",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-21",
+       "2026-12-22"
+      ]
+     },
+     "reverse": true,
+     "variant": "AL-EN-CT_22",
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 0,
+       "arr": "13.45",
+       "dep": "13.45"
       },
       {
        "stop": "ENNA (Via S.Agata 82)",
        "idx": 1,
-       "arr": "13.16",
-       "dep": "13.16"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
-       "idx": 2,
-       "arr": "13.18",
-       "dep": "13.18"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 3,
-       "arr": "13.25",
-       "dep": "13.25"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 4,
-       "arr": "13.28",
-       "dep": "13.28"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti 22)",
-       "idx": 5,
-       "arr": "13.35",
-       "dep": "13.35"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti (incr.Via Apollo))",
-       "idx": 6,
-       "arr": "13.36",
-       "dep": "13.36"
-      },
-      {
-       "stop": "ENNA (SP4 (Bivio Grottacalda))",
-       "idx": 7,
        "arr": "13.46",
        "dep": "13.46"
       },
       {
-       "stop": "ENNA (SS117bis (Parco Ronza))",
+       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
+       "idx": 2,
+       "arr": "13.48",
+       "dep": "13.48"
+      },
+      {
+       "stop": "ENNA BASSA (Via Scifitello(incr.Via Veneto))",
+       "idx": 3,
+       "arr": "13.52",
+       "dep": "13.52"
+      },
+      {
+       "stop": "ENNA BASSA (Viale delle Olimpiadi(incr.Via S.Mazza))",
+       "idx": 4,
+       "arr": "13.56",
+       "dep": "13.56"
+      },
+      {
+       "stop": "ENNA BASSA (Viale delle Olimpiadi(incr.Via Ingrà))",
+       "idx": 5,
+       "arr": "13.57",
+       "dep": "13.57"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 6,
+       "arr": "14.01",
+       "dep": "14.01"
+      },
+      {
+       "stop": "ENNA (SS121 (Bivio Kamuth))",
+       "idx": 7,
+       "arr": "14.07",
+       "dep": "14.07"
+      },
+      {
+       "stop": "ENNA (SS121 (c.da Mancadarso))",
+       "idx": 8,
+       "arr": "14.11",
+       "dep": "14.11"
+      },
+      {
+       "stop": "VILLAROSA STAZIONE (SS121 (Bivio))",
+       "idx": 9,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Oleificio Madem))",
+       "idx": 10,
+       "arr": "14.19",
+       "dep": "14.19"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Madonna della Catena))",
+       "idx": 11,
+       "arr": "14.23",
+       "dep": "14.23"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 134)",
+       "idx": 12,
+       "arr": "14.25",
+       "dep": "14.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2522",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "70 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-15",
+       "2026-09-16",
+       "2026-09-17",
+       "2026-09-18",
+       "2026-09-21",
+       "2026-09-22",
+       "2026-09-23",
+       "2026-09-24",
+       "2026-09-25",
+       "2026-09-28",
+       "2026-09-29",
+       "2026-09-30",
+       "2026-10-01",
+       "2026-10-02",
+       "2026-10-05",
+       "2026-10-06",
+       "2026-10-07",
+       "2026-10-08",
+       "2026-10-09",
+       "2026-10-12",
+       "2026-10-13",
+       "2026-10-14",
+       "2026-10-15",
+       "2026-10-16",
+       "2026-10-19",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-23",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-30",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-06",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-13",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-20",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-21",
+       "2026-12-22"
+      ]
+     },
+     "reverse": true,
+     "variant": "Ct-En-ALimena",
+     "stops": [
+      {
+       "stop": "CATANIA (Stazione - T.Bus Via Archimede)",
+       "idx": 0,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "CATANIA (Piazza P.Borsellino)",
+       "idx": 1,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "CATANIA (Via Domenico Tempio 30)",
+       "idx": 2,
+       "arr": "12.06",
+       "dep": "12.06"
+      },
+      {
+       "stop": "CATANIA (Via S.Giuseppe alla Rena 86/b)",
+       "idx": 3,
+       "arr": "12.08",
+       "dep": "12.08"
+      },
+      {
+       "stop": "CATANIAAEROPORTO (Terminal Bus)",
+       "idx": 4,
+       "arr": "12.10",
+       "dep": "12.10"
+      },
+      {
+       "stop": "DITTAINO (Sicilia Outlet)",
+       "idx": 5,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 6,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 7,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "ENNA (SS121 (Bivio Kamuth))",
        "idx": 8,
        "arr": "13.49",
        "dep": "13.49"
       },
       {
-       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
+       "stop": "ENNA (SS121 (c.da Mancadarso))",
        "idx": 9,
-       "arr": "13.55",
-       "dep": "13.55"
+       "arr": "13.54",
+       "dep": "13.54"
+      },
+      {
+       "stop": "VILLAROSA STAZIONE (SS121 (Bivio))",
+       "idx": 10,
+       "arr": "13.59",
+       "dep": "13.59"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Oleificio Madem))",
+       "idx": 11,
+       "arr": "14.04",
+       "dep": "14.04"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Madonna della Catena))",
+       "idx": 12,
+       "arr": "14.08",
+       "dep": "14.08"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 134)",
+       "idx": 13,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 300)",
+       "idx": 14,
+       "arr": "14.13",
+       "dep": "14.13"
+      },
+      {
+       "stop": "VILLAROSA (SP6 (C.da Gargiulla))",
+       "idx": 15,
+       "arr": "14.17",
+       "dep": "14.17"
+      },
+      {
+       "stop": "VILLAROSA (SP6 (C.da Giurfo))",
+       "idx": 16,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "VILLAPRIOLO (Via della Regione 25)",
+       "idx": 17,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "ALIMENA (Piazza A.Diaz)",
+       "idx": 18,
+       "arr": "15.15",
+       "dep": "15.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2523",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "84 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-15",
+       "2026-09-16",
+       "2026-09-17",
+       "2026-09-18",
+       "2026-09-19",
+       "2026-09-21",
+       "2026-09-22",
+       "2026-09-23",
+       "2026-09-24",
+       "2026-09-25",
+       "2026-09-26",
+       "2026-09-28",
+       "2026-09-29",
+       "2026-09-30",
+       "2026-10-01",
+       "2026-10-02",
+       "2026-10-03",
+       "2026-10-05",
+       "2026-10-06",
+       "2026-10-07",
+       "2026-10-08",
+       "2026-10-09",
+       "2026-10-10",
+       "2026-10-12",
+       "2026-10-13",
+       "2026-10-14",
+       "2026-10-15",
+       "2026-10-16",
+       "2026-10-17",
+       "2026-10-19",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-23",
+       "2026-10-24",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-30",
+       "2026-10-31",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-06",
+       "2026-11-07",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-13",
+       "2026-11-14",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-20",
+       "2026-11-21",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-28",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-05",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-12",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-19",
+       "2026-12-21",
+       "2026-12-22"
+      ]
+     },
+     "reverse": true,
+     "variant": "Ct-En-V.priolo",
+     "stops": [
+      {
+       "stop": "CATANIA (Stazione - T.Bus Via Archimede)",
+       "idx": 0,
+       "arr": "18.00",
+       "dep": "18.00"
+      },
+      {
+       "stop": "CATANIA (Piazza P.Borsellino)",
+       "idx": 1,
+       "arr": "18.05",
+       "dep": "18.05"
+      },
+      {
+       "stop": "CATANIA (Via Domenico Tempio 30)",
+       "idx": 2,
+       "arr": "18.06",
+       "dep": "18.06"
+      },
+      {
+       "stop": "CATANIA (Via S.Giuseppe alla Rena 86/b)",
+       "idx": 3,
+       "arr": "18.08",
+       "dep": "18.08"
+      },
+      {
+       "stop": "CATANIAAEROPORTO (Terminal Bus)",
+       "idx": 4,
+       "arr": "18.10",
+       "dep": "18.10"
+      },
+      {
+       "stop": "DITTAINO (Sicilia Outlet)",
+       "idx": 5,
+       "arr": "19.00",
+       "dep": "19.00"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 6,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 7,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "ENNA (SS121 (Bivio Kamuth))",
+       "idx": 8,
+       "arr": "19.34",
+       "dep": "19.34"
+      },
+      {
+       "stop": "ENNA (SS121 (c.da Mancadarso))",
+       "idx": 9,
+       "arr": "19.39",
+       "dep": "19.39"
+      },
+      {
+       "stop": "VILLAROSA STAZIONE (SS121 (Bivio))",
+       "idx": 10,
+       "arr": "19.44",
+       "dep": "19.44"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Oleificio Madem))",
+       "idx": 11,
+       "arr": "19.49",
+       "dep": "19.49"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Madonna della Catena))",
+       "idx": 12,
+       "arr": "19.53",
+       "dep": "19.53"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 134)",
+       "idx": 13,
+       "arr": "19.55",
+       "dep": "19.55"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 300)",
+       "idx": 14,
+       "arr": "19.58",
+       "dep": "19.58"
+      },
+      {
+       "stop": "VILLAROSA (SP6 (C.da Gargiulla))",
+       "idx": 15,
+       "arr": "20.02",
+       "dep": "20.02"
+      },
+      {
+       "stop": "VILLAROSA (SP6 (C.da Giurfo))",
+       "idx": 16,
+       "arr": "20.05",
+       "dep": "20.05"
+      },
+      {
+       "stop": "VILLAPRIOLO (Via della Regione 25)",
+       "idx": 17,
+       "arr": "20.10",
+       "dep": "20.10"
       }
      ],
      "valid": true

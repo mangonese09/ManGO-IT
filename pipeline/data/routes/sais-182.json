@@ -9,37 +9,493 @@
  "directions": [
   {
    "stops": [
-    "PIETRAPERZIA (Via G.Marconi(incr.Via G.Pastorello))",
-    "PIETRAPERZIA (Via G.Marconi 68/71)",
-    "PIETRAPERZIA (Viale della Libertà 12/13)",
-    "PIETRAPERZIA (SS191 (Bivio Luogo))",
-    "BARRAFRANCA (SS191 (C.da Albana))",
-    "BARRAFRANCA (Corso Garibaldi 551)",
-    "BARRAFRANCA (Corso Garibaldi 453/466)",
     "BARRAFRANCA (Via Campania 7)",
-    "BARRAFRANCA (C.da Zotta)",
+    "BARRAFRANCA (Corso Garibaldi 453/466)",
+    "BARRAFRANCA (Corso Garibaldi 551)",
     "BARRAFRANCA (SP42 (X C.da Zotta))",
     "PIAZZA ARMERINA (SP15 (Braemi))",
     "PIAZZA ARMERINA (SP15 (C.da Risignolo))",
     "PIAZZA ARMERINA (SP15 (Scavi del Casale))",
     "PIAZZA ARMERINA (Via S.Principato 10)",
-    "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))"
+    "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
+    "BARRAFRANCA (Corso V.Emanuele 462)",
+    "BARRAFRANCA (Corso V.Emanuele 216)",
+    "BARRAFRANCA (Corso Garibaldi 219)",
+    "PIAZZA ARMERINA (Via G.Carducci 13)",
+    "PIETRAPERZIA (Via G.Marconi(incr.Via G.Pastorello))",
+    "PIETRAPERZIA (Via G.Marconi 68/71)",
+    "PIETRAPERZIA (Viale della Libertà 12/13)",
+    "PIETRAPERZIA (SS191 (Bivio Luogo))",
+    "BARRAFRANCA (SS191 (C.da Albana))",
+    "BARRAFRANCA (C.da Zotta)"
    ],
    "trips": [
     {
-     "corsa": "AGGIUNTA 54",
+     "corsa": "2574",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "24 exact dates from Albatross validities",
+      "raw": "70 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-08-17",
-       "2026-08-18",
-       "2026-08-19",
-       "2026-08-20",
-       "2026-08-21",
-       "2026-08-22",
+       "2026-09-15",
+       "2026-09-16",
+       "2026-09-17",
+       "2026-09-18",
+       "2026-09-21",
+       "2026-09-22",
+       "2026-09-23",
+       "2026-09-24",
+       "2026-09-25",
+       "2026-09-28",
+       "2026-09-29",
+       "2026-09-30",
+       "2026-10-01",
+       "2026-10-02",
+       "2026-10-05",
+       "2026-10-06",
+       "2026-10-07",
+       "2026-10-08",
+       "2026-10-09",
+       "2026-10-12",
+       "2026-10-13",
+       "2026-10-14",
+       "2026-10-15",
+       "2026-10-16",
+       "2026-10-19",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-23",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-30",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-06",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-13",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-20",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-21",
+       "2026-12-22"
+      ]
+     },
+     "reverse": false,
+     "variant": "B.fran-P.Arm",
+     "stops": [
+      {
+       "stop": "BARRAFRANCA (Via Campania 7)",
+       "idx": 0,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 453/466)",
+       "idx": 1,
+       "arr": "8.32",
+       "dep": "8.32"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 551)",
+       "idx": 2,
+       "arr": "8.33",
+       "dep": "8.33"
+      },
+      {
+       "stop": "BARRAFRANCA (SP42 (X C.da Zotta))",
+       "idx": 3,
+       "arr": "8.35",
+       "dep": "8.35"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (Braemi))",
+       "idx": 4,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (C.da Risignolo))",
+       "idx": 5,
+       "arr": "8.54",
+       "dep": "8.54"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (Scavi del Casale))",
+       "idx": 6,
+       "arr": "8.55",
+       "dep": "8.55"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (Via S.Principato 10)",
+       "idx": 7,
+       "arr": "9.01",
+       "dep": "9.01"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
+       "idx": 8,
+       "arr": "9.05",
+       "dep": "9.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2576",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "70 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-15",
+       "2026-09-16",
+       "2026-09-17",
+       "2026-09-18",
+       "2026-09-21",
+       "2026-09-22",
+       "2026-09-23",
+       "2026-09-24",
+       "2026-09-25",
+       "2026-09-28",
+       "2026-09-29",
+       "2026-09-30",
+       "2026-10-01",
+       "2026-10-02",
+       "2026-10-05",
+       "2026-10-06",
+       "2026-10-07",
+       "2026-10-08",
+       "2026-10-09",
+       "2026-10-12",
+       "2026-10-13",
+       "2026-10-14",
+       "2026-10-15",
+       "2026-10-16",
+       "2026-10-19",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-23",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-30",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-06",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-13",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-20",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-21",
+       "2026-12-22"
+      ]
+     },
+     "reverse": false,
+     "variant": "B.fran-P.Arm",
+     "stops": [
+      {
+       "stop": "BARRAFRANCA (Via Campania 7)",
+       "idx": 0,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 453/466)",
+       "idx": 1,
+       "arr": "12.32",
+       "dep": "12.32"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 551)",
+       "idx": 2,
+       "arr": "12.33",
+       "dep": "12.33"
+      },
+      {
+       "stop": "BARRAFRANCA (SP42 (X C.da Zotta))",
+       "idx": 3,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (Braemi))",
+       "idx": 4,
+       "arr": "12.45",
+       "dep": "12.45"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (C.da Risignolo))",
+       "idx": 5,
+       "arr": "12.54",
+       "dep": "12.54"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (Scavi del Casale))",
+       "idx": 6,
+       "arr": "12.55",
+       "dep": "12.55"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (Via S.Principato 10)",
+       "idx": 7,
+       "arr": "13.01",
+       "dep": "13.01"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
+       "idx": 8,
+       "arr": "13.05",
+       "dep": "13.05"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2573",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "84 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-15",
+       "2026-09-16",
+       "2026-09-17",
+       "2026-09-18",
+       "2026-09-19",
+       "2026-09-21",
+       "2026-09-22",
+       "2026-09-23",
+       "2026-09-24",
+       "2026-09-25",
+       "2026-09-26",
+       "2026-09-28",
+       "2026-09-29",
+       "2026-09-30",
+       "2026-10-01",
+       "2026-10-02",
+       "2026-10-03",
+       "2026-10-05",
+       "2026-10-06",
+       "2026-10-07",
+       "2026-10-08",
+       "2026-10-09",
+       "2026-10-10",
+       "2026-10-12",
+       "2026-10-13",
+       "2026-10-14",
+       "2026-10-15",
+       "2026-10-16",
+       "2026-10-17",
+       "2026-10-19",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-23",
+       "2026-10-24",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-30",
+       "2026-10-31",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-06",
+       "2026-11-07",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-13",
+       "2026-11-14",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-20",
+       "2026-11-21",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-28",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-05",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-12",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-19",
+       "2026-12-21",
+       "2026-12-22"
+      ]
+     },
+     "reverse": false,
+     "variant": "B.fran-P.Arm-S.Cuore",
+     "stops": [
+      {
+       "stop": "BARRAFRANCA (Corso V.Emanuele 462)",
+       "idx": 0,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso V.Emanuele 216)",
+       "idx": 1,
+       "arr": "6.53",
+       "dep": "6.53"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 219)",
+       "idx": 2,
+       "arr": "6.57",
+       "dep": "6.57"
+      },
+      {
+       "stop": "BARRAFRANCA (Via Campania 7)",
+       "idx": 3,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 453/466)",
+       "idx": 4,
+       "arr": "7.02",
+       "dep": "7.02"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 551)",
+       "idx": 5,
+       "arr": "7.03",
+       "dep": "7.03"
+      },
+      {
+       "stop": "BARRAFRANCA (SP42 (X C.da Zotta))",
+       "idx": 6,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (Braemi))",
+       "idx": 7,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (C.da Risignolo))",
+       "idx": 8,
+       "arr": "7.24",
+       "dep": "7.24"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (Scavi del Casale))",
+       "idx": 9,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (Via S.Principato 10)",
+       "idx": 10,
+       "arr": "7.31",
+       "dep": "7.31"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
+       "idx": 11,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (Via G.Carducci 13)",
+       "idx": 12,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2570",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "102 exact dates (merged templates)",
+      "explicit_dates": [
        "2026-08-24",
        "2026-08-25",
        "2026-08-26",
@@ -57,7 +513,91 @@
        "2026-09-09",
        "2026-09-10",
        "2026-09-11",
-       "2026-09-12"
+       "2026-09-12",
+       "2026-09-15",
+       "2026-09-16",
+       "2026-09-17",
+       "2026-09-18",
+       "2026-09-19",
+       "2026-09-21",
+       "2026-09-22",
+       "2026-09-23",
+       "2026-09-24",
+       "2026-09-25",
+       "2026-09-26",
+       "2026-09-28",
+       "2026-09-29",
+       "2026-09-30",
+       "2026-10-01",
+       "2026-10-02",
+       "2026-10-03",
+       "2026-10-05",
+       "2026-10-06",
+       "2026-10-07",
+       "2026-10-08",
+       "2026-10-09",
+       "2026-10-10",
+       "2026-10-12",
+       "2026-10-13",
+       "2026-10-14",
+       "2026-10-15",
+       "2026-10-16",
+       "2026-10-17",
+       "2026-10-19",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-23",
+       "2026-10-24",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-30",
+       "2026-10-31",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-06",
+       "2026-11-07",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-13",
+       "2026-11-14",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-20",
+       "2026-11-21",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-28",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-05",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-12",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-19",
+       "2026-12-21",
+       "2026-12-22"
       ]
      },
      "reverse": false,
@@ -155,6 +695,316 @@
       }
      ],
      "valid": true
+    },
+    {
+     "corsa": "2571",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "70 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-15",
+       "2026-09-16",
+       "2026-09-17",
+       "2026-09-18",
+       "2026-09-21",
+       "2026-09-22",
+       "2026-09-23",
+       "2026-09-24",
+       "2026-09-25",
+       "2026-09-28",
+       "2026-09-29",
+       "2026-09-30",
+       "2026-10-01",
+       "2026-10-02",
+       "2026-10-05",
+       "2026-10-06",
+       "2026-10-07",
+       "2026-10-08",
+       "2026-10-09",
+       "2026-10-12",
+       "2026-10-13",
+       "2026-10-14",
+       "2026-10-15",
+       "2026-10-16",
+       "2026-10-19",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-23",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-30",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-06",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-13",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-20",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-21",
+       "2026-12-22"
+      ]
+     },
+     "reverse": false,
+     "variant": "P.perz-B.fran-P.Arm",
+     "stops": [
+      {
+       "stop": "PIETRAPERZIA (Via G.Marconi(incr.Via G.Pastorello))",
+       "idx": 0,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "PIETRAPERZIA (Via G.Marconi 68/71)",
+       "idx": 1,
+       "arr": "7.51",
+       "dep": "7.51"
+      },
+      {
+       "stop": "PIETRAPERZIA (Viale della Libertà 12/13)",
+       "idx": 2,
+       "arr": "7.52",
+       "dep": "7.52"
+      },
+      {
+       "stop": "PIETRAPERZIA (SS191 (Bivio Luogo))",
+       "idx": 3,
+       "arr": "7.55",
+       "dep": "7.55"
+      },
+      {
+       "stop": "BARRAFRANCA (SS191 (C.da Albana))",
+       "idx": 4,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 551)",
+       "idx": 5,
+       "arr": "8.02",
+       "dep": "8.02"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 453/466)",
+       "idx": 6,
+       "arr": "8.03",
+       "dep": "8.03"
+      },
+      {
+       "stop": "BARRAFRANCA (Via Campania 7)",
+       "idx": 7,
+       "arr": "8.05",
+       "dep": "8.05"
+      },
+      {
+       "stop": "BARRAFRANCA (C.da Zotta)",
+       "idx": 8,
+       "arr": "8.09",
+       "dep": "8.09"
+      },
+      {
+       "stop": "BARRAFRANCA (SP42 (X C.da Zotta))",
+       "idx": 9,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (Braemi))",
+       "idx": 10,
+       "arr": "8.20",
+       "dep": "8.20"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (C.da Risignolo))",
+       "idx": 11,
+       "arr": "8.29",
+       "dep": "8.29"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (Scavi del Casale))",
+       "idx": 12,
+       "arr": "8.30",
+       "dep": "8.30"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (Via S.Principato 10)",
+       "idx": 13,
+       "arr": "8.36",
+       "dep": "8.36"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
+       "idx": 14,
+       "arr": "8.40",
+       "dep": "8.40"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "18211",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "70 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-15",
+       "2026-09-16",
+       "2026-09-17",
+       "2026-09-18",
+       "2026-09-21",
+       "2026-09-22",
+       "2026-09-23",
+       "2026-09-24",
+       "2026-09-25",
+       "2026-09-28",
+       "2026-09-29",
+       "2026-09-30",
+       "2026-10-01",
+       "2026-10-02",
+       "2026-10-05",
+       "2026-10-06",
+       "2026-10-07",
+       "2026-10-08",
+       "2026-10-09",
+       "2026-10-12",
+       "2026-10-13",
+       "2026-10-14",
+       "2026-10-15",
+       "2026-10-16",
+       "2026-10-19",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-23",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-30",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-06",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-13",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-20",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-21",
+       "2026-12-22"
+      ]
+     },
+     "reverse": false,
+     "variant": "P.perz-B.fran",
+     "stops": [
+      {
+       "stop": "PIETRAPERZIA (Via G.Marconi(incr.Via G.Pastorello))",
+       "idx": 0,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "PIETRAPERZIA (Via G.Marconi 68/71)",
+       "idx": 1,
+       "arr": "14.06",
+       "dep": "14.06"
+      },
+      {
+       "stop": "PIETRAPERZIA (Viale della Libertà 12/13)",
+       "idx": 2,
+       "arr": "14.07",
+       "dep": "14.07"
+      },
+      {
+       "stop": "PIETRAPERZIA (SS191 (Bivio Luogo))",
+       "idx": 3,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "BARRAFRANCA (SS191 (C.da Albana))",
+       "idx": 4,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 551)",
+       "idx": 5,
+       "arr": "14.17",
+       "dep": "14.17"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 453/466)",
+       "idx": 6,
+       "arr": "14.18",
+       "dep": "14.18"
+      },
+      {
+       "stop": "BARRAFRANCA (Via Campania 7)",
+       "idx": 7,
+       "arr": "14.20",
+       "dep": "14.20"
+      }
+     ],
+     "valid": true
     }
    ]
   },
@@ -166,31 +1016,409 @@
     "PIAZZA ARMERINA (SP15 (C.da Risignolo))",
     "PIAZZA ARMERINA (SP15 (Braemi))",
     "BARRAFRANCA (SP42 (X C.da Zotta))",
-    "BARRAFRANCA (C.da Zotta)",
-    "BARRAFRANCA (Via Campania 7)",
-    "BARRAFRANCA (Corso Garibaldi 453/466)",
     "BARRAFRANCA (Corso Garibaldi 551)",
+    "BARRAFRANCA (Corso Garibaldi 453/466)",
+    "BARRAFRANCA (Corso V.Emanuele 462)",
+    "BARRAFRANCA (Corso V.Emanuele 216)",
+    "BARRAFRANCA (Corso Garibaldi 219)",
+    "BARRAFRANCA (Via Campania 7)",
+    "BARRAFRANCA (C.da Zotta)",
     "BARRAFRANCA (SS191 (C.da Albana))",
     "PIETRAPERZIA (SS191 (Bivio Luogo))",
     "PIETRAPERZIA (Viale della Libertà 12/13)",
     "PIETRAPERZIA (Via G.Marconi 68/71)",
-    "PIETRAPERZIA (Via G.Marconi(incr.Via G.Pastorello))"
+    "PIETRAPERZIA (Via G.Marconi(incr.Via G.Pastorello))",
+    "PIAZZA ARMERINA (Via G.Carducci 13)"
    ],
    "trips": [
+    {
+     "corsa": "2582",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "28 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-18",
+       "2026-09-21",
+       "2026-09-25",
+       "2026-09-28",
+       "2026-10-02",
+       "2026-10-05",
+       "2026-10-09",
+       "2026-10-12",
+       "2026-10-16",
+       "2026-10-19",
+       "2026-10-23",
+       "2026-10-26",
+       "2026-10-30",
+       "2026-11-02",
+       "2026-11-06",
+       "2026-11-09",
+       "2026-11-13",
+       "2026-11-16",
+       "2026-11-20",
+       "2026-11-23",
+       "2026-11-27",
+       "2026-11-30",
+       "2026-12-04",
+       "2026-12-07",
+       "2026-12-11",
+       "2026-12-14",
+       "2026-12-18",
+       "2026-12-21"
+      ]
+     },
+     "reverse": true,
+     "variant": "P.Arm-B.fran",
+     "stops": [
+      {
+       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (Via S.Principato 3)",
+       "idx": 1,
+       "arr": "14.19",
+       "dep": "14.19"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (Scavi del Casale))",
+       "idx": 2,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (C.da Risignolo))",
+       "idx": 3,
+       "arr": "14.26",
+       "dep": "14.26"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (Braemi))",
+       "idx": 4,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "BARRAFRANCA (SP42 (X C.da Zotta))",
+       "idx": 5,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 551)",
+       "idx": 6,
+       "arr": "14.47",
+       "dep": "14.47"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 453/466)",
+       "idx": 7,
+       "arr": "14.48",
+       "dep": "14.48"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso V.Emanuele 462)",
+       "idx": 8,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso V.Emanuele 216)",
+       "idx": 9,
+       "arr": "14.53",
+       "dep": "14.53"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 219)",
+       "idx": 10,
+       "arr": "14.57",
+       "dep": "14.57"
+      },
+      {
+       "stop": "BARRAFRANCA (Via Campania 7)",
+       "idx": 11,
+       "arr": "15.00",
+       "dep": "15.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2582",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "56 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-15",
+       "2026-09-16",
+       "2026-09-17",
+       "2026-09-19",
+       "2026-09-22",
+       "2026-09-23",
+       "2026-09-24",
+       "2026-09-26",
+       "2026-09-29",
+       "2026-09-30",
+       "2026-10-01",
+       "2026-10-03",
+       "2026-10-06",
+       "2026-10-07",
+       "2026-10-08",
+       "2026-10-10",
+       "2026-10-13",
+       "2026-10-14",
+       "2026-10-15",
+       "2026-10-17",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-24",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-31",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-07",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-14",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-21",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-28",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-05",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-12",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-19",
+       "2026-12-22"
+      ]
+     },
+     "reverse": true,
+     "variant": "P.Arm-B.fran",
+     "stops": [
+      {
+       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
+       "idx": 0,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (Via S.Principato 3)",
+       "idx": 1,
+       "arr": "13.34",
+       "dep": "13.34"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (Scavi del Casale))",
+       "idx": 2,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (C.da Risignolo))",
+       "idx": 3,
+       "arr": "13.41",
+       "dep": "13.41"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (Braemi))",
+       "idx": 4,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "BARRAFRANCA (SP42 (X C.da Zotta))",
+       "idx": 5,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 551)",
+       "idx": 6,
+       "arr": "14.02",
+       "dep": "14.02"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 453/466)",
+       "idx": 7,
+       "arr": "14.03",
+       "dep": "14.03"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso V.Emanuele 462)",
+       "idx": 8,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso V.Emanuele 216)",
+       "idx": 9,
+       "arr": "14.08",
+       "dep": "14.08"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 219)",
+       "idx": 10,
+       "arr": "14.12",
+       "dep": "14.12"
+      },
+      {
+       "stop": "BARRAFRANCA (Via Campania 7)",
+       "idx": 11,
+       "arr": "14.15",
+       "dep": "14.15"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2578",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "14 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-19",
+       "2026-09-26",
+       "2026-10-03",
+       "2026-10-10",
+       "2026-10-17",
+       "2026-10-24",
+       "2026-10-31",
+       "2026-11-07",
+       "2026-11-14",
+       "2026-11-21",
+       "2026-11-28",
+       "2026-12-05",
+       "2026-12-12",
+       "2026-12-19"
+      ]
+     },
+     "reverse": true,
+     "variant": "P.Arm-B.fran-P.perz",
+     "stops": [
+      {
+       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
+       "idx": 0,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (Via S.Principato 3)",
+       "idx": 1,
+       "arr": "14.24",
+       "dep": "14.24"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (Scavi del Casale))",
+       "idx": 2,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (C.da Risignolo))",
+       "idx": 3,
+       "arr": "14.31",
+       "dep": "14.31"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (Braemi))",
+       "idx": 4,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "BARRAFRANCA (SP42 (X C.da Zotta))",
+       "idx": 5,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "BARRAFRANCA (C.da Zotta)",
+       "idx": 6,
+       "arr": "14.51",
+       "dep": "14.51"
+      },
+      {
+       "stop": "BARRAFRANCA (Via Campania 7)",
+       "idx": 7,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 453/466)",
+       "idx": 8,
+       "arr": "14.56",
+       "dep": "14.56"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 551)",
+       "idx": 9,
+       "arr": "14.57",
+       "dep": "14.57"
+      },
+      {
+       "stop": "BARRAFRANCA (SS191 (C.da Albana))",
+       "idx": 10,
+       "arr": "14.59",
+       "dep": "14.59"
+      },
+      {
+       "stop": "PIETRAPERZIA (SS191 (Bivio Luogo))",
+       "idx": 11,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "PIETRAPERZIA (Viale della Libertà 12/13)",
+       "idx": 12,
+       "arr": "15.08",
+       "dep": "15.08"
+      },
+      {
+       "stop": "PIETRAPERZIA (Via G.Marconi 68/71)",
+       "idx": 13,
+       "arr": "15.09",
+       "dep": "15.09"
+      },
+      {
+       "stop": "PIETRAPERZIA (Via G.Marconi(incr.Via G.Pastorello))",
+       "idx": 14,
+       "arr": "15.10",
+       "dep": "15.10"
+      }
+     ],
+     "valid": true
+    },
     {
      "corsa": "AGGIUNTA 55",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "24 exact dates from Albatross validities",
+      "raw": "18 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-08-17",
-       "2026-08-18",
-       "2026-08-19",
-       "2026-08-20",
-       "2026-08-21",
-       "2026-08-22",
        "2026-08-24",
        "2026-08-25",
        "2026-08-26",
@@ -303,6 +1531,778 @@
        "idx": 14,
        "arr": "14.50",
        "dep": "14.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2577",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "70 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-15",
+       "2026-09-16",
+       "2026-09-17",
+       "2026-09-18",
+       "2026-09-21",
+       "2026-09-22",
+       "2026-09-23",
+       "2026-09-24",
+       "2026-09-25",
+       "2026-09-28",
+       "2026-09-29",
+       "2026-09-30",
+       "2026-10-01",
+       "2026-10-02",
+       "2026-10-05",
+       "2026-10-06",
+       "2026-10-07",
+       "2026-10-08",
+       "2026-10-09",
+       "2026-10-12",
+       "2026-10-13",
+       "2026-10-14",
+       "2026-10-15",
+       "2026-10-16",
+       "2026-10-19",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-23",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-30",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-06",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-13",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-20",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-21",
+       "2026-12-22"
+      ]
+     },
+     "reverse": true,
+     "variant": "P.Arm-B.fran-P.perz",
+     "stops": [
+      {
+       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
+       "idx": 0,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (Via S.Principato 3)",
+       "idx": 1,
+       "arr": "13.14",
+       "dep": "13.14"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (Scavi del Casale))",
+       "idx": 2,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (C.da Risignolo))",
+       "idx": 3,
+       "arr": "13.21",
+       "dep": "13.21"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (Braemi))",
+       "idx": 4,
+       "arr": "13.30",
+       "dep": "13.30"
+      },
+      {
+       "stop": "BARRAFRANCA (SP42 (X C.da Zotta))",
+       "idx": 5,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "BARRAFRANCA (C.da Zotta)",
+       "idx": 6,
+       "arr": "13.41",
+       "dep": "13.41"
+      },
+      {
+       "stop": "BARRAFRANCA (Via Campania 7)",
+       "idx": 7,
+       "arr": "13.45",
+       "dep": "13.45"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 453/466)",
+       "idx": 8,
+       "arr": "13.46",
+       "dep": "13.46"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 551)",
+       "idx": 9,
+       "arr": "13.47",
+       "dep": "13.47"
+      },
+      {
+       "stop": "BARRAFRANCA (SS191 (C.da Albana))",
+       "idx": 10,
+       "arr": "13.49",
+       "dep": "13.49"
+      },
+      {
+       "stop": "PIETRAPERZIA (SS191 (Bivio Luogo))",
+       "idx": 11,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "PIETRAPERZIA (Viale della Libertà 12/13)",
+       "idx": 12,
+       "arr": "13.58",
+       "dep": "13.58"
+      },
+      {
+       "stop": "PIETRAPERZIA (Via G.Marconi 68/71)",
+       "idx": 13,
+       "arr": "13.59",
+       "dep": "13.59"
+      },
+      {
+       "stop": "PIETRAPERZIA (Via G.Marconi(incr.Via G.Pastorello))",
+       "idx": 14,
+       "arr": "14.00",
+       "dep": "14.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2578",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "70 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-15",
+       "2026-09-16",
+       "2026-09-17",
+       "2026-09-18",
+       "2026-09-21",
+       "2026-09-22",
+       "2026-09-23",
+       "2026-09-24",
+       "2026-09-25",
+       "2026-09-28",
+       "2026-09-29",
+       "2026-09-30",
+       "2026-10-01",
+       "2026-10-02",
+       "2026-10-05",
+       "2026-10-06",
+       "2026-10-07",
+       "2026-10-08",
+       "2026-10-09",
+       "2026-10-12",
+       "2026-10-13",
+       "2026-10-14",
+       "2026-10-15",
+       "2026-10-16",
+       "2026-10-19",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-23",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-30",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-06",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-13",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-20",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-21",
+       "2026-12-22"
+      ]
+     },
+     "reverse": true,
+     "variant": "P.Arm S.Cuore-B.fran-P.perz",
+     "stops": [
+      {
+       "stop": "PIAZZA ARMERINA (Via G.Carducci 13)",
+       "idx": 0,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
+       "idx": 1,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (Via S.Principato 3)",
+       "idx": 2,
+       "arr": "14.24",
+       "dep": "14.24"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (Scavi del Casale))",
+       "idx": 3,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (C.da Risignolo))",
+       "idx": 4,
+       "arr": "14.31",
+       "dep": "14.31"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (Braemi))",
+       "idx": 5,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "BARRAFRANCA (SP42 (X C.da Zotta))",
+       "idx": 6,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "BARRAFRANCA (C.da Zotta)",
+       "idx": 7,
+       "arr": "14.51",
+       "dep": "14.51"
+      },
+      {
+       "stop": "BARRAFRANCA (Via Campania 7)",
+       "idx": 8,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 453/466)",
+       "idx": 9,
+       "arr": "14.56",
+       "dep": "14.56"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 551)",
+       "idx": 10,
+       "arr": "14.57",
+       "dep": "14.57"
+      },
+      {
+       "stop": "BARRAFRANCA (SS191 (C.da Albana))",
+       "idx": 11,
+       "arr": "14.59",
+       "dep": "14.59"
+      },
+      {
+       "stop": "PIETRAPERZIA (SS191 (Bivio Luogo))",
+       "idx": 12,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "PIETRAPERZIA (Viale della Libertà 12/13)",
+       "idx": 13,
+       "arr": "15.08",
+       "dep": "15.08"
+      },
+      {
+       "stop": "PIETRAPERZIA (Via G.Marconi 68/71)",
+       "idx": 14,
+       "arr": "15.09",
+       "dep": "15.09"
+      },
+      {
+       "stop": "PIETRAPERZIA (Via G.Marconi(incr.Via G.Pastorello))",
+       "idx": 15,
+       "arr": "15.10",
+       "dep": "15.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "18212",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "70 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-15",
+       "2026-09-16",
+       "2026-09-17",
+       "2026-09-18",
+       "2026-09-21",
+       "2026-09-22",
+       "2026-09-23",
+       "2026-09-24",
+       "2026-09-25",
+       "2026-09-28",
+       "2026-09-29",
+       "2026-09-30",
+       "2026-10-01",
+       "2026-10-02",
+       "2026-10-05",
+       "2026-10-06",
+       "2026-10-07",
+       "2026-10-08",
+       "2026-10-09",
+       "2026-10-12",
+       "2026-10-13",
+       "2026-10-14",
+       "2026-10-15",
+       "2026-10-16",
+       "2026-10-19",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-23",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-30",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-06",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-13",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-20",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-21",
+       "2026-12-22"
+      ]
+     },
+     "reverse": true,
+     "variant": "B.fran-P.perz",
+     "stops": [
+      {
+       "stop": "BARRAFRANCA (Via Campania 7)",
+       "idx": 0,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 453/466)",
+       "idx": 1,
+       "arr": "14.21",
+       "dep": "14.21"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 551)",
+       "idx": 2,
+       "arr": "14.22",
+       "dep": "14.22"
+      },
+      {
+       "stop": "BARRAFRANCA (SS191 (C.da Albana))",
+       "idx": 3,
+       "arr": "14.24",
+       "dep": "14.24"
+      },
+      {
+       "stop": "PIETRAPERZIA (SS191 (Bivio Luogo))",
+       "idx": 4,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "PIETRAPERZIA (Viale della Libertà 12/13)",
+       "idx": 5,
+       "arr": "14.33",
+       "dep": "14.33"
+      },
+      {
+       "stop": "PIETRAPERZIA (Via G.Marconi 68/71)",
+       "idx": 6,
+       "arr": "14.34",
+       "dep": "14.34"
+      },
+      {
+       "stop": "PIETRAPERZIA (Via G.Marconi(incr.Via G.Pastorello))",
+       "idx": 7,
+       "arr": "14.35",
+       "dep": "14.35"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2581",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "70 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-15",
+       "2026-09-16",
+       "2026-09-17",
+       "2026-09-18",
+       "2026-09-21",
+       "2026-09-22",
+       "2026-09-23",
+       "2026-09-24",
+       "2026-09-25",
+       "2026-09-28",
+       "2026-09-29",
+       "2026-09-30",
+       "2026-10-01",
+       "2026-10-02",
+       "2026-10-05",
+       "2026-10-06",
+       "2026-10-07",
+       "2026-10-08",
+       "2026-10-09",
+       "2026-10-12",
+       "2026-10-13",
+       "2026-10-14",
+       "2026-10-15",
+       "2026-10-16",
+       "2026-10-19",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-23",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-30",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-06",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-13",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-20",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-21",
+       "2026-12-22"
+      ]
+     },
+     "reverse": true,
+     "variant": "P.Arm-B.fran",
+     "stops": [
+      {
+       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
+       "idx": 0,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (Via S.Principato 3)",
+       "idx": 1,
+       "arr": "11.49",
+       "dep": "11.49"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (Scavi del Casale))",
+       "idx": 2,
+       "arr": "11.55",
+       "dep": "11.55"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (C.da Risignolo))",
+       "idx": 3,
+       "arr": "11.56",
+       "dep": "11.56"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (Braemi))",
+       "idx": 4,
+       "arr": "12.05",
+       "dep": "12.05"
+      },
+      {
+       "stop": "BARRAFRANCA (SP42 (X C.da Zotta))",
+       "idx": 5,
+       "arr": "12.15",
+       "dep": "12.15"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 551)",
+       "idx": 6,
+       "arr": "12.17",
+       "dep": "12.17"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 453/466)",
+       "idx": 7,
+       "arr": "12.18",
+       "dep": "12.18"
+      },
+      {
+       "stop": "BARRAFRANCA (Via Campania 7)",
+       "idx": 8,
+       "arr": "12.20",
+       "dep": "12.20"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2580",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "70 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-15",
+       "2026-09-16",
+       "2026-09-17",
+       "2026-09-18",
+       "2026-09-21",
+       "2026-09-22",
+       "2026-09-23",
+       "2026-09-24",
+       "2026-09-25",
+       "2026-09-28",
+       "2026-09-29",
+       "2026-09-30",
+       "2026-10-01",
+       "2026-10-02",
+       "2026-10-05",
+       "2026-10-06",
+       "2026-10-07",
+       "2026-10-08",
+       "2026-10-09",
+       "2026-10-12",
+       "2026-10-13",
+       "2026-10-14",
+       "2026-10-15",
+       "2026-10-16",
+       "2026-10-19",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-23",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-30",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-06",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-13",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-20",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-21",
+       "2026-12-22"
+      ]
+     },
+     "reverse": true,
+     "variant": "P.Arm-B.fran",
+     "stops": [
+      {
+       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
+       "idx": 0,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (Via S.Principato 3)",
+       "idx": 1,
+       "arr": "7.44",
+       "dep": "7.44"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (Scavi del Casale))",
+       "idx": 2,
+       "arr": "7.50",
+       "dep": "7.50"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (C.da Risignolo))",
+       "idx": 3,
+       "arr": "7.51",
+       "dep": "7.51"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (SP15 (Braemi))",
+       "idx": 4,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "BARRAFRANCA (SP42 (X C.da Zotta))",
+       "idx": 5,
+       "arr": "8.10",
+       "dep": "8.10"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 551)",
+       "idx": 6,
+       "arr": "8.12",
+       "dep": "8.12"
+      },
+      {
+       "stop": "BARRAFRANCA (Corso Garibaldi 453/466)",
+       "idx": 7,
+       "arr": "8.13",
+       "dep": "8.13"
+      },
+      {
+       "stop": "BARRAFRANCA (Via Campania 7)",
+       "idx": 8,
+       "arr": "8.15",
+       "dep": "8.15"
       }
      ],
      "valid": true

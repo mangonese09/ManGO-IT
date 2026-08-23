@@ -1,0 +1,356 @@
+{
+ "operator": "SAIS Autolinee",
+ "route_id": "sais-176",
+ "name": "S. Caterina Villarmosa - Enna",
+ "short_name": "176",
+ "coords": "external",
+ "source": "api.saisautolinee.it line 786f6ca8-410c-4157-9434-fa55ec1670e3",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "S.CATERINA VILLARMOSA (Piazza Marconi)",
+    "S.CATERINA VILLARMOSA (SS121(C.da Musciarello))",
+    "S.CATERINA VILLARMOSA (SS121 (C.da Garcia))",
+    "VILLAROSA (Corso Garibaldi 277)",
+    "VILLAROSA (Corso Garibaldi 135)",
+    "VILLAROSA (SS121 (Madonna della Catena))",
+    "VILLAROSA (SS121 (Oleificio Madem))",
+    "VILLAROSA STAZIONE (SS121 (Bivio))",
+    "ENNA (SS121 (c.da Mancadarso))",
+    "ENNA (SS121 (Bivio Kamuth))",
+    "ENNA (Corso Sicilia 2)",
+    "ENNA (Terminal Bus Viale Diaz 80)"
+   ],
+   "trips": [
+    {
+     "corsa": "2543",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "70 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-15",
+       "2026-09-16",
+       "2026-09-17",
+       "2026-09-18",
+       "2026-09-21",
+       "2026-09-22",
+       "2026-09-23",
+       "2026-09-24",
+       "2026-09-25",
+       "2026-09-28",
+       "2026-09-29",
+       "2026-09-30",
+       "2026-10-01",
+       "2026-10-02",
+       "2026-10-05",
+       "2026-10-06",
+       "2026-10-07",
+       "2026-10-08",
+       "2026-10-09",
+       "2026-10-12",
+       "2026-10-13",
+       "2026-10-14",
+       "2026-10-15",
+       "2026-10-16",
+       "2026-10-19",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-23",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-30",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-06",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-13",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-20",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-21",
+       "2026-12-22"
+      ]
+     },
+     "reverse": false,
+     "variant": "S.cater-V.rosa-En",
+     "stops": [
+      {
+       "stop": "S.CATERINA VILLARMOSA (Piazza Marconi)",
+       "idx": 0,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "S.CATERINA VILLARMOSA (SS121(C.da Musciarello))",
+       "idx": 1,
+       "arr": "7.11",
+       "dep": "7.11"
+      },
+      {
+       "stop": "S.CATERINA VILLARMOSA (SS121 (C.da Garcia))",
+       "idx": 2,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 277)",
+       "idx": 3,
+       "arr": "7.22",
+       "dep": "7.22"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 135)",
+       "idx": 4,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Madonna della Catena))",
+       "idx": 5,
+       "arr": "7.28",
+       "dep": "7.28"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Oleificio Madem))",
+       "idx": 6,
+       "arr": "7.31",
+       "dep": "7.31"
+      },
+      {
+       "stop": "VILLAROSA STAZIONE (SS121 (Bivio))",
+       "idx": 7,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "ENNA (SS121 (c.da Mancadarso))",
+       "idx": 8,
+       "arr": "7.39",
+       "dep": "7.39"
+      },
+      {
+       "stop": "ENNA (SS121 (Bivio Kamuth))",
+       "idx": 9,
+       "arr": "7.44",
+       "dep": "7.44"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 10,
+       "arr": "7.49",
+       "dep": "7.49"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 11,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "ENNA (Terminal Bus Viale Diaz 80)",
+    "ENNA (SS121 (Bivio Kamuth))",
+    "ENNA (SS121 (c.da Mancadarso))",
+    "VILLAROSA STAZIONE (SS121 (Bivio))",
+    "VILLAROSA (SS121 (Oleificio Madem))",
+    "VILLAROSA (SS121 (Madonna della Catena))",
+    "VILLAROSA (Corso Garibaldi 134)",
+    "VILLAROSA (Corso Garibaldi 300)",
+    "S.CATERINA VILLARMOSA (SS121 (C.da Garcia))",
+    "S.CATERINA VILLARMOSA (SS121(C.da Musciarello))",
+    "S.CATERINA VILLARMOSA (Piazza Marconi)"
+   ],
+   "trips": [
+    {
+     "corsa": "2544",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "70 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-15",
+       "2026-09-16",
+       "2026-09-17",
+       "2026-09-18",
+       "2026-09-21",
+       "2026-09-22",
+       "2026-09-23",
+       "2026-09-24",
+       "2026-09-25",
+       "2026-09-28",
+       "2026-09-29",
+       "2026-09-30",
+       "2026-10-01",
+       "2026-10-02",
+       "2026-10-05",
+       "2026-10-06",
+       "2026-10-07",
+       "2026-10-08",
+       "2026-10-09",
+       "2026-10-12",
+       "2026-10-13",
+       "2026-10-14",
+       "2026-10-15",
+       "2026-10-16",
+       "2026-10-19",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-23",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-30",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-06",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-13",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-20",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-21",
+       "2026-12-22"
+      ]
+     },
+     "reverse": true,
+     "variant": "En-V.rosa-S.Cater",
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 0,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "ENNA (SS121 (Bivio Kamuth))",
+       "idx": 1,
+       "arr": "14.24",
+       "dep": "14.24"
+      },
+      {
+       "stop": "ENNA (SS121 (c.da Mancadarso))",
+       "idx": 2,
+       "arr": "14.29",
+       "dep": "14.29"
+      },
+      {
+       "stop": "VILLAROSA STAZIONE (SS121 (Bivio))",
+       "idx": 3,
+       "arr": "14.34",
+       "dep": "14.34"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Oleificio Madem))",
+       "idx": 4,
+       "arr": "14.39",
+       "dep": "14.39"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Madonna della Catena))",
+       "idx": 5,
+       "arr": "14.43",
+       "dep": "14.43"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 134)",
+       "idx": 6,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 300)",
+       "idx": 7,
+       "arr": "14.48",
+       "dep": "14.48"
+      },
+      {
+       "stop": "S.CATERINA VILLARMOSA (SS121 (C.da Garcia))",
+       "idx": 8,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "S.CATERINA VILLARMOSA (SS121(C.da Musciarello))",
+       "idx": 9,
+       "arr": "14.59",
+       "dep": "14.59"
+      },
+      {
+       "stop": "S.CATERINA VILLARMOSA (Piazza Marconi)",
+       "idx": 10,
+       "arr": "15.10",
+       "dep": "15.10"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}
