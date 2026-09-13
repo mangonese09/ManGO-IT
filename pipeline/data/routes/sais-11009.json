@@ -1,0 +1,591 @@
+{
+ "operator": "SAIS Autolinee",
+ "route_id": "sais-11009",
+ "name": "7 Settefarine - Ist. Alberghiero",
+ "short_name": "11009",
+ "coords": "external",
+ "source": "api.saisautolinee.it line 68869942-a864-4001-9840-43dc6a1351db",
+ "prescriptions": [],
+ "directions": [
+  {
+   "stops": [
+    "GELA (Via Settefarine, 288 (MS Marmo))",
+    "GELA (Piazza Stazione)",
+    "GELA (Via Niscemi (campo sportivo fronte 44))",
+    "GELA (Via Niscemi, 31)",
+    "GELA (Via Generale Cascino 205)",
+    "GELA (Via Generale Cascino, 9)",
+    "GELA (Via Giovanni Verga, 114)",
+    "GELA (Via Francesco Crispi, 132)",
+    "GELA (Via Francesco Crispi, 194)",
+    "GELA (Via Francesco Crispi, 318)",
+    "GELA (Via Francesco Crispi, 404)",
+    "GELA (Via Butera, 7)",
+    "GELA (Via Palazzi, 38)",
+    "GELA (Via Palazzi, 140)",
+    "GELA (Via Palazzi, 194)",
+    "GELA (Via Licata (fronte 5))",
+    "GELA (Via Enrico Mattei (Centro Sportivo))",
+    "GELA (Via Venezia fronte 592)",
+    "GELA (Via Franz Liszt fronte 55 Ist. Enogastronomico)"
+   ],
+   "trips": [
+    {
+     "corsa": "009001",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "70 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-15",
+       "2026-09-16",
+       "2026-09-17",
+       "2026-09-18",
+       "2026-09-21",
+       "2026-09-22",
+       "2026-09-23",
+       "2026-09-24",
+       "2026-09-25",
+       "2026-09-28",
+       "2026-09-29",
+       "2026-09-30",
+       "2026-10-01",
+       "2026-10-02",
+       "2026-10-05",
+       "2026-10-06",
+       "2026-10-07",
+       "2026-10-08",
+       "2026-10-09",
+       "2026-10-12",
+       "2026-10-13",
+       "2026-10-14",
+       "2026-10-15",
+       "2026-10-16",
+       "2026-10-19",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-23",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-30",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-06",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-13",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-20",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-21",
+       "2026-12-22"
+      ]
+     },
+     "reverse": false,
+     "variant": "GEL11009_3",
+     "stops": [
+      {
+       "stop": "GELA (Via Settefarine, 288 (MS Marmo))",
+       "idx": 0,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 1,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "GELA (Via Niscemi (campo sportivo fronte 44))",
+       "idx": 2,
+       "arr": "7.21",
+       "dep": "7.21"
+      },
+      {
+       "stop": "GELA (Via Niscemi, 31)",
+       "idx": 3,
+       "arr": "7.22",
+       "dep": "7.22"
+      },
+      {
+       "stop": "GELA (Via Generale Cascino 205)",
+       "idx": 4,
+       "arr": "7.23",
+       "dep": "7.23"
+      },
+      {
+       "stop": "GELA (Via Generale Cascino, 9)",
+       "idx": 5,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "GELA (Via Giovanni Verga, 114)",
+       "idx": 6,
+       "arr": "7.26",
+       "dep": "7.26"
+      },
+      {
+       "stop": "GELA (Via Francesco Crispi, 132)",
+       "idx": 7,
+       "arr": "7.27",
+       "dep": "7.27"
+      },
+      {
+       "stop": "GELA (Via Francesco Crispi, 194)",
+       "idx": 8,
+       "arr": "7.28",
+       "dep": "7.28"
+      },
+      {
+       "stop": "GELA (Via Francesco Crispi, 318)",
+       "idx": 9,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "GELA (Via Francesco Crispi, 404)",
+       "idx": 10,
+       "arr": "7.31",
+       "dep": "7.31"
+      },
+      {
+       "stop": "GELA (Via Butera, 7)",
+       "idx": 11,
+       "arr": "7.34",
+       "dep": "7.34"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 38)",
+       "idx": 12,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 140)",
+       "idx": 13,
+       "arr": "7.36",
+       "dep": "7.36"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 194)",
+       "idx": 14,
+       "arr": "7.37",
+       "dep": "7.37"
+      },
+      {
+       "stop": "GELA (Via Licata (fronte 5))",
+       "idx": 15,
+       "arr": "7.41",
+       "dep": "7.41"
+      },
+      {
+       "stop": "GELA (Via Enrico Mattei (Centro Sportivo))",
+       "idx": 16,
+       "arr": "7.43",
+       "dep": "7.43"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 592)",
+       "idx": 17,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "GELA (Via Franz Liszt fronte 55 Ist. Enogastronomico)",
+       "idx": 18,
+       "arr": "8.05",
+       "dep": "8.05"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  },
+  {
+   "stops": [
+    "GELA (Via Franz Liszt fronte 55 Ist. Enogastronomico)",
+    "GELA (Via Settefarine, 288 (MS Marmo))",
+    "GELA (Piazza Stazione)",
+    "GELA (Via Niscemi (campo sportivo fronte 44))",
+    "GELA (Via Niscemi, 31)",
+    "GELA (Via Generale Cascino 205)",
+    "GELA (Via Generale Cascino, 9)",
+    "GELA (Via Giovanni Verga, 114)",
+    "GELA (Via Francesco Crispi, 132)",
+    "GELA (Via Francesco Crispi, 194)",
+    "GELA (Via Francesco Crispi, 318)",
+    "GELA (Via Francesco Crispi, 404)",
+    "GELA (Via Butera, 7)",
+    "GELA (Via Palazzi, 38)",
+    "GELA (Via Palazzi, 140)",
+    "GELA (Via Palazzi, 194)",
+    "GELA (Via Licata (fronte 5))",
+    "GELA (Via Enrico Mattei (Centro Sportivo))",
+    "GELA (Via Venezia fronte 592)"
+   ],
+   "trips": [
+    {
+     "corsa": "009004",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "14 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-18",
+       "2026-09-25",
+       "2026-10-02",
+       "2026-10-09",
+       "2026-10-16",
+       "2026-10-23",
+       "2026-10-30",
+       "2026-11-06",
+       "2026-11-13",
+       "2026-11-20",
+       "2026-11-27",
+       "2026-12-04",
+       "2026-12-11",
+       "2026-12-18"
+      ]
+     },
+     "reverse": true,
+     "variant": "GEL11009_4",
+     "stops": [
+      {
+       "stop": "GELA (Via Franz Liszt fronte 55 Ist. Enogastronomico)",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "GELA (Via Settefarine, 288 (MS Marmo))",
+       "idx": 1,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 2,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "GELA (Via Niscemi (campo sportivo fronte 44))",
+       "idx": 3,
+       "arr": "14.31",
+       "dep": "14.31"
+      },
+      {
+       "stop": "GELA (Via Niscemi, 31)",
+       "idx": 4,
+       "arr": "14.32",
+       "dep": "14.32"
+      },
+      {
+       "stop": "GELA (Via Generale Cascino 205)",
+       "idx": 5,
+       "arr": "14.33",
+       "dep": "14.33"
+      },
+      {
+       "stop": "GELA (Via Generale Cascino, 9)",
+       "idx": 6,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "GELA (Via Giovanni Verga, 114)",
+       "idx": 7,
+       "arr": "14.36",
+       "dep": "14.36"
+      },
+      {
+       "stop": "GELA (Via Francesco Crispi, 132)",
+       "idx": 8,
+       "arr": "14.37",
+       "dep": "14.37"
+      },
+      {
+       "stop": "GELA (Via Francesco Crispi, 194)",
+       "idx": 9,
+       "arr": "14.38",
+       "dep": "14.38"
+      },
+      {
+       "stop": "GELA (Via Francesco Crispi, 318)",
+       "idx": 10,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "GELA (Via Francesco Crispi, 404)",
+       "idx": 11,
+       "arr": "14.41",
+       "dep": "14.41"
+      },
+      {
+       "stop": "GELA (Via Butera, 7)",
+       "idx": 12,
+       "arr": "14.44",
+       "dep": "14.44"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 38)",
+       "idx": 13,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 140)",
+       "idx": 14,
+       "arr": "14.46",
+       "dep": "14.46"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 194)",
+       "idx": 15,
+       "arr": "14.47",
+       "dep": "14.47"
+      },
+      {
+       "stop": "GELA (Via Licata (fronte 5))",
+       "idx": 16,
+       "arr": "14.51",
+       "dep": "14.51"
+      },
+      {
+       "stop": "GELA (Via Enrico Mattei (Centro Sportivo))",
+       "idx": 17,
+       "arr": "14.53",
+       "dep": "14.53"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 592)",
+       "idx": 18,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "009002",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "56 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-15",
+       "2026-09-16",
+       "2026-09-17",
+       "2026-09-21",
+       "2026-09-22",
+       "2026-09-23",
+       "2026-09-24",
+       "2026-09-28",
+       "2026-09-29",
+       "2026-09-30",
+       "2026-10-01",
+       "2026-10-05",
+       "2026-10-06",
+       "2026-10-07",
+       "2026-10-08",
+       "2026-10-12",
+       "2026-10-13",
+       "2026-10-14",
+       "2026-10-15",
+       "2026-10-19",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-21",
+       "2026-12-22"
+      ]
+     },
+     "reverse": true,
+     "variant": "GEL11009_4",
+     "stops": [
+      {
+       "stop": "GELA (Via Franz Liszt fronte 55 Ist. Enogastronomico)",
+       "idx": 0,
+       "arr": "14.35",
+       "dep": "14.35"
+      },
+      {
+       "stop": "GELA (Via Settefarine, 288 (MS Marmo))",
+       "idx": 1,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "GELA (Piazza Stazione)",
+       "idx": 2,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "GELA (Via Niscemi (campo sportivo fronte 44))",
+       "idx": 3,
+       "arr": "15.06",
+       "dep": "15.06"
+      },
+      {
+       "stop": "GELA (Via Niscemi, 31)",
+       "idx": 4,
+       "arr": "15.07",
+       "dep": "15.07"
+      },
+      {
+       "stop": "GELA (Via Generale Cascino 205)",
+       "idx": 5,
+       "arr": "15.08",
+       "dep": "15.08"
+      },
+      {
+       "stop": "GELA (Via Generale Cascino, 9)",
+       "idx": 6,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "GELA (Via Giovanni Verga, 114)",
+       "idx": 7,
+       "arr": "15.11",
+       "dep": "15.11"
+      },
+      {
+       "stop": "GELA (Via Francesco Crispi, 132)",
+       "idx": 8,
+       "arr": "15.12",
+       "dep": "15.12"
+      },
+      {
+       "stop": "GELA (Via Francesco Crispi, 194)",
+       "idx": 9,
+       "arr": "15.13",
+       "dep": "15.13"
+      },
+      {
+       "stop": "GELA (Via Francesco Crispi, 318)",
+       "idx": 10,
+       "arr": "15.15",
+       "dep": "15.15"
+      },
+      {
+       "stop": "GELA (Via Francesco Crispi, 404)",
+       "idx": 11,
+       "arr": "15.16",
+       "dep": "15.16"
+      },
+      {
+       "stop": "GELA (Via Butera, 7)",
+       "idx": 12,
+       "arr": "15.19",
+       "dep": "15.19"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 38)",
+       "idx": 13,
+       "arr": "15.20",
+       "dep": "15.20"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 140)",
+       "idx": 14,
+       "arr": "15.21",
+       "dep": "15.21"
+      },
+      {
+       "stop": "GELA (Via Palazzi, 194)",
+       "idx": 15,
+       "arr": "15.22",
+       "dep": "15.22"
+      },
+      {
+       "stop": "GELA (Via Licata (fronte 5))",
+       "idx": 16,
+       "arr": "15.26",
+       "dep": "15.26"
+      },
+      {
+       "stop": "GELA (Via Enrico Mattei (Centro Sportivo))",
+       "idx": 17,
+       "arr": "15.28",
+       "dep": "15.28"
+      },
+      {
+       "stop": "GELA (Via Venezia fronte 592)",
+       "idx": 18,
+       "arr": "15.30",
+       "dep": "15.30"
+      }
+     ],
+     "valid": true
+    }
+   ]
+  }
+ ]
+}

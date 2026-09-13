@@ -29,11 +29,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "21 exact dates (merged templates)",
+      "raw": "18 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-08-30",
-       "2026-09-06",
-       "2026-09-13",
        "2026-09-20",
        "2026-09-27",
        "2026-10-04",
@@ -120,18 +117,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "87 exact dates (merged templates)",
+      "raw": "77 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-08-31",
-       "2026-09-01",
-       "2026-09-02",
-       "2026-09-03",
-       "2026-09-04",
-       "2026-09-07",
-       "2026-09-08",
-       "2026-09-09",
-       "2026-09-10",
-       "2026-09-11",
        "2026-09-14",
        "2026-09-15",
        "2026-09-16",
@@ -311,23 +298,101 @@
    ],
    "trips": [
     {
+     "corsa": "2503",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "18 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-20",
+       "2026-09-27",
+       "2026-10-04",
+       "2026-10-11",
+       "2026-10-18",
+       "2026-10-25",
+       "2026-11-01",
+       "2026-11-08",
+       "2026-11-15",
+       "2026-11-22",
+       "2026-11-29",
+       "2026-12-06",
+       "2026-12-08",
+       "2026-12-13",
+       "2026-12-20",
+       "2026-12-25",
+       "2026-12-26",
+       "2026-12-27"
+      ]
+     },
+     "reverse": true,
+     "variant": "Caltagirone - EN B - PA",
+     "stops": [
+      {
+       "stop": "CALTAGIRONE (Viale Sicilia)",
+       "idx": 0,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "MIRABELLA IMBACCARI (Via G.Lupis(incr.Piazza A.Moro))",
+       "idx": 1,
+       "arr": "16.55",
+       "dep": "16.55"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
+       "idx": 2,
+       "arr": "17.20",
+       "dep": "17.20"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti 56(incr.Via Nettuno))",
+       "idx": 3,
+       "arr": "17.39",
+       "dep": "17.39"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
+       "idx": 4,
+       "arr": "17.40",
+       "dep": "17.40"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "idx": 5,
+       "arr": "17.48",
+       "dep": "17.48"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 6,
+       "arr": "17.50",
+       "dep": "17.50"
+      },
+      {
+       "stop": "PALERMO (Via Oreto 464)",
+       "idx": 7,
+       "arr": "19.20",
+       "dep": "19.20"
+      },
+      {
+       "stop": "PALERMO (Stazione - T.Bus Via Fazello)",
+       "idx": 8,
+       "arr": "19.25",
+       "dep": "19.25"
+      }
+     ],
+     "valid": true
+    },
+    {
      "corsa": "2502",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "87 exact dates (merged templates)",
+      "raw": "77 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-08-31",
-       "2026-09-01",
-       "2026-09-02",
-       "2026-09-03",
-       "2026-09-04",
-       "2026-09-07",
-       "2026-09-08",
-       "2026-09-09",
-       "2026-09-10",
-       "2026-09-11",
        "2026-09-14",
        "2026-09-15",
        "2026-09-16",
@@ -463,97 +528,6 @@
        "idx": 8,
        "arr": "7.35",
        "dep": "7.35"
-      }
-     ],
-     "valid": true
-    },
-    {
-     "corsa": "2503",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "21 exact dates (merged templates)",
-      "explicit_dates": [
-       "2026-08-30",
-       "2026-09-06",
-       "2026-09-13",
-       "2026-09-20",
-       "2026-09-27",
-       "2026-10-04",
-       "2026-10-11",
-       "2026-10-18",
-       "2026-10-25",
-       "2026-11-01",
-       "2026-11-08",
-       "2026-11-15",
-       "2026-11-22",
-       "2026-11-29",
-       "2026-12-06",
-       "2026-12-08",
-       "2026-12-13",
-       "2026-12-20",
-       "2026-12-25",
-       "2026-12-26",
-       "2026-12-27"
-      ]
-     },
-     "reverse": true,
-     "variant": "Caltagirone - EN B - PA",
-     "stops": [
-      {
-       "stop": "CALTAGIRONE (Viale Sicilia)",
-       "idx": 0,
-       "arr": "16.30",
-       "dep": "16.30"
-      },
-      {
-       "stop": "MIRABELLA IMBACCARI (Via G.Lupis(incr.Piazza A.Moro))",
-       "idx": 1,
-       "arr": "16.55",
-       "dep": "16.55"
-      },
-      {
-       "stop": "PIAZZA ARMERINA (Via Gen.Muscarà(Piazza Marescalchi))",
-       "idx": 2,
-       "arr": "17.20",
-       "dep": "17.20"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti 56(incr.Via Nettuno))",
-       "idx": 3,
-       "arr": "17.39",
-       "dep": "17.39"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
-       "idx": 4,
-       "arr": "17.40",
-       "dep": "17.40"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 5,
-       "arr": "17.48",
-       "dep": "17.48"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 6,
-       "arr": "17.50",
-       "dep": "17.50"
-      },
-      {
-       "stop": "PALERMO (Via Oreto 464)",
-       "idx": 7,
-       "arr": "19.20",
-       "dep": "19.20"
-      },
-      {
-       "stop": "PALERMO (Stazione - T.Bus Via Fazello)",
-       "idx": 8,
-       "arr": "19.25",
-       "dep": "19.25"
       }
      ],
      "valid": true

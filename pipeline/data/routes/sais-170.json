@@ -27,152 +27,13 @@
    ],
    "trips": [
     {
-     "corsa": "8865 SPLIT",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "21 exact dates (merged templates)",
-      "explicit_dates": [
-       "2026-08-30",
-       "2026-09-06",
-       "2026-09-13",
-       "2026-09-20",
-       "2026-09-27",
-       "2026-10-04",
-       "2026-10-11",
-       "2026-10-18",
-       "2026-10-25",
-       "2026-11-01",
-       "2026-11-08",
-       "2026-11-15",
-       "2026-11-22",
-       "2026-11-29",
-       "2026-12-06",
-       "2026-12-08",
-       "2026-12-13",
-       "2026-12-20",
-       "2026-12-25",
-       "2026-12-26",
-       "2026-12-27"
-      ]
-     },
-     "reverse": false,
-     "variant": "ME-CT-EN",
-     "stops": [
-      {
-       "stop": "MESSINA (Stazione - T.Bus Piazza della Repubblica)",
-       "idx": 0,
-       "arr": "14.00",
-       "dep": "14.00"
-      },
-      {
-       "stop": "MESSINA (Via La Farina 144)",
-       "idx": 1,
-       "arr": "14.02",
-       "dep": "14.02"
-      },
-      {
-       "stop": "MESSINA (Via La Farina 206)",
-       "idx": 2,
-       "arr": "14.04",
-       "dep": "14.04"
-      },
-      {
-       "stop": "MESSINA (Viale Gazzi (Stadio Celeste))",
-       "idx": 3,
-       "arr": "14.06",
-       "dep": "14.06"
-      },
-      {
-       "stop": "MESSINA (Tremestieri (On The Run Cafè))",
-       "idx": 4,
-       "arr": "14.15",
-       "dep": "14.15"
-      },
-      {
-       "stop": "CATANIA (Via Raffaello Sanzio 58)",
-       "idx": 5,
-       "arr": "15.25",
-       "dep": "15.25"
-      },
-      {
-       "stop": "CATANIA (Viale della Libertà 237)",
-       "idx": 6,
-       "arr": "15.30",
-       "dep": "15.30"
-      },
-      {
-       "stop": "CATANIA (Stazione - T.Bus Via Archimede)",
-       "idx": 7,
-       "arr": "16.00",
-       "dep": "16.00"
-      },
-      {
-       "stop": "CATANIA (Piazza P.Borsellino)",
-       "idx": 8,
-       "arr": "16.05",
-       "dep": "16.05"
-      },
-      {
-       "stop": "CATANIA (Via Domenico Tempio 30)",
-       "idx": 9,
-       "arr": "16.06",
-       "dep": "16.06"
-      },
-      {
-       "stop": "CATANIA (Via S.Giuseppe alla Rena 86/b)",
-       "idx": 10,
-       "arr": "16.08",
-       "dep": "16.08"
-      },
-      {
-       "stop": "CATANIAAEROPORTO (Terminal Bus)",
-       "idx": 11,
-       "arr": "16.10",
-       "dep": "16.10"
-      },
-      {
-       "stop": "DITTAINO (Sicilia Outlet)",
-       "idx": 12,
-       "arr": "17.00",
-       "dep": "17.00"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 13,
-       "arr": "17.20",
-       "dep": "17.20"
-      },
-      {
-       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
-       "idx": 14,
-       "arr": "17.30",
-       "dep": "17.30"
-      }
-     ],
-     "valid": true
-    },
-    {
      "corsa": "8865",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "103 exact dates (merged templates)",
+      "raw": "91 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-08-31",
-       "2026-09-01",
-       "2026-09-02",
-       "2026-09-03",
-       "2026-09-04",
-       "2026-09-05",
-       "2026-09-07",
-       "2026-09-08",
-       "2026-09-09",
-       "2026-09-10",
-       "2026-09-11",
-       "2026-09-12",
        "2026-09-14",
        "2026-09-15",
        "2026-09-16",
@@ -361,6 +222,130 @@
       }
      ],
      "valid": true
+    },
+    {
+     "corsa": "8865 SPLIT",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "18 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-09-20",
+       "2026-09-27",
+       "2026-10-04",
+       "2026-10-11",
+       "2026-10-18",
+       "2026-10-25",
+       "2026-11-01",
+       "2026-11-08",
+       "2026-11-15",
+       "2026-11-22",
+       "2026-11-29",
+       "2026-12-06",
+       "2026-12-08",
+       "2026-12-13",
+       "2026-12-20",
+       "2026-12-25",
+       "2026-12-26",
+       "2026-12-27"
+      ]
+     },
+     "reverse": false,
+     "variant": "ME-CT-EN",
+     "stops": [
+      {
+       "stop": "MESSINA (Stazione - T.Bus Piazza della Repubblica)",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "MESSINA (Via La Farina 144)",
+       "idx": 1,
+       "arr": "14.02",
+       "dep": "14.02"
+      },
+      {
+       "stop": "MESSINA (Via La Farina 206)",
+       "idx": 2,
+       "arr": "14.04",
+       "dep": "14.04"
+      },
+      {
+       "stop": "MESSINA (Viale Gazzi (Stadio Celeste))",
+       "idx": 3,
+       "arr": "14.06",
+       "dep": "14.06"
+      },
+      {
+       "stop": "MESSINA (Tremestieri (On The Run Cafè))",
+       "idx": 4,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "CATANIA (Via Raffaello Sanzio 58)",
+       "idx": 5,
+       "arr": "15.25",
+       "dep": "15.25"
+      },
+      {
+       "stop": "CATANIA (Viale della Libertà 237)",
+       "idx": 6,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "CATANIA (Stazione - T.Bus Via Archimede)",
+       "idx": 7,
+       "arr": "16.00",
+       "dep": "16.00"
+      },
+      {
+       "stop": "CATANIA (Piazza P.Borsellino)",
+       "idx": 8,
+       "arr": "16.05",
+       "dep": "16.05"
+      },
+      {
+       "stop": "CATANIA (Via Domenico Tempio 30)",
+       "idx": 9,
+       "arr": "16.06",
+       "dep": "16.06"
+      },
+      {
+       "stop": "CATANIA (Via S.Giuseppe alla Rena 86/b)",
+       "idx": 10,
+       "arr": "16.08",
+       "dep": "16.08"
+      },
+      {
+       "stop": "CATANIAAEROPORTO (Terminal Bus)",
+       "idx": 11,
+       "arr": "16.10",
+       "dep": "16.10"
+      },
+      {
+       "stop": "DITTAINO (Sicilia Outlet)",
+       "idx": 12,
+       "arr": "17.00",
+       "dep": "17.00"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 13,
+       "arr": "17.20",
+       "dep": "17.20"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 14,
+       "arr": "17.30",
+       "dep": "17.30"
+      }
+     ],
+     "valid": true
     }
    ]
   },
@@ -386,269 +371,6 @@
     "MESSINA (Stazione - T.Bus Piazza della Repubblica)"
    ],
    "trips": [
-    {
-     "corsa": "8910",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "3 exact dates from Albatross validities",
-      "explicit_dates": [
-       "2026-08-30",
-       "2026-09-06",
-       "2026-09-13"
-      ]
-     },
-     "reverse": true,
-     "variant": "EN CT ME 3",
-     "stops": [
-      {
-       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
-       "idx": 0,
-       "arr": "7.00",
-       "dep": "7.00"
-      },
-      {
-       "stop": "ENNA (Via S.Agata 82)",
-       "idx": 1,
-       "arr": "7.01",
-       "dep": "7.01"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
-       "idx": 2,
-       "arr": "7.03",
-       "dep": "7.03"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 3,
-       "arr": "7.10",
-       "dep": "7.10"
-      },
-      {
-       "stop": "DITTAINO (Sicilia Outlet)",
-       "idx": 4,
-       "arr": "7.25",
-       "dep": "7.25"
-      },
-      {
-       "stop": "CATANIA (Via Fontanarossa(Aeroporto Militare))",
-       "idx": 5,
-       "arr": "8.17",
-       "dep": "8.17"
-      },
-      {
-       "stop": "CATANIAAEROPORTO (Terminal Bus.)",
-       "idx": 6,
-       "arr": "8.20",
-       "dep": "8.20"
-      },
-      {
-       "stop": "CATANIA (Via S.Giuseppe alla Rena 69)",
-       "idx": 7,
-       "arr": "8.21",
-       "dep": "8.21"
-      },
-      {
-       "stop": "CATANIA (Via Domenico Tempio (Fermata Tempio Est 1))",
-       "idx": 8,
-       "arr": "8.22",
-       "dep": "8.22"
-      },
-      {
-       "stop": "CATANIA (Piazza Martiri della Libertà)",
-       "idx": 9,
-       "arr": "8.25",
-       "dep": "8.25"
-      },
-      {
-       "stop": "CATANIA (Stazione - T.Bus Via Archimede)",
-       "idx": 10,
-       "arr": "9.00",
-       "dep": "9.00"
-      },
-      {
-       "stop": "CATANIA (Viale della Libertà 182)",
-       "idx": 11,
-       "arr": "9.05",
-       "dep": "9.05"
-      },
-      {
-       "stop": "CATANIA (Via Raffaello Sanzio 163)",
-       "idx": 12,
-       "arr": "9.10",
-       "dep": "9.10"
-      },
-      {
-       "stop": "MESSINA (Tremestieri (On The Run Cafè))",
-       "idx": 13,
-       "arr": "10.20",
-       "dep": "10.20"
-      },
-      {
-       "stop": "MESSINA (Viale Gazzi(fronte Stadio Celeste))",
-       "idx": 14,
-       "arr": "10.29",
-       "dep": "10.29"
-      },
-      {
-       "stop": "MESSINA (Via La Farina (fronte 206))",
-       "idx": 15,
-       "arr": "10.31",
-       "dep": "10.31"
-      },
-      {
-       "stop": "MESSINA (Via La Farina 209)",
-       "idx": 16,
-       "arr": "10.33",
-       "dep": "10.33"
-      },
-      {
-       "stop": "MESSINA (Stazione - T.Bus Piazza della Repubblica)",
-       "idx": 17,
-       "arr": "10.35",
-       "dep": "10.35"
-      }
-     ],
-     "valid": true
-    },
-    {
-     "corsa": "8909",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "12 exact dates from Albatross validities",
-      "explicit_dates": [
-       "2026-08-31",
-       "2026-09-01",
-       "2026-09-02",
-       "2026-09-03",
-       "2026-09-04",
-       "2026-09-05",
-       "2026-09-07",
-       "2026-09-08",
-       "2026-09-09",
-       "2026-09-10",
-       "2026-09-11",
-       "2026-09-12"
-      ]
-     },
-     "reverse": true,
-     "variant": "EN CT ME 2",
-     "stops": [
-      {
-       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
-       "idx": 0,
-       "arr": "6.00",
-       "dep": "6.00"
-      },
-      {
-       "stop": "ENNA (Via S.Agata 82)",
-       "idx": 1,
-       "arr": "6.01",
-       "dep": "6.01"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
-       "idx": 2,
-       "arr": "6.03",
-       "dep": "6.03"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 3,
-       "arr": "6.10",
-       "dep": "6.10"
-      },
-      {
-       "stop": "DITTAINO (Sicilia Outlet)",
-       "idx": 4,
-       "arr": "6.25",
-       "dep": "6.25"
-      },
-      {
-       "stop": "CATANIA (Via Fontanarossa(Aeroporto Militare))",
-       "idx": 5,
-       "arr": "7.17",
-       "dep": "7.17"
-      },
-      {
-       "stop": "CATANIAAEROPORTO (Terminal Bus.)",
-       "idx": 6,
-       "arr": "7.20",
-       "dep": "7.20"
-      },
-      {
-       "stop": "CATANIA (Via S.Giuseppe alla Rena 69)",
-       "idx": 7,
-       "arr": "7.21",
-       "dep": "7.21"
-      },
-      {
-       "stop": "CATANIA (Via Domenico Tempio (Fermata Tempio Est 1))",
-       "idx": 8,
-       "arr": "7.22",
-       "dep": "7.22"
-      },
-      {
-       "stop": "CATANIA (Piazza Martiri della Libertà)",
-       "idx": 9,
-       "arr": "7.25",
-       "dep": "7.25"
-      },
-      {
-       "stop": "CATANIA (Stazione - T.Bus Via Archimede)",
-       "idx": 10,
-       "arr": "8.00",
-       "dep": "8.00"
-      },
-      {
-       "stop": "CATANIA (Viale della Libertà 182)",
-       "idx": 11,
-       "arr": "8.05",
-       "dep": "8.05"
-      },
-      {
-       "stop": "CATANIA (Via Raffaello Sanzio 163)",
-       "idx": 12,
-       "arr": "8.10",
-       "dep": "8.10"
-      },
-      {
-       "stop": "MESSINA (Tremestieri (On The Run Cafè))",
-       "idx": 13,
-       "arr": "9.20",
-       "dep": "9.20"
-      },
-      {
-       "stop": "MESSINA (Viale Gazzi(fronte Stadio Celeste))",
-       "idx": 14,
-       "arr": "9.29",
-       "dep": "9.29"
-      },
-      {
-       "stop": "MESSINA (Via La Farina (fronte 206))",
-       "idx": 15,
-       "arr": "9.31",
-       "dep": "9.31"
-      },
-      {
-       "stop": "MESSINA (Via La Farina 209)",
-       "idx": 16,
-       "arr": "9.33",
-       "dep": "9.33"
-      },
-      {
-       "stop": "MESSINA (Stazione - T.Bus Piazza della Repubblica)",
-       "idx": 17,
-       "arr": "9.35",
-       "dep": "9.35"
-      }
-     ],
-     "valid": true
-    },
     {
      "corsa": "8910",
      "service": {
