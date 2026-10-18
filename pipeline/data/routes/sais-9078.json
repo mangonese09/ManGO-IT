@@ -18,17 +18,53 @@
     "MODICA (Via Modica Giarratana, 41)",
     "MODICA (Passo Gatta)",
     "MODICA (Bivio S. Angelo)",
+    "MODICA (Bivio Cipolluzze)",
     "MODICA (Via S.Angelo, 30 (Pasticceria Dolce Arte))",
     "MODICA (Mulino fronte)",
     "MODICA (Via Gianforma Margione fronte 67)",
     "MODICA (Via Gianforma Margione, 80)",
     "MODICA (Via Gianforma Margione fronte Ufficio Postale)",
     "MODICA (Martisiello)",
-    "MODICA (Via Gianforma Margione, 103 (Campanella))",
-    "MODICA (Via Gianforma Margione, 33)",
+    "MODICA (Via Gianforma snc 2)",
+    "MODICA (Via Gianforma snc 3)",
+    "MODICA (Contrada Gisirotta)",
+    "MODICA (Via Gianforma snc fronte 3)",
+    "MODICA (Via Gianforma snc fronte 2)",
+    "MODICA (Via Gianforma Centro Rottamazione)",
+    "MODICA (Martisiello fronte)",
     "MODICA (Via Gianforma Margione Ufficio Postale)",
     "MODICA (Via Gianforma Margione fronte 80)",
     "MODICA (Mulino (Frigintini))",
+    "MODICA (Contrada Bussello fronte bar)",
+    "MODICA (Contrada Bussello angolo Contrada Barato)",
+    "MODICA (Contrada Bussello SP 23)",
+    "MODICA (SP 59 fronte Osteria delle 5 vie)",
+    "MODICA (SP 59 fronte Bar Mola)",
+    "MODICA (Via Modica Giarratana, 135)",
+    "MODICA (Via Modica Giarratana bivio San Giuggiuzzo)",
+    "MODICA (Via Modica Giarratana fronte vanella 11)",
+    "MODICA (Via Modica Giarratana Palarizza)",
+    "MODICA (Piazza Rizzone)",
+    "MODICA (Via Nazionale, 220)",
+    "MODICA (Viale degli Oleandri (Rifornimento))",
+    "MODICA (Piazza Libertà, 4)",
+    "MODICA (Via Risorgimento, 97)",
+    "MODICA (Via Risorgimento, 157)",
+    "MODICA (Via Risorgimento, 235)",
+    "MODICA (Zona 167)",
+    "MODICA (Via Alcide De Gasperi snc)",
+    "MODICA (Via Nazionale, 63)",
+    "MODICA (Corso Umberto, 8)",
+    "MODICA (Corso Umberto, 90)",
+    "MODICA (Corso Umberto, 164)",
+    "MODICA (Corso Umberto, 298 (Largo 8 Marzo))",
+    "MODICA (Via Gianforma Margione)",
+    "MODICA (Bivio Sant'Angelo fronte 30)",
+    "MODICA (Via Quasimodo, 54)",
+    "MODICA (Via Marchesa Tedeschi, 99)",
+    "MODICA (Piazza Principe di Napoli (fronte Comune))",
+    "MODICA (Via Gianforma Margione, 103 (Campanella))",
+    "MODICA (Via Gianforma Margione, 33)",
     "MODICA (Via Calanchi, 422 (Frigintini))",
     "MODICA (Via Calanchi fronte 135)",
     "MODICA (Via Calanchi fronte 155 (Migliore))",
@@ -41,62 +77,695 @@
     "MODICA (Bivio Torre Palazzelle)",
     "MODICA (Bivio S. Angelo dir. Modica)",
     "MODICA (Strada Provinciale 28 dir. Modica)",
-    "MODICA (Via Quasimodo, 54)",
-    "MODICA (Corso Umberto, 90)",
-    "MODICA (Corso Umberto, 164)",
-    "MODICA (Corso Umberto, 298 (Largo 8 Marzo))",
-    "MODICA (Piazza Rizzone)",
-    "MODICA (Via Nazionale, 220)",
-    "MODICA (Viale degli Oleandri (Rifornimento))",
-    "MODICA (Piazza Libertà, 4)",
-    "MODICA (Via Risorgimento, 97)",
-    "MODICA (Via Risorgimento, 157)",
-    "MODICA (Via Risorgimento, 235)",
-    "MODICA (Zona 167)",
-    "MODICA (Via Alcide De Gasperi snc)",
-    "MODICA (Via Nazionale, 63)",
-    "MODICA (Corso Umberto, 8)",
-    "MODICA (Bivio Cipolluzze)",
-    "MODICA (Via Gianforma snc 2)",
-    "MODICA (Via Gianforma snc 3)",
-    "MODICA (Contrada Gisirotta)",
-    "MODICA (Via Gianforma snc fronte 3)",
-    "MODICA (Via Gianforma snc fronte 2)",
-    "MODICA (Via Gianforma Centro Rottamazione)",
-    "MODICA (Martisiello fronte)",
-    "MODICA (Via Gianforma Margione)",
-    "MODICA (Bivio Sant'Angelo fronte 30)",
-    "MODICA (Via Marchesa Tedeschi, 99)",
-    "MODICA (Piazza Principe di Napoli (fronte Comune))",
     "MODICA (Via Tirella, 373)",
     "MODICA (Via Tirella, 119)",
-    "MODICA (Contrada Bussello fronte bar)",
-    "MODICA (Contrada Bussello angolo Contrada Barato)",
-    "MODICA (Contrada Bussello SP 23)",
-    "MODICA (SP 59 fronte Osteria delle 5 vie)",
-    "MODICA (SP 59 fronte Bar Mola)",
-    "MODICA (Via Modica Giarratana, 135)",
     "MODICA (Via Modica Giarratana, 172a)",
-    "MODICA (Via Modica Giarratana Palarizza)",
-    "MODICA (Via Modica Giarratana bivio San Giuggiuzzo)",
-    "MODICA (Via Modica Giarratana fronte vanella 11)",
     "MODICA (MAUTO)"
    ],
    "trips": [
+    {
+     "corsa": "078011",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "54 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-23",
+       "2026-10-24",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-30",
+       "2026-10-31",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-06",
+       "2026-11-07",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-13",
+       "2026-11-14",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-20",
+       "2026-11-21",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-28",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-05",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-12",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-19",
+       "2026-12-21",
+       "2026-12-22"
+      ]
+     },
+     "reverse": false,
+     "variant": "MOD9078_25",
+     "stops": [
+      {
+       "stop": "MODICA (Piazza Borsellino)",
+       "idx": 0,
+       "arr": "5.59",
+       "dep": "5.59"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 277)",
+       "idx": 1,
+       "arr": "6.00",
+       "dep": "6.00"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 197)",
+       "idx": 2,
+       "arr": "6.01",
+       "dep": "6.01"
+      },
+      {
+       "stop": "MODICA (Corso Umberto fronte 90)",
+       "idx": 3,
+       "arr": "6.02",
+       "dep": "6.02"
+      },
+      {
+       "stop": "MODICA (Piazza Principe di Napoli (Comune))",
+       "idx": 4,
+       "arr": "6.03",
+       "dep": "6.03"
+      },
+      {
+       "stop": "MODICA (Via Marchesa Tedeschi, 20)",
+       "idx": 5,
+       "arr": "6.05",
+       "dep": "6.05"
+      },
+      {
+       "stop": "MODICA (Via Modica Giarratana, 41)",
+       "idx": 6,
+       "arr": "6.06",
+       "dep": "6.06"
+      },
+      {
+       "stop": "MODICA (Passo Gatta)",
+       "idx": 7,
+       "arr": "6.12",
+       "dep": "6.12"
+      },
+      {
+       "stop": "MODICA (Bivio S. Angelo)",
+       "idx": 8,
+       "arr": "6.15",
+       "dep": "6.15"
+      },
+      {
+       "stop": "MODICA (Bivio Cipolluzze)",
+       "idx": 9,
+       "arr": "6.18",
+       "dep": "6.18"
+      },
+      {
+       "stop": "MODICA (Via S.Angelo, 30 (Pasticceria Dolce Arte))",
+       "idx": 10,
+       "arr": "6.22",
+       "dep": "6.22"
+      },
+      {
+       "stop": "MODICA (Mulino fronte)",
+       "idx": 11,
+       "arr": "6.25",
+       "dep": "6.25"
+      },
+      {
+       "stop": "MODICA (Via Gianforma Margione fronte 67)",
+       "idx": 12,
+       "arr": "6.27",
+       "dep": "6.27"
+      },
+      {
+       "stop": "MODICA (Via Gianforma Margione, 80)",
+       "idx": 13,
+       "arr": "6.28",
+       "dep": "6.28"
+      },
+      {
+       "stop": "MODICA (Via Gianforma Margione fronte Ufficio Postale)",
+       "idx": 14,
+       "arr": "6.29",
+       "dep": "6.29"
+      },
+      {
+       "stop": "MODICA (Martisiello)",
+       "idx": 15,
+       "arr": "6.33",
+       "dep": "6.33"
+      },
+      {
+       "stop": "MODICA (Via Gianforma snc 2)",
+       "idx": 16,
+       "arr": "6.36",
+       "dep": "6.36"
+      },
+      {
+       "stop": "MODICA (Via Gianforma snc 3)",
+       "idx": 17,
+       "arr": "6.39",
+       "dep": "6.39"
+      },
+      {
+       "stop": "MODICA (Contrada Gisirotta)",
+       "idx": 18,
+       "arr": "6.46",
+       "dep": "6.46"
+      },
+      {
+       "stop": "MODICA (Via Gianforma snc fronte 3)",
+       "idx": 19,
+       "arr": "6.53",
+       "dep": "6.53"
+      },
+      {
+       "stop": "MODICA (Via Gianforma snc fronte 2)",
+       "idx": 20,
+       "arr": "6.56",
+       "dep": "6.56"
+      },
+      {
+       "stop": "MODICA (Via Gianforma Centro Rottamazione)",
+       "idx": 21,
+       "arr": "6.58",
+       "dep": "6.58"
+      },
+      {
+       "stop": "MODICA (Martisiello fronte)",
+       "idx": 22,
+       "arr": "7.00",
+       "dep": "7.00"
+      },
+      {
+       "stop": "MODICA (Via Gianforma Margione Ufficio Postale)",
+       "idx": 23,
+       "arr": "7.03",
+       "dep": "7.03"
+      },
+      {
+       "stop": "MODICA (Via Gianforma Margione fronte 80)",
+       "idx": 24,
+       "arr": "7.04",
+       "dep": "7.04"
+      },
+      {
+       "stop": "MODICA (Mulino (Frigintini))",
+       "idx": 25,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "MODICA (Contrada Bussello fronte bar)",
+       "idx": 26,
+       "arr": "7.21",
+       "dep": "7.21"
+      },
+      {
+       "stop": "MODICA (Contrada Bussello angolo Contrada Barato)",
+       "idx": 27,
+       "arr": "7.23",
+       "dep": "7.23"
+      },
+      {
+       "stop": "MODICA (Contrada Bussello SP 23)",
+       "idx": 28,
+       "arr": "7.24",
+       "dep": "7.24"
+      },
+      {
+       "stop": "MODICA (SP 59 fronte Osteria delle 5 vie)",
+       "idx": 29,
+       "arr": "7.26",
+       "dep": "7.26"
+      },
+      {
+       "stop": "MODICA (SP 59 fronte Bar Mola)",
+       "idx": 30,
+       "arr": "7.28",
+       "dep": "7.28"
+      },
+      {
+       "stop": "MODICA (Via Modica Giarratana, 135)",
+       "idx": 31,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "MODICA (Via Modica Giarratana bivio San Giuggiuzzo)",
+       "idx": 32,
+       "arr": "7.32",
+       "dep": "7.32"
+      },
+      {
+       "stop": "MODICA (Via Modica Giarratana fronte vanella 11)",
+       "idx": 33,
+       "arr": "7.34",
+       "dep": "7.34"
+      },
+      {
+       "stop": "MODICA (Via Modica Giarratana Palarizza)",
+       "idx": 34,
+       "arr": "7.36",
+       "dep": "7.36"
+      },
+      {
+       "stop": "MODICA (Piazza Borsellino)",
+       "idx": 35,
+       "arr": "7.38",
+       "dep": "7.38"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 277)",
+       "idx": 36,
+       "arr": "7.39",
+       "dep": "7.39"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 197)",
+       "idx": 37,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "MODICA (Corso Umberto fronte 90)",
+       "idx": 38,
+       "arr": "7.41",
+       "dep": "7.41"
+      },
+      {
+       "stop": "MODICA (Piazza Rizzone)",
+       "idx": 39,
+       "arr": "7.43",
+       "dep": "7.43"
+      },
+      {
+       "stop": "MODICA (Via Nazionale, 220)",
+       "idx": 40,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "MODICA (Viale degli Oleandri (Rifornimento))",
+       "idx": 41,
+       "arr": "7.46",
+       "dep": "7.46"
+      },
+      {
+       "stop": "MODICA (Piazza Libertà, 4)",
+       "idx": 42,
+       "arr": "7.47",
+       "dep": "7.47"
+      },
+      {
+       "stop": "MODICA (Via Risorgimento, 97)",
+       "idx": 43,
+       "arr": "7.49",
+       "dep": "7.49"
+      },
+      {
+       "stop": "MODICA (Via Risorgimento, 157)",
+       "idx": 44,
+       "arr": "7.51",
+       "dep": "7.51"
+      },
+      {
+       "stop": "MODICA (Via Risorgimento, 235)",
+       "idx": 45,
+       "arr": "7.53",
+       "dep": "7.53"
+      },
+      {
+       "stop": "MODICA (Zona 167)",
+       "idx": 46,
+       "arr": "7.55",
+       "dep": "7.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "078021",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "55 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-10-19",
+       "2026-10-20",
+       "2026-10-21",
+       "2026-10-22",
+       "2026-10-23",
+       "2026-10-24",
+       "2026-10-26",
+       "2026-10-27",
+       "2026-10-28",
+       "2026-10-29",
+       "2026-10-30",
+       "2026-10-31",
+       "2026-11-02",
+       "2026-11-03",
+       "2026-11-04",
+       "2026-11-05",
+       "2026-11-06",
+       "2026-11-07",
+       "2026-11-09",
+       "2026-11-10",
+       "2026-11-11",
+       "2026-11-12",
+       "2026-11-13",
+       "2026-11-14",
+       "2026-11-16",
+       "2026-11-17",
+       "2026-11-18",
+       "2026-11-19",
+       "2026-11-20",
+       "2026-11-21",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-28",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-05",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-12",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-19",
+       "2026-12-21",
+       "2026-12-22"
+      ]
+     },
+     "reverse": false,
+     "variant": "MOD9078_24",
+     "stops": [
+      {
+       "stop": "MODICA (Zona 167)",
+       "idx": 0,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "MODICA (Via Risorgimento, 235)",
+       "idx": 1,
+       "arr": "14.08",
+       "dep": "14.08"
+      },
+      {
+       "stop": "MODICA (Via Risorgimento, 157)",
+       "idx": 2,
+       "arr": "14.09",
+       "dep": "14.09"
+      },
+      {
+       "stop": "MODICA (Via Risorgimento, 97)",
+       "idx": 3,
+       "arr": "14.12",
+       "dep": "14.12"
+      },
+      {
+       "stop": "MODICA (Via Alcide De Gasperi snc)",
+       "idx": 4,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "MODICA (Via Nazionale, 63)",
+       "idx": 5,
+       "arr": "14.16",
+       "dep": "14.16"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 8)",
+       "idx": 6,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 90)",
+       "idx": 7,
+       "arr": "14.22",
+       "dep": "14.22"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 164)",
+       "idx": 8,
+       "arr": "14.23",
+       "dep": "14.23"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 298 (Largo 8 Marzo))",
+       "idx": 9,
+       "arr": "14.24",
+       "dep": "14.24"
+      },
+      {
+       "stop": "MODICA (Piazza Borsellino)",
+       "idx": 10,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 277)",
+       "idx": 11,
+       "arr": "14.26",
+       "dep": "14.26"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 197)",
+       "idx": 12,
+       "arr": "14.27",
+       "dep": "14.27"
+      },
+      {
+       "stop": "MODICA (Corso Umberto fronte 90)",
+       "idx": 13,
+       "arr": "14.28",
+       "dep": "14.28"
+      },
+      {
+       "stop": "MODICA (Piazza Principe di Napoli (Comune))",
+       "idx": 14,
+       "arr": "14.28",
+       "dep": "14.28"
+      },
+      {
+       "stop": "MODICA (Via Marchesa Tedeschi, 20)",
+       "idx": 15,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "MODICA (Via Modica Giarratana, 41)",
+       "idx": 16,
+       "arr": "14.31",
+       "dep": "14.31"
+      },
+      {
+       "stop": "MODICA (Bivio Cipolluzze)",
+       "idx": 17,
+       "arr": "14.43",
+       "dep": "14.43"
+      },
+      {
+       "stop": "MODICA (Via S.Angelo, 30 (Pasticceria Dolce Arte))",
+       "idx": 18,
+       "arr": "14.48",
+       "dep": "14.48"
+      },
+      {
+       "stop": "MODICA (Mulino fronte)",
+       "idx": 19,
+       "arr": "14.51",
+       "dep": "14.51"
+      },
+      {
+       "stop": "MODICA (Via Gianforma Margione fronte 67)",
+       "idx": 20,
+       "arr": "14.53",
+       "dep": "14.53"
+      },
+      {
+       "stop": "MODICA (Via Gianforma Margione, 80)",
+       "idx": 21,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "MODICA (Via Gianforma Margione fronte Ufficio Postale)",
+       "idx": 22,
+       "arr": "14.56",
+       "dep": "14.56"
+      },
+      {
+       "stop": "MODICA (Martisiello)",
+       "idx": 23,
+       "arr": "15.02",
+       "dep": "15.02"
+      },
+      {
+       "stop": "MODICA (Via Gianforma snc 2)",
+       "idx": 24,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "MODICA (Via Gianforma snc 3)",
+       "idx": 25,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "MODICA (Contrada Gisirotta)",
+       "idx": 26,
+       "arr": "15.19",
+       "dep": "15.19"
+      },
+      {
+       "stop": "MODICA (Via Gianforma snc fronte 3)",
+       "idx": 27,
+       "arr": "15.28",
+       "dep": "15.28"
+      },
+      {
+       "stop": "MODICA (Via Gianforma snc fronte 2)",
+       "idx": 28,
+       "arr": "15.33",
+       "dep": "15.33"
+      },
+      {
+       "stop": "MODICA (Via Gianforma Centro Rottamazione)",
+       "idx": 29,
+       "arr": "15.36",
+       "dep": "15.36"
+      },
+      {
+       "stop": "MODICA (Martisiello fronte)",
+       "idx": 30,
+       "arr": "15.39",
+       "dep": "15.39"
+      },
+      {
+       "stop": "MODICA (Via Gianforma Margione Ufficio Postale)",
+       "idx": 31,
+       "arr": "15.44",
+       "dep": "15.44"
+      },
+      {
+       "stop": "MODICA (Via Gianforma Margione)",
+       "idx": 32,
+       "arr": "15.46",
+       "dep": "15.46"
+      },
+      {
+       "stop": "MODICA (Via Gianforma Margione fronte 80)",
+       "idx": 33,
+       "arr": "15.48",
+       "dep": "15.48"
+      },
+      {
+       "stop": "MODICA (Mulino (Frigintini))",
+       "idx": 34,
+       "arr": "15.51",
+       "dep": "15.51"
+      },
+      {
+       "stop": "MODICA (Bivio Sant'Angelo fronte 30)",
+       "idx": 35,
+       "arr": "15.54",
+       "dep": "15.54"
+      },
+      {
+       "stop": "MODICA (Via Quasimodo, 54)",
+       "idx": 36,
+       "arr": "16.06",
+       "dep": "16.06"
+      },
+      {
+       "stop": "MODICA (Via Marchesa Tedeschi, 99)",
+       "idx": 37,
+       "arr": "16.11",
+       "dep": "16.11"
+      },
+      {
+       "stop": "MODICA (Piazza Principe di Napoli (fronte Comune))",
+       "idx": 38,
+       "arr": "16.13",
+       "dep": "16.13"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 164)",
+       "idx": 39,
+       "arr": "16.14",
+       "dep": "16.14"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 298 (Largo 8 Marzo))",
+       "idx": 40,
+       "arr": "16.15",
+       "dep": "16.15"
+      },
+      {
+       "stop": "MODICA (Piazza Borsellino)",
+       "idx": 41,
+       "arr": "16.16",
+       "dep": "16.16"
+      }
+     ],
+     "valid": true
+    },
     {
      "corsa": "078013",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "61 exact dates from Albatross validities",
+      "raw": "55 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -454,14 +1123,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "61 exact dates from Albatross validities",
+      "raw": "55 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -741,12 +1404,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "41 exact dates from Albatross validities",
+      "raw": "37 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-21",
        "2026-10-22",
@@ -924,10 +1583,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "20 exact dates from Albatross validities",
+      "raw": "18 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-13",
-       "2026-10-16",
        "2026-10-20",
        "2026-10-23",
        "2026-10-27",
@@ -1081,74 +1738,277 @@
      "valid": true
     },
     {
+     "corsa": "078025",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "19 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-10-19",
+       "2026-10-21",
+       "2026-10-26",
+       "2026-10-28",
+       "2026-11-02",
+       "2026-11-04",
+       "2026-11-09",
+       "2026-11-11",
+       "2026-11-16",
+       "2026-11-18",
+       "2026-11-23",
+       "2026-11-25",
+       "2026-11-30",
+       "2026-12-02",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-14",
+       "2026-12-16",
+       "2026-12-21"
+      ]
+     },
+     "reverse": false,
+     "variant": "MOD9078_26",
+     "stops": [
+      {
+       "stop": "MODICA (Zona 167)",
+       "idx": 0,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "MODICA (Via Risorgimento, 235)",
+       "idx": 1,
+       "arr": "14.53",
+       "dep": "14.53"
+      },
+      {
+       "stop": "MODICA (Via Risorgimento, 157)",
+       "idx": 2,
+       "arr": "14.54",
+       "dep": "14.54"
+      },
+      {
+       "stop": "MODICA (Via Risorgimento, 97)",
+       "idx": 3,
+       "arr": "14.57",
+       "dep": "14.57"
+      },
+      {
+       "stop": "MODICA (Via Alcide De Gasperi snc)",
+       "idx": 4,
+       "arr": "14.59",
+       "dep": "14.59"
+      },
+      {
+       "stop": "MODICA (Via Nazionale, 63)",
+       "idx": 5,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 8)",
+       "idx": 6,
+       "arr": "15.03",
+       "dep": "15.03"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 90)",
+       "idx": 7,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 164)",
+       "idx": 8,
+       "arr": "15.06",
+       "dep": "15.06"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 298 (Largo 8 Marzo))",
+       "idx": 9,
+       "arr": "15.07",
+       "dep": "15.07"
+      },
+      {
+       "stop": "MODICA (Piazza Borsellino)",
+       "idx": 10,
+       "arr": "15.08",
+       "dep": "15.08"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 277)",
+       "idx": 11,
+       "arr": "15.09",
+       "dep": "15.09"
+      },
+      {
+       "stop": "MODICA (Corso Umberto, 197)",
+       "idx": 12,
+       "arr": "15.10",
+       "dep": "15.10"
+      },
+      {
+       "stop": "MODICA (Corso Umberto fronte 90)",
+       "idx": 13,
+       "arr": "15.11",
+       "dep": "15.11"
+      },
+      {
+       "stop": "MODICA (Piazza Principe di Napoli (Comune))",
+       "idx": 14,
+       "arr": "15.11",
+       "dep": "15.11"
+      },
+      {
+       "stop": "MODICA (Via Marchesa Tedeschi, 20)",
+       "idx": 15,
+       "arr": "15.13",
+       "dep": "15.13"
+      },
+      {
+       "stop": "MODICA (Via Modica Giarratana, 41)",
+       "idx": 16,
+       "arr": "15.14",
+       "dep": "15.14"
+      },
+      {
+       "stop": "MODICA (Passo Gatta)",
+       "idx": 17,
+       "arr": "15.21",
+       "dep": "15.21"
+      },
+      {
+       "stop": "MODICA (Bivio S. Angelo)",
+       "idx": 18,
+       "arr": "15.24",
+       "dep": "15.24"
+      },
+      {
+       "stop": "MODICA (Via S.Angelo, 30 (Pasticceria Dolce Arte))",
+       "idx": 19,
+       "arr": "15.30",
+       "dep": "15.30"
+      },
+      {
+       "stop": "MODICA (Mulino fronte)",
+       "idx": 20,
+       "arr": "15.33",
+       "dep": "15.33"
+      },
+      {
+       "stop": "MODICA (Via Gianforma Margione fronte 67)",
+       "idx": 21,
+       "arr": "15.35",
+       "dep": "15.35"
+      },
+      {
+       "stop": "MODICA (Via Gianforma Margione, 80)",
+       "idx": 22,
+       "arr": "15.36",
+       "dep": "15.36"
+      },
+      {
+       "stop": "MODICA (Via Gianforma Margione fronte Ufficio Postale)",
+       "idx": 23,
+       "arr": "15.37",
+       "dep": "15.37"
+      },
+      {
+       "stop": "MODICA (Martisiello)",
+       "idx": 24,
+       "arr": "15.42",
+       "dep": "15.42"
+      },
+      {
+       "stop": "MODICA (Via Gianforma Margione, 103 (Campanella))",
+       "idx": 25,
+       "arr": "15.46",
+       "dep": "15.46"
+      },
+      {
+       "stop": "MODICA (Via Gianforma Margione, 33)",
+       "idx": 26,
+       "arr": "15.49",
+       "dep": "15.49"
+      },
+      {
+       "stop": "MODICA (Via Gianforma Margione Ufficio Postale)",
+       "idx": 27,
+       "arr": "15.51",
+       "dep": "15.51"
+      },
+      {
+       "stop": "MODICA (Via Gianforma Margione fronte 80)",
+       "idx": 28,
+       "arr": "15.52",
+       "dep": "15.52"
+      },
+      {
+       "stop": "MODICA (Mulino fronte)",
+       "idx": 29,
+       "arr": "15.54",
+       "dep": "15.54"
+      },
+      {
+       "stop": "MODICA (Contrada Bussello fronte bar)",
+       "idx": 30,
+       "arr": "15.55",
+       "dep": "15.55"
+      },
+      {
+       "stop": "MODICA (Contrada Bussello angolo Contrada Barato)",
+       "idx": 31,
+       "arr": "15.59",
+       "dep": "15.59"
+      },
+      {
+       "stop": "MODICA (Contrada Bussello SP 23)",
+       "idx": 32,
+       "arr": "16.01",
+       "dep": "16.01"
+      },
+      {
+       "stop": "MODICA (SP 59 fronte Osteria delle 5 vie)",
+       "idx": 33,
+       "arr": "16.04",
+       "dep": "16.04"
+      },
+      {
+       "stop": "MODICA (SP 59 fronte Bar Mola)",
+       "idx": 34,
+       "arr": "16.07",
+       "dep": "16.07"
+      },
+      {
+       "stop": "MODICA (Via Modica Giarratana, 135)",
+       "idx": 35,
+       "arr": "16.09",
+       "dep": "16.09"
+      },
+      {
+       "stop": "MODICA (Via Modica Giarratana, 172a)",
+       "idx": 36,
+       "arr": "16.11",
+       "dep": "16.11"
+      },
+      {
+       "stop": "MODICA (Via Modica Giarratana Palarizza)",
+       "idx": 37,
+       "arr": "16.15",
+       "dep": "16.15"
+      }
+     ],
+     "valid": true
+    },
+    {
      "corsa": "078011",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "61 exact dates from Albatross validities",
+      "raw": "1 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
-       "2026-10-19",
-       "2026-10-20",
-       "2026-10-21",
-       "2026-10-22",
-       "2026-10-23",
-       "2026-10-24",
-       "2026-10-26",
-       "2026-10-27",
-       "2026-10-28",
-       "2026-10-29",
-       "2026-10-30",
-       "2026-10-31",
-       "2026-11-02",
-       "2026-11-03",
-       "2026-11-04",
-       "2026-11-05",
-       "2026-11-06",
-       "2026-11-07",
-       "2026-11-09",
-       "2026-11-10",
-       "2026-11-11",
-       "2026-11-12",
-       "2026-11-13",
-       "2026-11-14",
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
-       "2026-11-23",
-       "2026-11-24",
-       "2026-11-25",
-       "2026-11-26",
-       "2026-11-27",
-       "2026-11-28",
-       "2026-11-30",
-       "2026-12-01",
-       "2026-12-02",
-       "2026-12-03",
-       "2026-12-04",
-       "2026-12-05",
-       "2026-12-07",
-       "2026-12-09",
-       "2026-12-10",
-       "2026-12-11",
-       "2026-12-12",
-       "2026-12-14",
-       "2026-12-15",
-       "2026-12-16",
-       "2026-12-17",
-       "2026-12-18",
-       "2026-12-19",
-       "2026-12-21",
-       "2026-12-22"
+       "2026-10-19"
       ]
      },
      "reverse": false,
@@ -1445,14 +2305,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "61 exact dates from Albatross validities",
+      "raw": "55 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -1672,14 +2526,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "61 exact dates from Albatross validities",
+      "raw": "55 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",

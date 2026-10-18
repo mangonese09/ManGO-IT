@@ -42,19 +42,13 @@
    ],
    "trips": [
     {
-     "corsa": "60122",
+     "corsa": "60127",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
       "raw": "61 exact dates (merged templates)",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -109,7 +103,13 @@
        "2026-12-18",
        "2026-12-19",
        "2026-12-21",
-       "2026-12-22"
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
       ]
      },
      "reverse": false,
@@ -166,9 +166,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "10 exact dates from Albatross validities",
+      "raw": "9 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-17",
        "2026-10-24",
        "2026-10-31",
        "2026-11-07",
@@ -217,19 +216,65 @@
      "valid": true
     },
     {
+     "corsa": "351",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "6 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
+      ]
+     },
+     "reverse": false,
+     "variant": "En Fs-En",
+     "stops": [
+      {
+       "stop": "ENNA (Stazione fs)",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "ENNA (SP3)",
+       "idx": 1,
+       "arr": "8.01",
+       "dep": "8.01"
+      },
+      {
+       "stop": "ENNA (SS121 (incr.SS290))",
+       "idx": 2,
+       "arr": "8.04",
+       "dep": "8.04"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 3,
+       "arr": "8.14",
+       "dep": "8.14"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 4,
+       "arr": "8.15",
+       "dep": "8.15"
+      }
+     ],
+     "valid": true
+    },
+    {
      "corsa": "2590",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "61 exact dates from Albatross validities",
+      "raw": "55 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -341,14 +386,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "61 exact dates from Albatross validities",
+      "raw": "55 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -520,13 +559,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "51 exact dates from Albatross validities",
+      "raw": "46 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -630,19 +664,77 @@
      "valid": true
     },
     {
+     "corsa": "60042",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "6 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
+      ]
+     },
+     "reverse": false,
+     "variant": "CALASCIB_32",
+     "stops": [
+      {
+       "stop": "CALASCIBETTA (Piazza Umberto I)",
+       "idx": 0,
+       "arr": "7.10",
+       "dep": "7.10"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290(parcheggio S.Barbara))",
+       "idx": 1,
+       "arr": "7.12",
+       "dep": "7.12"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (Oleificio))",
+       "idx": 2,
+       "arr": "7.13",
+       "dep": "7.13"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (ex Brace))",
+       "idx": 3,
+       "arr": "7.14",
+       "dep": "7.14"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290)",
+       "idx": 4,
+       "arr": "7.16",
+       "dep": "7.16"
+      },
+      {
+       "stop": "ENNA (SP3)",
+       "idx": 5,
+       "arr": "7.19",
+       "dep": "7.19"
+      },
+      {
+       "stop": "ENNA (Stazione fs)",
+       "idx": 6,
+       "arr": "7.20",
+       "dep": "7.20"
+      }
+     ],
+     "valid": true
+    },
+    {
      "corsa": "2588",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "61 exact dates from Albatross validities",
+      "raw": "55 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -790,13 +882,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "51 exact dates from Albatross validities",
+      "raw": "46 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -935,14 +1022,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "61 exact dates from Albatross validities",
+      "raw": "55 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -1084,13 +1165,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "51 exact dates from Albatross validities",
+      "raw": "46 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -1235,14 +1311,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "61 exact dates from Albatross validities",
+      "raw": "55 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -1360,14 +1430,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "67 exact dates from Albatross validities",
+      "raw": "61 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -1491,14 +1555,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "61 exact dates from Albatross validities",
+      "raw": "55 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -1616,14 +1674,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "61 exact dates from Albatross validities",
+      "raw": "55 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -1753,14 +1805,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "61 exact dates from Albatross validities",
+      "raw": "55 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -1885,19 +1931,241 @@
      "valid": true
     },
     {
+     "corsa": "8949",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "6 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
+      ]
+     },
+     "reverse": false,
+     "variant": "EN-V.rosa-CL",
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 0,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "ENNA (SS121 (Bivio Kamuth))",
+       "idx": 1,
+       "arr": "13.19",
+       "dep": "13.19"
+      },
+      {
+       "stop": "ENNA (SS121 (c.da Mancadarso))",
+       "idx": 2,
+       "arr": "13.24",
+       "dep": "13.24"
+      },
+      {
+       "stop": "VILLAROSA STAZIONE (SS121 (Bivio))",
+       "idx": 3,
+       "arr": "13.29",
+       "dep": "13.29"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Oleificio Madem))",
+       "idx": 4,
+       "arr": "13.34",
+       "dep": "13.34"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Madonna della Catena))",
+       "idx": 5,
+       "arr": "13.38",
+       "dep": "13.38"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 134)",
+       "idx": 6,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 300)",
+       "idx": 7,
+       "arr": "13.43",
+       "dep": "13.43"
+      },
+      {
+       "stop": "CALTANISSETTA (Via Rochester c/o Autostazione)",
+       "idx": 8,
+       "arr": "14.10",
+       "dep": "14.10"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "AGGIUNTA 3",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "6 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
+      ]
+     },
+     "reverse": false,
+     "variant": "EN-V.rosa-CL",
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 0,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "ENNA (SS121 (Bivio Kamuth))",
+       "idx": 1,
+       "arr": "14.09",
+       "dep": "14.09"
+      },
+      {
+       "stop": "ENNA (SS121 (c.da Mancadarso))",
+       "idx": 2,
+       "arr": "14.14",
+       "dep": "14.14"
+      },
+      {
+       "stop": "VILLAROSA STAZIONE (SS121 (Bivio))",
+       "idx": 3,
+       "arr": "14.19",
+       "dep": "14.19"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Oleificio Madem))",
+       "idx": 4,
+       "arr": "14.24",
+       "dep": "14.24"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Madonna della Catena))",
+       "idx": 5,
+       "arr": "14.28",
+       "dep": "14.28"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 134)",
+       "idx": 6,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 300)",
+       "idx": 7,
+       "arr": "14.33",
+       "dep": "14.33"
+      },
+      {
+       "stop": "CALTANISSETTA (Via Rochester c/o Autostazione)",
+       "idx": 8,
+       "arr": "15.00",
+       "dep": "15.00"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2585",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "6 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
+      ]
+     },
+     "reverse": false,
+     "variant": "EN-V.rosa-CL",
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 0,
+       "arr": "8.00",
+       "dep": "8.00"
+      },
+      {
+       "stop": "ENNA (SS121 (Bivio Kamuth))",
+       "idx": 1,
+       "arr": "8.04",
+       "dep": "8.04"
+      },
+      {
+       "stop": "ENNA (SS121 (c.da Mancadarso))",
+       "idx": 2,
+       "arr": "8.09",
+       "dep": "8.09"
+      },
+      {
+       "stop": "VILLAROSA STAZIONE (SS121 (Bivio))",
+       "idx": 3,
+       "arr": "8.14",
+       "dep": "8.14"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Oleificio Madem))",
+       "idx": 4,
+       "arr": "8.19",
+       "dep": "8.19"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Madonna della Catena))",
+       "idx": 5,
+       "arr": "8.23",
+       "dep": "8.23"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 134)",
+       "idx": 6,
+       "arr": "8.25",
+       "dep": "8.25"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 300)",
+       "idx": 7,
+       "arr": "8.28",
+       "dep": "8.28"
+      },
+      {
+       "stop": "CALTANISSETTA (Via Rochester c/o Autostazione)",
+       "idx": 8,
+       "arr": "8.55",
+       "dep": "8.55"
+      }
+     ],
+     "valid": true
+    },
+    {
      "corsa": "2601",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "61 exact dates from Albatross validities",
+      "raw": "55 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -2003,14 +2271,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "61 exact dates from Albatross validities",
+      "raw": "55 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -2116,14 +2378,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "61 exact dates from Albatross validities",
+      "raw": "55 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -2241,14 +2497,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "67 exact dates from Albatross validities",
+      "raw": "61 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -2391,19 +2641,129 @@
      "valid": true
     },
     {
+     "corsa": "60043",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "6 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
+      ]
+     },
+     "reverse": false,
+     "variant": "En FS-En B-Rag-S.Lucia-En",
+     "stops": [
+      {
+       "stop": "ENNA (Stazione fs)",
+       "idx": 0,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "ENNA (SP3)",
+       "idx": 1,
+       "arr": "7.21",
+       "dep": "7.21"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 2,
+       "arr": "7.31",
+       "dep": "7.31"
+      },
+      {
+       "stop": "ENNA BASSA (Viale dell'Unità d'Italia(fronte 49))",
+       "idx": 3,
+       "arr": "7.37",
+       "dep": "7.37"
+      },
+      {
+       "stop": "ENNA BASSA (Via Scifitello(incr.Via Veneto))",
+       "idx": 4,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 5,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "2598",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "6 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
+      ]
+     },
+     "reverse": false,
+     "variant": "En FS-En B-Rag-S.Lucia-En",
+     "stops": [
+      {
+       "stop": "ENNA (Stazione fs)",
+       "idx": 0,
+       "arr": "8.45",
+       "dep": "8.45"
+      },
+      {
+       "stop": "ENNA (SP3)",
+       "idx": 1,
+       "arr": "8.46",
+       "dep": "8.46"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 2,
+       "arr": "8.56",
+       "dep": "8.56"
+      },
+      {
+       "stop": "ENNA BASSA (Viale dell'Unità d'Italia(fronte 49))",
+       "idx": 3,
+       "arr": "9.02",
+       "dep": "9.02"
+      },
+      {
+       "stop": "ENNA BASSA (Via Scifitello(incr.Via Veneto))",
+       "idx": 4,
+       "arr": "9.05",
+       "dep": "9.05"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 5,
+       "arr": "9.15",
+       "dep": "9.15"
+      }
+     ],
+     "valid": true
+    },
+    {
      "corsa": "2592",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "61 exact dates from Albatross validities",
+      "raw": "55 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -2553,13 +2913,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "51 exact dates from Albatross validities",
+      "raw": "46 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -2698,14 +3053,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "61 exact dates from Albatross validities",
+      "raw": "55 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -2836,18 +3185,13 @@
      "valid": true
     },
     {
-     "corsa": "18332",
+     "corsa": "350",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "51 exact dates from Albatross validities",
+      "raw": "52 exact dates (merged templates)",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -2893,7 +3237,13 @@
        "2026-12-17",
        "2026-12-18",
        "2026-12-21",
-       "2026-12-22"
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
       ]
      },
      "reverse": true,
@@ -2932,14 +3282,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "61 exact dates from Albatross validities",
+      "raw": "55 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -3076,19 +3420,107 @@
      "valid": true
     },
     {
+     "corsa": "2610",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "6 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
+      ]
+     },
+     "reverse": true,
+     "variant": "EN-B.riposo",
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 0,
+       "arr": "14.20",
+       "dep": "14.20"
+      },
+      {
+       "stop": "ENNA (SS121 (incr.SS290))",
+       "idx": 1,
+       "arr": "14.31",
+       "dep": "14.31"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290)",
+       "idx": 2,
+       "arr": "14.34",
+       "dep": "14.34"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (ex Brace))",
+       "idx": 3,
+       "arr": "14.36",
+       "dep": "14.36"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (Oleificio))",
+       "idx": 4,
+       "arr": "14.37",
+       "dep": "14.37"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (rifornimento))",
+       "idx": 5,
+       "arr": "14.38",
+       "dep": "14.38"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (fronte 141))",
+       "idx": 6,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (incr.SP63))",
+       "idx": 7,
+       "arr": "14.41",
+       "dep": "14.41"
+      },
+      {
+       "stop": "CALASCIBETTA (SS290 (C.da S.Leonardo))",
+       "idx": 8,
+       "arr": "14.42",
+       "dep": "14.42"
+      },
+      {
+       "stop": "BUONRIPOSO (SS290 (Campo Sportivo))",
+       "idx": 9,
+       "arr": "14.43",
+       "dep": "14.43"
+      },
+      {
+       "stop": "BUONRIPOSO (SS290)",
+       "idx": 10,
+       "arr": "14.44",
+       "dep": "14.44"
+      },
+      {
+       "stop": "BUONRIPOSO (SS290 (Chiesa))",
+       "idx": 11,
+       "arr": "14.45",
+       "dep": "14.45"
+      }
+     ],
+     "valid": true
+    },
+    {
      "corsa": "2605",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "61 exact dates from Albatross validities",
+      "raw": "55 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -3224,13 +3656,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "51 exact dates from Albatross validities",
+      "raw": "46 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -3358,18 +3785,95 @@
      "valid": true
     },
     {
+     "corsa": "8950",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "6 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
+      ]
+     },
+     "reverse": true,
+     "variant": "CL-V.rosa-EN2",
+     "stops": [
+      {
+       "stop": "CALTANISSETTA (Via Rochester c/o Autostazione)",
+       "idx": 0,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 277)",
+       "idx": 1,
+       "arr": "7.22",
+       "dep": "7.22"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 135)",
+       "idx": 2,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Madonna della Catena))",
+       "idx": 3,
+       "arr": "7.27",
+       "dep": "7.27"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Oleificio Madem))",
+       "idx": 4,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "VILLAROSA STAZIONE (SS121 (Bivio))",
+       "idx": 5,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "ENNA (SS121 (c.da Mancadarso))",
+       "idx": 6,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "ENNA (SS121 (Bivio Kamuth))",
+       "idx": 7,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 8,
+       "arr": "7.49",
+       "dep": "7.49"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 9,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
      "corsa": "60126",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "51 exact dates from Albatross validities",
+      "raw": "46 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -3484,14 +3988,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "61 exact dates from Albatross validities",
+      "raw": "55 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -3663,13 +4161,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "51 exact dates from Albatross validities",
+      "raw": "46 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -3772,14 +4265,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "67 exact dates from Albatross validities",
+      "raw": "61 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -3897,14 +4384,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "67 exact dates from Albatross validities",
+      "raw": "61 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -4022,14 +4503,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "61 exact dates from Albatross validities",
+      "raw": "55 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -4141,9 +4616,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "10 exact dates from Albatross validities",
+      "raw": "9 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-17",
        "2026-10-24",
        "2026-10-31",
        "2026-11-07",
@@ -4179,13 +4653,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "51 exact dates from Albatross validities",
+      "raw": "46 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -4258,9 +4727,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "10 exact dates from Albatross validities",
+      "raw": "9 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-17",
        "2026-10-24",
        "2026-10-31",
        "2026-11-07",
@@ -4356,14 +4824,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "61 exact dates from Albatross validities",
+      "raw": "55 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -4505,13 +4967,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "57 exact dates from Albatross validities",
+      "raw": "52 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -4650,14 +5107,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "61 exact dates from Albatross validities",
+      "raw": "55 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -4818,19 +5269,95 @@
      "valid": true
     },
     {
+     "corsa": "AGGIUNTA 4",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "6 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
+      ]
+     },
+     "reverse": true,
+     "variant": "CL-V.rosa-EN1",
+     "stops": [
+      {
+       "stop": "CALTANISSETTA (Via Rochester c/o Autostazione)",
+       "idx": 0,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 277)",
+       "idx": 1,
+       "arr": "14.42",
+       "dep": "14.42"
+      },
+      {
+       "stop": "VILLAROSA (Corso Garibaldi 135)",
+       "idx": 2,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Madonna della Catena))",
+       "idx": 3,
+       "arr": "14.47",
+       "dep": "14.47"
+      },
+      {
+       "stop": "VILLAROSA (SS121 (Oleificio Madem))",
+       "idx": 4,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "VILLAROSA STAZIONE (SS121 (Bivio))",
+       "idx": 5,
+       "arr": "14.55",
+       "dep": "14.55"
+      },
+      {
+       "stop": "ENNA (SS121 (c.da Mancadarso))",
+       "idx": 6,
+       "arr": "15.00",
+       "dep": "15.00"
+      },
+      {
+       "stop": "ENNA (SS121 (Bivio Kamuth))",
+       "idx": 7,
+       "arr": "15.05",
+       "dep": "15.05"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 8,
+       "arr": "15.09",
+       "dep": "15.09"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 9,
+       "arr": "15.10",
+       "dep": "15.10"
+      }
+     ],
+     "valid": true
+    },
+    {
      "corsa": "2609",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "61 exact dates from Albatross validities",
+      "raw": "55 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -4984,14 +5511,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "67 exact dates from Albatross validities",
+      "raw": "61 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -5115,9 +5636,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "10 exact dates from Albatross validities",
+      "raw": "9 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-17",
        "2026-10-24",
        "2026-10-31",
        "2026-11-07",
@@ -5189,14 +5709,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "67 exact dates from Albatross validities",
+      "raw": "61 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -5320,13 +5834,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "51 exact dates from Albatross validities",
+      "raw": "46 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -5435,14 +5944,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "61 exact dates from Albatross validities",
+      "raw": "55 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
@@ -5560,14 +6063,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "61 exact dates from Albatross validities",
+      "raw": "55 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-10-12",
-       "2026-10-13",
-       "2026-10-14",
-       "2026-10-15",
-       "2026-10-16",
-       "2026-10-17",
        "2026-10-19",
        "2026-10-20",
        "2026-10-21",
