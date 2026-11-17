@@ -94,8 +94,6 @@ function wireEndpoint(which) {
   const input = document.getElementById(`${which}-input`);
   const list = document.getElementById(`${which}-suggest`);
   const clearBtn = document.getElementById(`${which}-clear`);
-  let timer = null;
-
   const syncClear = () => { clearBtn.hidden = !input.value; };
   clearBtn.addEventListener('click', () => {
     input.value = '';
@@ -107,12 +105,13 @@ function wireEndpoint(which) {
   });
 
   input.addEventListener('input', () => {
+    formError('');
     sel[which] = null;
     syncClear();
-    clearTimeout(timer);
+    clearTimeout(suggestTimer[which]);
     const q = input.value.trim();
     if (q.length < 2) { list.innerHTML = ''; list.hidden = true; return; }
-    timer = setTimeout(() => suggest(which, q), 300);
+    suggestTimer[which] = setTimeout(() => suggest(which, q), 300);
   });
   input.addEventListener('focus', () => {
     if (!input.value.trim()) showQuickPicks(which, list, input);
@@ -121,7 +120,7 @@ function wireEndpoint(which) {
   input.addEventListener('keydown', (e) => {
     if (e.key !== 'Enter') return;
     list.hidden = true;
-    if (sel.from && sel.to) runSearch();
+    runSearch();
   });
   document.addEventListener('click', (e) => {
     if (!list.contains(e.target) && e.target !== input) { list.hidden = true; }
@@ -327,6 +326,14 @@ function filterRow(all) {
 }
 
 function filterEmptyState() {
+  // With no filter applied the list is empty because the day is over, not
+  // because a filter hid everything — "Show all results" could not help.
+  if (resultFilter === 'all') {
+    const today = !isOtherRomeDay(new Date(dayView.anchorMs || Date.now()).toISOString());
+    return el('div', { class: 'empty-state' }, [
+      el('p', { text: today ? 'No more departures today.' : 'No more departures that day.' }),
+    ]);
+  }
   const label = (RESULT_FILTERS.find((f) => f.key === resultFilter) || {}).label || 'that';
   return el('div', { class: 'empty-state' }, [
     el('p', { text: `No ${label.toLowerCase()} options on this route.` }),
@@ -380,7 +387,9 @@ export function classifySuggestion(r) {
     else { iconEl = modeIcon('BUS'); kind = 'city bus stop'; }
   } else if (r.type === 'COACH_STOP') {
     iconEl = modeIcon('COACH'); kind = 'coach stop';
-  } else if (/^(city|town|village|hamlet)/.test(r.category || '') || (!r.category && r.type === 'PLACE')) {
+  } else if (/^(city|town|village|hamlet|place)/.test(r.category || '') || (!r.category && r.type === 'PLACE')) {
+    // "place_6" / "place_capital_8" are the geocoder's own city rows (Catania,
+    // Palermo) — they were falling through to the unlabelled kind.
     // M-9 (map deep dive): the 🏘️ emoji was the last emoji icon left after
     // S-5 — towns now wear a mango-family icon like every other kind
     iconEl = el('img', { class: 'mode-img', src: '/icons/town-mango.svg', alt: 'Town', width: '22', height: '22' });
@@ -447,7 +456,16 @@ export function rankSuggestions(rows, q, origin) {
     const n = (r.name || '').toLowerCase();
     const nameRank = n === ql ? 0 : n.startsWith(ql) ? 1 : 2;
     const { kind } = classifySuggestion(r);
-    const kindRank = kind === 'town' ? 0 : kind === 'train station' ? 1 : kind === 'coach stop' ? 2 : 3;
+    // Any station with trains ranks as one: a merged complex reads "train & bus
+    // station", which used to fall to rank 3 and put Palermo Centrale below
+    // Lolli, Vespri and Fiera.
+    const kindRank = kind === 'town' ? 0 : /train/.test(kind) ? 1 : kind === 'coach stop' ? 2 : 3;
+    // A business that merely carries the name ("Catania", a jeweller in
+    // Trapani) must not beat the place itself on distance alone. Localities,
+    // natural features and airports are places; everything else with a
+    // category is a point of interest.
+    const poiRank = (r.type === 'PLACE' && r.category
+      && !/^(city|town|village|hamlet|place|quarter|suburb|neighbourhood|aerodrome|cape|beach|cliff|peak|bay|islet|island|headland|square)/.test(r.category)) ? 1 : 0;
     // A real stop in the feed beats a place that merely shares the name. Ranked
     // BELOW nameRank so typing "palermo" still leads with Palermo the city
     // rather than Palermo Centrale — the city matches exactly, the station does
@@ -460,7 +478,17 @@ export function rankSuggestions(rows, q, origin) {
       const km = havM(origin, r) / 1000;
       farRank = km > 100 ? 3 : km > 50 ? 2 : km > 20 ? 1 : 0;
     }
-    return nameRank * 1000 + boardRank * 100 + farRank * 10 + kindRank;
+    // The town itself answers its own name: "Modica" is the town, not a Palermo
+    // tram stop called MODICA; "Ragusa" is not a bus stop in Rome. Hamlets and
+    // quarters do NOT qualify — "San Leone" must still lead with the Agrigento
+    // stop rather than a hamlet in Tortorici.
+    const cityExact = nameRank === 0 && r.type === 'PLACE' && /^(city|town|village|place)/.test(r.category || '');
+    // v1 covers Sicily: a mainland row ranks below every Sicilian one unless it
+    // is the exact city typed (Roma, Napoli — reachable by through train).
+    const off = (!cityExact && isFinite(r.lat) && isFinite(r.lon)
+      && !(r.lat >= 35.4 && r.lat <= 38.85 && r.lon >= 11.8 && r.lon <= 15.7)) ? 1 : 0;
+    return off * 100000 + nameRank * 10000 + (cityExact ? 0 : 5000)
+      + boardRank * 1000 + poiRank * 100 + farRank * 10 + kindRank;
   };
   return rows.map((r, i) => ({ r, i, sc: score(r) }))
     .sort((a, b) => a.sc - b.sc || a.i - b.i)
@@ -541,6 +569,17 @@ function biasPoint() {
 }
 
 const suggestSeq = { from: 0, to: 0 };
+const suggestTimer = { from: null, to: null };
+// A search supersedes any suggestion still debouncing or in flight — without
+// this a list that answers late reopens on top of the results.
+function cancelSuggest() {
+  for (const w of ['from', 'to']) {
+    clearTimeout(suggestTimer[w]);
+    suggestSeq[w]++;
+    const list = document.getElementById(`${w}-suggest`);
+    if (list) list.hidden = true;
+  }
+}
 async function suggest(which, q) {
   const list = document.getElementById(`${which}-suggest`);
   const seq = ++suggestSeq[which];
@@ -549,6 +588,9 @@ async function suggest(which, q) {
     if (seq !== suggestSeq[which]) return; // a newer request superseded this one
     list.innerHTML = '';
     list.appendChild(chooseOnMapRow(which));
+    if (!data.length) {
+      list.appendChild(el('div', { class: 'suggest-none', role: 'status', text: `No places match “${q}”.` }));
+    }
     // show up to 12 (the geocoder caps at ~10 anyway): with Sicily-first ranking
     // this surfaces more Sicilian streets so a nearby one isn't cut off the list
     for (const r of rankSuggestions(data, q, biasPoint()).slice(0, 12)) {
@@ -640,14 +682,59 @@ function havM(a, b) {
   return 2 * 6371000 * Math.asin(Math.sqrt(x));
 }
 
+// Inline form message (replaces a 3 s toast at the far end of the screen):
+// names the problem beside the field that has it and is announced.
+function formError(msg, which) {
+  const box = document.getElementById('form-error');
+  for (const w of ['from', 'to']) document.getElementById(`${w}-input`)?.removeAttribute('aria-invalid');
+  if (!box) { if (msg) toast(msg, 'warn'); return; }
+  box.textContent = msg;
+  box.hidden = !msg;
+  if (msg && which) {
+    const input = document.getElementById(`${which}-input`);
+    input.setAttribute('aria-invalid', 'true');
+    input.focus();
+  }
+}
+
+async function resolveTyped(which, q) {
+  try {
+    const { data } = await api.geocode(q, geoBias());
+    const r = rankSuggestions(data, q, biasPoint())[0];
+    if (!r) return false;
+    sel[which] = { name: r.name, place: r.type === 'STOP' && r.id ? r.id : `${r.lat},${r.lon}`, lat: r.lat, lon: r.lon };
+    document.getElementById(`${which}-input`).value = displayName(r.name);
+    document.getElementById(`${which}-suggest`).hidden = true;
+    syncClears();
+    return true;
+  } catch { return false; }
+}
+
 let searchSeq = 0;
 async function runSearch() {
   const mySeq = ++searchSeq; // rapid re-searches (mode toggles) supersede in-flight ones
   const results = document.getElementById('results');
-  if (!sel.from || !sel.to) {
-    toast('Pick both places from the suggestions', 'warn');
+  formError('');
+  cancelSuggest();
+  // Typed but not picked: take the top match, as every mainstream planner
+  // does, and show the resolved name in the field so a wrong guess is visible.
+  for (const which of ['from', 'to']) {
+    if (sel[which]) continue;
+    const typed = document.getElementById(`${which}-input`).value.trim();
+    // the lookup can take seconds on a cold query — the button says so
+    const btn = document.getElementById('search-btn');
+    const label = btn.textContent;
+    btn.disabled = true; btn.textContent = 'Looking up places…';
+    const found = typed.length >= 2 && await resolveTyped(which, typed);
+    btn.disabled = false; btn.textContent = label;
+    if (found) continue;
+    if (mySeq !== searchSeq) return;
+    formError(typed.length >= 2
+      ? `No place found for “${typed}”. Check the spelling or choose it on the map.`
+      : (which === 'from' ? 'Choose where you are starting from.' : 'Choose where you are going.'), which);
     return;
   }
+  if (mySeq !== searchSeq) return;
   // QA-01: same place both ends -> honest refusal, not loop-bus self-trips
   if (sel.from.name === sel.to.name ||
       (sel.from.lat && sel.to.lat && havM(sel.from, sel.to) < 400)) {
@@ -745,13 +832,15 @@ async function runSearch() {
       // R-04: "too many requests" is not "the service is down" — saying the
       // wrong one sends the user to check their connection for no reason.
       const busy = /429/.test(err?.message || '');
+      const offline = typeof navigator !== 'undefined' && navigator.onLine === false;
       results.appendChild(el('div', { class: 'empty-state' }, [
-        el('p', { text: busy
-          ? 'Too many searches in the last minute.'
-          : 'No route found — the routing service may be unreachable.' }),
-        el('p', { class: 'muted', text: busy
-          ? 'Wait about a minute and search again.'
-          : 'Check the operator sites directly, or retry when back online.' }),
+        el('p', { text: busy ? 'Too many searches in the last minute.'
+          : offline ? 'You’re offline.'
+          : 'The route service didn’t answer.' }),
+        el('p', { class: 'muted', text: busy ? 'Wait about a minute and search again.'
+          : offline ? 'Routes need a connection. Reconnect, then try again.'
+          : 'This is usually brief. Try again, or check the operator sites.' }),
+        el('button', { class: 'btn btn-ghost btn-small', text: 'Try again', onclick: () => runSearch() }),
       ]));
     }
   }
@@ -1135,7 +1224,8 @@ function renderDirectBlock(runs, reason, transfers = []) {
   const shown = (!primary && runs.length > 3) ? runs.slice(0, 3) : runs;
   const kids = [
     el('div', { class: 'direct-head' }, [
-      el('strong', { text: DIRECT_HEADS[reason] }),
+      el('strong', { text: (reason === 'down' && typeof navigator !== 'undefined' && navigator.onLine === false)
+        ? 'You’re offline — saved coach times only' : DIRECT_HEADS[reason] }),
       el('p', { class: 'muted', text: 'Scheduled times · tap a trip for details' }),
     ]),
   ];

@@ -92,3 +92,52 @@ test('an exact name still beats a merely-prefixed one nearby', () => {
   ];
   assert.strictEqual(led(rows, 'palermo', SICILY_CENTROID).name, 'Palermo');
 });
+
+// ── v1.11.0: the town answers its own name; Sicily first ──
+// Verbatim from GET /api/geocode (2026-11-17), trimmed to the fields ranking reads.
+const PALERMO_POS = { lat: 38.1099, lon: 13.3671 };
+const CATANIA = [
+  { type: 'STOP', name: 'CATANIA CENTRALE', modes: ['NIGHT_RAIL', 'REGIONAL_RAIL', 'BUS'], category: null, lat: 37.504935, lon: 15.099425, town: 'Italia', province: null },
+  { type: 'STOP', name: 'CUSMANO CATANIA', modes: ['BUS'], category: null, lat: 38.12706, lon: 13.346551, town: 'Palermo', province: 'Palermo' },
+  { type: 'COACH_STOP', name: 'CATANIA Piazza Giovanni XXIII', modes: ['COACH'], category: null, lat: 37.5089, lon: 15.0864, town: 'Catania', province: 'Catania' },
+  { type: 'PLACE', name: 'Catania', modes: [], category: 'place_6', lat: 37.5023612, lon: 15.0873718, town: 'Catania', province: 'Catania' },
+  { type: 'PLACE', name: 'Catania', modes: [], category: 'jewellery_16', lat: 38.0155551, lon: 12.5080924, town: 'Trapani', province: 'Trapani' },
+];
+test('"Catania" from Palermo leads with the city, not a nearer jeweller of that name', () => {
+  const out = rankSuggestions(CATANIA, 'Catania', PALERMO_POS);
+  assert.strictEqual(out[0].category, 'place_6');
+  assert.strictEqual(out[2].name, 'CATANIA CENTRALE'); // main station before minor stops
+});
+
+const MODICA = [
+  { type: 'STOP', name: 'MODICA', modes: ['TRAM'], category: null, lat: 38.13, lon: 13.30, town: 'Palermo', province: 'Palermo' },
+  { type: 'COACH_STOP', name: 'Modica (piazza Borsellino)', modes: ['COACH'], category: null, lat: 36.87, lon: 14.76, town: 'Modica', province: 'Ragusa' },
+  { type: 'PLACE', name: 'Modica', modes: [], category: 'town', lat: 36.86, lon: 14.76, town: 'Modica', province: 'Ragusa' },
+];
+test('"Modica" leads with the town, not a Palermo tram stop called MODICA', () => {
+  assert.strictEqual(rankSuggestions(MODICA, 'Modica', PALERMO_POS)[0].category, 'town');
+});
+
+const RAGUSA = [
+  { type: 'STOP', name: 'RAGUSA (VIA ZAMA)', modes: ['BUS'], category: null, lat: 36.91, lon: 14.72, town: 'Ragusa', province: 'Ragusa' },
+  { type: 'STOP', name: 'RAGUSA', modes: ['BUS'], category: null, lat: 41.88, lon: 12.52, town: 'Roma', province: 'Roma' },
+  { type: 'PLACE', name: 'Ragusa', modes: [], category: 'place_6', lat: 36.93, lon: 14.73, town: 'Ragusa', province: 'Ragusa' },
+];
+test('a mainland stop never outranks a Sicilian row', () => {
+  const out = rankSuggestions(RAGUSA, 'Ragusa', PALERMO_POS);
+  assert.strictEqual(out[0].category, 'place_6');
+  assert.strictEqual(out[out.length - 1].town, 'Roma');
+});
+
+const PALERMO = [
+  { type: 'STOP', name: 'Palermo Lolli', modes: ['REGIONAL_RAIL'], category: null, lat: 38.12, lon: 13.35, town: 'Palermo', province: 'Palermo' },
+  { type: 'STOP', name: 'PALERMO CENTRALE', modes: ['LONG_DISTANCE', 'REGIONAL_RAIL', 'TRAM', 'BUS'], category: null, lat: 38.11, lon: 13.37, town: 'Palermo', province: 'Palermo' },
+  { type: 'PLACE', name: 'Palermo', modes: [], category: 'place_6', lat: 38.11, lon: 13.35, town: 'Palermo', province: 'Palermo' },
+];
+test('a merged train+bus complex ranks as a train station', () => {
+  const out = rankSuggestions(PALERMO, 'Palermo', PALERMO_POS);
+  assert.strictEqual(out[0].category, 'place_6');
+  // Lolli is listed first by the server here; both are train stations, so the
+  // tie keeps server order — Centrale must not fall BELOW single-mode stations.
+  assert.ok(out.findIndex((r) => r.name === 'PALERMO CENTRALE') <= 2);
+});

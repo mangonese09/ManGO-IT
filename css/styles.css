@@ -373,6 +373,10 @@ body.kb-open .bottom-nav { transform: translateY(100%); }
 @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.45; } }
 .empty-state { text-align: center; padding: 20px 16px; color: var(--text-secondary, #c9c9c9); }
 .empty-state p { margin: 4px 0; }
+.suggest-none { padding: 10px 14px 12px; font-size: 0.8125rem; color: var(--text-secondary, #c9c9c9); }
+.form-error { margin: 8px 4px 0; font-size: 0.8125rem; line-height: 1.4; color: #ff8f8f; }
+:root[data-theme="light"] .form-error { color: #a3261e; }
+.endpoint-row input[aria-invalid="true"] { box-shadow: inset 0 0 0 1.5px var(--error, #e85a5a); }
 .map-note { margin: 6px 4px; }
 
 /* ── toasts ── */
@@ -789,6 +793,9 @@ body { font-size: 1rem; }
   backdrop-filter: blur(6px); transition: opacity 0.4s;
 }
 .map-hint.gone { opacity: 0; }
+/* Basemap provider down (probeBasemap): pins, lines and our own city labels
+   still draw, so say what is missing instead of leaving a bare canvas unexplained. */
+.map-bg-note { bottom: auto; top: 12px; left: 12px; transform: none; max-width: calc(100% - 84px); white-space: normal; border-radius: 14px; line-height: 1.35; padding: 7px 12px; }
 /* "Nearest stop: … →" — an ACTIONABLE pill (unlike the passive hint): shown
    when the street-zoom viewport holds no pins at all; tap flies to the stop */
 .map-nearest {

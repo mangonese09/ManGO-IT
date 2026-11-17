@@ -136,18 +136,54 @@ function currentTheme() {
 // app draws its OWN place labels (city-labels.js) — denser, zoom-stable, and
 // never hidden under a stop pin; from z13 the Carto label tiles take over
 // (street names etc. that we can't draw ourselves).
+// CARTO ended keyless raster access on 2026-09-25. A request with no key (or a
+// rejected one) still answers 200 — every tile is the same "API KEY REQUIRED"
+// watermark image — so no error path fires; probeBasemap() below detects it.
+// The key is a free Basemaps key restricted to this site's hosts in the CARTO
+// dashboard (a tile key is public by nature: the browser sends it per tile).
+const CARTO_KEY = '';
+const KEY_Q = CARTO_KEY ? `?key=${CARTO_KEY}` : '';
 const TILE_URL = {
-  dark: 'https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png',
+  dark: 'https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png' + KEY_Q,
   // Voyager, not light_all/Positron: Positron is a deliberately ultra-pale
   // data-overlay canvas (no visible roads/borders at rest); Voyager is a real
   // navigation basemap with road colors and boundaries.
-  light: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png',
+  light: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager_nolabels/{z}/{x}/{y}{r}.png' + KEY_Q,
 };
 const TILE_LABELS_URL = {
-  dark: 'https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png',
-  light: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}{r}.png',
+  dark: 'https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png' + KEY_Q,
+  light: 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager_only_labels/{z}/{x}/{y}{r}.png' + KEY_Q,
 };
 const TILE_ATTR = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>';
+
+// ── BASEMAP HEALTH ──
+// Two land tiles ~100 km apart (Palermo, Catania) are never byte-identical
+// unless the provider swapped both for one placeholder image. A network
+// failure is NOT a verdict (offline tiles may still come from cache), so only
+// a positive match turns the background off.
+let basemapOk = null; // null = not probed yet
+let basemapProbe = null;
+let basemapNote = null;
+export function sameBytes(a, b) {
+  if (!a || !b || a.byteLength !== b.byteLength || !a.byteLength) return false;
+  const x = new Uint8Array(a); const y = new Uint8Array(b);
+  for (let i = 0; i < x.length; i++) if (x[i] !== y[i]) return false;
+  return true;
+}
+function probeBasemap() {
+  if (basemapProbe) return basemapProbe;
+  const url = (x, y) => TILE_URL.dark.replace('{s}', 'a').replace('{z}', 8).replace('{x}', x).replace('{y}', y).replace('{r}', '');
+  const get = (u) => fetch(u, { signal: AbortSignal.timeout(4000) }).then((r) => r.arrayBuffer());
+  basemapProbe = Promise.all([get(url(137, 98)), get(url(138, 99))])
+    .then(([a, b]) => !sameBytes(a, b))
+    .catch(() => true);
+  return basemapProbe;
+}
+function showBasemapNote(cv) {
+  if (basemapNote || !cv) return;
+  basemapNote = el('div', { class: 'map-hint map-bg-note', role: 'status', text: 'Map background unavailable. Stops and lines still work.' });
+  cv.appendChild(basemapNote);
+}
 
 function loadLeaflet() {
   if (window.L) return Promise.resolve();
@@ -1101,6 +1137,11 @@ function ensureTiles() {
   // raw); tiles-light keeps the container background from flashing dark.
   const cv = document.getElementById('map-canvas');
   if (cv) { cv.classList.toggle('tiles-dark', theme === 'dark'); cv.classList.toggle('tiles-light', theme === 'light'); }
+  if (basemapOk === null) {
+    probeBasemap().then((ok) => { basemapOk = ok; if (map) ensureTiles(); });
+    return;
+  }
+  if (!basemapOk) { showBasemapNote(cv); return; } // a clean canvas beats a watermark
   if (tileLayer && tileTheme === theme) return;
   if (tileLayer) tileLayer.remove();
   if (tileLabelsLayer) tileLabelsLayer.remove();
