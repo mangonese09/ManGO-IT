@@ -446,10 +446,20 @@ function rateLimited(ip, pathname) {
 }
 
 // ── UPSTREAM ──
+// ViaggiaTreno's edge (Akamai) answers 403 "Access Denied" to any User-Agent
+// that carries a URL — measured 2026-11-17: "ManGO-IT/x (+https://…)" → 403,
+// "ManGO-IT/x" → 200. That silently killed every live-train lookup. The
+// contact form of the UA is what Transitous asks for, so only VT gets the
+// bare name.
+const UA_BARE = `ManGO-IT/${APP_VERSION}`;
+function uaFor(url) {
+  return String(url).startsWith(VT) ? UA_BARE : UA;
+}
+
 async function upstream(url, { asText = false, timeoutMs = 25000 } = {}) {
   countRequest(new URL(url).host);
   const res = await fetch(url, {
-    headers: { 'User-Agent': UA, Accept: asText ? 'text/plain, */*' : 'application/json, */*' },
+    headers: { 'User-Agent': uaFor(url), Accept: asText ? 'text/plain, */*' : 'application/json, */*' },
     signal: AbortSignal.timeout(timeoutMs),
   });
   if (res.status === 204) return { status: 204, data: null };
@@ -973,6 +983,19 @@ async function nominatimFallback(text) {
 // anything already departed, sort ascending by time, stamp `minutes` from now,
 // then apply a per-mode cap (so one busy mode can't crowd out the others) and
 // an overall cap. Rows keep their common shape {mode,line,headsign,timeISO,…}.
+// pure for tests: a place-level reverse-geocode answer → { near, off }.
+// Land answers carry a town ("Arenella, Palermo"); open sea answers either an
+// error or the bare country with no town at all.
+function revPlace(data) {
+  if (!data) return { near: null, off: false };
+  const a = data.address || {};
+  const town = a.city || a.town || a.village || a.municipality || null;
+  if (!town) return { near: null, off: true };
+  const part = a.suburb || a.hamlet || a.neighbourhood || null;
+  return { near: part && part !== town ? `${part}, ${town}` : town, off: false };
+}
+
+const OWN_FEED_ID =/Sicilia-intercity-coaches/i;
 function mergeDepartures(lists, nowMs, opts = {}) {
   const perMode = opts.perMode || 8, cap = opts.cap || 30;
   // full boards keep the WHOLE day: already-departed rows survive back to
@@ -992,6 +1015,16 @@ function mergeDepartures(lists, nowMs, opts = {}) {
     else if (r.realtime && !byKey.get(k).realtime) byKey.set(k, r);
   }
   rows = [...byKey.values()];
+  // Our own coach feed is also published to the trip planner, so the same run
+  // came back twice: once from the feed (COACH) and once from the planner as a
+  // "BUS" (Palermo airport listed every shuttle twice). Drop the planner copy,
+  // and only when its feed twin — same instant, same operator — is on the board.
+  const opKey = (r) => String(r.operator || '').toLowerCase().replace(/[^a-z]/g, '');
+  const feedRuns = new Set(rows.filter((r) => r.mode === 'COACH')
+    .map((r) => `${Date.parse(r.timeISO)}|${opKey(r)}`));
+  rows = rows.filter((r) => r.mode === 'COACH'
+    || !OWN_FEED_ID.test(`${r.tripId || ''} ${r.stopId || ''}`)
+    || !feedRuns.has(`${Date.parse(r.timeISO)}|${opKey(r)}`));
   const seen = {};
   rows = rows.filter((r) => { seen[r.mode] = (seen[r.mode] || 0) + 1; return seen[r.mode] <= perMode; });
   rows = rows.slice(0, cap);
@@ -1754,8 +1787,23 @@ const routes = {
         const area = (r.areas || []).find((a) => a.adminLevel >= 6 && a.adminLevel <= 9);
         town = area ? area.name : null;
       }
-    } catch { /* upstream down → client falls back to raw coords label */ }
-    const out = { name, town };
+    } catch { /* upstream down → the fallback below still gets a try */ }
+    // No street address (countryside, an airport apron, open water): ask the
+    // place-level geocoder which town this is. `near` names it; `off` means
+    // there is no town at all — open sea — so the client can refuse the pin.
+    let near = null, off = false;
+    if (!name) {
+      try {
+        const { data } = await upstream(
+          `https://nominatim.openstreetmap.org/reverse?lat=${lat.toFixed(5)}&lon=${lon.toFixed(5)}`
+          + '&format=jsonv2&zoom=14&addressdetails=1&accept-language=it',
+          { timeoutMs: 8000 },
+        );
+        const p = revPlace(data);
+        near = p.near; off = p.off;
+      } catch { /* both down → client says "Dropped pin" and accepts it */ }
+    }
+    const out = { name, town, near, off };
     cacheSet(key, out, 10 * 60 * 1000);
     return out;
   },
@@ -2042,4 +2090,4 @@ if (require.main === module) {
   server.listen(PORT, () => console.log(`ManGO:IT proxy on :${PORT}${STATIC ? ' (static+api)' : ''}`));
 }
 
-module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, outOfCoverage, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon, vtSilence, dropDominated, parseBias, geoScore, clusterStopsByProximity, clusterAreaName, HUBS: TRANSIT_HUBS, hubsInBbox, AIRPORTS, airportMatch, airportMatches, airportResult, nominatimToRow, geoDedupeKey, nearestTicketShops, mergeDepartures, afterStation, decodePolyline };
+module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, outOfCoverage, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon, vtSilence, dropDominated, parseBias, geoScore, clusterStopsByProximity, clusterAreaName, HUBS: TRANSIT_HUBS, hubsInBbox, AIRPORTS, airportMatch, airportMatches, airportResult, nominatimToRow, geoDedupeKey, nearestTicketShops, mergeDepartures, revPlace, uaFor, afterStation, decodePolyline };

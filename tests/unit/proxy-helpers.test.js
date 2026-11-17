@@ -414,3 +414,36 @@ test('airportMatches: generic word returns all four; city + airport returns one'
   assert.deepStrictEqual(airportMatches('catania'), []);
   assert.deepStrictEqual(airportMatches('airport road'), []);
 });
+
+// ── v1.15.0 ──
+test('mergeDepartures drops the planner copy of a run our own feed already lists', () => {
+  const { mergeDepartures: merge } = require('../../server/proxy.js');
+  const now = Date.parse('2026-11-17T20:00:00Z');
+  const feed = [{ mode: 'COACH', line: 'Palermo – Aeroporto (Shuttle)', headsign: 'PALERMO', timeISO: '2026-11-17T21:05:00.000Z', operator: 'Prestia e Comandè', ci: 724 }];
+  const planner = [
+    { mode: 'BUS', line: 'Palermo - Aeroporto (Shuttle)', headsign: 'Palermo', timeISO: '2026-11-17T21:05:00Z', operator: 'Prestia e Comandè', tripId: '20261117_22:05_it-Sicilia-intercity-coaches_prestia-airport-1-R34' },
+    // same feed id but no twin on the board → kept (never drop the only copy)
+    { mode: 'BUS', line: 'Palermo - Aeroporto (Shuttle)', headsign: 'Palermo', timeISO: '2026-11-17T21:35:00Z', operator: 'Prestia e Comandè', tripId: '20261117_22:35_it-Sicilia-intercity-coaches_prestia-airport-1-R35' },
+    // a city bus at the same minute is not ours to drop
+    { mode: 'BUS', line: '101', headsign: 'Stazione', timeISO: '2026-11-17T21:05:00Z', operator: 'AMAT Palermo S.p.A.', tripId: '20261117_it-Sicilia-Palermo-AMAT_96' },
+  ];
+  const out = merge([feed, planner], now, { cap: 30, perMode: 8 });
+  assert.deepStrictEqual(out.map((r) => `${r.mode} ${r.timeISO.slice(11, 16)} ${r.line.slice(0, 3)}`),
+    ['COACH 21:05 Pal', 'BUS 21:05 101', 'BUS 21:35 Pal']);
+});
+
+test('revPlace names the town for land and flags open water', () => {
+  const { revPlace } = require('../../server/proxy.js');
+  assert.deepStrictEqual(revPlace({ address: { suburb: 'Arenella', city: 'Palermo' } }), { near: 'Arenella, Palermo', off: false });
+  assert.deepStrictEqual(revPlace({ address: { village: 'Marianopoli', county: 'Caltanissetta' } }), { near: 'Marianopoli', off: false });
+  assert.deepStrictEqual(revPlace({ name: 'Italia', address: {} }), { near: null, off: true });
+  assert.deepStrictEqual(revPlace({ error: 'Unable to geocode' }), { near: null, off: true });
+  assert.deepStrictEqual(revPlace(null), { near: null, off: false }, 'no answer is not proof of sea');
+});
+
+test('uaFor sends the train source a client name with no URL in it', () => {
+  const { uaFor } = require('../../server/proxy.js');
+  const vt = uaFor('http://www.viaggiatreno.it/infomobilita/resteasy/viaggiatreno/partenze/S12002/x');
+  assert.match(vt, /^ManGO-IT\/[\w.]+$/);
+  assert.match(uaFor('https://api.transitous.org/api/v3/plan'), /https:\/\/it\.mangonese\.dev/);
+});
