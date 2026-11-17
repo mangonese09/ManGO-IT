@@ -178,6 +178,7 @@ function directionLine(headsign, { st, stop }) {
   const id = `${st.tripId || st.routeShortName}@${st.stopId}@${st.scheduledDeparture}`;
   const pinBtn = el('button', {
     class: `pin-btn${isSaved(id) ? ' pinned' : ''}`,
+    'aria-label': 'Pin this departure', 'aria-pressed': String(isSaved(id)),
     text: isSaved(id) ? '★' : '☆',
     onclick: (e) => {
       e.stopPropagation();
@@ -187,7 +188,7 @@ function directionLine(headsign, { st, stop }) {
         agencyName: st.agencyName, tripId: st.tripId,
         when: st.departure || st.scheduledDeparture, realTime: st.realTime,
       });
-      if (ok) { pinBtn.textContent = '★'; pinBtn.classList.add('pinned'); toast('Pinned to Saved', 'info', 1500); }
+      if (ok) { pinBtn.textContent = '★'; pinBtn.classList.add('pinned'); pinBtn.setAttribute('aria-pressed', 'true'); toast('Pinned to Saved', 'info', 1500); }
     },
   });
   return el('div', { class: 'line-dir' }, [

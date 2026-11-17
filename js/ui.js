@@ -121,16 +121,58 @@ let sheetStack = [];
 // module in Node, where there is no document.
 if (typeof document !== 'undefined') {
   document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && sheetStack.length) { e.preventDefault(); closeSheet(); }
-  });
+    if (e.key === 'Escape' && sheetStack.length) { e.preventDefault(); closeSheet(); return; }
+    // A non-button carrying role=button must answer Enter and Space itself;
+    // stopPropagation keeps a star nested in a row from firing the row.
+    const t = e.target;
+    if ((e.key === 'Enter' || e.key === ' ') && t && t.getAttribute
+        && t.getAttribute('role') === 'button' && t.tagName !== 'BUTTON') {
+      e.preventDefault(); e.stopPropagation(); t.click();
+    }
+  }, true);
+}
+
+// Everything behind the top dialog is inert: focus and the screen reader's
+// virtual cursor stay inside it (aria-modal alone is not honoured everywhere).
+function syncInert() {
+  const top = sheetStack[sheetStack.length - 1];
+  for (const n of document.body.children) {
+    if (n.tagName === 'SCRIPT' || n.classList.contains('toast-holder')) continue;
+    n.inert = !!top && n !== top;
+  }
+}
+
+// Our own history.back() (closing a sheet by ✕, Esc, drag or backdrop) raises
+// a popstate. app.js must not read it as the user pressing Back — that closed
+// the sheet UNDERNEATH a stacked one and re-asserted the previous tab.
+let pendingPops = 0;
+export function consumeSheetPop() {
+  if (pendingPops > 0) { pendingPops--; return true; }
+  return false;
+}
+
+let dialogSeq = 0;
+function pushDialog(overlay, dialog, focusEl) {
+  overlay._opener = document.activeElement;
+  document.body.appendChild(overlay);
+  document.body.classList.add('sheet-open');
+  sheetStack.push(overlay);
+  syncInert();
+  // QA-03: sheets are history entries — browser/hardware back closes them
+  try { history.pushState({ ...(history.state || {}), sheet: sheetStack.length }, ''); } catch { /* sandboxed */ }
+  try { (focusEl || dialog).focus({ preventScroll: true }); } catch { /* not focusable */ }
 }
 
 export function openSheet(contentEl, { title = '' } = {}) {
   const overlay = el('div', { class: 'sheet-overlay' });
-  const sheet = el('div', { class: 'sheet' }, [
+  const titleId = `sheet-title-${++dialogSeq}`;
+  const sheet = el('div', {
+    class: 'sheet', role: 'dialog', 'aria-modal': 'true', tabindex: '-1',
+    ...(title ? { 'aria-labelledby': titleId } : { 'aria-label': 'Details' }),
+  }, [
     el('div', { class: 'sheet-grab' }),
     el('div', { class: 'sheet-head' }, [
-      el('div', { class: 'sheet-title', text: title }),
+      el('h2', { class: 'sheet-title', id: titleId, text: title }),
       el('button', { class: 'sheet-close', 'aria-label': 'Close', text: '✕', onclick: () => closeSheet() }),
     ]),
     contentEl,
@@ -138,12 +180,8 @@ export function openSheet(contentEl, { title = '' } = {}) {
   overlay.appendChild(sheet);
   overlay.addEventListener('click', (e) => { if (e.target === overlay) closeSheet(); });
   attachDragDismiss(sheet);
-  document.body.appendChild(overlay);
-  document.body.classList.add('sheet-open');
+  pushDialog(overlay, sheet);
   requestAnimationFrame(() => overlay.classList.add('show'));
-  sheetStack.push(overlay);
-  // QA-03: sheets are history entries — browser/hardware back closes them
-  try { history.pushState({ ...(history.state || {}), sheet: sheetStack.length }, ''); } catch { /* sandboxed */ }
   return overlay;
 }
 
@@ -154,7 +192,19 @@ export function closeSheet(fromPop = false) {
   overlay.classList.remove('show');
   setTimeout(() => overlay.remove(), 250);
   if (!sheetStack.length) document.body.classList.remove('sheet-open');
-  if (!fromPop && history.state && history.state.sheet) history.back();
+  syncInert();
+  // Focus returns to what opened the dialog. Not to a text field: on a phone
+  // that would raise the keyboard nobody asked for.
+  const op = overlay._opener;
+  if (op && op.isConnected && op !== document.body && !/^(INPUT|TEXTAREA)$/.test(op.tagName)) {
+    try { op.focus({ preventScroll: true }); } catch { /* gone */ }
+  }
+  if (!fromPop && history.state && history.state.sheet) {
+    pendingPops++;
+    setTimeout(() => { if (pendingPops > 0) pendingPops--; }, 800); // a back() that never raised popstate
+    history.back();
+  }
+  if (overlay._onClose) overlay._onClose();
   return true;
 }
 export function anySheetOpen() { return sheetStack.length > 0; }
@@ -180,18 +230,25 @@ function attachDragDismiss(sheet) {
 // ── STYLED CONFIRM (never a native dialog) ──
 export function confirmModal(message, { confirmText = 'Delete', danger = true } = {}) {
   return new Promise((resolve) => {
+    // A confirm is a dialog like any sheet: it sits on the same stack, so Esc,
+    // the Back button and the backdrop all cancel it, and focus starts on
+    // Cancel (the safe answer) and returns to the opener afterwards.
     const overlay = el('div', { class: 'sheet-overlay modal-center show' });
-    const done = (v) => { overlay.remove(); resolve(v); };
-    const box = el('div', { class: 'modal-box' }, [
-      el('p', { class: 'modal-msg', text: message }),
+    let result = false;
+    overlay._onClose = () => resolve(result);
+    const done = (v) => { result = v; closeSheet(); };
+    const msgId = `modal-msg-${++dialogSeq}`;
+    const cancel = el('button', { class: 'btn btn-ghost', text: 'Cancel', onclick: () => done(false) });
+    const box = el('div', { class: 'modal-box', role: 'alertdialog', 'aria-modal': 'true', 'aria-describedby': msgId, 'aria-label': confirmText }, [
+      el('p', { class: 'modal-msg', id: msgId, text: message }),
       el('div', { class: 'modal-actions' }, [
-        el('button', { class: 'btn btn-ghost', text: 'Cancel', onclick: () => done(false) }),
+        cancel,
         el('button', { class: `btn ${danger ? 'btn-danger' : 'btn-primary'}`, text: confirmText, onclick: () => done(true) }),
       ]),
     ]);
     overlay.appendChild(box);
     overlay.addEventListener('click', (e) => { if (e.target === overlay) done(false); });
-    document.body.appendChild(overlay);
+    pushDialog(overlay, box, cancel);
   });
 }
 

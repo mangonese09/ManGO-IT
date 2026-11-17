@@ -4,7 +4,7 @@ import { initBoard, setBoardVisible } from './board.js';
 import { renderSaved } from './saved.js';
 import { renderMapTab } from './mapview.js';
 import { initSettings } from './settings.js';
-import { closeSheet, anySheetOpen } from './ui.js';
+import { closeSheet, anySheetOpen, consumeSheetPop } from './ui.js';
 import { pruneCache, getPref, setPref } from './store.js';
 
 const VIEWS = ['home', 'saved', 'map', 'settings'];
@@ -23,7 +23,9 @@ function setView(view, push = true) {
   if (push) { try { history.pushState({ view }, '', '#' + view); } catch { /* sandboxed */ } }
   for (const v of VIEWS) {
     document.getElementById(`view-${v}`).hidden = v !== view;
-    document.getElementById(`nav-${v}`).classList.toggle('active', v === view);
+    const nb = document.getElementById(`nav-${v}`);
+    nb.classList.toggle('active', v === view);
+    if (v === view) nb.setAttribute('aria-current', 'page'); else nb.removeAttribute('aria-current');
   }
   setBoardVisible(view === 'home');
   // pull-to-refresh (and its Android overscroll stretch) only on Home
@@ -46,6 +48,7 @@ function goBack() {
 
 // browser/hardware back → unwind sheet, then tab stack (QA-03)
 window.addEventListener('popstate', (e) => {
+  if (consumeSheetPop()) return; // our own back() from closing a sheet
   if (anySheetOpen()) { closeSheet(true); return; }
   const v = (e.state && e.state.view) || 'home';
   navStack.length = 0; // history is now the source of truth for depth

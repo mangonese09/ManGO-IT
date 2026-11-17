@@ -742,7 +742,7 @@ async function runSearch() {
     return;
   }
   results.innerHTML = '';
-  results.appendChild(el('div', { class: 'loading', text: 'Finding routes…' }));
+  results.appendChild(el('div', { class: 'loading', role: 'status', text: 'Finding routes…' }));
 
   const whenVal = document.getElementById('when-input').value;
   const params = { fromPlace: sel.from.place, toPlace: sel.to.place };
@@ -1729,10 +1729,11 @@ function intermediateBlock(leg) {
   }
   const word = stops.length === 1 ? 'stop' : 'stops';
   const btn = el('button', {
-    class: 'stops-toggle', text: `${stops.length} ${word} ▾`,
+    class: 'stops-toggle', text: `${stops.length} ${word} ▾`, 'aria-expanded': 'false',
     onclick: () => {
       const open = !list.hidden;
       list.hidden = open;
+      btn.setAttribute('aria-expanded', String(!open));
       btn.textContent = `${stops.length} ${word} ${open ? '▾' : '▴'}`;
     },
   });

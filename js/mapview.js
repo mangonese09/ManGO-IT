@@ -1325,7 +1325,7 @@ function buildControls() {
     const glyph = icon ? modeIcon(icon, 'mode-img mode-img-sm')
       : el('span', { class: 'chip-hub-glyph' }, [el('img', { src: '/icons/modes/train.png', alt: '', width: '12', height: '12' })]);
     const chip = el('button', {
-      class: `map-chip${mapFilter[key] ? ' on' : ''}`,
+      class: `map-chip${mapFilter[key] ? ' on' : ''}`, 'aria-pressed': String(!!mapFilter[key]),
       onclick: () => {
         const next = !mapFilter[key];
         if (!next && MAP_FILTER_KEYS.filter((k) => mapFilter[k]).length === 1) {
@@ -1334,6 +1334,7 @@ function buildControls() {
         mapFilter[key] = next;
         setPref('mapModes', mapFilter);
         chip.classList.toggle('on', next);
+        chip.setAttribute('aria-pressed', String(next));
         applyFilter();
       },
     }, [glyph, el('span', { text: label })]);
@@ -1354,6 +1355,7 @@ function openMapSearch() {
   const results = el('div', { class: 'map-search-results' });
   const input = el('input', {
     class: 'map-search-input', type: 'search', placeholder: 'Search a town, station or stop…',
+    'aria-label': 'Search a town, station or stop',
     autocomplete: 'off', autocapitalize: 'off', spellcheck: 'false',
   });
   const body = el('div', { class: 'map-search-body' }, [input, results]);

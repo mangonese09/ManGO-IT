@@ -149,10 +149,11 @@ function wireChoiceRow(rowId, cfg) {
   if (!row) return;
   rowConfigs.set(rowId, cfg);
   row.addEventListener('click', () => {
-    const body = el('div', { class: 'choice-sheet' });
+    const body = el('div', { class: 'choice-sheet', role: 'radiogroup' });
     for (const o of cfg.options) {
       body.appendChild(el('button', {
         class: `choice-row${cfg.current() === o.v ? ' is-active' : ''}`,
+        role: 'radio', 'aria-checked': String(cfg.current() === o.v),
         onclick: () => {
           cfg.pick(o.v);
           paintValues();

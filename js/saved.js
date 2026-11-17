@@ -168,10 +168,10 @@ export async function openStopSchedule(s) {
   // differences fall out of the real calendars for that day.
   let activeDate = null; // null = today
   const chipRow = el('div', { class: 'hub-chips sched-daychips' });
-  const activate = (b) => { for (const x of chipRow.children) x.classList.toggle('is-active', x === b); };
+  const activate = (b) => { for (const x of chipRow.children) { x.classList.toggle('is-active', x === b); x.setAttribute('aria-pressed', String(x === b)); } };
   for (const c of scheduleDayChips()) {
     const b = el('button', {
-      class: `chip-btn${c.date === null ? ' is-active' : ''}`, text: c.label,
+      class: `chip-btn${c.date === null ? ' is-active' : ''}`, text: c.label, 'aria-pressed': String(c.date === null),
       onclick: () => { activeDate = c.date; activate(b); load(); },
     });
     chipRow.appendChild(b);
@@ -470,8 +470,8 @@ export async function openHubBoard(hub) {
     // filter down to a mode that has no departures to show.
     const has = departures.some((r) => (FAM_OF[r.mode] || 'city') === key);
     const b = el('button', {
-      class: has ? 'map-chip on' : 'map-chip chip-none',
-      onclick: () => { if (!has) return; fam[key] = !fam[key]; b.classList.toggle('on', fam[key]); renderRows(); },
+      class: has ? 'map-chip on' : 'map-chip chip-none', 'aria-pressed': String(has),
+      onclick: () => { if (!has) return; fam[key] = !fam[key]; b.classList.toggle('on', fam[key]); b.setAttribute('aria-pressed', String(fam[key])); renderRows(); },
     }, [modeIcon(mode, 'mode-img mode-img-sm'), el('span', { text: label })]);
     if (!has) b.disabled = true;
     return b;

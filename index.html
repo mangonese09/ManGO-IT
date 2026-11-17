@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://mangonese.dev">
   <link rel="preconnect" href="https://mangonese.dev" crossorigin>
   <link rel="stylesheet" href="https://mangonese.dev/shared/mangonese.css">
-  <link rel="stylesheet" href="/css/styles.css?v=1.11.0">
+  <link rel="stylesheet" href="/css/styles.css?v=1.12.0">
 </head>
 <body>
   <header class="app-header">
@@ -25,13 +25,13 @@
       <div class="search-box card">
         <div class="endpoint-stack">
           <div class="endpoint-row">
-            <input id="from-input" type="text" placeholder="From" autocomplete="off" enterkeyhint="search">
+            <input id="from-input" type="text" placeholder="From" aria-label="From" autocomplete="off" enterkeyhint="search">
             <button id="from-clear" class="field-clear" aria-label="Clear From" hidden>&#10005;</button>
             <div id="from-suggest" class="suggest" hidden></div>
           </div>
           <div class="endpoint-divider"></div>
           <div class="endpoint-row">
-            <input id="to-input" type="text" placeholder="To" autocomplete="off" enterkeyhint="search">
+            <input id="to-input" type="text" placeholder="To" aria-label="To" autocomplete="off" enterkeyhint="search">
             <button id="to-clear" class="field-clear" aria-label="Clear To" hidden>&#10005;</button>
             <div id="to-suggest" class="suggest" hidden></div>
           </div>
@@ -73,7 +73,7 @@
       <button id="place-add-toggle" class="add-toggle">+ Add a place</button>
       <div id="place-search-card" class="search-box card fav-search" hidden>
         <div class="endpoint-row">
-          <input id="place-input" type="text" placeholder="Add a place — home, a town or an address" autocomplete="off" enterkeyhint="search">
+          <input id="place-input" type="text" aria-label="Add a place" placeholder="Add a place — home, a town or an address" autocomplete="off" enterkeyhint="search">
           <div id="place-suggest" class="suggest" hidden></div>
         </div>
       </div>
@@ -82,7 +82,7 @@
       <button id="fav-add-toggle" class="add-toggle">+ Add a stop</button>
       <div id="fav-search-card" class="search-box card fav-search" hidden>
         <div class="endpoint-row">
-          <input id="fav-input" type="text" placeholder="Add a stop — bus, coach or train" autocomplete="off" enterkeyhint="search">
+          <input id="fav-input" type="text" aria-label="Add a stop" placeholder="Add a stop — bus, coach or train" autocomplete="off" enterkeyhint="search">
           <div id="fav-suggest" class="suggest" hidden></div>
         </div>
       </div>
@@ -155,8 +155,8 @@
     </section>
   </main>
 
-  <nav class="bottom-nav">
-    <button id="nav-home" class="nav-btn active" aria-label="Home">
+  <nav class="bottom-nav" aria-label="Main">
+    <button id="nav-home" class="nav-btn active" aria-label="Home" aria-current="page">
       <img src="/icons/home.png" alt="" width="26" height="26">
     </button>
     <button id="nav-saved" class="nav-btn" aria-label="Saved">
@@ -187,6 +187,6 @@
       });
     }
   </script>
-  <script type="module" src="/js/app.js?v=1.11.0"></script>
+  <script type="module" src="/js/app.js?v=1.12.0"></script>
 </body>
 </html>
