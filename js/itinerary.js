@@ -1,5 +1,6 @@
 // ── ITINERARY MATH (pure, unit-tested) ──
 import { dayPartKey, DAYPARTS } from './time.js';
+import { directionalRouteName } from './names.js';
 
 // Whole-day results (§5.7, Ship 3) cluster into three dayparts with sticky
 // headers so a 19-departure corridor reads as three scannable groups and a
@@ -83,6 +84,20 @@ export function worstTransferMin(legs) {
   return worst; // null = no transfers
 }
 
+// The LONGEST gap between two rides. worstTransferMin answers "can I make
+// it"; this answers "how long am I stuck" — a 13 h itinerary with a night in
+// a station looked like any other card.
+export function longestWaitMin(legs) {
+  const transit = (legs || []).filter((l) => l.mode !== 'WALK');
+  let longest = null;
+  for (let i = 1; i < transit.length; i++) {
+    const buf = Math.round((new Date(transit[i].startTime) - new Date(transit[i - 1].endTime)) / 60000);
+    if (isFinite(buf) && (longest === null || buf > longest)) longest = buf;
+  }
+  return longest;
+}
+export const LONG_WAIT_MIN = 120;
+
 // tiers per the teardown: >=15 calm / 6..14 tight / <=5 risky
 export function transferTier(min) {
   if (min === null || min === undefined) return null;
@@ -128,7 +143,7 @@ export function legStripModel(legs) {
     out.push({
       walk: false,
       mode: l.mode,
-      label: isRailReplacement(l) ? 'Rail bus' : (l.routeShortName || l.displayName || ''),
+      label: isRailReplacement(l) ? 'Rail bus' : directionalRouteName(l.routeShortName || l.displayName || '', l.headsign || l.to?.name),
       pct: Math.max(8, Math.round(100 * (l.duration || 0) / total)),
       realTime: !!l.realTime,
     });

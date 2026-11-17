@@ -2,8 +2,8 @@
 import { api } from './api.js';
 import { el, modeMeta, modeClass, modeIcon, isRailMode, liveBadge, staleChip, openSheet, closeSheet, placeIcon, placeIconKey } from './ui.js';
 import { romeTime, romeDay, romeHour, dayPartKey, DAYPARTS, durationText, isOtherRomeDay, romeWallToIso, whenLabel, deviceZoneGap, romeNowInputValue } from './time.js';
-import { displayName } from './names.js';
-import { worstTransferMin, transferTier, transferChipText, imminentText, legStripModel, groupByDaypart, plusTag, isRailReplacement, RESULT_FILTERS, matchesFilter } from './itinerary.js';
+import { displayName, directionalRouteName } from './names.js';
+import { worstTransferMin, longestWaitMin, LONG_WAIT_MIN, transferTier, transferChipText, imminentText, legStripModel, groupByDaypart, plusTag, isRailReplacement, RESULT_FILTERS, matchesFilter } from './itinerary.js';
 import { operatorFor, fareChip, fareSummary, eur } from './operators.js';
 import { saisOdFare } from './fares-od.js';
 import { getRecents, pushRecent, removeRecent, getFavStops, addFavStop, removeFavStop, getSettings, getPlacesSorted, addPlace, removePlace, isPlace, getPref, setPref } from './store.js';
@@ -19,6 +19,7 @@ export function initSearch() {
   wireEndpoint('to');
   document.getElementById('swap-btn').addEventListener('click', swapEndpoints);
   document.getElementById('search-btn').addEventListener('click', runSearch);
+  document.getElementById('search-summary')?.addEventListener('click', () => expandForm(true));
   document.getElementById('when-toggle').addEventListener('click', toggleWhen);
   initWhenChip();
   initModeToggles();
@@ -684,12 +685,42 @@ function havM(a, b) {
 
 // Inline form message (replaces a 3 s toast at the far end of the screen):
 // names the problem beside the field that has it and is announced.
+// ── COLLAPSED FORM ──
+// Once a search has answered, the form is chrome: it held the first result
+// card down at y≈585 of an 844px screen. It folds to one summary row (the
+// Google Maps / Trenitalia pattern); tapping the row brings the form back.
+function collapseForm() {
+  const box = document.querySelector('#view-home .search-box');
+  const btn = document.getElementById('search-summary');
+  if (!box || !btn || !sel.from || !sel.to) return;
+  const when = document.getElementById('when-display').textContent.trim();
+  const verb = departMode === 'arrive' ? 'Arrive by' : 'Depart';
+  const modes = modeSel.train && modeSel.bus ? '' : modeSel.train ? ' · trains only' : ' · buses & coaches only';
+  btn.innerHTML = '';
+  btn.appendChild(el('span', { class: 'ss-text' }, [
+    el('span', { class: 'ss-route', text: `${document.getElementById('from-input').value} → ${document.getElementById('to-input').value}` }),
+    el('span', { class: 'ss-when muted', text: `${verb} ${when === 'Now' ? 'now' : when}${modes}` }),
+  ]));
+  btn.appendChild(el('span', { class: 'ss-edit', text: 'Edit' }));
+  btn.hidden = false;
+  box.classList.add('collapsed');
+}
+function expandForm(focus = false) {
+  const box = document.querySelector('#view-home .search-box');
+  const btn = document.getElementById('search-summary');
+  if (!box || !btn || !box.classList.contains('collapsed')) return;
+  box.classList.remove('collapsed');
+  btn.hidden = true;
+  if (focus) document.getElementById('search-btn').focus();
+}
+
 function formError(msg, which) {
   const box = document.getElementById('form-error');
   for (const w of ['from', 'to']) document.getElementById(`${w}-input`)?.removeAttribute('aria-invalid');
   if (!box) { if (msg) toast(msg, 'warn'); return; }
   box.textContent = msg;
   box.hidden = !msg;
+  if (msg) expandForm(); // the message lives inside the form
   if (msg && which) {
     const input = document.getElementById(`${which}-input`);
     input.setAttribute('aria-invalid', 'true');
@@ -743,6 +774,7 @@ async function runSearch() {
   }
   results.innerHTML = '';
   results.appendChild(el('div', { class: 'loading', role: 'status', text: 'Finding routes…' }));
+  collapseForm();
 
   const whenVal = document.getElementById('when-input').value;
   const params = { fromPlace: sel.from.place, toPlace: sel.to.place };
@@ -826,6 +858,7 @@ async function runSearch() {
   } catch (err) {
     if (mySeq !== searchSeq) return;
     results.innerHTML = '';
+    expandForm(); // a failed search is retried or edited — keep the form in reach
     const dir = await directPromise;
     if (mySeq !== searchSeq) return;
     const ok = renderDirectBlock(dir?.data?.results || [], 'down', dir?.data?.transfers || []);
@@ -1103,7 +1136,7 @@ function detailCoachLeg(leg) {
   return el('div', { class: 'leg leg-transit' }, [
     el('span', { class: 'leg-route' }, [
       modeIcon('COACH', 'mode-img mode-img-sm'),
-      el('span', { text: ` ${displayName(leg.route)}` }),
+      el('span', { text: ` ${directionalRouteName(leg.route, leg.to)}` }),
     ]),
     el('div', { class: 'leg-stops' }, [
       el('div', { class: 'leg-stop' }, [
@@ -1114,14 +1147,30 @@ function detailCoachLeg(leg) {
       ]),
     ]),
     el('div', { class: 'muted leg-op', text: `${leg.operator} · scheduled times, no live status` }),
+    coachTicketBlock(leg),
   ]);
+}
+// The feed's coach runs carry an operator name, which is all the "How to buy"
+// block needs — the direct-coach sheet was the one trip sheet without it.
+function coachTicketBlock(leg) {
+  const op = operatorFor(leg.operator);
+  if (!op) return null;
+  return ticketBlock(op, { agencyName: leg.operator, mode: 'COACH', from: { name: leg.from }, to: { name: leg.to } });
 }
 
 function openDirectDetail(r) {
   const body = el('div', { class: 'iti-detail' });
   body.appendChild(el('div', { class: 'iti-detail-head' }, [
-    el('strong', { text: `${r.dep} → ${r.arr}` }),
+    el('strong', { text: `${r.dep} → ${r.arr}${plusTag(r.arrPlus)}` }),
     el('span', { class: 'muted', text: `${dayTag(r.day) || ' today'} · direct coach` }),
+    // same pairing as a planned trip: every trip sheet has its map
+    isFinite(r.fromLat) && isFinite(r.fromLon) ? el('button', {
+      class: 'btn btn-ghost iti-map-btn', text: 'Show on map',
+      onclick: () => closeSheetThen(async () => {
+        const { showCoachRouteOnMap } = await import('./mapview.js');
+        showCoachRouteOnMap({ lat: r.fromLat, lon: r.fromLon, routeName: r.route, stopName: r.from });
+      }),
+    }) : null,
   ]));
   if (r.fromWalkM > 400) {
     const w = walkMin(r.fromWalkM);
@@ -1444,13 +1493,15 @@ function itineraryCard(it) {
 
   const worst = worstTransferMin(it.legs);
   const tier = transferTier(worst);
+  const longest = longestWaitMin(it.legs);
+  const longWait = longest !== null && longest >= LONG_WAIT_MIN;
   const imminent = imminentText(it.startTime);
   const anyLive = transitLegs.some((l) => l.realTime);
   const railBus = transitLegs.some(isRailReplacement); // R-09: give the anonymous BUS cards an identity
 
   return el('button', { class: 'card iti-card', onclick: () => openItineraryDetail(it) }, [
     el('div', { class: 'iti-times' }, [
-      el('span', { class: 'iti-time', text: `${romeTime(it.startTime)} → ${romeTime(it.endTime)}` }),
+      el('span', { class: 'iti-time', text: `${romeTime(it.startTime)} → ${romeTime(it.endTime)}${plusTag(dayDiff(it.startTime, it.endTime))}` }),
       imminent ? el('span', { class: 'chip chip-imminent', text: imminent }) : null,
       el('span', { class: 'iti-dur', text: durationText(it.duration) }),
     ]),
@@ -1462,13 +1513,40 @@ function itineraryCard(it) {
     el('div', { class: 'iti-meta' }, [
       el('span', { class: 'muted', text: it.transfers === 0 ? 'direct' : `${it.transfers} transfer${it.transfers > 1 ? 's' : ''}` }),
       railBus ? el('span', { class: 'chip chip-railbus', text: 'replacement bus' }) : null,
-      tier === 'calm' ? el('span', { class: 'muted', text: transferChipText(worst, tier) }) : null,
+      tier === 'calm' && !longWait ? el('span', { class: 'muted', text: transferChipText(worst, tier) }) : null,
+      longWait ? el('span', { class: 'chip chip-wait', text: transferChipText(longest, 'calm') }) : null,
       tier === 'tight' || tier === 'risky' ? el('span', { class: `chip chip-xfer-${tier}`, text: transferChipText(worst, tier) }) : null,
       cardFareText(it),
       liveBadge(anyLive),
     ]),
   ]);
 }
+
+// Rome calendar days between two instants (0 = same day) — feeds plusTag so a
+// trip that arrives after midnight says "+1" beside its arrival clock.
+function dayDiff(startIso, endIso) {
+  const a = Date.parse(`${romeDateOf(new Date(startIso).getTime())}T00:00:00Z`);
+  const b = Date.parse(`${romeDateOf(new Date(endIso).getTime())}T00:00:00Z`);
+  const n = Math.round((b - a) / 86400000);
+  return isFinite(n) && n > 0 ? n : 0;
+}
+
+// The change between two rides, stated where it happens in the trip sheet —
+// the card's risk pill used to vanish the moment the card was opened.
+function transferRow(prev, next) {
+  const min = Math.round((new Date(next.startTime) - new Date(prev.endTime)) / 60000);
+  if (!isFinite(min)) return null;
+  const tier = transferTier(min);
+  const at = next.from?.name && !ENDPOINT_JUNK.test(next.from.name) ? `at ${displayName(next.from.name)}` : '';
+  return el('div', { class: `leg leg-xfer leg-xfer-${tier}` }, [
+    tier === 'calm'
+      ? el('span', { class: min >= LONG_WAIT_MIN ? 'chip chip-wait' : 'muted', text: min >= 60 ? transferChipText(min, tier) : `${min} min to change` })
+      : el('span', { class: `chip chip-xfer-${tier}`, text: transferChipText(min, tier) }),
+    at ? el('span', { class: 'muted', text: at }) : null,
+  ]);
+}
+// MOTIS names coordinate endpoints START / END — never a name to print
+const ENDPOINT_JUNK = /^(start|end|origin|destination)$/i;
 
 // F-9 (2026-08-10 walkthrough): the fare rides the card when it is EXACT for
 // every paid leg (Google/Citymapper show fares up front). One flat-fare leg =
@@ -1517,7 +1595,7 @@ function closeSheetThen(fn) {
 function openItineraryDetail(it) {
   const body = el('div', { class: 'iti-detail' });
   body.appendChild(el('div', { class: 'iti-detail-head' }, [
-    el('strong', { text: `${romeTime(it.startTime)} → ${romeTime(it.endTime)}` }),
+    el('strong', { text: `${romeTime(it.startTime)} → ${romeTime(it.endTime)}${plusTag(dayDiff(it.startTime, it.endTime))}` }),
     el('span', { class: 'muted', text: ` · ${durationText(it.duration)} · ${romeDay(it.startTime)}` }),
     // F-7: every itinerary pairs with its map (Google/Apple convention) — the
     // tracer draws each leg's real geometry, so this is a jump, not a rebuild
@@ -1542,15 +1620,21 @@ function openItineraryDetail(it) {
 
   const opsSeen = new Set(); // one ticket block per operator per sheet
   const opCounts = operatorLegCounts(it.legs); // for the urban day-pass hint (§4.5)
+  let prevTransit = null;
   it.legs.forEach((leg, i) => {
     if (leg.mode === 'WALK') {
+      // "1 min walk to End" — the planner's placeholder for the pin you chose
+      const toName = leg.to?.name;
+      const toText = !toName ? '' : ENDPOINT_JUNK.test(toName) ? ' to your destination' : ` to ${displayName(toName)}`;
       body.appendChild(el('div', { class: 'leg leg-walk' }, [
         modeIcon('WALK', 'mode-img mode-img-sm'),
         el('span', { text: ` ${durationText(leg.duration)} walk` }),
-        el('span', { class: 'muted', text: leg.to?.name ? ` to ${displayName(leg.to.name)}` : '' }),
+        el('span', { class: 'muted', text: toText }),
       ]));
       return;
     }
+    if (prevTransit) { const row = transferRow(prevTransit, leg); if (row) body.appendChild(row); }
+    prevTransit = leg;
     body.appendChild(renderTransitLeg(leg, i, opsSeen, opCounts));
   });
   openSheet(body, { title: 'Trip detail' });
@@ -1602,7 +1686,7 @@ function renderTransitLeg(leg, idx, opsSeen = new Set(), opCounts = {}) {
   wrap.appendChild(el('div', { class: 'leg-head' }, [
     el('span', { class: 'leg-route' }, [
       modeIcon(leg.mode, 'mode-img mode-img-sm'),
-      el('span', { text: ` ${railBus ? 'Rail replacement bus' : (leg.displayName || leg.routeShortName || m.label)}` }),
+      el('span', { text: ` ${railBus ? 'Rail replacement bus' : (directionalRouteName(leg.displayName || leg.routeShortName || '', leg.headsign || leg.to?.name) || m.label)}` }),
     ]),
     railBus ? el('span', { class: 'badge badge-railbus', text: 'REPLACEMENT' }) : null,
     liveBadge(leg.realTime),
@@ -1649,6 +1733,13 @@ function renderTransitLeg(leg, idx, opsSeen = new Set(), opCounts = {}) {
   // fare chip already carries the headline price, so nothing vital hides.
   if (op && !opsSeen.has(op.name)) {
     opsSeen.add(op.name);
+    wrap.appendChild(ticketBlock(op, leg, opCounts));
+  }
+  return wrap;
+}
+
+function ticketBlock(op, leg, opCounts = {}) {
+  {
     const body = el('div', { class: 'ticket-body', hidden: 'hidden' });
     // SAIS Trasporti: this leg's exact city-pair fare (harvested), shown before
     // the generic how-to-buy text.
@@ -1708,9 +1799,8 @@ function renderTransitLeg(leg, idx, opsSeen = new Set(), opCounts = {}) {
       el('span', { class: 'ticket-title', text: `🎫 How to buy — ${op.name}` }),
       caret,
     ]);
-    wrap.appendChild(el('div', { class: 'ticket-block' }, [head, body]));
+    return el('div', { class: 'ticket-block' }, [head, body]);
   }
-  return wrap;
 }
 
 function legEndpointRow(place, timeIso, isDep) {

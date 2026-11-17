@@ -57,6 +57,25 @@ export function cleanRouteName(name) {
   return displayName(s);
 }
 
+// A coach line is filed under ONE name for both directions, so the 18:00 from
+// Palermo to Agrigento rode a strip reading "Agrigento – Palermo". When the
+// name is a list of places and the run is heading for the FIRST of them, read
+// it in the direction of travel. Anything else (numbers, "REG 22012", a name
+// that already ends at the destination, no match at all) is left alone.
+const placeKey = (s) => String(s || '').split('(')[0].toLowerCase()
+  .normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z ]+/g, ' ').trim();
+export function directionalRouteName(name, dest) {
+  const raw = String(name || '');
+  if (!/\s[-–]\s|-\s*-/.test(raw)) return raw; // "109", "REG 22012": not a place list
+  const clean = cleanRouteName(raw);
+  const parts = clean.split(' – ');
+  const d = placeKey(dest);
+  if (parts.length < 2 || !d) return clean;
+  const hit = (p) => { const k = placeKey(p); return !!k && (d === k || d.startsWith(`${k} `) || k.startsWith(`${d} `)); };
+  if (hit(parts[parts.length - 1]) || !hit(parts[0])) return clean;
+  return parts.reverse().join(' – ');
+}
+
 // F-3 (2026-08-10 walkthrough): Trenitalia's rail-replacement runs arrive as
 // a nameless "BUS" with no headsign — no board row may read bare "Bus". Say
 // what the run IS. Returns null for anything that has a real name.

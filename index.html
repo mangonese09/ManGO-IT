@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://mangonese.dev">
   <link rel="preconnect" href="https://mangonese.dev" crossorigin>
   <link rel="stylesheet" href="https://mangonese.dev/shared/mangonese.css">
-  <link rel="stylesheet" href="/css/styles.css?v=1.13.0">
+  <link rel="stylesheet" href="/css/styles.css?v=1.14.0">
 </head>
 <body>
   <header class="app-header">
@@ -23,6 +23,7 @@
     <!-- ── HOME ── -->
     <section id="view-home">
       <div class="search-box card">
+        <button id="search-summary" class="search-summary" aria-label="Edit search" hidden></button>
         <div class="endpoint-stack">
           <div class="endpoint-row">
             <input id="from-input" type="text" placeholder="From" aria-label="From" autocomplete="off" enterkeyhint="search">
@@ -157,16 +158,16 @@
 
   <nav class="bottom-nav" aria-label="Main">
     <button id="nav-home" class="nav-btn active" aria-label="Home" aria-current="page">
-      <img src="/icons/home.png" alt="" width="26" height="26">
+      <img src="/icons/home.png" alt="" width="26" height="26"><span class="nav-label">Home</span>
     </button>
     <button id="nav-saved" class="nav-btn" aria-label="Saved">
-      <img src="/icons/mango-star.svg" alt="" width="26" height="26">
+      <img src="/icons/mango-star.svg" alt="" width="26" height="26"><span class="nav-label">Saved</span>
     </button>
     <button id="nav-map" class="nav-btn" aria-label="Map">
-      <img src="/icons/place-pin.png" alt="" width="26" height="26">
+      <img src="/icons/place-pin.png" alt="" width="26" height="26"><span class="nav-label">Map</span>
     </button>
     <button id="nav-settings" class="nav-btn" aria-label="Settings">
-      <img src="/icons/gear.svg" alt="" width="26" height="26">
+      <img src="/icons/gear.svg" alt="" width="26" height="26"><span class="nav-label">Settings</span>
     </button>
   </nav>
 
@@ -187,6 +188,6 @@
       });
     }
   </script>
-  <script type="module" src="/js/app.js?v=1.13.0"></script>
+  <script type="module" src="/js/app.js?v=1.14.0"></script>
 </body>
 </html>

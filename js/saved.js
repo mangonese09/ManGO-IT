@@ -356,15 +356,34 @@ export async function openHubBoard(hub) {
   paintFav();
   const head = overlay.querySelector('.sheet-head');
   head.insertBefore(favBtn, head.querySelector('.sheet-close'));
+  // load() can run again from "Try again" without reopening the sheet
+  const load = async () => {
+  head.querySelector('.hub-head-lens')?.remove();
+  body.innerHTML = '';
+  body.appendChild(el('div', { class: 'loading', role: 'status', text: 'Loading departures…' }));
   let departures = [];
+  let failed = [];
   try {
     const { data } = await api.hubBoard(hub.hubId);
     departures = data.departures || [];
+    failed = data.failed || [];
   } catch {
     body.innerHTML = '';
-    body.appendChild(el('p', { class: 'muted', text: 'Could not load departures — check connectivity and retry.' }));
+    const offline = typeof navigator !== 'undefined' && navigator.onLine === false;
+    body.appendChild(el('div', { class: 'empty-state' }, [
+      el('p', { text: offline ? 'You’re offline.' : 'Departures didn’t load.' }),
+      el('button', { class: 'btn btn-ghost btn-small', text: 'Try again', onclick: load }),
+    ]));
     return;
   }
+  // One upstream down is not "no departures": name what is missing.
+  const FAIL_WORD = { rail: 'train', coach: 'coach', city: 'city bus' };
+  const words = failed.map((k) => FAIL_WORD[k] || k);
+  const failText = words.length > 1 ? `${words.slice(0, -1).join(', ')} and ${words[words.length - 1]}` : (words[0] || '');
+  const failNote = failed.length ? el('div', { class: 'hub-fail', role: 'status' }, [
+    el('span', { text: `${failText.charAt(0).toUpperCase()}${failText.slice(1)} times didn’t load.` }),
+    el('button', { class: 'btn btn-ghost btn-small', text: 'Try again', onclick: load }),
+  ]) : null;
 
   // Same filter model as the main map: independent mango-icon toggle chips
   // (all on by default) + the mango search lens filtering by destination text.
@@ -501,9 +520,12 @@ export async function openHubBoard(hub) {
 
   body.innerHTML = '';
   body.appendChild(el('div', { class: 'hub-toolbar' }, [chipRow]));
+  if (failNote) body.appendChild(failNote);
   body.appendChild(searchInput);
   body.appendChild(list);
   renderRows();
+  };
+  await load();
 }
 
 // ── FAVOURITE LINES (Transit-style) ──

@@ -65,3 +65,17 @@ test('displayName expands feed abbreviations (Aer.Font)', () => {
   assert.strictEqual(displayName('Catania Aer.Font'), 'Catania Aeroporto Fontanarossa');
   assert.strictEqual(displayName('CATANIA AER.FONT'), 'Catania Aeroporto Fontanarossa');
 });
+
+// v1.14.0: a two-way line name reads in the direction of travel
+import { directionalRouteName } from '../../js/names.js';
+test('directionalRouteName flips a place list toward the destination, and nothing else', () => {
+  assert.strictEqual(directionalRouteName('Agrigento - Palermo', 'Agrigento'), 'Palermo – Agrigento');
+  assert.strictEqual(directionalRouteName('AGRIGENTO - PALERMO', 'AGRIGENTO (P.LE ROSSELLI)'), 'Palermo – Agrigento');
+  assert.strictEqual(directionalRouteName('Palermo - Agrigento', 'Agrigento'), 'Palermo – Agrigento');
+  // destination is neither end: leave the filed order
+  assert.strictEqual(directionalRouteName('Agrigento - Palermo', 'Lercara Friddi'), 'Agrigento – Palermo');
+  // not a place list: untouched, casing included
+  assert.strictEqual(directionalRouteName('REG 22012', 'Agrigento Centrale'), 'REG 22012');
+  assert.strictEqual(directionalRouteName('109', 'Stazione Centrale'), '109');
+  assert.strictEqual(directionalRouteName('', 'Agrigento'), '');
+});

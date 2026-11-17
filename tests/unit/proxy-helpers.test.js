@@ -403,3 +403,14 @@ test('outOfCoverage excludes Malta but keeps the Pelagie islands and the strait 
   assert.strictEqual(outOfCoverage(38.11, 13.36), false);  // Palermo
   assert.strictEqual(outOfCoverage(38.22, 15.55), false);  // Villa S. Giovanni (strait)
 });
+
+// v1.14.0: the bare English/Italian word lists every airport, Palermo first
+test('airportMatches: generic word returns all four; city + airport returns one', () => {
+  const { airportMatches } = require('../../server/proxy.js');
+  assert.deepStrictEqual(airportMatches('airport').map((a) => a.iata), ['PMO', 'CTA', 'TPS', 'CIY']);
+  assert.deepStrictEqual(airportMatches(' Aeroporto ').map((a) => a.iata), ['PMO', 'CTA', 'TPS', 'CIY']);
+  assert.deepStrictEqual(airportMatches('Palermo airport').map((a) => a.iata), ['PMO']);
+  assert.deepStrictEqual(airportMatches('catania aeroporto').map((a) => a.iata), ['CTA']);
+  assert.deepStrictEqual(airportMatches('catania'), []);
+  assert.deepStrictEqual(airportMatches('airport road'), []);
+});

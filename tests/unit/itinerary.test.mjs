@@ -162,3 +162,17 @@ test('a transfer of an hour or more reads as a wait, in hours', () => {
   assert.strictEqual(transferChipText(120, 'calm'), '2h wait');
   assert.strictEqual(transferChipText(25, 'calm'), '25 min change');
 });
+
+// v1.14.0: the longest gap flags an overnight layover; the strip reads in the direction of travel
+import { longestWaitMin, LONG_WAIT_MIN } from '../../js/itinerary.js';
+test('longestWaitMin: null when direct, the biggest gap otherwise', () => {
+  assert.strictEqual(longestWaitMin([leg('RAIL', '08:00', '09:00')]), null);
+  const legs = [leg('BUS', '06:00', '07:00'), leg('WALK', '07:00', '07:05'), leg('RAIL', '07:10', '08:00'), leg('BUS', '19:30', '20:00')];
+  assert.strictEqual(longestWaitMin(legs), 690);
+  assert.ok(longestWaitMin(legs) >= LONG_WAIT_MIN);
+  assert.strictEqual(worstTransferMin(legs), 10);
+});
+test('legStripModel labels a two-way coach line toward its headsign', () => {
+  const legs = [leg('COACH', '18:00', '20:00', { displayName: 'Agrigento - Palermo', headsign: 'Agrigento' })];
+  assert.strictEqual(legStripModel(legs)[0].label, 'Palermo – Agrigento');
+});

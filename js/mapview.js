@@ -141,7 +141,7 @@ function currentTheme() {
 // watermark image — so no error path fires; probeBasemap() below detects it.
 // The key is a free Basemaps key restricted to this site's hosts in the CARTO
 // dashboard (a tile key is public by nature: the browser sends it per tile).
-const CARTO_KEY = '';
+const CARTO_KEY = 'cb1_5ayw_1_e46cd720f0d8e602ff737ab8';
 const KEY_Q = CARTO_KEY ? `?key=${CARTO_KEY}` : '';
 const TILE_URL = {
   dark: 'https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png' + KEY_Q,
@@ -360,6 +360,17 @@ const favMarkers = new Map();     // fav key -> L.Marker
 
 // Favourite pins render from the saved store (not the viewport feed), so they
 // stay visible everywhere — including zoomed out, beside the clusters.
+// Pins were keyboard:false, so nothing on the map could be reached without a
+// pointer. Leaflet gives a keyboard marker tabindex + role=button but no name
+// for a divIcon, and setIcon() rebuilds the element — so the name is re-set.
+function nameMarker(m, label) {
+  const set = () => { const n = m.getElement(); if (n) n.setAttribute('aria-label', label); };
+  const setIcon = m.setIcon.bind(m);
+  m.setIcon = (icon) => { setIcon(icon); set(); return m; };
+  set();
+  return m;
+}
+
 function renderFavorites() {
   if (!map) return;
   const favs = getFavStops();
@@ -371,7 +382,8 @@ function renderFavorites() {
     if (favMarkers.has(f.key)) continue;
     const kind = f.stopId ? 'transit' : 'coach';
     const meta = { id: f.key, kind, ci: null, name: f.name, stopId: f.stopId || null, lat: f.lat, lon: f.lon };
-    const m = window.L.marker([f.lat, f.lon], { icon: favIcon(f.iconMode, kind), keyboard: false, zIndexOffset: 1000 }).addTo(map);
+    const m = window.L.marker([f.lat, f.lon], { icon: favIcon(f.iconMode, kind), zIndexOffset: 1000 }).addTo(map);
+    nameMarker(m, `${displayName(f.name)}, saved stop`);
     m.bindTooltip(displayName(f.name), { direction: 'top', offset: [0, -18] });
     m.on('click', () => openStopRoutes(meta));
     favMarkers.set(f.key, m);
@@ -431,7 +443,8 @@ function renderHubs(hubs) {
       if (existing.iconKey !== iconKey) { existing.setIcon(hubEntryIcon(e, labelled)); existing.iconKey = iconKey; }
       continue;
     }
-    const m = window.L.marker([e.lat, e.lon], { icon: hubEntryIcon(e, labelled), keyboard: false, zIndexOffset: 1200 }).addTo(map);
+    const m = window.L.marker([e.lat, e.lon], { icon: hubEntryIcon(e, labelled), zIndexOffset: 1200 }).addTo(map);
+    nameMarker(m, e.hubs.length === 1 ? `${displayName(e.hubs[0].name)}, departures` : `${e.hubs.length} transit hubs`);
     m.iconKey = iconKey;
     if (e.hubs.length === 1) {
       const h = e.hubs[0];
@@ -516,7 +529,8 @@ function renderIndividual(all, c, r) {
       continue;
     }
     const meta = { id: s.id, kind: s.kind, ci: s.kind === 'coach' ? Number(s.id.slice(1)) : null, name: s.name, stopId: s.kind === 'transit' ? s.id : null, lat: s.lat, lon: s.lon, members: s.members || null };
-    const m = window.L.marker(ll, { icon: stopIcon((s.modes || [])[0], s.kind, s.merged || 0, small), keyboard: false }).addTo(map);
+    const m = window.L.marker(ll, { icon: stopIcon((s.modes || [])[0], s.kind, s.merged || 0, small) }).addTo(map);
+    nameMarker(m, `${displayName(s.name)}, stop`);
     m.iconArgs = [(s.modes || [])[0], s.kind, s.merged || 0];
     m.small = small;
     m.meta = meta;
@@ -595,11 +609,13 @@ function renderClusters(clusters) {
     if (cl.single) {
       // a lone stop draws as its own icon (not a "1" bubble) and opens its routes
       const meta = { id: cl.id, kind: cl.kind, ci: cl.kind === 'coach' ? Number(cl.id.slice(1)) : null, name: cl.name, stopId: cl.kind === 'transit' ? cl.id : null, lat: cl.lat, lon: cl.lon };
-      m = window.L.marker([cl.lat, cl.lon], { icon: stopIcon((cl.modes || [])[0], cl.kind), keyboard: false }).addTo(map);
+      m = window.L.marker([cl.lat, cl.lon], { icon: stopIcon((cl.modes || [])[0], cl.kind) }).addTo(map);
+      nameMarker(m, `${displayName(cl.name)}, stop`);
       m.bindTooltip(displayName(cl.name), { direction: 'top', offset: [0, -14] });
       m.on('click', () => openStopRoutes(meta));
     } else {
-      m = window.L.marker([cl.lat, cl.lon], { icon: clusterIcon(vis, visKind(cl)), keyboard: false }).addTo(map);
+      m = window.L.marker([cl.lat, cl.lon], { icon: clusterIcon(vis, visKind(cl)) }).addTo(map);
+      nameMarker(m, `${vis} stops, zoom in`);
       m.visCount = vis;
       m.on('click', () => map.flyTo([cl.lat, cl.lon], Math.min(map.getZoom() + 3, 16), { duration: 0.8 }));
     }

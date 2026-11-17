@@ -21,7 +21,7 @@ test('operatorFor matches the city-bus + new operators', () => {
 test('fareChip: flat → exact number; counter/booking → honest word, never a price', () => {
   assert.deepStrictEqual(fareChip(operatorFor('AMAT')), { state: 'exact', text: '€1.40', sub: '90 min' });
   assert.deepStrictEqual(fareChip(operatorFor('Lumia')), { state: 'counter', text: 'From driver' });
-  assert.deepStrictEqual(fareChip(operatorFor('Trenitalia')), { state: 'muted', text: 'At booking' });
+  assert.deepStrictEqual(fareChip(operatorFor('Trenitalia')), { state: 'muted', text: 'Price at booking' });
   assert.strictEqual(fareChip(null), null);
 });
 

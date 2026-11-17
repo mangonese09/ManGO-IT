@@ -130,6 +130,7 @@ function directSearch(fLat, fLon, tLat, tLon, radius = 1500, days = null, full =
               day: dayOff === 0 ? 'today' : 'tomorrow',
               route: trip.r, operator: trip.op,
               from: coachStops[board.idx].n, to: coachStops[idx].n,
+              fromLat: coachStops[board.idx].lat, fromLon: coachStops[board.idx].lon,
               fromWalkM: Math.round(fromIdx.get(board.idx) || 0),
               toWalkM: Math.round(toIdx.get(idx) || 0),
               dep: fmtMin(board.min),
@@ -859,13 +860,13 @@ function hubsInBbox(minLat, minLon, maxLat, maxLon) {
 // terminal bus areas from the coach feed.
 const AIRPORTS = [
   { iata: 'PMO', name: 'Aeroporto Falcone Borsellino', town: 'Cinisi', province: 'Palermo', lat: 38.1881, lon: 13.1093,
-    aliases: ['punta raisi', 'palermo punta raisi', 'falcone borsellino', 'aeroporto di palermo'] },
+    aliases: ['punta raisi', 'palermo punta raisi', 'falcone borsellino', 'aeroporto di palermo', 'aeroporto palermo', 'palermo airport', 'palermo aeroporto'] },
   { iata: 'CTA', name: 'Aeroporto Catania Fontanarossa', town: 'Catania', province: 'Catania', lat: 37.4700, lon: 15.0670,
-    aliases: ['fontanarossa', 'aeroporto di catania'] },
+    aliases: ['fontanarossa', 'aeroporto di catania', 'aeroporto catania', 'catania airport', 'catania aeroporto'] },
   { iata: 'TPS', name: 'Aeroporto Trapani-Birgi Vincenzo Florio', town: 'Misiliscemi', province: 'Trapani', lat: 37.91136, lon: 12.48747,
-    aliases: ['birgi', 'trapani birgi', 'aeroporto di trapani'] },
+    aliases: ['birgi', 'trapani birgi', 'aeroporto di trapani', 'aeroporto trapani', 'trapani airport', 'trapani aeroporto'] },
   { iata: 'CIY', name: 'Aeroporto Comiso Pio La Torre', town: 'Comiso', province: 'Ragusa', lat: 36.99428, lon: 14.60716,
-    aliases: ['aeroporto di comiso'] },
+    aliases: ['aeroporto di comiso', 'aeroporto comiso', 'comiso airport', 'comiso aeroporto'] },
 ];
 // EXACT match only, on the code or on a listed alias. Never a substring — a
 // 3-letter code matched loosely turns "CTA" into a hit on every "Catania…"
@@ -876,6 +877,17 @@ function airportMatch(text) {
   const n = norm(text || '').trim().replace(/\s+/g, ' ');
   if (!n) return null;
   return AIRPORTS.find((a) => norm(a.iata) === n || a.aliases.some((x) => norm(x) === n)) || null;
+}
+// The bare word is a question, not a name: "airport" means "which airports are
+// there", and the geocoder answered it with whichever aerodrome matched the
+// string best (Trapani-Birgi first, Palermo absent). Answer with all four, the
+// two that carry most of the island's traffic first.
+const AIRPORT_WORDS = new Set(['airport', 'airports', 'aeroporto', 'aeroporti', 'aereoporto']);
+function airportMatches(text) {
+  const one = airportMatch(text);
+  if (one) return [one];
+  const n = norm(text || '').trim().replace(/\s+/g, ' ');
+  return AIRPORT_WORDS.has(n) ? AIRPORTS.slice() : [];
 }
 // Shaped like a geocode row so it merges into the same list/dedupe/sort.
 function airportResult(a) {
@@ -1427,15 +1439,17 @@ const routes = {
     // and geoScore's -1 bucket keeps it first after the sort. Upstream results
     // are still returned underneath — the alias adds an answer, it never hides
     // the geocoder's.
-    const airport = airportMatch(text);
+    const airports = airportMatches(text);
     // dedupe (name+town), rank: airport → transit stops → towns → the rest
     const seen = new Set();
-    const all = [...(airport ? [airportResult(airport)] : []), ...results, ...coach].filter((r) => {
+    const all = [...airports.map(airportResult), ...results, ...coach].filter((r) => {
       const k = geoDedupeKey(r.name, r.town);
       if (seen.has(k)) return false;
       seen.add(k); return true;
     });
-    let sorted = all.sort((a, b) => geoScore(a, text) - geoScore(b, text) || b.importance - a.importance);
+    // the generic word returns four airports with equal scores: keep OUR order
+    const aIdx = (r) => (r.type === 'AIRPORT' ? AIRPORTS.findIndex((a) => a.iata === r.iata) : 0);
+    let sorted = all.sort((a, b) => geoScore(a, text) - geoScore(b, text) || aIdx(a) - aIdx(b) || b.importance - a.importance);
     // Prioritise Sicily "for the time being": when Sicily has enough matches,
     // don't dilute the list with mainland homonyms (the app is Sicily-first).
     // Fall back to the all-Italy list only when the Sicilian side is sparse —
@@ -1711,14 +1725,17 @@ const routes = {
     // Messina-bound REG. The default board stays the tight next-departures cut.
     const full = q.get('full') === '1';
     const now = Date.now();
+    // a source that threw is NAMED to the client — an empty rail list from a
+    // dead upstream otherwise reads as "no trains today"
+    const failed = [];
     const [rail, coach, urban] = await Promise.all([
-      hub.railName ? railRows(hub, full).catch(() => []) : Promise.resolve([]),
-      Promise.resolve().then(() => coachRows(hub, full)).catch(() => []),
-      urbanRows(hub, full).catch(() => []),
+      hub.railName ? railRows(hub, full).catch(() => { failed.push('rail'); return []; }) : Promise.resolve([]),
+      Promise.resolve().then(() => coachRows(hub, full)).catch(() => { failed.push('coach'); return []; }),
+      urbanRows(hub, full).catch(() => { failed.push('city'); return []; }),
     ]);
     const departures = mergeDepartures([rail, coach, urban], now,
       full ? { perMode: 500, cap: 1000, dayStartMs: Date.parse(romeInstant(romeParts().iso, 0)) } : { perMode: 10, cap: 40 });
-    return { hub: { id: hub.id, name: hub.name, kind: hub.kind }, asOf: now, full, departures };
+    return { hub: { id: hub.id, name: hub.name, kind: hub.kind }, asOf: now, full, departures, failed };
   },
 
   // Reverse geocode for the map's "Choose on map" pin: nearest address + town.
@@ -2025,4 +2042,4 @@ if (require.main === module) {
   server.listen(PORT, () => console.log(`ManGO:IT proxy on :${PORT}${STATIC ? ' (static+api)' : ''}`));
 }
 
-module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, outOfCoverage, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon, vtSilence, dropDominated, parseBias, geoScore, clusterStopsByProximity, clusterAreaName, HUBS: TRANSIT_HUBS, hubsInBbox, AIRPORTS, airportMatch, airportResult, nominatimToRow, geoDedupeKey, nearestTicketShops, mergeDepartures, afterStation, decodePolyline };
+module.exports = { romeNowString, parseVtStations, parseVtTrainAutocomplete, pickVtCandidate, slimVtDeparture, haversineM, inSicily, outOfCoverage, directSearch, coachBoard, twoLegSearch, serviceRuns, romeParts, feedHorizon, vtSilence, dropDominated, parseBias, geoScore, clusterStopsByProximity, clusterAreaName, HUBS: TRANSIT_HUBS, hubsInBbox, AIRPORTS, airportMatch, airportMatches, airportResult, nominatimToRow, geoDedupeKey, nearestTicketShops, mergeDepartures, afterStation, decodePolyline };

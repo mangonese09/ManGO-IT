@@ -161,7 +161,7 @@ export function fareChip(op) {
   if (!f) return null;
   if (f.kind === 'flat') return { state: 'exact', text: eur(f.single), sub: f.unit || null };
   if (f.kind === 'counter') return { state: 'counter', text: 'From driver' };
-  if (f.kind === 'booking') return { state: 'muted', text: 'At booking' };
+  if (f.kind === 'booking') return { state: 'muted', text: 'Price at booking' };
   return null;
 }
 

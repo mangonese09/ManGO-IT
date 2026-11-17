@@ -1435,3 +1435,56 @@ body.no-ptr { overscroll-behavior-y: none; }
 .about-links { list-style: none; padding: 0; margin: 8px 0 4px; display: flex; flex-direction: column; gap: 9px; font-size: 0.875rem; line-height: 1.4; }
 /* links keep a ≥40px touch target without breaking the line rhythm */
 .about-links a { display: inline-block; padding: 9px 2px; margin: -7px 0; }
+
+/* ── v1.14.0: collapsed search form, transfer rows, nav labels, 44px floor ── */
+.search-summary {
+  display: flex; align-items: center; gap: 12px; width: 100%; min-height: 48px;
+  background: none; border: none; padding: 0; font: inherit; color: inherit;
+  text-align: left; cursor: pointer;
+}
+.search-summary[hidden] { display: none; }
+.search-box.collapsed > :not(.search-summary) { display: none; }
+.ss-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; flex: 1; }
+.ss-route { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ss-when { font-size: 0.8125rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ss-edit { flex: 0 0 auto; color: var(--mango-ink); font-weight: 600; font-size: 0.875rem; }
+
+/* a long layover is information, not a warning colour: outlined, not filled */
+.chip-wait {
+  border: 1px solid var(--text-muted, #7e8fa0); color: var(--text-primary, #e8f0ea);
+  font-size: 0.75rem; padding: 1px 8px; border-radius: 999px; font-weight: 600;
+}
+.leg-xfer { background: none; padding: 6px 12px; display: flex; align-items: center; flex-wrap: wrap; gap: 6px; font-size: 0.875rem; }
+.hub-fail {
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 8px 12px; margin: 0 0 12px; font-size: 0.875rem;
+  border: 1px solid var(--border, rgba(255,255,255,0.1)); border-radius: var(--radius-md, 10px);
+}
+
+/* nav: icon + word (every mainstream transit app labels its tabs) */
+.nav-btn { flex-direction: column; gap: 2px; padding: 8px 4px calc(6px + env(safe-area-inset-bottom)); }
+.nav-label { font-size: 0.6875rem; font-weight: 600; line-height: 1.2; color: var(--text-muted, #7e8fa0); }
+.nav-btn.active .nav-label { color: var(--mango-ink); }
+
+/* 44px floor on the controls the audit measured under it */
+.pin-btn { min-width: 44px; min-height: 44px; }
+.hub-head-btn { width: 44px; height: 44px; }
+.day-page { min-height: 44px; }
+.chip-recent-go, .chip-recent-x { min-height: 44px; }
+.chip-recent-x { min-width: 44px; padding: 8px 10px; }
+.ticket-link { padding: 12px 0; margin-top: 0; }
+.stops-toggle { min-height: 44px; }
+.sheet-close { position: relative; }
+.sheet-close::after { content: ''; position: absolute; inset: -8px; }
+.sched-row-btn, .ticket-shop-row { min-height: 44px; }
+
+/* large text (200%): rows wrap instead of clipping or overlapping */
+.mode-row { flex-wrap: wrap; }
+.mode-toggle { flex: 1 1 auto; height: auto; }
+.when-row { flex-wrap: wrap; }
+.when-row .btn { height: auto; min-height: 44px; }
+.iti-times { flex-wrap: wrap; row-gap: 4px; }
+.chip-imminent, .chip-wait, .chip-xfer-tight, .chip-xfer-risky { white-space: nowrap; }
+.ss-route { white-space: normal; overflow-wrap: anywhere; }
+/* tab words stay inside their tab however large the system text is */
+.nav-label { font-size: clamp(11px, 0.6875rem, 14px); white-space: nowrap; }
