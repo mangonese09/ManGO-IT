@@ -92,6 +92,12 @@ export function transferTier(min) {
 }
 
 export function transferChipText(min, tier) {
+  // An hour or more is not a "change", it is a wait — "690 min change" hid an
+  // overnight layover behind a number nobody converts in their head.
+  if (tier === 'calm' && min >= 60) {
+    const h = Math.floor(min / 60); const m = min % 60;
+    return `${h}h${m ? ` ${m}m` : ''} wait`;
+  }
   if (tier === 'calm') return `${min} min change`;
   if (tier === 'tight') return `tight change · ${min} min`;
   return `risky change · ${min} min`;

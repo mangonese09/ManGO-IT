@@ -156,3 +156,9 @@ test('RESULT_FILTERS leads with All and covers every predicate branch', () => {
   assert.strictEqual(RESULT_FILTERS[0].key, 'all');
   assert.deepStrictEqual(RESULT_FILTERS.map((f) => f.key), ['all', 'direct', 'train', 'bus']);
 });
+
+test('a transfer of an hour or more reads as a wait, in hours', () => {
+  assert.strictEqual(transferChipText(690, 'calm'), '11h 30m wait');
+  assert.strictEqual(transferChipText(120, 'calm'), '2h wait');
+  assert.strictEqual(transferChipText(25, 'calm'), '25 min change');
+});

@@ -801,6 +801,7 @@ async function runSearch() {
       dayView.cutoffMs = cutoffMs; dayView.expanded = false;
       renderDayView();
     } else {
+      if (departMode === 'arrive') allowed.sort((a, b) => new Date(b.startTime) - new Date(a.startTime));
       renderItineraries(allowed, { stale, fetchedAt });
     }
     const dir = await directPromise;
@@ -1174,7 +1175,7 @@ function walkChip(fromWalkM, toWalkM) {
   if (!total) return null;
   return el('span', { class: 'chip chip-walk' }, [
     modeIcon('WALK', 'mode-img mode-img-xs'),
-    el('span', { text: `${walkMin(total)} min` }),
+    el('span', { text: `${walkMin(total)} min walk` }),
   ]);
 }
 
@@ -1245,7 +1246,10 @@ function renderDirectBlock(runs, reason, transfers = []) {
     for (const r of shown) kids.push(directRunBtn(r));
   }
   for (const c of transfers) kids.push(directXferBtn(c));
-  results.appendChild(el('div', { class: 'direct-block' }, kids));
+  const block = el('div', { class: 'direct-block' }, kids);
+  const firstCard = reason === 'faster'
+    ? results.querySelector('.day-page, .gap-note, .daypart-head, .day-head, .iti-card') : null;
+  if (firstCard) results.insertBefore(block, firstCard); else results.appendChild(block);
   return true;
 }
 
