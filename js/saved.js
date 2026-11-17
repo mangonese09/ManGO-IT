@@ -82,7 +82,7 @@ async function favSuggest(q) {
         },
       }, [
         el('span', { class: 'suggest-icon' }, [iconEl]),
-        el('span', { class: 'suggest-name', text: displayName(r.name) }),
+        el('span', { class: 'suggest-name', lang: 'it', text: displayName(r.name) }),
         el('span', { class: 'suggest-area', text: bits.join(' · ') }),
       ]));
     }
@@ -653,7 +653,7 @@ function routeStopRows(body, stops) {
     const n = s && s.n != null ? s.n : String(s || '');
     body.appendChild(el('div', { class: 'sched-row' }, [
       el('strong', { class: 'sched-time', text: (s && s.t) || '' }),
-      el('span', { class: 'sched-label', text: displayName(n) }),
+      el('span', { class: 'sched-label', lang: 'it', text: displayName(n) }),
     ]));
   }
 }
@@ -777,7 +777,7 @@ async function favStopCard(s) {
     el('div', { class: 'fav-stop-head fav-stop-tap', role: 'button', tabindex: '0', onclick: () => openStopSchedule(s) }, [
       el('span', { class: 'suggest-icon' }, [modeIcon(s.iconMode || 'BUS')]),
       el('div', { class: 'dep-main' }, [
-        el('span', { class: 'dep-route', text: displayName(s.name) }),
+        el('span', { class: 'dep-route', lang: 'it', text: displayName(s.name) }),
         el('span', { class: 'muted dep-headsign', text: s.kind || 'stop' }),
       ]),
       el('button', {
@@ -883,7 +883,7 @@ async function placeSuggest(q) {
         },
       }, [
         el('span', { class: 'suggest-icon' }, [placeIcon('pin')]),
-        el('span', { class: 'suggest-name', text: displayName(r.name) }),
+        el('span', { class: 'suggest-name', lang: 'it', text: displayName(r.name) }),
         bits.length ? el('span', { class: 'suggest-area', text: bits.join(' · ') }) : null,
       ]));
     }

@@ -194,7 +194,7 @@ function showQuickPicks(which, list, input) {
       onclick: () => pickQuick({ name: d.name, place: d.place, lat: d.lat, lon: d.lon }, displayName(d.name)),
     }, [
       el('span', { class: 'suggest-icon' }, [el('span', { class: 'mode-emoji', text: '🕘' })]),
-      el('span', { class: 'suggest-name', text: displayName(d.name) }),
+      el('span', { class: 'suggest-name', lang: 'it', text: displayName(d.name) }),
       el('span', { class: 'suggest-area', text: 'recent' }),
     ]));
   }
@@ -628,7 +628,7 @@ async function suggest(which, q) {
         },
       }, [
         el('span', { class: 'suggest-icon' }, [iconEl]),
-        el('span', { class: 'suggest-name', text: displayName(r.name) }),
+        el('span', { class: 'suggest-name', lang: 'it', text: displayName(r.name) }),
         bits.length ? el('span', { class: 'suggest-area', text: bits.join(' · ') }) : null,
         (r.type === 'STOP' || r.type === 'COACH_STOP') ? suggestStar(r, kind)
           : (isFinite(r.lat) && isFinite(r.lon) ? placeStar(r) : null),
@@ -1818,7 +1818,7 @@ function intermediateBlock(leg) {
   for (const s of stops) {
     list.appendChild(el('div', { class: 'stop-row' }, [
       el('span', { class: 'stop-time muted', text: romeTime(s.arrival || s.departure) }),
-      el('span', { class: 'stop-name muted', text: displayName(s.name) }),
+      el('span', { class: 'stop-name muted', lang: 'it', text: displayName(s.name) }),
     ]));
   }
   const word = stops.length === 1 ? 'stop' : 'stops';

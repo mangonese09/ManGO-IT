@@ -473,7 +473,7 @@ function openHubPicker(hubs) {
         src: h.subkind === 'airport' ? '/icons/plane-mango.png' : '/icons/modes/train.png',
         alt: '', width: '18', height: '18', class: 'mode-img mode-img-sm',
       })]),
-      el('span', { class: 'sp-name', text: displayName(h.name) }),
+      el('span', { class: 'sp-name', lang: 'it', text: displayName(h.name) }),
       el('span', { class: 'dep-chevron', text: '›' }),
     ]));
   }
@@ -733,7 +733,7 @@ function openStopPicker(meta) {
       onclick: () => openStopSchedule({ id: s.id, kind: 'transit', stopId: s.id, name: s.name, lat: s.lat, lon: s.lon }),
     }, [
       el('span', { class: 'sp-icon' }, [modeIcon((s.modes || [])[0] || 'BUS', 'mode-img mode-img-sm')]),
-      el('span', { class: 'sp-name', text: displayName(s.name) }),
+      el('span', { class: 'sp-name', lang: 'it', text: displayName(s.name) }),
       d > 30 ? el('span', { class: 'muted sp-dist', text: `${d} m` }) : null,
       el('span', { class: 'dep-chevron', text: '›' }),
     ]));
@@ -1001,14 +1001,25 @@ export async function pickPointOnMap() {
   canvas.appendChild(dot);
   canvas.appendChild(pin);
   canvas.appendChild(bar);
+  // A pin is named by its street, else by the town it is near — never by raw
+  // coordinates, which nobody can read back. A pin with no town at all is in
+  // open water: say so and hold "Use this spot" until it is back on land.
+  const PIN_FALLBACK = 'Dropped pin';
   let lastLabel = null;
+  let revSeq = 0;
   const refresh = async () => {
     const c = map.getCenter();
+    const seq = ++revSeq;
+    let off = false;
     try {
       const { data } = await api.revGeocode(c.lat, c.lng);
-      lastLabel = data && data.name ? `${displayName(data.name)}${data.town ? `, ${displayName(data.town)}` : ''}` : null;
-    } catch { lastLabel = null; }
-    addr.textContent = lastLabel || `Dropped pin (${c.lat.toFixed(4)}, ${c.lng.toFixed(4)})`;
+      if (seq !== revSeq) return; // the map moved on — a late answer is not this spot's
+      lastLabel = data && data.name ? `${displayName(data.name)}${data.town ? `, ${displayName(data.town)}` : ''}`
+        : data && data.near ? `Near ${displayName(data.near)}` : null;
+      off = !!(data && data.off);
+    } catch { if (seq !== revSeq) return; lastLabel = null; }
+    useBtn.disabled = off;
+    addr.textContent = off ? 'That’s open water. Move the pin onto land.' : (lastLabel || PIN_FALLBACK);
   };
   let debounce = null;
   // lift the pin while the map pans (Google's cue that the MAP moves, not the
@@ -1037,7 +1048,7 @@ export async function pickPointOnMap() {
     };
     useBtn.onclick = () => {
       const c = map.getCenter();
-      done({ lat: c.lat, lon: c.lng, label: lastLabel || `Dropped pin (${c.lat.toFixed(4)}, ${c.lng.toFixed(4)})` });
+      done({ lat: c.lat, lon: c.lng, label: lastLabel || PIN_FALLBACK });
     };
     cancelBtn.onclick = () => done(null);
   });
@@ -1140,7 +1151,7 @@ function openLineSheet(rt, color) {
       },
     }, [
       el('span', { class: 'line-stop-dot', style: `border-color:${color}` }),
-      el('div', { class: 'dep-main' }, [el('span', { class: 'dep-route', text: displayName(s.name) })]),
+      el('div', { class: 'dep-main' }, [el('span', { class: 'dep-route', lang: 'it', text: displayName(s.name) })]),
       el('span', { class: 'dep-chevron', text: '›' }),
     ]));
   }
@@ -1402,7 +1413,7 @@ function openMapSearch() {
         class: 'suggest-row map-search-row', onclick: () => goTo(d.lat, d.lon),
       }, [
         el('span', { class: 'suggest-icon' }, [el('span', { class: 'mode-emoji', text: '🕘' })]),
-        el('span', { class: 'suggest-name', text: displayName(d.name) }),
+        el('span', { class: 'suggest-name', lang: 'it', text: displayName(d.name) }),
         el('span', { class: 'suggest-area', text: 'recent' }),
       ]));
     }
@@ -1441,7 +1452,7 @@ function openMapSearch() {
             },
           }, [
             el('span', { class: 'suggest-icon' }, [iconEl]),
-            el('span', { class: 'suggest-name', text: displayName(r.name) }),
+            el('span', { class: 'suggest-name', lang: 'it', text: displayName(r.name) }),
             bits.length ? el('span', { class: 'suggest-area', text: bits.join(' · ') }) : null,
             (r.type === 'STOP' || r.type === 'COACH_STOP') ? suggestStar(r, kind)
               : (isFinite(r.lat) && isFinite(r.lon) ? placeStar(r) : null),
@@ -1509,7 +1520,7 @@ async function renderListFallback(holder) {
         onclick: () => openStopSchedule({ name: s.name, stopId: s.stopId, lat: s.lat, lon: s.lon }),
       }, [
         el('span', { class: 'dep-mode' }, [modeIcon((s.modes || [])[0] || 'BUS')]),
-        el('div', { class: 'dep-main' }, [el('span', { class: 'dep-route', text: displayName(s.name) })]),
+        el('div', { class: 'dep-main' }, [el('span', { class: 'dep-route', lang: 'it', text: displayName(s.name) })]),
         el('span', { class: 'muted', text: `${s.dist} m` }),
         el('span', { class: 'dep-chevron', text: '›' }),
       ]));
