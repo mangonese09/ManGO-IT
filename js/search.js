@@ -307,13 +307,25 @@ function mergeIts(more) {
 // unit-tested). Reset to All on every new search: a sticky "Direct" would
 // quietly empty the next route you looked up.
 let resultFilter = 'all';
+// The "Faster by coach" block shown beside the plan results. Its coaches are
+// direct and are buses, so the filter chips count them and a filter change
+// redraws them; before, "Direct 0" sat above three direct coaches and tapping
+// Direct hid them with "No direct options".
+let shownDirect = null; // { runs, xfers, reason }
+const directFits = (key) => !key || key === 'all' || key === 'direct' || key === 'bus';
+// count what the block shows: beside plan results it lists at most three
+function directExtra(key) { return shownDirect && directFits(key) ? Math.min(3, shownDirect.runs.length) : 0; }
+function redrawDirect() {
+  if (!shownDirect || !directFits(resultFilter)) return false;
+  return renderDirectBlock(shownDirect.runs, shownDirect.reason, shownDirect.xfers, true);
+}
 let rerenderResults = () => {};
 const coachDupes = new WeakMap(); // itinerary → the direct run it repeats
 
 function filterRow(all) {
   const row = el('div', { class: 'filter-row', role: 'group', 'aria-label': 'Filter results' });
   for (const f of RESULT_FILTERS) {
-    const n = f.key === 'all' ? all.length : all.filter((it) => matchesFilter(it, f.key)).length;
+    const n = (f.key === 'all' ? all.length : all.filter((it) => matchesFilter(it, f.key)).length) + directExtra(f.key);
     const active = resultFilter === f.key;
     row.appendChild(el('button', {
       class: `filter-chip${active ? ' active' : ''}${!n ? ' filter-chip-empty' : ''}`,
@@ -793,6 +805,7 @@ async function runSearch() {
   const anchorMs = params.time ? new Date(params.time).getTime() : Date.now();
   dayView.anchorMs = anchorMs;
   resultFilter = 'all';
+  shownDirect = null;
 
   // Whole-day window (§5.3): from the anchor (now, or an explicit Depart-at
   // time) to the service-day end. "Arrive by" keeps the tight before-deadline
@@ -841,8 +854,10 @@ async function runSearch() {
     }
     const dir = await directPromise;
     if (mySeq !== searchSeq) return;
-    const runs = runsFromRequestedTime(dir?.data?.results, qAfterMin, qDate);
-    const xfers = runsFromRequestedTime(dir?.data?.transfers, qAfterMin, qDate, (c) => c.legs[0].dep);
+    const nowMin = (() => { const v = romeNowInputValue(); return Number(v.slice(11, 13)) * 60 + Number(v.slice(14, 16)); })();
+    const afterMin = qAfterMin ?? (qDate ? null : nowMin);
+    const runs = runsFromRequestedTime(dir?.data?.results, afterMin, qDate);
+    const xfers = runsFromRequestedTime(dir?.data?.transfers, afterMin, qDate, (c) => c.legs[0].dep);
     const its = allowed;
     if (!its.length) {
       const ok = renderDirectBlock(runs, 'empty', xfers);
@@ -863,8 +878,10 @@ async function runSearch() {
           const r = sameCoachAs(it, runs.slice(0, 3), romeTime);
           if (r) { coachDupes.set(it, r); marked = true; }
         }
-        if (marked) rerenderResults();
-        renderDirectBlock(runs, 'faster', xfers);
+        // record the block first, then draw once: the chips count its coaches
+        // and every redraw (a filter tap) puts it back
+        shownDirect = { runs, xfers, reason: 'faster' };
+        rerenderResults();
       }
     }
     maybeHorizonNote(whenVal);
@@ -1305,7 +1322,7 @@ function directXferBtn(c) {
 // labeled (scheduled times only). As a supplement beside plan results ('faster')
 // it stays short; as the primary answer ('empty'/'down') on a whole-day search
 // it groups by daypart like the plan list.
-function renderDirectBlock(runs, reason, transfers = []) {
+function renderDirectBlock(runs, reason, transfers = [], redraw = false) {
   if (!runs.length && !transfers.length) return false;
   const results = document.getElementById('results');
   const primary = reason === 'empty' || reason === 'down';
@@ -1429,6 +1446,7 @@ function renderDayView() {
 
   const sorted = inWindow.filter((it) => matchesFilter(it, resultFilter));
   if (!sorted.length) {
+    if (redrawDirect()) { ensureNextPill(); return; }
     results.appendChild(filterEmptyState());
     if (hasLaterLocal() || dayView.next) results.appendChild(pagePill('later'));
     ensureNextPill();
@@ -1460,6 +1478,7 @@ function renderDayView() {
     results.appendChild(card);
   }
   if (hasLaterLocal() || dayView.next) results.appendChild(pagePill('later'));
+  redrawDirect();
   ensureNextPill();
 }
 
@@ -1505,8 +1524,9 @@ function renderItineraries(itineraries, { stale, fetchedAt }) {
 
   results.appendChild(filterRow(itineraries));
   const shown = itineraries.filter((it) => matchesFilter(it, resultFilter));
-  if (!shown.length) { results.appendChild(filterEmptyState()); return; }
+  if (!shown.length) { if (!redrawDirect()) results.appendChild(filterEmptyState()); return; }
   for (const it of shown) results.appendChild(itineraryCard(it));
+  redrawDirect();
 }
 
 // Result card (audit P2, competitive §1–§4): dep→arr clocks dominant,
