@@ -16,6 +16,15 @@ import { toast } from './toast.js';
 import { classifySuggestion, suggestStar, placeStar, rankSuggestions, recentDestinations } from './search.js';
 import { getPref, setPref } from './store.js';
 
+// ── SAFE TEXT + MOTION ──
+// Stop names come from upstream feeds: Leaflet assigns a STRING tooltip with
+// innerHTML, so tooltips get an element whose text is set as text.
+function tipEl(name) { return el('span', { lang: 'it', text: displayName(name) }); }
+const escHtml = (t) => String(t).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+// Reduced motion: Leaflet's flyTo/flyToBounds fall back to setView when animate is false.
+const motionOK = () => !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+
 // Favourite key — same scheme as Home/Saved: transit stops key by id, coach
 // stops (no stable id) by rounded coords.
 // Works on both a marker meta and a raw server stop (transit stops key by their
@@ -57,7 +66,7 @@ function restoreClamp() {
       map.setMinZoom(MIN_ZOOM);
       map.setMaxBounds(CLAMP_BOUNDS);
     });
-    map.flyToBounds(SICILY_BOUNDS, { padding: [12, 12], duration: 1.1 });
+    map.flyToBounds(SICILY_BOUNDS, { animate: motionOK(), padding: [12, 12], duration: 1.1 });
     return true; // homing flight launched — moveend refreshes the pins
   }
   map.setMinZoom(MIN_ZOOM);
@@ -288,7 +297,7 @@ function hubEntryIcon(entry, labelled) {
   // undersized in the 40px disc, so it gets a larger slot (css .hub-air)
   const src = air ? '/icons/plane-mango.png' : '/icons/modes/train.png';
   const size = air ? 32 : 24;
-  const label = labelled ? `<span class="hub-name">${displayName(h.name)}</span>` : '';
+  const label = labelled ? `<span class="hub-name" lang="it">${escHtml(displayName(h.name))}</span>` : '';
   return window.L.divIcon({
     className: 'hub-pin',
     html: `<span class="hub-glyph"><img src="${src}" alt="" width="${size}" height="${size}"${air ? ' class="hub-air"' : ''}></span>${label}`,
@@ -385,7 +394,7 @@ function renderFavorites() {
     const meta = { id: f.key, kind, ci: null, name: f.name, stopId: f.stopId || null, lat: f.lat, lon: f.lon };
     const m = window.L.marker([f.lat, f.lon], { icon: favIcon(f.iconMode, kind), zIndexOffset: 1000 }).addTo(map);
     nameMarker(m, `${displayName(f.name)}, saved stop`);
-    m.bindTooltip(displayName(f.name), { direction: 'top', offset: [0, -18] });
+    m.bindTooltip(tipEl(f.name), { direction: 'top', offset: [0, -18] });
     m.on('click', () => openStopRoutes(meta));
     favMarkers.set(f.key, m);
   }
@@ -450,7 +459,7 @@ function renderHubs(hubs) {
     if (e.hubs.length === 1) {
       const h = e.hubs[0];
       const hubMeta = { hubId: h.hubId, subkind: h.subkind, name: h.name, lat: h.lat, lon: h.lon };
-      m.bindTooltip(displayName(h.name), { direction: 'top', offset: [0, -18] });
+      m.bindTooltip(tipEl(h.name), { direction: 'top', offset: [0, -18] });
       m.on('click', () => openHubBoard(hubMeta));
     } else {
       m.on('click', () => openHubPicker(e.hubs));
@@ -536,7 +545,7 @@ function renderIndividual(all, c, r) {
     m.small = small;
     m.meta = meta;
     m.bucket = stopBucket(s); // filter toggles prune by family without a refetch
-    m.bindTooltip(displayName(s.name), { direction: 'top', offset: [0, -14] });
+    m.bindTooltip(tipEl(s.name), { direction: 'top', offset: [0, -14] });
     m.on('click', () => openStopRoutes(meta));
     markers.set(s.id, m);
   }
@@ -612,13 +621,13 @@ function renderClusters(clusters) {
       const meta = { id: cl.id, kind: cl.kind, ci: cl.kind === 'coach' ? Number(cl.id.slice(1)) : null, name: cl.name, stopId: cl.kind === 'transit' ? cl.id : null, lat: cl.lat, lon: cl.lon };
       m = window.L.marker([cl.lat, cl.lon], { icon: stopIcon((cl.modes || [])[0], cl.kind) }).addTo(map);
       nameMarker(m, `${displayName(cl.name)}, stop`);
-      m.bindTooltip(displayName(cl.name), { direction: 'top', offset: [0, -14] });
+      m.bindTooltip(tipEl(cl.name), { direction: 'top', offset: [0, -14] });
       m.on('click', () => openStopRoutes(meta));
     } else {
       m = window.L.marker([cl.lat, cl.lon], { icon: clusterIcon(vis, visKind(cl)) }).addTo(map);
       nameMarker(m, `${vis} stops, zoom in`);
       m.visCount = vis;
-      m.on('click', () => map.flyTo([cl.lat, cl.lon], Math.min(map.getZoom() + 3, 16), { duration: 0.8 }));
+      m.on('click', () => map.flyTo([cl.lat, cl.lon], Math.min(map.getZoom() + 3, 16), { animate: motionOK(), duration: 0.8 }));
     }
     clusterMarkers.set(id, m);
   }
@@ -692,7 +701,7 @@ function focusStop(lat, lon) {
   const z = Math.max(map.getZoom(), 15);
   const size = map.getSize();
   const center = map.unproject(map.project([lat, lon], z).add([0, size.y * 0.18]), z);
-  map.flyTo(center, z, { duration: 0.5 });
+  map.flyTo(center, z, { animate: motionOK(), duration: 0.5 });
 }
 
 async function openStopRoutes(meta) {
@@ -799,7 +808,7 @@ function traceRoute(meta, routes, idx) {
       icon: L.divIcon({ className: 'route-dot', html: '<span></span>', iconSize: [11, 11], iconAnchor: [6, 6] }),
       keyboard: false, zIndexOffset: -200,
     }).addTo(highlightLayer);
-    dot.bindTooltip(displayName(s.name), { direction: 'top', offset: [0, -8] });
+    dot.bindTooltip(tipEl(s.name), { direction: 'top', offset: [0, -8] });
     dot.on('click', () => { keepTrace(); openStopSchedule({ name: s.name, lat: s.lat, lon: s.lon, stopId: s.stopId || null }); });
   }
   document.getElementById('map-canvas').classList.add('has-highlight');
@@ -816,7 +825,7 @@ function traceRoute(meta, routes, idx) {
     // a mainland-reaching train run must escape the coverage clamp like an
     // itinerary trace — else maxBounds yanks the camera back as it lands
     if (!L.latLngBounds(CLAMP_BOUNDS).contains(b)) liftClamp();
-    map.flyToBounds(b.pad(0.14), { maxZoom: 13, duration: 0.9 });
+    map.flyToBounds(b.pad(0.14), { animate: motionOK(), maxZoom: 13, duration: 0.9 });
   }
   showRouteInfoBar(meta, routes, idx, color);
 }
@@ -892,7 +901,7 @@ export async function showItineraryOnMap(it, onBack) {
         icon: L.divIcon({ className: 'route-dot', html: '<span></span>', iconSize: [11, 11], iconAnchor: [6, 6] }),
         keyboard: false,
       }).addTo(highlightLayer);
-      if (p.name) dot.bindTooltip(displayName(p.name), { direction: 'top', offset: [0, -8] });
+      if (p.name) dot.bindTooltip(tipEl(p.name), { direction: 'top', offset: [0, -8] });
     }
   }
   document.getElementById('map-canvas').classList.add('has-highlight');
@@ -900,7 +909,7 @@ export async function showItineraryOnMap(it, onBack) {
   if (b.isValid()) {
     // a mainland-reaching trace must escape the coverage clamp
     if (!L.latLngBounds(CLAMP_BOUNDS).contains(b)) liftClamp();
-    map.flyToBounds(b.pad(0.12), { duration: 0.9 });
+    map.flyToBounds(b.pad(0.12), { animate: motionOK(), duration: 0.9 });
   }
   showItineraryInfoBar(it, onBack);
 }
@@ -955,9 +964,9 @@ export async function showPointOnMap(pt) {
     }),
     keyboard: false, zIndexOffset: 1300,
   }).addTo(highlightLayer);
-  if (pt.name) m.bindTooltip(displayName(pt.name), { permanent: true, direction: 'top', offset: [0, -50] }).openTooltip();
+  if (pt.name) m.bindTooltip(tipEl(pt.name), { permanent: true, direction: 'top', offset: [0, -50] }).openTooltip();
   document.getElementById('map-canvas').classList.add('has-highlight');
-  map.flyTo([pt.lat, pt.lon], Math.max(map.getZoom(), 16), { duration: 0.9 });
+  map.flyTo([pt.lat, pt.lon], Math.max(map.getZoom(), 16), { animate: motionOK(), duration: 0.9 });
 }
 
 // Trace an already-normalized trip shape (from /api/trip-shape or
@@ -977,7 +986,7 @@ export async function showTripShapeOnMap(rt, origin = {}) {
 // { lat, lon, label } on confirm, null on cancel. During pick mode the stop
 // pins go inert so a stray tap doesn't open a departures sheet.
 let pickCleanup = null;
-export async function pickPointOnMap() {
+export async function pickPointOnMap({ onEscape } = {}) {
   if (!(await mapTabReady())) { toast('Map unavailable right now', 'warn'); return null; }
   if (pickCleanup) pickCleanup(); // a stale pick session — drop it
   // Street-level precision is the whole point — from the island overview the
@@ -1052,6 +1061,24 @@ export async function pickPointOnMap() {
       done({ lat: c.lat, lon: c.lng, label: lastLabel || PIN_FALLBACK });
     };
     cancelBtn.onclick = () => done(null);
+    // Keyboard: focus starts on the primary action; Escape cancels and hands
+    // back to the caller (the search field), the app-wide overlay rule.
+    const onKey = (e) => {
+      if (e.key !== 'Escape') return;
+      e.preventDefault(); e.stopPropagation();
+      done(null);
+      if (onEscape) onEscape();
+    };
+    document.addEventListener('keydown', onKey, true);
+    const cleanupBase = pickCleanup;
+    pickCleanup = () => {
+      document.removeEventListener('keydown', onKey, true);
+      cleanupBase();
+      // the ✕ keeps the user on the Map tab: park focus on its nav button
+      const tab = document.querySelector('.nav-btn.active');
+      if (tab && document.activeElement && !document.activeElement.offsetParent) tab.focus({ preventScroll: true });
+    };
+    useBtn.focus({ preventScroll: true });
   });
 }
 

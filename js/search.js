@@ -434,7 +434,11 @@ function chooseOnMapRow(which) {
 async function chooseOnMap(which) {
   document.getElementById(`${which}-suggest`).hidden = true;
   const { pickPointOnMap } = await import('./mapview.js');
-  const pick = await pickPointOnMap();
+  const pick = await pickPointOnMap({ onEscape: () => {
+    // Escape backs out to the field that asked for the pin
+    document.getElementById('nav-home')?.click();
+    document.getElementById(`${which}-input`)?.focus({ preventScroll: true });
+  } });
   if (!pick) return; // cancelled (✕ or a nav tap) — stay wherever the user went
   document.getElementById('nav-home')?.click();
   sel[which] = { name: pick.label, place: `${pick.lat.toFixed(5)},${pick.lon.toFixed(5)}`, lat: pick.lat, lon: pick.lon };

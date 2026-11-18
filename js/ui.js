@@ -225,6 +225,12 @@ function attachDragDismiss(sheet) {
     else sheet.style.transform = '';
     startY = null;
   });
+  // A call, the notification shade or a system gesture cancels the touch:
+  // spring back instead of leaving the sheet hanging part-way down.
+  sheet.addEventListener('touchcancel', () => {
+    sheet.style.transform = '';
+    startY = null; dy = 0;
+  });
 }
 
 // ── STYLED CONFIRM (never a native dialog) ──
