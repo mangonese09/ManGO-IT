@@ -126,6 +126,7 @@ export function setMapStyle(v) {
   if (map) ensureTiles();
 }
 export function getMapStyle() { return mapStyle; }
+window.__mangoitMapLoaded = true; // settings forwards basemap changes once this module is in
 function currentTheme() {
   if (mapStyle === 'dark' || mapStyle === 'light') return mapStyle;
   return document.documentElement.dataset.theme === 'light' ? 'light' : 'dark';

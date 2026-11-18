@@ -2,7 +2,7 @@
 import { initSearch } from './search.js';
 import { initBoard, setBoardVisible } from './board.js';
 import { renderSaved } from './saved.js';
-import { renderMapTab } from './mapview.js';
+// the map module (Leaflet glue, 70 KB) loads the first time the Map tab opens
 import { initSettings } from './settings.js';
 import { closeSheet, anySheetOpen, consumeSheetPop } from './ui.js';
 import { pruneCache, getPref, setPref } from './store.js';
@@ -31,7 +31,7 @@ function setView(view, push = true) {
   // pull-to-refresh (and its Android overscroll stretch) only on Home
   document.body.classList.toggle('no-ptr', view !== 'home');
   if (view === 'saved') renderSaved();
-  if (view === 'map') renderMapTab();
+  if (view === 'map') import('./mapview.js').then((m) => m.renderMapTab());
   requestAnimationFrame(() => scrollTo(0, viewScroll[view] || 0));
 }
 

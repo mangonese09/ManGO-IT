@@ -8,7 +8,14 @@ import { getSettings, patchSettings, clearAllAppData, clearCachedData, getFavSto
 import { confirmModal, openSheet, closeSheet, el } from './ui.js';
 import { api } from './api.js';
 import { toast } from './toast.js';
-import { setMapStyle, getMapStyle } from './mapview.js';
+// The basemap preference lives in the store; the map module only needs to hear
+// about a change once it has loaded (it reads the preference itself on start).
+import { getPref as getMapPref, setPref as setMapPref } from './store.js';
+const getMapStyle = () => getMapPref('mapStyle', 'auto');
+function setMapStyle(v) {
+  setMapPref('mapStyle', v);
+  if (window.__mangoitMapLoaded) import('./mapview.js').then((m) => m.setMapStyle(v));
+}
 
 const sysDark = typeof window !== 'undefined' && window.matchMedia
   ? window.matchMedia('(prefers-color-scheme: dark)') : null;
