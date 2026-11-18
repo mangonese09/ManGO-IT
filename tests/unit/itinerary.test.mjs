@@ -176,3 +176,29 @@ test('legStripModel labels a two-way coach line toward its headsign', () => {
   const legs = [leg('COACH', '18:00', '20:00', { displayName: 'Agrigento - Palermo', headsign: 'Agrigento' })];
   assert.strictEqual(legStripModel(legs)[0].label, 'Palermo – Agrigento');
 });
+
+// ── v1.16.0: direct rows answer the asked time; duplicate coaches are named ──
+{
+  const { sameCoachAs, runsFromRequestedTime } = await import('../../js/itinerary.js');
+  const hm = (iso) => iso.slice(11, 16);
+  const coach = { mode: 'COACH', startTime: '2026-11-18T06:15:00', endTime: '2026-11-18T07:55:00', duration: 6000 };
+  const cityBus = { mode: 'BUS', startTime: '2026-11-18T05:55:00', endTime: '2026-11-18T06:10:00', duration: 900 };
+  const walk = { mode: 'WALK', duration: 300 };
+  const run = { dep: '06:15', arr: '07:55', day: 'today', fromWalkM: 1400 };
+
+  test('sameCoachAs: a coach behind a short city-bus hop is the same coach', () => {
+    assert.equal(sameCoachAs({ legs: [walk, cityBus, walk, coach] }, [run], hm), run);
+  });
+  test('sameCoachAs: a lone coach, a train change, or a different time is not a repeat', () => {
+    assert.equal(sameCoachAs({ legs: [walk, coach] }, [run], hm), null);
+    assert.equal(sameCoachAs({ legs: [{ mode: 'REGIONAL_RAIL', duration: 900 }, coach] }, [run], hm), null);
+    assert.equal(sameCoachAs({ legs: [cityBus, { ...coach, startTime: '2026-11-18T07:15:00' }] }, [run], hm), null);
+    assert.equal(sameCoachAs({ legs: [{ ...cityBus, duration: 3600 }, coach] }, [run], hm), null);
+  });
+  test('runsFromRequestedTime: drops same-day runs before the asked time, keeps later days', () => {
+    const list = [{ dep: '04:30', day: 'today' }, { dep: '21:45', day: 'today' }, { dep: '04:30', day: 'tomorrow' }];
+    assert.deepEqual(runsFromRequestedTime(list, 21 * 60 + 30, '2026-11-18').map((r) => r.dep + r.day), ['21:45today', '04:30tomorrow']);
+    assert.equal(runsFromRequestedTime(list, null, null).length, 3);
+    assert.equal(runsFromRequestedTime([{ legs: [{ dep: '05:00' }], day: '2026-11-18' }], 600, '2026-11-18', (c) => c.legs[0].dep).length, 0);
+  });
+}

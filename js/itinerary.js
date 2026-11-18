@@ -152,3 +152,31 @@ export function legStripModel(legs) {
   while (out.length && out[out.length - 1].walk && !out[out.length - 1].long) out.pop();
   return out;
 }
+
+// A plan card can be the very same coach as a direct row shown above it,
+// wrapped in a short city-bus hop to the coach stop. Returns that direct run
+// (so the card can say so), or null. `hm(iso)` gives a leg's Rome HH:MM.
+export function sameCoachAs(it, runs, hm) {
+  const transit = (it?.legs || []).filter((l) => l.mode !== 'WALK');
+  if (transit.length < 2 || transit.length > 3) return null;
+  for (const r of runs || []) {
+    const i = transit.findIndex((l) => isBusLeg(l) && hm(l.startTime) === r.dep && hm(l.endTime) === r.arr);
+    if (i === -1) continue;
+    const hops = transit.filter((_, k) => k !== i);
+    if (hops.every((l) => l.mode === 'BUS' && (l.duration || 0) <= 25 * 60)) return r;
+  }
+  return null;
+}
+
+// Direct rows must answer the time that was asked. `afterMin` is the requested
+// Rome minute-of-day (null = "now", nothing to filter); `day` is a run's day
+// tag ('today', 'tomorrow' or an ISO date) and `queryDate` the searched date.
+export function runsFromRequestedTime(list, afterMin, queryDate, depOf = (r) => r.dep) {
+  if (afterMin == null) return list || [];
+  return (list || []).filter((r) => {
+    const sameDay = !r.day || r.day === 'today' || r.day === queryDate;
+    if (!sameDay) return true;
+    const dep = depOf(r);
+    return Number(dep.slice(0, 2)) * 60 + Number(dep.slice(3, 5)) >= afterMin;
+  });
+}

@@ -3,7 +3,7 @@ import { api } from './api.js';
 import { el, modeMeta, modeClass, modeIcon, isRailMode, liveBadge, staleChip, openSheet, closeSheet, placeIcon, placeIconKey } from './ui.js';
 import { romeTime, romeDay, romeHour, dayPartKey, DAYPARTS, durationText, isOtherRomeDay, romeWallToIso, whenLabel, deviceZoneGap, romeNowInputValue } from './time.js';
 import { displayName, directionalRouteName } from './names.js';
-import { worstTransferMin, longestWaitMin, LONG_WAIT_MIN, transferTier, transferChipText, imminentText, legStripModel, groupByDaypart, plusTag, isRailReplacement, RESULT_FILTERS, matchesFilter } from './itinerary.js';
+import { worstTransferMin, longestWaitMin, LONG_WAIT_MIN, transferTier, transferChipText, imminentText, legStripModel, groupByDaypart, plusTag, isRailReplacement, RESULT_FILTERS, matchesFilter, sameCoachAs, runsFromRequestedTime } from './itinerary.js';
 import { operatorFor, fareChip, fareSummary, eur } from './operators.js';
 import { saisOdFare } from './fares-od.js';
 import { getRecents, pushRecent, removeRecent, getFavStops, addFavStop, removeFavStop, getSettings, getPlacesSorted, addPlace, removePlace, isPlace, getPref, setPref } from './store.js';
@@ -308,6 +308,7 @@ function mergeIts(more) {
 // quietly empty the next route you looked up.
 let resultFilter = 'all';
 let rerenderResults = () => {};
+const coachDupes = new WeakMap(); // itinerary → the direct run it repeats
 
 function filterRow(all) {
   const row = el('div', { class: 'filter-row', role: 'group', 'aria-label': 'Filter results' });
@@ -838,8 +839,8 @@ async function runSearch() {
     }
     const dir = await directPromise;
     if (mySeq !== searchSeq) return;
-    const runs = dir?.data?.results || [];
-    const xfers = dir?.data?.transfers || [];
+    const runs = runsFromRequestedTime(dir?.data?.results, qAfterMin, qDate);
+    const xfers = runsFromRequestedTime(dir?.data?.transfers, qAfterMin, qDate, (c) => c.legs[0].dep);
     const its = allowed;
     if (!its.length) {
       const ok = renderDirectBlock(runs, 'empty', xfers);
@@ -852,7 +853,17 @@ async function runSearch() {
     } else if (runs.length) {
       const bestPlanMin = Math.min(...its.map((i) => (i.duration || 1e9) / 60));
       const bestDirectMin = Math.min(...runs.map(directRunMinutes));
-      if (bestDirectMin + 15 < bestPlanMin) renderDirectBlock(runs, 'faster', xfers);
+      if (bestDirectMin + 15 < bestPlanMin) {
+        // A card that is one of these coaches plus a bus hop says so, instead
+        // of reading as a second, scarier trip.
+        let marked = false;
+        for (const it of its) {
+          const r = sameCoachAs(it, runs.slice(0, 3), romeTime);
+          if (r) { coachDupes.set(it, r); marked = true; }
+        }
+        if (marked) rerenderResults();
+        renderDirectBlock(runs, 'faster', xfers);
+      }
     }
     maybeHorizonNote(whenVal);
   } catch (err) {
@@ -861,7 +872,8 @@ async function runSearch() {
     expandForm(); // a failed search is retried or edited — keep the form in reach
     const dir = await directPromise;
     if (mySeq !== searchSeq) return;
-    const ok = renderDirectBlock(dir?.data?.results || [], 'down', dir?.data?.transfers || []);
+    const ok = renderDirectBlock(runsFromRequestedTime(dir?.data?.results, qAfterMin, qDate), 'down',
+      runsFromRequestedTime(dir?.data?.transfers, qAfterMin, qDate, (c) => c.legs[0].dep));
     if (!ok) {
       // R-04: "too many requests" is not "the service is down" — saying the
       // wrong one sends the user to check their connection for no reason.
@@ -1118,7 +1130,7 @@ function coachWalkIn(body, coach) {
 // QA-22: compact day marker — the clock stays the loudest thing on the line
 function dayTag(day) {
   if (!day || day === 'today') return '';
-  if (day === 'tomorrow') return ' +1';
+  if (day === 'tomorrow') return ' · tomorrow'; // '+1' reads as an arrival, and this is the departure day
   const d = new Date(day + 'T12:00:00Z');
   return isNaN(d) ? ` ${day}` : ' ' + d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
 }
@@ -1235,12 +1247,12 @@ const DIRECT_HEADS = {
   faster: 'Faster by coach',
 };
 
-function directRunBtn(r) {
+function directRunBtn(r, hideDay = false) {
   return el('button', { class: 'dep-row dep-row-btn', onclick: () => openDirectDetail(r) }, [
     el('span', { class: 'dep-mode' }, [modeIcon('COACH')]),
     el('div', { class: 'dep-main dep-main-tight' }, [
       el('span', { class: 'dep-route' }, [
-        el('span', { text: `${r.dep} → ${r.arr}${plusTag(r.arrPlus)}${dayTag(r.day)}` }),
+        el('span', { text: `${r.dep} → ${r.arr}${plusTag(r.arrPlus)}${hideDay ? '' : dayTag(r.day)}` }),
         walkChip(r.fromWalkM || 0, r.toWalkM || 0),
       ]),
       el('span', { class: 'muted dep-headsign dep-oneline', text: `${displayName(r.from)} → ${displayName(r.to)}` }),
@@ -1272,10 +1284,12 @@ function renderDirectBlock(runs, reason, transfers = []) {
   const results = document.getElementById('results');
   const primary = reason === 'empty' || reason === 'down';
   const shown = (!primary && runs.length > 3) ? runs.slice(0, 3) : runs;
+  const allTomorrow = shown.length > 0 && shown.every((r) => r.day === 'tomorrow');
   const kids = [
     el('div', { class: 'direct-head' }, [
       el('strong', { text: (reason === 'down' && typeof navigator !== 'undefined' && navigator.onLine === false)
-        ? 'You’re offline — saved coach times only' : DIRECT_HEADS[reason] }),
+        ? 'You’re offline — saved coach times only'
+        : (reason !== 'down' && allTomorrow) ? 'First coaches tomorrow' : DIRECT_HEADS[reason] }),
       el('p', { class: 'muted', text: 'Scheduled times · tap a trip for details' }),
     ]),
   ];
@@ -1292,11 +1306,12 @@ function renderDirectBlock(runs, reason, transfers = []) {
       for (const r of later) kids.push(directRunBtn(r));
     }
   } else {
-    for (const r of shown) kids.push(directRunBtn(r));
+    for (const r of shown) kids.push(directRunBtn(r, allTomorrow)); // the heading already says tomorrow
   }
   for (const c of transfers) kids.push(directXferBtn(c));
   const block = el('div', { class: 'direct-block' }, kids);
-  const firstCard = reason === 'faster'
+  // tomorrow's coaches belong under "No more departures today", not above it
+  const firstCard = (reason === 'faster' && !allTomorrow)
     ? results.querySelector('.day-page, .gap-note, .daypart-head, .day-head, .iti-card') : null;
   if (firstCard) results.insertBefore(block, firstCard); else results.appendChild(block);
   return true;
@@ -1498,6 +1513,8 @@ function itineraryCard(it) {
   const imminent = imminentText(it.startTime);
   const anyLive = transitLegs.some((l) => l.realTime);
   const railBus = transitLegs.some(isRailReplacement); // R-09: give the anonymous BUS cards an identity
+  const dupe = coachDupes.get(it);
+  const dupeWalk = dupe ? (dupe.fromWalkM || 0) + (dupe.toWalkM || 0) : 0;
 
   return el('button', { class: 'card iti-card', onclick: () => openItineraryDetail(it) }, [
     el('div', { class: 'iti-times' }, [
@@ -1519,6 +1536,9 @@ function itineraryCard(it) {
       cardFareText(it),
       liveBadge(anyLive),
     ]),
+    dupe ? el('div', { class: 'iti-note muted', text: dupeWalk > 400
+      ? `Same ${dupe.dep} coach as “Faster by coach” above. Walk ${walkMin(dupeWalk)} min instead to skip the bus change.`
+      : `Same ${dupe.dep} coach as “Faster by coach” above.` }) : null,
   ]);
 }
 
