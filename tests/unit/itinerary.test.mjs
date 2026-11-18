@@ -20,10 +20,11 @@ test('worstTransferMin: none for direct, min buffer across transfers, walks igno
   assert.strictEqual(worstTransferMin(legs), 4);
 });
 
-test('transferTier: >=15 calm, 6-14 tight, <=5 risky', () => {
+test('transferTier: >=10 calm, 6-9 tight, <=5 risky', () => {
   assert.strictEqual(transferTier(null), null);
   assert.strictEqual(transferTier(15), 'calm');
-  assert.strictEqual(transferTier(14), 'tight');
+  assert.strictEqual(transferTier(10), 'calm');
+  assert.strictEqual(transferTier(9), 'tight');
   assert.strictEqual(transferTier(6), 'tight');
   assert.strictEqual(transferTier(5), 'risky');
   assert.strictEqual(transferTier(0), 'risky');

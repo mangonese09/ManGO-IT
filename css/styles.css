@@ -1501,3 +1501,24 @@ body.no-ptr { overscroll-behavior-y: none; }
 
 /* v1.16.0: a card that repeats a direct coach says so */
 .iti-note { margin-top: 6px; font-size: 0.8125rem; line-height: 1.4; text-align: left; }
+
+/* ── v1.17.0: one control per row, announced results, actions on a dead end ── */
+/* The row is a container; its name is the button and ::after stretches it over
+   the whole row, so the tap target is unchanged. The star sits above it. */
+.suggest-row, .fav-stop-head { position: relative; }
+.row-hit { appearance: none; background: none; border: 0; padding: 0; margin: 0; font: inherit; color: inherit; text-align: left; cursor: pointer; }
+.row-hit::after { content: ""; position: absolute; inset: 0; }
+.row-hit:focus-visible { outline: none; }
+.row-hit:focus-visible::after { outline: 2px solid var(--mango, #ffb454); outline-offset: -2px; border-radius: 8px; }
+.suggest-row .pin-btn, .fav-stop-head .pin-btn { position: relative; z-index: 1; }
+div.suggest-row { width: 100%; cursor: pointer; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.dead-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 12px 0 8px; }
+.dead-actions .btn { min-height: 44px; }
+/* 44px tap areas for the small controls the audit measured (drawn size unchanged) */
+.hub-chips > *, .map-nearest { position: relative; }
+.hub-chips > *::after, .map-nearest::after {
+  content: ""; position: absolute; left: 0; right: 0; top: 50%; height: max(100%, 44px); transform: translateY(-50%); }
+.about-links a { padding: 12px 2px; margin: -10px 0; }
+/* direct-coach rows cut the arrival time at 320px: let the walk chip wrap under the times */
+.dep-row-btn .dep-route { flex-wrap: wrap; row-gap: 2px; }

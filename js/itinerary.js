@@ -98,10 +98,12 @@ export function longestWaitMin(legs) {
 }
 export const LONG_WAIT_MIN = 120;
 
-// tiers per the teardown: >=15 calm / 6..14 tight / <=5 risky
+// tiers: >=10 calm / 6..9 tight / <=5 risky. The teardown's 15 put an amber
+// chip on a 13-minute change, so 8 of 10 cards on a busy corridor carried a
+// warning and the real 5-minute risk stopped standing out (critique 2026-11-18).
 export function transferTier(min) {
   if (min === null || min === undefined) return null;
-  if (min >= 15) return 'calm';
+  if (min >= 10) return 'calm';
   if (min >= 6) return 'tight';
   return 'risky';
 }

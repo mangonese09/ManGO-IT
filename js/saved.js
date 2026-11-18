@@ -558,15 +558,13 @@ function lineFavButton(cand) {
 async function favLineCard(l) {
   const title = routeLabel(cleanRouteName(l.line), displayName(l.headsign));
   const card = el('div', { class: 'card fav-stop-card' }, [
-    el('div', {
-      class: 'fav-stop-head fav-stop-tap', role: 'button', tabindex: '0',
-      onclick: () => openStopSchedule(l.mode === 'BUS'
-        ? { name: l.stopName, stopId: l.stopId }
-        : { name: l.stopName, lat: l.lat, lon: l.lon }),
-    }, [
+    el('div', { class: 'fav-stop-head fav-stop-tap' }, [
       modeIcon(l.mode),
       el('div', { class: 'dep-main' }, [
-        el('span', { class: 'dep-route', text: title }),
+        el('button', { class: 'dep-route row-hit', type: 'button', text: title,
+          onclick: () => openStopSchedule(l.mode === 'BUS'
+            ? { name: l.stopName, stopId: l.stopId }
+            : { name: l.stopName, lat: l.lat, lon: l.lon }) }),
         el('span', { class: 'muted dep-headsign', text: `from ${displayName(l.stopName) || 'saved stop'}` }),
       ]),
       el('button', {
@@ -774,10 +772,10 @@ function romeNowMin() {
 
 async function favStopCard(s) {
   const card = el('div', { class: 'card fav-stop-card' }, [
-    el('div', { class: 'fav-stop-head fav-stop-tap', role: 'button', tabindex: '0', onclick: () => openStopSchedule(s) }, [
+    el('div', { class: 'fav-stop-head fav-stop-tap' }, [
       el('span', { class: 'suggest-icon' }, [modeIcon(s.iconMode || 'BUS')]),
       el('div', { class: 'dep-main' }, [
-        el('span', { class: 'dep-route', lang: 'it', text: displayName(s.name) }),
+        el('button', { class: 'dep-route row-hit', type: 'button', lang: 'it', text: displayName(s.name), onclick: () => openStopSchedule(s) }),
         el('span', { class: 'muted dep-headsign', text: s.kind || 'stop' }),
       ]),
       el('button', {

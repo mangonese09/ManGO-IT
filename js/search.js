@@ -501,9 +501,9 @@ export function rankSuggestions(rows, q, origin) {
 export function suggestStar(r, kind) {
   const key = r.type === 'STOP' && r.id ? r.id : `${r.lat.toFixed(5)},${r.lon.toFixed(5)}`;
   const isFav = () => getFavStops().some((f) => f.key === key);
-  const star = el('span', {
+  const star = el('button', {
     class: `pin-btn suggest-star${isFav() ? ' pinned' : ''}`,
-    role: 'button', tabindex: '0', 'aria-label': 'Save stop', text: isFav() ? '★' : '☆',
+    type: 'button', 'aria-label': 'Save stop', text: isFav() ? '★' : '☆',
     onclick: (e) => {
       e.stopPropagation();
       if (isFav()) {
@@ -526,9 +526,9 @@ export function suggestStar(r, kind) {
 // distinct from a stop's departures board.
 export function placeStar(r) {
   const key = `${r.lat.toFixed(5)},${r.lon.toFixed(5)}`;
-  const star = el('span', {
+  const star = el('button', {
     class: `pin-btn suggest-star${isPlace(key) ? ' pinned' : ''}`,
-    role: 'button', tabindex: '0', 'aria-label': 'Save place', text: isPlace(key) ? '★' : '☆',
+    type: 'button', 'aria-label': 'Save place', text: isPlace(key) ? '★' : '☆',
     onclick: (e) => {
       e.stopPropagation();
       if (isPlace(key)) {
@@ -607,9 +607,10 @@ async function suggest(which, q) {
       if (r.town && r.town !== 'Italia' && r.town.toLowerCase() !== r.name.toLowerCase()) bits.push(displayName(r.town));
       if (r.province && r.province !== r.town) bits.push(`prov. ${r.province}`);
       if (!bits.length && r.province) bits.push(`prov. ${r.province}`);
-      list.appendChild(el('button', {
-        class: 'suggest-row',
-        onclick: () => {
+      // A star inside a <button> row is a control nested in a control. The row
+      // is a plain container; its name is the button (stretched over the row
+      // by CSS) and the star is a real sibling button on top.
+      const choose = () => {
           sel[which] = { name: r.name, place: r.type === 'STOP' && r.id ? r.id : `${r.lat},${r.lon}`, lat: r.lat, lon: r.lon };
           document.getElementById(`${which}-input`).value = displayName(r.name);
           syncClears();
@@ -626,10 +627,10 @@ async function suggest(which, q) {
               toast('Location unavailable — set a starting point', 'warn');
             });
           }
-        },
-      }, [
+      };
+      list.appendChild(el('div', { class: 'suggest-row' }, [
         el('span', { class: 'suggest-icon' }, [iconEl]),
-        el('span', { class: 'suggest-name', lang: 'it', text: displayName(r.name) }),
+        el('button', { class: 'suggest-name row-hit', type: 'button', lang: 'it', text: displayName(r.name), onclick: choose }),
         bits.length ? el('span', { class: 'suggest-area', text: bits.join(' · ') }) : null,
         (r.type === 'STOP' || r.type === 'COACH_STOP') ? suggestStar(r, kind)
           : (isFinite(r.lat) && isFinite(r.lon) ? placeStar(r) : null),
@@ -775,6 +776,7 @@ async function runSearch() {
   }
   results.innerHTML = '';
   results.appendChild(el('div', { class: 'loading', role: 'status', text: 'Finding routes…' }));
+  announceResults('Finding routes');
   collapseForm();
 
   const whenVal = document.getElementById('when-input').value;
@@ -866,6 +868,7 @@ async function runSearch() {
       }
     }
     maybeHorizonNote(whenVal);
+    announceResults(resultsSummary());
   } catch (err) {
     if (mySeq !== searchSeq) return;
     results.innerHTML = '';
@@ -970,7 +973,8 @@ async function renderDeadEnd(params, whenVal) {
     try {
       const near = await api.nearestServed(pt.lat, pt.lon);
       const s = near?.data?.stops?.[0];
-      if (s && s.m > 2000) {
+      // beyond ~150 km the 'nearest stop' is on another coast: say nothing rather than "613 km away"
+      if (s && s.m > 2000 && s.m < 150000) {
         box.appendChild(el('p', { class: 'muted', text:
           `${displayName(pt.name)} has no nearby stop in our coach data — nearest served: ${displayName(s.name)}, ${(s.m / 1000).toFixed(1)} km away.` }));
       }
@@ -980,9 +984,31 @@ async function renderDeadEnd(params, whenVal) {
   // QA-12: never a bare one-liner — always close with something actionable.
   // R-03/C-1: the horizon sentence belongs to maybeHorizonNote alone; printing
   // it here too rendered it twice, back to back, on every past-horizon search.
-  box.appendChild(el('p', { class: 'muted', text:
-    'Try another date, swap the direction, or check the operator sites.' }));
+  box.appendChild(el('div', { class: 'dead-actions' }, [
+    el('button', { class: 'btn btn-ghost btn-small', type: 'button', text: 'Swap direction', onclick: () => { swapEndpoints(); runSearch(); } }),
+    el('button', { class: 'btn btn-ghost btn-small', type: 'button', text: 'Change the trip', onclick: () => expandForm(true) }),
+  ]));
+  box.appendChild(el('p', { class: 'muted', text: 'Operator sites can list runs we do not have yet.' }));
   await maybeHorizonNote(whenVal);
+}
+
+// ── RESULTS ANNOUNCEMENT ──
+// A finished search changed the page silently: a screen-reader user pressed
+// "Find routes" and heard nothing. One polite line says what arrived.
+function announceResults(text) {
+  const live = document.getElementById('results-status');
+  if (!live || !text) return;
+  live.textContent = '';
+  setTimeout(() => { live.textContent = text; }, 40);
+}
+function resultsSummary() {
+  const r = document.getElementById('results');
+  const cards = r.querySelectorAll('.iti-card').length;
+  const coaches = r.querySelectorAll('.direct-block .dep-row-btn').length;
+  const empty = r.querySelector('.empty-state p');
+  if (cards) return `${cards} trip${cards === 1 ? '' : 's'} found${coaches ? `, plus ${coaches} direct coach${coaches === 1 ? '' : 'es'}` : ''}.`;
+  if (coaches) return `${coaches} direct coach${coaches === 1 ? '' : 'es'} found.`;
+  return empty ? empty.textContent : 'No results.';
 }
 
 function directRunMinutes(r) {

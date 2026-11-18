@@ -178,6 +178,9 @@ function resolvedTheme(pref) {
 }
 function applyTheme(pref) {
   document.documentElement.dataset.theme = resolvedTheme(pref);
+  // the status bar follows the page: it stayed near-black over the light theme
+  const bar = document.querySelector('meta[name="theme-color"]');
+  if (bar) bar.setAttribute('content', resolvedTheme(pref) === 'light' ? '#fafaf7' : '#0d1117');
   // an "Auto" basemap follows the applied theme — retile if the map exists
   setMapStyle(getMapStyle());
 }

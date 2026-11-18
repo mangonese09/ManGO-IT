@@ -1442,17 +1442,15 @@ function openMapSearch() {
           if (kind) bits.push(kind);
           if (r.town && r.town !== 'Italia' && r.town.toLowerCase() !== r.name.toLowerCase()) bits.push(displayName(r.town));
           if (r.province && r.province !== r.town) bits.push(`prov. ${r.province}`);
-          results.appendChild(el('button', {
-            class: 'suggest-row map-search-row',
-            onclick: () => {
-              closeSheet();
-              clearHighlight();
-              map.setView([r.lat, r.lon], Math.max(map.getZoom(), NEAR_ZOOM));
-              loadVisibleStops();
-            },
-          }, [
+          const go = () => {
+            closeSheet();
+            clearHighlight();
+            map.setView([r.lat, r.lon], Math.max(map.getZoom(), NEAR_ZOOM));
+            loadVisibleStops();
+          };
+          results.appendChild(el('div', { class: 'suggest-row map-search-row' }, [
             el('span', { class: 'suggest-icon' }, [iconEl]),
-            el('span', { class: 'suggest-name', lang: 'it', text: displayName(r.name) }),
+            el('button', { class: 'suggest-name row-hit', type: 'button', lang: 'it', text: displayName(r.name), onclick: go }),
             bits.length ? el('span', { class: 'suggest-area', text: bits.join(' · ') }) : null,
             (r.type === 'STOP' || r.type === 'COACH_STOP') ? suggestStar(r, kind)
               : (isFinite(r.lat) && isFinite(r.lon) ? placeStar(r) : null),
