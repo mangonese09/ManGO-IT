@@ -1859,6 +1859,12 @@ const routes = {
       const d1 = romeParts(new Date(noon.getTime() + 86400000));
       days = [d0, d1];
       dayLabels = { today: d0.iso, tomorrow: d1.iso };
+    } else if (q.get('afterMin') != null && q.get('afterMin') !== '') {
+      // "Depart at 21:30" on TODAY's date took the branch above as "no date"
+      // and answered from now: a 21:30 search listed the 04:30 coach.
+      const d0 = romeParts();
+      d0.min = Math.max(d0.min, Math.min(1439, Number(q.get('afterMin')) || 0));
+      days = [d0, romeParts(new Date(Date.now() + 86400000))];
     }
     const full = q.get('full') === '1'; // whole-day view (Ship 3, R-17)
     const out = directSearch(fLat, fLon, tLat, tLon, radius, days, full);
