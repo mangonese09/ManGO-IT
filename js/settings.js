@@ -8,7 +8,7 @@ import { getSettings, patchSettings, clearAllAppData, clearCachedData, getFavSto
 import { confirmModal, openSheet, closeSheet, el } from './ui.js';
 import { api } from './api.js';
 import { toast } from './toast.js';
-import { onSyncChange, signIn, signOut } from './sync.js';
+import { onSyncChange, renderSignInButton, signOut } from './sync.js';
 // The basemap preference lives in the store; the map module only needs to hear
 // about a change once it has loaded (it reads the preference itself on start).
 import { getPref as getMapPref, setPref as setMapPref } from './store.js';
@@ -138,14 +138,19 @@ export function initSettings() {
 // ── ACCOUNT (1.18.0) ── the shared account card: sign in to sync, or who is signed in
 function wireAccount() {
   const out = document.getElementById('acct-out'), inn = document.getElementById('acct-in');
-  const inBtn = document.getElementById('acct-signin'), outBtn = document.getElementById('acct-signout');
-  if (!out || !inn) return;
-  inBtn.addEventListener('click', async () => {
-    inBtn.disabled = true; inBtn.lastElementChild.textContent = 'Signing in…';
-    try { await signIn(); }
-    catch (e) { toast((e && e.message) || 'Sign-in didn’t go through', 'warn'); }
-    finally { inBtn.disabled = false; inBtn.lastElementChild.textContent = 'Continue with Google'; }
-  });
+  const outBtn = document.getElementById('acct-signout');
+  const gbtn = document.getElementById('acct-gbtn'), err = document.getElementById('acct-err');
+  const showErr = (m) => { err.textContent = m || ''; err.hidden = !m; };
+  // Google's button is drawn the first time Settings is on screen while signed out (it loads Google's script)
+  let drawn = false;
+  const draw = () => {
+    if (drawn || out.hidden || document.getElementById('view-settings').hidden) return;
+    drawn = true; showErr('');
+    renderSignInButton(gbtn, { onError: showErr, onBusy: (b) => gbtn.classList.toggle('busy', b) })
+      .catch((e) => { drawn = false; gbtn.replaceChildren(Object.assign(document.createElement('span'), { className: 'acct-gbtn-wait', textContent: (e && e.message) || 'Google sign-in didn’t load' })); });
+  };
+  new MutationObserver(draw).observe(document.getElementById('view-settings'), { attributes: true, attributeFilter: ['hidden'] });
+  window.addEventListener('online', () => { if (!drawn) draw(); });
   outBtn.addEventListener('click', async () => {
     outBtn.disabled = true; outBtn.textContent = 'Signing out…';
     try { await signOut(); toast('Signed out · your saved items stay on this phone', 'info'); }
@@ -154,6 +159,7 @@ function wireAccount() {
   });
   onSyncChange((user, st) => {
     out.hidden = !!user; inn.hidden = !user;
+    if (!user) { drawn = false; draw(); }
     const erase = document.getElementById('erase-sub');
     if (erase) erase.textContent = user ? 'On this phone. Your synced copy stays in your account.' : 'On this phone';
     if (!user) return;

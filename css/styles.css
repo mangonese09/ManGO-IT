@@ -1401,7 +1401,11 @@ body.no-ptr { overscroll-behavior-y: none; }
 .acct-dot[data-state="error"] { background: var(--error, #e85a5a); }
 .acct-google { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; min-height: 48px; border-radius: 10px;
   border: 1px solid #dadce0; background: #fff; color: #1f1f1f; font: 600 0.9375rem var(--font-sans, 'DM Sans', sans-serif); cursor: pointer; }
-.acct-google:disabled, .acct-btn:disabled { opacity: .65; }
+.acct-btn:disabled { opacity: .65; }
+.acct-gbtn { display: flex; justify-content: center; min-height: 44px; align-items: center; }
+.acct-gbtn.busy { opacity: .6; pointer-events: none; }
+.acct-gbtn-wait { font-size: 0.875rem; color: var(--text-muted, #9a9a9a); }
+.acct-err { margin: 10px 0 0; font-size: 0.875rem; line-height: 1.4; color: #ff8f8f; }
 .acct-btn { flex: none; min-height: 40px; padding: 0 14px; border-radius: 10px; border: 1px solid var(--border, rgba(255,255,255,0.14));
   background: none; color: var(--text-primary, #f2f2f2); font: 600 0.875rem var(--font-sans, 'DM Sans', sans-serif); cursor: pointer; white-space: nowrap; }
 .setting-sub { display: block; font-size: 0.8125rem; color: var(--text-muted, #9a9a9a); margin-top: 2px; font-weight: 400; }

@@ -142,28 +142,56 @@ export async function initSync() {
   } catch { setStatus({ state: 'error', error: 'offline' }); }
 }
 
-export async function signIn() {
-  if (navigator.onLine === false) throw new Error('You’re offline — signing in needs a connection');
-  const { auth, a } = await loadFirebase();
-  const provider = new auth.GoogleAuthProvider();
-  provider.setCustomParameters({ prompt: 'select_account' });
-  try {
-    const cred = await auth.signInWithPopup(a, provider);
-    auth.onAuthStateChanged(a, (u) => { if (!u && user) { user = null; setStatus({ state: 'signed-out' }); } });
-    await attach(cred.user);
-  } catch (e) {
-    const code = e.code || '';
-    if (/popup-blocked|operation-not-supported/.test(code)) { try { localStorage.setItem(LS_ACTIVE, '1'); } catch { /* */ } await auth.signInWithRedirect(a, provider); return; }
-    if (/popup-closed-by-user|cancelled-popup-request/.test(code)) return;
-    if (/unauthorized-domain/.test(code)) throw new Error('Google sign-in isn’t switched on for it.mangonese.dev yet');
-    throw e;
+// ── SIGN-IN BUTTON (1.18.3) ── Google's own in-page sign-in (Google Identity
+// Services, FedCM on Android Chrome). The account chooser opens over the app and
+// hands back a Google ID token, which signs in to Firebase with no redirect and
+// no popup returning to this origin — the installed PWA captured that return
+// ("missing initial state"), and Chrome's storage partitioning broke the
+// firebaseapp.com hand-off before that.
+const GIS_CLIENT_ID = '350555083236-33udc1ou3iukrp4ka9laml8sbvrm982e.apps.googleusercontent.com';
+let gisPromise = null;
+function loadGis() {
+  if (window.google && window.google.accounts && window.google.accounts.id) return Promise.resolve(window.google.accounts.id);
+  if (!gisPromise) {
+    gisPromise = new Promise((resolve, reject) => {
+      const sc = document.createElement('script');
+      sc.src = 'https://accounts.google.com/gsi/client'; sc.async = true;
+      sc.onload = () => (window.google && window.google.accounts ? resolve(window.google.accounts.id) : reject(new Error('Google sign-in didn’t load')));
+      sc.onerror = () => { gisPromise = null; reject(new Error('Google sign-in didn’t load — check your connection')); };
+      document.head.appendChild(sc);
+    });
   }
+  return gisPromise;
+}
+
+// Draws Google's button into `container`; onError(message) reports a failed sign-in.
+export async function renderSignInButton(container, { onError, onBusy } = {}) {
+  const [gid] = await Promise.all([loadGis(), loadFirebase()]);
+  gid.initialize({
+    client_id: GIS_CLIENT_ID,
+    use_fedcm_for_button: true,
+    use_fedcm_for_prompt: true,
+    ux_mode: 'popup',
+    callback: async (resp) => {
+      onBusy && onBusy(true);
+      try {
+        const { auth, a } = await loadFirebase();
+        const res = await auth.signInWithCredential(a, auth.GoogleAuthProvider.credential(resp.credential));
+        auth.onAuthStateChanged(a, (u) => { if (!u && user) { user = null; setStatus({ state: 'signed-out' }); } });
+        await attach(res.user);
+      } catch (e) { onError && onError(navigator.onLine === false ? 'You’re offline — signing in needs a connection' : 'Sign-in didn’t go through — ' + ((e && (e.code || e.message)) || 'try again')); }
+      finally { onBusy && onBusy(false); }
+    },
+  });
+  container.replaceChildren();
+  gid.renderButton(container, { type: 'standard', theme: 'outline', size: 'large', shape: 'rectangular', text: 'continue_with', logo_alignment: 'center', width: Math.min(400, Math.max(200, container.clientWidth || 320)) });
 }
 
 export async function signOut() {
   clearTimeout(pushTimer);
   if (user) await push().catch(() => {});   // the last change reaches the account first
   try { const { auth, a } = await loadFirebase(); await auth.signOut(a); } catch { /* offline: local state still clears */ }
+  try { window.google?.accounts?.id?.disableAutoSelect(); } catch { /* GIS not loaded */ }
   user = null;
   try { localStorage.removeItem(LS_ACTIVE); localStorage.removeItem(LS_PULLED); localStorage.removeItem(LS_BASE); } catch { /* keep the snapshots: they are this phone's safety net */ }
   setStatus({ state: 'signed-out', at: null, error: null });
