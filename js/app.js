@@ -4,6 +4,7 @@ import { initBoard, setBoardVisible } from './board.js';
 import { renderSaved } from './saved.js';
 // the map module (Leaflet glue, 70 KB) loads the first time the Map tab opens
 import { initSettings } from './settings.js';
+import { initSync } from './sync.js';
 import { closeSheet, anySheetOpen, consumeSheetPop } from './ui.js';
 import { pruneCache, getPref, setPref } from './store.js';
 
@@ -105,6 +106,9 @@ function boot() {
   // pressure — non-blocking, and Settings reports the honest answer.
   safe('persistStorage', () => { navigator.storage?.persist?.().catch(() => {}); });
   safe('settings', initSettings);
+  // 1.18.0: a device that signed in before reconnects its account (Firebase loads lazily)
+  safe('sync', () => { initSync().catch(() => { /* offline boot: Settings shows the state */ }); });
+  window.addEventListener('mangoit:synced', () => { if (!document.getElementById('view-saved').hidden) renderSaved(); });
   safe('search', initSearch);
   safe('board', initBoard);
   safe('edgeSwipe', initEdgeSwipe);

@@ -1384,6 +1384,30 @@ body.no-ptr { overscroll-behavior-y: none; }
 /* S-1: the destructive row reads destructive (red text, iOS convention) */
 .setting-danger { color: var(--error-ink); }
 .setting-row:disabled { opacity: 0.5; }
+/* 1.18.0 shared Settings: the account card that leads Settings in every app */
+#view-settings .acct-card { padding: 16px; margin: 8px 0 6px; }
+.acct-head { display: flex; align-items: center; gap: 14px; }
+.acct-avatar { width: 52px; height: 52px; flex: none; border-radius: 50%; overflow: hidden; display: grid; place-items: center;
+  background: rgba(240,165,0,.16); color: var(--mango, #f0a500); font-size: 22px; font-weight: 700; }
+.acct-avatar img { width: 100%; height: 100%; object-fit: cover; }
+.acct-avatar--none { background: var(--bg-elevated, #2a2a2a); color: var(--text-muted, #9a9a9a); }
+.acct-who { flex: 1; min-width: 0; }
+.acct-name { font-size: 1.0625rem; font-weight: 700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.acct-email { font-size: 0.875rem; color: var(--text-muted, #9a9a9a); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.acct-pitch { margin: 14px 0; font-size: 0.875rem; line-height: 1.45; }
+.acct-sync { display: flex; align-items: center; gap: 8px; margin-top: 14px; font-size: 0.8125rem; color: var(--text-muted, #9a9a9a); }
+.acct-dot { width: 8px; height: 8px; border-radius: 50%; flex: none; background: var(--teal, #3dd6ac); }
+.acct-dot[data-state="syncing"] { background: var(--mango, #f0a500); }
+.acct-dot[data-state="error"] { background: var(--error, #e85a5a); }
+.acct-google { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; min-height: 48px; border-radius: 10px;
+  border: 1px solid #dadce0; background: #fff; color: #1f1f1f; font: 600 0.9375rem var(--font-sans, 'DM Sans', sans-serif); cursor: pointer; }
+.acct-google:disabled, .acct-btn:disabled { opacity: .65; }
+.acct-btn { flex: none; min-height: 40px; padding: 0 14px; border-radius: 10px; border: 1px solid var(--border, rgba(255,255,255,0.14));
+  background: none; color: var(--text-primary, #f2f2f2); font: 600 0.875rem var(--font-sans, 'DM Sans', sans-serif); cursor: pointer; white-space: nowrap; }
+.setting-sub { display: block; font-size: 0.8125rem; color: var(--text-muted, #9a9a9a); margin-top: 2px; font-weight: 400; }
+.setting-danger .setting-sub { color: var(--text-muted, #9a9a9a); }
+#view-settings .setting-row > span:first-child { min-width: 0; }
+#view-settings .settings-group { font-size: 0.75rem; margin: 18px 6px 8px; }
 
 /* choice sheets: radio rows with a description, mango ✓ on the active one */
 .choice-row {

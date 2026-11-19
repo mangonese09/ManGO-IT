@@ -35,10 +35,21 @@ function read(key, fallback) {
   }
 }
 
+// ── SYNC HOOK (1.18.0) ── sync.js hears about writes to the keys it mirrors
+// to the signed-in account; it never writes through here while applying a pull.
+export const SYNC_KEYS = ['places', 'favstops', 'favlines'];
+const writeListeners = new Set();
+export function onUserWrite(fn) { writeListeners.add(fn); return () => writeListeners.delete(fn); }
+const notifyWrite = (key) => { if (SYNC_KEYS.includes(key)) for (const fn of writeListeners) { try { fn(key); } catch { /* a listener never blocks a save */ } } };
+export function readSynced() { return { places: read('places', []), favstops: read('favstops', []), favlines: read('favlines', []) }; }
+// applying a pull: written straight to storage, no notify (the cloud already has it)
+export function applySynced(d) { for (const k of SYNC_KEYS) if (Array.isArray(d[k])) { try { localStorage.setItem(NS + k, JSON.stringify(d[k])); } catch { /* quota: keep what is here */ } } }
+
 function write(key, value) {
   const s = JSON.stringify(value);
   try {
     localStorage.setItem(NS + key, s);
+    notifyWrite(key);
     return true;
   } catch {
     if (!USER_KEYS.includes(key)) return false; // a cache write may fail silently

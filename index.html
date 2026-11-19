@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://mangonese.dev">
   <link rel="preconnect" href="https://mangonese.dev" crossorigin>
   <link rel="stylesheet" href="https://mangonese.dev/shared/mangonese.css">
-  <link rel="stylesheet" href="/css/styles.css?v=1.17.4">
+  <link rel="stylesheet" href="/css/styles.css?v=1.18.0">
 </head>
 <body>
   <header class="app-header">
@@ -103,13 +103,29 @@
          data erase) -->
     <section id="view-settings" hidden>
       <h2>Settings</h2>
+      <!-- 1.18.0 shared Settings (mockup TRK7YuPf2QsAsoHZvaNptF): account first,
+           then the app's own groups, App, and Data with Erase last. -->
+      <section class="card acct-card" aria-label="Account">
+        <div id="acct-out">
+          <div class="acct-head">
+            <div class="acct-avatar acct-avatar--none" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="4"/><path d="M4 20c1.5-4 4.5-6 8-6s6.5 2 8 6"/></svg></div>
+            <div class="acct-who"><div class="acct-name">Not signed in</div><div class="acct-email">Everything is saved on this phone</div></div>
+          </div>
+          <p class="acct-pitch">Sign in to keep your saved places, stops and lines on every device. ManGO:IT works the same without an account.</p>
+          <button id="acct-signin" class="acct-google" type="button"><svg width="18" height="18" viewBox="0 0 48 48" aria-hidden="true"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9 3.5l6.7-6.7C35.6 2.5 30.2 0 24 0 14.6 0 6.6 5.4 2.6 13.2l7.8 6.1C12.3 13.7 17.6 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v9h12.7c-.6 3-2.3 5.5-4.8 7.2l7.6 5.9c4.4-4.1 7-10.1 7-17.6z"/><path fill="#FBBC05" d="M10.4 28.7c-.5-1.5-.8-3-.8-4.7s.3-3.2.8-4.7l-7.8-6.1C.9 16.6 0 20.2 0 24s.9 7.4 2.6 10.8l7.8-6.1z"/><path fill="#34A853" d="M24 48c6.5 0 11.9-2.1 15.9-5.8l-7.6-5.9c-2.1 1.4-4.9 2.3-8.3 2.3-6.4 0-11.7-4.2-13.6-9.9l-7.8 6.1C6.6 42.6 14.6 48 24 48z"/></svg><span>Continue with Google</span></button>
+        </div>
+        <div id="acct-in" hidden>
+          <div class="acct-head">
+            <div class="acct-avatar" id="acct-avatar" aria-hidden="true">·</div>
+            <div class="acct-who"><div class="acct-name" id="acct-name">Signed in</div><div class="acct-email" id="acct-email"></div></div>
+            <button id="acct-signout" class="acct-btn" type="button">Sign out</button>
+          </div>
+          <div class="acct-sync"><span class="acct-dot" id="acct-dot" aria-hidden="true"></span><span id="acct-sync" role="status" aria-live="polite">Syncing…</span></div>
+        </div>
+      </section>
+
       <h3 class="settings-group">Preferences</h3>
       <div class="card settings-card">
-        <button id="theme-row" class="setting-row setting-link" aria-haspopup="dialog">
-          <span>Theme</span>
-          <span class="setting-value"><span id="theme-value"></span><span class="setting-chevron" aria-hidden="true">›</span></span>
-        </button>
-        <div class="setting-sep"></div>
         <button id="map-style-row" class="setting-row setting-link" aria-haspopup="dialog">
           <span>Map style</span>
           <span class="setting-value"><span id="map-style-value"></span><span class="setting-chevron" aria-hidden="true">›</span></span>
@@ -119,18 +135,33 @@
           <span>Search results</span>
           <span class="setting-value"><span id="span-value"></span><span class="setting-chevron" aria-hidden="true">›</span></span>
         </button>
-      </div>
-      <h3 class="settings-group">Data</h3>
-      <div class="card settings-card">
+        <div class="setting-sep"></div>
         <button id="data-info" class="setting-row setting-link" aria-haspopup="dialog">
           <span>Data &amp; schedules</span>
           <span class="setting-chevron" aria-hidden="true">›</span>
         </button>
-        <div class="setting-sep"></div>
-        <button id="check-updates" class="setting-row setting-link">
-          <span>Check for updates <span class="muted setting-ver" id="current-version"></span></span>
+      </div>
+
+      <h3 class="settings-group">App</h3>
+      <div class="card settings-card">
+        <button id="theme-row" class="setting-row setting-link" aria-haspopup="dialog">
+          <span>Theme</span>
+          <span class="setting-value"><span id="theme-value"></span><span class="setting-chevron" aria-hidden="true">›</span></span>
         </button>
         <div class="setting-sep"></div>
+        <div class="setting-row">
+          <span>ManGO:IT <span id="current-version"></span><span class="setting-sub" id="update-sub">Tap to check for a newer version</span></span>
+          <button id="check-updates" class="acct-btn" type="button">Check for updates</button>
+        </div>
+        <div class="setting-sep"></div>
+        <button id="about-open" class="setting-row setting-link" aria-haspopup="dialog">
+          <span>About ManGO:IT</span>
+          <span class="setting-chevron" aria-hidden="true">›</span>
+        </button>
+      </div>
+
+      <h3 class="settings-group">Data</h3>
+      <div class="card settings-card">
         <button id="backup-data" class="setting-row setting-link">
           <span>Back up my data</span>
         </button>
@@ -145,13 +176,7 @@
         </button>
         <div class="setting-sep"></div>
         <button id="erase-all" class="setting-row setting-link setting-danger">
-          <span>Erase all data</span>
-        </button>
-      </div>
-      <div class="card settings-card settings-about-card">
-        <button id="about-open" class="setting-row setting-link" aria-haspopup="dialog">
-          <span>About ManGO:IT</span>
-          <span class="setting-chevron" aria-hidden="true">›</span>
+          <span>Erase all data<span class="setting-sub" id="erase-sub">On this phone</span></span>
         </button>
       </div>
     </section>
@@ -189,6 +214,6 @@
       });
     }
   </script>
-  <script type="module" src="/js/app.js?v=1.17.4"></script>
+  <script type="module" src="/js/app.js?v=1.18.0"></script>
 </body>
 </html>

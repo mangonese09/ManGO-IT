@@ -8,6 +8,7 @@ import { getSettings, patchSettings, clearAllAppData, clearCachedData, getFavSto
 import { confirmModal, openSheet, closeSheet, el } from './ui.js';
 import { api } from './api.js';
 import { toast } from './toast.js';
+import { onSyncChange, signIn, signOut } from './sync.js';
 // The basemap preference lives in the store; the map module only needs to hear
 // about a change once it has loaded (it reads the preference itself on start).
 import { getPref as getMapPref, setPref as setMapPref } from './store.js';
@@ -130,7 +131,49 @@ export function initSettings() {
   const ver = document.getElementById('current-version');
   if (ver) ver.textContent = `v${APP_VERSION}`;
   document.getElementById('data-info')?.addEventListener('click', openDataSheet);
+  wireAccount();
   document.getElementById('about-open')?.addEventListener('click', openAboutSheet);
+}
+
+// ── ACCOUNT (1.18.0) ── the shared account card: sign in to sync, or who is signed in
+function wireAccount() {
+  const out = document.getElementById('acct-out'), inn = document.getElementById('acct-in');
+  const inBtn = document.getElementById('acct-signin'), outBtn = document.getElementById('acct-signout');
+  if (!out || !inn) return;
+  inBtn.addEventListener('click', async () => {
+    inBtn.disabled = true; inBtn.lastElementChild.textContent = 'Signing in…';
+    try { await signIn(); }
+    catch (e) { toast((e && e.message) || 'Sign-in didn’t go through', 'warn'); }
+    finally { inBtn.disabled = false; inBtn.lastElementChild.textContent = 'Continue with Google'; }
+  });
+  outBtn.addEventListener('click', async () => {
+    outBtn.disabled = true; outBtn.textContent = 'Signing out…';
+    try { await signOut(); toast('Signed out · your saved items stay on this phone', 'info'); }
+    catch { toast('Couldn’t sign out', 'warn'); }
+    finally { outBtn.disabled = false; outBtn.textContent = 'Sign out'; }
+  });
+  onSyncChange((user, st) => {
+    out.hidden = !!user; inn.hidden = !user;
+    const erase = document.getElementById('erase-sub');
+    if (erase) erase.textContent = user ? 'On this phone. Your synced copy stays in your account.' : 'On this phone';
+    if (!user) return;
+    document.getElementById('acct-name').textContent = user.displayName || user.email || 'Signed in';
+    document.getElementById('acct-email').textContent = user.email || '';
+    const av = document.getElementById('acct-avatar');
+    const initial = String(user.displayName || user.email || '?').trim().charAt(0).toUpperCase() || '?';
+    av.textContent = initial;
+    if (user.photoURL && /^https:\/\//.test(user.photoURL)) {
+      const img = el('img', { src: user.photoURL, alt: '', referrerpolicy: 'no-referrer' });
+      img.addEventListener('error', () => { av.textContent = initial; });
+      av.replaceChildren(img);
+    }
+    const line = document.getElementById('acct-sync'), dot = document.getElementById('acct-dot');
+    const counts = () => `${getPlaces().length} places, ${getFavStops().length} stops`;
+    line.textContent = st.state === 'syncing' ? 'Syncing…'
+      : st.state === 'error' ? (st.error === 'offline' ? 'Offline · changes sync when you’re back' : 'Couldn’t sync · will retry on your next change')
+      : `Synced · ${counts()} follow you`;
+    dot.dataset.state = st.state;
+  });
 }
 
 // ── CHOICE SHEETS (S-2/S-3/S-7) ──
@@ -284,7 +327,7 @@ async function checkForUpdates() {
   try {
     const res = await fetch(`/version.json?t=${Date.now()}`, { cache: 'no-store' });
     const { version } = await res.json();
-    if (version === APP_VERSION) { toast(`Up to date (v${APP_VERSION})`, 'info'); return; }
+    if (version === APP_VERSION) { const sub = document.getElementById('update-sub'); if (sub) sub.textContent = 'You’re on the latest version'; toast(`Up to date (v${APP_VERSION})`, 'info'); return; }
     toast(`Updating to v${version}…`, 'info');
     const reg = await navigator.serviceWorker?.getRegistration();
     if (!reg) { location.reload(); return; }
