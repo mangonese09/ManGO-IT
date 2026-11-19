@@ -1,6 +1,6 @@
 // ── SAVED (favorite stops + pinned departures) ──
 import { api } from './api.js';
-import { el, modeMeta, modeIcon, confirmModal, openSheet, closeSheet, placeIcon, placeIconKey, PLACE_ICONS, LENS_SVG } from './ui.js';
+import { el, staleChip, modeMeta, modeIcon, confirmModal, openSheet, closeSheet, placeIcon, placeIconKey, PLACE_ICONS, LENS_SVG } from './ui.js';
 import { romeTime, romeDay, countdownText, isOtherRomeDay, romeWallToIso, deviceZoneGap } from './time.js';
 import { getSaved, purgeSaved, removeSaved, getFavStops, addFavStop, removeFavStop, isFavStop, getFavLines, addFavLine, removeFavLine, isFavLine, getPlacesSorted, addPlace, removePlace, setHomePlace, setPlaceIcon } from './store.js';
 import { cleanRouteName } from './names.js';
@@ -794,8 +794,10 @@ async function favStopCard(s) {
   card.appendChild(rows);
   try {
     let deps = [];
+    // 1.17.4 (visual sweep): an offline card said "now · 05:00" from cache with no sign it was old
+    let fresh = { stale: false, fetchedAt: Date.now() };
     if (s.kind === 'hub' && s.hubId) {
-      const { data } = await api.hubBoard(s.hubId);
+      const { data, stale, fetchedAt } = await api.hubBoard(s.hubId); fresh = { stale, fetchedAt };
       deps = (data.departures || []).map((r) => ({
         label: r.headsign ? `${(r.line || '').trim() || r.mode} → ${displayName(r.headsign)}` : (r.line || r.mode),
         iconMode: r.mode, when: r.timeISO, live: r.realtime,
@@ -803,20 +805,21 @@ async function favStopCard(s) {
     } else if (s.stopId) {
       // 10 not 4: grouping by line (below) collapses same-line runs, so a
       // 4-row fetch often filled the card with one line's next four buses
-      const { data } = await api.stoptimes(s.stopId, 10);
+      const { data, stale, fetchedAt } = await api.stoptimes(s.stopId, 10); fresh = { stale, fetchedAt };
       deps = (data.stopTimes || []).map((st) => ({
         label: transitLabel(st),
         iconMode: st.mode,
         when: st.departure, live: st.realTime, cancelled: st.cancelled,
       }));
     } else {
-      const { data } = await api.coachBoard(s.lat, s.lon);
+      const { data, stale, fetchedAt } = await api.coachBoard(s.lat, s.lon); fresh = { stale, fetchedAt };
       deps = (data.results || []).map((r) => ({
         label: routeLabel(displayName(r.route), displayName(r.headsign)), iconMode: 'COACH',
         clock: r.dep + (r.day === 'tomorrow' ? ' (tomorrow)' : ''),
       }));
     }
     rows.innerHTML = '';
+    if (fresh.stale) { rows.appendChild(staleChip(fresh.fetchedAt, true)); deps.forEach((x) => { x.live = false; }); }
     if (!deps.length) rows.appendChild(el('p', { class: 'muted', text: 'No upcoming departures.' }));
     // F-2: one card row per line+direction, next runs stacked under the clock
     for (const g of groupRuns(deps, (x) => x.label, (x) => !x.live && !x.cancelled).slice(0, 4)) {

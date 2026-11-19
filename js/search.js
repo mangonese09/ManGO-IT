@@ -778,7 +778,10 @@ async function runSearch() {
     btn.disabled = false; btn.textContent = label;
     if (found) continue;
     if (mySeq !== searchSeq) return;
-    formError(typed.length >= 2
+    // 1.17.4 (visual sweep): offline, every name "wasn't found" — say what actually failed
+    formError(typed.length >= 2 && navigator.onLine === false
+      ? `You’re offline, so “${typed}” can’t be looked up. Pick a saved place, or try again when you’re back online.`
+      : typed.length >= 2
       ? `No place found for “${typed}”. Check the spelling or choose it on the map.`
       : (which === 'from' ? 'Choose where you are starting from.' : 'Choose where you are going.'), which);
     return;

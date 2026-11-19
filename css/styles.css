@@ -404,7 +404,7 @@ body.kb-open .bottom-nav { transform: translateY(100%); }
 
 /* ── misc ── */
 .loading { text-align: center; color: var(--text-muted, #9a9a9a); padding: 20px; animation: pulse 1.4s ease-in-out infinite; }
-@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.45; } }
+@keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.72; } } /* 1.17.4: 0.45 dropped muted text to 2.6:1 */
 @media (prefers-reduced-motion: reduce) { .loading { animation: none; } }
 .empty-state { text-align: center; padding: 20px 16px; color: var(--text-secondary, #c9c9c9); }
 .empty-state p { margin: 4px 0; }
@@ -1230,6 +1230,10 @@ body { font-size: 1rem; }
   box-shadow: 0 4px 14px rgba(0,0,0,0.35);
 }
 .next-dep-pill[hidden] { display: none; }
+/* 1.17.4 (visual sweep): with the pill up, toasts rise above it, and the page
+   gets room so the last trip card can scroll clear of it */
+body:has(.next-dep-pill:not([hidden])) .toast-holder { bottom: calc(128px + env(safe-area-inset-bottom)); }
+body:has(.next-dep-pill:not([hidden])) main { padding-bottom: 64px; }
 @media (prefers-reduced-motion: reduce) { .day-page:active { transform: none; } }
 .day-head {
   margin: 20px 0 4px; padding: 6px 0 2px;
