@@ -16,7 +16,9 @@ import { readSynced, applySynced, onUserWrite, SYNC_KEYS } from './store.js';
 const FB = 'https://www.gstatic.com/firebasejs/11.10.0/';
 const CONFIG = {
   apiKey: 'AIzaSyDCw8T-vnp1CRBl6h9wPSQMA_mWlc4kHrI',
-  authDomain: 'mango-blueline-2026.firebaseapp.com',
+  // same-site auth helper (nginx proxies /__/ to mango-blueline-2026.firebaseapp.com): Chrome's storage
+  // partitioning broke the cross-site hand-off with "missing initial state" on Android (2026-11-19)
+  authDomain: 'it.mangonese.dev',
   projectId: 'mango-blueline-2026',
   appId: '1:350555083236:web:97fdff85b58eed44f2f7f1',
 };

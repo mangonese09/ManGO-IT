@@ -1,12 +1,12 @@
 // ── SERVICE WORKER ──
 // App shell cache-first; /api/* never cached here (js/api.js owns API caching
 // with staleness stamps). Bump CACHE on every deploy.
-const CACHE = 'mangoit-v1181';
+const CACHE = 'mangoit-v1182';
 const SHELL = [
   '/',
   '/index.html',
-  '/css/styles.css?v=1.18.1',
-  '/js/app.js?v=1.18.1',
+  '/css/styles.css?v=1.18.2',
+  '/js/app.js?v=1.18.2',
   '/js/api.js',
   '/js/board.js',
   '/js/itinerary.js',
@@ -90,6 +90,7 @@ self.addEventListener('fetch', (e) => {
   const url = new URL(e.request.url);
   if (e.request.method !== 'GET' || url.pathname.startsWith('/api/')) return;
   if (url.pathname === '/version.json') return; // update checks must hit network
+  if (url.pathname.startsWith('/__/')) return; // Firebase sign-in helper pages: never cached
   e.respondWith(
     caches.match(e.request, { ignoreSearch: false }).then((hit) => hit ||
       // Module cache-misses revalidate with the SERVER (v1.5.1): nginx serves
