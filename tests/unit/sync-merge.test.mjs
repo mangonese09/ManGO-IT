@@ -62,3 +62,16 @@ test('an item both sides hold keeps this phone’s version (an icon changed here
 test('lists missing on either side read as empty, never as an error', () => {
   assert.deepEqual(keys(merge3({ places: [P('a')] }, {}, null)), { places: ['a'], favstops: [], favlines: [] });
 });
+
+// 1.18.4: redirect sign-in — Google must send the token back to the one
+// registered return address, as a fragment, bound to this round trip.
+test('Google sign-in URL: registered return address, id_token, state + nonce', async () => {
+  const { googleAuthUrl } = await import('../../js/sync.js');
+  const u = new URL(googleAuthUrl('st8', 'n0nce', 'https://it.mangonese.dev'));
+  assert.equal(u.origin + u.pathname, 'https://accounts.google.com/o/oauth2/v2/auth');
+  assert.equal(u.searchParams.get('redirect_uri'), 'https://it.mangonese.dev/__/auth/handler');
+  assert.equal(u.searchParams.get('response_type'), 'id_token');
+  assert.equal(u.searchParams.get('state'), 'st8');
+  assert.equal(u.searchParams.get('nonce'), 'n0nce');
+  assert.match(u.searchParams.get('scope'), /openid/);
+});
