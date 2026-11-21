@@ -276,7 +276,7 @@ export async function openStopSchedule(s) {
       };
       const rowEl = (r, short) => el('div', { class: `sched-row${r.past ? ' sched-past' : ''}${r.cancelled ? ' sched-cancelled' : ''}` }, [
         el('strong', { class: 'sched-time', text: r.time }),
-        modeIcon(r.mode, 'mode-img mode-img-sm'),
+        modeIcon(r.mode, 'mode-img mode-img-sm', r.label),
         el('span', { class: 'sched-label', text: short ? r.label.split(' → ')[0] : r.label }),
         r.live ? el('span', { class: 'badge badge-live', text: 'live' }) : null,
         r.cancelled ? el('span', { class: 'badge badge-cancel', text: 'CANCELLED' }) : null,
@@ -457,7 +457,7 @@ export async function openHubBoard(hub) {
       }
       const cells = [
         el('strong', { class: 'sched-time', text: romeTime(r.timeISO) }),
-        modeIcon(r.mode, 'mode-img mode-img-sm'),
+        modeIcon(r.mode, 'mode-img mode-img-sm', r.line),
         lbl,
         r.realtime ? el('span', { class: 'badge badge-live', text: 'live' }) : null,
         el('span', { class: 'dep-count', text: past ? '' : countdownText(r.timeISO) }),
@@ -559,7 +559,7 @@ async function favLineCard(l) {
   const title = routeLabel(cleanRouteName(l.line), displayName(l.headsign));
   const card = el('div', { class: 'card fav-stop-card' }, [
     el('div', { class: 'fav-stop-head fav-stop-tap' }, [
-      modeIcon(l.mode),
+      modeIcon(l.mode, 'mode-img', l.line),
       el('div', { class: 'dep-main' }, [
         el('button', { class: 'dep-route row-hit', type: 'button', text: title,
           onclick: () => openStopSchedule(l.mode === 'BUS'
@@ -1021,7 +1021,7 @@ export async function renderSaved() {
     const cancelled = updated?.cancelled;
     const m = modeMeta(d.mode);
     pinnedCard.appendChild(el('div', { class: 'dep-row saved-row' }, [
-      el('span', { class: 'dep-mode' }, [modeIcon(d.mode)]),
+      el('span', { class: 'dep-mode' }, [modeIcon(d.mode, 'mode-img', d.routeShortName)]),
       el('div', { class: 'dep-main' }, [
         el('span', { class: 'dep-route', text: `${d.routeShortName || m.label} ${d.headsign ? '→ ' + displayName(d.headsign) : ''}` }),
         el('span', { class: 'muted dep-headsign', text: `${displayName(d.stopName)}${isOtherRomeDay(when) ? ' · ' + romeDay(when) : ''}` }),

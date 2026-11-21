@@ -44,7 +44,14 @@ const MODE_IMG = {
   bus: '/icons/modes/bus.png',
   walk: '/icons/modes/pedestrian.png',
 };
-export function modeIcon(mode, cls = 'mode-img') {
+// Some feeds file Palermo's tram lines (TRAM1…) as buses; the line name is the
+// better witness, so a bus-moded "TRAM n" line is drawn as the tram it is.
+export function effectiveMode(mode, name) {
+  if (!/WALK|RAIL|TRAM|METRO|SUBWAY|FERRY|LONG_DISTANCE/.test(mode || '') && /^s*trams*d/i.test(name || '')) return 'TRAM';
+  return mode;
+}
+export function modeIcon(mode, cls = 'mode-img', name) {
+  mode = effectiveMode(mode, name);
   const kind = mode === 'WALK' ? 'walk'
     : (isRailMode(mode) || mode === 'TRAM') ? 'rail'
     : mode === 'FERRY' ? null : 'bus';
@@ -85,7 +92,8 @@ export function placeIcon(key, cls = 'place-icon-img') {
 // Five fixed mode colors (audit P2, competitive §7): consistency beats
 // operator branding at 44+ tiny operators. Always paired with the glyph —
 // color alone never carries the meaning.
-export function modeClass(mode) {
+export function modeClass(mode, name) {
+  mode = effectiveMode(mode, name);
   if (isRailMode(mode) && /METRO|SUBWAY|TRAM/.test(mode)) return 'mode-tram';
   if (isRailMode(mode)) return 'mode-rail';
   if (mode === 'FERRY') return 'mode-ferry';

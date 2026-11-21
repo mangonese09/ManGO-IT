@@ -125,7 +125,8 @@ try { migrateStorage(); } catch { /* a broken storage layer must never block boo
 
 // ── settings ──
 export function getSettings() {
-  return Object.assign({ theme: 'dark' }, read('settings', {}));
+  // no saved theme = follow the phone (first launch used to open dark regardless)
+  return Object.assign({ theme: 'system' }, read('settings', {}));
 }
 export function patchSettings(patch) {
   write('settings', Object.assign(getSettings(), patch));

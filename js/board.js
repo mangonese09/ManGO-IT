@@ -164,7 +164,7 @@ function lineRow(line) {
   // two directions max on the row, soonest first — more is noise
   const dirs = [...line.dirs.entries()].sort((a, b) => a[1].when - b[1].when).slice(0, 2);
   return el('div', { class: 'line-row' }, [
-    el('span', { class: `dep-mode line-mode ${modeClass(line.mode)}` }, [modeIcon(line.mode)]),
+    el('span', { class: `dep-mode line-mode ${modeClass(line.mode, line.route)}` }, [modeIcon(line.mode, 'mode-img', line.route)]),
     el('div', { class: 'line-main' }, [
       el('div', { class: 'line-name' }, [
         el('strong', { text: line.route || m.label }),

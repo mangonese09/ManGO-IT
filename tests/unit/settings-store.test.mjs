@@ -120,5 +120,5 @@ test('clearAllAppData erases everything under the namespace', () => {
   store.clearAllAppData();
   assert.strictEqual(store.getFavStops().length, 0);
   assert.strictEqual(store.getPlaces().length, 0);
-  assert.strictEqual(store.getSettings().theme, 'dark'); // back to default
+  assert.strictEqual(store.getSettings().theme, 'system'); // back to default: follow the phone
 });

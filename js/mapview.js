@@ -648,9 +648,9 @@ function applyFilter() {
 }
 
 // ── CLICK-TO-HIGHLIGHT ROUTES ──
-const ROUTE_COLORS = { COACH: '#ffb454', BUS: '#46c878', RAIL: '#4a90e2', REGIONAL_RAIL: '#4a90e2',
+const ROUTE_COLORS = { COACH: '#f0a500', BUS: '#46c878', RAIL: '#4a90e2', REGIONAL_RAIL: '#4a90e2',
   HIGHSPEED_RAIL: '#4a90e2', LONG_DISTANCE: '#4a90e2', TRAM: '#e267c8', METRO: '#e2a04a', SUBWAY: '#e2a04a', FERRY: '#2ac0c0' };
-function routeColor(mode, i) { return ROUTE_COLORS[mode] || ['#ffb454', '#46c878', '#4a90e2', '#e267c8', '#e2a04a'][i % 5]; }
+function routeColor(mode, i) { return ROUTE_COLORS[mode] || ['#f0a500', '#46c878', '#4a90e2', '#e267c8', '#e2a04a'][i % 5]; }
 function modeLabel(mode) {
   if (/RAIL|LONG_DISTANCE/.test(mode || '')) return 'train';
   if (mode === 'COACH') return 'coach';

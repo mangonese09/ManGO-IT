@@ -1587,7 +1587,7 @@ function itineraryCard(it) {
       longWait ? el('span', { class: 'chip chip-wait', text: transferChipText(longest, 'calm') }) : null,
       tier === 'tight' || tier === 'risky' ? el('span', { class: `chip chip-xfer-${tier}`, text: transferChipText(worst, tier) }) : null,
       cardFareText(it),
-      liveBadge(anyLive),
+      anyLive ? liveBadge(true) : null,
     ]),
     dupe ? el('div', { class: 'iti-note muted', text: dupeWalk > 400
       ? `Same ${dupe.dep} coach as “Faster by coach” above. Walk ${walkMin(dupeWalk)} min instead to skip the bus change.`
@@ -1669,7 +1669,7 @@ function openItineraryDetail(it) {
   const body = el('div', { class: 'iti-detail' });
   body.appendChild(el('div', { class: 'iti-detail-head' }, [
     el('strong', { text: `${romeTime(it.startTime)} → ${romeTime(it.endTime)}${plusTag(dayDiff(it.startTime, it.endTime))}` }),
-    el('span', { class: 'muted', text: ` · ${durationText(it.duration)} · ${romeDay(it.startTime)}` }),
+    el('span', { class: 'muted', text: `${durationText(it.duration)} · ${romeDay(it.startTime)}` }),
     // F-7: every itinerary pairs with its map (Google/Apple convention) — the
     // tracer draws each leg's real geometry, so this is a jump, not a rebuild
     el('button', {
@@ -1758,11 +1758,12 @@ function renderTransitLeg(leg, idx, opsSeen = new Set(), opCounts = {}) {
   const railBus = isRailReplacement(leg);
   wrap.appendChild(el('div', { class: 'leg-head' }, [
     el('span', { class: 'leg-route' }, [
-      modeIcon(leg.mode, 'mode-img mode-img-sm'),
+      modeIcon(leg.mode, 'mode-img mode-img-sm', leg.routeShortName || leg.displayName),
       el('span', { text: ` ${railBus ? 'Rail replacement bus' : (directionalRouteName(leg.displayName || leg.routeShortName || '', leg.headsign || leg.to?.name) || m.label)}` }),
     ]),
     railBus ? el('span', { class: 'badge badge-railbus', text: 'REPLACEMENT' }) : null,
-    liveBadge(leg.realTime),
+    // one status per leg: teal "live" when real-time data exists, else nothing
+    leg.realTime ? liveBadge(true) : null,
     leg.cancelled ? el('span', { class: 'badge badge-cancel', text: 'CANCELLED' }) : null,
     railBus ? null : fareChipEl(op, leg), // rail-replacement rides the train ticket — no separate fare
   ]));
@@ -1782,19 +1783,26 @@ function renderTransitLeg(leg, idx, opsSeen = new Set(), opCounts = {}) {
   if (isRailMode(leg.mode) && /trenitalia/i.test(leg.agencyName || '')) {
     const trainNr = (leg.tripShortName || leg.displayName || '').replace(/\D/g, '');
     if (trainNr) {
-      const slot = el('div', { class: 'leg-live muted', text: 'Checking live status…' });
+      // No placeholder text: the leg shows no status until live data arrives,
+      // then the header gains the one "live" badge and this row the delay.
+      const slot = el('div', { class: 'leg-live muted', 'aria-live': 'polite' });
       wrap.appendChild(slot);
       api.vtLive(trainNr).then(({ data }) => {
-        slot.innerHTML = '';
-        if (!data.live) { slot.textContent = 'No live data for this train yet.'; return; }
+        slot.textContent = '';
+        if (!data || !data.live) { slot.remove(); return; }
+        const head = wrap.querySelector('.leg-head');
+        if (head && !head.querySelector('.badge-live')) {
+          head.insertBefore(liveBadge(true), head.querySelector('.leg-route').nextSibling);
+        }
         if (data.cancelled) { slot.appendChild(el('span', { class: 'badge badge-cancel', text: 'CANCELLED' })); return; }
         const d = data.delayMin;
-        slot.appendChild(el('span', {
+        if (d !== null) slot.appendChild(el('span', {
           class: `delay ${d > 4 ? 'delay-bad' : d > 0 ? 'delay-mid' : 'delay-ok'}`,
-          text: d === null ? 'live' : d <= 0 ? 'on time' : `+${d} min`,
+          text: d <= 0 ? 'on time' : `+${d} min`,
         }));
-        if (data.lastSeenStation) slot.appendChild(el('span', { class: 'muted', text: ` · last seen at ${data.lastSeenStation}` }));
-      }).catch(() => { slot.textContent = 'Live status unavailable.'; });
+        if (data.lastSeenStation) slot.appendChild(el('span', { class: 'muted', text: `${d !== null ? ' · ' : ''}last seen at ${data.lastSeenStation}` }));
+        if (!slot.childNodes.length) slot.remove();
+      }).catch((e) => { console.warn('vtLive', e); slot.remove(); });
     }
   }
 
