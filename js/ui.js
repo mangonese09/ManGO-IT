@@ -47,7 +47,7 @@ const MODE_IMG = {
 // Some feeds file Palermo's tram lines (TRAM1…) as buses; the line name is the
 // better witness, so a bus-moded "TRAM n" line is drawn as the tram it is.
 export function effectiveMode(mode, name) {
-  if (!/WALK|RAIL|TRAM|METRO|SUBWAY|FERRY|LONG_DISTANCE/.test(mode || '') && /^s*trams*d/i.test(name || '')) return 'TRAM';
+  if (!/WALK|RAIL|TRAM|METRO|SUBWAY|FERRY|LONG_DISTANCE/.test(mode || '') && /^\s*tram\s*\d/i.test(name || '')) return 'TRAM';
   return mode;
 }
 export function modeIcon(mode, cls = 'mode-img', name) {

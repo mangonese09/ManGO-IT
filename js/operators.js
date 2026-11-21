@@ -151,6 +151,14 @@ export function operatorFor(agencyName) {
   return OPERATORS.find((o) => (o.test ? o.test(n) : o.match.some((m) => n.includes(m)))) || null;
 }
 
+// Short operator name for a card label: "SAIS Trasporti / SAIS Autolinee" →
+// "SAIS", "Autolinee Lumia" → "Lumia", "AMAT Palermo" → "AMAT".
+export function shortOperator(name) {
+  const n = String(name || '').split(/\s+(?:—|\/|&)\s+/)[0].trim().replace(/^Autolinee\s+/i, '');
+  const caps = n.split(/\s+/).find((w) => /^[A-Z]{2,}$/.test(w));
+  return caps || n;
+}
+
 // ── FARE RENDERING HELPERS (pure, unit-tested) ──
 export function eur(n) { return `€${Number(n).toFixed(2)}`; }
 

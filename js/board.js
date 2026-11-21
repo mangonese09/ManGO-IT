@@ -7,7 +7,7 @@ import { api } from './api.js';
 import { el, modeMeta, modeClass, modeIcon, staleChip } from './ui.js';
 import { countdownText, romeTime } from './time.js';
 import { displayName, railReplacementLabel } from './names.js';
-import { saveDeparture, isSaved } from './store.js';
+import { saveDeparture, isSaved, removeSaved, addFavLine, removeFavLine, isFavLine } from './store.js';
 import { toast } from './toast.js';
 
 let refreshTimer = null;
@@ -174,25 +174,58 @@ function lineRow(line) {
   ]);
 }
 
+// 1.18.7: the ☆ on a bus/tram line saves the LINE at this stop (a Saved
+// "Lines" card with its next times) and taps off again; a train is a numbered
+// run, so its ☆ pins that one departure, which drops out of Saved once gone.
+// Every star is named by what it saves; the row itself opens the stop board.
 function directionLine(headsign, { st, stop }) {
-  const id = `${st.tripId || st.routeShortName}@${st.stopId}@${st.scheduledDeparture}`;
-  const pinBtn = el('button', {
-    class: `pin-btn${isSaved(id) ? ' pinned' : ''}`,
-    'aria-label': 'Pin this departure', 'aria-pressed': String(isSaved(id)),
-    text: isSaved(id) ? '★' : '☆',
-    onclick: (e) => {
-      e.stopPropagation();
-      const ok = saveDeparture({
-        id, stopId: st.stopId, stopName: st.stopName, mode: st.mode,
+  const when = st.departure || st.scheduledDeparture;
+  const route = (st.routeShortName || '').trim();
+  const dest = headsign ? displayName(headsign) : '';
+  const isRail = /RAIL|LONG_DISTANCE|HIGHSPEED/.test(st.mode || '');
+  const lineKey = `BUS|${route}|${(st.headsign || '').trim()}`;
+  const pinId = `${st.tripId || st.routeShortName}@${st.stopId}@${st.scheduledDeparture}`;
+  const canLine = !isRail && route && st.stopId;
+  const isOn = () => (canLine ? isFavLine(lineKey) : isSaved(pinId));
+  const what = canLine
+    ? `line ${route}${dest ? ` to ${dest}` : ''} at ${displayName(stop.name)}`
+    : `the ${romeTime(when)} ${route || modeMeta(st.mode).label}${dest ? ` to ${dest}` : ''}`;
+  const pinBtn = el('button', { class: 'pin-btn', type: 'button' });
+  const paint = () => {
+    const on = isOn();
+    pinBtn.textContent = on ? '★' : '☆';
+    pinBtn.classList.toggle('pinned', on);
+    pinBtn.setAttribute('aria-pressed', String(on));
+    pinBtn.setAttribute('aria-label', `Save ${what}`);
+  };
+  pinBtn.onclick = (e) => {
+    e.stopPropagation();
+    if (isOn()) {
+      if (canLine) removeFavLine(lineKey); else removeSaved(pinId);
+      toast('Removed from Saved', 'info', 1400);
+    } else if (canLine) {
+      addFavLine({ key: lineKey, mode: 'BUS', iconMode: st.mode, line: route, headsign: (st.headsign || '').trim(), stopId: st.stopId, stopName: stop.name || st.stopName || '' });
+      toast('Line saved — Saved tab', 'info', 1600);
+    } else {
+      saveDeparture({
+        id: pinId, stopId: st.stopId, stopName: st.stopName, mode: st.mode,
         routeShortName: st.routeShortName, headsign: st.headsign,
         agencyName: st.agencyName, tripId: st.tripId,
-        when: st.departure || st.scheduledDeparture, realTime: st.realTime,
+        when, realTime: st.realTime,
       });
-      if (ok) { pinBtn.textContent = '★'; pinBtn.classList.add('pinned'); pinBtn.setAttribute('aria-pressed', 'true'); toast('Pinned to Saved', 'info', 1500); }
-    },
-  });
+      toast('Pinned to Saved', 'info', 1500);
+    }
+    paint();
+  };
+  paint();
+  const openBoard = async () => {
+    const { openStopSchedule } = await import('./saved.js');
+    openStopSchedule({ name: stop.name, stopId: stop.stopId, lat: stop.lat, lon: stop.lon, modes: stop.modes });
+  };
   return el('div', { class: 'line-dir' }, [
-    el('span', { class: 'line-headsign muted', text: headsign ? `→ ${displayName(headsign)}` : '→ …' }),
+    el('button', { class: 'line-headsign muted row-hit', type: 'button', onclick: openBoard,
+      'aria-label': `${route || modeMeta(st.mode).label}${dest ? ` to ${dest}` : ''}, ${romeTime(when)} from ${displayName(stop.name)}. Open stop board`,
+      text: dest ? `→ ${dest}` : '→ …' }),
     el('span', { class: 'line-stop muted', text: `${displayName(stop.name)} · ${stop.dist} m` }),
     el('div', { class: 'dep-when' }, [
       el('span', { class: `dep-count${st.realTime ? ' is-live' : ''}`, text: countdownText(st.departure || st.scheduledDeparture) }),

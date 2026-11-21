@@ -1,9 +1,9 @@
 // ── SAVED (favorite stops + pinned departures) ──
 import { api } from './api.js';
-import { el, staleChip, modeMeta, modeIcon, confirmModal, openSheet, closeSheet, placeIcon, placeIconKey, PLACE_ICONS, LENS_SVG } from './ui.js';
+import { el, liveBadge, staleChip, modeMeta, modeIcon, confirmModal, openSheet, closeSheet, placeIcon, placeIconKey, PLACE_ICONS, LENS_SVG } from './ui.js';
 import { romeTime, romeDay, countdownText, isOtherRomeDay, romeWallToIso, deviceZoneGap } from './time.js';
 import { getSaved, purgeSaved, removeSaved, getFavStops, addFavStop, removeFavStop, isFavStop, getFavLines, addFavLine, removeFavLine, isFavLine, getPlacesSorted, addPlace, removePlace, setHomePlace, setPlaceIcon } from './store.js';
-import { cleanRouteName } from './names.js';
+import { cleanRouteName, shortRouteName } from './names.js';
 import { toast } from './toast.js';
 import { displayName, railReplacementLabel } from './names.js';
 import { classifySuggestion, routeToPlace } from './search.js';
@@ -242,13 +242,13 @@ export async function openStopSchedule(s) {
         if (forDate !== activeDate) return;
         rows = (data.results || []).filter((r) => forDate || r.day !== 'tomorrow').map((r) => ({
           time: r.dep, mode: 'COACH',
-          label: routeLabel(displayName(r.route), displayName(r.headsign)),
+          label: routeLabel(shortRouteName(r.route), displayName(r.headsign)),
           dir: displayName(r.headsign),
           past: !forDate && r.depMin < romeNowMin(),
           depMin: r.depMin,
         }));
         note = forDate ? 'Complete coach timetable for that day — scheduled times, no live status.'
-          : 'Complete coach timetable for today, including already-departed runs (dimmed) — scheduled times, no live status.';
+          : 'Complete coach timetable for today — scheduled times, no live status.';
       }
       content.innerHTML = '';
       // a board of bare clock times is the other place the Rome/device gap reads
@@ -260,11 +260,10 @@ export async function openStopSchedule(s) {
         content.appendChild(el('p', { class: 'muted', text: forDate ? 'No departures that day.' : 'No departures today.' }));
         return;
       }
-      // Group by direction (headsign): a parent/bidirectional stop returns BOTH
-      // ways of a line; interleaved by time it reads as if you could board
-      // either here — split into per-direction sections instead.
-      // Right-aligned countdown on today's upcoming rows — same readout as the
-      // hub board, so "how soon" doesn't require clock math against Rome time.
+      // 1.18.7: the same time-first board as a map hub. One row per line and
+      // direction (the label carries the headsign), the bold clock and the
+      // countdown are the NEXT run, following runs read "then 06:05 · 06:35".
+      // Departed coach runs fold into an "Earlier today" disclosure.
       const rowCountdown = (r) => {
         if (forDate || r.past || r.cancelled) return '';
         if (r.iso) return isOtherRomeDay(r.iso) ? '' : countdownText(r.iso);
@@ -274,56 +273,41 @@ export async function openStopSchedule(s) {
         if (diff <= 1) return 'now';
         return diff < 60 ? `${diff} min` : `${Math.floor(diff / 60)}h ${diff % 60}m`;
       };
-      const rowEl = (r, short) => el('div', { class: `sched-row${r.past ? ' sched-past' : ''}${r.cancelled ? ' sched-cancelled' : ''}` }, [
-        el('strong', { class: 'sched-time', text: r.time }),
-        modeIcon(r.mode, 'mode-img mode-img-sm', r.label),
-        el('span', { class: 'sched-label', text: short ? r.label.split(' → ')[0] : r.label }),
-        r.live ? el('span', { class: 'badge badge-live', text: 'live' }) : null,
-        r.cancelled ? el('span', { class: 'badge badge-cancel', text: 'CANCELLED' }) : null,
-        el('span', { class: 'dep-count', text: rowCountdown(r) }),
-      ]);
-      // The selected day renders grouped by direction. The later-days tail
-      // (day-headed rows) exists for SPARSE stops, where "next 40" spans weeks
-      // and today alone would read as a dead stop — at a stop with a healthy
-      // board it just duplicated the Tomorrow chip, so it only renders when
-      // today is thin.
+      const rowEl = (r, rest = []) => {
+        const lbl = el('div', { class: 'sched-label2' }, [el('span', { class: 'sl-main', text: r.label })]);
+        if (rest.length) lbl.appendChild(el('span', { class: 'sl-via muted', text: thenText(rest.map((x) => x.time)) }));
+        return el('div', { class: `sched-row${r.past ? ' sched-past' : ''}${r.cancelled ? ' sched-cancelled' : ''}` }, [
+          el('strong', { class: 'sched-time', text: r.time }),
+          modeIcon(r.mode, 'mode-img mode-img-sm', r.label),
+          lbl,
+          r.live ? liveBadge(true) : null,
+          r.cancelled ? el('span', { class: 'badge badge-cancel', text: 'CANCELLED' }) : null,
+          el('span', { class: 'dep-count', text: rowCountdown(r) }),
+        ]);
+      };
+      // The later-days tail exists for SPARSE stops, where "next 40" spans
+      // weeks and today alone would read as a dead stop; at a healthy stop it
+      // duplicated the Tomorrow chip, so it only renders when today is thin.
       const dayRows = rows.filter((r) => !r.iso || !isOtherRomeDay(r.iso) || forDate);
       const later = (forDate || dayRows.length >= 5) ? [] : rows.filter((r) => r.iso && isOtherRomeDay(r.iso)).slice(0, 10);
-      // F-2: within a direction, one row per line with every run's clock on a
-      // wrapped times line (paper-timetable style) — the bold clock and the
-      // countdown always describe the NEXT departure, not the first of the day.
-      const renderGroup = (g, short) => {
-        const runs = [g.first, ...g.rest];
-        const nxt = runs.find((x) => !x.past) || g.first;
-        const row = rowEl({ ...nxt, past: runs.every((x) => x.past) }, short);
-        content.appendChild(row);
-        if (runs.length > 1) {
-          const wrap = el('div', { class: 'sched-times' });
-          for (const x of runs) {
-            wrap.appendChild(el('span', {
-              class: `sched-t${x.past ? ' sched-past' : ''}${x === nxt ? ' sched-t-next' : ''}`, text: x.time,
-            }));
-          }
-          content.appendChild(wrap);
-        }
-      };
-      const grouped = (list2) => groupRuns(list2, (x) => x.label, (x) => !x.live && !x.cancelled);
-      const dirs = [];
-      for (const r of dayRows) { if (r.dir && !dirs.includes(r.dir)) dirs.push(r.dir); }
-      if (dirs.length > 1) {
-        for (const d of dirs) {
-          content.appendChild(el('div', { class: 'sched-dir', text: `→ ${d}` }));
-          for (const g of grouped(dayRows.filter((x) => x.dir === d))) renderGroup(g, true);
-        }
-      } else {
-        for (const g of grouped(dayRows)) renderGroup(g, false);
+      const earlier = dayRows.filter((r) => r.past);
+      const upcoming = dayRows.filter((r) => !r.past);
+      if (earlier.length) {
+        const box = el('div', { class: 'sched-earlier', hidden: 'hidden' });
+        for (const r of earlier) box.appendChild(rowEl(r));
+        const tog = el('button', { class: 'stops-toggle sched-earlier-toggle', type: 'button', 'aria-expanded': 'false',
+          text: `Earlier today (${earlier.length})`,
+          onclick: () => { const open = box.hidden; box.hidden = !open; tog.setAttribute('aria-expanded', String(open)); } });
+        content.appendChild(tog);
+        content.appendChild(box);
       }
-      if (!dayRows.length && !forDate) content.appendChild(el('p', { class: 'muted', text: 'No more departures today.' }));
+      for (const g of groupRuns(upcoming, (x) => x.label, (x) => !x.live && !x.cancelled)) content.appendChild(rowEl(g.first, g.rest));
+      if (!upcoming.length && !forDate) content.appendChild(el('p', { class: 'muted', text: 'No more departures today.' }));
       let lastDay = null;
       for (const r of later) {
         const day = romeDay(r.iso);
         if (day !== lastDay) { content.appendChild(el('div', { class: 'sched-dir sched-day', text: day })); lastDay = day; }
-        content.appendChild(rowEl(r, false));
+        content.appendChild(rowEl(r));
       }
     } catch {
       if (forDate !== activeDate) return;
@@ -438,7 +422,7 @@ export async function openHubBoard(hub) {
       const r = g.first;
       const line = (r.line || '').trim().toUpperCase() === 'BUS' || !(r.line || '').trim()
         ? (railReplacementLabel(r.mode, r.tripId, r.line) || (r.line || '').trim() || modeMeta(r.mode).label)
-        : (r.line || '').trim();
+        : r.mode === 'COACH' ? shortRouteName(r.line) : (r.line || '').trim();
       const head = displayName((r.headsign || '').trim());
       const past = typeof r.minutes === 'number' && r.minutes < 0;
       const lbl = el('div', { class: 'sched-label2' }, [
@@ -556,10 +540,10 @@ function lineFavButton(cand) {
   return btn;
 }
 async function favLineCard(l) {
-  const title = routeLabel(cleanRouteName(l.line), displayName(l.headsign));
+  const title = routeLabel(shortRouteName(l.line), displayName(l.headsign));
   const card = el('div', { class: 'card fav-stop-card' }, [
     el('div', { class: 'fav-stop-head fav-stop-tap' }, [
-      modeIcon(l.mode, 'mode-img', l.line),
+      modeIcon(l.iconMode || l.mode, 'mode-img', l.line),
       el('div', { class: 'dep-main' }, [
         el('button', { class: 'dep-route row-hit', type: 'button', text: title,
           onclick: () => openStopSchedule(l.mode === 'BUS'
@@ -568,7 +552,7 @@ async function favLineCard(l) {
         el('span', { class: 'muted dep-headsign', text: `from ${displayName(l.stopName) || 'saved stop'}` }),
       ]),
       el('button', {
-        class: 'pin-btn pinned', text: '✕', 'aria-label': 'Remove line',
+        class: 'pin-btn pinned', text: '✕', 'aria-label': `Remove line ${title}`,
         onclick: async (e) => {
           e.stopPropagation();
           const ok = await confirmModal(`Remove ${cleanRouteName(l.line)} from your lines?`, { confirmText: 'Remove' });
@@ -681,7 +665,7 @@ function openCoachRoute(r, hubName) {
     el('span', { class: 'sched-label', text: displayName(r.stopName || hubName || 'This stop') }),
   ]));
   routeStopRows(body, r.via || []);
-  openSheet(body, { title: displayName((r.line || '').trim() || 'Coach route') });
+  openSheet(body, { title: shortRouteName((r.line || '').trim()) || 'Coach route' });
 }
 
 // Live status for one train off a hub board row — delay, last seen, the
@@ -779,7 +763,7 @@ async function favStopCard(s) {
         el('span', { class: 'muted dep-headsign', text: s.kind || 'stop' }),
       ]),
       el('button', {
-        class: 'pin-btn pinned', text: '★', 'aria-label': 'Remove from favorites',
+        class: 'pin-btn pinned', text: '★', 'aria-label': `Remove ${displayName(s.name)} from saved stops`,
         onclick: async (e) => {
           // the ★ lives inside the tappable card head — without this, one tap
           // opened the remove modal AND the schedule sheet stacked on top
@@ -814,7 +798,7 @@ async function favStopCard(s) {
     } else {
       const { data, stale, fetchedAt } = await api.coachBoard(s.lat, s.lon); fresh = { stale, fetchedAt };
       deps = (data.results || []).map((r) => ({
-        label: routeLabel(displayName(r.route), displayName(r.headsign)), iconMode: 'COACH',
+        label: routeLabel(shortRouteName(r.route), displayName(r.headsign)), iconMode: 'COACH',
         clock: r.dep + (r.day === 'tomorrow' ? ' (tomorrow)' : ''),
       }));
     }
@@ -933,7 +917,7 @@ function placeCard(p) {
         el('span', { class: 'muted dep-headsign', text: p.home ? 'Home — tap to go' : p.icon === 'work' ? 'Work — tap to go' : 'Tap to go' }),
       ]),
       el('button', {
-        class: 'pin-btn pinned', text: '✕', 'aria-label': 'Remove place',
+        class: 'pin-btn pinned', text: '✕', 'aria-label': `Remove place ${p.label || displayName(p.name)}`,
         onclick: async () => {
           const ok = await confirmModal(`Remove ${displayName(p.name)}?`, { confirmText: 'Remove' });
           if (ok) { removePlace(p.key); renderSaved(); }
@@ -1009,13 +993,29 @@ export async function renderSaved() {
     } catch { /* stale times still render below */ }
   }));
 
+  // 1.18.7: a pinned run that has left (live time when known) drops out —
+  // it lingered for a day and couldn't be acted on
+  const nowMs = Date.now();
+  const live = items.filter((d) => {
+    const up = d.tripId ? fresh.get(`${d.tripId}@${d.stopId}`) : null;
+    const t = new Date(up?.departure || d.when || 0).getTime();
+    if (!t || t > nowMs - 60000) return true;
+    removeSaved(d.id); return false;
+  });
+  if (!live.length) {
+    if (!favs.length) holder.appendChild(el('div', { class: 'empty-state' }, [
+      el('p', { text: 'Nothing pinned yet.' }),
+      el('p', { class: 'muted', text: 'Search above to add a stop, or tap ☆ on any departure on the Home board.' }),
+    ]));
+    return;
+  }
   // pinned rows get the same card surface as the favorite stops above them
   const pinnedCard = el('div', { class: 'card saved-pinned-card' }, [
     el('div', { class: 'muted dep-headsign', text: 'Pinned departures' }),
   ]);
   holder.appendChild(pinnedCard);
 
-  for (const d of items.sort((a, b) => new Date(a.when || 0) - new Date(b.when || 0))) {
+  for (const d of live.sort((a, b) => new Date(a.when || 0) - new Date(b.when || 0))) {
     const updated = d.tripId ? fresh.get(`${d.tripId}@${d.stopId}`) : null;
     const when = updated?.departure || d.when;
     const cancelled = updated?.cancelled;
@@ -1033,7 +1033,8 @@ export async function renderSaved() {
         el('span', { class: 'dep-clock muted', text: romeTime(when) }),
       ]),
       el('button', {
-        class: 'pin-btn pinned', text: '★',
+        class: 'pin-btn pinned', text: '★', type: 'button',
+        'aria-label': `Unpin the ${romeTime(when)} ${d.routeShortName || m.label}${d.headsign ? ` to ${displayName(d.headsign)}` : ''}`,
         onclick: async () => {
           const ok = await confirmModal('Remove this pinned departure?', { confirmText: 'Remove' });
           if (ok) { removeSaved(d.id); renderSaved(); toast('Removed', 'info', 1200); }

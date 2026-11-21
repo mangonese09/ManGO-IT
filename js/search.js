@@ -4,7 +4,7 @@ import { el, modeMeta, modeClass, modeIcon, isRailMode, liveBadge, staleChip, op
 import { romeTime, romeDay, romeHour, dayPartKey, DAYPARTS, durationText, isOtherRomeDay, romeWallToIso, whenLabel, deviceZoneGap, romeNowInputValue } from './time.js';
 import { displayName, directionalRouteName } from './names.js';
 import { worstTransferMin, longestWaitMin, LONG_WAIT_MIN, transferTier, transferChipText, imminentText, legStripModel, groupByDaypart, plusTag, isRailReplacement, RESULT_FILTERS, matchesFilter, sameCoachAs, runsFromRequestedTime } from './itinerary.js';
-import { operatorFor, fareChip, fareSummary, eur } from './operators.js';
+import { operatorFor, fareChip, fareSummary, eur, shortOperator } from './operators.js';
 import { saisOdFare } from './fares-od.js';
 import { getRecents, pushRecent, removeRecent, getFavStops, addFavStop, removeFavStop, getSettings, getPlacesSorted, addPlace, removePlace, isPlace, getPref, setPref } from './store.js';
 import { getLastPos } from './board.js';
@@ -508,9 +508,23 @@ export function rankSuggestions(rows, q, origin) {
     return off * 100000 + nameRank * 10000 + (cityExact ? 0 : 5000)
       + boardRank * 1000 + poiRank * 100 + farRank * 10 + kindRank;
   };
-  return rows.map((r, i) => ({ r, i, sc: score(r) }))
+  const ranked = rows.map((r, i) => ({ r, i, sc: score(r) }))
     .sort((a, b) => a.sc - b.sc || a.i - b.i)
     .map((x) => x.r);
+  // 1.18.7: near-duplicates ("Agrigento (P.le Rosselli)" twice, from two
+  // feeds, metres apart) collapse to the better-ranked row: same letters once
+  // punctuation and case are gone, same family (stop vs place), within 250 m.
+  // "… Capolinea" / "… Fermata" are the same pole with a timetable word added
+  const norm = (s) => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+    .replace(/\b(capolinea|fermata)\b/g, '').replace(/[^a-z0-9]+/g, '');
+  const fam = (r) => ((r.type === 'STOP' || r.type === 'COACH_STOP') ? 'stop' : 'place');
+  const kept = [];
+  for (const r of ranked) {
+    const dup = kept.some((k) => norm(k.name) === norm(r.name) && fam(k) === fam(r)
+      && isFinite(k.lat) && isFinite(r.lat) && havM(k, r) < 250);
+    if (!dup) kept.push(r);
+  }
+  return kept;
 }
 
 // star a stop/station straight from the Home suggestions -> Saved favorites
@@ -519,18 +533,18 @@ export function suggestStar(r, kind) {
   const isFav = () => getFavStops().some((f) => f.key === key);
   const star = el('button', {
     class: `pin-btn suggest-star${isFav() ? ' pinned' : ''}`,
-    type: 'button', 'aria-label': 'Save stop', text: isFav() ? '★' : '☆',
+    type: 'button', 'aria-label': `Save stop ${displayName(r.name)}`, 'aria-pressed': String(isFav()), text: isFav() ? '★' : '☆',
     onclick: (e) => {
       e.stopPropagation();
       if (isFav()) {
         removeFavStop(key);
-        star.textContent = '☆'; star.classList.remove('pinned');
+        star.textContent = '☆'; star.classList.remove('pinned'); star.setAttribute('aria-pressed', 'false');
         toast('Removed from Saved', 'info', 1400);
       } else {
         const iconMode = r.type === 'COACH_STOP' ? 'COACH'
           : (r.modes || []).some((x) => /RAIL|LONG_DISTANCE/.test(x || '')) ? 'RAIL' : 'BUS';
         addFavStop({ key, name: r.name, kind, iconMode, stopId: r.type === 'STOP' ? r.id : null, lat: r.lat, lon: r.lon });
-        star.textContent = '★'; star.classList.add('pinned');
+        star.textContent = '★'; star.classList.add('pinned'); star.setAttribute('aria-pressed', 'true');
         toast('Saved — see the Saved tab', 'info', 1400);
       }
     },
@@ -544,16 +558,16 @@ export function placeStar(r) {
   const key = `${r.lat.toFixed(5)},${r.lon.toFixed(5)}`;
   const star = el('button', {
     class: `pin-btn suggest-star${isPlace(key) ? ' pinned' : ''}`,
-    type: 'button', 'aria-label': 'Save place', text: isPlace(key) ? '★' : '☆',
+    type: 'button', 'aria-label': `Save place ${displayName(r.name)}`, 'aria-pressed': String(isPlace(key)), text: isPlace(key) ? '★' : '☆',
     onclick: (e) => {
       e.stopPropagation();
       if (isPlace(key)) {
         removePlace(key);
-        star.textContent = '☆'; star.classList.remove('pinned');
+        star.textContent = '☆'; star.classList.remove('pinned'); star.setAttribute('aria-pressed', 'false');
         toast('Removed from places', 'info', 1400);
       } else {
         addPlace({ key, label: displayName(r.name), name: r.name, lat: r.lat, lon: r.lon });
-        star.textContent = '★'; star.classList.add('pinned');
+        star.textContent = '★'; star.classList.add('pinned'); star.setAttribute('aria-pressed', 'true');
         toast('Saved to places — Saved tab', 'info', 1400);
       }
     },
@@ -618,9 +632,13 @@ async function suggest(which, q) {
       const { iconEl, kind } = classifySuggestion(r);
       // context line: "what it is · town · province", never just an echo of
       // the name ("· Italia" is geocoder filler, not context — drop it)
+      // 1.18.7: "in <town>" so a row named Catania that sits in Trapani reads
+      // "address in Trapani", not the two-city "Catania · Trapani"
       const bits = [];
-      if (kind) bits.push(kind);
-      if (r.town && r.town !== 'Italia' && r.town.toLowerCase() !== r.name.toLowerCase()) bits.push(displayName(r.town));
+      const town = r.town && r.town !== 'Italia' && r.town.toLowerCase() !== r.name.toLowerCase() ? displayName(r.town) : '';
+      if (kind && town) bits.push(`${kind} in ${town}`);
+      else if (kind) bits.push(kind);
+      else if (town) bits.push(`in ${town}`);
       if (r.province && r.province !== r.town) bits.push(`prov. ${r.province}`);
       if (!bits.length && r.province) bits.push(`prov. ${r.province}`);
       // A star inside a <button> row is a control nested in a control. The row
@@ -1541,8 +1559,28 @@ function renderItineraries(itineraries, { stale, fetchedAt }) {
 function itineraryCard(it) {
   const transitLegs = it.legs.filter((l) => l.mode !== 'WALK');
 
-  const strip = el('div', { class: 'leg-strip' });
-  for (const seg of legStripModel(it.legs)) {
+  const model = legStripModel(it.legs);
+  // A bare trip code ("1170") says nothing: name the operator and the stop
+  // you board at instead ("SAIS · Via Fazello").
+  for (const seg of model) {
+    // 4+ digits only: city lines (AMAT 101, AMTS 421) are numbers people use
+    if (!seg.walk && /^\d{4,}$/.test(seg.label || '') && seg.agency) {
+      const op = operatorFor(seg.agency);
+      // "Palermo (Stazione - T.Bus Via Fazello)" → "Via Fazello"
+      const inner = (displayName(seg.from).match(/\(([^()]+)\)\s*$/) || [])[1] || displayName(seg.from);
+      const stop = inner.split(/\s[-–]\s/).pop().replace(/^T\.?\s?Bus\s+/i, '').trim();
+      seg.label = `${shortOperator(op?.name || seg.agency)}${stop ? ` · ${stop}` : ''}`;
+    }
+  }
+  const transitSegs = model.filter((s) => !s.walk);
+  // 1.18.7: one transit leg needs no proportional colour bar, just its name
+  const strip = transitSegs.length === 1
+    ? el('div', { class: 'leg-strip leg-single' }, [
+      modeIcon(transitSegs[0].mode, 'mode-img mode-img-sm', transitSegs[0].label),
+      el('span', { class: 'leg-single-label', text: transitSegs[0].label || modeMeta(transitSegs[0].mode).label }),
+    ])
+    : el('div', { class: 'leg-strip' });
+  for (const seg of transitSegs.length === 1 ? [] : model) {
     if (seg.walk) {
       strip.appendChild(seg.long
         ? el('span', { class: 'leg-walk-gap leg-walk-long' }, [modeIcon('WALK', 'mode-img mode-img-sm')])
@@ -1743,7 +1781,8 @@ function legExactFare(leg) {
 function fareChipEl(op, leg) {
   const od = legOdFare(leg);
   const c = od != null ? { state: 'exact', text: eur(od), sub: null } : fareChip(op);
-  if (!c) return null;
+  // "Price at booking" says nothing the How-to-buy block doesn't: no chip
+  if (!c || c.state === 'muted') return null;
   return el('span', { class: `chip fare-chip fare-${c.state}` }, [
     el('span', { text: c.text }),
     c.sub ? el('span', { class: 'fare-sub', text: ` · ${c.sub}` }) : null,

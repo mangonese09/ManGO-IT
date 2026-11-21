@@ -57,6 +57,24 @@ export function cleanRouteName(name) {
   return displayName(s);
 }
 
+// 1.18.7: coach lines are filed under their full terminus addresses
+// ("PACECO Viale Regina Margherita – PALERMO Viale dei Picciotti"). A label
+// needs the towns: keep each part's leading ALL-CAPS town run (the feeds
+// write the town in caps and the street in mixed case), else the text before
+// a parenthesis. Names that aren't place lists go through cleanRouteName.
+export function shortRouteName(name) {
+  const raw = String(name || '').trim();
+  if (!/\s[-–]\s|-\s*-/.test(raw)) return cleanRouteName(raw);
+  const parts = raw.replace(/\s*-\s*-\s*/g, ' - ').split(/\s+[-–]\s+/);
+  const short = parts.map((p) => {
+    const q = p.split('(')[0].trim();
+    const m = q.match(/^((?:[A-ZÀ-Ý'.]{2,}\s?)+?)\s+(?=[A-ZÀ-Ý][a-zà-ÿ])/);
+    // "S. Elisabetta" is a mixed-case town, not caps-town + street
+    return (m && /[A-ZÀ-Ý]{3,}/.test(m[1]) ? m[1] : q).trim();
+  }).filter(Boolean);
+  return cleanRouteName(short.join(' - '));
+}
+
 // A coach line is filed under ONE name for both directions, so the 18:00 from
 // Palermo to Agrigento rode a strip reading "Agrigento – Palermo". When the
 // name is a list of places and the run is heading for the FIRST of them, read
@@ -67,7 +85,7 @@ const placeKey = (s) => String(s || '').split('(')[0].toLowerCase()
 export function directionalRouteName(name, dest) {
   const raw = String(name || '');
   if (!/\s[-–]\s|-\s*-/.test(raw)) return raw; // "109", "REG 22012": not a place list
-  const clean = cleanRouteName(raw);
+  const clean = shortRouteName(raw);
   const parts = clean.split(' – ');
   const d = placeKey(dest);
   if (parts.length < 2 || !d) return clean;

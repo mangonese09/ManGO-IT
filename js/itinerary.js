@@ -148,6 +148,8 @@ export function legStripModel(legs) {
       label: isRailReplacement(l) ? 'Rail bus' : directionalRouteName(l.routeShortName || l.displayName || '', l.headsign || l.to?.name),
       pct: Math.max(8, Math.round(100 * (l.duration || 0) / total)),
       realTime: !!l.realTime,
+      agency: l.agencyName || '',
+      from: l.from?.name || '',
     });
   }
   while (out.length && out[0].walk && !out[0].long) out.shift();

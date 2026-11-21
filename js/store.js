@@ -152,7 +152,9 @@ export function removeSaved(id) {
 export function isSaved(id) { return getSaved().some((d) => d.id === id); }
 // Drop departures more than 24h gone.
 export function purgeSaved(now = Date.now()) {
-  const keep = getSaved().filter((d) => !d.when || new Date(d.when).getTime() > now - 24 * 3600 * 1000);
+  // scheduled time + 3 h grace (a late train can still be ahead of you); the
+  // Saved view then drops any run whose live time has passed
+  const keep = getSaved().filter((d) => !d.when || new Date(d.when).getTime() > now - 3 * 3600 * 1000);
   write('saved', keep);
   return keep;
 }

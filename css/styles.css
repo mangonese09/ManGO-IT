@@ -461,6 +461,8 @@ body.kb-open .bottom-nav { transform: translateY(100%); }
   font-weight: 600; font-size: 0.75rem; padding: 2px 8px; border-radius: 999px;
 }
 
+.leg-strip.leg-single { gap: 6px; margin: 8px 0 6px; min-height: 0; min-width: 0; font-size: 0.875rem; font-weight: 600; }
+.leg-single-label { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
 .leg-strip { display: flex; align-items: center; gap: 3px; margin: 10px 0 8px; min-height: 26px; }
 .leg-seg {
   display: inline-flex; align-items: center; justify-content: center; gap: 4px;
@@ -523,7 +525,9 @@ body.kb-open .bottom-nav { transform: translateY(100%); }
 .line-headsign { grid-area: headsign; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .line-stop { grid-area: stop; font-size: 0.75rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .line-dir .dep-when { grid-area: when; text-align: right; }
-.line-dir .pin-btn { grid-area: pin; }
+.line-dir .pin-btn { grid-area: pin; position: relative; z-index: 1; }
+.line-dir { position: relative; }
+.line-dir .dep-when { pointer-events: none; }
 
 /* ── mango mode icons (v0.7.1, from ManGO blueline) ── */
 .mode-img { width: 22px; height: 22px; object-fit: contain; vertical-align: middle; }
@@ -573,7 +577,7 @@ body.kb-open .bottom-nav { transform: translateY(100%); }
 .fav-stop-tap { cursor: pointer; }
 .sched-note { margin-bottom: 10px; }
 .sched-day { color: var(--mango-ink); border-top: 1px solid rgba(255,255,255,0.08); margin-top: 10px; padding-top: 10px; }
-.sched-dir { font-size: 0.75rem; font-weight: 700; letter-spacing: .02em; text-transform: uppercase;
+.sched-dir { font-size: 0.8125rem; font-weight: 700;
   color: var(--accent, #e0a63a); padding: 12px 2px 4px; border-bottom: 1px solid rgba(255,255,255,.06); margin-bottom: 2px; }
 .sched-dir:first-child { padding-top: 2px; }
 .sched-row {
