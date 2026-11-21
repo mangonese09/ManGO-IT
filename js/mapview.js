@@ -1493,12 +1493,34 @@ function openMapSearch() {
   });
 }
 
+// 1.18.8: the canvas ends 12px above the bottom nav wherever it starts. The
+// CSS calc assumed one row of filter chips; at large text sizes the chips wrap
+// and pushed the map (and its hint) under the nav, while at default size it
+// left an empty band. CSS height stays as the pre-script fallback.
+function fitMapHeight() {
+  const c = document.getElementById('map-canvas');
+  const nav = document.querySelector('.bottom-nav');
+  if (!c || !nav || !c.offsetParent) return;
+  // the hint sits above the attribution, which wraps at large text sizes
+  const attr = c.querySelector('.leaflet-control-attribution');
+  if (attr) c.style.setProperty('--attr-h', `${attr.offsetHeight}px`);
+  const h =Math.max(340, Math.round(nav.getBoundingClientRect().top - c.getBoundingClientRect().top - 12));
+  if (Math.abs(c.offsetHeight - h) > 1) {
+    c.style.height = `${h}px`;
+    if (map) map.invalidateSize();
+  }
+}
+if (typeof window !== 'undefined') {
+  let fitT = null;
+  window.addEventListener('resize', () => { clearTimeout(fitT); fitT = setTimeout(fitMapHeight, 120); });
+}
+
 export async function renderMapTab() {
   const holder = document.getElementById('map-list');
 
   if (map) {
     // returning to the tab: fix the size (was display:none), match the theme
-    requestAnimationFrame(() => { map.invalidateSize(); });
+    requestAnimationFrame(() => { fitMapHeight(); map.invalidateSize(); });
     ensureTiles();
     const pos = getLastPos();
     if (pos) showYou(pos);
@@ -1525,6 +1547,8 @@ export async function renderMapTab() {
     } catch { /* permissions API unavailable — start on the island view */ }
   }
   initMap(pos);
+  // the filter chips land above the canvas during init; size once they have
+  requestAnimationFrame(() => requestAnimationFrame(fitMapHeight));
 }
 
 // Offline / script-blocked fallback: the pre-M6 nearest-stops list.

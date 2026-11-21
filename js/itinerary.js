@@ -62,8 +62,11 @@ export function matchesFilter(it, key) {
     const n = Number.isInteger(it.transfers) ? it.transfers : legs.length - 1;
     return n === 0;
   }
-  if (key === 'train') return legs.some(isTrainLeg);
-  if (key === 'bus') return legs.every(isBusLeg);
+  // 1.18.8: Train and Bus & coach PARTITION the list (their counts add up to
+  // All): any rail, metro or tram leg makes it a train trip; the rest are bus.
+  const railish = (l) => isTrainLeg(l) || l.mode === 'TRAM';
+  if (key === 'train') return legs.some(railish);
+  if (key === 'bus') return !legs.some(railish);
   return true;
 }
 
@@ -135,10 +138,14 @@ export function legStripModel(legs) {
   const out = [];
   const transit = (legs || []).filter((l) => l.mode !== 'WALK');
   const total = transit.reduce((a, l) => a + (l.duration || 0), 0) || 1;
-  for (const l of legs || []) {
+  const all = legs || [];
+  for (const [i, l] of all.entries()) {
     if (l.mode === 'WALK') {
       const last = out[out.length - 1];
-      if ((l.duration || 0) >= 600) out.push({ walk: true, long: true });
+      // 1.18.8: the two ends follow ONE rule (a 7-min walk to the coach was
+      // trimmed while a 16-min walk from it showed): over 5 min = walker glyph
+      const edge = i === 0 || i === all.length - 1;
+      if ((l.duration || 0) >= 600 || (edge && (l.duration || 0) > 300)) out.push({ walk: true, long: true });
       else if (last && !last.walk) out.push({ walk: true });
       continue;
     }

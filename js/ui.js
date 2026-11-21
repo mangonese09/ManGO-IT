@@ -193,6 +193,33 @@ export function openSheet(contentEl, { title = '' } = {}) {
   return overlay;
 }
 
+// ── LABELS EXPLAINED (1.18.8) ──
+// One plain-language sheet for the shorthand the boards and trip sheets use.
+// `focus` scrolls to and marks the term that was tapped.
+const GLOSSARY = [
+  { key: 'live', term: 'live', text: 'The operator is sending real-time times for this run. With no "live" label the time is the timetable.' },
+  { key: 'change', term: 'Tight change · Risky change', text: 'Minutes between arriving and the next departure. Tight is 6 to 9 minutes; risky is under 6, so a small delay can mean a missed connection.' },
+  { key: 'wait', term: 'Long wait', text: 'Two hours or more between legs. The trip works, but plan for the wait.' },
+  { key: 'bin', term: 'bin. 3', text: 'Binario, the platform number at the station.' },
+  { key: 'train', term: 'REG · RV · IC · ICN · FR', text: 'Trenitalia train types. REG is a regional train that stops almost everywhere; RV (regionale veloce) is a faster regional with fewer stops; IC (Intercity) and ICN (Intercity Notte, the night train) are long-distance and need a reserved seat; FR (Frecciarossa) is high-speed.' },
+  { key: 'rail-bus', term: 'Rail replacement bus', text: 'A Trenitalia bus running in place of the train. Your train ticket is valid on it.' },
+];
+export function openGlossary(focus) {
+  const list = el('dl', { class: 'glossary' });
+  let target = null;
+  for (const g of GLOSSARY) {
+    const dt = el('dt', { text: g.term, id: `gl-${g.key}` });
+    const dd = el('dd', { text: g.text });
+    if (g.key === focus) { dt.classList.add('is-focus'); dd.classList.add('is-focus'); target = dt; }
+    list.appendChild(dt); list.appendChild(dd);
+  }
+  openSheet(list, { title: 'What the labels mean' });
+  if (target) requestAnimationFrame(() => target.scrollIntoView({ block: 'center' }));
+}
+export function glossaryLink(focus) {
+  return el('button', { class: 'glossary-link', type: 'button', text: 'What the labels mean', onclick: () => openGlossary(focus) });
+}
+
 // fromPop: true when history.popstate is unwinding us — don't call back() again
 export function closeSheet(fromPop = false) {
   const overlay = sheetStack.pop();

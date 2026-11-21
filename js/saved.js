@@ -1,6 +1,6 @@
 // ── SAVED (favorite stops + pinned departures) ──
 import { api } from './api.js';
-import { el, liveBadge, staleChip, modeMeta, modeIcon, confirmModal, openSheet, closeSheet, placeIcon, placeIconKey, PLACE_ICONS, LENS_SVG } from './ui.js';
+import { el, liveBadge, glossaryLink, staleChip, modeMeta, modeIcon, confirmModal, openSheet, closeSheet, placeIcon, placeIconKey, PLACE_ICONS, LENS_SVG } from './ui.js';
 import { romeTime, romeDay, countdownText, isOtherRomeDay, romeWallToIso, deviceZoneGap } from './time.js';
 import { getSaved, purgeSaved, removeSaved, getFavStops, addFavStop, removeFavStop, isFavStop, getFavLines, addFavLine, removeFavLine, isFavLine, getPlacesSorted, addPlace, removePlace, setHomePlace, setPlaceIcon } from './store.js';
 import { cleanRouteName, shortRouteName } from './names.js';
@@ -746,6 +746,7 @@ function renderVtBoard(body, deps) {
         : (delay.text ? el('span', { class: `vt-delay ${delay.cls}`, text: delay.text }) : null),
     ]));
   }
+  body.appendChild(glossaryLink('train'));
 }
 
 function romeNowMin() {

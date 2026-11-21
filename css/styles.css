@@ -198,7 +198,9 @@ button { cursor: pointer; }
 .delay-bad { color: var(--error-ink); }
 .stop-row { display: flex; gap: 10px; padding: 3px 0; align-items: baseline; }
 .stop-endpoint .stop-name, .stop-endpoint .stop-time { font-weight: 600; }
-.stop-time { min-width: 46px; font-variant-numeric: tabular-nums; }
+.stop-time { flex: 0 0 auto; min-width: 3.4em; font-variant-numeric: tabular-nums; }
+/* 1.18.8: at 200% text the name wraps beside the time instead of running under it */
+.stop-row .stop-name { flex: 1 1 auto; min-width: 0; overflow-wrap: anywhere; }
 .stops-toggle { background: none; border: none; color: var(--mango-ink); font: inherit; font-size: 0.75rem; padding: 4px 0 4px 56px; }
 .ticket-block { margin-top: 10px; border-top: 1px solid rgba(255,255,255,0.08); padding-top: 8px; }
 .ticket-title { font-weight: 600; font-size: 0.875rem; }
@@ -220,7 +222,7 @@ button { cursor: pointer; }
 /* ── direct fallback ── */
 .direct-block {
   background: var(--bg-surface, #1e1e1e); border-radius: var(--radius-lg, 14px);
-  border-left: 3px solid var(--warning, #f5a524);
+  border: 1px solid var(--border, rgba(255,255,255,0.14));
   padding: 12px 16px; margin: 12px 0;
 }
 .direct-head p { margin: 2px 0 6px; }
@@ -444,9 +446,9 @@ body.kb-open .bottom-nav { transform: translateY(100%); }
 .horizon-note {
   margin: 12px 4px 0;
   padding: 8px 12px;
-  border-left: 3px solid var(--mango, #f0a500);
+  border: 1px solid color-mix(in srgb, var(--mango, #f0a500) 40%, transparent);
   background: var(--bg-elevated, #2a2a2a);
-  border-radius: 0 8px 8px 0;
+  border-radius: 8px;
   font-size: 0.875rem;
 }
 :root[data-theme="light"] .horizon-note { background: #f4ede2; }
@@ -714,7 +716,7 @@ body.kb-open .bottom-nav { transform: translateY(100%); }
    v1.2.0 filter chips and the map chips both settled on the mango ring as THE
    selected-state, so the home toggles follow the same convention (their
    original mango rules above resume). */
-.direct-block { border-left-color: var(--border-strong, rgba(255,255,255,0.25)) !important; }
+/* 1.18.8: notes are plain rounded panels, no coloured left stripe */
 
 /* QA-13: one 16px content rail */
 main { padding: 0 16px; }
@@ -814,7 +816,8 @@ body { font-size: 1rem; }
      inside this box, so body-level sheets/toasts paint ABOVE the map instead of
      being covered by it. */
   isolation: isolate;
-  height: calc(100dvh - 210px - env(safe-area-inset-bottom));
+  /* 1.18.8: 210px left an empty band above the nav; the chrome above + nav is ~165px */
+  height: calc(100dvh - 165px - env(safe-area-inset-bottom));
   min-height: 340px;
   border-radius: var(--radius-lg, 14px);
   overflow: hidden;
@@ -829,11 +832,13 @@ body { font-size: 1rem; }
   z-index: 450; max-width: calc(100% - 24px);
   background: rgba(20, 22, 28, 0.82); color: #e7ecf3;
   border: 1px solid rgba(255,255,255,0.12); border-radius: 999px;
-  padding: 5px 12px; font-size: 0.75rem; white-space: nowrap;
-  overflow: hidden; text-overflow: ellipsis; pointer-events: none;
+  padding: 5px 12px; font-size: 0.75rem; white-space: normal; text-align: center;
+  pointer-events: none;
   backdrop-filter: blur(6px); transition: opacity 0.4s;
 }
 .map-hint.gone { opacity: 0; }
+/* 1.18.8: sit above the attribution line at any text size, wrap instead of overlapping */
+.map-hint { bottom: calc(var(--attr-h, 20px) + 8px); border-radius: 14px; width: max-content; }
 /* Basemap provider down (probeBasemap): pins, lines and our own city labels
    still draw, so say what is missing instead of leaving a bare canvas unexplained. */
 .map-bg-note { bottom: auto; top: 12px; left: 12px; transform: none; max-width: calc(100% - 84px); white-space: normal; border-radius: 14px; line-height: 1.35; padding: 7px 12px; }
@@ -1183,6 +1188,19 @@ body { font-size: 1rem; }
   border-color: var(--mango, #f0a500); font-weight: 600;
 }
 .filter-chip-empty:not(.active) { opacity: 0.45; }
+.glossary-link { display: block; margin: 16px auto 4px; min-height: 44px; padding: 0 12px; background: none; border: 0; color: var(--mango-ink); font: inherit; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.chip-explain { font-family: inherit; line-height: inherit; cursor: pointer; border: 0; }
+/* the drawn chip stays small; the tap area reaches 44px */
+.chip-explain { position: relative; }
+.chip-explain::after { content: ''; position: absolute; left: 0; right: 0; top: 50%; height: max(100%, 44px); transform: translateY(-50%); }
+.glossary { margin: 0; }
+.glossary dt { font-weight: 700; margin-top: 14px; }
+.glossary dt:first-child { margin-top: 2px; }
+.glossary dd { margin: 4px 0 0; color: var(--text-secondary, #c9c9c9); line-height: 1.45; }
+.glossary .is-focus { color: var(--mango-ink); }
+.glossary dd.is-focus { color: var(--text-primary, #e8f0ea); }
+.results-day { font-size: 1rem; margin: 4px 2px 10px; }
+.filter-sep { flex: 0 0 1px; align-self: stretch; margin: 6px 2px; background: var(--border, rgba(255,255,255,0.14)); }
 .filter-count {
   font-size: 0.75rem; font-variant-numeric: tabular-nums;
   color: var(--text-muted, #9a9a9a);
@@ -1195,11 +1213,9 @@ body { font-size: 1rem; }
 .gap-note {
   margin: 8px 0 2px; padding: 10px 12px;
   font-size: 0.8125rem; line-height: 1.4;
-  border-left: 2px solid var(--border-strong, rgba(255,255,255,0.25));
   background: var(--bg-surface, #1e1e1e);
-  border-radius: 0 var(--radius-md, 10px) var(--radius-md, 10px) 0;
+  border-radius: var(--radius-md, 10px);
 }
-:root[data-theme="light"] .gap-note { border-left-color: rgba(0,0,0,0.3); }
 
 /* ── WHOLE-DAY VIEW (Ship 3, §5.7) ── */
 .daypart-head {

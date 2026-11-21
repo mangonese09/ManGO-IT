@@ -1,11 +1,23 @@
 // ── A→B SEARCH ──
 import { api } from './api.js';
-import { el, modeMeta, modeClass, modeIcon, isRailMode, liveBadge, staleChip, openSheet, closeSheet, placeIcon, placeIconKey } from './ui.js';
+import { el, modeMeta, modeClass, modeIcon, isRailMode, liveBadge, openGlossary, glossaryLink, staleChip, openSheet, closeSheet, placeIcon, placeIconKey } from './ui.js';
 import { romeTime, romeDay, romeHour, dayPartKey, DAYPARTS, durationText, isOtherRomeDay, romeWallToIso, whenLabel, deviceZoneGap, romeNowInputValue } from './time.js';
 import { displayName, directionalRouteName } from './names.js';
 import { worstTransferMin, longestWaitMin, LONG_WAIT_MIN, transferTier, transferChipText, imminentText, legStripModel, groupByDaypart, plusTag, isRailReplacement, RESULT_FILTERS, matchesFilter, sameCoachAs, runsFromRequestedTime } from './itinerary.js';
 import { operatorFor, fareChip, fareSummary, eur, shortOperator } from './operators.js';
-import { saisOdFare } from './fares-od.js';
+// 1.18.8: the SAIS city-pair fare table (~60 KB) loads when a search starts,
+// not with the app. Until it lands a SAIS leg shows its generic fare state;
+// when it lands, results already on screen redraw once with exact prices.
+let saisOdFare = () => null;
+let faresLoading = null;
+function loadFares() {
+  if (faresLoading) return faresLoading;
+  faresLoading = import('./fares-od.js').then((m) => {
+    saisOdFare = m.saisOdFare;
+    if (document.querySelector('#results .iti-card')) rerenderResults();
+  }).catch((e) => { faresLoading = null; console.warn('fare table did not load', e); });
+  return faresLoading;
+}
 import { getRecents, pushRecent, removeRecent, getFavStops, addFavStop, removeFavStop, getSettings, getPlacesSorted, addPlace, removePlace, isPlace, getPref, setPref } from './store.js';
 import { getLastPos } from './board.js';
 import { toast } from './toast.js';
@@ -73,6 +85,13 @@ function renderZoneNote() {
   if (!p || !gap) return;
   p.textContent = `All times are Italy time — ${gap.text}.`;
   p.classList.add('tz-gap');
+}
+
+// 1.18.8: planning another day says WHICH day, once, above the list
+function dayHeader() {
+  const a = dayView.anchorMs;
+  if (!a || !isOtherRomeDay(new Date(a).toISOString())) return null;
+  return el('h3', { class: 'results-day', text: `Trips on ${romeDay(new Date(a))}` });
 }
 
 export function zoneBanner() {
@@ -333,8 +352,10 @@ function filterRow(all) {
       onclick: () => { if (resultFilter === f.key) return; resultFilter = f.key; rerenderResults(); },
     }, [
       el('span', { text: f.label }),
-      f.key === 'all' ? null : el('span', { class: 'filter-count', text: String(n) }),
+      el('span', { class: 'filter-count', text: String(n) }),
     ]));
+    // Direct cuts across the mode chips; a rule keeps it from reading as a share of All
+    if (f.key === 'direct') row.appendChild(el('span', { class: 'filter-sep', 'aria-hidden': 'true' }));
   }
   return row;
 }
@@ -779,6 +800,7 @@ async function resolveTyped(which, q) {
 
 let searchSeq = 0;
 async function runSearch() {
+  loadFares();
   const mySeq = ++searchSeq; // rapid re-searches (mode toggles) supersede in-flight ones
   const results = document.getElementById('results');
   formError('');
@@ -1455,6 +1477,7 @@ function renderDayView() {
   results.innerHTML = '';
   results.appendChild(staleChip(dayView.fetchedAt, dayView.stale));
   const zb1 = zoneBanner(); if (zb1) results.appendChild(zb1);
+  const dh1 = dayHeader(); if (dh1) results.appendChild(dh1);
 
   const now = Date.now();
   const anchorMs = dayView.anchorMs || now;
@@ -1543,6 +1566,7 @@ function renderItineraries(itineraries, { stale, fetchedAt }) {
   results.innerHTML = '';
   results.appendChild(staleChip(fetchedAt, stale));
   const zb2 = zoneBanner(); if (zb2) results.appendChild(zb2);
+  const dh2 = dayHeader(); if (dh2) results.appendChild(dh2);
   hideNextPill();
 
   if (!itineraries.length) return; // caller renders direct results or the dead-end fallbacks
@@ -1652,7 +1676,9 @@ function transferRow(prev, next) {
   return el('div', { class: `leg leg-xfer leg-xfer-${tier}` }, [
     tier === 'calm'
       ? el('span', { class: min >= LONG_WAIT_MIN ? 'chip chip-wait' : 'muted', text: min >= 60 ? transferChipText(min, tier) : `${min} min to change` })
-      : el('span', { class: `chip chip-xfer-${tier}`, text: transferChipText(min, tier) }),
+      // tap to learn what tight/risky means
+      : el('button', { class: `chip chip-xfer-${tier} chip-explain`, type: 'button', text: transferChipText(min, tier),
+        'aria-label': `${transferChipText(min, tier)}. What this means`, onclick: () => openGlossary('change') }),
     at ? el('span', { class: 'muted', text: at }) : null,
   ]);
 }
@@ -1748,6 +1774,7 @@ function openItineraryDetail(it) {
     prevTransit = leg;
     body.appendChild(renderTransitLeg(leg, i, opsSeen, opCounts));
   });
+  body.appendChild(glossaryLink());
   openSheet(body, { title: 'Trip detail' });
 }
 
@@ -1927,7 +1954,8 @@ function legEndpointRow(place, timeIso, isDep) {
   return el('div', { class: 'stop-row stop-endpoint' }, [
     el('span', { class: 'stop-time', text: romeTime(timeIso) }),
     el('span', { class: 'stop-name', text: displayName(place?.name) || '—' }),
-    place?.track ? el('span', { class: 'badge badge-track', text: `bin. ${place.track}` }) : null,
+    place?.track ? el('button', { class: 'badge badge-track chip-explain', type: 'button', text: `bin. ${place.track}`,
+      'aria-label': `Platform ${place.track}. What this means`, onclick: () => openGlossary('bin') }) : null,
   ]);
 }
 

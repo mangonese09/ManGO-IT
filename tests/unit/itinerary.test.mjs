@@ -145,6 +145,12 @@ test('matchesFilter: Bus & coach excludes any rail leg, including tram', () => {
   assert.strictEqual(matchesFilter(iti(1, 'TRAM', 'BUS'), 'bus'), false); // a tram is not a bus
 });
 
+test('matchesFilter: Train and Bus & coach partition every transit trip', () => {
+  for (const it of [iti(1, 'TRAM', 'BUS'), iti(0, 'BUS'), iti(1, 'REGIONAL_RAIL', 'COACH'), iti(0, 'FERRY')]) {
+    assert.strictEqual(Number(matchesFilter(it, 'train')) + Number(matchesFilter(it, 'bus')), 1);
+  }
+});
+
 test('matchesFilter: a walk-only itinerary answers no filtered question', () => {
   const walkOnly = { transfers: 0, legs: [{ mode: 'WALK', duration: 900 }] };
   assert.strictEqual(matchesFilter(walkOnly, 'direct'), false);

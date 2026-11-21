@@ -36,3 +36,13 @@ test('effectiveMode treats a bus-moded "TRAM n" line as a tram, nothing else', (
   assert.strictEqual(effectiveMode('RAIL', 'Tram 2'), 'RAIL');
   assert.strictEqual(effectiveMode('WALK', 'Tram 2'), 'WALK');
 });
+
+import { legStripModel } from '../../js/itinerary.js';
+test('legStripModel shows both end walks by one rule (over 5 min)', () => {
+  const L = (mode, mins) => ({ mode, duration: mins * 60, routeShortName: mode === 'WALK' ? '' : '1' });
+  const m = legStripModel([L('WALK', 7), L('COACH', 120), L('WALK', 16)]);
+  assert.ok(m[0].walk && m[0].long, '7-min start walk shown');
+  assert.ok(m[m.length - 1].walk && m[m.length - 1].long, '16-min end walk shown');
+  const s = legStripModel([L('WALK', 3), L('COACH', 120), L('WALK', 4)]);
+  assert.ok(!s[0].walk && !s[s.length - 1].walk, 'short end walks trimmed at both ends');
+});
