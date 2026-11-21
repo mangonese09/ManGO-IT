@@ -1510,6 +1510,16 @@ body.no-ptr { overscroll-behavior-y: none; }
 }
 .search-summary[hidden] { display: none; }
 .search-box.collapsed > :not(.search-summary) { display: none; }
+/* 1.19.0: the idle "Plan a trip" bar keeps recent trips one tap away */
+.search-box.collapsed.idle > .recents:not(:empty) { display: flex; }
+.ss-lens { flex: 0 0 auto; display: inline-flex; color: var(--mango-ink); }
+.hub-home { margin-top: 16px; }
+.hub-home .hub-rows { margin-top: 4px; }
+.hub-home-head { align-items: baseline; gap: 8px; }
+.hub-home-head h2 { flex: 1 1 auto; min-width: 0; }
+.hub-home-dist { flex: 0 0 auto; font-size: 0.8125rem; }
+.hub-home-full { margin-top: 8px; }
+.hub-home-fail { font-size: 0.8125rem; margin: 0 0 4px; }
 .ss-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; flex: 1; }
 .ss-route { font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .ss-when { font-size: 0.8125rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }

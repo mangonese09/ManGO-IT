@@ -318,6 +318,107 @@ export async function openStopSchedule(s) {
   load();
 }
 
+// ── HUB BOARD ROWS ──
+// Shared by the full hub sheet and the nearest-hub board on Home (1.19.0).
+// via entries are {n, t} (stop + clock); tolerate plain strings from older
+// cached payloads.
+const viaName = (v) => (v && v.n != null ? v.n : String(v || ''));
+
+// F-2: one row per line+direction, following runs stacked underneath.
+// Rail rows carry the train number in `line`, so they stay one-per-train.
+export function hubGroups(rows) {
+  return groupRuns(rows,
+    (x) => `${x.mode}|${(x.line || '').trim()}|${(x.headsign || '').trim()}`,
+    (x) => !x.realtime && !x.cancelled);
+}
+
+export function hubGroupRow(g, hub, query = '') {
+  const r = g.first;
+  const line = (r.line || '').trim().toUpperCase() === 'BUS' || !(r.line || '').trim()
+    ? (railReplacementLabel(r.mode, r.tripId, r.line) || (r.line || '').trim() || modeMeta(r.mode).label)
+    : r.mode === 'COACH' ? shortRouteName(r.line) : (r.line || '').trim();
+  const head = displayName((r.headsign || '').trim());
+  const past = typeof r.minutes === 'number' && r.minutes < 0;
+  const lbl = el('div', { class: 'sched-label2' }, [
+    el('span', { class: 'sl-main', text: head ? `${line} → ${head}` : line }),
+  ]);
+  if (g.rest.length) {
+    lbl.appendChild(el('span', { class: 'sl-via muted', text: thenText(g.rest.map((x) => romeTime(x.timeISO))) }));
+  }
+  // matched on an intermediate stop: answer "where does it fit for ME" on
+  // its OWN line with the arrival clock — appended inline it vanished
+  // under the headsign's ellipsis
+  const hit = (query && (r.via || []).find((v) => viaName(v).toLowerCase().includes(query))) || null;
+  if (hit && !`${r.headsign || ''} ${r.stopName || ''}`.toLowerCase().includes(query)) {
+    const t = hit.t ? ` at ${hit.t}` : '';
+    lbl.appendChild(el('span', { class: 'sl-via muted', text: `→ reaches ${displayName(viaName(hit))}${t}` }));
+  }
+  const cells = [
+    el('strong', { class: 'sched-time', text: romeTime(r.timeISO) }),
+    modeIcon(r.mode, 'mode-img mode-img-sm', r.line),
+    lbl,
+    r.realtime ? el('span', { class: 'badge badge-live', text: 'live' }) : null,
+    el('span', { class: 'dep-count', text: past ? '' : countdownText(r.timeISO) }),
+  ];
+  // rows tap through: trains → live status + calls + map; coaches → the
+  // remaining route with times + map; city buses → network route + map
+  const rowCls = `sched-row${past ? ' sched-past' : ''}`;
+  let open = null;
+  if (r.mode === 'RAIL' && r.trainNumber) open = () => openTrainLive(r, hub);
+  else if (r.mode === 'COACH' && Array.isArray(r.via) && r.via.length) open = () => openCoachRoute(r, hub.name);
+  else if (r.mode === 'BUS' && r.tripId) open = () => openTripRoute(r);
+  if (!open) return el('div', { class: rowCls }, cells);
+  cells.push(el('span', { class: 'dep-chevron', text: '›' }));
+  return el('button', { class: `${rowCls} sched-row-btn`, onclick: open }, cells);
+}
+
+// ── NEAREST HUB ON HOME (1.19.0) ──
+// Within walking reach of a hub, Home leads with that hub's board: the next
+// few lines, then "Full board" for the sheet with filters and search.
+const HUB_PREVIEW_ROWS = 6;
+export async function renderHubPreview(holder, hub, distM) {
+  let data;
+  try {
+    ({ data } = await api.hubBoard(hub.hubId));
+  } catch {
+    // keep a board already on screen; only an empty slot gets the error
+    if (holder.querySelector('.sched-row')) return;
+    holder.innerHTML = '';
+    holder.hidden = false;
+    holder.appendChild(hubPreviewHead(hub, distM));
+    holder.appendChild(el('div', { class: 'empty-state' }, [
+      el('p', { text: typeof navigator !== 'undefined' && navigator.onLine === false ? 'You’re offline.' : 'Departures didn’t load.' }),
+      el('button', { class: 'btn btn-ghost btn-small', text: 'Try again', onclick: () => renderHubPreview(holder, hub, distM) }),
+    ]));
+    return;
+  }
+  const rows = (data.departures || []).filter((r) => !(typeof r.minutes === 'number' && r.minutes < 0));
+  holder.innerHTML = '';
+  holder.hidden = false;
+  holder.appendChild(hubPreviewHead(hub, distM));
+  if ((data.failed || []).length) {
+    const FAIL_WORD = { rail: 'Train', coach: 'Coach', city: 'City bus' };
+    holder.appendChild(el('p', { class: 'muted hub-home-fail', text: `${data.failed.map((k) => FAIL_WORD[k] || k).join(', ')} times didn’t load.` }));
+  }
+  const list = el('div', { class: 'hub-rows' });
+  const groups = hubGroups(rows);
+  for (const g of groups.slice(0, HUB_PREVIEW_ROWS)) list.appendChild(hubGroupRow(g, hub));
+  if (!groups.length) list.appendChild(el('p', { class: 'muted', text: 'No more departures today.' }));
+  holder.appendChild(list);
+  holder.appendChild(el('button', {
+    class: 'btn btn-ghost btn-small btn-wide hub-home-full',
+    text: groups.length > HUB_PREVIEW_ROWS ? `Full board · ${groups.length - HUB_PREVIEW_ROWS} more lines` : 'Full board',
+    onclick: () => openHubBoard(hub),
+  }));
+}
+function hubPreviewHead(hub, distM) {
+  const dist = distM < 1000 ? `${Math.max(50, Math.round(distM / 50) * 50)} m away` : `${(distM / 1000).toFixed(1)} km away`;
+  return el('div', { class: 'board-head hub-home-head' }, [
+    el('h2', { text: displayName(hub.name) }),
+    el('span', { class: 'muted hub-home-dist', text: dist }),
+  ]);
+}
+
 // ── HUB BOARD ──
 // A curated hub (airport / main station) opens ONE unified departures board:
 // live rail (ViaggiaTreno) + our coaches + urban buses in radius, merge-sorted
@@ -386,16 +487,12 @@ export async function openHubBoard(hub) {
       .then(() => renderRows());
   };
   const FAM_OF = { RAIL: 'rail', BUS: 'city', COACH: 'coach' };
-  // via entries are {n, t} (stop + clock); tolerate plain strings from older
-  // cached payloads.
-  const viaName = (v) => (v && v.n != null ? v.n : String(v || ''));
   // When a row carries its intermediate calls (via), match direction-accurately
   // on where THIS run actually goes — headsign + calls, not the line name (a
   // "Catania – Taormina – Messina" line name would match its Militello-bound
   // return run too). Rows without via keep line-name matching.
   const hayOf = (r) => (r.via ? `${r.headsign || ''} ${r.stopName || ''} ${r.via.map(viaName).join(' ')}`
     : `${r.line || ''} ${r.headsign || ''} ${r.stopName || ''}`).toLowerCase();
-  const viaHit = (r) => (query && (r.via || []).find((v) => viaName(v).toLowerCase().includes(query))) || null;
   const inFilter = (r) => fam[FAM_OF[r.mode] || 'city'] && (!query || hayOf(r).includes(query));
   const list = el('div', { class: 'hub-rows' });
   function renderRows() {
@@ -413,53 +510,8 @@ export async function openHubBoard(hub) {
       return;
     }
     const MAX = 60;
-    // F-2: one row per line+direction, following runs stacked underneath.
-    // Rail rows carry the train number in `line`, so they stay one-per-train.
-    const groups = groupRuns(rows,
-      (x) => `${x.mode}|${(x.line || '').trim()}|${(x.headsign || '').trim()}`,
-      (x) => !x.realtime && !x.cancelled);
-    for (const g of groups.slice(0, MAX)) {
-      const r = g.first;
-      const line = (r.line || '').trim().toUpperCase() === 'BUS' || !(r.line || '').trim()
-        ? (railReplacementLabel(r.mode, r.tripId, r.line) || (r.line || '').trim() || modeMeta(r.mode).label)
-        : r.mode === 'COACH' ? shortRouteName(r.line) : (r.line || '').trim();
-      const head = displayName((r.headsign || '').trim());
-      const past = typeof r.minutes === 'number' && r.minutes < 0;
-      const lbl = el('div', { class: 'sched-label2' }, [
-        el('span', { class: 'sl-main', text: head ? `${line} → ${head}` : line }),
-      ]);
-      if (g.rest.length) {
-        lbl.appendChild(el('span', { class: 'sl-via muted', text: thenText(g.rest.map((x) => romeTime(x.timeISO))) }));
-      }
-      // matched on an intermediate stop: answer "where does it fit for ME" on
-      // its OWN line with the arrival clock — appended inline it vanished
-      // under the headsign's ellipsis
-      const hit = viaHit(r);
-      if (hit && !`${r.headsign || ''} ${r.stopName || ''}`.toLowerCase().includes(query)) {
-        const t = hit && hit.t ? ` at ${hit.t}` : '';
-        lbl.appendChild(el('span', { class: 'sl-via muted', text: `→ reaches ${displayName(viaName(hit))}${t}` }));
-      }
-      const cells = [
-        el('strong', { class: 'sched-time', text: romeTime(r.timeISO) }),
-        modeIcon(r.mode, 'mode-img mode-img-sm', r.line),
-        lbl,
-        r.realtime ? el('span', { class: 'badge badge-live', text: 'live' }) : null,
-        el('span', { class: 'dep-count', text: past ? '' : countdownText(r.timeISO) }),
-      ];
-      // rows tap through: trains → live status + calls + map; coaches → the
-      // remaining route with times + map; city buses → network route + map
-      const rowCls = `sched-row${past ? ' sched-past' : ''}`;
-      let open = null;
-      if (r.mode === 'RAIL' && r.trainNumber) open = () => openTrainLive(r, hub);
-      else if (r.mode === 'COACH' && Array.isArray(r.via) && r.via.length) open = () => openCoachRoute(r, hub.name);
-      else if (r.mode === 'BUS' && r.tripId) open = () => openTripRoute(r);
-      if (open) {
-        cells.push(el('span', { class: 'dep-chevron', text: '›' }));
-        list.appendChild(el('button', { class: `${rowCls} sched-row-btn`, onclick: open }, cells));
-      } else {
-        list.appendChild(el('div', { class: rowCls }, cells));
-      }
-    }
+    const groups = hubGroups(rows);
+    for (const g of groups.slice(0, MAX)) list.appendChild(hubGroupRow(g, hub, query));
     if (groups.length > MAX) list.appendChild(el('p', { class: 'muted', text: `+${groups.length - MAX} more lines later today` }));
     if (searching) list.appendChild(el('p', { class: 'muted', text: 'Searching all of today…' }));
   }

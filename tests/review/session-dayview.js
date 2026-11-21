@@ -60,6 +60,7 @@ function texts(page, sel) { return page.$$eval(sel, function (ns) { return ns.ma
     geolocation: { latitude: 38.1181, longitude: 13.3614 }, permissions: ['geolocation'],
   });
   var page = ctx.pages()[0] || await ctx.newPage();
+  require('./open-form')(page);
   var pageErrors = [];
   page.on('pageerror', function (e) { pageErrors.push(String(e)); });
   var consoleErrors = [];

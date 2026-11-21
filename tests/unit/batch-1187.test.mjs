@@ -46,3 +46,16 @@ test('legStripModel shows both end walks by one rule (over 5 min)', () => {
   const s = legStripModel([L('WALK', 3), L('COACH', 120), L('WALK', 4)]);
   assert.ok(!s[0].walk && !s[s.length - 1].walk, 'short end walks trimmed at both ends');
 });
+
+import { nearestHub } from '../../js/board.js';
+test('nearestHub picks the closest hub within walking reach, else none', () => {
+  const hubs = [
+    { hubId: 'palermo-centrale', lat: 38.1089, lon: 13.3675 },
+    { hubId: 'palermo-airport', lat: 38.1881, lon: 13.1093 },
+  ];
+  const near = nearestHub(hubs, { lat: 38.1157, lon: 13.3615 });
+  assert.strictEqual(near.hub.hubId, 'palermo-centrale');
+  assert.ok(near.d > 800 && near.d < 1000, `~900 m, got ${near.d}`);
+  assert.strictEqual(nearestHub(hubs, { lat: 37.31, lon: 13.58 }), null, 'Agrigento: no hub');
+  assert.strictEqual(nearestHub([], { lat: 38.1, lon: 13.3 }), null);
+});

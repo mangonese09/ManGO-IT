@@ -1,6 +1,6 @@
 // ── A→B SEARCH ──
 import { api } from './api.js';
-import { el, modeMeta, modeClass, modeIcon, isRailMode, liveBadge, openGlossary, glossaryLink, staleChip, openSheet, closeSheet, placeIcon, placeIconKey } from './ui.js';
+import { el, modeMeta, modeClass, modeIcon, isRailMode, liveBadge, openGlossary, glossaryLink, staleChip, openSheet, closeSheet, placeIcon, placeIconKey, LENS_SVG } from './ui.js';
 import { romeTime, romeDay, romeHour, dayPartKey, DAYPARTS, durationText, isOtherRomeDay, romeWallToIso, whenLabel, deviceZoneGap, romeNowInputValue } from './time.js';
 import { displayName, directionalRouteName } from './names.js';
 import { worstTransferMin, longestWaitMin, LONG_WAIT_MIN, transferTier, transferChipText, imminentText, legStripModel, groupByDaypart, plusTag, isRailReplacement, RESULT_FILTERS, matchesFilter, sameCoachAs, runsFromRequestedTime } from './itinerary.js';
@@ -36,6 +36,7 @@ export function initSearch() {
   initWhenChip();
   initModeToggles();
   renderRecents();
+  idleForm();
 }
 
 // ── WHEN CHIP (v0.9.5) ──
@@ -759,16 +760,37 @@ function collapseForm() {
     el('span', { class: 'ss-when muted', text: `${verb} ${when === 'Now' ? 'now' : when}${modes}` }),
   ]));
   btn.appendChild(el('span', { class: 'ss-edit', text: 'Edit' }));
+  btn.setAttribute('aria-label', 'Edit search');
+  btn.setAttribute('aria-expanded', 'false');
   btn.hidden = false;
+  box.classList.remove('idle');
   box.classList.add('collapsed');
+}
+// 1.19.0: before any search, the form starts as one "Plan a trip" bar so the
+// nearest-hub board sits above the fold; recent trips stay visible under it.
+function idleForm() {
+  const box = document.querySelector('#view-home .search-box');
+  const btn = document.getElementById('search-summary');
+  if (!box || !btn || sel.from || sel.to) return;
+  btn.innerHTML = '';
+  btn.appendChild(el('span', { class: 'ss-lens', html: LENS_SVG }));
+  btn.appendChild(el('span', { class: 'ss-text' }, [
+    el('span', { class: 'ss-route', text: 'Plan a trip' }),
+    el('span', { class: 'ss-when muted', text: 'Trains, buses and coaches across Sicily' }),
+  ]));
+  btn.setAttribute('aria-label', 'Plan a trip');
+  btn.setAttribute('aria-expanded', 'false');
+  btn.hidden = false;
+  box.classList.add('collapsed', 'idle');
 }
 function expandForm(focus = false) {
   const box = document.querySelector('#view-home .search-box');
   const btn = document.getElementById('search-summary');
   if (!box || !btn || !box.classList.contains('collapsed')) return;
-  box.classList.remove('collapsed');
+  const wasIdle = box.classList.contains('idle');
+  box.classList.remove('collapsed', 'idle');
   btn.hidden = true;
-  if (focus) document.getElementById('search-btn').focus();
+  if (focus) document.getElementById(wasIdle ? 'from-input' : 'search-btn').focus();
 }
 
 function formError(msg, which) {
@@ -1707,6 +1729,7 @@ export function routeToPlace(p) {
   document.getElementById('to-input').value = p.label || displayName(p.name);
   document.getElementById('from-input').value = 'My location';
   syncClears();
+  expandForm(); // the fields it just filled must be on screen if location fails
   locate().then((pos) => {
     sel.from = { name: 'My location', place: `${pos.lat.toFixed(5)},${pos.lon.toFixed(5)}`, lat: pos.lat, lon: pos.lon };
     runSearch();

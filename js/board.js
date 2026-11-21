@@ -79,6 +79,7 @@ export async function loadBoard(manual = false) {
   if (!holder.children.length) {
     holder.appendChild(el('div', { class: 'loading', text: 'Finding stops near you…' }));
   }
+  loadHubHome(lastPos); // runs beside the stop board; neither waits on the other
 
   try {
     const { data: stops, stale, fetchedAt } = await api.nearbyStops(lastPos.lat, lastPos.lon);
@@ -97,6 +98,45 @@ export async function loadBoard(manual = false) {
         el('p', { class: 'muted', text: 'Will retry automatically every minute.' }),
       ]));
     }
+  }
+}
+
+// ── NEAREST HUB (1.19.0) ──
+// Five curated hubs (two airports, three main stations). Within HUB_R of one,
+// Home leads with its board; anywhere else the slot stays hidden and the stop
+// board below is the curb screen, as before.
+const HUB_R = 1500;
+export function nearestHub(hubs, pos, r = HUB_R) {
+  let best = null;
+  for (const h of hubs || []) {
+    const d = metersBetween(pos, h);
+    if (d <= r && (!best || d < best.d)) best = { hub: h, d };
+  }
+  return best;
+}
+function metersBetween(a, b) {
+  const rad = Math.PI / 180;
+  const x = Math.sin(((b.lat - a.lat) * rad) / 2) ** 2
+    + Math.cos(a.lat * rad) * Math.cos(b.lat * rad) * Math.sin(((b.lon - a.lon) * rad) / 2) ** 2;
+  return 2 * 6371000 * Math.asin(Math.sqrt(x));
+}
+async function loadHubHome(pos) {
+  const slot = document.getElementById('hub-home');
+  if (!slot) return;
+  let near = null;
+  try {
+    // aggregated + a coarse cell: only the hub list is wanted, not the stops
+    const { data } = await api.mapStops(pos.lat, pos.lon, HUB_R, true, 5000);
+    near = nearestHub(data.hubs, pos);
+  } catch {
+    return; // keep whatever the slot already shows
+  }
+  if (!near) { slot.hidden = true; slot.innerHTML = ''; return; }
+  try {
+    const { renderHubPreview } = await import('./saved.js');
+    await renderHubPreview(slot, near.hub, near.d);
+  } catch {
+    if (!slot.children.length) slot.hidden = true;
   }
 }
 

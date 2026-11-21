@@ -47,6 +47,7 @@ async function clickSearchIfNeeded(page) {
     geolocation: { latitude: 37.8516, longitude: 15.2853 }, permissions: ['geolocation'],
   });
   var page = ctx.pages()[0] || await ctx.newPage();
+  require('./open-form')(page);
   var pageErrors = [];
   page.on('pageerror', function (e) { pageErrors.push(String(e)); });
 
@@ -168,7 +169,7 @@ async function clickSearchIfNeeded(page) {
   await sleep(1200);
   await page.click('#nav-home').catch(function () {}); // restore the form if results view persisted
   if (!(await page.$('#from-input'))) { await page.reload({ waitUntil: 'load' }); await sleep(1200); await page.click('#nav-home').catch(function () {}); }
-  await page.waitForSelector('#from-input', { timeout: 20000 });
+  await page.waitForSelector('#from-input', { state: 'attached', timeout: 20000 });
   for (var esc2 = 0; esc2 < 3 && await page.$('.sheet-overlay.show'); esc2++) {
     await page.keyboard.press('Escape'); await sleep(400);
   }

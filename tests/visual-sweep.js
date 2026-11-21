@@ -39,6 +39,7 @@ function tomorrow10() {
   };
   const ctx = await mk();
   const page = await ctx.newPage();
+  require('./review/open-form')(page);
   const pause = (ms) => page.waitForTimeout(ms);
   await page.goto(BASE, { waitUntil: 'load' });
   await pause(3000);

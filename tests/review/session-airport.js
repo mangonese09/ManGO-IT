@@ -43,6 +43,7 @@ async function firstRow(page, which) {
     geolocation: { latitude: 38.1157, longitude: 13.3615 }, permissions: ['geolocation'], // Palermo
   });
   var page = ctx.pages()[0] || await ctx.newPage();
+  require('./open-form')(page);
   var pageErrors = [];
   page.on('pageerror', function (e) { pageErrors.push(String(e)); });
 
