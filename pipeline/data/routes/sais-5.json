@@ -57,14 +57,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "31 exact dates from Albatross validities",
+      "raw": "31 exact dates (merged templates)",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
@@ -89,7 +83,13 @@
        "2026-12-18",
        "2026-12-19",
        "2026-12-21",
-       "2026-12-22"
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
       ]
      },
      "reverse": false,
@@ -236,14 +236,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "31 exact dates from Albatross validities",
+      "raw": "31 exact dates (merged templates)",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
@@ -268,7 +262,13 @@
        "2026-12-18",
        "2026-12-19",
        "2026-12-21",
-       "2026-12-22"
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
       ]
      },
      "reverse": false,
@@ -415,9 +415,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "7 exact dates from Albatross validities",
+      "raw": "6 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-11-15",
        "2026-11-22",
        "2026-11-29",
        "2026-12-06",
@@ -565,14 +564,192 @@
      "valid": true
     },
     {
+     "corsa": "0519",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "31 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-28",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-05",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-12",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-19",
+       "2026-12-21",
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
+      ]
+     },
+     "reverse": false,
+     "variant": "SU5_48",
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 0,
+       "arr": "19.15",
+       "dep": "19.15"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 157)",
+       "idx": 1,
+       "arr": "19.15",
+       "dep": "19.15"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 11)",
+       "idx": 2,
+       "arr": "19.16",
+       "dep": "19.16"
+      },
+      {
+       "stop": "ENNA (Via S.Agata 82)",
+       "idx": 3,
+       "arr": "19.17",
+       "dep": "19.17"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 104)",
+       "idx": 4,
+       "arr": "19.17",
+       "dep": "19.17"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
+       "idx": 5,
+       "arr": "19.18",
+       "dep": "19.18"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 121))",
+       "idx": 6,
+       "arr": "19.18",
+       "dep": "19.18"
+      },
+      {
+       "stop": "ENNA (Via Pergusa(fronte Bonasera bibite))",
+       "idx": 7,
+       "arr": "19.19",
+       "dep": "19.19"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa (Natura Viva))",
+       "idx": 8,
+       "arr": "19.21",
+       "dep": "19.21"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa(PizzeriaPinocchio))",
+       "idx": 9,
+       "arr": "19.22",
+       "dep": "19.22"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa (sottopassaggio))",
+       "idx": 10,
+       "arr": "19.23",
+       "dep": "19.23"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 11,
+       "arr": "19.25",
+       "dep": "19.25"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (fronte 15))",
+       "idx": 12,
+       "arr": "19.26",
+       "dep": "19.26"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina(incr.Via delle Acacie))",
+       "idx": 13,
+       "arr": "19.27",
+       "dep": "19.27"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "idx": 14,
+       "arr": "19.29",
+       "dep": "19.29"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "idx": 15,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (fronte Via Acacie))",
+       "idx": 16,
+       "arr": "19.30",
+       "dep": "19.30"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina(incr.Via delle Acacie))",
+       "idx": 17,
+       "arr": "19.32",
+       "dep": "19.32"
+      },
+      {
+       "stop": "PERGUSA (Strada Comunale 89 Siriano)",
+       "idx": 18,
+       "arr": "19.36",
+       "dep": "19.36"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti 22)",
+       "idx": 19,
+       "arr": "19.38",
+       "dep": "19.38"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti (Campo Sportivo))",
+       "idx": 20,
+       "arr": "19.39",
+       "dep": "19.39"
+      },
+      {
+       "stop": "PERGUSA (Via Apollo)",
+       "idx": 21,
+       "arr": "19.40",
+       "dep": "19.40"
+      }
+     ],
+     "valid": true
+    },
+    {
      "corsa": "0531",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "7 exact dates from Albatross validities",
+      "raw": "6 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-11-15",
        "2026-11-22",
        "2026-11-29",
        "2026-12-06",
@@ -725,15 +902,20 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "7 exact dates from Albatross validities",
+      "raw": "12 exact dates (merged templates)",
       "explicit_dates": [
-       "2026-11-15",
        "2026-11-22",
        "2026-11-29",
        "2026-12-06",
        "2026-12-08",
        "2026-12-13",
-       "2026-12-20"
+       "2026-12-20",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
       ]
      },
      "reverse": false,
@@ -880,14 +1062,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "31 exact dates from Albatross validities",
+      "raw": "31 exact dates (merged templates)",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
@@ -912,7 +1088,13 @@
        "2026-12-18",
        "2026-12-19",
        "2026-12-21",
-       "2026-12-22"
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
       ]
      },
      "reverse": false,
@@ -1054,14 +1236,167 @@
      "valid": true
     },
     {
+     "corsa": "0527",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "6 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
+      ]
+     },
+     "reverse": false,
+     "variant": "SU5_48",
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 0,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 157)",
+       "idx": 1,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 11)",
+       "idx": 2,
+       "arr": "14.01",
+       "dep": "14.01"
+      },
+      {
+       "stop": "ENNA (Via S.Agata 82)",
+       "idx": 3,
+       "arr": "14.02",
+       "dep": "14.02"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 104)",
+       "idx": 4,
+       "arr": "14.02",
+       "dep": "14.02"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
+       "idx": 5,
+       "arr": "14.03",
+       "dep": "14.03"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 121))",
+       "idx": 6,
+       "arr": "14.03",
+       "dep": "14.03"
+      },
+      {
+       "stop": "ENNA (Via Pergusa(fronte Bonasera bibite))",
+       "idx": 7,
+       "arr": "14.04",
+       "dep": "14.04"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa (Natura Viva))",
+       "idx": 8,
+       "arr": "14.06",
+       "dep": "14.06"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa(PizzeriaPinocchio))",
+       "idx": 9,
+       "arr": "14.07",
+       "dep": "14.07"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa (sottopassaggio))",
+       "idx": 10,
+       "arr": "14.08",
+       "dep": "14.08"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 11,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (fronte 15))",
+       "idx": 12,
+       "arr": "14.11",
+       "dep": "14.11"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina(incr.Via delle Acacie))",
+       "idx": 13,
+       "arr": "14.12",
+       "dep": "14.12"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "idx": 14,
+       "arr": "14.14",
+       "dep": "14.14"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "idx": 15,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (fronte Via Acacie))",
+       "idx": 16,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina(incr.Via delle Acacie))",
+       "idx": 17,
+       "arr": "14.17",
+       "dep": "14.17"
+      },
+      {
+       "stop": "PERGUSA (Strada Comunale 89 Siriano)",
+       "idx": 18,
+       "arr": "14.21",
+       "dep": "14.21"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti 22)",
+       "idx": 19,
+       "arr": "14.23",
+       "dep": "14.23"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti (Campo Sportivo))",
+       "idx": 20,
+       "arr": "14.24",
+       "dep": "14.24"
+      },
+      {
+       "stop": "PERGUSA (Via Apollo)",
+       "idx": 21,
+       "arr": "14.25",
+       "dep": "14.25"
+      }
+     ],
+     "valid": true
+    },
+    {
      "corsa": "0537",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "7 exact dates from Albatross validities",
+      "raw": "6 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-11-15",
        "2026-11-22",
        "2026-11-29",
        "2026-12-06",
@@ -1214,14 +1549,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "31 exact dates from Albatross validities",
+      "raw": "31 exact dates (merged templates)",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
@@ -1246,7 +1575,13 @@
        "2026-12-18",
        "2026-12-19",
        "2026-12-21",
-       "2026-12-22"
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
       ]
      },
      "reverse": false,
@@ -1393,14 +1728,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "31 exact dates from Albatross validities",
+      "raw": "25 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
@@ -1572,14 +1901,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "31 exact dates from Albatross validities",
+      "raw": "25 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
@@ -1751,14 +2074,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "31 exact dates from Albatross validities",
+      "raw": "25 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
@@ -1930,9 +2247,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "7 exact dates from Albatross validities",
+      "raw": "6 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-11-15",
        "2026-11-22",
        "2026-11-29",
        "2026-12-06",
@@ -2085,9 +2401,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "7 exact dates from Albatross validities",
+      "raw": "6 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-11-15",
        "2026-11-22",
        "2026-11-29",
        "2026-12-06",
@@ -2235,198 +2550,13 @@
      "valid": true
     },
     {
-     "corsa": "0519",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "31 exact dates from Albatross validities",
-      "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
-       "2026-11-23",
-       "2026-11-24",
-       "2026-11-25",
-       "2026-11-26",
-       "2026-11-27",
-       "2026-11-28",
-       "2026-11-30",
-       "2026-12-01",
-       "2026-12-02",
-       "2026-12-03",
-       "2026-12-04",
-       "2026-12-05",
-       "2026-12-07",
-       "2026-12-09",
-       "2026-12-10",
-       "2026-12-11",
-       "2026-12-12",
-       "2026-12-14",
-       "2026-12-15",
-       "2026-12-16",
-       "2026-12-17",
-       "2026-12-18",
-       "2026-12-19",
-       "2026-12-21",
-       "2026-12-22"
-      ]
-     },
-     "reverse": false,
-     "variant": "SU5_48",
-     "stops": [
-      {
-       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
-       "idx": 0,
-       "arr": "19.15",
-       "dep": "19.15"
-      },
-      {
-       "stop": "ENNA (Corso Sicilia 157)",
-       "idx": 1,
-       "arr": "19.15",
-       "dep": "19.15"
-      },
-      {
-       "stop": "ENNA (Corso Sicilia 11)",
-       "idx": 2,
-       "arr": "19.16",
-       "dep": "19.16"
-      },
-      {
-       "stop": "ENNA (Via S.Agata 82)",
-       "idx": 3,
-       "arr": "19.17",
-       "dep": "19.17"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 104)",
-       "idx": 4,
-       "arr": "19.17",
-       "dep": "19.17"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
-       "idx": 5,
-       "arr": "19.18",
-       "dep": "19.18"
-      },
-      {
-       "stop": "ENNA (Via Pergusa (fronte 121))",
-       "idx": 6,
-       "arr": "19.18",
-       "dep": "19.18"
-      },
-      {
-       "stop": "ENNA (Via Pergusa(fronte Bonasera bibite))",
-       "idx": 7,
-       "arr": "19.19",
-       "dep": "19.19"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusa (Natura Viva))",
-       "idx": 8,
-       "arr": "19.21",
-       "dep": "19.21"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusa(PizzeriaPinocchio))",
-       "idx": 9,
-       "arr": "19.22",
-       "dep": "19.22"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusa (sottopassaggio))",
-       "idx": 10,
-       "arr": "19.23",
-       "dep": "19.23"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 11,
-       "arr": "19.25",
-       "dep": "19.25"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (fronte 15))",
-       "idx": 12,
-       "arr": "19.26",
-       "dep": "19.26"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina(incr.Via delle Acacie))",
-       "idx": 13,
-       "arr": "19.27",
-       "dep": "19.27"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 14,
-       "arr": "19.29",
-       "dep": "19.29"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 15,
-       "arr": "19.30",
-       "dep": "19.30"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (fronte Via Acacie))",
-       "idx": 16,
-       "arr": "19.30",
-       "dep": "19.30"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina(incr.Via delle Acacie))",
-       "idx": 17,
-       "arr": "19.32",
-       "dep": "19.32"
-      },
-      {
-       "stop": "PERGUSA (Strada Comunale 89 Siriano)",
-       "idx": 18,
-       "arr": "19.36",
-       "dep": "19.36"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti 22)",
-       "idx": 19,
-       "arr": "19.38",
-       "dep": "19.38"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti (Campo Sportivo))",
-       "idx": 20,
-       "arr": "19.39",
-       "dep": "19.39"
-      },
-      {
-       "stop": "PERGUSA (Via Apollo)",
-       "idx": 21,
-       "arr": "19.40",
-       "dep": "19.40"
-      }
-     ],
-     "valid": true
-    },
-    {
      "corsa": "0523",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "31 exact dates from Albatross validities",
+      "raw": "31 exact dates (merged templates)",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
@@ -2451,7 +2581,13 @@
        "2026-12-18",
        "2026-12-19",
        "2026-12-21",
-       "2026-12-22"
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
       ]
      },
      "reverse": false,
@@ -2598,9 +2734,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "7 exact dates from Albatross validities",
+      "raw": "6 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-11-15",
        "2026-11-22",
        "2026-11-29",
        "2026-12-06",
@@ -2753,15 +2888,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "38 exact dates from Albatross validities",
+      "raw": "40 exact dates (merged templates)",
       "explicit_dates": [
-       "2026-11-15",
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
        "2026-11-22",
        "2026-11-23",
        "2026-11-24",
@@ -2792,7 +2920,16 @@
        "2026-12-19",
        "2026-12-20",
        "2026-12-21",
-       "2026-12-22"
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-25",
+       "2026-12-26",
+       "2026-12-27",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
       ]
      },
      "reverse": false,
@@ -2969,13 +3106,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "26 exact dates from Albatross validities",
+      "raw": "21 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
@@ -3138,19 +3270,167 @@
      "valid": true
     },
     {
+     "corsa": "0501",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "6 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
+      ]
+     },
+     "reverse": false,
+     "variant": "SU5_49",
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 0,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 157)",
+       "idx": 1,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 11)",
+       "idx": 2,
+       "arr": "6.45",
+       "dep": "6.45"
+      },
+      {
+       "stop": "ENNA (Via S.Agata 82)",
+       "idx": 3,
+       "arr": "6.46",
+       "dep": "6.46"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 104)",
+       "idx": 4,
+       "arr": "6.46",
+       "dep": "6.46"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 210 (ex Vigorelli))",
+       "idx": 5,
+       "arr": "6.47",
+       "dep": "6.47"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 121))",
+       "idx": 6,
+       "arr": "6.47",
+       "dep": "6.47"
+      },
+      {
+       "stop": "ENNA (Via Pergusa(fronte Bonasera bibite))",
+       "idx": 7,
+       "arr": "6.48",
+       "dep": "6.48"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa (Natura Viva))",
+       "idx": 8,
+       "arr": "6.49",
+       "dep": "6.49"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa(PizzeriaPinocchio))",
+       "idx": 9,
+       "arr": "6.50",
+       "dep": "6.50"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa (sottopassaggio))",
+       "idx": 10,
+       "arr": "6.51",
+       "dep": "6.51"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 11,
+       "arr": "6.52",
+       "dep": "6.52"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (fronte 15))",
+       "idx": 12,
+       "arr": "6.53",
+       "dep": "6.53"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina(incr.Via delle Acacie))",
+       "idx": 13,
+       "arr": "6.54",
+       "dep": "6.54"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "idx": 14,
+       "arr": "6.55",
+       "dep": "6.55"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "idx": 15,
+       "arr": "6.56",
+       "dep": "6.56"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (fronte Via Acacie))",
+       "idx": 16,
+       "arr": "6.56",
+       "dep": "6.56"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina(incr.Via delle Acacie))",
+       "idx": 17,
+       "arr": "6.57",
+       "dep": "6.57"
+      },
+      {
+       "stop": "PERGUSA (Strada Comunale 89 Siriano)",
+       "idx": 18,
+       "arr": "7.01",
+       "dep": "7.01"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti 22)",
+       "idx": 19,
+       "arr": "7.03",
+       "dep": "7.03"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti (Campo Sportivo))",
+       "idx": 20,
+       "arr": "7.04",
+       "dep": "7.04"
+      },
+      {
+       "stop": "PERGUSA (Via Apollo)",
+       "idx": 21,
+       "arr": "7.05",
+       "dep": "7.05"
+      }
+     ],
+     "valid": true
+    },
+    {
      "corsa": "0503",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "31 exact dates from Albatross validities",
+      "raw": "25 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
@@ -3322,14 +3602,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "31 exact dates from Albatross validities",
+      "raw": "25 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
@@ -3555,14 +3829,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "31 exact dates from Albatross validities",
+      "raw": "31 exact dates (merged templates)",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
@@ -3587,7 +3855,13 @@
        "2026-12-18",
        "2026-12-19",
        "2026-12-21",
-       "2026-12-22"
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
       ]
      },
      "reverse": false,
@@ -3734,14 +4008,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "31 exact dates from Albatross validities",
+      "raw": "31 exact dates (merged templates)",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
@@ -3766,7 +4034,13 @@
        "2026-12-18",
        "2026-12-19",
        "2026-12-21",
-       "2026-12-22"
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
       ]
      },
      "reverse": false,
@@ -3968,372 +4242,13 @@
    ],
    "trips": [
     {
-     "corsa": "0526",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "38 exact dates from Albatross validities",
-      "explicit_dates": [
-       "2026-11-15",
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
-       "2026-11-22",
-       "2026-11-23",
-       "2026-11-24",
-       "2026-11-25",
-       "2026-11-26",
-       "2026-11-27",
-       "2026-11-28",
-       "2026-11-29",
-       "2026-11-30",
-       "2026-12-01",
-       "2026-12-02",
-       "2026-12-03",
-       "2026-12-04",
-       "2026-12-05",
-       "2026-12-06",
-       "2026-12-07",
-       "2026-12-08",
-       "2026-12-09",
-       "2026-12-10",
-       "2026-12-11",
-       "2026-12-12",
-       "2026-12-13",
-       "2026-12-14",
-       "2026-12-15",
-       "2026-12-16",
-       "2026-12-17",
-       "2026-12-18",
-       "2026-12-19",
-       "2026-12-20",
-       "2026-12-21",
-       "2026-12-22"
-      ]
-     },
-     "reverse": true,
-     "variant": "SU5_50",
-     "stops": [
-      {
-       "stop": "PERGUSA (Via Apollo)",
-       "idx": 0,
-       "arr": "23.00",
-       "dep": "23.00"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti(fronte Campo Sportivo))",
-       "idx": 1,
-       "arr": "23.01",
-       "dep": "23.01"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
-       "idx": 2,
-       "arr": "23.02",
-       "dep": "23.02"
-      },
-      {
-       "stop": "ENNA BASSA (Via Giuseppe D'Angelo)",
-       "idx": 3,
-       "arr": "23.07",
-       "dep": "23.07"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 4,
-       "arr": "23.09",
-       "dep": "23.09"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 5,
-       "arr": "23.09",
-       "dep": "23.09"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (fronte Via Acacie))",
-       "idx": 6,
-       "arr": "23.10",
-       "dep": "23.10"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina 15)",
-       "idx": 7,
-       "arr": "23.11",
-       "dep": "23.11"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 8,
-       "arr": "23.12",
-       "dep": "23.12"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusa (sottopassaggio))",
-       "idx": 9,
-       "arr": "23.14",
-       "dep": "23.14"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusa(PizzeriaPinocchio))",
-       "idx": 10,
-       "arr": "23.15",
-       "dep": "23.15"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusa (Natura Viva))",
-       "idx": 11,
-       "arr": "23.16",
-       "dep": "23.16"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 153)",
-       "idx": 12,
-       "arr": "23.17",
-       "dep": "23.17"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 157 (Bonasera bibite))",
-       "idx": 13,
-       "arr": "23.18",
-       "dep": "23.18"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 139)",
-       "idx": 14,
-       "arr": "23.19",
-       "dep": "23.19"
-      },
-      {
-       "stop": "ENNA (Via Pergusa (fronte 210))",
-       "idx": 15,
-       "arr": "23.20",
-       "dep": "23.20"
-      },
-      {
-       "stop": "ENNA (Via Pergusa (fronte 104))",
-       "idx": 16,
-       "arr": "23.20",
-       "dep": "23.20"
-      },
-      {
-       "stop": "ENNA (Piazza Alessi)",
-       "idx": 17,
-       "arr": "23.22",
-       "dep": "23.22"
-      },
-      {
-       "stop": "ENNA (Corso Sicilia 2)",
-       "idx": 18,
-       "arr": "23.23",
-       "dep": "23.23"
-      },
-      {
-       "stop": "ENNA (Corso Sicilia 32)",
-       "idx": 19,
-       "arr": "23.24",
-       "dep": "23.24"
-      },
-      {
-       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
-       "idx": 20,
-       "arr": "23.25",
-       "dep": "23.25"
-      }
-     ],
-     "valid": true
-    },
-    {
-     "corsa": "0508",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "31 exact dates from Albatross validities",
-      "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
-       "2026-11-23",
-       "2026-11-24",
-       "2026-11-25",
-       "2026-11-26",
-       "2026-11-27",
-       "2026-11-28",
-       "2026-11-30",
-       "2026-12-01",
-       "2026-12-02",
-       "2026-12-03",
-       "2026-12-04",
-       "2026-12-05",
-       "2026-12-07",
-       "2026-12-09",
-       "2026-12-10",
-       "2026-12-11",
-       "2026-12-12",
-       "2026-12-14",
-       "2026-12-15",
-       "2026-12-16",
-       "2026-12-17",
-       "2026-12-18",
-       "2026-12-19",
-       "2026-12-21",
-       "2026-12-22"
-      ]
-     },
-     "reverse": true,
-     "variant": "SU5_50",
-     "stops": [
-      {
-       "stop": "PERGUSA (Via Apollo)",
-       "idx": 0,
-       "arr": "10.30",
-       "dep": "10.30"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti(fronte Campo Sportivo))",
-       "idx": 1,
-       "arr": "10.31",
-       "dep": "10.31"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
-       "idx": 2,
-       "arr": "10.32",
-       "dep": "10.32"
-      },
-      {
-       "stop": "ENNA BASSA (Via Giuseppe D'Angelo)",
-       "idx": 3,
-       "arr": "10.37",
-       "dep": "10.37"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 4,
-       "arr": "10.39",
-       "dep": "10.39"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 5,
-       "arr": "10.39",
-       "dep": "10.39"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (fronte Via Acacie))",
-       "idx": 6,
-       "arr": "10.40",
-       "dep": "10.40"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina 15)",
-       "idx": 7,
-       "arr": "10.41",
-       "dep": "10.41"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 8,
-       "arr": "10.42",
-       "dep": "10.42"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusa (sottopassaggio))",
-       "idx": 9,
-       "arr": "10.44",
-       "dep": "10.44"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusa(PizzeriaPinocchio))",
-       "idx": 10,
-       "arr": "10.45",
-       "dep": "10.45"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusa (Natura Viva))",
-       "idx": 11,
-       "arr": "10.46",
-       "dep": "10.46"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 153)",
-       "idx": 12,
-       "arr": "10.47",
-       "dep": "10.47"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 157 (Bonasera bibite))",
-       "idx": 13,
-       "arr": "10.48",
-       "dep": "10.48"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 139)",
-       "idx": 14,
-       "arr": "10.49",
-       "dep": "10.49"
-      },
-      {
-       "stop": "ENNA (Via Pergusa (fronte 210))",
-       "idx": 15,
-       "arr": "10.50",
-       "dep": "10.50"
-      },
-      {
-       "stop": "ENNA (Via Pergusa (fronte 104))",
-       "idx": 16,
-       "arr": "10.50",
-       "dep": "10.50"
-      },
-      {
-       "stop": "ENNA (Piazza Alessi)",
-       "idx": 17,
-       "arr": "10.52",
-       "dep": "10.52"
-      },
-      {
-       "stop": "ENNA (Corso Sicilia 2)",
-       "idx": 18,
-       "arr": "10.53",
-       "dep": "10.53"
-      },
-      {
-       "stop": "ENNA (Corso Sicilia 32)",
-       "idx": 19,
-       "arr": "10.54",
-       "dep": "10.54"
-      },
-      {
-       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
-       "idx": 20,
-       "arr": "10.55",
-       "dep": "10.55"
-      }
-     ],
-     "valid": true
-    },
-    {
      "corsa": "0506",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "31 exact dates from Albatross validities",
+      "raw": "31 exact dates (merged templates)",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
@@ -4358,7 +4273,13 @@
        "2026-12-18",
        "2026-12-19",
        "2026-12-21",
-       "2026-12-22"
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
       ]
      },
      "reverse": true,
@@ -4494,19 +4415,1214 @@
      "valid": true
     },
     {
+     "corsa": "0544",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "12 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-11-22",
+       "2026-11-29",
+       "2026-12-06",
+       "2026-12-08",
+       "2026-12-13",
+       "2026-12-20",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
+      ]
+     },
+     "reverse": true,
+     "variant": "SU5_50",
+     "stops": [
+      {
+       "stop": "PERGUSA (Via Apollo)",
+       "idx": 0,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti(fronte Campo Sportivo))",
+       "idx": 1,
+       "arr": "13.01",
+       "dep": "13.01"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
+       "idx": 2,
+       "arr": "13.02",
+       "dep": "13.02"
+      },
+      {
+       "stop": "ENNA BASSA (Via Giuseppe D'Angelo)",
+       "idx": 3,
+       "arr": "13.07",
+       "dep": "13.07"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "idx": 4,
+       "arr": "13.09",
+       "dep": "13.09"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "idx": 5,
+       "arr": "13.09",
+       "dep": "13.09"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (fronte Via Acacie))",
+       "idx": 6,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina 15)",
+       "idx": 7,
+       "arr": "13.11",
+       "dep": "13.11"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 8,
+       "arr": "13.12",
+       "dep": "13.12"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa (sottopassaggio))",
+       "idx": 9,
+       "arr": "13.14",
+       "dep": "13.14"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa(PizzeriaPinocchio))",
+       "idx": 10,
+       "arr": "13.15",
+       "dep": "13.15"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa (Natura Viva))",
+       "idx": 11,
+       "arr": "13.16",
+       "dep": "13.16"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 153)",
+       "idx": 12,
+       "arr": "13.17",
+       "dep": "13.17"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 157 (Bonasera bibite))",
+       "idx": 13,
+       "arr": "13.18",
+       "dep": "13.18"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 139)",
+       "idx": 14,
+       "arr": "13.19",
+       "dep": "13.19"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 210))",
+       "idx": 15,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 104))",
+       "idx": 16,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "ENNA (Piazza Alessi)",
+       "idx": 17,
+       "arr": "13.22",
+       "dep": "13.22"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 18,
+       "arr": "13.23",
+       "dep": "13.23"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 32)",
+       "idx": 19,
+       "arr": "13.24",
+       "dep": "13.24"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 20,
+       "arr": "13.25",
+       "dep": "13.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0518",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "31 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-28",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-05",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-12",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-19",
+       "2026-12-21",
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
+      ]
+     },
+     "reverse": true,
+     "variant": "SU5_50",
+     "stops": [
+      {
+       "stop": "PERGUSA (Via Apollo)",
+       "idx": 0,
+       "arr": "17.30",
+       "dep": "17.30"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti(fronte Campo Sportivo))",
+       "idx": 1,
+       "arr": "17.31",
+       "dep": "17.31"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
+       "idx": 2,
+       "arr": "17.32",
+       "dep": "17.32"
+      },
+      {
+       "stop": "ENNA BASSA (Via Giuseppe D'Angelo)",
+       "idx": 3,
+       "arr": "17.37",
+       "dep": "17.37"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "idx": 4,
+       "arr": "17.39",
+       "dep": "17.39"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "idx": 5,
+       "arr": "17.39",
+       "dep": "17.39"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (fronte Via Acacie))",
+       "idx": 6,
+       "arr": "17.40",
+       "dep": "17.40"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina 15)",
+       "idx": 7,
+       "arr": "17.41",
+       "dep": "17.41"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 8,
+       "arr": "17.42",
+       "dep": "17.42"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa (sottopassaggio))",
+       "idx": 9,
+       "arr": "17.44",
+       "dep": "17.44"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa(PizzeriaPinocchio))",
+       "idx": 10,
+       "arr": "17.45",
+       "dep": "17.45"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa (Natura Viva))",
+       "idx": 11,
+       "arr": "17.46",
+       "dep": "17.46"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 153)",
+       "idx": 12,
+       "arr": "17.47",
+       "dep": "17.47"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 157 (Bonasera bibite))",
+       "idx": 13,
+       "arr": "17.48",
+       "dep": "17.48"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 139)",
+       "idx": 14,
+       "arr": "17.49",
+       "dep": "17.49"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 210))",
+       "idx": 15,
+       "arr": "17.50",
+       "dep": "17.50"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 104))",
+       "idx": 16,
+       "arr": "17.50",
+       "dep": "17.50"
+      },
+      {
+       "stop": "ENNA (Piazza Alessi)",
+       "idx": 17,
+       "arr": "17.52",
+       "dep": "17.52"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 18,
+       "arr": "17.53",
+       "dep": "17.53"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 32)",
+       "idx": 19,
+       "arr": "17.54",
+       "dep": "17.54"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 20,
+       "arr": "17.55",
+       "dep": "17.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0526",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "40 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-11-22",
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-28",
+       "2026-11-29",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-05",
+       "2026-12-06",
+       "2026-12-07",
+       "2026-12-08",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-12",
+       "2026-12-13",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-19",
+       "2026-12-20",
+       "2026-12-21",
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-25",
+       "2026-12-26",
+       "2026-12-27",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
+      ]
+     },
+     "reverse": true,
+     "variant": "SU5_50",
+     "stops": [
+      {
+       "stop": "PERGUSA (Via Apollo)",
+       "idx": 0,
+       "arr": "23.00",
+       "dep": "23.00"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti(fronte Campo Sportivo))",
+       "idx": 1,
+       "arr": "23.01",
+       "dep": "23.01"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
+       "idx": 2,
+       "arr": "23.02",
+       "dep": "23.02"
+      },
+      {
+       "stop": "ENNA BASSA (Via Giuseppe D'Angelo)",
+       "idx": 3,
+       "arr": "23.07",
+       "dep": "23.07"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "idx": 4,
+       "arr": "23.09",
+       "dep": "23.09"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "idx": 5,
+       "arr": "23.09",
+       "dep": "23.09"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (fronte Via Acacie))",
+       "idx": 6,
+       "arr": "23.10",
+       "dep": "23.10"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina 15)",
+       "idx": 7,
+       "arr": "23.11",
+       "dep": "23.11"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 8,
+       "arr": "23.12",
+       "dep": "23.12"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa (sottopassaggio))",
+       "idx": 9,
+       "arr": "23.14",
+       "dep": "23.14"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa(PizzeriaPinocchio))",
+       "idx": 10,
+       "arr": "23.15",
+       "dep": "23.15"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa (Natura Viva))",
+       "idx": 11,
+       "arr": "23.16",
+       "dep": "23.16"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 153)",
+       "idx": 12,
+       "arr": "23.17",
+       "dep": "23.17"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 157 (Bonasera bibite))",
+       "idx": 13,
+       "arr": "23.18",
+       "dep": "23.18"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 139)",
+       "idx": 14,
+       "arr": "23.19",
+       "dep": "23.19"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 210))",
+       "idx": 15,
+       "arr": "23.20",
+       "dep": "23.20"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 104))",
+       "idx": 16,
+       "arr": "23.20",
+       "dep": "23.20"
+      },
+      {
+       "stop": "ENNA (Piazza Alessi)",
+       "idx": 17,
+       "arr": "23.22",
+       "dep": "23.22"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 18,
+       "arr": "23.23",
+       "dep": "23.23"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 32)",
+       "idx": 19,
+       "arr": "23.24",
+       "dep": "23.24"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 20,
+       "arr": "23.25",
+       "dep": "23.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0510",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "31 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-28",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-05",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-12",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-19",
+       "2026-12-21",
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
+      ]
+     },
+     "reverse": true,
+     "variant": "SU5_50",
+     "stops": [
+      {
+       "stop": "PERGUSA (Via Apollo)",
+       "idx": 0,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti(fronte Campo Sportivo))",
+       "idx": 1,
+       "arr": "11.31",
+       "dep": "11.31"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
+       "idx": 2,
+       "arr": "11.32",
+       "dep": "11.32"
+      },
+      {
+       "stop": "ENNA BASSA (Via Giuseppe D'Angelo)",
+       "idx": 3,
+       "arr": "11.37",
+       "dep": "11.37"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "idx": 4,
+       "arr": "11.39",
+       "dep": "11.39"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "idx": 5,
+       "arr": "11.39",
+       "dep": "11.39"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (fronte Via Acacie))",
+       "idx": 6,
+       "arr": "11.40",
+       "dep": "11.40"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina 15)",
+       "idx": 7,
+       "arr": "11.41",
+       "dep": "11.41"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 8,
+       "arr": "11.42",
+       "dep": "11.42"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa (sottopassaggio))",
+       "idx": 9,
+       "arr": "11.44",
+       "dep": "11.44"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa(PizzeriaPinocchio))",
+       "idx": 10,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa (Natura Viva))",
+       "idx": 11,
+       "arr": "11.46",
+       "dep": "11.46"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 153)",
+       "idx": 12,
+       "arr": "11.47",
+       "dep": "11.47"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 157 (Bonasera bibite))",
+       "idx": 13,
+       "arr": "11.48",
+       "dep": "11.48"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 139)",
+       "idx": 14,
+       "arr": "11.49",
+       "dep": "11.49"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 210))",
+       "idx": 15,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 104))",
+       "idx": 16,
+       "arr": "11.50",
+       "dep": "11.50"
+      },
+      {
+       "stop": "ENNA (Piazza Alessi)",
+       "idx": 17,
+       "arr": "11.52",
+       "dep": "11.52"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 18,
+       "arr": "11.53",
+       "dep": "11.53"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 32)",
+       "idx": 19,
+       "arr": "11.54",
+       "dep": "11.54"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 20,
+       "arr": "11.55",
+       "dep": "11.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0516",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "31 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-28",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-05",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-12",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-19",
+       "2026-12-21",
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
+      ]
+     },
+     "reverse": true,
+     "variant": "SU5_50",
+     "stops": [
+      {
+       "stop": "PERGUSA (Via Apollo)",
+       "idx": 0,
+       "arr": "16.30",
+       "dep": "16.30"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti(fronte Campo Sportivo))",
+       "idx": 1,
+       "arr": "16.31",
+       "dep": "16.31"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
+       "idx": 2,
+       "arr": "16.32",
+       "dep": "16.32"
+      },
+      {
+       "stop": "ENNA BASSA (Via Giuseppe D'Angelo)",
+       "idx": 3,
+       "arr": "16.37",
+       "dep": "16.37"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "idx": 4,
+       "arr": "16.39",
+       "dep": "16.39"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "idx": 5,
+       "arr": "16.39",
+       "dep": "16.39"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (fronte Via Acacie))",
+       "idx": 6,
+       "arr": "16.40",
+       "dep": "16.40"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina 15)",
+       "idx": 7,
+       "arr": "16.41",
+       "dep": "16.41"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 8,
+       "arr": "16.42",
+       "dep": "16.42"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa (sottopassaggio))",
+       "idx": 9,
+       "arr": "16.44",
+       "dep": "16.44"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa(PizzeriaPinocchio))",
+       "idx": 10,
+       "arr": "16.45",
+       "dep": "16.45"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa (Natura Viva))",
+       "idx": 11,
+       "arr": "16.46",
+       "dep": "16.46"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 153)",
+       "idx": 12,
+       "arr": "16.47",
+       "dep": "16.47"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 157 (Bonasera bibite))",
+       "idx": 13,
+       "arr": "16.48",
+       "dep": "16.48"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 139)",
+       "idx": 14,
+       "arr": "16.49",
+       "dep": "16.49"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 210))",
+       "idx": 15,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 104))",
+       "idx": 16,
+       "arr": "16.50",
+       "dep": "16.50"
+      },
+      {
+       "stop": "ENNA (Piazza Alessi)",
+       "idx": 17,
+       "arr": "16.52",
+       "dep": "16.52"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 18,
+       "arr": "16.53",
+       "dep": "16.53"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 32)",
+       "idx": 19,
+       "arr": "16.54",
+       "dep": "16.54"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 20,
+       "arr": "16.55",
+       "dep": "16.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0514",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "31 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-28",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-05",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-12",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-19",
+       "2026-12-21",
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
+      ]
+     },
+     "reverse": true,
+     "variant": "SU5_50",
+     "stops": [
+      {
+       "stop": "PERGUSA (Via Apollo)",
+       "idx": 0,
+       "arr": "14.30",
+       "dep": "14.30"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti(fronte Campo Sportivo))",
+       "idx": 1,
+       "arr": "14.31",
+       "dep": "14.31"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
+       "idx": 2,
+       "arr": "14.32",
+       "dep": "14.32"
+      },
+      {
+       "stop": "ENNA BASSA (Via Giuseppe D'Angelo)",
+       "idx": 3,
+       "arr": "14.37",
+       "dep": "14.37"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "idx": 4,
+       "arr": "14.39",
+       "dep": "14.39"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "idx": 5,
+       "arr": "14.39",
+       "dep": "14.39"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (fronte Via Acacie))",
+       "idx": 6,
+       "arr": "14.40",
+       "dep": "14.40"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina 15)",
+       "idx": 7,
+       "arr": "14.41",
+       "dep": "14.41"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 8,
+       "arr": "14.42",
+       "dep": "14.42"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa (sottopassaggio))",
+       "idx": 9,
+       "arr": "14.44",
+       "dep": "14.44"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa(PizzeriaPinocchio))",
+       "idx": 10,
+       "arr": "14.45",
+       "dep": "14.45"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa (Natura Viva))",
+       "idx": 11,
+       "arr": "14.46",
+       "dep": "14.46"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 153)",
+       "idx": 12,
+       "arr": "14.47",
+       "dep": "14.47"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 157 (Bonasera bibite))",
+       "idx": 13,
+       "arr": "14.48",
+       "dep": "14.48"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 139)",
+       "idx": 14,
+       "arr": "14.49",
+       "dep": "14.49"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 210))",
+       "idx": 15,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 104))",
+       "idx": 16,
+       "arr": "14.50",
+       "dep": "14.50"
+      },
+      {
+       "stop": "ENNA (Piazza Alessi)",
+       "idx": 17,
+       "arr": "14.52",
+       "dep": "14.52"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 18,
+       "arr": "14.53",
+       "dep": "14.53"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 32)",
+       "idx": 19,
+       "arr": "14.54",
+       "dep": "14.54"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 20,
+       "arr": "14.55",
+       "dep": "14.55"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "0508",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "31 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-28",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-05",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-12",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-19",
+       "2026-12-21",
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
+      ]
+     },
+     "reverse": true,
+     "variant": "SU5_50",
+     "stops": [
+      {
+       "stop": "PERGUSA (Via Apollo)",
+       "idx": 0,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti(fronte Campo Sportivo))",
+       "idx": 1,
+       "arr": "10.31",
+       "dep": "10.31"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
+       "idx": 2,
+       "arr": "10.32",
+       "dep": "10.32"
+      },
+      {
+       "stop": "ENNA BASSA (Via Giuseppe D'Angelo)",
+       "idx": 3,
+       "arr": "10.37",
+       "dep": "10.37"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "idx": 4,
+       "arr": "10.39",
+       "dep": "10.39"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "idx": 5,
+       "arr": "10.39",
+       "dep": "10.39"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (fronte Via Acacie))",
+       "idx": 6,
+       "arr": "10.40",
+       "dep": "10.40"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina 15)",
+       "idx": 7,
+       "arr": "10.41",
+       "dep": "10.41"
+      },
+      {
+       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
+       "idx": 8,
+       "arr": "10.42",
+       "dep": "10.42"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa (sottopassaggio))",
+       "idx": 9,
+       "arr": "10.44",
+       "dep": "10.44"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa(PizzeriaPinocchio))",
+       "idx": 10,
+       "arr": "10.45",
+       "dep": "10.45"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusa (Natura Viva))",
+       "idx": 11,
+       "arr": "10.46",
+       "dep": "10.46"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 153)",
+       "idx": 12,
+       "arr": "10.47",
+       "dep": "10.47"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 157 (Bonasera bibite))",
+       "idx": 13,
+       "arr": "10.48",
+       "dep": "10.48"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 139)",
+       "idx": 14,
+       "arr": "10.49",
+       "dep": "10.49"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 210))",
+       "idx": 15,
+       "arr": "10.50",
+       "dep": "10.50"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 104))",
+       "idx": 16,
+       "arr": "10.50",
+       "dep": "10.50"
+      },
+      {
+       "stop": "ENNA (Piazza Alessi)",
+       "idx": 17,
+       "arr": "10.52",
+       "dep": "10.52"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 18,
+       "arr": "10.53",
+       "dep": "10.53"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 32)",
+       "idx": 19,
+       "arr": "10.54",
+       "dep": "10.54"
+      },
+      {
+       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
+       "idx": 20,
+       "arr": "10.55",
+       "dep": "10.55"
+      }
+     ],
+     "valid": true
+    },
+    {
      "corsa": "0550",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "31 exact dates from Albatross validities",
+      "raw": "25 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
@@ -4672,9 +5788,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "7 exact dates from Albatross validities",
+      "raw": "6 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-11-15",
        "2026-11-22",
        "2026-11-29",
        "2026-12-06",
@@ -4816,19 +5931,13 @@
      "valid": true
     },
     {
-     "corsa": "0518",
+     "corsa": "0520",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "31 exact dates from Albatross validities",
+      "raw": "31 exact dates (merged templates)",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
@@ -4853,7 +5962,13 @@
        "2026-12-18",
        "2026-12-19",
        "2026-12-21",
-       "2026-12-22"
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
       ]
      },
      "reverse": true,
@@ -4862,128 +5977,128 @@
       {
        "stop": "PERGUSA (Via Apollo)",
        "idx": 0,
-       "arr": "17.30",
-       "dep": "17.30"
+       "arr": "19.45",
+       "dep": "19.45"
       },
       {
        "stop": "PERGUSA (Viale dei Miti(fronte Campo Sportivo))",
        "idx": 1,
-       "arr": "17.31",
-       "dep": "17.31"
+       "arr": "19.46",
+       "dep": "19.46"
       },
       {
        "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
        "idx": 2,
-       "arr": "17.32",
-       "dep": "17.32"
+       "arr": "19.47",
+       "dep": "19.47"
       },
       {
        "stop": "ENNA BASSA (Via Giuseppe D'Angelo)",
        "idx": 3,
-       "arr": "17.37",
-       "dep": "17.37"
+       "arr": "19.52",
+       "dep": "19.52"
       },
       {
        "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
        "idx": 4,
-       "arr": "17.39",
-       "dep": "17.39"
+       "arr": "19.54",
+       "dep": "19.54"
       },
       {
        "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
        "idx": 5,
-       "arr": "17.39",
-       "dep": "17.39"
+       "arr": "19.54",
+       "dep": "19.54"
       },
       {
        "stop": "ENNA BASSA (Via Pergusina (fronte Via Acacie))",
        "idx": 6,
-       "arr": "17.40",
-       "dep": "17.40"
+       "arr": "19.55",
+       "dep": "19.55"
       },
       {
        "stop": "ENNA BASSA (Via Pergusina 15)",
        "idx": 7,
-       "arr": "17.41",
-       "dep": "17.41"
+       "arr": "19.56",
+       "dep": "19.56"
       },
       {
        "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
        "idx": 8,
-       "arr": "17.42",
-       "dep": "17.42"
+       "arr": "19.57",
+       "dep": "19.57"
       },
       {
        "stop": "ENNA BASSA (Via Pergusa (sottopassaggio))",
        "idx": 9,
-       "arr": "17.44",
-       "dep": "17.44"
+       "arr": "19.59",
+       "dep": "19.59"
       },
       {
        "stop": "ENNA BASSA (Via Pergusa(PizzeriaPinocchio))",
        "idx": 10,
-       "arr": "17.45",
-       "dep": "17.45"
+       "arr": "20.00",
+       "dep": "20.00"
       },
       {
        "stop": "ENNA BASSA (Via Pergusa (Natura Viva))",
        "idx": 11,
-       "arr": "17.46",
-       "dep": "17.46"
+       "arr": "20.01",
+       "dep": "20.01"
       },
       {
        "stop": "ENNA (Via Pergusa 153)",
        "idx": 12,
-       "arr": "17.47",
-       "dep": "17.47"
+       "arr": "20.02",
+       "dep": "20.02"
       },
       {
        "stop": "ENNA (Via Pergusa 157 (Bonasera bibite))",
        "idx": 13,
-       "arr": "17.48",
-       "dep": "17.48"
+       "arr": "20.03",
+       "dep": "20.03"
       },
       {
        "stop": "ENNA (Via Pergusa 139)",
        "idx": 14,
-       "arr": "17.49",
-       "dep": "17.49"
+       "arr": "20.04",
+       "dep": "20.04"
       },
       {
        "stop": "ENNA (Via Pergusa (fronte 210))",
        "idx": 15,
-       "arr": "17.50",
-       "dep": "17.50"
+       "arr": "20.05",
+       "dep": "20.05"
       },
       {
        "stop": "ENNA (Via Pergusa (fronte 104))",
        "idx": 16,
-       "arr": "17.50",
-       "dep": "17.50"
+       "arr": "20.05",
+       "dep": "20.05"
       },
       {
        "stop": "ENNA (Piazza Alessi)",
        "idx": 17,
-       "arr": "17.52",
-       "dep": "17.52"
+       "arr": "20.07",
+       "dep": "20.07"
       },
       {
        "stop": "ENNA (Corso Sicilia 2)",
        "idx": 18,
-       "arr": "17.53",
-       "dep": "17.53"
+       "arr": "20.08",
+       "dep": "20.08"
       },
       {
        "stop": "ENNA (Corso Sicilia 32)",
        "idx": 19,
-       "arr": "17.54",
-       "dep": "17.54"
+       "arr": "20.09",
+       "dep": "20.09"
       },
       {
        "stop": "ENNA (Terminal Bus Viale Diaz 80)",
        "idx": 20,
-       "arr": "17.55",
-       "dep": "17.55"
+       "arr": "20.10",
+       "dep": "20.10"
       }
      ],
      "valid": true
@@ -4994,9 +6109,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "7 exact dates from Albatross validities",
+      "raw": "6 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-11-15",
        "2026-11-22",
        "2026-11-29",
        "2026-12-06",
@@ -5138,19 +6252,13 @@
      "valid": true
     },
     {
-     "corsa": "0514",
+     "corsa": "0524",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "31 exact dates from Albatross validities",
+      "raw": "31 exact dates (merged templates)",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
@@ -5175,7 +6283,13 @@
        "2026-12-18",
        "2026-12-19",
        "2026-12-21",
-       "2026-12-22"
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
       ]
      },
      "reverse": true,
@@ -5184,128 +6298,128 @@
       {
        "stop": "PERGUSA (Via Apollo)",
        "idx": 0,
-       "arr": "14.30",
-       "dep": "14.30"
+       "arr": "21.45",
+       "dep": "21.45"
       },
       {
        "stop": "PERGUSA (Viale dei Miti(fronte Campo Sportivo))",
        "idx": 1,
-       "arr": "14.31",
-       "dep": "14.31"
+       "arr": "21.46",
+       "dep": "21.46"
       },
       {
        "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
        "idx": 2,
-       "arr": "14.32",
-       "dep": "14.32"
+       "arr": "21.47",
+       "dep": "21.47"
       },
       {
        "stop": "ENNA BASSA (Via Giuseppe D'Angelo)",
        "idx": 3,
-       "arr": "14.37",
-       "dep": "14.37"
+       "arr": "21.52",
+       "dep": "21.52"
       },
       {
        "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
        "idx": 4,
-       "arr": "14.39",
-       "dep": "14.39"
+       "arr": "21.54",
+       "dep": "21.54"
       },
       {
        "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
        "idx": 5,
-       "arr": "14.39",
-       "dep": "14.39"
+       "arr": "21.54",
+       "dep": "21.54"
       },
       {
        "stop": "ENNA BASSA (Via Pergusina (fronte Via Acacie))",
        "idx": 6,
-       "arr": "14.40",
-       "dep": "14.40"
+       "arr": "21.55",
+       "dep": "21.55"
       },
       {
        "stop": "ENNA BASSA (Via Pergusina 15)",
        "idx": 7,
-       "arr": "14.41",
-       "dep": "14.41"
+       "arr": "21.56",
+       "dep": "21.56"
       },
       {
        "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
        "idx": 8,
-       "arr": "14.42",
-       "dep": "14.42"
+       "arr": "21.57",
+       "dep": "21.57"
       },
       {
        "stop": "ENNA BASSA (Via Pergusa (sottopassaggio))",
        "idx": 9,
-       "arr": "14.44",
-       "dep": "14.44"
+       "arr": "21.59",
+       "dep": "21.59"
       },
       {
        "stop": "ENNA BASSA (Via Pergusa(PizzeriaPinocchio))",
        "idx": 10,
-       "arr": "14.45",
-       "dep": "14.45"
+       "arr": "22.00",
+       "dep": "22.00"
       },
       {
        "stop": "ENNA BASSA (Via Pergusa (Natura Viva))",
        "idx": 11,
-       "arr": "14.46",
-       "dep": "14.46"
+       "arr": "22.01",
+       "dep": "22.01"
       },
       {
        "stop": "ENNA (Via Pergusa 153)",
        "idx": 12,
-       "arr": "14.47",
-       "dep": "14.47"
+       "arr": "22.02",
+       "dep": "22.02"
       },
       {
        "stop": "ENNA (Via Pergusa 157 (Bonasera bibite))",
        "idx": 13,
-       "arr": "14.48",
-       "dep": "14.48"
+       "arr": "22.03",
+       "dep": "22.03"
       },
       {
        "stop": "ENNA (Via Pergusa 139)",
        "idx": 14,
-       "arr": "14.49",
-       "dep": "14.49"
+       "arr": "22.04",
+       "dep": "22.04"
       },
       {
        "stop": "ENNA (Via Pergusa (fronte 210))",
        "idx": 15,
-       "arr": "14.50",
-       "dep": "14.50"
+       "arr": "22.05",
+       "dep": "22.05"
       },
       {
        "stop": "ENNA (Via Pergusa (fronte 104))",
        "idx": 16,
-       "arr": "14.50",
-       "dep": "14.50"
+       "arr": "22.05",
+       "dep": "22.05"
       },
       {
        "stop": "ENNA (Piazza Alessi)",
        "idx": 17,
-       "arr": "14.52",
-       "dep": "14.52"
+       "arr": "22.07",
+       "dep": "22.07"
       },
       {
        "stop": "ENNA (Corso Sicilia 2)",
        "idx": 18,
-       "arr": "14.53",
-       "dep": "14.53"
+       "arr": "22.08",
+       "dep": "22.08"
       },
       {
        "stop": "ENNA (Corso Sicilia 32)",
        "idx": 19,
-       "arr": "14.54",
-       "dep": "14.54"
+       "arr": "22.09",
+       "dep": "22.09"
       },
       {
        "stop": "ENNA (Terminal Bus Viale Diaz 80)",
        "idx": 20,
-       "arr": "14.55",
-       "dep": "14.55"
+       "arr": "22.10",
+       "dep": "22.10"
       }
      ],
      "valid": true
@@ -5316,9 +6430,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "7 exact dates from Albatross validities",
+      "raw": "6 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-11-15",
        "2026-11-22",
        "2026-11-29",
        "2026-12-06",
@@ -5460,187 +6573,13 @@
      "valid": true
     },
     {
-     "corsa": "0520",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "31 exact dates from Albatross validities",
-      "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
-       "2026-11-23",
-       "2026-11-24",
-       "2026-11-25",
-       "2026-11-26",
-       "2026-11-27",
-       "2026-11-28",
-       "2026-11-30",
-       "2026-12-01",
-       "2026-12-02",
-       "2026-12-03",
-       "2026-12-04",
-       "2026-12-05",
-       "2026-12-07",
-       "2026-12-09",
-       "2026-12-10",
-       "2026-12-11",
-       "2026-12-12",
-       "2026-12-14",
-       "2026-12-15",
-       "2026-12-16",
-       "2026-12-17",
-       "2026-12-18",
-       "2026-12-19",
-       "2026-12-21",
-       "2026-12-22"
-      ]
-     },
-     "reverse": true,
-     "variant": "SU5_50",
-     "stops": [
-      {
-       "stop": "PERGUSA (Via Apollo)",
-       "idx": 0,
-       "arr": "19.45",
-       "dep": "19.45"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti(fronte Campo Sportivo))",
-       "idx": 1,
-       "arr": "19.46",
-       "dep": "19.46"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
-       "idx": 2,
-       "arr": "19.47",
-       "dep": "19.47"
-      },
-      {
-       "stop": "ENNA BASSA (Via Giuseppe D'Angelo)",
-       "idx": 3,
-       "arr": "19.52",
-       "dep": "19.52"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 4,
-       "arr": "19.54",
-       "dep": "19.54"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 5,
-       "arr": "19.54",
-       "dep": "19.54"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (fronte Via Acacie))",
-       "idx": 6,
-       "arr": "19.55",
-       "dep": "19.55"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina 15)",
-       "idx": 7,
-       "arr": "19.56",
-       "dep": "19.56"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 8,
-       "arr": "19.57",
-       "dep": "19.57"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusa (sottopassaggio))",
-       "idx": 9,
-       "arr": "19.59",
-       "dep": "19.59"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusa(PizzeriaPinocchio))",
-       "idx": 10,
-       "arr": "20.00",
-       "dep": "20.00"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusa (Natura Viva))",
-       "idx": 11,
-       "arr": "20.01",
-       "dep": "20.01"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 153)",
-       "idx": 12,
-       "arr": "20.02",
-       "dep": "20.02"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 157 (Bonasera bibite))",
-       "idx": 13,
-       "arr": "20.03",
-       "dep": "20.03"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 139)",
-       "idx": 14,
-       "arr": "20.04",
-       "dep": "20.04"
-      },
-      {
-       "stop": "ENNA (Via Pergusa (fronte 210))",
-       "idx": 15,
-       "arr": "20.05",
-       "dep": "20.05"
-      },
-      {
-       "stop": "ENNA (Via Pergusa (fronte 104))",
-       "idx": 16,
-       "arr": "20.05",
-       "dep": "20.05"
-      },
-      {
-       "stop": "ENNA (Piazza Alessi)",
-       "idx": 17,
-       "arr": "20.07",
-       "dep": "20.07"
-      },
-      {
-       "stop": "ENNA (Corso Sicilia 2)",
-       "idx": 18,
-       "arr": "20.08",
-       "dep": "20.08"
-      },
-      {
-       "stop": "ENNA (Corso Sicilia 32)",
-       "idx": 19,
-       "arr": "20.09",
-       "dep": "20.09"
-      },
-      {
-       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
-       "idx": 20,
-       "arr": "20.10",
-       "dep": "20.10"
-      }
-     ],
-     "valid": true
-    },
-    {
      "corsa": "0538",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "7 exact dates from Albatross validities",
+      "raw": "6 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-11-15",
        "2026-11-22",
        "2026-11-29",
        "2026-12-06",
@@ -5782,187 +6721,13 @@
      "valid": true
     },
     {
-     "corsa": "0524",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "31 exact dates from Albatross validities",
-      "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
-       "2026-11-23",
-       "2026-11-24",
-       "2026-11-25",
-       "2026-11-26",
-       "2026-11-27",
-       "2026-11-28",
-       "2026-11-30",
-       "2026-12-01",
-       "2026-12-02",
-       "2026-12-03",
-       "2026-12-04",
-       "2026-12-05",
-       "2026-12-07",
-       "2026-12-09",
-       "2026-12-10",
-       "2026-12-11",
-       "2026-12-12",
-       "2026-12-14",
-       "2026-12-15",
-       "2026-12-16",
-       "2026-12-17",
-       "2026-12-18",
-       "2026-12-19",
-       "2026-12-21",
-       "2026-12-22"
-      ]
-     },
-     "reverse": true,
-     "variant": "SU5_50",
-     "stops": [
-      {
-       "stop": "PERGUSA (Via Apollo)",
-       "idx": 0,
-       "arr": "21.45",
-       "dep": "21.45"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti(fronte Campo Sportivo))",
-       "idx": 1,
-       "arr": "21.46",
-       "dep": "21.46"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
-       "idx": 2,
-       "arr": "21.47",
-       "dep": "21.47"
-      },
-      {
-       "stop": "ENNA BASSA (Via Giuseppe D'Angelo)",
-       "idx": 3,
-       "arr": "21.52",
-       "dep": "21.52"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 4,
-       "arr": "21.54",
-       "dep": "21.54"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 5,
-       "arr": "21.54",
-       "dep": "21.54"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (fronte Via Acacie))",
-       "idx": 6,
-       "arr": "21.55",
-       "dep": "21.55"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina 15)",
-       "idx": 7,
-       "arr": "21.56",
-       "dep": "21.56"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 8,
-       "arr": "21.57",
-       "dep": "21.57"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusa (sottopassaggio))",
-       "idx": 9,
-       "arr": "21.59",
-       "dep": "21.59"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusa(PizzeriaPinocchio))",
-       "idx": 10,
-       "arr": "22.00",
-       "dep": "22.00"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusa (Natura Viva))",
-       "idx": 11,
-       "arr": "22.01",
-       "dep": "22.01"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 153)",
-       "idx": 12,
-       "arr": "22.02",
-       "dep": "22.02"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 157 (Bonasera bibite))",
-       "idx": 13,
-       "arr": "22.03",
-       "dep": "22.03"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 139)",
-       "idx": 14,
-       "arr": "22.04",
-       "dep": "22.04"
-      },
-      {
-       "stop": "ENNA (Via Pergusa (fronte 210))",
-       "idx": 15,
-       "arr": "22.05",
-       "dep": "22.05"
-      },
-      {
-       "stop": "ENNA (Via Pergusa (fronte 104))",
-       "idx": 16,
-       "arr": "22.05",
-       "dep": "22.05"
-      },
-      {
-       "stop": "ENNA (Piazza Alessi)",
-       "idx": 17,
-       "arr": "22.07",
-       "dep": "22.07"
-      },
-      {
-       "stop": "ENNA (Corso Sicilia 2)",
-       "idx": 18,
-       "arr": "22.08",
-       "dep": "22.08"
-      },
-      {
-       "stop": "ENNA (Corso Sicilia 32)",
-       "idx": 19,
-       "arr": "22.09",
-       "dep": "22.09"
-      },
-      {
-       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
-       "idx": 20,
-       "arr": "22.10",
-       "dep": "22.10"
-      }
-     ],
-     "valid": true
-    },
-    {
      "corsa": "0542",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "7 exact dates from Albatross validities",
+      "raw": "6 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-11-15",
        "2026-11-22",
        "2026-11-29",
        "2026-12-06",
@@ -6104,187 +6869,13 @@
      "valid": true
     },
     {
-     "corsa": "0516",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "31 exact dates from Albatross validities",
-      "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
-       "2026-11-23",
-       "2026-11-24",
-       "2026-11-25",
-       "2026-11-26",
-       "2026-11-27",
-       "2026-11-28",
-       "2026-11-30",
-       "2026-12-01",
-       "2026-12-02",
-       "2026-12-03",
-       "2026-12-04",
-       "2026-12-05",
-       "2026-12-07",
-       "2026-12-09",
-       "2026-12-10",
-       "2026-12-11",
-       "2026-12-12",
-       "2026-12-14",
-       "2026-12-15",
-       "2026-12-16",
-       "2026-12-17",
-       "2026-12-18",
-       "2026-12-19",
-       "2026-12-21",
-       "2026-12-22"
-      ]
-     },
-     "reverse": true,
-     "variant": "SU5_50",
-     "stops": [
-      {
-       "stop": "PERGUSA (Via Apollo)",
-       "idx": 0,
-       "arr": "16.30",
-       "dep": "16.30"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti(fronte Campo Sportivo))",
-       "idx": 1,
-       "arr": "16.31",
-       "dep": "16.31"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
-       "idx": 2,
-       "arr": "16.32",
-       "dep": "16.32"
-      },
-      {
-       "stop": "ENNA BASSA (Via Giuseppe D'Angelo)",
-       "idx": 3,
-       "arr": "16.37",
-       "dep": "16.37"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 4,
-       "arr": "16.39",
-       "dep": "16.39"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 5,
-       "arr": "16.39",
-       "dep": "16.39"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (fronte Via Acacie))",
-       "idx": 6,
-       "arr": "16.40",
-       "dep": "16.40"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina 15)",
-       "idx": 7,
-       "arr": "16.41",
-       "dep": "16.41"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 8,
-       "arr": "16.42",
-       "dep": "16.42"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusa (sottopassaggio))",
-       "idx": 9,
-       "arr": "16.44",
-       "dep": "16.44"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusa(PizzeriaPinocchio))",
-       "idx": 10,
-       "arr": "16.45",
-       "dep": "16.45"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusa (Natura Viva))",
-       "idx": 11,
-       "arr": "16.46",
-       "dep": "16.46"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 153)",
-       "idx": 12,
-       "arr": "16.47",
-       "dep": "16.47"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 157 (Bonasera bibite))",
-       "idx": 13,
-       "arr": "16.48",
-       "dep": "16.48"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 139)",
-       "idx": 14,
-       "arr": "16.49",
-       "dep": "16.49"
-      },
-      {
-       "stop": "ENNA (Via Pergusa (fronte 210))",
-       "idx": 15,
-       "arr": "16.50",
-       "dep": "16.50"
-      },
-      {
-       "stop": "ENNA (Via Pergusa (fronte 104))",
-       "idx": 16,
-       "arr": "16.50",
-       "dep": "16.50"
-      },
-      {
-       "stop": "ENNA (Piazza Alessi)",
-       "idx": 17,
-       "arr": "16.52",
-       "dep": "16.52"
-      },
-      {
-       "stop": "ENNA (Corso Sicilia 2)",
-       "idx": 18,
-       "arr": "16.53",
-       "dep": "16.53"
-      },
-      {
-       "stop": "ENNA (Corso Sicilia 32)",
-       "idx": 19,
-       "arr": "16.54",
-       "dep": "16.54"
-      },
-      {
-       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
-       "idx": 20,
-       "arr": "16.55",
-       "dep": "16.55"
-      }
-     ],
-     "valid": true
-    },
-    {
      "corsa": "0540",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "7 exact dates from Albatross validities",
+      "raw": "6 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-11-15",
        "2026-11-22",
        "2026-11-29",
        "2026-12-06",
@@ -6426,341 +7017,13 @@
      "valid": true
     },
     {
-     "corsa": "0536",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "7 exact dates from Albatross validities",
-      "explicit_dates": [
-       "2026-11-15",
-       "2026-11-22",
-       "2026-11-29",
-       "2026-12-06",
-       "2026-12-08",
-       "2026-12-13",
-       "2026-12-20"
-      ]
-     },
-     "reverse": true,
-     "variant": "SU5_50",
-     "stops": [
-      {
-       "stop": "PERGUSA (Via Apollo)",
-       "idx": 0,
-       "arr": "13.00",
-       "dep": "13.00"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti(fronte Campo Sportivo))",
-       "idx": 1,
-       "arr": "13.01",
-       "dep": "13.01"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
-       "idx": 2,
-       "arr": "13.02",
-       "dep": "13.02"
-      },
-      {
-       "stop": "ENNA BASSA (Via Giuseppe D'Angelo)",
-       "idx": 3,
-       "arr": "13.07",
-       "dep": "13.07"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 4,
-       "arr": "13.09",
-       "dep": "13.09"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 5,
-       "arr": "13.09",
-       "dep": "13.09"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (fronte Via Acacie))",
-       "idx": 6,
-       "arr": "13.10",
-       "dep": "13.10"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina 15)",
-       "idx": 7,
-       "arr": "13.11",
-       "dep": "13.11"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 8,
-       "arr": "13.12",
-       "dep": "13.12"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusa (sottopassaggio))",
-       "idx": 9,
-       "arr": "13.14",
-       "dep": "13.14"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusa(PizzeriaPinocchio))",
-       "idx": 10,
-       "arr": "13.15",
-       "dep": "13.15"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusa (Natura Viva))",
-       "idx": 11,
-       "arr": "13.16",
-       "dep": "13.16"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 153)",
-       "idx": 12,
-       "arr": "13.17",
-       "dep": "13.17"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 157 (Bonasera bibite))",
-       "idx": 13,
-       "arr": "13.18",
-       "dep": "13.18"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 139)",
-       "idx": 14,
-       "arr": "13.19",
-       "dep": "13.19"
-      },
-      {
-       "stop": "ENNA (Via Pergusa (fronte 210))",
-       "idx": 15,
-       "arr": "13.20",
-       "dep": "13.20"
-      },
-      {
-       "stop": "ENNA (Via Pergusa (fronte 104))",
-       "idx": 16,
-       "arr": "13.20",
-       "dep": "13.20"
-      },
-      {
-       "stop": "ENNA (Piazza Alessi)",
-       "idx": 17,
-       "arr": "13.22",
-       "dep": "13.22"
-      },
-      {
-       "stop": "ENNA (Corso Sicilia 2)",
-       "idx": 18,
-       "arr": "13.23",
-       "dep": "13.23"
-      },
-      {
-       "stop": "ENNA (Corso Sicilia 32)",
-       "idx": 19,
-       "arr": "13.24",
-       "dep": "13.24"
-      },
-      {
-       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
-       "idx": 20,
-       "arr": "13.25",
-       "dep": "13.25"
-      }
-     ],
-     "valid": true
-    },
-    {
-     "corsa": "0510",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "31 exact dates from Albatross validities",
-      "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
-       "2026-11-23",
-       "2026-11-24",
-       "2026-11-25",
-       "2026-11-26",
-       "2026-11-27",
-       "2026-11-28",
-       "2026-11-30",
-       "2026-12-01",
-       "2026-12-02",
-       "2026-12-03",
-       "2026-12-04",
-       "2026-12-05",
-       "2026-12-07",
-       "2026-12-09",
-       "2026-12-10",
-       "2026-12-11",
-       "2026-12-12",
-       "2026-12-14",
-       "2026-12-15",
-       "2026-12-16",
-       "2026-12-17",
-       "2026-12-18",
-       "2026-12-19",
-       "2026-12-21",
-       "2026-12-22"
-      ]
-     },
-     "reverse": true,
-     "variant": "SU5_50",
-     "stops": [
-      {
-       "stop": "PERGUSA (Via Apollo)",
-       "idx": 0,
-       "arr": "11.30",
-       "dep": "11.30"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti(fronte Campo Sportivo))",
-       "idx": 1,
-       "arr": "11.31",
-       "dep": "11.31"
-      },
-      {
-       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
-       "idx": 2,
-       "arr": "11.32",
-       "dep": "11.32"
-      },
-      {
-       "stop": "ENNA BASSA (Via Giuseppe D'Angelo)",
-       "idx": 3,
-       "arr": "11.37",
-       "dep": "11.37"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 4,
-       "arr": "11.39",
-       "dep": "11.39"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
-       "idx": 5,
-       "arr": "11.39",
-       "dep": "11.39"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina (fronte Via Acacie))",
-       "idx": 6,
-       "arr": "11.40",
-       "dep": "11.40"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusina 15)",
-       "idx": 7,
-       "arr": "11.41",
-       "dep": "11.41"
-      },
-      {
-       "stop": "ENNA BASSA (Terminal Bus - Via L.da Vinci 5)",
-       "idx": 8,
-       "arr": "11.42",
-       "dep": "11.42"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusa (sottopassaggio))",
-       "idx": 9,
-       "arr": "11.44",
-       "dep": "11.44"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusa(PizzeriaPinocchio))",
-       "idx": 10,
-       "arr": "11.45",
-       "dep": "11.45"
-      },
-      {
-       "stop": "ENNA BASSA (Via Pergusa (Natura Viva))",
-       "idx": 11,
-       "arr": "11.46",
-       "dep": "11.46"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 153)",
-       "idx": 12,
-       "arr": "11.47",
-       "dep": "11.47"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 157 (Bonasera bibite))",
-       "idx": 13,
-       "arr": "11.48",
-       "dep": "11.48"
-      },
-      {
-       "stop": "ENNA (Via Pergusa 139)",
-       "idx": 14,
-       "arr": "11.49",
-       "dep": "11.49"
-      },
-      {
-       "stop": "ENNA (Via Pergusa (fronte 210))",
-       "idx": 15,
-       "arr": "11.50",
-       "dep": "11.50"
-      },
-      {
-       "stop": "ENNA (Via Pergusa (fronte 104))",
-       "idx": 16,
-       "arr": "11.50",
-       "dep": "11.50"
-      },
-      {
-       "stop": "ENNA (Piazza Alessi)",
-       "idx": 17,
-       "arr": "11.52",
-       "dep": "11.52"
-      },
-      {
-       "stop": "ENNA (Corso Sicilia 2)",
-       "idx": 18,
-       "arr": "11.53",
-       "dep": "11.53"
-      },
-      {
-       "stop": "ENNA (Corso Sicilia 32)",
-       "idx": 19,
-       "arr": "11.54",
-       "dep": "11.54"
-      },
-      {
-       "stop": "ENNA (Terminal Bus Viale Diaz 80)",
-       "idx": 20,
-       "arr": "11.55",
-       "dep": "11.55"
-      }
-     ],
-     "valid": true
-    },
-    {
      "corsa": "0522",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "31 exact dates from Albatross validities",
+      "raw": "31 exact dates (merged templates)",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
@@ -6785,7 +7048,13 @@
        "2026-12-18",
        "2026-12-19",
        "2026-12-21",
-       "2026-12-22"
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
       ]
      },
      "reverse": true,
@@ -6926,13 +7195,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "26 exact dates from Albatross validities",
+      "raw": "21 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
@@ -7179,19 +7443,251 @@
      "valid": true
     },
     {
+     "corsa": "0502",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "6 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
+      ]
+     },
+     "reverse": true,
+     "variant": "SU5_53",
+     "stops": [
+      {
+       "stop": "PERGUSA (Via Apollo)",
+       "idx": 0,
+       "arr": "7.05",
+       "dep": "7.05"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti(fronte Campo Sportivo))",
+       "idx": 1,
+       "arr": "7.06",
+       "dep": "7.06"
+      },
+      {
+       "stop": "PERGUSA (Viale dei Miti 27 (rifornimento))",
+       "idx": 2,
+       "arr": "7.07",
+       "dep": "7.07"
+      },
+      {
+       "stop": "ENNA BASSA (Via Giuseppe D'Angelo)",
+       "idx": 3,
+       "arr": "7.12",
+       "dep": "7.12"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (Ospedale))",
+       "idx": 4,
+       "arr": "7.14",
+       "dep": "7.14"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina (fronte Via Acacie))",
+       "idx": 5,
+       "arr": "7.15",
+       "dep": "7.15"
+      },
+      {
+       "stop": "ENNA BASSA (Via Pergusina(incr.Via delle Acacie))",
+       "idx": 6,
+       "arr": "7.17",
+       "dep": "7.17"
+      },
+      {
+       "stop": "ENNA BASSA (Via Civiltà del Lavoro 2)",
+       "idx": 7,
+       "arr": "7.19",
+       "dep": "7.19"
+      },
+      {
+       "stop": "ENNA BASSA (Viale delle Olimpiadi 183)",
+       "idx": 8,
+       "arr": "7.20",
+       "dep": "7.20"
+      },
+      {
+       "stop": "ENNA BASSA (Viale delle Olimpiadi 143)",
+       "idx": 9,
+       "arr": "7.21",
+       "dep": "7.21"
+      },
+      {
+       "stop": "ENNA BASSA (Viale delle Olimpiadi 81/A)",
+       "idx": 10,
+       "arr": "7.22",
+       "dep": "7.22"
+      },
+      {
+       "stop": "ENNA BASSA (Viale delle Olimpiadi 35)",
+       "idx": 11,
+       "arr": "7.23",
+       "dep": "7.23"
+      },
+      {
+       "stop": "ENNA BASSA (Viale delle Olimpiadi(incr.Via S.Mazza))",
+       "idx": 12,
+       "arr": "7.24",
+       "dep": "7.24"
+      },
+      {
+       "stop": "ENNA BASSA (Viale delle Olimpiadi(incr.Via Ingrà))",
+       "idx": 13,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "ENNA BASSA (Viale dell'Unità d'Italia (incr. Via Salerno))",
+       "idx": 14,
+       "arr": "7.25",
+       "dep": "7.25"
+      },
+      {
+       "stop": "ENNA BASSA (Viale dell'Unità d'Italia(fronte 49))",
+       "idx": 15,
+       "arr": "7.26",
+       "dep": "7.26"
+      },
+      {
+       "stop": "ENNA BASSA (Viale dell'Unità d'Italia(nuova Chiesa))",
+       "idx": 16,
+       "arr": "7.27",
+       "dep": "7.27"
+      },
+      {
+       "stop": "ENNA BASSA (Via Toscana 7)",
+       "idx": 17,
+       "arr": "7.28",
+       "dep": "7.28"
+      },
+      {
+       "stop": "ENNA BASSA (Via Scifitello(incr.Via Veneto))",
+       "idx": 18,
+       "arr": "7.30",
+       "dep": "7.30"
+      },
+      {
+       "stop": "ENNA BASSA (Via Scifitello(fronte supermercato))",
+       "idx": 19,
+       "arr": "7.32",
+       "dep": "7.32"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 153)",
+       "idx": 20,
+       "arr": "7.34",
+       "dep": "7.34"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 157 (Bonasera bibite))",
+       "idx": 21,
+       "arr": "7.35",
+       "dep": "7.35"
+      },
+      {
+       "stop": "ENNA (Via Pergusa 139)",
+       "idx": 22,
+       "arr": "7.36",
+       "dep": "7.36"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 210))",
+       "idx": 23,
+       "arr": "7.37",
+       "dep": "7.37"
+      },
+      {
+       "stop": "ENNA (Via Pergusa (fronte 104))",
+       "idx": 24,
+       "arr": "7.38",
+       "dep": "7.38"
+      },
+      {
+       "stop": "ENNA (Piazza Alessi)",
+       "idx": 25,
+       "arr": "7.40",
+       "dep": "7.40"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 2)",
+       "idx": 26,
+       "arr": "7.41",
+       "dep": "7.41"
+      },
+      {
+       "stop": "ENNA (Corso Sicilia 32)",
+       "idx": 27,
+       "arr": "7.42",
+       "dep": "7.42"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 75)",
+       "idx": 28,
+       "arr": "7.43",
+       "dep": "7.43"
+      },
+      {
+       "stop": "ENNA (Viale Diaz (Istituto Professionale))",
+       "idx": 29,
+       "arr": "7.44",
+       "dep": "7.44"
+      },
+      {
+       "stop": "ENNA (Viale Diaz 47)",
+       "idx": 30,
+       "arr": "7.45",
+       "dep": "7.45"
+      },
+      {
+       "stop": "ENNA (Viale IV Novembre 8)",
+       "idx": 31,
+       "arr": "7.46",
+       "dep": "7.46"
+      },
+      {
+       "stop": "ENNA (Piazza Europa)",
+       "idx": 32,
+       "arr": "7.47",
+       "dep": "7.47"
+      },
+      {
+       "stop": "ENNA (Via Cavalieri di Vittorio Veneto 48)",
+       "idx": 33,
+       "arr": "7.48",
+       "dep": "7.48"
+      },
+      {
+       "stop": "ENNA (Via Cav. di Vittorio Veneto(incr. Via Piave))",
+       "idx": 34,
+       "arr": "7.49",
+       "dep": "7.49"
+      },
+      {
+       "stop": "ENNA (Via Spirito Santo 144)",
+       "idx": 35,
+       "arr": "7.50",
+       "dep": "7.50"
+      }
+     ],
+     "valid": true
+    },
+    {
      "corsa": "0512",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "31 exact dates from Albatross validities",
+      "raw": "25 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
@@ -7357,14 +7853,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "31 exact dates from Albatross validities",
+      "raw": "25 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
@@ -7530,14 +8020,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "31 exact dates from Albatross validities",
+      "raw": "25 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",

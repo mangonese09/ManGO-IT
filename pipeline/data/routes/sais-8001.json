@@ -62,14 +62,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "31 exact dates from Albatross validities",
+      "raw": "31 exact dates (merged templates)",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
@@ -94,7 +88,13 @@
        "2026-12-18",
        "2026-12-19",
        "2026-12-21",
-       "2026-12-22"
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
       ]
      },
      "reverse": false,
@@ -290,605 +290,13 @@
      "valid": true
     },
     {
-     "corsa": "023003",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "31 exact dates from Albatross validities",
-      "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
-       "2026-11-23",
-       "2026-11-24",
-       "2026-11-25",
-       "2026-11-26",
-       "2026-11-27",
-       "2026-11-28",
-       "2026-11-30",
-       "2026-12-01",
-       "2026-12-02",
-       "2026-12-03",
-       "2026-12-04",
-       "2026-12-05",
-       "2026-12-07",
-       "2026-12-09",
-       "2026-12-10",
-       "2026-12-11",
-       "2026-12-12",
-       "2026-12-14",
-       "2026-12-15",
-       "2026-12-16",
-       "2026-12-17",
-       "2026-12-18",
-       "2026-12-19",
-       "2026-12-21",
-       "2026-12-22"
-      ]
-     },
-     "reverse": false,
-     "variant": "MIL8001_12 new",
-     "stops": [
-      {
-       "stop": "MILAZZO (Porto)",
-       "idx": 0,
-       "arr": "10.30",
-       "dep": "10.30"
-      },
-      {
-       "stop": "MILAZZO (Piazza Roma 20)",
-       "idx": 1,
-       "arr": "10.32",
-       "dep": "10.32"
-      },
-      {
-       "stop": "MILAZZO (Via Risorgimento 91)",
-       "idx": 2,
-       "arr": "10.33",
-       "dep": "10.33"
-      },
-      {
-       "stop": "MILAZZO (Via Risorgimento 65)",
-       "idx": 3,
-       "arr": "10.34",
-       "dep": "10.34"
-      },
-      {
-       "stop": "MILAZZO (Via Risorgimento 3)",
-       "idx": 4,
-       "arr": "10.35",
-       "dep": "10.35"
-      },
-      {
-       "stop": "MILAZZO (Piazza XXV Aprile)",
-       "idx": 5,
-       "arr": "10.36",
-       "dep": "10.36"
-      },
-      {
-       "stop": "MILAZZO (Via Magistri 40)",
-       "idx": 6,
-       "arr": "10.37",
-       "dep": "10.37"
-      },
-      {
-       "stop": "MILAZZO (Via San Paolino 90)",
-       "idx": 7,
-       "arr": "10.39",
-       "dep": "10.39"
-      },
-      {
-       "stop": "MILAZZO (Via Kennedy 92)",
-       "idx": 8,
-       "arr": "10.41",
-       "dep": "10.41"
-      },
-      {
-       "stop": "MILAZZO (Via S Marco (incrocio Via Rio Rosso))",
-       "idx": 9,
-       "arr": "10.44",
-       "dep": "10.44"
-      },
-      {
-       "stop": "MILAZZO (Via San Marco 84)",
-       "idx": 10,
-       "arr": "10.46",
-       "dep": "10.46"
-      },
-      {
-       "stop": "MILAZZO (Via S Marco 106)",
-       "idx": 11,
-       "arr": "10.47",
-       "dep": "10.47"
-      },
-      {
-       "stop": "MILAZZO (Via S Marco 144)",
-       "idx": 12,
-       "arr": "10.48",
-       "dep": "10.48"
-      },
-      {
-       "stop": "MILAZZO (Via S Marco 190)",
-       "idx": 13,
-       "arr": "10.49",
-       "dep": "10.49"
-      },
-      {
-       "stop": "MILAZZO (Via Garrisi 245)",
-       "idx": 14,
-       "arr": "10.50",
-       "dep": "10.50"
-      },
-      {
-       "stop": "MILAZZO (Via Garrisi fronte126)",
-       "idx": 15,
-       "arr": "10.51",
-       "dep": "10.51"
-      },
-      {
-       "stop": "MILAZZO (Via Garrisi 85)",
-       "idx": 16,
-       "arr": "10.52",
-       "dep": "10.52"
-      },
-      {
-       "stop": "MILAZZO (Via Scaccia 145)",
-       "idx": 17,
-       "arr": "10.53",
-       "dep": "10.53"
-      },
-      {
-       "stop": "MILAZZO (Via Scaccia 119)",
-       "idx": 18,
-       "arr": "10.54",
-       "dep": "10.54"
-      },
-      {
-       "stop": "MILAZZO (Via Scaccia 37)",
-       "idx": 19,
-       "arr": "10.56",
-       "dep": "10.56"
-      },
-      {
-       "stop": "MILAZZO (Via Santa Marina 16)",
-       "idx": 20,
-       "arr": "10.59",
-       "dep": "10.59"
-      },
-      {
-       "stop": "MILAZZO (Via S. Marina 60)",
-       "idx": 21,
-       "arr": "11.00",
-       "dep": "11.00"
-      },
-      {
-       "stop": "MILAZZO (Via S. Marina 152)",
-       "idx": 22,
-       "arr": "11.01",
-       "dep": "11.01"
-      },
-      {
-       "stop": "MILAZZO (Via S. Marina 258)",
-       "idx": 23,
-       "arr": "11.02",
-       "dep": "11.02"
-      },
-      {
-       "stop": "MILAZZO (Via Bastione 112)",
-       "idx": 24,
-       "arr": "11.03",
-       "dep": "11.03"
-      },
-      {
-       "stop": "MILAZZO (Via Bastione 206)",
-       "idx": 25,
-       "arr": "11.04",
-       "dep": "11.04"
-      },
-      {
-       "stop": "MILAZZO (Via Torretta 30)",
-       "idx": 26,
-       "arr": "11.05",
-       "dep": "11.05"
-      },
-      {
-       "stop": "MILAZZO (Via Torretta 94)",
-       "idx": 27,
-       "arr": "11.06",
-       "dep": "11.06"
-      },
-      {
-       "stop": "MILAZZO (Via Spiaggia Ponente 211)",
-       "idx": 28,
-       "arr": "11.08",
-       "dep": "11.08"
-      },
-      {
-       "stop": "MILAZZO (Via Spiaggia Ponente 199)",
-       "idx": 29,
-       "arr": "11.09",
-       "dep": "11.09"
-      },
-      {
-       "stop": "MILAZZO (Via Spiaggia Ponente 173)",
-       "idx": 30,
-       "arr": "11.10",
-       "dep": "11.10"
-      },
-      {
-       "stop": "MILAZZO (Via Spiaggia Ponente 137)",
-       "idx": 31,
-       "arr": "11.12",
-       "dep": "11.12"
-      },
-      {
-       "stop": "MILAZZO (Via Rio Rosso 147)",
-       "idx": 32,
-       "arr": "11.14",
-       "dep": "11.14"
-      },
-      {
-       "stop": "MILAZZO (Via Due Bagli fronte 90)",
-       "idx": 33,
-       "arr": "11.16",
-       "dep": "11.16"
-      },
-      {
-       "stop": "MILAZZO (Via Due Bagli 17)",
-       "idx": 34,
-       "arr": "11.17",
-       "dep": "11.17"
-      },
-      {
-       "stop": "MILAZZO (Via Due Bagli fronte 14)",
-       "idx": 35,
-       "arr": "11.18",
-       "dep": "11.18"
-      },
-      {
-       "stop": "MILAZZO (Via T. de Gregorio 56)",
-       "idx": 36,
-       "arr": "11.20",
-       "dep": "11.20"
-      },
-      {
-       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
-       "idx": 37,
-       "arr": "11.21",
-       "dep": "11.21"
-      },
-      {
-       "stop": "MILAZZO (Via Ciantro 3)",
-       "idx": 38,
-       "arr": "11.22",
-       "dep": "11.22"
-      },
-      {
-       "stop": "MILAZZO (Via dei Mille)",
-       "idx": 39,
-       "arr": "11.23",
-       "dep": "11.23"
-      },
-      {
-       "stop": "MILAZZO (Porto)",
-       "idx": 40,
-       "arr": "11.25",
-       "dep": "11.25"
-      }
-     ],
-     "valid": true
-    },
-    {
-     "corsa": "023005",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "31 exact dates from Albatross validities",
-      "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
-       "2026-11-23",
-       "2026-11-24",
-       "2026-11-25",
-       "2026-11-26",
-       "2026-11-27",
-       "2026-11-28",
-       "2026-11-30",
-       "2026-12-01",
-       "2026-12-02",
-       "2026-12-03",
-       "2026-12-04",
-       "2026-12-05",
-       "2026-12-07",
-       "2026-12-09",
-       "2026-12-10",
-       "2026-12-11",
-       "2026-12-12",
-       "2026-12-14",
-       "2026-12-15",
-       "2026-12-16",
-       "2026-12-17",
-       "2026-12-18",
-       "2026-12-19",
-       "2026-12-21",
-       "2026-12-22"
-      ]
-     },
-     "reverse": false,
-     "variant": "MIL8001_12 new",
-     "stops": [
-      {
-       "stop": "MILAZZO (Porto)",
-       "idx": 0,
-       "arr": "12.30",
-       "dep": "12.30"
-      },
-      {
-       "stop": "MILAZZO (Piazza Roma 20)",
-       "idx": 1,
-       "arr": "12.32",
-       "dep": "12.32"
-      },
-      {
-       "stop": "MILAZZO (Via Risorgimento 91)",
-       "idx": 2,
-       "arr": "12.33",
-       "dep": "12.33"
-      },
-      {
-       "stop": "MILAZZO (Via Risorgimento 65)",
-       "idx": 3,
-       "arr": "12.34",
-       "dep": "12.34"
-      },
-      {
-       "stop": "MILAZZO (Via Risorgimento 3)",
-       "idx": 4,
-       "arr": "12.35",
-       "dep": "12.35"
-      },
-      {
-       "stop": "MILAZZO (Piazza XXV Aprile)",
-       "idx": 5,
-       "arr": "12.36",
-       "dep": "12.36"
-      },
-      {
-       "stop": "MILAZZO (Via Magistri 40)",
-       "idx": 6,
-       "arr": "12.37",
-       "dep": "12.37"
-      },
-      {
-       "stop": "MILAZZO (Via San Paolino 90)",
-       "idx": 7,
-       "arr": "12.39",
-       "dep": "12.39"
-      },
-      {
-       "stop": "MILAZZO (Via Kennedy 92)",
-       "idx": 8,
-       "arr": "12.41",
-       "dep": "12.41"
-      },
-      {
-       "stop": "MILAZZO (Via S Marco (incrocio Via Rio Rosso))",
-       "idx": 9,
-       "arr": "12.44",
-       "dep": "12.44"
-      },
-      {
-       "stop": "MILAZZO (Via San Marco 84)",
-       "idx": 10,
-       "arr": "12.46",
-       "dep": "12.46"
-      },
-      {
-       "stop": "MILAZZO (Via S Marco 106)",
-       "idx": 11,
-       "arr": "12.47",
-       "dep": "12.47"
-      },
-      {
-       "stop": "MILAZZO (Via S Marco 144)",
-       "idx": 12,
-       "arr": "12.48",
-       "dep": "12.48"
-      },
-      {
-       "stop": "MILAZZO (Via S Marco 190)",
-       "idx": 13,
-       "arr": "12.49",
-       "dep": "12.49"
-      },
-      {
-       "stop": "MILAZZO (Via Garrisi 245)",
-       "idx": 14,
-       "arr": "12.50",
-       "dep": "12.50"
-      },
-      {
-       "stop": "MILAZZO (Via Garrisi fronte126)",
-       "idx": 15,
-       "arr": "12.51",
-       "dep": "12.51"
-      },
-      {
-       "stop": "MILAZZO (Via Garrisi 85)",
-       "idx": 16,
-       "arr": "12.52",
-       "dep": "12.52"
-      },
-      {
-       "stop": "MILAZZO (Via Scaccia 145)",
-       "idx": 17,
-       "arr": "12.53",
-       "dep": "12.53"
-      },
-      {
-       "stop": "MILAZZO (Via Scaccia 119)",
-       "idx": 18,
-       "arr": "12.54",
-       "dep": "12.54"
-      },
-      {
-       "stop": "MILAZZO (Via Scaccia 37)",
-       "idx": 19,
-       "arr": "12.56",
-       "dep": "12.56"
-      },
-      {
-       "stop": "MILAZZO (Via Santa Marina 16)",
-       "idx": 20,
-       "arr": "12.59",
-       "dep": "12.59"
-      },
-      {
-       "stop": "MILAZZO (Via S. Marina 60)",
-       "idx": 21,
-       "arr": "13.00",
-       "dep": "13.00"
-      },
-      {
-       "stop": "MILAZZO (Via S. Marina 152)",
-       "idx": 22,
-       "arr": "13.01",
-       "dep": "13.01"
-      },
-      {
-       "stop": "MILAZZO (Via S. Marina 258)",
-       "idx": 23,
-       "arr": "13.02",
-       "dep": "13.02"
-      },
-      {
-       "stop": "MILAZZO (Via Bastione 112)",
-       "idx": 24,
-       "arr": "13.03",
-       "dep": "13.03"
-      },
-      {
-       "stop": "MILAZZO (Via Bastione 206)",
-       "idx": 25,
-       "arr": "13.04",
-       "dep": "13.04"
-      },
-      {
-       "stop": "MILAZZO (Via Torretta 30)",
-       "idx": 26,
-       "arr": "13.05",
-       "dep": "13.05"
-      },
-      {
-       "stop": "MILAZZO (Via Torretta 94)",
-       "idx": 27,
-       "arr": "13.06",
-       "dep": "13.06"
-      },
-      {
-       "stop": "MILAZZO (Via Spiaggia Ponente 211)",
-       "idx": 28,
-       "arr": "13.08",
-       "dep": "13.08"
-      },
-      {
-       "stop": "MILAZZO (Via Spiaggia Ponente 199)",
-       "idx": 29,
-       "arr": "13.09",
-       "dep": "13.09"
-      },
-      {
-       "stop": "MILAZZO (Via Spiaggia Ponente 173)",
-       "idx": 30,
-       "arr": "13.10",
-       "dep": "13.10"
-      },
-      {
-       "stop": "MILAZZO (Via Spiaggia Ponente 137)",
-       "idx": 31,
-       "arr": "13.12",
-       "dep": "13.12"
-      },
-      {
-       "stop": "MILAZZO (Via Rio Rosso 147)",
-       "idx": 32,
-       "arr": "13.14",
-       "dep": "13.14"
-      },
-      {
-       "stop": "MILAZZO (Via Due Bagli fronte 90)",
-       "idx": 33,
-       "arr": "13.16",
-       "dep": "13.16"
-      },
-      {
-       "stop": "MILAZZO (Via Due Bagli 17)",
-       "idx": 34,
-       "arr": "13.17",
-       "dep": "13.17"
-      },
-      {
-       "stop": "MILAZZO (Via Due Bagli fronte 14)",
-       "idx": 35,
-       "arr": "13.18",
-       "dep": "13.18"
-      },
-      {
-       "stop": "MILAZZO (Via T. de Gregorio 56)",
-       "idx": 36,
-       "arr": "13.20",
-       "dep": "13.20"
-      },
-      {
-       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
-       "idx": 37,
-       "arr": "13.21",
-       "dep": "13.21"
-      },
-      {
-       "stop": "MILAZZO (Via Ciantro 3)",
-       "idx": 38,
-       "arr": "13.22",
-       "dep": "13.22"
-      },
-      {
-       "stop": "MILAZZO (Via dei Mille)",
-       "idx": 39,
-       "arr": "13.23",
-       "dep": "13.23"
-      },
-      {
-       "stop": "MILAZZO (Porto)",
-       "idx": 40,
-       "arr": "13.25",
-       "dep": "13.25"
-      }
-     ],
-     "valid": true
-    },
-    {
-     "corsa": "023001",
+     "corsa": "023023",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
       "raw": "31 exact dates (merged templates)",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
@@ -913,7 +321,13 @@
        "2026-12-18",
        "2026-12-19",
        "2026-12-21",
-       "2026-12-22"
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
       ]
      },
      "reverse": false,
@@ -1174,14 +588,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "31 exact dates from Albatross validities",
+      "raw": "31 exact dates (merged templates)",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
@@ -1206,7 +614,13 @@
        "2026-12-18",
        "2026-12-19",
        "2026-12-21",
-       "2026-12-22"
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
       ]
      },
      "reverse": false,
@@ -1462,19 +876,13 @@
      "valid": true
     },
     {
-     "corsa": "023013",
+     "corsa": "023003",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "31 exact dates from Albatross validities",
+      "raw": "31 exact dates (merged templates)",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
@@ -1499,7 +907,879 @@
        "2026-12-18",
        "2026-12-19",
        "2026-12-21",
-       "2026-12-22"
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8001_12 new",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "10.30",
+       "dep": "10.30"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "10.32",
+       "dep": "10.32"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "10.33",
+       "dep": "10.33"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "10.34",
+       "dep": "10.34"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "10.35",
+       "dep": "10.35"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "10.36",
+       "dep": "10.36"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "10.37",
+       "dep": "10.37"
+      },
+      {
+       "stop": "MILAZZO (Via San Paolino 90)",
+       "idx": 7,
+       "arr": "10.39",
+       "dep": "10.39"
+      },
+      {
+       "stop": "MILAZZO (Via Kennedy 92)",
+       "idx": 8,
+       "arr": "10.41",
+       "dep": "10.41"
+      },
+      {
+       "stop": "MILAZZO (Via S Marco (incrocio Via Rio Rosso))",
+       "idx": 9,
+       "arr": "10.44",
+       "dep": "10.44"
+      },
+      {
+       "stop": "MILAZZO (Via San Marco 84)",
+       "idx": 10,
+       "arr": "10.46",
+       "dep": "10.46"
+      },
+      {
+       "stop": "MILAZZO (Via S Marco 106)",
+       "idx": 11,
+       "arr": "10.47",
+       "dep": "10.47"
+      },
+      {
+       "stop": "MILAZZO (Via S Marco 144)",
+       "idx": 12,
+       "arr": "10.48",
+       "dep": "10.48"
+      },
+      {
+       "stop": "MILAZZO (Via S Marco 190)",
+       "idx": 13,
+       "arr": "10.49",
+       "dep": "10.49"
+      },
+      {
+       "stop": "MILAZZO (Via Garrisi 245)",
+       "idx": 14,
+       "arr": "10.50",
+       "dep": "10.50"
+      },
+      {
+       "stop": "MILAZZO (Via Garrisi fronte126)",
+       "idx": 15,
+       "arr": "10.51",
+       "dep": "10.51"
+      },
+      {
+       "stop": "MILAZZO (Via Garrisi 85)",
+       "idx": 16,
+       "arr": "10.52",
+       "dep": "10.52"
+      },
+      {
+       "stop": "MILAZZO (Via Scaccia 145)",
+       "idx": 17,
+       "arr": "10.53",
+       "dep": "10.53"
+      },
+      {
+       "stop": "MILAZZO (Via Scaccia 119)",
+       "idx": 18,
+       "arr": "10.54",
+       "dep": "10.54"
+      },
+      {
+       "stop": "MILAZZO (Via Scaccia 37)",
+       "idx": 19,
+       "arr": "10.56",
+       "dep": "10.56"
+      },
+      {
+       "stop": "MILAZZO (Via Santa Marina 16)",
+       "idx": 20,
+       "arr": "10.59",
+       "dep": "10.59"
+      },
+      {
+       "stop": "MILAZZO (Via S. Marina 60)",
+       "idx": 21,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "MILAZZO (Via S. Marina 152)",
+       "idx": 22,
+       "arr": "11.01",
+       "dep": "11.01"
+      },
+      {
+       "stop": "MILAZZO (Via S. Marina 258)",
+       "idx": 23,
+       "arr": "11.02",
+       "dep": "11.02"
+      },
+      {
+       "stop": "MILAZZO (Via Bastione 112)",
+       "idx": 24,
+       "arr": "11.03",
+       "dep": "11.03"
+      },
+      {
+       "stop": "MILAZZO (Via Bastione 206)",
+       "idx": 25,
+       "arr": "11.04",
+       "dep": "11.04"
+      },
+      {
+       "stop": "MILAZZO (Via Torretta 30)",
+       "idx": 26,
+       "arr": "11.05",
+       "dep": "11.05"
+      },
+      {
+       "stop": "MILAZZO (Via Torretta 94)",
+       "idx": 27,
+       "arr": "11.06",
+       "dep": "11.06"
+      },
+      {
+       "stop": "MILAZZO (Via Spiaggia Ponente 211)",
+       "idx": 28,
+       "arr": "11.08",
+       "dep": "11.08"
+      },
+      {
+       "stop": "MILAZZO (Via Spiaggia Ponente 199)",
+       "idx": 29,
+       "arr": "11.09",
+       "dep": "11.09"
+      },
+      {
+       "stop": "MILAZZO (Via Spiaggia Ponente 173)",
+       "idx": 30,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "MILAZZO (Via Spiaggia Ponente 137)",
+       "idx": 31,
+       "arr": "11.12",
+       "dep": "11.12"
+      },
+      {
+       "stop": "MILAZZO (Via Rio Rosso 147)",
+       "idx": 32,
+       "arr": "11.14",
+       "dep": "11.14"
+      },
+      {
+       "stop": "MILAZZO (Via Due Bagli fronte 90)",
+       "idx": 33,
+       "arr": "11.16",
+       "dep": "11.16"
+      },
+      {
+       "stop": "MILAZZO (Via Due Bagli 17)",
+       "idx": 34,
+       "arr": "11.17",
+       "dep": "11.17"
+      },
+      {
+       "stop": "MILAZZO (Via Due Bagli fronte 14)",
+       "idx": 35,
+       "arr": "11.18",
+       "dep": "11.18"
+      },
+      {
+       "stop": "MILAZZO (Via T. de Gregorio 56)",
+       "idx": 36,
+       "arr": "11.20",
+       "dep": "11.20"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 37,
+       "arr": "11.21",
+       "dep": "11.21"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 38,
+       "arr": "11.22",
+       "dep": "11.22"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 39,
+       "arr": "11.23",
+       "dep": "11.23"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 40,
+       "arr": "11.25",
+       "dep": "11.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "023005",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "31 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-28",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-05",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-12",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-19",
+       "2026-12-21",
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8001_12 new",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "12.30",
+       "dep": "12.30"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "12.32",
+       "dep": "12.32"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "12.33",
+       "dep": "12.33"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "12.34",
+       "dep": "12.34"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "12.35",
+       "dep": "12.35"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "12.36",
+       "dep": "12.36"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "12.37",
+       "dep": "12.37"
+      },
+      {
+       "stop": "MILAZZO (Via San Paolino 90)",
+       "idx": 7,
+       "arr": "12.39",
+       "dep": "12.39"
+      },
+      {
+       "stop": "MILAZZO (Via Kennedy 92)",
+       "idx": 8,
+       "arr": "12.41",
+       "dep": "12.41"
+      },
+      {
+       "stop": "MILAZZO (Via S Marco (incrocio Via Rio Rosso))",
+       "idx": 9,
+       "arr": "12.44",
+       "dep": "12.44"
+      },
+      {
+       "stop": "MILAZZO (Via San Marco 84)",
+       "idx": 10,
+       "arr": "12.46",
+       "dep": "12.46"
+      },
+      {
+       "stop": "MILAZZO (Via S Marco 106)",
+       "idx": 11,
+       "arr": "12.47",
+       "dep": "12.47"
+      },
+      {
+       "stop": "MILAZZO (Via S Marco 144)",
+       "idx": 12,
+       "arr": "12.48",
+       "dep": "12.48"
+      },
+      {
+       "stop": "MILAZZO (Via S Marco 190)",
+       "idx": 13,
+       "arr": "12.49",
+       "dep": "12.49"
+      },
+      {
+       "stop": "MILAZZO (Via Garrisi 245)",
+       "idx": 14,
+       "arr": "12.50",
+       "dep": "12.50"
+      },
+      {
+       "stop": "MILAZZO (Via Garrisi fronte126)",
+       "idx": 15,
+       "arr": "12.51",
+       "dep": "12.51"
+      },
+      {
+       "stop": "MILAZZO (Via Garrisi 85)",
+       "idx": 16,
+       "arr": "12.52",
+       "dep": "12.52"
+      },
+      {
+       "stop": "MILAZZO (Via Scaccia 145)",
+       "idx": 17,
+       "arr": "12.53",
+       "dep": "12.53"
+      },
+      {
+       "stop": "MILAZZO (Via Scaccia 119)",
+       "idx": 18,
+       "arr": "12.54",
+       "dep": "12.54"
+      },
+      {
+       "stop": "MILAZZO (Via Scaccia 37)",
+       "idx": 19,
+       "arr": "12.56",
+       "dep": "12.56"
+      },
+      {
+       "stop": "MILAZZO (Via Santa Marina 16)",
+       "idx": 20,
+       "arr": "12.59",
+       "dep": "12.59"
+      },
+      {
+       "stop": "MILAZZO (Via S. Marina 60)",
+       "idx": 21,
+       "arr": "13.00",
+       "dep": "13.00"
+      },
+      {
+       "stop": "MILAZZO (Via S. Marina 152)",
+       "idx": 22,
+       "arr": "13.01",
+       "dep": "13.01"
+      },
+      {
+       "stop": "MILAZZO (Via S. Marina 258)",
+       "idx": 23,
+       "arr": "13.02",
+       "dep": "13.02"
+      },
+      {
+       "stop": "MILAZZO (Via Bastione 112)",
+       "idx": 24,
+       "arr": "13.03",
+       "dep": "13.03"
+      },
+      {
+       "stop": "MILAZZO (Via Bastione 206)",
+       "idx": 25,
+       "arr": "13.04",
+       "dep": "13.04"
+      },
+      {
+       "stop": "MILAZZO (Via Torretta 30)",
+       "idx": 26,
+       "arr": "13.05",
+       "dep": "13.05"
+      },
+      {
+       "stop": "MILAZZO (Via Torretta 94)",
+       "idx": 27,
+       "arr": "13.06",
+       "dep": "13.06"
+      },
+      {
+       "stop": "MILAZZO (Via Spiaggia Ponente 211)",
+       "idx": 28,
+       "arr": "13.08",
+       "dep": "13.08"
+      },
+      {
+       "stop": "MILAZZO (Via Spiaggia Ponente 199)",
+       "idx": 29,
+       "arr": "13.09",
+       "dep": "13.09"
+      },
+      {
+       "stop": "MILAZZO (Via Spiaggia Ponente 173)",
+       "idx": 30,
+       "arr": "13.10",
+       "dep": "13.10"
+      },
+      {
+       "stop": "MILAZZO (Via Spiaggia Ponente 137)",
+       "idx": 31,
+       "arr": "13.12",
+       "dep": "13.12"
+      },
+      {
+       "stop": "MILAZZO (Via Rio Rosso 147)",
+       "idx": 32,
+       "arr": "13.14",
+       "dep": "13.14"
+      },
+      {
+       "stop": "MILAZZO (Via Due Bagli fronte 90)",
+       "idx": 33,
+       "arr": "13.16",
+       "dep": "13.16"
+      },
+      {
+       "stop": "MILAZZO (Via Due Bagli 17)",
+       "idx": 34,
+       "arr": "13.17",
+       "dep": "13.17"
+      },
+      {
+       "stop": "MILAZZO (Via Due Bagli fronte 14)",
+       "idx": 35,
+       "arr": "13.18",
+       "dep": "13.18"
+      },
+      {
+       "stop": "MILAZZO (Via T. de Gregorio 56)",
+       "idx": 36,
+       "arr": "13.20",
+       "dep": "13.20"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 37,
+       "arr": "13.21",
+       "dep": "13.21"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 38,
+       "arr": "13.22",
+       "dep": "13.22"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 39,
+       "arr": "13.23",
+       "dep": "13.23"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 40,
+       "arr": "13.25",
+       "dep": "13.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "023007",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "6 exact dates from Albatross validities",
+      "explicit_dates": [
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
+      ]
+     },
+     "reverse": false,
+     "variant": "MIL8001_11 new",
+     "stops": [
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 0,
+       "arr": "13.35",
+       "dep": "13.35"
+      },
+      {
+       "stop": "MILAZZO (Piazza Roma 20)",
+       "idx": 1,
+       "arr": "13.37",
+       "dep": "13.37"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 91)",
+       "idx": 2,
+       "arr": "13.38",
+       "dep": "13.38"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 65)",
+       "idx": 3,
+       "arr": "13.39",
+       "dep": "13.39"
+      },
+      {
+       "stop": "MILAZZO (Via Risorgimento 3)",
+       "idx": 4,
+       "arr": "13.40",
+       "dep": "13.40"
+      },
+      {
+       "stop": "MILAZZO (Piazza XXV Aprile)",
+       "idx": 5,
+       "arr": "13.41",
+       "dep": "13.41"
+      },
+      {
+       "stop": "MILAZZO (Via Magistri 40)",
+       "idx": 6,
+       "arr": "13.42",
+       "dep": "13.42"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 10)",
+       "idx": 7,
+       "arr": "13.43",
+       "dep": "13.43"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro ang. Via D'Annunzio)",
+       "idx": 8,
+       "arr": "13.44",
+       "dep": "13.44"
+      },
+      {
+       "stop": "MILAZZO (Via T. de Gregorio 57)",
+       "idx": 9,
+       "arr": "13.46",
+       "dep": "13.46"
+      },
+      {
+       "stop": "MILAZZO (Via Kennedy 92)",
+       "idx": 10,
+       "arr": "13.48",
+       "dep": "13.48"
+      },
+      {
+       "stop": "MILAZZO (Via S Marco (incrocio Via Rio Rosso))",
+       "idx": 11,
+       "arr": "13.50",
+       "dep": "13.50"
+      },
+      {
+       "stop": "MILAZZO (Via San Marco 84)",
+       "idx": 12,
+       "arr": "13.52",
+       "dep": "13.52"
+      },
+      {
+       "stop": "MILAZZO (Via S Marco 106)",
+       "idx": 13,
+       "arr": "13.53",
+       "dep": "13.53"
+      },
+      {
+       "stop": "MILAZZO (Via S Marco 144)",
+       "idx": 14,
+       "arr": "13.54",
+       "dep": "13.54"
+      },
+      {
+       "stop": "MILAZZO (Via S Marco 190)",
+       "idx": 15,
+       "arr": "13.55",
+       "dep": "13.55"
+      },
+      {
+       "stop": "MILAZZO (Via Garrisi 245)",
+       "idx": 16,
+       "arr": "13.56",
+       "dep": "13.56"
+      },
+      {
+       "stop": "MILAZZO (Via Garrisi fronte126)",
+       "idx": 17,
+       "arr": "13.57",
+       "dep": "13.57"
+      },
+      {
+       "stop": "MILAZZO (Via Garrisi 85)",
+       "idx": 18,
+       "arr": "13.58",
+       "dep": "13.58"
+      },
+      {
+       "stop": "MILAZZO (Via Scaccia 145)",
+       "idx": 19,
+       "arr": "13.59",
+       "dep": "13.59"
+      },
+      {
+       "stop": "MILAZZO (Via Scaccia 119)",
+       "idx": 20,
+       "arr": "14.00",
+       "dep": "14.00"
+      },
+      {
+       "stop": "MILAZZO (Via Scaccia 37)",
+       "idx": 21,
+       "arr": "14.02",
+       "dep": "14.02"
+      },
+      {
+       "stop": "MILAZZO (Via Santa Marina 16)",
+       "idx": 22,
+       "arr": "14.04",
+       "dep": "14.04"
+      },
+      {
+       "stop": "MILAZZO (Via S. Marina 60)",
+       "idx": 23,
+       "arr": "14.05",
+       "dep": "14.05"
+      },
+      {
+       "stop": "MILAZZO (Via S. Marina 152)",
+       "idx": 24,
+       "arr": "14.06",
+       "dep": "14.06"
+      },
+      {
+       "stop": "MILAZZO (Via S. Marina 258)",
+       "idx": 25,
+       "arr": "14.07",
+       "dep": "14.07"
+      },
+      {
+       "stop": "MILAZZO (Via Bastione 112)",
+       "idx": 26,
+       "arr": "14.08",
+       "dep": "14.08"
+      },
+      {
+       "stop": "MILAZZO (Via Bastione 206)",
+       "idx": 27,
+       "arr": "14.09",
+       "dep": "14.09"
+      },
+      {
+       "stop": "MILAZZO (Via Torretta 30)",
+       "idx": 28,
+       "arr": "14.10",
+       "dep": "14.10"
+      },
+      {
+       "stop": "MILAZZO (Via Torretta 94)",
+       "idx": 29,
+       "arr": "14.11",
+       "dep": "14.11"
+      },
+      {
+       "stop": "MILAZZO (Via Spiaggia Ponente 211)",
+       "idx": 30,
+       "arr": "14.13",
+       "dep": "14.13"
+      },
+      {
+       "stop": "MILAZZO (Via Spiaggia Ponente 199)",
+       "idx": 31,
+       "arr": "14.14",
+       "dep": "14.14"
+      },
+      {
+       "stop": "MILAZZO (Via Spiaggia Ponente 173)",
+       "idx": 32,
+       "arr": "14.15",
+       "dep": "14.15"
+      },
+      {
+       "stop": "MILAZZO (Via Spiaggia Ponente 137)",
+       "idx": 33,
+       "arr": "14.17",
+       "dep": "14.17"
+      },
+      {
+       "stop": "MILAZZO (Via Rio Rosso 147)",
+       "idx": 34,
+       "arr": "14.19",
+       "dep": "14.19"
+      },
+      {
+       "stop": "MILAZZO (Via Due Bagli fronte 90)",
+       "idx": 35,
+       "arr": "14.21",
+       "dep": "14.21"
+      },
+      {
+       "stop": "MILAZZO (Via Due Bagli 17)",
+       "idx": 36,
+       "arr": "14.22",
+       "dep": "14.22"
+      },
+      {
+       "stop": "MILAZZO (Via Due Bagli fronte 14)",
+       "idx": 37,
+       "arr": "14.23",
+       "dep": "14.23"
+      },
+      {
+       "stop": "MILAZZO (Via T. de Gregorio 56)",
+       "idx": 38,
+       "arr": "14.25",
+       "dep": "14.25"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro fronte Via D'Annunzio)",
+       "idx": 39,
+       "arr": "14.26",
+       "dep": "14.26"
+      },
+      {
+       "stop": "MILAZZO (Via Ciantro 3)",
+       "idx": 40,
+       "arr": "14.27",
+       "dep": "14.27"
+      },
+      {
+       "stop": "MILAZZO (Via dei Mille)",
+       "idx": 41,
+       "arr": "14.28",
+       "dep": "14.28"
+      },
+      {
+       "stop": "MILAZZO (Porto)",
+       "idx": 42,
+       "arr": "14.30",
+       "dep": "14.30"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "023013",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "31 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-28",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-05",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-12",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-19",
+       "2026-12-21",
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
       ]
      },
      "reverse": false,
@@ -1772,14 +2052,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "31 exact dates from Albatross validities",
+      "raw": "25 exact dates from Albatross validities",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",

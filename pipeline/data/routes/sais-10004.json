@@ -61,14 +61,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "31 exact dates from Albatross validities",
+      "raw": "31 exact dates (merged templates)",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
@@ -93,7 +87,13 @@
        "2026-12-18",
        "2026-12-19",
        "2026-12-21",
-       "2026-12-22"
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
       ]
      },
      "reverse": false,
@@ -378,14 +378,8 @@
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "31 exact dates from Albatross validities",
+      "raw": "31 exact dates (merged templates)",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
@@ -410,7 +404,13 @@
        "2026-12-18",
        "2026-12-19",
        "2026-12-21",
-       "2026-12-22"
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
       ]
      },
      "reverse": false,
@@ -690,336 +690,13 @@
      "valid": true
     },
     {
-     "corsa": "004005",
-     "service": {
-      "days": "explicit",
-      "school": null,
-      "season": null,
-      "raw": "31 exact dates from Albatross validities",
-      "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
-       "2026-11-23",
-       "2026-11-24",
-       "2026-11-25",
-       "2026-11-26",
-       "2026-11-27",
-       "2026-11-28",
-       "2026-11-30",
-       "2026-12-01",
-       "2026-12-02",
-       "2026-12-03",
-       "2026-12-04",
-       "2026-12-05",
-       "2026-12-07",
-       "2026-12-09",
-       "2026-12-10",
-       "2026-12-11",
-       "2026-12-12",
-       "2026-12-14",
-       "2026-12-15",
-       "2026-12-16",
-       "2026-12-17",
-       "2026-12-18",
-       "2026-12-19",
-       "2026-12-21",
-       "2026-12-22"
-      ]
-     },
-     "reverse": false,
-     "variant": "AUG10004_7",
-     "stops": [
-      {
-       "stop": "AUGUSTA (Via Caracciolo (fronte 74))",
-       "idx": 0,
-       "arr": "11.00",
-       "dep": "11.00"
-      },
-      {
-       "stop": "AUGUSTA (Lungomare Paradiso)",
-       "idx": 1,
-       "arr": "11.02",
-       "dep": "11.02"
-      },
-      {
-       "stop": "AUGUSTA (Via Xifonia, 210)",
-       "idx": 2,
-       "arr": "11.03",
-       "dep": "11.03"
-      },
-      {
-       "stop": "AUGUSTA (Via Xifonia, 138)",
-       "idx": 3,
-       "arr": "11.03",
-       "dep": "11.03"
-      },
-      {
-       "stop": "AUGUSTA (Via Xifonia fronte 119)",
-       "idx": 4,
-       "arr": "11.04",
-       "dep": "11.04"
-      },
-      {
-       "stop": "AUGUSTA (Via Xifonia fronte 9)",
-       "idx": 5,
-       "arr": "11.05",
-       "dep": "11.05"
-      },
-      {
-       "stop": "AUGUSTA (Lungomare Rossini, 8)",
-       "idx": 6,
-       "arr": "11.10",
-       "dep": "11.10"
-      },
-      {
-       "stop": "AUGUSTA (Via Lavaggi, 75)",
-       "idx": 7,
-       "arr": "11.11",
-       "dep": "11.11"
-      },
-      {
-       "stop": "AUGUSTA (Via Lavaggi, 201)",
-       "idx": 8,
-       "arr": "11.11",
-       "dep": "11.11"
-      },
-      {
-       "stop": "AUGUSTA (Viale Italia fronte 104)",
-       "idx": 9,
-       "arr": "11.13",
-       "dep": "11.13"
-      },
-      {
-       "stop": "AUGUSTA (Viale Italia fronte 286 (Piazza Fontana))",
-       "idx": 10,
-       "arr": "11.14",
-       "dep": "11.14"
-      },
-      {
-       "stop": "AUGUSTA (Viale Epicarmo Corbino, 59)",
-       "idx": 11,
-       "arr": "11.17",
-       "dep": "11.17"
-      },
-      {
-       "stop": "AUGUSTA (Viale Epicarmo Corbino, 29)",
-       "idx": 12,
-       "arr": "11.18",
-       "dep": "11.18"
-      },
-      {
-       "stop": "AUGUSTA (Via Barone Zuppello fronte 84)",
-       "idx": 13,
-       "arr": "11.20",
-       "dep": "11.20"
-      },
-      {
-       "stop": "AUGUSTA (Via delle Mimose, 2)",
-       "idx": 14,
-       "arr": "11.22",
-       "dep": "11.22"
-      },
-      {
-       "stop": "AUGUSTA (Via Barone Zuppello snc)",
-       "idx": 15,
-       "arr": "11.24",
-       "dep": "11.24"
-      },
-      {
-       "stop": "AUGUSTA (Via Barone Zuppello fronte 16)",
-       "idx": 16,
-       "arr": "11.25",
-       "dep": "11.25"
-      },
-      {
-       "stop": "AUGUSTA (Via Pantelleria, 20)",
-       "idx": 17,
-       "arr": "11.27",
-       "dep": "11.27"
-      },
-      {
-       "stop": "AUGUSTA (Via Pantelleria fronte 17)",
-       "idx": 18,
-       "arr": "11.28",
-       "dep": "11.28"
-      },
-      {
-       "stop": "AUGUSTA (Via Pantelleria fronte 20)",
-       "idx": 19,
-       "arr": "11.29",
-       "dep": "11.29"
-      },
-      {
-       "stop": "AUGUSTA (Via Guglielmo Marconi fronte 3)",
-       "idx": 20,
-       "arr": "11.30",
-       "dep": "11.30"
-      },
-      {
-       "stop": "AUGUSTA (Via Copernico incrocio Via Tolomeo)",
-       "idx": 21,
-       "arr": "11.31",
-       "dep": "11.31"
-      },
-      {
-       "stop": "AUGUSTA (Via Darwin, 6)",
-       "idx": 22,
-       "arr": "11.32",
-       "dep": "11.32"
-      },
-      {
-       "stop": "AUGUSTA (Via Mendel, 19)",
-       "idx": 23,
-       "arr": "11.33",
-       "dep": "11.33"
-      },
-      {
-       "stop": "AUGUSTA (Via Paolo Borsellino incr. Via Falcone)",
-       "idx": 24,
-       "arr": "11.35",
-       "dep": "11.35"
-      },
-      {
-       "stop": "AUGUSTA (Via Paolo Borsellino incr. Via Martoglio)",
-       "idx": 25,
-       "arr": "11.36",
-       "dep": "11.36"
-      },
-      {
-       "stop": "AUGUSTA (Via Barone Zuppello incr. Via Randone)",
-       "idx": 26,
-       "arr": "11.37",
-       "dep": "11.37"
-      },
-      {
-       "stop": "AUGUSTA (Via Barone Zuppello incr. Via Mar Mediterraneo)",
-       "idx": 27,
-       "arr": "11.38",
-       "dep": "11.38"
-      },
-      {
-       "stop": "AUGUSTA (Via Panoramica incrocio Via Hegel)",
-       "idx": 28,
-       "arr": "11.39",
-       "dep": "11.39"
-      },
-      {
-       "stop": "AUGUSTA (Via Panoramica fronte 70)",
-       "idx": 29,
-       "arr": "11.40",
-       "dep": "11.40"
-      },
-      {
-       "stop": "AUGUSTA (Via Panoramica fronte 42)",
-       "idx": 30,
-       "arr": "11.41",
-       "dep": "11.41"
-      },
-      {
-       "stop": "AUGUSTA (Via Kant, 1)",
-       "idx": 31,
-       "arr": "11.42",
-       "dep": "11.42"
-      },
-      {
-       "stop": "AUGUSTA (Via Epicarmo Corbino fronte 15)",
-       "idx": 32,
-       "arr": "11.43",
-       "dep": "11.43"
-      },
-      {
-       "stop": "AUGUSTA (Via Epicarmo Corbino fronte 59)",
-       "idx": 33,
-       "arr": "11.45",
-       "dep": "11.45"
-      },
-      {
-       "stop": "AUGUSTA (Ospedale)",
-       "idx": 34,
-       "arr": "11.51",
-       "dep": "11.51"
-      },
-      {
-       "stop": "AUGUSTA (Corso Sicilia, 6)",
-       "idx": 35,
-       "arr": "11.53",
-       "dep": "11.53"
-      },
-      {
-       "stop": "AUGUSTA (Via Cristoforo Colombo, 30)",
-       "idx": 36,
-       "arr": "11.57",
-       "dep": "11.57"
-      },
-      {
-       "stop": "AUGUSTA (Viale Vittorio Veneto, 1)",
-       "idx": 37,
-       "arr": "11.58",
-       "dep": "11.58"
-      },
-      {
-       "stop": "AUGUSTA (Via della Dogana fronte 4)",
-       "idx": 38,
-       "arr": "11.58",
-       "dep": "11.58"
-      },
-      {
-       "stop": "AUGUSTA (Via della Dogana fronte 54)",
-       "idx": 39,
-       "arr": "11.59",
-       "dep": "11.59"
-      },
-      {
-       "stop": "AUGUSTA (Via Marina Ponente, 15)",
-       "idx": 40,
-       "arr": "12.00",
-       "dep": "12.00"
-      },
-      {
-       "stop": "AUGUSTA (Via Marina Ponente fronte 36)",
-       "idx": 41,
-       "arr": "12.01",
-       "dep": "12.01"
-      },
-      {
-       "stop": "AUGUSTA (Via Adua (farmacia))",
-       "idx": 42,
-       "arr": "12.03",
-       "dep": "12.03"
-      },
-      {
-       "stop": "AUGUSTA (Piazza Duomo fronte 128)",
-       "idx": 43,
-       "arr": "12.04",
-       "dep": "12.04"
-      },
-      {
-       "stop": "AUGUSTA (Via Caracciolo (fronte 74))",
-       "idx": 44,
-       "arr": "12.05",
-       "dep": "12.05"
-      }
-     ],
-     "valid": true
-    },
-    {
      "corsa": "004001",
      "service": {
       "days": "explicit",
       "school": null,
       "season": null,
-      "raw": "31 exact dates from Albatross validities",
+      "raw": "31 exact dates (merged templates)",
       "explicit_dates": [
-       "2026-11-16",
-       "2026-11-17",
-       "2026-11-18",
-       "2026-11-19",
-       "2026-11-20",
-       "2026-11-21",
        "2026-11-23",
        "2026-11-24",
        "2026-11-25",
@@ -1044,7 +721,13 @@
        "2026-12-18",
        "2026-12-19",
        "2026-12-21",
-       "2026-12-22"
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
       ]
      },
      "reverse": false,
@@ -1319,6 +1002,323 @@
        "idx": 44,
        "arr": "9.25",
        "dep": "9.25"
+      }
+     ],
+     "valid": true
+    },
+    {
+     "corsa": "004005",
+     "service": {
+      "days": "explicit",
+      "school": null,
+      "season": null,
+      "raw": "31 exact dates (merged templates)",
+      "explicit_dates": [
+       "2026-11-23",
+       "2026-11-24",
+       "2026-11-25",
+       "2026-11-26",
+       "2026-11-27",
+       "2026-11-28",
+       "2026-11-30",
+       "2026-12-01",
+       "2026-12-02",
+       "2026-12-03",
+       "2026-12-04",
+       "2026-12-05",
+       "2026-12-07",
+       "2026-12-09",
+       "2026-12-10",
+       "2026-12-11",
+       "2026-12-12",
+       "2026-12-14",
+       "2026-12-15",
+       "2026-12-16",
+       "2026-12-17",
+       "2026-12-18",
+       "2026-12-19",
+       "2026-12-21",
+       "2026-12-22",
+       "2026-12-23",
+       "2026-12-24",
+       "2026-12-28",
+       "2026-12-29",
+       "2026-12-30",
+       "2026-12-31"
+      ]
+     },
+     "reverse": false,
+     "variant": "AUG10004_7",
+     "stops": [
+      {
+       "stop": "AUGUSTA (Via Caracciolo (fronte 74))",
+       "idx": 0,
+       "arr": "11.00",
+       "dep": "11.00"
+      },
+      {
+       "stop": "AUGUSTA (Lungomare Paradiso)",
+       "idx": 1,
+       "arr": "11.02",
+       "dep": "11.02"
+      },
+      {
+       "stop": "AUGUSTA (Via Xifonia, 210)",
+       "idx": 2,
+       "arr": "11.03",
+       "dep": "11.03"
+      },
+      {
+       "stop": "AUGUSTA (Via Xifonia, 138)",
+       "idx": 3,
+       "arr": "11.03",
+       "dep": "11.03"
+      },
+      {
+       "stop": "AUGUSTA (Via Xifonia fronte 119)",
+       "idx": 4,
+       "arr": "11.04",
+       "dep": "11.04"
+      },
+      {
+       "stop": "AUGUSTA (Via Xifonia fronte 9)",
+       "idx": 5,
+       "arr": "11.05",
+       "dep": "11.05"
+      },
+      {
+       "stop": "AUGUSTA (Lungomare Rossini, 8)",
+       "idx": 6,
+       "arr": "11.10",
+       "dep": "11.10"
+      },
+      {
+       "stop": "AUGUSTA (Via Lavaggi, 75)",
+       "idx": 7,
+       "arr": "11.11",
+       "dep": "11.11"
+      },
+      {
+       "stop": "AUGUSTA (Via Lavaggi, 201)",
+       "idx": 8,
+       "arr": "11.11",
+       "dep": "11.11"
+      },
+      {
+       "stop": "AUGUSTA (Viale Italia fronte 104)",
+       "idx": 9,
+       "arr": "11.13",
+       "dep": "11.13"
+      },
+      {
+       "stop": "AUGUSTA (Viale Italia fronte 286 (Piazza Fontana))",
+       "idx": 10,
+       "arr": "11.14",
+       "dep": "11.14"
+      },
+      {
+       "stop": "AUGUSTA (Viale Epicarmo Corbino, 59)",
+       "idx": 11,
+       "arr": "11.17",
+       "dep": "11.17"
+      },
+      {
+       "stop": "AUGUSTA (Viale Epicarmo Corbino, 29)",
+       "idx": 12,
+       "arr": "11.18",
+       "dep": "11.18"
+      },
+      {
+       "stop": "AUGUSTA (Via Barone Zuppello fronte 84)",
+       "idx": 13,
+       "arr": "11.20",
+       "dep": "11.20"
+      },
+      {
+       "stop": "AUGUSTA (Via delle Mimose, 2)",
+       "idx": 14,
+       "arr": "11.22",
+       "dep": "11.22"
+      },
+      {
+       "stop": "AUGUSTA (Via Barone Zuppello snc)",
+       "idx": 15,
+       "arr": "11.24",
+       "dep": "11.24"
+      },
+      {
+       "stop": "AUGUSTA (Via Barone Zuppello fronte 16)",
+       "idx": 16,
+       "arr": "11.25",
+       "dep": "11.25"
+      },
+      {
+       "stop": "AUGUSTA (Via Pantelleria, 20)",
+       "idx": 17,
+       "arr": "11.27",
+       "dep": "11.27"
+      },
+      {
+       "stop": "AUGUSTA (Via Pantelleria fronte 17)",
+       "idx": 18,
+       "arr": "11.28",
+       "dep": "11.28"
+      },
+      {
+       "stop": "AUGUSTA (Via Pantelleria fronte 20)",
+       "idx": 19,
+       "arr": "11.29",
+       "dep": "11.29"
+      },
+      {
+       "stop": "AUGUSTA (Via Guglielmo Marconi fronte 3)",
+       "idx": 20,
+       "arr": "11.30",
+       "dep": "11.30"
+      },
+      {
+       "stop": "AUGUSTA (Via Copernico incrocio Via Tolomeo)",
+       "idx": 21,
+       "arr": "11.31",
+       "dep": "11.31"
+      },
+      {
+       "stop": "AUGUSTA (Via Darwin, 6)",
+       "idx": 22,
+       "arr": "11.32",
+       "dep": "11.32"
+      },
+      {
+       "stop": "AUGUSTA (Via Mendel, 19)",
+       "idx": 23,
+       "arr": "11.33",
+       "dep": "11.33"
+      },
+      {
+       "stop": "AUGUSTA (Via Paolo Borsellino incr. Via Falcone)",
+       "idx": 24,
+       "arr": "11.35",
+       "dep": "11.35"
+      },
+      {
+       "stop": "AUGUSTA (Via Paolo Borsellino incr. Via Martoglio)",
+       "idx": 25,
+       "arr": "11.36",
+       "dep": "11.36"
+      },
+      {
+       "stop": "AUGUSTA (Via Barone Zuppello incr. Via Randone)",
+       "idx": 26,
+       "arr": "11.37",
+       "dep": "11.37"
+      },
+      {
+       "stop": "AUGUSTA (Via Barone Zuppello incr. Via Mar Mediterraneo)",
+       "idx": 27,
+       "arr": "11.38",
+       "dep": "11.38"
+      },
+      {
+       "stop": "AUGUSTA (Via Panoramica incrocio Via Hegel)",
+       "idx": 28,
+       "arr": "11.39",
+       "dep": "11.39"
+      },
+      {
+       "stop": "AUGUSTA (Via Panoramica fronte 70)",
+       "idx": 29,
+       "arr": "11.40",
+       "dep": "11.40"
+      },
+      {
+       "stop": "AUGUSTA (Via Panoramica fronte 42)",
+       "idx": 30,
+       "arr": "11.41",
+       "dep": "11.41"
+      },
+      {
+       "stop": "AUGUSTA (Via Kant, 1)",
+       "idx": 31,
+       "arr": "11.42",
+       "dep": "11.42"
+      },
+      {
+       "stop": "AUGUSTA (Via Epicarmo Corbino fronte 15)",
+       "idx": 32,
+       "arr": "11.43",
+       "dep": "11.43"
+      },
+      {
+       "stop": "AUGUSTA (Via Epicarmo Corbino fronte 59)",
+       "idx": 33,
+       "arr": "11.45",
+       "dep": "11.45"
+      },
+      {
+       "stop": "AUGUSTA (Ospedale)",
+       "idx": 34,
+       "arr": "11.51",
+       "dep": "11.51"
+      },
+      {
+       "stop": "AUGUSTA (Corso Sicilia, 6)",
+       "idx": 35,
+       "arr": "11.53",
+       "dep": "11.53"
+      },
+      {
+       "stop": "AUGUSTA (Via Cristoforo Colombo, 30)",
+       "idx": 36,
+       "arr": "11.57",
+       "dep": "11.57"
+      },
+      {
+       "stop": "AUGUSTA (Viale Vittorio Veneto, 1)",
+       "idx": 37,
+       "arr": "11.58",
+       "dep": "11.58"
+      },
+      {
+       "stop": "AUGUSTA (Via della Dogana fronte 4)",
+       "idx": 38,
+       "arr": "11.58",
+       "dep": "11.58"
+      },
+      {
+       "stop": "AUGUSTA (Via della Dogana fronte 54)",
+       "idx": 39,
+       "arr": "11.59",
+       "dep": "11.59"
+      },
+      {
+       "stop": "AUGUSTA (Via Marina Ponente, 15)",
+       "idx": 40,
+       "arr": "12.00",
+       "dep": "12.00"
+      },
+      {
+       "stop": "AUGUSTA (Via Marina Ponente fronte 36)",
+       "idx": 41,
+       "arr": "12.01",
+       "dep": "12.01"
+      },
+      {
+       "stop": "AUGUSTA (Via Adua (farmacia))",
+       "idx": 42,
+       "arr": "12.03",
+       "dep": "12.03"
+      },
+      {
+       "stop": "AUGUSTA (Piazza Duomo fronte 128)",
+       "idx": 43,
+       "arr": "12.04",
+       "dep": "12.04"
+      },
+      {
+       "stop": "AUGUSTA (Via Caracciolo (fronte 74))",
+       "idx": 44,
+       "arr": "12.05",
+       "dep": "12.05"
       }
      ],
      "valid": true
