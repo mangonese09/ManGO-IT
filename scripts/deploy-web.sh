@@ -19,7 +19,7 @@ rm -rf "$TMPM"
 
 scp -q dist/js/*.js "$VPS:$WEB/js/"
 scp -q dist/css/styles.css "$VPS:$WEB/css/"
-scp -q gsi-return.html manifest.json "$VPS:$WEB/"
+scp -q gsi-return.html manifest.json robots.txt "$VPS:$WEB/"
 scp -q index.html service-worker.js version.json "$VPS:$WEB/"
 
 LOCAL_V=$(node -pe "require('./version.json').version")

@@ -85,6 +85,9 @@ export function initSettings() {
     const what = bits.length ? `Removes ${bits.join(', ')} — and all settings. ` : 'Removes all settings. ';
     const ok = await confirmModal(`Erase everything? ${what}This cannot be undone — “Back up my data” above saves a copy first.`, { confirmText: 'Erase' });
     if (!ok) return;
+    // Erase means this phone forgets the account too. Bounded: a sign-out that
+    // never settles (offline, hung SDK) must not block the erase.
+    await Promise.race([signOut().catch(() => {}), new Promise((r) => setTimeout(r, 5000))]);
     clearAllAppData();
     if ('caches' in window) {
       const names = await caches.keys();
@@ -313,7 +316,7 @@ function openAboutSheet() {
       el('span', { text: '⚠️ Strikes (' }), el('em', { text: 'scioperi' }),
       el('span', { text: ') are common in Italian transit and never appear in schedule data. If everything looks suspiciously quiet, check local news.' }),
     ]),
-    el('p', { class: 'about-privacy', text: 'Everything stays on this device — no account, no tracking.' }),
+    el('p', { class: 'about-privacy', text: 'Everything stays on this device unless you sign in to sync your saved items. No tracking.' }),
     el('ul', { class: 'muted about-links' }, [
       el('li', {}, [el('span', { text: 'Routing by ' }), link('https://transitous.org', 'Transitous'), el('span', { text: ' · ' }), link('https://transitous.org/sources/', 'data sources')]),
       el('li', {}, [el('span', { text: 'Map data © ' }), link('https://www.openstreetmap.org/copyright', 'OpenStreetMap contributors')]),
