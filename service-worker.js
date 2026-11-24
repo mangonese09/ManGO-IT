@@ -5,8 +5,8 @@ const CACHE = 'mangoit-v1191';
 const SHELL = [
   '/',
   '/index.html',
-  '/css/styles.css?v=1.19.1',
-  '/js/app.js?v=1.19.1',
+  '/css/styles.css?v=1.19.2',
+  '/js/app.js?v=1.19.2',
   '/js/api.js',
   '/js/gsi-return.js',
   '/js/board.js',

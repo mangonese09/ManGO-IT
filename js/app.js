@@ -10,18 +10,30 @@ import { pruneCache, getPref, setPref } from './store.js';
 
 const VIEWS = ['home', 'saved', 'map', 'settings'];
 let current = 'home';
-const navStack = [];
 
 const viewScroll = {}; // QA-16: keep each tab's scroll position
-function setView(view, push = true) {
-  if (!VIEWS.includes(view) || view === current) return;
+// 1.19.2 (shared Mangonese Back rule): Home is the first history entry. Leaving Home adds
+// exactly one entry; switching between other tabs replaces it; Back from any tab returns
+// Home; Back on Home leaves the site (web) or minimizes (Android app). The old model pushed
+// every tap and kept a parallel navStack that popstate emptied, so in the Android app the
+// second Back minimized instead of returning Home.
+function setView(view, fromHistory = false) {
+  if (!VIEWS.includes(view)) return;
+  if (view === current) {                       // re-tapping the tab you are on: back to its top
+    if (!fromHistory) scrollTo({ top: 0, behavior: 'smooth' });
+    return;
+  }
+  if (!fromHistory) {
+    if (view === 'home') { try { history.back(); } catch { /* sandboxed */ } return; }   // popstate lands Home
+    try {
+      if (current === 'home') history.pushState({ view }, '', '#' + view);
+      else history.replaceState({ view }, '', '#' + view);
+    } catch { /* sandboxed */ }
+  }
   viewScroll[current] = window.scrollY;
-  if (push) navStack.push(current);
   current = view;
-  // survive a page reload (browser pull-to-refresh) on the same tab
+  // survive a page reload on the same tab
   setPref('view', view);
-  // QA-03: browser back walks the tab stack instead of exiting the app
-  if (push) { try { history.pushState({ view }, '', '#' + view); } catch { /* sandboxed */ } }
   for (const v of VIEWS) {
     document.getElementById(`view-${v}`).hidden = v !== view;
     const nb = document.getElementById(`nav-${v}`);
@@ -38,22 +50,16 @@ function setView(view, push = true) {
 
 function goBack() {
   if (anySheetOpen()) { closeSheet(); return true; }
-  const prev = navStack.pop();
-  if (prev) {
-    setView(prev, false);
-    try { if (history.state && history.state.view) history.back(); } catch { /* sandboxed */ }
-    return true;
-  }
+  if (current !== 'home') { try { history.back(); } catch { setView('home', true); } return true; }
   return false;
 }
 
-// browser/hardware back → unwind sheet, then tab stack (QA-03)
+// browser/hardware back → unwind sheet, then the tab (QA-03)
 window.addEventListener('popstate', (e) => {
   if (consumeSheetPop()) return; // our own back() from closing a sheet
   if (anySheetOpen()) { closeSheet(true); return; }
   const v = (e.state && e.state.view) || 'home';
-  navStack.length = 0; // history is now the source of truth for depth
-  if (v !== current) setView(v, false);
+  if (v !== current) setView(v, true);
 });
 
 // ── NATIVE SHELL BRIDGE (Capacitor wrap, M7) ──
@@ -73,18 +79,19 @@ function initNativeBackButton() {
 
 // Left-edge swipe back (house PWA standard).
 function initEdgeSwipe() {
-  let startX = null, startY = null;
+  let startX = null, startY = null, startT = 0;
   document.addEventListener('touchstart', (e) => {
     // panning the map from the left edge must not navigate back (M6)
     if (e.target.closest?.('.leaflet-container')) { startX = null; return; }
     const t = e.touches[0];
     startX = t.clientX <= 24 ? t.clientX : null;
-    startY = t.clientY;
+    startY = t.clientY; startT = Date.now();
   }, { passive: true });
   document.addEventListener('touchend', (e) => {
     if (startX === null) return;
     const t = e.changedTouches[0];
-    if (t.clientX - startX > 70 && Math.abs(t.clientY - startY) < 60) goBack();
+    // shared thresholds; on Home with nothing open goBack() does nothing (a swipe never leaves the app)
+    if (t.clientX - startX > 70 && Math.abs(t.clientY - startY) < 80 && Date.now() - startT < 700) goBack();
     startX = null;
   }, { passive: true });
 }
@@ -115,11 +122,12 @@ function boot() {
   safe('nativeBack', initNativeBackButton);
   safe('keyboardNav', initKeyboardNav);
 
-  // pull-to-refresh reloads the page: reopen the tab the user was on
+  safe('pullRefresh', initPullRefresh);
+  // a reload reopens the tab the user was on, with Home underneath it so Back still returns Home
   try {
+    history.replaceState({ view: 'home' }, '', '#home');
     const last = getPref('view', null);
-    if (last && last !== 'home') setView(last, false);
-    history.replaceState({ view: current }, '', '#' + current);
+    if (last && last !== 'home') setView(last);
   } catch { /* private mode */ }
 }
 
@@ -139,3 +147,38 @@ function initKeyboardNav() {
 }
 
 document.addEventListener('DOMContentLoaded', boot);
+
+// ── PULL TO REFRESH (1.19.2) ── the browser's reload-on-pull is off everywhere; on Home a
+// pull of 72px refreshes the departures board in place (same as the ↻ button).
+function initPullRefresh() {
+  let y0 = null, pulling = false, ind = null;
+  const el = () => {
+    if (!ind) { ind = document.createElement('div'); ind.className = 'ptr'; ind.innerHTML = '<span class="ptr-spin" aria-hidden="true"></span>'; document.body.appendChild(ind); }
+    return ind;
+  };
+  document.addEventListener('touchstart', (e) => {
+    y0 = null;
+    if (current !== 'home' || window.scrollY > 0 || anySheetOpen() || e.touches[0].clientX <= 24) return;
+    if (e.target.closest?.('.leaflet-container')) return;
+    y0 = e.touches[0].clientY; pulling = false;
+  }, { passive: true });
+  document.addEventListener('touchmove', (e) => {
+    if (y0 == null) return;
+    const dy = e.touches[0].clientY - y0;
+    if (dy < 8) { if (pulling) { pulling = false; el().style.transform = ''; } return; }
+    pulling = true;
+    const p = Math.min(110, dy * 0.5);
+    el().classList.add('is-on'); el().classList.toggle('is-ready', p >= 72);
+    el().style.transform = `translateY(${p}px)`;
+  }, { passive: true });
+  const end = () => {
+    if (y0 == null) return; y0 = null;
+    if (!pulling) return; pulling = false;
+    if (!ind.classList.contains('is-ready')) { ind.classList.remove('is-on'); ind.style.transform = ''; return; }
+    ind.classList.add('is-busy'); ind.style.transform = 'translateY(56px)';
+    document.getElementById('board-refresh')?.click();
+    setTimeout(() => { ind.classList.remove('is-on', 'is-ready', 'is-busy'); ind.style.transform = ''; }, 900);
+  };
+  document.addEventListener('touchend', end, { passive: true });
+  document.addEventListener('touchcancel', end, { passive: true });
+}

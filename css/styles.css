@@ -1401,6 +1401,17 @@ body:has(#results .tz-banner) .search-box .mode-row { margin-bottom: 14px; }
    squished the fixed bottom nav with it. Native apps don't stretch chrome;
    suppress the affordance everywhere pull has no job. */
 body.no-ptr { overscroll-behavior-y: none; }
+/* 1.19.2: the browser's reload-on-pull is off on every tab; Home has an in-app pull instead */
+html, body { overscroll-behavior-y: contain; }
+.ptr { position: fixed; top: calc(env(safe-area-inset-top) - 44px); left: 50%; z-index: 40; width: 36px; height: 36px; margin-left: -18px;
+  border-radius: 50%; background: var(--bg-elevated, #161f2e); border: 1px solid var(--border-subtle, rgba(255,255,255,.08)); display: none;
+  align-items: center; justify-content: center; box-shadow: 0 4px 14px rgba(0,0,0,.35); transition: transform .18s ease-out; }
+.ptr.is-on { display: flex; }
+.ptr-spin { width: 18px; height: 18px; border-radius: 50%; border: 2px solid rgba(128,128,128,.35); border-top-color: var(--mango, #f0a500); }
+.ptr.is-ready .ptr-spin { border-top-color: var(--teal, #3dd6ac); }
+.ptr.is-busy .ptr-spin { animation: ptr-spin .8s linear infinite; }
+@keyframes ptr-spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .ptr { transition: none; } .ptr.is-busy .ptr-spin { animation: none; } }
 /* S-2/S-3: the row IS the control — current value as muted text + chevron */
 .setting-value {
   display: inline-flex; align-items: center; gap: 8px; flex: 0 0 auto;
