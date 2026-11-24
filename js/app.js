@@ -17,8 +17,11 @@ const viewScroll = {}; // QA-16: keep each tab's scroll position
 // Home; Back on Home leaves the site (web) or minimizes (Android app). The old model pushed
 // every tap and kept a parallel navStack that popstate emptied, so in the Android app the
 // second Back minimized instead of returning Home.
+let pendingView = null;
 function setView(view, fromHistory = false) {
   if (!VIEWS.includes(view)) return;
+  // Settings sits one entry above the tab it opened from: leaving it drops that entry first
+  if (!fromHistory && current === 'settings' && view !== 'settings') { pendingView = view; try { history.back(); } catch { /* */ } return; }
   if (view === current) {                       // re-tapping the tab you are on: back to its top
     if (!fromHistory) scrollTo({ top: 0, behavior: 'smooth' });
     return;
@@ -26,7 +29,7 @@ function setView(view, fromHistory = false) {
   if (!fromHistory) {
     if (view === 'home') { try { history.back(); } catch { /* sandboxed */ } return; }   // popstate lands Home
     try {
-      if (current === 'home') history.pushState({ view }, '', '#' + view);
+      if (current === 'home' || view === 'settings') history.pushState({ view }, '', '#' + view);
       else history.replaceState({ view }, '', '#' + view);
     } catch { /* sandboxed */ }
   }
@@ -60,6 +63,7 @@ window.addEventListener('popstate', (e) => {
   if (anySheetOpen()) { closeSheet(true); return; }
   const v = (e.state && e.state.view) || 'home';
   if (v !== current) setView(v, true);
+  if (pendingView) { const p = pendingView; pendingView = null; if (p !== current) setView(p); }
 });
 
 // ── NATIVE SHELL BRIDGE (Capacitor wrap, M7) ──
@@ -102,8 +106,31 @@ function boot() {
   // whole module graph before boot() exists, and the self-heal must survive
   // exactly that. Nothing SW-related belongs in here.
   for (const v of VIEWS) {
-    document.getElementById(`nav-${v}`).addEventListener('click', () => setView(v));
+    // the gear toggles: tapping it on Settings goes back to where you were
+    document.getElementById(`nav-${v}`).addEventListener('click', () => { if (v === 'settings' && current === 'settings') history.back(); else setView(v); });
   }
+  // 1.20.0: never reload under someone mid-search. The inline script in index.html reloads on a
+  // new service worker so a torn shell can repair itself; once the app has booted it is healthy,
+  // so disarm that (swReloaded is a global var there) and ask instead. The inline script stays
+  // byte-identical: the enforced CSP pins its hash.
+  window.swReloaded = true;
+  if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (document.querySelector('.update-bar')) return;
+      const bar = document.createElement('div');
+      bar.className = 'update-bar'; bar.setAttribute('role', 'status');
+      const msg = document.createElement('span'); msg.textContent = 'ManGO:IT was updated';
+      const btn = document.createElement('button'); btn.type = 'button'; btn.className = 'btn btn-primary btn-small'; btn.textContent = 'Reload';
+      btn.addEventListener('click', () => location.reload());
+      bar.append(msg, btn); document.body.appendChild(bar);
+    });
+  }
+  // offline: one strip under the header, and a toast when the connection is back
+  const strip = document.getElementById('offline-strip');
+  const paintOffline = () => { if (strip) strip.hidden = navigator.onLine !== false; };
+  window.addEventListener('offline', paintOffline);
+  window.addEventListener('online', () => { paintOffline(); import('./toast.js').then((t) => t.toast('Back online.')); });
+  paintOffline();
   // One broken/torn module must not take the rest of the app down with it:
   // the failure is logged, the other tabs keep working, and the SW block
   // above swaps the torn shell out on its own.

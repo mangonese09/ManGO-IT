@@ -13,7 +13,8 @@ function ensureHolder() {
 }
 ensureHolder();
 
-export function toast(message, kind = 'info', ms = 3200) {
+// 1.20.0 shared Mangonese timing: 3 s, 6 s for a warning or an error; tap to dismiss
+export function toast(message, kind = 'info', ms = (kind === 'warn' || kind === 'error') ? 6000 : 3000) {
   ensureHolder();
   if (!holder) return;
   // single-toast policy: a new toast replaces whatever is showing
@@ -22,6 +23,7 @@ export function toast(message, kind = 'info', ms = 3200) {
   el.className = `toast toast-${kind}`;
   if (kind === 'warn' || kind === 'error') el.setAttribute('role', 'alert');
   el.textContent = message;
+  el.addEventListener('click', () => { el.classList.remove('show'); setTimeout(() => el.remove(), 250); });
   holder.appendChild(el);
   requestAnimationFrame(() => el.classList.add('show'));
   setTimeout(() => {

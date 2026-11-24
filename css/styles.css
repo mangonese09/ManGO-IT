@@ -427,6 +427,7 @@ body.kb-open .bottom-nav { transform: translateY(100%); }
   box-shadow: 0 6px 18px rgba(0,0,0,0.4);
 }
 .toast.show { opacity: 1; transform: none; }
+.toast { pointer-events: auto; cursor: pointer; }
 .toast-warn { border: 1px solid var(--warning, #f5a524); }
 .toast-error { border: 1px solid var(--error, #e5484d); }
 
@@ -1620,3 +1621,18 @@ div.suggest-row { width: 100%; cursor: pointer; }
 .acct-google { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 44px; width: 100%; max-width: 320px; padding: 0 16px; border-radius: 8px; border: 1px solid #dadce0; background: #fff; color: #1f1f1f; font: 500 15px/1 inherit; font-family: inherit; cursor: pointer; }
 .acct-google:disabled { opacity: .7; cursor: default; }
 .acct-google:focus-visible { outline: 2px solid var(--focus-ring, #f0a500); outline-offset: 2px; }
+
+/* ── 1.20.0 shared Mangonese chrome: header gear, offline strip, update bar ── */
+.app-header { position: sticky; }
+.gear-btn { position: absolute; right: 12px; top: calc(4px + env(safe-area-inset-top)); width: 44px; height: 44px; display: grid; place-items: center;
+  border-radius: 12px; background: none; border: 1px solid var(--border-subtle, rgba(255,255,255,.1)); color: var(--text-secondary, #b8c0cc); cursor: pointer; }
+.gear-btn.active, .gear-btn[aria-current="page"] { color: var(--mango, #f0a500); border-color: var(--mango, #f0a500); }
+.gear-btn.active::after { content: none; }
+.offline-strip { position: sticky; top: calc(54px + env(safe-area-inset-top)); z-index: 19; margin: 0 14px 6px; padding: 8px 12px; border-radius: 10px;
+  font-size: .85rem; font-weight: 600; text-align: center; background: var(--bg-elevated, #2a2a2a); color: var(--text-primary, #f2f2f2);
+  border: 1px solid var(--border-subtle, rgba(255,255,255,.1)); }
+.offline-strip[hidden] { display: none; }
+.update-bar { position: fixed; left: 12px; right: 12px; bottom: calc(76px + env(safe-area-inset-bottom)); z-index: 61; display: flex; align-items: center;
+  justify-content: space-between; gap: 12px; padding: 8px 8px 8px 16px; border-radius: 14px; background: var(--bg-elevated, #2a2a2a);
+  color: var(--text-primary, #f2f2f2); box-shadow: 0 6px 18px rgba(0,0,0,.4); font-size: .9rem; font-weight: 600; }
+.update-bar .btn { min-height: 40px; }
