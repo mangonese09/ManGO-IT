@@ -1,0 +1,736 @@
+{
+ "operator": "TARANTOLA E CUFFARO SRL",
+ "route_id": "lot1-369",
+ "name": "CASTELLAMMARE DEL GOLFO - BRUCA SOPRANA",
+ "short_name": "369",
+ "source": "t3-tabelle-_orari_da_linea_350_a_new_alia-cerda.pdf#p17",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "CASTELLAMMARE DEL GOLFO (Golfo - Spiaggia)",
+    "CASTELLAMMARE DEL GOLFO (Golfo - Autostazione P. della Repubblica)",
+    "CASTELLAMMARE DEL GOLFO (PONTE BAGNI)",
+    "CALATAFIMI (BIVIO SEGESTA - SS113)",
+    "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+    "CALATAFIMI (C/da Sasi)",
+    "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+    "CALATAFIMI (BIVIO SEGESTA - SS113)",
+    "CALATAFIMI (Segesta - Parco Archeologico)",
+    "CALATAFIMI (Sv. A29 e Stazione FFSS)",
+    "BUSETO PALIZZ. (BRUCA SOTTANA)",
+    "BUSETO PALIZZ. (BRUCA SOPRANA)",
+    "VITA",
+    "SALEMI (Autostazione)"
+   ],
+   "kms": [
+    null,
+    0.0,
+    9.1,
+    null,
+    19.4,
+    23.9,
+    28.4,
+    31.8,
+    34.5,
+    35.5,
+    40.3,
+    46.4,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p17.A1-5227",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CASTELLAMMARE DEL GOLFO (Golfo - Autostazione P. della Repubblica)",
+       "idx": 1,
+       "arr": "05:20",
+       "dep": "05:20"
+      },
+      {
+       "stop": "CASTELLAMMARE DEL GOLFO (PONTE BAGNI)",
+       "idx": 2,
+       "arr": "05:35",
+       "dep": "05:35"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 4,
+       "arr": "05:50",
+       "dep": "05:50"
+      },
+      {
+       "stop": "CALATAFIMI (C/da Sasi)",
+       "idx": 5,
+       "arr": "06:00",
+       "dep": "06:00"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 6,
+       "arr": "06:10",
+       "dep": "06:10"
+      },
+      {
+       "stop": "CALATAFIMI (BIVIO SEGESTA - SS113)",
+       "idx": 7,
+       "arr": "06:15",
+       "dep": "06:15"
+      },
+      {
+       "stop": "CALATAFIMI (Segesta - Parco Archeologico)",
+       "idx": 8,
+       "arr": "06:20",
+       "dep": "06:20"
+      },
+      {
+       "stop": "CALATAFIMI (Sv. A29 e Stazione FFSS)",
+       "idx": 9,
+       "arr": "06:22",
+       "dep": "06:22"
+      },
+      {
+       "stop": "BUSETO PALIZZ. (BRUCA SOTTANA)",
+       "idx": 10,
+       "arr": "06:30",
+       "dep": "06:30"
+      },
+      {
+       "stop": "BUSETO PALIZZ. (BRUCA SOPRANA)",
+       "idx": 11,
+       "arr": "06:40",
+       "dep": "06:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p17.A2-5229",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CASTELLAMMARE DEL GOLFO (Golfo - Autostazione P. della Repubblica)",
+       "idx": 1,
+       "arr": "06:00",
+       "dep": "06:00"
+      },
+      {
+       "stop": "CASTELLAMMARE DEL GOLFO (PONTE BAGNI)",
+       "idx": 2,
+       "arr": "06:15",
+       "dep": "06:15"
+      },
+      {
+       "stop": "CALATAFIMI (BIVIO SEGESTA - SS113)",
+       "idx": 3,
+       "arr": "06:25",
+       "dep": "06:25"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 4,
+       "arr": "06:30",
+       "dep": "06:30"
+      },
+      {
+       "stop": "CALATAFIMI (C/da Sasi)",
+       "idx": 5,
+       "arr": "06:40",
+       "dep": "06:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p17.A3-5233",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CASTELLAMMARE DEL GOLFO (Golfo - Autostazione P. della Repubblica)",
+       "idx": 1,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "CASTELLAMMARE DEL GOLFO (PONTE BAGNI)",
+       "idx": 2,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "CALATAFIMI (BIVIO SEGESTA - SS113)",
+       "idx": 3,
+       "arr": "07:55",
+       "dep": "07:55"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 4,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "VITA",
+       "idx": 12,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "SALEMI (Autostazione)",
+       "idx": 13,
+       "arr": "08:30",
+       "dep": "08:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p17.A4-5239",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CASTELLAMMARE DEL GOLFO (Golfo - Spiaggia)",
+       "idx": 0,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "CASTELLAMMARE DEL GOLFO (Golfo - Autostazione P. della Repubblica)",
+       "idx": 1,
+       "arr": "13:35",
+       "dep": "13:35"
+      },
+      {
+       "stop": "CASTELLAMMARE DEL GOLFO (PONTE BAGNI)",
+       "idx": 2,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "CALATAFIMI (BIVIO SEGESTA - SS113)",
+       "idx": 3,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 4,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "VITA",
+       "idx": 12,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "SALEMI (Autostazione)",
+       "idx": 13,
+       "arr": "14:35",
+       "dep": "14:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p17.A5-5232",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CASTELLAMMARE DEL GOLFO (Golfo - Autostazione P. della Repubblica)",
+       "idx": 1,
+       "arr": "13:35",
+       "dep": "13:35"
+      },
+      {
+       "stop": "CASTELLAMMARE DEL GOLFO (PONTE BAGNI)",
+       "idx": 2,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "CALATAFIMI (BIVIO SEGESTA - SS113)",
+       "idx": 3,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 4,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "CALATAFIMI (C/da Sasi)",
+       "idx": 5,
+       "arr": "14:15",
+       "dep": "14:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p17.A6-5234",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CASTELLAMMARE DEL GOLFO (Golfo - Autostazione P. della Repubblica)",
+       "idx": 1,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "CASTELLAMMARE DEL GOLFO (PONTE BAGNI)",
+       "idx": 2,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 4,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "CALATAFIMI (BIVIO SEGESTA - SS113)",
+       "idx": 7,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "CALATAFIMI (Segesta - Parco Archeologico)",
+       "idx": 8,
+       "arr": "15:10",
+       "dep": "15:10"
+      },
+      {
+       "stop": "CALATAFIMI (Sv. A29 e Stazione FFSS)",
+       "idx": 9,
+       "arr": "15:12",
+       "dep": "15:12"
+      },
+      {
+       "stop": "BUSETO PALIZZ. (BRUCA SOTTANA)",
+       "idx": 10,
+       "arr": "15:20",
+       "dep": "15:20"
+      },
+      {
+       "stop": "BUSETO PALIZZ. (BRUCA SOPRANA)",
+       "idx": 11,
+       "arr": "15:30",
+       "dep": "15:30"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "SALEMI (Autostazione)",
+    "VITA",
+    "BUSETO PALIZZ. (BRUCA SOPRANA)",
+    "BUSETO PALIZZ. (BRUCA SOTTANA)",
+    "CALATAFIMI (Sv. A29 e Stazione FFSS)",
+    "CALATAFIMI (Segesta - Parco Archeologico)",
+    "CALATAFIMI (BIVIO SEGESTA - SS113)",
+    "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+    "CALATAFIMI (C/da Sasi)",
+    "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+    "CALATAFIMI (BIVIO SEGESTA - SS113)",
+    "CASTELLAMMARE DEL GOLFO (PONTE BAGNI)",
+    "CASTELLAMMARE DEL GOLFO (Golfo - Autostazione P. della Repubblica)",
+    "CASTELLAMMARE DEL GOLFO (Golfo - Spiaggia)"
+   ],
+   "kms": [
+    null,
+    null,
+    0.0,
+    6.1,
+    10.9,
+    11.9,
+    14.6,
+    18.0,
+    22.5,
+    27.0,
+    30.6,
+    37.3,
+    46.4,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p17.R1-5235",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "BUSETO PALIZZ. (BRUCA SOPRANA)",
+       "idx": 2,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "BUSETO PALIZZ. (BRUCA SOTTANA)",
+       "idx": 3,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "CALATAFIMI (Sv. A29 e Stazione FFSS)",
+       "idx": 4,
+       "arr": "07:18",
+       "dep": "07:18"
+      },
+      {
+       "stop": "CALATAFIMI (Segesta - Parco Archeologico)",
+       "idx": 5,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "CALATAFIMI (BIVIO SEGESTA - SS113)",
+       "idx": 6,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 7,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "CALATAFIMI (C/da Sasi)",
+       "idx": 8,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 9,
+       "arr": "07:50",
+       "dep": "07:50"
+      },
+      {
+       "stop": "CALATAFIMI (BIVIO SEGESTA - SS113)",
+       "idx": 10,
+       "arr": "07:55",
+       "dep": "07:55"
+      },
+      {
+       "stop": "CASTELLAMMARE DEL GOLFO (PONTE BAGNI)",
+       "idx": 11,
+       "arr": "08:05",
+       "dep": "08:05"
+      },
+      {
+       "stop": "CASTELLAMMARE DEL GOLFO (Golfo - Autostazione P. della Repubblica)",
+       "idx": 12,
+       "arr": "08:20",
+       "dep": "08:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p17.R2-5231",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": false,
+     "stops": [
+      {
+       "stop": "SALEMI (Autostazione)",
+       "idx": 0,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "VITA",
+       "idx": 1,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 9,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "CALATAFIMI (BIVIO SEGESTA - SS113)",
+       "idx": 10,
+       "arr": "09:35",
+       "dep": "09:35"
+      },
+      {
+       "stop": "CASTELLAMMARE DEL GOLFO (PONTE BAGNI)",
+       "idx": 11,
+       "arr": "10:45",
+       "dep": "10:45"
+      },
+      {
+       "stop": "CASTELLAMMARE DEL GOLFO (Golfo - Autostazione P. della Repubblica)",
+       "idx": 12,
+       "arr": "10:00",
+       "dep": "10:00"
+      },
+      {
+       "stop": "CASTELLAMMARE DEL GOLFO (Golfo - Spiaggia)",
+       "idx": 13,
+       "arr": "10:05",
+       "dep": "10:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p17.R3-5240",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALATAFIMI (C/da Sasi)",
+       "idx": 8,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 9,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "CALATAFIMI (BIVIO SEGESTA - SS113)",
+       "idx": 10,
+       "arr": "14:35",
+       "dep": "14:35"
+      },
+      {
+       "stop": "CASTELLAMMARE DEL GOLFO (PONTE BAGNI)",
+       "idx": 11,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "CASTELLAMMARE DEL GOLFO (Golfo - Autostazione P. della Repubblica)",
+       "idx": 12,
+       "arr": "15:00",
+       "dep": "15:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p17.R4-5242",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SALEMI (Autostazione)",
+       "idx": 0,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "VITA",
+       "idx": 1,
+       "arr": "14:55",
+       "dep": "14:55"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 9,
+       "arr": "15:10",
+       "dep": "15:10"
+      },
+      {
+       "stop": "CALATAFIMI (BIVIO SEGESTA - SS113)",
+       "idx": 10,
+       "arr": "15:15",
+       "dep": "15:15"
+      },
+      {
+       "stop": "CASTELLAMMARE DEL GOLFO (PONTE BAGNI)",
+       "idx": 11,
+       "arr": "15:25",
+       "dep": "15:25"
+      },
+      {
+       "stop": "CASTELLAMMARE DEL GOLFO (Golfo - Autostazione P. della Repubblica)",
+       "idx": 12,
+       "arr": "15:40",
+       "dep": "15:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p17.R5-5241",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "BUSETO PALIZZ. (BRUCA SOPRANA)",
+       "idx": 2,
+       "arr": "15:30",
+       "dep": "15:30"
+      },
+      {
+       "stop": "BUSETO PALIZZ. (BRUCA SOTTANA)",
+       "idx": 3,
+       "arr": "15:40",
+       "dep": "15:40"
+      },
+      {
+       "stop": "CALATAFIMI (Sv. A29 e Stazione FFSS)",
+       "idx": 4,
+       "arr": "15:48",
+       "dep": "15:48"
+      },
+      {
+       "stop": "CALATAFIMI (Segesta - Parco Archeologico)",
+       "idx": 5,
+       "arr": "15:50",
+       "dep": "15:50"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 9,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "CALATAFIMI (BIVIO SEGESTA - SS113)",
+       "idx": 10,
+       "arr": "16:05",
+       "dep": "16:05"
+      },
+      {
+       "stop": "CASTELLAMMARE DEL GOLFO (PONTE BAGNI)",
+       "idx": 11,
+       "arr": "16:15",
+       "dep": "16:15"
+      },
+      {
+       "stop": "CASTELLAMMARE DEL GOLFO (Golfo - Autostazione P. della Repubblica)",
+       "idx": 12,
+       "arr": "16:30",
+       "dep": "16:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p17.R6-5238",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALATAFIMI (C/da Sasi)",
+       "idx": 8,
+       "arr": "19:15",
+       "dep": "19:15"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 9,
+       "arr": "19:25",
+       "dep": "19:25"
+      },
+      {
+       "stop": "CALATAFIMI (BIVIO SEGESTA - SS113)",
+       "idx": 10,
+       "arr": "19:30",
+       "dep": "19:30"
+      },
+      {
+       "stop": "CASTELLAMMARE DEL GOLFO (PONTE BAGNI)",
+       "idx": 11,
+       "arr": "19:40",
+       "dep": "19:40"
+      },
+      {
+       "stop": "CASTELLAMMARE DEL GOLFO (Golfo - Autostazione P. della Repubblica)",
+       "idx": 12,
+       "arr": "19:55",
+       "dep": "19:55"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

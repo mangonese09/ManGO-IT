@@ -1,0 +1,384 @@
+{
+ "operator": "Zappalà e Torrisi Srl",
+ "route_id": "lot2-115",
+ "name": "RIPOSTO - VENA",
+ "short_name": "115",
+ "source": "orario_b2d178879e.pdf#p17",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "RIPOSTO",
+    "GIARRE",
+    "GIARRE (MACCHIA)",
+    "GIARRE (S. GIOVANNI M)",
+    "SANT ALFIO (SANT’ALFIO)",
+    "MILO (FORNAZZO)",
+    "MILO"
+   ],
+   "kms": [
+    0.0,
+    2.7,
+    5.0,
+    7.6,
+    10.8,
+    14.3,
+    16.6
+   ],
+   "trips": [
+    {
+     "corsa": "p17.A1-1388",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "In Periodo Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "GIARRE (MACCHIA)",
+       "idx": 2,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "GIARRE (S. GIOVANNI M)",
+       "idx": 3,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "SANT ALFIO (SANT’ALFIO)",
+       "idx": 4,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "MILO (FORNAZZO)",
+       "idx": 5,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "MILO",
+       "idx": 6,
+       "arr": "07:50",
+       "dep": "07:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p17.A2-1380",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "08:55",
+       "dep": "08:55"
+      },
+      {
+       "stop": "GIARRE (MACCHIA)",
+       "idx": 2,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "GIARRE (S. GIOVANNI M)",
+       "idx": 3,
+       "arr": "09:05",
+       "dep": "09:05"
+      },
+      {
+       "stop": "SANT ALFIO (SANT’ALFIO)",
+       "idx": 4,
+       "arr": "09:10",
+       "dep": "09:10"
+      },
+      {
+       "stop": "MILO (FORNAZZO)",
+       "idx": 5,
+       "arr": "09:25",
+       "dep": "09:25"
+      },
+      {
+       "stop": "MILO",
+       "idx": 6,
+       "arr": "09:35",
+       "dep": "09:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p17.A3-1395",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale estivo"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "GIARRE (MACCHIA)",
+       "idx": 2,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "GIARRE (S. GIOVANNI M)",
+       "idx": 3,
+       "arr": "14:35",
+       "dep": "14:35"
+      },
+      {
+       "stop": "SANT ALFIO (SANT’ALFIO)",
+       "idx": 4,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "MILO (FORNAZZO)",
+       "idx": 5,
+       "arr": "14:55",
+       "dep": "14:55"
+      },
+      {
+       "stop": "MILO",
+       "idx": 6,
+       "arr": "15:05",
+       "dep": "15:05"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "MILO",
+    "MILO (FORNAZZO)",
+    "SANT ALFIO (SANT’ALFIO)",
+    "GIARRE (S. GIOVANNI M)",
+    "GIARRE (MACCHIA)",
+    "GIARRE",
+    "RIPOSTO"
+   ],
+   "kms": [
+    0.0,
+    2.3,
+    5.8,
+    9.0,
+    11.6,
+    13.9,
+    16.6
+   ],
+   "trips": [
+    {
+     "corsa": "p17.R1-1356",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "In Periodo Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MILO",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "MILO (FORNAZZO)",
+       "idx": 1,
+       "arr": "07:05",
+       "dep": "07:05"
+      },
+      {
+       "stop": "SANT ALFIO (SANT’ALFIO)",
+       "idx": 2,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "GIARRE (S. GIOVANNI M)",
+       "idx": 3,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "GIARRE (MACCHIA)",
+       "idx": 4,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 5,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 6,
+       "arr": "07:50",
+       "dep": "07:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p17.R2-1363",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale estivo"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MILO",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "MILO (FORNAZZO)",
+       "idx": 1,
+       "arr": "07:05",
+       "dep": "07:05"
+      },
+      {
+       "stop": "SANT ALFIO (SANT’ALFIO)",
+       "idx": 2,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "GIARRE (S. GIOVANNI M)",
+       "idx": 3,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "GIARRE (MACCHIA)",
+       "idx": 4,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 5,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 6,
+       "arr": "07:50",
+       "dep": "07:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p17.R3-1364",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MILO",
+       "idx": 0,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "MILO (FORNAZZO)",
+       "idx": 1,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "SANT ALFIO (SANT’ALFIO)",
+       "idx": 2,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "GIARRE (S. GIOVANNI M)",
+       "idx": 3,
+       "arr": "14:55",
+       "dep": "14:55"
+      },
+      {
+       "stop": "GIARRE (MACCHIA)",
+       "idx": 4,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 5,
+       "arr": "15:10",
+       "dep": "15:10"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 6,
+       "arr": "15:20",
+       "dep": "15:20"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

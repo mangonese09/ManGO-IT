@@ -1,0 +1,116 @@
+{
+ "operator": "Adranone",
+ "route_id": "lot1-494",
+ "name": "GIBELLINA - CASTELVETRANO",
+ "short_name": "494",
+ "source": "t3-tabelle-_orari_da_linea_350_a_new_alia-cerda.pdf#p29",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "GIBELLINA (Viale Indipendenza Siciliana)",
+    "SANTA NINFA (Via Pio La Torre)",
+    "CASTELVETRANO (Piazza Regina Margherita)",
+    "CAMPOBELLO DI MAZARA (Via V. Emanuele)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p29.A1-7567",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIBELLINA (Viale Indipendenza Siciliana)",
+       "idx": 0,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "SANTA NINFA (Via Pio La Torre)",
+       "idx": 1,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "CASTELVETRANO (Piazza Regina Margherita)",
+       "idx": 2,
+       "arr": "08:05",
+       "dep": "08:05"
+      },
+      {
+       "stop": "CAMPOBELLO DI MAZARA (Via V. Emanuele)",
+       "idx": 3,
+       "arr": "08:25",
+       "dep": "08:25"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CAMPOBELLO DI MAZARA (Via V. Emanuele)",
+    "CASTELVETRANO (Piazza Regina Margherita)",
+    "SANTA NINFA (Via Pio La Torre)",
+    "GIBELLINA (Viale Indipendenza Siciliana)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p29.R1",
+     "service": {
+      "days": "mon-sat",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "Adranone 1 (Adranone Feriale 1) in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CAMPOBELLO DI MAZARA (Via V. Emanuele)",
+       "idx": 0,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "CASTELVETRANO (Piazza Regina Margherita)",
+       "idx": 1,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "SANTA NINFA (Via Pio La Torre)",
+       "idx": 2,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "GIBELLINA (Viale Indipendenza Siciliana)",
+       "idx": 3,
+       "arr": "15:10",
+       "dep": "15:10"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

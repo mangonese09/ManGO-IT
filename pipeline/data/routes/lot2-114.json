@@ -1,0 +1,610 @@
+{
+ "operator": "Zappalà e Torrisi Srl",
+ "route_id": "lot2-114",
+ "name": "C.DA ALTARELLO DI GIARRE - TORRE ARCHIRAFI",
+ "short_name": "114",
+ "source": "orario_b2d178879e.pdf#p16",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "GIARRE (ALTARELLO)",
+    "GIARRE",
+    "RIPOSTO",
+    "RIPOSTO (TORRE)"
+   ],
+   "kms": [
+    0.0,
+    2.6,
+    6.1,
+    9.2
+   ],
+   "trips": [
+    {
+     "corsa": "p16.A1-1336",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "BIS F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE (ALTARELLO)",
+       "idx": 0,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 2,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "RIPOSTO (TORRE)",
+       "idx": 3,
+       "arr": "08:30",
+       "dep": "08:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.A2-1336",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "In P e r io do F e r ia le"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE (ALTARELLO)",
+       "idx": 0,
+       "arr": "08:55",
+       "dep": "08:55"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 2,
+       "arr": "09:10",
+       "dep": "09:10"
+      },
+      {
+       "stop": "RIPOSTO (TORRE)",
+       "idx": 3,
+       "arr": "09:15",
+       "dep": "09:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.A3-1337",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE (ALTARELLO)",
+       "idx": 0,
+       "arr": "10:00",
+       "dep": "10:00"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "10:05",
+       "dep": "10:05"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 2,
+       "arr": "10:15",
+       "dep": "10:15"
+      },
+      {
+       "stop": "RIPOSTO (TORRE)",
+       "idx": 3,
+       "arr": "10:20",
+       "dep": "10:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.A4-1338",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "In P e r io do F e r ia le"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE (ALTARELLO)",
+       "idx": 0,
+       "arr": "12:35",
+       "dep": "12:35"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "12:40",
+       "dep": "12:40"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 2,
+       "arr": "12:50",
+       "dep": "12:50"
+      },
+      {
+       "stop": "RIPOSTO (TORRE)",
+       "idx": 3,
+       "arr": "12:55",
+       "dep": "12:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.A5-1353",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE (ALTARELLO)",
+       "idx": 0,
+       "arr": "13:05",
+       "dep": "13:05"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "13:10",
+       "dep": "13:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.A6-1340",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE (ALTARELLO)",
+       "idx": 0,
+       "arr": "13:35",
+       "dep": "13:35"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 2,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "RIPOSTO (TORRE)",
+       "idx": 3,
+       "arr": "13:55",
+       "dep": "13:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.A7-1339",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE (ALTARELLO)",
+       "idx": 0,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 2,
+       "arr": "14:35",
+       "dep": "14:35"
+      },
+      {
+       "stop": "RIPOSTO (TORRE)",
+       "idx": 3,
+       "arr": "14:40",
+       "dep": "14:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.A8-1341",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "BIS) Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE (ALTARELLO)",
+       "idx": 0,
+       "arr": "16:55",
+       "dep": "16:55"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "17:00",
+       "dep": "17:00"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 2,
+       "arr": "17:10",
+       "dep": "17:10"
+      },
+      {
+       "stop": "RIPOSTO (TORRE)",
+       "idx": 3,
+       "arr": "17:15",
+       "dep": "17:15"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "RIPOSTO (TORRE)",
+    "RIPOSTO",
+    "GIARRE",
+    "GIARRE (ALTARELLO)"
+   ],
+   "kms": [
+    0.0,
+    3.2,
+    6.7,
+    9.2
+   ],
+   "trips": [
+    {
+     "corsa": "p16.R1-1345",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "BIS BIS) F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (TORRE)",
+       "idx": 0,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 1,
+       "arr": "07:50",
+       "dep": "07:50"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 2,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "GIARRE (ALTARELLO)",
+       "idx": 3,
+       "arr": "08:05",
+       "dep": "08:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.R2-1345",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "In P e r io do F e r ia le"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (TORRE)",
+       "idx": 0,
+       "arr": "08:35",
+       "dep": "08:35"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 1,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 2,
+       "arr": "08:50",
+       "dep": "08:50"
+      },
+      {
+       "stop": "GIARRE (ALTARELLO)",
+       "idx": 3,
+       "arr": "08:55",
+       "dep": "08:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.R3-1346",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (TORRE)",
+       "idx": 0,
+       "arr": "09:35",
+       "dep": "09:35"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 1,
+       "arr": "09:40",
+       "dep": "09:40"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 2,
+       "arr": "09:50",
+       "dep": "09:50"
+      },
+      {
+       "stop": "GIARRE (ALTARELLO)",
+       "idx": 3,
+       "arr": "09:55",
+       "dep": "09:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.R4-8726",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 2,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "GIARRE (ALTARELLO)",
+       "idx": 3,
+       "arr": "13:05",
+       "dep": "13:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.R5-1348",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "In P e r io do F e r ia le"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (TORRE)",
+       "idx": 0,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 1,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 2,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "GIARRE (ALTARELLO)",
+       "idx": 3,
+       "arr": "13:35",
+       "dep": "13:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.R6-1349",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (TORRE)",
+       "idx": 0,
+       "arr": "13:55",
+       "dep": "13:55"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 1,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 2,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "GIARRE (ALTARELLO)",
+       "idx": 3,
+       "arr": "14:15",
+       "dep": "14:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.R7-1350",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (TORRE)",
+       "idx": 0,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 1,
+       "arr": "16:35",
+       "dep": "16:35"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 2,
+       "arr": "16:45",
+       "dep": "16:45"
+      },
+      {
+       "stop": "GIARRE (ALTARELLO)",
+       "idx": 3,
+       "arr": "16:50",
+       "dep": "16:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.R8-1352",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (TORRE)",
+       "idx": 0,
+       "arr": "16:35",
+       "dep": "16:35"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 1,
+       "arr": "16:40",
+       "dep": "16:40"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 2,
+       "arr": "16:50",
+       "dep": "16:50"
+      },
+      {
+       "stop": "GIARRE (ALTARELLO)",
+       "idx": 3,
+       "arr": "16:55",
+       "dep": "16:55"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "operator": "BUS AWAY S.R.L.",
+ "route_id": "lot1-48",
+ "name": "LERCARA FRIDDI - CAMMARATA",
+ "short_name": "48",
+ "source": "t1-tabelle_-orari_da_linea_1_a_linea_297.pdf#p5",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "LERCARA FRIDDI (via furitano 86)",
+    "CASTRONOVO D.SICILIA (CASTRONOVO DI SICILIA CALVARIO)",
+    "CAMMARATA (via MM.SS.CACCIAPENSIERI)"
+   ],
+   "kms": [
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p5.A1-610",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "LERCARA FRIDDI (via furitano 86)",
+       "idx": 0,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "CASTRONOVO D.SICILIA (CASTRONOVO DI SICILIA CALVARIO)",
+       "idx": 1,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "CAMMARATA (via MM.SS.CACCIAPENSIERI)",
+       "idx": 2,
+       "arr": "08:00",
+       "dep": "08:00"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CAMMARATA (via MM.SS.CACCIAPENSIERI)",
+    "CASTRONOVO D.SICILIA (CASTRONOVO DI SICILIA CALVARIO)",
+    "LERCARA FRIDDI (via furitano 86)"
+   ],
+   "kms": [
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p5.R1-611",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CAMMARATA (via MM.SS.CACCIAPENSIERI)",
+       "idx": 0,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "CASTRONOVO D.SICILIA (CASTRONOVO DI SICILIA CALVARIO)",
+       "idx": 1,
+       "arr": "15:10",
+       "dep": "15:10"
+      },
+      {
+       "stop": "LERCARA FRIDDI (via furitano 86)",
+       "idx": 2,
+       "arr": "15:40",
+       "dep": "15:40"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

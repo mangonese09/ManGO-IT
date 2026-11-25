@@ -1,0 +1,562 @@
+{
+ "operator": "Molinaro",
+ "route_id": "lot2-83",
+ "name": "CASTEL DI JUDICA - MILITELLO VAL DI CATANIA",
+ "short_name": "83",
+ "source": "orario_b2d178879e.pdf#p5",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "CASTEL DI IUDICA",
+    "CASTEL DI IUDICA (CARRUBBO)",
+    "CASTEL DI IUDICA (GIUMARRA)",
+    "CASTEL DI IUDICA (CINQUEGRANA)",
+    "RAMACCA",
+    "PALAGONIA",
+    "SCORDIA",
+    "SCORDIA (F.S.)",
+    "MILITELLO V.C. (MILITELLO VAL DI CATANIA)"
+   ],
+   "kms": [
+    0.0,
+    2.4,
+    7.0,
+    11.4,
+    27.5,
+    37.2,
+    49.2,
+    50.2,
+    61.5
+   ],
+   "trips": [
+    {
+     "corsa": "p5.A1-859",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r io d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CASTEL DI IUDICA",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "CASTEL DI IUDICA (CARRUBBO)",
+       "idx": 1,
+       "arr": "07:05",
+       "dep": "07:05"
+      },
+      {
+       "stop": "CASTEL DI IUDICA (GIUMARRA)",
+       "idx": 2,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "CASTEL DI IUDICA (CINQUEGRANA)",
+       "idx": 3,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "RAMACCA",
+       "idx": 4,
+       "arr": "07:50",
+       "dep": "07:50"
+      },
+      {
+       "stop": "PALAGONIA",
+       "idx": 5,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "SCORDIA",
+       "idx": 6,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "SCORDIA (F.S.)",
+       "idx": 7,
+       "arr": "08:25",
+       "dep": "08:25"
+      },
+      {
+       "stop": "MILITELLO V.C. (MILITELLO VAL DI CATANIA)",
+       "idx": 8,
+       "arr": "08:40",
+       "dep": "08:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p5.A2-862",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r io d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CASTEL DI IUDICA (GIUMARRA)",
+       "idx": 2,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "CASTEL DI IUDICA (CINQUEGRANA)",
+       "idx": 3,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "RAMACCA",
+       "idx": 4,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "PALAGONIA",
+       "idx": 5,
+       "arr": "07:55",
+       "dep": "07:55"
+      },
+      {
+       "stop": "SCORDIA",
+       "idx": 6,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "SCORDIA (F.S.)",
+       "idx": 7,
+       "arr": "08:20",
+       "dep": "08:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p5.A3-860",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Fe ri a l e esclu so a g osto"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CASTEL DI IUDICA",
+       "idx": 0,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "CASTEL DI IUDICA (CARRUBBO)",
+       "idx": 1,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "CASTEL DI IUDICA (GIUMARRA)",
+       "idx": 2,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "CASTEL DI IUDICA (CINQUEGRANA)",
+       "idx": 3,
+       "arr": "07:55",
+       "dep": "07:55"
+      },
+      {
+       "stop": "RAMACCA",
+       "idx": 4,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "PALAGONIA",
+       "idx": 5,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "SCORDIA",
+       "idx": 6,
+       "arr": "08:50",
+       "dep": "08:50"
+      },
+      {
+       "stop": "SCORDIA (F.S.)",
+       "idx": 7,
+       "arr": "08:55",
+       "dep": "08:55"
+      },
+      {
+       "stop": "MILITELLO V.C. (MILITELLO VAL DI CATANIA)",
+       "idx": 8,
+       "arr": "09:10",
+       "dep": "09:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p5.A4-861",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r io d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CASTEL DI IUDICA",
+       "idx": 0,
+       "arr": "13:10",
+       "dep": "13:10"
+      },
+      {
+       "stop": "CASTEL DI IUDICA (CARRUBBO)",
+       "idx": 1,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "CASTEL DI IUDICA (GIUMARRA)",
+       "idx": 2,
+       "arr": "13:25",
+       "dep": "13:25"
+      },
+      {
+       "stop": "CASTEL DI IUDICA (CINQUEGRANA)",
+       "idx": 3,
+       "arr": "13:35",
+       "dep": "13:35"
+      },
+      {
+       "stop": "RAMACCA",
+       "idx": 4,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "PALAGONIA",
+       "idx": 5,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "SCORDIA",
+       "idx": 6,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "SCORDIA (F.S.)",
+       "idx": 7,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "MILITELLO V.C. (MILITELLO VAL DI CATANIA)",
+       "idx": 8,
+       "arr": "15:00",
+       "dep": "15:00"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "MILITELLO V.C. (MILITELLO VAL DI CATANIA)",
+    "SCORDIA (F.S.)",
+    "SCORDIA",
+    "PALAGONIA",
+    "RAMACCA",
+    "CASTEL DI IUDICA (CINQUEGRANA)",
+    "CASTEL DI IUDICA (GIUMARRA)",
+    "CASTEL DI IUDICA (CARRUBBO)",
+    "CASTEL DI IUDICA"
+   ],
+   "kms": [
+    0.0,
+    11.5,
+    12.5,
+    24.5,
+    34.2,
+    50.3,
+    54.0,
+    59.3,
+    61.5
+   ],
+   "trips": [
+    {
+     "corsa": "p5.R1-863",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r io d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MILITELLO V.C. (MILITELLO VAL DI CATANIA)",
+       "idx": 0,
+       "arr": "12:29",
+       "dep": "12:29"
+      },
+      {
+       "stop": "SCORDIA (F.S.)",
+       "idx": 1,
+       "arr": "12:44",
+       "dep": "12:44"
+      },
+      {
+       "stop": "SCORDIA",
+       "idx": 2,
+       "arr": "12:49",
+       "dep": "12:49"
+      },
+      {
+       "stop": "PALAGONIA",
+       "idx": 3,
+       "arr": "12:59",
+       "dep": "12:59"
+      },
+      {
+       "stop": "RAMACCA",
+       "idx": 4,
+       "arr": "13:09",
+       "dep": "13:09"
+      },
+      {
+       "stop": "CASTEL DI IUDICA (CINQUEGRANA)",
+       "idx": 5,
+       "arr": "13:34",
+       "dep": "13:34"
+      },
+      {
+       "stop": "CASTEL DI IUDICA (GIUMARRA)",
+       "idx": 6,
+       "arr": "13:54",
+       "dep": "13:54"
+      },
+      {
+       "stop": "CASTEL DI IUDICA (CARRUBBO)",
+       "idx": 7,
+       "arr": "14:04",
+       "dep": "14:04"
+      },
+      {
+       "stop": "CASTEL DI IUDICA",
+       "idx": 8,
+       "arr": "14:09",
+       "dep": "14:09"
+      }
+     ]
+    },
+    {
+     "corsa": "p5.R2-864",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Fe ri a l e esclu so a g osto"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MILITELLO V.C. (MILITELLO VAL DI CATANIA)",
+       "idx": 0,
+       "arr": "12:55",
+       "dep": "12:55"
+      },
+      {
+       "stop": "SCORDIA (F.S.)",
+       "idx": 1,
+       "arr": "13:10",
+       "dep": "13:10"
+      },
+      {
+       "stop": "SCORDIA",
+       "idx": 2,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "PALAGONIA",
+       "idx": 3,
+       "arr": "13:35",
+       "dep": "13:35"
+      },
+      {
+       "stop": "RAMACCA",
+       "idx": 4,
+       "arr": "13:55",
+       "dep": "13:55"
+      },
+      {
+       "stop": "CASTEL DI IUDICA (CINQUEGRANA)",
+       "idx": 5,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "CASTEL DI IUDICA (GIUMARRA)",
+       "idx": 6,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "CASTEL DI IUDICA (CARRUBBO)",
+       "idx": 7,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "CASTEL DI IUDICA",
+       "idx": 8,
+       "arr": "14:45",
+       "dep": "14:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p5.R3-866",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r io d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SCORDIA (F.S.)",
+       "idx": 1,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "SCORDIA",
+       "idx": 2,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "PALAGONIA",
+       "idx": 3,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "RAMACCA",
+       "idx": 4,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "CASTEL DI IUDICA (CINQUEGRANA)",
+       "idx": 5,
+       "arr": "15:30",
+       "dep": "15:30"
+      },
+      {
+       "stop": "CASTEL DI IUDICA (GIUMARRA)",
+       "idx": 6,
+       "arr": "15:40",
+       "dep": "15:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p5.R4-865",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r io d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MILITELLO V.C. (MILITELLO VAL DI CATANIA)",
+       "idx": 0,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "SCORDIA (F.S.)",
+       "idx": 1,
+       "arr": "15:20",
+       "dep": "15:20"
+      },
+      {
+       "stop": "SCORDIA",
+       "idx": 2,
+       "arr": "15:25",
+       "dep": "15:25"
+      },
+      {
+       "stop": "PALAGONIA",
+       "idx": 3,
+       "arr": "15:45",
+       "dep": "15:45"
+      },
+      {
+       "stop": "RAMACCA",
+       "idx": 4,
+       "arr": "16:05",
+       "dep": "16:05"
+      },
+      {
+       "stop": "CASTEL DI IUDICA (CINQUEGRANA)",
+       "idx": 5,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "CASTEL DI IUDICA (GIUMARRA)",
+       "idx": 6,
+       "arr": "16:40",
+       "dep": "16:40"
+      },
+      {
+       "stop": "CASTEL DI IUDICA (CARRUBBO)",
+       "idx": 7,
+       "arr": "16:50",
+       "dep": "16:50"
+      },
+      {
+       "stop": "CASTEL DI IUDICA",
+       "idx": 8,
+       "arr": "16:55",
+       "dep": "16:55"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

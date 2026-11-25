@@ -1,0 +1,84 @@
+{
+ "operator": "Stassi",
+ "route_id": "lot1-331",
+ "name": "CONTESSA ENTELLINA - SCIACCA",
+ "short_name": "331",
+ "source": "t2-tabelle_-orari_da_linea_299_a_linea_344.pdf#p29",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "CONTESSA ENTELLINA (Via Libertà)",
+    "SCIACCA (Perriera)"
+   ],
+   "kms": [
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p29.A1-4493",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CONTESSA ENTELLINA (Via Libertà)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "SCIACCA (Perriera)",
+       "idx": 1,
+       "arr": "08:05",
+       "dep": "08:05"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "SCIACCA (Perriera)",
+    "CONTESSA ENTELLINA (Via Libertà)"
+   ],
+   "kms": [
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p29.R1-4496",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SCIACCA (Perriera)",
+       "idx": 0,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "CONTESSA ENTELLINA (Via Libertà)",
+       "idx": 1,
+       "arr": "15:20",
+       "dep": "15:20"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

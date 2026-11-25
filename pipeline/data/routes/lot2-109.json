@@ -1,0 +1,949 @@
+{
+ "operator": "Scionti",
+ "route_id": "lot2-109",
+ "name": "AUGUSTA - CATANIA",
+ "short_name": "109",
+ "source": "orario_b2d178879e.pdf#p11",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "AUGUSTA",
+    "AUGUSTA (FONTANA)",
+    "AUGUSTA (AGNONE)",
+    "CATANIA (AEROPORTO FONTANAROSSA)",
+    "CATANIA"
+   ],
+   "kms": [
+    0.0,
+    3.1,
+    17.0,
+    43.0,
+    45.2
+   ],
+   "trips": [
+    {
+     "corsa": "p11.A1-1222",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AUGUSTA",
+       "idx": 0,
+       "arr": "05:50",
+       "dep": "05:50"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 1,
+       "arr": "05:55",
+       "dep": "05:55"
+      },
+      {
+       "stop": "AUGUSTA (AGNONE)",
+       "idx": 2,
+       "arr": "06:25",
+       "dep": "06:25"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 3,
+       "arr": "06:45",
+       "dep": "06:45"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 4,
+       "arr": "06:50",
+       "dep": "06:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.A2-1224",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AUGUSTA",
+       "idx": 0,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 1,
+       "arr": "09:35",
+       "dep": "09:35"
+      },
+      {
+       "stop": "AUGUSTA (AGNONE)",
+       "idx": 2,
+       "arr": "10:00",
+       "dep": "10:00"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 3,
+       "arr": "10:25",
+       "dep": "10:25"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 4,
+       "arr": "10:30",
+       "dep": "10:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.A3-1229",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AUGUSTA",
+       "idx": 0,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 1,
+       "arr": "12:35",
+       "dep": "12:35"
+      },
+      {
+       "stop": "AUGUSTA (AGNONE)",
+       "idx": 2,
+       "arr": "12:45",
+       "dep": "12:45"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 3,
+       "arr": "13:25",
+       "dep": "13:25"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 4,
+       "arr": "13:30",
+       "dep": "13:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.A4-1232",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AUGUSTA",
+       "idx": 0,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 1,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "AUGUSTA (AGNONE)",
+       "idx": 2,
+       "arr": "15:35",
+       "dep": "15:35"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 3,
+       "arr": "15:55",
+       "dep": "15:55"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 4,
+       "arr": "16:00",
+       "dep": "16:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.A5-1231",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AUGUSTA",
+       "idx": 0,
+       "arr": "16:15",
+       "dep": "16:15"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 1,
+       "arr": "16:25",
+       "dep": "16:25"
+      },
+      {
+       "stop": "AUGUSTA (AGNONE)",
+       "idx": 2,
+       "arr": "16:35",
+       "dep": "16:35"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 3,
+       "arr": "17:00",
+       "dep": "17:00"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 4,
+       "arr": "17:15",
+       "dep": "17:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.A6-8615",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AUGUSTA",
+       "idx": 0,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 1,
+       "arr": "18:05",
+       "dep": "18:05"
+      },
+      {
+       "stop": "AUGUSTA (AGNONE)",
+       "idx": 2,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 3,
+       "arr": "18:55",
+       "dep": "18:55"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 4,
+       "arr": "19:00",
+       "dep": "19:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.A7-1223",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "F e ri a l e l u n e d ì- v e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AUGUSTA",
+       "idx": 0,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 1,
+       "arr": "09:10",
+       "dep": "09:10"
+      },
+      {
+       "stop": "AUGUSTA (AGNONE)",
+       "idx": 2,
+       "arr": "09:20",
+       "dep": "09:20"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 3,
+       "arr": "09:45",
+       "dep": "09:45"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 4,
+       "arr": "10:00",
+       "dep": "10:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.A8-1248",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "F e s ti v a e s c l u s e f e s ti v i t à n a z io n a l i"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AUGUSTA",
+       "idx": 0,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 1,
+       "arr": "09:40",
+       "dep": "09:40"
+      },
+      {
+       "stop": "AUGUSTA (AGNONE)",
+       "idx": 2,
+       "arr": "09:50",
+       "dep": "09:50"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 3,
+       "arr": "10:15",
+       "dep": "10:15"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 4,
+       "arr": "10:30",
+       "dep": "10:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.A9-1227",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "F e ri a l e l u n e d ì- v e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AUGUSTA",
+       "idx": 0,
+       "arr": "10:00",
+       "dep": "10:00"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 1,
+       "arr": "10:05",
+       "dep": "10:05"
+      },
+      {
+       "stop": "AUGUSTA (AGNONE)",
+       "idx": 2,
+       "arr": "10:30",
+       "dep": "10:30"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 3,
+       "arr": "10:55",
+       "dep": "10:55"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 4,
+       "arr": "11:00",
+       "dep": "11:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.A10-1226",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "F e ri a l e l u n e d ì- v e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AUGUSTA",
+       "idx": 0,
+       "arr": "12:20",
+       "dep": "12:20"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 1,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "AUGUSTA (AGNONE)",
+       "idx": 2,
+       "arr": "12:40",
+       "dep": "12:40"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 3,
+       "arr": "13:05",
+       "dep": "13:05"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 4,
+       "arr": "13:20",
+       "dep": "13:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.A11-1249",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "F e s ti v a e s c l u s e f e s ti v i t à n a z io n a l i"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AUGUSTA",
+       "idx": 0,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 1,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "AUGUSTA (AGNONE)",
+       "idx": 2,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 3,
+       "arr": "15:15",
+       "dep": "15:15"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 4,
+       "arr": "15:30",
+       "dep": "15:30"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CATANIA",
+    "CATANIA (AEROPORTO FONTANAROSSA)",
+    "AUGUSTA (AGNONE)",
+    "AUGUSTA (FONTANA)",
+    "AUGUSTA"
+   ],
+   "kms": [
+    0.0,
+    3.0,
+    17.0,
+    43.0,
+    45.2
+   ],
+   "trips": [
+    {
+     "corsa": "p11.R1-1234",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "05:50",
+       "dep": "05:50"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 1,
+       "arr": "06:05",
+       "dep": "06:05"
+      },
+      {
+       "stop": "AUGUSTA (AGNONE)",
+       "idx": 2,
+       "arr": "06:30",
+       "dep": "06:30"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 3,
+       "arr": "06:40",
+       "dep": "06:40"
+      },
+      {
+       "stop": "AUGUSTA",
+       "idx": 4,
+       "arr": "06:50",
+       "dep": "06:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.R2-1235",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "11:30",
+       "dep": "11:30"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 1,
+       "arr": "11:35",
+       "dep": "11:35"
+      },
+      {
+       "stop": "AUGUSTA (AGNONE)",
+       "idx": 2,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 3,
+       "arr": "12:25",
+       "dep": "12:25"
+      },
+      {
+       "stop": "AUGUSTA",
+       "idx": 4,
+       "arr": "12:30",
+       "dep": "12:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.R3-1240",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 1,
+       "arr": "12:15",
+       "dep": "12:15"
+      },
+      {
+       "stop": "AUGUSTA (AGNONE)",
+       "idx": 2,
+       "arr": "12:40",
+       "dep": "12:40"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 3,
+       "arr": "12:50",
+       "dep": "12:50"
+      },
+      {
+       "stop": "AUGUSTA",
+       "idx": 4,
+       "arr": "13:00",
+       "dep": "13:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.R4-1243",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 1,
+       "arr": "13:55",
+       "dep": "13:55"
+      },
+      {
+       "stop": "AUGUSTA (AGNONE)",
+       "idx": 2,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 3,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "AUGUSTA",
+       "idx": 4,
+       "arr": "14:40",
+       "dep": "14:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.R5-1244",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "18:10",
+       "dep": "18:10"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 1,
+       "arr": "18:25",
+       "dep": "18:25"
+      },
+      {
+       "stop": "AUGUSTA (AGNONE)",
+       "idx": 2,
+       "arr": "18:50",
+       "dep": "18:50"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 3,
+       "arr": "19:00",
+       "dep": "19:00"
+      },
+      {
+       "stop": "AUGUSTA",
+       "idx": 4,
+       "arr": "19:10",
+       "dep": "19:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.R6-8616",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "19:30",
+       "dep": "19:30"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 1,
+       "arr": "19:45",
+       "dep": "19:45"
+      },
+      {
+       "stop": "AUGUSTA (AGNONE)",
+       "idx": 2,
+       "arr": "20:10",
+       "dep": "20:10"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 3,
+       "arr": "20:20",
+       "dep": "20:20"
+      },
+      {
+       "stop": "AUGUSTA",
+       "idx": 4,
+       "arr": "20:30",
+       "dep": "20:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.R7-1239",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "F e ri a l e l u n e d ì- v e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 1,
+       "arr": "09:05",
+       "dep": "09:05"
+      },
+      {
+       "stop": "AUGUSTA (AGNONE)",
+       "idx": 2,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 3,
+       "arr": "09:55",
+       "dep": "09:55"
+      },
+      {
+       "stop": "AUGUSTA",
+       "idx": 4,
+       "arr": "10:00",
+       "dep": "10:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.R8-1237",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "F e ri a l e l u n e d ì- v e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "10:30",
+       "dep": "10:30"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 1,
+       "arr": "10:45",
+       "dep": "10:45"
+      },
+      {
+       "stop": "AUGUSTA (AGNONE)",
+       "idx": 2,
+       "arr": "11:10",
+       "dep": "11:10"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 3,
+       "arr": "11:20",
+       "dep": "11:20"
+      },
+      {
+       "stop": "AUGUSTA",
+       "idx": 4,
+       "arr": "11:30",
+       "dep": "11:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.R9-1246",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "F e s ti v a e s c l u s e f e s ti v i t à n a z io n a l i"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 1,
+       "arr": "13:45",
+       "dep": "13:45"
+      },
+      {
+       "stop": "AUGUSTA (AGNONE)",
+       "idx": 2,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 3,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "AUGUSTA",
+       "idx": 4,
+       "arr": "14:30",
+       "dep": "14:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.R10-1242",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "F e ri a l e l u n e d ì- v e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "16:59",
+       "dep": "16:59"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 1,
+       "arr": "17:15",
+       "dep": "17:15"
+      },
+      {
+       "stop": "AUGUSTA (AGNONE)",
+       "idx": 2,
+       "arr": "17:40",
+       "dep": "17:40"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 3,
+       "arr": "17:50",
+       "dep": "17:50"
+      },
+      {
+       "stop": "AUGUSTA",
+       "idx": 4,
+       "arr": "18:00",
+       "dep": "18:00"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

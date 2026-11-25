@@ -1,0 +1,476 @@
+{
+ "operator": "Autoservizi Salemi",
+ "route_id": "lot1-363-p2",
+ "name": "MARSALA - PALERMO",
+ "short_name": "363",
+ "source": "t3-tabelle-_orari_da_linea_350_a_new_alia-cerda.pdf#p10",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "MARSALA (via FAZIO)",
+    "MARSALA (Strasatti)",
+    "MAZARA DEL VALLO",
+    "CARINI (PALERMO - APT PUNTA RAISI)",
+    "PALERMO (via FAZELLO)"
+   ],
+   "kms": [
+    0.0,
+    9.9,
+    21.5,
+    131.8,
+    159.6
+   ],
+   "trips": [
+    {
+     "corsa": "p10.A1-5124",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "Festiva"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 0,
+       "arr": "17:00",
+       "dep": "17:00"
+      },
+      {
+       "stop": "MARSALA (Strasatti)",
+       "idx": 1,
+       "arr": "17:10",
+       "dep": "17:10"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 2,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "CARINI (PALERMO - APT PUNTA RAISI)",
+       "idx": 3,
+       "arr": "19:00",
+       "dep": "19:00"
+      },
+      {
+       "stop": "PALERMO (via FAZELLO)",
+       "idx": 4,
+       "arr": "19:45",
+       "dep": "19:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p10.A2",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "AGG SAL11 Festiva"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 0,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "MARSALA (Strasatti)",
+       "idx": 1,
+       "arr": "15:10",
+       "dep": "15:10"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 2,
+       "arr": "15:30",
+       "dep": "15:30"
+      },
+      {
+       "stop": "CARINI (PALERMO - APT PUNTA RAISI)",
+       "idx": 3,
+       "arr": "17:00",
+       "dep": "17:00"
+      },
+      {
+       "stop": "PALERMO (via FAZELLO)",
+       "idx": 4,
+       "arr": "17:45",
+       "dep": "17:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p10.A3-5123",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "Festiva"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 0,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "MARSALA (Strasatti)",
+       "idx": 1,
+       "arr": "16:10",
+       "dep": "16:10"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 2,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "CARINI (PALERMO - APT PUNTA RAISI)",
+       "idx": 3,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "PALERMO (via FAZELLO)",
+       "idx": 4,
+       "arr": "18:45",
+       "dep": "18:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p10.A4-5126",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "Festiva"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 0,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "MARSALA (Strasatti)",
+       "idx": 1,
+       "arr": "18:10",
+       "dep": "18:10"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 2,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "CARINI (PALERMO - APT PUNTA RAISI)",
+       "idx": 3,
+       "arr": "20:00",
+       "dep": "20:00"
+      },
+      {
+       "stop": "PALERMO (via FAZELLO)",
+       "idx": 4,
+       "arr": "20:45",
+       "dep": "20:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p10.A5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "AGG SAL12 K M ( A G G K M ( A G G S A L 1 1) S A L 1 2) Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 0,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "MARSALA (Strasatti)",
+       "idx": 1,
+       "arr": "18:10",
+       "dep": "18:10"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 2,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "CARINI (PALERMO - APT PUNTA RAISI)",
+       "idx": 3,
+       "arr": "20:00",
+       "dep": "20:00"
+      },
+      {
+       "stop": "PALERMO (via FAZELLO)",
+       "idx": 4,
+       "arr": "20:45",
+       "dep": "20:45"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "PALERMO (via FAZELLO)",
+    "CARINI (PALERMO - APT PUNTA RAISI)",
+    "MAZARA DEL VALLO",
+    "MARSALA (Strasatti)",
+    "MARSALA (via FAZIO)"
+   ],
+   "kms": [
+    0.0,
+    27.8,
+    138.1,
+    149.7,
+    159.6
+   ],
+   "trips": [
+    {
+     "corsa": "p10.R1-5141",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "Festiva"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (via FAZELLO)",
+       "idx": 0,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "CARINI (PALERMO - APT PUNTA RAISI)",
+       "idx": 1,
+       "arr": "15:15",
+       "dep": "15:15"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 2,
+       "arr": "16:45",
+       "dep": "16:45"
+      },
+      {
+       "stop": "MARSALA (Strasatti)",
+       "idx": 3,
+       "arr": "17:05",
+       "dep": "17:05"
+      },
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 4,
+       "arr": "17:15",
+       "dep": "17:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p10.R2",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "SAL14 Festiva"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (via FAZELLO)",
+       "idx": 0,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "CARINI (PALERMO - APT PUNTA RAISI)",
+       "idx": 1,
+       "arr": "16:45",
+       "dep": "16:45"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 2,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "MARSALA (Strasatti)",
+       "idx": 3,
+       "arr": "18:35",
+       "dep": "18:35"
+      },
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 4,
+       "arr": "18:45",
+       "dep": "18:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p10.R3-5138",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (via FAZELLO)",
+       "idx": 0,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "CARINI (PALERMO - APT PUNTA RAISI)",
+       "idx": 1,
+       "arr": "18:45",
+       "dep": "18:45"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 2,
+       "arr": "20:15",
+       "dep": "20:15"
+      },
+      {
+       "stop": "MARSALA (Strasatti)",
+       "idx": 3,
+       "arr": "20:35",
+       "dep": "20:35"
+      },
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 4,
+       "arr": "20:45",
+       "dep": "20:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p10.R4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "SAL13 Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (via FAZELLO)",
+       "idx": 0,
+       "arr": "20:00",
+       "dep": "20:00"
+      },
+      {
+       "stop": "CARINI (PALERMO - APT PUNTA RAISI)",
+       "idx": 1,
+       "arr": "20:45",
+       "dep": "20:45"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 2,
+       "arr": "22:15",
+       "dep": "22:15"
+      },
+      {
+       "stop": "MARSALA (Strasatti)",
+       "idx": 3,
+       "arr": "22:35",
+       "dep": "22:35"
+      },
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 4,
+       "arr": "22:45",
+       "dep": "22:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p10.R5",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "AGG-19 Festiva"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (via FAZELLO)",
+       "idx": 0,
+       "arr": "21:00",
+       "dep": "21:00"
+      },
+      {
+       "stop": "CARINI (PALERMO - APT PUNTA RAISI)",
+       "idx": 1,
+       "arr": "21:45",
+       "dep": "21:45"
+      },
+      {
+       "stop": "MAZARA DEL VALLO",
+       "idx": 2,
+       "arr": "23:15",
+       "dep": "23:15"
+      },
+      {
+       "stop": "MARSALA (Strasatti)",
+       "idx": 3,
+       "arr": "23:35",
+       "dep": "23:35"
+      },
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 4,
+       "arr": "23:45",
+       "dep": "23:45"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

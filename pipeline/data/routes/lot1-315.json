@@ -1,0 +1,460 @@
+{
+ "operator": "Ortolano e Puglisi",
+ "route_id": "lot1-315",
+ "name": "ALIA - LERCARA FRIDDI",
+ "short_name": "315",
+ "source": "t2-tabelle_-orari_da_linea_299_a_linea_344.pdf#p16",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "ALIA (P. SANTA ROSALIA)",
+    "ROCCAPALUMBA (VIA GARIBALDI)",
+    "LERCARA FRIDDI (LERCARA VIA AUTONOMIA SICILIANA)"
+   ],
+   "kms": [
+    0.0,
+    13.1,
+    23.6
+   ],
+   "trips": [
+    {
+     "corsa": "p16.A1",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ORTO 11 Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALIA (P. SANTA ROSALIA)",
+       "idx": 0,
+       "arr": "06:15",
+       "dep": "06:15"
+      },
+      {
+       "stop": "ROCCAPALUMBA (VIA GARIBALDI)",
+       "idx": 1,
+       "arr": "06:40",
+       "dep": "06:40"
+      },
+      {
+       "stop": "LERCARA FRIDDI (LERCARA VIA AUTONOMIA SICILIANA)",
+       "idx": 2,
+       "arr": "07:00",
+       "dep": "07:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.A2-4345",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALIA (P. SANTA ROSALIA)",
+       "idx": 0,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "ROCCAPALUMBA (VIA GARIBALDI)",
+       "idx": 1,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "LERCARA FRIDDI (LERCARA VIA AUTONOMIA SICILIANA)",
+       "idx": 2,
+       "arr": "08:05",
+       "dep": "08:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.A3-4347",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALIA (P. SANTA ROSALIA)",
+       "idx": 0,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "ROCCAPALUMBA (VIA GARIBALDI)",
+       "idx": 1,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "LERCARA FRIDDI (LERCARA VIA AUTONOMIA SICILIANA)",
+       "idx": 2,
+       "arr": "08:05",
+       "dep": "08:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.A4",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ORTO 12 Feriale Lun-Sab scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALIA (P. SANTA ROSALIA)",
+       "idx": 0,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "ROCCAPALUMBA (VIA GARIBALDI)",
+       "idx": 1,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "LERCARA FRIDDI (LERCARA VIA AUTONOMIA SICILIANA)",
+       "idx": 2,
+       "arr": "08:05",
+       "dep": "08:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.A5-4346",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "DOMENICA in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALIA (P. SANTA ROSALIA)",
+       "idx": 0,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "ROCCAPALUMBA (VIA GARIBALDI)",
+       "idx": 1,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "LERCARA FRIDDI (LERCARA VIA AUTONOMIA SICILIANA)",
+       "idx": 2,
+       "arr": "08:00",
+       "dep": "08:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.A6-4349",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ROCCAPALUMBA (VIA GARIBALDI)",
+       "idx": 1,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "LERCARA FRIDDI (LERCARA VIA AUTONOMIA SICILIANA)",
+       "idx": 2,
+       "arr": "09:00",
+       "dep": "09:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.A7-4348",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "O R TO O R TO Feriale 1 1 ) 1 2 ) in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALIA (P. SANTA ROSALIA)",
+       "idx": 0,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "ROCCAPALUMBA (VIA GARIBALDI)",
+       "idx": 1,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "LERCARA FRIDDI (LERCARA VIA AUTONOMIA SICILIANA)",
+       "idx": 2,
+       "arr": "15:05",
+       "dep": "15:05"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "LERCARA FRIDDI (LERCARA VIA AUTONOMIA SICILIANA)",
+    "ROCCAPALUMBA (VIA GARIBALDI)",
+    "ALIA (P. SANTA ROSALIA)"
+   ],
+   "kms": [
+    0.0,
+    11.6,
+    23.6
+   ],
+   "trips": [
+    {
+     "corsa": "p16.R1-4352",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "O R TO O R TO Feriale 1 4 ) 1 3 ) in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "LERCARA FRIDDI (LERCARA VIA AUTONOMIA SICILIANA)",
+       "idx": 0,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "ROCCAPALUMBA (VIA GARIBALDI)",
+       "idx": 1,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "ALIA (P. SANTA ROSALIA)",
+       "idx": 2,
+       "arr": "07:55",
+       "dep": "07:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.R2-8948",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "LERCARA FRIDDI (LERCARA VIA AUTONOMIA SICILIANA)",
+       "idx": 0,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "ROCCAPALUMBA (VIA GARIBALDI)",
+       "idx": 1,
+       "arr": "08:35",
+       "dep": "08:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.R3-4351",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "DOMENICA in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "LERCARA FRIDDI (LERCARA VIA AUTONOMIA SICILIANA)",
+       "idx": 0,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "ROCCAPALUMBA (VIA GARIBALDI)",
+       "idx": 1,
+       "arr": "12:45",
+       "dep": "12:45"
+      },
+      {
+       "stop": "ALIA (P. SANTA ROSALIA)",
+       "idx": 2,
+       "arr": "13:10",
+       "dep": "13:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.R4",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ORTO 14 Feriale Lun-Sab scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "LERCARA FRIDDI (LERCARA VIA AUTONOMIA SICILIANA)",
+       "idx": 0,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "ROCCAPALUMBA (VIA GARIBALDI)",
+       "idx": 1,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "ALIA (P. SANTA ROSALIA)",
+       "idx": 2,
+       "arr": "14:15",
+       "dep": "14:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.R5-4350",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "LERCARA FRIDDI (LERCARA VIA AUTONOMIA SICILIANA)",
+       "idx": 0,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "ROCCAPALUMBA (VIA GARIBALDI)",
+       "idx": 1,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "ALIA (P. SANTA ROSALIA)",
+       "idx": 2,
+       "arr": "14:15",
+       "dep": "14:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.R6",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "ORTO 13 Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "LERCARA FRIDDI (LERCARA VIA AUTONOMIA SICILIANA)",
+       "idx": 0,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "ROCCAPALUMBA (VIA GARIBALDI)",
+       "idx": 1,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "ALIA (P. SANTA ROSALIA)",
+       "idx": 2,
+       "arr": "14:15",
+       "dep": "14:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.R7-8947",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "LERCARA FRIDDI (LERCARA VIA AUTONOMIA SICILIANA)",
+       "idx": 0,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "ROCCAPALUMBA (VIA GARIBALDI)",
+       "idx": 1,
+       "arr": "15:25",
+       "dep": "15:25"
+      },
+      {
+       "stop": "ALIA (P. SANTA ROSALIA)",
+       "idx": 2,
+       "arr": "15:50",
+       "dep": "15:50"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

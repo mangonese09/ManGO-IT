@@ -1,0 +1,134 @@
+{
+ "operator": "Sommatinese Viaggi",
+ "route_id": "lot1-255",
+ "name": "CEFALÙ - GIBILMANNA",
+ "short_name": "255",
+ "source": "t1-tabelle_-orari_da_linea_1_a_linea_297.pdf#p22",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "CEFALU",
+    "GIBILMANNA (Largo S. Chiara  - A)"
+   ],
+   "kms": [
+    0.0,
+    15.5
+   ],
+   "trips": [
+    {
+     "corsa": "p22.A1-3643",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CEFALU",
+       "idx": 0,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "GIBILMANNA (Largo S. Chiara  - A)",
+       "idx": 1,
+       "arr": "09:30",
+       "dep": "09:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p22.A2-3645",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CEFALU",
+       "idx": 0,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "GIBILMANNA (Largo S. Chiara  - A)",
+       "idx": 1,
+       "arr": "15:00",
+       "dep": "15:00"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "GIBILMANNA (Largo S. Chiara  - A)",
+    "CEFALU"
+   ],
+   "kms": [
+    0.0,
+    15.5
+   ],
+   "trips": [
+    {
+     "corsa": "p22.R1-3646",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIBILMANNA (Largo S. Chiara  - A)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "CEFALU",
+       "idx": 1,
+       "arr": "07:25",
+       "dep": "07:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p22.R2-3648",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIBILMANNA (Largo S. Chiara  - A)",
+       "idx": 0,
+       "arr": "16:15",
+       "dep": "16:15"
+      },
+      {
+       "stop": "CEFALU",
+       "idx": 1,
+       "arr": "16:45",
+       "dep": "16:45"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

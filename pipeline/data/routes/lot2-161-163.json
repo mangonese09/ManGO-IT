@@ -1,0 +1,162 @@
+{
+ "operator": "Consorzio Stabile Siciliano Mobilità Est (Lotto 2)",
+ "route_id": "lot2-161-163",
+ "name": "AGIRA-LEONFORTE-NICOSIA",
+ "short_name": "161+163",
+ "source": "orario_b2d178879e.pdf#p68",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "AGIRA (P.zza Garibaldi)",
+    "CATANIA (AEROPORTO FONTANAROSSA)",
+    "CATANIA (Terminal Bus)"
+   ],
+   "kms": [
+    0.0,
+    68.7,
+    75.6
+   ],
+   "trips": [
+    {
+     "corsa": "p68.A1-Aggiunta-410",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "C O 1 Aggiunta-410 FERIALE da lunedì a venerdì escluso Agosto"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AGIRA (P.zza Garibaldi)",
+       "idx": 0,
+       "arr": "07:05",
+       "dep": "07:05"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 1,
+       "arr": "08:05",
+       "dep": "08:05"
+      },
+      {
+       "stop": "CATANIA (Terminal Bus)",
+       "idx": 2,
+       "arr": "08:15",
+       "dep": "08:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p68.A2-Aggiunta-147",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "R S E 5 Aggiunta-147 F E R I A LE d a lunedì a v e n e r dì escluso Agosto"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AGIRA (P.zza Garibaldi)",
+       "idx": 0,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 1,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "CATANIA (Terminal Bus)",
+       "idx": 2,
+       "arr": "15:15",
+       "dep": "15:15"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CATANIA (Terminal Bus)",
+    "CATANIA (AEROPORTO FONTANAROSSA)",
+    "AGIRA (P.zza Garibaldi)"
+   ],
+   "kms": [
+    0.0,
+    6.9,
+    75.6
+   ],
+   "trips": [
+    {
+     "corsa": "p68.R1-Aggiunta-148",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "2 Aggiunta-148 FERIALE da lunedì a venerdì escluso Agosto"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Terminal Bus)",
+       "idx": 0,
+       "arr": "12:45",
+       "dep": "12:45"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 1,
+       "arr": "12:55",
+       "dep": "12:55"
+      },
+      {
+       "stop": "AGIRA (P.zza Garibaldi)",
+       "idx": 2,
+       "arr": "13:55",
+       "dep": "13:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p68.R2-Aggiunta-411",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "4 Aggiunta-411 F E R I A LE d a lunedì a v e n e r d ì escluso Agosto"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Terminal Bus)",
+       "idx": 0,
+       "arr": "17:45",
+       "dep": "17:45"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 1,
+       "arr": "17:55",
+       "dep": "17:55"
+      },
+      {
+       "stop": "AGIRA (P.zza Garibaldi)",
+       "idx": 2,
+       "arr": "18:55",
+       "dep": "18:55"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

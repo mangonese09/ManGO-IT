@@ -1,0 +1,342 @@
+{
+ "operator": "Atis",
+ "route_id": "lot1-250",
+ "name": "SCIARA - TERMINI IMERESE",
+ "short_name": "250",
+ "source": "t1-tabelle_-orari_da_linea_1_a_linea_297.pdf#p17",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "SCIARA (P. CASTELREALE)",
+    "SCIARA (CORSO UMBERTO 122)",
+    "TERMINI IMERESE (B INTERNO TERMINI IMERESE STAZIONE FS)",
+    "TERMINI IMERESE (PEONIA TERMINI IMERESE P. PALERMO)",
+    "TERMINI IMERESE (COMMISSARIATO TERMINI)"
+   ],
+   "kms": [
+    0.0,
+    0.3,
+    13.5,
+    16.0,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p17.A1-3615",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SCIARA (P. CASTELREALE)",
+       "idx": 0,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "SCIARA (CORSO UMBERTO 122)",
+       "idx": 1,
+       "arr": "08:43",
+       "dep": "08:43"
+      },
+      {
+       "stop": "TERMINI IMERESE (B INTERNO TERMINI IMERESE STAZIONE FS)",
+       "idx": 2,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "TERMINI IMERESE (PEONIA TERMINI IMERESE P. PALERMO)",
+       "idx": 3,
+       "arr": "09:10",
+       "dep": "09:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p17.A2-3616",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SCIARA (P. CASTELREALE)",
+       "idx": 0,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "SCIARA (CORSO UMBERTO 122)",
+       "idx": 1,
+       "arr": "09:03",
+       "dep": "09:03"
+      },
+      {
+       "stop": "TERMINI IMERESE (B INTERNO TERMINI IMERESE STAZIONE FS)",
+       "idx": 2,
+       "arr": "09:20",
+       "dep": "09:20"
+      },
+      {
+       "stop": "TERMINI IMERESE (COMMISSARIATO TERMINI)",
+       "idx": 4,
+       "arr": "09:30",
+       "dep": "09:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p17.A3-3617",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SCIARA (P. CASTELREALE)",
+       "idx": 0,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "SCIARA (CORSO UMBERTO 122)",
+       "idx": 1,
+       "arr": "13:03",
+       "dep": "13:03"
+      },
+      {
+       "stop": "TERMINI IMERESE (B INTERNO TERMINI IMERESE STAZIONE FS)",
+       "idx": 2,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "TERMINI IMERESE (PEONIA TERMINI IMERESE P. PALERMO)",
+       "idx": 3,
+       "arr": "13:30",
+       "dep": "13:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p17.A4-3618",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SCIARA (P. CASTELREALE)",
+       "idx": 0,
+       "arr": "15:30",
+       "dep": "15:30"
+      },
+      {
+       "stop": "SCIARA (CORSO UMBERTO 122)",
+       "idx": 1,
+       "arr": "15:33",
+       "dep": "15:33"
+      },
+      {
+       "stop": "TERMINI IMERESE (B INTERNO TERMINI IMERESE STAZIONE FS)",
+       "idx": 2,
+       "arr": "15:50",
+       "dep": "15:50"
+      },
+      {
+       "stop": "TERMINI IMERESE (COMMISSARIATO TERMINI)",
+       "idx": 4,
+       "arr": "16:00",
+       "dep": "16:00"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "TERMINI IMERESE (COMMISSARIATO TERMINI)",
+    "TERMINI IMERESE (PEONIA TERMINI IMERESE P. PALERMO)",
+    "TERMINI IMERESE (B INTERNO TERMINI IMERESE STAZIONE FS)",
+    "SCIARA (CORSO UMBERTO 122)",
+    "SCIARA (P. CASTELREALE)"
+   ],
+   "kms": [
+    null,
+    0.0,
+    2.5,
+    15.7,
+    16.0
+   ],
+   "trips": [
+    {
+     "corsa": "p17.R1-3620",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERMINI IMERESE (PEONIA TERMINI IMERESE P. PALERMO)",
+       "idx": 1,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "TERMINI IMERESE (B INTERNO TERMINI IMERESE STAZIONE FS)",
+       "idx": 2,
+       "arr": "12:40",
+       "dep": "12:40"
+      },
+      {
+       "stop": "SCIARA (CORSO UMBERTO 122)",
+       "idx": 3,
+       "arr": "12:55",
+       "dep": "12:55"
+      },
+      {
+       "stop": "SCIARA (P. CASTELREALE)",
+       "idx": 4,
+       "arr": "13:00",
+       "dep": "13:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p17.R2-3621",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERMINI IMERESE (PEONIA TERMINI IMERESE P. PALERMO)",
+       "idx": 1,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "TERMINI IMERESE (B INTERNO TERMINI IMERESE STAZIONE FS)",
+       "idx": 2,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "SCIARA (CORSO UMBERTO 122)",
+       "idx": 3,
+       "arr": "13:55",
+       "dep": "13:55"
+      },
+      {
+       "stop": "SCIARA (P. CASTELREALE)",
+       "idx": 4,
+       "arr": "14:00",
+       "dep": "14:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p17.R3-3619",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERMINI IMERESE (PEONIA TERMINI IMERESE P. PALERMO)",
+       "idx": 1,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "TERMINI IMERESE (B INTERNO TERMINI IMERESE STAZIONE FS)",
+       "idx": 2,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "SCIARA (CORSO UMBERTO 122)",
+       "idx": 3,
+       "arr": "14:55",
+       "dep": "14:55"
+      },
+      {
+       "stop": "SCIARA (P. CASTELREALE)",
+       "idx": 4,
+       "arr": "15:00",
+       "dep": "15:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p17.R4-3622",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERMINI IMERESE (PEONIA TERMINI IMERESE P. PALERMO)",
+       "idx": 1,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "TERMINI IMERESE (B INTERNO TERMINI IMERESE STAZIONE FS)",
+       "idx": 2,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "SCIARA (CORSO UMBERTO 122)",
+       "idx": 3,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "SCIARA (P. CASTELREALE)",
+       "idx": 4,
+       "arr": "18:20",
+       "dep": "18:20"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

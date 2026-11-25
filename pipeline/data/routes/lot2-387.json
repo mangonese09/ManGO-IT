@@ -1,0 +1,197 @@
+{
+ "operator": "Consorzio Stabile Siciliano Mobilità Est (Lotto 2)",
+ "route_id": "lot2-387",
+ "name": "CATANIA - VIAGRANDE - ZAFFERANA ETNEA",
+ "short_name": "387",
+ "source": "orario_b2d178879e.pdf#p81",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "MONTEROSSO ETNEA",
+    "TRAPPETO"
+   ],
+   "kms": [
+    3.9,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p81.R1-5580",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "C O R S E 1 3 5 7 9 2 - FERIALE CATANIA - 0,000 23,900 8:30 Terminal Bus Via Archimede"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MONTEROSSO ETNEA",
+       "idx": 0,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "TRAPPETO",
+       "idx": 1,
+       "arr": "07:55",
+       "dep": "07:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p81.R2-5581",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "4 F E R I A L E 12:30"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MONTEROSSO ETNEA",
+       "idx": 0,
+       "arr": "11:25",
+       "dep": "11:25"
+      },
+      {
+       "stop": "TRAPPETO",
+       "idx": 1,
+       "arr": "11:55",
+       "dep": "11:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p81.R3-9652",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "6 FERIALE 13:30"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MONTEROSSO ETNEA",
+       "idx": 0,
+       "arr": "12:25",
+       "dep": "12:25"
+      },
+      {
+       "stop": "TRAPPETO",
+       "idx": 1,
+       "arr": "12:55",
+       "dep": "12:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p81.R4-9653",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "8 FERIALE 14:30"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MONTEROSSO ETNEA",
+       "idx": 0,
+       "arr": "13:25",
+       "dep": "13:25"
+      },
+      {
+       "stop": "TRAPPETO",
+       "idx": 1,
+       "arr": "13:55",
+       "dep": "13:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p81.R5-9654",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "10 FERIALE 17:30"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MONTEROSSO ETNEA",
+       "idx": 0,
+       "arr": "16:25",
+       "dep": "16:25"
+      },
+      {
+       "stop": "TRAPPETO",
+       "idx": 1,
+       "arr": "16:55",
+       "dep": "16:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p81.R6-9656",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "12 FERIALE 18:30"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MONTEROSSO ETNEA",
+       "idx": 0,
+       "arr": "17:25",
+       "dep": "17:25"
+      },
+      {
+       "stop": "TRAPPETO",
+       "idx": 1,
+       "arr": "17:55",
+       "dep": "17:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p81.R7-9655",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "14 16 18 FERIALE - - 19:30 - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MONTEROSSO ETNEA",
+       "idx": 0,
+       "arr": "18:25",
+       "dep": "18:25"
+      },
+      {
+       "stop": "TRAPPETO",
+       "idx": 1,
+       "arr": "18:55",
+       "dep": "18:55"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

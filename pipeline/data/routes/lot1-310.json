@@ -1,0 +1,264 @@
+{
+ "operator": "Macaluso",
+ "route_id": "lot1-310",
+ "name": "MONTEMAGGIORE BEISITO - CEFALÙ",
+ "short_name": "310",
+ "source": "t2-tabelle_-orari_da_linea_299_a_linea_344.pdf#p11",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "MONTEMAGGIORE B. (PIAZZA COMITATO)",
+    "ALIMINUSA (CORSO GEN.GRISANTI)",
+    "CERDA (VIA ROMA- PIAZZA)",
+    "CEFALU (’ STAZ. - VIA PASSAFIUME)"
+   ],
+   "kms": [
+    0.0,
+    2.8,
+    11.0,
+    42.9
+   ],
+   "trips": [
+    {
+     "corsa": "p11.A1-4311",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "In P e r io do F e r ia le"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MONTEMAGGIORE B. (PIAZZA COMITATO)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "ALIMINUSA (CORSO GEN.GRISANTI)",
+       "idx": 1,
+       "arr": "07:05",
+       "dep": "07:05"
+      },
+      {
+       "stop": "CERDA (VIA ROMA- PIAZZA)",
+       "idx": 2,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "CEFALU (’ STAZ. - VIA PASSAFIUME)",
+       "idx": 3,
+       "arr": "08:10",
+       "dep": "08:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.A2-4311",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "split F e s t i v a e s c l u s o f e s t i v it à n a z io n a l i"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MONTEMAGGIORE B. (PIAZZA COMITATO)",
+       "idx": 0,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "ALIMINUSA (CORSO GEN.GRISANTI)",
+       "idx": 1,
+       "arr": "08:35",
+       "dep": "08:35"
+      },
+      {
+       "stop": "CERDA (VIA ROMA- PIAZZA)",
+       "idx": 2,
+       "arr": "08:55",
+       "dep": "08:55"
+      },
+      {
+       "stop": "CEFALU (’ STAZ. - VIA PASSAFIUME)",
+       "idx": 3,
+       "arr": "09:40",
+       "dep": "09:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.A3-4312",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "NEW (4 3 11 (4 31 2 F e r i a le sp li t) NE W ) i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MONTEMAGGIORE B. (PIAZZA COMITATO)",
+       "idx": 0,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "ALIMINUSA (CORSO GEN.GRISANTI)",
+       "idx": 1,
+       "arr": "08:35",
+       "dep": "08:35"
+      },
+      {
+       "stop": "CERDA (VIA ROMA- PIAZZA)",
+       "idx": 2,
+       "arr": "08:55",
+       "dep": "08:55"
+      },
+      {
+       "stop": "CEFALU (’ STAZ. - VIA PASSAFIUME)",
+       "idx": 3,
+       "arr": "09:40",
+       "dep": "09:40"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CEFALU (’ STAZ. - VIA PASSAFIUME)",
+    "CERDA (VIA ROMA- PIAZZA)",
+    "ALIMINUSA (CORSO GEN.GRISANTI)",
+    "MONTEMAGGIORE B. (PIAZZA COMITATO)"
+   ],
+   "kms": [
+    0.0,
+    32.2,
+    40.1,
+    42.9
+   ],
+   "trips": [
+    {
+     "corsa": "p11.R1-8857",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "( 4 3 13 F e r i a le sp l it ) i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CEFALU (’ STAZ. - VIA PASSAFIUME)",
+       "idx": 0,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "CERDA (VIA ROMA- PIAZZA)",
+       "idx": 1,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "ALIMINUSA (CORSO GEN.GRISANTI)",
+       "idx": 2,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "MONTEMAGGIORE B. (PIAZZA COMITATO)",
+       "idx": 3,
+       "arr": "15:10",
+       "dep": "15:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.R2-4313",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "In P e r i o do F e r i a le"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CEFALU (’ STAZ. - VIA PASSAFIUME)",
+       "idx": 0,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "CERDA (VIA ROMA- PIAZZA)",
+       "idx": 1,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "ALIMINUSA (CORSO GEN.GRISANTI)",
+       "idx": 2,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "MONTEMAGGIORE B. (PIAZZA COMITATO)",
+       "idx": 3,
+       "arr": "15:10",
+       "dep": "15:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.R3-4313",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "split F e s t i v a e s c l u s o f e s t i v it à n a z io n a l i"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CEFALU (’ STAZ. - VIA PASSAFIUME)",
+       "idx": 0,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "CERDA (VIA ROMA- PIAZZA)",
+       "idx": 1,
+       "arr": "15:15",
+       "dep": "15:15"
+      },
+      {
+       "stop": "ALIMINUSA (CORSO GEN.GRISANTI)",
+       "idx": 2,
+       "arr": "15:25",
+       "dep": "15:25"
+      },
+      {
+       "stop": "MONTEMAGGIORE B. (PIAZZA COMITATO)",
+       "idx": 3,
+       "arr": "15:30",
+       "dep": "15:30"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,4756 @@
+{
+ "operator": "Consorzio Stabile Siciliano Mobilità Est (Lotto 2)",
+ "route_id": "lot2-117",
+ "name": "RIPOSTO-GIARRE-CALATABIANO-TAORMINA, DIR. FIUMEFREDDO",
+ "short_name": "117",
+ "source": "orario_b2d178879e.pdf#p56",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "TAORMINA (Terminal Bus)",
+    "CAPO TAORMINA",
+    "GIARDINI FS",
+    "GIARDINI (Via Umberto SS114/San Giovanni)",
+    "PONTE ALCANTARA",
+    "SPIAGGIA SAN MARCO",
+    "CALATABIANO (Piazza Duomo)",
+    "PASTERIA",
+    "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+    "MASCALI",
+    "S.M. LA STRADA",
+    "GIARRE (P.zza Duono/Via Calipoli 236)",
+    "RIPOSTO (Via Roma - Angolo Vila Pantano)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p56.T1R1-14160",
+     "service": {
+      "days": "mon-sat",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "Assessorato AUTOLINEA RIPOSTO-GIARRE-CALATABIANO-TAORMINA, F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "07:23",
+       "dep": "07:23"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "07:30",
+       "dep": "07:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R2-14363",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "07:23",
+       "dep": "07:23"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "07:30",
+       "dep": "07:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R3-14583",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 7,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "07:33",
+       "dep": "07:33"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "07:40",
+       "dep": "07:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R4-14782",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Regionale F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 7,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "07:33",
+       "dep": "07:33"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "07:40",
+       "dep": "07:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R5-14959",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "dir. F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "07:38",
+       "dep": "07:38"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "07:45",
+       "dep": "07:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R6-114156",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Fiumefreddo F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "07:43",
+       "dep": "07:43"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "07:50",
+       "dep": "07:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R7-141355",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "delle F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "07:43",
+       "dep": "07:43"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "07:50",
+       "dep": "07:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R8-114577",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 7,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "07:48",
+       "dep": "07:48"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "07:50",
+       "dep": "07:50"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "07:55",
+       "dep": "07:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R9-114778",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "15/9",
+       "to": "10/6"
+      },
+      "raw": "F E R IA L E 15 / 9- 10 / 6"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "08:18",
+       "dep": "08:18"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "08:25",
+       "dep": "08:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R10-141593",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "infrastrutture FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TAORMINA (Terminal Bus)",
+       "idx": 0,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "CAPO TAORMINA",
+       "idx": 1,
+       "arr": "08:35",
+       "dep": "08:35"
+      },
+      {
+       "stop": "GIARDINI FS",
+       "idx": 2,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS114/San Giovanni)",
+       "idx": 3,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "PONTE ALCANTARA",
+       "idx": 4,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "09:05",
+       "dep": "09:05"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 7,
+       "arr": "09:10",
+       "dep": "09:10"
+      },
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "09:20",
+       "dep": "09:20"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "09:23",
+       "dep": "09:23"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "09:25",
+       "dep": "09:25"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "09:30",
+       "dep": "09:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R11-124173",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Fda Eal S 1T 05I V 6/9A l1 /"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TAORMINA (Terminal Bus)",
+       "idx": 0,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "CAPO TAORMINA",
+       "idx": 1,
+       "arr": "09:35",
+       "dep": "09:35"
+      },
+      {
+       "stop": "GIARDINI FS",
+       "idx": 2,
+       "arr": "09:40",
+       "dep": "09:40"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS114/San Giovanni)",
+       "idx": 3,
+       "arr": "09:45",
+       "dep": "09:45"
+      },
+      {
+       "stop": "PONTE ALCANTARA",
+       "idx": 4,
+       "arr": "09:55",
+       "dep": "09:55"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "10:00",
+       "dep": "10:00"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 7,
+       "arr": "10:05",
+       "dep": "10:05"
+      },
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "10:10",
+       "dep": "10:10"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "10:15",
+       "dep": "10:15"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "10:18",
+       "dep": "10:18"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "10:20",
+       "dep": "10:20"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "10:25",
+       "dep": "10:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R12-124357",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "11:00",
+       "dep": "11:00"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 7,
+       "arr": "11:05",
+       "dep": "11:05"
+      },
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "11:10",
+       "dep": "11:10"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "11:20",
+       "dep": "11:20"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "11:23",
+       "dep": "11:23"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "11:25",
+       "dep": "11:25"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "11:30",
+       "dep": "11:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R13-124554",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "e FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TAORMINA (Terminal Bus)",
+       "idx": 0,
+       "arr": "10:30",
+       "dep": "10:30"
+      },
+      {
+       "stop": "CAPO TAORMINA",
+       "idx": 1,
+       "arr": "10:35",
+       "dep": "10:35"
+      },
+      {
+       "stop": "GIARDINI FS",
+       "idx": 2,
+       "arr": "10:40",
+       "dep": "10:40"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS114/San Giovanni)",
+       "idx": 3,
+       "arr": "10:45",
+       "dep": "10:45"
+      },
+      {
+       "stop": "PONTE ALCANTARA",
+       "idx": 4,
+       "arr": "11:00",
+       "dep": "11:00"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "11:05",
+       "dep": "11:05"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 7,
+       "arr": "11:10",
+       "dep": "11:10"
+      },
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "11:15",
+       "dep": "11:15"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "11:20",
+       "dep": "11:20"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "11:23",
+       "dep": "11:23"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "11:25",
+       "dep": "11:25"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "11:30",
+       "dep": "11:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R14-124762",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "della FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TAORMINA (Terminal Bus)",
+       "idx": 0,
+       "arr": "11:30",
+       "dep": "11:30"
+      },
+      {
+       "stop": "CAPO TAORMINA",
+       "idx": 1,
+       "arr": "11:35",
+       "dep": "11:35"
+      },
+      {
+       "stop": "GIARDINI FS",
+       "idx": 2,
+       "arr": "11:40",
+       "dep": "11:40"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS114/San Giovanni)",
+       "idx": 3,
+       "arr": "11:45",
+       "dep": "11:45"
+      },
+      {
+       "stop": "PONTE ALCANTARA",
+       "idx": 4,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "12:05",
+       "dep": "12:05"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 7,
+       "arr": "12:10",
+       "dep": "12:10"
+      },
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "12:15",
+       "dep": "12:15"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "12:20",
+       "dep": "12:20"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "12:23",
+       "dep": "12:23"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "12:25",
+       "dep": "12:25"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "12:30",
+       "dep": "12:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R15-124971",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Servizio Fda Eal S 1T 05I V 6/9A l1 /"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TAORMINA (Terminal Bus)",
+       "idx": 0,
+       "arr": "11:30",
+       "dep": "11:30"
+      },
+      {
+       "stop": "CAPO TAORMINA",
+       "idx": 1,
+       "arr": "11:35",
+       "dep": "11:35"
+      },
+      {
+       "stop": "GIARDINI FS",
+       "idx": 2,
+       "arr": "11:40",
+       "dep": "11:40"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS114/San Giovanni)",
+       "idx": 3,
+       "arr": "11:45",
+       "dep": "11:45"
+      },
+      {
+       "stop": "PONTE ALCANTARA",
+       "idx": 4,
+       "arr": "11:55",
+       "dep": "11:55"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 7,
+       "arr": "12:05",
+       "dep": "12:05"
+      },
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "12:10",
+       "dep": "12:10"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "12:20",
+       "dep": "12:20"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "12:23",
+       "dep": "12:23"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "12:25",
+       "dep": "12:25"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "12:30",
+       "dep": "12:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R16-143715",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Mobilità 1 F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "12:35",
+       "dep": "12:35"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "12:38",
+       "dep": "12:38"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "12:40",
+       "dep": "12:40"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "12:45",
+       "dep": "12:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R17-134374",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "11/6",
+       "to": "16/9"
+      },
+      "raw": "F E R IA L E 11 / 6- 16 / 9"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "13:18",
+       "dep": "13:18"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "13:25",
+       "dep": "13:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R18-134561",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "- \"Autotrasporto F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "13:33",
+       "dep": "13:33"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "13:35",
+       "dep": "13:35"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "13:40",
+       "dep": "13:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R19-143871",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "11/6",
+       "to": "16/9"
+      },
+      "raw": "F E R IA L E 11 / 6- 16 / 9"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "13:33",
+       "dep": "13:33"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "13:35",
+       "dep": "13:35"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "13:40",
+       "dep": "13:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R20-134981",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "15/9",
+       "to": "10/6"
+      },
+      "raw": "Dipartimento F E R IA L E 15 / 9- 10 / 6"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "13:35",
+       "dep": "13:35"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "13:38",
+       "dep": "13:38"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "13:45",
+       "dep": "13:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R21-144169",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/7",
+       "to": "31/8"
+      },
+      "raw": "Persone\" F E R I A L E 1 /7 - 3 1 /8"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TAORMINA (Terminal Bus)",
+       "idx": 0,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "CAPO TAORMINA",
+       "idx": 1,
+       "arr": "13:05",
+       "dep": "13:05"
+      },
+      {
+       "stop": "GIARDINI FS",
+       "idx": 2,
+       "arr": "13:10",
+       "dep": "13:10"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS114/San Giovanni)",
+       "idx": 3,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "PONTE ALCANTARA",
+       "idx": 4,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "SPIAGGIA SAN MARCO",
+       "idx": 5,
+       "arr": "13:35",
+       "dep": "13:35"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "13:40",
+       "dep": "13:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R22-144393",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "CORSE F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 7,
+       "arr": "13:45",
+       "dep": "13:45"
+      },
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "13:55",
+       "dep": "13:55"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "13:58",
+       "dep": "13:58"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "14:05",
+       "dep": "14:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R23-144654",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "alle F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "13:55",
+       "dep": "13:55"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "13:58",
+       "dep": "13:58"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "14:05",
+       "dep": "14:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R24-144779",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "15/9",
+       "to": "10/6"
+      },
+      "raw": "F E R IA L E 15 / 9- 10 / 6"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "14:18",
+       "dep": "14:18"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "14:25",
+       "dep": "14:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R25-144697",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TAORMINA (Terminal Bus)",
+       "idx": 0,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "CAPO TAORMINA",
+       "idx": 1,
+       "arr": "13:35",
+       "dep": "13:35"
+      },
+      {
+       "stop": "GIARDINI FS",
+       "idx": 2,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS114/San Giovanni)",
+       "idx": 3,
+       "arr": "13:45",
+       "dep": "13:45"
+      },
+      {
+       "stop": "PONTE ALCANTARA",
+       "idx": 4,
+       "arr": "13:55",
+       "dep": "13:55"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 7,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "14:18",
+       "dep": "14:18"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "14:25",
+       "dep": "14:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R26-154165",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "11/6",
+       "to": "16/9"
+      },
+      "raw": "infrastrutture F E R IA L E 11 / 6- 16 / 9"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "14:35",
+       "dep": "14:35"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 7,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "14:53",
+       "dep": "14:53"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "14:55",
+       "dep": "14:55"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "15:00",
+       "dep": "15:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R27-154384",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/7",
+       "to": "31/8"
+      },
+      "raw": "F E R I A L E 1 /7 - 3 1 /8"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SPIAGGIA SAN MARCO",
+       "idx": 5,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "14:35",
+       "dep": "14:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R28-154658",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TAORMINA (Terminal Bus)",
+       "idx": 0,
+       "arr": "14:35",
+       "dep": "14:35"
+      },
+      {
+       "stop": "CAPO TAORMINA",
+       "idx": 1,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "GIARDINI FS",
+       "idx": 2,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS114/San Giovanni)",
+       "idx": 3,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "PONTE ALCANTARA",
+       "idx": 4,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 7,
+       "arr": "15:10",
+       "dep": "15:10"
+      },
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "15:15",
+       "dep": "15:15"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "15:20",
+       "dep": "15:20"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "15:23",
+       "dep": "15:23"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "15:25",
+       "dep": "15:25"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "15:30",
+       "dep": "15:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R29-154758",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "11/6",
+       "to": "16/9"
+      },
+      "raw": "della F E R IA L E 11 / 6- 16 / 9"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "15:30",
+       "dep": "15:30"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 7,
+       "arr": "15:35",
+       "dep": "15:35"
+      },
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "15:40",
+       "dep": "15:40"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "15:45",
+       "dep": "15:45"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "15:48",
+       "dep": "15:48"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "15:50",
+       "dep": "15:50"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "15:55",
+       "dep": "15:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R30-154898",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/7",
+       "to": "31/8"
+      },
+      "raw": "F E R I A L E 1 /7 - 3 1 /8"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TAORMINA (Terminal Bus)",
+       "idx": 0,
+       "arr": "15:30",
+       "dep": "15:30"
+      },
+      {
+       "stop": "CAPO TAORMINA",
+       "idx": 1,
+       "arr": "15:35",
+       "dep": "15:35"
+      },
+      {
+       "stop": "GIARDINI FS",
+       "idx": 2,
+       "arr": "15:40",
+       "dep": "15:40"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS114/San Giovanni)",
+       "idx": 3,
+       "arr": "15:45",
+       "dep": "15:45"
+      },
+      {
+       "stop": "PONTE ALCANTARA",
+       "idx": 4,
+       "arr": "15:55",
+       "dep": "15:55"
+      },
+      {
+       "stop": "SPIAGGIA SAN MARCO",
+       "idx": 5,
+       "arr": "16:00",
+       "dep": "16:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R31-164912",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/7",
+       "to": "31/8"
+      },
+      "raw": "Mobilità F E R I A L E 1 /7 - 3 1 /8"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SPIAGGIA SAN MARCO",
+       "idx": 5,
+       "arr": "16:05",
+       "dep": "16:05"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "16:10",
+       "dep": "16:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R32-867342",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "16:10",
+       "dep": "16:10"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "16:15",
+       "dep": "16:15"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "16:18",
+       "dep": "16:18"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "16:20",
+       "dep": "16:20"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "16:25",
+       "dep": "16:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R33-164850",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "e F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "17:10",
+       "dep": "17:10"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "17:35",
+       "dep": "17:35"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "17:38",
+       "dep": "17:38"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "17:40",
+       "dep": "17:40"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "17:45",
+       "dep": "17:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R34-164770",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "dei FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TAORMINA (Terminal Bus)",
+       "idx": 0,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "CAPO TAORMINA",
+       "idx": 1,
+       "arr": "17:35",
+       "dep": "17:35"
+      },
+      {
+       "stop": "GIARDINI FS",
+       "idx": 2,
+       "arr": "17:40",
+       "dep": "17:40"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS114/San Giovanni)",
+       "idx": 3,
+       "arr": "17:45",
+       "dep": "17:45"
+      },
+      {
+       "stop": "PONTE ALCANTARA",
+       "idx": 4,
+       "arr": "17:55",
+       "dep": "17:55"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 7,
+       "arr": "18:05",
+       "dep": "18:05"
+      },
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "18:10",
+       "dep": "18:10"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "18:18",
+       "dep": "18:18"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "18:20",
+       "dep": "18:20"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "18:25",
+       "dep": "18:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R35-164985",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Fda Eal S 1T 05I V 6/9A l1 /"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TAORMINA (Terminal Bus)",
+       "idx": 0,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "CAPO TAORMINA",
+       "idx": 1,
+       "arr": "17:35",
+       "dep": "17:35"
+      },
+      {
+       "stop": "GIARDINI FS",
+       "idx": 2,
+       "arr": "17:40",
+       "dep": "17:40"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS114/San Giovanni)",
+       "idx": 3,
+       "arr": "17:45",
+       "dep": "17:45"
+      },
+      {
+       "stop": "PONTE ALCANTARA",
+       "idx": 4,
+       "arr": "17:55",
+       "dep": "17:55"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 7,
+       "arr": "18:05",
+       "dep": "18:05"
+      },
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "18:10",
+       "dep": "18:10"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "18:18",
+       "dep": "18:18"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "18:20",
+       "dep": "18:20"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 12,
+       "arr": "18:25",
+       "dep": "18:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R36-174914",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/7",
+       "to": "31/8"
+      },
+      "raw": "Trasporti F E R I A L E 1 /7 - 3 1 /8"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SPIAGGIA SAN MARCO",
+       "idx": 5,
+       "arr": "17:55",
+       "dep": "17:55"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "18:00",
+       "dep": "18:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R37-174395",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 7,
+       "arr": "18:05",
+       "dep": "18:05"
+      },
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "18:10",
+       "dep": "18:10"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "18:20",
+       "dep": "18:20"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "18:23",
+       "dep": "18:23"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "18:25",
+       "dep": "18:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R38-174857",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "11/6",
+       "to": "16/9"
+      },
+      "raw": "LOTTO F E R IA L E 11 / 6- 16 / 9"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "19:40",
+       "dep": "19:40"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "19:50",
+       "dep": "19:50"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "19:53",
+       "dep": "19:53"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "19:55",
+       "dep": "19:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R39-174976",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/7",
+       "to": "31/8"
+      },
+      "raw": "2 F E R I A L E 1 /7 - 3 1 /8"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TAORMINA (Terminal Bus)",
+       "idx": 0,
+       "arr": "19:30",
+       "dep": "19:30"
+      },
+      {
+       "stop": "CAPO TAORMINA",
+       "idx": 1,
+       "arr": "19:35",
+       "dep": "19:35"
+      },
+      {
+       "stop": "GIARDINI FS",
+       "idx": 2,
+       "arr": "19:40",
+       "dep": "19:40"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS114/San Giovanni)",
+       "idx": 3,
+       "arr": "19:45",
+       "dep": "19:45"
+      },
+      {
+       "stop": "PONTE ALCANTARA",
+       "idx": 4,
+       "arr": "19:55",
+       "dep": "19:55"
+      },
+      {
+       "stop": "SPIAGGIA SAN MARCO",
+       "idx": 5,
+       "arr": "20:00",
+       "dep": "20:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R40-877494",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "11/6",
+       "to": "16/9"
+      },
+      "raw": "LINEA F E R IA L E 11 / 6- 16 / 9"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "20:00",
+       "dep": "20:00"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 7,
+       "arr": "20:05",
+       "dep": "20:05"
+      },
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "20:10",
+       "dep": "20:10"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "20:20",
+       "dep": "20:20"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "20:23",
+       "dep": "20:23"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "20:25",
+       "dep": "20:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R41-184712",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/7",
+       "to": "31/8"
+      },
+      "raw": "F E R I A L E 1 /7 - 3 1 /8"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SPIAGGIA SAN MARCO",
+       "idx": 5,
+       "arr": "20:35",
+       "dep": "20:35"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "20:40",
+       "dep": "20:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T1R42-887343",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "15/9",
+       "to": "10/6"
+      },
+      "raw": "F E R IA L E 15 / 9- 10 / 6"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "21:00",
+       "dep": "21:00"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 7,
+       "arr": "21:05",
+       "dep": "21:05"
+      },
+      {
+       "stop": "FIUMEFREDDO (Via P.pe di Piemonte/Via Diana)",
+       "idx": 8,
+       "arr": "21:10",
+       "dep": "21:10"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 9,
+       "arr": "21:20",
+       "dep": "21:20"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 10,
+       "arr": "21:23",
+       "dep": "21:23"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 11,
+       "arr": "21:25",
+       "dep": "21:25"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+    "GIARRE (P.zza Duono/Via Calipoli 236)",
+    "S.M. LA STRADA",
+    "MASCALI",
+    "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+    "PASTERIA",
+    "CALATABIANO (Piazza Duomo)",
+    "SPIAGGIA SAN MARCO",
+    "PONTE ALCANTARA",
+    "RECANATI (Terminal Bus)",
+    "SS 114 (SCHISO')",
+    "GIARDINI (Via Umberto SS114/San Giovanni)",
+    "GIARDINI FS",
+    "CAPO TAORMINA",
+    "TAORMINA (Terminal Bus)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p56.T2R1-14209",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "07:05",
+       "dep": "07:05"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "07:07",
+       "dep": "07:07"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 5,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "PONTE ALCANTARA",
+       "idx": 8,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "SS 114 (SCHISO')",
+       "idx": 10,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS114/San Giovanni)",
+       "idx": 11,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "GIARDINI FS",
+       "idx": 12,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "CAPO TAORMINA",
+       "idx": 13,
+       "arr": "07:50",
+       "dep": "07:50"
+      },
+      {
+       "stop": "TAORMINA (Terminal Bus)",
+       "idx": 14,
+       "arr": "07:55",
+       "dep": "07:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R2-87445",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "07:17",
+       "dep": "07:17"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 5,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "07:40",
+       "dep": "07:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R3-14640",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "07:37",
+       "dep": "07:37"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "07:50",
+       "dep": "07:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R4-14843",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "07:37",
+       "dep": "07:37"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "07:50",
+       "dep": "07:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R5-141038",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "07:37",
+       "dep": "07:37"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 5,
+       "arr": "07:50",
+       "dep": "07:50"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "07:55",
+       "dep": "07:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R6-114239",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "07:43",
+       "dep": "07:43"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "07:55",
+       "dep": "07:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R7-141422",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "07:50",
+       "dep": "07:50"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "07:53",
+       "dep": "07:53"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "07:55",
+       "dep": "07:55"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 5,
+       "arr": "08:05",
+       "dep": "08:05"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "08:10",
+       "dep": "08:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R8-114620",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": false,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "07:50",
+       "dep": "07:50"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "07:55",
+       "dep": "07:55"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "07:53",
+       "dep": "07:53"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "07:55",
+       "dep": "07:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R9-114808",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "08:05",
+       "dep": "08:05"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "08:08",
+       "dep": "08:08"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 5,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "08:25",
+       "dep": "08:25"
+      },
+      {
+       "stop": "PONTE ALCANTARA",
+       "idx": 8,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "SS 114 (SCHISO')",
+       "idx": 10,
+       "arr": "08:35",
+       "dep": "08:35"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS114/San Giovanni)",
+       "idx": 11,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "GIARDINI FS",
+       "idx": 12,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "CAPO TAORMINA",
+       "idx": 13,
+       "arr": "08:50",
+       "dep": "08:50"
+      },
+      {
+       "stop": "TAORMINA (Terminal Bus)",
+       "idx": 14,
+       "arr": "08:55",
+       "dep": "08:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R10-142302",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "08:05",
+       "dep": "08:05"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "08:08",
+       "dep": "08:08"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 5,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "08:25",
+       "dep": "08:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R11-124214",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "11/6",
+       "to": "16/9"
+      },
+      "raw": "F E R IA L E 11 / 6- 16 / 9"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "08:23",
+       "dep": "08:23"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "08:25",
+       "dep": "08:25"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "08:30",
+       "dep": "08:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R12-124435",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "08:35",
+       "dep": "08:35"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "08:38",
+       "dep": "08:38"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "08:45",
+       "dep": "08:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R13-124611",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "08:35",
+       "dep": "08:35"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "08:37",
+       "dep": "08:37"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "08:50",
+       "dep": "08:50"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 5,
+       "arr": "08:55",
+       "dep": "08:55"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "09:00",
+       "dep": "09:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R14-124829",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Fda Eal S 1T 05I V 6/9A l1 /"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "08:35",
+       "dep": "08:35"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "08:37",
+       "dep": "08:37"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 5,
+       "arr": "08:50",
+       "dep": "08:50"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "08:55",
+       "dep": "08:55"
+      },
+      {
+       "stop": "PONTE ALCANTARA",
+       "idx": 8,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "RECANATI (Terminal Bus)",
+       "idx": 9,
+       "arr": "09:05",
+       "dep": "09:05"
+      },
+      {
+       "stop": "SS 114 (SCHISO')",
+       "idx": 10,
+       "arr": "09:10",
+       "dep": "09:10"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS114/San Giovanni)",
+       "idx": 11,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "GIARDINI FS",
+       "idx": 12,
+       "arr": "09:20",
+       "dep": "09:20"
+      },
+      {
+       "stop": "CAPO TAORMINA",
+       "idx": 13,
+       "arr": "09:25",
+       "dep": "09:25"
+      },
+      {
+       "stop": "TAORMINA (Terminal Bus)",
+       "idx": 14,
+       "arr": "09:30",
+       "dep": "09:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R15-134027",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/7",
+       "to": "31/8"
+      },
+      "raw": "F E R I A L E 1 /7 - 3 1 /8"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "10:30",
+       "dep": "10:30"
+      },
+      {
+       "stop": "SPIAGGIA SAN MARCO",
+       "idx": 7,
+       "arr": "10:35",
+       "dep": "10:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R16-143226",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/7",
+       "to": "31/8"
+      },
+      "raw": "F E R I A L E 1 /7 - 3 1 /8"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SPIAGGIA SAN MARCO",
+       "idx": 7,
+       "arr": "10:35",
+       "dep": "10:35"
+      },
+      {
+       "stop": "PONTE ALCANTARA",
+       "idx": 8,
+       "arr": "10:40",
+       "dep": "10:40"
+      },
+      {
+       "stop": "RECANATI (Terminal Bus)",
+       "idx": 9,
+       "arr": "10:45",
+       "dep": "10:45"
+      },
+      {
+       "stop": "SS 114 (SCHISO')",
+       "idx": 10,
+       "arr": "10:50",
+       "dep": "10:50"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS114/San Giovanni)",
+       "idx": 11,
+       "arr": "10:55",
+       "dep": "10:55"
+      },
+      {
+       "stop": "GIARDINI FS",
+       "idx": 12,
+       "arr": "11:00",
+       "dep": "11:00"
+      },
+      {
+       "stop": "CAPO TAORMINA",
+       "idx": 13,
+       "arr": "11:05",
+       "dep": "11:05"
+      },
+      {
+       "stop": "TAORMINA (Terminal Bus)",
+       "idx": 14,
+       "arr": "11:10",
+       "dep": "11:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R17-134437",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Fda Eal S 1T 05I V 6/9A l1 /"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "10:30",
+       "dep": "10:30"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "10:35",
+       "dep": "10:35"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "10:37",
+       "dep": "10:37"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "10:40",
+       "dep": "10:40"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "10:45",
+       "dep": "10:45"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 5,
+       "arr": "10:50",
+       "dep": "10:50"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "10:55",
+       "dep": "10:55"
+      },
+      {
+       "stop": "PONTE ALCANTARA",
+       "idx": 8,
+       "arr": "11:00",
+       "dep": "11:00"
+      },
+      {
+       "stop": "SS 114 (SCHISO')",
+       "idx": 10,
+       "arr": "11:05",
+       "dep": "11:05"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS114/San Giovanni)",
+       "idx": 11,
+       "arr": "11:10",
+       "dep": "11:10"
+      },
+      {
+       "stop": "GIARDINI FS",
+       "idx": 12,
+       "arr": "11:15",
+       "dep": "11:15"
+      },
+      {
+       "stop": "CAPO TAORMINA",
+       "idx": 13,
+       "arr": "11:20",
+       "dep": "11:20"
+      },
+      {
+       "stop": "TAORMINA (Terminal Bus)",
+       "idx": 14,
+       "arr": "11:25",
+       "dep": "11:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R18-134616",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "11:30",
+       "dep": "11:30"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "11:35",
+       "dep": "11:35"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "11:37",
+       "dep": "11:37"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "11:40",
+       "dep": "11:40"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "11:45",
+       "dep": "11:45"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 5,
+       "arr": "11:50",
+       "dep": "11:50"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "11:55",
+       "dep": "11:55"
+      },
+      {
+       "stop": "PONTE ALCANTARA",
+       "idx": 8,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "SS 114 (SCHISO')",
+       "idx": 10,
+       "arr": "12:05",
+       "dep": "12:05"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS114/San Giovanni)",
+       "idx": 11,
+       "arr": "12:10",
+       "dep": "12:10"
+      },
+      {
+       "stop": "GIARDINI FS",
+       "idx": 12,
+       "arr": "12:15",
+       "dep": "12:15"
+      },
+      {
+       "stop": "CAPO TAORMINA",
+       "idx": 13,
+       "arr": "12:20",
+       "dep": "12:20"
+      },
+      {
+       "stop": "TAORMINA (Terminal Bus)",
+       "idx": 14,
+       "arr": "12:25",
+       "dep": "12:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R19-143180",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "12:25",
+       "dep": "12:25"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "12:32",
+       "dep": "12:32"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "12:35",
+       "dep": "12:35"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "12:45",
+       "dep": "12:45"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 5,
+       "arr": "12:50",
+       "dep": "12:50"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "12:55",
+       "dep": "12:55"
+      },
+      {
+       "stop": "PONTE ALCANTARA",
+       "idx": 8,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "SS 114 (SCHISO')",
+       "idx": 10,
+       "arr": "13:05",
+       "dep": "13:05"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS114/San Giovanni)",
+       "idx": 11,
+       "arr": "13:10",
+       "dep": "13:10"
+      },
+      {
+       "stop": "GIARDINI FS",
+       "idx": 12,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "CAPO TAORMINA",
+       "idx": 13,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "TAORMINA (Terminal Bus)",
+       "idx": 14,
+       "arr": "13:25",
+       "dep": "13:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R20-847041",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "13:10",
+       "dep": "13:10"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "13:17",
+       "dep": "13:17"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "13:25",
+       "dep": "13:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R21-144248",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "C O F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "13:10",
+       "dep": "13:10"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "13:17",
+       "dep": "13:17"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "13:25",
+       "dep": "13:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R22-144441",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/7",
+       "to": "31/8"
+      },
+      "raw": "R S E F E R I A L E 1 /7 - 3 1 /8"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "13:45",
+       "dep": "13:45"
+      },
+      {
+       "stop": "SPIAGGIA SAN MARCO",
+       "idx": 7,
+       "arr": "13:50",
+       "dep": "13:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R23-144361",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "13:35",
+       "dep": "13:35"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "13:37",
+       "dep": "13:37"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "13:50",
+       "dep": "13:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R24-144815",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "15/9",
+       "to": "10/6"
+      },
+      "raw": "F E R IA L E 15 / 9- 10 / 6"
+     },
+     "reverse": false,
+     "valid": false,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "13:45",
+       "dep": "13:45"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "15:52",
+       "dep": "15:52"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "13:55",
+       "dep": "13:55"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "14:05",
+       "dep": "14:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R25-154107",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "15/9",
+       "to": "10/6"
+      },
+      "raw": "F E R IA L E 15 / 9- 10 / 6"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "14:07",
+       "dep": "14:07"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "14:15",
+       "dep": "14:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R26-154219",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "13:45",
+       "dep": "13:45"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "13:57",
+       "dep": "13:57"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "14:10",
+       "dep": "14:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R27-154421",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "13:35",
+       "dep": "13:35"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "13:37",
+       "dep": "13:37"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "13:40",
+       "dep": "13:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R28-154168",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "11/6",
+       "to": "16/9"
+      },
+      "raw": "F E R IA L E 11 / 6- 16 / 9"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "14:07",
+       "dep": "14:07"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "14:15",
+       "dep": "14:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R29-154836",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "14:17",
+       "dep": "14:17"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 5,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "14:35",
+       "dep": "14:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R30-164205",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "11/6",
+       "to": "16/9"
+      },
+      "raw": "F E R IA L E 11 / 6- 16 / 9"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "14:35",
+       "dep": "14:35"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "14:37",
+       "dep": "14:37"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 5,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "14:55",
+       "dep": "14:55"
+      },
+      {
+       "stop": "PONTE ALCANTARA",
+       "idx": 8,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "SS 114 (SCHISO')",
+       "idx": 10,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS114/San Giovanni)",
+       "idx": 11,
+       "arr": "15:10",
+       "dep": "15:10"
+      },
+      {
+       "stop": "GIARDINI FS",
+       "idx": 12,
+       "arr": "15:15",
+       "dep": "15:15"
+      },
+      {
+       "stop": "CAPO TAORMINA",
+       "idx": 13,
+       "arr": "15:20",
+       "dep": "15:20"
+      },
+      {
+       "stop": "TAORMINA (Terminal Bus)",
+       "idx": 14,
+       "arr": "15:25",
+       "dep": "15:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R31-164224",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "15/9",
+       "to": "10/6"
+      },
+      "raw": "F E R IA L E 15 / 9- 10 / 6"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "14:35",
+       "dep": "14:35"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "14:37",
+       "dep": "14:37"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 5,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "14:55",
+       "dep": "14:55"
+      },
+      {
+       "stop": "PONTE ALCANTARA",
+       "idx": 8,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "SS 114 (SCHISO')",
+       "idx": 10,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS114/San Giovanni)",
+       "idx": 11,
+       "arr": "15:10",
+       "dep": "15:10"
+      },
+      {
+       "stop": "GIARDINI FS",
+       "idx": 12,
+       "arr": "15:15",
+       "dep": "15:15"
+      },
+      {
+       "stop": "CAPO TAORMINA",
+       "idx": 13,
+       "arr": "15:20",
+       "dep": "15:20"
+      },
+      {
+       "stop": "TAORMINA (Terminal Bus)",
+       "idx": 14,
+       "arr": "15:25",
+       "dep": "15:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R32-164442",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Fda Eal S 1T 05I V 6/9A l1 /"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "14:35",
+       "dep": "14:35"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "14:42",
+       "dep": "14:42"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 5,
+       "arr": "14:55",
+       "dep": "14:55"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "PONTE ALCANTARA",
+       "idx": 8,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "SS 114 (SCHISO')",
+       "idx": 10,
+       "arr": "15:10",
+       "dep": "15:10"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS114/San Giovanni)",
+       "idx": 11,
+       "arr": "15:15",
+       "dep": "15:15"
+      },
+      {
+       "stop": "GIARDINI FS",
+       "idx": 12,
+       "arr": "15:20",
+       "dep": "15:20"
+      },
+      {
+       "stop": "CAPO TAORMINA",
+       "idx": 13,
+       "arr": "15:25",
+       "dep": "15:25"
+      },
+      {
+       "stop": "TAORMINA (Terminal Bus)",
+       "idx": 14,
+       "arr": "15:30",
+       "dep": "15:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R33-164467",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/7",
+       "to": "31/8"
+      },
+      "raw": "F E R I A L E 1 /7 - 3 1 /8"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "15:45",
+       "dep": "15:45"
+      },
+      {
+       "stop": "SPIAGGIA SAN MARCO",
+       "idx": 7,
+       "arr": "15:50",
+       "dep": "15:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R34-164489",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/7",
+       "to": "31/8"
+      },
+      "raw": "F E R I A L E 1 /7 - 3 1 /8"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "16:45",
+       "dep": "16:45"
+      },
+      {
+       "stop": "SPIAGGIA SAN MARCO",
+       "idx": 7,
+       "arr": "16:50",
+       "dep": "16:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R35-174013",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/7",
+       "to": "31/8"
+      },
+      "raw": "F E R I A L E 1 /7 - 3 1 /8"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "15:30",
+       "dep": "15:30"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "15:35",
+       "dep": "15:35"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "15:37",
+       "dep": "15:37"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "15:40",
+       "dep": "15:40"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "15:45",
+       "dep": "15:45"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 5,
+       "arr": "15:50",
+       "dep": "15:50"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "15:55",
+       "dep": "15:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R36-174424",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/7",
+       "to": "31/8"
+      },
+      "raw": "F E R I A L E 1 /7 - 3 1 /8"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SPIAGGIA SAN MARCO",
+       "idx": 7,
+       "arr": "16:50",
+       "dep": "16:50"
+      },
+      {
+       "stop": "PONTE ALCANTARA",
+       "idx": 8,
+       "arr": "16:55",
+       "dep": "16:55"
+      },
+      {
+       "stop": "RECANATI (Terminal Bus)",
+       "idx": 9,
+       "arr": "17:00",
+       "dep": "17:00"
+      },
+      {
+       "stop": "SS 114 (SCHISO')",
+       "idx": 10,
+       "arr": "17:05",
+       "dep": "17:05"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS114/San Giovanni)",
+       "idx": 11,
+       "arr": "17:10",
+       "dep": "17:10"
+      },
+      {
+       "stop": "GIARDINI FS",
+       "idx": 12,
+       "arr": "17:15",
+       "dep": "17:15"
+      },
+      {
+       "stop": "CAPO TAORMINA",
+       "idx": 13,
+       "arr": "17:20",
+       "dep": "17:20"
+      },
+      {
+       "stop": "TAORMINA (Terminal Bus)",
+       "idx": 14,
+       "arr": "17:25",
+       "dep": "17:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R37-174412",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "15/9",
+       "to": "10/6"
+      },
+      "raw": "F E R IA L E 15 / 9- 10 / 6"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "16:35",
+       "dep": "16:35"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "16:37",
+       "dep": "16:37"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "16:40",
+       "dep": "16:40"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "16:50",
+       "dep": "16:50"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 5,
+       "arr": "16:55",
+       "dep": "16:55"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "17:00",
+       "dep": "17:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R38-174360",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "11/6",
+       "to": "16/9"
+      },
+      "raw": "F E R IA L E 11 / 6- 16 / 9"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "17:35",
+       "dep": "17:35"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "17:37",
+       "dep": "17:37"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "17:40",
+       "dep": "17:40"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "17:45",
+       "dep": "17:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R39-174288",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "17:35",
+       "dep": "17:35"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "17:37",
+       "dep": "17:37"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "17:40",
+       "dep": "17:40"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "17:45",
+       "dep": "17:45"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 5,
+       "arr": "17:50",
+       "dep": "17:50"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "17:55",
+       "dep": "17:55"
+      },
+      {
+       "stop": "PONTE ALCANTARA",
+       "idx": 8,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "SS 114 (SCHISO')",
+       "idx": 10,
+       "arr": "18:05",
+       "dep": "18:05"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS114/San Giovanni)",
+       "idx": 11,
+       "arr": "18:10",
+       "dep": "18:10"
+      },
+      {
+       "stop": "GIARDINI FS",
+       "idx": 12,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "CAPO TAORMINA",
+       "idx": 13,
+       "arr": "18:20",
+       "dep": "18:20"
+      },
+      {
+       "stop": "TAORMINA (Terminal Bus)",
+       "idx": 14,
+       "arr": "18:25",
+       "dep": "18:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R40-184500",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Vila Pantano)",
+       "idx": 0,
+       "arr": "19:30",
+       "dep": "19:30"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "19:35",
+       "dep": "19:35"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "19:37",
+       "dep": "19:37"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "19:40",
+       "dep": "19:40"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "19:45",
+       "dep": "19:45"
+      },
+      {
+       "stop": "PASTERIA",
+       "idx": 5,
+       "arr": "19:50",
+       "dep": "19:50"
+      },
+      {
+       "stop": "CALATABIANO (Piazza Duomo)",
+       "idx": 6,
+       "arr": "19:55",
+       "dep": "19:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R41-184521",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/7",
+       "to": "31/8"
+      },
+      "raw": "F E R I A L E 1 /7 - 3 1 /8"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SPIAGGIA SAN MARCO",
+       "idx": 7,
+       "arr": "19:50",
+       "dep": "19:50"
+      },
+      {
+       "stop": "PONTE ALCANTARA",
+       "idx": 8,
+       "arr": "19:55",
+       "dep": "19:55"
+      },
+      {
+       "stop": "RECANATI (Terminal Bus)",
+       "idx": 9,
+       "arr": "20:00",
+       "dep": "20:00"
+      },
+      {
+       "stop": "SS 114 (SCHISO')",
+       "idx": 10,
+       "arr": "20:05",
+       "dep": "20:05"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS114/San Giovanni)",
+       "idx": 11,
+       "arr": "20:10",
+       "dep": "20:10"
+      },
+      {
+       "stop": "GIARDINI FS",
+       "idx": 12,
+       "arr": "20:15",
+       "dep": "20:15"
+      },
+      {
+       "stop": "CAPO TAORMINA",
+       "idx": 13,
+       "arr": "20:20",
+       "dep": "20:20"
+      },
+      {
+       "stop": "TAORMINA (Terminal Bus)",
+       "idx": 14,
+       "arr": "20:25",
+       "dep": "20:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p56.T2R42-184433",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "11/6",
+       "to": "16/9"
+      },
+      "raw": "F E R IA L E 11 / 6- 16 / 9"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE (P.zza Duono/Via Calipoli 236)",
+       "idx": 1,
+       "arr": "20:35",
+       "dep": "20:35"
+      },
+      {
+       "stop": "S.M. LA STRADA",
+       "idx": 2,
+       "arr": "20:37",
+       "dep": "20:37"
+      },
+      {
+       "stop": "MASCALI",
+       "idx": 3,
+       "arr": "20:40",
+       "dep": "20:40"
+      },
+      {
+       "stop": "FIUMEFREDDO (Piazza Chiesa Madre/Via Diana)",
+       "idx": 4,
+       "arr": "20:45",
+       "dep": "20:45"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

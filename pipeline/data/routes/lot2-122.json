@@ -1,0 +1,344 @@
+{
+ "operator": "Zappalà e Torrisi Srl",
+ "route_id": "lot2-122",
+ "name": "SANTA VENERINA - ACIREALE F.S.",
+ "short_name": "122",
+ "source": "orario_b2d178879e.pdf#p23",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "ACIREALE",
+    "ACIREALE (S.M.AMMALATI)",
+    "ACIREALE (GUARDIA)",
+    "VENERINA (LINERA)",
+    "VENERINA (COSENTINI)",
+    "S. VENERINA (S.VENERINA)"
+   ],
+   "kms": [
+    0.0,
+    4.9,
+    7.4,
+    10.4,
+    10.7,
+    14.2
+   ],
+   "trips": [
+    {
+     "corsa": "p23.A1-1537",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE",
+       "idx": 0,
+       "arr": "08:25",
+       "dep": "08:25"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 1,
+       "arr": "08:35",
+       "dep": "08:35"
+      },
+      {
+       "stop": "ACIREALE (GUARDIA)",
+       "idx": 2,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "VENERINA (LINERA)",
+       "idx": 3,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "VENERINA (COSENTINI)",
+       "idx": 4,
+       "arr": "08:50",
+       "dep": "08:50"
+      },
+      {
+       "stop": "S. VENERINA (S.VENERINA)",
+       "idx": 5,
+       "arr": "09:00",
+       "dep": "09:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.A2-1538",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE",
+       "idx": 0,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 1,
+       "arr": "13:25",
+       "dep": "13:25"
+      },
+      {
+       "stop": "ACIREALE (GUARDIA)",
+       "idx": 2,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "VENERINA (LINERA)",
+       "idx": 3,
+       "arr": "13:35",
+       "dep": "13:35"
+      },
+      {
+       "stop": "VENERINA (COSENTINI)",
+       "idx": 4,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "S. VENERINA (S.VENERINA)",
+       "idx": 5,
+       "arr": "13:50",
+       "dep": "13:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.A3",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "A 86 86) Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE",
+       "idx": 0,
+       "arr": "17:15",
+       "dep": "17:15"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 1,
+       "arr": "17:25",
+       "dep": "17:25"
+      },
+      {
+       "stop": "ACIREALE (GUARDIA)",
+       "idx": 2,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "VENERINA (LINERA)",
+       "idx": 3,
+       "arr": "17:35",
+       "dep": "17:35"
+      },
+      {
+       "stop": "VENERINA (COSENTINI)",
+       "idx": 4,
+       "arr": "17:40",
+       "dep": "17:40"
+      },
+      {
+       "stop": "S. VENERINA (S.VENERINA)",
+       "idx": 5,
+       "arr": "17:50",
+       "dep": "17:50"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "S. VENERINA (S.VENERINA)",
+    "VENERINA (COSENTINI)",
+    "VENERINA (LINERA)",
+    "ACIREALE (GUARDIA)",
+    "ACIREALE (S.M.AMMALATI)",
+    "ACIREALE"
+   ],
+   "kms": [
+    0.0,
+    3.6,
+    3.8,
+    6.8,
+    9.3,
+    15.8
+   ],
+   "trips": [
+    {
+     "corsa": "p23.R1-1535",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "S. VENERINA (S.VENERINA)",
+       "idx": 0,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "VENERINA (COSENTINI)",
+       "idx": 1,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "VENERINA (LINERA)",
+       "idx": 2,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "ACIREALE (GUARDIA)",
+       "idx": 3,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 4,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "ACIREALE",
+       "idx": 5,
+       "arr": "07:55",
+       "dep": "07:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.R2-1536",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "S. VENERINA (S.VENERINA)",
+       "idx": 0,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "VENERINA (COSENTINI)",
+       "idx": 1,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "VENERINA (LINERA)",
+       "idx": 2,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "ACIREALE (GUARDIA)",
+       "idx": 3,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 4,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "ACIREALE",
+       "idx": 5,
+       "arr": "14:45",
+       "dep": "14:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.R3-A264",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "A264 Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "S. VENERINA (S.VENERINA)",
+       "idx": 0,
+       "arr": "17:50",
+       "dep": "17:50"
+      },
+      {
+       "stop": "VENERINA (COSENTINI)",
+       "idx": 1,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "VENERINA (LINERA)",
+       "idx": 2,
+       "arr": "18:05",
+       "dep": "18:05"
+      },
+      {
+       "stop": "ACIREALE (GUARDIA)",
+       "idx": 3,
+       "arr": "18:10",
+       "dep": "18:10"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 4,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "ACIREALE",
+       "idx": 5,
+       "arr": "18:25",
+       "dep": "18:25"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

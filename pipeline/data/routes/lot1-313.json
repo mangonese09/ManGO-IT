@@ -1,0 +1,634 @@
+{
+ "operator": "Ortolano e Puglisi",
+ "route_id": "lot1-313",
+ "name": "ALIA - PALERMO",
+ "short_name": "313",
+ "source": "t2-tabelle_-orari_da_linea_299_a_linea_344.pdf#p13,p15",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "ALIA (PIAZZA SANTA ROSALIA)",
+    "ROCCAPALUMBA (ROCCA PALUMBA SF)"
+   ],
+   "kms": [
+    0.0,
+    10.0
+   ],
+   "trips": [
+    {
+     "corsa": "p13.A1",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "ORTO 7 Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 0,
+       "arr": "05:50",
+       "dep": "05:50"
+      },
+      {
+       "stop": "ROCCAPALUMBA (ROCCA PALUMBA SF)",
+       "idx": 1,
+       "arr": "06:05",
+       "dep": "06:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p13.A2",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "ORTO 8 Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 0,
+       "arr": "06:50",
+       "dep": "06:50"
+      },
+      {
+       "stop": "ROCCAPALUMBA (ROCCA PALUMBA SF)",
+       "idx": 1,
+       "arr": "07:05",
+       "dep": "07:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p13.A3",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "AGG 1 Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 0,
+       "arr": "07:50",
+       "dep": "07:50"
+      },
+      {
+       "stop": "ROCCAPALUMBA (ROCCA PALUMBA SF)",
+       "idx": 1,
+       "arr": "08:05",
+       "dep": "08:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p13.A4",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "AGG 3 Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 0,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "ROCCAPALUMBA (ROCCA PALUMBA SF)",
+       "idx": 1,
+       "arr": "08:55",
+       "dep": "08:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p13.A5",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "NEW 14 Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 0,
+       "arr": "10:50",
+       "dep": "10:50"
+      },
+      {
+       "stop": "ROCCAPALUMBA (ROCCA PALUMBA SF)",
+       "idx": 1,
+       "arr": "11:05",
+       "dep": "11:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p13.A6",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "AGG 7 Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 0,
+       "arr": "12:50",
+       "dep": "12:50"
+      },
+      {
+       "stop": "ROCCAPALUMBA (ROCCA PALUMBA SF)",
+       "idx": 1,
+       "arr": "13:05",
+       "dep": "13:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p13.A7",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "AGG 5 Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 0,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "ROCCAPALUMBA (ROCCA PALUMBA SF)",
+       "idx": 1,
+       "arr": "14:05",
+       "dep": "14:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p13.A8",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "NEW 16 Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 0,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "ROCCAPALUMBA (ROCCA PALUMBA SF)",
+       "idx": 1,
+       "arr": "15:15",
+       "dep": "15:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p13.A9",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "AGG9 O RTO O RTO (N EW (N EW 1) 3) 7) 5) Feriale 7 ) 8 ) 1 4) 1 6) lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 0,
+       "arr": "17:00",
+       "dep": "17:00"
+      },
+      {
+       "stop": "ROCCAPALUMBA (ROCCA PALUMBA SF)",
+       "idx": 1,
+       "arr": "17:15",
+       "dep": "17:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.A1",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "ORTO 1 Gi o r n a l ie r a e s c l u s e festività nazionali"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 0,
+       "arr": "11:05",
+       "dep": "11:05"
+      },
+      {
+       "stop": "ROCCAPALUMBA (ROCCA PALUMBA SF)",
+       "idx": 1,
+       "arr": "11:20",
+       "dep": "11:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.A2",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "ORTO 2 Gi o r n a l ie r a e s c l u s e festività nazionali"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 0,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "ROCCAPALUMBA (ROCCA PALUMBA SF)",
+       "idx": 1,
+       "arr": "18:15",
+       "dep": "18:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.A3",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "ORTO 3 O RTO O RTO RTO 3 Gi o r n a l ie r a 1 ) 2 ) ) e s c l u s e festività nazionali"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 0,
+       "arr": "18:45",
+       "dep": "18:45"
+      },
+      {
+       "stop": "ROCCAPALUMBA (ROCCA PALUMBA SF)",
+       "idx": 1,
+       "arr": "19:00",
+       "dep": "19:00"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "ROCCAPALUMBA (ROCCA PALUMBA SF)",
+    "ALIA (PIAZZA SANTA ROSALIA)"
+   ],
+   "kms": [
+    0.0,
+    10.0
+   ],
+   "trips": [
+    {
+     "corsa": "p13.R1",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "ORTO 10 O R TO O RTO (N EW (N EW 4) 2) 6) 8) 10) Feriale 1 0 ) 9 ) 1 5) 1 7) lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ROCCAPALUMBA (ROCCA PALUMBA SF)",
+       "idx": 0,
+       "arr": "05:20",
+       "dep": "05:20"
+      },
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 1,
+       "arr": "05:35",
+       "dep": "05:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p13.R2",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "ORTO 9 Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ROCCAPALUMBA (ROCCA PALUMBA SF)",
+       "idx": 0,
+       "arr": "06:05",
+       "dep": "06:05"
+      },
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 1,
+       "arr": "06:20",
+       "dep": "06:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p13.R3",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "AGG 4 Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ROCCAPALUMBA (ROCCA PALUMBA SF)",
+       "idx": 0,
+       "arr": "07:05",
+       "dep": "07:05"
+      },
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 1,
+       "arr": "07:20",
+       "dep": "07:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p13.R4",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "AGG 2 Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ROCCAPALUMBA (ROCCA PALUMBA SF)",
+       "idx": 0,
+       "arr": "08:05",
+       "dep": "08:05"
+      },
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 1,
+       "arr": "08:20",
+       "dep": "08:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p13.R5",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "NEW 15 Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ROCCAPALUMBA (ROCCA PALUMBA SF)",
+       "idx": 0,
+       "arr": "09:45",
+       "dep": "09:45"
+      },
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 1,
+       "arr": "10:00",
+       "dep": "10:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p13.R6",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "AGG 6 Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ROCCAPALUMBA (ROCCA PALUMBA SF)",
+       "idx": 0,
+       "arr": "12:45",
+       "dep": "12:45"
+      },
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 1,
+       "arr": "13:00",
+       "dep": "13:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p13.R7",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "AGG 8 Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ROCCAPALUMBA (ROCCA PALUMBA SF)",
+       "idx": 0,
+       "arr": "13:05",
+       "dep": "13:05"
+      },
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 1,
+       "arr": "13:20",
+       "dep": "13:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p13.R8",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "NEW 17 Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ROCCAPALUMBA (ROCCA PALUMBA SF)",
+       "idx": 0,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 1,
+       "arr": "15:00",
+       "dep": "15:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p13.R9",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "AGG 10 Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ROCCAPALUMBA (ROCCA PALUMBA SF)",
+       "idx": 0,
+       "arr": "17:45",
+       "dep": "17:45"
+      },
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 1,
+       "arr": "18:00",
+       "dep": "18:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.R1",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "ORTO 6 O RTO O RTO O RTO Gi o r n a l ie r a 6 ) 5 ) 4 ) e s c l u s e festività nazionali"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ROCCAPALUMBA (ROCCA PALUMBA SF)",
+       "idx": 0,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 1,
+       "arr": "09:15",
+       "dep": "09:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.R2",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "ORTO 5 Gi o r n a l ie r a e s c l u s e festività nazionali"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ROCCAPALUMBA (ROCCA PALUMBA SF)",
+       "idx": 0,
+       "arr": "11:05",
+       "dep": "11:05"
+      },
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 1,
+       "arr": "11:20",
+       "dep": "11:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.R3",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "ORTO 4 Gi o r n a l ie r a e s c l u s e festività nazionali"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ROCCAPALUMBA (ROCCA PALUMBA SF)",
+       "idx": 0,
+       "arr": "18:45",
+       "dep": "18:45"
+      },
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 1,
+       "arr": "19:00",
+       "dep": "19:00"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

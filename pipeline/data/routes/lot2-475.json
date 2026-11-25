@@ -1,0 +1,222 @@
+{
+ "operator": "Consorzio Stabile Siciliano Mobilità Est (Lotto 2)",
+ "route_id": "lot2-475",
+ "name": "CASSARO - SORTINO - MELILLI - CATANIA",
+ "short_name": "475",
+ "source": "orario_b2d178879e.pdf#p90",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "Cassaro (piazza Matrice)",
+    "Ferla (piazza San Sebastiano)",
+    "Sortino (piazza Verga)",
+    "Melilli (piazza San Sebastiano)",
+    "Aeroporto Catania - Fontanarossa",
+    "CATANIA Terminal Bus Via Archimede"
+   ],
+   "kms": [
+    0.0,
+    5.0,
+    26.0,
+    40.0,
+    75.3,
+    82.2
+   ],
+   "trips": [
+    {
+     "corsa": "p90.A1-7153",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "1 FERIALE"
+     },
+     "reverse": false,
+     "valid": false,
+     "stops": [
+      {
+       "stop": "Cassaro (piazza Matrice)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "Ferla (piazza San Sebastiano)",
+       "idx": 1,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "Sortino (piazza Verga)",
+       "idx": 2,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "Melilli (piazza San Sebastiano)",
+       "idx": 3,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "Aeroporto Catania - Fontanarossa",
+       "idx": 4,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "CATANIA Terminal Bus Via Archimede",
+       "idx": 5,
+       "arr": "08:15",
+       "dep": "08:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p90.A2-7155",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "C O R S E 3 5 7 9 F E R I A L E - - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Sortino (piazza Verga)",
+       "idx": 2,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "Melilli (piazza San Sebastiano)",
+       "idx": 3,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "Aeroporto Catania - Fontanarossa",
+       "idx": 4,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "CATANIA Terminal Bus Via Archimede",
+       "idx": 5,
+       "arr": "15:00",
+       "dep": "15:00"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CATANIA Terminal Bus Via Archimede",
+    "Aeroporto Catania - Fontanarossa",
+    "Melilli (piazza San Sebastiano)",
+    "Sortino (piazza Verga)",
+    "Ferla (piazza San Sebastiano)",
+    "Cassaro (piazza Matrice)"
+   ],
+   "kms": [
+    0.0,
+    6.9,
+    42.2,
+    56.2,
+    77.2,
+    82.2
+   ],
+   "trips": [
+    {
+     "corsa": "p90.R1-7158",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "2 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA Terminal Bus Via Archimede",
+       "idx": 0,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "Aeroporto Catania - Fontanarossa",
+       "idx": 1,
+       "arr": "14:35",
+       "dep": "14:35"
+      },
+      {
+       "stop": "Melilli (piazza San Sebastiano)",
+       "idx": 2,
+       "arr": "15:15",
+       "dep": "15:15"
+      },
+      {
+       "stop": "Sortino (piazza Verga)",
+       "idx": 3,
+       "arr": "15:45",
+       "dep": "15:45"
+      },
+      {
+       "stop": "Ferla (piazza San Sebastiano)",
+       "idx": 4,
+       "arr": "16:15",
+       "dep": "16:15"
+      },
+      {
+       "stop": "Cassaro (piazza Matrice)",
+       "idx": 5,
+       "arr": "16:30",
+       "dep": "16:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p90.R2-7159",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "4 6 8 10 F E R I A L E - - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA Terminal Bus Via Archimede",
+       "idx": 0,
+       "arr": "19:05",
+       "dep": "19:05"
+      },
+      {
+       "stop": "Aeroporto Catania - Fontanarossa",
+       "idx": 1,
+       "arr": "19:20",
+       "dep": "19:20"
+      },
+      {
+       "stop": "Melilli (piazza San Sebastiano)",
+       "idx": 2,
+       "arr": "20:05",
+       "dep": "20:05"
+      },
+      {
+       "stop": "Sortino (piazza Verga)",
+       "idx": 3,
+       "arr": "20:35",
+       "dep": "20:35"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

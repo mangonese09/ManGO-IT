@@ -1,0 +1,834 @@
+{
+ "operator": "Zappalà e Torrisi Srl",
+ "route_id": "lot2-124",
+ "name": "ACIREALE - TRECASTAGNI",
+ "short_name": "124",
+ "source": "orario_b2d178879e.pdf#p25",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "ACIREALE",
+    "ACIREALE (PIANO D’API)",
+    "ACI SANT ANTONIO (S.M.LA STELLA)",
+    "ACI SANT ANTONIO (ACI S.ANTONIO)",
+    "ACI SANT ANTONIO (LAVINAIO)",
+    "ACI SANT ANTONIO (MONTEROSSO)",
+    "TRECASTAGNI"
+   ],
+   "kms": [
+    0.0,
+    6.0,
+    7.5,
+    null,
+    11.0,
+    13.0,
+    16.6
+   ],
+   "trips": [
+    {
+     "corsa": "p25.A1-1557",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FeriaFleriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE",
+       "idx": 0,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "ACIREALE (PIANO D’API)",
+       "idx": 1,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (S.M.LA STELLA)",
+       "idx": 2,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (ACI S.ANTONIO)",
+       "idx": 3,
+       "arr": "08:35",
+       "dep": "08:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.A2-1556",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "in Periodo"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE",
+       "idx": 0,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "ACIREALE (PIANO D’API)",
+       "idx": 1,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (S.M.LA STELLA)",
+       "idx": 2,
+       "arr": "08:50",
+       "dep": "08:50"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (LAVINAIO)",
+       "idx": 4,
+       "arr": "09:00",
+       "dep": "09:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.A3-1555",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "scolastiFceoriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE",
+       "idx": 0,
+       "arr": "08:55",
+       "dep": "08:55"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (S.M.LA STELLA)",
+       "idx": 2,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (LAVINAIO)",
+       "idx": 4,
+       "arr": "09:25",
+       "dep": "09:25"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (MONTEROSSO)",
+       "idx": 5,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "TRECASTAGNI",
+       "idx": 6,
+       "arr": "09:40",
+       "dep": "09:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.A4-1558",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE",
+       "idx": 0,
+       "arr": "11:30",
+       "dep": "11:30"
+      },
+      {
+       "stop": "ACIREALE (PIANO D’API)",
+       "idx": 1,
+       "arr": "11:45",
+       "dep": "11:45"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (S.M.LA STELLA)",
+       "idx": 2,
+       "arr": "11:50",
+       "dep": "11:50"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (LAVINAIO)",
+       "idx": 4,
+       "arr": "12:00",
+       "dep": "12:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.A5-1561",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FeriaFleriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE",
+       "idx": 0,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "ACIREALE (PIANO D’API)",
+       "idx": 1,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (S.M.LA STELLA)",
+       "idx": 2,
+       "arr": "13:35",
+       "dep": "13:35"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (LAVINAIO)",
+       "idx": 4,
+       "arr": "13:45",
+       "dep": "13:45"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (MONTEROSSO)",
+       "idx": 5,
+       "arr": "13:50",
+       "dep": "13:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.A6-1562",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "in PerioFdeor isacloel"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE",
+       "idx": 0,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (S.M.LA STELLA)",
+       "idx": 2,
+       "arr": "13:35",
+       "dep": "13:35"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (LAVINAIO)",
+       "idx": 4,
+       "arr": "13:45",
+       "dep": "13:45"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (MONTEROSSO)",
+       "idx": 5,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "TRECASTAGNI",
+       "idx": 6,
+       "arr": "14:00",
+       "dep": "14:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.A7-1563",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ains tiPceoriodo scIonl"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE",
+       "idx": 0,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "ACIREALE (PIANO D’API)",
+       "idx": 1,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (S.M.LA STELLA)",
+       "idx": 2,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (LAVINAIO)",
+       "idx": 4,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (MONTEROSSO)",
+       "idx": 5,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "TRECASTAGNI",
+       "idx": 6,
+       "arr": "14:55",
+       "dep": "14:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.A8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "A88 aPsetirciodo"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE",
+       "idx": 0,
+       "arr": "17:45",
+       "dep": "17:45"
+      },
+      {
+       "stop": "ACIREALE (PIANO D’API)",
+       "idx": 1,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (S.M.LA STELLA)",
+       "idx": 2,
+       "arr": "18:05",
+       "dep": "18:05"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (LAVINAIO)",
+       "idx": 4,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (MONTEROSSO)",
+       "idx": 5,
+       "arr": "18:20",
+       "dep": "18:20"
+      },
+      {
+       "stop": "TRECASTAGNI",
+       "idx": 6,
+       "arr": "18:30",
+       "dep": "18:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.A9",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "A88 BIS FerialeFeriale estivo"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE",
+       "idx": 0,
+       "arr": "17:45",
+       "dep": "17:45"
+      },
+      {
+       "stop": "ACIREALE (PIANO D’API)",
+       "idx": 1,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (S.M.LA STELLA)",
+       "idx": 2,
+       "arr": "18:05",
+       "dep": "18:05"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (LAVINAIO)",
+       "idx": 4,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (MONTEROSSO)",
+       "idx": 5,
+       "arr": "18:20",
+       "dep": "18:20"
+      },
+      {
+       "stop": "TRECASTAGNI",
+       "idx": 6,
+       "arr": "18:30",
+       "dep": "18:30"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "TRECASTAGNI",
+    "ACI SANT ANTONIO (MONTEROSSO)",
+    "ACI SANT ANTONIO (LAVINAIO)",
+    "ACI SANT ANTONIO (ACI S.ANTONIO)",
+    "ACI SANT ANTONIO (S.M.LA STELLA)",
+    "ACIREALE (PIANO D’API)",
+    "ACIREALE"
+   ],
+   "kms": [
+    0.0,
+    3.6,
+    5.6,
+    null,
+    9.1,
+    10.6,
+    16.6
+   ],
+   "trips": [
+    {
+     "corsa": "p25.R1-1565",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale in Periodo"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TRECASTAGNI",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (MONTEROSSO)",
+       "idx": 1,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (LAVINAIO)",
+       "idx": 2,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (S.M.LA STELLA)",
+       "idx": 4,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "ACIREALE",
+       "idx": 6,
+       "arr": "07:45",
+       "dep": "07:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.R2-1566",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "scolastiFceoriaFleriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TRECASTAGNI",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (MONTEROSSO)",
+       "idx": 1,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (LAVINAIO)",
+       "idx": 2,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (S.M.LA STELLA)",
+       "idx": 4,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "ACIREALE (PIANO D’API)",
+       "idx": 5,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "ACIREALE",
+       "idx": 6,
+       "arr": "07:45",
+       "dep": "07:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.R3-1570",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "in Periodo"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACI SANT ANTONIO (LAVINAIO)",
+       "idx": 2,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (S.M.LA STELLA)",
+       "idx": 4,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "ACIREALE (PIANO D’API)",
+       "idx": 5,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "ACIREALE",
+       "idx": 6,
+       "arr": "07:45",
+       "dep": "07:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.R4-1573",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "scolastiFceoriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACI SANT ANTONIO (ACI S.ANTONIO)",
+       "idx": 3,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (S.M.LA STELLA)",
+       "idx": 4,
+       "arr": "09:05",
+       "dep": "09:05"
+      },
+      {
+       "stop": "ACIREALE (PIANO D’API)",
+       "idx": 5,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "ACIREALE",
+       "idx": 6,
+       "arr": "09:30",
+       "dep": "09:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.R5-1571",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACI SANT ANTONIO (LAVINAIO)",
+       "idx": 2,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (S.M.LA STELLA)",
+       "idx": 4,
+       "arr": "12:10",
+       "dep": "12:10"
+      },
+      {
+       "stop": "ACIREALE (PIANO D’API)",
+       "idx": 5,
+       "arr": "12:15",
+       "dep": "12:15"
+      },
+      {
+       "stop": "ACIREALE",
+       "idx": 6,
+       "arr": "12:30",
+       "dep": "12:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.R6-1569",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FeriaFleriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACI SANT ANTONIO (MONTEROSSO)",
+       "idx": 1,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (LAVINAIO)",
+       "idx": 2,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (S.M.LA STELLA)",
+       "idx": 4,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "ACIREALE (PIANO D’API)",
+       "idx": 5,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "ACIREALE",
+       "idx": 6,
+       "arr": "14:35",
+       "dep": "14:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.R7-1567",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "in Periodo scIonl"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TRECASTAGNI",
+       "idx": 0,
+       "arr": "15:10",
+       "dep": "15:10"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (MONTEROSSO)",
+       "idx": 1,
+       "arr": "15:20",
+       "dep": "15:20"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (LAVINAIO)",
+       "idx": 2,
+       "arr": "15:25",
+       "dep": "15:25"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (S.M.LA STELLA)",
+       "idx": 4,
+       "arr": "15:35",
+       "dep": "15:35"
+      },
+      {
+       "stop": "ACIREALE (PIANO D’API)",
+       "idx": 5,
+       "arr": "15:40",
+       "dep": "15:40"
+      },
+      {
+       "stop": "ACIREALE",
+       "idx": 6,
+       "arr": "15:55",
+       "dep": "15:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.R8-A266",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "A266 aPsetirciodo"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TRECASTAGNI",
+       "idx": 0,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (MONTEROSSO)",
+       "idx": 1,
+       "arr": "18:40",
+       "dep": "18:40"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (LAVINAIO)",
+       "idx": 2,
+       "arr": "18:45",
+       "dep": "18:45"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (S.M.LA STELLA)",
+       "idx": 4,
+       "arr": "18:55",
+       "dep": "18:55"
+      },
+      {
+       "stop": "ACIREALE (PIANO D’API)",
+       "idx": 5,
+       "arr": "19:00",
+       "dep": "19:00"
+      },
+      {
+       "stop": "ACIREALE",
+       "idx": 6,
+       "arr": "19:15",
+       "dep": "19:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.R9-A266",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "A266 BIS FerialeFeriale estivo"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TRECASTAGNI",
+       "idx": 0,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (MONTEROSSO)",
+       "idx": 1,
+       "arr": "18:40",
+       "dep": "18:40"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (LAVINAIO)",
+       "idx": 2,
+       "arr": "18:45",
+       "dep": "18:45"
+      },
+      {
+       "stop": "ACI SANT ANTONIO (S.M.LA STELLA)",
+       "idx": 4,
+       "arr": "18:55",
+       "dep": "18:55"
+      },
+      {
+       "stop": "ACIREALE (PIANO D’API)",
+       "idx": 5,
+       "arr": "19:00",
+       "dep": "19:00"
+      },
+      {
+       "stop": "ACIREALE",
+       "idx": 6,
+       "arr": "19:15",
+       "dep": "19:15"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

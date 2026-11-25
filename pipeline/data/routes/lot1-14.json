@@ -1,0 +1,116 @@
+{
+ "operator": "Consorzio Trasporti Siciliani Nord (Lotto 1)",
+ "route_id": "lot1-14",
+ "name": "PETTINEO-CEFALÙ",
+ "short_name": "14",
+ "source": "t3-tabelle-_orari_da_linea_350_a_new_alia-cerda.pdf#p31",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "PETTINEO (Via Stradale/Caserma Carabinieri)",
+    "MISTRETTA (P.zza Vitt. Veneto/Via Libertà)",
+    "S.STEFANO CAMASTRA (C.so Vitt.Emanuele)",
+    "CEFALU' (Piazza S.Maria)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p31.A1-AGG-297",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "C O R S E 1 AGG-297 FERIALE - - Periodo Scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PETTINEO (Via Stradale/Caserma Carabinieri)",
+       "idx": 0,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "MISTRETTA (P.zza Vitt. Veneto/Via Libertà)",
+       "idx": 1,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "S.STEFANO CAMASTRA (C.so Vitt.Emanuele)",
+       "idx": 2,
+       "arr": "09:35",
+       "dep": "09:35"
+      },
+      {
+       "stop": "CEFALU' (Piazza S.Maria)",
+       "idx": 3,
+       "arr": "10:05",
+       "dep": "10:05"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CEFALU' (Piazza S.Maria)",
+    "S.STEFANO CAMASTRA (C.so Vitt.Emanuele)",
+    "MISTRETTA (P.zza Vitt. Veneto/Via Libertà)",
+    "PETTINEO (Via Stradale/Caserma Carabinieri)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p31.R1-AGG-298",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "C O R S E 2 AGG-298 FERIALE - Periodo Scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CEFALU' (Piazza S.Maria)",
+       "idx": 0,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "S.STEFANO CAMASTRA (C.so Vitt.Emanuele)",
+       "idx": 1,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "MISTRETTA (P.zza Vitt. Veneto/Via Libertà)",
+       "idx": 2,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "PETTINEO (Via Stradale/Caserma Carabinieri)",
+       "idx": 3,
+       "arr": "13:35",
+       "dep": "13:35"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

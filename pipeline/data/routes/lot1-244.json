@@ -1,0 +1,212 @@
+{
+ "operator": "Lombardo&Glorioso",
+ "route_id": "lot1-244",
+ "name": "S. MAURO CASTELVERDE - CEFALÙ",
+ "short_name": "244",
+ "source": "t1-tabelle_-orari_da_linea_1_a_linea_297.pdf#p12",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "SAN MAURO/DE (SAN MAURO C/DE)",
+    "FINALE DI POLLINA",
+    "CEFALU FSS (CEFALU' FSS)"
+   ],
+   "kms": [
+    0.0,
+    23.2,
+    40.8
+   ],
+   "trips": [
+    {
+     "corsa": "p12.A1-3595",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SAN MAURO/DE (SAN MAURO C/DE)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "FINALE DI POLLINA",
+       "idx": 1,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "CEFALU FSS (CEFALU' FSS)",
+       "idx": 2,
+       "arr": "08:15",
+       "dep": "08:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p12.A2-3599",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "FINALE DI POLLINA",
+       "idx": 1,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "CEFALU FSS (CEFALU' FSS)",
+       "idx": 2,
+       "arr": "08:00",
+       "dep": "08:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p12.A3-3596",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "LUNEDI E SABATO Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SAN MAURO/DE (SAN MAURO C/DE)",
+       "idx": 0,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "FINALE DI POLLINA",
+       "idx": 1,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "CEFALU FSS (CEFALU' FSS)",
+       "idx": 2,
+       "arr": "13:45",
+       "dep": "13:45"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CEFALU FSS (CEFALU' FSS)",
+    "FINALE DI POLLINA",
+    "SAN MAURO/DE (SAN MAURO C/DE)"
+   ],
+   "kms": [
+    0.0,
+    17.6,
+    40.8
+   ],
+   "trips": [
+    {
+     "corsa": "p12.R1-3600",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "LUNEDI E SABATO Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CEFALU FSS (CEFALU' FSS)",
+       "idx": 0,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "FINALE DI POLLINA",
+       "idx": 1,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "SAN MAURO/DE (SAN MAURO C/DE)",
+       "idx": 2,
+       "arr": "10:15",
+       "dep": "10:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p12.R2-8855",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CEFALU FSS (CEFALU' FSS)",
+       "idx": 0,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "FINALE DI POLLINA",
+       "idx": 1,
+       "arr": "14:00",
+       "dep": "14:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p12.R3-8854",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CEFALU FSS (CEFALU' FSS)",
+       "idx": 0,
+       "arr": "16:15",
+       "dep": "16:15"
+      },
+      {
+       "stop": "FINALE DI POLLINA",
+       "idx": 1,
+       "arr": "16:45",
+       "dep": "16:45"
+      },
+      {
+       "stop": "SAN MAURO/DE (SAN MAURO C/DE)",
+       "idx": 2,
+       "arr": "17:30",
+       "dep": "17:30"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

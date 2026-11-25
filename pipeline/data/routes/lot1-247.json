@@ -1,0 +1,100 @@
+{
+ "operator": "Lombardo&Glorioso",
+ "route_id": "lot1-247",
+ "name": "FINALE DI POLLINA - CASTELBUONO",
+ "short_name": "247",
+ "source": "t1-tabelle_-orari_da_linea_1_a_linea_297.pdf#p15",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "FINALE DI POLLINA",
+    "POLLINA",
+    "CASTELBUONO"
+   ],
+   "kms": [
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p15.A1-3609",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "FINALE DI POLLINA",
+       "idx": 0,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "POLLINA",
+       "idx": 1,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "CASTELBUONO",
+       "idx": 2,
+       "arr": "08:15",
+       "dep": "08:15"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CASTELBUONO",
+    "POLLINA",
+    "FINALE DI POLLINA"
+   ],
+   "kms": [
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p15.R1-3610",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CASTELBUONO",
+       "idx": 0,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "POLLINA",
+       "idx": 1,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "FINALE DI POLLINA",
+       "idx": 2,
+       "arr": "14:25",
+       "dep": "14:25"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

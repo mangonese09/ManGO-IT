@@ -1,0 +1,718 @@
+{
+ "operator": "Zappalà e Torrisi Srl",
+ "route_id": "lot2-113",
+ "name": "GIARRE - RIPOSTO",
+ "short_name": "113",
+ "source": "orario_b2d178879e.pdf#p15",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "RIPOSTO",
+    "GIARRE",
+    "GIARRE (Rovettazzo)"
+   ],
+   "kms": [
+    0.0,
+    3.725,
+    8.4
+   ],
+   "trips": [
+    {
+     "corsa": "p15.A1-1305",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "In P e r io do F e r ia le"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "08:10",
+       "dep": "08:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.A2-1279",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "08:35",
+       "dep": "08:35"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "GIARRE (Rovettazzo)",
+       "idx": 2,
+       "arr": "08:55",
+       "dep": "08:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.A3-1308",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "10:30",
+       "dep": "10:30"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "10:40",
+       "dep": "10:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.A4-1283",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "In P e r io do F e r ia le"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "12:10",
+       "dep": "12:10"
+      },
+      {
+       "stop": "GIARRE (Rovettazzo)",
+       "idx": 2,
+       "arr": "12:20",
+       "dep": "12:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.A5-1287",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "12:10",
+       "dep": "12:10"
+      },
+      {
+       "stop": "GIARRE (Rovettazzo)",
+       "idx": 2,
+       "arr": "12:20",
+       "dep": "12:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.A6-1306",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "12:40",
+       "dep": "12:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.A7-1310",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "In P e r io do F e r ia le"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "12:50",
+       "dep": "12:50"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "13:00",
+       "dep": "13:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.A8-1309",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "13:30",
+       "dep": "13:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.A9-1307",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "15:30",
+       "dep": "15:30"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "15:40",
+       "dep": "15:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.A10-1312",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "16:20",
+       "dep": "16:20"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "16:30",
+       "dep": "16:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.A11-1313",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "GIARRE (Rovettazzo)",
+       "idx": 2,
+       "arr": "17:40",
+       "dep": "17:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.A12-1314",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "18:50",
+       "dep": "18:50"
+      },
+      {
+       "stop": "GIARRE (Rovettazzo)",
+       "idx": 2,
+       "arr": "19:00",
+       "dep": "19:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.A13-1315",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "20:40",
+       "dep": "20:40"
+      },
+      {
+       "stop": "GIARRE (Rovettazzo)",
+       "idx": 2,
+       "arr": "20:50",
+       "dep": "20:50"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "GIARRE (Rovettazzo)",
+    "GIARRE",
+    "RIPOSTO"
+   ],
+   "kms": [
+    0.0,
+    3.725,
+    8.4
+   ],
+   "trips": [
+    {
+     "corsa": "p15.R1-1316",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE (Rovettazzo)",
+       "idx": 0,
+       "arr": "15:50",
+       "dep": "15:50"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 2,
+       "arr": "16:10",
+       "dep": "16:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.R2-1291",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale estivo"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 2,
+       "arr": "16:40",
+       "dep": "16:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.R3-1300",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "17:40",
+       "dep": "17:40"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 2,
+       "arr": "17:50",
+       "dep": "17:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.R4-1311",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE (Rovettazzo)",
+       "idx": 0,
+       "arr": "18:10",
+       "dep": "18:10"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "18:20",
+       "dep": "18:20"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 2,
+       "arr": "18:30",
+       "dep": "18:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.R5-1275",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "In P e r io do F e r ia le"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "06:40",
+       "dep": "06:40"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 2,
+       "arr": "06:50",
+       "dep": "06:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.R6-1276",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "06:40",
+       "dep": "06:40"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 2,
+       "arr": "06:50",
+       "dep": "06:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.R7-1282",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 2,
+       "arr": "07:35",
+       "dep": "07:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.R8-1281",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "In P e r io do F e r ia le"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 2,
+       "arr": "08:20",
+       "dep": "08:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.R9-1286",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 2,
+       "arr": "09:40",
+       "dep": "09:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.R10-1284",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "11:40",
+       "dep": "11:40"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 2,
+       "arr": "11:50",
+       "dep": "11:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.R11-1285",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "In P e r io do F e r ia le"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "12:40",
+       "dep": "12:40"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 2,
+       "arr": "12:50",
+       "dep": "12:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.R12-1289",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 2,
+       "arr": "13:10",
+       "dep": "13:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p15.R13-1288",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "In P e r io do F e r ia le"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 2,
+       "arr": "13:40",
+       "dep": "13:40"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

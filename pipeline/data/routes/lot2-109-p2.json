@@ -1,0 +1,390 @@
+{
+ "operator": "Scionti",
+ "route_id": "lot2-109-p2",
+ "name": "AUGUSTA - CATANIA",
+ "short_name": "109",
+ "source": "orario_b2d178879e.pdf#p12",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "AUGUSTA",
+    "AUGUSTA (FONTANA)",
+    "MELILLI (VILLASMUNDO)",
+    "CARLENTINI",
+    "LENTINI"
+   ],
+   "kms": [
+    0.0,
+    3.0,
+    15.6,
+    25.4,
+    28.5
+   ],
+   "trips": [
+    {
+     "corsa": "p12.A1-1230",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "F e ri a l e l u n e d ì- v e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AUGUSTA",
+       "idx": 0,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 1,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "MELILLI (VILLASMUNDO)",
+       "idx": 2,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "CARLENTINI",
+       "idx": 3,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "LENTINI",
+       "idx": 4,
+       "arr": "08:05",
+       "dep": "08:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p12.A2-1225",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "F e ri a l e l u n e d ì- v e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AUGUSTA",
+       "idx": 0,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 1,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "MELILLI (VILLASMUNDO)",
+       "idx": 2,
+       "arr": "07:50",
+       "dep": "07:50"
+      },
+      {
+       "stop": "CARLENTINI",
+       "idx": 3,
+       "arr": "08:05",
+       "dep": "08:05"
+      },
+      {
+       "stop": "LENTINI",
+       "idx": 4,
+       "arr": "08:10",
+       "dep": "08:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p12.A3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "1230A F e ri a le S A B A T O"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AUGUSTA",
+       "idx": 0,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 1,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "MELILLI (VILLASMUNDO)",
+       "idx": 2,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "CARLENTINI",
+       "idx": 3,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "LENTINI",
+       "idx": 4,
+       "arr": "09:20",
+       "dep": "09:20"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "LENTINI",
+    "CARLENTINI",
+    "MELILLI (VILLASMUNDO)",
+    "AUGUSTA (FONTANA)",
+    "AUGUSTA"
+   ],
+   "kms": [
+    0.0,
+    3.1,
+    12.9,
+    25.4,
+    28.5
+   ],
+   "trips": [
+    {
+     "corsa": "p12.R1-1241",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "F e r ia l e da L U N E D I a G I O V E D I"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "LENTINI",
+       "idx": 0,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "CARLENTINI",
+       "idx": 1,
+       "arr": "12:40",
+       "dep": "12:40"
+      },
+      {
+       "stop": "MELILLI (VILLASMUNDO)",
+       "idx": 2,
+       "arr": "12:45",
+       "dep": "12:45"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 3,
+       "arr": "12:55",
+       "dep": "12:55"
+      },
+      {
+       "stop": "AUGUSTA",
+       "idx": 4,
+       "arr": "13:20",
+       "dep": "13:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p12.R2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "1236B F e ri a le S A B A T O"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "LENTINI",
+       "idx": 0,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "CARLENTINI",
+       "idx": 1,
+       "arr": "13:35",
+       "dep": "13:35"
+      },
+      {
+       "stop": "MELILLI (VILLASMUNDO)",
+       "idx": 2,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 3,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "AUGUSTA",
+       "idx": 4,
+       "arr": "14:20",
+       "dep": "14:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p12.R3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "1236A F e ri a l e Me r -G i o - Ven"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "LENTINI",
+       "idx": 0,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "CARLENTINI",
+       "idx": 1,
+       "arr": "13:45",
+       "dep": "13:45"
+      },
+      {
+       "stop": "MELILLI (VILLASMUNDO)",
+       "idx": 2,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 3,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "AUGUSTA",
+       "idx": 4,
+       "arr": "14:30",
+       "dep": "14:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p12.R4-1241",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "A F e r ia le V E N E R D I"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "LENTINI",
+       "idx": 0,
+       "arr": "13:45",
+       "dep": "13:45"
+      },
+      {
+       "stop": "CARLENTINI",
+       "idx": 1,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "MELILLI (VILLASMUNDO)",
+       "idx": 2,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 3,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "AUGUSTA",
+       "idx": 4,
+       "arr": "14:35",
+       "dep": "14:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p12.R5-1236",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Fe ri a le L u n e dì e M a r t e d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "LENTINI",
+       "idx": 0,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "CARLENTINI",
+       "idx": 1,
+       "arr": "14:35",
+       "dep": "14:35"
+      },
+      {
+       "stop": "MELILLI (VILLASMUNDO)",
+       "idx": 2,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 3,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "AUGUSTA",
+       "idx": 4,
+       "arr": "15:20",
+       "dep": "15:20"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

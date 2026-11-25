@@ -1,0 +1,84 @@
+{
+ "operator": "Ortolano e Puglisi",
+ "route_id": "lot1-new",
+ "name": "ALIA - LERCARA FRIDDI",
+ "short_name": "NEW",
+ "source": "t3-tabelle-_orari_da_linea_350_a_new_alia-cerda.pdf#p35",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "ALIA (PIAZZA SANTA ROSALIA)",
+    "ROCCAPALUMBA (VIA GARIBALDI)"
+   ],
+   "kms": [
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p35.A1",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "NEW 4 4) Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 0,
+       "arr": "19:30",
+       "dep": "19:30"
+      },
+      {
+       "stop": "ROCCAPALUMBA (VIA GARIBALDI)",
+       "idx": 1,
+       "arr": "19:55",
+       "dep": "19:55"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "ROCCAPALUMBA (VIA GARIBALDI)",
+    "ALIA (PIAZZA SANTA ROSALIA)"
+   ],
+   "kms": [
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p35.R1",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "NEW 5 5) Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ROCCAPALUMBA (VIA GARIBALDI)",
+       "idx": 0,
+       "arr": "19:55",
+       "dep": "19:55"
+      },
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 1,
+       "arr": "20:15",
+       "dep": "20:15"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

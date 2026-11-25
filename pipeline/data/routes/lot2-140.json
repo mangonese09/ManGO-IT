@@ -1,0 +1,2993 @@
+{
+ "operator": "Interbus",
+ "route_id": "lot2-140",
+ "name": "PORTOPALO DI CAPOPASSERO-PACHINO-SIRACUSA-CATANIA",
+ "short_name": "140",
+ "source": "orario_b2d178879e.pdf#p59",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "PORTOPALO DI CAPOPASSERO",
+    "VIA CALLERI, 15 (MARZAMEMI)",
+    "VIA TARANTO (PACHINO)",
+    "PACHINO",
+    "NOTO",
+    "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+    "CASSIBILE",
+    "SIRACUSA a.",
+    "C.SO UMBERTO/TERMINAL BUS (SIRACUSA p.)",
+    "CATANIA",
+    "Aeroporto Fontanarossa",
+    "C.SO UMBERTO/TERMINAL BUS (CATANIA)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p59.T1R1-1703",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "1 F E R I A L E da L u n e d ì a V e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA p.)",
+       "idx": 8,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 9,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (CATANIA)",
+       "idx": 11,
+       "arr": "08:25",
+       "dep": "08:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R2-1712",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "3 F E R I A L E d a L u n e d ì a V e n e r d ì E s c l u s o A g o sto"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA p.)",
+       "idx": 8,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 9,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (CATANIA)",
+       "idx": 11,
+       "arr": "08:55",
+       "dep": "08:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R3-1710",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "5 FESTIVA"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 2,
+       "arr": "06:05",
+       "dep": "06:05"
+      },
+      {
+       "stop": "PACHINO",
+       "idx": 3,
+       "arr": "06:10",
+       "dep": "06:10"
+      },
+      {
+       "stop": "NOTO",
+       "idx": 4,
+       "arr": "06:35",
+       "dep": "06:35"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 5,
+       "arr": "06:50",
+       "dep": "06:50"
+      },
+      {
+       "stop": "CASSIBILE",
+       "idx": 6,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "SIRACUSA a.",
+       "idx": 7,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA p.)",
+       "idx": 8,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 9,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (CATANIA)",
+       "idx": 11,
+       "arr": "09:25",
+       "dep": "09:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R4-Aggiunta-278",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": {
+       "from": "1/4",
+       "to": "31/10"
+      },
+      "raw": "7 Aggiunta-278 GIO R N A L IE RA 1 /4 -3 1 /1 0"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "NOTO",
+       "idx": 4,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 5,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 9,
+       "arr": "08:25",
+       "dep": "08:25"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (CATANIA)",
+       "idx": 11,
+       "arr": "08:35",
+       "dep": "08:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R5-50011",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "9 F E R I A L E Perio d o S c o l a s tico d a l u n e d ì a v e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PACHINO",
+       "idx": 3,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "NOTO",
+       "idx": 4,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 5,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "CASSIBILE",
+       "idx": 6,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "SIRACUSA a.",
+       "idx": 7,
+       "arr": "08:20",
+       "dep": "08:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R6-1699",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "11 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PORTOPALO DI CAPOPASSERO",
+       "idx": 0,
+       "arr": "06:55",
+       "dep": "06:55"
+      },
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 2,
+       "arr": "07:05",
+       "dep": "07:05"
+      },
+      {
+       "stop": "PACHINO",
+       "idx": 3,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "NOTO",
+       "idx": 4,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 5,
+       "arr": "07:50",
+       "dep": "07:50"
+      },
+      {
+       "stop": "CASSIBILE",
+       "idx": 6,
+       "arr": "08:05",
+       "dep": "08:05"
+      },
+      {
+       "stop": "SIRACUSA a.",
+       "idx": 7,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA p.)",
+       "idx": 8,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 9,
+       "arr": "10:15",
+       "dep": "10:15"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (CATANIA)",
+       "idx": 11,
+       "arr": "10:25",
+       "dep": "10:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R7-8363",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "13 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PORTOPALO DI CAPOPASSERO",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 2,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "PACHINO",
+       "idx": 3,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "NOTO",
+       "idx": 4,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 5,
+       "arr": "07:55",
+       "dep": "07:55"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 9,
+       "arr": "09:10",
+       "dep": "09:10"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (CATANIA)",
+       "idx": 11,
+       "arr": "09:15",
+       "dep": "09:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R8-8349",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "15 F E R I A L E da L u n e d ì a V e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 2,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "PACHINO",
+       "idx": 3,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "NOTO",
+       "idx": 4,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 5,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 9,
+       "arr": "09:25",
+       "dep": "09:25"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (CATANIA)",
+       "idx": 11,
+       "arr": "09:35",
+       "dep": "09:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R9-50021",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "17 F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PORTOPALO DI CAPOPASSERO",
+       "idx": 0,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 2,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "PACHINO",
+       "idx": 3,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "NOTO",
+       "idx": 4,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 5,
+       "arr": "08:25",
+       "dep": "08:25"
+      },
+      {
+       "stop": "CASSIBILE",
+       "idx": 6,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "SIRACUSA a.",
+       "idx": 7,
+       "arr": "09:05",
+       "dep": "09:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R10-50013",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "19 F E R I A L E P e r i o d o S c o l a s t i c o d a l u n e d ì a v e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PACHINO",
+       "idx": 3,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "NOTO",
+       "idx": 4,
+       "arr": "08:25",
+       "dep": "08:25"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 5,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "CASSIBILE",
+       "idx": 6,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "SIRACUSA a.",
+       "idx": 7,
+       "arr": "09:20",
+       "dep": "09:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R11-8346",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "21 F E R I A L E d a L u n e d ì a V e n e r d ì E s c l u s o A g o sto"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA p.)",
+       "idx": 8,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 9,
+       "arr": "10:45",
+       "dep": "10:45"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (CATANIA)",
+       "idx": 11,
+       "arr": "10:55",
+       "dep": "10:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R12-8341",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "23 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PORTOPALO DI CAPOPASSERO",
+       "idx": 0,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 2,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "PACHINO",
+       "idx": 3,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "NOTO",
+       "idx": 4,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 5,
+       "arr": "08:55",
+       "dep": "08:55"
+      },
+      {
+       "stop": "CASSIBILE",
+       "idx": 6,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "SIRACUSA a.",
+       "idx": 7,
+       "arr": "09:35",
+       "dep": "09:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R13-8343",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "25 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA p.)",
+       "idx": 8,
+       "arr": "10:00",
+       "dep": "10:00"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 9,
+       "arr": "10:15",
+       "dep": "10:15"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (CATANIA)",
+       "idx": 11,
+       "arr": "10:25",
+       "dep": "10:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R15-50019",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "27 F E S T IV A c lu s o N a ta l e- C a p o d a n n o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA p.)",
+       "idx": 8,
+       "arr": "10:00",
+       "dep": "10:00"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 9,
+       "arr": "10:15",
+       "dep": "10:15"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (CATANIA)",
+       "idx": 11,
+       "arr": "10:25",
+       "dep": "10:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R16-Aggiunta-101",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": {
+       "from": "1/4",
+       "to": "31/10"
+      },
+      "raw": "29 Aggiunta-101 GIO R N A L IE RA 1 /4 -3 1 /1 0"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "NOTO",
+       "idx": 4,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 5,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 9,
+       "arr": "10:25",
+       "dep": "10:25"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (CATANIA)",
+       "idx": 11,
+       "arr": "10:35",
+       "dep": "10:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R17-8401",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "16/9",
+       "to": "14/6"
+      },
+      "raw": "C O 31 F E R I A L E 1 6 / 9- 1 4 / 6"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 2,
+       "arr": "09:25",
+       "dep": "09:25"
+      },
+      {
+       "stop": "PACHINO",
+       "idx": 3,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "NOTO",
+       "idx": 4,
+       "arr": "09:55",
+       "dep": "09:55"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 5,
+       "arr": "10:10",
+       "dep": "10:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R18-1716",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "R S E 33 F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA p.)",
+       "idx": 8,
+       "arr": "10:30",
+       "dep": "10:30"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 9,
+       "arr": "11:45",
+       "dep": "11:45"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (CATANIA)",
+       "idx": 11,
+       "arr": "11:55",
+       "dep": "11:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R19-50022",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "35 F E R I A L E d a L u n e d ì a V e n e r d ì P e r i o d o No n S c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PORTOPALO DI CAPOPASSERO",
+       "idx": 0,
+       "arr": "09:20",
+       "dep": "09:20"
+      },
+      {
+       "stop": "PACHINO",
+       "idx": 3,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "NOTO",
+       "idx": 4,
+       "arr": "09:55",
+       "dep": "09:55"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 5,
+       "arr": "10:10",
+       "dep": "10:10"
+      },
+      {
+       "stop": "CASSIBILE",
+       "idx": 6,
+       "arr": "10:30",
+       "dep": "10:30"
+      },
+      {
+       "stop": "SIRACUSA a.",
+       "idx": 7,
+       "arr": "10:50",
+       "dep": "10:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R20-8344",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "16/9",
+       "to": "14/6"
+      },
+      "raw": "37 F E R I A L E 1 6 / 9- 1 4 / 6"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "NOTO",
+       "idx": 4,
+       "arr": "10:00",
+       "dep": "10:00"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 5,
+       "arr": "10:15",
+       "dep": "10:15"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 9,
+       "arr": "11:25",
+       "dep": "11:25"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (CATANIA)",
+       "idx": 11,
+       "arr": "11:35",
+       "dep": "11:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R21-8404",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": {
+       "from": "16/9",
+       "to": "14/6"
+      },
+      "raw": "39 G I O R N A L I E R A 1 6 / 9 - 1 4 / 6 E s c lu s o N a ta l e- C a p o d a n n o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 2,
+       "arr": "11:30",
+       "dep": "11:30"
+      },
+      {
+       "stop": "PACHINO",
+       "idx": 3,
+       "arr": "11:35",
+       "dep": "11:35"
+      },
+      {
+       "stop": "NOTO",
+       "idx": 4,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 5,
+       "arr": "12:15",
+       "dep": "12:15"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 9,
+       "arr": "13:25",
+       "dep": "13:25"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (CATANIA)",
+       "idx": 11,
+       "arr": "13:35",
+       "dep": "13:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R22-50015",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": {
+       "from": "15/6",
+       "to": "15/9"
+      },
+      "raw": "41 GIO R N A L I E RA 1 5/ 6 -1 5 / 9"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PACHINO",
+       "idx": 3,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "NOTO",
+       "idx": 4,
+       "arr": "12:55",
+       "dep": "12:55"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 5,
+       "arr": "13:10",
+       "dep": "13:10"
+      },
+      {
+       "stop": "CASSIBILE",
+       "idx": 6,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "SIRACUSA a.",
+       "idx": 7,
+       "arr": "13:50",
+       "dep": "13:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R23-8342",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "43 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PACHINO",
+       "idx": 3,
+       "arr": "12:35",
+       "dep": "12:35"
+      },
+      {
+       "stop": "NOTO",
+       "idx": 4,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 5,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 9,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (CATANIA)",
+       "idx": 11,
+       "arr": "14:35",
+       "dep": "14:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R24-8348",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "45 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 2,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "PACHINO",
+       "idx": 3,
+       "arr": "13:05",
+       "dep": "13:05"
+      },
+      {
+       "stop": "NOTO",
+       "idx": 4,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 5,
+       "arr": "13:45",
+       "dep": "13:45"
+      },
+      {
+       "stop": "CASSIBILE",
+       "idx": 6,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "SIRACUSA a.",
+       "idx": 7,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA p.)",
+       "idx": 8,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 9,
+       "arr": "15:45",
+       "dep": "15:45"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (CATANIA)",
+       "idx": 11,
+       "arr": "15:55",
+       "dep": "15:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R25-Aggiunta-426",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "47 Aggiunta-426 F E R I A L E da L u n e d ì a V e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 2,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "PACHINO",
+       "idx": 3,
+       "arr": "13:35",
+       "dep": "13:35"
+      },
+      {
+       "stop": "NOTO",
+       "idx": 4,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 5,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 9,
+       "arr": "15:25",
+       "dep": "15:25"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (CATANIA)",
+       "idx": 11,
+       "arr": "15:35",
+       "dep": "15:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R26-1722",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "49 F E R I A L E da L u n e d ì a V e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 2,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "PACHINO",
+       "idx": 3,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "NOTO",
+       "idx": 4,
+       "arr": "14:55",
+       "dep": "14:55"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 5,
+       "arr": "15:10",
+       "dep": "15:10"
+      },
+      {
+       "stop": "CASSIBILE",
+       "idx": 6,
+       "arr": "15:30",
+       "dep": "15:30"
+      },
+      {
+       "stop": "SIRACUSA a.",
+       "idx": 7,
+       "arr": "15:50",
+       "dep": "15:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R27-8364",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "16/9",
+       "to": "14/6"
+      },
+      "raw": "51 F E R I A L E 1 6 / 9- 1 4 / 6"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PORTOPALO DI CAPOPASSERO",
+       "idx": 0,
+       "arr": "15:20",
+       "dep": "15:20"
+      },
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 2,
+       "arr": "15:30",
+       "dep": "15:30"
+      },
+      {
+       "stop": "PACHINO",
+       "idx": 3,
+       "arr": "15:35",
+       "dep": "15:35"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 9,
+       "arr": "16:50",
+       "dep": "16:50"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (CATANIA)",
+       "idx": 11,
+       "arr": "17:00",
+       "dep": "17:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R28-1729",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "53 F E S T IV A Es c lu s o N a ta l e- C a p o d a n n o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 2,
+       "arr": "15:25",
+       "dep": "15:25"
+      },
+      {
+       "stop": "PACHINO",
+       "idx": 3,
+       "arr": "15:30",
+       "dep": "15:30"
+      },
+      {
+       "stop": "NOTO",
+       "idx": 4,
+       "arr": "15:55",
+       "dep": "15:55"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 5,
+       "arr": "16:10",
+       "dep": "16:10"
+      },
+      {
+       "stop": "CASSIBILE",
+       "idx": 6,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "SIRACUSA a.",
+       "idx": 7,
+       "arr": "16:50",
+       "dep": "16:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R29-50020",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "55 GIORNALIERA"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA p.)",
+       "idx": 8,
+       "arr": "17:00",
+       "dep": "17:00"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 9,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (CATANIA)",
+       "idx": 11,
+       "arr": "18:25",
+       "dep": "18:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R30-1698",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "57 F E R I A L E daL u n e d ì a V e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PORTOPALO DI CAPOPASSERO",
+       "idx": 0,
+       "arr": "16:20",
+       "dep": "16:20"
+      },
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 2,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "PACHINO",
+       "idx": 3,
+       "arr": "16:35",
+       "dep": "16:35"
+      },
+      {
+       "stop": "NOTO",
+       "idx": 4,
+       "arr": "17:00",
+       "dep": "17:00"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 5,
+       "arr": "17:15",
+       "dep": "17:15"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 9,
+       "arr": "18:25",
+       "dep": "18:25"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (CATANIA)",
+       "idx": 11,
+       "arr": "18:35",
+       "dep": "18:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R31-50023",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "15/6",
+       "to": "15/9"
+      },
+      "raw": "59 F E R I A L E 1 5 / 6- 1 5 / 9"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PORTOPALO DI CAPOPASSERO",
+       "idx": 0,
+       "arr": "17:05",
+       "dep": "17:05"
+      },
+      {
+       "stop": "VIA CALLERI, 15 (MARZAMEMI)",
+       "idx": 1,
+       "arr": "17:15",
+       "dep": "17:15"
+      },
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 2,
+       "arr": "17:25",
+       "dep": "17:25"
+      },
+      {
+       "stop": "PACHINO",
+       "idx": 3,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "NOTO",
+       "idx": 4,
+       "arr": "17:55",
+       "dep": "17:55"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 5,
+       "arr": "18:10",
+       "dep": "18:10"
+      },
+      {
+       "stop": "CASSIBILE",
+       "idx": 6,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "SIRACUSA a.",
+       "idx": 7,
+       "arr": "18:50",
+       "dep": "18:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T1R32-50018",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": {
+       "from": "15/6",
+       "to": "15/9"
+      },
+      "raw": "61 63 GIO R N A L I E RA 1 5/ 6 -1 5 / 9"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PACHINO",
+       "idx": 3,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "NOTO",
+       "idx": 4,
+       "arr": "18:55",
+       "dep": "18:55"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 5,
+       "arr": "19:10",
+       "dep": "19:10"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 9,
+       "arr": "20:20",
+       "dep": "20:20"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (CATANIA)",
+       "idx": 11,
+       "arr": "20:30",
+       "dep": "20:30"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CATANIA",
+    "Via Archimede",
+    "CATANIA",
+    "C.SO UMBERTO/TERMINAL BUS (SIRACUSA a.)",
+    "C.SO UMBERTO/TERMINAL BUS (SIRACUSA p.)",
+    "VIA NAZIONALE, 189 (CASSIBILE)",
+    "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+    "VIA P.PE DI PIEMONTE (NOTO)",
+    "VIA UNITÀ (PACHINO)",
+    "VIA TARANTO (PACHINO)",
+    "VIA CALLERI, 15 (MARZAMEMI)",
+    "VIA GARRANO, 62 (PORTOPALO DI CAPOPASSERO)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p59.T2R1-1713",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "16/9",
+       "to": "14/6"
+      },
+      "raw": "Via Archimede 2 F E R I A L E 1 6 / 9- 1 4 / 6"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 6,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "VIA P.PE DI PIEMONTE (NOTO)",
+       "idx": 7,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "VIA UNITÀ (PACHINO)",
+       "idx": 8,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 9,
+       "arr": "08:05",
+       "dep": "08:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R2-Aggiunta-102",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": {
+       "from": "1/4",
+       "to": "31/10"
+      },
+      "raw": "4 Aggiunta-102 GIO R N A L IE RA 1 /4 -3 1 /1 0"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 2,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 6,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "VIA P.PE DI PIEMONTE (NOTO)",
+       "idx": 7,
+       "arr": "08:35",
+       "dep": "08:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R3-1738",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "6 F E R I A L E d a L u n e d ì a V e n e r d ì E s c l u s o A g o sto"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 2,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA a.)",
+       "idx": 3,
+       "arr": "08:55",
+       "dep": "08:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R4-Aggiunta-103",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "8 Aggiunta-103 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA p.)",
+       "idx": 4,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "VIA NAZIONALE, 189 (CASSIBILE)",
+       "idx": 5,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 6,
+       "arr": "09:20",
+       "dep": "09:20"
+      },
+      {
+       "stop": "VIA P.PE DI PIEMONTE (NOTO)",
+       "idx": 7,
+       "arr": "09:35",
+       "dep": "09:35"
+      },
+      {
+       "stop": "VIA UNITÀ (PACHINO)",
+       "idx": 8,
+       "arr": "10:00",
+       "dep": "10:00"
+      },
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 9,
+       "arr": "10:05",
+       "dep": "10:05"
+      },
+      {
+       "stop": "VIA GARRANO, 62 (PORTOPALO DI CAPOPASSERO)",
+       "idx": 11,
+       "arr": "10:15",
+       "dep": "10:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R5-Aggiunta-279",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": {
+       "from": "1/4",
+       "to": "31/10"
+      },
+      "raw": "10 Aggiunta-279 GIO R N A L IE RA 1 /4 -3 1 /1 0"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 2,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 6,
+       "arr": "09:50",
+       "dep": "09:50"
+      },
+      {
+       "stop": "VIA P.PE DI PIEMONTE (NOTO)",
+       "idx": 7,
+       "arr": "10:05",
+       "dep": "10:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R6-8382",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "15/6",
+       "to": "15/9"
+      },
+      "raw": "12 F E R I A L E 1 5 / 6- 1 5 / 9"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA p.)",
+       "idx": 4,
+       "arr": "09:40",
+       "dep": "09:40"
+      },
+      {
+       "stop": "VIA NAZIONALE, 189 (CASSIBILE)",
+       "idx": 5,
+       "arr": "10:00",
+       "dep": "10:00"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 6,
+       "arr": "10:20",
+       "dep": "10:20"
+      },
+      {
+       "stop": "VIA P.PE DI PIEMONTE (NOTO)",
+       "idx": 7,
+       "arr": "10:35",
+       "dep": "10:35"
+      },
+      {
+       "stop": "VIA UNITÀ (PACHINO)",
+       "idx": 8,
+       "arr": "11:00",
+       "dep": "11:00"
+      },
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 9,
+       "arr": "11:05",
+       "dep": "11:05"
+      },
+      {
+       "stop": "VIA CALLERI, 15 (MARZAMEMI)",
+       "idx": 10,
+       "arr": "11:10",
+       "dep": "11:10"
+      },
+      {
+       "stop": "VIA GARRANO, 62 (PORTOPALO DI CAPOPASSERO)",
+       "idx": 11,
+       "arr": "11:20",
+       "dep": "11:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R7-50012",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "14 F E R I A L E P e r i o d o S c o l a s t i c o d a l u n e d ì a v e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA p.)",
+       "idx": 4,
+       "arr": "09:40",
+       "dep": "09:40"
+      },
+      {
+       "stop": "VIA NAZIONALE, 189 (CASSIBILE)",
+       "idx": 5,
+       "arr": "10:00",
+       "dep": "10:00"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 6,
+       "arr": "10:20",
+       "dep": "10:20"
+      },
+      {
+       "stop": "VIA P.PE DI PIEMONTE (NOTO)",
+       "idx": 7,
+       "arr": "10:35",
+       "dep": "10:35"
+      },
+      {
+       "stop": "VIA UNITÀ (PACHINO)",
+       "idx": 8,
+       "arr": "11:00",
+       "dep": "11:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R8-50016",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": {
+       "from": "15/6",
+       "to": "15/9"
+      },
+      "raw": "16 GIO R N A L I E RA 1 5/ 6 -1 5 / 9"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA p.)",
+       "idx": 4,
+       "arr": "10:40",
+       "dep": "10:40"
+      },
+      {
+       "stop": "VIA NAZIONALE, 189 (CASSIBILE)",
+       "idx": 5,
+       "arr": "11:00",
+       "dep": "11:00"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 6,
+       "arr": "11:20",
+       "dep": "11:20"
+      },
+      {
+       "stop": "VIA P.PE DI PIEMONTE (NOTO)",
+       "idx": 7,
+       "arr": "11:35",
+       "dep": "11:35"
+      },
+      {
+       "stop": "VIA UNITÀ (PACHINO)",
+       "idx": 8,
+       "arr": "12:00",
+       "dep": "12:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R9-50014",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "18 F E R I A L E P e r i o d o S c o l a s t i c o d a l u n e d ì a v e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA p.)",
+       "idx": 4,
+       "arr": "10:40",
+       "dep": "10:40"
+      },
+      {
+       "stop": "VIA NAZIONALE, 189 (CASSIBILE)",
+       "idx": 5,
+       "arr": "11:00",
+       "dep": "11:00"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 6,
+       "arr": "11:20",
+       "dep": "11:20"
+      },
+      {
+       "stop": "VIA P.PE DI PIEMONTE (NOTO)",
+       "idx": 7,
+       "arr": "11:35",
+       "dep": "11:35"
+      },
+      {
+       "stop": "VIA UNITÀ (PACHINO)",
+       "idx": 8,
+       "arr": "12:00",
+       "dep": "12:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R10-8367",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "20 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 2,
+       "arr": "09:40",
+       "dep": "09:40"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA a.)",
+       "idx": 3,
+       "arr": "10:55",
+       "dep": "10:55"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA p.)",
+       "idx": 4,
+       "arr": "11:40",
+       "dep": "11:40"
+      },
+      {
+       "stop": "VIA NAZIONALE, 189 (CASSIBILE)",
+       "idx": 5,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 6,
+       "arr": "12:20",
+       "dep": "12:20"
+      },
+      {
+       "stop": "VIA P.PE DI PIEMONTE (NOTO)",
+       "idx": 7,
+       "arr": "12:35",
+       "dep": "12:35"
+      },
+      {
+       "stop": "VIA UNITÀ (PACHINO)",
+       "idx": 8,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 9,
+       "arr": "13:05",
+       "dep": "13:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R11-1746",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "22 FESTIVA"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 2,
+       "arr": "09:40",
+       "dep": "09:40"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA a.)",
+       "idx": 3,
+       "arr": "10:55",
+       "dep": "10:55"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA p.)",
+       "idx": 4,
+       "arr": "11:40",
+       "dep": "11:40"
+      },
+      {
+       "stop": "VIA NAZIONALE, 189 (CASSIBILE)",
+       "idx": 5,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 6,
+       "arr": "12:20",
+       "dep": "12:20"
+      },
+      {
+       "stop": "VIA P.PE DI PIEMONTE (NOTO)",
+       "idx": 7,
+       "arr": "12:35",
+       "dep": "12:35"
+      },
+      {
+       "stop": "VIA UNITÀ (PACHINO)",
+       "idx": 8,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 9,
+       "arr": "13:05",
+       "dep": "13:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R12-8397",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "24 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "11:30",
+       "dep": "11:30"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 2,
+       "arr": "11:40",
+       "dep": "11:40"
+      },
+      {
+       "stop": "VIA UNITÀ (PACHINO)",
+       "idx": 8,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 9,
+       "arr": "13:05",
+       "dep": "13:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R13-8368",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": {
+       "from": "16/9",
+       "to": "14/6"
+      },
+      "raw": "26 G I O R N A L I E R A 1 6 / 9 - 1 4 / 6 E s c lu s o N a ta l e- C a p o d a n n o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 2,
+       "arr": "12:10",
+       "dep": "12:10"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 6,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "VIA P.PE DI PIEMONTE (NOTO)",
+       "idx": 7,
+       "arr": "13:35",
+       "dep": "13:35"
+      },
+      {
+       "stop": "VIA UNITÀ (PACHINO)",
+       "idx": 8,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 9,
+       "arr": "14:05",
+       "dep": "14:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R14-1773",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "28 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 2,
+       "arr": "12:10",
+       "dep": "12:10"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA a.)",
+       "idx": 3,
+       "arr": "13:25",
+       "dep": "13:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R15-Aggiunta-427",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "30 Aggiunta-427 F E R I A L E da L u n e d ì a V e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 2,
+       "arr": "12:40",
+       "dep": "12:40"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 6,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "VIA P.PE DI PIEMONTE (NOTO)",
+       "idx": 7,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "VIA UNITÀ (PACHINO)",
+       "idx": 8,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 9,
+       "arr": "14:35",
+       "dep": "14:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R16-9501",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "C O 32 F E R I A L E da L u n e d ì a V e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA p.)",
+       "idx": 4,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "VIA NAZIONALE, 189 (CASSIBILE)",
+       "idx": 5,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 6,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "VIA P.PE DI PIEMONTE (NOTO)",
+       "idx": 7,
+       "arr": "14:35",
+       "dep": "14:35"
+      },
+      {
+       "stop": "VIA UNITÀ (PACHINO)",
+       "idx": 8,
+       "arr": "15:00",
+       "dep": "15:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R17-8369",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "R S E 34 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 2,
+       "arr": "12:40",
+       "dep": "12:40"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA a.)",
+       "idx": 3,
+       "arr": "13:55",
+       "dep": "13:55"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA p.)",
+       "idx": 4,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "VIA NAZIONALE, 189 (CASSIBILE)",
+       "idx": 5,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 6,
+       "arr": "15:20",
+       "dep": "15:20"
+      },
+      {
+       "stop": "VIA P.PE DI PIEMONTE (NOTO)",
+       "idx": 7,
+       "arr": "15:35",
+       "dep": "15:35"
+      },
+      {
+       "stop": "VIA UNITÀ (PACHINO)",
+       "idx": 8,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 9,
+       "arr": "16:05",
+       "dep": "16:05"
+      },
+      {
+       "stop": "VIA GARRANO, 62 (PORTOPALO DI CAPOPASSERO)",
+       "idx": 11,
+       "arr": "16:15",
+       "dep": "16:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R18-8392",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "36 F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 2,
+       "arr": "13:10",
+       "dep": "13:10"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA a.)",
+       "idx": 3,
+       "arr": "14:25",
+       "dep": "14:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R19-8386",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "16/9",
+       "to": "14/6"
+      },
+      "raw": "38 F E R I A L E 1 6 / 9- 1 4 / 6"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 2,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 6,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "VIA P.PE DI PIEMONTE (NOTO)",
+       "idx": 7,
+       "arr": "15:05",
+       "dep": "15:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R20-8384",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "40 F E R I A L E da L u n e d ì a V e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 2,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA a.)",
+       "idx": 3,
+       "arr": "14:55",
+       "dep": "14:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R21-8395",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "42 FE S T IV A E N at a le -C a p o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 2,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA a.)",
+       "idx": 3,
+       "arr": "15:55",
+       "dep": "15:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R23-8399",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "44 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 2,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 6,
+       "arr": "15:50",
+       "dep": "15:50"
+      },
+      {
+       "stop": "VIA P.PE DI PIEMONTE (NOTO)",
+       "idx": 7,
+       "arr": "16:05",
+       "dep": "16:05"
+      },
+      {
+       "stop": "VIA UNITÀ (PACHINO)",
+       "idx": 8,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 9,
+       "arr": "16:35",
+       "dep": "16:35"
+      },
+      {
+       "stop": "VIA GARRANO, 62 (PORTOPALO DI CAPOPASSERO)",
+       "idx": 11,
+       "arr": "16:55",
+       "dep": "16:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R24-50017",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": {
+       "from": "15/6",
+       "to": "15/9"
+      },
+      "raw": "46 GIO R N A L I E RA 1 5/ 6 -1 5 / 9"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 2,
+       "arr": "16:40",
+       "dep": "16:40"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 6,
+       "arr": "17:50",
+       "dep": "17:50"
+      },
+      {
+       "stop": "VIA P.PE DI PIEMONTE (NOTO)",
+       "idx": 7,
+       "arr": "18:05",
+       "dep": "18:05"
+      },
+      {
+       "stop": "VIA UNITÀ (PACHINO)",
+       "idx": 8,
+       "arr": "18:30",
+       "dep": "18:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R25-8400",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "16/9",
+       "to": "14/6"
+      },
+      "raw": "48 F E R I A L E 1 6 / 9- 1 4 / 6"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "17:00",
+       "dep": "17:00"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 2,
+       "arr": "17:10",
+       "dep": "17:10"
+      },
+      {
+       "stop": "VIA UNITÀ (PACHINO)",
+       "idx": 8,
+       "arr": "18:25",
+       "dep": "18:25"
+      },
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 9,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "VIA GARRANO, 62 (PORTOPALO DI CAPOPASSERO)",
+       "idx": 11,
+       "arr": "18:40",
+       "dep": "18:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R26-9490",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "50 F E R I A L E da L u n e d ì a V e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 2,
+       "arr": "17:40",
+       "dep": "17:40"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 6,
+       "arr": "18:50",
+       "dep": "18:50"
+      },
+      {
+       "stop": "VIA P.PE DI PIEMONTE (NOTO)",
+       "idx": 7,
+       "arr": "19:05",
+       "dep": "19:05"
+      },
+      {
+       "stop": "VIA UNITÀ (PACHINO)",
+       "idx": 8,
+       "arr": "19:30",
+       "dep": "19:30"
+      },
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 9,
+       "arr": "19:35",
+       "dep": "19:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R27-9491",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "52 F E R I A L E P e r i o d o S c o l a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA p.)",
+       "idx": 4,
+       "arr": "18:10",
+       "dep": "18:10"
+      },
+      {
+       "stop": "VIA NAZIONALE, 189 (CASSIBILE)",
+       "idx": 5,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 6,
+       "arr": "18:50",
+       "dep": "18:50"
+      },
+      {
+       "stop": "VIA P.PE DI PIEMONTE (NOTO)",
+       "idx": 7,
+       "arr": "19:05",
+       "dep": "19:05"
+      },
+      {
+       "stop": "VIA UNITÀ (PACHINO)",
+       "idx": 8,
+       "arr": "19:30",
+       "dep": "19:30"
+      },
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 9,
+       "arr": "19:35",
+       "dep": "19:35"
+      },
+      {
+       "stop": "VIA GARRANO, 62 (PORTOPALO DI CAPOPASSERO)",
+       "idx": 11,
+       "arr": "19:45",
+       "dep": "19:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R28-9489",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "54 F E R I A L E d a l u n e d ì a v e n e r d ì P e r i o d o Non S c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA p.)",
+       "idx": 4,
+       "arr": "18:10",
+       "dep": "18:10"
+      },
+      {
+       "stop": "VIA NAZIONALE, 189 (CASSIBILE)",
+       "idx": 5,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 6,
+       "arr": "18:50",
+       "dep": "18:50"
+      },
+      {
+       "stop": "VIA P.PE DI PIEMONTE (NOTO)",
+       "idx": 7,
+       "arr": "19:05",
+       "dep": "19:05"
+      },
+      {
+       "stop": "VIA UNITÀ (PACHINO)",
+       "idx": 8,
+       "arr": "19:30",
+       "dep": "19:30"
+      },
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 9,
+       "arr": "19:35",
+       "dep": "19:35"
+      },
+      {
+       "stop": "VIA GARRANO, 62 (PORTOPALO DI CAPOPASSERO)",
+       "idx": 11,
+       "arr": "19:45",
+       "dep": "19:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R29-8387",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "56 FE S T IV A E s c l u s o N at a le -C a p o d a n n o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA p.)",
+       "idx": 4,
+       "arr": "18:10",
+       "dep": "18:10"
+      },
+      {
+       "stop": "VIA NAZIONALE, 189 (CASSIBILE)",
+       "idx": 5,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 6,
+       "arr": "18:50",
+       "dep": "18:50"
+      },
+      {
+       "stop": "VIA P.PE DI PIEMONTE (NOTO)",
+       "idx": 7,
+       "arr": "19:05",
+       "dep": "19:05"
+      },
+      {
+       "stop": "VIA UNITÀ (PACHINO)",
+       "idx": 8,
+       "arr": "19:30",
+       "dep": "19:30"
+      },
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 9,
+       "arr": "19:35",
+       "dep": "19:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R30-1744",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "58 F E R I A L E d a L u n e d ì a V e n e r d ì E s c l u s o A g o sto"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 2,
+       "arr": "18:10",
+       "dep": "18:10"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA a.)",
+       "idx": 3,
+       "arr": "19:25",
+       "dep": "19:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R31-50024",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": {
+       "from": "15/6",
+       "to": "15/9"
+      },
+      "raw": "60 F E R I A L E d a L u n e d ì a V e n e r d ì 1 5 / 6 - 1 5 / 9"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 2,
+       "arr": "18:10",
+       "dep": "18:10"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 6,
+       "arr": "19:20",
+       "dep": "19:20"
+      },
+      {
+       "stop": "VIA P.PE DI PIEMONTE (NOTO)",
+       "idx": 7,
+       "arr": "19:35",
+       "dep": "19:35"
+      },
+      {
+       "stop": "VIA UNITÀ (PACHINO)",
+       "idx": 8,
+       "arr": "19:50",
+       "dep": "19:50"
+      },
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 9,
+       "arr": "19:55",
+       "dep": "19:55"
+      },
+      {
+       "stop": "VIA GARRANO, 62 (PORTOPALO DI CAPOPASSERO)",
+       "idx": 11,
+       "arr": "20:05",
+       "dep": "20:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R32-8390",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": {
+       "from": "16/9",
+       "to": "14/6"
+      },
+      "raw": "62 F E R I A L E daL u n e d ì a V e n e r d ì 1 6 / 9 - 1 4 / 6"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 2,
+       "arr": "18:40",
+       "dep": "18:40"
+      },
+      {
+       "stop": "P.ZZA VITT. VENETO/P.ZZA TRIESTE (AVOLA)",
+       "idx": 6,
+       "arr": "19:50",
+       "dep": "19:50"
+      },
+      {
+       "stop": "VIA P.PE DI PIEMONTE (NOTO)",
+       "idx": 7,
+       "arr": "20:05",
+       "dep": "20:05"
+      },
+      {
+       "stop": "VIA UNITÀ (PACHINO)",
+       "idx": 8,
+       "arr": "20:30",
+       "dep": "20:30"
+      },
+      {
+       "stop": "VIA TARANTO (PACHINO)",
+       "idx": 9,
+       "arr": "20:35",
+       "dep": "20:35"
+      },
+      {
+       "stop": "VIA GARRANO, 62 (PORTOPALO DI CAPOPASSERO)",
+       "idx": 11,
+       "arr": "20:45",
+       "dep": "20:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p59.T2R33-8391",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "64 GIORNALIERA"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "19:30",
+       "dep": "19:30"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 2,
+       "arr": "19:40",
+       "dep": "19:40"
+      },
+      {
+       "stop": "C.SO UMBERTO/TERMINAL BUS (SIRACUSA a.)",
+       "idx": 3,
+       "arr": "20:55",
+       "dep": "20:55"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

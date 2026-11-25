@@ -1,0 +1,848 @@
+{
+ "operator": "Prestia e Comandè",
+ "route_id": "lot1-456",
+ "name": "TERRASINI - PALERMO",
+ "short_name": "456",
+ "source": "t3-tabelle-_orari_da_linea_350_a_new_alia-cerda.pdf#p28",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "TERRASINI (Via E. Consiglio)",
+    "CINISI (Corso Umberto I)",
+    "CARINI (Villagrazia di Carini - S.S. 113)",
+    "CARINI (Stabilimento Italtel)",
+    "CAPACI (Corso Vitt. Emanuele)",
+    "PALERMO (Stazione F.S. - Via Fazello)"
+   ],
+   "kms": [
+    0.0,
+    3.0,
+    11.0,
+    14.6,
+    19.1,
+    34.1
+   ],
+   "trips": [
+    {
+     "corsa": "p28.A1-6833",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERRASINI (Via E. Consiglio)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "CINISI (Corso Umberto I)",
+       "idx": 1,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "CARINI (Villagrazia di Carini - S.S. 113)",
+       "idx": 2,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "CARINI (Stabilimento Italtel)",
+       "idx": 3,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 5,
+       "arr": "08:25",
+       "dep": "08:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p28.A2-6832",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERRASINI (Via E. Consiglio)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "CINISI (Corso Umberto I)",
+       "idx": 1,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "CARINI (Villagrazia di Carini - S.S. 113)",
+       "idx": 2,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "CARINI (Stabilimento Italtel)",
+       "idx": 3,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 5,
+       "arr": "08:25",
+       "dep": "08:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p28.A3-8956",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERRASINI (Via E. Consiglio)",
+       "idx": 0,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "CINISI (Corso Umberto I)",
+       "idx": 1,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "CARINI (Villagrazia di Carini - S.S. 113)",
+       "idx": 2,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "CARINI (Stabilimento Italtel)",
+       "idx": 3,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 5,
+       "arr": "08:25",
+       "dep": "08:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p28.A4-6834",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERRASINI (Via E. Consiglio)",
+       "idx": 0,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "CINISI (Corso Umberto I)",
+       "idx": 1,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "CARINI (Villagrazia di Carini - S.S. 113)",
+       "idx": 2,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "CARINI (Stabilimento Italtel)",
+       "idx": 3,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "CAPACI (Corso Vitt. Emanuele)",
+       "idx": 4,
+       "arr": "07:50",
+       "dep": "07:50"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 5,
+       "arr": "08:50",
+       "dep": "08:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p28.A5-8957",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERRASINI (Via E. Consiglio)",
+       "idx": 0,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "CINISI (Corso Umberto I)",
+       "idx": 1,
+       "arr": "09:10",
+       "dep": "09:10"
+      },
+      {
+       "stop": "CARINI (Villagrazia di Carini - S.S. 113)",
+       "idx": 2,
+       "arr": "09:20",
+       "dep": "09:20"
+      },
+      {
+       "stop": "CARINI (Stabilimento Italtel)",
+       "idx": 3,
+       "arr": "09:25",
+       "dep": "09:25"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 5,
+       "arr": "10:30",
+       "dep": "10:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p28.A6-8958",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERRASINI (Via E. Consiglio)",
+       "idx": 0,
+       "arr": "11:15",
+       "dep": "11:15"
+      },
+      {
+       "stop": "CINISI (Corso Umberto I)",
+       "idx": 1,
+       "arr": "11:25",
+       "dep": "11:25"
+      },
+      {
+       "stop": "CARINI (Villagrazia di Carini - S.S. 113)",
+       "idx": 2,
+       "arr": "11:35",
+       "dep": "11:35"
+      },
+      {
+       "stop": "CARINI (Stabilimento Italtel)",
+       "idx": 3,
+       "arr": "11:40",
+       "dep": "11:40"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 5,
+       "arr": "12:45",
+       "dep": "12:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p28.A7-8959",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERRASINI (Via E. Consiglio)",
+       "idx": 0,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "CINISI (Corso Umberto I)",
+       "idx": 1,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "CARINI (Villagrazia di Carini - S.S. 113)",
+       "idx": 2,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "CARINI (Stabilimento Italtel)",
+       "idx": 3,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "CAPACI (Corso Vitt. Emanuele)",
+       "idx": 4,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 5,
+       "arr": "15:00",
+       "dep": "15:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p28.A8-8960",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERRASINI (Via E. Consiglio)",
+       "idx": 0,
+       "arr": "15:45",
+       "dep": "15:45"
+      },
+      {
+       "stop": "CINISI (Corso Umberto I)",
+       "idx": 1,
+       "arr": "15:55",
+       "dep": "15:55"
+      },
+      {
+       "stop": "CARINI (Villagrazia di Carini - S.S. 113)",
+       "idx": 2,
+       "arr": "16:05",
+       "dep": "16:05"
+      },
+      {
+       "stop": "CARINI (Stabilimento Italtel)",
+       "idx": 3,
+       "arr": "16:15",
+       "dep": "16:15"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 5,
+       "arr": "17:15",
+       "dep": "17:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p28.A9-8962",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERRASINI (Via E. Consiglio)",
+       "idx": 0,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "CINISI (Corso Umberto I)",
+       "idx": 1,
+       "arr": "18:10",
+       "dep": "18:10"
+      },
+      {
+       "stop": "CARINI (Villagrazia di Carini - S.S. 113)",
+       "idx": 2,
+       "arr": "18:20",
+       "dep": "18:20"
+      },
+      {
+       "stop": "CARINI (Stabilimento Italtel)",
+       "idx": 3,
+       "arr": "18:25",
+       "dep": "18:25"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 5,
+       "arr": "19:25",
+       "dep": "19:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p28.A10-8963",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERRASINI (Via E. Consiglio)",
+       "idx": 0,
+       "arr": "19:45",
+       "dep": "19:45"
+      },
+      {
+       "stop": "CINISI (Corso Umberto I)",
+       "idx": 1,
+       "arr": "19:55",
+       "dep": "19:55"
+      },
+      {
+       "stop": "CARINI (Villagrazia di Carini - S.S. 113)",
+       "idx": 2,
+       "arr": "20:05",
+       "dep": "20:05"
+      },
+      {
+       "stop": "CARINI (Stabilimento Italtel)",
+       "idx": 3,
+       "arr": "20:10",
+       "dep": "20:10"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 5,
+       "arr": "21:15",
+       "dep": "21:15"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "PALERMO (Stazione F.S. - Via Fazello)",
+    "CAPACI (Corso Vitt. Emanuele)",
+    "CARINI (Stabilimento Italtel)",
+    "CARINI (Villagrazia di Carini - S.S. 113)",
+    "CINISI (Corso Umberto I)",
+    "TERRASINI (Via E. Consiglio)"
+   ],
+   "kms": [
+    0.0,
+    15.0,
+    19.6,
+    22.6,
+    31.5,
+    34.1
+   ],
+   "trips": [
+    {
+     "corsa": "p28.R1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Ag g iu n ta 6 8 3 3 ( A g g iu ntKM ( A g g iu ntKM ( A g g iu ntKM ( A g g iu ntKM ( A g g iu ntKM ( A g g iu ntKM ( A g g iu ntKM ( A g g iu nt a 6 8 3 3 ) a 8 9 5 6 ) a 8 9 5 7 ) a 8 9 5 8 ) a 8 9 5 9 ) a 8 9 6 0 ) a 8 9 6 2 ) a 8 9 6 3 ) Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "CAPACI (Corso Vitt. Emanuele)",
+       "idx": 1,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "CARINI (Stabilimento Italtel)",
+       "idx": 2,
+       "arr": "08:25",
+       "dep": "08:25"
+      },
+      {
+       "stop": "CARINI (Villagrazia di Carini - S.S. 113)",
+       "idx": 3,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "CINISI (Corso Umberto I)",
+       "idx": 4,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "TERRASINI (Via E. Consiglio)",
+       "idx": 5,
+       "arr": "08:50",
+       "dep": "08:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p28.R2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Ag g iu n ta 8 9 5 6 Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "CARINI (Stabilimento Italtel)",
+       "idx": 2,
+       "arr": "10:05",
+       "dep": "10:05"
+      },
+      {
+       "stop": "CARINI (Villagrazia di Carini - S.S. 113)",
+       "idx": 3,
+       "arr": "10:10",
+       "dep": "10:10"
+      },
+      {
+       "stop": "CINISI (Corso Umberto I)",
+       "idx": 4,
+       "arr": "10:20",
+       "dep": "10:20"
+      },
+      {
+       "stop": "TERRASINI (Via E. Consiglio)",
+       "idx": 5,
+       "arr": "10:30",
+       "dep": "10:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p28.R3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Ag g iu n ta 8 9 5 7 Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "CARINI (Stabilimento Italtel)",
+       "idx": 2,
+       "arr": "13:05",
+       "dep": "13:05"
+      },
+      {
+       "stop": "CARINI (Villagrazia di Carini - S.S. 113)",
+       "idx": 3,
+       "arr": "13:10",
+       "dep": "13:10"
+      },
+      {
+       "stop": "CINISI (Corso Umberto I)",
+       "idx": 4,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "TERRASINI (Via E. Consiglio)",
+       "idx": 5,
+       "arr": "13:30",
+       "dep": "13:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p28.R4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Ag g iu n ta 8 9 5 8 Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "CARINI (Stabilimento Italtel)",
+       "idx": 2,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "CARINI (Villagrazia di Carini - S.S. 113)",
+       "idx": 3,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "CINISI (Corso Umberto I)",
+       "idx": 4,
+       "arr": "14:35",
+       "dep": "14:35"
+      },
+      {
+       "stop": "TERRASINI (Via E. Consiglio)",
+       "idx": 5,
+       "arr": "14:45",
+       "dep": "14:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p28.R5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Ag g iu n ta 8 9 5 9 Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "CARINI (Stabilimento Italtel)",
+       "idx": 2,
+       "arr": "15:20",
+       "dep": "15:20"
+      },
+      {
+       "stop": "CARINI (Villagrazia di Carini - S.S. 113)",
+       "idx": 3,
+       "arr": "15:25",
+       "dep": "15:25"
+      },
+      {
+       "stop": "CINISI (Corso Umberto I)",
+       "idx": 4,
+       "arr": "15:35",
+       "dep": "15:35"
+      },
+      {
+       "stop": "TERRASINI (Via E. Consiglio)",
+       "idx": 5,
+       "arr": "15:45",
+       "dep": "15:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p28.R6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Ag g iu n ta 8 9 6 0 Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "CARINI (Stabilimento Italtel)",
+       "idx": 2,
+       "arr": "17:05",
+       "dep": "17:05"
+      },
+      {
+       "stop": "CARINI (Villagrazia di Carini - S.S. 113)",
+       "idx": 3,
+       "arr": "17:10",
+       "dep": "17:10"
+      },
+      {
+       "stop": "CINISI (Corso Umberto I)",
+       "idx": 4,
+       "arr": "17:20",
+       "dep": "17:20"
+      },
+      {
+       "stop": "TERRASINI (Via E. Consiglio)",
+       "idx": 5,
+       "arr": "17:30",
+       "dep": "17:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p28.R7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Ag g iu n ta 8 9 6 2 Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "CARINI (Stabilimento Italtel)",
+       "idx": 2,
+       "arr": "19:05",
+       "dep": "19:05"
+      },
+      {
+       "stop": "CARINI (Villagrazia di Carini - S.S. 113)",
+       "idx": 3,
+       "arr": "19:10",
+       "dep": "19:10"
+      },
+      {
+       "stop": "CINISI (Corso Umberto I)",
+       "idx": 4,
+       "arr": "19:20",
+       "dep": "19:20"
+      },
+      {
+       "stop": "TERRASINI (Via E. Consiglio)",
+       "idx": 5,
+       "arr": "19:30",
+       "dep": "19:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p28.R8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Ag g iu n ta 8 9 6 3 Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "20:00",
+       "dep": "20:00"
+      },
+      {
+       "stop": "CAPACI (Corso Vitt. Emanuele)",
+       "idx": 1,
+       "arr": "21:00",
+       "dep": "21:00"
+      },
+      {
+       "stop": "CARINI (Stabilimento Italtel)",
+       "idx": 2,
+       "arr": "21:05",
+       "dep": "21:05"
+      },
+      {
+       "stop": "CARINI (Villagrazia di Carini - S.S. 113)",
+       "idx": 3,
+       "arr": "21:10",
+       "dep": "21:10"
+      },
+      {
+       "stop": "CINISI (Corso Umberto I)",
+       "idx": 4,
+       "arr": "21:20",
+       "dep": "21:20"
+      },
+      {
+       "stop": "TERRASINI (Via E. Consiglio)",
+       "idx": 5,
+       "arr": "21:30",
+       "dep": "21:30"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

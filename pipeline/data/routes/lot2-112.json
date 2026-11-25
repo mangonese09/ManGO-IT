@@ -1,0 +1,224 @@
+{
+ "operator": "Scionti",
+ "route_id": "lot2-112",
+ "name": "CATANIA - STABILIMENTI INDUSTRIALI DI PRIOLO",
+ "short_name": "112",
+ "source": "orario_b2d178879e.pdf#p14",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "CATANIA",
+    "CATANIA (AEROPORTO FONTANAROSSA)",
+    "AUGUSTA"
+   ],
+   "kms": [
+    0.0,
+    3.0,
+    50.0
+   ],
+   "trips": [
+    {
+     "corsa": "p14.A1-1262",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 1,
+       "arr": "09:45",
+       "dep": "09:45"
+      },
+      {
+       "stop": "AUGUSTA",
+       "idx": 2,
+       "arr": "10:30",
+       "dep": "10:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p14.A2-1265",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 1,
+       "arr": "16:15",
+       "dep": "16:15"
+      },
+      {
+       "stop": "AUGUSTA",
+       "idx": 2,
+       "arr": "17:00",
+       "dep": "17:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p14.A3-1266",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "20:30",
+       "dep": "20:30"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 1,
+       "arr": "20:45",
+       "dep": "20:45"
+      },
+      {
+       "stop": "AUGUSTA",
+       "idx": 2,
+       "arr": "21:30",
+       "dep": "21:30"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "AUGUSTA",
+    "CATANIA (AEROPORTO FONTANAROSSA)",
+    "CATANIA"
+   ],
+   "kms": [
+    0.0,
+    47.0,
+    50.0
+   ],
+   "trips": [
+    {
+     "corsa": "p14.R1-1263",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AUGUSTA",
+       "idx": 0,
+       "arr": "11:30",
+       "dep": "11:30"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 1,
+       "arr": "11:45",
+       "dep": "11:45"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 2,
+       "arr": "12:30",
+       "dep": "12:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p14.R2-1264",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AUGUSTA",
+       "idx": 0,
+       "arr": "17:00",
+       "dep": "17:00"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 1,
+       "arr": "17:15",
+       "dep": "17:15"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 2,
+       "arr": "18:00",
+       "dep": "18:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p14.R3-1267",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AUGUSTA",
+       "idx": 0,
+       "arr": "21:30",
+       "dep": "21:30"
+      },
+      {
+       "stop": "CATANIA (AEROPORTO FONTANAROSSA)",
+       "idx": 1,
+       "arr": "21:45",
+       "dep": "21:45"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 2,
+       "arr": "22:30",
+       "dep": "22:30"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

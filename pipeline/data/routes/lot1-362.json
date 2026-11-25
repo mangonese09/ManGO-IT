@@ -1,0 +1,479 @@
+{
+ "operator": "Autoservizi Salemi",
+ "route_id": "lot1-362",
+ "name": "MARSALA - PALERMO",
+ "short_name": "362",
+ "source": "t3-tabelle-_orari_da_linea_350_a_new_alia-cerda.pdf#p8",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "MARSALA (via FAZIO)",
+    "MAZARA DEL VALLO (Via Salemi)",
+    "CASTELVETRANO (C/vetrano - Piazza Matteotti)",
+    "CASTELVETRANO (SS119 - km. 48,209 - rif TAOIL)",
+    "CARINI (PALERMO - PUNTA RAISI)",
+    "PALERMO (P.zza FAZELLO)"
+   ],
+   "kms": [
+    0.0,
+    21.5,
+    45.9,
+    53.5,
+    132.6,
+    160.4
+   ],
+   "trips": [
+    {
+     "corsa": "p8.A1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "AGG OFFERTA SAL02 Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 0,
+       "arr": "03:10",
+       "dep": "03:10"
+      },
+      {
+       "stop": "MAZARA DEL VALLO (Via Salemi)",
+       "idx": 1,
+       "arr": "03:40",
+       "dep": "03:40"
+      },
+      {
+       "stop": "CASTELVETRANO (C/vetrano - Piazza Matteotti)",
+       "idx": 2,
+       "arr": "04:10",
+       "dep": "04:10"
+      },
+      {
+       "stop": "CASTELVETRANO (SS119 - km. 48,209 - rif TAOIL)",
+       "idx": 3,
+       "arr": "04:25",
+       "dep": "04:25"
+      },
+      {
+       "stop": "CARINI (PALERMO - PUNTA RAISI)",
+       "idx": 4,
+       "arr": "05:10",
+       "dep": "05:10"
+      },
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 5,
+       "arr": "05:55",
+       "dep": "05:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p8.A2-5107",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 0,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "MAZARA DEL VALLO (Via Salemi)",
+       "idx": 1,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "CASTELVETRANO (C/vetrano - Piazza Matteotti)",
+       "idx": 2,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "CASTELVETRANO (SS119 - km. 48,209 - rif TAOIL)",
+       "idx": 3,
+       "arr": "15:15",
+       "dep": "15:15"
+      },
+      {
+       "stop": "CARINI (PALERMO - PUNTA RAISI)",
+       "idx": 4,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 5,
+       "arr": "16:45",
+       "dep": "16:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p8.A3-5108",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 0,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "MAZARA DEL VALLO (Via Salemi)",
+       "idx": 1,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "CASTELVETRANO (C/vetrano - Piazza Matteotti)",
+       "idx": 2,
+       "arr": "17:00",
+       "dep": "17:00"
+      },
+      {
+       "stop": "CASTELVETRANO (SS119 - km. 48,209 - rif TAOIL)",
+       "idx": 3,
+       "arr": "17:15",
+       "dep": "17:15"
+      },
+      {
+       "stop": "CARINI (PALERMO - PUNTA RAISI)",
+       "idx": 4,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 5,
+       "arr": "18:45",
+       "dep": "18:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p8.A4",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "AGG OFFERTA SAL04 OFFERTA OFFERTA SAL02) SAL04) Gio r n a l i e r a in P e r i o d o e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 0,
+       "arr": "17:00",
+       "dep": "17:00"
+      },
+      {
+       "stop": "MAZARA DEL VALLO (Via Salemi)",
+       "idx": 1,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "CASTELVETRANO (C/vetrano - Piazza Matteotti)",
+       "idx": 2,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "CASTELVETRANO (SS119 - km. 48,209 - rif TAOIL)",
+       "idx": 3,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "CARINI (PALERMO - PUNTA RAISI)",
+       "idx": 4,
+       "arr": "19:00",
+       "dep": "19:00"
+      },
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 5,
+       "arr": "19:45",
+       "dep": "19:45"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "PALERMO (P.zza FAZELLO)",
+    "CARINI (PALERMO - PUNTA RAISI)",
+    "CASTELVETRANO (SS119 - km. 48,209 - rif TAOIL)",
+    "CASTELVETRANO (C/vetrano - Piazza Matteotti)",
+    "MAZARA DEL VALLO (Via Salemi)",
+    "MARSALA (via FAZIO)"
+   ],
+   "kms": [
+    0.0,
+    27.8,
+    106.9,
+    114.5,
+    138.9,
+    160.4
+   ],
+   "trips": [
+    {
+     "corsa": "p8.R1-5109",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "OFERTA B) OFFERTA SAL06) SAL 09) F e ri a l e lu n e d ì- v e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "CASTELVETRANO (SS119 - km. 48,209 - rif TAOIL)",
+       "idx": 2,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "CASTELVETRANO (C/vetrano - Piazza Matteotti)",
+       "idx": 3,
+       "arr": "08:35",
+       "dep": "08:35"
+      },
+      {
+       "stop": "MAZARA DEL VALLO (Via Salemi)",
+       "idx": 4,
+       "arr": "09:05",
+       "dep": "09:05"
+      },
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 5,
+       "arr": "09:35",
+       "dep": "09:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p8.R2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "AGG OFERTA SAL06 Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 0,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "CARINI (PALERMO - PUNTA RAISI)",
+       "idx": 1,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "CASTELVETRANO (SS119 - km. 48,209 - rif TAOIL)",
+       "idx": 2,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "CASTELVETRANO (C/vetrano - Piazza Matteotti)",
+       "idx": 3,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "MAZARA DEL VALLO (Via Salemi)",
+       "idx": 4,
+       "arr": "09:45",
+       "dep": "09:45"
+      },
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 5,
+       "arr": "10:15",
+       "dep": "10:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p8.R3-5109",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "B S A B A T O F e r ia le"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 0,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "CASTELVETRANO (SS119 - km. 48,209 - rif TAOIL)",
+       "idx": 2,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "CASTELVETRANO (C/vetrano - Piazza Matteotti)",
+       "idx": 3,
+       "arr": "09:45",
+       "dep": "09:45"
+      },
+      {
+       "stop": "MAZARA DEL VALLO (Via Salemi)",
+       "idx": 4,
+       "arr": "10:15",
+       "dep": "10:15"
+      },
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 5,
+       "arr": "10:45",
+       "dep": "10:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p8.R4-5110",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 0,
+       "arr": "21:00",
+       "dep": "21:00"
+      },
+      {
+       "stop": "CARINI (PALERMO - PUNTA RAISI)",
+       "idx": 1,
+       "arr": "21:45",
+       "dep": "21:45"
+      },
+      {
+       "stop": "CASTELVETRANO (SS119 - km. 48,209 - rif TAOIL)",
+       "idx": 2,
+       "arr": "22:30",
+       "dep": "22:30"
+      },
+      {
+       "stop": "CASTELVETRANO (C/vetrano - Piazza Matteotti)",
+       "idx": 3,
+       "arr": "22:45",
+       "dep": "22:45"
+      },
+      {
+       "stop": "MAZARA DEL VALLO (Via Salemi)",
+       "idx": 4,
+       "arr": "23:15",
+       "dep": "23:15"
+      },
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 5,
+       "arr": "23:45",
+       "dep": "23:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p8.R5",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Agg OFFERTA SAL 09 Gio r n a l i e r a in P e r i o d o e s t i v o"
+     },
+     "reverse": false,
+     "valid": false,
+     "stops": [
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 0,
+       "arr": "23:15",
+       "dep": "23:15"
+      },
+      {
+       "stop": "CARINI (PALERMO - PUNTA RAISI)",
+       "idx": 1,
+       "arr": "00:00",
+       "dep": "00:00"
+      },
+      {
+       "stop": "CASTELVETRANO (SS119 - km. 48,209 - rif TAOIL)",
+       "idx": 2,
+       "arr": "00:45",
+       "dep": "00:45"
+      },
+      {
+       "stop": "CASTELVETRANO (C/vetrano - Piazza Matteotti)",
+       "idx": 3,
+       "arr": "01:00",
+       "dep": "01:00"
+      },
+      {
+       "stop": "MAZARA DEL VALLO (Via Salemi)",
+       "idx": 4,
+       "arr": "01:30",
+       "dep": "01:30"
+      },
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 5,
+       "arr": "02:00",
+       "dep": "02:00"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

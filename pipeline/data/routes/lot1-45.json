@@ -1,0 +1,84 @@
+{
+ "operator": "BUS AWAY S.R.L.",
+ "route_id": "lot1-45",
+ "name": "CASTRONOVO DI SICILIA - PRIZZI",
+ "short_name": "45",
+ "source": "t1-tabelle_-orari_da_linea_1_a_linea_297.pdf#p4",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "CASTRONOVO D.SICILIA (CASTRONOVO DI SICILIA - CALVARIO)",
+    "PRIZZI (RIONE SAN GIOVANNI)"
+   ],
+   "kms": [
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p4.A1-597",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CASTRONOVO D.SICILIA (CASTRONOVO DI SICILIA - CALVARIO)",
+       "idx": 0,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "PRIZZI (RIONE SAN GIOVANNI)",
+       "idx": 1,
+       "arr": "08:00",
+       "dep": "08:00"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "PRIZZI (RIONE SAN GIOVANNI)",
+    "CASTRONOVO D.SICILIA (CASTRONOVO DI SICILIA - CALVARIO)"
+   ],
+   "kms": [
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p4.R1-598",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PRIZZI (RIONE SAN GIOVANNI)",
+       "idx": 0,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "CASTRONOVO D.SICILIA (CASTRONOVO DI SICILIA - CALVARIO)",
+       "idx": 1,
+       "arr": "14:45",
+       "dep": "14:45"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

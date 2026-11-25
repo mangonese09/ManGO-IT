@@ -1,0 +1,386 @@
+{
+ "operator": "Servizi Turistici Marrone Srl",
+ "route_id": "lot1-357",
+ "name": "PARTANNA - TRISCINA",
+ "short_name": "357",
+ "source": "t3-tabelle-_orari_da_linea_350_a_new_alia-cerda.pdf#p2",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "PARTANNA (ANGOLO VIA S. PERTINI / VIA R. P. ASARO)",
+    "PARTANNA (VIALE D'ITALIA N° 15)",
+    "PARTANNA (VIA A. GRAMSCI N° 93)",
+    "PARTANNA (VIA A. GRAMSCI N° 3)",
+    "PARTANNA (ANGOLO VIA C. PISACANE / VIA L. ENAUDI)",
+    "PARTANNA (VIALE RESISTENZA N° 74)",
+    "SELINUNTE DI CASTELVRANO (SELINUNTE - PIAZZALE DELLE METOPE)",
+    "TRISCINA DI CASTELEVTRANO (TRISCINA - VIA DEL MEDITERRANEO N° 118)",
+    "TRISCINA DI CASTELEVTRANO (TRISCINA - VIA DEL MEDITERRANEO N° 192)",
+    "TRISCINA DI CASTELEVTRANO (TRISCINA - ANGOLO VIA DEL MEDITERRANEO/STRADA 113)",
+    "TRISCINA DI CASTELEVTRANO (TRISCINA - VIA DEL MEDITERRANEO LIDO SELENE)"
+   ],
+   "kms": [
+    0.0,
+    1.5,
+    3.0,
+    4.0,
+    5.0,
+    7.0,
+    18.1,
+    30.0,
+    32.0,
+    33.0,
+    35.1
+   ],
+   "trips": [
+    {
+     "corsa": "p2.A1-5061",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera da metà maggio a fine settembre"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PARTANNA (ANGOLO VIA S. PERTINI / VIA R. P. ASARO)",
+       "idx": 0,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "PARTANNA (VIALE D'ITALIA N° 15)",
+       "idx": 1,
+       "arr": "08:33",
+       "dep": "08:33"
+      },
+      {
+       "stop": "PARTANNA (VIA A. GRAMSCI N° 93)",
+       "idx": 2,
+       "arr": "08:36",
+       "dep": "08:36"
+      },
+      {
+       "stop": "PARTANNA (VIA A. GRAMSCI N° 3)",
+       "idx": 3,
+       "arr": "08:37",
+       "dep": "08:37"
+      },
+      {
+       "stop": "PARTANNA (ANGOLO VIA C. PISACANE / VIA L. ENAUDI)",
+       "idx": 4,
+       "arr": "08:39",
+       "dep": "08:39"
+      },
+      {
+       "stop": "PARTANNA (VIALE RESISTENZA N° 74)",
+       "idx": 5,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "SELINUNTE DI CASTELVRANO (SELINUNTE - PIAZZALE DELLE METOPE)",
+       "idx": 6,
+       "arr": "09:05",
+       "dep": "09:05"
+      },
+      {
+       "stop": "TRISCINA DI CASTELEVTRANO (TRISCINA - VIA DEL MEDITERRANEO N° 118)",
+       "idx": 7,
+       "arr": "09:20",
+       "dep": "09:20"
+      },
+      {
+       "stop": "TRISCINA DI CASTELEVTRANO (TRISCINA - VIA DEL MEDITERRANEO N° 192)",
+       "idx": 8,
+       "arr": "09:23",
+       "dep": "09:23"
+      },
+      {
+       "stop": "TRISCINA DI CASTELEVTRANO (TRISCINA - ANGOLO VIA DEL MEDITERRANEO/STRADA 113)",
+       "idx": 9,
+       "arr": "09:25",
+       "dep": "09:25"
+      },
+      {
+       "stop": "TRISCINA DI CASTELEVTRANO (TRISCINA - VIA DEL MEDITERRANEO LIDO SELENE)",
+       "idx": 10,
+       "arr": "09:30",
+       "dep": "09:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p2.A2-5062",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera da metà maggio a fine settembre"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PARTANNA (ANGOLO VIA S. PERTINI / VIA R. P. ASARO)",
+       "idx": 0,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "PARTANNA (VIALE D'ITALIA N° 15)",
+       "idx": 1,
+       "arr": "15:03",
+       "dep": "15:03"
+      },
+      {
+       "stop": "PARTANNA (VIA A. GRAMSCI N° 93)",
+       "idx": 2,
+       "arr": "15:06",
+       "dep": "15:06"
+      },
+      {
+       "stop": "PARTANNA (VIA A. GRAMSCI N° 3)",
+       "idx": 3,
+       "arr": "15:07",
+       "dep": "15:07"
+      },
+      {
+       "stop": "PARTANNA (ANGOLO VIA C. PISACANE / VIA L. ENAUDI)",
+       "idx": 4,
+       "arr": "15:09",
+       "dep": "15:09"
+      },
+      {
+       "stop": "PARTANNA (VIALE RESISTENZA N° 74)",
+       "idx": 5,
+       "arr": "15:10",
+       "dep": "15:10"
+      },
+      {
+       "stop": "SELINUNTE DI CASTELVRANO (SELINUNTE - PIAZZALE DELLE METOPE)",
+       "idx": 6,
+       "arr": "15:35",
+       "dep": "15:35"
+      },
+      {
+       "stop": "TRISCINA DI CASTELEVTRANO (TRISCINA - VIA DEL MEDITERRANEO N° 118)",
+       "idx": 7,
+       "arr": "15:50",
+       "dep": "15:50"
+      },
+      {
+       "stop": "TRISCINA DI CASTELEVTRANO (TRISCINA - VIA DEL MEDITERRANEO N° 192)",
+       "idx": 8,
+       "arr": "15:53",
+       "dep": "15:53"
+      },
+      {
+       "stop": "TRISCINA DI CASTELEVTRANO (TRISCINA - ANGOLO VIA DEL MEDITERRANEO/STRADA 113)",
+       "idx": 9,
+       "arr": "15:55",
+       "dep": "15:55"
+      },
+      {
+       "stop": "TRISCINA DI CASTELEVTRANO (TRISCINA - VIA DEL MEDITERRANEO LIDO SELENE)",
+       "idx": 10,
+       "arr": "16:00",
+       "dep": "16:00"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "TRISCINA DI CASTELEVTRANO (TRISCINA - VIA DEL MEDITERRANEO LIDO SELENE)",
+    "TRISCINA DI CASTELEVTRANO (TRISCINA - ANGOLO VIA DEL MEDITERRANEO/STRADA 113)",
+    "TRISCINA DI CASTELEVTRANO (TRISCINA - VIA DEL MEDITERRANEO N° 192)",
+    "TRISCINA DI CASTELEVTRANO (TRISCINA - VIA DEL MEDITERRANEO N° 118)",
+    "SELINUNTE DI CASTELVRANO (SELINUNTE - PIAZZALE DELLE METOPE)",
+    "PARTANNA (VIALE RESISTENZA N° 74)",
+    "PARTANNA (ANGOLO VIA C. PISACANE / VIA L. ENAUDI)",
+    "PARTANNA (VIA A. GRAMSCI N° 3)",
+    "PARTANNA (VIA A. GRAMSCI N° 93)",
+    "PARTANNA (VIALE D'ITALIA N° 15)",
+    "PARTANNA (ANGOLO VIA S. PERTINI / VIA R. P. ASARO)"
+   ],
+   "kms": [
+    0.0,
+    2.1,
+    4.0,
+    5.0,
+    17.0,
+    28.1,
+    29.1,
+    30.1,
+    32.1,
+    33.6,
+    35.1
+   ],
+   "trips": [
+    {
+     "corsa": "p2.R1-5063",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera da metà maggio a fine settembre"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TRISCINA DI CASTELEVTRANO (TRISCINA - VIA DEL MEDITERRANEO LIDO SELENE)",
+       "idx": 0,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "TRISCINA DI CASTELEVTRANO (TRISCINA - ANGOLO VIA DEL MEDITERRANEO/STRADA 113)",
+       "idx": 1,
+       "arr": "12:05",
+       "dep": "12:05"
+      },
+      {
+       "stop": "TRISCINA DI CASTELEVTRANO (TRISCINA - VIA DEL MEDITERRANEO N° 192)",
+       "idx": 2,
+       "arr": "12:07",
+       "dep": "12:07"
+      },
+      {
+       "stop": "TRISCINA DI CASTELEVTRANO (TRISCINA - VIA DEL MEDITERRANEO N° 118)",
+       "idx": 3,
+       "arr": "12:10",
+       "dep": "12:10"
+      },
+      {
+       "stop": "SELINUNTE DI CASTELVRANO (SELINUNTE - PIAZZALE DELLE METOPE)",
+       "idx": 4,
+       "arr": "12:25",
+       "dep": "12:25"
+      },
+      {
+       "stop": "PARTANNA (VIALE RESISTENZA N° 74)",
+       "idx": 5,
+       "arr": "12:50",
+       "dep": "12:50"
+      },
+      {
+       "stop": "PARTANNA (ANGOLO VIA C. PISACANE / VIA L. ENAUDI)",
+       "idx": 6,
+       "arr": "12:51",
+       "dep": "12:51"
+      },
+      {
+       "stop": "PARTANNA (VIA A. GRAMSCI N° 3)",
+       "idx": 7,
+       "arr": "12:53",
+       "dep": "12:53"
+      },
+      {
+       "stop": "PARTANNA (VIA A. GRAMSCI N° 93)",
+       "idx": 8,
+       "arr": "12:54",
+       "dep": "12:54"
+      },
+      {
+       "stop": "PARTANNA (VIALE D'ITALIA N° 15)",
+       "idx": 9,
+       "arr": "12:57",
+       "dep": "12:57"
+      },
+      {
+       "stop": "PARTANNA (ANGOLO VIA S. PERTINI / VIA R. P. ASARO)",
+       "idx": 10,
+       "arr": "13:00",
+       "dep": "13:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p2.R2-5064",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera da metà maggio a fine settembre"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TRISCINA DI CASTELEVTRANO (TRISCINA - VIA DEL MEDITERRANEO LIDO SELENE)",
+       "idx": 0,
+       "arr": "19:00",
+       "dep": "19:00"
+      },
+      {
+       "stop": "TRISCINA DI CASTELEVTRANO (TRISCINA - ANGOLO VIA DEL MEDITERRANEO/STRADA 113)",
+       "idx": 1,
+       "arr": "19:05",
+       "dep": "19:05"
+      },
+      {
+       "stop": "TRISCINA DI CASTELEVTRANO (TRISCINA - VIA DEL MEDITERRANEO N° 192)",
+       "idx": 2,
+       "arr": "19:07",
+       "dep": "19:07"
+      },
+      {
+       "stop": "TRISCINA DI CASTELEVTRANO (TRISCINA - VIA DEL MEDITERRANEO N° 118)",
+       "idx": 3,
+       "arr": "19:10",
+       "dep": "19:10"
+      },
+      {
+       "stop": "SELINUNTE DI CASTELVRANO (SELINUNTE - PIAZZALE DELLE METOPE)",
+       "idx": 4,
+       "arr": "19:25",
+       "dep": "19:25"
+      },
+      {
+       "stop": "PARTANNA (VIALE RESISTENZA N° 74)",
+       "idx": 5,
+       "arr": "19:50",
+       "dep": "19:50"
+      },
+      {
+       "stop": "PARTANNA (ANGOLO VIA C. PISACANE / VIA L. ENAUDI)",
+       "idx": 6,
+       "arr": "19:51",
+       "dep": "19:51"
+      },
+      {
+       "stop": "PARTANNA (VIA A. GRAMSCI N° 3)",
+       "idx": 7,
+       "arr": "19:53",
+       "dep": "19:53"
+      },
+      {
+       "stop": "PARTANNA (VIA A. GRAMSCI N° 93)",
+       "idx": 8,
+       "arr": "19:54",
+       "dep": "19:54"
+      },
+      {
+       "stop": "PARTANNA (VIALE D'ITALIA N° 15)",
+       "idx": 9,
+       "arr": "19:57",
+       "dep": "19:57"
+      },
+      {
+       "stop": "PARTANNA (ANGOLO VIA S. PERTINI / VIA R. P. ASARO)",
+       "idx": 10,
+       "arr": "20:00",
+       "dep": "20:00"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

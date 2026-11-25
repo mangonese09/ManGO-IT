@@ -1,0 +1,162 @@
+{
+ "operator": "Lombardo&Glorioso",
+ "route_id": "lot1-245",
+ "name": "POLLINA - CEFALÙ - SCALO F.S. -",
+ "short_name": "245",
+ "source": "t1-tabelle_-orari_da_linea_1_a_linea_297.pdf#p13",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "POLLINA",
+    "FINALE DI POLLINA",
+    "CEFALU FSS (CEFALU' FSS)"
+   ],
+   "kms": [
+    0.0,
+    12.2,
+    26.6
+   ],
+   "trips": [
+    {
+     "corsa": "p13.A1-3601",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "POLLINA",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "FINALE DI POLLINA",
+       "idx": 1,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "CEFALU FSS (CEFALU' FSS)",
+       "idx": 2,
+       "arr": "07:50",
+       "dep": "07:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p13.A2-3603",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "POLLINA",
+       "idx": 0,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "FINALE DI POLLINA",
+       "idx": 1,
+       "arr": "15:25",
+       "dep": "15:25"
+      },
+      {
+       "stop": "CEFALU FSS (CEFALU' FSS)",
+       "idx": 2,
+       "arr": "15:55",
+       "dep": "15:55"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CEFALU FSS (CEFALU' FSS)",
+    "FINALE DI POLLINA",
+    "POLLINA"
+   ],
+   "kms": [
+    0.0,
+    14.4,
+    26.6
+   ],
+   "trips": [
+    {
+     "corsa": "p13.R1-3604",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CEFALU FSS (CEFALU' FSS)",
+       "idx": 0,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "FINALE DI POLLINA",
+       "idx": 1,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "POLLINA",
+       "idx": 2,
+       "arr": "14:50",
+       "dep": "14:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p13.R2-3605",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CEFALU FSS (CEFALU' FSS)",
+       "idx": 0,
+       "arr": "16:15",
+       "dep": "16:15"
+      },
+      {
+       "stop": "FINALE DI POLLINA",
+       "idx": 1,
+       "arr": "16:45",
+       "dep": "16:45"
+      },
+      {
+       "stop": "POLLINA",
+       "idx": 2,
+       "arr": "17:05",
+       "dep": "17:05"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

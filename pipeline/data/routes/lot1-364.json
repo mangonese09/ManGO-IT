@@ -1,0 +1,671 @@
+{
+ "operator": "Autoservizi Salemi",
+ "route_id": "lot1-364",
+ "name": "MARSALA - PALERMO",
+ "short_name": "364",
+ "source": "t3-tabelle-_orari_da_linea_350_a_new_alia-cerda.pdf#p11",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "MARSALA (via FAZIO)",
+    "MISILISCEMI (Aeroporto BIRGI)",
+    "CARINI (Aeroporto PUNTA RAISI)",
+    "PALERMO (P.zza FAZELLO)"
+   ],
+   "kms": [
+    0.0,
+    16.25,
+    111.25,
+    145.7
+   ],
+   "trips": [
+    {
+     "corsa": "p11.A1-5142",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "A F e ri a l e L u n e d ì- V e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 0,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "MISILISCEMI (Aeroporto BIRGI)",
+       "idx": 1,
+       "arr": "08:05",
+       "dep": "08:05"
+      },
+      {
+       "stop": "CARINI (Aeroporto PUNTA RAISI)",
+       "idx": 2,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 3,
+       "arr": "10:00",
+       "dep": "10:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.A2-5142",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "B S a ba t o e D o m e n i c a"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 0,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "MISILISCEMI (Aeroporto BIRGI)",
+       "idx": 1,
+       "arr": "08:50",
+       "dep": "08:50"
+      },
+      {
+       "stop": "CARINI (Aeroporto PUNTA RAISI)",
+       "idx": 2,
+       "arr": "10:00",
+       "dep": "10:00"
+      },
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 3,
+       "arr": "10:45",
+       "dep": "10:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.A3-5143",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "G i o r n a l i e ra e sc l u s a 1 f e s t i v i t à"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 0,
+       "arr": "10:00",
+       "dep": "10:00"
+      },
+      {
+       "stop": "MISILISCEMI (Aeroporto BIRGI)",
+       "idx": 1,
+       "arr": "10:20",
+       "dep": "10:20"
+      },
+      {
+       "stop": "CARINI (Aeroporto PUNTA RAISI)",
+       "idx": 2,
+       "arr": "11:30",
+       "dep": "11:30"
+      },
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 3,
+       "arr": "12:15",
+       "dep": "12:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.A4-5145",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "A Me r c o le d ì e S a b a t o F e r i a le"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 0,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "MISILISCEMI (Aeroporto BIRGI)",
+       "idx": 1,
+       "arr": "12:50",
+       "dep": "12:50"
+      },
+      {
+       "stop": "CARINI (Aeroporto PUNTA RAISI)",
+       "idx": 2,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 3,
+       "arr": "14:45",
+       "dep": "14:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.A5-5145",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "B Lunedì, M a r t e d ì , G i o v e d ì , V e n e r d ì e Domenica"
+     },
+     "reverse": false,
+     "valid": false,
+     "stops": [
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 0,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "MISILISCEMI (Aeroporto BIRGI)",
+       "idx": 1,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "CARINI (Aeroporto PUNTA RAISI)",
+       "idx": 2,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 3,
+       "arr": "15:15",
+       "dep": "15:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.A6-8081",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "F e ri a l e lu n e d ì- v e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 0,
+       "arr": "17:45",
+       "dep": "17:45"
+      },
+      {
+       "stop": "MISILISCEMI (Aeroporto BIRGI)",
+       "idx": 1,
+       "arr": "18:05",
+       "dep": "18:05"
+      },
+      {
+       "stop": "CARINI (Aeroporto PUNTA RAISI)",
+       "idx": 2,
+       "arr": "19:15",
+       "dep": "19:15"
+      },
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 3,
+       "arr": "20:00",
+       "dep": "20:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.A7-8080",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "A G i o n r a l i e r o e s c l u s o i l V e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 0,
+       "arr": "19:30",
+       "dep": "19:30"
+      },
+      {
+       "stop": "MISILISCEMI (Aeroporto BIRGI)",
+       "idx": 1,
+       "arr": "19:50",
+       "dep": "19:50"
+      },
+      {
+       "stop": "CARINI (Aeroporto PUNTA RAISI)",
+       "idx": 2,
+       "arr": "21:00",
+       "dep": "21:00"
+      },
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 3,
+       "arr": "21:45",
+       "dep": "21:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.A8-8080",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "B DOMENICALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 0,
+       "arr": "20:00",
+       "dep": "20:00"
+      },
+      {
+       "stop": "MISILISCEMI (Aeroporto BIRGI)",
+       "idx": 1,
+       "arr": "20:20",
+       "dep": "20:20"
+      },
+      {
+       "stop": "CARINI (Aeroporto PUNTA RAISI)",
+       "idx": 2,
+       "arr": "21:30",
+       "dep": "21:30"
+      },
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 3,
+       "arr": "22:15",
+       "dep": "22:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.A9-8079",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "A G i o n r a l i e r o e s c l u s o i l V e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 0,
+       "arr": "21:00",
+       "dep": "21:00"
+      },
+      {
+       "stop": "MISILISCEMI (Aeroporto BIRGI)",
+       "idx": 1,
+       "arr": "21:20",
+       "dep": "21:20"
+      },
+      {
+       "stop": "CARINI (Aeroporto PUNTA RAISI)",
+       "idx": 2,
+       "arr": "22:30",
+       "dep": "22:30"
+      },
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 3,
+       "arr": "23:15",
+       "dep": "23:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.A10-8079",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "B A) B) A) B) A) B) A) B) DOMENICALE"
+     },
+     "reverse": false,
+     "valid": false,
+     "stops": [
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 0,
+       "arr": "22:00",
+       "dep": "22:00"
+      },
+      {
+       "stop": "MISILISCEMI (Aeroporto BIRGI)",
+       "idx": 1,
+       "arr": "22:20",
+       "dep": "22:20"
+      },
+      {
+       "stop": "CARINI (Aeroporto PUNTA RAISI)",
+       "idx": 2,
+       "arr": "23:30",
+       "dep": "23:30"
+      },
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 3,
+       "arr": "00:15",
+       "dep": "00:15"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "PALERMO (P.zza FAZELLO)",
+    "CARINI (Aeroporto PUNTA RAISI)",
+    "MISILISCEMI (Aeroporto BIRGI)",
+    "MARSALA (via FAZIO)"
+   ],
+   "kms": [
+    0.0,
+    34.45,
+    129.45,
+    145.7
+   ],
+   "trips": [
+    {
+     "corsa": "p11.R1-8083",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "A) B) G i o r n a l i e ra e sc l u s a 1 f e s t i v i t à"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 0,
+       "arr": "06:15",
+       "dep": "06:15"
+      },
+      {
+       "stop": "CARINI (Aeroporto PUNTA RAISI)",
+       "idx": 1,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "MISILISCEMI (Aeroporto BIRGI)",
+       "idx": 2,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 3,
+       "arr": "08:30",
+       "dep": "08:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.R2-5148",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "A"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 0,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "CARINI (Aeroporto PUNTA RAISI)",
+       "idx": 1,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "MISILISCEMI (Aeroporto BIRGI)",
+       "idx": 2,
+       "arr": "10:25",
+       "dep": "10:25"
+      },
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 3,
+       "arr": "10:45",
+       "dep": "10:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.R3-5148",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "B F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 0,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "CARINI (Aeroporto PUNTA RAISI)",
+       "idx": 1,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "MISILISCEMI (Aeroporto BIRGI)",
+       "idx": 2,
+       "arr": "10:40",
+       "dep": "10:40"
+      },
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 3,
+       "arr": "11:00",
+       "dep": "11:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.R4-8082",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "F e ri a l e lu n e d ì- v e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 0,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "CARINI (Aeroporto PUNTA RAISI)",
+       "idx": 1,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "MISILISCEMI (Aeroporto BIRGI)",
+       "idx": 2,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 3,
+       "arr": "14:45",
+       "dep": "14:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.R5-8084",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "G i o r n a l i e ra e sc l u s a 1 f e s t i v i t à"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 0,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "CARINI (Aeroporto PUNTA RAISI)",
+       "idx": 1,
+       "arr": "15:15",
+       "dep": "15:15"
+      },
+      {
+       "stop": "MISILISCEMI (Aeroporto BIRGI)",
+       "idx": 2,
+       "arr": "16:25",
+       "dep": "16:25"
+      },
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 3,
+       "arr": "16:45",
+       "dep": "16:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.R6-5149",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "G i o r n a l i e ra e sc l u s a 1 f e s t i v i t à"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 0,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "CARINI (Aeroporto PUNTA RAISI)",
+       "idx": 1,
+       "arr": "17:15",
+       "dep": "17:15"
+      },
+      {
+       "stop": "MISILISCEMI (Aeroporto BIRGI)",
+       "idx": 2,
+       "arr": "18:25",
+       "dep": "18:25"
+      },
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 3,
+       "arr": "18:45",
+       "dep": "18:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p11.R7-5151",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "G i o r n a l i e ra e sc l u s a 1 f e s t i v i t à"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 0,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "CARINI (Aeroporto PUNTA RAISI)",
+       "idx": 1,
+       "arr": "19:15",
+       "dep": "19:15"
+      },
+      {
+       "stop": "MISILISCEMI (Aeroporto BIRGI)",
+       "idx": 2,
+       "arr": "20:25",
+       "dep": "20:25"
+      },
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 3,
+       "arr": "20:45",
+       "dep": "20:45"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

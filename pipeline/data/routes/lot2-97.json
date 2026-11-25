@@ -1,0 +1,912 @@
+{
+ "operator": "Consorzio Stabile Siciliano Mobilità Est (Lotto 2)",
+ "route_id": "lot2-97",
+ "name": "PALMA DI MONTECHIARO - LICATA - GELA - AEROPORTO FONTANAROSSA - CATANIA",
+ "short_name": "97",
+ "source": "orario_b2d178879e.pdf#p49",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "N I S C E M I",
+    "CA LT A G IR O NE",
+    "C A L T A G I R O N E",
+    "P A L A G O N I A",
+    "R A M A C C A",
+    "SIGONELLA (NAF 2)",
+    "AERO P O R T O C A T ANIA",
+    "C A T A N I A"
+   ],
+   "kms": [
+    5.0,
+    6.0,
+    6.0,
+    null,
+    null,
+    null,
+    7.0,
+    7.0
+   ],
+   "trips": [
+    {
+     "corsa": "p49.T1R2-927",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "3 F E R I A L E da Lun e d ì a V e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CA LT A G IR O NE",
+       "idx": 1,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "C A L T A G I R O N E",
+       "idx": 2,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "SIGONELLA (NAF 2)",
+       "idx": 5,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "AERO P O R T O C A T ANIA",
+       "idx": 6,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "C A T A N I A",
+       "idx": 7,
+       "arr": "08:55",
+       "dep": "08:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p49.T1R3-53006",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "5 F E R I A L E d a L u n e d ì a V e n e r d ì n e l P e r i o d o S c o la t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C A L T A G I R O N E",
+       "idx": 2,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "SIGONELLA (NAF 2)",
+       "idx": 5,
+       "arr": "09:20",
+       "dep": "09:20"
+      },
+      {
+       "stop": "AERO P O R T O C A T ANIA",
+       "idx": 6,
+       "arr": "09:45",
+       "dep": "09:45"
+      },
+      {
+       "stop": "C A T A N I A",
+       "idx": 7,
+       "arr": "09:55",
+       "dep": "09:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p49.T1R4-53009",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "7 F E R I A L E d a L u n e d ì a V e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "N I S C E M I",
+       "idx": 0,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "CA LT A G IR O NE",
+       "idx": 1,
+       "arr": "09:40",
+       "dep": "09:40"
+      },
+      {
+       "stop": "C A L T A G I R O N E",
+       "idx": 2,
+       "arr": "09:45",
+       "dep": "09:45"
+      },
+      {
+       "stop": "SIGONELLA (NAF 2)",
+       "idx": 5,
+       "arr": "10:20",
+       "dep": "10:20"
+      },
+      {
+       "stop": "AERO P O R T O C A T ANIA",
+       "idx": 6,
+       "arr": "10:45",
+       "dep": "10:45"
+      },
+      {
+       "stop": "C A T A N I A",
+       "idx": 7,
+       "arr": "10:55",
+       "dep": "10:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p49.T1R5-53005",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "9 F E R I A L E d a L u n e d ì a V e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C A L T A G I R O N E",
+       "idx": 2,
+       "arr": "10:45",
+       "dep": "10:45"
+      },
+      {
+       "stop": "SIGONELLA (NAF 2)",
+       "idx": 5,
+       "arr": "11:20",
+       "dep": "11:20"
+      },
+      {
+       "stop": "AERO P O R T O C A T ANIA",
+       "idx": 6,
+       "arr": "11:45",
+       "dep": "11:45"
+      },
+      {
+       "stop": "C A T A N I A",
+       "idx": 7,
+       "arr": "11:55",
+       "dep": "11:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p49.T1R6-53004",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "C O R S E 11 F E R I A LE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C A L T A G I R O N E",
+       "idx": 2,
+       "arr": "11:45",
+       "dep": "11:45"
+      },
+      {
+       "stop": "SIGONELLA (NAF 2)",
+       "idx": 5,
+       "arr": "12:20",
+       "dep": "12:20"
+      },
+      {
+       "stop": "AERO P O R T O C A T ANIA",
+       "idx": 6,
+       "arr": "12:45",
+       "dep": "12:45"
+      },
+      {
+       "stop": "C A T A N I A",
+       "idx": 7,
+       "arr": "12:55",
+       "dep": "12:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p49.T1R7-53008",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "13 F E R I A L E da Lun e d ì a V e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "N I S C E M I",
+       "idx": 0,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "CA LT A G IR O NE",
+       "idx": 1,
+       "arr": "12:40",
+       "dep": "12:40"
+      },
+      {
+       "stop": "C A L T A G I R O N E",
+       "idx": 2,
+       "arr": "12:45",
+       "dep": "12:45"
+      },
+      {
+       "stop": "SIGONELLA (NAF 2)",
+       "idx": 5,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "AERO P O R T O C A T ANIA",
+       "idx": 6,
+       "arr": "13:45",
+       "dep": "13:45"
+      },
+      {
+       "stop": "C A T A N I A",
+       "idx": 7,
+       "arr": "13:55",
+       "dep": "13:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p49.T1R8-968",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "15 F E R I A L E n e l P e r i o d o S c o l a t ic o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C A L T A G I R O N E",
+       "idx": 2,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "P A L A G O N I A",
+       "idx": 3,
+       "arr": "14:30",
+       "dep": "14:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p49.T1R9-53015",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "17 F E R I A L E d a L u n e d ì a V e n e r d ì n e l P e r i o d o S c o l a t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "P A L A G O N I A",
+       "idx": 3,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "R A M A C C A",
+       "idx": 4,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "AERO P O R T O C A T ANIA",
+       "idx": 6,
+       "arr": "15:35",
+       "dep": "15:35"
+      },
+      {
+       "stop": "C A T A N I A",
+       "idx": 7,
+       "arr": "15:45",
+       "dep": "15:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p49.T1R10-53007",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "19 F E R I A L E d a L u n e d ì a V e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "N I S C E M I",
+       "idx": 0,
+       "arr": "17:00",
+       "dep": "17:00"
+      },
+      {
+       "stop": "CA LT A G IR O NE",
+       "idx": 1,
+       "arr": "17:40",
+       "dep": "17:40"
+      },
+      {
+       "stop": "C A L T A G I R O N E",
+       "idx": 2,
+       "arr": "17:45",
+       "dep": "17:45"
+      },
+      {
+       "stop": "SIGONELLA (NAF 2)",
+       "idx": 5,
+       "arr": "18:20",
+       "dep": "18:20"
+      },
+      {
+       "stop": "AERO P O R T O C A T ANIA",
+       "idx": 6,
+       "arr": "18:45",
+       "dep": "18:45"
+      },
+      {
+       "stop": "C A T A N I A",
+       "idx": 7,
+       "arr": "18:55",
+       "dep": "18:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p49.T1R11-929",
+     "service": {
+      "days": "sun-holidays",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "21 F E S T IV O n e l p e r i o d o s c ol a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "N I S C E M I",
+       "idx": 0,
+       "arr": "17:00",
+       "dep": "17:00"
+      },
+      {
+       "stop": "CA LT A G IR O NE",
+       "idx": 1,
+       "arr": "17:40",
+       "dep": "17:40"
+      },
+      {
+       "stop": "C A L T A G I R O N E",
+       "idx": 2,
+       "arr": "17:45",
+       "dep": "17:45"
+      },
+      {
+       "stop": "SIGONELLA (NAF 2)",
+       "idx": 5,
+       "arr": "18:20",
+       "dep": "18:20"
+      },
+      {
+       "stop": "AERO P O R T O C A T ANIA",
+       "idx": 6,
+       "arr": "18:45",
+       "dep": "18:45"
+      },
+      {
+       "stop": "C A T A N I A",
+       "idx": 7,
+       "arr": "18:55",
+       "dep": "18:55"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "C A T A N I A",
+    "AERO P O R T O C A T ANIA",
+    "SIGONELLA (NAF 2)",
+    "R A M A C C A",
+    "P A L A G O N I A",
+    "C A L T A G I R O N E",
+    "CA LT A G IR O NE",
+    "N I S C E M I"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null,
+    8.0,
+    9.0,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p49.T2R1-970",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "Terminal B u s V i a A r c h i m e d e 2 4 F E R I A L E F E R IA L E d a L u n e d ì a V e n e r d ì nel Pe ri od o S c o l a t ic o n e l P e r i o d o S c o l a t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C A T A N I A",
+       "idx": 0,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "AERO P O R T O C A T ANIA",
+       "idx": 1,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "SIGONELLA (NAF 2)",
+       "idx": 2,
+       "arr": "09:05",
+       "dep": "09:05"
+      },
+      {
+       "stop": "C A L T A G I R O N E",
+       "idx": 5,
+       "arr": "09:40",
+       "dep": "09:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p49.T2R2-53012",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "6 F E R I A L E d a L u n e d ì a V e n e r d ì"
+     },
+     "reverse": false,
+     "valid": false,
+     "stops": [
+      {
+       "stop": "C A T A N I A",
+       "idx": 0,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "AERO P O R T O C A T ANIA",
+       "idx": 1,
+       "arr": "09:40",
+       "dep": "09:40"
+      },
+      {
+       "stop": "SIGONELLA (NAF 2)",
+       "idx": 2,
+       "arr": "10:05",
+       "dep": "10:05"
+      },
+      {
+       "stop": "C A L T A G I R O N E",
+       "idx": 5,
+       "arr": "10:40",
+       "dep": "10:40"
+      },
+      {
+       "stop": "CA LT A G IR O NE",
+       "idx": 6,
+       "arr": "10:45",
+       "dep": "10:45"
+      },
+      {
+       "stop": "N I S C E M I",
+       "idx": 7,
+       "arr": "01:25",
+       "dep": "01:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p49.T2R3-53011",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "8 F E R I A L E d a L u n e d ì a V e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C A T A N I A",
+       "idx": 0,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "AERO P O R T O C A T ANIA",
+       "idx": 1,
+       "arr": "12:40",
+       "dep": "12:40"
+      },
+      {
+       "stop": "SIGONELLA (NAF 2)",
+       "idx": 2,
+       "arr": "13:05",
+       "dep": "13:05"
+      },
+      {
+       "stop": "C A L T A G I R O N E",
+       "idx": 5,
+       "arr": "13:40",
+       "dep": "13:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p49.T2R4-1012",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "10 F E R I A L E d a L u n e d ì a V e n e r d ì n e l P e r i o d o S c o l a t ic o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C A T A N I A",
+       "idx": 0,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "AERO P O R T O C A T ANIA",
+       "idx": 1,
+       "arr": "12:40",
+       "dep": "12:40"
+      },
+      {
+       "stop": "R A M A C C A",
+       "idx": 3,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "P A L A G O N I A",
+       "idx": 4,
+       "arr": "13:45",
+       "dep": "13:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p49.T2R5-53010",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "C O R S E 12 F E R I A L E"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C A T A N I A",
+       "idx": 0,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "AERO P O R T O C A T ANIA",
+       "idx": 1,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "SIGONELLA (NAF 2)",
+       "idx": 2,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "C A L T A G I R O N E",
+       "idx": 5,
+       "arr": "14:40",
+       "dep": "14:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p49.T2R6-955",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "14 F E R I A L E da Lun e d ì a V e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C A T A N I A",
+       "idx": 0,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "AERO P O R T O C A T ANIA",
+       "idx": 1,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "SIGONELLA (NAF 2)",
+       "idx": 2,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "C A L T A G I R O N E",
+       "idx": 5,
+       "arr": "15:40",
+       "dep": "15:40"
+      },
+      {
+       "stop": "CA LT A G IR O NE",
+       "idx": 6,
+       "arr": "15:45",
+       "dep": "15:45"
+      },
+      {
+       "stop": "N I S C E M I",
+       "idx": 7,
+       "arr": "16:25",
+       "dep": "16:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p49.T2R7-53013",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "16 F E R I A L E d a L u n e d ì a V e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C A T A N I A",
+       "idx": 0,
+       "arr": "15:30",
+       "dep": "15:30"
+      },
+      {
+       "stop": "AERO P O R T O C A T ANIA",
+       "idx": 1,
+       "arr": "15:40",
+       "dep": "15:40"
+      },
+      {
+       "stop": "SIGONELLA (NAF 2)",
+       "idx": 2,
+       "arr": "16:05",
+       "dep": "16:05"
+      },
+      {
+       "stop": "C A L T A G I R O N E",
+       "idx": 5,
+       "arr": "16:40",
+       "dep": "16:40"
+      },
+      {
+       "stop": "CA LT A G IR O NE",
+       "idx": 6,
+       "arr": "16:45",
+       "dep": "16:45"
+      },
+      {
+       "stop": "N I S C E M I",
+       "idx": 7,
+       "arr": "17:25",
+       "dep": "17:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p49.T2R8-966",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "18 F E R I A LE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C A T A N I A",
+       "idx": 0,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "AERO P O R T O C A T ANIA",
+       "idx": 1,
+       "arr": "17:40",
+       "dep": "17:40"
+      },
+      {
+       "stop": "SIGONELLA (NAF 2)",
+       "idx": 2,
+       "arr": "18:05",
+       "dep": "18:05"
+      },
+      {
+       "stop": "C A L T A G I R O N E",
+       "idx": 5,
+       "arr": "18:40",
+       "dep": "18:40"
+      },
+      {
+       "stop": "CA LT A G IR O NE",
+       "idx": 6,
+       "arr": "18:45",
+       "dep": "18:45"
+      },
+      {
+       "stop": "N I S C E M I",
+       "idx": 7,
+       "arr": "19:25",
+       "dep": "19:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p49.T2R9-952",
+     "service": {
+      "days": "sun-holidays",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "20 F E S T IV O nel per io d o s c ol a s t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C A T A N I A",
+       "idx": 0,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "AERO P O R T O C A T ANIA",
+       "idx": 1,
+       "arr": "17:40",
+       "dep": "17:40"
+      },
+      {
+       "stop": "SIGONELLA (NAF 2)",
+       "idx": 2,
+       "arr": "18:05",
+       "dep": "18:05"
+      },
+      {
+       "stop": "C A L T A G I R O N E",
+       "idx": 5,
+       "arr": "18:40",
+       "dep": "18:40"
+      },
+      {
+       "stop": "CA LT A G IR O NE",
+       "idx": 6,
+       "arr": "18:45",
+       "dep": "18:45"
+      },
+      {
+       "stop": "N I S C E M I",
+       "idx": 7,
+       "arr": "19:25",
+       "dep": "19:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p49.T2R10-53014",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "22 F E R I A L E d a L u n e d ì a V e n e r d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C A T A N I A",
+       "idx": 0,
+       "arr": "19:00",
+       "dep": "19:00"
+      },
+      {
+       "stop": "AERO P O R T O C A T ANIA",
+       "idx": 1,
+       "arr": "19:10",
+       "dep": "19:10"
+      },
+      {
+       "stop": "SIGONELLA (NAF 2)",
+       "idx": 2,
+       "arr": "19:35",
+       "dep": "19:35"
+      },
+      {
+       "stop": "C A L T A G I R O N E",
+       "idx": 5,
+       "arr": "20:10",
+       "dep": "20:10"
+      },
+      {
+       "stop": "CA LT A G IR O NE",
+       "idx": 6,
+       "arr": "20:15",
+       "dep": "20:15"
+      },
+      {
+       "stop": "N I S C E M I",
+       "idx": 7,
+       "arr": "20:55",
+       "dep": "20:55"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

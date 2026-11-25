@@ -13,7 +13,8 @@ ROUTES = os.path.join(ROOT, 'data', 'routes')
 CACHE_F = os.path.join(ROOT, 'data', 'geocode-cache.json')
 OVERRIDES_F = os.path.join(ROOT, 'geocode-overrides.json')
 
-UA = 'ManGO-IT-gtfs-pipeline/0.1 (personal project; miconsig@gmail.com)'
+# Nominatim asks for an identifying UA; the contact address comes from the environment, not the repo
+UA = 'ManGO-IT-gtfs-pipeline/0.1 (+https://it.mangonese.dev' + ('; ' + os.environ['MANGOIT_CONTACT'] if os.environ.get('MANGOIT_CONTACT') else '') + ')'
 SICILY_VIEWBOX = '11.9,38.9,15.8,36.5'  # lon,lat,lon,lat
 SICILY = dict(latMin=36.5, latMax=38.9, lonMin=11.9, lonMax=15.8)
 
@@ -79,8 +80,16 @@ def geocode_name(name):
     town_q = re.sub(r'\bBV\.?\b|\bBIVIO\b', '', town, flags=re.I).strip()
     result = None
     if detail and not re.match(r'^ss\s*\d', detail, re.I):
-        hit = nominatim(f'{detail}, {town_q}, Sicilia')
-        if hit: result = {'lat': hit[0], 'lon': hit[1], 'precision': 'street'}
+        # "Via Libertà n. 106 - ang. Viale Lazio" finds nothing; "Via Libertà 106" does. The
+        # simplified street goes first, the sheet's full wording second (lot sheets, 2026-11-25).
+        short = re.split(r'\s+-\s+|\s+ang\.?\s+|/', re.sub(r'\bn\.\s*', '', detail, flags=re.I))[0].strip(' ,')
+        for q in dict.fromkeys([short, detail]):
+            if not q:
+                continue
+            hit = nominatim(f'{q}, {town_q}, Sicilia')
+            if hit:
+                result = {'lat': hit[0], 'lon': hit[1], 'precision': 'street'}
+                break
     if not result and town_q:
         hit = nominatim(f'{town_q}, Sicilia')
         if hit: result = {'lat': hit[0], 'lon': hit[1], 'precision': 'town'}
@@ -151,25 +160,112 @@ def interpolate(missing_idx, coords, kms, mins=None):
             'precision': 'interpolated'}
 
 
+def hav_km(a, b):
+    import math
+    la1, lo1, la2, lo2 = map(math.radians, (a['lat'], a['lon'], b['lat'], b['lon']))
+    h = math.sin((la2 - la1) / 2) ** 2 + math.cos(la1) * math.cos(la2) * math.sin((lo2 - lo1) / 2) ** 2
+    return 2 * 6371 * math.asin(math.sqrt(h))
+
+
+def town_fallback(name):
+    """A stop vetting dropped and nothing could interpolate: its geocode, unless that is a street
+    match far from its own town, in which case the town centre is nearer the truth."""
+    g = geocode_name(name)
+    if g and g.get('precision') == 'street':
+        centre = geocode_name(split_stop(name)[0])
+        if centre and hav_km(g, centre) > 8:
+            return dict(centre, precision='town')
+    return g
+
+
+def km_vet(names, coords, kms, mins=None):
+    """Lot sheets (lots_parse.py) give km per stop, or at least exact times, which beat a weak
+    geocode. Each pair of neighbouring placed stops must be reachable: within 1.4 x the km
+    difference + 3 km, or (no km) 110 km/h over the timetable minutes + 2 km. While a pair breaks
+    that, the less trustworthy stop of the worst pair is dropped so interpolation places it."""
+    out = list(coords)
+    for i, (n, c) in enumerate(zip(names, out)):
+        if c and c.get('precision') == 'town' and split_stop(n)[1] and kms[i] is not None:
+            out[i] = None
+        elif c and c.get('precision') == 'street':
+            # "PALERMO (Via Roma n. 265)" matched another town's Via Roma, 55 km off
+            centre = geocode_name(split_stop(n)[0])
+            if centre and hav_km(c, centre) > 8:
+                out[i] = None  # interpolated by km; town_fallback() if nothing to interpolate from
+    rank ={'override': 3, 'street': 2, 'interpolated': 1, 'town': 0}
+
+    def limit(i, j):
+        if kms[i] is not None and kms[j] is not None:
+            return abs(kms[i] - kms[j]) * 1.4 + 3
+        if mins and mins[i] is not None and mins[j] is not None:
+            return abs(mins[j] - mins[i]) / 60 * 110 + 2
+        return None
+
+    def breaks(i, j):
+        lim = limit(i, j)
+        return lim is not None and hav_km(out[i], out[j]) > lim
+
+    for _ in range(len(out)):
+        placed = [i for i, c in enumerate(out) if c]
+        if len(placed) <= 2:
+            break
+        worst = None
+        for i, j in zip(placed, placed[1:]):
+            lim = limit(i, j)
+            if lim is None:
+                continue
+            over = hav_km(out[i], out[j]) - lim
+            if over > 0 and (worst is None or over > worst[0]):
+                worst = (over, i, j)
+        if not worst:
+            break
+        _, i, j = worst
+        ri, rj = rank.get(out[i].get('precision'), 0), rank.get(out[j].get('precision'), 0)
+        if ri != rj:
+            out[i if ri < rj else j] = None
+        else:  # same trust: drop the one that also disagrees with its other neighbour
+            p = placed.index(i)
+            before = placed[p - 1] if p > 0 else None
+            out[i if before is not None and breaks(before, i) else j] = None
+    return out
+
+
 def main():
     stops_out = {}
-    for f in sorted(os.listdir(ROUTES)):
+    # Stops are shared by name across routes and the first placement wins. The older routes go
+    # first so a lot sheet's vetting can never move a stop they already use ("MASCALI").
+    files = sorted(os.listdir(ROUTES), key=lambda f: (f.startswith('lot'), f))
+    # routes the lot sheets replaced (dedupe_lots.py) are not emitted, so they place no stops
+    sup_path = os.path.join(ROOT, 'data', 'lots-superseded.json')
+    superseded = json.load(open(sup_path, encoding='utf-8')) if os.path.exists(sup_path) else {}
+    for f in files:
         route = apply_renames(json.load(open(os.path.join(ROUTES, f), encoding='utf-8')))
+        if route.get('route_id') in superseded:
+            continue
         if route.get('coords') == 'external':
             continue  # SAIS et al.: exact coords ship in data/sais-stop-coords.json
         for d in route['directions']:
             names = d['stops']
-            kms = [None] * len(names)
-            # km isn't carried per stop here; interpolate() falls back to
+            # lot sheets (lots_parse.py) carry km per stop; the others don't, and
+            kms = d.get('kms') or [None] * len(names)
+            # where km is missing interpolate() falls back to
             # elapsed-time proportion from the trips, then index spacing
             mins = rep_minutes(d)
             coords = []
             for n in names:
                 g = geocode_name(n)
                 coords.append(g)
+            if d.get('kms'):
+                # a stop another route already placed keeps that place, and is trusted
+                keyed = [re.sub(r'\s+', ' ', n.upper().strip()) for n in names]
+                coords = [dict(stops_out[k], precision='override') if stops_out.get(k) else c for k, c in zip(keyed, coords)]
+                coords = km_vet(names, coords, kms, mins)
             for i, (n, c) in enumerate(zip(names, coords)):
                 if c is None:
                     coords[i] = interpolate(i, coords, kms, mins)
+            if d.get('kms'):
+                # a stop km vetting dropped and nothing could interpolate keeps its geocode
+                coords = [c if c is not None else town_fallback(n) for n, c in zip(names, coords)]
             for n, c in zip(names, coords):
                 key = re.sub(r'\s+', ' ', n.upper().strip())
                 if key not in stops_out or (c and stops_out[key] is None):

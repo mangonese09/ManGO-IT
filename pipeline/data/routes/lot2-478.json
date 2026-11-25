@@ -1,0 +1,100 @@
+{
+ "operator": "Consorzio Stabile Siciliano Mobilità Est (Lotto 2)",
+ "route_id": "lot2-478",
+ "name": "PALAZZOLO ACREIDE - CANICATTINI BAGNI - AEROPORTO F. ROSSA - CATANIA",
+ "short_name": "478",
+ "source": "orario_b2d178879e.pdf#p91",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "CATANIA Terminal Bus Via Archimede",
+    "Aeroporto Catania - Fontanarossa",
+    "Canicattini B. (via Vittorio Emanuele)",
+    "Palazzolo (piazza Senatore Italia)"
+   ],
+   "kms": [
+    0.0,
+    5.0,
+    70.5,
+    90.0
+   ],
+   "trips": [
+    {
+     "corsa": "p91.R1-8330",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "C O R S E 1 3 5 7 9 2 - - - - - FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA Terminal Bus Via Archimede",
+       "idx": 0,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "Aeroporto Catania - Fontanarossa",
+       "idx": 1,
+       "arr": "12:20",
+       "dep": "12:20"
+      },
+      {
+       "stop": "Canicattini B. (via Vittorio Emanuele)",
+       "idx": 2,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "Palazzolo (piazza Senatore Italia)",
+       "idx": 3,
+       "arr": "14:10",
+       "dep": "14:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p91.R2-7176",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "C O R S E 4 6 8 10 F E R I A L E - - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA Terminal Bus Via Archimede",
+       "idx": 0,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "Aeroporto Catania - Fontanarossa",
+       "idx": 1,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "Canicattini B. (via Vittorio Emanuele)",
+       "idx": 2,
+       "arr": "15:40",
+       "dep": "15:40"
+      },
+      {
+       "stop": "Palazzolo (piazza Senatore Italia)",
+       "idx": 3,
+       "arr": "16:10",
+       "dep": "16:10"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

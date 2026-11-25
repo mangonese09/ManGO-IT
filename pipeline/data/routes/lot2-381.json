@@ -1,0 +1,190 @@
+{
+ "operator": "Consorzio Stabile Siciliano Mobilità Est (Lotto 2)",
+ "route_id": "lot2-381",
+ "name": "CALTAGIRONE - PIAZZA ARMERINA",
+ "short_name": "381",
+ "source": "orario_b2d178879e.pdf#p77",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "CALTAGIRONE (Autostazione)",
+    "SAN MICHELE GANZARIA (Via Nazionale)",
+    "MIRABELLA IMBACCARI (Via Roma)",
+    "PIAZZA ARMERINA (P.zza Sen. Marescalchi)"
+   ],
+   "kms": [
+    0.0,
+    14.0,
+    26.0,
+    40.0
+   ],
+   "trips": [
+    {
+     "corsa": "p77.A1-5442",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "1 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 0,
+       "arr": "06:30",
+       "dep": "06:30"
+      },
+      {
+       "stop": "SAN MICHELE GANZARIA (Via Nazionale)",
+       "idx": 1,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "MIRABELLA IMBACCARI (Via Roma)",
+       "idx": 2,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (P.zza Sen. Marescalchi)",
+       "idx": 3,
+       "arr": "07:50",
+       "dep": "07:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p77.A2-5447",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "C O R S E 3 5 7 9 F E R I A L E - - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 0,
+       "arr": "12:15",
+       "dep": "12:15"
+      },
+      {
+       "stop": "SAN MICHELE GANZARIA (Via Nazionale)",
+       "idx": 1,
+       "arr": "12:45",
+       "dep": "12:45"
+      },
+      {
+       "stop": "MIRABELLA IMBACCARI (Via Roma)",
+       "idx": 2,
+       "arr": "13:05",
+       "dep": "13:05"
+      },
+      {
+       "stop": "PIAZZA ARMERINA (P.zza Sen. Marescalchi)",
+       "idx": 3,
+       "arr": "13:35",
+       "dep": "13:35"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "PIAZZA ARMERINA (P.zza Sen. Marescalchi)",
+    "MIRABELLA IMBACCARI (Via Roma)",
+    "SAN MICHELE GANZARIA (Via Nazionale)",
+    "CALTAGIRONE (Autostazione)"
+   ],
+   "kms": [
+    0.0,
+    14.0,
+    26.0,
+    40.0
+   ],
+   "trips": [
+    {
+     "corsa": "p77.R1-5456",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "2 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PIAZZA ARMERINA (P.zza Sen. Marescalchi)",
+       "idx": 0,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "MIRABELLA IMBACCARI (Via Roma)",
+       "idx": 1,
+       "arr": "09:45",
+       "dep": "09:45"
+      },
+      {
+       "stop": "SAN MICHELE GANZARIA (Via Nazionale)",
+       "idx": 2,
+       "arr": "10:05",
+       "dep": "10:05"
+      },
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 3,
+       "arr": "10:35",
+       "dep": "10:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p77.R2-5455",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "4 6 8 10 F E R I A L E - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PIAZZA ARMERINA (P.zza Sen. Marescalchi)",
+       "idx": 0,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "MIRABELLA IMBACCARI (Via Roma)",
+       "idx": 1,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "SAN MICHELE GANZARIA (Via Nazionale)",
+       "idx": 2,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 3,
+       "arr": "15:30",
+       "dep": "15:30"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

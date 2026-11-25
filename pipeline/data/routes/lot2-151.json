@@ -1,0 +1,1916 @@
+{
+ "operator": "Consorzio Stabile Siciliano Mobilità Est (Lotto 2)",
+ "route_id": "lot2-151",
+ "name": "ENNA - LEONFORTE - REGALBUTO - CATANIA - TAORMINA - MESSINA",
+ "short_name": "151",
+ "source": "orario_b2d178879e.pdf#p63",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "ENNA (Terminal Bus/Viale Diaz)",
+    "ENNA BASSA",
+    "RAJA",
+    "PIRATO F.S.",
+    "ASSORO (Via Crisa)",
+    "LEONFORTE (Via F.Crispi/P.zza S. Francesco)",
+    "NISSORIA (Circonvalazione Via Licari, 19)",
+    "AGIRA (Circonvalazione Largo Fiera)",
+    "FINAITA",
+    "REGALBUTO (Piazza Mateoti)",
+    "CATENANUVA (Via Vit. Emanuele, 72)",
+    "CATANIA (Fontanarossa)",
+    "CATANIA (Via D'Amico/Archimede) A.",
+    "CATANIA (Via D'Amico/Archimede) P.",
+    "ACIREALE (Piazza Duomo)",
+    "GIARRE (P.zza Duomo/Via Calipoli 236)",
+    "MASCALI (Strada Statale Siculo Orientale 124)",
+    "FIUMEFREDDO (P.zza Chiesa Madre)",
+    "RECANATI (Viale Dionisio-Terminal Bus",
+    "GIARDINI (Via Umberto SS 114/San Giovanni)",
+    "TAORMINA (P.zza L. Pirandelo) A.",
+    "TAORMINA (P.zza L. Pirandelo) P.",
+    "LETOJANNI (Bv. Galodoro SS 114)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p63.T1R1-50170",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "F E R I Ailnaì L Ept vie roi o edd rao sn ceo sa ce lu d n d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "REGALBUTO (Piazza Mateoti)",
+       "idx": 9,
+       "arr": "06:20",
+       "dep": "06:20"
+      },
+      {
+       "stop": "CATENANUVA (Via Vit. Emanuele, 72)",
+       "idx": 10,
+       "arr": "06:35",
+       "dep": "06:35"
+      },
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 11,
+       "arr": "07:05",
+       "dep": "07:05"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 12,
+       "arr": "07:15",
+       "dep": "07:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T1R2-50369",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "F E R I Ailnaì L Ept vie roi o edd rao sn ceo sa ce lu d n d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "REGALBUTO (Piazza Mateoti)",
+       "idx": 9,
+       "arr": "06:40",
+       "dep": "06:40"
+      },
+      {
+       "stop": "CATENANUVA (Via Vit. Emanuele, 72)",
+       "idx": 10,
+       "arr": "06:55",
+       "dep": "06:55"
+      },
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 11,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 12,
+       "arr": "07:35",
+       "dep": "07:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T1R3-50568",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "F E R I Ailnaì L Ept vie roi o edd rao sn ceo sa ce lu d n d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "REGALBUTO (Piazza Mateoti)",
+       "idx": 9,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "CATENANUVA (Via Vit. Emanuele, 72)",
+       "idx": 10,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 11,
+       "arr": "07:50",
+       "dep": "07:50"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 12,
+       "arr": "08:00",
+       "dep": "08:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T1R4",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "Aggiun7ta-129 F E R I Ailnaì L Ept vie roi o edd rao sn ceo sa ce lu d n d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AGIRA (Circonvalazione Largo Fiera)",
+       "idx": 7,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "FINAITA",
+       "idx": 8,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "REGALBUTO (Piazza Mateoti)",
+       "idx": 9,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "CATENANUVA (Via Vit. Emanuele, 72)",
+       "idx": 10,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 11,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 12,
+       "arr": "08:25",
+       "dep": "08:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T1R5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Aggiun9ta-12 F ER IA oinL Epse tirciood o sc la"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "REGALBUTO (Piazza Mateoti)",
+       "idx": 9,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "CATENANUVA (Via Vit. Emanuele, 72)",
+       "idx": 10,
+       "arr": "07:55",
+       "dep": "07:55"
+      },
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 11,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 12,
+       "arr": "08:40",
+       "dep": "08:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T1R6",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "Aggiu1nta-126 F E R I Ailnaì L Ept vie roi o edd rao sn ceo sa ce lu d n d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ASSORO (Via Crisa)",
+       "idx": 4,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "NISSORIA (Circonvalazione Via Licari, 19)",
+       "idx": 6,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "AGIRA (Circonvalazione Largo Fiera)",
+       "idx": 7,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "FINAITA",
+       "idx": 8,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "REGALBUTO (Piazza Mateoti)",
+       "idx": 9,
+       "arr": "07:50",
+       "dep": "07:50"
+      },
+      {
+       "stop": "CATENANUVA (Via Vit. Emanuele, 72)",
+       "idx": 10,
+       "arr": "08:05",
+       "dep": "08:05"
+      },
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 11,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 12,
+       "arr": "08:50",
+       "dep": "08:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T1R7",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Aggiu1n3ta-134 G IOR N A 3dL I El R1°A/4 1a/ A L 1 0"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 11,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 12,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 13,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "RECANATI (Viale Dionisio-Terminal Bus",
+       "idx": 18,
+       "arr": "10:15",
+       "dep": "10:15"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 19,
+       "arr": "10:25",
+       "dep": "10:25"
+      },
+      {
+       "stop": "TAORMINA (P.zza L. Pirandelo) A.",
+       "idx": 20,
+       "arr": "10:40",
+       "dep": "10:40"
+      },
+      {
+       "stop": "TAORMINA (P.zza L. Pirandelo) P.",
+       "idx": 21,
+       "arr": "10:40",
+       "dep": "10:40"
+      },
+      {
+       "stop": "LETOJANNI (Bv. Galodoro SS 114)",
+       "idx": 22,
+       "arr": "10:55",
+       "dep": "10:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T1R8-501562",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "G IOR N A 3dL I El R1°A/4 1a/ A L 1 0"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 11,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 12,
+       "arr": "09:45",
+       "dep": "09:45"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 13,
+       "arr": "09:45",
+       "dep": "09:45"
+      },
+      {
+       "stop": "RECANATI (Viale Dionisio-Terminal Bus",
+       "idx": 18,
+       "arr": "10:30",
+       "dep": "10:30"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 19,
+       "arr": "10:40",
+       "dep": "10:40"
+      },
+      {
+       "stop": "TAORMINA (P.zza L. Pirandelo) A.",
+       "idx": 20,
+       "arr": "10:55",
+       "dep": "10:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T1R9-501756",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "C O G IOR N A 3dL 0aI El9 R1°A/6 A L /"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 11,
+       "arr": "09:45",
+       "dep": "09:45"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 12,
+       "arr": "09:45",
+       "dep": "09:45"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 13,
+       "arr": "09:45",
+       "dep": "09:45"
+      },
+      {
+       "stop": "RECANATI (Viale Dionisio-Terminal Bus",
+       "idx": 18,
+       "arr": "10:30",
+       "dep": "10:30"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 19,
+       "arr": "10:40",
+       "dep": "10:40"
+      },
+      {
+       "stop": "TAORMINA (P.zza L. Pirandelo) A.",
+       "idx": 20,
+       "arr": "10:55",
+       "dep": "10:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T1R10-501964",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "R S E F E R I Ailnaì L Ept vie roi o edd rao sn ceo sa ce lu d n d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus/Viale Diaz)",
+       "idx": 0,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "ENNA BASSA",
+       "idx": 1,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "RAJA",
+       "idx": 2,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "PIRATO F.S.",
+       "idx": 3,
+       "arr": "07:55",
+       "dep": "07:55"
+      },
+      {
+       "stop": "LEONFORTE (Via F.Crispi/P.zza S. Francesco)",
+       "idx": 5,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "NISSORIA (Circonvalazione Via Licari, 19)",
+       "idx": 6,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "AGIRA (Circonvalazione Largo Fiera)",
+       "idx": 7,
+       "arr": "08:35",
+       "dep": "08:35"
+      },
+      {
+       "stop": "FINAITA",
+       "idx": 8,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "REGALBUTO (Piazza Mateoti)",
+       "idx": 9,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "CATENANUVA (Via Vit. Emanuele, 72)",
+       "idx": 10,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 11,
+       "arr": "09:50",
+       "dep": "09:50"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 12,
+       "arr": "10:00",
+       "dep": "10:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T1R11-502161",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "G IOR N A 3dL I El R1°A/4 1a/ A L 1 0"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 11,
+       "arr": "10:00",
+       "dep": "10:00"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 12,
+       "arr": "10:15",
+       "dep": "10:15"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 13,
+       "arr": "10:15",
+       "dep": "10:15"
+      },
+      {
+       "stop": "RECANATI (Viale Dionisio-Terminal Bus",
+       "idx": 18,
+       "arr": "11:00",
+       "dep": "11:00"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 19,
+       "arr": "11:10",
+       "dep": "11:10"
+      },
+      {
+       "stop": "TAORMINA (P.zza L. Pirandelo) A.",
+       "idx": 20,
+       "arr": "11:25",
+       "dep": "11:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T1R12-50235",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "G IOR N A 3dL 0aI El9 R1°A/6 A L /"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 11,
+       "arr": "10:15",
+       "dep": "10:15"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 12,
+       "arr": "10:30",
+       "dep": "10:30"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 13,
+       "arr": "10:30",
+       "dep": "10:30"
+      },
+      {
+       "stop": "RECANATI (Viale Dionisio-Terminal Bus",
+       "idx": 18,
+       "arr": "11:15",
+       "dep": "11:15"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 19,
+       "arr": "11:25",
+       "dep": "11:25"
+      },
+      {
+       "stop": "TAORMINA (P.zza L. Pirandelo) A.",
+       "idx": 20,
+       "arr": "11:40",
+       "dep": "11:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T1R13-502560",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "G IOR N A 3dL I El R1°A/4 1a/ A L 1 0"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 11,
+       "arr": "11:00",
+       "dep": "11:00"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 12,
+       "arr": "11:15",
+       "dep": "11:15"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 13,
+       "arr": "11:15",
+       "dep": "11:15"
+      },
+      {
+       "stop": "RECANATI (Viale Dionisio-Terminal Bus",
+       "idx": 18,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 19,
+       "arr": "12:10",
+       "dep": "12:10"
+      },
+      {
+       "stop": "TAORMINA (P.zza L. Pirandelo) A.",
+       "idx": 20,
+       "arr": "12:25",
+       "dep": "12:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T1R14-502754",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "G IOR N A 3dL 0aI El9 R1°A/6 A L /"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 11,
+       "arr": "11:15",
+       "dep": "11:15"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 13,
+       "arr": "11:30",
+       "dep": "11:30"
+      },
+      {
+       "stop": "RECANATI (Viale Dionisio-Terminal Bus",
+       "idx": 18,
+       "arr": "12:15",
+       "dep": "12:15"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 19,
+       "arr": "12:25",
+       "dep": "12:25"
+      },
+      {
+       "stop": "TAORMINA (P.zza L. Pirandelo) A.",
+       "idx": 20,
+       "arr": "12:40",
+       "dep": "12:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T1R15",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Aggiu2n9ta-123 FER I AEgsLco Els utsoo A"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "REGALBUTO (Piazza Mateoti)",
+       "idx": 9,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "CATENANUVA (Via Vit. Emanuele, 72)",
+       "idx": 10,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 11,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 12,
+       "arr": "14:00",
+       "dep": "14:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T1R16-213311",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 13,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "ACIREALE (Piazza Duomo)",
+       "idx": 14,
+       "arr": "14:35",
+       "dep": "14:35"
+      },
+      {
+       "stop": "GIARRE (P.zza Duomo/Via Calipoli 236)",
+       "idx": 15,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "MASCALI (Strada Statale Siculo Orientale 124)",
+       "idx": 16,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "FIUMEFREDDO (P.zza Chiesa Madre)",
+       "idx": 17,
+       "arr": "15:15",
+       "dep": "15:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T1R17-20382",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ENNA (Terminal Bus/Viale Diaz)",
+       "idx": 0,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "ENNA BASSA",
+       "idx": 1,
+       "arr": "12:35",
+       "dep": "12:35"
+      },
+      {
+       "stop": "RAJA",
+       "idx": 2,
+       "arr": "12:45",
+       "dep": "12:45"
+      },
+      {
+       "stop": "PIRATO F.S.",
+       "idx": 3,
+       "arr": "12:55",
+       "dep": "12:55"
+      },
+      {
+       "stop": "LEONFORTE (Via F.Crispi/P.zza S. Francesco)",
+       "idx": 5,
+       "arr": "13:10",
+       "dep": "13:10"
+      },
+      {
+       "stop": "NISSORIA (Circonvalazione Via Licari, 19)",
+       "idx": 6,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "AGIRA (Circonvalazione Largo Fiera)",
+       "idx": 7,
+       "arr": "13:35",
+       "dep": "13:35"
+      },
+      {
+       "stop": "FINAITA",
+       "idx": 8,
+       "arr": "13:45",
+       "dep": "13:45"
+      },
+      {
+       "stop": "REGALBUTO (Piazza Mateoti)",
+       "idx": 9,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "CATENANUVA (Via Vit. Emanuele, 72)",
+       "idx": 10,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 11,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 12,
+       "arr": "15:00",
+       "dep": "15:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T1R18-933950",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 13,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "ACIREALE (Piazza Duomo)",
+       "idx": 14,
+       "arr": "18:05",
+       "dep": "18:05"
+      },
+      {
+       "stop": "GIARRE (P.zza Duomo/Via Calipoli 236)",
+       "idx": 15,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "MASCALI (Strada Statale Siculo Orientale 124)",
+       "idx": 16,
+       "arr": "18:35",
+       "dep": "18:35"
+      },
+      {
+       "stop": "FIUMEFREDDO (P.zza Chiesa Madre)",
+       "idx": 17,
+       "arr": "18:45",
+       "dep": "18:45"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 19,
+       "arr": "19:00",
+       "dep": "19:00"
+      },
+      {
+       "stop": "TAORMINA (P.zza L. Pirandelo) A.",
+       "idx": 20,
+       "arr": "19:15",
+       "dep": "19:15"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "TAORMINA (P.zza L. Pirandelo) A.",
+    "TAORMINA (P.zza L. Pirandelo) P.",
+    "GIARDINI (Via Umberto SS 114/San Giovanni)",
+    "RECANATI (Viale Dionisio-Terminal Bus",
+    "FIUMEFREDDO (Via P. Piemonte 98)",
+    "MASCALI (Strada Statale Siculo Orientale 124)",
+    "GIARRE (P.zza Duomo/Via Calipoli 236)",
+    "ACIREALE (Piazza Duomo)",
+    "CATANIA (Via D'Amico/Archimede) A.",
+    "CATANIA (Via D'Amico/Archimede) P.",
+    "CATANIA (Fontanarossa)",
+    "CATENANUVA (Via Vit. Emanuele, 72)",
+    "REGALBUTO (Piazza Mateoti)",
+    "FINAITA",
+    "AGIRA (Piazza Garibaldi)",
+    "NISSORIA (Corso V. Emanuele/Chiesa S.Giuseppe)",
+    "ASSORO (Via Crisa)",
+    "LEONFORTE (C.so Umberto/P.zza IV Novembre)",
+    "PIRATO F.S.",
+    "RAJA",
+    "ENNA BASSA",
+    "ENNA (Terminal Bus/Viale Diaz)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    35.0,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p63.T2R1-93272",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "- 183,0 - - 19,0 | S. ALESSIO SICULO (Via Consolare Valeria 64) 186,0 - - 22,0 | S. TERESA RIVA (Pozzo Lazzaro/Via Lungomare 3) - 189,4 - - | | ROCCALUMERA (Via C.Colombo 19) - 193,4 - - | | NIZZA DI SICILIA (P.zza Interdonato) - 195,2 - - | | ALI' TERME (Via Francesco Crispi 316) - 201,7 - - | | SCALETTA ZANCLEA (Piazza Stazione) - MESSINA (Piazza dela Repubblica) - 219,6 - - 55,1 49,6 FERIALE MESSINA (Piazza dela Repubblica) - 0,0 - - 0,0 0,0 - 17,9 - - | | SCALETTA ZANCLEA (Piazza Stazione) - - - 24,4 - - | | ALI' TERME (Via Francesco Crispi 316) - 2 6 , 2 - - | | N IZ Z A D I S IC IL I A ( P . z z a In t e r do n a to ) - - , 3 0 , 2 - - | | R O C C A L U M E R A ( V i a C . C o l o m b o 1 9 ) - - 33,6 - - 33,1 | S.TERESA RIVA (Pozzo Lazzaro/Via Lungomare 3) - 36,6 - - 36,1 | S. ALESSIO SICULO (Via Consolare Valeria 64) - 44,0 - - 43,5 | LETOJANNI (Bv. Galodoro SS 114) -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "06:30",
+       "dep": "06:30"
+      },
+      {
+       "stop": "CATENANUVA (Via Vit. Emanuele, 72)",
+       "idx": 11,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "REGALBUTO (Piazza Mateoti)",
+       "idx": 12,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "FINAITA",
+       "idx": 13,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "AGIRA (Piazza Garibaldi)",
+       "idx": 14,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "NISSORIA (Corso V. Emanuele/Chiesa S.Giuseppe)",
+       "idx": 15,
+       "arr": "07:55",
+       "dep": "07:55"
+      },
+      {
+       "stop": "LEONFORTE (C.so Umberto/P.zza IV Novembre)",
+       "idx": 17,
+       "arr": "08:05",
+       "dep": "08:05"
+      },
+      {
+       "stop": "PIRATO F.S.",
+       "idx": 18,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "RAJA",
+       "idx": 19,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "ENNA BASSA",
+       "idx": 20,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "ENNA (Terminal Bus/Viale Diaz)",
+       "idx": 21,
+       "arr": "08:45",
+       "dep": "08:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T2R2-20264",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "- - - - - - - FERIALE - - - - - - - - - - - - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "FIUMEFREDDO (Via P. Piemonte 98)",
+       "idx": 4,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "MASCALI (Strada Statale Siculo Orientale 124)",
+       "idx": 5,
+       "arr": "07:05",
+       "dep": "07:05"
+      },
+      {
+       "stop": "GIARRE (P.zza Duomo/Via Calipoli 236)",
+       "idx": 6,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 8,
+       "arr": "08:05",
+       "dep": "08:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T2R3-20469",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "- - - - - - - FERIALE - - - - - - - - - - - - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TAORMINA (P.zza L. Pirandelo) P.",
+       "idx": 1,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 2,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "FIUMEFREDDO (Via P. Piemonte 98)",
+       "idx": 4,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "MASCALI (Strada Statale Siculo Orientale 124)",
+       "idx": 5,
+       "arr": "09:10",
+       "dep": "09:10"
+      },
+      {
+       "stop": "GIARRE (P.zza Duomo/Via Calipoli 236)",
+       "idx": 6,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "ACIREALE (Piazza Duomo)",
+       "idx": 7,
+       "arr": "09:40",
+       "dep": "09:40"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 8,
+       "arr": "10:15",
+       "dep": "10:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T2R4-50663",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "- - - - - - - F E R I eA L Eet cn dll p r ci oo ddoa s eo aì s i L u n a V e n e r d ì - - - - - - - - - - - - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "11:45",
+       "dep": "11:45"
+      },
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 10,
+       "arr": "11:55",
+       "dep": "11:55"
+      },
+      {
+       "stop": "CATENANUVA (Via Vit. Emanuele, 72)",
+       "idx": 11,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "REGALBUTO (Piazza Mateoti)",
+       "idx": 12,
+       "arr": "12:45",
+       "dep": "12:45"
+      },
+      {
+       "stop": "FINAITA",
+       "idx": 13,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "AGIRA (Piazza Garibaldi)",
+       "idx": 14,
+       "arr": "13:10",
+       "dep": "13:10"
+      },
+      {
+       "stop": "NISSORIA (Corso V. Emanuele/Chiesa S.Giuseppe)",
+       "idx": 15,
+       "arr": "13:25",
+       "dep": "13:25"
+      },
+      {
+       "stop": "PIRATO F.S.",
+       "idx": 18,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "RAJA",
+       "idx": 19,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "ENNA BASSA",
+       "idx": 20,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "ENNA (Terminal Bus/Viale Diaz)",
+       "idx": 21,
+       "arr": "14:15",
+       "dep": "14:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T2R5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "- - - - - - - Aggiun8ta-124 FE R IeA L Ees snc ol lpa rtiiocod o - - - - - - - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 10,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "CATENANUVA (Via Vit. Emanuele, 72)",
+       "idx": 11,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "REGALBUTO (Piazza Mateoti)",
+       "idx": 12,
+       "arr": "15:15",
+       "dep": "15:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T2R6-501067",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "- - - - - - - F E R I eA L Eet cn dll p r ci oo ddoa s eo aì s i L u n a V e n e r d ì - - - - - - - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 10,
+       "arr": "15:10",
+       "dep": "15:10"
+      },
+      {
+       "stop": "CATENANUVA (Via Vit. Emanuele, 72)",
+       "idx": 11,
+       "arr": "15:45",
+       "dep": "15:45"
+      },
+      {
+       "stop": "REGALBUTO (Piazza Mateoti)",
+       "idx": 12,
+       "arr": "16:00",
+       "dep": "16:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T2R7-50126",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "- - - - - - - - - F E R I eA L Eet cn dll p r ci oo ddoa s eo aì s i L u n a V e n e r d ì - - - - - - - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 10,
+       "arr": "16:10",
+       "dep": "16:10"
+      },
+      {
+       "stop": "CATENANUVA (Via Vit. Emanuele, 72)",
+       "idx": 11,
+       "arr": "16:45",
+       "dep": "16:45"
+      },
+      {
+       "stop": "REGALBUTO (Piazza Mateoti)",
+       "idx": 12,
+       "arr": "17:00",
+       "dep": "17:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T2R8-501465",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "- - - - - - - - - F E R I eA L Eet cn dll p r ci oo ddoa s eo aì s i L u n a V e n e r d ì - - - - - - - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "17:00",
+       "dep": "17:00"
+      },
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 10,
+       "arr": "17:10",
+       "dep": "17:10"
+      },
+      {
+       "stop": "CATENANUVA (Via Vit. Emanuele, 72)",
+       "idx": 11,
+       "arr": "17:45",
+       "dep": "17:45"
+      },
+      {
+       "stop": "REGALBUTO (Piazza Mateoti)",
+       "idx": 12,
+       "arr": "18:00",
+       "dep": "18:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T2R9",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "- - - - - - - - - C O Aggiu1n6ta-125 FER I AEgsLco Els utsoo A - - - - - - - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "17:15",
+       "dep": "17:15"
+      },
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 10,
+       "arr": "17:25",
+       "dep": "17:25"
+      },
+      {
+       "stop": "CATENANUVA (Via Vit. Emanuele, 72)",
+       "idx": 11,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "REGALBUTO (Piazza Mateoti)",
+       "idx": 12,
+       "arr": "18:15",
+       "dep": "18:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T2R10",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "- - - - - - - R S E Aggiu1n8ta-128 F E R I eA L Eet cn dll p r ci oo ddoa s eo aì s i L u n a V e n e r d ì - - - - - - - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 10,
+       "arr": "17:40",
+       "dep": "17:40"
+      },
+      {
+       "stop": "CATENANUVA (Via Vit. Emanuele, 72)",
+       "idx": 11,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "REGALBUTO (Piazza Mateoti)",
+       "idx": 12,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "FINAITA",
+       "idx": 13,
+       "arr": "18:45",
+       "dep": "18:45"
+      },
+      {
+       "stop": "AGIRA (Piazza Garibaldi)",
+       "idx": 14,
+       "arr": "18:55",
+       "dep": "18:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T2R11",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "- - - - - - - - - Aggiu2n0ta-127 F E R I eA L Eet cn dll p r ci oo ddoa s eo aì s i L u n a V e n e r d ì - - - - - - - - - - - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 10,
+       "arr": "18:10",
+       "dep": "18:10"
+      },
+      {
+       "stop": "CATENANUVA (Via Vit. Emanuele, 72)",
+       "idx": 11,
+       "arr": "18:45",
+       "dep": "18:45"
+      },
+      {
+       "stop": "REGALBUTO (Piazza Mateoti)",
+       "idx": 12,
+       "arr": "19:00",
+       "dep": "19:00"
+      },
+      {
+       "stop": "FINAITA",
+       "idx": 13,
+       "arr": "19:15",
+       "dep": "19:15"
+      },
+      {
+       "stop": "AGIRA (Piazza Garibaldi)",
+       "idx": 14,
+       "arr": "19:25",
+       "dep": "19:25"
+      },
+      {
+       "stop": "NISSORIA (Corso V. Emanuele/Chiesa S.Giuseppe)",
+       "idx": 15,
+       "arr": "19:40",
+       "dep": "19:40"
+      },
+      {
+       "stop": "ASSORO (Via Crisa)",
+       "idx": 16,
+       "arr": "19:50",
+       "dep": "19:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T2R12",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "- - - - - - - - - Aggiu2nta-135 G IOR N A 3dL I El R1°A/4 1a/ A L 1 0 - - - - - - - - - - - - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TAORMINA (P.zza L. Pirandelo) A.",
+       "idx": 0,
+       "arr": "16:45",
+       "dep": "16:45"
+      },
+      {
+       "stop": "TAORMINA (P.zza L. Pirandelo) P.",
+       "idx": 1,
+       "arr": "17:15",
+       "dep": "17:15"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 2,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "RECANATI (Viale Dionisio-Terminal Bus",
+       "idx": 3,
+       "arr": "17:40",
+       "dep": "17:40"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 8,
+       "arr": "18:25",
+       "dep": "18:25"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "18:25",
+       "dep": "18:25"
+      },
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 10,
+       "arr": "18:40",
+       "dep": "18:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T2R13-502458",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "- - - - - - - - - G IOR N A 3dL I El R1°A/4 1a/ A L 1 0 - - - - - - - - - - - - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TAORMINA (P.zza L. Pirandelo) P.",
+       "idx": 1,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 2,
+       "arr": "17:45",
+       "dep": "17:45"
+      },
+      {
+       "stop": "RECANATI (Viale Dionisio-Terminal Bus",
+       "idx": 3,
+       "arr": "17:55",
+       "dep": "17:55"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 8,
+       "arr": "18:40",
+       "dep": "18:40"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "18:40",
+       "dep": "18:40"
+      },
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 10,
+       "arr": "18:55",
+       "dep": "18:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T2R14-502651",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "- - - - - - - - - G IOR N A 3dL 0aI El9 R1°A/6 A L / - - - - - - - - - - - - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TAORMINA (P.zza L. Pirandelo) P.",
+       "idx": 1,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 2,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "RECANATI (Viale Dionisio-Terminal Bus",
+       "idx": 3,
+       "arr": "18:25",
+       "dep": "18:25"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 8,
+       "arr": "19:10",
+       "dep": "19:10"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "19:10",
+       "dep": "19:10"
+      },
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 10,
+       "arr": "19:25",
+       "dep": "19:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T2R15-502852",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "- - - - - - - G IOR N A 3dL 0aI El9 R1°A/6 A L / - - - - - - - - - - - - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TAORMINA (P.zza L. Pirandelo) P.",
+       "idx": 1,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 2,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "RECANATI (Viale Dionisio-Terminal Bus",
+       "idx": 3,
+       "arr": "18:40",
+       "dep": "18:40"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 8,
+       "arr": "19:25",
+       "dep": "19:25"
+      },
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 10,
+       "arr": "19:40",
+       "dep": "19:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T2R16-503059",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "- - - - - - - G IOR N A 3dL I El R1°A/4 1a/ A L 1 0 - - - - - - - - - - - - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TAORMINA (P.zza L. Pirandelo) P.",
+       "idx": 1,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 2,
+       "arr": "18:45",
+       "dep": "18:45"
+      },
+      {
+       "stop": "RECANATI (Viale Dionisio-Terminal Bus",
+       "idx": 3,
+       "arr": "18:55",
+       "dep": "18:55"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 8,
+       "arr": "19:40",
+       "dep": "19:40"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "19:40",
+       "dep": "19:40"
+      },
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 10,
+       "arr": "19:55",
+       "dep": "19:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T2R17-503257",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "- - - - - - - G IOR N A 3dL I El R1°A/4 1a/ A L 1 0 - - - - - - - - - - - - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TAORMINA (P.zza L. Pirandelo) P.",
+       "idx": 1,
+       "arr": "18:45",
+       "dep": "18:45"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 2,
+       "arr": "19:00",
+       "dep": "19:00"
+      },
+      {
+       "stop": "RECANATI (Viale Dionisio-Terminal Bus",
+       "idx": 3,
+       "arr": "19:10",
+       "dep": "19:10"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 8,
+       "arr": "19:55",
+       "dep": "19:55"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "19:55",
+       "dep": "19:55"
+      },
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 10,
+       "arr": "20:10",
+       "dep": "20:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p63.T2R18-503463",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "- - - - - - - - - G IOR N A 3dL 0aI El9 R1°A/6 A L / - - - - - - - - - - - - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TAORMINA (P.zza L. Pirandelo) P.",
+       "idx": 1,
+       "arr": "19:00",
+       "dep": "19:00"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 2,
+       "arr": "19:15",
+       "dep": "19:15"
+      },
+      {
+       "stop": "RECANATI (Viale Dionisio-Terminal Bus",
+       "idx": 3,
+       "arr": "19:25",
+       "dep": "19:25"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 8,
+       "arr": "20:10",
+       "dep": "20:10"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "20:10",
+       "dep": "20:10"
+      },
+      {
+       "stop": "CATANIA (Fontanarossa)",
+       "idx": 10,
+       "arr": "20:25",
+       "dep": "20:25"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

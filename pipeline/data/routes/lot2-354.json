@@ -1,0 +1,218 @@
+{
+ "operator": "CARUSO MIDOLO PAOLO & C. SAS",
+ "route_id": "lot2-354",
+ "name": "NOTO - RAGUSA",
+ "short_name": "354",
+ "source": "orario_b2d178879e.pdf#p43",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "NOTO (stazione bus Via Pola)",
+    "RAGUSA (SAN GIACOMO)",
+    "MODICA (BALATA DI MODICA)",
+    "RAGUSA (POGGIO GRASSO S.P. 58)",
+    "RAGUSA (PIAZZALE ZAMA)"
+   ],
+   "kms": [
+    0.0,
+    36.0,
+    39.0,
+    40.0,
+    64.0
+   ],
+   "trips": [
+    {
+     "corsa": "p43.A1-5029",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "NOTO (stazione bus Via Pola)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "RAGUSA (SAN GIACOMO)",
+       "idx": 1,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "MODICA (BALATA DI MODICA)",
+       "idx": 2,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "RAGUSA (POGGIO GRASSO S.P. 58)",
+       "idx": 3,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "RAGUSA (PIAZZALE ZAMA)",
+       "idx": 4,
+       "arr": "08:59",
+       "dep": "08:59"
+      }
+     ]
+    },
+    {
+     "corsa": "p43.A2-5031",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "NOTO (stazione bus Via Pola)",
+       "idx": 0,
+       "arr": "12:05",
+       "dep": "12:05"
+      },
+      {
+       "stop": "RAGUSA (SAN GIACOMO)",
+       "idx": 1,
+       "arr": "13:05",
+       "dep": "13:05"
+      },
+      {
+       "stop": "MODICA (BALATA DI MODICA)",
+       "idx": 2,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "RAGUSA (POGGIO GRASSO S.P. 58)",
+       "idx": 3,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "RAGUSA (PIAZZALE ZAMA)",
+       "idx": 4,
+       "arr": "13:45",
+       "dep": "13:45"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "RAGUSA (PIAZZALE ZAMA)",
+    "RAGUSA (POGGIO GRASSO S.P. 58)",
+    "MODICA (BALATA DI MODICA)",
+    "RAGUSA (SAN GIACOMO)",
+    "NOTO (stazione bus Via Pola)"
+   ],
+   "kms": [
+    0.0,
+    24.0,
+    25.0,
+    28.0,
+    64.0
+   ],
+   "trips": [
+    {
+     "corsa": "p43.R1-5032",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RAGUSA (PIAZZALE ZAMA)",
+       "idx": 0,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "RAGUSA (POGGIO GRASSO S.P. 58)",
+       "idx": 1,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "MODICA (BALATA DI MODICA)",
+       "idx": 2,
+       "arr": "10:00",
+       "dep": "10:00"
+      },
+      {
+       "stop": "RAGUSA (SAN GIACOMO)",
+       "idx": 3,
+       "arr": "10:30",
+       "dep": "10:30"
+      },
+      {
+       "stop": "NOTO (stazione bus Via Pola)",
+       "idx": 4,
+       "arr": "11:00",
+       "dep": "11:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p43.R2-5030",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RAGUSA (PIAZZALE ZAMA)",
+       "idx": 0,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "RAGUSA (POGGIO GRASSO S.P. 58)",
+       "idx": 1,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "MODICA (BALATA DI MODICA)",
+       "idx": 2,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "RAGUSA (SAN GIACOMO)",
+       "idx": 3,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "NOTO (stazione bus Via Pola)",
+       "idx": 4,
+       "arr": "14:30",
+       "dep": "14:30"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

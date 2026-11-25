@@ -1,0 +1,720 @@
+{
+ "operator": "Consorzio Stabile Siciliano Mobilità Est (Lotto 2)",
+ "route_id": "lot2-155",
+ "name": "MOTTA CAMASTRA CATANIA, DIRAMAZIONE GIARRE, RIPOSTO",
+ "short_name": "155",
+ "source": "orario_b2d178879e.pdf#p64",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "MOTTA CAMASTRA (Slargo Via Roma - Scuole Medie)",
+    "Bv. Motta Camastra",
+    "Gole Alcantara",
+    "Bv. Graniti",
+    "GRANITI (Piazza Manganelli)",
+    "Bv. Graniti",
+    "GAGGI (Piazza Vittorio Emanuele - Per Francavilla)",
+    "TRAPPITELLO (Via Via XXIV Aprile)",
+    "CHIANCHITTA",
+    "TAORMINA (Via Pirandello - Terminal Bus)",
+    "GIARDINI F.S.",
+    "GIARDINI (S. Giovanni - Via Umberto SS 114)",
+    "FIUMEFREDDO (P.zza Chiesa Madre) Per Giardini",
+    "MASCALI (Via Nazionale)",
+    "GIARRE (P.zza Duono/Via Callipoli 236)",
+    "RIPOSTO (Via Roma - Angolo Villa Pantano)",
+    "ACIREALE (Piazza Duomo)",
+    "CATANIA (Terminal Bus-Via Archimede)"
+   ],
+   "kms": [
+    0.0,
+    2.7,
+    4.4,
+    9.5,
+    null,
+    9.5,
+    11.1,
+    15.3,
+    17.1,
+    null,
+    null,
+    null,
+    23.2,
+    27.6,
+    31.4,
+    33.9,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p64.A1-2180",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "1 FERIALE Periodo Scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TAORMINA (Via Pirandello - Terminal Bus)",
+       "idx": 9,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 10,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "GIARDINI (S. Giovanni - Via Umberto SS 114)",
+       "idx": 11,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "FIUMEFREDDO (P.zza Chiesa Madre) Per Giardini",
+       "idx": 12,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "MASCALI (Via Nazionale)",
+       "idx": 13,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Callipoli 236)",
+       "idx": 14,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Villa Pantano)",
+       "idx": 15,
+       "arr": "07:50",
+       "dep": "07:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p64.A2-Aggiunta-142",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "3 Aggiunta-142 F E R IA L E d a L u ne d ì a Venerdì Periodo Scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GRANITI (Piazza Manganelli)",
+       "idx": 4,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 5,
+       "arr": "07:05",
+       "dep": "07:05"
+      },
+      {
+       "stop": "GAGGI (Piazza Vittorio Emanuele - Per Francavilla)",
+       "idx": 6,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "TRAPPITELLO (Via Via XXIV Aprile)",
+       "idx": 7,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 8,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "FIUMEFREDDO (P.zza Chiesa Madre) Per Giardini",
+       "idx": 12,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "MASCALI (Via Nazionale)",
+       "idx": 13,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Callipoli 236)",
+       "idx": 14,
+       "arr": "07:50",
+       "dep": "07:50"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Villa Pantano)",
+       "idx": 15,
+       "arr": "08:25",
+       "dep": "08:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p64.A3-Aggiunta-141",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "C O R S E 5 Aggiunta-141 F E RIALE Periodo Scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MOTTA CAMASTRA (Slargo Via Roma - Scuole Medie)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "Bv. Motta Camastra",
+       "idx": 1,
+       "arr": "07:05",
+       "dep": "07:05"
+      },
+      {
+       "stop": "Gole Alcantara",
+       "idx": 2,
+       "arr": "07:07",
+       "dep": "07:07"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 3,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 5,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "GAGGI (Piazza Vittorio Emanuele - Per Francavilla)",
+       "idx": 6,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "TRAPPITELLO (Via Via XXIV Aprile)",
+       "idx": 7,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 8,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "FIUMEFREDDO (P.zza Chiesa Madre) Per Giardini",
+       "idx": 12,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "MASCALI (Via Nazionale)",
+       "idx": 13,
+       "arr": "07:50",
+       "dep": "07:50"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Callipoli 236)",
+       "idx": 14,
+       "arr": "07:55",
+       "dep": "07:55"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Villa Pantano)",
+       "idx": 15,
+       "arr": "08:30",
+       "dep": "08:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p64.A4-9512",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "7 FERIALE da lunedì a venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TAORMINA (Via Pirandello - Terminal Bus)",
+       "idx": 9,
+       "arr": "11:15",
+       "dep": "11:15"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 10,
+       "arr": "11:30",
+       "dep": "11:30"
+      },
+      {
+       "stop": "GIARDINI (S. Giovanni - Via Umberto SS 114)",
+       "idx": 11,
+       "arr": "11:35",
+       "dep": "11:35"
+      },
+      {
+       "stop": "FIUMEFREDDO (P.zza Chiesa Madre) Per Giardini",
+       "idx": 12,
+       "arr": "11:45",
+       "dep": "11:45"
+      },
+      {
+       "stop": "MASCALI (Via Nazionale)",
+       "idx": 13,
+       "arr": "11:50",
+       "dep": "11:50"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Callipoli 236)",
+       "idx": 14,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "ACIREALE (Piazza Duomo)",
+       "idx": 16,
+       "arr": "12:25",
+       "dep": "12:25"
+      },
+      {
+       "stop": "CATANIA (Terminal Bus-Via Archimede)",
+       "idx": 17,
+       "arr": "12:55",
+       "dep": "12:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p64.A5-Aggiunta-139",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "9 Aggiunta-139 K M F E R I A L E Periodo Scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARDINI (S. Giovanni - Via Umberto SS 114)",
+       "idx": 11,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "FIUMEFREDDO (P.zza Chiesa Madre) Per Giardini",
+       "idx": 12,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "MASCALI (Via Nazionale)",
+       "idx": 13,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Callipoli 236)",
+       "idx": 14,
+       "arr": "13:25",
+       "dep": "13:25"
+      },
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Villa Pantano)",
+       "idx": 15,
+       "arr": "13:35",
+       "dep": "13:35"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CATANIA (Terminal Bus-Via Archimede)",
+    "ACIREALE (Piazza Duomo)",
+    "RIPOSTO (Via Roma - Angolo Villa Pantano)",
+    "GIARRE (P.zza Duono/Via Callipoli 236)",
+    "MASCALI (Via Nazionale)",
+    "FIUMEFREDDO (P.zza Chiesa Madre) Per Giardini",
+    "GIARDINI (S. Giovanni - Via Umberto SS 114)",
+    "GIARDINI F.S.",
+    "TAORMINA (Via Pirandello - Terminal Bus)",
+    "CHIANCHITTA",
+    "TRAPPITELLO (Via Via XXIV Aprile)",
+    "GAGGI (Piazza Vittorio Emanuele - Per Francavilla)",
+    "Bv. Graniti",
+    "GRANITI (Piazza Manganelli)",
+    "Bv. Graniti",
+    "Gole Alcantara",
+    "Bv. Motta Camastra",
+    "MOTTA CAMASTRA (Slargo Via Roma - Scuole Medie)"
+   ],
+   "kms": [
+    null,
+    null,
+    0.0,
+    2.5,
+    6.3,
+    10.7,
+    null,
+    null,
+    null,
+    16.8,
+    18.6,
+    22.8,
+    24.4,
+    null,
+    24.4,
+    29.5,
+    31.2,
+    33.9
+   ],
+   "trips": [
+    {
+     "corsa": "p64.R1-Aggiunta-138",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "2 Aggiunta-138 FERIALE Periodo Scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Villa Pantano)",
+       "idx": 2,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Callipoli 236)",
+       "idx": 3,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "MASCALI (Via Nazionale)",
+       "idx": 4,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "FIUMEFREDDO (P.zza Chiesa Madre) Per Giardini",
+       "idx": 5,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "GIARDINI (S. Giovanni - Via Umberto SS 114)",
+       "idx": 6,
+       "arr": "07:45",
+       "dep": "07:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p64.R2-9514",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "4 FERIALE da lunedì a venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Terminal Bus-Via Archimede)",
+       "idx": 0,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "ACIREALE (Piazza Duomo)",
+       "idx": 1,
+       "arr": "10:00",
+       "dep": "10:00"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Callipoli 236)",
+       "idx": 3,
+       "arr": "10:25",
+       "dep": "10:25"
+      },
+      {
+       "stop": "MASCALI (Via Nazionale)",
+       "idx": 4,
+       "arr": "10:30",
+       "dep": "10:30"
+      },
+      {
+       "stop": "FIUMEFREDDO (P.zza Chiesa Madre) Per Giardini",
+       "idx": 5,
+       "arr": "10:35",
+       "dep": "10:35"
+      },
+      {
+       "stop": "GIARDINI (S. Giovanni - Via Umberto SS 114)",
+       "idx": 6,
+       "arr": "10:50",
+       "dep": "10:50"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "10:55",
+       "dep": "10:55"
+      },
+      {
+       "stop": "TAORMINA (Via Pirandello - Terminal Bus)",
+       "idx": 8,
+       "arr": "11:10",
+       "dep": "11:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p64.R3-Aggiunta-143",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "C O R S E 6 Aggiunta-143 F E R I A L E d a L u n e d ì a Venerdì Periodo Scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Villa Pantano)",
+       "idx": 2,
+       "arr": "13:10",
+       "dep": "13:10"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Callipoli 236)",
+       "idx": 3,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "MASCALI (Via Nazionale)",
+       "idx": 4,
+       "arr": "13:25",
+       "dep": "13:25"
+      },
+      {
+       "stop": "FIUMEFREDDO (P.zza Chiesa Madre) Per Giardini",
+       "idx": 5,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 9,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "TRAPPITELLO (Via Via XXIV Aprile)",
+       "idx": 10,
+       "arr": "13:55",
+       "dep": "13:55"
+      },
+      {
+       "stop": "GAGGI (Piazza Vittorio Emanuele - Per Francavilla)",
+       "idx": 11,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 12,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "GRANITI (Piazza Manganelli)",
+       "idx": 13,
+       "arr": "14:10",
+       "dep": "14:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p64.R4-Aggiunta-140",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "8 Aggiunta-140 F E RIALE Periodo Scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Villa Pantano)",
+       "idx": 2,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Callipoli 236)",
+       "idx": 3,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "MASCALI (Via Nazionale)",
+       "idx": 4,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "FIUMEFREDDO (P.zza Chiesa Madre) Per Giardini",
+       "idx": 5,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "CHIANCHITTA",
+       "idx": 9,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "TRAPPITELLO (Via Via XXIV Aprile)",
+       "idx": 10,
+       "arr": "14:55",
+       "dep": "14:55"
+      },
+      {
+       "stop": "GAGGI (Piazza Vittorio Emanuele - Per Francavilla)",
+       "idx": 11,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 12,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "Bv. Graniti",
+       "idx": 14,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "Gole Alcantara",
+       "idx": 15,
+       "arr": "15:08",
+       "dep": "15:08"
+      },
+      {
+       "stop": "Bv. Motta Camastra",
+       "idx": 16,
+       "arr": "15:10",
+       "dep": "15:10"
+      },
+      {
+       "stop": "MOTTA CAMASTRA (Slargo Via Roma - Scuole Medie)",
+       "idx": 17,
+       "arr": "15:15",
+       "dep": "15:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p64.R5-9515",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "10 FERIALE Periodo Scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO (Via Roma - Angolo Villa Pantano)",
+       "idx": 2,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "GIARRE (P.zza Duono/Via Callipoli 236)",
+       "idx": 3,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "MASCALI (Via Nazionale)",
+       "idx": 4,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "FIUMEFREDDO (P.zza Chiesa Madre) Per Giardini",
+       "idx": 5,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "GIARDINI (S. Giovanni - Via Umberto SS 114)",
+       "idx": 6,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "GIARDINI F.S.",
+       "idx": 7,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "TAORMINA (Via Pirandello - Terminal Bus)",
+       "idx": 8,
+       "arr": "15:00",
+       "dep": "15:00"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

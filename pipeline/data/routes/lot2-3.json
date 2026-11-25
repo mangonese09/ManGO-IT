@@ -1,0 +1,204 @@
+{
+ "operator": "Consorzio Stabile Siciliano Mobilità Est (Lotto 2)",
+ "route_id": "lot2-3",
+ "name": "GRAMMICHELE-LICODIA EUBEA-CHIARAMONTE GULFI-VILLAGGIO GULFI-RAGUSA",
+ "short_name": "3",
+ "source": "orario_b2d178879e.pdf#p97",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "GRAMMICHELE",
+    "LICODIA EUBEA",
+    "CHIARAMONTE GULFI",
+    "RAGUSA"
+   ],
+   "kms": [
+    0.0,
+    null,
+    null,
+    44.8
+   ],
+   "trips": [
+    {
+     "corsa": "p97.A1-AGG-113",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "1 AGG-113 F E R IA L E nel Per i od o S c o l a t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "LICODIA EUBEA",
+       "idx": 1,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "RAGUSA",
+       "idx": 3,
+       "arr": "07:50",
+       "dep": "07:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p97.A2-AGG-111",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "3 AGG-111 F E R I A L E n e l P e r i o d o S c o latico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GRAMMICHELE",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "LICODIA EUBEA",
+       "idx": 1,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "RAGUSA",
+       "idx": 3,
+       "arr": "08:10",
+       "dep": "08:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p97.A3-AGG-109",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "C O R S E 5 7 9 AGG-109 - - F E R IA L E - - nel Per i od o S c o latico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GRAMMICHELE",
+       "idx": 0,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "CHIARAMONTE GULFI",
+       "idx": 2,
+       "arr": "07:55",
+       "dep": "07:55"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "RAGUSA",
+    "CHIARAMONTE GULFI",
+    "LICODIA EUBEA",
+    "GRAMMICHELE"
+   ],
+   "kms": [
+    0.0,
+    null,
+    null,
+    44.8
+   ],
+   "trips": [
+    {
+     "corsa": "p97.R1-AGG-114",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "2 AGG-114 F E R IA L E nel Per i od o S c o l a t i c o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RAGUSA",
+       "idx": 0,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "LICODIA EUBEA",
+       "idx": 2,
+       "arr": "14:50",
+       "dep": "14:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p97.R2-AGG-110",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "4 AGG-110 F E R I A L E n e l P e r i o d o S c o latico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CHIARAMONTE GULFI",
+       "idx": 1,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "GRAMMICHELE",
+       "idx": 3,
+       "arr": "14:55",
+       "dep": "14:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p97.R3-AGG-112",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "C O R S E 6 8 10 AGG-112 - - F E R IA L E - - nel Per i od o S c o latico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RAGUSA",
+       "idx": 0,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "LICODIA EUBEA",
+       "idx": 2,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "GRAMMICHELE",
+       "idx": 3,
+       "arr": "15:25",
+       "dep": "15:25"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

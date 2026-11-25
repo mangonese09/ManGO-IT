@@ -1,0 +1,190 @@
+{
+ "operator": "Consorzio Stabile Siciliano Mobilità Est (Lotto 2)",
+ "route_id": "lot2-82",
+ "name": "TROINA-CATANIA",
+ "short_name": "82",
+ "source": "orario_b2d178879e.pdf#p48",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "PIAZZA DELLA REPUBBLICA (CATANIA)",
+    "VIA C.E.E. (MISTERBIANCO)",
+    "CORSO ITALIA (PATERNO')",
+    "PIAZZA GRAMSCI (TROINA)"
+   ],
+   "kms": [
+    0.0,
+    8.2,
+    21.9,
+    71.3
+   ],
+   "trips": [
+    {
+     "corsa": "p48.A1-3465",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "1 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PIAZZA DELLA REPUBBLICA (CATANIA)",
+       "idx": 0,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "VIA C.E.E. (MISTERBIANCO)",
+       "idx": 1,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "CORSO ITALIA (PATERNO')",
+       "idx": 2,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "PIAZZA GRAMSCI (TROINA)",
+       "idx": 3,
+       "arr": "09:45",
+       "dep": "09:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p48.A2-3466",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "C O R S E 3 5 7 9 11 FESTIVA"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PIAZZA DELLA REPUBBLICA (CATANIA)",
+       "idx": 0,
+       "arr": "09:45",
+       "dep": "09:45"
+      },
+      {
+       "stop": "VIA C.E.E. (MISTERBIANCO)",
+       "idx": 1,
+       "arr": "10:00",
+       "dep": "10:00"
+      },
+      {
+       "stop": "CORSO ITALIA (PATERNO')",
+       "idx": 2,
+       "arr": "10:20",
+       "dep": "10:20"
+      },
+      {
+       "stop": "PIAZZA GRAMSCI (TROINA)",
+       "idx": 3,
+       "arr": "11:45",
+       "dep": "11:45"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "PIAZZA GRAMSCI (TROINA)",
+    "CORSO ITALIA (PATERNO')",
+    "VIA C.E.E. (MISTERBIANCO)",
+    "PIAZZA DELLA REPUBBLICA (CATANIA)"
+   ],
+   "kms": [
+    0.0,
+    48.4,
+    63.1,
+    71.3
+   ],
+   "trips": [
+    {
+     "corsa": "p48.R1-3467",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "2 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PIAZZA GRAMSCI (TROINA)",
+       "idx": 0,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "CORSO ITALIA (PATERNO')",
+       "idx": 1,
+       "arr": "16:10",
+       "dep": "16:10"
+      },
+      {
+       "stop": "VIA C.E.E. (MISTERBIANCO)",
+       "idx": 2,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "PIAZZA DELLA REPUBBLICA (CATANIA)",
+       "idx": 3,
+       "arr": "16:45",
+       "dep": "16:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p48.R2-3468",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "C O R S E 4 6 8 10 12 FESTIVA"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PIAZZA GRAMSCI (TROINA)",
+       "idx": 0,
+       "arr": "15:45",
+       "dep": "15:45"
+      },
+      {
+       "stop": "CORSO ITALIA (PATERNO')",
+       "idx": 1,
+       "arr": "17:10",
+       "dep": "17:10"
+      },
+      {
+       "stop": "VIA C.E.E. (MISTERBIANCO)",
+       "idx": 2,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "PIAZZA DELLA REPUBBLICA (CATANIA)",
+       "idx": 3,
+       "arr": "17:45",
+       "dep": "17:45"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

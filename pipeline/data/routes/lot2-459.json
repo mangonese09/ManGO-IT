@@ -1,0 +1,322 @@
+{
+ "operator": "Consorzio Stabile Siciliano Mobilità Est (Lotto 2)",
+ "route_id": "lot2-459",
+ "name": "ACATE - MAZZARONE - GRAMMICHELE - CATANIA",
+ "short_name": "459",
+ "source": "orario_b2d178879e.pdf#p87",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "CATANIA Terminal Bus Via Archimede",
+    "AEROPORTO CATANIA (Fontanarossa)",
+    "SIGONELLA",
+    "RAMACCA (Piazza Tenente di Fazio)",
+    "PALAGONIA (via Palermo)",
+    "GRAMMICHELE (via De Petris)",
+    "MAZZARONE (via Dittaino)",
+    "ACATE (piazza Libertà)"
+   ],
+   "kms": [
+    0.0,
+    6.9,
+    null,
+    null,
+    null,
+    68.0,
+    85.0,
+    100.0
+   ],
+   "trips": [
+    {
+     "corsa": "p87.A1-8476",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "1 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA Terminal Bus Via Archimede",
+       "idx": 0,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "AEROPORTO CATANIA (Fontanarossa)",
+       "idx": 1,
+       "arr": "12:15",
+       "dep": "12:15"
+      },
+      {
+       "stop": "SIGONELLA",
+       "idx": 2,
+       "arr": "12:40",
+       "dep": "12:40"
+      },
+      {
+       "stop": "PALAGONIA (via Palermo)",
+       "idx": 4,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "GRAMMICHELE (via De Petris)",
+       "idx": 5,
+       "arr": "13:40",
+       "dep": "13:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p87.A2-8475",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "3 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA Terminal Bus Via Archimede",
+       "idx": 0,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "AEROPORTO CATANIA (Fontanarossa)",
+       "idx": 1,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "SIGONELLA",
+       "idx": 2,
+       "arr": "14:55",
+       "dep": "14:55"
+      },
+      {
+       "stop": "GRAMMICHELE (via De Petris)",
+       "idx": 5,
+       "arr": "15:45",
+       "dep": "15:45"
+      },
+      {
+       "stop": "MAZZARONE (via Dittaino)",
+       "idx": 6,
+       "arr": "16:15",
+       "dep": "16:15"
+      },
+      {
+       "stop": "ACATE (piazza Libertà)",
+       "idx": 7,
+       "arr": "16:45",
+       "dep": "16:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p87.A3-8477",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "C O R S E 5 7 9 FERIALE - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA Terminal Bus Via Archimede",
+       "idx": 0,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "AEROPORTO CATANIA (Fontanarossa)",
+       "idx": 1,
+       "arr": "18:45",
+       "dep": "18:45"
+      },
+      {
+       "stop": "RAMACCA (Piazza Tenente di Fazio)",
+       "idx": 3,
+       "arr": "19:30",
+       "dep": "19:30"
+      },
+      {
+       "stop": "PALAGONIA (via Palermo)",
+       "idx": 4,
+       "arr": "19:45",
+       "dep": "19:45"
+      },
+      {
+       "stop": "GRAMMICHELE (via De Petris)",
+       "idx": 5,
+       "arr": "20:25",
+       "dep": "20:25"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "ACATE (piazza Libertà)",
+    "MAZZARONE (via Dittaino)",
+    "GRAMMICHELE (via De Petris)",
+    "PALAGONIA (via Palermo)",
+    "RAMACCA (Piazza Tenente di Fazio)",
+    "SIGONELLA",
+    "AEROPORTO CATANIA (Fontanarossa)",
+    "CATANIA Terminal Bus Via Archimede"
+   ],
+   "kms": [
+    0.0,
+    15.0,
+    32.0,
+    null,
+    null,
+    null,
+    93.1,
+    100.0
+   ],
+   "trips": [
+    {
+     "corsa": "p87.R1-6888",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "2 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACATE (piazza Libertà)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "MAZZARONE (via Dittaino)",
+       "idx": 1,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "GRAMMICHELE (via De Petris)",
+       "idx": 2,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "AEROPORTO CATANIA (Fontanarossa)",
+       "idx": 6,
+       "arr": "09:10",
+       "dep": "09:10"
+      },
+      {
+       "stop": "CATANIA Terminal Bus Via Archimede",
+       "idx": 7,
+       "arr": "09:30",
+       "dep": "09:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p87.R2-8474",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "4 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GRAMMICHELE (via De Petris)",
+       "idx": 2,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "PALAGONIA (via Palermo)",
+       "idx": 3,
+       "arr": "09:40",
+       "dep": "09:40"
+      },
+      {
+       "stop": "SIGONELLA",
+       "idx": 5,
+       "arr": "10:00",
+       "dep": "10:00"
+      },
+      {
+       "stop": "AEROPORTO CATANIA (Fontanarossa)",
+       "idx": 6,
+       "arr": "10:30",
+       "dep": "10:30"
+      },
+      {
+       "stop": "CATANIA Terminal Bus Via Archimede",
+       "idx": 7,
+       "arr": "10:50",
+       "dep": "10:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p87.R3-8473",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "C O R S E 6 8 10 FERIALE - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GRAMMICHELE (via De Petris)",
+       "idx": 2,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "PALAGONIA (via Palermo)",
+       "idx": 3,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "RAMACCA (Piazza Tenente di Fazio)",
+       "idx": 4,
+       "arr": "14:55",
+       "dep": "14:55"
+      },
+      {
+       "stop": "AEROPORTO CATANIA (Fontanarossa)",
+       "idx": 6,
+       "arr": "15:40",
+       "dep": "15:40"
+      },
+      {
+       "stop": "CATANIA Terminal Bus Via Archimede",
+       "idx": 7,
+       "arr": "15:55",
+       "dep": "15:55"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

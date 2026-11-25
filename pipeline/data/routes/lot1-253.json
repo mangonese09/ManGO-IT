@@ -1,0 +1,148 @@
+{
+ "operator": "Sommatinese Viaggi",
+ "route_id": "lot1-253",
+ "name": "GRATTERI - PALERMO",
+ "short_name": "253",
+ "source": "t1-tabelle_-orari_da_linea_1_a_linea_297.pdf#p20",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "GRATTERI (Belvedere - A)",
+    "LASCARI (via A.De Gaspari  - A)",
+    "TERMINI I. (P.zza S.Antonio - A)",
+    "TERMINI I. (Ospedale  - A)",
+    "PALERMO (P.zza G. Cesare - A)",
+    "PALERMO (Viale dei Picciotti - A)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p20.A1-3635",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GRATTERI (Belvedere - A)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "LASCARI (via A.De Gaspari  - A)",
+       "idx": 1,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "TERMINI I. (P.zza S.Antonio - A)",
+       "idx": 2,
+       "arr": "08:05",
+       "dep": "08:05"
+      },
+      {
+       "stop": "TERMINI I. (Ospedale  - A)",
+       "idx": 3,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "PALERMO (P.zza G. Cesare - A)",
+       "idx": 4,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "PALERMO (Viale dei Picciotti - A)",
+       "idx": 5,
+       "arr": "09:00",
+       "dep": "09:00"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "PALERMO (Viale dei Picciotti - A)",
+    "PALERMO (P.zza G. Cesare - A)",
+    "TERMINI I. (Ospedale  - A)",
+    "TERMINI I. (P.zza S.Antonio - A)",
+    "LASCARI (via A.De Gaspari  - A)",
+    "GRATTERI (Belvedere - A)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p20.R1-3636",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Viale dei Picciotti - A)",
+       "idx": 0,
+       "arr": "13:10",
+       "dep": "13:10"
+      },
+      {
+       "stop": "PALERMO (P.zza G. Cesare - A)",
+       "idx": 1,
+       "arr": "13:25",
+       "dep": "13:25"
+      },
+      {
+       "stop": "TERMINI I. (Ospedale  - A)",
+       "idx": 2,
+       "arr": "13:55",
+       "dep": "13:55"
+      },
+      {
+       "stop": "TERMINI I. (P.zza S.Antonio - A)",
+       "idx": 3,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "LASCARI (via A.De Gaspari  - A)",
+       "idx": 4,
+       "arr": "14:35",
+       "dep": "14:35"
+      },
+      {
+       "stop": "GRATTERI (Belvedere - A)",
+       "idx": 5,
+       "arr": "15:05",
+       "dep": "15:05"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

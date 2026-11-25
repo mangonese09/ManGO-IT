@@ -1,0 +1,154 @@
+{
+ "operator": "Lo Iacono S.re & C.Autoservizi",
+ "route_id": "lot1-306",
+ "name": "VALLEDOLMO - PALERMO",
+ "short_name": "306",
+ "source": "t2-tabelle_-orari_da_linea_299_a_linea_344.pdf#p6",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "VALLEDOLMO (Piazza Olmo.)",
+    "LERCARA FRIDDI (Lercara Via Autonomia Siciliana)",
+    "LERCARA FRIDDI (Prolungamento - ASL uffici Via Calì)",
+    "PALERMO (Parcheggio Basile)"
+   ],
+   "kms": [
+    0.0,
+    37.8,
+    39.8,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p6.A1-4261",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VALLEDOLMO (Piazza Olmo.)",
+       "idx": 0,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "PALERMO (Parcheggio Basile)",
+       "idx": 3,
+       "arr": "08:45",
+       "dep": "08:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p6.A2-4263",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VALLEDOLMO (Piazza Olmo.)",
+       "idx": 0,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "LERCARA FRIDDI (Lercara Via Autonomia Siciliana)",
+       "idx": 1,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "LERCARA FRIDDI (Prolungamento - ASL uffici Via Calì)",
+       "idx": 2,
+       "arr": "08:15",
+       "dep": "08:15"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "PALERMO (Parcheggio Basile)",
+    "LERCARA FRIDDI (Prolungamento - ASL uffici Via Calì)",
+    "LERCARA FRIDDI (Lercara Via Autonomia Siciliana)",
+    "VALLEDOLMO (Piazza Olmo.)"
+   ],
+   "kms": [
+    null,
+    0.0,
+    2.0,
+    39.8
+   ],
+   "trips": [
+    {
+     "corsa": "p6.R1-4264",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "LERCARA FRIDDI (Prolungamento - ASL uffici Via Calì)",
+       "idx": 1,
+       "arr": "13:25",
+       "dep": "13:25"
+      },
+      {
+       "stop": "LERCARA FRIDDI (Lercara Via Autonomia Siciliana)",
+       "idx": 2,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "VALLEDOLMO (Piazza Olmo.)",
+       "idx": 3,
+       "arr": "14:25",
+       "dep": "14:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p6.R2-4262",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Parcheggio Basile)",
+       "idx": 0,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "VALLEDOLMO (Piazza Olmo.)",
+       "idx": 3,
+       "arr": "16:05",
+       "dep": "16:05"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,148 @@
+{
+ "operator": "Autoservizi Salemi",
+ "route_id": "lot1-376",
+ "name": "PARTANNA - PALERMO",
+ "short_name": "376",
+ "source": "t3-tabelle-_orari_da_linea_350_a_new_alia-cerda.pdf#p22",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "PARTANNA",
+    "SANTA NINFA",
+    "GIBELLINA (Via Indipendenza Siciliana)",
+    "GIBELLINA (via Goethe)",
+    "PALERMO (via FAZELLO)",
+    "PALERMO (Via Ernesto Basile)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p22.A1-5306",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PARTANNA",
+       "idx": 0,
+       "arr": "06:00",
+       "dep": "06:00"
+      },
+      {
+       "stop": "SANTA NINFA",
+       "idx": 1,
+       "arr": "06:20",
+       "dep": "06:20"
+      },
+      {
+       "stop": "GIBELLINA (Via Indipendenza Siciliana)",
+       "idx": 2,
+       "arr": "06:40",
+       "dep": "06:40"
+      },
+      {
+       "stop": "GIBELLINA (via Goethe)",
+       "idx": 3,
+       "arr": "06:43",
+       "dep": "06:43"
+      },
+      {
+       "stop": "PALERMO (via FAZELLO)",
+       "idx": 4,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "PALERMO (Via Ernesto Basile)",
+       "idx": 5,
+       "arr": "08:30",
+       "dep": "08:30"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "PALERMO (Via Ernesto Basile)",
+    "PALERMO (via FAZELLO)",
+    "GIBELLINA (via Goethe)",
+    "GIBELLINA (Via Indipendenza Siciliana)",
+    "SANTA NINFA",
+    "PARTANNA"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p22.R1-5308",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Via Ernesto Basile)",
+       "idx": 0,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "PALERMO (via FAZELLO)",
+       "idx": 1,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "GIBELLINA (via Goethe)",
+       "idx": 2,
+       "arr": "16:27",
+       "dep": "16:27"
+      },
+      {
+       "stop": "GIBELLINA (Via Indipendenza Siciliana)",
+       "idx": 3,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "SANTA NINFA",
+       "idx": 4,
+       "arr": "16:40",
+       "dep": "16:40"
+      },
+      {
+       "stop": "PARTANNA",
+       "idx": 5,
+       "arr": "17:00",
+       "dep": "17:00"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

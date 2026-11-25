@@ -1,0 +1,459 @@
+{
+ "operator": "Autolinee Regionali",
+ "route_id": "lot2-71",
+ "name": "CALTAGIRONE - CALTAGIRONE",
+ "short_name": "71",
+ "source": "orario_b2d178879e.pdf#p1",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "CALTAGIRONE (Autostazione)",
+    "CALTAGIRONE (OSPEDALE SANTO PIETRO)",
+    "CALTAGIRONE (SANTO PIETRO)",
+    "CALTAGIRONE (BORGO VENTIMIGLIA)",
+    "CALTAGIRONE (PIANO CHIAZZINA)",
+    "MAZZARRONE (CUCCHI)",
+    "MAZZARRONE (MAZZARONE)",
+    "MAZZARRONE (MAZZARONE BOTTEGHELLE)",
+    "CALTAGIRONE (GRANIERI)",
+    "CALTAGIRONE (Autostazione)"
+   ],
+   "kms": [
+    0.0,
+    20.2,
+    20.5,
+    0.0,
+    0.0,
+    31.2,
+    33.6,
+    36.1,
+    40.1,
+    64.1
+   ],
+   "trips": [
+    {
+     "corsa": "p1.A1-806",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "CALTAGIRONE (OSPEDALE SANTO PIETRO)",
+       "idx": 1,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "CALTAGIRONE (SANTO PIETRO)",
+       "idx": 2,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "CALTAGIRONE (BORGO VENTIMIGLIA)",
+       "idx": 3,
+       "arr": "07:50",
+       "dep": "07:50"
+      },
+      {
+       "stop": "CALTAGIRONE (PIANO CHIAZZINA)",
+       "idx": 4,
+       "arr": "07:55",
+       "dep": "07:55"
+      },
+      {
+       "stop": "MAZZARRONE (CUCCHI)",
+       "idx": 5,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "MAZZARRONE (MAZZARONE)",
+       "idx": 6,
+       "arr": "08:05",
+       "dep": "08:05"
+      },
+      {
+       "stop": "MAZZARRONE (MAZZARONE BOTTEGHELLE)",
+       "idx": 7,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "CALTAGIRONE (GRANIERI)",
+       "idx": 8,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 9,
+       "arr": "08:55",
+       "dep": "08:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p1.A2-815",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FeriFaeleriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 0,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "CALTAGIRONE (SANTO PIETRO)",
+       "idx": 2,
+       "arr": "13:10",
+       "dep": "13:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p1.A3-809",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "in Periodo scLoulnaesdtiìc"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 0,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "CALTAGIRONE (OSPEDALE SANTO PIETRO)",
+       "idx": 1,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "CALTAGIRONE (SANTO PIETRO)",
+       "idx": 2,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "MAZZARRONE (CUCCHI)",
+       "idx": 5,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "MAZZARRONE (MAZZARONE)",
+       "idx": 6,
+       "arr": "14:35",
+       "dep": "14:35"
+      },
+      {
+       "stop": "MAZZARRONE (MAZZARONE BOTTEGHELLE)",
+       "idx": 7,
+       "arr": "14:40",
+       "dep": "14:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p1.A4-810",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "eo sabato"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 0,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "CALTAGIRONE (OSPEDALE SANTO PIETRO)",
+       "idx": 1,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "CALTAGIRONE (SANTO PIETRO)",
+       "idx": 2,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "CALTAGIRONE (BORGO VENTIMIGLIA)",
+       "idx": 3,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "CALTAGIRONE (PIANO CHIAZZINA)",
+       "idx": 4,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "MAZZARRONE (CUCCHI)",
+       "idx": 5,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "MAZZARRONE (MAZZARONE)",
+       "idx": 6,
+       "arr": "14:35",
+       "dep": "14:35"
+      },
+      {
+       "stop": "MAZZARRONE (MAZZARONE BOTTEGHELLE)",
+       "idx": 7,
+       "arr": "14:40",
+       "dep": "14:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p1.A5-823",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialiFeriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 0,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "CALTAGIRONE (SANTO PIETRO)",
+       "idx": 2,
+       "arr": "16:40",
+       "dep": "16:40"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CALTAGIRONE (Autostazione)",
+    "CALTAGIRONE (GRANIERI)",
+    "MAZZARRONE (MAZZARONE BOTTEGHELLE)",
+    "MAZZARRONE (MAZZARONE)",
+    "MAZZARRONE (CUCCHI)",
+    "CALTAGIRONE (PIANO CHIAZZINA)",
+    "CALTAGIRONE (BORGO VENTIMIGLIA)",
+    "CALTAGIRONE (SANTO PIETRO)",
+    "CALTAGIRONE (OSPEDALE SANTO PIETRO)",
+    "CALTAGIRONE (Autostazione)"
+   ],
+   "kms": [
+    null,
+    null,
+    0.0,
+    2.5,
+    4.9,
+    0.107,
+    17.2,
+    19.6,
+    19.9,
+    40.1
+   ],
+   "trips": [
+    {
+     "corsa": "p1.R1-816",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FeriFaeleriale"
+     },
+     "reverse": false,
+     "valid": false,
+     "stops": [
+      {
+       "stop": "CALTAGIRONE (SANTO PIETRO)",
+       "idx": 7,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 9,
+       "arr": "10:48",
+       "dep": "10:48"
+      }
+     ]
+    },
+    {
+     "corsa": "p1.R2-812",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "in Periodo scLoulnaesdtiìc"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MAZZARRONE (MAZZARONE BOTTEGHELLE)",
+       "idx": 2,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "MAZZARRONE (MAZZARONE)",
+       "idx": 3,
+       "arr": "12:35",
+       "dep": "12:35"
+      },
+      {
+       "stop": "MAZZARRONE (CUCCHI)",
+       "idx": 4,
+       "arr": "12:40",
+       "dep": "12:40"
+      },
+      {
+       "stop": "CALTAGIRONE (SANTO PIETRO)",
+       "idx": 7,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "CALTAGIRONE (OSPEDALE SANTO PIETRO)",
+       "idx": 8,
+       "arr": "13:05",
+       "dep": "13:05"
+      },
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 9,
+       "arr": "13:40",
+       "dep": "13:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p1.R3-813",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "eo sabato"
+     },
+     "reverse": false,
+     "valid": false,
+     "stops": [
+      {
+       "stop": "MAZZARRONE (MAZZARONE BOTTEGHELLE)",
+       "idx": 2,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "MAZZARRONE (MAZZARONE)",
+       "idx": 3,
+       "arr": "12:35",
+       "dep": "12:35"
+      },
+      {
+       "stop": "MAZZARRONE (CUCCHI)",
+       "idx": 4,
+       "arr": "12:40",
+       "dep": "12:40"
+      },
+      {
+       "stop": "CALTAGIRONE (PIANO CHIAZZINA)",
+       "idx": 5,
+       "arr": "12:55",
+       "dep": "12:55"
+      },
+      {
+       "stop": "CALTAGIRONE (BORGO VENTIMIGLIA)",
+       "idx": 6,
+       "arr": "12:50",
+       "dep": "12:50"
+      },
+      {
+       "stop": "CALTAGIRONE (SANTO PIETRO)",
+       "idx": 7,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "CALTAGIRONE (OSPEDALE SANTO PIETRO)",
+       "idx": 8,
+       "arr": "13:05",
+       "dep": "13:05"
+      },
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 9,
+       "arr": "13:40",
+       "dep": "13:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p1.R4-824",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ferialiFeriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALTAGIRONE (SANTO PIETRO)",
+       "idx": 7,
+       "arr": "16:45",
+       "dep": "16:45"
+      },
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 9,
+       "arr": "17:25",
+       "dep": "17:25"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

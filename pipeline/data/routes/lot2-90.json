@@ -1,0 +1,134 @@
+{
+ "operator": "Imakara",
+ "route_id": "lot2-90",
+ "name": "MIRABELLA IMBACCARI - CATANIA",
+ "short_name": "90",
+ "source": "orario_b2d178879e.pdf#p7",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "MIRABELLA I (. P. A. MORO)",
+    "CATANIA (CT PIAZZA MARTIRI)"
+   ],
+   "kms": [
+    0.0,
+    82.5
+   ],
+   "trips": [
+    {
+     "corsa": "p7.A1-885",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MIRABELLA I (. P. A. MORO)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "CATANIA (CT PIAZZA MARTIRI)",
+       "idx": 1,
+       "arr": "08:40",
+       "dep": "08:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p7.A2-8252",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "Festivo escluso luglio e agosto"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MIRABELLA I (. P. A. MORO)",
+       "idx": 0,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "CATANIA (CT PIAZZA MARTIRI)",
+       "idx": 1,
+       "arr": "16:30",
+       "dep": "16:30"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CATANIA (CT PIAZZA MARTIRI)",
+    "MIRABELLA I (. P. A. MORO)"
+   ],
+   "kms": [
+    0.0,
+    82.5
+   ],
+   "trips": [
+    {
+     "corsa": "p7.R1-886",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (CT PIAZZA MARTIRI)",
+       "idx": 0,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "MIRABELLA I (. P. A. MORO)",
+       "idx": 1,
+       "arr": "15:40",
+       "dep": "15:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p7.R2-8253",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "Festivo escluso luglio e agosto"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (CT PIAZZA MARTIRI)",
+       "idx": 0,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "MIRABELLA I (. P. A. MORO)",
+       "idx": 1,
+       "arr": "18:00",
+       "dep": "18:00"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

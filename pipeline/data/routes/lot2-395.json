@@ -1,0 +1,310 @@
+{
+ "operator": "Consorzio Stabile Siciliano Mobilità Est (Lotto 2)",
+ "route_id": "lot2-395",
+ "name": "CATANIA - LENTINI - PEDAGAGGI - BUCCHERI - PALAZZOLO",
+ "short_name": "395",
+ "source": "orario_b2d178879e.pdf#p83",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "Palazzolo (piazza Senatore Italia)",
+    "Buscemi (via Principe Umberto)",
+    "Buccheri (piazza Roma)",
+    "Pedagaggi",
+    "Carlentini (via Scavonetti)",
+    "Lentini (piazza dei Sofisti)",
+    "Aeroporto Catania - Fontanarossa",
+    "Catania Terminal Bus Via Archimede"
+   ],
+   "kms": [
+    0.0,
+    9.7,
+    19.1,
+    34.0,
+    48.0,
+    53.0,
+    76.0,
+    83.5
+   ],
+   "trips": [
+    {
+     "corsa": "p83.A1-7488",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "1 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Palazzolo (piazza Senatore Italia)",
+       "idx": 0,
+       "arr": "06:25",
+       "dep": "06:25"
+      },
+      {
+       "stop": "Buscemi (via Principe Umberto)",
+       "idx": 1,
+       "arr": "06:40",
+       "dep": "06:40"
+      },
+      {
+       "stop": "Buccheri (piazza Roma)",
+       "idx": 2,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "Pedagaggi",
+       "idx": 3,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "Carlentini (via Scavonetti)",
+       "idx": 4,
+       "arr": "07:50",
+       "dep": "07:50"
+      },
+      {
+       "stop": "Lentini (piazza dei Sofisti)",
+       "idx": 5,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "Aeroporto Catania - Fontanarossa",
+       "idx": 6,
+       "arr": "08:55",
+       "dep": "08:55"
+      },
+      {
+       "stop": "Catania Terminal Bus Via Archimede",
+       "idx": 7,
+       "arr": "09:10",
+       "dep": "09:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p83.A2-7489",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "C O R S E 3 5 7 FERIALE n e l P e r io d o Scolatico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Palazzolo (piazza Senatore Italia)",
+       "idx": 0,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "Buccheri (piazza Roma)",
+       "idx": 2,
+       "arr": "15:10",
+       "dep": "15:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p83.A3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "9"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Palazzolo (piazza Senatore Italia)",
+       "idx": 0,
+       "arr": "00:00",
+       "dep": "00:00"
+      },
+      {
+       "stop": "Buccheri (piazza Roma)",
+       "idx": 2,
+       "arr": "19:10",
+       "dep": "19:10"
+      },
+      {
+       "stop": "Pedagaggi",
+       "idx": 3,
+       "arr": "34:00",
+       "dep": "34:00"
+      },
+      {
+       "stop": "Carlentini (via Scavonetti)",
+       "idx": 4,
+       "arr": "48:00",
+       "dep": "48:00"
+      },
+      {
+       "stop": "Lentini (piazza dei Sofisti)",
+       "idx": 5,
+       "arr": "53:00",
+       "dep": "53:00"
+      },
+      {
+       "stop": "Aeroporto Catania - Fontanarossa",
+       "idx": 6,
+       "arr": "76:00",
+       "dep": "76:00"
+      },
+      {
+       "stop": "Catania Terminal Bus Via Archimede",
+       "idx": 7,
+       "arr": "83:50",
+       "dep": "83:50"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "Catania Terminal Bus Via Archimede",
+    "Aeroporto Catania - Fontanarossa",
+    "Lentini (piazza dei Sofisti)",
+    "Carlentini (via Scavonetti)",
+    "Pedagaggi",
+    "Buccheri (piazza Roma)",
+    "Buscemi (via Principe Umberto)",
+    "Palazzolo (piazza Senatore Italia)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p83.R1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Buccheri (piazza Roma)",
+       "idx": 5,
+       "arr": "00:00",
+       "dep": "00:00"
+      },
+      {
+       "stop": "Palazzolo (piazza Senatore Italia)",
+       "idx": 7,
+       "arr": "19:10",
+       "dep": "19:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p83.R2-7492",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "2 FERIALE nel Periodo Scolatico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Buccheri (piazza Roma)",
+       "idx": 5,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "Palazzolo (piazza Senatore Italia)",
+       "idx": 7,
+       "arr": "08:10",
+       "dep": "08:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p83.R3-7491",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "4 6 8 10 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Catania Terminal Bus Via Archimede",
+       "idx": 0,
+       "arr": "13:25",
+       "dep": "13:25"
+      },
+      {
+       "stop": "Aeroporto Catania - Fontanarossa",
+       "idx": 1,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "Lentini (piazza dei Sofisti)",
+       "idx": 2,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "Carlentini (via Scavonetti)",
+       "idx": 3,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "Pedagaggi",
+       "idx": 4,
+       "arr": "15:10",
+       "dep": "15:10"
+      },
+      {
+       "stop": "Buccheri (piazza Roma)",
+       "idx": 5,
+       "arr": "15:35",
+       "dep": "15:35"
+      },
+      {
+       "stop": "Buscemi (via Principe Umberto)",
+       "idx": 6,
+       "arr": "15:50",
+       "dep": "15:50"
+      },
+      {
+       "stop": "Palazzolo (piazza Senatore Italia)",
+       "idx": 7,
+       "arr": "16:10",
+       "dep": "16:10"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

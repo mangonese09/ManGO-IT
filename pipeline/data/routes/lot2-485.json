@@ -1,0 +1,174 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "lot2-485",
+ "name": "SIRACUSA - PALAZZOLO - VIZZINI - CALTAGIRONE",
+ "short_name": "485",
+ "source": "orario_b2d178879e.pdf#p92",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "Siracusa (via Rubino)",
+    "Canicattini B (via Vittorio Emanuele)",
+    "Palazzolo (piazza Senatore Italia)",
+    "Buscemi (via Principe Umberto)",
+    "Buccheri (piazza Roma)",
+    "Vizzini (piazza Umberto i°)",
+    "Grammichele (via De Pretis)",
+    "Caltagirone (stazione Autolinee)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p92.A1-7249",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "C O R S E 1 3 5 7 9 FERIALE - - - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "06:55",
+       "dep": "06:55"
+      },
+      {
+       "stop": "Canicattini B (via Vittorio Emanuele)",
+       "idx": 1,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "Palazzolo (piazza Senatore Italia)",
+       "idx": 2,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "Buscemi (via Principe Umberto)",
+       "idx": 3,
+       "arr": "08:25",
+       "dep": "08:25"
+      },
+      {
+       "stop": "Buccheri (piazza Roma)",
+       "idx": 4,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "Vizzini (piazza Umberto i°)",
+       "idx": 5,
+       "arr": "09:10",
+       "dep": "09:10"
+      },
+      {
+       "stop": "Grammichele (via De Pretis)",
+       "idx": 6,
+       "arr": "09:40",
+       "dep": "09:40"
+      },
+      {
+       "stop": "Caltagirone (stazione Autolinee)",
+       "idx": 7,
+       "arr": "10:10",
+       "dep": "10:10"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "Caltagirone (stazione Autolinee)",
+    "Grammichele (via De Pretis)",
+    "Vizzini (piazza Umberto i°)",
+    "Buccheri (piazza Roma)",
+    "Buscemi (via Principe Umberto)",
+    "Palazzolo (piazza Senatore Italia)",
+    "Canicattini B (via Vittorio Emanuele)",
+    "Siracusa (via Rubino)"
+   ],
+   "kms": [
+    0.0,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    102.4
+   ],
+   "trips": [
+    {
+     "corsa": "p92.R1-7250",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "2 4 6 8 10 FERIALE - - - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Caltagirone (stazione Autolinee)",
+       "idx": 0,
+       "arr": "11:15",
+       "dep": "11:15"
+      },
+      {
+       "stop": "Grammichele (via De Pretis)",
+       "idx": 1,
+       "arr": "11:45",
+       "dep": "11:45"
+      },
+      {
+       "stop": "Vizzini (piazza Umberto i°)",
+       "idx": 2,
+       "arr": "12:15",
+       "dep": "12:15"
+      },
+      {
+       "stop": "Buccheri (piazza Roma)",
+       "idx": 3,
+       "arr": "12:45",
+       "dep": "12:45"
+      },
+      {
+       "stop": "Buscemi (via Principe Umberto)",
+       "idx": 4,
+       "arr": "13:05",
+       "dep": "13:05"
+      },
+      {
+       "stop": "Palazzolo (piazza Senatore Italia)",
+       "idx": 5,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 7,
+       "arr": "14:05",
+       "dep": "14:05"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

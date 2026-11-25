@@ -1,0 +1,148 @@
+{
+ "operator": "TARANTOLA E CUFFARO SRL",
+ "route_id": "lot1-372",
+ "name": "CALATAFIMI SEGESTA - LOC. SASI - - ALCAMO - SCALO FS. -",
+ "short_name": "372",
+ "source": "t3-tabelle-_orari_da_linea_350_a_new_alia-cerda.pdf#p21",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "CALATAFIMI (Sasi - Via Piersanti Mattarella)",
+    "CALATAFIMI (Via Affacciatura)",
+    "CALATAFIMI (Via A. De Gasperi)",
+    "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+    "CALATAFIMI (Scalo FS)",
+    "ALCAMO (Scalo FS)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p21.A1-5281",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALATAFIMI (Sasi - Via Piersanti Mattarella)",
+       "idx": 0,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "CALATAFIMI (Via Affacciatura)",
+       "idx": 1,
+       "arr": "09:32",
+       "dep": "09:32"
+      },
+      {
+       "stop": "CALATAFIMI (Via A. De Gasperi)",
+       "idx": 2,
+       "arr": "09:34",
+       "dep": "09:34"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 3,
+       "arr": "09:40",
+       "dep": "09:40"
+      },
+      {
+       "stop": "CALATAFIMI (Scalo FS)",
+       "idx": 4,
+       "arr": "09:50",
+       "dep": "09:50"
+      },
+      {
+       "stop": "ALCAMO (Scalo FS)",
+       "idx": 5,
+       "arr": "10:00",
+       "dep": "10:00"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "ALCAMO (Scalo FS)",
+    "CALATAFIMI (Scalo FS)",
+    "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+    "CALATAFIMI (Via A. De Gasperi)",
+    "CALATAFIMI (Via Affacciatura)",
+    "CALATAFIMI (Sasi - Via Piersanti Mattarella)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p21.R1-5289",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALCAMO (Scalo FS)",
+       "idx": 0,
+       "arr": "10:00",
+       "dep": "10:00"
+      },
+      {
+       "stop": "CALATAFIMI (Scalo FS)",
+       "idx": 1,
+       "arr": "10:10",
+       "dep": "10:10"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 2,
+       "arr": "10:20",
+       "dep": "10:20"
+      },
+      {
+       "stop": "CALATAFIMI (Via A. De Gasperi)",
+       "idx": 3,
+       "arr": "10:26",
+       "dep": "10:26"
+      },
+      {
+       "stop": "CALATAFIMI (Via Affacciatura)",
+       "idx": 4,
+       "arr": "10:28",
+       "dep": "10:28"
+      },
+      {
+       "stop": "CALATAFIMI (Sasi - Via Piersanti Mattarella)",
+       "idx": 5,
+       "arr": "10:30",
+       "dep": "10:30"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

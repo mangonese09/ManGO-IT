@@ -1,0 +1,84 @@
+{
+ "operator": "BUS AWAY S.R.L.",
+ "route_id": "lot1-320",
+ "name": "CASTRONUOVO DI SICILIA - CAMMARA",
+ "short_name": "320",
+ "source": "t2-tabelle_-orari_da_linea_299_a_linea_344.pdf#p19",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "CASTRONOVO D.SICILIA (CASTRONOVO DI SICILIA - CALVARIO)",
+    "CAMMARATA (STAZ.F.S. DI CAMMARATA)"
+   ],
+   "kms": [
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p19.A1-4363",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CASTRONOVO D.SICILIA (CASTRONOVO DI SICILIA - CALVARIO)",
+       "idx": 0,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "CAMMARATA (STAZ.F.S. DI CAMMARATA)",
+       "idx": 1,
+       "arr": "09:30",
+       "dep": "09:30"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CAMMARATA (STAZ.F.S. DI CAMMARATA)",
+    "CASTRONOVO D.SICILIA (CASTRONOVO DI SICILIA - CALVARIO)"
+   ],
+   "kms": [
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p19.R1-4364",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CAMMARATA (STAZ.F.S. DI CAMMARATA)",
+       "idx": 0,
+       "arr": "09:40",
+       "dep": "09:40"
+      },
+      {
+       "stop": "CASTRONOVO D.SICILIA (CASTRONOVO DI SICILIA - CALVARIO)",
+       "idx": 1,
+       "arr": "10:10",
+       "dep": "10:10"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1152 @@
+{
+ "operator": "Tumino",
+ "route_id": "lot2-352-p5",
+ "name": "RAGUSA - SANTA CROCE CAMERIN",
+ "short_name": "352",
+ "source": "orario_b2d178879e.pdf#p40",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "RAGUSA",
+    "RAGUSA (FALLICA)",
+    "RAGUSA (MAGAZZINAZZI)",
+    "RAGUSA (Bv. S.CROCE CAMERINA)",
+    "RAGUSA (MARINA DI RAGUSA)",
+    "SANTA CROCE CAMERINA (PUNTA SECCA)",
+    "SANTA CROCE CAMERINA (SANTA CROCE C.)",
+    "RAGUSA (KAMARINA)"
+   ],
+   "kms": [
+    0.0,
+    4.0,
+    11.0,
+    18.0,
+    25.0,
+    32.0,
+    38.0,
+    48.0
+   ],
+   "trips": [
+    {
+     "corsa": "p40.A1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "AT41 F e r i a l e d a i n i z i o lu g l i o a m e tà s e tt e m b r e"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RAGUSA",
+       "idx": 0,
+       "arr": "15:15",
+       "dep": "15:15"
+      },
+      {
+       "stop": "RAGUSA (FALLICA)",
+       "idx": 1,
+       "arr": "15:20",
+       "dep": "15:20"
+      },
+      {
+       "stop": "RAGUSA (MAGAZZINAZZI)",
+       "idx": 2,
+       "arr": "15:30",
+       "dep": "15:30"
+      },
+      {
+       "stop": "RAGUSA (Bv. S.CROCE CAMERINA)",
+       "idx": 3,
+       "arr": "15:35",
+       "dep": "15:35"
+      },
+      {
+       "stop": "RAGUSA (MARINA DI RAGUSA)",
+       "idx": 4,
+       "arr": "15:45",
+       "dep": "15:45"
+      },
+      {
+       "stop": "SANTA CROCE CAMERINA (PUNTA SECCA)",
+       "idx": 5,
+       "arr": "15:55",
+       "dep": "15:55"
+      },
+      {
+       "stop": "SANTA CROCE CAMERINA (SANTA CROCE C.)",
+       "idx": 6,
+       "arr": "16:05",
+       "dep": "16:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p40.A2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "AT49 F e r ia le d a m e t à s e tt e m b r e a fi n e o tt o b r e"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RAGUSA",
+       "idx": 0,
+       "arr": "15:15",
+       "dep": "15:15"
+      },
+      {
+       "stop": "RAGUSA (FALLICA)",
+       "idx": 1,
+       "arr": "15:20",
+       "dep": "15:20"
+      },
+      {
+       "stop": "RAGUSA (MAGAZZINAZZI)",
+       "idx": 2,
+       "arr": "15:30",
+       "dep": "15:30"
+      },
+      {
+       "stop": "RAGUSA (Bv. S.CROCE CAMERINA)",
+       "idx": 3,
+       "arr": "15:35",
+       "dep": "15:35"
+      },
+      {
+       "stop": "RAGUSA (MARINA DI RAGUSA)",
+       "idx": 4,
+       "arr": "15:45",
+       "dep": "15:45"
+      },
+      {
+       "stop": "SANTA CROCE CAMERINA (SANTA CROCE C.)",
+       "idx": 6,
+       "arr": "16:05",
+       "dep": "16:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p40.A3-4977",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "F e r ia l e d a i n i z i o n o v e m b r e a fi n e a p r i le"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RAGUSA",
+       "idx": 0,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "RAGUSA (FALLICA)",
+       "idx": 1,
+       "arr": "16:05",
+       "dep": "16:05"
+      },
+      {
+       "stop": "RAGUSA (MAGAZZINAZZI)",
+       "idx": 2,
+       "arr": "16:15",
+       "dep": "16:15"
+      },
+      {
+       "stop": "RAGUSA (Bv. S.CROCE CAMERINA)",
+       "idx": 3,
+       "arr": "16:20",
+       "dep": "16:20"
+      },
+      {
+       "stop": "RAGUSA (MARINA DI RAGUSA)",
+       "idx": 4,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "SANTA CROCE CAMERINA (PUNTA SECCA)",
+       "idx": 5,
+       "arr": "16:40",
+       "dep": "16:40"
+      },
+      {
+       "stop": "SANTA CROCE CAMERINA (SANTA CROCE C.)",
+       "idx": 6,
+       "arr": "16:50",
+       "dep": "16:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p40.A4-5003",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "F e r ia l e d a i n i z i o ma g g i o a fi n e g iu g n o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RAGUSA",
+       "idx": 0,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "RAGUSA (FALLICA)",
+       "idx": 1,
+       "arr": "16:05",
+       "dep": "16:05"
+      },
+      {
+       "stop": "RAGUSA (MAGAZZINAZZI)",
+       "idx": 2,
+       "arr": "16:15",
+       "dep": "16:15"
+      },
+      {
+       "stop": "RAGUSA (Bv. S.CROCE CAMERINA)",
+       "idx": 3,
+       "arr": "16:20",
+       "dep": "16:20"
+      },
+      {
+       "stop": "RAGUSA (MARINA DI RAGUSA)",
+       "idx": 4,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "SANTA CROCE CAMERINA (PUNTA SECCA)",
+       "idx": 5,
+       "arr": "16:40",
+       "dep": "16:40"
+      },
+      {
+       "stop": "SANTA CROCE CAMERINA (SANTA CROCE C.)",
+       "idx": 6,
+       "arr": "16:50",
+       "dep": "16:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p40.A5-8538",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "F e r i a l e d a i n i z i o lu g l i o a m e tà s e tt e m b r e"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RAGUSA",
+       "idx": 0,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "RAGUSA (FALLICA)",
+       "idx": 1,
+       "arr": "16:05",
+       "dep": "16:05"
+      },
+      {
+       "stop": "RAGUSA (MAGAZZINAZZI)",
+       "idx": 2,
+       "arr": "16:15",
+       "dep": "16:15"
+      },
+      {
+       "stop": "RAGUSA (Bv. S.CROCE CAMERINA)",
+       "idx": 3,
+       "arr": "16:20",
+       "dep": "16:20"
+      },
+      {
+       "stop": "RAGUSA (MARINA DI RAGUSA)",
+       "idx": 4,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "SANTA CROCE CAMERINA (PUNTA SECCA)",
+       "idx": 5,
+       "arr": "16:40",
+       "dep": "16:40"
+      },
+      {
+       "stop": "SANTA CROCE CAMERINA (SANTA CROCE C.)",
+       "idx": 6,
+       "arr": "16:50",
+       "dep": "16:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p40.A6-8550",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "F e r ia le d a m e t à s e tt e m b r e a fi n e o tt o b r e"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RAGUSA",
+       "idx": 0,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "RAGUSA (FALLICA)",
+       "idx": 1,
+       "arr": "16:05",
+       "dep": "16:05"
+      },
+      {
+       "stop": "RAGUSA (MAGAZZINAZZI)",
+       "idx": 2,
+       "arr": "16:15",
+       "dep": "16:15"
+      },
+      {
+       "stop": "RAGUSA (Bv. S.CROCE CAMERINA)",
+       "idx": 3,
+       "arr": "16:20",
+       "dep": "16:20"
+      },
+      {
+       "stop": "RAGUSA (MARINA DI RAGUSA)",
+       "idx": 4,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "SANTA CROCE CAMERINA (PUNTA SECCA)",
+       "idx": 5,
+       "arr": "16:40",
+       "dep": "16:40"
+      },
+      {
+       "stop": "SANTA CROCE CAMERINA (SANTA CROCE C.)",
+       "idx": 6,
+       "arr": "16:50",
+       "dep": "16:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p40.A7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "AT42 F e r i a l e d a i n i z i o lu g l i o a m e tà s e tt e m b r e"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RAGUSA",
+       "idx": 0,
+       "arr": "16:15",
+       "dep": "16:15"
+      },
+      {
+       "stop": "RAGUSA (FALLICA)",
+       "idx": 1,
+       "arr": "16:20",
+       "dep": "16:20"
+      },
+      {
+       "stop": "RAGUSA (MAGAZZINAZZI)",
+       "idx": 2,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "RAGUSA (Bv. S.CROCE CAMERINA)",
+       "idx": 3,
+       "arr": "16:35",
+       "dep": "16:35"
+      },
+      {
+       "stop": "RAGUSA (MARINA DI RAGUSA)",
+       "idx": 4,
+       "arr": "16:45",
+       "dep": "16:45"
+      },
+      {
+       "stop": "SANTA CROCE CAMERINA (PUNTA SECCA)",
+       "idx": 5,
+       "arr": "16:55",
+       "dep": "16:55"
+      },
+      {
+       "stop": "SANTA CROCE CAMERINA (SANTA CROCE C.)",
+       "idx": 6,
+       "arr": "17:05",
+       "dep": "17:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p40.A8-8539",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "G i o r n a l i e r a d a in i z i o l u g l i o a m e t à s e tt e m b r e"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RAGUSA",
+       "idx": 0,
+       "arr": "17:00",
+       "dep": "17:00"
+      },
+      {
+       "stop": "RAGUSA (FALLICA)",
+       "idx": 1,
+       "arr": "17:05",
+       "dep": "17:05"
+      },
+      {
+       "stop": "RAGUSA (MAGAZZINAZZI)",
+       "idx": 2,
+       "arr": "17:15",
+       "dep": "17:15"
+      },
+      {
+       "stop": "RAGUSA (Bv. S.CROCE CAMERINA)",
+       "idx": 3,
+       "arr": "17:20",
+       "dep": "17:20"
+      },
+      {
+       "stop": "RAGUSA (MARINA DI RAGUSA)",
+       "idx": 4,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "SANTA CROCE CAMERINA (PUNTA SECCA)",
+       "idx": 5,
+       "arr": "17:40",
+       "dep": "17:40"
+      },
+      {
+       "stop": "SANTA CROCE CAMERINA (SANTA CROCE C.)",
+       "idx": 6,
+       "arr": "17:50",
+       "dep": "17:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p40.A9",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "AT50 F e r ia le d a m e t à s e tt e m b r e a fi n e o tt o b r e"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RAGUSA",
+       "idx": 0,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "RAGUSA (FALLICA)",
+       "idx": 1,
+       "arr": "17:35",
+       "dep": "17:35"
+      },
+      {
+       "stop": "RAGUSA (MAGAZZINAZZI)",
+       "idx": 2,
+       "arr": "17:45",
+       "dep": "17:45"
+      },
+      {
+       "stop": "RAGUSA (Bv. S.CROCE CAMERINA)",
+       "idx": 3,
+       "arr": "17:50",
+       "dep": "17:50"
+      },
+      {
+       "stop": "RAGUSA (MARINA DI RAGUSA)",
+       "idx": 4,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "SANTA CROCE CAMERINA (PUNTA SECCA)",
+       "idx": 5,
+       "arr": "18:10",
+       "dep": "18:10"
+      },
+      {
+       "stop": "SANTA CROCE CAMERINA (SANTA CROCE C.)",
+       "idx": 6,
+       "arr": "18:20",
+       "dep": "18:20"
+      },
+      {
+       "stop": "RAGUSA (KAMARINA)",
+       "idx": 7,
+       "arr": "18:30",
+       "dep": "18:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p40.A10",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "AT26 F e r ia l e d a i n i z i o ma g g i o a fi n e g iu g n o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RAGUSA",
+       "idx": 0,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "RAGUSA (FALLICA)",
+       "idx": 1,
+       "arr": "17:35",
+       "dep": "17:35"
+      },
+      {
+       "stop": "RAGUSA (MAGAZZINAZZI)",
+       "idx": 2,
+       "arr": "17:45",
+       "dep": "17:45"
+      },
+      {
+       "stop": "RAGUSA (Bv. S.CROCE CAMERINA)",
+       "idx": 3,
+       "arr": "17:50",
+       "dep": "17:50"
+      },
+      {
+       "stop": "RAGUSA (MARINA DI RAGUSA)",
+       "idx": 4,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "SANTA CROCE CAMERINA (SANTA CROCE C.)",
+       "idx": 6,
+       "arr": "18:20",
+       "dep": "18:20"
+      },
+      {
+       "stop": "RAGUSA (KAMARINA)",
+       "idx": 7,
+       "arr": "18:30",
+       "dep": "18:30"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "RAGUSA (KAMARINA)",
+    "SANTA CROCE CAMERINA (SANTA CROCE C.)",
+    "SANTA CROCE CAMERINA (PUNTA SECCA)",
+    "RAGUSA (MARINA DI RAGUSA)",
+    "RAGUSA (Bv. S.CROCE CAMERINA)",
+    "RAGUSA (MAGAZZINAZZI)",
+    "RAGUSA (FALLICA)",
+    "RAGUSA"
+   ],
+   "kms": [
+    0.0,
+    10.0,
+    16.0,
+    23.0,
+    30.0,
+    37.0,
+    44.0,
+    48.0
+   ],
+   "trips": [
+    {
+     "corsa": "p40.R1-5024",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "F e r i a l e d a i n i z i o lu g l i o a m e tà s e tt e m b r e"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SANTA CROCE CAMERINA (SANTA CROCE C.)",
+       "idx": 1,
+       "arr": "17:00",
+       "dep": "17:00"
+      },
+      {
+       "stop": "SANTA CROCE CAMERINA (PUNTA SECCA)",
+       "idx": 2,
+       "arr": "17:10",
+       "dep": "17:10"
+      },
+      {
+       "stop": "RAGUSA (MARINA DI RAGUSA)",
+       "idx": 3,
+       "arr": "17:20",
+       "dep": "17:20"
+      },
+      {
+       "stop": "RAGUSA (Bv. S.CROCE CAMERINA)",
+       "idx": 4,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "RAGUSA (MAGAZZINAZZI)",
+       "idx": 5,
+       "arr": "17:35",
+       "dep": "17:35"
+      },
+      {
+       "stop": "RAGUSA (FALLICA)",
+       "idx": 6,
+       "arr": "17:45",
+       "dep": "17:45"
+      },
+      {
+       "stop": "RAGUSA",
+       "idx": 7,
+       "arr": "17:50",
+       "dep": "17:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p40.R2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "AT24 F e r ia l e d a i n i z i o n o v e m b r e a fi n e a p r i le"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SANTA CROCE CAMERINA (SANTA CROCE C.)",
+       "idx": 1,
+       "arr": "17:15",
+       "dep": "17:15"
+      },
+      {
+       "stop": "RAGUSA (MARINA DI RAGUSA)",
+       "idx": 3,
+       "arr": "17:35",
+       "dep": "17:35"
+      },
+      {
+       "stop": "RAGUSA (Bv. S.CROCE CAMERINA)",
+       "idx": 4,
+       "arr": "17:45",
+       "dep": "17:45"
+      },
+      {
+       "stop": "RAGUSA (MAGAZZINAZZI)",
+       "idx": 5,
+       "arr": "17:50",
+       "dep": "17:50"
+      },
+      {
+       "stop": "RAGUSA (FALLICA)",
+       "idx": 6,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "RAGUSA",
+       "idx": 7,
+       "arr": "18:05",
+       "dep": "18:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p40.R3",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "AT38 G i o r n a l i e r a d a in i z i o l u g l i o a m e t à s e tt e m b r e"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RAGUSA (KAMARINA)",
+       "idx": 0,
+       "arr": "17:15",
+       "dep": "17:15"
+      },
+      {
+       "stop": "SANTA CROCE CAMERINA (SANTA CROCE C.)",
+       "idx": 1,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "SANTA CROCE CAMERINA (PUNTA SECCA)",
+       "idx": 2,
+       "arr": "17:40",
+       "dep": "17:40"
+      },
+      {
+       "stop": "RAGUSA (MARINA DI RAGUSA)",
+       "idx": 3,
+       "arr": "17:50",
+       "dep": "17:50"
+      },
+      {
+       "stop": "RAGUSA (Bv. S.CROCE CAMERINA)",
+       "idx": 4,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "RAGUSA (MAGAZZINAZZI)",
+       "idx": 5,
+       "arr": "18:05",
+       "dep": "18:05"
+      },
+      {
+       "stop": "RAGUSA (FALLICA)",
+       "idx": 6,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "RAGUSA",
+       "idx": 7,
+       "arr": "18:20",
+       "dep": "18:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p40.R4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "AT31 F e r ia l e d a i n i z i o ma g g i o a fi n e g iu g n o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SANTA CROCE CAMERINA (SANTA CROCE C.)",
+       "idx": 1,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "RAGUSA (MARINA DI RAGUSA)",
+       "idx": 3,
+       "arr": "17:50",
+       "dep": "17:50"
+      },
+      {
+       "stop": "RAGUSA (Bv. S.CROCE CAMERINA)",
+       "idx": 4,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "RAGUSA (MAGAZZINAZZI)",
+       "idx": 5,
+       "arr": "18:05",
+       "dep": "18:05"
+      },
+      {
+       "stop": "RAGUSA (FALLICA)",
+       "idx": 6,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "RAGUSA",
+       "idx": 7,
+       "arr": "18:20",
+       "dep": "18:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p40.R5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "AT35 F e r ia l e d a i n i z i o ma g g i o a fi n e g iu g n o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SANTA CROCE CAMERINA (SANTA CROCE C.)",
+       "idx": 1,
+       "arr": "17:45",
+       "dep": "17:45"
+      },
+      {
+       "stop": "RAGUSA (MARINA DI RAGUSA)",
+       "idx": 3,
+       "arr": "18:05",
+       "dep": "18:05"
+      },
+      {
+       "stop": "RAGUSA (Bv. S.CROCE CAMERINA)",
+       "idx": 4,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "RAGUSA (MAGAZZINAZZI)",
+       "idx": 5,
+       "arr": "18:20",
+       "dep": "18:20"
+      },
+      {
+       "stop": "RAGUSA (FALLICA)",
+       "idx": 6,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "RAGUSA",
+       "idx": 7,
+       "arr": "18:35",
+       "dep": "18:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p40.R6",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "AT54 F e r ia le d a m e t à s e tt e m b r e a fi n e o tt o b r e"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SANTA CROCE CAMERINA (SANTA CROCE C.)",
+       "idx": 1,
+       "arr": "17:45",
+       "dep": "17:45"
+      },
+      {
+       "stop": "SANTA CROCE CAMERINA (PUNTA SECCA)",
+       "idx": 2,
+       "arr": "17:55",
+       "dep": "17:55"
+      },
+      {
+       "stop": "RAGUSA (MARINA DI RAGUSA)",
+       "idx": 3,
+       "arr": "18:05",
+       "dep": "18:05"
+      },
+      {
+       "stop": "RAGUSA (Bv. S.CROCE CAMERINA)",
+       "idx": 4,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "RAGUSA (MAGAZZINAZZI)",
+       "idx": 5,
+       "arr": "18:20",
+       "dep": "18:20"
+      },
+      {
+       "stop": "RAGUSA (FALLICA)",
+       "idx": 6,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "RAGUSA",
+       "idx": 7,
+       "arr": "18:35",
+       "dep": "18:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p40.R7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "AT17 F e r ia le d a m e t à s e tt e m b r e a fi n e o tt o b r e"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SANTA CROCE CAMERINA (SANTA CROCE C.)",
+       "idx": 1,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "SANTA CROCE CAMERINA (PUNTA SECCA)",
+       "idx": 2,
+       "arr": "18:10",
+       "dep": "18:10"
+      },
+      {
+       "stop": "RAGUSA (MARINA DI RAGUSA)",
+       "idx": 3,
+       "arr": "18:20",
+       "dep": "18:20"
+      },
+      {
+       "stop": "RAGUSA (Bv. S.CROCE CAMERINA)",
+       "idx": 4,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "RAGUSA (MAGAZZINAZZI)",
+       "idx": 5,
+       "arr": "18:35",
+       "dep": "18:35"
+      },
+      {
+       "stop": "RAGUSA (FALLICA)",
+       "idx": 6,
+       "arr": "18:45",
+       "dep": "18:45"
+      },
+      {
+       "stop": "RAGUSA",
+       "idx": 7,
+       "arr": "18:50",
+       "dep": "18:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p40.R8-8542",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "G i o r n a l i e r a d a in i z i o l u g l i o a m e t à s e tt e m b r e"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SANTA CROCE CAMERINA (SANTA CROCE C.)",
+       "idx": 1,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "SANTA CROCE CAMERINA (PUNTA SECCA)",
+       "idx": 2,
+       "arr": "18:40",
+       "dep": "18:40"
+      },
+      {
+       "stop": "RAGUSA (MARINA DI RAGUSA)",
+       "idx": 3,
+       "arr": "18:50",
+       "dep": "18:50"
+      },
+      {
+       "stop": "RAGUSA (Bv. S.CROCE CAMERINA)",
+       "idx": 4,
+       "arr": "19:00",
+       "dep": "19:00"
+      },
+      {
+       "stop": "RAGUSA (MAGAZZINAZZI)",
+       "idx": 5,
+       "arr": "19:05",
+       "dep": "19:05"
+      },
+      {
+       "stop": "RAGUSA (FALLICA)",
+       "idx": 6,
+       "arr": "19:15",
+       "dep": "19:15"
+      },
+      {
+       "stop": "RAGUSA",
+       "idx": 7,
+       "arr": "19:20",
+       "dep": "19:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p40.R9",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "AT40 G i o r n a l i e r a d a in i z i o l u g l i o a m e t à s e tt e m b r e"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SANTA CROCE CAMERINA (SANTA CROCE C.)",
+       "idx": 1,
+       "arr": "18:45",
+       "dep": "18:45"
+      },
+      {
+       "stop": "SANTA CROCE CAMERINA (PUNTA SECCA)",
+       "idx": 2,
+       "arr": "18:55",
+       "dep": "18:55"
+      },
+      {
+       "stop": "RAGUSA (MARINA DI RAGUSA)",
+       "idx": 3,
+       "arr": "19:00",
+       "dep": "19:00"
+      },
+      {
+       "stop": "RAGUSA (Bv. S.CROCE CAMERINA)",
+       "idx": 4,
+       "arr": "19:15",
+       "dep": "19:15"
+      },
+      {
+       "stop": "RAGUSA (MAGAZZINAZZI)",
+       "idx": 5,
+       "arr": "19:20",
+       "dep": "19:20"
+      },
+      {
+       "stop": "RAGUSA (FALLICA)",
+       "idx": 6,
+       "arr": "19:30",
+       "dep": "19:30"
+      },
+      {
+       "stop": "RAGUSA",
+       "idx": 7,
+       "arr": "19:35",
+       "dep": "19:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p40.R10-5015",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "G i o r n a l ie r a d a i n i z i o m a g g i o a fi n e g i u g n o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RAGUSA (KAMARINA)",
+       "idx": 0,
+       "arr": "19:01",
+       "dep": "19:01"
+      },
+      {
+       "stop": "SANTA CROCE CAMERINA (SANTA CROCE C.)",
+       "idx": 1,
+       "arr": "19:30",
+       "dep": "19:30"
+      },
+      {
+       "stop": "SANTA CROCE CAMERINA (PUNTA SECCA)",
+       "idx": 2,
+       "arr": "19:40",
+       "dep": "19:40"
+      },
+      {
+       "stop": "RAGUSA (MARINA DI RAGUSA)",
+       "idx": 3,
+       "arr": "19:50",
+       "dep": "19:50"
+      },
+      {
+       "stop": "RAGUSA (Bv. S.CROCE CAMERINA)",
+       "idx": 4,
+       "arr": "20:00",
+       "dep": "20:00"
+      },
+      {
+       "stop": "RAGUSA (MAGAZZINAZZI)",
+       "idx": 5,
+       "arr": "20:05",
+       "dep": "20:05"
+      },
+      {
+       "stop": "RAGUSA (FALLICA)",
+       "idx": 6,
+       "arr": "20:15",
+       "dep": "20:15"
+      },
+      {
+       "stop": "RAGUSA",
+       "idx": 7,
+       "arr": "20:20",
+       "dep": "20:20"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

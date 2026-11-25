@@ -1,0 +1,3886 @@
+{
+ "operator": "Cracchiolo",
+ "route_id": "lot1-293",
+ "name": "TERRASINI ( C.A.DALLA CHIESA ) - PALERMO ( METRÒ GIACHERY )",
+ "short_name": "293",
+ "source": "t1-tabelle_-orari_da_linea_1_a_linea_297.pdf#p35,p36",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "TERRASINI (C.da Muso di Porco - capolinea)",
+    "TERRASINI (Città del Mare)",
+    "TERRASINI (Paternella)",
+    "TERRASINI",
+    "CINISI (C.so Umberto I, 407)",
+    "CINISI (Spiaggia Magaggiari)",
+    "CINISI (Piazza V.E. Orlando)",
+    "CINISI (C.so Umberto I, 95-104)",
+    "CINISI (C.so Umberto I, 199-218)",
+    "CINISI (C.so Umberto I, 340-356)",
+    "CINISI (Fermata bus)",
+    "CINISI (Nazionale/Einaudi)",
+    "CINISI (AEROPORTO Falcone e Borsellino)",
+    "PALERMO (Lanza di Scalea/Faraone)",
+    "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+    "PALERMO (Strasburgo/Nuova-Maltese)",
+    "PALERMO (Strasburgo/Aldisio)",
+    "PALERMO (Strasburgo/Belgio)",
+    "PALERMO (Croce Rossa/De Gasperi)",
+    "PALERMO (Libertà/Matteotti)",
+    "PALERMO (Libertà/Notarbartolo)",
+    "PALERMO (Duca della Verdura/Toselli)",
+    "PALERMO (Giachery)",
+    "PALERMO (Turati/La Lumia-Politeama)",
+    "PALERMO (Cavour/Prefettura)",
+    "PALERMO (S.Maria della Catena)",
+    "PALERMO (Piazza Giulio Cesare - Stazione Centrale)",
+    "PALERMO (Basile/Re Ruggero)",
+    "PALERMO (Basile/Facoltà di Lettere-Basile Università)",
+    "PALERMO (Parcheggio Basile)",
+    "PALERMO (Ospedale Ingrassia)",
+    "MONREALE (Parcheggio Torres)"
+   ],
+   "kms": [
+    0.0,
+    1.5,
+    3.8,
+    7.4,
+    10.6,
+    12.3,
+    null,
+    null,
+    null,
+    null,
+    14.1,
+    14.8,
+    26.1,
+    46.8,
+    49.3,
+    null,
+    null,
+    51.0,
+    52.1,
+    null,
+    54.2,
+    null,
+    null,
+    55.2,
+    56.2,
+    null,
+    59.0,
+    60.1,
+    41.2,
+    61.5,
+    65.5,
+    68.5
+   ],
+   "trips": [
+    {
+     "corsa": "p35.A1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "8676A F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERRASINI (C.da Muso di Porco - capolinea)",
+       "idx": 0,
+       "arr": "05:20",
+       "dep": "05:20"
+      },
+      {
+       "stop": "TERRASINI (Città del Mare)",
+       "idx": 1,
+       "arr": "05:22",
+       "dep": "05:22"
+      },
+      {
+       "stop": "TERRASINI (Paternella)",
+       "idx": 2,
+       "arr": "05:25",
+       "dep": "05:25"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 3,
+       "arr": "05:30",
+       "dep": "05:30"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 407)",
+       "idx": 4,
+       "arr": "05:34",
+       "dep": "05:34"
+      },
+      {
+       "stop": "CINISI (Spiaggia Magaggiari)",
+       "idx": 5,
+       "arr": "05:36",
+       "dep": "05:36"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 10,
+       "arr": "05:38",
+       "dep": "05:38"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 11,
+       "arr": "05:39",
+       "dep": "05:39"
+      },
+      {
+       "stop": "CINISI (AEROPORTO Falcone e Borsellino)",
+       "idx": 12,
+       "arr": "05:50",
+       "dep": "05:50"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 13,
+       "arr": "06:06",
+       "dep": "06:06"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 14,
+       "arr": "06:09",
+       "dep": "06:09"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 17,
+       "arr": "06:15",
+       "dep": "06:15"
+      },
+      {
+       "stop": "PALERMO (Croce Rossa/De Gasperi)",
+       "idx": 18,
+       "arr": "06:16",
+       "dep": "06:16"
+      },
+      {
+       "stop": "PALERMO (Libertà/Notarbartolo)",
+       "idx": 20,
+       "arr": "06:21",
+       "dep": "06:21"
+      },
+      {
+       "stop": "PALERMO (Turati/La Lumia-Politeama)",
+       "idx": 23,
+       "arr": "06:29",
+       "dep": "06:29"
+      },
+      {
+       "stop": "PALERMO (Cavour/Prefettura)",
+       "idx": 24,
+       "arr": "06:33",
+       "dep": "06:33"
+      },
+      {
+       "stop": "PALERMO (Piazza Giulio Cesare - Stazione Centrale)",
+       "idx": 26,
+       "arr": "06:40",
+       "dep": "06:40"
+      },
+      {
+       "stop": "PALERMO (Basile/Re Ruggero)",
+       "idx": 27,
+       "arr": "06:44",
+       "dep": "06:44"
+      },
+      {
+       "stop": "PALERMO (Basile/Facoltà di Lettere-Basile Università)",
+       "idx": 28,
+       "arr": "06:46",
+       "dep": "06:46"
+      },
+      {
+       "stop": "PALERMO (Parcheggio Basile)",
+       "idx": 29,
+       "arr": "06:50",
+       "dep": "06:50"
+      },
+      {
+       "stop": "PALERMO (Ospedale Ingrassia)",
+       "idx": 30,
+       "arr": "06:56",
+       "dep": "06:56"
+      },
+      {
+       "stop": "MONREALE (Parcheggio Torres)",
+       "idx": 31,
+       "arr": "07:00",
+       "dep": "07:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p35.A2",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Aggiunta-94 F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERRASINI",
+       "idx": 3,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 10,
+       "arr": "07:05",
+       "dep": "07:05"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 11,
+       "arr": "07:06",
+       "dep": "07:06"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 13,
+       "arr": "07:26",
+       "dep": "07:26"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 14,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Nuova-Maltese)",
+       "idx": 15,
+       "arr": "07:33",
+       "dep": "07:33"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Aldisio)",
+       "idx": 16,
+       "arr": "07:34",
+       "dep": "07:34"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 17,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "PALERMO (Croce Rossa/De Gasperi)",
+       "idx": 18,
+       "arr": "07:38",
+       "dep": "07:38"
+      },
+      {
+       "stop": "PALERMO (Libertà/Matteotti)",
+       "idx": 19,
+       "arr": "07:41",
+       "dep": "07:41"
+      },
+      {
+       "stop": "PALERMO (Duca della Verdura/Toselli)",
+       "idx": 21,
+       "arr": "07:43",
+       "dep": "07:43"
+      },
+      {
+       "stop": "PALERMO (S.Maria della Catena)",
+       "idx": 25,
+       "arr": "07:48",
+       "dep": "07:48"
+      },
+      {
+       "stop": "PALERMO (Piazza Giulio Cesare - Stazione Centrale)",
+       "idx": 26,
+       "arr": "07:53",
+       "dep": "07:53"
+      },
+      {
+       "stop": "PALERMO (Basile/Re Ruggero)",
+       "idx": 27,
+       "arr": "07:56",
+       "dep": "07:56"
+      },
+      {
+       "stop": "PALERMO (Basile/Facoltà di Lettere-Basile Università)",
+       "idx": 28,
+       "arr": "07:58",
+       "dep": "07:58"
+      },
+      {
+       "stop": "PALERMO (Parcheggio Basile)",
+       "idx": 29,
+       "arr": "08:00",
+       "dep": "08:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p35.A3",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "8676B F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERRASINI",
+       "idx": 3,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "CINISI (Piazza V.E. Orlando)",
+       "idx": 6,
+       "arr": "07:05",
+       "dep": "07:05"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 95-104)",
+       "idx": 7,
+       "arr": "07:06",
+       "dep": "07:06"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 199-218)",
+       "idx": 8,
+       "arr": "07:07",
+       "dep": "07:07"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 340-356)",
+       "idx": 9,
+       "arr": "07:08",
+       "dep": "07:08"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 10,
+       "arr": "07:09",
+       "dep": "07:09"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 11,
+       "arr": "07:29",
+       "dep": "07:29"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 13,
+       "arr": "07:33",
+       "dep": "07:33"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 14,
+       "arr": "07:36",
+       "dep": "07:36"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Nuova-Maltese)",
+       "idx": 15,
+       "arr": "07:37",
+       "dep": "07:37"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Aldisio)",
+       "idx": 16,
+       "arr": "07:38",
+       "dep": "07:38"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 17,
+       "arr": "07:39",
+       "dep": "07:39"
+      },
+      {
+       "stop": "PALERMO (Croce Rossa/De Gasperi)",
+       "idx": 18,
+       "arr": "07:43",
+       "dep": "07:43"
+      },
+      {
+       "stop": "PALERMO (Libertà/Matteotti)",
+       "idx": 19,
+       "arr": "07:46",
+       "dep": "07:46"
+      },
+      {
+       "stop": "PALERMO (Duca della Verdura/Toselli)",
+       "idx": 21,
+       "arr": "07:48",
+       "dep": "07:48"
+      },
+      {
+       "stop": "PALERMO (Giachery)",
+       "idx": 22,
+       "arr": "07:50",
+       "dep": "07:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p35.A4",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "8676C F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERRASINI",
+       "idx": 3,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 10,
+       "arr": "07:05",
+       "dep": "07:05"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 11,
+       "arr": "07:06",
+       "dep": "07:06"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 13,
+       "arr": "07:26",
+       "dep": "07:26"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 14,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Nuova-Maltese)",
+       "idx": 15,
+       "arr": "07:33",
+       "dep": "07:33"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Aldisio)",
+       "idx": 16,
+       "arr": "07:34",
+       "dep": "07:34"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 17,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "PALERMO (Croce Rossa/De Gasperi)",
+       "idx": 18,
+       "arr": "07:38",
+       "dep": "07:38"
+      },
+      {
+       "stop": "PALERMO (Libertà/Matteotti)",
+       "idx": 19,
+       "arr": "07:41",
+       "dep": "07:41"
+      },
+      {
+       "stop": "PALERMO (Duca della Verdura/Toselli)",
+       "idx": 21,
+       "arr": "07:43",
+       "dep": "07:43"
+      },
+      {
+       "stop": "PALERMO (Giachery)",
+       "idx": 22,
+       "arr": "07:45",
+       "dep": "07:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p35.A5",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "8676D F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERRASINI",
+       "idx": 3,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "CINISI (Piazza V.E. Orlando)",
+       "idx": 6,
+       "arr": "07:05",
+       "dep": "07:05"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 95-104)",
+       "idx": 7,
+       "arr": "07:06",
+       "dep": "07:06"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 199-218)",
+       "idx": 8,
+       "arr": "07:07",
+       "dep": "07:07"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 340-356)",
+       "idx": 9,
+       "arr": "07:08",
+       "dep": "07:08"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 10,
+       "arr": "07:09",
+       "dep": "07:09"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 11,
+       "arr": "07:29",
+       "dep": "07:29"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 13,
+       "arr": "07:33",
+       "dep": "07:33"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 14,
+       "arr": "07:36",
+       "dep": "07:36"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Nuova-Maltese)",
+       "idx": 15,
+       "arr": "07:37",
+       "dep": "07:37"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Aldisio)",
+       "idx": 16,
+       "arr": "07:38",
+       "dep": "07:38"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 17,
+       "arr": "07:39",
+       "dep": "07:39"
+      },
+      {
+       "stop": "PALERMO (Parcheggio Basile)",
+       "idx": 29,
+       "arr": "07:50",
+       "dep": "07:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p35.A6",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "8676E F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERRASINI",
+       "idx": 3,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 10,
+       "arr": "07:05",
+       "dep": "07:05"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 11,
+       "arr": "07:06",
+       "dep": "07:06"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 13,
+       "arr": "07:26",
+       "dep": "07:26"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 14,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Nuova-Maltese)",
+       "idx": 15,
+       "arr": "07:33",
+       "dep": "07:33"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Aldisio)",
+       "idx": 16,
+       "arr": "07:34",
+       "dep": "07:34"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 17,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "PALERMO (Parcheggio Basile)",
+       "idx": 29,
+       "arr": "07:50",
+       "dep": "07:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p35.A7",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "8676L F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERRASINI",
+       "idx": 3,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 10,
+       "arr": "07:05",
+       "dep": "07:05"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 11,
+       "arr": "07:06",
+       "dep": "07:06"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 13,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 14,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Nuova-Maltese)",
+       "idx": 15,
+       "arr": "07:37",
+       "dep": "07:37"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Aldisio)",
+       "idx": 16,
+       "arr": "07:39",
+       "dep": "07:39"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 17,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "PALERMO (Croce Rossa/De Gasperi)",
+       "idx": 18,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "PALERMO (Libertà/Matteotti)",
+       "idx": 19,
+       "arr": "07:50",
+       "dep": "07:50"
+      },
+      {
+       "stop": "PALERMO (Duca della Verdura/Toselli)",
+       "idx": 21,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "PALERMO (Giachery)",
+       "idx": 22,
+       "arr": "08:02",
+       "dep": "08:02"
+      }
+     ]
+    },
+    {
+     "corsa": "p35.A8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "8676F F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERRASINI (C.da Muso di Porco - capolinea)",
+       "idx": 0,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "TERRASINI (Città del Mare)",
+       "idx": 1,
+       "arr": "07:22",
+       "dep": "07:22"
+      },
+      {
+       "stop": "TERRASINI (Paternella)",
+       "idx": 2,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 3,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 407)",
+       "idx": 4,
+       "arr": "07:34",
+       "dep": "07:34"
+      },
+      {
+       "stop": "CINISI (Spiaggia Magaggiari)",
+       "idx": 5,
+       "arr": "07:36",
+       "dep": "07:36"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 10,
+       "arr": "07:38",
+       "dep": "07:38"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 11,
+       "arr": "07:39",
+       "dep": "07:39"
+      },
+      {
+       "stop": "CINISI (AEROPORTO Falcone e Borsellino)",
+       "idx": 12,
+       "arr": "07:50",
+       "dep": "07:50"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 13,
+       "arr": "08:06",
+       "dep": "08:06"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 14,
+       "arr": "08:09",
+       "dep": "08:09"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 17,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "PALERMO (Croce Rossa/De Gasperi)",
+       "idx": 18,
+       "arr": "08:16",
+       "dep": "08:16"
+      },
+      {
+       "stop": "PALERMO (Libertà/Notarbartolo)",
+       "idx": 20,
+       "arr": "08:21",
+       "dep": "08:21"
+      },
+      {
+       "stop": "PALERMO (Turati/La Lumia-Politeama)",
+       "idx": 23,
+       "arr": "08:29",
+       "dep": "08:29"
+      },
+      {
+       "stop": "PALERMO (Cavour/Prefettura)",
+       "idx": 24,
+       "arr": "08:33",
+       "dep": "08:33"
+      },
+      {
+       "stop": "PALERMO (Piazza Giulio Cesare - Stazione Centrale)",
+       "idx": 26,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "PALERMO (Basile/Re Ruggero)",
+       "idx": 27,
+       "arr": "08:44",
+       "dep": "08:44"
+      },
+      {
+       "stop": "PALERMO (Basile/Facoltà di Lettere-Basile Università)",
+       "idx": 28,
+       "arr": "08:46",
+       "dep": "08:46"
+      },
+      {
+       "stop": "PALERMO (Parcheggio Basile)",
+       "idx": 29,
+       "arr": "08:50",
+       "dep": "08:50"
+      },
+      {
+       "stop": "PALERMO (Ospedale Ingrassia)",
+       "idx": 30,
+       "arr": "08:56",
+       "dep": "08:56"
+      },
+      {
+       "stop": "MONREALE (Parcheggio Torres)",
+       "idx": 31,
+       "arr": "09:00",
+       "dep": "09:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p35.A9",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "8676G F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERRASINI",
+       "idx": 3,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 10,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 11,
+       "arr": "07:46",
+       "dep": "07:46"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 13,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 14,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Nuova-Maltese)",
+       "idx": 15,
+       "arr": "08:17",
+       "dep": "08:17"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Aldisio)",
+       "idx": 16,
+       "arr": "08:19",
+       "dep": "08:19"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 17,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "PALERMO (Croce Rossa/De Gasperi)",
+       "idx": 18,
+       "arr": "08:25",
+       "dep": "08:25"
+      },
+      {
+       "stop": "PALERMO (Libertà/Matteotti)",
+       "idx": 19,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "PALERMO (Libertà/Notarbartolo)",
+       "idx": 20,
+       "arr": "08:35",
+       "dep": "08:35"
+      },
+      {
+       "stop": "PALERMO (Turati/La Lumia-Politeama)",
+       "idx": 23,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "PALERMO (Cavour/Prefettura)",
+       "idx": 24,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "PALERMO (S.Maria della Catena)",
+       "idx": 25,
+       "arr": "08:50",
+       "dep": "08:50"
+      },
+      {
+       "stop": "PALERMO (Piazza Giulio Cesare - Stazione Centrale)",
+       "idx": 26,
+       "arr": "08:55",
+       "dep": "08:55"
+      },
+      {
+       "stop": "PALERMO (Basile/Re Ruggero)",
+       "idx": 27,
+       "arr": "08:58",
+       "dep": "08:58"
+      },
+      {
+       "stop": "PALERMO (Basile/Facoltà di Lettere-Basile Università)",
+       "idx": 28,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "PALERMO (Parcheggio Basile)",
+       "idx": 29,
+       "arr": "09:05",
+       "dep": "09:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p35.A10",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "8676H (Agg i u nta- F e r i a l e 9 4 ) e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERRASINI (C.da Muso di Porco - capolinea)",
+       "idx": 0,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "TERRASINI (Città del Mare)",
+       "idx": 1,
+       "arr": "08:22",
+       "dep": "08:22"
+      },
+      {
+       "stop": "TERRASINI (Paternella)",
+       "idx": 2,
+       "arr": "08:25",
+       "dep": "08:25"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 3,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 407)",
+       "idx": 4,
+       "arr": "08:34",
+       "dep": "08:34"
+      },
+      {
+       "stop": "CINISI (Spiaggia Magaggiari)",
+       "idx": 5,
+       "arr": "08:36",
+       "dep": "08:36"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 10,
+       "arr": "08:38",
+       "dep": "08:38"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 11,
+       "arr": "08:39",
+       "dep": "08:39"
+      },
+      {
+       "stop": "CINISI (AEROPORTO Falcone e Borsellino)",
+       "idx": 12,
+       "arr": "08:50",
+       "dep": "08:50"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 13,
+       "arr": "09:06",
+       "dep": "09:06"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 14,
+       "arr": "09:09",
+       "dep": "09:09"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 17,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "PALERMO (Croce Rossa/De Gasperi)",
+       "idx": 18,
+       "arr": "09:16",
+       "dep": "09:16"
+      },
+      {
+       "stop": "PALERMO (Libertà/Notarbartolo)",
+       "idx": 20,
+       "arr": "09:21",
+       "dep": "09:21"
+      },
+      {
+       "stop": "PALERMO (Turati/La Lumia-Politeama)",
+       "idx": 23,
+       "arr": "09:29",
+       "dep": "09:29"
+      },
+      {
+       "stop": "PALERMO (Cavour/Prefettura)",
+       "idx": 24,
+       "arr": "09:33",
+       "dep": "09:33"
+      },
+      {
+       "stop": "PALERMO (Piazza Giulio Cesare - Stazione Centrale)",
+       "idx": 26,
+       "arr": "09:40",
+       "dep": "09:40"
+      },
+      {
+       "stop": "PALERMO (Basile/Re Ruggero)",
+       "idx": 27,
+       "arr": "09:44",
+       "dep": "09:44"
+      },
+      {
+       "stop": "PALERMO (Basile/Facoltà di Lettere-Basile Università)",
+       "idx": 28,
+       "arr": "09:46",
+       "dep": "09:46"
+      },
+      {
+       "stop": "PALERMO (Parcheggio Basile)",
+       "idx": 29,
+       "arr": "09:50",
+       "dep": "09:50"
+      },
+      {
+       "stop": "PALERMO (Ospedale Ingrassia)",
+       "idx": 30,
+       "arr": "09:56",
+       "dep": "09:56"
+      },
+      {
+       "stop": "MONREALE (Parcheggio Torres)",
+       "idx": 31,
+       "arr": "10:00",
+       "dep": "10:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p36.A1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "8676I F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERRASINI (C.da Muso di Porco - capolinea)",
+       "idx": 0,
+       "arr": "09:20",
+       "dep": "09:20"
+      },
+      {
+       "stop": "TERRASINI (Città del Mare)",
+       "idx": 1,
+       "arr": "09:22",
+       "dep": "09:22"
+      },
+      {
+       "stop": "TERRASINI (Paternella)",
+       "idx": 2,
+       "arr": "09:25",
+       "dep": "09:25"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 3,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 407)",
+       "idx": 4,
+       "arr": "09:34",
+       "dep": "09:34"
+      },
+      {
+       "stop": "CINISI (Spiaggia Magaggiari)",
+       "idx": 5,
+       "arr": "09:36",
+       "dep": "09:36"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 10,
+       "arr": "09:38",
+       "dep": "09:38"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 11,
+       "arr": "09:39",
+       "dep": "09:39"
+      },
+      {
+       "stop": "CINISI (AEROPORTO Falcone e Borsellino)",
+       "idx": 12,
+       "arr": "09:50",
+       "dep": "09:50"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 13,
+       "arr": "10:06",
+       "dep": "10:06"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 14,
+       "arr": "10:09",
+       "dep": "10:09"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 17,
+       "arr": "10:15",
+       "dep": "10:15"
+      },
+      {
+       "stop": "PALERMO (Croce Rossa/De Gasperi)",
+       "idx": 18,
+       "arr": "10:16",
+       "dep": "10:16"
+      },
+      {
+       "stop": "PALERMO (Libertà/Notarbartolo)",
+       "idx": 20,
+       "arr": "10:21",
+       "dep": "10:21"
+      },
+      {
+       "stop": "PALERMO (Turati/La Lumia-Politeama)",
+       "idx": 23,
+       "arr": "10:29",
+       "dep": "10:29"
+      },
+      {
+       "stop": "PALERMO (Cavour/Prefettura)",
+       "idx": 24,
+       "arr": "10:33",
+       "dep": "10:33"
+      },
+      {
+       "stop": "PALERMO (Piazza Giulio Cesare - Stazione Centrale)",
+       "idx": 26,
+       "arr": "10:40",
+       "dep": "10:40"
+      },
+      {
+       "stop": "PALERMO (Basile/Re Ruggero)",
+       "idx": 27,
+       "arr": "10:44",
+       "dep": "10:44"
+      },
+      {
+       "stop": "PALERMO (Basile/Facoltà di Lettere-Basile Università)",
+       "idx": 28,
+       "arr": "10:46",
+       "dep": "10:46"
+      },
+      {
+       "stop": "PALERMO (Parcheggio Basile)",
+       "idx": 29,
+       "arr": "10:50",
+       "dep": "10:50"
+      },
+      {
+       "stop": "PALERMO (Ospedale Ingrassia)",
+       "idx": 30,
+       "arr": "10:56",
+       "dep": "10:56"
+      },
+      {
+       "stop": "MONREALE (Parcheggio Torres)",
+       "idx": 31,
+       "arr": "11:00",
+       "dep": "11:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p36.A2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "8676M F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERRASINI (C.da Muso di Porco - capolinea)",
+       "idx": 0,
+       "arr": "10:20",
+       "dep": "10:20"
+      },
+      {
+       "stop": "TERRASINI (Città del Mare)",
+       "idx": 1,
+       "arr": "10:22",
+       "dep": "10:22"
+      },
+      {
+       "stop": "TERRASINI (Paternella)",
+       "idx": 2,
+       "arr": "10:25",
+       "dep": "10:25"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 3,
+       "arr": "10:30",
+       "dep": "10:30"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 407)",
+       "idx": 4,
+       "arr": "10:34",
+       "dep": "10:34"
+      },
+      {
+       "stop": "CINISI (Spiaggia Magaggiari)",
+       "idx": 5,
+       "arr": "10:36",
+       "dep": "10:36"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 10,
+       "arr": "10:38",
+       "dep": "10:38"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 11,
+       "arr": "10:39",
+       "dep": "10:39"
+      },
+      {
+       "stop": "CINISI (AEROPORTO Falcone e Borsellino)",
+       "idx": 12,
+       "arr": "10:50",
+       "dep": "10:50"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 13,
+       "arr": "11:06",
+       "dep": "11:06"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 14,
+       "arr": "11:09",
+       "dep": "11:09"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 17,
+       "arr": "11:15",
+       "dep": "11:15"
+      },
+      {
+       "stop": "PALERMO (Croce Rossa/De Gasperi)",
+       "idx": 18,
+       "arr": "11:16",
+       "dep": "11:16"
+      },
+      {
+       "stop": "PALERMO (Libertà/Notarbartolo)",
+       "idx": 20,
+       "arr": "11:21",
+       "dep": "11:21"
+      },
+      {
+       "stop": "PALERMO (Turati/La Lumia-Politeama)",
+       "idx": 23,
+       "arr": "11:29",
+       "dep": "11:29"
+      },
+      {
+       "stop": "PALERMO (Cavour/Prefettura)",
+       "idx": 24,
+       "arr": "11:33",
+       "dep": "11:33"
+      },
+      {
+       "stop": "PALERMO (Piazza Giulio Cesare - Stazione Centrale)",
+       "idx": 26,
+       "arr": "11:40",
+       "dep": "11:40"
+      },
+      {
+       "stop": "PALERMO (Basile/Re Ruggero)",
+       "idx": 27,
+       "arr": "11:44",
+       "dep": "11:44"
+      },
+      {
+       "stop": "PALERMO (Basile/Facoltà di Lettere-Basile Università)",
+       "idx": 28,
+       "arr": "11:46",
+       "dep": "11:46"
+      },
+      {
+       "stop": "PALERMO (Parcheggio Basile)",
+       "idx": 29,
+       "arr": "11:50",
+       "dep": "11:50"
+      },
+      {
+       "stop": "PALERMO (Ospedale Ingrassia)",
+       "idx": 30,
+       "arr": "11:56",
+       "dep": "11:56"
+      },
+      {
+       "stop": "MONREALE (Parcheggio Torres)",
+       "idx": 31,
+       "arr": "12:00",
+       "dep": "12:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p36.A3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "8676N F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERRASINI (C.da Muso di Porco - capolinea)",
+       "idx": 0,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "TERRASINI (Città del Mare)",
+       "idx": 1,
+       "arr": "12:02",
+       "dep": "12:02"
+      },
+      {
+       "stop": "TERRASINI (Paternella)",
+       "idx": 2,
+       "arr": "12:05",
+       "dep": "12:05"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 3,
+       "arr": "12:10",
+       "dep": "12:10"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 407)",
+       "idx": 4,
+       "arr": "12:14",
+       "dep": "12:14"
+      },
+      {
+       "stop": "CINISI (Spiaggia Magaggiari)",
+       "idx": 5,
+       "arr": "12:16",
+       "dep": "12:16"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 10,
+       "arr": "12:18",
+       "dep": "12:18"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 11,
+       "arr": "12:19",
+       "dep": "12:19"
+      },
+      {
+       "stop": "CINISI (AEROPORTO Falcone e Borsellino)",
+       "idx": 12,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 13,
+       "arr": "12:46",
+       "dep": "12:46"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 14,
+       "arr": "12:49",
+       "dep": "12:49"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 17,
+       "arr": "12:55",
+       "dep": "12:55"
+      },
+      {
+       "stop": "PALERMO (Croce Rossa/De Gasperi)",
+       "idx": 18,
+       "arr": "12:56",
+       "dep": "12:56"
+      },
+      {
+       "stop": "PALERMO (Libertà/Notarbartolo)",
+       "idx": 20,
+       "arr": "13:01",
+       "dep": "13:01"
+      },
+      {
+       "stop": "PALERMO (Turati/La Lumia-Politeama)",
+       "idx": 23,
+       "arr": "13:09",
+       "dep": "13:09"
+      },
+      {
+       "stop": "PALERMO (Cavour/Prefettura)",
+       "idx": 24,
+       "arr": "13:13",
+       "dep": "13:13"
+      },
+      {
+       "stop": "PALERMO (Piazza Giulio Cesare - Stazione Centrale)",
+       "idx": 26,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "PALERMO (Basile/Re Ruggero)",
+       "idx": 27,
+       "arr": "13:24",
+       "dep": "13:24"
+      },
+      {
+       "stop": "PALERMO (Basile/Facoltà di Lettere-Basile Università)",
+       "idx": 28,
+       "arr": "13:28",
+       "dep": "13:28"
+      },
+      {
+       "stop": "PALERMO (Parcheggio Basile)",
+       "idx": 29,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "PALERMO (Ospedale Ingrassia)",
+       "idx": 30,
+       "arr": "13:36",
+       "dep": "13:36"
+      },
+      {
+       "stop": "MONREALE (Parcheggio Torres)",
+       "idx": 31,
+       "arr": "13:40",
+       "dep": "13:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p36.A4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "8676O F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERRASINI (C.da Muso di Porco - capolinea)",
+       "idx": 0,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "TERRASINI (Città del Mare)",
+       "idx": 1,
+       "arr": "14:32",
+       "dep": "14:32"
+      },
+      {
+       "stop": "TERRASINI (Paternella)",
+       "idx": 2,
+       "arr": "14:35",
+       "dep": "14:35"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 3,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 407)",
+       "idx": 4,
+       "arr": "14:44",
+       "dep": "14:44"
+      },
+      {
+       "stop": "CINISI (Spiaggia Magaggiari)",
+       "idx": 5,
+       "arr": "14:46",
+       "dep": "14:46"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 10,
+       "arr": "14:48",
+       "dep": "14:48"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 11,
+       "arr": "14:49",
+       "dep": "14:49"
+      },
+      {
+       "stop": "CINISI (AEROPORTO Falcone e Borsellino)",
+       "idx": 12,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 13,
+       "arr": "15:16",
+       "dep": "15:16"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 14,
+       "arr": "15:19",
+       "dep": "15:19"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 17,
+       "arr": "15:25",
+       "dep": "15:25"
+      },
+      {
+       "stop": "PALERMO (Croce Rossa/De Gasperi)",
+       "idx": 18,
+       "arr": "15:26",
+       "dep": "15:26"
+      },
+      {
+       "stop": "PALERMO (Libertà/Notarbartolo)",
+       "idx": 20,
+       "arr": "15:31",
+       "dep": "15:31"
+      },
+      {
+       "stop": "PALERMO (Turati/La Lumia-Politeama)",
+       "idx": 23,
+       "arr": "15:39",
+       "dep": "15:39"
+      },
+      {
+       "stop": "PALERMO (Cavour/Prefettura)",
+       "idx": 24,
+       "arr": "15:43",
+       "dep": "15:43"
+      },
+      {
+       "stop": "PALERMO (Piazza Giulio Cesare - Stazione Centrale)",
+       "idx": 26,
+       "arr": "15:50",
+       "dep": "15:50"
+      },
+      {
+       "stop": "PALERMO (Basile/Re Ruggero)",
+       "idx": 27,
+       "arr": "15:54",
+       "dep": "15:54"
+      },
+      {
+       "stop": "PALERMO (Basile/Facoltà di Lettere-Basile Università)",
+       "idx": 28,
+       "arr": "15:58",
+       "dep": "15:58"
+      },
+      {
+       "stop": "PALERMO (Parcheggio Basile)",
+       "idx": 29,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "PALERMO (Ospedale Ingrassia)",
+       "idx": 30,
+       "arr": "16:06",
+       "dep": "16:06"
+      },
+      {
+       "stop": "MONREALE (Parcheggio Torres)",
+       "idx": 31,
+       "arr": "16:10",
+       "dep": "16:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p36.A5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "8676P F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERRASINI (C.da Muso di Porco - capolinea)",
+       "idx": 0,
+       "arr": "17:00",
+       "dep": "17:00"
+      },
+      {
+       "stop": "TERRASINI (Città del Mare)",
+       "idx": 1,
+       "arr": "17:02",
+       "dep": "17:02"
+      },
+      {
+       "stop": "TERRASINI (Paternella)",
+       "idx": 2,
+       "arr": "17:05",
+       "dep": "17:05"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 3,
+       "arr": "17:10",
+       "dep": "17:10"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 407)",
+       "idx": 4,
+       "arr": "17:14",
+       "dep": "17:14"
+      },
+      {
+       "stop": "CINISI (Spiaggia Magaggiari)",
+       "idx": 5,
+       "arr": "17:16",
+       "dep": "17:16"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 10,
+       "arr": "17:18",
+       "dep": "17:18"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 11,
+       "arr": "17:19",
+       "dep": "17:19"
+      },
+      {
+       "stop": "CINISI (AEROPORTO Falcone e Borsellino)",
+       "idx": 12,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 13,
+       "arr": "17:46",
+       "dep": "17:46"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 14,
+       "arr": "17:49",
+       "dep": "17:49"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 17,
+       "arr": "17:55",
+       "dep": "17:55"
+      },
+      {
+       "stop": "PALERMO (Croce Rossa/De Gasperi)",
+       "idx": 18,
+       "arr": "17:56",
+       "dep": "17:56"
+      },
+      {
+       "stop": "PALERMO (Libertà/Notarbartolo)",
+       "idx": 20,
+       "arr": "18:01",
+       "dep": "18:01"
+      },
+      {
+       "stop": "PALERMO (Turati/La Lumia-Politeama)",
+       "idx": 23,
+       "arr": "18:09",
+       "dep": "18:09"
+      },
+      {
+       "stop": "PALERMO (Cavour/Prefettura)",
+       "idx": 24,
+       "arr": "18:13",
+       "dep": "18:13"
+      },
+      {
+       "stop": "PALERMO (Piazza Giulio Cesare - Stazione Centrale)",
+       "idx": 26,
+       "arr": "18:20",
+       "dep": "18:20"
+      },
+      {
+       "stop": "PALERMO (Basile/Re Ruggero)",
+       "idx": 27,
+       "arr": "18:24",
+       "dep": "18:24"
+      },
+      {
+       "stop": "PALERMO (Basile/Facoltà di Lettere-Basile Università)",
+       "idx": 28,
+       "arr": "18:28",
+       "dep": "18:28"
+      },
+      {
+       "stop": "PALERMO (Parcheggio Basile)",
+       "idx": 29,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "PALERMO (Ospedale Ingrassia)",
+       "idx": 30,
+       "arr": "18:36",
+       "dep": "18:36"
+      },
+      {
+       "stop": "MONREALE (Parcheggio Torres)",
+       "idx": 31,
+       "arr": "18:40",
+       "dep": "18:40"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "MONREALE (Parcheggio Torres)",
+    "PALERMO (Ospedale Ingrassia)",
+    "PALERMO (Parcheggio Basile)",
+    "PALERMO (Basile/Facoltà di Lettere-Basile Università)",
+    "PALERMO (Basile/Re Ruggero)",
+    "PALERMO (Piazza Giulio Cesare - Stazione Centrale)",
+    "PALERMO (S.Maria della Catena)",
+    "PALERMO (Cavour/Prefettura)",
+    "PALERMO (Turati/La Lumia-Politeama)",
+    "PALERMO (Giachery)",
+    "PALERMO (Duca della Verdura/Toselli)",
+    "PALERMO (Libertà/Notarbartolo)",
+    "PALERMO (Libertà/Matteotti)",
+    "PALERMO (Croce Rossa/De Gasperi)",
+    "PALERMO (Strasburgo/Belgio)",
+    "PALERMO (Strasburgo/Aldisio)",
+    "PALERMO (Strasburgo/Nuova-Maltese)",
+    "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+    "PALERMO (Lanza di Scalea/Faraone)",
+    "CINISI (AEROPORTO Falcone e Borsellino)",
+    "CINISI (Nazionale/Einaudi)",
+    "CINISI (Fermata bus)",
+    "CINISI (C.so Umberto I, 340-356)",
+    "CINISI (C.so Umberto I, 199-218)",
+    "CINISI (C.so Umberto I, 95-104)",
+    "CINISI (Piazza V.E. Orlando)",
+    "CINISI (Spiaggia Magaggiari)",
+    "CINISI (C.so Umberto I, 407)",
+    "TERRASINI",
+    "TERRASINI (Paternella)",
+    "TERRASINI (Città del Mare)",
+    "TERRASINI (C.da Muso di Porco - capolinea)"
+   ],
+   "kms": [
+    null,
+    null,
+    0.0,
+    0.8,
+    1.4,
+    3.6,
+    6.2,
+    7.1,
+    8.1,
+    null,
+    9.2,
+    10.1,
+    11.4,
+    null,
+    12.5,
+    12.8,
+    13.7,
+    14.2,
+    16.8,
+    null,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    null,
+    null,
+    34.4,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p35.R1",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "8676Q (Ag g iu n ta- F e r i a l e 2 7 2 ) e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MONREALE (Parcheggio Torres)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "PALERMO (Ospedale Ingrassia)",
+       "idx": 1,
+       "arr": "07:06",
+       "dep": "07:06"
+      },
+      {
+       "stop": "PALERMO (Basile/Facoltà di Lettere-Basile Università)",
+       "idx": 3,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "PALERMO (Basile/Re Ruggero)",
+       "idx": 4,
+       "arr": "07:19",
+       "dep": "07:19"
+      },
+      {
+       "stop": "PALERMO (Piazza Giulio Cesare - Stazione Centrale)",
+       "idx": 5,
+       "arr": "07:24",
+       "dep": "07:24"
+      },
+      {
+       "stop": "PALERMO (Cavour/Prefettura)",
+       "idx": 7,
+       "arr": "07:31",
+       "dep": "07:31"
+      },
+      {
+       "stop": "PALERMO (Turati/La Lumia-Politeama)",
+       "idx": 8,
+       "arr": "07:33",
+       "dep": "07:33"
+      },
+      {
+       "stop": "PALERMO (Duca della Verdura/Toselli)",
+       "idx": 10,
+       "arr": "07:37",
+       "dep": "07:37"
+      },
+      {
+       "stop": "PALERMO (Libertà/Matteotti)",
+       "idx": 12,
+       "arr": "07:42",
+       "dep": "07:42"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 14,
+       "arr": "07:44",
+       "dep": "07:44"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 17,
+       "arr": "07:49",
+       "dep": "07:49"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 18,
+       "arr": "07:52",
+       "dep": "07:52"
+      },
+      {
+       "stop": "CINISI (AEROPORTO Falcone e Borsellino)",
+       "idx": 19,
+       "arr": "08:11",
+       "dep": "08:11"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 20,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 21,
+       "arr": "08:21",
+       "dep": "08:21"
+      },
+      {
+       "stop": "CINISI (Spiaggia Magaggiari)",
+       "idx": 26,
+       "arr": "08:22",
+       "dep": "08:22"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 407)",
+       "idx": 27,
+       "arr": "08:24",
+       "dep": "08:24"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 28,
+       "arr": "08:28",
+       "dep": "08:28"
+      },
+      {
+       "stop": "TERRASINI (Paternella)",
+       "idx": 29,
+       "arr": "08:33",
+       "dep": "08:33"
+      },
+      {
+       "stop": "TERRASINI (Città del Mare)",
+       "idx": 30,
+       "arr": "08:36",
+       "dep": "08:36"
+      },
+      {
+       "stop": "TERRASINI (C.da Muso di Porco - capolinea)",
+       "idx": 31,
+       "arr": "08:38",
+       "dep": "08:38"
+      }
+     ]
+    },
+    {
+     "corsa": "p35.R2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "8676R F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MONREALE (Parcheggio Torres)",
+       "idx": 0,
+       "arr": "08:59",
+       "dep": "08:59"
+      },
+      {
+       "stop": "PALERMO (Ospedale Ingrassia)",
+       "idx": 1,
+       "arr": "09:05",
+       "dep": "09:05"
+      },
+      {
+       "stop": "PALERMO (Basile/Facoltà di Lettere-Basile Università)",
+       "idx": 3,
+       "arr": "09:14",
+       "dep": "09:14"
+      },
+      {
+       "stop": "PALERMO (Basile/Re Ruggero)",
+       "idx": 4,
+       "arr": "09:18",
+       "dep": "09:18"
+      },
+      {
+       "stop": "PALERMO (Piazza Giulio Cesare - Stazione Centrale)",
+       "idx": 5,
+       "arr": "09:23",
+       "dep": "09:23"
+      },
+      {
+       "stop": "PALERMO (Cavour/Prefettura)",
+       "idx": 7,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "PALERMO (Turati/La Lumia-Politeama)",
+       "idx": 8,
+       "arr": "09:32",
+       "dep": "09:32"
+      },
+      {
+       "stop": "PALERMO (Duca della Verdura/Toselli)",
+       "idx": 10,
+       "arr": "09:36",
+       "dep": "09:36"
+      },
+      {
+       "stop": "PALERMO (Libertà/Matteotti)",
+       "idx": 12,
+       "arr": "09:41",
+       "dep": "09:41"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 14,
+       "arr": "09:43",
+       "dep": "09:43"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 17,
+       "arr": "09:48",
+       "dep": "09:48"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 18,
+       "arr": "09:51",
+       "dep": "09:51"
+      },
+      {
+       "stop": "CINISI (AEROPORTO Falcone e Borsellino)",
+       "idx": 19,
+       "arr": "10:10",
+       "dep": "10:10"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 20,
+       "arr": "10:19",
+       "dep": "10:19"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 21,
+       "arr": "10:20",
+       "dep": "10:20"
+      },
+      {
+       "stop": "CINISI (Spiaggia Magaggiari)",
+       "idx": 26,
+       "arr": "10:21",
+       "dep": "10:21"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 407)",
+       "idx": 27,
+       "arr": "10:23",
+       "dep": "10:23"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 28,
+       "arr": "10:27",
+       "dep": "10:27"
+      },
+      {
+       "stop": "TERRASINI (Paternella)",
+       "idx": 29,
+       "arr": "10:32",
+       "dep": "10:32"
+      },
+      {
+       "stop": "TERRASINI (Città del Mare)",
+       "idx": 30,
+       "arr": "10:35",
+       "dep": "10:35"
+      },
+      {
+       "stop": "TERRASINI (C.da Muso di Porco - capolinea)",
+       "idx": 31,
+       "arr": "10:37",
+       "dep": "10:37"
+      }
+     ]
+    },
+    {
+     "corsa": "p35.R3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "8676S F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MONREALE (Parcheggio Torres)",
+       "idx": 0,
+       "arr": "11:00",
+       "dep": "11:00"
+      },
+      {
+       "stop": "PALERMO (Ospedale Ingrassia)",
+       "idx": 1,
+       "arr": "11:06",
+       "dep": "11:06"
+      },
+      {
+       "stop": "PALERMO (Basile/Facoltà di Lettere-Basile Università)",
+       "idx": 3,
+       "arr": "11:15",
+       "dep": "11:15"
+      },
+      {
+       "stop": "PALERMO (Basile/Re Ruggero)",
+       "idx": 4,
+       "arr": "11:19",
+       "dep": "11:19"
+      },
+      {
+       "stop": "PALERMO (Piazza Giulio Cesare - Stazione Centrale)",
+       "idx": 5,
+       "arr": "11:24",
+       "dep": "11:24"
+      },
+      {
+       "stop": "PALERMO (Cavour/Prefettura)",
+       "idx": 7,
+       "arr": "11:31",
+       "dep": "11:31"
+      },
+      {
+       "stop": "PALERMO (Turati/La Lumia-Politeama)",
+       "idx": 8,
+       "arr": "11:33",
+       "dep": "11:33"
+      },
+      {
+       "stop": "PALERMO (Duca della Verdura/Toselli)",
+       "idx": 10,
+       "arr": "11:37",
+       "dep": "11:37"
+      },
+      {
+       "stop": "PALERMO (Libertà/Matteotti)",
+       "idx": 12,
+       "arr": "11:42",
+       "dep": "11:42"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 14,
+       "arr": "11:44",
+       "dep": "11:44"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 17,
+       "arr": "11:49",
+       "dep": "11:49"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 18,
+       "arr": "11:52",
+       "dep": "11:52"
+      },
+      {
+       "stop": "CINISI (AEROPORTO Falcone e Borsellino)",
+       "idx": 19,
+       "arr": "12:11",
+       "dep": "12:11"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 20,
+       "arr": "12:20",
+       "dep": "12:20"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 21,
+       "arr": "12:21",
+       "dep": "12:21"
+      },
+      {
+       "stop": "CINISI (Spiaggia Magaggiari)",
+       "idx": 26,
+       "arr": "12:22",
+       "dep": "12:22"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 407)",
+       "idx": 27,
+       "arr": "12:24",
+       "dep": "12:24"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 28,
+       "arr": "12:28",
+       "dep": "12:28"
+      },
+      {
+       "stop": "TERRASINI (Paternella)",
+       "idx": 29,
+       "arr": "12:33",
+       "dep": "12:33"
+      },
+      {
+       "stop": "TERRASINI (Città del Mare)",
+       "idx": 30,
+       "arr": "12:36",
+       "dep": "12:36"
+      },
+      {
+       "stop": "TERRASINI (C.da Muso di Porco - capolinea)",
+       "idx": 31,
+       "arr": "12:38",
+       "dep": "12:38"
+      }
+     ]
+    },
+    {
+     "corsa": "p35.R4",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "8676T F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MONREALE (Parcheggio Torres)",
+       "idx": 0,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "PALERMO (Ospedale Ingrassia)",
+       "idx": 1,
+       "arr": "12:06",
+       "dep": "12:06"
+      },
+      {
+       "stop": "PALERMO (Basile/Facoltà di Lettere-Basile Università)",
+       "idx": 3,
+       "arr": "12:15",
+       "dep": "12:15"
+      },
+      {
+       "stop": "PALERMO (Basile/Re Ruggero)",
+       "idx": 4,
+       "arr": "12:19",
+       "dep": "12:19"
+      },
+      {
+       "stop": "PALERMO (Piazza Giulio Cesare - Stazione Centrale)",
+       "idx": 5,
+       "arr": "12:24",
+       "dep": "12:24"
+      },
+      {
+       "stop": "PALERMO (Cavour/Prefettura)",
+       "idx": 7,
+       "arr": "12:31",
+       "dep": "12:31"
+      },
+      {
+       "stop": "PALERMO (Turati/La Lumia-Politeama)",
+       "idx": 8,
+       "arr": "12:33",
+       "dep": "12:33"
+      },
+      {
+       "stop": "PALERMO (Duca della Verdura/Toselli)",
+       "idx": 10,
+       "arr": "12:37",
+       "dep": "12:37"
+      },
+      {
+       "stop": "PALERMO (Libertà/Matteotti)",
+       "idx": 12,
+       "arr": "12:42",
+       "dep": "12:42"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 14,
+       "arr": "12:44",
+       "dep": "12:44"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 17,
+       "arr": "12:49",
+       "dep": "12:49"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 18,
+       "arr": "12:52",
+       "dep": "12:52"
+      },
+      {
+       "stop": "CINISI (AEROPORTO Falcone e Borsellino)",
+       "idx": 19,
+       "arr": "13:11",
+       "dep": "13:11"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 20,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 21,
+       "arr": "13:21",
+       "dep": "13:21"
+      },
+      {
+       "stop": "CINISI (Spiaggia Magaggiari)",
+       "idx": 26,
+       "arr": "13:22",
+       "dep": "13:22"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 407)",
+       "idx": 27,
+       "arr": "13:24",
+       "dep": "13:24"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 28,
+       "arr": "13:28",
+       "dep": "13:28"
+      },
+      {
+       "stop": "TERRASINI (Paternella)",
+       "idx": 29,
+       "arr": "13:33",
+       "dep": "13:33"
+      },
+      {
+       "stop": "TERRASINI (Città del Mare)",
+       "idx": 30,
+       "arr": "13:36",
+       "dep": "13:36"
+      },
+      {
+       "stop": "TERRASINI (C.da Muso di Porco - capolinea)",
+       "idx": 31,
+       "arr": "13:38",
+       "dep": "13:38"
+      }
+     ]
+    },
+    {
+     "corsa": "p35.R5",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "8679A F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Giachery)",
+       "idx": 9,
+       "arr": "13:13",
+       "dep": "13:13"
+      },
+      {
+       "stop": "PALERMO (Duca della Verdura/Toselli)",
+       "idx": 10,
+       "arr": "13:17",
+       "dep": "13:17"
+      },
+      {
+       "stop": "PALERMO (Libertà/Notarbartolo)",
+       "idx": 11,
+       "arr": "13:19",
+       "dep": "13:19"
+      },
+      {
+       "stop": "PALERMO (Libertà/Matteotti)",
+       "idx": 12,
+       "arr": "13:22",
+       "dep": "13:22"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 14,
+       "arr": "13:27",
+       "dep": "13:27"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Aldisio)",
+       "idx": 15,
+       "arr": "13:28",
+       "dep": "13:28"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Nuova-Maltese)",
+       "idx": 16,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 17,
+       "arr": "13:32",
+       "dep": "13:32"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 18,
+       "arr": "13:37",
+       "dep": "13:37"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 20,
+       "arr": "13:56",
+       "dep": "13:56"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 21,
+       "arr": "13:57",
+       "dep": "13:57"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 340-356)",
+       "idx": 22,
+       "arr": "13:58",
+       "dep": "13:58"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 199-218)",
+       "idx": 23,
+       "arr": "13:59",
+       "dep": "13:59"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 95-104)",
+       "idx": 24,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "CINISI (Piazza V.E. Orlando)",
+       "idx": 25,
+       "arr": "14:02",
+       "dep": "14:02"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 28,
+       "arr": "14:07",
+       "dep": "14:07"
+      }
+     ]
+    },
+    {
+     "corsa": "p35.R6",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "8679B F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Parcheggio Basile)",
+       "idx": 2,
+       "arr": "13:25",
+       "dep": "13:25"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 14,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Aldisio)",
+       "idx": 15,
+       "arr": "13:41",
+       "dep": "13:41"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Nuova-Maltese)",
+       "idx": 16,
+       "arr": "13:43",
+       "dep": "13:43"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 17,
+       "arr": "13:45",
+       "dep": "13:45"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 18,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 20,
+       "arr": "14:09",
+       "dep": "14:09"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 21,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 340-356)",
+       "idx": 22,
+       "arr": "14:11",
+       "dep": "14:11"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 199-218)",
+       "idx": 23,
+       "arr": "14:12",
+       "dep": "14:12"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 95-104)",
+       "idx": 24,
+       "arr": "14:13",
+       "dep": "14:13"
+      },
+      {
+       "stop": "CINISI (Piazza V.E. Orlando)",
+       "idx": 25,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 28,
+       "arr": "14:20",
+       "dep": "14:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p35.R7-Aggiunta-272",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Aggiunta-272 F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Parcheggio Basile)",
+       "idx": 2,
+       "arr": "13:45",
+       "dep": "13:45"
+      },
+      {
+       "stop": "PALERMO (Basile/Facoltà di Lettere-Basile Università)",
+       "idx": 3,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "PALERMO (Basile/Re Ruggero)",
+       "idx": 4,
+       "arr": "13:52",
+       "dep": "13:52"
+      },
+      {
+       "stop": "PALERMO (Piazza Giulio Cesare - Stazione Centrale)",
+       "idx": 5,
+       "arr": "13:55",
+       "dep": "13:55"
+      },
+      {
+       "stop": "PALERMO (S.Maria della Catena)",
+       "idx": 6,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "PALERMO (Cavour/Prefettura)",
+       "idx": 7,
+       "arr": "14:07",
+       "dep": "14:07"
+      },
+      {
+       "stop": "PALERMO (Turati/La Lumia-Politeama)",
+       "idx": 8,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "PALERMO (Duca della Verdura/Toselli)",
+       "idx": 10,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "PALERMO (Libertà/Notarbartolo)",
+       "idx": 11,
+       "arr": "14:17",
+       "dep": "14:17"
+      },
+      {
+       "stop": "PALERMO (Libertà/Matteotti)",
+       "idx": 12,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 14,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Aldisio)",
+       "idx": 15,
+       "arr": "14:26",
+       "dep": "14:26"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Nuova-Maltese)",
+       "idx": 16,
+       "arr": "14:28",
+       "dep": "14:28"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 17,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 18,
+       "arr": "14:35",
+       "dep": "14:35"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 20,
+       "arr": "14:54",
+       "dep": "14:54"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 21,
+       "arr": "14:55",
+       "dep": "14:55"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 340-356)",
+       "idx": 22,
+       "arr": "14:56",
+       "dep": "14:56"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 199-218)",
+       "idx": 23,
+       "arr": "14:57",
+       "dep": "14:57"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 95-104)",
+       "idx": 24,
+       "arr": "14:58",
+       "dep": "14:58"
+      },
+      {
+       "stop": "CINISI (Piazza V.E. Orlando)",
+       "idx": 25,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 28,
+       "arr": "15:05",
+       "dep": "15:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p35.R8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "8676U F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MONREALE (Parcheggio Torres)",
+       "idx": 0,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "PALERMO (Ospedale Ingrassia)",
+       "idx": 1,
+       "arr": "14:06",
+       "dep": "14:06"
+      },
+      {
+       "stop": "PALERMO (Basile/Facoltà di Lettere-Basile Università)",
+       "idx": 3,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "PALERMO (Basile/Re Ruggero)",
+       "idx": 4,
+       "arr": "14:19",
+       "dep": "14:19"
+      },
+      {
+       "stop": "PALERMO (Piazza Giulio Cesare - Stazione Centrale)",
+       "idx": 5,
+       "arr": "14:24",
+       "dep": "14:24"
+      },
+      {
+       "stop": "PALERMO (Cavour/Prefettura)",
+       "idx": 7,
+       "arr": "14:31",
+       "dep": "14:31"
+      },
+      {
+       "stop": "PALERMO (Turati/La Lumia-Politeama)",
+       "idx": 8,
+       "arr": "14:33",
+       "dep": "14:33"
+      },
+      {
+       "stop": "PALERMO (Duca della Verdura/Toselli)",
+       "idx": 10,
+       "arr": "14:37",
+       "dep": "14:37"
+      },
+      {
+       "stop": "PALERMO (Libertà/Matteotti)",
+       "idx": 12,
+       "arr": "14:42",
+       "dep": "14:42"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 14,
+       "arr": "14:44",
+       "dep": "14:44"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 17,
+       "arr": "14:49",
+       "dep": "14:49"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 18,
+       "arr": "14:52",
+       "dep": "14:52"
+      },
+      {
+       "stop": "CINISI (AEROPORTO Falcone e Borsellino)",
+       "idx": 19,
+       "arr": "15:11",
+       "dep": "15:11"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 20,
+       "arr": "15:20",
+       "dep": "15:20"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 21,
+       "arr": "15:21",
+       "dep": "15:21"
+      },
+      {
+       "stop": "CINISI (Spiaggia Magaggiari)",
+       "idx": 26,
+       "arr": "15:22",
+       "dep": "15:22"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 407)",
+       "idx": 27,
+       "arr": "15:24",
+       "dep": "15:24"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 28,
+       "arr": "15:28",
+       "dep": "15:28"
+      },
+      {
+       "stop": "TERRASINI (Paternella)",
+       "idx": 29,
+       "arr": "15:33",
+       "dep": "15:33"
+      },
+      {
+       "stop": "TERRASINI (Città del Mare)",
+       "idx": 30,
+       "arr": "15:36",
+       "dep": "15:36"
+      },
+      {
+       "stop": "TERRASINI (C.da Muso di Porco - capolinea)",
+       "idx": 31,
+       "arr": "15:38",
+       "dep": "15:38"
+      }
+     ]
+    },
+    {
+     "corsa": "p35.R9",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "8679C F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Parcheggio Basile)",
+       "idx": 2,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 14,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Aldisio)",
+       "idx": 15,
+       "arr": "14:21",
+       "dep": "14:21"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Nuova-Maltese)",
+       "idx": 16,
+       "arr": "14:23",
+       "dep": "14:23"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 17,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 18,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 20,
+       "arr": "14:49",
+       "dep": "14:49"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 21,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 340-356)",
+       "idx": 22,
+       "arr": "14:51",
+       "dep": "14:51"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 199-218)",
+       "idx": 23,
+       "arr": "14:52",
+       "dep": "14:52"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 95-104)",
+       "idx": 24,
+       "arr": "14:53",
+       "dep": "14:53"
+      },
+      {
+       "stop": "CINISI (Piazza V.E. Orlando)",
+       "idx": 25,
+       "arr": "14:55",
+       "dep": "14:55"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 28,
+       "arr": "15:00",
+       "dep": "15:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p35.R10",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "8679D F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Giachery)",
+       "idx": 9,
+       "arr": "14:31",
+       "dep": "14:31"
+      },
+      {
+       "stop": "PALERMO (Duca della Verdura/Toselli)",
+       "idx": 10,
+       "arr": "14:36",
+       "dep": "14:36"
+      },
+      {
+       "stop": "PALERMO (Libertà/Notarbartolo)",
+       "idx": 11,
+       "arr": "14:38",
+       "dep": "14:38"
+      },
+      {
+       "stop": "PALERMO (Libertà/Matteotti)",
+       "idx": 12,
+       "arr": "14:41",
+       "dep": "14:41"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 14,
+       "arr": "14:44",
+       "dep": "14:44"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Aldisio)",
+       "idx": 15,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Nuova-Maltese)",
+       "idx": 16,
+       "arr": "14:46",
+       "dep": "14:46"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 17,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 18,
+       "arr": "14:53",
+       "dep": "14:53"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 20,
+       "arr": "15:20",
+       "dep": "15:20"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 21,
+       "arr": "15:21",
+       "dep": "15:21"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 340-356)",
+       "idx": 22,
+       "arr": "15:22",
+       "dep": "15:22"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 199-218)",
+       "idx": 23,
+       "arr": "15:23",
+       "dep": "15:23"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 95-104)",
+       "idx": 24,
+       "arr": "15:24",
+       "dep": "15:24"
+      },
+      {
+       "stop": "CINISI (Piazza V.E. Orlando)",
+       "idx": 25,
+       "arr": "15:25",
+       "dep": "15:25"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 28,
+       "arr": "15:30",
+       "dep": "15:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p36.R1",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "8679E F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Giachery)",
+       "idx": 9,
+       "arr": "15:13",
+       "dep": "15:13"
+      },
+      {
+       "stop": "PALERMO (Duca della Verdura/Toselli)",
+       "idx": 10,
+       "arr": "15:15",
+       "dep": "15:15"
+      },
+      {
+       "stop": "PALERMO (Libertà/Notarbartolo)",
+       "idx": 11,
+       "arr": "15:16",
+       "dep": "15:16"
+      },
+      {
+       "stop": "PALERMO (Libertà/Matteotti)",
+       "idx": 12,
+       "arr": "15:20",
+       "dep": "15:20"
+      },
+      {
+       "stop": "PALERMO (Croce Rossa/De Gasperi)",
+       "idx": 13,
+       "arr": "15:25",
+       "dep": "15:25"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 14,
+       "arr": "15:30",
+       "dep": "15:30"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Aldisio)",
+       "idx": 15,
+       "arr": "15:32",
+       "dep": "15:32"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Nuova-Maltese)",
+       "idx": 16,
+       "arr": "15:33",
+       "dep": "15:33"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 17,
+       "arr": "15:35",
+       "dep": "15:35"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 18,
+       "arr": "15:40",
+       "dep": "15:40"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 20,
+       "arr": "15:59",
+       "dep": "15:59"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 21,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 340-356)",
+       "idx": 22,
+       "arr": "16:01",
+       "dep": "16:01"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 199-218)",
+       "idx": 23,
+       "arr": "16:02",
+       "dep": "16:02"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 95-104)",
+       "idx": 24,
+       "arr": "16:03",
+       "dep": "16:03"
+      },
+      {
+       "stop": "CINISI (Piazza V.E. Orlando)",
+       "idx": 25,
+       "arr": "16:05",
+       "dep": "16:05"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 28,
+       "arr": "16:10",
+       "dep": "16:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p36.R2",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "8676V F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MONREALE (Parcheggio Torres)",
+       "idx": 0,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "PALERMO (Ospedale Ingrassia)",
+       "idx": 1,
+       "arr": "16:06",
+       "dep": "16:06"
+      },
+      {
+       "stop": "PALERMO (Basile/Facoltà di Lettere-Basile Università)",
+       "idx": 3,
+       "arr": "16:15",
+       "dep": "16:15"
+      },
+      {
+       "stop": "PALERMO (Basile/Re Ruggero)",
+       "idx": 4,
+       "arr": "16:19",
+       "dep": "16:19"
+      },
+      {
+       "stop": "PALERMO (Piazza Giulio Cesare - Stazione Centrale)",
+       "idx": 5,
+       "arr": "16:24",
+       "dep": "16:24"
+      },
+      {
+       "stop": "PALERMO (Cavour/Prefettura)",
+       "idx": 7,
+       "arr": "16:31",
+       "dep": "16:31"
+      },
+      {
+       "stop": "PALERMO (Turati/La Lumia-Politeama)",
+       "idx": 8,
+       "arr": "16:33",
+       "dep": "16:33"
+      },
+      {
+       "stop": "PALERMO (Libertà/Notarbartolo)",
+       "idx": 11,
+       "arr": "16:37",
+       "dep": "16:37"
+      },
+      {
+       "stop": "PALERMO (Croce Rossa/De Gasperi)",
+       "idx": 13,
+       "arr": "16:42",
+       "dep": "16:42"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 14,
+       "arr": "16:44",
+       "dep": "16:44"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 17,
+       "arr": "16:49",
+       "dep": "16:49"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 18,
+       "arr": "16:52",
+       "dep": "16:52"
+      },
+      {
+       "stop": "CINISI (AEROPORTO Falcone e Borsellino)",
+       "idx": 19,
+       "arr": "17:11",
+       "dep": "17:11"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 20,
+       "arr": "17:20",
+       "dep": "17:20"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 21,
+       "arr": "17:21",
+       "dep": "17:21"
+      },
+      {
+       "stop": "CINISI (Spiaggia Magaggiari)",
+       "idx": 26,
+       "arr": "17:22",
+       "dep": "17:22"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 407)",
+       "idx": 27,
+       "arr": "17:24",
+       "dep": "17:24"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 28,
+       "arr": "17:28",
+       "dep": "17:28"
+      },
+      {
+       "stop": "TERRASINI (Paternella)",
+       "idx": 29,
+       "arr": "17:33",
+       "dep": "17:33"
+      },
+      {
+       "stop": "TERRASINI (Città del Mare)",
+       "idx": 30,
+       "arr": "17:36",
+       "dep": "17:36"
+      },
+      {
+       "stop": "TERRASINI (C.da Muso di Porco - capolinea)",
+       "idx": 31,
+       "arr": "17:38",
+       "dep": "17:38"
+      }
+     ]
+    },
+    {
+     "corsa": "p36.R3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "8676W F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MONREALE (Parcheggio Torres)",
+       "idx": 0,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "PALERMO (Ospedale Ingrassia)",
+       "idx": 1,
+       "arr": "18:06",
+       "dep": "18:06"
+      },
+      {
+       "stop": "PALERMO (Basile/Facoltà di Lettere-Basile Università)",
+       "idx": 3,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "PALERMO (Basile/Re Ruggero)",
+       "idx": 4,
+       "arr": "18:19",
+       "dep": "18:19"
+      },
+      {
+       "stop": "PALERMO (Piazza Giulio Cesare - Stazione Centrale)",
+       "idx": 5,
+       "arr": "18:24",
+       "dep": "18:24"
+      },
+      {
+       "stop": "PALERMO (Cavour/Prefettura)",
+       "idx": 7,
+       "arr": "18:31",
+       "dep": "18:31"
+      },
+      {
+       "stop": "PALERMO (Turati/La Lumia-Politeama)",
+       "idx": 8,
+       "arr": "18:33",
+       "dep": "18:33"
+      },
+      {
+       "stop": "PALERMO (Libertà/Notarbartolo)",
+       "idx": 11,
+       "arr": "18:37",
+       "dep": "18:37"
+      },
+      {
+       "stop": "PALERMO (Croce Rossa/De Gasperi)",
+       "idx": 13,
+       "arr": "18:42",
+       "dep": "18:42"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 14,
+       "arr": "18:44",
+       "dep": "18:44"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 17,
+       "arr": "18:49",
+       "dep": "18:49"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 18,
+       "arr": "18:52",
+       "dep": "18:52"
+      },
+      {
+       "stop": "CINISI (AEROPORTO Falcone e Borsellino)",
+       "idx": 19,
+       "arr": "19:11",
+       "dep": "19:11"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 20,
+       "arr": "19:20",
+       "dep": "19:20"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 21,
+       "arr": "19:21",
+       "dep": "19:21"
+      },
+      {
+       "stop": "CINISI (Spiaggia Magaggiari)",
+       "idx": 26,
+       "arr": "19:22",
+       "dep": "19:22"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 407)",
+       "idx": 27,
+       "arr": "19:24",
+       "dep": "19:24"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 28,
+       "arr": "19:28",
+       "dep": "19:28"
+      },
+      {
+       "stop": "TERRASINI (Paternella)",
+       "idx": 29,
+       "arr": "19:33",
+       "dep": "19:33"
+      },
+      {
+       "stop": "TERRASINI (Città del Mare)",
+       "idx": 30,
+       "arr": "19:36",
+       "dep": "19:36"
+      },
+      {
+       "stop": "TERRASINI (C.da Muso di Porco - capolinea)",
+       "idx": 31,
+       "arr": "19:38",
+       "dep": "19:38"
+      }
+     ]
+    },
+    {
+     "corsa": "p36.R4",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "8679F F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Piazza Giulio Cesare - Stazione Centrale)",
+       "idx": 5,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "PALERMO (S.Maria della Catena)",
+       "idx": 6,
+       "arr": "18:17",
+       "dep": "18:17"
+      },
+      {
+       "stop": "PALERMO (Cavour/Prefettura)",
+       "idx": 7,
+       "arr": "18:20",
+       "dep": "18:20"
+      },
+      {
+       "stop": "PALERMO (Turati/La Lumia-Politeama)",
+       "idx": 8,
+       "arr": "18:25",
+       "dep": "18:25"
+      },
+      {
+       "stop": "PALERMO (Giachery)",
+       "idx": 9,
+       "arr": "18:27",
+       "dep": "18:27"
+      },
+      {
+       "stop": "PALERMO (Duca della Verdura/Toselli)",
+       "idx": 10,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "PALERMO (Libertà/Matteotti)",
+       "idx": 12,
+       "arr": "18:35",
+       "dep": "18:35"
+      },
+      {
+       "stop": "PALERMO (Croce Rossa/De Gasperi)",
+       "idx": 13,
+       "arr": "18:37",
+       "dep": "18:37"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 14,
+       "arr": "18:45",
+       "dep": "18:45"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Aldisio)",
+       "idx": 15,
+       "arr": "18:46",
+       "dep": "18:46"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Nuova-Maltese)",
+       "idx": 16,
+       "arr": "18:48",
+       "dep": "18:48"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 17,
+       "arr": "18:50",
+       "dep": "18:50"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 18,
+       "arr": "18:55",
+       "dep": "18:55"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 20,
+       "arr": "19:14",
+       "dep": "19:14"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 21,
+       "arr": "19:15",
+       "dep": "19:15"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 340-356)",
+       "idx": 22,
+       "arr": "19:16",
+       "dep": "19:16"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 199-218)",
+       "idx": 23,
+       "arr": "19:17",
+       "dep": "19:17"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 95-104)",
+       "idx": 24,
+       "arr": "19:18",
+       "dep": "19:18"
+      },
+      {
+       "stop": "CINISI (Piazza V.E. Orlando)",
+       "idx": 25,
+       "arr": "19:20",
+       "dep": "19:20"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 28,
+       "arr": "19:25",
+       "dep": "19:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p36.R5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "8676Z F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MONREALE (Parcheggio Torres)",
+       "idx": 0,
+       "arr": "19:01",
+       "dep": "19:01"
+      },
+      {
+       "stop": "PALERMO (Ospedale Ingrassia)",
+       "idx": 1,
+       "arr": "19:07",
+       "dep": "19:07"
+      },
+      {
+       "stop": "PALERMO (Basile/Facoltà di Lettere-Basile Università)",
+       "idx": 3,
+       "arr": "19:16",
+       "dep": "19:16"
+      },
+      {
+       "stop": "PALERMO (Basile/Re Ruggero)",
+       "idx": 4,
+       "arr": "19:20",
+       "dep": "19:20"
+      },
+      {
+       "stop": "PALERMO (Piazza Giulio Cesare - Stazione Centrale)",
+       "idx": 5,
+       "arr": "19:25",
+       "dep": "19:25"
+      },
+      {
+       "stop": "PALERMO (Cavour/Prefettura)",
+       "idx": 7,
+       "arr": "19:32",
+       "dep": "19:32"
+      },
+      {
+       "stop": "PALERMO (Turati/La Lumia-Politeama)",
+       "idx": 8,
+       "arr": "19:34",
+       "dep": "19:34"
+      },
+      {
+       "stop": "PALERMO (Libertà/Notarbartolo)",
+       "idx": 11,
+       "arr": "19:38",
+       "dep": "19:38"
+      },
+      {
+       "stop": "PALERMO (Croce Rossa/De Gasperi)",
+       "idx": 13,
+       "arr": "19:43",
+       "dep": "19:43"
+      },
+      {
+       "stop": "PALERMO (Strasburgo/Belgio)",
+       "idx": 14,
+       "arr": "19:45",
+       "dep": "19:45"
+      },
+      {
+       "stop": "PALERMO (San Lorenzo/Commissariato-Stazione FS)",
+       "idx": 17,
+       "arr": "19:50",
+       "dep": "19:50"
+      },
+      {
+       "stop": "PALERMO (Lanza di Scalea/Faraone)",
+       "idx": 18,
+       "arr": "19:53",
+       "dep": "19:53"
+      },
+      {
+       "stop": "CINISI (AEROPORTO Falcone e Borsellino)",
+       "idx": 19,
+       "arr": "20:12",
+       "dep": "20:12"
+      },
+      {
+       "stop": "CINISI (Nazionale/Einaudi)",
+       "idx": 20,
+       "arr": "20:21",
+       "dep": "20:21"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 21,
+       "arr": "20:22",
+       "dep": "20:22"
+      },
+      {
+       "stop": "CINISI (Spiaggia Magaggiari)",
+       "idx": 26,
+       "arr": "20:23",
+       "dep": "20:23"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 407)",
+       "idx": 27,
+       "arr": "20:25",
+       "dep": "20:25"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 28,
+       "arr": "20:29",
+       "dep": "20:29"
+      },
+      {
+       "stop": "TERRASINI (Paternella)",
+       "idx": 29,
+       "arr": "20:34",
+       "dep": "20:34"
+      },
+      {
+       "stop": "TERRASINI (Città del Mare)",
+       "idx": 30,
+       "arr": "20:37",
+       "dep": "20:37"
+      },
+      {
+       "stop": "TERRASINI (C.da Muso di Porco - capolinea)",
+       "idx": 31,
+       "arr": "20:39",
+       "dep": "20:39"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

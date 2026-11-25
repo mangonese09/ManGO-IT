@@ -1,0 +1,2126 @@
+{
+ "operator": "Consorzio Stabile Siciliano Mobilità Est (Lotto 2)",
+ "route_id": "lot2-143",
+ "name": "MILITELLO - SCORDIA - CATANIA - TAORMINA - MESSINA",
+ "short_name": "143",
+ "source": "orario_b2d178879e.pdf#p62",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "MILITELLO (Via Umberto 188/190)",
+    "SCORDIA (Piazza Matteotti)",
+    "PALAGONIA FS.",
+    "BV. VALSAVOIA",
+    "BV. IAZZOTTO",
+    "PONTE SIMETO",
+    "AEROPORTO (Fontanarossa)",
+    "CATANIA (Via D'Amico/Archimede) A.",
+    "CATANIA (Via D'Amico/Archimede) P.",
+    "ACIREALE (P.zza Duomo/C.so Umberto)",
+    "GIARRE (P.zza Duomo/Via Calipoli 236)",
+    "FIUMEFREDDO (P.zza Chiesa Madre)",
+    "RECANATI (Viale Dionisio-Terminal Bus)",
+    "GIARDINI (Via Umberto SS 114/San Giovanni)",
+    "TAORMINA (P.zza L. Pirandelo) A.",
+    "TAORMINA (P.zza L. Pirandelo) P.",
+    "LETOJANNI (Bv. Galodoro SS 114)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p62.T1R1-1808",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "AUTOLINEA Militello - Scordia - Catania - Taormina - Messina 1 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 0,
+       "arr": "06:00",
+       "dep": "06:00"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 1,
+       "arr": "06:20",
+       "dep": "06:20"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 2,
+       "arr": "06:25",
+       "dep": "06:25"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 3,
+       "arr": "06:35",
+       "dep": "06:35"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 4,
+       "arr": "06:40",
+       "dep": "06:40"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 5,
+       "arr": "06:45",
+       "dep": "06:45"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 7,
+       "arr": "07:00",
+       "dep": "07:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T1R2-Aggiunta-104",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "3 Aggiunta-104 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 1,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 2,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 3,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 4,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 5,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "AEROPORTO (Fontanarossa)",
+       "idx": 6,
+       "arr": "07:55",
+       "dep": "07:55"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 7,
+       "arr": "08:05",
+       "dep": "08:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T1R3-1815",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "5 F E R I A L E L u n .- V e n ."
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 0,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 1,
+       "arr": "07:50",
+       "dep": "07:50"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 2,
+       "arr": "07:55",
+       "dep": "07:55"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 3,
+       "arr": "08:05",
+       "dep": "08:05"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 4,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 5,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 7,
+       "arr": "08:35",
+       "dep": "08:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T1R4-Aggiunta-442",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "7 Aggiunta-442 F E R I A L E perio d o s c o l a s tico L u n .- V e n ."
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 0,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 1,
+       "arr": "07:55",
+       "dep": "07:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T1R5-1809",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "9 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 0,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 1,
+       "arr": "08:05",
+       "dep": "08:05"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 2,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 3,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 4,
+       "arr": "08:25",
+       "dep": "08:25"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 5,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 7,
+       "arr": "08:50",
+       "dep": "08:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T1R6-1814",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "11 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 0,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 1,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 2,
+       "arr": "08:25",
+       "dep": "08:25"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 3,
+       "arr": "08:35",
+       "dep": "08:35"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 4,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 5,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 7,
+       "arr": "09:05",
+       "dep": "09:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T1R7-Aggiunta-105",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Servizio 13 Aggiunta-105 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 0,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 1,
+       "arr": "08:50",
+       "dep": "08:50"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 2,
+       "arr": "08:55",
+       "dep": "08:55"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 3,
+       "arr": "09:05",
+       "dep": "09:05"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 4,
+       "arr": "09:10",
+       "dep": "09:10"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 5,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "AEROPORTO (Fontanarossa)",
+       "idx": 6,
+       "arr": "09:25",
+       "dep": "09:25"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 7,
+       "arr": "09:35",
+       "dep": "09:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T1R8-Aggiunta-112",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": {
+       "from": "1/6",
+       "to": "31/8"
+      },
+      "raw": "1 \"Autotrasporto 15 Aggiunta-112 GIO R N A L IERA 1 /6 -3 1 /8"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AEROPORTO (Fontanarossa)",
+       "idx": 6,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 7,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 8,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "RECANATI (Viale Dionisio-Terminal Bus)",
+       "idx": 12,
+       "arr": "10:00",
+       "dep": "10:00"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 13,
+       "arr": "10:10",
+       "dep": "10:10"
+      },
+      {
+       "stop": "TAORMINA (P.zza L. Pirandelo) A.",
+       "idx": 14,
+       "arr": "10:25",
+       "dep": "10:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T1R9-1810",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Persone\" 17 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 0,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 1,
+       "arr": "09:20",
+       "dep": "09:20"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 2,
+       "arr": "09:25",
+       "dep": "09:25"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 3,
+       "arr": "09:35",
+       "dep": "09:35"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 4,
+       "arr": "09:40",
+       "dep": "09:40"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 5,
+       "arr": "09:45",
+       "dep": "09:45"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 7,
+       "arr": "10:05",
+       "dep": "10:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T1R10-Aggiunta-280",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "19 Aggiunta-280 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 0,
+       "arr": "13:45",
+       "dep": "13:45"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 1,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 2,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 3,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 4,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 5,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "AEROPORTO (Fontanarossa)",
+       "idx": 6,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 7,
+       "arr": "14:50",
+       "dep": "14:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T1R11-1829",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "21 F E R I A L E perio d o s c o l a s tico L u n .- V e n ."
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 0,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 1,
+       "arr": "14:25",
+       "dep": "14:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T1R12-Aggiunta-113",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "23 Aggiunta-113 F E R I A L E L u n .- V e n ."
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AEROPORTO (Fontanarossa)",
+       "idx": 6,
+       "arr": "15:15",
+       "dep": "15:15"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 7,
+       "arr": "15:30",
+       "dep": "15:30"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 8,
+       "arr": "15:30",
+       "dep": "15:30"
+      },
+      {
+       "stop": "ACIREALE (P.zza Duomo/C.so Umberto)",
+       "idx": 9,
+       "arr": "16:05",
+       "dep": "16:05"
+      },
+      {
+       "stop": "GIARRE (P.zza Duomo/Via Calipoli 236)",
+       "idx": 10,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "FIUMEFREDDO (P.zza Chiesa Madre)",
+       "idx": 11,
+       "arr": "16:40",
+       "dep": "16:40"
+      },
+      {
+       "stop": "RECANATI (Viale Dionisio-Terminal Bus)",
+       "idx": 12,
+       "arr": "16:50",
+       "dep": "16:50"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 13,
+       "arr": "17:00",
+       "dep": "17:00"
+      },
+      {
+       "stop": "TAORMINA (P.zza L. Pirandelo) A.",
+       "idx": 14,
+       "arr": "17:10",
+       "dep": "17:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T1R13-Aggiunta-439",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "25 Aggiunta-439 F E R I A L E perio d o s c o l a s tico L u n .- V e n ."
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 0,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 1,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 2,
+       "arr": "14:55",
+       "dep": "14:55"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 3,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 4,
+       "arr": "15:10",
+       "dep": "15:10"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 5,
+       "arr": "15:15",
+       "dep": "15:15"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 7,
+       "arr": "15:35",
+       "dep": "15:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T1R14-9317",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "27 F E R I A L E p e r i o d o s c o l a s t i c o L u n . - V e n ."
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 0,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 1,
+       "arr": "15:25",
+       "dep": "15:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T1R15-Aggiunta-114",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": {
+       "from": "1/6",
+       "to": "31/8"
+      },
+      "raw": "29 Aggiunta-114 GIO R N A L IERA 1 /6 -3 1 /8"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AEROPORTO (Fontanarossa)",
+       "idx": 6,
+       "arr": "16:15",
+       "dep": "16:15"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 7,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 8,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "RECANATI (Viale Dionisio-Terminal Bus)",
+       "idx": 12,
+       "arr": "17:15",
+       "dep": "17:15"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 13,
+       "arr": "17:25",
+       "dep": "17:25"
+      },
+      {
+       "stop": "TAORMINA (P.zza L. Pirandelo) A.",
+       "idx": 14,
+       "arr": "17:40",
+       "dep": "17:40"
+      },
+      {
+       "stop": "TAORMINA (P.zza L. Pirandelo) P.",
+       "idx": 15,
+       "arr": "17:40",
+       "dep": "17:40"
+      },
+      {
+       "stop": "LETOJANNI (Bv. Galodoro SS 114)",
+       "idx": 16,
+       "arr": "17:55",
+       "dep": "17:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T1R16-Aggiunta-440",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "31 Aggiunta-440 F E R I A L E perio d o s c o l a s tico L u n .- V e n ."
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 0,
+       "arr": "15:45",
+       "dep": "15:45"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 1,
+       "arr": "16:05",
+       "dep": "16:05"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 2,
+       "arr": "16:10",
+       "dep": "16:10"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 3,
+       "arr": "16:20",
+       "dep": "16:20"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 4,
+       "arr": "16:25",
+       "dep": "16:25"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 5,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 7,
+       "arr": "16:50",
+       "dep": "16:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T1R17-Aggiunta-441",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "33 Aggiunta-441 F E R I A L E p e r i o d o s c o l a s t i c o L u n . - V e n ."
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 0,
+       "arr": "17:45",
+       "dep": "17:45"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 1,
+       "arr": "18:05",
+       "dep": "18:05"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 2,
+       "arr": "18:10",
+       "dep": "18:10"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 3,
+       "arr": "18:20",
+       "dep": "18:20"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 4,
+       "arr": "18:25",
+       "dep": "18:25"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 5,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 7,
+       "arr": "18:50",
+       "dep": "18:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T1R18-1836",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "LOTTO 35 F E R I A L E L u n .- V e n ."
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 0,
+       "arr": "18:45",
+       "dep": "18:45"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 1,
+       "arr": "19:05",
+       "dep": "19:05"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 2,
+       "arr": "19:10",
+       "dep": "19:10"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 3,
+       "arr": "19:20",
+       "dep": "19:20"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 4,
+       "arr": "19:25",
+       "dep": "19:25"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 5,
+       "arr": "19:30",
+       "dep": "19:30"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 7,
+       "arr": "19:50",
+       "dep": "19:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T1R19-1832",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "2 LINEA 37 39 41 F E R I A L E p e r i o d o s c o l a s t i c o L u n . - V e n ."
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 0,
+       "arr": "19:05",
+       "dep": "19:05"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 1,
+       "arr": "19:25",
+       "dep": "19:25"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "LETOJANNI (Bv. Galodoro SS 114)",
+    "TAORMINA (P.zza L. Pirandelo) A.",
+    "TAORMINA (P.zza L. Pirandelo) P.",
+    "GIARDINI (Via Umberto SS 114/San Giovanni)",
+    "RECANATI (Viale Dionisio-Terminal Bus)",
+    "FIUMEFREDDO (Via P. Piemonte 98)",
+    "GIARRE (P.zza Duomo/Via Calipoli 236)",
+    "ACIREALE (P.zza Duomo/C.so Umberto)",
+    "CATANIA (Via D'Amico/Archimede) A.",
+    "CATANIA (Via D'Amico/Archimede) P.",
+    "AEROPORTO (Fontanarossa)",
+    "PONTE SIMETO",
+    "BV. IAZZOTTO",
+    "BV. VALSAVOIA",
+    "PALAGONIA FS.",
+    "SCORDIA (Piazza Matteotti)",
+    "MILITELLO (Via Umberto 188/190)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p62.T2R1-Aggiunta-108",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "2 Aggiunta-108 F E R I A L E p e r i o d o s c o l a s t i c o L u n . - V e n ."
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "06:30",
+       "dep": "06:30"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 11,
+       "arr": "06:50",
+       "dep": "06:50"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 12,
+       "arr": "06:55",
+       "dep": "06:55"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 13,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 14,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 15,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 16,
+       "arr": "07:35",
+       "dep": "07:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T2R2-Aggiunta-305",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "4 Aggiunta-305 F E R I A L E perio d o s c o l a s tico L u n .- V e n ."
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 11,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 12,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 13,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 14,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 15,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 16,
+       "arr": "08:05",
+       "dep": "08:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T2R3-Aggiunta-442",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "6 Aggiunta-442 F E R I A L E perio d o s c o l a s tico L u n .- V e n ."
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 15,
+       "arr": "07:50",
+       "dep": "07:50"
+      },
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 16,
+       "arr": "08:10",
+       "dep": "08:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T2R4-1841",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "8 F E R I A L E perio d o s c o l a s tico L u n .- V e n ."
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 11,
+       "arr": "07:50",
+       "dep": "07:50"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 12,
+       "arr": "07:55",
+       "dep": "07:55"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 13,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 14,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 15,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 16,
+       "arr": "08:35",
+       "dep": "08:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T2R5-Aggiunta-106",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "10 Aggiunta-106 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "AEROPORTO (Fontanarossa)",
+       "idx": 10,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 11,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 12,
+       "arr": "08:25",
+       "dep": "08:25"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 13,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 14,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 15,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 16,
+       "arr": "09:05",
+       "dep": "09:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T2R6-Aggiunta-324",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "12 Aggiunta-324 F E R I A L E perio d o s c o l a s tico L u n .- V e n ."
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 11,
+       "arr": "08:50",
+       "dep": "08:50"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 12,
+       "arr": "08:55",
+       "dep": "08:55"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 13,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 14,
+       "arr": "09:10",
+       "dep": "09:10"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 15,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 16,
+       "arr": "09:35",
+       "dep": "09:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T2R7-1846",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "14 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 11,
+       "arr": "09:20",
+       "dep": "09:20"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 12,
+       "arr": "09:25",
+       "dep": "09:25"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 13,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 14,
+       "arr": "09:40",
+       "dep": "09:40"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 15,
+       "arr": "09:45",
+       "dep": "09:45"
+      },
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 16,
+       "arr": "10:05",
+       "dep": "10:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T2R8-Aggiunta-107",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "16 Aggiunta-107 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "10:30",
+       "dep": "10:30"
+      },
+      {
+       "stop": "AEROPORTO (Fontanarossa)",
+       "idx": 10,
+       "arr": "10:40",
+       "dep": "10:40"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 11,
+       "arr": "10:50",
+       "dep": "10:50"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 12,
+       "arr": "10:55",
+       "dep": "10:55"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 13,
+       "arr": "11:00",
+       "dep": "11:00"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 14,
+       "arr": "11:10",
+       "dep": "11:10"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 15,
+       "arr": "11:15",
+       "dep": "11:15"
+      },
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 16,
+       "arr": "11:35",
+       "dep": "11:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T2R9-Aggiunta-281",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "18 Aggiunta-281 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "11:30",
+       "dep": "11:30"
+      },
+      {
+       "stop": "AEROPORTO (Fontanarossa)",
+       "idx": 10,
+       "arr": "11:40",
+       "dep": "11:40"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 11,
+       "arr": "11:50",
+       "dep": "11:50"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 12,
+       "arr": "11:55",
+       "dep": "11:55"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 13,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 14,
+       "arr": "12:10",
+       "dep": "12:10"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 15,
+       "arr": "12:15",
+       "dep": "12:15"
+      },
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 16,
+       "arr": "12:35",
+       "dep": "12:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T2R10-1847",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "20 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "12:25",
+       "dep": "12:25"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 11,
+       "arr": "12:45",
+       "dep": "12:45"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 12,
+       "arr": "12:50",
+       "dep": "12:50"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 13,
+       "arr": "12:55",
+       "dep": "12:55"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 14,
+       "arr": "13:05",
+       "dep": "13:05"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 15,
+       "arr": "13:10",
+       "dep": "13:10"
+      },
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 16,
+       "arr": "13:30",
+       "dep": "13:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T2R11-Aggiunta-109",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": {
+       "from": "1/4",
+       "to": "31/10"
+      },
+      "raw": "22 Aggiunta-109 GI O R N A L I ERA 1 / 4- 3 1/ 1 0"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TAORMINA (P.zza L. Pirandelo) P.",
+       "idx": 2,
+       "arr": "11:15",
+       "dep": "11:15"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 3,
+       "arr": "11:30",
+       "dep": "11:30"
+      },
+      {
+       "stop": "RECANATI (Viale Dionisio-Terminal Bus)",
+       "idx": 4,
+       "arr": "11:40",
+       "dep": "11:40"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 8,
+       "arr": "12:25",
+       "dep": "12:25"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "12:25",
+       "dep": "12:25"
+      },
+      {
+       "stop": "AEROPORTO (Fontanarossa)",
+       "idx": 10,
+       "arr": "12:40",
+       "dep": "12:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T2R12-1856",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "24 F E R I A L E p e r i o d o s c o l a s t i c o L u n . - V e n ."
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 15,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 16,
+       "arr": "14:00",
+       "dep": "14:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T2R13-Aggiunta-111",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": {
+       "from": "1/6",
+       "to": "31/8"
+      },
+      "raw": "26 Aggiunta-111 GIO R N A L IERA 1 /6 -3 1 /8"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "LETOJANNI (Bv. Galodoro SS 114)",
+       "idx": 0,
+       "arr": "11:30",
+       "dep": "11:30"
+      },
+      {
+       "stop": "TAORMINA (P.zza L. Pirandelo) A.",
+       "idx": 1,
+       "arr": "11:45",
+       "dep": "11:45"
+      },
+      {
+       "stop": "TAORMINA (P.zza L. Pirandelo) P.",
+       "idx": 2,
+       "arr": "11:45",
+       "dep": "11:45"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 3,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "RECANATI (Viale Dionisio-Terminal Bus)",
+       "idx": 4,
+       "arr": "12:10",
+       "dep": "12:10"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 8,
+       "arr": "12:55",
+       "dep": "12:55"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "12:55",
+       "dep": "12:55"
+      },
+      {
+       "stop": "AEROPORTO (Fontanarossa)",
+       "idx": 10,
+       "arr": "13:10",
+       "dep": "13:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T2R14-1848",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "28 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 11,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 12,
+       "arr": "13:25",
+       "dep": "13:25"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 13,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 14,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 15,
+       "arr": "13:45",
+       "dep": "13:45"
+      },
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 16,
+       "arr": "14:05",
+       "dep": "14:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T2R15-1855",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "30 F E R I A L E perio d o s c o l a s tico L u n .- V e n ."
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 15,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 16,
+       "arr": "14:20",
+       "dep": "14:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T2R16-1863",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "32 F E R I A L E perio d o s c o l a s tico L u n .- V e n ."
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 15,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 16,
+       "arr": "15:05",
+       "dep": "15:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T2R17-1857",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "34 F E R I A L E L u n .- V e n ."
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 11,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 12,
+       "arr": "14:55",
+       "dep": "14:55"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 13,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 14,
+       "arr": "15:10",
+       "dep": "15:10"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 15,
+       "arr": "15:15",
+       "dep": "15:15"
+      },
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 16,
+       "arr": "15:35",
+       "dep": "15:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T2R18-50050",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "36 F E R I A L E p e r i o d o s c o l a s t i c o L u n . - V e n ."
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 11,
+       "arr": "15:20",
+       "dep": "15:20"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 12,
+       "arr": "15:25",
+       "dep": "15:25"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 13,
+       "arr": "15:30",
+       "dep": "15:30"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 14,
+       "arr": "15:40",
+       "dep": "15:40"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 15,
+       "arr": "15:45",
+       "dep": "15:45"
+      },
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 16,
+       "arr": "16:05",
+       "dep": "16:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T2R19-Aggiunta-110",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "38 Aggiunta-110 F E R I A L E L u n .- V e n ."
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TAORMINA (P.zza L. Pirandelo) P.",
+       "idx": 2,
+       "arr": "15:15",
+       "dep": "15:15"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 3,
+       "arr": "15:30",
+       "dep": "15:30"
+      },
+      {
+       "stop": "RECANATI (Viale Dionisio-Terminal Bus)",
+       "idx": 4,
+       "arr": "15:40",
+       "dep": "15:40"
+      },
+      {
+       "stop": "FIUMEFREDDO (Via P. Piemonte 98)",
+       "idx": 5,
+       "arr": "15:50",
+       "dep": "15:50"
+      },
+      {
+       "stop": "GIARRE (P.zza Duomo/Via Calipoli 236)",
+       "idx": 6,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "ACIREALE (P.zza Duomo/C.so Umberto)",
+       "idx": 7,
+       "arr": "16:25",
+       "dep": "16:25"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 8,
+       "arr": "17:00",
+       "dep": "17:00"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "17:00",
+       "dep": "17:00"
+      },
+      {
+       "stop": "AEROPORTO (Fontanarossa)",
+       "idx": 10,
+       "arr": "17:15",
+       "dep": "17:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T2R20-1859",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "40 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "17:00",
+       "dep": "17:00"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 11,
+       "arr": "17:20",
+       "dep": "17:20"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 12,
+       "arr": "17:25",
+       "dep": "17:25"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 13,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 14,
+       "arr": "17:40",
+       "dep": "17:40"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 15,
+       "arr": "17:45",
+       "dep": "17:45"
+      },
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 16,
+       "arr": "18:05",
+       "dep": "18:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p62.T2R21-1866",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "42 F E R I A L E L u n .- V e n ."
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 9,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "PONTE SIMETO",
+       "idx": 11,
+       "arr": "18:20",
+       "dep": "18:20"
+      },
+      {
+       "stop": "BV. IAZZOTTO",
+       "idx": 12,
+       "arr": "18:25",
+       "dep": "18:25"
+      },
+      {
+       "stop": "BV. VALSAVOIA",
+       "idx": 13,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "PALAGONIA FS.",
+       "idx": 14,
+       "arr": "18:40",
+       "dep": "18:40"
+      },
+      {
+       "stop": "SCORDIA (Piazza Matteotti)",
+       "idx": 15,
+       "arr": "18:45",
+       "dep": "18:45"
+      },
+      {
+       "stop": "MILITELLO (Via Umberto 188/190)",
+       "idx": 16,
+       "arr": "19:05",
+       "dep": "19:05"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

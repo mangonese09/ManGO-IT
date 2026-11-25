@@ -1,0 +1,75 @@
+{
+ "operator": "Consorzio Stabile Siciliano Mobilità Est (Lotto 2)",
+ "route_id": "lot2-98",
+ "name": "TAORMINA - GIARDINI NAXOS - RECANATI - CATANIA - CATANIA AEROPORTO",
+ "short_name": "98",
+ "source": "orario_b2d178879e.pdf#p50",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "AEROPORTO CATANIA Fontanarossa",
+    "AEROPORTO CATANIA Fontanarossa"
+   ],
+   "kms": [
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p50.T1R25-53037",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "49 G I O R N A L IE R A e s c l u s o N a t a l e - C a p o d a n n o - 19:45 19:55 20:00 20:05 20:10 |"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 0,
+       "arr": "21:05",
+       "dep": "21:05"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 1,
+       "arr": "21:05",
+       "dep": "21:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p50.T1R26-53038",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": {
+       "from": "01/4",
+       "to": "31/10"
+      },
+      "raw": "51 G I O R N A L IE R A D A L 0 1 / 4 A L 3 1 /1 0 - 21:45 21:55 22:00 22:05 22:10 |"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 0,
+       "arr": "23:05",
+       "dep": "23:05"
+      },
+      {
+       "stop": "AEROPORTO CATANIA Fontanarossa",
+       "idx": 1,
+       "arr": "23:05",
+       "dep": "23:05"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

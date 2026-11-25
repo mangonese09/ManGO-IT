@@ -1,0 +1,126 @@
+{
+ "operator": "Ortolano e Puglisi",
+ "route_id": "lot1-new-p2",
+ "name": "ALIA - LERCARA FRIDDI",
+ "short_name": "NEW",
+ "source": "t3-tabelle-_orari_da_linea_350_a_new_alia-cerda.pdf#p36",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "ALIA (VIA GARIBALDI N'34)",
+    "ALIA (PIAZZA SANTA ROSALIA)",
+    "MONTEMAGGIORE",
+    "ALIMINUSA",
+    "CERDA"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p36.A1",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "NEW 35 F e ri a le (N EW lu n e d ì- 3 5) venerdì in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 1,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "MONTEMAGGIORE",
+       "idx": 2,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "ALIMINUSA",
+       "idx": 3,
+       "arr": "14:55",
+       "dep": "14:55"
+      },
+      {
+       "stop": "CERDA",
+       "idx": 4,
+       "arr": "15:20",
+       "dep": "15:20"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CERDA",
+    "ALIMINUSA",
+    "MONTEMAGGIORE",
+    "ALIA (PIAZZA SANTA ROSALIA)",
+    "ALIA (VIA GARIBALDI N'34)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p36.R1",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "NEW 34 F e ri a le (N EW lu n e d ì- 3 4) venerdì in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CERDA",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "ALIMINUSA",
+       "idx": 1,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "MONTEMAGGIORE",
+       "idx": 2,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 3,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "ALIA (VIA GARIBALDI N'34)",
+       "idx": 4,
+       "arr": "08:05",
+       "dep": "08:05"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

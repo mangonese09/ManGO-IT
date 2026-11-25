@@ -1,0 +1,334 @@
+{
+ "operator": "Lo Iacono S.re & C.Autoservizi",
+ "route_id": "lot1-306-p2",
+ "name": "VALLEDOLMO - PALERMO",
+ "short_name": "306",
+ "source": "t2-tabelle_-orari_da_linea_299_a_linea_344.pdf#p7",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "VALLEDOLMO (PIAZZA OLMO)",
+    "ROCCAPALUMBA (FS)"
+   ],
+   "kms": [
+    0.0,
+    24.0
+   ],
+   "trips": [
+    {
+     "corsa": "p7.A1",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "AGG 76 Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VALLEDOLMO (PIAZZA OLMO)",
+       "idx": 0,
+       "arr": "08:35",
+       "dep": "08:35"
+      },
+      {
+       "stop": "ROCCAPALUMBA (FS)",
+       "idx": 1,
+       "arr": "09:15",
+       "dep": "09:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p7.A2",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "AGG 78 Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VALLEDOLMO (PIAZZA OLMO)",
+       "idx": 0,
+       "arr": "10:35",
+       "dep": "10:35"
+      },
+      {
+       "stop": "ROCCAPALUMBA (FS)",
+       "idx": 1,
+       "arr": "11:15",
+       "dep": "11:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p7.A3",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "AGG 80 Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VALLEDOLMO (PIAZZA OLMO)",
+       "idx": 0,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "ROCCAPALUMBA (FS)",
+       "idx": 1,
+       "arr": "13:10",
+       "dep": "13:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p7.A4",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "NEW 10 Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VALLEDOLMO (PIAZZA OLMO)",
+       "idx": 0,
+       "arr": "16:32",
+       "dep": "16:32"
+      },
+      {
+       "stop": "ROCCAPALUMBA (FS)",
+       "idx": 1,
+       "arr": "17:13",
+       "dep": "17:13"
+      }
+     ]
+    },
+    {
+     "corsa": "p7.A5",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "AGG 82 Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VALLEDOLMO (PIAZZA OLMO)",
+       "idx": 0,
+       "arr": "17:32",
+       "dep": "17:32"
+      },
+      {
+       "stop": "ROCCAPALUMBA (FS)",
+       "idx": 1,
+       "arr": "18:13",
+       "dep": "18:13"
+      }
+     ]
+    },
+    {
+     "corsa": "p7.A6",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "NEW 12 76)KM(AGG 78)KM(AGG 80)KM(NEW 10)KM(AGG 82)KM(NEW 12) Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VALLEDOLMO (PIAZZA OLMO)",
+       "idx": 0,
+       "arr": "19:15",
+       "dep": "19:15"
+      },
+      {
+       "stop": "ROCCAPALUMBA (FS)",
+       "idx": 1,
+       "arr": "19:50",
+       "dep": "19:50"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "ROCCAPALUMBA (FS)",
+    "VALLEDOLMO (PIAZZA OLMO)"
+   ],
+   "kms": [
+    0.0,
+    24.0
+   ],
+   "trips": [
+    {
+     "corsa": "p7.R1",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "AGG 77 77)KM(AGG 79)KM(AGG 81)KM(NEW 11)KM(AGG 83)KM(NEW 13) Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ROCCAPALUMBA (FS)",
+       "idx": 0,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "VALLEDOLMO (PIAZZA OLMO)",
+       "idx": 1,
+       "arr": "09:10",
+       "dep": "09:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p7.R2",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "AGG 79 Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ROCCAPALUMBA (FS)",
+       "idx": 0,
+       "arr": "09:35",
+       "dep": "09:35"
+      },
+      {
+       "stop": "VALLEDOLMO (PIAZZA OLMO)",
+       "idx": 1,
+       "arr": "10:15",
+       "dep": "10:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p7.R3",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "AGG 81 Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ROCCAPALUMBA (FS)",
+       "idx": 0,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "VALLEDOLMO (PIAZZA OLMO)",
+       "idx": 1,
+       "arr": "14:05",
+       "dep": "14:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p7.R4",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "NEW 11 Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ROCCAPALUMBA (FS)",
+       "idx": 0,
+       "arr": "15:30",
+       "dep": "15:30"
+      },
+      {
+       "stop": "VALLEDOLMO (PIAZZA OLMO)",
+       "idx": 1,
+       "arr": "16:05",
+       "dep": "16:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p7.R5",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "AGG 83 Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ROCCAPALUMBA (FS)",
+       "idx": 0,
+       "arr": "17:35",
+       "dep": "17:35"
+      },
+      {
+       "stop": "VALLEDOLMO (PIAZZA OLMO)",
+       "idx": 1,
+       "arr": "18:15",
+       "dep": "18:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p7.R6",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "NEW 13 Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ROCCAPALUMBA (FS)",
+       "idx": 0,
+       "arr": "20:20",
+       "dep": "20:20"
+      },
+      {
+       "stop": "VALLEDOLMO (PIAZZA OLMO)",
+       "idx": 1,
+       "arr": "21:05",
+       "dep": "21:05"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

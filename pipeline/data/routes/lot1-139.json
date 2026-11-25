@@ -1,0 +1,504 @@
+{
+ "operator": "Interbus",
+ "route_id": "lot1-139",
+ "name": "SCICLI-MODICA-ISPICA-ROSOLINI-NOTO-AVOLA-SIRACUSA-ENNA BASSA-PALERMO",
+ "short_name": "139",
+ "source": "t1-tabelle_-orari_da_linea_1_a_linea_297.pdf#p6",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "SCICLI (Corso Mazzini, 74/Largo Gramsci)",
+    "MODICA (Via Sorda Scicli)",
+    "ISPICA (SS 115/Via Statale)",
+    "ROSOLINI (Stazione FS)",
+    "NOTO (Via Principe di Piemonte)",
+    "AVOLA (Piazza Trieste)",
+    "SIRACUSA (Corso Umberto, 196)",
+    "DITTAINO (Sicilia Outlet Village)",
+    "ENNA BASSA (Via Leonardo Da Vinci, 5)",
+    "PALERMO (Fazello Stazione FS)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p6.A1-1686",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "1 GIORNALIERA Escluso Natale- Capodanno-Pasqua"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SCICLI (Corso Mazzini, 74/Largo Gramsci)",
+       "idx": 0,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "MODICA (Via Sorda Scicli)",
+       "idx": 1,
+       "arr": "09:40",
+       "dep": "09:40"
+      },
+      {
+       "stop": "ISPICA (SS 115/Via Statale)",
+       "idx": 2,
+       "arr": "10:05",
+       "dep": "10:05"
+      },
+      {
+       "stop": "ROSOLINI (Stazione FS)",
+       "idx": 3,
+       "arr": "10:15",
+       "dep": "10:15"
+      },
+      {
+       "stop": "NOTO (Via Principe di Piemonte)",
+       "idx": 4,
+       "arr": "10:30",
+       "dep": "10:30"
+      },
+      {
+       "stop": "AVOLA (Piazza Trieste)",
+       "idx": 5,
+       "arr": "10:40",
+       "dep": "10:40"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto, 196)",
+       "idx": 6,
+       "arr": "11:00",
+       "dep": "11:00"
+      },
+      {
+       "stop": "DITTAINO (Sicilia Outlet Village)",
+       "idx": 7,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "ENNA BASSA (Via Leonardo Da Vinci, 5)",
+       "idx": 8,
+       "arr": "12:45",
+       "dep": "12:45"
+      },
+      {
+       "stop": "PALERMO (Fazello Stazione FS)",
+       "idx": 9,
+       "arr": "14:30",
+       "dep": "14:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p6.A2-1687",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "C O R S E 3 GIORNALIERA"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SCICLI (Corso Mazzini, 74/Largo Gramsci)",
+       "idx": 0,
+       "arr": "12:25",
+       "dep": "12:25"
+      },
+      {
+       "stop": "MODICA (Via Sorda Scicli)",
+       "idx": 1,
+       "arr": "12:35",
+       "dep": "12:35"
+      },
+      {
+       "stop": "ISPICA (SS 115/Via Statale)",
+       "idx": 2,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "ROSOLINI (Stazione FS)",
+       "idx": 3,
+       "arr": "13:10",
+       "dep": "13:10"
+      },
+      {
+       "stop": "NOTO (Via Principe di Piemonte)",
+       "idx": 4,
+       "arr": "13:25",
+       "dep": "13:25"
+      },
+      {
+       "stop": "AVOLA (Piazza Trieste)",
+       "idx": 5,
+       "arr": "13:35",
+       "dep": "13:35"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto, 196)",
+       "idx": 6,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "DITTAINO (Sicilia Outlet Village)",
+       "idx": 7,
+       "arr": "15:30",
+       "dep": "15:30"
+      },
+      {
+       "stop": "ENNA BASSA (Via Leonardo Da Vinci, 5)",
+       "idx": 8,
+       "arr": "15:45",
+       "dep": "15:45"
+      },
+      {
+       "stop": "PALERMO (Fazello Stazione FS)",
+       "idx": 9,
+       "arr": "17:30",
+       "dep": "17:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p6.A3-50236",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "5 FERIALE da luned' a venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SCICLI (Corso Mazzini, 74/Largo Gramsci)",
+       "idx": 0,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "MODICA (Via Sorda Scicli)",
+       "idx": 1,
+       "arr": "18:40",
+       "dep": "18:40"
+      },
+      {
+       "stop": "ISPICA (SS 115/Via Statale)",
+       "idx": 2,
+       "arr": "19:05",
+       "dep": "19:05"
+      },
+      {
+       "stop": "ROSOLINI (Stazione FS)",
+       "idx": 3,
+       "arr": "19:15",
+       "dep": "19:15"
+      },
+      {
+       "stop": "NOTO (Via Principe di Piemonte)",
+       "idx": 4,
+       "arr": "19:30",
+       "dep": "19:30"
+      },
+      {
+       "stop": "AVOLA (Piazza Trieste)",
+       "idx": 5,
+       "arr": "19:40",
+       "dep": "19:40"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto, 196)",
+       "idx": 6,
+       "arr": "20:00",
+       "dep": "20:00"
+      },
+      {
+       "stop": "DITTAINO (Sicilia Outlet Village)",
+       "idx": 7,
+       "arr": "21:30",
+       "dep": "21:30"
+      },
+      {
+       "stop": "ENNA BASSA (Via Leonardo Da Vinci, 5)",
+       "idx": 8,
+       "arr": "21:45",
+       "dep": "21:45"
+      },
+      {
+       "stop": "PALERMO (Fazello Stazione FS)",
+       "idx": 9,
+       "arr": "23:30",
+       "dep": "23:30"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "PALERMO (Fazello Stazione FS)",
+    "ENNA BASSA (Via Leonardo Da Vinci, 5)",
+    "DITTAINO (Sicilia Outlet Village)",
+    "SIRACUSA (Corso Umberto, 196)",
+    "AVOLA (Piazza Trieste)",
+    "NOTO (Via Principe di Piemonte)",
+    "ROSOLINI (Stazione FS)",
+    "ISPICA (SS 115/Via Statale)",
+    "MODICA (Via Sorda Scicli)",
+    "SCICLI (Corso Mazzini, 74/Largo Gramsci)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p6.R1-50237",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "2 FERIALE da luned' a venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Fazello Stazione FS)",
+       "idx": 0,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "ENNA BASSA (Via Leonardo Da Vinci, 5)",
+       "idx": 1,
+       "arr": "10:45",
+       "dep": "10:45"
+      },
+      {
+       "stop": "DITTAINO (Sicilia Outlet Village)",
+       "idx": 2,
+       "arr": "11:00",
+       "dep": "11:00"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto, 196)",
+       "idx": 3,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "AVOLA (Piazza Trieste)",
+       "idx": 4,
+       "arr": "12:50",
+       "dep": "12:50"
+      },
+      {
+       "stop": "NOTO (Via Principe di Piemonte)",
+       "idx": 5,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "ROSOLINI (Stazione FS)",
+       "idx": 6,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "ISPICA (SS 115/Via Statale)",
+       "idx": 7,
+       "arr": "13:25",
+       "dep": "13:25"
+      },
+      {
+       "stop": "MODICA (Via Sorda Scicli)",
+       "idx": 8,
+       "arr": "13:45",
+       "dep": "13:45"
+      },
+      {
+       "stop": "SCICLI (Corso Mazzini, 74/Largo Gramsci)",
+       "idx": 9,
+       "arr": "13:55",
+       "dep": "13:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p6.R2-1691",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "C O R S E 4 GIORNALIERA Escluso Natale- Capodanno-Pasqua"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Fazello Stazione FS)",
+       "idx": 0,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "ENNA BASSA (Via Leonardo Da Vinci, 5)",
+       "idx": 1,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "DITTAINO (Sicilia Outlet Village)",
+       "idx": 2,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto, 196)",
+       "idx": 3,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "AVOLA (Piazza Trieste)",
+       "idx": 4,
+       "arr": "16:20",
+       "dep": "16:20"
+      },
+      {
+       "stop": "NOTO (Via Principe di Piemonte)",
+       "idx": 5,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "ROSOLINI (Stazione FS)",
+       "idx": 6,
+       "arr": "16:45",
+       "dep": "16:45"
+      },
+      {
+       "stop": "ISPICA (SS 115/Via Statale)",
+       "idx": 7,
+       "arr": "16:55",
+       "dep": "16:55"
+      },
+      {
+       "stop": "MODICA (Via Sorda Scicli)",
+       "idx": 8,
+       "arr": "17:15",
+       "dep": "17:15"
+      },
+      {
+       "stop": "SCICLI (Corso Mazzini, 74/Largo Gramsci)",
+       "idx": 9,
+       "arr": "17:25",
+       "dep": "17:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p6.R3-1694",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "6 GIORNALIERA"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Fazello Stazione FS)",
+       "idx": 0,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "ENNA BASSA (Via Leonardo Da Vinci, 5)",
+       "idx": 1,
+       "arr": "15:45",
+       "dep": "15:45"
+      },
+      {
+       "stop": "DITTAINO (Sicilia Outlet Village)",
+       "idx": 2,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "SIRACUSA (Corso Umberto, 196)",
+       "idx": 3,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "AVOLA (Piazza Trieste)",
+       "idx": 4,
+       "arr": "17:50",
+       "dep": "17:50"
+      },
+      {
+       "stop": "NOTO (Via Principe di Piemonte)",
+       "idx": 5,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "ROSOLINI (Stazione FS)",
+       "idx": 6,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "ISPICA (SS 115/Via Statale)",
+       "idx": 7,
+       "arr": "18:25",
+       "dep": "18:25"
+      },
+      {
+       "stop": "MODICA (Via Sorda Scicli)",
+       "idx": 8,
+       "arr": "18:45",
+       "dep": "18:45"
+      },
+      {
+       "stop": "SCICLI (Corso Mazzini, 74/Largo Gramsci)",
+       "idx": 9,
+       "arr": "18:55",
+       "dep": "18:55"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

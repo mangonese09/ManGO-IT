@@ -1,0 +1,786 @@
+{
+ "operator": "Zappalà e Torrisi Srl",
+ "route_id": "lot2-115-p2",
+ "name": "RIPOSTO - VENA",
+ "short_name": "115",
+ "source": "orario_b2d178879e.pdf#p18",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "RIPOSTO",
+    "GIARRE",
+    "GIARRE (MACCHIA)",
+    "GIARRE (S. GIOVANNI M)",
+    "SANT ALFIO (SANT’ALFIO)"
+   ],
+   "kms": [
+    0.0,
+    2.7,
+    5.0,
+    7.6,
+    10.8
+   ],
+   "trips": [
+    {
+     "corsa": "p18.A1-1394",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "08:25",
+       "dep": "08:25"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "08:35",
+       "dep": "08:35"
+      },
+      {
+       "stop": "GIARRE (MACCHIA)",
+       "idx": 2,
+       "arr": "08:40",
+       "dep": "08:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p18.A2-1400",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "GIARRE (MACCHIA)",
+       "idx": 2,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "GIARRE (S. GIOVANNI M)",
+       "idx": 3,
+       "arr": "08:50",
+       "dep": "08:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p18.A3-1381",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "09:10",
+       "dep": "09:10"
+      },
+      {
+       "stop": "GIARRE (MACCHIA)",
+       "idx": 2,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "GIARRE (S. GIOVANNI M)",
+       "idx": 3,
+       "arr": "09:20",
+       "dep": "09:20"
+      },
+      {
+       "stop": "SANT ALFIO (SANT’ALFIO)",
+       "idx": 4,
+       "arr": "09:25",
+       "dep": "09:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p18.A4-1383",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "In P e r io do F e r ia le"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "10:00",
+       "dep": "10:00"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "10:10",
+       "dep": "10:10"
+      },
+      {
+       "stop": "GIARRE (MACCHIA)",
+       "idx": 2,
+       "arr": "10:15",
+       "dep": "10:15"
+      },
+      {
+       "stop": "GIARRE (S. GIOVANNI M)",
+       "idx": 3,
+       "arr": "10:20",
+       "dep": "10:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p18.A5-1391",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "10:00",
+       "dep": "10:00"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "10:10",
+       "dep": "10:10"
+      },
+      {
+       "stop": "GIARRE (MACCHIA)",
+       "idx": 2,
+       "arr": "10:15",
+       "dep": "10:15"
+      },
+      {
+       "stop": "GIARRE (S. GIOVANNI M)",
+       "idx": 3,
+       "arr": "10:20",
+       "dep": "10:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p18.A6-1399",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "12:40",
+       "dep": "12:40"
+      },
+      {
+       "stop": "GIARRE (MACCHIA)",
+       "idx": 2,
+       "arr": "12:45",
+       "dep": "12:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p18.A7-8740",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "13:10",
+       "dep": "13:10"
+      },
+      {
+       "stop": "GIARRE (MACCHIA)",
+       "idx": 2,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "GIARRE (S. GIOVANNI M)",
+       "idx": 3,
+       "arr": "13:20",
+       "dep": "13:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p18.A8-8739",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r i o d o s c o l a s t ic o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "GIARRE (MACCHIA)",
+       "idx": 2,
+       "arr": "13:35",
+       "dep": "13:35"
+      },
+      {
+       "stop": "GIARRE (S. GIOVANNI M)",
+       "idx": 3,
+       "arr": "13:40",
+       "dep": "13:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p18.A9-1396",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "17:20",
+       "dep": "17:20"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "GIARRE (MACCHIA)",
+       "idx": 2,
+       "arr": "17:35",
+       "dep": "17:35"
+      },
+      {
+       "stop": "GIARRE (S. GIOVANNI M)",
+       "idx": 3,
+       "arr": "17:40",
+       "dep": "17:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p18.A10-1387",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RIPOSTO",
+       "idx": 0,
+       "arr": "19:30",
+       "dep": "19:30"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 1,
+       "arr": "19:40",
+       "dep": "19:40"
+      },
+      {
+       "stop": "GIARRE (MACCHIA)",
+       "idx": 2,
+       "arr": "19:45",
+       "dep": "19:45"
+      },
+      {
+       "stop": "GIARRE (S. GIOVANNI M)",
+       "idx": 3,
+       "arr": "19:50",
+       "dep": "19:50"
+      },
+      {
+       "stop": "SANT ALFIO (SANT’ALFIO)",
+       "idx": 4,
+       "arr": "19:55",
+       "dep": "19:55"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "SANT ALFIO (SANT’ALFIO)",
+    "GIARRE (S. GIOVANNI M)",
+    "GIARRE (MACCHIA)",
+    "GIARRE",
+    "RIPOSTO"
+   ],
+   "kms": [
+    0.0,
+    3.2,
+    5.8,
+    8.1,
+    10.8
+   ],
+   "trips": [
+    {
+     "corsa": "p18.R1-1376",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE (S. GIOVANNI M)",
+       "idx": 1,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "GIARRE (MACCHIA)",
+       "idx": 2,
+       "arr": "08:50",
+       "dep": "08:50"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 3,
+       "arr": "08:55",
+       "dep": "08:55"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 4,
+       "arr": "09:05",
+       "dep": "09:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p18.R2-1359",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE (MACCHIA)",
+       "idx": 2,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 3,
+       "arr": "08:50",
+       "dep": "08:50"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 4,
+       "arr": "09:00",
+       "dep": "09:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p18.R3-1358",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SANT ALFIO (SANT’ALFIO)",
+       "idx": 0,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "GIARRE (S. GIOVANNI M)",
+       "idx": 1,
+       "arr": "09:35",
+       "dep": "09:35"
+      },
+      {
+       "stop": "GIARRE (MACCHIA)",
+       "idx": 2,
+       "arr": "09:40",
+       "dep": "09:40"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 3,
+       "arr": "09:45",
+       "dep": "09:45"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 4,
+       "arr": "09:55",
+       "dep": "09:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p18.R4-1357",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "In P e r io do F e r ia le"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE (S. GIOVANNI M)",
+       "idx": 1,
+       "arr": "10:35",
+       "dep": "10:35"
+      },
+      {
+       "stop": "GIARRE (MACCHIA)",
+       "idx": 2,
+       "arr": "10:40",
+       "dep": "10:40"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 3,
+       "arr": "10:45",
+       "dep": "10:45"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 4,
+       "arr": "10:55",
+       "dep": "10:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p18.R5-1366",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE (S. GIOVANNI M)",
+       "idx": 1,
+       "arr": "10:35",
+       "dep": "10:35"
+      },
+      {
+       "stop": "GIARRE (MACCHIA)",
+       "idx": 2,
+       "arr": "10:40",
+       "dep": "10:40"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 3,
+       "arr": "10:45",
+       "dep": "10:45"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 4,
+       "arr": "10:55",
+       "dep": "10:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p18.R6-1369",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE (MACCHIA)",
+       "idx": 2,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 3,
+       "arr": "12:35",
+       "dep": "12:35"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 4,
+       "arr": "12:45",
+       "dep": "12:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p18.R7-8737",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r i o d o s c o l a s t ic o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE (S. GIOVANNI M)",
+       "idx": 1,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "GIARRE (MACCHIA)",
+       "idx": 2,
+       "arr": "13:55",
+       "dep": "13:55"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 3,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 4,
+       "arr": "14:10",
+       "dep": "14:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p18.R8-8738",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE (S. GIOVANNI M)",
+       "idx": 1,
+       "arr": "16:55",
+       "dep": "16:55"
+      },
+      {
+       "stop": "GIARRE (MACCHIA)",
+       "idx": 2,
+       "arr": "17:00",
+       "dep": "17:00"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 3,
+       "arr": "17:10",
+       "dep": "17:10"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 4,
+       "arr": "17:20",
+       "dep": "17:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p18.R9-1372",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIARRE (S. GIOVANNI M)",
+       "idx": 1,
+       "arr": "17:40",
+       "dep": "17:40"
+      },
+      {
+       "stop": "GIARRE (MACCHIA)",
+       "idx": 2,
+       "arr": "17:45",
+       "dep": "17:45"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 3,
+       "arr": "17:50",
+       "dep": "17:50"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 4,
+       "arr": "18:00",
+       "dep": "18:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p18.R10-1362",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SANT ALFIO (SANT’ALFIO)",
+       "idx": 0,
+       "arr": "20:10",
+       "dep": "20:10"
+      },
+      {
+       "stop": "GIARRE (S. GIOVANNI M)",
+       "idx": 1,
+       "arr": "20:15",
+       "dep": "20:15"
+      },
+      {
+       "stop": "GIARRE (MACCHIA)",
+       "idx": 2,
+       "arr": "20:20",
+       "dep": "20:20"
+      },
+      {
+       "stop": "GIARRE",
+       "idx": 3,
+       "arr": "20:25",
+       "dep": "20:25"
+      },
+      {
+       "stop": "RIPOSTO",
+       "idx": 4,
+       "arr": "20:35",
+       "dep": "20:35"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

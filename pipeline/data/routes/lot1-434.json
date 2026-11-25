@@ -1,0 +1,342 @@
+{
+ "operator": "Sommatinese Viaggi",
+ "route_id": "lot1-434",
+ "name": "CASTELBUONO - CAMPOFELICE DI R. STAZ.",
+ "short_name": "434",
+ "source": "t3-tabelle-_orari_da_linea_350_a_new_alia-cerda.pdf#p24",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "CASTELBUONO (Via Geraci)",
+    "ISNELLO (Piazza Peppino Impastato)",
+    "COLLESANO (Piazza Zubbio)",
+    "CAMPOFELICE DI R. (Viale Europa)",
+    "CEFALU (Stazione)"
+   ],
+   "kms": [
+    0.0,
+    11.0,
+    24.0,
+    35.0,
+    49.4
+   ],
+   "trips": [
+    {
+     "corsa": "p24.A1-8650",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CASTELBUONO (Via Geraci)",
+       "idx": 0,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "ISNELLO (Piazza Peppino Impastato)",
+       "idx": 1,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "COLLESANO (Piazza Zubbio)",
+       "idx": 2,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "CAMPOFELICE DI R. (Viale Europa)",
+       "idx": 3,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "CEFALU (Stazione)",
+       "idx": 4,
+       "arr": "09:05",
+       "dep": "09:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p24.A2-8651",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CAMPOFELICE DI R. (Viale Europa)",
+       "idx": 3,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "CEFALU (Stazione)",
+       "idx": 4,
+       "arr": "07:55",
+       "dep": "07:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p24.A3-8648",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CASTELBUONO (Via Geraci)",
+       "idx": 0,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "ISNELLO (Piazza Peppino Impastato)",
+       "idx": 1,
+       "arr": "09:20",
+       "dep": "09:20"
+      },
+      {
+       "stop": "COLLESANO (Piazza Zubbio)",
+       "idx": 2,
+       "arr": "09:45",
+       "dep": "09:45"
+      },
+      {
+       "stop": "CAMPOFELICE DI R. (Viale Europa)",
+       "idx": 3,
+       "arr": "10:15",
+       "dep": "10:15"
+      },
+      {
+       "stop": "CEFALU (Stazione)",
+       "idx": 4,
+       "arr": "10:35",
+       "dep": "10:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p24.A4-6400",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CASTELBUONO (Via Geraci)",
+       "idx": 0,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "ISNELLO (Piazza Peppino Impastato)",
+       "idx": 1,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "COLLESANO (Piazza Zubbio)",
+       "idx": 2,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "CAMPOFELICE DI R. (Viale Europa)",
+       "idx": 3,
+       "arr": "15:10",
+       "dep": "15:10"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CEFALU (Stazione)",
+    "CAMPOFELICE DI R. (Viale Europa)",
+    "COLLESANO (Piazza Zubbio)",
+    "ISNELLO (Piazza Peppino Impastato)",
+    "CASTELBUONO (Via Geraci)"
+   ],
+   "kms": [
+    0.0,
+    17.0,
+    28.8,
+    39.8,
+    49.4
+   ],
+   "trips": [
+    {
+     "corsa": "p24.R1-8653",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CAMPOFELICE DI R. (Viale Europa)",
+       "idx": 1,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "COLLESANO (Piazza Zubbio)",
+       "idx": 2,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "ISNELLO (Piazza Peppino Impastato)",
+       "idx": 3,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "CASTELBUONO (Via Geraci)",
+       "idx": 4,
+       "arr": "08:05",
+       "dep": "08:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p24.R2-6413",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CEFALU (Stazione)",
+       "idx": 0,
+       "arr": "10:00",
+       "dep": "10:00"
+      },
+      {
+       "stop": "CAMPOFELICE DI R. (Viale Europa)",
+       "idx": 1,
+       "arr": "10:25",
+       "dep": "10:25"
+      },
+      {
+       "stop": "COLLESANO (Piazza Zubbio)",
+       "idx": 2,
+       "arr": "10:50",
+       "dep": "10:50"
+      },
+      {
+       "stop": "ISNELLO (Piazza Peppino Impastato)",
+       "idx": 3,
+       "arr": "11:15",
+       "dep": "11:15"
+      },
+      {
+       "stop": "CASTELBUONO (Via Geraci)",
+       "idx": 4,
+       "arr": "11:35",
+       "dep": "11:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p24.R3-8654",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CEFALU (Stazione)",
+       "idx": 0,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "CAMPOFELICE DI R. (Viale Europa)",
+       "idx": 1,
+       "arr": "14:00",
+       "dep": "14:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p24.R4-8652",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CEFALU (Stazione)",
+       "idx": 0,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "CAMPOFELICE DI R. (Viale Europa)",
+       "idx": 1,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "COLLESANO (Piazza Zubbio)",
+       "idx": 2,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "ISNELLO (Piazza Peppino Impastato)",
+       "idx": 3,
+       "arr": "15:35",
+       "dep": "15:35"
+      },
+      {
+       "stop": "CASTELBUONO (Via Geraci)",
+       "idx": 4,
+       "arr": "15:55",
+       "dep": "15:55"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

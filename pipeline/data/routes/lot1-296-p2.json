@@ -1,0 +1,1491 @@
+{
+ "operator": "Cracchiolo",
+ "route_id": "lot1-296-p2",
+ "name": "PARTINICO - CARINI",
+ "short_name": "296",
+ "source": "t1-tabelle_-orari_da_linea_1_a_linea_297.pdf#p40",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "CARINI (Piazza Duomo)",
+    "CARINI (via Palermo, 4|via Palermo, 5)",
+    "CARINI (ARINI - TABACCHI - c.so Italia, 95|CALDERONE - c.so Italia, 5)",
+    "CARINI (PASCAL - c.so Italia, 197|c.so Italia, 166)",
+    "CARINI (bv Foresta SP3, 87)",
+    "CARINI (ILLAGRAZIA - via Nazionale, 342|PANIFICIO - via Nazionale, 3)",
+    "CARINI (VILLAGRAZIA - via Pio La Torre, 1|CHIESA - SS113 KM295,0)",
+    "CARINI (ILLAGRAZIA - CATACOMBA - via Nazionale, 2| via Nazionale)",
+    "CARINI (VILLAGRAZIA - SCAVO - SS113, 177|SS113, 128)",
+    "CARINI (PIRAINETO - Stazione Metropolitana)",
+    "CARINI (PIRAINETO - bv Stazione)",
+    "CINISI (IMPASTATO - SS113 KM288,8)",
+    "CINISI (ORSA Stazione Metropolitana)",
+    "CINISI (EINAUDI - via Nazionale, 30)",
+    "CINISI (Fermata bus)",
+    "CINISI (C.so Umberto I, 356|C.so Umberto I, 337)",
+    "CINISI (c.so Umberto, 218| C.so Umberto I, 199)",
+    "CINISI (C.so Umberto I, 104|C.so Umberto I, 95)",
+    "CINISI (Piazza V.E. Orlando)",
+    "CINISI (C.so Umberto I, 95|C.so Umberto I, 104)",
+    "CINISI (C.so Umberto I, 199| c.so Umberto, 218)",
+    "CINISI (C.so Umberto I, 337| c.so Umberto, 356)",
+    "TERRASINI (bv Gazzara - SS113 KM295,3)",
+    "TERRASINI",
+    "TERRASINI (RUFFINO - SS113 KM297,2)",
+    "TERRASINI (Paternella)",
+    "TERRASINI (CITTÀ DEL MARE - Città Del Mare)",
+    "PARTINICO (LIDL)",
+    "PARTINICO (OSPEDALE| IIS CORBINO - via Taranto, 4)",
+    "PARTINICO (Piazza Duomo)"
+   ],
+   "kms": [
+    0.0,
+    1.1,
+    1.7,
+    2.4,
+    4.4,
+    5.0,
+    null,
+    null,
+    6.4,
+    10.2,
+    null,
+    10.6,
+    null,
+    13.2,
+    15.2,
+    15.6,
+    15.8,
+    16.1,
+    16.3,
+    16.6,
+    16.8,
+    17.1,
+    null,
+    20.3,
+    null,
+    21.2,
+    23.3,
+    35.1,
+    36.1,
+    39.8
+   ],
+   "trips": [
+    {
+     "corsa": "p40.A1-4213",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "S A B A T O s c ol a st i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CARINI (Piazza Duomo)",
+       "idx": 0,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "CARINI (via Palermo, 4|via Palermo, 5)",
+       "idx": 1,
+       "arr": "13:43",
+       "dep": "13:43"
+      },
+      {
+       "stop": "CARINI (ARINI - TABACCHI - c.so Italia, 95|CALDERONE - c.so Italia, 5)",
+       "idx": 2,
+       "arr": "13:46",
+       "dep": "13:46"
+      },
+      {
+       "stop": "CARINI (PASCAL - c.so Italia, 197|c.so Italia, 166)",
+       "idx": 3,
+       "arr": "13:47",
+       "dep": "13:47"
+      },
+      {
+       "stop": "CARINI (bv Foresta SP3, 87)",
+       "idx": 4,
+       "arr": "13:49",
+       "dep": "13:49"
+      },
+      {
+       "stop": "CARINI (ILLAGRAZIA - via Nazionale, 342|PANIFICIO - via Nazionale, 3)",
+       "idx": 5,
+       "arr": "13:51",
+       "dep": "13:51"
+      },
+      {
+       "stop": "CARINI (VILLAGRAZIA - SCAVO - SS113, 177|SS113, 128)",
+       "idx": 8,
+       "arr": "13:58",
+       "dep": "13:58"
+      },
+      {
+       "stop": "CARINI (PIRAINETO - Stazione Metropolitana)",
+       "idx": 9,
+       "arr": "13:59",
+       "dep": "13:59"
+      },
+      {
+       "stop": "CINISI (IMPASTATO - SS113 KM288,8)",
+       "idx": 11,
+       "arr": "14:01",
+       "dep": "14:01"
+      },
+      {
+       "stop": "CINISI (EINAUDI - via Nazionale, 30)",
+       "idx": 13,
+       "arr": "14:04",
+       "dep": "14:04"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 14,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 356|C.so Umberto I, 337)",
+       "idx": 15,
+       "arr": "14:06",
+       "dep": "14:06"
+      },
+      {
+       "stop": "CINISI (c.so Umberto, 218| C.so Umberto I, 199)",
+       "idx": 16,
+       "arr": "14:07",
+       "dep": "14:07"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 104|C.so Umberto I, 95)",
+       "idx": 17,
+       "arr": "14:07",
+       "dep": "14:07"
+      },
+      {
+       "stop": "CINISI (Piazza V.E. Orlando)",
+       "idx": 18,
+       "arr": "14:08",
+       "dep": "14:08"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 95|C.so Umberto I, 104)",
+       "idx": 19,
+       "arr": "14:09",
+       "dep": "14:09"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 199| c.so Umberto, 218)",
+       "idx": 20,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 337| c.so Umberto, 356)",
+       "idx": 21,
+       "arr": "14:11",
+       "dep": "14:11"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 23,
+       "arr": "14:15",
+       "dep": "14:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p40.A2-4222",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a l e lu n e d ì - v e n e r d ì in P e r i o d o scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Piazza V.E. Orlando)",
+       "idx": 18,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 95|C.so Umberto I, 104)",
+       "idx": 19,
+       "arr": "14:06",
+       "dep": "14:06"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 199| c.so Umberto, 218)",
+       "idx": 20,
+       "arr": "14:07",
+       "dep": "14:07"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 337| c.so Umberto, 356)",
+       "idx": 21,
+       "arr": "14:08",
+       "dep": "14:08"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 23,
+       "arr": "14:13",
+       "dep": "14:13"
+      },
+      {
+       "stop": "TERRASINI (RUFFINO - SS113 KM297,2)",
+       "idx": 24,
+       "arr": "14:16",
+       "dep": "14:16"
+      },
+      {
+       "stop": "TERRASINI (CITTÀ DEL MARE - Città Del Mare)",
+       "idx": 26,
+       "arr": "14:18",
+       "dep": "14:18"
+      },
+      {
+       "stop": "PARTINICO (LIDL)",
+       "idx": 27,
+       "arr": "14:28",
+       "dep": "14:28"
+      },
+      {
+       "stop": "PARTINICO (OSPEDALE| IIS CORBINO - via Taranto, 4)",
+       "idx": 28,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "PARTINICO (Piazza Duomo)",
+       "idx": 29,
+       "arr": "14:38",
+       "dep": "14:38"
+      }
+     ]
+    },
+    {
+     "corsa": "p40.A3-4215",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "S A B A T O s c ol a st i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CARINI (Piazza Duomo)",
+       "idx": 0,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "CARINI (via Palermo, 4|via Palermo, 5)",
+       "idx": 1,
+       "arr": "14:33",
+       "dep": "14:33"
+      },
+      {
+       "stop": "CARINI (ARINI - TABACCHI - c.so Italia, 95|CALDERONE - c.so Italia, 5)",
+       "idx": 2,
+       "arr": "14:36",
+       "dep": "14:36"
+      },
+      {
+       "stop": "CARINI (PASCAL - c.so Italia, 197|c.so Italia, 166)",
+       "idx": 3,
+       "arr": "14:37",
+       "dep": "14:37"
+      },
+      {
+       "stop": "CARINI (bv Foresta SP3, 87)",
+       "idx": 4,
+       "arr": "14:39",
+       "dep": "14:39"
+      },
+      {
+       "stop": "CARINI (VILLAGRAZIA - via Pio La Torre, 1|CHIESA - SS113 KM295,0)",
+       "idx": 6,
+       "arr": "14:43",
+       "dep": "14:43"
+      },
+      {
+       "stop": "CARINI (ILLAGRAZIA - CATACOMBA - via Nazionale, 2| via Nazionale)",
+       "idx": 7,
+       "arr": "14:44",
+       "dep": "14:44"
+      },
+      {
+       "stop": "CARINI (PIRAINETO - Stazione Metropolitana)",
+       "idx": 9,
+       "arr": "14:49",
+       "dep": "14:49"
+      },
+      {
+       "stop": "CARINI (PIRAINETO - bv Stazione)",
+       "idx": 10,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "CINISI (ORSA Stazione Metropolitana)",
+       "idx": 12,
+       "arr": "14:51",
+       "dep": "14:51"
+      },
+      {
+       "stop": "CINISI (EINAUDI - via Nazionale, 30)",
+       "idx": 13,
+       "arr": "14:54",
+       "dep": "14:54"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 14,
+       "arr": "14:55",
+       "dep": "14:55"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 356|C.so Umberto I, 337)",
+       "idx": 15,
+       "arr": "14:56",
+       "dep": "14:56"
+      },
+      {
+       "stop": "CINISI (c.so Umberto, 218| C.so Umberto I, 199)",
+       "idx": 16,
+       "arr": "14:57",
+       "dep": "14:57"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 104|C.so Umberto I, 95)",
+       "idx": 17,
+       "arr": "14:57",
+       "dep": "14:57"
+      },
+      {
+       "stop": "CINISI (Piazza V.E. Orlando)",
+       "idx": 18,
+       "arr": "14:58",
+       "dep": "14:58"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 95|C.so Umberto I, 104)",
+       "idx": 19,
+       "arr": "14:59",
+       "dep": "14:59"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 199| c.so Umberto, 218)",
+       "idx": 20,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 337| c.so Umberto, 356)",
+       "idx": 21,
+       "arr": "15:01",
+       "dep": "15:01"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 23,
+       "arr": "15:05",
+       "dep": "15:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p40.A4-4224",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "S A B A T O s c ol a st i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Piazza V.E. Orlando)",
+       "idx": 18,
+       "arr": "14:31",
+       "dep": "14:31"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 95|C.so Umberto I, 104)",
+       "idx": 19,
+       "arr": "14:32",
+       "dep": "14:32"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 199| c.so Umberto, 218)",
+       "idx": 20,
+       "arr": "14:33",
+       "dep": "14:33"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 337| c.so Umberto, 356)",
+       "idx": 21,
+       "arr": "14:34",
+       "dep": "14:34"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 23,
+       "arr": "14:39",
+       "dep": "14:39"
+      },
+      {
+       "stop": "TERRASINI (RUFFINO - SS113 KM297,2)",
+       "idx": 24,
+       "arr": "14:42",
+       "dep": "14:42"
+      },
+      {
+       "stop": "TERRASINI (CITTÀ DEL MARE - Città Del Mare)",
+       "idx": 26,
+       "arr": "14:44",
+       "dep": "14:44"
+      },
+      {
+       "stop": "PARTINICO (LIDL)",
+       "idx": 27,
+       "arr": "14:54",
+       "dep": "14:54"
+      },
+      {
+       "stop": "PARTINICO (OSPEDALE| IIS CORBINO - via Taranto, 4)",
+       "idx": 28,
+       "arr": "14:56",
+       "dep": "14:56"
+      },
+      {
+       "stop": "PARTINICO (Piazza Duomo)",
+       "idx": 29,
+       "arr": "15:04",
+       "dep": "15:04"
+      }
+     ]
+    },
+    {
+     "corsa": "p40.A5-4212",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a l e lu n e d ì - v e n e r d ì in P e r i o d o scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CARINI (Piazza Duomo)",
+       "idx": 0,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "CARINI (via Palermo, 4|via Palermo, 5)",
+       "idx": 1,
+       "arr": "14:43",
+       "dep": "14:43"
+      },
+      {
+       "stop": "CARINI (ARINI - TABACCHI - c.so Italia, 95|CALDERONE - c.so Italia, 5)",
+       "idx": 2,
+       "arr": "14:46",
+       "dep": "14:46"
+      },
+      {
+       "stop": "CARINI (PASCAL - c.so Italia, 197|c.so Italia, 166)",
+       "idx": 3,
+       "arr": "14:47",
+       "dep": "14:47"
+      },
+      {
+       "stop": "CARINI (bv Foresta SP3, 87)",
+       "idx": 4,
+       "arr": "14:49",
+       "dep": "14:49"
+      },
+      {
+       "stop": "CARINI (VILLAGRAZIA - via Pio La Torre, 1|CHIESA - SS113 KM295,0)",
+       "idx": 6,
+       "arr": "14:53",
+       "dep": "14:53"
+      },
+      {
+       "stop": "CARINI (ILLAGRAZIA - CATACOMBA - via Nazionale, 2| via Nazionale)",
+       "idx": 7,
+       "arr": "14:54",
+       "dep": "14:54"
+      },
+      {
+       "stop": "CARINI (PIRAINETO - Stazione Metropolitana)",
+       "idx": 9,
+       "arr": "14:59",
+       "dep": "14:59"
+      },
+      {
+       "stop": "CARINI (PIRAINETO - bv Stazione)",
+       "idx": 10,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "CINISI (ORSA Stazione Metropolitana)",
+       "idx": 12,
+       "arr": "15:06",
+       "dep": "15:06"
+      },
+      {
+       "stop": "CINISI (EINAUDI - via Nazionale, 30)",
+       "idx": 13,
+       "arr": "15:12",
+       "dep": "15:12"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 14,
+       "arr": "15:13",
+       "dep": "15:13"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 356|C.so Umberto I, 337)",
+       "idx": 15,
+       "arr": "15:14",
+       "dep": "15:14"
+      },
+      {
+       "stop": "CINISI (c.so Umberto, 218| C.so Umberto I, 199)",
+       "idx": 16,
+       "arr": "15:14",
+       "dep": "15:14"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 104|C.so Umberto I, 95)",
+       "idx": 17,
+       "arr": "15:15",
+       "dep": "15:15"
+      },
+      {
+       "stop": "CINISI (Piazza V.E. Orlando)",
+       "idx": 18,
+       "arr": "15:16",
+       "dep": "15:16"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 95|C.so Umberto I, 104)",
+       "idx": 19,
+       "arr": "15:17",
+       "dep": "15:17"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 199| c.so Umberto, 218)",
+       "idx": 20,
+       "arr": "15:18",
+       "dep": "15:18"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 337| c.so Umberto, 356)",
+       "idx": 21,
+       "arr": "15:21",
+       "dep": "15:21"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 23,
+       "arr": "15:25",
+       "dep": "15:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p40.A6-4195",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CARINI (Piazza Duomo)",
+       "idx": 0,
+       "arr": "15:40",
+       "dep": "15:40"
+      },
+      {
+       "stop": "CARINI (via Palermo, 4|via Palermo, 5)",
+       "idx": 1,
+       "arr": "15:43",
+       "dep": "15:43"
+      },
+      {
+       "stop": "CARINI (ARINI - TABACCHI - c.so Italia, 95|CALDERONE - c.so Italia, 5)",
+       "idx": 2,
+       "arr": "15:46",
+       "dep": "15:46"
+      },
+      {
+       "stop": "CARINI (PASCAL - c.so Italia, 197|c.so Italia, 166)",
+       "idx": 3,
+       "arr": "15:47",
+       "dep": "15:47"
+      },
+      {
+       "stop": "CARINI (bv Foresta SP3, 87)",
+       "idx": 4,
+       "arr": "15:49",
+       "dep": "15:49"
+      },
+      {
+       "stop": "CARINI (ILLAGRAZIA - via Nazionale, 342|PANIFICIO - via Nazionale, 3)",
+       "idx": 5,
+       "arr": "15:51",
+       "dep": "15:51"
+      },
+      {
+       "stop": "CARINI (VILLAGRAZIA - SCAVO - SS113, 177|SS113, 128)",
+       "idx": 8,
+       "arr": "15:58",
+       "dep": "15:58"
+      },
+      {
+       "stop": "CARINI (PIRAINETO - Stazione Metropolitana)",
+       "idx": 9,
+       "arr": "15:59",
+       "dep": "15:59"
+      },
+      {
+       "stop": "CINISI (IMPASTATO - SS113 KM288,8)",
+       "idx": 11,
+       "arr": "16:01",
+       "dep": "16:01"
+      },
+      {
+       "stop": "CINISI (EINAUDI - via Nazionale, 30)",
+       "idx": 13,
+       "arr": "16:04",
+       "dep": "16:04"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 14,
+       "arr": "16:05",
+       "dep": "16:05"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 356|C.so Umberto I, 337)",
+       "idx": 15,
+       "arr": "16:06",
+       "dep": "16:06"
+      },
+      {
+       "stop": "CINISI (c.so Umberto, 218| C.so Umberto I, 199)",
+       "idx": 16,
+       "arr": "16:07",
+       "dep": "16:07"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 104|C.so Umberto I, 95)",
+       "idx": 17,
+       "arr": "16:07",
+       "dep": "16:07"
+      },
+      {
+       "stop": "CINISI (Piazza V.E. Orlando)",
+       "idx": 18,
+       "arr": "16:08",
+       "dep": "16:08"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 95|C.so Umberto I, 104)",
+       "idx": 19,
+       "arr": "16:09",
+       "dep": "16:09"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 199| c.so Umberto, 218)",
+       "idx": 20,
+       "arr": "16:10",
+       "dep": "16:10"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 337| c.so Umberto, 356)",
+       "idx": 21,
+       "arr": "16:11",
+       "dep": "16:11"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 23,
+       "arr": "16:15",
+       "dep": "16:15"
+      },
+      {
+       "stop": "TERRASINI (Paternella)",
+       "idx": 25,
+       "arr": "16:19",
+       "dep": "16:19"
+      },
+      {
+       "stop": "TERRASINI (CITTÀ DEL MARE - Città Del Mare)",
+       "idx": 26,
+       "arr": "16:22",
+       "dep": "16:22"
+      },
+      {
+       "stop": "PARTINICO (LIDL)",
+       "idx": 27,
+       "arr": "16:32",
+       "dep": "16:32"
+      },
+      {
+       "stop": "PARTINICO (OSPEDALE| IIS CORBINO - via Taranto, 4)",
+       "idx": 28,
+       "arr": "16:33",
+       "dep": "16:33"
+      },
+      {
+       "stop": "PARTINICO (Piazza Duomo)",
+       "idx": 29,
+       "arr": "16:37",
+       "dep": "16:37"
+      }
+     ]
+    },
+    {
+     "corsa": "p40.A7-4223",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a l e lu n e d ì - v e n e r d ì in P e r i o d o scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (ORSA Stazione Metropolitana)",
+       "idx": 12,
+       "arr": "18:10",
+       "dep": "18:10"
+      },
+      {
+       "stop": "CINISI (EINAUDI - via Nazionale, 30)",
+       "idx": 13,
+       "arr": "18:16",
+       "dep": "18:16"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 14,
+       "arr": "18:17",
+       "dep": "18:17"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 356|C.so Umberto I, 337)",
+       "idx": 15,
+       "arr": "18:18",
+       "dep": "18:18"
+      },
+      {
+       "stop": "CINISI (c.so Umberto, 218| C.so Umberto I, 199)",
+       "idx": 16,
+       "arr": "18:19",
+       "dep": "18:19"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 104|C.so Umberto I, 95)",
+       "idx": 17,
+       "arr": "18:19",
+       "dep": "18:19"
+      },
+      {
+       "stop": "CINISI (Piazza V.E. Orlando)",
+       "idx": 18,
+       "arr": "18:20",
+       "dep": "18:20"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 95|C.so Umberto I, 104)",
+       "idx": 19,
+       "arr": "18:21",
+       "dep": "18:21"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 199| c.so Umberto, 218)",
+       "idx": 20,
+       "arr": "18:22",
+       "dep": "18:22"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 337| c.so Umberto, 356)",
+       "idx": 21,
+       "arr": "18:23",
+       "dep": "18:23"
+      },
+      {
+       "stop": "TERRASINI (bv Gazzara - SS113 KM295,3)",
+       "idx": 22,
+       "arr": "18:26",
+       "dep": "18:26"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 23,
+       "arr": "18:27",
+       "dep": "18:27"
+      },
+      {
+       "stop": "TERRASINI (RUFFINO - SS113 KM297,2)",
+       "idx": 24,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "TERRASINI (Paternella)",
+       "idx": 25,
+       "arr": "18:31",
+       "dep": "18:31"
+      },
+      {
+       "stop": "TERRASINI (CITTÀ DEL MARE - Città Del Mare)",
+       "idx": 26,
+       "arr": "18:34",
+       "dep": "18:34"
+      },
+      {
+       "stop": "PARTINICO (LIDL)",
+       "idx": 27,
+       "arr": "18:44",
+       "dep": "18:44"
+      },
+      {
+       "stop": "PARTINICO (OSPEDALE| IIS CORBINO - via Taranto, 4)",
+       "idx": 28,
+       "arr": "18:45",
+       "dep": "18:45"
+      },
+      {
+       "stop": "PARTINICO (Piazza Duomo)",
+       "idx": 29,
+       "arr": "18:49",
+       "dep": "18:49"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "PARTINICO (Piazza Duomo)",
+    "PARTINICO (OSPEDALE| IIS CORBINO - via Taranto, 4)",
+    "PARTINICO (LIDL)",
+    "TERRASINI (CITTÀ DEL MARE - Città Del Mare)",
+    "TERRASINI (Paternella)",
+    "TERRASINI (RUFFINO - SS113 KM297,2)",
+    "TERRASINI",
+    "TERRASINI (bv Gazzara - SS113 KM295,3)",
+    "CINISI (C.so Umberto I, 337| c.so Umberto, 356)",
+    "CINISI (C.so Umberto I, 199| c.so Umberto, 218)",
+    "CINISI (C.so Umberto I, 95|C.so Umberto I, 104)",
+    "CINISI (Piazza V.E. Orlando)",
+    "CINISI (C.so Umberto I, 104|C.so Umberto I, 95)",
+    "CINISI (c.so Umberto, 218| C.so Umberto I, 199)",
+    "CINISI (C.so Umberto I, 356|C.so Umberto I, 337)",
+    "CINISI (Fermata bus)",
+    "CINISI (EINAUDI - via Nazionale, 30)",
+    "CINISI (ORSA Stazione Metropolitana)",
+    "CINISI (IMPASTATO - SS113 KM288,8)",
+    "CARINI (PIRAINETO - bv Stazione)",
+    "CARINI (PIRAINETO - Stazione Metropolitana)",
+    "CARINI (VILLAGRAZIA - SCAVO - SS113, 177|SS113, 128)",
+    "CARINI (ILLAGRAZIA - CATACOMBA - via Nazionale, 2| via Nazionale)",
+    "CARINI (VILLAGRAZIA - via Pio La Torre, 1|CHIESA - SS113 KM295,0)",
+    "CARINI (ILLAGRAZIA - via Nazionale, 342|PANIFICIO - via Nazionale, 3)",
+    "CARINI (bv Foresta SP3, 87)",
+    "CARINI (PASCAL - c.so Italia, 197|c.so Italia, 166)",
+    "CARINI (ARINI - TABACCHI - c.so Italia, 95|CALDERONE - c.so Italia, 5)",
+    "CARINI (via Palermo, 4|via Palermo, 5)",
+    "CARINI (Piazza Duomo)"
+   ],
+   "kms": [
+    0.0,
+    null,
+    null,
+    11.9,
+    14.0,
+    null,
+    15.6,
+    null,
+    18.1,
+    18.4,
+    18.6,
+    18.9,
+    19.4,
+    19.1,
+    19.6,
+    20.0,
+    22.0,
+    null,
+    24.5,
+    null,
+    24.9,
+    28.3,
+    28.7,
+    null,
+    30.1,
+    30.7,
+    32.7,
+    33.4,
+    34.0,
+    39.8
+   ],
+   "trips": [
+    {
+     "corsa": "p40.R1-4228",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PARTINICO (Piazza Duomo)",
+       "idx": 0,
+       "arr": "13:35",
+       "dep": "13:35"
+      },
+      {
+       "stop": "TERRASINI (CITTÀ DEL MARE - Città Del Mare)",
+       "idx": 3,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "TERRASINI (Paternella)",
+       "idx": 4,
+       "arr": "13:52",
+       "dep": "13:52"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 6,
+       "arr": "13:55",
+       "dep": "13:55"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 337| c.so Umberto, 356)",
+       "idx": 8,
+       "arr": "14:01",
+       "dep": "14:01"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 199| c.so Umberto, 218)",
+       "idx": 9,
+       "arr": "14:02",
+       "dep": "14:02"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 95|C.so Umberto I, 104)",
+       "idx": 10,
+       "arr": "14:03",
+       "dep": "14:03"
+      },
+      {
+       "stop": "CINISI (Piazza V.E. Orlando)",
+       "idx": 11,
+       "arr": "14:04",
+       "dep": "14:04"
+      }
+     ]
+    },
+    {
+     "corsa": "p40.R2-4204",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PARTINICO (Piazza Duomo)",
+       "idx": 0,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 6,
+       "arr": "14:50",
+       "dep": "14:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p40.R3-4208",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PARTINICO (Piazza Duomo)",
+       "idx": 0,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 6,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 337| c.so Umberto, 356)",
+       "idx": 8,
+       "arr": "14:56",
+       "dep": "14:56"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 199| c.so Umberto, 218)",
+       "idx": 9,
+       "arr": "14:57",
+       "dep": "14:57"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 95|C.so Umberto I, 104)",
+       "idx": 10,
+       "arr": "14:58",
+       "dep": "14:58"
+      },
+      {
+       "stop": "CINISI (Piazza V.E. Orlando)",
+       "idx": 11,
+       "arr": "14:59",
+       "dep": "14:59"
+      }
+     ]
+    },
+    {
+     "corsa": "p40.R4-4192",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PARTINICO (Piazza Duomo)",
+       "idx": 0,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "TERRASINI (CITTÀ DEL MARE - Città Del Mare)",
+       "idx": 3,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "TERRASINI (Paternella)",
+       "idx": 4,
+       "arr": "14:47",
+       "dep": "14:47"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 6,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 337| c.so Umberto, 356)",
+       "idx": 8,
+       "arr": "14:56",
+       "dep": "14:56"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 199| c.so Umberto, 218)",
+       "idx": 9,
+       "arr": "14:57",
+       "dep": "14:57"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 95|C.so Umberto I, 104)",
+       "idx": 10,
+       "arr": "14:58",
+       "dep": "14:58"
+      },
+      {
+       "stop": "CINISI (Piazza V.E. Orlando)",
+       "idx": 11,
+       "arr": "14:59",
+       "dep": "14:59"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 104|C.so Umberto I, 95)",
+       "idx": 12,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "CINISI (c.so Umberto, 218| C.so Umberto I, 199)",
+       "idx": 13,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 356|C.so Umberto I, 337)",
+       "idx": 14,
+       "arr": "15:01",
+       "dep": "15:01"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 15,
+       "arr": "15:02",
+       "dep": "15:02"
+      },
+      {
+       "stop": "CINISI (EINAUDI - via Nazionale, 30)",
+       "idx": 16,
+       "arr": "15:03",
+       "dep": "15:03"
+      },
+      {
+       "stop": "CINISI (IMPASTATO - SS113 KM288,8)",
+       "idx": 18,
+       "arr": "15:06",
+       "dep": "15:06"
+      },
+      {
+       "stop": "CARINI (PIRAINETO - Stazione Metropolitana)",
+       "idx": 20,
+       "arr": "15:08",
+       "dep": "15:08"
+      },
+      {
+       "stop": "CARINI (VILLAGRAZIA - SCAVO - SS113, 177|SS113, 128)",
+       "idx": 21,
+       "arr": "15:09",
+       "dep": "15:09"
+      },
+      {
+       "stop": "CARINI (ILLAGRAZIA - CATACOMBA - via Nazionale, 2| via Nazionale)",
+       "idx": 22,
+       "arr": "15:13",
+       "dep": "15:13"
+      },
+      {
+       "stop": "CARINI (ILLAGRAZIA - via Nazionale, 342|PANIFICIO - via Nazionale, 3)",
+       "idx": 24,
+       "arr": "15:16",
+       "dep": "15:16"
+      },
+      {
+       "stop": "CARINI (bv Foresta SP3, 87)",
+       "idx": 25,
+       "arr": "15:18",
+       "dep": "15:18"
+      },
+      {
+       "stop": "CARINI (PASCAL - c.so Italia, 197|c.so Italia, 166)",
+       "idx": 26,
+       "arr": "15:20",
+       "dep": "15:20"
+      },
+      {
+       "stop": "CARINI (ARINI - TABACCHI - c.so Italia, 95|CALDERONE - c.so Italia, 5)",
+       "idx": 27,
+       "arr": "15:21",
+       "dep": "15:21"
+      },
+      {
+       "stop": "CARINI (via Palermo, 4|via Palermo, 5)",
+       "idx": 28,
+       "arr": "15:24",
+       "dep": "15:24"
+      },
+      {
+       "stop": "CARINI (Piazza Duomo)",
+       "idx": 29,
+       "arr": "15:27",
+       "dep": "15:27"
+      }
+     ]
+    },
+    {
+     "corsa": "p40.R5-4220",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a l e lu n e d ì - v e n e r d ì in P e r i o d o scolastico"
+     },
+     "reverse": false,
+     "valid": false,
+     "stops": [
+      {
+       "stop": "PARTINICO (Piazza Duomo)",
+       "idx": 0,
+       "arr": "16:59",
+       "dep": "16:59"
+      },
+      {
+       "stop": "PARTINICO (OSPEDALE| IIS CORBINO - via Taranto, 4)",
+       "idx": 1,
+       "arr": "17:02",
+       "dep": "17:02"
+      },
+      {
+       "stop": "PARTINICO (LIDL)",
+       "idx": 2,
+       "arr": "17:04",
+       "dep": "17:04"
+      },
+      {
+       "stop": "TERRASINI (CITTÀ DEL MARE - Città Del Mare)",
+       "idx": 3,
+       "arr": "17:14",
+       "dep": "17:14"
+      },
+      {
+       "stop": "TERRASINI (Paternella)",
+       "idx": 4,
+       "arr": "17:16",
+       "dep": "17:16"
+      },
+      {
+       "stop": "TERRASINI (RUFFINO - SS113 KM297,2)",
+       "idx": 5,
+       "arr": "17:17",
+       "dep": "17:17"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 6,
+       "arr": "17:19",
+       "dep": "17:19"
+      },
+      {
+       "stop": "TERRASINI (bv Gazzara - SS113 KM295,3)",
+       "idx": 7,
+       "arr": "17:22",
+       "dep": "17:22"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 337| c.so Umberto, 356)",
+       "idx": 8,
+       "arr": "17:25",
+       "dep": "17:25"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 199| c.so Umberto, 218)",
+       "idx": 9,
+       "arr": "17:26",
+       "dep": "17:26"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 95|C.so Umberto I, 104)",
+       "idx": 10,
+       "arr": "17:27",
+       "dep": "17:27"
+      },
+      {
+       "stop": "CINISI (Piazza V.E. Orlando)",
+       "idx": 11,
+       "arr": "17:28",
+       "dep": "17:28"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 104|C.so Umberto I, 95)",
+       "idx": 12,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "CINISI (c.so Umberto, 218| C.so Umberto I, 199)",
+       "idx": 13,
+       "arr": "17:29",
+       "dep": "17:29"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 356|C.so Umberto I, 337)",
+       "idx": 14,
+       "arr": "17:31",
+       "dep": "17:31"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 15,
+       "arr": "17:33",
+       "dep": "17:33"
+      },
+      {
+       "stop": "CINISI (EINAUDI - via Nazionale, 30)",
+       "idx": 16,
+       "arr": "17:34",
+       "dep": "17:34"
+      },
+      {
+       "stop": "CINISI (ORSA Stazione Metropolitana)",
+       "idx": 17,
+       "arr": "17:42",
+       "dep": "17:42"
+      }
+     ]
+    },
+    {
+     "corsa": "p40.R6-4221",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "F e r i a l e e s t i v o"
+     },
+     "reverse": false,
+     "valid": false,
+     "stops": [
+      {
+       "stop": "PARTINICO (Piazza Duomo)",
+       "idx": 0,
+       "arr": "16:59",
+       "dep": "16:59"
+      },
+      {
+       "stop": "PARTINICO (OSPEDALE| IIS CORBINO - via Taranto, 4)",
+       "idx": 1,
+       "arr": "17:02",
+       "dep": "17:02"
+      },
+      {
+       "stop": "PARTINICO (LIDL)",
+       "idx": 2,
+       "arr": "17:04",
+       "dep": "17:04"
+      },
+      {
+       "stop": "TERRASINI (CITTÀ DEL MARE - Città Del Mare)",
+       "idx": 3,
+       "arr": "17:14",
+       "dep": "17:14"
+      },
+      {
+       "stop": "TERRASINI (Paternella)",
+       "idx": 4,
+       "arr": "17:16",
+       "dep": "17:16"
+      },
+      {
+       "stop": "TERRASINI (RUFFINO - SS113 KM297,2)",
+       "idx": 5,
+       "arr": "17:17",
+       "dep": "17:17"
+      },
+      {
+       "stop": "TERRASINI",
+       "idx": 6,
+       "arr": "17:19",
+       "dep": "17:19"
+      },
+      {
+       "stop": "TERRASINI (bv Gazzara - SS113 KM295,3)",
+       "idx": 7,
+       "arr": "17:22",
+       "dep": "17:22"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 337| c.so Umberto, 356)",
+       "idx": 8,
+       "arr": "17:25",
+       "dep": "17:25"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 199| c.so Umberto, 218)",
+       "idx": 9,
+       "arr": "17:26",
+       "dep": "17:26"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 95|C.so Umberto I, 104)",
+       "idx": 10,
+       "arr": "17:27",
+       "dep": "17:27"
+      },
+      {
+       "stop": "CINISI (Piazza V.E. Orlando)",
+       "idx": 11,
+       "arr": "17:28",
+       "dep": "17:28"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 104|C.so Umberto I, 95)",
+       "idx": 12,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "CINISI (c.so Umberto, 218| C.so Umberto I, 199)",
+       "idx": 13,
+       "arr": "17:29",
+       "dep": "17:29"
+      },
+      {
+       "stop": "CINISI (C.so Umberto I, 356|C.so Umberto I, 337)",
+       "idx": 14,
+       "arr": "17:31",
+       "dep": "17:31"
+      },
+      {
+       "stop": "CINISI (Fermata bus)",
+       "idx": 15,
+       "arr": "17:33",
+       "dep": "17:33"
+      },
+      {
+       "stop": "CINISI (EINAUDI - via Nazionale, 30)",
+       "idx": 16,
+       "arr": "17:34",
+       "dep": "17:34"
+      },
+      {
+       "stop": "CINISI (ORSA Stazione Metropolitana)",
+       "idx": 17,
+       "arr": "17:42",
+       "dep": "17:42"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

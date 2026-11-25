@@ -1,0 +1,206 @@
+{
+ "operator": "Interbus",
+ "route_id": "lot2-157",
+ "name": "RANDAZZO - BRONTE, DIR. MANIACE-PETROSINO",
+ "short_name": "157",
+ "source": "orario_b2d178879e.pdf#p65",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "RANDAZZO (Autostazione)",
+    "BV. MALETTO",
+    "BV. MANIACE",
+    "MANIACE (C.so Fondaco/P.zza dell'Autonomia)",
+    "MANIACE (Petrosino/Zirilli/Piane)",
+    "BV. MANIACE",
+    "PONTE CANTERA",
+    "Via Etnea Staz. FCE - BRONTE - P.zza Spedalieri"
+   ],
+   "kms": [
+    0.0,
+    7.5,
+    14.8,
+    3.3,
+    6.2,
+    14.8,
+    17.5,
+    25.4
+   ],
+   "trips": [
+    {
+     "corsa": "p65.A1-2193",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "C O 1 FERIALE nel periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MANIACE (C.so Fondaco/P.zza dell'Autonomia)",
+       "idx": 3,
+       "arr": "07:05",
+       "dep": "07:05"
+      },
+      {
+       "stop": "MANIACE (Petrosino/Zirilli/Piane)",
+       "idx": 4,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "BV. MANIACE",
+       "idx": 5,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "PONTE CANTERA",
+       "idx": 6,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "Via Etnea Staz. FCE - BRONTE - P.zza Spedalieri",
+       "idx": 7,
+       "arr": "07:35",
+       "dep": "07:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p65.A2-9107",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "R S E 3 FERIALE nel periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RANDAZZO (Autostazione)",
+       "idx": 0,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "BV. MALETTO",
+       "idx": 1,
+       "arr": "13:10",
+       "dep": "13:10"
+      },
+      {
+       "stop": "BV. MANIACE",
+       "idx": 2,
+       "arr": "13:25",
+       "dep": "13:25"
+      },
+      {
+       "stop": "MANIACE (C.so Fondaco/P.zza dell'Autonomia)",
+       "idx": 3,
+       "arr": "13:30",
+       "dep": "13:30"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "Via Etnea Staz. FCE - BRONTE - P.zza Spedalieri",
+    "PONTE CANTERA",
+    "BV. MANIACE",
+    "MANIACE (Petrosino/Zirilli/Piane)",
+    "MANIACE (C.so Fondaco/P.zza dell'Autonomia)",
+    "BV. MANIACE",
+    "BV. MALETTO",
+    "RANDAZZO (Autostazione)"
+   ],
+   "kms": [
+    0.0,
+    7.9,
+    10.6,
+    6.2,
+    3.3,
+    10.6,
+    17.9,
+    25.4
+   ],
+   "trips": [
+    {
+     "corsa": "p65.R1-2194",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "C O R S E 1 FERIALE nel periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Via Etnea Staz. FCE - BRONTE - P.zza Spedalieri",
+       "idx": 0,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "RANDAZZO (Autostazione)",
+       "idx": 7,
+       "arr": "08:00",
+       "dep": "08:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p65.R2",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "C O R S E 2 Agg-68 F E RIALE nel periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Via Etnea Staz. FCE - BRONTE - P.zza Spedalieri",
+       "idx": 0,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "PONTE CANTERA",
+       "idx": 1,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "BV. MANIACE",
+       "idx": 2,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "MANIACE (Petrosino/Zirilli/Piane)",
+       "idx": 3,
+       "arr": "14:55",
+       "dep": "14:55"
+      },
+      {
+       "stop": "MANIACE (C.so Fondaco/P.zza dell'Autonomia)",
+       "idx": 4,
+       "arr": "15:00",
+       "dep": "15:00"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

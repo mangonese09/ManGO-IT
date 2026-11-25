@@ -1,0 +1,719 @@
+{
+ "operator": "Consorzio Stabile Siciliano Mobilità Est (Lotto 2)",
+ "route_id": "lot2-458",
+ "name": "ACATE-VITTORIA",
+ "short_name": "458",
+ "source": "orario_b2d178879e.pdf#p44",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "ACATE (P.zza Libertà)",
+    "VITTORIA (Terminal Bus)",
+    "VITTORIA (Giro Scuole)"
+   ],
+   "kms": [
+    0.0,
+    9.6,
+    16.0
+   ],
+   "trips": [
+    {
+     "corsa": "p44.A1-6868",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/9",
+       "to": "31/5"
+      },
+      "raw": "1 F E R I A L E da l 1 / 9 a l 3 1 /5"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACATE (P.zza Libertà)",
+       "idx": 0,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "VITTORIA (Terminal Bus)",
+       "idx": 1,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "VITTORIA (Giro Scuole)",
+       "idx": 2,
+       "arr": "08:00",
+       "dep": "08:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p44.A2-6864",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/6",
+       "to": "31/8"
+      },
+      "raw": "3 F E R I A L E da l 1 / 6 a l 3 1 /8"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACATE (P.zza Libertà)",
+       "idx": 0,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "VITTORIA (Terminal Bus)",
+       "idx": 1,
+       "arr": "07:45",
+       "dep": "07:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p44.A3-6869",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "5 F E R I A L E n e l p e ri o d o s c o la s t ic o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACATE (P.zza Libertà)",
+       "idx": 0,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "VITTORIA (Terminal Bus)",
+       "idx": 1,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "VITTORIA (Giro Scuole)",
+       "idx": 2,
+       "arr": "08:15",
+       "dep": "08:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p44.A4-6870",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "7 F E R I A L E n e l p e ri o d o s c o la s t ic o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACATE (P.zza Libertà)",
+       "idx": 0,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "VITTORIA (Terminal Bus)",
+       "idx": 1,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "VITTORIA (Giro Scuole)",
+       "idx": 2,
+       "arr": "08:15",
+       "dep": "08:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p44.A5-6871",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/9",
+       "to": "31/5"
+      },
+      "raw": "9 F E R I A L E da l 1 / 9 a l 3 1 /5"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACATE (P.zza Libertà)",
+       "idx": 0,
+       "arr": "11:00",
+       "dep": "11:00"
+      },
+      {
+       "stop": "VITTORIA (Terminal Bus)",
+       "idx": 1,
+       "arr": "11:15",
+       "dep": "11:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p44.A6-6865",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/6",
+       "to": "31/8"
+      },
+      "raw": "C O 11 F E R I A L E da l 1 / 6 a l 3 1 /8"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACATE (P.zza Libertà)",
+       "idx": 0,
+       "arr": "11:00",
+       "dep": "11:00"
+      },
+      {
+       "stop": "VITTORIA (Terminal Bus)",
+       "idx": 1,
+       "arr": "11:15",
+       "dep": "11:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p44.A7-6872",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/9",
+       "to": "31/5"
+      },
+      "raw": "R S E 13 F E R I A L E da l 1 / 9 a l 3 1 /5"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACATE (P.zza Libertà)",
+       "idx": 0,
+       "arr": "12:45",
+       "dep": "12:45"
+      },
+      {
+       "stop": "VITTORIA (Terminal Bus)",
+       "idx": 1,
+       "arr": "13:00",
+       "dep": "13:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p44.A8-6866",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/6",
+       "to": "31/8"
+      },
+      "raw": "15 F E R I A L E da l 1 / 6 a l 3 1 /8"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACATE (P.zza Libertà)",
+       "idx": 0,
+       "arr": "12:45",
+       "dep": "12:45"
+      },
+      {
+       "stop": "VITTORIA (Terminal Bus)",
+       "idx": 1,
+       "arr": "13:00",
+       "dep": "13:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p44.A9-6873",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/9",
+       "to": "31/5"
+      },
+      "raw": "17 F E R I A L E da l 1 / 9 a l 3 1 /5"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACATE (P.zza Libertà)",
+       "idx": 0,
+       "arr": "13:45",
+       "dep": "13:45"
+      },
+      {
+       "stop": "VITTORIA (Terminal Bus)",
+       "idx": 1,
+       "arr": "14:00",
+       "dep": "14:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p44.A10-6867",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/6",
+       "to": "31/8"
+      },
+      "raw": "19 F E R I A L E da l 1 / 6 a l 3 1 /8"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACATE (P.zza Libertà)",
+       "idx": 0,
+       "arr": "13:45",
+       "dep": "13:45"
+      },
+      {
+       "stop": "VITTORIA (Terminal Bus)",
+       "idx": 1,
+       "arr": "14:00",
+       "dep": "14:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p44.A11-6874",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "21 F E R I A L E n e l p e ri o d o s c o la s t ic o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACATE (P.zza Libertà)",
+       "idx": 0,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "VITTORIA (Terminal Bus)",
+       "idx": 1,
+       "arr": "14:30",
+       "dep": "14:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p44.A12-6875",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "23 F E R I A L E n e l p e ri o d o s c o la s t ic o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACATE (P.zza Libertà)",
+       "idx": 0,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "VITTORIA (Terminal Bus)",
+       "idx": 1,
+       "arr": "16:45",
+       "dep": "16:45"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "VITTORIA (Giro Scuole)",
+    "VITTORIA (Terminal Bus)",
+    "ACATE (P.zza Libertà)"
+   ],
+   "kms": [
+    0.0,
+    6.4,
+    16.0
+   ],
+   "trips": [
+    {
+     "corsa": "p44.R1-6876",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "2 F E R I A L E da l 1 / 6 a l 3 1"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VITTORIA (Terminal Bus)",
+       "idx": 1,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "ACATE (P.zza Libertà)",
+       "idx": 2,
+       "arr": "07:45",
+       "dep": "07:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p44.R2-6882",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/9",
+       "to": "31/5"
+      },
+      "raw": "4 F E R I A L E /8da l 1 / 9 a l 3 1/5"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VITTORIA (Terminal Bus)",
+       "idx": 1,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "ACATE (P.zza Libertà)",
+       "idx": 2,
+       "arr": "07:45",
+       "dep": "07:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p44.R3-6877",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/6",
+       "to": "31/8"
+      },
+      "raw": "6 F E R I A L E da l 1 / 6 a l 3 1/8"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VITTORIA (Terminal Bus)",
+       "idx": 1,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "ACATE (P.zza Libertà)",
+       "idx": 2,
+       "arr": "08:00",
+       "dep": "08:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p44.R4-6880",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "8 F E R I A L E n e l p e ri o d o s c o la s t ic o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VITTORIA (Terminal Bus)",
+       "idx": 1,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "ACATE (P.zza Libertà)",
+       "idx": 2,
+       "arr": "08:45",
+       "dep": "08:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p44.R5-6881",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "10 F E R I A L E n e l p e ri o d o s c o la s t ic o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VITTORIA (Terminal Bus)",
+       "idx": 1,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "ACATE (P.zza Libertà)",
+       "idx": 2,
+       "arr": "09:15",
+       "dep": "09:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p44.R6-6878",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/6",
+       "to": "31/8"
+      },
+      "raw": "12 F E R I A L E da l 1 / 6 a l 3 1 /8"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VITTORIA (Terminal Bus)",
+       "idx": 1,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "ACATE (P.zza Libertà)",
+       "idx": 2,
+       "arr": "12:45",
+       "dep": "12:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p44.R7-6883",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/9",
+       "to": "31/5"
+      },
+      "raw": "14 F E R I A L E da l 1 / 9 a l 3 1 /5"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VITTORIA (Terminal Bus)",
+       "idx": 1,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "ACATE (P.zza Libertà)",
+       "idx": 2,
+       "arr": "12:45",
+       "dep": "12:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p44.R8-6885",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/9",
+       "to": "31/5"
+      },
+      "raw": "16 F E R I A L E da l 1 / 9 a l 3 1 /5"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VITTORIA (Terminal Bus)",
+       "idx": 1,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "ACATE (P.zza Libertà)",
+       "idx": 2,
+       "arr": "13:15",
+       "dep": "13:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p44.R9-6879",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/6",
+       "to": "31/8"
+      },
+      "raw": "18 F E R I A L E da l 1 / 6 a l 3 1 /8"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VITTORIA (Terminal Bus)",
+       "idx": 1,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "ACATE (P.zza Libertà)",
+       "idx": 2,
+       "arr": "13:45",
+       "dep": "13:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p44.R10-6887",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "1/9",
+       "to": "31/5"
+      },
+      "raw": "20 F E R I A L E da l 1 / 9 a l 3 1 /5"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VITTORIA (Giro Scuole)",
+       "idx": 0,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "VITTORIA (Terminal Bus)",
+       "idx": 1,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "ACATE (P.zza Libertà)",
+       "idx": 2,
+       "arr": "13:45",
+       "dep": "13:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p44.R11-6886",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "22 F E R I A L E n e l p e ri o d o s c o la s t ic o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VITTORIA (Giro Scuole)",
+       "idx": 0,
+       "arr": "13:45",
+       "dep": "13:45"
+      },
+      {
+       "stop": "VITTORIA (Terminal Bus)",
+       "idx": 1,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "ACATE (P.zza Libertà)",
+       "idx": 2,
+       "arr": "14:15",
+       "dep": "14:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p44.R12-6884",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "24 F E R I A L E n e l p e ri o d o s c o la s t ic o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VITTORIA (Giro Scuole)",
+       "idx": 0,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "VITTORIA (Terminal Bus)",
+       "idx": 1,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "ACATE (P.zza Libertà)",
+       "idx": 2,
+       "arr": "14:45",
+       "dep": "14:45"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,360 @@
+{
+ "operator": "Scionti",
+ "route_id": "lot2-107",
+ "name": "FRANCOFONTE - AUGUSTA",
+ "short_name": "107",
+ "source": "orario_b2d178879e.pdf#p9",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "FRANCOFONTE",
+    "LENTINI",
+    "CARLENTINI",
+    "MELILLI (VILLASMUNDO)",
+    "PRIOLO (LUCOIL PRIOLO)",
+    "AUGUSTA (FONTANA)",
+    "AUGUSTA"
+   ],
+   "kms": [
+    0.0,
+    16.3,
+    19.4,
+    29.2,
+    41.2,
+    43.4,
+    46.5
+   ],
+   "trips": [
+    {
+     "corsa": "p9.A1-1200",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "FRANCOFONTE",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "LENTINI",
+       "idx": 1,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "CARLENTINI",
+       "idx": 2,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "MELILLI (VILLASMUNDO)",
+       "idx": 3,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "PRIOLO (LUCOIL PRIOLO)",
+       "idx": 4,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 5,
+       "arr": "07:55",
+       "dep": "07:55"
+      },
+      {
+       "stop": "AUGUSTA",
+       "idx": 6,
+       "arr": "08:15",
+       "dep": "08:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p9.A2-1201",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "LENTINI",
+       "idx": 1,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "CARLENTINI",
+       "idx": 2,
+       "arr": "09:35",
+       "dep": "09:35"
+      },
+      {
+       "stop": "MELILLI (VILLASMUNDO)",
+       "idx": 3,
+       "arr": "09:50",
+       "dep": "09:50"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 5,
+       "arr": "10:05",
+       "dep": "10:05"
+      },
+      {
+       "stop": "AUGUSTA",
+       "idx": 6,
+       "arr": "10:15",
+       "dep": "10:15"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "AUGUSTA",
+    "AUGUSTA (FONTANA)",
+    "PRIOLO (LUCOIL PRIOLO)",
+    "MELILLI (VILLASMUNDO)",
+    "CARLENTINI",
+    "LENTINI",
+    "FRANCOFONTE"
+   ],
+   "kms": [
+    0.0,
+    3.1,
+    5.3,
+    17.3,
+    27.1,
+    30.2,
+    46.5
+   ],
+   "trips": [
+    {
+     "corsa": "p9.R1-8332",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "B) Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AUGUSTA",
+       "idx": 0,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 1,
+       "arr": "12:40",
+       "dep": "12:40"
+      },
+      {
+       "stop": "MELILLI (VILLASMUNDO)",
+       "idx": 3,
+       "arr": "12:55",
+       "dep": "12:55"
+      },
+      {
+       "stop": "CARLENTINI",
+       "idx": 4,
+       "arr": "13:10",
+       "dep": "13:10"
+      },
+      {
+       "stop": "LENTINI",
+       "idx": 5,
+       "arr": "13:15",
+       "dep": "13:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p9.R2-8331",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "B F e ri a le S a b a t o"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AUGUSTA",
+       "idx": 0,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 1,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "PRIOLO (LUCOIL PRIOLO)",
+       "idx": 2,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "MELILLI (VILLASMUNDO)",
+       "idx": 3,
+       "arr": "15:20",
+       "dep": "15:20"
+      },
+      {
+       "stop": "CARLENTINI",
+       "idx": 4,
+       "arr": "15:35",
+       "dep": "15:35"
+      },
+      {
+       "stop": "LENTINI",
+       "idx": 5,
+       "arr": "15:40",
+       "dep": "15:40"
+      },
+      {
+       "stop": "FRANCOFONTE",
+       "idx": 6,
+       "arr": "16:00",
+       "dep": "16:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p9.R3-8331",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "A Fe r ia l e V e n e d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AUGUSTA",
+       "idx": 0,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 1,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "PRIOLO (LUCOIL PRIOLO)",
+       "idx": 2,
+       "arr": "15:15",
+       "dep": "15:15"
+      },
+      {
+       "stop": "MELILLI (VILLASMUNDO)",
+       "idx": 3,
+       "arr": "15:25",
+       "dep": "15:25"
+      },
+      {
+       "stop": "CARLENTINI",
+       "idx": 4,
+       "arr": "15:35",
+       "dep": "15:35"
+      },
+      {
+       "stop": "LENTINI",
+       "idx": 5,
+       "arr": "15:45",
+       "dep": "15:45"
+      },
+      {
+       "stop": "FRANCOFONTE",
+       "idx": 6,
+       "arr": "16:15",
+       "dep": "16:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p9.R4-8331",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "F e r ia l e d a L u n e d ì a G i o v e d ì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AUGUSTA",
+       "idx": 0,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "AUGUSTA (FONTANA)",
+       "idx": 1,
+       "arr": "16:40",
+       "dep": "16:40"
+      },
+      {
+       "stop": "PRIOLO (LUCOIL PRIOLO)",
+       "idx": 2,
+       "arr": "16:50",
+       "dep": "16:50"
+      },
+      {
+       "stop": "MELILLI (VILLASMUNDO)",
+       "idx": 3,
+       "arr": "17:10",
+       "dep": "17:10"
+      },
+      {
+       "stop": "CARLENTINI",
+       "idx": 4,
+       "arr": "17:25",
+       "dep": "17:25"
+      },
+      {
+       "stop": "LENTINI",
+       "idx": 5,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "FRANCOFONTE",
+       "idx": 6,
+       "arr": "17:50",
+       "dep": "17:50"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,512 @@
+{
+ "operator": "TARANTOLA E CUFFARO SRL",
+ "route_id": "lot1-368",
+ "name": "CALATAFIMI SEGESTA LOC. SASI - TRAPANI",
+ "short_name": "368",
+ "source": "t3-tabelle-_orari_da_linea_350_a_new_alia-cerda.pdf#p16",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "CALATAFIMI (C/da Sasi)",
+    "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+    "CALATAFIMI (BIVIO DI SEGESTA)",
+    "CALATAFIMI (SEGESTA Parco Archeologico)",
+    "TRAPANI (Ospedale S. Antonio Abate)",
+    "TRAPANI (FULGATORE)",
+    "ERICE (NAPOLA)",
+    "TRAPANI (Autostazione P.zza Ciaccio Montalto - CAPOLIEA 0,076)"
+   ],
+   "kms": [
+    0.0,
+    4.5,
+    7.9,
+    10.6,
+    null,
+    22.3,
+    32.3,
+    50.0
+   ],
+   "trips": [
+    {
+     "corsa": "p16.A1-5211",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALATAFIMI (C/da Sasi)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 1,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "CALATAFIMI (BIVIO DI SEGESTA)",
+       "idx": 2,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "CALATAFIMI (SEGESTA Parco Archeologico)",
+       "idx": 3,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "TRAPANI (Ospedale S. Antonio Abate)",
+       "idx": 4,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "TRAPANI (Autostazione P.zza Ciaccio Montalto - CAPOLIEA 0,076)",
+       "idx": 7,
+       "arr": "08:10",
+       "dep": "08:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.A2-5212",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 1,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "CALATAFIMI (BIVIO DI SEGESTA)",
+       "idx": 2,
+       "arr": "07:05",
+       "dep": "07:05"
+      },
+      {
+       "stop": "CALATAFIMI (SEGESTA Parco Archeologico)",
+       "idx": 3,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "TRAPANI (Autostazione P.zza Ciaccio Montalto - CAPOLIEA 0,076)",
+       "idx": 7,
+       "arr": "07:50",
+       "dep": "07:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.A3-5213",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALATAFIMI (C/da Sasi)",
+       "idx": 0,
+       "arr": "09:10",
+       "dep": "09:10"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 1,
+       "arr": "09:20",
+       "dep": "09:20"
+      },
+      {
+       "stop": "CALATAFIMI (BIVIO DI SEGESTA)",
+       "idx": 2,
+       "arr": "09:25",
+       "dep": "09:25"
+      },
+      {
+       "stop": "CALATAFIMI (SEGESTA Parco Archeologico)",
+       "idx": 3,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "TRAPANI (FULGATORE)",
+       "idx": 5,
+       "arr": "09:45",
+       "dep": "09:45"
+      },
+      {
+       "stop": "ERICE (NAPOLA)",
+       "idx": 6,
+       "arr": "09:55",
+       "dep": "09:55"
+      },
+      {
+       "stop": "TRAPANI (Autostazione P.zza Ciaccio Montalto - CAPOLIEA 0,076)",
+       "idx": 7,
+       "arr": "10:20",
+       "dep": "10:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.A4-5215",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALATAFIMI (C/da Sasi)",
+       "idx": 0,
+       "arr": "12:50",
+       "dep": "12:50"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 1,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "CALATAFIMI (BIVIO DI SEGESTA)",
+       "idx": 2,
+       "arr": "13:05",
+       "dep": "13:05"
+      },
+      {
+       "stop": "CALATAFIMI (SEGESTA Parco Archeologico)",
+       "idx": 3,
+       "arr": "13:10",
+       "dep": "13:10"
+      },
+      {
+       "stop": "TRAPANI (Autostazione P.zza Ciaccio Montalto - CAPOLIEA 0,076)",
+       "idx": 7,
+       "arr": "13:50",
+       "dep": "13:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.A5-5216",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALATAFIMI (C/da Sasi)",
+       "idx": 0,
+       "arr": "15:50",
+       "dep": "15:50"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 1,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "CALATAFIMI (BIVIO DI SEGESTA)",
+       "idx": 2,
+       "arr": "16:05",
+       "dep": "16:05"
+      },
+      {
+       "stop": "CALATAFIMI (SEGESTA Parco Archeologico)",
+       "idx": 3,
+       "arr": "16:10",
+       "dep": "16:10"
+      },
+      {
+       "stop": "TRAPANI (Autostazione P.zza Ciaccio Montalto - CAPOLIEA 0,076)",
+       "idx": 7,
+       "arr": "16:50",
+       "dep": "16:50"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "TRAPANI (Autostazione P.zza Ciaccio Montalto - CAPOLIEA 0,076)",
+    "ERICE (NAPOLA)",
+    "TRAPANI (FULGATORE)",
+    "TRAPANI (Ospedale S. Antonio Abate)",
+    "CALATAFIMI (SEGESTA Parco Archeologico)",
+    "CALATAFIMI (BIVIO DI SEGESTA)",
+    "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+    "CALATAFIMI (C/da Sasi)"
+   ],
+   "kms": [
+    0.0,
+    17.7,
+    27.7,
+    null,
+    39.4,
+    42.1,
+    45.5,
+    50.0
+   ],
+   "trips": [
+    {
+     "corsa": "p16.R1-5224",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TRAPANI (Autostazione P.zza Ciaccio Montalto - CAPOLIEA 0,076)",
+       "idx": 0,
+       "arr": "06:50",
+       "dep": "06:50"
+      },
+      {
+       "stop": "CALATAFIMI (SEGESTA Parco Archeologico)",
+       "idx": 4,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "CALATAFIMI (BIVIO DI SEGESTA)",
+       "idx": 5,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 6,
+       "arr": "07:50",
+       "dep": "07:50"
+      },
+      {
+       "stop": "CALATAFIMI (C/da Sasi)",
+       "idx": 7,
+       "arr": "08:00",
+       "dep": "08:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.R2-5218",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TRAPANI (Autostazione P.zza Ciaccio Montalto - CAPOLIEA 0,076)",
+       "idx": 0,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "CALATAFIMI (SEGESTA Parco Archeologico)",
+       "idx": 4,
+       "arr": "09:50",
+       "dep": "09:50"
+      },
+      {
+       "stop": "CALATAFIMI (BIVIO DI SEGESTA)",
+       "idx": 5,
+       "arr": "09:55",
+       "dep": "09:55"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 6,
+       "arr": "10:00",
+       "dep": "10:00"
+      },
+      {
+       "stop": "CALATAFIMI (C/da Sasi)",
+       "idx": 7,
+       "arr": "10:10",
+       "dep": "10:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.R3-5219",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TRAPANI (Autostazione P.zza Ciaccio Montalto - CAPOLIEA 0,076)",
+       "idx": 0,
+       "arr": "10:20",
+       "dep": "10:20"
+      },
+      {
+       "stop": "ERICE (NAPOLA)",
+       "idx": 1,
+       "arr": "10:45",
+       "dep": "10:45"
+      },
+      {
+       "stop": "TRAPANI (FULGATORE)",
+       "idx": 2,
+       "arr": "10:55",
+       "dep": "10:55"
+      },
+      {
+       "stop": "CALATAFIMI (SEGESTA Parco Archeologico)",
+       "idx": 4,
+       "arr": "11:10",
+       "dep": "11:10"
+      },
+      {
+       "stop": "CALATAFIMI (BIVIO DI SEGESTA)",
+       "idx": 5,
+       "arr": "11:15",
+       "dep": "11:15"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 6,
+       "arr": "11:20",
+       "dep": "11:20"
+      },
+      {
+       "stop": "CALATAFIMI (C/da Sasi)",
+       "idx": 7,
+       "arr": "11:30",
+       "dep": "11:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.R4-5222",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TRAPANI (Autostazione P.zza Ciaccio Montalto - CAPOLIEA 0,076)",
+       "idx": 0,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "TRAPANI (Ospedale S. Antonio Abate)",
+       "idx": 3,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "CALATAFIMI (SEGESTA Parco Archeologico)",
+       "idx": 4,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "CALATAFIMI (BIVIO DI SEGESTA)",
+       "idx": 5,
+       "arr": "14:55",
+       "dep": "14:55"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 6,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "CALATAFIMI (C/da Sasi)",
+       "idx": 7,
+       "arr": "15:10",
+       "dep": "15:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p16.R5-5223",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TRAPANI (Autostazione P.zza Ciaccio Montalto - CAPOLIEA 0,076)",
+       "idx": 0,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "CALATAFIMI (SEGESTA Parco Archeologico)",
+       "idx": 4,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "CALATAFIMI (BIVIO DI SEGESTA)",
+       "idx": 5,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 6,
+       "arr": "14:55",
+       "dep": "14:55"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

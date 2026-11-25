@@ -1,0 +1,275 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "lot2-470",
+ "name": "RAGUSA - MODICA - ISPICA - PACHINO",
+ "short_name": "470",
+ "source": "orario_b2d178879e.pdf#p89",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "Ragusa (Terminal via Zama)",
+    "Modica (terminal p.za Borsellino)",
+    "Modica (scuole \\ Zona 167",
+    "Ispica (via Rapisardi)",
+    "Pachino (via Solferino)"
+   ],
+   "kms": [
+    0.0,
+    15.0,
+    18.0,
+    34.0,
+    54.0
+   ],
+   "trips": [
+    {
+     "corsa": "p89.A1-8466",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "1 Feriale scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Ispica (via Rapisardi)",
+       "idx": 3,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "Pachino (via Solferino)",
+       "idx": 4,
+       "arr": "07:45",
+       "dep": "07:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p89.A2-7087",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "3 Feriale scolastico da lunedì a venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Ragusa (Terminal via Zama)",
+       "idx": 0,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "Modica (terminal p.za Borsellino)",
+       "idx": 1,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "Modica (scuole \\ Zona 167",
+       "idx": 2,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "Ispica (via Rapisardi)",
+       "idx": 3,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "Pachino (via Solferino)",
+       "idx": 4,
+       "arr": "14:50",
+       "dep": "14:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p89.A3-8465",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "C O R S E 5 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Ragusa (Terminal via Zama)",
+       "idx": 0,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "Modica (terminal p.za Borsellino)",
+       "idx": 1,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "Modica (scuole \\ Zona 167",
+       "idx": 2,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "Ispica (via Rapisardi)",
+       "idx": 3,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "Pachino (via Solferino)",
+       "idx": 4,
+       "arr": "14:50",
+       "dep": "14:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p89.A4-7089",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "7 9 Feriale scolastico da lunedì a - venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Ispica (via Rapisardi)",
+       "idx": 3,
+       "arr": "17:40",
+       "dep": "17:40"
+      },
+      {
+       "stop": "Pachino (via Solferino)",
+       "idx": 4,
+       "arr": "18:40",
+       "dep": "18:40"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "Pachino (via Solferino)",
+    "Ispica (via Rapisardi)",
+    "Modica (scuole \\ Zona 167",
+    "Modica (terminal p.za Borsellino)",
+    "Ragusa (Terminal via Zama)"
+   ],
+   "kms": [
+    0.0,
+    20.0,
+    36.0,
+    39.0,
+    54.0
+   ],
+   "trips": [
+    {
+     "corsa": "p89.R1-8469",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "2 Feriale scolastico da lunedì a venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Pachino (via Solferino)",
+       "idx": 0,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "Ispica (via Rapisardi)",
+       "idx": 1,
+       "arr": "08:15",
+       "dep": "08:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p89.R2-7090",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "4 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Pachino (via Solferino)",
+       "idx": 0,
+       "arr": "09:40",
+       "dep": "09:40"
+      },
+      {
+       "stop": "Ispica (via Rapisardi)",
+       "idx": 1,
+       "arr": "10:10",
+       "dep": "10:10"
+      },
+      {
+       "stop": "Modica (scuole \\ Zona 167",
+       "idx": 2,
+       "arr": "10:30",
+       "dep": "10:30"
+      },
+      {
+       "stop": "Modica (terminal p.za Borsellino)",
+       "idx": 3,
+       "arr": "10:50",
+       "dep": "10:50"
+      },
+      {
+       "stop": "Ragusa (Terminal via Zama)",
+       "idx": 4,
+       "arr": "11:20",
+       "dep": "11:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p89.R3-7092",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "C O R S E 6 8 10 Feriale - - scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Pachino (via Solferino)",
+       "idx": 0,
+       "arr": "16:50",
+       "dep": "16:50"
+      },
+      {
+       "stop": "Ispica (via Rapisardi)",
+       "idx": 1,
+       "arr": "17:20",
+       "dep": "17:20"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

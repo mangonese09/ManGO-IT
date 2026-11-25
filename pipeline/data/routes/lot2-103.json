@@ -1,0 +1,148 @@
+{
+ "operator": "Consorzio Stabile Siciliano Mobilità Est (Lotto 2)",
+ "route_id": "lot2-103",
+ "name": "SAN CONO-SAN MICHELE G.-NISCEMI-CALTAGIRONE-MINEO-PALAGONIA-RAMACCA-AEROPORTO FONTANAROSSA-CATANIA",
+ "short_name": "103",
+ "source": "orario_b2d178879e.pdf#p54",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "S .C O N O",
+    "S .M IC H E L E G A N Z E R IA",
+    "C A L T A G I R O N E",
+    "SIGONELLA (NAF 2)",
+    "AERO P O R T O C A T ANIA",
+    "C A T A N I A"
+   ],
+   "kms": [
+    1.0,
+    1.0,
+    1.0,
+    null,
+    1.0,
+    1.0
+   ],
+   "trips": [
+    {
+     "corsa": "p54.T1R2-53069",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "C O R S E 3 5 7 9 11 13 F E R I A L E - - - - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "S .C O N O",
+       "idx": 0,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "S .M IC H E L E G A N Z E R IA",
+       "idx": 1,
+       "arr": "16:10",
+       "dep": "16:10"
+      },
+      {
+       "stop": "C A L T A G I R O N E",
+       "idx": 2,
+       "arr": "16:45",
+       "dep": "16:45"
+      },
+      {
+       "stop": "SIGONELLA (NAF 2)",
+       "idx": 3,
+       "arr": "17:20",
+       "dep": "17:20"
+      },
+      {
+       "stop": "AERO P O R T O C A T ANIA",
+       "idx": 4,
+       "arr": "17:45",
+       "dep": "17:45"
+      },
+      {
+       "stop": "C A T A N I A",
+       "idx": 5,
+       "arr": "17:55",
+       "dep": "17:55"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "C A T A N I A",
+    "AEROPORTO CATANIA",
+    "SIGONELLA (NAF 2)",
+    "C A L T A G I R O N E",
+    "S .M IC H E L E G A N Z E R IA",
+    "S .C O N O"
+   ],
+   "kms": [
+    7.0,
+    7.0,
+    null,
+    8.0,
+    9.0,
+    9.0
+   ],
+   "trips": [
+    {
+     "corsa": "p54.T2R2-Aggiunta-197",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "C O R S E 4 6 8 10 12 14 Aggiunta-197 FERIALE da Lunedì a Venerdì - - - - - nel Periodo Scolatico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C A T A N I A",
+       "idx": 0,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "AEROPORTO CATANIA",
+       "idx": 1,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "SIGONELLA (NAF 2)",
+       "idx": 2,
+       "arr": "09:05",
+       "dep": "09:05"
+      },
+      {
+       "stop": "C A L T A G I R O N E",
+       "idx": 3,
+       "arr": "09:40",
+       "dep": "09:40"
+      },
+      {
+       "stop": "S .M IC H E L E G A N Z E R IA",
+       "idx": 4,
+       "arr": "10:15",
+       "dep": "10:15"
+      },
+      {
+       "stop": "S .C O N O",
+       "idx": 5,
+       "arr": "10:25",
+       "dep": "10:25"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

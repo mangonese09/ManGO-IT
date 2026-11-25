@@ -1,0 +1,134 @@
+{
+ "operator": "Lo Iacono S.re & C.Autoservizi",
+ "route_id": "lot1-308",
+ "name": "VALLEDOLMO - VALLEDOLMO SCALO F.S.",
+ "short_name": "308",
+ "source": "t2-tabelle_-orari_da_linea_299_a_linea_344.pdf#p9",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "VALLEDOLMO (Piazza Olmo.)",
+    "VALLEDOLMO (Capolina di arrivo: Stazione Ferroviaria)"
+   ],
+   "kms": [
+    0.0,
+    8.6
+   ],
+   "trips": [
+    {
+     "corsa": "p9.A1-4272",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VALLEDOLMO (Piazza Olmo.)",
+       "idx": 0,
+       "arr": "06:15",
+       "dep": "06:15"
+      },
+      {
+       "stop": "VALLEDOLMO (Capolina di arrivo: Stazione Ferroviaria)",
+       "idx": 1,
+       "arr": "06:30",
+       "dep": "06:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p9.A2",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "LO IACONO 1 Feriale (LO IACONO lunedì- 1) venerdì in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VALLEDOLMO (Piazza Olmo.)",
+       "idx": 0,
+       "arr": "06:15",
+       "dep": "06:15"
+      },
+      {
+       "stop": "VALLEDOLMO (Capolina di arrivo: Stazione Ferroviaria)",
+       "idx": 1,
+       "arr": "06:30",
+       "dep": "06:30"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "VALLEDOLMO (Capolina di arrivo: Stazione Ferroviaria)",
+    "VALLEDOLMO (Piazza Olmo.)"
+   ],
+   "kms": [
+    0.0,
+    8.6
+   ],
+   "trips": [
+    {
+     "corsa": "p9.R1-4276",
+     "service": {
+      "days": "mon-sat",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "(LO IACONO Feriale 2) in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": false,
+     "stops": [
+      {
+       "stop": "VALLEDOLMO (Capolina di arrivo: Stazione Ferroviaria)",
+       "idx": 0,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "VALLEDOLMO (Piazza Olmo.)",
+       "idx": 1,
+       "arr": "12:45",
+       "dep": "12:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p9.R2",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "LO IACONO 2 Feriale lunedì- venerdì in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VALLEDOLMO (Capolina di arrivo: Stazione Ferroviaria)",
+       "idx": 0,
+       "arr": "15:10",
+       "dep": "15:10"
+      },
+      {
+       "stop": "VALLEDOLMO (Piazza Olmo.)",
+       "idx": 1,
+       "arr": "15:25",
+       "dep": "15:25"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,150 @@
+{
+ "operator": "Lo Iacono S.re & C.Autoservizi",
+ "route_id": "lot1-305",
+ "name": "VALLEDOLMO - ALIA",
+ "short_name": "305",
+ "source": "t2-tabelle_-orari_da_linea_299_a_linea_344.pdf#p5",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "VALLEDOLMO (Piazza Olmo.)",
+    "FRAZ DI CASTRONOVO DI SICILIA (Marcatobianco)",
+    "ALIA (Chianchitelle)"
+   ],
+   "kms": [
+    0.0,
+    16.3,
+    24.0
+   ],
+   "trips": [
+    {
+     "corsa": "p5.A1-4256",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VALLEDOLMO (Piazza Olmo.)",
+       "idx": 0,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "FRAZ DI CASTRONOVO DI SICILIA (Marcatobianco)",
+       "idx": 1,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "ALIA (Chianchitelle)",
+       "idx": 2,
+       "arr": "08:00",
+       "dep": "08:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p5.A2-4258",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VALLEDOLMO (Piazza Olmo.)",
+       "idx": 0,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "ALIA (Chianchitelle)",
+       "idx": 2,
+       "arr": "14:05",
+       "dep": "14:05"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "ALIA (Chianchitelle)",
+    "FRAZ DI CASTRONOVO DI SICILIA (Marcatobianco)",
+    "VALLEDOLMO (Piazza Olmo.)"
+   ],
+   "kms": [
+    0.0,
+    7.7,
+    24.0
+   ],
+   "trips": [
+    {
+     "corsa": "p5.R1-4257",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALIA (Chianchitelle)",
+       "idx": 0,
+       "arr": "08:05",
+       "dep": "08:05"
+      },
+      {
+       "stop": "VALLEDOLMO (Piazza Olmo.)",
+       "idx": 2,
+       "arr": "08:25",
+       "dep": "08:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p5.R2-4259",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALIA (Chianchitelle)",
+       "idx": 0,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "FRAZ DI CASTRONOVO DI SICILIA (Marcatobianco)",
+       "idx": 1,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "VALLEDOLMO (Piazza Olmo.)",
+       "idx": 2,
+       "arr": "14:50",
+       "dep": "14:50"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

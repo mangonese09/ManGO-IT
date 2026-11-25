@@ -1,0 +1,796 @@
+{
+ "operator": "Zappalà e Torrisi Srl",
+ "route_id": "lot2-123",
+ "name": "ACIREALE - FORNAZZO",
+ "short_name": "123",
+ "source": "orario_b2d178879e.pdf#p24",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "ACIREALE",
+    "ACIREALE (S.M.AMMALATI)",
+    "ACIREALE (GUARDIA)",
+    "VENERINA (S. VENERINA)",
+    "ZAFFERANA ETNEA (SPOLIGNI)",
+    "S.VENERINA (PRINCESSA)",
+    "ZAFFERANA ETNEA (ZAFFERANA)",
+    "MILO",
+    "MILO (FORNAZZO)"
+   ],
+   "kms": [
+    0.0,
+    4.9,
+    7.4,
+    11.9,
+    14.7,
+    null,
+    16.8,
+    21.7,
+    24.4
+   ],
+   "trips": [
+    {
+     "corsa": "p24.A1-1539",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FeriaFleriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE",
+       "idx": 0,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 1,
+       "arr": "08:25",
+       "dep": "08:25"
+      },
+      {
+       "stop": "ACIREALE (GUARDIA)",
+       "idx": 2,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "VENERINA (S. VENERINA)",
+       "idx": 3,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "ZAFFERANA ETNEA (SPOLIGNI)",
+       "idx": 4,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "ZAFFERANA ETNEA (ZAFFERANA)",
+       "idx": 6,
+       "arr": "08:50",
+       "dep": "08:50"
+      },
+      {
+       "stop": "MILO",
+       "idx": 7,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "MILO (FORNAZZO)",
+       "idx": 8,
+       "arr": "09:05",
+       "dep": "09:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p24.A2-1540",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "in Periodo"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE",
+       "idx": 0,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 1,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "ACIREALE (GUARDIA)",
+       "idx": 2,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "VENERINA (S. VENERINA)",
+       "idx": 3,
+       "arr": "08:50",
+       "dep": "08:50"
+      },
+      {
+       "stop": "S.VENERINA (PRINCESSA)",
+       "idx": 5,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "ZAFFERANA ETNEA (ZAFFERANA)",
+       "idx": 6,
+       "arr": "09:05",
+       "dep": "09:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p24.A3-1541",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "scolastiFceoriaFleriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE",
+       "idx": 0,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 1,
+       "arr": "09:45",
+       "dep": "09:45"
+      },
+      {
+       "stop": "ACIREALE (GUARDIA)",
+       "idx": 2,
+       "arr": "09:50",
+       "dep": "09:50"
+      },
+      {
+       "stop": "VENERINA (S. VENERINA)",
+       "idx": 3,
+       "arr": "10:00",
+       "dep": "10:00"
+      },
+      {
+       "stop": "S.VENERINA (PRINCESSA)",
+       "idx": 5,
+       "arr": "10:05",
+       "dep": "10:05"
+      },
+      {
+       "stop": "ZAFFERANA ETNEA (ZAFFERANA)",
+       "idx": 6,
+       "arr": "10:15",
+       "dep": "10:15"
+      },
+      {
+       "stop": "MILO",
+       "idx": 7,
+       "arr": "10:25",
+       "dep": "10:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p24.A4-1543",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "in PerioFdeor isacloel"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE",
+       "idx": 0,
+       "arr": "13:10",
+       "dep": "13:10"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 1,
+       "arr": "13:25",
+       "dep": "13:25"
+      },
+      {
+       "stop": "ACIREALE (GUARDIA)",
+       "idx": 2,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "VENERINA (S. VENERINA)",
+       "idx": 3,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "S.VENERINA (PRINCESSA)",
+       "idx": 5,
+       "arr": "13:45",
+       "dep": "13:45"
+      },
+      {
+       "stop": "ZAFFERANA ETNEA (ZAFFERANA)",
+       "idx": 6,
+       "arr": "13:55",
+       "dep": "13:55"
+      },
+      {
+       "stop": "MILO",
+       "idx": 7,
+       "arr": "14:05",
+       "dep": "14:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p24.A5-1544",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ians tiPceoriodo"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE",
+       "idx": 0,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "ZAFFERANA ETNEA (ZAFFERANA)",
+       "idx": 6,
+       "arr": "14:40",
+       "dep": "14:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p24.A6-1545",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "scolastiFceoriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE",
+       "idx": 0,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 1,
+       "arr": "15:15",
+       "dep": "15:15"
+      },
+      {
+       "stop": "ACIREALE (GUARDIA)",
+       "idx": 2,
+       "arr": "15:20",
+       "dep": "15:20"
+      },
+      {
+       "stop": "VENERINA (S. VENERINA)",
+       "idx": 3,
+       "arr": "15:30",
+       "dep": "15:30"
+      },
+      {
+       "stop": "ZAFFERANA ETNEA (SPOLIGNI)",
+       "idx": 4,
+       "arr": "15:35",
+       "dep": "15:35"
+      },
+      {
+       "stop": "ZAFFERANA ETNEA (ZAFFERANA)",
+       "idx": 6,
+       "arr": "15:45",
+       "dep": "15:45"
+      },
+      {
+       "stop": "MILO",
+       "idx": 7,
+       "arr": "15:55",
+       "dep": "15:55"
+      },
+      {
+       "stop": "MILO (FORNAZZO)",
+       "idx": 8,
+       "arr": "16:00",
+       "dep": "16:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p24.A7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "A87 Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE",
+       "idx": 0,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 1,
+       "arr": "17:45",
+       "dep": "17:45"
+      },
+      {
+       "stop": "ACIREALE (GUARDIA)",
+       "idx": 2,
+       "arr": "17:50",
+       "dep": "17:50"
+      },
+      {
+       "stop": "VENERINA (S. VENERINA)",
+       "idx": 3,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "ZAFFERANA ETNEA (SPOLIGNI)",
+       "idx": 4,
+       "arr": "18:05",
+       "dep": "18:05"
+      },
+      {
+       "stop": "ZAFFERANA ETNEA (ZAFFERANA)",
+       "idx": 6,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "MILO",
+       "idx": 7,
+       "arr": "18:25",
+       "dep": "18:25"
+      },
+      {
+       "stop": "MILO (FORNAZZO)",
+       "idx": 8,
+       "arr": "18:30",
+       "dep": "18:30"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "MILO (FORNAZZO)",
+    "MILO",
+    "ZAFFERANA ETNEA (ZAFFERANA)",
+    "S.VENERINA (PRINCESSA)",
+    "ZAFFERANA ETNEA (SPOLIGNI)",
+    "VENERINA (S. VENERINA)",
+    "ACIREALE (GUARDIA)",
+    "ACIREALE (S.M.AMMALATI)",
+    "ACIREALE"
+   ],
+   "kms": [
+    0.0,
+    2.7,
+    7.6,
+    null,
+    9.7,
+    12.5,
+    17.0,
+    19.5,
+    24.4
+   ],
+   "trips": [
+    {
+     "corsa": "p24.R1-1547",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "FeriaFleriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MILO (FORNAZZO)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "MILO",
+       "idx": 1,
+       "arr": "07:05",
+       "dep": "07:05"
+      },
+      {
+       "stop": "ZAFFERANA ETNEA (ZAFFERANA)",
+       "idx": 2,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "ZAFFERANA ETNEA (SPOLIGNI)",
+       "idx": 4,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "VENERINA (S. VENERINA)",
+       "idx": 5,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "ACIREALE (GUARDIA)",
+       "idx": 6,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 7,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "ACIREALE",
+       "idx": 8,
+       "arr": "08:00",
+       "dep": "08:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p24.R2-1554",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "in PerioFdeor isacloel"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ZAFFERANA ETNEA (ZAFFERANA)",
+       "idx": 2,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "ACIREALE",
+       "idx": 8,
+       "arr": "07:50",
+       "dep": "07:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p24.R3-1553",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ians tiPceoriodo"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ZAFFERANA ETNEA (ZAFFERANA)",
+       "idx": 2,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "S.VENERINA (PRINCESSA)",
+       "idx": 3,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "VENERINA (S. VENERINA)",
+       "idx": 5,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "ACIREALE (GUARDIA)",
+       "idx": 6,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 7,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "ACIREALE",
+       "idx": 8,
+       "arr": "08:00",
+       "dep": "08:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p24.R4-1549",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "scolastiFceoriaFleriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MILO",
+       "idx": 1,
+       "arr": "10:30",
+       "dep": "10:30"
+      },
+      {
+       "stop": "ZAFFERANA ETNEA (ZAFFERANA)",
+       "idx": 2,
+       "arr": "10:40",
+       "dep": "10:40"
+      },
+      {
+       "stop": "S.VENERINA (PRINCESSA)",
+       "idx": 3,
+       "arr": "10:45",
+       "dep": "10:45"
+      },
+      {
+       "stop": "VENERINA (S. VENERINA)",
+       "idx": 5,
+       "arr": "10:55",
+       "dep": "10:55"
+      },
+      {
+       "stop": "ACIREALE (GUARDIA)",
+       "idx": 6,
+       "arr": "11:05",
+       "dep": "11:05"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 7,
+       "arr": "11:10",
+       "dep": "11:10"
+      },
+      {
+       "stop": "ACIREALE",
+       "idx": 8,
+       "arr": "11:25",
+       "dep": "11:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p24.R5-1551",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "in Periodo"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MILO",
+       "idx": 1,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "ZAFFERANA ETNEA (ZAFFERANA)",
+       "idx": 2,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "S.VENERINA (PRINCESSA)",
+       "idx": 3,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "VENERINA (S. VENERINA)",
+       "idx": 5,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "ACIREALE (GUARDIA)",
+       "idx": 6,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 7,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "ACIREALE",
+       "idx": 8,
+       "arr": "15:00",
+       "dep": "15:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p24.R6-1548",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "scolastiFceoriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MILO (FORNAZZO)",
+       "idx": 0,
+       "arr": "16:05",
+       "dep": "16:05"
+      },
+      {
+       "stop": "MILO",
+       "idx": 1,
+       "arr": "16:10",
+       "dep": "16:10"
+      },
+      {
+       "stop": "ZAFFERANA ETNEA (ZAFFERANA)",
+       "idx": 2,
+       "arr": "16:20",
+       "dep": "16:20"
+      },
+      {
+       "stop": "ZAFFERANA ETNEA (SPOLIGNI)",
+       "idx": 4,
+       "arr": "16:25",
+       "dep": "16:25"
+      },
+      {
+       "stop": "VENERINA (S. VENERINA)",
+       "idx": 5,
+       "arr": "16:35",
+       "dep": "16:35"
+      },
+      {
+       "stop": "ACIREALE (GUARDIA)",
+       "idx": 6,
+       "arr": "16:45",
+       "dep": "16:45"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 7,
+       "arr": "16:50",
+       "dep": "16:50"
+      },
+      {
+       "stop": "ACIREALE",
+       "idx": 8,
+       "arr": "17:05",
+       "dep": "17:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p24.R7-A265",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "A265 Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MILO (FORNAZZO)",
+       "idx": 0,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "MILO",
+       "idx": 1,
+       "arr": "18:35",
+       "dep": "18:35"
+      },
+      {
+       "stop": "ZAFFERANA ETNEA (ZAFFERANA)",
+       "idx": 2,
+       "arr": "18:45",
+       "dep": "18:45"
+      },
+      {
+       "stop": "ZAFFERANA ETNEA (SPOLIGNI)",
+       "idx": 4,
+       "arr": "18:50",
+       "dep": "18:50"
+      },
+      {
+       "stop": "VENERINA (S. VENERINA)",
+       "idx": 5,
+       "arr": "19:00",
+       "dep": "19:00"
+      },
+      {
+       "stop": "ACIREALE (GUARDIA)",
+       "idx": 6,
+       "arr": "19:10",
+       "dep": "19:10"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 7,
+       "arr": "19:15",
+       "dep": "19:15"
+      },
+      {
+       "stop": "ACIREALE",
+       "idx": 8,
+       "arr": "19:30",
+       "dep": "19:30"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

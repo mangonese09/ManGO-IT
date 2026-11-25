@@ -1,0 +1,116 @@
+{
+ "operator": "Ortolano e Puglisi",
+ "route_id": "lot1-313-p2",
+ "name": "ALIA - PALERMO",
+ "short_name": "313",
+ "source": "t2-tabelle_-orari_da_linea_299_a_linea_344.pdf#p14",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "ALIA (PIAZZA SANTA ROSALIA)",
+    "ROCCAPALUMBA (VIA GARIBALDI)",
+    "LERCARA FRIDDI (LERCARA VIA AUTONOMIA SICILIANA)",
+    "PALERMO (FS)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p14.A1-4336",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 0,
+       "arr": "09:20",
+       "dep": "09:20"
+      },
+      {
+       "stop": "ROCCAPALUMBA (VIA GARIBALDI)",
+       "idx": 1,
+       "arr": "09:50",
+       "dep": "09:50"
+      },
+      {
+       "stop": "LERCARA FRIDDI (LERCARA VIA AUTONOMIA SICILIANA)",
+       "idx": 2,
+       "arr": "10:05",
+       "dep": "10:05"
+      },
+      {
+       "stop": "PALERMO (FS)",
+       "idx": 3,
+       "arr": "11:10",
+       "dep": "11:10"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "PALERMO (FS)",
+    "LERCARA FRIDDI (LERCARA VIA AUTONOMIA SICILIANA)",
+    "ROCCAPALUMBA (VIA GARIBALDI)",
+    "ALIA (PIAZZA SANTA ROSALIA)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p14.R1-4339",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "Feriale lunedì- venerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (FS)",
+       "idx": 0,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "LERCARA FRIDDI (LERCARA VIA AUTONOMIA SICILIANA)",
+       "idx": 1,
+       "arr": "13:05",
+       "dep": "13:05"
+      },
+      {
+       "stop": "ROCCAPALUMBA (VIA GARIBALDI)",
+       "idx": 2,
+       "arr": "13:25",
+       "dep": "13:25"
+      },
+      {
+       "stop": "ALIA (PIAZZA SANTA ROSALIA)",
+       "idx": 3,
+       "arr": "13:50",
+       "dep": "13:50"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "operator": "Lo Iacono S.re & C.Autoservizi",
+ "route_id": "lot1-307",
+ "name": "VALLEDOLMO - MUSSOMELI",
+ "short_name": "307",
+ "source": "t2-tabelle_-orari_da_linea_299_a_linea_344.pdf#p8",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "VALLEDOLMO (Piazza Olmo.)",
+    "VALLELUNGA PRATAMENO (Vallelunga Piazzale Liguria)",
+    "MUSSOMELI (Piazzale Mongibello)"
+   ],
+   "kms": [
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p8.A1-4267",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VALLEDOLMO (Piazza Olmo.)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "VALLELUNGA PRATAMENO (Vallelunga Piazzale Liguria)",
+       "idx": 1,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "MUSSOMELI (Piazzale Mongibello)",
+       "idx": 2,
+       "arr": "08:10",
+       "dep": "08:10"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "MUSSOMELI (Piazzale Mongibello)",
+    "VALLELUNGA PRATAMENO (Vallelunga Piazzale Liguria)",
+    "VALLEDOLMO (Piazza Olmo.)"
+   ],
+   "kms": [
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p8.R1-4270",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MUSSOMELI (Piazzale Mongibello)",
+       "idx": 0,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "VALLELUNGA PRATAMENO (Vallelunga Piazzale Liguria)",
+       "idx": 1,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "VALLEDOLMO (Piazza Olmo.)",
+       "idx": 2,
+       "arr": "15:10",
+       "dep": "15:10"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,736 @@
+{
+ "operator": "Consorzio Stabile Siciliano Mobilità Est (Lotto 2)",
+ "route_id": "lot2-2",
+ "name": "PALMA DI MONTECHIARO - LICATA - GELA - AEROPORTO FONTANAROSSA - CATANIA",
+ "short_name": "2",
+ "source": "orario_b2d178879e.pdf#p96",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "PALMA DI MONTECHIARO",
+    "L I C A T A",
+    "FALCONARA",
+    "CASS. MANFRIA",
+    "G E L A",
+    "G E L A",
+    "PONTE OLIVO",
+    "SIGONELLA (NAF 2)",
+    "AERO P O R T O C A T ANIA",
+    "C A T A N I A"
+   ],
+   "kms": [
+    null,
+    5.0,
+    null,
+    null,
+    5.0,
+    6.0,
+    null,
+    null,
+    7.0,
+    7.0
+   ],
+   "trips": [
+    {
+     "corsa": "p96.T1R1-53075",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "1 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALMA DI MONTECHIARO",
+       "idx": 0,
+       "arr": "04:50",
+       "dep": "04:50"
+      },
+      {
+       "stop": "FALCONARA",
+       "idx": 2,
+       "arr": "05:30",
+       "dep": "05:30"
+      },
+      {
+       "stop": "CASS. MANFRIA",
+       "idx": 3,
+       "arr": "05:45",
+       "dep": "05:45"
+      },
+      {
+       "stop": "PONTE OLIVO",
+       "idx": 6,
+       "arr": "06:15",
+       "dep": "06:15"
+      },
+      {
+       "stop": "SIGONELLA (NAF 2)",
+       "idx": 7,
+       "arr": "07:05",
+       "dep": "07:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p96.T1R2-53076",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "3 G I O R N A L IE R A esclus o N a t al e -C a p od anno"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALMA DI MONTECHIARO",
+       "idx": 0,
+       "arr": "05:50",
+       "dep": "05:50"
+      },
+      {
+       "stop": "L I C A T A",
+       "idx": 1,
+       "arr": "06:15",
+       "dep": "06:15"
+      },
+      {
+       "stop": "FALCONARA",
+       "idx": 2,
+       "arr": "06:30",
+       "dep": "06:30"
+      },
+      {
+       "stop": "CASS. MANFRIA",
+       "idx": 3,
+       "arr": "06:45",
+       "dep": "06:45"
+      },
+      {
+       "stop": "G E L A",
+       "idx": 4,
+       "arr": "06:50",
+       "dep": "06:50"
+      },
+      {
+       "stop": "G E L A",
+       "idx": 5,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "PONTE OLIVO",
+       "idx": 6,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "SIGONELLA (NAF 2)",
+       "idx": 7,
+       "arr": "08:05",
+       "dep": "08:05"
+      },
+      {
+       "stop": "AERO P O R T O C A T ANIA",
+       "idx": 8,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "C A T A N I A",
+       "idx": 9,
+       "arr": "08:40",
+       "dep": "08:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p96.T1R3-AGG-107",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "5 AGG-107 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALMA DI MONTECHIARO",
+       "idx": 0,
+       "arr": "07:50",
+       "dep": "07:50"
+      },
+      {
+       "stop": "L I C A T A",
+       "idx": 1,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "FALCONARA",
+       "idx": 2,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "CASS. MANFRIA",
+       "idx": 3,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "G E L A",
+       "idx": 4,
+       "arr": "08:50",
+       "dep": "08:50"
+      },
+      {
+       "stop": "G E L A",
+       "idx": 5,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "PONTE OLIVO",
+       "idx": 6,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "SIGONELLA (NAF 2)",
+       "idx": 7,
+       "arr": "10:05",
+       "dep": "10:05"
+      },
+      {
+       "stop": "AERO P O R T O C A T ANIA",
+       "idx": 8,
+       "arr": "10:30",
+       "dep": "10:30"
+      },
+      {
+       "stop": "C A T A N I A",
+       "idx": 9,
+       "arr": "10:40",
+       "dep": "10:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p96.T1R4-53077",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "7 F E R I A L E da Lun e d ì a V e nerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALMA DI MONTECHIARO",
+       "idx": 0,
+       "arr": "19:50",
+       "dep": "19:50"
+      },
+      {
+       "stop": "L I C A T A",
+       "idx": 1,
+       "arr": "20:15",
+       "dep": "20:15"
+      },
+      {
+       "stop": "FALCONARA",
+       "idx": 2,
+       "arr": "20:30",
+       "dep": "20:30"
+      },
+      {
+       "stop": "CASS. MANFRIA",
+       "idx": 3,
+       "arr": "20:45",
+       "dep": "20:45"
+      },
+      {
+       "stop": "G E L A",
+       "idx": 4,
+       "arr": "20:50",
+       "dep": "20:50"
+      },
+      {
+       "stop": "G E L A",
+       "idx": 5,
+       "arr": "21:00",
+       "dep": "21:00"
+      },
+      {
+       "stop": "PONTE OLIVO",
+       "idx": 6,
+       "arr": "21:15",
+       "dep": "21:15"
+      },
+      {
+       "stop": "SIGONELLA (NAF 2)",
+       "idx": 7,
+       "arr": "22:05",
+       "dep": "22:05"
+      },
+      {
+       "stop": "AERO P O R T O C A T ANIA",
+       "idx": 8,
+       "arr": "22:30",
+       "dep": "22:30"
+      },
+      {
+       "stop": "C A T A N I A",
+       "idx": 9,
+       "arr": "22:40",
+       "dep": "22:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p96.T1R5-53078",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "9 G I O R N A L IE R A esclus o N a t al e -C a p od anno"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALMA DI MONTECHIARO",
+       "idx": 0,
+       "arr": "20:50",
+       "dep": "20:50"
+      },
+      {
+       "stop": "L I C A T A",
+       "idx": 1,
+       "arr": "21:15",
+       "dep": "21:15"
+      },
+      {
+       "stop": "FALCONARA",
+       "idx": 2,
+       "arr": "21:30",
+       "dep": "21:30"
+      },
+      {
+       "stop": "CASS. MANFRIA",
+       "idx": 3,
+       "arr": "21:45",
+       "dep": "21:45"
+      },
+      {
+       "stop": "G E L A",
+       "idx": 4,
+       "arr": "21:50",
+       "dep": "21:50"
+      },
+      {
+       "stop": "G E L A",
+       "idx": 5,
+       "arr": "22:00",
+       "dep": "22:00"
+      },
+      {
+       "stop": "PONTE OLIVO",
+       "idx": 6,
+       "arr": "22:15",
+       "dep": "22:15"
+      },
+      {
+       "stop": "SIGONELLA (NAF 2)",
+       "idx": 7,
+       "arr": "23:05",
+       "dep": "23:05"
+      },
+      {
+       "stop": "AERO P O R T O C A T ANIA",
+       "idx": 8,
+       "arr": "23:30",
+       "dep": "23:30"
+      },
+      {
+       "stop": "C A T A N I A",
+       "idx": 9,
+       "arr": "23:40",
+       "dep": "23:40"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "C A T A N I A",
+    "AERO P O R T O C A T ANIA",
+    "SIGONELLA (NAF 2)",
+    "PONTE OLIVO",
+    "G E L A",
+    "G E L A",
+    "CASS. MANFRIA",
+    "FALCONARA",
+    "L I C A T A",
+    "PALMA DI MONTECHIARO"
+   ],
+   "kms": [
+    7.0,
+    7.0,
+    null,
+    null,
+    8.0,
+    8.0,
+    null,
+    null,
+    9.0,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p96.T2R1-53080",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Terminal B u s Vi a A r c h i m e d e 2 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SIGONELLA (NAF 2)",
+       "idx": 2,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "PONTE OLIVO",
+       "idx": 3,
+       "arr": "08:25",
+       "dep": "08:25"
+      },
+      {
+       "stop": "CASS. MANFRIA",
+       "idx": 6,
+       "arr": "08:55",
+       "dep": "08:55"
+      },
+      {
+       "stop": "FALCONARA",
+       "idx": 7,
+       "arr": "09:10",
+       "dep": "09:10"
+      },
+      {
+       "stop": "PALMA DI MONTECHIARO",
+       "idx": 9,
+       "arr": "09:50",
+       "dep": "09:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p96.T2R2-53082",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4 G I O R N A L IE R A esclus o N a t al e -C a p od anno"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C A T A N I A",
+       "idx": 0,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "AERO P O R T O C A T ANIA",
+       "idx": 1,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "SIGONELLA (NAF 2)",
+       "idx": 2,
+       "arr": "08:35",
+       "dep": "08:35"
+      },
+      {
+       "stop": "PONTE OLIVO",
+       "idx": 3,
+       "arr": "09:25",
+       "dep": "09:25"
+      },
+      {
+       "stop": "G E L A",
+       "idx": 4,
+       "arr": "09:40",
+       "dep": "09:40"
+      },
+      {
+       "stop": "G E L A",
+       "idx": 5,
+       "arr": "09:50",
+       "dep": "09:50"
+      },
+      {
+       "stop": "CASS. MANFRIA",
+       "idx": 6,
+       "arr": "09:55",
+       "dep": "09:55"
+      },
+      {
+       "stop": "FALCONARA",
+       "idx": 7,
+       "arr": "10:10",
+       "dep": "10:10"
+      },
+      {
+       "stop": "L I C A T A",
+       "idx": 8,
+       "arr": "10:25",
+       "dep": "10:25"
+      },
+      {
+       "stop": "PALMA DI MONTECHIARO",
+       "idx": 9,
+       "arr": "10:50",
+       "dep": "10:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p96.T2R3-53079",
+     "service": {
+      "days": "mon-fri",
+      "school": null,
+      "season": null,
+      "raw": "6 F E R I A L E da Lun e d ì a V e nerdì"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C A T A N I A",
+       "idx": 0,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "AERO P O R T O C A T ANIA",
+       "idx": 1,
+       "arr": "09:10",
+       "dep": "09:10"
+      },
+      {
+       "stop": "SIGONELLA (NAF 2)",
+       "idx": 2,
+       "arr": "09:35",
+       "dep": "09:35"
+      },
+      {
+       "stop": "PONTE OLIVO",
+       "idx": 3,
+       "arr": "10:25",
+       "dep": "10:25"
+      },
+      {
+       "stop": "G E L A",
+       "idx": 4,
+       "arr": "10:40",
+       "dep": "10:40"
+      },
+      {
+       "stop": "G E L A",
+       "idx": 5,
+       "arr": "10:50",
+       "dep": "10:50"
+      },
+      {
+       "stop": "CASS. MANFRIA",
+       "idx": 6,
+       "arr": "10:55",
+       "dep": "10:55"
+      },
+      {
+       "stop": "FALCONARA",
+       "idx": 7,
+       "arr": "11:10",
+       "dep": "11:10"
+      },
+      {
+       "stop": "L I C A T A",
+       "idx": 8,
+       "arr": "11:25",
+       "dep": "11:25"
+      },
+      {
+       "stop": "PALMA DI MONTECHIARO",
+       "idx": 9,
+       "arr": "11:50",
+       "dep": "11:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p96.T2R4-AGG-108",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "8 AGG-108 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C A T A N I A",
+       "idx": 0,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "AERO P O R T O C A T ANIA",
+       "idx": 1,
+       "arr": "18:10",
+       "dep": "18:10"
+      },
+      {
+       "stop": "SIGONELLA (NAF 2)",
+       "idx": 2,
+       "arr": "18:35",
+       "dep": "18:35"
+      },
+      {
+       "stop": "PONTE OLIVO",
+       "idx": 3,
+       "arr": "19:25",
+       "dep": "19:25"
+      },
+      {
+       "stop": "G E L A",
+       "idx": 4,
+       "arr": "19:40",
+       "dep": "19:40"
+      },
+      {
+       "stop": "G E L A",
+       "idx": 5,
+       "arr": "19:50",
+       "dep": "19:50"
+      },
+      {
+       "stop": "CASS. MANFRIA",
+       "idx": 6,
+       "arr": "19:55",
+       "dep": "19:55"
+      },
+      {
+       "stop": "FALCONARA",
+       "idx": 7,
+       "arr": "20:10",
+       "dep": "20:10"
+      },
+      {
+       "stop": "L I C A T A",
+       "idx": 8,
+       "arr": "20:25",
+       "dep": "20:25"
+      },
+      {
+       "stop": "PALMA DI MONTECHIARO",
+       "idx": 9,
+       "arr": "20:50",
+       "dep": "20:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p96.T2R5-53081",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": ", 10 G I O R N A L IE R A esclus o N a t al e -C a p od anno"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "C A T A N I A",
+       "idx": 0,
+       "arr": "20:00",
+       "dep": "20:00"
+      },
+      {
+       "stop": "AERO P O R T O C A T ANIA",
+       "idx": 1,
+       "arr": "20:10",
+       "dep": "20:10"
+      },
+      {
+       "stop": "SIGONELLA (NAF 2)",
+       "idx": 2,
+       "arr": "20:35",
+       "dep": "20:35"
+      },
+      {
+       "stop": "PONTE OLIVO",
+       "idx": 3,
+       "arr": "21:25",
+       "dep": "21:25"
+      },
+      {
+       "stop": "G E L A",
+       "idx": 4,
+       "arr": "21:40",
+       "dep": "21:40"
+      },
+      {
+       "stop": "G E L A",
+       "idx": 5,
+       "arr": "21:50",
+       "dep": "21:50"
+      },
+      {
+       "stop": "CASS. MANFRIA",
+       "idx": 6,
+       "arr": "21:55",
+       "dep": "21:55"
+      },
+      {
+       "stop": "FALCONARA",
+       "idx": 7,
+       "arr": "22:10",
+       "dep": "22:10"
+      },
+      {
+       "stop": "L I C A T A",
+       "idx": 8,
+       "arr": "22:25",
+       "dep": "22:25"
+      },
+      {
+       "stop": "PALMA DI MONTECHIARO",
+       "idx": 9,
+       "arr": "22:50",
+       "dep": "22:50"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

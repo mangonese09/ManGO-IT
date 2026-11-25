@@ -1,0 +1,364 @@
+{
+ "operator": "Autolinee Regionali",
+ "route_id": "lot2-72",
+ "name": "RAGUSA - CALTAGIRONE",
+ "short_name": "72",
+ "source": "orario_b2d178879e.pdf#p2",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "RAGUSA (VIA ZAMA)",
+    "COMISO (Piazza Maiorana)",
+    "PEDALINO",
+    "MAZZARRONE (MAZZARONE)",
+    "MAZZARRONE (CUCCHI)",
+    "MAZZARRONE (MAZZARONE BOTTEGHELLE)",
+    "CALTAGIRONE (GRANIERI)",
+    "CALTAGIRONE (Autostazione)"
+   ],
+   "kms": [
+    0.0,
+    17.6,
+    28.2,
+    41.0,
+    43.9,
+    46.8,
+    52.2,
+    72.8
+   ],
+   "trips": [
+    {
+     "corsa": "p2.A1-827",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RAGUSA (VIA ZAMA)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "COMISO (Piazza Maiorana)",
+       "idx": 1,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "PEDALINO",
+       "idx": 2,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "MAZZARRONE (MAZZARONE)",
+       "idx": 3,
+       "arr": "08:25",
+       "dep": "08:25"
+      },
+      {
+       "stop": "MAZZARRONE (CUCCHI)",
+       "idx": 4,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "MAZZARRONE (MAZZARONE BOTTEGHELLE)",
+       "idx": 5,
+       "arr": "08:35",
+       "dep": "08:35"
+      },
+      {
+       "stop": "CALTAGIRONE (GRANIERI)",
+       "idx": 6,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 7,
+       "arr": "08:55",
+       "dep": "08:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p2.A2-829",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "COMISO (Piazza Maiorana)",
+       "idx": 1,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "PEDALINO",
+       "idx": 2,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "MAZZARRONE (MAZZARONE)",
+       "idx": 3,
+       "arr": "14:45",
+       "dep": "14:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p2.A3-8581",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RAGUSA (VIA ZAMA)",
+       "idx": 0,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "COMISO (Piazza Maiorana)",
+       "idx": 1,
+       "arr": "15:20",
+       "dep": "15:20"
+      },
+      {
+       "stop": "PEDALINO",
+       "idx": 2,
+       "arr": "15:40",
+       "dep": "15:40"
+      },
+      {
+       "stop": "MAZZARRONE (MAZZARONE)",
+       "idx": 3,
+       "arr": "16:05",
+       "dep": "16:05"
+      },
+      {
+       "stop": "MAZZARRONE (CUCCHI)",
+       "idx": 4,
+       "arr": "16:10",
+       "dep": "16:10"
+      },
+      {
+       "stop": "MAZZARRONE (MAZZARONE BOTTEGHELLE)",
+       "idx": 5,
+       "arr": "16:15",
+       "dep": "16:15"
+      },
+      {
+       "stop": "CALTAGIRONE (GRANIERI)",
+       "idx": 6,
+       "arr": "16:20",
+       "dep": "16:20"
+      },
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 7,
+       "arr": "16:45",
+       "dep": "16:45"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CALTAGIRONE (Autostazione)",
+    "CALTAGIRONE (GRANIERI)",
+    "MAZZARRONE (MAZZARONE BOTTEGHELLE)",
+    "MAZZARRONE (CUCCHI)",
+    "MAZZARRONE (MAZZARONE)",
+    "PEDALINO",
+    "COMISO (Piazza Maiorana)",
+    "RAGUSA (VIA ZAMA)"
+   ],
+   "kms": [
+    0.0,
+    20.6,
+    26.0,
+    28.9,
+    31.8,
+    44.6,
+    55.2,
+    72.8
+   ],
+   "trips": [
+    {
+     "corsa": "p2.R1-828",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "CALTAGIRONE (GRANIERI)",
+       "idx": 1,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "MAZZARRONE (MAZZARONE BOTTEGHELLE)",
+       "idx": 2,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "MAZZARRONE (CUCCHI)",
+       "idx": 3,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "MAZZARRONE (MAZZARONE)",
+       "idx": 4,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "PEDALINO",
+       "idx": 5,
+       "arr": "07:55",
+       "dep": "07:55"
+      },
+      {
+       "stop": "COMISO (Piazza Maiorana)",
+       "idx": 6,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "RAGUSA (VIA ZAMA)",
+       "idx": 7,
+       "arr": "08:55",
+       "dep": "08:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p2.R2-832",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MAZZARRONE (MAZZARONE)",
+       "idx": 4,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "PEDALINO",
+       "idx": 5,
+       "arr": "13:25",
+       "dep": "13:25"
+      },
+      {
+       "stop": "COMISO (Piazza Maiorana)",
+       "idx": 6,
+       "arr": "13:45",
+       "dep": "13:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p2.R3-8582",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALTAGIRONE (Autostazione)",
+       "idx": 0,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "CALTAGIRONE (GRANIERI)",
+       "idx": 1,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "MAZZARRONE (MAZZARONE BOTTEGHELLE)",
+       "idx": 2,
+       "arr": "14:35",
+       "dep": "14:35"
+      },
+      {
+       "stop": "MAZZARRONE (CUCCHI)",
+       "idx": 3,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "MAZZARRONE (MAZZARONE)",
+       "idx": 4,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "PEDALINO",
+       "idx": 5,
+       "arr": "15:10",
+       "dep": "15:10"
+      },
+      {
+       "stop": "COMISO (Piazza Maiorana)",
+       "idx": 6,
+       "arr": "15:30",
+       "dep": "15:30"
+      },
+      {
+       "stop": "RAGUSA (VIA ZAMA)",
+       "idx": 7,
+       "arr": "16:05",
+       "dep": "16:05"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

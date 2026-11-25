@@ -1,0 +1,116 @@
+{
+ "operator": "BUS AWAY S.R.L.",
+ "route_id": "lot1-43",
+ "name": "CASTRONOVO DI SICILIA - BIVONA",
+ "short_name": "43",
+ "source": "t1-tabelle_-orari_da_linea_1_a_linea_297.pdf#p3",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "CASTRONOVO D.SICILIA (CASTRONOVO DI SICILIA CALVARIO)",
+    "PRIZZI (RIONE SAN GIOVANNI)",
+    "S.STEFANO Q. (S.STEFANO QUISQUINA VIA ROMA 78)",
+    "BIVONA (C.DA SCALDAMOSCHE)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p3.A1-592",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CASTRONOVO D.SICILIA (CASTRONOVO DI SICILIA CALVARIO)",
+       "idx": 0,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "PRIZZI (RIONE SAN GIOVANNI)",
+       "idx": 1,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "S.STEFANO Q. (S.STEFANO QUISQUINA VIA ROMA 78)",
+       "idx": 2,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "BIVONA (C.DA SCALDAMOSCHE)",
+       "idx": 3,
+       "arr": "08:10",
+       "dep": "08:10"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "BIVONA (C.DA SCALDAMOSCHE)",
+    "S.STEFANO Q. (S.STEFANO QUISQUINA VIA ROMA 78)",
+    "PRIZZI (RIONE SAN GIOVANNI)",
+    "CASTRONOVO D.SICILIA (CASTRONOVO DI SICILIA CALVARIO)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p3.R1-593",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "BIVONA (C.DA SCALDAMOSCHE)",
+       "idx": 0,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "S.STEFANO Q. (S.STEFANO QUISQUINA VIA ROMA 78)",
+       "idx": 1,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "PRIZZI (RIONE SAN GIOVANNI)",
+       "idx": 2,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "CASTRONOVO D.SICILIA (CASTRONOVO DI SICILIA CALVARIO)",
+       "idx": 3,
+       "arr": "15:00",
+       "dep": "15:00"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

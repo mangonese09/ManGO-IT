@@ -1,0 +1,274 @@
+{
+ "operator": "Servizi Turistici Marrone Srl",
+ "route_id": "lot1-358",
+ "name": "SANTA NINFA - SCIACCA",
+ "short_name": "358",
+ "source": "t3-tabelle-_orari_da_linea_350_a_new_alia-cerda.pdf#p3",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "SANTA NINFA (PIAZZA ALEXANDER FLEMING)",
+    "PARTANNA (VIALE D'ITALIA N° 15)",
+    "PARTANNA (VIA A. GRAMSCI N° 93)",
+    "PARTANNA (VIA A. GRAMSCI N° 3)",
+    "PARTANNA (ANGOLO VIA C. PISACANE / VIA L. ENAUDI)",
+    "SCIACCA (PIAZZALE LA ROSA)",
+    "SCIACCA (VIA LIONI EUROSPIN - TERMINAL BUS)"
+   ],
+   "kms": [
+    0.0,
+    9.0,
+    11.0,
+    11.5,
+    12.0,
+    51.0,
+    59.5
+   ],
+   "trips": [
+    {
+     "corsa": "p3.A1-5053",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SANTA NINFA (PIAZZA ALEXANDER FLEMING)",
+       "idx": 0,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "PARTANNA (VIALE D'ITALIA N° 15)",
+       "idx": 1,
+       "arr": "07:55",
+       "dep": "07:55"
+      },
+      {
+       "stop": "PARTANNA (VIA A. GRAMSCI N° 93)",
+       "idx": 2,
+       "arr": "08:05",
+       "dep": "08:05"
+      },
+      {
+       "stop": "PARTANNA (VIA A. GRAMSCI N° 3)",
+       "idx": 3,
+       "arr": "08:06",
+       "dep": "08:06"
+      },
+      {
+       "stop": "PARTANNA (ANGOLO VIA C. PISACANE / VIA L. ENAUDI)",
+       "idx": 4,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "SCIACCA (PIAZZALE LA ROSA)",
+       "idx": 5,
+       "arr": "08:50",
+       "dep": "08:50"
+      },
+      {
+       "stop": "SCIACCA (VIA LIONI EUROSPIN - TERMINAL BUS)",
+       "idx": 6,
+       "arr": "08:55",
+       "dep": "08:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p3.A2-5056",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SANTA NINFA (PIAZZA ALEXANDER FLEMING)",
+       "idx": 0,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "PARTANNA (VIALE D'ITALIA N° 15)",
+       "idx": 1,
+       "arr": "12:40",
+       "dep": "12:40"
+      },
+      {
+       "stop": "PARTANNA (VIA A. GRAMSCI N° 93)",
+       "idx": 2,
+       "arr": "12:45",
+       "dep": "12:45"
+      },
+      {
+       "stop": "PARTANNA (VIA A. GRAMSCI N° 3)",
+       "idx": 3,
+       "arr": "12:46",
+       "dep": "12:46"
+      },
+      {
+       "stop": "PARTANNA (ANGOLO VIA C. PISACANE / VIA L. ENAUDI)",
+       "idx": 4,
+       "arr": "12:50",
+       "dep": "12:50"
+      },
+      {
+       "stop": "SCIACCA (PIAZZALE LA ROSA)",
+       "idx": 5,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "SCIACCA (VIA LIONI EUROSPIN - TERMINAL BUS)",
+       "idx": 6,
+       "arr": "13:40",
+       "dep": "13:40"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "SCIACCA (VIA LIONI EUROSPIN - TERMINAL BUS)",
+    "SCIACCA (PIAZZALE LA ROSA)",
+    "PARTANNA (ANGOLO VIA C. PISACANE / VIA L. ENAUDI)",
+    "PARTANNA (VIA A. GRAMSCI N° 3)",
+    "PARTANNA (VIA A. GRAMSCI N° 93)",
+    "PARTANNA (VIALE D'ITALIA N° 15)",
+    "SANTA NINFA (PIAZZA ALEXANDER FLEMING)"
+   ],
+   "kms": [
+    0.0,
+    8.5,
+    47.5,
+    48.0,
+    48.5,
+    51.0,
+    59.5
+   ],
+   "trips": [
+    {
+     "corsa": "p3.R1-5059",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SCIACCA (VIA LIONI EUROSPIN - TERMINAL BUS)",
+       "idx": 0,
+       "arr": "10:45",
+       "dep": "10:45"
+      },
+      {
+       "stop": "SCIACCA (PIAZZALE LA ROSA)",
+       "idx": 1,
+       "arr": "10:50",
+       "dep": "10:50"
+      },
+      {
+       "stop": "PARTANNA (ANGOLO VIA C. PISACANE / VIA L. ENAUDI)",
+       "idx": 2,
+       "arr": "11:20",
+       "dep": "11:20"
+      },
+      {
+       "stop": "PARTANNA (VIA A. GRAMSCI N° 3)",
+       "idx": 3,
+       "arr": "11:24",
+       "dep": "11:24"
+      },
+      {
+       "stop": "PARTANNA (VIA A. GRAMSCI N° 93)",
+       "idx": 4,
+       "arr": "11:25",
+       "dep": "11:25"
+      },
+      {
+       "stop": "PARTANNA (VIALE D'ITALIA N° 15)",
+       "idx": 5,
+       "arr": "11:35",
+       "dep": "11:35"
+      },
+      {
+       "stop": "SANTA NINFA (PIAZZA ALEXANDER FLEMING)",
+       "idx": 6,
+       "arr": "11:55",
+       "dep": "11:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p3.R2-5060",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SCIACCA (VIA LIONI EUROSPIN - TERMINAL BUS)",
+       "idx": 0,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "SCIACCA (PIAZZALE LA ROSA)",
+       "idx": 1,
+       "arr": "13:05",
+       "dep": "13:05"
+      },
+      {
+       "stop": "PARTANNA (ANGOLO VIA C. PISACANE / VIA L. ENAUDI)",
+       "idx": 2,
+       "arr": "13:35",
+       "dep": "13:35"
+      },
+      {
+       "stop": "PARTANNA (VIA A. GRAMSCI N° 3)",
+       "idx": 3,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "PARTANNA (VIA A. GRAMSCI N° 93)",
+       "idx": 4,
+       "arr": "13:41",
+       "dep": "13:41"
+      },
+      {
+       "stop": "PARTANNA (VIALE D'ITALIA N° 15)",
+       "idx": 5,
+       "arr": "13:51",
+       "dep": "13:51"
+      },
+      {
+       "stop": "SANTA NINFA (PIAZZA ALEXANDER FLEMING)",
+       "idx": 6,
+       "arr": "14:10",
+       "dep": "14:10"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

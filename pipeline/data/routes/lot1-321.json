@@ -1,0 +1,6153 @@
+{
+ "operator": "Prestia e Comandè",
+ "route_id": "lot1-321",
+ "name": "PALERMO - AEROPORTO PALERMO",
+ "short_name": "321",
+ "source": "t2-tabelle_-orari_da_linea_299_a_linea_344.pdf#p20,p21,p22,p23",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "PALERMO (Stazione F.S. - Via Fazello)",
+    "PALERMO (Via Roma n. 265 - Vucciria)",
+    "PALERMO (Piazza Ruggero Settimo - Politeama)",
+    "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+    "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+    "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+    "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+    "PALERMO (Viale Croce Rossa n. 56)",
+    "PALERMO (Via A. De Gasperi n. 82)",
+    "PALERMO (Via Belgio n.25)",
+    "CINISI (Aeroporto Falcone Borsellino)"
+   ],
+   "kms": [
+    0.0,
+    1.2,
+    2.4,
+    3.1,
+    3.5,
+    4.0,
+    5.0,
+    5.8,
+    6.4,
+    6.9,
+    34.6
+   ],
+   "trips": [
+    {
+     "corsa": "p20.A1",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4366A Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "03:30",
+       "dep": "03:30"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "03:35",
+       "dep": "03:35"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "03:40",
+       "dep": "03:40"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "03:45",
+       "dep": "03:45"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "03:47",
+       "dep": "03:47"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "03:48",
+       "dep": "03:48"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "03:50",
+       "dep": "03:50"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "03:52",
+       "dep": "03:52"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "03:54",
+       "dep": "03:54"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "03:55",
+       "dep": "03:55"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "04:20",
+       "dep": "04:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p20.A2",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4366B Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "04:00",
+       "dep": "04:00"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "04:05",
+       "dep": "04:05"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "04:10",
+       "dep": "04:10"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "04:15",
+       "dep": "04:15"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "04:17",
+       "dep": "04:17"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "04:18",
+       "dep": "04:18"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "04:20",
+       "dep": "04:20"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "04:22",
+       "dep": "04:22"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "04:24",
+       "dep": "04:24"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "04:25",
+       "dep": "04:25"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "04:50",
+       "dep": "04:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p20.A3",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4366C Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "04:30",
+       "dep": "04:30"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "04:35",
+       "dep": "04:35"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "04:40",
+       "dep": "04:40"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "04:45",
+       "dep": "04:45"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "04:47",
+       "dep": "04:47"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "04:48",
+       "dep": "04:48"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "04:50",
+       "dep": "04:50"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "04:52",
+       "dep": "04:52"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "04:54",
+       "dep": "04:54"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "04:55",
+       "dep": "04:55"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "05:20",
+       "dep": "05:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p20.A4-4366",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "05:00",
+       "dep": "05:00"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "05:05",
+       "dep": "05:05"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "05:10",
+       "dep": "05:10"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "05:15",
+       "dep": "05:15"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "05:17",
+       "dep": "05:17"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "05:18",
+       "dep": "05:18"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "05:20",
+       "dep": "05:20"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "05:22",
+       "dep": "05:22"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "05:24",
+       "dep": "05:24"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "05:25",
+       "dep": "05:25"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "05:50",
+       "dep": "05:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p20.A5",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4366D Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "05:30",
+       "dep": "05:30"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "05:35",
+       "dep": "05:35"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "05:40",
+       "dep": "05:40"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "05:45",
+       "dep": "05:45"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "05:47",
+       "dep": "05:47"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "05:48",
+       "dep": "05:48"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "05:50",
+       "dep": "05:50"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "05:52",
+       "dep": "05:52"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "05:54",
+       "dep": "05:54"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "05:55",
+       "dep": "05:55"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "06:20",
+       "dep": "06:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p20.A6",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4366E Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "06:00",
+       "dep": "06:00"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "06:05",
+       "dep": "06:05"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "06:10",
+       "dep": "06:10"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "06:15",
+       "dep": "06:15"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "06:17",
+       "dep": "06:17"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "06:18",
+       "dep": "06:18"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "06:20",
+       "dep": "06:20"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "06:22",
+       "dep": "06:22"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "06:24",
+       "dep": "06:24"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "06:25",
+       "dep": "06:25"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "06:50",
+       "dep": "06:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p20.A7",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4366F Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "06:30",
+       "dep": "06:30"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "06:35",
+       "dep": "06:35"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "06:40",
+       "dep": "06:40"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "06:45",
+       "dep": "06:45"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "06:47",
+       "dep": "06:47"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "06:48",
+       "dep": "06:48"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "06:50",
+       "dep": "06:50"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "06:52",
+       "dep": "06:52"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "06:54",
+       "dep": "06:54"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "06:55",
+       "dep": "06:55"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "07:20",
+       "dep": "07:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p20.A8-4368",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "07:05",
+       "dep": "07:05"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "07:17",
+       "dep": "07:17"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "07:18",
+       "dep": "07:18"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "07:22",
+       "dep": "07:22"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "07:24",
+       "dep": "07:24"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "07:50",
+       "dep": "07:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p20.A9",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4368A Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "07:47",
+       "dep": "07:47"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "07:48",
+       "dep": "07:48"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "07:50",
+       "dep": "07:50"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "07:52",
+       "dep": "07:52"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "07:54",
+       "dep": "07:54"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "07:55",
+       "dep": "07:55"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "08:20",
+       "dep": "08:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p20.A10",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4368B Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "08:05",
+       "dep": "08:05"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "08:17",
+       "dep": "08:17"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "08:18",
+       "dep": "08:18"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "08:22",
+       "dep": "08:22"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "08:24",
+       "dep": "08:24"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "08:25",
+       "dep": "08:25"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "08:50",
+       "dep": "08:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p21.A1",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4368C Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "08:35",
+       "dep": "08:35"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "08:47",
+       "dep": "08:47"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "08:48",
+       "dep": "08:48"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "08:50",
+       "dep": "08:50"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "08:52",
+       "dep": "08:52"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "08:54",
+       "dep": "08:54"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "08:55",
+       "dep": "08:55"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "09:20",
+       "dep": "09:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p21.A2-4370",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "08:59",
+       "dep": "08:59"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "09:04",
+       "dep": "09:04"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "09:09",
+       "dep": "09:09"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "09:14",
+       "dep": "09:14"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "09:16",
+       "dep": "09:16"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "09:17",
+       "dep": "09:17"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "09:19",
+       "dep": "09:19"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "09:21",
+       "dep": "09:21"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "09:23",
+       "dep": "09:23"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "09:24",
+       "dep": "09:24"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "09:49",
+       "dep": "09:49"
+      }
+     ]
+    },
+    {
+     "corsa": "p21.A3-4372",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "09:35",
+       "dep": "09:35"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "09:40",
+       "dep": "09:40"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "09:45",
+       "dep": "09:45"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "09:47",
+       "dep": "09:47"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "09:48",
+       "dep": "09:48"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "09:50",
+       "dep": "09:50"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "09:52",
+       "dep": "09:52"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "09:54",
+       "dep": "09:54"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "09:55",
+       "dep": "09:55"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "10:20",
+       "dep": "10:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p21.A4-4374",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "10:00",
+       "dep": "10:00"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "10:05",
+       "dep": "10:05"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "10:10",
+       "dep": "10:10"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "10:15",
+       "dep": "10:15"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "10:17",
+       "dep": "10:17"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "10:18",
+       "dep": "10:18"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "10:20",
+       "dep": "10:20"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "10:22",
+       "dep": "10:22"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "10:24",
+       "dep": "10:24"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "10:25",
+       "dep": "10:25"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "10:50",
+       "dep": "10:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p21.A5",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4372A Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "10:30",
+       "dep": "10:30"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "10:35",
+       "dep": "10:35"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "10:40",
+       "dep": "10:40"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "10:45",
+       "dep": "10:45"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "10:47",
+       "dep": "10:47"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "10:48",
+       "dep": "10:48"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "10:50",
+       "dep": "10:50"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "10:52",
+       "dep": "10:52"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "10:54",
+       "dep": "10:54"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "10:55",
+       "dep": "10:55"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "11:20",
+       "dep": "11:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p21.A6",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4374A Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "11:00",
+       "dep": "11:00"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "11:05",
+       "dep": "11:05"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "11:10",
+       "dep": "11:10"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "11:15",
+       "dep": "11:15"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "11:17",
+       "dep": "11:17"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "11:18",
+       "dep": "11:18"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "11:20",
+       "dep": "11:20"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "11:22",
+       "dep": "11:22"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "11:24",
+       "dep": "11:24"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "11:25",
+       "dep": "11:25"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "11:50",
+       "dep": "11:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p21.A7-4375",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "11:30",
+       "dep": "11:30"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "11:35",
+       "dep": "11:35"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "11:40",
+       "dep": "11:40"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "11:45",
+       "dep": "11:45"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "11:47",
+       "dep": "11:47"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "11:48",
+       "dep": "11:48"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "11:50",
+       "dep": "11:50"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "11:52",
+       "dep": "11:52"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "11:54",
+       "dep": "11:54"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "11:55",
+       "dep": "11:55"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "12:20",
+       "dep": "12:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p21.A8-4377",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "12:05",
+       "dep": "12:05"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "12:10",
+       "dep": "12:10"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "12:15",
+       "dep": "12:15"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "12:17",
+       "dep": "12:17"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "12:18",
+       "dep": "12:18"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "12:20",
+       "dep": "12:20"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "12:22",
+       "dep": "12:22"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "12:24",
+       "dep": "12:24"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "12:25",
+       "dep": "12:25"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "12:50",
+       "dep": "12:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p21.A9",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4378A Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "12:35",
+       "dep": "12:35"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "12:40",
+       "dep": "12:40"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "12:45",
+       "dep": "12:45"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "12:47",
+       "dep": "12:47"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "12:48",
+       "dep": "12:48"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "12:50",
+       "dep": "12:50"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "12:52",
+       "dep": "12:52"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "12:54",
+       "dep": "12:54"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "12:55",
+       "dep": "12:55"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "13:20",
+       "dep": "13:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p21.A10-4378",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "13:05",
+       "dep": "13:05"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "13:10",
+       "dep": "13:10"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "13:17",
+       "dep": "13:17"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "13:18",
+       "dep": "13:18"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "13:22",
+       "dep": "13:22"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "13:24",
+       "dep": "13:24"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "13:25",
+       "dep": "13:25"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "13:50",
+       "dep": "13:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p22.A1",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4380A Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "13:35",
+       "dep": "13:35"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "13:45",
+       "dep": "13:45"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "13:47",
+       "dep": "13:47"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "13:48",
+       "dep": "13:48"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "13:52",
+       "dep": "13:52"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "13:54",
+       "dep": "13:54"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "13:55",
+       "dep": "13:55"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "14:20",
+       "dep": "14:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p22.A2-4380",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "14:17",
+       "dep": "14:17"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "14:18",
+       "dep": "14:18"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "14:22",
+       "dep": "14:22"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "14:24",
+       "dep": "14:24"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "14:50",
+       "dep": "14:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p22.A3",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4380B Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "14:35",
+       "dep": "14:35"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "14:47",
+       "dep": "14:47"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "14:48",
+       "dep": "14:48"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "14:52",
+       "dep": "14:52"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "14:54",
+       "dep": "14:54"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "14:55",
+       "dep": "14:55"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "15:20",
+       "dep": "15:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p22.A4-4382",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "15:10",
+       "dep": "15:10"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "15:15",
+       "dep": "15:15"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "15:17",
+       "dep": "15:17"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "15:18",
+       "dep": "15:18"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "15:20",
+       "dep": "15:20"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "15:22",
+       "dep": "15:22"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "15:24",
+       "dep": "15:24"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "15:25",
+       "dep": "15:25"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "15:50",
+       "dep": "15:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p22.A5",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4382A Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "15:30",
+       "dep": "15:30"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "15:35",
+       "dep": "15:35"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "15:40",
+       "dep": "15:40"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "15:45",
+       "dep": "15:45"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "15:47",
+       "dep": "15:47"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "15:48",
+       "dep": "15:48"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "15:50",
+       "dep": "15:50"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "15:52",
+       "dep": "15:52"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "15:54",
+       "dep": "15:54"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "15:55",
+       "dep": "15:55"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "16:20",
+       "dep": "16:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p22.A6",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4384A Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "16:05",
+       "dep": "16:05"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "16:10",
+       "dep": "16:10"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "16:15",
+       "dep": "16:15"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "16:17",
+       "dep": "16:17"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "16:18",
+       "dep": "16:18"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "16:20",
+       "dep": "16:20"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "16:22",
+       "dep": "16:22"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "16:24",
+       "dep": "16:24"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "16:25",
+       "dep": "16:25"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "16:50",
+       "dep": "16:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p22.A7-4384",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "16:35",
+       "dep": "16:35"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "16:40",
+       "dep": "16:40"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "16:45",
+       "dep": "16:45"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "16:47",
+       "dep": "16:47"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "16:48",
+       "dep": "16:48"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "16:50",
+       "dep": "16:50"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "16:52",
+       "dep": "16:52"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "16:54",
+       "dep": "16:54"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "16:55",
+       "dep": "16:55"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "17:20",
+       "dep": "17:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p22.A8-4386",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "17:00",
+       "dep": "17:00"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "17:05",
+       "dep": "17:05"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "17:10",
+       "dep": "17:10"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "17:15",
+       "dep": "17:15"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "17:17",
+       "dep": "17:17"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "17:18",
+       "dep": "17:18"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "17:20",
+       "dep": "17:20"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "17:22",
+       "dep": "17:22"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "17:24",
+       "dep": "17:24"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "17:25",
+       "dep": "17:25"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "17:50",
+       "dep": "17:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p22.A9",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4386A Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "17:35",
+       "dep": "17:35"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "17:40",
+       "dep": "17:40"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "17:45",
+       "dep": "17:45"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "17:47",
+       "dep": "17:47"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "17:48",
+       "dep": "17:48"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "17:50",
+       "dep": "17:50"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "17:52",
+       "dep": "17:52"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "17:54",
+       "dep": "17:54"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "17:55",
+       "dep": "17:55"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "18:20",
+       "dep": "18:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p22.A10",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4388A Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "18:05",
+       "dep": "18:05"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "18:10",
+       "dep": "18:10"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "18:17",
+       "dep": "18:17"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "18:18",
+       "dep": "18:18"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "18:20",
+       "dep": "18:20"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "18:22",
+       "dep": "18:22"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "18:24",
+       "dep": "18:24"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "18:25",
+       "dep": "18:25"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "18:50",
+       "dep": "18:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.A1-4388",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "18:35",
+       "dep": "18:35"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "18:40",
+       "dep": "18:40"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "18:45",
+       "dep": "18:45"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "18:47",
+       "dep": "18:47"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "18:48",
+       "dep": "18:48"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "18:50",
+       "dep": "18:50"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "18:52",
+       "dep": "18:52"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "18:54",
+       "dep": "18:54"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "18:55",
+       "dep": "18:55"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "19:20",
+       "dep": "19:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.A2",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4388B Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "19:00",
+       "dep": "19:00"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "19:05",
+       "dep": "19:05"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "19:10",
+       "dep": "19:10"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "19:15",
+       "dep": "19:15"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "19:17",
+       "dep": "19:17"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "19:18",
+       "dep": "19:18"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "19:20",
+       "dep": "19:20"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "19:22",
+       "dep": "19:22"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "19:24",
+       "dep": "19:24"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "19:25",
+       "dep": "19:25"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "19:50",
+       "dep": "19:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.A3",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4393A Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "19:30",
+       "dep": "19:30"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "19:35",
+       "dep": "19:35"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "19:40",
+       "dep": "19:40"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "19:45",
+       "dep": "19:45"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "19:47",
+       "dep": "19:47"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "19:48",
+       "dep": "19:48"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "19:50",
+       "dep": "19:50"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "19:52",
+       "dep": "19:52"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "19:54",
+       "dep": "19:54"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "19:55",
+       "dep": "19:55"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "20:20",
+       "dep": "20:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.A4",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4393B Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "20:00",
+       "dep": "20:00"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "20:05",
+       "dep": "20:05"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "20:10",
+       "dep": "20:10"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "20:15",
+       "dep": "20:15"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "20:17",
+       "dep": "20:17"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "20:18",
+       "dep": "20:18"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "20:20",
+       "dep": "20:20"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "20:22",
+       "dep": "20:22"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "20:24",
+       "dep": "20:24"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "20:25",
+       "dep": "20:25"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "20:50",
+       "dep": "20:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.A5",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4393C Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "20:30",
+       "dep": "20:30"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "20:35",
+       "dep": "20:35"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "20:40",
+       "dep": "20:40"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "20:45",
+       "dep": "20:45"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "20:47",
+       "dep": "20:47"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "20:48",
+       "dep": "20:48"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "20:50",
+       "dep": "20:50"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "20:52",
+       "dep": "20:52"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "20:54",
+       "dep": "20:54"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "20:55",
+       "dep": "20:55"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "21:20",
+       "dep": "21:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.A6",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4393D Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "21:00",
+       "dep": "21:00"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "21:05",
+       "dep": "21:05"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "21:10",
+       "dep": "21:10"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "21:15",
+       "dep": "21:15"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "21:17",
+       "dep": "21:17"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "21:18",
+       "dep": "21:18"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "21:20",
+       "dep": "21:20"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "21:22",
+       "dep": "21:22"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "21:24",
+       "dep": "21:24"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "21:25",
+       "dep": "21:25"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "21:50",
+       "dep": "21:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.A7-4393",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 0,
+       "arr": "21:30",
+       "dep": "21:30"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 1,
+       "arr": "21:35",
+       "dep": "21:35"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 2,
+       "arr": "21:40",
+       "dep": "21:40"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 3,
+       "arr": "21:45",
+       "dep": "21:45"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 4,
+       "arr": "21:47",
+       "dep": "21:47"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "21:48",
+       "dep": "21:48"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 6,
+       "arr": "21:50",
+       "dep": "21:50"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 7,
+       "arr": "21:52",
+       "dep": "21:52"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 8,
+       "arr": "21:54",
+       "dep": "21:54"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 9,
+       "arr": "21:55",
+       "dep": "21:55"
+      },
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 10,
+       "arr": "22:20",
+       "dep": "22:20"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CINISI (Aeroporto Falcone Borsellino)",
+    "PALERMO (Via Belgio n.25)",
+    "PALERMO (Via A. De Gasperi n. 82)",
+    "PALERMO (Viale Croce Rossa n. 56)",
+    "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+    "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+    "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+    "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+    "PALERMO (Piazza Ruggero Settimo - Politeama)",
+    "PALERMO (Via Roma n. 265 - Vucciria)",
+    "PALERMO (Stazione F.S. - Via Fazello)"
+   ],
+   "kms": [
+    0.0,
+    27.7,
+    28.5,
+    28.8,
+    29.6,
+    30.4,
+    30.5,
+    31.0,
+    31.7,
+    33.0,
+    34.6
+   ],
+   "trips": [
+    {
+     "corsa": "p20.R1",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4429A Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "00:05",
+       "dep": "00:05"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "00:25",
+       "dep": "00:25"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "00:28",
+       "dep": "00:28"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "00:30",
+       "dep": "00:30"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "00:32",
+       "dep": "00:32"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "00:33",
+       "dep": "00:33"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "00:36",
+       "dep": "00:36"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "00:38",
+       "dep": "00:38"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "00:40",
+       "dep": "00:40"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "00:45",
+       "dep": "00:45"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "00:50",
+       "dep": "00:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p20.R2",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4429B Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "00:35",
+       "dep": "00:35"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "00:55",
+       "dep": "00:55"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "00:58",
+       "dep": "00:58"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "01:00",
+       "dep": "01:00"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "01:02",
+       "dep": "01:02"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "01:03",
+       "dep": "01:03"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "01:06",
+       "dep": "01:06"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "01:08",
+       "dep": "01:08"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "01:10",
+       "dep": "01:10"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "01:15",
+       "dep": "01:15"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "01:20",
+       "dep": "01:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p20.R3",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4429C Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "01:05",
+       "dep": "01:05"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "01:25",
+       "dep": "01:25"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "01:28",
+       "dep": "01:28"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "01:30",
+       "dep": "01:30"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "01:32",
+       "dep": "01:32"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "01:33",
+       "dep": "01:33"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "01:36",
+       "dep": "01:36"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "01:38",
+       "dep": "01:38"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "01:40",
+       "dep": "01:40"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "01:45",
+       "dep": "01:45"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "01:50",
+       "dep": "01:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p20.R4",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4429D Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "05:05",
+       "dep": "05:05"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "05:25",
+       "dep": "05:25"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "05:28",
+       "dep": "05:28"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "05:30",
+       "dep": "05:30"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "05:32",
+       "dep": "05:32"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "05:33",
+       "dep": "05:33"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "05:36",
+       "dep": "05:36"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "05:38",
+       "dep": "05:38"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "05:40",
+       "dep": "05:40"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "05:45",
+       "dep": "05:45"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "05:50",
+       "dep": "05:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p20.R5",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4429E Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "05:35",
+       "dep": "05:35"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "05:55",
+       "dep": "05:55"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "05:58",
+       "dep": "05:58"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "06:00",
+       "dep": "06:00"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "06:02",
+       "dep": "06:02"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "06:03",
+       "dep": "06:03"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "06:06",
+       "dep": "06:06"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "06:08",
+       "dep": "06:08"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "06:10",
+       "dep": "06:10"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "06:15",
+       "dep": "06:15"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "06:20",
+       "dep": "06:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p20.R6-4429",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "06:05",
+       "dep": "06:05"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "06:25",
+       "dep": "06:25"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "06:28",
+       "dep": "06:28"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "06:30",
+       "dep": "06:30"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "06:32",
+       "dep": "06:32"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "06:33",
+       "dep": "06:33"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "06:36",
+       "dep": "06:36"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "06:38",
+       "dep": "06:38"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "06:40",
+       "dep": "06:40"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "06:45",
+       "dep": "06:45"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "06:50",
+       "dep": "06:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p20.R7",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4429F Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "06:35",
+       "dep": "06:35"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "06:55",
+       "dep": "06:55"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "06:58",
+       "dep": "06:58"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "07:02",
+       "dep": "07:02"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "07:03",
+       "dep": "07:03"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "07:06",
+       "dep": "07:06"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "07:08",
+       "dep": "07:08"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "07:20",
+       "dep": "07:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p20.R8",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4401A Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "07:55",
+       "dep": "07:55"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "07:58",
+       "dep": "07:58"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "08:02",
+       "dep": "08:02"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "08:03",
+       "dep": "08:03"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "08:06",
+       "dep": "08:06"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "08:08",
+       "dep": "08:08"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "08:20",
+       "dep": "08:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p20.R9-4401",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "08:25",
+       "dep": "08:25"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "08:28",
+       "dep": "08:28"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "08:32",
+       "dep": "08:32"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "08:33",
+       "dep": "08:33"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "08:36",
+       "dep": "08:36"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "08:38",
+       "dep": "08:38"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "08:50",
+       "dep": "08:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p20.R10",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4401B Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "08:35",
+       "dep": "08:35"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "08:55",
+       "dep": "08:55"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "08:58",
+       "dep": "08:58"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "09:02",
+       "dep": "09:02"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "09:03",
+       "dep": "09:03"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "09:06",
+       "dep": "09:06"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "09:08",
+       "dep": "09:08"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "09:10",
+       "dep": "09:10"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "09:20",
+       "dep": "09:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p21.R1-4403",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "09:05",
+       "dep": "09:05"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "09:25",
+       "dep": "09:25"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "09:28",
+       "dep": "09:28"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "09:32",
+       "dep": "09:32"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "09:33",
+       "dep": "09:33"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "09:36",
+       "dep": "09:36"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "09:38",
+       "dep": "09:38"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "09:40",
+       "dep": "09:40"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "09:45",
+       "dep": "09:45"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "09:50",
+       "dep": "09:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p21.R2",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4403A Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "09:35",
+       "dep": "09:35"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "09:55",
+       "dep": "09:55"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "09:58",
+       "dep": "09:58"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "10:00",
+       "dep": "10:00"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "10:02",
+       "dep": "10:02"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "10:03",
+       "dep": "10:03"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "10:06",
+       "dep": "10:06"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "10:08",
+       "dep": "10:08"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "10:10",
+       "dep": "10:10"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "10:15",
+       "dep": "10:15"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "10:20",
+       "dep": "10:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p21.R3-4405",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "10:05",
+       "dep": "10:05"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "10:25",
+       "dep": "10:25"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "10:28",
+       "dep": "10:28"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "10:30",
+       "dep": "10:30"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "10:32",
+       "dep": "10:32"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "10:33",
+       "dep": "10:33"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "10:36",
+       "dep": "10:36"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "10:38",
+       "dep": "10:38"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "10:40",
+       "dep": "10:40"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "10:45",
+       "dep": "10:45"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "10:50",
+       "dep": "10:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p21.R4",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4405A Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "10:35",
+       "dep": "10:35"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "10:55",
+       "dep": "10:55"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "10:58",
+       "dep": "10:58"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "11:00",
+       "dep": "11:00"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "11:02",
+       "dep": "11:02"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "11:03",
+       "dep": "11:03"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "11:06",
+       "dep": "11:06"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "11:08",
+       "dep": "11:08"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "11:10",
+       "dep": "11:10"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "11:15",
+       "dep": "11:15"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "11:20",
+       "dep": "11:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p21.R5",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4408A Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "11:05",
+       "dep": "11:05"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "11:25",
+       "dep": "11:25"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "11:28",
+       "dep": "11:28"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "11:30",
+       "dep": "11:30"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "11:32",
+       "dep": "11:32"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "11:33",
+       "dep": "11:33"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "11:36",
+       "dep": "11:36"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "11:38",
+       "dep": "11:38"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "11:40",
+       "dep": "11:40"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "11:45",
+       "dep": "11:45"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "11:50",
+       "dep": "11:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p21.R6",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4408B Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "11:35",
+       "dep": "11:35"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "11:55",
+       "dep": "11:55"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "11:58",
+       "dep": "11:58"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "12:02",
+       "dep": "12:02"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "12:03",
+       "dep": "12:03"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "12:06",
+       "dep": "12:06"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "12:08",
+       "dep": "12:08"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "12:10",
+       "dep": "12:10"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "12:15",
+       "dep": "12:15"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "12:20",
+       "dep": "12:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p21.R7-4408",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "12:05",
+       "dep": "12:05"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "12:25",
+       "dep": "12:25"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "12:28",
+       "dep": "12:28"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "12:32",
+       "dep": "12:32"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "12:33",
+       "dep": "12:33"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "12:36",
+       "dep": "12:36"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "12:38",
+       "dep": "12:38"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "12:40",
+       "dep": "12:40"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "12:45",
+       "dep": "12:45"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "12:50",
+       "dep": "12:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p21.R8",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4410A Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "12:35",
+       "dep": "12:35"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "12:55",
+       "dep": "12:55"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "12:58",
+       "dep": "12:58"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "13:02",
+       "dep": "13:02"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "13:03",
+       "dep": "13:03"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "13:06",
+       "dep": "13:06"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "13:08",
+       "dep": "13:08"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "13:10",
+       "dep": "13:10"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "13:20",
+       "dep": "13:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p21.R9-4410",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "13:05",
+       "dep": "13:05"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "13:25",
+       "dep": "13:25"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "13:28",
+       "dep": "13:28"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "13:32",
+       "dep": "13:32"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "13:33",
+       "dep": "13:33"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "13:36",
+       "dep": "13:36"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "13:38",
+       "dep": "13:38"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "13:45",
+       "dep": "13:45"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "13:50",
+       "dep": "13:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p21.R10",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4412A Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "13:35",
+       "dep": "13:35"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "13:55",
+       "dep": "13:55"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "13:58",
+       "dep": "13:58"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "14:02",
+       "dep": "14:02"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "14:03",
+       "dep": "14:03"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "14:06",
+       "dep": "14:06"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "14:08",
+       "dep": "14:08"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "14:20",
+       "dep": "14:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p22.R1-4412",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "14:28",
+       "dep": "14:28"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "14:32",
+       "dep": "14:32"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "14:33",
+       "dep": "14:33"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "14:36",
+       "dep": "14:36"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "14:38",
+       "dep": "14:38"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "14:50",
+       "dep": "14:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p22.R2",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4414A Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "14:35",
+       "dep": "14:35"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "14:55",
+       "dep": "14:55"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "14:58",
+       "dep": "14:58"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "15:02",
+       "dep": "15:02"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "15:03",
+       "dep": "15:03"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "15:06",
+       "dep": "15:06"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "15:08",
+       "dep": "15:08"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "15:10",
+       "dep": "15:10"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "15:15",
+       "dep": "15:15"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "15:20",
+       "dep": "15:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p22.R3-4414",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "15:25",
+       "dep": "15:25"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "15:28",
+       "dep": "15:28"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "15:30",
+       "dep": "15:30"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "15:32",
+       "dep": "15:32"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "15:33",
+       "dep": "15:33"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "15:36",
+       "dep": "15:36"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "15:38",
+       "dep": "15:38"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "15:40",
+       "dep": "15:40"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "15:45",
+       "dep": "15:45"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "15:50",
+       "dep": "15:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p22.R4",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4416A Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "15:35",
+       "dep": "15:35"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "15:55",
+       "dep": "15:55"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "15:58",
+       "dep": "15:58"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "16:02",
+       "dep": "16:02"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "16:03",
+       "dep": "16:03"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "16:06",
+       "dep": "16:06"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "16:08",
+       "dep": "16:08"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "16:10",
+       "dep": "16:10"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "16:15",
+       "dep": "16:15"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "16:20",
+       "dep": "16:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p22.R5-4416",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "16:05",
+       "dep": "16:05"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "16:25",
+       "dep": "16:25"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "16:28",
+       "dep": "16:28"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "16:32",
+       "dep": "16:32"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "16:33",
+       "dep": "16:33"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "16:36",
+       "dep": "16:36"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "16:38",
+       "dep": "16:38"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "16:40",
+       "dep": "16:40"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "16:45",
+       "dep": "16:45"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "16:50",
+       "dep": "16:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p22.R6",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4414B Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "16:35",
+       "dep": "16:35"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "16:55",
+       "dep": "16:55"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "16:58",
+       "dep": "16:58"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "17:00",
+       "dep": "17:00"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "17:02",
+       "dep": "17:02"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "17:03",
+       "dep": "17:03"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "17:06",
+       "dep": "17:06"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "17:08",
+       "dep": "17:08"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "17:10",
+       "dep": "17:10"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "17:15",
+       "dep": "17:15"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "17:20",
+       "dep": "17:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p22.R7-4418",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "17:05",
+       "dep": "17:05"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "17:25",
+       "dep": "17:25"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "17:28",
+       "dep": "17:28"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "17:32",
+       "dep": "17:32"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "17:33",
+       "dep": "17:33"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "17:36",
+       "dep": "17:36"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "17:38",
+       "dep": "17:38"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "17:40",
+       "dep": "17:40"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "17:45",
+       "dep": "17:45"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "17:50",
+       "dep": "17:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p22.R8",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4422A Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "17:35",
+       "dep": "17:35"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "17:55",
+       "dep": "17:55"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "17:58",
+       "dep": "17:58"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "18:02",
+       "dep": "18:02"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "18:03",
+       "dep": "18:03"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "18:06",
+       "dep": "18:06"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "18:08",
+       "dep": "18:08"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "18:10",
+       "dep": "18:10"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "18:20",
+       "dep": "18:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p22.R9-4420",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "18:05",
+       "dep": "18:05"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "18:25",
+       "dep": "18:25"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "18:28",
+       "dep": "18:28"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "18:32",
+       "dep": "18:32"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "18:33",
+       "dep": "18:33"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "18:36",
+       "dep": "18:36"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "18:38",
+       "dep": "18:38"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "18:40",
+       "dep": "18:40"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "18:45",
+       "dep": "18:45"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "18:50",
+       "dep": "18:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p22.R10-4422",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "18:35",
+       "dep": "18:35"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "18:55",
+       "dep": "18:55"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "18:58",
+       "dep": "18:58"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "19:00",
+       "dep": "19:00"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "19:02",
+       "dep": "19:02"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "19:03",
+       "dep": "19:03"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "19:06",
+       "dep": "19:06"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "19:08",
+       "dep": "19:08"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "19:10",
+       "dep": "19:10"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "19:15",
+       "dep": "19:15"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "19:20",
+       "dep": "19:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.R1",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4427A Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "19:05",
+       "dep": "19:05"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "19:25",
+       "dep": "19:25"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "19:28",
+       "dep": "19:28"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "19:30",
+       "dep": "19:30"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "19:32",
+       "dep": "19:32"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "19:33",
+       "dep": "19:33"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "19:36",
+       "dep": "19:36"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "19:38",
+       "dep": "19:38"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "19:40",
+       "dep": "19:40"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "19:45",
+       "dep": "19:45"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "19:50",
+       "dep": "19:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.R2",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4428A Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "19:35",
+       "dep": "19:35"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "19:55",
+       "dep": "19:55"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "19:58",
+       "dep": "19:58"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "20:00",
+       "dep": "20:00"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "20:02",
+       "dep": "20:02"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "20:03",
+       "dep": "20:03"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "20:06",
+       "dep": "20:06"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "20:08",
+       "dep": "20:08"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "20:10",
+       "dep": "20:10"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "20:15",
+       "dep": "20:15"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "20:20",
+       "dep": "20:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.R3",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4427B Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "20:05",
+       "dep": "20:05"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "20:25",
+       "dep": "20:25"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "20:28",
+       "dep": "20:28"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "20:30",
+       "dep": "20:30"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "20:32",
+       "dep": "20:32"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "20:33",
+       "dep": "20:33"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "20:36",
+       "dep": "20:36"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "20:38",
+       "dep": "20:38"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "20:40",
+       "dep": "20:40"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "20:45",
+       "dep": "20:45"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "20:50",
+       "dep": "20:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.R4-4427",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "20:35",
+       "dep": "20:35"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "20:55",
+       "dep": "20:55"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "20:58",
+       "dep": "20:58"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "21:00",
+       "dep": "21:00"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "21:02",
+       "dep": "21:02"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "21:03",
+       "dep": "21:03"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "21:06",
+       "dep": "21:06"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "21:08",
+       "dep": "21:08"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "21:10",
+       "dep": "21:10"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "21:15",
+       "dep": "21:15"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "21:20",
+       "dep": "21:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.R5",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4428B Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "21:05",
+       "dep": "21:05"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "21:25",
+       "dep": "21:25"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "21:28",
+       "dep": "21:28"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "21:30",
+       "dep": "21:30"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "21:32",
+       "dep": "21:32"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "21:33",
+       "dep": "21:33"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "21:36",
+       "dep": "21:36"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "21:38",
+       "dep": "21:38"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "21:40",
+       "dep": "21:40"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "21:45",
+       "dep": "21:45"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "21:50",
+       "dep": "21:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.R6",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4427C Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "21:35",
+       "dep": "21:35"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "21:55",
+       "dep": "21:55"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "21:58",
+       "dep": "21:58"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "22:00",
+       "dep": "22:00"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "22:02",
+       "dep": "22:02"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "22:03",
+       "dep": "22:03"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "22:06",
+       "dep": "22:06"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "22:08",
+       "dep": "22:08"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "22:10",
+       "dep": "22:10"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "22:15",
+       "dep": "22:15"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "22:20",
+       "dep": "22:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.R7",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4428C Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "22:05",
+       "dep": "22:05"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "22:25",
+       "dep": "22:25"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "22:28",
+       "dep": "22:28"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "22:30",
+       "dep": "22:30"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "22:32",
+       "dep": "22:32"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "22:33",
+       "dep": "22:33"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "22:36",
+       "dep": "22:36"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "22:38",
+       "dep": "22:38"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "22:40",
+       "dep": "22:40"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "22:45",
+       "dep": "22:45"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "22:50",
+       "dep": "22:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.R8",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4427D Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "22:35",
+       "dep": "22:35"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "22:55",
+       "dep": "22:55"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "22:58",
+       "dep": "22:58"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "23:00",
+       "dep": "23:00"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "23:02",
+       "dep": "23:02"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "23:03",
+       "dep": "23:03"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "23:06",
+       "dep": "23:06"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "23:08",
+       "dep": "23:08"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "23:10",
+       "dep": "23:10"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "23:15",
+       "dep": "23:15"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "23:20",
+       "dep": "23:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.R9-4428",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "23:05",
+       "dep": "23:05"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "23:25",
+       "dep": "23:25"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "23:28",
+       "dep": "23:28"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "23:30",
+       "dep": "23:30"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "23:32",
+       "dep": "23:32"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "23:33",
+       "dep": "23:33"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "23:36",
+       "dep": "23:36"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "23:38",
+       "dep": "23:38"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "23:40",
+       "dep": "23:40"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "23:45",
+       "dep": "23:45"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "23:50",
+       "dep": "23:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.R10",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "4428D Giornaliera"
+     },
+     "reverse": false,
+     "valid": false,
+     "stops": [
+      {
+       "stop": "CINISI (Aeroporto Falcone Borsellino)",
+       "idx": 0,
+       "arr": "23:35",
+       "dep": "23:35"
+      },
+      {
+       "stop": "PALERMO (Via Belgio n.25)",
+       "idx": 1,
+       "arr": "23:55",
+       "dep": "23:55"
+      },
+      {
+       "stop": "PALERMO (Via A. De Gasperi n. 82)",
+       "idx": 2,
+       "arr": "23:58",
+       "dep": "23:58"
+      },
+      {
+       "stop": "PALERMO (Viale Croce Rossa n. 56)",
+       "idx": 3,
+       "arr": "00:00",
+       "dep": "00:00"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 106 - ang. Viale Lazio)",
+       "idx": 4,
+       "arr": "00:02",
+       "dep": "00:02"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 171 - ang. Via Rutelli)",
+       "idx": 5,
+       "arr": "00:03",
+       "dep": "00:03"
+      },
+      {
+       "stop": "PALERMO (Via Libertà - ang. Via Notarbartolo)",
+       "idx": 6,
+       "arr": "00:06",
+       "dep": "00:06"
+      },
+      {
+       "stop": "PALERMO (Via Libertà n. 42 - Piazza Croci)",
+       "idx": 7,
+       "arr": "00:08",
+       "dep": "00:08"
+      },
+      {
+       "stop": "PALERMO (Piazza Ruggero Settimo - Politeama)",
+       "idx": 8,
+       "arr": "00:10",
+       "dep": "00:10"
+      },
+      {
+       "stop": "PALERMO (Via Roma n. 265 - Vucciria)",
+       "idx": 9,
+       "arr": "00:15",
+       "dep": "00:15"
+      },
+      {
+       "stop": "PALERMO (Stazione F.S. - Via Fazello)",
+       "idx": 10,
+       "arr": "00:20",
+       "dep": "00:20"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

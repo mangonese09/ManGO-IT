@@ -1,0 +1,386 @@
+{
+ "operator": "Autoservizi Salemi",
+ "route_id": "lot1-366",
+ "name": "MARSALA - PALERMO",
+ "short_name": "366",
+ "source": "t3-tabelle-_orari_da_linea_350_a_new_alia-cerda.pdf#p13",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "MARSALA (via FAZIO)",
+    "MARSALA (S. Silvestro)",
+    "MARSALA (Cardilla)",
+    "MARSALA (Matarocco)",
+    "MARSALA (bivio Billusa)",
+    "SALEMI (Torretta)",
+    "SALEMI (Pusillesi)",
+    "SALEMI (. P.zza Libertà 12.79901723)",
+    "GIBELLINA (VIA GOETHE)",
+    "CARINI (PALERMO - PUNTA RAISI)",
+    "PALERMO (P.zza FAZELLO)"
+   ],
+   "kms": [
+    0.0,
+    4.3,
+    5.8,
+    7.9,
+    19.7,
+    24.3,
+    30.3,
+    34.5,
+    43.2,
+    115.5,
+    143.3
+   ],
+   "trips": [
+    {
+     "corsa": "p13.A1-5176",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "MARSALA (S. Silvestro)",
+       "idx": 1,
+       "arr": "07:05",
+       "dep": "07:05"
+      },
+      {
+       "stop": "MARSALA (Cardilla)",
+       "idx": 2,
+       "arr": "07:07",
+       "dep": "07:07"
+      },
+      {
+       "stop": "MARSALA (Matarocco)",
+       "idx": 3,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "MARSALA (bivio Billusa)",
+       "idx": 4,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "SALEMI (Torretta)",
+       "idx": 5,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "SALEMI (Pusillesi)",
+       "idx": 6,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "SALEMI (. P.zza Libertà 12.79901723)",
+       "idx": 7,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "GIBELLINA (VIA GOETHE)",
+       "idx": 8,
+       "arr": "07:47",
+       "dep": "07:47"
+      },
+      {
+       "stop": "CARINI (PALERMO - PUNTA RAISI)",
+       "idx": 9,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 10,
+       "arr": "09:30",
+       "dep": "09:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p13.A2-5178",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "Festiva e s c l u s e f e s t i v it à nazionali"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 0,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "MARSALA (S. Silvestro)",
+       "idx": 1,
+       "arr": "16:35",
+       "dep": "16:35"
+      },
+      {
+       "stop": "MARSALA (Cardilla)",
+       "idx": 2,
+       "arr": "16:37",
+       "dep": "16:37"
+      },
+      {
+       "stop": "MARSALA (Matarocco)",
+       "idx": 3,
+       "arr": "16:40",
+       "dep": "16:40"
+      },
+      {
+       "stop": "MARSALA (bivio Billusa)",
+       "idx": 4,
+       "arr": "16:50",
+       "dep": "16:50"
+      },
+      {
+       "stop": "SALEMI (Torretta)",
+       "idx": 5,
+       "arr": "16:55",
+       "dep": "16:55"
+      },
+      {
+       "stop": "SALEMI (Pusillesi)",
+       "idx": 6,
+       "arr": "17:00",
+       "dep": "17:00"
+      },
+      {
+       "stop": "SALEMI (. P.zza Libertà 12.79901723)",
+       "idx": 7,
+       "arr": "17:05",
+       "dep": "17:05"
+      },
+      {
+       "stop": "GIBELLINA (VIA GOETHE)",
+       "idx": 8,
+       "arr": "17:17",
+       "dep": "17:17"
+      },
+      {
+       "stop": "CARINI (PALERMO - PUNTA RAISI)",
+       "idx": 9,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 10,
+       "arr": "19:00",
+       "dep": "19:00"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "PALERMO (P.zza FAZELLO)",
+    "CARINI (PALERMO - PUNTA RAISI)",
+    "GIBELLINA (VIA GOETHE)",
+    "SALEMI (. P.zza Libertà 12.79901723)",
+    "SALEMI (Pusillesi)",
+    "SALEMI (Torretta)",
+    "MARSALA (bivio Billusa)",
+    "MARSALA (Matarocco)",
+    "MARSALA (Cardilla)",
+    "MARSALA (S. Silvestro)",
+    "MARSALA (via FAZIO)"
+   ],
+   "kms": [
+    0.0,
+    27.8,
+    99.1,
+    108.8,
+    113.0,
+    118.8,
+    123.6,
+    135.4,
+    137.5,
+    139.0,
+    143.3
+   ],
+   "trips": [
+    {
+     "corsa": "p13.R1-5179",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 0,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "CARINI (PALERMO - PUNTA RAISI)",
+       "idx": 1,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "GIBELLINA (VIA GOETHE)",
+       "idx": 2,
+       "arr": "15:53",
+       "dep": "15:53"
+      },
+      {
+       "stop": "SALEMI (. P.zza Libertà 12.79901723)",
+       "idx": 3,
+       "arr": "15:55",
+       "dep": "15:55"
+      },
+      {
+       "stop": "SALEMI (Pusillesi)",
+       "idx": 4,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "SALEMI (Torretta)",
+       "idx": 5,
+       "arr": "16:05",
+       "dep": "16:05"
+      },
+      {
+       "stop": "MARSALA (bivio Billusa)",
+       "idx": 6,
+       "arr": "16:10",
+       "dep": "16:10"
+      },
+      {
+       "stop": "MARSALA (Matarocco)",
+       "idx": 7,
+       "arr": "16:20",
+       "dep": "16:20"
+      },
+      {
+       "stop": "MARSALA (Cardilla)",
+       "idx": 8,
+       "arr": "16:23",
+       "dep": "16:23"
+      },
+      {
+       "stop": "MARSALA (S. Silvestro)",
+       "idx": 9,
+       "arr": "16:25",
+       "dep": "16:25"
+      },
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 10,
+       "arr": "16:30",
+       "dep": "16:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p13.R2-5181",
+     "service": {
+      "days": "sun-holidays",
+      "school": null,
+      "season": null,
+      "raw": "Festiva e s c l u s e f e s t i v it à nazionali"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (P.zza FAZELLO)",
+       "idx": 0,
+       "arr": "19:00",
+       "dep": "19:00"
+      },
+      {
+       "stop": "CARINI (PALERMO - PUNTA RAISI)",
+       "idx": 1,
+       "arr": "19:45",
+       "dep": "19:45"
+      },
+      {
+       "stop": "GIBELLINA (VIA GOETHE)",
+       "idx": 2,
+       "arr": "20:53",
+       "dep": "20:53"
+      },
+      {
+       "stop": "SALEMI (. P.zza Libertà 12.79901723)",
+       "idx": 3,
+       "arr": "20:55",
+       "dep": "20:55"
+      },
+      {
+       "stop": "SALEMI (Pusillesi)",
+       "idx": 4,
+       "arr": "21:00",
+       "dep": "21:00"
+      },
+      {
+       "stop": "SALEMI (Torretta)",
+       "idx": 5,
+       "arr": "21:05",
+       "dep": "21:05"
+      },
+      {
+       "stop": "MARSALA (bivio Billusa)",
+       "idx": 6,
+       "arr": "21:10",
+       "dep": "21:10"
+      },
+      {
+       "stop": "MARSALA (Matarocco)",
+       "idx": 7,
+       "arr": "21:20",
+       "dep": "21:20"
+      },
+      {
+       "stop": "MARSALA (Cardilla)",
+       "idx": 8,
+       "arr": "21:23",
+       "dep": "21:23"
+      },
+      {
+       "stop": "MARSALA (S. Silvestro)",
+       "idx": 9,
+       "arr": "21:25",
+       "dep": "21:25"
+      },
+      {
+       "stop": "MARSALA (via FAZIO)",
+       "idx": 10,
+       "arr": "21:30",
+       "dep": "21:30"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

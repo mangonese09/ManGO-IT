@@ -1,0 +1,132 @@
+{
+ "operator": "Atis",
+ "route_id": "lot1-252",
+ "name": "SCIARA - CEFALÙ",
+ "short_name": "252",
+ "source": "t1-tabelle_-orari_da_linea_1_a_linea_297.pdf#p19",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "SCIARA (P. CASTELREALE)",
+    "SCIARA (CORSO UMBERTO 122)",
+    "CEFALU (STAZIONE CEFALU - ALDO MORO)",
+    "CEFALU (VILLA MELOGRANI)",
+    "CEFALU (VIA TERZO MILLENNIO - ARTISTICO)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p19.A1-3633",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SCIARA (P. CASTELREALE)",
+       "idx": 0,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "SCIARA (CORSO UMBERTO 122)",
+       "idx": 1,
+       "arr": "07:18",
+       "dep": "07:18"
+      },
+      {
+       "stop": "CEFALU (STAZIONE CEFALU - ALDO MORO)",
+       "idx": 2,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "CEFALU (VILLA MELOGRANI)",
+       "idx": 3,
+       "arr": "08:05",
+       "dep": "08:05"
+      },
+      {
+       "stop": "CEFALU (VIA TERZO MILLENNIO - ARTISTICO)",
+       "idx": 4,
+       "arr": "08:10",
+       "dep": "08:10"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CEFALU (VIA TERZO MILLENNIO - ARTISTICO)",
+    "CEFALU (VILLA MELOGRANI)",
+    "CEFALU (STAZIONE CEFALU - ALDO MORO)",
+    "SCIARA (CORSO UMBERTO 122)",
+    "SCIARA (P. CASTELREALE)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p19.R1-3634",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CEFALU (VIA TERZO MILLENNIO - ARTISTICO)",
+       "idx": 0,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "CEFALU (VILLA MELOGRANI)",
+       "idx": 1,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "CEFALU (STAZIONE CEFALU - ALDO MORO)",
+       "idx": 2,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "SCIARA (CORSO UMBERTO 122)",
+       "idx": 3,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "SCIARA (P. CASTELREALE)",
+       "idx": 4,
+       "arr": "15:10",
+       "dep": "15:10"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

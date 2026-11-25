@@ -1,0 +1,574 @@
+{
+ "operator": "TARANTOLA E CUFFARO SRL",
+ "route_id": "lot1-371",
+ "name": "VITA - PALERMO",
+ "short_name": "371",
+ "source": "t3-tabelle-_orari_da_linea_350_a_new_alia-cerda.pdf#p19",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "VITA (Via Valle del Belice)",
+    "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+    "CALATAFIMI (C/da Sasi)",
+    "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+    "CALATAFIMI (SICILGESSO)",
+    "ALCAMO (Autostazione Piazza della Repubblica)"
+   ],
+   "kms": [
+    0.0,
+    10.2,
+    14.7,
+    19.2,
+    11.0,
+    38.5
+   ],
+   "trips": [
+    {
+     "corsa": "p19.A1-5253",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VITA (Via Valle del Belice)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 1,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "CALATAFIMI (C/da Sasi)",
+       "idx": 2,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "ALCAMO (Autostazione Piazza della Repubblica)",
+       "idx": 5,
+       "arr": "07:55",
+       "dep": "07:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p19.A2-5254",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 1,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "CALATAFIMI (SICILGESSO)",
+       "idx": 4,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "ALCAMO (Autostazione Piazza della Repubblica)",
+       "idx": 5,
+       "arr": "07:45",
+       "dep": "07:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p19.A3-5255",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 1,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "CALATAFIMI (C/da Sasi)",
+       "idx": 2,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "ALCAMO (Autostazione Piazza della Repubblica)",
+       "idx": 5,
+       "arr": "08:00",
+       "dep": "08:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p19.A4-5256",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VITA (Via Valle del Belice)",
+       "idx": 0,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 1,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "CALATAFIMI (C/da Sasi)",
+       "idx": 2,
+       "arr": "08:25",
+       "dep": "08:25"
+      },
+      {
+       "stop": "ALCAMO (Autostazione Piazza della Repubblica)",
+       "idx": 5,
+       "arr": "08:55",
+       "dep": "08:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p19.A5-5257",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VITA (Via Valle del Belice)",
+       "idx": 0,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 1,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "CALATAFIMI (C/da Sasi)",
+       "idx": 2,
+       "arr": "09:25",
+       "dep": "09:25"
+      },
+      {
+       "stop": "ALCAMO (Autostazione Piazza della Repubblica)",
+       "idx": 5,
+       "arr": "09:55",
+       "dep": "09:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p19.A6-5261",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VITA (Via Valle del Belice)",
+       "idx": 0,
+       "arr": "13:25",
+       "dep": "13:25"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 1,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "CALATAFIMI (C/da Sasi)",
+       "idx": 2,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "ALCAMO (Autostazione Piazza della Repubblica)",
+       "idx": 5,
+       "arr": "14:20",
+       "dep": "14:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p19.A7-5262",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "VITA (Via Valle del Belice)",
+       "idx": 0,
+       "arr": "15:15",
+       "dep": "15:15"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 1,
+       "arr": "15:30",
+       "dep": "15:30"
+      },
+      {
+       "stop": "CALATAFIMI (C/da Sasi)",
+       "idx": 2,
+       "arr": "15:40",
+       "dep": "15:40"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 3,
+       "arr": "15:50",
+       "dep": "15:50"
+      },
+      {
+       "stop": "CALATAFIMI (SICILGESSO)",
+       "idx": 4,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "ALCAMO (Autostazione Piazza della Repubblica)",
+       "idx": 5,
+       "arr": "16:15",
+       "dep": "16:15"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "ALCAMO (Autostazione Piazza della Repubblica)",
+    "CALATAFIMI (SICILGESSO)",
+    "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+    "CALATAFIMI (C/da Sasi)",
+    "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+    "VITA (Via Valle del Belice)"
+   ],
+   "kms": [
+    0.0,
+    7.8,
+    19.3,
+    20.8,
+    28.3,
+    38.5
+   ],
+   "trips": [
+    {
+     "corsa": "p19.R1-5265",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALCAMO (Autostazione Piazza della Repubblica)",
+       "idx": 0,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "CALATAFIMI (C/da Sasi)",
+       "idx": 3,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 4,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "VITA (Via Valle del Belice)",
+       "idx": 5,
+       "arr": "08:55",
+       "dep": "08:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p19.R2-5268",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALCAMO (Autostazione Piazza della Repubblica)",
+       "idx": 0,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "CALATAFIMI (C/da Sasi)",
+       "idx": 3,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 4,
+       "arr": "13:10",
+       "dep": "13:10"
+      },
+      {
+       "stop": "VITA (Via Valle del Belice)",
+       "idx": 5,
+       "arr": "13:25",
+       "dep": "13:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p19.R3-5270",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALCAMO (Autostazione Piazza della Repubblica)",
+       "idx": 0,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "CALATAFIMI (C/da Sasi)",
+       "idx": 3,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 4,
+       "arr": "14:00",
+       "dep": "14:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p19.R4-5269",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALCAMO (Autostazione Piazza della Repubblica)",
+       "idx": 0,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "CALATAFIMI (C/da Sasi)",
+       "idx": 3,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 4,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "VITA (Via Valle del Belice)",
+       "idx": 5,
+       "arr": "14:25",
+       "dep": "14:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p19.R5-5272",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALCAMO (Autostazione Piazza della Repubblica)",
+       "idx": 0,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "CALATAFIMI (C/da Sasi)",
+       "idx": 3,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 4,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "VITA (Via Valle del Belice)",
+       "idx": 5,
+       "arr": "15:15",
+       "dep": "15:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p19.R6-5273",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALCAMO (Autostazione Piazza della Repubblica)",
+       "idx": 0,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "CALATAFIMI (SICILGESSO)",
+       "idx": 1,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 2,
+       "arr": "14:55",
+       "dep": "14:55"
+      },
+      {
+       "stop": "CALATAFIMI (C/da Sasi)",
+       "idx": 3,
+       "arr": "15:05",
+       "dep": "15:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p19.R7-5274",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ALCAMO (Autostazione Piazza della Repubblica)",
+       "idx": 0,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "CALATAFIMI (SICILGESSO)",
+       "idx": 1,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 2,
+       "arr": "18:25",
+       "dep": "18:25"
+      },
+      {
+       "stop": "CALATAFIMI (C/da Sasi)",
+       "idx": 3,
+       "arr": "18:35",
+       "dep": "18:35"
+      },
+      {
+       "stop": "CALATAFIMI (P.zza Duca degli Abbruzzi)",
+       "idx": 4,
+       "arr": "18:45",
+       "dep": "18:45"
+      },
+      {
+       "stop": "VITA (Via Valle del Belice)",
+       "idx": 5,
+       "arr": "19:00",
+       "dep": "19:00"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

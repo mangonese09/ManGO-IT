@@ -1,0 +1,184 @@
+{
+ "operator": "Consorzio Stabile Siciliano Mobilità Est (Lotto 2)",
+ "route_id": "lot2-401",
+ "name": "ZAFFERANA - LAVINAIO - ACI SANT'ANTONIO - CATANIA",
+ "short_name": "401",
+ "source": "orario_b2d178879e.pdf#p86",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "MONTEROSSO ETNEO",
+    "CATANIA Terminal Bus Via Archimede"
+   ],
+   "kms": [
+    null,
+    25.0
+   ],
+   "trips": [
+    {
+     "corsa": "p86.A1-5926",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "1 FERIALE 5.45"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MONTEROSSO ETNEO",
+       "idx": 0,
+       "arr": "05:55",
+       "dep": "05:55"
+      },
+      {
+       "stop": "CATANIA Terminal Bus Via Archimede",
+       "idx": 1,
+       "arr": "06:50",
+       "dep": "06:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p86.A3-5931",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "C O R S E 5 FERIALE 7:45"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MONTEROSSO ETNEO",
+       "idx": 0,
+       "arr": "07:55",
+       "dep": "07:55"
+      },
+      {
+       "stop": "CATANIA Terminal Bus Via Archimede",
+       "idx": 1,
+       "arr": "09:00",
+       "dep": "09:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p86.A4-5932",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "7 FERIALE 14.00"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MONTEROSSO ETNEO",
+       "idx": 0,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "CATANIA Terminal Bus Via Archimede",
+       "idx": 1,
+       "arr": "15:15",
+       "dep": "15:15"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CATANIA Terminal Bus Via Archimede",
+    "MONTEROSSO ETNEO"
+   ],
+   "kms": [
+    0.0,
+    20.4
+   ],
+   "trips": [
+    {
+     "corsa": "p86.R2-5934",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "4 F E R I A L E 8.45"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA Terminal Bus Via Archimede",
+       "idx": 0,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "MONTEROSSO ETNEO",
+       "idx": 1,
+       "arr": "08:35",
+       "dep": "08:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p86.R3-5936",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "C O R S E 6 FERIALE 13.45"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA Terminal Bus Via Archimede",
+       "idx": 0,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "MONTEROSSO ETNEO",
+       "idx": 1,
+       "arr": "13:35",
+       "dep": "13:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p86.R5-5935",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "10 FERIALE -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA Terminal Bus Via Archimede",
+       "idx": 0,
+       "arr": "17:15",
+       "dep": "17:15"
+      },
+      {
+       "stop": "MONTEROSSO ETNEO",
+       "idx": 1,
+       "arr": "18:25",
+       "dep": "18:25"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

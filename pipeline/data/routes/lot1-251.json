@@ -1,0 +1,262 @@
+{
+ "operator": "Atis",
+ "route_id": "lot1-251",
+ "name": "SCIARA - S.GIOVANNI LI GRECI",
+ "short_name": "251",
+ "source": "t1-tabelle_-orari_da_linea_1_a_linea_297.pdf#p18",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "SCIARA (P. CASTEL REALE)",
+    "SAN GOVANNI LI GRECI (SAN GIOVANNI LI GRECI)",
+    "CACCAMO (PORTA EURACEA)"
+   ],
+   "kms": [
+    0.0,
+    4.8,
+    13.2
+   ],
+   "trips": [
+    {
+     "corsa": "p18.A1-3623",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "In P e r io do F e r ia le"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SCIARA (P. CASTEL REALE)",
+       "idx": 0,
+       "arr": "06:45",
+       "dep": "06:45"
+      },
+      {
+       "stop": "SAN GOVANNI LI GRECI (SAN GIOVANNI LI GRECI)",
+       "idx": 1,
+       "arr": "06:55",
+       "dep": "06:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p18.A2-3624",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SCIARA (P. CASTEL REALE)",
+       "idx": 0,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "SAN GOVANNI LI GRECI (SAN GIOVANNI LI GRECI)",
+       "idx": 1,
+       "arr": "07:50",
+       "dep": "07:50"
+      },
+      {
+       "stop": "CACCAMO (PORTA EURACEA)",
+       "idx": 2,
+       "arr": "08:10",
+       "dep": "08:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p18.A3-3625",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SCIARA (P. CASTEL REALE)",
+       "idx": 0,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "SAN GOVANNI LI GRECI (SAN GIOVANNI LI GRECI)",
+       "idx": 1,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "CACCAMO (PORTA EURACEA)",
+       "idx": 2,
+       "arr": "14:30",
+       "dep": "14:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p18.A4-3626",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "In P e r i o do F e r i a le"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SCIARA (P. CASTEL REALE)",
+       "idx": 0,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "SAN GOVANNI LI GRECI (SAN GIOVANNI LI GRECI)",
+       "idx": 1,
+       "arr": "15:10",
+       "dep": "15:10"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CACCAMO (PORTA EURACEA)",
+    "SAN GOVANNI LI GRECI (SAN GIOVANNI LI GRECI)",
+    "SCIARA (P. CASTEL REALE)"
+   ],
+   "kms": [
+    0.0,
+    8.4,
+    13.2
+   ],
+   "trips": [
+    {
+     "corsa": "p18.R1-3627",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "In P e r i o do F e r i a le"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SAN GOVANNI LI GRECI (SAN GIOVANNI LI GRECI)",
+       "idx": 1,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "SCIARA (P. CASTEL REALE)",
+       "idx": 2,
+       "arr": "07:10",
+       "dep": "07:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p18.R2-3628",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CACCAMO (PORTA EURACEA)",
+       "idx": 0,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "SAN GOVANNI LI GRECI (SAN GIOVANNI LI GRECI)",
+       "idx": 1,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "SCIARA (P. CASTEL REALE)",
+       "idx": 2,
+       "arr": "08:40",
+       "dep": "08:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p18.R3-3629",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r i o d o s c o l a s t i co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CACCAMO (PORTA EURACEA)",
+       "idx": 0,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "SAN GOVANNI LI GRECI (SAN GIOVANNI LI GRECI)",
+       "idx": 1,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "SCIARA (P. CASTEL REALE)",
+       "idx": 2,
+       "arr": "15:00",
+       "dep": "15:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p18.R4-3630",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "In P e r i o do F e r i a le"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SAN GOVANNI LI GRECI (SAN GIOVANNI LI GRECI)",
+       "idx": 1,
+       "arr": "15:10",
+       "dep": "15:10"
+      },
+      {
+       "stop": "SCIARA (P. CASTEL REALE)",
+       "idx": 2,
+       "arr": "15:20",
+       "dep": "15:20"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

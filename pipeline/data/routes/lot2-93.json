@@ -1,0 +1,760 @@
+{
+ "operator": "Autonoleggi D'Amico S.A.S di Nicosia Grazia & C",
+ "route_id": "lot2-93",
+ "name": "GROTTA COMUNE (TRECASTAGNI) - CAPO MULINI",
+ "short_name": "93",
+ "source": "orario_b2d178879e.pdf#p8",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "TRECASTAGNI (GROTTA COMUNE SP N°)",
+    "TRECASTAGNI (CONTRADA TREMONTI)",
+    "TRECASTAGNI (PIAZZA ALDO MORO)",
+    "SAN GIOVANNI LA PUNTA (PIAZZA LUCIA MANGANO)",
+    "VALVERDE (PIAZZA DEL SANTUARIO)",
+    "SAN GREGORIO DI CATANIA (Via Umberto)",
+    "ACICASTELLO (FICARAZZI - V.Tripoli)",
+    "ACICASTELLO (VIA REMARTINO113)",
+    "ACICASTELLO (ACITREZZA SS114)",
+    "ACIREALE (CAPOMULINI SP N°)"
+   ],
+   "kms": [
+    0.0,
+    2.5,
+    4.5,
+    10.5,
+    13.5,
+    15.5,
+    18.5,
+    21.5,
+    23.5,
+    25.5
+   ],
+   "trips": [
+    {
+     "corsa": "p8.A1-893",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r i o d o s c o l a s ti co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TRECASTAGNI (GROTTA COMUNE SP N°)",
+       "idx": 0,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "TRECASTAGNI (CONTRADA TREMONTI)",
+       "idx": 1,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "TRECASTAGNI (PIAZZA ALDO MORO)",
+       "idx": 2,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "SAN GIOVANNI LA PUNTA (PIAZZA LUCIA MANGANO)",
+       "idx": 3,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "VALVERDE (PIAZZA DEL SANTUARIO)",
+       "idx": 4,
+       "arr": "07:55",
+       "dep": "07:55"
+      },
+      {
+       "stop": "SAN GREGORIO DI CATANIA (Via Umberto)",
+       "idx": 5,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "ACICASTELLO (FICARAZZI - V.Tripoli)",
+       "idx": 6,
+       "arr": "08:05",
+       "dep": "08:05"
+      },
+      {
+       "stop": "ACICASTELLO (VIA REMARTINO113)",
+       "idx": 7,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "ACICASTELLO (ACITREZZA SS114)",
+       "idx": 8,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "ACIREALE (CAPOMULINI SP N°)",
+       "idx": 9,
+       "arr": "08:20",
+       "dep": "08:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p8.A2-894",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": {
+       "from": "01/07",
+       "to": "30/09"
+      },
+      "raw": "G io r n a li e ra d a l 01 / 0 7 a l 3 0 / 0 9"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TRECASTAGNI (GROTTA COMUNE SP N°)",
+       "idx": 0,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "TRECASTAGNI (CONTRADA TREMONTI)",
+       "idx": 1,
+       "arr": "09:05",
+       "dep": "09:05"
+      },
+      {
+       "stop": "TRECASTAGNI (PIAZZA ALDO MORO)",
+       "idx": 2,
+       "arr": "09:10",
+       "dep": "09:10"
+      },
+      {
+       "stop": "SAN GIOVANNI LA PUNTA (PIAZZA LUCIA MANGANO)",
+       "idx": 3,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "VALVERDE (PIAZZA DEL SANTUARIO)",
+       "idx": 4,
+       "arr": "09:20",
+       "dep": "09:20"
+      },
+      {
+       "stop": "SAN GREGORIO DI CATANIA (Via Umberto)",
+       "idx": 5,
+       "arr": "09:25",
+       "dep": "09:25"
+      },
+      {
+       "stop": "ACICASTELLO (FICARAZZI - V.Tripoli)",
+       "idx": 6,
+       "arr": "09:35",
+       "dep": "09:35"
+      },
+      {
+       "stop": "ACICASTELLO (VIA REMARTINO113)",
+       "idx": 7,
+       "arr": "09:50",
+       "dep": "09:50"
+      },
+      {
+       "stop": "ACICASTELLO (ACITREZZA SS114)",
+       "idx": 8,
+       "arr": "09:55",
+       "dep": "09:55"
+      },
+      {
+       "stop": "ACIREALE (CAPOMULINI SP N°)",
+       "idx": 9,
+       "arr": "10:00",
+       "dep": "10:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p8.A3-895",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r i o d o s c o l a s ti co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TRECASTAGNI (GROTTA COMUNE SP N°)",
+       "idx": 0,
+       "arr": "10:45",
+       "dep": "10:45"
+      },
+      {
+       "stop": "TRECASTAGNI (CONTRADA TREMONTI)",
+       "idx": 1,
+       "arr": "10:50",
+       "dep": "10:50"
+      },
+      {
+       "stop": "TRECASTAGNI (PIAZZA ALDO MORO)",
+       "idx": 2,
+       "arr": "10:55",
+       "dep": "10:55"
+      },
+      {
+       "stop": "SAN GIOVANNI LA PUNTA (PIAZZA LUCIA MANGANO)",
+       "idx": 3,
+       "arr": "11:10",
+       "dep": "11:10"
+      },
+      {
+       "stop": "VALVERDE (PIAZZA DEL SANTUARIO)",
+       "idx": 4,
+       "arr": "11:20",
+       "dep": "11:20"
+      },
+      {
+       "stop": "SAN GREGORIO DI CATANIA (Via Umberto)",
+       "idx": 5,
+       "arr": "11:25",
+       "dep": "11:25"
+      },
+      {
+       "stop": "ACICASTELLO (FICARAZZI - V.Tripoli)",
+       "idx": 6,
+       "arr": "11:30",
+       "dep": "11:30"
+      },
+      {
+       "stop": "ACICASTELLO (VIA REMARTINO113)",
+       "idx": 7,
+       "arr": "11:35",
+       "dep": "11:35"
+      },
+      {
+       "stop": "ACICASTELLO (ACITREZZA SS114)",
+       "idx": 8,
+       "arr": "11:40",
+       "dep": "11:40"
+      },
+      {
+       "stop": "ACIREALE (CAPOMULINI SP N°)",
+       "idx": 9,
+       "arr": "11:45",
+       "dep": "11:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p8.A4-896",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r i o d o s c o l a s ti co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TRECASTAGNI (GROTTA COMUNE SP N°)",
+       "idx": 0,
+       "arr": "13:05",
+       "dep": "13:05"
+      },
+      {
+       "stop": "TRECASTAGNI (CONTRADA TREMONTI)",
+       "idx": 1,
+       "arr": "13:10",
+       "dep": "13:10"
+      },
+      {
+       "stop": "TRECASTAGNI (PIAZZA ALDO MORO)",
+       "idx": 2,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "SAN GIOVANNI LA PUNTA (PIAZZA LUCIA MANGANO)",
+       "idx": 3,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "VALVERDE (PIAZZA DEL SANTUARIO)",
+       "idx": 4,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "SAN GREGORIO DI CATANIA (Via Umberto)",
+       "idx": 5,
+       "arr": "13:45",
+       "dep": "13:45"
+      },
+      {
+       "stop": "ACICASTELLO (FICARAZZI - V.Tripoli)",
+       "idx": 6,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "ACICASTELLO (VIA REMARTINO113)",
+       "idx": 7,
+       "arr": "13:55",
+       "dep": "13:55"
+      },
+      {
+       "stop": "ACICASTELLO (ACITREZZA SS114)",
+       "idx": 8,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "ACIREALE (CAPOMULINI SP N°)",
+       "idx": 9,
+       "arr": "14:05",
+       "dep": "14:05"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "ACIREALE (CAPOMULINI SP N°)",
+    "ACICASTELLO (ACITREZZA SS114)",
+    "ACICASTELLO (VIA REMARTINO113)",
+    "ACICASTELLO (FICARAZZI - V.Tripoli)",
+    "SAN GREGORIO DI CATANIA (Via Umberto)",
+    "VALVERDE (PIAZZA DEL SANTUARIO)",
+    "SAN GIOVANNI LA PUNTA (PIAZZA LUCIA MANGANO)",
+    "TRECASTAGNI (PIAZZA ALDO MORO)",
+    "TRECASTAGNI (CONTRADA TREMONTI)",
+    "TRECASTAGNI (GROTTA COMUNE SP N°)"
+   ],
+   "kms": [
+    0.0,
+    2.5,
+    4.5,
+    10.5,
+    13.5,
+    15.5,
+    18.5,
+    21.5,
+    23.5,
+    25.5
+   ],
+   "trips": [
+    {
+     "corsa": "p8.R1-8604",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "15/09",
+       "to": "31/05"
+      },
+      "raw": "Feria l e d a l 1 5/09 a l 3 1 / 0 5"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SAN GREGORIO DI CATANIA (Via Umberto)",
+       "idx": 4,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "VALVERDE (PIAZZA DEL SANTUARIO)",
+       "idx": 5,
+       "arr": "07:05",
+       "dep": "07:05"
+      },
+      {
+       "stop": "SAN GIOVANNI LA PUNTA (PIAZZA LUCIA MANGANO)",
+       "idx": 6,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "TRECASTAGNI (PIAZZA ALDO MORO)",
+       "idx": 7,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "TRECASTAGNI (CONTRADA TREMONTI)",
+       "idx": 8,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "TRECASTAGNI (GROTTA COMUNE SP N°)",
+       "idx": 9,
+       "arr": "07:40",
+       "dep": "07:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p8.R2-897",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r i o d o s c o l a s ti co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE (CAPOMULINI SP N°)",
+       "idx": 0,
+       "arr": "08:59",
+       "dep": "08:59"
+      },
+      {
+       "stop": "ACICASTELLO (ACITREZZA SS114)",
+       "idx": 1,
+       "arr": "09:05",
+       "dep": "09:05"
+      },
+      {
+       "stop": "ACICASTELLO (VIA REMARTINO113)",
+       "idx": 2,
+       "arr": "09:10",
+       "dep": "09:10"
+      },
+      {
+       "stop": "ACICASTELLO (FICARAZZI - V.Tripoli)",
+       "idx": 3,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "SAN GREGORIO DI CATANIA (Via Umberto)",
+       "idx": 4,
+       "arr": "09:20",
+       "dep": "09:20"
+      },
+      {
+       "stop": "VALVERDE (PIAZZA DEL SANTUARIO)",
+       "idx": 5,
+       "arr": "09:25",
+       "dep": "09:25"
+      },
+      {
+       "stop": "SAN GIOVANNI LA PUNTA (PIAZZA LUCIA MANGANO)",
+       "idx": 6,
+       "arr": "09:35",
+       "dep": "09:35"
+      },
+      {
+       "stop": "TRECASTAGNI (PIAZZA ALDO MORO)",
+       "idx": 7,
+       "arr": "09:50",
+       "dep": "09:50"
+      },
+      {
+       "stop": "TRECASTAGNI (CONTRADA TREMONTI)",
+       "idx": 8,
+       "arr": "09:55",
+       "dep": "09:55"
+      },
+      {
+       "stop": "TRECASTAGNI (GROTTA COMUNE SP N°)",
+       "idx": 9,
+       "arr": "10:00",
+       "dep": "10:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p8.R3-899",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r i o d o s c o l a s ti co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE (CAPOMULINI SP N°)",
+       "idx": 0,
+       "arr": "11:55",
+       "dep": "11:55"
+      },
+      {
+       "stop": "ACICASTELLO (ACITREZZA SS114)",
+       "idx": 1,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "ACICASTELLO (VIA REMARTINO113)",
+       "idx": 2,
+       "arr": "12:05",
+       "dep": "12:05"
+      },
+      {
+       "stop": "ACICASTELLO (FICARAZZI - V.Tripoli)",
+       "idx": 3,
+       "arr": "12:10",
+       "dep": "12:10"
+      },
+      {
+       "stop": "SAN GREGORIO DI CATANIA (Via Umberto)",
+       "idx": 4,
+       "arr": "12:15",
+       "dep": "12:15"
+      },
+      {
+       "stop": "VALVERDE (PIAZZA DEL SANTUARIO)",
+       "idx": 5,
+       "arr": "12:20",
+       "dep": "12:20"
+      },
+      {
+       "stop": "SAN GIOVANNI LA PUNTA (PIAZZA LUCIA MANGANO)",
+       "idx": 6,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "TRECASTAGNI (PIAZZA ALDO MORO)",
+       "idx": 7,
+       "arr": "12:45",
+       "dep": "12:45"
+      },
+      {
+       "stop": "TRECASTAGNI (CONTRADA TREMONTI)",
+       "idx": 8,
+       "arr": "12:50",
+       "dep": "12:50"
+      },
+      {
+       "stop": "TRECASTAGNI (GROTTA COMUNE SP N°)",
+       "idx": 9,
+       "arr": "12:55",
+       "dep": "12:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p8.R4-8603",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": {
+       "from": "15/09",
+       "to": "31/05"
+      },
+      "raw": "Feria l e d a l 1 5/09 a l 3 1 / 0 5"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SAN GREGORIO DI CATANIA (Via Umberto)",
+       "idx": 4,
+       "arr": "12:45",
+       "dep": "12:45"
+      },
+      {
+       "stop": "VALVERDE (PIAZZA DEL SANTUARIO)",
+       "idx": 5,
+       "arr": "12:50",
+       "dep": "12:50"
+      },
+      {
+       "stop": "SAN GIOVANNI LA PUNTA (PIAZZA LUCIA MANGANO)",
+       "idx": 6,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "TRECASTAGNI (PIAZZA ALDO MORO)",
+       "idx": 7,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "TRECASTAGNI (CONTRADA TREMONTI)",
+       "idx": 8,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "TRECASTAGNI (GROTTA COMUNE SP N°)",
+       "idx": 9,
+       "arr": "13:25",
+       "dep": "13:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p8.R5-898",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": {
+       "from": "01/07",
+       "to": "30/09"
+      },
+      "raw": "G io r n a li e ra d a l 01 / 0 7 a l 3 0 / 0 9"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE (CAPOMULINI SP N°)",
+       "idx": 0,
+       "arr": "12:50",
+       "dep": "12:50"
+      },
+      {
+       "stop": "ACICASTELLO (ACITREZZA SS114)",
+       "idx": 1,
+       "arr": "12:55",
+       "dep": "12:55"
+      },
+      {
+       "stop": "ACICASTELLO (VIA REMARTINO113)",
+       "idx": 2,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "ACICASTELLO (FICARAZZI - V.Tripoli)",
+       "idx": 3,
+       "arr": "13:05",
+       "dep": "13:05"
+      },
+      {
+       "stop": "SAN GREGORIO DI CATANIA (Via Umberto)",
+       "idx": 4,
+       "arr": "13:10",
+       "dep": "13:10"
+      },
+      {
+       "stop": "VALVERDE (PIAZZA DEL SANTUARIO)",
+       "idx": 5,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "SAN GIOVANNI LA PUNTA (PIAZZA LUCIA MANGANO)",
+       "idx": 6,
+       "arr": "13:25",
+       "dep": "13:25"
+      },
+      {
+       "stop": "TRECASTAGNI (PIAZZA ALDO MORO)",
+       "idx": 7,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "TRECASTAGNI (CONTRADA TREMONTI)",
+       "idx": 8,
+       "arr": "13:45",
+       "dep": "13:45"
+      },
+      {
+       "stop": "TRECASTAGNI (GROTTA COMUNE SP N°)",
+       "idx": 9,
+       "arr": "13:50",
+       "dep": "13:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p8.R6-900",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "F e r i a le i n P e r i o d o s c o l a s ti co"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE (CAPOMULINI SP N°)",
+       "idx": 0,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "ACICASTELLO (ACITREZZA SS114)",
+       "idx": 1,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "ACICASTELLO (VIA REMARTINO113)",
+       "idx": 2,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "ACICASTELLO (FICARAZZI - V.Tripoli)",
+       "idx": 3,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "SAN GREGORIO DI CATANIA (Via Umberto)",
+       "idx": 4,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "VALVERDE (PIAZZA DEL SANTUARIO)",
+       "idx": 5,
+       "arr": "14:35",
+       "dep": "14:35"
+      },
+      {
+       "stop": "SAN GIOVANNI LA PUNTA (PIAZZA LUCIA MANGANO)",
+       "idx": 6,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "TRECASTAGNI (PIAZZA ALDO MORO)",
+       "idx": 7,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "TRECASTAGNI (CONTRADA TREMONTI)",
+       "idx": 8,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "TRECASTAGNI (GROTTA COMUNE SP N°)",
+       "idx": 9,
+       "arr": "15:10",
+       "dep": "15:10"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

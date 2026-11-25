@@ -1,0 +1,322 @@
+{
+ "operator": "Consorzio Stabile Siciliano Mobilità Est (Lotto 2)",
+ "route_id": "lot2-n9",
+ "name": "AEROPORTO-CATANIA-TAORMINA",
+ "short_name": "N9",
+ "source": "orario_b2d178879e.pdf#p99",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "AEROPORTO (Fontanarossa)",
+    "CATANIA (Via D'Amico/Archimede) P.",
+    "RECANATI (Viale Dionisio-Terminal Bus)",
+    "GIARDINI (Via Umberto SS 114/San Giovanni)",
+    "TAORMINA (P.zza L. Pirandello)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p99.T1R1-233",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": {
+       "from": "1/6",
+       "to": "30/9"
+      },
+      "raw": "1 Agg. GIORNALIERA 1/6-30/9"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AEROPORTO (Fontanarossa)",
+       "idx": 0,
+       "arr": "10:45",
+       "dep": "10:45"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 1,
+       "arr": "11:00",
+       "dep": "11:00"
+      },
+      {
+       "stop": "RECANATI (Viale Dionisio-Terminal Bus)",
+       "idx": 2,
+       "arr": "11:45",
+       "dep": "11:45"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 3,
+       "arr": "11:55",
+       "dep": "11:55"
+      },
+      {
+       "stop": "TAORMINA (P.zza L. Pirandello)",
+       "idx": 4,
+       "arr": "12:10",
+       "dep": "12:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p99.T1R2-234",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": {
+       "from": "1/4",
+       "to": "31/10"
+      },
+      "raw": "3 Agg. G I O R N A L I E RA 1/4-31/10"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AEROPORTO (Fontanarossa)",
+       "idx": 0,
+       "arr": "18:45",
+       "dep": "18:45"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 1,
+       "arr": "19:00",
+       "dep": "19:00"
+      },
+      {
+       "stop": "RECANATI (Viale Dionisio-Terminal Bus)",
+       "idx": 2,
+       "arr": "19:45",
+       "dep": "19:45"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 3,
+       "arr": "19:55",
+       "dep": "19:55"
+      },
+      {
+       "stop": "TAORMINA (P.zza L. Pirandello)",
+       "idx": 4,
+       "arr": "20:10",
+       "dep": "20:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p99.T1R3-236",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": {
+       "from": "1/6",
+       "to": "30/9"
+      },
+      "raw": "CORSE 5 7 Agg. G I O R N A L I E RA 1/6-30/9"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "AEROPORTO (Fontanarossa)",
+       "idx": 0,
+       "arr": "19:00",
+       "dep": "19:00"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) P.",
+       "idx": 1,
+       "arr": "19:15",
+       "dep": "19:15"
+      },
+      {
+       "stop": "RECANATI (Viale Dionisio-Terminal Bus)",
+       "idx": 2,
+       "arr": "20:00",
+       "dep": "20:00"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 3,
+       "arr": "20:10",
+       "dep": "20:10"
+      },
+      {
+       "stop": "TAORMINA (P.zza L. Pirandello)",
+       "idx": 4,
+       "arr": "20:25",
+       "dep": "20:25"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "TAORMINA (P.zza L. Pirandello)",
+    "GIARDINI (Via Umberto SS 114/San Giovanni)",
+    "RECANATI (Viale Dionisio-Terminal Bus)",
+    "CATANIA (Via D'Amico/Archimede) A.",
+    "AEROPORTO (Fontanarossa)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p99.T2R1-239",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": {
+       "from": "1/6",
+       "to": "30/9"
+      },
+      "raw": "2 Agg. GIORNALIERA 1/6-30/9"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TAORMINA (P.zza L. Pirandello)",
+       "idx": 0,
+       "arr": "11:15",
+       "dep": "11:15"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 1,
+       "arr": "11:30",
+       "dep": "11:30"
+      },
+      {
+       "stop": "RECANATI (Viale Dionisio-Terminal Bus)",
+       "idx": 2,
+       "arr": "11:40",
+       "dep": "11:40"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 3,
+       "arr": "12:25",
+       "dep": "12:25"
+      },
+      {
+       "stop": "AEROPORTO (Fontanarossa)",
+       "idx": 4,
+       "arr": "12:40",
+       "dep": "12:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p99.T2R2-243",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": {
+       "from": "1/4",
+       "to": "31/10"
+      },
+      "raw": "4 Agg. G I O R N A L I E RA 1/4-31/10"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TAORMINA (P.zza L. Pirandello)",
+       "idx": 0,
+       "arr": "17:45",
+       "dep": "17:45"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 1,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "RECANATI (Viale Dionisio-Terminal Bus)",
+       "idx": 2,
+       "arr": "18:10",
+       "dep": "18:10"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 3,
+       "arr": "18:55",
+       "dep": "18:55"
+      },
+      {
+       "stop": "AEROPORTO (Fontanarossa)",
+       "idx": 4,
+       "arr": "19:10",
+       "dep": "19:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p99.T2R3-242",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": {
+       "from": "1/6",
+       "to": "30/9"
+      },
+      "raw": "CORSE 6 8 Agg. G I O R N A L I E RA 1/6-30/9"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TAORMINA (P.zza L. Pirandello)",
+       "idx": 0,
+       "arr": "19:00",
+       "dep": "19:00"
+      },
+      {
+       "stop": "GIARDINI (Via Umberto SS 114/San Giovanni)",
+       "idx": 1,
+       "arr": "19:15",
+       "dep": "19:15"
+      },
+      {
+       "stop": "RECANATI (Viale Dionisio-Terminal Bus)",
+       "idx": 2,
+       "arr": "19:25",
+       "dep": "19:25"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede) A.",
+       "idx": 3,
+       "arr": "20:10",
+       "dep": "20:10"
+      },
+      {
+       "stop": "AEROPORTO (Fontanarossa)",
+       "idx": 4,
+       "arr": "20:25",
+       "dep": "20:25"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

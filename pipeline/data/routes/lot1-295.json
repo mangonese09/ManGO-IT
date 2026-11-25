@@ -1,0 +1,132 @@
+{
+ "operator": "Cracchiolo",
+ "route_id": "lot1-295",
+ "name": "PARTINICO - CAMPOREALE",
+ "short_name": "295",
+ "source": "t1-tabelle_-orari_da_linea_1_a_linea_297.pdf#p38",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "CAMPOREALE (Piazza delle Mimose)",
+    "MONREALE (CAMPOREALE - Bivio Rapitalà)",
+    "MONREALE (GRISI' - Corso Vittorio Emanuele)",
+    "PARTINICO (IIS Corbino -via Taranto,4)",
+    "PARTINICO (Piazza Duomo)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p38.A1-4189",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CAMPOREALE (Piazza delle Mimose)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "MONREALE (CAMPOREALE - Bivio Rapitalà)",
+       "idx": 1,
+       "arr": "07:22",
+       "dep": "07:22"
+      },
+      {
+       "stop": "MONREALE (GRISI' - Corso Vittorio Emanuele)",
+       "idx": 2,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "PARTINICO (IIS Corbino -via Taranto,4)",
+       "idx": 3,
+       "arr": "07:52",
+       "dep": "07:52"
+      },
+      {
+       "stop": "PARTINICO (Piazza Duomo)",
+       "idx": 4,
+       "arr": "08:00",
+       "dep": "08:00"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "PARTINICO (Piazza Duomo)",
+    "PARTINICO (IIS Corbino -via Taranto,4)",
+    "MONREALE (GRISI' - Corso Vittorio Emanuele)",
+    "MONREALE (CAMPOREALE - Bivio Rapitalà)",
+    "CAMPOREALE (Piazza delle Mimose)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p38.R1-4187",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PARTINICO (Piazza Duomo)",
+       "idx": 0,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "PARTINICO (IIS Corbino -via Taranto,4)",
+       "idx": 1,
+       "arr": "14:39",
+       "dep": "14:39"
+      },
+      {
+       "stop": "MONREALE (GRISI' - Corso Vittorio Emanuele)",
+       "idx": 2,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "MONREALE (CAMPOREALE - Bivio Rapitalà)",
+       "idx": 3,
+       "arr": "15:13",
+       "dep": "15:13"
+      },
+      {
+       "stop": "CAMPOREALE (Piazza delle Mimose)",
+       "idx": 4,
+       "arr": "15:35",
+       "dep": "15:35"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

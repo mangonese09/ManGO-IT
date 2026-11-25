@@ -1,0 +1,482 @@
+{
+ "operator": "Calatina Bus Service",
+ "route_id": "lot2-132",
+ "name": "CENTURIPE - CATANIA",
+ "short_name": "132",
+ "source": "orario_b2d178879e.pdf#p31",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "CENTURIPE (VIA DUCA D'AOSTA - CENTURIPE)",
+    "S.M LICODIA (SS121 EX STAZ - FERMATA SCHETTINO)",
+    "PATERNO (CORSO ITALIA - FERMATA PATERNO')",
+    "CATANIA (PIAZZA GIOVANNI XXIII CATANIA - FERMATA)"
+   ],
+   "kms": [
+    0.0,
+    21.4,
+    24.7,
+    46.5
+   ],
+   "trips": [
+    {
+     "corsa": "p31.A1-1653",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CENTURIPE (VIA DUCA D'AOSTA - CENTURIPE)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "S.M LICODIA (SS121 EX STAZ - FERMATA SCHETTINO)",
+       "idx": 1,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "PATERNO (CORSO ITALIA - FERMATA PATERNO')",
+       "idx": 2,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "CATANIA (PIAZZA GIOVANNI XXIII CATANIA - FERMATA)",
+       "idx": 3,
+       "arr": "08:15",
+       "dep": "08:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p31.A2-1655",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CENTURIPE (VIA DUCA D'AOSTA - CENTURIPE)",
+       "idx": 0,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "S.M LICODIA (SS121 EX STAZ - FERMATA SCHETTINO)",
+       "idx": 1,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "PATERNO (CORSO ITALIA - FERMATA PATERNO')",
+       "idx": 2,
+       "arr": "07:55",
+       "dep": "07:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p31.A3-8333",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CENTURIPE (VIA DUCA D'AOSTA - CENTURIPE)",
+       "idx": 0,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "S.M LICODIA (SS121 EX STAZ - FERMATA SCHETTINO)",
+       "idx": 1,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "PATERNO (CORSO ITALIA - FERMATA PATERNO')",
+       "idx": 2,
+       "arr": "07:50",
+       "dep": "07:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p31.A4-8334",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CENTURIPE (VIA DUCA D'AOSTA - CENTURIPE)",
+       "idx": 0,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "S.M LICODIA (SS121 EX STAZ - FERMATA SCHETTINO)",
+       "idx": 1,
+       "arr": "07:55",
+       "dep": "07:55"
+      },
+      {
+       "stop": "PATERNO (CORSO ITALIA - FERMATA PATERNO')",
+       "idx": 2,
+       "arr": "08:00",
+       "dep": "08:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p31.A5-8335",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CENTURIPE (VIA DUCA D'AOSTA - CENTURIPE)",
+       "idx": 0,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "S.M LICODIA (SS121 EX STAZ - FERMATA SCHETTINO)",
+       "idx": 1,
+       "arr": "07:55",
+       "dep": "07:55"
+      },
+      {
+       "stop": "PATERNO (CORSO ITALIA - FERMATA PATERNO')",
+       "idx": 2,
+       "arr": "08:05",
+       "dep": "08:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p31.A6",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "AGGIUNTA CALATINA 1 Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PATERNO (CORSO ITALIA - FERMATA PATERNO')",
+       "idx": 2,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "CATANIA (PIAZZA GIOVANNI XXIII CATANIA - FERMATA)",
+       "idx": 3,
+       "arr": "08:45",
+       "dep": "08:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p31.A7-1659",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "NTA CALATINA 1) Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CENTURIPE (VIA DUCA D'AOSTA - CENTURIPE)",
+       "idx": 0,
+       "arr": "15:30",
+       "dep": "15:30"
+      },
+      {
+       "stop": "S.M LICODIA (SS121 EX STAZ - FERMATA SCHETTINO)",
+       "idx": 1,
+       "arr": "15:55",
+       "dep": "15:55"
+      },
+      {
+       "stop": "PATERNO (CORSO ITALIA - FERMATA PATERNO')",
+       "idx": 2,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "CATANIA (PIAZZA GIOVANNI XXIII CATANIA - FERMATA)",
+       "idx": 3,
+       "arr": "16:45",
+       "dep": "16:45"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CATANIA (PIAZZA GIOVANNI XXIII CATANIA - FERMATA)",
+    "PATERNO (CORSO ITALIA - FERMATA PATERNO')",
+    "S.M LICODIA (SS121 EX STAZ - FERMATA SCHETTINO)",
+    "CENTURIPE (VIA DUCA D'AOSTA - CENTURIPE)"
+   ],
+   "kms": [
+    0.0,
+    21.8,
+    25.5,
+    46.5
+   ],
+   "trips": [
+    {
+     "corsa": "p31.R1",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "AGGIUNTA CALATINA 2 Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (PIAZZA GIOVANNI XXIII CATANIA - FERMATA)",
+       "idx": 0,
+       "arr": "12:45",
+       "dep": "12:45"
+      },
+      {
+       "stop": "PATERNO (CORSO ITALIA - FERMATA PATERNO')",
+       "idx": 1,
+       "arr": "13:25",
+       "dep": "13:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p31.R2-1666",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PATERNO (CORSO ITALIA - FERMATA PATERNO')",
+       "idx": 1,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "S.M LICODIA (SS121 EX STAZ - FERMATA SCHETTINO)",
+       "idx": 2,
+       "arr": "13:35",
+       "dep": "13:35"
+      },
+      {
+       "stop": "CENTURIPE (VIA DUCA D'AOSTA - CENTURIPE)",
+       "idx": 3,
+       "arr": "14:00",
+       "dep": "14:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p31.R3-8336",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "S.M LICODIA (SS121 EX STAZ - FERMATA SCHETTINO)",
+       "idx": 2,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "CENTURIPE (VIA DUCA D'AOSTA - CENTURIPE)",
+       "idx": 3,
+       "arr": "14:15",
+       "dep": "14:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p31.R4-8337",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PATERNO (CORSO ITALIA - FERMATA PATERNO')",
+       "idx": 1,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "S.M LICODIA (SS121 EX STAZ - FERMATA SCHETTINO)",
+       "idx": 2,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "CENTURIPE (VIA DUCA D'AOSTA - CENTURIPE)",
+       "idx": 3,
+       "arr": "14:30",
+       "dep": "14:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p31.R5-8338",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PATERNO (CORSO ITALIA - FERMATA PATERNO')",
+       "idx": 1,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "S.M LICODIA (SS121 EX STAZ - FERMATA SCHETTINO)",
+       "idx": 2,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "CENTURIPE (VIA DUCA D'AOSTA - CENTURIPE)",
+       "idx": 3,
+       "arr": "14:30",
+       "dep": "14:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p31.R6-1660",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (PIAZZA GIOVANNI XXIII CATANIA - FERMATA)",
+       "idx": 0,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "PATERNO (CORSO ITALIA - FERMATA PATERNO')",
+       "idx": 1,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "S.M LICODIA (SS121 EX STAZ - FERMATA SCHETTINO)",
+       "idx": 2,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "CENTURIPE (VIA DUCA D'AOSTA - CENTURIPE)",
+       "idx": 3,
+       "arr": "15:15",
+       "dep": "15:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p31.R7-1662",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (PIAZZA GIOVANNI XXIII CATANIA - FERMATA)",
+       "idx": 0,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "PATERNO (CORSO ITALIA - FERMATA PATERNO')",
+       "idx": 1,
+       "arr": "19:15",
+       "dep": "19:15"
+      },
+      {
+       "stop": "S.M LICODIA (SS121 EX STAZ - FERMATA SCHETTINO)",
+       "idx": 2,
+       "arr": "19:20",
+       "dep": "19:20"
+      },
+      {
+       "stop": "CENTURIPE (VIA DUCA D'AOSTA - CENTURIPE)",
+       "idx": 3,
+       "arr": "19:45",
+       "dep": "19:45"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,100 @@
+{
+ "operator": "Adranone",
+ "route_id": "lot1-1",
+ "name": "SAMBUCA DI SICILIA - PARTANNA",
+ "short_name": "1",
+ "source": "t1-tabelle_-orari_da_linea_1_a_linea_297.pdf#p1",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "CASTELVETRANO (VIA DEI TEMPLI)",
+    "CAMPOBELLO DI MAZARA (VIA VITTORIO EMANUELE II° 237)",
+    "MAZARA DEL VALLO (PIAZZALE GIOVAMBATTISTA QUINCI)"
+   ],
+   "kms": [
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p1.A1",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "1 BIS BIS) Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CASTELVETRANO (VIA DEI TEMPLI)",
+       "idx": 0,
+       "arr": "08:05",
+       "dep": "08:05"
+      },
+      {
+       "stop": "CAMPOBELLO DI MAZARA (VIA VITTORIO EMANUELE II° 237)",
+       "idx": 1,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "MAZARA DEL VALLO (PIAZZALE GIOVAMBATTISTA QUINCI)",
+       "idx": 2,
+       "arr": "08:55",
+       "dep": "08:55"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "MAZARA DEL VALLO (PIAZZALE GIOVAMBATTISTA QUINCI)",
+    "CAMPOBELLO DI MAZARA (VIA VITTORIO EMANUELE II° 237)",
+    "CASTELVETRANO (VIA DEI TEMPLI)"
+   ],
+   "kms": [
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p1.R1",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "2 BIS BIS) Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MAZARA DEL VALLO (PIAZZALE GIOVAMBATTISTA QUINCI)",
+       "idx": 0,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "CAMPOBELLO DI MAZARA (VIA VITTORIO EMANUELE II° 237)",
+       "idx": 1,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "CASTELVETRANO (VIA DEI TEMPLI)",
+       "idx": 2,
+       "arr": "14:40",
+       "dep": "14:40"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

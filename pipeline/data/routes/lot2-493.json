@@ -1,0 +1,126 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "lot2-493",
+ "name": "SORTINO - CARLENTINI - LENTINI STAZIONE",
+ "short_name": "493",
+ "source": "orario_b2d178879e.pdf#p94",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "Sortino (piazza Verga)",
+    "Villasmundo",
+    "Carlentini (via Scavonetti)",
+    "Lentini (piazza Sofisti)",
+    "Lentini (Stazione FS)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p94.A1-7484",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "C O R S E 1 3 5 7 9 FERIALE - - - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Sortino (piazza Verga)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "Villasmundo",
+       "idx": 1,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "Carlentini (via Scavonetti)",
+       "idx": 2,
+       "arr": "07:55",
+       "dep": "07:55"
+      },
+      {
+       "stop": "Lentini (piazza Sofisti)",
+       "idx": 3,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "Lentini (Stazione FS)",
+       "idx": 4,
+       "arr": "08:15",
+       "dep": "08:15"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "Lentini (Stazione FS)",
+    "Lentini (piazza Sofisti)",
+    "Carlentini (via Scavonetti)",
+    "Villasmundo",
+    "Sortino (piazza Verga)"
+   ],
+   "kms": [
+    0.0,
+    0.5,
+    3.8,
+    13.8,
+    42.5
+   ],
+   "trips": [
+    {
+     "corsa": "p94.R1-7486",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "C O R S E 2 4 6 8 10 FERIALE - - - -"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Lentini (Stazione FS)",
+       "idx": 0,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "Carlentini (via Scavonetti)",
+       "idx": 2,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "Villasmundo",
+       "idx": 3,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "Sortino (piazza Verga)",
+       "idx": 4,
+       "arr": "15:40",
+       "dep": "15:40"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

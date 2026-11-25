@@ -1,0 +1,134 @@
+{
+ "operator": "Stassi",
+ "route_id": "lot1-330",
+ "name": "CONTESSA ENTELLINA - BISACQUINO",
+ "short_name": "330",
+ "source": "t2-tabelle_-orari_da_linea_299_a_linea_344.pdf#p28",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "CONTESSA ENTELLINA (Via della Libertà)",
+    "BISACQUINO (C.da Pileri)"
+   ],
+   "kms": [
+    0.0,
+    20.0
+   ],
+   "trips": [
+    {
+     "corsa": "p28.A1-4485",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CONTESSA ENTELLINA (Via della Libertà)",
+       "idx": 0,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "BISACQUINO (C.da Pileri)",
+       "idx": 1,
+       "arr": "08:00",
+       "dep": "08:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p28.A2-4486",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CONTESSA ENTELLINA (Via della Libertà)",
+       "idx": 0,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "BISACQUINO (C.da Pileri)",
+       "idx": 1,
+       "arr": "14:00",
+       "dep": "14:00"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "BISACQUINO (C.da Pileri)",
+    "CONTESSA ENTELLINA (Via della Libertà)"
+   ],
+   "kms": [
+    0.0,
+    20.0
+   ],
+   "trips": [
+    {
+     "corsa": "p28.R1-4488",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "BISACQUINO (C.da Pileri)",
+       "idx": 0,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "CONTESSA ENTELLINA (Via della Libertà)",
+       "idx": 1,
+       "arr": "08:35",
+       "dep": "08:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p28.R2-4489",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "BISACQUINO (C.da Pileri)",
+       "idx": 0,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "CONTESSA ENTELLINA (Via della Libertà)",
+       "idx": 1,
+       "arr": "14:35",
+       "dep": "14:35"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

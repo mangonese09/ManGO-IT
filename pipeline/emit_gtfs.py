@@ -155,8 +155,13 @@ def main():
     skipped = []
     trip_sigs, trip_ids_seen = set(), set()
 
+    # routes the 2026 lot sheets re-publish (dedupe_lots.py): ship the newer copy only
+    sup_path = os.path.join(ROOT, 'data', 'lots-superseded.json')
+    superseded = json.load(open(sup_path, encoding='utf-8')) if os.path.exists(sup_path) else {}
     for f in sorted(os.listdir(ROUTES)):
         route = apply_renames(json.load(open(os.path.join(ROUTES, f), encoding='utf-8')))
+        if route['route_id'] in superseded:
+            continue
         op = route['operator']
         if op not in agencies_seen:
             aid = slug(op)[:24]
@@ -345,7 +350,8 @@ def main():
         'feed_info.txt': (['feed_publisher_name', 'feed_publisher_url', 'feed_lang', 'feed_start_date', 'feed_end_date', 'feed_version', 'feed_contact_email'],
                           [['ManGO:IT', 'https://it.mangonese.dev', 'it',
                             FEED_START.strftime('%Y%m%d'), FEED_END.strftime('%Y%m%d'),
-                            date.today().isoformat(), 'miconsig@gmail.com']]),
+                            # the publisher contact comes from the environment, not the repo
+                            date.today().isoformat(), os.environ.get('MANGOIT_CONTACT', '')]]),
         'attributions.txt': (['attribution_id', 'organization_name', 'is_producer', 'is_operator', 'is_authority', 'attribution_url'],
                              [['1', 'ManGO:IT', 1, 0, 0, 'https://it.mangonese.dev'],
                               ['2', 'Regione Siciliana - Assessorato Infrastrutture e Mobilita', 0, 0, 1, 'https://pti.regione.sicilia.it'],

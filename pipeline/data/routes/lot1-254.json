@@ -1,0 +1,134 @@
+{
+ "operator": "Sommatinese Viaggi",
+ "route_id": "lot1-254",
+ "name": "GIBILMANNA - GRATTERI",
+ "short_name": "254",
+ "source": "t1-tabelle_-orari_da_linea_1_a_linea_297.pdf#p21",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "GIBILMANNA (Largo S. Chiara  - A)",
+    "GRATTERI (Belvedere - A)"
+   ],
+   "kms": [
+    0.0,
+    7.4
+   ],
+   "trips": [
+    {
+     "corsa": "p21.A1-3637",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIBILMANNA (Largo S. Chiara  - A)",
+       "idx": 0,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "GRATTERI (Belvedere - A)",
+       "idx": 1,
+       "arr": "09:45",
+       "dep": "09:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p21.A2-3639",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GIBILMANNA (Largo S. Chiara  - A)",
+       "idx": 0,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "GRATTERI (Belvedere - A)",
+       "idx": 1,
+       "arr": "15:15",
+       "dep": "15:15"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "GRATTERI (Belvedere - A)",
+    "GIBILMANNA (Largo S. Chiara  - A)"
+   ],
+   "kms": [
+    0.0,
+    7.4
+   ],
+   "trips": [
+    {
+     "corsa": "p21.R1-3640",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GRATTERI (Belvedere - A)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "GIBILMANNA (Largo S. Chiara  - A)",
+       "idx": 1,
+       "arr": "07:15",
+       "dep": "07:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p21.R2-3642",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GRATTERI (Belvedere - A)",
+       "idx": 0,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "GIBILMANNA (Largo S. Chiara  - A)",
+       "idx": 1,
+       "arr": "16:15",
+       "dep": "16:15"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

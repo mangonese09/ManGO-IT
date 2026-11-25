@@ -1,0 +1,71 @@
+# Lot sheets parse report
+
+routes 146, trips 1649, non-monotonic (dropped at emit) 22
+
+## Pages not parsed
+
+- t1-tabelle_-orari_da_linea_1_a_linea_297.pdf p7: SAIS (SAIS Autolinee): comes from the SAIS API, skipped
+- t1-tabelle_-orari_da_linea_1_a_linea_297.pdf p8: SAIS (SAIS Autolinee): comes from the SAIS API, skipped
+- t1-tabelle_-orari_da_linea_1_a_linea_297.pdf p9: SAIS (SAIS Autolinee): comes from the SAIS API, skipped
+- t1-tabelle_-orari_da_linea_1_a_linea_297.pdf p10: SAIS (SAIS Autolinee): comes from the SAIS API, skipped
+- t1-tabelle_-orari_da_linea_1_a_linea_297.pdf p11: not a lot sheet (no AUTOLINEA header)
+- t1-tabelle_-orari_da_linea_1_a_linea_297.pdf p24: not a lot sheet (no AUTOLINEA header)
+- t1-tabelle_-orari_da_linea_1_a_linea_297.pdf p25: not a lot sheet (no AUTOLINEA header)
+- t1-tabelle_-orari_da_linea_1_a_linea_297.pdf p26: not a lot sheet (no AUTOLINEA header)
+- t1-tabelle_-orari_da_linea_1_a_linea_297.pdf p27: not a lot sheet (no AUTOLINEA header)
+- t1-tabelle_-orari_da_linea_1_a_linea_297.pdf p28: not a lot sheet (no AUTOLINEA header)
+- t1-tabelle_-orari_da_linea_1_a_linea_297.pdf p29: not a lot sheet (no AUTOLINEA header)
+- t1-tabelle_-orari_da_linea_1_a_linea_297.pdf p30: not a lot sheet (no AUTOLINEA header)
+- t1-tabelle_-orari_da_linea_1_a_linea_297.pdf p31: not a lot sheet (no AUTOLINEA header)
+- t1-tabelle_-orari_da_linea_1_a_linea_297.pdf p32: not a lot sheet (no AUTOLINEA header)
+- t2-tabelle_-orari_da_linea_299_a_linea_344.pdf p1: not a lot sheet (no AUTOLINEA header)
+- t2-tabelle_-orari_da_linea_299_a_linea_344.pdf p2: not a lot sheet (no AUTOLINEA header)
+- t2-tabelle_-orari_da_linea_299_a_linea_344.pdf p3: not a lot sheet (no AUTOLINEA header)
+- t2-tabelle_-orari_da_linea_299_a_linea_344.pdf p4: not a lot sheet (no AUTOLINEA header)
+- t2-tabelle_-orari_da_linea_299_a_linea_344.pdf p30: not a lot sheet (no AUTOLINEA header)
+- t2-tabelle_-orari_da_linea_299_a_linea_344.pdf p31: not a lot sheet (no AUTOLINEA header)
+- t2-tabelle_-orari_da_linea_299_a_linea_344.pdf p32: not a lot sheet (no AUTOLINEA header)
+- t2-tabelle_-orari_da_linea_299_a_linea_344.pdf p33: not a lot sheet (no AUTOLINEA header)
+- t2-tabelle_-orari_da_linea_299_a_linea_344.pdf p34: not a lot sheet (no AUTOLINEA header)
+- t2-tabelle_-orari_da_linea_299_a_linea_344.pdf p35: not a lot sheet (no AUTOLINEA header)
+- t2-tabelle_-orari_da_linea_299_a_linea_344.pdf p36: not a lot sheet (no AUTOLINEA header)
+- t2-tabelle_-orari_da_linea_299_a_linea_344.pdf p37: not a lot sheet (no AUTOLINEA header)
+- t2-tabelle_-orari_da_linea_299_a_linea_344.pdf p38: not a lot sheet (no AUTOLINEA header)
+- t2-tabelle_-orari_da_linea_299_a_linea_344.pdf p39: not a lot sheet (no AUTOLINEA header)
+- t2-tabelle_-orari_da_linea_299_a_linea_344.pdf p40: not a lot sheet (no AUTOLINEA header)
+- t2-tabelle_-orari_da_linea_299_a_linea_344.pdf p41: not a lot sheet (no AUTOLINEA header)
+- t2-tabelle_-orari_da_linea_299_a_linea_344.pdf p42: not a lot sheet (no AUTOLINEA header)
+- t3-tabelle-_orari_da_linea_350_a_new_alia-cerda.pdf p4: not a lot sheet (no AUTOLINEA header)
+- t3-tabelle-_orari_da_linea_350_a_new_alia-cerda.pdf p5: not a lot sheet (no AUTOLINEA header)
+- t3-tabelle-_orari_da_linea_350_a_new_alia-cerda.pdf p6: not a lot sheet (no AUTOLINEA header)
+- t3-tabelle-_orari_da_linea_350_a_new_alia-cerda.pdf p7: not a lot sheet (no AUTOLINEA header)
+- t3-tabelle-_orari_da_linea_350_a_new_alia-cerda.pdf p23: not a lot sheet (no AUTOLINEA header)
+- t3-tabelle-_orari_da_linea_350_a_new_alia-cerda.pdf p25: not a lot sheet (no AUTOLINEA header)
+- t3-tabelle-_orari_da_linea_350_a_new_alia-cerda.pdf p26: not a lot sheet (no AUTOLINEA header)
+- t3-tabelle-_orari_da_linea_350_a_new_alia-cerda.pdf p27: not a lot sheet (no AUTOLINEA header)
+- t3-tabelle-_orari_da_linea_350_a_new_alia-cerda.pdf p32: not a lot sheet (no AUTOLINEA header)
+- t3-tabelle-_orari_da_linea_350_a_new_alia-cerda.pdf p34: not a lot sheet (no AUTOLINEA header)
+- orario_b2d178879e.pdf p4: header not parsed: AUTOLINEA Castel di ludica - Paterno MOLINARO
+- orario_b2d178879e.pdf p21: header not parsed: AUTOLINEA Acireale - Acireale 2 LINEA 121
+- orario_b2d178879e.pdf p32: SAIS (SAIS Autolinee): comes from the SAIS API, skipped
+- orario_b2d178879e.pdf p33: SAIS (SAIS Autolinee): comes from the SAIS API, skipped
+- orario_b2d178879e.pdf p45: not a lot sheet (no AUTOLINEA header)
+- orario_b2d178879e.pdf p46: not a lot sheet (no AUTOLINEA header)
+- orario_b2d178879e.pdf p53: 1 stop rows
+- orario_b2d178879e.pdf p55: 0 stop rows
+- orario_b2d178879e.pdf p60: header not parsed: AUTOLINEA Siracusa-Aeroporto-Catania LOTO 2 LINEA 141
+- orario_b2d178879e.pdf p67: not a lot sheet (no AUTOLINEA header)
+- orario_b2d178879e.pdf p69: not a lot sheet (no AUTOLINEA header)
+- orario_b2d178879e.pdf p70: not a lot sheet (no AUTOLINEA header)
+- orario_b2d178879e.pdf p71: not a lot sheet (no AUTOLINEA header)
+- orario_b2d178879e.pdf p72: not a lot sheet (no AUTOLINEA header)
+- orario_b2d178879e.pdf p73: not a lot sheet (no AUTOLINEA header)
+- orario_b2d178879e.pdf p74: not a lot sheet (no AUTOLINEA header)
+- orario_b2d178879e.pdf p75: 1 stop rows
+- orario_b2d178879e.pdf p78: 0 stop rows
+- orario_b2d178879e.pdf p79: 0 stop rows
+- orario_b2d178879e.pdf p80: 0 stop rows
+- orario_b2d178879e.pdf p82: 0 stop rows
+- orario_b2d178879e.pdf p85: 1 stop rows
+- orario_b2d178879e.pdf p95: 0 stop rows
+- orario_b2d178879e.pdf p98: 1 stop rows

@@ -1,0 +1,1448 @@
+{
+ "operator": "Randazzo",
+ "route_id": "lot1-327",
+ "name": "CACCAMO - PALERMO",
+ "short_name": "327",
+ "source": "t2-tabelle_-orari_da_linea_299_a_linea_344.pdf#p25,p26",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+    "CACCAMO (lstituto Magistrate)",
+    "CACCAMO (Cappuccini)",
+    "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+    "TERMINI IMERESE (Termini lm. Staz. F.S.)",
+    "TRABIA",
+    "S. NICOLA L ARENA (s. Nicota LArena)",
+    "PALERMO (Pal,ermo Piazza Giutio Cesare)",
+    "PALERMO (Capotinea Patermo BasiLe)"
+   ],
+   "kms": [
+    0.0,
+    1.0,
+    2.6,
+    12.9,
+    null,
+    17.4,
+    22.4,
+    46.8,
+    50.0
+   ],
+   "trips": [
+    {
+     "corsa": "p25.A1",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "RA N D A Z ZO A G G 1 5 Feriale lunedì- venerdì in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 0,
+       "arr": "06:00",
+       "dep": "06:00"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 1,
+       "arr": "06:05",
+       "dep": "06:05"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 2,
+       "arr": "06:10",
+       "dep": "06:10"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 3,
+       "arr": "06:25",
+       "dep": "06:25"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. Staz. F.S.)",
+       "idx": 4,
+       "arr": "06:30",
+       "dep": "06:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.A2-8815",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale lunedì- venerdì in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 0,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 1,
+       "arr": "07:05",
+       "dep": "07:05"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 2,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 3,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. Staz. F.S.)",
+       "idx": 4,
+       "arr": "07:30",
+       "dep": "07:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.A3-8811",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 0,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 1,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 2,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 3,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. Staz. F.S.)",
+       "idx": 4,
+       "arr": "07:45",
+       "dep": "07:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.A4-8809",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale lunedì- venerdì in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 0,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 1,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 2,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 3,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "TRABIA",
+       "idx": 5,
+       "arr": "07:45",
+       "dep": "07:45"
+      },
+      {
+       "stop": "S. NICOLA L ARENA (s. Nicota LArena)",
+       "idx": 6,
+       "arr": "07:50",
+       "dep": "07:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.A5",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "RA N D A Z ZO A G G 1 3 Feriale lunedì- venerdì in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 0,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 1,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 2,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 3,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. Staz. F.S.)",
+       "idx": 4,
+       "arr": "07:45",
+       "dep": "07:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.A6",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "RA N D A Z ZO A G G 1 4 Feriale lunedì- venerdì in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 0,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 1,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 2,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 3,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. Staz. F.S.)",
+       "idx": 4,
+       "arr": "07:45",
+       "dep": "07:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.A7-8807",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 0,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 1,
+       "arr": "09:05",
+       "dep": "09:05"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 2,
+       "arr": "09:10",
+       "dep": "09:10"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 3,
+       "arr": "09:25",
+       "dep": "09:25"
+      },
+      {
+       "stop": "TRABIA",
+       "idx": 5,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "S. NICOLA L ARENA (s. Nicota LArena)",
+       "idx": 6,
+       "arr": "09:35",
+       "dep": "09:35"
+      },
+      {
+       "stop": "PALERMO (Pal,ermo Piazza Giutio Cesare)",
+       "idx": 7,
+       "arr": "10:10",
+       "dep": "10:10"
+      },
+      {
+       "stop": "PALERMO (Capotinea Patermo BasiLe)",
+       "idx": 8,
+       "arr": "10:15",
+       "dep": "10:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.A8-8812",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 0,
+       "arr": "10:30",
+       "dep": "10:30"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 1,
+       "arr": "10:35",
+       "dep": "10:35"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 2,
+       "arr": "10:40",
+       "dep": "10:40"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 3,
+       "arr": "10:55",
+       "dep": "10:55"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. Staz. F.S.)",
+       "idx": 4,
+       "arr": "11:00",
+       "dep": "11:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.A9-8813",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": false,
+     "stops": [
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 0,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 1,
+       "arr": "12:35",
+       "dep": "12:35"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 2,
+       "arr": "12:40",
+       "dep": "12:40"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 3,
+       "arr": "13:55",
+       "dep": "13:55"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. Staz. F.S.)",
+       "idx": 4,
+       "arr": "13:00",
+       "dep": "13:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.A10-8816",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale ZZO AGG ZZO AGG ZZO AGG lunedì- 15) 13) 14) venerdì in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 0,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 1,
+       "arr": "12:35",
+       "dep": "12:35"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 2,
+       "arr": "12:40",
+       "dep": "12:40"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 3,
+       "arr": "12:55",
+       "dep": "12:55"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. Staz. F.S.)",
+       "idx": 4,
+       "arr": "13:00",
+       "dep": "13:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p26.A1-8817",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale lunedì- venerdì in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 0,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 1,
+       "arr": "12:35",
+       "dep": "12:35"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 2,
+       "arr": "12:40",
+       "dep": "12:40"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 3,
+       "arr": "12:55",
+       "dep": "12:55"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. Staz. F.S.)",
+       "idx": 4,
+       "arr": "13:00",
+       "dep": "13:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p26.A2-8810",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale lunedì- venerdì in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 0,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 1,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 2,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 3,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "TRABIA",
+       "idx": 5,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "S. NICOLA L ARENA (s. Nicota LArena)",
+       "idx": 6,
+       "arr": "14:40",
+       "dep": "14:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p26.A3-8808",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 0,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 1,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 2,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 3,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "TRABIA",
+       "idx": 5,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "S. NICOLA L ARENA (s. Nicota LArena)",
+       "idx": 6,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "PALERMO (Pal,ermo Piazza Giutio Cesare)",
+       "idx": 7,
+       "arr": "15:10",
+       "dep": "15:10"
+      },
+      {
+       "stop": "PALERMO (Capotinea Patermo BasiLe)",
+       "idx": 8,
+       "arr": "15:15",
+       "dep": "15:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p26.A4-8814",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 0,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 1,
+       "arr": "14:05",
+       "dep": "14:05"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 2,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 3,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. Staz. F.S.)",
+       "idx": 4,
+       "arr": "14:30",
+       "dep": "14:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p26.A5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "RA N D A Z ZO A G G 1 2 ZZO AGG 12) Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 0,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 1,
+       "arr": "16:35",
+       "dep": "16:35"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 2,
+       "arr": "16:40",
+       "dep": "16:40"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 3,
+       "arr": "16:55",
+       "dep": "16:55"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. Staz. F.S.)",
+       "idx": 4,
+       "arr": "17:00",
+       "dep": "17:00"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "PALERMO (Capotinea Patermo BasiLe)",
+    "PALERMO (Pal,ermo Piazza Giutio Cesare)",
+    "S. NICOLA L ARENA (s. Nicota LArena)",
+    "TRABIA",
+    "TERMINI IMERESE (Termini lm. Staz. F.S.)",
+    "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+    "CACCAMO (Cappuccini)",
+    "CACCAMO (lstituto Magistrate)",
+    "CACCAMO (Capotinea: Caccamo - Porta Euracea)"
+   ],
+   "kms": [
+    0.0,
+    3.2,
+    27.6,
+    32.6,
+    null,
+    37.1,
+    47.4,
+    49.0,
+    50.0
+   ],
+   "trips": [
+    {
+     "corsa": "p25.R1-8820",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale ZZO AGG ZZO AGG ZZO AGG lunedì- 17) 18) 16) venerdì in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "S. NICOLA L ARENA (s. Nicota LArena)",
+       "idx": 2,
+       "arr": "07:50",
+       "dep": "07:50"
+      },
+      {
+       "stop": "TRABIA",
+       "idx": 3,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 5,
+       "arr": "08:05",
+       "dep": "08:05"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 6,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 7,
+       "arr": "08:25",
+       "dep": "08:25"
+      },
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 8,
+       "arr": "08:30",
+       "dep": "08:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.R2",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "RA N D A Z ZO A G G 1 7 Feriale lunedì- venerdì in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERMINI IMERESE (Termini lm. Staz. F.S.)",
+       "idx": 4,
+       "arr": "07:55",
+       "dep": "07:55"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 5,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 6,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 7,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 8,
+       "arr": "08:25",
+       "dep": "08:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.R3",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "RA N D A Z ZO A G G 1 8 Feriale lunedì- venerdì in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERMINI IMERESE (Termini lm. Staz. F.S.)",
+       "idx": 4,
+       "arr": "07:55",
+       "dep": "07:55"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 5,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 6,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 7,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 8,
+       "arr": "08:25",
+       "dep": "08:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.R4-8826",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale lunedì- venerdì in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERMINI IMERESE (Termini lm. Staz. F.S.)",
+       "idx": 4,
+       "arr": "07:55",
+       "dep": "07:55"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 5,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 6,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 7,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 8,
+       "arr": "08:25",
+       "dep": "08:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.R5-8822",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERMINI IMERESE (Termini lm. Staz. F.S.)",
+       "idx": 4,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 5,
+       "arr": "08:05",
+       "dep": "08:05"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 6,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 7,
+       "arr": "08:25",
+       "dep": "08:25"
+      },
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 8,
+       "arr": "08:30",
+       "dep": "08:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.R6",
+     "service": {
+      "days": "mon-fri",
+      "school": "holidays-only",
+      "season": null,
+      "raw": "RA N D A Z ZO A G G 1 6 Feriale lunedì- venerdì in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERMINI IMERESE (Termini lm. Staz. F.S.)",
+       "idx": 4,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 5,
+       "arr": "08:05",
+       "dep": "08:05"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 6,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 7,
+       "arr": "08:25",
+       "dep": "08:25"
+      },
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 8,
+       "arr": "08:30",
+       "dep": "08:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.R7-8823",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERMINI IMERESE (Termini lm. Staz. F.S.)",
+       "idx": 4,
+       "arr": "11:30",
+       "dep": "11:30"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 5,
+       "arr": "11:35",
+       "dep": "11:35"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 6,
+       "arr": "11:50",
+       "dep": "11:50"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 7,
+       "arr": "11:55",
+       "dep": "11:55"
+      },
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 8,
+       "arr": "12:00",
+       "dep": "12:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.R8-8818",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Capotinea Patermo BasiLe)",
+       "idx": 0,
+       "arr": "11:55",
+       "dep": "11:55"
+      },
+      {
+       "stop": "PALERMO (Pal,ermo Piazza Giutio Cesare)",
+       "idx": 1,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "S. NICOLA L ARENA (s. Nicota LArena)",
+       "idx": 2,
+       "arr": "12:30",
+       "dep": "12:30"
+      },
+      {
+       "stop": "TRABIA",
+       "idx": 3,
+       "arr": "12:35",
+       "dep": "12:35"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 5,
+       "arr": "12:45",
+       "dep": "12:45"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 6,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 7,
+       "arr": "13:05",
+       "dep": "13:05"
+      },
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 8,
+       "arr": "13:10",
+       "dep": "13:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.R9-8827",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale lunedì- venerdì in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERMINI IMERESE (Termini lm. Staz. F.S.)",
+       "idx": 4,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 5,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 6,
+       "arr": "13:35",
+       "dep": "13:35"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 7,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 8,
+       "arr": "13:45",
+       "dep": "13:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p25.R10-8828",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale lunedì- venerdì in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERMINI IMERESE (Termini lm. Staz. F.S.)",
+       "idx": 4,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 5,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 6,
+       "arr": "13:35",
+       "dep": "13:35"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 7,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 8,
+       "arr": "13:45",
+       "dep": "13:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p26.R1-8824",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "ZZO AGG 11) Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERMINI IMERESE (Termini lm. Staz. F.S.)",
+       "idx": 4,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 5,
+       "arr": "13:25",
+       "dep": "13:25"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 6,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 7,
+       "arr": "13:45",
+       "dep": "13:45"
+      },
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 8,
+       "arr": "13:50",
+       "dep": "13:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p26.R2-8821",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale lunedì- venerdì in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "S. NICOLA L ARENA (s. Nicota LArena)",
+       "idx": 2,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "TRABIA",
+       "idx": 3,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 5,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 6,
+       "arr": "15:15",
+       "dep": "15:15"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 7,
+       "arr": "15:20",
+       "dep": "15:20"
+      },
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 8,
+       "arr": "15:25",
+       "dep": "15:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p26.R3",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "RA N D A Z ZO A G G 1 1 Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERMINI IMERESE (Termini lm. Staz. F.S.)",
+       "idx": 4,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 5,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 6,
+       "arr": "15:20",
+       "dep": "15:20"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 7,
+       "arr": "15:25",
+       "dep": "15:25"
+      },
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 8,
+       "arr": "15:30",
+       "dep": "15:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p26.R4-8819",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PALERMO (Capotinea Patermo BasiLe)",
+       "idx": 0,
+       "arr": "17:55",
+       "dep": "17:55"
+      },
+      {
+       "stop": "PALERMO (Pal,ermo Piazza Giutio Cesare)",
+       "idx": 1,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "S. NICOLA L ARENA (s. Nicota LArena)",
+       "idx": 2,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "TRABIA",
+       "idx": 3,
+       "arr": "18:40",
+       "dep": "18:40"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 5,
+       "arr": "18:45",
+       "dep": "18:45"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 6,
+       "arr": "19:00",
+       "dep": "19:00"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 7,
+       "arr": "19:05",
+       "dep": "19:05"
+      },
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 8,
+       "arr": "19:10",
+       "dep": "19:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p26.R5-8825",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TERMINI IMERESE (Termini lm. Staz. F.S.)",
+       "idx": 4,
+       "arr": "18:00",
+       "dep": "18:00"
+      },
+      {
+       "stop": "TERMINI IMERESE (Termini lm. P. S. Antonio)",
+       "idx": 5,
+       "arr": "18:05",
+       "dep": "18:05"
+      },
+      {
+       "stop": "CACCAMO (Cappuccini)",
+       "idx": 6,
+       "arr": "18:20",
+       "dep": "18:20"
+      },
+      {
+       "stop": "CACCAMO (lstituto Magistrate)",
+       "idx": 7,
+       "arr": "18:25",
+       "dep": "18:25"
+      },
+      {
+       "stop": "CACCAMO (Capotinea: Caccamo - Porta Euracea)",
+       "idx": 8,
+       "arr": "18:30",
+       "dep": "18:30"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

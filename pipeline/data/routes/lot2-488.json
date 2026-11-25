@@ -1,0 +1,534 @@
+{
+ "operator": "Azienda Siciliana Trasporti",
+ "route_id": "lot2-488",
+ "name": "SIRACUSA - CITTA GIARDINO - BELVEDERE",
+ "short_name": "488",
+ "source": "orario_b2d178879e.pdf#p93",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "Siracusa (via Rubino)",
+    "Citta Giardino di Melilli",
+    "Belvedere (piazza Bonanno)"
+   ],
+   "kms": [
+    0.0,
+    null,
+    13.5
+   ],
+   "trips": [
+    {
+     "corsa": "p93.A1-7335",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "1 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "08:15",
+       "dep": "08:15"
+      },
+      {
+       "stop": "Citta Giardino di Melilli",
+       "idx": 1,
+       "arr": "08:45",
+       "dep": "08:45"
+      },
+      {
+       "stop": "Belvedere (piazza Bonanno)",
+       "idx": 2,
+       "arr": "08:55",
+       "dep": "08:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p93.A2-7336",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "3 F E R I A L E"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "09:45",
+       "dep": "09:45"
+      },
+      {
+       "stop": "Citta Giardino di Melilli",
+       "idx": 1,
+       "arr": "10:15",
+       "dep": "10:15"
+      },
+      {
+       "stop": "Belvedere (piazza Bonanno)",
+       "idx": 2,
+       "arr": "10:25",
+       "dep": "10:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p93.A3-7337",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "5 F E R I A L E"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "11:30",
+       "dep": "11:30"
+      },
+      {
+       "stop": "Citta Giardino di Melilli",
+       "idx": 1,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "Belvedere (piazza Bonanno)",
+       "idx": 2,
+       "arr": "12:10",
+       "dep": "12:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p93.A4-7338",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "C O 7 F E R I A L E"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "Citta Giardino di Melilli",
+       "idx": 1,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "Belvedere (piazza Bonanno)",
+       "idx": 2,
+       "arr": "13:40",
+       "dep": "13:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p93.A5-7340",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "R S E 9 F E R I A L E"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "Citta Giardino di Melilli",
+       "idx": 1,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "Belvedere (piazza Bonanno)",
+       "idx": 2,
+       "arr": "14:40",
+       "dep": "14:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p93.A6-7341",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "11 F E R I A L E"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "16:00",
+       "dep": "16:00"
+      },
+      {
+       "stop": "Citta Giardino di Melilli",
+       "idx": 1,
+       "arr": "16:30",
+       "dep": "16:30"
+      },
+      {
+       "stop": "Belvedere (piazza Bonanno)",
+       "idx": 2,
+       "arr": "16:40",
+       "dep": "16:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p93.A7-7342",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "13 F E R I A L E"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "17:45",
+       "dep": "17:45"
+      },
+      {
+       "stop": "Citta Giardino di Melilli",
+       "idx": 1,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "Belvedere (piazza Bonanno)",
+       "idx": 2,
+       "arr": "18:25",
+       "dep": "18:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p93.A8-7339",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "15 F E R I A L E"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 0,
+       "arr": "19:30",
+       "dep": "19:30"
+      },
+      {
+       "stop": "Citta Giardino di Melilli",
+       "idx": 1,
+       "arr": "20:00",
+       "dep": "20:00"
+      },
+      {
+       "stop": "Belvedere (piazza Bonanno)",
+       "idx": 2,
+       "arr": "20:10",
+       "dep": "20:10"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "Belvedere (piazza Bonanno)",
+    "Citta Giardino di Melilli",
+    "Siracusa (via Rubino)"
+   ],
+   "kms": [
+    0.0,
+    null,
+    13.5
+   ],
+   "trips": [
+    {
+     "corsa": "p93.R1-7348",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "2 FERIALE"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Belvedere (piazza Bonanno)",
+       "idx": 0,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "Citta Giardino di Melilli",
+       "idx": 1,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 2,
+       "arr": "08:00",
+       "dep": "08:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p93.R2-7349",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "4 F E R I A L E"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Belvedere (piazza Bonanno)",
+       "idx": 0,
+       "arr": "09:25",
+       "dep": "09:25"
+      },
+      {
+       "stop": "Citta Giardino di Melilli",
+       "idx": 1,
+       "arr": "09:35",
+       "dep": "09:35"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 2,
+       "arr": "10:05",
+       "dep": "10:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p93.R3-7350",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "6 F E R I A L E"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Belvedere (piazza Bonanno)",
+       "idx": 0,
+       "arr": "10:25",
+       "dep": "10:25"
+      },
+      {
+       "stop": "Citta Giardino di Melilli",
+       "idx": 1,
+       "arr": "10:35",
+       "dep": "10:35"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 2,
+       "arr": "11:05",
+       "dep": "11:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p93.R4-7351",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "8 F E R I A L E"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Belvedere (piazza Bonanno)",
+       "idx": 0,
+       "arr": "12:10",
+       "dep": "12:10"
+      },
+      {
+       "stop": "Citta Giardino di Melilli",
+       "idx": 1,
+       "arr": "12:20",
+       "dep": "12:20"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 2,
+       "arr": "12:50",
+       "dep": "12:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p93.R5-7352",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "10 F E R I A L E"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Belvedere (piazza Bonanno)",
+       "idx": 0,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "Citta Giardino di Melilli",
+       "idx": 1,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 2,
+       "arr": "14:20",
+       "dep": "14:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p93.R6-7353",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "12 F E R I A L E"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Belvedere (piazza Bonanno)",
+       "idx": 0,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "Citta Giardino di Melilli",
+       "idx": 1,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 2,
+       "arr": "15:20",
+       "dep": "15:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p93.R7-7354",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "14 F E R I A L E"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Belvedere (piazza Bonanno)",
+       "idx": 0,
+       "arr": "16:40",
+       "dep": "16:40"
+      },
+      {
+       "stop": "Citta Giardino di Melilli",
+       "idx": 1,
+       "arr": "16:50",
+       "dep": "16:50"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 2,
+       "arr": "17:20",
+       "dep": "17:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p93.R8-7355",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "16 F E R I A L E"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Belvedere (piazza Bonanno)",
+       "idx": 0,
+       "arr": "18:30",
+       "dep": "18:30"
+      },
+      {
+       "stop": "Citta Giardino di Melilli",
+       "idx": 1,
+       "arr": "18:40",
+       "dep": "18:40"
+      },
+      {
+       "stop": "Siracusa (via Rubino)",
+       "idx": 2,
+       "arr": "19:10",
+       "dep": "19:10"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

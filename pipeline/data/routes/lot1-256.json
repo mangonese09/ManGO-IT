@@ -1,0 +1,414 @@
+{
+ "operator": "Sommatinese Viaggi",
+ "route_id": "lot1-256",
+ "name": "CEFALÙ SCALO F.S. - - LASCARI",
+ "short_name": "256",
+ "source": "t1-tabelle_-orari_da_linea_1_a_linea_297.pdf#p23",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "GRATTERI",
+    "LASCARI",
+    "LASCARI SCALO",
+    "CEFALU"
+   ],
+   "kms": [
+    0.0,
+    9.0,
+    12.3,
+    24.6
+   ],
+   "trips": [
+    {
+     "corsa": "p23.A1-3657",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "LASCARI",
+       "idx": 1,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "LASCARI SCALO",
+       "idx": 2,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "CEFALU",
+       "idx": 3,
+       "arr": "07:35",
+       "dep": "07:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.A2-3656",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GRATTERI",
+       "idx": 0,
+       "arr": "10:00",
+       "dep": "10:00"
+      },
+      {
+       "stop": "LASCARI",
+       "idx": 1,
+       "arr": "10:25",
+       "dep": "10:25"
+      },
+      {
+       "stop": "LASCARI SCALO",
+       "idx": 2,
+       "arr": "10:30",
+       "dep": "10:30"
+      },
+      {
+       "stop": "CEFALU",
+       "idx": 3,
+       "arr": "10:50",
+       "dep": "10:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.A3-3658",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "LASCARI",
+       "idx": 1,
+       "arr": "11:30",
+       "dep": "11:30"
+      },
+      {
+       "stop": "LASCARI SCALO",
+       "idx": 2,
+       "arr": "11:35",
+       "dep": "11:35"
+      },
+      {
+       "stop": "CEFALU",
+       "idx": 3,
+       "arr": "11:55",
+       "dep": "11:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.A4-3661",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "LASCARI",
+       "idx": 1,
+       "arr": "13:55",
+       "dep": "13:55"
+      },
+      {
+       "stop": "LASCARI SCALO",
+       "idx": 2,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "CEFALU",
+       "idx": 3,
+       "arr": "14:25",
+       "dep": "14:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.A5-3655",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "LASCARI",
+       "idx": 1,
+       "arr": "14:55",
+       "dep": "14:55"
+      },
+      {
+       "stop": "LASCARI SCALO",
+       "idx": 2,
+       "arr": "15:00",
+       "dep": "15:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.A6-3662",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "LASCARI",
+       "idx": 1,
+       "arr": "15:05",
+       "dep": "15:05"
+      },
+      {
+       "stop": "LASCARI SCALO",
+       "idx": 2,
+       "arr": "15:10",
+       "dep": "15:10"
+      },
+      {
+       "stop": "CEFALU",
+       "idx": 3,
+       "arr": "15:25",
+       "dep": "15:25"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CEFALU",
+    "LASCARI SCALO",
+    "LASCARI",
+    "GRATTERI"
+   ],
+   "kms": [
+    0.0,
+    9.6,
+    12.3,
+    24.6
+   ],
+   "trips": [
+    {
+     "corsa": "p23.R1-3649",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CEFALU",
+       "idx": 0,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "LASCARI SCALO",
+       "idx": 1,
+       "arr": "08:00",
+       "dep": "08:00"
+      },
+      {
+       "stop": "LASCARI",
+       "idx": 2,
+       "arr": "08:05",
+       "dep": "08:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.R2-3653",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CEFALU",
+       "idx": 0,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "LASCARI SCALO",
+       "idx": 1,
+       "arr": "13:55",
+       "dep": "13:55"
+      },
+      {
+       "stop": "LASCARI",
+       "idx": 2,
+       "arr": "14:00",
+       "dep": "14:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.R3-3650",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CEFALU",
+       "idx": 0,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "LASCARI SCALO",
+       "idx": 1,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "LASCARI",
+       "idx": 2,
+       "arr": "14:55",
+       "dep": "14:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.R4-3654",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CEFALU",
+       "idx": 0,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "LASCARI SCALO",
+       "idx": 1,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "LASCARI",
+       "idx": 2,
+       "arr": "14:55",
+       "dep": "14:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.R5-3663",
+     "service": {
+      "days": "daily",
+      "school": null,
+      "season": null,
+      "raw": "Giornaliera"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "LASCARI SCALO",
+       "idx": 1,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "LASCARI",
+       "idx": 2,
+       "arr": "15:05",
+       "dep": "15:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p23.R6-3664",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CEFALU",
+       "idx": 0,
+       "arr": "19:00",
+       "dep": "19:00"
+      },
+      {
+       "stop": "LASCARI SCALO",
+       "idx": 1,
+       "arr": "19:15",
+       "dep": "19:15"
+      },
+      {
+       "stop": "LASCARI",
+       "idx": 2,
+       "arr": "19:25",
+       "dep": "19:25"
+      },
+      {
+       "stop": "GRATTERI",
+       "idx": 3,
+       "arr": "19:55",
+       "dep": "19:55"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

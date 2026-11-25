@@ -1,0 +1,643 @@
+{
+ "operator": "Consorzio Stabile Siciliano Mobilità Est (Lotto 2)",
+ "route_id": "lot2-158",
+ "name": "RANDAZZO - BRONTE, DIR. BIVIO MANIACE-MANIACE CON PROLUNGAMENTO SCOLASTICO A CATANIA",
+ "short_name": "158",
+ "source": "orario_b2d178879e.pdf#p66",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "RANDAZZO (Autostazione)",
+    "BV. MANIACE",
+    "MANIACE (C.so Fondaco/P.zza dell'Autonomia)",
+    "MANIACE (Petrosino/Zirilli/Piane)",
+    "BV. MANIACE",
+    "PONTE CANTERA",
+    "MALETTO",
+    "Via Etnea Staz. FCE - BRONTE - P.zza Spedalieri",
+    "CATANIA (Via D'Amico/Archimede)",
+    "CATANIA-AEROPORTO FONTANAROSSA"
+   ],
+   "kms": [
+    0.0,
+    14.8,
+    3.3,
+    6.2,
+    14.8,
+    17.5,
+    19.7,
+    25.4,
+    76.2,
+    83.1
+   ],
+   "trips": [
+    {
+     "corsa": "p66.A1-2195",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "1 FERIALE IN PERIODO SCOLASTICO"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MANIACE (C.so Fondaco/P.zza dell'Autonomia)",
+       "idx": 2,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "MANIACE (Petrosino/Zirilli/Piane)",
+       "idx": 3,
+       "arr": "07:05",
+       "dep": "07:05"
+      },
+      {
+       "stop": "BV. MANIACE",
+       "idx": 4,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "MALETTO",
+       "idx": 6,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "Via Etnea Staz. FCE - BRONTE - P.zza Spedalieri",
+       "idx": 7,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 8,
+       "arr": "08:40",
+       "dep": "08:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p66.A2-AGGIUNTA-144",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "3 AGGIUNTA-144 F E R I A L E I N P E R I O D O SCOLASTICO DA LUN A VEN"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MANIACE (C.so Fondaco/P.zza dell'Autonomia)",
+       "idx": 2,
+       "arr": "07:05",
+       "dep": "07:05"
+      },
+      {
+       "stop": "MANIACE (Petrosino/Zirilli/Piane)",
+       "idx": 3,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "BV. MANIACE",
+       "idx": 4,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "PONTE CANTERA",
+       "idx": 5,
+       "arr": "07:25",
+       "dep": "07:25"
+      },
+      {
+       "stop": "Via Etnea Staz. FCE - BRONTE - P.zza Spedalieri",
+       "idx": 7,
+       "arr": "07:40",
+       "dep": "07:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p66.A3-2196",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "5 F E R I ALE IN PERIODO SCOLASTICO"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MANIACE (C.so Fondaco/P.zza dell'Autonomia)",
+       "idx": 2,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "MANIACE (Petrosino/Zirilli/Piane)",
+       "idx": 3,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "BV. MANIACE",
+       "idx": 4,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "PONTE CANTERA",
+       "idx": 5,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "Via Etnea Staz. FCE - BRONTE - P.zza Spedalieri",
+       "idx": 7,
+       "arr": "07:45",
+       "dep": "07:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p66.A4-AGGIUNTA-409",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "C O R S E 7 AGGIUNTA-409 F E R I A L E I N P E R IO D O SCOLASTICO DA LUN A VEN"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MANIACE (C.so Fondaco/P.zza dell'Autonomia)",
+       "idx": 2,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "MANIACE (Petrosino/Zirilli/Piane)",
+       "idx": 3,
+       "arr": "08:35",
+       "dep": "08:35"
+      },
+      {
+       "stop": "BV. MANIACE",
+       "idx": 4,
+       "arr": "08:40",
+       "dep": "08:40"
+      },
+      {
+       "stop": "PONTE CANTERA",
+       "idx": 5,
+       "arr": "08:50",
+       "dep": "08:50"
+      },
+      {
+       "stop": "Via Etnea Staz. FCE - BRONTE - P.zza Spedalieri",
+       "idx": 7,
+       "arr": "09:05",
+       "dep": "09:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p66.A5-50071",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "9 F E R I A L E I N P E R IO D O SCOLASTICO DA LUN A VEN"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RANDAZZO (Autostazione)",
+       "idx": 0,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "Via Etnea Staz. FCE - BRONTE - P.zza Spedalieri",
+       "idx": 7,
+       "arr": "13:30",
+       "dep": "13:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p66.A6-50073",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "11 F E R I ALE IN PERIODO SCOLASTICO"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "MANIACE (C.so Fondaco/P.zza dell'Autonomia)",
+       "idx": 2,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "MANIACE (Petrosino/Zirilli/Piane)",
+       "idx": 3,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "BV. MANIACE",
+       "idx": 4,
+       "arr": "13:25",
+       "dep": "13:25"
+      },
+      {
+       "stop": "PONTE CANTERA",
+       "idx": 5,
+       "arr": "13:35",
+       "dep": "13:35"
+      },
+      {
+       "stop": "Via Etnea Staz. FCE - BRONTE - P.zza Spedalieri",
+       "idx": 7,
+       "arr": "13:50",
+       "dep": "13:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p66.A7-2200",
+     "service": {
+      "days": "sun-holidays",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "13 K M F E S T IVA IN PERIODO SCOLASTICO"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "RANDAZZO (Autostazione)",
+       "idx": 0,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "BV. MANIACE",
+       "idx": 1,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "MANIACE (C.so Fondaco/P.zza dell'Autonomia)",
+       "idx": 2,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "BV. MANIACE",
+       "idx": 4,
+       "arr": "14:40",
+       "dep": "14:40"
+      },
+      {
+       "stop": "MALETTO",
+       "idx": 6,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "Via Etnea Staz. FCE - BRONTE - P.zza Spedalieri",
+       "idx": 7,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 8,
+       "arr": "16:10",
+       "dep": "16:10"
+      },
+      {
+       "stop": "CATANIA-AEROPORTO FONTANAROSSA",
+       "idx": 9,
+       "arr": "16:20",
+       "dep": "16:20"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CATANIA-AEROPORTO FONTANAROSSA",
+    "CATANIA (Via D'Amico/Archimede)",
+    "Via Etnea Staz. FCE - BRONTE - P.zza Spedalieri",
+    "MALETTO",
+    "PONTE CANTERA",
+    "BV. MANIACE",
+    "MANIACE (Petrosino/Zirilli/Piane)",
+    "MANIACE (C.so Fondaco/P.zza dell'Autonomia)",
+    "BV. MANIACE",
+    "RANDAZZO (Autostazione)"
+   ],
+   "kms": [
+    0.0,
+    6.9,
+    57.7,
+    63.4,
+    65.6,
+    68.3,
+    6.2,
+    3.3,
+    68.3,
+    83.1
+   ],
+   "trips": [
+    {
+     "corsa": "p66.R1-50072",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "2 F E R IA L E IN P E R IO D O SCOLASTICO DA LUN A VEN"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Via Etnea Staz. FCE - BRONTE - P.zza Spedalieri",
+       "idx": 2,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "RANDAZZO (Autostazione)",
+       "idx": 9,
+       "arr": "09:00",
+       "dep": "09:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p66.R2-9290",
+     "service": {
+      "days": "sun-holidays",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "4 F E S T IVA IN PERIODO SCOLASTICO"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA-AEROPORTO FONTANAROSSA",
+       "idx": 0,
+       "arr": "10:15",
+       "dep": "10:15"
+      },
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 1,
+       "arr": "10:30",
+       "dep": "10:30"
+      },
+      {
+       "stop": "Via Etnea Staz. FCE - BRONTE - P.zza Spedalieri",
+       "idx": 2,
+       "arr": "11:40",
+       "dep": "11:40"
+      },
+      {
+       "stop": "MALETTO",
+       "idx": 3,
+       "arr": "11:50",
+       "dep": "11:50"
+      },
+      {
+       "stop": "BV. MANIACE",
+       "idx": 5,
+       "arr": "11:50",
+       "dep": "11:50"
+      },
+      {
+       "stop": "MANIACE (C.so Fondaco/P.zza dell'Autonomia)",
+       "idx": 7,
+       "arr": "12:00",
+       "dep": "12:00"
+      },
+      {
+       "stop": "BV. MANIACE",
+       "idx": 8,
+       "arr": "12:05",
+       "dep": "12:05"
+      },
+      {
+       "stop": "RANDAZZO (Autostazione)",
+       "idx": 9,
+       "arr": "12:40",
+       "dep": "12:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p66.R3-2204",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "6 F E RIALE IN PERIODO SCOLASTICO"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Via Etnea Staz. FCE - BRONTE - P.zza Spedalieri",
+       "idx": 2,
+       "arr": "13:00",
+       "dep": "13:00"
+      },
+      {
+       "stop": "PONTE CANTERA",
+       "idx": 4,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "BV. MANIACE",
+       "idx": 5,
+       "arr": "13:25",
+       "dep": "13:25"
+      },
+      {
+       "stop": "MANIACE (Petrosino/Zirilli/Piane)",
+       "idx": 6,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "MANIACE (C.so Fondaco/P.zza dell'Autonomia)",
+       "idx": 7,
+       "arr": "13:35",
+       "dep": "13:35"
+      }
+     ]
+    },
+    {
+     "corsa": "p66.R4-50074",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "8 F E R I ALE IN PERIODO SCOLASTICO"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "Via Etnea Staz. FCE - BRONTE - P.zza Spedalieri",
+       "idx": 2,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "PONTE CANTERA",
+       "idx": 4,
+       "arr": "14:45",
+       "dep": "14:45"
+      },
+      {
+       "stop": "BV. MANIACE",
+       "idx": 5,
+       "arr": "14:55",
+       "dep": "14:55"
+      },
+      {
+       "stop": "MANIACE (Petrosino/Zirilli/Piane)",
+       "idx": 6,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "MANIACE (C.so Fondaco/P.zza dell'Autonomia)",
+       "idx": 7,
+       "arr": "15:05",
+       "dep": "15:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p66.R5-2203",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "10 F E R I ALE IN PERIODO SCOLASTICO SABATO"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 1,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "Via Etnea Staz. FCE - BRONTE - P.zza Spedalieri",
+       "idx": 2,
+       "arr": "15:25",
+       "dep": "15:25"
+      },
+      {
+       "stop": "MALETTO",
+       "idx": 3,
+       "arr": "15:35",
+       "dep": "15:35"
+      },
+      {
+       "stop": "BV. MANIACE",
+       "idx": 5,
+       "arr": "15:45",
+       "dep": "15:45"
+      },
+      {
+       "stop": "MANIACE (Petrosino/Zirilli/Piane)",
+       "idx": 6,
+       "arr": "15:50",
+       "dep": "15:50"
+      },
+      {
+       "stop": "MANIACE (C.so Fondaco/P.zza dell'Autonomia)",
+       "idx": 7,
+       "arr": "15:55",
+       "dep": "15:55"
+      }
+     ]
+    },
+    {
+     "corsa": "p66.R6-2206",
+     "service": {
+      "days": "mon-fri",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "12 F E R I A L E I N P E R IO D O SCOLASTICO DA LUN A VEN"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA (Via D'Amico/Archimede)",
+       "idx": 1,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "Via Etnea Staz. FCE - BRONTE - P.zza Spedalieri",
+       "idx": 2,
+       "arr": "18:40",
+       "dep": "18:40"
+      },
+      {
+       "stop": "MALETTO",
+       "idx": 3,
+       "arr": "18:50",
+       "dep": "18:50"
+      },
+      {
+       "stop": "BV. MANIACE",
+       "idx": 5,
+       "arr": "19:00",
+       "dep": "19:00"
+      },
+      {
+       "stop": "MANIACE (Petrosino/Zirilli/Piane)",
+       "idx": 6,
+       "arr": "19:05",
+       "dep": "19:05"
+      },
+      {
+       "stop": "MANIACE (C.so Fondaco/P.zza dell'Autonomia)",
+       "idx": 7,
+       "arr": "19:10",
+       "dep": "19:10"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

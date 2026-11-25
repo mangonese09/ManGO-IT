@@ -1,0 +1,750 @@
+{
+ "operator": "Zappalà e Torrisi Srl",
+ "route_id": "lot2-126",
+ "name": "SANTA VENERINA - ACIREALE",
+ "short_name": "126",
+ "source": "orario_b2d178879e.pdf#p27",
+ "lot": 2,
+ "directions": [
+  {
+   "stops": [
+    "S. VENERINA (S.VENERINA)",
+    "S. VENERINA (LINERA)",
+    "ACIREALE (CASA GAMBINO)",
+    "ACIREALE (S.M.AMMALATI)",
+    "ACIREALE",
+    "CATANIA"
+   ],
+   "kms": [
+    0.0,
+    3.6,
+    5.2,
+    7.1,
+    10.7,
+    29.2
+   ],
+   "trips": [
+    {
+     "corsa": "p27.A1-1587",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "S. VENERINA (S.VENERINA)",
+       "idx": 0,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "S. VENERINA (LINERA)",
+       "idx": 1,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "ACIREALE (CASA GAMBINO)",
+       "idx": 2,
+       "arr": "07:35",
+       "dep": "07:35"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 3,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "ACIREALE",
+       "idx": 4,
+       "arr": "07:50",
+       "dep": "07:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p27.A2-1588",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "S. VENERINA (S.VENERINA)",
+       "idx": 0,
+       "arr": "09:00",
+       "dep": "09:00"
+      },
+      {
+       "stop": "S. VENERINA (LINERA)",
+       "idx": 1,
+       "arr": "09:10",
+       "dep": "09:10"
+      },
+      {
+       "stop": "ACIREALE (CASA GAMBINO)",
+       "idx": 2,
+       "arr": "09:15",
+       "dep": "09:15"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 3,
+       "arr": "09:20",
+       "dep": "09:20"
+      },
+      {
+       "stop": "ACIREALE",
+       "idx": 4,
+       "arr": "09:30",
+       "dep": "09:30"
+      },
+      {
+       "stop": "CATANIA",
+       "idx": 5,
+       "arr": "10:05",
+       "dep": "10:05"
+      }
+     ]
+    },
+    {
+     "corsa": "p27.A3-1589",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "S. VENERINA (S.VENERINA)",
+       "idx": 0,
+       "arr": "11:20",
+       "dep": "11:20"
+      },
+      {
+       "stop": "S. VENERINA (LINERA)",
+       "idx": 1,
+       "arr": "11:30",
+       "dep": "11:30"
+      },
+      {
+       "stop": "ACIREALE (CASA GAMBINO)",
+       "idx": 2,
+       "arr": "11:35",
+       "dep": "11:35"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 3,
+       "arr": "11:40",
+       "dep": "11:40"
+      },
+      {
+       "stop": "ACIREALE",
+       "idx": 4,
+       "arr": "11:50",
+       "dep": "11:50"
+      }
+     ]
+    },
+    {
+     "corsa": "p27.A4-1590",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "In Periodo Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "S. VENERINA (S.VENERINA)",
+       "idx": 0,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "S. VENERINA (LINERA)",
+       "idx": 1,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "ACIREALE (CASA GAMBINO)",
+       "idx": 2,
+       "arr": "13:55",
+       "dep": "13:55"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 3,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "ACIREALE",
+       "idx": 4,
+       "arr": "14:10",
+       "dep": "14:10"
+      }
+     ]
+    },
+    {
+     "corsa": "p27.A5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "1590BIS Feriale estivo"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "S. VENERINA (S.VENERINA)",
+       "idx": 0,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "S. VENERINA (LINERA)",
+       "idx": 1,
+       "arr": "14:10",
+       "dep": "14:10"
+      },
+      {
+       "stop": "ACIREALE (CASA GAMBINO)",
+       "idx": 2,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 3,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "ACIREALE",
+       "idx": 4,
+       "arr": "14:30",
+       "dep": "14:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p27.A6-1591",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "S. VENERINA (S.VENERINA)",
+       "idx": 0,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "S. VENERINA (LINERA)",
+       "idx": 1,
+       "arr": "15:10",
+       "dep": "15:10"
+      },
+      {
+       "stop": "ACIREALE (CASA GAMBINO)",
+       "idx": 2,
+       "arr": "15:15",
+       "dep": "15:15"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 3,
+       "arr": "15:20",
+       "dep": "15:20"
+      },
+      {
+       "stop": "ACIREALE",
+       "idx": 4,
+       "arr": "15:30",
+       "dep": "15:30"
+      }
+     ]
+    },
+    {
+     "corsa": "p27.A7-AGG268",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "AGG268 In Periodo Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "S. VENERINA (S.VENERINA)",
+       "idx": 0,
+       "arr": "17:55",
+       "dep": "17:55"
+      },
+      {
+       "stop": "S. VENERINA (LINERA)",
+       "idx": 1,
+       "arr": "18:05",
+       "dep": "18:05"
+      },
+      {
+       "stop": "ACIREALE (CASA GAMBINO)",
+       "idx": 2,
+       "arr": "18:10",
+       "dep": "18:10"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 3,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "ACIREALE",
+       "idx": 4,
+       "arr": "18:25",
+       "dep": "18:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p27.A8-AGG268",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "AGG268 BIS Feriale estivo"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "S. VENERINA (S.VENERINA)",
+       "idx": 0,
+       "arr": "17:55",
+       "dep": "17:55"
+      },
+      {
+       "stop": "S. VENERINA (LINERA)",
+       "idx": 1,
+       "arr": "18:05",
+       "dep": "18:05"
+      },
+      {
+       "stop": "ACIREALE (CASA GAMBINO)",
+       "idx": 2,
+       "arr": "18:10",
+       "dep": "18:10"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 3,
+       "arr": "18:15",
+       "dep": "18:15"
+      },
+      {
+       "stop": "ACIREALE",
+       "idx": 4,
+       "arr": "18:25",
+       "dep": "18:25"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "CATANIA",
+    "ACIREALE",
+    "ACIREALE (S.M.AMMALATI)",
+    "ACIREALE (CASA GAMBINO)",
+    "S. VENERINA (LINERA)",
+    "S. VENERINA (S.VENERINA)"
+   ],
+   "kms": [
+    0.0,
+    18.5,
+    22.1,
+    24.0,
+    25.7,
+    29.2
+   ],
+   "trips": [
+    {
+     "corsa": "p27.R1-1595",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE",
+       "idx": 1,
+       "arr": "07:00",
+       "dep": "07:00"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 2,
+       "arr": "07:05",
+       "dep": "07:05"
+      },
+      {
+       "stop": "ACIREALE (CASA GAMBINO)",
+       "idx": 3,
+       "arr": "07:10",
+       "dep": "07:10"
+      },
+      {
+       "stop": "S. VENERINA (LINERA)",
+       "idx": 4,
+       "arr": "07:15",
+       "dep": "07:15"
+      },
+      {
+       "stop": "S. VENERINA (S.VENERINA)",
+       "idx": 5,
+       "arr": "07:20",
+       "dep": "07:20"
+      }
+     ]
+    },
+    {
+     "corsa": "p27.R2-1596",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE",
+       "idx": 1,
+       "arr": "08:10",
+       "dep": "08:10"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 2,
+       "arr": "08:20",
+       "dep": "08:20"
+      },
+      {
+       "stop": "ACIREALE (CASA GAMBINO)",
+       "idx": 3,
+       "arr": "08:25",
+       "dep": "08:25"
+      },
+      {
+       "stop": "S. VENERINA (LINERA)",
+       "idx": 4,
+       "arr": "08:30",
+       "dep": "08:30"
+      },
+      {
+       "stop": "S. VENERINA (S.VENERINA)",
+       "idx": 5,
+       "arr": "08:40",
+       "dep": "08:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p27.R3-1594",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "CATANIA",
+       "idx": 0,
+       "arr": "10:10",
+       "dep": "10:10"
+      },
+      {
+       "stop": "ACIREALE",
+       "idx": 1,
+       "arr": "10:45",
+       "dep": "10:45"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 2,
+       "arr": "10:55",
+       "dep": "10:55"
+      },
+      {
+       "stop": "ACIREALE (CASA GAMBINO)",
+       "idx": 3,
+       "arr": "11:00",
+       "dep": "11:00"
+      },
+      {
+       "stop": "S. VENERINA (LINERA)",
+       "idx": 4,
+       "arr": "11:05",
+       "dep": "11:05"
+      },
+      {
+       "stop": "S. VENERINA (S.VENERINA)",
+       "idx": 5,
+       "arr": "11:15",
+       "dep": "11:15"
+      }
+     ]
+    },
+    {
+     "corsa": "p27.R4-1597",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "In Periodo Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE",
+       "idx": 1,
+       "arr": "13:10",
+       "dep": "13:10"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 2,
+       "arr": "13:20",
+       "dep": "13:20"
+      },
+      {
+       "stop": "ACIREALE (CASA GAMBINO)",
+       "idx": 3,
+       "arr": "13:25",
+       "dep": "13:25"
+      },
+      {
+       "stop": "S. VENERINA (LINERA)",
+       "idx": 4,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "S. VENERINA (S.VENERINA)",
+       "idx": 5,
+       "arr": "13:40",
+       "dep": "13:40"
+      }
+     ]
+    },
+    {
+     "corsa": "p27.R5",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "1597BIS Feriale estivo"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE",
+       "idx": 1,
+       "arr": "13:30",
+       "dep": "13:30"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 2,
+       "arr": "13:40",
+       "dep": "13:40"
+      },
+      {
+       "stop": "ACIREALE (CASA GAMBINO)",
+       "idx": 3,
+       "arr": "13:45",
+       "dep": "13:45"
+      },
+      {
+       "stop": "S. VENERINA (LINERA)",
+       "idx": 4,
+       "arr": "13:50",
+       "dep": "13:50"
+      },
+      {
+       "stop": "S. VENERINA (S.VENERINA)",
+       "idx": 5,
+       "arr": "14:00",
+       "dep": "14:00"
+      }
+     ]
+    },
+    {
+     "corsa": "p27.R6-1598",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE",
+       "idx": 1,
+       "arr": "14:15",
+       "dep": "14:15"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 2,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "ACIREALE (CASA GAMBINO)",
+       "idx": 3,
+       "arr": "14:30",
+       "dep": "14:30"
+      },
+      {
+       "stop": "S. VENERINA (LINERA)",
+       "idx": 4,
+       "arr": "14:35",
+       "dep": "14:35"
+      },
+      {
+       "stop": "S. VENERINA (S.VENERINA)",
+       "idx": 5,
+       "arr": "14:45",
+       "dep": "14:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p27.R7",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "AG90 In Periodo Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE",
+       "idx": 1,
+       "arr": "17:15",
+       "dep": "17:15"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 2,
+       "arr": "17:25",
+       "dep": "17:25"
+      },
+      {
+       "stop": "ACIREALE (CASA GAMBINO)",
+       "idx": 3,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "S. VENERINA (LINERA)",
+       "idx": 4,
+       "arr": "17:35",
+       "dep": "17:35"
+      },
+      {
+       "stop": "S. VENERINA (S.VENERINA)",
+       "idx": 5,
+       "arr": "17:45",
+       "dep": "17:45"
+      }
+     ]
+    },
+    {
+     "corsa": "p27.R8",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "AG90 BIS Feriale estivo"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "ACIREALE",
+       "idx": 1,
+       "arr": "17:15",
+       "dep": "17:15"
+      },
+      {
+       "stop": "ACIREALE (S.M.AMMALATI)",
+       "idx": 2,
+       "arr": "17:25",
+       "dep": "17:25"
+      },
+      {
+       "stop": "ACIREALE (CASA GAMBINO)",
+       "idx": 3,
+       "arr": "17:30",
+       "dep": "17:30"
+      },
+      {
+       "stop": "S. VENERINA (LINERA)",
+       "idx": 4,
+       "arr": "17:35",
+       "dep": "17:35"
+      },
+      {
+       "stop": "S. VENERINA (S.VENERINA)",
+       "idx": 5,
+       "arr": "17:45",
+       "dep": "17:45"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

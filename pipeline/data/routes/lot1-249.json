@@ -1,0 +1,116 @@
+{
+ "operator": "Lombardo&Glorioso",
+ "route_id": "lot1-249",
+ "name": "GANGI ( SAN PAOLO) - SAN MAURO CASTELVERDE",
+ "short_name": "249",
+ "source": "t1-tabelle_-orari_da_linea_1_a_linea_297.pdf#p16",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "SAN MAURO/DE (SAN MAURO)",
+    "CANALICCHIO",
+    "CALABRO",
+    "GANGI"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p16.A1-3614",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "SAN MAURO/DE (SAN MAURO)",
+       "idx": 0,
+       "arr": "07:20",
+       "dep": "07:20"
+      },
+      {
+       "stop": "CANALICCHIO",
+       "idx": 1,
+       "arr": "07:30",
+       "dep": "07:30"
+      },
+      {
+       "stop": "CALABRO",
+       "idx": 2,
+       "arr": "07:40",
+       "dep": "07:40"
+      },
+      {
+       "stop": "GANGI",
+       "idx": 3,
+       "arr": "08:20",
+       "dep": "08:20"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "GANGI",
+    "CALABRO",
+    "CANALICCHIO",
+    "SAN MAURO/DE (SAN MAURO)"
+   ],
+   "kms": [
+    null,
+    null,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p16.R1-3613",
+     "service": {
+      "days": "mon-sat",
+      "school": "school-days-only",
+      "season": null,
+      "raw": "Feriale in Periodo scolastico"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "GANGI",
+       "idx": 0,
+       "arr": "14:20",
+       "dep": "14:20"
+      },
+      {
+       "stop": "CALABRO",
+       "idx": 1,
+       "arr": "15:00",
+       "dep": "15:00"
+      },
+      {
+       "stop": "CANALICCHIO",
+       "idx": 2,
+       "arr": "15:10",
+       "dep": "15:10"
+      },
+      {
+       "stop": "SAN MAURO/DE (SAN MAURO)",
+       "idx": 3,
+       "arr": "15:20",
+       "dep": "15:20"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

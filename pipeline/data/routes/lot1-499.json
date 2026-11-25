@@ -1,0 +1,167 @@
+{
+ "operator": "Salvatore Lumia",
+ "route_id": "lot1-499",
+ "name": "POGGIOREALE - TRAPANI",
+ "short_name": "499",
+ "source": "t3-tabelle-_orari_da_linea_350_a_new_alia-cerda.pdf#p30",
+ "lot": 1,
+ "directions": [
+  {
+   "stops": [
+    "POGGIOREALE (Via Ximenes)",
+    "SALAPARUTA (Viale Regione Siciliana)",
+    "PARTANNA (Via Cialona)",
+    "SANTA NINFA (Via Pio La Torre)",
+    "GIBELLINA (Viale Indipendenza Siciliana)",
+    "TRAPANI (Terminal Piazzale Ilio)"
+   ],
+   "kms": [
+    0.0,
+    19.7,
+    25.2,
+    32.0,
+    35.1,
+    105.0
+   ],
+   "trips": [
+    {
+     "corsa": "p30.A1-8220",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "POGGIOREALE (Via Ximenes)",
+       "idx": 0,
+       "arr": "05:40",
+       "dep": "05:40"
+      },
+      {
+       "stop": "SALAPARUTA (Viale Regione Siciliana)",
+       "idx": 1,
+       "arr": "05:50",
+       "dep": "05:50"
+      },
+      {
+       "stop": "PARTANNA (Via Cialona)",
+       "idx": 2,
+       "arr": "06:15",
+       "dep": "06:15"
+      },
+      {
+       "stop": "SANTA NINFA (Via Pio La Torre)",
+       "idx": 3,
+       "arr": "06:40",
+       "dep": "06:40"
+      },
+      {
+       "stop": "GIBELLINA (Viale Indipendenza Siciliana)",
+       "idx": 4,
+       "arr": "06:55",
+       "dep": "06:55"
+      },
+      {
+       "stop": "TRAPANI (Terminal Piazzale Ilio)",
+       "idx": 5,
+       "arr": "08:00",
+       "dep": "08:00"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "stops": [
+    "TRAPANI (Terminal Piazzale Ilio)",
+    "GIBELLINA (Viale Indipendenza Siciliana)",
+    "SANTA NINFA (Via Pio La Torre)",
+    "PARTANNA (Via Cialona)",
+    "SALAPARUTA (Viale Regione Siciliana)",
+    "POGGIOREALE (Via Ximenes)"
+   ],
+   "kms": [
+    0.0,
+    69.9,
+    73.0,
+    79.8,
+    null,
+    null
+   ],
+   "trips": [
+    {
+     "corsa": "p30.R1-8221",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "B) Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "TRAPANI (Terminal Piazzale Ilio)",
+       "idx": 0,
+       "arr": "13:10",
+       "dep": "13:10"
+      },
+      {
+       "stop": "GIBELLINA (Viale Indipendenza Siciliana)",
+       "idx": 1,
+       "arr": "13:15",
+       "dep": "13:15"
+      },
+      {
+       "stop": "SANTA NINFA (Via Pio La Torre)",
+       "idx": 2,
+       "arr": "14:00",
+       "dep": "14:00"
+      },
+      {
+       "stop": "PARTANNA (Via Cialona)",
+       "idx": 3,
+       "arr": "14:25",
+       "dep": "14:25"
+      }
+     ]
+    },
+    {
+     "corsa": "p30.R2-8221",
+     "service": {
+      "days": "mon-sat",
+      "school": null,
+      "season": null,
+      "raw": "B Feriale"
+     },
+     "reverse": false,
+     "valid": true,
+     "stops": [
+      {
+       "stop": "PARTANNA (Via Cialona)",
+       "idx": 3,
+       "arr": "14:25",
+       "dep": "14:25"
+      },
+      {
+       "stop": "SALAPARUTA (Viale Regione Siciliana)",
+       "idx": 4,
+       "arr": "14:50",
+       "dep": "14:50"
+      },
+      {
+       "stop": "POGGIOREALE (Via Ximenes)",
+       "idx": 5,
+       "arr": "15:00",
+       "dep": "15:00"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
