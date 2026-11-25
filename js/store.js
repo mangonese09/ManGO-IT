@@ -169,8 +169,8 @@ export function addFavStop(stop) {
   list.push(stop);
   // SV-4: the cap evicts LOUDLY — a silently vanished favourite reads as a bug
   if (list.length > 12) {
-    list.splice(0, list.length - 12);
-    try { toast('Stop limit (12) reached — oldest removed', 'info', 2400); } catch { /* headless */ }
+    try { toast('You have 12 saved stops. Remove one on the Saved tab to add another.', 'warn'); } catch { /* headless */ }
+    return null;
   }
   write('favstops', list);
   return list;
@@ -187,8 +187,8 @@ export function addFavLine(line) {
   const list = getFavLines().filter((l) => l.key !== line.key);
   list.push(line);
   if (list.length > 8) {
-    list.splice(0, list.length - 8);
-    try { toast('Line limit (8) reached — oldest removed', 'info', 2400); } catch { /* headless */ }
+    try { toast('You have 8 saved lines. Remove one on the Saved tab to add another.', 'warn'); } catch { /* headless */ }
+    return null;
   }
   write('favlines', list);
   return list;
@@ -205,8 +205,8 @@ export function addPlace(place) {
   if (place.home) list = list.map((p) => ({ ...p, home: false }));
   list.push(place);
   if (list.length > 20) {
-    list.splice(0, list.length - 20);
-    try { toast('Place limit (20) reached — oldest removed', 'info', 2400); } catch { /* headless */ }
+    try { toast('You have 20 saved places. Remove one on the Saved tab to add another.', 'warn'); } catch { /* headless */ }
+    return null;
   }
   write('places', list);
   return list;

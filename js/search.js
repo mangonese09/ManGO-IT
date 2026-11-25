@@ -561,13 +561,13 @@ export function suggestStar(r, kind) {
       if (isFav()) {
         removeFavStop(key);
         star.textContent = '☆'; star.classList.remove('pinned'); star.setAttribute('aria-pressed', 'false');
-        toast('Removed from Saved', 'info', 1400);
+        toast('Removed from Saved', 'info');
       } else {
         const iconMode = r.type === 'COACH_STOP' ? 'COACH'
           : (r.modes || []).some((x) => /RAIL|LONG_DISTANCE/.test(x || '')) ? 'RAIL' : 'BUS';
-        addFavStop({ key, name: r.name, kind, iconMode, stopId: r.type === 'STOP' ? r.id : null, lat: r.lat, lon: r.lon });
+        if (!addFavStop({ key, name: r.name, kind, iconMode, stopId: r.type === 'STOP' ? r.id : null, lat: r.lat, lon: r.lon })) return;
         star.textContent = '★'; star.classList.add('pinned'); star.setAttribute('aria-pressed', 'true');
-        toast('Saved — see the Saved tab', 'info', 1400);
+        toast('Saved — see the Saved tab', 'info');
       }
     },
   });
@@ -586,11 +586,11 @@ export function placeStar(r) {
       if (isPlace(key)) {
         removePlace(key);
         star.textContent = '☆'; star.classList.remove('pinned'); star.setAttribute('aria-pressed', 'false');
-        toast('Removed from places', 'info', 1400);
+        toast('Removed from places', 'info');
       } else {
-        addPlace({ key, label: displayName(r.name), name: r.name, lat: r.lat, lon: r.lon });
+        if (!addPlace({ key, label: displayName(r.name), name: r.name, lat: r.lat, lon: r.lon })) return;
         star.textContent = '★'; star.classList.add('pinned'); star.setAttribute('aria-pressed', 'true');
-        toast('Saved to places — Saved tab', 'info', 1400);
+        toast('Saved to places — Saved tab', 'info');
       }
     },
   });
@@ -720,8 +720,14 @@ function toggleWhen() {
   btn.setAttribute('aria-pressed', String(departMode === 'arrive'));
   // R-01: "Arrive by" only reaches the router when a time is set, so with no
   // time it silently did nothing. Say what it needs instead of pretending.
-  if (departMode === 'arrive' && !document.getElementById('when-input').value) {
-    toast('Pick an arrival time — tap the Now chip', 'info', 2200);
+  const wi = document.getElementById('when-input');
+  if (departMode === 'arrive' && !wi.value) {
+    let picked = false;
+    const onPick = () => { picked = !!wi.value; };
+    wi.addEventListener('change', onPick, { once: true });
+    try { wi.showPicker(); } catch { wi.focus(); }
+    // the picker closed with no time: Arrive by "Now" means nothing, so go back to Depart
+    wi.addEventListener('blur', () => { setTimeout(() => { wi.removeEventListener('change', onPick); if (!picked && !wi.value && departMode === 'arrive') toggleWhen(); }, 300); }, { once: true });
   }
 }
 
@@ -856,6 +862,7 @@ async function runSearch() {
     return;
   }
   results.innerHTML = '';
+  if (!(history.state && history.state.results)) { try { history.pushState({ view: 'home', results: 1 }, '', location.hash || '#home'); } catch { /* */ } }
   results.appendChild(el('div', { class: 'loading', role: 'status', text: 'Finding routes…' }));
   announceResults('Finding routes');
   collapseForm();
@@ -1723,6 +1730,17 @@ function cardFareText(it) {
 
 // SV-1 (Saved-tab analysis): a saved place's primary action is GO THERE —
 // destination-first from wherever the user is, same flow as a quick-pick.
+// Back from results: the plain Home board again
+export function clearSearchResults() {
+  searchSeq++;   // a search still in flight must not repaint
+  const r = document.getElementById('results');
+  if (!r || !r.childElementCount) return false;
+  r.innerHTML = '';
+  rerenderResults = () => {};
+  announceResults('Results cleared');
+  return true;
+}
+
 export function routeToPlace(p) {
   document.getElementById('nav-home')?.click();
   sel.to = { name: p.name, place: `${p.lat},${p.lon}`, lat: p.lat, lon: p.lon };

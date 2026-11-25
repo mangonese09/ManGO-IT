@@ -1636,3 +1636,6 @@ div.suggest-row { width: 100%; cursor: pointer; }
   justify-content: space-between; gap: 12px; padding: 8px 8px 8px 16px; border-radius: 14px; background: var(--bg-elevated, #2a2a2a);
   color: var(--text-primary, #f2f2f2); box-shadow: 0 6px 18px rgba(0,0,0,.4); font-size: .9rem; font-weight: 600; }
 .update-bar .btn { min-height: 40px; }
+
+/* 1.21.0 QA: long input never runs off the screen */
+.form-error, #results .empty-state p { overflow-wrap: anywhere; }

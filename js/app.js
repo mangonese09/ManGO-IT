@@ -63,6 +63,8 @@ window.addEventListener('popstate', (e) => {
   if (anySheetOpen()) { closeSheet(true); return; }
   const v = (e.state && e.state.view) || 'home';
   if (v !== current) setView(v, true);
+  // I-02: stepping back past the results entry clears them
+  if (v === 'home' && !(e.state && e.state.results)) import('./search.js').then((m) => m.clearSearchResults());
   if (pendingView) { const p = pendingView; pendingView = null; if (p !== current) setView(p); }
 });
 

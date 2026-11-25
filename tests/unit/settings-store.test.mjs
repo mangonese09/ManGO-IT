@@ -97,16 +97,18 @@ test('export → import round trip, with a v1 backup migrated on the way in', ()
   assert.strictEqual(store.getPlaces().length, 0); // absent keys clear — a backup REPLACES
 });
 
-test('favourite lines: cap evicts oldest, backup carries them', () => {
+test('favourite lines: a full list refuses the 9th (nothing is deleted), backup carries them', () => {
   mem.clear();
   mem.set('mangoit.schemaVersion', '2');
-  for (let i = 0; i < 9; i++) store.addFavLine({ key: 'L' + i, mode: 'COACH', line: 'Linea ' + i, headsign: 'X', lat: 38, lon: 13, stopName: 'S' });
+  for (let i = 0; i < 8; i++) store.addFavLine({ key: 'L' + i, mode: 'COACH', line: 'Linea ' + i, headsign: 'X', lat: 38, lon: 13, stopName: 'S' });
+  // 1.21.0 (QA I-01): the cap used to evict the oldest, which deleted Home from places
+  assert.strictEqual(store.addFavLine({ key: 'L8', mode: 'COACH', line: 'Linea 8', headsign: 'X', lat: 38, lon: 13, stopName: 'S' }), null);
   const lines = store.getFavLines();
   assert.strictEqual(lines.length, 8);
-  assert.strictEqual(lines[0].key, 'L1'); // L0 evicted
-  assert.ok(store.isFavLine('L8') && !store.isFavLine('L0'));
+  assert.strictEqual(lines[0].key, 'L0'); // kept
+  assert.ok(store.isFavLine('L7') && !store.isFavLine('L8'));
   assert.match(store.describeBackup(store.exportBackup()), /8 lines/);
-  store.removeFavLine('L8');
+  store.removeFavLine('L7');
   assert.strictEqual(store.getFavLines().length, 7);
 });
 

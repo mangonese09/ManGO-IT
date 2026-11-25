@@ -74,10 +74,10 @@ async function favSuggest(q) {
         class: 'suggest-row',
         onclick: () => {
           const key = r.type === 'STOP' && r.id ? r.id : `${r.lat.toFixed(5)},${r.lon.toFixed(5)}`;
-          addFavStop({ key, name: r.name, kind, iconMode, stopId: r.type === 'STOP' ? r.id : null, lat: r.lat, lon: r.lon });
+          if (!addFavStop({ key, name: r.name, kind, iconMode, stopId: r.type === 'STOP' ? r.id : null, lat: r.lat, lon: r.lon })) return;
           closeAddCard('fav');
           list.hidden = true;
-          toast(`${displayName(r.name)} added`, 'info', 1400);
+          toast(`${displayName(r.name)} added`, 'info');
           renderSaved();
         },
       }, [
@@ -585,8 +585,8 @@ function lineFavButton(cand) {
   const paint = () => { btn.textContent = isFavLine(cand.key) ? '★ Saved to your lines' : '☆ Save this line'; };
   paint();
   btn.onclick = () => {
-    if (isFavLine(cand.key)) { removeFavLine(cand.key); toast('Line removed', 'info', 1400); }
-    else { addFavLine(cand); toast('Line saved — Saved tab', 'info', 1600); }
+    if (isFavLine(cand.key)) { removeFavLine(cand.key); toast('Line removed', 'info'); }
+    else { if (!addFavLine(cand)) return; toast('Line saved — Saved tab', 'info'); }
     paint();
   };
   return btn;
@@ -912,11 +912,11 @@ async function placeSuggest(q) {
         onclick: () => {
           const key = `${r.lat.toFixed(5)},${r.lon.toFixed(5)}`;
           const slot = pendingSlot; // SV-2/SV-5: a slot-opened add IS the designation
-          addPlace({ key, label: displayName(r.name), name: r.name, lat: r.lat, lon: r.lon,
-            home: slot === 'home', icon: slot || undefined });
+          if (!addPlace({ key, label: displayName(r.name), name: r.name, lat: r.lat, lon: r.lon,
+            home: slot === 'home', icon: slot || undefined })) return;
           list.hidden = true;
           closeAddCard('place');
-          toast(`${displayName(r.name)} ${slot === 'home' ? 'set as Home' : slot === 'work' ? 'set as Work' : 'added'}`, 'info', 1400);
+          toast(`${displayName(r.name)} ${slot === 'home' ? 'set as Home' : slot === 'work' ? 'set as Work' : 'added'}`, 'info');
           renderSaved();
         },
       }, [
@@ -1029,9 +1029,9 @@ export async function renderSaved() {
   holder.innerHTML = '';
 
   if (!items.length) {
-    if (!favs.length) holder.appendChild(el('div', { class: 'empty-state' }, [
-      el('p', { text: 'Nothing pinned yet.' }),
-      el('p', { class: 'muted', text: 'Search above to add a stop, or tap ☆ on any departure on the Home board.' }),
+    if (!favs.length && !favLines.length && !places.length) holder.appendChild(el('div', { class: 'empty-state' }, [
+      el('p', { text: 'Nothing saved yet.' }),
+      el('p', { class: 'muted', text: 'Tap + Add a stop, or tap ☆ on any departure on the Home board.' }),
     ]));
     return;
   }
@@ -1056,9 +1056,9 @@ export async function renderSaved() {
     removeSaved(d.id); return false;
   });
   if (!live.length) {
-    if (!favs.length) holder.appendChild(el('div', { class: 'empty-state' }, [
-      el('p', { text: 'Nothing pinned yet.' }),
-      el('p', { class: 'muted', text: 'Search above to add a stop, or tap ☆ on any departure on the Home board.' }),
+    if (!favs.length && !favLines.length && !places.length) holder.appendChild(el('div', { class: 'empty-state' }, [
+      el('p', { text: 'Nothing saved yet.' }),
+      el('p', { class: 'muted', text: 'Tap + Add a stop, or tap ☆ on any departure on the Home board.' }),
     ]));
     return;
   }
@@ -1090,7 +1090,7 @@ export async function renderSaved() {
         'aria-label': `Unpin the ${romeTime(when)} ${d.routeShortName || m.label}${d.headsign ? ` to ${displayName(d.headsign)}` : ''}`,
         onclick: async () => {
           const ok = await confirmModal('Remove this pinned departure?', { confirmText: 'Remove' });
-          if (ok) { removeSaved(d.id); renderSaved(); toast('Removed', 'info', 1200); }
+          if (ok) { removeSaved(d.id); renderSaved(); toast('Removed', 'info'); }
         },
       }),
     ]));

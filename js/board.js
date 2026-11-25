@@ -89,7 +89,7 @@ export async function loadBoard(manual = false) {
       catch { return { stop: s, res: null }; }
     }));
     renderBoard(boards, { stale, fetchedAt });
-    if (manual) toast('Board refreshed', 'info', 1200);
+    if (manual) toast('Board refreshed', 'info');
   } catch {
     if (!document.querySelector('#board .line-row')) {
       holder.innerHTML = '';
@@ -242,10 +242,10 @@ function directionLine(headsign, { st, stop }) {
     e.stopPropagation();
     if (isOn()) {
       if (canLine) removeFavLine(lineKey); else removeSaved(pinId);
-      toast('Removed from Saved', 'info', 1400);
+      toast('Removed from Saved', 'info');
     } else if (canLine) {
-      addFavLine({ key: lineKey, mode: 'BUS', iconMode: st.mode, line: route, headsign: (st.headsign || '').trim(), stopId: st.stopId, stopName: stop.name || st.stopName || '' });
-      toast('Line saved — Saved tab', 'info', 1600);
+      if (!addFavLine({ key: lineKey, mode: 'BUS', iconMode: st.mode, line: route, headsign: (st.headsign || '').trim(), stopId: st.stopId, stopName: stop.name || st.stopName || '' })) return;
+      toast('Line saved — Saved tab', 'info');
     } else {
       saveDeparture({
         id: pinId, stopId: st.stopId, stopName: st.stopName, mode: st.mode,
@@ -253,7 +253,7 @@ function directionLine(headsign, { st, stop }) {
         agencyName: st.agencyName, tripId: st.tripId,
         when, realTime: st.realTime,
       });
-      toast('Pinned to Saved', 'info', 1500);
+      toast('Pinned to Saved', 'info');
     }
     paint();
   };
