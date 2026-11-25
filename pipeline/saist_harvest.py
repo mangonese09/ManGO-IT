@@ -31,7 +31,7 @@ ST_DIR = os.path.join(ROOT, 'data', 'saist')
 ROUTES = os.path.join(ROOT, 'data', 'routes')
 
 BASE = 'https://www.saistrasporti.it/Laser.Orchard.WebServices/webapi/display'
-UA = 'ManGO-IT/0.5.0 (+https://it.mangonese.dev; miconsig@gmail.com)'
+UA = 'ManGO-IT/0.5.0 (+https://it.mangonese.dev' + ('; ' + os.environ['MANGOIT_CONTACT'] if os.environ.get('MANGOIT_CONTACT') else '') + ')'  # contact from the environment
 OPERATOR = 'SAIS Trasporti'
 DELAY = 1.1
 

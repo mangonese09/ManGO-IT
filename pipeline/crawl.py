@@ -14,7 +14,7 @@ PORTAL_PREFIX = ('pti.regione.sicilia.it/portal/page/portal/PIR_PORTALE/PIR_LaSt
                  'PIR_Altricontenuti/PIR_Trasportipubblici/PIR_OrariAutolinee')
 CDX = ('http://web.archive.org/cdx/search/cdx?url=' + urllib.parse.quote(PORTAL_PREFIX) +
        '&matchType=prefix&output=json&collapse=urlkey&filter=statuscode:200&fl=original,timestamp,mimetype&limit=1000')
-UA = 'ManGO-IT-pipeline/0.1 (personal project; miconsig@gmail.com)'
+UA = 'ManGO-IT-pipeline/0.1 (+https://it.mangonese.dev' + ('; ' + os.environ['MANGOIT_CONTACT'] if os.environ.get('MANGOIT_CONTACT') else '') + ')'  # contact from the environment
 
 
 def fetch(url, timeout=120, retries=3):

@@ -32,7 +32,7 @@ ROUTES = os.path.join(ROOT, 'data', 'routes')
 COORDS_F = os.path.join(ROOT, 'data', 'sais-stop-coords.json')
 
 BASE = 'https://api.saisautolinee.it'
-UA = 'ManGO-IT/0.5.0 (+https://it.mangonese.dev; miconsig@gmail.com)'
+UA = 'ManGO-IT/0.5.0 (+https://it.mangonese.dev' + ('; ' + os.environ['MANGOIT_CONTACT'] if os.environ.get('MANGOIT_CONTACT') else '') + ')'  # contact from the environment
 OPERATOR = 'SAIS Autolinee'
 BATCH = 20          # lineIds per timetable request
 DELAY = 1.0         # seconds between requests
