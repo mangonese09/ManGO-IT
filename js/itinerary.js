@@ -40,8 +40,10 @@ export function isRailReplacement(leg) {
 export const RESULT_FILTERS = [
   { key: 'all', label: 'All' },
   { key: 'direct', label: 'Direct' },
-  { key: 'train', label: 'Train' },
-  { key: 'bus', label: 'Bus & coach' },
+  // 1.22.0 (re-score P2): the two filters split the list, so name the split. "Bus & coach 0" over
+  // sixteen trips that all start on a coach read as "no buses go there".
+  { key: 'train', label: 'Uses a train' },
+  { key: 'bus', label: 'Road only' },
 ];
 
 export function isTrainLeg(leg) {

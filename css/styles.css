@@ -1646,3 +1646,9 @@ div.suggest-row { width: 100%; cursor: pointer; }
 .toast-holder { left: 12px; right: 12px; }
 .toast { width: 100%; max-width: 480px; box-sizing: border-box; border-radius: 12px; padding: 12px 16px; text-align: left; border: 1px solid var(--border-subtle, rgba(255,255,255,.1)); }
 .toast.warn, .toast.error, .toast-warn, .toast-error { border-color: var(--error, #e85a5a); }
+
+/* 1.22.0 (re-score P1): the sign-in error had no light-theme ink (about 2.2:1) */
+:root[data-theme="light"] .acct-err { color: var(--error-ink, #a3261e); }
+@media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) .acct-err { color: var(--error-ink, #a3261e); } }
+.nearby-folded #board, .nearby-folded .board-head:not(.hub-home-head) { display: none; }
+#nearby-unfold { margin: 8px 0 16px; }

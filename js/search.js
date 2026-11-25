@@ -1617,11 +1617,16 @@ function itineraryCard(it) {
   // you board at instead ("SAIS · Via Fazello").
   for (const seg of model) {
     // 4+ digits only: city lines (AMAT 101, AMTS 421) are numbers people use
-    if (!seg.walk && /^\d{4,}$/.test(seg.label || '') && seg.agency) {
+    // 1.22.0 (re-score P1): a long route name ("CATTOLICA-RIBERA-SCIACCA-PALERMO", "Marsala –
+    // Trapani Bir…") read as raw feed text too; it gets the same operator · stop label
+    const longName = (seg.label || '').length > 22 || /^[A-Z0-9 .'–-]{8,}$/.test(seg.label || '');
+    if (!seg.walk && (/^\d{4,}$/.test(seg.label || '') || longName) && seg.agency) {
       const op = operatorFor(seg.agency);
-      // "Palermo (Stazione - T.Bus Via Fazello)" → "Via Fazello"
-      const inner = (displayName(seg.from).match(/\(([^()]+)\)\s*$/) || [])[1] || displayName(seg.from);
-      const stop = inner.split(/\s[-–]\s/).pop().replace(/^T\.?\s?Bus\s+/i, '').trim();
+      // "Palermo (Stazione - T.Bus Via Fazello)" → "Via Fazello". 1.22.0: timetable words such as
+      // "(Capolinea)" are dropped first; nested brackets showed as "Via Fazello (Capolinea))".
+      const nm = displayName(seg.from).replace(/\s*\((capolinea|fermata|ff\.?\s*ss\.?|fs)\)/gi, '').trim();
+      const inner = (nm.match(/\(([^()]+)\)\s*$/) || [])[1] || nm;
+      const stop = inner.split(/\s[-–]\s/).pop().replace(/^T\.?\s?Bus\s+/i, '').replace(/[()]/g, '').trim();
       seg.label = `${shortOperator(op?.name || seg.agency)}${stop ? ` · ${stop}` : ''}`;
     }
   }

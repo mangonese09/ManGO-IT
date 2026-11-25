@@ -131,13 +131,29 @@ async function loadHubHome(pos) {
   } catch {
     return; // keep whatever the slot already shows
   }
-  if (!near) { slot.hidden = true; slot.innerHTML = ''; return; }
+  if (!near) { slot.hidden = true; slot.innerHTML = ''; foldNearby(false); return; }
   try {
     const { renderHubPreview } = await import('./saved.js');
     await renderHubPreview(slot, near.hub, near.d);
+    // 1.22.0 (re-score P1): standing at the hub, "Nearby departures" listed the same runs again
+    // from the same station's stops. Fold it behind one button instead of a second copy.
+    foldNearby(near.d <= 300 && !slot.hidden);
   } catch {
     if (!slot.children.length) slot.hidden = true;
   }
+}
+
+function foldNearby(on) {
+  const view = document.getElementById('view-home');
+  if (!view) return;
+  view.classList.toggle('nearby-folded', on);
+  let btn = document.getElementById('nearby-unfold');
+  if (on && !btn) {
+    btn = el('button', { id: 'nearby-unfold', class: 'btn btn-ghost btn-small btn-wide', type: 'button', text: 'Other stops nearby ›' });
+    btn.addEventListener('click', () => { view.classList.remove('nearby-folded'); btn.remove(); });
+    document.getElementById('board')?.before(btn);
+  }
+  if (!on && btn) btn.remove();
 }
 
 // Same station appears once per mode/quay — collapse by parentId, keep closest.
