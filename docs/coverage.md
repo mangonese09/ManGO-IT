@@ -55,3 +55,30 @@ With the current feed published + the Transitous PR merged, Sicily coverage is:
 all rail, both major urban networks, 40 extraurban operators, TUA Agrigento —
 and the practical gaps that matter are SAIS (scrape next), FCE (free GTFS,
 same PR), Prestia (hand-encode), Messina urban (scrape).
+
+## Update 2026-11-25 (research queue item 8)
+
+**Closed since July:** SAIS Autolinee + SAIS Trasporti (pipeline/sais_harvest.py, weekly refresh),
+FCE Circumetnea (normalized feed), Prestia e Comandè (6 lines). The Transitous PR merged:
+`feeds/it.json` carries Sicilia-intercity-coaches and Sicilia-FCE-Circumetnea from
+it.mangonese.dev. **ATM Messina now publishes its own GTFS + GTFS-RT** (atmmessinaspa.it/GTFS,
+rt.annacati.com) and is in Transitous, so the Messina urban gap closed without us.
+
+**New risk — the 2025 regional contract.** Since 1 July 2025 extraurban service runs under a
+9-year contract in 4 lots held by consortia (COTRAS, COSMO), with the old companies as
+subcontractors (Regione Siciliana news 25 Mar 2025). The Region's transport page
+(.../mobilita-e-trasporti/trasporto-persone-gomma, updated 03/04/2026) publishes NEW timetable
+PDFs: Lot 1 Palermo–Trapani (index + 3 tables, lines 1–344+, 2026-03) and Lot 2 Catania–Ragusa
+(2026-04); none yet for Lots 3 (Messina) and 4 (AG/CL/EN). The portal PDFs our feed was built
+from (archived 2026-07-25) are marked "in fase di aggiornamento". PDF URLs work only under
+`/system/files/2026-03/...` (the page's `/sites/default/files/` links 404).
+
+Lot 1 index vs the live feed's agency.txt (70 agencies, feed_version 2026-11-22): 19 of 24
+operators present. **Missing:** Autolinee Lombardo & Glorioso (Cefalù / Madonie, lines 244–249),
+BUS AWAY (Castronovo / Prizzi / Lercara, lines 43–48), Adranone (line 1 Sambuca–Partanna, on the
+recovery backlog), Servizi Turistici Marrone, Tarantola e Cuffaro.
+
+**Next (build, not research):** add the Lot 1 and Lot 2 PDFs as a pipeline source (same table
+parser family as the portal PDFs), diff trips per line against the current feed, and re-check the
+Region page monthly for Lots 3–4. Still uncovered: Trapani / Siracusa / Ragusa urban (no public
+GTFS found), island buses, ferries.
