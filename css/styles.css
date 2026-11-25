@@ -1639,3 +1639,10 @@ div.suggest-row { width: 100%; cursor: pointer; }
 
 /* 1.21.0 QA: long input never runs off the screen */
 .form-error, #results .empty-state p { overflow-wrap: anywhere; }
+
+/* 1.21.1 shared Mangonese chrome (user 2026-11-24): logo left in a 56px header; card toasts */
+.app-header { justify-content: flex-start; min-height: calc(56px + env(safe-area-inset-top)); box-sizing: border-box; padding: env(safe-area-inset-top) 64px 0 16px; }
+.gear-btn { top: calc(6px + env(safe-area-inset-top)); }
+.toast-holder { left: 12px; right: 12px; }
+.toast { width: 100%; max-width: 480px; box-sizing: border-box; border-radius: 12px; padding: 12px 16px; text-align: left; border: 1px solid var(--border-subtle, rgba(255,255,255,.1)); }
+.toast.warn, .toast.error, .toast-warn, .toast-error { border-left: 4px solid var(--error, #e85a5a); }
