@@ -1300,6 +1300,7 @@ function initDoubleTapDragZoom() {
 
 async function initMap(pos) {
   const L = window.L;
+  document.getElementById('map-canvas')?.setAttribute('aria-label', 'Map of stops');   // 1.22.1: the container had no name
   map = L.map('map-canvas', {
     zoomControl: false, attributionControl: true,
     minZoom: MIN_ZOOM, maxBounds: CLAMP_BOUNDS, maxBoundsViscosity: 0.9,

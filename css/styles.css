@@ -1652,3 +1652,12 @@ div.suggest-row { width: 100%; cursor: pointer; }
 @media (prefers-color-scheme: light) { :root:not([data-theme="dark"]) .acct-err { color: var(--error-ink, #a3261e); } }
 .nearby-folded #board, .nearby-folded .board-head:not(.hub-home-head) { display: none; }
 #nearby-unfold { margin: 8px 0 16px; }
+
+/* 1.22.1 audit pass */
+h1.logo { margin: 0; font-size: 1.125rem; font-weight: 700; line-height: 1.2; }
+/* 44px touch targets on the filter chips and line-sheet buttons (they were 32 and 39) */
+.map-chip, .chip-btn { min-height: 44px; }
+.badge[role="button"], button.badge { position: relative; }
+button.badge::after { content: ""; position: absolute; inset: -11px -4px; }
+/* large text: the destination wraps instead of collapsing to "102 → …" */
+.sched-row .sl-main, .sched-row .sched-dest { min-width: 0; overflow-wrap: anywhere; }
