@@ -347,11 +347,11 @@ def main():
         'trips.txt': (['route_id', 'service_id', 'trip_id', 'trip_headsign', 'direction_id'], trip_rows),
         'stop_times.txt': (['trip_id', 'arrival_time', 'departure_time', 'stop_id', 'stop_sequence', 'pickup_type', 'drop_off_type'], st_rows),
         'calendar_dates.txt': (['service_id', 'date', 'exception_type'], cal_rows),
-        'feed_info.txt': (['feed_publisher_name', 'feed_publisher_url', 'feed_lang', 'feed_start_date', 'feed_end_date', 'feed_version', 'feed_contact_email'],
+        'feed_info.txt': (['feed_publisher_name', 'feed_publisher_url', 'feed_lang', 'feed_start_date', 'feed_end_date', 'feed_version', 'feed_contact_email', 'feed_contact_url'],
                           [['ManGO:IT', 'https://it.mangonese.dev', 'it',
                             FEED_START.strftime('%Y%m%d'), FEED_END.strftime('%Y%m%d'),
-                            # the publisher contact comes from the environment, not the repo
-                            date.today().isoformat(), os.environ.get('MANGOIT_CONTACT', '')]]),
+                            # the contact is the app's site; an address only if MANGOIT_CONTACT is set
+                            date.today().isoformat(), os.environ.get('MANGOIT_CONTACT', ''), 'https://it.mangonese.dev']]),
         'attributions.txt': (['attribution_id', 'organization_name', 'is_producer', 'is_operator', 'is_authority', 'attribution_url'],
                              [['1', 'ManGO:IT', 1, 0, 0, 'https://it.mangonese.dev'],
                               ['2', 'Regione Siciliana - Assessorato Infrastrutture e Mobilita', 0, 0, 1, 'https://pti.regione.sicilia.it'],
